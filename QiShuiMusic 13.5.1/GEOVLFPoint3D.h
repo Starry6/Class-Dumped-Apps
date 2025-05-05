@@ -1,0 +1,34 @@
+@interface GEOVLFPoint3D : PBCodable
+@property (nonatomic) BOOL hasX;
+@property (nonatomic) float x;
+@property (nonatomic) BOOL hasY;
+@property (nonatomic) float y;
+@property (nonatomic) BOOL hasZ;
+@property (nonatomic) float z;
+- (void)setHasX:;
+- (void)setHasY:;
+- (void)readAll:;
+- (BOOL)hasY;
+- (void)setX:;
+- (id)initWithJSON:;
+- (void)setY:;
+- (id)jsonRepresentation;
+- (float)y;
+- (id)initWithDictionary:;
+- (void)setZ:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (float)x;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (float)z;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)hasX;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setHasZ:;
+- (BOOL)hasZ;
++ (BOOL)isValid:;
+@end

@@ -1,0 +1,34 @@
+@interface GEOApplicationAuditToken : NSObject
+@property (nonatomic) NSString secondaryIdentifier;
+@property (nonatomic) NSString proxiedBundleId;
+@property (nonatomic) BOOL proxiedExternalBundleId;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithAuditTokenData:;
+- (id)init;
+- (id)publicLogDescription;
+- (id)initWithXPCConnection:;
+- (id)initWithProxiedApplicationBundleId:;
+- (id)initWithProxiedExternalApplicationBundleId:;
+- (id)bundleId;
+- (id)_secondaryIdentifier;
+- (id)backingTokenData;
+- (void)encodeToXPCDictionary:;
+- (id)_bundleIdForAuditToken;
+- (BOOL)isProxiedExternalBundleId;
+- (id)initWithCoder:;
+- (id)initWithSecondaryIdentifier:;
+- (unsigned long long)hash;
+- (id)initWithXPCDictionary:error:;
+- (void)encodeWithCoder:;
+- (id)proxiedBundleId;
+- (id)initWithNSXPCConnection:;
+- (id)bundleIdForNetworkAttribution;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)isEqual:;
++ (BOOL)supportsSecureCoding;
++ (id)currentProcessAuditToken;
+@end

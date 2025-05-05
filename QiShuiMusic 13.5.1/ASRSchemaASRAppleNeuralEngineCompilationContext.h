@@ -1,0 +1,30 @@
+@interface ASRSchemaASRAppleNeuralEngineCompilationContext : SISchemaInstrumentationMessage
+@property (nonatomic) ASRSchemaASRAppleNeuralEngineCompilationStarted started;
+@property (nonatomic) BOOL hasStarted;
+@property (nonatomic) ASRSchemaASRAppleNeuralEngineCompilationEnded ended;
+@property (nonatomic) BOOL hasEnded;
+@property (nonatomic) NSData jsonData;
+@property (nonatomic) Q whichContextevent;
+- (void)setStarted:;
+- (id)started;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (BOOL)hasStarted;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)setHasStarted:;
+- (BOOL)hasEnded;
+- (id)ended;
+- (void)setEnded:;
+- (void)setHasEnded:;
+- (void)deleteEnded;
+- (unsigned long long)whichContextevent;
+- (void)deleteStarted;
+@end

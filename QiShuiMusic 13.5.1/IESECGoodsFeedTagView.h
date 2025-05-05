@@ -1,0 +1,35 @@
+@interface IESECGoodsFeedTagView : UIControl
+@property (nonatomic) NSString tagID;
+@property (nonatomic) IESECColor background;
+@property (nonatomic) UIImageView imageView;
+@property (nonatomic) {CGSize=dd} imageSize;
+@property (nonatomic) UILabel textLabel;
+@property (nonatomic) {UIEdgeInsets=dddd} contentInsets;
+@property (nonatomic) double borderWidth;
+@property (nonatomic) IESECColor borderColor;
+@property (nonatomic) double spacing;
+@property (nonatomic) BOOL showDisclosure;
+- (void)tagViewDidClick:;
+- (id)background;
+- (void)setBorderColor:;
+- (double)spacing;
+- (id)borderColor;
+- (id)textLabel;
+- (void)setSpacing:;
+- (void)setContentInsets:;
+- (id)contentInsets;
+- (void)setBackground:;
+- (id)tagID;
+- (void)layoutSubviews;
+- (id)imageSize;
+- (double)borderWidth;
+- (void)setBorderWidth:;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (id)imageView;
+- (void)setTagID:;
+- (void)setImageSize:;
+- (void)setupSubviews;
+- (BOOL)showDisclosure;
+- (void)setShowDisclosure:;
+@end

@@ -1,0 +1,31 @@
+@interface GEOMapDataSubscriptionDownloader : NSObject
+@property (nonatomic) GEOMapDataSubscription subscription;
+@property (nonatomic) <GEOMapDataSubscriptionDownloaderDelegate> delegate;
+@property (nonatomic) Q numberOfTilesConsidered;
+@property (nonatomic) Q numberOfTilesAttempted;
+@property (nonatomic) Q successfulTiles;
+@property (nonatomic) Q failedTiles;
+@property (nonatomic) Q bytesDownloaded;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSProgress progress;
+- (id)subscription;
+- (void)_finishWithError:;
+- (unsigned long long)bytesDownloaded;
+- (void)cancel;
+- (id)progress;
+- (void)resume;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)pause;
+- (void)batchTileRequester:receivedData:tileEdition:tileSet:etag:forKey:userInfo:;
+- (void)batchTileRequester:failedToLoadKey:error:;
+- (void)batchTileRequesterDidFinish:;
+- (id)initWithSubscription:diskCache:delegate:delegateQueue:reason:requestOptions:manifestManager:log:logPrefix:tileRequesterCreationBlock:tileDownloader:;
+- (unsigned long long)numberOfTilesConsidered;
+- (unsigned long long)numberOfTilesAttempted;
+- (unsigned long long)successfulTiles;
+- (unsigned long long)failedTiles;
+@end

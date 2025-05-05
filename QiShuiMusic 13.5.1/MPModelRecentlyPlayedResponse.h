@@ -1,0 +1,2 @@
+@interface MPModelRecentlyPlayedResponse : MPModelResponse
+@end

@@ -1,0 +1,38 @@
+@interface MKPlaceCollectionViewModel : NSObject
+@property (nonatomic) <MKCuratedCollectionsSyncCoordinator> syncCoordinator;
+@property (nonatomic) {CGSize=dd} photoSize;
+@property (nonatomic) UIImage publisherLogoImage;
+@property (nonatomic) UIColor backgroundColor;
+@property (nonatomic) NSAttributedString collectionTitle;
+@property (nonatomic) NSAttributedString collectionLongTitle;
+@property (nonatomic) NSAttributedString secondaryCollectionTitle;
+@property (nonatomic) BOOL isSaved;
+@property (nonatomic) GEOPlaceCollection placeCollection;
+- (id)syncCoordinator;
+- (void)setBackgroundColor:;
+- (id)backgroundColor;
+- (void)setSyncCoordinator:;
+- (id)collectionLongTitle;
+- (void)setIsSaved:;
+- (BOOL)isSaved;
+- (void).cxx_destruct;
+- (id)description;
+- (id)collectionTitle;
+- (void)initializeFonts;
+- (id)photoSize;
+- (void)setPhotoSize:;
+- (id)initWithGEOPlaceCollection:usingSyncCoordinator:inContext:usingTitleFont:;
+- (void)contentCategorySizeDidChange;
+- (id)secondaryCollectionTitle;
+- (BOOL)shouldDisplayMetadata;
+- (void)_publisherImageWithIdentifier:completion:;
+- (void)publisherIconImageWithCompletion:;
+- (void)publisherLogoImageWithCompletion:;
+- (void)setCollectionTitle:;
+- (void)setCollectionLongTitle:;
+- (void)setSecondaryCollectionTitle:;
+- (id)placeCollection;
+- (id)publisherLogoImage;
+- (void)setPublisherLogoImage:;
+- (void)collectionImageForSize:onCompletion:;
+@end

@@ -1,0 +1,38 @@
+@interface IESLiveChargeViewTitleComponent : UIView
+@property (nonatomic) double width;
+@property (nonatomic) IESLiveChargeViewModel viewModel;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIView chargeFAQ;
+@property (nonatomic) UIImageView chargeFAQImageView;
+@property (nonatomic) UILabel chargeFAQLabel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)handleFirstChargeGuideFAQStatus;
+- (void)updateFAQStatus;
+- (id)chargeFAQ;
+- (id)chargeFAQImageView;
+- (id)chargeFAQLabel;
+- (void)didBalanceUpdated;
+- (void)didChargePanelFAQTaped:;
+- (void)didRechargeSuccess:error:;
+- (void)handleChargeFailFAQStatus;
+- (void)handleNormalFAQStatus;
+- (void)setChargeFAQ:;
+- (void)setChargeFAQImageView:;
+- (void)setChargeFAQLabel:;
+- (void)updateViewModel:;
+- (void)reload;
+- (id)viewModel;
+- (void)setTitleLabel:;
+- (void)layoutSubviews;
+- (id)initWithWidth:;
+- (void)setWidth:;
+- (double)width;
+- (void).cxx_destruct;
+- (void)setViewModel:;
+- (id)titleLabel;
+- (void)setupUI;
+- (double)viewHeight;
+@end

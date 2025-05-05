@@ -1,0 +1,38 @@
+@interface MSXPCConnection : NSXPCConnection
+@property (nonatomic) Protocol protocol;
+@property (nonatomic) BOOL shouldLaunchMobileMail;
+- (id)protocol;
+- (id)_connection;
+- (id)initWithProtocol:;
+- (int)auditSessionIdentifier;
+- (unsigned int)effectiveGroupIdentifier;
+- (void)setExportedInterface:;
+- (id)interruptionHandler;
+- (void)_finishPromise:withConnection:error:;
+- (void)dealloc;
+- (id)exportedObject;
+- (id)exportedInterface;
+- (void)setInterruptionHandler:;
+- (id)remoteObjectProxy;
+- (BOOL)shouldLaunchMobileMail;
+- (void)setExportedObject:;
+- (void)suspend;
+- (void)_queue_invokeInvalidationHandler;
+- (void)_sendInvocation:remoteInterface:remoteProxy:errorHandler:;
+- (id)remoteObjectProxyWithErrorHandler:;
+- (void)setRemoteObjectInterface:;
+- (void)_invokeInterruptionHandlerForPromise:;
+- (void)resume;
+- (int)processIdentifier;
+- (void).cxx_destruct;
+- (id)_connectionForPromise:;
+- (id)invalidationHandler;
+- (void)_invalidatePromise:;
+- (void)setInvalidationHandler:;
+- (id)description;
+- (id)_nts_wrappedInterruptionHandler;
+- (void)setShouldLaunchMobileMail:;
+- (void)invalidate;
+- (unsigned int)effectiveUserIdentifier;
+- (id)remoteObjectInterface;
+@end

@@ -1,0 +1,30 @@
+@interface TUCallModel : NSObject
+@property (nonatomic) BOOL supportsHolding;
+@property (nonatomic) BOOL supportsGrouping;
+@property (nonatomic) BOOL supportsUngrouping;
+@property (nonatomic) BOOL supportsDTMF;
+@property (nonatomic) BOOL supportsUnambiguousMultiPartyState;
+@property (nonatomic) BOOL supportsAddCall;
+@property (nonatomic) BOOL supportsSendingToVoicemail;
+- (BOOL)supportsGrouping;
+- (void)setSupportsGrouping:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)supportsHolding;
+- (BOOL)supportsUngrouping;
+- (BOOL)supportsDTMF;
+- (BOOL)supportsUnambiguousMultiPartyState;
+- (BOOL)supportsAddCall;
+- (BOOL)supportsSendingToVoicemail;
+- (void)setSupportsHolding:;
+- (void)setSupportsUngrouping:;
+- (void)setSupportsDTMF:;
+- (void)setSupportsUnambiguousMultiPartyState:;
+- (void)setSupportsAddCall:;
+- (void)setSupportsSendingToVoicemail:;
++ (BOOL)supportsSecureCoding;
+@end

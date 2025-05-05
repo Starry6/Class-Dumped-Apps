@@ -1,0 +1,32 @@
+@interface IESECLynxCardBridgeEventCenter : NSObject
+@property (nonatomic) NSMutableDictionary eventSubscribers;
+@property (nonatomic) NSLock eventSubscribersLock;
+@property (nonatomic) NSMutableArray eventQueue;
+@property (nonatomic) NSLock eventQueueLock;
+@property (nonatomic) @? receiveBroadcastHandler;
+@property (nonatomic) NSArray eventDenyList;
+@property (nonatomic) double effectiveDuration;
+- (void)cleanEventWith:;
+- (void)cleanExpiredEvent;
+- (void)clearEvent:isSticky:timestampLower:timestampUpper:;
+- (id)eventDenyList;
+- (id)eventQueueLock;
+- (id)eventSubscribers;
+- (id)eventSubscribersLock;
+- (void)publishEvent:;
+- (id)receiveBroadcastHandler;
+- (void)setEffectiveDuration:;
+- (void)setEventDenyList:;
+- (void)setEventQueueLock:;
+- (void)setEventSubscribers:;
+- (void)setEventSubscribersLock:;
+- (void)setReceiveBroadcastHandler:;
+- (void)subscribeEventNamed:withSubscriber:;
+- (void)unsubscribeEventNamed:withSubscriber:;
+- (void)setEventQueue:;
+- (id)eventQueue;
+- (id)init;
+- (double)effectiveDuration;
+- (void).cxx_destruct;
++ (id)sharedCenter;
+@end

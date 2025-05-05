@@ -1,0 +1,32 @@
+@interface VKRouteWaypointInfo : NSObject
+@property (nonatomic) Q legIndex;
+@property (nonatomic) BOOL needsTextUpdate;
+@property (nonatomic) BOOL isAtStart;
+@property (nonatomic) BOOL isAtEnd;
+@property (nonatomic) BOOL isOnSelectedRoute;
+@property (nonatomic) {?=ddd} routeCoordinate;
+@property (nonatomic) {?=ddd} adjacentRouteCoordinate;
+@property (nonatomic) C when;
+@property (nonatomic) C type;
+@property (nonatomic) GEOComposedWaypoint waypoint;
+@property (nonatomic) GEOFeatureStyleAttributes styleAttributes;
+- (unsigned char)when;
+- (void)setWhen:;
+- (unsigned char)type;
+- (BOOL)isAtEnd;
+- (void).cxx_destruct;
+- (id)styleAttributes;
+- (BOOL)needsTextUpdate;
+- (void)setNeedsTextUpdate:;
+- (id)routeCoordinate;
+- (id)waypoint;
+- (unsigned long long)legIndex;
+- (id)initWithWaypoint:legIndex:routeCoordinate:adjacentRouteCoordinate:waypointType:;
+- (id)adjacentRouteCoordinate;
+- (BOOL)isAtStart;
+- (void)setIsAtStart:;
+- (void)setIsAtEnd:;
+- (BOOL)isOnSelectedRoute;
+- (void)setIsOnSelectedRoute:;
++ (id)newRouteWaypointForWaypoint:legIndex:routeCoordinate:adjacentRouteCoordinate:;
+@end

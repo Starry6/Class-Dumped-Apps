@@ -1,0 +1,35 @@
+@interface AWDCoreRoutineModelLearnedNonGeocodeableEvents : PBCodable
+@property (nonatomic) BOOL hasTimestamp;
+@property (nonatomic) Q timestamp;
+@property (nonatomic) BOOL hasUnlearnedNongeocodableEvents;
+@property (nonatomic) NSInteger unlearnedNongeocodableEvents;
+@property (nonatomic) BOOL hasLearnedNongeocodableEvents;
+@property (nonatomic) NSInteger learnedNongeocodableEvents;
+@property (nonatomic) BOOL hasNongeocodableEvents;
+@property (nonatomic) NSInteger nongeocodableEvents;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)setHasTimestamp:;
+- (void)mergeFrom:;
+- (BOOL)hasTimestamp;
+- (void)setTimestamp:;
+- (BOOL)readFrom:;
+- (unsigned long long)timestamp;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setUnlearnedNongeocodableEvents:;
+- (void)setHasUnlearnedNongeocodableEvents:;
+- (BOOL)hasUnlearnedNongeocodableEvents;
+- (void)setLearnedNongeocodableEvents:;
+- (void)setHasLearnedNongeocodableEvents:;
+- (BOOL)hasLearnedNongeocodableEvents;
+- (void)setNongeocodableEvents:;
+- (void)setHasNongeocodableEvents:;
+- (BOOL)hasNongeocodableEvents;
+- (int)unlearnedNongeocodableEvents;
+- (int)learnedNongeocodableEvents;
+- (int)nongeocodableEvents;
+@end

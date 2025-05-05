@@ -1,0 +1,33 @@
+@interface BDTuringParameterVerifyModel : BDTuringVerifyModel
+@property (nonatomic) NSDictionary verifyData;
+@property (nonatomic) NSString type;
+@property (nonatomic) NSString verifyScene;
+@property (nonatomic) BDTuringVerifyModel actualModel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setActualModel:;
+- (void)setVerifyScene:;
+- (id)actualModel;
+- (void)appendCommonKVParameters:;
+- (void)appendKVToEventParameters:;
+- (void)appendKVToQueryParameters:;
+- (void)configVerifyView:;
+- (id)createVerifyView;
+- (void)setVerifyData:;
+- (BOOL)supportLandscape;
+- (id)verifyData;
+- (id)verifyScene;
+- (id)init;
+- (void)setType:;
+- (void)setAppID:;
+- (id)type;
+- (id)appID;
+- (void).cxx_destruct;
+- (id)plugin;
+- (void)setRegionType:;
+- (id)handlerName;
++ (BOOL)canHandleParameter:;
++ (id)modelWithParameter:;
+@end

@@ -1,0 +1,33 @@
+@interface BDXBridgeAppShowCustomModalMethodParamModel : BDXBridgeModel
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString content;
+@property (nonatomic) BOOL showCancel;
+@property (nonatomic) NSString cancelText;
+@property (nonatomic) NSString confirmText;
+@property (nonatomic) BOOL tapMaskToDismiss;
+@property (nonatomic) NSNumber scrollHeight;
+@property (nonatomic) q mode;
+@property (nonatomic) q styleMode;
+- (id)cancelText;
+- (void)setCancelText:;
+- (void)setShowCancel:;
+- (void)setStyleMode:;
+- (void)setTapMaskToDismiss:;
+- (BOOL)showCancel;
+- (BOOL)tapMaskToDismiss;
+- (id)content;
+- (void)setContent:;
+- (void)setTitle:;
+- (id)title;
+- (void).cxx_destruct;
+- (long long)mode;
+- (void)setMode:;
+- (id)scrollHeight;
+- (id)confirmText;
+- (void)setConfirmText:;
+- (void)setScrollHeight:;
+- (long long)styleMode;
++ (id)modeJSONTransformer;
++ (id)styleModeJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

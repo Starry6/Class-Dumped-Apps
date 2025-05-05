@@ -1,0 +1,30 @@
+@interface PuzzleStateInjectConfigDataGenerator : NSObject
+@property (nonatomic) NSCache configCache;
+@property (nonatomic) NSCache templateDataCache;
+- (id)isDisablePrefetch:routerParams:;
+- (void)setConfigCache:;
+- (void)appDidReceiveMemoryWarningNotification;
+- (id)channelWith:routerParams:;
+- (id)configCache;
+- (void)configTemplateDataIfNeed:channel:context:;
+- (id)findCurrentPrefetchDataWith:;
+- (id)findCurrentStorageDataWithConfig:url:routerParams:stateCenter:;
+- (id)findInjectConfigWith:routerParams:;
+- (id)findPuzzleStateDataWith:routerParams:stateCenter:;
+- (id)findPuzzleStateKeysWith:routerParams:;
+- (id)findStorageKeysWithConfig:url:routerParams:;
+- (BOOL)hasInjectConfigWith:routerParams:;
+- (id)injectFullConfigWith:;
+- (id)isDisableStorage:routerParams:;
+- (void)logMessage:context:;
+- (id)parseDynamicStorageKey:url:routerParams:;
+- (void)reportSlardarWith:context:url:;
+- (id)scenceWith:routerParams:;
+- (void)setTemplateDataCache:;
+- (id)stateGlobalPropWith:routerParams:context:stateCenter:;
+- (id)templateDataCache;
+- (void)dealloc;
+- (void).cxx_destruct;
++ (id)stateGlobalPropWith:routerParams:context:stateCenter:;
++ (id)sharedManager;
+@end

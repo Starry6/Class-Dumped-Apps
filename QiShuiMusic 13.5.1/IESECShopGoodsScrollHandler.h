@@ -1,0 +1,35 @@
+@interface IESECShopGoodsScrollHandler : NSObject
+@property (nonatomic) IESECShopGoodsState state;
+@property (nonatomic) IESECShopContext legacyShopContext;
+@property (nonatomic) NSString perfScene;
+@property (nonatomic) IESECStoreScrollToTopView scrollToTopView;
+@property (nonatomic) @? scrollCallback;
+@property (nonatomic) @? scrollWillBeginDragging;
+@property (nonatomic) @? scrollDidEndDeceleratingCallback;
+@property (nonatomic) @? scrollDidEndDraggingCallback;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)attachState:;
+- (id)legacyShopContext;
+- (id)perfScene;
+- (id)scrollCallback;
+- (id)scrollDidEndDeceleratingCallback;
+- (id)scrollDidEndDraggingCallback;
+- (id)scrollWillBeginDragging;
+- (void)setPerfScene:;
+- (void)setScrollCallback:;
+- (void)setScrollDidEndDeceleratingCallback:;
+- (void)setScrollDidEndDraggingCallback:;
+- (void)setScrollToTopView:;
+- (void)setScrollWillBeginDragging:;
+- (void)scrollViewDidEndDecelerating:;
+- (void)setState:;
+- (void)scrollViewDidScroll:;
+- (void)scrollViewWillBeginDragging:;
+- (id)state;
+- (void)scrollViewDidEndDragging:willDecelerate:;
+- (void).cxx_destruct;
+- (id)scrollToTopView;
+@end

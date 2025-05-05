@@ -1,0 +1,34 @@
+@interface CRBoxLayer : CAReplicatorLayer
+@property (nonatomic) CAShapeLayer reticleLayer;
+@property (nonatomic) CATextLayer codeLayer;
+@property (nonatomic) NSMutableArray completionBlocks;
+@property (nonatomic) double demoSpeed;
+@property (nonatomic) BOOL customInit;
+@property (nonatomic) double frameRatio;
+- (id)completionBlocks;
+- (void)setCustomInit:;
+- (void)addCompletionBlock:;
+- (id)init;
+- (void)dealloc;
+- (BOOL)customInit;
+- (double)demoSpeed;
+- (void)animatePulseColor:;
+- (void)setCodeLayer:;
+- (void)observeValueForKeyPath:ofObject:change:context:;
+- (void)setCompletionBlocks:;
+- (void)setFrameRatio:;
+- (void)setString:mirrored:inverted:;
+- (id)initWithCodeFrameRatio:;
+- (void)layoutSublayers;
+- (void)positionForCodeBoxPoints:;
+- (void)animateReveal;
+- (id)reticleLayer;
+- (void).cxx_destruct;
+- (void)setReticleLayer:;
+- (double)frameRatio;
+- (void)animateToPosition:transform:opacity:type:;
+- (id)codeLayer;
+- (void)animateConceal;
+- (void)setDemoSpeed:;
++ (id)layer;
+@end

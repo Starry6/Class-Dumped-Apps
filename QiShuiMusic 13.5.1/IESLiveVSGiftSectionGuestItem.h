@@ -1,0 +1,32 @@
+@interface IESLiveVSGiftSectionGuestItem : IESLiveDynamicModel
+@property (nonatomic) IESLiveVSGiftGuestModel guestModel;
+@property (nonatomic) <IESLiveVSGiftGuestAPI> api;
+@property (nonatomic) @? dataDidUpdate;
+@property (nonatomic) {CGSize=dd} itemSize;
+@property (nonatomic) # cellClass;
+@property (nonatomic) IESLiveVSGiftPanelDataSharing dataSharing;
+@property (nonatomic) IESLiveVSGiftPanelCommonReactionCenter reactionCenter;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setDataSharing:;
+- (void)updateGuestInfo;
+- (id)dataSharing;
+- (id)diffIdentifier;
+- (id)guestModel;
+- (id)initWithDataSharing:withReactionCenter:;
+- (BOOL)isEqualToDiffableItem:;
+- (void)p_loadFromStorageCompletion:;
+- (void)p_storeTitle:sendDesc:;
+- (id)reactionCenter;
+- (void)setGuestModel:;
+- (void)setReactionCenter:;
+- (id)itemSize;
+- (void).cxx_destruct;
+- (Class)cellClass;
+- (void)setItemSize:;
+- (id)api;
+- (void)setApi:;
+- (void)setCellClass:;
+@end

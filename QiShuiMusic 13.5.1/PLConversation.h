@@ -1,0 +1,32 @@
+@interface PLConversation : PLGenericAlbum
+@property (nonatomic) BOOL needsPersistenceUpdate;
+@property (nonatomic) BOOL albumShouldBeAutomaticallyDeleted;
+@property (nonatomic) S syndicate;
+@property (nonatomic) NSSet assets;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)isEmpty;
+- (void)willSave;
+- (void)setNeedsPersistenceUpdate:;
+- (BOOL)albumShouldBeAutomaticallyDeleted;
+- (void)setAlbumShouldBeAutomaticallyDeleted:;
+- (id)mutableAssets;
+- (BOOL)canPerformEditOperation:;
+- (BOOL)needsPersistenceUpdate;
+- (unsigned long long)count;
+- (void)_updateStartDate:;
+- (void)_updateEndDate:;
+- (BOOL)_isDateBeforeStartDate:;
+- (BOOL)_isDateAfterEndDate:;
+- (id)_orderedBatchedAssets;
+- (void)updateConversationDatesFromAddedAsset:;
+- (BOOL)_isAssetIncludedInConversationDates:;
+- (void)_updateAssetSyndicationState:;
++ (id)entityName;
++ (id)insertNewConversationAlbumWithConversationID:inManagedObjectContext:;
++ (id)albumsWithConversationIDs:inLibrary:;
++ (id)albumWithConversationID:inLibrary:;
++ (id)createOrUpdateObjectFromSearchableItem:library:createIfNeeded:didCreate:isSyndicatable:error:;
+@end

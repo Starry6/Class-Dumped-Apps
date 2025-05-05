@@ -1,0 +1,33 @@
+@interface ASCredentialRequestContainerViewController : UIViewController
+@property (nonatomic) UIVisualEffectView blurBackgroundView;
+@property (nonatomic) UIViewController rootViewController;
+@property (nonatomic) <ASCredentialRequestContainerViewControllerDelegate> delegate;
+@property (nonatomic) <ASCredentialRequestPaneViewControllerDelegate> paneDelegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)animationControllerForPresentedController:presentingController:sourceController:;
+- (void)preferredContentSizeDidChangeForChildContentContainer:;
+- (id)rootViewController;
+- (void)setDelegate:;
+- (id)initWithRootViewController:;
+- (id)animationControllerForDismissedController:;
+- (void)viewWillDisappear:;
+- (id)delegate;
+- (void)navigationController:willShowViewController:animated:;
+- (void).cxx_destruct;
+- (void)viewWillAppear:;
+- (unsigned long long)supportedInterfaceOrientations;
+- (void)viewDidLoad;
+- (BOOL)_shouldDismiss;
+- (void)_handleTapGesture:;
+- (id)paneDelegate;
+- (void)setPaneDelegate:;
+- (void)_setPaneDelegateForTopViewController;
+- (void)_setPaneDelegateForViewController:;
+- (void)_clearPaneDelegateForViewController:;
+- (void)_setPaneDelegate:forViewController:;
+- (id)blurBackgroundView;
+- (void)setBlurBackgroundView:;
+@end

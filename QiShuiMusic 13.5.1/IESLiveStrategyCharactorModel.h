@@ -1,0 +1,34 @@
+@interface IESLiveStrategyCharactorModel : NSObject
+@property (nonatomic) @ preInputValue;
+@property (nonatomic) NSString chName;
+@property (nonatomic) NSString chType;
+@property (nonatomic) NSString chOperator;
+@property (nonatomic) q checkInterval;
+@property (nonatomic) NSString chAlias;
+@property (nonatomic) @ chValue;
+@property (nonatomic) @ inputValue;
+@property (nonatomic) <Operator> charactorOperator;
+- (id)chAlias;
+- (BOOL)updateCharactorInIntervalCount:;
+- (id)chValue;
+- (id)chName;
+- (id)chOperator;
+- (id)chType;
+- (id)charactorOperator;
+- (long long)checkInterval;
+- (BOOL)isValueChanged;
+- (id)preInputValue;
+- (void)setChAlias:;
+- (void)setChName:;
+- (void)setChOperator:;
+- (void)setChType:;
+- (void)setChValue:;
+- (void)setCharactorOperator:;
+- (void)setCheckInterval:;
+- (void)setPreInputValue:;
+- (void)updateValueWithDataCenter:;
+- (id)init;
+- (void).cxx_destruct;
+- (id)inputValue;
+- (void)setInputValue:;
+@end

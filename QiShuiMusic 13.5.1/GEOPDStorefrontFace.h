@@ -1,0 +1,38 @@
+@interface GEOPDStorefrontFace : PBCodable
+@property (nonatomic) BOOL hasGeometry;
+@property (nonatomic) GEOPDOrientedBoundingBox geometry;
+@property (nonatomic) NSMutableArray features;
+@property (nonatomic) BOOL hasGroupId;
+@property (nonatomic) Q groupId;
+- (void)readAll:;
+- (id)geometry;
+- (id)init;
+- (void)setGeometry:;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (void)setFeatures:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (unsigned long long)groupId;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)features;
+- (id)dictionaryRepresentation;
+- (void)setGroupId:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasGeometry;
+- (void)clearFeatures;
+- (void)addFeature:;
+- (unsigned long long)featuresCount;
+- (id)featureAtIndex:;
+- (void)setHasGroupId:;
+- (BOOL)hasGroupId;
++ (Class)featureType;
++ (BOOL)isValid:;
+@end

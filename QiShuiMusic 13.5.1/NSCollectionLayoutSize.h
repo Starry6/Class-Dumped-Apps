@@ -1,0 +1,35 @@
+@interface NSCollectionLayoutSize : NSObject
+@property (nonatomic) {CGSize=dd} size;
+@property (nonatomic) q widthSemantic;
+@property (nonatomic) q heightSemantic;
+@property (nonatomic) NSCollectionLayoutDimension widthDimension;
+@property (nonatomic) NSCollectionLayoutDimension heightDimension;
+- (long long)widthSemantic;
+- (BOOL)isEstimated;
+- (void)setWidthDimension:;
+- (id)initWithSize:widthSemantic:heightSemantic:width:height:;
+- (long long)heightSemantic;
+- (id)widthDimension;
+- (void)setHeightDimension:;
+- (id)_effectiveSizeForContainer:displayScale:ignoringInsets:;
+- (id)heightDimension;
+- (id)_effectiveSizeForContainer:ignoringInsets:;
+- (void).cxx_destruct;
+- (void)setHeightSemantic:;
+- (BOOL)isContainerSize;
+- (id)_effectiveSizeForContainer:;
+- (id)description;
+- (void)setWidthSemantic:;
+- (BOOL)_isEstimatedForAxis:;
+- (void)setSize:;
+- (BOOL)isEqual:;
+- (unsigned long long)_containerSizeDependentAxes;
+- (id)copyWithZone:;
+- (id)size;
++ (id)sizeWithWidthDimension:heightDimension:;
++ (id)sizeWithSize:widthSemantic:heightSemantic:;
++ (id)sizeWithContainerSize;
++ (id)sizeWithAbsoluteSize:;
++ (id)sizeWithContainerWidthFactor:containerHeightFactor:;
++ (id)sizeWithWidth:widthSemantic:height:heightSemantic:;
+@end

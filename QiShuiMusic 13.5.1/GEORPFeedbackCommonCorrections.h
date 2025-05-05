@@ -1,0 +1,35 @@
+@interface GEORPFeedbackCommonCorrections : PBCodable
+@property (nonatomic) BOOL hasComments;
+@property (nonatomic) NSString comments;
+@property (nonatomic) NSMutableArray imageIds;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (id)init;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasComments;
+- (id)comments;
+- (void)setComments:;
+- (id)imageIds;
+- (void)setImageIds:;
+- (void)clearImageIds;
+- (void)addImageId:;
+- (unsigned long long)imageIdsCount;
+- (id)imageIdAtIndex:;
++ (BOOL)isValid:;
++ (Class)imageIdType;
+@end

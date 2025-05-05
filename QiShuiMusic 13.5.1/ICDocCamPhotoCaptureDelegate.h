@@ -1,0 +1,35 @@
+@interface ICDocCamPhotoCaptureDelegate : NSObject
+@property (nonatomic) AVCapturePhotoSettings requestedPhotoSettings;
+@property (nonatomic) NSDictionary metaData;
+@property (nonatomic) ^{__CVBuffer=} pbRef;
+@property (nonatomic) float highestSharpness;
+@property (nonatomic) @? willCapturePhotoAnimation;
+@property (nonatomic) @? completed;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setMetaData:;
+- (void)dealloc;
+- (void)setCompleted:;
+- (void)captureOutput:willCapturePhotoForResolvedSettings:;
+- (id)metaData;
+- (void)captureOutput:willBeginCaptureForResolvedSettings:;
+- (void)captureOutput:didFinishRecordingLivePhotoMovieForEventualFileAtURL:resolvedSettings:;
+- (void).cxx_destruct;
+- (void)captureOutput:didFinishProcessingLivePhotoToMovieFileAtURL:duration:photoDisplayTime:resolvedSettings:error:;
+- (id)completed;
+- (void)captureOutput:didFinishCaptureForResolvedSettings:error:;
+- (void)didFinish;
+- (void)captureOutput:didFinishProcessingPhotoSampleBuffer:previewPhotoSampleBuffer:resolvedSettings:bracketSettings:error:;
+- (id)initWithRequestedPhotoSettings:willCapturePhotoAnimation:completed:;
+- (void)setPbRef:;
+- (float)sharpnessForImageBuffer:;
+- (id)requestedPhotoSettings;
+- (void)setRequestedPhotoSettings:;
+- (id)pbRef;
+- (float)highestSharpness;
+- (void)setHighestSharpness:;
+- (id)willCapturePhotoAnimation;
+- (void)setWillCapturePhotoAnimation:;
+@end

@@ -1,0 +1,2 @@
+@interface AVAssetWriterInputPassDescriptionInternal : NSObject
+@end

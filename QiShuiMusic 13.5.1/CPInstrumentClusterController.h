@@ -1,0 +1,34 @@
+@interface CPInstrumentClusterController : NSObject
+@property (nonatomic) NSXPCConnection connection;
+@property (nonatomic) <CPInstrumentClusterProviding> instrumentClusterProvider;
+@property (nonatomic) <CPInstrumentClusterControllerDelegate> delegate;
+@property (nonatomic) UIWindow instrumentClusterWindow;
+@property (nonatomic) Q speedLimitSetting;
+@property (nonatomic) Q compassSetting;
+@property (nonatomic) NSArray inactiveDescriptionVariants;
+@property (nonatomic) NSArray attributedInactiveDescriptionVariants;
+- (void)setDelegate:;
+- (void)_invalidate;
+- (void)_connectionInterrupted;
+- (id)delegate;
+- (id)connection;
+- (void).cxx_destruct;
+- (void)setConnection:;
+- (id)_init;
+- (void)_connectionInvalidated;
+- (unsigned long long)compassSetting;
+- (unsigned long long)speedLimitSetting;
+- (void)_sceneConnect:;
+- (void)_connectToListenerEndpoint:;
+- (id)instrumentClusterWindow;
+- (void)setInstrumentClusterWindow:;
+- (void)setSpeedLimitSetting:;
+- (void)setCompassSetting:;
+- (void)setInactiveDescriptionVariants:;
+- (void)setAttributedInactiveDescriptionVariants:;
+- (id)inactiveDescriptionVariants;
+- (id)attributedInactiveDescriptionVariants;
+- (id)instrumentClusterProvider;
+- (void)setInstrumentClusterProvider:;
++ (id)_clusterProvidingInterface;
+@end

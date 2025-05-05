@@ -1,0 +1,4 @@
+@interface MPSGraphReductionSumOp : MPSGraphReductionBaseOp
+- (id)makeMLIROpWithBuilder:symbolTable:inputValues:opInitialization:name:;
+- (id)partialDerivativeForInputTensor:incomingGradient:inputIndex:name:;
+@end

@@ -1,0 +1,32 @@
+@interface MAAutoAssetInfoControl : NSObject
+@property (nonatomic) BOOL clearingAfter;
+@property (nonatomic) BOOL forceUnlock;
+@property (nonatomic) NSArray limitedToAssetTypes;
+@property (nonatomic) NSString volumeToReclaim;
+@property (nonatomic) NSInteger cacheDeleteUrgency;
+@property (nonatomic) q targetingPurgeAmount;
+@property (nonatomic) q simulateOperation;
+@property (nonatomic) q simulateEnd;
+- (long long)targetingPurgeAmount;
+- (id)initWithCoder:;
+- (long long)simulateEnd;
+- (void)encodeWithCoder:;
+- (long long)simulateOperation;
+- (id)summary;
+- (void).cxx_destruct;
+- (int)cacheDeleteUrgency;
+- (id)description;
+- (id)initClearingAfter:;
+- (id)initClearingAfter:limitedToAssetTypes:;
+- (id)initForcingUnlock:;
+- (id)initWithVolumeToReclaim:withUrgency:targetingPurgeAmount:;
+- (id)initForSimulateOperation:withSimulateEnd:;
+- (id)initClearingAfter:forcingUnlock:limitedToAssetTypes:withVolumeToReclaim:withUrgency:targetingPurgeAmount:simulateOperation:simulateEnd:;
+- (BOOL)clearingAfter;
+- (BOOL)forceUnlock;
+- (id)limitedToAssetTypes;
+- (id)volumeToReclaim;
++ (BOOL)supportsSecureCoding;
++ (id)nameOfSimulateEnd:;
++ (id)nameOfSimulateOperation:;
+@end

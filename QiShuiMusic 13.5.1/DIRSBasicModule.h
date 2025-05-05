@@ -1,0 +1,38 @@
+@interface DIRSBasicModule : NSObject
+@property (nonatomic) double tickTime;
+@property (nonatomic) DIRSContext context;
+@property (nonatomic) NSString category;
+@property (nonatomic) BOOL isEnabled;
+@property (nonatomic) q state;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)exportParameters:;
+- (void)setTickTime:;
+- (id)supportedParameterKeys;
+- (double)tickTime;
+- (id)init;
+- (id)executionQueue;
+- (id)context;
+- (void)setState:;
+- (void)commonInit;
+- (void)stop;
+- (void)suspend;
+- (void)run;
+- (void)resume;
+- (long long)state;
+- (id)initWithContext:;
+- (void)setCategory:;
+- (void).cxx_destruct;
+- (void)setContext:;
+- (void)setIsEnabled:;
+- (id)category;
+- (BOOL)isEnabled;
+- (id)parameterForKey:;
++ (id)moduleId;
++ (BOOL)isPlugin;
++ (id)description;
++ (long long)priority;
++ (id)moduleVersion;
+@end

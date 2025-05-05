@@ -1,0 +1,32 @@
+@interface IESLiveRevenueInteractXPlayGameBuilder : NSObject
+@property (nonatomic) IESLiveRevenueInteractPlayAPI api;
+@property (nonatomic) IESLiveRevenueInteractGameNotificationViewController inviteAlertVC;
+@property (nonatomic) BOOL needUseRoomRTMStreamData;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)anchorID;
+- (void)endXPlayGameWithConfig:;
+- (id)gamePublicParams;
+- (id)initWithDIContext:;
+- (id)inviteAlertVC;
+- (void)inviteXPlayGameWithConfig:;
+- (BOOL)needUseRoomRTMStreamData;
+- (void)registerMessageObserver;
+- (void)replyXPlayGameWithConfig:;
+- (void)resolveBizInviteMessage:;
+- (void)resolveBizReplyMessage:;
+- (void)setInviteAlertVC:;
+- (void)setNeedUseRoomRTMStreamData:;
+- (void)startXPlayGameWithConfig:;
+- (id)model;
+- (unsigned long long)scene;
+- (id)provider;
+- (void).cxx_destruct;
+- (id)channelID;
+- (void)messageReceived:;
+- (id)roomID;
+- (id)api;
+- (void)setApi:;
+@end

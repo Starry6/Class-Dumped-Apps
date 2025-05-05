@@ -1,0 +1,34 @@
+@interface ISAnimatedImageView : UIView
+@property (nonatomic) UIImageView placeholderImageView;
+@property (nonatomic) ISAnimatedImagePlayer player;
+@property (nonatomic) PFAnimatedImage image;
+@property (nonatomic) BOOL playing;
+@property (nonatomic) Q displayedFrameIndex;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)isPlaying;
+- (void)dealloc;
+- (void)didMoveToSuperview;
+- (void)displayLayer:;
+- (void)setPlaying:;
+- (void)setAlpha:;
+- (void)setImage:;
+- (void)setPlaceholderImageView:;
+- (id)placeholderImageView;
+- (id)player;
+- (id)sizeThatFits:;
+- (void).cxx_destruct;
+- (void)didMoveToWindow;
+- (void)setPlayer:;
+- (void)setHidden:;
+- (id)image;
+- (id)initWithAnimatedImage:;
+- (void)didBeginAnimating;
+- (void)setDisplayedFrameIndex:;
+- (unsigned long long)displayedFrameIndex;
+- (BOOL)isReadyToDisplay;
+- (void)frameDidChange;
+- (id)initWithAnimatedImagePlayer:;
+@end

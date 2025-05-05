@@ -1,0 +1,33 @@
+@interface CNChangeHistoryResult : NSObject
+@property (nonatomic) BOOL changesTruncated;
+@property (nonatomic) CNChangeHistoryAnchor latestChangeAnchor;
+@property (nonatomic) NSArray contactChanges;
+@property (nonatomic) NSArray groupChanges;
+@property (nonatomic) NSArray labeledValueChanges;
+@property (nonatomic) BOOL unifyResults;
+@property (nonatomic) q changesCount;
+- (long long)changesCount;
+- (id)contactChangesEnumeratorWithKeysToFetch:contactStore:;
+- (id)contactChanges;
+- (void)setChangesCount:;
+- (id)groupChangesEnumeratorWithContactStore:;
+- (void)setLabeledValueChanges:;
+- (id)initWithCoder:;
+- (BOOL)changesTruncated;
+- (void)setGroupChanges:;
+- (BOOL)enumerateGroupChangesFromContactStore:error:usingBlock:;
+- (void)encodeWithCoder:;
+- (BOOL)unifyResults;
+- (id)groupChanges;
+- (void)setUnifyResults:;
+- (void).cxx_destruct;
+- (void)setChangesTruncated:;
+- (id)latestChangeAnchor;
+- (BOOL)enumerateContactChangesWithKeysToFetch:fromContactStore:error:usingBlock:;
+- (id)description;
+- (id)labeledValueChanges;
+- (void)setLatestChangeAnchor:;
+- (void)setContactChanges:;
+- (id)labeledValueChangesEnumeratorWithContactStore:;
++ (BOOL)supportsSecureCoding;
+@end

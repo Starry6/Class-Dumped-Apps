@@ -1,0 +1,32 @@
+@interface BDUGLuckyPublishTestDrillTaskConfig : NSObject
+@property (nonatomic) NSString crashMsg;
+@property (nonatomic) NSString crashStack;
+@property (nonatomic) q testTriggerDelay;
+@property (nonatomic) q testTriggerProbability;
+@property (nonatomic) q testTriggerRange;
+@property (nonatomic) NSString customerFilters;
+@property (nonatomic) NSString appLogEvent;
+@property (nonatomic) NSString drillPath;
+@property (nonatomic) BOOL syncWithException;
+- (id)customerFilters;
+- (void)setAppLogEvent:;
+- (id)appLogEvent;
+- (id)crashMsg;
+- (id)crashStack;
+- (id)drillPath;
+- (BOOL)parseFromDictionary:;
+- (void)setCrashMsg:;
+- (void)setCrashStack:;
+- (void)setCustomerFilters:;
+- (void)setDrillPath:;
+- (void)setSyncWithException:;
+- (void)setTestTriggerDelay:;
+- (void)setTestTriggerProbability:;
+- (void)setTestTriggerRange:;
+- (BOOL)syncWithException;
+- (long long)testTriggerDelay;
+- (long long)testTriggerProbability;
+- (long long)testTriggerRange;
+- (void).cxx_destruct;
++ (BOOL)checkValidDictionary:;
+@end

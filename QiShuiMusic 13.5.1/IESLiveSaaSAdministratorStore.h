@@ -1,0 +1,36 @@
+@interface IESLiveSaaSAdministratorStore : NSObject
+@property (nonatomic) HTSLiveUser anchor;
+@property (nonatomic) IESLiveSaaSLiveRoomModel room;
+@property (nonatomic) NSMutableArray dataSource;
+@property (nonatomic) <HTSLiveSaaSAdministrationReactions> reaction;
+@property (nonatomic) q maxAdminCount;
+@property (nonatomic) HTSEventContext eventContext;
+@property (nonatomic) BOOL isNewStyle;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (unsigned long long)actualAdministratorCount;
+- (void)didSetAttachingDIContext;
+- (void)fetchAdministrators;
+- (id)initWithAnchor:room:;
+- (BOOL)isNewStyle;
+- (long long)maxAdminCount;
+- (void)removeUserFromAdministratorList:;
+- (void)setAsAdministrator:;
+- (void)setEventContext:;
+- (void)setIsNewStyle:;
+- (void)setMaxAdminCount:;
+- (void)unsetAdministrator:;
+- (id)anchor;
+- (void)setDataSource:;
+- (void)setAnchor:;
+- (void)setup;
+- (id)dataSource;
+- (void).cxx_destruct;
+- (id)eventContext;
+- (id)room;
+- (void)setRoom:;
+- (id)reaction;
+- (void)setReaction:;
+@end

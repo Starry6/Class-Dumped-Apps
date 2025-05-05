@@ -1,0 +1,32 @@
+@interface IESIMCustomWebImageManager : NSObject
+@property (nonatomic) NSMutableDictionary customYYWebImageManagers;
+@property (nonatomic) NSMutableArray cacheNames;
+@property (nonatomic) NSMutableDictionary reuseCacheImageInfoDictionary;
+- (id)cacheNames;
+- (id)customYYWebImageManagers;
+- (id)getCacheImageInfoWithIdentificationKey:;
+- (void)getCustomBDWebImageManager:cacheName:;
+- (id)getCustomYYWebImageManager:cacheName:;
+- (id)getRegisterBDImageCache:;
+- (id)getRegisterYYImageCache:;
+- (id)getRegisterYYWebImageMananger:;
+- (id)getRegisteredCacheName:;
+- (id)getYYImageCache:cacheName:;
+- (BOOL)isRegisteredCacheName:;
+- (void)registerCustomWebImage:;
+- (void)removeCustomDiskCache;
+- (void)removeCustomMemoryCache;
+- (void)removeMemoryCacheForName:;
+- (id)reuseCacheImageInfoDictionary;
+- (void)setCacheNames:;
+- (void)setCustomYYWebImageManagers:;
+- (void)setReuseCacheImageInfoDictionary:;
+- (void)stagingImageInfo:cacheName:identificationKey:;
+- (unsigned long long)totalCustomDiskCost;
+- (void)updateBDWebImageConfig:cacheName:;
+- (void)updateCustomWebImageConfig:cacheName:;
+- (void)updateYYWebImageConfig:cacheName:;
+- (void).cxx_destruct;
++ (void)runOnceForLazyRegister;
++ (id)sharedInstance;
+@end

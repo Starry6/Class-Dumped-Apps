@@ -1,0 +1,30 @@
+@interface IESLiveMultilLinkerRelinkAnchorViewModel : NSObject
+@property (nonatomic) NSArray linkers;
+@property (nonatomic) NSArray currentSelectedUsers;
+@property (nonatomic) BOOL relinkAnchorStartEnabled;
+@property (nonatomic) <IESLiveMultiLinkerProvider> mLinkerProvider;
+@property (nonatomic) NSString toastStr;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)linkers;
+- (id)mLinkerProvider;
+- (id)currentSelectedUsers;
+- (id)getLinkerModelWithUser:showSelected:;
+- (id)initWithDIContext:;
+- (void)interactAnchorLinkersView:clickedLinker:;
+- (void)interactAnchorLinkersView:selectedLinkersChange:;
+- (void)multiLinkerUserService:didInteractiveListUpdated:;
+- (void)relinkAnchor:completion:;
+- (BOOL)relinkAnchorStartEnabled;
+- (void)setCurrentSelectedUsers:;
+- (void)setLinkers:;
+- (void)setMLinkerProvider:;
+- (void)setRelinkAnchorStartEnabled:;
+- (void)setToastStr:;
+- (id)setupRelinkAnchorLinkers:;
+- (id)toastStr;
+- (void)updateRelinkAnchorStartButtonStatus;
+- (void).cxx_destruct;
+@end

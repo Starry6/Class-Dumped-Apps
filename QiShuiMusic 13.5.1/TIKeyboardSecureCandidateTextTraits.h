@@ -1,0 +1,32 @@
+@interface TIKeyboardSecureCandidateTextTraits : NSObject
+@property (nonatomic) NSString fontName;
+@property (nonatomic) double maxFontSize;
+@property (nonatomic) double minFontSize;
+@property (nonatomic) TIKeyboardSecureCandidateRGBColor textColor;
+@property (nonatomic) double yCoordinate;
+@property (nonatomic) double baselineOffset;
+- (id)init;
+- (void)setFontName:;
+- (double)baselineOffset;
+- (id)initWithCoder:;
+- (id)initWithFontName:fontSize:textColor:;
+- (double)minFontSize;
+- (id)initWithFontName:maxFontSize:minFontSize:textColor:yCoordinate:baselineOffset:;
+- (void)encodeWithCoder:;
+- (void)setYCoordinate:;
+- (void)setTextColor:;
+- (double)maxFontSize;
+- (void)setBaselineOffset:;
+- (void).cxx_destruct;
+- (id)textColor;
+- (id)description;
+- (void)setMinFontSize:;
+- (void)setMaxFontSize:;
+- (id)fontName;
+- (double)yCoordinate;
+- (BOOL)isEqual:;
+- (id)initWithFontName:maxFontSize:minFontSize:textColor:;
+- (id)copyWithZone:;
++ (id)traitsWithFontName:maxFontSize:minFontSize:textColor:yCoordinate:baselineOffset:;
++ (BOOL)supportsSecureCoding;
+@end

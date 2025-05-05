@@ -1,0 +1,30 @@
+@interface ABUAdapterBridgeSelectorRules : NSObject
+@property (nonatomic) {?=^{?}ii} limitList;
+@property (nonatomic) {ABUSelector=^:ii} aheadSelector;
+@property (nonatomic) {ABUSelector=^:ii} exceptionSelector;
+@property (nonatomic) {ABUSelector=^:ii} behindShowSelector;
+@property (nonatomic) {ABUSelector=^:ii} showSelector;
+- (BOOL)isShowSelector:;
+- (id)aheadSelector;
+- (id)behindShowSelector;
+- (BOOL)containsAheadSelector:;
+- (BOOL)containsBehindShowSelector:;
+- (BOOL)containsExceptionSelector:;
+- (id)exceptionSelector;
+- (id)limitList;
+- (void)registerAheadSelector:;
+- (void)registerBehindShowSelector:;
+- (void)registerExceptionSelector:;
+- (void)registerOnceSelector:;
+- (void)registerShowSelector:;
+- (void)registerTimesSelector:withTimes:;
+- (void)setAheadSelector:;
+- (void)setBehindShowSelector:;
+- (void)setExceptionSelector:;
+- (void)setLimitList:;
+- (void)setShowSelector:;
+- (BOOL)shouldLimitSelector:;
+- (id)showSelector;
+- (id)init;
+- (void)dealloc;
+@end

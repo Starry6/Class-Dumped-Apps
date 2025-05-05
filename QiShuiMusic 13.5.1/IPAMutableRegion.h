@@ -1,0 +1,27 @@
+@interface IPAMutableRegion : IPARegion
+- (void)setRegion:;
+- (void)addRegion:;
+- (void)clipToRect:;
+- (void)clear;
+- (void)scaleBy:;
+- (id)copyWithZone:;
+- (void)addRect:;
+- (void)removeRect:;
+- (void)removeRegion:;
+- (void)clipToRegion:;
+- (void)diffWithRect:;
+- (void)diffWithRegion:;
+- (void)flipInRect:;
+- (void)translateBy:;
+- (void)growBy:;
+- (void)growBy:inRect:;
+- (void)shrinkBy:;
+- (void)shrinkBy:inRect:;
+- (void)applyOrientation:imageSize:;
+- (void)addRectArray:;
+- (void)removeRectArray:;
+- (void)clipToRectArray:;
+- (void)roundUp;
+- (void)roundDown;
+- (void)applyAffineTransform:;
+@end

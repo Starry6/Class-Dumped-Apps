@@ -1,0 +1,2 @@
+@interface AVRoutingSessionDestinationInternal : NSObject
+@end

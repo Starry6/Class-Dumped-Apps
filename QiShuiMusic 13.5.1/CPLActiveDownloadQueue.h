@@ -1,0 +1,36 @@
+@interface CPLActiveDownloadQueue : NSObject
+@property (nonatomic) NSString name;
+@property (nonatomic) Q type;
+@property (nonatomic) BOOL FIFOQueue;
+@property (nonatomic) Q maximumBatchSize;
+@property (nonatomic) q coalescingInterval;
+@property (nonatomic) @? groupConstructor;
+@property (nonatomic) BOOL isHighPriority;
+@property (nonatomic) Q countOfTransferTasks;
+@property (nonatomic) NSArray allTransferTasks;
+@property (nonatomic) Q maximumConcurrentTransportTasks;
+@property (nonatomic) Q countOfTransportTasks;
+@property (nonatomic) Q countOfTransferTasksInTransportTasks;
+- (unsigned long long)maximumBatchSize;
+- (void)addTransportTask:;
+- (void)removeTransportTask:;
+- (unsigned long long)countOfTransportTasks;
+- (unsigned long long)countOfTransferTasksInTransportTasks;
+- (BOOL)isHighPriority;
+- (id)initWithName:type:FIFOQueue:maximumBatchSize:maximumConcurrentTransportTasks:coalescingInterval:groupConstructor:;
+- (unsigned long long)maximumConcurrentTransportTasks;
+- (id)dequeueLastTransportTask;
+- (unsigned long long)type;
+- (void)removeAllTransferTasks;
+- (void).cxx_destruct;
+- (void)removeTransferTask:;
+- (long long)coalescingInterval;
+- (unsigned long long)countOfTransferTasks;
+- (id)allTransferTasks;
+- (void)addTransferTask:;
+- (id)status;
+- (id)dequeueBatchOfTransferTasksDequeuedSize:;
+- (id)name;
+- (BOOL)isFIFOQueue;
+- (id)groupConstructor;
+@end

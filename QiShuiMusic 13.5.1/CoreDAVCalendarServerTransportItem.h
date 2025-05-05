@@ -1,0 +1,30 @@
+@interface CoreDAVCalendarServerTransportItem : CoreDAVItem
+@property (nonatomic) CoreDAVLeafItem apsBundleID;
+@property (nonatomic) CoreDAVLeafItem courierServer;
+@property (nonatomic) CoreDAVItemWithHrefChildItem subscriptionURL;
+@property (nonatomic) CoreDAVItemWithHrefChildItem tokenURL;
+@property (nonatomic) CoreDAVLeafItem apsEnv;
+@property (nonatomic) CoreDAVLeafItem refreshInterval;
+@property (nonatomic) CoreDAVLeafItem xmppServer;
+@property (nonatomic) CoreDAVLeafItem xmppURI;
+- (id)courierServer;
+- (id)apsEnv;
+- (id)init;
+- (id)tokenURL;
+- (void)setApsEnv:;
+- (id)refreshInterval;
+- (id)xmppServer;
+- (void)setTokenURL:;
+- (id)xmppURI;
+- (void)setApsBundleID:;
+- (id)apsBundleID;
+- (void)setCourierServer:;
+- (void).cxx_destruct;
+- (void)setXmppURI:;
+- (id)description;
+- (void)setRefreshInterval:;
+- (void)setSubscriptionURL:;
+- (void)setXmppServer:;
+- (id)subscriptionURL;
++ (id)copyParseRules;
+@end

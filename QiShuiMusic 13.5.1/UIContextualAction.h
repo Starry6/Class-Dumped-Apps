@@ -1,0 +1,37 @@
+@interface UIContextualAction : NSObject
+@property (nonatomic) @? completionHandler;
+@property (nonatomic) @? handler;
+@property (nonatomic) BOOL forcesFallbackBackgroundColor;
+@property (nonatomic) BOOL isDestructive;
+@property (nonatomic) @? preHandler;
+@property (nonatomic) UIMenu _menu;
+@property (nonatomic) q style;
+@property (nonatomic) NSString title;
+@property (nonatomic) UIColor backgroundColor;
+@property (nonatomic) UIImage image;
+- (BOOL)isDestructive;
+- (void)cancel;
+- (void)setBackgroundColor:;
+- (id)backgroundColor;
+- (void)setCompletionHandler:;
+- (void)setHandler:;
+- (void)setImage:;
+- (void)setTitle:;
+- (id)handler;
+- (id)title;
+- (void).cxx_destruct;
+- (id)description;
+- (long long)style;
+- (id)image;
+- (id)completionHandler;
+- (id)_menu;
+- (void)executePreHandlerWithView:;
+- (void)executeHandlerWithView:completionHandler:;
+- (void)_completeWithResult:;
+- (BOOL)forcesFallbackBackgroundColor;
+- (void)setForcesFallbackBackgroundColor:;
+- (id)preHandler;
+- (void)setPreHandler:;
+- (void)_setMenu:;
++ (id)contextualActionWithStyle:title:handler:;
+@end

@@ -1,0 +1,34 @@
+@interface FLEXSQLiteDatabaseManager : NSObject
+@property (nonatomic) ^{sqlite3=} db;
+@property (nonatomic) NSString path;
+@property (nonatomic) FLEXSQLResult lastResult;
+@property (nonatomic) q lastRowID;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithPath:;
+- (void)dealloc;
+- (BOOL)open;
+- (BOOL)close;
+- (long long)lastRowID;
+- (id)queryAllTables;
+- (id)queryAllColumnsOfTable:;
+- (id)queryAllDataInTable:;
+- (id)queryRowIDsInTable:;
+- (id)executeStatement:;
+- (id)executeStatement:arguments:;
+- (BOOL)bindParameters:toStatement:;
+- (BOOL)storeErrorForLastTask:;
+- (id)errorResult:;
+- (id)objectForColumnIndex:stmt:;
+- (id)stringForColumnIndex:stmt:;
+- (id)dataForColumnIndex:stmt:;
+- (id)lastResult;
+- (id)db;
+- (void)setDb:;
+- (id)path;
+- (void)setPath:;
+- (void).cxx_destruct;
++ (id)managerForDatabase:;
+@end

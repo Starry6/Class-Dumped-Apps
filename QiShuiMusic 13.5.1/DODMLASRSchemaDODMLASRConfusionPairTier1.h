@@ -1,0 +1,30 @@
+@interface DODMLASRSchemaDODMLASRConfusionPairTier1 : SISchemaInstrumentationMessage
+@property (nonatomic) NSArray recognizedTokens;
+@property (nonatomic) NSArray correctedTokens;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)clearRecognizedTokens;
+- (void)deleteRecognizedTokens;
+- (void)addRecognizedTokens:;
+- (unsigned long long)recognizedTokensCount;
+- (id)recognizedTokensAtIndex:;
+- (void)clearCorrectedTokens;
+- (void)deleteCorrectedTokens;
+- (void)addCorrectedTokens:;
+- (unsigned long long)correctedTokensCount;
+- (id)correctedTokensAtIndex:;
+- (id)recognizedTokens;
+- (void)setRecognizedTokens:;
+- (id)correctedTokens;
+- (void)setCorrectedTokens:;
+@end

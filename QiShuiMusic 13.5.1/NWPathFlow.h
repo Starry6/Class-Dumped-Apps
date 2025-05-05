@@ -1,0 +1,37 @@
+@interface NWPathFlow : NSObject
+@property (nonatomic) NSObject<OS_nw_path_flow> internalPathFlow;
+@property (nonatomic) NWInterface interface;
+@property (nonatomic) NWEndpoint localEndpoint;
+@property (nonatomic) NWEndpoint remoteEndpoint;
+@property (nonatomic) NSUUID flowID;
+@property (nonatomic) NSUUID nexusAgent;
+@property (nonatomic) NSUUID nexusInstance;
+@property (nonatomic) I nexusPort;
+@property (nonatomic) BOOL viable;
+@property (nonatomic) BOOL assigned;
+@property (nonatomic) BOOL local;
+@property (nonatomic) BOOL direct;
+@property (nonatomic) BOOL defunct;
+@property (nonatomic) BOOL supportsIPv4;
+@property (nonatomic) BOOL supportsIPv6;
+- (BOOL)supportsIPv6;
+- (id)descriptionWithIndent:showFullContent:;
+- (id)interface;
+- (id)privateDescription;
+- (void).cxx_destruct;
+- (BOOL)isViable;
+- (BOOL)isDefunct;
+- (BOOL)supportsIPv4;
+- (id)description;
+- (BOOL)isDirect;
+- (BOOL)isLocal;
+- (id)localEndpoint;
+- (id)initWithPathFlow:;
+- (id)remoteEndpoint;
+- (id)flowID;
+- (id)nexusAgent;
+- (id)nexusInstance;
+- (unsigned int)nexusPort;
+- (BOOL)isAssigned;
+- (id)internalPathFlow;
+@end

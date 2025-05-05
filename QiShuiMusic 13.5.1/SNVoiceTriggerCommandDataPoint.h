@@ -1,0 +1,2 @@
+@interface SNVoiceTriggerCommandDataPoint : NSObject
+@end

@@ -1,0 +1,32 @@
+@interface IDSSocketPairOTRMessage : IDSSocketPairMessage
+@property (nonatomic) C versionNumber;
+@property (nonatomic) BOOL encrypted;
+@property (nonatomic) BOOL shouldEncrypt;
+@property (nonatomic) C protectionClass;
+@property (nonatomic) S streamID;
+@property (nonatomic) S priority;
+@property (nonatomic) I sequenceNumber;
+@property (nonatomic) NSData data;
+@property (nonatomic) BOOL wantsAppAck;
+@property (nonatomic) BOOL expectsPeerResponse;
+@property (nonatomic) BOOL didWakeHint;
+@property (nonatomic) NSString peerResponseIdentifier;
+@property (nonatomic) NSString messageUUID;
+@property (nonatomic) NSDate expiryDate;
+- (id)data;
+- (unsigned char)protectionClass;
+- (BOOL)encrypted;
+- (void)setSequenceNumber:;
+- (unsigned char)command;
+- (unsigned int)sequenceNumber;
+- (void).cxx_destruct;
+- (id)description;
+- (unsigned short)streamID;
+- (unsigned char)versionNumber;
+- (unsigned short)priority;
+- (void)setStreamID:;
+- (id)initWithCommand:underlyingData:;
+- (id)_nonHeaderData;
+- (id)initWithVersion:encrypted:shouldEncrypt:protectionClass:streamID:priority:sequenceNumber:data:;
+- (BOOL)shouldEncrypt;
+@end

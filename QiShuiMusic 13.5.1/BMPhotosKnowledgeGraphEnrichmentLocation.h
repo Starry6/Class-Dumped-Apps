@@ -1,0 +1,35 @@
+@interface BMPhotosKnowledgeGraphEnrichmentLocation : NSObject
+@property (nonatomic) NSString street;
+@property (nonatomic) NSString city;
+@property (nonatomic) NSString state;
+@property (nonatomic) NSString country;
+@property (nonatomic) NSData encodedLocation;
+@property (nonatomic) I dataVersion;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)city;
+- (id)initWithProtoData:;
+- (id)country;
+- (id)proto;
+- (id)json;
+- (id)encodeAsProto;
+- (id)initWithCoder:;
+- (unsigned int)dataVersion;
+- (unsigned long long)hash;
+- (BOOL)isCompleteWithContext:error:;
+- (void)encodeWithCoder:;
+- (id)initWithProto:;
+- (id)state;
+- (void).cxx_destruct;
+- (BOOL)isValidWithContext:error:;
+- (id)serialize;
+- (id)jsonDict;
+- (BOOL)isEqual:;
+- (id)street;
+- (id)initWithStreet:city:state:country:encodedLocation:;
+- (id)encodedLocation;
++ (id)eventWithData:dataVersion:;
++ (BOOL)supportsSecureCoding;
+@end

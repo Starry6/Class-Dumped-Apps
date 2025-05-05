@@ -1,0 +1,30 @@
+@interface GEOHyperlinkMetaData : PBCodable
+@property (nonatomic) BOOL hasHyperlinkType;
+@property (nonatomic) NSInteger hyperlinkType;
+@property (nonatomic) BOOL hasDisplayedString;
+@property (nonatomic) NSString displayedString;
+- (void)readAll:;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (int)hyperlinkType;
+- (void)setHyperlinkType:;
+- (void)setHasHyperlinkType:;
+- (BOOL)hasHyperlinkType;
+- (id)hyperlinkTypeAsString:;
+- (int)StringAsHyperlinkType:;
+- (BOOL)hasDisplayedString;
+- (id)displayedString;
+- (void)setDisplayedString:;
++ (BOOL)isValid:;
+@end

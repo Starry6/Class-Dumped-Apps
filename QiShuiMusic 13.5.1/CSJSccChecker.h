@@ -1,0 +1,30 @@
+@interface CSJSccChecker : NSObject
+@property (nonatomic) BOOL needToCheck;
+@property (nonatomic) NSString lp_list;
+@property (nonatomic) NSArray lpArray;
+@property (nonatomic) NSArray lpDoubleAtArray;
+@property (nonatomic) BOOL userSelectContinue;
+@property (nonatomic) BOOL userSelectCancel;
+- (id)lpDoubleAtArray;
+- (id)lpArray;
+- (id)lp_list;
+- (void)setNeedToCheck:;
+- (void)_pbu_black_showWithRootVC:;
+- (long long)_pbu_network_sccResultWithUrlString:;
+- (BOOL)_pbu_settingContainWithUrlString:;
+- (void)_pbu_unknown_showWithRootVC:continueAction:cancelAction:;
+- (BOOL)checkWithUrlString:rootVC:needShowAlert:needShowError:continueAction:cancelAction:whiteAction:;
+- (BOOL)needToCheck;
+- (void)pbu_logWithPrefix:msg:urlString:;
+- (long long)pbu_sccResultWithUrlString:;
+- (void)setLpArray:;
+- (void)setLpDoubleAtArray:;
+- (void)setLp_list:;
+- (void)setUserSelectCancel:;
+- (void)setUserSelectContinue:;
+- (BOOL)userSelectCancel;
+- (BOOL)userSelectContinue;
+- (id)init;
+- (void).cxx_destruct;
+- (void)reset;
+@end

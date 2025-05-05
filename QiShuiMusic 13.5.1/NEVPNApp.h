@@ -1,0 +1,30 @@
+@interface NEVPNApp : NEVPN
+@property (nonatomic) NSArray appRules;
+@property (nonatomic) BOOL noRestriction;
+@property (nonatomic) BOOL restrictDomains;
+@property (nonatomic) NSArray excludedDomains;
+- (BOOL)noRestriction;
+- (BOOL)checkValidityAndCollectErrors:;
+- (void)setNoRestriction:;
+- (id)initFromLegacyDictionary:;
+- (id)init;
+- (id)descriptionWithIndent:options:;
+- (id)copyLegacyDictionary;
+- (void)setAppRules:;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (id)appRules;
+- (void)setExcludedDomains:;
+- (void)setRestrictDomains:;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (id)excludedDomains;
+- (id)copyAppRuleByID:;
+- (id)copyAppRuleBySigningIdentifier:;
+- (BOOL)removeAppRuleByID:;
+- (id)copyAppRuleIDs;
+- (BOOL)installSigningIdentifiersWithFlowDivertControlSocket:;
+- (void)updateAppRulesForUID:;
+- (BOOL)restrictDomains;
++ (BOOL)supportsSecureCoding;
+@end

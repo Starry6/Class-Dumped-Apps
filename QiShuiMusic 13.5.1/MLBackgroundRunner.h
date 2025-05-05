@@ -1,0 +1,30 @@
+@interface MLBackgroundRunner : NSObject
+@property (nonatomic) BOOL shouldStop;
+@property (nonatomic) _DASActivity activity;
+@property (nonatomic) MLBackgroundTask task;
+@property (nonatomic) <NSObject> dataSource;
+@property (nonatomic) NSObject<OS_dispatch_queue> watchdogQueue;
+@property (nonatomic) NSObject<OS_dispatch_queue> delegateQueue;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setDataSource:;
+- (id)init;
+- (unsigned char)start;
+- (void)setActivity:;
+- (id)task;
+- (void)stop;
+- (id)delegateQueue;
+- (id)activity;
+- (void)setTask:;
+- (id)dataSource;
+- (void).cxx_destruct;
+- (void)setDelegateQueue:;
+- (BOOL)shouldStop;
+- (void)setShouldStop:;
+- (BOOL)prepareForActivity:;
+- (BOOL)createExtensionDataSourceWithInfoKey:conformingToProtocol:;
+- (id)watchdogQueue;
+- (void)setWatchdogQueue:;
+@end

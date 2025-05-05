@@ -1,0 +1,2 @@
+@interface BattleBizInviteApiRoot : GPBRootObject
+@end

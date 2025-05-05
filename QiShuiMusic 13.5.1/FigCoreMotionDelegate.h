@@ -1,0 +1,31 @@
+@interface FigCoreMotionDelegate : NSObject
+- (int)getGravityX:y:z:forTimeStamp:;
+- (id)init;
+- (void)dealloc;
+- (void)didUpdateFusedMotionWithDeviceMotion:time:ifsync:;
+- (void)didUpdateAcceleration:time:;
+- (BOOL)managingAccel;
+- (void)getPositionX:y:z:forTimeStamp:;
+- (void)updateDeviceCallback:fusedMotionUpdateInterval:;
+- (void)didUpdatePositionWithAcceleration:forTimeStamp:;
+- (int)getFusedVectorX:y:z:forTimeStamp:;
+- (void)updateGyroInterval:;
+- (void)didUpdateVelocityWithAcceleration:forTimeStamp:;
+- (BOOL)managingGravity;
+- (id)copyNewFusedMotionData;
+- (int)updateCurrentQuaternionForTimeStamp:;
+- (int)getLatestMotionDataTime:;
+- (void)getCurrentQuaternion:;
+- (void)getCurrentDeltaAttitudeRoll:pitch:yaw:;
+- (int)getVectorX:y:z:forTimeStamp:;
+- (id)copyAllFusedMotionData;
+- (BOOL)managingFusedMotion;
+- (id)copyFusedMotionData:endTime:timeoutValue:errOut:;
+- (BOOL)isCopyingAllData;
+- (void)getCurrentDeltaQuaternion:;
+- (void)didUpdatePositionWithTimeStamp:;
+- (int)updateCurrentQuaternionForTimeStamps:withEnd:;
+- (void)didUpdateGravity:time:;
+- (id)initWithAccelerometer:gravityZ:fusedMotion:accelUpdateInterval:fusedMotionUpdateInterval:motionCallbackThreadPriority:;
+- (void)getCurrentAttitudeRoll:pitch:yaw:;
+@end

@@ -1,0 +1,32 @@
+@interface CSJSplashArrowAnimationView : UIView
+@property (nonatomic) q arrowCount;
+@property (nonatomic) NSArray translateXs;
+@property (nonatomic) NSMutableArray arrowLayers;
+@property (nonatomic) NSMutableArray arrowAnimations;
+@property (nonatomic) double delay;
+@property (nonatomic) UIImage arrowImage;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setArrowLayers:;
+- (id)arrowAnimations;
+- (void)setTranslateXs:;
+- (void)arrowAnimation;
+- (long long)arrowCount;
+- (id)arrowLayers;
+- (void)bu_animationDidStart:;
+- (void)bu_animationDidStop:finished:;
+- (id)initSplashArrowAnimationWith:translateX:delay:;
+- (void)setArrowAnimations:;
+- (void)setArrowCount:;
+- (void)startArrowAnimation;
+- (id)translateXs;
+- (void)layoutSubviews;
+- (double)delay;
+- (void)setDelay:;
+- (void)setup;
+- (void).cxx_destruct;
+- (id)arrowImage;
+- (void)setArrowImage:;
+@end

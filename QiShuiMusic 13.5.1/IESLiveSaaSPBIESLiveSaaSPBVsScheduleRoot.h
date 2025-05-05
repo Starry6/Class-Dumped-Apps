@@ -1,0 +1,2 @@
+@interface IESLiveSaaSPBIESLiveSaaSPBVsScheduleRoot : GPBRootObject
+@end

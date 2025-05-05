@@ -1,0 +1,33 @@
+@interface AWEIMPersonalExperienceNoticeTipInteractor : AWEIMTopNoticeTipInteractor
+@property (nonatomic) AWEIMMessageFollowViewInteractor followViewInteractor;
+@property (nonatomic) AWEIMMessageFansCouponEntryInteractor fansCouponEntryInteractor;
+@property (nonatomic) AWEIMPushGuideInteractor pushGuideInteractor;
+@property (nonatomic) AWEIMStrongNoticeInteractor strongNoticeInteractor;
+@property (nonatomic) BOOL dismissed;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didClickTopTipViewActionBtnWithType:;
+- (void)didClickTopTipViewCloseBtnWithType:;
+- (id)fansCouponEntryInteractor;
+- (id)followViewInteractor;
+- (BOOL)personalExperienceOptDismissOtherInteractor;
+- (id)pushGuideInteractor;
+- (void)setFansCouponEntryInteractor:;
+- (void)setFollowViewInteractor:;
+- (void)setPushGuideInteractor:;
+- (void)setStrongNoticeInteractor:;
+- (void)showMsgboxNoticeTipView;
+- (void)showNoticeTipWhenCurrentIsFriend;
+- (void)showStrangerNoticeTip;
+- (void)showStrangerNoticeTipView;
+- (id)strongNoticeInteractor;
+- (void)trackTopTipEventWithType:confirm:;
+- (void)trackTopTipShowEventWithType:;
+- (id)vcParent;
+- (void)setDismissed:;
+- (id)init;
+- (void).cxx_destruct;
+- (BOOL)dismissed;
+@end

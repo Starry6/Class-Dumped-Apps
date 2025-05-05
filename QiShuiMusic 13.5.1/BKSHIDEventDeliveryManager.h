@@ -1,0 +1,31 @@
+@interface BKSHIDEventDeliveryManager : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)registerKeyCommands:;
+- (id)init;
+- (void)dealloc;
+- (void)_lock_implicitFlush;
+- (id)deferEventsMatchingPredicate:toTarget:withReason:;
+- (id)_lock_transactionAssertionWithReason:;
+- (id)_lock_stateDescription;
+- (id)succinctDescriptionBuilder;
+- (id)debugDescription;
+- (id)debugDescriptionWithMultilinePrefix:;
+- (id)bufferEventsMatchingPredicate:withReason:;
+- (void)_lock_flushIfNeeded;
+- (id)_initWithService:;
+- (void).cxx_destruct;
+- (long long)authenticateMessage:;
+- (id)succinctDescription;
+- (id)description;
+- (id)transactionAssertionWithReason:;
+- (id)dispatchKeyCommandsForReason:withRule:;
+- (id)descriptionBuilderWithMultilinePrefix:;
+- (void)_syncServiceFlushState;
+- (id)_initForTestingWithService:;
+- (id)descriptionWithMultilinePrefix:;
+- (id)dispatchDiscreteEventsForReason:withRules:;
++ (id)sharedInstance;
+@end

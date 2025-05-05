@@ -1,0 +1,32 @@
+@interface GEORideBookingIntentResponseFailure : PBCodable
+@property (nonatomic) BOOL hasIntent;
+@property (nonatomic) NSInteger intent;
+@property (nonatomic) BOOL hasFailure;
+@property (nonatomic) NSInteger failure;
+- (int)intent;
+- (void)readAll:;
+- (BOOL)hasIntent;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (BOOL)readFrom:;
+- (id)description;
+- (void)setIntent:;
+- (id)dictionaryRepresentation;
+- (void)setFailure:;
+- (BOOL)isEqual:;
+- (int)failure;
+- (id)copyWithZone:;
+- (void)setHasIntent:;
+- (id)intentAsString:;
+- (int)StringAsIntent:;
+- (void)setHasFailure:;
+- (BOOL)hasFailure;
+- (id)failureAsString:;
+- (int)StringAsFailure:;
++ (BOOL)isValid:;
+@end

@@ -1,0 +1,37 @@
+@interface QLPreviewParts : NSObject
+@property (nonatomic) NSURL previewURL;
+@property (nonatomic) NSMutableSet outstandingURLs;
+@property (nonatomic) NSMutableDictionary encodingsForURLs;
+@property (nonatomic) NSMutableSet registeredURLs;
+@property (nonatomic) NSURLRequest previewRequest;
+- (void)cancel;
+- (void)dealloc;
+- (id)previewURL;
+- (void).cxx_destruct;
+- (void)setPreviewURL:;
+- (id)previewRequest;
+- (id)requestForURL:;
+- (void)setEncodingsForURLs:;
+- (id)voidRequest;
+- (void)setOutstandingURLs:;
+- (id)encodingsForURLs;
+- (void)setRegisteredURLs:;
+- (id)outstandingURLs;
+- (id)newAttachmentURLWithID:mimeType:textEncoding:;
+- (id)registeredURLs;
+- (void)startComputingPreview;
+- (void)registerURL:mimeType:textEncoding:;
+- (void)computePreviewInThread;
+- (void)appendData:forURL:lastChunk:;
+- (void)computePreview:;
+- (void)startDataRepresentationWithMimeType:textEncoding:;
+- (void)startAttachmentWithURL:mimeType:textEncoding:;
+- (BOOL)isRegisteredURL:;
+- (id)newSafeAttachmentURLWithID:mimeType:textEncoding:;
+- (unsigned int)cfEncodingForAttachmentURL:;
++ (void)registerPreview:;
++ (Class)urlProtocolClass;
++ (void)unregisterPreview:;
++ (id)registeredPreviewForURL:;
++ (id)relativeStringForSafeURL:;
+@end

@@ -1,0 +1,33 @@
+@interface INAddTasksIntentResponse : INIntentResponse
+@property (nonatomic) q code;
+@property (nonatomic) INTaskList modifiedTaskList;
+@property (nonatomic) NSArray addedTasks;
+@property (nonatomic) Q warnings;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (id)_dictionaryRepresentation;
+- (id)initWithBackingStore:;
+- (long long)code;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (id)propertiesByName;
+- (id)_initWithCode:userActivity:;
+- (id)initWithCode:userActivity:;
+- (long long)_intentResponseCode;
+- (long long)_codeWithName:;
+- (void)setPropertiesByName:;
+- (id)modifiedTaskList;
+- (void)setModifiedTaskList:;
+- (id)addedTasks;
+- (void)setAddedTasks:;
+- (unsigned long long)warnings;
+- (void)setWarnings:;
++ (BOOL)supportsSecureCoding;
++ (long long)_codeFromType:errorCode:appLaunchRequested:;
++ (int)_typeFromCode:;
++ (int)_errorCodeFromCode:;
++ (BOOL)_appLaunchRequestedFromCode:;
+@end

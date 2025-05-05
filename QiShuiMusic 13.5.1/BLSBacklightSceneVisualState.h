@@ -1,0 +1,32 @@
+@interface BLSBacklightSceneVisualState : NSObject
+@property (nonatomic) q activeAppearance;
+@property (nonatomic) q updateFidelity;
+@property (nonatomic) q adjustedLuminance;
+@property (nonatomic) BOOL dimmed;
+@property (nonatomic) q grantedFidelity;
+@property (nonatomic) q expectedFidelity;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (void)encodeWithXPCDictionary:;
+- (BOOL)isDimmed;
+- (long long)expectedFidelity;
+- (id)initWithCoder:;
+- (id)initWithActiveAppearance:updateFidelity:adjustedLuminance:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (id)initWithXPCDictionary:;
+- (long long)grantedFidelity;
+- (id)description;
+- (long long)updateFidelity;
+- (BOOL)isEssentiallyEqualToVisualState:;
+- (id)newVisualStateWithUpdateFidelity:;
+- (id)initWithActiveAppearance:updateFidelity:adjustedLuminance:dimmed:;
+- (long long)activeAppearance;
+- (BOOL)isEqual:;
+- (long long)adjustedLuminance;
+- (id)copyWithZone:;
++ (BOOL)supportsSecureCoding;
+@end

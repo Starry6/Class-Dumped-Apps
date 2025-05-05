@@ -1,0 +1,33 @@
+@interface CSJSDWebImageDownloadToken : NSObject
+@property (nonatomic) NSURL url;
+@property (nonatomic) NSURLRequest request;
+@property (nonatomic) NSURLResponse response;
+@property (nonatomic) NSURLSessionTaskMetrics metrics;
+@property (nonatomic) @ downloadOperationCancelToken;
+@property (nonatomic) NSOperation<CSJSDWebImageDownloaderOperation> downloadOperation;
+@property (nonatomic) BOOL cancelled;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)downloadDidStop:;
+- (id)downloadOperation;
+- (id)downloadOperationCancelToken;
+- (id)initWithDownloadOperation:;
+- (void)setDownloadOperation:;
+- (void)setDownloadOperationCancelToken:;
+- (void)setCancelled:;
+- (id)url;
+- (void)cancel;
+- (void)dealloc;
+- (void)setMetrics:;
+- (BOOL)isCancelled;
+- (id)metrics;
+- (id)request;
+- (void)setUrl:;
+- (id)response;
+- (void).cxx_destruct;
+- (void)setRequest:;
+- (void)setResponse:;
+- (void)downloadDidReceiveResponse:;
+@end

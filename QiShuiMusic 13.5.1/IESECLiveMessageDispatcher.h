@@ -1,0 +1,35 @@
+@interface IESECLiveMessageDispatcher : NSObject
+@property (nonatomic) NSMutableDictionary subscribers;
+@property (nonatomic) NSObject<OS_dispatch_queue> decodeQueue;
+@property (nonatomic) <IESECLiveIMPaaSWorker> worker;
+@property (nonatomic) IESECLiveIMConfig currentConfig;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setDecodeQueue:;
+- (void)addSubscriber:forClasses:;
+- (void)configConnection:;
+- (id)decodeQueue;
+- (void)generalMessageMessageReceived:;
+- (BOOL)p_addSubscribe:forKey:;
+- (void)p_configConnection:;
+- (void)p_messageReceived:;
+- (BOOL)p_unSubscribe:forKey:;
+- (BOOL)shouldReceivedMessage:;
+- (void)unSubscribe:forClass:;
+- (void)unSubscribeForAll:;
+- (void)dispatchMessage:;
+- (id)init;
+- (void)dealloc;
+- (void)stop;
+- (id)currentConfig;
+- (id)decodeMessage:;
+- (void).cxx_destruct;
+- (id)subscribers;
+- (void)setCurrentConfig:;
+- (void)messageReceived:;
+- (id)worker;
+- (void)setWorker:;
+- (void)setSubscribers:;
+@end

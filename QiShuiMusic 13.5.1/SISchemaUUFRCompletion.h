@@ -1,0 +1,36 @@
+@interface SISchemaUUFRCompletion : SISchemaInstrumentationMessage
+@property (nonatomic) NSInteger completionStatus;
+@property (nonatomic) BOOL hasCompletionStatus;
+@property (nonatomic) NSArray homeKitAccessoryResponses;
+@property (nonatomic) SISchemaSiriResponseContext siriResponseContext;
+@property (nonatomic) BOOL hasSiriResponseContext;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (int)completionStatus;
+- (void)setCompletionStatus:;
+- (BOOL)hasCompletionStatus;
+- (void)setHasCompletionStatus:;
+- (void)deleteCompletionStatus;
+- (void)clearHomeKitAccessoryResponse;
+- (void)deleteHomeKitAccessoryResponse;
+- (void)addHomeKitAccessoryResponse:;
+- (unsigned long long)homeKitAccessoryResponseCount;
+- (id)homeKitAccessoryResponseAtIndex:;
+- (BOOL)hasSiriResponseContext;
+- (void)deleteSiriResponseContext;
+- (id)homeKitAccessoryResponses;
+- (void)setHomeKitAccessoryResponses:;
+- (id)siriResponseContext;
+- (void)setSiriResponseContext:;
+- (void)setHasSiriResponseContext:;
+@end

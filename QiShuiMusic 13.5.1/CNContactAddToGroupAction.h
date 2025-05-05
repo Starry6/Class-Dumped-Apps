@@ -1,0 +1,35 @@
+@interface CNContactAddToGroupAction : CNContactAction
+@property (nonatomic) CNGroup selectedGroup;
+@property (nonatomic) NSArray contactParentGroupIdentifiers;
+@property (nonatomic) UINavigationController groupPickerNavigationViewController;
+@property (nonatomic) CNUIGroupsAndContainersSaveManager groupsAndContainersSaveManager;
+@property (nonatomic) CNContactStore contactStore;
+@property (nonatomic) NSArray contactParentGroups;
+@property (nonatomic) CNManagedConfiguration managedConfiguration;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setContactStore:;
+- (id)managedConfiguration;
+- (void)setManagedConfiguration:;
+- (void)setGroupsAndContainersSaveManager:;
+- (id)groupsAndContainersSaveManager;
+- (void).cxx_destruct;
+- (id)contactStore;
+- (id)sourceAccountExternalIdentifiers;
+- (void)performActionWithSender:;
+- (BOOL)contactViewController:shouldPerformDefaultActionForContact:propertyKey:labeledValue:;
+- (BOOL)groupPicker:shouldEnableGroupWithIdentifier:;
+- (void)groupPicker:didSelectGroup:;
+- (void)groupPickerDidCancel:;
+- (void)setContactParentGroups:;
+- (id)contactParentGroups;
+- (id)selectedGroup;
+- (void)setSelectedGroup:;
+- (id)contactParentGroupIdentifiers;
+- (void)setContactParentGroupIdentifiers:;
+- (id)groupPickerNavigationViewController;
+- (void)setGroupPickerNavigationViewController:;
++ (id)os_log;
+@end

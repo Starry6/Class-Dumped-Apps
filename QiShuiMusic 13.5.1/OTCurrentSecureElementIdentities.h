@@ -1,0 +1,30 @@
+@interface OTCurrentSecureElementIdentities : PBCodable
+@property (nonatomic) BOOL hasLocalPeerIdentity;
+@property (nonatomic) OTSecureElementPeerIdentity localPeerIdentity;
+@property (nonatomic) NSMutableArray trustedPeerSecureElementIdentities;
+@property (nonatomic) BOOL hasPendingLocalPeerIdentity;
+@property (nonatomic) OTSecureElementPeerIdentity pendingLocalPeerIdentity;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasLocalPeerIdentity;
+- (void)clearTrustedPeerSecureElementIdentities;
+- (void)addTrustedPeerSecureElementIdentities:;
+- (unsigned long long)trustedPeerSecureElementIdentitiesCount;
+- (id)trustedPeerSecureElementIdentitiesAtIndex:;
+- (BOOL)hasPendingLocalPeerIdentity;
+- (id)localPeerIdentity;
+- (void)setLocalPeerIdentity:;
+- (id)trustedPeerSecureElementIdentities;
+- (void)setTrustedPeerSecureElementIdentities:;
+- (id)pendingLocalPeerIdentity;
+- (void)setPendingLocalPeerIdentity:;
++ (Class)trustedPeerSecureElementIdentitiesType;
+@end

@@ -1,0 +1,35 @@
+@interface ENExposureNotification : NSObject
+@property (nonatomic) ENExposureClassification classification;
+@property (nonatomic) NSUUID identifier;
+@property (nonatomic) NSURL learnMoreURL;
+@property (nonatomic) NSString localizedBodyText;
+@property (nonatomic) NSString localizedDetailBodyText;
+@property (nonatomic) NSString localizedSubjectText;
+@property (nonatomic) NSDate notificationDate;
+@property (nonatomic) ENRegion region;
+@property (nonatomic) BOOL revoked;
+@property (nonatomic) NSDate date;
+- (void)setRegion:;
+- (BOOL)revoked;
+- (id)region;
+- (id)identifier;
+- (void)setLearnMoreURL:;
+- (id)initWithCoder:;
+- (id)classification;
+- (id)date;
+- (void)encodeWithCoder:;
+- (void)setClassification:;
+- (void).cxx_destruct;
+- (void)setIdentifier:;
+- (id)learnMoreURL;
+- (void)setRevoked:;
+- (id)notificationDate;
+- (void)setNotificationDate:;
+- (id)localizedBodyText;
+- (id)localizedSubjectText;
+- (void)setLocalizedBodyText:;
+- (void)setLocalizedDetailBodyText:;
+- (void)setLocalizedSubjectText:;
+- (id)localizedDetailBodyText;
++ (BOOL)supportsSecureCoding;
+@end

@@ -1,0 +1,35 @@
+@interface CEMPayloadBase : NSObject
+@property (nonatomic) NSSet unknownPayloadKeys;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (id)unknownPayloadKeys;
+- (BOOL)loadPayload:error:;
+- (id)serializePayloadWithAssetProviders:;
+- (id)serializePayload;
+- (void)mergeUnknownKeysFrom:withParentKey:;
+- (id)createNestedObjectWithClass:withParentKey:withPayload:error:;
+- (id)_loadObjectOfClass:fromDictionary:withKey:isRequired:defaultValue:error:;
+- (id)loadStringFromDictionary:withKey:isRequired:defaultValue:error:;
+- (id)loadIntegerFromDictionary:withKey:isRequired:defaultValue:error:;
+- (id)loadFloatFromDictionary:withKey:isRequired:defaultValue:error:;
+- (id)loadBooleanFromDictionary:withKey:isRequired:defaultValue:error:;
+- (id)loadDateFromDictionary:withKey:isRequired:defaultValue:error:;
+- (id)loadDataFromDictionary:withKey:isRequired:defaultValue:error:;
+- (id)loadArrayFromDictionary:withKey:validator:isRequired:defaultValue:error:;
+- (id)loadArrayFromDictionary:withKey:classType:nested:isRequired:defaultValue:error:;
+- (id)loadDictionaryFromDictionary:withKey:classType:isRequired:defaultValue:error:;
+- (void)_serializeItemIntoDictionary:withKey:withValue:isRequired:isDefaultValue:;
+- (void)serializeStringIntoDictionary:withKey:withValue:isRequired:defaultValue:;
+- (void)serializeIntegerIntoDictionary:withKey:withValue:isRequired:defaultValue:;
+- (void)serializeFloatIntoDictionary:withKey:withValue:isRequired:defaultValue:;
+- (void)serializeBooleanIntoDictionary:withKey:withValue:isRequired:defaultValue:;
+- (void)serializeDateIntoDictionary:withKey:withValue:isRequired:defaultValue:;
+- (void)serializeDataIntoDictionary:withKey:withValue:isRequired:defaultValue:;
+- (void)serializeArrayIntoDictionary:withKey:withValue:itemSerializer:isRequired:defaultValue:;
+- (void)serializeDictionaryIntoDictionary:withKey:withValue:dictSerializer:isRequired:defaultValue:;
+- (void)serializeAssetIntoDictionary:withKey:withValue:assetProvider:transformType:isRequired:defaultValue:;
++ (BOOL)supportsSecureCoding;
++ (id)load:error:;
+@end

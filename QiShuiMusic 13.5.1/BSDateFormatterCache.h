@@ -1,0 +1,32 @@
+@interface BSDateFormatterCache : NSObject
+- (id)formatDateAsLongYMDHMSZWithDate:;
+- (id)init;
+- (void)dealloc;
+- (id)formatDateAsMultiLineDayOfWeekMonthDayStyle:;
+- (id)formatDateAsDayOfWeekMonthDayStyle:;
+- (void)_resetFormatters:;
+- (id)formatDateAsRelativeDateStyle:;
+- (id)formatTimerDuration:;
+- (BOOL)supportsMultiLineDayOfWeekMonthDayStyle;
+- (id)formatDateAsAbbreviatedDayMonthWithTimeStyle:;
+- (id)formatDateAsShortDayMonthWithTimeStyle:;
+- (id)formatNumberAsDecimal:;
+- (id)formatDuration:;
+- (id)formatDateAsTimeNoAMPM:;
+- (void)_resetFormatters;
+- (id)formatDateAsRelativeDateAndTimeStyle:;
+- (id)formatDateAsAbbreviatedDayMonthStyle:;
+- (id)formatDateAsDayOfWeek:;
+- (id)formatAlarmSnoozeDuration:;
+- (void)resetFormattersIfNecessary;
+- (void).cxx_destruct;
+- (id)formatDateAsLongYMDHMSZPosixLocaleWithDate:;
+- (id)formatDateAsLongYMDHMSNoSpacesWithDate:;
+- (id)formatAbbreviatedTimerDuration:;
+- (id)formatDateAsDayMonthYearStyle:;
+- (id)formatDateAsAbbreviatedDayOfWeekWithTime:;
+- (id)formatDateAsTimeStyle:;
+- (id)formatDateAsAbbreviatedDayOfWeekMonthDayStyle:;
++ (id)sharedInstance;
++ (id)formatterForDateAsTimeNoAMPMWithLocale:;
+@end

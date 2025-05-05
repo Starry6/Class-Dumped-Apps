@@ -1,0 +1,32 @@
+@interface MLImageConstraint : NSObject
+@property (nonatomic) Q imageHeight;
+@property (nonatomic) Q imageWidth;
+@property (nonatomic) Q pixelType;
+@property (nonatomic) I osType;
+@property (nonatomic) q pixelsHigh;
+@property (nonatomic) q pixelsWide;
+@property (nonatomic) I pixelFormatType;
+@property (nonatomic) MLImageSizeConstraint sizeConstraint;
+- (BOOL)isAllowedValue:error:;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)copyWithZone:;
+- (unsigned long long)imageWidth;
+- (unsigned int)pixelFormatType;
+- (long long)pixelsHigh;
+- (long long)pixelsWide;
+- (id)sizeConstraint;
+- (unsigned long long)imageHeight;
+- (unsigned int)osType;
+- (id)initWithPixelsWide:pixelsHigh:pixelType:sizeConstraint:;
+- (id)_stringForAllowedOSTypes;
+- (unsigned long long)pixelType;
++ (BOOL)supportsSecureCoding;
++ (BOOL)osType:isAcceptedForPixelType:;
++ (id)constraintWithPixelsWide:pixelsHigh:pixelType:sizeConstraint:;
++ (id)constraintWithPixelsWide:pixelsHigh:pixelType:;
++ (id)_stringForOSType:;
++ (unsigned long long)imagePixelTypeFromOSType:;
+@end

@@ -1,0 +1,32 @@
+@interface INCreateEventIntent : INIntent
+@property (nonatomic) NSString title;
+@property (nonatomic) INDateComponentsRange dateTimeRange;
+@property (nonatomic) NSArray participants;
+@property (nonatomic) CLPlacemark location;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)participants;
+- (void)setParticipants:;
+- (id)_dictionaryRepresentation;
+- (void)setTitle:;
+- (id)location;
+- (id)title;
+- (void)setLocation:;
+- (void)_setMetadata:;
+- (id)domain;
+- (void)setDomain:;
+- (id)_metadata;
+- (id)_typedBackingStore;
+- (long long)_intentCategory;
+- (id)_categoryVerb;
+- (void)_redactForMissingPrivacyEntitlementOptions:containingAppBundleId:;
+- (id)verb;
+- (void)setVerb:;
+- (id)parametersByName;
+- (void)setParametersByName:;
+- (id)dateTimeRange;
+- (void)setDateTimeRange:;
+- (id)initWithTitle:dateTimeRange:participants:location:;
+@end

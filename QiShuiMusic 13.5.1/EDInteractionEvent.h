@@ -1,0 +1,34 @@
+@interface EDInteractionEvent : NSObject
+@property (nonatomic) q eventID;
+@property (nonatomic) q version;
+@property (nonatomic) NSDate date;
+@property (nonatomic) NSString accountID;
+@property (nonatomic) q mailboxID;
+@property (nonatomic) q conversationID;
+@property (nonatomic) q messageIDHash;
+@property (nonatomic) q messagePersistentID;
+@property (nonatomic) NSString name;
+@property (nonatomic) NSDictionary data;
+- (void)setEventID:;
+- (void)setName:;
+- (id)accountID;
+- (void)setAccountID:;
+- (void)setVersion:;
+- (id)data;
+- (long long)version;
+- (long long)eventID;
+- (id)debugDescription;
+- (id)date;
+- (void).cxx_destruct;
+- (void)setDate:;
+- (void)setData:;
+- (id)name;
+- (long long)conversationID;
+- (void)setConversationID:;
+- (long long)messagePersistentID;
+- (long long)mailboxID;
+- (void)setMailboxID:;
+- (long long)messageIDHash;
+- (void)setMessageIDHash:;
+- (void)setMessagePersistentID:;
+@end

@@ -1,0 +1,31 @@
+@interface IESGurdSettingsManager : NSObject
+@property (nonatomic) IESGurdSettingsResponse settingsResponse;
+@property (nonatomic) BOOL pollingEnabled;
+@property (nonatomic) q pollingInterval;
+@property (nonatomic) NSTimer pollingRequestTimer;
+@property (nonatomic) BOOL settingsFinished;
+@property (nonatomic) IESGurdSettingsResponseExtra extra;
+- (void)afterSettings;
+- (void)fetchSettingsPollingHandler;
+- (void)fetchSettingsWithRequestType:;
+- (void)handleSettingsConfig:;
+- (void)handleSettingsResponse:;
+- (BOOL)isPollingEnabled;
+- (id)pollingRequestTimer;
+- (void)recordOnlineStats;
+- (void)recordUsage;
+- (void)setExtra:;
+- (void)setPollingEnabled:;
+- (void)setPollingRequestTimer:;
+- (void)setSettingsFinished:;
+- (void)setSettingsResponse:;
+- (BOOL)settingsFinished;
+- (id)settingsResponse;
+- (void)setupTimerIfNeeded;
+- (id)extra;
+- (void)cleanCache;
+- (long long)pollingInterval;
+- (void).cxx_destruct;
+- (void)setPollingInterval:;
++ (id)sharedInstance;
+@end

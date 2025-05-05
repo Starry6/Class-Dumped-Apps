@@ -1,0 +1,33 @@
+@interface MPSGRUDescriptor : MPSRNNDescriptor
+@property (nonatomic) <MPSCNNConvolutionDataSource> inputGateInputWeights;
+@property (nonatomic) <MPSCNNConvolutionDataSource> inputGateRecurrentWeights;
+@property (nonatomic) <MPSCNNConvolutionDataSource> recurrentGateInputWeights;
+@property (nonatomic) <MPSCNNConvolutionDataSource> recurrentGateRecurrentWeights;
+@property (nonatomic) <MPSCNNConvolutionDataSource> outputGateInputWeights;
+@property (nonatomic) <MPSCNNConvolutionDataSource> outputGateRecurrentWeights;
+@property (nonatomic) <MPSCNNConvolutionDataSource> outputGateInputGateWeights;
+@property (nonatomic) float gatePnormValue;
+@property (nonatomic) BOOL flipOutputGates;
+- (id)init;
+- (void)dealloc;
+- (void)setOutputGateRecurrentWeights:;
+- (void)setInputGateInputWeights:;
+- (void)setInputGateRecurrentWeights:;
+- (void)setOutputGateInputWeights:;
+- (id)initWithInputFeatureChannels:outputFeatureChannels:;
+- (id)inputGateInputWeights;
+- (id)inputGateRecurrentWeights;
+- (id)outputGateInputWeights;
+- (id)outputGateRecurrentWeights;
+- (id)recurrentGateInputWeights;
+- (void)setRecurrentGateInputWeights:;
+- (id)recurrentGateRecurrentWeights;
+- (void)setRecurrentGateRecurrentWeights:;
+- (id)outputGateInputGateWeights;
+- (void)setOutputGateInputGateWeights:;
+- (float)gatePnormValue;
+- (void)setGatePnormValue:;
+- (BOOL)flipOutputGates;
+- (void)setFlipOutputGates:;
++ (id)createGRUDescriptorWithInputFeatureChannels:outputFeatureChannels:;
+@end

@@ -1,0 +1,2 @@
+@interface HTSDBigCamel : NSObject
+@end

@@ -1,0 +1,34 @@
+@interface CJPayDismissAnimator : UIPercentDrivenInteractiveTransition
+@property (nonatomic) <UIViewControllerContextTransitioning> transitionContext;
+@property (nonatomic) UIView interactiveMaskView;
+@property (nonatomic) BOOL isInteractive;
+@property (nonatomic) CJPayNavigationController naviViewController;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)interactiveMaskView;
+- (id)naviViewController;
+- (void)p_dismissNaviController:withShareViews:transition:completion:;
+- (void)p_dismissNaviWithMultiViewController:shareViews:transition:completion:;
+- (void)p_dismissNaviWithOneViewController:shareViews:transition:completion:;
+- (void)p_dismissViewController:shareViews:isShowMask:completion:;
+- (void)p_finishTransitionWithContext:;
+- (void)p_forceDismissHalfVC:maskContainerView:completion:;
+- (id)p_needExitVCWithCJPayNavigationController:;
+- (void)setInteractiveMaskView:;
+- (void)setNaviViewController:;
+- (void)animateTransition:;
+- (BOOL)isInteractive;
+- (double)transitionDuration:;
+- (id)transitionContext;
+- (void)handleGesture:;
+- (void)updateInteractiveTransition:;
+- (void)setTransitionContext:;
+- (void)cancelInteractiveTransition;
+- (void)startInteractiveTransition:;
+- (void).cxx_destruct;
+- (void)finishInteractiveTransition;
+- (void)setIsInteractive:;
+- (void)p_animateTransition:;
+@end

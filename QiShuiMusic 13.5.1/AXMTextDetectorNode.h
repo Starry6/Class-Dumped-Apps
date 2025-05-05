@@ -1,0 +1,31 @@
+@interface AXMTextDetectorNode : AXMEvaluationNode
+@property (nonatomic) AXMSemanticTextFactory semanticTextFactory;
+@property (nonatomic) AXMTextLayoutManager textLayoutManager;
+@property (nonatomic) AXMTextSpecialCase specialCaseManager;
+@property (nonatomic) NSArray sceneLabelsForOCRDocumentTypeDetection;
+- (id)textLayoutManager;
+- (void)setTextLayoutManager:;
+- (void).cxx_destruct;
+- (void)nodeInitialize;
+- (BOOL)validateVisionKitSoftLinkSymbols;
+- (void)evaluate:metrics:;
+- (BOOL)requiresVisionFramework;
+- (id)sceneLabelsForOCRDocumentTypeDetection;
+- (BOOL)shouldEvaluate:;
+- (id)semanticTextFactory;
+- (id)specialCaseManager;
+- (id)_sequencesForObservations:canvasSize:;
+- (id)_textDetectionOptions:;
+- (double)detectTextSkew:;
+- (void)setSemanticTextFactory:;
+- (void)setSpecialCaseManager:;
+- (void)setSceneLabelsForOCRDocumentTypeDetection:;
++ (BOOL)isSupported;
++ (BOOL)supportsSecureCoding;
++ (id)title;
++ (id)effectiveLanguagesFromOptions:;
++ (long long)recognitionLevelFromOptions:;
++ (id)textDetectionLanguagesFromOptions:;
++ (id)supportedDetectionLanguagesForLevel:;
++ (id)filterPreferredDetectionLanguages:withSupportedDetectionLanguages:;
+@end

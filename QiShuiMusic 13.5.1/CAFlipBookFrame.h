@@ -1,0 +1,30 @@
+@interface CAFlipBookFrame : NSObject
+@property (nonatomic) Q presentationTime;
+@property (nonatomic) Q frameId;
+@property (nonatomic) @ userInfo;
+@property (nonatomic) float apl;
+@property (nonatomic) float aplDimming;
+@property (nonatomic) Q memoryUsage;
+@property (nonatomic) ^{__IOSurface=} rawSurface;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} rawSurfaceFrame;
+@property (nonatomic) ^{__IOSurface=} surface;
+@property (nonatomic) BOOL inverted;
+- (id)surface;
+- (void)dealloc;
+- (id)userInfo;
+- (BOOL)isInverted;
+- (unsigned long long)frameId;
+- (id)description;
+- (unsigned int)generation;
+- (unsigned long long)memoryUsage;
+- (id)_initWithPresentationTime:frameId:generation:apl:aplDimming:memoryUsage:inverted:userInfo:;
+- (unsigned long long)presentationTime;
+- (float)apl;
+- (float)aplDimming;
+- (void)setRawSurface:;
+- (id)rawSurface;
+- (void)setRawSurfaceFrame:;
+- (id)rawSurfaceFrame;
+- (void)setSurface:;
+- (void)releaseSurface;
+@end

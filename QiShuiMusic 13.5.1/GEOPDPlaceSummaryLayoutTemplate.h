@@ -1,0 +1,33 @@
+@interface GEOPDPlaceSummaryLayoutTemplate : PBCodable
+@property (nonatomic) BOOL hasTemplateId;
+@property (nonatomic) NSString templateId;
+@property (nonatomic) NSMutableArray templateEntrys;
+- (void)readAll:;
+- (BOOL)hasGreenTeaWithValue:;
+- (id)init;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasTemplateId;
+- (id)templateId;
+- (void)setTemplateId:;
+- (id)templateEntrys;
+- (void)setTemplateEntrys:;
+- (void)clearTemplateEntrys;
+- (void)addTemplateEntry:;
+- (unsigned long long)templateEntrysCount;
+- (id)templateEntryAtIndex:;
++ (BOOL)isValid:;
++ (Class)templateEntryType;
+@end

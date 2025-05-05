@@ -1,0 +1,34 @@
+@interface VKPolygonGroup : VKPolygonalItemGroup
+@property (nonatomic) {FeatureAttributeSet={vector<gss::FeatureAttributePair styleAttributes;
+@property (nonatomic) ^v strokeMeshes;
+@property (nonatomic) ^v sourceTexture;
+@property (nonatomic) ^v targetTexture;
+@property (nonatomic) ^v sourceRoofTexture;
+@property (nonatomic) ^v targetRoofTexture;
+- (void)didFinishAddingData;
+- (id)targetRoofTexture;
+- (id)initWithStyleQuery:tileZoom:fixedAroundCentroid:contentScale:;
+- (id)initWithStyleQuery:tileZoom:fixedAroundCentroid:contentScale:storage:;
+- (id)sourceTexture;
+- (unsigned int)createStrokePointStyleList:section:outPointStyles:withRounder:;
+- (void)setNeedsTextureUpdate;
+- (void)addStrokeForSection:paddedCount:key:attributes:styles:cullingMask:accessor:;
+- (void)prepareToStrokeSection:key:styles:paddedCount:;
+- (void)willAddDataWithAccessor:;
+- (id)strokeMeshes;
+- (void)prepareToFillSection:;
+- (id)sourceRoofTexture;
+- (void)prepareForPolygon:withRounder:;
+- (id)_textureForName:textureManager:;
+- (void)updateTexturesIfNecessary:textureManager:;
+- (void).cxx_destruct;
+- (void)addPolygon:accessor:triangulator:withRounder:;
+- (id)targetTexture;
+- (void)enclosePointsInBoundingBox:count:;
+- (id).cxx_construct;
+- (void)updateTextures:textureManager:;
+- (BOOL)addFillForSection:precision:styleIndex:cullingMask:accessor:triangulator:;
+- (id)styleAttributes;
+- (unsigned char)styleIndexForAttributes:edgePair:;
+- (unsigned char)initialStyleIndexForSection:attributes:styles:;
+@end

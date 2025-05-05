@@ -1,0 +1,31 @@
+@interface MDSearchableItem : CSSearchableItem
+@property (nonatomic) NSDictionary attributes;
+@property (nonatomic) NSString displayName;
+@property (nonatomic) NSString secondaryDisplayName;
+@property (nonatomic) NSString contentUTI;
+@property (nonatomic) NSURL contentURL;
+@property (nonatomic) NSURL thumbnailURL;
+@property (nonatomic) NSData thumbnailImageData;
+@property (nonatomic) NSString localizedDisplayName;
+- (id)contentURL;
+- (id)initWithCoder:;
+- (void)setDisplayName:;
+- (id)displayName;
+- (void)setAttributes:;
+- (id)attributes;
+- (void)encodeWithCoder:;
+- (id)localizedDisplayName;
+- (id)copyWithZone:;
+- (id)thumbnailImageData;
+- (void)setThumbnailImageData:;
+- (id)thumbnailURL;
+- (void)setThumbnailURL:;
+- (void)_standardizeDeprecatedProperties:;
+- (void)setContentURL:;
+- (id)initWithUniqueIdentifier:domainIdentifier:attributes:;
+- (id)secondaryDisplayName;
+- (void)setSecondaryDisplayName:;
+- (id)contentUTI;
+- (void)setContentUTI:;
++ (BOOL)supportsSecureCoding;
+@end

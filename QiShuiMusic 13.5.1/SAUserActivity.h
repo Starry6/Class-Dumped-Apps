@@ -1,0 +1,30 @@
+@interface SAUserActivity : SADomainObject
+@property (nonatomic) NSArray eligibileFunctions;
+@property (nonatomic) NSString internalGUID;
+@property (nonatomic) BOOL isEligibleForAppPunchout;
+@property (nonatomic) BOOL isEligibleForDirections;
+@property (nonatomic) BOOL isEligibleForHandoff;
+@property (nonatomic) BOOL isEligibleForPublicIndexing;
+@property (nonatomic) BOOL isEligibleForReminders;
+@property (nonatomic) BOOL isEligibleForSearch;
+- (id)groupIdentifier;
+- (BOOL)isEligibleForReminders;
+- (BOOL)isEligibleForSearch;
+- (id)encodedClassName;
+- (BOOL)isEligibleForPublicIndexing;
+- (BOOL)isEligibleForHandoff;
+- (id)internalGUID;
+- (void)setInternalGUID:;
+- (id)eligibileFunctions;
+- (void)setEligibileFunctions:;
+- (BOOL)isEligibleForAppPunchout;
+- (void)setIsEligibleForAppPunchout:;
+- (BOOL)isEligibleForDirections;
+- (void)setIsEligibleForDirections:;
+- (void)setIsEligibleForHandoff:;
+- (void)setIsEligibleForPublicIndexing:;
+- (void)setIsEligibleForReminders:;
+- (void)setIsEligibleForSearch:;
++ (id)userActivity;
++ (id)userActivityWithDictionary:context:;
+@end

@@ -1,0 +1,33 @@
+@interface AWEIMEmoticonBottomView : UIView
+@property (nonatomic) UIScrollView themeScrollView;
+@property (nonatomic) UIButton selectedBtn;
+@property (nonatomic) UIButton sendButton;
+@property (nonatomic) NSArray themeInfos;
+@property (nonatomic) q containerViewType;
+@property (nonatomic) @? didSelectThemeBlock;
+@property (nonatomic) @? didSelectSendTextBlock;
+- (void)setSelectedBtn:;
+- (id)themeScrollView;
+- (void)sendBtnClicked:;
+- (void)changeEmoticonThemeIndex:;
+- (long long)containerViewType;
+- (id)didSelectSendTextBlock;
+- (id)didSelectThemeBlock;
+- (id)selectedBtn;
+- (double)sendBtnHeight;
+- (double)sendBtnWidth;
+- (void)setContainerViewType:;
+- (void)setDidSelectSendTextBlock:;
+- (void)setDidSelectThemeBlock:;
+- (void)setThemeInfos:;
+- (void)setThemeScrollView:;
+- (void)themeBtnClicked:;
+- (id)themeInfos;
+- (void)updateSendAndDeleteButton;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (double)buttonWidth;
+- (id)buttonAtIndex:;
+- (id)sendButton;
+- (void)setSendButton:;
+@end

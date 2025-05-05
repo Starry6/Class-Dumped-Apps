@@ -1,0 +1,35 @@
+@interface PLSearchResult : NSObject
+@property (nonatomic) PSIGroupResult groupResult;
+@property (nonatomic) Q type;
+@property (nonatomic) Q categoryMask;
+@property (nonatomic) NSArray searchTokens;
+@property (nonatomic) NSArray contentStrings;
+@property (nonatomic) NSArray lookupIdentifiers;
+@property (nonatomic) NSArray matchRanges;
+@property (nonatomic) NSString transientToken;
+@property (nonatomic) NSString keyAssetUUID;
+@property (nonatomic) Q assetCount;
+@property (nonatomic) NSString groupDescription;
+@property (nonatomic) NSString owningContentString;
+- (id)groupDescription;
+- (unsigned long long)groupCount;
+- (unsigned long long)type;
+- (void).cxx_destruct;
+- (long long)categoryAtIndex:;
+- (unsigned long long)assetCount;
+- (id)keyAssetUUID;
+- (id)initWithGroupResult:;
+- (unsigned long long)categoryMask;
+- (id)searchTokens;
+- (id)contentStrings;
+- (id)lookupIdentifiers;
+- (id)matchRanges;
+- (id)transientToken;
+- (id)owningContentString;
+- (id)tokensAtIndex:;
+- (id)matchRangesAtIndex:;
+- (BOOL)isContentStringTextSearchableAtIndex:;
+- (BOOL)isMatchedByIdentifierAtIndex:;
+- (BOOL)isImplicitlyTokenized;
+- (id)groupResult;
+@end

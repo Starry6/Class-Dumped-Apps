@@ -1,0 +1,37 @@
+@interface HMDCrashHeaderInfo : HMDCrashModel
+@property (nonatomic) Q faultAddr;
+@property (nonatomic) double crashTime;
+@property (nonatomic) NSInteger crashType;
+@property (nonatomic) NSString typeStr;
+@property (nonatomic) NSInteger mach_type;
+@property (nonatomic) q mach_code;
+@property (nonatomic) q mach_subcode;
+@property (nonatomic) NSInteger signum;
+@property (nonatomic) NSInteger sigcode;
+@property (nonatomic) NSString name;
+@property (nonatomic) NSString reason;
+- (int)sigcode;
+- (double)crashTime;
+- (int)crashType;
+- (unsigned long long)faultAddr;
+- (long long)mach_code;
+- (long long)mach_subcode;
+- (int)mach_type;
+- (void)setCrashTime:;
+- (void)setCrashType:;
+- (void)setFaultAddr:;
+- (void)setMach_code:;
+- (void)setMach_subcode:;
+- (void)setMach_type:;
+- (void)setSigcode:;
+- (void)setSignum:;
+- (void)setTypeStr:;
+- (int)signum;
+- (void)updateWithDictionary:;
+- (void)setName:;
+- (id)reason;
+- (void)setReason:;
+- (id)typeStr;
+- (void).cxx_destruct;
+- (id)name;
+@end

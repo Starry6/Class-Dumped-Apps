@@ -1,0 +1,32 @@
+@interface GEORPFeedbackTileFeatureInfo : PBCodable
+@property (nonatomic) NSMutableArray featureHandles;
+@property (nonatomic) BOOL hasFeatureName;
+@property (nonatomic) NSString featureName;
+- (void)readAll:;
+- (id)init;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (id)featureName;
+- (void)mergeFrom:;
+- (void)setFeatureName:;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)featureHandles;
+- (void)setFeatureHandles:;
+- (void)clearFeatureHandles;
+- (void)addFeatureHandle:;
+- (unsigned long long)featureHandlesCount;
+- (id)featureHandleAtIndex:;
+- (BOOL)hasFeatureName;
++ (BOOL)isValid:;
++ (Class)featureHandleType;
+@end

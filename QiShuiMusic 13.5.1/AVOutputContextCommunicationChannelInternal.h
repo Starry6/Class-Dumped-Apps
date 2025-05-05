@@ -1,0 +1,2 @@
+@interface AVOutputContextCommunicationChannelInternal : NSObject
+@end

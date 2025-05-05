@@ -1,0 +1,30 @@
+@interface EdgeSelection : NSObject
+@property (nonatomic) NSMutableDictionary edgeAttributesDict;
+@property (nonatomic) NSData networkSignature;
+@property (nonatomic) NSNumber interfaceType;
+@property (nonatomic) q trialCount;
+@property (nonatomic) double alpha;
+@property (nonatomic) q windowSize;
+- (long long)windowSize;
+- (void)setWindowSize:;
+- (void)setInterfaceType:;
+- (id)interfaceType;
+- (void)setAlpha:;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (double)alpha;
+- (void).cxx_destruct;
+- (id)description;
+- (id)initWithNetworkSignature:interfaceType:modelParams:;
+- (void)trainEdgeSelectionModel:reply:;
+- (void)getMinimumLatencyEdge:;
+- (void)getAttributesForEdge:reply:;
+- (double)_stochasticRewardFromRTT:;
+- (id)networkSignature;
+- (void)setNetworkSignature:;
+- (long long)trialCount;
+- (void)setTrialCount:;
+- (id)edgeAttributesDict;
+- (void)setEdgeAttributesDict:;
++ (BOOL)supportsSecureCoding;
+@end

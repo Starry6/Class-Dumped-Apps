@@ -1,0 +1,33 @@
+@interface SISchemaSendWithoutConfirmation : SISchemaInstrumentationMessage
+@property (nonatomic) BOOL isEnabled;
+@property (nonatomic) BOOL hasIsEnabled;
+@property (nonatomic) BOOL isEnabledForHeadphones;
+@property (nonatomic) BOOL hasIsEnabledForHeadphones;
+@property (nonatomic) BOOL isEnabledForCarPlay;
+@property (nonatomic) BOOL hasIsEnabledForCarPlay;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (void)setIsEnabled:;
+- (BOOL)isEqual:;
+- (BOOL)isEnabled;
+- (void)setHasIsEnabled:;
+- (BOOL)hasIsEnabled;
+- (void)deleteIsEnabled;
+- (void)setIsEnabledForHeadphones:;
+- (BOOL)hasIsEnabledForHeadphones;
+- (void)setHasIsEnabledForHeadphones:;
+- (void)deleteIsEnabledForHeadphones;
+- (BOOL)isEnabledForHeadphones;
+- (void)setIsEnabledForCarPlay:;
+- (BOOL)hasIsEnabledForCarPlay;
+- (void)setHasIsEnabledForCarPlay:;
+- (void)deleteIsEnabledForCarPlay;
+- (BOOL)isEnabledForCarPlay;
+@end

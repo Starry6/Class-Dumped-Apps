@@ -1,0 +1,32 @@
+@interface FLEXAPNSViewController : FLEXFilteringTableViewController
+@property (nonatomic) FLEXSingleRowSection deviceToken;
+@property (nonatomic) FLEXMutableListSection remoteNotifications;
+@property (nonatomic) FLEXMutableListSection userNotifications;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)viewDidLoad;
+- (id)makeSections;
+- (void)reloadData;
+- (void)settingsButtonTapped;
+- (id)deviceToken;
+- (void)setDeviceToken:;
+- (id)remoteNotifications;
+- (void)setRemoteNotifications:;
+- (id)userNotifications;
+- (void)setUserNotifications:;
+- (void).cxx_destruct;
++ (void)hookAppDelegateClass:;
++ (void)hookUNUserNotificationCenterDelegateClass:;
++ (Class)appDelegateClass;
++ (id)deviceToken;
++ (void)setDeviceToken:;
++ (id)deviceTokenString;
++ (id)registrationError;
++ (void)setRegistrationError:;
++ (id)userNotifications;
++ (id)remoteNotifications;
++ (id)globalsEntryTitle:;
++ (id)globalsEntryViewController:;
+@end

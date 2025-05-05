@@ -1,0 +1,30 @@
+@interface NSPersistentHistoryTransaction : NSObject
+@property (nonatomic) NSDate timestamp;
+@property (nonatomic) NSArray changes;
+@property (nonatomic) q transactionNumber;
+@property (nonatomic) NSString storeID;
+@property (nonatomic) NSString bundleID;
+@property (nonatomic) NSString processID;
+@property (nonatomic) NSString contextName;
+@property (nonatomic) NSString author;
+@property (nonatomic) NSPersistentHistoryToken token;
+- (id)_pl_prettyDescriptionWithIndent:;
+- (id)processID;
+- (id)storeID;
+- (id)token;
+- (id)author;
+- (long long)transactionNumber;
+- (id)postQueryGenerationToken;
+- (id)changes;
+- (id)contextName;
+- (id)timestamp;
+- (id)description;
+- (id)objectIDNotification;
+- (id)bundleID;
+- (id)initialQueryGenerationToken;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
++ (id)entityDescriptionWithContext:;
++ (id)fetchRequest;
++ (id)entityDescription;
+@end

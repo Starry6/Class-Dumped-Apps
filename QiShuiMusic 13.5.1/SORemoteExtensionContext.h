@@ -1,0 +1,31 @@
+@interface SORemoteExtensionContext : NSExtensionContext
+@property (nonatomic) SOExtensionViewService viewService;
+@property (nonatomic) <ASAuthorizationProviderExtensionAuthorizationRequestHandler> extensionViewController;
+@property (nonatomic) ASAuthorizationProviderExtensionAuthorizationRequest extensionAuthorizationRequest;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)beginUserRegistrationUsingUserName:authenticationMethod:options:completion:;
+- (id)viewService;
+- (BOOL)canOpenURL:;
+- (void)registrationDidComplete;
+- (void)beginDeviceRegistrationUsingOptions:completion:;
+- (void)finishAuthorizationWithCompletion:;
+- (void)beginAuthorizationWithRequestParameters:completion:;
+- (void)beginAuthorizationWithServiceXPCEndpoint:completion:;
+- (void).cxx_destruct;
+- (void)setViewService:;
+- (void)cancelAuthorizationWithCompletion:;
+- (void)openURL:completionHandler:;
+- (id)extensionViewController;
+- (id)hostContextWithError:;
+- (id)authorizationRequestHandlerWithRequestParameters:error:;
+- (id)extensionAuthorizationRequestHandlerWithError:;
+- (id)synchronousHostContextWithError:;
+- (void)completeFinishAuthorizationWithError:;
+- (void)_disableAppSSOInCFNetwork;
+- (id)extensionAuthorizationRequest;
++ (id)_extensionAuxiliaryHostProtocol;
++ (id)_extensionAuxiliaryVendorProtocol;
+@end

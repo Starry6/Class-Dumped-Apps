@@ -1,0 +1,30 @@
+@interface IESLiveSaaSInternalPushModel : BDDynamicMTLModel
+@property (nonatomic) IESLiveSaaSImage avatar;
+@property (nonatomic) q roomId;
+@property (nonatomic) NSString nickName;
+@property (nonatomic) NSString text;
+@property (nonatomic) NSString anchorId;
+@property (nonatomic) NSString requestId;
+@property (nonatomic) NSString logPb;
+@property (nonatomic) NSString openRoomId;
+@property (nonatomic) NSString pushTitle;
+@property (nonatomic) q style;
+@property (nonatomic) IESLiveSaaSInternalUGCouponPushModel couponData;
+@property (nonatomic) NSDictionary dictionaryValue;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)couponData;
+- (id)openRoomId;
+- (id)pushTitle;
+- (void)setCouponData:;
+- (void)setOpenRoomId:;
+- (void)setPushTitle:;
+- (void)setStyle:;
+- (void).cxx_destruct;
+- (long long)style;
++ (id)avatarJSONTransformer;
++ (id)couponDataJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

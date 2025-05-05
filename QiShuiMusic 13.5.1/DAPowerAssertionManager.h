@@ -1,0 +1,32 @@
+@interface DAPowerAssertionManager : NSObject
+@property (nonatomic) NSCountedSet contexts;
+@property (nonatomic) NSMapTable groupIdentifierToContexts;
+@property (nonatomic) NSMapTable contextToGroupIdentifier;
+@property (nonatomic) NSMutableSet heldAsideGroupIdentifiers;
+@property (nonatomic) NSCountedSet heldAsideContexts;
+@property (nonatomic) NSMapTable contextToPowerAssertionRef;
+- (id)init;
+- (void)releasePowerAssertion:;
+- (id)contexts;
+- (void)setContexts:;
+- (id)stateString;
+- (void).cxx_destruct;
+- (unsigned long long)powerAssertionRetainCount:;
+- (void)retainPowerAssertion:withGroupIdentifier:;
+- (void)dropPowerAssertionsForGroupIdentifier:;
+- (void)reattainPowerAssertionsForGroupIdentifier:;
+- (BOOL)_retainAssertionForContext:;
+- (BOOL)_releaseAssertionForContext:;
+- (id)groupIdentifierToContexts;
+- (void)setGroupIdentifierToContexts:;
+- (id)contextToGroupIdentifier;
+- (void)setContextToGroupIdentifier:;
+- (id)heldAsideGroupIdentifiers;
+- (void)setHeldAsideGroupIdentifiers:;
+- (id)heldAsideContexts;
+- (void)setHeldAsideContexts:;
+- (id)contextToPowerAssertionRef;
+- (void)setContextToPowerAssertionRef:;
++ (void)vendDaemons:;
++ (id)sharedPowerAssertionManager;
+@end

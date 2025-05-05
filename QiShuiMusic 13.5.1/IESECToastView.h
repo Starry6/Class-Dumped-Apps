@@ -1,0 +1,34 @@
+@interface IESECToastView : UIView
+@property (nonatomic) IESECToastConfig config;
+@property (nonatomic) NSString text;
+@property (nonatomic) UIImage icon;
+@property (nonatomic) UIImageView iconView;
+@property (nonatomic) UILabel textLabel;
+@property (nonatomic) double maxTotalWidth;
+@property (nonatomic) double maxTotalHeight;
+- (id)initWithConfig:text:icon:;
+- (double)maxTotalHeight;
+- (double)maxTotalWidth;
+- (void)setMaxTotalHeight:;
+- (void)setMaxTotalWidth:;
+- (void)setupHorizontalStyle;
+- (void)setupVerticalStyle;
+- (void)showOnView:;
+- (void)startShowAnimation;
+- (id)textLabel;
+- (id)iconView;
+- (void)setIconView:;
+- (void)setText:;
+- (void)setConfig:;
+- (id)icon;
+- (void)setIcon:;
+- (void).cxx_destruct;
+- (id)config;
+- (id)text;
+- (void)setTextLabel:;
+- (void)setupUI;
++ (void)showText:;
++ (void)showText:icon:;
++ (void)showText:icon:withConfig:;
++ (void)showText:icon:withConfig:onView:;
+@end

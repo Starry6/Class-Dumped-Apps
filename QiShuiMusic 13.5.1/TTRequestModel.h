@@ -1,0 +1,35 @@
+@interface TTRequestModel : NSObject
+@property (nonatomic) NSString _host;
+@property (nonatomic) NSString _uri;
+@property (nonatomic) NSString _method;
+@property (nonatomic) NSDictionary _params;
+@property (nonatomic) NSString _response;
+@property (nonatomic) @? _bodyBlock;
+@property (nonatomic) BOOL _isNoNeedCommonParams;
+@property (nonatomic) NSDictionary _additionGetParams;
+@property (nonatomic) NSString _fullNewURL;
+- (void)set_fullNewURL:;
+- (id)_additionGetParams;
+- (id)_fullNewURL;
+- (BOOL)_isNoNeedCommonParams;
+- (id)_requestURIStr;
+- (void)set_additionGetParams:;
+- (void)set_bodyBlock:;
+- (void)set_isNoNeedCommonParams:;
+- (void)set_method:;
+- (void)set_params:;
+- (void)set_response:;
+- (void)set_uri:;
+- (id)init;
+- (id)_host;
+- (void).cxx_destruct;
+- (id)_response;
+- (id)_bodyBlock;
+- (id)_method;
+- (id)_params;
+- (id)_uri;
+- (void)set_host:;
+- (id)_requestURL;
+- (id)_requestMethod;
+- (id)_requestParams;
+@end

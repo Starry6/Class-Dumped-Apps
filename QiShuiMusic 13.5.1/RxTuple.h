@@ -1,0 +1,32 @@
+@interface RxTuple : NSObject
+@property (nonatomic) NSArray backingStore;
+@property (nonatomic) Q count;
+@property (nonatomic) @ first;
+@property (nonatomic) @ second;
+@property (nonatomic) @ third;
+@property (nonatomic) @ fourth;
+@property (nonatomic) @ fifth;
+@property (nonatomic) @ last;
+- (id)__initWithBackingStore:;
+- (id)fifth;
+- (id)tupleByAddingObject:;
+- (id)init;
+- (id)last;
+- (id)backingStore;
+- (id)second;
+- (unsigned long long)countByEnumeratingWithState:objects:count:;
+- (id)objectAtIndexedSubscript:;
+- (id)initWithCoder:;
+- (id)first;
+- (void)encodeWithCoder:;
+- (id)objectAtIndex:;
+- (void).cxx_destruct;
+- (id)allObjects;
+- (unsigned long long)count;
+- (id)copyWithZone:;
+- (id)third;
+- (id)fourth;
++ (id)tupleWithObjects:;
++ (id)tupleWithObjectsFromArray:;
++ (id)tupleWithObjectsFromArray:convertNullsToNils:;
+@end

@@ -1,0 +1,33 @@
+@interface BDImageMetaInfo : NSObject
+@property (nonatomic) Q fileSize;
+@property (nonatomic) Q memoryFootprint;
+@property (nonatomic) Q width;
+@property (nonatomic) Q height;
+@property (nonatomic) NSString webURL;
+@property (nonatomic) UIView requestView;
+@property (nonatomic) @ userInfo;
+@property (nonatomic) Q frameCount;
+@property (nonatomic) BOOL previousNeedImage;
+- (void)memoryCostInfo:;
+- (void)setRequestView:;
+- (id)initWithRequest:data:;
+- (BOOL)previousNeedImage;
+- (id)requestView;
+- (void)setPreviousNeedImage:;
+- (unsigned long long)frameCount;
+- (unsigned long long)fileSize;
+- (id)init;
+- (id)userInfo;
+- (unsigned long long)memoryFootprint;
+- (void)setWidth:;
+- (void)setFrameCount:;
+- (void)setMemoryFootprint:;
+- (unsigned long long)height;
+- (unsigned long long)width;
+- (void)setFileSize:;
+- (void)setUserInfo:;
+- (void)setHeight:;
+- (void).cxx_destruct;
+- (id)webURL;
+- (void)setWebURL:;
+@end

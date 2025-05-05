@@ -1,0 +1,34 @@
+@interface AMSMetricsLoadURLContext : NSObject
+@property (nonatomic) NSDictionary decodedResponseBody;
+@property (nonatomic) AMSURLRequestProperties properties;
+@property (nonatomic) <AMSBagProtocol> bag;
+@property (nonatomic) NSError error;
+@property (nonatomic) AMSProcessInfo processInfo;
+@property (nonatomic) NSData responseBody;
+@property (nonatomic) NSURLSession session;
+@property (nonatomic) NSURLSessionTask task;
+@property (nonatomic) NSURLSessionTaskMetrics taskMetrics;
+- (id)bagContract;
+- (void)setBagContract:;
+- (void)setSession:;
+- (id)processInfo;
+- (void)setProcessInfo:;
+- (void)setProperties:;
+- (void)setError:;
+- (id)task;
+- (id)initWithTask:metrics:;
+- (id)responseBody;
+- (void)setResponseBody:;
+- (id)error;
+- (id)taskMetrics;
+- (void)setBag:;
+- (void)setTask:;
+- (id)session;
+- (id)properties;
+- (void).cxx_destruct;
+- (id)initWithTaskInfo:serverPayload:;
+- (id)decodedResponseBody;
+- (id)bag;
+- (void)setTaskMetrics:;
+- (void)setDecodedResponseBody:;
+@end

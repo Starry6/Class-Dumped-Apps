@@ -1,0 +1,36 @@
+@interface UIWebPDFSearchOperation : NSOperation
+@property (nonatomic) NSObject<UIWebPDFSearchOperationDelegate> searchDelegate;
+@property (nonatomic) Q currentPageResultCount;
+@property (nonatomic) UIPDFDocument documentToSearch;
+@property (nonatomic) Q currentPageIndex;
+@property (nonatomic) Q startingPageIndex;
+@property (nonatomic) Q numberOfResultsToSkip;
+@property (nonatomic) Q resultLimit;
+@property (nonatomic) NSString searchString;
+@property (nonatomic) double documentScale;
+- (unsigned long long)resultLimit;
+- (void)setSearchString:;
+- (id)init;
+- (void)cancel;
+- (void)dealloc;
+- (id)searchString;
+- (unsigned long long)currentPageIndex;
+- (void)setResultLimit:;
+- (void)main;
+- (void)setSearchDelegate:;
+- (id)searchDelegate;
+- (double)documentScale;
+- (BOOL)_hitSearchLimit;
+- (void)_notifyDelegateOfStatus;
+- (id)_fontWithPDFFont:size:;
+- (id)sanitizedAttributedStringForAttributedString:;
+- (void)_search;
+- (unsigned long long)currentPageResultCount;
+- (unsigned long long)startingPageIndex;
+- (void)setStartingPageIndex:;
+- (id)documentToSearch;
+- (void)setDocumentToSearch:;
+- (void)setDocumentScale:;
+- (unsigned long long)numberOfResultsToSkip;
+- (void)setNumberOfResultsToSkip:;
+@end

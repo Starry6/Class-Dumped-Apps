@@ -1,0 +1,33 @@
+@interface CaliTIPMessage : NSObject
+@property (nonatomic) NSData data;
+@property (nonatomic) CalDAVScheduleChangesProperty scheduleChanges;
+@property (nonatomic) NSString filename;
+@property (nonatomic) ICSDocument document;
+@property (nonatomic) ICSEvent event;
+@property (nonatomic) ICSCalendar calendar;
+@property (nonatomic) ICSEvent masterEvent;
+@property (nonatomic) NSArray occurrences;
+@property (nonatomic) NSArray allOccurrences;
+@property (nonatomic) BOOL iMIPImported;
+- (id)filename;
+- (void)setEvent:;
+- (id)calendar;
+- (id)event;
+- (void)setDocument:;
+- (id)data;
+- (void)setFilename:;
+- (id)occurrences;
+- (id)document;
+- (long long)compare:;
+- (void).cxx_destruct;
+- (id)description;
+- (void)setData:;
+- (id)initWithData:filename:;
+- (id)masterEvent;
+- (id)initWithData:filename:scheduleChanges:;
+- (id)allOccurrences;
+- (id)scheduleChanges;
+- (void)setScheduleChanges:;
+- (BOOL)iMIPImported;
+- (void)setIMIPImported:;
+@end

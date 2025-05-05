@@ -1,0 +1,32 @@
+@interface INTimer : NSObject
+@property (nonatomic) INSpeakableString label;
+@property (nonatomic) double duration;
+@property (nonatomic) double remainingTime;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) q state;
+@property (nonatomic) q type;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)_dictionaryRepresentation;
+- (id)identifier;
+- (double)remainingTime;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)label;
+- (void)encodeWithCoder:;
+- (long long)type;
+- (id)descriptionAtIndent:;
+- (long long)state;
+- (void).cxx_destruct;
+- (id)description;
+- (id)_intents_encodeWithJSONEncoder:codableDescription:;
+- (double)duration;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)initWithLabel:duration:remainingTime:identifier:state:type:;
+- (id)initWithLabel:duration:remainingTime:identifier:state:;
++ (id)_intents_decodeWithJSONDecoder:codableDescription:from:;
++ (BOOL)supportsSecureCoding;
+@end

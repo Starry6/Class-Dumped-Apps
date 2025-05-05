@@ -1,0 +1,32 @@
+@interface IESECRelationPageContext : IESECRelationContextStore
+@property (nonatomic) IESECTracker tracker;
+@property (nonatomic) IESECShopContext context;
+@property (nonatomic) Q modal;
+@property (nonatomic) Q screenState;
+@property (nonatomic) BOOL liveMuted;
+@property (nonatomic) BOOL fmpFinished;
+- (void)setFmpFinished:;
+- (id)ad_logExtraDict;
+- (void)addKey:handler:;
+- (void)setupTrackerWithBusinessParams:;
+- (id)ad_creativeID;
+- (id)ad_logExtra;
+- (id)ad_rit;
+- (BOOL)fmpFinished;
+- (BOOL)isLiveMuted;
+- (void)postAllHandlersForKey:;
+- (void)removeAllHandlersForKey:;
+- (void)removeKey:handler:;
+- (void)setAd_logExtraDict:;
+- (void)setLiveMuted:;
+- (void)setTracker:;
+- (id)init;
+- (id)tracker;
+- (id)context;
+- (void).cxx_destruct;
+- (void)setContext:;
+- (unsigned long long)modal;
+- (void)setModal:;
+- (unsigned long long)screenState;
+- (void)setScreenState:;
+@end

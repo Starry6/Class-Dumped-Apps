@@ -1,0 +1,34 @@
+@interface UploadRecord : NSObject
+@property (nonatomic) NSString uploadIdentifier;
+@property (nonatomic) NSData payload;
+@property (nonatomic) NSString timestampReferenceIdentifier;
+@property (nonatomic) NSInteger uploadStatus;
+@property (nonatomic) Q processedAttempts;
+@property (nonatomic) NSDate dateCreated;
+@property (nonatomic) NSDate dateLastProcessed;
+@property (nonatomic) NSDate dateUploaded;
+@property (nonatomic) Q size;
+@property (nonatomic) NSString applicationIdentifier;
+- (id)applicationIdentifier;
+- (id)payload;
+- (void)setPayload:;
+- (void)setApplicationIdentifier:;
+- (id)uploadIdentifier;
+- (id)dateCreated;
+- (void).cxx_destruct;
+- (void)setSize:;
+- (unsigned long long)size;
+- (void)setDateCreated:;
+- (void)setUploadIdentifier:;
+- (id)timestampReferenceIdentifier;
+- (void)setTimestampReferenceIdentifier:;
+- (unsigned long long)processedAttempts;
+- (void)setProcessedAttempts:;
+- (id)dateLastProcessed;
+- (void)setDateLastProcessed:;
+- (id)dateUploaded;
+- (void)setDateUploaded:;
+- (id)outcomeTelemetryDictionary;
+- (int)uploadStatus;
+- (void)setUploadStatus:;
+@end

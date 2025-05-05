@@ -1,0 +1,36 @@
+@interface SFPrivacyReportViewController : UIViewController
+@property (nonatomic) NSString domain;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithDomain:;
+- (void)viewWillTransitionToSize:withTransitionCoordinator:;
+- (BOOL)tableView:shouldHighlightRowAtIndexPath:;
+- (BOOL)tableView:shouldDrawBottomSeparatorForSection:;
+- (void)traitCollectionDidChange:;
+- (double)tableView:estimatedHeightForRowAtIndexPath:;
+- (void)tableView:didSelectRowAtIndexPath:;
+- (void).cxx_destruct;
+- (void)_updateLayoutMargins;
+- (id)domain;
+- (id)initWithNibName:bundle:;
+- (void)viewDidLoad;
+- (long long)tableView:editingStyleForRowAtIndexPath:;
+- (BOOL)tableView:canFocusRowAtIndexPath:;
+- (BOOL)tableView:shouldDrawTopSeparatorForSection:;
+- (void)_doneBarButtonItemAction:;
+- (void)cellPrivacyProxyStateChanged:;
+- (void)cellPrivacyProxyUpsellDismissed:;
+- (id)dataSource:headerTextForSection:;
+- (void)cellDidToggleExpandDetailedExplanation:;
+- (void)gridViewDidUpdateContentSize:;
+- (void)cellDidToggleDetailType:;
+- (void)_createTableViewIfNeededLoadingReport:;
+- (void)_updateUsesInsetStyle;
+- (void)_reloadDataLoadingReport:;
+- (long long)_sectionTypeFromSectionIndex:;
+- (id)_cellForRowWithIndexPath:itemIdentifier:;
+- (BOOL)_privacyProxyTip:;
+- (void)setNeedsUpdateRowHeight;
+@end

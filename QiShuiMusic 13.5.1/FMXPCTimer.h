@@ -1,0 +1,33 @@
+@interface FMXPCTimer : NSObject
+@property (nonatomic) NSString name;
+@property (nonatomic) NSDate date;
+@property (nonatomic) double gracePeriod;
+@property (nonatomic) q priority;
+@property (nonatomic) Q options;
+@property (nonatomic) @? block;
+@property (nonatomic) NSObject<OS_xpc_object> duetActivitySchedulerData;
+- (id)block;
+- (void)setOptions:;
+- (id)initWithName:timeInterval:priority:options:block:;
+- (double)gracePeriod;
+- (void)setPriority:;
+- (id)criteria;
+- (void)setName:;
+- (void)handleActivity;
+- (id)initWithName:date:gracePeriod:priority:options:block:;
+- (id)initWithName:date:priority:options:block:;
+- (id)date;
+- (void)schedule;
+- (id)activityHandler;
+- (unsigned long long)options;
+- (void).cxx_destruct;
+- (void)setDate:;
+- (void)setBlock:;
+- (id)name;
+- (void)invalidate;
+- (void)setGracePeriod:;
+- (long long)priority;
+- (id)initWithName:timeInterval:gracePeriod:priority:options:block:;
+- (id)duetActivitySchedulerData;
+- (void)setDuetActivitySchedulerData:;
+@end

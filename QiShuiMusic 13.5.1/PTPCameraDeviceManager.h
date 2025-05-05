@@ -1,0 +1,33 @@
+@interface PTPCameraDeviceManager : ICDeviceManager
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (void)dealloc;
+- (void)addSelectorToInterface:selectorString:origin:;
+- (id)deviceManagerConnection;
+- (void)startDeviceWithHandle:;
+- (void)ejectImp:;
+- (void)syncClockImp:;
+- (void)getFileThumbnailImp:;
+- (void)getFileMetadataImp:;
+- (void)getFileDataImp:;
+- (void)deleteFileImp:;
+- (void)downloadFileImp:;
+- (long long)checkFile:andDevice:;
+- (void)executeCompletionBlockWithErrorCode:info:file:completionDict:completionBlk:;
+- (void)notifyAddedItems:;
+- (void)notifyRemovedItems:;
+- (void)notifyUpdatedItems:;
+- (void)notifyPtpEvent:;
+- (void)notifyStatus:;
+- (void)updateCameraFolder:withInfo:;
+- (void)updateCameraFile:withInfo:;
+- (void)handleImageCaptureEventNotification:;
+- (void)sendDevicePTPCommandImp:;
+- (void)registerDevice:forImageCaptureEventNotificationsImp:;
+- (void)unregisterDevice:forImageCaptureEventNotificationsImp:;
+- (void)handleEventImp:;
+- (void)updateCameraFile:withKeywords:;
+@end

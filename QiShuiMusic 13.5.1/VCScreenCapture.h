@@ -1,0 +1,34 @@
+@interface VCScreenCapture : VCVideoCapture
+@property (nonatomic) BOOL isClearScreenThreadRunning;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (int)stop:;
+- (int)setFrameRate:;
+- (void)dealloc;
+- (int)startPreview;
+- (BOOL)isPreviewRunning;
+- (BOOL)isFrontCamera;
+- (int)stopScreenCapture;
+- (void)shouldClearScreen:;
+- (void)screenCaptureSourceShouldClearScreen:;
+- (void)screenCaptureSourceProcessEventString:;
+- (int)startCaptureWithWidth:height:frameRate:;
+- (int)setWidth:height:frameRate:;
+- (int)copyColorInfo:;
+- (int)configureCaptureWithToken:;
+- (int)getFrameRate;
+- (int)frameCount:;
+- (int)frameBecameAvailableCount:figBufferQueueEmptyCount:figBufferQueueErrorCount:;
+- (BOOL)cameraSupportsFormatWidth:height:;
+- (BOOL)isPortraitResolutionCaptureActive;
+- (int)startScreenCapture;
+- (void)processAndSendIdleBlackFrame;
+- (id)initWithCaptureServer:sourceConfig:;
+- (int)_startCapture;
+- (void)setPauseCapture:;
+- (void)startClearScreenProc;
+- (void)stopClearScreenProc;
+- (BOOL)isClearScreenThreadRunning;
+@end

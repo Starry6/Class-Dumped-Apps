@@ -1,0 +1,33 @@
+@interface CNSharingProfileLogger : NSObject
+@property (nonatomic) NSObject<OS_os_log> log;
+- (id)init;
+- (id)log;
+- (void)setLog:;
+- (void).cxx_destruct;
+- (void)logOnboardingSavingMeCardImageToRecentsForIdentifier:;
+- (void)logOnboardingSuccessSavingMeCardImageToRecents;
+- (void)logOnboardingErrorSavingMeCardImageToRecentsWithDescription:;
+- (void)logOnboardingSavingContact:;
+- (void)logOnboardingAddingContact;
+- (void)logOnboardingUpdatingContactWithIdentifier:;
+- (void)logOnboardingErrorSavingContactWithDescription:;
+- (void)logOnboardingSettingMeContact;
+- (void)logOnboardingErrorSettingMeContactWithDescription:;
+- (void)logOnboardingSuccessSavingContact;
+- (void)logOnboardingAvatarCarouselErrorCreatingContactImageWithDescription:;
+- (void)logOnboardingReturningSharingResultWithDescription:;
+- (void)logOnboardingReturningDefaultMonogram;
+- (void)logOnboardingReturningEmptyImage;
+- (void)logOnboardingReturningNonAnimojiItem;
+- (void)logSettingsSavingContact:;
+- (void)logSettingsErrorSavingContactWithDescription:;
+- (void)logSettingsSettingMeContact;
+- (void)logSettingsErrorSettingMeContactWithDescription:;
+- (void)logSettingsSuccessSavingContact;
+- (void)logErrorGeneratingAvatarForPhotoPickerWithDescription:;
+- (void)logSettingsReturningSharingResultWithDescription:;
+- (void)logSettingsReturningDefaultMonogram;
+- (void)logSettingsReturningEmptyImageForNoChange;
+- (void)logSettingsReturningEmptyImage;
++ (id)log;
+@end

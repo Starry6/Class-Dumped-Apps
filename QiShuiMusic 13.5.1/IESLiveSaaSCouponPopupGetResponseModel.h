@@ -1,0 +1,31 @@
+@interface IESLiveSaaSCouponPopupGetResponseModel : BDDynamicMTLModel
+@property (nonatomic) IESLiveSaaSCouponPopupModel couponPopup;
+@property (nonatomic) NSString toast;
+@property (nonatomic) BOOL forceShowToast;
+@property (nonatomic) NSDictionary lynxCardCouponDict;
+@property (nonatomic) IESLiveSaaSFullPageLynxCouponPopupModel fullPageLynxCouponPopup;
+@property (nonatomic) NSString errTips;
+@property (nonatomic) q errNum;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)errTips;
+- (void)setCouponPopup:;
+- (id)couponPopup;
+- (long long)errNum;
+- (BOOL)forceShowToast;
+- (id)fullPageLynxCouponPopup;
+- (id)lynxCardCouponDict;
+- (void)setErrNum:;
+- (void)setErrTips:;
+- (void)setForceShowToast:;
+- (void)setFullPageLynxCouponPopup:;
+- (void)setLynxCardCouponDict:;
+- (void).cxx_destruct;
+- (void)setToast:;
+- (id)toast;
++ (id)couponPopupJSONTransformer;
++ (id)fullPageLynxCouponPopupJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

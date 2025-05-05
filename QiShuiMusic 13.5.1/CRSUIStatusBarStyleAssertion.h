@@ -1,0 +1,31 @@
+@interface CRSUIStatusBarStyleAssertion : NSObject
+@property (nonatomic) BSServiceConnection connection;
+@property (nonatomic) NSUUID identifier;
+@property (nonatomic) q interfaceStyle;
+@property (nonatomic) q contrast;
+@property (nonatomic) BOOL siriPresentation;
+@property (nonatomic) BOOL valid;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setInterfaceStyle:;
+- (long long)interfaceStyle;
+- (id)identifier;
+- (long long)contrast;
+- (void)setContrast:;
+- (BOOL)isValid;
+- (id)connection;
+- (void).cxx_destruct;
+- (void)setConnection:;
+- (void)invalidate;
+- (void)setIdentifier:;
+- (id)initWithInterfaceStyle:contrast:;
+- (id)initForSiriPresentation;
+- (id)initWithInterfaceStyle:contrast:siriPresentation:;
+- (void)acquireWithAnimationSettings:;
+- (void)reliquishWithAnimationSettings:;
+- (void)_handleConnectionActivated;
+- (BOOL)siriPresentation;
+- (void)setSiriPresentation:;
+@end

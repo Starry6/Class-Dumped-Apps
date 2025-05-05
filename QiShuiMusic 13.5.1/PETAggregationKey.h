@@ -1,0 +1,37 @@
+@interface PETAggregationKey : PBCodable
+@property (nonatomic) BOOL hasType;
+@property (nonatomic) NSInteger type;
+@property (nonatomic) BOOL hasDatestamp;
+@property (nonatomic) I datestamp;
+@property (nonatomic) BOOL hasBucket;
+@property (nonatomic) double bucket;
+@property (nonatomic) BOOL hasRawMessage;
+@property (nonatomic) PETRawMessage rawMessage;
+- (void)setHasBucket:;
+- (int)StringAsType:;
+- (void)setType:;
+- (void)writeTo:;
+- (void)setHasType:;
+- (BOOL)hasType;
+- (BOOL)hasBucket;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (id)typeAsString:;
+- (void)mergeFrom:;
+- (void)setRawMessage:;
+- (BOOL)hasDatestamp;
+- (int)type;
+- (void)setDatestamp:;
+- (void).cxx_destruct;
+- (void)setHasDatestamp:;
+- (BOOL)readFrom:;
+- (id)description;
+- (void)setBucket:;
+- (id)dictionaryRepresentation;
+- (unsigned int)datestamp;
+- (id)rawMessage;
+- (BOOL)hasRawMessage;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (double)bucket;
+@end

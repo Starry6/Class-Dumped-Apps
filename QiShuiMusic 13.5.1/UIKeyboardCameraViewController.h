@@ -1,0 +1,34 @@
+@interface UIKeyboardCameraViewController : UIViewController
+@property (nonatomic) NSExtension extension;
+@property (nonatomic) UIKeyboardCameraRemoteViewController remoteViewController;
+@property (nonatomic) <UIKeyboardCameraViewControllerDelegate> delegate;
+@property (nonatomic) NSString textContentType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)remoteViewController;
+- (void)setTextContentType:;
+- (id)init;
+- (void)setExtension:;
+- (id)textContentType;
+- (void)setDelegate:;
+- (id)extension;
+- (id)initWithCoder:;
+- (BOOL)_canShowWhileLocked;
+- (void)viewDidDisappear:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setRemoteViewController:;
+- (void)viewDidLoad;
+- (id)_backgroundColorForModalFormSheet;
+- (void)keyboardCameraDidUpdateString:;
+- (void)keyboardCameraDidAccept;
+- (void)keyboardCameraDidCancel;
+- (void)prepareWithCompletion:;
++ (BOOL)isEnabled;
++ (BOOL)isLiveTextEnabled;
++ (void)_updateIsCameraRestricted;
++ (BOOL)isCameraRestricted;
++ (BOOL)isSupportedByDevice;
+@end

@@ -1,0 +1,2 @@
+@interface HTSLiveBattleDrawPropRoot : GPBRootObject
+@end

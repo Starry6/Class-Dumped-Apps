@@ -1,0 +1,37 @@
+@interface MKIncidentsViewController : _MKTableViewController
+@property (nonatomic) NSArray transitIncidents;
+@property (nonatomic) NSString incidentsTitle;
+@property (nonatomic) GEOComposedRouteAdvisory advisory;
+- (id)init;
+- (void)dealloc;
+- (id)tableView:cellForRowAtIndexPath:;
+- (id)advisory;
+- (void)setAdvisory:;
+- (BOOL)_canShowWhileLocked;
+- (void)_updateTitle;
+- (double)tableView:heightForRowAtIndexPath:;
+- (double)tableView:estimatedHeightForRowAtIndexPath:;
+- (void).cxx_destruct;
+- (void)_localeDidChange;
+- (void)viewWillAppear:;
+- (long long)tableView:numberOfRowsInSection:;
+- (void)viewDidLoad;
+- (long long)numberOfSectionsInTableView:;
+- (long long)_numberOfRowsInSection:;
+- (id)transitIncidents;
+- (void)setTransitIncidents:;
+- (void)infoCardThemeChanged;
+- (id)initWithTransitIncidents:;
+- (void)reloadDataSource;
+- (id)_cellForRow:inSection:;
+- (id)_transitCellForIndex:inSection:;
+- (id)_advisoryItemCellForIndex:;
+- (unsigned long long)_incidentsCount;
+- (unsigned long long)_transitIncidentsCount;
+- (long long)_transitIncidentIndexForRow:section:;
+- (void)_compileSections;
+- (long long)_sectionForSectionIndex:;
+- (id)detailCellInSection:;
+- (id)extendedDetailCell;
+- (id)incidentsTitle;
+@end

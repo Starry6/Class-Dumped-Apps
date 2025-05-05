@@ -1,0 +1,33 @@
+@interface CATSharingBroadcastConnection : NSObject
+@property (nonatomic) BOOL closed;
+@property (nonatomic) NSError closedError;
+@property (nonatomic) CATSharingDevice remoteDevice;
+@property (nonatomic) <CATSharingConnectionDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setClosed:;
+- (void)_close;
+- (BOOL)isClosed;
+- (void)setDelegate:;
+- (void)close;
+- (id)remoteDevice;
+- (void)sendMessage:completion:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)messageReceived:;
+- (void)sendData:completion:;
+- (id)closedError;
+- (id)initWithBroadcastPrimitives:timerSource:;
+- (void)_sendData:completion:;
+- (void)closeWithError:reportToRemote:;
+- (void)tombstoneWithError:;
+- (void)addBroadcastPrimitiveHandlers;
+- (void)removeBroadcastPrimitiveHandlers;
+- (void)handleUnparsableMessageDictionary:;
+- (void)handleCloseMessage:;
+- (void)handleSentMessage:;
+- (void)sendTearDownMessageWithError:;
+- (void)setClosedError:;
+@end

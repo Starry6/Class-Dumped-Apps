@@ -1,0 +1,32 @@
+@interface UASocket : NSObject
+@property (nonatomic) BOOL useCellular;
+@property (nonatomic) BOOL wifiwwanNetwork;
+@property (nonatomic) <UASocketDelegate> socketDelegate;
+@property (nonatomic) NSString host;
+@property (nonatomic) NSString port;
+- (BOOL)wifiwwanNetwork;
+- (id)initWithHost:port:;
+- (void)setSocketDelegate:;
+- (void)setWifiwwanNetwork:;
+- (id)socketDelegate;
+- (void)socketDelegateDidClose;
+- (void)socketDelegateDidConnectToIPType:;
+- (void)socketDelegateDidOccurError:;
+- (void)socketDelegateDidReadData:;
+- (void)socketDelegateDidWriteData:;
+- (void)socketDelegateShouldVerifyTrust:authResult:;
+- (void)readData;
+- (void)writeData:;
+- (BOOL)useCellular;
+- (void)dealloc;
+- (id)host;
+- (void)disconnect;
+- (id)port;
+- (id)errorWithCode:description:;
+- (void).cxx_destruct;
+- (void)connect;
+- (void)setUseCellular:;
++ (id)errorInDomain:code:description:;
++ (id)errorInClass:code:description:;
++ (id)socketWithHost:port:;
+@end

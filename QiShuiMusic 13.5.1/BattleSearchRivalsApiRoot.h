@@ -1,0 +1,2 @@
+@interface BattleSearchRivalsApiRoot : GPBRootObject
+@end

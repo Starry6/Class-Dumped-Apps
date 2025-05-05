@@ -1,0 +1,31 @@
+@interface VCPPhotosAsset : VCPAsset
+@property (nonatomic) NSArray resources;
+- (long long)mediaType;
+- (id)scenes;
+- (id)fingerprint;
+- (id)resources;
+- (id)localIdentifier;
+- (id)faces;
+- (id)modificationDate;
+- (id)allScenes;
+- (void).cxx_destruct;
+- (double)duration;
+- (unsigned long long)mediaSubtypes;
+- (unsigned long long)pixelHeight;
+- (unsigned long long)pixelWidth;
+- (id)movie;
+- (id)mainFileURL;
+- (id)exif;
+- (id)imageWithPreferredDimension:;
+- (id)imageWithPreferredDimension:orientation:;
+- (float)photoOffsetSeconds;
+- (float)originalPhotoOffsetSeconds;
+- (float)slowmoRate;
+- (id)slomoRange;
+- (BOOL)isMovieResourceLocalAvailable;
+- (id)originalMovie;
+- (id)initWithPHAsset:;
+- (id)streamedMovie;
+- (id)originalMovieSize;
++ (id)assetWithPHAsset:;
+@end

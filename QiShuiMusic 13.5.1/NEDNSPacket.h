@@ -1,0 +1,34 @@
+@interface NEDNSPacket : NSObject
+@property (nonatomic) q identifier;
+@property (nonatomic) NSDate timestamp;
+@property (nonatomic) q messageType;
+@property (nonatomic) q opCode;
+@property (nonatomic) BOOL isAuthoritativeAnswer;
+@property (nonatomic) BOOL isTruncated;
+@property (nonatomic) BOOL isRecursionDesired;
+@property (nonatomic) BOOL isRecursionAvailable;
+@property (nonatomic) q responseCode;
+@property (nonatomic) NSString responseCodeString;
+@property (nonatomic) NSArray queries;
+@property (nonatomic) NSArray answers;
+@property (nonatomic) NSArray authorities;
+@property (nonatomic) NSArray additionalRecords;
+- (long long)messageType;
+- (long long)identifier;
+- (long long)responseCode;
+- (BOOL)isTruncated;
+- (id)queries;
+- (void).cxx_destruct;
+- (id)timestamp;
+- (id)answers;
+- (id)createResponse;
+- (id)initFromData:;
+- (id)responseCodeString;
+- (long long)opCode;
+- (BOOL)isAuthoritativeAnswer;
+- (BOOL)isRecursionDesired;
+- (BOOL)isRecursionAvailable;
+- (id)authorities;
+- (id)additionalRecords;
++ (id)createDataWithQuery:;
+@end

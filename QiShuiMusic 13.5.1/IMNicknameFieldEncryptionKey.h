@@ -1,0 +1,2 @@
+@interface IMNicknameFieldEncryptionKey : IMNicknameEncryptionKey
+@end

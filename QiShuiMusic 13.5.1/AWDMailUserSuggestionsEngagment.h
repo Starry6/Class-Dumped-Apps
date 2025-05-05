@@ -1,0 +1,30 @@
+@interface AWDMailUserSuggestionsEngagment : PBCodable
+@property (nonatomic) BOOL hasTopHitsPresent;
+@property (nonatomic) BOOL topHitsPresent;
+@property (nonatomic) BOOL hasUserSelectedTopHit;
+@property (nonatomic) BOOL userSelectedTopHit;
+@property (nonatomic) BOOL hasSearchTermLength;
+@property (nonatomic) q searchTermLength;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)initWithSearchTermLength:topHitsPresent:userSelectedTopHit:;
+- (void)setTopHitsPresent:;
+- (void)setHasTopHitsPresent:;
+- (BOOL)hasTopHitsPresent;
+- (void)setUserSelectedTopHit:;
+- (void)setHasUserSelectedTopHit:;
+- (BOOL)hasUserSelectedTopHit;
+- (void)setSearchTermLength:;
+- (void)setHasSearchTermLength:;
+- (BOOL)hasSearchTermLength;
+- (BOOL)topHitsPresent;
+- (BOOL)userSelectedTopHit;
+- (long long)searchTermLength;
+@end

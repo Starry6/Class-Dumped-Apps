@@ -1,0 +1,32 @@
+@interface IESECTextWithIconElement : IESECBasicElement
+@property (nonatomic) IESECBackgroundDescribeInfo background;
+@property (nonatomic) IESECImageModel iconImage;
+@property (nonatomic) IESECTextElement content;
+@property (nonatomic) Q iconDirection;
+@property (nonatomic) BOOL halfAlphaAction;
+@property (nonatomic) IESECLinkConfig link;
+@property (nonatomic) double space;
+@property (nonatomic) NSString tag;
+@property (nonatomic) NSArray otherStates;
+- (BOOL)halfAlphaAction;
+- (void)setOtherStates:;
+- (unsigned long long)iconDirection;
+- (id)otherStates;
+- (void)setHalfAlphaAction:;
+- (void)setIconDirection:;
+- (id)link;
+- (id)background;
+- (id)content;
+- (void)setContent:;
+- (id)tag;
+- (void)setBackground:;
+- (void)setLink:;
+- (void)setTag:;
+- (void)setIconImage:;
+- (void).cxx_destruct;
+- (id)iconImage;
+- (double)space;
+- (void)setSpace:;
++ (id)otherStatesJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

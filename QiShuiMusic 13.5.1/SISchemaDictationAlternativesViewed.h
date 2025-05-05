@@ -1,0 +1,35 @@
+@interface SISchemaDictationAlternativesViewed : SISchemaInstrumentationMessage
+@property (nonatomic) NSInteger countOfWordsUnderlined;
+@property (nonatomic) BOOL hasCountOfWordsUnderlined;
+@property (nonatomic) NSInteger countOfAlternativesAvailable;
+@property (nonatomic) BOOL hasCountOfAlternativesAvailable;
+@property (nonatomic) SISchemaLocaleIdentifier alternativesLocale;
+@property (nonatomic) BOOL hasAlternativesLocale;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)setAlternativesLocale:;
+- (void)setCountOfWordsUnderlined:;
+- (void)setCountOfAlternativesAvailable:;
+- (BOOL)hasCountOfAlternativesAvailable;
+- (void)setHasCountOfAlternativesAvailable:;
+- (void)deleteCountOfAlternativesAvailable;
+- (BOOL)hasAlternativesLocale;
+- (void)deleteAlternativesLocale;
+- (int)countOfAlternativesAvailable;
+- (id)alternativesLocale;
+- (void)setHasAlternativesLocale:;
+- (BOOL)hasCountOfWordsUnderlined;
+- (void)setHasCountOfWordsUnderlined:;
+- (void)deleteCountOfWordsUnderlined;
+- (int)countOfWordsUnderlined;
+@end

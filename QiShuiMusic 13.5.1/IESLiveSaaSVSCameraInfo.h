@@ -1,0 +1,32 @@
+@interface IESLiveSaaSVSCameraInfo : BDDynamicMTLModel
+@property (nonatomic) BOOL hasTrack;
+@property (nonatomic) q cameraId;
+@property (nonatomic) NSString cameraIdStr;
+@property (nonatomic) NSString title;
+@property (nonatomic) IESLiveSaaSImage cover;
+@property (nonatomic) IESLiveSaaSImage coverVertical;
+@property (nonatomic) IESLiveSaaSLiveRoomURLModel streamInfo;
+@property (nonatomic) q startTime;
+@property (nonatomic) q endTime;
+@property (nonatomic) q style;
+@property (nonatomic) IESLiveSaaSRoomAuthStatus cameraRoomAuth;
+@property (nonatomic) IESLiveSaaSCameraMatchInfo cameraMatchInfo;
+@property (nonatomic) NSInteger cameraType;
+@property (nonatomic) q groupId;
+@property (nonatomic) IESLiveSaaSImage label;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setHasTrack:;
+- (BOOL)hasTrack;
+- (void)setLabel:;
+- (id)label;
+- (void).cxx_destruct;
++ (id)cameraMatchInfoJSONTransformer;
++ (id)cameraRoomAuthJSONTransformer;
++ (id)coverJSONTransformer;
++ (id)coverVerticalJSONTransformer;
++ (id)streamInfoJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

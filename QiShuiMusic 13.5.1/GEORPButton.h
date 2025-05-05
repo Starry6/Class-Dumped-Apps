@@ -1,0 +1,30 @@
+@interface GEORPButton : PBCodable
+@property (nonatomic) BOOL hasLocalizedText;
+@property (nonatomic) NSString localizedText;
+@property (nonatomic) BOOL hasButtonAction;
+@property (nonatomic) NSInteger buttonAction;
+- (void)readAll:;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (int)buttonAction;
+- (void)setButtonAction:;
+- (BOOL)hasLocalizedText;
+- (id)localizedText;
+- (void)setLocalizedText:;
+- (void)setHasButtonAction:;
+- (BOOL)hasButtonAction;
+- (id)buttonActionAsString:;
+- (int)StringAsButtonAction:;
++ (BOOL)isValid:;
+@end

@@ -1,0 +1,33 @@
+@interface BDUGLuckyDogToastModel : BDUGLuckyJSONModel
+@property (nonatomic) q toastId;
+@property (nonatomic) NSString text;
+@property (nonatomic) Q symbolType;
+@property (nonatomic) q tsShowMs;
+@property (nonatomic) q tsExpireMs;
+@property (nonatomic) q duration;
+@property (nonatomic) NSString toastKey;
+@property (nonatomic) NSString subText;
+@property (nonatomic) NSString picUrl;
+@property (nonatomic) UIImage image;
+- (long long)toastId;
+- (id)subText;
+- (id)picUrl;
+- (void)setPicUrl:;
+- (void)setSubText:;
+- (void)setToastId:;
+- (void)setToastKey:;
+- (void)setTsExpireMs:;
+- (void)setTsShowMs:;
+- (id)toastKey;
+- (long long)tsExpireMs;
+- (long long)tsShowMs;
+- (void)setText:;
+- (void)setImage:;
+- (void)setDuration:;
+- (void).cxx_destruct;
+- (long long)duration;
+- (id)text;
+- (id)image;
+- (unsigned long long)symbolType;
+- (void)setSymbolType:;
+@end

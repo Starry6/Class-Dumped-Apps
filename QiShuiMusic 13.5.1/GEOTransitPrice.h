@@ -1,0 +1,37 @@
+@interface GEOTransitPrice : PBCodable
+@property (nonatomic) BOOL hasAmountInCents;
+@property (nonatomic) NSInteger amountInCents;
+@property (nonatomic) BOOL hasCurrencyCode;
+@property (nonatomic) NSString currencyCode;
+@property (nonatomic) BOOL hasSubunit;
+@property (nonatomic) I subunit;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (id)currencyCode;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setCurrencyCode:;
+- (int)amountInCents;
+- (void)setAmountInCents:;
+- (void)setHasAmountInCents:;
+- (BOOL)hasAmountInCents;
+- (BOOL)hasCurrencyCode;
+- (unsigned int)subunit;
+- (void)setSubunit:;
+- (void)setHasSubunit:;
+- (BOOL)hasSubunit;
++ (BOOL)isValid:;
+@end

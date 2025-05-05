@@ -1,0 +1,38 @@
+@interface IESLivePiper : NSObject
+@property (nonatomic) IESPiper innerBridge;
+@property (nonatomic) BOOL enableAuth;
+@property (nonatomic) NSMutableSet registeredMethods;
+@property (nonatomic) <IESBridgeEngineDelegate> iesBridgeEngineDelegate;
+@property (nonatomic) UIView<IESLiveHybridContainerProtocol> hybridContainer;
+@property (nonatomic) BOOL enableLazyLoad;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setInnerBridge:;
+- (id)hybridContainer;
+- (void)_annieLazyRegisterSessionHandler:method:authType:;
+- (void)_annieRegisterSessionHandler:method:authType:;
+- (BOOL)enableAuth;
+- (BOOL)enableLazyLoad;
+- (id)iesBridgeEngineDelegate;
+- (id)initWithInnerBridge:;
+- (id)initWithInnerBridge:hybridContainer:;
+- (id)innerBridge;
+- (void)invokeEvent:params:;
+- (BOOL)isRegisteredMethod:;
+- (BOOL)jsbLazyLoadEnableForH5:;
+- (void)registerHandlerBlock:forMethod:authType:;
+- (void)registerNewHandlerBlock:forMethod:authType:;
+- (id)registeredMethods;
+- (void)resetPiperEngineDelegate:;
+- (void)setEnableAuth:;
+- (void)setEnableLazyLoad:;
+- (void)setHybridContainer:;
+- (void)setIesBridgeEngineDelegate:;
+- (void)setRegisteredMethods:;
+- (void)dealloc;
+- (unsigned long long)type;
+- (void).cxx_destruct;
++ (id)piperClass;
+@end

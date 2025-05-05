@@ -1,0 +1,2 @@
+@interface AVAudioMixSweepFilterEffectParametersInternal : NSObject
+@end

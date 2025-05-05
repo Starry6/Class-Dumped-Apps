@@ -1,0 +1,33 @@
+@interface CISparseRenderer : CIFilter
+@property (nonatomic) CIImage inputImage;
+@property (nonatomic) CIImage inputMatteImage;
+@property (nonatomic) NSDictionary inputTuningParameters;
+@property (nonatomic) NSNumber inputScale;
+@property (nonatomic) NSNumber inputApertureScaling;
+@property (nonatomic) NSNumber inputDraftMode;
+@property (nonatomic) NSNumber inputAperture;
+- (id)inputScale;
+- (void)setInputScale:;
+- (id)inputImage;
+- (void)setInputImage:;
+- (id)outputImage;
+- (id)inputApertureScaling;
+- (void)setInputApertureScaling:;
+- (id)inputTuningParameters;
+- (void)setInputTuningParameters:;
+- (id)inputMatteImage;
+- (id)inputDraftMode;
+- (void)setInputDraftMode:;
+- (void)setInputMatteImage:;
+- (id)inputAperture;
+- (void)setInputAperture:;
+- (id)_packageParams:extent:image:haveAlpha:;
+- (BOOL)_useD2XRenderer;
+- (id)stepsLUTGenerator;
+- (id)baseVecsLUTGenerator;
+- (id)stepsLUT:;
+- (id)baseVecsLUT:;
+- (id)_lutKernel:alpha:;
+- (id)_kernel:alpha:;
++ (id)customAttributes;
+@end

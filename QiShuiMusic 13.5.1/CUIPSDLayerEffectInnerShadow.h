@@ -1,0 +1,25 @@
+@interface CUIPSDLayerEffectInnerShadow : CUIPSDLayerEffectComponent
+@property (nonatomic) NSInteger blendMode;
+@property (nonatomic) double opacity;
+@property (nonatomic) CUIColor color;
+@property (nonatomic) s angle;
+@property (nonatomic) Q distance;
+@property (nonatomic) Q blurSize;
+- (unsigned long long)distance;
+- (unsigned int)effectType;
+- (void)setOpacity:;
+- (id)init;
+- (void)dealloc;
+- (void)setColor:;
+- (void)setDistance:;
+- (double)opacity;
+- (id)color;
+- (void)setBlendMode:;
+- (int)blendMode;
+- (short)angle;
+- (void)setAngle:;
+- (BOOL)updateLayerEffectPreset:error:;
+- (id)initWithEffectFromPreset:atIndex:;
+- (unsigned long long)blurSize;
+- (void)setBlurSize:;
+@end

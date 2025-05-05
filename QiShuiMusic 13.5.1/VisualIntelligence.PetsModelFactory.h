@@ -1,0 +1,2 @@
+@interface VisualIntelligence.PetsModelFactory : VisualIntelligence.DomainModelRequestFactory
+@end

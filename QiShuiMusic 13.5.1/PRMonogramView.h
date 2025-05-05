@@ -1,0 +1,37 @@
+@interface PRMonogramView : UIView
+@property (nonatomic) BOOL circular;
+@property (nonatomic) PRMonogram monogram;
+@property (nonatomic) BOOL bordered;
+@property (nonatomic) BOOL selected;
+@property (nonatomic) BOOL highlighted;
+@property (nonatomic) BOOL allowsEditing;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)monogram;
+- (BOOL)textFieldShouldReturn:;
+- (void)dealloc;
+- (void)textFieldDidEndEditing:;
+- (void)layoutSubviews;
+- (BOOL)isCircular;
+- (void)setSelected:;
+- (void)_updateCornerRadii;
+- (void)observeValueForKeyPath:ofObject:change:context:;
+- (void)setMonogram:;
+- (BOOL)isSelected;
+- (void)textFieldDidBeginEditing:;
+- (BOOL)highlighted;
+- (id)initWithFrame:;
+- (void)_updateTextLabel;
+- (void)setCircular:;
+- (BOOL)allowsEditing;
+- (void).cxx_destruct;
+- (void)didMoveToWindow;
+- (void)setHighlighted:;
+- (void)setAllowsEditing:;
+- (BOOL)textField:shouldChangeCharactersInRange:replacementString:;
+- (void)setBordered:;
+- (void)textFieldResignFirstResponder;
+- (BOOL)bordered;
+@end

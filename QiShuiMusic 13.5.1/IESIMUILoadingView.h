@@ -1,0 +1,31 @@
+@interface IESIMUILoadingView : UIView
+@property (nonatomic) UIImageView imageView;
+@property (nonatomic) q status;
+@property (nonatomic) double progress;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)animatedImageNames;
+- (id)animatedImages;
+- (void)dismissWithAnimated:;
+- (id)initWithBackground;
+- (id)initWithBackgroundAndDisableUserInteraction;
+- (id)initWithDisableUserInteraction;
+- (void)setupUIWithBackground:;
+- (void)dismiss;
+- (void)setStatus:;
+- (id)init;
+- (void)dealloc;
+- (void)setProgress:;
+- (void)startAnimating;
+- (double)progress;
+- (id)initWithFrame:;
+- (void)stopAnimating;
+- (void).cxx_destruct;
+- (id)imageView;
+- (long long)status;
+- (void)setImageView:;
+- (void)appWillEnterForeground;
+- (void)addObservers;
+@end

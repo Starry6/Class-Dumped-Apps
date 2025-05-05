@@ -1,0 +1,33 @@
+@interface VCVirtualTTYDevice : NSObject
+@property (nonatomic) NSObject<VCMediaStreamDelegate> delegate;
+@property (nonatomic) BOOL isValid;
+@property (nonatomic) NSInteger deviceRole;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)dealloc;
+- (id)start;
+- (void)setIsValid:;
+- (id)setPause:;
+- (void)setDelegate:;
+- (id)stop;
+- (void)unlock;
+- (void)lock;
+- (id)delegate;
+- (BOOL)isValid;
+- (void)didUpdateBasebandCodec:;
+- (void)didServerDie;
+- (int)deviceRole;
+- (void)pushAudioSamples:;
+- (void)didSuspendAudioIO:;
+- (void)didResumeAudioIO:;
+- (void)sendCharacter:;
+- (void)sendText:;
+- (void)pullAudioSamples:;
+- (BOOL)canProcessAudio;
+- (void)setCanProcessAudio:;
+- (void)setDeviceRole:;
+- (BOOL)setStreamConfig:withError:;
+- (id)initWithMode:clientPid:;
+@end

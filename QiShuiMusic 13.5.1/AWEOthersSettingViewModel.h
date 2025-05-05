@@ -1,0 +1,33 @@
+@interface AWEOthersSettingViewModel : AWESettingBaseViewModel
+@property (nonatomic) IESIMUserModel user;
+@property (nonatomic) NSDictionary trackerParam;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)hideMyPostFrom:;
+- (void)unBlock;
+- (BOOL)__hasHidedMyPost;
+- (void)announceAccessibility:delay:;
+- (void)blockWithoutAlert;
+- (id)itemModelWithType:;
+- (void)refreshBlockCell;
+- (id)sectionDataArray;
+- (void)setSectionDataArray:;
+- (void)setTrackerParam:;
+- (void)tapBlockCell;
+- (void)tapConfirmBlockCellFrom:;
+- (void)tapHideMyPostCellFrom:;
+- (void)tapMessageButton;
+- (void)tapMessageCell;
+- (void)tapShareCell:;
+- (void)tapShareNavButton:;
+- (id)trackerParam;
+- (void)unhideMyPostFrom:;
+- (void)setUser:;
+- (void)block;
+- (id)user;
+- (void).cxx_destruct;
+- (BOOL)isBlocked;
+- (void)viewDidLoad;
+@end

@@ -1,0 +1,38 @@
+@interface PKPaletteReturnKeyButton : PKPaletteButton
+@property (nonatomic) PKPaletteReturnKeyButtonContentView contentView;
+@property (nonatomic) PKTextInputLanguageSelectionToken observerToken;
+@property (nonatomic) q returnKeyType;
+@property (nonatomic) q axis;
+- (id)contentView;
+- (void)dealloc;
+- (void)setAxis:;
+- (long long)returnKeyType;
+- (id)intrinsicContentSize;
+- (void)setReturnKeyType:;
+- (void)layoutSubviews;
+- (id)_textColor;
+- (void)_updateLabelText;
+- (id)initWithFrame:;
+- (void)traitCollectionDidChange:;
+- (void)setObserverToken:;
+- (void)_updateImageView;
+- (void)setEnabled:;
+- (void).cxx_destruct;
+- (void)setHighlighted:;
+- (long long)axis;
+- (id)_backgroundColor;
+- (void)setContentView:;
+- (id)observerToken;
+- (double)scalingFactor;
+- (void)_updateUI;
+- (BOOL)_useCompactLayout;
+- (void)setScalingFactor:;
+- (id)_contentViewSize;
+- (id)_regularLayoutBackgroundColor;
+- (id)_returnKeyTintColor;
+- (void)_updateContentViewOrientation;
+- (id)_returnKeyLabelText;
+- (BOOL)_shouldUseBlueReturnKeyColor;
+- (id)_returnKeyImage;
+- (id)_returnKeyImageSymbolConfiguration;
+@end

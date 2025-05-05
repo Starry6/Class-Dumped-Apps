@@ -1,0 +1,38 @@
+@interface IESECGoodsBrandPromise : MTLModel
+@property (nonatomic) NSNumber brandType;
+@property (nonatomic) NSString brandName;
+@property (nonatomic) NSString brandIcon;
+@property (nonatomic) NSString shopPromise;
+@property (nonatomic) NSString shopPromiseTextColor;
+@property (nonatomic) NSString backgroundColor;
+@property (nonatomic) NSString url;
+@property (nonatomic) NSString arrowColor;
+@property (nonatomic) NSString dividerColor;
+@property (nonatomic) IESECURLModel iconStruct;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setShopPromise:;
+- (id)arrowColor;
+- (id)brandIcon;
+- (id)brandType;
+- (id)iconStruct;
+- (void)setArrowColor:;
+- (void)setBrandIcon:;
+- (void)setBrandType:;
+- (void)setIconStruct:;
+- (void)setShopPromiseTextColor:;
+- (id)shopPromise;
+- (id)shopPromiseTextColor;
+- (id)url;
+- (void)setBackgroundColor:;
+- (id)backgroundColor;
+- (void)setUrl:;
+- (void)setBrandName:;
+- (id)brandName;
+- (void).cxx_destruct;
+- (id)dividerColor;
+- (void)setDividerColor:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

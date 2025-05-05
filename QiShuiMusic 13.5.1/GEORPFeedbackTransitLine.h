@@ -1,0 +1,34 @@
+@interface GEORPFeedbackTransitLine : PBCodable
+@property (nonatomic) BOOL hasTransitLineMuid;
+@property (nonatomic) NSString transitLineMuid;
+@property (nonatomic) BOOL hasTransitLineName;
+@property (nonatomic) NSString transitLineName;
+@property (nonatomic) BOOL hasTransitSystemName;
+@property (nonatomic) NSString transitSystemName;
+- (void)readAll:;
+- (id)init;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasTransitLineMuid;
+- (id)transitLineMuid;
+- (void)setTransitLineMuid:;
+- (BOOL)hasTransitSystemName;
+- (id)transitSystemName;
+- (void)setTransitSystemName:;
+- (BOOL)hasTransitLineName;
+- (id)transitLineName;
+- (void)setTransitLineName:;
++ (BOOL)isValid:;
+@end

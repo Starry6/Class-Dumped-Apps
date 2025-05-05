@@ -1,0 +1,24 @@
+@interface INDeleteEventIntent : INIntent
+@property (nonatomic) NSString targetEventIdentifier;
+@property (nonatomic) NSNumber deleteAllOccurrences;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)_dictionaryRepresentation;
+- (void)_setMetadata:;
+- (id)domain;
+- (void)setDomain:;
+- (id)_metadata;
+- (id)_typedBackingStore;
+- (void)_redactForMissingPrivacyEntitlementOptions:containingAppBundleId:;
+- (id)verb;
+- (void)setVerb:;
+- (id)parametersByName;
+- (void)setParametersByName:;
+- (id)targetEventIdentifier;
+- (void)setTargetEventIdentifier:;
+- (id)deleteAllOccurrences;
+- (void)setDeleteAllOccurrences:;
+- (id)initWithTargetEventIdentifier:deleteAllOccurrences:;
+@end

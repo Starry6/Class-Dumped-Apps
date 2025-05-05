@@ -1,0 +1,35 @@
+@interface CNSharingProfileOnboardingPosePickerController : OBWelcomeController
+@property (nonatomic) <AVTAvatarRecord> avatarRecord;
+@property (nonatomic) CNPhotoPickerVariantsManager variantsManager;
+@property (nonatomic) CNPhotoPickerVariantListController variantListController;
+@property (nonatomic) OBLinkTrayButton setupLaterButton;
+@property (nonatomic) OBBoldTrayButton backButton;
+@property (nonatomic) OBBoldTrayButton nextButton;
+@property (nonatomic) NSLayoutConstraint heightConstraint;
+@property (nonatomic) <CNSharingProfileOnboardingPosePickerControllerDelegate> delegate;
+- (void)setHeightConstraint:;
+- (id)heightConstraint;
+- (void)setDelegate:;
+- (id)backButton;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)viewDidLayoutSubviews;
+- (void)setBackButton:;
+- (void)viewDidLoad;
+- (id)avatarRecord;
+- (void)setAvatarRecord:;
+- (void)didTapSetupLater:;
+- (void)didTapBack:;
+- (void)didTapContinue:;
+- (void)photoPickerVariantListController:didSelectProviderItem:;
+- (void)photoPickerVariantListControllerDidCancel:;
+- (id)initWithAvatarRecord:variantsManager:;
+- (id)variantsManager;
+- (void)setVariantsManager:;
+- (id)variantListController;
+- (void)setVariantListController:;
+- (id)setupLaterButton;
+- (void)setSetupLaterButton:;
+- (id)nextButton;
+- (void)setNextButton:;
+@end

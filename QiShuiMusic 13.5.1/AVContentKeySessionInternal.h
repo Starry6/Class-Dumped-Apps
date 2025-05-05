@@ -1,0 +1,2 @@
+@interface AVContentKeySessionInternal : NSObject
+@end

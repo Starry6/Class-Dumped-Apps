@@ -1,0 +1,2 @@
+@interface WFSensitiveSmartPromptIntent : WFSmartPromptIntent
+@end

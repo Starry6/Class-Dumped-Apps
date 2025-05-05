@@ -1,0 +1,38 @@
+@interface SCCEventTracker : NSObject
+@property (nonatomic) NSMutableDictionary eventRecord;
+@property (nonatomic) double startTime;
+@property (nonatomic) double csStartTime;
+@property (nonatomic) double userRequestTime;
+@property (nonatomic) NSMutableDictionary sccResult;
+- (void)setCsStartTime:;
+- (void)doReset;
+- (void)setEventRecord:;
+- (double)userRequestTime;
+- (double)csStartTime;
+- (double)didCSEnd;
+- (void)didCSStart;
+- (void)didDiscardCSResult;
+- (void)didHitAllowList:;
+- (void)didHitBlockList:;
+- (void)didHitCache:;
+- (void)didReceiveCSError:;
+- (void)didReceiveCSResult:lable:backEndCode:logID:;
+- (void)didReceiveTTNetCode:;
+- (void)didStart:url:;
+- (void)didSwitchOff:;
+- (void)didUserRequestStart;
+- (void)didUserRequestSuccess:reloadCount:failedReason:;
+- (void)didUserSkip;
+- (id)eventRecord;
+- (id)sccResult;
+- (void)setSccResult:;
+- (void)setUserRequestTime:;
+- (id)init;
+- (void)dealloc;
+- (void)setStartTime:;
+- (double)startTime;
+- (void).cxx_destruct;
+- (void)reset;
+- (void)report;
++ (void)report:params:;
+@end

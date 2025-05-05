@@ -1,0 +1,36 @@
+@interface GEOLogMsgStatePairedDevice : PBCodable
+@property (nonatomic) BOOL hasType;
+@property (nonatomic) NSInteger type;
+@property (nonatomic) BOOL hasIsConnected;
+@property (nonatomic) BOOL isConnected;
+@property (nonatomic) BOOL hasPairedDeviceIdentifier;
+@property (nonatomic) GEOLogMsgStateDeviceIdentifier pairedDeviceIdentifier;
+- (void)readAll:;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (int)StringAsType:;
+- (id)initWithDictionary:;
+- (void)setType:;
+- (void)writeTo:;
+- (void)setIsConnected:;
+- (void)setHasType:;
+- (BOOL)hasType;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (id)typeAsString:;
+- (void)setHasIsConnected:;
+- (void)mergeFrom:;
+- (int)type;
+- (void).cxx_destruct;
+- (BOOL)isConnected;
+- (BOOL)readFrom:;
+- (id)description;
+- (BOOL)hasIsConnected;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasPairedDeviceIdentifier;
+- (id)pairedDeviceIdentifier;
+- (void)setPairedDeviceIdentifier:;
++ (BOOL)isValid:;
+@end

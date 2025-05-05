@@ -1,0 +1,36 @@
+@interface WFRemoteImageDrawingContext : NSObject
+@property (nonatomic) Q bitsPerComponent;
+@property (nonatomic) Q numberOfComponents;
+@property (nonatomic) I bitmapInfo;
+@property (nonatomic) double screenScale;
+@property (nonatomic) Q sizePerImage;
+@property (nonatomic) ^v buffer;
+@property (nonatomic) Q bufferSize;
+@property (nonatomic) Q imageCount;
+@property (nonatomic) double scale;
+@property (nonatomic) {CGSize=dd} singleImageSize;
+@property (nonatomic) ^{CGColorSpace=} colorSpace;
+@property (nonatomic) BOOL drawAlphaOnly;
+- (double)screenScale;
+- (void)dealloc;
+- (id)buffer;
+- (id)colorSpace;
+- (unsigned long long)numberOfComponents;
+- (unsigned long long)imageCount;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (double)scale;
+- (unsigned long long)bufferSize;
+- (unsigned long long)bitsPerComponent;
+- (id)imageAtIndex:;
+- (unsigned int)bitmapInfo;
+- (id)initWithAlphaOnlyImageCount:singleImageSize:scale:;
+- (id)initWithImageCount:singleImageSize:scale:colorSpace:;
+- (id)initWithImageCount:singleImageSize:scale:colorSpace:buffer:bufferSize:drawAlphaOnly:;
+- (unsigned long long)sizePerImage;
+- (BOOL)allocateSharedBuffer;
+- (void)accessBitmapContextForImageAtIndex:accessBlock:;
+- (id)singleImageSize;
+- (BOOL)drawAlphaOnly;
++ (BOOL)supportsSecureCoding;
+@end

@@ -1,0 +1,33 @@
+@interface PPEventNameRecordLoadingDelegate : PPRecordLoadingDelegate
+@property (nonatomic) @? eventNameRecordsSetup;
+@property (nonatomic) @? eventNameRecordsHandler;
+@property (nonatomic) @? eventNameRecordsCompletion;
+@property (nonatomic) @? recentEventNameRecordsSetup;
+@property (nonatomic) @? recentEventNameRecordsHandler;
+@property (nonatomic) @? recentEventNameRecordsCompletion;
+@property (nonatomic) @? resetEventNameRecordData;
+- (unsigned char)recentRecordLoadingSetup;
+- (id)initWithName:;
+- (void)recordLoadingCompletion;
+- (unsigned char)recordLoadingSetup;
+- (void).cxx_destruct;
+- (unsigned char)recordLoadingHandler:;
+- (id)description;
+- (void)recentRecordLoadingCompletion;
+- (void)resetRecordData;
+- (unsigned char)recentRecordLoadingHandler:;
+- (id)eventNameRecordsSetup;
+- (void)setEventNameRecordsSetup:;
+- (id)eventNameRecordsHandler;
+- (void)setEventNameRecordsHandler:;
+- (id)eventNameRecordsCompletion;
+- (void)setEventNameRecordsCompletion:;
+- (id)recentEventNameRecordsSetup;
+- (void)setRecentEventNameRecordsSetup:;
+- (id)recentEventNameRecordsHandler;
+- (void)setRecentEventNameRecordsHandler:;
+- (id)recentEventNameRecordsCompletion;
+- (void)setRecentEventNameRecordsCompletion:;
+- (id)resetEventNameRecordData;
+- (void)setResetEventNameRecordData:;
+@end

@@ -1,0 +1,38 @@
+@interface MILaunchServicesDatabaseGatherer : NSObject
+@property (nonatomic) NSMutableSet coreServices;
+@property (nonatomic) NSMutableSet systemApps;
+@property (nonatomic) NSMutableSet userApps;
+@property (nonatomic) NSMutableSet internalApps;
+@property (nonatomic) NSMutableSet appExtensions;
+@property (nonatomic) NSMutableSet frameworks;
+@property (nonatomic) NSMutableSet systemAppPlaceholders;
+@property (nonatomic) @? enumerator;
+@property (nonatomic) Q gatherOptions;
+@property (nonatomic) BOOL shouldUpdateAppExtensionDataContainersWithParentID;
+@property (nonatomic) NSString personaUniqueString;
+- (id)personaUniqueString;
+- (id)enumerator;
+- (void).cxx_destruct;
+- (void)errorOccurred:;
+- (BOOL)scanExecutableBundle:inContainer:withError:;
+- (BOOL)scanAppExtensionsInFrameworkBundle:withError:;
+- (id)initWithOptions:personaUniqueString:enumerator:;
+- (id)initWithOptions:enumerator:;
+- (BOOL)_scanAppExtensionsInBundle:inBundleContainer:withError:;
+- (BOOL)_markDriverKitExtensionsExecutableInBundle:withError:;
+- (id)_setForEntry:;
+- (BOOL)_scanBundle:inContainer:addingToBundleSet:enumeratingEntry:withError:;
+- (BOOL)performGatherWithError:;
+- (id)coreServices;
+- (id)systemApps;
+- (id)userApps;
+- (id)internalApps;
+- (id)appExtensions;
+- (id)frameworks;
+- (id)systemAppPlaceholders;
+- (unsigned long long)gatherOptions;
+- (BOOL)shouldUpdateAppExtensionDataContainersWithParentID;
++ (BOOL)enumerateAppExtensionsInBundle:updatingAppExtensionParentID:ensureAppExtensionsAreExecutable:installProfiles:error:enumerator:;
++ (id)entryForBundle:inContainer:withError:;
++ (id)fetchInfoForBundle:inContainer:withError:;
+@end

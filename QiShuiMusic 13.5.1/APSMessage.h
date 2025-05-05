@@ -1,0 +1,30 @@
+@interface APSMessage : NSObject
+@property (nonatomic) NSString topic;
+@property (nonatomic) NSDictionary userInfo;
+@property (nonatomic) Q identifier;
+@property (nonatomic) NSString correlationIdentifier;
+@property (nonatomic) Q sendRTT;
+- (id)instanceObjectForKey:;
+- (void)setObject:forKey:;
+- (void)setTopic:;
+- (id)userInfo;
+- (id)initWithTopic:userInfo:;
+- (id)initWithDictionary:;
+- (unsigned long long)identifier;
+- (id)correlationIdentifier;
+- (id)initWithCoder:;
+- (void)setCorrelationIdentifier:;
+- (void)encodeWithCoder:;
+- (void)setUserInfo:;
+- (id)objectForKey:;
+- (void).cxx_destruct;
+- (void)setGuid:;
+- (void)setInstanceObject:forKey:;
+- (void)setSendRTT:;
+- (id)guid;
+- (id)topic;
+- (id)dictionaryRepresentation;
+- (unsigned long long)sendRTT;
+- (void)setIdentifier:;
+- (id)initWithDictionary:xpcMessage:;
+@end

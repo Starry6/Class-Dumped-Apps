@@ -1,0 +1,31 @@
+@interface AVMDLPreloadTaskSpec : AVMDLTaskSpec
+@property (nonatomic) q priorityLevel;
+@property (nonatomic) Q preloadOffset;
+@property (nonatomic) Q preloadSize;
+@property (nonatomic) Q headerSize;
+@property (nonatomic) Q preloadTimestamp;
+@property (nonatomic) Q preloadDurationMilliSecond;
+@property (nonatomic) NSString tag;
+@property (nonatomic) NSString subtag;
+@property (nonatomic) NSString groupId;
+- (void)setPreloadSize:;
+- (unsigned long long)preloadDurationMilliSecond;
+- (unsigned long long)preloadOffset;
+- (unsigned long long)preloadSize;
+- (unsigned long long)preloadTimestamp;
+- (void)setPreloadDurationMilliSecond:;
+- (void)setPreloadOffset:;
+- (void)setPreloadTimestamp:;
+- (void)setSubtag:;
+- (id)subtag;
+- (id)tag;
+- (id)init;
+- (void)setTag:;
+- (id)groupId;
+- (void).cxx_destruct;
+- (void)setGroupId:;
+- (void)setPriorityLevel:;
+- (long long)priorityLevel;
+- (unsigned long long)headerSize;
+- (void)setHeaderSize:;
+@end

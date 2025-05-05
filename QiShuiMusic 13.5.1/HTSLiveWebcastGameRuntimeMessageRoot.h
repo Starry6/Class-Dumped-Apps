@@ -1,0 +1,2 @@
+@interface HTSLiveWebcastGameRuntimeMessageRoot : GPBRootObject
+@end

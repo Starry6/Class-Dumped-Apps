@@ -1,0 +1,38 @@
+@interface HMDWatchdogProtectManager : NSObject
+@property (nonatomic) NSMutableDictionary localTypeList;
+@property (nonatomic) <HMDWatchdogProtectDetectProtocol> delegate;
+@property (nonatomic) double timeoutInterval;
+@property (nonatomic) double launchThreshold;
+@property (nonatomic) BOOL UIPasteboardProtect;
+@property (nonatomic) BOOL UIApplicationProtect;
+@property (nonatomic) BOOL YYCacheProtect;
+@property (nonatomic) BOOL NSUserDefaultProtect;
+@property (nonatomic) NSString currentProtectedMethodDescription;
+- (BOOL)NSUserDefaultProtect;
+- (double)launchThreshold;
+- (BOOL)UIApplicationProtect;
+- (BOOL)UIPasteboardProtect;
+- (BOOL)YYCacheProtect;
+- (id)currentProtectedMethodDescription;
+- (id)getLocalTypes;
+- (id)localTypeList;
+- (void)processCapture:type:;
+- (void)setDynamicProtectOnMainThread:onAnyThread:;
+- (void)setLaunchThreshold:;
+- (void)setLocalTypeList:;
+- (void)setNSUserDefaultProtect:;
+- (void)setUIApplicationProtect:;
+- (void)setUIPasteboardProtect:;
+- (void)setYYCacheProtect:;
+- (void)trackProtectedMethods;
+- (void)turnOnYYCacheProtectIgnorCloudSetting:;
+- (void)turnOnYYCacheProtectIgnoreCloudSetting:;
+- (id)init;
+- (void)setDelegate:;
+- (double)timeoutInterval;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)typeString:;
+- (void)setTimeoutInterval:;
++ (id)sharedInstance;
+@end

@@ -1,0 +1,21 @@
+@interface ABPKImagePreProcessing : NSObject
+- (void)dealloc;
+- (void).cxx_destruct;
+- (id)initWithPreProcessingParams:;
+- (int)preprocessData:outputBuffer:;
+- (int)preprocessGrayscaleImage:outputBuffer:;
+- (int)preprocessColorImage:outputBuffer:;
+- (void)logProfilingDetails;
+- (void)_startScaleSignpost;
+- (void)_endScaleSignpost;
+- (void)_startARGBToRGBASignpost;
+- (void)_endARGBToRGBASignpost;
+- (void)_startPaddingSignpost;
+- (void)_endPaddingSignpost;
+- (void)_startYCbCrToARGBSignpost;
+- (void)_endYCbCrToARGBSignpost;
+- (void)_startARGBToBGRASignpost;
+- (void)_endARGBToBGRASignpost;
+- (void)_startGrayToBGRASignpost;
+- (void)_endGrayToBGRASignpost;
+@end

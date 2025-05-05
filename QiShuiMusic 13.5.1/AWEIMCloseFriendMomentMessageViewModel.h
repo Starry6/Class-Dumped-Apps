@@ -1,0 +1,30 @@
+@interface AWEIMCloseFriendMomentMessageViewModel : AWEIMMessageViewModel
+@property (nonatomic) AWEIMCloseFriendMomentMessage realMessage;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setRealMessage:;
+- (void)configAuthorIconImageView:;
+- (void)configAuthorNameLabel:;
+- (void)configCoverImageView:;
+- (void)configDescLabel:;
+- (void)configDescLabelBackgroundView:;
+- (id)momentContent;
+- (BOOL)needRefreshExpireTime;
+- (void)p_addLocalExt:;
+- (id)realMessage;
+- (void)setupWithMessage:;
+- (BOOL)shouldShowMask;
+- (id)unavailableString;
+- (id)init;
+- (id)userModel;
+- (void).cxx_destruct;
+- (id)contentSize;
+- (id)menuItems;
+- (BOOL)contentIsAvailable;
+- (BOOL)shouldShowPlayIcon;
++ (BOOL)contentIsAvailableWithMessage:;
++ (id)contentSizeWithMessage:;
++ (id)unavailableStringWithMessage:;
+@end

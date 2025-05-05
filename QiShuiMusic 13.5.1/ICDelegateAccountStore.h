@@ -1,0 +1,32 @@
+@interface ICDelegateAccountStore : NSObject
+@property (nonatomic) NSString databasePath;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)databasePath;
+- (void)removeTokensExpiringBeforeDate:completionHandler:;
+- (void)addDelegationUUIDs:forUserIdentity:completionHandler:;
+- (id)initSingleWriterWithOptions:error:;
+- (void)removeAllTokensWithCompletionHandler:;
+- (void)_writeXPCUsingBlock:;
+- (void)removeTokenForUserIdentity:completionHandler:;
+- (void)_openWithXPCWriter:completionHandler:;
+- (void)close;
+- (void)setToken:forUserIdentity:completionHandler:;
+- (void)removeDelegationUUIDs:forUserIdentity:completionHandler:;
+- (void)readUsingBlock:;
+- (void)setIdentityProperties:forUserIdentity:completionHandler:;
+- (id)_popConnection;
+- (BOOL)connectionNeedsResetForCorruption:;
+- (void)_recycleConnection:;
+- (void).cxx_destruct;
+- (id)_initWithValidatedOptions:;
+- (BOOL)_resetCorruptionUsingSQL;
+- (void)_writeUsingBlock:;
+- (void)_writeSQLUsingBlock:;
+- (void)_resetCorruptionUsingXPC;
+- (void)_postDidChangeNotification;
+- (void)removeIdentityPropertiesForUserIdentity:completionHandler:;
++ (void)openWithOptions:completionHandler:;
+@end

@@ -1,0 +1,34 @@
+@interface IESLiveVSPhotoPickerMananger : NSObject
+@property (nonatomic) UIImage qrCode;
+@property (nonatomic) <IESLiveRoomServiceAdapter> room;
+@property (nonatomic) NSArray phAssets;
+@property (nonatomic) NSMutableArray images;
+@property (nonatomic) UIView saveContainer;
+- (void)loadLocalPhotos;
+- (void)checkAuthorizationAndFetchAssets;
+- (id)createBottomView;
+- (id)createListView:title:;
+- (id)createSaveViewWith:;
+- (void)fetchQrCode;
+- (id)getAllLocalPhotos;
+- (id)getPhotosAssetInCollection:;
+- (id)localImages;
+- (id)phAssets;
+- (void)photoPathAtIndex:completion:;
+- (id)saveImage:;
+- (void)savePhotoToAlbum:view:;
+- (void)setPhAssets:;
+- (void)setSaveContainer:;
+- (id)toSaveView:;
+- (id)transAssetToImage:;
+- (id)images;
+- (void).cxx_destruct;
+- (void)setImages:;
+- (id)room;
+- (void)setRoom:;
+- (id)saveContainer;
+- (id)initWithRoom:;
+- (void)image:didFinishSavingWithError:contextInfo:;
+- (id)qrCode;
+- (void)setQrCode:;
+@end

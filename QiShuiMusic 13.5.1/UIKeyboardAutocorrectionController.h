@@ -1,0 +1,32 @@
+@interface UIKeyboardAutocorrectionController : NSObject
+@property (nonatomic) TIKeyboardCandidate autocorrection;
+@property (nonatomic) TIAutocorrectionList autocorrectionList;
+@property (nonatomic) TIAutocorrectionList textSuggestionList;
+@property (nonatomic) BOOL requestedAutocorrection;
+@property (nonatomic) Q maximumNumberOfCandidates;
+@property (nonatomic) BOOL hasActiveObservers;
+- (void)setAutocorrectionList:;
+- (id)init;
+- (BOOL)requestedAutocorrection;
+- (BOOL)hasAutocorrection;
+- (void)setMaximumNumberOfCandidates:;
+- (void)clearAutofillAndTextSuggestions;
+- (void)updateAfterShiftStateChange;
+- (void)requestAutocorrectionWithExecutionContext:;
+- (void)clearAutocorrectionAndNotifyObservers:;
+- (void)setNeedsAutocorrection;
+- (BOOL)hasContinuousPathConversions;
+- (void)addAutocorrectionObserver:;
+- (id)autocorrection;
+- (id)textSuggestionList;
+- (id)autocorrectionList;
+- (BOOL)hasTextSuggestionCandidates;
+- (BOOL)hasAutofillCandidates;
+- (void)removeAutocorrectionObserver:;
+- (void).cxx_destruct;
+- (void)setTextSuggestionList:;
+- (BOOL)hasActiveObservers;
+- (unsigned long long)maximumNumberOfCandidates;
+- (BOOL)hasProactiveCandidates;
+- (void)clearAutocorrection;
+@end

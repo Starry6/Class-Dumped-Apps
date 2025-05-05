@@ -1,0 +1,30 @@
+@interface TRILogTime : PBCodable
+@property (nonatomic) BOOL hasSecondsSince1970;
+@property (nonatomic) Q secondsSince1970;
+@property (nonatomic) BOOL hasSecondsFromUtc;
+@property (nonatomic) NSInteger secondsFromUtc;
+@property (nonatomic) BOOL hasMinutesDstOffset;
+@property (nonatomic) NSInteger minutesDstOffset;
+- (void)setMinutesDstOffset:;
+- (void)writeTo:;
+- (void)setSecondsFromUtc:;
+- (unsigned long long)hash;
+- (BOOL)hasSecondsFromUtc;
+- (int)secondsFromUtc;
+- (void)copyTo:;
+- (int)minutesDstOffset;
+- (void)setHasSecondsFromUtc:;
+- (void)mergeFrom:;
+- (BOOL)hasSecondsSince1970;
+- (void)setHasSecondsSince1970:;
+- (BOOL)hasMinutesDstOffset;
+- (BOOL)readFrom:;
+- (unsigned long long)secondsSince1970;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (void)setHasMinutesDstOffset:;
+- (void)setSecondsSince1970:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
++ (id)logTimeFromDate:;
+@end

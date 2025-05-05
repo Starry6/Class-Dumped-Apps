@@ -1,0 +1,30 @@
+@interface PLDiscretionaryInterval : NSObject
+@property (nonatomic) NSDate originalStartDate;
+@property (nonatomic) NSDate currentStartDate;
+@property (nonatomic) NSDate endDate;
+@property (nonatomic) PLCPUEnergySnapshot cpuEnergySnapshot;
+@property (nonatomic) PLNetworkUsageSnapshot networkEnergySnapshot;
+@property (nonatomic) double startCount;
+@property (nonatomic) double openCount;
+- (void)setCurrentStartDate:;
+- (BOOL)isClosed;
+- (void)setOriginalStartDate:;
+- (double)openCount;
+- (id)currentStartDate;
+- (void)setNetworkEnergySnapshot:;
+- (BOOL)shouldClose;
+- (id)networkEnergySnapshot;
+- (id)cpuEnergySnapshot;
+- (void)setOpenCount:;
+- (void)setEndDate:;
+- (id)originalStartDate;
+- (id)endDate;
+- (void).cxx_destruct;
+- (void)setStartCount:;
+- (id)description;
+- (double)startCount;
+- (void)closeInterval;
+- (void)setCpuEnergySnapshot:;
+- (id)initWithIdentifier:andInfo:andSnapshottingEnabled:andMockData:;
+- (double)checkOpenIntervalDuration:;
+@end

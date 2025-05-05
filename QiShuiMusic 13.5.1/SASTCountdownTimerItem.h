@@ -1,0 +1,31 @@
+@interface SASTCountdownTimerItem : AceObject
+@property (nonatomic) <SASTTemplateAction> action;
+@property (nonatomic) q actionDelayInSeconds;
+@property (nonatomic) SAUIColor bodyBackgroundColor;
+@property (nonatomic) SAUIColor countdownTextColor;
+@property (nonatomic) SAUIColor headerBackgroundColor;
+@property (nonatomic) NSString headerText;
+@property (nonatomic) SAUIColor headerTextColor;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)headerText;
+- (id)groupIdentifier;
+- (id)action;
+- (id)headerBackgroundColor;
+- (void)setAction:;
+- (id)encodedClassName;
+- (void)setHeaderBackgroundColor:;
+- (void)setHeaderTextColor:;
+- (id)headerTextColor;
+- (void)setHeaderText:;
+- (long long)actionDelayInSeconds;
+- (void)setActionDelayInSeconds:;
+- (id)bodyBackgroundColor;
+- (void)setBodyBackgroundColor:;
+- (id)countdownTextColor;
+- (void)setCountdownTextColor:;
++ (id)countdownTimerItem;
++ (id)countdownTimerItemWithDictionary:context:;
+@end

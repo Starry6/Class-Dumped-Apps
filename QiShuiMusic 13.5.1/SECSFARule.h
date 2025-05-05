@@ -1,0 +1,38 @@
+@interface SECSFARule : PBCodable
+@property (nonatomic) BOOL hasEventType;
+@property (nonatomic) NSString eventType;
+@property (nonatomic) BOOL hasMatch;
+@property (nonatomic) NSData match;
+@property (nonatomic) BOOL hasAction;
+@property (nonatomic) SECSFAAction action;
+@property (nonatomic) BOOL hasRepeatAfterSeconds;
+@property (nonatomic) q repeatAfterSeconds;
+@property (nonatomic) BOOL hasProcess;
+@property (nonatomic) NSString process;
+- (BOOL)hasProcess;
+- (BOOL)hasMatch;
+- (void)writeTo:;
+- (id)action;
+- (id)eventType;
+- (void)setEventType:;
+- (unsigned long long)hash;
+- (void)setProcess:;
+- (void)setAction:;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)match;
+- (id)process;
+- (void)setMatch:;
+- (void).cxx_destruct;
+- (BOOL)hasEventType;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasAction;
+- (void)setRepeatAfterSeconds:;
+- (void)setHasRepeatAfterSeconds:;
+- (BOOL)hasRepeatAfterSeconds;
+- (long long)repeatAfterSeconds;
+@end

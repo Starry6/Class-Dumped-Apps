@@ -1,0 +1,37 @@
+@interface BDASplashBaseVideoView : UIView
+@property (nonatomic) TTVideoEngine engine;
+@property (nonatomic) BOOL isPrepared;
+@property (nonatomic) <BDASplashVideoViewDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)addNotifications;
+- (void)applyGreyThemeWithImage:;
+- (void)setupBaseVideoEngine;
+- (void)setupVideoEngineWithVideoLocalURL:secretKey:;
+- (void)setupVideoEngineWithVideoRemoteURLs:secretKey:;
+- (void)videoEngine:loadStateDidChanged:;
+- (void)videoEngineCloseAysncFinish:;
+- (void)videoEngineDidFinish:error:;
+- (void)videoEngineDidFinish:videoStatusException:;
+- (void)videoEngineReadyToDisPlay:;
+- (void)videoEngineUserStopped:;
+- (void)didBecomeActive;
+- (id)engine;
+- (void)setEngine:;
+- (void)willResignActive;
+- (BOOL)isPlaying;
+- (void)dealloc;
+- (void)play;
+- (void)layoutSubviews;
+- (BOOL)isPrepared;
+- (void)setDelegate:;
+- (void)stop;
+- (id)delegate;
+- (void).cxx_destruct;
+- (double)currentTime;
+- (void)pause;
+- (double)duration;
+- (void)setIsPrepared:;
+@end

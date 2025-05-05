@@ -1,0 +1,33 @@
+@interface MTLCommandQueueDescriptorInternal : MTLCommandQueueDescriptor
+@property (nonatomic) BOOL isOpenGLQueue;
+@property (nonatomic) BOOL disableIOFencing;
+@property (nonatomic) BOOL enableLowLatencySignalSharedEvent;
+@property (nonatomic) BOOL enableLowLatencyWaitSharedEvent;
+- (BOOL)disableCrossQueueHazardTracking;
+- (void)setCompletionQueue:;
+- (id)completionQueue;
+- (id)init;
+- (id)formattedDescription:;
+- (BOOL)enableLowLatencySignalSharedEvent;
+- (BOOL)disableIOFencing;
+- (void)setDevicePartition:;
+- (BOOL)commitSynchronously;
+- (unsigned long long)qosLevel;
+- (BOOL)isOpenGLQueue;
+- (void)setEnableLowLatencySignalSharedEvent:;
+- (void)setDisableAsyncCompletionDispatch:;
+- (void)setMaxCommandBufferCount:;
+- (unsigned long long)devicePartition;
+- (void)setDisableIOFencing:;
+- (void)setDisableCrossQueueHazardTracking:;
+- (void)setIsOpenGLQueue:;
+- (BOOL)disableAsyncCompletionDispatch;
+- (void)setCommitSynchronously:;
+- (void)setEnableLowLatencyWaitSharedEvent:;
+- (void)setCommitQueue:;
+- (BOOL)enableLowLatencyWaitSharedEvent;
+- (id)description;
+- (unsigned long long)maxCommandBufferCount;
+- (id)commitQueue;
+- (void)setQosLevel:;
+@end

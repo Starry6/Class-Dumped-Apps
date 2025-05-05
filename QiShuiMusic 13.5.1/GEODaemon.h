@@ -1,0 +1,30 @@
+@interface GEODaemon : NSObject
+@property (nonatomic) NSObject<OS_dispatch_queue> serverQueue;
+@property (nonatomic) NSSet peers;
+@property (nonatomic) BOOL shouldExitOnShutdown;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)_localeChanged:;
+- (id)serverQueue;
+- (void)shutdown;
+- (void)dealloc;
+- (BOOL)shouldExitOnShutdown;
+- (id)startServerClassIfNecessary:;
+- (void)start;
+- (void)addServerClass:;
+- (id)initPrimaryDaemon;
+- (void)peerDidDisconnect:;
+- (id)_createPeerForConnection:;
+- (id)initWithPort:createXPCListenerBlock:;
+- (void).cxx_destruct;
+- (void)peerDidConnect:;
+- (void)addServer:;
+- (id)description;
+- (id)captureStatePlistWithHints:;
+- (void)_shutdown:;
+- (void)shutdown:;
+- (id)peers;
+- (void)_handleNewConnection:;
+@end

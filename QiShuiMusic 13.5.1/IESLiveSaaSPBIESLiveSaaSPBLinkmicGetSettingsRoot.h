@@ -1,0 +1,2 @@
+@interface IESLiveSaaSPBIESLiveSaaSPBLinkmicGetSettingsRoot : GPBRootObject
+@end

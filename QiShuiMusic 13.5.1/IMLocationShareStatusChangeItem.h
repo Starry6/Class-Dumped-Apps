@@ -1,0 +1,34 @@
+@interface IMLocationShareStatusChangeItem : IMItem
+@property (nonatomic) q status;
+@property (nonatomic) q direction;
+@property (nonatomic) BOOL actionable;
+@property (nonatomic) BOOL expired;
+@property (nonatomic) NSString otherHandle;
+@property (nonatomic) NSString otherUnformattedID;
+@property (nonatomic) NSString otherCountryCode;
+- (BOOL)_hasMessageChatItem;
+- (id)_newChatItems;
+- (void)setStatus:;
+- (long long)direction;
+- (void)setDirection:;
+- (void)dealloc;
+- (void)setExpired:;
+- (BOOL)expired;
+- (id)initWithDictionary:;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (long long)status;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setOtherHandle:;
+- (id)otherHandle;
+- (id)copyDictionaryRepresentation;
+- (BOOL)isLastMessageCandidate;
+- (id)otherCountryCode;
+- (void)setOtherCountryCode:;
+- (id)otherUnformattedID;
+- (void)setOtherUnformattedID:;
+- (BOOL)actionable;
+- (void)setActionable:;
++ (BOOL)supportsSecureCoding;
+@end

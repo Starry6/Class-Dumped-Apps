@@ -1,0 +1,36 @@
+@interface IESLiveInteractionTrackerCommonContextImpl : IESLiveInteractionTrackerParamsModel
+@property (nonatomic) NSString functionType;
+@property (nonatomic) NSString functionType2;
+@property (nonatomic) NSString layoutType;
+@property (nonatomic) NSArray playModes;
+@property (nonatomic) NSString seatFitStatus;
+@property (nonatomic) BOOL isFromAudienceLinkmic;
+@property (nonatomic) NSString fromUserId;
+@property (nonatomic) NSString fromUserType;
+@property (nonatomic) q enlargeOpenFrom;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)enlargeOpenFrom;
+- (id)fromUserId;
+- (id)fromUserType;
+- (id)functionType2;
+- (BOOL)isFromAudienceLinkmic;
+- (id)playModes;
+- (id)seatFitStatus;
+- (void)setEnlargeOpenFrom:;
+- (void)setFromUserId:;
+- (void)setFromUserType:;
+- (void)setFunctionType2:;
+- (void)setIsFromAudienceLinkmic:;
+- (void)setPlayModes:;
+- (void)setSeatFitStatus:;
+- (id)layoutType;
+- (void)setLayoutType:;
+- (void).cxx_destruct;
+- (id)functionType;
+- (void)setFunctionType:;
+- (void)clean;
++ (id)modelCustomPropertyMapper;
+@end

@@ -1,0 +1,36 @@
+@interface VSIdentityProviderAvailabilityInfoCenter : NSObject
+@property (nonatomic) q status;
+@property (nonatomic) NSOperationQueue privateQueue;
+@property (nonatomic) BOOL hasDeterminedInitialStatus;
+@property (nonatomic) VSRemoteNotifier remoteNotifier;
+@property (nonatomic) VSPreferences preferences;
+@property (nonatomic) VSDeveloperServiceConnection developerServiceConnection;
+@property (nonatomic) VSAMSBagLoadOperation mockAMSBagLoadOperation;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)privateQueue;
+- (void)setPrivateQueue:;
+- (void)setStatus:;
+- (void)setPreferences:;
+- (id)init;
+- (id)preferences;
+- (BOOL)hasDeterminedInitialStatus;
+- (void)remoteNotifier:didReceiveRemoteNotificationWithUserInfo:;
+- (void)_beginStatusUpdateAttemptWithCompletionHandler:;
+- (void)setRemoteNotifier:;
+- (void)_accountStoreChanged:;
+- (void)_sendStatusChangeNotification;
+- (void)setDeveloperServiceConnection:;
+- (id)mockAMSBagLoadOperation;
+- (void)determineIdentityProviderAvailabilityWithCompletionHandler:;
+- (void).cxx_destruct;
+- (void)setHasDeterminedInitialStatus:;
+- (long long)status;
+- (id)developerServiceConnection;
+- (void)setMockAMSBagLoadOperation:;
+- (id)remoteNotifier;
++ (id)defaultCenter;
++ (BOOL)automaticallyNotifiesObserversOfStatus;
+@end

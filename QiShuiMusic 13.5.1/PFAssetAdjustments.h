@@ -1,0 +1,35 @@
+@interface PFAssetAdjustments : NSObject
+@property (nonatomic) NSString adjustmentFormatIdentifier;
+@property (nonatomic) NSString adjustmentFormatVersion;
+@property (nonatomic) NSData adjustmentData;
+@property (nonatomic) NSString editorBundleID;
+@property (nonatomic) q adjustmentBaseVersion;
+@property (nonatomic) I adjustmentRenderTypes;
+@property (nonatomic) NSDate adjustmentTimestamp;
+@property (nonatomic) NSDictionary propertyListDictionary;
+- (id)initWithURL:;
+- (BOOL)writeToURL:atomically:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)copyWithZone:;
+- (void)setAdjustmentTimestamp:;
+- (id)adjustmentFormatVersion;
+- (unsigned int)adjustmentRenderTypes;
+- (id)initWithFormatIdentifier:formatVersion:data:baseVersion:editorBundleID:renderTypes:;
+- (id)adjustmentData;
+- (id)editorBundleID;
+- (id)adjustmentFormatIdentifier;
+- (id)adjustmentTimestamp;
+- (id)initWithPropertyListDictionary:;
+- (long long)adjustmentBaseVersion;
+- (id)propertyListDictionary;
+- (void)setPropertyListDictionary:;
+- (id)initWithFormatIdentifier:formatVersion:data:baseVersion:;
+- (id)initWithFormatIdentifier:formatVersion:data:baseVersion:editorBundleID:;
++ (id)fingerPrintForData:error:;
++ (BOOL)writeReassembleAdjustmentsPropertyListAtURL:toURL:error:;
++ (BOOL)adjustmentsPropertyListFileRequiresOverflowDataReassemblyAtURL:predictedSize:;
++ (id)fingerprintWithAssetAdjustmentFingerprintData:;
++ (id)fingerPrintForFileDescriptor:error:;
++ (id)dataForOverflowDataReassembledAdjustmentsPropertyListAtURL:error:;
+@end

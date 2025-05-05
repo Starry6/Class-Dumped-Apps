@@ -1,0 +1,2 @@
+@interface CHManhattanLineSketchRecognitionResult : CHLineSketchRecognitionResult
+@end

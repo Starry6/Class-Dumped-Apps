@@ -1,0 +1,37 @@
+@interface GEOLogMsgEventDailyUseSummary : PBCodable
+@property (nonatomic) NSMutableArray useEvents;
+@property (nonatomic) BOOL hasFirstEventDate;
+@property (nonatomic) double firstEventDate;
+@property (nonatomic) BOOL hasFirstEventTimeRoundedToHour;
+@property (nonatomic) Q firstEventTimeRoundedToHour;
+- (void)readAll:;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)useEvents;
+- (void)setUseEvents:;
+- (void)clearUseEvents;
+- (void)addUseEvents:;
+- (unsigned long long)useEventsCount;
+- (id)useEventsAtIndex:;
+- (double)firstEventDate;
+- (void)setFirstEventDate:;
+- (void)setHasFirstEventDate:;
+- (BOOL)hasFirstEventDate;
+- (unsigned long long)firstEventTimeRoundedToHour;
+- (void)setFirstEventTimeRoundedToHour:;
+- (void)setHasFirstEventTimeRoundedToHour:;
+- (BOOL)hasFirstEventTimeRoundedToHour;
++ (BOOL)isValid:;
++ (Class)useEventsType;
+@end

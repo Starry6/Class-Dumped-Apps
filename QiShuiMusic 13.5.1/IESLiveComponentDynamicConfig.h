@@ -1,0 +1,30 @@
+@interface IESLiveComponentDynamicConfig : MTLModel
+@property (nonatomic) NSDictionary intervalConfig;
+@property (nonatomic) NSMutableDictionary realIntervalConfig;
+@property (nonatomic) NSDictionary loadPriorityConfig;
+@property (nonatomic) NSArray levelAddList;
+@property (nonatomic) NSArray levelCombineList;
+@property (nonatomic) IESLiveComponentDynamicSyncConfig syncConfig;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)doRealTransition;
+- (id)intervalConfig;
+- (id)levelAddList;
+- (id)levelCombineList;
+- (id)loadPriorityConfig;
+- (id)realIntervalConfig;
+- (void)setIntervalConfig:;
+- (void)setLevelAddList:;
+- (void)setLevelCombineList:;
+- (void)setLoadPriorityConfig:;
+- (void)setRealIntervalConfig:;
+- (void)setSyncConfig:;
+- (id)syncConfig;
+- (void).cxx_destruct;
++ (id)levelCombineListJSONTransformer;
++ (id)levelAddListJSONTransformer;
++ (id)syncConfigJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

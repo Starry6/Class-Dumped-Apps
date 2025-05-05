@@ -1,0 +1,34 @@
+@interface IESLiveChatRoomTracker : NSObject
+@property (nonatomic) Q scene;
+@property (nonatomic) NSMutableDictionary commonParams;
+@property (nonatomic) HTSEventContext trackContext;
+@property (nonatomic) <IESLiveChatRoomTrackerContext> context;
+@property (nonatomic) IESLiveMultiInteractUserService userService;
+@property (nonatomic) NSDictionary commonParamDict;
+- (void)setUserService:;
+- (id)commonParamDict;
+- (void)addCommonConnectParams;
+- (id)commonParams;
+- (void)didSetAttachingDIContext;
+- (long long)fullSeatCount;
+- (id)initWithInteractiveScene:eventContext:;
+- (void)livesdk_anchor_audience_connection_over;
+- (void)livesdk_audience_connection_user_camera_open_click;
+- (void)livesdk_guest_connection_apply;
+- (void)livesdk_guest_connection_over;
+- (void)livesdk_guest_connection_success;
+- (void)packageAudienceBuildParamsWithExtra:;
+- (void)setCommonParams:;
+- (void)setTrackContext:;
+- (void)setupCommonParams;
+- (id)trackContext;
+- (void)trackCustomWithEventName:;
+- (void)trackWithEventName:;
+- (void)trackWithEventName:andExtParams:;
+- (id)userService;
+- (void)setScene:;
+- (id)context;
+- (unsigned long long)scene;
+- (void).cxx_destruct;
+- (void)setContext:;
+@end

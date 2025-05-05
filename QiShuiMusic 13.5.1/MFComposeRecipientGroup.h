@@ -1,0 +1,23 @@
+@interface MFComposeRecipientGroup : MFComposeRecipient
+- (id)displayString;
+- (int)property;
+- (id)record;
+- (BOOL)isGroup;
+- (id)children;
+- (id)label;
+- (int)recordID;
+- (void).cxx_destruct;
+- (id)address;
+- (BOOL)isEqual:;
+- (id)placeholderName;
+- (id)commentedAddress;
+- (id)unlocalizedLabel;
+- (id)compositeName;
+- (BOOL)isRemovableFromSearchResults;
+- (id)initWithChildren:displayString:;
+- (id)sortedChildren;
+- (id)childrenWithCompleteMatches;
+- (BOOL)wasCompleteMatch;
+- (id)completelyMatchedAttributedStrings;
+- (void)_populateSortedChildren;
+@end

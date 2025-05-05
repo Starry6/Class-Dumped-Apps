@@ -1,0 +1,32 @@
+@interface BMContextualActionEvent : BMEventBase
+@property (nonatomic) NSString identifier;
+@property (nonatomic) NSString appName;
+@property (nonatomic) NSString actionName;
+@property (nonatomic) NSArray contents;
+@property (nonatomic) NSArray parameters;
+@property (nonatomic) I dataVersion;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithProtoData:;
+- (id)init;
+- (id)proto;
+- (id)contents;
+- (id)json;
+- (id)identifier;
+- (id)encodeAsProto;
+- (unsigned int)dataVersion;
+- (id)appName;
+- (id)parameters;
+- (id)initWithProto:;
+- (void).cxx_destruct;
+- (id)actionName;
+- (id)description;
+- (id)serialize;
+- (id)jsonDict;
+- (BOOL)isEqual:;
+- (id)initWithIdentifier:appName:actionName:contents:parameters:;
++ (id)new;
++ (id)eventWithData:dataVersion:;
+@end

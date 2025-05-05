@@ -1,0 +1,35 @@
+@interface AWDIDSCloudLinkReEstablished : PBCodable
+@property (nonatomic) BOOL hasTimestamp;
+@property (nonatomic) Q timestamp;
+@property (nonatomic) BOOL hasLinkType;
+@property (nonatomic) I linkType;
+@property (nonatomic) BOOL hasPriorLinkType;
+@property (nonatomic) I priorLinkType;
+@property (nonatomic) BOOL hasLinkTimeDelta;
+@property (nonatomic) Q linkTimeDelta;
+- (void)writeTo:;
+- (void)setLinkType:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)setHasTimestamp:;
+- (void)mergeFrom:;
+- (BOOL)hasTimestamp;
+- (void)setTimestamp:;
+- (BOOL)readFrom:;
+- (unsigned long long)timestamp;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (unsigned int)linkType;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setHasLinkType:;
+- (BOOL)hasLinkType;
+- (void)setPriorLinkType:;
+- (void)setLinkTimeDelta:;
+- (unsigned int)priorLinkType;
+- (void)setHasPriorLinkType:;
+- (BOOL)hasPriorLinkType;
+- (void)setHasLinkTimeDelta:;
+- (BOOL)hasLinkTimeDelta;
+- (unsigned long long)linkTimeDelta;
+@end

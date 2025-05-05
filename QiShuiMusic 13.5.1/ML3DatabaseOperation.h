@@ -1,0 +1,31 @@
+@interface ML3DatabaseOperation : NSOperation
+@property (nonatomic) Q type;
+@property (nonatomic) ML3MusicLibrary library;
+@property (nonatomic) ML3Client originatingClient;
+@property (nonatomic) NSDictionary options;
+@property (nonatomic) NSDictionary attributes;
+@property (nonatomic) ML3ActiveTransaction transaction;
+@property (nonatomic) BOOL success;
+@property (nonatomic) NSError error;
+- (void)setOptions:;
+- (id)transaction;
+- (void)setError:;
+- (id)error;
+- (BOOL)success;
+- (void)setAttributes:;
+- (void)setSuccess:;
+- (id)attributes;
+- (void)main;
+- (id)options;
+- (unsigned long long)type;
+- (id)library;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)_execute:;
+- (BOOL)_verifyLibraryConnectionAndAttributesProperties:;
+- (id)initWithLibrary:writer:;
+- (id)_operationTypeDescription;
+- (id)originatingClient;
+- (void)setOriginatingClient:;
++ (id)databaseOperationForType:withLibrary:writer:;
+@end

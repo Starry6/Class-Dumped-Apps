@@ -1,0 +1,36 @@
+@interface PLPersistentContainer : NSObject
+@property (nonatomic) NSURL libraryURL;
+@property (nonatomic) <PLXPCPhotoLibraryStorePolicy> xpcStorePolicy;
+@property (nonatomic) BOOL didConfigurePersistentStore;
+@property (nonatomic) BOOL didConfigureXPCStore;
+@property (nonatomic) NSPersistentStoreCoordinator sharedPersistentStoreCoordinator;
+- (id)libraryURL;
+- (void)dealloc;
+- (id)sharedPersistentStoreCoordinator;
+- (BOOL)didConfigureXPCStore;
+- (void)_setTestDidConfigureXPCStore:;
+- (long long)configureSharedPersistentStoreCoordinatorAndMigrateOrRebuildIfNecessaryWithModelMigrator:migrationPolicy:error:;
+- (void)removeSharedPersistentStoreCoordinator;
+- (void)setXpcStorePolicy:;
+- (id)xpcStorePolicy;
+- (id)initWithLibraryURL:lazyAssetsdClient:;
+- (BOOL)_configurePersistentStoreCoordinator:overrideCurrentModelVersionInStore:error:;
+- (void).cxx_destruct;
+- (BOOL)didConfigurePersistentStore;
+- (BOOL)_configureXPCPersistentStoreCoordinator:error:;
+- (id)newPersistentStoreCoordinatorForMigration:;
+- (BOOL)shouldUseXPCPhotoLibraryStore;
+- (id)newSharedPersistentStoreCoordinator;
++ (id)managedObjectModel;
++ (long long)_openAndMigrateStoreWithURL:options:coordinator:modelMigrator:migrationPolicy:error:;
++ (void)getConfigurationForDatabasePath:withBlock:;
++ (long long)_migrateOrRebuildDatabaseWithSharedPersistentStoreCoordinator:modelMigrator:migrationPolicy:error:;
++ (void)_getPersistentStoreURL:options:forDatabasePath:enableOrderKeyNotifications:;
++ (BOOL)currentModelVersionMatchesLibrarySchemaVersionWithPathManager:error:;
++ (void)getPersistentStoreURL:options:forDatabasePath:;
++ (BOOL)shouldTrackIndexUse;
++ (int)librarySchemaVersionWithPathManager:error:;
++ (id)managedObjectModelURL;
++ (BOOL)_destroyPhotosDatabaseWithPath:backupToPath:;
++ (void)removePhotosDatabaseWithPathManager:;
+@end

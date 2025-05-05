@@ -1,0 +1,35 @@
+@interface PPPostalAddress : NSObject
+@property (nonatomic) NSString thoroughfare;
+@property (nonatomic) NSString subThoroughfare;
+@property (nonatomic) NSString locality;
+@property (nonatomic) NSString subLocality;
+@property (nonatomic) NSString administrativeArea;
+@property (nonatomic) NSString subAdministrativeArea;
+@property (nonatomic) NSString postalCode;
+@property (nonatomic) NSString country;
+- (id)thoroughfare;
+- (id)postalCode;
+- (id)country;
+- (id)locality;
+- (id)subAdministrativeArea;
+- (id)subThoroughfare;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (id)subLocality;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)administrativeArea;
+- (id)copyWithZone:;
+- (id)initWithThoroughfare:subThoroughfare:locality:subLocality:administrativeArea:subAdministrativeArea:postalCode:country:;
+- (id)initWithContactsPostalAddress:;
+- (id)initWithFoundInAppsPostalAddress:;
+- (id)toCNPostalAddress;
+- (id)singleLineNormalizedAddressString;
+- (BOOL)isEqualToPostalAddress:;
+- (id)_countryStringWithCountry:isoCode:;
++ (BOOL)supportsSecureCoding;
++ (id)postalAddressWithThoroughfare:subThoroughfare:locality:subLocality:administrativeArea:subAdministrativeArea:postalCode:country:;
++ (id)normalizeAddressString:;
+@end

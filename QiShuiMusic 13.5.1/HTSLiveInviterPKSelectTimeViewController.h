@@ -1,0 +1,31 @@
+@interface HTSLiveInviterPKSelectTimeViewController : IESLiveRevenueInteractPopupViewController
+@property (nonatomic) UIPickerView picker;
+@property (nonatomic) NSNumber selectedTime;
+@property (nonatomic) NSArray defaultDurations;
+@property (nonatomic) NSString defaultDuration;
+@property (nonatomic) NSString requestSource;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)defaultDurations;
+- (void)onSetupNavBar:;
+- (void)recordSettingTime;
+- (void)setDefaultDurations:;
+- (void)setDefaultDuration:;
+- (id)requestSource;
+- (void)setRequestSource:;
+- (void).cxx_destruct;
+- (void)viewDidAppear:;
+- (id)defaultDuration;
+- (void)viewDidLoad;
+- (id)selectedTime;
+- (long long)numberOfComponentsInPickerView:;
+- (long long)pickerView:numberOfRowsInComponent:;
+- (id)pickerView:viewForRow:forComponent:reusingView:;
+- (void)pickerView:didSelectRow:inComponent:;
+- (id)picker;
+- (void)setupViews;
+- (void)setPicker:;
+- (void)setSelectedTime:;
+@end

@@ -1,0 +1,22 @@
+@interface UIApplicationSceneSpecification : FBSSceneSpecification
+- (BOOL)isInternal;
+- (BOOL)isUIKitManaged;
+- (Class)uiSceneMinimumClass;
+- (id)uiSceneSessionRole;
+- (id)baseSceneComponentClassDictionary;
+- (id)connectionHandlers;
+- (id)disconnectionHandlers;
+- (Class)lifecycleMonitorClass;
+- (Class)sceneSubstrateClass;
+- (id)initialSettingsDiffActions;
+- (id)initialActionHandlers;
+- (Class)hostAgentClass;
+- (Class)clientAgentClass;
+- (Class)settingsClass;
+- (Class)clientSettingsClass;
+- (Class)transitionContextClass;
+- (id)finalActionHandlers;
+- (id)coreSceneComponentClassDictionary;
+- (BOOL)affectsAppLifecycleIfInternal;
+- (BOOL)affectsScreenOrientation;
+@end

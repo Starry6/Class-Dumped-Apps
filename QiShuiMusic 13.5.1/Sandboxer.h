@@ -1,0 +1,31 @@
+@interface Sandboxer : NSObject
+@property (nonatomic) UINavigationController homeDirectoryNavigationController;
+@property (nonatomic) BOOL systemFilesHidden;
+@property (nonatomic) NSURL homeFileURL;
+@property (nonatomic) NSString homeTitle;
+@property (nonatomic) BOOL extensionHidden;
+@property (nonatomic) BOOL shareable;
+@property (nonatomic) BOOL fileDeletable;
+@property (nonatomic) BOOL directoryDeletable;
+- (id)_init;
+- (void)_config;
+- (void)setHomeTitle:;
+- (id)homeTitle;
+- (id)homeDirectoryNavigationController;
+- (void)trigger;
+- (BOOL)isSystemFilesHidden;
+- (void)setSystemFilesHidden:;
+- (id)homeFileURL;
+- (void)setHomeFileURL:;
+- (BOOL)isExtensionHidden;
+- (void)setExtensionHidden:;
+- (BOOL)isShareable;
+- (void)setShareable:;
+- (BOOL)isFileDeletable;
+- (void)setFileDeletable:;
+- (BOOL)isDirectoryDeletable;
+- (void)setDirectoryDeletable:;
+- (void)setHomeDirectoryNavigationController:;
+- (void).cxx_destruct;
++ (id)shared;
+@end

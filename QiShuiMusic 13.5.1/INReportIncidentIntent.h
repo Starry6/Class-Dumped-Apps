@@ -1,0 +1,35 @@
+@interface INReportIncidentIntent : INIntent
+@property (nonatomic) NSString incidentType;
+@property (nonatomic) INSupportedTrafficIncidentType incidentType;
+@property (nonatomic) NSNumber startTime;
+@property (nonatomic) NSNumber isClear;
+@property (nonatomic) CLPlacemark userLocation;
+@property (nonatomic) NSString additionalDetails;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)_dictionaryRepresentation;
+- (void)setStartTime:;
+- (id)startTime;
+- (void)_setMetadata:;
+- (id)domain;
+- (void)setDomain:;
+- (id)_metadata;
+- (id)userLocation;
+- (void)setUserLocation:;
+- (id)incidentType;
+- (void)setIncidentType:;
+- (id)additionalDetails;
+- (void)setAdditionalDetails:;
+- (id)_typedBackingStore;
+- (void)_redactForMissingPrivacyEntitlementOptions:containingAppBundleId:;
+- (id)verb;
+- (void)setVerb:;
+- (id)parametersByName;
+- (void)setParametersByName:;
+- (id)initWithIncidentType:startTime:additionalDetails:isClear:;
+- (id)isClear;
+- (void)setIsClear:;
+- (id)initWithIncidentType:startTime:isClear:userLocation:additionalDetails:;
+@end

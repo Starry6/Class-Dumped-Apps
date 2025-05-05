@@ -1,0 +1,31 @@
+@interface TTVideoEngineSubModel : NSObject
+@property (nonatomic) q languageId;
+@property (nonatomic) NSString urlString;
+@property (nonatomic) NSString format;
+@property (nonatomic) q index;
+@property (nonatomic) NSString language;
+@property (nonatomic) q expireTime;
+@property (nonatomic) q subtitleId;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)languageId;
+- (void)setLanguageId:;
+- (void)setSubtitleId:;
+- (long long)subtitleId;
+- (id)urlString;
+- (void)setFormat:;
+- (id)toDictionary;
+- (id)format;
+- (void)setLanguage:;
+- (id)language;
+- (id)initWithDictionary:;
+- (long long)index;
+- (void)setIndex:;
+- (void).cxx_destruct;
+- (void)setUrlString:;
+- (long long)expireTime;
+- (void)setExpireTime:;
+- (id)jsonString;
+@end

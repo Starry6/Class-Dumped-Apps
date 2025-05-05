@@ -1,0 +1,33 @@
+@interface IMCommSafetySettingsManager : NSObject
+@property (nonatomic) BOOL checkSensitivePhotos;
+@property (nonatomic) BOOL checkSensitivePhotosAnalyticsEnabled;
+@property (nonatomic) BOOL shouldNotifyParentAboutSensitivePhotos;
+@property (nonatomic) BOOL childIsYoungAgeGroup;
+@property (nonatomic) q protectedChildAge;
+@property (nonatomic) BOOL hasConnected;
+@property (nonatomic) NSObject<OS_dispatch_queue> connectionQueue;
+@property (nonatomic) NSMutableArray parents;
+- (BOOL)hasConnected;
+- (void)setHasConnected:;
+- (void)systemDidLeaveFirstDataProtectionLock;
+- (void)setConnectionQueue:;
+- (id)init;
+- (void)dealloc;
+- (id)connectionQueue;
+- (BOOL)shouldNotifyParentAboutSensitivePhotos;
+- (void)setCheckSensitivePhotos:;
+- (long long)protectedChildAge;
+- (void)setChildIsYoungAgeGroup:;
+- (void)setParents:;
+- (BOOL)childIsYoungAgeGroup;
+- (void)setCheckSensitivePhotosAnalyticsEnabled:;
+- (BOOL)checkSensitivePhotos;
+- (void).cxx_destruct;
+- (BOOL)checkSensitivePhotosAnalyticsEnabled;
+- (void)_updateSettings;
+- (void)_connectToFamilyCircle:;
+- (id)parents;
+- (void)setProtectedChildAge:;
+- (void)setShouldNotifyParentAboutSensitivePhotos:;
++ (id)sharedManager;
+@end

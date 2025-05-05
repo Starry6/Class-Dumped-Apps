@@ -1,0 +1,32 @@
+@interface NSPPrivacyProxyLocationMonitor : NSObject
+@property (nonatomic) <NSPPrivacyProxyLocationMonitorDelegate> delegate;
+@property (nonatomic) BOOL isAuthorized;
+@property (nonatomic) NSString currentCountryPlusTimezone;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (void)setUserEventAgentTimer;
+- (void)start;
+- (BOOL)isAuthorized;
+- (void)handleLocationUpdate:;
+- (void)stopLocationMonitor;
+- (void)setDelegate:;
+- (void)stop;
+- (void)startLocationMonitor;
+- (void)locationManager:didFailWithError:;
+- (id)currentCountryPlusTimezone;
+- (void)refreshCountryPlusTimezone:;
+- (void)locationManager:didUpdateLocations:;
+- (id)geohashFromLocation:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (BOOL)checkSignificantLocationChange:;
+- (void)locationManagerDidChangeAuthorization:;
+- (BOOL)isCoreWLANAuthorized;
+- (void)setMonitorTimeInterval:;
+- (void)setLastCountryPlusTimezone:;
+- (void)setLastGeohash:;
++ (id)sharedMonitor;
+@end

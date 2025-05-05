@@ -1,0 +1,35 @@
+@interface MTLIOAccelHeap : _MTLHeap
+@property (nonatomic) NSString label;
+@property (nonatomic) <MTLDevice> device;
+@property (nonatomic) Q size;
+@property (nonatomic) Q usedSize;
+@property (nonatomic) Q storageMode;
+@property (nonatomic) Q cpuCacheMode;
+@property (nonatomic) Q currentAllocatedSize;
+@property (nonatomic) Q hazardTrackingMode;
+@property (nonatomic) Q resourceOptions;
+@property (nonatomic) Q unfilteredResourceOptions;
+@property (nonatomic) Q protectionOptions;
+@property (nonatomic) q type;
+- (id)newAccelerationStructureWithDescriptor:;
+- (id)newAccelerationStructureWithSize:;
+- (unsigned long long)gpuAddress;
+- (id)initWithDevice:size:options:args:argsSize:;
+- (void)dealloc;
+- (id)newAccelerationStructureWithDescriptor:offset:;
+- (id)newAccelerationStructureWithSize:resourceIndex:;
+- (unsigned long long)setPurgeableState:;
+- (void)unpinMemoryAtOffset:withLength:;
+- (unsigned long long)maxAvailableSizeWithAlignment:;
+- (id)newAccelerationStructureWithSize:offset:;
+- (unsigned long long)usedSize;
+- (unsigned long long)protectionOptions;
+- (void)deallocHeapSubResource;
+- (id)initWithDevice:size:options:args:argsSize:desc:;
+- (id)newAccelerationStructureWithSize:offset:resourceIndex:;
+- (id)device;
+- (unsigned long long)currentAllocatedSize;
+- (id)newSubResourceWithLength:alignment:options:offset:;
+- (id)newSubResourceAtOffset:withLength:alignment:options:;
+- (unsigned long long)size;
+@end

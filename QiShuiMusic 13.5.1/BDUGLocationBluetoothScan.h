@@ -1,0 +1,31 @@
+@interface BDUGLocationBluetoothScan : NSObject
+@property (nonatomic) BDUGLocationInfo cachedLocationInfo;
+@property (nonatomic) CLLocation cachedLocation;
+@property (nonatomic) NSTimer pollingTimer;
+@property (nonatomic) q desiredAccuracy;
+@property (nonatomic) double timeout;
+@property (nonatomic) BOOL allowedPopupAlert;
+- (void)_requestLocationInfoInBusiness:extraInfo:cert:completion:;
+- (void)_startLocatingAfterCheckAuthorizationStatusInBusiness:extraInfo:cert:completion:;
+- (void)_startLocatingInBusiness:extraInfo:cert:completion:;
+- (id)cachedLocationInfo;
+- (BOOL)isAllowedPopupAlert;
+- (id)pollingTimer;
+- (void)setAllowedPopupAlert:;
+- (void)setCachedLocationInfo:;
+- (void)setPollingTimer:;
+- (void)startLocatingInBusiness:cert:completion:;
+- (void)startLocatingInBusiness:completion:;
+- (void)startLocatingInBusiness:extraInfo:cert:completion:;
+- (void)startLocatingInBusiness:extraInfo:completion:;
+- (void)uploadLocationInBusiness:extraInfo:location:cert:completion:;
+- (id)init;
+- (long long)desiredAccuracy;
+- (void)setTimeout:;
+- (void).cxx_destruct;
+- (double)timeout;
+- (void)setDesiredAccuracy:;
+- (id)cachedLocation;
+- (void)setCachedLocation:;
++ (id)sharedManager;
+@end

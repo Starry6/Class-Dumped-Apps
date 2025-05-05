@@ -1,0 +1,2 @@
+@interface AMapCrashLogInfo : NSObject
+@end

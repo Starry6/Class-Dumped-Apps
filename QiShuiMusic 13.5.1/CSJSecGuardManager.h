@@ -1,0 +1,33 @@
+@interface CSJSecGuardManager : NSObject
+@property (nonatomic) NSString device_id;
+@property (nonatomic) NSString dc;
+@property (nonatomic) @ SGMSafeGuardManager;
+@property (nonatomic) BOOL initialized;
+- (id)sgm_hostVersion;
+- (id)SGMSafeGuardManager;
+- (id)bodyEncry:;
+- (id)doHttpReqSignByUrl:body:;
+- (id)getMsDidToken;
+- (void)reportForScene;
+- (void)sendWithDid:;
+- (void)setDc:;
+- (void)setSGMSafeGuardManager:;
+- (void)setupSecSDK;
+- (id)sgm_appKey;
+- (id)sgm_customDeviceID;
+- (id)sgm_customInfoDic;
+- (id)sgm_hostType;
+- (id)sgm_idfa;
+- (id)sgm_installChannel;
+- (id)sgm_sessionID;
+- (void)startSecGuard;
+- (BOOL)initialized;
+- (void)setInitialized:;
+- (BOOL)respondsToSelector:;
+- (id)init;
+- (id)device_id;
+- (void).cxx_destruct;
+- (void)setDevice_id:;
+- (id)dc;
++ (id)sharedInstance;
+@end

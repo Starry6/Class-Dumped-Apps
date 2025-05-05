@@ -1,0 +1,36 @@
+@interface INSetProfileInCarIntent : INIntent
+@property (nonatomic) NSString profileLabel;
+@property (nonatomic) NSNumber profileNumber;
+@property (nonatomic) NSString profileName;
+@property (nonatomic) NSNumber defaultProfile;
+@property (nonatomic) INSpeakableString carName;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)_dictionaryRepresentation;
+- (id)profileName;
+- (void)_setMetadata:;
+- (id)domain;
+- (void)setDomain:;
+- (id)defaultProfile;
+- (id)_metadata;
+- (id)carName;
+- (void)setCarName:;
+- (id)profileNumber;
+- (void)setProfileNumber:;
+- (void)setProfileName:;
+- (void)setDefaultProfile:;
+- (id)_typedBackingStore;
+- (long long)_intentCategory;
+- (id)_categoryVerb;
+- (id)initWithProfileNumber:profileName:defaultProfile:carName:;
+- (void)_redactForMissingPrivacyEntitlementOptions:containingAppBundleId:;
+- (id)verb;
+- (void)setVerb:;
+- (id)parametersByName;
+- (void)setParametersByName:;
+- (id)profileLabel;
+- (id)initWithProfileNumber:profileLabel:defaultProfile:;
+- (id)initWithProfileNumber:profileName:defaultProfile:;
+@end

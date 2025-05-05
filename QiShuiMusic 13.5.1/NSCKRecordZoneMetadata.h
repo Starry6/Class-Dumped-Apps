@@ -1,0 +1,31 @@
+@interface NSCKRecordZoneMetadata : NSManagedObject
+@property (nonatomic) NSNumber hasRecordZoneNum;
+@property (nonatomic) NSNumber hasSubscriptionNum;
+@property (nonatomic) NSString ckRecordZoneName;
+@property (nonatomic) NSString ckOwnerName;
+@property (nonatomic) CKServerChangeToken currentChangeToken;
+@property (nonatomic) NSCKDatabaseMetadata database;
+@property (nonatomic) NSDate lastFetchDate;
+@property (nonatomic) BOOL hasRecordZone;
+@property (nonatomic) BOOL hasSubscription;
+@property (nonatomic) NSSet records;
+@property (nonatomic) NSSet mirroredRelationships;
+@property (nonatomic) NSSet queries;
+@property (nonatomic) BOOL supportsFetchChanges;
+@property (nonatomic) BOOL supportsAtomicChanges;
+@property (nonatomic) BOOL supportsRecordSharing;
+@property (nonatomic) BOOL supportsZoneSharing;
+@property (nonatomic) BOOL needsImport;
+@property (nonatomic) BOOL needsRecoveryFromZoneDelete;
+@property (nonatomic) BOOL needsRecoveryFromUserPurge;
+@property (nonatomic) BOOL needsShareUpdate;
+@property (nonatomic) BOOL needsShareDelete;
+@property (nonatomic) BOOL needsRecoveryFromIdentityLoss;
+@property (nonatomic) NSData encodedShareData;
+- (void)setHasSubscription:;
+- (BOOL)hasSubscription;
+- (BOOL)hasRecordZone;
+- (void)setHasRecordZone:;
++ (id)entityPath;
++ (id)fetchZoneIDsAssignedToObjectsWithIDs:fromStore:inContext:error:;
+@end

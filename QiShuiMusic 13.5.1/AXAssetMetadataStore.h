@@ -1,0 +1,35 @@
+@interface AXAssetMetadataStore : NSObject
+@property (nonatomic) NSUserDefaults defaults;
+- (id)defaults;
+- (void)_mutateOverridesForAssetType:overrides:mutationBlock:;
+- (void)discardAllAssertionsOfType:heldByClient:;
+- (void)_mutateAssetAssertions:;
+- (void)_mutateAssetEventsForAssetType:events:mutationBlock:;
+- (void)setValue:forKey:forAssetType:;
+- (void)setDefaults:;
+- (void)recordAssetRefreshEventForAssetType:;
+- (void)_performWithLock:;
+- (void)_mutateOverrides:;
+- (void)_mutateUserInfoForAssetType:userInfo:mutationBlock:;
+- (id)valueForKey:forAssetType:;
+- (void)discardAllAssertionsOfType:;
+- (void)recordAssetsToBeDownloaded:forAssetType:;
+- (void)setOverrideMaximumCompatibilityVersion:forAssetType:;
+- (void)_mutateUserInfo:;
+- (void)_mutateInstalledAssetsForAssetType:installedAssets:mutationBlock:;
+- (void)discardAssertion:;
+- (void)recordLastAssetAccess:;
+- (void)recordInstalledAssets:forAssetType:;
+- (id)overrideMaximumCompatibilityVersionForAssetType:;
+- (void)_mutateAssertionsForAssetType:assertions:mutationBlock:;
+- (void)requestAssertion:;
+- (void).cxx_destruct;
+- (id)heldAssertionsForAssetType:;
+- (void)_mutateInstalledAssets:;
+- (id)overrideMinimumCompatibilityVersionForAssetType:;
+- (id)_init;
+- (void)_mutateAssetEvents:block:;
+- (void)setOverrideMinimumCompatibilityVersion:forAssetType:;
+- (void)recordAssetsToBePurged:forAssetType:;
++ (id)store;
+@end

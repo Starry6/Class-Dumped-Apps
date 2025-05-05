@@ -1,0 +1,30 @@
+@interface IESECGoodsDetailRecommendSectionController : IESECGoodsDetailBaseSectionController
+@property (nonatomic) IESECCollectionViewSectionLayout sectionLayout;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)currentBridgeCallHanderForCards;
+- (id)cellForItemAtIndex:;
+- (void)currentCardsWriteAlogMethodName:paramModel:result:context:;
+- (id)currentListContextIdForCards;
+- (id)currentListHomePageView;
+- (void)lynxCard:didLoadFail:;
+- (void)lynxCard:sizeDidChanged:;
+- (id)lynxCardFeedProductIds:;
+- (id)lynxCardMallGetReportInfo:;
+- (void)lynxCardMallReport:;
+- (void)mallWriteAlog:paramModel:result:context:;
+- (void)scrollToFirstFavoriteCellWithSectionID:animated:;
+- (id)sectionLayout;
+- (void)setSectionLayout:;
+- (id)sizeForSupplementaryViewOfKind:atIndex:;
+- (id)supportedElementKinds;
+- (void)updateLynxExtraData:;
+- (id)viewForSupplementaryElementOfKind:atIndex:;
+- (id)currentDataSource;
+- (long long)numberOfItems;
+- (id)init;
+- (void).cxx_destruct;
+- (id)sizeForItemAtIndex:;
+@end

@@ -1,0 +1,36 @@
+@interface SISceneSegmentationAlgorithm : SIAlgorithm
+@property (nonatomic) SISceneSegmentationNetworkConfiguration configuration;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)configuration;
+- (void).cxx_destruct;
+- (long long)runWithInput:output:confidenceOutput:uncertaintyOutput:resampleOutput:networkConfiguration:;
+- (id)initWithComputeEngine:andNetworkConfiguration:;
+- (id)initWithComputeEngine:andNetworkConfiguration:uncertaintyThreshold:;
+- (id)initWithInputResolution:andComputeEngine:;
+- (id)initWithNetworkConfiguration:;
+- (long long)_switchConfiguration:;
+- (long long)_preprocessingInputData:;
+- (long long)_inferenceWithInput:output:;
+- (long long)_postprocessingOutput:;
+- (BOOL)supportUncertainty;
+- (id)initWithComputeEngine:andNetworkConfiguration:uncertaintyThreshold:useE5RT:;
+- (id)initWithComputeEngine:andNetworkConfiguration:managedBuffers:;
+- (long long)runWithInput:output:confidenceOutput:resampleOutput:;
+- (long long)runWithInput:output:confidenceOutput:;
+- (long long)runWithInput:output:confidenceOutput:resampleOutput:networkConfiguration:;
+- (long long)runWithInput:output:confidenceOutput:uncertaintyOutput:;
+- (long long)runWithInput:output:confidenceOutput:uncertaintyOutput:resampleOutput:;
+- (long long)runWithInput:depth:output:resampleOutput:networkConfiguration:;
+- (long long)runWithInput:depthInput:output:confidenceOutput:uncertaintyOutput:resampleOutput:;
+- (long long)runWithInput:depthInput:output:confidenceOutput:uncertaintyOutput:resampleOutput:networkConfiguration:;
+- (long long)runWithInput:output:resampleOutput:networkConfiguration:;
+- (BOOL)_isDepthAwareModel;
++ (id)outputResolution;
++ (Class)inputDataClass;
++ (Class)outputDataClass;
++ (id)subLoggers;
++ (id)getOutputResolution:;
+@end

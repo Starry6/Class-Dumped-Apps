@@ -1,0 +1,35 @@
+@interface GEOSearchCategoryStorage : PBCodable
+@property (nonatomic) BOOL hasBrowseCategory;
+@property (nonatomic) GEOPDBrowseCategory browseCategory;
+@property (nonatomic) BOOL hasAutocompleteEntry;
+@property (nonatomic) GEOPDAutocompleteEntry autocompleteEntry;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (BOOL)hasGreenTeaWithValue:;
+- (id)init;
+- (void)clearSensitiveFields:;
+- (id)initWithSearchCategory:;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (id)browseCategory;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)setBrowseCategory:;
+- (void)mergeFrom:;
+- (id)autocompleteEntry;
+- (id)initWithData:;
+- (void)setAutocompleteEntry:;
+- (void).cxx_destruct;
+- (BOOL)hasBrowseCategory;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)hasAutocompleteEntry;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
++ (BOOL)isValid:;
+@end

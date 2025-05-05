@@ -1,0 +1,2 @@
+@interface UIRemoveControl : UIControl
+@end

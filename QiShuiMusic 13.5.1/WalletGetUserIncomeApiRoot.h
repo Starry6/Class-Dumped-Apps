@@ -1,0 +1,2 @@
+@interface WalletGetUserIncomeApiRoot : GPBRootObject
+@end

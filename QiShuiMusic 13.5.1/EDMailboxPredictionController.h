@@ -1,0 +1,30 @@
+@interface EDMailboxPredictionController : NSObject
+@property (nonatomic) <EDMailboxPredictionQueryAdapter> queryAdapter;
+@property (nonatomic) EDMessagePersistence messagePersistence;
+@property (nonatomic) NSObject<OS_dispatch_queue> processingQueue;
+@property (nonatomic) EDCachingMailboxPredictor cachingPredictor;
+@property (nonatomic) EDMailboxPersistence mailboxPersistence;
+@property (nonatomic) EDPersistenceHookRegistry hookRegistry;
+@property (nonatomic) <EMUserProfileProvider> userProfileProvider;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)userProfileProvider;
+- (id)processingQueue;
+- (void).cxx_destruct;
+- (id)hookRegistry;
+- (id)mailboxPersistence;
+- (id)messagePersistence;
+- (id)initWithMessagePersistence:mailboxPersistence:hookRegistry:userProfileProvider:;
+- (void)persistenceWillAddNewMessage:fromExistingMessage:;
+- (id)predictMailboxForMovingObjectIDs:completionHandler:;
+- (void)_predictMailboxForMovingMessages:cancelationToken:completionHandler:;
+- (id)_processPredictionForMessages:;
+- (id)_accountsForMessages:;
+- (void)_invalidateCacheForAddedMessage:;
+- (id)_createPredictor;
+- (id)queryAdapter;
+- (id)cachingPredictor;
++ (id)log;
+@end

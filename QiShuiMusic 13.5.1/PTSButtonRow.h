@@ -1,0 +1,2 @@
+@interface PTSButtonRow : PTButtonRow
+@end

@@ -1,0 +1,31 @@
+@interface IESLiveGiftVideoInfo : IESLiveDynamicModel
+@property (nonatomic) NSNumber effectID;
+@property (nonatomic) HTSLiveOpenAssetConfig openAsset;
+@property (nonatomic) HTSLiveUser user;
+@property (nonatomic) NSString scriptFileDir;
+@property (nonatomic) HTSLiveGiftMessage_TextEffect textEffect;
+@property (nonatomic) BOOL textEffectNeedCircle;
+@property (nonatomic) BOOL disableShowSpecialInfo;
+@property (nonatomic) HTSLiveText specialInfoDisplayText;
+@property (nonatomic) NSNumber fromGiftID;
+@property (nonatomic) NSNumber minHeightOfPoints;
+@property (nonatomic) BOOL isNeedCorrect;
+@property (nonatomic) double pointShowInterval;
+@property (nonatomic) BOOL isFlyMicEffect;
+@property (nonatomic) NSDictionary effectMixGiftMaskInfo;
+@property (nonatomic) HTSLiveExtraEffect extraEffect;
+@property (nonatomic) NSArray assetIDs;
+@property (nonatomic) BOOL useEffectPlayer;
+- (void)setExtraEffect:;
+- (BOOL)useEffectPlayer;
+- (id)assetIDs;
+- (id)extraEffect;
+- (BOOL)isFlyMicEffect;
+- (void)replaceVideoInfoWithAsset:;
+- (void)setAssetIDs:;
+- (void)setIsFlyMicEffect:;
+- (void)setOpenAsset:;
+- (void)setUseEffectPlayer:;
+- (void).cxx_destruct;
+- (id)openAsset;
+@end

@@ -1,0 +1,30 @@
+@interface CSJRenderEngineViewModel : NSObject
+@property (nonatomic) CSJDynamicNativeViewModel dynamicNativeViewModel;
+@property (nonatomic) {CGSize=dd} size;
+@property (nonatomic) CSJAdInfoViewModel infoViewModel;
+@property (nonatomic) CSJFullLinkTrackInfo fullLinkTrackInfo;
+@property (nonatomic) q renderIndex;
+@property (nonatomic) @ player;
+- (id)jsCallNative_getDataWithParams:;
+- (void)setRenderIndex:;
+- (void)addTrackInfoWithKey:userInfo:;
+- (id)dynamicNativeViewModel;
+- (id)fullLinkTrackInfo;
+- (id)infoViewModel;
+- (id)initWithInfoViewModel:size:renderIndex:;
+- (id)jsCallNative_adInfoWithValid:;
+- (id)jsCallNative_appInfo;
+- (id)jsCallNative_getTemplateInfoWithValid:;
+- (id)originInfoDictionary;
+- (long long)renderIndex;
+- (void)setDynamicNativeViewModel:;
+- (void)setFullLinkTrackInfo:;
+- (void)setInfoViewModel:;
+- (id)validWebViewPoolManager;
+- (id)player;
+- (void).cxx_destruct;
+- (void)setPlayer:;
+- (void)setSize:;
+- (id)size;
+- (id)sizeInfoDict;
+@end

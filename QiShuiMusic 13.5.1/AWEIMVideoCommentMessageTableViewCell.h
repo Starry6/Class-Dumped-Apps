@@ -1,0 +1,34 @@
+@interface AWEIMVideoCommentMessageTableViewCell : AWEIMUserMessageTableViewCell
+@property (nonatomic) UIView bubbleView;
+@property (nonatomic) CAShapeLayer bubbleLayer;
+@property (nonatomic) UIImageView videoCoverImageView;
+@property (nonatomic) YYLabel commentLabel;
+- (void)setBubbleLayer:;
+- (void)configWithMessage:;
+- (id)highlightBGColorWithMessage:;
+- (id)highlightColorWithMessage:;
+- (id)menuTargetView;
+- (id)p_getDisplayNickname;
+- (id)p_getDrawFrameForImage:;
+- (id)p_stringWithString:font:linkTapAction:commonTapAction:;
+- (void)p_updateBubbleLayer;
+- (void)setVideoCoverImageView:;
+- (id)textColorWithMessage:;
+- (id)videoCoverImageView;
+- (void)videoCoverTapped:;
+- (void)layoutSubviews;
+- (BOOL)gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:;
+- (void).cxx_destruct;
+- (BOOL)gestureRecognizer:shouldReceiveTouch:;
+- (id)menuItems;
+- (void)setupUI;
+- (id)contentAttributedString;
+- (id)bubbleView;
+- (void)setBubbleView:;
+- (id)commentLabel;
+- (void)setCommentLabel:;
+- (void)tapAction;
+- (id)bubbleLayer;
++ (id)contentSizeWithMesasge:;
++ (id)identifier;
+@end

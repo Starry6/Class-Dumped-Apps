@@ -1,0 +1,2 @@
+@interface SNWrapModel : NSObject
+@end

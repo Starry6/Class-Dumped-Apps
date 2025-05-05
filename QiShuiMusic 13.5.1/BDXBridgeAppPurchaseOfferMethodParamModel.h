@@ -1,0 +1,32 @@
+@interface BDXBridgeAppPurchaseOfferMethodParamModel : BDXBridgeModel
+@property (nonatomic) NSDictionary offer;
+@property (nonatomic) NSString item_id;
+@property (nonatomic) NSNumber item_type;
+@property (nonatomic) NSNumber quantity;
+@property (nonatomic) NSString cover_id;
+@property (nonatomic) NSDictionary log_extra;
+@property (nonatomic) BOOL checkLogin;
+@property (nonatomic) NSString scene;
+@property (nonatomic) NSDictionary offer_v2;
+- (id)item_id;
+- (BOOL)checkLogin;
+- (id)cover_id;
+- (id)item_type;
+- (id)log_extra;
+- (id)offer_v2;
+- (void)setCheckLogin:;
+- (void)setCover_id:;
+- (void)setItem_id:;
+- (void)setItem_type:;
+- (void)setLog_extra:;
+- (void)setOffer_v2:;
+- (id)offer;
+- (void)setQuantity:;
+- (void)setScene:;
+- (id)scene;
+- (void)setOffer:;
+- (void).cxx_destruct;
+- (id)quantity;
++ (id)requiredKeyPaths;
++ (id)JSONKeyPathsByPropertyKey;
+@end

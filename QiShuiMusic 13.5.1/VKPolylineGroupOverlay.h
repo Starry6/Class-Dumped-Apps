@@ -1,0 +1,32 @@
+@interface VKPolylineGroupOverlay : NSObject
+@property (nonatomic) NSSet polylines;
+@property (nonatomic) VKPolylineOverlay selectedPolyline;
+@property (nonatomic) VKPolylineOverlay focusedPolyline;
+@property (nonatomic) GEOMapRegion boundingMapRegion;
+@property (nonatomic) {?=dd} coordinate;
+@property (nonatomic) BOOL containsTransit;
+@property (nonatomic) BOOL showTraffic;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)removeObserver:;
+- (void)addObserver:;
+- (void)dealloc;
+- (id)focusedPolyline;
+- (void)_updateBoundingMapRegion;
+- (void)setSelectedPolyline:;
+- (BOOL)containsTransit;
+- (id)polylines;
+- (id)selectedPolyline;
+- (void)setShowTraffic:;
+- (void)removePolyline:;
+- (void)setFocusedPolyline:;
+- (void).cxx_destruct;
+- (void)addPolyline:;
+- (id)coordinate;
+- (id)description;
+- (id)boundingMapRegion;
+- (void)_updateContainsTransit;
+- (BOOL)showTraffic;
+@end

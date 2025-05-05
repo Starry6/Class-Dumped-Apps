@@ -1,0 +1,2 @@
+@interface IESLiveSaaSPBIESLiveSaaSPBLinkmicInviteRoot : GPBRootObject
+@end

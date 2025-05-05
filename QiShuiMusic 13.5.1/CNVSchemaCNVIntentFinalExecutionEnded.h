@@ -1,0 +1,33 @@
+@interface CNVSchemaCNVIntentFinalExecutionEnded : SISchemaInstrumentationMessage
+@property (nonatomic) NSInteger eagerStatus;
+@property (nonatomic) BOOL hasEagerStatus;
+@property (nonatomic) NSInteger bypassReason;
+@property (nonatomic) BOOL hasBypassReason;
+@property (nonatomic) Q maxRss;
+@property (nonatomic) BOOL hasMaxRss;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)setEagerStatus:;
+- (BOOL)hasEagerStatus;
+- (void)setHasEagerStatus:;
+- (void)deleteEagerStatus;
+- (void)setBypassReason:;
+- (BOOL)hasBypassReason;
+- (void)setHasBypassReason:;
+- (void)deleteBypassReason;
+- (void)setMaxRss:;
+- (BOOL)hasMaxRss;
+- (void)setHasMaxRss:;
+- (void)deleteMaxRss;
+- (int)eagerStatus;
+- (int)bypassReason;
+- (unsigned long long)maxRss;
+@end

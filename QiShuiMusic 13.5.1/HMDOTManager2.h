@@ -1,0 +1,37 @@
+@interface HMDOTManager2 : HeimdallrModule
+@property (nonatomic) NSObject<OS_dispatch_queue> spanIOQueue;
+@property (nonatomic) HMDOTConfig enternalConfig;
+@property (nonatomic) BOOL hasStopped;
+@property (nonatomic) NSMutableArray cachedTraces;
+@property (nonatomic) HMInstance traceInstance;
+- (void)setSpanIOQueue:;
+- (id)cachedTraces;
+- (void)cleanupCachedTraces;
+- (void)cleanupPlaceholderForTrace:;
+- (void)cleanupTrace:;
+- (void)enableDebugUpload;
+- (id)enternalConfig;
+- (void)finishSpan:;
+- (void)finishTrace:;
+- (void)insertAllCachedTracesWhenValid;
+- (BOOL)insertCachedTrace:;
+- (BOOL)needSyncStart;
+- (void)prepareForDefaultStart;
+- (void)setCachedTraces:;
+- (void)setEnternalConfig:;
+- (void)setTraceInstance:;
+- (id)spanIOQueue;
+- (void)startSpan:;
+- (void)startTrace:;
+- (id)traceInstance;
+- (void)updateConfig:;
+- (id)init;
+- (void)start;
+- (void)stop;
+- (void)observeValueForKeyPath:ofObject:change:context:;
+- (BOOL)isValid;
+- (void).cxx_destruct;
+- (BOOL)hasStopped;
+- (void)setHasStopped:;
++ (id)sharedInstance;
+@end

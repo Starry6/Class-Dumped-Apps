@@ -1,0 +1,32 @@
+@interface CalDAVCalendarServerInviteReplyItem : CoreDAVItem
+@property (nonatomic) CoreDAVHrefItem href;
+@property (nonatomic) CoreDAVItemWithNoChildren inviteStatus;
+@property (nonatomic) CoreDAVItemWithHrefChildItem hostURL;
+@property (nonatomic) CoreDAVLeafItem inReplyTo;
+@property (nonatomic) CoreDAVLeafItem summary;
+@property (nonatomic) NSString firstName;
+@property (nonatomic) NSString lastName;
+@property (nonatomic) NSURL acceptedURL;
+- (void)setHref:;
+- (void)setLastName:;
+- (id)copyParseRules;
+- (id)href;
+- (id)init;
+- (void)setFirstName:;
+- (id)firstName;
+- (id)lastName;
+- (void)setSummary:;
+- (id)summary;
+- (void).cxx_destruct;
+- (id)hostURL;
+- (void)setHostURL:;
+- (id)inReplyTo;
+- (void)setInReplyTo:;
+- (id)inviteStatus;
+- (id)acceptedURL;
+- (void)setInviteStatus:;
+- (void)setFirstNameItem:;
+- (void)setLastNameItem:;
+- (void)setAcceptedURLItem:;
+- (void)setAcceptedURL:;
+@end

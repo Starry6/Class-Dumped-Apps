@@ -1,0 +1,31 @@
+@interface BDXBridgeWebSocketManager : BDXBridgeMethod
+@property (nonatomic) NSMutableDictionary socketTaskIDsForContainer;
+@property (nonatomic) NSMutableDictionary socketTaskDict;
+@property (nonatomic) <WsDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)closeAllConnectionsInContainerID:;
+- (BOOL)closeConnection:;
+- (void)conatinerDealloc:;
+- (void)onConnectionErrorWithState:connectionState:url:error:;
+- (void)onConnectionStateChanged:connectionState:url:;
+- (void)onFeedbackLog:feedbacklog:;
+- (void)onPushMessageReceived:message:type:;
+- (id)pushManagerForSocketTaskID:;
+- (void)removeSocketWithTaskID:;
+- (void)setSocketTaskDict:;
+- (void)setSocketTaskIDsForContainer:;
+- (id)socketTaskDict;
+- (id)socketTaskIDForPushManager:;
+- (id)socketTaskIDsForContainer;
+- (id)startConnection:inContainer:paramModel:;
+- (BOOL)writeConnectionToSocket:withData:;
+- (id)init;
+- (void)dealloc;
+- (void)setDelegate:;
+- (id)delegate;
+- (void).cxx_destruct;
++ (id)sharedManager;
+@end

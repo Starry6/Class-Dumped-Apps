@@ -1,0 +1,2 @@
+@interface CSJDynamicVesselView : CSJDynamicBaseVesselView
+@end

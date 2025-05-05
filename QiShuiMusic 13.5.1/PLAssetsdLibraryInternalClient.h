@@ -1,0 +1,34 @@
+@interface PLAssetsdLibraryInternalClient : PLAssetsdBaseClient
+- (void)deleteiTunesSyncedContentWithCompletionHandler:;
+- (void)mergeDuplicateAssetUuidSelection:completionHandler:;
+- (BOOL)synchronouslyGetSizeOfResourcesToUploadByCPL:error:;
+- (void)waitForSearchIndexExistence:;
+- (void)updateAssetLocationDataWithUUID:completionHandler:;
+- (void)coreAnalyticsLibrarySummaryDataWithCompletionHandler:;
+- (void)setWidgetTimelineGeneratedForDisplaySize:completionHandler:;
+- (BOOL)synchronouslyCheckAssetsArePendingForDuplicateMergeProcessing:;
+- (void)getLibrarySizesFromDB:completionHandler:;
+- (void)forceRunBackgroundJobsOnLibraryPath:criteriaShortCode:completionHandler:;
+- (void)getSearchIndexRebuildInfo:;
+- (BOOL)setKeywords:forAssetWithUUID:;
+- (void)applySearchIndexGraphUpdates:supportingData:completionHandler:;
+- (id)getBackgroundJobServiceStatusCenterDumpWithError:;
+- (void)getAssetCountsWithReply:;
+- (BOOL)invalidateReverseLocationDataOnAllAssetsWithError:;
+- (BOOL)invalidateBehavioralScoreOnAllAssetsWithError:;
+- (void)getSearchIndexProgress:;
+- (void)markPersonAsNeedingKeyFace:completionHandler:;
+- (BOOL)repairMemoriesWithUUIDs:error:;
+- (BOOL)backgroundJobServiceRemoveAllBundleRecordsFromProcessingSet:;
+- (id)metricsForLibraryAtURL:syncedAssetCount:nonSyncedAssetCount:error:;
+- (BOOL)registerBackgroundJobServiceIfNecessaryOnLibraryPath:error:;
+- (BOOL)synchronouslyMarkPersonAsNeedingKeyFace:error:;
+- (unsigned long long)getBackgroundJobServiceStateWithError:;
+- (void)reloadMomentGenerationOptions;
+- (BOOL)synchronouslyProcessIdenticalDuplicatesWithProcessingType:error:;
+- (void)setFetchFilterWithAssets:forApplication:withAuditToken:completionHandler:;
+- (void)resetLimitedLibraryAccessForApplication:completionHandler:;
+- (id)getBackgroundJobServiceBundlesInQueueDictionaryWithError:;
+- (void)applySearchIndexUpdates:completionHandler:;
+- (BOOL)synchronouslyGetLibrarySizesFromDB:sizes:error:;
+@end

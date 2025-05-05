@@ -1,0 +1,30 @@
+@interface AWDMailMessageLoadingReport : PBCodable
+@property (nonatomic) BOOL hasTimestamp;
+@property (nonatomic) Q timestamp;
+@property (nonatomic) BOOL hasTimeLoadingSpinnerIsVisibleInSeconds;
+@property (nonatomic) q timeLoadingSpinnerIsVisibleInSeconds;
+@property (nonatomic) BOOL hasMessage;
+@property (nonatomic) AWDMailMessage message;
+- (void)setMessage:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)setHasTimestamp:;
+- (void)mergeFrom:;
+- (BOOL)hasTimestamp;
+- (void)setTimestamp:;
+- (id)message;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (unsigned long long)timestamp;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasMessage;
+- (id)initWithMailMessage:loadingSpinnerIsVisibleTimeInSeconds:;
+- (void)setTimeLoadingSpinnerIsVisibleInSeconds:;
+- (void)setHasTimeLoadingSpinnerIsVisibleInSeconds:;
+- (BOOL)hasTimeLoadingSpinnerIsVisibleInSeconds;
+- (long long)timeLoadingSpinnerIsVisibleInSeconds;
+@end

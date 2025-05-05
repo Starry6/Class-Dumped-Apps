@@ -1,0 +1,34 @@
+@interface IESMLModel : NSObject
+@property (nonatomic) BOOL isLens;
+@property (nonatomic) q maxWidth;
+@property (nonatomic) q maxHeight;
+@property (nonatomic) {shared_ptr<IESMLCPPSDK::IMLModel>=^{IMLModel}^{__shared_weak_count}} model;
+@property (nonatomic) NSString modelID;
+- (void)cacheImage:url:;
+- (id)getPredictionResultWithInputParams:;
+- (id)initWithSharePtrModel:;
+- (BOOL)isLens;
+- (void)lensProcessImage:url:completion:;
+- (id)postProcess:originParams:;
+- (id)preProcess:;
+- (void)predictWithInputParams:async:completion:;
+- (void)processImage:url:completion:;
+- (void)releaseLensResource;
+- (void)releaseMetalResource;
+- (void)reportLensState:time:;
+- (void)setIsLens:;
+- (id)model;
+- (void)dealloc;
+- (void)setModel:;
+- (void)setModelID:;
+- (long long)maxWidth;
+- (void)setMaxHeight:;
+- (id)modelID;
+- (void)setMaxWidth:;
+- (void)releaseResource;
+- (void).cxx_destruct;
+- (long long)maxHeight;
+- (id).cxx_construct;
+- (id)processor;
+- (void)setProcessor:;
+@end

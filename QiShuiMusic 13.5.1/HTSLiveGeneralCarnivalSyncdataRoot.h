@@ -1,0 +1,2 @@
+@interface HTSLiveGeneralCarnivalSyncdataRoot : GPBRootObject
+@end

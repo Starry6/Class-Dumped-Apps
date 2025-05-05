@@ -1,0 +1,32 @@
+@interface VKRouteInfo : NSObject
+@property (nonatomic) GEOComposedRoute route;
+@property (nonatomic) VKRouteEtaDescription etaDescription;
+@property (nonatomic) NSArray routeLegEtaAnnotations;
+@property (nonatomic) NSArray debugAnnotations;
+@property (nonatomic) BOOL hasRouteEta;
+@property (nonatomic) BOOL hasRouteLegEtas;
+@property (nonatomic) BOOL hasFocus;
+@property (nonatomic) NSArray trafficAnnotations;
+@property (nonatomic) NSArray exitSignAnnotations;
+@property (nonatomic) NSArray waypoints;
+- (id)route;
+- (BOOL)hasFocus;
+- (void).cxx_destruct;
+- (id)waypoints;
+- (void)setEtaDescription:;
+- (void)setHasFocus:;
+- (void)setRouteLegEtaAnnotations:;
+- (id)etaDescription;
+- (id)initWithComposedRoute:etaDescription:;
+- (void)_decodeVisualInfos:withRouteEtaType:into:;
+- (id)initWithComposedRoute:etaText:;
+- (BOOL)hasRouteEta;
+- (BOOL)hasRouteLegEtas;
+- (void)visitAnnotations:;
+- (id)waypointForWaypoint:;
+- (id)trafficAnnotations;
+- (id)exitSignAnnotations;
+- (id)routeLegEtaAnnotations;
+- (id)debugAnnotations;
+- (void)setDebugAnnotations:;
+@end

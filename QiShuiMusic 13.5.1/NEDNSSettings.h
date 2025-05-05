@@ -1,0 +1,30 @@
+@interface NEDNSSettings : NSObject
+@property (nonatomic) BOOL useForAllDomains;
+@property (nonatomic) q dnsProtocol;
+@property (nonatomic) NSArray servers;
+@property (nonatomic) NSArray searchDomains;
+@property (nonatomic) NSString domainName;
+@property (nonatomic) NSArray matchDomains;
+@property (nonatomic) BOOL matchDomainsNoSearch;
+- (BOOL)checkValidityAndCollectErrors:;
+- (id)matchDomains;
+- (id)domainName;
+- (id)initFromLegacyDictionary:;
+- (void)setMatchDomains:;
+- (id)descriptionWithIndent:options:;
+- (id)copyLegacyDictionary;
+- (id)initWithCoder:;
+- (id)searchDomains;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (void)setSearchDomains:;
+- (void)setDomainName:;
+- (id)copyWithZone:;
+- (long long)dnsProtocol;
+- (id)initWithServers:;
+- (BOOL)useForAllDomains;
+- (id)servers;
+- (BOOL)matchDomainsNoSearch;
+- (void)setMatchDomainsNoSearch:;
++ (BOOL)supportsSecureCoding;
+@end

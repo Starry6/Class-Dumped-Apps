@@ -1,0 +1,2 @@
+@interface SNDSPGraphUtilities : NSObject
+@end

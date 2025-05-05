@@ -1,0 +1,32 @@
+@interface IESECGoodsDetailEventHandler : NSObject
+@property (nonatomic) <IESECGoodsDetailEvent> event;
+@property (nonatomic) NSString eventID;
+@property (nonatomic) NSDictionary trackParams;
+@property (nonatomic) @ businessParams;
+@property (nonatomic) @? completionBlock;
+@property (nonatomic) IESECGoodsDetailCommonMeta commonMeta;
+@property (nonatomic) IESECGoodsDetailSKUManager skuManager;
+@property (nonatomic) IESECGoodsDetailPageViewController pageVC;
+- (void)setTrackParams:;
+- (id)businessParams;
+- (id)commonMeta;
+- (void)forbidPageVCRefresh;
+- (void)handleEvent:completion:;
+- (void)handleEventWithEventID:trackParams:businessParams:completion:;
+- (id)pageVC;
+- (void)setBusinessParams:;
+- (void)setCommonMeta:;
+- (void)setPageVC:;
+- (void)setSkuManager:;
+- (id)skuManager;
+- (id)trackParams;
+- (void)setEventID:;
+- (void)setEvent:;
+- (id)event;
+- (id)tracker;
+- (id)eventID;
+- (void)setCompletionBlock:;
+- (void).cxx_destruct;
+- (id)completionBlock;
++ (id)eventComponentID;
+@end

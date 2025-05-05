@@ -1,0 +1,36 @@
+@interface LNBundleMetadata : NSObject
+@property (nonatomic) NSDictionary actions;
+@property (nonatomic) NSDictionary entities;
+@property (nonatomic) NSDictionary queries;
+@property (nonatomic) NSDictionary enums;
+@property (nonatomic) q version;
+@property (nonatomic) LNBundleMetadataGeneratorDescription generator;
+@property (nonatomic) NSArray autoShortcuts;
+@property (nonatomic) q shortcutTileColor;
+@property (nonatomic) NSString autoShortcutProviderMangledName;
+- (long long)version;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)entities;
+- (id)generator;
+- (void)encodeWithCoder:;
+- (id)actions;
+- (id)initWithArray:;
+- (id)queries;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)verboseDescription;
+- (id)autoShortcutProviderMangledName;
+- (id)autoShortcuts;
+- (id)enums;
+- (long long)shortcutTileColor;
+- (id)initWithActions:entities:queries:enums:autoShortcutProviderMangledName:autoShortcuts:shortcutTileColor:version:generator:;
+- (id)initWithActions:entities:queries:enums:autoShortcutProviderMangledName:autoShortcuts:version:generator:;
+- (id)initWithActions:entities:queries:enums:autoShortcuts:version:generator:;
+- (id)initWithActions:entities:queries:enums:version:generator:;
+- (id)initWithActions:entities:queries:enums:version:;
+- (id)initWithActions:entities:queries:enums:;
++ (BOOL)supportsSecureCoding;
++ (long long)latestMetadataVersion;
+@end

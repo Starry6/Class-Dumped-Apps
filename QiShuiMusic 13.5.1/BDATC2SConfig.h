@@ -1,0 +1,36 @@
+@interface BDATC2SConfig : NSObject
+@property (nonatomic) NSSet redirctionBlockList;
+@property (nonatomic) BOOL enable;
+@property (nonatomic) BOOL enableURLTrackRetry;
+@property (nonatomic) NSArray standardMacros;
+@property (nonatomic) NSArray nonstandardMacros;
+@property (nonatomic) NSSet macroBlackList;
+@property (nonatomic) BOOL offlineRetryEnable;
+@property (nonatomic) q sendTimes;
+@property (nonatomic) NSString userAgent;
+@property (nonatomic) NSString customUserAgent;
+- (BOOL)enableURLTrackRetry;
+- (id)macroBlackList;
+- (id)nonstandardMacros;
+- (BOOL)offlineRetryEnable;
+- (id)redirctionBlockList;
+- (long long)sendTimes;
+- (void)setEnableURLTrackRetry:;
+- (void)setMacroBlackList:;
+- (void)setNonstandardMacros:;
+- (void)setOfflineRetryEnable:;
+- (void)setRedirctionBlockList:;
+- (void)setSendTimes:;
+- (void)setStandardMacros:;
+- (void)setupConfig:error:;
+- (id)standardMacros;
+- (id)userAgent;
+- (BOOL)enable;
+- (void)setCustomUserAgent:;
+- (id)initWithDictionary:error:;
+- (id)customUserAgent;
+- (void).cxx_destruct;
+- (void)setEnable:;
++ (id)defaultUserAgent;
++ (id)defaultConfig;
+@end

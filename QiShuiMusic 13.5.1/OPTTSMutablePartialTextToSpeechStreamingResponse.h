@@ -1,0 +1,32 @@
+@interface OPTTSMutablePartialTextToSpeechStreamingResponse : OPTTSPartialTextToSpeechStreamingResponse
+@property (nonatomic) NSString speech_id;
+@property (nonatomic) NSString session_id;
+@property (nonatomic) NSInteger error_code;
+@property (nonatomic) NSString error_str;
+@property (nonatomic) NSString stream_id;
+@property (nonatomic) NSInteger current_pkt_number;
+@property (nonatomic) NSData audio;
+@property (nonatomic) NSArray word_timing_info;
+@property (nonatomic) OPTTSTextToSpeechFeature feature;
+- (void)setFeature:;
+- (id)feature;
+- (id)init;
+- (id)copyWithZone:;
+- (id)audio;
+- (id)speech_id;
+- (void)setSpeech_id:;
+- (id)session_id;
+- (void)setSession_id:;
+- (id)stream_id;
+- (void)setStream_id:;
+- (int)error_code;
+- (void)setError_code:;
+- (id)error_str;
+- (void)setError_str:;
+- (int)current_pkt_number;
+- (void)setCurrent_pkt_number:;
+- (void)setAudio:;
+- (void)audio:;
+- (id)word_timing_info;
+- (void)setWord_timing_info:;
+@end

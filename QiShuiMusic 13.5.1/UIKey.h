@@ -1,0 +1,31 @@
+@interface UIKey : NSObject
+@property (nonatomic) NSString unmodifiedInput;
+@property (nonatomic) NSString modifiedInput;
+@property (nonatomic) q modifierFlags;
+@property (nonatomic) q keyCode;
+@property (nonatomic) NSString characters;
+@property (nonatomic) NSString charactersIgnoringModifiers;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (long long)keyCode;
+- (void).cxx_destruct;
+- (id)unmodifiedInput;
+- (id)characters;
+- (long long)modifierFlags;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)charactersIgnoringModifiers;
+- (id)initWithKeyboardEvent:;
+- (id)_initWithKey:;
+- (long long)modiferFlagsWithoutCapsLockOrNumberPad;
+- (BOOL)modifiersEqual:;
+- (BOOL)equalsKeyCode:modifiers:;
+- (BOOL)unmodifiedKeyCodeEquals:;
+- (void)_setModifierFlags:;
+- (void)_setKeyCode:;
+- (void)_setUnmodifiedInput:;
+- (id)modifiedInput;
+- (void)_setModifiedInput:;
+@end

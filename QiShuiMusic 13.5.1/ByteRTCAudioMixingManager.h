@@ -1,0 +1,33 @@
+@interface ByteRTCAudioMixingManager : NSObject
+- (id)audioFileFrameObserverDelegate;
+- (void)onAudioFileFrame:audioFrame:;
+- (void)setAudioFileFrameObserverDelegate:;
+- (id)initWithAudioMixingManager:;
+- (void)startAudioMixing:filePath:config:;
+- (void)stopAudioMixing:;
+- (void)pauseAudioMixing:;
+- (void)resumeAudioMixing:;
+- (void)stopAllAudioMixing;
+- (void)pauseAllAudioMixing;
+- (void)resumeAllAudioMixing;
+- (void)preloadAudioMixing:filePath:;
+- (void)unloadAudioMixing:;
+- (void)setAllAudioMixingVolume:type:;
+- (void)setAudioMixingVolume:volume:type:;
+- (int)getAudioMixingDuration:;
+- (int)getAudioMixingCurrentPosition:;
+- (void)setAudioMixingPosition:position:;
+- (int)getAudioMixingPlaybackDuration:;
+- (void)setAudioMixingDualMonoMode:mode:;
+- (void)setAudioMixingProgressInterval:interval:;
+- (void)enableAudioMixingFrame:type:;
+- (void)disableAudioMixingFrame:;
+- (int)pushAudioMixingFrame:audioFrame:;
+- (void)setAudioMixingPitch:pitch:;
+- (int)setAudioMixingPlaybackSpeed:speed:;
+- (void)setAudioMixingLoudness:loudness:;
+- (int)getAudioTrackCount:;
+- (void)selectAudioTrack:audioTrackIndex:;
+- (void)registerAudioFileFrameObserver:;
+- (void)dealloc;
+@end

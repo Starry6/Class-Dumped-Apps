@@ -1,0 +1,32 @@
+@interface GEOPDAutocompleteEntryHighlightSpan : PBCodable
+@property (nonatomic) BOOL hasStartIndex;
+@property (nonatomic) I startIndex;
+@property (nonatomic) BOOL hasLength;
+@property (nonatomic) I length;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)setStartIndex:;
+- (void)copyTo:;
+- (BOOL)hasLength;
+- (void)mergeFrom:;
+- (unsigned int)startIndex;
+- (void)setHasLength:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (unsigned int)length;
+- (id)dictionaryRepresentation;
+- (void)setLength:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setHasStartIndex:;
+- (BOOL)hasStartIndex;
++ (BOOL)isValid:;
+@end

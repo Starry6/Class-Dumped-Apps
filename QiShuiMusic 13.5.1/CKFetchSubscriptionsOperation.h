@@ -1,0 +1,30 @@
+@interface CKFetchSubscriptionsOperation : CKDatabaseOperation
+@property (nonatomic) <CKFetchSubscriptionsOperationCallbacks> clientOperationCallbackProxy;
+@property (nonatomic) CKFetchSubscriptionsOperationInfo operationInfo;
+@property (nonatomic) BOOL isFetchAllSubscriptionsOperation;
+@property (nonatomic) NSArray subscriptionIDs;
+@property (nonatomic) @? perSubscriptionCompletionBlock;
+@property (nonatomic) @? fetchSubscriptionCompletionBlock;
+- (void)_finishOnCallbackQueueWithError:;
+- (void)setSubscriptionIDs:;
+- (id)activityCreate;
+- (id)init;
+- (void)setFetchSubscriptionCompletionBlockIVar:;
+- (void)setPerSubscriptionCompletionBlock:;
+- (BOOL)isFetchAllSubscriptionsOperation;
+- (void)setIsFetchAllSubscriptionsOperation:;
+- (void)performCKOperation;
+- (id)initWithSubscriptionIDs:;
+- (void)fillFromOperationInfo:;
+- (id)subscriptionIDs;
+- (void)setFetchSubscriptionCompletionBlock:;
+- (id)fetchSubscriptionCompletionBlock;
+- (BOOL)hasCKOperationCallbacksSet;
+- (void).cxx_destruct;
+- (id)perSubscriptionCompletionBlock;
+- (void)fillOutOperationInfo:;
+- (BOOL)CKOperationShouldRun:;
+- (void)handleSubscriptionFetchForSubscriptionID:subscription:error:;
++ (void)applyDaemonCallbackInterfaceTweaks:;
++ (id)fetchAllSubscriptionsOperation;
+@end

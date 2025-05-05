@@ -1,0 +1,36 @@
+@interface GEOSnapScorePoint : PBCodable
+@property (nonatomic) BOOL hasPoint;
+@property (nonatomic) GEOLatLng point;
+@property (nonatomic) NSMutableArray candidates;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (BOOL)hasGreenTeaWithValue:;
+- (id)point;
+- (id)init;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)candidates;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (void)setCandidates:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)candidateAtIndex:;
+- (id)copyWithZone:;
+- (void)setPoint:;
+- (BOOL)hasPoint;
+- (void)clearCandidates;
+- (void)addCandidate:;
+- (unsigned long long)candidatesCount;
++ (BOOL)isValid:;
++ (Class)candidateType;
+@end

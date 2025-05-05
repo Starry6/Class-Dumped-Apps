@@ -1,0 +1,37 @@
+@interface SAUIImageResource : AceObject
+@property (nonatomic) NSData imageData;
+@property (nonatomic) double pixelHeight;
+@property (nonatomic) double pixelWidth;
+@property (nonatomic) double pointHeight;
+@property (nonatomic) double pointWidth;
+@property (nonatomic) NSURL resourceUrl;
+@property (nonatomic) double scaleFactor;
+@property (nonatomic) NSString urlFormatString;
+@property (nonatomic) NSString userAgent;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)userAgent;
+- (void)setUserAgent:;
+- (void)setImageData:;
+- (id)groupIdentifier;
+- (double)scaleFactor;
+- (id)imageData;
+- (void)setScaleFactor:;
+- (id)encodedClassName;
+- (double)pixelHeight;
+- (double)pixelWidth;
+- (void)setPixelHeight:;
+- (void)setPixelWidth:;
+- (id)resourceUrl;
+- (void)setResourceUrl:;
+- (double)pointHeight;
+- (void)setPointHeight:;
+- (double)pointWidth;
+- (void)setPointWidth:;
+- (id)urlFormatString;
+- (void)setUrlFormatString:;
++ (id)imageResource;
++ (id)imageResourceWithDictionary:context:;
+@end

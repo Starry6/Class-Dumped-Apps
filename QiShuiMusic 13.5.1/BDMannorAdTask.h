@@ -1,0 +1,35 @@
+@interface BDMannorAdTask : NSObject
+@property (nonatomic) NSDictionary taskMap;
+@property (nonatomic) BDMannorAdTaskContext context;
+@property (nonatomic) BOOL taskResult;
+@property (nonatomic) Q finalAdTaskType;
+@property (nonatomic) NSString errorMsg;
+- (unsigned long long)finalAdTaskType;
+- (SEL)taskMethodWith:;
+- (id)defaultAdTaskTypeOrder;
+- (id)errorMsg;
+- (id)finalAdTaskTypeOrder;
+- (void)openECommerce;
+- (void)openH5;
+- (void)openIM;
+- (void)openInApp;
+- (void)openLiveRoom;
+- (void)openLynx;
+- (void)openMpURL;
+- (void)openOtherApp;
+- (void)openURLs;
+- (void)openWXMiniProgram;
+- (void)setErrorMsg:;
+- (void)setFinalAdTaskType:;
+- (void)setTaskResult:;
+- (BOOL)taskResult;
+- (id)context;
+- (void)run;
+- (id)initWithContext:;
+- (id)taskMap;
+- (void).cxx_destruct;
+- (void)setTaskMap:;
+- (void)setContext:;
+- (void)openAppStore;
++ (id)adTaskTypeStringWith:;
+@end

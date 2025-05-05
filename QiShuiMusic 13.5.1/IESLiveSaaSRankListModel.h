@@ -1,0 +1,37 @@
+@interface IESLiveSaaSRankListModel : BDDynamicMTLModel
+@property (nonatomic) NSArray rankAnchors;
+@property (nonatomic) IESLiveSaaSRankAnchorModel anchorInfo;
+@property (nonatomic) IESLiveSaaSRankAnchorModel anchorRegionInfo;
+@property (nonatomic) IESLiveSaaSRankAnchorModel anchorEcommerceInfo;
+@property (nonatomic) NSArray rankSeats;
+@property (nonatomic) NSString rankTip;
+@property (nonatomic) NSString subTitle;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSNumber startTime;
+@property (nonatomic) NSString direction;
+@property (nonatomic) NSString regionName;
+@property (nonatomic) NSString topImgUrl;
+@property (nonatomic) NSNumber isHideEnterance;
+@property (nonatomic) NSNumber timeStamp;
+@property (nonatomic) NSDate startReleaseDate;
+@property (nonatomic) NSDate stopReleaseDate;
+@property (nonatomic) BOOL isBroadcaster;
+@property (nonatomic) NSString lastHourDesc;
+@property (nonatomic) NSString rulesURL;
+@property (nonatomic) NSString rulesURLV2;
+@property (nonatomic) NSString highLightContent;
+@property (nonatomic) NSString currency;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)caculateModelState;
+- (id)initWithDictionary:error:;
+- (BOOL)shouldCountDown;
++ (id)anchorRegionInfoJSONTransformer;
++ (id)anchorEcommerceInfoJSONTransformer;
++ (id)anchorInfoJSONTransformer;
++ (id)rankAnchorsJSONTransformer;
++ (id)rankSeatsJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

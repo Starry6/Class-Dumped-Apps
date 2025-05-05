@@ -1,0 +1,30 @@
+@interface IESLiveSaaSGiftStickerQueue : NSObject
+@property (nonatomic) NSObject<OS_dispatch_queue> workQueue;
+@property (nonatomic) NSMutableArray stickerBuf;
+@property (nonatomic) @? next;
+@property (nonatomic) @? end;
+@property (nonatomic) @? delayEndTime;
+@property (nonatomic) IESLiveSaaSGiftSticker currentSticker;
+- (void)endPlayIfNeeded;
+- (id)currentSticker;
+- (id)delayEndTime;
+- (void)insertNode:into:;
+- (void)insertToFront:;
+- (void)loopNext;
+- (void)loopNextIfNeeded:;
+- (void)setCurrentSticker:;
+- (void)setDelayEndTime:;
+- (void)setStickerBuf:;
+- (id)stickerBuf;
+- (id)next;
+- (void)setNext:;
+- (void)setEnd:;
+- (id)end;
+- (id)init;
+- (void)dealloc;
+- (void)setWorkQueue:;
+- (id)workQueue;
+- (void).cxx_destruct;
+- (void)insert:;
+- (long long)size;
+@end

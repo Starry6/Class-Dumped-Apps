@@ -1,0 +1,32 @@
+@interface BDARVService : NSObject
+@property (nonatomic) NSString preloadToken;
+@property (nonatomic) NSString preloadSessionKey;
+@property (nonatomic) NSString preloadRequestId;
+- (id)getPreloadToken;
+- (id)bannerAdURLString;
+- (id)errorWithModels:jsonObj:response:error:params:;
+- (void)firstPreloadAdsEngineWithSourceModel:params:;
+- (void)getMoreRewardWithParameters:callback:;
+- (id)getPreloadSessionKey;
+- (void)handleAdDatasWithRequestParameter:begin:jsonObj:error:successBlock:httpResonse:;
+- (id)loadAdsWithParams:url:completed:;
+- (void)loadBannerAdsWithParams:completed:;
+- (void)loadPatchAdsWithParams:completed:;
+- (id)loadRewardedVideoAdsWithParams:completed:;
+- (void)monitorWithUrl:params:models:jsonObj:response:error:beginTime:;
+- (void)moreRewardDisplayInfoWithParameters:callback:;
+- (id)patchAdURLString;
+- (void)preloaAdsEngineWithInfo:;
+- (id)preloadRequestId;
+- (id)preloadSessionKey;
+- (id)preloadToken;
+- (id)removeKeyList:fromDictionary:;
+- (id)rewardedVideoAdURLString;
+- (void)setPreloadRequestId:;
+- (void)setPreloadSessionKey:;
+- (void)setPreloadToken:;
+- (id)baseURL;
+- (void)setBaseDomain:;
+- (void).cxx_destruct;
++ (id)sharedService;
+@end

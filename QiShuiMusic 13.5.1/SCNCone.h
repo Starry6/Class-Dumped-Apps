@@ -1,0 +1,37 @@
+@interface SCNCone : SCNGeometry
+@property (nonatomic) double topRadius;
+@property (nonatomic) double bottomRadius;
+@property (nonatomic) double height;
+@property (nonatomic) q radialSegmentCount;
+@property (nonatomic) q heightSegmentCount;
+- (id)init;
+- (id)copy;
+- (id)initWithCoder:;
+- (double)height;
+- (void)encodeWithCoder:;
+- (void)setHeight:;
+- (id)description;
+- (id)copyWithZone:;
+- (long long)primitiveType;
+- (void)setPrimitiveType:;
+- (void)setRadialSegmentCount:;
+- (void)setHeightSegmentCount:;
+- (void)setBottomRadius:;
+- (void)setTopRadius:;
+- (BOOL)getBoundingBoxMin:max:;
+- (BOOL)getBoundingSphereCenter:radius:;
+- (id)copyAnimationChannelForKeyPath:animation:;
+- (id)__createCFObject;
+- (id)presentationGeometry;
+- (void)_setupObjCModelFrom:;
+- (id)initWithParametricGeometryRef:;
+- (id)initPresentationParametricGeometryWithParametricGeometryRef:;
+- (void)_syncObjCModel:;
+- (long long)heightSegmentCount;
+- (long long)radialSegmentCount;
+- (id)presentationCone;
+- (double)bottomRadius;
+- (double)topRadius;
++ (BOOL)supportsSecureCoding;
++ (id)coneWithTopRadius:bottomRadius:height:;
+@end

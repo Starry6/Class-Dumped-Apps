@@ -1,0 +1,34 @@
+@interface PLPhotosHighlightCluster : NSObject
+@property (nonatomic) NSSet assets;
+@property (nonatomic) NSDate endDate;
+@property (nonatomic) NSDate startDate;
+@property (nonatomic) NSInteger startTimeZoneOffset;
+@property (nonatomic) NSInteger endTimeZoneOffset;
+@property (nonatomic) S type;
+@property (nonatomic) S category;
+@property (nonatomic) S kind;
+@property (nonatomic) NSSet moments;
+@property (nonatomic) NSObject<NSCopying> objectID;
+- (id)moments;
+- (void)setKind:;
+- (id)objectID;
+- (id)startDate;
+- (void)setMoments:;
+- (id)assets;
+- (void)setStartDate:;
+- (void)setType:;
+- (void)setStartTimeZoneOffset:;
+- (unsigned short)kind;
+- (id)initWithMoments:;
+- (void)setAssets:;
+- (void)setEndDate:;
+- (int)endTimeZoneOffset;
+- (void)_calculatePropertyValues;
+- (id)endDate;
+- (unsigned short)type;
+- (void)setCategory:;
+- (void).cxx_destruct;
+- (int)startTimeZoneOffset;
+- (void)setEndTimeZoneOffset:;
+- (unsigned short)category;
+@end

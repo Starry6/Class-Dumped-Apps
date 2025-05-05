@@ -1,0 +1,32 @@
+@interface IESLiveUserCardTagLocalLifeRankView : UIView
+@property (nonatomic) UIImageView rankBgIcon;
+@property (nonatomic) UILabel rankLabelTitle;
+@property (nonatomic) UILabel rankLabelRank;
+@property (nonatomic) UIImageView rankImageView;
+@property (nonatomic) NSString honorTitle;
+@property (nonatomic) NSString honorPrefix;
+@property (nonatomic) NSString prefixImageUrl;
+@property (nonatomic) IESLiveUserProfile userProfile;
+- (void)setHonorPrefix:;
+- (void)bindData;
+- (id)honorPrefix;
+- (id)honorTitle;
+- (void)parseTitle;
+- (id)prefixImageUrl;
+- (id)rankBgIcon;
+- (id)rankImageView;
+- (id)rankLabelRank;
+- (id)rankLabelTitle;
+- (void)setHonorTitle:;
+- (void)setPrefixImageUrl:;
+- (void)setRankBgIcon:;
+- (void)setRankImageView:;
+- (void)setRankLabelRank:;
+- (void)setRankLabelTitle:;
+- (id)init;
+- (void).cxx_destruct;
+- (BOOL)shouldShow;
+- (void)setupView;
+- (id)userProfile;
+- (void)setUserProfile:;
+@end

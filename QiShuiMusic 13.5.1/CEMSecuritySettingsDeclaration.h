@@ -1,0 +1,36 @@
+@interface CEMSecuritySettingsDeclaration : CEMConfigurationBase
+@property (nonatomic) NSNumber payloadAllowUntrustedTLSPrompt;
+@property (nonatomic) NSNumber payloadAllowOTAPKIUpdates;
+@property (nonatomic) NSNumber payloadForceEncryptedBackup;
+@property (nonatomic) NSNumber payloadAllowEraseContentAndSettings;
+@property (nonatomic) NSNumber payloadAllowEnablingRestrictions;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (BOOL)multipleAllowed;
+- (BOOL)mustBeSupervised;
+- (int)activationLevel;
+- (id)assetReferences;
+- (BOOL)loadPayload:error:;
+- (id)serializePayloadWithAssetProviders:;
+- (id)payloadAllowUntrustedTLSPrompt;
+- (void)setPayloadAllowUntrustedTLSPrompt:;
+- (id)payloadAllowOTAPKIUpdates;
+- (void)setPayloadAllowOTAPKIUpdates:;
+- (id)payloadForceEncryptedBackup;
+- (void)setPayloadForceEncryptedBackup:;
+- (id)payloadAllowEraseContentAndSettings;
+- (void)setPayloadAllowEraseContentAndSettings:;
+- (id)payloadAllowEnablingRestrictions;
+- (void)setPayloadAllowEnablingRestrictions:;
++ (id)profileType;
++ (id)buildRequiredOnlyWithIdentifier:;
++ (id)registeredClassName;
++ (id)registeredIdentifier;
++ (id)allowedPayloadKeys;
++ (id)restrictionPayloadKeys;
++ (id)buildWithIdentifier:withAllowUntrustedTLSPrompt:withAllowOTAPKIUpdates:withForceEncryptedBackup:withAllowEraseContentAndSettings:withAllowEnablingRestrictions:;
+@end

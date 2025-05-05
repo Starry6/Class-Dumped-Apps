@@ -1,0 +1,31 @@
+@interface CICMYKHalftone : CIFilter
+@property (nonatomic) CIImage inputImage;
+@property (nonatomic) CIVector inputCenter;
+@property (nonatomic) NSNumber inputWidth;
+@property (nonatomic) NSNumber inputAngle;
+@property (nonatomic) NSNumber inputSharpness;
+@property (nonatomic) NSNumber inputGCR;
+@property (nonatomic) NSNumber inputUCR;
+- (void)setInputCenter:;
+- (id)inputAngle;
+- (id)inputSharpness;
+- (void)setInputSharpness:;
+- (id)inputImage;
+- (void)setInputImage:;
+- (void)setInputAngle:;
+- (id)inputCenter;
+- (id)outputImage;
+- (id)inputWidth;
+- (void)setInputWidth:;
+- (id)_CIWhite;
+- (id)_CICMYK_convert;
+- (id)_CICMYK_cyan;
+- (id)_CICMYK_magenta;
+- (id)_CICMYK_yellow;
+- (id)_CICMYK_black;
+- (id)inputGCR;
+- (void)setInputGCR:;
+- (id)inputUCR;
+- (void)setInputUCR:;
++ (id)customAttributes;
+@end

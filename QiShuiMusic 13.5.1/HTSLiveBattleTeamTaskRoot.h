@@ -1,0 +1,2 @@
+@interface HTSLiveBattleTeamTaskRoot : GPBRootObject
+@end

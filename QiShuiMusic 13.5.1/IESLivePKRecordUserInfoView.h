@@ -1,0 +1,37 @@
+@interface IESLivePKRecordUserInfoView : UIView
+@property (nonatomic) UIImageView avatarView;
+@property (nonatomic) UIImageView avatarDecorateView;
+@property (nonatomic) UIView livingAnimationView;
+@property (nonatomic) UILabel nicknameLabel;
+@property (nonatomic) UILabel historyLabel;
+@property (nonatomic) UIImageView genderView;
+@property (nonatomic) UILabel relationLabel;
+@property (nonatomic) UIButton followButton;
+@property (nonatomic) RecordResponse_BattleRecord item;
+@property (nonatomic) @? followAction;
+- (id)avatarDecorateView;
+- (void)didClickFollowButton;
+- (id)followAction;
+- (id)followButton;
+- (id)genderView;
+- (id)livingAnimationView;
+- (id)relationLabel;
+- (void)setAvatarDecorateView:;
+- (void)setFollowAction:;
+- (void)setFollowButton:;
+- (void)setGenderView:;
+- (void)setLivingAnimationView:;
+- (void)setRelationLabel:;
+- (void)updateFollowStatus:;
+- (id)item;
+- (id)avatarView;
+- (void)setAvatarView:;
+- (void)setItem:;
+- (void).cxx_destruct;
+- (id)initWithItem:;
+- (void)setupViews;
+- (id)nicknameLabel;
+- (void)setNicknameLabel:;
+- (id)historyLabel;
+- (void)setHistoryLabel:;
+@end

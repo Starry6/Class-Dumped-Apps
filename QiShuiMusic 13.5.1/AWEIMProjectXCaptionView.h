@@ -1,0 +1,35 @@
+@interface AWEIMProjectXCaptionView : UIView
+@property (nonatomic) UIView backgroundView;
+@property (nonatomic) UILabel captionLabel;
+@property (nonatomic) NSString currentCaptionString;
+@property (nonatomic) NSArray rows;
+@property (nonatomic) q currentIndex;
+@property (nonatomic) double currentLimitWidth;
+- (id)__captionAtIndex:;
+- (void)__createComponents;
+- (void)__fade;
+- (id)__processCaptionInfo:;
+- (id)__separatedLinesFromText:maxWidth:;
+- (void)__show;
+- (double)__startTimeAtIndex:;
+- (void)__updateComponentsLayout;
+- (id)currentCaptionString;
+- (double)currentLimitWidth;
+- (void)renderCaptionInfo:;
+- (void)renderCaptionString:;
+- (void)setCurrentCaptionString:;
+- (void)setCurrentLimitWidth:;
+- (void)updateCurrentPlayTimestamp:;
+- (id)backgroundView;
+- (void)setRows:;
+- (id)rows;
+- (void)setCurrentIndex:;
+- (void)stop;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)setBackgroundView:;
+- (long long)currentIndex;
+- (void)reset;
+- (id)captionLabel;
+- (void)setCaptionLabel:;
+@end

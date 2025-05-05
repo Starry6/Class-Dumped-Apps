@@ -1,0 +1,23 @@
+@interface BSUserDefaultsTestDoubleDictionaryImpl : NSUserDefaults
+- (float)floatForKey:;
+- (id)dataForKey:;
+- (id)init;
+- (void)setObject:forKey:;
+- (id)URLForKey:;
+- (void)setDouble:forKey:;
+- (void)registerDefaults:;
+- (void)setBool:forKey:;
+- (BOOL)boolForKey:;
+- (id)stringForKey:;
+- (void)setInteger:forKey:;
+- (id)arrayForKey:;
+- (void)setFloat:forKey:;
+- (id)objectForKey:;
+- (void).cxx_destruct;
+- (double)doubleForKey:;
+- (void)removeObjectForKey:;
+- (long long)integerForKey:;
+- (id)dictionaryForKey:;
+- (id)stringArrayForKey:;
+- (void)setURL:forKey:;
+@end

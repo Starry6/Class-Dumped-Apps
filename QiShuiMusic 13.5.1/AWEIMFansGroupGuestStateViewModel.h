@@ -1,0 +1,38 @@
+@interface AWEIMFansGroupGuestStateViewModel : NSObject
+@property (nonatomic) BOOL onLoading;
+@property (nonatomic) BOOL canShowContainerView;
+@property (nonatomic) BOOL canShowMyGroupEntry;
+@property (nonatomic) NSDictionary joinGroupFailedCardDict;
+@property (nonatomic) NSString toastContent;
+@property (nonatomic) NSString cidForOpenMessageVC;
+@property (nonatomic) NSDictionary trackJoinGroupDataInfo;
+@property (nonatomic) NSArray groupViewModelList;
+@property (nonatomic) AWEIMFansGroupGuestStateModel model;
+@property (nonatomic) NSString secUid;
+- (BOOL)__canJumpMessagePageForJoinStatus:;
+- (void)__trackJoinGroupDataWithViewModel:responseStatus:;
+- (BOOL)canShowContainerView;
+- (BOOL)canShowMyGroupEntry;
+- (id)cidForOpenMessageVC;
+- (id)groupViewModelList;
+- (id)joinGroupFailedCardDict;
+- (void)joinGroupWithViewModel:;
+- (BOOL)onLoading;
+- (id)secUid;
+- (void)setCanShowContainerView:;
+- (void)setCanShowMyGroupEntry:;
+- (void)setCidForOpenMessageVC:;
+- (void)setGroupViewModelList:;
+- (void)setJoinGroupFailedCardDict:;
+- (void)setOnLoading:;
+- (void)setSecUid:;
+- (void)setToastContent:;
+- (void)setTrackJoinGroupDataInfo:;
+- (id)toastContent;
+- (id)trackJoinGroupDataInfo;
+- (id)model;
+- (id)init;
+- (void)setModel:;
+- (void).cxx_destruct;
+- (void)fetchData;
+@end

@@ -1,0 +1,33 @@
+@interface BDUGLuckyTaskBackSidebarView : UIView
+@property (nonatomic) UIView contentView;
+@property (nonatomic) UILabel contentLabel;
+@property (nonatomic) CAShapeLayer shapeLayer;
+@property (nonatomic) CAGradientLayer gradientLayer;
+@property (nonatomic) BDUGLuckyTaskBackSidebarModel model;
+@property (nonatomic) NSTimer foldTimer;
+- (id)__createCornerRadiusLayerWithFrame:;
+- (void)__disableFoldTimer;
+- (void)__edgeSnap;
+- (void)__foldAction;
+- (void)__pan:;
+- (void)__setupFoldTimer;
+- (void)__tapAction;
+- (void)__updateUI;
+- (id)foldTimer;
+- (void)setFoldTimer:;
+- (void)showOnVC:;
+- (id)model;
+- (id)contentView;
+- (void)dealloc;
+- (void)setModel:;
+- (void)didMoveToSuperview;
+- (id)initWithModel:;
+- (id)gradientLayer;
+- (id)shapeLayer;
+- (void)setShapeLayer:;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (void)setGradientLayer:;
+- (id)contentLabel;
+- (void)setContentLabel:;
+@end

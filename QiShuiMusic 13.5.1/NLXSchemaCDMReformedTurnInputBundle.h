@@ -1,0 +1,35 @@
+@interface NLXSchemaCDMReformedTurnInputBundle : SISchemaInstrumentationMessage
+@property (nonatomic) NSInteger type;
+@property (nonatomic) BOOL hasType;
+@property (nonatomic) NLXSchemaCDMTurnInput currentTurn;
+@property (nonatomic) BOOL hasCurrentTurn;
+@property (nonatomic) I previousTurnsSkip;
+@property (nonatomic) BOOL hasPreviousTurnsSkip;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)setType:;
+- (void)writeTo:;
+- (void)setHasType:;
+- (BOOL)hasType;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void)deleteType;
+- (int)type;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (BOOL)hasCurrentTurn;
+- (void)deleteCurrentTurn;
+- (void)setPreviousTurnsSkip:;
+- (BOOL)hasPreviousTurnsSkip;
+- (void)setHasPreviousTurnsSkip:;
+- (void)deletePreviousTurnsSkip;
+- (id)currentTurn;
+- (void)setCurrentTurn:;
+- (unsigned int)previousTurnsSkip;
+- (void)setHasCurrentTurn:;
+@end

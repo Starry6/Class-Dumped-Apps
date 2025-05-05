@@ -1,0 +1,31 @@
+@interface CLSAdminRequestor : CLSObject
+@property (nonatomic) q state;
+@property (nonatomic) NSString email;
+@property (nonatomic) NSDictionary serverRequestHeaders;
+@property (nonatomic) NSString verificationCode;
+@property (nonatomic) NSString note;
+- (void)setState:;
+- (id)initWithCoder:;
+- (void)setEmail:;
+- (void)encodeWithCoder:;
+- (long long)state;
+- (id)note;
+- (void).cxx_destruct;
+- (void)reset;
+- (id)email;
+- (id)_init;
+- (void)setNote:;
+- (id)dictionaryRepresentation;
+- (id)copyWithZone:;
+- (id)verificationCode;
+- (void)setVerificationCode:;
+- (void)mergeWithObject:;
+- (id)initWithEmail:;
+- (id)serverRequestHeaders;
+- (void)setServerRequestHeaders:;
++ (BOOL)supportsSecureCoding;
++ (id)_propertyNames;
++ (id)identifierForRequestorEmail:;
++ (long long)verificationStateFromString:;
++ (id)stringForVerificationState:;
+@end

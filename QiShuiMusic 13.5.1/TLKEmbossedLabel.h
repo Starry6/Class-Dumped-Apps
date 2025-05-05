@@ -1,0 +1,37 @@
+@interface TLKEmbossedLabel : TLKView
+@property (nonatomic) {CGSize=dd} customInsetSize;
+@property (nonatomic) TLKLabel label;
+@property (nonatomic) TLKProminenceView backgroundView;
+@property (nonatomic) BOOL shouldBadge;
+@property (nonatomic) TLKMultilineText text;
+@property (nonatomic) {CGSize=dd} textOffset;
+@property (nonatomic) BOOL adjustsFontSizeToFitWidth;
+@property (nonatomic) UIColor color;
+@property (nonatomic) UIFont font;
+- (id)backgroundView;
+- (id)init;
+- (void)layoutSubviews;
+- (void)setColor:;
+- (void)setText:;
+- (void)setFont:;
+- (void)setShouldBadge:;
+- (void)setLabel:;
+- (id)label;
+- (id)color;
+- (id)textOffset;
+- (void)setAdjustsFontSizeToFitWidth:;
+- (id)effectiveLayoutSizeFittingSize:;
+- (void).cxx_destruct;
+- (id)font;
+- (void)setBackgroundView:;
+- (BOOL)adjustsFontSizeToFitWidth;
+- (BOOL)shouldBadge;
+- (void)setTextOffset:;
+- (id)text;
+- (double)effectiveBaselineOffsetFromBottom;
+- (double)effectiveFirstBaselineOffsetFromTop;
+- (void)observedPropertiesChanged;
+- (void)setText:font:customInsetSize:badge:;
+- (id)customInsetSize;
+- (void)setCustomInsetSize:;
+@end

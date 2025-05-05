@@ -1,0 +1,33 @@
+@interface NETSchemaNETDebugSessionConnectionPingInfo : SISchemaInstrumentationMessage
+@property (nonatomic) I pingCount;
+@property (nonatomic) BOOL hasPingCount;
+@property (nonatomic) double meanPingInMs;
+@property (nonatomic) BOOL hasMeanPingInMs;
+@property (nonatomic) I unacknowledgedPingCount;
+@property (nonatomic) BOOL hasUnacknowledgedPingCount;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (unsigned int)pingCount;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (BOOL)readFrom:;
+- (void)setPingCount:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (BOOL)hasPingCount;
+- (void)setHasPingCount:;
+- (void)deletePingCount;
+- (void)setMeanPingInMs:;
+- (BOOL)hasMeanPingInMs;
+- (void)setHasMeanPingInMs:;
+- (void)deleteMeanPingInMs;
+- (void)setUnacknowledgedPingCount:;
+- (BOOL)hasUnacknowledgedPingCount;
+- (void)setHasUnacknowledgedPingCount:;
+- (void)deleteUnacknowledgedPingCount;
+- (double)meanPingInMs;
+- (unsigned int)unacknowledgedPingCount;
+@end

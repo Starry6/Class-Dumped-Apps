@@ -1,0 +1,34 @@
+@interface PTChoiceRow : PTSRow
+@property (nonatomic) <PTChoiceRowDataSource> dataSource;
+@property (nonatomic) NSString choiceIdentifier;
+@property (nonatomic) NSArray possibleValues;
+@property (nonatomic) NSArray possibleTitles;
+@property (nonatomic) NSArray possibleShortTitles;
+- (void)setDataSource:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)possibleValues;
+- (long long)numberOfRowsInSection:;
+- (void)encodeWithCoder:;
+- (id)dataSource;
+- (id)possibleTitles;
+- (void)setPossibleTitles:;
+- (void).cxx_destruct;
+- (long long)numberOfSections;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)possibleValues:titles:;
+- (id)possibleShortTitles:;
+- (id)titleForSection:;
+- (BOOL)isEncodable;
+- (id)valueForRow:inSection:;
+- (id)titleForRow:inSection:;
+- (id)shortTitleForRow:inSection:;
+- (id)indexPathForValue:;
+- (void)setPossibleValues:;
+- (id)possibleShortTitles;
+- (void)setPossibleShortTitles:;
+- (id)choiceIdentifier;
+- (void)setChoiceIdentifier:;
++ (BOOL)supportsSecureCoding;
+@end

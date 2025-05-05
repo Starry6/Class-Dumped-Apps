@@ -1,0 +1,31 @@
+@interface SGFuture : NSObject
+@property (nonatomic) BOOL isComplete;
+@property (nonatomic) NSObject<OS_dispatch_queue> workQueue;
+- (BOOL)isComplete;
+- (id)result;
+- (void)clearTimeout;
+- (id)init;
+- (BOOL)completeWithResult:error:;
+- (id)completer;
+- (void)dealloc;
+- (id)workQueue;
+- (void)setTimeout:;
+- (BOOL)_finishWithResult:orError:;
+- (void)disassociateFromParentObject;
+- (id)error;
+- (void)_clearTimeoutNonThreadSafe;
+- (id)wait;
+- (void).cxx_destruct;
+- (id)waitWithTimeout:;
+- (void)wait:;
+- (void)_wait:forSyncAPI:;
+- (BOOL)fail:;
+- (void)setTargetQueue:useAfterCompletion:;
+- (BOOL)succeed:;
++ (id)futureForObject:withKey:onCreate:;
++ (id)createAfter:onCreate:;
++ (id)createWithImmediateError:;
++ (void)waitForFuturesToComplete:withCallback:;
++ (id)createWithImmediateResult:;
++ (id)createWithImmediateResult:error:;
+@end

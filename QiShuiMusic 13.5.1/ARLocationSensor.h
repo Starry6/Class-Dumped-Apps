@@ -1,0 +1,37 @@
+@interface ARLocationSensor : NSObject
+@property (nonatomic) ARLocationData currentLocation;
+@property (nonatomic) <CLLocationManagerDelegate> locationManagerDelegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) <ARSensorDelegate> delegate;
+@property (nonatomic) Q powerUsage;
+- (id)init;
+- (void)setCurrentLocation:;
+- (void)dealloc;
+- (void)start;
+- (id)_createLocationManager;
+- (void)setDelegate:;
+- (id)currentLocation;
+- (id)initWithBundleIdentifier:;
+- (void)stop;
+- (void)locationManager:didFailWithError:;
+- (void)locationManager:didUpdateLocations:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)locationManagerDidChangeAuthorization:;
+- (unsigned long long)providedDataTypes;
+- (void)configureForReplay;
+- (void)lookupAltitudeAtCoordinate:completionHandler:;
+- (void)updateARSessionState:;
+- (void)updateEstimationFromVIOPose:imageData:;
+- (void)updateFromVisualLocalizationResult:;
+- (id)updateFromLocationData:;
+- (id)updateFromDeviceOrientationData:;
+- (void)waitForOutstandingCallbacks;
+- (id)_validateLocationAuthorization;
+- (void)_attemptAltitudeLookupAtCoordinate:attemptCount:lookupStartDate:completionHandler:;
+- (id)locationManagerDelegate;
+- (void)setLocationManagerDelegate:;
+@end

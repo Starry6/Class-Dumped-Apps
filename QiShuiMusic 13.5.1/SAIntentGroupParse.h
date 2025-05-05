@@ -1,0 +1,34 @@
+@interface SAIntentGroupParse : AceObject
+@property (nonatomic) SAIntentGroupDirectInvocation directInvocation;
+@property (nonatomic) NSString jsonIntent;
+@property (nonatomic) NSString jsonIntentTypeName;
+@property (nonatomic) SAIntentGroupProtobufMessage nlv3Parse;
+@property (nonatomic) NSArray nlv3ParseWithAlternatives;
+@property (nonatomic) SAIntentGroupProtobufMessage pegasusResults;
+@property (nonatomic) SAIntentGroupProtobufMessage siriKitIntent;
+@property (nonatomic) NSString type;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)groupIdentifier;
+- (void)setType:;
+- (id)type;
+- (id)encodedClassName;
+- (id)directInvocation;
+- (void)setDirectInvocation:;
+- (id)jsonIntent;
+- (void)setJsonIntent:;
+- (id)jsonIntentTypeName;
+- (void)setJsonIntentTypeName:;
+- (id)nlv3Parse;
+- (void)setNlv3Parse:;
+- (id)nlv3ParseWithAlternatives;
+- (void)setNlv3ParseWithAlternatives:;
+- (id)pegasusResults;
+- (void)setPegasusResults:;
+- (id)siriKitIntent;
+- (void)setSiriKitIntent:;
++ (id)parse;
++ (id)parseWithDictionary:context:;
+@end

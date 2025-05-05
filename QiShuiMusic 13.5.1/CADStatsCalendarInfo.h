@@ -1,0 +1,2 @@
+@interface CADStatsCalendarInfo : NSObject
+@end

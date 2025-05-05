@@ -1,0 +1,33 @@
+@interface MTLHeapDescriptorInternal : MTLHeapDescriptor
+@property (nonatomic) q sparsePageSize;
+@property (nonatomic) BOOL sparsePageAccessCountersEnabled;
+- (unsigned long long)hazardTrackingMode;
+- (BOOL)validateWithDevice:;
+- (unsigned long long)resourceOptions;
+- (void)setPinnedGPUAddress:;
+- (id)descriptorPrivate;
+- (id)init;
+- (unsigned long long)storageMode;
+- (unsigned long long)pinnedGPUAddress;
+- (void)setStorageMode:;
+- (void)dealloc;
+- (unsigned long long)cpuCacheMode;
+- (void)setHazardTrackingMode:;
+- (id)formattedDescription:;
+- (void)setResourceOptions:;
+- (void)setSparsePageSize:;
+- (void)setCpuCacheMode:;
+- (BOOL)sparsePageAccessCountersEnabled;
+- (void)setType:;
+- (long long)sparsePageSize;
+- (unsigned long long)hash;
+- (void)setSparsePageAccessCountersEnabled:;
+- (unsigned long long)protectionOptions;
+- (long long)type;
+- (id)description;
+- (void)setProtectionOptions:;
+- (void)setSize:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (unsigned long long)size;
+@end

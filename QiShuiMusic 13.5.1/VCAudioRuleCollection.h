@@ -1,0 +1,30 @@
+@interface VCAudioRuleCollection : NSObject
+@property (nonatomic) NSInteger aacBlockSize;
+@property (nonatomic) NSArray rules;
+@property (nonatomic) NSArray secondaryPayloads;
+@property (nonatomic) BOOL allowAudioSwitching;
+@property (nonatomic) BOOL allowAudioRecording;
+- (id)init;
+- (void)dealloc;
+- (id)rules;
+- (void)setRules:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)initWithPhoneContinuity:allowAudioSwitching:sbr:aacBlockSize:;
+- (id)initWithPhoneContinuity:allowAudioSwitching:sbr:aacBlockSize:isLowLatencyAudio:;
+- (id)initPrimaryPayload:dtxPayload:redPayload:secondaryPayloads:allowAudioSwitching:sbr:aacBlockSize:;
+- (void)addAudioPayload:isSecondary:sbr:;
+- (void)setupAudioRulesWithSBR:isContinuity:;
+- (void)addAudioRule:;
+- (void)addAudioRules:;
+- (void)clearAudioRules;
+- (BOOL)isPayloadSupported:;
+- (id)secondaryPayloads;
+- (BOOL)allowAudioRecording;
+- (void)setAllowAudioRecording:;
+- (BOOL)allowAudioSwitching;
+- (void)setAllowAudioSwitching:;
+- (int)aacBlockSize;
+- (void)setAacBlockSize:;
++ (int)getForcedPayload;
+@end

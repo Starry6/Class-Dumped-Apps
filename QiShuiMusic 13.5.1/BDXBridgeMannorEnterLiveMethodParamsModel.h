@@ -1,0 +1,31 @@
+@interface BDXBridgeMannorEnterLiveMethodParamsModel : BDXBridgeModel
+@property (nonatomic) NSString roomId;
+@property (nonatomic) NSString authorId;
+@property (nonatomic) NSString enterMethod;
+@property (nonatomic) NSNumber orientation;
+@property (nonatomic) NSString enterFromMerge;
+@property (nonatomic) NSString isPreview;
+@property (nonatomic) NSString rawLive;
+@property (nonatomic) NSString popType;
+@property (nonatomic) NSDictionary ecomLiveParams;
+- (id)popType;
+- (id)rawLive;
+- (void)setEnterMethod:;
+- (id)ecomLiveParams;
+- (id)enterFromMerge;
+- (id)enterMethod;
+- (id)roomId;
+- (void)setEcomLiveParams:;
+- (void)setEnterFromMerge:;
+- (void)setPopType:;
+- (void)setRawLive:;
+- (void)setRoomId:;
+- (id)orientation;
+- (id)isPreview;
+- (void).cxx_destruct;
+- (void)setOrientation:;
+- (void)setIsPreview:;
+- (id)authorId;
+- (void)setAuthorId:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

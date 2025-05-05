@@ -1,0 +1,36 @@
+@interface IESECCommentKOLEvaluationModel : NSObject
+@property (nonatomic) NSString awemeID;
+@property (nonatomic) NSString authorID;
+@property (nonatomic) Q type;
+@property (nonatomic) NSArray coverURLList;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSArray avatarURLList;
+@property (nonatomic) NSString username;
+@property (nonatomic) NSNumber videoDuration;
+@property (nonatomic) BOOL liked;
+@property (nonatomic) q numberOfLikes;
+@property (nonatomic) q sourceType;
+- (id)awemeID;
+- (id)avatarURLList;
+- (id)coverURLList;
+- (long long)numberOfLikes;
+- (void)setAvatarURLList:;
+- (void)setAwemeID:;
+- (void)setCoverURLList:;
+- (void)setNumberOfLikes:;
+- (BOOL)isLiked;
+- (id)username;
+- (long long)sourceType;
+- (void)setUsername:;
+- (void)setType:;
+- (void)setSourceType:;
+- (void)setTitle:;
+- (id)videoDuration;
+- (unsigned long long)type;
+- (id)title;
+- (void).cxx_destruct;
+- (void)setLiked:;
+- (void)setVideoDuration:;
+- (id)authorID;
+- (void)setAuthorID:;
+@end

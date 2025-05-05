@@ -1,0 +1,35 @@
+@interface AccessibilitySupportOverrides : NSObject
+@property (nonatomic) NSNumber boldText;
+@property (nonatomic) NSNumber increaseContrast;
+@property (nonatomic) NSNumber reduceTransparency;
+@property (nonatomic) NSNumber reduceMotion;
+@property (nonatomic) NSNumber onOffLabels;
+@property (nonatomic) NSNumber buttonShapes;
+@property (nonatomic) NSNumber grayscale;
+@property (nonatomic) NSNumber smartInvert;
+@property (nonatomic) NSNumber differentiateWithoutColor;
+- (id)grayscale;
+- (void)setReduceMotion:;
+- (void)_installInvertColorsFilter;
+- (id)buttonShapes;
+- (void)setDifferentiateWithoutColor:;
+- (void)setSmartInvert:;
+- (void)_installGrayscaleFilter;
+- (id)differentiateWithoutColor;
+- (id)reduceMotion;
+- (void)setReduceTransparency:;
+- (void)setGrayscale:;
+- (void)setOnOffLabels:;
+- (void)setIncreaseContrast:;
+- (void)setBoldText:;
+- (void)setButtonShapes:;
+- (id)onOffLabels;
+- (id)smartInvert;
+- (void).cxx_destruct;
+- (id)reduceTransparency;
+- (id)increaseContrast;
+- (void)_addFilter:;
+- (id)boldText;
+- (void)_removeFilterWithName:;
++ (id)shared;
+@end

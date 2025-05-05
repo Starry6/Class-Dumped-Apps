@@ -1,0 +1,34 @@
+@interface IESLiveNewDressDataStore : NSObject
+@property (nonatomic) NSObject<OS_dispatch_queue> queue;
+@property (nonatomic) NSCache memoryCache;
+@property (nonatomic) HTSLiveDressListResponse_Data dressListModel;
+@property (nonatomic) NSString dressDataVersion;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)dressDataVersion;
+- (id)dressListModel;
+- (id)getDressDataFromDiskCache:;
+- (void)getDressDataFromDiskCache:completion:;
+- (id)getDressDataFromMemoryCache:;
+- (void)getDressDataFromMemoryCache:completion:;
+- (id)getDressIDsWithDressType:;
+- (id)getDressOriginDataWithDressID:;
+- (void)loadAllDataFromDiskCache;
+- (id)p_getDressDataFromDiskCache:;
+- (id)p_getDressDataFromMemoryCache:;
+- (id)p_getDressOriginDataFromDiskCache:;
+- (id)p_getDressOriginDataFromMemoryCache:;
+- (void)p_saveDressOriginDataToMemoryCache:dressID:;
+- (void)saveDataToDiskCache:;
+- (void)saveDressDataToMemoryCache:dressID:;
+- (void)setDressDataVersion:;
+- (void)setDressListModel:;
+- (id)init;
+- (id)memoryCache;
+- (void).cxx_destruct;
+- (void)setQueue:;
+- (id)queue;
+- (void)setMemoryCache:;
+@end

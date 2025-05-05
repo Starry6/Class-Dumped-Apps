@@ -1,0 +1,31 @@
+@interface PIAAutoReleasableObject : NSObject
+@property (nonatomic) @ weakObj;
+@property (nonatomic) @ strongObj;
+@property (nonatomic) Q objectHash;
+@property (nonatomic) Q option;
+@property (nonatomic) NSRecursiveLock locker;
+@property (nonatomic) NSMutableArray blockArray;
+- (id)weakObj;
+- (void)addOriginObjectDeallocBlock:;
+- (void)addOriginObjectDeallocBlocks:;
+- (id)blockArray;
+- (void)executeAllDeallocBlocks;
+- (id)initWithObject:option:;
+- (id)locker;
+- (void)setBlockArray:;
+- (void)setLocker:;
+- (void)setStrongObj:;
+- (void)setWeakObj:;
+- (void)storeObject:option:;
+- (id)strongObj;
+- (void)setObjectHash:;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (id)object;
+- (id)description;
+- (void)setOption:;
+- (unsigned long long)objectHash;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (unsigned long long)option;
+@end

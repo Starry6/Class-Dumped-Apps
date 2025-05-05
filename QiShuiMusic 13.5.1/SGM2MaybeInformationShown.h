@@ -1,0 +1,31 @@
+@interface SGM2MaybeInformationShown : PBCodable
+@property (nonatomic) BOOL hasKey;
+@property (nonatomic) NSString key;
+@property (nonatomic) BOOL hasExtracted;
+@property (nonatomic) NSInteger extracted;
+@property (nonatomic) BOOL hasExtractionModelVersion;
+@property (nonatomic) I extractionModelVersion;
+- (BOOL)hasKey;
+- (id)key;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void)setKey:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (int)extracted;
+- (void)setExtracted:;
+- (void)setHasExtracted:;
+- (BOOL)hasExtracted;
+- (id)extractedAsString:;
+- (int)StringAsExtracted:;
+- (void)setExtractionModelVersion:;
+- (void)setHasExtractionModelVersion:;
+- (BOOL)hasExtractionModelVersion;
+- (unsigned int)extractionModelVersion;
+@end

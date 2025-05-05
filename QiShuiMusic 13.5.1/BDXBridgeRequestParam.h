@@ -1,0 +1,31 @@
+@interface BDXBridgeRequestParam : NSObject
+@property (nonatomic) NSString urlString;
+@property (nonatomic) NSString httpMethod;
+@property (nonatomic) NSDictionary headers;
+@property (nonatomic) NSDictionary params;
+@property (nonatomic) BOOL needCommonParams;
+@property (nonatomic) # requestSerializer;
+@property (nonatomic) # responseSerializer;
+@property (nonatomic) BOOL callbackOnBackgroundThread;
+@property (nonatomic) BOOL isCustomizedCookie;
+- (BOOL)callbackOnBackgroundThread;
+- (BOOL)isCustomizedCookie;
+- (BOOL)needCommonParams;
+- (Class)requestSerializer;
+- (Class)responseSerializer;
+- (void)setCallbackOnBackgroundThread:;
+- (void)setIsCustomizedCookie:;
+- (void)setNeedCommonParams:;
+- (void)setRequestSerializer:;
+- (void)setResponseSerializer:;
+- (id)urlString;
+- (id)httpMethod;
+- (void)setHttpMethod:;
+- (void)setHeaders:;
+- (void).cxx_destruct;
+- (id)description;
+- (void)setUrlString:;
+- (id)headers;
+- (id)params;
+- (void)setParams:;
+@end

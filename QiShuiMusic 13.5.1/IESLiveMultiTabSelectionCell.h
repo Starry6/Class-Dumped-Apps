@@ -1,0 +1,38 @@
+@interface IESLiveMultiTabSelectionCell : UICollectionViewCell
+@property (nonatomic) BOOL enablePull;
+@property (nonatomic) BOOL enableDoubleTap;
+@property (nonatomic) BOOL publicScreenViewWillShow;
+@property (nonatomic) IESLiveMultiTabModel model;
+@property (nonatomic) UIView redDotView;
+@property (nonatomic) UIImageView unselectedArrowImageView;
+@property (nonatomic) IESLiveAnimatedImageView arrowImageView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) BOOL currentSelected;
+- (BOOL)currentSelected;
+- (BOOL)enableDoubleTap;
+- (void)doubleTapAction:;
+- (BOOL)enablePull;
+- (BOOL)publicScreenViewWillShow;
+- (id)redDotView;
+- (void)setCurrentSelected:;
+- (void)setEnableDoubleTap:;
+- (void)setEnablePull:;
+- (void)setPublicScreenViewWillShow:;
+- (void)setRedDotView:;
+- (void)setUnselectedArrowImageView:;
+- (void)setupTabSeletionCell;
+- (id)unselectedArrowImageView;
+- (void)updateWithCellModel:;
+- (id)model;
+- (void)setModel:;
+- (void)setTitleLabel:;
+- (void)layoutSubviews;
+- (void)prepareForReuse;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (BOOL)gestureRecognizerShouldBegin:;
+- (id)titleLabel;
+- (void)tapAction;
+- (id)arrowImageView;
+- (void)setArrowImageView:;
+@end

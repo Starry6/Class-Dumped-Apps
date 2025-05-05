@@ -1,0 +1,32 @@
+@interface WBSPasswordWarning : NSObject
+@property (nonatomic) Q severityScore;
+@property (nonatomic) WBSSavedAccount savedAccount;
+@property (nonatomic) Q issueTypes;
+@property (nonatomic) Q severity;
+@property (nonatomic) Q hashForUserAcknowlegement;
+@property (nonatomic) BOOL shouldShowWarningsWhenLoggingIn;
+@property (nonatomic) BOOL hasBeenHidden;
+@property (nonatomic) NSString localizedShortDescriptivePhrase;
+@property (nonatomic) NSString localizedShortDescriptionOfProblemType;
+@property (nonatomic) NSString localizedInformationTextForWarningWhenLoggingIn;
+- (unsigned long long)hash;
+- (long long)compare:;
+- (void).cxx_destruct;
+- (BOOL)isEqual:;
+- (unsigned long long)severity;
+- (unsigned long long)issueTypes;
+- (id)localizedShortDescriptivePhrase;
+- (id)localizedLongDescriptionForClient:;
+- (BOOL)hasBeenHidden;
+- (id)savedAccount;
+- (id)initWithSavedAccount:issueTypes:weakPasswordEvaluation:domainsWithReusedPassword:;
+- (BOOL)shouldShowWarningsWhenLoggingIn;
+- (id)localizedShortDescriptionOfProblemType;
+- (id)_localizedShortDescriptionWithFullDescriptivePhrase:;
+- (unsigned long long)_passwordVisibilityForClient:;
+- (id)_localizedLongWarningStringsForClient:;
+- (id)localizedInformationTextForWarningWhenLoggingIn;
+- (unsigned long long)hashForUserAcknowlegement;
+- (unsigned long long)severityScore;
+- (void)setSeverityScore:;
+@end

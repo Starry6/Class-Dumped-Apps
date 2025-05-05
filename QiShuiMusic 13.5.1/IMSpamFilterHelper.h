@@ -1,0 +1,31 @@
+@interface IMSpamFilterHelper : NSObject
++ (BOOL)receiverIsCandidateForHawking:;
++ (BOOL)shouldShowSMSWarningForSender:forRecipient:withConversationHistory:;
++ (void)participantsAreiMessagable:completionBlock:;
++ (id)internationalSpamFilterLearnMoreURL;
++ (BOOL)isBlackholeEnabledForEligibleAccounts:;
++ (BOOL)isFilterUnknownSendersEnabled;
++ (BOOL)isInternationalSpamFilteringEnabled;
++ (BOOL)shouldDowngradeToRecipient:fromSender:ifCapableOfSMS:withConversationDowngradeState:andConversationHistoryState:;
++ (BOOL)shouldBlackholeMessageFromSender:toRecipient:ifRecipientIsCandidate:givenHistory:forEligibleAccounts:;
++ (BOOL)shouldBlackholeGroupMessageFromSender:toRecipient:ifRecipientIsCandidate:withOtherParticipants:givenHistory:forEligibleAccounts:;
++ (BOOL)receiverIsEnabledForSMSFilter:;
++ (BOOL)receiverIsCandidateForSMSFilter:;
++ (BOOL)receiverIsCandidateForDefaultAppleSMSFilter:;
++ (BOOL)receiverIsCandidateForAppleSMSFilterSubClassification:;
++ (BOOL)receivingID:isCountryCode:;
++ (BOOL)accountRegionIsCandidateForHawking:;
++ (BOOL)accountCountryIsCandidateForHawking:;
++ (BOOL)accountCountryIsCandidateForSMSFilter:;
++ (BOOL)senderIsCandidateForSMSDowngrade:;
++ (BOOL)senderIsChinaHandle:;
++ (BOOL)senderIsCandidateForBlackhole:;
++ (BOOL)senderIsKnownContact:;
++ (BOOL)anyParticipantIsCandidateForBlackhole:;
++ (BOOL)anyParticipantIsKnownContact:;
++ (id)sanitizeParticipants:excludingHandles:;
++ (BOOL)isKnownContact:;
++ (id)_cnRecordForAliases:;
++ (BOOL)isChineseSpamFilteringEnabled;
++ (id)mapID:usingKey:;
+@end

@@ -1,0 +1,30 @@
+@interface IESLiveVSMaskPreView : UIView
+@property (nonatomic) IESLiveImageView preImageView;
+@property (nonatomic) IESLiveImageView closeView;
+@property (nonatomic) IESLiveImageView openEggView;
+@property (nonatomic) UIImageView<IESLiveWebPPlayer> giftWebpView;
+@property (nonatomic) @? actionBlock;
+@property (nonatomic) @? closeBlock;
+- (void)setOpenEggView:;
+- (void)appearAnimation;
+- (id)closeBlock;
+- (void)closeViewDidClick;
+- (void)disAppearAnimation;
+- (id)giftWebpView;
+- (id)openEggView;
+- (void)openViewDidClick;
+- (id)preImageView;
+- (void)setCloseBlock:;
+- (void)setCloseView:;
+- (void)setGiftWebpView:;
+- (void)setPreImageView:;
+- (void)setupSubViews;
+- (void)showGiftStatusWithAction:closeBlock:;
+- (void)showImageStatusWithImage:action:closeBlock:;
+- (id)closeView;
+- (void)dismiss;
+- (id)init;
+- (id)actionBlock;
+- (void).cxx_destruct;
+- (void)setActionBlock:;
+@end

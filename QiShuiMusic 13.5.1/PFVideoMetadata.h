@@ -1,0 +1,37 @@
+@interface PFVideoMetadata : NSObject
+@property (nonatomic) BOOL isMonoski;
+@property (nonatomic) BOOL isHDR;
+@property (nonatomic) BOOL isPlayable;
+@property (nonatomic) BOOL isDecodable;
+@property (nonatomic) NSString firstVideoTrackFormatDebugDescription;
+@property (nonatomic) NSDictionary outOfBandHints;
+- (BOOL)isHDR;
+- (BOOL)isPlayable;
+- (BOOL)isDecodable;
+- (void).cxx_destruct;
+- (id)firstVideoTrackFormatDebugDescription;
+- (id)outOfBandHints;
+- (BOOL)isMonoski;
++ (BOOL)readMetadataType:fromFileURL:value:error:;
++ (BOOL)readMetadataType:fromAVAsset:value:error:;
++ (BOOL)hasValidMetadataForLoopingVideoAsset:;
++ (id)urlByAttachingOutOfBandHintsBase64String:toVideoURL:;
++ (void)loadMetadataForAsset:completion:;
++ (id)outOfBandHintsBase64StringForAVAssetProxyOrFileURLAsset:;
++ (BOOL)videoAssetIsHighDynamicRange:;
++ (BOOL)videoAssetIsPlayable:;
++ (unsigned int)videoCodecFourCharCodeNumberForAVAsset:;
++ (id)metadataItemsWithMetadataType:value:error:;
++ (id)metadataItemValueFromAsset:withKey:keySpace:;
++ (id)firstVideoTrackFormatDebugDescriptionForAsset:;
++ (id)outOfBandHintsForVideoAsset:;
++ (id)_outOfBandHintsForAVAssetProxyOrFileURLAsset:;
++ (id)quickTimeMetadataItemValueFromAsset:withKey:;
++ (id)quickTimeMetadataItemsWithKey:value:;
++ (id)arrayByRemovingMetadataItemOfType:fromArray:error:;
++ (BOOL)videoAssetIsDecodable:;
++ (BOOL)videoAssetIsMonoski:;
++ (BOOL)videoTrackFormatDescriptionIsHighDynamicRange:;
++ (BOOL)videoTrackFormatDescriptionContainsPortraitData:;
++ (void)enumerateVideoTrackFormatDescriptionsInAsset:withBlock:;
+@end

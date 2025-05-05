@@ -1,0 +1,2 @@
+@interface HTSLiveBattleInviteRoot : GPBRootObject
+@end

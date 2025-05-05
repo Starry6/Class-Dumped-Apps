@@ -1,0 +1,32 @@
+@interface MKPlaceAttributionCell : MKPlaceSectionRowView
+@property (nonatomic) _MKUILabel label;
+@property (nonatomic) MKPlaceAttributionCellButton labelButton;
+@property (nonatomic) NSLayoutConstraint labelBaselineToTop;
+@property (nonatomic) NSLayoutConstraint labelLastBaselineToBottom;
+@property (nonatomic) UITapGestureRecognizer selectGestureRecognizer;
+@property (nonatomic) <MKPlaceAttributionCellDelegate> cellDelegate;
+- (id)selectGestureRecognizer;
+- (double)currentHeight;
+- (void)setLabel:;
+- (id)label;
+- (BOOL)isHighlighted;
+- (id)initWithFrame:;
+- (void)setSelectGestureRecognizer:;
+- (void).cxx_destruct;
+- (void)setHighlighted:;
+- (void)updateConstraints;
+- (void)_contentSizeDidChange;
+- (id)labelButton;
+- (void)setLabelButton:;
+- (void)createConstraints;
+- (void)setAttributionString:;
+- (void)attributionClicked;
+- (void)attributionCellButton:isHighighted:executeAction:;
+- (id)labelBaselineToTop;
+- (void)setLabelBaselineToTop:;
+- (id)labelLastBaselineToBottom;
+- (void)setLabelLastBaselineToBottom:;
+- (id)cellDelegate;
+- (void)setCellDelegate:;
++ (id)fontForLabel;
+@end

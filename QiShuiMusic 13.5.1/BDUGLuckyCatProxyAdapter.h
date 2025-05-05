@@ -1,0 +1,32 @@
+@interface BDUGLuckyCatProxyAdapter : NSObject
+@property (nonatomic) double lastRequestTime;
+@property (nonatomic) NSString schemaForALog;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)canHandleProxy:;
+- (double)lastRequestTime;
+- (id)__routerTrackParams;
+- (id)abTestTableSchema:;
+- (id)addQueryFrom:to:;
+- (BOOL)callSettings;
+- (id)decideFallbackUrl:;
+- (id)decideRealUrl:;
+- (id)decideRealUrl:settingsWillUpdate:;
+- (id)decideRealUrl:settingsWillUpdate:failReason:;
+- (id)decideRedirectUrl:failReason:settingsWillUpdate:;
+- (id)decideRedirectUrl:index:failReason:settingsWillUpdate:;
+- (id)redirectSchemaWithConfig:activityID:;
+- (id)schemaForALog;
+- (void)setLastRequestTime:;
+- (void)setSchemaForALog:;
+- (id)statusTableFECacheKeyWithActivityID:cycleID:;
+- (id)statusTableSchema:activityID:;
+- (id)timeTableSchema:;
+- (void)trackerHandleScheme:target:fallback:sceneKey:handle:reason:;
+- (BOOL)triggerSettingsUpdateByProxyFailure;
+- (void).cxx_destruct;
++ (id)sharedInstance;
++ (id)serviceProtocol;
+@end

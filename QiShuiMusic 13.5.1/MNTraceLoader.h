@@ -1,0 +1,26 @@
+@interface MNTraceLoader : NSObject
+- (void).cxx_destruct;
+- (id)trace;
+- (id)loadTraceWithPath:outError:;
+- (id)loadTraceWithPath:options:outError:;
+- (BOOL)_loadInfoTable;
+- (BOOL)_loadLocationsTable:;
+- (BOOL)_loadDirectionsTableAllowDeprecatedProtocol:outError:;
+- (BOOL)_loadETAUpdatesTable;
+- (BOOL)_loadCompassHeadingDataTable;
+- (BOOL)_loadMotionDataTable;
+- (BOOL)_loadVehicleDataTable;
+- (BOOL)_loadEVDataTable;
+- (BOOL)_loadNavigationEventsTable;
+- (BOOL)_loadAnnotatedUserBehaviorTable;
+- (BOOL)_loadAnnotatedUserEnvironmentTable;
+- (BOOL)_loadNavigationUpdatesTable;
+- (BOOL)_loadMiscInfo;
+- (BOOL)_loadTraceVersion;
+- (BOOL)_updateTraceFromVersion:outError:;
+- (BOOL)_executeQuery:rowHandler:;
+- (id)_handleUpdateError;
+- (BOOL)_tableExists:;
+- (id)_errorWithCode:errorDescriptionFormat:;
+- (BOOL)loadExtraData;
+@end

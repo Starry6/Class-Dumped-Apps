@@ -1,0 +1,37 @@
+@interface AXMPipelineContextInput : NSObject
+@property (nonatomic) q inputType;
+@property (nonatomic) CIImage ciImage;
+@property (nonatomic) NSURL photoLibraryURL;
+@property (nonatomic) AXMPixelBufferWrapper pixelBuffer;
+@property (nonatomic) NSURL URL;
+@property (nonatomic) {CGSize=dd} size;
+@property (nonatomic) ^{CGColorSpace=} imageColorSpace;
+@property (nonatomic) ^{__CVBuffer=} wrappedPixelBuffer;
+- (id)init;
+- (void)dealloc;
+- (id)_initWithURL:;
+- (id)pixelBuffer;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (id)photoLibraryURL;
+- (void).cxx_destruct;
+- (id)description;
+- (id)URL;
+- (id)size;
+- (long long)inputType;
+- (id)_initWithCIImage:;
+- (id)_initWithCIImage:photoLibraryURL:;
+- (id)_initWithPixelBuffer:;
+- (id)_initWithURL:photoLibraryURL:;
+- (id)ciImage;
+- (id)imageColorSpace;
+- (id)createCGImageWithMetrics:;
+- (id)wrappedPixelBuffer;
++ (id)new;
++ (BOOL)supportsSecureCoding;
++ (id)inputWithURL:;
++ (id)inputWithCIImage:;
++ (id)inputWithCIImage:photoLibraryURL:;
++ (id)inputWithPixelBuffer:;
++ (id)inputWithURL:photoLibraryURL:;
+@end

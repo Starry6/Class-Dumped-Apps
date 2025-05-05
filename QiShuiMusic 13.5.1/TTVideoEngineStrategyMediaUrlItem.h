@@ -1,0 +1,37 @@
+@interface TTVideoEngineStrategyMediaUrlItem : NSObject
+@property (nonatomic) NSString key;
+@property (nonatomic) NSArray urls;
+@property (nonatomic) q preloadSize;
+@property (nonatomic) q priorityLevel;
+@property (nonatomic) q urlExpiredTime;
+@property (nonatomic) NSDictionary headerInfo;
+@property (nonatomic) NSString preloadCustomPath;
+@property (nonatomic) @? preloadEnd;
+@property (nonatomic) @? preloadCanceled;
+@property (nonatomic) @? preloadDidStart;
+@property (nonatomic) @? preloadProgress;
+- (void)setPreloadSize:;
+- (id)preloadCanceled;
+- (id)preloadDidStart;
+- (id)preloadProgress;
+- (id)headerInfo;
+- (id)preloadCustomPath;
+- (id)preloadEnd;
+- (long long)preloadSize;
+- (void)setHeaderInfo:;
+- (void)setPreloadCanceled:;
+- (void)setPreloadCustomPath:;
+- (void)setPreloadDidStart:;
+- (void)setPreloadEnd:;
+- (void)setPreloadProgress:;
+- (void)setUrlExpiredTime:;
+- (long long)urlExpiredTime;
+- (id)urls;
+- (id)key;
+- (void)setUrls:;
+- (void)setKey:;
+- (void).cxx_destruct;
+- (void)setPriorityLevel:;
+- (long long)priorityLevel;
+- (id)toDict;
+@end

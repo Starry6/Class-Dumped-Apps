@@ -1,0 +1,30 @@
+@interface BMPBUserStatusChangeEvent : PBCodable
+@property (nonatomic) BOOL hasIdsHandle;
+@property (nonatomic) NSString idsHandle;
+@property (nonatomic) BOOL hasStatusChangeType;
+@property (nonatomic) NSString statusChangeType;
+@property (nonatomic) NSMutableArray idsHandles;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)idsHandles;
+- (void)setIdsHandles:;
+- (id)idsHandle;
+- (void)setIdsHandle:;
+- (id)statusChangeType;
+- (void)setStatusChangeType:;
+- (BOOL)hasIdsHandle;
+- (BOOL)hasStatusChangeType;
+- (void)clearIdsHandles;
+- (void)addIdsHandles:;
+- (unsigned long long)idsHandlesCount;
+- (id)idsHandlesAtIndex:;
++ (Class)idsHandlesType;
+@end

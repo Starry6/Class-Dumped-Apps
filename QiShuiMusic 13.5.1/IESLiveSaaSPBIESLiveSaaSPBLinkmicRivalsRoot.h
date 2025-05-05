@@ -1,0 +1,2 @@
+@interface IESLiveSaaSPBIESLiveSaaSPBLinkmicRivalsRoot : GPBRootObject
+@end

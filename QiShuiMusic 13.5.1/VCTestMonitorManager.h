@@ -1,0 +1,34 @@
+@interface VCTestMonitorManager : NSObject
+@property (nonatomic) BOOL toneInjectionEnabled;
+@property (nonatomic) BOOL forceNetworkCellular;
+@property (nonatomic) BOOL enableLoopbackInterface;
+@property (nonatomic) BOOL enableOneToOneMode;
+@property (nonatomic) BOOL enableAudioPowerSpectrumReport;
+@property (nonatomic) double emulatedRxPLR;
+@property (nonatomic) NSInteger forcedTargetBitrate;
+@property (nonatomic) NSInteger forcedCapBitrate;
+@property (nonatomic) NSString emulatedNetworkConfigPath;
+- (id)init;
+- (void)dealloc;
+- (void)registerBlocksForService;
+- (void)setEnableLoopbackInterface:;
+- (void)setEnableOneToOneMode:;
+- (void)setEmulatedRxPLR:;
+- (void)setForcedTargetBitrate:;
+- (void)setForcedCapBitrate:;
+- (void)setEnableAudioPowerSpectrumReport:;
+- (void)reportSessionMediaDaemonStats:;
+- (BOOL)toneInjectionEnabled;
+- (void)setToneInjectionEnabled:;
+- (BOOL)forceNetworkCellular;
+- (void)setForceNetworkCellular:;
+- (BOOL)enableLoopbackInterface;
+- (double)emulatedRxPLR;
+- (int)forcedTargetBitrate;
+- (int)forcedCapBitrate;
+- (id)emulatedNetworkConfigPath;
+- (void)setEmulatedNetworkConfigPath:;
+- (BOOL)enableOneToOneMode;
+- (BOOL)enableAudioPowerSpectrumReport;
++ (id)sharedManager;
+@end

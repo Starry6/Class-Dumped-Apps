@@ -1,0 +1,31 @@
+@interface IESECSlicePopoverItemConfiguration : NSObject
+@property (nonatomic) NSString identifer;
+@property (nonatomic) NSString text;
+@property (nonatomic) @? tapAction;
+@property (nonatomic) NSString iconUrl;
+@property (nonatomic) Q iconPosition;
+@property (nonatomic) {CGSize=dd} iconSize;
+@property (nonatomic) double space;
+@property (nonatomic) <IESECSlicePopoverItemConfigurationDelegate> delegate;
+- (id)iconUrl;
+- (unsigned long long)iconPosition;
+- (BOOL)setConfigurationWithDict:;
+- (void)setIconPosition:;
+- (void)setIconUrl:;
+- (void)setupCopyItem:;
+- (void)setupOpenSchemaItem:;
+- (void)setIconSize:;
+- (id)iconSize;
+- (void)setText:;
+- (void)setDelegate:;
+- (id)initWithDict:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)text;
+- (double)space;
+- (id)tapAction;
+- (void)setTapAction:;
+- (void)setSpace:;
+- (id)identifer;
+- (void)setIdentifer:;
+@end

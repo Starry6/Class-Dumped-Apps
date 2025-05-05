@@ -1,0 +1,35 @@
+@interface FLEXUtility : NSObject
++ (id)appKeyWindow;
++ (id)activeScene;
++ (id)topViewControllerInWindow:;
++ (id)consistentRandomColorForObject:;
++ (id)descriptionForView:includingFrame:;
++ (id)stringForCGRect:;
++ (id)viewControllerForView:;
++ (id)viewControllerForAncestralView:;
++ (id)previewImageForView:;
++ (id)previewImageForLayer:;
++ (id)detailDescriptionForView:;
++ (id)circularImageWithColor:radius:;
++ (id)hierarchyIndentPatternColor;
++ (id)applicationImageName;
++ (id)applicationName;
++ (id)pointerToString:;
++ (id)addressOfObject:;
++ (id)stringByEscapingHTMLEntitiesInString:;
++ (unsigned long long)infoPlistSupportedInterfaceOrientationsMask;
++ (id)thumbnailedImageWithMaxPixelDimension:fromImageData:;
++ (id)stringFromRequestDuration:;
++ (id)statusCodeStringFromURLResponse:;
++ (BOOL)isErrorStatusCodeFromURLResponse:;
++ (id)itemsFromQueryString:;
++ (id)prettyJSONStringFromData:;
++ (BOOL)isValidJSONData:;
++ (id)inflatedDataFromCompressedData:;
++ (id)allWindows;
++ (id)alert:message:;
++ (SEL)swizzledSelectorForSelector:;
++ (BOOL)instanceRespondsButDoesNotImplementSelector:class:;
++ (void)replaceImplementationOfKnownSelector:onClass:withBlock:swizzledSelector:;
++ (void)replaceImplementationOfSelector:withSelector:forClass:withMethodDescription:implementationBlock:undefinedBlock:;
+@end

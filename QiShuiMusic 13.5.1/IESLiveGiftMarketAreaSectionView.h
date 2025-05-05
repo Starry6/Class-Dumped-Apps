@@ -1,0 +1,33 @@
+@interface IESLiveGiftMarketAreaSectionView : UIView
+@property (nonatomic) PuzzleHybridContainer marketAreaOperationContainer;
+@property (nonatomic) IESLiveGiftMarketAreaSectionViewModel viewModel;
+@property (nonatomic) BOOL lynxViewLoadFinished;
+@property (nonatomic) @? pendingLynxDataUpdateBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) <IESLiveRefactGiftPanelSectionVMProtocol> sectionVM;
+- (void)updateLynxData:;
+- (void)viewDidLoadFailedWithUrl:error:;
+- (void)bindAction;
+- (void)loadLynxView;
+- (id)lynxDataWithModel:;
+- (BOOL)lynxViewLoadFinished;
+- (id)marketAreaOperationContainer;
+- (id)pendingLynxDataUpdateBlock;
+- (void)removeCurrentLynxViewIfNeeded;
+- (id)sectionVM;
+- (void)setLynxViewLoadFinished:;
+- (void)setMarketAreaOperationContainer:;
+- (void)setPendingLynxDataUpdateBlock:;
+- (void)setSectionVM:;
+- (void)viewDidFinishLoadWithURL:;
+- (void)viewDidRecieveError:;
+- (void)dealloc;
+- (id)viewModel;
+- (void)setup;
+- (void).cxx_destruct;
+- (void)setViewModel:;
+- (id)initWithFrame:viewModel:;
+@end

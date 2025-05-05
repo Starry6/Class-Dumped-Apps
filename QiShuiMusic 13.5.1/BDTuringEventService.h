@@ -1,0 +1,36 @@
+@interface BDTuringEventService : NSObject
+@property (nonatomic) NSMutableArray touchEvents;
+@property (nonatomic) NSObject<OS_dispatch_queue> serialQueue;
+@property (nonatomic) double lastSamplingTimeInterval;
+@property (nonatomic) BDTuringConfig config;
+@property (nonatomic) NSString subtype;
+@property (nonatomic) NSString sharkLogId;
+@property (nonatomic) q type;
+- (void)clearAllTouchEvents;
+- (void)collectEvent:data:;
+- (void)collectTouchEvents:;
+- (void)collectTouchEventsFromEvent:;
+- (id)fetchTouchEvents;
+- (void)h5CollectEvent:data:;
+- (double)lastSamplingTimeInterval;
+- (void)nativeCollectEvent:data:;
+- (id)paramCheck:;
+- (void)setLastSamplingTimeInterval:;
+- (void)setSharkLogId:;
+- (id)sharkLogId;
+- (id)toucheventFromTouch:;
+- (id)subtype;
+- (id)init;
+- (void)dealloc;
+- (void)setConfig:;
+- (void)setType:;
+- (void)setSubtype:;
+- (id)serialQueue;
+- (long long)type;
+- (void).cxx_destruct;
+- (id)config;
+- (void)setSerialQueue:;
+- (id)touchEvents;
+- (void)setTouchEvents:;
++ (id)sharedInstance;
+@end

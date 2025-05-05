@@ -1,0 +1,30 @@
+@interface IPAAdjustmentStackSerializer : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)dataFromAdjustmentStack:error:;
+- (id)adjustmentStackFromData:error:;
+- (id)dataFromArchive:error:;
+- (id)archiveFromData:error:;
+- (id)_dataFromAdjustmentStack:error:;
+- (id)_adjustmentStackFromData:error:;
++ (id)archiveDictionary:error:;
++ (id)compressData:error:;
++ (id)decompressData:error:;
++ (id)archiveDictionary:;
++ (id)dataFromJSON:;
++ (id)dataFromJSON:error:;
++ (id)JSONFromData:;
++ (id)JSONFromData:error:;
++ (id)dataFromPropertyList:;
++ (id)dataFromPropertyList:error:;
++ (id)propertyListFromData:;
++ (id)propertyListFromData:error:;
++ (id)unarchiveData:;
++ (id)unarchiveData:error:;
++ (id)compressData:;
++ (id)decompressData:;
++ (id)B64StringForData:;
++ (id)dataFromB64String:;
+@end

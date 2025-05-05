@@ -1,0 +1,31 @@
+@interface VCSegmentCallHistory : NSObject
+@property (nonatomic) NSInteger shortTermAdjustmentTBR;
+@property (nonatomic) NSInteger longTermAdjustmentTBR;
+@property (nonatomic) NSInteger previousISBR;
+@property (nonatomic) NSInteger longTermISBR;
+@property (nonatomic) NSInteger shortTermISBR;
+@property (nonatomic) NSInteger longTermSATXBR;
+@property (nonatomic) NSInteger shortTermSATXBR;
+@property (nonatomic) NSInteger longTermSARBR;
+@property (nonatomic) NSInteger shortTermSARBR;
+@property (nonatomic) NSInteger longTermBWE;
+@property (nonatomic) NSInteger shortTermBWE;
+@property (nonatomic) NSInteger historyLength;
+- (id)init;
+- (int)deserialize:;
+- (int)serialize:;
+- (int)historyLength;
+- (void)updateSegmentWithTBR:ISBTR:SATXBR:SARBR:BWE:shortTermWeight:longTermWeight:;
+- (int)shortTermAdjustmentTBR;
+- (int)longTermAdjustmentTBR;
+- (int)previousISBR;
+- (int)longTermISBR;
+- (int)shortTermISBR;
+- (int)longTermSATXBR;
+- (int)shortTermSATXBR;
+- (int)longTermSARBR;
+- (int)shortTermSARBR;
+- (int)longTermBWE;
+- (int)shortTermBWE;
++ (int)fieldSize;
+@end

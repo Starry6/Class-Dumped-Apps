@@ -1,0 +1,37 @@
+@interface SCNCapsule : SCNGeometry
+@property (nonatomic) double capRadius;
+@property (nonatomic) double height;
+@property (nonatomic) q radialSegmentCount;
+@property (nonatomic) q heightSegmentCount;
+@property (nonatomic) q capSegmentCount;
+- (id)init;
+- (id)copy;
+- (id)initWithCoder:;
+- (double)height;
+- (void)encodeWithCoder:;
+- (void)setHeight:;
+- (id)description;
+- (id)copyWithZone:;
+- (long long)primitiveType;
+- (void)setPrimitiveType:;
+- (void)setRadialSegmentCount:;
+- (void)setHeightSegmentCount:;
+- (void)setCapSegmentCount:;
+- (BOOL)getBoundingBoxMin:max:;
+- (BOOL)getBoundingSphereCenter:radius:;
+- (id)copyAnimationChannelForKeyPath:animation:;
+- (id)__createCFObject;
+- (id)presentationGeometry;
+- (void)_setupObjCModelFrom:;
+- (id)initWithParametricGeometryRef:;
+- (id)initPresentationParametricGeometryWithParametricGeometryRef:;
+- (void)_syncObjCModel:;
+- (long long)heightSegmentCount;
+- (long long)radialSegmentCount;
+- (id)presentationCapsule;
+- (double)capRadius;
+- (void)setCapRadius:;
+- (long long)capSegmentCount;
++ (BOOL)supportsSecureCoding;
++ (id)capsuleWithCapRadius:height:;
+@end

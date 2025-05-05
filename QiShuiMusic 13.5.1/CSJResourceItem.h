@@ -1,0 +1,31 @@
+@interface CSJResourceItem : NSObject
+@property (nonatomic) NSString urlString;
+@property (nonatomic) NSString dirName;
+@property (nonatomic) NSString fileFullPath;
+@property (nonatomic) NSString fileName;
+@property (nonatomic) NSString extenionName;
+@property (nonatomic) @? loadSuccess;
+@property (nonatomic) NSError loadError;
+- (void)setLoadSuccess:;
+- (id)extenionName;
+- (id)fileFullPath;
+- (id)fileFullPathWithDirPath:;
+- (void)setExtenionName:;
+- (void)setFileFullPath:;
+- (id)suffixFilePath;
+- (id)urlString;
+- (id)init;
+- (id)fileName;
+- (void)dealloc;
+- (id)key;
+- (void).cxx_destruct;
+- (void)setFileName:;
+- (void)setUrlString:;
+- (id)loadError;
+- (id)loadSuccess;
+- (void)setLoadError:;
+- (id)dirName;
+- (void)setDirName:;
++ (id)itemWithUrlString:;
++ (id)itemWithUrlString:dirName:;
+@end

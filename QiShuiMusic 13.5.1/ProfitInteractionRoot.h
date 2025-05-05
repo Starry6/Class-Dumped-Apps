@@ -1,0 +1,2 @@
+@interface ProfitInteractionRoot : GPBRootObject
+@end

@@ -1,0 +1,32 @@
+@interface IESLiveSaaSStickerView : UIView
+@property (nonatomic) UIImageView backgroundImageView;
+@property (nonatomic) UILabel textLabel;
+@property (nonatomic) <IESLiveSaaSLayoutContainerProvider> containerProvider;
+@property (nonatomic) UIButton reservBtn;
+@property (nonatomic) <IESLiveSaaSAnchorTimeSchedulePreference> timeNoticePref;
+@property (nonatomic) IESLiveSaaSStickerItemModel model;
+@property (nonatomic) @? reservAction;
+- (void)clickReservBtn:;
+- (id)reservAction;
+- (id)reservBtn;
+- (void)setContainerProvider:;
+- (void)setReservAction:;
+- (void)setReservBtn:;
+- (void)setTimeNoticePref:;
+- (id)timeNoticePref;
+- (void)updateContentWith:;
+- (void)updateReservBtn:;
+- (void)updateReservBtnUI:;
+- (id)model;
+- (id)backgroundImageView;
+- (id)textLabel;
+- (void)setModel:;
+- (id)containerProvider;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)setHidden:;
+- (void)setTextLabel:;
+- (void)loadViews;
+- (void)setBackgroundImageView:;
+- (void)updateWith:;
+@end

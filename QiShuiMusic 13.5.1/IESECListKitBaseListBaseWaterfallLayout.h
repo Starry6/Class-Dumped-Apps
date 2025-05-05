@@ -1,0 +1,30 @@
+@interface IESECListKitBaseListBaseWaterfallLayout : IESECListKitBaseLayout
+@property (nonatomic) NSMutableArray allItemAttributes;
+@property (nonatomic) NSMutableDictionary headersAttributes;
+@property (nonatomic) NSMutableDictionary footersAttributes;
+@property (nonatomic) NSMutableArray unionRects;
+- (void)buildUnionRects;
+- (id)allItemAttributes;
+- (id)footersAttributes;
+- (id)headersAttributes;
+- (id)ieseclistkit_extraLayoutAttributesForElementsInRect:;
+- (void)ieseclistkit_updateFinalLayoutAttributes:forAppearingCellAtIndexPath:isDeleted:;
+- (void)ieseclistkit_updateInitialLayoutAttributes:forAppearingCellAtIndexPath:isInserted:;
+- (void)setAllItemAttributes:;
+- (void)setFootersAttributes:;
+- (void)setHeadersAttributes:;
+- (void)setUnionRects:;
+- (id)unionRects;
+- (id)initialLayoutAttributesForAppearingItemAtIndexPath:;
+- (id)layoutAttributesForElementsInRect:;
+- (id)init;
+- (void)prepareLayout;
+- (id)layoutAttributesForSupplementaryViewOfKind:atIndexPath:;
+- (id)finalLayoutAttributesForDisappearingItemAtIndexPath:;
+- (BOOL)shouldInvalidateLayoutForBoundsChange:;
+- (id)indexPathsToInsertForSupplementaryViewOfKind:;
+- (id)indexPathsToDeleteForSupplementaryViewOfKind:;
+- (void).cxx_destruct;
+- (void)prepareForCollectionViewUpdates:;
+- (void)finalizeCollectionViewUpdates;
+@end

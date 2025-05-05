@@ -1,0 +1,36 @@
+@interface IESIMALMSysPlayerCacheWrapper : NSObject
+@property (nonatomic) @? requestBlock;
+@property (nonatomic) @? responseBlock;
+@property (nonatomic) @? speedTestBlock;
+@property (nonatomic) q videoBSNetworkProfilerType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)clearAllCache;
+- (void)getCacheSizeWithCompletion:;
+- (long long)getIESVideoBSNetworkProfilerType;
+- (void)hasCacheForVideoID:URLString:completion:;
+- (BOOL)hasEnoughCacheForURLString:videoDuration:networkSpeed:;
+- (void)setCacheKeyParserBlock:;
+- (void)setCacheReportBlock:;
+- (void)setCacheSizeLimit:;
+- (void)setIESVideoBSNetworkProfilerType:;
+- (void)setPlayerDidFinishRequestURLBlock:;
+- (void)setPlayerDidStartRequestURLBlock:;
+- (void)setSpeedTestBlock:;
+- (void)setVideoBSNetworkProfilerType:;
+- (void)setVideoDownloadSpeedTestAction:;
+- (id)speedTestBlock;
+- (long long)videoBSNetworkProfilerType;
+- (void)videoDidDownloadDataLength:interval:;
+- (void)videoDidReceiveResponse:forRequest:;
+- (void)videoWillRequest:isRedirectRequest:;
+- (id)init;
+- (void).cxx_destruct;
+- (id)requestBlock;
+- (void)setRequestBlock:;
+- (id)responseBlock;
+- (void)setResponseBlock:;
++ (id)sharedCache;
+@end

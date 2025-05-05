@@ -1,0 +1,37 @@
+@interface MLBayesianProbitRegression : MLRegressor
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)model;
+- (id)regress:options:error:;
+- (void).cxx_destruct;
+- (void)reset;
+- (id).cxx_construct;
+- (BOOL)isEqual:;
+- (id)initWithSpecification:configuration:error:;
+- (id)saveModelToSpecification:;
+- (BOOL)updateModelFromFeatures:toTarget:options:error:;
+- (BOOL)setInputFeatureName:to:;
+- (BOOL)setOutputFeatureName:to:;
+- (BOOL)setFeatureCount:;
+- (unsigned long long)FeatureCount;
+- (id)initWithDescription:numberOfFeatures:priorMean:regressionInputName:optimismInputName:samplingScaleInputName:samplingTruncationInputName:meanOutputName:varianceOutputName:pessimisticProbabilityOutputName:sampledProbabilityOutputName:;
+- (id)initWithDescription:numberOfFeatures:priorMean:;
+- (id)getArrayFeatureValue:;
+- (id)getOneHotFeatureValues:error:;
+- (id)createRegressorResult:;
+- (double)getFeatureValue:forName:withType:;
+- (double)getOptimism:;
+- (double)getSamplingScale:;
+- (double)getSamplingTruncation:;
+- (BOOL)convertOutputFeatureToPredictionValues:event:importance:error:;
+- (BOOL)updateModelFromFeatures:toTarget:error:;
+- (BOOL)isEqualToBopr:;
+- (void)createCheckpoint;
+- (void)resetToLastCheckpointBeforeDate:;
++ (id)loadModelFromSpecification:configuration:error:;
++ (id)modelWithContentsOfURL:error:;
++ (BOOL)setFeatureName:to:descriptions:;
++ (BOOL)validateModelDescription:;
+@end

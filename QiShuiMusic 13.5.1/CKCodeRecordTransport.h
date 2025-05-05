@@ -1,0 +1,37 @@
+@interface CKCodeRecordTransport : PBCodable
+@property (nonatomic) BOOL hasLocalSerialization;
+@property (nonatomic) NSData localSerialization;
+@property (nonatomic) BOOL hasWireSerialization;
+@property (nonatomic) NSData wireSerialization;
+@property (nonatomic) BOOL hasContents;
+@property (nonatomic) NSInteger contents;
+@property (nonatomic) BOOL hasEncryptedMasterKey;
+@property (nonatomic) NSData encryptedMasterKey;
+- (int)contents;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void)setContents:;
+- (BOOL)hasContents;
+- (void).cxx_destruct;
+- (id)initWithRecord:;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)contentsAsString:;
+- (int)StringAsContents:;
+- (void)setHasContents:;
+- (void)clearOneofValuesForContents;
+- (BOOL)hasLocalSerialization;
+- (void)setLocalSerialization:;
+- (BOOL)hasWireSerialization;
+- (void)setWireSerialization:;
+- (BOOL)hasEncryptedMasterKey;
+- (id)localSerialization;
+- (id)wireSerialization;
+- (id)encryptedMasterKey;
+- (void)setEncryptedMasterKey:;
+@end

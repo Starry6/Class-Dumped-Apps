@@ -1,0 +1,36 @@
+@interface TKTokenDriver : NSObject
+@property (nonatomic) TKTokenDriverContext context;
+@property (nonatomic) NSMutableDictionary tokenConnections;
+@property (nonatomic) @ keepAlive;
+@property (nonatomic) TKSharedResourceSlot keepAliveResourceSlot;
+@property (nonatomic) NSString classID;
+@property (nonatomic) NSDictionary extensionAttributes;
+@property (nonatomic) NSArray tokenSessions;
+@property (nonatomic) <TKTokenDriverDelegate> delegate;
+- (void)setKeepAlive:;
+- (void)terminate;
+- (id)init;
+- (void)dealloc;
+- (id)context;
+- (void)setDelegate:;
+- (id)extensionAttributes;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)classID;
+- (void)setContext:;
+- (id)keepAlive;
+- (id)endpointForToken:;
+- (void)acquireTokenWithInstanceID:reply:;
+- (void)acquireTokenWithSlot:AID:reply:;
+- (void)releaseTokenWithInstanceID:;
+- (void)configureWithReply:;
+- (id)createTokenWithSlot:AID:error:;
+- (void)getTokenWithAttributes:reply:;
+- (void)auditAuthOperation:auditToken:success:;
+- (id)tokenSessions;
+- (id)tokenConnections;
+- (id)keepAliveResourceSlot;
+- (void)setKeepAliveResourceSlot:;
+- (void)setExtensionAttributes:;
++ (id)createDriver;
+@end

@@ -1,0 +1,34 @@
+@interface CUTFileCopier : NSObject
+@property (nonatomic) ^v _BOMCopier;
+@property (nonatomic) BOOL inProgress;
+@property (nonatomic) I operation;
+@property (nonatomic) <CUTFileCopierDelegate> delegate;
+@property (nonatomic) NSURL inputURL;
+@property (nonatomic) NSURL outputURL;
+@property (nonatomic) @ identifier;
+@property (nonatomic) BOOL wasCancelled;
+@property (nonatomic) BOOL didErrorOccur;
+- (BOOL)wasCancelled;
+- (unsigned int)operation;
+- (void)cancel;
+- (void)dealloc;
+- (void)start;
+- (void)setDelegate:;
+- (id)identifier;
+- (void)cleanup;
+- (void)setOperation:;
+- (BOOL)inProgress;
+- (void)setInProgress:;
+- (id)outputURL;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)_worker_doCopy;
+- (void)_main_copierFinishedWithResult:;
+- (id)initWithInputURL:outputURL:identifier:operation:delegate:;
+- (id)_temporaryCopierPath;
+- (void)_fillOutputURLFromInputURL;
+- (id)inputURL;
+- (BOOL)didErrorOccur;
+- (id)_BOMCopier;
+- (void)set_BOMCopier:;
+@end

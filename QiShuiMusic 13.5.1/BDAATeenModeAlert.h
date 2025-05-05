@@ -1,0 +1,33 @@
+@interface BDAATeenModeAlert : UIView
+@property (nonatomic) UIControl backControl;
+@property (nonatomic) UIView contentView;
+@property (nonatomic) UIImageView coverImageView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel contentLabel;
+@property (nonatomic) UIButton openTeenModeButton;
+@property (nonatomic) UIButton iKnowButton;
+@property (nonatomic) @? dismissCompletion;
+- (void)setBackControl:;
+- (void)setIKnowButton:;
+- (id)backControl;
+- (id)coverImageView;
+- (id)dismissCompletion;
+- (id)iKnowButton;
+- (void)openTeenMode;
+- (id)openTeenModeButton;
+- (void)setCoverImageView:;
+- (void)setDismissCompletion:;
+- (void)setOpenTeenModeButton:;
+- (void)dismiss;
+- (id)contentView;
+- (void)setTitleLabel:;
+- (void)show;
+- (id)initWithFrame:;
+- (void)dismissWithAnimation:;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (id)titleLabel;
+- (void)setupUI;
+- (id)contentLabel;
+- (void)setContentLabel:;
+@end

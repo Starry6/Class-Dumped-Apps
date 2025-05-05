@@ -1,0 +1,2 @@
+@interface BDASifWebModel : NSObject
+@end

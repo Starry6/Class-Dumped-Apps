@@ -1,0 +1,30 @@
+@interface PKPhysicsJoint : NSObject
+@property (nonatomic) ^{b2Joint=^^?i^{b2Joint}^{b2Joint}{b2JointEdge=^{b2Body}^{b2Joint}^{b2JointEdge}^{b2JointEdge}}{b2JointEdge=^{b2Body}^{b2Joint}^{b2JointEdge}^{b2JointEdge}}^{b2Body}^{b2Body}BB^v} _joint;
+@property (nonatomic) ^{b2JointDef=i^v^{b2Body}^{b2Body}B} _jointDef;
+@property (nonatomic) PKPhysicsBody bodyA;
+@property (nonatomic) PKPhysicsBody bodyB;
+@property (nonatomic) {CGVector=dd} reactionForce;
+@property (nonatomic) double reactionTorque;
+- (BOOL)isKindOfClass:;
+- (id)init;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (void)create;
+- (id)bodyB;
+- (id)bodyA;
+- (BOOL)_implicit;
+- (id)_joint;
+- (BOOL)_inUse;
+- (void)setBodyA:;
+- (void)setBodyB:;
+- (id)reactionForce;
+- (double)reactionTorque;
+- (void)set_implicit:;
+- (void)set_inUse:;
+- (BOOL)isEqualToJoint:;
+- (void)set_joint:;
+- (id)_jointDef;
++ (BOOL)supportsSecureCoding;
++ (BOOL)supportsSecureCoding;
+@end

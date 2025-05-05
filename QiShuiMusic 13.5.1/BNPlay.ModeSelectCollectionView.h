@@ -1,0 +1,23 @@
+@interface BNPlay.ModeSelectCollectionView : UICollectionView
+- (id)collectionView:layout:referenceSizeForFooterInSection:;
+- (id)collectionView:layout:insetForSectionAtIndex:;
+- (id)collectionView:layout:sizeForItemAtIndexPath:;
+- (double)collectionView:layout:minimumLineSpacingForSectionAtIndex:;
+- (id)collectionView:layout:referenceSizeForHeaderInSection:;
+- (double)collectionView:layout:minimumInteritemSpacingForSectionAtIndex:;
+- (void)scrollViewDidEndDecelerating:;
+- (void)scrollViewWillBeginDecelerating:;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (void)scrollViewWillBeginDragging:;
+- (void)scrollViewDidEndDragging:willDecelerate:;
+- (void)collectionView:willDisplayCell:forItemAtIndexPath:;
+- (long long)collectionView:numberOfItemsInSection:;
+- (void)collectionView:willDisplaySupplementaryView:forElementKind:atIndexPath:;
+- (void)collectionView:didEndDisplayingSupplementaryView:forElementOfKind:atIndexPath:;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (id)collectionView:viewForSupplementaryElementOfKind:atIndexPath:;
+- (long long)numberOfSectionsInCollectionView:;
+- (id)initWithFrame:collectionViewLayout:;
+- (id)initWithCoder:;
+- (void).cxx_destruct;
+@end

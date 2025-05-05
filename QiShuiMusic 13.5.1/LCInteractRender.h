@@ -1,0 +1,38 @@
+@interface LCInteractRender : NSObject
+@property (nonatomic) LSGLContext context;
+@property (nonatomic) LSGLPictureInput gl_input;
+@property (nonatomic) LSGLPreviewView gl_render_view;
+@property (nonatomic) UIView renderSuperView;
+@property (nonatomic) NSDate firstVideoFrameDate;
+@property (nonatomic) BOOL firstVideoFrame;
+@property (nonatomic) {CGSize=dd} lastFrameSize;
+- (id)renderSuperView;
+- (void)resetPreviewOn:;
+- (BOOL)firstVideoFrame;
+- (id)firstVideoFrameDate;
+- (id)getRenderView;
+- (id)getTextureLoader;
+- (id)gl_input;
+- (id)gl_render_view;
+- (void)handleFullLinkEnableDumpNotifications:;
+- (id)initWithPixelFmt:purgeFBOnGLError:;
+- (void)interruptPipeline:;
+- (id)lastFrameSize;
+- (id)lastInputPixelBuffer;
+- (void)processVideoBuffer:timeStamp:;
+- (void)removeFromSuperView;
+- (void)setFirstVideoFrame:;
+- (void)setFirstVideoFrameDate:;
+- (void)setGl_input:;
+- (void)setGl_render_view:;
+- (void)setLastFrameSize:;
+- (void)setRenderSuperView:;
+- (void)setupGLVideoPath;
+- (void)setBackgroundColor:;
+- (void)dealloc;
+- (id)context;
+- (void)observeValueForKeyPath:ofObject:change:context:;
+- (void).cxx_destruct;
+- (void)setContext:;
+- (id)renderView;
+@end

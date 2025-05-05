@@ -1,0 +1,23 @@
+@interface AWEIMShareAndForwardGroupImpl : NSObject
+@property (nonatomic) AWEShareContext shareContext;
+@property (nonatomic) AWEIMMessage forwardMessage;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)clearBusinessModelFromIMSetting;
+- (id)businessModelFromIMSetting;
+- (void)configCoverImageView:withIconUrl:desc:;
+- (void)configShareAlertTopView:withCoverImageView:contentLabel:;
+- (void)configShareBottomInputViewWithCoverImageView:;
+- (void)didSelectShareUser:inVC:;
+- (id)forwardMessage;
+- (id)groupModel;
+- (id)messageTypeForShareTrack;
+- (void)saveBusinessModelToIMSetting;
+- (void)setForwardMessage:;
+- (void)setShareContext:;
+- (id)shareContext;
+- (id)shareMessage;
+- (void).cxx_destruct;
+@end

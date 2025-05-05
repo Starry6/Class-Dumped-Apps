@@ -1,0 +1,2 @@
+@interface FlexActivityRoot : GPBRootObject
+@end

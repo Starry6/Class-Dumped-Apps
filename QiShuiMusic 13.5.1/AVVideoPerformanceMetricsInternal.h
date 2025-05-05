@@ -1,0 +1,2 @@
+@interface AVVideoPerformanceMetricsInternal : NSObject
+@end

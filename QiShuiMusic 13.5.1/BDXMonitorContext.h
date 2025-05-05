@@ -1,0 +1,31 @@
+@interface BDXMonitorContext : NSObject
+@property (nonatomic) NSString originURL;
+@property (nonatomic) NSString aid;
+@property (nonatomic) NSString bid;
+@property (nonatomic) NSString containerName;
+@property (nonatomic) q viewType;
+@property (nonatomic) NSDictionary monitorCommonParams;
+@property (nonatomic) BOOL isMonitorEnabled;
+@property (nonatomic) NSString sessionID;
+@property (nonatomic) BDXTracertMonitor tracertMonitor;
+- (void)setBid:;
+- (id)bid;
+- (BOOL)isMonitorEnabled;
+- (id)monitorCommonParams;
+- (void)setIsMonitorEnabled:;
+- (void)setMonitorCommonParams:;
+- (void)setTracertMonitor:;
+- (id)tracertMonitor;
+- (void)setSessionID:;
+- (id)sessionID;
+- (id)containerName;
+- (id)init;
+- (long long)viewType;
+- (void)setContainerName:;
+- (void).cxx_destruct;
+- (id)originURL;
+- (void)setOriginURL:;
+- (void)setViewType:;
+- (void)setAid:;
+- (id)aid;
+@end

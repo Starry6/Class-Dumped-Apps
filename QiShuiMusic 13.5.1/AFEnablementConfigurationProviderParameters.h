@@ -1,0 +1,38 @@
+@interface AFEnablementConfigurationProviderParameters : NSObject
+@property (nonatomic) q enablementFlow;
+@property (nonatomic) BOOL newUser;
+@property (nonatomic) NSError userStatusFetchError;
+@property (nonatomic) NSDate dateStartedResolvingUserStatus;
+@property (nonatomic) NSDate dateEndedResolvingUserStatus;
+@property (nonatomic) AFExperiment experiment;
+@property (nonatomic) NSError experimentFetchError;
+@property (nonatomic) NSDate dateStartedResolvingExperiment;
+@property (nonatomic) NSDate dateEndedResolvingExperiment;
+@property (nonatomic) NSDictionary outputVoiceCountForRecognitionLanguage;
+@property (nonatomic) BOOL recognitionLanguageWithMultipleOutputVoicesExists;
+- (id)init;
+- (id)mutatedCopyWithMutator:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)_descriptionWithIndent:;
+- (id)initWithBuilder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)experiment;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)initWithEnablementFlow:newUser:userStatusFetchError:dateStartedResolvingUserStatus:dateEndedResolvingUserStatus:experiment:experimentFetchError:dateStartedResolvingExperiment:dateEndedResolvingExperiment:outputVoiceCountForRecognitionLanguage:recognitionLanguageWithMultipleOutputVoicesExists:;
+- (long long)enablementFlow;
+- (BOOL)newUser;
+- (id)userStatusFetchError;
+- (id)dateStartedResolvingUserStatus;
+- (id)dateEndedResolvingUserStatus;
+- (id)experimentFetchError;
+- (id)dateStartedResolvingExperiment;
+- (id)dateEndedResolvingExperiment;
+- (id)outputVoiceCountForRecognitionLanguage;
+- (BOOL)recognitionLanguageWithMultipleOutputVoicesExists;
++ (id)newWithBuilder:;
++ (BOOL)supportsSecureCoding;
+@end

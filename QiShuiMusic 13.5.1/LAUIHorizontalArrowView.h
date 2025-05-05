@@ -1,0 +1,34 @@
+@interface LAUIHorizontalArrowView : UIView
+@property (nonatomic) BOOL animating;
+@property (nonatomic) q direction;
+@property (nonatomic) double displacement;
+@property (nonatomic) NSString text;
+@property (nonatomic) {CGSize=dd} maximumLineSize;
+- (void)_updateFont;
+- (void)setAnimating:;
+- (long long)direction;
+- (void)setDirection:;
+- (void)dealloc;
+- (BOOL)isAnimating;
+- (void)layoutSubviews;
+- (void)setText:;
+- (void)tintColorDidChange;
+- (id)initWithFrame:;
+- (void)contentSizeCategoryDidChange:;
+- (id)sizeThatFits:;
+- (void).cxx_destruct;
+- (void)didMoveToWindow;
+- (id)text;
+- (id).cxx_construct;
+- (void)setDisplacement:;
+- (double)displacement;
+- (void)boldTextStatusDidChange:;
+- (void)_layoutIfNeededAnimated:;
+- (void)_updateViewsWithColor;
+- (void)_updateAnimatingAnimated:;
+- (void)_updateDirectionTransform;
+- (void)_updatePulsingWithDelay:;
+- (void)_updateLabelSize;
+- (void)setMaximumLineSize:;
+- (id)maximumLineSize;
+@end

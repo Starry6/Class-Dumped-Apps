@@ -1,0 +1,32 @@
+@interface IESECWebImageServiceNewImpl : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
++ (id)appendLogWithBizTag:logExtra:;
++ (void)cancelRequestInImageView:;
++ (BOOL)enableAddQueryFlagForImageRequest;
++ (BOOL)findSceneTagFromResponder;
++ (id)getPreviewImageAtCacheWithURL:;
++ (id)getWebImageAtCacheWithURL:;
++ (void)imageView:setImageWithURLArray:placeholder:bizTag:sceneTag:preferredSize:options:logExtra:perfBlock:completion:;
++ (void)imageView:setImageWithURLArray:placeholder:bizTag:sceneTag:preferredSize:options:logExtra:perfBlock:requestConfig:completion:;
++ (void)imageView:setPreviewImageWithURL:;
++ (id)logAppendMap;
++ (id)p_iesec_curPageName;
++ (void)p_iesec_imageView:fetchImageWithURLArray:placeholder:bizTag:sceneTag:preferredSize:options:completion:;
++ (void)p_iesec_imageView:fetchImageWithURLArray:placeholder:bizTag:sceneTag:preferredSize:options:requestConfig:completion:;
++ (void)p_iesec_imageView:setImageWithURLArray:placeholder:bizTag:sceneTag:preferredSize:options:isPreview:logExtra:perfBlock:completion:;
++ (void)p_iesec_imageView:setImageWithURLArray:placeholder:bizTag:sceneTag:preferredSize:options:isPreview:logExtra:perfBlock:requestConfig:completion:;
++ (void)p_iesec_requestImageWithURLArray:bizTag:sceneTag:preferredSize:options:isPreview:isPreload:logExtra:perfBlock:completion:;
++ (void)p_iesec_requestImageWithURLArray:bizTag:sceneTag:preferredSize:options:isPreview:isPreload:logExtra:perfBlock:requestConfig:completion:;
++ (void)p_iesec_requestImageWithURLArray:index:bizTag:sceneTag:preferredSize:options:requestConfig:completion:;
++ (id)p_iesec_updateBizTagForUrl:;
++ (id)p_iesec_updateSceneTagForUrl:imageView:;
++ (void)preconnectHost:keepAlive:;
++ (void)preloadImageWithURL:bizTag:sceneTag:options:logExtra:perfBlock:completion:;
++ (void)preloadImageWithURLArray:bizTag:sceneTag:options:logExtra:perfBlock:completion:;
++ (void)registerLogAppendDictionary:withBizTag:;
++ (void)requestImageWithURLArray:bizTag:sceneTag:preferredSize:options:logExtra:perfBlock:completion:;
++ (void)requestImageWithURLArray:bizTag:sceneTag:preferredSize:options:logExtra:perfBlock:requestConfig:completion:;
+@end

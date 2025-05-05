@@ -1,0 +1,33 @@
+@interface IESLiveSpeedGiftSendPersonalityPopView : UIView
+@property (nonatomic) UIView contentView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel contentLabel;
+@property (nonatomic) UIButton cancelButton;
+@property (nonatomic) UIButton confirmButton;
+@property (nonatomic) NSDictionary messageDict;
+@property (nonatomic) @? confirmBlock;
+@property (nonatomic) @? cancelBlock;
+- (void)setMessageDict:;
+- (id)confirmBlock;
+- (void)setConfirmBlock:;
+- (void)tapCancel;
+- (void)tapConfirm;
+- (void)dismiss;
+- (id)contentView;
+- (void)setCancelBlock:;
+- (void)setTitleLabel:;
+- (id)initWithFrame:;
+- (id)cancelBlock;
+- (void).cxx_destruct;
+- (void)setCancelButton:;
+- (void)setContentView:;
+- (id)titleLabel;
+- (id)cancelButton;
+- (void)performShowAnimation;
+- (void)setupUI;
+- (id)contentLabel;
+- (void)setContentLabel:;
+- (id)confirmButton;
+- (void)setConfirmButton:;
+- (id)messageDict;
+@end

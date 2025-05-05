@@ -1,0 +1,2 @@
+@interface IESLiveSaaSPBIESLiveSaaSPBCommonPopupRoot : GPBRootObject
+@end

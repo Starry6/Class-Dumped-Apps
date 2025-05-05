@@ -1,0 +1,31 @@
+@interface AVMetadataObjectInternal : NSObject
+@property (nonatomic) {?=qiIq} time;
+@property (nonatomic) {?=qiIq} duration;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} bounds;
+@property (nonatomic) NSString type;
+@property (nonatomic) AVCaptureInput input;
+@property (nonatomic) AVMetadataObject originalMetadataObject;
+@property (nonatomic) q groupID;
+@property (nonatomic) Q syntheticFocusMode;
+@property (nonatomic) q detectionSource;
+- (void)setGroupID:;
+- (id)input;
+- (long long)groupID;
+- (void)setTime:;
+- (id)init;
+- (void)dealloc;
+- (id)time;
+- (void)setType:;
+- (void)setInput:;
+- (void)setDuration:;
+- (id)type;
+- (void)setBounds:;
+- (id)bounds;
+- (id)duration;
+- (id)originalMetadataObject;
+- (void)setOriginalMetadataObject:;
+- (unsigned long long)syntheticFocusMode;
+- (void)setSyntheticFocusMode:;
+- (long long)detectionSource;
+- (void)setDetectionSource:;
+@end

@@ -1,0 +1,32 @@
+@interface CNCardGameCenterManager : NSObject
+@property (nonatomic) <CNSchedulerProvider> schedulerProvider;
+@property (nonatomic) <CNScheduler> workQueue;
+@property (nonatomic) <CNCancelable> relationshipResultsCancelable;
+@property (nonatomic) GKServiceProxy gameCenterProxy;
+@property (nonatomic) BOOL hasCheckedAuthenticatedLocalPlayer;
+@property (nonatomic) CNContact contact;
+@property (nonatomic) CNUICoreRecentsManager recentsManager;
+- (id)init;
+- (id)contact;
+- (id)workQueue;
+- (void)setContact:;
+- (id)schedulerProvider;
+- (id)recentsManager;
+- (void)setRecentsManager:;
+- (void).cxx_destruct;
+- (id)handles;
+- (BOOL)shouldActionDisplayDropdownMenu;
+- (void)getHasAuthenticatedLocalPlayerHandler:;
+- (BOOL)hasAuthenticatedLocalPlayer;
+- (id)gameCenterProxy;
+- (void)getGameCenterRelationshipsForContact:completionHandler:;
+- (void)refreshGameCenterRelationshipsForContact:completionHandler:;
+- (void)handleResults:forContact:error:completionHandler:;
+- (id)defaultFriendResultFromFriendResults:forContact:;
+- (id)handlesForContact:;
+- (id)relationshipResultsCancelable;
+- (void)setRelationshipResultsCancelable:;
+- (void)setGameCenterProxy:;
+- (BOOL)hasCheckedAuthenticatedLocalPlayer;
+- (void)setHasCheckedAuthenticatedLocalPlayer:;
+@end

@@ -1,0 +1,30 @@
+@interface IESECMallRecommendConfig : NSObject
+@property (nonatomic) q scene;
+@property (nonatomic) NSString pageName;
+@property (nonatomic) NSString configJsonUrl;
+@property (nonatomic) NSString pageCardUrl;
+@property (nonatomic) q straightOutLevel;
+@property (nonatomic) NSString screenStraightId;
+@property (nonatomic) BOOL openSaveStraightOutData;
+@property (nonatomic) BOOL manualCreatePage;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} viewPortOnWindow;
+- (void)setPageCardUrl:;
+- (id)configJsonUrl;
+- (BOOL)manualCreatePage;
+- (BOOL)openSaveStraightOutData;
+- (id)pageCardUrl;
+- (id)screenStraightId;
+- (void)setConfigJsonUrl:;
+- (void)setManualCreatePage:;
+- (void)setOpenSaveStraightOutData:;
+- (void)setScreenStraightId:;
+- (void)setStraightOutLevel:;
+- (void)setViewPortOnWindow:;
+- (long long)straightOutLevel;
+- (id)viewPortOnWindow;
+- (void)setScene:;
+- (long long)scene;
+- (void).cxx_destruct;
+- (void)setPageName:;
+- (id)pageName;
+@end

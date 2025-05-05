@@ -1,0 +1,2 @@
+@interface WebProgressItem : NSObject
+@end

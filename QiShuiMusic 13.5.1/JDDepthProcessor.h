@@ -1,0 +1,33 @@
+@interface JDDepthProcessor : NSObject
+@property (nonatomic) Q requiredStorageBytesForGeneratedPointClouds;
+@property (nonatomic) BOOL outputAdditionalEchos;
+@property (nonatomic) BOOL producePointCloudsWithCalibration;
+- (void)setInternalState:;
+- (void)dealloc;
+- (void)setDelegate:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id).cxx_construct;
+- (id)generatePointCloudFromRawFrame:;
+- (id)initWithSystemCalibrationData:;
+- (void)startNewStatisticsSession;
+- (BOOL)setDataBufferPool:;
+- (id)getInternalState;
+- (BOOL)reportSessionStatistics;
+- (id)generateFrameConfigsForPreset:withOptions:;
+- (BOOL)prepareForJasperPreset:;
+- (void)setGmoFlowBitmap:;
+- (void)setGmoDebugMode;
+- (void)setGmoProvider:;
+- (BOOL)prepareDataPool;
+- (unsigned long long)requiredStorageBytesForGeneratedPointClouds;
+- (id)generatePointCloudFromRawFrame:usingDataBuffer:;
+- (id)generateFrameConfigsForPreset:overrides:;
+- (id)generateFrameConfigsForPreset:withOverrides:;
+- (BOOL)outputAdditionalEchos;
+- (void)setOutputAdditionalEchos:;
+- (BOOL)producePointCloudsWithCalibration;
+- (void)setProducePointCloudsWithCalibration:;
++ (int)resolvePreset:;
++ (id)defaultFrameConfigOverrides;
+@end

@@ -1,0 +1,33 @@
+@interface AVVCAudioBuffer : NSObject
+@property (nonatomic) NSInteger channels;
+@property (nonatomic) NSInteger bytesCapacity;
+@property (nonatomic) NSInteger bytesDataSize;
+@property (nonatomic) ^v data;
+@property (nonatomic) NSInteger packetDescriptionCapacity;
+@property (nonatomic) NSInteger packetDescriptionCount;
+@property (nonatomic) ^{AudioStreamPacketDescription=qII} packetDescriptions;
+@property (nonatomic) Q timeStamp;
+@property (nonatomic) ^{AudioStreamBasicDescription=dIIIIIIII} streamDescription;
+@property (nonatomic) BOOL upsamplingSourceAudio;
+@property (nonatomic) BOOL remoteVoiceActivityAvailable;
+@property (nonatomic) C remoteVoiceActivityRMS;
+@property (nonatomic) C remoteVoiceActivityVAD;
+- (int)channels;
+- (void)dealloc;
+- (id)data;
+- (void)finalize;
+- (unsigned long long)timeStamp;
+- (id)streamDescription;
+- (int)bytesDataSize;
+- (int)packetDescriptionCount;
+- (id)packetDescriptions;
+- (int)bytesCapacity;
+- (void)setBytesDataSize:;
+- (int)packetDescriptionCapacity;
+- (void)setPacketDescriptions:count:;
+- (unsigned char)remoteVoiceActivityRMS;
+- (unsigned char)remoteVoiceActivityVAD;
+- (BOOL)remoteVoiceActivityAvailable;
+- (BOOL)upsamplingSourceAudio;
+- (id)initWithAudioQueueBuffer:channels:timeStamp:;
+@end

@@ -1,0 +1,34 @@
+@interface SFCollaborationCloudSharingRequest : NSObject
+@property (nonatomic) NSUUID collaborationItemIdentifier;
+@property (nonatomic) NSArray options;
+@property (nonatomic) NSURL fileOrFolderURL;
+@property (nonatomic) CKShare share;
+@property (nonatomic) CKContainerSetupInfo setupInfo;
+@property (nonatomic) NSArray phoneNumbers;
+@property (nonatomic) NSArray emailAddresses;
+@property (nonatomic) NSNumber accessType;
+@property (nonatomic) NSNumber permissionType;
+@property (nonatomic) NSNumber allowOthersToInvite;
+@property (nonatomic) NSString activityType;
+@property (nonatomic) NSString appName;
+@property (nonatomic) NSData appIconData;
+- (id)phoneNumbers;
+- (id)activityType;
+- (id)emailAddresses;
+- (id)share;
+- (id)initWithCoder:;
+- (id)appName;
+- (id)setupInfo;
+- (void)encodeWithCoder:;
+- (id)options;
+- (void).cxx_destruct;
+- (id)accessType;
+- (id)fileOrFolderURL;
+- (id)collaborationItemIdentifier;
+- (id)allowOthersToInvite;
+- (id)permissionType;
+- (id)appIconData;
+- (id)initWithCollaborationItemIdentifier:options:fileOrFolderURL:share:setupInfo:phoneNumbers:emailAddresses:activityType:appName:appIconData:;
+- (id)initWithCollaborationItemIdentifier:options:fileOrFolderURL:share:setupInfo:activityType:;
++ (BOOL)supportsSecureCoding;
+@end

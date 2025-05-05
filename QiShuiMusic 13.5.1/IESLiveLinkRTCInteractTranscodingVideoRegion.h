@@ -1,0 +1,30 @@
+@interface IESLiveLinkRTCInteractTranscodingVideoRegion : NSObject
+@property (nonatomic) NSString uid;
+@property (nonatomic) double x;
+@property (nonatomic) double y;
+@property (nonatomic) double width;
+@property (nonatomic) double height;
+@property (nonatomic) q zOrder;
+@property (nonatomic) double alpha;
+@property (nonatomic) q contentControl;
+@property (nonatomic) Q renderMode;
+- (long long)contentControl;
+- (void)setContentControl:;
+- (void)setX:;
+- (id)uid;
+- (void)setY:;
+- (double)y;
+- (void)setUid:;
+- (void)setAlpha:;
+- (void)setWidth:;
+- (void)setRenderMode:;
+- (double)x;
+- (double)height;
+- (unsigned long long)renderMode;
+- (double)width;
+- (double)alpha;
+- (void)setHeight:;
+- (void).cxx_destruct;
+- (long long)zOrder;
+- (void)setZOrder:;
+@end

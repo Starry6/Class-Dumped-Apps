@@ -1,0 +1,31 @@
+@interface IESECGoodsFeedHelper : NSObject
++ (void)preLoadInternalFeedWithRequest:;
++ (BOOL)GoodsFeedRefactorEnabled;
++ (void)setGoodsFeedVC:;
++ (id)activityDetailForTrackingWithParams:;
++ (id)buildParamsForOneStepOrder:request:;
++ (id)createGoodsDetailParameterByResponse:request:entranceInfoJSONString:metaParams:;
++ (id)exposedMessageForParameters:;
++ (BOOL)goodsFeedLighting;
++ (BOOL)goodsFeedSpeedup;
++ (id)goodsFeedVC;
++ (id)indemnificationMessageWithParams:;
++ (id)preLoadGroupID;
++ (id)preLoadInnerData;
++ (BOOL)preLoading;
++ (id)recommendTypeEventDescriptionWithType:;
++ (void)requestGoodInternalFeedRecommendListWithRequest:metaParams:completion:;
++ (void)requestSearchBannerWithParams:completion:;
++ (void)setGoodsFeedLighting:;
++ (void)setGoodsFeedSpeedup:;
++ (void)setPreLoadGroupID:;
++ (void)setPreLoadInnerData:;
++ (void)setPreLoading:;
++ (void)showGoodsFeedWithParams:source:completion:;
++ (void)showGoodsInternalFeed:;
++ (id)showParams:from:recommendType:metricsSnapshot:willOpenHalfPage:willClosePage:closeHalfPageProgress:feedSeesionId:completion:;
++ (void)trackInflowCoreParamsWithResponse:request:extraParams:;
++ (void)updateBannerViewControllerData:response:error:;
++ (void)updateTargetViewControllerData:largeCardResponse:error:;
++ (void)updateTargetViewControllerData:response:requestStart:metric:error:;
+@end

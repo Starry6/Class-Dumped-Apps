@@ -1,0 +1,24 @@
+@interface VCDatagramChannelIDSEmulated : VCDatagramChannelIDS
+- (void)dealloc;
+- (unsigned int)token;
+- (int)start;
+- (void)setEventHandler:;
+- (id)destination;
+- (void)invalidate;
+- (void)setReadHandler:;
+- (id)connectedLinks;
+- (id)defaultLink;
+- (void)writeDatagrams:datagramsSize:datagramsInfo:datagramsCount:options:completionHandler:;
+- (void)writeDatagram:datagramSize:datagramInfo:options:completionHandler:;
+- (void)readyToRead;
+- (void)setChannelPreferences:;
+- (void)setWiFiAssist:;
+- (void)requestSessionInfoWithOptions:;
+- (void)osChannelInfoLog;
+- (void)optInStreamIDs:;
+- (void)optOutStreamIDs:;
+- (int)dataPath;
+- (id)initWithIDSDatagramChannel:mode:;
+- (BOOL)writeToEmulatedNetworkWithDatagram:datagramSize:datagramInfo:options:;
+- (void)setupEmulatedNetwork;
+@end

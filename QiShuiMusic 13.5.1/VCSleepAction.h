@@ -1,0 +1,34 @@
+@interface VCSleepAction : NSObject
+@property (nonatomic) NSString workflowActionIdentifier;
+@property (nonatomic) NSDictionary serializedParameters;
+@property (nonatomic) NSString sourceAppBundleIdentifier;
+@property (nonatomic) NSString bundleIdentifierForDisplay;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString subtitle;
+@property (nonatomic) BOOL goodForSleep;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) Q shortcutAvailability;
+- (unsigned long long)shortcutAvailability;
+- (id)bundleIdentifierForDisplay;
+- (id)identifier;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)setSourceAppBundleIdentifier:;
+- (id)sourceAppBundleIdentifier;
+- (void)encodeWithCoder:;
+- (id)title;
+- (void).cxx_destruct;
+- (id)subtitle;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)initWithIdentifier:workflowActionIdentifier:sourceAppBundleIdentifier:bundleIdentifierForDisplay:title:subtitle:serializedParameters:shortcutAvailability:;
+- (BOOL)isGoodForSleep;
+- (id)workflowActionIdentifier;
+- (void)setWorkflowActionIdentifier:;
+- (id)serializedParameters;
+- (void)setSerializedParameters:;
++ (BOOL)supportsSecureCoding;
++ (id)homeAccessoryActionWithTriggerActionSetsBuilder:;
++ (id)identifierForWorkflowActionIdentifier:serializedParameters:;
++ (id)openAppActionWithBundleIdentifier:;
+@end

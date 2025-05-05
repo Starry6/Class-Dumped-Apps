@@ -1,0 +1,2 @@
+@interface AlignContext : NSObject
+@end

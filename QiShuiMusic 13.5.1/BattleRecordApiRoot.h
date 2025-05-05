@@ -1,0 +1,2 @@
+@interface BattleRecordApiRoot : GPBRootObject
+@end

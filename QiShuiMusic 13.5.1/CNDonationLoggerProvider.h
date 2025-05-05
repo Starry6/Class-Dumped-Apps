@@ -1,0 +1,37 @@
+@interface CNDonationLoggerProvider : NSObject
+@property (nonatomic) <CNDonationAgentLogger> agentLoggerImpl;
+@property (nonatomic) <CNDonationExtensionLogger> extensionLoggerImpl;
+@property (nonatomic) <CNDonationToolLogger> toolLoggerImpl;
+@property (nonatomic) <CNDonationAccountLogger> accountLoggerImpl;
+@property (nonatomic) <CNDonationPreferencesLogger> preferencesLoggerImpl;
+@property (nonatomic) <CNDonationAnalyticsLogger> analyticsLoggerImpl;
+@property (nonatomic) <CNDonationManagedDuplicatesLogger> duplicatesLoggerImpl;
+@property (nonatomic) <CNDonationAgentLogger> agentLogger;
+@property (nonatomic) <CNDonationExtensionLogger> extensionLogger;
+@property (nonatomic) <CNDonationToolLogger> toolLogger;
+@property (nonatomic) <CNDonationAccountLogger> accountLogger;
+@property (nonatomic) <CNDonationPreferencesLogger> preferencesLogger;
+@property (nonatomic) <CNDonationAnalyticsLogger> analyticsLogger;
+@property (nonatomic) <CNDonationManagedDuplicatesLogger> duplicatesLogger;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (id)toolLoggerImpl;
+- (id)extensionLogger;
+- (id)preferencesLogger;
+- (id)analyticsLogger;
+- (id)duplicatesLoggerImpl;
+- (id)agentLogger;
+- (id)preferencesLoggerImpl;
+- (id)extensionLoggerImpl;
+- (void).cxx_destruct;
+- (id)analyticsLoggerImpl;
+- (id)accountLoggerImpl;
+- (id)duplicatesLogger;
+- (id)agentLoggerImpl;
+- (id)accountLogger;
+- (id)toolLogger;
++ (id)defaultProvider;
+@end

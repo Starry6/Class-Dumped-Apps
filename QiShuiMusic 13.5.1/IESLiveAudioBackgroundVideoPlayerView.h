@@ -1,0 +1,35 @@
+@interface IESLiveAudioBackgroundVideoPlayerView : UIView
+@property (nonatomic) NSURL url;
+@property (nonatomic) AVAsset avAsset;
+@property (nonatomic) AVPlayer avPlayer;
+@property (nonatomic) AVPlayerLayer playLayer;
+@property (nonatomic) AVPlayerItem playerItem;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} visibleRect;
+- (void)moviePlayDidEnd;
+- (void)setupWithAsset:;
+- (id)defaultResourceSize;
+- (void)handleAVPlayerNoti:;
+- (void)handleDidBecomeActiveNotification:;
+- (id)playLayer;
+- (void)setPlayLayer:;
+- (void)setVideoFileUrl:;
+- (void)setVideoFileUrl:visibleRect:;
+- (void)updatePlayerFrameWithVisibleRect:;
+- (void)setAvAsset:;
+- (id)url;
+- (id)avAsset;
+- (void)setVisibleRect:;
+- (void)dealloc;
+- (void)play;
+- (id)visibleRect;
+- (void)layoutSubviews;
+- (void)stop;
+- (void)setUrl:;
+- (id)playerItem;
+- (id)resourceSize;
+- (void).cxx_destruct;
+- (id)avPlayer;
+- (void)setAvPlayer:;
+- (void)setPlayerItem:;
+- (void)clean;
+@end

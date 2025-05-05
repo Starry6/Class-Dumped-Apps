@@ -1,0 +1,32 @@
+@interface IESLiveUserCardRelationEntrance : UIView
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIImageView icon;
+@property (nonatomic) NSString schema;
+@property (nonatomic) NSString messageType;
+@property (nonatomic) IESLiveUserCardStore store;
+@property (nonatomic) IESLiveActionConfig config;
+@property (nonatomic) IESLivePotentialCustomerInfo potentialCustomerInfo;
+- (void)actionToShowUserRelationPage:;
+- (id)initWithStore:actionConfig:;
+- (id)initWithStore:potentialVisitorInfo:;
+- (id)potentialCustomerInfo;
+- (void)setMessageType;
+- (void)setPotentialCustomerInfo:;
+- (void)trackUserRelationEntranceClicked;
+- (double)widthOfRelationEntrance;
+- (id)messageType;
+- (id)schema;
+- (void)setStore:;
+- (void)setTitleLabel:;
+- (void)layoutSubviews;
+- (void)setConfig:;
+- (id)icon;
+- (void)setSchema:;
+- (void)setup;
+- (void)setIcon:;
+- (void).cxx_destruct;
+- (void)setMessageType:;
+- (id)config;
+- (id)store;
+- (id)titleLabel;
+@end

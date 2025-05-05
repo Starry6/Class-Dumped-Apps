@@ -1,0 +1,32 @@
+@interface MNAudioManager : NSObject
+@property (nonatomic) NSInteger transportType;
+@property (nonatomic) Q voiceGuidanceLevel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)removeObserver:;
+- (void)addObserver:;
+- (void)dealloc;
+- (int)transportType;
+- (void).cxx_destruct;
+- (BOOL)isSpeaking;
+- (unsigned long long)voiceGuidanceLevel;
+- (void)stopSpeaking;
+- (void)audioHardwareEngine:didActivateAudioSession:;
+- (void)audioHardwareEngine:didStartSpeakingPrompt:;
+- (void)changeTransportType:;
+- (BOOL)vibrateForShortPrompt:;
+- (double)durationOf:;
+- (void)didChangeUserOptionsFrom:to:;
+- (id)initWithTransportType:andVoiceGuidanceLevel:andVoiceLanguage:;
+- (void)_pushAudioSystemOptionsFromUserOptions:;
+- (int)_supportedTransportTypeForTransportType:;
+- (void)changeVoiceGuidanceLevel:forTransportType:;
+- (void)_changeVoiceGuidanceLevel:forTransportType:;
+- (BOOL)voiceGuidanceEnabled;
+- (BOOL)_deviceSettingsAllowSpeech;
+- (BOOL)_deviceIsMuted;
+- (void)speak:withVoiceGuidanceLevel:andCondition:usingShortPrompt:thenCallCompletion:;
+- (void)clearAllAnnouncements;
+@end

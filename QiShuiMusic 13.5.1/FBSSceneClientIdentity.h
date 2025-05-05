@@ -1,0 +1,32 @@
+@interface FBSSceneClientIdentity : NSObject
+@property (nonatomic) RBSProcessHandle processHandle;
+@property (nonatomic) FBProcess transientLocalProcess;
+@property (nonatomic) BOOL local;
+@property (nonatomic) RBSProcessIdentity processIdentity;
+@property (nonatomic) NSString bundleIdentifier;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)bundleIdentifier;
+- (id)processIdentity;
+- (id)_initWithLocal:identity:handle:description:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)processHandle;
+- (void)encodeWithCoder:;
+- (id)fbs_sceneClientIdentity;
+- (BOOL)isValid;
+- (void).cxx_destruct;
+- (id)description;
+- (id)transientLocalProcess;
+- (BOOL)isLocal;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
++ (id)identityForProcessHandle:;
++ (BOOL)supportsSecureCoding;
++ (id)identityForProcessIdentity:;
++ (id)identityForProcessHandle:transientLocalProcess:;
++ (id)localIdentity;
++ (id)identityForBundleID:;
+@end

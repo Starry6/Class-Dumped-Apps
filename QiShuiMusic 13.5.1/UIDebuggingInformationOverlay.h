@@ -1,0 +1,37 @@
+@interface UIDebuggingInformationOverlay : UIWindow
+@property (nonatomic) UIEvent lastTouch;
+@property (nonatomic) {CGPoint=dd} drawingOrigin;
+@property (nonatomic) BOOL isFullscreen;
+@property (nonatomic) UIDebuggingInformationOverlayViewController overlayViewController;
+@property (nonatomic) UIDebuggingInformationRootTableViewController rootTableViewController;
+@property (nonatomic) BOOL checkingTouches;
+@property (nonatomic) BOOL touchCaptureEnabled;
+@property (nonatomic) NSMutableArray touchObservers;
+@property (nonatomic) UIWindow inspectedWindow;
+- (id)init;
+- (id)overlayViewController;
+- (id)hitTest:withEvent:;
+- (void)_setHidden:;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (BOOL)isFullscreen;
+- (id)lastTouch;
+- (void)toggleVisibility;
+- (void)toggleFullscreen;
+- (id)rootTableViewController;
+- (void)setRootTableViewController:;
+- (void)setIsFullscreen:;
+- (BOOL)checkingTouches;
+- (void)setCheckingTouches:;
+- (BOOL)touchCaptureEnabled;
+- (void)setTouchCaptureEnabled:;
+- (id)touchObservers;
+- (void)setTouchObservers:;
+- (id)inspectedWindow;
+- (void)setInspectedWindow:;
+- (void)setLastTouch:;
+- (id)drawingOrigin;
+- (void)setDrawingOrigin:;
++ (id)overlay;
++ (void)prepareDebuggingOverlay;
+@end

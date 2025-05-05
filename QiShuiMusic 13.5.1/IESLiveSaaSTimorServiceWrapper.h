@@ -1,0 +1,32 @@
+@interface IESLiveSaaSTimorServiceWrapper : NSObject
+@property (nonatomic) <IESLiveSaaSURLSchemaHandler> schemaHandler;
+@property (nonatomic) <IESLiveSaaSTimorAccountService> accountService;
+@property (nonatomic) <IESLiveSaaSTimorService> realTimorServiceImpl;
+@property (nonatomic) <IESLiveSaaSRoomService> roomService;
+@property (nonatomic) <IESLiveSaaSAnchorTimorDelegate> anchorDelegate;
+@property (nonatomic) <IESLiveSaaSAudienceTimorDelegate> audienceDelegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setRoomService:;
+- (id)appendLiveRoomInfoToSchema:withParamsModel:;
+- (id)audienceDelegate;
+- (void)closeTimorViewController:;
+- (id)initWithTimorServiceImpl:;
+- (void)openTimorWithSchema:isAnchor:;
+- (void)openTimorWithSchema:paramsModel:;
+- (void)preloadTimorWithURL:priority:;
+- (id)realTimorServiceImpl;
+- (id)roomService;
+- (id)schemaHandler;
+- (void)setAudienceDelegate:;
+- (void)setRealTimorServiceImpl:;
+- (void)setSchemaHandler:;
+- (void)visitAppWithAppSchema:isRealOpen:;
+- (void).cxx_destruct;
+- (void)setAccountService:;
+- (id)accountService;
+- (id)anchorDelegate;
+- (void)setAnchorDelegate:;
+@end

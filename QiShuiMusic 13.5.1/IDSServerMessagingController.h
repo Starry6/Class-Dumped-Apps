@@ -1,0 +1,34 @@
+@interface IDSServerMessagingController : NSObject
+@property (nonatomic) NSString topic;
+@property (nonatomic) NSHashTable delegateMap;
+@property (nonatomic) IDSXPCDaemonController daemonController;
+@property (nonatomic) NSString uuid;
+@property (nonatomic) NSMutableDictionary inFlightRequests;
+@property (nonatomic) {os_unfair_lock_s=I} inFlightLock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)addDelegate:;
+- (id)uuid;
+- (void)setDaemonController:;
+- (void)sendCertifiedDeliveryReceipt:;
+- (void)setUuid:;
+- (id)daemonController;
+- (void).cxx_destruct;
+- (id)topic;
+- (id)delegateMap;
+- (void)setDelegateMap:;
+- (id)initWithTopic:;
+- (void)handleReceivedIncomingMessageData:identifier:context:;
+- (id)initWithTopic:daemonController:;
+- (void)_setupInterruptionHandler;
+- (void)_setupXPC;
+- (void)_failMessages;
+- (void)_sendData:withOptions:identifier:completion:;
+- (void)sendMessageData:withOptions:identifier:completion:;
+- (id)inFlightRequests;
+- (void)setInFlightRequests:;
+- (id)inFlightLock;
+- (void)setInFlightLock:;
+@end

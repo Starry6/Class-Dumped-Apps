@@ -1,0 +1,32 @@
+@interface ETTask : NSObject
+@property (nonatomic) ETModelDef model;
+@property (nonatomic) ETOptimizerDef optimizer;
+@property (nonatomic) ETImageDescriptorExtractor extractor;
+@property (nonatomic) BOOL dumpData;
+- (id)model;
+- (id)init;
+- (id)evaluate:;
+- (void)setModel:;
+- (id)extractor;
+- (void).cxx_destruct;
+- (id).cxx_construct;
+- (void)setExtractor:;
+- (id)optimizer;
+- (void)setOptimizer:;
+- (id)initWithModelDef:optimizerDef:extractor:;
+- (id)initWithModelDef:optimizerDef:extractor:needWeightsInitialization:;
+- (id)reinitializeVariables;
+- (id)initWithModelDef:optimizerDef:lossConfig:;
+- (id)initWithModelDef:optimizerDef:lossConfig:extractor:;
+- (float)fit:numberOfEpochs:withProgress:;
+- (float)fit:numberOfBatches:withProgress:;
+- (BOOL)runBatches:numberOfBatches:outputNames:batchCallback:;
+- (BOOL)fit:numberOfBatches:outputNames:batchCallback:;
+- (BOOL)fit:numberOfEpochs:outputNames:batchCallback:;
+- (BOOL)runInference:outputNames:batchCallback:;
+- (void)saveNetwork:;
+- (void)saveNetwork:revertToInferenceMode:;
+- (BOOL)moveToGPU:error:;
+- (BOOL)dumpData;
+- (void)setDumpData:;
+@end

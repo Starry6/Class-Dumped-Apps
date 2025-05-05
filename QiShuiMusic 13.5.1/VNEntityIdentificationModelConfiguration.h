@@ -1,0 +1,34 @@
+@interface VNEntityIdentificationModelConfiguration : NSObject
+@property (nonatomic) VNEntityIdentificationModelAlgorithm algorithm;
+@property (nonatomic) VNRequestSpecifier entityPrintOriginatingRequestSpecifier;
+@property (nonatomic) NSArray acceptableEntityPrintOriginatingRequestSpecifiers;
+@property (nonatomic) Q maximumEntities;
+@property (nonatomic) Q maximumTrainingPrintsPerEntity;
+- (id)algorithm;
+- (int)faceID3ModelMaximumIDs;
+- (int)faceID3ModelMaximumElementsPerID;
+- (int)faceID3IndexMode;
+- (void)setAlgorithm:;
+- (id)algorithmOfClass:error:;
+- (id)resolvedAlgorithmAndReturnError:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (int)faceID3ModelSeed;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)entityPrintOriginatingRequestSpecifier;
+- (id)initWithEntityPrintOriginatingRequestSpecifier:;
+- (id)acceptableEntityPrintOriginatingRequestSpecifiers;
+- (unsigned long long)maximumEntities;
+- (void)setMaximumEntities:;
+- (unsigned long long)maximumTrainingPrintsPerEntity;
+- (void)setMaximumTrainingPrintsPerEntity:;
+- (int)faceIDModelMaximumElementsPerID;
++ (BOOL)supportsSecureCoding;
++ (unsigned long long)maximumAllowableFaceprintsPerIdentity;
++ (unsigned long long)maximumAllowableEntities;
++ (id)newConfigurationForEntityPrintsGeneratedByRequest:error:;
+@end

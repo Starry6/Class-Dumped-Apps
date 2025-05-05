@@ -1,0 +1,38 @@
+@interface VKImageAnalysis : NSObject
+@property (nonatomic) VKCImageAnalysisResult imageAnalysisResult;
+@property (nonatomic) NSString requestIdentifier;
+@property (nonatomic) NSArray rectangleObservations;
+@property (nonatomic) NSArray filteredNormalizedRectangleQuads;
+@property (nonatomic) NSString transcript;
+@property (nonatomic) VKFeedbackProvider feedbackProvider;
+@property (nonatomic) NSInteger analysisRequestID;
+- (id)requestIdentifier;
+- (id)filteredNormalizedRectangleQuads;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void)setRequestIdentifier:;
+- (void).cxx_destruct;
+- (id)_attributedStringForRange:;
+- (id)mrcMenu;
+- (id)barcodeActions;
+- (void)translateTo:withCompletion:;
+- (BOOL)hasResultsForAnalysisTypes:;
+- (id)allLines;
+- (void)setPresentingViewControllerForMrcAction:;
+- (id)textDataDetectors;
+- (void)translateFrom:to:withCompletion:;
+- (id)transcript;
+- (unsigned long long)countOfDataDetectorsWithTypes:;
+- (id)feedbackProvider;
+- (void)setFeedbackProvider:;
+- (id)presentingViewControllerForMrcAction;
+- (int)analysisRequestID;
+- (id)rectangleObservations;
+- (id)initWithAnalysisResult:;
+- (BOOL)_hasVisualSearchElements;
+- (id)analysisByReplacingTypes:fromAnalysis:;
+- (BOOL)writeSecureCodedArchiveToURL:error:;
+- (id)imageAnalysisResult;
+- (void)setImageAnalysisResult:;
++ (BOOL)supportsSecureCoding;
+@end

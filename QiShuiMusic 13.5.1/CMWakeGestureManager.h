@@ -1,0 +1,36 @@
+@interface CMWakeGestureManager : NSObject
+@property (nonatomic) <CMWakeGestureDelegate> delegate;
+- (void)logWakeLatency;
+- (void)dealloc;
+- (void)simulateGesture:after:;
+- (void)setDelegate:;
+- (void)onPowerStateUpdated:;
+- (void)onWakeUpdated:;
+- (void)setBacklightState:;
+- (void)startWakeGestureUpdates;
+- (void)playAlert;
+- (void)sendWakeTriggerAnalytics:withDisplay:;
+- (void)stopWakeGestureUpdates;
+- (void)onBacklightServiceUpdated:;
+- (void)reenableDetectedStateRecognition;
+- (void)onNotificationControl:;
+- (id)delegate;
+- (void)loadPreferences;
+- (void).cxx_destruct;
+- (BOOL)simulateGestureWithDelay:Duration:;
+- (id)initWithQueue:;
+- (void)invokeDelegateWithState:;
+- (void)forceDetected;
+- (id).cxx_construct;
++ (id)stringForMode:;
++ (BOOL)hasSlowBootArgs;
++ (long long)toState:;
++ (id)sharedManager;
++ (BOOL)isWakeGestureAvailable;
++ (unsigned char)toRaw:;
++ (id)stringForViewPose:;
++ (BOOL)isWakeGestureOverrideEnabled;
++ (id)stringForNotification:;
++ (id)stringForStartPose:;
++ (id)stringForGestureState:;
+@end

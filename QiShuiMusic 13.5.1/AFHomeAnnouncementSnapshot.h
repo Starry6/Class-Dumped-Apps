@@ -1,0 +1,33 @@
+@interface AFHomeAnnouncementSnapshot : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) Q state;
+@property (nonatomic) AFHomeAnnouncement lastPlayedAnnouncement;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithSerializedBackingStore:;
+- (id)init;
+- (id)ad_shortDescription;
+- (id)buildDictionaryRepresentation;
+- (id)mutatedCopyWithMutator:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)initWithDictionaryRepresentation:;
+- (id)serializedBackingStore;
+- (id)_descriptionWithIndent:;
+- (id)initWithBuilder:;
+- (id)lastPlayedAnnouncement;
+- (void)encodeWithCoder:;
+- (unsigned long long)state;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)initWithState:lastPlayedAnnouncement:;
+- (id)copyWithZone:;
++ (id)newWithBuilder:;
++ (BOOL)supportsSecureCoding;
+@end

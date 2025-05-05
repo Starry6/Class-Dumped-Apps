@@ -1,0 +1,30 @@
+@interface BWFaceTrackingNode : BWNode
+@property (nonatomic) BOOL frontCamera;
+@property (nonatomic) BOOL mirrored;
+@property (nonatomic) NSInteger orientation;
+@property (nonatomic) NSInteger maxFaces;
+@property (nonatomic) BOOL usesFaceRecognition;
+@property (nonatomic) BOOL faceTrackingPlusEnabled;
+@property (nonatomic) float networkFailureThresholdMultiplier;
+- (void)dealloc;
+- (id)nodeType;
+- (void)setMirrored:;
+- (int)orientation;
+- (void)prepareForCurrentConfigurationToBecomeLive;
+- (void)didReachEndOfDataForInput:;
+- (void)renderSampleBuffer:forInput:;
+- (void)setFaceTrackingPlusEnabled:;
+- (BOOL)faceTrackingPlusEnabled;
+- (void)setOrientation:;
+- (id)nodeSubType;
+- (BOOL)mirrored;
+- (id)initWithProcessingSession:figThreadPriority:pearlModuleType:queueDepth:;
+- (BOOL)frontCamera;
+- (void)setFrontCamera:;
+- (int)maxFaces;
+- (void)setMaxFaces:;
+- (BOOL)usesFaceRecognition;
+- (void)setUsesFaceRecognition:;
+- (float)networkFailureThresholdMultiplier;
+- (void)setNetworkFailureThresholdMultiplier:;
+@end

@@ -1,0 +1,30 @@
+@interface IESLiveSaaSAudiencePauseTipView : UIView
+@property (nonatomic) LOTAnimationView animationView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel subtitleLabel;
+@property (nonatomic) double animationViewBottom;
+@property (nonatomic) double titlePadding;
+@property (nonatomic) double subtitlePadding;
+@property (nonatomic) double titleFontSize;
+@property (nonatomic) double subtitleFontSize;
+- (double)subtitlePadding;
+- (double)animationViewBottom;
+- (void)configWithScene:;
+- (void)setAnimationViewBottom:;
+- (void)setSubtitlePadding:;
+- (void)setTitlePadding:;
+- (double)titlePadding;
+- (id)initWithScene:;
+- (void)setTitleLabel:;
+- (id)subtitleLabel;
+- (void)setSubtitleLabel:;
+- (void).cxx_destruct;
+- (double)subtitleFontSize;
+- (id)titleLabel;
+- (void)setSubtitleFontSize:;
+- (void)setupViews;
+- (id)animationView;
+- (void)setAnimationView:;
+- (double)titleFontSize;
+- (void)setTitleFontSize:;
+@end

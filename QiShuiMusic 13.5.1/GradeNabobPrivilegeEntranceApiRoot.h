@@ -1,0 +1,2 @@
+@interface GradeNabobPrivilegeEntranceApiRoot : GPBRootObject
+@end

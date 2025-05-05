@@ -1,0 +1,23 @@
+@interface IOHIDQueueClass : IOHIDIUnknown2
+- (int)addElement:;
+- (int)removeElement:;
+- (int)copyNextValue:;
+- (void)dealloc;
+- (int)start;
+- (void)mapMemory;
+- (void)updateUsageAnalytics;
+- (int)stop;
+- (void)unmapMemory;
+- (int)containsElement:pValue:;
+- (BOOL)setupAnalytics;
+- (int)setDepth:;
+- (void)signalQueueEmpty;
+- (id)initWithDevice:port:source:;
+- (int)setValueAvailableCallback:context:;
+- (void)queueCallback:msg:size:info:;
+- (void).cxx_destruct;
+- (id)initWithDevice:;
+- (int)getAsyncEventSource:;
+- (int)getDepth:;
+- (int)queryInterface:outInterface:;
+@end

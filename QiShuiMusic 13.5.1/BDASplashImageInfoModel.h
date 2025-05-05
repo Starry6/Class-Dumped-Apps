@@ -1,0 +1,30 @@
+@interface BDASplashImageInfoModel : NSObject
+@property (nonatomic) double width;
+@property (nonatomic) double height;
+@property (nonatomic) NSString uri;
+@property (nonatomic) NSString secretKey;
+@property (nonatomic) NSArray urlList;
+@property (nonatomic) NSString uriOriginal;
+@property (nonatomic) NSArray urlListOriginal;
+- (id)urlListOriginal;
+- (void)setUriOriginal:;
+- (id)urlList;
+- (id)getBDImage;
+- (id)getImageData;
+- (id)getImageFilePath;
+- (id)getRealUrlListWithList:;
+- (BOOL)isValidModel;
+- (void)setUrlList:;
+- (void)setUrlListOriginal:;
+- (id)uriOriginal;
+- (id)uri;
+- (void)setSecretKey:;
+- (id)initWithDictionary:;
+- (void)setWidth:;
+- (double)height;
+- (double)width;
+- (void)setHeight:;
+- (void).cxx_destruct;
+- (id)secretKey;
+- (void)setUri:;
+@end

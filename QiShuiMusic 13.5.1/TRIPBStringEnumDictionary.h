@@ -1,0 +1,30 @@
+@interface TRIPBStringEnumDictionary : NSObject
+@property (nonatomic) Q count;
+@property (nonatomic) ^? validationFunc;
+- (void)removeAll;
+- (id)init;
+- (void)dealloc;
+- (void)enumerateForTextFormat:;
+- (id)initWithValidationFunction:rawValues:forKeys:count:;
+- (id)initWithDictionary:;
+- (BOOL)getRawValue:forKey:;
+- (void)setTRIPBGenericValue:forTRIPBGenericValueKey:;
+- (void)writeToCodedOutputStream:asField:;
+- (BOOL)getEnum:forKey:;
+- (unsigned long long)hash;
+- (id)serializedDataForUnknownValue:forKey:keyDataType:;
+- (unsigned long long)computeSerializedSizeAsField:;
+- (void)addRawEntriesFromDictionary:;
+- (id)initWithValidationFunction:capacity:;
+- (id)description;
+- (id)initWithValidationFunction:;
+- (void)setEnum:forKey:;
+- (void)enumerateKeysAndEnumsUsingBlock:;
+- (unsigned long long)count;
+- (void)removeEnumForKey:;
+- (id)validationFunc;
+- (void)setRawValue:forKey:;
+- (BOOL)isEqual:;
+- (void)enumerateKeysAndRawValuesUsingBlock:;
+- (id)copyWithZone:;
+@end

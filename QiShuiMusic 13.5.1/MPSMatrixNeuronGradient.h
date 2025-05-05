@@ -1,0 +1,35 @@
+@interface MPSMatrixNeuronGradient : MPSMatrixBinaryKernel
+@property (nonatomic) NSInteger neuronType;
+@property (nonatomic) float neuronA;
+@property (nonatomic) float neuronB;
+@property (nonatomic) float neuronC;
+@property (nonatomic) Q sourceNumberOfFeatureVectors;
+@property (nonatomic) Q sourceInputFeatureChannels;
+@property (nonatomic) double alpha;
+- (int)neuronType;
+- (id)initWithCoder:device:;
+- (id)copyWithZone:device:;
+- (void)dealloc;
+- (void)setAlpha:;
+- (float)neuronParameterB;
+- (void)setNeuronType:parameterA:parameterB:parameterC:;
+- (void)setNeuronToPReLUWithParametersA:;
+- (float)neuronParameterA;
+- (void)setNeuronType:;
+- (void)encodeWithCoder:;
+- (double)alpha;
+- (float)neuronParameterC;
+- (id)initWithDevice:;
+- (void)setSourceInputFeatureChannels:;
+- (void)encodeToCommandBuffer:gradientMatrix:inputMatrix:biasVector:resultGradientForDataMatrix:resultGradientForBiasVector:;
+- (float)neuronA;
+- (float)neuronB;
+- (float)neuronC;
+- (unsigned long long)sourceNumberOfFeatureVectors;
+- (void)setSourceNumberOfFeatureVectors:;
+- (unsigned long long)sourceInputFeatureChannels;
+- (void)setNeuronA:;
+- (void)setNeuronB:;
+- (void)setNeuronC:;
++ (id)libraryInfo:;
+@end

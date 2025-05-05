@@ -1,0 +1,33 @@
+@interface AWDWiFiLTECoexCounters : PBCodable
+@property (nonatomic) BOOL hasTimestamp;
+@property (nonatomic) Q timestamp;
+@property (nonatomic) BOOL hasNoLTECoexBin;
+@property (nonatomic) AWDWiFiLTECoexBin noLTECoexBin;
+@property (nonatomic) BOOL hasLightLTECoexBin;
+@property (nonatomic) AWDWiFiLTECoexBin lightLTECoexBin;
+@property (nonatomic) BOOL hasHeavyLTECoexBin;
+@property (nonatomic) AWDWiFiLTECoexBin heavyLTECoexBin;
+- (void)dealloc;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)setHasTimestamp:;
+- (void)mergeFrom:;
+- (BOOL)hasTimestamp;
+- (void)setTimestamp:;
+- (BOOL)readFrom:;
+- (unsigned long long)timestamp;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasNoLTECoexBin;
+- (BOOL)hasLightLTECoexBin;
+- (BOOL)hasHeavyLTECoexBin;
+- (id)noLTECoexBin;
+- (void)setNoLTECoexBin:;
+- (id)lightLTECoexBin;
+- (void)setLightLTECoexBin:;
+- (id)heavyLTECoexBin;
+- (void)setHeavyLTECoexBin:;
+@end

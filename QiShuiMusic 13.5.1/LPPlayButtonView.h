@@ -1,0 +1,23 @@
+@interface LPPlayButtonView : LPComponentView
+- (id)theme;
+- (void)dealloc;
+- (id)playable;
+- (id)initWithHost:;
+- (void).cxx_destruct;
+- (void)setContentInset:;
+- (void)updateButton;
+- (void)layoutComponentView;
+- (void)buildSubviewsIfNeeded;
+- (id)initWithHost:playbackInformation:style:;
+- (BOOL)isLyricStyle;
+- (void)installPlaceholderButton;
+- (void)installiTunesButton;
+- (void)installDisablediTunesButton;
+- (void)installPreviewButton;
+- (void)updateButtonForSongOrAlbum;
+- (void)updateButtonForRadio;
+- (void)updateButtonForAudioBook;
+- (void)updateButtonForPodcast;
+- (void)installAudioButton;
+- (void)updateButtonForAudioFile;
+@end

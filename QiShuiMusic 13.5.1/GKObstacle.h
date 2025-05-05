@@ -1,0 +1,2 @@
+@interface GKObstacle : NSObject
+@end

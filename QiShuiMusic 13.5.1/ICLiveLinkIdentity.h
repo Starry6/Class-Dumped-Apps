@@ -1,0 +1,32 @@
+@interface ICLiveLinkIdentity : NSObject
+@property (nonatomic) q serverID;
+@property (nonatomic) NSUUID identifier;
+@property (nonatomic) NSString externalIdentifier;
+@property (nonatomic) NSPersonNameComponents nameComponents;
+@property (nonatomic) NSURL imageURL;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)externalIdentifier;
+- (id)nameComponents;
+- (id)identifier;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)initWithBlock:;
+- (void)encodeWithCoder:;
+- (void)setNameComponents:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)_initWithBlock:;
+- (void)setImageURL:;
+- (void)setIdentifier:;
+- (BOOL)isEqual:;
+- (void)setExternalIdentifier:;
+- (id)imageURL;
+- (id)copyWithZone:;
+- (long long)serverID;
+- (void)setServerID:;
++ (BOOL)supportsSecureCoding;
++ (id)identityWithIdentifier:;
+@end

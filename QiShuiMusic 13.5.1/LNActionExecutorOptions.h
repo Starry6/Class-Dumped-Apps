@@ -1,0 +1,36 @@
+@interface LNActionExecutorOptions : NSObject
+@property (nonatomic) NSUUID executionUUID;
+@property (nonatomic) NSString clientLabel;
+@property (nonatomic) S source;
+@property (nonatomic) q interactionMode;
+@property (nonatomic) NSNumber viewActionIdentifier;
+@property (nonatomic) BOOL donateToTranscript;
+@property (nonatomic) LNEnvironment environment;
+@property (nonatomic) LNSystemContext systemContext;
+@property (nonatomic) double connectionOperationTimeout;
+- (id)init;
+- (void)setEnvironment:;
+- (id)initWithCoder:;
+- (id)environment;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (unsigned short)source;
+- (id)description;
+- (void)setSource:;
+- (id)copyWithZone:;
+- (long long)interactionMode;
+- (id)clientLabel;
+- (id)executionUUID;
+- (void)setExecutionUUID:;
+- (void)setClientLabel:;
+- (void)setInteractionMode:;
+- (id)viewActionIdentifier;
+- (void)setViewActionIdentifier:;
+- (BOOL)donateToTranscript;
+- (void)setDonateToTranscript:;
+- (id)systemContext;
+- (void)setSystemContext:;
+- (double)connectionOperationTimeout;
+- (void)setConnectionOperationTimeout:;
++ (BOOL)supportsSecureCoding;
+@end

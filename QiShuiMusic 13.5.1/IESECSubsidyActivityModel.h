@@ -1,0 +1,35 @@
+@interface IESECSubsidyActivityModel : MTLModel
+@property (nonatomic) IESECURLModel backgroundURL;
+@property (nonatomic) IESECURLModel logoURL;
+@property (nonatomic) NSNumber sellPrice;
+@property (nonatomic) NSNumber sellMaxPrice;
+@property (nonatomic) NSString marketPriceDesc;
+@property (nonatomic) NSString subsidyPriceDesc;
+@property (nonatomic) IESECURLModel subsidySellPriceIcon;
+@property (nonatomic) NSString sellPriceDescription;
+@property (nonatomic) NSNumber type;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)marketPriceDesc;
+- (id)backgroundURL;
+- (id)sellMaxPrice;
+- (id)sellPrice;
+- (id)sellPriceDescription;
+- (void)setBackgroundURL:;
+- (void)setMarketPriceDesc:;
+- (void)setSellMaxPrice:;
+- (void)setSellPrice:;
+- (void)setSellPriceDescription:;
+- (void)setSubsidyPriceDesc:;
+- (void)setSubsidySellPriceIcon:;
+- (id)subsidyPriceDesc;
+- (id)subsidySellPriceIcon;
+- (void)setType:;
+- (id)type;
+- (void).cxx_destruct;
+- (id)logoURL;
+- (void)setLogoURL:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

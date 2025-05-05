@@ -1,0 +1,38 @@
+@interface IESLivePrivilegeEntranceView : UIView
+@property (nonatomic) q entranceType;
+@property (nonatomic) UIView singleEntrance;
+@property (nonatomic) UIView<IESLivePrivilegeEntranceSubviewDelegate> singleView;
+@property (nonatomic) UIView doubleEntranceLeft;
+@property (nonatomic) UIView<IESLivePrivilegeEntranceSubviewDelegate> leftView;
+@property (nonatomic) UIView doubleEntranceRight;
+@property (nonatomic) UIView<IESLivePrivilegeEntranceSubviewDelegate> rightView;
+@property (nonatomic) <IESLivePrivilegeEntranceProfileViewEventHandler> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)doubleEntranceLeft;
+- (id)doubleEntranceRight;
+- (long long)entranceType;
+- (id)initWithEntranceType:;
+- (void)setDoubleEntranceLeft:;
+- (void)setDoubleEntranceLeft:right:;
+- (void)setDoubleEntranceRight:;
+- (void)setEntranceType:;
+- (void)setSingleEntrance:;
+- (void)setSingleEntranceView:;
+- (void)setSingleView:;
+- (id)singleEntrance;
+- (id)singleView;
+- (void)viewDidHideFromContainer:;
+- (void)viewDidShowOnContainer:;
+- (void)setDelegate:;
+- (id)viewSize;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)leftView;
+- (void)setLeftView:;
+- (id)rightView;
+- (void)setRightView:;
+- (void)setupUI;
+@end

@@ -1,0 +1,30 @@
+@interface IESLiveInteractSelectSeatViewPanelItem : UIView
+@property (nonatomic) <IESLiveInteractUserModel> enlargeUser;
+@property (nonatomic) <IESLiveInteractSelectSeatViewPanelItemDelegate> delegate;
+@property (nonatomic) BOOL isChoosen;
+@property (nonatomic) BOOL isLargeType;
+@property (nonatomic) UITapGestureRecognizer tap;
+@property (nonatomic) UIImageView avatarView;
+@property (nonatomic) UILabel nameLabel;
+- (void)setIsLargeType:;
+- (void)setEnlargeUser:;
+- (id)enlargeUser;
+- (id)initWithTypeLarge:;
+- (BOOL)isChoosen;
+- (BOOL)isLargeType;
+- (void)onSelfClick;
+- (void)setIsChoosen:;
+- (void)layoutSubviews;
+- (id)avatarView;
+- (void)setDelegate:;
+- (void)setAvatarView:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)nameLabel;
+- (void)setNameLabel:;
+- (void)setupViews;
+- (id)tap;
+- (void)setTap:;
++ (id)vitemForKickOut;
++ (id)vitemForDoubleCChoose;
+@end

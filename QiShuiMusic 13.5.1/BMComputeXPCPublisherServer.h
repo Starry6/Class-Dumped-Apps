@@ -1,0 +1,36 @@
+@interface BMComputeXPCPublisherServer : NSObject
+@property (nonatomic) @? activationCompletion;
+@property (nonatomic) NSMutableArray subscriptions;
+@property (nonatomic) NSXPCInterface interface;
+@property (nonatomic) BMBookmarkStorage bookmarkStorage;
+@property (nonatomic) NSObject<OS_dispatch_queue> queue;
+@property (nonatomic) NSObject<OS_xpc_event_publisher> publisher;
+@property (nonatomic) NSXPCListener listener;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)interface;
+- (id)init;
+- (id)subscriptions;
+- (id)publisher;
+- (void)_removeSubscriptionWithIdentifier:client:;
+- (void)subscribe:;
+- (id)initWithQueue:listener:;
+- (id)listener;
+- (void)_removeSubscriptionWithToken:;
+- (void)activateWithCompletion:;
+- (void)setActivationCompletion:;
+- (id)subscriptionsForStream:;
+- (id)activationCompletion;
+- (BOOL)listener:shouldAcceptNewConnection:;
+- (void).cxx_destruct;
+- (void)_handlePublisherAction:token:descriptor:;
+- (id)bookmarkStorage;
+- (void)receiveInputForSubscription:streamIdentifier:storeEvent:;
+- (void)unsubscribeWithIdentifier:;
+- (id)initWithQueue:;
+- (void)_addSubscription:;
+- (id)queue;
++ (id)new;
+@end

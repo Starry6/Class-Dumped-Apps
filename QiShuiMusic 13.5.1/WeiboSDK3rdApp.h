@@ -1,0 +1,30 @@
+@interface WeiboSDK3rdApp : NSObject
+@property (nonatomic) NSString name;
+@property (nonatomic) NSString appKey;
+@property (nonatomic) NSString universalLink;
+@property (nonatomic) NSString bundleID;
+@property (nonatomic) NSData iconData;
+@property (nonatomic) NSString aid;
+- (id)appKey;
+- (void)setAppKey:;
+- (void)setName:;
+- (BOOL)isAppInstalled;
+- (void).cxx_destruct;
+- (void)setUniversalLink:;
+- (id)name;
+- (id)bundleID;
+- (BOOL)isEqual:;
+- (void)setBundleID:;
+- (id)iconData;
+- (void)setIconData:;
+- (id)universalLink;
+- (id)callbackScheme;
+- (void)setAid:;
+- (id)aid;
+- (void)debugPrint;
++ (id)appWithDictionary:;
++ (id)callbackSchemePrefix;
++ (id)callbackSchemeWithAppKey:;
++ (id)dictionaryWithApp:;
++ (id)currentApp;
+@end

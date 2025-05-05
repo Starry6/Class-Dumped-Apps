@@ -1,0 +1,2 @@
+@interface GiftExtraApiRoot : GPBRootObject
+@end

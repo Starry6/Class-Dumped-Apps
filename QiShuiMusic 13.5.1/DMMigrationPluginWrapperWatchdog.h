@@ -1,0 +1,32 @@
+@interface DMMigrationPluginWrapperWatchdog : NSObject
+@property (nonatomic) NSString pluginBundleIdentifier;
+@property (nonatomic) NSString backupDeviceUUID;
+@property (nonatomic) DMPluginFaulter faulter;
+@property (nonatomic) Q secondsBeforeNextFault;
+@property (nonatomic) Q secondsOfLeeway;
+@property (nonatomic) DMTimer timer;
+@property (nonatomic) Q fireCount;
+- (void)cancel;
+- (void)setTimer:;
+- (void)resume;
+- (void).cxx_destruct;
+- (id)backupDeviceUUID;
+- (id)timer;
+- (unsigned long long)fireCount;
+- (id)pluginBundleIdentifier;
+- (void)setBackupDeviceUUID:;
+- (unsigned long long)secondsOfLeeway;
+- (void)setSecondsOfLeeway:;
+- (id)initWithPluginBundleIdentifier:backupDeviceUUID:;
+- (void)_migrationPluginDuration5Minutes;
+- (void)_migrationPluginDuration10Minutes;
+- (void)_migrationPluginDuration20Minutes;
+- (void)_migrationPluginDuration40Minutes;
+- (void)setPluginBundleIdentifier:;
+- (id)faulter;
+- (void)setFaulter:;
+- (unsigned long long)secondsBeforeNextFault;
+- (void)setSecondsBeforeNextFault:;
+- (void)setFireCount:;
++ (id)_messageStringWithPluginBundleIdentifier:durationDescription:backupDeviceUUID:;
+@end

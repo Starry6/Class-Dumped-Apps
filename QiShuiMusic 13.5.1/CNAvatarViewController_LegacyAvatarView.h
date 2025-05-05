@@ -1,0 +1,35 @@
+@interface CNAvatarViewController_LegacyAvatarView : CNAvatarViewController
+@property (nonatomic) CNAvatarView avatarView;
+@property (nonatomic) CNContactStore contactStore;
+@property (nonatomic) <CNUILikenessRendering> imageRenderer;
+@property (nonatomic) <CNSchedulerProvider> schedulerProvider;
+@property (nonatomic) Q style;
+@property (nonatomic) BOOL threeDTouchEnabled;
+@property (nonatomic) <NSObject><CNAvatarViewControllerDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)isThreeDTouchEnabled;
+- (void)updateViewWithGroupIdentity:;
+- (id)imageRenderer;
+- (void)setThreeDTouchEnabled:;
+- (void)setAllowStaleRendering:;
+- (void)setContacts:;
+- (id)avatarView;
+- (id)contacts;
+- (void)setDelegate:;
+- (void)setAvatarView:;
+- (id)presentingViewControllerForAvatarView:;
+- (void)setStyle:;
+- (id)descriptorForRequiredKeys;
+- (id)schedulerProvider;
+- (BOOL)_canShowWhileLocked;
+- (id)initWithSettings:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)contactStore;
+- (void)didUpdateContentForAvatarView:;
+- (void)loadView;
+- (unsigned long long)style;
+@end

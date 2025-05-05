@@ -1,0 +1,2 @@
+@interface WebHTMLRepresentationPrivate : NSObject
+@end

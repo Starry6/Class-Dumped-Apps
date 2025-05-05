@@ -1,0 +1,33 @@
+@interface CSJDynamicInteractionUnlockView : CSJSplashBottomBaseComponentView
+@property (nonatomic) CSJDynamicInteractionContainerView backgroundContainerView;
+@property (nonatomic) CSJDynamicInteractionUnlockAnimationView unlockAnimationView;
+@property (nonatomic) {CGPoint=dd} beginPoint;
+@property (nonatomic) {CGPoint=dd} endPoint;
+@property (nonatomic) BOOL unlockAnimationValid;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithComponentConfiguration:;
+- (void)animationViewAddGesture;
+- (void)animationViewTapAction:;
+- (id)beginPoint;
+- (void)buildUpView;
+- (void)setBeginPoint:;
+- (void)setUnlockAnimationValid:;
+- (void)setUnlockAnimationView:;
+- (id)splashBottomFrameWithContainerFrame:;
+- (void)startSplashBottomAnimation;
+- (void)stopSplashBottomAnimation;
+- (BOOL)unlockAnimationValid;
+- (id)unlockAnimationView;
+- (id)endPoint;
+- (void)setEndPoint:;
+- (void)touchesBegan:withEvent:;
+- (void)layoutSubviews;
+- (void).cxx_destruct;
+- (BOOL)gestureRecognizerShouldBegin:;
+- (void)touchesMoved:withEvent:;
+- (id)backgroundContainerView;
+- (void)setBackgroundContainerView:;
+@end

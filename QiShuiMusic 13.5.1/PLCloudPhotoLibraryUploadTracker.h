@@ -1,0 +1,36 @@
+@interface PLCloudPhotoLibraryUploadTracker : NSObject
+@property (nonatomic) Q totalNumberOfUnpushedMasters;
+@property (nonatomic) Q totalNumberOfUploadedMasters;
+@property (nonatomic) Q totalNumberOfDeferredAssets;
+@property (nonatomic) Q totalSizeOfUnpushedOriginals;
+@property (nonatomic) Q totalUploadedOriginalSize;
+- (id)_constructKeyForScopedIdentifier:type:;
+- (id)init;
+- (void)addSizeForUnpushedOriginals:forMasterScopedIdentifier:forAssetScopedIdentifier:;
+- (void)dealloc;
+- (void)setupFromCPLManager:;
+- (void)setTotalUploadedOriginalSize:;
+- (void)trackDeferredAssetForScopedIdentifier:;
+- (void)setTotalNumberOfDeferredAssets:;
+- (unsigned long long)totalNumberOfUnpushedMasters;
+- (BOOL)_trackingScopedIdentifier:;
+- (void)_stopTrackingResourceWithScopedIdentifier:fileSize:type:;
+- (void)setupFromLibrary:isInitialUpload:;
+- (void)setTotalSizeOfUnpushedOriginals:;
+- (void)stopTrackingMaster:;
+- (unsigned long long)totalNumberOfUploadedMasters;
+- (void)setTotalNumberOfUploadedMasters:;
+- (id)currentStateForDebug;
+- (void)setTotalNumberOfUnpushedMasters:;
+- (void)resetIfNeededWithLibrary:isInitialUpload:;
+- (void).cxx_destruct;
+- (unsigned long long)totalSizeOfUnpushedOriginals;
+- (void)updateForMasterResourceUploadWithScopedIdentifier:progress:fileSize:type:;
+- (void)uploadFinishedForMasterResourceWithScopedIdentifier:fileSize:type:withError:;
+- (void)reset;
+- (BOOL)_isMasterRecordUploaded:;
+- (void)uploadFinishedForMasterRecordWithScopedIdentifier:didUpdateStatus:;
+- (unsigned long long)totalUploadedOriginalSize;
+- (void)_setBatchUploadStateForTrackedMasters:withState:;
+- (unsigned long long)totalNumberOfDeferredAssets;
+@end

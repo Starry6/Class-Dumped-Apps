@@ -1,0 +1,30 @@
+@interface VCPMADServiceImagePhotosAsset : VCPMADServiceImageAsset
+- (BOOL)isScreenshot;
+- (id)resources;
+- (id)asset;
+- (id)identifier;
+- (id)faces;
+- (unsigned int)orientation;
+- (id)resolution;
+- (id)location;
+- (void).cxx_destruct;
+- (id).cxx_construct;
+- (BOOL)isSensitive;
+- (BOOL)isHighResDecoded;
+- (int)loadPixelBuffer:orientation:;
+- (id)documentObservations;
+- (void)setDocumentObservations:;
+- (BOOL)hasCachedParseData;
+- (id)cachedParseData;
+- (void)setCachedParseData:overwriteExisting:;
+- (id)initWithPhotosAsset:clientBundleID:clientTeamID:;
+- (id)initWithPhotosAsset:pixelBuffer:orientation:clientBundleID:clientTeamID:;
+- (id)nsfwClassifications;
+- (id)scenenetClassifications;
+- (int)loadHighResPixelBuffer:orientation:;
+- (void)persistOCRMRC;
+- (id)barcodeObservations;
+- (void)setBarcodeObservations:;
+- (id)thumbnailResource;
+- (BOOL)hasValidSceneProcessing;
+@end

@@ -1,0 +1,33 @@
+@interface VCPVideoStabilizer : VCPVideoAnalyzer
+@property (nonatomic) ^v analysisResultRef;
+@property (nonatomic) ^v correctionResultRef;
+@property (nonatomic) NSDictionary results;
+@property (nonatomic) float cropFraction;
+@property (nonatomic) NSMutableArray motionBlurVector;
+@property (nonatomic) BOOL gyroStabilization;
+@property (nonatomic) float analysisConfidence;
+@property (nonatomic) BOOL validStabilization;
+- (id)init;
+- (void)dealloc;
+- (id)results;
+- (void).cxx_destruct;
+- (void)setResults:;
+- (float)cropFraction;
+- (void)setCropFraction:;
+- (int)finishAnalysisPass:;
+- (int)convertAnalysisResult;
+- (id)analysisResultRef;
+- (void)setAnalysisResultRef:;
+- (id)correctionResultRef;
+- (void)setCorrectionResultRef:;
+- (id)motionBlurVector;
+- (void)setMotionBlurVector:;
+- (BOOL)gyroStabilization;
+- (void)setGyroStabilization:;
+- (float)analysisConfidence;
+- (void)setAnalysisConfidence:;
+- (BOOL)validStabilization;
+- (void)setValidStabilization:;
++ (BOOL)saveStabilizationRecipe;
++ (id)videoStabilizerforAnalysisType:withMetadata:sourceSize:cropRect:;
+@end

@@ -1,0 +1,37 @@
+@interface GEOPublisherAttributionSource : PBCodable
+@property (nonatomic) NSMutableArray localizedAttributions;
+@property (nonatomic) BOOL hasAppAdamID;
+@property (nonatomic) NSString appAdamID;
+@property (nonatomic) BOOL hasWebsiteURL;
+@property (nonatomic) NSString websiteURL;
+- (void)readAll:;
+- (BOOL)hasAppAdamID;
+- (id)init;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)appAdamID;
+- (void)setAppAdamID:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)localizedAttributions;
+- (void)setLocalizedAttributions:;
+- (void)clearLocalizedAttributions;
+- (void)addLocalizedAttribution:;
+- (unsigned long long)localizedAttributionsCount;
+- (id)localizedAttributionAtIndex:;
+- (BOOL)hasWebsiteURL;
+- (id)websiteURL;
+- (void)setWebsiteURL:;
++ (BOOL)isValid:;
++ (Class)localizedAttributionType;
+@end

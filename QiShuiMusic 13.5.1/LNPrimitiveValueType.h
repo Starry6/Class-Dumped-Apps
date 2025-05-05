@@ -1,0 +1,30 @@
+@interface LNPrimitiveValueType : LNValueType
+@property (nonatomic) q typeIdentifier;
+@property (nonatomic) NSString typeIdentifierAsString;
+- (id)cat_dialogType;
+- (id)cat_value:;
+- (id)cat_keyPath;
+- (Class)objectClass;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (long long)typeIdentifier;
+- (void)encodeWithCoder:;
+- (id)initWithTypeIdentifier:;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)typeIdentifierAsString;
++ (id)attributedStringValueType;
++ (BOOL)supportsSecureCoding;
++ (id)int16ValueType;
++ (id)dateComponentsValueType;
++ (id)int64ValueType;
++ (id)int8ValueType;
++ (id)placemarkValueType;
++ (id)boolValueType;
++ (id)URLValueType;
++ (id)int32ValueType;
++ (id)intValueType;
++ (id)dateValueType;
++ (id)doubleValueType;
++ (id)stringValueType;
+@end

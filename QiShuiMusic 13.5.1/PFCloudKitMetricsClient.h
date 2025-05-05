@@ -1,0 +1,2 @@
+@interface PFCloudKitMetricsClient : NSObject
+@end

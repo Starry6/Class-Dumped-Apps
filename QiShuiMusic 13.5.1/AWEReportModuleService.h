@@ -1,0 +1,30 @@
+@interface AWEReportModuleService : HTSService
+@property (nonatomic) NSMutableDictionary cachedResponse;
+@property (nonatomic) AWEProgressLoadingView indicator;
+@property (nonatomic) UITapGestureRecognizer tapGesture;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)_reportWithType:objectID:ownerID:content:roomID:isSpam:;
+- (id)btd_noencode_urlString:addingParameters:;
+- (void)loadReportTypesWithType:completion:;
+- (void)recordReportSuccess;
+- (void)reportPiratedMusicWithID:completion:;
+- (void)reportWithType:objectID:ownerID:;
+- (void)reportWithType:objectID:ownerID:commomQueryParam:extraParam:;
+- (void)reportWithType:objectID:ownerID:content:roomID:isSpam:commonParam:extraParam:;
+- (void)reportWithType:objectID:ownerID:extraParam:;
+- (void)reportWithType:objectID:ownerID:reason:completion:;
+- (void)reportWithType:reportInfo:;
+- (id)requestStringForType:;
+- (id)indicator;
+- (void)setIndicator:;
+- (id)cachedResponse;
+- (void)setCachedResponse:;
+- (void)showIndicator;
+- (void).cxx_destruct;
+- (id)tapGesture;
+- (void)setTapGesture:;
+- (void)hideIndicator;
+@end

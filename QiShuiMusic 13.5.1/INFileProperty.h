@@ -1,0 +1,31 @@
+@interface INFileProperty : NSObject
+@property (nonatomic) NSString name;
+@property (nonatomic) NSString qualifier;
+@property (nonatomic) NSString type;
+@property (nonatomic) INDateComponentsRange dateComponentsRange;
+@property (nonatomic) INPerson person;
+@property (nonatomic) NSString value;
+@property (nonatomic) NSNumber quantity;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)_dictionaryRepresentation;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (id)type;
+- (id)descriptionAtIndent:;
+- (void).cxx_destruct;
+- (id)person;
+- (id)description;
+- (id)value;
+- (id)name;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)quantity;
+- (id)qualifier;
+- (id)dateComponentsRange;
+- (id)initWithName:qualifier:type:dateComponentsRange:person:value:quantity:;
++ (BOOL)supportsSecureCoding;
+@end

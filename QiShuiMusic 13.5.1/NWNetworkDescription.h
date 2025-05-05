@@ -1,0 +1,34 @@
+@interface NWNetworkDescription : NSObject
+@property (nonatomic) q state;
+@property (nonatomic) NSString privateDescription;
+@property (nonatomic) NSSet interfaceTypeOptions;
+@property (nonatomic) NSSet ssidOptions;
+@property (nonatomic) NSSet dnsSearchDomainOptions;
+@property (nonatomic) NSSet dnsServerAddressOptions;
+@property (nonatomic) q roamingPreference;
+@property (nonatomic) NSURL probeURL;
+- (id)descriptionWithIndent:showFullContent:;
+- (id)probeURL;
+- (long long)roamingPreference;
+- (void)updateStateWithPath:;
+- (void)setSsidOptions:;
+- (void)setState:;
+- (void)setRoamingPreference:;
+- (unsigned long long)hash;
+- (id)dnsSearchDomainOptions;
+- (id)privateDescription;
+- (long long)state;
+- (void)setDnsServerAddressOptions:;
+- (void).cxx_destruct;
+- (void)setInterfaceTypeOptions:;
+- (id)description;
+- (id)dnsServerAddressOptions;
+- (void)setDnsSearchDomainOptions:;
+- (id)ssidOptions;
+- (BOOL)matchesPath:;
+- (void)setProbeURL:;
+- (BOOL)isEqual:;
+- (id)interfaceTypeOptions;
+- (id)copyWithZone:;
++ (long long)getNewStateFromPathMatch:oldState:probeExists:;
+@end

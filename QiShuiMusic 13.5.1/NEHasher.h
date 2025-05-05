@@ -1,0 +1,37 @@
+@interface NEHasher : NSCoder
+- (void)encodeBytes:length:forKey:;
+- (void)encodeInt32:forKey:;
+- (void)encodeDouble:forKey:;
+- (void)encodeFloat:forKey:;
+- (void)encodeObject:forKey:;
+- (id)decodeObjectOfClasses:forKey:;
+- (void)encodeBool:forKey:;
+- (void)encodeValueOfObjCType:at:;
+- (void)encodeInt:forKey:;
+- (void)encodeInteger:forKey:;
+- (BOOL)decodeBoolForKey:;
+- (id)init;
+- (void)dealloc;
+- (double)decodeDoubleForKey:;
+- (int)decodeInt32ForKey:;
+- (void)encodeBytes:length:;
+- (long long)decodeInt64ForKey:;
+- (float)decodeFloatForKey:;
+- (int)decodeIntForKey:;
+- (long long)decodeIntegerForKey:;
+- (id)decodeObjectForKey:;
+- (BOOL)allowsKeyedCoding;
+- (id)decodeDataObject;
+- (long long)versionForClassName:;
+- (void)encodeInt64:forKey:;
+- (void).cxx_destruct;
+- (id)decodePropertyListForKey:;
+- (void)decodeValueOfObjCType:at:;
+- (void)encodeDataObject:;
+- (void)encodeConditionalObject:forKey:;
+- (BOOL)containsValueForKey:;
+- (id)decodeBytesForKey:returnedLength:;
+- (id)decodeObjectOfClass:forKey:;
++ (id)hashObject:;
++ (id)hashObject:withClassPrefixWhitelist:;
+@end

@@ -1,0 +1,34 @@
+@interface GEOSource : PBCodable
+@property (nonatomic) NSString sourceName;
+@property (nonatomic) NSString sourceId;
+@property (nonatomic) BOOL hasSourceVersion;
+@property (nonatomic) NSString sourceVersion;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)sourceName;
+- (void)setSourceName:;
+- (id)unknownFields;
+- (id)init;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (void)setSourceId:;
+- (id)sourceId;
+- (id)dictionaryRepresentation;
+- (id)sourceVersion;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setSourceVersion:;
+- (BOOL)hasSourceVersion;
+- (id)initWithAttributionID:;
++ (BOOL)isValid:;
+@end

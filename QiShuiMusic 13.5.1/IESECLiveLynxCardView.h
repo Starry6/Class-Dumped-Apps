@@ -1,0 +1,32 @@
+@interface IESECLiveLynxCardView : IESECLiveBaseCardView
+@property (nonatomic) PuzzleHybridContainer lynxCardView;
+@property (nonatomic) {CGSize=dd} lynxViewSize;
+@property (nonatomic) IESECLiveCardDataModel cardViewModel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setupDependency;
+- (void)addLynxEventSubscriber;
+- (id)cardModel;
+- (id)cardViewModel;
+- (BOOL)enableUpdate;
+- (id)lynxCardView;
+- (id)lynxViewSize;
+- (id)lynxViewWithURLString:initialData:preferredFrame:;
+- (id)p_cardEnvironment;
+- (id)p_getCurrentLiveRoomContext;
+- (id)p_getInitialDataWithParams:;
+- (void)p_initCardModelWithParams:;
+- (void)setCardViewModel:;
+- (void)setLynxCardView:;
+- (void)setLynxViewSize:;
+- (void)showOnEnter:followUp:completion:;
+- (void)updateWithCardModel:;
+- (void)viewDidChangeIntrinsicContentSize:withContainerID:;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (id)cardSize;
+- (id)cardID;
++ (id)cardViewWithParams:liveCardViewDelegate:;
+@end

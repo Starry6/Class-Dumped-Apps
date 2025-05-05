@@ -1,0 +1,30 @@
+@interface GEOWiFiQualityIndex : PBCodable
+@property (nonatomic) BOOL hasType;
+@property (nonatomic) NSInteger type;
+@property (nonatomic) BOOL hasValue;
+@property (nonatomic) I value;
+- (void)readAll:;
+- (BOOL)hasValue;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (int)StringAsType:;
+- (id)initWithDictionary:;
+- (void)setType:;
+- (void)writeTo:;
+- (void)setHasType:;
+- (BOOL)hasType;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (id)typeAsString:;
+- (void)setHasValue:;
+- (void)mergeFrom:;
+- (void)setValue:;
+- (int)type;
+- (BOOL)readFrom:;
+- (id)description;
+- (unsigned int)value;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
++ (BOOL)isValid:;
+@end

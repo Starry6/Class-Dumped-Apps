@@ -1,0 +1,33 @@
+@interface IESLiveInteractSeatAnimationManagerNode : NSObject
+@property (nonatomic) NSString userID;
+@property (nonatomic) q source;
+@property (nonatomic) BOOL needShowSeatAnimation;
+@property (nonatomic) HTSLiveMatchEffect matchEffect;
+@property (nonatomic) BOOL needShowCityAnimation;
+@property (nonatomic) HTSLiveCityEffect cityEffect;
+@property (nonatomic) BOOL isShowingSeating;
+@property (nonatomic) BOOL hasShowedSeating;
+@property (nonatomic) BOOL isShowingCityEffect;
+@property (nonatomic) IESLiveCountTimer seatAnimationCountTimer;
+- (void)setMatchEffect:;
+- (id)cityEffect;
+- (BOOL)hasShowedSeating;
+- (BOOL)isShowingCityEffect;
+- (BOOL)isShowingSeating;
+- (id)matchEffect;
+- (BOOL)needShowCityAnimation;
+- (BOOL)needShowSeatAnimation;
+- (id)seatAnimationCountTimer;
+- (void)setCityEffect:;
+- (void)setHasShowedSeating:;
+- (void)setIsShowingCityEffect:;
+- (void)setIsShowingSeating:;
+- (void)setNeedShowCityAnimation:;
+- (void)setNeedShowSeatAnimation:;
+- (void)setSeatAnimationCountTimer:;
+- (id)userID;
+- (void).cxx_destruct;
+- (long long)source;
+- (void)setUserID:;
+- (void)setSource:;
+@end

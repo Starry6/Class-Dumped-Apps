@@ -1,0 +1,2 @@
+@interface PDFActionNamedPrivateVars : NSObject
+@end

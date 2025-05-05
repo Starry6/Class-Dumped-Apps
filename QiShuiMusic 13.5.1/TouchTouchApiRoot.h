@@ -1,0 +1,2 @@
+@interface TouchTouchApiRoot : GPBRootObject
+@end

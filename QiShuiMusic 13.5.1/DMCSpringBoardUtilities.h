@@ -1,0 +1,2 @@
+@interface DMCSpringBoardUtilities : NSObject
+@end

@@ -1,0 +1,31 @@
+@interface MFMutableMessageHeaders : MFMessageHeaders
+@property (nonatomic) NSArray listUnsubscribeCommands;
+@property (nonatomic) NSString listUnsubscribePostContent;
+@property (nonatomic) NSData encodedHeaders;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)mutableCopy;
+- (void).cxx_destruct;
+- (id)description;
+- (void)setReferences:;
+- (id)allHeaderKeys;
+- (void)setAddressListForBcc:;
+- (void)setAddressListForCc:;
+- (void)setAddressListForSender:;
+- (void)setAddressListForTo:;
+- (void)setHeader:forKey:;
+- (BOOL)hasHeaderForKey:;
+- (void)stripInternalHeaders;
+- (void)removeHeaderForKey:;
+- (id)encodedHeaders;
+- (id)headersDictionary;
+- (id)firstHeaderForKey:;
+- (void)setAddressListForReplyTo:;
+- (id)_copyHeaderValueForKey:offset:decoded:;
+- (id)_copyHeaderValueForKey:;
+- (void)setAddressList:forKey:;
+- (void)_appendHeaderKey:value:toData:;
+- (void)_appendAddedHeaderKey:value:toData:;
+@end

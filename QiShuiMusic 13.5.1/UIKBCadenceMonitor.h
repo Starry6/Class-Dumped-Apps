@@ -1,0 +1,35 @@
+@interface UIKBCadenceMonitor : NSObject
+@property (nonatomic) BOOL isUserTyping;
+@property (nonatomic) float cadence;
+@property (nonatomic) float confidence;
+@property (nonatomic) float typingAvg;
+@property (nonatomic) double gapAvg;
+@property (nonatomic) double prevTouchDown;
+@property (nonatomic) NSInteger touchCount;
+@property (nonatomic) UIDelayedAction touchLogTimer;
+- (float)cadence;
+- (float)confidence;
+- (int)touchCount;
+- (id)init;
+- (void)setConfidence:;
+- (void)setCadence:;
+- (void).cxx_destruct;
+- (void)reset;
+- (void)setTouchCount:;
+- (void)logUserTyping:;
+- (id)recognizer:confidenceWhenPendingTouchInfo:;
+- (id)recognizer:confidenceWhenSettingTouchInfo:;
+- (void)updateConfidenceWithGap:;
+- (void)typingCadence:;
+- (void)addTypingTouchTime:;
+- (BOOL)isUserTyping;
+- (void)setIsUserTyping:;
+- (float)typingAvg;
+- (void)setTypingAvg:;
+- (double)gapAvg;
+- (void)setGapAvg:;
+- (double)prevTouchDown;
+- (void)setPrevTouchDown:;
+- (id)touchLogTimer;
+- (void)setTouchLogTimer:;
+@end

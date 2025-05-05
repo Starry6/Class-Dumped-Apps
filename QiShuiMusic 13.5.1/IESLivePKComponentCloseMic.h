@@ -1,0 +1,34 @@
+@interface IESLivePKComponentCloseMic : IESLivePKComponent
+@property (nonatomic) <IESLiveCompoundSubscription> disposable;
+@property (nonatomic) UIButton closeMicButton;
+@property (nonatomic) BOOL hasPropEffectInfo;
+@property (nonatomic) double baseOffset;
+- (BOOL)enablePKComponentLayoutOptimize;
+- (double)baseOffsetInPlaying;
+- (void)bindAction;
+- (id)closeMicButton;
+- (void)componentFinished;
+- (void)componentInteracting;
+- (void)componentPlaying;
+- (id)disposable;
+- (void)handleCloseMicInChorusState;
+- (BOOL)hasPropEffectInfo;
+- (void)loadCloseMicButton;
+- (void)monitorClickCloseMicButton:;
+- (BOOL)needShowOppoTeamTaskAdditionInfo;
+- (void)onClickCloseMicButton;
+- (void)setBaseOffset:;
+- (void)setCloseMicButton:;
+- (void)setDisposable:;
+- (void)setHasPropEffectInfo:;
+- (void)showCloseMicPanel;
+- (void)showCloseMicToast;
+- (void)trackCloseMicButtonClicked;
+- (void)updateCloseMicButtonHidden:;
+- (void)updateCloseMicImageWithIsMute:;
+- (void)updateCloseMicPosition;
+- (double)topOffset;
+- (void).cxx_destruct;
+- (double)baseOffset;
+- (void)clean;
+@end

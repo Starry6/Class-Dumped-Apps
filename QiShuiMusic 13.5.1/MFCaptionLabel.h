@@ -1,0 +1,36 @@
+@interface MFCaptionLabel : UILabel
+@property (nonatomic) <MFCaptionLabelDataSource> dataSource;
+@property (nonatomic) NSArray toRecipients;
+@property (nonatomic) NSArray ccRecipients;
+@property (nonatomic) NSArray bccRecipients;
+@property (nonatomic) NSArray fromSenders;
+@property (nonatomic) NSArray otherSigners;
+@property (nonatomic) BOOL preventAutoUpdatingLabel;
+- (void)setDataSource:;
+- (void)setFrame:;
+- (void)layoutSubviews;
+- (id)bccRecipients;
+- (id)initWithFrame:;
+- (id)ccRecipients;
+- (id)dataSource;
+- (void)setBounds:;
+- (id)toRecipients;
+- (void).cxx_destruct;
+- (void)setToRecipients:;
+- (id)_chevronImage;
+- (void)setCcRecipients:;
+- (void)setBccRecipients:;
+- (void)setFromSenders:;
+- (void)setOtherSigners:;
+- (void)setPreventAutoUpdatingLabel:;
+- (void)_setNeedsLabelUpdate;
+- (id)_stringAtIndexForCombinedRecipientLists:;
+- (void)updateLabelNow;
+- (id)_chevronAttributedString;
+- (id)_whitespaceStringWithWidth:;
+- (id)_formattedAttributedString;
+- (id)fromSenders;
+- (id)otherSigners;
+- (BOOL)preventAutoUpdatingLabel;
++ (id)attributedStringsCache;
+@end

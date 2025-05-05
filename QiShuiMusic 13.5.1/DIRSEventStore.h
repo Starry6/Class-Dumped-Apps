@@ -1,0 +1,32 @@
+@interface DIRSEventStore : DIRSBasicModule
+@property (nonatomic) <IRISEventSerializer> serializer;
+@property (nonatomic) BOOL isEnabled;
+@property (nonatomic) q state;
+@property (nonatomic) DIRSContext context;
+@property (nonatomic) NSString category;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)_checkFileBytes;
+- (void)_batchToDatabase:;
+- (id)_createQuery:usingOptions:;
+- (void)_flushIfNeed;
+- (void)_initDatabase;
+- (id)_sqlParseString:;
+- (BOOL)_writeEvent:toDatabase:withError:;
+- (void)onApplicationDidReceiveMemoryWarning;
+- (void)queryEvents:usingBlock:;
+- (BOOL)startWithPath:;
+- (void)setSerializer:;
+- (void)commonInit;
+- (id)serializer;
+- (void).cxx_destruct;
+- (void)removeEvents:;
+- (void)reset;
+- (void)addEvent:;
+- (id)executeStatement:;
++ (id)moduleId;
++ (BOOL)isPlugin;
++ (id)moduleVersion;
+@end

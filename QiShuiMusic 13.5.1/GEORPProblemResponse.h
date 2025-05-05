@@ -1,0 +1,36 @@
+@interface GEORPProblemResponse : PBCodable
+@property (nonatomic) BOOL hasStatusCode;
+@property (nonatomic) NSInteger statusCode;
+@property (nonatomic) BOOL hasProblemId;
+@property (nonatomic) NSString problemId;
+@property (nonatomic) BOOL hasIsNotificationSupported;
+@property (nonatomic) BOOL isNotificationSupported;
+- (void)readAll:;
+- (void)setStatusCode:;
+- (int)statusCode;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setHasStatusCode:;
+- (BOOL)hasStatusCode;
+- (id)statusCodeAsString:;
+- (int)StringAsStatusCode:;
+- (BOOL)hasProblemId;
+- (id)problemId;
+- (void)setProblemId:;
+- (BOOL)isNotificationSupported;
+- (void)setIsNotificationSupported:;
+- (void)setHasIsNotificationSupported:;
+- (BOOL)hasIsNotificationSupported;
++ (BOOL)isValid:;
+@end

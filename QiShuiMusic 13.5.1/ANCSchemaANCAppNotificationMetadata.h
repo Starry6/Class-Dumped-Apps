@@ -1,0 +1,33 @@
+@interface ANCSchemaANCAppNotificationMetadata : SISchemaInstrumentationMessage
+@property (nonatomic) NSInteger commsNotificationType;
+@property (nonatomic) BOOL hasCommsNotificationType;
+@property (nonatomic) BOOL isSmsEligible;
+@property (nonatomic) BOOL hasIsSmsEligible;
+@property (nonatomic) BOOL isAskWithSiriEnabled;
+@property (nonatomic) BOOL hasIsAskWithSiriEnabled;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)setCommsNotificationType:;
+- (BOOL)hasCommsNotificationType;
+- (void)setHasCommsNotificationType:;
+- (void)deleteCommsNotificationType;
+- (void)setIsSmsEligible:;
+- (BOOL)hasIsSmsEligible;
+- (void)setHasIsSmsEligible:;
+- (void)deleteIsSmsEligible;
+- (void)setIsAskWithSiriEnabled:;
+- (BOOL)hasIsAskWithSiriEnabled;
+- (void)setHasIsAskWithSiriEnabled:;
+- (void)deleteIsAskWithSiriEnabled;
+- (int)commsNotificationType;
+- (BOOL)isSmsEligible;
+- (BOOL)isAskWithSiriEnabled;
+@end

@@ -1,0 +1,2 @@
+@interface ABFavoritesLookupChangeRecord : NSObject
+@end

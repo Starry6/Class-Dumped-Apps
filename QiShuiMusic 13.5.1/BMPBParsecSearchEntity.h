@@ -1,0 +1,37 @@
+@interface BMPBParsecSearchEntity : PBCodable
+@property (nonatomic) BOOL hasName;
+@property (nonatomic) NSString name;
+@property (nonatomic) BOOL hasCategory;
+@property (nonatomic) I category;
+@property (nonatomic) BOOL hasProbabilityScore;
+@property (nonatomic) float probabilityScore;
+@property (nonatomic) NSMutableArray topics;
+- (void)setTopics:;
+- (unsigned long long)topicsCount;
+- (void)setName:;
+- (id)topics;
+- (BOOL)hasName;
+- (void)clearTopics;
+- (void)writeTo:;
+- (void)addTopics:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void)setCategory:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)name;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (BOOL)hasCategory;
+- (unsigned int)category;
+- (id)copyWithZone:;
+- (id)topicsAtIndex:;
+- (void)setHasCategory:;
+- (void)setProbabilityScore:;
+- (void)setHasProbabilityScore:;
+- (BOOL)hasProbabilityScore;
+- (float)probabilityScore;
++ (Class)topicsType;
+@end

@@ -1,0 +1,35 @@
+@interface WebSelectionRect : NSObject
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} rect;
+@property (nonatomic) NSInteger writingDirection;
+@property (nonatomic) BOOL isLineBreak;
+@property (nonatomic) BOOL isFirstOnLine;
+@property (nonatomic) BOOL isLastOnLine;
+@property (nonatomic) BOOL containsStart;
+@property (nonatomic) BOOL containsEnd;
+@property (nonatomic) BOOL isInFixedPosition;
+@property (nonatomic) BOOL isHorizontal;
+- (id)rect;
+- (id)init;
+- (void)setRect:;
+- (id)description;
+- (id)copyWithZone:;
+- (BOOL)containsStart;
+- (void)setContainsStart:;
+- (BOOL)containsEnd;
+- (void)setContainsEnd:;
+- (int)writingDirection;
+- (void)setWritingDirection:;
+- (BOOL)isHorizontal;
+- (void)setIsHorizontal:;
+- (void)setIsFirstOnLine:;
+- (void)setIsInFixedPosition:;
+- (void)setIsLastOnLine:;
+- (void)setIsLineBreak:;
+- (BOOL)isLineBreak;
+- (BOOL)isFirstOnLine;
+- (BOOL)isLastOnLine;
+- (BOOL)isInFixedPosition;
++ (id)selectionRect;
++ (id)startEdge:;
++ (id)endEdge:;
+@end

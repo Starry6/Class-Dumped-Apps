@@ -1,0 +1,2 @@
+@interface PDFAnnotationFreeTextPrivateVars : NSObject
+@end

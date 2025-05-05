@@ -1,0 +1,38 @@
+@interface NRNSXPCConnection : NSObject
+@property (nonatomic) NSXPCInterface exportedInterface;
+@property (nonatomic) @ exportedObject;
+@property (nonatomic) NSXPCInterface remoteObjectInterface;
+@property (nonatomic) @ remoteObjectProxy;
+@property (nonatomic) @? interruptionHandler;
+@property (nonatomic) @? invalidationHandler;
+@property (nonatomic) NSInteger processIdentifier;
+@property (nonatomic) NSString processName;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setExportedInterface:;
+- (id)interruptionHandler;
+- (id)exportedObject;
+- (id)exportedInterface;
+- (void)setInterruptionHandler:;
+- (id)valueForEntitlement:;
+- (id)synchronousRemoteObjectProxyWithErrorHandler:;
+- (id)remoteObjectProxy;
+- (id)initWithMachServiceName:options:;
+- (void)setExportedObject:;
+- (void)suspend;
+- (id)remoteObjectProxyWithErrorHandler:;
+- (void)setRemoteObjectInterface:;
+- (id)processName;
+- (void)resume;
+- (void)runCompletionBlock:;
+- (int)processIdentifier;
+- (void).cxx_destruct;
+- (id)invalidationHandler;
+- (void)setInvalidationHandler:;
+- (void)_setQueue:;
+- (id)initWithConnection:;
+- (void)invalidate;
+- (id)remoteObjectInterface;
+@end

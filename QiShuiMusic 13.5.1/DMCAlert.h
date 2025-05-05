@@ -1,0 +1,37 @@
+@interface DMCAlert : NSObject
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString message;
+@property (nonatomic) NSString defaultButtonText;
+@property (nonatomic) NSString alternateButtonText;
+@property (nonatomic) NSString otherButtonText;
+@property (nonatomic) BOOL displayOnLockScreen;
+@property (nonatomic) BOOL dismissOnLock;
+@property (nonatomic) double dismissAfterTimeInterval;
+@property (nonatomic) @ notification;
+@property (nonatomic) @? completionBlock;
+@property (nonatomic) NSString summary;
+- (void)setMessage:;
+- (id)notification;
+- (void)setNotification:;
+- (void)setCompletionBlock:;
+- (void)setTitle:;
+- (void)setSummary:;
+- (id)summary;
+- (id)title;
+- (id)message;
+- (void).cxx_destruct;
+- (id)completionBlock;
+- (BOOL)dismissOnLock;
+- (void)setDismissOnLock:;
+- (id)defaultButtonText;
+- (void)setDefaultButtonText:;
+- (id)alternateButtonText;
+- (void)setAlternateButtonText:;
+- (id)otherButtonText;
+- (void)setOtherButtonText:;
+- (BOOL)displayOnLockScreen;
+- (void)setDisplayOnLockScreen:;
+- (double)dismissAfterTimeInterval;
+- (void)setDismissAfterTimeInterval:;
+- (id)notificationParametersOutFlags:;
+@end

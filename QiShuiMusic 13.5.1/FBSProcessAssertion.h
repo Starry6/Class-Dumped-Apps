@@ -1,0 +1,31 @@
+@interface FBSProcessAssertion : NSObject
+@property (nonatomic) BKSProcessAssertion assertion;
+@property (nonatomic) Q activationCount;
+@property (nonatomic) NSString name;
+@property (nonatomic) <FBSProcess> process;
+@property (nonatomic) FBSProcessExecutionPolicy policy;
+@property (nonatomic) BOOL activated;
+@property (nonatomic) BOOL invalidated;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)assertion;
+- (void)dealloc;
+- (id)policy;
+- (BOOL)isInvalidated;
+- (id)initWithName:process:policy:;
+- (id)succinctDescriptionBuilder;
+- (void)deactivate;
+- (BOOL)isActivated;
+- (id)process;
+- (void).cxx_destruct;
+- (id)succinctDescription;
+- (id)description;
+- (id)name;
+- (id)descriptionBuilderWithMultilinePrefix:;
+- (void)invalidate;
+- (id)descriptionWithMultilinePrefix:;
+- (void)activate;
+- (unsigned long long)activationCount;
+@end

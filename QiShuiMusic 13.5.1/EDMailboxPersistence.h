@@ -1,0 +1,34 @@
+@interface EDMailboxPersistence : NSObject
+@property (nonatomic) NSMutableDictionary changeObserversByIdentifier;
+@property (nonatomic) EDMailboxProvider mailboxProvider;
+@property (nonatomic) NSSet allMailboxObjectIDs;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)renameMailbox:newName:;
+- (id)legacyMailboxForObjectID:;
+- (void).cxx_destruct;
+- (BOOL)moveMailbox:newParentMailboxID:;
+- (BOOL)deleteMailbox:;
+- (void)serverCountsForMailboxScope:block:;
+- (id)mailboxDatabaseIDsForMailboxObjectIDs:createIfNecessary:;
+- (void)test_tearDown;
+- (BOOL)createMailbox:parentMailboxID:;
+- (id)mailboxObjectIDsForMailboxType:;
+- (id)initWithMailboxProvider:;
+- (id)mailboxProvider;
+- (long long)mailboxTypeForMailboxObjectID:;
+- (id)allMailboxObjectIDs;
+- (void)mailboxListInvalidated;
+- (id)allMailboxes;
+- (void)allMailboxesWithCompletionHandler:;
+- (id)userCreatedMailboxObjectIDs;
+- (void)fetchMailboxLists;
+- (id)legacyMailboxForMailboxURL:;
+- (void)addChangeObserver:withIdentifier:;
+- (void)removeChangeObserverWithIdentifier:;
+- (id)changeObserversByIdentifier;
+- (void)setChangeObserversByIdentifier:;
+- (void)setMailboxProvider:;
+@end

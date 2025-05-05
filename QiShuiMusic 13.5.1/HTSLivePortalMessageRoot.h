@@ -1,0 +1,2 @@
+@interface HTSLivePortalMessageRoot : GPBRootObject
+@end

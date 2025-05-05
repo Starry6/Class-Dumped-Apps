@@ -1,0 +1,2 @@
+@interface AVCaptureSynchronizedDataCollectionInternal : NSObject
+@end

@@ -1,0 +1,30 @@
+@interface AMapNetworkFailModel : AMapNetworkMonitorModel
+@property (nonatomic) NSError error;
+@property (nonatomic) NSURLRequest request;
+@property (nonatomic) NSHTTPURLResponse response;
+@property (nonatomic) Q failType;
+@property (nonatomic) q errorCode;
+@property (nonatomic) q count;
+@property (nonatomic) double spendTime;
+- (unsigned long long)failType;
+- (id)initFailModelWithRequest:response:metrics:error:;
+- (BOOL)isFail;
+- (id)modelIdentifer;
+- (id)offline_errorcode;
+- (id)offline_errorsubcode;
+- (BOOL)parseErrorInfo;
+- (id)realTimeHeader;
+- (void)setSpendTime:;
+- (double)spendTime;
+- (void)setCount:;
+- (long long)errorCode;
+- (void)setError:;
+- (id)error;
+- (id)request;
+- (id)response;
+- (void).cxx_destruct;
+- (id)description;
+- (void)setRequest:;
+- (void)setResponse:;
+- (long long)count;
+@end

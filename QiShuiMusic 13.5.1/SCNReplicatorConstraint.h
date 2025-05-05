@@ -1,0 +1,32 @@
+@interface SCNReplicatorConstraint : SCNConstraint
+@property (nonatomic) SCNNode target;
+@property (nonatomic) BOOL replicatesOrientation;
+@property (nonatomic) BOOL replicatesPosition;
+@property (nonatomic) BOOL replicatesScale;
+@property (nonatomic) {SCNVector4=ffff} orientationOffset;
+@property (nonatomic) {SCNVector3=fff} positionOffset;
+@property (nonatomic) {SCNVector3=fff} scaleOffset;
+- (id)init;
+- (id)positionOffset;
+- (id)initWithCoder:;
+- (void)setPositionOffset:;
+- (void)setTarget:;
+- (void)encodeWithCoder:;
+- (id)target;
+- (id)copyWithZone:;
+- (id)scaleOffset;
+- (void)setOrientationOffset:;
+- (id)orientationOffset;
+- (void)setReplicatesOrientation:;
+- (BOOL)replicatesOrientation;
+- (void)setReplicatesPosition:;
+- (BOOL)replicatesPosition;
+- (void)setReplicatesScale:;
+- (BOOL)replicatesScale;
+- (void)setScaleOffset:;
+- (void)_customEncodingOfSCNReplicatorConstraint:;
+- (void)_customDecodingOfSCNReplicatorConstraint:;
++ (BOOL)supportsSecureCoding;
++ (id)replicatorConstraint;
++ (id)replicatorConstraintWithTarget:;
+@end

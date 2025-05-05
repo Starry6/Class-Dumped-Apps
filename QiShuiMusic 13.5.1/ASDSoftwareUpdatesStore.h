@@ -1,0 +1,34 @@
+@interface ASDSoftwareUpdatesStore : ASDBaseClient
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (void)dealloc;
+- (BOOL)hasEntitlement;
+- (void)reloadFromServerWithCompletionBlock:;
+- (void).cxx_destruct;
+- (BOOL)autoUpdateEnabled;
+- (BOOL)confirmAgentRequestedUpdateAll;
+- (void)getManagedUpdatesWithCompletionBlock:;
+- (void)getUpdatesWithCompletionBlock:;
+- (void)refreshUpdateCountWithCompletionBlock:;
+- (void)refreshUpdatesWithCompletionBlock:completionBlock:;
+- (void)reloadManagedUpdatesWithCompletionBlock:;
+- (void)setAutoUpdateEnabled:;
+- (void)updateAllWithOrder:completionBlock:;
+- (void)reloadFromServerInBackgroundWithCompletionBlock:;
+- (void)shouldUseModernUpdatesWithCompletionBlock:;
+- (void)getMetricsWithCompletionBlock:;
+- (void)getUpdatesIncludingMetricsWithCompletionBlock:;
+- (void)hideApplicationBadgeForPendingUpdates;
+- (void)reloadForSettingsFromServerWithCompletionBlock:;
+- (void)showApplicationBadgeForPendingUpdates;
+- (void)updateAllWithCompletionBlock:;
+- (void)updateAllWithJobResultsCompletionBlock:;
+- (void)_call:run:error:;
+- (void)clearExpiredUpdateHistoryWithCompletionBlock:;
+- (void)removeUpdateBulletins;
+- (void)showApplicationUpdateBulletin;
++ (id)registerBadgeCountNotificationBlock:;
+@end

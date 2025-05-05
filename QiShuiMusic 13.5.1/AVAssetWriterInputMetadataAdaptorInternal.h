@@ -1,0 +1,2 @@
+@interface AVAssetWriterInputMetadataAdaptorInternal : NSObject
+@end

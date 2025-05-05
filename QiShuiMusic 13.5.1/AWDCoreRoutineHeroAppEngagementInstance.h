@@ -1,0 +1,35 @@
+@interface AWDCoreRoutineHeroAppEngagementInstance : PBCodable
+@property (nonatomic) BOOL hasTimestamp;
+@property (nonatomic) Q timestamp;
+@property (nonatomic) BOOL hasSuggestionId;
+@property (nonatomic) NSString suggestionId;
+@property (nonatomic) BOOL hasActionType;
+@property (nonatomic) NSInteger actionType;
+@property (nonatomic) BOOL hasUiPlacement;
+@property (nonatomic) NSInteger uiPlacement;
+- (BOOL)hasActionType;
+- (void)dealloc;
+- (int)actionType;
+- (id)suggestionId;
+- (void)setActionType:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)setHasActionType:;
+- (void)setHasTimestamp:;
+- (void)mergeFrom:;
+- (BOOL)hasTimestamp;
+- (void)setSuggestionId:;
+- (void)setTimestamp:;
+- (BOOL)readFrom:;
+- (unsigned long long)timestamp;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasSuggestionId;
+- (void)setUiPlacement:;
+- (int)uiPlacement;
+- (void)setHasUiPlacement:;
+- (BOOL)hasUiPlacement;
+@end

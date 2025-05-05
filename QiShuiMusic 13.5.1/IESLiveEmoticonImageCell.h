@@ -1,0 +1,38 @@
+@interface IESLiveEmoticonImageCell : UICollectionViewCell
+@property (nonatomic) q imageScale;
+@property (nonatomic) <IESLiveEmoticonResourceAdapter> emoticonResource;
+@property (nonatomic) UITapGestureRecognizer tap;
+@property (nonatomic) UIView backgroundColorView;
+@property (nonatomic) UIImageView emoticonImageView;
+@property (nonatomic) IESLiveEmoticonModel emoticonModel;
+@property (nonatomic) BOOL isDeleteCell;
+@property (nonatomic) BOOL isEmptyCell;
+@property (nonatomic) BOOL needTapGesture;
+@property (nonatomic) @? cellDidClicked;
+- (void)setIsEmptyCell:;
+- (id)cellDidClicked;
+- (void)didClickContentView;
+- (id)emoticonImageView;
+- (id)emoticonModel;
+- (id)emoticonResource;
+- (BOOL)isDeleteCell;
+- (BOOL)isEmptyCell;
+- (BOOL)needTapGesture;
+- (void)setCellDidClicked:;
+- (void)setEmoticonImageView:;
+- (void)setEmoticonModel:;
+- (void)setEmoticonResource:;
+- (void)setIsDeleteCell:;
+- (void)setNeedTapGesture:;
+- (void)setImageScale:;
+- (void)resetStatus;
+- (long long)imageScale;
+- (void)prepareForReuse;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (id)backgroundColorView;
+- (id)tap;
+- (void)setTap:;
+- (void)setBackgroundColorView:;
++ (id)identifier;
+@end

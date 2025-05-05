@@ -1,0 +1,36 @@
+@interface MLMediaLibraryService : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)checkIntegrityOfDatabaseAtPath:repairFaults:withCompletionHandler:;
+- (id)init;
+- (void)performDatabaseOperation:withAttributes:options:completionHandler:;
+- (void)executeQuery:withParameters:options:onTransaction:withCompletionHandler:;
+- (void)dealloc;
+- (void)setOptions:withCompletionHandler:;
+- (void)updateSiriIndexMetadataForAllLibrariesWithCompletion:;
+- (id)_serviceConnection;
+- (void)executeUpdate:withParameters:onTransaction:withCompletionHandler:;
+- (void)beginTransactionForDatabaseWithContext:completionHandler:;
+- (void)performDiagnosticWithCompletionHandler:;
+- (void)updateSpotlightIndexMetadataForItemsWithIdentifiers:bundleID:withCompletion:;
+- (void)performMaintenanceTasksForDatabaseAtPath:withCompletionHandler:;
+- (id)clientImportServiceListenerEndpointWithError:;
+- (void)unlockDatabaseWithCompletion:;
+- (void)attemptDatabaseFileRecoveryAtPath:withCompletionHandler:;
+- (void)lockDatabaseForReason:withCompletion:;
+- (void)endTransaction:shouldCommit:withCompletionHandler:;
+- (id)mediaLibraryResourcesServiceListenerEndpointWithError:;
+- (void).cxx_destruct;
+- (void)recreateDatabaseAtPath:withCompletionHandler:;
+- (void)cancelImportOperation:completionHandler:;
+- (BOOL)validateDatabaseAtPath:error:;
+- (void)importOperationWithIdentifier:didUpdateWithProgress:;
+- (void)getLanguageResourcesWithCompletion:;
+- (void)performImport:fromSource:withProgressBlock:completionHandler:;
+- (void)serviceTerminatedTransactionWithIdentifier:error:;
+- (void)updateSpotlightIndexForBundleID:withCompletion:;
++ (id)sharedMediaLibraryService;
++ (void)_setDaemonProcessInfo:;
+@end

@@ -1,0 +1,37 @@
+@interface AliSecXDeviceInfoMXXTIY : NSObject
++ (id)getIE11;
++ (long long)getIE13;
++ (id)getIE15;
++ (float)getIE17;
++ (id)getIE19;
++ (id)getIE20;
++ (id)getIE22;
++ (unsigned long long)getIE24;
++ (id)getIE26;
++ (id)getIE29;
++ (id)getIE31;
++ (id)getIE33;
++ (unsigned short)getIE39;
++ (id)getIE10;
++ (id)getIE12;
++ (long long)getIE14;
++ (id)getIE16;
++ (long long)getIE18;
++ (long long)getIE1:;
++ (id)getIE21;
++ (id)getIE23;
++ (id)getIE25;
++ (id)getIE27;
++ (id)getIE30;
++ (id)getIE32;
++ (id)getIE34;
++ (unsigned short)getIE40;
++ (id)getIE2;
++ (id)getIE3;
++ (id)getIE4;
++ (id)getIE5;
++ (unsigned short)getIE6;
++ (BOOL)getIE7;
++ (id)getIE9;
++ (id)carrierName;
+@end

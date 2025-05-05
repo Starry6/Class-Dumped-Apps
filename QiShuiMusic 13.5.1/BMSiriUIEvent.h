@@ -1,0 +1,34 @@
+@interface BMSiriUIEvent : BMEventBase
+@property (nonatomic) NSString sessionID;
+@property (nonatomic) NSString UUID;
+@property (nonatomic) NSString viewMode;
+@property (nonatomic) NSString dismissalReason;
+@property (nonatomic) BOOL starting;
+@property (nonatomic) double absoluteTimestamp;
+@property (nonatomic) I dataVersion;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithProtoData:;
+- (id)viewMode;
+- (id)sessionID;
+- (void)setStarting:;
+- (id)init;
+- (id)proto;
+- (id)encodeAsProto;
+- (double)absoluteTimestamp;
+- (unsigned int)dataVersion;
+- (unsigned long long)hash;
+- (id)initWithProto:;
+- (id)dismissalReason;
+- (void).cxx_destruct;
+- (BOOL)isStarting;
+- (id)description;
+- (id)serialize;
+- (id)UUID;
+- (BOOL)isEqual:;
+- (id)initWithSessionID:UUID:viewMode:dismissalReason:starting:absoluteTimeStamp:;
++ (id)new;
++ (id)eventWithData:dataVersion:;
+@end

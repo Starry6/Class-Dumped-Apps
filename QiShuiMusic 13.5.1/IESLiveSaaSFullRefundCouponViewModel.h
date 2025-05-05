@@ -1,0 +1,32 @@
+@interface IESLiveSaaSFullRefundCouponViewModel : NSObject
+@property (nonatomic) IESLiveSaaSPBQueryUserBenefitPopupResponse_PopupWindow fullRefundCoupon;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString descriptionText;
+@property (nonatomic) NSString buttonPreText;
+@property (nonatomic) NSString buttonPostText;
+@property (nonatomic) NSString maxAmount;
+@property (nonatomic) NSString backgroundUrl;
+@property (nonatomic) NSAttributedString maxAmountAttributeString;
+@property (nonatomic) IESLiveSaaSLiveRoomModel roomModel;
+- (id)backgroundUrl;
+- (id)buttonPostText;
+- (id)buttonPreText;
+- (id)fullRefundCoupon;
+- (void)generateMaxAmountAttributeString;
+- (id)maxAmountAttributeString;
+- (void)parseCouponData:;
+- (id)roomModel;
+- (void)setBackgroundUrl:;
+- (void)setButtonPostText:;
+- (void)setButtonPreText:;
+- (void)setFullRefundCoupon:;
+- (void)setMaxAmountAttributeString:;
+- (void)setRoomModel:;
+- (id)descriptionText;
+- (void)setTitle:;
+- (id)title;
+- (void).cxx_destruct;
+- (void)setDescriptionText:;
+- (id)maxAmount;
+- (void)setMaxAmount:;
+@end

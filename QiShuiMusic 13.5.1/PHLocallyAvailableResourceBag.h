@@ -1,0 +1,30 @@
+@interface PHLocallyAvailableResourceBag : NSObject
+@property (nonatomic) <PLAssetID> assetID;
+@property (nonatomic) <PLResourceDataStore> dataStore;
+@property (nonatomic) <PLResourceDataStoreKey> dataStoreKey;
+@property (nonatomic) BOOL keyIsHintBased;
+@property (nonatomic) BOOL isDegraded;
+@property (nonatomic) BOOL isPrimaryFormat;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setDataStoreKey:;
+- (void)setDataStore:;
+- (id)dataStore;
+- (id)dataStoreKey;
+- (id)resourceURL;
+- (void)setIsPrimaryFormat:;
+- (void)prepareForReuse;
+- (BOOL)keyIsHintBased;
+- (void).cxx_destruct;
+- (BOOL)isDegraded;
+- (void)setAssetID:;
+- (id)description;
+- (id)resourceData;
+- (void)setIsDegraded:;
+- (void)setKeyIsHintBased:;
+- (id)assetID;
+- (BOOL)isPrimaryFormat;
+- (id)copyWithZone:;
+@end

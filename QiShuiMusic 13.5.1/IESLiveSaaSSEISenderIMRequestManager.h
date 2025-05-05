@@ -1,0 +1,31 @@
+@interface IESLiveSaaSSEISenderIMRequestManager : NSObject
+@property (nonatomic) NSMutableArray infoArray;
+@property (nonatomic) <IESLiveSaaSRoomService> room;
+@property (nonatomic) NSObject<OS_dispatch_queue> controlQueue;
+@property (nonatomic) q emptyCount;
+@property (nonatomic) IESLiveSaaSSendSyncStreamInfoAPI api;
+@property (nonatomic) IESLiveSaaSGCDTimer timer;
+@property (nonatomic) NSObject<OS_dispatch_queue> timerQueue;
+- (long long)emptyCount;
+- (void)p_requestInfo;
+- (void)p_startTimerWithSeconds:;
+- (void)p_stopTimer;
+- (id)popCurrentInfoArray;
+- (void)sendInfo:key:;
+- (void)setEmptyCount:;
+- (void)setInfoArray:;
+- (void)dealloc;
+- (void)setTimer:;
+- (id)timerQueue;
+- (void).cxx_destruct;
+- (id)timer;
+- (id)room;
+- (void)setRoom:;
+- (id)controlQueue;
+- (void)setControlQueue:;
+- (id)api;
+- (id)initWithRoom:;
+- (void)setTimerQueue:;
+- (void)setApi:;
+- (id)infoArray;
+@end

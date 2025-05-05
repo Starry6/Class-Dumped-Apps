@@ -1,0 +1,32 @@
+@interface GEORPCuratedCollectionFeedback : PBCodable
+@property (nonatomic) BOOL hasCuratedCollectionContext;
+@property (nonatomic) GEORPCuratedCollectionContext curatedCollectionContext;
+@property (nonatomic) BOOL hasCuratedCollectionCorrections;
+@property (nonatomic) GEORPCuratedCollectionCorrections curatedCollectionCorrections;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (id)init;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasCuratedCollectionContext;
+- (id)curatedCollectionContext;
+- (void)setCuratedCollectionContext:;
+- (BOOL)hasCuratedCollectionCorrections;
+- (id)curatedCollectionCorrections;
+- (void)setCuratedCollectionCorrections:;
++ (BOOL)isValid:;
+@end

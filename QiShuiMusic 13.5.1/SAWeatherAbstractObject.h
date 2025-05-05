@@ -1,0 +1,30 @@
+@interface SAWeatherAbstractObject : SADomainObject
+@property (nonatomic) SAWeatherAirQualityObject airQuality;
+@property (nonatomic) SAWeatherCurrentConditions currentConditions;
+@property (nonatomic) NSArray dailyForecasts;
+@property (nonatomic) NSString extendedForecastUrl;
+@property (nonatomic) NSArray hourlyForecasts;
+@property (nonatomic) SAWeatherUnits units;
+@property (nonatomic) SAWeatherLocation weatherLocation;
+@property (nonatomic) NSString weatherRequest;
+- (id)hourlyForecasts;
+- (id)groupIdentifier;
+- (void)setUnits:;
+- (id)currentConditions;
+- (void)setCurrentConditions:;
+- (void)setHourlyForecasts:;
+- (id)units;
+- (id)dailyForecasts;
+- (id)encodedClassName;
+- (void)setDailyForecasts:;
+- (id)weatherLocation;
+- (void)setWeatherLocation:;
+- (id)airQuality;
+- (void)setAirQuality:;
+- (id)extendedForecastUrl;
+- (void)setExtendedForecastUrl:;
+- (id)weatherRequest;
+- (void)setWeatherRequest:;
++ (id)abstractObject;
++ (id)abstractObjectWithDictionary:context:;
+@end

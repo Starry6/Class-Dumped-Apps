@@ -1,0 +1,38 @@
+@interface PuzzleWebRLPerformanceTrackData : NSObject
+@property (nonatomic) NSString pageURL;
+@property (nonatomic) NSString pagePath;
+@property (nonatomic) NSString pageDomain;
+@property (nonatomic) NSDictionary mainFramePerfInfo;
+@property (nonatomic) q loadResqustStart;
+@property (nonatomic) q navigationFinish;
+@property (nonatomic) NSMutableDictionary resourcesPerfInfo;
+@property (nonatomic) NSString containerUUID;
+@property (nonatomic) NSString resLoaderResolution;
+- (void)recordPageNavigationFinishTime:;
+- (void)addWebMainResPerf:;
+- (void)addWebSubResPerfFromDic:;
+- (id)commonRLInfoFromPerfDic:;
+- (id)formatPageResPerfDictionary;
+- (long long)loadResqustStart;
+- (id)mainFramePerfInfo;
+- (long long)navigationFinish;
+- (id)orderedSubResourceURLs;
+- (id)pageDomain;
+- (id)pagePath;
+- (void)recordPageLoadStartTime:;
+- (id)resLoaderResolution;
+- (id)resourcesPerfInfo;
+- (void)setContainerUUID:;
+- (void)setLoadResqustStart:;
+- (void)setMainFramePerfInfo:;
+- (void)setNavigationFinish:;
+- (void)setPageDomain:;
+- (void)setPagePath:;
+- (void)setResLoaderResolution:;
+- (void)setResourcesPerfInfo:;
+- (id)init;
+- (void).cxx_destruct;
+- (id)pageURL;
+- (void)setPageURL:;
+- (id)containerUUID;
+@end

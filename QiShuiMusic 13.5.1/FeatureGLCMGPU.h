@@ -1,0 +1,32 @@
+@interface FeatureGLCMGPU : NSObject
+@property (nonatomic) <MTLComputePipelineState> pipeline_matrix;
+@property (nonatomic) <MTLComputePipelineState> pipeline_feature;
+@property (nonatomic) VFMetalContext context;
+@property (nonatomic) <MTLBuffer> tonematrix;
+@property (nonatomic) <MTLBuffer> feat_group;
+@property (nonatomic) MTLTextureDescriptor descriptor;
+@property (nonatomic) <MTLTexture> texture;
+- (void)Release;
+- (id)GetFeature:intype:;
+- (void)GLCM:;
+- (id)pipeline_matrix;
+- (void)processfeature:;
+- (void)processtexture:;
+- (id)feat_group;
+- (id)pipeline_feature;
+- (void)processmatrix:;
+- (void)setFeat_group:;
+- (void)setPipeline_feature:;
+- (void)setPipeline_matrix:;
+- (void)setTonematrix:;
+- (id)tonematrix;
+- (id)texture;
+- (id)descriptor;
+- (id)context;
+- (void)setDescriptor:;
+- (void)setTexture:;
+- (void)processPixelBuffer:;
+- (id)initWithContext:;
+- (void).cxx_destruct;
+- (void)setContext:;
+@end

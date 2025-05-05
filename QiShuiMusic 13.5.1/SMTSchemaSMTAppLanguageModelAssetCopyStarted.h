@@ -1,0 +1,35 @@
+@interface SMTSchemaSMTAppLanguageModelAssetCopyStarted : SISchemaInstrumentationMessage
+@property (nonatomic) NSInteger locale;
+@property (nonatomic) BOOL hasLocale;
+@property (nonatomic) NSString appBundleId;
+@property (nonatomic) BOOL hasAppBundleId;
+@property (nonatomic) NSString appAssetPath;
+@property (nonatomic) BOOL hasAppAssetPath;
+@property (nonatomic) NSData jsonData;
+- (void)setLocale:;
+- (void)setAppBundleId:;
+- (BOOL)hasLocale;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)appBundleId;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (int)locale;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)hasAppBundleId;
+- (BOOL)isEqual:;
+- (void)deleteAppBundleId;
+- (void)setHasAppBundleId:;
+- (void)deleteLocale;
+- (void)setHasLocale:;
+- (BOOL)hasAppAssetPath;
+- (void)deleteAppAssetPath;
+- (id)appAssetPath;
+- (void)setAppAssetPath:;
+- (void)setHasAppAssetPath:;
+@end

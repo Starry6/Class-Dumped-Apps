@@ -1,0 +1,37 @@
+@interface IESECWinBubbleSectionController : IGListSectionController
+@property (nonatomic) BOOL extraSchemaOpened;
+@property (nonatomic) BOOL bubblePageShowed;
+@property (nonatomic) IESECWinContext context;
+@property (nonatomic) IESECWinBubbleObject object;
+@property (nonatomic) FBKVOController KVOController;
+@property (nonatomic) IESECServiceProxy<IESECWinBubbleService> bubbleService;
+@property (nonatomic) IESECServiceProxy<IESECWinLynxCardService> lynxCardService;
+@property (nonatomic) IESECServiceProxy<IESECWinSplitService> splitService;
+- (id)KVOController;
+- (id)lynxCardService;
+- (BOOL)bubblePageShowed;
+- (id)bubbleService;
+- (id)cellForItemAtIndex:;
+- (void)clickBubbleWithIndex:;
+- (void)didUpdateToObject:;
+- (BOOL)extraSchemaOpened;
+- (id)getBubbleCellWithIndex:;
+- (unsigned long long)getGuidePopoverDirectionWithBubbleIndex:;
+- (void)setBubblePageShowed:;
+- (void)setBubbleService:;
+- (void)setExtraSchemaOpened:;
+- (void)setKVOController:;
+- (void)setLynxCardService:;
+- (void)setSplitService:;
+- (void)showBubbleWithIndex:;
+- (void)showGuidePopover;
+- (id)splitService;
+- (void)setObject:;
+- (long long)numberOfItems;
+- (id)context;
+- (id)initWithContext:;
+- (void).cxx_destruct;
+- (id)object;
+- (void)setContext:;
+- (id)sizeForItemAtIndex:;
+@end

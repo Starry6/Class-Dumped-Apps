@@ -1,0 +1,34 @@
+@interface AWEIMMessageTitleView : UIView
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel appendedLabel;
+@property (nonatomic) UILabel subtitleLabel;
+@property (nonatomic) UIButton maskButton;
+@property (nonatomic) UIStackView stackView;
+@property (nonatomic) UIStackView titleStack;
+@property (nonatomic) <AWEIMMessageTitleViewDelegate> delegate;
+@property (nonatomic) q textAlignment;
+- (void)__maskButtonClicked:;
+- (id)appendedLabel;
+- (id)maskButton;
+- (void)p_appendTitleWithNumber:;
+- (void)p_setupUI;
+- (void)setAppendedLabel:;
+- (void)setMaskButton:;
+- (void)updateSubtileLabelLineBreakMode:;
+- (void)updateWithTitle:subtitle:;
+- (void)updateWithTitle:titleAppendedNumber:subtitle:;
+- (id)init;
+- (void)setTitleLabel:;
+- (void)setStackView:;
+- (id)subtitleLabel;
+- (void)setDelegate:;
+- (void)setSubtitleLabel:;
+- (id)stackView;
+- (id)delegate;
+- (void).cxx_destruct;
+- (long long)textAlignment;
+- (void)setTextAlignment:;
+- (id)titleLabel;
+- (id)titleStack;
+- (void)setTitleStack:;
+@end

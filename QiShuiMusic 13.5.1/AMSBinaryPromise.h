@@ -1,0 +1,35 @@
+@interface AMSBinaryPromise : NSObject
+@property (nonatomic) AMSMutablePromise backingPromise;
+- (id)completionHandlerAdapter;
+- (id)init;
+- (BOOL)cancel;
+- (BOOL)resultWithError:;
+- (void)resultWithTimeout:completion:;
+- (id)promiseAdapter;
+- (BOOL)finishWithSuccess:error:;
+- (void)addFinishBlock:;
+- (void)resultWithCompletion:;
+- (void)waitUntilFinished;
+- (id)continueWithBlock:;
+- (BOOL)finishWithSuccess;
+- (id)catchWithBlock:;
+- (void)addSuccessBlock:;
+- (void).cxx_destruct;
+- (void)setBackingPromise:;
+- (id)backingPromise;
+- (BOOL)finishWithError:;
+- (id)thenWithBlock:;
+- (BOOL)resultWithTimeout:error:;
+- (BOOL)finishWithPromise:;
+- (void)waitUntilFinishedWithTimeout:;
+- (void)addErrorBlock:;
+- (void)_removeFromGlobalPromiseStorage;
++ (id)promiseWithPromise:;
++ (id)promiseWithFlattenedPromises:;
++ (id)_globalPromiseStorageAccessQueue;
++ (id)_globalPromiseStorage;
++ (id)promiseWithSuccess;
++ (id)promiseWithError:;
++ (id)promiseWithAll:;
++ (id)promiseWithAny:;
+@end

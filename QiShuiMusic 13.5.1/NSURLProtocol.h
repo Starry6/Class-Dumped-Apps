@@ -1,0 +1,34 @@
+@interface NSURLProtocol : NSObject
+@property (nonatomic) <NSURLProtocolClient> client;
+@property (nonatomic) NSURLRequest request;
+@property (nonatomic) NSCachedURLResponse cachedResponse;
+- (void)stopLoading;
+- (id)cachedResponse;
+- (id)init;
+- (void)dealloc;
+- (void)startLoading;
+- (id)request;
+- (id)client;
+- (id)initWithTask:cachedResponse:client:;
+- (id)initWithRequest:cachedResponse:client:;
++ (BOOL)hmd_registerClass:;
++ (id)hmd_registeredClasses;
++ (void)hmd_unregisterClass:;
++ (void)wk_initRegisteredSchemesIfNeeded;
++ (void)wk_registerScheme:;
++ (void)wk_unregisterAllCustomSchemes;
++ (void)wk_unregisterScheme:;
++ (id)canonicalRequestForRequest:;
++ (BOOL)canInitWithRequest:;
++ (BOOL)registerClass:;
++ (BOOL)requestIsCacheEquivalent:toRequest:;
++ (BOOL)canInitWithTask:;
++ (id)canonicalRequestForRequest:task:;
++ (void)unregisterClass:;
++ (id)propertyForKey:inRequest:;
++ (void)setProperty:forKey:inRequest:;
++ (void)removePropertyForKey:inRequest:;
++ (Class)_protocolClassForRequest:;
++ (Class)_protocolClassForRequest:skipAppSSO:;
++ (id)_makeRequestCanonicalByMakingRequestURLCanonical:;
+@end

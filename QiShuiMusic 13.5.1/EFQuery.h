@@ -1,0 +1,36 @@
+@interface EFQuery : NSObject
+@property (nonatomic) # targetClass;
+@property (nonatomic) NSPredicate predicate;
+@property (nonatomic) NSArray sortDescriptors;
+@property (nonatomic) q limit;
+@property (nonatomic) Q queryOptions;
+@property (nonatomic) NSDictionary targetClassOptions;
+@property (nonatomic) NSString label;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)sortDescriptors;
+- (id)initWithTargetClass:predicate:sortDescriptors:limit:queryOptions:targetClassOptions:label:;
+- (long long)limit;
+- (id)initWithTargetClass:predicate:sortDescriptors:;
+- (id)initWithCoder:;
+- (id)initWithTargetClass:predicate:sortDescriptors:queryOptions:targetClassOptions:label:;
+- (unsigned long long)hash;
+- (id)label;
+- (id)debugDescription;
+- (id)predicate;
+- (BOOL)_isEqualToQuery:;
+- (unsigned long long)queryOptions;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)initWithTargetClass:predicate:sortDescriptors:queryOptions:label:;
+- (Class)targetClass;
+- (BOOL)isEqual:;
+- (id)targetClassOptions;
+- (id)copyWithZone:;
++ (id)log;
++ (BOOL)supportsSecureCoding;
++ (void)addValidSortDescriptorKeyPaths:forTargetClass:;
++ (BOOL)_isValidSortDescriptor:forTargetClass:;
+@end

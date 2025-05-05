@@ -1,0 +1,21 @@
+@interface GEOMapItemAssistant : GEOBaseMapItem
+- (id)weatherDisplayName;
+- (id)_businessURL;
+- (BOOL)_hasResolvablePartialInformation;
+- (BOOL)_hasUserRatingScore;
+- (BOOL)_hasMUID;
+- (BOOL)_responseStatusIsIncomplete;
+- (id)addressDictionary;
+- (id)_place;
+- (id)addressObject;
+- (id)geoAddress;
+- (float)_normalizedUserRatingScore;
+- (unsigned long long)_muid;
+- (unsigned int)_sampleSizeForUserRatingScore;
+- (BOOL)isValid;
+- (void).cxx_destruct;
+- (id)coordinate;
+- (id)description;
+- (id)name;
+- (id)initWithWithLocation:addressDictionary:name:businessURL:phoneNumber:sessionID:muid:attributionID:sampleSizeForUserRatingScore:normalizedUserRatingScore:;
+@end

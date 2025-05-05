@@ -1,0 +1,37 @@
+@interface IESLiveLinkmicLinkerAudienceModel : NSObject
+@property (nonatomic) NSNumber channelID;
+@property (nonatomic) NSString linkmicID;
+@property (nonatomic) Q scene;
+@property (nonatomic) <IESLiveRoomServiceAdapter> roomModel;
+@property (nonatomic) Q vendor;
+@property (nonatomic) q seiVersion;
+@property (nonatomic) NSString rtcExtInfo;
+@property (nonatomic) BOOL isAutoMute;
+@property (nonatomic) NSString linkerSessionId;
+@property (nonatomic) NSDictionary sdkParams;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)linkerSessionId;
+- (BOOL)isAutoMute;
+- (id)linkmicID;
+- (id)roomModel;
+- (id)rtcExtInfo;
+- (id)sdkParams;
+- (long long)seiVersion;
+- (void)setIsAutoMute:;
+- (void)setLinkerSessionId:;
+- (void)setLinkmicID:;
+- (void)setRoomModel:;
+- (void)setRtcExtInfo:;
+- (void)setSeiVersion:;
+- (void)updateWithLinkContext:;
+- (void)setChannelID:;
+- (void)setScene:;
+- (unsigned long long)scene;
+- (void).cxx_destruct;
+- (void)setVendor:;
+- (unsigned long long)vendor;
+- (id)channelID;
+@end

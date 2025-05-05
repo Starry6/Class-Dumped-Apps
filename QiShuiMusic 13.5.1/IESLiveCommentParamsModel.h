@@ -1,0 +1,33 @@
+@interface IESLiveCommentParamsModel : IESLiveDynamicModel
+@property (nonatomic) NSString comment;
+@property (nonatomic) IESLiveCommentStructureContent structureContent;
+@property (nonatomic) Q type;
+@property (nonatomic) NSArray commentColors;
+@property (nonatomic) q flowTime;
+@property (nonatomic) q agreeMsgId;
+@property (nonatomic) q emojiID;
+@property (nonatomic) NSString scene;
+@property (nonatomic) NSString interactiveEmojiDisplayName;
+@property (nonatomic) NSString replyMsgId;
+- (long long)emojiID;
+- (void)setInteractiveEmojiDisplayName:;
+- (long long)agreeMsgId;
+- (id)commentColors;
+- (long long)flowTime;
+- (id)initWithComment:type:;
+- (id)initWithComment:type:commentColors:flowTime:agreeMsgId:;
+- (id)interactiveEmojiDisplayName;
+- (id)replyMsgId;
+- (void)setAgreeMsgId:;
+- (void)setCommentColors:;
+- (void)setEmojiID:;
+- (void)setFlowTime:;
+- (void)setReplyMsgId:;
+- (void)setStructureContent:;
+- (id)structureContent;
+- (void)setScene:;
+- (id)comment;
+- (id)scene;
+- (unsigned long long)type;
+- (void).cxx_destruct;
+@end

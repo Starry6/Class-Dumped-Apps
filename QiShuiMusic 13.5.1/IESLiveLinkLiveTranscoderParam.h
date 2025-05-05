@@ -1,0 +1,33 @@
+@interface IESLiveLinkLiveTranscoderParam : NSObject
+@property (nonatomic) IESLiveLinkRTCInteractTranscodeAVParams avParam;
+@property (nonatomic) IESLiveLinkLiveRtc rtcEngineKit;
+@property (nonatomic) q interactMixType;
+@property (nonatomic) NSString publishUrl;
+@property (nonatomic) NSString userId;
+@property (nonatomic) NSString roomId;
+@property (nonatomic) NSString taskId;
+@property (nonatomic) <ILiveTranscoderEventDelegate> eventDelegate;
+@property (nonatomic) <ILiveTranscoderAVDataSink> AVDataSink;
+@property (nonatomic) BOOL byteAudioModeEnable;
+- (id)AVDataSink;
+- (long long)interactMixType;
+- (id)avParam;
+- (BOOL)byteAudioModeEnable;
+- (id)publishUrl;
+- (id)roomId;
+- (id)rtcEngineKit;
+- (void)setAVDataSink:;
+- (void)setAvParam:;
+- (void)setByteAudioModeEnable:;
+- (void)setInteractMixType:;
+- (void)setPublishUrl:;
+- (void)setRoomId:;
+- (void)setRtcEngineKit:;
+- (id)userId;
+- (id)taskId;
+- (void).cxx_destruct;
+- (void)setUserId:;
+- (id)eventDelegate;
+- (void)setTaskId:;
+- (void)setEventDelegate:;
+@end

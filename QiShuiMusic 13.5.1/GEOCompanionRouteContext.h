@@ -1,0 +1,36 @@
+@interface GEOCompanionRouteContext : PBCodable
+@property (nonatomic) BOOL hasTimestamp;
+@property (nonatomic) I timestamp;
+@property (nonatomic) BOOL hasOrigin;
+@property (nonatomic) NSInteger origin;
+- (void)readAll:;
+- (void)setOrigin:;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (int)origin;
+- (void)copyTo:;
+- (void)setHasTimestamp:;
+- (void)mergeFrom:;
+- (BOOL)hasTimestamp;
+- (void)setTimestamp:;
+- (long long)compare:;
+- (BOOL)readFrom:;
+- (unsigned int)timestamp;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)hasOrigin;
+- (BOOL)isEqual:;
+- (id)simpleDescription;
+- (id)copyWithZone:;
+- (void)setHasOrigin:;
+- (id)originAsString:;
+- (int)StringAsOrigin:;
+- (BOOL)isForeignOrigin;
+- (BOOL)isStaleComparedToContext:;
++ (BOOL)isValid:;
++ (id)context;
++ (int)defaultOrigin;
+@end

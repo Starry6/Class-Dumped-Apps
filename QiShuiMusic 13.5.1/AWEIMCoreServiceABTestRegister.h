@@ -1,0 +1,2 @@
+@interface AWEIMCoreServiceABTestRegister : NSObject
+@end

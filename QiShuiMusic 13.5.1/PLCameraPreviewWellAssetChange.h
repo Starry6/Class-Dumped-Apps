@@ -1,0 +1,31 @@
+@interface PLCameraPreviewWellAssetChange : NSObject
+@property (nonatomic) BOOL allowed;
+@property (nonatomic) NSString assetUUID;
+@property (nonatomic) NSDate addedDate;
+@property (nonatomic) double sortToken;
+@property (nonatomic) NSString thumbnailIdentifier;
+@property (nonatomic) Q effectiveThumbnailIndex;
+@property (nonatomic) BOOL shouldRefreshPreviewWellWithFetchRequest;
+@property (nonatomic) BOOL thumbnailWasGenerated;
+- (void)setEffectiveThumbnailIndex:;
+- (BOOL)isAllowed;
+- (long long)compareToDate:sortToken:;
+- (id)assetUUID;
+- (void)setShouldRefreshPreviewWellWithFetchRequest:;
+- (id)thumbnailIdentifier;
+- (id)addedDate;
+- (void)setAddedDate:;
+- (void)setThumbnailIdentifier:;
+- (long long)compare:;
+- (BOOL)shouldRefreshPreviewWellWithFetchRequest;
+- (void).cxx_destruct;
+- (double)sortToken;
+- (void)setThumbnailWasGenerated:;
+- (void)setSortToken:;
+- (BOOL)thumbnailWasGenerated;
+- (void)setAssetUUID:;
+- (void)setAllowed:;
+- (unsigned long long)effectiveThumbnailIndex;
+- (id)initWithManagedAsset:thumbnailWasGenerated:;
++ (id)cameraPreviewWellAssetChangeToForceRefetch;
+@end

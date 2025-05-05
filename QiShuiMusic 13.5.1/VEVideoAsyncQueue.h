@@ -1,0 +1,34 @@
+@interface VEVideoAsyncQueue : IESMMObject
+@property (nonatomic) <VEVideoProcessDelegate> downstream;
+@property (nonatomic) NSString name;
+@property (nonatomic) BOOL isAccurate;
+@property (nonatomic) BOOL isPreSeek;
+@property (nonatomic) NSInteger maxRefFrames;
+@property (nonatomic) I decodePixFormat;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (unsigned int)decodePixFormat;
+- (id)getNextVideoSampleBuffer;
+- (id)getVideoDataWithAtTime:;
+- (BOOL)hasAvailable:;
+- (BOOL)isGtThresholdCache;
+- (BOOL)isPreSeek;
+- (int)maxRefFrames;
+- (void)removeVideoDatas;
+- (id)requstVideoData:;
+- (void)setDecodePixFormat:;
+- (void)setExportorFlag:;
+- (void)setIsPreSeek:;
+- (void)setMaxRefFrames:;
+- (void)setSeekPosFrameTime:;
+- (id)init;
+- (void)setName:;
+- (id)downstream;
+- (void)setDownstream:;
+- (void).cxx_destruct;
+- (BOOL)isAccurate;
+- (id)name;
+- (void)setIsAccurate:;
+@end

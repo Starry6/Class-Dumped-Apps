@@ -1,0 +1,31 @@
+@interface GEOComposedRouteTraffic : NSObject
+@property (nonatomic) NSArray trafficIncidents;
+@property (nonatomic) NSArray trafficIncidentOffsets;
+@property (nonatomic) ^I trafficColors;
+@property (nonatomic) Q trafficColorsCount;
+@property (nonatomic) ^I trafficColorOffsets;
+@property (nonatomic) Q trafficColorOffsetsCount;
+@property (nonatomic) NSArray routeTrafficColors;
+@property (nonatomic) NSArray routeIncidents;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (unsigned long long)trafficColorsCount;
+- (id)trafficColors;
+- (unsigned long long)trafficColorOffsetsCount;
+- (id)trafficColorOffsets;
+- (id)initWithRoute:initializerData:;
+- (id)initWithRoute:etaRoute:;
+- (id)initWithColorInfos:incidentInfos:;
+- (id)_trafficColorInfosFromTrafficBuilder:route:;
+- (id)_trafficColorInfosFromDebugSettingsForRoute:;
+- (void)_buildIncidentsForRoute:etaRoute:initializerData:;
+- (id)_incidentsForRoute:;
+- (id)_incidentsForRoute:etaRoute:;
+- (id)routeTrafficColors;
+- (id)routeIncidents;
+- (id)trafficIncidents;
+- (id)trafficIncidentOffsets;
++ (BOOL)supportsSecureCoding;
+@end

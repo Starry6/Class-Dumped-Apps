@@ -1,0 +1,37 @@
+@interface NoteAccountObject : NoteCollectionObject
+@property (nonatomic) NSNumber type;
+@property (nonatomic) NSString constraintsPath;
+@property (nonatomic) NSDictionary constraints;
+@property (nonatomic) NSString accountIdentifier;
+@property (nonatomic) NSSet stores;
+@property (nonatomic) NoteStoreObject defaultStore;
+@property (nonatomic) NSString name;
+@property (nonatomic) q accountType;
+@property (nonatomic) NSString pathToConstraintsPlist;
+@property (nonatomic) BOOL didChooseToMigrate;
+@property (nonatomic) BOOL preventMovingNotesToOtherAccounts;
+@property (nonatomic) BOOL isICloudIMAPAccount;
+- (long long)accountType;
+- (id)cacheKey;
+- (void)setPathToConstraintsPlist:;
+- (void)didTurnIntoFault;
+- (void)willSave;
+- (BOOL)validateDefaultStore:error:;
+- (BOOL)isICloudIMAPAccount;
+- (BOOL)shouldMarkNotesAsDeleted;
+- (id)storeForExternalId:;
+- (id)noteVisibilityTestingForSearchingAccount;
+- (id)collectionInfo;
+- (id)constraints;
+- (id)pathToConstraintsPlist;
+- (void)setConstraints:;
+- (id)basicAccountIdentifier;
+- (BOOL)isAllNotesContainer;
+- (void)setAccountType:;
+- (void).cxx_destruct;
+- (id)searchDomainIdentifier;
+- (id)predicateForNotes;
+- (BOOL)preventMovingNotesToOtherAccounts;
+- (id)titleForTableViewCell;
++ (BOOL)shouldDataAccessCreateAccountForACAccount:;
+@end

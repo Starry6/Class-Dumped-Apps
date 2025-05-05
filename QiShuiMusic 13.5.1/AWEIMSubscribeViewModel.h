@@ -1,0 +1,37 @@
+@interface AWEIMSubscribeViewModel : IESIMBaseListViewModel
+@property (nonatomic) AWEIMSubscribeSectionViewModel sectionViewModel;
+@property (nonatomic) Q requestType;
+@property (nonatomic) q limit;
+@property (nonatomic) q lastCursor;
+@property (nonatomic) AWEIMBatchFetchUserSession fetchUserSession;
+@property (nonatomic) NSMutableDictionary cardFilterMap;
+@property (nonatomic) q dataCount;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)fetchUsersList:;
+- (void)batchFetchUserSessionDidFinished:;
+- (id)cardFilterMap;
+- (void)fetchCardListDataParams:onCompletion:;
+- (void)fetchListData;
+- (id)fetchUserSession;
+- (long long)lastCursor;
+- (void)loadMoreListData;
+- (id)sectionViewModel;
+- (void)setCardFilterMap:;
+- (void)setFetchUserSession:;
+- (void)setLastCursor:;
+- (void)setSectionViewModel:;
+- (void)setupViewModel;
+- (unsigned long long)requestType;
+- (void)setRequestType:;
+- (long long)limit;
+- (id)init;
+- (void)setLimit:;
+- (void).cxx_destruct;
+- (void)willDisappear;
+- (long long)dataCount;
+- (void)setDataCount:;
+- (void)initData;
+@end

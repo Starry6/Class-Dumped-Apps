@@ -1,0 +1,34 @@
+@interface AFSiriActivationContext : NSObject
+@property (nonatomic) Q timestamp;
+@property (nonatomic) q source;
+@property (nonatomic) q event;
+@property (nonatomic) Q options;
+@property (nonatomic) NSString deviceID;
+@property (nonatomic) NSDictionary userInfo;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (long long)event;
+- (id)userInfo;
+- (id)buildDictionaryRepresentation;
+- (id)mutatedCopyWithMutator:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)initWithDictionaryRepresentation:;
+- (id)_descriptionWithIndent:;
+- (id)initWithBuilder:;
+- (id)deviceID;
+- (void)encodeWithCoder:;
+- (unsigned long long)options;
+- (void).cxx_destruct;
+- (long long)source;
+- (unsigned long long)timestamp;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)initWithTimestamp:source:event:options:deviceID:userInfo:;
++ (id)newWithBuilder:;
++ (BOOL)supportsSecureCoding;
+@end

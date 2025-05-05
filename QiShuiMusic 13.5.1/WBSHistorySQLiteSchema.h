@@ -1,0 +1,31 @@
+@interface WBSHistorySQLiteSchema : NSObject
+@property (nonatomic) NSDictionary legacyDatabase;
+- (id)init;
+- (void)_removeLegacyHistoryDatabaseIfNeeded;
+- (int)_migrateToSchemaVersion_7;
+- (int)_migrateToSchemaVersion_12;
+- (int)_migrateToSchemaVersion_13;
+- (int)_migrateToSchemaVersion_4;
+- (int)_migrateToSchemaVersion_10;
+- (int)_migrateToSchemaVersion_15;
+- (int)_migrateToSchemaVersion_6;
+- (void)_migrateLegacyDatabase;
+- (int)_migrateToSchemaVersion_2;
+- (int)_migrateToSchemaVersion_14;
+- (int)_migrateToSchemaVersion:;
+- (long long)_migrateLegacyVisitWithItemID:visitTime:title:score:loadSuccessful:httpNonGet:synthesized:;
+- (int)_migrateToSchemaVersion_5;
+- (id)initWithDatabase:crypto:migrateVisitsAfterDate:;
+- (int)_setDatabaseSchemaVersion:;
+- (int)_migrateToSchemaVersion_3;
+- (int)_migrateToSchemaVersion_9;
+- (long long)_migrateLegacyItem:dailyVisitCounts:weeklyVisitCounts:;
+- (void).cxx_destruct;
+- (int)migrateToCurrentSchemaVersionIfNeeded;
+- (BOOL)migrateLegacyDatabaseCreatingRedirectChains:urlsToItemAndLastVisitID:visitsToUseForRedirectChains:;
+- (int)_migrateToSchemaVersion_8;
+- (id)_migrateLegacyDatabaseCreatingItemsAndVisits:outVisitsToUseForRedirectChains:;
+- (int)_migrateToSchemaVersion_16;
+- (id)legacyDatabase;
+- (int)_migrateToSchemaVersion_11;
+@end

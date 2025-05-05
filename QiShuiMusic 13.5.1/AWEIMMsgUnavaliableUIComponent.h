@@ -1,0 +1,34 @@
+@interface AWEIMMsgUnavaliableUIComponent : NSObject
+@property (nonatomic) double lastUpdateTimestamp;
+@property (nonatomic) NSMutableArray unavaliableItems;
+@property (nonatomic) NSMutableDictionary handlerMessagesDic;
+@property (nonatomic) <AWEIMMessageListComponentCenter> componentCenter;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)componentCenter;
+- (id)currentVisibleMessages;
+- (void)didAddToComponentCenter;
+- (id)getFeedItemIdsOnScreen;
+- (id)getMessageTypeAllItemIds:messages:;
+- (id)getNeedReloadMessagesByUnavaliableItemIds:;
+- (id)handlerMessagesDic;
+- (id)messageCellForMessage:;
+- (void)msg_scrollViewDidEndScroll;
+- (void)msg_tableViewFirstLoadCompletion;
+- (id)rebuildDataSource:;
+- (void)registUnavaliableItems;
+- (void)reloadCellsWithMessages:beforeReloadBlock:;
+- (void)setComponentCenter:;
+- (void)setHandlerMessagesDic:;
+- (void)setUnavailableFlagUpdateTimestampForMessages:;
+- (void)setUnavaliableItems:;
+- (id)unavaliableItems;
+- (void)updateCustomizeUnvaliableStateForMessagesOnScreen;
+- (void)updateFeedUnavailableStateForMessagesOnScreen;
+- (void)updateUnvaliableStateForMessagesOnScreen;
+- (void).cxx_destruct;
+- (void)setLastUpdateTimestamp:;
+- (double)lastUpdateTimestamp;
+@end

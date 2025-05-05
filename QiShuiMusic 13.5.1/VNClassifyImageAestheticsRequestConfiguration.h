@@ -1,0 +1,2 @@
+@interface VNClassifyImageAestheticsRequestConfiguration : VNImageBasedRequestConfiguration
+@end

@@ -1,0 +1,36 @@
+@interface LSSPitayaEngine : NSObject
+@property (nonatomic) NSDictionary params;
+@property (nonatomic) NSString appId;
+@property (nonatomic) NSString appVersion;
+@property (nonatomic) Pitaya pitayaInstance;
+- (void)registerMessageHandler:handler:;
+- (id)appChannel;
+- (void)downloadPacket:callbakc:;
+- (BOOL)hasInitPitaya;
+- (void)initPitaya;
+- (void)initPitayaEngine:appId:appVersion:;
+- (BOOL)isPitayaReady;
+- (id)pitayaInstance;
+- (void)queryPacket:callback:;
+- (void)registerAppLogRunEvent:callback:;
+- (void)removeAppLogEvent:;
+- (void)removeMessageHandler:;
+- (void)requestPacket:download:callback:;
+- (void)requestPacketAll;
+- (void)runPacket:params:runCallback:async:;
+- (void)setPitayaInstance:;
+- (void)setAppVersion:;
+- (id)appVersion;
+- (id)userID;
+- (void)start:;
+- (void)dealloc;
+- (id)appId;
+- (void)setAppId:;
+- (id)deviceID;
+- (void).cxx_destruct;
+- (id)params;
+- (void)setParams:;
+- (BOOL)isDebugMode;
+- (id)initInstance;
++ (id)sharedPitayaEngine;
+@end

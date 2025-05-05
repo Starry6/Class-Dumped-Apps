@@ -1,0 +1,33 @@
+@interface IMSticker : NSObject
+@property (nonatomic) NSData recipe;
+@property (nonatomic) NSString ballonBundleID;
+@property (nonatomic) NSDictionary attributionInfo;
+@property (nonatomic) NSURL fileURL;
+@property (nonatomic) NSString stickerGUID;
+@property (nonatomic) NSString stickerPackGUID;
+@property (nonatomic) NSString accessibilityLabel;
+@property (nonatomic) NSString moodCategory;
+@property (nonatomic) NSString stickerName;
+- (void)setRecipe:;
+- (id)init;
+- (void)dealloc;
+- (id)accessibilityLabel;
+- (void)setAccessibilityLabel:;
+- (unsigned long long)hash;
+- (id)fileURL;
+- (id)description;
+- (id)recipe;
+- (BOOL)isEqual:;
+- (id)initWithStickerID:stickerPackID:fileURL:accessibilityLabel:moodCategory:stickerName:;
+- (void)setBallonBundleID:;
+- (id)ballonBundleID;
+- (id)stickerGUID;
+- (id)stickerPackGUID;
+- (id)attributionInfo;
+- (void)setAttributionInfo:;
+- (id)initWithStickerPropertyDictionary:stickerPackID:stickerPackBundlePath:;
+- (id)moodCategory;
+- (void)setMoodCategory:;
+- (id)stickerName;
+- (void)setStickerName:;
+@end

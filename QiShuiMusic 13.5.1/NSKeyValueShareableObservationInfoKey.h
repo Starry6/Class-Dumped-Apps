@@ -1,0 +1,2 @@
+@interface NSKeyValueShareableObservationInfoKey : NSObject
+@end

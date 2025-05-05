@@ -1,0 +1,38 @@
+@interface BDXLynxTextAreaLight : BDXLynxBaseInputLight
+@property (nonatomic) double preHeight;
+@property (nonatomic) NSString lastValue;
+@property (nonatomic) q maxlines;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)getAttributedString;
+- (id)getContentSize;
+- (void)inputWillBeFilteredFrom:to:;
+- (void)layoutDidFinished;
+- (long long)maxlines;
+- (double)preHeight;
+- (void)propsDidUpdate;
+- (void)setBounces:requestReset:;
+- (void)setMaxLines:requestReset:;
+- (void)setMaxlines:;
+- (void)setPreHeight:;
+- (void)setShowSoftInputOnFocus:requestReset:;
+- (void)setValue:withResult:;
+- (void)updateFrame:withPadding:border:margin:withLayoutAnimation:;
+- (id)init;
+- (id)lastValue;
+- (void).cxx_destruct;
+- (void)textViewDidBeginEditing:;
+- (void)textViewDidEndEditing:;
+- (void)textViewDidChange:;
+- (void)textViewDidChangeSelection:;
+- (BOOL)textView:shouldChangeTextInRange:replacementText:;
+- (id)createView;
+- (void)setLastValue:;
+- (id)getText;
++ (id)__lynx_prop_config__581;
++ (id)__lynx_prop_config__632;
++ (id)__lynx_prop_config__673;
++ (id)__lynx_ui_method_config__984;
+@end

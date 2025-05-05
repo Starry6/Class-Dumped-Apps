@@ -1,0 +1,30 @@
+@interface BDXAOneKeyLoginManager : NSObject
+@property (nonatomic) NSString maskPhoneNumber;
+@property (nonatomic) NSString serviceName;
+@property (nonatomic) NSInteger safeEnvStatus;
+@property (nonatomic) NSMutableArray loadMaskPhoneNumCompletionBlockArray;
+@property (nonatomic) BOOL isLoadingMaskPhoneNum;
+@property (nonatomic) NSString serviceDisplayName;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)maskPhoneNumber;
+- (void)onAccountLogout;
+- (void)getIsSafeEnvWithCompletion:;
+- (void)getMaskPhoneNumberWithCompletion:;
+- (BOOL)isLoadingMaskPhoneNum;
+- (id)loadMaskPhoneNumCompletionBlockArray;
+- (void)reloadMaskPhoneNumberWithCompletion:;
+- (int)safeEnvStatus;
+- (void)setIsLoadingMaskPhoneNum:;
+- (void)setLoadMaskPhoneNumCompletionBlockArray:;
+- (void)setMaskPhoneNumber:;
+- (void)setSafeEnvStatus:;
+- (id)init;
+- (void)setServiceName:;
+- (id)serviceName;
+- (void).cxx_destruct;
+- (id)serviceDisplayName;
++ (id)sharedInstance;
+@end

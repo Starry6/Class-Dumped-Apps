@@ -1,0 +1,35 @@
+@interface CAARSchemaCAARModelExecuted : SISchemaInstrumentationMessage
+@property (nonatomic) SISchemaAsset asset;
+@property (nonatomic) BOOL hasAsset;
+@property (nonatomic) BOOL isShadowLog;
+@property (nonatomic) BOOL hasIsShadowLog;
+@property (nonatomic) CAARSchemaCAARModelOutput modelOutput;
+@property (nonatomic) BOOL hasModelOutput;
+@property (nonatomic) NSData jsonData;
+- (BOOL)hasAsset;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)asset;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (void)setAsset:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)deleteAsset;
+- (void)setIsShadowLog:;
+- (BOOL)hasIsShadowLog;
+- (void)setHasIsShadowLog:;
+- (void)deleteIsShadowLog;
+- (BOOL)hasModelOutput;
+- (void)deleteModelOutput;
+- (BOOL)isShadowLog;
+- (id)modelOutput;
+- (void)setModelOutput:;
+- (void)setHasAsset:;
+- (void)setHasModelOutput:;
+@end

@@ -1,0 +1,36 @@
+@interface AMSDeviceOffer : NSObject
+@property (nonatomic) NSNumber dsid;
+@property (nonatomic) NSNumber adamId;
+@property (nonatomic) NSString description;
+@property (nonatomic) BOOL downgrading;
+@property (nonatomic) NSString offerIdentifier;
+@property (nonatomic) Q offerType;
+@property (nonatomic) NSSet serialNumbers;
+@property (nonatomic) BOOL subscribed;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString debugDescription;
+- (void)setSubscribed:;
+- (id)dsid;
+- (id)adamId;
+- (void)setDsid:;
+- (BOOL)isSubscribed;
+- (id)initWithDictionary:;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (unsigned long long)offerType;
+- (id)description;
+- (void)setAdamId:;
+- (BOOL)isEqual:;
+- (void)setDescription:;
+- (id)offerIdentifier;
+- (void)setOfferIdentifier:;
+- (id)initWithOfferIdentifier:;
+- (id)serialNumbers;
+- (BOOL)isDowngrading;
+- (void)setDowngrading:;
++ (id)createBagForSubProfile;
++ (id)bagSubProfileVersion;
++ (id)bagSubProfile;
++ (id)offersSetFromArray:;
+@end

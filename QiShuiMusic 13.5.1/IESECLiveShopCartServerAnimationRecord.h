@@ -1,0 +1,31 @@
+@interface IESECLiveShopCartServerAnimationRecord : NSObject
+@property (nonatomic) Q curRoomPlayedCount;
+@property (nonatomic) Q totalPlayedCount;
+@property (nonatomic) q expiredTimestamp;
+@property (nonatomic) q skipTimestamp;
+@property (nonatomic) q curRoomSkipTimestamp;
+@property (nonatomic) NSMutableDictionary originDic;
+@property (nonatomic) BOOL outOfTimes;
+@property (nonatomic) NSString businessKey;
+@property (nonatomic) NSString iconKey;
+- (id)iconKey;
+- (void)setBusinessKey:;
+- (id)businessKey;
+- (unsigned long long)curRoomPlayedCount;
+- (long long)curRoomSkipTimestamp;
+- (long long)expiredTimestamp;
+- (id)originDic;
+- (BOOL)outOfTimes;
+- (void)setCurRoomPlayedCount:;
+- (void)setCurRoomSkipTimestamp:;
+- (void)setExpiredTimestamp:;
+- (void)setIconKey:;
+- (void)setOriginDic:;
+- (void)setOutOfTimes:;
+- (void)setSkipTimestamp:;
+- (void)setTotalPlayedCount:;
+- (long long)skipTimestamp;
+- (unsigned long long)totalPlayedCount;
+- (id)initWithDictionary:;
+- (void).cxx_destruct;
+@end

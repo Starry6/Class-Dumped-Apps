@@ -1,0 +1,15 @@
+@interface PLAssetsdNotificationClient : PLAssetsdBaseClient
+- (void)asyncNotifyEndOfInterestForUnrenderedCinematicVideoItems;
+- (void)asyncNotifyReportAsJunkPhotoStreamInvitationForAlbumWithCloudGUID:;
+- (void)asyncNotifyResponseToPhotoStreamInvitationForAlbumWithCloudGUID:acceptInvitation:;
+- (void)asyncNotifyStartOfInterestForUnrenderedCinematicVideoItems;
+- (void)asyncNotifyUserViewedNotificationWithAlbumCloudGUID:;
+- (void)asyncNotifyInterestingMemoryNotificationForColletionID:notificationDeliveryDate:;
+- (void)asyncNotifyInterestingMemoryNotificationViewedForColletionID:;
+- (void)asyncNotifySuggestedCMMNotificationForColletionID:notificationDeliveryDate:;
+- (void)asyncNotifySuggestedCMMViewedForColletionID:;
+- (void)asyncNotifyExpiringMomentShareWithUUIDs:thumbnailImageData:notificationTitle:notificationSubtitle:;
+- (void)asyncNotifyPhotosChallengeSubmissionWithNotificationDeliveryDate:;
+- (void)asyncNotifyPhotosChallengeNewQuestionsWithNotificationDeliveryDate:;
+- (void)asyncNotifySharedLibrarySuggestionsWithNotificationDeliveryDate:;
+@end

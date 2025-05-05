@@ -1,0 +1,2 @@
+@interface UIPanGestureVelocitySample : NSObject
+@end

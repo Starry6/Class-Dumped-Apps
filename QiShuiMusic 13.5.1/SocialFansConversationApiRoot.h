@@ -1,0 +1,2 @@
+@interface SocialFansConversationApiRoot : GPBRootObject
+@end

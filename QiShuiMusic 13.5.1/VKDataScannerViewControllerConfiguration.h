@@ -1,0 +1,37 @@
+@interface VKDataScannerViewControllerConfiguration : NSObject
+@property (nonatomic) BOOL pinchToZoomEnabled;
+@property (nonatomic) BOOL guidanceEnabled;
+@property (nonatomic) BOOL highlightingEnabled;
+@property (nonatomic) Q qualityLevel;
+@property (nonatomic) Q scannerType;
+@property (nonatomic) BOOL recognizesMultipleItems;
+@property (nonatomic) NSArray recognitionLanguages;
+@property (nonatomic) NSString textContentType;
+@property (nonatomic) NSArray symbologies;
+@property (nonatomic) BOOL highFrameRateItemTracking;
+- (void)setTextContentType:;
+- (id)init;
+- (id)textContentType;
+- (void).cxx_destruct;
+- (unsigned long long)scannerType;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (unsigned long long)qualityLevel;
+- (void)setQualityLevel:;
+- (id)symbologies;
+- (void)setSymbologies:;
+- (void)setRecognitionLanguages:;
+- (id)recognitionLanguages;
+- (void)setGuidanceEnabled:;
+- (BOOL)isEqualToTextScannerViewControllerConfiguration:;
+- (BOOL)isPinchToZoomEnabled;
+- (void)setPinchToZoomEnabled:;
+- (BOOL)isGuidanceEnabled;
+- (BOOL)isHighlightingEnabled;
+- (void)setHighlightingEnabled:;
+- (void)setScannerType:;
+- (BOOL)recognizesMultipleItems;
+- (void)setRecognizesMultipleItems:;
+- (BOOL)highFrameRateItemTracking;
+- (void)setHighFrameRateItemTracking:;
+@end

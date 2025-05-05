@@ -1,0 +1,33 @@
+@interface BU_IESGurdResourceModel : NSObject
+@property (nonatomic) NSString logId;
+@property (nonatomic) q version;
+@property (nonatomic) NSString channel;
+@property (nonatomic) q packageType;
+@property (nonatomic) BU_IESGurdResourceURLInfo package;
+@property (nonatomic) BU_IESGurdResourceURLInfo patch;
+@property (nonatomic) BU_IESGurdResourceStrategies strategies;
+@property (nonatomic) BOOL needUnzip;
+@property (nonatomic) NSString groupName;
+@property (nonatomic) NSArray offlinePrefixURLsArray;
+- (void)setPackageType:;
+- (id)logId;
+- (BOOL)needUnzip;
+- (id)offlinePrefixURLsArray;
+- (void)setLogId:;
+- (void)setOfflinePrefixURLsArray:;
+- (void)setStrategies:;
+- (void)setPackage:;
+- (id)package;
+- (void)setChannel:;
+- (id)channel;
+- (void)setVersion:;
+- (long long)version;
+- (void)setGroupName:;
+- (void).cxx_destruct;
+- (id)groupName;
+- (id)strategies;
+- (void)setPatch:;
+- (id)patch;
+- (long long)packageType;
++ (id)instanceWithDict:;
+@end

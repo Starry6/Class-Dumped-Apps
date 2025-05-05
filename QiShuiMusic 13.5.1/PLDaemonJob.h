@@ -1,0 +1,38 @@
+@interface PLDaemonJob : NSObject
+@property (nonatomic) NSObject<OS_xpc_object> xpcReply;
+@property (nonatomic) NSXPCConnection clientConnection;
+@property (nonatomic) PLLibraryServicesManager libraryServicesManager;
+@property (nonatomic) @? replyHandler;
+@property (nonatomic) NSObject<OS_xpc_object> xpcReply;
+@property (nonatomic) NSXPCConnection clientConnection;
+@property (nonatomic) PLAssetsdClient assetsdClient;
+- (id)libraryServicesManager;
+- (id)clientConnection;
+- (id)assetsdClient;
+- (void)setClientConnection:;
+- (id)init;
+- (id)initFromXPCObject:libraryServicesManager:;
+- (id)initWithCoder:;
+- (id)initWithAssetsdClient:;
+- (void)run;
+- (long long)daemonOperation;
+- (void)encodeWithCoder:;
+- (void)runDaemonSide;
+- (void).cxx_destruct;
+- (id)replyHandler;
+- (id)description;
+- (void)encodeToXPCObject:;
+- (id)xpcReply;
+- (BOOL)shouldArchiveXPCToDisk;
+- (void)setXpcReply:;
+- (BOOL)shouldRunOnDaemonSerialQueue;
+- (void)setLibraryServicesManager:;
+- (void)sendToAssetsd;
+- (void)sendToAssetsdWithReply;
+- (void)handleReply;
+- (id)newDictionaryReplyForObject:;
+- (void)archiveXPCToDisk:;
+- (void)setReplyHandler:;
++ (BOOL)supportsSecureCoding;
++ (void)runDaemonSideWithXPCEvent:libraryServicesManager:;
+@end

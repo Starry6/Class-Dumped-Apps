@@ -1,0 +1,31 @@
+@interface IESECReviewsDetailViewController : UIViewController
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)backButtonDidClick:;
+- (BOOL)needsPlayerForIndex:;
+- (void)reviewsDetailCell:likedValueChangedWithComment:;
+- (void)setupTracker;
+- (void)trackForCommentContentExit;
+- (void)trackForReviewDisplayAtIndex:withActionType:;
+- (void)updateNoMoreReviewsLabel;
+- (id)collectionView:layout:sizeForItemAtIndexPath:;
+- (long long)preferredStatusBarStyle;
+- (void)collectionView:willDisplayCell:forItemAtIndexPath:;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (void)scrollViewDidScroll:;
+- (BOOL)scrollViewShouldScrollToTop:;
+- (void)setCollectionView:;
+- (void)viewWillDisappear:;
+- (id)dataManager;
+- (void).cxx_destruct;
+- (void)scrollViewWillEndDragging:withVelocity:targetContentOffset:;
+- (id)collectionView;
+- (void)viewDidLayoutSubviews;
+- (id)initWithConfiguration:;
+- (void)viewDidLoad;
+- (void)setupSubviews;
+@end

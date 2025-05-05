@@ -1,0 +1,38 @@
+@interface MLBFilePreviewController : UIViewController
+@property (nonatomic) WKWebView wkWebView;
+@property (nonatomic) UITextView textView;
+@property (nonatomic) UIActivityIndicatorView activityIndicatorView;
+@property (nonatomic) UIDocumentInteractionController documentInteractionController;
+@property (nonatomic) MLBFileInfo fileInfo;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)viewDidLoad;
+- (void)viewDidLayoutSubviews;
+- (id)documentInteractionController;
+- (void)initDatas;
+- (void)setupViews;
+- (void)loadFile;
+- (void)showOrHideNavigationBar;
+- (void)sharingAction;
+- (id)documentInteractionControllerViewControllerForPreview:;
+- (id)documentInteractionControllerRectForPreview:;
+- (id)documentInteractionControllerViewForPreview:;
+- (long long)numberOfPreviewItemsInPreviewController:;
+- (id)previewController:previewItemAtIndex:;
+- (void)webView:didStartProvisionalNavigation:;
+- (void)webView:didCommitNavigation:;
+- (void)webView:didFinishNavigation:;
+- (void)webView:didFailProvisionalNavigation:withError:;
+- (id)fileInfo;
+- (void)setFileInfo:;
+- (id)wkWebView;
+- (void)setWkWebView:;
+- (id)textView;
+- (void)setTextView:;
+- (id)activityIndicatorView;
+- (void)setActivityIndicatorView:;
+- (void)setDocumentInteractionController:;
+- (void).cxx_destruct;
+@end

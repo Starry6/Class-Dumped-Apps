@@ -1,0 +1,32 @@
+@interface MPQueueFeeder : NSObject
+@property (nonatomic) NSString playActivityQueueGroupingID;
+@property (nonatomic) NSString playActivityFeatureName;
+@property (nonatomic) NSData playActivityRecommendationData;
+@property (nonatomic) NSString siriReferenceIdentifier;
+@property (nonatomic) NSDictionary siriWHAMetricsInfo;
+@property (nonatomic) NSString uniqueIdentifier;
+- (id)init;
+- (id)uniqueIdentifier;
+- (id)playActivityFeatureName;
+- (void)setPlayActivityRecommendationData:;
+- (id)errorResolverForItem:;
+- (id)playActivityRecommendationData;
+- (void)setPlayActivityFeatureName:;
+- (void)setSiriReferenceIdentifier:;
+- (void).cxx_destruct;
+- (id)siriReferenceIdentifier;
+- (void)replaceIdentifierRegistry:;
+- (void)identifierRegistryWithExclusiveAccess:;
+- (id)identifierRegistryWithExclusiveAccessReturningObject:;
+- (BOOL)identifierRegistryWithExclusiveAccessReturningBOOL:;
+- (long long)identifierRegistryWithExclusiveAccessReturningInteger:;
+- (long long)supplementalPlaybackContextBehavior;
+- (id)supplementalPlaybackContextWithReason:;
+- (void)getRepresentativeMetadataForPlaybackContext:properties:completion:;
+- (id)firstModelPlayEvent;
+- (void)applyVolumeNormalizationForItem:;
+- (id)playActivityQueueGroupingID;
+- (void)setPlayActivityQueueGroupingID:;
+- (id)siriWHAMetricsInfo;
+- (void)setSiriWHAMetricsInfo:;
+@end

@@ -1,0 +1,37 @@
+@interface CNContactHeaderEditView : CNContactHeaderView
+@property (nonatomic) {CGSize=dd} maxButtonSize;
+@property (nonatomic) UIButton editButton;
+@property (nonatomic) NSLayoutConstraint editButtonHeightConstraint;
+@property (nonatomic) BOOL allowsEditPhoto;
+- (void)editButtonPressed;
+- (void)setEditButton:;
+- (id)editButton;
+- (void).cxx_destruct;
+- (void)updateConstraints;
+- (double)maxHeight;
+- (BOOL)hasPhoto;
+- (void)updateWithContacts:;
+- (void)updateFontSizes;
+- (void)setAllowsEditPhoto:;
+- (BOOL)allowsEditPhoto;
+- (double)defaultMaxHeight;
+- (void)calculateLabelSizesIfNeeded;
+- (void)didFinishUsing;
+- (void)updateSizeDependentAttributes;
+- (id)initWithContact:frame:shouldAllowTakePhotoAction:showingNavBar:monogramOnly:delegate:;
+- (id)initWithContact:frame:shouldAllowTakePhotoAction:delegate:showingNavBar:monogramOnly:;
+- (void)setAllowsEditPhoto:preservingChanges:;
+- (void)updateEditButtonTitle;
+- (BOOL)photoIsModified;
+- (void)saveContactPhoto;
+- (void)presentAvatarPickerWithImageData:;
+- (void)updateContactWithEditedPropertyItem:;
+- (id)maxButtonSize;
+- (void)setMaxButtonSize:;
+- (id)editButtonHeightConstraint;
+- (void)setEditButtonHeightConstraint:;
++ (id)sizeAttributesShowingNavBar:;
++ (id)makePhotoViewWithShouldAllowTakePhotoAction:shouldAllowImageDrops:monogramOnly:;
++ (id)contactHeaderViewWithContact:shouldAllowTakePhotoAction:monogramOnly:delegate:;
++ (id)contactHeaderViewWithContact:shouldAllowTakePhotoAction:showingNavBar:monogramOnly:delegate:;
+@end

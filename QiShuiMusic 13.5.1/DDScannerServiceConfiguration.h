@@ -1,0 +1,35 @@
+@interface DDScannerServiceConfiguration : NSObject
+@property (nonatomic) BOOL noObjC;
+@property (nonatomic) BOOL spotlightSuggestionsEnabled;
+@property (nonatomic) BOOL remoteScannerEnabled;
+@property (nonatomic) double timeout;
+@property (nonatomic) q resultsOptions;
+@property (nonatomic) q scannerOptions;
+@property (nonatomic) NSObject<OS_dispatch_queue> completionQueue;
+- (void)setCompletionQueue:;
+- (id)completionQueue;
+- (id)init;
+- (BOOL)remoteScannerEnabled;
+- (long long)resultsOptions;
+- (id)recyclingIdentifier;
+- (void)setTimeout:;
+- (id)initEmpty;
+- (BOOL)spotlightSuggestionsEnabled;
+- (id)initWithCoder:;
+- (BOOL)noObjC;
+- (void)setNoObjC:;
+- (void)setSpotlightSuggestionsEnabled:;
+- (long long)scannerOptions;
+- (id)initWithScannerType:passiveIntent:;
+- (void)encodeWithCoder:;
+- (void)setResultsOptions:;
+- (void)setRemoteScannerEnabled:;
+- (void).cxx_destruct;
+- (void)updateRecyclingIdentifier;
+- (double)timeout;
+- (id)description;
+- (void)setScannerOptions:;
+- (int)scannerType;
+- (id)copyWithZone:;
++ (BOOL)supportsSecureCoding;
+@end

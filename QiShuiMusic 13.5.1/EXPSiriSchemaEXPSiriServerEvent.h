@@ -1,0 +1,34 @@
+@interface EXPSiriSchemaEXPSiriServerEvent : SISchemaTopLevelUnionType
+@property (nonatomic) SISchemaInstrumentationMessage innerEvent;
+@property (nonatomic) EXPSiriSchemaEXPServerExperimentTriggeredTier1 experimentTriggered;
+@property (nonatomic) BOOL hasExperimentTriggered;
+@property (nonatomic) EXPSiriSchemaEXPServerCounterfactualTriggeredTier1 counterfactualTriggered;
+@property (nonatomic) BOOL hasCounterfactualTriggered;
+@property (nonatomic) NSData jsonData;
+@property (nonatomic) Q whichEvent_Type;
+- (id)qualifiedMessageName;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (int)getAnyEventType;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (unsigned long long)whichEvent_Type;
+- (id)innerEvent;
+- (void)setExperimentTriggered:;
+- (id)experimentTriggered;
+- (void)deleteExperimentTriggered;
+- (BOOL)hasExperimentTriggered;
+- (void)setHasExperimentTriggered:;
+- (void)setCounterfactualTriggered:;
+- (id)counterfactualTriggered;
+- (void)deleteCounterfactualTriggered;
+- (BOOL)hasCounterfactualTriggered;
+- (void)setHasCounterfactualTriggered:;
+@end

@@ -1,0 +1,36 @@
+@interface GEOMapAccessTransitAccessPoint : NSObject
+@property (nonatomic) Q stationID;
+@property (nonatomic) double groundRadius;
+@property (nonatomic) C entranceExitType;
+@property (nonatomic) S accessType;
+@property (nonatomic) {?=dd} coordinate;
+@property (nonatomic) Q transitID;
+@property (nonatomic) NSString internalName;
+@property (nonatomic) double boundingRadius;
+@property (nonatomic) {?={?=dd}{?=dd}} boundingRect;
+@property (nonatomic) ^{?=dd} polygonPoints;
+@property (nonatomic) q polygonPointsCount;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)internalName;
+- (id)boundingRect;
+- (void).cxx_destruct;
+- (id)coordinate;
+- (id).cxx_construct;
+- (id)findGeometryWithCompletionHandler:;
+- (double)distanceInMetersFrom:;
+- (id)findAccessPoints:completionHandler:;
+- (unsigned long long)transitID;
+- (double)boundingRadius;
+- (id)polygonPoints;
+- (long long)polygonPointsCount;
+- (id)findStops:completionHandler:;
+- (id)findStation:completionHandler:;
+- (unsigned long long)stationID;
+- (double)groundRadius;
+- (unsigned char)entranceExitType;
+- (unsigned short)accessType;
+- (id)initWithMap:accessPoint:;
+@end

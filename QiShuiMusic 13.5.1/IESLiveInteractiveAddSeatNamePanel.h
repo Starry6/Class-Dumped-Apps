@@ -1,0 +1,37 @@
+@interface IESLiveInteractiveAddSeatNamePanel : UIView
+@property (nonatomic) <IESLiveInteractiveAddSeatNameViewModel> viewModel;
+@property (nonatomic) UIImageView previewBackgroundImageView;
+@property (nonatomic) UIView seatBackgroundView;
+@property (nonatomic) UILabel seatIndexLabel;
+@property (nonatomic) UILabel seatNameLabel;
+@property (nonatomic) UITextField seatNameTextField;
+@property (nonatomic) UIButton okButton;
+- (void)didSetAttachingDIContext;
+- (BOOL)hasChangeSeatName;
+- (void)ieslive_showKeyboard;
+- (void)onClickOK;
+- (id)previewBackgroundImageView;
+- (id)seatBackgroundView;
+- (id)seatIndexLabel;
+- (id)seatNameLabel;
+- (id)seatNameTextField;
+- (void)setPreviewBackgroundImageView:;
+- (void)setSeatBackgroundView:;
+- (void)setSeatIndexLabel:;
+- (void)setSeatNameLabel:;
+- (void)setSeatNameTextField:;
+- (void)setupCycleUI;
+- (void)setupSquareUI;
+- (void)showSeatName:;
+- (void)textFieldEditChangedAction:event:;
+- (void)updateWithTheme:;
+- (id)viewModel;
+- (void)showKeyboard;
+- (id)okButton;
+- (void).cxx_destruct;
+- (void)setOkButton:;
+- (void)setViewModel:;
+- (void)setupUI;
+- (id)initWithFrame:viewModel:;
++ (id)popupItem;
+@end

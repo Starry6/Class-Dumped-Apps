@@ -1,0 +1,30 @@
+@interface IESLiveSaaSVideoUploadHelper : NSObject
+@property (nonatomic) <IESLiveSaaSInternalRouter> router;
+@property (nonatomic) @? completeBlock;
+@property (nonatomic) UIImagePickerController imagePicker;
+@property (nonatomic) NSString certVideoFileURL;
+@property (nonatomic) NSString firstFrameBase64;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)certVideoFileURL;
+- (void)closeImagePickerController;
+- (id)completeBlock;
+- (id)firstFrameBase64;
+- (void)playCertVideo;
+- (void)savedPhotoImage:didFinishSavingWithError:contextInfo:;
+- (void)setCertVideoFileURL:;
+- (void)setCompleteBlock:;
+- (void)setFirstFrameBase64:;
+- (void)startUploadVideoWithCompleteBlock:durationLimit:actionType:withAlbumPrivacyCert:withSettingPrivacyCert:withCameraPrivacyCert:;
+- (void)uploadVideoWithFileURL:;
+- (void)navigationController:didShowViewController:animated:;
+- (void).cxx_destruct;
+- (void)imagePickerControllerDidCancel:;
+- (void)imagePickerController:didFinishPickingMediaWithInfo:;
+- (id)router;
+- (void)setRouter:;
+- (id)imagePicker;
+- (void)setImagePicker:;
+@end

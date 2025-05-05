@@ -1,0 +1,36 @@
+@interface IESLiveSaaSDiggViewFactoryImpl : NSObject
+@property (nonatomic) {CGPoint=dd} startPoint;
+@property (nonatomic) Q width;
+@property (nonatomic) Q height;
+@property (nonatomic) q singleDiggPathNumber;
+@property (nonatomic) {CGPoint=dd} controlPoint1;
+@property (nonatomic) {CGPoint=dd} controlPoint2;
+@property (nonatomic) {CGPoint=dd} endPoint;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)_singleDiggPath;
+- (void)configStartPoint:width:height:;
+- (id)createViewWithImage:;
+- (id)createViewWithImage:ownDigg:;
+- (id)newStrategyCreateViewWithImage:ownDigg:showSwitch:;
+- (id)newStrategyWeakify_singleDiggPathWithOffset:;
+- (id)newStrategy_singleDiggPath;
+- (void)refreshControlPoint;
+- (void)setControlPoint1:;
+- (void)setControlPoint2:;
+- (void)setSingleDiggPathNumber:;
+- (long long)singleDiggPathNumber;
+- (void)updateStartPoint:;
+- (id)endPoint;
+- (void)setEndPoint:;
+- (id)startPoint;
+- (void)setStartPoint:;
+- (id)controlPoint1;
+- (void)setWidth:;
+- (unsigned long long)height;
+- (id)controlPoint2;
+- (unsigned long long)width;
+- (void)setHeight:;
+@end

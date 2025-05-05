@@ -1,0 +1,2 @@
+@interface GPBEmptyRoot : GPBRootObject
+@end

@@ -1,0 +1,37 @@
+@interface INFERENCESchemaINFERENCEPromptContext : SISchemaInstrumentationMessage
+@property (nonatomic) NSInteger tag;
+@property (nonatomic) BOOL hasTag;
+@property (nonatomic) INFERENCESchemaINFERENCEConfirmationPromptContext confirmationPromptContext;
+@property (nonatomic) BOOL hasConfirmationPromptContext;
+@property (nonatomic) INFERENCESchemaINFERENCEDisambiguationPromptContext disambiguationPromptContext;
+@property (nonatomic) BOOL hasDisambiguationPromptContext;
+@property (nonatomic) NSData jsonData;
+@property (nonatomic) Q whichPromptcontext;
+- (int)tag;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void)setTag:;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (BOOL)hasTag;
+- (void)setHasTag:;
+- (void)deleteTag;
+- (void)setConfirmationPromptContext:;
+- (id)confirmationPromptContext;
+- (void)deleteConfirmationPromptContext;
+- (void)setDisambiguationPromptContext:;
+- (id)disambiguationPromptContext;
+- (void)deleteDisambiguationPromptContext;
+- (unsigned long long)whichPromptcontext;
+- (BOOL)hasConfirmationPromptContext;
+- (void)setHasConfirmationPromptContext:;
+- (BOOL)hasDisambiguationPromptContext;
+- (void)setHasDisambiguationPromptContext:;
+@end

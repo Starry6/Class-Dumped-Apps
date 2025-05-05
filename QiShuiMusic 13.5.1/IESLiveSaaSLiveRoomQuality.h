@@ -1,0 +1,31 @@
+@interface IESLiveSaaSLiveRoomQuality : MTLModel
+@property (nonatomic) NSString name;
+@property (nonatomic) NSString key;
+@property (nonatomic) NSString v_codec;
+@property (nonatomic) NSString resolution;
+@property (nonatomic) q pushStreamLevel;
+@property (nonatomic) NSInteger vBitRate;
+@property (nonatomic) NSString additionalContent;
+@property (nonatomic) NSInteger fps;
+@property (nonatomic) NSInteger disable;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)pushStreamLevel;
+- (id)v_codec;
+- (void)setDisable:;
+- (void)setVBitRate:;
+- (int)vBitRate;
+- (int)disable;
+- (id)key;
+- (id)resolution;
+- (void).cxx_destruct;
+- (id)description;
+- (int)fps;
+- (id)name;
+- (id)additionalContent;
+- (void)setAdditionalContent:;
+- (void)setFps:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

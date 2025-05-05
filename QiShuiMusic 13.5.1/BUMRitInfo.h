@@ -1,0 +1,30 @@
+@interface BUMRitInfo : BUInterfaceBaseObject
+@property (nonatomic) BUMRitInfo iteration;
+@property (nonatomic) NSString adnName;
+@property (nonatomic) NSString customAdnName;
+@property (nonatomic) NSString slotID;
+@property (nonatomic) NSString levelTag;
+@property (nonatomic) NSString ecpm;
+@property (nonatomic) q biddingType;
+@property (nonatomic) NSString errorMsg;
+@property (nonatomic) NSString requestID;
+@property (nonatomic) NSString creativeID;
+@property (nonatomic) NSString adRitType;
+@property (nonatomic) NSNumber segmentId;
+@property (nonatomic) NSNumber abtestId;
+@property (nonatomic) NSString channel;
+@property (nonatomic) NSString sub_channel;
+@property (nonatomic) NSString scenarioId;
+@property (nonatomic) NSString subRitType;
+- (id)abtestId;
+- (id)adRitType;
+- (id)scenarioId;
+- (id)segmentId;
+- (id)subRitType;
+- (id)sub_channel;
+- (id)init;
+- (id)channel;
+- (void).cxx_destruct;
+- (void)setIteration:;
+- (id)iteration;
+@end

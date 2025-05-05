@@ -1,0 +1,31 @@
+@interface ML3ActiveTransaction : NSObject
+@property (nonatomic) ML3MusicLibrary library;
+@property (nonatomic) ML3DatabaseConnection connection;
+@property (nonatomic) NSUUID identifier;
+@property (nonatomic) ML3Client client;
+@property (nonatomic) double lastUsedTime;
+@property (nonatomic) BOOL terminable;
+@property (nonatomic) BOOL inUseByOperation;
+@property (nonatomic) BOOL readOnly;
+- (BOOL)isReadOnly;
+- (void)setLastUsedTime:;
+- (id)init;
+- (void)setReadOnly:;
+- (id)identifier;
+- (id)debugDescription;
+- (void)unlock;
+- (void)lock;
+- (id)library;
+- (double)lastUsedTime;
+- (id)client;
+- (id)connection;
+- (void).cxx_destruct;
+- (id)description;
+- (id)initWithLibrary:connection:client:;
+- (void)updateLastUsed;
+- (id)_relinquishConnection;
+- (BOOL)terminable;
+- (void)setTerminable:;
+- (BOOL)inUseByOperation;
+- (void)setInUseByOperation:;
+@end

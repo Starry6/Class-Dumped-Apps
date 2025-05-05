@@ -1,0 +1,2 @@
+@interface AnnieLiveBizConstants : NSObject
+@end

@@ -1,0 +1,32 @@
+@interface CinematicDirectorSession : NSObject
+@property (nonatomic) CinematicFramingSessionOptions options;
+@property (nonatomic) float zoomLevel;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} cameraViewport;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (float)zoomLevel;
+- (void)setOptions:;
+- (void)setZoomLevel:;
+- (id)options;
+- (void).cxx_destruct;
+- (void)reset;
+- (id)initWithFramingSpaceManager:;
+- (void)cinematicTracker:didTrackEnter:atTime:;
+- (void)cinematicTracker:didTrackBecomeStationaryFirstTime:atTime:;
+- (void)cinematicTracker:didTrackLeave:atTime:;
+- (id)computeTargetViewport:;
+- (id)computeSubjectRectangle:;
+- (float)computeSubjectOccupancyFraction:;
+- (id)computeFocusPoint;
+- (void)resetCameraViewport:;
+- (id)cameraViewport;
+- (void)computeSceneFramingForMetadata:;
+- (void)handleStationarySceneForMetadata:activeStationaryTracks:activeMovingTracks:validTracks:;
+- (void)handleMovingSceneForMetadata:activeStationaryTracks:activeMovingTracks:validTracks:;
+- (float)secondsInCurrentStateAtTime:;
+- (void)updateStateTo:atTime:;
+- (void)reframeOnTracks:withMetadata:;
+- (void)setCameraViewport:;
+@end

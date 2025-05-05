@@ -1,0 +1,33 @@
+@interface INCallGroupConversationFilter : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) INPerson caller;
+@property (nonatomic) NSArray participants;
+@property (nonatomic) NSNumber matchCallerAndParticipantsExactly;
+@property (nonatomic) INCallGroup callGroup;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)participants;
+- (id)caller;
+- (id)_dictionaryRepresentation;
+- (void)_intents_updateContainerWithCache:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (id)descriptionAtIndent:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)_intents_cacheableObjects;
+- (id)_intents_encodeWithJSONEncoder:codableDescription:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)callGroup;
+- (id)matchCallerAndParticipantsExactly;
+- (id)initWithCaller:participants:matchCallerAndParticipantsExactly:callGroup:;
++ (id)_intents_decodeWithJSONDecoder:codableDescription:from:;
++ (BOOL)supportsSecureCoding;
+@end

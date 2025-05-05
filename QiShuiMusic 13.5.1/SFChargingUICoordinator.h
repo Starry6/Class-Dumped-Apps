@@ -1,0 +1,32 @@
+@interface SFChargingUICoordinator : SFXPCClient
+@property (nonatomic) q defaultDuration;
+- (void)initialViewControllerDidAppear;
+- (id)exportedInterface;
+- (void)requestAnimationDateWithCompletion:;
+- (void)setDefaultDuration:;
+- (id)machServiceName;
+- (BOOL)shouldEscapeXpcTryCatch;
+- (void)onqueue_connectionInterrupted;
+- (void)_dismissUI;
+- (void)_initialViewControllerDidAppear;
+- (void)_requestToStartAnimationAtDate:;
+- (void)_timingRestartMinTimer;
+- (void)initialViewControllerDidDisappear;
+- (void)requestToShowUIWithHandler:;
+- (void)_initialViewControllerDidDisappear;
+- (void)_timingInvalidateMinTimer;
+- (void)_invalidate;
+- (void)_activate;
+- (void)requestToDismissUIHandler:;
+- (void).cxx_destruct;
+- (void)onqueue_connectionInvalidated;
+- (void)onqueue_connectionEstablished;
+- (long long)defaultDuration;
+- (void)requestToStartAnimationAtDate:;
+- (void)sendDismissUIWithReason:;
+- (void)invalidate;
+- (void)_requestToDismissUIHandler:;
+- (void)_sendDismissUIWithReason:;
+- (void)activate;
+- (id)remoteObjectInterface;
+@end

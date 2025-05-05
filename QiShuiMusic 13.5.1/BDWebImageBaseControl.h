@@ -1,0 +1,32 @@
+@interface BDWebImageBaseControl : NSObject
+@property (nonatomic) BOOL loadingFromNet;
+@property (nonatomic) BOOL loadingFromDisk;
+@property (nonatomic) BOOL savingToDisk;
+@property (nonatomic) @ infoConfig;
+- (Class)infoConfigClass;
+- (BOOL)loadingFromDisk;
+- (id)requestDomainWithStartUpConfig:;
+- (id)boeDomain;
+- (id)cnDomain;
+- (id)headerFieldsWithStartUpConfig:;
+- (id)infoConfig;
+- (void)loadFromDisk_async:;
+- (BOOL)loadFromDisk_sync;
+- (void)loadFromNetWithStartUpConfig:completion:;
+- (BOOL)loadingFromNet;
+- (Class)mappingClass;
+- (BOOL)processingNetObj:;
+- (id)queryStringWithStartUpConfig:;
+- (void)saveToDisk_async;
+- (BOOL)savingToDisk;
+- (void)setInfoConfig:;
+- (void)setLoadingFromDisk:;
+- (void)setLoadingFromNet:;
+- (void)setSavingToDisk:;
+- (id)sgDomain;
+- (id)vaDomain;
+- (id)fileName;
+- (void).cxx_destruct;
++ (BOOL)findOrCreateDirectoryInPath:;
++ (id)rootPath;
+@end

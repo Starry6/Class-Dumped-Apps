@@ -1,0 +1,30 @@
+@interface UIKeyboardSupplementaryControlKeyTransformation : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
++ (id)transformationIdentifier;
++ (id)transformKeyplane:withTransformationContext:;
++ (double)_totalKeyPaddingForOrientation:;
++ (double)_keyplanePaddingForOrientation:;
++ (double)_keyplanePaddingForOrientation:row:;
++ (unsigned long long)_numberOfKeysInRow:firstKey:lastKey:;
++ (double)_derivedLeadingControlKeyWidthForRow:keysForRow:context:;
++ (double)_derivedFiveRowControlKeyWidthForRow:keysForRow:context:;
++ (double)_scaledDerivedLeadingControlKeyWidth:forKeysForRow:keyCount:numberOfKeysInSpecification:context:;
++ (double)_derivedTrailingControlKeyWidthForRow:orientation:;
++ (id)_supplementaryControlKeySetForOrientation:context:;
++ (id)_supplementaryControlKeyWithName:context:;
++ (id)_supplementaryScriptSwitchKeyWithContext:;
++ (id)_cachedUndoOrRedoKeyForKeyplane:;
++ (id)_supplementaryShiftKeysWithContext:;
++ (id)cachedControlKeySetsForTransformationContext:;
++ (double)_keyPitchForKeyplane:;
++ (void)adjustHorizontalPaddingForKeyplane:withTransformationContext:;
++ (id)layoutScaleFactorForContext:;
++ (void)transformKeysForFourRowKeyplane:withTransformationContext:;
++ (void)transformKeysForFiveRowKeyplane:withTransformationContext:;
++ (void)transformKeysForHandwritingKeyplane:withTransformationContext:;
++ (void)transformLastRowKeysForKeyplane:row:withTransformationContext:;
++ (void)transformKeysForVietnameseKeyPlane:withTransformationContext:;
+@end

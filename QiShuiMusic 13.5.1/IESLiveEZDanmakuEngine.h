@@ -1,0 +1,38 @@
+@interface IESLiveEZDanmakuEngine : NSObject
+@property (nonatomic) IESLiveEZDanmakuClock clock;
+@property (nonatomic) IESLiveEZDanmakuCanvas canvas;
+@property (nonatomic) NSMutableDictionary dispatcherMap;
+@property (nonatomic) <IESLiveEZDanmakuEngineDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)assembleDispatcher:;
+- (void)attachCanvasToContainerView:withFrame:;
+- (id)canvasToRenderSpiritForDispatcher:;
+- (void)clearAllQueuedSpirits;
+- (void)deactivateAllSpirits;
+- (id)dispatcherMap;
+- (void)endEngine;
+- (void)fireDanmakuWithSpirit:;
+- (void)fragmentOrientationChanged:;
+- (id)getDefaultDispatcher;
+- (id)initWithCanvasClassName:;
+- (void)p_updateWithTime:;
+- (void)pauseEngine;
+- (void)resumeEngine;
+- (void)setDispatcherMap:;
+- (void)tapCanvas:;
+- (double)timeForDispatcher:;
+- (id)usingCanvas;
+- (void)willActiveDanmakuSpirit:inDispatcher:;
+- (void)setClock:;
+- (id)canvas;
+- (void)setCanvas:;
+- (id)clock;
+- (void)setDelegate:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)startEngine;
++ (id)engineWithCanvasClassName:;
+@end

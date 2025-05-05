@@ -1,0 +1,2 @@
+@interface UserUserApiRoot : GPBRootObject
+@end

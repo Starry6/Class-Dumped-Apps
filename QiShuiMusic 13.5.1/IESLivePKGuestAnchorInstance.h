@@ -1,0 +1,37 @@
+@interface IESLivePKGuestAnchorInstance : NSObject
+@property (nonatomic) <IESLivePKProvider> pkProvider;
+@property (nonatomic) IESLivePKModel pkmodel;
+@property (nonatomic) IESLivePKChatGuestListView guestListView;
+@property (nonatomic) IESLivePKEventTransparentView anchorEmojiContainer;
+@property (nonatomic) IESLivePKGuestOperatePanelView panelView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)pkmodel;
+- (id)anchorEmojiContainer;
+- (void)clearGuestView;
+- (void)didClickEmptyView:;
+- (void)didClickItemView:;
+- (void)didSetAttachingDIContext;
+- (void)didUpdateOppositeRoomSilence;
+- (id)emojiContainerForUserID:isInteractiveEmoji:;
+- (id)guestListView;
+- (id)initWithDiContext:;
+- (void)interactiveMediaService:didUpdatedSessionsLocalLayout:;
+- (BOOL)isUserConnected:;
+- (void)muteOthers:mute:;
+- (BOOL)muteStateForUser:;
+- (id)p_createGuestListView;
+- (id)panelView;
+- (id)pkProvider;
+- (void)removeGuestListView;
+- (void)setAnchorEmojiContainer:;
+- (void)setGuestListView:;
+- (void)setPanelView:;
+- (void)setPkProvider:;
+- (void)setPkmodel:;
+- (void)showPanelWithConfig:requestPage:;
+- (void)stopConnectedWithUserID:;
+- (void).cxx_destruct;
+@end

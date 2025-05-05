@@ -1,0 +1,32 @@
+@interface SGMailIntelligenceFollowUpWarning : SGMailIntelligenceWarning
+@property (nonatomic) NSString globalMessageId;
+@property (nonatomic) NSString appleMailMessageId;
+@property (nonatomic) NSDate startDate;
+@property (nonatomic) NSString startDateCore;
+@property (nonatomic) NSDate endDate;
+@property (nonatomic) NSString endDateCore;
+@property (nonatomic) NSNumber type;
+- (id)startDate;
+- (id)initWithString:;
+- (void)setType:;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (id)endDate;
+- (id)type;
+- (void).cxx_destruct;
+- (id)description;
+- (id)copyWithZone:;
+- (id)initWithNSDictionary:;
+- (unsigned char)warningType;
+- (id)initWithAppleMailMessageId:snippet:core:score:startDate:startDateCore:endDate:endDateCore:;
+- (id)initWithAppleMailMessageId:snippet:core:signature:detectedLanguage:isIncomingMessage:score:startDate:startDateCore:endDate:endDateCore:;
+- (id)globalMessageId;
+- (id)initWithNSData:;
+- (id)toLightNSDictionary;
+- (id)toLightNSData;
+- (id)toLightJson;
+- (id)appleMailMessageId;
+- (id)startDateCore;
+- (id)endDateCore;
++ (BOOL)supportsSecureCoding;
+@end

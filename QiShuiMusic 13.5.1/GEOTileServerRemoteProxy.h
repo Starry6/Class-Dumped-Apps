@@ -1,0 +1,25 @@
+@interface GEOTileServerRemoteProxy : GEOTileServerProxy
+- (void)generateRequestedFromTileLoaderEndSignpost:;
+- (void)dealloc;
+- (void)_handleEditionUpgrade:;
+- (void)open;
+- (void)reprioritizeKey:newPriority:batchID:;
+- (unsigned long long)shrinkDiskCacheToSizeSync:;
+- (void)_handleEvent:;
+- (void)shrinkDiskCacheToSize:callbackQueue:completionHandler:;
+- (void)close;
+- (unsigned long long)calculateFreeableSizeSync;
+- (void)beginPreloadSessionOfSize:;
+- (void)flushPendingWrites;
+- (void).cxx_destruct;
+- (void)endPreloadSession;
+- (void)cancel:batchID:;
+- (void)calculateFreeableSize;
+- (void)_handleError:;
+- (void)_handleNetworkBegan:;
+- (void)loadTiles:batchID:priorities:hasAdditionalInfos:additionalInfos:signpostIDs:createTimes:reason:options:client:;
+- (void)reportCorruptTile:;
+- (id)initWithCacheLocation:manifestConfiguration:locale:delegateQueue:delegate:;
+- (void)generateRequestedFromTileLoaderBeginSignpost:tileKey:options:;
+- (void)_handleTile:;
+@end

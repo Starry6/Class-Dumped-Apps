@@ -1,0 +1,33 @@
+@interface VKGlobeLineContainer : NSObject
+@property (nonatomic) <VKRouteMatchedAnnotationPresentation> routeLineSplitAnnotation;
+@property (nonatomic) <VKGlobeLineContainerDelegate> delegate;
+- (void)dealloc;
+- (void)setDelegate:;
+- (void)observeValueForKeyPath:ofObject:change:context:;
+- (id)overlays;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)update;
+- (id).cxx_construct;
+- (void)addLine:;
+- (void)setRouteLineSplitAnnotation:;
+- (id)initWithRouteRenderLayer:;
+- (void)_addOverlay:;
+- (void)addPersistentOverlay:;
+- (void)addNonPersistentOverlay:;
+- (void)_removeOverlay:;
+- (BOOL)hasNonPersistentOverlay:;
+- (BOOL)hasPersistentOverlay:;
+- (void)removePersistentOverlay:;
+- (void)removeNonPersistentOverlay:;
+- (id)persistentOverlays;
+- (id)nonPersistentOverlays;
+- (void)removeLine:;
+- (void)clearLineSelection;
+- (void)setSelected:selected:;
+- (id)routeLineSplitAnnotation;
+- (void)_updateRouteSplit;
+- (void)_recreateLinesIfNeeded;
+- (void)_destroyLinesIfNeeded;
+- (float)halfWidthForLine:styleZ:;
+@end

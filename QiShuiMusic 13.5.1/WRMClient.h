@@ -1,0 +1,33 @@
+@interface WRMClient : NSObject
+@property (nonatomic) <WRMClientDelegate> delegate;
+@property (nonatomic) NSInteger mediaControlInfoVersion;
+- (id)init;
+- (void)dealloc;
+- (void)setDelegate:;
+- (void)setConfiguration:;
+- (id)delegate;
+- (id)initWithDelegate:;
+- (BOOL)setupServiceConnection;
+- (int)mediaControlInfoVersion;
+- (void)setMediaControlInfoVersion:;
+- (void)setPreWarmState:;
+- (void)updateMetricsConfig:;
+- (void)setRSSIThresholdEnabled:;
+- (void)releaseServiceConnection;
+- (void)startWRMClientWithMode:metricsConfig:;
+- (void)stopWRMClient;
+- (int)getWRMSubscribeVersion;
+- (void)sendProcessInfoWithProcessID:;
+- (void)sendSubscriptionInfoFaceTimeCalling;
+- (void)sendUnsubscriptionInfoFaceTimeCalling;
+- (void)requestNotificationFaceTimeCalling;
+- (void)sendStatusUpdateInfoFaceTimeCalling:;
+- (void)sendStatusUpdateFaceTimeCalling:;
+- (void)dumpReport:;
+- (void)sendReport:;
+- (void)reportMetricsWifiCalling:;
+- (void)reportImmediateMetric:value:;
+- (void)reportMetricsFaceTimeCalling:;
+- (void)processWRMCoexMetrics:isAlertedMode:;
+- (void)processNotificationList:;
+@end

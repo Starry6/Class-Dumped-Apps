@@ -1,0 +1,2 @@
+@interface CADStatsOccurrenceInfo : NSObject
+@end

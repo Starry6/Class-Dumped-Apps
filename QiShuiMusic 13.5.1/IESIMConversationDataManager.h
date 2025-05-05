@@ -1,0 +1,38 @@
+@interface IESIMConversationDataManager : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)conversationForceSetUpdated:at:;
+- (void)addParticipants:options:toConversation:completion:;
+- (void)addParticipants:toConversation:completion:;
+- (void)conversationUpdateCurrentIfNeeded:completion:;
+- (void)conversationUpdateIfNeeded:;
+- (void)createConversationWithOtherParticipants:type:inInbox:completion:;
+- (void)createConversationWithOtherParticipants:type:inInbox:options:completion:;
+- (void)deleteAllMessagesWithMode:ofConversation:completion:;
+- (void)deleteWithMode:ofConversation:completion:;
+- (void)deleteWithOptions:ofConversation:completion:;
+- (void)dismissFromConversation:completion:;
+- (void)enterConversation:conversationType:shortID:inbox:options:completion:;
+- (void)fetchConversationInfo:conversationID:type:inInbox:completion:;
+- (void)leaveFromConversation:completion:;
+- (void)markAllConversationsAsReadWithMode:completion:;
+- (void)markAllMessagesAsReadWithMode:ofConversation:completion:;
+- (void)markAllMessagesBeforeMessage:asReadWithMode:ofConversation:completion:;
+- (void)markAsUnreadWithMode:unreadCount:ofConversation:completion:;
+- (void)removeParticipants:fromConversation:completion:;
+- (void)removeParticipants:options:fromConversation:completion:;
+- (void)sendMessageP2P:conversationId:visibleUser:messageType:content:ext:complection:;
+- (void)sendMessageP2P:messageType:content:ext:toConversation:complection:;
+- (void)sendUserAction:extra:toConversation:completion:;
+- (void)setAliasForParticipant:alias:ofConversation:completion:;
+- (void)setBatchRoleForParticipant:role:bizExt:ofConversation:completion:;
+- (void)setDesc:ofConversation:completion:;
+- (void)setIcon:ofConversation:completion:;
+- (void)setMute:ofConversation:completion:;
+- (void)setName:ofConversation:completion:;
+- (void)setNotice:ofConversation:completion:;
+- (void)setRoleForParticipant:role:ofConversation:completion:;
+- (void)setStickOnTop:ofConversation:completion:;
+@end

@@ -1,0 +1,31 @@
+@interface VCCellularAudioTap : NSObject
+@property (nonatomic) NSObject<OS_dispatch_queue> delegateQueue;
+@property (nonatomic) <VCServerDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)dealloc;
+- (void)setDelegate:;
+- (id)delegateQueue;
+- (id)delegate;
+- (void)setDelegateQueue:;
+- (void)didUpdateBasebandCodec:;
+- (void)didServerDie;
+- (void)audioPowerSpectrumSinkDidRegister;
+- (void)audioPowerSpectrumSinkDidUnregister;
+- (void)didSuspendAudioIO:;
+- (void)didResumeAudioIO:;
+- (void)didResume;
+- (void)didStart:error:;
+- (void)didStop:error:;
+- (void)controllerFormatChanged:;
+- (void)didSuspend;
+- (id)initWithProcessId:delegate:delegateQueue:;
+- (BOOL)addAudioTapForStreamToken:tapType:error:;
+- (BOOL)removeAudioTapForStreamToken:error:;
+- (int)registerAudioTapForStreamToken:tapType:;
+- (void)unregisterAudioTapForStreamToken:;
+- (id)audioIOConfigWithAudioType:realtimeContext:;
++ (unsigned int)audioIOTypeFromTapType:;
+@end

@@ -1,0 +1,30 @@
+@interface IESECWebImageTemplateFormat : MTLModel
+@property (nonatomic) q replaceType;
+@property (nonatomic) q resizeType;
+@property (nonatomic) q scaleWidth;
+@property (nonatomic) q scaleHeight;
+@property (nonatomic) q specificScale;
+@property (nonatomic) NSArray widthOptions;
+@property (nonatomic) NSString replaceFormat;
+@property (nonatomic) NSDictionary dictionaryValue;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setReplaceType:;
+- (void)setScaleHeight:;
+- (id)replaceFormat;
+- (long long)replaceType;
+- (long long)resizeType;
+- (long long)scaleHeight;
+- (long long)scaleWidth;
+- (void)setReplaceFormat:;
+- (void)setResizeType:;
+- (void)setScaleWidth:;
+- (void)setSpecificScale:;
+- (void)setWidthOptions:;
+- (long long)specificScale;
+- (id)widthOptions;
+- (void).cxx_destruct;
++ (id)JSONKeyPathsByPropertyKey;
+@end

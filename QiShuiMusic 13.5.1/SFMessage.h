@@ -1,0 +1,32 @@
+@interface SFMessage : NSObject
+@property (nonatomic) NSSet deviceIDs;
+@property (nonatomic) NSUUID identifier;
+@property (nonatomic) SFSession session;
+@property (nonatomic) NSData bodyData;
+@property (nonatomic) @? completionHandler;
+@property (nonatomic) BOOL expectsResponse;
+@property (nonatomic) NSDictionary headerFields;
+@property (nonatomic) SFDevice peerDevice;
+- (void)setSession:;
+- (void)setDeviceIDs:;
+- (id)deviceIDs;
+- (id)identifier;
+- (void)setCompletionHandler:;
+- (id)peerDevice;
+- (id)initWithCoder:;
+- (void)setPeerDevice:;
+- (id)bodyData;
+- (void)encodeWithCoder:;
+- (id)session;
+- (void).cxx_destruct;
+- (id)headerFields;
+- (id)description;
+- (void)invalidate;
+- (void)setIdentifier:;
+- (id)completionHandler;
+- (BOOL)expectsResponse;
+- (void)setBodyData:;
+- (void)setHeaderFields:;
+- (void)setExpectsResponse:;
++ (BOOL)supportsSecureCoding;
+@end

@@ -1,0 +1,2 @@
+@interface AVContentKeyResponseInternal : NSObject
+@end

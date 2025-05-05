@@ -1,0 +1,32 @@
+@interface GEOXPCRequest : NSObject
+@property (nonatomic) NSString service;
+@property (nonatomic) NSString method;
+@property (nonatomic) GEOPeer peer;
+@property (nonatomic) GEOApplicationAuditToken preferredAuditToken;
+@property (nonatomic) GEOMapServiceTraits traits;
+@property (nonatomic) GEODataRequestThrottlerToken throttleToken;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)traits;
+- (void)setService:;
+- (id)init;
+- (id)peer;
+- (void)send:;
+- (id)method;
+- (void)encodeToXPCDictionary:;
+- (id)throttleToken;
+- (id)service;
+- (id)initWithXPCDictionary:error:;
+- (void).cxx_destruct;
+- (id)description;
+- (void)setMethod:;
+- (id)preferredAuditToken;
+- (id)initWithMessage:traits:auditToken:throttleToken:;
+- (void)send:withReply:handler:;
+- (id)sendSync:error:;
+- (void)setPeer:;
+- (void)setPreferredAuditToken:;
++ (BOOL)reportsProgress;
+@end

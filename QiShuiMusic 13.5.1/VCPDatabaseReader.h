@@ -1,0 +1,33 @@
+@interface VCPDatabaseReader : NSObject
+- (id)initWithPhotoLibrary:;
+- (long long)valueForKey:;
+- (void)dealloc;
+- (BOOL)exists;
+- (int)openDatabase;
+- (void).cxx_destruct;
+- (void)closeDatabase;
+- (int)parseHeader:startColumn:analysis:;
+- (int)parseResults:typeColumn:dataColumn:results:;
+- (int)queryHeaderForAsset:analysis:assetId:;
+- (int)queryResultsForAssetId:analysis:;
+- (int)queryResultsForAssetId:withTypes:analysis:;
+- (int)queryHeadersForAssets:analyses:idMap:;
+- (int)queryResultsForAssets:withTypes:batchResults:;
+- (int)executeDatabaseBlock:;
+- (BOOL)isAssetBlacklisted:blacklistDate:;
+- (id)blacklistedLocalIdentifiersFromAssets:;
+- (id)queryBlacklistedLocalIdentifiers;
+- (id)queryAnalysisForAsset:;
+- (id)queryAnalysisPropertiesForAsset:;
+- (id)queryAnalysisPropertiesForAssets:;
+- (id)queryAnalysisForAsset:withTypes:;
+- (id)queryAnalysesForAssets:withTypes:;
+- (id)queryAssetsAnalyzedSince:;
+- (id)queryFailedProcessingStatusFromAssets:forTaskID:;
+- (id)queryLocalIdentifiersForTaskID:withStatus:;
+- (unsigned long long)countForTaskID:withProcessingStatus:;
+- (int)_queryValue:forKey:;
+- (int)querySchedulingHistoryRecords:forActivityID:sinceDate:;
++ (BOOL)shouldQueryInternalFields;
++ (id)databaseForPhotoLibrary:;
+@end

@@ -1,0 +1,31 @@
+@interface BMPBEntity : PBCodable
+@property (nonatomic) BOOL hasPersonEntity;
+@property (nonatomic) BMPBPersonEntity personEntity;
+@property (nonatomic) BOOL hasTopicEntity;
+@property (nonatomic) BMPBTopicEntity topicEntity;
+@property (nonatomic) BOOL hasEntityType;
+@property (nonatomic) NSInteger entityType;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (int)entityType;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)entityTypeAsString:;
+- (int)StringAsEntityType:;
+- (void)setEntityType:;
+- (BOOL)hasEntityType;
+- (void)setHasEntityType:;
+- (BOOL)hasPersonEntity;
+- (void)setPersonEntity:;
+- (BOOL)hasTopicEntity;
+- (void)setTopicEntity:;
+- (void)clearOneofValuesForEntityType;
+- (id)personEntity;
+- (id)topicEntity;
+@end

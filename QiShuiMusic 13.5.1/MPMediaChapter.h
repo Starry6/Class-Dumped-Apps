@@ -1,0 +1,37 @@
+@interface MPMediaChapter : NSObject
+@property (nonatomic) @ value;
+@property (nonatomic) @? valueLoader;
+@property (nonatomic) q chapterType;
+@property (nonatomic) double playbackTime;
+@property (nonatomic) double playbackDuration;
+@property (nonatomic) Q indexInChaptersWithSameType;
+@property (nonatomic) Q indexInChaptersWithAnyType;
+@property (nonatomic) MPMediaLibraryArtworkRequest artworkRequest;
+@property (nonatomic) MPMediaLibraryArtworkDataSource artworkDataSource;
+- (void)setPlaybackTime:;
+- (double)playbackDuration;
+- (void)setPlaybackDuration:;
+- (id)artworkDataSource;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void)setValue:;
+- (double)playbackTime;
+- (id)title;
+- (void).cxx_destruct;
+- (id)description;
+- (id)value;
+- (double)duration;
+- (long long)chapterType;
+- (id)artworkCatalog;
+- (long long)_sortByChapterIndex:;
+- (unsigned long long)indexInChaptersWithAnyType;
+- (void)setIndexInChaptersWithAnyType:;
+- (unsigned long long)indexInChaptersWithSameType;
+- (void)setIndexInChaptersWithSameType:;
+- (void)setChapterType:;
+- (id)valueLoader;
+- (void)setValueLoader:;
+- (id)artworkRequest;
+- (void)setArtworkRequest:;
+- (void)setArtworkDataSource:;
+@end

@@ -1,0 +1,2 @@
+@interface UIDragPreviewParameters : UIPreviewParameters
+@end

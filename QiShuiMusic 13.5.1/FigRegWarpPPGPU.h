@@ -1,0 +1,38 @@
+@interface FigRegWarpPPGPU : NSObject
+@property (nonatomic) FigMetalAllocator allocator;
+@property (nonatomic) BOOL applyGDC;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)dealloc;
+- (void)releaseResources;
+- (void)setAllocator:;
+- (void).cxx_destruct;
+- (id)allocator;
+- (int)allocateResources:imageHeight:imageFormat:externalMemory:externalMemorySize:;
+- (int)processReference:regionOfInterest:numKeypoints:;
+- (int)processReference:gdcParams:regionOfInterest:numKeypoints:;
+- (int)processNonReference:outputTransform:;
+- (int)processNonReference:gdcParams:outputTransform:;
+- (BOOL)applyGDC;
+- (void)setApplyGDC:;
+- (id)initWithOptionalCommandQueue:config:;
+- (int)allocateResourcesWithWidth:height:;
+- (int)processReferenceTexture:regionOfInterest:numKeypoints:;
+- (int)processReferenceTexture:gdcParams:regionOfInterest:numKeypoints:;
+- (int)processReferenceTexture:gdcParams:regionOfInterest:numKeypoints:mapping:;
+- (int)processNonReferenceTexture:outputTransform:;
+- (int)processNonReferenceTexture:gdcParams:outputTransform:;
+- (int)processNonReferenceTexture:gdcParams:outputTransform:mapping:;
+- (int)_constructPyramid:withTexture:mapping:level0Only:;
+- (int)_detectCorners:roi:corners:pyrLevel:;
+- (int)_verifyInputPixelFormat:;
+- (int)_updatePyramidRoi;
+- (int)_setNormCoefs:width:height:;
+- (int)_setDefaultCornerMatchingParams;
+- (int)_convertTransform:toGPUTransform:;
+- (id)_newBufferWithLength:options:label:;
+- (void)_releaseBuffer:;
++ (int)prewarmShaders:;
+@end

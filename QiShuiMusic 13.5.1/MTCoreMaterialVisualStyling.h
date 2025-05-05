@@ -1,0 +1,38 @@
+@interface MTCoreMaterialVisualStyling : NSObject
+@property (nonatomic) NSString visualStyleSetName;
+@property (nonatomic) NSString visualStyleName;
+@property (nonatomic) CAFilter composedFilter;
+@property (nonatomic) NSDictionary tintColorDescription;
+@property (nonatomic) ^{CGColor=} tintColor;
+@property (nonatomic) double tintAlpha;
+@property (nonatomic) NSString tintColorName;
+@property (nonatomic) q tintColorUIStyle;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)tintColorName;
+- (void)dealloc;
+- (id)userInfo;
+- (void)_processTintingDescription:;
+- (id)_preProcessFilteringDescription:;
+- (id)filterType;
+- (id)compositingFilter;
+- (id)tintColorDescription;
+- (id)tintColor;
+- (void)_getCompositingFilter:tintColor:;
+- (void)_processUserInfoDescription:;
+- (id)visualStyleName;
+- (void).cxx_destruct;
+- (void)_getFilterType:vibrantColor:tintColor:inputReversed:;
+- (id)filterProperties;
+- (void)_applyToLayer:withColorBlock:;
+- (id)initWithVisualStyleSet:styleName:description:andDescendantDescriptions:;
+- (void)_processFilteringDescription:;
+- (id)description;
+- (id)visualStyleSetName;
+- (long long)tintColorUIStyle;
+- (void)_processBlendingDescription:;
+- (id)_composedFilter;
+- (double)tintAlpha;
+@end

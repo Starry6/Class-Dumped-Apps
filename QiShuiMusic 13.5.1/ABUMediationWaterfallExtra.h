@@ -1,0 +1,38 @@
+@interface ABUMediationWaterfallExtra : NSObject
+@property (nonatomic) <ABUMediationWaterfallDelegate> waterfallDelegate;
+@property (nonatomic) ABUMediationWFExtraResult result;
+@property (nonatomic) BOOL finished;
+@property (nonatomic) @? didFinish;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) q requestType;
+@property (nonatomic) Q expectAdCount;
+@property (nonatomic) BOOL bidNotify;
+- (void)startLoadWithAd:andFilterExtra:;
+- (void)ad:willStartLoadWithWaterfall:;
+- (BOOL)bidNotify;
+- (unsigned long long)expectAdCount;
+- (BOOL)hasLoadAds;
+- (void)setExpectAdCount:;
+- (void)setWaterfallDelegate:;
+- (void)updateResultWithAd:;
+- (void)waterfall:didCollectedAdsTokens:andResumeHandler:;
+- (void)waterfall:didLoadMediaAd:withAdapter:;
+- (void)waterfall:loadFailedMediaAdWithError:;
+- (void)waterfall:loadFailedWithError:;
+- (void)waterfall:willStartLoadWithParams:error:;
+- (id)waterfallDelegate;
+- (void)waterfallDidLoadSuccess:;
+- (long long)requestType;
+- (void)setFinished:;
+- (id)result;
+- (void)setRequestType:;
+- (BOOL)finished;
+- (void).cxx_destruct;
+- (id)forwardingTargetForSelector:;
+- (void)setResult:;
+- (id)didFinish;
+- (void)setDidFinish:;
+@end

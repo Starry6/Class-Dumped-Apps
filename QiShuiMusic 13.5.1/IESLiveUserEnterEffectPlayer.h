@@ -1,0 +1,31 @@
+@interface IESLiveUserEnterEffectPlayer : NSObject
+@property (nonatomic) IESLiveVideoGiftController giftController;
+@property (nonatomic) IESLiveUserEnterEffectNode currentEffectNode;
+@property (nonatomic) UIView effectContainerView;
+@property (nonatomic) HTSLiveUserEnterConfiguration configuration;
+@property (nonatomic) <IESLiveUserEnterEffectPlayerDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)closePlayer;
+- (id)currentEffectNode;
+- (void)didFinishPlayingWithError:;
+- (id)effectContainerView;
+- (id)giftController;
+- (void)playWithEffectNode:;
+- (void)setCurrentEffectNode:;
+- (void)setEffectContainerView:;
+- (void)setGiftController:;
+- (void)setupVideoGiftControl;
+- (void)videoGiftController:didTapMasks:;
+- (void)videoGiftController:isReadyToPlayOnView:;
+- (void)cancel;
+- (BOOL)isPlaying;
+- (void)setDelegate:;
+- (void)setConfiguration:;
+- (id)configuration;
+- (id)delegate;
+- (void)cancelWithError:;
+- (void).cxx_destruct;
+@end

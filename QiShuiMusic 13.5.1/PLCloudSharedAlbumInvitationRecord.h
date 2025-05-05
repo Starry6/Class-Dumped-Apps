@@ -1,0 +1,31 @@
+@interface PLCloudSharedAlbumInvitationRecord : PLManagedObject
+@property (nonatomic) NSString uuid;
+@property (nonatomic) NSString albumGUID;
+@property (nonatomic) NSString cloudGUID;
+@property (nonatomic) NSNumber invitationState;
+@property (nonatomic) NSNumber invitationStateLocal;
+@property (nonatomic) NSNumber inviteeEmailKey;
+@property (nonatomic) NSString inviteeHashedPersonID;
+@property (nonatomic) NSString inviteeFirstName;
+@property (nonatomic) NSString inviteeLastName;
+@property (nonatomic) NSString inviteeFullName;
+@property (nonatomic) BOOL isMine;
+@property (nonatomic) NSDate inviteeSubscriptionDate;
+@property (nonatomic) PLCloudSharedAlbum album;
+@property (nonatomic) NSArray inviteeEmails;
+@property (nonatomic) NSArray inviteePhones;
+- (void)delete;
+- (id)init;
+- (void)willSave;
+- (void)awakeFromInsert;
+- (void)prepareForDeletion;
+- (id)inviteeEmails;
+- (id)inviteePhones;
+- (id)inviteeDisplayNameIncludingEmail:;
+- (id)invitationStateDescription;
+- (void)setInviteeEmails:phones:;
++ (id)entityName;
++ (id)cloudSharedAlbumInvitationRecordsWithGUIDs:inLibrary:;
++ (id)insertNewInvitationRecordIntoAlbum:withFirstName:lastName:fullName:emails:phones:inLibrary:;
++ (id)cloudSharedAlbumInvitationRecordsWithAlbumGUID:inLibrary:;
+@end

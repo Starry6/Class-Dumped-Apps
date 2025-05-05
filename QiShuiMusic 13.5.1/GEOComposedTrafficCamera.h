@@ -1,0 +1,31 @@
+@interface GEOComposedTrafficCamera : GEOComposedEnrouteNotice
+@property (nonatomic) NSInteger type;
+@property (nonatomic) I highlightDistance;
+@property (nonatomic) BOOL hasSpeedLimitText;
+@property (nonatomic) NSString speedLimitText;
+@property (nonatomic) BOOL hasSpeedThreshold;
+@property (nonatomic) double speedThreshold;
+@property (nonatomic) BOOL hasCameraPriority;
+@property (nonatomic) I cameraPriority;
+@property (nonatomic) BOOL hasCountryCode;
+@property (nonatomic) I countryCode;
+- (BOOL)hasCountryCode;
+- (unsigned int)countryCode;
+- (id)position;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (int)type;
+- (void).cxx_destruct;
+- (id)description;
+- (unsigned int)highlightDistance;
+- (id)titleFormatForLocation:;
+- (id)detailFormatForLocation:;
+- (id)initWithEnrouteNotice:enrouteNoticeIndex:legIndex:trafficCamera:onRoute:;
+- (BOOL)hasSpeedLimitText;
+- (id)speedLimitText;
+- (BOOL)hasSpeedThreshold;
+- (double)speedThreshold;
+- (BOOL)hasCameraPriority;
+- (unsigned int)cameraPriority;
++ (BOOL)supportsSecureCoding;
+@end

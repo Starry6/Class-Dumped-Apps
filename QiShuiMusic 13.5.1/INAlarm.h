@@ -1,0 +1,33 @@
+@interface INAlarm : NSObject
+@property (nonatomic) NSString identifier;
+@property (nonatomic) NSDateComponents dateTime;
+@property (nonatomic) INSpeakableString label;
+@property (nonatomic) NSNumber enabled;
+@property (nonatomic) NSNumber firing;
+@property (nonatomic) Q alarmRepeatScheduleOptions;
+@property (nonatomic) INSleepAlarmAttribute sleepAlarmAttribute;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)_dictionaryRepresentation;
+- (id)enabled;
+- (id)identifier;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)label;
+- (void)encodeWithCoder:;
+- (id)descriptionAtIndent:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)_intents_encodeWithJSONEncoder:codableDescription:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)dateTime;
+- (id)initWithIdentifier:dateTime:label:enabled:firing:alarmRepeatScheduleOptions:sleepAlarmAttribute:;
+- (id)firing;
+- (unsigned long long)alarmRepeatScheduleOptions;
+- (id)sleepAlarmAttribute;
++ (id)_intents_decodeWithJSONDecoder:codableDescription:from:;
++ (BOOL)supportsSecureCoding;
+@end

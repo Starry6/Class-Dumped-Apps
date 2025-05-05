@@ -1,0 +1,2 @@
+@interface HTSLiveGoodsRoot : GPBRootObject
+@end

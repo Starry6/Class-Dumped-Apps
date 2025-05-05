@@ -1,0 +1,33 @@
+@interface IESLiveInteractionLinkSessionImpl : NSObject
+@property (nonatomic) q sessionID;
+@property (nonatomic) Q startSource;
+@property (nonatomic) Q endSource;
+@property (nonatomic) IESLiveInteractionLinkSessionParamsStoreageImpl paramsStoreage;
+@property (nonatomic) IESLiveInteractionLinkSessionContextStoreageImpl contextStoreage;
+@property (nonatomic) IESLiveInteractionLinkSessionTrackContextImpl trackContxt;
+@property (nonatomic) IESLiveInteractionLinkSessionBussinessContext businessContext;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)businessContext;
+- (id)contextStoreage;
+- (void)setStartSource:;
+- (void)setTrackContxt:;
+- (unsigned long long)endSource;
+- (void)endWithSource:;
+- (id)paramsStoreage;
+- (void)setBusinessContext:;
+- (void)setContextStoreage:;
+- (void)setEndSource:;
+- (void)setParamsStoreage:;
+- (unsigned long long)startSource;
+- (void)startWithSource:;
+- (id)trackContxt;
+- (void)setSessionID:;
+- (long long)sessionID;
+- (id)init;
+- (void)setup;
+- (void).cxx_destruct;
+- (void)clean;
+@end

@@ -1,0 +1,30 @@
+@interface IMDispatchTimer : NSObject
+@property (nonatomic) NSObject<OS_dispatch_source> timerSource;
+@property (nonatomic) NSDate fireDate;
+@property (nonatomic) @ userInfo;
+@property (nonatomic) double timeInterval;
+@property (nonatomic) BOOL isValid;
+@property (nonatomic) BOOL repeats;
+@property (nonatomic) @? handlerBlock;
+- (id)timerSource;
+- (void)setTimerSource:;
+- (void)setRepeats:;
+- (void)updateTimerInterval:repeats:;
+- (id)userInfo;
+- (BOOL)repeats;
+- (id)initWithQueue:interval:repeats:handlerBlock:;
+- (void)setIsValid:;
+- (id)initWithQueue:interval:repeats:userInfo:handlerBlock:;
+- (void)stop;
+- (void)setFireDate:;
+- (id)handlerBlock;
+- (void)setTimeInterval:;
+- (double)timeInterval;
+- (void)setUserInfo:;
+- (BOOL)isValid;
+- (void).cxx_destruct;
+- (void)setHandlerBlock:;
+- (id)fireDate;
+- (void)invalidate;
+- (void)fire;
+@end

@@ -1,0 +1,30 @@
+@interface TUConfiguration : NSObject
+@property (nonatomic) TUDelegateController delegateController;
+@property (nonatomic) Q announceCalls;
+@property (nonatomic) NSString conversationLinkBaseURLString;
+@property (nonatomic) NSURL conversationLinkBaseURL;
+@property (nonatomic) BOOL simulateFatalPersistentStoreError;
+@property (nonatomic) BOOL simulateInternationalCall;
+@property (nonatomic) <TUKeyValueDataSource><TUMutableKeyValueDataSource> dataSource;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (unsigned long long)announceCalls;
+- (void)setConversationLinkBaseURLString:;
+- (id)numberForKey:;
+- (id)conversationLinkBaseURL;
+- (id)initWithDataSource:;
+- (void)removeDelegate:;
+- (BOOL)simulateFatalPersistentStoreError;
+- (void)setSimulateInternationalCall:;
+- (BOOL)simulateInternationalCall;
+- (id)delegateController;
+- (void)setSimulateFatalPersistentStoreError:;
+- (id)conversationLinkBaseURLString;
+- (void)setAnnounceCalls:;
+- (id)dataSource;
+- (void)addDelegate:queue:;
+- (void).cxx_destruct;
+- (void)setConversationLinkBaseURL:;
+@end

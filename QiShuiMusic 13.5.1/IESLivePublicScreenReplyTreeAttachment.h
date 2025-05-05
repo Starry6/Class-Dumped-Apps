@@ -1,0 +1,34 @@
+@interface IESLivePublicScreenReplyTreeAttachment : NSObject
+@property (nonatomic) IESLiveMessageReplyTreeManager replyTreeManager;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) IESLivePublicScreenView publicScreenView;
+@property (nonatomic) IESLivePublicScreenContext publicScreenContext;
+@property (nonatomic) HTSEventContext trackContext;
+@property (nonatomic) @? didAttach;
+@property (nonatomic) @? didDetach;
+- (id)abilityProtocol;
+- (void)checkAndCreateReplyTreeViewWithNode:;
+- (id)didAttach;
+- (id)didDetach;
+- (void)didSetAttachingDIContext;
+- (void)highlightCellWithNode:bgView:isHighlighted:;
+- (id)publicScreenContext;
+- (id)publicScreenView;
+- (id)replyTreeManager;
+- (id)replyTreeViewWithMessage:;
+- (void)setDidAttach:;
+- (void)setDidDetach:;
+- (void)setPublicScreenContext:;
+- (void)setPublicScreenView:;
+- (void)setReplyTreeManager:;
+- (void)setTrackContext:;
+- (BOOL)shouldActive;
+- (id)trackContext;
+- (void)detach;
+- (void)attach;
+- (id)type;
+- (void).cxx_destruct;
+@end

@@ -1,0 +1,33 @@
+@interface IESLatchNativePrefetchWorker : NSObject
+@property (nonatomic) NSString business;
+@property (nonatomic) NSMutableDictionary runningRequests;
+@property (nonatomic) NSMutableDictionary memo;
+@property (nonatomic) <IESLatchTemplateOutput> latchTemplateOutput;
+@property (nonatomic) IESLatchConfiguration conf;
+@property (nonatomic) <IESLatchNativePrefetchWorkerDelegate> dataDelegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)prefetchForSchema:withVariable:;
+- (void)startNetworkRequest:completion:;
+- (id)runningRequests;
+- (BOOL)checkPageVersion:url:;
+- (void)fillMemoData:forRequest:;
+- (id)getAPIPath:;
+- (id)initWithCapability:business:dataDelegate:;
+- (id)latchTemplateOutput;
+- (void)prefetchAPI:;
+- (id)prefetchForSchema:globalProps:withVariables:event:;
+- (void)setConf:;
+- (void)setLatchTemplateOutput:;
+- (void)setRunningRequests:;
+- (id)dataDelegate;
+- (void).cxx_destruct;
+- (id)business;
+- (void)setBusiness:;
+- (id)memo;
+- (void)setMemo:;
+- (void)setDataDelegate:;
+- (id)conf;
+@end

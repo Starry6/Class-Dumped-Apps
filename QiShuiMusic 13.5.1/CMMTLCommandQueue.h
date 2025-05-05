@@ -1,0 +1,32 @@
+@interface CMMTLCommandQueue : NSObject
+@property (nonatomic) NSInteger backgroundTrackingPID;
+@property (nonatomic) Q maxCommandBufferCount;
+@property (nonatomic) Q qosLevel;
+@property (nonatomic) NSObject<OS_dispatch_queue> commitQueue;
+@property (nonatomic) BOOL commitSynchronously;
+@property (nonatomic) NSObject<OS_dispatch_queue> completionQueue;
+@property (nonatomic) BOOL disableCrossQueueHazardTracking;
+@property (nonatomic) BOOL skipRender;
+@property (nonatomic) BOOL executionEnabled;
+@property (nonatomic) BOOL isOpenGLQueue;
+@property (nonatomic) BOOL profilingEnabled;
+@property (nonatomic) BOOL StatEnabled;
+@property (nonatomic) Q StatOptions;
+@property (nonatomic) Q StatLocations;
+@property (nonatomic) NSString label;
+@property (nonatomic) <MTLDevice> device;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)respondsToSelector:;
+- (id)commandBuffer;
+- (id)initWithCMMTLDevice:maxCommandBufferCount:;
+- (id)commandBufferWithUnretainedReferences;
+- (id)initWithCMMTLDevice:descriptor:;
+- (id)initWithCMMTLDevice:;
+- (void).cxx_destruct;
+- (id)forwardingTargetForSelector:;
+- (void)forwardInvocation:;
+- (id)device;
+@end

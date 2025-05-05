@@ -1,0 +1,2 @@
+@interface RoomHighlightCommentPositionApiRoot : GPBRootObject
+@end

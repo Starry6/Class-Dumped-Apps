@@ -1,0 +1,30 @@
+@interface IESECMallFeedPlayStatusView : UIView
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UIImageView iconImageView;
+@property (nonatomic) UILabel statusLabel;
+@property (nonatomic) UIButton muteButton;
+@property (nonatomic) IESECMallListKitCellData cellModel;
+@property (nonatomic) @? muteClick;
+@property (nonatomic) BOOL isMute;
+- (void)muteButtonClicked;
+- (id)muteClick;
+- (void)setCellModel:;
+- (void)setIsMute:;
+- (void)setMuteClick:;
+- (void)updatePlayStatue:mute:;
+- (void)updateVoiceMute:;
+- (id)containerView;
+- (void)setContainerView:;
+- (id)hitTest:withEvent:;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (id)iconImageView;
+- (void)setIconImageView:;
+- (void)setupView;
+- (id)muteButton;
+- (void)setMuteButton:;
+- (id)cellModel;
+- (id)statusLabel;
+- (void)setStatusLabel:;
+- (BOOL)isMute;
+@end

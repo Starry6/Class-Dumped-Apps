@@ -1,0 +1,37 @@
+@interface QLScrubView : UIView
+@property (nonatomic) <QLScrubViewDataSource> dataSource;
+@property (nonatomic) <QLScrubViewDelegate> delegate;
+@property (nonatomic) double topOffset;
+@property (nonatomic) double bottomOffset;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setDataSource:;
+- (id)init;
+- (void)setFrame:;
+- (void)layoutSubviews;
+- (BOOL)gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:;
+- (void)setDelegate:;
+- (double)topOffset;
+- (void)setTopOffset:;
+- (id)dataSource;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)reloadThumbnails;
+- (double)bottomOffset;
+- (void)setBottomOffset:;
+- (void)panReceived:;
+- (void)tapReceived:;
+- (void)longTapReceived:;
+- (void)_notifyPageChanged;
+- (void)_removeThumbviews;
+- (void)selectPageNumber:;
+- (void)_handleSwipAtLocation:;
+- (id)_thumbnailFrameForPageAtIndex:;
+- (void)_showPageLabel;
+- (void)_updatePageLabelPosition;
+- (void)_hidePageLabel;
+- (void)_updateSelectedThumbnailView;
++ (double)defaultWidth;
+@end

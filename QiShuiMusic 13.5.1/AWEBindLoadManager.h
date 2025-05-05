@@ -1,0 +1,2 @@
+@interface AWEBindLoadManager : NSObject
+@end

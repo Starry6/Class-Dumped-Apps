@@ -1,0 +1,37 @@
+@interface MFContactsAutocompleteSearchOperation : MFContactsSearchOperation
+@property (nonatomic) BOOL includeContacts;
+@property (nonatomic) BOOL includeRecents;
+@property (nonatomic) BOOL includeSuggestions;
+@property (nonatomic) BOOL includeServers;
+@property (nonatomic) BOOL simulateResults;
+@property (nonatomic) CNAutocompleteFetchContext fetchContext;
+@property (nonatomic) CNAutocompleteStore autocompleteStore;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (void)cancel;
+- (void)main;
+- (void).cxx_destruct;
+- (BOOL)includeRecents;
+- (void)setIncludeRecents:;
+- (void)setIncludeContacts:;
+- (void)setIncludeSuggestions:;
+- (id)autocompleteStore;
+- (void)autocompleteFetch:didReceiveResults:;
+- (void)autocompleteFetch:didFailWithError:;
+- (void)autocompleteFetchDidFinish:;
+- (void)setFetchContext:;
+- (void)setAutocompleteStore:;
+- (void)configureForSearchTypes:;
+- (id)_simulatedRecipientResults;
+- (BOOL)includeContacts;
+- (BOOL)includeSuggestions;
+- (BOOL)includeServers;
+- (void)setIncludeServers:;
+- (BOOL)simulateResults;
+- (void)setSimulateResults:;
+- (id)fetchContext;
++ (id)operationWithOwner:text:taskID:autocompleteStore:;
+@end

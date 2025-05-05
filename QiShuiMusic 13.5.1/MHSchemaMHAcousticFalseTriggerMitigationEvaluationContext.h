@@ -1,0 +1,37 @@
+@interface MHSchemaMHAcousticFalseTriggerMitigationEvaluationContext : SISchemaInstrumentationMessage
+@property (nonatomic) MHSchemaMHAcousticFalseTriggerMitigationStarted startedOrChanged;
+@property (nonatomic) BOOL hasStartedOrChanged;
+@property (nonatomic) MHSchemaMHAcousticFalseTriggerMitigationScoreGenerated scoreGenerated;
+@property (nonatomic) BOOL hasScoreGenerated;
+@property (nonatomic) MHSchemaMHAcousticFalseTriggerMitigationFailed failed;
+@property (nonatomic) BOOL hasFailed;
+@property (nonatomic) NSData jsonData;
+@property (nonatomic) Q whichContextevent;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (BOOL)hasFailed;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (id)failed;
+- (BOOL)isEqual:;
+- (void)setStartedOrChanged:;
+- (id)startedOrChanged;
+- (void)setFailed:;
+- (void)setHasStartedOrChanged:;
+- (void)deleteStartedOrChanged;
+- (void)deleteFailed;
+- (unsigned long long)whichContextevent;
+- (BOOL)hasStartedOrChanged;
+- (void)setHasFailed:;
+- (void)setScoreGenerated:;
+- (id)scoreGenerated;
+- (void)deleteScoreGenerated;
+- (BOOL)hasScoreGenerated;
+- (void)setHasScoreGenerated:;
+@end

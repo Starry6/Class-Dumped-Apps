@@ -1,0 +1,32 @@
+@interface IESECRelationExtensionAreaTipView : UIView
+@property (nonatomic) UILabel bannerTitleLabel;
+@property (nonatomic) LOTAnimationView rightIconLottieView;
+@property (nonatomic) UIImageView bottomImageView;
+@property (nonatomic) Q themeType;
+@property (nonatomic) Q uiTheme;
+@property (nonatomic) UIColor titleColor;
+@property (nonatomic) NSString lottieFilePath;
+- (unsigned long long)uiTheme;
+- (id)bannerTitleLabel;
+- (id)lottieFilePath;
+- (id)p_rightIconLottieFilePath:;
+- (id)rightIconLottieView;
+- (void)scrollToPercent:;
+- (void)setBannerTitleLabel:;
+- (void)setLottieFilePath:;
+- (void)setRightIconLottieView:;
+- (void)setUiTheme:;
+- (void)switchTheme:uiTheme:;
+- (void)updateBannerTitleStyle;
+- (void)updateLottileStyle;
+- (void)updateTipText:;
+- (void)setTitleColor:;
+- (id)initWithFrame:;
+- (id)titleColor;
+- (unsigned long long)themeType;
+- (void).cxx_destruct;
+- (void)setupViews;
+- (id)bottomImageView;
+- (void)setBottomImageView:;
+- (void)setThemeType:;
+@end

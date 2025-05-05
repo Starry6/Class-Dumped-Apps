@@ -1,0 +1,33 @@
+@interface SUGSchemaSUGAggregateCounts : SISchemaInstrumentationMessage
+@property (nonatomic) I lastDayCount;
+@property (nonatomic) BOOL hasLastDayCount;
+@property (nonatomic) I lastWeekBucket;
+@property (nonatomic) BOOL hasLastWeekBucket;
+@property (nonatomic) I last28DaysBucket;
+@property (nonatomic) BOOL hasLast28DaysBucket;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)setLastDayCount:;
+- (BOOL)hasLastDayCount;
+- (void)setHasLastDayCount:;
+- (void)deleteLastDayCount;
+- (void)setLastWeekBucket:;
+- (BOOL)hasLastWeekBucket;
+- (void)setHasLastWeekBucket:;
+- (void)deleteLastWeekBucket;
+- (void)setLast28DaysBucket:;
+- (BOOL)hasLast28DaysBucket;
+- (void)setHasLast28DaysBucket:;
+- (void)deleteLast28DaysBucket;
+- (unsigned int)lastDayCount;
+- (unsigned int)lastWeekBucket;
+- (unsigned int)last28DaysBucket;
+@end

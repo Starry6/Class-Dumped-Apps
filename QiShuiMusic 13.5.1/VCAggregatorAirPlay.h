@@ -1,0 +1,37 @@
+@interface VCAggregatorAirPlay : VCAggregator
+@property (nonatomic) NSString channelSequence;
+@property (nonatomic) NSString previousChannelSequence;
+@property (nonatomic) NSString segmentName;
+- (id)segmentName;
+- (void)dealloc;
+- (void)setSegmentName:;
+- (id)channelSequence;
+- (void)reset;
+- (id)initWithDelegate:;
+- (void)processEventWithCategory:type:payload:;
+- (id)initWithDelegate:options:;
+- (void)flushCurrentSegment;
+- (id)composeSegmentReport:;
+- (id)aggregatedSegmentReport:;
+- (void)composeChannelSequenceReport:;
+- (void)composeSystemInfoReport:;
+- (void)composeReceiverReport:;
+- (void)composeSenderReport:;
+- (id)sessionFECReport;
+- (void)updateVideoFECStats:;
+- (void)processRealtimeStatsPart1:;
+- (void)processRealtimeStatsPart2:;
+- (void)processRealtimeStatsPart3:;
+- (void)processRealtimeStatsPart4:;
+- (void)processRealtimeStatsPart5:;
+- (void)processRealtimeStatsPart6:;
+- (void)processMediaCaptureRealtimeStats:;
+- (void)processRealtimeStats:;
+- (void)updateVideoStreamInfo:;
+- (void)updateSenderVideoStreamConfiguration:;
+- (void)updateReceiverVideoStreamConfiguration:;
+- (void)startNewSegment;
+- (void)setChannelSequence:;
+- (id)previousChannelSequence;
+- (void)setPreviousChannelSequence:;
+@end

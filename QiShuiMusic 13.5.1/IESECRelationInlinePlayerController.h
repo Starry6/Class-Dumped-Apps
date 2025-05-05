@@ -1,0 +1,35 @@
+@interface IESECRelationInlinePlayerController : NSObject
+@property (nonatomic) UIView maskView;
+@property (nonatomic) IESLiveVideoPlayerController player;
+@property (nonatomic) IESECRelationInlinePanelControl panelControl;
+@property (nonatomic) NSString playerTag;
+@property (nonatomic) NSString playerSubTag;
+@property (nonatomic) <IESECRelationInlinePlayerControllerDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)removeAnimation;
+- (id)panelControl;
+- (void)playWithItem:container:;
+- (void)playerController:currentPlayTime:playableTime:duration:;
+- (void)playerController:playbackStateDidChange:;
+- (id)playerSubTag;
+- (id)playerTag;
+- (void)setPanelControl:;
+- (void)setPlayerSubTag:;
+- (void)setPlayerTag:;
+- (void)setupPanelControl;
+- (void)showDanmakuViewWithDataArray:;
+- (void)showSwitchWithTypes:;
+- (id)maskView;
+- (void)setDelegate:;
+- (void)stop;
+- (id)player;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setPlayer:;
+- (void)pause;
+- (void)setMaskView:;
+- (void)clean;
+@end

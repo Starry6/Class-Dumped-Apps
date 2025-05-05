@@ -1,0 +1,36 @@
+@interface VeLivePlayerStreamData : NSObject
+@property (nonatomic) NSDictionary userSettings;
+@property (nonatomic) BOOL enableABR;
+@property (nonatomic) BOOL enableMainBackupSwitch;
+@property (nonatomic) q defaultResolution;
+@property (nonatomic) q defaultFormat;
+@property (nonatomic) q defaultProtocol;
+@property (nonatomic) NSArray mainStream;
+@property (nonatomic) NSArray backupStream;
+- (long long)defaultProtocol;
+- (id)addFormatList:streamData:;
+- (id)backupStream;
+- (void)checkStreamDataValidity;
+- (long long)defaultResolution;
+- (BOOL)enableABR;
+- (BOOL)enableMainBackupSwitch;
+- (id)generateNewDefaultFlvDegradeStreamIfNeed:;
+- (id)generatePlayerItemWithUserSettings:;
+- (id)generateResolutionData:;
+- (id)generateSdkParams:;
+- (id)getUserPropertyValue:;
+- (BOOL)hasFlvDegradeForRTMStream:resolution:;
+- (id)mainStream;
+- (void)setBackupStream:;
+- (void)setDefaultProtocol:;
+- (void)setDefaultResolution:;
+- (void)setEnableABR:;
+- (void)setEnableMainBackupSwitch:;
+- (void)setMainStream:;
+- (id)init;
+- (long long)defaultFormat;
+- (void).cxx_destruct;
+- (id)userSettings;
+- (void)setDefaultFormat:;
+- (void)setUserSettings:;
+@end

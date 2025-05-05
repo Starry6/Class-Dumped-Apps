@@ -1,0 +1,33 @@
+@interface IESECLiveStackContainerView : UIView
+@property (nonatomic) UIStackView stackView;
+@property (nonatomic) double spacing;
+@property (nonatomic) q alignment;
+@property (nonatomic) q distribution;
+@property (nonatomic) NSNumber minShowNum;
+@property (nonatomic) BOOL shouldLayoutRight;
+@property (nonatomic) @? onHideByCustomBlock;
+- (id)initWithShouldLayoutRight;
+- (id)initWithSubViews:;
+- (id)minShowNum;
+- (id)onHideByCustomBlock;
+- (void)removeAllArrangedSubviews;
+- (void)setMinShowNum:;
+- (void)setOnHideByCustomBlock:;
+- (void)setShouldLayoutRight:;
+- (void)setupWithSubViews:;
+- (BOOL)shouldLayoutRight;
+- (id)subViews;
+- (long long)distribution;
+- (void)setDistribution:;
+- (double)spacing;
+- (void)setSpacing:;
+- (void)setAlignment:;
+- (void)setStackView:;
+- (void)addArrangedSubview:;
+- (id)stackView;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (long long)alignment;
+- (void)insertArrangedSubview:atIndex:;
+- (void)removeArrangedSubview:;
+@end

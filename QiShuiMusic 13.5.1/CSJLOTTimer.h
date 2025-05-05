@@ -1,0 +1,31 @@
+@interface CSJLOTTimer : NSObject
+@property (nonatomic) CSJLOTComposition model;
+@property (nonatomic) NSObject<OS_dispatch_source> timer;
+@property (nonatomic) q currentTime;
+@property (nonatomic) q totalTime;
+@property (nonatomic) q autoTime;
+@property (nonatomic) NSString layerId;
+@property (nonatomic) <CSJLOTTimerDelegate> delegate;
+- (void)handleTimerWithFrame:withModel:;
+- (long long)autoTime;
+- (void)pauseGCDTimer;
+- (void)resumeGCDTimer;
+- (void)setAutoTime:;
+- (void)startGCDTimer;
+- (void)stopGCDTimer;
+- (void)timerFired;
+- (void)setCurrentTime:;
+- (id)model;
+- (long long)totalTime;
+- (void)setModel:;
+- (void)setDelegate:;
+- (void)setTimer:;
+- (void)setTotalTime:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)timer;
+- (long long)currentTime;
+- (id)layerId;
+- (void)setLayerId:;
+- (void)handleTimeout;
+@end

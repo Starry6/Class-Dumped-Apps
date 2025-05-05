@@ -1,0 +1,33 @@
+@interface IESLiveMultiAudioStreamLayout : NSObject
+@property (nonatomic) {CGSize=dd} canvasSize;
+@property (nonatomic) HTSInteractionStreamAppData appData;
+@property (nonatomic) Q subscene;
+@property (nonatomic) IESLiveInteractionLayout layout;
+@property (nonatomic) BOOL seiFieldsSimplified;
+@property (nonatomic) BOOL seiFieldsSimplifiedUid;
+@property (nonatomic) BOOL anchorSessionNeedFull;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)anchorSessionNeedFull;
+- (id)appDataWithUserService:;
+- (id)initWithCanvasSize:;
+- (BOOL)seiFieldsSimplified;
+- (BOOL)seiFieldsSimplifiedUid;
+- (id)seiRegionFrom:session:userService:;
+- (void)setAnchorSessionNeedFull:;
+- (void)setSeiFieldsSimplified:;
+- (void)setSeiFieldsSimplifiedUid:;
+- (void)setSubscene:;
+- (unsigned long long)subscene;
+- (void)updateLayoutOfPublisher:withSessions:withUserService:mediaConfig:;
+- (long long)viewIndexWithUser:;
+- (id)canvasSize;
+- (void)setLayout:;
+- (void)setCanvasSize:;
+- (id)layout;
+- (void).cxx_destruct;
+- (void)setAppData:;
+- (id)appData;
+@end

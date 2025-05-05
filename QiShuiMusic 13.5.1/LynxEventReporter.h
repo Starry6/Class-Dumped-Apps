@@ -1,0 +1,32 @@
+@interface LynxEventReporter : NSObject
+@property (nonatomic) NSMutableDictionary allGenericInfo;
+@property (nonatomic) NSMutableDictionary allExtraParams;
+@property (nonatomic) NSHashTable externalObserverList;
+@property (nonatomic) NSSet allowEventsOfObservers;
+@property (nonatomic) NSHashTable internalObserverList;
+- (void)addInternalEventReportObserver:;
+- (id)allExtraParams;
+- (id)allGenericInfo;
+- (id)allowEventsOfObservers;
+- (id)externalObserverList;
+- (void)handleEvent:props:instanceId:;
+- (id)internalObserverList;
+- (void)setAllExtraParams:;
+- (void)setAllGenericInfo:;
+- (void)setAllowEventsOfObservers:;
+- (void)setExternalObserverList:;
+- (void)setInternalObserverList:;
+- (id)init;
+- (void).cxx_destruct;
++ (void)addEventReportObserver:;
++ (void)clearCacheForInstanceId:;
++ (void)moveExtraParams:toInstanceId:;
++ (void)onEvent:instanceId:props:;
++ (void)onEvent:instanceId:propsBuilder:;
++ (void)putExtraParams:forInstanceId:;
++ (void)removeEventReportObserver:;
++ (void)removeGenericInfo:;
++ (void)runOnReportThread:;
++ (void)updateGenericInfo:key:instanceId:;
++ (id)sharedInstance;
+@end

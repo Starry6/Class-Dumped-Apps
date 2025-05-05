@@ -1,0 +1,37 @@
+@interface DAAction : NSObject
+@property (nonatomic) Q itemChangeType;
+@property (nonatomic) @ serverId;
+@property (nonatomic) @ instanceId;
+@property (nonatomic) @ changedItem;
+@property (nonatomic) NSInteger changeId;
+@property (nonatomic) @ forwardedAttendees;
+@property (nonatomic) @ forwardedAttendeeUUIDs;
+@property (nonatomic) BOOL ignoresGuardianRestrictions;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (id)message;
+- (void).cxx_destruct;
+- (id)instanceId;
+- (id)description;
+- (BOOL)ignoresGuardianRestrictions;
+- (BOOL)isEqual:;
+- (void)setIgnoresGuardianRestrictions:;
+- (unsigned long long)itemChangeType;
+- (id)changedItem;
+- (id)initWithItemChangeType:changedItem:serverId:;
+- (id)serverId;
+- (id)initWithItemChangeType:changedItem:serverId:instanceId:;
+- (id)stringForItemChangeType:;
+- (void)setItemChangeType:;
+- (void)setServerId:;
+- (void)setInstanceId:;
+- (void)_setChangedItem:;
+- (int)changeId;
+- (void)setChangeId:;
+- (id)forwardedAttendees;
+- (void)setForwardedAttendees:;
+- (id)forwardedAttendeeUUIDs;
+- (void)setForwardedAttendeeUUIDs:;
++ (BOOL)supportsSecureCoding;
+@end

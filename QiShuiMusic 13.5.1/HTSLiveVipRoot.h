@@ -1,0 +1,2 @@
+@interface HTSLiveVipRoot : GPBRootObject
+@end

@@ -1,0 +1,35 @@
+@interface BSUIEmojiLabelView : UIView
+@property (nonatomic) UIFont font;
+@property (nonatomic) NSString text;
+@property (nonatomic) UIColor textColor;
+@property (nonatomic) q numberOfLines;
+@property (nonatomic) q textAlignment;
+@property (nonatomic) q lineBreakMode;
+@property (nonatomic) BOOL adjustsFontSizeToFitWidth;
+@property (nonatomic) BOOL _textAlignmentFollowsWritingDirection;
+@property (nonatomic) UILabel contentLabel;
+- (void)mt_applyVisualStyling:;
+- (void)mt_removeAllVisualStyling;
+- (void)setLineBreakMode:;
+- (void)setText:;
+- (void)setFont:;
+- (double)_baselineOffsetFromBottom;
+- (long long)lineBreakMode;
+- (id)initWithFrame:;
+- (void)setTextColor:;
+- (id)sizeThatFits:;
+- (void)setAdjustsFontSizeToFitWidth:;
+- (void).cxx_destruct;
+- (id)font;
+- (id)textColor;
+- (BOOL)adjustsFontSizeToFitWidth;
+- (long long)textAlignment;
+- (void)setNumberOfLines:;
+- (void)setTextAlignment:;
+- (long long)numberOfLines;
+- (id)text;
+- (void)_setTextAlignmentFollowsWritingDirection:;
+- (BOOL)_textAlignmentFollowsWritingDirection;
+- (double)_firstLineBaselineOffsetFromBoundsTop;
+- (id)contentLabel;
+@end

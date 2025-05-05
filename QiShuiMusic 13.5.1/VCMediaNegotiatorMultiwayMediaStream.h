@@ -1,0 +1,34 @@
+@interface VCMediaNegotiatorMultiwayMediaStream : NSObject
+@property (nonatomic) I ssrc;
+@property (nonatomic) I maxNetworkBitrate;
+@property (nonatomic) I maxMediaBitrate;
+@property (nonatomic) I maxPacketsPerSecond;
+@property (nonatomic) BOOL isSubstream;
+@property (nonatomic) S streamID;
+@property (nonatomic) I qualityIndex;
+@property (nonatomic) BOOL hasRepairedStreamID;
+@property (nonatomic) S repairedStreamID;
+@property (nonatomic) I repairedMaxNetworkBitrate;
+- (unsigned short)streamID;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setStreamID:;
+- (void)setMaxNetworkBitrate:;
+- (void)setMaxMediaBitrate:;
+- (void)setMaxPacketsPerSecond:;
+- (void)setRepairedStreamID:;
+- (void)setHasRepairedStreamID:;
+- (BOOL)hasRepairedStreamID;
+- (void)setRepairedMaxNetworkBitrate:;
+- (unsigned int)ssrc;
+- (void)setSsrc:;
+- (unsigned int)maxNetworkBitrate;
+- (unsigned int)qualityIndex;
+- (void)setQualityIndex:;
+- (unsigned int)maxMediaBitrate;
+- (unsigned int)maxPacketsPerSecond;
+- (unsigned short)repairedStreamID;
+- (unsigned int)repairedMaxNetworkBitrate;
+- (BOOL)isSubstream;
+- (void)setIsSubstream:;
+@end

@@ -1,0 +1,2 @@
+@interface BRDSIDString : NSString
+@end

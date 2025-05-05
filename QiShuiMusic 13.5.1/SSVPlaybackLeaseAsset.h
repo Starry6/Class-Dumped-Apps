@@ -1,0 +1,2 @@
+@interface SSVPlaybackLeaseAsset : SSVPlaybackAsset
+@end

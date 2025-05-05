@@ -1,0 +1,33 @@
+@interface PLPhotoBakedThumbnails : NSObject
+@property (nonatomic) S format;
+@property (nonatomic) NSMutableDictionary options;
+@property (nonatomic) NSData optionsData;
+@property (nonatomic) {CGSize=dd} size;
+@property (nonatomic) NSInteger bitsPerComponent;
+@property (nonatomic) NSInteger bytesPerPixel;
+@property (nonatomic) I bitmapInfo;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} imageRect;
+- (unsigned short)format;
+- (id)serializedData;
+- (id)options;
+- (void).cxx_destruct;
+- (id)description;
+- (unsigned long long)count;
+- (BOOL)saveToFile:;
+- (id)size;
+- (int)bitsPerComponent;
+- (int)bytesPerPixel;
+- (id)initWithData:format:readOnly:;
+- (id)initWithContentsOfFile:format:readOnly:;
+- (id)initWithImages:format:options:delegate:;
+- (id)thumbnailDataAtIndex:;
+- (char *)thumbnailBytesAtIndex:;
+- (id)thumbnailImageAtIndex:;
+- (id)optionsData;
+- (unsigned int)bitmapInfo;
+- (id)imageRect;
+- (BOOL)writeBorderedThumbnailOfImage:toBuffer:orientation:format:formatInfo:delegate:;
+- (id)_thumbnailData;
++ (id)thumbnailsWithContentsOfFile:format:;
++ (BOOL)_transformForImage:isCropped:captureOrientation:sizeInOut:contextSizeOut:transformOut:;
+@end

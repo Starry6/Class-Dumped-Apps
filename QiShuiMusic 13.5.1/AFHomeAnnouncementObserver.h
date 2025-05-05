@@ -1,0 +1,31 @@
+@interface AFHomeAnnouncementObserver : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)_enumerateListenersUsingBlock:;
+- (void)removeListener:;
+- (id)initWithInstanceContext:;
+- (void)addListener:;
+- (id)init;
+- (void)dealloc;
+- (void)connectionInterrupted;
+- (void)connectionInvalidated;
+- (void)_beginGrouping;
+- (void)_updateSnapshot:;
+- (void)_handleNotifyStateChangeFrom:to:;
+- (void)_tearDown;
+- (void)_endGrouping;
+- (void).cxx_destruct;
+- (void)_invalidateLocalPlaybackSession;
+- (void)_updateLastPlayedAnnouncement:;
+- (void)_setUp;
+- (id)_localPlaybackSession:;
+- (void)notifyObserver:didChangeStateFrom:to:;
+- (void)getStateWithCompletion:;
+- (void)_fetchStateAndLastPlayedAnnouncementForReason:completion:;
+- (void)_updateState:;
+- (void)notifyObserver:didReceiveNotificationWithToken:;
+- (void)invalidate;
+- (void)getSnapshotWithCompletion:;
+@end

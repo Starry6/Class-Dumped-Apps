@@ -1,0 +1,32 @@
+@interface IESLiveVSGiftReformSectionGiftListCell : UIView
+@property (nonatomic) UIView contentView;
+@property (nonatomic) UIView collectionViewMaskContainer;
+@property (nonatomic) IESLiveGradientView maskView;
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) UIImageView emptyImageView;
+@property (nonatomic) <IESLiveVSGiftSectionItem> item;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)p_hideEmptyView;
+- (void)p_showEmptyView;
+- (void)setCollectionViewMaskContainer:;
+- (id)collectionViewMaskContainer;
+- (id)emptyImageView;
+- (void)p_reloadData;
+- (void)scrollToYOffset:withAnimation:;
+- (void)scrollVerticalToRowIndex:withAnimation:isPreSelect:;
+- (void)setEmptyImageView:;
+- (id)item;
+- (id)contentView;
+- (id)maskView;
+- (void)updateWithItem:;
+- (id)initWithFrame:;
+- (void)setCollectionView:;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (id)collectionView;
+- (void)setMaskView:;
+- (void)setupUI;
+@end

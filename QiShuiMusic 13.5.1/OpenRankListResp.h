@@ -1,0 +1,2 @@
+@interface OpenRankListResp : BaseResp
+@end

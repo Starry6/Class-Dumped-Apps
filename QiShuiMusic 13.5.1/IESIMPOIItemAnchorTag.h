@@ -1,0 +1,31 @@
+@interface IESIMPOIItemAnchorTag : MTLModel
+@property (nonatomic) NSDictionary poi_cachedDictionary;
+@property (nonatomic) IESIMURLModel poi_cachedURL;
+@property (nonatomic) IESIMPOIItemAnchorTagServiceIconModel poi_cachedContentModel;
+@property (nonatomic) NSString content;
+@property (nonatomic) Q type;
+@property (nonatomic) q priority;
+@property (nonatomic) Q style;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)poi_URLModel;
+- (id)poi_cachedContentModel;
+- (id)poi_cachedDictionary;
+- (id)poi_cachedURL;
+- (id)poi_serviceTag;
+- (void)setPoi_cachedContentModel:;
+- (void)setPoi_cachedDictionary:;
+- (void)setPoi_cachedURL:;
+- (id)content;
+- (void)setContent:;
+- (void)setPriority:;
+- (void)setType:;
+- (void)setStyle:;
+- (unsigned long long)type;
+- (void).cxx_destruct;
+- (unsigned long long)style;
+- (long long)priority;
++ (id)JSONKeyPathsByPropertyKey;
+@end

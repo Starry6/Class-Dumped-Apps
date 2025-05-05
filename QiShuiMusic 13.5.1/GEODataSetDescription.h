@@ -1,0 +1,31 @@
+@interface GEODataSetDescription : PBCodable
+@property (nonatomic) BOOL hasIdentifier;
+@property (nonatomic) I identifier;
+@property (nonatomic) BOOL hasDataSetDescription;
+@property (nonatomic) NSString dataSetDescription;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (unsigned int)identifier;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (BOOL)hasIdentifier;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void)setHasIdentifier:;
+- (id)dataSetDescription;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (BOOL)hasDataSetDescription;
+- (void)setDataSetDescription:;
+- (id)dictionaryRepresentation;
+- (void)setIdentifier:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
++ (BOOL)isValid:;
+@end

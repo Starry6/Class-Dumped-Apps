@@ -1,0 +1,37 @@
+@interface PLPhotoLibraryPathManagerUBF : PLPhotoLibraryPathManagerCore
+- (id)initWithLibraryURL:bundleScope:;
+- (id)urlWithIdentifier:;
+- (id)_externalDirectoryWithBundleIdentifier:createIfNeeded:;
+- (BOOL)ensureFileProviderSyncExclusionAttributeIsSetWithError:;
+- (id)readOnlyUrlWithIdentifier:;
+- (id)extendedPathsWithError:;
+- (id)assetAbbreviatedMetadataDirectoryForDirectory:type:bundleScope:;
+- (void)setExtendedAttributesWithIdentifier:;
+- (id)pathToAssetsToAlbumsMapping;
+- (id)corePathsWithError:directDatabaseAccess:limitedLibrary:;
+- (id)internalDirectoryWithSubType:additionalPathComponents:;
+- (BOOL)updateTimeMachineExclusionAttributeForExcludePath:error:;
+- (id)basePrivateDirectoryPath;
+- (id)photosDatabasePath;
+- (id)externalDirectoryWithSubType:leafType:additionalPathComponents:;
+- (id)photoDirectoryWithType:leafType:additionalPathComponents:;
+- (id)privateCacheDirectoryWithSubType:;
+- (id)privateDirectoryWithSubType:leafType:additionalPathComponents:;
+- (id)pathsForClientAccess:;
+- (BOOL)isDeviceRestoreSupported;
+- (void)enumerateBundleScopesWithBlock:;
+- (BOOL)shouldUseFileIdentifierForBundleScope:;
+- (BOOL)createPathsForNewLibrariesWithError:;
+- (id)addToPath:leafType:additionalPathComponents:;
+- (void).cxx_destruct;
+- (id)assetMainFilePathWithDirectory:filename:bundleScope:;
+- (id)syncInfoPath;
+- (id)convertPhotoLibraryPathType:;
+- (id)pathsForExternalWriters;
+- (void)obtainAccessAndWaitWithFileWithIdentifier:mode:toURLWithHandler:;
+- (unsigned char)photoLibraryPathTypeForBundleScope:;
+- (void)setExtendedAttributesWithIdentifier:andURL:;
+- (id)pathsForPermissionCheck;
+- (id)_scopedInternalPathManagerWithBundleScope:;
++ (id)allPhotosPathsOnThisDevice;
+@end

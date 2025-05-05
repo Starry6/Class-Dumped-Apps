@@ -1,0 +1,31 @@
+@interface AMapSegment : AMapSearchObject
+@property (nonatomic) AMapWalking walking;
+@property (nonatomic) NSArray buslines;
+@property (nonatomic) AMapTaxi taxi;
+@property (nonatomic) AMapRailway railway;
+@property (nonatomic) NSString enterName;
+@property (nonatomic) AMapGeoPoint enterLocation;
+@property (nonatomic) NSString exitName;
+@property (nonatomic) AMapGeoPoint exitLocation;
+- (BOOL)ajo_validateValue:forKey:error:;
+- (id)railway;
+- (id)buslines;
+- (id)enterName;
+- (id)exitName;
+- (void)setBuslines:;
+- (void)setEnterLocation:;
+- (void)setEnterName:;
+- (void)setExitLocation:;
+- (void)setExitName:;
+- (void)setRailway:;
+- (void)setTaxi:;
+- (id)taxi;
+- (id)init;
+- (id)walking;
+- (void).cxx_destruct;
+- (void)setWalking:;
+- (id)enterLocation;
+- (id)exitLocation;
++ (id)ajo_arrayClassMapping;
++ (id)ajo_mapping;
+@end

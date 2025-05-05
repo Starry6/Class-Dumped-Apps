@@ -1,0 +1,2 @@
+@interface EspressoOJBC : NSObject
+@end

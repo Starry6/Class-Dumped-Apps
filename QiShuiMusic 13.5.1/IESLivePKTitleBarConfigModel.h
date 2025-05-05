@@ -1,0 +1,31 @@
+@interface IESLivePKTitleBarConfigModel : NSObject
+@property (nonatomic) NSArray iconImageURLList;
+@property (nonatomic) NSArray preIconImageURLList;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString schemaURL;
+@property (nonatomic) NSNumber iconHeight;
+@property (nonatomic) NSNumber iconWidth;
+@property (nonatomic) NSNumber preIconHeight;
+@property (nonatomic) NSNumber preIconWidth;
+@property (nonatomic) NSArray backgroundImageURLList;
+- (id)backgroundImageURLList;
+- (id)iconImageURLList;
+- (id)preIconHeight;
+- (id)preIconImageURLList;
+- (id)preIconWidth;
+- (id)schemaURL;
+- (void)setBackgroundImageURLList:;
+- (void)setIconImageURLList:;
+- (void)setPreIconHeight:;
+- (void)setPreIconImageURLList:;
+- (void)setPreIconWidth:;
+- (void)setSchemaURL:;
+- (id)initWithConfig:;
+- (id)iconWidth;
+- (void)setTitle:;
+- (id)title;
+- (void).cxx_destruct;
+- (id)iconHeight;
+- (void)setIconWidth:;
+- (void)setIconHeight:;
+@end

@@ -1,0 +1,38 @@
+@interface MPSImageGuidedFilter : MPSKernel
+@property (nonatomic) BOOL rescaleCoefficients;
+@property (nonatomic) BOOL reconstructionCoefficientsSampleBicubic;
+@property (nonatomic) Q kernelDiameter;
+@property (nonatomic) float epsilon;
+@property (nonatomic) float reconstructScale;
+@property (nonatomic) float reconstructOffset;
+- (id)initWithCoder:device:;
+- (id)copyWithZone:device:;
+- (void)dealloc;
+- (float)reconstructOffset;
+- (void)encodeReconstructionInternalToCommandEncoder:commandBuffer:guidanceTexture:coefficientsTextureA:coefficientsTextureB:destinationTexture:;
+- (void)encodeRegressionToCommandBuffer:sourceTexture:guidanceTexture:weightsTexture:destinationCoefficientsTexture:;
+- (void)encodeReconstructionToCommandEncoder:commandBuffer:guidanceTexture:coefficientsTexture:destinationTexture:;
+- (void)encodeRegressionInternalToCommandEncoder:commandBuffer:sourceTexture:guidanceTexture:weightsTexture:destinationCoefficientsTextureA:destinationCoefficientsTextureB:;
+- (void)encodeReconstructionToCommandBuffer:guidanceTexture:coefficientsTexture:destinationTexture:;
+- (void)setEpsilon:;
+- (void)encodeReconstructionInternalToCommandEncoder:commandBuffer:guidanceTexture:coefficientsTexture:destinationTexture:;
+- (void)setReconstructScale:;
+- (float)epsilon;
+- (void)setRescaleCoefficients:;
+- (void)encodeWithCoder:;
+- (void)setReconstructionCoefficientsSampleBicubic:;
+- (void)initFilterInfoWithDevice:;
+- (float)reconstructScale;
+- (void)encodeRegressionToCommandBuffer:sourceTexture:guidanceTexture:weightsTexture:destinationCoefficientsTextureA:destinationCoefficientsTextureB:;
+- (void)encodeReconstructionToCommandBuffer:guidanceTexture:coefficientsTextureA:coefficientsTextureB:destinationTexture:;
+- (id)initWithDevice:kernelDiameter:;
+- (BOOL)reconstructionCoefficientsSampleBicubic;
+- (void)encodeReconstructionToCommandEncoder:commandBuffer:guidanceTexture:coefficientsTextureA:coefficientsTextureB:destinationTexture:;
+- (void)encodeRegressionToCommandEncoder:commandBuffer:sourceTexture:guidanceTexture:weightsTexture:destinationCoefficientsTexture:;
+- (void)setReconstructOffset:;
+- (BOOL)rescaleCoefficients;
+- (void)encodeRegressionInternalToCommandEncoder:commandBuffer:sourceTexture:guidanceTexture:weightsTexture:destinationCoefficientsTexture:;
+- (void)encodeRegressionToCommandEncoder:commandBuffer:sourceTexture:guidanceTexture:weightsTexture:destinationCoefficientsTextureA:destinationCoefficientsTextureB:;
+- (unsigned long long)kernelDiameter;
++ (id)libraryInfo:;
+@end

@@ -1,0 +1,33 @@
+@interface ORCHSchemaORCHExecutionRequestReceived : SISchemaInstrumentationMessage
+@property (nonatomic) NSInteger preExecutionDecision;
+@property (nonatomic) BOOL hasPreExecutionDecision;
+@property (nonatomic) BOOL executionForRSKE;
+@property (nonatomic) BOOL hasExecutionForRSKE;
+@property (nonatomic) NSInteger commandSource;
+@property (nonatomic) BOOL hasCommandSource;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)setPreExecutionDecision:;
+- (BOOL)hasPreExecutionDecision;
+- (void)setHasPreExecutionDecision:;
+- (void)deletePreExecutionDecision;
+- (void)setExecutionForRSKE:;
+- (BOOL)hasExecutionForRSKE;
+- (void)setHasExecutionForRSKE:;
+- (void)deleteExecutionForRSKE;
+- (void)setCommandSource:;
+- (BOOL)hasCommandSource;
+- (void)setHasCommandSource:;
+- (void)deleteCommandSource;
+- (int)preExecutionDecision;
+- (BOOL)executionForRSKE;
+- (int)commandSource;
+@end

@@ -1,0 +1,30 @@
+@interface IESECLiveAnchorAuthorGoodsListExtraModel : MTLModel
+@property (nonatomic) NSString emptyShopNotice;
+@property (nonatomic) NSString emptyShopNoticeDetail;
+@property (nonatomic) NSString shopGuideText;
+@property (nonatomic) NSString shopGuideURL;
+@property (nonatomic) NSString hasShield;
+@property (nonatomic) NSString shieldTitle;
+@property (nonatomic) NSArray shieldNotice;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)emptyShopNotice;
+- (void)setShieldTitle:;
+- (id)emptyShopNoticeDetail;
+- (void)setEmptyShopNotice:;
+- (void)setEmptyShopNoticeDetail:;
+- (void)setHasShield:;
+- (void)setShieldNotice:;
+- (void)setShopGuideText:;
+- (void)setShopGuideURL:;
+- (id)shieldNotice;
+- (id)shieldTitle;
+- (id)shopGuideText;
+- (id)shopGuideURL;
+- (void).cxx_destruct;
+- (id)hasShield;
++ (id)shieldNoticeJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

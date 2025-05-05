@@ -1,0 +1,35 @@
+@interface BUCacheConfiguration : NSObject
+@property (nonatomic) NSLock cacheFragmentsLock;
+@property (nonatomic) NSURL url;
+@property (nonatomic) float version;
+@property (nonatomic) NSString filePath;
+@property (nonatomic) NSArray cacheFragments;
+@property (nonatomic) BUContentInfo contentInfo;
+@property (nonatomic) float progress;
+@property (nonatomic) q downloadedBytes;
+- (void)setContentInfo:;
+- (void)addCacheFragment:;
+- (void)addDownloadedBytes:spent:;
+- (id)cacheFragments;
+- (id)cacheFragmentsLock;
+- (id)contentInfo;
+- (void)setCacheFragments:;
+- (void)setCacheFragmentsLock:;
+- (id)unionStickyFragment:range2:;
+- (id)filePath;
+- (id)url;
+- (id)init;
+- (void)save;
+- (void)setVersion:;
+- (float)version;
+- (void)setFilePath:;
+- (id)initWithCoder:;
+- (void)setUrl:;
+- (float)progress;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (long long)downloadedBytes;
++ (id)configurationFilePathForFilePath:;
++ (id)configurationWithMP4FilePath:downloadURL:;
+@end

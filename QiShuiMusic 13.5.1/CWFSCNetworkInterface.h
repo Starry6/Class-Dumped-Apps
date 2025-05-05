@@ -1,0 +1,31 @@
+@interface CWFSCNetworkInterface : NSObject
+@property (nonatomic) NSString interfaceName;
+@property (nonatomic) NSString hardwareAddress;
+@property (nonatomic) @? eventHandler;
+- (void)startEventMonitoring;
+- (id)IPv6PrefixLengths;
+- (id)initWithInterfaceName:;
+- (id)IPv6Addresses;
+- (void)restartEventMonitoring;
+- (id)__IPv4StateConfig;
+- (id)IPv4Addresses;
+- (id)__IPv6StateConfig;
+- (id)init;
+- (void)dealloc;
+- (void)stopEventMonitoring;
+- (BOOL)isMonitoringEvents;
+- (id)IPv6Flags;
+- (void)__startEventMonitoring;
+- (void)setEventHandler:;
+- (id)airPortStateConfiguration;
+- (id)airPortSetupConfiguration;
+- (id)IPv4SubnetMasks;
+- (BOOL)isLinkActive;
+- (id)eventHandler;
+- (id)__networkInterfaceHardwareAddress;
+- (void).cxx_destruct;
+- (id)IPv4BroadcastAddresses;
+- (id)interfaceName;
+- (id)hardwareAddress;
+- (id)__linkStateConfig;
+@end

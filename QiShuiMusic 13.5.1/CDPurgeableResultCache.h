@@ -1,0 +1,33 @@
+@interface CDPurgeableResultCache : NSObject
+@property (nonatomic) CDRecentInfo recentPurgeableResults;
+@property (nonatomic) NSObject<OS_dispatch_queue> queue;
+- (BOOL)isStale;
+- (BOOL)hasInvalids;
+- (BOOL)isEmpty;
+- (BOOL)hasSnapshotForVolume:;
+- (void)log;
+- (id)servicesForVolume:;
+- (id)recentInfoForVolume:atUrgency:validateResults:;
+- (id)_recentPurgeableTotals:validateResults:;
+- (id)recentInfoForVolumes:atUrgency:;
+- (id)initEmpty;
+- (BOOL)isStaleForVolume:;
+- (id)bsdDiskForVolume:;
+- (void)setRecentPurgeableResults:;
+- (long long)recentStateForVolume:;
+- (id)recentInfoForVolume:atUrgency:;
+- (id)thresholdsForVolume:;
+- (id)recentPurgeableTotals:;
+- (void).cxx_destruct;
+- (BOOL)isInvalidForVolume:;
+- (id)recentPurgeableResults;
+- (void)setQueue:;
+- (void)absorbRecentInfo:;
+- (id)recentInfoForVolumes:atUrgency:validateResults:targetVolume:;
+- (id)queue;
+- (void)keepUpToDate:;
+- (void)invalidateAllForgettingPushers:;
+- (void)updateRecentVolumeInfo:;
++ (id)sharedPurgeableResultsCache;
++ (id)fetchVolumeWithPath:;
+@end

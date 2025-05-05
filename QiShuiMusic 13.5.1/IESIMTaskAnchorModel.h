@@ -1,0 +1,33 @@
+@interface IESIMTaskAnchorModel : MTLModel
+@property (nonatomic) NSString anchorID;
+@property (nonatomic) NSString anchorContent;
+@property (nonatomic) q anchorType;
+@property (nonatomic) IESIMURLModel icon;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString openURL;
+@property (nonatomic) NSString webURL;
+@property (nonatomic) NSString extra;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)anchorContent;
+- (id)anchorID;
+- (void)setAnchorContent:;
+- (void)setAnchorID:;
+- (void)setExtra:;
+- (void)setOpenURL:;
+- (id)extra;
+- (long long)anchorType;
+- (id)icon;
+- (void)setTitle:;
+- (id)title;
+- (void)setIcon:;
+- (void).cxx_destruct;
+- (id)webURL;
+- (void)setWebURL:;
+- (id)openURL;
+- (void)setAnchorType:;
++ (id)iconJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

@@ -1,0 +1,2 @@
+@interface SAException : NSException
+@end

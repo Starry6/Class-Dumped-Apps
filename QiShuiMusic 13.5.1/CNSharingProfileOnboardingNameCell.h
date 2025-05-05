@@ -1,0 +1,35 @@
+@interface CNSharingProfileOnboardingNameCell : UITableViewCell
+@property (nonatomic) UITextField givenNameField;
+@property (nonatomic) UITextField familyNameField;
+@property (nonatomic) UIView fakeSeparator;
+@property (nonatomic) UIImageView avatarImageView;
+@property (nonatomic) q nameOrder;
+@property (nonatomic) UIImage avatarImage;
+@property (nonatomic) NSString givenName;
+@property (nonatomic) NSString familyName;
+- (id)givenName;
+- (id)initWithStyle:reuseIdentifier:;
+- (void)setFamilyName:;
+- (double)separatorHeight;
+- (void)layoutSubviews;
+- (id)familyName;
+- (void)setGivenName:;
+- (void)prepareForReuse;
+- (long long)nameOrder;
+- (void).cxx_destruct;
+- (id)textFieldForIndex:;
+- (void)setNameOrder:;
+- (id)givenNameField;
+- (void)setGivenNameField:;
+- (id)familyNameField;
+- (void)setFamilyNameField:;
+- (void)setAvatarImage:;
+- (void)setGivenNameField:familyNameField:;
+- (id)avatarImage;
+- (id)fakeSeparator;
+- (void)setFakeSeparator:;
+- (id)avatarImageView;
+- (void)setAvatarImageView:;
++ (id)cellIdentifier;
++ (double)desiredMinimumCellHeight;
+@end

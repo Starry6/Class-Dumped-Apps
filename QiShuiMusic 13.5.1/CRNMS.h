@@ -1,0 +1,21 @@
+@interface CRNMS : NSObject
+- (void).cxx_destruct;
+- (id).cxx_construct;
+- (id)initForRevision:;
+- (id)initWithNMSMethodType:NMSScoreType:;
+- (BOOL)addTextDetectorQuadFeatures:withInputSize:andScoreMap:options:;
+- (BOOL)addTextDetectorQuadFeatures:withInputSize:scoreMap:andScoreMapScaleFactor:options:;
+- (BOOL)addTextDetectorQuadFeatures:withInputSize:scoreMap:scoreMapScaleFactor:andTileRects:options:;
+- (BOOL)preprocessScoreMaps;
+- (id)generateConsolidatedTextFeatures:;
+- (id)generateConsolidatedTextFeatures:withScaleIds:;
+- (unsigned long long)convertSubTextFeatures:toRects:;
+- (BOOL)buildRectForest:fromTextDetectorQuadFeatures:forestFeatureType:withInputSize:scoreMap:andScoreMapScaleFactor:options:;
+- (BOOL)buildRectForest:fromTextDetectorQuadFeatures:forestFeatureType:withInputSize:scoreMap:scoreMapScaleFactor:andTileRects:options:;
+- (void)fillTextFeature:withRectDatum:;
+- (id)getTextFeatureFromQuadAngleDatum:;
+- (id)buildTextFeaturesFromRectForest:byEdge:options:;
+- (void)fillRectForestDatum:asDimType:withCGRect:;
+- (void)fillRectForestDatum:asDimType:withQuad:andDimType:;
+- (void)fillRectForestDatum:asDimType:withCRTextDetectorQuad:andInputSize:;
+@end

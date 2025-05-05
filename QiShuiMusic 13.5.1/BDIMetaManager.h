@@ -1,0 +1,38 @@
+@interface BDIMetaManager : NSObject
+@property (nonatomic) NSNumber predefine_ab_open;
+@property (nonatomic) NSMutableDictionary bidModels;
+@property (nonatomic) NSMutableDictionary cacheJSFilePath;
+@property (nonatomic) NSLock lock;
+@property (nonatomic) NSObject<OS_dispatch_queue> queue;
+- (BOOL)validate:model:;
+- (id)cacheJSFilePath;
+- (id)_getPredefineJSFiles:matchRules:isBuiltin:bid:;
+- (void)_predefineMeta:bid:;
+- (id)bidModels;
+- (id)getMatchRules:withKey:;
+- (id)getPredefineJsFiles:bid:;
+- (void)initGeckoAsset;
+- (void)initInnerAsset;
+- (void)loadJSPath:sync:builtin:bid:completion:;
+- (void)predefine:bid:;
+- (id)predefine_ab_open;
+- (void)readMetaFile:bid:;
+- (void)sdkSessionLaunch;
+- (void)setBidModels:;
+- (void)setCacheJSFilePath:;
+- (void)setPredefine_ab_open:;
+- (void)setupABOpen;
+- (BOOL)shouldBanBuiltin;
+- (BOOL)shouldUseAsync;
+- (BOOL)shouldUsePredefine;
+- (id)tryGetModelFromBid:;
+- (BOOL)useBuiltin:;
+- (id)init;
+- (id)fromString:;
+- (id)lock;
+- (void).cxx_destruct;
+- (void)setQueue:;
+- (id)queue;
+- (void)setLock:;
++ (id)sharedInstance;
+@end

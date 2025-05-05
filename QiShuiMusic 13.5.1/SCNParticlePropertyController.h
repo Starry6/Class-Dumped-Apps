@@ -1,0 +1,33 @@
+@interface SCNParticlePropertyController : NSObject
+@property (nonatomic) CAAnimation animation;
+@property (nonatomic) q inputMode;
+@property (nonatomic) double inputScale;
+@property (nonatomic) double inputBias;
+@property (nonatomic) SCNNode inputOrigin;
+@property (nonatomic) NSString inputProperty;
+- (void)setInputMode:;
+- (long long)inputMode;
+- (id)init;
+- (void)dealloc;
+- (id)copy;
+- (double)inputBias;
+- (double)inputScale;
+- (void)setAnimation:;
+- (id)initWithCoder:;
+- (void)setInputScale:;
+- (void)encodeWithCoder:;
+- (void)setInputBias:;
+- (id)animation;
+- (id)copyWithZone:;
+- (id)inputOrigin;
+- (void)setInputOrigin:;
+- (id)c3dAnimation;
+- (void)setC3dAnimation:;
+- (id)inputProperty;
+- (void)setInputProperty:;
+- (void)_customEncodingOfSCNParticlePropertyController:;
+- (void)_customDecodingOfSCNParticlePropertyController:;
++ (BOOL)supportsSecureCoding;
++ (id)particlePropertyControllerWithAnimation:;
++ (id)controllerWithAnimation:;
+@end

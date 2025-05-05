@@ -1,0 +1,30 @@
+@interface GEOTileSetUsage : PBCodable
+@property (nonatomic) BOOL hasStyle;
+@property (nonatomic) NSInteger style;
+@property (nonatomic) BOOL hasCount;
+@property (nonatomic) I count;
+- (void)setCount:;
+- (void)readAll:;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)styleAsString:;
+- (int)StringAsStyle:;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (void)setStyle:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (int)style;
+- (unsigned int)count;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setHasStyle:;
+- (BOOL)hasStyle;
+- (void)setHasCount:;
+- (BOOL)hasCount;
++ (BOOL)isValid:;
+@end

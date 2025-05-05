@@ -1,0 +1,2 @@
+@interface NSPPrivateAccessTokenCache : NSObject
+@end

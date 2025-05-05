@@ -1,0 +1,37 @@
+@interface TLToneStoreDownload : NSObject
+@property (nonatomic) NSString name;
+@property (nonatomic) NSString albumTitle;
+@property (nonatomic) NSString artistName;
+@property (nonatomic) double duration;
+@property (nonatomic) NSString genreName;
+@property (nonatomic) BOOL ringtone;
+@property (nonatomic) Q storeItemIdentifier;
+@property (nonatomic) float downloadProgress;
+@property (nonatomic) NSString toneIdentifier;
+@property (nonatomic) NSString identifier;
+- (float)downloadProgress;
+- (id)artistName;
+- (void)_setName:;
+- (id)init;
+- (void)dealloc;
+- (unsigned long long)storeItemIdentifier;
+- (void)_setDuration:;
+- (id)identifier;
+- (unsigned long long)hash;
+- (id)toneIdentifier;
+- (void).cxx_destruct;
+- (id)description;
+- (id)name;
+- (double)duration;
+- (BOOL)isEqual:;
+- (id)albumTitle;
+- (id)genreName;
+- (void)_setArtistName:;
+- (void)_setStoreItemIdentifier:;
+- (BOOL)isRingtone;
+- (void)_setAlbumTitle:;
+- (void)_setGenreName:;
+- (void)_setRingtone:;
+- (void)_setDownloadProgress:;
+- (void)_setToneIdentifier:;
+@end

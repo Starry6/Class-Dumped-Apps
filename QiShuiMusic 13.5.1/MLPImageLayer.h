@@ -1,0 +1,31 @@
+@interface MLPImageLayer : MLPLayer
+@property (nonatomic) NSArray inputToSecondKernel;
+@property (nonatomic) NSArray inputToFirstKernel;
+@property (nonatomic) NSArray primaryCurrentState;
+@property (nonatomic) NSArray secondaryCurrentState;
+@property (nonatomic) NSMutableDictionary inputImagesToSecondKernel;
+@property (nonatomic) NSMutableDictionary inputImagesToFirstKernel;
+@property (nonatomic) NSMutableDictionary primaryCurrentStates;
+@property (nonatomic) NSMutableDictionary secondaryCurrentStates;
+- (void).cxx_destruct;
+- (id)initWithLayerType:name:neuronType:neuronParams:;
+- (id)initWithLayerType:name:parameters:;
+- (void)allocateInputDictionaries;
+- (void)updatePrimaryCurrentState:index:inference:;
+- (id)inputToSecondKernel;
+- (id)inputToFirstKernel;
+- (id)primaryCurrentState;
+- (id)secondaryCurrentState;
+- (void)updateInputToFirstKernel:inference:;
+- (void)updateInputToFirstKernel:index:inference:;
+- (void)updateInputToSecondKernel:inference:;
+- (void)updateInputToSecondKernel:index:inference:;
+- (void)updatePrimaryCurrentState:inference:;
+- (void)updateSecondaryCurrentState:inference:;
+- (void)updateSecondaryCurrentState:index:inference:;
+- (id)generateNode:model:weightIter:params:;
+- (id)inputImagesToSecondKernel;
+- (id)inputImagesToFirstKernel;
+- (id)primaryCurrentStates;
+- (id)secondaryCurrentStates;
+@end

@@ -1,0 +1,33 @@
+@interface MLSliceNDBrick : NSObject
+@property (nonatomic) NSInteger rank;
+@property (nonatomic) BOOL shapeInfoNeeded;
+@property (nonatomic) NSArray begin_ids;
+@property (nonatomic) NSArray begin_masks;
+@property (nonatomic) NSArray end_ids;
+@property (nonatomic) NSArray end_masks;
+@property (nonatomic) NSArray strides;
+@property (nonatomic) NSArray inputRanks;
+@property (nonatomic) NSArray outputRanks;
+@property (nonatomic) NSArray inputShapes;
+@property (nonatomic) NSArray outputShapes;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithParameters:;
+- (int)rank;
+- (id)strides;
+- (void).cxx_destruct;
+- (id)setupForInputShapes:withParameters:;
+- (void)computeOnCPUWithInputTensors:outputTensors:;
+- (BOOL)hasGPUSupport;
+- (BOOL)shapeInfoNeeded;
+- (id)inputRanks;
+- (id)outputRanks;
+- (id)inputShapes;
+- (id)outputShapes;
+- (id)begin_ids;
+- (id)begin_masks;
+- (id)end_ids;
+- (id)end_masks;
+@end

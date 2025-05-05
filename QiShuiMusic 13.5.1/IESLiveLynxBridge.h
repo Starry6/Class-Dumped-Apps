@@ -1,0 +1,35 @@
+@interface IESLiveLynxBridge : NSObject
+@property (nonatomic) BDLynxBridge innerBridge;
+@property (nonatomic) NSNumber enbaleRegisterOptmize;
+@property (nonatomic) UIView<IESLiveHybridContainerProtocol> hybridContainer;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setInnerBridge:;
+- (BOOL)_shouldApplyRegisterOptmization;
+- (id)hybridContainer;
+- (void)_annieLegacyRegisterSessionHandler:forMethod:authType:;
+- (void)_annieNewRegisterSessionHandler:forMethod:authType:;
+- (id)enbaleRegisterOptmize;
+- (id)initWithInnerBridge:hybridContainer:;
+- (id)innerBridge;
+- (void)invokeEvent:params:;
+- (BOOL)isRegisteredMethod:;
+- (void)lynxBridge:didCallEvent:;
+- (void)lynxBridge:didCallback:;
+- (void)lynxBridge:didHandleMethod:;
+- (void)lynxBridge:willCallEvent:;
+- (void)lynxBridge:willCallback:;
+- (void)lynxBridge:willHandleMethod:;
+- (id)privateSet;
+- (id)protectedSet;
+- (id)publicCallSet;
+- (void)registerHandlerBlock:forMethod:authType:;
+- (void)registerHandlerBlock:forMethod:authType:oldType:;
+- (void)registerNewHandlerBlock:forMethod:authType:;
+- (void)setEnbaleRegisterOptmize:;
+- (void)setHybridContainer:;
+- (unsigned long long)type;
+- (void).cxx_destruct;
+@end

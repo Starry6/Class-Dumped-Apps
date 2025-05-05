@@ -1,0 +1,34 @@
+@interface CNUICoreContactStoreTestFacade : NSObject
+@property (nonatomic) CNContact meContact;
+@property (nonatomic) NSArray contacts;
+@property (nonatomic) NSError saveError;
+@property (nonatomic) NSError fetchError;
+@property (nonatomic) NSArray executedSaveRequests;
+@property (nonatomic) NSArray executedFetchRequests;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)executeSaveRequest:error:;
+- (id)init;
+- (void)setContacts:;
+- (id)contacts;
+- (void)setMeContact:;
+- (id)meContact;
+- (id)fetchError;
+- (id)_crossPlatformUnifiedMeContactWithKeysToFetch:error:;
+- (void).cxx_destruct;
+- (void)setFetchError:;
+- (BOOL)enumerateContactsWithFetchRequest:error:usingBlock:;
+- (id)initWithContacts:;
+- (id)initWithSaveError:fetchError:;
+- (id)initWithMeContact:contacts:;
+- (void)commonInitWithMeContact:contacts:saveError:fetchError:;
+- (id)executedSaveRequests;
+- (void)setExecutedSaveRequests:;
+- (id)executedFetchRequests;
+- (void)setExecutedFetchRequests:;
+- (id)saveError;
+- (void)setSaveError:;
++ (id)contactsBySimulatingExecutionOfSaveRequest:onContacts:;
+@end

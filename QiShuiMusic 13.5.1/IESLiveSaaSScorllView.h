@@ -1,0 +1,34 @@
+@interface IESLiveSaaSScorllView : UIView
+@property (nonatomic) UIView frontView;
+@property (nonatomic) UIView backView;
+@property (nonatomic) BOOL waitingForLayout;
+@property (nonatomic) @? createViewBlock;
+@property (nonatomic) double speed;
+@property (nonatomic) BOOL enableAnimation;
+@property (nonatomic) q scorllViewAlignMode;
+@property (nonatomic) BOOL shouldRepeat;
+- (id)createViewBlock;
+- (void)loadUI;
+- (long long)scorllViewAlignMode;
+- (void)setCreateViewBlock:;
+- (void)setFrontView:;
+- (void)setScorllViewAlignMode:;
+- (void)setWaitingForLayout:;
+- (BOOL)waitingForLayout;
+- (id)init;
+- (void)layoutSubviews;
+- (void)setSpeed:;
+- (id)backView;
+- (void)setBackView:;
+- (double)speed;
+- (void)startAnimation;
+- (void)setEnableAnimation:;
+- (void).cxx_destruct;
+- (id)initWithCreateViewBlock:;
+- (BOOL)enableAnimation;
+- (void)stopAnimation;
+- (id)frontView;
+- (void)resetLayout;
+- (void)setShouldRepeat:;
+- (BOOL)shouldRepeat;
+@end

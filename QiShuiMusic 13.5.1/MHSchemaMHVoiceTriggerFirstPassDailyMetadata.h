@@ -1,0 +1,34 @@
+@interface MHSchemaMHVoiceTriggerFirstPassDailyMetadata : SISchemaInstrumentationMessage
+@property (nonatomic) NSString configVersion;
+@property (nonatomic) BOOL hasConfigVersion;
+@property (nonatomic) NSInteger hardwareSampleRate;
+@property (nonatomic) BOOL hasHardwareSampleRate;
+@property (nonatomic) NSString mitigationAssetVersion;
+@property (nonatomic) BOOL hasMitigationAssetVersion;
+@property (nonatomic) NSData jsonData;
+- (id)configVersion;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)hasConfigVersion;
+- (BOOL)isEqual:;
+- (void)setConfigVersion:;
+- (void)setHasConfigVersion:;
+- (void)deleteConfigVersion;
+- (void)setHardwareSampleRate:;
+- (BOOL)hasHardwareSampleRate;
+- (void)setHasHardwareSampleRate:;
+- (void)deleteHardwareSampleRate;
+- (BOOL)hasMitigationAssetVersion;
+- (void)deleteMitigationAssetVersion;
+- (int)hardwareSampleRate;
+- (id)mitigationAssetVersion;
+- (void)setMitigationAssetVersion:;
+- (void)setHasMitigationAssetVersion:;
+@end

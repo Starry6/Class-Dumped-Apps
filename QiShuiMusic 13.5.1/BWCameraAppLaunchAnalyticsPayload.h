@@ -1,0 +1,32 @@
+@interface BWCameraAppLaunchAnalyticsPayload : NSObject
+@property (nonatomic) BOOL isPrewarmed;
+@property (nonatomic) NSString launchMode;
+@property (nonatomic) NSInteger devicePosition;
+@property (nonatomic) NSString prewarmReason;
+@property (nonatomic) NSInteger launchDuration;
+@property (nonatomic) NSInteger memoryStatusLevel;
+@property (nonatomic) NSInteger thermalLevel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (void)dealloc;
+- (void)setMemoryStatusLevel:;
+- (id)prewarmReason;
+- (int)devicePosition;
+- (int)memoryStatusLevel;
+- (int)launchDuration;
+- (void)setDevicePosition:;
+- (void)setLaunchMode:;
+- (void)setThermalLevel:;
+- (id)eventName;
+- (void)setLaunchDuration:;
+- (id)launchMode;
+- (void)setIsPrewarmed:;
+- (int)thermalLevel;
+- (void)reset;
+- (void)setPrewarmReason:;
+- (id)eventDictionary;
+- (BOOL)isPrewarmed;
+@end

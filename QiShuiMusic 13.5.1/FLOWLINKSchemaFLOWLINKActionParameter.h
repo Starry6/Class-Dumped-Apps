@@ -1,0 +1,34 @@
+@interface FLOWLINKSchemaFLOWLINKActionParameter : SISchemaInstrumentationMessage
+@property (nonatomic) NSString name;
+@property (nonatomic) BOOL hasName;
+@property (nonatomic) BOOL isArray;
+@property (nonatomic) BOOL hasIsArray;
+@property (nonatomic) NSInteger type;
+@property (nonatomic) BOOL hasType;
+@property (nonatomic) NSData jsonData;
+- (void)setName:;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (BOOL)hasName;
+- (id)initWithDictionary:;
+- (void)setType:;
+- (void)writeTo:;
+- (void)setHasType:;
+- (BOOL)hasType;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void)deleteType;
+- (int)type;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)name;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)setHasName:;
+- (BOOL)isArray;
+- (void)deleteName;
+- (void)setIsArray:;
+- (BOOL)hasIsArray;
+- (void)setHasIsArray:;
+- (void)deleteIsArray;
+@end

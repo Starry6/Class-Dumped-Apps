@@ -1,0 +1,2 @@
+@interface AVCapturePhotoInitiationSettingsInternal : NSObject
+@end

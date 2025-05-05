@@ -1,0 +1,31 @@
+@interface CJPayCounterLabel : UILabel
+@property (nonatomic) CADisplayLink timer;
+@property (nonatomic) double starNumber;
+@property (nonatomic) double endNumber;
+@property (nonatomic) double durationTime;
+@property (nonatomic) double lastTime;
+@property (nonatomic) double progressTime;
+@property (nonatomic) @? formatNumberBlock;
+- (double)p_computeNumber;
+- (void)cj_fromNumber:toNumber:duration:attributedFormat:;
+- (void)cj_fromNumber:toNumber:duration:format:;
+- (double)durationTime;
+- (double)endNumber;
+- (id)formatNumberBlock;
+- (double)p_bufferFunctionEaseInOut:;
+- (void)p_changeNumber;
+- (void)p_cleanTimer;
+- (void)p_fromNumber:toNumber:duration:formatNumberBlock:;
+- (double)progressTime;
+- (void)setDurationTime:;
+- (void)setEndNumber:;
+- (void)setFormatNumberBlock:;
+- (void)setProgressTime:;
+- (void)setStarNumber:;
+- (double)starNumber;
+- (void)setTimer:;
+- (void).cxx_destruct;
+- (id)timer;
+- (void)setLastTime:;
+- (double)lastTime;
+@end

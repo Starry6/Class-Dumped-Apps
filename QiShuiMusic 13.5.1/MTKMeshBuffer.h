@@ -1,0 +1,30 @@
+@interface MTKMeshBuffer : NSObject
+@property (nonatomic) Q length;
+@property (nonatomic) MTKMeshBufferAllocator allocator;
+@property (nonatomic) <MDLMeshBufferZone> zone;
+@property (nonatomic) <MTLBuffer> buffer;
+@property (nonatomic) Q offset;
+@property (nonatomic) Q type;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSString name;
+- (id)zone;
+- (void)dealloc;
+- (id)buffer;
+- (void)setName:;
+- (unsigned long long)offset;
+- (unsigned long long)type;
+- (id)map;
+- (unsigned long long)length;
+- (id)allocator;
+- (id)name;
+- (id)copyWithZone:;
+- (void)fillData:offset:;
+- (id)_initWithLength:offset:zone:type:;
+- (id)_initWithLength:allocator:type:;
+- (id)_initWithData:allocator:type:;
+- (id)_initWithBytes:length:offset:allocator:zone:type:;
+- (id)_newMap;
+@end

@@ -1,0 +1,37 @@
+@interface AWEIMNotificationResponseModel : IESIMBaseApiModel
+@property (nonatomic) BOOL hasMore;
+@property (nonatomic) q total;
+@property (nonatomic) NSArray noticeArray;
+@property (nonatomic) q maxTime;
+@property (nonatomic) q minTime;
+@property (nonatomic) q lastReadTime;
+@property (nonatomic) q group;
+@property (nonatomic) q vcdMergeTotal;
+@property (nonatomic) NSString vcdToastText;
+@property (nonatomic) AWEIMNotificationResponseExtraModel extra;
+- (void)setNoticeArray:;
+- (long long)lastReadTime;
+- (id)noticeArray;
+- (void)setExtra:;
+- (void)setLastReadTime:;
+- (void)setVcdMergeTotal:;
+- (void)setVcdToastText:;
+- (long long)vcdMergeTotal;
+- (id)vcdToastText;
+- (long long)maxTime;
+- (long long)minTime;
+- (id)extra;
+- (void)setMinTime:;
+- (void)setMaxTime:;
+- (void)setHasMore:;
+- (void)setGroup:;
+- (long long)group;
+- (void).cxx_destruct;
+- (BOOL)hasMore;
+- (long long)total;
+- (void)setTotal:;
++ (id)extraJSONTransformer;
++ (id)hasMoreJSONTransformer;
++ (id)noticeArrayJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

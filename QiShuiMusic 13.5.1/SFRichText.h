@@ -1,0 +1,34 @@
+@interface SFRichText : SFText
+@property (nonatomic) double starRating;
+@property (nonatomic) NSString contentAdvisory;
+@property (nonatomic) NSArray icons;
+@property (nonatomic) NSArray formattedTextPieces;
+@property (nonatomic) NSDictionary dictionaryRepresentation;
+@property (nonatomic) NSData jsonData;
+@property (nonatomic) NSString text;
+@property (nonatomic) Q maxLines;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setIcons:;
+- (id)initWithProtobuf:;
+- (id)initWithCoder:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)dictionaryRepresentation;
+- (id)icons;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setStarRating:;
+- (void)setFormattedTextPieces:;
+- (void)loadRichTextWithCompletionHandler:;
+- (BOOL)hasStarRating;
+- (double)starRating;
+- (void)setContentAdvisory:;
+- (id)contentAdvisory;
+- (id)formattedTextPieces;
++ (BOOL)supportsSecureCoding;
+@end

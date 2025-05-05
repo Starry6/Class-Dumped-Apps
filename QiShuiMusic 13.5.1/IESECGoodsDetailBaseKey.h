@@ -1,0 +1,2 @@
+@interface IESECGoodsDetailBaseKey : NSObject
+@end

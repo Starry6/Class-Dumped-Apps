@@ -1,0 +1,34 @@
+@interface BDXLynxBlurView : LynxUI
+@property (nonatomic) q style;
+@property (nonatomic) double radius;
+- (void)setBackgroundClip:requestReset:;
+- (void)setBackgroundSize:requestReset:;
+- (void)propsDidUpdate;
+- (void)setBackground:requestReset:;
+- (void)setBackgroundCapInsets:requestReset:;
+- (void)setBackgroundColor:requestReset:;
+- (void)setBackgroundImage:requestReset:;
+- (void)setBackgroundOrigin:requestReset:;
+- (void)setBackgroundPosition:requestReset:;
+- (void)setBackgroundRepeat:requestReset:;
+- (void)setBlurEffect:requestReset:;
+- (void)setBlurRadius:requestReset:;
+- (void)setRadius:;
+- (void)setStyle:;
+- (double)radius;
+- (long long)style;
+- (void)insertChild:atIndex:;
+- (id)createView;
++ (id)__lynx_prop_config__1009;
++ (id)__lynx_prop_config__10210;
++ (id)__lynx_prop_config__11111;
++ (id)__lynx_prop_config__671;
++ (id)__lynx_prop_config__862;
++ (id)__lynx_prop_config__883;
++ (id)__lynx_prop_config__904;
++ (id)__lynx_prop_config__925;
++ (id)__lynx_prop_config__946;
++ (id)__lynx_prop_config__967;
++ (id)__lynx_prop_config__988;
++ (void)lynxLazyLoad;
+@end

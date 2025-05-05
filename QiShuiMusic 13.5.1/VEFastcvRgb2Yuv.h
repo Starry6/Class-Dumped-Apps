@@ -1,0 +1,32 @@
+@interface VEFastcvRgb2Yuv : NSObject
+@property (nonatomic) ^{__CVPixelBufferPool=} pixelBufferPool;
+@property (nonatomic) NSInteger pixelBufferPoolWidth;
+@property (nonatomic) NSInteger pixelBufferPoolHeight;
+@property (nonatomic) I pixelBufferPoolPixelFormat;
+- (void)cvt_fastcv_10bit:yuv10biPixelBuffer:gpuContext:transColorSpace:;
+- (id)buffer_attributes_create:height:pix_fmt:;
+- (id)convert10BitRGBA2YUVFastCV:transColorSpace:;
+- (id)convert8BitRGBA2YUVFastCV:transColorSpace:;
+- (id)convertBGRA2RGBAFastCV:;
+- (id)convertRGBA2BGRAFastCV:;
+- (id)convertRGBA2YUVFastCV:;
+- (id)convertRGBA2YUVFastCV:transColorSpace:;
+- (id)cropAndScalePixelBuffer:destSize:;
+- (void)cropAndScale_fastcv:pixelBuffer:gpuContext:isRGBA:;
+- (id)cropPixelBuffer:rect:onGpu:;
+- (void)crop_fastcv:pixelBuffer:gpuContext:isRGBA:crop:;
+- (void)crop_fastcv:pixelBuffer:isRGBA:crop:;
+- (void)cvt_fastcv_8bit:yuv8biPixelBuffer:gpuContext:transColorSpace:;
+- (void)downsampleCVPixelBuffer:targetbuffer:resizetype:;
+- (id)genYuvPixelBuffer:frameHeight:pixelFormat:;
+- (int)pixelBufferPoolHeight;
+- (unsigned int)pixelBufferPoolPixelFormat;
+- (int)pixelBufferPoolWidth;
+- (void)setPixelBufferPoolHeight:;
+- (void)setPixelBufferPoolPixelFormat:;
+- (void)setPixelBufferPoolWidth:;
+- (id)init;
+- (void)dealloc;
+- (id)pixelBufferPool;
+- (void)setPixelBufferPool:;
+@end

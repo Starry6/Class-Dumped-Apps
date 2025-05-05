@@ -1,0 +1,33 @@
+@interface CKContextContentProviderManager : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (void)addProvider:;
+- (void)removeProvider:;
+- (void)_prepareAndExtractContentForUserActivity:bundleIdentifier:;
+- (void)_prepareDonationWithNonce:options:isRecentsCapture:requiringMainQueue:andReply:;
+- (void)userActivityWasInvalidated:;
+- (void)_queueActivityForReporting:;
+- (BOOL)_isActivityReportingAllowedForCurrentBundleIdentifier:;
+- (void)_loadContextKitIfNecessaryWithExecutor:;
+- (void)scheduleUserActivityRecordingWithUserActivity:;
+- (BOOL)_isDonationAllowedWithControlCode:;
+- (void).cxx_destruct;
+- (void)userActivityDidBecomeCurrent:current:;
+- (void)userActivityWasCreated:;
+- (unsigned long long)providerCount;
+- (void)_prepareAndDonateUserActivity:;
+- (id)_formContextUserActivityFromUserActivity:;
+- (void)_hasForegroundActiveContentWithReply:;
+- (void)_prepareDonationWithNonce:options:isRecentsCapture:andReply:;
+- (BOOL)_hasQueuedForReportingActivity:;
+- (void)_dequeueActivityForReporting:;
++ (unsigned long long)optionsForControlCode:;
++ (BOOL)isSafariContentProvider;
++ (id)sharedManager;
++ (void)_observeApplicationStateNotifications;
++ (unsigned char)controlCodeForNonce:;
++ (BOOL)isSpringBoard;
+@end

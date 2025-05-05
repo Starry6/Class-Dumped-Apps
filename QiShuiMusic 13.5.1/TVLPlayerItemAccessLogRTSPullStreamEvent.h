@@ -1,0 +1,31 @@
+@interface TVLPlayerItemAccessLogRTSPullStreamEvent : TVLPlayerItemAccessLogPullStreamEvent
+@property (nonatomic) NSDate initializationFinishedDate;
+@property (nonatomic) NSDate SDPDNSFinishedDate;
+@property (nonatomic) NSDate SDPTCPConnectedDate;
+@property (nonatomic) NSDate SDPTLSHandshakeFinishedDate;
+@property (nonatomic) NSDate SDPOfferSentDate;
+@property (nonatomic) NSDate SDPAnswerReceivedDate;
+@property (nonatomic) NSDate SDPAnswerUpdatedDate;
+@property (nonatomic) NSDate SDPIceConnectedDate;
+@property (nonatomic) NSDate playStartDate;
+- (id)SDPAnswerReceivedDate;
+- (id)SDPDNSFinishedDate;
+- (id)SDPOfferSentDate;
+- (id)SDPTLSHandshakeFinishedDate;
+- (id)logInfo;
+- (void)setSDPTLSHandshakeFinishedDate:;
+- (id)SDPAnswerUpdatedDate;
+- (id)SDPIceConnectedDate;
+- (id)SDPTCPConnectedDate;
+- (id)initializationFinishedDate;
+- (id)playStartDate;
+- (void)setInitializationFinishedDate:;
+- (void)setPlayStartDate:;
+- (void)setSDPAnswerReceivedDate:;
+- (void)setSDPAnswerUpdatedDate:;
+- (void)setSDPDNSFinishedDate:;
+- (void)setSDPIceConnectedDate:;
+- (void)setSDPOfferSentDate:;
+- (void)setSDPTCPConnectedDate:;
+- (void).cxx_destruct;
+@end

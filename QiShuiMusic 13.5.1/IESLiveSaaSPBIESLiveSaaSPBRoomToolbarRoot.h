@@ -1,0 +1,2 @@
+@interface IESLiveSaaSPBIESLiveSaaSPBRoomToolbarRoot : GPBRootObject
+@end

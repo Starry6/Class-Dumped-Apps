@@ -1,0 +1,31 @@
+@interface INGetAvailableRestaurantReservationBookingsIntentResponse : INIntentResponse
+@property (nonatomic) q code;
+@property (nonatomic) NSString localizedRestaurantDescriptionText;
+@property (nonatomic) NSString localizedBookingAdvisementText;
+@property (nonatomic) INTermsAndConditions termsAndConditions;
+@property (nonatomic) NSArray availableBookings;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)_injectProxiesForImages:completion:;
+- (id)_dictionaryRepresentation;
+- (id)initWithBackingStore:;
+- (long long)code;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)_initWithCode:userActivity:;
+- (id)initWithCode:userActivity:;
+- (id)localizedRestaurantDescriptionText;
+- (void)setLocalizedRestaurantDescriptionText:;
+- (id)localizedBookingAdvisementText;
+- (void)setLocalizedBookingAdvisementText:;
+- (id)termsAndConditions;
+- (void)setTermsAndConditions:;
+- (id)availableBookings;
+- (id)initWithAvailableBookings:code:userActivity:;
++ (BOOL)supportsSecureCoding;
+@end

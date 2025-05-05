@@ -1,0 +1,38 @@
+@interface IESLiveSaaSAudienceGamePlatformFragment : IESLiveRoomComponent
+@property (nonatomic) IESLiveSaaSLiveRoomModel roomModel;
+@property (nonatomic) IESLiveSaaSComponentContext componentContext;
+@property (nonatomic) IESLiveSaaSAudienceGamePlatformStore audienceGamePlatformStore;
+@property (nonatomic) IESLiveSaaSMessageHandler messageHandler;
+@property (nonatomic) <IESLiveSaaSGamePlatformApiInterface> gameAPI;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)gameAPI;
+- (void)addAudienceGamePlatformStateSubscriber:;
+- (id)audienceGamePlatformStore;
+- (void)componentDidMount;
+- (void)componentDidUnmount;
+- (void)didEnterLiveRoom:;
+- (void)didSetAttachingDIContext;
+- (void)dispatchFakeTipsMessageWithContent:;
+- (void)displayLegalTipsTextIfNeededWithGameExtra:content:;
+- (void)displayLegalTipsTextIfNeededWithGameStatusMessage:;
+- (unsigned long long)gamePlatformCurrentGameProcessState;
+- (id)getGamePlatformStreamInfo;
+- (id)initWithRoomModel:componentContext:;
+- (id)loadGameStatusMessageHandle;
+- (void)registerMessageHandlers;
+- (void)removeAudienceGamePlatformStateSubscriber:;
+- (id)roomModel;
+- (void)setAudienceGamePlatformStore:;
+- (void)setGameAPI:;
+- (void)setRoomModel:;
+- (id)messageHandler;
+- (void)setup;
+- (void).cxx_destruct;
+- (void)setMessageHandler:;
+- (void)messageReceived:;
++ (id)componentWithRoom:trackContext:componentContext:;
++ (long long)preferredLoadPhase;
+@end

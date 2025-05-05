@@ -1,0 +1,37 @@
+@interface WebBookmarkChangeSet : NSObject
+@property (nonatomic) NSURL fileURL;
+@property (nonatomic) NSArray changes;
+@property (nonatomic) BOOL shouldSync;
+- (id)modifiedBookmarksInBookmarkFolder:;
+- (id)bookmarksAfterReplayingChangesToBookmarks:inFolderWithID:;
+- (void)removeAllChanges;
+- (void)_coalesceChangesForChangeIfNeeded:;
+- (void)addChange:;
+- (void)_addChange:;
+- (void)persistChangesWithCompletion:;
+- (id)initWithFileURL:readPersistedChanges:;
+- (long long)replayChangesOnBookmark:;
+- (id)deletedBookmarkIDsInBookmarkFolder:;
+- (void)_removeChange:;
+- (unsigned long long)numberOfReorderedBookmarksInBookmarkFolder:;
+- (id)initWithCoder:;
+- (id)addedBookmarksInBookmarkFolder:;
+- (BOOL)folderHasReplaceChange:;
+- (void)removeChange:;
+- (unsigned long long)numberOfAddedBookmarksInBookmarkFolder:;
+- (BOOL)isBookmarkDeleted:;
+- (id)changes;
+- (void)encodeWithCoder:;
+- (void)_readPersistedChanges;
+- (id)initWithFileURL:;
+- (BOOL)shouldSync;
+- (void).cxx_destruct;
+- (id)fileURL;
+- (void)addChanges:;
+- (BOOL)bookmarkIsAddedInMemory:;
+- (void)applyModificationsToBookmarks:;
+- (void)_removeAllChanges;
+- (int)nextBookmarkIDForAddingBookmarkInMemory;
+- (void)updateAddChangesWithInMemoryBookmarkID:toDatabaseGeneratedID:;
++ (BOOL)supportsSecureCoding;
+@end

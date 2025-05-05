@@ -1,0 +1,2 @@
+@interface EMDeleteMailboxChangeAction : EMMailboxChangeAction
+@end

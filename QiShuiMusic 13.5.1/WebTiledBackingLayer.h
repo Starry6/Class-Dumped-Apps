@@ -1,0 +1,25 @@
+@interface WebTiledBackingLayer : CALayer
+- (void)setContentsScale:;
+- (void)setBorderColor:;
+- (id)actionForKey:;
+- (id)init;
+- (void)dealloc;
+- (void)setDrawsAsynchronously:;
+- (double)contentsScale;
+- (BOOL)isOpaque;
+- (void)setBorderWidth:;
+- (void)setNeedsDisplay;
+- (void)setBounds:;
+- (void).cxx_destruct;
+- (void)setOpaque:;
+- (void)setNeedsDisplayInRect:;
+- (void)invalidate;
+- (id).cxx_construct;
+- (BOOL)drawsAsynchronously;
+- (id)createTileController:;
+- (void)setWantsDeepColorBackingStore:;
+- (BOOL)wantsDeepColorBackingStore;
+- (void)setSupportsSubpixelAntialiasedText:;
+- (BOOL)supportsSubpixelAntialiasedText;
+- (id)tiledBacking;
+@end

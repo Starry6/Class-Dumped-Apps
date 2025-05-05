@@ -1,0 +1,32 @@
+@interface GEOTraitsTransitScheduleTimeRange : PBCodable
+@property (nonatomic) BOOL hasStartTime;
+@property (nonatomic) double startTime;
+@property (nonatomic) BOOL hasDuration;
+@property (nonatomic) double duration;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (void)setHasStartTime:;
+- (BOOL)hasStartTime;
+- (BOOL)hasDuration;
+- (id)initWithJSON:;
+- (void)setHasDuration:;
+- (id)jsonRepresentation;
+- (void)setStartTime:;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (double)startTime;
+- (void)copyTo:;
+- (void)setDuration:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (double)duration;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
++ (BOOL)isValid:;
+@end

@@ -1,0 +1,2 @@
+@interface FigUndefinedKeyValueSentry : FigKVCInspectable
+@end

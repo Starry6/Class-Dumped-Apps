@@ -1,0 +1,30 @@
+@interface HIDDevice : NSObject
+@property (nonatomic) I service;
+- (id)initWithService:;
+- (void)cancel;
+- (void)open;
+- (void)setDispatchQueue:;
+- (void)setCancelHandler:;
+- (void)close;
+- (BOOL)setProperty:forKey:;
+- (unsigned int)service;
+- (id)propertyForKey:;
+- (void)setInputElementMatching:;
+- (void)setInputElementHandler:;
+- (void)activate;
+- (void)setInputReportHandler:;
+- (BOOL)setReport:reportLength:withIdentifier:forType:error:timeout:callback:;
+- (id)elementsMatching:;
+- (BOOL)commitElements:direction:error:;
+- (BOOL)conformsToUsagePage:usage:;
+- (void)setRemovalHandler:;
+- (BOOL)setReport:reportLength:withIdentifier:forType:error:;
+- (BOOL)getReport:reportLength:withIdentifier:forType:error:;
+- (BOOL)getReport:reportLength:withIdentifier:forType:error:timeout:callback:;
+- (BOOL)commitElements:direction:error:timeout:callback:;
+- (void)setBatchInputElementHandler:;
+- (BOOL)openSeize:;
+- (void)dealloc;
+- (unsigned long long)_cfTypeID;
+- (id)description;
+@end

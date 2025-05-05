@@ -1,0 +1,34 @@
+@interface BDPathBaseBundle : NSObject
+@property (nonatomic) NSMutableDictionary normalPathMap;
+@property (nonatomic) NSMutableDictionary anyUserPathMap;
+@property (nonatomic) NSString bundleRootPath;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)opportunityKey:;
+- (BOOL)_addSubPath:opportunity:isAnyUser:;
+- (void)_cleanupDeletableFiles;
+- (long long)_cleanupForOpportunity:needSize:;
+- (long long)_deleteAllFileForDirPath:needSize:;
+- (id)_registerPathsForOpportunity:isAnyUser:;
+- (long long)anyUidFilesSizeWithSubDirPath:;
+- (id)anyUserPathMap;
+- (id)bundleRootPath;
+- (long long)cleanupAnyUidFileWithSubFilePath:excludeUids:;
+- (long long)cleanupAnyUidFilesWithSubDirPath:excludeUids:;
+- (void)cleanupDeletableFiles;
+- (long long)cleanupUid:subDirPath:retureSize:;
+- (long long)deletableFilesSize;
+- (id)initWithRootName:;
+- (id)normalPathMap;
+- (BOOL)registerCleanRuleForAnyUidForSubDirPath:when:;
+- (BOOL)registerCleanRuleForSubPath:when:;
+- (BOOL)registerCleanRuleForUid:subDirPath:when:;
+- (void)setAnyUserPathMap:;
+- (void)setBundleRootPath:;
+- (void)setNormalPathMap:;
+- (long long)totalFilesSize;
+- (long long)triggerCleanEventForOpportunity:needSize:;
+- (void).cxx_destruct;
+@end

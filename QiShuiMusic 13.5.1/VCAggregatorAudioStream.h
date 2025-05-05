@@ -1,0 +1,30 @@
+@interface VCAggregatorAudioStream : VCAggregator
+@property (nonatomic) NSString channelSequence;
+@property (nonatomic) NSString previousChannelSequence;
+@property (nonatomic) NSString remoteOSBuildVersion;
+@property (nonatomic) NSString remoteDeviceModel;
+- (void)dealloc;
+- (id)channelSequence;
+- (id)initWithDelegate:;
+- (void)processEventWithCategory:type:payload:;
+- (void)processMediaCaptureRealtimeStats:;
+- (void)processRealtimeStats:;
+- (void)setChannelSequence:;
+- (id)previousChannelSequence;
+- (void)setPreviousChannelSequence:;
+- (id)aggregatedSessionReport;
+- (void)updateAudioStreamHostTimeJumpSizeStats:;
+- (void)aggregateChannelSequenceReport:;
+- (void)aggregateSystemInfoReport:;
+- (void)aggregateRealtimeStats:;
+- (void)aggregateMediCaptureRealtimeStats:;
+- (void)aggregateAudioPlaybackRealtimeStats:;
+- (void)processAudioPlaybackRealtimeStats:;
+- (void)processChannelSequenceStats:;
+- (void)processAudioStreamStart:;
+- (void)processTransportInfo:;
+- (id)remoteOSBuildVersion;
+- (void)setRemoteOSBuildVersion:;
+- (id)remoteDeviceModel;
+- (void)setRemoteDeviceModel:;
+@end

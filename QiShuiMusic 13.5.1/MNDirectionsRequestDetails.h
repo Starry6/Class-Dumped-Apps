@@ -1,0 +1,38 @@
+@interface MNDirectionsRequestDetails : NSObject
+@property (nonatomic) NSArray waypoints;
+@property (nonatomic) GEORouteAttributes routeAttributes;
+@property (nonatomic) Q maxRouteCount;
+@property (nonatomic) GEOLocation currentUserLocation;
+@property (nonatomic) GEOMapRegion currentMapRegion;
+@property (nonatomic) GEODirectionsRequestFeedback directionsRequestFeedback;
+@property (nonatomic) GEOCommonOptions commonOptions;
+@property (nonatomic) BOOL isResumingMultipointRoute;
+@property (nonatomic) NSString tracePath;
+- (void)setRouteAttributes:;
+- (void)setWaypoints:;
+- (BOOL)isResumingMultipointRoute;
+- (id)initWithCoder:;
+- (id)tracePath;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (void)setIsResumingMultipointRoute:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)waypoints;
+- (void)setTracePath:;
+- (BOOL)isEqual:;
+- (id)currentUserLocation;
+- (void)setCurrentUserLocation:;
+- (id)routeAttributes;
+- (id)commonOptions;
+- (void)setCommonOptions:;
+- (unsigned long long)maxRouteCount;
+- (void)setMaxRouteCount:;
+- (id)currentMapRegion;
+- (void)setCurrentMapRegion:;
+- (id)initWithWaypoints:routeAttributes:;
+- (id)initWithTracePath:;
+- (id)directionsRequestFeedback;
+- (void)setDirectionsRequestFeedback:;
++ (BOOL)supportsSecureCoding;
+@end

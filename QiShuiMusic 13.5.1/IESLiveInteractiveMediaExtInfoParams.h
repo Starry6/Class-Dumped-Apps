@@ -1,0 +1,30 @@
+@interface IESLiveInteractiveMediaExtInfoParams : NSObject
+@property (nonatomic) BOOL isAnchor;
+@property (nonatomic) BOOL isVideoDynamicEqual;
+@property (nonatomic) NSInteger layout;
+@property (nonatomic) q guestCount;
+@property (nonatomic) q position;
+@property (nonatomic) BOOL isChallengeEnlarge;
+@property (nonatomic) BOOL isMainCastEnlarge;
+@property (nonatomic) BOOL selfIsEnlarge;
+@property (nonatomic) BOOL isEqualEnlargeFullLayout;
+- (long long)guestCount;
+- (BOOL)isChallengeEnlarge;
+- (BOOL)isEqualEnlargeFullLayout;
+- (BOOL)isMainCastEnlarge;
+- (BOOL)isVideoDynamicEqual;
+- (BOOL)selfIsEnlarge;
+- (void)setGuestCount:;
+- (void)setIsAnchor:;
+- (void)setIsChallengeEnlarge:;
+- (void)setIsEqualEnlargeFullLayout:;
+- (void)setIsMainCastEnlarge:;
+- (void)setIsVideoDynamicEqual:;
+- (void)setSelfIsEnlarge:;
+- (void)setPosition:;
+- (long long)position;
+- (void)setLayout:;
+- (BOOL)isAnchor;
+- (int)layout;
+- (id)description;
+@end

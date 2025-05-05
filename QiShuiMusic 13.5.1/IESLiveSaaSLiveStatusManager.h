@@ -1,0 +1,38 @@
+@interface IESLiveSaaSLiveStatusManager : NSObject
+@property (nonatomic) IESLiveSaaSCheckUserLiveStatusApi statusApi;
+@property (nonatomic) NSMutableDictionary managerModelDict;
+@property (nonatomic) NSMutableDictionary updateObserversDict;
+@property (nonatomic) NSMutableDictionary checkingDict;
+@property (nonatomic) NSMutableDictionary periodDict;
+- (id)_buildSceneUIDKey:userID:;
+- (void)_callObservers:resultList:updateCurrent:current:;
+- (id)_centerWith:;
+- (void)_clearWithReferString:;
+- (id)_convertResponseToDict:;
+- (id)_getCheckUserLiveStatusParamsWithItemList:;
+- (id)_getNeedsCheckUserListFromCurrent:inCenter:;
+- (id)_getNowTimestamp;
+- (void)_storeListData:isFetch:referString:;
+- (void)_updateRoomInfo:inCenter:;
+- (void)addObserver:forReferString:;
+- (void)appendCheckingItems:referString:;
+- (void)checkLiveStatusOfItemsFromCurrentUser:scene:referString:;
+- (id)checkingDict;
+- (void)clearCheckingCacheWithReferString:;
+- (id)managerModelDict;
+- (id)periodDict;
+- (void)removeAllObserversForReferString:;
+- (void)removeObserver:forReferString:;
+- (void)resetWithCheckingItems:referString:;
+- (void)setCheckingDict:;
+- (void)setManagerModelDict:;
+- (void)setPeriod:forReferString:;
+- (void)setPeriodDict:;
+- (void)setStatusApi:;
+- (void)setUpdateObserversDict:;
+- (id)statusApi;
+- (id)updateObserversDict;
+- (id)init;
+- (void).cxx_destruct;
++ (id)sharedManager;
+@end

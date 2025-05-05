@@ -1,0 +1,37 @@
+@interface ABSGroup : NSObject
+@property (nonatomic) NSInteger revertedRecordID;
+@property (nonatomic) NSInteger id;
+@property (nonatomic) I type;
+@property (nonatomic) ABSAddressBook addressBook;
+@property (nonatomic) ABSSource source;
+@property (nonatomic) NSString compositeName;
+@property (nonatomic) CNMutableGroup cnImpl;
+@property (nonatomic) NSString CNIdentifierString;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithSource:;
+- (id)init;
+- (int)id;
+- (unsigned int)type;
+- (unsigned long long)_cfTypeID;
+- (id)addressBook;
+- (void).cxx_destruct;
+- (id)source;
+- (void)setAddressBook:;
+- (void)setSource:;
+- (id)compositeName;
+- (id)copyValueForProperty:;
+- (BOOL)setValue:forProperty:withError:;
+- (BOOL)removeProperty:withError:;
+- (void)replaceRecordStorageWithCNObject:;
+- (id)CNIdentifierString;
+- (id)cnImpl;
+- (void)setCnImpl:;
+- (int)revertedRecordID;
+- (void)setRevertedRecordID:;
+- (id)initWithMutableGroup:;
+- (void)updateAllValuesWithValuesFromGroup:;
++ (id)propertyKeyForPropertyID:;
+@end

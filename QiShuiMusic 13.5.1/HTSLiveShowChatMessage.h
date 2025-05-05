@@ -1,0 +1,32 @@
+@interface HTSLiveShowChatMessage : IESLivePBBaseMessage
+@property (nonatomic) HTSLiveCommon common;
+@property (nonatomic) BOOL hasCommon;
+@property (nonatomic) q episodeId;
+@property (nonatomic) NSString content;
+@property (nonatomic) q agreeMsgId;
+@property (nonatomic) BOOL visibleToSender;
+@property (nonatomic) NSInteger priorityLevel;
+@property (nonatomic) NSInteger effectType;
+@property (nonatomic) HTSLiveUser user;
+@property (nonatomic) BOOL hasUser;
+@property (nonatomic) HTSLivePublicAreaCommon publicAreaCommon;
+@property (nonatomic) BOOL hasPublicAreaCommon;
+@property (nonatomic) HTSLiveLandscapeAreaCommon landscapeAreaCommon;
+@property (nonatomic) BOOL hasLandscapeAreaCommon;
+@property (nonatomic) HTSLiveImage backgroundImage;
+@property (nonatomic) BOOL hasBackgroundImage;
+@property (nonatomic) NSMutableArray fontColorValueArray;
+@property (nonatomic) Q fontColorValueArray_Count;
+@property (nonatomic) HTSLiveImage giftImage;
+@property (nonatomic) BOOL hasGiftImage;
+@property (nonatomic) HTSLiveOfficialCommentConfig officialCommentConfig;
+@property (nonatomic) BOOL hasOfficialCommentConfig;
+@property (nonatomic) HTSLiveCommentRoleConfig commentRole;
+@property (nonatomic) BOOL hasCommentRole;
+@property (nonatomic) HTSLiveCommentMedal medal;
+@property (nonatomic) BOOL hasMedal;
+@property (nonatomic) NSInteger vsMessageType;
+- (BOOL)isFakeMessage;
+- (void)setIsFakeMessage:;
++ (id)descriptor;
+@end

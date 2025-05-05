@@ -1,0 +1,30 @@
+@interface GEORPCorrectedCoordinate : PBCodable
+@property (nonatomic) BOOL hasOriginalCoordinate;
+@property (nonatomic) GEOLatLng originalCoordinate;
+@property (nonatomic) BOOL hasCorrectedCoordinate;
+@property (nonatomic) GEOLatLng correctedCoordinate;
+- (void)readAll:;
+- (BOOL)hasGreenTeaWithValue:;
+- (id)init;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)originalCoordinate;
+- (BOOL)hasOriginalCoordinate;
+- (void)setOriginalCoordinate:;
+- (BOOL)hasCorrectedCoordinate;
+- (id)correctedCoordinate;
+- (void)setCorrectedCoordinate:;
++ (BOOL)isValid:;
+@end

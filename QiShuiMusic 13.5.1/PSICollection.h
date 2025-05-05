@@ -1,0 +1,31 @@
+@interface PSICollection : PSIObject
+@property (nonatomic) PSIDate startDate;
+@property (nonatomic) PSIDate endDate;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString subtitle;
+@property (nonatomic) Q type;
+@property (nonatomic) NSDate sortDate;
+@property (nonatomic) Q assetsCountPrivate;
+@property (nonatomic) Q assetsCountShared;
+@property (nonatomic) PSIAsset keyAssetPrivate;
+@property (nonatomic) PSIAsset keyAssetShared;
+- (id)startDate;
+- (unsigned long long)assetsCountPrivate;
+- (unsigned long long)assetsCountShared;
+- (void)setSubtitle:;
+- (void)setTitle:;
+- (id)sortDate;
+- (id)endDate;
+- (unsigned long long)type;
+- (id)title;
+- (void).cxx_destruct;
+- (id)description;
+- (id)subtitle;
+- (id)copyWithZone:;
+- (void)setKeyAssetPrivate:;
+- (void)setKeyAssetShared:;
+- (id)keyAssetPrivate;
+- (id)keyAssetShared;
+- (id)_initForCopy:;
+- (id)initWithUUID:startDate:endDate:title:subtitle:keyAssetPrivate:keyAssetShared:type:assetsCountPrivate:assetsCountShared:sortDate:;
+@end

@@ -1,0 +1,38 @@
+@interface SGRealtimeEvent : NSObject
+@property (nonatomic) NSInteger state;
+@property (nonatomic) SGEvent event;
+@property (nonatomic) NSString eventIdentifier;
+@property (nonatomic) NSString sourceMessageId;
+@property (nonatomic) BOOL isHarvested;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)event;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)eventIdentifier;
+- (void)encodeWithCoder:;
+- (int)state;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)initWithState:event:eventIdentifier:harvested:;
+- (id)initWithState:event:eventIdentifier:harvested:sourceMessageId:;
+- (BOOL)isEqualToRealtimeEvent:;
+- (id)sourceMessageId;
+- (BOOL)isHarvested;
++ (id)realtimeEventForNewEvent:;
++ (id)realtimeEventForNearDuplicateEvent:harvested:;
++ (id)realtimeEventUpdateToEvent:withNewValues:;
++ (BOOL)supportsSecureCoding;
++ (id)realtimeEventForCanceledEvent:eventIdentifier:harvested:;
++ (id)realtimeEventForCanceledEvent:eventIdentifier:;
++ (id)realtimeEventUpdateToEvent:withNewValues:harvested:;
++ (id)realtimeEventForExtractionExceptionWithSourceMessageId:;
++ (id)realtimeEventForDuplicateEvent:eventIdentifier:;
++ (id)realtimeEventForDuplicateEvent:eventIdentifier:harvested:;
++ (id)realtimeEventForNearDuplicateEvent:;
++ (id)realtimeEventForNewEvent:harvested:;
+@end

@@ -1,0 +1,33 @@
+@interface NETSchemaNETHandShakeProtocol : SISchemaInstrumentationMessage
+@property (nonatomic) NSInteger protocol;
+@property (nonatomic) BOOL hasProtocol;
+@property (nonatomic) I handShakeRTT;
+@property (nonatomic) BOOL hasHandShakeRTT;
+@property (nonatomic) Q handShakeDuration;
+@property (nonatomic) BOOL hasHandShakeDuration;
+@property (nonatomic) NSData jsonData;
+- (int)protocol;
+- (void)setProtocol:;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (BOOL)hasProtocol;
+- (void)setHasProtocol:;
+- (void)deleteProtocol;
+- (void)setHandShakeRTT:;
+- (BOOL)hasHandShakeRTT;
+- (void)setHasHandShakeRTT:;
+- (void)deleteHandShakeRTT;
+- (void)setHandShakeDuration:;
+- (BOOL)hasHandShakeDuration;
+- (void)setHasHandShakeDuration:;
+- (void)deleteHandShakeDuration;
+- (unsigned int)handShakeRTT;
+- (unsigned long long)handShakeDuration;
+@end

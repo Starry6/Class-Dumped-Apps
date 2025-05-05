@@ -1,0 +1,33 @@
+@interface CIPortraitBlurV2 : CIFilter
+@property (nonatomic) CIImage inputImage;
+@property (nonatomic) CIImage inputMatteImage;
+@property (nonatomic) CIImage inputBlurmapImage;
+@property (nonatomic) NSNumber inputLumaNoiseScale;
+@property (nonatomic) NSNumber inputScale;
+@property (nonatomic) NSNumber inputAperture;
+@property (nonatomic) NSDictionary inputTuningParameters;
+@property (nonatomic) NSString inputShape;
+@property (nonatomic) NSNumber inputDraftMode;
+- (id)inputScale;
+- (void)setInputScale:;
+- (id)inputImage;
+- (void)setInputImage:;
+- (id)outputImage;
+- (id)inputTuningParameters;
+- (void)setInputTuningParameters:;
+- (id)inputMatteImage;
+- (id)inputDraftMode;
+- (void)setInputDraftMode:;
+- (id)inputBlurmapImage;
+- (void)setInputBlurmapImage:;
+- (void)setInputMatteImage:;
+- (id)inputLumaNoiseScale;
+- (void)setInputLumaNoiseScale:;
+- (id)inputAperture;
+- (void)setInputAperture:;
+- (id)inputShape;
+- (void)setInputShape:;
+- (id)sensorSize;
+- (double)effectiveScale;
++ (id)customAttributes;
+@end

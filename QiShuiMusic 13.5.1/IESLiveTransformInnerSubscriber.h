@@ -1,0 +1,31 @@
+@interface IESLiveTransformInnerSubscriber : NSObject
+@property (nonatomic) <IESLiveSubscriber> downtream;
+@property (nonatomic) @ transform;
+@property (nonatomic) q type;
+@property (nonatomic) Q skipedCount;
+@property (nonatomic) @ lastValue;
+@property (nonatomic) IESLiveSubscription throttleSubscription;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setSkipedCount:;
+- (void)receiveDisposal;
+- (id)downtream;
+- (id)initWithDownstream:transform:type:;
+- (id)preshDwonStreamAfter:;
+- (void)receiveLastValue:;
+- (void)receiveValue:;
+- (void)setDowntream:;
+- (void)setThrottleSubscription:;
+- (unsigned long long)skipedCount;
+- (id)throttleSubscription;
+- (void)receiveSubscription:;
+- (void)setTransform:;
+- (void)setType:;
+- (id)lastValue;
+- (id)transform;
+- (long long)type;
+- (void).cxx_destruct;
+- (void)setLastValue:;
+@end

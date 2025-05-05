@@ -1,0 +1,36 @@
+@interface LynxCollectionDataSource : NSObject
+@property (nonatomic) LynxUICollection collection;
+@property (nonatomic) Q operationIDCount;
+@property (nonatomic) q itemCount;
+@property (nonatomic) BOOL firstTime;
+@property (nonatomic) BOOL ignoreLoadCell;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)updateItemCount;
+- (BOOL)applyFirstTime;
+- (long long)generateOperationId;
+- (BOOL)ignoreLoadCell;
+- (id)initWithLynxUICollection:;
+- (id)invalidationContextForForcedItemCountChanging;
+- (BOOL)isEmptyDataUpdates;
+- (void)loadCell:forIndexPath:;
+- (unsigned long long)operationIDCount;
+- (void)performBatchUpdatesFirstTime;
+- (void)performBatchUpdatesWithInvaildationContext:;
+- (void)registerAllReuseIdentifiers;
+- (void)setFirstTime:;
+- (void)setIgnoreLoadCell:;
+- (void)setOperationIDCount:;
+- (void)updateWithDiffResultApplyInvalidationContext:;
+- (long long)itemCount;
+- (id)collection;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (void)apply;
+- (void).cxx_destruct;
+- (long long)numberOfSectionsInCollectionView:;
+- (void)setItemCount:;
+- (BOOL)firstTime;
+@end

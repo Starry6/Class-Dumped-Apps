@@ -1,0 +1,36 @@
+@interface SFCompanionService : NSObject
+@property (nonatomic) NSString deviceID;
+@property (nonatomic) NSString deviceName;
+@property (nonatomic) NSString serviceType;
+@property (nonatomic) NSString managerID;
+@property (nonatomic) NSString ipAddress;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) NSNumber nsxpcVersion;
+- (void)setDeviceName:;
+- (id)deviceName;
+- (id)serviceType;
+- (id)identifier;
+- (void)setServiceType:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)setDeviceID:;
+- (id)deviceID;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)initWithServiceName:;
+- (void)setIdentifier:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)messageData;
+- (id)ipAddress;
+- (id)managerID;
+- (BOOL)isEqualToService:;
+- (void)setManagerID:;
+- (void)setIpAddress:;
+- (id)nsxpcVersion;
+- (void)setNsxpcVersion:;
++ (BOOL)supportsSecureCoding;
++ (id)serviceFromAuthorData:;
++ (id)serviceFromDictionary:;
+@end

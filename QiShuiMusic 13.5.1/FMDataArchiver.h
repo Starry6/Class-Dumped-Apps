@@ -1,0 +1,31 @@
+@interface FMDataArchiver : NSObject
+@property (nonatomic) NSURL fileURL;
+@property (nonatomic) NSData unitTestData;
+@property (nonatomic) q dataProtectionClass;
+@property (nonatomic) BOOL backedUp;
+@property (nonatomic) BOOL createDirectories;
+- (void)setFileURL:;
+- (id)readDataOfClasses:error:;
+- (void)setCreateDirectories:;
+- (void)injectUnitTestData:;
+- (id)saveArray:;
+- (BOOL)saveArray:error:;
+- (id)unitTestData;
+- (void)setDataProtectionClass:;
+- (id)saveDictionary:;
+- (void)setBackedUp:;
+- (BOOL)backedUp;
+- (unsigned long long)dataWritingOptionForDataProtectionClass:;
+- (id)initWithFileURL:;
+- (id)saveObject:;
+- (void).cxx_destruct;
+- (id)fileURL;
+- (BOOL)saveDictionary:error:;
+- (id)readArrayAndClasses:error:;
+- (id)underlyingDataWithError:;
+- (BOOL)createDirectories;
+- (void)setUnitTestData:;
+- (id)readDictionaryAndClasses:error:;
+- (long long)dataProtectionClass;
++ (id)defaultClasses;
+@end

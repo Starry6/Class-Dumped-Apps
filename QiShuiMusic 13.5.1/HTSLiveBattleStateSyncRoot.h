@@ -1,0 +1,2 @@
+@interface HTSLiveBattleStateSyncRoot : GPBRootObject
+@end

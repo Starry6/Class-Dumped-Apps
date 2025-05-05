@@ -1,0 +1,30 @@
+@interface BSUIVibrancyEffectView : BSUIVibrancyView
+@property (nonatomic) BSUIVibrancyBackdropView materialBackdropView;
+@property (nonatomic) UIView maskView;
+@property (nonatomic) UIView vibrancyView;
+@property (nonatomic) BOOL isEnabled;
+@property (nonatomic) BOOL captureOnly;
+@property (nonatomic) BOOL blurEnabled;
+@property (nonatomic) UIView contentView;
+@property (nonatomic) Q contentType;
+- (void)setBlurEnabled:;
+- (void)setContentType:;
+- (BOOL)isBlurEnabled;
+- (void)updateFilters;
+- (id)contentView;
+- (id)vibrancyView;
+- (void)_updateSubviews;
+- (void)invalidateSubviews;
+- (id)maskView;
+- (void)layoutSubviews;
+- (unsigned long long)contentType;
+- (id)hitTest:withEvent:;
+- (void)setCaptureOnly:;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (id)materialBackdropView;
+- (void)_updateSubviewsIfNeeded;
+- (BOOL)isCaptureOnly;
+- (void)setIsEnabled:;
+- (BOOL)isEnabled;
+@end

@@ -1,0 +1,32 @@
+@interface IDSQRProtoTestRequest : PBRequest
+@property (nonatomic) I testOptionFlags;
+@property (nonatomic) BOOL hasRequestedMessageType;
+@property (nonatomic) I requestedMessageType;
+@property (nonatomic) BOOL hasRequestedErrorCode;
+@property (nonatomic) I requestedErrorCode;
+@property (nonatomic) BOOL hasSubOperation;
+@property (nonatomic) NSString subOperation;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setRequestedMessageType:;
+- (void)setHasRequestedMessageType:;
+- (BOOL)hasRequestedMessageType;
+- (void)setRequestedErrorCode:;
+- (void)setHasRequestedErrorCode:;
+- (BOOL)hasRequestedErrorCode;
+- (BOOL)hasSubOperation;
+- (unsigned int)testOptionFlags;
+- (void)setTestOptionFlags:;
+- (unsigned int)requestedMessageType;
+- (unsigned int)requestedErrorCode;
+- (id)subOperation;
+- (void)setSubOperation:;
+@end

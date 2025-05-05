@@ -1,0 +1,35 @@
+@interface SiriTTSService.TTSAssetLegacyAsset : TTSAsset
+@property (nonatomic) TTSAssetType assetType;
+@property (nonatomic) TTSAssetSource assetSource;
+@property (nonatomic) TTSAssetTechnology technology;
+@property (nonatomic) TTSAssetQuality quality;
+@property (nonatomic) NSString name;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) q versionNumber;
+@property (nonatomic) NSString versionDescription;
+@property (nonatomic) NSArray supportedLanguages;
+@property (nonatomic) q gender;
+@property (nonatomic) NSNumber age;
+@property (nonatomic) NSNumber diskSize;
+@property (nonatomic) NSDictionary attributes;
+@property (nonatomic) NSBundle bundle;
+@property (nonatomic) BOOL purgeable;
+- (id)assetType;
+- (void)purge;
+- (id)quality;
+- (id)init;
+- (id)supportedLanguages;
+- (id)technology;
+- (long long)gender;
+- (id)age;
+- (id)diskSize;
+- (id)versionDescription;
+- (id)identifier;
+- (id)attributes;
+- (id)bundle;
+- (id)assetSource;
+- (void).cxx_destruct;
+- (BOOL)purgeable;
+- (id)name;
+- (long long)versionNumber;
+@end

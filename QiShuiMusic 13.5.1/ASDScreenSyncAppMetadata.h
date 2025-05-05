@@ -1,0 +1,37 @@
+@interface ASDScreenSyncAppMetadata : NSObject
+@property (nonatomic) NSString accountName;
+@property (nonatomic) NSString bundleID;
+@property (nonatomic) NSNumber externalVersionIdentifier;
+@property (nonatomic) NSNumber itemID;
+@property (nonatomic) NSString itemName;
+@property (nonatomic) NSNumber purchaserDSID;
+@property (nonatomic) NSNumber storeFront;
+@property (nonatomic) NSString vendorName;
+@property (nonatomic) q metadataType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)vendorName;
+- (id)itemID;
+- (void)setStoreFront:;
+- (id)initWithCoder:;
+- (id)initWithBundleID:;
+- (void)setAccountName:;
+- (void)setItemID:;
+- (void)setPurchaserDSID:;
+- (void)encodeWithCoder:;
+- (id)itemName;
+- (void).cxx_destruct;
+- (id)storeFront;
+- (id)purchaserDSID;
+- (id)bundleID;
+- (id)accountName;
+- (id)copyWithZone:;
+- (id)externalVersionIdentifier;
+- (long long)metadataType;
+- (void)setItemName:;
+- (void)setVendorName:;
+- (void)setExternalVersionIdentifier:;
++ (BOOL)supportsSecureCoding;
+@end

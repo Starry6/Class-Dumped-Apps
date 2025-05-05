@@ -1,0 +1,37 @@
+@interface LynxGestureArenaManager : NSObject
+@property (nonatomic) q potentialMemberId;
+@property (nonatomic) <LynxGestureArenaMember> winner;
+@property (nonatomic) NSMutableDictionary arenaMemberMap;
+@property (nonatomic) NSMutableArray bubbleCandidate;
+@property (nonatomic) LynxGestureDetectorManager gestureDetectorManager;
+@property (nonatomic) NSMutableArray competitionChainCandidates;
+@property (nonatomic) LynxGestureHandlerTrigger gestureHandlerTrigger;
+- (id)bubbleCandidate;
+- (long long)addMember:;
+- (id)arenaMemberMap;
+- (void)clearCurrentGesture;
+- (id)competitionChainCandidates;
+- (void)dispatchBubble:touchEvent:;
+- (void)dispatchTouchToArena:touches:event:touchEvent:;
+- (id)gestureDetectorManager;
+- (id)gestureHandlerTrigger;
+- (id)getCompetitionChainCandidates;
+- (id)getMemberById:;
+- (BOOL)isMemberExist:;
+- (long long)potentialMemberId;
+- (void)registerGestureDetectors:detectorMap:;
+- (void)removeMember:detectorMap:;
+- (void)setActiveUIToArena:;
+- (void)setArenaMemberMap:;
+- (void)setBubbleCandidate:;
+- (void)setCompetitionChainCandidates:;
+- (void)setGestureDetectorManager:;
+- (void)setGestureDetectorState:memberId:state:;
+- (void)setPotentialMemberId:;
+- (void)setWinner:;
+- (void)unregisterGestureDetectors:detectorMap:;
+- (id)winner;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (id)initWithEventHandler:;
+@end

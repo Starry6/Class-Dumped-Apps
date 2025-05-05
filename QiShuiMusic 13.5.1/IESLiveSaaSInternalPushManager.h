@@ -1,0 +1,37 @@
+@interface IESLiveSaaSInternalPushManager : NSObject
+@property (nonatomic) HTSLiveApi api;
+@property (nonatomic) NSMutableArray viewQueue;
+@property (nonatomic) NSMutableDictionary countDict;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)addViewToQueue:;
+- (void)ackType:anchorId:;
+- (void)clearQueueIfNeeded;
+- (id)countDict;
+- (void)didEnterRoom;
+- (void)didPushClick:type:;
+- (void)didPushShow:;
+- (void)enterRoom:;
+- (void)fetchPush:uiConfig:checkShowHandler:;
+- (void)fetchPushInfo:completion:;
+- (id)paramsWithModel:extra:;
+- (void)popViewFromQueue:;
+- (void)pushView:didDimiss:;
+- (BOOL)reachMaxCount;
+- (void)setCountDict:;
+- (void)setViewQueue:;
+- (void)showPushView:uiConfig:;
+- (void)trackPushClick:type:;
+- (void)trackPushFail:reason:;
+- (void)trackPushShow:;
+- (void)updateMaxCount;
+- (id)viewQueue;
+- (id)init;
+- (void)clear;
+- (void).cxx_destruct;
+- (id)api;
+- (void)setApi:;
++ (id)shared;
+@end

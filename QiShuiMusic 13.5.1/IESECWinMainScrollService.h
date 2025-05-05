@@ -1,0 +1,31 @@
+@interface IESECWinMainScrollService : IESECContextService
+@property (nonatomic) double startOffset;
+@property (nonatomic) double offsetY;
+@property (nonatomic) q scrollStatus;
+@property (nonatomic) double listOffsetY;
+@property (nonatomic) @? scrollToTopBlock;
+@property (nonatomic) @? scrollToLiveBlock;
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) IGListAdapter adapter;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setListOffsetY:;
+- (double)listOffsetY;
+- (long long)scrollStatus;
+- (id)scrollToLiveBlock;
+- (id)scrollToTopBlock;
+- (void)setScrollStatus:;
+- (void)setScrollToLiveBlock:;
+- (void)setScrollToTopBlock:;
+- (void)setStartOffset:;
+- (void)setCollectionView:;
+- (id)adapter;
+- (void).cxx_destruct;
+- (double)startOffset;
+- (id)collectionView;
+- (void)setAdapter:;
+- (double)offsetY;
+- (void)setOffsetY:;
+@end

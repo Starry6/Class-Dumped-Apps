@@ -1,0 +1,36 @@
+@interface DOCItemCollectionObserver : NSObject
+@property (nonatomic) FPItemCollection itemCollection;
+@property (nonatomic) NSMutableArray subscribers;
+@property (nonatomic) NSMutableArray delegates;
+@property (nonatomic) <FPItemCollectionIndexPathBasedDelegate> soleUpdatableDelegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)delegates;
+- (void)setDelegates:;
+- (void)dealloc;
+- (void)observeValueForKeyPath:ofObject:change:context:;
+- (void).cxx_destruct;
+- (id)subscribers;
+- (id)addSubscriber:;
+- (void)removeSubscriber:;
+- (id)itemCollection;
+- (void)setItemCollection:;
+- (id)initWithItemCollection:;
+- (void)dataForCollectionShouldBeReloaded:;
+- (void)collection:didInsertItemsAtIndexPaths:;
+- (void)collection:didMoveItemsFromIndexPaths:toIndexPaths:;
+- (void)collection:didDeleteItemsAtIndexPaths:;
+- (void)collection:didUpdateItemsAtIndexPaths:changes:;
+- (void)collection:didPerformBatchUpdateWithReplayBlock:;
+- (void)setSubscribers:;
+- (void)notifySubscribers;
+- (void)addItemCollectionDelegate:;
+- (void)removeItemCollectionDelegate:;
+- (void)_purgeOrphanedContainers;
+- (void)_enumerateItemCollectionIndexPathBasedDelegatesWithBlock:;
+- (id)soleUpdatableDelegate;
+- (void)setSoleUpdatableDelegate:;
+- (id)__delegates;
+@end

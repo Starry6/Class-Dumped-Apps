@@ -1,0 +1,2 @@
+@interface PKExtendedPhysicsWorld : PKPhysicsWorld
+@end

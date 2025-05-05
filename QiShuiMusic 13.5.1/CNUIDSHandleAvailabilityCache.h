@@ -1,0 +1,2 @@
+@interface CNUIDSHandleAvailabilityCache : CNCache
+@end

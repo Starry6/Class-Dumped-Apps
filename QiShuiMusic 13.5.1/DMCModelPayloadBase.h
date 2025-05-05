@@ -1,0 +1,37 @@
+@interface DMCModelPayloadBase : NSObject
+@property (nonatomic) NSSet unknownPayloadKeys;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (void)mergeUnknownKeysFrom:parentKey:;
+- (id)createNestedObjectWithClass:serializationType:parentKey:payload:error:;
+- (BOOL)loadFromDictionary:serializationType:error:;
+- (id)serializeWithType:;
+- (id)serializeAsDataWithType:error:;
+- (BOOL)_loadObjectOfClass:fromDictionary:usingKey:isRequired:defaultValue:payloadValue:error:;
+- (BOOL)loadStringFromDictionary:usingKey:forKeyPath:isRequired:defaultValue:error:;
+- (BOOL)loadIntegerFromDictionary:usingKey:forKeyPath:isRequired:defaultValue:error:;
+- (BOOL)loadFloatFromDictionary:usingKey:forKeyPath:isRequired:defaultValue:error:;
+- (BOOL)loadBooleanFromDictionary:usingKey:forKeyPath:isRequired:defaultValue:error:;
+- (BOOL)loadDateFromDictionary:usingKey:forKeyPath:isRequired:defaultValue:serializationType:error:;
+- (BOOL)loadDataFromDictionary:usingKey:forKeyPath:isRequired:defaultValue:serializationType:error:;
+- (BOOL)loadArrayFromDictionary:usingKey:forKeyPath:validator:isRequired:defaultValue:error:;
+- (BOOL)loadArrayFromDictionary:usingKey:forKeyPath:classType:nested:isRequired:defaultValue:serializationType:error:;
+- (BOOL)loadDictionaryFromDictionary:usingKey:forKeyPath:classType:isRequired:defaultValue:serializationType:error:;
+- (BOOL)getModelObjectFromDictionary:usingKey:classType:isRequired:defaultValue:serializationType:payloadValue:error:;
+- (void)_serializeItemIntoDictionary:usingKey:value:isRequired:isDefaultValue:;
+- (void)serializeStringIntoDictionary:usingKey:value:isRequired:defaultValue:;
+- (void)serializeIntegerIntoDictionary:usingKey:value:isRequired:defaultValue:;
+- (void)serializeFloatIntoDictionary:usingKey:value:isRequired:defaultValue:;
+- (void)serializeBooleanIntoDictionary:usingKey:value:isRequired:defaultValue:;
+- (void)serializeDateIntoDictionary:usingKey:value:isRequired:defaultValue:serializationType:;
+- (void)serializeDataIntoDictionary:usingKey:value:isRequired:defaultValue:serializationType:;
+- (void)serializeArrayIntoDictionary:usingKey:value:itemSerializer:isRequired:defaultValue:;
+- (void)serializeDictionaryIntoDictionary:usingKey:value:dictSerializer:isRequired:defaultValue:;
+- (id)unknownPayloadKeys;
+- (void)setUnknownPayloadKeys:;
++ (BOOL)supportsSecureCoding;
++ (id)load:serializationType:error:;
++ (id)loadData:serializationType:error:;
+@end

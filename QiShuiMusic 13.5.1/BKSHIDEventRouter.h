@@ -1,0 +1,30 @@
+@interface BKSHIDEventRouter : NSObject
+@property (nonatomic) q destination;
+@property (nonatomic) NSSet hidEventDescriptors;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)_setDelegate:;
+- (id)init;
+- (BOOL)specifiesDescriptor:;
+- (BOOL)containsDescriptor:;
+- (long long)destination;
+- (id)succinctDescriptionBuilder;
+- (unsigned long long)hash;
+- (id)debugDescription;
+- (void).cxx_destruct;
+- (id)succinctDescription;
+- (id)description;
+- (id)descriptionBuilderWithMultilinePrefix:;
+- (BOOL)isEqual:;
+- (id)descriptionWithMultilinePrefix:;
+- (id)_initWithDestination:hidEventDescriptors:;
+- (id)hidEventDescriptors;
+- (void)addHIDEventDescriptors:;
+- (void)removeHIDEventDescriptors:;
++ (id)routerWithDestination:;
++ (id)defaultEventRouters;
++ (id)defaultSystemAppEventRouter;
++ (id)defaultFocusedAppEventRouter;
+@end

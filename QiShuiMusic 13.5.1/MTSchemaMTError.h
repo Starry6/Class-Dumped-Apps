@@ -1,0 +1,34 @@
+@interface MTSchemaMTError : SISchemaInstrumentationMessage
+@property (nonatomic) NSString errorDomain;
+@property (nonatomic) BOOL hasErrorDomain;
+@property (nonatomic) NSString errorMessage;
+@property (nonatomic) BOOL hasErrorMessage;
+@property (nonatomic) NSInteger errorCode;
+@property (nonatomic) BOOL hasErrorCode;
+@property (nonatomic) NSData jsonData;
+- (id)errorDomain;
+- (BOOL)hasErrorCode;
+- (int)errorCode;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void)setErrorDomain:;
+- (BOOL)hasErrorDomain;
+- (id)errorMessage;
+- (void)setHasErrorCode:;
+- (void)setErrorCode:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)setErrorMessage:;
+- (void)deleteErrorCode;
+- (void)deleteErrorDomain;
+- (void)setHasErrorDomain:;
+- (BOOL)hasErrorMessage;
+- (void)deleteErrorMessage;
+- (void)setHasErrorMessage:;
+@end

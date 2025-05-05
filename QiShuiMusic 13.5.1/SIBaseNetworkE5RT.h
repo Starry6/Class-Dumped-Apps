@@ -1,0 +1,38 @@
+@interface SIBaseNetworkE5RT : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)dealloc;
+- (BOOL)prepare;
+- (void).cxx_destruct;
+- (id).cxx_construct;
+- (id)networkVersion;
+- (id)initWithNetworkConfiguration:;
+- (unsigned long long)getInputWidth:;
+- (unsigned long long)getInputHeight:;
+- (unsigned long long)getInputChannels:;
+- (unsigned long long)getInputLength:;
+- (unsigned long long)getOutputWidth:;
+- (unsigned long long)getOutputHeight:;
+- (unsigned long long)getOutputChannels:;
+- (unsigned long long)getOutputRowElements:;
+- (id)getOpsForLibrary;
+- (id)getRawOutput:;
+- (unsigned long long)getOutputLength:;
+- (void)setInput:fromCVPixelBuffer:;
+- (void)setInput:fromRawPointer:;
+- (void)setOutputBlob:forOutputSurface:;
+- (BOOL)runNetwork;
+- (BOOL)switchConfiguration:;
+- (BOOL)supportFloat16IO;
+- (BOOL)supportZeroCopyOutput;
+- (void)_setupMetaDataFromLibrary;
+- (id)createE5RTException;
+- (id)initWithNetName:;
+- (id)initWithNetPath:;
+- (id)getInputPtr:;
+- (id)getOutputShape:;
+- (unsigned long long)getOutputBatchNum:;
+- (BOOL)outputExists:;
+@end

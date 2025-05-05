@@ -1,0 +1,30 @@
+@interface IESLiveGiftAssemblyCustomizeEntranceModel : NSObject
+@property (nonatomic) HTSLiveAssetStruct lynxEffectModel;
+@property (nonatomic) NSString schemaUrl;
+@property (nonatomic) HTSLiveText entranceText;
+@property (nonatomic) NSString entranceDefaultText;
+@property (nonatomic) NSString toUserId;
+@property (nonatomic) NSArray assetList;
+@property (nonatomic) NSDictionary entranceExtraParams;
+- (id)lynxEffectModel;
+- (id)assetLocalPathStr;
+- (id)entranceDefaultText;
+- (id)entranceExtraParams;
+- (id)entranceText;
+- (BOOL)isEntranceEnabled;
+- (BOOL)isEntranceSchemaReady;
+- (void)reportCustomizeEntranceInfo;
+- (id)schemaUrl;
+- (void)setEntranceDefaultText:;
+- (void)setEntranceExtraParams:;
+- (void)setEntranceText:;
+- (void)setLynxEffectModel:;
+- (void)setSchemaUrl:;
+- (void)setToUserId:;
+- (id)toUserId;
+- (void).cxx_destruct;
+- (id)modelPath;
+- (id)assetList;
+- (void)setAssetList:;
+- (BOOL)isModelReady;
+@end

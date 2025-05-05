@@ -1,0 +1,36 @@
+@interface IESLivePrivilegeEntranceBarView : UIView
+@property (nonatomic) IESLivePrivilegeEntranceBarViewModel viewModel;
+@property (nonatomic) PuzzleHybridContainer dynamicOperationContainer;
+@property (nonatomic) UIView<IESLivePrivilegeEntranceViewProtocol> privilegeButton;
+@property (nonatomic) <IESLiveSubscription> disposable;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) <IESLiveRefactGiftPanelSectionVMProtocol> sectionVM;
+- (id)currentLynxData;
+- (void)viewDidLoadFailedWithUrl:error:;
+- (id)privilegeButton;
+- (id)disposable;
+- (id)dynamicOperationContainer;
+- (void)loadLynxView;
+- (void)loadPrivilegeButtonIfNeeded;
+- (void)removeCurrentLynxViewIfNeeded;
+- (id)routerParams;
+- (id)sectionVM;
+- (void)setDisposable:;
+- (void)setDynamicOperationContainer:;
+- (void)setPrivilegeButton:;
+- (void)setSectionVM:;
+- (void)showButtonAnimation;
+- (void)updateLynxData;
+- (void)updatePrivilegeButton;
+- (void)viewDidFinishLoadWithURL:;
+- (void)viewDidRecieveError:;
+- (void)dealloc;
+- (id)viewModel;
+- (void)setup;
+- (void).cxx_destruct;
+- (void)setViewModel:;
+- (id)initWithFrame:viewModel:;
+@end

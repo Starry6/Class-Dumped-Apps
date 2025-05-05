@@ -1,0 +1,37 @@
+@interface MPSImageLaplacianPyramid : MPSImagePyramid
+@property (nonatomic) BOOL isPyramidAdd;
+@property (nonatomic) NSDictionary copyConfigs;
+@property (nonatomic) NSDictionary upsampleConfigs;
+@property (nonatomic) BOOL autotuningEnabled;
+@property (nonatomic) Q copyConfigID;
+@property (nonatomic) Q upsampleConfigID;
+@property (nonatomic) float laplacianBias;
+@property (nonatomic) float laplacianScale;
+- (id)initWithCoder:device:;
+- (id)copyWithZone:device:;
+- (void)setOffset:;
+- (id)sourceRegionForDestinationSize:;
+- (void)dealloc;
+- (id)initWithDevice:kernelWidth:kernelHeight:weights:;
+- (void)encodeWithCoder:;
+- (void)setClipRect:;
+- (void)zeroInitAll;
+- (void)cleanUpAll;
+- (BOOL)getIsPyramidAdd;
+- (float)getLaplacianBias;
+- (float)getLaplacianScale;
+- (void)setIsPyramidAdd:;
+- (void)setLaplacianBias:;
+- (void)setLaplacianScale:;
+- (BOOL)getAutotuningEnabled;
+- (id)getCopyConfigs;
+- (id)getUpsampleConfigs;
+- (unsigned long long)getCopyConfigID;
+- (unsigned long long)getUpsampleConfigID;
+- (void)setAutotuningEnabled:;
+- (void)setCopyConfigID:;
+- (void)setUpsampleConfigID:;
+- (BOOL)isValidDstPixelFormat:srcPixelFormat:;
+- (BOOL)isReducedPrecisionAllowedForDstPixelFormat:srcPixelFormat:;
++ (id)libraryInfo:;
+@end

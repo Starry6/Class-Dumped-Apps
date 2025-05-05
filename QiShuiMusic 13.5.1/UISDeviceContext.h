@@ -1,0 +1,31 @@
+@interface UISDeviceContext : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)_valueTypeForValue:;
+- (id)initWithBSXPCCoder:;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (void)encodeWithBSXPCCoder:;
+- (id)description;
+- (id)mutableCopyWithZone:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (long long)deviceInfoIntegerValueForKey:;
+- (double)deviceInfoFloatValueForKey:;
+- (id)initWithDeviceInfoValues:;
+- (BOOL)hasDeviceInfoValueForKey:;
+- (BOOL)deviceInfoBoolValueForKey:;
+- (id)deviceInfoStringValueForKey:;
+- (long long)_valueTypeForKey:;
+- (BOOL)_isDeviceInfoType:appropriateForKey:;
+- (BOOL)_isDeviceInfoValue:appropriateForKey:;
+- (id)_rawDeviceInfoKeysToValues;
+- (id)_dictionaryWithOnlyValidKeysFromDictionary:;
++ (id)_loadedInitialContext;
++ (id)defaultContext;
++ (BOOL)supportsBSXPCSecureCoding;
++ (id)_allKeys;
++ (id)_keysToValueTypes;
+@end

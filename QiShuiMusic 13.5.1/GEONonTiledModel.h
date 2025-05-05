@@ -1,0 +1,32 @@
+@interface GEONonTiledModel : PBCodable
+@property (nonatomic) BOOL hasInfo;
+@property (nonatomic) GEONonTiledInfo info;
+@property (nonatomic) NSMutableArray materialMaps;
+- (void)readAll:;
+- (id)init;
+- (void)setMaterialMaps:;
+- (void)addMaterialMap:;
+- (id)materialMapAtIndex:;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (void)clearMaterialMaps;
+- (id)materialMaps;
+- (void)setInfo:;
+- (id)initWithDictionary:;
+- (BOOL)hasInfo;
+- (void)writeTo:;
+- (unsigned long long)materialMapsCount;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)info;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
++ (BOOL)isValid:;
++ (Class)materialMapType;
+@end

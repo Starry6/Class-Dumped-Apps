@@ -1,0 +1,30 @@
+@interface SNNullRequest : NSObject
+@property (nonatomic) double sampleRate;
+@property (nonatomic) I blockSize;
+@property (nonatomic) double computationalDutyCycle;
+@property (nonatomic) BOOL graphIsDeadEnded;
+@property (nonatomic) BOOL shouldThrowException;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (double)sampleRate;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (unsigned int)blockSize;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setSampleRate:;
+- (void)setBlockSize:;
+- (id)createAnalyzerWithError:;
+- (double)computationalDutyCycle;
+- (void)setComputationalDutyCycle:;
+- (BOOL)graphIsDeadEnded;
+- (void)setGraphIsDeadEnded:;
+- (BOOL)shouldThrowException;
+- (void)setShouldThrowException:;
++ (BOOL)supportsSecureCoding;
+@end

@@ -1,0 +1,35 @@
+@interface AWEIMGroupListSortingMenuView : UIView
+@property (nonatomic) UITableView tableView;
+@property (nonatomic) UIView tableShadowView;
+@property (nonatomic) UIView triangleView;
+@property (nonatomic) NSArray dataArray;
+@property (nonatomic) UIView maskView;
+@property (nonatomic) <UITableViewDelegate><AWEIMGroupListSortingMenuProtocol> tableViewDelegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)tableShadowView;
+- (void)__onLongPress:;
+- (void)__tapOnMask;
+- (void)setTableShadowView:;
+- (void)setTableViewDelegate:;
+- (void)setTriangleView:;
+- (id)tableViewDelegate;
+- (id)triangleView;
+- (id)initWithItems:;
+- (id)maskView;
+- (void)layoutSubviews;
+- (id)tableView:cellForRowAtIndexPath:;
+- (void)hide;
+- (double)tableView:heightForRowAtIndexPath:;
+- (void)tableView:didSelectRowAtIndexPath:;
+- (void).cxx_destruct;
+- (void)setTableView:;
+- (void)setMaskView:;
+- (id)tableView;
+- (long long)tableView:numberOfRowsInSection:;
+- (id)dataArray;
+- (void)setDataArray:;
++ (id)showMenuWithItems:atAnchorPoint:;
+@end

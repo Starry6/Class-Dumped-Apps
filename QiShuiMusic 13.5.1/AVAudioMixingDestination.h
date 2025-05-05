@@ -1,0 +1,34 @@
+@interface AVAudioMixingDestination : NSObject
+@property (nonatomic) AVAudioConnectionPoint connectionPoint;
+@property (nonatomic) float volume;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setPosition:;
+- (float)pan;
+- (void)setRate:;
+- (id)position;
+- (id)init;
+- (float)volume;
+- (void)dealloc;
+- (void)setReverbBlend:;
+- (id)implementation;
+- (float)obstruction;
+- (void)setSourceMode:;
+- (void)setVolume:;
+- (float)rate;
+- (long long)renderingAlgorithm;
+- (id)destinationForMixer:bus:;
+- (float)occlusion;
+- (void)setPointSourceInHeadMode:;
+- (void)setObstruction:;
+- (void)setPan:;
+- (long long)pointSourceInHeadMode;
+- (float)reverbBlend;
+- (void)setRenderingAlgorithm:;
+- (long long)sourceMode;
+- (id)connectionPoint;
+- (void)setOcclusion:;
+- (id)initWithImpl:;
+@end

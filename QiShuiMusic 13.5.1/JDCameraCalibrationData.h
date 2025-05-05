@@ -1,0 +1,37 @@
+@interface JDCameraCalibrationData : NSObject
+@property (nonatomic) {?=[3]} intrinsicMatrix;
+@property (nonatomic) {CGSize=dd} referenceDimensions;
+@property (nonatomic) {?=[4]} cameraToPlatformTransform;
+@property (nonatomic) float pixelSize;
+@property (nonatomic) NSInteger distortionModel;
+@property (nonatomic) NSData distortedRadii;
+@property (nonatomic) NSData undistortedRadii;
+@property (nonatomic) {CGPoint=dd} lensDistortionCenter;
+@property (nonatomic) r^{JDGDCPolynomials=[8f][8f]} distortionPolynomials;
+@property (nonatomic) NSData distortionWarperMesh;
+@property (nonatomic) q distortionWarperMeshWidth;
+@property (nonatomic) q distortionWarperMeshHeight;
+- (float)pixelSize;
+- (id)init;
+- (void).cxx_destruct;
+- (id)dictionaryRepresentation;
+- (id)mutableCopyWithZone:;
+- (id)copyWithZone:;
+- (id)lensDistortionCenter;
+- (id)intrinsicMatrix;
+- (id)distortionPolynomials;
+- (int)distortionModel;
+- (id)referenceDimensions;
+- (id)cameraToPlatformTransform;
+- (id)getTransformationTo:;
+- (id)distortedRadii;
+- (id)undistortedRadii;
+- (id)internalCalib;
+- (id)initWithInternalCalibration:;
+- (id)getCameraToPlatformForTransformation:;
+- (id)getInternalCalib;
+- (id)distortionWarperMesh;
+- (long long)distortionWarperMeshWidth;
+- (long long)distortionWarperMeshHeight;
++ (id)makeWithDictionary:;
+@end

@@ -1,0 +1,31 @@
+@interface MASCompositeConstraint : MASConstraint
+@property (nonatomic) @ mas_key;
+@property (nonatomic) NSMutableArray childConstraints;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)mas_key;
+- (id)addConstraintWithLayoutAttribute:;
+- (id)childConstraints;
+- (id)constraint:addConstraintWithLayoutAttribute:;
+- (void)constraint:shouldBeReplacedWithConstraint:;
+- (id)dividedBy;
+- (id)equalToWithRelation;
+- (id)multipliedBy;
+- (void)setChildConstraints:;
+- (void)setMas_key:;
+- (void)setSizeOffset:;
+- (void)uninstall;
+- (void)setOffset:;
+- (id)initWithChildren:;
+- (id)key;
+- (void)setInsets:;
+- (void)deactivate;
+- (void).cxx_destruct;
+- (void)setCenterOffset:;
+- (void)activate;
+- (id)priority;
+- (void)install;
+- (void)setInset:;
+@end

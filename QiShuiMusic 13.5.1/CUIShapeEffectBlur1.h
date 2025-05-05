@@ -1,0 +1,35 @@
+@interface CUIShapeEffectBlur1 : CIFilter
+@property (nonatomic) CIImage inputImage;
+@property (nonatomic) CIImage inputFill;
+@property (nonatomic) CIVector inputOffset;
+@property (nonatomic) NSNumber inputRadius;
+@property (nonatomic) CIColor inputGlowColorInner;
+@property (nonatomic) CIColor inputGlowColorOuter;
+@property (nonatomic) CIColor inputShadowColorInner;
+@property (nonatomic) CIColor inputShadowColorOuter;
+@property (nonatomic) NSNumber inputShadowBlurInner;
+@property (nonatomic) NSNumber inputShadowBlurOuter;
+- (void)setInputRadius:;
+- (id)inputImage;
+- (void)setInputImage:;
+- (id)inputRadius;
+- (id)_kernel;
+- (id)outputImage;
+- (id)inputOffset;
+- (void)setInputOffset:;
+- (id)inputFill;
+- (void)setInputFill:;
+- (id)inputGlowColorInner;
+- (void)setInputGlowColorInner:;
+- (id)inputGlowColorOuter;
+- (void)setInputGlowColorOuter:;
+- (id)inputShadowColorInner;
+- (void)setInputShadowColorInner:;
+- (id)inputShadowColorOuter;
+- (void)setInputShadowColorOuter:;
+- (id)inputShadowBlurInner;
+- (void)setInputShadowBlurInner:;
+- (id)inputShadowBlurOuter;
+- (void)setInputShadowBlurOuter:;
++ (id)customAttributes;
+@end

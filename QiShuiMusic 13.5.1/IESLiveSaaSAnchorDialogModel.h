@@ -1,0 +1,32 @@
+@interface IESLiveSaaSAnchorDialogModel : NSObject
+@property (nonatomic) Q style;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString description;
+@property (nonatomic) UIImage image;
+@property (nonatomic) NSArray actions;
+@property (nonatomic) BOOL vertical;
+@property (nonatomic) q seconds;
+@property (nonatomic) NSString formatText;
+@property (nonatomic) @? countdownCompletedBlock;
+- (id)countdownCompletedBlock;
+- (id)formatText;
+- (BOOL)needTimer;
+- (void)setCountdownCompletedBlock:;
+- (void)setFormatText:;
+- (BOOL)isVertical;
+- (void)setVertical:;
+- (void)setActions:;
+- (long long)seconds;
+- (void)setStyle:;
+- (void)setImage:;
+- (void)setTitle:;
+- (id)title;
+- (void)setSeconds:;
+- (id)actions;
+- (void).cxx_destruct;
+- (id)description;
+- (unsigned long long)style;
+- (id)initWithStyle:;
+- (id)image;
+- (void)setDescription:;
+@end

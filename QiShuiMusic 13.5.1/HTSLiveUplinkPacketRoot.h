@@ -1,0 +1,2 @@
+@interface HTSLiveUplinkPacketRoot : GPBRootObject
+@end

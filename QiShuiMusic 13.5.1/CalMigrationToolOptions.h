@@ -1,0 +1,37 @@
+@interface CalMigrationToolOptions : NSObject
+@property (nonatomic) BOOL migrateUsingCalendarDaemon;
+@property (nonatomic) BOOL waitForRemindersOnly;
+@property (nonatomic) NSURL homeDirectory;
+@property (nonatomic) NSURL sourceCalendarDirectory;
+@property (nonatomic) NSURL destinationDirectory;
+@property (nonatomic) q performCalendarMigration;
+@property (nonatomic) q performReminderMigration;
+@property (nonatomic) q performCleanup;
+@property (nonatomic) q deleteMigratedData;
+@property (nonatomic) q backupBeforeCalendarMigration;
+@property (nonatomic) q backupBeforeReminderMigration;
+@property (nonatomic) NSURL accountsChangesFile;
+@property (nonatomic) NSURL accountsDatabaseFile;
+- (id)homeDirectory;
+- (void).cxx_destruct;
+- (long long)performCleanup;
+- (id)description;
+- (id)initUsingCalendarDaemon;
+- (id)initUsingCalendarDaemonWaitingForRemindersOnly;
+- (id)initWithHomeDirectory:;
+- (id)initWithHomeDirectory:destinationDirectory:performCalendarMigration:performReminderMigration:performCleanup:deleteMigratedData:backupBeforeCalendarMigration:backupBeforeReminderMigration:saveAccountsChangesToFile:accountsDatabaseFile:;
+- (id)initWithSourceCalendarDirectory:destinationDirectory:performCalendarMigration:performReminderMigration:performCleanup:deleteMigratedData:backupBeforeCalendarMigration:backupBeforeReminderMigration:saveAccountsChangesToFile:accountsDatabaseFile:;
+- (id)_initWithHomeDirectory:sourceCalendarDirectory:destinationDirectory:migrateUsingCalendarDaemon:waitForRemindersOnly:performCalendarMigration:performReminderMigration:performCleanup:deleteMigratedData:backupBeforeCalendarMigration:backupBeforeReminderMigration:saveAccountsChangesToFile:accountsDatabaseFile:;
+- (BOOL)migrateUsingCalendarDaemon;
+- (BOOL)waitForRemindersOnly;
+- (id)sourceCalendarDirectory;
+- (id)destinationDirectory;
+- (long long)performCalendarMigration;
+- (long long)performReminderMigration;
+- (long long)deleteMigratedData;
+- (long long)backupBeforeCalendarMigration;
+- (long long)backupBeforeReminderMigration;
+- (id)accountsChangesFile;
+- (id)accountsDatabaseFile;
++ (id)_stringForTriStateOption:;
+@end

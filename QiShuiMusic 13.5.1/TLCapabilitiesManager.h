@@ -1,0 +1,30 @@
+@interface TLCapabilitiesManager : NSObject
+@property (nonatomic) BOOL ringtoneStoreAvailable;
+@property (nonatomic) BOOL alertToneStoreAvailable;
+@property (nonatomic) BOOL wantsModernDefaultRingtone;
+@property (nonatomic) BOOL hasVibratorCapability;
+@property (nonatomic) BOOL hasSynchronizedVibrationsCapability;
+@property (nonatomic) BOOL hasSynchronizedEmbeddedVibrationsCapability;
+@property (nonatomic) BOOL hasUserGeneratedVibrationsCapability;
+@property (nonatomic) NSString deviceCodeName;
+@property (nonatomic) NSString simplifiedDeviceCodeName;
+@property (nonatomic) BOOL homePod;
+- (BOOL)isRingtoneStoreAvailable;
+- (id)init;
+- (BOOL)wantsModernDefaultRingtone;
+- (void)dealloc;
+- (BOOL)hasSynchronizedEmbeddedVibrationsCapability;
+- (BOOL)isHomePod;
+- (BOOL)isAlertToneStoreAvailable;
+- (BOOL)hasSynchronizedVibrationsCapability;
+- (id)simplifiedDeviceCodeName;
+- (BOOL)_hasTelephonyCapability;
+- (void).cxx_destruct;
+- (void)_handleStoreAvailableItemKindsChangedNotification:;
+- (BOOL)hasUserGeneratedVibrationsCapability;
+- (void)_updateRingtoneStoreAvailabilityWithAvailableKinds:error:;
+- (id)deviceCodeName;
+- (BOOL)hasVibratorCapability;
+- (void)_checkRingtoneStoreAvailability;
++ (id)sharedCapabilitiesManager;
+@end

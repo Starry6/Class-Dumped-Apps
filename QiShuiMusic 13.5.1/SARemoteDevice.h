@@ -1,0 +1,34 @@
+@interface SARemoteDevice : AceObject
+@property (nonatomic) NSString assistantId;
+@property (nonatomic) NSString brandName;
+@property (nonatomic) NSString deviceName;
+@property (nonatomic) NSString language;
+@property (nonatomic) NSString personalDomainsAuthenticationMode;
+@property (nonatomic) NSNumber personalDomainsEnabled;
+@property (nonatomic) BOOL siriEnabled;
+@property (nonatomic) NSString userAgent;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)userAgent;
+- (void)setUserAgent:;
+- (void)setDeviceName:;
+- (id)groupIdentifier;
+- (id)deviceName;
+- (void)setLanguage:;
+- (id)language;
+- (void)setBrandName:;
+- (id)encodedClassName;
+- (id)brandName;
+- (id)assistantId;
+- (void)setAssistantId:;
+- (void)setSiriEnabled:;
+- (BOOL)siriEnabled;
+- (id)personalDomainsAuthenticationMode;
+- (void)setPersonalDomainsAuthenticationMode:;
+- (id)personalDomainsEnabled;
+- (void)setPersonalDomainsEnabled:;
++ (id)remoteDevice;
++ (id)remoteDeviceWithDictionary:context:;
+@end

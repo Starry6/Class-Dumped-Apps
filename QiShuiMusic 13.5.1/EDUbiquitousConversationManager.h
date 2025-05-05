@@ -1,0 +1,38 @@
+@interface EDUbiquitousConversationManager : NSObject
+@property (nonatomic) <EDUbiquitousConversationManagerDelegate> delegate;
+@property (nonatomic) <EDConversationRemoteStorage> cloudStorage;
+@property (nonatomic) NSObject<OS_dispatch_queue> queue;
+@property (nonatomic) NSMutableDictionary conversationIDsBySyncKey;
+@property (nonatomic) NSMutableSet unmatchedKeys;
+@property (nonatomic) BOOL initialized;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)initialized;
+- (void)setInitialized:;
+- (void)pruneDatabasePurgingOldestEntries:;
+- (id)_syncKeyForConversationID:;
+- (void)performInitialSync;
+- (void)setDelegate:;
+- (BOOL)hasSubscribedConversations;
+- (id)syncKeyForUpdatedConversation:flags:;
+- (id)unmatchedKeys;
+- (void)_setCloudStorageValue:forKey:;
+- (void)setCloudStorage:;
+- (void)performDailyExportForChangedConversations:;
+- (id)delegate;
+- (void)setConversationIDsBySyncKey:;
+- (void).cxx_destruct;
+- (void)_mergeServerChanges:;
+- (id)initWithDelegate:;
+- (id)cloudStorage;
+- (void)setQueue:;
+- (void)setUnmatchedKeys:;
+- (BOOL)_synchronize;
+- (void)conversationRemoteStorage:didChangeEntries:reason:;
+- (id)queue;
+- (id)conversationIDsBySyncKey;
+- (void)setFlags:forConversations:;
++ (id)log;
+@end

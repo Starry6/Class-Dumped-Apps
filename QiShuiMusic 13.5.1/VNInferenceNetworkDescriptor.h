@@ -1,0 +1,33 @@
+@interface VNInferenceNetworkDescriptor : VNProcessingDescriptor
+@property (nonatomic) NSURL networkFileURL;
+@property (nonatomic) VNResourceVersion networkVersion;
+@property (nonatomic) NSArray allInputs;
+@property (nonatomic) NSArray allOutputs;
+@property (nonatomic) NSArray allInputImages;
+@property (nonatomic) VNImageTensorDescriptor onlyInputImage;
+@property (nonatomic) VNTensorDescriptor confidencesOutput;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (id)allInputs;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)initWithNetworkFileURL:version:networkHeadVersions:inputs:outputs:inputImages:confidencesOutput:;
+- (id)initWithNetworkFileURL:version:networkHeadVersions:inputImage:outputs:confidencesOutput:;
+- (id)allInputImages;
+- (id)allOutputs;
+- (id)versionOfNetworkHead:error:;
+- (id)inputNamed:error:;
+- (id)outputNamed:error:;
+- (id)onlyInputImage;
+- (id)networkFileURL;
+- (id)networkVersion;
+- (id)confidencesOutput;
++ (BOOL)supportsSecureCoding;
++ (id)availableVersionsForIdentifier:error:;
++ (void)_configureVNProcessingDescriptorIdentifierSceneNetV3DetectorConfigurationOptions:;
++ (void)_configureVNProcessingDescriptorIdentifierSceneNetV3_ObjDetNet_SliderNetDetectorConfigurationOptions:;
++ (id)_detectorTypesForIdentifier:;
++ (id)availableIdentifiers;
++ (id)descriptorForIdentifier:version:error:;
+@end

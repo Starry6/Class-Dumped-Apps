@@ -1,0 +1,35 @@
+@interface IESIMSaaSAWEUserShareModel : IESIMBaseApiModel
+@property (nonatomic) NSString shareDescription;
+@property (nonatomic) IESIMURLModel shareQRCodeURL;
+@property (nonatomic) NSString shareURL;
+@property (nonatomic) NSString shareWeiboDescription;
+@property (nonatomic) NSString shareTitle;
+@property (nonatomic) NSString shareTitleMyself;
+@property (nonatomic) NSString shareTitleOther;
+@property (nonatomic) IESIMURLModel shareImageURL;
+@property (nonatomic) BOOL isPersist;
+- (id)shareTitleOther;
+- (BOOL)isPersist;
+- (void)setIsPersist:;
+- (void)setShareImageURL:;
+- (void)setShareQRCodeURL:;
+- (void)setShareTitle:;
+- (void)setShareTitleMyself:;
+- (void)setShareTitleOther:;
+- (void)setShareWeiboDescription:;
+- (id)shareImageURL;
+- (id)shareQRCodeURL;
+- (id)shareTitleMyself;
+- (id)shareWeiboDescription;
+- (id)shareURL;
+- (id)init;
+- (id)initWithDict:;
+- (void).cxx_destruct;
+- (void)setShareURL:;
+- (id)shareTitle;
+- (id)shareDescription;
+- (void)setShareDescription:;
++ (id)shareImageURLJSONTransformer;
++ (id)shareQRCodeURLJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

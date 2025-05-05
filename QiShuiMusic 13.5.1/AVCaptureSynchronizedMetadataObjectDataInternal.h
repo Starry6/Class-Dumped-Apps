@@ -1,0 +1,2 @@
+@interface AVCaptureSynchronizedMetadataObjectDataInternal : NSObject
+@end

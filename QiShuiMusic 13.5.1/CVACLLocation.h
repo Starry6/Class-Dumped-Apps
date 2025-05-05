@@ -1,0 +1,32 @@
+@interface CVACLLocation : NSObject
+@property (nonatomic) double timestamp;
+@property (nonatomic) double timestampSince1970;
+@property (nonatomic) double latitude;
+@property (nonatomic) double longitude;
+@property (nonatomic) double altitude;
+@property (nonatomic) double horizontalAccuracy;
+@property (nonatomic) double verticalAccuracy;
+@property (nonatomic) double speed;
+@property (nonatomic) double course;
+- (double)course;
+- (id)dictionary;
+- (double)altitude;
+- (double)horizontalAccuracy;
+- (double)latitude;
+- (void)setSpeed:;
+- (id)initWithDictionary:;
+- (double)verticalAccuracy;
+- (double)speed;
+- (void)setAltitude:;
+- (void)setLatitude:;
+- (void)setHorizontalAccuracy:;
+- (void)setTimestamp:;
+- (void)setLongitude:;
+- (double)timestamp;
+- (double)longitude;
+- (void)setCourse:;
+- (void)setVerticalAccuracy:;
+- (id)initWithCLLocation:timestamp:;
+- (double)timestampSince1970;
+- (void)setTimestampSince1970:;
+@end

@@ -1,0 +1,2 @@
+@interface AVOutputDeviceDiscoverySessionInternal : NSObject
+@end

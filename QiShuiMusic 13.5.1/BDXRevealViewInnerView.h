@@ -1,0 +1,2 @@
+@interface BDXRevealViewInnerView : UIView
+@end

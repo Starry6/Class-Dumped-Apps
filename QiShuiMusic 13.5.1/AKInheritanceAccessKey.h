@@ -1,0 +1,30 @@
+@interface AKInheritanceAccessKey : NSObject
+@property (nonatomic) NSUUID beneficiaryID;
+@property (nonatomic) NSData wrappingKeyData;
+@property (nonatomic) NSString wrappingKeyString;
+@property (nonatomic) NSData wrappedKeyData;
+@property (nonatomic) NSString wrappedKeyString;
+@property (nonatomic) NSData claimTokenData;
+@property (nonatomic) NSString claimTokenString;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)initWithBeneficiairyIdentifier:;
+- (id)beneficiaryID;
+- (id)wrappingKeyData;
+- (void)setWrappingKeyData:;
+- (id)wrappingKeyString;
+- (void)setWrappingKeyString:;
+- (id)wrappedKeyData;
+- (void)setWrappedKeyData:;
+- (id)wrappedKeyString;
+- (void)setWrappedKeyString:;
+- (id)claimTokenData;
+- (void)setClaimTokenData:;
+- (id)claimTokenString;
+- (void)setClaimTokenString:;
++ (BOOL)supportsSecureCoding;
+@end

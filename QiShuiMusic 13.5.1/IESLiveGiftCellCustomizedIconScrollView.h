@@ -1,0 +1,38 @@
+@interface IESLiveGiftCellCustomizedIconScrollView : UIView
+@property (nonatomic) IESLiveGiftCellCustomizedIconView displayView;
+@property (nonatomic) IESLiveGiftCellCustomizedIconView disappearView;
+@property (nonatomic) q selectedIndex;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} leftFrame;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} displayFrame;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} rightFrame;
+@property (nonatomic) NSObject<OS_dispatch_semaphore> scrollViewSemaphore;
+@property (nonatomic) @? getIconModelBlock;
+@property (nonatomic) NSArray giftCellImageInfoList;
+- (void)setDisplayView:;
+- (void)_cancelAllAnimations;
+- (id)_obtainIconModelWithIndex:;
+- (id)disappearView;
+- (id)displayView;
+- (id)getIconModelBlock;
+- (id)giftCellImageInfoList;
+- (void)p_prepareAnimationWithIndex:;
+- (void)p_showAnimationWithSelectedIndex:;
+- (void)p_showWithGiftCellView:index:;
+- (id)scrollViewSemaphore;
+- (void)selectWithIndex:withAnimation:;
+- (void)setDisappearView:;
+- (void)setGetIconModelBlock:;
+- (void)setGiftCellImageInfoList:;
+- (void)setLeftFrame:;
+- (void)setRightFrame:;
+- (void)setScrollViewSemaphore:;
+- (long long)selectedIndex;
+- (id)displayFrame;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)setDisplayFrame:;
+- (void)setSelectedIndex:;
+- (id)leftFrame;
+- (id)rightFrame;
+- (void)setupUI;
+@end

@@ -1,0 +1,32 @@
+@interface PKScribbleInteractionWrapper : NSObject
+@property (nonatomic) UIView view;
+@property (nonatomic) UIView interactionView;
+@property (nonatomic) <UIInteraction> interaction;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)interaction;
+- (void).cxx_destruct;
+- (id)description;
+- (id)interactionView;
+- (BOOL)isEqual:;
+- (BOOL)isEnabled;
+- (BOOL)supportsShouldBegin;
+- (BOOL)isElementContainer;
+- (id)frameForElement:;
+- (BOOL)focusWillTransformElement:;
+- (BOOL)shouldBeginAtLocation:;
+- (void)willBeginWritingInElement:;
+- (void)didFinishWritingInElement:;
+- (void)requestElementsInRect:completion:;
+- (void)focusElement:initialFocusSelectionReferencePoint:completion:;
+- (id)hitToleranceInsetsWithDefaultInsets:element:;
+- (BOOL)beginSuppressingPlaceholderForElement:;
+- (void)endSuppressingPlaceholderForElement:;
+- (BOOL)supportsIsElementFocused;
+- (BOOL)isElementFocused:;
+- (void)didTargetElement:forTouches:event:;
+- (BOOL)shouldDisableInputAssistant;
+- (BOOL)isEditableElement:;
+@end

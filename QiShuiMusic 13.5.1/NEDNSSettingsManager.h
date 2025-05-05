@@ -1,0 +1,35 @@
+@interface NEDNSSettingsManager : NSObject
+@property (nonatomic) NSUUID identifier;
+@property (nonatomic) <NEDNSSettingsManagerDelegate> delegate;
+@property (nonatomic) NSString appBundleIdentifier;
+@property (nonatomic) BOOL fromProfile;
+@property (nonatomic) BOOL configurationGradeEnterprise;
+@property (nonatomic) BOOL enabled;
+@property (nonatomic) NSString localizedDescription;
+@property (nonatomic) NEDNSSettings dnsSettings;
+@property (nonatomic) NSArray onDemandRules;
+- (id)init;
+- (id)descriptionWithIndent:options:;
+- (id)dnsSettings;
+- (id)localizedDescription;
+- (void)setDelegate:;
+- (id)identifier;
+- (id)appBundleIdentifier;
+- (id)delegate;
+- (void)setEnabled:;
+- (void).cxx_destruct;
+- (id)description;
+- (void)setDnsSettings:;
+- (void)setLocalizedDescription:;
+- (BOOL)isEnabled;
+- (void)loadFromPreferencesWithCompletionHandler:;
+- (void)removeFromPreferencesWithCompletionHandler:;
+- (void)saveToPreferencesWithCompletionHandler:;
+- (BOOL)isFromProfile;
+- (void)fetchStatusWithCompletionHandler:;
+- (id)onDemandRules;
+- (void)setOnDemandRules:;
+- (BOOL)isConfigurationGradeEnterprise;
++ (id)sharedManager;
++ (void)loadAllFromPreferencesWithCompletionHandler:;
+@end

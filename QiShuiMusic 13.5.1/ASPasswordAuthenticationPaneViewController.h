@@ -1,0 +1,37 @@
+@interface ASPasswordAuthenticationPaneViewController : ASCredentialRequestPaneViewController
+@property (nonatomic) <ASPasswordAuthenticationPaneViewControllerDelegate> authenticationDelegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)_subtitleLabelFont;
+- (BOOL)textFieldShouldReturn:;
+- (void)_keyboardWillShow:;
+- (BOOL)becomeFirstResponder;
+- (id)_titleLabelFont;
+- (BOOL)canBecomeFirstResponder;
+- (void).cxx_destruct;
+- (BOOL)resignFirstResponder;
+- (void)viewDidLoad;
+- (void)_setConstraints;
+- (void)_createViews;
+- (id)_titleLabelText;
+- (id)_titleLabelTextColor;
+- (void)_textFieldChanged:;
+- (id)authenticationDelegate;
+- (void)setAuthenticationDelegate:;
+- (void)_signInButtonTapped;
+- (id)initWithPersona:presentationContext:;
+- (void)_setUpAndAddIconImage;
+- (void)_setUpSubtitleLabel;
+- (void)_setUpUsernameLabel;
+- (id)_securityKeyTitleLabelText;
+- (id)_manualPasswordEntryTitleLabelText;
+- (id)_secureTextFieldPlaceholderText;
+- (double)_topViewMargin;
+- (double)_containerViewHorizontalMargin;
+- (double)_signInButtonInsetMargin;
+- (double)_secureTextFieldInsetMargin;
+- (double)_intrinsicContentHeight;
+- (void)_completeManualPasswordCredentialEntry;
+@end

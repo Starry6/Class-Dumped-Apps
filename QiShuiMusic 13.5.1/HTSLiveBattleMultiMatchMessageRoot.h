@@ -1,0 +1,2 @@
+@interface HTSLiveBattleMultiMatchMessageRoot : GPBRootObject
+@end

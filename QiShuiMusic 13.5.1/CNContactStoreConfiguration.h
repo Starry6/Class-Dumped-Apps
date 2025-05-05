@@ -1,0 +1,32 @@
+@interface CNContactStoreConfiguration : NSObject
+@property (nonatomic) BOOL includeLocalContacts;
+@property (nonatomic) BOOL includeSuggestedContacts;
+@property (nonatomic) BOOL includeDonatedContacts;
+@property (nonatomic) BOOL includeIncludeManagedAppleIDs;
+@property (nonatomic) BOOL useInProcessMapperExclusively;
+@property (nonatomic) NSObject<OS_tcc_identity> assumedIdentity;
+@property (nonatomic) CNContactsEnvironment environment;
+@property (nonatomic) CNManagedConfiguration managedConfiguration;
+- (id)managedConfiguration;
+- (id)init;
+- (void)setEnvironment:;
+- (void)setManagedConfiguration:;
+- (BOOL)includeLocalContacts;
+- (void)setUseInProcessMapperExclusively:;
+- (void)setIncludeSuggestedContacts:;
+- (id)assumedIdentity;
+- (void)setIncludeDonatedContacts:;
+- (void)setAssumedIdentity:;
+- (id)environment;
+- (void)setIncludeLocalContacts:;
+- (BOOL)useInProcessMapperExclusively;
+- (void).cxx_destruct;
+- (BOOL)includeSuggestedContacts;
+- (void)setIncludeIncludeManagedAppleIDs:;
+- (BOOL)includeIncludeManagedAppleIDs;
+- (id)description;
+- (BOOL)includeDonatedContacts;
++ (id)tu_contactStoreConfigurationForConversation:;
++ (id)tu_contactStoreConfigurationForBundleIdentifier:;
++ (id)tu_contactStoreConfigurationForCall:;
+@end

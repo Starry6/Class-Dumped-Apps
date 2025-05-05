@@ -1,0 +1,36 @@
+@interface VSPersistentSubscription : NSManagedObject
+@property (nonatomic) NSString derivedSubscriptionInfo;
+@property (nonatomic) NSDate creationDate;
+@property (nonatomic) NSDate mostRecentSaveDate;
+@property (nonatomic) NSNumber sourceKind;
+@property (nonatomic) NSString sourceIdentifier;
+@property (nonatomic) NSDate expirationDate;
+@property (nonatomic) NSNumber accessLevel;
+@property (nonatomic) NSArray tierIdentifiers;
+@property (nonatomic) NSString subscriberIdentifierHash;
+@property (nonatomic) NSString billingIdentifier;
+@property (nonatomic) NSString providedSubscriptionInfo;
+- (void)awakeFromFetch;
+- (void)setCreationDate:;
+- (void)awakeFromInsert;
+- (void)setExpirationDate:;
+- (void)didChangeValueForKey:;
+- (void)setAccessLevel:;
+- (void)_setNullResettableValue:forKey:;
+- (BOOL)_validateNullableValue:forKey:error:;
+- (void)_updateDerivedSubscriptionInfo;
+- (void)_deriveValuesFromProvidedInfo:;
+- (void)setProvidedSubscriptionInfo:;
+- (void)setMostRecentSaveDate:;
+- (void)setSubscriberIdentifierHash:;
+- (void)setBillingIdentifier:;
+- (void)setTierIdentifiers:;
+- (BOOL)validateAccessLevel:error:;
+- (BOOL)validateCreationDate:error:;
+- (BOOL)validateModificationDate:error:;
+- (BOOL)validateExpirationDate:error:;
+- (BOOL)validateSubscriberIdentifierHash:error:;
+- (BOOL)validateTierIdentifiers:error:;
+- (BOOL)validateBillingIdentifier:error:;
++ (id)keyPathsForValuesAffectingDerivedSubscriptionInfo;
+@end

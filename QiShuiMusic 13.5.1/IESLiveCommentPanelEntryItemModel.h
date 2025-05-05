@@ -1,0 +1,32 @@
+@interface IESLiveCommentPanelEntryItemModel : NSObject
+@property (nonatomic) NSInteger type;
+@property (nonatomic) q guideTipShowTimes;
+@property (nonatomic) BOOL enable;
+@property (nonatomic) UIImage icon;
+@property (nonatomic) NSString displayText;
+@property (nonatomic) NSString schemaURL;
+@property (nonatomic) BOOL enableGuideTip;
+@property (nonatomic) NSInteger componentType;
+@property (nonatomic) BOOL entryHasClicked;
+@property (nonatomic) BOOL entryHasShowed;
+- (BOOL)entryHasClicked;
+- (BOOL)enableGuideTip;
+- (BOOL)entryHasShowed;
+- (long long)guideTipShowTimes;
+- (id)initWithDIContext:componentType:;
+- (id)schemaURL;
+- (void)setEntryHasClicked:;
+- (void)setEntryHasShowed:;
+- (void)setGuideTipShowTimes:;
+- (void)setSchemaURL:;
+- (BOOL)enable;
+- (int)componentType;
+- (id)icon;
+- (void)setType:;
+- (id)displayText;
+- (int)type;
+- (void)setIcon:;
+- (void).cxx_destruct;
+- (void)setDisplayText:;
+- (void)setEnable:;
+@end

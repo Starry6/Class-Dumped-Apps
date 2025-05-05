@@ -1,0 +1,33 @@
+@interface GPBFieldDescriptor : NSObject
+@property (nonatomic) NSString name;
+@property (nonatomic) I number;
+@property (nonatomic) C dataType;
+@property (nonatomic) BOOL hasDefaultValue;
+@property (nonatomic) (?=BiqIQfd@@@i) defaultValue;
+@property (nonatomic) BOOL required;
+@property (nonatomic) BOOL optional;
+@property (nonatomic) C fieldType;
+@property (nonatomic) C mapKeyDataType;
+@property (nonatomic) BOOL packable;
+@property (nonatomic) GPBOneofDescriptor containingOneof;
+@property (nonatomic) # msgClass;
+@property (nonatomic) GPBEnumDescriptor enumDescriptor;
+- (BOOL)isOptional;
+- (BOOL)isValidEnumValue:;
+- (id)init;
+- (void)dealloc;
+- (unsigned int)number;
+- (id)textFormatName;
+- (BOOL)isPackable;
+- (id)initWithFieldDescription:includesDefault:syntax:;
+- (id)defaultValue;
+- (unsigned char)dataType;
+- (BOOL)isRequired;
+- (unsigned char)fieldType;
+- (id)enumDescriptor;
+- (unsigned char)mapKeyDataType;
+- (id)name;
+- (Class)msgClass;
+- (BOOL)hasDefaultValue;
+- (id)containingOneof;
+@end

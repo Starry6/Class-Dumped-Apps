@@ -1,0 +1,37 @@
+@interface AKAuthorizationPaneMetrics : NSObject
++ (id)iconSize;
++ (double)titleBottomSpacing;
++ (double)titleTopSpacing;
++ (double)titleToSmallTitleVerticalSpacing;
++ (double)interBulletSpacing;
++ (double)privacyLinkTopSpacing;
++ (double)privacyInfoTopSpacing;
++ (double)privacyInfoToLinkBottomSpacing;
++ (double)privacyLinkBottomSpacing;
++ (double)continueButtonTopSpacing;
++ (double)continueButtonBottomSpacing;
++ (double)continueButtonHeight;
++ (double)continueButtonTextHorizontalPadding;
++ (double)continueButtonCornerRadius;
++ (double)paneCornerRadius;
++ (id)paneAdditionSafeAreaInsets;
++ (double)iconTopSpacing;
++ (double)iconBottomSpacing;
++ (double)nameCellHeight;
++ (double)emailCellHeight;
++ (double)selectEmailCellHeight;
++ (double)clearButtonWidth;
++ (double)upgradeAccountTopSpacing;
++ (double)upgradeAccountInterItemSpacing;
++ (double)keyboardAccessoryViewHeight;
++ (double)infoLabelToTableSpacing;
++ (double)interScopeFieldSpacing;
++ (double)tableSectionFooterHeight;
++ (double)blurryTrayHeight;
++ (double)maximumContentHeightFactor;
++ (double)editPaneInfoLabelHorizontalPadding;
++ (double)contentOffsetThresholdToShowBlurTray;
++ (double)infoLabelBottomSpacing;
++ (double)useOtherAppleIDTopSpacing;
++ (double)useOtherAppleIDBottomSpacing;
+@end

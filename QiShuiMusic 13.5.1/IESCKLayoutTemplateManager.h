@@ -1,0 +1,35 @@
+@interface IESCKLayoutTemplateManager : NSObject
+@property (nonatomic) NSMapTable vomTree;
+@property (nonatomic) NSMapTable viewContainerMap;
+@property (nonatomic) NSMutableSet allRules;
+@property (nonatomic) NSMutableDictionary dynamicLayoutMap;
+@property (nonatomic) IESLiveLayoutRoomContainer provider;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)vomTree;
+- (id)_providerForContainerType:;
+- (id)dynamicLayoutMap;
+- (id)dynamicLayoutRules;
+- (void)handleDidAutoRoateToOrientation:;
+- (void)handleEventOrientationChanged:;
+- (void)layoutView:;
+- (void)parseDynamicLayoutRule:;
+- (id)providerForContainerType:;
+- (id)queryContainerByType:;
+- (id)queryViewByType:;
+- (void)removeViewElement:;
+- (id)roomContainerView;
+- (void)setAllRules:;
+- (void)setDynamicLayoutMap:;
+- (void)setViewContainerMap:;
+- (void)setVomTree:;
+- (id)viewContainerMap;
+- (void)setProvider:;
+- (id)init;
+- (id)provider;
+- (void).cxx_destruct;
+- (id)allRules;
++ (void)registerLayoutRule:forType:;
+@end

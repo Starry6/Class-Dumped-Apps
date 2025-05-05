@@ -1,0 +1,33 @@
+@interface AFAnalyticsEvent : NSObject
+@property (nonatomic) Q deliveryStream;
+@property (nonatomic) q type;
+@property (nonatomic) Q timestamp;
+@property (nonatomic) q contextDataType;
+@property (nonatomic) NSData contextData;
+@property (nonatomic) NSString assistantId;
+@property (nonatomic) NSString speechId;
+- (id)typeName;
+- (id)init;
+- (id)contextDataAsProtobuf;
+- (id)dateStamp;
+- (void)setSpeechId:;
+- (id)contextData;
+- (id)initWithCoder:;
+- (id)legacyTypeName;
+- (unsigned long long)hash;
+- (long long)contextDataType;
+- (unsigned long long)deliveryStream;
+- (void)encodeWithCoder:;
+- (id)contextDataAsDictionary;
+- (long long)type;
+- (id)speechId;
+- (void).cxx_destruct;
+- (unsigned long long)timestamp;
+- (id)assistantId;
+- (void)setAssistantId:;
+- (BOOL)isEqual:;
+- (id)initWithDeliveryStream:type:timestamp:contextDataType:contextData:;
+- (id)copyWithZone:;
++ (BOOL)supportsSecureCoding;
++ (id)eventsReferenceTime;
+@end

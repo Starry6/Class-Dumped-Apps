@@ -1,0 +1,32 @@
+@interface ICSQLiteStatement : NSObject
+@property (nonatomic) ICSQLiteConnection connection;
+@property (nonatomic) ^{sqlite3_stmt=} sqlite3_stmt;
+@property (nonatomic) NSDictionary columnIndexByName;
+@property (nonatomic) BOOL readOnly;
+@property (nonatomic) NSString SQL;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)isReadOnly;
+- (int)clearBindings;
+- (void)bindFloat:atPosition:;
+- (void)bindInt64:atPosition:;
+- (int)step;
+- (void)bindString:atPosition:;
+- (id)SQL;
+- (id)columnIndexByName;
+- (id)sqlite3_stmt;
+- (void)bindDouble:atPosition:;
+- (void)bindDataCopy:atPosition:;
+- (id)connection;
+- (void).cxx_destruct;
+- (id)initWithStatement:connection:;
+- (int)reset;
+- (void)bindStringCopy:atPosition:;
+- (void)bindInt:atPosition:;
+- (int)finalizeStatement;
+- (void)bindNumber:atPosition:;
+- (void)bindNullAtPosition:;
+- (void)bindData:atPosition:;
+@end

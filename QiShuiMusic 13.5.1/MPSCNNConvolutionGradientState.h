@@ -1,0 +1,31 @@
+@interface MPSCNNConvolutionGradientState : MPSNNGradientState
+@property (nonatomic) Q numberOfWeightGradients;
+@property (nonatomic) Q numberOfBiasGradients;
+@property (nonatomic) <MTLBuffer> gradientForWeights;
+@property (nonatomic) <MTLBuffer> gradientForBiases;
+@property (nonatomic) MPSCNNConvolution convolution;
+@property (nonatomic) I gradientForWeightsLayout;
+@property (nonatomic) Q sourceWidth;
+@property (nonatomic) Q sourceHeight;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)dealloc;
+- (id)destinationImageDescriptorForSourceImages:sourceStates:forKernel:suggestedDescriptor:;
+- (id)debugDescription;
+- (id)initWithResource:;
+- (id)gradientForWeights;
+- (id)gradientForBiases;
+- (unsigned long long)sourceWidth;
+- (unsigned long long)sourceHeight;
+- (id)initWithResource:weightsLayout:;
+- (id)initWithDevice:resourceList:convolution:weightsLayout:;
+- (id)convolution;
+- (id)initWithDevice:resourceList:convolution:;
+- (unsigned long long)numberOfWeightGradients;
+- (unsigned int)gradientForWeightsLayout;
+- (unsigned long long)numberOfBiasGradients;
++ (id)temporaryStateWithCommandBuffer:resourceList:convolution:;
++ (id)temporaryStateWithCommandBuffer:resourceList:convolution:weightsLayout:;
+@end

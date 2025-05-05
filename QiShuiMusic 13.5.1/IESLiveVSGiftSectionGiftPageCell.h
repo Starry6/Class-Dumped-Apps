@@ -1,0 +1,35 @@
+@interface IESLiveVSGiftSectionGiftPageCell : UIView
+@property (nonatomic) UIView contentView;
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) NSMutableArray giftListCells;
+@property (nonatomic) IESLiveVSGiftPageCollectionViewLayout collectionViewLayout;
+@property (nonatomic) UIView bottomMaskView;
+@property (nonatomic) CAGradientLayer bottomMaskLayer;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) <IESLiveVSGiftSectionItem> item;
+- (id)bottomMaskLayer;
+- (void)p_loadListItems;
+- (id)bottomMaskView;
+- (id)giftListCells;
+- (void)setBottomMaskLayer:;
+- (void)setBottomMaskView:;
+- (void)setGiftListCells:;
+- (void)scrollViewDidEndDecelerating:;
+- (id)item;
+- (id)contentView;
+- (void)layoutSubviews;
+- (long long)collectionView:numberOfItemsInSection:;
+- (void)updateWithItem:;
+- (id)collectionViewLayout;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (id)initWithFrame:;
+- (void)setCollectionView:;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (id)collectionView;
+- (void)setCollectionViewLayout:;
+- (void)setupUI;
+@end

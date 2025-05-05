@@ -1,0 +1,21 @@
+@interface PKTextInputElement : NSObject
+- (BOOL)showSelectionCommands;
+- (void)dealloc;
+- (id)selectionHighlightColor;
+- (void).cxx_destruct;
+- (id)description;
+- (void)beginSuppressingPlaceholderIfNecessary;
+- (void)endSuppressingPlaceholderIfNecessary;
+- (void)_beginSuppressingFieldPlaceholder;
+- (void)_finishSuppressingFieldPlaceholderIfNeeded;
+- (id)activePreviewRange;
+- (BOOL)clearActivePreview;
+- (id)selectionClipRectInCoordinateSpace:;
+- (void)notifyTextInputTextWillChange;
+- (void)notifyTextInputTextDidChange;
+- (void)swapWritingStateWithElement:;
+- (void)didMoveToWritingSession:;
+- (void)willBeginWriting;
+- (void)didEndWriting;
+- (void)didInsertText;
+@end

@@ -1,0 +1,35 @@
+@interface FLEXMetadataSection : FLEXTableViewSection
+@property (nonatomic) FLEXObjectExplorer explorer;
+@property (nonatomic) NSArray metadata;
+@property (nonatomic) NSArray allMetadata;
+@property (nonatomic) Q metadataKind;
+@property (nonatomic) NSSet excludedMetadata;
+- (id)initWithExplorer:kind:;
+- (id)titleWithBaseName:;
+- (long long)accessoryTypeForRow:;
+- (void)setExcludedMetadata:;
+- (id)titleForRow:;
+- (id)subtitleForRow:;
+- (id)title;
+- (long long)numberOfRows;
+- (void)setFilterText:;
+- (void)reloadData;
+- (BOOL)canSelectRow:;
+- (id)reuseIdentifierForRow:;
+- (id)viewControllerToPushForRow:;
+- (id)didPressInfoButtonAction:;
+- (id)editorForRow:;
+- (void)configureCell:forRow:;
+- (id)menuSubtitleForRow:;
+- (id)menuItemsForRow:sender:;
+- (id)copyMenuItemsForRow:;
+- (unsigned long long)metadataKind;
+- (id)excludedMetadata;
+- (id)explorer;
+- (id)metadata;
+- (void)setMetadata:;
+- (id)allMetadata;
+- (void)setAllMetadata:;
+- (void).cxx_destruct;
++ (id)explorer:kind:;
+@end

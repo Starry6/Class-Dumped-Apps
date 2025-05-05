@@ -1,0 +1,36 @@
+@interface IESLivePKFeedbackPopUpView : HTSLivePopUpView
+@property (nonatomic) BOOL needMask;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel subTitleLabel;
+@property (nonatomic) UIButton commitButton;
+@property (nonatomic) UIView maskView;
+@property (nonatomic) IESLiveRevenueInteractFeedbackView feedbackView;
+@property (nonatomic) IESLiveRevenueInteractFeedbackViewModel viewModel;
+@property (nonatomic) <IESLiveCompoundSubscription> disposable;
+- (void)didSelectedFeedbackCategory;
+- (void)didSetAttachingDIContext;
+- (void)didTapCommitButton;
+- (void)dismissFeedbackView;
+- (id)disposable;
+- (id)initWithFrame:viewModel:needMask:;
+- (BOOL)needMask;
+- (void)setDisposable:;
+- (void)setNeedMask:;
+- (void)dealloc;
+- (id)viewModel;
+- (id)maskView;
+- (void)setTitleLabel:;
+- (void)touchesBegan:withEvent:;
+- (void)setup;
+- (void).cxx_destruct;
+- (void)setMaskView:;
+- (void)setViewModel:;
+- (id)titleLabel;
+- (id)feedbackView;
+- (void)setFeedbackView:;
+- (id)subTitleLabel;
+- (void)setSubTitleLabel:;
+- (id)commitButton;
+- (void)setCommitButton:;
+- (void)layoutUI;
+@end

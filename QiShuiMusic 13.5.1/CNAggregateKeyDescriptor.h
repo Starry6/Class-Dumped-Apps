@@ -1,0 +1,33 @@
+@interface CNAggregateKeyDescriptor : NSObject
+@property (nonatomic) NSArray keyDescriptors;
+@property (nonatomic) NSString privateDescription;
+@property (nonatomic) CNContactKeyVector unauthorizedKeys;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)_cn_executeGetterForRepresentedKeys:;
+- (id)_cn_optionalKeys;
+- (id)_cn_requiredKeys;
+- (id)_cn_ignorableKeys;
+- (id)_cn_recursiveDescriptionWithPrefix:;
+- (void)setPrivateDescription:;
+- (void)setKeyDescriptors:;
+- (void)setUnauthorizedKeys:;
+- (id)unauthorizedKeys;
+- (id)keyDescriptors;
+- (id)_recursiveDescription;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)_cn_unauthorizedKeys;
+- (void)encodeWithCoder:;
+- (id)privateDescription;
+- (void)_cn_setUnauthorizedKeys:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)initWithKeyDescriptors:description:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
++ (BOOL)supportsSecureCoding;
++ (id)keyDescriptorWithKeyDescriptors:description:;
+@end

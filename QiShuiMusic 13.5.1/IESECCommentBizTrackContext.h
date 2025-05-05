@@ -1,0 +1,36 @@
+@interface IESECCommentBizTrackContext : NSObject
+@property (nonatomic) q dataType;
+@property (nonatomic) NSString commentSwitchType;
+@property (nonatomic) q originCommentCount;
+@property (nonatomic) IESECCommentDetailModel detailModel;
+@property (nonatomic) IESECCommentMediaItemViewModel mediaModel;
+@property (nonatomic) q showNum;
+@property (nonatomic) NSString userLevel;
+@property (nonatomic) NSString commentIdx;
+@property (nonatomic) q commentRank;
+@property (nonatomic) BOOL isWithSKU;
+@property (nonatomic) BOOL showOneLineTag;
+- (void)setCommentRank:;
+- (void)setDetailModel:;
+- (long long)showNum;
+- (id)commentIdx;
+- (long long)commentRank;
+- (id)commentSwitchType;
+- (id)detailModel;
+- (BOOL)isWithSKU;
+- (id)mediaModel;
+- (long long)originCommentCount;
+- (void)setCommentIdx:;
+- (void)setCommentSwitchType:;
+- (void)setIsWithSKU:;
+- (void)setMediaModel:;
+- (void)setOriginCommentCount:;
+- (void)setShowNum:;
+- (void)setShowOneLineTag:;
+- (void)setUserLevel:;
+- (BOOL)showOneLineTag;
+- (id)userLevel;
+- (void)setDataType:;
+- (long long)dataType;
+- (void).cxx_destruct;
+@end

@@ -1,0 +1,37 @@
+@interface IESLiveIntimateChatLocalLayout : NSObject
+@property (nonatomic) IESLiveInteractSession fullSession;
+@property (nonatomic) {CGSize=dd} fullSessionVideoSize;
+@property (nonatomic) IESLiveIntimateChatGuestListView guestListView;
+@property (nonatomic) HTSInteractionStreamAppData curAppData;
+@property (nonatomic) <IESLiveAudienceChatRoomProvider> provider;
+@property (nonatomic) @? handlePaidLinkmicEndBeforeUpdateLayoutOfSessionViewsCallback;
+@property (nonatomic) UIView sessionViewContainer;
+@property (nonatomic) UIView optionViewContainer;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setFullSession:;
+- (id)curAppData;
+- (id)fullSession;
+- (id)fullSessionVideoSize;
+- (id)guestListView;
+- (id)handlePaidLinkmicEndBeforeUpdateLayoutOfSessionViewsCallback;
+- (void)hostSizeDidChangeWithSize:;
+- (void)layoutHostSession:;
+- (void)onNewSessionCreated:local:;
+- (id)optionViewContainer;
+- (void)p_updateAudienceLayoutWithSession:index:;
+- (void)p_updateHostLayout;
+- (id)sessionViewContainer;
+- (void)setCurAppData:;
+- (void)setFullSessionVideoSize:;
+- (void)setGuestListView:;
+- (void)setHandlePaidLinkmicEndBeforeUpdateLayoutOfSessionViewsCallback:;
+- (void)setOptionViewContainer:;
+- (void)setSessionViewContainer:;
+- (void)updateLayoutOfSessionViews:withUserService:;
+- (void)setProvider:;
+- (id)provider;
+- (void).cxx_destruct;
+@end

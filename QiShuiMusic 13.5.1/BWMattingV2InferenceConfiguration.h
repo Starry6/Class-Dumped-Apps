@@ -1,0 +1,30 @@
+@interface BWMattingV2InferenceConfiguration : BWInferenceConfiguration
+@property (nonatomic) NSDictionary sensorConfigurationsByPortType;
+@property (nonatomic) I enabledMattes;
+@property (nonatomic) NSInteger tuningConfiguration;
+@property (nonatomic) float mainImageDownscalingFactor;
+@property (nonatomic) BOOL depthDataDeliveryEnabled;
+@property (nonatomic) BOOL submitWithoutSynchronization;
+@property (nonatomic) <MTLCommandQueue> metalCommandQueue;
+@property (nonatomic) NSDictionary sdofRenderingTuningParameters;
+- (void)setDepthDataDeliveryEnabled:;
+- (BOOL)depthDataDeliveryEnabled;
+- (void)dealloc;
+- (void)setMainImageDownscalingFactor:;
+- (void)setSdofRenderingTuningParameters:;
+- (id)sdofRenderingTuningParameters;
+- (void)setMetalCommandQueue:;
+- (float)mainImageDownscalingFactor;
+- (id)metalCommandQueue;
+- (id)sensorConfigurationsByPortType;
+- (void)setSensorConfigurationsByPortType:;
+- (unsigned int)enabledMattes;
+- (void)setEnabledMattes:;
+- (int)tuningConfiguration;
+- (void)setTuningConfiguration:;
+- (BOOL)submitWithoutSynchronization;
+- (void)setSubmitWithoutSynchronization:;
++ (id)inputAttachedMediaKeyForMattingOutputType:;
++ (unsigned int)mattingOutputTypeForAttachedMediaKey:;
++ (BOOL)isMattingOutputAttachedMediaKey:;
+@end

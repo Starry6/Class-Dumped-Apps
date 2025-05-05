@@ -1,0 +1,35 @@
+@interface AKAppleIDAuthenticationContextManager : NSObject
+@property (nonatomic) <AKAppleIDAuthenticationDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)fetchPeerAttestationDataForContext:withRequest:completion:;
+- (void)setDelegate:;
+- (void)presentLoginAlertForContext:withError:title:message:completion:;
+- (void)presentNativeRecoveryUIForContext:recoveryContext:completion:;
+- (void)dismissServerProvidedUIForContext:completion:;
+- (void)dismissSecondFactorUIForContext:completion:;
+- (id)registerContext:;
+- (void)dismissNativeRecoveryUIForContext:completion:;
+- (void)presentSecondFactorAlertForContext:withError:title:message:completion:;
+- (void)syncAnisetteForContext:withSIMData:completion:;
+- (void)provisionAnisetteForContext:withCompletion:;
+- (void)eraseAnisetteForContext:withCompletion:;
+- (void)presentKeepUsingUIForContext:appleID:completion:;
+- (void)presentBiometricOrPasscodeValidationForContext:completion:;
+- (id)delegate;
+- (void)fetchAnisetteDataForContext:provisionIfNecessary:withCompletion:;
+- (void)launchOutOfProcessAuthentication:surrogateID:withErrorHandler:;
+- (void)shouldContinueWithAuthenticationResults:error:forContextID:completion:;
+- (void)presentServerProvidedUIForContext:withConfiguration:completion:;
+- (void)unregisterContext:;
+- (void).cxx_destruct;
+- (id)initWithAuthenticationController:;
+- (void)dismissKeepUsingUIForContext:withCompletion:;
+- (void)presentSecondFactorUIForContext:completion:;
+- (id)_clientSideContextForServerContext:;
+- (void)dismissBasicLoginUIForContext:completion:;
+- (void)presentBasicLoginUIForContext:completion:;
+- (void)legacyAnisetteDataForContext:DSID:withCompletion:;
+@end

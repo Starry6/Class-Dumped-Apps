@@ -1,0 +1,30 @@
+@interface GEOTransitScheduleInfo : PBCodable
+@property (nonatomic) BOOL hasEntry;
+@property (nonatomic) GEOTransitEntry entry;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)entry;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (void)setEntry:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)routingParameters;
+- (BOOL)hasEntry;
+- (unsigned long long)lineID;
+- (unsigned long long)tripID;
+- (id)staticDepartureDate;
+- (id)windowStartDate;
++ (BOOL)isValid:;
+@end

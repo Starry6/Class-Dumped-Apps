@@ -1,0 +1,31 @@
+@interface GEOLogMsgEventStateTiming : PBCodable
+@property (nonatomic) NSMutableArray stateTransitionFeedbacks;
+@property (nonatomic) BOOL hasDurationInOldState;
+@property (nonatomic) double durationInOldState;
+- (void)readAll:;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)stateTransitionFeedbacks;
+- (void)setStateTransitionFeedbacks:;
+- (void)clearStateTransitionFeedbacks;
+- (void)addStateTransitionFeedback:;
+- (unsigned long long)stateTransitionFeedbacksCount;
+- (id)stateTransitionFeedbackAtIndex:;
+- (double)durationInOldState;
+- (void)setDurationInOldState:;
+- (void)setHasDurationInOldState:;
+- (BOOL)hasDurationInOldState;
++ (BOOL)isValid:;
++ (Class)stateTransitionFeedbackType;
+@end

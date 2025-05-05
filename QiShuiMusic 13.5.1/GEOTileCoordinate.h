@@ -1,0 +1,38 @@
+@interface GEOTileCoordinate : PBCodable
+@property (nonatomic) BOOL hasX;
+@property (nonatomic) NSInteger x;
+@property (nonatomic) BOOL hasY;
+@property (nonatomic) NSInteger y;
+@property (nonatomic) BOOL hasZoom;
+@property (nonatomic) NSInteger zoom;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)setZoom:;
+- (int)zoom;
+- (void)setHasX:;
+- (void)setHasY:;
+- (void)readAll:;
+- (id)unknownFields;
+- (BOOL)hasY;
+- (void)setX:;
+- (id)initWithJSON:;
+- (void)setY:;
+- (id)jsonRepresentation;
+- (int)y;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (int)x;
+- (void)setHasZoom:;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)hasZoom;
+- (BOOL)hasX;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
++ (BOOL)isValid:;
+@end

@@ -1,0 +1,37 @@
+@interface WBSAnalyticsSafariCKBookmarksMigrationStartedEvent : PBCodable
+@property (nonatomic) BOOL hasTimestamp;
+@property (nonatomic) Q timestamp;
+@property (nonatomic) BOOL hasMigratorType;
+@property (nonatomic) NSInteger migratorType;
+@property (nonatomic) BOOL hasLocalState;
+@property (nonatomic) q localState;
+@property (nonatomic) BOOL hasRemoteState;
+@property (nonatomic) q remoteState;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)setHasTimestamp:;
+- (void)mergeFrom:;
+- (BOOL)hasTimestamp;
+- (void)setTimestamp:;
+- (BOOL)readFrom:;
+- (unsigned long long)timestamp;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (long long)remoteState;
+- (long long)localState;
+- (int)migratorType;
+- (void)setMigratorType:;
+- (void)setHasMigratorType:;
+- (BOOL)hasMigratorType;
+- (id)migratorTypeAsString:;
+- (int)StringAsMigratorType:;
+- (void)setLocalState:;
+- (void)setHasLocalState:;
+- (BOOL)hasLocalState;
+- (void)setRemoteState:;
+- (void)setHasRemoteState:;
+- (BOOL)hasRemoteState;
+@end

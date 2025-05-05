@@ -1,0 +1,30 @@
+@interface BDXLynxOverlayLightContainer : UIView
+@property (nonatomic) BDXLynxOverlayLightSimultaneouslyGestureRecognizer simulGesture;
+@property (nonatomic) LynxEventHandler eventHandler;
+@property (nonatomic) <BDXLynxOverlayLightViewDelegate> uiDelegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)checkScrollViewCanBeScrolled:withPanGesture:;
+- (void)enableTouchOverlayEvent:;
+- (void)ensureEventHandler;
+- (void)handleEdgePanGesture:;
+- (void)handleSimulGesture:;
+- (void)setSimulGesture:;
+- (id)simulGesture;
+- (id)init;
+- (id)uiDelegate;
+- (BOOL)gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:;
+- (BOOL)gestureRecognizer:shouldBeRequiredToFailByGestureRecognizer:;
+- (void)setUiDelegate:;
+- (void)setEventHandler:;
+- (id)hitTest:withEvent:;
+- (id)eventHandler;
+- (void).cxx_destruct;
+- (void)willMoveToWindow:;
+- (void)setHidden:;
+- (BOOL)gestureRecognizerShouldBegin:;
+- (BOOL)gestureRecognizer:shouldRequireFailureOfGestureRecognizer:;
+- (void)handlePanGesture:;
+@end

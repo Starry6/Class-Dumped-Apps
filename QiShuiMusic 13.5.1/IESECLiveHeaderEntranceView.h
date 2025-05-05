@@ -1,0 +1,37 @@
+@interface IESECLiveHeaderEntranceView : UIView
+@property (nonatomic) IESECGCDTimer timer;
+@property (nonatomic) Q indexOfTitles;
+@property (nonatomic) NSMutableArray rightViewArray;
+@property (nonatomic) UIView contentView;
+@property (nonatomic) IESECLiveGoodsListHeaderPromotionRightItemModel currentRightViewModel;
+@property (nonatomic) NSString currentEntranceText;
+@property (nonatomic) IESECLiveGoodsListHeaderPromotionRightModel rightModel;
+@property (nonatomic) <IESECLiveHeaderEntranceViewDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)isValideRotationWithRightModel:;
+- (void)configViewShouldClose:;
+- (id)currentEntranceText;
+- (id)currentRightViewModel;
+- (unsigned long long)indexOfTitles;
+- (void)initRightViewArrayWithRightItemArray:;
+- (id)rightModel;
+- (id)rightViewArray;
+- (void)setIndexOfTitles:;
+- (void)setRightModel:;
+- (void)setRightViewArray:;
+- (void)updateUIWithAnimated:;
+- (id)contentView;
+- (void)setDelegate:;
+- (void)setTimer:;
+- (id)initWithFrame:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)timer;
+- (void)setContentView:;
+- (id)currentRightView;
+- (void)setupUI;
++ (BOOL)shouldShowRightView:;
+@end

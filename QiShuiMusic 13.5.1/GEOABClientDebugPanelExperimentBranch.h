@@ -1,0 +1,35 @@
+@interface GEOABClientDebugPanelExperimentBranch : PBCodable
+@property (nonatomic) BOOL hasDebugExperimentBranch;
+@property (nonatomic) GEOABDebugPanelExperimentBranch debugExperimentBranch;
+@property (nonatomic) NSMutableArray configKeyValues;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (id)init;
+- (id)initWithJSON:;
+- (void)clearConfigKeyValues;
+- (id)jsonRepresentation;
+- (void)addConfigKeyValue:;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (id)configKeyValueAtIndex:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (unsigned long long)configKeyValuesCount;
+- (id)configKeyValues;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (void)setConfigKeyValues:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasDebugExperimentBranch;
+- (id)debugExperimentBranch;
+- (void)setDebugExperimentBranch:;
++ (BOOL)isValid:;
++ (Class)configKeyValueType;
+@end

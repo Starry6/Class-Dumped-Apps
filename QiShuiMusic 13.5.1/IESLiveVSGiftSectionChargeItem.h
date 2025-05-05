@@ -1,0 +1,30 @@
+@interface IESLiveVSGiftSectionChargeItem : IESLiveDynamicModel
+@property (nonatomic) NSNumber diamondCount;
+@property (nonatomic) @? diamondDidUpdate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) {CGSize=dd} itemSize;
+@property (nonatomic) # cellClass;
+@property (nonatomic) IESLiveVSGiftPanelDataSharing dataSharing;
+@property (nonatomic) IESLiveVSGiftPanelCommonReactionCenter reactionCenter;
+- (void)setDataSharing:;
+- (void)currentDiamondDidUpdate:;
+- (id)dataSharing;
+- (id)diamondCount;
+- (id)diffIdentifier;
+- (id)initWithDataSharing:withReactionCenter:;
+- (BOOL)isEqualToDiffableItem:;
+- (id)reactionCenter;
+- (void)setDiamondCount:;
+- (void)setReactionCenter:;
+- (void)tr_tap;
+- (void)updateWithDiamond:;
+- (id)itemSize;
+- (void).cxx_destruct;
+- (Class)cellClass;
+- (void)setItemSize:;
+- (void)tap;
+- (void)setCellClass:;
+@end

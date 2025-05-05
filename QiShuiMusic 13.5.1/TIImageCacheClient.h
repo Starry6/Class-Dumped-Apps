@@ -1,0 +1,34 @@
+@interface TIImageCacheClient : NSObject
+@property (nonatomic) NSObject<OS_dispatch_queue> storeImageQueue;
+@property (nonatomic) NSInteger cacheVersion;
+@property (nonatomic) BOOL lockOnRead;
+@property (nonatomic) Q cacheItemLimit;
+- (id)imagePath;
+- (void)purge;
+- (void)dealloc;
+- (void)purgeMemoryCache;
+- (void)setCacheItemLimit:;
+- (void)setLockOnRead:;
+- (unsigned long long)imageCount;
+- (void)_remoteStoreImageForKey:inGroup:withItem:;
+- (int)_cacheVersion;
+- (void)_localStoreImageForKey:inGroup:withItem:;
+- (void)setIdleWhenDone;
+- (id)openAndMmap:withInfo:;
+- (void)idleAfter:;
+- (id)copyImageForKey:inGroup:;
+- (BOOL)imageExistsForKey:inGroup:;
+- (void)storeImageDataForKey:inGroup:item:;
+- (BOOL)lockOnRead;
+- (id)_versionPath;
+- (void).cxx_destruct;
+- (void)removeImagesInGroups:completion:;
+- (unsigned long long)cacheItemLimit;
+- (id)_imgForItem:;
+- (void)_createConnectionIfNecessary;
+- (void)_idleIfNecessary:;
+- (void)_setCacheVersion:;
+- (id)initWithLocalAccess:;
+- (id)storeImageQueue;
+- (int)cacheVersion;
+@end

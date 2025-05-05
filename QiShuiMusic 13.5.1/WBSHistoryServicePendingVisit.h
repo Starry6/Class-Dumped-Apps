@@ -1,0 +1,33 @@
+@interface WBSHistoryServicePendingVisit : NSObject
+@property (nonatomic) WBSHistoryVisitIdentifier visitIdentifier;
+@property (nonatomic) Q operation;
+@property (nonatomic) WBSHistoryVisitIdentifier sourceVisitIdentifier;
+@property (nonatomic) NSString title;
+@property (nonatomic) BOOL wasHTTPNonGet;
+@property (nonatomic) BOOL loadSuccessful;
+@property (nonatomic) q origin;
+@property (nonatomic) Q attributes;
+@property (nonatomic) NSString urlString;
+@property (nonatomic) double visitTime;
+@property (nonatomic) Q score;
+- (id)urlString;
+- (unsigned long long)operation;
+- (void)setLoadSuccessful:;
+- (void)setOrigin:;
+- (unsigned long long)score;
+- (void)setTitle:;
+- (void)setOperation:;
+- (long long)origin;
+- (void)setAttributes:;
+- (unsigned long long)attributes;
+- (double)visitTime;
+- (id)title;
+- (void).cxx_destruct;
+- (BOOL)wasHTTPNonGet;
+- (id)visitIdentifier;
+- (BOOL)loadSuccessful;
+- (id)initWithWithVisitIdentifier:;
+- (id)sourceVisitIdentifier;
+- (void)setSourceVisitIdentifier:;
+- (void)setWasHTTPNonGet:;
+@end

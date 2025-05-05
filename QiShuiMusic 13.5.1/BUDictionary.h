@@ -1,0 +1,2 @@
+@interface BUDictionary : NSDictionary
+@end

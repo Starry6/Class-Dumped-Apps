@@ -1,0 +1,33 @@
+@interface ABUTrackerEvent : NSObject
+@property (nonatomic) NSDictionary param;
+@property (nonatomic) NSString eventID;
+@property (nonatomic) NSString linkID;
+@property (nonatomic) NSString type;
+- (void)addToReusePool;
+- (id)convertToUploadPackage;
+- (id)willUpdateParam:;
+- (void)setEventID:;
+- (void)setType:;
+- (id)eventID;
+- (void)prepareForReuse;
+- (id)param;
+- (BOOL)conformsToProtocol:;
+- (id)type;
+- (void)setParam:;
+- (void).cxx_destruct;
+- (id)linkID;
+- (void)setLinkID:;
++ (void)getEventListWithCount:complete:;
++ (id)_randomEventID;
++ (id)_reuseDictioanry;
++ (id)abu_databaseName;
++ (id)abu_primaryKey;
++ (id)abu_tableName;
++ (id)eventWithType:andBaseParam:;
++ (id)eventWithType:eventID:andBaseParam:;
++ (id)packageEvents:;
++ (void)removeEvents:complete:;
++ (void)removeEventsBeforeDays:complete:;
++ (void)saveEvent:complete:;
++ (double)timeIntervalOfDaysBeforeToday:;
+@end

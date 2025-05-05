@@ -1,0 +1,32 @@
+@interface BDXMultiDelegate : NSProxy
+@property (nonatomic) NSHashTable table;
+@property (nonatomic) Protocol protocol;
+@property (nonatomic) NSDictionary signatureMap;
+@property (nonatomic) <BDXMutiInvacationDelegate> invokeDelegate;
+@property (nonatomic) @ returnValueTarget;
+- (id)allDelegates;
+- (id)duplicateInvocationWithoutRetain:;
+- (void)invoke:target:;
+- (id)invokeDelegate;
+- (id)protocolCast;
+- (id)returnValueTarget;
+- (void)setInvokeDelegate:;
+- (void)setReturnValueTarget:;
+- (void)setSignatureMap:;
+- (id)signatureMap;
+- (id)protocol;
+- (void)addDelegate:;
+- (void)setProtocol:;
+- (id)initWithProtocol:;
+- (BOOL)respondsToSelector:;
+- (void)setTable:;
+- (void)removeDelegate:;
+- (id)table;
+- (id)methodSignatureForSelector:;
+- (BOOL)conformsToProtocol:;
+- (void).cxx_destruct;
+- (void)forwardInvocation:;
+- (void)doesNotRecognizeSelector:;
++ (id)cachedSignatureMap:;
++ (id)signatureMap:;
+@end

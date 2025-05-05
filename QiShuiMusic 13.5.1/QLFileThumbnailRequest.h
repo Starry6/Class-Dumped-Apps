@@ -1,0 +1,32 @@
+@interface QLFileThumbnailRequest : NSObject
+@property (nonatomic) {CGSize=dd} maximumSize;
+@property (nonatomic) {CGSize=dd} minimumSize;
+@property (nonatomic) double scale;
+@property (nonatomic) NSURL fileURL;
+@property (nonatomic) Q badgeType;
+@property (nonatomic) NSDictionary generationData;
+@property (nonatomic) NSString contentType;
+@property (nonatomic) NSInteger iconFlavor;
+@property (nonatomic) NSInteger interpolationQuality;
+- (void)setContentType:;
+- (void)setMinimumSize:;
+- (void)setFileURL:;
+- (void)setMaximumSize:;
+- (void)setScale:;
+- (id)contentType;
+- (id)minimumSize;
+- (void).cxx_destruct;
+- (id)fileURL;
+- (id)description;
+- (id)maximumSize;
+- (double)scale;
+- (unsigned long long)badgeType;
+- (void)setBadgeType:;
+- (int)interpolationQuality;
+- (void)setInterpolationQuality:;
+- (int)iconFlavor;
+- (void)setIconFlavor:;
+- (id)initWithMaximumSize:minimumSize:scale:badgeType:iconFlavor:contentType:fileURL:generationData:interpolationQuality:;
+- (id)generationData;
+- (void)setGenerationData:;
+@end

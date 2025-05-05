@@ -1,0 +1,30 @@
+@interface SAUSGenericResult : SADomainObject
+@property (nonatomic) SAUIAppPunchOut actionButton;
+@property (nonatomic) BOOL centered;
+@property (nonatomic) NSArray descriptions;
+@property (nonatomic) NSString footnote;
+@property (nonatomic) NSString secondaryTitle;
+@property (nonatomic) SAUIImageResource thumbnail;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSNumber titleMaxLines;
+- (void)setThumbnail:;
+- (id)groupIdentifier;
+- (void)setTitle:;
+- (id)thumbnail;
+- (id)title;
+- (id)encodedClassName;
+- (void)setSecondaryTitle:;
+- (id)secondaryTitle;
+- (id)actionButton;
+- (void)setActionButton:;
+- (void)setFootnote:;
+- (id)descriptions;
+- (void)setDescriptions:;
+- (void)setCentered:;
+- (id)footnote;
+- (BOOL)centered;
+- (id)titleMaxLines;
+- (void)setTitleMaxLines:;
++ (id)genericResult;
++ (id)genericResultWithDictionary:context:;
+@end

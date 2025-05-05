@@ -1,0 +1,35 @@
+@interface SISchemaUUFRFatalError : SISchemaInstrumentationMessage
+@property (nonatomic) NSString errorDomain;
+@property (nonatomic) BOOL hasErrorDomain;
+@property (nonatomic) NSInteger errorCode;
+@property (nonatomic) BOOL hasErrorCode;
+@property (nonatomic) SISchemaSiriResponseContext siriResponseContext;
+@property (nonatomic) BOOL hasSiriResponseContext;
+@property (nonatomic) NSData jsonData;
+- (id)errorDomain;
+- (BOOL)hasErrorCode;
+- (int)errorCode;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void)setErrorDomain:;
+- (BOOL)hasErrorDomain;
+- (void)setHasErrorCode:;
+- (void)setErrorCode:;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)deleteErrorCode;
+- (void)deleteErrorDomain;
+- (void)setHasErrorDomain:;
+- (BOOL)hasSiriResponseContext;
+- (void)deleteSiriResponseContext;
+- (id)siriResponseContext;
+- (void)setSiriResponseContext:;
+- (void)setHasSiriResponseContext:;
+@end

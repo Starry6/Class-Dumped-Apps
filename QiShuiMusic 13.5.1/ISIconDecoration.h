@@ -1,0 +1,38 @@
+@interface ISIconDecoration : NSObject
+@property (nonatomic) NSURL resourceURL;
+@property (nonatomic) NSUUID uuid;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) Q identifierKind;
+@property (nonatomic) <ISScalableCompositorResource> compositorResource;
+@property (nonatomic) NSUUID resourceToken;
+@property (nonatomic) q position;
+@property (nonatomic) q mode;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setPosition:;
+- (long long)position;
+- (id)init;
+- (id)resourceURL;
+- (id)uuid;
+- (id)identifier;
+- (id)initWithBundleIdentifier:;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)imageForDescriptor:;
+- (id)description;
+- (long long)mode;
+- (void)setMode:;
+- (id)initWithType:;
+- (id)copyWithZone:;
+- (void)prepareImagesForDescriptors:;
+- (id)resourceToken;
+- (id)initWithKind:identifier:;
+- (id)initWithResourceURL:;
+- (id)resourceFingerprint;
+- (id)compositorResource;
+- (unsigned long long)identifierKind;
++ (BOOL)supportsSecureCoding;
+@end

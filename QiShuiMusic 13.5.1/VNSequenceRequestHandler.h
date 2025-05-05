@@ -1,0 +1,36 @@
+@interface VNSequenceRequestHandler : NSObject
+- (BOOL)performRequests:onImageURL:orientation:gatheredForensics:error:;
+- (id)init;
+- (BOOL)performRequests:onCIImage:orientation:error:;
+- (id)initWithSession:;
+- (BOOL)_performRequests:onImageBuffer:gatheredForensics:error:;
+- (BOOL)performRequests:onCVPixelBuffer:orientation:gatheredForensics:error:;
+- (BOOL)performRequests:onCIImage:error:;
+- (BOOL)performRequests:onCIImage:gatheredForensics:error:;
+- (BOOL)performRequests:onCMSampleBuffer:orientation:error:;
+- (BOOL)performRequests:onImageData:orientation:error:;
+- (BOOL)performRequests:onCMSampleBuffer:error:;
+- (BOOL)performRequests:onCMSampleBuffer:gatheredForensics:error:;
+- (BOOL)prepareForPerformingRequests:error:;
+- (BOOL)performRequests:onImageData:orientation:gatheredForensics:error:;
+- (BOOL)performRequests:onImageData:gatheredForensics:error:;
+- (BOOL)performRequests:onCVPixelBuffer:orientation:error:;
+- (BOOL)performRequests:onImageData:error:;
+- (BOOL)performRequests:onCVPixelBuffer:error:;
+- (BOOL)performRequests:onCGImage:orientation:error:;
+- (BOOL)performRequests:onCGImage:error:;
+- (BOOL)performRequests:onImageURL:error:;
+- (void).cxx_destruct;
+- (BOOL)performRequests:onCMSampleBuffer:orientation:gatheredForensics:error:;
+- (BOOL)performRequests:onImageURL:orientation:error:;
+- (BOOL)performRequests:onImageURL:gatheredForensics:error:;
+- (BOOL)performRequests:onCGImage:orientation:gatheredForensics:error:;
+- (BOOL)performRequests:onCGImage:gatheredForensics:error:;
+- (BOOL)performRequests:onCVPixelBuffer:gatheredForensics:error:;
+- (BOOL)performRequests:onCIImage:orientation:gatheredForensics:error:;
++ (void)forcedCleanupWithOptions:;
++ (void)forcedCleanup;
++ (void)requestForcedCleanup;
++ (void)requestForcedCleanupWithOptions:completion:;
++ (void)requestForcedCleanupWithOptions:;
+@end

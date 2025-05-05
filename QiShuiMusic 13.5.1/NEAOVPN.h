@@ -1,0 +1,36 @@
+@interface NEAOVPN : NSObject
+@property (nonatomic) BOOL enabled;
+@property (nonatomic) BOOL toggleEnabled;
+@property (nonatomic) BOOL allowCaptiveWebSheet;
+@property (nonatomic) BOOL allowAllCaptiveNetworkPlugins;
+@property (nonatomic) NSDictionary interfaceProtocolMapping;
+@property (nonatomic) NSString activeInterfaceProtocolKey;
+@property (nonatomic) NSDictionary serviceExceptions;
+@property (nonatomic) NSDictionary applicationExceptions;
+@property (nonatomic) NSDictionary allowedCaptiveNetworkPlugins;
+- (BOOL)checkValidityAndCollectErrors:;
+- (id)descriptionWithIndent:options:;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void)setToggleEnabled:;
+- (void)setEnabled:;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (BOOL)isEnabled;
+- (BOOL)isToggleEnabled;
+- (BOOL)isAllowCaptiveWebSheet;
+- (void)setAllowCaptiveWebSheet:;
+- (BOOL)isAllowAllCaptiveNetworkPlugins;
+- (void)setAllowAllCaptiveNetworkPlugins:;
+- (id)interfaceProtocolMapping;
+- (void)setInterfaceProtocolMapping:;
+- (id)activeInterfaceProtocolKey;
+- (void)setActiveInterfaceProtocolKey:;
+- (id)serviceExceptions;
+- (void)setServiceExceptions:;
+- (id)applicationExceptions;
+- (void)setApplicationExceptions:;
+- (id)allowedCaptiveNetworkPlugins;
+- (void)setAllowedCaptiveNetworkPlugins:;
++ (BOOL)supportsSecureCoding;
+@end

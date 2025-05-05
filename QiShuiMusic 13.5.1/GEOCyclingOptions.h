@@ -1,0 +1,32 @@
+@interface GEOCyclingOptions : PBCodable
+@property (nonatomic) BOOL hasCyclingUserPreferences;
+@property (nonatomic) GEOCyclingUserPreferences cyclingUserPreferences;
+@property (nonatomic) BOOL hasCyclingVehicleSpecifications;
+@property (nonatomic) GEOCyclingVehicleSpecifications cyclingVehicleSpecifications;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (id)init;
+- (id)initWithJSON:;
+- (id)cyclingUserPreferences;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (BOOL)hasCyclingVehicleSpecifications;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void)setCyclingVehicleSpecifications:;
+- (id)initWithData:;
+- (void)setCyclingUserPreferences:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (id)cyclingVehicleSpecifications;
+- (BOOL)isEqual:;
+- (BOOL)hasCyclingUserPreferences;
+- (id)copyWithZone:;
++ (BOOL)isValid:;
+@end

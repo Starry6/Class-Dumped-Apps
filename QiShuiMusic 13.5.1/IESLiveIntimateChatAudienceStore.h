@@ -1,0 +1,34 @@
+@interface IESLiveIntimateChatAudienceStore : NSObject
+@property (nonatomic) <IESLiveRoomServiceAdapter> roomModel;
+@property (nonatomic) BOOL intimateChatEnabled;
+@property (nonatomic) NSNumber timeStamp;
+@property (nonatomic) BOOL isAdminWhenEnterRoom;
+@property (nonatomic) double connectStartTime;
+@property (nonatomic) q cameraDuration;
+@property (nonatomic) double cameraStartTime;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (double)cameraStartTime;
+- (long long)cameraDuration;
+- (double)connectStartTime;
+- (void)didSetAttachingDIContext;
+- (void)didUpdateRoom:timeStamp:;
+- (void)enableIntimateChatIfNeeded;
+- (BOOL)intimateChatEnabled;
+- (BOOL)isAdminWhenEnterRoom;
+- (id)roomModel;
+- (void)setCameraDuration:;
+- (void)setCameraStartTime:;
+- (void)setConnectStartTime:;
+- (void)setIntimateChatEnabled:;
+- (void)setIsAdminWhenEnterRoom:;
+- (void)setRoomModel:;
+- (void)setup;
+- (void).cxx_destruct;
+- (id)timeStamp;
+- (void)setTimeStamp:;
+- (void)messageReceived:;
+- (id)initWithRoom:;
+@end

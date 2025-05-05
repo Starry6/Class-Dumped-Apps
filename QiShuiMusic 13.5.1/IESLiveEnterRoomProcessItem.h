@@ -1,0 +1,33 @@
+@interface IESLiveEnterRoomProcessItem : NSObject
+@property (nonatomic) NSString index;
+@property (nonatomic) BOOL entering;
+@property (nonatomic) @? reportComplete;
+@property (nonatomic) @? roomInfoBlock;
+@property (nonatomic) BOOL firstFrameRender;
+@property (nonatomic) Q processStage;
+@property (nonatomic) NSMutableDictionary params;
+- (void)addCommonParams;
+- (void)addExtra:;
+- (void)closeRoomManualType:exceptionType:extra:;
+- (void)enterFailRoomExceptionType:extra:;
+- (BOOL)entering;
+- (BOOL)firstFrameRender;
+- (unsigned long long)processStage;
+- (id)roomInfoBlock;
+- (void)setEntering:;
+- (void)setFirstFrameRender:;
+- (void)setProcessStage:;
+- (void)setRoomInfoBlock:;
+- (void)startEnterWithRoomId:;
+- (void)timeOver;
+- (void)traceAppDetectExit:;
+- (id)index;
+- (void)clear;
+- (void)setIndex:;
+- (void).cxx_destruct;
+- (id)params;
+- (void)report;
+- (void)setParams:;
+- (void)setReportComplete:;
+- (id)reportComplete;
+@end

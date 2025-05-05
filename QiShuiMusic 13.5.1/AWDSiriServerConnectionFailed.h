@@ -1,0 +1,35 @@
+@interface AWDSiriServerConnectionFailed : PBCodable
+@property (nonatomic) BOOL hasTimestamp;
+@property (nonatomic) Q timestamp;
+@property (nonatomic) BOOL hasErrorDomain;
+@property (nonatomic) NSString errorDomain;
+@property (nonatomic) BOOL hasErrorCode;
+@property (nonatomic) q errorCode;
+@property (nonatomic) BOOL hasConnectionType;
+@property (nonatomic) NSInteger connectionType;
+- (id)errorDomain;
+- (int)connectionType;
+- (BOOL)hasConnectionType;
+- (BOOL)hasErrorCode;
+- (void)setConnectionType:;
+- (void)setHasConnectionType:;
+- (void)dealloc;
+- (long long)errorCode;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)setErrorDomain:;
+- (BOOL)hasErrorDomain;
+- (void)copyTo:;
+- (void)setHasTimestamp:;
+- (void)mergeFrom:;
+- (BOOL)hasTimestamp;
+- (void)setTimestamp:;
+- (void)setHasErrorCode:;
+- (void)setErrorCode:;
+- (BOOL)readFrom:;
+- (unsigned long long)timestamp;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+@end

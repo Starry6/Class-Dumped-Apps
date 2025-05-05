@@ -1,0 +1,35 @@
+@interface ASCVideoView : UIView
+@property (nonatomic) ASCScreenshotDisplayConfiguration screenshotDisplayConfiguration;
+@property (nonatomic) ASCBorderedScreenshotView previewFrameArtwork;
+@property (nonatomic) AVPlayer player;
+@property (nonatomic) AVPlayerLayer playerLayer;
+@property (nonatomic) <ASCVideoViewDelegate> delegate;
+@property (nonatomic) BOOL isPlaying;
+@property (nonatomic) BOOL loopingEnabled;
+@property (nonatomic) BOOL muted;
+- (id)playerLayer;
+- (BOOL)isPlaying;
+- (void)dealloc;
+- (void)layoutSubviews;
+- (void)setDelegate:;
+- (void)setMuted:;
+- (BOOL)isMuted;
+- (void)setImage:;
+- (id)initWithCoder:;
+- (id)initWithFrame:;
+- (void)encodeWithCoder:;
+- (id)player;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setLoopingEnabled:;
+- (BOOL)isLoopingEnabled;
+- (id)screenshotDisplayConfiguration;
+- (void)playerDidPlayToEndTime:;
+- (id)initWithFrame:videoURL:screenshotDisplayConfiguration:;
+- (id)preferredVideoSize;
+- (void)playVideo;
+- (void)pauseVideo;
+- (void)resetVideo;
+- (void)toggleIsPlaying;
+- (id)previewFrameArtwork;
+@end

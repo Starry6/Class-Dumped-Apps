@@ -1,0 +1,2 @@
+@interface VERecordModel : NSObject
+@end

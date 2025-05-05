@@ -1,0 +1,34 @@
+@interface CUFileServer : NSObject
+@property (nonatomic) NSString label;
+@property (nonatomic) NSURL rootDirectoryURL;
+@property (nonatomic) NSString serviceType;
+@property (nonatomic) NSObject<OS_dispatch_queue> dispatchQueue;
+@property (nonatomic) @? invalidationHandler;
+- (void)_update;
+- (id)init;
+- (void)dealloc;
+- (void)_invalidated;
+- (id)dispatchQueue;
+- (id)serviceType;
+- (void)_activateWithCompletion:;
+- (void)setDispatchQueue:;
+- (void)setServiceType:;
+- (void)setLabel:;
+- (id)label;
+- (void)activateWithCompletion:;
+- (void)_invalidate;
+- (void).cxx_destruct;
+- (id)invalidationHandler;
+- (void)setInvalidationHandler:;
+- (void)invalidate;
+- (void)_sessionTimerFired;
+- (void)_sessionInvalidate:;
+- (void)_handleSessionStart:responseHandler:;
+- (void)_handleSessionStop:responseHandler:;
+- (void)_handleKeepAlive:responseHandler:;
+- (void)_handleQuery:responseHandler:;
+- (void)_handleQuery:session:;
+- (void)_handleRequestFiles:responseHandler:;
+- (id)rootDirectoryURL;
+- (void)setRootDirectoryURL:;
+@end

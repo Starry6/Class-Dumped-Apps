@@ -1,0 +1,35 @@
+@interface IESLivePrivilegeDressPreviewFragment : IESLiveRoomComponent
+@property (nonatomic) IESLivePrivilegeDressPreviewBaseView currentDressPreview;
+@property (nonatomic) NSString currentUserId;
+@property (nonatomic) IESLivePrivilegeDressPreviewModel currentDressPreviewModel;
+@property (nonatomic) NSDictionary getSameClickTrackParams;
+@property (nonatomic) IESLiveGCDTimer timer;
+- (void)trackEffectShowForCleanStrategy;
+- (void)componentCreate;
+- (id)buildCommonTrackerParams;
+- (id)buildGetSameClickTrackParams;
+- (id)buildPackageCenterTrackParams;
+- (void)componentBindService;
+- (void)componentMount;
+- (id)currentDressPreview;
+- (id)currentDressPreviewModel;
+- (id)currentUserId;
+- (id)fetchDressPreviewWithUserId:;
+- (id)getProfileCardShowSource;
+- (id)getSameClickTrackParams;
+- (BOOL)preloadDressPreviewWithUserId:dressPreviewModel:;
+- (void)setCurrentDressPreview:;
+- (void)setCurrentDressPreviewModel:;
+- (void)setCurrentUserId:;
+- (void)setGetSameClickTrackParams:;
+- (void)trackPackageCenterGetSameShow;
+- (void)trackProfileCardFloatShow;
+- (void)trackProfileCardGetSameClick;
+- (void)invalidateTimer;
+- (void)dealloc;
+- (void)setTimer:;
+- (void).cxx_destruct;
+- (id)timer;
++ (BOOL)isMixed;
++ (BOOL)componentShouldActive:;
+@end

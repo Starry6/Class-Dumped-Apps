@@ -1,0 +1,32 @@
+@interface ARImageDetectionResultData : NSObject
+@property (nonatomic) double timestamp;
+@property (nonatomic) BOOL detectionOnly;
+@property (nonatomic) BOOL predicted;
+@property (nonatomic) BOOL providesWorldTrackingCameraPose;
+@property (nonatomic) ARCamera currentCamera;
+@property (nonatomic) NSArray detectedImages;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSDictionary tracingEntry;
+- (void)setTimestamp:;
+- (void).cxx_destruct;
+- (double)timestamp;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)detectionOnly;
+- (void)setDetectionOnly:;
+- (id)anchorsForCameraWithTransform:referenceOriginTransform:existingAnchors:anchorsToRemove:;
+- (id)tracingEntry;
+- (BOOL)predicted;
+- (void)setPredicted:;
+- (BOOL)providesWorldTrackingCameraPose;
+- (void)setProvidesWorldTrackingCameraPose:;
+- (id)currentCamera;
+- (void)setCurrentCamera:;
+- (id)detectedImages;
+- (void)setDetectedImages:;
++ (id)tracingEntryFormat;
+@end

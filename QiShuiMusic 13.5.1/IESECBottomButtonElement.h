@@ -1,0 +1,30 @@
+@interface IESECBottomButtonElement : IESECBasicElement
+@property (nonatomic) IESECBackgroundDescribeInfo background;
+@property (nonatomic) IESECTextWithIconElement mainTitle;
+@property (nonatomic) IESECTextWithIconElement subTitle;
+@property (nonatomic) double weight;
+@property (nonatomic) BOOL displayAsCountDown;
+@property (nonatomic) NSString countDownTemplate;
+@property (nonatomic) NSArray otherStates;
+@property (nonatomic) NSString clickMaskColor;
+- (void)setOtherStates:;
+- (id)clickMaskColor;
+- (id)countDownTemplate;
+- (BOOL)displayAsCountDown;
+- (id)otherStates;
+- (void)setClickMaskColor:;
+- (void)setCountDownTemplate:;
+- (void)setDisplayAsCountDown:;
+- (id)background;
+- (id)init;
+- (void)setBackground:;
+- (double)weight;
+- (void)setWeight:;
+- (void).cxx_destruct;
+- (void)setSubTitle:;
+- (id)subTitle;
+- (id)mainTitle;
+- (void)setMainTitle:;
++ (id)otherStatesJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

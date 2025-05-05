@@ -1,0 +1,2 @@
+@interface BLSCancelWhenBacklightInactivatesAttribute : BLSValidWhenBacklightInactiveAttribute
+@end

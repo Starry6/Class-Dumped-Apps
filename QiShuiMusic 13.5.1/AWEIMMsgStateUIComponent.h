@@ -1,0 +1,38 @@
+@interface AWEIMMsgStateUIComponent : NSObject
+@property (nonatomic) <IESIMMessageReadDataManagerProtocol> readDataManager;
+@property (nonatomic) NSString pullingTimerName;
+@property (nonatomic) AWEIMReadReceiptIdentifier pullingReadReceiptID;
+@property (nonatomic) <AWEIMMessageListComponentCenter> componentCenter;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)componentCenter;
+- (id)anchorCellModel;
+- (id)readDataManager;
+- (void)cancelPullingTimer;
+- (id)correspondingUserMsgCellForCellModel:;
+- (BOOL)delayUpdateStateViewIfNeededForCellModel:withModel:;
+- (void)didAddToComponentCenter;
+- (id)findReadReceiptModelIn:forMsg:;
+- (BOOL)hideCellModelIfNeeded:;
+- (void)msg_cellModelsUpdated;
+- (void)onReceiveReadReceiptUpdatedNotification:;
+- (id)parseDataFromNotification:;
+- (id)pullingReadReceiptID;
+- (id)pullingTimerName;
+- (void)registerNotification;
+- (void)requestReadReceiptForMsgID:conversationID:completion:;
+- (void)setComponentCenter:;
+- (void)setPullingReadReceiptID:;
+- (void)setPullingTimerName:;
+- (void)setReadDataManager:;
+- (void)startPullingReadReceiptPeriodically:;
+- (id)stateViewModelToShowForCellModel:readStateEnable:;
+- (void)updateAllCellModels;
+- (void)updateStateViewForCellModel:;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (void)unregisterNotification;
+@end

@@ -1,0 +1,30 @@
+@interface SFDownloadFile : NSObject
+@property (nonatomic) <SFDownloadFileDelegate> delegate;
+@property (nonatomic) NSURL URL;
+@property (nonatomic) NSData bookmarkData;
+@property (nonatomic) NSURL presentedItemURL;
+@property (nonatomic) NSOperationQueue presentedItemOperationQueue;
+@property (nonatomic) NSURL primaryPresentedItemURL;
+@property (nonatomic) NSSet observedPresentedItemUbiquityAttributes;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)presentedItemURL;
+- (void)dealloc;
+- (id)initWithURL:;
+- (id)presentedItemOperationQueue;
+- (void)accommodatePresentedItemDeletionWithCompletionHandler:;
+- (void)setDelegate:;
+- (void)_suspend;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)presentedItemDidMoveToURL:;
+- (void)invalidate;
+- (id)URL;
+- (void)_resume;
+- (void)presentedItemDidChange;
+- (id)bookmarkData;
+- (id)initWithBookmarkData:;
+- (id)initWithURL:bookmarkData:;
+@end

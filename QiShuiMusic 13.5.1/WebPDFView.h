@@ -1,0 +1,34 @@
+@interface WebPDFView : WAKView
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setDataSource:;
+- (void)drawRect:;
+- (void)dealloc;
+- (void)layout;
+- (id)title;
+- (id)doc;
+- (void).cxx_destruct;
+- (void)setNeedsLayout:;
+- (id).cxx_construct;
+- (id)rectForPageNumber:;
+- (unsigned int)totalPages;
+- (id)documentSource;
+- (void)dataSourceUpdated:;
+- (void)viewWillMoveToHostWindow:;
+- (void)viewDidMoveToHostWindow;
+- (void)receivedData:withDataSource:;
+- (void)receivedError:withDataSource:;
+- (void)finishedLoadingWithDataSource:;
+- (BOOL)canProvideDocumentSource;
+- (void)drawPage:;
+- (id)_pagesInRect:;
+- (void)_computePageRects;
+- (void)_checkPDFTitle;
+- (unsigned int)pageNumberForRect:;
++ (id)backgroundColor;
++ (id)shadowColor;
++ (Class)_representationClassForWebFrame:;
++ (id)supportedMIMETypes;
+@end

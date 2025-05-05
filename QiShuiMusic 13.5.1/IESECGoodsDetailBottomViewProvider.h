@@ -1,0 +1,35 @@
+@interface IESECGoodsDetailBottomViewProvider : NSObject
+@property (nonatomic) IESECGoodsDetailParameters parameters;
+@property (nonatomic) IESECGoodsDetailBottomView bottomNewView;
+@property (nonatomic) Q starItemIndex;
+@property (nonatomic) Q cartItemIndex;
+@property (nonatomic) IESECGoodsDetailTracker tracker;
+@property (nonatomic) Q addCartStyle;
+@property (nonatomic) <IESECGoodsDetailBottomViewProviderDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)acceptShoppingCartNumberChanged:;
+- (void)acceptShoppingCartNumberChanged:style:;
+- (unsigned long long)addCartStyle;
+- (id)bottomNewView;
+- (unsigned long long)cartItemIndex;
+- (id)createBottomTipsView;
+- (id)createBottomView;
+- (void)goodsDetailBottomViewNeedUpdatedWithGoodsDetailUID:;
+- (id)initWithParameters:tracker:;
+- (void)setAddCartStyle:;
+- (void)setBottomNewView:;
+- (void)setCartItemIndex:;
+- (void)setStarItemIndex:;
+- (unsigned long long)starItemIndex;
+- (void)setTracker:;
+- (void)dealloc;
+- (id)tracker;
+- (void)setDelegate:;
+- (id)parameters;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setParameters:;
+@end

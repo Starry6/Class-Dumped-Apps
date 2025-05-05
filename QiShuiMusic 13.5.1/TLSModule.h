@@ -1,0 +1,2 @@
+@interface TLSModule : NSObject
+@end

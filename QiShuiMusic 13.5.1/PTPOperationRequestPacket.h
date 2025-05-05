@@ -1,0 +1,34 @@
+@interface PTPOperationRequestPacket : NSObject
+- (unsigned int)transactionID;
+- (void)setTransactionID:;
+- (id)description;
+- (unsigned int)parameterAtIndex:;
+- (id)initWithTCPBuffer:;
+- (id)initWithUSBBuffer:;
+- (id)contentForTCP;
+- (id)contentForUSB;
+- (id)contentForUSBUsingBuffer:capacity:;
+- (unsigned short)operationCode;
+- (void)setOperationCode:;
+- (id)initWithOperationCode:transactionID:dataPhaseInfo:numParameters:parameters:;
+- (id)initWithOperationCode:transactionID:dataPhaseInfo:;
+- (id)initWithOperationCode:transactionID:dataPhaseInfo:parameter1:;
+- (id)initWithOperationCode:transactionID:dataPhaseInfo:parameter1:parameter2:;
+- (id)initWithOperationCode:transactionID:dataPhaseInfo:parameter1:parameter2:parameter3:;
+- (id)initWithOperationCode:transactionID:dataPhaseInfo:parameter1:parameter2:parameter3:parameter4:;
+- (id)initWithOperationCode:transactionID:dataPhaseInfo:parameter1:parameter2:parameter3:parameter4:parameter5:;
+- (unsigned int)dataPhaseInfo;
+- (void)setDataPhaseInfo:;
+- (int)numParameters;
+- (void)setPparameter:atIndex:;
+- (unsigned int)parameter1;
+- (void)setParameter1:;
+- (unsigned int)parameter2;
+- (void)setParameter2:;
+- (unsigned int)parameter3;
+- (void)setParameter3:;
+- (unsigned int)parameter4;
+- (void)setParameter4:;
+- (unsigned int)parameter5;
+- (void)setParameter5:;
+@end

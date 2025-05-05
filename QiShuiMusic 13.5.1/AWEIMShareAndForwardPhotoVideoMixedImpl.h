@@ -1,0 +1,34 @@
+@interface AWEIMShareAndForwardPhotoVideoMixedImpl : NSObject
+@property (nonatomic) AWEProgressLoadingView loadingView;
+@property (nonatomic) BOOL shouldShowShareListTips;
+@property (nonatomic) BOOL shouldShowSendingToast;
+@property (nonatomic) AWEShareContext shareContext;
+@property (nonatomic) AWEIMMessage forwardMessage;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)clearBusinessModelFromIMSetting;
+- (id)businessModelFromIMSetting;
+- (void)configShareAlertTopView:withCoverImageView:contentLabel:;
+- (void)configShareBottomInputViewWithCoverImageView:;
+- (void)didSendAttachmentWithIndex:total:;
+- (id)forwardMessage;
+- (void)p_dismissLoading;
+- (void)saveBusinessModelToIMSetting;
+- (void)setForwardMessage:;
+- (void)setShareContext:;
+- (void)setShouldShowSendingToast:;
+- (void)setShouldShowShareListTips:;
+- (id)shareContext;
+- (id)shareMessage;
+- (BOOL)shouldShowSendingToast;
+- (BOOL)shouldShowShareListTips;
+- (void)showCustomTipsAfterSendMessagesWithShareUserList:;
+- (void)willShareToShareUserList:;
+- (id)init;
+- (void).cxx_destruct;
+- (id)attachments;
+- (id)loadingView;
+- (void)setLoadingView:;
+@end

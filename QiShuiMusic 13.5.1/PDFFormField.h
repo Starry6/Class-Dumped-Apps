@@ -1,0 +1,34 @@
+@interface PDFFormField : NSObject
+- (void)setFieldName:;
+- (void)dealloc;
+- (void)setDocument:;
+- (void)setButtonType:;
+- (void)commonInit;
+- (id)defaultStringValue;
+- (id)fieldName;
+- (void)setStringValue:;
+- (id)stringValue;
+- (id)document;
+- (void).cxx_destruct;
+- (int)fieldType;
+- (id)description;
+- (long long)buttonType;
+- (id)copyWithZone:;
+- (id)initWithAnnotation:;
+- (id)dictionaryRef;
+- (void)addFieldTypeToDictionaryRef:;
+- (void)addFieldNameToDictionaryRef:;
+- (id)createDictionaryRef;
+- (BOOL)writeDefaultValue;
+- (id)initWithFormDictionary:;
+- (void)clearDictionaryRef;
+- (void)commonCreateDictionaryRef:;
+- (void)setFieldType:;
+- (void)setDefaultStringValue:;
+- (void)setWriteDefaultValue:;
+- (void)addNameValueToDictionaryRef:;
+- (void)addStringValueToDictionaryRef:;
+- (void)addNameDefaultValueToDictionaryRef:;
+- (void)addStringDefaultValueToDictionaryRef:;
+- (BOOL)_isRedacted;
+@end

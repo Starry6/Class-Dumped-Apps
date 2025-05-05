@@ -1,0 +1,34 @@
+@interface AWDCompanionSyncErrorNotification : PBCodable
+@property (nonatomic) BOOL hasTimestamp;
+@property (nonatomic) Q timestamp;
+@property (nonatomic) BOOL hasService;
+@property (nonatomic) NSString service;
+@property (nonatomic) BOOL hasErrorDomain;
+@property (nonatomic) NSString errorDomain;
+@property (nonatomic) BOOL hasErrorCode;
+@property (nonatomic) q errorCode;
+- (id)errorDomain;
+- (BOOL)hasErrorCode;
+- (void)setService:;
+- (void)dealloc;
+- (long long)errorCode;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)setErrorDomain:;
+- (id)service;
+- (BOOL)hasErrorDomain;
+- (void)copyTo:;
+- (void)setHasTimestamp:;
+- (void)mergeFrom:;
+- (BOOL)hasTimestamp;
+- (void)setTimestamp:;
+- (void)setHasErrorCode:;
+- (void)setErrorCode:;
+- (BOOL)readFrom:;
+- (unsigned long long)timestamp;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasService;
+@end

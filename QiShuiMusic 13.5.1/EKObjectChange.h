@@ -1,0 +1,34 @@
+@interface EKObjectChange : NSObject
+@property (nonatomic) q changeID;
+@property (nonatomic) q sequenceNumber;
+@property (nonatomic) EKObjectID changedObjectID;
+@property (nonatomic) NSInteger changeType;
+- (int)changeType;
+- (id)changedObjectID;
+- (unsigned long long)hash;
+- (long long)changeID;
+- (long long)sequenceNumber;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)initWithChangeProperties:;
+- (id)serializedPropertiesForConsumingChange;
++ (long long)objectType;
++ (int)entityType;
++ (void)objectChangesInStore:resultHandler:;
++ (id)CADObjectChangeIDsFromEKObjectChanges:;
++ (void)objectChangesInSource:resultHandler:;
++ (void)objectChangesInCalendar:resultHandler:;
++ (void)objectChangesOfType:inStore:resultHandler:;
++ (void)objectChangesOfType:inSource:resultHandler:;
++ (void)objectChangesOfType:inCalendar:resultHandler:;
++ (void)fetchObjectChangesInStore:resultHandler:;
++ (void)fetchObjectChangesInSource:resultHandler:;
++ (void)fetchObjectChangesInCalendar:resultHandler:;
++ (void)fetchChangesToObjectsOfTypes:inStore:resultHandler:;
++ (void)fetchChangesToObjectsOfTypes:inSource:resultHandler:;
++ (void)fetchChangesToObjectsOfTypes:inCalendar:resultHandler:;
++ (id)processFetchResults:;
++ (void)callClientResultsHandler:changesTruncated:latestToken:changes:;
++ (id)objectChangeWithProperties:;
+@end

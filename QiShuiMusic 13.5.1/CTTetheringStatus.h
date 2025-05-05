@@ -1,0 +1,32 @@
+@interface CTTetheringStatus : NSObject
+@property (nonatomic) NSNumber carrierEnabled;
+@property (nonatomic) NSNumber userAuthenticated;
+@property (nonatomic) NSNumber asserted;
+@property (nonatomic) NSNumber activationFailure;
+@property (nonatomic) NSNumber misPdpMaxHosts;
+@property (nonatomic) CTDataConnectionAvailabilityStatus connectionAvailabilityStatus;
+@property (nonatomic) CTDataConnectionStatus connectionStatus;
+@property (nonatomic) CTXPCServiceSubscriptionContext context;
+- (void)setCarrierEnabled:;
+- (id)context;
+- (id)misPdpMaxHosts;
+- (void)setUserAuthenticated:;
+- (id)initWithCoder:;
+- (id)activationFailure;
+- (void)encodeWithCoder:;
+- (void)setActivationFailure:;
+- (id)connectionStatus;
+- (void).cxx_destruct;
+- (id)carrierEnabled;
+- (void)setMisPdpMaxHosts:;
+- (void)setConnectionAvailabilityStatus:;
+- (id)description;
+- (id)userAuthenticated;
+- (id)asserted;
+- (id)connectionAvailabilityStatus;
+- (void)setContext:;
+- (void)setConnectionStatus:;
+- (id)copyWithZone:;
+- (void)setAsserted:;
++ (BOOL)supportsSecureCoding;
+@end

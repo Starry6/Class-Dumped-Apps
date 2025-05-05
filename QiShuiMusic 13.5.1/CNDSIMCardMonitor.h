@@ -1,0 +1,35 @@
+@interface CNDSIMCardMonitor : NSObject
+@property (nonatomic) CoreTelephonyClient coreTelephonyClient;
+@property (nonatomic) <CNDCoreTelephonyServices> coreTelephonyServices;
+@property (nonatomic) CNReplaySubject subject;
+@property (nonatomic) <CNCancelable> subjectToken;
+@property (nonatomic) ^{__CTServerConnection=} serverConnection;
+@property (nonatomic) NSObject<OS_dispatch_queue> serverConnectionQueue;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setServerConnection:;
+- (id)coreTelephonyClient;
+- (id)addInfoChangeHandler:;
+- (id)serverConnection;
+- (id)init;
+- (id)subject;
+- (id)subjectToken;
+- (void)dealloc;
+- (void)nts_configureConnectionIfNecessary;
+- (void)configureStateIfNecessary;
+- (id)serverConnectionQueue;
+- (id)coreTelephonyServices;
+- (void).cxx_destruct;
+- (id)initWithCoreTelephonyClient:services:;
+- (void)setServerConnectionQueue:;
+- (void)setSubjectToken:;
+- (void)nts_configureSubjectIfNecessary;
++ (void)infoWithClient:completion:;
++ (id)phoneNumberChangedObservableWithCoreTelephonyServices:serverConnection:;
++ (id)infoWithCompletion:;
++ (id)phoneNumberObservableWithCoreTelephonyClient:;
++ (id)os_log;
++ (id)continuousPhoneNumberObservableWithCoreTelephonyClient:services:serverConnection:;
+@end

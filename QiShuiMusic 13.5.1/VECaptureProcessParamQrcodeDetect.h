@@ -1,0 +1,34 @@
+@interface VECaptureProcessParamQrcodeDetect : VECaptureProcessParam
+@property (nonatomic) NSString graphConfig;
+@property (nonatomic) NSInteger frameNum;
+@property (nonatomic) float threshold;
+@property (nonatomic) NSInteger timeout;
+@property (nonatomic) BOOL isForScan;
+@property (nonatomic) BOOL enableZoomBehavior;
+@property (nonatomic) float needZoomFactorToFrameHeight;
+@property (nonatomic) float maxFactorToFrameHeight;
+@property (nonatomic) {?=fffff} qrcodeZoomAOI;
+@property (nonatomic) float maxZoomFactor;
+- (void)setGraphConfig:;
+- (void)setNeedZoomFactorToFrameHeight:;
+- (BOOL)enableZoomBehavior;
+- (id)graphConfig;
+- (BOOL)isForScan;
+- (float)maxFactorToFrameHeight;
+- (float)needZoomFactorToFrameHeight;
+- (id)qrcodeZoomAOI;
+- (void)setEnableZoomBehavior:;
+- (void)setFrameNum:;
+- (void)setIsForScan:;
+- (void)setMaxFactorToFrameHeight:;
+- (void)setMaxZoomFactor:;
+- (void)setQrcodeZoomAOI:;
+- (float)threshold;
+- (id)init;
+- (void)setTimeout:;
+- (float)maxZoomFactor;
+- (void).cxx_destruct;
+- (int)timeout;
+- (void)setThreshold:;
+- (int)frameNum;
+@end

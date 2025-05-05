@@ -1,0 +1,2 @@
+@interface RoomSilenceApiRoot : GPBRootObject
+@end

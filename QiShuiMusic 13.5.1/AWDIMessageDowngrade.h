@@ -1,0 +1,35 @@
+@interface AWDIMessageDowngrade : PBCodable
+@property (nonatomic) BOOL hasGuid;
+@property (nonatomic) NSString guid;
+@property (nonatomic) BOOL hasTimestamp;
+@property (nonatomic) Q timestamp;
+@property (nonatomic) BOOL hasDurationBeforeDowngrade;
+@property (nonatomic) I durationBeforeDowngrade;
+@property (nonatomic) BOOL hasIsManualDowngrade;
+@property (nonatomic) I isManualDowngrade;
+- (BOOL)hasGuid;
+- (void)dealloc;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)setHasTimestamp:;
+- (void)mergeFrom:;
+- (BOOL)hasTimestamp;
+- (void)setTimestamp:;
+- (void)setGuid:;
+- (BOOL)readFrom:;
+- (unsigned long long)timestamp;
+- (id)guid;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setDurationBeforeDowngrade:;
+- (void)setIsManualDowngrade:;
+- (unsigned int)durationBeforeDowngrade;
+- (void)setHasDurationBeforeDowngrade:;
+- (BOOL)hasDurationBeforeDowngrade;
+- (void)setHasIsManualDowngrade:;
+- (BOOL)hasIsManualDowngrade;
+- (unsigned int)isManualDowngrade;
+@end

@@ -1,0 +1,31 @@
+@interface IESLiveMultiLinkerBreakthroughScoreView : IESLiveMultiLinkerBaseBattleScoreView
+@property (nonatomic) BreakthroughConfig config;
+@property (nonatomic) UIImageView rankIconView;
+@property (nonatomic) UILabel scoreLabel;
+@property (nonatomic) NSNumber currentScore;
+@property (nonatomic) BOOL isCritical;
+@property (nonatomic) BOOL isMvp;
+@property (nonatomic) BOOL showGiftIcon;
+- (id)currentScore;
+- (void)hideGiftIcon;
+- (id)initWithModel:diContext:;
+- (BOOL)isInPunishTime;
+- (BOOL)isMvp;
+- (id)rankIconView;
+- (void)setCurrentScore:;
+- (void)setIsMvp:;
+- (void)setRankIconView:;
+- (void)setShowGiftIcon:;
+- (BOOL)showGiftIcon;
+- (void)updateScoreWithModel:;
+- (void)updateUIInPunish;
+- (void)updateViewIfNeeded;
+- (void)setIsCritical:;
+- (void)setConfig:;
+- (BOOL)isCritical;
+- (void).cxx_destruct;
+- (id)config;
+- (void)setupUI;
+- (id)scoreLabel;
+- (void)setScoreLabel:;
+@end

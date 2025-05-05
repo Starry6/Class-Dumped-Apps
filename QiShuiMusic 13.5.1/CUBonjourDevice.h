@@ -1,0 +1,37 @@
+@interface CUBonjourDevice : NSObject
+@property (nonatomic) NSDictionary deviceInfo;
+@property (nonatomic) NSString identifierStr;
+@property (nonatomic) NSUUID identifierUUID;
+@property (nonatomic) NSUUID identifier;
+@property (nonatomic) NSString model;
+@property (nonatomic) NSString name;
+@property (nonatomic) NSString serviceType;
+@property (nonatomic) NSDictionary txtDictionary;
+@property (nonatomic) NSData txtData;
+- (id)model;
+- (void)setDeviceInfo:;
+- (id)copyConnectionInfoWithFlags:interfaceName:error:;
+- (id)deviceInfo;
+- (id)shortDescription;
+- (void)setName:;
+- (id)descriptionWithLevel:;
+- (void)setModel:;
+- (id)txtDictionary;
+- (id)serviceType;
+- (id)identifierStr;
+- (id)identifier;
+- (id)identifierUUID;
+- (void)setServiceType:;
+- (id)copyConnectionStringWithFlags:error:;
+- (void)setIdentifierStr:;
+- (void)setIdentifierUUID:;
+- (void)_updateTXTDictionary:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)name;
+- (id)txtData;
+- (unsigned int)updateWithBonjourDeviceInfo:;
+- (void)reconfirm;
+- (void)setIdentifier:;
+- (void)setTxtData:;
+@end

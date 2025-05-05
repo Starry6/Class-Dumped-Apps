@@ -1,0 +1,30 @@
+@interface IESECShopGoodsAddToCartHandler : NSObject
+@property (nonatomic) UIView<IESECSKUViewProtocol> skuView;
+@property (nonatomic) UIViewController viewController;
+@property (nonatomic) IESECShopGoodsAddToCartTrackingParams trackingParams;
+@property (nonatomic) NSString btm;
+@property (nonatomic) <IESECStoreShoppingCartControllerProtocol> cartController;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)btm;
+- (void)setBtm:;
+- (id)skuView;
+- (void)addToCartClick:skuInfo:;
+- (void)addToShoppingCartActionWithSKUInfo:multiSKU:completion:;
+- (void)backClick:skuInfo:;
+- (id)cartController;
+- (void)closeSKUView;
+- (void)handleButtonClickWithRelationModel:image:atRect:toPoint:atIndex:;
+- (void)setCartController:;
+- (void)setSkuView:;
+- (void)setTrackingParams:;
+- (void)showSKUView;
+- (id)trackParams;
+- (id)trackingParams;
+- (void)setViewController:;
+- (id)viewController;
+- (void).cxx_destruct;
+- (id)initWithViewController:;
+@end

@@ -1,0 +1,33 @@
+@interface FLEXShortcut : NSObject
+@property (nonatomic) Q metadataKind;
+@property (nonatomic) FLEXProperty property;
+@property (nonatomic) FLEXMethod method;
+@property (nonatomic) FLEXIvar ivar;
+@property (nonatomic) <FLEXRuntimeMetadata> metadata;
+@property (nonatomic) FLEXObjectExplorerDefaults defaults;
+@property (nonatomic) BOOL isEditable;
+@property (nonatomic) BOOL isCallable;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)propertyOrIvarValue:;
+- (id)titleWith:;
+- (id)subtitleWith:;
+- (id)didSelectActionWith:;
+- (id)viewerWith:;
+- (id)editorWith:forSection:;
+- (long long)accessoryTypeWith:;
+- (id)customReuseIdentifierWith:;
+- (void)setDefaults:;
+- (BOOL)isEditable;
+- (BOOL)isCallable;
+- (id)property;
+- (id)method;
+- (id)ivar;
+- (id)metadata;
+- (id)defaults;
+- (unsigned long long)metadataKind;
+- (void).cxx_destruct;
++ (id)shortcutFor:;
+@end

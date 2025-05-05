@@ -1,0 +1,38 @@
+@interface MPMediaItemCollection : MPMediaEntity
+@property (nonatomic) q groupingType;
+@property (nonatomic) NSArray items;
+@property (nonatomic) MPMediaItem representativeItem;
+@property (nonatomic) Q count;
+@property (nonatomic) Q mediaTypes;
+- (id)initWithItems:;
+- (id)init;
+- (void)_enumerateItemPersistentIDsUsingBlock:;
+- (id)items;
+- (id)representativeItem;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (long long)groupingType;
+- (void).cxx_destruct;
+- (unsigned long long)count;
+- (BOOL)isEqual:;
+- (BOOL)setValue:forProperty:;
+- (unsigned long long)mediaTypes;
+- (id)artworkCatalog;
+- (id)initWithMultiverseIdentifier:library:;
+- (id)multiverseIdentifier;
+- (id)initWithItemsQuery:;
+- (id)itemsQuery;
+- (void)setValue:forProperty:withCompletionBlock:;
+- (id)albumArtistArtworkCatalog;
+- (id)artistArtworkCatalog;
+- (id)_artworkCatalogRepresentativeItem;
+- (BOOL)MPSD_hasDownloadableItem;
+- (BOOL)MPSD_hasDownloadingItem;
++ (BOOL)supportsSecureCoding;
++ (id)titlePropertyForGroupingType:;
++ (id)collectionWithItems:;
++ (id)sortTitlePropertyForGroupingType:;
++ (id)representativePersistentIDPropertyForGroupingType:;
++ (id)artworkCatalogCachePropertiesForGroupingType:;
+@end

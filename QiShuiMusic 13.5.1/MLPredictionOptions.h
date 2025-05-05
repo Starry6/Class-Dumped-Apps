@@ -1,0 +1,33 @@
+@interface MLPredictionOptions : NSObject
+@property (nonatomic) Q parentSignpostID;
+@property (nonatomic) Q classifyTopK;
+@property (nonatomic) BOOL predictionUsesCPU;
+@property (nonatomic) NSDictionary automaticOutputBackingMode;
+@property (nonatomic) Q maxComputationBatchSize;
+@property (nonatomic) BOOL enablePixelBufferDirectBinding;
+@property (nonatomic) BOOL usesCPUOnly;
+@property (nonatomic) NSDictionary outputBackings;
+- (id)init;
+- (BOOL)predictionUsesCPU;
+- (id)outputBackings;
+- (void)setAutomaticOutputBackingMode:;
+- (BOOL)enablePixelBufferDirectBinding;
+- (unsigned long long)classifyTopK;
+- (id)initWithCoder:;
+- (unsigned long long)maxComputationBatchSize;
+- (id)automaticOutputBackingMode;
+- (void)setOutputBackings:;
+- (id)initWithUsesCPUOnly:;
+- (void)encodeWithCoder:;
+- (unsigned long long)parentSignpostID;
+- (void)setEnablePixelBufferDirectBinding:;
+- (void)setMaxComputationBatchSize:;
+- (BOOL)usesCPUOnly;
+- (void).cxx_destruct;
+- (void)setUsesCPUOnly:;
+- (void)setParentSignpostID:;
+- (void)setClassifyTopK:;
+- (id)copyWithZone:;
++ (BOOL)supportsSecureCoding;
++ (id)defaultOptions;
+@end

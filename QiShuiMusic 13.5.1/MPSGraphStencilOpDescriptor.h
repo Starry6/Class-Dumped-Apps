@@ -1,0 +1,32 @@
+@interface MPSGraphStencilOpDescriptor : NSObject
+@property (nonatomic) Q reductionMode;
+@property (nonatomic) NSArray offsets;
+@property (nonatomic) NSArray strides;
+@property (nonatomic) NSArray dilationRates;
+@property (nonatomic) NSArray explicitPadding;
+@property (nonatomic) q boundaryMode;
+@property (nonatomic) Q paddingStyle;
+@property (nonatomic) float paddingConstant;
+- (id)strides;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (unsigned long long)paddingStyle;
+- (void)setPaddingStyle:;
+- (void)setStrides:;
+- (id)dilationRates;
+- (void)setDilationRates:;
+- (unsigned long long)reductionMode;
+- (void)setReductionMode:;
+- (id)offsets;
+- (void)setOffsets:;
+- (id)explicitPadding;
+- (void)setExplicitPadding:;
+- (long long)boundaryMode;
+- (void)setBoundaryMode:;
+- (float)paddingConstant;
+- (void)setPaddingConstant:;
++ (id)descriptorWithPaddingStyle:;
++ (id)descriptorWithReductionMode:offsets:strides:dilationRates:explicitPadding:boundaryMode:paddingStyle:paddingConstant:;
++ (id)descriptorWithOffsets:explicitPadding:;
++ (id)descriptorWithExplicitPadding:;
+@end

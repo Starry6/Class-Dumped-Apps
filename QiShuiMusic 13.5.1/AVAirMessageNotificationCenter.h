@@ -1,0 +1,36 @@
+@interface AVAirMessageNotificationCenter : NSObject
+@property (nonatomic) NSObject<OS_dispatch_queue> queue;
+@property (nonatomic) NSMutableSet activeChannels;
+@property (nonatomic) <AVAirMessageNotificationCenterDelegate> delegate;
+@property (nonatomic) AVBonjourService mainService;
+@property (nonatomic) AVPlayerItem nowPlayingPlayerItem;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)mainService;
+- (id)init;
+- (void)dealloc;
+- (void)start;
+- (void)setDelegate:;
+- (void)stop;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)_initPrivate;
+- (id)queue;
+- (void)bonjourService:didAcceptConnectionChannel:;
+- (void)bonjourService:didCloseChannel:;
+- (id)bonjourServiceAdditionalTXTRecordInfo:;
+- (void)airTransport:didReceiveObject:;
+- (void)airTransportInputDidClose:;
+- (id)playerItemForIdentifier:;
+- (void)handleCommandMessage:completion:;
+- (id)nowPlayingPlayerItem;
+- (void)setNowPlayingPlayerItem:;
+- (id)activeChannels;
+- (void)setActiveChannels:;
++ (id)shared;
++ (BOOL)isPrepared;
++ (void)prepare;
++ (BOOL)_isNotificationCenterEnabled;
+@end

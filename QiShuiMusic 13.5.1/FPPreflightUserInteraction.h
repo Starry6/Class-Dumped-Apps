@@ -1,0 +1,38 @@
+@interface FPPreflightUserInteraction : NSObject
+@property (nonatomic) FPPreflightUserInteractionAlert alert;
+@property (nonatomic) NSString providerIdentifier;
+@property (nonatomic) NSString domainIdentifier;
+@property (nonatomic) NSArray subInteractions;
+@property (nonatomic) BOOL hasSuppressionIdentifier;
+@property (nonatomic) NSString helpURL;
+@property (nonatomic) NSPredicate predicate;
+@property (nonatomic) NSString userInteractionIdentifier;
+- (id)alert;
+- (id)domainIdentifier;
+- (id)providerIdentifier;
+- (void)setAlert:;
+- (id)predicate;
+- (void)setPredicate:;
+- (void).cxx_destruct;
+- (id)description;
+- (void)setProviderIdentifier:;
+- (void)setDomainIdentifier:;
+- (id)evaluateWithObjectsByName:suppressionDelegate:;
+- (id)_evaluateWithObjectsByName:sourceItems:suppressionDelegate:errorIndex:;
+- (id)subInteractions;
+- (void)setSubInteractions:;
+- (BOOL)hasSuppressionIdentifier;
+- (void)setHasSuppressionIdentifier:;
+- (id)helpURL;
+- (void)setHelpURL:;
+- (id)userInteractionIdentifier;
+- (void)setUserInteractionIdentifier:;
++ (id)interactionFromDictionary:localizationLookup:providerIdentifier:domainIdentifier:;
++ (void)propagateConfigurationKeysDownInteractionTreeWithObject:key:value:;
++ (id)interactionsForBundle:providerIdentifier:domainIdentifier:;
++ (id)interactionsForArray:localizationLookup:providerIdentifier:domainIdentifier:;
++ (id)evaluationObjectsForAction:sourceItems:destinationItem:domainUserInfo:sourceItemKeysAllowList:destinationItemKeysAllowList:;
++ (id)interactionsForProviderItem:error:;
++ (id)gatherErrorsForInteractions:evaluationObjects:suppressionDelegate:;
++ (id)userInteractionErrorsInInfoPlistDict:forAction:bundleID:hierarchyServicer:sourceNSFPItems:destinationNSFPItem:localizationLookup:provider:domain:extensionCapabilities:useFPFS:;
+@end

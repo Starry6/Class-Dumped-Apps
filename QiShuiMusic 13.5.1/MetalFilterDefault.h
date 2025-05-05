@@ -1,0 +1,38 @@
+@interface MetalFilterDefault : FilterBase
+@property (nonatomic) <MTLRenderPipelineState> renderPipelineState;
+@property (nonatomic) <MTLRenderPipelineState> renderPipelineStateFor10bit;
+@property (nonatomic) PixelTextureFormat ptFmt8bit;
+@property (nonatomic) PixelTextureFormat ptFmt10bit;
+@property (nonatomic) <MTLBuffer> vertexBuffer;
+@property (nonatomic) BOOL mVertexOpt;
+@property (nonatomic) BOOL mSoftStrideOpt;
+- (id)getVertexShader;
+- (void)setRenderPipelineStateFor10bit:;
+- (id)createPixelTextureWithFrame:format:;
+- (void)drawFrame:withRenderEncoder:;
+- (void)generateVertex;
+- (id)getFragmentShader;
+- (unsigned long long)getOutputBits:;
+- (id)initWithFilterType:order:;
+- (id)initWithFilterType:order:pixelFmt:;
+- (BOOL)mSoftStrideOpt;
+- (BOOL)mVertexOpt;
+- (id)ptFmt10bit;
+- (id)ptFmt8bit;
+- (long long)renderAfter;
+- (long long)renderBefore:frame:;
+- (id)renderPipelineStateFor10bit;
+- (void)setMSoftStrideOpt:;
+- (void)setMVertexOpt:;
+- (void)setPtFmt10bit:;
+- (void)setPtFmt8bit:;
+- (id)setUpRenderPipeline:;
+- (id)init;
+- (id)process:;
+- (void).cxx_destruct;
+- (void)commit:;
+- (id)vertexBuffer;
+- (void)setVertexBuffer:;
+- (void)setRenderPipelineState:;
+- (id)renderPipelineState;
+@end

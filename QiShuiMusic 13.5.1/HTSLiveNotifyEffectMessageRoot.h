@@ -1,0 +1,2 @@
+@interface HTSLiveNotifyEffectMessageRoot : GPBRootObject
+@end

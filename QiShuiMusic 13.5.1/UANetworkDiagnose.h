@@ -1,0 +1,30 @@
+@interface UANetworkDiagnose : NSObject
+@property (nonatomic) float osVersion;
+@property (nonatomic) ^{__SCNetworkReachability=} reachabilityRef;
+@property (nonatomic) CTTelephonyNetworkInfo telephonyNetworkInfo;
+- (BOOL)isCellularProvidersPrivateIPv6:;
+- (id)generationInfo;
+- (BOOL)isChinaMobilePrivateIPv6:;
+- (BOOL)isChinaTelecomPrivateIPv6:;
+- (BOOL)isChinaUnicomPrivateIPv6:;
+- (BOOL)isReachableByFlags:;
+- (id)networkCarrierNameWithCellularProviders:;
+- (id)privateIPv6ToCarrierName:;
+- (id)reachableType;
+- (void)setTelephonyNetworkInfo:;
+- (id)telephonyNetworkInfoPerformGetterWithName:;
+- (id)telephonyNetworkInfoPerformInstanceWithName:;
+- (id)init;
+- (float)osVersion;
+- (void)dealloc;
+- (unsigned int)reachabilityFlags;
+- (void)setOsVersion:;
+- (id)reachabilityRef;
+- (void)setReachabilityRef:;
+- (void).cxx_destruct;
+- (id)carrierInfo;
+- (id)telephonyNetworkInfo;
++ (id)carrierConvertWithString:option:;
++ (id)generationConvertWithString:option:;
++ (id)reachabilityConvertWithString:option:;
+@end

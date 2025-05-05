@@ -1,0 +1,31 @@
+@interface IESECGoodsMarketingFloorModel : MTLModel
+@property (nonatomic) NSArray icons;
+@property (nonatomic) NSArray innerIconURLModelArray;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString name;
+@property (nonatomic) NSString URL;
+@property (nonatomic) IESECURLModel icon;
+@property (nonatomic) IESECURLModel image;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)iconURLModelArray;
+- (id)innerIconURLModelArray;
+- (void)setInnerIconURLModelArray:;
+- (void)setIcons:;
+- (void)setName:;
+- (id)icon;
+- (void)setImage:;
+- (void)setTitle:;
+- (id)title;
+- (void)setIcon:;
+- (void).cxx_destruct;
+- (id)name;
+- (id)icons;
+- (id)image;
+- (void)setURL:;
+- (id)URL;
++ (id)iconsJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

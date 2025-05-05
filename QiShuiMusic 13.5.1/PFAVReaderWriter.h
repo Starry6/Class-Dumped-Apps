@@ -1,0 +1,33 @@
+@interface PFAVReaderWriter : NSObject
+@property (nonatomic) AVAsset asset;
+@property (nonatomic) AVAssetWriterInput metadataInput;
+@property (nonatomic) {?={?=qiIq}{?=qiIq}} timeRange;
+@property (nonatomic) NSURL outputURL;
+@property (nonatomic) <PFAVReaderWriterAdjustDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithAsset:;
+- (id)timeRange;
+- (id)init;
+- (void)cancel;
+- (id)asset;
+- (void)setDelegate:;
+- (void)setTimeRange:;
+- (void)setOutputURL:;
+- (id)outputURL;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setAsset:;
+- (void)writeToURL:progress:completion:;
+- (id)initWithAsset:stillImageTime:;
+- (void)sampleBufferChannel:didReadSampleBuffer:andMadeWriteSampleBuffer:;
+- (void)sampleBufferChannel:didReadSampleBuffer:;
+- (void)_didLoadAVAssetValues;
+- (BOOL)setUpReaderAndWriterReturningError:;
+- (BOOL)startReadingAndWritingReturningError:;
+- (void)readingAndWritingDidFinishSuccessfully:withError:;
+- (id)metadataInput;
+- (void)setMetadataInput:;
+@end

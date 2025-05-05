@@ -1,0 +1,32 @@
+@interface GEORouteLegRange : PBCodable
+@property (nonatomic) BOOL hasStartValidDistanceOffsetCm;
+@property (nonatomic) I startValidDistanceOffsetCm;
+@property (nonatomic) BOOL hasEndValidDistanceOffsetCm;
+@property (nonatomic) I endValidDistanceOffsetCm;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (unsigned int)startValidDistanceOffsetCm;
+- (void)setStartValidDistanceOffsetCm:;
+- (void)setHasStartValidDistanceOffsetCm:;
+- (BOOL)hasStartValidDistanceOffsetCm;
+- (unsigned int)endValidDistanceOffsetCm;
+- (void)setEndValidDistanceOffsetCm:;
+- (void)setHasEndValidDistanceOffsetCm:;
+- (BOOL)hasEndValidDistanceOffsetCm;
++ (BOOL)isValid:;
+@end

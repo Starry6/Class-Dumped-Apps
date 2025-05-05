@@ -1,0 +1,2 @@
+@interface BattleCancelMatchApiRoot : GPBRootObject
+@end

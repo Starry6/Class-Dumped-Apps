@@ -1,0 +1,35 @@
+@interface IESECStoreVideoView : UIView
+@property (nonatomic) IESECStorePageContext pageContext;
+@property (nonatomic) UIView<IESECAwemeVideoViewProtocol> playerView;
+@property (nonatomic) IESECStoreExtensionAreaDragDownView dragDownView;
+@property (nonatomic) CAGradientLayer topGradientLayer;
+@property (nonatomic) CAGradientLayer bottomGradientLayer;
+@property (nonatomic) CAGradientLayer whiteTransitionLayer;
+@property (nonatomic) UIImageView playerMuteImageView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)bottomGradientLayer;
+- (void)didTapMute;
+- (id)dragDownView;
+- (id)playerMuteImageView;
+- (void)setBottomGradientLayer:;
+- (void)setDragDownView:;
+- (void)setPlayerMuteImageView:;
+- (void)setTopGradientLayer:;
+- (void)setWhiteTransitionLayer:;
+- (void)showGradientLayer:;
+- (id)topGradientLayer;
+- (void)updateVideoInfos:pageContext:;
+- (void)videoView:didChangePlayState:;
+- (id)whiteTransitionLayer;
+- (void)setPlayerView:;
+- (void)layoutSubviews;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (id)playerView;
+- (void)setupViews;
+- (id)pageContext;
+- (void)setPageContext:;
+@end

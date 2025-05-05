@@ -1,0 +1,2 @@
+@interface PuzzleKitConfiguration : NSObject
+@end

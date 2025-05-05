@@ -1,0 +1,32 @@
+@interface AVMetadataFaceObject : AVMetadataObject
+@property (nonatomic) q faceID;
+@property (nonatomic) BOOL hasRollAngle;
+@property (nonatomic) double rollAngle;
+@property (nonatomic) BOOL hasYawAngle;
+@property (nonatomic) double yawAngle;
+- (void)dealloc;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasRollAngle;
+- (BOOL)hasYawAngle;
+- (double)rollAngle;
+- (double)yawAngle;
+- (id)initWithType:time:duration:bounds:optionalInfoDict:originalMetadataObject:sourceCaptureInput:;
+- (id)initDerivedMetadataObjectFromMetadataObject:withTransform:isVideoMirrored:rollAdjustment:;
+- (long long)faceID;
+- (BOOL)hasLeftEyeClosedConfidence;
+- (int)leftEyeClosedConfidence;
+- (BOOL)hasRightEyeClosedConfidence;
+- (int)rightEyeClosedConfidence;
+- (BOOL)hasSmileConfidence;
+- (int)smileConfidence;
+- (BOOL)hasLeftEyeBounds;
+- (id)leftEyeBounds;
+- (BOOL)hasRightEyeBounds;
+- (id)rightEyeBounds;
+- (id)initWithFaceID:hasRollAngle:rollAngle:hasYawAngle:yawAngle:time:duration:bounds:;
+- (id)initWithFaceID:hasRollAngle:rollAngle:hasYawAngle:yawAngle:time:duration:bounds:optionalInfoDict:originalMetadataObject:sourceCaptureInput:;
+- (id)initWithFigEmbeddedCaptureDeviceFaceDictionary:input:timeStamp:;
++ (id)faceObjectWithFigEmbeddedCaptureDeviceFaceDictionary:input:timeStamp:;
+@end

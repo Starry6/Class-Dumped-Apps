@@ -1,0 +1,37 @@
+@interface SFAirDropBrowser : NSObject
+@property (nonatomic) <SFAirDropBrowserDiffableDelegate> diffableDelegate;
+@property (nonatomic) NSMutableDictionary nodeIDToNode;
+@property (nonatomic) NSString sessionID;
+@property (nonatomic) NSArray people;
+@property (nonatomic) <SFAirDropBrowserDelegate> delegate;
+@property (nonatomic) <SFAirDropBrowserBatchDelegate> batchDelegate;
+@property (nonatomic) NSString sendingAppBundleID;
+@property (nonatomic) NSArray urlsBeingShared;
+@property (nonatomic) NSArray photosAssetIDs;
+- (void)setSessionID:;
+- (id)people;
+- (id)sessionID;
+- (id)init;
+- (void)dealloc;
+- (void)start;
+- (void)setDelegate:;
+- (void)stop;
+- (void)resume;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)pause;
+- (id)urlsBeingShared;
+- (void)setUrlsBeingShared:;
+- (void)handleBrowserCallBack;
+- (void)updateDiscoveredPeople;
+- (void)getChangedIndexesForClientPeopleList:withCompletion:;
+- (id)batchDelegate;
+- (void)setBatchDelegate:;
+- (id)sendingAppBundleID;
+- (void)setSendingAppBundleID:;
+- (id)photosAssetIDs;
+- (void)setPhotosAssetIDs:;
+- (id)diffableDelegate;
+- (void)setDiffableDelegate:;
+- (id)nodeIDToNode;
+@end

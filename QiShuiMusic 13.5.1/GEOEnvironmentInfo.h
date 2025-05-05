@@ -1,0 +1,30 @@
+@interface GEOEnvironmentInfo : NSObject
+@property (nonatomic) NSError lastLoadingError;
+@property (nonatomic) NSString name;
+@property (nonatomic) NSString displayName;
+@property (nonatomic) NSString releaseName;
+@property (nonatomic) NSString actualName;
+@property (nonatomic) q state;
+@property (nonatomic) NSProgress activationProgress;
+@property (nonatomic) GEOResourceManifestDownload resourceManifest;
+- (id)displayName;
+- (long long)state;
+- (void).cxx_destruct;
+- (id)name;
+- (BOOL)isActive;
+- (id)initWithName:displayName:dictionaryRepresentation:;
+- (id)urlDictionary;
+- (void)_performActivation;
+- (void)makeActive;
+- (id)resourceManifest;
+- (void)updateWithURLs:;
+- (id)_manifestURLString;
+- (void)reloadManifestDataWithCompletionHandler:;
+- (id)serviceURLs;
+- (id)overrideURLs;
+- (id)useProxyAuth;
+- (id)releaseName;
+- (id)actualName;
+- (id)lastLoadingError;
+- (id)activationProgress;
+@end

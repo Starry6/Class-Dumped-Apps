@@ -1,0 +1,38 @@
+@interface CNStarkContactDisplayViewController : CNContactContentDisplayViewController
+@property (nonatomic) CNPropertyBestIDSValueQuery bestiMessageQuery;
+@property (nonatomic) CNCardiMessageEmailGroup iMessageEmailGroup;
+@property (nonatomic) NSArray activatedConstraints;
+@property (nonatomic) CNStarkContactNameView contactNameView;
+- (void)setupConstraints;
+- (void)dealloc;
+- (void)viewWillDisappear:;
+- (id)title;
+- (void)viewWillLayoutSubviews;
+- (void).cxx_destruct;
+- (id)tableView:contextMenuConfigurationForRowAtIndexPath:point:;
+- (void)viewDidAppear:;
+- (void)viewWillAppear:;
+- (void)viewDidLoad;
+- (id)displayHeaderView;
+- (id)activatedConstraints;
+- (void)setActivatedConstraints:;
+- (void)updateFontColors;
+- (id)initWithContact:contactViewConfiguration:;
+- (void)loadContactViewControllerViews;
+- (BOOL)shouldDisplayAvatarHeaderView;
+- (id)setupTableHeaderView;
+- (BOOL)isScrollViewControllingHeaderResizeAnimation:;
+- (void)initializeTableViewsForHeaderHeight;
+- (id)applyContactStyle;
+- (void)queryComplete;
+- (BOOL)isGeminiAvailable;
+- (BOOL)hasTableViewHeaderFirstSection;
+- (void)_initiateBestiMessagePropertyQuery;
+- (id)bestiMessageQuery;
+- (void)setBestiMessageQuery:;
+- (id)iMessageEmailGroup;
+- (void)setIMessageEmailGroup:;
+- (id)contactNameView;
+- (void)setContactNameView:;
++ (long long)tableViewStyle;
+@end

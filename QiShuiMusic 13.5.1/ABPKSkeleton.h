@@ -1,0 +1,34 @@
+@interface ABPKSkeleton : NSObject
+@property (nonatomic) NSInteger skeletonType;
+@property (nonatomic) ABPKSkeletonDefinition skeletonDefinition;
+@property (nonatomic) r^{ABPKTransform={?=}} localPoses;
+@property (nonatomic) float estimatedScale;
+@property (nonatomic) r^{?=[4]} modelPoses;
+@property (nonatomic) {?=[4]} cameraRootTransform;
+@property (nonatomic) {?=[4]} deviceRootTransform;
+- (id)init;
+- (id)toDictionary;
+- (void).cxx_destruct;
+- (id)description;
+- (id).cxx_construct;
+- (id)initWithType:;
+- (id)localPoses;
+- (id)modelPoses;
+- (void)getLocalJointDataForSkeletonWithPosition:withOrientation:;
+- (void)getGlobalJointDataForSkeletonWithPosition:withOrientation:;
+- (void)setModelPoses:andUpdateLocalPoses:;
+- (void)setModelPosesFromDict:andUpdateLocalPoses:;
+- (void)setLocalPoses:andUpdateModelPoses:;
+- (void)updateLocalPosesFromModelPoses;
+- (void)updateModelPosesFromLocalPoses;
+- (void)transformModelPoses:andUpdateLocalPoses:;
+- (float)computeHeight;
+- (int)skeletonType;
+- (id)skeletonDefinition;
+- (float)estimatedScale;
+- (void)setEstimatedScale:;
+- (id)cameraRootTransform;
+- (void)setCameraRootTransform:;
+- (id)deviceRootTransform;
+- (void)setDeviceRootTransform:;
+@end

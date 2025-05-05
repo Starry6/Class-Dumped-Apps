@@ -1,0 +1,37 @@
+@interface IESLiveSaaSMSeqAnchorStore : NSObject
+@property (nonatomic) IESLiveSaaSLiveRoomModel room;
+@property (nonatomic) NSString prompts;
+@property (nonatomic) HTSLiveUser user;
+@property (nonatomic) NSString backgroundUrl;
+@property (nonatomic) <IESLiveSaaSTimeService> timeService;
+@property (nonatomic) IESLiveSaaSComponentContext componentContext;
+@property (nonatomic) <IESLiveSaaSMSequenceAnchorReaction> reaction;
+@property (nonatomic) IESLiveSaaSPBUser channelUser;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)refreshUserInfo;
+- (void)setChannelUser:;
+- (void)setTimeService:;
+- (void)addFakeNotifyMessage:;
+- (id)backgroundUrl;
+- (id)channelUser;
+- (id)componentContext;
+- (void)didUpdateRoom:;
+- (id)initWithRoom:componentContext:;
+- (void)setBackgroundUrl:;
+- (void)setComponentContext:;
+- (id)timeService;
+- (void)setUser:;
+- (void)setup;
+- (id)user;
+- (void).cxx_destruct;
+- (id)room;
+- (void)setRoom:;
+- (void)messageReceived:;
+- (id)reaction;
+- (id)prompts;
+- (void)setPrompts:;
+- (void)setReaction:;
+@end

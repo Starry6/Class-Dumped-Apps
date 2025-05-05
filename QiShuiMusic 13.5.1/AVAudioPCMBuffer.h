@@ -1,0 +1,31 @@
+@interface AVAudioPCMBuffer : AVAudioBuffer
+@property (nonatomic) NSArray peakPowerPerChannel;
+@property (nonatomic) NSArray averagePowerPerChannel;
+@property (nonatomic) I frameCapacity;
+@property (nonatomic) I frameLength;
+@property (nonatomic) Q stride;
+@property (nonatomic) ^^f floatChannelData;
+@property (nonatomic) ^^s int16ChannelData;
+@property (nonatomic) ^^i int32ChannelData;
+- (id)magnitudesWithLevelMultiplier:count:;
+- (unsigned long long)stride;
+- (id)mutableCopyWithZone:;
+- (id)copyWithZone:;
+- (unsigned int)frameLength;
+- (id)initWithPCMFormat:frameCapacity:;
+- (void)setByteLength:;
+- (id)floatChannelData;
+- (void)setFrameLength:;
+- (id)initWithPCMFormat:bufferListNoCopy:deallocator:;
+- (unsigned int)frameCapacity;
+- (void)_initChannelPtrs;
+- (id)int32ChannelData;
+- (id)int16ChannelData;
+- (BOOL)appendDataFromBuffer:;
+- (BOOL)appendDataFromBuffer:channel:;
+- (id)splitIntoSingleChannelBuffers;
+- (id)averagePowerPerChannel;
+- (id)peakPowerPerChannel;
+- (id)calculatePower:;
+- (float)calculatePower:forFloatData:stride:frameLength:;
+@end

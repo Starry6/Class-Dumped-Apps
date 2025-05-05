@@ -1,0 +1,30 @@
+@interface CAEmitterBehavior : NSObject
+@property (nonatomic) NSString type;
+@property (nonatomic) NSString name;
+@property (nonatomic) BOOL enabled;
+- (id)valueForKey:;
+- (void)setValue:forKey:;
+- (id)CA_copyRenderValue;
+- (void)dealloc;
+- (void)setName:;
+- (void)didChangeValueForKey:;
+- (id)valueForKeyPath:;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (id)type;
+- (void)setValue:forKeyPath:;
+- (void)encodeWithCAMLWriter:;
+- (void)setEnabled:;
+- (id)name;
+- (id)mutableCopyWithZone:;
+- (id)CAMLTypeForKey:;
+- (void)CAMLParser:setValue:forKey:;
+- (id)initWithType:;
+- (id)copyWithZone:;
+- (BOOL)isEnabled;
++ (BOOL)automaticallyNotifiesObserversForKey:;
++ (id)behaviorTypes;
++ (void)CAMLParserStartElement:;
++ (BOOL)supportsSecureCoding;
++ (id)behaviorWithType:;
+@end

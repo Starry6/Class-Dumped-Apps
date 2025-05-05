@@ -1,0 +1,37 @@
+@interface MKPlaceCollectionImageGradientOperation : NSOperation
+@property (nonatomic) NSURL url;
+@property (nonatomic) {CGSize=dd} desiredSize;
+@property (nonatomic) NSString debugName;
+@property (nonatomic) BOOL isRTL;
+@property (nonatomic) double screenScale;
+@property (nonatomic) NSString contentSizeCategory;
+@property (nonatomic) NSString cacheId;
+@property (nonatomic) NSCache downloadCache;
+@property (nonatomic) NSCache blurringCache;
+@property (nonatomic) UIImage sourceImage;
+@property (nonatomic) UIImage blurredImage;
+- (double)screenScale;
+- (id)url;
+- (id)blurredImage;
+- (id)desiredSize;
+- (void)setUrl:;
+- (id)debugName;
+- (id)contentSizeCategory;
+- (void)setScreenScale:;
+- (void)setDebugName:;
+- (void)main;
+- (void).cxx_destruct;
+- (void)setDesiredSize:;
+- (BOOL)isRTL;
+- (void)setContentSizeCategory:;
+- (void)setIsRTL:;
+- (id)cacheId;
+- (void)setCacheId:;
+- (id)downloadCache;
+- (void)setDownloadCache:;
+- (id)initWithUrl:size:contentSizeCategory:name:downloadCache:gradientCache:isRTL:screenScale:cacheId:;
+- (id)sourceImage;
+- (void)setSourceImage:;
+- (id)blurringCache;
+- (void)setBlurringCache:;
+@end

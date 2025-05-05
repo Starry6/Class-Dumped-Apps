@@ -1,0 +1,30 @@
+@interface IESECMallMultiTabItem : MTLModel
+@property (nonatomic) NSString tabId;
+@property (nonatomic) NSString tabTitle;
+@property (nonatomic) q tabContainerType;
+@property (nonatomic) NSString link;
+@property (nonatomic) NSString btm;
+@property (nonatomic) NSDictionary extraParams;
+@property (nonatomic) q tabOrder;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)btm;
+- (void)setExtraParams:;
+- (void)setBtm:;
+- (id)extraParams;
+- (BOOL)isMallShoppingTab;
+- (void)setTabContainerType:;
+- (void)setTabId:;
+- (void)setTabOrder:;
+- (long long)tabContainerType;
+- (id)tabId;
+- (long long)tabOrder;
+- (id)link;
+- (void)setLink:;
+- (id)tabTitle;
+- (void).cxx_destruct;
+- (void)setTabTitle:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

@@ -1,0 +1,35 @@
+@interface GEOSpatialLookupBatchResponse : PBCodable
+@property (nonatomic) BOOL hasStatusCode;
+@property (nonatomic) NSInteger statusCode;
+@property (nonatomic) NSMutableArray responses;
+- (void)readAll:;
+- (void)setStatusCode:;
+- (BOOL)hasGreenTeaWithValue:;
+- (void)clearSensitiveFields:;
+- (int)statusCode;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (void)addResponse:;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)responses;
+- (void)setHasStatusCode:;
+- (BOOL)hasStatusCode;
+- (id)statusCodeAsString:;
+- (int)StringAsStatusCode:;
+- (void)setResponses:;
+- (void)clearResponses;
+- (unsigned long long)responsesCount;
+- (id)responseAtIndex:;
++ (BOOL)isValid:;
++ (Class)responseType;
+@end

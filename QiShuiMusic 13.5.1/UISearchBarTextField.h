@@ -1,0 +1,2 @@
+@interface UISearchBarTextField : UISearchTextField
+@end

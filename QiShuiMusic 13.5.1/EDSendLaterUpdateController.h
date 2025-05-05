@@ -1,0 +1,30 @@
+@interface EDSendLaterUpdateController : NSObject
+@property (nonatomic) EDMessagePersistence messagePersistence;
+@property (nonatomic) EDOutgoingMessageRepository outgoingRepository;
+@property (nonatomic) NSDate nextAlarmDate;
+@property (nonatomic) <EDMessageChangeHookResponder> hookResponder;
+@property (nonatomic) EDQueryCreator sendLaterQueryCreator;
+@property (nonatomic) <EDSendLaterUpdateControllerAlarmDateProvider> alarmDateProvider;
+@property (nonatomic) EFXPCAlarm xpcAlarm;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)persistenceDidUpdateSendLaterDate:messages:generationWindow:;
+- (void)setNextAlarmDate:;
+- (id)initWithHookRegistry:messagePersistence:outgoingRepository:alarmScheduler:;
+- (id)sendLaterQueryCreator;
+- (id)nextAlarmDate;
+- (id)xpcAlarm;
+- (void)resetSendLaterAlarmIfNeeded;
+- (void).cxx_destruct;
+- (id)outgoingRepository;
+- (void)setXpcAlarm:;
+- (id)alarmDateProvider;
+- (id)hookResponder;
+- (void)_updateAlarmUpdatedMessages:sendLaterDate:;
+- (void)_alarmFired;
+- (id)messagePersistence;
+- (void)setSendLaterQueryCreator:;
++ (id)log;
+@end

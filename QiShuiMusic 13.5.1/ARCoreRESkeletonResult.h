@@ -1,0 +1,31 @@
+@interface ARCoreRESkeletonResult : NSObject
+@property (nonatomic) NSUUID identifier;
+@property (nonatomic) Q jointTransformCount;
+@property (nonatomic) r^{?=[4]} jointModelTransforms;
+@property (nonatomic) r^{?=[4]} jointLocalTransforms;
+@property (nonatomic) r^{?={?=}} localJointTransformsSRT;
+@property (nonatomic) AR3DSkeletonDetectionResult liftedSkeletonData;
+@property (nonatomic) {?=[4]} visionTransform;
+@property (nonatomic) double estimatedScaleFactor;
+- (id)identifier;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id).cxx_construct;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)isJointTracked:;
+- (id)visionTransform;
+- (void)setVisionTransform:;
+- (double)estimatedScaleFactor;
+- (void)setEstimatedScaleFactor:;
+- (id)jointModelTransforms;
+- (id)jointLocalTransforms;
+- (id)initWithModelJointTransforms:localJointTransformsSRT:numberOfTransforms:liftedSkeletonData:identifier:;
+- (id)localJointTransformsSRT;
+- (unsigned long long)jointTransformCount;
+- (id)liftedSkeletonData;
++ (BOOL)supportsSecureCoding;
++ (id)jointNames;
++ (id)jointParentIndices;
+@end

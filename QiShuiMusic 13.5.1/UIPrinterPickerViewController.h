@@ -1,0 +1,32 @@
+@interface UIPrinterPickerViewController : UIViewController
+@property (nonatomic) PKPrinter printer;
+@property (nonatomic) BOOL userSelectedPrinter;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)printer;
+- (BOOL)shouldAutorotateToInterfaceOrientation:;
+- (void)dismissAnimated:;
+- (void)dealloc;
+- (void)navigationController:didShowViewController:animated:;
+- (void)navigationController:willShowViewController:animated:;
+- (void).cxx_destruct;
+- (void)setPrinter:;
+- (unsigned long long)supportedInterfaceOrientations;
+- (void)popoverControllerDidDismissPopover:;
+- (void)setUserSelectedPrinter:;
+- (BOOL)shouldShowPrinter:;
+- (void)cancelPrinting;
+- (void)printerBrowserViewDidDisappear;
+- (BOOL)filtersPrinters;
+- (void)_presentInParentAnimated:;
+- (void)_keyWindowWillRotate:;
+- (id)initWithPrinterPickerController:inParentController:;
+- (void)_presentWindow;
+- (void)presentPrinterPickerPanelAnimated:hostingScene:;
+- (void)presentPrinterPickerPanelFromRect:inView:animated:;
+- (void)presentPrinterPickerPanelFromBarButtonItem:animated:;
+- (void)dismissPrinterPickerAnimated:;
+- (BOOL)userSelectedPrinter;
+@end

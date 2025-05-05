@@ -1,0 +1,34 @@
+@interface AWDSpringBoardBreadcrumb : PBCodable
+@property (nonatomic) BOOL hasTimestamp;
+@property (nonatomic) Q timestamp;
+@property (nonatomic) BOOL hasWasTapped;
+@property (nonatomic) BOOL wasTapped;
+@property (nonatomic) BOOL hasType;
+@property (nonatomic) NSString type;
+@property (nonatomic) BOOL hasEntityID;
+@property (nonatomic) NSString entityID;
+- (void)dealloc;
+- (void)setType:;
+- (void)writeTo:;
+- (BOOL)hasType;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)setHasTimestamp:;
+- (void)mergeFrom:;
+- (BOOL)hasTimestamp;
+- (void)setTimestamp:;
+- (id)type;
+- (BOOL)readFrom:;
+- (unsigned long long)timestamp;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)entityID;
+- (BOOL)wasTapped;
+- (void)setWasTapped:;
+- (void)setHasWasTapped:;
+- (BOOL)hasWasTapped;
+- (BOOL)hasEntityID;
+- (void)setEntityID:;
+@end

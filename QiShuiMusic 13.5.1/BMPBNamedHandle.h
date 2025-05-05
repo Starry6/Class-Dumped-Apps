@@ -1,0 +1,32 @@
+@interface BMPBNamedHandle : PBCodable
+@property (nonatomic) BOOL hasName;
+@property (nonatomic) NSString name;
+@property (nonatomic) BOOL hasHandle;
+@property (nonatomic) NSString handle;
+@property (nonatomic) BOOL hasContactIdentifier;
+@property (nonatomic) NSString contactIdentifier;
+@property (nonatomic) BOOL hasHandleType;
+@property (nonatomic) NSString handleType;
+- (void)setName:;
+- (void)setContactIdentifier:;
+- (id)contactIdentifier;
+- (BOOL)hasName;
+- (id)handle;
+- (void)setHandle:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (BOOL)hasHandle;
+- (void)setHandleType:;
+- (id)handleType;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)name;
+- (id)dictionaryRepresentation;
+- (BOOL)hasHandleType;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasContactIdentifier;
+@end

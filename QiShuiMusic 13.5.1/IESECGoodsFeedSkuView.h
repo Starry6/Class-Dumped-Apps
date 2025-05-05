@@ -1,0 +1,32 @@
+@interface IESECGoodsFeedSkuView : UIView
+@property (nonatomic) UIImageView mainImage;
+@property (nonatomic) UIView mainImageView;
+@property (nonatomic) UILabel skuNumberLabel;
+@property (nonatomic) IESECGoodsSpecInfo skuInfo;
+@property (nonatomic) <IESECGoodsFeedSkuViewDelegate> delegate;
+@property (nonatomic) IESECGoodsFeedSkuHorizonFlowView flowView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)clickMainImage:;
+- (id)skuInfo;
+- (id)flowView;
+- (id)mainImage;
+- (id)mainImageView;
+- (void)selectedFlowViewCell:;
+- (void)setFlowView:;
+- (void)setMainImage:;
+- (void)setMainImageView:;
+- (void)setSkuInfo:;
+- (void)setSkuNumberLabel:;
+- (id)skuNumberLabel;
+- (void)slideToIndex:;
+- (void)updateMainImageWihtSelected:;
+- (void)updateUIWithModel:;
+- (void)setDelegate:;
+- (id)initWithFrame:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setupUI;
+@end

@@ -1,0 +1,35 @@
+@interface MPSImageSpatioTemporalGuidedFilterDescriptor : NSObject
+@property (nonatomic) Q width;
+@property (nonatomic) Q height;
+@property (nonatomic) Q arrayLength;
+@property (nonatomic) Q kernelSpatialDiameter;
+@property (nonatomic) Q kernelTemporalDiameter;
+@property (nonatomic) float epsilon;
+@property (nonatomic) Q guideChannels;
+@property (nonatomic) Q sourceChannels;
+@property (nonatomic) BOOL preallocateIntermediates;
+@property (nonatomic) BOOL useHighPrecisionIntermediates;
+- (unsigned long long)arrayLength;
+- (id)init;
+- (void)setWidth:;
+- (void)setEpsilon:;
+- (unsigned long long)height;
+- (float)epsilon;
+- (unsigned long long)width;
+- (void)setHeight:;
+- (void)setArrayLength:;
+- (unsigned long long)kernelSpatialDiameter;
+- (void)setKernelSpatialDiameter:;
+- (unsigned long long)kernelTemporalDiameter;
+- (void)setKernelTemporalDiameter:;
+- (unsigned long long)sourceChannels;
+- (void)setSourceChannels:;
+- (unsigned long long)guideChannels;
+- (void)setGuideChannels:;
+- (BOOL)preallocateIntermediates;
+- (void)setPreallocateIntermediates:;
+- (BOOL)useHighPrecisionIntermediates;
+- (void)setUseHighPrecisionIntermediates:;
++ (id)filterDescriptorWithWidth:height:arrayLength:kernelSpatialDiameter:kernelTemporalDiameter:epsilon:sourceChannels:guideChannels:;
++ (id)filterDescriptorWithWidth:height:arrayLength:kernelSpatialDiameter:kernelTemporalDiameter:epsilon:sourceChannels:guideChannels:preallocateIntermediates:;
+@end

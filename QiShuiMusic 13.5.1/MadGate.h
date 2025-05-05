@@ -1,0 +1,32 @@
+@interface MadGate : NSObject
+@property (nonatomic) NSXPCConnection connection;
+- (id)init;
+- (void)dealloc;
+- (BOOL)recertifyDeviceWithError:;
+- (id)createTunnel1SessionInfo:;
+- (BOOL)deactivateDevice:;
+- (BOOL)unbrickDevice:;
+- (id)getDCRTState:;
+- (BOOL)handleActivationInfo:withError:;
+- (id)copyDCRT:;
+- (id)copyLegacyDeviceIdentity:;
+- (id)getUCRTActivationLockState:;
+- (id)getActivationState:;
+- (void)issueDCRT:withCompletion:;
+- (BOOL)isDeviceABrick:;
+- (BOOL)handleActivationInfoWithSession:activationSignature:error:;
+- (id)createActivationInfo:;
+- (BOOL)reactivateDevice:;
+- (id)createTunnel1ActivationInfo:options:error:;
+- (id)connection;
+- (void).cxx_destruct;
+- (id)getActivationBuild:;
+- (id)copyPCRTToken:;
+- (id)issueClientCertificateLegacy:error:;
+- (BOOL)deleteLegacyDeviceIdentity:;
+- (BOOL)isInFieldCollected:;
+- (BOOL)isUCRTAvailable:;
+- (id)copyActivationRecord:;
+- (id)copyUCRTVersionInfo:;
+- (void)updateBasebandTicket:baaCert:baaIntermediateCert:options:withCompletion:;
+@end

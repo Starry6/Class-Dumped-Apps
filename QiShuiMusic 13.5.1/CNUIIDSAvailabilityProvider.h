@@ -1,0 +1,38 @@
+@interface CNUIIDSAvailabilityProvider : NSObject
+@property (nonatomic) <CNUIIDSIDQueryControllerWrapper> queryControllerWrapper;
+@property (nonatomic) CNUIDSHandleAvailabilityCache faceTimeRequests;
+@property (nonatomic) CNUIDSHandleAvailabilityCache iMessageRequests;
+@property (nonatomic) CNUIDSHandleAvailabilityCache expanseRequests;
+@property (nonatomic) NSArray requestFutures;
+@property (nonatomic) <CNScheduler> resourceLock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (void).cxx_destruct;
+- (id)resourceLock;
+- (void)setResourceLock:;
+- (id)initWithQueryControllerWrapper:;
+- (id)validateHandlesForFaceTime:schedulerProvider:;
+- (id)validateHandlesForIMessage:schedulerProvider:;
+- (id)validateHandlesForExpanse:schedulerProvider:;
+- (void)startRequestForCacheMisses:service:scheduler:;
+- (id)cacheForService:;
+- (id)validateHandles:forService:schedulerProvider:;
+- (id)queryControllerWrapper;
+- (void)setQueryControllerWrapper:;
+- (id)faceTimeRequests;
+- (void)setFaceTimeRequests:;
+- (id)iMessageRequests;
+- (void)setIMessageRequests:;
+- (id)expanseRequests;
+- (void)setExpanseRequests:;
+- (id)requestFutures;
+- (void)setRequestFutures:;
++ (id)validateHandlesForFaceTime:availabilityProvider:schedulerProvider:handler:;
++ (id)validateHandlesForIMessage:availabilityProvider:schedulerProvider:handler:;
++ (id)makeFaceTimeRequestsCache;
++ (id)makeIMessageRequestsCache;
++ (id)makeExpanseRequestsCache;
+@end

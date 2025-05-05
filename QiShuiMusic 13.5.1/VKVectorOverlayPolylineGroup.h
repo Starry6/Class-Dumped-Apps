@@ -1,0 +1,37 @@
+@interface VKVectorOverlayPolylineGroup : VKVectorOverlayData
+@property (nonatomic) {shared_ptr<md::PolylineOverlayStyle>=^{PolylineOverlayStyle}^{__shared_weak_count}} style;
+@property (nonatomic) NSArray polylines;
+@property (nonatomic) double lineWidth;
+@property (nonatomic) q lineJoin;
+@property (nonatomic) q lineCap;
+@property (nonatomic) ^{CGColor=} color;
+@property (nonatomic) double alpha;
+@property (nonatomic) double miterLimit;
+@property (nonatomic) double strokeStart;
+@property (nonatomic) double strokeEnd;
+- (void)setLineWidth:;
+- (double)lineWidth;
+- (void)dealloc;
+- (void)setColor:;
+- (void)setAlpha:;
+- (id)polylines;
+- (id)color;
+- (void)setBlendMode:;
+- (double)alpha;
+- (void).cxx_destruct;
+- (id)style;
+- (id).cxx_construct;
+- (double)strokeStart;
+- (void)setStrokeStart:;
+- (double)strokeEnd;
+- (void)setStrokeEnd:;
+- (double)miterLimit;
+- (void)setMiterLimit:;
+- (long long)lineJoin;
+- (void)setLineJoin:;
+- (long long)lineCap;
+- (void)setLineCap:;
+- (void)setColorStopColors:locations:;
+- (id)initWithPolylines:;
+- (void)_updateStyleColor;
+@end

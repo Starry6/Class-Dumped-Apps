@@ -1,0 +1,32 @@
+@interface CustomWebViewController : UIViewController
+@property (nonatomic) WKWebView webView;
+@property (nonatomic) UINavigationBar topNavigationBar;
+@property (nonatomic) UINavigationBar bottomNavigationBar;
+@property (nonatomic) UIButton backButton;
+@property (nonatomic) UIButton refreshButton;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)viewDidLoad;
+- (void)setupNavigationBars;
+- (void)configureNavigationBars;
+- (void)handleBackLongPress:;
+- (void)handleLongPress:;
+- (void)showURLInputAlert;
+- (void)loadSavedURL;
+- (void)backButtonTapped;
+- (void)refreshButtonTapped;
+- (void)webView:decidePolicyForNavigationAction:decisionHandler:;
+- (id)webView;
+- (void)setWebView:;
+- (id)topNavigationBar;
+- (void)setTopNavigationBar:;
+- (id)bottomNavigationBar;
+- (void)setBottomNavigationBar:;
+- (id)backButton;
+- (void)setBackButton:;
+- (id)refreshButton;
+- (void)setRefreshButton:;
+- (void).cxx_destruct;
+@end

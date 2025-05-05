@@ -1,0 +1,37 @@
+@interface IESLiveSaaSURLSchemaHandlerImpl : NSObject
+@property (nonatomic) <IESLiveSaaSOpenURL> outerURLOpener;
+@property (nonatomic) <IESLiveSaaSInternalRouter> internalRouter;
+@property (nonatomic) IESLiveSaaSSchemaParserFactory parserFactory;
+@property (nonatomic) NSMutableArray parserContainer;
+@property (nonatomic) <IESLiveSaaSCJPayService> cjpayService;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)parserContainer;
+- (BOOL)shouldExitRoom:;
+- (id)_openVCURL:userInfo:fromInside:vcHandler:completion:;
+- (id)attachingDIContext;
+- (BOOL)canApplicationOpenURL:;
+- (BOOL)canInnerOpenURL:;
+- (BOOL)canOpenURL:fromInside:;
+- (id)cjpayService;
+- (id)getComponentsWithURLString:;
+- (id)internalRouter;
+- (BOOL)isOpenBroadcastRoom:;
+- (void)openURL:fromInside:;
+- (void)openURL:fromInside:completion:;
+- (void)openURL:userInfo:fromInside:;
+- (void)openURL:userInfo:fromInside:completion:;
+- (id)openVCURL:userInfo:fromInside:completion:;
+- (void)openVCURL:userInfo:fromInside:vcHandler:completion:;
+- (id)outerURLOpener;
+- (id)parserFactory;
+- (void)setCjpayService:;
+- (void)setInternalRouter:;
+- (void)setOuterURLOpener:;
+- (void)setParserContainer:;
+- (void)setParserFactory:;
+- (BOOL)shouldOpenURLWithCJWebView:;
+- (void).cxx_destruct;
+@end

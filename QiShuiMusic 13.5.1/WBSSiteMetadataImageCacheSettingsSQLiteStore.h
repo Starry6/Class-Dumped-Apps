@@ -1,0 +1,35 @@
+@interface WBSSiteMetadataImageCacheSettingsSQLiteStore : NSObject
+@property (nonatomic) WBSSQLiteDatabase database;
+@property (nonatomic) NSURL databaseURL;
+- (id)databaseURL;
+- (void)dealloc;
+- (void)close;
+- (int)_setDatabaseSchemaVersion:;
+- (void)_closeDatabase;
+- (id)allEntries;
+- (void).cxx_destruct;
+- (id)initWithDatabaseURL:;
+- (id)database;
+- (BOOL)_checkDatabaseIntegrity;
+- (id)initWithDatabaseURL:protectionType:;
+- (BOOL)_openDatabase:andCheckIntegrity:;
+- (BOOL)_migrateToCurrentSchemaVersionifNeeded;
+- (BOOL)_createNewDatabaseSchema;
+- (BOOL)_performMigrationStepToSchemaVersion:withStatements:;
+- (id)entryWithHost:;
+- (id)saveEntry:;
+- (id)_insertEntry:;
+- (id)_updateEntry:;
+- (BOOL)deleteEntryWithHost:;
+- (BOOL)deleteAllEntries;
+- (id)_createNewDatabaseSQLiteStatement;
+- (id)_selectAllEntriesSQLiteStatement;
+- (id)_selectEntrySQLiteStatementWithHost:;
+- (id)_insertEntrySQLiteStatementWithEntry:;
+- (id)_updateEntrySQLiteStatementWithEntry:;
+- (id)_deleteEntrySQLiteStatementWithHost:;
+- (id)_deleteAllEntriesSQLiteStatement;
+- (id)_statementsForMigrationToSchemaVersion:;
++ (Class)cacheSettingsEntryClass;
++ (long long)databaseSchemaVersion;
+@end

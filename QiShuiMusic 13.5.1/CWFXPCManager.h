@@ -1,0 +1,32 @@
+@interface CWFXPCManager : NSObject
+@property (nonatomic) <CWFXPCManagerDelegate> delegate;
+@property (nonatomic) NSSet supportedRequestTypes;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)registeredEventIDs;
+- (id)init;
+- (void)XPCListener:XPCConnection:receivedXPCRequest:;
+- (void)XPCListener:XPCConnection:updatedRegisteredEventIDs:;
+- (void)XPCRequestProxy:invalidatedXPCConnection:;
+- (void)XPCRequestProxy:XPCConnection:receivedXPCRequest:;
+- (void)XPCRequestProxy:XPCConnection:canceledXPCRequestsWithUUID:;
+- (void)setDelegate:;
+- (id)registeredActivities;
+- (void)suspend;
+- (void)setSupportedRequestTypes:;
+- (void)sendXPCEvent:reply:;
+- (void)resume;
+- (void)XPCListener:XPCConnection:canceledXPCRequestsWithUUID:;
+- (void)XPCListener:addedXPCConnection:;
+- (id)delegate;
+- (void)XPCRequestProxy:sendXPCEvent:reply:;
+- (void)setTargetQueue:requestType:interfaceName:;
+- (void).cxx_destruct;
+- (id)supportedRequestTypes;
+- (id)initWithServiceTypes:;
+- (void)__updateProcessMonitorConfiguration;
+- (void)XPCListener:invalidatedXPCConnection:;
+- (void)invalidate;
+@end

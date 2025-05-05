@@ -1,0 +1,25 @@
+@interface FTMessageDelivery_HTTP : FTMessageDelivery
+- (void)_serverBagLoaded:;
+- (BOOL)busy;
+- (void)_dequeueIfNeeded;
+- (void)networkStateChanged;
+- (void)queue:hitTimeoutForMessage:;
+- (void)cancelMessage:;
+- (id)init;
+- (id)_processResultData:forMessage:error:;
+- (void)dealloc;
+- (void)_informDelegatesOfMessage:result:resultCode:error:;
+- (BOOL)sendMessage:;
+- (BOOL)sendMessageAtTopOfTheQueue:;
+- (void)_urlRequestWithURL:andData:message:completionBlock:;
+- (id)initWithIDSServerBag:iMessageServerBag:remoteConnectionFactory:mobileNetworkManager:retryBackoffProvider:;
+- (void)_cleanupURLConnection;
+- (void).cxx_destruct;
+- (void)_notifyDelegateAboutError:;
+- (BOOL)_tryRetryMessageWithTimeInterval:;
+- (void)_clearRetryTimer;
+- (id)initWithIDSServerBag:;
+- (void)invalidate;
+- (void)_updateWiFiAssertions;
+- (BOOL)_sendMessageAsynchronously:error:;
+@end

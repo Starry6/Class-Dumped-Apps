@@ -1,0 +1,33 @@
+@interface PAConfiguration : NSObject
+@property (nonatomic) NSDictionary preset;
+@property (nonatomic) NSDictionary presetAdjustments;
+@property (nonatomic) NSDictionary audiogramSettings;
+@property (nonatomic) Q level;
+@property (nonatomic) Q shape;
+- (void)setShape:;
+- (void)setLevel:;
+- (void)setPreset:;
+- (unsigned long long)level;
+- (unsigned long long)shape;
+- (id)preset;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)presetAdjustments;
+- (id)settingsFromConfiguration:;
+- (id)readSettingsFromPreset:;
+- (id)transparencySettingsForAddress:;
+- (void)setPresetAdjustments:;
+- (id)audiogramSettings;
+- (void)setAudiogramSettings:;
++ (BOOL)supportsSecureCoding;
++ (id)configurationWithPreset:andAdjustments:;
++ (id)configurationFromType:;
++ (id)configurationWithLevel:andShape:;
++ (id)configurationWithRawAdjustment:;
++ (id)configurationWithAudiogram:;
++ (id)paramDataWithValue:andOffset:;
++ (id)dataFromPreset:;
+@end

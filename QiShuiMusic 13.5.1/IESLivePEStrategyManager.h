@@ -1,0 +1,32 @@
+@interface IESLivePEStrategyManager : NSObject
+@property (nonatomic) IESLivePEStrategyStorage strategyStorage;
+@property (nonatomic) IESLivePEStrategyApi strategyApi;
+@property (nonatomic) BOOL isFetching;
+@property (nonatomic) BOOL fetchFull;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setStrategyApi:;
+- (id)strategyStorage;
+- (void)addStrategys:;
+- (id)allStrategyFromMemory;
+- (BOOL)fetchFull;
+- (void)fetchStrategyWithScene:;
+- (void)fetchStrategyWithScene:completion:;
+- (BOOL)isValidMessageForSetting:;
+- (void)onFrontierReceivingMessage:;
+- (void)setFetchFull:;
+- (void)setStrategyStorage:;
+- (id)strategyApi;
+- (id)strategyWithName:;
+- (void)userDidLogin:;
+- (void)userDidLogout;
+- (void)userDidUpdate:;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (BOOL)isFetching;
+- (void)setIsFetching:;
++ (id)sharedInstance;
+@end

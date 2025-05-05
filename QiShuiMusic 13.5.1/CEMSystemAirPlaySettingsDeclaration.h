@@ -1,0 +1,30 @@
+@interface CEMSystemAirPlaySettingsDeclaration : CEMConfigurationBase
+@property (nonatomic) NSNumber payloadForceAirPlayOutgoingRequestsPairingPassword;
+@property (nonatomic) NSNumber payloadForceAirPlayIncomingRequestsPairingPassword;
+@property (nonatomic) NSNumber payloadAllowAirPlayIncomingRequests;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (BOOL)multipleAllowed;
+- (BOOL)mustBeSupervised;
+- (int)activationLevel;
+- (id)assetReferences;
+- (BOOL)loadPayload:error:;
+- (id)serializePayloadWithAssetProviders:;
+- (id)payloadForceAirPlayOutgoingRequestsPairingPassword;
+- (void)setPayloadForceAirPlayOutgoingRequestsPairingPassword:;
+- (id)payloadForceAirPlayIncomingRequestsPairingPassword;
+- (void)setPayloadForceAirPlayIncomingRequestsPairingPassword:;
+- (id)payloadAllowAirPlayIncomingRequests;
+- (void)setPayloadAllowAirPlayIncomingRequests:;
++ (id)profileType;
++ (id)buildRequiredOnlyWithIdentifier:;
++ (id)registeredClassName;
++ (id)registeredIdentifier;
++ (id)allowedPayloadKeys;
++ (id)restrictionPayloadKeys;
++ (id)buildWithIdentifier:withForceAirPlayOutgoingRequestsPairingPassword:withForceAirPlayIncomingRequestsPairingPassword:withAllowAirPlayIncomingRequests:;
+@end

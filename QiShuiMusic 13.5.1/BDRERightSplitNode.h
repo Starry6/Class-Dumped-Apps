@@ -1,0 +1,2 @@
+@interface BDRERightSplitNode : BDRESplitNode
+@end

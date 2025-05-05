@@ -1,0 +1,35 @@
+@interface ABUUValueManagerV2 : ABUUValueManager
+@property (nonatomic) NSMutableDictionary uvalues;
+@property (nonatomic) NSMutableDictionary uvaluesForPreload;
+@property (nonatomic) q ecpmTTL;
+@property (nonatomic) NSMutableArray primeRitList;
+- (id)uvalues;
+- (void)addUValue:withRitType:withMode:;
+- (long long)ecpmTTL;
+- (void)_addUvalue:forRitType:andMode:;
+- (void)archiveUValuesToDisk;
+- (id)primeRitList;
+- (void)removeUValuesFromDisk;
+- (void)resetUValues;
+- (void)resetUValuesForPreload;
+- (void)resetUValuesWithMode:;
+- (void)setEcpmTTL:;
+- (void)setPrimeRitList:;
+- (void)setUvalues:;
+- (void)setUvaluesForPreload:;
+- (void)unarchiveUValuesFromDisk;
+- (void)updateGroupList:;
+- (id)uvaluesForConfigWithMode:;
+- (id)uvaluesForPreload;
+- (void)removeAll;
+- (id)init;
+- (void).cxx_destruct;
++ (void)addUValue:withRitType:;
++ (void)addUValue:withRitType:andMode:;
++ (void)resetUValuesWithMode:;
++ (void)updateEcpmTTL:;
++ (void)updateGroupList:;
++ (id)uvaluesForConfigWithMode:;
++ (id)sharedInstance;
++ (id)ruleList;
+@end

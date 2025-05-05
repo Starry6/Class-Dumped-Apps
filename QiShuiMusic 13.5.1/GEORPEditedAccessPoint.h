@@ -1,0 +1,38 @@
+@interface GEORPEditedAccessPoint : PBCodable
+@property (nonatomic) BOOL hasOriginal;
+@property (nonatomic) GEORoadAccessPoint original;
+@property (nonatomic) BOOL hasCorrected;
+@property (nonatomic) GEORoadAccessPoint corrected;
+@property (nonatomic) BOOL hasName;
+@property (nonatomic) GEORPCorrectedString name;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (BOOL)hasGreenTeaWithValue:;
+- (id)init;
+- (void)setName:;
+- (id)initWithJSON:;
+- (BOOL)hasName;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)original;
+- (id)name;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasOriginal;
+- (void)setOriginal:;
+- (BOOL)hasCorrected;
+- (id)corrected;
+- (void)setCorrected:;
++ (BOOL)isValid:;
+@end

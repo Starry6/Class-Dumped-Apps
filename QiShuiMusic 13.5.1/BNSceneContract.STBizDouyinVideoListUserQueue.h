@@ -1,0 +1,2 @@
+@interface BNSceneContract.STBizDouyinVideoListUserQueue : BNSceneContract.STBizDouyinVideoListBaseQueue
+@end

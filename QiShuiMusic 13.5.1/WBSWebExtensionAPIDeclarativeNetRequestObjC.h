@@ -1,0 +1,2 @@
+@interface WBSWebExtensionAPIDeclarativeNetRequestObjC : WBSWebExtensionAPIObject
+@end

@@ -1,0 +1,37 @@
+@interface IESECStoreSearchHistoryView : UIView
+@property (nonatomic) IESECStoreSearchHistoryHeader headerView;
+@property (nonatomic) UICollectionView contentCollectionView;
+@property (nonatomic) NSMutableArray dataSource;
+@property (nonatomic) BOOL foldSearchHistory;
+@property (nonatomic) BOOL editing;
+@property (nonatomic) <IESECStoreSearchHistoryViewDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)contentCollectionView;
+- (id)createViewModelForSearchWord:;
+- (id)flowLayout:sizeForItemAtIndexPath:;
+- (void)flowLayout:updateContentSize:;
+- (void)flowLayout:updateLayouts:section:;
+- (BOOL)foldSearchHistory;
+- (void)reloadHistoryWords:;
+- (void)reloadHistoryWordsDataSource;
+- (void)setContentCollectionView:;
+- (void)setFoldSearchHistory:;
+- (void)setHeaderView:;
+- (void)setDataSource:;
+- (long long)collectionView:numberOfItemsInSection:;
+- (void)setDelegate:;
+- (void)setEditing:;
+- (id)headerView;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (id)initWithFrame:;
+- (id)dataSource;
+- (id)delegate;
+- (void).cxx_destruct;
+- (long long)numberOfSectionsInCollectionView:;
+- (BOOL)editing;
+- (void)finishEditing;
+- (void)setupViews;
+@end

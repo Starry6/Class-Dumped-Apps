@@ -1,0 +1,34 @@
+@interface CBDisplayModuleHIDiOS : CBDisplayModule
+@property (nonatomic) Q VID;
+@property (nonatomic) Q PID;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)handleNotificationForKey:withProperty:;
+- (id)copyPropertyInternalForKey:;
+- (id)copyIdentifiers;
+- (BOOL)setSlider:;
+- (void)dealloc;
+- (void)start;
+- (void)sendNotificationForKey:withValue:;
+- (id)copyPropertyForKey:withParameter:;
+- (void)stop;
+- (id)copyPropertyForKey:;
+- (BOOL)setNits:;
+- (BOOL)setProperty:forKey:;
+- (unsigned long long)PID;
+- (float)getLinearBrightness;
+- (id)initWithDevice:andQueue:;
+- (id)newDisplayBrightnessData;
+- (BOOL)handleDisplayProductIDProperty:;
+- (BOOL)handleDisplayVendorIDProperty:;
+- (BOOL)handleDisplayLinearBrightnessProperty:;
+- (BOOL)handleDisplayBrightnessProperty:;
+- (BOOL)setLinearBrightness:;
+- (BOOL)setNits:withPeriod:;
+- (BOOL)getNits:;
+- (float)getNitsForUserBrightness:;
+- (float)getUserBrightnessForNits:;
+- (unsigned long long)VID;
+@end

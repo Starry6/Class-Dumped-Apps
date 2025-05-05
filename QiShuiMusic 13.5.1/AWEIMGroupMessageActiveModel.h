@@ -1,0 +1,31 @@
+@interface AWEIMGroupMessageActiveModel : IESIMBaseApiModel
+@property (nonatomic) q lastInsertedRowID;
+@property (nonatomic) BOOL isAutoIncrement;
+@property (nonatomic) NSString belongCid;
+@property (nonatomic) NSString secUid;
+@property (nonatomic) q activeDays;
+@property (nonatomic) q inactiveTime;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)belongCid;
+- (id)secUid;
+- (void)setActiveDays:;
+- (void)setBelongCid:;
+- (void)setInactiveTime:;
+- (void)setSecUid:;
+- (void).cxx_destruct;
+- (long long)inactiveTime;
+- (long long)activeDays;
++ (id)AllProperties;
++ (id)AnyProperty;
++ (id)PropertyNamed;
++ (id)belongCid;
++ (id)objectRelationalMappingForWCDB;
++ (id)secUid;
++ (id)tableName;
++ (id)inactiveTime;
++ (id)JSONKeyPathsByPropertyKey;
++ (id)activeDays;
+@end

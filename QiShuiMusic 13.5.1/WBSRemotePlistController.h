@@ -1,0 +1,32 @@
+@interface WBSRemotePlistController : NSObject
+@property (nonatomic) <WBSRemotePlistControllerDelegate> delegate;
+@property (nonatomic) BOOL shouldAttemptToUpdateConfiguration;
+@property (nonatomic) BOOL shouldAttemptToDownloadConfiguration;
+- (void)accessSnapshotLoadingItIfNeeded:;
+- (id)init;
+- (void)accessCurrentSnapshot:;
+- (void)dealloc;
+- (id)_lastConfigurationUpdateAttemptDate;
+- (void)setDelegate:;
+- (void)prepareForTermination;
+- (id)initWithDownloadsDirectoryURL:resourceName:resourceVersion:updateDateDefaultsKey:updateInterval:snapshotClass:snapshotTransformerClass:builtInListDataProvider:;
+- (BOOL)shouldAttemptToDownloadConfiguration;
+- (void)_updateDownloadedPlistIfNecessary;
+- (void)setShouldAttemptToUpdateConfiguration:;
+- (void)_didLoadSnapshot:;
+- (void)_loadBuiltInSnapshotIfNeeded;
+- (void)_setCurrentDateAsLastConfigurationUpdateAttemptDate;
+- (void)_writeConfigurationData:;
+- (id)delegate;
+- (void)setShouldAttemptToDownloadConfiguration:;
+- (BOOL)_shouldUpdateConfigurationGivenLastConfigurationUpdateAttemptDate:;
+- (void).cxx_destruct;
+- (void)_resetUpdateTimer;
+- (id)_downloadedListResourceName;
+- (id)initWithBuiltInListURL:downloadsDirectoryURL:resourceName:resourceVersion:updateDateDefaultsKey:updateInterval:snapshotClass:snapshotTransformerClass:;
+- (id)fetchDataFromCurrentSnapshot:;
+- (void)_loadDownloadedSnapshotIfNeeded;
+- (BOOL)shouldAttemptToUpdateConfiguration;
+- (id)_urlOfDownloadedList;
++ (id)new;
+@end

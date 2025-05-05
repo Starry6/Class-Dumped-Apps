@@ -1,0 +1,2 @@
+@interface IESECGoodsPopRoot : GPBRootObject
+@end

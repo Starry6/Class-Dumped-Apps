@@ -1,0 +1,32 @@
+@interface GEONavVoiceGuidanceSettings : PBCodable
+@property (nonatomic) BOOL hasNavVoiceGuidanceLevel;
+@property (nonatomic) NSInteger navVoiceGuidanceLevel;
+@property (nonatomic) BOOL hasTransportMode;
+@property (nonatomic) NSInteger transportMode;
+- (void)readAll:;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (int)transportMode;
+- (void)setTransportMode:;
+- (void)setHasTransportMode:;
+- (BOOL)hasTransportMode;
+- (id)transportModeAsString:;
+- (int)StringAsTransportMode:;
+- (int)navVoiceGuidanceLevel;
+- (void)setNavVoiceGuidanceLevel:;
+- (void)setHasNavVoiceGuidanceLevel:;
+- (BOOL)hasNavVoiceGuidanceLevel;
+- (id)navVoiceGuidanceLevelAsString:;
+- (int)StringAsNavVoiceGuidanceLevel:;
++ (BOOL)isValid:;
+@end

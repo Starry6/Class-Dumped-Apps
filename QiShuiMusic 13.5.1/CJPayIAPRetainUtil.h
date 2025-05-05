@@ -1,0 +1,34 @@
+@interface CJPayIAPRetainUtil : NSObject
+@property (nonatomic) NSMutableDictionary failConfigDict;
+@property (nonatomic) NSMutableDictionary retainedOrderDict;
+@property (nonatomic) @? confirmBlock;
+@property (nonatomic) NSString tradeNo;
+@property (nonatomic) NSString merchantId;
+@property (nonatomic) NSString merchantKey;
+@property (nonatomic) BOOL orderInProgress;
+@property (nonatomic) BOOL isRetainShown;
+- (void)setMerchantKey:;
+- (id)tradeNo;
+- (BOOL)orderInProgress;
+- (id)confirmBlock;
+- (id)failConfigDict;
+- (void)iapConfigWithAppid:merchantId:uid:;
+- (BOOL)isRetainShown;
+- (id)merchantKey;
+- (id)p_currentDay;
+- (void)p_saveRetainShownData;
+- (BOOL)p_timesControlled:;
+- (void)p_trackWithEventName:errorCode:message:params:;
+- (id)retainedOrderDict;
+- (void)setConfirmBlock:;
+- (void)setFailConfigDict:;
+- (void)setIsRetainShown:;
+- (void)setOrderInProgress:;
+- (void)setRetainedOrderDict:;
+- (void)setTradeNo:;
+- (void)showLoading:;
+- (BOOL)showRetainPopWithIapType:error:completion:;
+- (void).cxx_destruct;
+- (id)merchantId;
+- (void)setMerchantId:;
+@end

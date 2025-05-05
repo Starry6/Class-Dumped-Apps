@@ -1,0 +1,2 @@
+@interface HTSLiveLinkmicPlaymodeMessageRoot : GPBRootObject
+@end

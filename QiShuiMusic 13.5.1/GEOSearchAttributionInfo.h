@@ -1,0 +1,35 @@
+@interface GEOSearchAttributionInfo : NSObject
+@property (nonatomic) GEOSearchAttributionSource source;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) I version;
+@property (nonatomic) I requirementsMask;
+@property (nonatomic) NSString displayName;
+@property (nonatomic) NSString captionDisplayName;
+@property (nonatomic) BOOL shouldOpenInAppStore;
+@property (nonatomic) NSString webBaseActionURL;
+@property (nonatomic) NSArray attributionApps;
+@property (nonatomic) NSString appAdamID;
+- (unsigned int)version;
+- (id)identifier;
+- (id)initWithCoder:;
+- (id)displayName;
+- (id)initWithDictionaryRepresentation:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)source;
+- (id)description;
+- (id)appAdamID;
+- (id)dictionaryRepresentation;
+- (id)initWithSource:localizedAttribution:logoPaths:snippetLogoPaths:;
+- (id)attributionApps;
+- (id)webBaseActionURL;
+- (BOOL)shouldOpenInAppStore;
+- (BOOL)supportsActionURLs;
+- (BOOL)hasAttributionRequirement:;
+- (id)logoPathForScale:;
+- (id)snippetLogoPathForScale:;
+- (void)addLogoPath:;
+- (id)captionDisplayName;
+- (unsigned int)requirementsMask;
++ (BOOL)supportsSecureCoding;
+@end

@@ -1,0 +1,38 @@
+@interface CalSearch : NSObject
+@property (nonatomic) BOOL searchParticipants;
+@property (nonatomic) BOOL searchLocations;
+@property (nonatomic) BOOL searchAttendees;
+@property (nonatomic) BOOL shouldMatchLocationsOnlyForEventSearch;
+- (int)seed;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (void)startSearching;
+- (void)stopSearching;
+- (id)initWithDatabase:filter:dataSink:;
+- (BOOL)moreResultsAvailable;
+- (void)_startLoadingResults;
+- (void)_addMatchedEventIds:;
+- (void)_addMatchedParticipantIds:;
+- (void)_getParticipantsSearchResults:;
+- (id)_createParticipantIdsSearchContext;
+- (void)_deleteParticipantIdsSearchContext:;
+- (id)_createLocationIdsSearchContext;
+- (void)_deleteLocationIdsSearchContext:;
+- (void)_addMatchedLocationIds:;
+- (void)_getLocationSearchResults:;
+- (void)_getAttendeesSearchResults:;
+- (void)_getEventsSearchResults:;
+- (id)_createEventIdsSearchContext;
+- (void)_deleteEventIdsSearchContext:;
+- (void)_getApplicationSearchResults:;
+- (id)_createSearchContext;
+- (void)_deleteSearchContext:;
+- (BOOL)searchParticipants;
+- (void)setSearchParticipants:;
+- (BOOL)searchLocations;
+- (void)setSearchLocations:;
+- (BOOL)searchAttendees;
+- (void)setSearchAttendees:;
+- (BOOL)shouldMatchLocationsOnlyForEventSearch;
+- (void)setShouldMatchLocationsOnlyForEventSearch:;
+@end

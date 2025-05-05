@@ -1,0 +1,35 @@
+@interface VNSceneClassificationRequest : VNImageBasedRequest
+@property (nonatomic) VNSceneObservation sceneObservation;
+@property (nonatomic) Q maximumLeafObservations;
+@property (nonatomic) Q maximumHierarchicalObservations;
+@property (nonatomic) VNClassificationCustomHierarchy customHierarchy;
+@property (nonatomic) NSArray results;
+- (BOOL)internalPerformRevision:inContext:error:;
+- (void)applyConfigurationOfRequest:;
+- (id)newDefaultDetectorOptionsForRequestRevision:session:;
+- (long long)dependencyProcessingOrdinality;
+- (void)resolvedRevisionDidChangeFromRevision:;
+- (BOOL)willAcceptCachedResultsFromRequestWithConfiguration:;
+- (id)applicableDetectorTypeForRevision:error:;
+- (id)supportedIdentifiersAndReturnError:;
+- (id)sceneObservation;
+- (void)setSceneObservation:;
+- (id)customHierarchy;
+- (unsigned long long)maximumLeafObservations;
+- (void)setMaximumLeafObservations:;
+- (unsigned long long)maximumHierarchicalObservations;
+- (void)setMaximumHierarchicalObservations:;
+- (id)initWithSceneObservation:;
+- (id)initWithSceneObservation:completionHandler:;
+- (void)_setCustomHierarchy:;
+- (BOOL)defineCustomHierarchy:error:;
+- (id)defineCustomHierarchyWithRelationships:error:;
++ (id)vcp_sceneRequest;
++ (id)dependentRequestCompatibility;
++ (Class)configurationClass;
++ (id)descriptionForPrivateRevision:;
++ (id)supportedPrivateRevisions;
++ (id)revisionAvailability;
++ (id)knownSceneClassifications;
++ (id)knownSceneClassificationsForRevision:error:;
+@end

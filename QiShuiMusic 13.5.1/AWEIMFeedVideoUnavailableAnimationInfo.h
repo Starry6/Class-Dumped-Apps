@@ -1,0 +1,36 @@
+@interface AWEIMFeedVideoUnavailableAnimationInfo : NSObject
+@property (nonatomic) UIView view;
+@property (nonatomic) Q animationOption;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} fromBounds;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} toBounds;
+@property (nonatomic) {CGPoint=dd} fromPosition;
+@property (nonatomic) {CGPoint=dd} toPosition;
+@property (nonatomic) double fromOpacity;
+@property (nonatomic) double toOpacity;
+@property (nonatomic) @? startedBlock;
+@property (nonatomic) Q option;
+- (void)setFromOpacity:;
+- (void)toAnimateFromOpacity:toOpacity:;
+- (unsigned long long)animationOption;
+- (id)fromBounds;
+- (double)fromOpacity;
+- (id)fromPosition;
+- (void)setAnimationOption:;
+- (void)setFromBounds:;
+- (void)setFromPosition:;
+- (void)setStartedBlock:;
+- (void)setToBounds:;
+- (void)setToOpacity:;
+- (void)setToPosition:;
+- (id)startedBlock;
+- (void)toAnimateFromBounds:toBounds:;
+- (void)toAnimateFromPosition:toPosition:;
+- (id)toBounds;
+- (double)toOpacity;
+- (id)toPosition;
+- (id)initWithView:;
+- (id)view;
+- (void).cxx_destruct;
+- (void)setView:;
+- (unsigned long long)option;
+@end

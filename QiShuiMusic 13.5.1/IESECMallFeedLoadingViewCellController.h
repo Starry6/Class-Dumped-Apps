@@ -1,0 +1,33 @@
+@interface IESECMallFeedLoadingViewCellController : NSObject
+@property (nonatomic) UICollectionReusableView headerView;
+@property (nonatomic) IESECListKitListUpdater listUpdater;
+@property (nonatomic) UICollectionViewCell cell;
+@property (nonatomic) @ cellModel;
+@property (nonatomic) IESECListKitItemDataModel bffItemData;
+@property (nonatomic) q section;
+@property (nonatomic) q index;
+@property (nonatomic) BOOL isFirstShow;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setBffItemData:;
+- (void)setListUpdater:;
+- (id)bffItemData;
+- (void)configCell;
+- (double)heightForModel:itemWidth:;
+- (id)listUpdater;
+- (void)setCellModel:;
+- (void)setHeaderView:;
+- (id)headerView;
+- (void)setSection:;
+- (long long)index;
+- (void)setIndex:;
+- (void).cxx_destruct;
+- (long long)section;
+- (id)cell;
+- (void)setCell:;
+- (id)cellModel;
++ (Class)cellModelClass;
++ (Class)cellClass;
+@end

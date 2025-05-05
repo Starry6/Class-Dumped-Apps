@@ -1,0 +1,30 @@
+@interface BDADetailResourceCache : NSObject
+@property (nonatomic) BDLRUCache cacheAds;
+@property (nonatomic) BDLRUCache cacheOften;
+@property (nonatomic) BDLRUCache cacheOccasion;
+@property (nonatomic) q cacheOftenCount;
+@property (nonatomic) q cacheOccasionCount;
+- (void)saveCache:path:;
+- (long long)cacheOftenCount;
+- (id)cacheAds;
+- (id)cacheOccasion;
+- (long long)cacheOccasionCount;
+- (id)cacheOften;
+- (id)getAdItem:;
+- (void)getDiskResourceModelCache;
+- (id)getDiskResourceModelCache:;
+- (id)initWithOftenCapacity:occasionCapacity:;
+- (id)modelForKey:;
+- (void)saveAd:preloadAdItem:;
+- (void)saveDiskResourceModelCache;
+- (void)setCacheAds:;
+- (void)setCacheOccasion:;
+- (void)setCacheOccasionCount:;
+- (void)setCacheOften:;
+- (void)setCacheOftenCount:;
+- (void)clearCache;
+- (id)init;
+- (BOOL)setObject:forKey:;
+- (void).cxx_destruct;
++ (id)sharedCache;
+@end

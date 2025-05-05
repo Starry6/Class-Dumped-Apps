@@ -1,0 +1,32 @@
+@interface WBSRetryableCKFetchDatabaseChangesOperation : WBSRetryableCKDatabaseOperation
+@property (nonatomic) CKServerChangeToken previousServerChangeToken;
+@property (nonatomic) Q resultsLimit;
+@property (nonatomic) BOOL fetchAllChanges;
+@property (nonatomic) @? recordZoneWithIDChangedBlock;
+@property (nonatomic) @? recordZoneWithIDWasDeletedBlock;
+@property (nonatomic) @? recordZoneWithIDWasPurgedBlock;
+@property (nonatomic) @? recordZoneWithIDWasDeletedDueToUserEncryptedDataResetBlock;
+@property (nonatomic) @? changeTokenUpdatedBlock;
+@property (nonatomic) @? fetchDatabaseChangesCompletionBlock;
+- (void)setResultsLimit:;
+- (void)setPreviousServerChangeToken:;
+- (id)previousServerChangeToken;
+- (void)_setUpOperation:;
+- (id)recordZoneWithIDWasDeletedBlock;
+- (id)_makeOperation;
+- (void)setFetchAllChanges:;
+- (void)setRecordZoneWithIDWasPurgedBlock:;
+- (void)setRecordZoneWithIDWasDeletedDueToUserEncryptedDataResetBlock:;
+- (BOOL)fetchAllChanges;
+- (void)setFetchDatabaseChangesCompletionBlock:;
+- (unsigned long long)resultsLimit;
+- (id)fetchDatabaseChangesCompletionBlock;
+- (void)setRecordZoneWithIDChangedBlock:;
+- (void)setChangeTokenUpdatedBlock:;
+- (id)recordZoneWithIDWasPurgedBlock;
+- (id)recordZoneWithIDWasDeletedDueToUserEncryptedDataResetBlock;
+- (void).cxx_destruct;
+- (id)changeTokenUpdatedBlock;
+- (id)recordZoneWithIDChangedBlock;
+- (void)setRecordZoneWithIDWasDeletedBlock:;
+@end

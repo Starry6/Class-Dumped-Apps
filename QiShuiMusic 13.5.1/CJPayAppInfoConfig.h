@@ -1,0 +1,37 @@
+@interface CJPayAppInfoConfig : NSObject
+@property (nonatomic) NSString appId;
+@property (nonatomic) @? deviceIDBlock;
+@property (nonatomic) @? userIDBlock;
+@property (nonatomic) @? userNicknameBlock;
+@property (nonatomic) @? userPhoneNumberBlock;
+@property (nonatomic) @? userAvatarBlock;
+@property (nonatomic) @? infoConfigBlock;
+@property (nonatomic) NSString appName;
+@property (nonatomic) NSString secLinkDomain;
+@property (nonatomic) @? transferSecLinkSceneBlock;
+@property (nonatomic) BOOL adapterIpadStyle;
+- (void)setUserIDBlock:;
+- (id)infoConfigBlock;
+- (id)userAvatarBlock;
+- (BOOL)adapterIpadStyle;
+- (id)deviceIDBlock;
+- (id)secLinkDomain;
+- (void)setAdapterIpadStyle:;
+- (void)setDeviceIDBlock:;
+- (void)setInfoConfigBlock:;
+- (void)setSecLinkDomain:;
+- (void)setTransferSecLinkSceneBlock:;
+- (void)setUserAvatarBlock:;
+- (void)setUserNicknameBlock:;
+- (void)setUserPhoneNumberBlock:;
+- (id)transferSecLinkSceneBlock;
+- (id)userIDBlock;
+- (id)userNicknameBlock;
+- (id)userPhoneNumberBlock;
+- (id)appId;
+- (void)setAppId:;
+- (void)setAppName:;
+- (id)appName;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+@end

@@ -1,0 +1,35 @@
+@interface IESLiveGiftPanelBottomView : UIView
+@property (nonatomic) UIView rightContainer;
+@property (nonatomic) IESLiveGiftChargeView chargeCell;
+@property (nonatomic) IESLiveGiftSmallRedeemView redeemCell;
+@property (nonatomic) UICollectionViewCell<IESLiveGiftPanelOperationCellService> diamondCell;
+@property (nonatomic) IESLiveGiftTabListView tabListCell;
+@property (nonatomic) double topOffset;
+@property (nonatomic) <IESLiveCollectionViewItemProtocol> item;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) <IESLiveRefactGiftPanelSectionVMProtocol> sectionVM;
+- (void)setDiamondCell:;
+- (void)setTabListCell:;
+- (id)chargeCell;
+- (id)diamondCell;
+- (void)didSetAttachingDIContext;
+- (id)redeemCell;
+- (id)rightContainer;
+- (id)sectionVM;
+- (void)setChargeCell:;
+- (void)setRedeemCell:;
+- (void)setRightContainer:;
+- (void)setSectionVM:;
+- (void)setupRightContainer:;
+- (void)setupTabListCell:;
+- (id)tabListCell;
+- (id)item;
+- (double)topOffset;
+- (void)setTopOffset:;
+- (id)initWithFrame:;
+- (void)setItem:;
+- (void).cxx_destruct;
+@end

@@ -1,0 +1,34 @@
+@interface ShotflowNetwork : NSObject
+@property (nonatomic) Q preferredSmallSide;
+@property (nonatomic) float threshold;
+- (float)threshold;
+- (void)dealloc;
+- (id)processVImage:inputIsBGR:;
+- (id)resizeAndProcessVImage:inputIsBGR:;
+- (void)initializeBuffers;
+- (int)setInputShape:height:;
+- (void).cxx_destruct;
+- (id)initWithEspressoNetwork:espressoPlan:threshold:;
+- (void)initializeEspressoResourcesWithModelPath:espressoEngineID:espressoDeviceID:espressoStorageType:;
+- (void)runNetwork:inputIsBGR:;
+- (unsigned long long)preferredSmallSide;
+- (id).cxx_construct;
+- (void)setThreshold:;
+- (id)initWithModelPath:espressoEngineID:espressoDeviceID:espressoStorageType:threshold:;
++ (float)inputScale;
++ (BOOL)hasPose;
++ (id)strides;
++ (id)inputBiasRGB;
++ (id)inputLayerName;
++ (BOOL)inputBGR;
++ (float)inputImageMinDimension;
++ (float)inputImageMaxDimension;
++ (float)inputImageAspectRatio;
++ (float)nonSquareRollDefault;
++ (float)nonSquareYawDefault;
++ (id)defaultBoxesSides;
++ (unsigned long long)numberBinsRoll;
++ (unsigned long long)numberBinsYaw;
++ (id)processingDeviceNetworkWithModelPath:threshold:preferredDeviceID:engineID:storageType:;
++ (id)processingDeviceDetectorWithEspressoNetwork:espressoPlan:threshold:;
+@end

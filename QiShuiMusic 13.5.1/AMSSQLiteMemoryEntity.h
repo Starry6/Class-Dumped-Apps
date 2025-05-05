@@ -1,0 +1,30 @@
+@interface AMSSQLiteMemoryEntity : NSObject
+@property (nonatomic) q databaseID;
+@property (nonatomic) NSDictionary propertyValues;
+@property (nonatomic) NSDictionary externalPropertyValues;
+- (long long)databaseID;
+- (id)init;
+- (unsigned long long)hash;
+- (void)setDatabaseID:;
+- (id)valueForProperty:;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setValue:forProperty:;
+- (void)setValuesWithDictionary:;
+- (id)initWithDatabaseEntity:properties:;
+- (void)reloadFromDatabaseEntity:properties:;
+- (void)setExternalValuesWithDictionary:;
+- (void)setValues:forProperties:count:;
+- (void)setValue:forExternalProperty:;
+- (void)setValues:forExternalProperties:count:;
+- (id)valueForExternalProperty:;
+- (id)propertyValues;
+- (id)externalPropertyValues;
++ (id)defaultProperties;
++ (Class)databaseEntityClass;
++ (id)anyOnConnection:predicate:;
++ (id)queryOnConnection:predicate:;
++ (id)queryOnConnection:predicate:orderingProperties:;
+@end

@@ -1,0 +1,32 @@
+@interface IESECRelationObtainABTestModule : NSObject
+@property (nonatomic) q winFirstFrameOptimized;
+@property (nonatomic) q winFirstFrameCreateTabViewController;
+@property (nonatomic) BOOL winFeedLayoutCache;
+@property (nonatomic) BOOL winStopTagsPreload;
+@property (nonatomic) q winVaneRecommendProduct;
+@property (nonatomic) q winVaneGuessLike;
+@property (nonatomic) q winVaneGapCount;
+@property (nonatomic) BOOL enableWinTabLoadingNewType;
+- (long long)winVaneGapCount;
+- (BOOL)enableWinTabLoadingNewType;
+- (BOOL)enableWindowNewLoading;
+- (void)setEnableWinTabLoadingNewType:;
+- (void)setWinFeedLayoutCache:;
+- (void)setWinFirstFrameCreateTabViewController:;
+- (void)setWinFirstFrameOptimized:;
+- (void)setWinStopTagsPreload:;
+- (void)setWinVaneGapCount:;
+- (void)setWinVaneGuessLike:;
+- (void)setWinVaneRecommendProduct:;
+- (BOOL)winFeedLayoutCache;
+- (BOOL)winFirstFrameCreateTabVC;
+- (long long)winFirstFrameCreateTabViewController;
+- (BOOL)winFirstFrameOptimized;
+- (BOOL)winStopTagsPreload;
+- (BOOL)winVaneGuessLike;
+- (BOOL)winVaneRecommendProduct;
+- (id)mutableCopyWithZone:;
+- (id)copyWithZone:;
++ (id)allocWithZone:;
++ (id)sharedInstance;
+@end

@@ -1,0 +1,32 @@
+@interface SFAvatarStackView : UIView
+@property (nonatomic) q alignment;
+@property (nonatomic) double avatarDiameter;
+@property (nonatomic) NSArray shareParticipants;
+@property (nonatomic) double spacing;
+- (double)spacing;
+- (void)setSpacing:;
+- (void)setAlignment:;
+- (id)intrinsicContentSize;
+- (void)layoutSubviews;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (long long)alignment;
+- (id)shareParticipants;
+- (void)setShareParticipants:;
+- (void)setAvatarDiameter:;
+- (void)_updateVisibleParticipants;
+- (void)_setVisibleParticipantIdentifiers:;
+- (id)sizeForParticipantCount:;
+- (void)_layOutIndexes:ofParticipantIdentifiers:targetWidth:;
+- (void)_setIndexes:ofParticipantIdentifiers:transitioning:completion:;
+- (id)_contentRectForContentWidth:viewWith:;
+- (double)_widthForParticipantCount:;
+- (id)_viewForParticipantIdentifier:;
+- (id)_avatarViewControllerForParticipantIdentifier:;
+- (void)_removeViewsForIndexes:ofParticipantIdentifiers:;
+- (id)_overflowView;
+- (id)_overflowLabel;
+- (void)_loadOverflowView;
+- (double)avatarDiameter;
++ (id)randomContactIdentifiers;
+@end

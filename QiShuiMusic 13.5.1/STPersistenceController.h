@@ -1,0 +1,36 @@
+@interface STPersistenceController : NSObject
+@property (nonatomic) NSPersistentContainer persistentContainer;
+@property (nonatomic) NSObject<OS_dispatch_queue> coreDataQueue;
+@property (nonatomic) <STPersistentStoreChangeHandler> changeHandler;
+@property (nonatomic) STDebouncer changeNotificationDebouncer;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSManagedObjectContext viewContext;
+@property (nonatomic) BOOL hasStoreLoaded;
+@property (nonatomic) NSPersistentStore localStore;
+@property (nonatomic) NSPersistentStore cloudStore;
+- (void)setPersistentContainer:;
+- (id)init;
+- (id)changeHandler;
+- (id)localStore;
+- (id)persistentContainer;
+- (void)performBackgroundTask:;
+- (id)viewContext;
+- (void).cxx_destruct;
+- (id)newBackgroundContext;
+- (void)debouncer:didDebounce:;
+- (void)_remotePersistentStoreDidChange:;
+- (void)_persistentStoreCoordinatorStoresDidChange:;
+- (void)performBackgroundTaskAndWait:;
+- (BOOL)hasStoreLoaded;
+- (id)cloudStore;
+- (id)initWithPersistentContainer:persistentStoreChangeHandler:notificationDebouncer:;
+- (id)descriptionForPersistentStore:;
+- (void)_remotePersistentStoreChangesDidCoalesce:;
+- (void)_logAboutMissingStoreName:;
+- (id)coreDataQueue;
+- (void)setCoreDataQueue:;
+- (id)changeNotificationDebouncer;
+@end

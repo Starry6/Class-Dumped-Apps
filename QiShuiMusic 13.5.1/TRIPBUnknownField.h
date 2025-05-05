@@ -1,0 +1,30 @@
+@interface TRIPBUnknownField : NSObject
+@property (nonatomic) NSInteger number;
+@property (nonatomic) TRIPBUInt64Array varintList;
+@property (nonatomic) TRIPBUInt32Array fixed32List;
+@property (nonatomic) TRIPBUInt64Array fixed64List;
+@property (nonatomic) NSArray lengthDelimitedList;
+@property (nonatomic) NSArray groupList;
+- (void)dealloc;
+- (int)number;
+- (id)groupList;
+- (unsigned long long)hash;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)addGroup:;
+- (unsigned long long)serializedSize;
+- (id)initWithNumber:;
+- (void)writeToOutput:;
+- (void)writeAsMessageSetExtensionToOutput:;
+- (unsigned long long)serializedSizeAsMessageSetExtension;
+- (void)mergeFromField:;
+- (void)addVarint:;
+- (void)addFixed32:;
+- (void)addFixed64:;
+- (void)addLengthDelimited:;
+- (id)varintList;
+- (id)fixed32List;
+- (id)fixed64List;
+- (id)lengthDelimitedList;
+@end

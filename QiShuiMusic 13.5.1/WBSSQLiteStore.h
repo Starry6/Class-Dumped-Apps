@@ -1,0 +1,35 @@
+@interface WBSSQLiteStore : NSObject
+@property (nonatomic) WBSSQLiteDatabase database;
+@property (nonatomic) NSObject<OS_dispatch_queue> databaseQueue;
+@property (nonatomic) NSURL databaseURL;
+@property (nonatomic) <WBSSQLiteStoreDelegate> delegate;
+@property (nonatomic) BOOL isOpen;
+- (void)closeWithCompletionHandler:;
+- (id)databaseURL;
+- (id)init;
+- (void)dealloc;
+- (id)initWithURL:;
+- (BOOL)isOpen;
+- (void)setDelegate:;
+- (int)_createFreshDatabaseSchema;
+- (int)_migrateToSchemaVersion:;
+- (int)_setDatabaseSchemaVersion:;
+- (void)_closeDatabase;
+- (void)savePendingChangesBeforeTermination;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)database;
+- (id)databaseQueue;
+- (int)_migrateToCurrentSchemaVersionIfNecessary;
+- (void)openAndCheckIntegrity:createIfNeeded:fallBackToMemoryStoreIfError:lockingPolicy:completionHandler:;
+- (int)_currentSchemaVersion;
+- (id)initWithURL:protectionType:;
+- (void)_openDatabase:createIfNeeded:checkIntegrity:completionHandler:;
+- (void)_handleOpenFailureWithStatus:completionHandler:;
+- (BOOL)_confirmDatabaseIntegrityIsOK;
+- (void)_databaseWillClose;
+- (BOOL)_isDatabaseLocked;
+- (id)_databaseCoordinationLockURLForDatabaseURL:;
+- (BOOL)_acquireDatabaseCoordinationLockForDatabaseURL:;
+- (void)_releaseDatabaseCoordinationLock;
+@end

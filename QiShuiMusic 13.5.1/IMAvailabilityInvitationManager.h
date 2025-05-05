@@ -1,0 +1,31 @@
+@interface IMAvailabilityInvitationManager : NSObject
+@property (nonatomic) SKStatusPublishingService publishingService;
+@property (nonatomic) NSCache dateAttemptedInvitationByHandleCache;
+@property (nonatomic) NSObject<OS_dispatch_queue> dndBackgroundQueue;
+- (id)init;
+- (void).cxx_destruct;
+- (void)manuallyRemoveSharingOfFocusStatusWithHandleID:completion:;
+- (void)manuallyShareFocusStatusWithHandleID:fromHandleID:completion:;
+- (id)newDNDGlobalConfigurationService;
+- (void)attemptIfNeccessaryToAutomaticallyShareFocusStatusWithHandleID:fromHandleID:completion:;
+- (void)repairSharedFocusStatusFollowingFailedValidationWithHandleID:fromHandleID:completion:;
+- (void)fetchIsFocusConfigurationShareAcrossDevicesEnabledWithCompletion:;
+- (void)_sharePersonalAvailabilityWithSKHandle:fromSKHandle:allowingInvitationOfRemovedUsers:completion:;
+- (void)_invitablityForHandle:fromHandle:completion:;
+- (void)isFocusStatusSharedWithHandleID:fromHandleID:completion:;
+- (void)_isFocusStatusSharedWithHandle:fromHandle:completion:;
+- (void)_invitationPayloadForHandleID:completion:;
+- (id)_newDNDModeConfigurationService;
+- (void)_republishCurrentAvailabilityStatus;
+- (id)_dndHandleForHandleID:;
+- (id)_invitationCacheKeyForHandleID:fromHandleID:;
+- (id)publishingService;
+- (id)_skHandleForString:;
+- (BOOL)_isHandleIDEligibleToReceiveAutomaticInvitation:;
+- (void)setPublishingService:;
+- (id)dateAttemptedInvitationByHandleCache;
+- (void)setDateAttemptedInvitationByHandleCache:;
+- (id)dndBackgroundQueue;
+- (void)setDndBackgroundQueue:;
++ (id)sharedInstance;
+@end

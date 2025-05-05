@@ -1,0 +1,35 @@
+@interface CSJRewardBrowseAlertView : UIView
+@property (nonatomic) UIImageView icon;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel msgLabel;
+@property (nonatomic) UIButton confirmBtn;
+@property (nonatomic) UIButton cancelBtn;
+@property (nonatomic) UIView contentView;
+@property (nonatomic) UIWindow bgWindow;
+@property (nonatomic) @? confirmBlock;
+@property (nonatomic) @? cancelBlock;
+- (void)closeBtnClicked;
+- (id)bgWindow;
+- (id)cancelBtn;
+- (id)confirmBlock;
+- (id)confirmBtn;
+- (void)confirmBtnClicked;
+- (id)initWith:msg:;
+- (id)msgLabel;
+- (void)setBgWindow:;
+- (void)setCancelBtn:;
+- (void)setConfirmBlock:;
+- (void)setConfirmBtn:;
+- (void)setMsgLabel:;
+- (id)contentView;
+- (void)setCancelBlock:;
+- (void)setTitleLabel:;
+- (void)hide;
+- (id)icon;
+- (void)show;
+- (void)setIcon:;
+- (id)cancelBlock;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (id)titleLabel;
+@end

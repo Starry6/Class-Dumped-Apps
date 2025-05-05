@@ -1,0 +1,2 @@
+@interface IESSaaSTIMBaseORM : MTLModel
+@end

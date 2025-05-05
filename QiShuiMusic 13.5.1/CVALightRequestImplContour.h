@@ -1,0 +1,2 @@
+@interface CVALightRequestImplContour : CVALightRequestImplBase
+@end

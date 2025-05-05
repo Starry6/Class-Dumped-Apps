@@ -1,0 +1,32 @@
+@interface FLFollowUpController : NSObject
+@property (nonatomic) <FLFollowUpControllerDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)_postHSA2LoginCode:withNotification:completion:;
+- (id)initWithClientIdentifier:;
+- (void)_tearDownHSA2LoginNotificationWithPushMessageID:;
+- (void)setDelegate:;
+- (void)countOfPendingFollowUpItemsWithCompletion:;
+- (void)_postHSA2PasswordResetNotification:completion:;
+- (BOOL)clearPendingFollowUpItems:;
+- (id)pendingFollowUpItems:;
+- (void)clearPendingFollowUpItemsWithCompletion:;
+- (BOOL)clearPendingFollowUpItemsWithUniqueIdentifiers:error:;
+- (void)_postHSA2LoginNotification:completion:;
+- (id)delegate;
+- (void)_postHSA2PasswordChangeForAppleID:completion:;
+- (BOOL)listener:shouldAcceptNewConnection:;
+- (void)pendingFollowUpItemsWithCompletion:;
+- (BOOL)postFollowUpItem:error:;
+- (void).cxx_destruct;
+- (void)_didActivateHSA2LoginNotification:;
+- (BOOL)clearNotificationForItem:error:;
+- (unsigned long long)countOfPendingFollowUpItems:;
+- (id)initWithClientIdentifier:xpcEndpoint:;
+- (id)initWithClientIdentifier:machServiceName:delegate:;
+- (void)updateBadgesForTimer;
+- (void)clearPendingFollowUpItemsWithUniqueIdentifiers:completion:;
+- (void)postFollowUpItem:completion:;
+@end

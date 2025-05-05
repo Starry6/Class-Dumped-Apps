@@ -1,0 +1,32 @@
+@interface MPSNDArrayMultiaryBase : MPSKernel
+@property (nonatomic) <MPSNDArrayAllocator> destinationArrayAllocator;
+- (id)initWithCoder:device:;
+- (id)copyWithZone:device:;
+- (void)dealloc;
+- (void)encodeWithCoder:;
+- (id)destinationArrayDescriptorForSourceArrays:sourceState:;
+- (id)resultStateForSourceArrays:sourceStates:destinationArray:;
+- (id)initWithDevice:sourceCount:;
+- (void)setDestinationArrayAllocator:;
+- (unsigned long long)kernelDimensionalityForSourceArrays:;
+- (id)dimensionsNotToBeBroadcast;
+- (id)dimensionsToBeRetained;
+- (id)workloadStatisticsForSourceArrays:destArrays:sourceState:;
+- (unsigned long long)kernelDimensionalityForSourceArrays:destinationArrays:kernelDAGObject:;
+- (id)workloadStatisticsForSourceArrays:destArrays:kernel:kernelDAGObject:sourceState:;
+- (unsigned long long)maxSupportedDimensionsForSourceArrays:destinationArray:;
+- (id)stridesAtSourceIndex:;
+- (id)workloadStatisticsForSourceArrays:sourceState:;
+- (id)reshapeFitToTileToCommandBuffer:currentSource:kernelDimension:dimensionsToBeRetained:;
+- (id)destinationStrides;
+- (void)copyToGradientState:sourceArrays:sourceStates:destinationArray:;
+- (id)temporaryResultStateForCommandBuffer:sourceArrays:sourceStates:destinationArray:;
+- (id)offsetsAtSourceIndex:;
+- (unsigned long long)edgeModeAtSourceIndex:;
+- (id)stridesForSourceIndex:;
+- (id)dilationRatesForSourceIndex:;
+- (id)kernelSizesForSourceIndex:;
+- (void)kernelDAGObjectSetup:sourceArrays:sourceGradient:destination:;
+- (id)destinationArrayAllocator;
++ (unsigned long long)expectedVirtualSourceCount;
+@end

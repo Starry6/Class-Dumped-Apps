@@ -1,0 +1,33 @@
+@interface IESLiveProfileSkinDressResource : NSObject
+@property (nonatomic) HTSLiveProfileSkinConfig dressConfig;
+@property (nonatomic) NSString configVersion;
+@property (nonatomic) IESLiveDressResourceWebP borderBeginWebP;
+@property (nonatomic) IESLiveDressResourceWebP borderLoopWebP;
+@property (nonatomic) IESLiveDressResourceWebP profileCloseWebP;
+@property (nonatomic) NSString webPMD5;
+@property (nonatomic) IESLiveDressResourceParallax parallax;
+@property (nonatomic) NSString parallaxMD5;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)borderBeginWebP;
+- (void)setDressConfig:;
+- (void)setParallaxMD5:;
+- (id)webPMD5;
+- (id)borderLoopWebP;
+- (id)dressConfig;
+- (BOOL)hasEffectResource;
+- (BOOL)isResourceComplete;
+- (id)parallax;
+- (id)parallaxMD5;
+- (id)profileCloseWebP;
+- (void)setBorderBeginWebP:;
+- (void)setBorderLoopWebP:;
+- (void)setParallax:;
+- (void)setProfileCloseWebP:;
+- (void)setWebPMD5:;
+- (id)configVersion;
+- (void).cxx_destruct;
+- (void)setConfigVersion:;
+@end

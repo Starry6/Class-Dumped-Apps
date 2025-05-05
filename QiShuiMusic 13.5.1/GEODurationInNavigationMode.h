@@ -1,0 +1,30 @@
+@interface GEODurationInNavigationMode : PBCodable
+@property (nonatomic) BOOL hasType;
+@property (nonatomic) NSInteger type;
+@property (nonatomic) BOOL hasDuration;
+@property (nonatomic) double duration;
+- (void)readAll:;
+- (BOOL)hasDuration;
+- (id)initWithJSON:;
+- (void)setHasDuration:;
+- (id)jsonRepresentation;
+- (int)StringAsType:;
+- (id)initWithDictionary:;
+- (void)setType:;
+- (void)writeTo:;
+- (void)setHasType:;
+- (BOOL)hasType;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (id)typeAsString:;
+- (void)setDuration:;
+- (void)mergeFrom:;
+- (int)type;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (double)duration;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
++ (BOOL)isValid:;
+@end

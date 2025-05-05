@@ -1,0 +1,2 @@
+@interface CNEnumerateObjectsUsingBlockCancelationToken : CNCancelationToken
+@end

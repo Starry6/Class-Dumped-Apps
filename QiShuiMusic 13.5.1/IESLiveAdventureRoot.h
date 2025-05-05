@@ -1,0 +1,2 @@
+@interface IESLiveAdventureRoot : GPBRootObject
+@end

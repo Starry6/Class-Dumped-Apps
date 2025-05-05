@@ -1,0 +1,34 @@
+@interface MPSCNNBatchNormalization : MPSCNNKernel
+@property (nonatomic) Q numberOfFeatureChannels;
+@property (nonatomic) float epsilon;
+@property (nonatomic) <MPSCNNBatchNormalizationDataSource> dataSource;
+- (id)initWithCoder:device:;
+- (id)copyWithZone:device:;
+- (void)dealloc;
+- (id)resultStateForSourceImage:sourceStates:destinationImage:;
+- (id)encodeToCommandBuffer:sourceImage:destinationState:destinationStateIsTemporary:;
+- (void)setEpsilon:;
+- (id)debugDescription;
+- (float)epsilon;
+- (void)encodeWithCoder:;
+- (id)dataSource;
+- (void)encodeToCommandBuffer:sourceImage:destinationState:destinationImage:;
+- (void)encodeBatchToCommandBuffer:sourceImages:destinationStates:destinationImages:;
+- (id)encodeBatchToCommandBuffer:sourceImages:destinationStates:destinationStateIsTemporary:;
+- (BOOL)isResultStateReusedAcrossBatch;
+- (id)temporaryResultStateForCommandBuffer:sourceImage:sourceStates:destinationImage:;
+- (id)initWithDevice:dataSource:;
+- (id)encodeBatchToCommandBuffer:sourceImages:batchNormalizationState:;
+- (void)encodeBatchToCommandBuffer:sourceImages:batchNormalizationState:destinationImages:;
+- (void)reloadGammaAndBetaFromDataSource;
+- (void)reloadGammaAndBetaWithCommandBuffer:gammaAndBetaState:;
+- (void)reloadMeanAndVarianceFromDataSource;
+- (void)reloadMeanAndVarianceWithCommandBuffer:meanAndVarianceState:;
+- (unsigned long long)numberOfFeatureChannels;
+- (id)initWithDevice:dataSource:fusedNeuronDescriptor:;
+- (void)encodeToCommandBuffer:sourceImage:batchNormalizationState:destinationImage:;
+- (id)encodeToCommandBuffer:sourceImage:batchNormalizationState:;
+- (void)reloadDataSourceDeprecated:doReloadWeights:doReloadStats:;
+- (void)reloadDataSource:;
++ (id)libraryInfo:;
+@end

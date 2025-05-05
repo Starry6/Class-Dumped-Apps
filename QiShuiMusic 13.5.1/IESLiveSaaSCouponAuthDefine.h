@@ -1,0 +1,2 @@
+@interface IESLiveSaaSCouponAuthDefine : NSObject
+@end

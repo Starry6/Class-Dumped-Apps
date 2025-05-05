@@ -1,0 +1,2 @@
+@interface BWDeferredCaptureControllerConfiguration : BWStillImageProcessorControllerConfiguration
+@end

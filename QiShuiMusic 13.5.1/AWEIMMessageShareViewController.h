@@ -1,0 +1,33 @@
+@interface AWEIMMessageShareViewController : UIViewController
+@property (nonatomic) NSArray dataSource;
+@property (nonatomic) UITableView tableView;
+@property (nonatomic) AWEIMMessage message;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)onShareButtonClick:;
+- (void)p_dismissIfNeeded:completion:;
+- (void)p_onMessageRecall:;
+- (void)p_tappedMoreFriends;
+- (void)p_trackShareVideoToChatWithShareModel:;
+- (void)setDataSource:;
+- (id)init;
+- (void)dealloc;
+- (void)setMessage:;
+- (id)tableView:cellForRowAtIndexPath:;
+- (id)scrollView;
+- (double)tableView:heightForRowAtIndexPath:;
+- (id)dataSource;
+- (id)message;
+- (void)tableView:didSelectRowAtIndexPath:;
+- (void).cxx_destruct;
+- (void)viewWillAppear:;
+- (void)setTableView:;
+- (id)tableView;
+- (long long)tableView:numberOfRowsInSection:;
+- (void)viewDidLoad;
+- (void)p_registerNotifications;
++ (void)instanceWithMessage:completion:;
++ (void)p_fetchViewModels:;
+@end

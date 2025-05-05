@@ -1,0 +1,34 @@
+@interface NSPPrivacyProxyConfigAgent : NSObject
+@property (nonatomic) NSString agentDescription;
+@property (nonatomic) NSUUID agentUUID;
+@property (nonatomic) BOOL active;
+@property (nonatomic) BOOL kernelActivated;
+@property (nonatomic) BOOL userActivated;
+@property (nonatomic) BOOL voluntary;
+@property (nonatomic) BOOL specificUseOnly;
+@property (nonatomic) BOOL networkProvider;
+@property (nonatomic) BOOL nexusProvider;
+@property (nonatomic) BOOL supportsListenRequests;
+@property (nonatomic) BOOL supportsBrowseRequests;
+@property (nonatomic) BOOL supportsResolveRequests;
+@property (nonatomic) BOOL requiresAssert;
+@property (nonatomic) BOOL updateClientsImmediately;
+- (id)copyAgentData;
+- (void)setUserActivated:;
+- (BOOL)reportError:withOptions:;
+- (void).cxx_destruct;
+- (BOOL)isUserActivated;
+- (void)setAgentDescription:;
+- (void)setActive:;
+- (BOOL)isVoluntary;
+- (BOOL)isKernelActivated;
+- (id)agentUUID;
+- (void)setAgentUUID:;
+- (id)agentDescription;
+- (void)setVoluntary:;
+- (void)setKernelActivated:;
+- (BOOL)isActive;
++ (id)agentType;
++ (id)agentDomain;
++ (id)agentFromData:;
+@end

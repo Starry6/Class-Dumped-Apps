@@ -1,0 +1,37 @@
+@interface ARSISemanticSegmentationTechnique : ARMLImageProcessingTechnique
+@property (nonatomic) BOOL supportsUncertainty;
+@property (nonatomic) BOOL shouldUseSynchronizedUltraWide;
+@property (nonatomic) BOOL isBusy;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (void)dealloc;
+- (id)initLegacy;
+- (void).cxx_destruct;
+- (double)requiredTimeInterval;
+- (id)resultDataClasses;
+- (void)_prepareOnce:;
+- (id)runNeuralNetworkWithImageData:originalImageData:regionOfInterest:rotationOfResultTensor:;
+- (void)_startLoadingMLModelSignpost;
+- (void)_endLoadingMLModelSignpost;
+- (void)_startMLProcessingSignpostWithTimestamp:;
+- (void)_endMLProcessingSignpostWithTimestamp:;
+- (void)_startMLRunNetworkSignpostWithTimestamp:;
+- (void)_endMLRunNetworkSignpostWithTimestamp:;
+- (void)_startMLCreateResultSignpostWithTimestamp:orientation:outputSize:;
+- (void)_endMLCreateResultSignpostWithTimestamp:;
+- (void)changeEspressoConfig:;
+- (id)createResultDataFromOutputSegmentation:outputConfidence:outputNormalize:outputUncertainty:inputImageData:originalData:rotationNeeded:regionOfInterest:;
+- (BOOL)scaleSegmentationPixelOutputBuffer:confidencePixelOutputBuffer:normalPixelOutputBuffer:targetResolution:;
+- (BOOL)supportsNormals;
+- (void)_captureMLRunNetworkInputImageData:cameraType:imageWidth:imageHeight:;
+- (long long)_mapUIDeviceOrientation:;
+- (id)_rotateImageData:withRotationTechnique:rotationNeeded:;
+- (BOOL)shouldUseSynchronizedUltraWide;
+- (void)setShouldUseSynchronizedUltraWide:;
+- (BOOL)supportsUncertainty;
+- (void)setSupportsUncertainty:;
++ (void)createUncertaintyMaskedSegmentationBuffer:fromSegmentationBuffer:uncertaintyBuffer:maskValue:;
+@end

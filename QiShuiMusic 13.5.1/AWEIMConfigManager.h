@@ -1,0 +1,31 @@
+@interface AWEIMConfigManager : NSObject
+@property (nonatomic) q service;
+@property (nonatomic) q method;
+@property (nonatomic) NSString fpID;
+@property (nonatomic) NSString appID;
+@property (nonatomic) NSString webSocketAppKey;
+- (id)webSocketAppKey;
+- (id)fpID;
+- (void)setFpID:;
+- (void)setWebSocketAppKey:;
+- (void)setService:;
+- (id)init;
+- (long long)method;
+- (long long)service;
+- (void)setAppID:;
+- (id)appID;
+- (void).cxx_destruct;
+- (void)setMethod:;
++ (BOOL)shouldEnablePPE;
++ (BOOL)shouldEnableBOE;
++ (BOOL)enableAddressBook;
++ (BOOL)enableDynamicWebSocketURL;
++ (BOOL)enableWS;
++ (id)imServerURL;
++ (BOOL)isBOEEvn;
++ (BOOL)isPPEEnv;
++ (id)msgEmojiConfig;
++ (id)webSocketURLs:;
++ (id)sharedInstance;
++ (id)tokenURL;
+@end

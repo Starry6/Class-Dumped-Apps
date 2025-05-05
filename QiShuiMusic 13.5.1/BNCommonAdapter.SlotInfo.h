@@ -1,0 +1,2 @@
+@interface BNCommonAdapter.SlotInfo : _TtGC15BNCommonAdapter22OptionalNetModelObjectV10STNetProto4Slot_
+@end

@@ -1,0 +1,35 @@
+@interface IESECGoodsQualificationActivity : MTLModel
+@property (nonatomic) double campaignCurrentTime;
+@property (nonatomic) double initTimeinterval;
+@property (nonatomic) Q campaignType;
+@property (nonatomic) NSString campaignID;
+@property (nonatomic) double campaignPreBeginTime;
+@property (nonatomic) double campaignBeginTime;
+@property (nonatomic) double campaignEndTime;
+@property (nonatomic) Q campaignStatus;
+@property (nonatomic) double currentTime;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (double)campaignEndTime;
+- (double)campaignBeginTime;
+- (double)campaignCurrentTime;
+- (double)campaignPreBeginTime;
+- (unsigned long long)campaignStatus;
+- (double)initTimeinterval;
+- (void)setCampaignBeginTime:;
+- (void)setCampaignCurrentTime:;
+- (void)setCampaignEndTime:;
+- (void)setCampaignPreBeginTime:;
+- (void)setCampaignStatus:;
+- (void)setInitTimeinterval:;
+- (id)init;
+- (id)campaignID;
+- (void).cxx_destruct;
+- (double)currentTime;
+- (void)setCampaignID:;
+- (unsigned long long)campaignType;
+- (void)setCampaignType:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

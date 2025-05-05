@@ -1,0 +1,2 @@
+@interface IESLiveSaaSPBIESLiveSaaSPBCommonNotifyRoot : GPBRootObject
+@end

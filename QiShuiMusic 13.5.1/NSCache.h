@@ -1,0 +1,33 @@
+@interface NSCache : NSObject
+@property (nonatomic) NSString name;
+@property (nonatomic) <NSCacheDelegate> delegate;
+@property (nonatomic) Q totalCostLimit;
+@property (nonatomic) Q countLimit;
+@property (nonatomic) BOOL evictsObjectsWithDiscardedContent;
+- (id)mapTableRepresentation;
+- (id)CALobjectForKey:calculatedWithBlock:;
+- (id)init;
+- (BOOL)evictsObjectsWhenApplicationEntersBackground;
+- (void)setObject:forKey:;
+- (void)dealloc;
+- (void)setName:;
+- (void)setDelegate:;
+- (void)removeAllObjects;
+- (id)delegate;
+- (id)objectForKey:;
+- (id)name;
+- (id)allObjects;
+- (void)removeObjectForKey:;
+- (void)setEvictsObjectsWhenApplicationEntersBackground:;
+- (void)__apply:;
+- (void)setCountLimit:;
+- (void)setObject:forKey:cost:;
+- (unsigned long long)totalCostLimit;
+- (void)setTotalCostLimit:;
+- (unsigned long long)countLimit;
+- (BOOL)evictsObjectsWithDiscardedContent;
+- (void)setEvictsObjectsWithDiscardedContent:;
+- (void)setMinimumObjectCount:;
+- (unsigned long long)minimumObjectCount;
++ (id)hmdbg_cache;
+@end

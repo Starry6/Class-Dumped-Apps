@@ -1,0 +1,35 @@
+@interface IESECTabKitTabBarStyleConfigModel : MTLModel
+@property (nonatomic) double height;
+@property (nonatomic) double leftInset;
+@property (nonatomic) double rightInset;
+@property (nonatomic) Q alignment;
+@property (nonatomic) Q displayMode;
+@property (nonatomic) NSString backgroundColor;
+@property (nonatomic) IESECTabKitTabBarStyleModel normalStyle;
+@property (nonatomic) IESECTabKitTabBarStyleModel selectedStyle;
+@property (nonatomic) IESECTabKitTabBarIndicatorStyle indicatorStyle;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setNormalStyle:;
+- (id)normalStyle;
+- (id)selectedStyle;
+- (void)setSelectedStyle:;
+- (void)setBackgroundColor:;
+- (void)setAlignment:;
+- (void)setLeftInset:;
+- (unsigned long long)displayMode;
+- (double)leftInset;
+- (id)backgroundColor;
+- (void)setDisplayMode:;
+- (double)rightInset;
+- (double)height;
+- (void)setIndicatorStyle:;
+- (void)setHeight:;
+- (void).cxx_destruct;
+- (void)setRightInset:;
+- (unsigned long long)alignment;
+- (id)indicatorStyle;
++ (id)JSONKeyPathsByPropertyKey;
+@end

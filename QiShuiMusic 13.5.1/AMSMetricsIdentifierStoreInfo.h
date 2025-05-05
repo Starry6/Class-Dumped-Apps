@@ -1,0 +1,30 @@
+@interface AMSMetricsIdentifierStoreInfo : NSObject
+@property (nonatomic) NSString account;
+@property (nonatomic) BOOL crossDeviceSync;
+@property (nonatomic) double resetInterval;
+@property (nonatomic) NSDate started;
+@property (nonatomic) NSString storeKey;
+@property (nonatomic) NSString storeUUID;
+@property (nonatomic) BOOL deleted;
+@property (nonatomic) NSDate lastSync;
+@property (nonatomic) NSDate modified;
+- (id)account;
+- (id)storeUUID;
+- (BOOL)deleted;
+- (void)setStarted:;
+- (id)modified;
+- (void)setAccount:;
+- (void)setResetInterval:;
+- (id)started;
+- (id)lastSync;
+- (BOOL)crossDeviceSync;
+- (void)setStoreUUID:;
+- (void)setModified:;
+- (double)resetInterval;
+- (void)setLastSync:;
+- (void).cxx_destruct;
+- (void)setDeleted:;
+- (id)storeKey;
+- (void)setStoreKey:;
+- (void)setCrossDeviceSync:;
+@end

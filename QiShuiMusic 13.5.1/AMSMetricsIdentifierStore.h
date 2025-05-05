@@ -1,0 +1,38 @@
+@interface AMSMetricsIdentifierStore : NSObject
+@property (nonatomic) ACAccount account;
+@property (nonatomic) AMSProcessInfo clientInfo;
+@property (nonatomic) NSString domain;
+@property (nonatomic) BOOL includeAccountMatchStatus;
+@property (nonatomic) double resetInterval;
+- (void)setIdentifier:effectiveDate:for:;
+- (id)account;
+- (void)setClientInfo:;
+- (void)setAccount:;
+- (void)setResetInterval:;
+- (id)clientInfo;
+- (double)resetInterval;
+- (void).cxx_destruct;
+- (void)reset;
+- (id)domain;
+- (void)setDomain:;
+- (id)generateEventFieldsForKeys:;
+- (id)identifierForKey:;
+- (void)setIdentifier:forKey:;
+- (void)_setIdentifier:withStartedDate:forKey:;
+- (id)identifierIfExistsForKey:;
+- (void)_generateFutureIdentifiersIfNeededForKeys:storeInfo:afterPeriod:inDatabase:date:;
+- (id)_identifierInfoForKey:storeInfo:period:inDatabase:date:setValue:needsToSync:error:;
+- (id)_identifiersForKeys:currentDate:;
+- (id)_identifierStoreInfoForKeys:inDatabase:date:needsToSync:error:;
+- (id)_generateStoreKey;
+- (id)_generateIdentifierKey:storeInfo:period:;
+- (BOOL)includeAccountMatchStatus;
+- (void)setIncludeAccountMatchStatus:;
++ (id)_database;
++ (void)removeIdentifiersForAccount:;
++ (id)_sync;
++ (id)identifierStoreWithAccount:bagNamespace:bag:;
++ (id)_sharedQueue;
++ (void)cleanupIdentifiers;
++ (id)_accountIdentifierForAccount:;
+@end

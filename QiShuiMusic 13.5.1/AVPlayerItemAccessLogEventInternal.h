@@ -1,0 +1,2 @@
+@interface AVPlayerItemAccessLogEventInternal : NSObject
+@end

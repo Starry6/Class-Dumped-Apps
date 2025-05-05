@@ -1,0 +1,37 @@
+@interface AWEIMInputStateReceiver : NSObject
+@property (nonatomic) NSMutableDictionary inputStateCache;
+@property (nonatomic) NSMutableDictionary inputStateBlocks;
+@property (nonatomic) NSString messageChangeObserverToken;
+@property (nonatomic) NSTimer timer;
+@property (nonatomic) BOOL isStart;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)inputStateCache;
+- (void)__dealWithInputState;
+- (void)__didReceiveP2PMessage:;
+- (BOOL)canCacheInputStateWithMessage:;
+- (id)inputStateBlocks;
+- (id)messageChangeObserverToken;
+- (void)newP2PMessageNotifyConversation:message:;
+- (void)setInputStateBlocks:;
+- (void)setInputStateCache:;
+- (void)setMessageChangeObserverToken:;
+- (void)dealloc;
+- (void)start;
+- (void)setIsStart:;
+- (void)setTimer:;
+- (void)resume;
+- (BOOL)isStart;
+- (void).cxx_destruct;
+- (void)cleanTimer;
+- (id)timer;
+- (void)pause;
++ (void)cancelAllMonitorInputState;
++ (void)cancelMonitorInputStateWithconversationID:type:;
++ (id)getInputStateCacheWithConversationID:;
++ (void)monitorInputStateWithconversationID:type:completion:;
++ (void)refreshCurrentObserver;
++ (id)sharedInstance;
+@end

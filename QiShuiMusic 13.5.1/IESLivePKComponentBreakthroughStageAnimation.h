@@ -1,0 +1,33 @@
+@interface IESLivePKComponentBreakthroughStageAnimation : IESLiveRevenueInteractPlayComponent
+@property (nonatomic) IESLiveAnimatedImageView stageAnimationView;
+@property (nonatomic) IESLiveAnimatedImageView atmosphereAnimationView;
+@property (nonatomic) Q currentStage;
+@property (nonatomic) q ownerScore;
+@property (nonatomic) BOOL isSetup;
+- (void)onReceivedLinkmicMethodMessage:;
+- (id)atmosphereAnimationView;
+- (void)clearAtmosphereAnimationView;
+- (void)clearStageAnimationView;
+- (void)componentDidLoad;
+- (void)componentFinished;
+- (void)componentInteracting;
+- (void)componentPlaying;
+- (void)componentPunishing;
+- (long long)ownerScore;
+- (void)playAtmosphereAnimationWithUrl:enhance:;
+- (void)playEndAnimationWithInfo:;
+- (void)playStageAnimationWithUrl:offsetY:;
+- (void)playStageAtmosphereAnimationWithUrl:;
+- (void)setAtmosphereAnimationView:;
+- (void)setCurrentStage:;
+- (void)setOwnerScore:;
+- (void)setStageAnimationView:;
+- (id)stageAnimationView;
+- (void)trackFinishLevel;
+- (BOOL)isSetup;
+- (void)clear;
+- (void)setup;
+- (void).cxx_destruct;
+- (void)setIsSetup:;
+- (unsigned long long)currentStage;
+@end

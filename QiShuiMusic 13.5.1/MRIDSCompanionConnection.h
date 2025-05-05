@@ -1,0 +1,35 @@
+@interface MRIDSCompanionConnection : NSObject
+@property (nonatomic) IDSDevice device;
+@property (nonatomic) MRDeviceInfo deviceInfo;
+@property (nonatomic) BOOL isConnected;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)service:devicesChanged:;
+- (id)init;
+- (id)deviceInfo;
+- (void)setDevice:;
+- (void)service:account:incomingMessage:fromID:context:;
+- (void)resetConnection;
+- (void)service:connectedDevicesChanged:;
+- (void).cxx_destruct;
+- (BOOL)isConnected;
+- (id)description;
+- (id)name;
+- (id)device;
+- (void)initializeService;
+- (id)deviceDebugName;
+- (BOOL)_sendMessage:type:destination:session:options:priority:replyID:response:;
+- (BOOL)sendMessage:type:destination:session:options:priority:response:;
+- (BOOL)sendMessage:type:destination:session:options:priority:;
+- (void)setMessageHandler:forType:;
+- (void)setMessageHandler:forType:destination:session:;
+- (void)removeMessageHandlerForType:;
+- (void)removeMessageHandlerForType:destination:session:;
+- (void)handleDidReceiveResetConnectionRequest;
+- (void)_maybeDeviceConnectionStatusChanged;
+- (unsigned long long)_generateMessageID;
+- (id)_configurationFromDestination:session:;
++ (id)sharedManager;
+@end

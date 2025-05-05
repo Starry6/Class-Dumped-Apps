@@ -1,0 +1,35 @@
+@interface AWDLTrafficRegistrationConfiguration : NSObject
+@property (nonatomic) NSString localization;
+@property (nonatomic) BOOL activeFlagOverride;
+@property (nonatomic) NSString uniqueIdentifier;
+@property (nonatomic) WiFiMACAddress peerAddress;
+@property (nonatomic) q options;
+@property (nonatomic) S preferredChannel;
+@property (nonatomic) S secondaryPreferredChannel;
+- (void)setOptions:;
+- (id)peerAddress;
+- (void)setUniqueIdentifier:;
+- (BOOL)activeFlagOverride;
+- (id)localization;
+- (id)uniqueIdentifier;
+- (id)initWithCoder:;
+- (id)initWithUniqueIdentifier:peerAddress:;
+- (unsigned long long)hash;
+- (unsigned short)secondaryPreferredChannel;
+- (void)encodeWithCoder:;
+- (id)initWithDictionary:isActive:;
+- (void)setSecondaryPreferredChannel:;
+- (long long)options;
+- (void).cxx_destruct;
+- (unsigned short)preferredChannel;
+- (BOOL)hasSimilarOptionsTo:;
+- (id)initWithUniqueIdentifier:peerIPv6Address:;
+- (void)setPeerAddress:;
+- (void)setActiveFlagOverride:;
+- (id)description;
+- (void)setPreferredChannel:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
++ (BOOL)supportsSecureCoding;
++ (id)localizedErrorForConflictBetweenExistingService:withNewService:localDeviceName:localization:;
+@end

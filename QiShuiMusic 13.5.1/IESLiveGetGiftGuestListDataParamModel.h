@@ -1,0 +1,2 @@
+@interface IESLiveGetGiftGuestListDataParamModel : IESLiveBridgeModel
+@end

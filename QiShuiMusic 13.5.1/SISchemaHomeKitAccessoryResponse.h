@@ -1,0 +1,33 @@
+@interface SISchemaHomeKitAccessoryResponse : SISchemaInstrumentationMessage
+@property (nonatomic) NSInteger homeKitAccessoryType;
+@property (nonatomic) BOOL hasHomeKitAccessoryType;
+@property (nonatomic) NSInteger numAccessoriesCompleted;
+@property (nonatomic) BOOL hasNumAccessoriesCompleted;
+@property (nonatomic) NSInteger numAccessoriesNotCompleted;
+@property (nonatomic) BOOL hasNumAccessoriesNotCompleted;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)setHomeKitAccessoryType:;
+- (BOOL)hasHomeKitAccessoryType;
+- (void)setHasHomeKitAccessoryType:;
+- (void)deleteHomeKitAccessoryType;
+- (int)homeKitAccessoryType;
+- (void)setNumAccessoriesCompleted:;
+- (BOOL)hasNumAccessoriesCompleted;
+- (void)setHasNumAccessoriesCompleted:;
+- (void)deleteNumAccessoriesCompleted;
+- (void)setNumAccessoriesNotCompleted:;
+- (BOOL)hasNumAccessoriesNotCompleted;
+- (void)setHasNumAccessoriesNotCompleted:;
+- (void)deleteNumAccessoriesNotCompleted;
+- (int)numAccessoriesCompleted;
+- (int)numAccessoriesNotCompleted;
+@end

@@ -1,0 +1,33 @@
+@interface PLPhotoEffect : NSObject
+@property (nonatomic) NSString filterIdentifier;
+@property (nonatomic) NSString relatedVersionIdentifier;
+@property (nonatomic) NSString displayName;
+@property (nonatomic) NSString CIFilterName;
+@property (nonatomic) q latestVersion;
+@property (nonatomic) q lightingVersion;
+@property (nonatomic) BOOL isPortrait;
+@property (nonatomic) BOOL isLegacy;
+- (BOOL)isPortrait;
+- (BOOL)isLegacy;
+- (id)displayName;
+- (long long)latestVersion;
+- (void).cxx_destruct;
+- (id)description;
+- (id)newEffectFilter;
+- (id)filterIdentifier;
+- (id)relatedVersionIdentifier;
+- (id)CIFilterName;
+- (long long)lightingVersion;
++ (id)_legacyEffectWithIdentifier:CIFilterName:;
++ (id)_effectWithIdentifier:CIFilterName:displayName:;
++ (id)_lightingEffectWithIdentifier:relatedVersionIdentifier:CIFilterName:lightingVersion:;
++ (id)allEffects;
++ (id)standardSupportedEffects;
++ (id)allSupportedEffects;
++ (BOOL)isEffectNoneForIdentifier:;
++ (BOOL)isEffectWithIdentifier:equalToEffectWithIdentifier:;
++ (unsigned long long)_indexOfEffectWithIdentifier:;
++ (id)effectWithIdentifier:;
++ (id)effectWithCIFilterName:;
++ (id)equivalentEffectForIdentifier:version:;
+@end

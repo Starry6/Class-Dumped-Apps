@@ -1,0 +1,23 @@
+@interface APSPerAppTokenMap : NSObject
+- (id)init;
+- (BOOL)isEmpty;
+- (id)topics;
+- (id)debugDescription;
+- (void).cxx_destruct;
+- (id)description;
+- (void)enumerateTokensUsingBlock:;
+- (void)removeIdentifier:forTopic:;
+- (void)setToken:forTopic:identifier:;
+- (void)setToken:forInfo:;
+- (void)removeAllTokens;
+- (id)tokenForTopic:identifier:;
+- (id)infoForTopic:identifier:;
+- (BOOL)flagForTopic:identifier:;
+- (void)setFlag:forTopic:identifier:;
+- (id)allPerAppTokens;
+- (id)tokensForTopic:;
+- (BOOL)hasMissingTokens;
+- (id)identifiersForTopic:;
+- (void)enumerateMissingTokensUsingBlock:;
+- (void)enumerateTokensWithInfoUsingBlock:;
+@end

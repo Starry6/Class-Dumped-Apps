@@ -1,0 +1,34 @@
+@interface BDARVideoLynxBridgeModule : BDARVLynxBridgeModule
+@property (nonatomic) BOOL supportsHaptics;
+@property (nonatomic) CHHapticEngine engine;
+@property (nonatomic) <CHHapticPatternPlayer> hapticPlayer;
+- (void)nextRewardVideo;
+- (void)changeRewardVideo;
+- (void)changeRewardVideoWithInfo:;
+- (void)copyToClipboard:callback:;
+- (id)createPattern:;
+- (void)didChooseAd:successCallback:;
+- (void)endImpression:;
+- (void)fetch:successCallback:failCallback:;
+- (id)getAskToStayTitle:;
+- (id)initWithParam:;
+- (void)nextRewardInfoResolve:reject:;
+- (void)openFeedbackPanel:callback:;
+- (void)resolveActionWithParams:payloadData:;
+- (void)setSupportsHaptics:;
+- (void)setupHaptic;
+- (void)setupStatusBarWithHidden:;
+- (void)startHaptic:;
+- (void)startImpression:;
+- (void)vibrate:;
+- (id)engine;
+- (void)setEngine:;
+- (id)hapticPlayer;
+- (void)showStatusBar;
+- (void).cxx_destruct;
+- (void)setHapticPlayer:;
+- (void)hideStatusBar;
+- (BOOL)supportsHaptics;
+- (void)notifyStatus:;
++ (id)methodLookup;
+@end

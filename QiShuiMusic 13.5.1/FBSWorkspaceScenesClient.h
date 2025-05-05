@@ -1,0 +1,37 @@
+@interface FBSWorkspaceScenesClient : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSObject<NSCopying> identifier;
+- (id)hostProcess;
+- (id)scenes;
+- (id)_reportedSceneWithIdentity:;
+- (id)init;
+- (id)sceneID:sendMessage:completion:;
+- (id)callOutQueue;
+- (void)scene:didReceiveActions:;
+- (BOOL)canHaveAgent;
+- (void)scene:didUpdateClientSettings:withDiff:transitionContext:;
+- (id)_queue_connectedSceneWithIdentity:;
+- (void)_configureReceivedActions:forScene:;
+- (void)_queue_invalidateScene:withTransitionContext:completion:;
+- (id)identifier;
+- (id)_remoteTarget;
+- (id)reconnectSceneWithIdentity:parameters:transitionContext:completion:;
+- (id)sceneID:destroyWithTransitionContext:completion:;
+- (id)sceneID:sendActions:;
+- (id)initWithEndpoint:queue:calloutQueue:workspace:;
+- (void).cxx_destruct;
+- (void)_queue_updateScene:withSettings:diff:transitionContext:completion:;
+- (id)sendActions:completion:;
+- (id)sceneWithIdentity:;
+- (void)queue_activate;
+- (void)scene:sendMessage:withResponse:;
+- (void)_queue_sendHandshake;
+- (void)requestSceneWithOptions:completion:;
+- (id)sceneID:updateWithSettingsDiff:transitionContext:completion:;
+- (id)willTerminateWithTransitionContext:;
+- (id)createSceneWithIdentity:parameters:transitionContext:completion:;
++ (id)serviceQuality;
+@end

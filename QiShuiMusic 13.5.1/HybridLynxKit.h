@@ -1,0 +1,33 @@
+@interface HybridLynxKit : NSObject
+@property (nonatomic) NSHashTable createdViews;
+@property (nonatomic) NSDictionary sdkMonitorConfig;
+@property (nonatomic) HMDTTMonitor sdkMonitor;
+@property (nonatomic) NSMutableArray devtoolDelegates;
+@property (nonatomic) <HybridLynxDevtoolProtocol> defaultDevtoolDelegate;
+- (void)initLogObserver;
+- (void)addDevtoolDelegate:;
+- (void)broadcaseEventToLepus:withParams:;
+- (void)broadcastEvent:withParams:;
+- (id)createViewWithFrame:;
+- (id)createViewWithFrame:context:;
+- (id)createViewWithFrame:params:;
+- (id)createdViews;
+- (id)defaultDevtoolDelegate;
+- (id)devtoolDelegates;
+- (BOOL)enableLynxDevtool:withOptions:;
+- (void)enableSDKMonitorWithDeviceID:channel:;
+- (void)initLynxKit;
+- (void)prefetchResourceWithURLs:;
+- (id)sdkMonitor;
+- (id)sdkMonitorConfig;
+- (void)setCreatedViews:;
+- (void)setDefaultDevtoolDelegate:;
+- (void)setDevtoolDelegates:;
+- (void)setSdkMonitor:;
+- (void)setSdkMonitorConfig:;
+- (void).cxx_destruct;
++ (void)broadcaseEventToLepus:withParams:;
++ (void)broadcastEvent:withParams:;
++ (void)onLocaleChanged:;
++ (id)sharedInstance;
+@end

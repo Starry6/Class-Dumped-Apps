@@ -1,0 +1,38 @@
+@interface IESLiveSaaSGameBottomMessageFragment : IESLiveRoomComponent
+@property (nonatomic) IESLiveSaaSGameBottomMessageStore store;
+@property (nonatomic) IESLiveSaaSPushMessageView pushMessageView;
+@property (nonatomic) <HTSLiveSaaSGameBottomMessageAction> dispatcher;
+@property (nonatomic) <HTSLiveSaaSPushMessageActions> pushMessageActionsCreator;
+@property (nonatomic) q orientation;
+@property (nonatomic) <HTSLiveSaaSMessageListActions> messageListActionCreator;
+@property (nonatomic) HTSEventContext trackContext;
+@property (nonatomic) BOOL shouldHide;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)showGameSpecialMessageWithNode:;
+- (id)pushMessageView;
+- (void)componentOrientationChanged:;
+- (id)messageListActionCreator;
+- (id)pushMessageActionsCreator;
+- (void)pushMessageView:didClickWithPushMessage:;
+- (void)setMessageListActionCreator:;
+- (void)setPushMessageActionsCreator:;
+- (void)setPushMessageView:;
+- (BOOL)shouldUsePotraitLikeStyle;
+- (BOOL)shouldUseSideStyle;
+- (void)showGameMessageWithMessage:;
+- (void)setDispatcher:;
+- (id)dispatcher;
+- (void)setStore:;
+- (id)initWithStore:;
+- (long long)orientation;
+- (void).cxx_destruct;
+- (id)store;
+- (void)setOrientation:;
+- (BOOL)shouldHide;
+- (void)setShouldHide:;
++ (id)componentWithRoom:trackContext:componentContext:;
++ (long long)preferredLoadPhase;
+@end

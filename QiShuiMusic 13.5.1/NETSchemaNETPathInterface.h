@@ -1,0 +1,34 @@
+@interface NETSchemaNETPathInterface : SISchemaInstrumentationMessage
+@property (nonatomic) NSInteger type;
+@property (nonatomic) BOOL hasType;
+@property (nonatomic) NSString name;
+@property (nonatomic) BOOL hasName;
+@property (nonatomic) I index;
+@property (nonatomic) BOOL hasIndex;
+@property (nonatomic) NSData jsonData;
+- (void)setName:;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (BOOL)hasName;
+- (id)initWithDictionary:;
+- (void)setType:;
+- (void)writeTo:;
+- (void)setHasType:;
+- (BOOL)hasType;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (unsigned int)index;
+- (void)deleteType;
+- (int)type;
+- (void)setIndex:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)name;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)setHasIndex:;
+- (BOOL)hasIndex;
+- (void)setHasName:;
+- (void)deleteName;
+- (void)deleteIndex;
+@end

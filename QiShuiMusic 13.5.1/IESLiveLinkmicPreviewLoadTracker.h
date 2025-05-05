@@ -1,0 +1,36 @@
+@interface IESLiveLinkmicPreviewLoadTracker : NSObject
+@property (nonatomic) double createTime;
+@property (nonatomic) NSDate feedDisplayTime;
+@property (nonatomic) NSDate videoFirstFrameDisplayTime;
+@property (nonatomic) double wrdsTime;
+@property (nonatomic) @ wrdsMessage;
+@property (nonatomic) double defaultVideoTime;
+@property (nonatomic) BOOL defaultVideoLoaded;
+@property (nonatomic) double videoTime;
+@property (nonatomic) BOOL videoLoaded;
+- (id)feedDisplayTime;
+- (void)setVideoLoaded:;
+- (void)setWrdsMessage:;
+- (void)startLoadVideo:;
+- (BOOL)defaultVideoLoaded;
+- (double)defaultVideoTime;
+- (void)didReceivedWRDSMesssge:;
+- (void)ktvStageWillDisplay;
+- (void)setDefaultVideoLoaded:;
+- (void)setDefaultVideoTime:;
+- (void)setFeedDisplayTime:;
+- (void)setVideoFirstFrameDisplayTime:;
+- (void)setVideoTime:;
+- (void)setWrdsTime:;
+- (void)startLoadKTVStage;
+- (id)videoFirstFrameDisplayTime;
+- (BOOL)videoLoaded;
+- (void)videoReadyToDisPlay:;
+- (double)videoTime;
+- (id)wrdsMessage;
+- (double)wrdsTime;
+- (id)init;
+- (double)createTime;
+- (void).cxx_destruct;
+- (void)setCreateTime:;
+@end

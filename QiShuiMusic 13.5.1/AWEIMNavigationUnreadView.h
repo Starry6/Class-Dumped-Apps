@@ -1,0 +1,30 @@
+@interface AWEIMNavigationUnreadView : UIView
+@property (nonatomic) UIButton backButton;
+@property (nonatomic) UIView unreadCountView;
+@property (nonatomic) CAShapeLayer dotLayer;
+@property (nonatomic) UILabel dotLabel;
+@property (nonatomic) {CGPoint=dd} unreadViewLocation;
+@property (nonatomic) <AWEIMNavigationUnreadViewDelegate> delegate;
+- (id)unreadCountView;
+- (id)dotLabel;
+- (void)iesim_saas_messageUnreadCountDidChanged:;
+- (void)p_addObserver;
+- (void)p_appear;
+- (void)p_disappear;
+- (void)p_setupUI;
+- (void)p_updateUI;
+- (void)setDotLabel:;
+- (void)setDotLayer:;
+- (void)setUnreadCountView:;
+- (void)setUnreadViewLocation:;
+- (id)unreadViewLocation;
+- (void)dealloc;
+- (void)setDelegate:;
+- (id)backButton;
+- (id)initWithFrame:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setBackButton:;
+- (void)updateWithCount:;
+- (id)dotLayer;
+@end

@@ -1,0 +1,35 @@
+@interface SMTSchemaSMTAppLanguageModelBuildStarted : SISchemaInstrumentationMessage
+@property (nonatomic) Q artifactSizeInBytes;
+@property (nonatomic) BOOL hasArtifactSizeInBytes;
+@property (nonatomic) NSString appBundleId;
+@property (nonatomic) BOOL hasAppBundleId;
+@property (nonatomic) NSInteger locale;
+@property (nonatomic) BOOL hasLocale;
+@property (nonatomic) NSData jsonData;
+- (void)setLocale:;
+- (void)setAppBundleId:;
+- (BOOL)hasLocale;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)appBundleId;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (int)locale;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)hasAppBundleId;
+- (BOOL)isEqual:;
+- (void)deleteAppBundleId;
+- (void)setHasAppBundleId:;
+- (void)deleteLocale;
+- (void)setHasLocale:;
+- (void)setArtifactSizeInBytes:;
+- (BOOL)hasArtifactSizeInBytes;
+- (void)setHasArtifactSizeInBytes:;
+- (void)deleteArtifactSizeInBytes;
+- (unsigned long long)artifactSizeInBytes;
+@end

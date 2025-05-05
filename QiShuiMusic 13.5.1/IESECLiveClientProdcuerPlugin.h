@@ -1,0 +1,30 @@
+@interface IESECLiveClientProdcuerPlugin : NSObject
+@property (nonatomic) IESECLiveContext liveContext;
+@property (nonatomic) NSMutableArray customEventList;
+@property (nonatomic) NSMutableArray timerPool;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setLiveContext:;
+- (id)customEventList;
+- (void)checkCustomEventListIfNeed;
+- (void)configCustomListBySetting;
+- (id)consumedEventsSet;
+- (void)destroyPlugin;
+- (BOOL)dispatchInBackgroundThread;
+- (id)generateWatchDurationEventWithTime:originName:;
+- (void)handleLiveDurationProducer:;
+- (id)initPluginWithLiveContext:;
+- (id)initWithLiveContext:;
+- (id)liveContext;
+- (void)p_disptachEvent:;
+- (void)p_removeTimer;
+- (void)queryHistoryLiveDurationWithSampleRange:completion:;
+- (void)receive:;
+- (void)setCustomEventList:;
+- (void)setTimerPool:;
+- (id)timerPool;
+- (void)dealloc;
+- (void).cxx_destruct;
+@end

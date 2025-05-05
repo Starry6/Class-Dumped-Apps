@@ -1,0 +1,2 @@
+@interface HTSLiveFansclubMessageRoot : GPBRootObject
+@end

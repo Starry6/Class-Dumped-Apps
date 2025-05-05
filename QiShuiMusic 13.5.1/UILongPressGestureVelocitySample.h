@@ -1,0 +1,2 @@
+@interface UILongPressGestureVelocitySample : NSObject
+@end

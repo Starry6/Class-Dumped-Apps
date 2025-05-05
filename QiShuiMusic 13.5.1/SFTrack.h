@@ -1,0 +1,35 @@
+@interface SFTrack : NSObject
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString number;
+@property (nonatomic) NSString duration;
+@property (nonatomic) BOOL highlighted;
+@property (nonatomic) NSURL preview;
+@property (nonatomic) SFActionItem playAction;
+@property (nonatomic) NSDictionary dictionaryRepresentation;
+@property (nonatomic) NSData jsonData;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)number;
+- (id)initWithProtobuf:;
+- (void)setPreview:;
+- (void)setTitle:;
+- (id)initWithCoder:;
+- (id)jsonData;
+- (void)setDuration:;
+- (void)setNumber:;
+- (BOOL)highlighted;
+- (void)encodeWithCoder:;
+- (id)title;
+- (void).cxx_destruct;
+- (void)setHighlighted:;
+- (id)preview;
+- (id)dictionaryRepresentation;
+- (id)duration;
+- (id)copyWithZone:;
+- (void)setPlayAction:;
+- (id)playAction;
+- (BOOL)hasHighlighted;
++ (BOOL)supportsSecureCoding;
+@end

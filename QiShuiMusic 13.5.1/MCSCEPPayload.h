@@ -1,0 +1,34 @@
+@interface MCSCEPPayload : MCCertificatePayload
+@property (nonatomic) NSString URLString;
+@property (nonatomic) NSString CAInstanceName;
+@property (nonatomic) NSData CAFingerprint;
+@property (nonatomic) NSArray CACaps;
+@property (nonatomic) NSString challenge;
+@property (nonatomic) NSArray subject;
+@property (nonatomic) Q keySize;
+@property (nonatomic) NSInteger usageFlags;
+@property (nonatomic) NSDictionary subjectAltName;
+@property (nonatomic) Q retries;
+@property (nonatomic) Q retryDelay;
+- (id)subject;
+- (id)URLString;
+- (unsigned long long)keySize;
+- (BOOL)isRoot;
+- (unsigned long long)retryDelay;
+- (int)usageFlags;
+- (void).cxx_destruct;
+- (id)verboseDescription;
+- (id)challenge;
+- (unsigned long long)retries;
+- (BOOL)isIdentity;
+- (id)initWithDictionary:profile:outError:;
+- (id)stubDictionary;
+- (id)payloadDescriptionKeyValueSections;
+- (id)subjectAltName;
+- (id)CAInstanceName;
+- (id)CAFingerprint;
+- (id)CACaps;
++ (id)typeStrings;
++ (id)localizedPluralForm;
++ (id)localizedSingularForm;
+@end

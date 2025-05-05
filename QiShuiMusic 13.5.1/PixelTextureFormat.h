@@ -1,0 +1,31 @@
+@interface PixelTextureFormat : NSObject
+@property (nonatomic) I pixelBufferFormat;
+@property (nonatomic) Q texture1Format;
+@property (nonatomic) Q texture2Format;
+@property (nonatomic) Q texture3Format;
+@property (nonatomic) NSInteger planeCount;
+- (unsigned long long)getTexFomat:;
+- (id)initWithPixelBufferFormat:texFmt:;
+- (id)initWithPixelBufferFormat:texFmt:secTexFmt:;
+- (id)initWithPixelBufferFormat:texFmt:secTexFmt:thirdTexFmt:;
+- (void)setPlaneCount:;
+- (void)setTexture1Format:;
+- (void)setTexture2Format:;
+- (void)setTexture3Format:;
+- (unsigned long long)texture1Format;
+- (unsigned long long)texture2Format;
+- (unsigned long long)texture3Format;
+- (int)planeCount;
+- (unsigned int)pixelBufferFormat;
+- (void)setPixelBufferFormat:;
++ (id)getPixelBufferFormatFor8bitI420;
++ (id)getPixelBufferFormatFor10bitRGB;
++ (id)getPixelBufferFormatFor10bitNV12;
++ (id)getPixelBufferFormatFor10bitNV12FullRange;
++ (id)getPixelBufferFormatFor64RGBAHalf;
++ (id)getPixelBufferFormatFor8bitI420FullRange;
++ (id)getPixelBufferFormatForDefaultNV12;
++ (id)getPixelBufferFormatForDefaultRGB;
++ (id)getPixelBufferFormatForNV12FullRange;
++ (id)getPixelBufferFormatFromCVPixelFormat:;
+@end

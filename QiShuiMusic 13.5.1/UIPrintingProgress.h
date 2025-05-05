@@ -1,0 +1,35 @@
+@interface UIPrintingProgress : NSObject
+@property (nonatomic) NSString title;
+@property (nonatomic) BOOL creatingPDF;
+@property (nonatomic) double lastPageUpdate;
+@property (nonatomic) double progressAlertDelay;
+@property (nonatomic) UIWindowScene hostingWindowScene;
+@property (nonatomic) UIWindow progressAlertWindow;
+- (void)setPrintInfoState:;
+- (id)hostingWindowScene;
+- (id)title;
+- (void).cxx_destruct;
+- (void)setHostingWindowScene:;
+- (void)endProgress;
+- (void)hideProgressAnimated:;
+- (BOOL)progressVisible;
+- (id)initWithPrinterName:forceDisplayAsAlert:hostingWindowScene:cancelHandler:;
+- (id)initPDFCreationWithHostingWindowScene:cancelHandler:;
+- (void)_presentProgressAlert;
+- (void)_mainQueue_presentProgressAlert;
+- (void)showProgress:immediately:;
+- (void)_mainQueue_showProgress:immediately:;
+- (void)_mainQueue_hideProgressAnimated:;
+- (void)progressCancel;
+- (void)_mainQueue_endProgress;
+- (void)setPage:ofPage:;
+- (double)nextPrintDelay;
+- (BOOL)creatingPDF;
+- (void)setCreatingPDF:;
+- (double)lastPageUpdate;
+- (void)setLastPageUpdate:;
+- (double)progressAlertDelay;
+- (void)setProgressAlertDelay:;
+- (id)progressAlertWindow;
+- (void)setProgressAlertWindow:;
+@end

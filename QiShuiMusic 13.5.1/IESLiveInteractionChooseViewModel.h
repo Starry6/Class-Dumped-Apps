@@ -1,0 +1,35 @@
+@interface IESLiveInteractionChooseViewModel : NSObject
+@property (nonatomic) <IESLiveAudienceInteractiveSettingsAction> audienceInteractiveSettingsAction;
+@property (nonatomic) NSString title;
+@property (nonatomic) Q type;
+@property (nonatomic) NSArray items;
+@property (nonatomic) NSInteger selectedIndex;
+@property (nonatomic) Q currentScene;
+@property (nonatomic) @? succeedToUpdate;
+@property (nonatomic) @? onItemSelected;
+@property (nonatomic) NSMutableArray authorityItems;
+@property (nonatomic) BOOL isOnlyJoinThroughInvitation;
+- (void)setIsOnlyJoinThroughInvitation:;
+- (id)succeedToUpdate;
+- (id)audienceInteractiveSettingsAction;
+- (id)authorityItems;
+- (void)didClickItem:completion:;
+- (BOOL)isOnlyJoinThroughInvitation;
+- (id)onItemSelected;
+- (void)setAudienceInteractiveSettingsAction:;
+- (void)setAuthorityItems:;
+- (void)setCurrentScene:;
+- (void)setOnItemSelected:;
+- (void)setSucceedToUpdate:;
+- (void)updateWithAuthoritySettings:;
+- (id)items;
+- (int)selectedIndex;
+- (void)setType:;
+- (unsigned long long)currentScene;
+- (void)setTitle:;
+- (void)setItems:;
+- (unsigned long long)type;
+- (id)title;
+- (void).cxx_destruct;
+- (void)setSelectedIndex:;
+@end

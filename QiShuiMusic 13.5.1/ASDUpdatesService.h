@@ -1,0 +1,36 @@
+@interface ASDUpdatesService : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)reloadFromServer;
+- (id)init;
+- (void)dealloc;
+- (BOOL)hasEntitlement;
+- (void)reloadFromServerWithCompletionBlock:;
+- (void).cxx_destruct;
+- (void)requestAutomaticUpdateAuthorizationIfNecessaryForProcessHandle:completion:;
+- (BOOL)autoUpdateEnabled;
+- (BOOL)confirmAgentRequestedUpdateAll;
+- (void)getManagedUpdatesWithCompletionBlock:;
+- (void)getUpdatesWithCompletionBlock:;
+- (void)refreshUpdateCountWithCompletionBlock:;
+- (void)refreshUpdatesWithCompletionBlock:completionBlock:;
+- (void)reloadManagedUpdatesWithCompletionBlock:;
+- (void)setAutoUpdateEnabled:;
+- (void)updateAllWithOrder:completionBlock:;
+- (void)reloadFromServerInBackgroundWithCompletionBlock:;
+- (void)shouldUseModernUpdatesWithCompletionBlock:;
+- (void)getMetricsWithCompletionBlock:;
+- (void)getUpdatesIncludingMetricsWithCompletionBlock:;
+- (void)hideApplicationBadgeForPendingUpdates;
+- (void)reloadForSettingsFromServerWithCompletionBlock:;
+- (void)showApplicationBadgeForPendingUpdates;
+- (void)updateAllWithCompletionBlock:;
+- (void)updateAllWithJobResultsCompletionBlock:;
++ (id)interface;
++ (id)registerBadgeCountNotificationBlock:;
++ (BOOL)isAutomaticUpdateAuthorizationEnabled;
++ (BOOL)isAutomaticUpdateAuthorizationRequiredWhenEnabledForAppWithRecord:;
++ (id)defaultService;
+@end

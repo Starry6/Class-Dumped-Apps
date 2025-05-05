@@ -1,0 +1,37 @@
+@interface AWENetTaskManager : NSObject
+@property (nonatomic) BOOL dispatchStarted;
+@property (nonatomic) BOOL allBootStageFinished;
+@property (nonatomic) AWENetTaskConfig config;
+@property (nonatomic) AWENetTaskSparseExecutor feedReadyExecutor;
+@property (nonatomic) AWENetTaskSparseExecutor sparseExecutor;
+@property (nonatomic) AWENetTaskSparseExecutor idleExecutor;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)dispatchStarted;
+- (BOOL)taskExistNamed:;
+- (BOOL)allBootStageFinished;
+- (id)dequeueTaskNamed:;
+- (void)executeImmediatelyTaskNamed:;
+- (id)feedReadyExecutor;
+- (id)idleExecutor;
+- (void)setAllBootStageFinished:;
+- (void)setDispatchStarted:;
+- (void)setFeedReadyExecutor:;
+- (void)setIdleExecutor:;
+- (void)setSparseExecutor:;
+- (id)sparseExecutor;
+- (void)startFeedReady;
+- (void)startIdle;
+- (void)startSparse;
+- (void)startSparseAfterSeconds:;
+- (void)taskExecutorDidFinishAllTask:;
+- (id)init;
+- (void)enqueue:;
+- (void)setConfig:;
+- (void).cxx_destruct;
+- (id)config;
++ (void)startWithConfig:;
++ (id)sharedInstance;
+@end

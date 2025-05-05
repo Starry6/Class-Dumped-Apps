@@ -1,0 +1,35 @@
+@interface IESLiveSaaSChatGuideTransformFragment : IESLiveRoomComponent
+@property (nonatomic) <IESLiveSaaSChatGuideItemService> itemDispatcher;
+@property (nonatomic) NSArray itemSettingArray;
+@property (nonatomic) BOOL isShowingGuide;
+@property (nonatomic) IESLiveSaaSMessageHandler messageHandler;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)allowShowGuideWithPosition:;
+- (void)componentDidMount;
+- (void)componentDidUnmount;
+- (id)configWithPosition:;
+- (void)didSetAttachingDIContext;
+- (void)dispatchShowEventForPosition:;
+- (void)guideShowFinishWithPosition:;
+- (BOOL)isShowingGuide;
+- (id)itemDispatcher;
+- (id)itemSettingArray;
+- (BOOL)limitAllowShowForPosition:;
+- (id)loadControlMessageHandler;
+- (id)matchConfig:recResults:;
+- (id)needUseIntentRecTypes;
+- (void)recordClickWithPosition:;
+- (void)setIsShowingGuide:;
+- (void)setItemDispatcher:;
+- (void)setItemSettingArray:;
+- (id)settingConfigArray;
+- (id)messageHandler;
+- (void).cxx_destruct;
+- (id)store;
+- (void)setMessageHandler:;
+- (void)messageReceived:;
++ (id)componentWithRoom:trackContext:componentContext:;
+@end

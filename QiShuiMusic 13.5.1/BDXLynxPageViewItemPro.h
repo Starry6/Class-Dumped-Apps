@@ -1,0 +1,33 @@
+@interface BDXLynxPageViewItemPro : LynxUI
+@property (nonatomic) NSString tag;
+@property (nonatomic) @? scrollCallback;
+@property (nonatomic) BDXPageBaseView nestedPageView;
+@property (nonatomic) <BDXPageItemViewProTagDelegate> tagDelegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setTagDelegate:;
+- (void)layoutDidFinished;
+- (id)listScrollView;
+- (void)listViewDidScrollCallback:;
+- (void)listWillMoveToWindow;
+- (id)nestedPageView;
+- (id)scrollCallback;
+- (void)setNestedPageView:;
+- (void)setScrollCallback:;
+- (void)setupScrollView:;
+- (void)tag:requestReset:;
+- (id)tagDelegate;
+- (void)traverseAllSubviews:;
+- (id)tag;
+- (void)dealloc;
+- (void)scrollViewDidScroll:;
+- (id)listView;
+- (void)setTag:;
+- (void).cxx_destruct;
+- (void)insertChild:atIndex:;
+- (id)createView;
++ (id)__lynx_prop_config__1191;
++ (void)lynxLazyLoad;
+@end

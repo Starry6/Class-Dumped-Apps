@@ -1,0 +1,31 @@
+@interface PHMomentChangeRequest : PHChangeRequest
+@property (nonatomic) float aggregationScore;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString subtitle;
+@property (nonatomic) NSArray localizedLocationNames;
+@property (nonatomic) BOOL mutated;
+@property (nonatomic) NSString managedEntityName;
+@property (nonatomic) NSManagedObjectID objectID;
+@property (nonatomic) BOOL clientEntitled;
+@property (nonatomic) NSString clientName;
+@property (nonatomic) q accessScopeOptionsRequirement;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)managedEntityName;
+- (void)setSubtitle:;
+- (void)setTitle:;
+- (id)title;
+- (id)subtitle;
+- (id)localizedLocationNames;
+- (id)initWithUUID:objectID:;
+- (void)encodeToXPCDict:;
+- (id)initWithXPCDict:request:clientAuthorization:;
+- (BOOL)allowMutationToManagedObject:propertyKey:error:;
+- (BOOL)applyMutationsToManagedObject:photoLibrary:error:;
+- (float)aggregationScore;
+- (void)setAggregationScore:;
+- (void)setLocalizedLocationNames:;
++ (id)changeRequestForMoment:;
+@end

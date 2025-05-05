@@ -1,0 +1,30 @@
+@interface IESLiveMultiUserScenarioMonitorPerfContext : NSObject
+@property (nonatomic) <IESLivePerfSampler> perfSampler;
+@property (nonatomic) <IESLiveNetworkQualityInfoService> networkQualityService;
+@property (nonatomic) Q currentPerfWarningLevel;
+@property (nonatomic) NSDictionary sampleDataTypes;
+@property (nonatomic) IESLiveGCDTimer sampleTimer;
+@property (nonatomic) NSMutableDictionary latestPerfData;
+@property (nonatomic) NSObject<OS_dispatch_queue> sampleQueue;
+@property (nonatomic) NSString sampleFormattedTime;
+- (id)sampleDataTypes;
+- (void)setPerfSampler:;
+- (void)setSampleQueue:;
+- (void)setSampleTimer:;
+- (id)buildPerformanceData;
+- (unsigned long long)currentPerfWarningLevel;
+- (void)didSetAttachingDIContext;
+- (id)initWithDIContext:;
+- (id)latestPerfData;
+- (id)networkQualityService;
+- (id)perfSampler;
+- (id)sampleFormattedTime;
+- (id)sampleQueue;
+- (id)sampleTimer;
+- (void)setCurrentPerfWarningLevel:;
+- (void)setLatestPerfData:;
+- (void)setNetworkQualityService:;
+- (void)setSampleFormattedTime:;
+- (void)dealloc;
+- (void).cxx_destruct;
+@end

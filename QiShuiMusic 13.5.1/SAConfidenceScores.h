@@ -1,0 +1,37 @@
+@interface SAConfidenceScores : SABaseCommand
+@property (nonatomic) NSString assetVersion;
+@property (nonatomic) NSString classifiedUser;
+@property (nonatomic) q lowScoreThreshold;
+@property (nonatomic) q processedAudioDurationMilliseconds;
+@property (nonatomic) NSArray scores;
+@property (nonatomic) NSNumber scoringSchemeVersion;
+@property (nonatomic) NSString thresholdType;
+@property (nonatomic) NSString userIdentityClassification;
+@property (nonatomic) NSString aceId;
+@property (nonatomic) NSString refId;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)groupIdentifier;
+- (BOOL)requiresResponse;
+- (id)scores;
+- (void)setAssetVersion:;
+- (id)encodedClassName;
+- (id)assetVersion;
+- (void)setScores:;
+- (id)userIdentityClassification;
+- (long long)lowScoreThreshold;
+- (void)setUserIdentityClassification:;
+- (void)setLowScoreThreshold:;
+- (id)classifiedUser;
+- (void)setClassifiedUser:;
+- (long long)processedAudioDurationMilliseconds;
+- (void)setProcessedAudioDurationMilliseconds:;
+- (id)scoringSchemeVersion;
+- (void)setScoringSchemeVersion:;
+- (id)thresholdType;
+- (void)setThresholdType:;
++ (id)confidenceScores;
++ (id)confidenceScoresWithDictionary:context:;
+@end

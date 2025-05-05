@@ -1,0 +1,2 @@
+@interface VisualIntelligence.VisualIntelligenceModelProviderService : _TtCs12_SwiftObject
+@end

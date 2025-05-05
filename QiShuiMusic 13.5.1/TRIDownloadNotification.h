@@ -1,0 +1,30 @@
+@interface TRIDownloadNotification : NSObject
+@property (nonatomic) Q type;
+@property (nonatomic) Q progress;
+@property (nonatomic) Q progressMaxValue;
+@property (nonatomic) NSError error;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)error;
+- (unsigned long long)progressMaxValue;
+- (unsigned long long)progress;
+- (id)initWithType:progress:error:;
+- (unsigned long long)type;
+- (void).cxx_destruct;
++ (BOOL)_notifyDownloadUpdateForKey:withState:;
++ (id)_dispatchQueue;
++ (id)immediateDownloadNotificationKeyForNamespaceNames:;
++ (id)notificationNameForKey:;
++ (id)_descriptionForErrorCode:;
++ (void)deregisterNotificationWithToken:;
++ (id)_notificationWithState:;
++ (BOOL)notifyDownloadProgressForKey:withProgress:;
++ (BOOL)_errorIsInsufficientDiskSpaceCloudKitError:;
++ (BOOL)notifyDownloadStalledForKey:withProgress:;
++ (BOOL)notifyDownloadFailedForKey:withCloudKitError:;
++ (id)registerDownloadNotificationForKey:queue:usingBlock:;
++ (BOOL)notifyDownloadCompletedForKey:;
++ (BOOL)notifyDownloadFailedForKey:withError:;
+@end

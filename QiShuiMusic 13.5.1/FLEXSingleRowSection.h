@@ -1,0 +1,32 @@
+@interface FLEXSingleRowSection : FLEXTableViewSection
+@property (nonatomic) NSString reuseIdentifier;
+@property (nonatomic) @? cellConfiguration;
+@property (nonatomic) NSString lastTitle;
+@property (nonatomic) NSString lastSubitle;
+@property (nonatomic) UIViewController pushOnSelection;
+@property (nonatomic) @? selectionAction;
+@property (nonatomic) @? filterMatcher;
+- (id)initWithTitle:reuse:cell:;
+- (long long)numberOfRows;
+- (BOOL)canSelectRow:;
+- (id)didSelectRowAction:;
+- (id)viewControllerToPushForRow:;
+- (id)reuseIdentifierForRow:;
+- (void)configureCell:forRow:;
+- (id)titleForRow:;
+- (id)subtitleForRow:;
+- (id)pushOnSelection;
+- (void)setPushOnSelection:;
+- (id)selectionAction;
+- (void)setSelectionAction:;
+- (id)filterMatcher;
+- (void)setFilterMatcher:;
+- (id)reuseIdentifier;
+- (id)cellConfiguration;
+- (id)lastTitle;
+- (void)setLastTitle:;
+- (id)lastSubitle;
+- (void)setLastSubitle:;
+- (void).cxx_destruct;
++ (id)title:reuse:cell:;
+@end

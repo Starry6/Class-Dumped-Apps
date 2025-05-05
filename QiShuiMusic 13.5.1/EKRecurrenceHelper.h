@@ -1,0 +1,36 @@
+@interface EKRecurrenceHelper : NSObject
+@property (nonatomic) BOOL isDirty;
+@property (nonatomic) NSString specifier;
+@property (nonatomic) NSArray daysOfTheWeek;
+@property (nonatomic) NSArray daysOfTheMonth;
+@property (nonatomic) NSArray daysOfTheYear;
+@property (nonatomic) NSArray weeksOfTheYear;
+@property (nonatomic) NSArray monthsOfTheYear;
+@property (nonatomic) NSArray setPositions;
+- (BOOL)isDirty;
+- (void)setSpecifier:;
+- (id)specifier;
+- (void).cxx_destruct;
+- (id)initWithSpecifier:;
+- (BOOL)isEqual:;
+- (id)daysOfTheWeek;
+- (void)setDaysOfTheWeek:;
+- (id)daysOfTheMonth;
+- (void)setDaysOfTheMonth:;
+- (id)daysOfTheYear;
+- (void)setDaysOfTheYear:;
+- (id)weeksOfTheYear;
+- (void)setWeeksOfTheYear:;
+- (id)monthsOfTheYear;
+- (void)setMonthsOfTheYear:;
+- (id)setPositions;
+- (void)setSetPositions:;
+- (void)revert;
+- (void)_clearArrays;
+- (void)_updateSpecifier;
+- (void)_parseSpecifierIfNeeded;
+- (void)_appendDaysOfTheWeek:toSpecifier:;
+- (void)_appendIndexList:toSpecifier:propertyKey:;
+- (id)_parseDaysOfWeek:range:;
+- (id)_parseIndexList:range:;
+@end

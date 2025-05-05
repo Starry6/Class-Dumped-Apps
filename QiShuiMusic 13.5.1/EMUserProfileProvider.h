@@ -1,0 +1,38 @@
+@interface EMUserProfileProvider : NSObject
+@property (nonatomic) NSDictionary cache;
+@property (nonatomic) NSMutableArray knownToBeMyEmail;
+@property (nonatomic) NSMutableArray knownToNotBeMyEmail;
+@property (nonatomic) CNContactStore contactStore;
+@property (nonatomic) BOOL hasAccountsConfigured;
+@property (nonatomic) NSSet allEmailAddresses;
+@property (nonatomic) NSSet accountsEmailAddresses;
+@property (nonatomic) NSSet contactEmailAddresses;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setContactStore:;
+- (id)init;
+- (id)contact;
+- (void)_contactsChanged:;
+- (void)setCache:;
+- (void).cxx_destruct;
+- (id)contactStore;
+- (void)_accountsChanged:;
+- (id)allEmailAddresses;
+- (id)cache;
+- (id)contactEmailAddresses;
+- (id)_contactEmailAddresses;
+- (id)contactWithKeysToFetch:;
+- (BOOL)isMyEmailAddressContainedInAddressList:;
+- (id)accountsEmailAddresses;
+- (BOOL)_isMyEmailAddressContainedInAddressStrings:;
+- (void)refreshCachedValues;
+- (void)waitForOutstandingCacheRefreshes;
+- (id)_accountsEmailAddresses;
+- (BOOL)hasAccountConfigured;
+- (id)knownToBeMyEmail;
+- (id)knownToNotBeMyEmail;
+- (BOOL)hasAccountsConfigured;
++ (BOOL)doesAddressList:containAddressInSet:;
+@end

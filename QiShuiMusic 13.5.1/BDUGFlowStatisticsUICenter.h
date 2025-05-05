@@ -1,0 +1,27 @@
+@interface BDUGFlowStatisticsUICenter : NSObject
+- (id)continuePlayButtonStyle;
+- (id)continuePlayButtonTitle;
+- (id)flowReminderColor;
+- (id)flowReminderTitle;
+- (id)getContinuePlayButtonStyle;
+- (id)getContinuePlayButtonTitle;
+- (id)getFlowReminderColor;
+- (id)getFlowReminderTitle;
+- (id)getFreeFlowToastMsgTitle;
+- (id)getLocalFlowToastMsgModel;
+- (id)getOrderButtonStyle;
+- (id)getOrderButtonTitle;
+- (id)normalFreeFlowTitle;
+- (id)orderButtonStyle;
+- (id)orderButtonTitle;
+- (void)setContinuePlayButtonStyle:;
+- (void)setContinuePlayButtonTitle:;
+- (void)setFlowReminderColor:;
+- (void)setFlowReminderTitle:;
+- (void)setFlowUIWithModel:;
+- (void)setFreeFlowToastMsgTitle:;
+- (void)setOrderButtonStyle:;
+- (void)setOrderButtonTitle:;
+- (id)usedUpFreeFlowTitle;
+- (id)willUseUpFreeFlowTitle;
+@end

@@ -1,0 +1,37 @@
+@interface AVAssetWriterInputWritingHelper : AVAssetWriterInputHelper
+@property (nonatomic) AVFigAssetWriterTrack assetWriterTrack;
+@property (nonatomic) AVAssetWriterInputPassDescription currentPassDescription;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)canPerformMultiplePasses;
+- (void)addCallbackToCancelDuringDeallocation:;
+- (void)dealloc;
+- (id)currentPassDescription;
+- (void)declareKeyPathDependenciesWithRegistry:;
+- (BOOL)isReadyForMoreMediaData;
+- (void)setCurrentPassDescription:;
+- (void)markCurrentPassAsFinished;
+- (void)observeValueForKeyPath:ofObject:change:context:;
+- (void)requestMediaDataWhenReadyOnQueue:usingBlock:;
+- (BOOL)prepareToFinishWritingReturningError:;
+- (void)beginPassIfAppropriate;
+- (id)pixelBufferPool;
+- (void)stopRequestingMediaData;
+- (void)_stopObservingReadyForMoreMediaDataKeyPath;
+- (void)didStartInitialSession;
+- (id)transitionToAndReturnTerminalHelperWithTerminalStatus:;
+- (void)_nudgeMediaDataRequesterIfAppropriate:;
+- (void)markAsFinished;
+- (void)_startObservingReadyForMoreMediaDataKeyPath;
+- (id)_assetWriterTrack;
+- (BOOL)mediaDataRequesterShouldRequestMediaData;
+- (long long)appendSampleBuffer:error:;
+- (BOOL)appendPixelBuffer:withPresentationTime:;
+- (long long)status;
+- (id)initWithConfigurationState:;
+- (void)markAsFinishedAndTransitionCurrentHelper:;
+- (void)prepareToEndSession;
+- (id)initWithConfigurationState:assetWriterTrack:error:;
+@end

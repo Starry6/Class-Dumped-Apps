@@ -1,0 +1,23 @@
+@interface CUIThemeGradient : NSObject
+- (id)fillColor;
+- (void)dealloc;
+- (BOOL)isDithered;
+- (int)blendMode;
+- (id)colorStops;
+- (id)opacityStops;
+- (double)smoothingCoefficient;
+- (void)drawInRect:angle:;
+- (id)interpolatedColorAtLocation:;
+- (id)_initWithGradientEvaluator:colorSpace:;
+- (id)initWithColors:colorlocations:colorMidpoints:opacities:opacityLocations:opacityMidpoints:smoothingCoefficient:fillColor:colorSpace:;
+- (id)initWithColors:colorlocations:colorMidpoints:opacities:opacityLocations:opacityMidpoints:smoothingCoefficient:fillColor:colorSpace:dither:;
+- (id)gradientByApplyingEffects:;
+- (id)colorLocations;
+- (id)opacityLocations;
+- (void)drawInRect:angle:withContext:;
+- (void)drawInRect:angle:options:withContext:;
+- (void)drawRadialGradientInRect:relativeCenterPosition:withContext:;
+- (void)drawAngleGradientInRect:relativeCenterPosition:withContext:;
+- (void)drawFromPoint:toPoint:options:withContext:;
+- (id)_createRadialGradientImageWithWidth:height:;
+@end

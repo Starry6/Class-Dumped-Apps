@@ -1,0 +1,38 @@
+@interface IESLivePKBlockListViewCell : UITableViewCell
+@property (nonatomic) UIImageView avatarView;
+@property (nonatomic) UIImageView avatarDecorateView;
+@property (nonatomic) UIView livingAnimationView;
+@property (nonatomic) UILabel nicknameLabel;
+@property (nonatomic) UILabel removeTimeLabel;
+@property (nonatomic) UIImageView genderView;
+@property (nonatomic) UIButton removeButton;
+@property (nonatomic) UIView separatorLine;
+@property (nonatomic) q blockType;
+@property (nonatomic) @? removeBlock;
+- (void)setRemoveBlock:;
+- (void)addSubviews;
+- (id)avatarDecorateView;
+- (void)didClickRemoveButton;
+- (id)genderView;
+- (id)livingAnimationView;
+- (id)removeBlock;
+- (void)setAvatarDecorateView:;
+- (void)setBlockType:;
+- (void)setGenderView:;
+- (void)setLivingAnimationView:;
+- (void)setRemoveTimeLabel:;
+- (id)initWithStyle:reuseIdentifier:;
+- (id)avatarView;
+- (void)setAvatarView:;
+- (void)updateWithItem:;
+- (void)prepareForReuse;
+- (void).cxx_destruct;
+- (id)nicknameLabel;
+- (void)setNicknameLabel:;
+- (id)separatorLine;
+- (void)setSeparatorLine:;
+- (id)removeTimeLabel;
+- (id)removeButton;
+- (void)setRemoveButton:;
+- (long long)blockType;
+@end

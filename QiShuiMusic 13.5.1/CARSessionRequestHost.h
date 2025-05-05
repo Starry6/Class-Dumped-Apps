@@ -1,0 +1,35 @@
+@interface CARSessionRequestHost : NSObject
+@property (nonatomic) NSString displayName;
+@property (nonatomic) NSArray wiredIPv6Addresses;
+@property (nonatomic) NSArray wirelessIPv6Addresses;
+@property (nonatomic) q port;
+@property (nonatomic) NSString carplayWiFiUUID;
+@property (nonatomic) NSString deviceIdentifier;
+@property (nonatomic) NSString publicKey;
+@property (nonatomic) NSString sourceVersion;
+@property (nonatomic) BOOL wiredCarPlaySimulator;
+- (void)setDeviceIdentifier:;
+- (id)deviceIdentifier;
+- (id)publicKey;
+- (void)setPublicKey:;
+- (long long)port;
+- (void)setPort:;
+- (id)initWithCoder:;
+- (void)setDisplayName:;
+- (id)displayName;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)sourceVersion;
+- (void)setSourceVersion:;
+- (id)initWithHostProperties:;
+- (id)wiredIPv6Addresses;
+- (void)setWiredIPv6Addresses:;
+- (id)wirelessIPv6Addresses;
+- (void)setWirelessIPv6Addresses:;
+- (id)carplayWiFiUUID;
+- (void)setCarplayWiFiUUID:;
+- (BOOL)isWiredCarPlaySimulator;
+- (void)setWiredCarPlaySimulator:;
++ (BOOL)supportsSecureCoding;
+@end

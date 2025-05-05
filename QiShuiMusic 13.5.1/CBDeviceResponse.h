@@ -1,0 +1,34 @@
+@interface CBDeviceResponse : NSObject
+@property (nonatomic) S connectionHandle;
+@property (nonatomic) c core0TargetPower;
+@property (nonatomic) c core1TargetPower;
+@property (nonatomic) c currentPCAP;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) c rssi;
+@property (nonatomic) I sniffInterval;
+@property (nonatomic) c txPower;
+@property (nonatomic) c txPowerMax;
+- (void)setConnectionHandle:;
+- (void)encodeWithXPCObject:;
+- (char)rssi;
+- (id)descriptionWithLevel:;
+- (unsigned short)connectionHandle;
+- (id)identifier;
+- (id)initWithXPCObject:error:;
+- (void)setRssi:;
+- (void).cxx_destruct;
+- (id)description;
+- (void)setIdentifier:;
+- (char)core0TargetPower;
+- (void)setCore0TargetPower:;
+- (char)core1TargetPower;
+- (void)setCore1TargetPower:;
+- (char)currentPCAP;
+- (void)setCurrentPCAP:;
+- (unsigned int)sniffInterval;
+- (void)setSniffInterval:;
+- (char)txPower;
+- (void)setTxPower:;
+- (char)txPowerMax;
+- (void)setTxPowerMax:;
+@end

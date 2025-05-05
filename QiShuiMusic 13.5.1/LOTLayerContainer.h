@@ -1,0 +1,33 @@
+@interface LOTLayerContainer : CALayer
+@property (nonatomic) NSString layerName;
+@property (nonatomic) NSNumber currentFrame;
+@property (nonatomic) NSNumber timeStretchFactor;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} viewportBounds;
+@property (nonatomic) CALayer wrapperLayer;
+@property (nonatomic) NSDictionary valueInterpolators;
+@property (nonatomic) BOOL asyncLoadingResource;
+@property (nonatomic) @? asyncLoadingCallback;
+- (void)_setImageForAsset:;
+- (id)asyncLoadingCallback;
+- (BOOL)asyncLoadingResource;
+- (void)buildContents:;
+- (void)commonInitializeWith:inLayerGroup:;
+- (void)displayWithFrame:;
+- (void)displayWithFrame:forceUpdate:;
+- (id)initWithModel:inLayerGroup:;
+- (void)searchNodesForKeypath:;
+- (void)setAsyncLoadingCallback:;
+- (void)setAsyncLoadingResource:;
+- (void)setValueDelegate:forKeypath:;
+- (void)setViewportBounds:;
+- (id)timeStretchFactor;
+- (id)valueInterpolators;
+- (id)wrapperLayer;
+- (id)actionForKey:;
+- (id)viewportBounds;
+- (void)display;
+- (id)initWithLayer:;
+- (id)layerName;
+- (void).cxx_destruct;
++ (BOOL)needsDisplayForKey:;
+@end

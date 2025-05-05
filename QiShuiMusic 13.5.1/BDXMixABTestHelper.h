@@ -1,0 +1,35 @@
+@interface BDXMixABTestHelper : NSObject
+@property (nonatomic) NSDictionary hostOriginData;
+@property (nonatomic) BOOL useNewContainer;
+@property (nonatomic) NSArray routerBlockList;
+@property (nonatomic) NSArray routerAllowList;
+@property (nonatomic) BOOL enableLiveSchemaRefactor;
+@property (nonatomic) BOOL enableAnnieXLiveNotificationObserve;
+@property (nonatomic) BOOL shouldPreloadNewPiperHandler;
+@property (nonatomic) BOOL enableAnnieXLiveBusinessType;
+@property (nonatomic) BOOL enableAnnieXLiveUpdateLiveContextToModel;
+@property (nonatomic) BOOL shouldPreloadLegacyPiperHandler;
+- (id)routerAllowList;
+- (BOOL)shouldPreloadLegacyPiperHandler;
+- (BOOL)useNewContainer;
+- (id)routerBlockList;
+- (BOOL)enableAnnieXLiveBusinessType;
+- (BOOL)enableAnnieXLiveNotificationObserve;
+- (BOOL)enableAnnieXLiveUpdateLiveContextToModel;
+- (BOOL)enableLiveSchemaRefactor;
+- (id)hostOriginData;
+- (void)setEnableAnnieXLiveBusinessType:;
+- (void)setEnableAnnieXLiveNotificationObserve:;
+- (void)setEnableAnnieXLiveUpdateLiveContextToModel:;
+- (void)setEnableLiveSchemaRefactor:;
+- (void)setHostOriginData:;
+- (void)setRouterAllowList:;
+- (void)setRouterBlockList:;
+- (void)setShouldPreloadLegacyPiperHandler:;
+- (void)setShouldPreloadNewPiperHandler:;
+- (void)setUseNewContainer:;
+- (BOOL)shouldPreloadNewPiperHandler;
+- (void)updateOriginData:;
+- (void).cxx_destruct;
++ (id)shareInstance;
+@end

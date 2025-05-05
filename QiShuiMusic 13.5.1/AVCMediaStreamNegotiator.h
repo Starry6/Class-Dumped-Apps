@@ -1,0 +1,35 @@
+@interface AVCMediaStreamNegotiator : NSObject
+@property (nonatomic) NSData offer;
+@property (nonatomic) NSData answer;
+- (id)offer;
+- (void)dealloc;
+- (id)supportedPixelFormats;
+- (id)answer;
+- (BOOL)setAnswer:withError:;
+- (id)generateMediaStreamConfigurationWithError:;
+- (id)initWithMode:options:error:;
+- (void)refreshLoggingParameters;
+- (unsigned char)VCVideoFeatureListStringTypeWithAVCMediaStreamMode:;
+- (BOOL)initNegotiatorLocalConfiguration:options:;
+- (void)addHDRModeSpecificSettings:;
+- (id)initWithMode:error:;
+- (void)processOffererInitOptions:errorReason:;
+- (BOOL)createOffer;
+- (BOOL)processOfferWithError:errorReason:;
+- (BOOL)processAnswererInitOptions:errorReason:;
+- (id)initWithOffer:error:;
+- (id)initWithOffer:options:error:;
+- (BOOL)createAnswer;
+- (BOOL)processAnswerWithError:errorReason:;
+- (BOOL)setupAudioStreamConfiguration:errorReason:;
+- (BOOL)setupVideoStreamConfiguration:errorReason:;
+- (BOOL)addLocalCallInfoBlobToOutgoingDictionary:;
+- (id)generateMediaStreamInitOptionsWithError:;
+- (unsigned int)pickBestPixelFormatFromSet:;
+- (unsigned int)pickBestPixelFormatFromSet:preferenceList:count:acceptDefault:;
+- (void)pickBestHDRMode:;
++ (int)AVConferenceOperatingModeWithAVCMediaStreamMode:;
++ (long long)AVCVideoStreamModeWithAVCMediaStreamMode:;
++ (long long)audioStreamModeWithMediaStreamMode:;
++ (long long)clientCodecTypeWithCodecType:;
+@end

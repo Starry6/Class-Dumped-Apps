@@ -1,0 +1,30 @@
+@interface SIVisualLogger : NSObject
+@property (nonatomic) ^{VZLogger=} internalVisualLoggerRef;
+@property (nonatomic) NSSet registeredSubloggers;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (void)logAndReleaseError:;
+- (void)enableLogger:;
+- (void)_disableAllLogs;
+- (BOOL)isLoggerEnabled:;
+- (BOOL)startLoggingToFile:;
+- (BOOL)startLoggingToFile:synchronously:;
+- (BOOL)_stopLoggingToFile;
+- (BOOL)startLoggingToHost:;
+- (BOOL)_stopLoggingToHost;
+- (BOOL)stopAndDisableLogging;
+- (id)createDataInfoAt:name:;
+- (BOOL)logPixelBuffer:at:sublogger:name:;
+- (BOOL)logIOSurface:at:sublogger:name:;
+- (BOOL)logDictionary:at:sublogger:name:;
+- (BOOL)logBinaryData:at:sublogger:name:;
+- (id)_arrayOfNumbersToData:valueType:;
+- (BOOL)logNumbers:at:sublogger:name:;
+- (id)internalVisualLoggerRef;
+- (id)registeredSubloggers;
++ (id)sharedLogger;
++ (id)frameworkPrefix;
++ (id)_registerSubloggers;
++ (id)defaultLogPath;
+@end

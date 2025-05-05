@@ -1,0 +1,36 @@
+@interface IESGLAudioWriter : IESMMObject
+@property (nonatomic) VEAudioEncodeConfig audioSettings;
+@property (nonatomic) double progressStartTime;
+@property (nonatomic) double progressTotalTime;
+@property (nonatomic) double progressCurrentTime;
+@property (nonatomic) BOOL isAudioReady;
+@property (nonatomic) BOOL shouldInvalidateAudioSampleWhenDone;
+@property (nonatomic) @? failureBlock;
+@property (nonatomic) <IESGLAudioWriterDelegate> delegate;
+- (void)finishRecordingWithCompletionHandler:;
+- (double)getProgress;
+- (id)initWithAudioURL:fileType:audioSettings:;
+- (void)initializeAudioWithOutputSettings;
+- (BOOL)isAudioReady;
+- (void)processAudioBuffer:;
+- (double)progressCurrentTime;
+- (double)progressStartTime;
+- (double)progressTotalTime;
+- (void)setAllowWriteAudio:;
+- (void)setIsAudioReady:;
+- (void)setProgressCurrentTime:;
+- (void)setProgressStartTime:;
+- (void)setProgressTotalTime:;
+- (void)setShouldInvalidateAudioSampleWhenDone:;
+- (BOOL)shouldInvalidateAudioSampleWhenDone;
+- (void)setDelegate:;
+- (id)failureBlock;
+- (void)setFailureBlock:;
+- (id)delegate;
+- (void)startRecording;
+- (void).cxx_destruct;
+- (void)setAudioSettings:;
+- (id)audioSettings;
+- (void)cancelRecording;
+- (void)finishRecording;
+@end

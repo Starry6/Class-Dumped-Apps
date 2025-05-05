@@ -1,0 +1,30 @@
+@interface NSConcreteHashTable : NSHashTable
+- (void)removeItem:;
+- (id)init;
+- (void)dealloc;
+- (void)rehash;
+- (id)initWithOptions:capacity:;
+- (id)copy;
+- (unsigned long long)countByEnumeratingWithState:objects:count:;
+- (void)raiseCountUnderflowException;
+- (id)initWithCoder:;
+- (id)initWithPointerFunctions:capacity:;
+- (unsigned long long)hash;
+- (void)addObject:;
+- (void)insertKnownAbsentItem:;
+- (void)insertItem:;
+- (void)encodeWithCoder:;
+- (void)hashGrow;
+- (void)assign:key:;
+- (void)getKeys:count:;
+- (id)description;
+- (id)objectEnumerator;
+- (void)removeAllItems;
+- (id)allObjects;
+- (unsigned long long)count;
+- (unsigned long long)rehashAround:;
+- (id)getItem:;
+- (BOOL)isEqual:;
+- (id)pointerFunctions;
++ (BOOL)supportsSecureCoding;
+@end

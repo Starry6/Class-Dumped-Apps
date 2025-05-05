@@ -1,0 +1,32 @@
+@interface AWEShareChannel : NSObject
+@property (nonatomic) q type;
+@property (nonatomic) Q option;
+@property (nonatomic) @? shareActionBlock;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSDictionary channelImages;
+@property (nonatomic) UIImage smallImage;
+@property (nonatomic) NSString label;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)channelImages;
+- (id)imageForStyleOption:;
+- (id)initWithType:option:;
+- (void)setChannelImages:;
+- (void)setShareActionBlock:;
+- (id)shareActionBlock;
+- (BOOL)shareWithContext:;
+- (id)init;
+- (void)setType:;
+- (void)setLabel:;
+- (void)setTitle:;
+- (id)label;
+- (long long)type;
+- (id)title;
+- (void).cxx_destruct;
+- (void)setOption:;
+- (id)smallImage;
+- (void)setSmallImage:;
+- (unsigned long long)option;
+@end

@@ -1,0 +1,36 @@
+@interface NSManagedObjectID : NSObject
+@property (nonatomic) # ic_entityClass;
+@property (nonatomic) NSString ic_uriString;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSEntityDescription entity;
+@property (nonatomic) NSPersistentStore persistentStore;
+@property (nonatomic) BOOL temporaryID;
+- (id)pl_shortURI;
+- (BOOL)ic_isEntityOfClass:;
+- (Class)ic_entityClass;
+- (id)ic_uriString;
+- (id)entity;
+- (id)entityName;
+- (BOOL)_isPersistentStoreAlive;
+- (id)URIRepresentation;
+- (BOOL)_isDeallocating;
+- (id)initWithObject:;
+- (id)persistentStore;
+- (id)_retainedURIString;
+- (id)_storeIdentifier;
+- (id)initWithPK64:;
+- (BOOL)_tryRetain;
+- (long long)compare:;
+- (BOOL)isTemporaryID;
+- (long long)_referenceData64;
+- (id)description;
+- (id)copyWithZone:;
+- (id)_referenceData;
+- (BOOL)_preferReferenceData64;
+- (int)_temporaryIDCounter;
++ (BOOL)accessInstanceVariablesDirectly;
++ (long long)version;
+@end

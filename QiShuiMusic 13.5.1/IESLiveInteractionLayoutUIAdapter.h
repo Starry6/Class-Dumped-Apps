@@ -1,0 +1,30 @@
+@interface IESLiveInteractionLayoutUIAdapter : NSObject
+@property (nonatomic) IESLiveInteractionLayoutUIAdapterPreview preview;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} playerContainerFrame;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} guestListContainerFrame;
+@property (nonatomic) double containerTopOffset;
+@property (nonatomic) double uiContainerBottomOffset;
+@property (nonatomic) IESLiveInteractionLayoutCanvasAdapter canvasAdapter;
+@property (nonatomic) BOOL isNeedCleanCache;
+@property (nonatomic) <IESLiveInteractConfigLayoutPreviewInputProtocol> previewInput;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)canvasAdapter;
+- (double)containerTopOffset;
+- (id)guestListContainerFrame;
+- (BOOL)isNeedCleanCache;
+- (id)playerContainerFrame;
+- (id)previewInput;
+- (void)setCanvasAdapter:;
+- (void)setContainerTopOffset:;
+- (void)setGuestListContainerFrame:;
+- (void)setIsNeedCleanCache:;
+- (void)setPlayerContainerFrame:;
+- (void)setUiContainerBottomOffset:;
+- (double)uiContainerBottomOffset;
+- (void)setPreview:;
+- (void).cxx_destruct;
+- (id)preview;
+@end

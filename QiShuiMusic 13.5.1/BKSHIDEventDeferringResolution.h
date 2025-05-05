@@ -1,0 +1,35 @@
+@interface BKSHIDEventDeferringResolution : NSObject
+@property (nonatomic) BKSHIDEventDisplay display;
+@property (nonatomic) BKSHIDEventDeferringEnvironment environment;
+@property (nonatomic) q versionedPID;
+@property (nonatomic) NSInteger pid;
+@property (nonatomic) BKSHIDEventDeferringToken token;
+@property (nonatomic) BOOL isBuffer;
+@property (nonatomic) BKSHIDEventDispatchingTarget dispatchingTarget;
+@property (nonatomic) NSString processDescription;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)modifiedResolution:;
+- (id)init;
+- (id)token;
+- (long long)versionedPID;
+- (id)display;
+- (id)processDescription;
+- (BOOL)isBuffer;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)environment;
+- (void)encodeWithCoder:;
+- (id)dispatchingTarget;
+- (int)pid;
+- (void).cxx_destruct;
+- (id)description;
+- (void)appendDescriptionToFormatter:;
+- (id)mutableCopyWithZone:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
++ (BOOL)supportsSecureCoding;
++ (id)build:;
+@end

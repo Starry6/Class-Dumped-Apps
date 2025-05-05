@@ -1,0 +1,30 @@
+@interface IESIMALMOwnPlayerDelegateWrapper : NSObject
+@property (nonatomic) <IESIMALMOwnPlayerDelegateWrapperDelegate> delegate;
+@property (nonatomic) BOOL playWithURLs;
+@property (nonatomic) q currTryIndex;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)videoEngine:mdlKey:hitCacheSze:;
+- (long long)currTryIndex;
+- (BOOL)playWithURLs;
+- (void)setCurrTryIndex:;
+- (void)setPlayWithURLs:;
+- (void)videoEngine:avOutsyncStateDidChanged:extraInfo:;
+- (void)videoEngine:loadStateDidChanged:extra:;
+- (void)videoEngineCloseAysncFinish:;
+- (void)videoEngineDeviceOpened:streamType:;
+- (void)videoEngineDidFinish:error:;
+- (void)videoEngineDidFinish:videoStatusException:;
+- (void)videoEngineUserStopped:;
+- (BOOL)respondsToSelector:;
+- (void)setDelegate:;
+- (id)methodSignatureForSelector:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)forwardInvocation:;
++ (id)descriptionForSelecctor:inProtocol:;
++ (id)signatureForSelector:inProtocol:;
++ (id)wrapperWithDelegate:playWithURLs:;
+@end

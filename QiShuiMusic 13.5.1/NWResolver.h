@@ -1,0 +1,31 @@
+@interface NWResolver : NSObject
+@property (nonatomic) NSObject<OS_nw_resolver> internalResolver;
+@property (nonatomic) q internalStatus;
+@property (nonatomic) NSSet internalResolvedEndpoints;
+@property (nonatomic) NSArray internalResolvedEndpointArray;
+@property (nonatomic) q status;
+@property (nonatomic) NWEndpoint endpoint;
+@property (nonatomic) NWParameters parameters;
+@property (nonatomic) NSSet resolvedEndpoints;
+@property (nonatomic) NSArray resolvedEndpointArray;
+- (void)dealloc;
+- (long long)internalStatus;
+- (id)parameters;
+- (id)initWithEndpoint:parameters:;
+- (void).cxx_destruct;
+- (void)setInternalStatus:;
+- (id)initWithPath:;
+- (id)endpoint;
+- (long long)status;
+- (void)setUpdateHandler;
+- (id)copyResolvedEndpoints;
+- (id)resolvedEndpoints;
+- (id)copyResolvedEndpointArray;
+- (id)resolvedEndpointArray;
+- (id)internalResolver;
+- (id)internalResolvedEndpoints;
+- (void)setInternalResolvedEndpoints:;
+- (id)internalResolvedEndpointArray;
+- (void)setInternalResolvedEndpointArray:;
++ (BOOL)automaticallyNotifiesObserversForKey:;
+@end

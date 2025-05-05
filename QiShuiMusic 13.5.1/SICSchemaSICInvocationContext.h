@@ -1,0 +1,37 @@
+@interface SICSchemaSICInvocationContext : SISchemaInstrumentationMessage
+@property (nonatomic) SICSchemaSICInvocationStarted startedOrChanged;
+@property (nonatomic) BOOL hasStartedOrChanged;
+@property (nonatomic) SICSchemaSICInvocationEnded ended;
+@property (nonatomic) BOOL hasEnded;
+@property (nonatomic) SICSchemaSICInvocationCancelled cancelled;
+@property (nonatomic) BOOL hasCancelled;
+@property (nonatomic) NSData jsonData;
+@property (nonatomic) Q whichContextevent;
+- (id)cancelled;
+- (void)setCancelled:;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (BOOL)hasEnded;
+- (void)setStartedOrChanged:;
+- (id)startedOrChanged;
+- (id)ended;
+- (void)setEnded:;
+- (void)setHasCancelled:;
+- (BOOL)hasCancelled;
+- (void)setHasEnded:;
+- (void)setHasStartedOrChanged:;
+- (void)deleteStartedOrChanged;
+- (void)deleteEnded;
+- (unsigned long long)whichContextevent;
+- (BOOL)hasStartedOrChanged;
+- (void)deleteCancelled;
+@end

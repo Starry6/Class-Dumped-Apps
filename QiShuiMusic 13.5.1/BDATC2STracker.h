@@ -1,0 +1,34 @@
+@interface BDATC2STracker : NSObject
+@property (nonatomic) NSURLSession uploadSession;
+@property (nonatomic) BDATC2SConfig config;
+@property (nonatomic) BDATCache cache;
+@property (nonatomic) <BDATC2STrackerDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSString trackerNamme;
+- (void)applicationWillResignActiveNotification:;
+- (void)didReceivedNetworkChange:;
+- (void)resumeTrack:;
+- (void)setUploadSession:;
+- (void)setupTracker;
+- (void)trackModel:;
+- (void)trackURL:;
+- (void)trackURL:model:tokens:;
+- (void)trackURLs:;
+- (id)trackerNamme;
+- (void)dealloc;
+- (void)setConfig:;
+- (id)initWithConfig:;
+- (void)setDelegate:;
+- (void)setCache:;
+- (void)URLSession:task:willPerformHTTPRedirection:newRequest:completionHandler:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)cache;
+- (id)config;
+- (void)applicationWillEnterForegroundNotification:;
+- (id)uploadSession;
++ (id)sessionConfiguration:;
+@end

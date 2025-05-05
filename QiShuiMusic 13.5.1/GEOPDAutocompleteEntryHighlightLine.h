@@ -1,0 +1,35 @@
+@interface GEOPDAutocompleteEntryHighlightLine : PBCodable
+@property (nonatomic) BOOL hasLine;
+@property (nonatomic) NSString line;
+@property (nonatomic) NSMutableArray spans;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (id)init;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (id)line;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setLine:;
+- (BOOL)hasLine;
+- (id)spans;
+- (void)setSpans:;
+- (void)clearSpans;
+- (void)addSpan:;
+- (unsigned long long)spansCount;
+- (id)spanAtIndex:;
++ (BOOL)isValid:;
++ (Class)spanType;
+@end

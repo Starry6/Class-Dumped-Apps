@@ -1,0 +1,32 @@
+@interface ZUOAuthManager : NSObject
+@property (nonatomic) NSString AK;
+@property (nonatomic) BOOL ifIgnoreLoginCache;
+@property (nonatomic) BOOL ifIgnoreOauthCache;
+@property (nonatomic) BOOL isDebug;
+@property (nonatomic) NSString ua;
+- (id)AK;
+- (void)clearCULoginCache;
+- (void)clearCUOauthCache;
+- (void)closeLoginCachingStrategy:;
+- (void)closeOauthCachingStrategy:;
+- (BOOL)ifIgnoreLoginCache;
+- (BOOL)ifIgnoreOauthCache;
+- (id)initD;
+- (void)initWithApiKey:withUA:;
+- (void)login:resultListener:;
+- (void)oauth:resultListener:;
+- (void)oauthByModules:resultListener:;
+- (void)requestTimeout:type:resultListener:;
+- (void)setAK:;
+- (void)setIfIgnoreLoginCache:;
+- (void)setIfIgnoreOauthCache:;
+- (void)setUa:;
+- (id)ua;
+- (void)setDebug:;
+- (void).cxx_destruct;
+- (BOOL)isDebug;
+- (void)setIsDebug:;
+- (void)initWithApiKey:;
++ (id)getVersionInfo;
++ (id)getInstance;
+@end

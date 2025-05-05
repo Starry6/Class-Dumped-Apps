@@ -1,0 +1,30 @@
+@interface TVLAbnormalStreamChecker : TVLChecker
+@property (nonatomic) NSDictionary configuration;
+@property (nonatomic) q SEIContinuanceCheckDurationInMillseconds;
+@property (nonatomic) q SEIAvailableCheckDurationInMillseconds;
+@property (nonatomic) q renderingInfoCacheDurationInMillseconds;
+@property (nonatomic) NSMutableArray transInfoQueue;
+@property (nonatomic) NSMutableArray receivedVideoPacketQueue;
+@property (nonatomic) q GOPDurationInMillseconds;
+- (long long)SEIAvailableCheckDurationInMillseconds;
+- (long long)SEIContinuanceCheckDurationInMillseconds;
+- (long long)GOPDurationInMillseconds;
+- (void)appendReceivedPacket:;
+- (void)appendReliableSEI:;
+- (void)appendRenderingInfo:;
+- (void)appendTransInfo:;
+- (void)checkReceivedPacketsWithRenderingInfo:;
+- (void)hasDetectedStreamAbnormalWithEventInfo:;
+- (id)receivedVideoPacketQueue;
+- (void)removeReceivedPacketBeforePTS:include:;
+- (void)removeTransInfoBeforePTS:include:;
+- (long long)renderingInfoCacheDurationInMillseconds;
+- (void)setReceivedVideoPacketQueue:;
+- (void)setTransInfoQueue:;
+- (id)transInfoQueue;
+- (void)setConfiguration:;
+- (id)configuration;
+- (void).cxx_destruct;
+- (id)initWithConfiguration:;
++ (id)checkerWithConfiguration:;
+@end

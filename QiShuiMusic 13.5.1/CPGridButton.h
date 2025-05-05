@@ -1,0 +1,36 @@
+@interface CPGridButton : NSObject
+@property (nonatomic) @? handler;
+@property (nonatomic) CPImageSet imageSet;
+@property (nonatomic) <CPControlDelegate> delegate;
+@property (nonatomic) BOOL enabled;
+@property (nonatomic) UIImage image;
+@property (nonatomic) NSArray titleVariants;
+@property (nonatomic) NSUUID identifier;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setDelegate:;
+- (id)identifier;
+- (void)setHandler:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (id)handler;
+- (id)delegate;
+- (void)setEnabled:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)_init;
+- (void)setIdentifier:;
+- (BOOL)isEqual:;
+- (id)image;
+- (BOOL)isEnabled;
+- (id)titleVariants;
+- (void)handlePrimaryAction;
+- (id)imageSet;
+- (void)setImageSet:;
+- (id)initWithTitleVariants:image:handler:;
+- (BOOL)isEqualToGridButton:;
++ (BOOL)supportsSecureCoding;
+@end

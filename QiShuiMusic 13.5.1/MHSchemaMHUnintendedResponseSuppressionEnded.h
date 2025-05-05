@@ -1,0 +1,34 @@
+@interface MHSchemaMHUnintendedResponseSuppressionEnded : SISchemaInstrumentationMessage
+@property (nonatomic) NSString modelVersion;
+@property (nonatomic) BOOL hasModelVersion;
+@property (nonatomic) float score;
+@property (nonatomic) BOOL hasScore;
+@property (nonatomic) float threshold;
+@property (nonatomic) BOOL hasThreshold;
+@property (nonatomic) NSData jsonData;
+- (float)threshold;
+- (id)modelVersion;
+- (void)setHasModelVersion:;
+- (void)setModelVersion:;
+- (id)initWithJSON:;
+- (float)score;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (BOOL)hasModelVersion;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void)setScore:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (BOOL)hasScore;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)setHasScore:;
+- (void)setThreshold:;
+- (void)deleteModelVersion;
+- (void)deleteScore;
+- (BOOL)hasThreshold;
+- (void)setHasThreshold:;
+- (void)deleteThreshold;
+@end

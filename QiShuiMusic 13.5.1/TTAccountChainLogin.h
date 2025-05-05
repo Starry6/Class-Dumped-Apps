@@ -1,0 +1,33 @@
+@interface TTAccountChainLogin : NSObject
+@property (nonatomic) NSDictionary serviceToStoreMap;
+@property (nonatomic) BOOL isProvider;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)chainLoginUserInfoDictionaryWithProviderAppId:;
+- (id)chainLoginUserInfoModelWithProviderAppId:;
+- (void)clearChainLoginInfo;
+- (void)getAvatarInfoWithProviderAppId:completion:;
+- (void)getUserInfoModelWithProviderAppId:completion:;
+- (void)getUserInfoModelWithProviderConfig:completion:;
+- (BOOL)isProvider;
+- (id)p_getChainLoginInfoWithProviderAppId:serviceName:error:;
+- (void)p_getKeychainInfoWithProviderAppId:serviceName:completion:;
+- (void)p_getKeychainInfoWithProviderConfig:serviceName:completion:;
+- (void)p_safeChainLoginWithLoginParams:useSafeApi:completion:;
+- (void)p_saveChainLoginInfoWithDictionary:serviceName:;
+- (void)safeChainLoginWithProviderAppId:completion:;
+- (void)safeChainLoginWithSecUserId:completion:;
+- (void)safeChainLoginWithSecUserId:useSafeApi:completion:;
+- (void)saveChainLoginUserInfoDictionary:;
+- (void)saveChainLoginUserInfoModel:;
+- (id)serviceToStoreMap;
+- (void)setIsProvider:;
+- (void)setServiceToStoreMap:;
+- (void)setSharedKeyChainAccessGroup:;
+- (id)init;
+- (void).cxx_destruct;
++ (id)appId;
++ (id)sharedInstance;
+@end

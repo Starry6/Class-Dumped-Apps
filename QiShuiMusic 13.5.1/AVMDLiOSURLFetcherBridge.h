@@ -1,0 +1,38 @@
+@interface AVMDLiOSURLFetcherBridge : NSObject
+@property (nonatomic) NSString rawKey;
+@property (nonatomic) NSString fileKey;
+@property (nonatomic) NSString oldURL;
+@property (nonatomic) NSString fetchURLResult;
+@property (nonatomic) C isFinish;
+@property (nonatomic) NSLock lock;
+@property (nonatomic) ^{AVMDLURLFetcherImplement=^^?{mutex={_opaque_pthread_mutex_t=q[56c]}}Bi****^v{condition_variable={_opaque_pthread_cond_t=q[40c]}}i} fetcherImplement;
+@property (nonatomic) <AVMDLiOSURLFetcherInterface> fetcherInterface;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)fileKey;
+- (id)fetchURLResult;
+- (id)fetcherImplement;
+- (id)fetcherInterface;
+- (unsigned char)isFinish;
+- (id)oldURL;
+- (void)onCompletion:rawkey:fileKey:newURLs:;
+- (void)remvSource;
+- (void)setFetchURLResult:;
+- (void)setFetcherImplement:;
+- (void)setFetcherInterface:;
+- (void)setFileKey:;
+- (void)setIsFinish:;
+- (void)setOldURL:;
+- (int)start:fileKey:oldURL:engineId:implement:;
+- (id)init;
+- (void)dealloc;
+- (id)lock;
+- (void).cxx_destruct;
+- (void)setLock:;
+- (void)setRawKey:;
+- (id)rawKey;
++ (id)getFetcherMaker;
++ (void)setFetcherMaker:;
+@end

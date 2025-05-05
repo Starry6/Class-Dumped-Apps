@@ -1,0 +1,2 @@
+@interface WalletQueryOrderApiRoot : GPBRootObject
+@end

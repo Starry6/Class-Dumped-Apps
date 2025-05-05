@@ -1,0 +1,31 @@
+@interface UIKeyboardPopoverContainer : NSObject
+@property (nonatomic) UIView affordance;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} frame;
+- (id)frame;
+- (void).cxx_destruct;
+- (void)invalidate;
+- (id)affordance;
+- (id)initWithView:usingBackdropStyle:;
+- (void)updateBackdropStyle:;
+- (void)applyProperties:;
+- (void)_updateKeyboardLayoutGuideForPopover:;
++ (double)shadowOpacity;
++ (double)shadowRadius;
++ (id)borderColor;
++ (id)contentInsets;
++ (id)pillColor;
++ (id)shadowOffset;
++ (double)borderWidth;
++ (id)frameAtOffset:keyboardSize:screenSize:;
++ (double)arrowHeight;
++ (double)extraWidth;
++ (id)pillSize;
++ (id)shadowColor;
++ (double)cornerRadius;
++ (double)edgeOffset;
++ (double)pillCornerRadius;
++ (double)pillDistanceToEdge;
++ (double)dragAreaHeight;
++ (id)propertiesForTargetRect:withHeight:onScreenSize:;
++ (id)propertiesForSpecificKeyboardFrame:onScreenSize:;
+@end

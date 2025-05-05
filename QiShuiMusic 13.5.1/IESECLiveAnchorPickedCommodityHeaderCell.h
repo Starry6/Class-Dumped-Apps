@@ -1,0 +1,35 @@
+@interface IESECLiveAnchorPickedCommodityHeaderCell : UICollectionViewCell
+@property (nonatomic) UIView valueView;
+@property (nonatomic) UILabel frontLabel;
+@property (nonatomic) UILabel middleLabel;
+@property (nonatomic) UILabel backLabel;
+@property (nonatomic) UILabel nameLabel;
+@property (nonatomic) UIButton descButton;
+@property (nonatomic) NSArray numbers;
+@property (nonatomic) IESECLiveAnchorAuthorStatsItemModel item;
+@property (nonatomic) <IESECLiveAnchorPickedCommodityHeaderCellDelegate> delegate;
+- (id)backLabel;
+- (id)descButton;
+- (void)descClick;
+- (id)frontLabel;
+- (void)setBackLabel:;
+- (void)setDescButton:;
+- (void)setFrontLabel:;
+- (void)setNumbers:;
+- (void)setValueView:;
+- (id)valueText:;
+- (id)item;
+- (void)setDelegate:;
+- (id)initWithFrame:;
+- (void)setItem:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)nameLabel;
+- (void)setNameLabel:;
+- (void)setupUI;
+- (id)valueView;
+- (id)numbers;
+- (id)middleLabel;
+- (void)setMiddleLabel:;
++ (id)identity;
+@end

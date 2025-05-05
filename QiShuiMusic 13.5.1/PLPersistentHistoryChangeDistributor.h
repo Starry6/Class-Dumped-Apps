@@ -1,0 +1,21 @@
+@interface PLPersistentHistoryChangeDistributor : NSObject
+- (void)dealloc;
+- (void)_inq_startObservingRemoteNotifications;
+- (void)forceUserInterfaceReload;
+- (void)startObservingRemoteNotifications;
+- (void)stopObservingRemoteNotifications;
+- (id)fetchTransactionsSinceLastToken;
+- (void)_inq_setLastToken:;
+- (void)beginObservingChanges;
+- (void)distributeNewTransactionsSinceLastToken;
+- (void)endObservingChanges;
+- (void)handleRemoteNotificationOfType:withTransaction:;
+- (id)makeManagedObjectContext;
+- (id)localEventFromTransactions:;
+- (void)_advanceTokenToCurrent;
+- (void).cxx_destruct;
+- (id)initWithPersistentStoreCoordinator:bundle:changeMerger:;
+- (void)_inq_distributeNewTransactionsSinceLastTokenWithReason:xpcTransaction:;
+- (void)invalidate;
+- (void)distributeTransactions:withXPCTransaction:;
+@end

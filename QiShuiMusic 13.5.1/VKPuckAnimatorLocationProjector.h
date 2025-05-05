@@ -1,0 +1,33 @@
+@interface VKPuckAnimatorLocationProjector : NSObject
+@property (nonatomic) GEORouteMatch routeMatch;
+@property (nonatomic) GEORouteMatch projectedRouteMatch;
+@property (nonatomic) {Matrix<double projectedPosition;
+@property (nonatomic) BOOL isProjectedPositionBehind;
+@property (nonatomic) {?=dd} projectedLocation;
+@property (nonatomic) {optional<double>=(?=cd)B} elevationInProjectedPostion;
+@property (nonatomic) double projectedCourse;
+@property (nonatomic) BOOL projectedLocationOnRoute;
+@property (nonatomic) {optional<std::pair<geo::Mercator3<double> currentSnappedSegment;
+@property (nonatomic) BOOL alwaysUseGoodRouteMatch;
+- (id)elevationInProjectedPostion;
+- (id)init;
+- (void)dealloc;
+- (BOOL)alwaysUseGoodRouteMatch;
+- (id)routeMatch;
+- (void)projectFromLocation:routeMatch:speedMultiplier:routeLine:;
+- (double)projectedCourse;
+- (BOOL)isProjectedPositionBehind;
+- (void)setRouteMatch:;
+- (BOOL)projectedLocationOnRoute;
+- (id)projectedPosition;
+- (void).cxx_destruct;
+- (id)projectedLocation;
+- (void)reset;
+- (void)_updateCourseAndPositionFromRouteMatch:;
+- (id)projectedRouteMatch;
+- (id)detailedDescription;
+- (id)currentSnappedSegment;
+- (id).cxx_construct;
+- (void)setAlwaysUseGoodRouteMatch:;
+- (void)setProjectedRouteMatch:;
+@end

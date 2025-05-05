@@ -1,0 +1,2 @@
+@interface BRDownloadAllFilesForLogOutOperation : BRDownloadAndUploadAllFilesForLogOutOperation
+@end

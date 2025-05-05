@@ -1,0 +1,2 @@
+@interface QQApiAuthObject : QQApiObject
+@end

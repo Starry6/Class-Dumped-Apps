@@ -1,0 +1,31 @@
+@interface CSJUgenRatingStarView : UIView
+@property (nonatomic) Q starViewTag;
+@property (nonatomic) Q emptyStarViewTag;
+@property (nonatomic) NSMutableArray starViewArray;
+@property (nonatomic) BOOL isFittingSize;
+@property (nonatomic) double score;
+@property (nonatomic) double starHeight;
+@property (nonatomic) double starWidth;
+- (void)setStarViewTag:;
+- (id)buildImageViewOnStarViewWithImageNamed:rect:;
+- (unsigned long long)emptyStarViewTag;
+- (BOOL)isFittingSize;
+- (void)setEmptyStarViewTag:;
+- (void)setIsFittingSize:;
+- (void)setStarHeight:;
+- (void)setStarViewArray:;
+- (double)starHeight;
+- (id)starViewArray;
+- (unsigned long long)starViewTag;
+- (double)score;
+- (id)intrinsicContentSize;
+- (void)layoutSubviews;
+- (id)initWithFrame:;
+- (id)sizeThatFits:;
+- (void)setScore:;
+- (void).cxx_destruct;
+- (void)render;
+- (double)starWidth;
+- (void)setStarWidth:;
++ (id)sizeForContent:brickType:style:lineFeed:lineLimit:lineCount:;
+@end

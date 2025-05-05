@@ -1,0 +1,38 @@
+@interface MLCPoolingDescriptor : NSObject
+@property (nonatomic) NSInteger poolingType;
+@property (nonatomic) Q kernelWidth;
+@property (nonatomic) Q kernelHeight;
+@property (nonatomic) Q strideInX;
+@property (nonatomic) Q strideInY;
+@property (nonatomic) Q dilationRateInX;
+@property (nonatomic) Q dilationRateInY;
+@property (nonatomic) NSInteger paddingPolicy;
+@property (nonatomic) Q paddingSizeInX;
+@property (nonatomic) Q paddingSizeInY;
+@property (nonatomic) BOOL countIncludesPadding;
+- (unsigned long long)hash;
+- (unsigned long long)kernelHeight;
+- (id)description;
+- (BOOL)isEqual:;
+- (unsigned long long)kernelWidth;
+- (id)copyWithZone:;
+- (unsigned long long)strideInX;
+- (unsigned long long)strideInY;
+- (unsigned long long)dilationRateInX;
+- (unsigned long long)dilationRateInY;
+- (unsigned long long)paddingSizeInX;
+- (unsigned long long)paddingSizeInY;
+- (int)paddingPolicy;
+- (BOOL)countIncludesPadding;
+- (id)initWithType:kernelWidth:kernelHeight:strideInX:strideInY:dilationRateInX:dilationRateInY:paddingPolicy:paddingSizeInX:paddingSizeInY:countIncludesPadding:;
+- (int)poolingType;
++ (id)maxPoolingDescriptorWithKernelSizes:strides:paddingPolicy:paddingSizes:;
++ (id)averagePoolingDescriptorWithKernelSizes:strides:paddingPolicy:paddingSizes:countIncludesPadding:;
++ (id)poolingDescriptorWithType:kernelSize:stride:;
++ (id)poolingDescriptorWithType:kernelSizes:strides:paddingPolicy:paddingSizes:;
++ (id)poolingDescriptorWithType:kernelSizes:strides:dilationRates:paddingPolicy:paddingSizes:;
++ (id)maxPoolingDescriptorWithKernelSizes:strides:dilationRates:paddingPolicy:paddingSizes:;
++ (id)averagePoolingDescriptorWithKernelSizes:strides:dilationRates:paddingPolicy:paddingSizes:countIncludesPadding:;
++ (id)l2NormPoolingDescriptorWithKernelSizes:strides:paddingPolicy:paddingSizes:;
++ (id)l2NormPoolingDescriptorWithKernelSizes:strides:dilationRates:paddingPolicy:paddingSizes:;
+@end

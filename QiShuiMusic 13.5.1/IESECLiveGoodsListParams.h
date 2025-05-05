@@ -1,0 +1,34 @@
+@interface IESECLiveGoodsListParams : NSObject
+@property (nonatomic) NSDictionary rawParams;
+@property (nonatomic) NSDictionary params;
+@property (nonatomic) NSString productID;
+@property (nonatomic) NSString promotionID;
+@property (nonatomic) q autoApplyCouponType;
+@property (nonatomic) NSString couponID;
+@property (nonatomic) NSString relatedInfo;
+@property (nonatomic) NSString couponCategory;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) NSString previewCouponID;
+@property (nonatomic) NSString previewExtraInfo;
+@property (nonatomic) NSString liveListChannel;
+@property (nonatomic) NSString linkMicCardExplainStatus;
+@property (nonatomic) BOOL fromShopCart;
+- (id)liveListChannel;
+- (id)previewCouponID;
+- (long long)autoApplyCouponType;
+- (id)couponCategory;
+- (id)couponID;
+- (id)enterFrom;
+- (BOOL)fromShopCart;
+- (id)linkMicCardExplainStatus;
+- (id)previewExtraInfo;
+- (id)promotionID;
+- (id)rawParams;
+- (id)relatedInfo;
+- (void)setEnterFrom:;
+- (void)setupWithParams:;
+- (id)productID;
+- (id)initWithParams:;
+- (void).cxx_destruct;
+- (id)params;
+@end

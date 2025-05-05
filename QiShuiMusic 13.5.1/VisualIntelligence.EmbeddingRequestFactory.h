@@ -1,0 +1,2 @@
+@interface VisualIntelligence.EmbeddingRequestFactory : VisualIntelligence.DomainModelRequestFactory
+@end

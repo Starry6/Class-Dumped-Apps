@@ -1,0 +1,32 @@
+@interface MJRefreshHeader : MJRefreshComponent
+@property (nonatomic) double insetTDelta;
+@property (nonatomic) NSString lastUpdatedTimeKey;
+@property (nonatomic) NSDate lastUpdatedTime;
+@property (nonatomic) double ignoredScrollViewContentInsetTop;
+@property (nonatomic) BOOL isCollectionViewAnimationBug;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)linkTo:;
+- (void)setInsetTDelta:;
+- (void)headerEndingAction;
+- (void)headerRefreshingAction;
+- (double)ignoredScrollViewContentInsetTop;
+- (double)insetTDelta;
+- (BOOL)isCollectionViewAnimationBug;
+- (id)lastUpdatedTimeKey;
+- (void)placeSubviews;
+- (void)resetInset;
+- (void)scrollViewContentOffsetDidChange:;
+- (void)setIgnoredScrollViewContentInsetTop:;
+- (void)setIsCollectionViewAnimationBug:;
+- (void)setLastUpdatedTimeKey:;
+- (void)setState:;
+- (void)animationDidStop:finished:;
+- (id)lastUpdatedTime;
+- (void)prepare;
+- (void).cxx_destruct;
++ (id)headerWithRefreshingBlock:;
++ (id)headerWithRefreshingTarget:refreshingAction:;
+@end

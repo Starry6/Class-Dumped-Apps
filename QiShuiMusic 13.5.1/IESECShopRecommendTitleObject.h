@@ -1,0 +1,31 @@
+@interface IESECShopRecommendTitleObject : NSObject
+@property (nonatomic) NSString recommendText;
+@property (nonatomic) UIFont font;
+@property (nonatomic) UIColor textColor;
+@property (nonatomic) BOOL showPattern;
+@property (nonatomic) double yOffset;
+@property (nonatomic) IESECTracker tracker;
+@property (nonatomic) NSString showTrack;
+@property (nonatomic) NSDictionary showParams;
+- (void)setShowPattern:;
+- (id)diffIdentifier;
+- (id)edgeForObject;
+- (BOOL)isEqualToDiffableObject:;
+- (BOOL)isShowPattern;
+- (id)recommendText;
+- (void)setRecommendText:;
+- (void)setShowParams:;
+- (void)setShowTrack:;
+- (id)showParams;
+- (id)showTrack;
+- (void)setTracker:;
+- (id)init;
+- (id)tracker;
+- (void)setFont:;
+- (double)yOffset;
+- (void)setTextColor:;
+- (void).cxx_destruct;
+- (id)font;
+- (id)textColor;
+- (void)setYOffset:;
+@end

@@ -1,0 +1,38 @@
+@interface IESGurdResourceManager : NSObject
+@property (nonatomic) IESGurdDefaultNetworkDelegate defaultNetworkDelegate;
+@property (nonatomic) IESGurdNetworkDelegateImpl networkDelegate;
+- (id)defaultNetworkDelegate;
+- (void)setDefaultNetworkDelegate:;
+- (void).cxx_destruct;
+- (id)networkDelegate;
+- (void)setNetworkDelegate:;
++ (void)GETWithURLString:params:completion:;
++ (void)POSTWithURLString:params:completion:;
++ (void)addTTResponseFilterObject:;
++ (void)cancelDownloadWithIdentity:;
++ (BOOL)checkIfServerAvailable;
++ (void)downloadPackageWithDownloadInfoModel:completion:;
++ (void)downloadResources:completion:;
++ (void)fetchConfigWithURLString:multiAccessKeysRequest:;
++ (void)fetchSettingsWithRequest:completion:;
++ (void)gurdDidFetchConfigWithPackagesArray:request:;
++ (void)innerRequestWithMethod:URLString:params:completion:;
++ (BOOL)isPollingEnabled;
++ (BOOL)isRetryEnabled;
++ (id)networkDelegateForDownload;
++ (id)networkDelegateForRequest;
++ (id)packagesArrayWithResponse:request:;
++ (void)realRequestWithMethod:URLString:params:completion:;
++ (void)requestConfigWithURLString:params:completion:;
++ (long long)retryTotalDuration;
++ (void)sendDownloadStats:packageSize:error:;
++ (void)sendQuerySettingsResponse:logInfo:;
++ (void)setPollingEnabled:;
++ (void)setRetryEnabled:;
++ (void)setRetryTotalDuration:;
++ (void)updateServerAvailable:;
++ (id)sharedManager;
++ (void)setRetryCount:;
++ (long long)retryCount;
++ (void)setDebugDelegate:;
+@end

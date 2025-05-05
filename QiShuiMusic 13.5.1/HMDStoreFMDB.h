@@ -1,0 +1,38 @@
+@interface HMDStoreFMDB : NSObject
+@property (nonatomic) HMDBGDB database;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)getObjectsWithTableName:class:andConditions:orConditions:limit:;
+- (BOOL)createTable:withClass:;
+- (unsigned long long)dbFileSize;
+- (BOOL)deleteAllObjectsFromTable:;
+- (BOOL)deleteObjectsFromTable:andConditions:orConditions:;
+- (BOOL)deleteObjectsFromTable:andConditions:orConditions:limit:;
+- (BOOL)deleteObjectsFromTable:limitToMaxSize:;
+- (void)executeCheckpoint;
+- (id)getAllObjectsWithTableName:class:;
+- (id)getObjectsWithTableName:class:andConditions:orConditions:;
+- (id)getObjectsWithTableName:class:andConditions:orConditions:orderingProperty:orderingType:;
+- (id)getOneObjectWithTableName:class:andConditions:orConditions:;
+- (void)immediatelyActiveVacuum;
+- (BOOL)insertObject:into:;
+- (BOOL)insertObjects:into:;
+- (BOOL)isTableExistsForName:;
+- (long long)recordCountForTable:;
+- (long long)recordCountForTable:andConditions:orConditions:;
+- (BOOL)updateRowsInTable:checkIvarChange:onProperty:propertyValue:withObject:andConditions:orConditions:;
+- (BOOL)updateRowsInTable:onProperty:propertyValue:withObject:andConditions:orConditions:;
+- (BOOL)updateRowsInTable:onProperty:propertyValue:withObject:andConditions:orConditions:limit:;
+- (id)rootPath;
+- (void)setDatabase:;
+- (void)inTransaction:;
+- (void).cxx_destruct;
+- (id)initWithPath:;
+- (id)database;
+- (void)closeDB;
+- (BOOL)dropTable:;
+- (void)vacuumIfNeeded;
+- (long long)deleteErrorCode;
+@end

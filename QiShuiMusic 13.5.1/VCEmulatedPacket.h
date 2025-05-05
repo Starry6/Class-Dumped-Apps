@@ -1,0 +1,33 @@
+@interface VCEmulatedPacket : NSObject
+@property (nonatomic) I packetID;
+@property (nonatomic) I size;
+@property (nonatomic) I sequenceNumber;
+@property (nonatomic) double arrivalTime;
+@property (nonatomic) double networkServiceTime;
+@property (nonatomic) double departureTime;
+@property (nonatomic) BOOL isLost;
+@property (nonatomic) BOOL isDroppedByAQM;
+@property (nonatomic) ^v metaData;
+@property (nonatomic) q type;
+- (void)setMetaData:;
+- (void)setType:;
+- (void)setSequenceNumber:;
+- (id)metaData;
+- (long long)type;
+- (unsigned int)sequenceNumber;
+- (void)setSize:;
+- (unsigned int)size;
+- (double)departureTime;
+- (void)setDepartureTime:;
+- (double)arrivalTime;
+- (void)setArrivalTime:;
+- (BOOL)isLost;
+- (id)initWithPacketID:;
+- (id)initWithPacketID:datagram:datagramSize:;
+- (unsigned int)packetID;
+- (double)networkServiceTime;
+- (void)setNetworkServiceTime:;
+- (void)setIsLost:;
+- (BOOL)isDroppedByAQM;
+- (void)setIsDroppedByAQM:;
+@end

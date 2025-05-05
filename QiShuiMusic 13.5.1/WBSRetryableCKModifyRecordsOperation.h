@@ -1,0 +1,32 @@
+@interface WBSRetryableCKModifyRecordsOperation : WBSRetryableCKDatabaseOperation
+@property (nonatomic) NSArray recordsToSave;
+@property (nonatomic) NSArray recordIDsToDelete;
+@property (nonatomic) q savePolicy;
+@property (nonatomic) NSData clientChangeTokenData;
+@property (nonatomic) BOOL atomic;
+@property (nonatomic) @? perRecordProgressBlock;
+@property (nonatomic) @? perRecordSaveBlock;
+@property (nonatomic) @? perRecordDeleteBlock;
+@property (nonatomic) @? modifyRecordsCompletionBlock;
+- (BOOL)atomic;
+- (void)_setUpOperation:;
+- (id)perRecordProgressBlock;
+- (void)setPerRecordDeleteBlock:;
+- (id)perRecordDeleteBlock;
+- (void)setPerRecordSaveBlock:;
+- (void)setSavePolicy:;
+- (void)setRecordIDsToDelete:;
+- (void)setPerRecordProgressBlock:;
+- (id)perRecordSaveBlock;
+- (id)recordsToSave;
+- (id)clientChangeTokenData;
+- (id)_makeOperation;
+- (void)setClientChangeTokenData:;
+- (void)setModifyRecordsCompletionBlock:;
+- (id)recordIDsToDelete;
+- (void)setRecordsToSave:;
+- (long long)savePolicy;
+- (void)setAtomic:;
+- (id)modifyRecordsCompletionBlock;
+- (void).cxx_destruct;
+@end

@@ -1,0 +1,30 @@
+@interface ADAMAudioDataReceiver : NSObject
+@property (nonatomic) BOOL connectionDidInvalidate;
+@property (nonatomic) <ADAMAudioDataReceiverDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)dealloc;
+- (id)setupConnection;
+- (void)setDelegate:;
+- (void)reconnect;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setConnectionDidInvalidate:;
+- (void)reset;
+- (id)initWithIdentifier:;
+- (BOOL)connectionDidInvalidate;
+- (void)startMeasuringAudioSampleType:withConfiguration:;
+- (void)startReceivingAudioSampleType:;
+- (void)startReceivingAudioSampleType:withCallback:;
+- (BOOL)isMeasurementOnForAudioSampleType:;
+- (void)configureAudioSampleType:configuration:;
+- (void)stopMeasuringAudioSampleType:;
+- (void)stopReceivingAudioSampleType:;
+- (void)receiveAudioSample:;
+- (void)receiveAudioSample:type:metadata:;
+- (BOOL)verifyInvariants;
+- (id)getCurrentConfigurationForAudioSampleType:;
+- (void)handleAndLogError:;
+@end

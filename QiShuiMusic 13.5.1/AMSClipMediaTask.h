@@ -1,0 +1,34 @@
+@interface AMSClipMediaTask : AMSTask
+@property (nonatomic) <AMSBagProtocol> bag;
+@property (nonatomic) NSString bundleID;
+@property (nonatomic) NSString clientID;
+@property (nonatomic) AMSProcessInfo clientInfo;
+@property (nonatomic) NSNumber externalVersionID;
+@property (nonatomic) NSURL URL;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setClientInfo:;
+- (id)clientInfo;
+- (void)setClientID:;
+- (void)setBag:;
+- (void).cxx_destruct;
+- (id)bag;
+- (id)clientID;
+- (id)bundleID;
+- (void)setURL:;
+- (id)URL;
+- (id)perform;
+- (void)setBundleID:;
+- (id)initWithClientID:bundleID:URL:bag:;
+- (id)_performJourneysLookup;
+- (id)_performNetworkLookup;
+- (id)_componentsPromise;
+- (id)externalVersionID;
+- (void)setExternalVersionID:;
++ (id)createBagForSubProfile;
++ (id)bagSubProfileVersion;
++ (id)bagSubProfile;
++ (id)bagKeySet;
+@end

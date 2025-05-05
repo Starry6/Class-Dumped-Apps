@@ -1,0 +1,32 @@
+@interface PTYTTNetManager : NSObject
+@property (nonatomic) BOOL reportFilterDur;
+@property (nonatomic) NSLock taskLock;
+@property (nonatomic) NSMapTable downloadTasks;
+@property (nonatomic) NSDictionary rsHostPathMap;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)storeTask:task:;
+- (BOOL)reportFilterDur;
+- (void)cancelAllDownload;
+- (void)download:headers:destPath:callback:;
+- (void)initRequestSmugglingWithSetupInfo:;
+- (void)reportRSWithCode:;
+- (void)reportRSWithCode:AndBusiness:AndDuration:;
+- (void)request:method:headers:body:timeout:callback:;
+- (id)responseWithTTResponse:;
+- (id)rsHostPathMap;
+- (void)setReportFilterDur:;
+- (void)setRsHostPathMap:;
+- (void)setTaskLock:;
+- (void)smuggleParamsWithBusiness:Aid:Result:;
+- (id)init;
+- (void).cxx_destruct;
+- (id)taskLock;
+- (id)downloadTasks;
+- (void)setDownloadTasks:;
+- (void)removeTaskForKey:;
++ (id)sharedManager;
++ (void)setup:;
+@end

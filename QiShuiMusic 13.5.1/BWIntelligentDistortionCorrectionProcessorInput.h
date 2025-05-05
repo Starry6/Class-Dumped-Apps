@@ -1,0 +1,32 @@
+@interface BWIntelligentDistortionCorrectionProcessorInput : BWStillImageProcessorControllerInput
+@property (nonatomic) BOOL receivedAllInputs;
+@property (nonatomic) <BWIntelligentDistortionCorrectionProcessorInputDelegate> delegate;
+@property (nonatomic) BOOL processIntelligentDistortionCorrection;
+@property (nonatomic) BOOL processGeometricDistortionCorrection;
+@property (nonatomic) BOOL applyZoom;
+@property (nonatomic) ^{opaqueCMSampleBuffer=} image;
+@property (nonatomic) Q imageBufferType;
+@property (nonatomic) ^{__CVBuffer=} lowResPersonSegmentationMask;
+@property (nonatomic) NSArray faceDetectionObservations;
+- (void)dealloc;
+- (void)setDelegate:;
+- (BOOL)processIntelligentDistortionCorrection;
+- (id)delegate;
+- (id)description;
+- (id)image;
+- (id)initWithSettings:portType:;
+- (void)allInferencesDelivered;
+- (BOOL)receivedAllInputs;
+- (void)addImage:imageBufferType:;
+- (unsigned long long)imageBufferType;
+- (void)addLowResPersonSegmentationMask:;
+- (id)lowResPersonSegmentationMask;
+- (void)addFaceDetectionObservations:;
+- (id)faceDetectionObservations;
+- (void)setProcessIntelligentDistortionCorrection:;
+- (BOOL)processGeometricDistortionCorrection;
+- (void)setProcessGeometricDistortionCorrection:;
+- (BOOL)applyZoom;
+- (void)setApplyZoom:;
+- (void)setReceivedAllInputs:;
+@end

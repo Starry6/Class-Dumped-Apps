@@ -1,0 +1,31 @@
+@interface VKAnnotationTrackingCameraController : VKCameraController
+@property (nonatomic) {?=BdBB} behavior;
+@property (nonatomic) q headingAnimationDisplayRate;
+@property (nonatomic) BOOL hasUserSpecifiedZoomLevel;
+@property (nonatomic) BOOL shouldForceZoomToFit;
+@property (nonatomic) <VKTrackableAnnotation> annotation;
+@property (nonatomic) BOOL trackingHeading;
+- (id)annotation;
+- (void)setGesturing:;
+- (void)dealloc;
+- (BOOL)isTrackingHeading;
+- (BOOL)isAnimating;
+- (id)initWithMapDataAccess:animationRunner:runLoopController:cameraDelegate:;
+- (void)observeValueForKeyPath:ofObject:change:context:;
+- (void)startTrackingAnnotation:trackHeading:animated:duration:timingFunction:;
+- (void)stopTrackingAnnotation;
+- (void)setBehavior:;
+- (void).cxx_destruct;
+- (void)pauseAnimation;
+- (id)behavior;
+- (void)resumeAnimation;
+- (id).cxx_construct;
+- (void)updateFramerate;
+- (void)_goToAnnotationAnimated:duration:timingFunction:isInitial:;
+- (void)_rotateToHeadingAnimated:duration:;
+- (BOOL)shouldForceZoomToFit;
+- (long long)headingAnimationDisplayRate;
+- (void)setHeadingAnimationDisplayRate:;
+- (BOOL)hasUserSpecifiedZoomLevel;
+- (void)setHasUserSpecifiedZoomLevel:;
+@end

@@ -1,0 +1,38 @@
+@interface IESSaaSTIMStrangerConversationModel : MTLModel
+@property (nonatomic) NSString identifier;
+@property (nonatomic) q shortID;
+@property (nonatomic) q unreadCount;
+@property (nonatomic) NSOrderedSet someParticipants;
+@property (nonatomic) NSDictionary ext;
+@property (nonatomic) IESSaaSTIMStrangerMessageModel lastMessage;
+@property (nonatomic) BOOL isInStrangerBox;
+@property (nonatomic) NSDate updatedAt;
+@property (nonatomic) BOOL bottomConversation;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)isInStrangerBox;
+- (void)setExt:;
+- (long long)shortID;
+- (BOOL)bottomConversation;
+- (id)diffIdentifier;
+- (BOOL)isEqualToDiffableObject:;
+- (void)setBottomConversation:;
+- (void)setIsInStrangerBox:;
+- (void)setShortID:;
+- (void)setSomeParticipants:;
+- (id)someParticipants;
+- (long long)unreadCount;
+- (id)lastMessage;
+- (id)identifier;
+- (void)setUnreadCount:;
+- (void).cxx_destruct;
+- (void)setLastMessage:;
+- (void)setIdentifier:;
+- (id)updatedAt;
+- (void)setUpdatedAt:;
+- (id)ext;
++ (id)createFromDBObject:;
++ (id)createFromPBObject:;
+@end

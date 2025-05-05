@@ -1,0 +1,33 @@
+@interface UGEEvent : NSObject
+@property (nonatomic) NSString name;
+@property (nonatomic) NSString chainName;
+@property (nonatomic) NSDictionary params;
+@property (nonatomic) NSArray nextList;
+@property (nonatomic) NSArray successList;
+@property (nonatomic) NSArray failList;
+@property (nonatomic) NSString scheme;
+@property (nonatomic) NSString condition;
+- (void)setSuccessList:;
+- (void)_setupData:;
+- (id)chainName;
+- (id)failList;
+- (id)getFailGroupInfo;
+- (id)getNextInfo;
+- (id)getSuccessGroupInfo;
+- (BOOL)haveCallBack;
+- (id)nextList;
+- (void)setChainName:;
+- (void)setFailList:;
+- (void)setNextList:;
+- (id)successList;
+- (id)condition;
+- (void)setCondition:;
+- (void)setName:;
+- (void)setScheme:;
+- (id)scheme;
+- (id)initWithInfo:;
+- (void).cxx_destruct;
+- (id)name;
+- (id)params;
+- (void)setParams:;
+@end

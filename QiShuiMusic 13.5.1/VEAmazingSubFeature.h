@@ -1,0 +1,34 @@
+@interface VEAmazingSubFeature : NSObject
+@property (nonatomic) NSString identifier;
+@property (nonatomic) NSArray resourcePathsArray;
+@property (nonatomic) NSString facePath;
+@property (nonatomic) double startTime;
+@property (nonatomic) double endTime;
+@property (nonatomic) double scaleX;
+@property (nonatomic) double scaleY;
+@property (nonatomic) double scaleZ;
+@property (nonatomic) BOOL needUpdate;
+- (id)initWithResourcePaths:facePath:;
+- (id)facePath;
+- (BOOL)needUpdate;
+- (id)resourcePathsArray;
+- (void)setFacePath:;
+- (void)setNeedUpdate:;
+- (void)setResourcePathsArray:;
+- (void)setScaleZ:;
+- (id)init;
+- (void)setStartTime:;
+- (id)identifier;
+- (void)setEndTime:;
+- (double)startTime;
+- (double)endTime;
+- (void).cxx_destruct;
+- (void)setIdentifier:;
+- (id)copyWithZone:;
+- (double)scaleZ;
+- (double)scaleX;
+- (double)scaleY;
+- (void)setScaleX:;
+- (void)setScaleY:;
+- (BOOL)isContentEqual:;
+@end

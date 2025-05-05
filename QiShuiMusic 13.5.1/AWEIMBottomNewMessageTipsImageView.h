@@ -1,0 +1,2 @@
+@interface AWEIMBottomNewMessageTipsImageView : UIImageView
+@end

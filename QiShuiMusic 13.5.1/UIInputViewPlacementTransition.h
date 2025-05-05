@@ -1,0 +1,33 @@
+@interface UIInputViewPlacementTransition : NSObject
+@property (nonatomic) UIInputViewSetPlacement fromPlacement;
+@property (nonatomic) UIInputViewSetPlacement toPlacement;
+@property (nonatomic) UIInputViewAnimationStyle animationStyle;
+@property (nonatomic) UIInputViewSetNotificationInfo notificationInfo;
+@property (nonatomic) Q notifications;
+@property (nonatomic) NSInteger animationState;
+@property (nonatomic) <UIInputViewAnimationController> animationController;
+@property (nonatomic) <NSObject> animationContext;
+@property (nonatomic) BOOL cancelled;
+- (id)animationContext;
+- (unsigned long long)notifications;
+- (void)setAnimationContext:;
+- (BOOL)cancelled;
+- (void)setAnimationState:;
+- (void)setCancelled:;
+- (int)animationState;
+- (void)dealloc;
+- (id)notificationInfo;
+- (void)setNotificationInfo:;
+- (void)setNotifications:;
+- (void)setAnimationStyle:;
+- (void)setAnimationController:;
+- (void).cxx_destruct;
+- (id)fromPlacement;
+- (void)setFromPlacement:;
+- (BOOL)didAdvanceAnimationToState:;
+- (id)animationStyle;
+- (id)animationController;
+- (id)toPlacement;
+- (void)setToPlacement:;
++ (id)transitionFromPlacement:toPlacement:withAnimationStyle:;
+@end

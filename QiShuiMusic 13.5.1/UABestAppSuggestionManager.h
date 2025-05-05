@@ -1,0 +1,37 @@
+@interface UABestAppSuggestionManager : NSObject
+@property (nonatomic) NSXPCConnection connection;
+@property (nonatomic) UABestAppSuggestionManagerProxy proxyManager;
+@property (nonatomic) <UABestAppSuggestionManagerDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)bestAppSuggestion;
+- (id)init;
+- (id)bestAppSuggestions:;
+- (void)dealloc;
+- (void)notifyBestAppsChanged:when:confidence:;
+- (void)setDelegate:;
+- (void)launchAppWithBundleIdentifier:userActivityUniqueIdentifier:userActivityTypeIdentifier:;
+- (id)createAppSuggestionFromActivityInfo:atTime:;
+- (void)removeBestAppByUUID:options:;
+- (BOOL)isActivityInfo:atTime:similarToAppSuggestion:;
+- (void)bestAppSuggestionLaunchWasCancelled:;
+- (BOOL)determineBestAppWithDelay:withBlock:;
+- (void)launchAppWithBundleIdentifier:userActivityUniqueIdentifier:userActivityTypeIdentifier:deviceName:deviceIdentifier:deviceType:;
+- (void)stopListeningForBestAppSuggestions;
+- (id)delegate;
+- (id)connection;
+- (void).cxx_destruct;
+- (void)removeBestApp:options:;
+- (BOOL)fetchAllNearbyAppSuggestions;
+- (void)setConnection:;
+- (void)bestAppSuggestionWasLaunched:withInteractionType:;
+- (void)launchAppWithBundleIdentifier:taskContinuationIdentifier:;
+- (void)launchAppWithBestAppSuggestion:;
+- (void)queueFetchOfPayloadForBestAppSuggestion:;
+- (void)invalidate;
+- (id)proxyManager;
+- (void)setProxyManager:;
+- (void)startListeningForBestAppSuggestions;
+@end

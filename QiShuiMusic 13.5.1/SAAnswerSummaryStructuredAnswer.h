@@ -1,0 +1,31 @@
+@interface SAAnswerSummaryStructuredAnswer : AceObject
+@property (nonatomic) NSArray answerPropertyGroups;
+@property (nonatomic) NSString category;
+@property (nonatomic) NSURL image;
+@property (nonatomic) NSString imageCaption;
+@property (nonatomic) NSString text;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString titleAnnotation;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)groupIdentifier;
+- (void)setText:;
+- (void)setImage:;
+- (void)setTitle:;
+- (id)title;
+- (void)setCategory:;
+- (id)encodedClassName;
+- (id)text;
+- (id)image;
+- (id)category;
+- (id)answerPropertyGroups;
+- (void)setAnswerPropertyGroups:;
+- (id)imageCaption;
+- (void)setImageCaption:;
+- (id)titleAnnotation;
+- (void)setTitleAnnotation:;
++ (id)summaryStructuredAnswer;
++ (id)summaryStructuredAnswerWithDictionary:context:;
+@end

@@ -1,0 +1,31 @@
+@interface CBAudioLinkQualityInfo : NSObject
+@property (nonatomic) I bitRate;
+@property (nonatomic) c codecType;
+@property (nonatomic) NSString deviceName;
+@property (nonatomic) double jitterBufferSeconds;
+@property (nonatomic) c noiseFloor90;
+@property (nonatomic) double retransmitRate;
+@property (nonatomic) c rssiAverage;
+@property (nonatomic) c signalToNoiseRatio;
+- (void)setDeviceName:;
+- (void)encodeWithXPCObject:;
+- (id)descriptionWithLevel:;
+- (id)deviceName;
+- (id)initWithXPCObject:error:;
+- (void).cxx_destruct;
+- (id)description;
+- (unsigned int)bitRate;
+- (void)setBitRate:;
+- (char)codecType;
+- (void)setCodecType:;
+- (double)jitterBufferSeconds;
+- (void)setJitterBufferSeconds:;
+- (char)noiseFloor90;
+- (void)setNoiseFloor90:;
+- (double)retransmitRate;
+- (void)setRetransmitRate:;
+- (char)rssiAverage;
+- (void)setRssiAverage:;
+- (char)signalToNoiseRatio;
+- (void)setSignalToNoiseRatio:;
+@end

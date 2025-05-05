@@ -1,0 +1,35 @@
+@interface CSJSKANADImpressionModel : NSObject
+@property (nonatomic) NSString version;
+@property (nonatomic) NSString ad_network_id;
+@property (nonatomic) NSNumber ad_campaign_id;
+@property (nonatomic) NSNumber advertised_app_id;
+@property (nonatomic) NSString ad_impression_id;
+@property (nonatomic) NSNumber source_app_id;
+@property (nonatomic) NSNumber timestamp;
+@property (nonatomic) NSString signature;
+@property (nonatomic) BOOL valid;
+@property (nonatomic) NSObject<CSJAdSKAdImpressionProtocol> adImpression;
+- (id)ad_campaign_id;
+- (id)ad_impression_id;
+- (id)ad_network_id;
+- (id)advertised_app_id;
+- (void)setAd_campaign_id:;
+- (void)setAd_impression_id:;
+- (void)setAd_network_id:;
+- (void)setAdvertised_app_id:;
+- (void)setSource_app_id:;
+- (id)source_app_id;
+- (void)setSignature:;
+- (id)signature;
+- (void)setVersion:;
+- (id)version;
+- (id)initWithDictionary:;
+- (id)initWithCoder:;
+- (id)adImpression;
+- (void)encodeWithCoder:;
+- (void)setAdImpression:;
+- (void)setTimestamp:;
+- (BOOL)isValid;
+- (void).cxx_destruct;
+- (id)timestamp;
+@end

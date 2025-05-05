@@ -1,0 +1,32 @@
+@interface PuzzleGeckoResourceLoader : NSObject
+- (id)fetchResourceWithURL:completion:;
+- (id)fetchResourceWithURL:requestParam:completion:;
++ (void)updateForestPreloadMemCacheSize;
++ (void)updateForestGeneralMemCacheSize;
++ (BOOL)_enableUseForestResourceLoader:kernalType:;
++ (void)_preloadLynx:kernalType:params:context:preloadSchemePara:anniePretchResModeConfig:monitorBlock:;
++ (void)_preloadWeb:kernalType:params:context:preloadSchemePara:monitorBlock:;
++ (id)addCommonParamsForCDNMultiVersionURLString:;
++ (void)addDefaultCDNMultiVersionDomains:;
++ (void)closeSessionWithContext:;
++ (BOOL)enableForestSession:kernalType:params:;
++ (BOOL)enablePreloadBySettings;
++ (BOOL)enableUseForestResourceLoader:kernalType:params:;
++ (long long)enableUseForestResourceLoaderAndPreload:kernalType:params:;
++ (BOOL)enableUseForestResourceLoaderForLatch:kernalType:params:;
++ (id)forestKit;
++ (id)forestSessonIdWithContext:;
++ (id)geckoResourceForURLString:context:;
++ (id)geckoResourcePathForURLString:context:;
++ (id)generateSessionIdWithContext:params:;
++ (id)getPreloadJsonUrl:channel:;
++ (BOOL)isCDNMultiVersionResource:;
++ (BOOL)isInList:urlList:;
++ (void)openForestSessionWithUrl:kernalType:context:params:;
++ (id)prefetchResModeConfig:;
++ (void)preload:kernalType:params:context:;
++ (id)preloadErrorMsgWithCode:;
++ (id)processedUrl:;
++ (long long)webForestMode:params:;
++ (id)defaultConfig;
+@end

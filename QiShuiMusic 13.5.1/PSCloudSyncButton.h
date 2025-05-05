@@ -1,0 +1,31 @@
+@interface PSCloudSyncButton : UIBarButtonItem
+@property (nonatomic) NSDictionary options;
+@property (nonatomic) <PSCloudSyncDelegate> delegate;
+@property (nonatomic) BOOL syncEnabled;
+@property (nonatomic) NSError syncError;
+@property (nonatomic) PSViewController controller;
+@property (nonatomic) NSString syncTitle;
+@property (nonatomic) NSString syncMessage;
+@property (nonatomic) BOOL cloudSyncEnabled;
+- (void)setOptions:;
+- (id)syncError;
+- (void)setDelegate:;
+- (void)setSyncEnabled:;
+- (id)options;
+- (BOOL)isCloudSyncEnabled;
+- (void)setCloudSyncEnabled:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)update;
+- (id)controller;
+- (BOOL)syncEnabled;
+- (void)setSyncError:;
+- (void)cloudSyncAction:;
+- (BOOL)hasMergeConflict;
+- (id)syncTitle;
+- (id)syncMessage;
+- (id)initWithController:options:delegate:;
+- (void)updateIcon;
+- (BOOL)showRedirectSheet;
+- (id)mergeConflictMessage;
+@end

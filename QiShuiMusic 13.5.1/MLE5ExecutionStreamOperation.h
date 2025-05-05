@@ -1,0 +1,38 @@
+@interface MLE5ExecutionStreamOperation : NSObject
+@property (nonatomic) NSURL e5BundleURL;
+@property (nonatomic) NSString functionName;
+@property (nonatomic) NSDictionary outputDescriptionsByName;
+@property (nonatomic) ^{e5rt_execution_stream_operation=} operationHandle;
+@property (nonatomic) NSArray inputPorts;
+@property (nonatomic) NSArray outputPorts;
+@property (nonatomic) q state;
+@property (nonatomic) <MLFeatureProvider> inputFeatures;
+@property (nonatomic) <MLFeatureProvider> outputFeatures;
+@property (nonatomic) NSString debugLabel;
+- (id)debugLabel;
+- (void)dealloc;
+- (id)inputPorts;
+- (void)setState:;
+- (id)outputDescriptionsByName;
+- (id)functionName;
+- (long long)state;
+- (void).cxx_destruct;
+- (void)reset;
+- (id)e5BundleURL;
+- (BOOL)prepareAndReturnError:;
+- (id)initWithContentsOfURL:functionName:outputDescriptionsByName:debugLabel:;
+- (id)outputFeatures;
+- (id)_createOperationAndReturnError:;
+- (id)_newArrayOfUnboundedPortsForPortNames:featureDescriptionsByName:portFactoryFunction:error:;
+- (id)_newArrayOfInputPortsBoundToFeatures:error:;
+- (id)_newArrayOfBoundedOutputPortsUsingOutputBackings:error:;
+- (id)_inputPortNames;
+- (id)_outputPortNames;
+- (id)inputFeatures;
+- (void)setInputFeatures:;
+- (id)operationHandle;
+- (void)setOperationHandle:;
+- (void)setInputPorts:;
+- (id)outputPorts;
+- (void)setOutputPorts:;
+@end

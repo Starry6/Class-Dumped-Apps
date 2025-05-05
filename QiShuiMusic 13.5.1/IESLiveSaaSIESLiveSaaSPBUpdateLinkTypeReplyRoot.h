@@ -1,0 +1,2 @@
+@interface IESLiveSaaSIESLiveSaaSPBUpdateLinkTypeReplyRoot : GPBRootObject
+@end

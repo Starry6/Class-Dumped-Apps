@@ -1,0 +1,35 @@
+@interface IESLiveAVAudioPlayer : NSObject
+@property (nonatomic) AVAudioPlayer player;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) <IESLiveAudioPlayerDelegate> delegate;
+@property (nonatomic) <IESLiveAudioPlayerInput> audioInput;
+@property (nonatomic) BOOL isRunning;
+@property (nonatomic) float volume;
+@property (nonatomic) float duration;
+@property (nonatomic) float overtime;
+- (float)overtime;
+- (void)setOvertime:;
+- (void)startPlay;
+- (void)stopPlay;
+- (float)volume;
+- (void)dealloc;
+- (void)setVolume:;
+- (void)setDelegate:;
+- (void)setIsRunning:;
+- (BOOL)isRunning;
+- (id)player;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setPlayer:;
+- (void)pause;
+- (float)duration;
+- (BOOL)prepareToPlay;
+- (void)audioPlayerDidFinishPlaying:successfully:;
+- (void)audioPlayerDecodeErrorDidOccur:error:;
+- (id)audioInput;
+- (void)setAudioInput:;
+- (void)playAtTime:;
+@end

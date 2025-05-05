@@ -1,0 +1,36 @@
+@interface SCNSphere : SCNGeometry
+@property (nonatomic) double radius;
+@property (nonatomic) BOOL geodesic;
+@property (nonatomic) q segmentCount;
+- (void)setRadius:;
+- (id)init;
+- (id)copy;
+- (double)radius;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (id)description;
+- (id)copyWithZone:;
+- (long long)primitiveType;
+- (void)setPrimitiveType:;
+- (void)setRadialSpan:;
+- (void)setSegmentCount:;
+- (void)setGeodesic:;
+- (void)setHemispheric:;
+- (long long)segmentCount;
+- (BOOL)getBoundingBoxMin:max:;
+- (BOOL)getBoundingSphereCenter:radius:;
+- (id)copyAnimationChannelForKeyPath:animation:;
+- (id)__createCFObject;
+- (id)presentationGeometry;
+- (void)_setupObjCModelFrom:;
+- (id)initWithParametricGeometryRef:;
+- (id)initPresentationParametricGeometryWithParametricGeometryRef:;
+- (void)_syncObjCModel:;
+- (id)presentationSphere;
+- (BOOL)isGeodesic;
+- (BOOL)geodesic;
+- (BOOL)isHemispheric;
+- (double)radialSpan;
++ (BOOL)supportsSecureCoding;
++ (id)sphereWithRadius:;
+@end

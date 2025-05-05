@@ -1,0 +1,34 @@
+@interface AWDWiFiMetricsManagerSoftErrorUserFeedback : PBCodable
+@property (nonatomic) BOOL hasTimestamp;
+@property (nonatomic) Q timestamp;
+@property (nonatomic) Q softErrorInstanceCountersCount;
+@property (nonatomic) ^i softErrorInstanceCounters;
+@property (nonatomic) Q softErrorUserConfirmationCountersCount;
+@property (nonatomic) ^i softErrorUserConfirmationCounters;
+- (void)dealloc;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)setHasTimestamp:;
+- (void)mergeFrom:;
+- (BOOL)hasTimestamp;
+- (void)setTimestamp:;
+- (BOOL)readFrom:;
+- (unsigned long long)timestamp;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (unsigned long long)softErrorInstanceCountersCount;
+- (id)softErrorInstanceCounters;
+- (void)clearSoftErrorInstanceCounters;
+- (void)addSoftErrorInstanceCounters:;
+- (int)softErrorInstanceCountersAtIndex:;
+- (void)setSoftErrorInstanceCounters:count:;
+- (unsigned long long)softErrorUserConfirmationCountersCount;
+- (id)softErrorUserConfirmationCounters;
+- (void)clearSoftErrorUserConfirmationCounters;
+- (void)addSoftErrorUserConfirmationCounters:;
+- (int)softErrorUserConfirmationCountersAtIndex:;
+- (void)setSoftErrorUserConfirmationCounters:count:;
+@end

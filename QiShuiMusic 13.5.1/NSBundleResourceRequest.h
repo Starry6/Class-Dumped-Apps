@@ -1,0 +1,31 @@
+@interface NSBundleResourceRequest : NSObject
+@property (nonatomic) double loadingPriority;
+@property (nonatomic) NSSet tags;
+@property (nonatomic) NSBundle bundle;
+@property (nonatomic) NSProgress progress;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (id)tags;
+- (void)dealloc;
+- (id)progress;
+- (id)bundle;
+- (id)initWithTag:;
+- (id)initWithTags:;
+- (id)initWithTags:bundle:;
+- (double)loadingPriority;
+- (void)setLoadingPriority:;
+- (void)beginAccessingResourcesWithCompletionHandler:;
+- (void)conditionallyBeginAccessingResourcesWithCompletionHandler:;
+- (void)endAccessingResources;
++ (void)_setConnection:;
++ (id)_connection;
++ (void)_flushCacheForBundle:;
++ (id)_assetPackBundleForBundle:withAssetPackID:;
++ (id)_manifestWithBundle:error:;
++ (id)_extensionEndpoint;
++ (id)_extensionEndpointForMainBundleOfHostApplication:;
++ (void)_addExtensionEndpoint:;
+@end

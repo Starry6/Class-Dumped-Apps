@@ -1,0 +1,2 @@
+@interface AVAssetReaderOutputMetadataAdaptorInternal : NSObject
+@end

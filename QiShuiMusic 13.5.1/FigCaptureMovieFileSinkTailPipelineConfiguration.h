@@ -1,0 +1,34 @@
+@interface FigCaptureMovieFileSinkTailPipelineConfiguration : NSObject
+@property (nonatomic) FigCaptureMovieFileSinkPipelineConfiguration movieFileSinkPipelineConfiguration;
+@property (nonatomic) BWPipelineStage movieFilePipelineStage;
+@property (nonatomic) BWPhotoDecompressorNode irisIntermediateJPEGPhotoDecompressorNode;
+@property (nonatomic) BWNodeOutput videoSourceOutput;
+@property (nonatomic) BWNodeOutput audioSourceOutput;
+@property (nonatomic) NSArray metadataSourceOutputs;
+@property (nonatomic) NSArray indexesOfDetectedObjectsInMetadataOutputs;
+@property (nonatomic) NSInteger indexOfVideoOrientationInMetadataOutputs;
+@property (nonatomic) BOOL vitalityScoringEnabled;
+@property (nonatomic) BOOL delayedCompressorCleanupEnabled;
+- (id)init;
+- (void)dealloc;
+- (id)movieFilePipelineStage;
+- (void)setMetadataSourceOutputs:;
+- (void)setDelayedCompressorCleanupEnabled:;
+- (void)setIndexOfVideoOrientationInMetadataOutputs:;
+- (int)indexOfVideoOrientationInMetadataOutputs;
+- (void)setIndexesOfDetectedObjectsInMetadataOutputs:;
+- (id)metadataSourceOutputs;
+- (void)setAudioSourceOutput:;
+- (void)setVideoSourceOutput:;
+- (id)movieFileSinkPipelineConfiguration;
+- (void)setMovieFileSinkPipelineConfiguration:;
+- (BOOL)vitalityScoringEnabled;
+- (void)setIrisIntermediateJPEGPhotoDecompressorNode:;
+- (id)indexesOfDetectedObjectsInMetadataOutputs;
+- (id)audioSourceOutput;
+- (id)videoSourceOutput;
+- (void)setVitalityScoringEnabled:;
+- (id)irisIntermediateJPEGPhotoDecompressorNode;
+- (void)setMovieFilePipelineStage:;
+- (BOOL)delayedCompressorCleanupEnabled;
+@end

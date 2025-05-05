@@ -1,0 +1,2 @@
+@interface BNSceneContract.DeleteCommentEventModel : BNSceneContract.CommentDataSourceEventModel
+@end

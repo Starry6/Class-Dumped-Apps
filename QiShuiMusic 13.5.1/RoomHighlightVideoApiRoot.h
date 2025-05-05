@@ -1,0 +1,2 @@
+@interface RoomHighlightVideoApiRoot : GPBRootObject
+@end

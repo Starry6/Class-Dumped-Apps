@@ -1,0 +1,33 @@
+@interface RemoteConfigurationController : NSObject
+@property (nonatomic) BOOL safeBrowsingOff;
+@property (nonatomic) ProviderConfiguration googleProviderConfiguration;
+@property (nonatomic) ProviderConfiguration tencentProviderConfiguration;
+@property (nonatomic) ProviderConfiguration appleProviderConfiguration;
+- (id)init;
+- (void)dealloc;
+- (id)_lastConfigurationUpdateAttemptDate;
+- (void)_setCurrentDateAsLastConfigurationUpdateAttemptDate;
+- (BOOL)_shouldUpdateConfigurationGivenLastConfigurationUpdateAttemptDate:;
+- (void).cxx_destruct;
+- (void)_setCurrentConfiguration:;
+- (BOOL)isSafeBrowsingOff;
+- (id)_providerToTurnOffFromProviderDictionary:;
+- (void)_initializeToDefaultProviderConfigurations;
+- (void)_simplifyProviderConfigurations;
+- (void)_initializeProviderConfigurationsWithConfiguration:;
+- (void)_resetProviderConfigurationsDidChange;
+- (id)_urlOfDownloadedConfiguration;
+- (void)_loadConfigurationFromDiskIfNecessary;
+- (void)_writeConfigurationToDisk:;
+- (void)_notifyProviderConfigurationsDidChangeIfNecessary;
+- (void)_downloadConfigurationWithCompletionHandler:;
+- (void)_updateConfigurationIfNecessary;
+- (void)_didReceiveConfigurationData:;
+- (void)_scheduleConfigurationUpdateDaily;
+- (BOOL)forceLoadConfigurationFromDisk;
+- (BOOL)forceUpdateConfigurationFromServer;
+- (id)googleProviderConfiguration;
+- (id)tencentProviderConfiguration;
+- (id)appleProviderConfiguration;
++ (id)sharedController;
+@end

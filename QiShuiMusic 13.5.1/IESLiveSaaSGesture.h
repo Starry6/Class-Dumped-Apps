@@ -1,0 +1,31 @@
+@interface IESLiveSaaSGesture : NSObject
+@property (nonatomic) UIGestureRecognizer recognizer;
+@property (nonatomic) Q identifier;
+@property (nonatomic) BOOL allowLandscapeRespond;
+@property (nonatomic) BOOL cancelsTouchesInView;
+@property (nonatomic) @? shouldBegin;
+@property (nonatomic) @? shouldReceiveTouch;
+@property (nonatomic) @? action;
+@property (nonatomic) BOOL allowAnchor;
+- (void)setShouldBegin:;
+- (void)setAllowAnchor:;
+- (BOOL)allowAnchor;
+- (BOOL)allowLandscapeRespond;
+- (id)initByIdentifier:;
+- (void)setAllowLandscapeRespond:;
+- (void)setShouldReceiveTouch:;
+- (id)shouldBegin;
+- (id)shouldReceiveTouch;
+- (id)init;
+- (BOOL)cancelsTouchesInView;
+- (unsigned long long)identifier;
+- (id)action;
+- (void)setCancelsTouchesInView:;
+- (void)setAction:;
+- (void).cxx_destruct;
+- (void)setIdentifier:;
+- (id)recognizer;
+- (void)setRecognizer:;
++ (id)initRecognizerBy:;
++ (id)initRelatedRecognizerBy:;
+@end

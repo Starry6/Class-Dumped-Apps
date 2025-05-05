@@ -1,0 +1,33 @@
+@interface UIPressesEvent : UIEvent
+@property (nonatomic) UIPress _triggeringPhysicalButton;
+@property (nonatomic) NSSet allPresses;
+- (long long)_modifierFlags;
+- (long long)subtype;
+- (id)_physicalButtonsForGestureRecognizer:withPhase:;
+- (id)_physicalButtonsForResponder:withPhase:;
+- (id)_windows;
+- (id)_cloneEvent;
+- (void)_addPress:forDelayedDelivery:;
+- (id)_physicalButtonsForGestureRecognizer:;
+- (id)_directionalPressWithStrongestForce;
+- (id)allPresses;
+- (id)_allPresses;
+- (void)_registerForTerminalEvent:;
+- (void)_cleanupAfterDispatch;
+- (id)_terminalRegistrantsForPressType:;
+- (long long)type;
+- (id)_triggeringPhysicalButton;
+- (void)_removePhysicalButton:;
+- (BOOL)_sendEventToGestureRecognizer:;
+- (void)set_triggeringPhysicalButton:;
+- (id)physicalButtonsForWindow:;
+- (void).cxx_destruct;
+- (id)pressesForGestureRecognizer:;
+- (id)description;
+- (id)_init;
+- (void)_addGesturesForPress:;
+- (id)_respondersForWindow:;
+- (id)_physicalButtonsForPhase:;
+- (void)_unregisterForTerminalEvent:;
+- (id)_gestureRecognizersForWindow:;
+@end

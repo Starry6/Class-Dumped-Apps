@@ -1,0 +1,30 @@
+@interface CJPayTransitionUtil : NSObject
+@property (nonatomic) double maskMaxAlpha;
+@property (nonatomic) double animationDuration;
+- (void)transitionEnterHalfVC:isShowMaskView:maskViewHeight:completion:;
+- (id)addMaskViewForView:;
+- (void)finishInteractiveFullVC:isCancel:maskView:completion:;
+- (double)maskMaxAlpha;
+- (id)p_createMaskView;
+- (void)p_transitionHalfView:containerHeight:halfVCEntranceType:transitionType:maskView:completion:;
+- (void)p_transitionPopupView:transitionType:maskView:completion:;
+- (void)p_transitionWithTransitionType:action:completion:;
+- (void)setMaskMaxAlpha:;
+- (void)transitinNormalView:transitionType:maskView:completion:;
+- (void)transitionEnterFullVC:maskContainerView:completion:;
+- (void)transitionEnterHalfVC:fromHalfVC:containerBottomView:completion:;
+- (void)transitionEnterHalfVC:isShowMaskView:completion:;
+- (void)transitionEnterPopUpVC:isShowMaskView:completion:;
+- (void)transitionExitFullVC:maskContainerView:completion:;
+- (void)transitionExitHalfVC:maskContainerView:completion:;
+- (void)transitionExitHalfVC:maskContainerView:maskViewHeight:completion:;
+- (void)transitionExitHalfVC:maskContainerView:maskViewHeight:isRemoveBGImageView:completion:;
+- (void)transitionExitHalfVC:toHalfVC:containerBottomView:completion:;
+- (void)transitionExitPopUpVC:isShowMaskView:completion:;
+- (void)transitionExitPopUpVC:isShowMaskView:isRemoveBGImageView:completion:;
+- (void)updateInteractiveFullVC:maskView:percentComplete:completion:;
+- (id)init;
+- (double)animationDuration;
+- (void)setAnimationDuration:;
++ (id)sharedInstance;
+@end

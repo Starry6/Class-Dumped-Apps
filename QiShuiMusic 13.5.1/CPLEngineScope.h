@@ -1,0 +1,31 @@
+@interface CPLEngineScope : NSObject
+@property (nonatomic) NSDate creationDate;
+@property (nonatomic) q localIndex;
+@property (nonatomic) q cloudIndex;
+@property (nonatomic) q stableIndex;
+@property (nonatomic) NSString scopeIdentifier;
+@property (nonatomic) q scopeType;
+- (id)statusDescription;
+- (id)scopeIdentifier;
+- (void)setCreationDate:;
+- (id)redactedDescription;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (long long)scopeType;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)creationDate;
+- (id)initWithScopeIdentifier:scopeType:;
+- (long long)localIndex;
+- (void)setLocalIndex:;
+- (long long)cloudIndex;
+- (void)setCloudIndex:;
+- (long long)stableIndex;
+- (void)setStableIndex:;
++ (BOOL)supportsSecureCoding;
++ (id)separatorForStatusKey:;
++ (void)formatStatusDictionary:forScopeWithIdentifier:appendString:appendTopLevelStatus:appendLineStatus:;
+@end

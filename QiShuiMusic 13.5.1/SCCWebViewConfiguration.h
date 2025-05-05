@@ -1,0 +1,37 @@
+@interface SCCWebViewConfiguration : NSObject
+@property (nonatomic) BOOL needCloudChecking;
+@property (nonatomic) BOOL hasBeenReach;
+@property (nonatomic) NSString logID;
+@property (nonatomic) Q reportType;
+@property (nonatomic) <SCCWebViewCustomHandler> customHandler;
+@property (nonatomic) NSDate cloudCheckBeginTime;
+@property (nonatomic) SCCWebSettings settings;
+@property (nonatomic) NSString reason;
+@property (nonatomic) NSString seclinkScene;
+@property (nonatomic) NSString bid;
+@property (nonatomic) NSMutableArray allowOnceUrls;
+- (void)setBid:;
+- (id)bid;
+- (id)allowOnceUrls;
+- (id)cloudCheckBeginTime;
+- (BOOL)hasBeenReach;
+- (BOOL)needCloudChecking;
+- (id)seclinkScene;
+- (void)setAllowOnceUrls:;
+- (void)setCloudCheckBeginTime:;
+- (void)setHasBeenReach:;
+- (void)setNeedCloudChecking:;
+- (void)setSeclinkScene:;
+- (id)init;
+- (id)settings;
+- (void)setSettings:;
+- (id)reason;
+- (void)setReason:;
+- (void)setReportType:;
+- (void).cxx_destruct;
+- (unsigned long long)reportType;
+- (id)customHandler;
+- (id)logID;
+- (void)setCustomHandler:;
+- (void)setLogID:;
+@end

@@ -1,0 +1,33 @@
+@interface IESLiveCloseInteractionAlertViewController : UIViewController
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIButton closeInteractionButton;
+@property (nonatomic) UIButton closeLiveButton;
+@property (nonatomic) UIButton cancelButton;
+@property (nonatomic) Q scene;
+@property (nonatomic) @? closeLiveBlock;
+@property (nonatomic) @? closeInterActionBlock;
+- (id)closeLiveButton;
+- (id)closeInterActionBlock;
+- (id)closeInteractionButton;
+- (id)closeLiveBlock;
+- (void)setCloseInterActionBlock:;
+- (void)setCloseInteractionButton:;
+- (void)setCloseLiveBlock:;
+- (void)setCloseLiveButton:;
+- (void)tapCloseInterActionButton;
+- (void)tapCloseLive;
+- (void)setScene:;
+- (id)initWithScene:;
+- (void)setTitleLabel:;
+- (id)containerView;
+- (void)setContainerView:;
+- (unsigned long long)scene;
+- (void).cxx_destruct;
+- (void)setCancelButton:;
+- (id)titleLabel;
+- (id)cancelButton;
+- (void)viewDidLoad;
+- (void)dismissVC;
+- (void)layoutUI;
+@end

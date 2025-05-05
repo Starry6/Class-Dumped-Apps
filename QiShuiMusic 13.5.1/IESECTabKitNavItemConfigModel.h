@@ -1,0 +1,30 @@
+@interface IESECTabKitNavItemConfigModel : MTLModel
+@property (nonatomic) NSString imageColor;
+@property (nonatomic) Q imageWidth;
+@property (nonatomic) Q imageHeight;
+@property (nonatomic) Q itemSpacing;
+@property (nonatomic) Q fontSize;
+@property (nonatomic) Q fontWeight;
+@property (nonatomic) NSString textColor;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setFontWeight:;
+- (unsigned long long)itemSpacing;
+- (id)init;
+- (void)setItemSpacing:;
+- (id)imageColor;
+- (unsigned long long)fontWeight;
+- (void)setTextColor:;
+- (unsigned long long)fontSize;
+- (void).cxx_destruct;
+- (void)setImageColor:;
+- (id)textColor;
+- (void)setFontSize:;
+- (unsigned long long)imageWidth;
+- (unsigned long long)imageHeight;
+- (void)setImageHeight:;
+- (void)setImageWidth:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

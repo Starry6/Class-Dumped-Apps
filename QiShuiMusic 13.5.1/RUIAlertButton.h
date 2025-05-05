@@ -1,0 +1,2 @@
+@interface RUIAlertButton : RUIElement
+@end

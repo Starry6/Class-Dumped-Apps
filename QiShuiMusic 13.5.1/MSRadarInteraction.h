@@ -1,0 +1,33 @@
+@interface MSRadarInteraction : NSObject
+@property (nonatomic) NSURL radarURL;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString message;
+@property (nonatomic) NSString openButtonTitle;
+@property (nonatomic) @? openHandler;
+@property (nonatomic) NSString cancelButtonTitle;
+@property (nonatomic) @? cancelHandler;
+@property (nonatomic) NSString maybeLaterButtonTitle;
+@property (nonatomic) @? maybeLaterHandler;
+@property (nonatomic) UIAlertController interactionViewController;
+- (void)setCancelHandler:;
+- (id)title;
+- (id)message;
+- (void).cxx_destruct;
+- (void)setOpenButtonTitle:;
+- (id)cancelHandler;
+- (id)openButtonTitle;
+- (id)cancelButtonTitle;
+- (void)setCancelButtonTitle:;
+- (id)initWithTitle:message:radarURL:;
+- (id)interactionViewController;
+- (void)promptToFile;
+- (id)radarURL;
+- (id)openHandler;
+- (void)setOpenHandler:;
+- (id)maybeLaterButtonTitle;
+- (void)setMaybeLaterButtonTitle:;
+- (id)maybeLaterHandler;
+- (void)setMaybeLaterHandler:;
++ (id)interactionWithTitle:message:radarURL:;
++ (id)interactionWithTitle:message:builder:;
+@end

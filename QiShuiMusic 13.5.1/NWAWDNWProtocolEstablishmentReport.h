@@ -1,0 +1,35 @@
+@interface NWAWDNWProtocolEstablishmentReport : PBCodable
+@property (nonatomic) BOOL hasProtocolIndex;
+@property (nonatomic) NSInteger protocolIndex;
+@property (nonatomic) BOOL hasProtocolName;
+@property (nonatomic) NSString protocolName;
+@property (nonatomic) BOOL hasHandshakeMilliseconds;
+@property (nonatomic) Q handshakeMilliseconds;
+@property (nonatomic) BOOL hasHandshakeRTTMilliseconds;
+@property (nonatomic) Q handshakeRTTMilliseconds;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (id)protocolName;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)hasProtocolName;
+- (BOOL)readFrom:;
+- (void)setProtocolName:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setProtocolIndex:;
+- (void)setHasProtocolIndex:;
+- (BOOL)hasProtocolIndex;
+- (void)setHandshakeMilliseconds:;
+- (void)setHasHandshakeMilliseconds:;
+- (BOOL)hasHandshakeMilliseconds;
+- (void)setHandshakeRTTMilliseconds:;
+- (void)setHasHandshakeRTTMilliseconds:;
+- (BOOL)hasHandshakeRTTMilliseconds;
+- (int)protocolIndex;
+- (unsigned long long)handshakeMilliseconds;
+- (unsigned long long)handshakeRTTMilliseconds;
+@end

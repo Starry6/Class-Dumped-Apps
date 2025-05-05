@@ -1,0 +1,30 @@
+@interface CKGenericTemplateRequestModel : CKBaseRequestModel
+@property (nonatomic) NSString featureList;
+@property (nonatomic) NSString templateVersion;
+@property (nonatomic) NSString cutsameSDKVersion;
+@property (nonatomic) BOOL showFilteredTemplates;
+@property (nonatomic) NSString recommendList;
+@property (nonatomic) NSString cursorList;
+@property (nonatomic) NSString countList;
+@property (nonatomic) NSString imageUrl;
+@property (nonatomic) NSString materialInfos;
+- (id)countList;
+- (id)cursorList;
+- (id)cutsameSDKVersion;
+- (id)recommendList;
+- (void)setCountList:;
+- (void)setCursorList:;
+- (void)setCutsameSDKVersion:;
+- (void)setRecommendList:;
+- (void)setShowFilteredTemplates:;
+- (BOOL)showFilteredTemplates;
+- (id)featureList;
+- (void)setFeatureList:;
+- (void).cxx_destruct;
+- (id)imageUrl;
+- (void)setImageUrl:;
+- (id)materialInfos;
+- (void)setMaterialInfos:;
+- (id)templateVersion;
+- (void)setTemplateVersion:;
+@end

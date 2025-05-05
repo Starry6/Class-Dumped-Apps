@@ -1,0 +1,35 @@
+@interface INFindEventsIntent : INIntent
+@property (nonatomic) NSString searchQuery;
+@property (nonatomic) INDateComponentsRange dateTimeRange;
+@property (nonatomic) NSArray participants;
+@property (nonatomic) CLPlacemark location;
+@property (nonatomic) q requestedEventAttribute;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)participants;
+- (void)setParticipants:;
+- (id)_dictionaryRepresentation;
+- (id)location;
+- (void)setLocation:;
+- (void)_setMetadata:;
+- (id)searchQuery;
+- (void)setSearchQuery:;
+- (id)domain;
+- (void)setDomain:;
+- (id)_metadata;
+- (id)_typedBackingStore;
+- (long long)_intentCategory;
+- (id)_categoryVerb;
+- (void)_redactForMissingPrivacyEntitlementOptions:containingAppBundleId:;
+- (id)verb;
+- (void)setVerb:;
+- (id)parametersByName;
+- (void)setParametersByName:;
+- (id)dateTimeRange;
+- (void)setDateTimeRange:;
+- (long long)requestedEventAttribute;
+- (void)setRequestedEventAttribute:;
+- (id)initWithSearchQuery:dateTimeRange:participants:location:requestedEventAttribute:;
+@end

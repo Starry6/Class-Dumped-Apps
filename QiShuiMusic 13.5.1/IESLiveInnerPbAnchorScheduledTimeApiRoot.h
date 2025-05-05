@@ -1,0 +1,2 @@
+@interface IESLiveInnerPbAnchorScheduledTimeApiRoot : GPBRootObject
+@end

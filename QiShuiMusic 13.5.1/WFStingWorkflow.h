@@ -1,0 +1,2 @@
+@interface WFStingWorkflow : WFWorkflowDescriptor
+@end

@@ -1,0 +1,33 @@
+@interface CVADepthTOF : NSObject
+@property (nonatomic) NSDictionary data;
+@property (nonatomic) double timestamp;
+@property (nonatomic) q projectorMode;
+@property (nonatomic) NSDictionary metadata;
+@property (nonatomic) Q syncTimestamp;
+@property (nonatomic) Q frameId;
+@property (nonatomic) ADJasperPointCloud pointCloud;
+- (void)setProjectorMode:;
+- (id)data;
+- (id)metadata;
+- (unsigned long long)frameId;
+- (id)initWithCoder:;
+- (void)setFrameId:;
+- (void)setMetadata:;
+- (void)encodeWithCoder:;
+- (long long)projectorMode;
+- (void)setTimestamp:;
+- (void).cxx_destruct;
+- (double)timestamp;
+- (void)reset;
+- (void)setData:;
+- (id)initWithAVPointCloudData:timestamp:;
+- (id)pointCloud;
+- (void)setPointCloud:;
+- (unsigned long long)syncTimestamp;
+- (void)setSyncTimestamp:;
+- (id)initWithADJasperPointCloud:timestamp:;
+- (id)initWithJasperDepth:timestamp:projectorMode:;
+- (id)initWithCVDataBufferRef:timestamp:projectorMode:;
++ (BOOL)supportsSecureCoding;
++ (id)classes;
+@end

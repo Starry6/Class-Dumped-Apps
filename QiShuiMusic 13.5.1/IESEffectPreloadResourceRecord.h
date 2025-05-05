@@ -1,0 +1,36 @@
+@interface IESEffectPreloadResourceRecord : NSObject
+@property (nonatomic) NSMutableArray refBusinessList;
+@property (nonatomic) NSString resourceKey;
+@property (nonatomic) NSString resourceURI;
+@property (nonatomic) NSString version;
+@property (nonatomic) NSString resourceName;
+@property (nonatomic) NSString type;
+@property (nonatomic) NSString level;
+@property (nonatomic) Q size;
+@property (nonatomic) NSString filePath;
+@property (nonatomic) double lastUseTime;
+@property (nonatomic) Q useCount;
+- (id)refBusinessList;
+- (void)setResourceKey:;
+- (void)setResourceURI:;
+- (id)resourceURI;
+- (void)setRefBusinessList:;
+- (id)filePath;
+- (void)setLevel:;
+- (id)level;
+- (void)setVersion:;
+- (id)version;
+- (void)setType:;
+- (void)setFilePath:;
+- (void)setUseCount:;
+- (id)type;
+- (unsigned long long)useCount;
+- (void).cxx_destruct;
+- (id)resourceName;
+- (void)setSize:;
+- (unsigned long long)size;
+- (void)setResourceName:;
+- (double)lastUseTime;
+- (void)setLastUseTime:;
+- (id)resourceKey;
+@end

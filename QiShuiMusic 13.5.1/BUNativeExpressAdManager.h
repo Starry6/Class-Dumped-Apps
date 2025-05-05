@@ -1,0 +1,38 @@
+@interface BUNativeExpressAdManager : BUInterfaceBaseObject
+@property (nonatomic) NSObject<BUNativeExpressAdManagerMediationProtocol> mediation;
+@property (nonatomic) <BUMNativeExpressAdViewDelegate> delegate;
+@property (nonatomic) NSObject<BUNativeExpressAdManagerMediationProtocol> mediation;
+@property (nonatomic) <BUMNativeExpressAdViewDelegate> delegate;
+@property (nonatomic) BUNativeExpressAdManager iteration;
+@property (nonatomic) BUAdSlot adslot;
+@property (nonatomic) {CGSize=dd} adSize;
+@property (nonatomic) <BUNativeExpressAdViewDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithSlot:adSize:;
+- (id)mediation;
+- (id)mediation;
+- (void)nativeExpressAdFailToLoad:error:;
+- (void)nativeExpressAdSuccessToLoad:views:;
+- (void)nativeExpressAdView:dislikeWithReason:;
+- (void)nativeExpressAdView:stateDidChanged:;
+- (void)nativeExpressAdViewDidClick:;
+- (void)nativeExpressAdViewDidCloseOtherController:interactionType:;
+- (void)nativeExpressAdViewDidRemoved:;
+- (void)nativeExpressAdViewPlayerDidPlayFinish:error:;
+- (void)nativeExpressAdViewRenderFail:error:;
+- (void)nativeExpressAdViewRenderSuccess:;
+- (void)nativeExpressAdViewShakeViewDidDismiss:;
+- (void)nativeExpressAdViewVideo:rewardDidCountDown:;
+- (void)nativeExpressAdViewVideoDidClick:;
+- (void)nativeExpressAdViewWillPresentScreen:;
+- (void)nativeExpressAdViewWillShow:;
+- (id)init;
+- (void)setDelegate:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setIteration:;
+- (id)iteration;
+@end

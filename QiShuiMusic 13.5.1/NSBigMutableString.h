@@ -1,0 +1,26 @@
+@interface NSBigMutableString : NSMutableString
+- (void)HMDP_replaceCharactersInRange:withString:;
+- (unsigned short)HMDP_characterAtIndex:;
+- (void)replaceCharactersInRange:withString:;
+- (BOOL)_isCString;
+- (id)_createSubstringWithRange:;
+- (void)dealloc;
+- (BOOL)_setStorage:encoding:;
+- (unsigned short)characterAtIndex:;
+- (id)initWithString:;
+- (void)getCharacters:range:;
+- (void)_checkForInvalidMutationWithSelector:;
+- (id)_newBigSubstringWithRange:wantsMutable:zone:;
+- (BOOL)_setData:encoding:;
+- (id)initWithStorage:length:isUnicode:;
+- (id)_newSubstringWithRange:zone:;
+- (BOOL)_copyDataFrom:range:;
+- (BOOL)_copyStorage:encoding:;
+- (BOOL)_getData:encoding:;
+- (void)_markAsImmutable;
+- (unsigned long long)length;
+- (id)mutableCopyWithZone:;
+- (id)_newSmallImmutableSubstringWithRange:zone:;
+- (BOOL)_isMarkedAsImmutable;
+- (id)copyWithZone:;
+@end

@@ -1,0 +1,34 @@
+@interface CVAPortraitVideoPipeline_Impl : NSObject
+@property (nonatomic) <CVAVideoPipelineProperties> videoPipelineProperties;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)dealloc;
+- (BOOL)validateDisparityPostprocessingRequest:error:;
+- (BOOL)validateSegmentationPixelBuffer:matchFormat:error:;
+- (int)extractMatteWithRequest:disparityPostprocessingCompletionHandler:mattingCompletionHandler:;
+- (int)renderWithRequest:requestTo:mixValue:destinationColorPixelBuffer:error:disparityPostprocessingCompletionHandler:mattingCompletionHandler:portraitCompletionHandler:;
+- (id)internal_extractMatteWithRequest:disparityPostprocessingResult:usePostprocessedDisparity:dilateForegroundMask:gravity:transitionData:isMattingNeeded:mattingCompletionHandler:isFinalStage:status:;
+- (void)internal_renderStageLightWithRequest:mattingResult:portraitCompletionHandler:status:;
+- (int)internal_fixFocusPositionWithDisparityPostprocessingRequest:;
+- (int)renderWithRequest:;
+- (int)postprocessDisparityWithRequest:disparityPostprocessingCompletionHandler:;
+- (id)videoPipelineProperties;
+- (void)setVideoPipelineProperties:;
+- (void)internal_relightWithRequest:intermediateSourceBuffer:faceKitProcessOutput:portraitStyleStrength:mattingResult:singleCubeData:portraitCompletionHandler:timestamp:status:;
+- (int)renderSingleEffectWithRequest:destinationColorPixelBuffer:error:disparityPostprocessingCompletionHandler:mattingCompletionHandler:portraitCompletionHandler:requestFrom:requestTo:;
+- (int)postprocessDisparityWithRequest:;
+- (void).cxx_destruct;
+- (BOOL)validateMattingRequest:error:;
+- (int)extractMatteWithRequest:;
+- (id)internal_postprocessDisparityWithRequest:disparityPostprocessingCompletionHandler:isFinalStage:status:;
+- (id)internal_extractMatteWithRequest:disparityPostprocessingResult:usePostprocessedDisparity:dilateForegroundMask:gravity:transitionData:mattingCompletionHandler:isFinalStage:status:;
+- (void)internal_renderWithRequest:dstBuffer:mattingResult:portraitCompletionHandler:status:timestamp:;
+- (id).cxx_construct;
+- (BOOL)validatePortraitRequest:error:;
+- (id)initWithProperties:error:;
+- (int)renderWithRequest:disparityPostprocessingCompletionHandler:mattingCompletionHandler:portraitCompletionHandler:;
++ (int)pixelBufferPoolCreateWithWidth:height:pixelFormat:pool:;
++ (void)drawDisparity:onColor:canonical:rawShiftInvalidThreshold:focusMachineState:offsetX:offsetY:;
+@end

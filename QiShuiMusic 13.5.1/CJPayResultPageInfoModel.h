@@ -1,0 +1,32 @@
+@interface CJPayResultPageInfoModel : JSONModel
+@property (nonatomic) CJPayPayInfoDesc moreShowInfo;
+@property (nonatomic) CJPayVoucherOptions voucherOptions;
+@property (nonatomic) CJPayMerchantTips merchantTips;
+@property (nonatomic) CJPayButtonInfo buttonInfo;
+@property (nonatomic) CJPayAssets assets;
+@property (nonatomic) NSArray<CJPayPayInfoDesc> showInfos;
+@property (nonatomic) NSArray<CJPayDynamicComponents> dynamicComponents;
+@property (nonatomic) NSString dynamicData;
+@property (nonatomic) CJPayRenderInfo renderInfo;
+- (void)setDynamicData:;
+- (id)buttonInfo;
+- (id)dynamicComponents;
+- (id)dynamicData;
+- (id)merchantTips;
+- (id)moreShowInfo;
+- (void)setButtonInfo:;
+- (void)setDynamicComponents:;
+- (void)setMerchantTips:;
+- (void)setMoreShowInfo:;
+- (void)setRenderInfo:;
+- (void)setShowInfos:;
+- (void)setVoucherOptions:;
+- (id)showInfos;
+- (id)voucherOptions;
+- (id)assets;
+- (void)setAssets:;
+- (void).cxx_destruct;
+- (id)renderInfo;
++ (id)keyMapper;
++ (BOOL)propertyIsOptional:;
+@end

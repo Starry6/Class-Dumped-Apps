@@ -1,0 +1,33 @@
+@interface WBSPrivacyProxyAvailabilityManager : NSObject
+@property (nonatomic) BOOL initialized;
+@property (nonatomic) BOOL isPrivacyProxyOnInICloudSettings;
+@property (nonatomic) BOOL isUserAccountInSubscriberTierForPrivacyProxy;
+@property (nonatomic) BOOL isPrivacyProxyOnForEitherTier;
+@property (nonatomic) BOOL isPrivacyProxyFreeTierAvailable;
+@property (nonatomic) BOOL isPrivacyProxyActive;
+@property (nonatomic) BOOL isPrivacyProxyRestrictedToTrackersByUser;
+@property (nonatomic) BOOL isPrivacyProxyPaidTierUnavailableInUserCountry;
+@property (nonatomic) Q state;
+- (BOOL)initialized;
+- (void)setInitialized:;
+- (id)init;
+- (BOOL)isPrivacyProxyActive;
+- (void)setPrivacyProxyEnabled:completionHandler:;
+- (void)dealloc;
+- (void)_updatePrivacyProxyStateWithCompletionHandler:;
+- (void)_registerForDefaultNetworkInterfaceChangeNotifications;
+- (void)observeValueForKeyPath:ofObject:change:context:;
+- (BOOL)isPrivacyProxyPaidTierUnavailableInUserCountry;
+- (void)setPrivacyProxyState:completionHandler:;
+- (BOOL)isPrivacyProxyOnForEitherTier;
+- (unsigned long long)state;
+- (void).cxx_destruct;
+- (BOOL)isUserAccountInSubscriberTierForPrivacyProxy;
+- (BOOL)_isPrivacyProxyActiveForInterface:networkStatuses:;
+- (BOOL)isPrivacyProxyRestrictedToTrackersByUser;
+- (void)_registerForPrivacyProxyChangeNotifications;
+- (BOOL)isPrivacyProxyOnInICloudSettings;
+- (BOOL)isPrivacyProxyFreeTierAvailable;
++ (id)sharedManager;
++ (void)openPrivateRelayICloudSettings;
+@end

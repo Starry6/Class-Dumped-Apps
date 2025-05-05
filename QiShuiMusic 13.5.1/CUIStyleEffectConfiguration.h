@@ -1,0 +1,38 @@
+@interface CUIStyleEffectConfiguration : NSObject
+@property (nonatomic) q state;
+@property (nonatomic) q presentationState;
+@property (nonatomic) q value;
+@property (nonatomic) Q dimension1;
+@property (nonatomic) NSString appearanceName;
+@property (nonatomic) BOOL useSimplifiedEffect;
+@property (nonatomic) BOOL foregroundColorShouldTintEffects;
+@property (nonatomic) double brightnessMultiplier;
+@property (nonatomic) Q colorTemperature;
+@property (nonatomic) double effectScale;
+- (id)init;
+- (void)dealloc;
+- (void)setState:;
+- (void)setColorTemperature:;
+- (void)setPresentationState:;
+- (long long)presentationState;
+- (unsigned long long)dimension1;
+- (void)setUseSimplifiedEffect:;
+- (void)setBrightnessMultiplier:;
+- (BOOL)foregroundColorShouldTintEffects;
+- (BOOL)shouldIgnoreForegroundColor;
+- (void)setValue:;
+- (long long)state;
+- (double)brightnessMultiplier;
+- (BOOL)shouldRespectOutputBlending;
+- (void)setForegroundColorShouldTintEffects:;
+- (id)appearanceName;
+- (unsigned long long)colorTemperature;
+- (id)description;
+- (long long)value;
+- (void)setDimension1:;
+- (void)setEffectScale:;
+- (void)setAppearanceName:;
+- (BOOL)useSimplifiedEffect;
+- (double)effectScale;
+- (id)copyWithZone:;
+@end

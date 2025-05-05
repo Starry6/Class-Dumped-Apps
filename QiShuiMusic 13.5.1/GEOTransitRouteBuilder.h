@@ -1,0 +1,32 @@
+@interface GEOTransitRouteBuilder : GEORouteBuilder
++ (id)outputForSuggestedRoute:withDecoderData:andWaypoints:andArrivalParameters:andCustodian:;
++ (id)outputForSuggestedRoute:withDecoderData:andWaypoints:andArrivalParameters:andCustodian:andRideSelections:andSectionOptions:;
++ (id)selectionsForSuggestedRoute:;
++ (id)optionsForRideSelections:forSuggestionRoute:;
++ (id)_sectionOptionForTripIndex:andSectionOptions:;
++ (void)preprocessClusteredSuggestedRoute:withSectionOptions:andRideSelections:andDecoderData:;
++ (id)_buildStepInfosFromSteps:withDecoderData:andIsWalkingOnlyRoute:andBuildPointData:;
++ (id)_buildTransitStepInfoFromStep:withPreviousStep:andNextStep:andDecoderData:andPointData:;
++ (id)_buildExpandedWalkingStepInfosFromStep:andDecoderData:andPointData:;
++ (id)_buildArrivalStepInfoFromStep:withPointCount:;
++ (id)_appendPointData:toPointData:withContinuity:;
++ (id)_buildCoordinatesForData:andStepInfos:andCustodian:withWaypoints:andArrivalParameters:andCreateLegs:;
++ (double)_totalDistanceForLegs:;
++ (id)_buildStepsForStepInfos:andCustodian:andDecoderData:andSuggestedRoute:andLegs:andPointCount:andRideSelections:andSectionOptions:andCreateSegments:andUpdateTripCount:;
++ (unsigned long long)_stepCountForSegmentWithStartingStepIndex:andStepInfos:;
++ (id)_stepForStepInfoAtIndex:andStepInfos:andSteps:andCustodian:withDecoderData:andSuggestedRoute:andPointCount:;
++ (id)_validPointRangeForStepInfoIndex:andStepInfos:withPointCount:;
++ (id)_walkingStepForStepInfo:withValidPointRange:andStepCount:andCustodian:andDecoderData:andSuggestedRoute:;
++ (id)_segmentForSteps:withRange:andCustodian:andDecoderData:andSuggestedRoute:andRideSelections:andSectionOptions:andUpdateTripCount:;
++ (id)buildRouteSectionsForSuggestedRoute:fromSteps:andSegments:andCoordinates:andDecoderData:;
++ (BOOL)_shouldBreakPointSectionAtStep:previousStep:;
++ (double)_buildPointSectionsInCollection:pointRange:stepIndex:transitLineColor:startDistance:coordinates:fromSteps:andSegments:andDecoderData:;
++ (id)_sectionForSteps:withIndex:andSegment:withIndex:andCoordinates:andPointRange:andBounds:andTransitLineColor:andStartDistance:andDecoderData:;
++ (id)outputForGeometry:andLine:andStops:andCustodian:;
++ (id)_buildPointDataForGeometry:andCreatePointStarts:;
++ (id)_buildStepsForGeometry:andPointStarts:andStopCount:andLine:andCustodian:;
++ (id)_buildSegmentsForGeometry:andStepCount:andPointCount:andCustodian:;
++ (id)_buildPointSectionsFromSteps:andSegments:coordinates:andTransitLineColor:;
++ (double)_buildPointSectionsInCollection:pointRange:stepIndex:transitLineColor:startDistance:andCoordinates:fromSteps:andSegments:;
++ (id)_buildLegsFromSteps:andCoordinates:andCustodian:;
+@end

@@ -1,0 +1,33 @@
+@interface IESECWinSortCellController : IESECWinListKitCellController
+@property (nonatomic) IESECServiceProxy<IESECWinTabLayoutService> tabLayoutService;
+@property (nonatomic) IESECServiceProxy<IESECWinCategoryService> categoryService;
+@property (nonatomic) IESECWinSortSectionController sortSectionController;
+@property (nonatomic) IESECWinCategorySectionController categorySectionController;
+@property (nonatomic) BOOL showSortCell;
+@property (nonatomic) BOOL showSubCategoryCell;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)viewControllerForSortController;
+- (id)categoryService;
+- (id)categorySectionController;
+- (void)configCell;
+- (void)didEndDisplayWithSource:extraParams:;
+- (void)didSelected;
+- (double)heightForModel:itemWidth:bffItemData:;
+- (void)setCategorySectionController:;
+- (void)setCategoryService:;
+- (void)setShowSortCell:;
+- (void)setShowSubCategoryCell:;
+- (void)setSortSectionController:;
+- (void)setTabLayoutService:;
+- (BOOL)showSortCell;
+- (BOOL)showSubCategoryCell;
+- (id)sortSectionController;
+- (id)tabLayoutService;
+- (void)willDisplayWithSource:extraParams:;
+- (void).cxx_destruct;
++ (Class)cellModelClass;
++ (Class)cellClass;
+@end

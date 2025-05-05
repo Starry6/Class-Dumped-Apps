@@ -1,0 +1,31 @@
+@interface BKSTouchDeliveryObservationService : NSObject
+@property (nonatomic) BSServiceConnection connection;
+@property (nonatomic) BSMutableIntegerMap touchIdentifierToObserverLists;
+@property (nonatomic) NSMapTable observersToTouchIdentifiers;
+@property (nonatomic) NSHashTable generalObservers;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)removeObserver:;
+- (id)observersToTouchIdentifiers;
+- (id)init;
+- (id)addObserver:;
+- (id)touchIdentifierToObserverLists;
+- (void)dealloc;
+- (id)_queue_observersForTouchIdentifier:;
+- (id)generalObservers;
+- (BOOL)_queue_removeObserver:forTouchIdentifier:;
+- (BOOL)_queue_addObserver:forTouchIdentifier:;
+- (id)addObserver:forTouchIdentifier:;
+- (void)observeTouchEventDeliveryDidOccur:;
+- (void)setGeneralObservers:;
+- (void)setTouchIdentifierToObserverLists:;
+- (id)connection;
+- (void).cxx_destruct;
+- (void)setConnection:;
+- (void)_connectToTouchDeliveryService;
+- (void)_queue_removeObserversForTouchIdentifier:;
+- (void)setObserversToTouchIdentifiers:;
++ (id)sharedInstance;
+@end

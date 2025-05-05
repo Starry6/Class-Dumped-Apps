@@ -1,0 +1,31 @@
+@interface WebScriptObject : NSObject
+- (id)_init;
+- (void)_initializeScriptDOMNodeImp;
+- (id)valueForKey:;
+- (void)setValue:forKey:;
+- (void)dealloc;
+- (id)stringRepresentation;
+- (id)release;
+- (id)objectAtIndex:;
+- (void)setException:;
+- (id)_rootObject;
+- (id)_imp;
+- (void)_setImp:originRootObject:rootObject:;
+- (void)_setOriginRootObject:andRootObject:;
+- (id)_initWithJSObject:originRootObject:rootObject:;
+- (BOOL)_hasImp;
+- (id)_originRootObject;
+- (BOOL)_isSafeScript;
+- (id)_globalContextRef;
+- (id)callWebScriptMethod:withArguments:;
+- (id)evaluateWebScript:;
+- (void)removeWebScriptKey:;
+- (BOOL)hasWebScriptKey:;
+- (id)webScriptValueAtIndex:;
+- (void)setWebScriptValueAtIndex:value:;
+- (id)JSObject;
+- (id)JSValue;
++ (id)scriptObjectForJSObject:originRootObject:rootObject:;
++ (BOOL)throwException:;
++ (id)_convertValueToObjcValue:originRootObject:rootObject:;
+@end

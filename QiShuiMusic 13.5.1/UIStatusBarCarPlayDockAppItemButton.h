@@ -1,0 +1,35 @@
+@interface UIStatusBarCarPlayDockAppItemButton : UIButton
+@property (nonatomic) BOOL active;
+@property (nonatomic) NSString bundleIdentifier;
+@property (nonatomic) UIImageView iconImageView;
+@property (nonatomic) UIImageView iconHighlightImageView;
+@property (nonatomic) UIImageView badgeView;
+@property (nonatomic) BOOL itemHasBundleIdentifier;
+@property (nonatomic) BOOL hasBadge;
+- (id)badgeView;
+- (void)pressesCancelled:withEvent:;
+- (id)bundleIdentifier;
+- (BOOL)canBecomeFocused;
+- (BOOL)hasBadge;
+- (id)initWithFrame:;
+- (void)setBundleIdentifier:;
+- (void)pressesEnded:withEvent:;
+- (void)setHasBadge:;
+- (void)pressesBegan:withEvent:;
+- (void).cxx_destruct;
+- (id)iconImageView;
+- (void)didUpdateFocusInContext:withAnimationCoordinator:;
+- (void)setActive:;
+- (void)setBadgeView:;
+- (BOOL)isActive;
+- (id)copyWithZone:;
+- (void)setCharge:;
+- (float)charge;
+- (void)setIconImageView:;
+- (void)_buttonPressed:;
+- (BOOL)itemHasBundleIdentifier;
+- (BOOL)shouldShowBadge;
+- (void)setBadgeHidden:animated:;
+- (id)iconHighlightImageView;
+- (void)setIconHighlightImageView:;
+@end

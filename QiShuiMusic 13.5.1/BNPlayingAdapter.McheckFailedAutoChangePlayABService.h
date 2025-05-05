@@ -1,0 +1,2 @@
+@interface BNPlayingAdapter.McheckFailedAutoChangePlayABService : _TtCs12_SwiftObject
+@end

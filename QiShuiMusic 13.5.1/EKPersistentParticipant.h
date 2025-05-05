@@ -1,0 +1,34 @@
+@interface EKPersistentParticipant : EKPersistentObject
+- (id)emailAddress;
+- (void)setLastName:;
+- (id)url;
+- (id)phoneNumber;
+- (id)comment;
+- (id)URLString;
+- (void)setEmailAddress:;
+- (void)setFirstName:;
+- (void)setPhoneNumber:;
+- (void)setUUID:;
+- (id)firstName;
+- (id)owner;
+- (id)lastName;
+- (id)proposedStartDate;
+- (id)displayName;
+- (void)setProposedStartDate:;
+- (id)UUID;
+- (id)copyWithZone:;
+- (void)setComment:;
+- (void)setURLString:;
+- (id)displayNameRaw;
+- (void)setDisplayNameRaw:;
+- (BOOL)scheduleForceSend;
+- (void)setScheduleForceSend:;
+- (id)inviterNameString;
+- (void)setInviterNameString:;
+- (int)scheduleStatus;
+- (int)proposedStartDateStatus;
+- (void)setProposedStartDateStatus:;
+- (void)setScheduleStatus:;
++ (id)propertyKeyForUniqueIdentifier;
++ (id)defaultPropertiesToLoad;
+@end

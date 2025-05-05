@@ -1,0 +1,30 @@
+@interface VCMovieWriter : NSObject
+@property (nonatomic) I startRTPTimeStamp;
+@property (nonatomic) I endRTPTimeStamp;
+@property (nonatomic) C writerMode;
+@property (nonatomic) NSURL outputURL;
+- (void)dealloc;
+- (void)setOutputURL:;
+- (id)outputURL;
+- (void)setStillImageTime:;
+- (id)initWithOutputURL:transactionID:videoCodec:;
+- (void)appendVideoSampleBuffer:cameraStatus:mediaType:;
+- (void)appendAudioSampleBuffer:mediaType:;
+- (void)finishWritingWithHandler:;
+- (BOOL)shouldAppendSampleBuffer:RTPtimeStamp:mediaType:;
+- (BOOL)shouldFinishWritingSampleBuffer:RTPtimeStamp:mediaType:;
+- (void)setEndRTPTimestampWithTimestamp:;
+- (void)setupWriterWithMode:;
+- (unsigned int)startRTPTimeStamp;
+- (void)setStartRTPTimeStamp:;
+- (unsigned int)endRTPTimeStamp;
+- (void)setEndRTPTimeStamp:;
+- (unsigned char)writerMode;
+- (void)setupContectRect:withCaptureHeight:;
+- (id)setupAssetWriterWithWidth:height:transactionID:;
+- (void)setupInput:queue:dispatchGroup:lastPresentationTime:;
+- (void)processSampleQueue:input:lastPresentationTime:;
+- (void)appendMetaData;
+- (void)startWritingAtTime:;
+- (void)setupInputs;
+@end

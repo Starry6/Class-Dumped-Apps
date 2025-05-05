@@ -1,0 +1,30 @@
+@interface FBSMutableSceneClientSettings : FBSSceneClientSettings
+@property (nonatomic) BOOL bls_hasDelegate;
+@property (nonatomic) BOOL bls_supportsAlwaysOn;
+@property (nonatomic) BOOL bls_optsOutOfProcessAssertions;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSOrderedSet layers;
+@property (nonatomic) double preferredLevel;
+@property (nonatomic) q preferredInterfaceOrientation;
+@property (nonatomic) NSString preferredSceneHostIdentifier;
+@property (nonatomic) FBSSceneIdentityToken preferredSceneHostIdentity;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)bls_setSupportsAlwaysOn:;
+- (void)bls_setHasDelegate:;
+- (void)bls_setOptsOutOfProcessAssertions:;
+- (void)_setLayers:;
+- (void)setPreferredInterfaceOrientation:;
+- (id)mutableCopyWithZone:;
+- (id)copyWithZone:;
+- (id)otherSettings;
+- (void)setPreferredLevel:;
+- (void)setPreferredSceneHostIdentifier:;
+- (void)setPreferredSceneHostIdentity:;
++ (BOOL)_isMutable;
+@end

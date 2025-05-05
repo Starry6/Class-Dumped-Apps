@@ -1,0 +1,31 @@
+@interface DJTableViewVMTextViewCell : DJTableViewVMCell
+@property (nonatomic) UITextView textView;
+@property (nonatomic) UILabel placeholderLabel;
+@property (nonatomic) UILabel textCountLabel;
+@property (nonatomic) DJTableViewVMTextViewRow rowVM;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)cellDidLoad;
+- (void)cellWillAppear;
+- (void)refreshLabelsWithTextView:;
+- (void)setTextCountLabel:;
+- (id)textCountLabel;
+- (id)textView;
+- (void)setSelected:animated:;
+- (void)layoutSubviews;
+- (BOOL)becomeFirstResponder;
+- (void)setTextView:;
+- (void).cxx_destruct;
+- (BOOL)resignFirstResponder;
+- (void)textViewDidBeginEditing:;
+- (BOOL)textViewShouldBeginEditing:;
+- (BOOL)textViewShouldEndEditing:;
+- (void)textViewDidEndEditing:;
+- (void)textViewDidChange:;
+- (void)textViewDidChangeSelection:;
+- (BOOL)textView:shouldChangeTextInRange:replacementText:;
+- (id)placeholderLabel;
+- (void)setPlaceholderLabel:;
+@end

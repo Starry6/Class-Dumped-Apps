@@ -1,0 +1,36 @@
+@interface IESLiveSaaSPopupNavigationController : UINavigationController
+@property (nonatomic) UIView backgroundView;
+@property (nonatomic) double pushTransitionDuration;
+@property (nonatomic) <IESLiveSaaSAudienceRoomAwareness> awareness;
+@property (nonatomic) IESLiveSaaSPopupTransition animator;
+@property (nonatomic) IESLiveSaaSPopupNavigationBar navBar;
+@property (nonatomic) BOOL disableSwipeGesture;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)awareness;
+- (id)initWithRootViewController:withDisableGesture:;
+- (double)pushTransitionDuration;
+- (void)setAwareness:;
+- (void)setDisableSwipeGesture:;
+- (void)setPushTransitionDuration:;
+- (id)animator;
+- (void)pushViewController:animated:;
+- (id)backgroundView;
+- (void)dealloc;
+- (id)initWithRootViewController:;
+- (void)setAnimator:;
+- (void)navigationController:didShowViewController:animated:;
+- (void)viewWillDisappear:;
+- (void)navigationController:willShowViewController:animated:;
+- (void).cxx_destruct;
+- (void)setBackgroundView:;
+- (void)viewDidAppear:;
+- (BOOL)gestureRecognizerShouldBegin:;
+- (id)navigationController:animationControllerForOperation:fromViewController:toViewController:;
+- (void)viewDidLoad;
+- (BOOL)disableSwipeGesture;
+- (id)navBar;
+- (void)setNavBar:;
+@end

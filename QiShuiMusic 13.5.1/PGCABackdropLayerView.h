@@ -1,0 +1,33 @@
+@interface PGCABackdropLayerView : UIView
+@property (nonatomic) PGCABackdropLayer layer;
+@property (nonatomic) PGCABackdropLayerView groupLeader;
+@property (nonatomic) NSHashTable dependents;
+@property (nonatomic) UIColor customBackgroundColor;
+- (id)groupLeader;
+- (void)setCustomBackgroundColor:;
+- (void)dealloc;
+- (void)_ensureDependents;
+- (void)_enumerateDependents:;
+- (BOOL)pointInside:withEvent:;
+- (id)dependents;
+- (void)setGroupLeader:;
+- (id)initWithCoder:;
+- (id)customBackgroundColor;
+- (id)hitTest:withEvent:;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)didMoveToWindow;
+- (id)_preferredBackgroundColor;
+- (void)updateEffects;
+- (id)initWithFrame:captureOnly:;
+- (long long)_preferredEffect;
+- (BOOL)_wantsCapturedBlur;
+- (BOOL)_isCaptureOnly;
+- (BOOL)_hasAnyDependentsThatWantsCapturedBlur;
+- (void)_addDependent:;
+- (void)_removeDependent:;
+- (BOOL)_isTransparentOrHasTransparentAncestor;
++ (Class)layerClass;
++ (id)reducedTransparencyColor;
++ (id)materialFilters;
+@end

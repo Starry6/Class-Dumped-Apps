@@ -1,0 +1,2 @@
+@interface CNUIUserActionTargetDiscoveringReplaySubject : CNReplaySubject
+@end

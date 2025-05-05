@@ -1,0 +1,38 @@
+@interface IESLiveSaaSMessageHTTPTransport : NSObject
+@property (nonatomic) <IESLiveSaaSMessageConfig> configure;
+@property (nonatomic) NSMutableArray monitorMessageArray;
+@property (nonatomic) BOOL hadFetchHistoryMsgs;
+@property (nonatomic) <IESLiveMonitor> monitor;
+@property (nonatomic) double messagePollingTimestamp;
+@property (nonatomic) q messagePollingCounter;
+@property (nonatomic) <IESLiveSaaSMessageTransportDelegate> transportDelegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)hadFetchHistoryMsgs;
+- (void)inDataQueue:;
+- (void)increaseDelay;
+- (id)initWithConfigure:;
+- (long long)messagePollingCounter;
+- (double)messagePollingTimestamp;
+- (id)monitorMessageArray;
+- (void)nextMessageLoopIn:;
+- (void)pollMessage;
+- (void)resetDelay;
+- (void)setConfigure:;
+- (void)setHadFetchHistoryMsgs:;
+- (void)setMessagePollingCounter:;
+- (void)setMessagePollingTimestamp:;
+- (void)setMonitorMessageArray:;
+- (void)setNeedReconnect;
+- (void)startMessageLoop;
+- (id)configure;
+- (void)disconnect;
+- (void)setMonitor:;
+- (void).cxx_destruct;
+- (void)connect;
+- (id)monitor;
+- (void)setTransportDelegate:;
+- (id)transportDelegate;
+@end

@@ -1,0 +1,32 @@
+@interface STBatteryStatusDomainData : NSObject
+@property (nonatomic) Q chargingState;
+@property (nonatomic) Q percentCharge;
+@property (nonatomic) BOOL batterySaverModeActive;
+@property (nonatomic) NSString chargingDescription;
+@property (nonatomic) Q chargingDescriptionType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)isBatterySaverModeActive;
+- (unsigned long long)chargingDescriptionType;
+- (unsigned long long)chargingState;
+- (id)init;
+- (unsigned long long)percentCharge;
+- (id)dataByApplyingDiff:;
+- (id)succinctDescriptionBuilder;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)diffFromData:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)succinctDescription;
+- (id)description;
+- (id)mutableCopyWithZone:;
+- (id)chargingDescription;
+- (id)descriptionBuilderWithMultilinePrefix:;
+- (BOOL)isEqual:;
+- (id)descriptionWithMultilinePrefix:;
+- (id)copyWithZone:;
++ (BOOL)supportsSecureCoding;
+@end

@@ -1,0 +1,36 @@
+@interface AWEIMMsgBoxAutoManagementContainerViewController : UIViewController
+@property (nonatomic) UIButton closeButton;
+@property (nonatomic) <AWEIMMsgBoxAutoManagementContainerViewProtocol> delegate;
+@property (nonatomic) UIImageView msgboxImageView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) YYLabel subTitleLabel;
+@property (nonatomic) UIButton tapBtn;
+@property (nonatomic) UIButton cancelBtn;
+@property (nonatomic) UIButton confirmBtn;
+- (id)msgboxImageView;
+- (id)cancelBtn;
+- (id)confirmBtn;
+- (void)confirmButtonTapped;
+- (void)setCancelBtn:;
+- (void)setConfirmBtn:;
+- (void)setMsgboxImageView:;
+- (void)setTapBtn:;
+- (id)tapBtn;
+- (void)updateDataCount:;
+- (void)viewAllBtnTapped;
+- (void)setupConstraints;
+- (id)init;
+- (void)setTitleLabel:;
+- (void)setDelegate:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)preferredContentSize;
+- (id)style;
+- (id)titleLabel;
+- (void)setupUI;
+- (id)subTitleLabel;
+- (void)setSubTitleLabel:;
+- (id)closeButton;
+- (void)setCloseButton:;
+- (void)closeButtonTapped;
+@end

@@ -1,0 +1,31 @@
+@interface ASAssetQuery : NSObject
+@property (nonatomic) NSString assetType;
+@property (nonatomic) NSString sessionIdentifier;
+@property (nonatomic) NSArray results;
+@property (nonatomic) MAAssetQuery maQuery;
+@property (nonatomic) NSPredicate predicate;
+@property (nonatomic) BOOL queriesLocalAssetInformationOnly;
+@property (nonatomic) double networkTimeout;
+- (id)assetType;
+- (BOOL)queriesLocalAssetInformationOnly;
+- (void)startQuery:;
+- (id)sessionIdentifier;
+- (id)maQuery;
+- (id)initWithAssetType:sessionIdentifier:;
+- (void)setMaQuery:;
+- (id)predicate;
+- (void)setSessionIdentifier:;
+- (double)networkTimeout;
+- (id)results;
+- (id)runQueryForInfoReturnError:;
+- (void)setPredicate:;
+- (void)setAssetType:;
+- (id)runQueryAndReturnError:;
+- (void).cxx_destruct;
+- (void)stopQuery;
+- (void)setNetworkTimeout:;
+- (void)setQueriesLocalAssetInformationOnly:;
+- (id)initWithAssetType:;
+- (void)setResults:;
++ (id)queryPredicateForProperties:;
+@end

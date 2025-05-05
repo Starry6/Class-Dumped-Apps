@@ -1,0 +1,2 @@
+@interface IESECLiveAudienceEntry : NSObject
+@end

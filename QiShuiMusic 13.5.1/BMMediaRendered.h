@@ -1,0 +1,33 @@
+@interface BMMediaRendered : BMEventBase
+@property (nonatomic) BOOL hasAbsoluteTimestamp;
+@property (nonatomic) double absoluteTimestamp;
+@property (nonatomic) NSArray mediaAttributes;
+@property (nonatomic) BOOL hasIsOnScreen;
+@property (nonatomic) BOOL isOnScreen;
+@property (nonatomic) BOOL hasIsFirstView;
+@property (nonatomic) BOOL isFirstView;
+@property (nonatomic) I dataVersion;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)isOnScreen;
+- (void)setHasAbsoluteTimestamp:;
+- (BOOL)hasAbsoluteTimestamp;
+- (void)writeTo:;
+- (double)absoluteTimestamp;
+- (unsigned int)dataVersion;
+- (id)initByReadFrom:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)serialize;
+- (BOOL)isEqual:;
+- (id)initWithAbsoluteTimestamp:mediaAttributes:isOnScreen:isFirstView:;
+- (id)mediaAttributes;
+- (BOOL)hasIsOnScreen;
+- (void)setHasIsOnScreen:;
+- (BOOL)hasIsFirstView;
+- (void)setHasIsFirstView:;
+- (BOOL)isFirstView;
++ (id)eventWithData:dataVersion:;
+@end

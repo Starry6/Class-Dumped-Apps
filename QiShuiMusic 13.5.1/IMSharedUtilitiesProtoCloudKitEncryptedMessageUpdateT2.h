@@ -1,0 +1,33 @@
+@interface IMSharedUtilitiesProtoCloudKitEncryptedMessageUpdateT2 : PBCodable
+@property (nonatomic) BOOL hasVersion;
+@property (nonatomic) I version;
+@property (nonatomic) BOOL hasMsgid;
+@property (nonatomic) NSString msgid;
+@property (nonatomic) BOOL hasSr;
+@property (nonatomic) NSString sr;
+@property (nonatomic) BOOL hasPadding;
+@property (nonatomic) NSData padding;
+- (void)setHasVersion:;
+- (void)dealloc;
+- (void)setVersion:;
+- (unsigned int)version;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (BOOL)hasVersion;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void)setPadding:;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)padding;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)msgid;
+- (void)setMsgid:;
+- (BOOL)hasPadding;
+- (BOOL)hasMsgid;
+- (BOOL)hasSr;
+- (id)sr;
+- (void)setSr:;
+@end

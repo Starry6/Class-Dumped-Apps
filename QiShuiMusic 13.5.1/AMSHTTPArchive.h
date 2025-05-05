@@ -1,0 +1,36 @@
+@interface AMSHTTPArchive : NSObject
+@property (nonatomic) NSData backingJSONData;
+@property (nonatomic) BOOL compressed;
+@property (nonatomic) NSData JSONData;
+@property (nonatomic) NSString urlString;
+- (id)urlString;
+- (id)initWithJSONObject:;
+- (id)initWithCoder:;
+- (BOOL)isCompressed;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (void)setBackingJSONData:;
+- (void)logHARData;
+- (void)setCompressed:;
+- (void)setUrlString:;
+- (id)backingJSONData;
+- (id)initWithHTTPArchiveTaskInfo:;
+- (id)JSONData;
+- (id)initWithMetrics:requestData:responseData:;
+- (BOOL)writeToDiskWithError:compressed:;
+- (BOOL)writeToDiskWithError:compressed:appendCombined:;
++ (id)directory;
++ (id)ams_generateRequestDictionaryForMetrics:requestData:;
++ (BOOL)supportsSecureCoding;
++ (id)ams_generateHeadersArrayForHTTPHeaders:;
++ (id)ams_generateCommentsStringForMetrics:;
++ (id)merge:;
++ (id)ams_generateContentDictionaryForResponse:responseData:;
++ (id)merge:withEstimatedFileSizeLimit:;
++ (id)_createJSONObjectForTaskMetrics:requestData:responseData:;
++ (id)ams_dateFormatterForTimeZone:;
++ (double)_timeIntervalFromFilename:;
++ (id)_createJSONObjectForEntries:;
++ (void)removeHTTPArchiveFilesOlderThanDate:;
++ (id)ams_generateResponseDictionaryForMetrics:responseData:;
+@end

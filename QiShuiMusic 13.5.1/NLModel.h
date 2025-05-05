@@ -1,0 +1,37 @@
+@interface NLModel : NSObject
+@property (nonatomic) NLModelConfiguration configuration;
+- (id)initWithData:error:;
+- (void)dealloc;
+- (id)data;
+- (id)initWithMLModel:error:;
+- (id)configuration;
+- (void).cxx_destruct;
+- (unsigned long long)systemVersion;
+- (id)initWithContentsOfURL:error:;
+- (id)mlModel;
+- (id)labelMap;
+- (id)predictedLabelForString:;
+- (id)predictedLabelsForTokens:;
+- (BOOL)writeMLModelToURL:options:error:;
+- (id)gazetteer;
+- (id)initWithConfiguration:modelImpl:;
+- (id)initWithData:mlModel:error:;
+- (id)initWithClassifierMLModel:;
+- (BOOL)writeToURL:atomically:error:;
+- (BOOL)writeMLModelToURL:atomically:error:;
+- (id)labelArray;
+- (id)vocabularyMap;
+- (id)documentFrequencyMap;
+- (id)embedding;
+- (id)embeddingData;
+- (id)predictedLabelArraysForTokenArrays:;
+- (id)predictedLabelHypothesesForString:maximumCount:;
+- (id)predictedLabelHypothesesForTokens:maximumCount:;
+- (id)classifierTestResultsWithDataProvider:;
+- (id)sequenceTestResultsWithDataProvider:;
+- (id)testResultsWithDataProvider:;
+- (id)testResultsWithDataSet:;
++ (id)modelWithContentsOfURL:error:;
++ (id)modelWithMLModel:error:;
++ (id)modelWithData:error:;
+@end

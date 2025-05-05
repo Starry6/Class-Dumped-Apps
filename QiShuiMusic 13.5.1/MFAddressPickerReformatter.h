@@ -1,0 +1,24 @@
+@interface MFAddressPickerReformatter : NSObject
+- (void).cxx_destruct;
+- (void)setFontSize:;
+- (void)setMaximumWidth:;
+- (unsigned long long)_defaultOptions;
+- (void)setAddresses:;
+- (void)setAttributesDisabled:;
+- (void)setMinimumFontSize:maximumFontSize:;
+- (unsigned long long)numberOfReformattedAddresses;
+- (id)reformattedAddressAtIndex:;
+- (id)reformattedAddressStringAtIndex:;
+- (void)_invalidateReformattedAddresses;
+- (void)_updateReformattedAddressesIfNecessary;
+- (void)_determineFontSize:;
+- (void)_truncateIdenticalLocalPartsWithDifferentDomainParts;
+- (void)_truncateIdenticalLocalPartsWithDifferentDomainPartsWithTailLength:options:;
+- (void)_attemptUniquingDisplayedStrings;
+- (BOOL)_attemptUniquingDisplayedStringsUsingBlock:;
+- (id)_reformattedAddressesByDisplayedStrings;
+- (void)_expandAllLocalParts;
+- (BOOL)_reformattedAddressesByDisplayedStringsAreUnique:;
+- (id)_saveMiddleTruncationRanges;
+- (void)_restoreMiddleTruncationRanges:;
+@end

@@ -1,0 +1,2 @@
+@interface HTSLiveActivityLiuyanRoot : GPBRootObject
+@end

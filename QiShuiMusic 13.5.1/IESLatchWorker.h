@@ -1,0 +1,34 @@
+@interface IESLatchWorker : NSObject
+@property (nonatomic) <IESLatchWorkerDelegate> delegate;
+@property (nonatomic) JsWorkerIOS worker;
+@property (nonatomic) NSString latchID;
+@property (nonatomic) NSString href;
+@property (nonatomic) BOOL firstMonitor;
+@property (nonatomic) BOOL enableXBridge;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)latchID;
+- (void)createWorkerWithBridgeExcutor:;
+- (BOOL)enableXBridge;
+- (BOOL)firstMonitor;
+- (id)initWithDelegate:latchID:href:enableXBridge:bridgeExcutor:;
+- (void)p_monitorDurationIfNeeded;
+- (void)setEnableXBridge:;
+- (void)setFirstMonitor:;
+- (void)setLatchID:;
+- (void)setHref:;
+- (id)href;
+- (void)terminate;
+- (void)handleMessage:;
+- (void)handleError:;
+- (void)setDelegate:;
+- (void)evaluateScript:;
+- (BOOL)isRunning;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)worker;
+- (void)setWorker:;
+- (void)postMessage:;
+@end

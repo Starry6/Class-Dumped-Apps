@@ -1,0 +1,36 @@
+@interface UIKeyboardEmojiCategory : NSObject
+@property (nonatomic) q categoryType;
+@property (nonatomic) NSArray emoji;
+@property (nonatomic) q lastVisibleFirstEmojiIndex;
+@property (nonatomic) NSString name;
+@property (nonatomic) NSString displaySymbol;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (long long)categoryType;
+- (id)name;
+- (void)setCategoryType:;
+- (void)releaseCategories;
+- (id)emoji;
+- (void)setEmoji:;
+- (long long)lastVisibleFirstEmojiIndex;
+- (void)setLastVisibleFirstEmojiIndex:;
+- (id)displaySymbol;
++ (id)localizedStringForKey:;
++ (BOOL)isRTLMode;
++ (id)categories;
++ (id)enabledCategoryIndexes;
++ (id)allowedCategoryIndexes;
++ (long long)categoryTypeForCategoryIndex:;
++ (unsigned long long)categoryIndexForCategoryType:;
++ (long long)numberOfCategories;
++ (id)categoriesByType;
++ (id)professionSkinToneEmojiBaseKey:;
++ (unsigned long long)hasVariantsForEmoji:;
++ (id)emojiRecentsFromPreferences;
++ (id)loadPrecomputedEmojiFlagCategory;
++ (id)emojiCategoryStringForCategoryType:;
++ (long long)emojiCategoryTypeForCategoryString:;
++ (id)categoryForType:;
++ (id)displayName:;
++ (id)fallbackDisplayName:;
+@end

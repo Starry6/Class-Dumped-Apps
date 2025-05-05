@@ -1,0 +1,2 @@
+@interface IESECLiveInteractionRoot : GPBRootObject
+@end

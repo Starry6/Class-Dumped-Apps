@@ -1,0 +1,30 @@
+@interface CJPayBaseGuideInfoModel : JSONModel
+@property (nonatomic) BOOL needGuide;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSDictionary protocolGroupNames;
+@property (nonatomic) NSArray<CJPayMemAgreementModel> protocoList;
+@property (nonatomic) NSString buttonText;
+@property (nonatomic) NSString guideMessage;
+@property (nonatomic) NSString voucherAmount;
+@property (nonatomic) BOOL isButtonFlick;
+- (void)setProtocoList:;
+- (id)guideMessage;
+- (BOOL)isButtonFlick;
+- (BOOL)needGuide;
+- (id)protocoList;
+- (id)protocolGroupNames;
+- (void)setGuideMessage:;
+- (void)setIsButtonFlick:;
+- (void)setNeedGuide:;
+- (void)setProtocolGroupNames:;
+- (void)setVoucherAmount:;
+- (id)voucherAmount;
+- (id)buttonText;
+- (void)setTitle:;
+- (id)title;
+- (void).cxx_destruct;
+- (void)setButtonText:;
++ (id)basicDict;
++ (id)keyMapper;
++ (BOOL)propertyIsOptional:;
+@end

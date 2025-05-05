@@ -1,0 +1,36 @@
+@interface GEOLogMsgEventTripDepartureFeedback : PBCodable
+@property (nonatomic) BOOL hasTransportMode;
+@property (nonatomic) NSInteger transportMode;
+@property (nonatomic) BOOL hasDistanceFromOrigin;
+@property (nonatomic) double distanceFromOrigin;
+@property (nonatomic) BOOL hasTimeFromOrigin;
+@property (nonatomic) double timeFromOrigin;
+- (void)readAll:;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (int)transportMode;
+- (void)setTransportMode:;
+- (void)setHasTransportMode:;
+- (BOOL)hasTransportMode;
+- (id)transportModeAsString:;
+- (int)StringAsTransportMode:;
+- (double)distanceFromOrigin;
+- (void)setDistanceFromOrigin:;
+- (void)setHasDistanceFromOrigin:;
+- (BOOL)hasDistanceFromOrigin;
+- (double)timeFromOrigin;
+- (void)setTimeFromOrigin:;
+- (void)setHasTimeFromOrigin:;
+- (BOOL)hasTimeFromOrigin;
++ (BOOL)isValid:;
+@end

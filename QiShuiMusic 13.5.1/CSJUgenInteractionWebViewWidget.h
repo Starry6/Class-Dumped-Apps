@@ -1,0 +1,31 @@
+@interface CSJUgenInteractionWebViewWidget : UgenWidget
+@property (nonatomic) CSJWKWebViewClient webView;
+@property (nonatomic) CSJInteractionWebViewJSBridgeHandler jsbHandler;
+@property (nonatomic) CSJInteractionWebViewParamModel paramModel;
+@property (nonatomic) BOOL didAppear;
+@property (nonatomic) BOOL showInteraction;
+@property (nonatomic) NSString src;
+- (BOOL)showInteraction;
+- (id)jsbHandler;
+- (void)p_loadRequestWithUrl:;
+- (void)p_parseWidgetParams;
+- (void)p_setupJSBHandler;
+- (void)p_setupWebViewWithFrame:;
+- (id)paramModel;
+- (void)setDidAppear:;
+- (void)setJsbHandler:;
+- (void)setParamModel:;
+- (void)setShowInteraction:;
+- (id)ugenView;
+- (void)viewSizeDidChange:;
+- (void)setWebView:;
+- (id)init;
+- (void)dealloc;
+- (id)webView;
+- (void)layout;
+- (void).cxx_destruct;
+- (void)didAppear;
+- (id)src;
+- (void)setSrc:;
+- (void)render;
+@end

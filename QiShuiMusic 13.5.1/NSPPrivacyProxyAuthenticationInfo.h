@@ -1,0 +1,37 @@
+@interface NSPPrivacyProxyAuthenticationInfo : PBCodable
+@property (nonatomic) BOOL hasAuthType;
+@property (nonatomic) NSInteger authType;
+@property (nonatomic) NSString authURL;
+@property (nonatomic) BOOL hasAccessTokenURL;
+@property (nonatomic) NSString accessTokenURL;
+@property (nonatomic) Q accessTokenTypesCount;
+@property (nonatomic) ^I accessTokenTypes;
+- (void)setHasAuthType:;
+- (void)setAccessTokenTypes:count:;
+- (void)dealloc;
+- (void)setAccessTokenURL:;
+- (void)setAuthType:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (int)authType;
+- (id)authURL;
+- (void)mergeFrom:;
+- (unsigned long long)accessTokenTypesCount;
+- (void).cxx_destruct;
+- (id)accessTokenURL;
+- (BOOL)readFrom:;
+- (BOOL)hasAuthType;
+- (id)description;
+- (unsigned int)accessTokenTypesAtIndex:;
+- (id)dictionaryRepresentation;
+- (void)addAccessTokenTypes:;
+- (id)authTypeAsString:;
+- (id)accessTokenTypes;
+- (int)StringAsAuthType:;
+- (BOOL)isEqual:;
+- (void)clearAccessTokenTypes;
+- (void)setAuthURL:;
+- (id)copyWithZone:;
+- (BOOL)hasAccessTokenURL;
+@end

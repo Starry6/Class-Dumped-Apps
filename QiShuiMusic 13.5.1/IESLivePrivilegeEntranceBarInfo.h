@@ -1,0 +1,34 @@
+@interface IESLivePrivilegeEntranceBarInfo : NSObject
+@property (nonatomic) NSArray touchPositions;
+@property (nonatomic) GPBInt64ObjectDictionary touchPositionsMap;
+@property (nonatomic) NSDictionary freqStrategyMap;
+@property (nonatomic) HTSLiveTouchPosition entranceDetail;
+@property (nonatomic) NSArray errors;
+@property (nonatomic) BOOL isTouchEnd;
+@property (nonatomic) NSString touchPositionsStr;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)freqStrategyMap;
+- (id)entranceDetail;
+- (id)getUnexpiredMapFromFreqStrategyMap:shouldUpdateExpiredTime:;
+- (BOOL)isTouchEnd;
+- (void)setEntranceDetail:;
+- (void)setFreqStrategyMap:;
+- (void)setIsTouchEnd:;
+- (void)setTouchPositions:;
+- (void)setTouchPositionsMap:;
+- (void)setupWithData:;
+- (void)setupWithGiftTouchPositions:;
+- (void)setupWithTouchPositionsMap:;
+- (id)touchPositions;
+- (id)touchPositionsMap;
+- (id)touchPositionsStr;
+- (void)updateLocalStrategyWithTouchPositionStr:;
+- (void)updateTouchPositions:withFreqStrategyMap:;
+- (void)setErrors:;
+- (void).cxx_destruct;
+- (id)errors;
++ (id)createGiftDynamicOperationInfoWithData:;
+@end

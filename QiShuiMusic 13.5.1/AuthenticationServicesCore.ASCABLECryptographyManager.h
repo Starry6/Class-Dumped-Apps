@@ -1,0 +1,2 @@
+@interface AuthenticationServicesCore.ASCABLECryptographyManager : _TtCs12_SwiftObject
+@end

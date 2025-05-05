@@ -1,0 +1,38 @@
+@interface TUSearchResults : NSObject
+@property (nonatomic) NSString searchTerm;
+@property (nonatomic) NSMutableArray resultGroups;
+@property (nonatomic) NSMutableArray allSearchItemsCache;
+@property (nonatomic) NSMutableArray allDataItemsCache;
+@property (nonatomic) NSArray allSearchItems;
+@property (nonatomic) NSArray allDataItems;
+@property (nonatomic) q numberOfSections;
+@property (nonatomic) q numberOfResults;
+@property (nonatomic) TUSearchController searchController;
+- (void)setSearchController:;
+- (void)_clearCaches;
+- (void)setSearchTerm:;
+- (id)searchTerm;
+- (void).cxx_destruct;
+- (id)description;
+- (long long)numberOfSections;
+- (id)searchController;
+- (id)copyWithZone:;
+- (long long)numberOfResults;
+- (void)addSearchResults:;
+- (id)allSearchItems;
+- (id)initWithSearchTerm:shouldAddAdhocResults:;
+- (id)resultGroupForSection:;
+- (void)finalizeSearchResults;
+- (void)removeDuplicateResults;
+- (void)addAdhocResultGroup;
+- (void)addResultGroup:;
+- (void)removeSearchItem:;
+- (long long)numberOfTableViewRows;
+- (id)allDataItems;
+- (id)resultGroups;
+- (void)setResultGroups:;
+- (id)allSearchItemsCache;
+- (void)setAllSearchItemsCache:;
+- (id)allDataItemsCache;
+- (void)setAllDataItemsCache:;
+@end

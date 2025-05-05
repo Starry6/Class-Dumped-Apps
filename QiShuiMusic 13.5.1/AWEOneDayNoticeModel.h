@@ -1,0 +1,37 @@
+@interface AWEOneDayNoticeModel : IESIMBaseApiModel
+@property (nonatomic) IESIMOneDayLifeStoryModel lifeStoryModel;
+@property (nonatomic) NSMutableArray fromUser;
+@property (nonatomic) NSString content;
+@property (nonatomic) NSNumber mergeCount;
+@property (nonatomic) BOOL isExpired;
+@property (nonatomic) IESIMCommentModel commentModel;
+@property (nonatomic) double commentH;
+@property (nonatomic) double nameW;
+@property (nonatomic) double desAndTimeH;
+@property (nonatomic) NSString descAndTime;
+- (void)setDesAndTimeH:;
+- (void)setDescAndTime:;
+- (double)commentH;
+- (id)commentModel;
+- (double)desAndTimeH;
+- (id)descAndTime;
+- (id)lifeStoryModel;
+- (id)mergeCount;
+- (double)nameW;
+- (void)setCommentH:;
+- (void)setCommentModel:;
+- (void)setFromUser:;
+- (void)setLifeStoryModel:;
+- (void)setMergeCount:;
+- (void)setNameW:;
+- (id)content;
+- (void)setContent:;
+- (BOOL)isExpired;
+- (void).cxx_destruct;
+- (id)fromUser;
+- (void)setIsExpired:;
++ (id)commentModelJSONTransformer;
++ (id)fromUserJSONTransformer;
++ (id)lifeStoryModelJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

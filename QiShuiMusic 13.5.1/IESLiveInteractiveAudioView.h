@@ -1,0 +1,34 @@
+@interface IESLiveInteractiveAudioView : UIView
+@property (nonatomic) UIImageView backgroundImageView;
+@property (nonatomic) UIImageView centerAvatorView;
+@property (nonatomic) BOOL isAnimated;
+@property (nonatomic) NSMutableArray urlArray;
+@property (nonatomic) UIImageView<IESLiveWebPPlayer> animationViewLoop;
+@property (nonatomic) IESLiveVoiceWave limitVoiceWave;
+@property (nonatomic) UIImage defaultSpeakingImage;
+- (id)animationViewLoop;
+- (id)centerAvatorView;
+- (id)defaultSpeakingImage;
+- (id)initWithFrame:andURLArray:;
+- (BOOL)isLimitVoiceWaveValid:;
+- (id)limitVoiceWave;
+- (void)setAnimationViewLoop:;
+- (void)setCenterAvatorView:;
+- (void)setDefaultSpeakingImage:;
+- (void)setIsAnimated:;
+- (void)setLimitVoiceWave:;
+- (void)setUrlArray:;
+- (void)startMultiTalkingAnimation;
+- (void)stopMultiTalkingAnimation;
+- (void)updateAudioAnimation:;
+- (void)updateAvatarURLList:;
+- (void)updateAvatorUI;
+- (void)updateVoiceWaveWithMicDress:userID:;
+- (id)urlArray;
+- (id)backgroundImageView;
+- (id)init;
+- (BOOL)isAnimated;
+- (void).cxx_destruct;
+- (void)setupUI;
+- (void)setBackgroundImageView:;
+@end

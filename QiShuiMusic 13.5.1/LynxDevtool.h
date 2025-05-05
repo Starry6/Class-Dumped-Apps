@@ -1,0 +1,36 @@
+@interface LynxDevtool : NSObject
+@property (nonatomic) <LynxBaseInspectorOwner> owner;
+- (void)onLoadFromURL:initData:postURL:;
+- (void)attachLynxView:;
+- (void)destroyDebugger;
+- (void)handleLongPress;
+- (void)onMovedToWindow;
+- (void)onStandaloneRuntimeLoadFromURL:;
+- (long long)attachDebugBridge;
+- (void)attachLynxUIOwner:;
+- (id)debugInfoUrl;
+- (void)downloadResource:callback:;
+- (id)initWithLynxView:debuggable:;
+- (void)onBackgroundRuntimeCreated:;
+- (void)onEnterBackground;
+- (void)onEnterForeground;
+- (void)onFirstScreen;
+- (void)onGlobalPropsUpdated:;
+- (void)onLoadFinished;
+- (void)onLoadFromBundle:withURL:initData:;
+- (void)onLoadFromLocalFile:withURL:initData:;
+- (void)onPageUpdate;
+- (void)onPerfMetricsEvent:withData:;
+- (void)onReceiveMessageEvent:;
+- (void)onTemplateAssemblerCreated:;
+- (void)onTemplateLoadSuccess:;
+- (void)setDispatchMessageEventBlock:;
+- (void)setRuntimeId:;
+- (void)setSharedVM:;
+- (void)dealloc;
+- (void)setOwner:;
+- (id)owner;
+- (void).cxx_destruct;
+- (void)registerModule:;
+- (void)showErrorMessage:;
+@end

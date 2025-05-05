@@ -1,0 +1,30 @@
+@interface ARVisualLocalizationResultData : NSObject
+@property (nonatomic) BOOL secure;
+@property (nonatomic) VLLocalizationResult localizationResult;
+@property (nonatomic) q errorCode;
+@property (nonatomic) VLLocalizationDebugInfo debugInfo;
+@property (nonatomic) CLLocation location;
+@property (nonatomic) double heading;
+@property (nonatomic) q algorithmVersion;
+@property (nonatomic) double undulation;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)isSecure;
+- (double)heading;
+- (long long)errorCode;
+- (id)debugInfo;
+- (double)undulation;
+- (id)initWithCoder:;
+- (id)location;
+- (void)encodeWithCoder:;
+- (void)setLocation:;
+- (void)setErrorCode:;
+- (void).cxx_destruct;
+- (double)timestamp;
+- (long long)algorithmVersion;
+- (id)initWithVLLocalizationResult:errorCode:debugInfo:heading:inputLocation:algorithmVersion:undulation:;
+- (id)localizationResult;
++ (BOOL)supportsSecureCoding;
+@end

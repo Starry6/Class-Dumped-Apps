@@ -1,0 +1,2 @@
+@interface IESIMSaaSKitContextManager : NSObject
+@end

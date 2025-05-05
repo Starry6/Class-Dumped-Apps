@@ -1,0 +1,35 @@
+@interface MLAppleWordTaggerParameters : NSObject
+@property (nonatomic) Q revision;
+@property (nonatomic) NSString language;
+@property (nonatomic) NSString inputFeatureName;
+@property (nonatomic) NSString tokensOutputFeatureName;
+@property (nonatomic) NSString tokenTagsOutputFeatureName;
+@property (nonatomic) NSString tokenLocationsOutputFeatureName;
+@property (nonatomic) NSString tokenLengthsOutputFeatureName;
+@property (nonatomic) NSData modelParameterData;
+@property (nonatomic) NSArray tagNames;
+@property (nonatomic) NSDictionary metadata;
+- (void)setLanguage:;
+- (id)language;
+- (id)metadata;
+- (void)setRevision:;
+- (void)setMetadata:;
+- (void).cxx_destruct;
+- (unsigned long long)revision;
+- (id)tagNames;
+- (id)inputFeatureName;
+- (void)setInputFeatureName:;
+- (id)modelParameterData;
+- (void)setModelParameterData:;
+- (id)initWithData:language:inputFeatureName:tokensFeatureName:tokenTagsFeatureName:tokenLocationsFeatureName:tokenLengthsFeatureName:modelData:tagNames:metadata:error:;
+- (id)initWithData:language:inputFeatureName:tokensFeatureName:tokenTagsFeatureName:tokenLocationsFeatureName:tokenLengthsFeatureName:modelData:tagNames:error:;
+- (id)tokensOutputFeatureName;
+- (void)setTokensOutputFeatureName:;
+- (id)tokenTagsOutputFeatureName;
+- (void)setTokenTagsOutputFeatureName:;
+- (id)tokenLocationsOutputFeatureName;
+- (void)setTokenLocationsOutputFeatureName:;
+- (id)tokenLengthsOutputFeatureName;
+- (void)setTokenLengthsOutputFeatureName:;
+- (void)setTagNames:;
+@end

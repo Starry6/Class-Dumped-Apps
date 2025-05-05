@@ -1,0 +1,2 @@
+@interface BSUIResolutionClass : NSObject
+@end

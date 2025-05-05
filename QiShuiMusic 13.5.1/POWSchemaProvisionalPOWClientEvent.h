@@ -1,0 +1,33 @@
+@interface POWSchemaProvisionalPOWClientEvent : SISchemaTopLevelUnionType
+@property (nonatomic) SISchemaRequestLinkInfo link;
+@property (nonatomic) BOOL hasLink;
+@property (nonatomic) POWSchemaProvisionalPOWUsage usage;
+@property (nonatomic) BOOL hasUsage;
+@property (nonatomic) NSData jsonData;
+@property (nonatomic) Q whichEvent_Type;
+- (id)link;
+- (id)usage;
+- (id)qualifiedMessageName;
+- (BOOL)isProvisional;
+- (id)initWithJSON:;
+- (BOOL)hasUsage;
+- (int)getAnyEventType;
+- (void)setLink:;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)getTypeId;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void)setHasLink:;
+- (id)getVersion;
+- (void)deleteLink;
+- (void)setHasUsage:;
+- (void).cxx_destruct;
+- (void)setUsage:;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)hasLink;
+- (void)deleteUsage;
+- (BOOL)isEqual:;
+- (unsigned long long)whichEvent_Type;
+@end

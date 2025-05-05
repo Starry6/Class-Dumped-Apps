@@ -1,0 +1,35 @@
+@interface OTInheritanceKey : NSObject
+@property (nonatomic) NSUUID uuid;
+@property (nonatomic) NSData wrappingKeyData;
+@property (nonatomic) NSString wrappingKeyString;
+@property (nonatomic) NSData wrappedKeyData;
+@property (nonatomic) NSString wrappedKeyString;
+@property (nonatomic) NSData claimTokenData;
+@property (nonatomic) NSString claimTokenString;
+@property (nonatomic) NSData recoveryKeyData;
+- (id)uuid;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (BOOL)isEqual:;
+- (id)initWithUUID:error:;
+- (id)wrappingKeyData;
+- (id)wrappingKeyString;
+- (id)wrappedKeyData;
+- (id)wrappedKeyString;
+- (id)claimTokenData;
+- (id)claimTokenString;
+- (BOOL)generateWrappingWithError:;
+- (BOOL)unwrapWithError:;
+- (id)initWithWrappedKeyData:wrappingKeyData:uuid:error:;
+- (id)initWithWrappedKeyData:wrappingKeyString:uuid:error:;
+- (id)initWithWrappedKeyString:wrappingKeyData:uuid:error:;
+- (BOOL)isEqualToOTInheritanceKey:;
+- (BOOL)isRecoveryKeyEqual:;
+- (id)recoveryKeyData;
++ (id)base32:len:;
++ (BOOL)supportsSecureCoding;
++ (id)parseBase32:checksumSize:error:;
++ (id)unbase32:len:;
++ (id)printableWithData:checksumSize:error:;
+@end

@@ -1,0 +1,34 @@
+@interface BDUGLocationInfo : NSObject
+@property (nonatomic) q type;
+@property (nonatomic) q source;
+@property (nonatomic) BOOL isCache;
+@property (nonatomic) CLLocation location;
+@property (nonatomic) CLLocation safeLocation;
+@property (nonatomic) BDUGPlacemark placeMark;
+@property (nonatomic) q dataLevel;
+@property (nonatomic) double timestamp;
+- (id)initNoLocationWithLocationInfo:;
+- (BOOL)isCache;
+- (id)initComplianceWithLocationInfo:;
+- (id)complianceInfo;
+- (long long)dataLevel;
+- (id)initCacheWithLocationInfo:;
+- (id)initWithType:source:isCache:location:safeLocation:placemark:dataLevel:timestamp:;
+- (id)initWithType:source:location:safeLocation:placemark:dataLevel:timestamp:;
+- (id)noLocationInfo;
+- (id)placeMark;
+- (id)cacheInfo;
+- (id)initWithCoder:;
+- (id)location;
+- (void)encodeWithCoder:;
+- (long long)type;
+- (void).cxx_destruct;
+- (long long)source;
+- (double)timestamp;
+- (id)description;
+- (void)setSource:;
+- (id)copyWithZone:;
+- (id)safeLocation;
+- (id)toJSON;
++ (BOOL)supportsSecureCoding;
+@end

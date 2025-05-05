@@ -1,0 +1,34 @@
+@interface VEAudioProcessConfig : NSObject
+@property (nonatomic) q targetSampleCount;
+@property (nonatomic) {AudioStreamBasicDescription=dIIIIIIII} asbd;
+@property (nonatomic) {AudioStreamBasicDescription=dIIIIIIII} micAsbd;
+@property (nonatomic) {AudioStreamBasicDescription=dIIIIIIII} bgmAsbd;
+@property (nonatomic) NSString modelPath;
+@property (nonatomic) float target_lufs;
+@property (nonatomic) BOOL needOutput;
+@property (nonatomic) BOOL bgmIsNull;
+@property (nonatomic) BOOL micIsNull;
+@property (nonatomic) BOOL useOutput;
+- (id)micAsbd;
+- (id)bgmAsbd;
+- (void)setTarget_lufs:;
+- (BOOL)bgmIsNull;
+- (BOOL)micIsNull;
+- (BOOL)needOutput;
+- (void)setBgmAsbd:;
+- (void)setBgmIsNull:;
+- (void)setMicAsbd:;
+- (void)setMicIsNull:;
+- (void)setNeedOutput:;
+- (void)setTargetSampleCount:;
+- (void)setUseOutput:;
+- (long long)targetSampleCount;
+- (float)target_lufs;
+- (BOOL)useOutput;
+- (id)init;
+- (void)setModelPath:;
+- (void).cxx_destruct;
+- (id)modelPath;
+- (id)asbd;
+- (void)setAsbd:;
+@end

@@ -1,0 +1,30 @@
+@interface RPBroadcastController : NSObject
+@property (nonatomic) NSDictionary serviceInfo;
+@property (nonatomic) NSURL broadcastURL;
+@property (nonatomic) NSString broadcastExtensionBundleIdentifier;
+@property (nonatomic) BOOL broadcasting;
+@property (nonatomic) BOOL paused;
+@property (nonatomic) <RPBroadcastControllerDelegate> delegate;
+@property (nonatomic) NSString broadcastExtensionBundleID;
+- (id)init;
+- (id)serviceInfo;
+- (void)setDelegate:;
+- (BOOL)isPaused;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setServiceInfo:;
+- (BOOL)isBroadcasting;
+- (void)setBroadcastURL:;
+- (void)startSystemBroadcastWithHandler:;
+- (id)broadcastURL;
+- (id)initWithExtensionBundleID:broadcastURL:;
+- (id)initWithCurrentSession;
+- (void)startBroadcastWithHandler:;
+- (void)pauseBroadcast;
+- (void)resumeBroadcast;
+- (void)finishBroadcastWithHandler:;
+- (void)finishSystemBroadcastWithHandler:;
+- (id)broadcastExtensionBundleID;
+- (id)broadcastExtensionBundleIdentifier;
+- (void)setBroadcastExtensionBundleIdentifier:;
+@end

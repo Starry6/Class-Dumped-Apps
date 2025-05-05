@@ -1,0 +1,30 @@
+@interface BMPOICategoryEvent : BMEventBase
+@property (nonatomic) NSString poiCategory;
+@property (nonatomic) Q rank;
+@property (nonatomic) double timeIntervalSince1970;
+@property (nonatomic) I dataVersion;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithProtoData:;
+- (void)setTimeIntervalSince1970:;
+- (id)init;
+- (id)proto;
+- (id)json;
+- (id)encodeAsProto;
+- (unsigned int)dataVersion;
+- (unsigned long long)rank;
+- (id)poiCategory;
+- (id)initWithProto:;
+- (id)initWithPOICategory:rank:timeIntervalSince1970:;
+- (void).cxx_destruct;
+- (id)description;
+- (double)timeIntervalSince1970;
+- (id)serialize;
+- (void)setRank:;
+- (id)jsonDict;
+- (BOOL)isEqual:;
++ (id)new;
++ (id)eventWithData:dataVersion:;
+@end

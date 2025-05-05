@@ -1,0 +1,34 @@
+@interface AFMyriadMonitor : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (void)dealloc;
+- (void)_clear;
+- (BOOL)isMonitoring;
+- (void).cxx_destruct;
+- (void)notifyObserver:didChangeStateFrom:to:;
+- (void)stopMonitoring;
+- (void)notifyObserver:didReceiveNotificationWithToken:;
+- (void)waitForMyriadDecisionWithCompletion:;
+- (void)_enqueueBlock:forReason:;
+- (void)waitForMyriadDecisionForReason:withCompletion:;
+- (void)startMonitoringWithTimeoutInterval:;
+- (void)startMonitoringWithTimeoutInterval:instanceContext:;
+- (void)ignoreMyriadEvents:;
+- (void)dequeueBlocksWaitingForMyriadDecision;
+- (BOOL)didWin;
+- (id)_myriadStateToString:;
+- (void)_registerForMyriadEvents;
+- (void)_cancelRepostedMyriadDecisionTimer;
+- (id)_fetchCurrentMyriadDecisionWithWaitTime:;
+- (void)_deregisterFromMyriadEventNotifications;
+- (void)_deregisterFromRepostedDecisionResultsObservers;
+- (void)_setDecisionIsPending;
+- (void)_dequeueBlocksWithSignal:;
+- (void)_flushCompletions:;
+- (void)_resultSeenWithValue:;
+- (void)_ignoreRepostMyriadNotification:;
++ (id)sharedMonitor;
+@end

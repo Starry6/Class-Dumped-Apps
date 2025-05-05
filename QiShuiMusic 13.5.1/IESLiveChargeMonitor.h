@@ -1,0 +1,36 @@
+@interface IESLiveChargeMonitor : NSObject
+@property (nonatomic) NSString business;
+@property (nonatomic) <IESLiveMonitor> monitor;
+@property (nonatomic) NSMutableDictionary clocks;
+@property (nonatomic) NSMutableDictionary durationExtraParams;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)commitChargeDurationTrackerMark:;
+- (void)commitDurationExtraParams:paramValue:;
+- (id)duration:end:;
+- (id)durationExtraParams;
+- (double)getTime:;
+- (void)ieslive_cjDidFinishProductOrder:success:error:;
+- (void)monitorBuySucceed:iapID:orderID:bizParams:error:count:startTime:monitroExtra:;
+- (void)monitor_AfterFetchOrderIdWithParams:;
+- (void)monitor_beforFetchOrderIdWithParams:;
+- (void)monitor_cjDidCompleteWithSuccess:params:error:;
+- (void)monitor_didCompleteWithSuccess:params:error:;
+- (void)monitor_sendTransactionWithParams:;
+- (void)monitor_willVerifyTransactionWithParams:;
+- (void)pushDurationTracker;
+- (void)setDurationExtraParams:;
+- (void)setupDurationTracker;
+- (void)trackService:status:extra:;
+- (void)trackSingleSKproductRequestStatus:duration:;
+- (void)setMonitor:;
+- (void).cxx_destruct;
+- (id)monitor;
+- (id)business;
+- (void)setBusiness:;
+- (id)initWithBusiness:;
+- (id)clocks;
+- (void)setClocks:;
+@end

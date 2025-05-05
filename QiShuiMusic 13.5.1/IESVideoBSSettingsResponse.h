@@ -1,0 +1,36 @@
+@interface IESVideoBSSettingsResponse : MTLModel
+@property (nonatomic) NSArray gearSet;
+@property (nonatomic) IESVideoBSGroupModel adaptiveGroup;
+@property (nonatomic) IESVideoBSGroupModel definitionGroup;
+@property (nonatomic) IESVideoBSGroupModel flowGroup;
+@property (nonatomic) q defaultType;
+@property (nonatomic) NSArray bandWidthMap;
+@property (nonatomic) IESVideoBSAutoBitrateModel autoBitrateModel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)gearSet;
+- (id)adaptiveGroup;
+- (id)autoBitrateModel;
+- (id)bandWidthMap;
+- (id)flowGroup;
+- (void)setAdaptiveGroup:;
+- (void)setAutoBitrateModel:;
+- (void)setBandWidthMap:;
+- (void)setDefinitionGroup:;
+- (void)setFlowGroup:;
+- (void)setGearSet:;
+- (void).cxx_destruct;
+- (id)definitionGroup;
+- (long long)defaultType;
+- (void)setDefaultType:;
++ (id)autoBitrateModelJSONTransformer;
++ (id)adaptiveGroupJSONTransformer;
++ (id)bandWidthMapJSONTransformer;
++ (id)defaultTypeJSONTransformer;
++ (id)definitionGroupJSONTransformer;
++ (id)flowGroupJSONTransformer;
++ (id)gearSetJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

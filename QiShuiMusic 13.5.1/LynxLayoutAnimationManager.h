@@ -1,0 +1,31 @@
+@interface LynxLayoutAnimationManager : NSObject
+@property (nonatomic) LynxUI ui;
+@property (nonatomic) NSMutableDictionary animationDelegates;
+@property (nonatomic) LynxAnimationInfo createConfig;
+@property (nonatomic) LynxAnimationInfo updateConfig;
+@property (nonatomic) LynxAnimationInfo deleteConfig;
+- (id)createDelegate:;
+- (id)initWithLynxUI:;
+- (void)addAnimation:withInfo:;
+- (id)animationDelegates;
+- (id)createConfig;
+- (id)deleteConfig;
+- (void)forceStop:;
+- (BOOL)isConfigValid:;
+- (BOOL)isCreate:newFrame:;
+- (BOOL)isDelete:newFrame:;
+- (BOOL)isUpdate:newFrame:;
+- (BOOL)maybeUpdateFrameWithLayoutAnimation:withPadding:border:margin:;
+- (void)performCreateAnimationsWithFrame:;
+- (void)performDeleteAnimationsWithFrame:;
+- (void)performUpdateAnimationsWithFrame:;
+- (void)removeAllLayoutAnimation;
+- (void)setAnimationDelegates:;
+- (void)setCreateConfig:;
+- (void)setDeleteConfig:;
+- (void)setUpdateConfig:;
+- (id)updateConfig;
+- (void).cxx_destruct;
+- (id)ui;
+- (void)setUi:;
+@end

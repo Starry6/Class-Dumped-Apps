@@ -1,0 +1,36 @@
+@interface AMapCrashManager : NSObject
+@property (nonatomic) BOOL enable;
+@property (nonatomic) BOOL isFilter;
+@property (nonatomic) NSMapTable componentConfigs;
+@property (nonatomic) NSMapTable regularExpressions;
+- (void)fillSystemInfo:;
+- (id)firstSymbolCmd:;
+- (BOOL)isInTracedModel;
+- (id)matchComponent:;
+- (void)checkConfigs;
+- (id)componentConfigs;
+- (id)componentCrashForException:thread:;
+- (id)componentCrashForThread:;
+- (id)exceptionType:signum:;
+- (void)fillComponentInfo:;
+- (id)firstAppCmd:;
+- (void)handleException:crashIndex:backTrace:;
+- (void)handleExceptionType:code:subcode:signum:crashIndex:crashThreadTrace:backTrace:;
+- (void)installMonitor;
+- (BOOL)isFilter;
+- (id)parserCrashException:thread:;
+- (id)parserCrashReason:;
+- (id)parserCrashThread:;
+- (id)parserCrashType:;
+- (void)registerWithComponent:withConfig:;
+- (id)regularExpressions;
+- (void)setComponentConfigs:;
+- (void)setIsFilter:;
+- (void)setRegularExpressions:;
+- (void)uninstallMonitor;
+- (BOOL)enable;
+- (id)init;
+- (void).cxx_destruct;
+- (void)setEnable:;
++ (id)shareInstance;
+@end

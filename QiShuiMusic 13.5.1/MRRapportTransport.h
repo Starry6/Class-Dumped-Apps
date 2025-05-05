@@ -1,0 +1,33 @@
+@interface MRRapportTransport : MRExternalDeviceTransport
+@property (nonatomic) NSString sessionUID;
+@property (nonatomic) MRExternalDeviceTransportConnection connection;
+@property (nonatomic) RPCompanionLinkDevice targetDevice;
+- (id)hostname;
+- (id)targetDevice;
+- (id)deviceInfo;
+- (void)dealloc;
+- (id)uid;
+- (void)setError:;
+- (id)initWithOutputDevice:;
+- (long long)port;
+- (id)error;
+- (void)resetWithError:;
+- (id)connection;
+- (void).cxx_destruct;
+- (void)setConnection:;
+- (void)setTargetDevice:;
+- (id)name;
+- (id)initWithOutputDevice:proxyOutputDevice:;
+- (BOOL)shouldUseSystemAuthenticationPrompt;
+- (void)setShouldUseSystemAuthenticationPrompt:;
+- (id)createConnectionWithUserInfo:;
+- (void)setSessionUID:;
+- (void)_persistConnectionRecordToDisk;
+- (void)_removeConnectionRecordFromDisk;
+- (id)_generateSessionUID;
+- (id)sessionUID;
++ (id)_readConnectionRecordsFromDisk;
++ (void)resetPersistedConnections;
++ (id)userDefaults;
++ (void)_writeConnectionRecordsToDisk:;
+@end

@@ -1,0 +1,34 @@
+@interface UIGraphicsImageRendererFormat : UIGraphicsRendererFormat
+@property (nonatomic) ^{CGColorSpace=} _overrideColorSpace;
+@property (nonatomic) q _overrideBitsPerComponent;
+@property (nonatomic) double _contextScale;
+@property (nonatomic) BOOL _wantsAlphaMask;
+@property (nonatomic) BOOL _grayscale;
+@property (nonatomic) double scale;
+@property (nonatomic) BOOL opaque;
+@property (nonatomic) BOOL prefersExtendedRange;
+@property (nonatomic) q preferredRange;
+- (BOOL)_grayscale;
+- (double)_contextScale;
+- (id)init;
+- (void)dealloc;
+- (void)setScale:;
+- (void)setPrefersExtendedRange:;
+- (id)_overrideColorSpace;
+- (BOOL)opaque;
+- (BOOL)_wantsAlphaMask;
+- (void)_setOverrideBitsPerComponent:;
+- (void)setPreferredRange:;
+- (void)_setOverrideColorSpace:;
+- (long long)_overrideBitsPerComponent;
+- (long long)preferredRange;
+- (void)setOpaque:;
+- (BOOL)prefersExtendedRange;
+- (double)scale;
+- (void)_setGrayscale:;
+- (void)_setWantsAlphaMask:;
+- (id)copyWithZone:;
++ (id)preferredFormat;
++ (id)defaultFormat;
++ (id)formatForTraitCollection:;
+@end

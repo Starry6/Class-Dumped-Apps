@@ -1,0 +1,36 @@
+@interface LNWatchdogTimer : NSObject
+@property (nonatomic) double interval;
+@property (nonatomic) NSObject<OS_dispatch_source> timerSource;
+@property (nonatomic) BOOL stopped;
+@property (nonatomic) NSObject<OS_dispatch_queue> internalQueue;
+@property (nonatomic) double remainingInterval;
+@property (nonatomic) double startTime;
+- (BOOL)isCanceled;
+- (id)timerSource;
+- (void)_reset;
+- (void)cancel;
+- (void)dealloc;
+- (void)start;
+- (void)setStartTime:;
+- (void)stop;
+- (void)_cancel;
+- (double)startTime;
+- (void)_stop;
+- (BOOL)cancelIfNotAlreadyCanceled;
+- (id)initWithTimeoutInterval:timeoutHandler:;
+- (void).cxx_destruct;
+- (id)initWithTimeoutInterval:onQueue:timeoutHandler:;
+- (BOOL)_isCanceled;
+- (void)_start;
+- (void)reset;
+- (void)setStopped:;
+- (id)internalQueue;
+- (BOOL)_cancelIfNotAlreadyCanceled;
+- (BOOL)isStopped;
+- (double)interval;
+- (BOOL)_isStopped;
+- (id)initWithTimeoutInterval:singleUse:timeoutHandler:;
+- (id)initWithTimeoutInterval:onQueue:singleUse:timeoutHandler:;
+- (double)remainingInterval;
+- (void)setRemainingInterval:;
+@end

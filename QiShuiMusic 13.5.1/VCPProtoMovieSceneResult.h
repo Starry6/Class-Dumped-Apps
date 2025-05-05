@@ -1,0 +1,38 @@
+@interface VCPProtoMovieSceneResult : PBCodable
+@property (nonatomic) VCPProtoTimeRange timeRange;
+@property (nonatomic) float qualityScore;
+@property (nonatomic) BOOL hasDistanceToPreviousScene;
+@property (nonatomic) float distanceToPreviousScene;
+@property (nonatomic) BOOL hasFlickerScore;
+@property (nonatomic) float flickerScore;
+@property (nonatomic) BOOL hasSceneprintDistanceToPreviousScene;
+@property (nonatomic) float sceneprintDistanceToPreviousScene;
+- (id)timeRange;
+- (float)qualityScore;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)setTimeRange:;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setQualityScore:;
+- (id)exportToLegacyDictionary;
+- (void)setDistanceToPreviousScene:;
+- (void)setHasDistanceToPreviousScene:;
+- (BOOL)hasDistanceToPreviousScene;
+- (void)setFlickerScore:;
+- (void)setHasFlickerScore:;
+- (BOOL)hasFlickerScore;
+- (void)setSceneprintDistanceToPreviousScene:;
+- (void)setHasSceneprintDistanceToPreviousScene:;
+- (BOOL)hasSceneprintDistanceToPreviousScene;
+- (float)distanceToPreviousScene;
+- (float)flickerScore;
+- (float)sceneprintDistanceToPreviousScene;
++ (id)resultFromLegacyDictionary:;
+@end

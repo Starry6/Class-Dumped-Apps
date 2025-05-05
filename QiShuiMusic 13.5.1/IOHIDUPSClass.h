@@ -1,0 +1,22 @@
+@interface IOHIDUPSClass : IOHIDPlugin
+- (id)init;
+- (void)dealloc;
+- (void)parseProperties:;
+- (int)stop;
+- (int)probe:service:outScore:;
+- (void)valueAvailableCallback:;
+- (void).cxx_destruct;
+- (int)getCapabilities:;
+- (int)start:service:;
+- (int)queryInterface:outInterface:;
+- (int)sendCommand:;
+- (BOOL)updateEvent;
+- (void)parseElements:;
+- (id)copyElements:psKey:;
+- (id)latestElement:psKey:;
+- (void)updateElements:;
+- (int)getProperties:;
+- (int)getEvent:;
+- (int)setEventCallback:target:refcon:;
+- (int)createAsyncEventSource:;
+@end

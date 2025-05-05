@@ -1,0 +1,34 @@
+@interface AWEIMGroupInviteMessage : AWEIMMessage
+@property (nonatomic) IESIMURLModel groupIconURL;
+@property (nonatomic) NSString groupName;
+@property (nonatomic) NSString inviterUid;
+@property (nonatomic) NSString inviterSecUid;
+@property (nonatomic) NSString ticket;
+@property (nonatomic) NSString targetGroupID;
+@property (nonatomic) BOOL isShareGroupCard;
+@property (nonatomic) q scene;
+@property (nonatomic) Q cardType;
+- (id)getContentDict;
+- (id)getSyncedExtDict;
+- (id)groupIconURL;
+- (id)initWithContentDict:;
+- (id)inviterSecUid;
+- (id)inviterUid;
+- (BOOL)isShareGroupCard;
+- (void)setGroupIconURL:;
+- (void)setInviterSecUid:;
+- (void)setInviterUid:;
+- (void)setIsShareGroupCard:;
+- (void)setTargetGroupID:;
+- (id)targetGroupID;
+- (void)setScene:;
+- (void)setGroupName:;
+- (long long)scene;
+- (void).cxx_destruct;
+- (id)groupName;
+- (id)copyWithZone:;
+- (id)ticket;
+- (void)setTicket:;
+- (unsigned long long)cardType;
+- (void)setCardType:;
+@end

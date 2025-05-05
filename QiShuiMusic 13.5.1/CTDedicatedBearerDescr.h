@@ -1,0 +1,30 @@
+@interface CTDedicatedBearerDescr : NSObject
+@property (nonatomic) NSString src_ip;
+@property (nonatomic) NSArray src_ports;
+@property (nonatomic) NSString remote_ip;
+@property (nonatomic) NSArray remote_ports;
+@property (nonatomic) Q ip_protocol;
+@property (nonatomic) NSString traffic_class;
+@property (nonatomic) q direction;
+- (long long)direction;
+- (id)init;
+- (void)setDirection:;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)copyWithZone:;
+- (id)src_ip;
+- (void)setSrc_ip:;
+- (id)src_ports;
+- (void)setSrc_ports:;
+- (id)remote_ip;
+- (void)setRemote_ip:;
+- (id)remote_ports;
+- (void)setRemote_ports:;
+- (unsigned long long)ip_protocol;
+- (void)setIp_protocol:;
+- (id)traffic_class;
+- (void)setTraffic_class:;
++ (BOOL)supportsSecureCoding;
+@end

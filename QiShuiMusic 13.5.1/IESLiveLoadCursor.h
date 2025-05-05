@@ -1,0 +1,34 @@
+@interface IESLiveLoadCursor : IESLiveLoadBaseCursor
+@property (nonatomic) NSMutableArray components;
+@property (nonatomic) @? loadCallback;
+@property (nonatomic) @? afterMountAction;
+@property (nonatomic) @? endMountAction;
+@property (nonatomic) q level;
+@property (nonatomic) BOOL finished;
+@property (nonatomic) IESLiveComponentBatchInfo loadBatchInfo;
+@property (nonatomic) IESLiveComponentLoadStrategyManager loadStrategyManager;
+- (id)afterMountAction;
+- (id)endMountAction;
+- (void)fireLoopPriorityWithMaxTime;
+- (id)levelOrStage;
+- (id)loadBatchInfo;
+- (id)loadCallback;
+- (id)loadStrategyManager;
+- (id)realArray;
+- (void)runCallback:;
+- (void)setAfterMountAction:;
+- (void)setEndMountAction:;
+- (void)setLoadBatchInfo:;
+- (void)setLoadCallback:;
+- (void)setLoadStrategyManager:;
+- (void)setLevel:;
+- (void)setFinished:;
+- (id)components;
+- (void)setComponents:;
+- (BOOL)finished;
+- (long long)level;
+- (void)finish;
+- (void)clear;
+- (void).cxx_destruct;
+- (void)fire;
+@end

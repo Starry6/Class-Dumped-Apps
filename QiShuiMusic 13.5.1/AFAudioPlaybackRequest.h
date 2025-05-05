@@ -1,0 +1,30 @@
+@interface AFAudioPlaybackRequest : NSObject
+@property (nonatomic) NSURL itemURL;
+@property (nonatomic) NSData itemData;
+@property (nonatomic) q numberOfLoops;
+@property (nonatomic) float volume;
+@property (nonatomic) double fadeInDuration;
+@property (nonatomic) double fadeOutDuration;
+@property (nonatomic) NSDictionary userInfo;
+- (id)init;
+- (float)volume;
+- (id)userInfo;
+- (id)mutatedCopyWithMutator:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)_descriptionWithIndent:;
+- (id)initWithBuilder:;
+- (double)fadeOutDuration;
+- (void)encodeWithCoder:;
+- (double)fadeInDuration;
+- (void).cxx_destruct;
+- (id)description;
+- (id)itemURL;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)initWithItemURL:itemData:numberOfLoops:volume:fadeInDuration:fadeOutDuration:userInfo:;
+- (id)itemData;
+- (long long)numberOfLoops;
++ (id)newWithBuilder:;
++ (BOOL)supportsSecureCoding;
+@end

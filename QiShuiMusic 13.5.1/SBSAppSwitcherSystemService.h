@@ -1,0 +1,3 @@
+@interface SBSAppSwitcherSystemService : SBSAbstractSystemService
+- (void)requestAppSwitcherAppearanceForHiddenApplicationWithBundleIdentifier:completion:;
+@end

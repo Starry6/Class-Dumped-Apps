@@ -1,0 +1,30 @@
+@interface MFMessageBodyMigrator : NSObject
+@property (nonatomic) MFMailMessageLibrary library;
+@property (nonatomic) EFLazyCache directoryContentCache;
+@property (nonatomic) <EFScheduler> backgroundMigrationScheduler;
+@property (nonatomic) NSMutableArray mailboxesToCheck;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setLibrary:;
+- (id)initWithLibrary:;
+- (id)library;
+- (void).cxx_destruct;
+- (id)backgroundMigrationScheduler;
+- (void)setBackgroundMigrationScheduler:;
+- (void)startMigratingBodies;
+- (void)migrateBodyForMessageIfNecessary:;
+- (void)_migrateDataFilesForMessage:;
+- (BOOL)_mailboxHasUnmigratedFiles:;
+- (id)_legacyAttachmentDataDirectoryURLForGlobalMessageID:basePath:purgeable:;
+- (void)_migrateAllFilesForMailbox:;
+- (id)_filesForMessage:;
+- (id)legacyAttachmentDirectoryForMessage:;
+- (id)_directoryContentsForPath:;
+- (id)directoryContentCache;
+- (void)setDirectoryContentCache:;
+- (id)mailboxesToCheck;
+- (void)setMailboxesToCheck:;
++ (id)log;
+@end

@@ -1,0 +1,33 @@
+@interface SISchemaLocation : SISchemaInstrumentationMessage
+@property (nonatomic) float latitude;
+@property (nonatomic) BOOL hasLatitude;
+@property (nonatomic) float longitude;
+@property (nonatomic) BOOL hasLongitude;
+@property (nonatomic) float horizontalAccuracyInMeters;
+@property (nonatomic) BOOL hasHorizontalAccuracyInMeters;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (float)latitude;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (BOOL)hasLongitude;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (BOOL)hasLatitude;
+- (void)setHasLatitude:;
+- (void)setLatitude:;
+- (void)setHasLongitude:;
+- (void)setLongitude:;
+- (BOOL)readFrom:;
+- (float)longitude;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)deleteLatitude;
+- (void)deleteLongitude;
+- (void)setHorizontalAccuracyInMeters:;
+- (BOOL)hasHorizontalAccuracyInMeters;
+- (void)setHasHorizontalAccuracyInMeters:;
+- (void)deleteHorizontalAccuracyInMeters;
+- (float)horizontalAccuracyInMeters;
+@end

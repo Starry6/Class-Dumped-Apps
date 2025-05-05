@@ -1,0 +1,38 @@
+@interface ABUAdapterBridge : NSObject
+@property (nonatomic) NSHashTable responders;
+@property (nonatomic) BOOL aheadDone;
+@property (nonatomic) BOOL aheadDidCallback;
+@property (nonatomic) NSMutableArray waitingAheadInvocations;
+@property (nonatomic) ABUAdapterBridgeSelectorRules rules;
+@property (nonatomic) BOOL showDone;
+@property (nonatomic) NSLock lock;
+@property (nonatomic) NSObject<OS_dispatch_queue> respondersQueue;
+- (void)registerSelectorRulesWithBlock:;
+- (id)respondersQueue;
+- (BOOL)_checkShowSelector:;
+- (BOOL)aheadDidCallback;
+- (BOOL)aheadDone;
+- (void)aheadSelectorDidCallback;
+- (id)initWithResponders:;
+- (id)responderForSelector:;
+- (id)responders;
+- (void)setAheadDidCallback:;
+- (void)setAheadDone:;
+- (void)setResponders:;
+- (void)setRespondersQueue:;
+- (void)setShowDone:;
+- (void)setWaitingAheadInvocations:;
+- (BOOL)showDone;
+- (void)updateResponders:;
+- (id)waitingAheadInvocations;
+- (BOOL)respondsToSelector:;
+- (id)rules;
+- (id)methodSignatureForSelector:;
+- (id)lock;
+- (void)setRules:;
+- (void).cxx_destruct;
+- (id)forwardingTargetForSelector:;
+- (void)forwardInvocation:;
+- (void)setLock:;
++ (BOOL)conformsToProtocol:;
+@end

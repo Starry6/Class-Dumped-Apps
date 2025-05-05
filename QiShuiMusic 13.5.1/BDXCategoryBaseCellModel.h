@@ -1,0 +1,38 @@
+@interface BDXCategoryBaseCellModel : NSObject
+@property (nonatomic) Q index;
+@property (nonatomic) double cellWidth;
+@property (nonatomic) double cellSpacing;
+@property (nonatomic) BOOL selected;
+@property (nonatomic) BOOL cellWidthZoomEnabled;
+@property (nonatomic) double cellWidthNormalZoomScale;
+@property (nonatomic) double cellWidthCurrentZoomScale;
+@property (nonatomic) double cellWidthSelectedZoomScale;
+@property (nonatomic) BOOL selectedAnimationEnabled;
+@property (nonatomic) double selectedAnimationDuration;
+@property (nonatomic) Q selectedType;
+@property (nonatomic) BOOL transitionAnimating;
+- (double)cellWidthCurrentZoomScale;
+- (double)cellWidthNormalZoomScale;
+- (double)cellWidthSelectedZoomScale;
+- (BOOL)isCellWidthZoomEnabled;
+- (BOOL)isSelectedAnimationEnabled;
+- (BOOL)isTransitionAnimating;
+- (double)selectedAnimationDuration;
+- (void)setCellWidthCurrentZoomScale:;
+- (void)setCellWidthNormalZoomScale:;
+- (void)setCellWidthSelectedZoomScale:;
+- (void)setCellWidthZoomEnabled:;
+- (void)setSelectedAnimationDuration:;
+- (void)setSelectedAnimationEnabled:;
+- (void)setSelectedType:;
+- (void)setTransitionAnimating:;
+- (void)setSelected:;
+- (BOOL)isSelected;
+- (unsigned long long)index;
+- (void)setIndex:;
+- (double)cellWidth;
+- (unsigned long long)selectedType;
+- (double)cellSpacing;
+- (void)setCellSpacing:;
+- (void)setCellWidth:;
+@end

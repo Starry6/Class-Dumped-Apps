@@ -1,0 +1,33 @@
+@interface CEMAccountGoogleDeclaration : CEMConfigurationBase
+@property (nonatomic) NSString payloadAccountDescription;
+@property (nonatomic) NSString payloadAccountName;
+@property (nonatomic) NSString payloadEmailAddress;
+@property (nonatomic) CEMAccountGoogleDeclaration_CommunicationServiceRules payloadCommunicationServiceRules;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (BOOL)multipleAllowed;
+- (BOOL)mustBeSupervised;
+- (int)activationLevel;
+- (id)assetReferences;
+- (BOOL)loadPayload:error:;
+- (id)serializePayloadWithAssetProviders:;
+- (id)payloadCommunicationServiceRules;
+- (void)setPayloadCommunicationServiceRules:;
+- (id)payloadAccountDescription;
+- (void)setPayloadAccountDescription:;
+- (id)payloadAccountName;
+- (void)setPayloadAccountName:;
+- (id)payloadEmailAddress;
+- (void)setPayloadEmailAddress:;
++ (id)profileType;
++ (id)registeredClassName;
++ (id)registeredIdentifier;
++ (id)allowedPayloadKeys;
++ (id)restrictionPayloadKeys;
++ (id)buildWithIdentifier:withAccountDescription:withAccountName:withEmailAddress:withCommunicationServiceRules:;
++ (id)buildRequiredOnlyWithIdentifier:withEmailAddress:;
+@end

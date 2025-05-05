@@ -1,0 +1,37 @@
+@interface HMDCDUploader : NSObject
+@property (nonatomic) NSString coredumpRootPath;
+@property (nonatomic) NSString coredumpPath;
+@property (nonatomic) NSString coredumpZipPath;
+@property (nonatomic) NSObject<OS_dispatch_queue> coredumpQueue;
+@property (nonatomic) NSMutableSet uploadingFileNames;
+@property (nonatomic) NSDictionary coredumpPathName;
+@property (nonatomic) NSObject<OS_dispatch_semaphore> uploadSemaphore;
+@property (nonatomic) Q maxCDZipFileSizeMB;
+- (id)processCoreDump;
+- (id)uploadSemaphore;
+- (id)coredumpZipPath;
+- (void)_uploadCoreDumpForFileName:;
+- (void)_uploadCoreDumpForPath:;
+- (void)_uploadZip;
+- (void)cleanCounterWithFileName:;
+- (id)coredumpPath;
+- (id)coredumpPathName;
+- (id)coredumpQueue;
+- (id)coredumpRootPath;
+- (BOOL)deleteZipFileIfNeedWithFileName:;
+- (void)increaseCounterWithFileName:;
+- (unsigned long long)maxCDZipFileSizeMB;
+- (void)setCoredumpPath:;
+- (void)setCoredumpPathName:;
+- (void)setCoredumpQueue:;
+- (void)setCoredumpRootPath:;
+- (void)setCoredumpZipPath:;
+- (void)setMaxCDZipFileSizeMB:;
+- (void)setUploadSemaphore:;
+- (void)setUploadingFileNames:;
+- (id)uploadingFileNames;
+- (void)zipAndUploadCoreDump;
+- (id)zipFileCounterDic;
+- (id)init;
+- (void).cxx_destruct;
+@end

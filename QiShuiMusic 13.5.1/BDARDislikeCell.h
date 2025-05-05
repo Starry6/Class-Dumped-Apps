@@ -1,0 +1,2 @@
+@interface BDARDislikeCell : BDARDislikeCellBase
+@end

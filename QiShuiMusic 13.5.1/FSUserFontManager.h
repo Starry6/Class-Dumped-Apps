@@ -1,0 +1,29 @@
+@interface FSUserFontManager : NSObject
++ (id)registeredFontsForIdentifier:enabled:;
++ (void)synchronizeProfileFonts:;
++ (void)synchronizeFontAssets:;
++ (id)profileFontsInfo;
++ (void)updateAppInfo:forIdentifier:;
++ (id)suspendedFontProviders;
++ (id)knownFontProviders;
++ (void)enableOrDisablePersistentURLs:enabled:;
++ (id)_UserFontManagerConnection;
++ (id)auditToken;
++ (id)userFontsInfo;
++ (void)deleteAppDialogWithIdentifier:completionHandler:;
++ (id)identifierFromDirectoryName:;
++ (void)suspendFontProvider:;
++ (id)registeredFontsInfoForIdentifier:enabled:appInfo:;
++ (id)fontProvidersSubscriptionSupportInfoAndFontFamiliesInstalled:andRemovedCount:andProfileFontsCount:;
++ (void)_removeAllUserFonts;
++ (double)secondsSinceLastAccessed:;
++ (id)resumeSuspendedFontFiles;
++ (void)reset;
++ (void)installFonts:forIdentifier:enabled:appInfo:completionHandler:;
++ (id)directoryNameFromIdentifier:;
++ (void)unregisterAndRemoveFontFilesForIdentifier:completionHandler:;
++ (id)xpcInterface;
++ (void)synchronizeFontProviders;
++ (id)registeredFamiliesForIdentifier:enabled:;
++ (void)uninstallFonts:forIdentifier:appInfo:completionHandler:;
+@end

@@ -1,0 +1,32 @@
+@interface GEOWiFiQualityProfile : PBCodable
+@property (nonatomic) BOOL hasHours;
+@property (nonatomic) GEOWiFiQualityHours hours;
+@property (nonatomic) NSMutableArray qualities;
+- (void)readAll:;
+- (id)init;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)hours;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (void)setHours:;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)qualities;
+- (void)setQualities:;
+- (void)clearQualities;
+- (void)addQualities:;
+- (unsigned long long)qualitiesCount;
+- (id)qualitiesAtIndex:;
+- (BOOL)hasHours;
++ (BOOL)isValid:;
++ (Class)qualitiesType;
+@end

@@ -1,0 +1,34 @@
+@interface SUGSchemaSUGSiriHelpSignal : SISchemaInstrumentationMessage
+@property (nonatomic) I depthFromActiveSignal;
+@property (nonatomic) BOOL hasDepthFromActiveSignal;
+@property (nonatomic) NSString signalValue;
+@property (nonatomic) BOOL hasSignalValue;
+@property (nonatomic) NSInteger signalType;
+@property (nonatomic) BOOL hasSignalType;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)setDepthFromActiveSignal:;
+- (BOOL)hasDepthFromActiveSignal;
+- (void)setHasDepthFromActiveSignal:;
+- (void)deleteDepthFromActiveSignal;
+- (BOOL)hasSignalValue;
+- (void)deleteSignalValue;
+- (void)setSignalType:;
+- (BOOL)hasSignalType;
+- (void)setHasSignalType:;
+- (void)deleteSignalType;
+- (unsigned int)depthFromActiveSignal;
+- (id)signalValue;
+- (void)setSignalValue:;
+- (int)signalType;
+- (void)setHasSignalValue:;
+@end

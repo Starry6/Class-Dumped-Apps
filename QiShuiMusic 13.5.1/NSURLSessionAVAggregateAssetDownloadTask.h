@@ -1,0 +1,2 @@
+@interface NSURLSessionAVAggregateAssetDownloadTask : NSURLSessionTask
+@end

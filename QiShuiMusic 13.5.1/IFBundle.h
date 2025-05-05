@@ -1,0 +1,37 @@
+@interface IFBundle : NSObject
+@property (nonatomic) ^{__CFBundle=} bundle;
+@property (nonatomic) NSDictionary infoDictionary;
+@property (nonatomic) NSURL bundleURL;
+@property (nonatomic) NSString bundleID;
+@property (nonatomic) NSURL assetCatalogURL;
+@property (nonatomic) NSDictionary iconDictionary;
+@property (nonatomic) BOOL coreTypes;
+- (id)infoDictionary;
+- (void)dealloc;
+- (id)initWithURL:;
+- (id)localizedStringForKey:value:table:;
+- (id)bundleURL;
+- (id)bundle;
+- (id)bundleID;
+- (void)setBundle:;
+- (id)URLForResource:withExtension:;
+- (id)URLForResource:withExtension:subdirectory:;
+- (id)URLsForResourcesWithExtension:subdirectory:;
+- (id)iconDictionary;
+- (id)URLForResource:;
+- (id)assetCatalogURL;
+- (id)initWithCFBundle:;
+- (BOOL)isCoreTypes;
++ (id)mainBundle;
++ (id)frameworkBundle;
++ (id)bundleWithURL:;
++ (id)coreTypesBundle;
++ (id)iconFoundationFrameworkBundle;
++ (id)iconsetResourceBundle;
++ (id)mobileIconsFrameworkBundle;
++ (id)coreGlyphsBundle;
++ (id)coreGlyphsPrivateBundle;
++ (id)appIconOverrideBundle;
++ (id)iconsetResourceAssetsCatalogURL;
++ (id)frameworkLocalizedString:;
+@end

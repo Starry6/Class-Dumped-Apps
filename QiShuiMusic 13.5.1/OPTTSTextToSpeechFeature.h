@@ -1,0 +1,35 @@
+@interface OPTTSTextToSpeechFeature : NSObject
+@property (nonatomic) NSArray normalized_text;
+@property (nonatomic) NSArray phoneme_sequence;
+@property (nonatomic) NSArray prompts;
+@property (nonatomic) NSArray replacement;
+@property (nonatomic) NSArray neural_phoneme_sequence;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (id)replacement;
+- (id)prompts;
+- (id)normalized_text;
+- (id)phoneme_sequence;
+- (id)neural_phoneme_sequence;
+- (id)flatbuffData;
+- (id)initWithFlatbuffData:;
+- (id)initAndVerifyWithFlatbuffData:;
+- (id)initWithFlatbuffData:root:;
+- (id)initWithFlatbuffData:root:verify:;
+- (id)addObjectToBuffer:;
+- (id)prompts_objectAtIndex:;
+- (unsigned long long)prompts_count;
+- (void)prompts_enumerateObjectsUsingBlock:;
+- (id)normalized_text_objectAtIndex:;
+- (unsigned long long)normalized_text_count;
+- (void)normalized_text_enumerateObjectsUsingBlock:;
+- (id)phoneme_sequence_objectAtIndex:;
+- (unsigned long long)phoneme_sequence_count;
+- (void)phoneme_sequence_enumerateObjectsUsingBlock:;
+- (id)replacement_objectAtIndex:;
+- (unsigned long long)replacement_count;
+- (void)replacement_enumerateObjectsUsingBlock:;
+- (id)neural_phoneme_sequence_objectAtIndex:;
+- (unsigned long long)neural_phoneme_sequence_count;
+- (void)neural_phoneme_sequence_enumerateObjectsUsingBlock:;
+@end

@@ -1,0 +1,22 @@
+@interface GEONavdCachePersistenceManager : NSObject
+- (id)init;
+- (void)_removeOldFormatCacheFromPath:;
+- (void)_enumerateAllForCacheEntriesWithHandler:;
+- (long long)_threadUnsafeRowIdOfKey:;
+- (id)_entryWithRowId:;
+- (void)_removeFileIfItExistsAtPath:;
+- (void)_enumerateAllEntriesWithHandler:;
+- (long long)_numberOfEntries;
+- (void)tearDown;
+- (long long)_dumpToDiskWithKey:value:;
+- (id)_readValueWithKey:;
+- (void)_deleteRowWithRowId:;
+- (void)_deleteFromDiskWithKey:;
+- (id)initWithPath:legacyPath:;
+- (id)_rowIdsOfEntriesBeforeTimeStamp:;
+- (void).cxx_destruct;
+- (void)_removeAllEntries;
+- (long long)_rowIdOfKey:;
+- (void)_removeLegacyCacheFromPath:;
+- (double)_nextTimeStampForRefreshTimer;
+@end

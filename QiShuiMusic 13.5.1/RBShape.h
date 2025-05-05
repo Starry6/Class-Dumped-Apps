@@ -1,0 +1,35 @@
+@interface RBShape : NSObject
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} boundingRect;
+@property (nonatomic) BOOL antialiased;
+@property (nonatomic) BOOL EOFill;
+- (id)init;
+- (void)setRoundedRect:cornerSize:cornerStyle:;
+- (void)setEllipseInRect:;
+- (void)setCircleAtPoint:radius:;
+- (void)setEOFill:;
+- (void)setPath:;
+- (void)setStrokedPath:transform:lineWidth:lineCap:lineJoin:miterLimit:dashPhase:dashPattern:dashCount:;
+- (void)setGlyphs:positions:count:font:renderingStyle:;
+- (void)setStroke:;
+- (void)setStrokedRect:lineWidth:;
+- (id)boundingRect;
+- (void)setRoundedRect:cornerRadius:cornerStyle:;
+- (void)setCustomGlyphDilation:;
+- (void)setRoundedRect:cornerRadii:cornerStyle:;
+- (BOOL)isAntialiased;
+- (void)setStrokedRoundedRect:cornerRadius:cornerStyle:lineWidth:;
+- (void)setRect:;
+- (void)setPath:transform:;
+- (void)setEmpty;
+- (void)setStrokedRBPath:transform:lineWidth:lineCap:lineJoin:miterLimit:dashPhase:dashPattern:dashCount:;
+- (void)setStrokedLineFromPoint:toPoint:lineWidth:lineCap:;
+- (void).cxx_destruct;
+- (BOOL)EOFill;
+- (void)setRBPath:transform:;
+- (void)setInfinite;
+- (void)setStrokedCircleAtPoint:radius:lineWidth:;
+- (void)setStrokedRoundedRect:cornerRadii:cornerStyle:lineWidth:;
+- (id).cxx_construct;
+- (void)setAntialiased:;
+- (void)setStrokedPath:transform:lineWidth:lineCap:lineJoin:miterLimit:;
+@end

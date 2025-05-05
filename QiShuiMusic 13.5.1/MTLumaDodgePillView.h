@@ -1,0 +1,37 @@
+@interface MTLumaDodgePillView : MTPillView
+@property (nonatomic) q style;
+@property (nonatomic) <MTLumaDodgePillBackgroundLuminanceObserver> backgroundLumninanceObserver;
+@property (nonatomic) q backgroundLuminance;
+@property (nonatomic) q backgroundLuminanceBias;
+@property (nonatomic) double suggestedEdgeSpacing;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)backgroundLuminanceBias;
+- (double)suggestedEdgeSpacing;
+- (id)suggestedSizeForContentWidth:;
+- (void)dealloc;
+- (void)setBackgroundLumninanceObserver:;
+- (void)layoutSubviews;
+- (id)initWithFrame:settings:;
+- (void)animationDidStop:finished:;
+- (BOOL)_shouldAnimatePropertyAdditivelyWithKey:;
+- (void)setStyle:;
+- (void)_updateStyle;
+- (void)bounce;
+- (id)backgroundLumninanceObserver;
+- (long long)backgroundLuminance;
+- (id)initWithFrame:settings:graphicsQuality:;
+- (void)setBackgroundLuminanceBias:;
+- (id)sizeThatFits:;
+- (void).cxx_destruct;
+- (id)description;
+- (void)backdropLayer:didChangeLuma:;
+- (void)resetBackgroundLuminanceHysteresis;
+- (long long)style;
+- (BOOL)_shouldAnimatePropertyWithKey:;
++ (Class)layerClass;
++ (BOOL)supportsBackgroundLuminanceObserving;
++ (id)suggestedSizeForContentWidth:withSettings:;
+@end

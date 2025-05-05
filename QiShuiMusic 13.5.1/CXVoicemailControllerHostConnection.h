@@ -1,0 +1,37 @@
+@interface CXVoicemailControllerHostConnection : NSObject
+@property (nonatomic) NSObject<OS_dispatch_queue> serialQueue;
+@property (nonatomic) NSXPCConnection connection;
+@property (nonatomic) NSString applicationIdentifier;
+@property (nonatomic) NSURL bundleURL;
+@property (nonatomic) NSSet capabilities;
+@property (nonatomic) <CXVoicemailControllerVendorProtocol> remoteObjectProxy;
+@property (nonatomic) BOOL permittedToUsePrivateAPI;
+@property (nonatomic) <CXVoicemailControllerHostConnectionDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)applicationIdentifier;
+- (void)setCapabilities:;
+- (id)init;
+- (void)dealloc;
+- (id)bundleURL;
+- (id)capabilities;
+- (void)setApplicationIdentifier:;
+- (void)setBundleURL:;
+- (void)setDelegate:;
+- (id)remoteObjectProxy;
+- (id)serialQueue;
+- (BOOL)isPermittedToUsePrivateAPI;
+- (id)delegate;
+- (id)connection;
+- (void).cxx_destruct;
+- (void)setConnection:;
+- (id)description;
+- (void)setSerialQueue:;
+- (id)addOrUpdateVoicemails:;
+- (id)removeVoicemails:;
+- (id)requestTransaction:reply:;
+- (id)requestVoicemails:;
+- (id)initWithConnection:serialQueue:;
+@end

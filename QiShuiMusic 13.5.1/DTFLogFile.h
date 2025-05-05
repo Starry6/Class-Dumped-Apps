@@ -1,0 +1,34 @@
+@interface DTFLogFile : NSObject
+@property (nonatomic) BOOL uploadable;
+@property (nonatomic) Q triggerCount;
+@property (nonatomic) @? timeFilter;
+@property (nonatomic) q size;
+@property (nonatomic) Q unSyncCount;
+- (BOOL)isExist;
+- (void)removeWeakCache;
+- (void)setUnSyncCount:;
+- (BOOL)isUsing;
+- (id)dataForIndex:;
+- (id)indexFromOffset:;
+- (BOOL)isMarked;
+- (id)makeUnSyncLogIndex;
+- (void)markFile;
+- (void)markIndex:;
+- (void)setTimeFilter:;
+- (void)setUploadable:;
+- (unsigned long long)unSyncCount;
+- (BOOL)uploadable;
+- (id)writeLog:;
+- (void)dealloc;
+- (id)initWithName:;
+- (void).cxx_destruct;
+- (id)description;
+- (unsigned long long)triggerCount;
+- (void)setTriggerCount:;
+- (void)setSize:;
+- (long long)size;
+- (BOOL)shouldFlush;
+- (id)timeFilter;
++ (char *)checkCode;
++ (id)logFileWithName:;
+@end

@@ -1,0 +1,36 @@
+@interface GEORPCorrectedFlag : PBCodable
+@property (nonatomic) BOOL hasFlag;
+@property (nonatomic) NSInteger flag;
+@property (nonatomic) BOOL hasOriginalValue;
+@property (nonatomic) BOOL originalValue;
+@property (nonatomic) BOOL hasCorrectedValue;
+@property (nonatomic) BOOL correctedValue;
+- (void)readAll:;
+- (int)flag;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)setFlag:;
+- (id)copyWithZone:;
+- (BOOL)hasOriginalValue;
+- (BOOL)originalValue;
+- (void)setOriginalValue:;
+- (BOOL)hasCorrectedValue;
+- (BOOL)correctedValue;
+- (void)setCorrectedValue:;
+- (void)setHasFlag:;
+- (BOOL)hasFlag;
+- (id)flagAsString:;
+- (int)StringAsFlag:;
+- (void)setHasOriginalValue:;
+- (void)setHasCorrectedValue:;
++ (BOOL)isValid:;
+@end

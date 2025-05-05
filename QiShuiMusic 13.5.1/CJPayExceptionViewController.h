@@ -1,0 +1,36 @@
+@interface CJPayExceptionViewController : CJPayThemeBaseViewController
+@property (nonatomic) CJPayCommonExceptionView exceptionView;
+@property (nonatomic) NSString mainTitle;
+@property (nonatomic) NSString subTitle;
+@property (nonatomic) NSString buttonTitle;
+@property (nonatomic) BOOL isClickActionButton;
+@property (nonatomic) NSString appId;
+@property (nonatomic) NSString merchantId;
+@property (nonatomic) NSString source;
+@property (nonatomic) @? closeblock;
+- (void)p_track:params:;
+- (id)closeblock;
+- (id)exceptionView;
+- (id)initWithMainTitle:subTitle:buttonTitle:;
+- (BOOL)isClickActionButton;
+- (void)setCloseblock:;
+- (void)setExceptionView:;
+- (void)setIsClickActionButton:;
+- (id)appId;
+- (void)setAppId:;
+- (void).cxx_destruct;
+- (id)source;
+- (void)setSubTitle:;
+- (id)buttonTitle;
+- (id)subTitle;
+- (void)setSource:;
+- (void)viewDidLoad;
+- (void)setButtonTitle:;
+- (id)merchantId;
+- (void)setMerchantId:;
+- (void)setupUI;
+- (id)mainTitle;
+- (void)setMainTitle:;
+- (void)back;
++ (void)gotoThrotterPageWithAppId:merchantId:fromVC:closeBlock:source:;
+@end

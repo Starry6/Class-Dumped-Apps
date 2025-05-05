@@ -1,0 +1,34 @@
+@interface SIAlgorithm : NSObject
+@property (nonatomic) SIModel model;
+@property (nonatomic) SINetworkConfiguration networkConfiguration;
+@property (nonatomic) Q algorithmNameHash;
+@property (nonatomic) Q mappingId;
+@property (nonatomic) Q frameBoundarySignpostEventStart;
+@property (nonatomic) Q frameBoundarySignpostEventEnd;
+- (id)model;
+- (unsigned long long)mappingId;
+- (void).cxx_destruct;
+- (void)setMappingId:;
+- (id)networkVersion;
+- (long long)runWithInput:output:;
+- (id)getOutputResolution;
+- (id)initWithNetworkConfiguration:;
+- (id)getInputResolution;
+- (long long)_runWithInput:output:;
+- (long long)runWithInput:output:resolutionConfiguration:;
+- (long long)_switchConfiguration:;
+- (long long)_preprocessingInputData:;
+- (long long)_inferenceWithInput:output:;
+- (long long)_postprocessingOutput:;
+- (id)networkConfiguration;
+- (void)setNetworkConfiguration:;
+- (unsigned long long)algorithmNameHash;
+- (void)setAlgorithmNameHash:;
+- (unsigned long long)frameBoundarySignpostEventStart;
+- (void)setFrameBoundarySignpostEventStart:;
+- (unsigned long long)frameBoundarySignpostEventEnd;
+- (void)setFrameBoundarySignpostEventEnd:;
++ (BOOL)supportsANE;
++ (Class)inputDataClass;
++ (Class)outputDataClass;
+@end

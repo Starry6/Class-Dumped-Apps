@@ -1,0 +1,2 @@
+@interface HTSLiveFusionEmojiRoot : GPBRootObject
+@end

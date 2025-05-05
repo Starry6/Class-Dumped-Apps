@@ -1,0 +1,32 @@
+@interface FHSSnapshotNodes : NSObject
+@property (nonatomic) SCNNode highlight;
+@property (nonatomic) SCNNode dimming;
+@property (nonatomic) FHSViewSnapshot snapshotItem;
+@property (nonatomic) q depth;
+@property (nonatomic) SCNNode snapshot;
+@property (nonatomic) SCNNode header;
+@property (nonatomic) SCNNode border;
+@property (nonatomic) BOOL highlighted;
+@property (nonatomic) BOOL dimmed;
+@property (nonatomic) BOOL forceHideHeader;
+- (void)setHighlighted:;
+- (void)setDimmed:;
+- (void)setForceHideHeader:;
+- (id)snapshotItem;
+- (long long)depth;
+- (id)snapshot;
+- (void)setSnapshot:;
+- (id)header;
+- (void)setHeader:;
+- (id)border;
+- (void)setBorder:;
+- (BOOL)isHighlighted;
+- (BOOL)isDimmed;
+- (BOOL)forceHideHeader;
+- (id)highlight;
+- (void)setHighlight:;
+- (id)dimming;
+- (void)setDimming:;
+- (void).cxx_destruct;
++ (id)snapshot:depth:;
+@end

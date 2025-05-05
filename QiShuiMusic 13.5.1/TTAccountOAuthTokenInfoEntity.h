@@ -1,0 +1,33 @@
+@interface TTAccountOAuthTokenInfoEntity : TTAccountBaseEntity
+@property (nonatomic) NSString userId;
+@property (nonatomic) NSString platformAppId;
+@property (nonatomic) NSString accessToken;
+@property (nonatomic) NSString expiresIn;
+@property (nonatomic) NSString openId;
+@property (nonatomic) NSString refreshExpiresIn;
+@property (nonatomic) NSString refreshToken;
+@property (nonatomic) NSString scopes;
+@property (nonatomic) double expiresAt;
+@property (nonatomic) double refreshAt;
+- (id)openId;
+- (id)platformAppId;
+- (double)refreshAt;
+- (id)refreshExpiresIn;
+- (void)setOpenId:;
+- (void)setPlatformAppId:;
+- (void)setRefreshAt:;
+- (void)setRefreshExpiresIn:;
+- (id)userId;
+- (id)scopes;
+- (double)expiresAt;
+- (id)accessToken;
+- (void).cxx_destruct;
+- (id)refreshToken;
+- (void)setUserId:;
+- (void)setScopes:;
+- (void)setExpiresAt:;
+- (void)setAccessToken:;
+- (id)expiresIn;
+- (void)setExpiresIn:;
+- (void)setRefreshToken:;
+@end

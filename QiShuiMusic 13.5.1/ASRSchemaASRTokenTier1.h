@@ -1,0 +1,35 @@
+@interface ASRSchemaASRTokenTier1 : SISchemaInstrumentationMessage
+@property (nonatomic) NSString text;
+@property (nonatomic) BOOL hasText;
+@property (nonatomic) NSString phoneSequence;
+@property (nonatomic) BOOL hasPhoneSequence;
+@property (nonatomic) NSString ipaPhoneSequence;
+@property (nonatomic) BOOL hasIpaPhoneSequence;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (BOOL)hasText;
+- (id)suppressMessageUnderConditions;
+- (void)setText:;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (id)text;
+- (BOOL)isEqual:;
+- (id)phoneSequence;
+- (void)setPhoneSequence:;
+- (id)ipaPhoneSequence;
+- (void)setIpaPhoneSequence:;
+- (void)deleteText;
+- (BOOL)hasPhoneSequence;
+- (void)deletePhoneSequence;
+- (BOOL)hasIpaPhoneSequence;
+- (void)deleteIpaPhoneSequence;
+- (void)setHasText:;
+- (void)setHasPhoneSequence:;
+- (void)setHasIpaPhoneSequence:;
+@end

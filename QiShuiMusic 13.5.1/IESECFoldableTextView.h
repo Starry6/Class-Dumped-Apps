@@ -1,0 +1,32 @@
+@interface IESECFoldableTextView : UIControl
+@property (nonatomic) NSParagraphStyle paragraphStyle;
+@property (nonatomic) NSDictionary attributes;
+@property (nonatomic) NSString text;
+@property (nonatomic) BOOL folded;
+@property (nonatomic) BOOL isScrollEnabled;
+@property (nonatomic) q maximumNumberOfLines;
+@property (nonatomic) double maximumHeight;
+- (id)attributedStringFromString:;
+- (id)foldedText;
+- (void)foldingControlButtonDidClick:;
+- (id)layoutLinesWithTextView:;
+- (void)setFolded:;
+- (id)textSizeInContainerSize:;
+- (void)layoutSubviews;
+- (long long)maximumNumberOfLines;
+- (void)setText:;
+- (void)setMaximumNumberOfLines:;
+- (void)setMaximumHeight:;
+- (double)maximumHeight;
+- (void)setAttributes:;
+- (id)attributes;
+- (id)initWithFrame:;
+- (id)paragraphStyle;
+- (void).cxx_destruct;
+- (id)imageWithColor:;
+- (BOOL)isScrollEnabled;
+- (id)text;
+- (void)setupSubviews;
+- (void)setParagraphStyle:;
+- (BOOL)isFolded;
+@end

@@ -1,0 +1,32 @@
+@interface GEONavigabilityInfo : PBCodable
+@property (nonatomic) BOOL hasIsEvFeasible;
+@property (nonatomic) BOOL isEvFeasible;
+@property (nonatomic) BOOL hasIsBlocked;
+@property (nonatomic) BOOL isBlocked;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)isBlocked;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)isEvFeasible;
+- (void)setIsEvFeasible:;
+- (void)setHasIsEvFeasible:;
+- (BOOL)hasIsEvFeasible;
+- (void)setIsBlocked:;
+- (void)setHasIsBlocked:;
+- (BOOL)hasIsBlocked;
++ (BOOL)isValid:;
+@end

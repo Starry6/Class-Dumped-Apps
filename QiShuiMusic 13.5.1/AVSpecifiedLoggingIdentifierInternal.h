@@ -1,0 +1,2 @@
+@interface AVSpecifiedLoggingIdentifierInternal : NSObject
+@end

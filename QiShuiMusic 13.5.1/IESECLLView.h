@@ -1,0 +1,30 @@
+@interface IESECLLView : IESECLLPassthroughView
+@property (nonatomic) UIView contentView;
+@property (nonatomic) @ dataSource;
+@property (nonatomic) BOOL delayUpdate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)inflateBuilder:;
+- (void)setDelayUpdate:;
+- (void)attachViews;
+- (BOOL)delayUpdate;
+- (id)initWithBuilder:dataSource:;
+- (void)updateDataSource:;
+- (void)updateLayoutWithBuilder:;
+- (void)updateLayoutWithBuilder:dataSource:;
+- (void)updateLayoutWithBuilder:dataSource:animated:;
+- (void)updateUIWithModel:;
+- (id)updateViewMap;
+- (id)viewHolderForViewWithIdentifier:;
+- (void)setDataSource:;
+- (id)contentView;
+- (void)layoutSubviews;
+- (id)initWithBuilder:;
+- (id)dataSource;
+- (id)sizeThatFits:;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (id).cxx_construct;
+@end

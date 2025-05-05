@@ -1,0 +1,32 @@
+@interface VMUOptionParser : NSObject
+@property (nonatomic) NSString purposeDescription;
+@property (nonatomic) NSString syntaxDescription;
+@property (nonatomic) NSString discussion;
+@property (nonatomic) BOOL singleHyphenLongNames;
+@property (nonatomic) BOOL parametersShowAsAssignment;
+@property (nonatomic) NSInteger optind;
+@property (nonatomic) BOOL abortOnError;
+- (int)optind;
+- (id)init;
+- (void)setSyntaxDescription:;
+- (void)dealloc;
+- (BOOL)abortOnError;
+- (void)setPurposeDescription:;
+- (BOOL)singleHyphenLongNames;
+- (void)registerOptionWithLongName:shortName:argumentKind:argumentName:optionDescription:handler:;
+- (id)purposeDescription;
+- (void)setParametersShowAsAssignment:;
+- (void)usage:;
+- (id)parseArguments:withBlock:;
+- (id)parseArgumentsArray:withBlock:;
+- (void)usage:shouldExit:;
+- (void)setAbortOnError:;
+- (void)setDiscussion:;
+- (void).cxx_destruct;
+- (void)printOptionDescriptions:;
+- (id)discussion;
+- (void)setSingleHyphenLongNames:;
+- (void)registerOptionWithLongName:shortName:argumentKind:argumentName:optionDescription:flags:handler:;
+- (id)syntaxDescription;
+- (BOOL)parametersShowAsAssignment;
+@end

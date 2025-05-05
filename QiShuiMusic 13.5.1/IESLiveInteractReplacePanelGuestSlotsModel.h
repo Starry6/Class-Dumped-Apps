@@ -1,0 +1,33 @@
+@interface IESLiveInteractReplacePanelGuestSlotsModel : NSObject
+@property (nonatomic) {CGPoint=dd} frameXY;
+@property (nonatomic) {CGSize=dd} size;
+@property (nonatomic) BOOL isAnchor;
+@property (nonatomic) BOOL isEnlarge;
+@property (nonatomic) BOOL enable;
+@property (nonatomic) NSString userId;
+@property (nonatomic) BOOL isAudio;
+@property (nonatomic) q posIndex;
+@property (nonatomic) BOOL isSelect;
+@property (nonatomic) {CGSize=dd} imageSize;
+- (id)frameXY;
+- (BOOL)isEnlarge;
+- (BOOL)isSelect;
+- (long long)posIndex;
+- (void)setFrameXY:;
+- (void)setIsAnchor:;
+- (void)setIsAudio:;
+- (void)setIsEnlarge:;
+- (void)setIsSelect:;
+- (void)setPosIndex:;
+- (BOOL)enable;
+- (id)userId;
+- (id)imageSize;
+- (BOOL)isAnchor;
+- (void).cxx_destruct;
+- (void)setUserId:;
+- (void)setEnable:;
+- (void)setSize:;
+- (id)size;
+- (void)setImageSize:;
+- (BOOL)isAudio;
+@end

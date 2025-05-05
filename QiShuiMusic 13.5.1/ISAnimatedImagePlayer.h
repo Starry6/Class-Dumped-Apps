@@ -1,0 +1,34 @@
+@interface ISAnimatedImagePlayer : NSObject
+@property (nonatomic) PFAnimatedImage animatedImage;
+@property (nonatomic) BOOL playing;
+@property (nonatomic) Q displayedFrameIndex;
+@property (nonatomic) BOOL allowFrameDrops;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)isPlaying;
+- (void)dealloc;
+- (void)setPlaying:;
+- (void)observable:didChange:context:;
+- (void)registerDestination:;
+- (void).cxx_destruct;
+- (id)currentImage;
+- (void)unregisterDestination:;
+- (void)animationTimerFired:;
+- (id)animatedImage;
+- (void)updateAnimation;
+- (BOOL)_shouldAnimate;
+- (id)initWithAnimatedImage:;
+- (void)setAllowFrameDrops:;
+- (void)_notifyDestinationsOfFrameChange;
+- (void)_notifyDestinationsOfAnimationStart;
+- (void)_notifyDestinationsOfAnimationEnd;
+- (BOOL)_anyDestinationIsReady;
+- (void)_seekToBeginning;
+- (void)_setCurrentFrame:;
+- (void)setDisplayedFrameIndex:;
+- (void)_resetAnimationState;
+- (unsigned long long)displayedFrameIndex;
+- (BOOL)allowFrameDrops;
+@end

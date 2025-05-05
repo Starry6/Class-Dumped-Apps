@@ -1,0 +1,2 @@
+@interface HTSLiveGiftTouchRoot : GPBRootObject
+@end

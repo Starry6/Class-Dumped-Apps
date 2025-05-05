@@ -1,0 +1,33 @@
+@interface CRImage_PixelBuffer : CRImage
+- (void)dealloc;
+- (id)pixelBuffer;
+- (unsigned long long)height;
+- (unsigned long long)width;
+- (void)writeToFile:;
+- (id)cgImage;
+- (id)initWithCVPixelBuffer:;
+- (id)pixelBufferWithScale:paddedToSize:;
+- (id)pixelBufferWithScale:paddedToSize:adjustedToSize:;
+- (id)pixelBufferWithScale:paddedToSize:adjustedToSize:mask:;
+- (id)createFloatBuffer;
+- (id)imageByRotating90CW;
+- (id)imageByRotating180;
+- (id)imageByCorrectingFromOrientation:;
+- (id)imageByScalingToWidth:height:;
+- (id)imageByPaddingToRatioAndScalingToWidth:height:;
+- (id)imageByPaddingToRatioAndScalingToWidth:height:alignCenter:;
+- (id)imageByPaddingX:paddingY:;
+- (id)imageByDilating;
+- (id)imageByApplyingBinaryMask:;
+- (id)imageByCroppingRectangle:;
+- (id)imageByInvertingIntensity;
+- (id)initWithContentsOfURL:toColorSpace:;
+- (id)imageByConvertingToColorSpace:;
+- (id)imageByOverlayingImage:opacity:;
+- (id)imageByOverlayingRects:count:;
+- (id)vImage;
+- (id)pixelBufferWithScale:paddedToSize:adjustedToSize:mask:format:;
+- (id)_pixelBufferFromUrl:;
++ (void)drawVerticalLineAtXOffset:image:;
++ (id)_convertPixelBuffer:toFormat:;
+@end

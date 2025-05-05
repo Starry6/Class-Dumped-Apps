@@ -1,0 +1,32 @@
+@interface HTSGLFilterInput : HTSFilterInterface
+@property (nonatomic) VEMVPRenderer pixelBufferRenderer;
+@property (nonatomic) {CGSize=dd} targetSize;
+@property (nonatomic) q fillMode;
+@property (nonatomic) {?=qiIq} realFramePts;
+@property (nonatomic) HTSGLFilterGroup<IESMMEffectGroupProtocol> effectGroup;
+- (void)setEffectGroup:;
+- (id)effectGroup;
+- (void)endProcessing;
+- (void)generateOutputFramebufferWithSize:sampleInfo:;
+- (id)generateStabOutputFrameBuffer:sampleInfo:;
+- (BOOL)needColorTransfer:withInfo:;
+- (id)pixelBufferRenderer;
+- (void)processInputBuffer:;
+- (void)processInputBuffer:andFrametime:withInfo:;
+- (void)processInputBuffer:withInfo:;
+- (void)processInputBufferOnQueue:andFrametime:;
+- (void)processInputBufferOnQueue:andFrametime:withInfo:;
+- (void)processInputFrameBuffer:andFrametime:;
+- (id)realFramePts;
+- (void)releaseOutputFramebufferIfNeeded;
+- (void)setPixelBufferRenderer:;
+- (void)setRealFramePts:;
+- (void)updateTargetsForVideoCameraUsingCacheTextureAtWidth:height:time:;
+- (long long)fillMode;
+- (void)dealloc;
+- (void)setTargetSize:;
+- (id)targetSize;
+- (id)initWithContext:;
+- (void).cxx_destruct;
+- (void)setFillMode:;
+@end

@@ -1,0 +1,29 @@
+@interface IDSLogging : NSObject
++ (id)Accounts;
++ (id)DaemonListener;
++ (id)_IDSService;
++ (id)IDSConnection;
++ (id)GUIDTRACE;
++ (id)IDSDeviceConnection;
++ (id)IDSDirectMessagingConnection;
++ (id)DaemonProxy;
++ (id)IDSConnection_oversize;
++ (id)general;
++ (id)IDSiCloudSignInHack;
++ (id)ServiceAvailability;
++ (id)IDSDataChannels;
++ (id)IDSService;
++ (id)_IDSGroupSession;
++ (id)IDQuery;
++ (id)IDSAccountController;
++ (id)IDSRealTimeEncryptionProxy;
++ (id)transactionLog;
++ (id)continuity;
++ (id)IDSDevice;
++ (id)IDSSession;
++ (id)DaemonController;
++ (id)CFS;
++ (id)_IDSSession;
++ (id)Connection;
++ (id)_IDSGroupSession_oversize;
+@end

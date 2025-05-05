@@ -1,0 +1,35 @@
+@interface STMutableMediaStatusDomainData : STMediaStatusDomainData
+@property (nonatomic) STMutableActivityAttributionCatalog attributionCatalog;
+@property (nonatomic) STMutableListData cameraAttributionListData;
+@property (nonatomic) NSArray cameraAttributions;
+@property (nonatomic) NSArray audioRecordingAttributionList;
+@property (nonatomic) NSArray mutedAudioRecordingAttributionList;
+@property (nonatomic) NSArray cameraCaptureAttributionList;
+@property (nonatomic) NSSet audioRecordingAttributions;
+@property (nonatomic) NSSet mutedAudioRecordingAttributions;
+@property (nonatomic) NSSet cameraCaptureAttributions;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setCameraAttributions:;
+- (void)setMutedAudioRecordingAttributions:;
+- (void)setAudioRecordingAttributionList:;
+- (void)addAudioRecordingAttribution:;
+- (void)setMutedAudioRecordingAttributionList:;
+- (id)attributionCatalog;
+- (void)removeMutedAudioRecordingAttribution:;
+- (id)initWithAttributionCatalog:cameraAttributionListData:;
+- (void)removeCameraCaptureAttribution:;
+- (void)setCameraCaptureAttributions:;
+- (void)removeAudioRecordingAttribution:;
+- (void)addCameraAttribution:;
+- (void)setCameraCaptureAttributionList:;
+- (id)cameraAttributionListData;
+- (BOOL)applyDiff:;
+- (void)removeCameraAttribution:;
+- (void)addMutedAudioRecordingAttribution:;
+- (void)addCameraCaptureAttribution:;
+- (void)setAudioRecordingAttributions:;
+- (id)copyWithZone:;
+@end

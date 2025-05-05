@@ -1,0 +1,38 @@
+@interface CJPayBrandPromoteModel : JSONModel
+@property (nonatomic) BOOL showNewLoading;
+@property (nonatomic) BOOL showNewAlertType;
+@property (nonatomic) NSString halfInputPasswordTitle;
+@property (nonatomic) NSString fullVerifyPasswordTitle;
+@property (nonatomic) NSString fullSetPasswordTitle;
+@property (nonatomic) NSString fullSetPasswordTitleAgain;
+@property (nonatomic) NSString cashierTitle;
+@property (nonatomic) NSString addCardTitle;
+@property (nonatomic) NSString addCardH1Title;
+@property (nonatomic) NSString oneKeyQuickCashierTitle;
+@property (nonatomic) NSArray douyinLoadingUrlList;
+- (id)addCardH1Title;
+- (id)addCardTitle;
+- (id)cashierTitle;
+- (id)douyinLoadingUrlList;
+- (id)fullSetPasswordTitle;
+- (id)fullSetPasswordTitleAgain;
+- (id)fullVerifyPasswordTitle;
+- (id)halfInputPasswordTitle;
+- (id)oneKeyQuickCashierTitle;
+- (void)setAddCardH1Title:;
+- (void)setAddCardTitle:;
+- (void)setCashierTitle:;
+- (void)setDouyinLoadingUrlList:;
+- (void)setFullSetPasswordTitle:;
+- (void)setFullSetPasswordTitleAgain:;
+- (void)setFullVerifyPasswordTitle:;
+- (void)setHalfInputPasswordTitle:;
+- (void)setOneKeyQuickCashierTitle:;
+- (void)setShowNewAlertType:;
+- (void)setShowNewLoading:;
+- (BOOL)showNewAlertType;
+- (BOOL)showNewLoading;
+- (void).cxx_destruct;
++ (id)keyMapper;
++ (BOOL)propertyIsOptional:;
+@end

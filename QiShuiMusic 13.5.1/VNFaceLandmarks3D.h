@@ -1,0 +1,33 @@
+@interface VNFaceLandmarks3D : VNFaceLandmarks
+@property (nonatomic) VNFaceLandmarkRegion3D allPoints;
+@property (nonatomic) VNFaceLandmarkRegion3D faceContour;
+@property (nonatomic) VNFaceLandmarkRegion3D leftEye;
+@property (nonatomic) VNFaceLandmarkRegion3D rightEye;
+@property (nonatomic) VNFaceLandmarkRegion3D leftEyebrow;
+@property (nonatomic) VNFaceLandmarkRegion3D rightEyebrow;
+@property (nonatomic) VNFaceLandmarkRegion3D nose;
+@property (nonatomic) VNFaceLandmarkRegion3D noseCrest;
+@property (nonatomic) VNFaceLandmarkRegion3D medianLine;
+@property (nonatomic) VNFaceLandmarkRegion3D outerLips;
+@property (nonatomic) VNFaceLandmarkRegion3D innerLips;
+- (void)_initLocks;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)outerLips;
+- (id)rightEye;
+- (id)rightEyebrow;
+- (id)innerLips;
+- (id)medianLine;
+- (id)nose;
+- (id)noseCrest;
+- (id)faceContour;
+- (id)allPoints;
+- (id)leftEye;
+- (id)leftEyebrow;
+- (id)_createPointArray:count:;
+- (id)initWithOriginatingRequestSpecifier:pointsData:pointCount:userFacingBBox:alignedBBox:landmarkScore:;
++ (BOOL)supportsSecureCoding;
++ (id)defaultOriginatingRequestClassNameForRequestRevision:;
++ (unsigned long long)landmarkPointSizeInBytes;
+@end

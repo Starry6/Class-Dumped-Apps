@@ -1,0 +1,34 @@
+@interface SAGKLinkedAnswer : AceObject
+@property (nonatomic) NSString descriptionText;
+@property (nonatomic) NSString displayLink;
+@property (nonatomic) NSURL link;
+@property (nonatomic) NSString name;
+@property (nonatomic) SAUIAppPunchOut punchOut;
+@property (nonatomic) NSString query;
+@property (nonatomic) NSURL searchUri;
+@property (nonatomic) NSArray thumbnails;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)link;
+- (id)displayLink;
+- (void)setDisplayLink:;
+- (void)setName:;
+- (id)groupIdentifier;
+- (id)descriptionText;
+- (void)setLink:;
+- (void)setQuery:;
+- (id)query;
+- (id)encodedClassName;
+- (void)setDescriptionText:;
+- (id)name;
+- (void)setPunchOut:;
+- (id)punchOut;
+- (id)searchUri;
+- (void)setSearchUri:;
+- (id)thumbnails;
+- (void)setThumbnails:;
++ (id)linkedAnswer;
++ (id)linkedAnswerWithDictionary:context:;
+@end

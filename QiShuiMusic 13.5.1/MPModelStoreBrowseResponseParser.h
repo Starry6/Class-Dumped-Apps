@@ -1,0 +1,34 @@
+@interface MPModelStoreBrowseResponseParser : NSObject
+@property (nonatomic) @ rawResponseOutput;
+@property (nonatomic) {?=BB} options;
+@property (nonatomic) MPModelStoreBrowseResponseParser previousParser;
+@property (nonatomic) MPStoreItemMetadataResponse additionalStoreItemMetadataResponse;
+@property (nonatomic) MPModelStoreBrowseSectionBuilder sectionBuilder;
+@property (nonatomic) MPModelStoreBrowseContentItemBuilder contentItemBuilder;
+@property (nonatomic) MPSectionedCollection results;
+@property (nonatomic) MPChangeDetails changeDetails;
+@property (nonatomic) MPSectionedCollection additionalContentIdentifiers;
+@property (nonatomic) NSArray allAdditionalContentIdentifiersNeedingLookup;
+- (id)results;
+- (id)options;
+- (void).cxx_destruct;
+- (id)changeDetails;
+- (void)_parse;
+- (id)initWithRawResponseOutput:options:sectionBuilder:contentItemBuilder:userIdentity:;
+- (id)initWithPreviousParser:additionalStoreItemMetadataResponse:options:sectionBuilder:contentItemBuilder:userIdentity:;
+- (id)additionalContentIdentifiers;
+- (id)allAdditionalContentIdentifiersNeedingLookup;
+- (void)_parseFeaturedContentStructureModelChildren:;
+- (BOOL)_parseFeaturedContentChild:isMemberOfChartSet:insertingResultsToSectionedCollection:atSectionIndex:additionalContentIdentifiers:allAdditionalContentIdentifiersNeedingLookup:;
+- (void)_parseSingleContentListFromPageDataDictionary:isMemberOfChartSet:;
+- (void)_parseUsingAdditionalContentIdentifiersFromPreviousParser;
+- (void)_populateStorePlatformDataResultsFromRawResponseOutputDictionary:;
+- (void)_populateUnavailableContentIdentifiersFromPageDataDictionary:;
+- (id)_storeItemMetadataForContentIdentifier:;
+- (BOOL)_storeItemMetadataIsAvailableForContentIdentifier:;
+- (id)rawResponseOutput;
+- (id)previousParser;
+- (id)additionalStoreItemMetadataResponse;
+- (id)sectionBuilder;
+- (id)contentItemBuilder;
+@end

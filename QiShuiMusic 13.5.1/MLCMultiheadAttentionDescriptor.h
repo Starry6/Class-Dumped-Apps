@@ -1,0 +1,31 @@
+@interface MLCMultiheadAttentionDescriptor : NSObject
+@property (nonatomic) BOOL hasKeyPaddingMask;
+@property (nonatomic) BOOL hasAttentionMask;
+@property (nonatomic) Q modelDimension;
+@property (nonatomic) Q keyDimension;
+@property (nonatomic) Q valueDimension;
+@property (nonatomic) Q headCount;
+@property (nonatomic) float dropout;
+@property (nonatomic) BOOL hasBiases;
+@property (nonatomic) BOOL hasAttentionBiases;
+@property (nonatomic) BOOL addsZeroAttention;
+- (unsigned long long)hash;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (unsigned long long)modelDimension;
+- (float)dropout;
+- (id)initWithModelDimension:keyDimension:valueDimension:headCount:dropout:hasBias:hasAttentionBias:addsZeroAttention:;
+- (unsigned long long)keyDimension;
+- (unsigned long long)valueDimension;
+- (unsigned long long)headCount;
+- (BOOL)hasBiases;
+- (BOOL)hasAttentionBiases;
+- (BOOL)addsZeroAttention;
+- (BOOL)hasKeyPaddingMask;
+- (void)setHasKeyPaddingMask:;
+- (BOOL)hasAttentionMask;
+- (void)setHasAttentionMask:;
++ (id)descriptorWithModelDimension:keyDimension:valueDimension:headCount:dropout:hasBiases:hasAttentionBiases:addsZeroAttention:;
++ (id)descriptorWithModelDimension:headCount:;
+@end

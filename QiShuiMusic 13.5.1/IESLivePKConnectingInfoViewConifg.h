@@ -1,0 +1,31 @@
+@interface IESLivePKConnectingInfoViewConifg : NSObject
+@property (nonatomic) BOOL useNewStyle;
+@property (nonatomic) BOOL showGender;
+@property (nonatomic) BOOL showRecommendReason;
+@property (nonatomic) BOOL isActivityTheme;
+@property (nonatomic) BOOL showRivalInfo;
+@property (nonatomic) double containerLimitWidth;
+@property (nonatomic) NSString trackSource;
+@property (nonatomic) IESLivePKUser oppositeUser;
+@property (nonatomic) NSMutableArray matchTagsArray;
+- (BOOL)isActivityTheme;
+- (void)setTrackSource:;
+- (void)setUseNewStyle:;
+- (double)containerLimitWidth;
+- (id)matchTagsArray;
+- (id)oppositeUser;
+- (void)setContainerLimitWidth:;
+- (void)setIsActivityTheme:;
+- (void)setMatchTagsArray:;
+- (void)setOppositeUser:;
+- (void)setShowGender:;
+- (void)setShowRecommendReason:;
+- (void)setShowRivalInfo:;
+- (BOOL)showGender;
+- (BOOL)showRecommendReason;
+- (BOOL)showRivalInfo;
+- (id)trackSource;
+- (BOOL)useNewStyle;
+- (id)init;
+- (void).cxx_destruct;
+@end

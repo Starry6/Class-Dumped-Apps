@@ -1,0 +1,30 @@
+@interface PKPhysicsJointRevolute : PKPhysicsJoint
+@property (nonatomic) BOOL shouldEnableLimits;
+@property (nonatomic) double lowerAngleLimit;
+@property (nonatomic) double upperAngleLimit;
+@property (nonatomic) double frictionTorque;
+@property (nonatomic) double rotationSpeed;
+@property (nonatomic) {CGPoint=dd} anchor;
+- (id)anchor;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void)create;
+- (id).cxx_construct;
+- (void)setShouldEnableLimits:;
+- (void)setUpperAngleLimit:;
+- (void)setLowerAngleLimit:;
+- (void)setFrictionTorque:;
+- (double)frictionTorque;
+- (id)_joint;
+- (double)rotationSpeed;
+- (void)setRotationSpeed:;
+- (double)lowerAngleLimit;
+- (double)upperAngleLimit;
+- (BOOL)shouldEnableLimits;
+- (void)set_joint:;
+- (id)_jointDef;
+- (id)initWithBodyA:bodyB:anchor:;
+- (BOOL)isEqualToRevoluteJoint:;
++ (BOOL)supportsSecureCoding;
++ (id)jointWithBodyA:bodyB:anchor:;
+@end

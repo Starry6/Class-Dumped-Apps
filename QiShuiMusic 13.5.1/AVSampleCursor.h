@@ -1,0 +1,36 @@
+@interface AVSampleCursor : NSObject
+- (id)init;
+- (void)dealloc;
+- (id)presentationTimeStamp;
+- (id)description;
+- (id)copyWithZone:;
+- (id)initWithFigSampleCursor:;
+- (id)_figSampleCursor;
+- (long long)stepInDecodeOrderByCount:;
+- (long long)stepInPresentationOrderByCount:;
+- (id)stepByDecodeTime:wasPinned:;
+- (id)stepByDecodeTime:;
+- (id)stepByPresentationTime:wasPinned:;
+- (id)stepByPresentationTime:;
+- (id)decodeTimeStamp;
+- (long long)comparePositionInDecodeOrderWithPositionOfCursor:;
+- (BOOL)samplesWithEarlierDecodeTimeStampsMayHaveLaterPresentationTimeStampsThanCursor:;
+- (BOOL)samplesWithLaterDecodeTimeStampsMayHaveEarlierPresentationTimeStampsThanCursor:;
+- (BOOL)canProvideSampleBuffers;
+- (id)createSampleBufferForCurrentSampleReturningError:;
+- (id)createSampleBufferFromCurrentSampleToEndCursor:error:;
+- (id)currentSampleDuration;
+- (id)copyCurrentSampleFormatDescription;
+- (id)currentSampleSyncInfo;
+- (id)currentSampleDependencyInfo;
+- (id)currentSampleAudioDependencyInfo;
+- (id)currentSampleDependencyAttachments;
+- (id)currentChunkStorageURL;
+- (id)currentChunkStorageRange;
+- (id)currentChunkInfo;
+- (long long)currentSampleIndexInChunk;
+- (id)currentSampleStorageRange;
+- (long long)samplesRequiredForDecoderRefresh;
+- (id)seamIdentifier;
++ (id)sampleCursorWithFigSampleCursor:;
+@end

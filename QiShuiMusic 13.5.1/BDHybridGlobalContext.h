@@ -1,0 +1,33 @@
+@interface BDHybridGlobalContext : NSObject
+@property (nonatomic) NSMutableDictionary pageSessionContexts;
+@property (nonatomic) NSMutableDictionary apiSessionContexts;
+@property (nonatomic) NSMutableDictionary pageAPIDicts;
+@property (nonatomic) NSTimer cleaningTimer;
+- (void)_addAPIContext:;
+- (id)findFrameworkPageContext:error:;
+- (void)_addPageContext:;
+- (id)_createErrorWithMsg:;
+- (void)_createErrorWithMsg:error:;
+- (void)_onTimerFired;
+- (void)_startCleaningTimerIfNeeded;
+- (id)activeAPIContexts;
+- (id)activePageContexts;
+- (id)apiSessionContexts;
+- (id)cleaningTimer;
+- (id)findAPIContextWithSession:;
+- (id)findFrameworkAPIContext:error:;
+- (id)findPageContextWithSession:;
+- (id)pageAPIDicts;
+- (id)pageSessionContexts;
+- (void)removeAPISession:;
+- (void)removePageSession:;
+- (void)setApiSessionContexts:;
+- (void)setCleaningTimer:;
+- (void)setPageAPIDicts:;
+- (void)setPageSessionContexts:;
+- (id)init;
+- (void)addContext:;
+- (void).cxx_destruct;
+- (void)removeContext:;
++ (id)sharedContext;
+@end

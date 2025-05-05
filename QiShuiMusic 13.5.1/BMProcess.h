@@ -1,0 +1,38 @@
+@interface BMProcess : NSObject
+@property (nonatomic) Q processType;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) NSString executableName;
+@property (nonatomic) NSString executablePath;
+@property (nonatomic) {?=[8I]} auditToken;
+@property (nonatomic) NSInteger pid;
+@property (nonatomic) I uid;
+@property (nonatomic) BOOL isSandboxed;
+@property (nonatomic) NSSet authorizedStreamsForReading;
+@property (nonatomic) BOOL isLegacyAppleInternalClient;
+- (id)executablePath;
+- (BOOL)isSandboxed;
+- (id)executableName;
+- (id)init;
+- (BOOL)boolForEntitlement:;
+- (unsigned int)uid;
+- (id)valueForEntitlement:;
+- (id)identifier;
+- (id)authorizedStreamsForReading;
+- (id)auditToken;
+- (id)_initWithAuditToken:;
+- (BOOL)hasNonEmptyArrayForEntitlement:;
+- (int)pid;
+- (BOOL)canPerformSyscall:report:;
+- (void).cxx_destruct;
+- (BOOL)canPerformGlobalMachLookup:report:;
+- (id)initWithAuditToken:;
+- (BOOL)isLegacyAppleInternalClient;
+- (id)nonnullArrayForEntitlement:;
+- (unsigned long long)processType;
+- (BOOL)canPerformFileOperation:onPath:report:;
+- (BOOL)_canTrustApplicationIdentifierEntitlement;
+- (void)_initializeProcessProperties;
+- (void)cacheValuesForEntitlements:;
++ (id)current;
++ (id)processWithXPCConnection:;
+@end

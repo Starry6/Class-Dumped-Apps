@@ -1,0 +1,34 @@
+@interface AWEProfileDataManager : NSObject
++ (void)approveUser:completion:;
++ (void)bindPlatform:parameters:completion:;
++ (void)blockOrHideMyPostUserID:type:source:completion:;
++ (void)blockUser:completion:;
++ (void)followType:User:secUserID:fromPageType:prePageType:fromSubpageType:channelID:itemID:activityID:needMarkFriends:completion:;
++ (void)followUser:fromPageType:prePageType:channelID:completion:;
++ (void)followUser:fromPageType:prePageType:completion:;
++ (id)getExpectedSizeInfo;
++ (void)getNewRecommendFriendCountWithCompletion:;
++ (void)getNewRecommendFriendCountWithContext:completion:;
++ (void)getUserIDInfoWithUniqueID:completion:;
++ (void)getUserProfileWithID:cacheStrategy:cacheMaxAge:detailCompletion:;
++ (void)getUserProfileWithID:cacheStrategy:cacheMaxAge:extraParams:detailCompletion:;
++ (void)getUserProfileWithID:completion:;
++ (void)getUserProfileWithID:detailCompletion:;
++ (void)hidePostFromUser:completion:;
++ (BOOL)needPublishVideoStrategyParameter;
++ (BOOL)needRequestPvParams;
++ (void)noticeUploadRelationSourceWithfromPageType:prePageType:;
++ (void)rejectUser:completion:;
++ (void)resetUserRecommendCount;
++ (void)setRemarkNameWithUserID:remarkName:completion:;
++ (id)sourceParam;
++ (void)topFollowingUser:completion:;
++ (void)topOrUntopFollowingUser:type:completion:;
++ (void)turnOffPostNotificationWithUserID:completion:;
++ (void)turnOnPostNotificationWithUserID:completion:;
++ (void)unbindPlatform:completion:;
++ (void)unblockUser:completion:;
++ (void)unhidePostFromUser:completion:;
++ (void)untopFollowingUser:completion:;
++ (long long)userRecommendCount;
+@end

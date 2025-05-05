@@ -1,0 +1,37 @@
+@interface AWEIMNewAwemeMessage : AWEIMMessage
+@property (nonatomic) NSString awemeID;
+@property (nonatomic) q IESIMAwemeType;
+@property (nonatomic) IESIMURLModel coverURL;
+@property (nonatomic) IESIMURLModel originCoverURL;
+@property (nonatomic) NSString awemeDetail;
+@property (nonatomic) q awemeCount;
+@property (nonatomic) q awemeCreateTime;
+@property (nonatomic) NSString secUid;
+@property (nonatomic) BOOL canShowTip;
+@property (nonatomic) NSString displayTitle;
+@property (nonatomic) NSString displayDetail;
+@property (nonatomic) NSString createTimeReadableString;
+- (void)setAwemeDetail:;
+- (long long)IESIMAwemeType;
+- (long long)awemeCreateTime;
+- (id)awemeID;
+- (long long)awemeCount;
+- (id)awemeDetail;
+- (BOOL)canShowTip;
+- (id)createTimeReadableString;
+- (id)getContentDict;
+- (id)initWithContentDict:;
+- (id)originCoverURL;
+- (id)secUid;
+- (void)setAwemeCount:;
+- (void)setAwemeCreateTime:;
+- (void)setAwemeID:;
+- (void)setIESIMAwemeType:;
+- (void)setOriginCoverURL:;
+- (void)setSecUid:;
+- (id)displayTitle;
+- (void).cxx_destruct;
+- (id)displayDetail;
+- (id)coverURL;
+- (void)setCoverURL:;
+@end

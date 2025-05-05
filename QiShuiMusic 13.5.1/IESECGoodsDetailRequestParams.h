@@ -1,0 +1,37 @@
+@interface IESECGoodsDetailRequestParams : NSObject
+@property (nonatomic) NSMutableDictionary params;
+@property (nonatomic) UIViewController presenting;
+@property (nonatomic) @? completion;
+@property (nonatomic) @? pdpOpenCompletion;
+@property (nonatomic) @? willOpenHalfPage;
+@property (nonatomic) @? willClosePage;
+@property (nonatomic) @? closeHalfPageProgress;
+@property (nonatomic) IESECGoodsDetailCommonMeta commonMeta;
+- (id)packApiSchemaV2;
+- (id)closeHalfPageProgress;
+- (id)commonMeta;
+- (BOOL)getBoolValueFromPath:;
+- (id)getDictionaryValueFromPath:;
+- (id)getNumberValueFromPath:;
+- (id)getObjectValueFromPath:;
+- (id)getStringValueFromPath:;
+- (void)insertNativeParams;
+- (id)pdpOpenCompletion;
+- (id)schemaV2JSBridge;
+- (void)setCloseHalfPageProgress:;
+- (void)setCommonMeta:;
+- (void)setPdpOpenCompletion:;
+- (void)setValueToPath:value:;
+- (void)setWillClosePage:;
+- (void)setWillOpenHalfPage:;
+- (void)setupWithQueryDict:;
+- (id)willClosePage;
+- (id)willOpenHalfPage;
+- (id)completion;
+- (void)setPresenting:;
+- (void)setCompletion:;
+- (void).cxx_destruct;
+- (id)params;
+- (id)presenting;
+- (void)setParams:;
+@end

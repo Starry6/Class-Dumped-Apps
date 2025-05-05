@@ -1,0 +1,33 @@
+@interface IESLiveRevenueInteractSettingPanel : IESLiveRevenueInteractPopupViewController
+@property (nonatomic) UIButton backButton;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIView separateLine;
+@property (nonatomic) UITableView interactSettingTableView;
+@property (nonatomic) <IESLiveCompoundSubscription> disposable;
+@property (nonatomic) IESLiveRevenueInteractSettingViewModel viewModel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)bindAction;
+- (id)disposable;
+- (id)interactSettingTableView;
+- (void)onBackButtonClicked;
+- (void)onSetupNavBar:;
+- (id)separateLine;
+- (void)setDisposable:;
+- (void)setInteractSettingTableView:;
+- (void)setSeparateLine:;
+- (id)viewModel;
+- (void)setTitleLabel:;
+- (id)tableView:cellForRowAtIndexPath:;
+- (id)initWithViewModel:;
+- (id)backButton;
+- (void).cxx_destruct;
+- (void)setViewModel:;
+- (id)titleLabel;
+- (void)setBackButton:;
+- (long long)tableView:numberOfRowsInSection:;
+- (void)viewDidLoad;
+- (void)layoutUI;
+@end

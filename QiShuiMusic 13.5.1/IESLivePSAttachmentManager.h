@@ -1,0 +1,36 @@
+@interface IESLivePSAttachmentManager : NSObject
+@property (nonatomic) IESLivePublicScreenContext publicScreenContext;
+@property (nonatomic) NSMutableSet availableTypesSet;
+@property (nonatomic) NSMutableDictionary attachmentsMap;
+@property (nonatomic) NSMutableDictionary mastersMap;
+@property (nonatomic) NSMutableDictionary protocolMap;
+@property (nonatomic) IESLivePublicScreenView publicScreenView;
+@property (nonatomic) IESLivePublicScreenDataFlowManager dataFlowManager;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)dataFlowManager;
+- (void)setProtocolMap:;
+- (BOOL)attachAttachmentWithType:;
+- (id)attachmentsMap;
+- (void)availAttachmentWithType:needAttachImmediately:;
+- (id)availableTypesSet;
+- (void)banAttachmentWithType:needDetachImmediately:;
+- (BOOL)checkAttachmentAvailableWithType:;
+- (void)detachAttachmentWithType:;
+- (id)getAttachmentFromProtocol:;
+- (id)initWithPublicScreenContext:availableTypeArray:;
+- (id)mastersMap;
+- (id)publicScreenContext;
+- (id)publicScreenView;
+- (void)registerMaster:forAttachmentWithType:;
+- (void)setAttachmentsMap:;
+- (void)setAvailableTypesSet:;
+- (void)setDataFlowManager:;
+- (void)setMastersMap:;
+- (void)setPublicScreenContext:;
+- (void)setPublicScreenView:;
+- (void).cxx_destruct;
+- (id)protocolMap;
+@end

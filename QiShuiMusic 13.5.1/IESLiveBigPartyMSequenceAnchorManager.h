@@ -1,0 +1,38 @@
+@interface IESLiveBigPartyMSequenceAnchorManager : NSObject
+@property (nonatomic) <IESLiveRoomServiceAdapter> room;
+@property (nonatomic) BOOL isBigPartyTurnedOnPassivelyByMSequence;
+@property (nonatomic) BOOL isTurningOnBigParty;
+@property (nonatomic) BOOL isSwitchingBigParty;
+@property (nonatomic) Q currentInteractiveScene;
+@property (nonatomic) BOOL isMSequenceRoomHostModeEnabled;
+@property (nonatomic) BOOL enableSendGiftToHost;
+@property (nonatomic) <IESLiveInteractionModuleMSequenceReactions> reactions;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (unsigned long long)currentInteractiveScene;
+- (void)didSetAttachingDIContext;
+- (BOOL)enableSendGiftToHost;
+- (void)guest:didConnectAsHostInMSequenceRoom:;
+- (void)guest:didDisconnectAsHostInMSequenceRoom:;
+- (id)initWithRoom:DIContext:;
+- (void)interactionModeStartedWithLayout:;
+- (BOOL)isBigPartyTurnedOnPassivelyByMSequence;
+- (BOOL)isMSequenceRoomHostModeEnabled;
+- (BOOL)isSwitchingBigParty;
+- (BOOL)isTurningOnBigParty;
+- (void)liveDidExitMSequenceRoom:enableHost:;
+- (void)liveDidStartAsMSequenceRoom:enableHost:;
+- (void)liveDidSwitchToMSequenceRoom:enableHost:;
+- (void)setEnableSendGiftToHost:;
+- (void)setIsBigPartyTurnedOnPassivelyByMSequence:;
+- (void)setIsMSequenceRoomHostModeEnabled:;
+- (void)setIsSwitchingBigParty:;
+- (void)setIsTurningOnBigParty:;
+- (void).cxx_destruct;
+- (id)room;
+- (void)setRoom:;
+- (void)messageReceived:;
+- (id)reactions;
+@end

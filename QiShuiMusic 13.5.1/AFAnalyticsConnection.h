@@ -1,0 +1,32 @@
+@interface AFAnalyticsConnection : NSObject
+@property (nonatomic) BOOL needsCleanUpConnection;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)_connection;
+- (id)init;
+- (void)dealloc;
+- (void)_idleTimerFired;
+- (id)logInstrumentationOfType:machAbsoluteTime:turnIdentifier:;
+- (id)endEventsGrouping;
+- (void)_connectionInterrupted;
+- (void)_stopIdleTimer;
+- (void)_startIdleTimer;
+- (void).cxx_destruct;
+- (id)beginEventsGrouping;
+- (id)boostQueuedEvents:;
+- (void)_connectionInvalidated;
+- (id)flushStagedEventsWithReply:;
+- (id)stageEvents:completion:;
+- (id)stageUEIEventData:timestamp:;
+- (void)_sendEvents:numberOfRetries:completion:;
+- (void)_handleFailureCallbackForEvents:error:numberOfRetries:completion:;
+- (void)_handleSuccessCallbackForEvents:completion:;
+- (void)_willStartSendingEvents:;
+- (void)_didFinishSendingEvents:;
+- (void)_cleanUpConnectionIfNeeded;
+- (void)_cleanUpConnection;
+- (BOOL)needsCleanUpConnection;
+- (void)setNeedsCleanUpConnection:;
+@end

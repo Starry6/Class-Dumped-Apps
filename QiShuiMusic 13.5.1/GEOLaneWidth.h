@@ -1,0 +1,38 @@
+@interface GEOLaneWidth : PBCodable
+@property (nonatomic) BOOL hasWidth;
+@property (nonatomic) I width;
+@property (nonatomic) BOOL hasOffset;
+@property (nonatomic) I offset;
+@property (nonatomic) BOOL hasZilchPathIndex;
+@property (nonatomic) I zilchPathIndex;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (BOOL)hasWidth;
+- (BOOL)hasOffset;
+- (id)unknownFields;
+- (void)setOffset:;
+- (void)setHasWidth:;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (void)setWidth:;
+- (unsigned long long)hash;
+- (unsigned int)offset;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (unsigned int)width;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (void)setHasOffset:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (unsigned int)zilchPathIndex;
+- (void)setZilchPathIndex:;
+- (void)setHasZilchPathIndex:;
+- (BOOL)hasZilchPathIndex;
++ (BOOL)isValid:;
+@end

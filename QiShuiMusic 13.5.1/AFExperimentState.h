@@ -1,0 +1,30 @@
+@interface AFExperimentState : NSObject
+@property (nonatomic) NSDate lastSyncDate;
+@property (nonatomic) BOOL didEnd;
+@property (nonatomic) NSString endingGroupIdentifier;
+@property (nonatomic) NSString version;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)lastSyncDate;
+- (id)init;
+- (id)version;
+- (id)buildDictionaryRepresentation;
+- (id)mutatedCopyWithMutator:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)initWithDictionaryRepresentation:;
+- (id)_descriptionWithIndent:;
+- (id)initWithBuilder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)didEnd;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)initWithLastSyncDate:didEnd:endingGroupIdentifier:version:;
+- (id)endingGroupIdentifier;
++ (id)newWithBuilder:;
++ (BOOL)supportsSecureCoding;
+@end

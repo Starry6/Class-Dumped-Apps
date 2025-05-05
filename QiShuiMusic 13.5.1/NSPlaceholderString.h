@@ -1,0 +1,29 @@
+@interface NSPlaceholderString : NSString
+- (unsigned short)HMDP_characterAtIndex:;
+- (id)init;
+- (void)dealloc;
+- (id)initWithBytesNoCopy:length:encoding:freeWhenDone:;
+- (id)initWithBytesNoCopy:length:encoding:deallocator:;
+- (id)initWithFormat:locale:arguments:;
+- (id)initWithCString:length:;
+- (unsigned short)characterAtIndex:;
+- (id)initWithString:;
+- (id)initWithCString:encoding:;
+- (BOOL)_isDeallocating;
+- (id)initWithBytes:length:encoding:;
+- (id)_initWithFormat:locale:options:arguments:;
+- (id)autorelease;
+- (id)initWithCharactersNoCopy:length:deallocator:;
+- (id)release;
+- (id)initWithValidatedFormat:validFormatSpecifiers:locale:arguments:error:;
+- (id)retain;
+- (id)initWithCString:;
+- (BOOL)_tryRetain;
+- (id)initWithData:encoding:;
+- (id)initWithCStringNoCopy:length:freeWhenDone:;
+- (unsigned long long)length;
+- (unsigned long long)retainCount;
+- (id)initWithCharacters:length:;
+- (id)_initWithValidatedFormat:validFormatSpecifiers:locale:options:error:arguments:;
+- (id)initWithCharactersNoCopy:length:freeWhenDone:;
+@end

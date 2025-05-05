@@ -1,0 +1,30 @@
+@interface AMSUserNotificationSettingsTask : AMSTask
+@property (nonatomic) ACAccount account;
+@property (nonatomic) <AMSBagProtocol> bag;
+@property (nonatomic) NSString clientIdentifier;
+@property (nonatomic) AMSProcessInfo clientInfo;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)account;
+- (void)setClientInfo:;
+- (void)setAccount:;
+- (id)clientInfo;
+- (id)identifier;
+- (void)setBag:;
+- (id)updateSettings:;
+- (void).cxx_destruct;
+- (id)bag;
+- (id)clientIdentifier;
+- (id)_url;
+- (id)_countryCodeFromBag:;
+- (id)_stringForKey:fromBag:;
+- (id)fetchAllSettings;
+- (id)_generateParametersForItems:;
+- (id)initWithIdentifier:clientIdentifier:account:bag:;
++ (id)bagSubProfileVersion;
++ (id)bagSubProfile;
++ (id)bagKeySet;
+@end

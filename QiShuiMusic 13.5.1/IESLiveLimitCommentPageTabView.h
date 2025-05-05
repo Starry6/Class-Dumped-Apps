@@ -1,0 +1,30 @@
+@interface IESLiveLimitCommentPageTabView : UIView
+@property (nonatomic) UILabel commentLabel;
+@property (nonatomic) UILabel emojiLabel;
+@property (nonatomic) BOOL hasEmojiData;
+@property (nonatomic) UIView indicatorView;
+@property (nonatomic) q selectIndex;
+@property (nonatomic) @? tabTapBlock;
+@property (nonatomic) @? indexChangeBlock;
+- (void)setSelectIndex:;
+- (void)setTabTapBlock:;
+- (void)commentTapAction;
+- (id)createLabel;
+- (void)emojiTapAction;
+- (BOOL)hasEmojiData;
+- (id)indexChangeBlock;
+- (long long)selectIndex;
+- (void)setEmojiLabel:;
+- (void)setHasEmojiData:;
+- (void)setIndexChangeBlock:;
+- (id)tabTapBlock;
+- (void)updateTextColor:;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (id)indicatorView;
+- (void)setIndicatorView:;
+- (void)setupUI;
+- (id)emojiLabel;
+- (id)commentLabel;
+- (void)setCommentLabel:;
+@end

@@ -1,0 +1,22 @@
+@interface CHTextLineStrokeGroup : CHStrokeGroup
+@property (nonatomic) NSArray writingDirectionSortedStrokeIdentifiers;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id).cxx_construct;
+- (id)averageWritingOrientation;
+- (id)newEstimatedBaselineForStrokesWithTokens:tokenStrokeIdentifiers:;
+- (id)initWithStrokeIdentifiers:firstStrokeIdentifier:lastStrokeIdentifier:bounds:strategyIdentifier:writingDirectionSortedSubstrokes:averageWritingOrientation:averageStrokeDeviation:writingDirectionSortedStrokeIdentifiers:localStrokeWritingOrientations:coalescedLastSubstrokes:groupingConfidence:firstStrokeOrigin:;
+- (id)initWithAncestorIdentifier:strokeIdentifiers:firstStrokeIdentifier:lastStrokeIdentifier:bounds:strategyIdentifier:writingDirectionSortedSubstrokes:averageWritingOrientation:averageStrokeDeviation:writingDirectionSortedStrokeIdentifiers:localStrokeWritingOrientations:coalescedLastSubstrokes:groupingConfidence:firstStrokeOrigin:;
+- (id)initWithUniqueIdentifier:ancestorIdentifier:strokeIdentifiers:firstStrokeIdentifier:lastStrokeIdentifier:bounds:strategyIdentifier:writingDirectionSortedSubstrokes:averageWritingOrientation:averageStrokeDeviation:writingDirectionSortedStrokeIdentifiers:localStrokeWritingOrientations:coalescedLastSubstrokes:groupingConfidence:firstStrokeOrigin:;
+- (id)groupByAddingStrokeIdentifiers:removingStrokeIdentifiers:firstStrokeIdentifier:lastStrokeIdentifier:bounds:writingDirectionSortedSubstrokes:averageWritingOrientation:averageStrokeDeviation:writingDirectionSortedStrokeIdentifiers:localStrokeWritingOrientations:coalescedLastSubstrokes:groupingConfidence:lastSubstrokeIndexBeforeMerge:firstStrokeOrigin:;
+- (id)writingDirectionSortedSubstrokes;
+- (id)localStrokeWritingOrientations;
+- (id)localWritingOrientationAtStrokeIndex:;
+- (id)averageStrokeDeviation;
+- (long long)lastSubstrokeIndexBeforeMerge;
+- (id)coalescedLastSubstrokes;
+- (id)newEstimatedBaselineForSubStrokes:tokens:tokenSubStrokeIndexes:estimatedDescenderLocations:;
+- (id)writingDirectionSortedStrokeIdentifiers;
++ (BOOL)supportsSecureCoding;
+@end

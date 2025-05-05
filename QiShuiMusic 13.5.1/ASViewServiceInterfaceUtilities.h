@@ -1,0 +1,36 @@
+@interface ASViewServiceInterfaceUtilities : NSObject
++ (double)navigationBarHeight;
++ (id)headerTitleFont;
++ (long long)tableViewStyle;
++ (id)cellTitleFont;
++ (id)cellSubtitleFont;
++ (double)continueButtonHeight;
++ (double)continueButtonCornerRadius;
++ (id)iconBorderColor;
++ (double)iconBorderWidth;
++ (double)tableViewRowHeight;
++ (id)paneBackgroundBlurEffect;
++ (id)headerTitleColor;
++ (id)headerMessageFont;
++ (id)headerMessageColor;
++ (id)headerIconSize;
++ (double)headerIconCornerRadius;
++ (id)cellTitleColor;
++ (id)cellSubtitleColor;
++ (id)cellIconSize;
++ (id)cellIconTintColor;
++ (id)cellBackgroundConfiguration;
++ (double)cellIconCornerRadius;
++ (double)cellIconMarginLeading;
++ (double)cellIconMarginTrailing;
++ (id)cellIconBackgroundColor;
++ (id)cellIconDefaultSymbolConfiguration;
++ (id)cellIconPasskeySymbolConfiguration;
++ (id)continueButtonBackgroundColor;
++ (id)continueButtonDisabledBackgroundColor;
++ (id)continueButtonHighlightedBackgroundColor;
++ (id)continueButtonTitleFont;
++ (id)continueButtonTitleColor;
++ (double)continueButtonTitleMargin;
++ (double)_iconCornerRadiusForSize:;
+@end

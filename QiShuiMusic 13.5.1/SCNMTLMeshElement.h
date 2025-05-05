@@ -1,0 +1,32 @@
+@interface SCNMTLMeshElement : NSObject
+@property (nonatomic) q indexCount;
+@property (nonatomic) Q instanceCount;
+@property (nonatomic) q sharedIndexBufferOffset;
+@property (nonatomic) SCNMTLBuffer indexBuffer;
+@property (nonatomic) Q indexType;
+@property (nonatomic) Q primitiveType;
+@property (nonatomic) q primitiveCount;
+@property (nonatomic) q effectivePrimitiveCount;
+@property (nonatomic) q effectiveIndexOffset;
+@property (nonatomic) q effectiveIndexCount;
+- (void)setIndexType:;
+- (void)dealloc;
+- (unsigned long long)instanceCount;
+- (void)setInstanceCount:;
+- (unsigned long long)indexType;
+- (id)description;
+- (unsigned long long)primitiveType;
+- (long long)primitiveCount;
+- (id)indexBuffer;
+- (void)setIndexBuffer:;
+- (void)setPrimitiveType:;
+- (long long)indexCount;
+- (void)setIndexCount:;
+- (void)setPrimitiveRange:;
+- (void)setupWithElement:;
+- (long long)effectivePrimitiveCount;
+- (long long)sharedIndexBufferOffset;
+- (void)setSharedIndexBufferOffset:;
+- (long long)effectiveIndexOffset;
+- (long long)effectiveIndexCount;
+@end

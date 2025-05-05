@@ -1,0 +1,34 @@
+@interface IESEffectPreloadResourceModel : MTLModel
+@property (nonatomic) NSArray fileDownloadURLs;
+@property (nonatomic) NSString resourceKey;
+@property (nonatomic) NSString resourceName;
+@property (nonatomic) NSString version;
+@property (nonatomic) NSString resourceURI;
+@property (nonatomic) NSString type;
+@property (nonatomic) NSString level;
+@property (nonatomic) NSArray urlPrefixs;
+@property (nonatomic) NSString downloadType;
+@property (nonatomic) NSString blockFileType;
+@property (nonatomic) q category;
+@property (nonatomic) q protocol;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)blockFileType;
+- (id)fileDownloadURLs;
+- (id)resourceURI;
+- (void)setFileDownloadURLs:;
+- (void)updateFileDownloadURLsIfNeed;
+- (id)urlPrefixs;
+- (long long)protocol;
+- (id)downloadType;
+- (id)level;
+- (id)version;
+- (id)type;
+- (void).cxx_destruct;
+- (id)resourceName;
+- (long long)category;
+- (id)resourceKey;
++ (id)JSONKeyPathsByPropertyKey;
+@end

@@ -1,0 +1,35 @@
+@interface AWDWAPeerDiscoveryInfo : PBCodable
+@property (nonatomic) BOOL hasNumPeersDiscovered;
+@property (nonatomic) I numPeersDiscovered;
+@property (nonatomic) BOOL hasIOSPeers;
+@property (nonatomic) I iOSPeers;
+@property (nonatomic) BOOL hasTvOSPeers;
+@property (nonatomic) I tvOSPeers;
+@property (nonatomic) BOOL hasMacOSPeers;
+@property (nonatomic) I macOSPeers;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setNumPeersDiscovered:;
+- (void)setHasNumPeersDiscovered:;
+- (BOOL)hasNumPeersDiscovered;
+- (void)setIOSPeers:;
+- (void)setHasIOSPeers:;
+- (BOOL)hasIOSPeers;
+- (void)setTvOSPeers:;
+- (void)setHasTvOSPeers:;
+- (BOOL)hasTvOSPeers;
+- (void)setMacOSPeers:;
+- (void)setHasMacOSPeers:;
+- (BOOL)hasMacOSPeers;
+- (unsigned int)numPeersDiscovered;
+- (unsigned int)iOSPeers;
+- (unsigned int)tvOSPeers;
+- (unsigned int)macOSPeers;
+@end

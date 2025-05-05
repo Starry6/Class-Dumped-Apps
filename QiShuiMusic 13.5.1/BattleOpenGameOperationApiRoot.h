@@ -1,0 +1,2 @@
+@interface BattleOpenGameOperationApiRoot : GPBRootObject
+@end

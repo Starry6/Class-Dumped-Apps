@@ -1,0 +1,30 @@
+@interface UIKeyboardHiddenViewController : UIViewController
+@property (nonatomic) _SFPasswordViewController autofillVC;
+@property (nonatomic) BOOL presentedAutofill;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)dealloc;
+- (void)presentViewController:;
+- (BOOL)_canShowWhileLocked;
+- (id)sizeForChildContentContainer:withParentContainerSize:;
+- (id)presentationControllerForPresentedViewController:presentingViewController:sourceViewController:;
+- (void)viewWillDisappear:;
+- (void).cxx_destruct;
+- (void)viewWillAppear:;
+- (id)initWithNibName:bundle:;
+- (BOOL)_formSheetObeysContentContainerSize;
+- (void)_sceneDidChange;
+- (void)_deviceWillLock:;
+- (void)_localAuthenticationUIPresented;
+- (void)_localAuthenticationUIDismissed;
+- (void)passwordViewControllerDidFinish:;
+- (BOOL)shouldPresentAsPopover;
+- (void)presentSelfWithAnimation:;
+- (void)presentAutofillVCWithAnimation:;
+- (id)autofillVC;
+- (void)setAutofillVC:;
+- (BOOL)presentedAutofill;
+- (void)setPresentedAutofill:;
+@end

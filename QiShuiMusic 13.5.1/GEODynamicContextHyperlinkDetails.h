@@ -1,0 +1,30 @@
+@interface GEODynamicContextHyperlinkDetails : PBCodable
+@property (nonatomic) BOOL hasLayoutType;
+@property (nonatomic) NSInteger layoutType;
+@property (nonatomic) BOOL hasDisplayedString;
+@property (nonatomic) NSString displayedString;
+- (int)layoutType;
+- (void)readAll:;
+- (void)setLayoutType:;
+- (id)initWithJSON:;
+- (void)setHasLayoutType:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (int)StringAsLayoutType:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)layoutTypeAsString:;
+- (id)dictionaryRepresentation;
+- (BOOL)hasLayoutType;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasDisplayedString;
+- (id)displayedString;
+- (void)setDisplayedString:;
++ (BOOL)isValid:;
+@end

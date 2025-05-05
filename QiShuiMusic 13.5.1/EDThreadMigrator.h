@@ -1,0 +1,34 @@
+@interface EDThreadMigrator : NSObject
+@property (nonatomic) EMThreadScope threadScope;
+@property (nonatomic) EFLocked state;
+@property (nonatomic) <EFScheduler> workScheduler;
+@property (nonatomic) EDThreadPersistence threadPersistence;
+@property (nonatomic) EDInMemoryThreadQueryHandler queryHandler;
+@property (nonatomic) <EDThreadMigratorDelegate> delegate;
+@property (nonatomic) double threadFinalizationInterval;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)threadScope;
+- (void)cancel;
+- (void)start;
+- (id)queryHandler;
+- (id)workScheduler;
+- (id)state;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)reset;
+- (id)threadPersistence;
+- (id)initWithThreadScope:threadPersistence:queryHandler:delegate:;
+- (void)_failMigration;
+- (void)_migrateNextBatchWithGeneration:;
+- (void)_scheduleFinalizationForBatchedObjectIDs:withGeneration:forDelete:;
+- (void)_finishMigrating;
+- (void)addObjectIDsToMigrate:;
+- (void)changeObjectIDsToMigrate:;
+- (void)deleteObjectIDsToMigrate:;
+- (double)threadFinalizationInterval;
+- (void)setThreadFinalizationInterval:;
++ (id)log;
+@end

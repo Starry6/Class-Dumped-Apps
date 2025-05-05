@@ -1,0 +1,37 @@
+@interface SGURL : NSObject
+@property (nonatomic) NSURL url;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString receivedFromHandle;
+@property (nonatomic) NSString bundleIdentifier;
+@property (nonatomic) NSString groupIdentifier;
+@property (nonatomic) NSString documentIdentifier;
+@property (nonatomic) NSString documentTitle;
+@property (nonatomic) NSDate documentDate;
+@property (nonatomic) double documentTimeInterval;
+@property (nonatomic) NSDate receivedAt;
+@property (nonatomic) C flags;
+- (id)url;
+- (id)init;
+- (id)bundleIdentifier;
+- (id)groupIdentifier;
+- (id)receivedAt;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (id)title;
+- (void).cxx_destruct;
+- (id)documentIdentifier;
+- (id)description;
+- (unsigned char)flags;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)isEqualToURL:;
+- (id)initWithURL:title:receivedFromHandle:bundleIdentifier:groupIdentifier:documentIdentifier:documentTitle:documentDate:documentTimeInterval:receivedAt:flags:;
+- (id)feedbackDescription;
+- (id)nonFeedbackFlagDescription;
+- (id)receivedFromHandle;
+- (id)documentTitle;
+- (id)documentDate;
+- (double)documentTimeInterval;
++ (BOOL)supportsSecureCoding;
+@end

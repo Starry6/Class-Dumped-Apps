@@ -1,0 +1,2 @@
+@interface HTSLiveClientFallbackDynamicMessageRoot : GPBRootObject
+@end

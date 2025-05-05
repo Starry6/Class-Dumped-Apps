@@ -1,0 +1,34 @@
+@interface AVComposition : AVAsset
+@property (nonatomic) NSArray tracks;
+@property (nonatomic) {CGSize=dd} naturalSize;
+@property (nonatomic) NSDictionary URLAssetInitializationOptions;
+- (id)tracks;
+- (id)init;
+- (id)trackWithTrackID:;
+- (id)naturalSize;
+- (void)dealloc;
+- (id)_formatReader;
+- (id)_mutableTracks;
+- (Class)_classForTrackInspectors;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (id)tracksWithMediaType:;
+- (id)_mediaSelectionGroupDictionaries;
+- (id)description;
+- (id)mutableCopyWithZone:;
+- (id)tracksWithMediaCharacteristic:;
+- (id)_figAsset;
+- (id)_assetInspector;
+- (id)_assetInspectorLoader;
+- (id)_mutableComposition;
+- (id)URLAssetInitializationOptions;
+- (int)_createEmptyMutableCompositionIfNeeded;
+- (id)_initWithComposition:;
+- (void)_loadAssetInspectorAndLoaderOnce;
+- (id)_newTrackForIndex:;
+- (BOOL)_clientProvidesNaturalSize;
+- (void)_setNaturalSize:;
+- (BOOL)_setURLAssetInitializationOptions:error:;
++ (BOOL)supportsSecureCoding;
++ (BOOL)expectsPropertyRevisedNotifications;
+@end

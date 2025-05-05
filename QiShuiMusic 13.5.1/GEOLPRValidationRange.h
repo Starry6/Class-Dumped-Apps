@@ -1,0 +1,34 @@
+@interface GEOLPRValidationRange : PBCodable
+@property (nonatomic) BOOL hasStart;
+@property (nonatomic) NSInteger start;
+@property (nonatomic) BOOL hasEnd;
+@property (nonatomic) NSInteger end;
+@property (nonatomic) BOOL hasValidCharacters;
+@property (nonatomic) NSString validCharacters;
+- (void)setEnd:;
+- (void)readAll:;
+- (void)setStart:;
+- (int)end;
+- (id)initWithJSON:;
+- (int)start;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasValidCharacters;
+- (id)validCharacters;
+- (void)setValidCharacters:;
+- (void)setHasStart:;
+- (BOOL)hasStart;
+- (void)setHasEnd:;
+- (BOOL)hasEnd;
++ (BOOL)isValid:;
+@end

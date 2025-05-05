@@ -1,0 +1,2 @@
+@interface HTSLiveCarnivalMessageRoot : GPBRootObject
+@end

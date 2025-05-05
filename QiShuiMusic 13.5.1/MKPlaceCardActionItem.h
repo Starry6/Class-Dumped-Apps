@@ -1,0 +1,36 @@
+@interface MKPlaceCardActionItem : NSObject
+@property (nonatomic) NSString displayString;
+@property (nonatomic) NSString glyph;
+@property (nonatomic) UIColor glyphColor;
+@property (nonatomic) UIColor backgroundColor;
+@property (nonatomic) Q type;
+@property (nonatomic) BOOL enabled;
+@property (nonatomic) BOOL selected;
+@property (nonatomic) MKPlaceCardActionItem selectedItem;
+- (BOOL)selected;
+- (id)glyph;
+- (id)displayString;
+- (void)setBackgroundColor:;
+- (BOOL)enabled;
+- (id)glyphColor;
+- (id)backgroundColor;
+- (void)setSelected:;
+- (unsigned long long)type;
+- (void)setEnabled:;
+- (void).cxx_destruct;
+- (id)description;
+- (void)setGlyphColor:;
+- (void)setSelectedItem:;
+- (id)selectedItem;
+- (BOOL)isDestructiveForDisplayStyle:;
+- (id)initWithType:appearanceProvider:enabled:;
+- (id)initWithType:displayString:glyph:enabled:;
+- (id)symbolForDisplayStyle:;
+- (id)titleForDisplayStyle:;
+- (id)resolvedActionItem;
+- (id)menuElementWithActionHandler:;
++ (id)actionItemWithType:actionDataProvider:enabled:;
++ (id)actionItemWithType:;
++ (id)buildActionMenuForItems:buildingOptions:menuElementCreationBlock:;
++ (id)actionTypesToMenuElements:menuElementCreationBlock:;
+@end

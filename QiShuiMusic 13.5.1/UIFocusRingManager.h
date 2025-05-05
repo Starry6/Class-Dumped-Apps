@@ -1,0 +1,37 @@
+@interface UIFocusRingManager : NSObject
+@property (nonatomic) NSMutableDictionary focusRingStateForClient;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)focusRingStateForClient;
+- (id)_focusRingPathForItem:inView:;
+- (void)_addFocusLayer:toView:forItem:;
+- (id)activeFocusLayersForClient:;
+- (void)setFocusRingStateForClient:;
+- (void)_removeActiveFocusLayersForClient:;
+- (BOOL)_focusItemWantsFocusRing:forClient:;
+- (id)activeFocusLayersToItemsForClient:;
+- (long long)_insertionIndexOfFocusLayerForFocusItem:;
+- (void)addSelectedParentFocusRingForItem:forClient:;
+- (id)_viewToAddFocusLayerForItem:forClient:;
+- (void).cxx_destruct;
+- (void)_geometryChanged:forAncestor:;
+- (void)addParentFocusRingForItem:forClient:;
+- (id)description;
+- (void)addSelectedFocusRingForItem:forClient:;
+- (void)_updateFocusLayerFrames;
+- (void)addFocusRingForItem:forClient:;
++ (BOOL)focusRingAvailable;
++ (void)updateRingForFocusItem:forClient:;
++ (void)updateRingForFocusItem:;
++ (id)manager;
++ (void)moveRingToFocusItem:forClient:;
++ (void)_removeActiveFocusLayers;
++ (void)moveRingToFocusItem:;
++ (Class)shapeLayerClassForItem:client:;
++ (void)removeRingFromFocusItem:forClient:;
++ (void)removeRingFromFocusItem:;
++ (id)_currentFocusItemForClient:;
++ (void)_updateActiveFocusLayers;
+@end

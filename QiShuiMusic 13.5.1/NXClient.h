@@ -1,0 +1,36 @@
+@interface NXClient : NSObject
+@property (nonatomic) I clientID;
+@property (nonatomic) NSObject<OS_xpc_object> testListenerEndpoint;
+@property (nonatomic) NSObject<OS_dispatch_queue> dispatchQueue;
+@property (nonatomic) C flags;
+@property (nonatomic) @? invalidationHandler;
+@property (nonatomic) NSString label;
+- (void)setTestListenerEndpoint:;
+- (id)init;
+- (void)encodeWithXPCObject:;
+- (id)testListenerEndpoint;
+- (void)dealloc;
+- (id)descriptionWithLevel:;
+- (void)_invalidated;
+- (id)dispatchQueue;
+- (id)initWithXPCObject:error:;
+- (void)setDispatchQueue:;
+- (void)setClientID:;
+- (void)setLabel:;
+- (id)label;
+- (void)_xpcReceivedMessage:;
+- (void)_xpcReceivedEvent:;
+- (void)diagnosticShow:completion:;
+- (void)_interrupted;
+- (id)_ensureXPCStarted;
+- (void).cxx_destruct;
+- (id)invalidationHandler;
+- (void)diagnosticControl:completion:;
+- (void)setInvalidationHandler:;
+- (id)description;
+- (void)setFlags:;
+- (unsigned char)flags;
+- (unsigned int)clientID;
+- (void)invalidate;
+- (void)liveActionPerform:completion:;
+@end

@@ -1,0 +1,32 @@
+@interface NSTaggedPointerString : NSString
+- (id)HMDP_substringWithRange:;
+- (unsigned short)HMDP_characterAtIndex:;
+- (BOOL)_isCString;
+- (BOOL)isNSString__;
+- (unsigned short)characterAtIndex:;
+- (id)_fastCStringContents:;
+- (void)getCharacters:range:;
+- (id)_fastCharacterContents;
+- (unsigned long long)smallestEncoding;
+- (unsigned long long)hash;
+- (long long)compare:options:range:locale:;
+- (id)autorelease;
+- (id)release;
+- (BOOL)getBytes:maxLength:usedLength:encoding:options:range:remainingRange:;
+- (id)retain;
+- (id)UTF8String;
+- (id)substringWithRange:;
+- (unsigned long long)length;
+- (unsigned long long)fastestEncoding;
+- (BOOL)isEqualToString:;
+- (unsigned long long)retainCount;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)cStringUsingEncoding:;
+- (id)lowercaseStringWithLocale:;
+- (id)uppercaseStringWithLocale:;
+- (BOOL)_getCString:maxLength:encoding:;
++ (id)allocWithZone:;
++ (BOOL)automaticallyNotifiesObserversForKey:;
++ (void)_setAsTaggedStringClass;
+@end

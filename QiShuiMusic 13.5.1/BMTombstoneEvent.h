@@ -1,0 +1,36 @@
+@interface BMTombstoneEvent : NSObject
+@property (nonatomic) NSString segmentName;
+@property (nonatomic) Q offset;
+@property (nonatomic) Q length;
+@property (nonatomic) Q deletionReason;
+@property (nonatomic) NSString processName;
+@property (nonatomic) I dataVersion;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithProtoData:;
+- (id)segmentName;
+- (id)init;
+- (id)proto;
+- (id)encodeAsProto;
+- (id)initWithCoder:;
+- (unsigned int)dataVersion;
+- (unsigned long long)hash;
+- (unsigned long long)offset;
+- (id)processName;
+- (void)encodeWithCoder:;
+- (id)initWithProto:;
+- (void).cxx_destruct;
+- (id)description;
+- (unsigned long long)length;
+- (id)serialize;
+- (BOOL)isEqual:;
+- (id)initWithSegmentName:offset:length:;
+- (id)initWithSegmentName:offset:length:reason:;
+- (id)_initWithSegmentName:offset:length:reason:processName:;
+- (unsigned long long)deletionReason;
++ (id)new;
++ (id)eventWithData:dataVersion:;
++ (BOOL)supportsSecureCoding;
+@end

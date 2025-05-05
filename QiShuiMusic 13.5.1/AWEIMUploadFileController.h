@@ -1,0 +1,30 @@
+@interface AWEIMUploadFileController : NSObject
+@property (nonatomic) BOOL isRequesting;
+@property (nonatomic) NSProgress progress;
+@property (nonatomic) @? progressBlock;
+@property (nonatomic) NSString uploadURL;
+@property (nonatomic) @ parameters;
+@property (nonatomic) NSString mimeType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)isRequesting;
+- (void)p_addObserver;
+- (void)p_removeObserver;
+- (void)setIsRequesting:;
+- (void)uploadOriginData:quickData:filePath:fileType:progressBlock:completion:;
+- (id)progressBlock;
+- (void)dealloc;
+- (void)setProgressBlock:;
+- (void)setUploadURL:;
+- (void)setProgress:;
+- (void)observeValueForKeyPath:ofObject:change:context:;
+- (id)progress;
+- (id)mimeType;
+- (id)parameters;
+- (void).cxx_destruct;
+- (void)setParameters:;
+- (void)setMimeType:;
+- (id)uploadURL;
+@end

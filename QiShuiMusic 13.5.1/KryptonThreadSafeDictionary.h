@@ -1,0 +1,34 @@
+@interface KryptonThreadSafeDictionary : NSMutableDictionary
+- (id)initWithDictionary:copyItems:;
+- (id)init;
+- (void)setObject:forKey:;
+- (void)enumerateKeysAndObjectsUsingBlock:;
+- (void)setDictionary:;
+- (void)addEntriesFromDictionary:;
+- (id)allKeys;
+- (id)initWithDictionary:;
+- (unsigned long long)countByEnumeratingWithState:objects:count:;
+- (unsigned long long)hash;
+- (id)initWithObjects:forKeys:count:;
+- (void)removeAllObjects;
+- (void)setObject:forKeyedSubscript:;
+- (void)removeObjectsForKeys:;
+- (id)keyEnumerator;
+- (id)objectsForKeys:notFoundMarker:;
+- (id)objectForKeyedSubscript:;
+- (id)objectForKey:;
+- (void).cxx_destruct;
+- (id)allValues;
+- (id)description;
+- (id)objectEnumerator;
+- (id)mutableCopyWithZone:;
+- (unsigned long long)count;
+- (void)removeObjectForKey:;
+- (BOOL)isEqualToDictionary:;
+- (BOOL)isEqual:;
+- (id)allKeysForObject:;
+- (id)initWithCapacity:;
+- (id)copyWithZone:;
+- (id)initWithObjects:forKeys:;
+- (id)keysSortedByValueUsingSelector:;
+@end

@@ -1,0 +1,36 @@
+@interface CNContactListStyleApplier : NSObject
+@property (nonatomic) double cellEstimatedHeight;
+@property (nonatomic) Q tableNoContactsAvailableStyle;
+@property (nonatomic) BOOL usesInsetPlatterStyle;
+@property (nonatomic) <CNContactListStyle> contactListStyle;
+- (id)initWithContactListStyle:;
+- (id)contactListStyle;
+- (id)attributedString:foregroundColor:;
+- (void)applyCellSeparatorInsetStyleToConfiguration:superviewDirectionalLayoutMargins:itemWantsFullLengthBottomSeparator:;
+- (void)applyContactListStyleToSearchBar:;
+- (void)applyEditingStateBackgroundConfigurationToCell:;
+- (void)applyContactListStyleToBannerFootnote:primaryAppearance:;
+- (void)applyContactListStyleToEmergencyIcon:ofCell:;
+- (void)applyContactListStyleToCell:;
+- (void)applyContactListStyleToSubtitleText:ofSearchResultCell:;
+- (void)applyContactListStyleToContact:usingFormatter:ofCell:;
+- (double)cellEstimatedHeight;
+- (void)applyContactListStyleToSearchCell:;
+- (void)applyContactListStyleToCollectionLayoutConfiguration:;
+- (void)applyContactListStyleToCollectionView:;
+- (void)applyContactListStyleToSearchHeader:withTitle:;
+- (BOOL)usesInsetPlatterStyle;
+- (void).cxx_destruct;
+- (void)applyTextColorsToContentConfiguration:usingState:;
+- (void)applySubtitleTextColorsToSearchCellContentConfiguration:withSubtitleText:forSelectedState:;
+- (void)applyContactListStyleToContentConfiguration:usingState:forCell:;
+- (void)applyContactListStyleToMeContactLabel:ofCell:;
+- (unsigned long long)tableNoContactsAvailableStyle;
+- (void)applyContactListDirectionalLayoutMargins:toLayoutSection:collectionViewIsShowingIndexBar:;
+- (id)defaultListContentConfiguration;
+- (void)applyContactListStyleToHeaderFooter:withTitle:isRTL:;
+- (void)applyContactListStyleToBannerTitle:primaryAppearance:;
+- (void)applyContactListStyleToNavigationBar:;
++ (void)applyDefaultContactListStyleToHeaderFooter:withTitle:isRTL:;
++ (void)applyDefaultStyleToContact:usingFormatter:ofCell:;
+@end

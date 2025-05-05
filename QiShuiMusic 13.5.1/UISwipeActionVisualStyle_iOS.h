@@ -1,0 +1,34 @@
+@interface UISwipeActionVisualStyle_iOS : NSObject
+@property (nonatomic) Q defaultCollectionViewCompositionalLayoutSwipeStyle;
+@property (nonatomic) double defaultButtonWidth;
+@property (nonatomic) double maxButtonWidth;
+@property (nonatomic) Q maxLines;
+@property (nonatomic) double minFontSize;
+@property (nonatomic) double maxFontSize;
+@property (nonatomic) double titleFontWeight;
+@property (nonatomic) double horizontalPadding;
+@property (nonatomic) double iconToTitleSpacing;
+@property (nonatomic) UIColor defaultTintColor;
+@property (nonatomic) UIColor defaultButtonBackgroundColor;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)defaultButtonBackgroundColor;
+- (double)iconToTitleSpacing;
+- (double)titleFontWeight;
+- (id)defaultTintColor;
+- (double)defaultButtonWidth;
+- (double)interButtonPaddingForStyle:;
+- (unsigned long long)defaultCollectionViewCompositionalLayoutSwipeStyle;
+- (unsigned long long)maxLines;
+- (double)buttonCornerRadiusForStyle:view:;
+- (double)minFontSize;
+- (double)defaultContentHeightForView:;
+- (double)paddingToSwipeViewForStyle:;
+- (double)maxFontSize;
+- (double)horizontalPadding;
+- (double)maxButtonWidth;
+- (double)interitemButtonCornerRadiusForStyle:;
+- (unsigned long long)defaultSwipeActionUIStyleForUITableViewStyle:;
+@end

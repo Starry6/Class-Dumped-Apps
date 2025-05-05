@@ -1,0 +1,38 @@
+@interface TUConversationNotice : NSObject
+@property (nonatomic) NSUUID sessionUUID;
+@property (nonatomic) NSURL actionURL;
+@property (nonatomic) NSString bundleIdentifier;
+@property (nonatomic) NSString item;
+@property (nonatomic) q queueItemType;
+@property (nonatomic) TUConversationActivitySession session;
+@property (nonatomic) NSUUID UUID;
+@property (nonatomic) q sessionEventType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)actionURL;
+- (id)initWithUUID:;
+- (id)item;
+- (void)setSession:;
+- (id)bundleIdentifier;
+- (void)setActionURL:;
+- (id)sessionUUID;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)setBundleIdentifier:;
+- (void)encodeWithCoder:;
+- (void)setItem:;
+- (void)setSessionUUID:;
+- (id)session;
+- (void).cxx_destruct;
+- (id)description;
+- (id)UUID;
+- (BOOL)isEqual:;
+- (long long)sessionEventType;
+- (long long)queueItemType;
+- (void)setSessionEventType:;
+- (BOOL)isEqualToConversationNotice:;
+- (void)setQueueItemType:;
++ (BOOL)supportsSecureCoding;
+@end

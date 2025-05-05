@@ -1,0 +1,37 @@
+@interface BDUGRequestParam : BDUGBaseRequestParam
+@property (nonatomic) NSString channel;
+@property (nonatomic) NSString pushSDK;
+@property (nonatomic) NSString versionCode;
+@property (nonatomic) NSString osVersion;
+@property (nonatomic) NSString package;
+@property (nonatomic) NSString notice;
+@property (nonatomic) NSString os;
+@property (nonatomic) NSString region;
+@property (nonatomic) NSString language;
+@property (nonatomic) NSString appRegion;
+@property (nonatomic) NSString appLanguage;
+- (id)pushSDK;
+- (void)setAppRegion:;
+- (void)setPushSDK:;
+- (id)os;
+- (void)setPackage:;
+- (id)package;
+- (void)setChannel:;
+- (id)init;
+- (id)osVersion;
+- (void)setRegion:;
+- (id)channel;
+- (void)setLanguage:;
+- (id)language;
+- (id)region;
+- (void)setOs:;
+- (void)setOsVersion:;
+- (id)appRegion;
+- (void).cxx_destruct;
+- (id)notice;
+- (void)setNotice:;
+- (id)appLanguage;
+- (void)setAppLanguage:;
+- (id)versionCode;
+- (void)setVersionCode:;
+@end

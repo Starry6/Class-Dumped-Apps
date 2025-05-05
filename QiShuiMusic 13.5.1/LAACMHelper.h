@@ -1,0 +1,30 @@
+@interface LAACMHelper : NSObject
+@property (nonatomic) I acmTrackingNumber;
+@property (nonatomic) ^{__ACMHandle=} acmContext;
+- (void)dealloc;
+- (BOOL)addExtractablePassphrase:scope:error:;
+- (id)initWithACMContext:;
+- (id)initWithExternalizedContext:;
+- (BOOL)addCredential:scope:error:;
+- (id)credentialOfType:property:error:;
+- (BOOL)performContextBlock:error:;
+- (void)verifyPolicy:preflight:parameters:parametersCount:maxGlobalCredentialAge:processRequirement:;
+- (BOOL)performCredentialBlock:credentialType:error:;
+- (BOOL)verifyRequirementOfType:policy:mustBePresent:parameter:flags:error:;
+- (id)acmContext;
+- (BOOL)removeCredentialsOfType:error:;
+- (unsigned int)acmTrackingNumber;
+- (BOOL)isCredentialOfTypeSet:error:;
+- (BOOL)verifyRequirementOfType:policy:error:;
+- (void)preflightPolicy:parameters:parametersCount:maxGlobalCredentialAge:processRequirement:;
+- (BOOL)setData:type:error:;
+- (BOOL)_verifyRequirement:satisfiedForType:present:flags:;
+- (BOOL)replacePassphraseCredentialWithPurpose:passphrase:scope:error:;
++ (id)acmPolicyForPolicy:;
++ (id)boolEnvironmentVariable:;
++ (id)requirement:dataProperty:;
++ (id)catacombUUID:;
++ (BOOL)requirement:hasState:andType:;
++ (BOOL)requirement:hasFlag:andType:;
++ (id)requirement:uint32Property:;
+@end

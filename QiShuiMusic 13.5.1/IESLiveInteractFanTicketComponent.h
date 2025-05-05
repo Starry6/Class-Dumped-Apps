@@ -1,0 +1,38 @@
+@interface IESLiveInteractFanTicketComponent : IESLiveInteractComponentBase
+@property (nonatomic) NSMutableSet bizStores;
+@property (nonatomic) NSMutableDictionary fanticketDict;
+@property (nonatomic) NSMutableDictionary fanticketViewDict;
+@property (nonatomic) NSMutableDictionary gcdTimers;
+@property (nonatomic) BOOL frequencyOptEnabled;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)createBizStores;
+- (void)liveDidContinue;
+- (void)addSettingListener;
+- (id)bizStoreClassGroup;
+- (id)bizStores;
+- (void)componentBindContext;
+- (void)componentDidChangedFromLayout:toLayout:;
+- (void)componentDidUpdatedGuestList:;
+- (void)componentMount;
+- (id)fanticketDict;
+- (id)fanticketViewDict;
+- (BOOL)frequencyOptEnabled;
+- (id)gcdTimers;
+- (void)liveDidPause;
+- (void)realRenderFanticket:uid:;
+- (void)registerFanticketView:withUid:;
+- (void)removeFanticket:;
+- (void)removeFanticket:uid:;
+- (void)renderFanticket:uid:;
+- (void)setBizStores:;
+- (void)setFanticketDict:;
+- (void)setFanticketViewDict:;
+- (void)setFrequencyOptEnabled:;
+- (void)setGcdTimers:;
+- (void)unRegisterFanticketView:withUid:;
+- (void)updateFanticket:fanticketDict:;
+- (void).cxx_destruct;
+@end

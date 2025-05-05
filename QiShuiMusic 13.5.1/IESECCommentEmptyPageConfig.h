@@ -1,0 +1,30 @@
+@interface IESECCommentEmptyPageConfig : NSObject
+@property (nonatomic) NSString titleText;
+@property (nonatomic) NSString subTitle;
+@property (nonatomic) BOOL withArrow;
+@property (nonatomic) BOOL needJumpFunc;
+@property (nonatomic) UIImage iconImage;
+@property (nonatomic) NSString primaryButtonTitle;
+@property (nonatomic) UIColor backGroundColor;
+@property (nonatomic) q style;
+@property (nonatomic) double paddingTopOfWhiteCell;
+- (id)backGroundColor;
+- (BOOL)needJumpFunc;
+- (double)paddingTopOfWhiteCell;
+- (void)setBackGroundColor:;
+- (void)setNeedJumpFunc:;
+- (void)setPaddingTopOfWhiteCell:;
+- (void)setWithArrow:;
+- (BOOL)withArrow;
+- (void)setTitleText:;
+- (id)titleText;
+- (void)setStyle:;
+- (void)setIconImage:;
+- (void).cxx_destruct;
+- (void)setSubTitle:;
+- (id)subTitle;
+- (id)iconImage;
+- (long long)style;
+- (id)primaryButtonTitle;
+- (void)setPrimaryButtonTitle:;
+@end

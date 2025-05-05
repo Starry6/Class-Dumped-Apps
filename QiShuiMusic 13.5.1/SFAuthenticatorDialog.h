@@ -1,0 +1,35 @@
+@interface SFAuthenticatorDialog : SFDialog
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString message;
+@property (nonatomic) NSArray actions;
+@property (nonatomic) _WKWebAuthenticationPanel panel;
+@property (nonatomic) BOOL isForUpdateOnly;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)transitionToState:;
+- (void)dealloc;
+- (long long)presentationStyle;
+- (void)setActions:;
+- (void)setMessage:;
+- (void)setTitle:;
+- (id)title;
+- (id)actions;
+- (id)message;
+- (void).cxx_destruct;
+- (id)newDialogViewRepresentation;
+- (void)didCompleteWithResponse:;
+- (void)updateWebAuthenticationPanel:;
+- (void)requestPINWithRemainingRetries:completionHandler:;
+- (void)selectAssertionResponse:source:completionHandler:;
+- (void)decidePolicyForLocalAuthenticatorWithCompletionHandler:;
+- (id)panel;
+- (BOOL)isForUpdateOnly;
+- (void)setIsForUpdateOnly:;
+- (id)initWithPanel:;
+- (id)useSecurityKeyAction;
+- (void)triggerUseSecurityKey;
+- (void)_shake;
+- (void)_didSelectRow:;
+@end

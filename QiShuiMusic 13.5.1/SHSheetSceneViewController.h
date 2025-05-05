@@ -1,0 +1,36 @@
+@interface SHSheetSceneViewController : UIViewController
+@property (nonatomic) FBSceneWorkspace sceneWorkspace;
+@property (nonatomic) FBScene scene;
+@property (nonatomic) <UIScenePresenter> scenePresenter;
+@property (nonatomic) UIView sceneView;
+@property (nonatomic) SHSheetUIServiceClient serviceClient;
+@property (nonatomic) <SHSheetSession> session;
+@property (nonatomic) <SHSheetContentPresenter> presenter;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) LPLinkMetadata headerMetadata;
+- (void)setPresenter:;
+- (void)scene:clientDidConnect:;
+- (id)presenter;
+- (void)dealloc;
+- (id)initWithSession:;
+- (void)setServiceClient:;
+- (void)sceneDidDeactivate:withError:;
+- (id)serviceClient;
+- (id)scene;
+- (id)scenePresenter;
+- (id)session;
+- (void).cxx_destruct;
+- (void)viewWillAppear:;
+- (id)sceneWorkspace;
+- (void)reloadContent;
+- (void)updateWithViewModel:;
+- (void)didUpdateAirDropTransferWithChange:;
+- (void)reloadActivity:;
+- (id)headerMetadata;
+- (void)_tearDownScene;
+- (void)_setupScene;
+- (id)sceneView;
+@end

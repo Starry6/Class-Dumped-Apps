@@ -1,0 +1,32 @@
+@interface ASEProcessing : NSObject
+@property (nonatomic) float enhancementStrength;
+@property (nonatomic) I destinationWidth;
+@property (nonatomic) I destinationHeight;
+- (id)init;
+- (void)dealloc;
+- (id)initWithConfig:;
+- (void).cxx_destruct;
+- (void)setDestinationHeight:;
+- (void)setDestinationWidth:;
+- (long long)processFrameWithInput:outputData:;
+- (long long)processFrameWithInput:Output:;
+- (long long)processFrameWithInput:callback:;
+- (void)processPixelWithInput:Output:;
+- (void)processPixelWithInput:controlUnit:;
+- (void)processPixelWithInput_V1:Output:;
+- (void)processPixelWithPixelControl_V1:;
+- (void)digitalZoomSelectControl_V1:;
+- (void)processPixelWithMeasurement_V1:pixelControl:;
+- (void)processPixelWithInput_V2:Output:;
+- (void)configControlHeader:;
+- (void)processPixelWithPixelControl_V2:;
+- (void)digitalZoomSelectControl_V2:;
+- (void)processPixelWithMeasurement_V2:Output:;
+- (void)printAseMeasurementOutput:;
+- (float)enhancementStrength;
+- (void)setEnhancementStrength:;
+- (unsigned int)destinationWidth;
+- (unsigned int)destinationHeight;
++ (BOOL)shouldEnhanceWidth:height:destinationWidth:destinationHeight:;
++ (BOOL)shouldEnhanceWidth:height:destinationWidth:destinationHeight:fps:;
+@end

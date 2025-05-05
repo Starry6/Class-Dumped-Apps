@@ -1,0 +1,35 @@
+@interface DMFFetchAppsRequest : DMFTaskRequest
+@property (nonatomic) Q type;
+@property (nonatomic) NSArray bundleIdentifiers;
+@property (nonatomic) BOOL deleteFeedback;
+@property (nonatomic) NSNumber storeItemIdentifier;
+@property (nonatomic) NSURL manifestURL;
+@property (nonatomic) BOOL managedAppsOnly;
+@property (nonatomic) BOOL advanceTransientStates;
+@property (nonatomic) NSArray propertyKeys;
+- (id)init;
+- (id)storeItemIdentifier;
+- (void)setType:;
+- (id)initWithCoder:;
+- (void)setStoreItemIdentifier:;
+- (void)encodeWithCoder:;
+- (unsigned long long)type;
+- (void).cxx_destruct;
+- (id)bundleIdentifiers;
+- (void)setBundleIdentifiers:;
+- (id)manifestURL;
+- (void)setManifestURL:;
+- (void)setPropertyKeys:;
+- (id)propertyKeys;
+- (BOOL)deleteFeedback;
+- (void)setDeleteFeedback:;
+- (BOOL)managedAppsOnly;
+- (void)setManagedAppsOnly:;
+- (BOOL)advanceTransientStates;
+- (void)setAdvanceTransientStates:;
++ (BOOL)supportsSecureCoding;
++ (id)permittedPlatforms;
++ (BOOL)isPermittedOnUserConnection;
++ (BOOL)isPermittedOnSystemConnection;
++ (Class)allowlistedClassForResultObject;
+@end

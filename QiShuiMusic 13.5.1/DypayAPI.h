@@ -1,0 +1,34 @@
+@interface DypayAPI : NSObject
+@property (nonatomic) NSString appId;
+@property (nonatomic) NSString callbackScheme;
+@property (nonatomic) DIRSTracker tracker;
+@property (nonatomic) NSDictionary trackParams;
+@property (nonatomic) @? trackEventBlock;
+- (void)setTrackParams:;
+- (id)trackEventBlock;
+- (void)setTrackEventBlock:;
+- (id)trackParams;
+- (void)setTracker:;
+- (id)init;
+- (id)appId;
+- (id)tracker;
+- (void)setAppId:;
+- (void).cxx_destruct;
+- (id)callbackScheme;
+- (void)setCallbackScheme:;
++ (id)addParamsForURLWithDic:url:;
++ (BOOL)canOpenAwemeDypay;
++ (BOOL)canOpenAwemeHSDypay;
++ (BOOL)canOpenAwemeLiteDypay;
++ (BOOL)canOpenDypay;
++ (id)dict:objectForKey:defaultObj:;
++ (void)event:params:;
++ (id)getAPIVersion;
++ (void)gotoDouyinPayWithParams:callback:;
++ (void)openDypayWithInfo:fromViewController:callback:;
++ (id)parseParamsWithURLString:;
++ (BOOL)processDypayResultWithURL:callback:;
++ (void)registerWithAppID:callbackScheme:;
++ (id)sharedDypayAPI;
++ (id)allocWithZone:;
+@end

@@ -1,0 +1,2 @@
+@interface STWindowHook : NSObject
+@end

@@ -1,0 +1,34 @@
+@interface GEORequestCounterLogInfo : NSObject
+@property (nonatomic) NSString appID;
+@property (nonatomic) {?=i(?=iii)} requestType;
+@property (nonatomic) NSString requestTypeString;
+@property (nonatomic) C result;
+@property (nonatomic) NSString resultString;
+@property (nonatomic) Q xmitBytes;
+@property (nonatomic) Q recvBytes;
+@property (nonatomic) NSDate start;
+@property (nonatomic) NSDate end;
+@property (nonatomic) Q usedInterfaceTypes;
+@property (nonatomic) NSDictionary dictionaryRepresentation;
+- (id)requestType;
+- (unsigned char)result;
+- (id)end;
+- (id)start;
+- (id)initWithDictionary:;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (id)appID;
+- (void).cxx_destruct;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (unsigned long long)xmitBytes;
+- (unsigned long long)recvBytes;
+- (void)_appendFormattedStringTo:;
+- (id)requestTypeString;
+- (id)resultString;
+- (unsigned long long)usedInterfaceTypes;
+- (void)_appendFormattedCSVStringTo:;
++ (BOOL)supportsSecureCoding;
++ (id)counterLogInfoWithDictionary:;
+@end

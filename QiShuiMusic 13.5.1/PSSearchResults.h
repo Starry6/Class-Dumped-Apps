@@ -1,0 +1,30 @@
+@interface PSSearchResults : NSObject
+@property (nonatomic) @? sectionComparator;
+@property (nonatomic) @? entryComparator;
+@property (nonatomic) BOOL treatSectionEntriesAsRegularEntries;
+- (void)addEntry:;
+- (id)init;
+- (void)addEntries:;
+- (BOOL)removeEntry:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)copyWithZone:;
+- (id)_initForCopyWithSectionEntries:entriesBySection:explicitlyAddedSectionEntries:;
+- (unsigned long long)removeEntries:;
+- (unsigned long long)numberOfSectionEntries;
+- (unsigned long long)numberOfEntriesInSectionAtIndex:;
+- (unsigned long long)totalNumberOfEntries;
+- (id)sectionEntryAtIndex:;
+- (id)entriesInSectionAtIndex:;
+- (id)entryAtIndexPath:;
+- (id)allSectionEntries;
+- (void)sortResults;
+- (void)setSectionComparator:;
+- (void)setEntryComparator:;
+- (void)mergeWithResults:;
+- (id)resultsByMergingWithResults:;
+- (id)sectionComparator;
+- (id)entryComparator;
+- (BOOL)treatSectionEntriesAsRegularEntries;
+- (void)setTreatSectionEntriesAsRegularEntries:;
+@end

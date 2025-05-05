@@ -1,0 +1,31 @@
+@interface MKPlaceCollectionImageDownloadOperation : NSOperation
+@property (nonatomic) NSURL url;
+@property (nonatomic) NSString cacheId;
+@property (nonatomic) BOOL executing;
+@property (nonatomic) BOOL finished;
+@property (nonatomic) NSURLSessionDataTask downloadTask;
+@property (nonatomic) NSCache downloadCache;
+@property (nonatomic) UIImage downloadedImage;
+- (void)setFinished:;
+- (id)url;
+- (void)cancel;
+- (BOOL)executing;
+- (BOOL)finished;
+- (void)start;
+- (BOOL)isExecuting;
+- (void)setUrl:;
+- (BOOL)isFinished;
+- (void)main;
+- (void).cxx_destruct;
+- (void)setExecuting:;
+- (id)initWithUrl:downloadCache:cacheId:;
+- (void)markOperationAsComplete;
+- (id)downloadedImage;
+- (void)setDownloadedImage:;
+- (id)cacheId;
+- (void)setCacheId:;
+- (id)downloadTask;
+- (void)setDownloadTask:;
+- (id)downloadCache;
+- (void)setDownloadCache:;
+@end

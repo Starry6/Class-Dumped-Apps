@@ -1,0 +1,5 @@
+@interface AWEIMStickerResourceDownloadStatusObj : NSObject
+@property (nonatomic) BOOL downloading;
+- (void)setDownloading:;
+- (BOOL)downloading;
+@end

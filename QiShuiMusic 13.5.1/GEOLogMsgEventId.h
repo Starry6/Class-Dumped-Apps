@@ -1,0 +1,34 @@
+@interface GEOLogMsgEventId : PBCodable
+@property (nonatomic) BOOL hasHigh;
+@property (nonatomic) Q high;
+@property (nonatomic) BOOL hasLow;
+@property (nonatomic) Q low;
+@property (nonatomic) BOOL hasDeanonymizeId;
+@property (nonatomic) I deanonymizeId;
+- (BOOL)hasHigh;
+- (void)readAll:;
+- (unsigned long long)high;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (void)setLow:;
+- (BOOL)hasLow;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (void)setHasHigh:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void)setHigh:;
+- (void)setDeanonymizeId:;
+- (unsigned int)deanonymizeId;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (void)setHasDeanonymizeId:;
+- (void)setHasLow:;
+- (unsigned long long)low;
+- (BOOL)isEqual:;
+- (BOOL)hasDeanonymizeId;
+- (id)copyWithZone:;
++ (BOOL)isValid:;
+@end

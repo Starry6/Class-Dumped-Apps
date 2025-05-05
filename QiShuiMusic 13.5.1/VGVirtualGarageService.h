@@ -1,0 +1,33 @@
+@interface VGVirtualGarageService : NSObject
+@property (nonatomic) NSXPCConnection connection;
+@property (nonatomic) NSString activeVehicleIdentifier;
+- (void)openForClient:;
+- (id)init;
+- (void)_closeConnection;
+- (void)virtualGarageEndContinuousUpdates;
+- (void)virtualGarageStartContinuousUpdatesIfNeeded;
+- (void)_openConnection;
+- (void)virtualGarageSelectVehicle:;
+- (void)virtualGarageRemoveVehicle:;
+- (void)virtualGarageDidUpdate:;
+- (id)connection;
+- (void).cxx_destruct;
+- (void)virtualGarage:didUpdateUnpairedVehicles:;
+- (void)closeForClient:;
+- (void)setConnection:;
+- (void)virtualGarageSetAssumesFullCharge:;
+- (void)virtualGarageAddVehicle:;
+- (void)virtualGarageGetListOfUnpairedVehiclesWithReply:;
+- (void)virtualGarageGetLatestStateOfVehicleWithIdentifier:syncAcrossDevices:withReply:;
+- (void)unregisterObserver:;
+- (void)virtualGarageOnboardVehicle:;
+- (void)registerObserver:;
+- (void)virtualGarageGetGarageWithReply:;
+- (void)virtualGarageSaveVehicle:;
+- (void)setActiveVehicleIdentifier:;
+- (void)_clearActiveVehicleIdentifierIfNeeded:;
+- (id)messageTargetWithErrorReply:;
+- (id)activeVehicleIdentifier;
++ (BOOL)canUseVirtualGarageXPCService;
++ (id)sharedService;
+@end

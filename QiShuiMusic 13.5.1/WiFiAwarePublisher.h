@@ -1,0 +1,34 @@
+@interface WiFiAwarePublisher : NSObject
+@property (nonatomic) <WiFiAwarePublisherDelegate> delegate;
+@property (nonatomic) WiFiAwarePublishConfiguration configuration;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)exportedObject;
+- (id)exportedInterface;
+- (void)start;
+- (void)handleError:;
+- (void)setDelegate:;
+- (void)stop;
+- (id)configuration;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)description;
+- (void)startConnectionUsingProxy:completionHandler:;
+- (id)initWithConfiguration:;
+- (id)remoteObjectInterface;
+- (void)generateStatisticsReportForDataSession:completionHandler:;
+- (void)terminateDataSession:completionHandler:;
+- (void)updateLinkStatus:forDataSession:;
+- (void)sendMessage:toPeerAddress:withInstanceID:completionHandler:;
+- (void)reportIssue:forDataSession:;
+- (void)updateDatapathServiceSpecificInfo:completionHandler:;
+- (void)updateServiceSpecificInfo:completionHandler:;
+- (void)publishStartedWithInstanceID:;
+- (void)publishFailedToStartWithError:;
+- (void)publishTerminatedWithReason:;
+- (void)publishReceivedMessage:fromSubscriberID:subscriberAddress:;
+- (void)publishDataConfirmedForHandle:localInterfaceIndex:serviceSpecificInfo:;
+- (void)publishDataTerminatedForHandle:reason:;
+@end

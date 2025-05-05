@@ -1,0 +1,37 @@
+@interface ICSProperty : NSObject
+- (id)initWithCoder:;
+- (id)parameters;
+- (void)encodeWithCoder:;
+- (BOOL)isMultiValued;
+- (unsigned long long)type;
+- (id)stringValue;
+- (void)_ICSStringWithOptions:appendingToString:;
+- (id)allParameters;
+- (void).cxx_destruct;
+- (id)description;
+- (id)value;
+- (void)setParameters:;
+- (id)initWithValue:type:;
+- (id)parameterValueForName:;
+- (void)setParameterValue:forName:;
+- (id)ICSStringWithOptions:;
+- (void)setValue:type:;
+- (void)ICSStringWithOptions:appendingToString:;
+- (id)propertiesToIncludeForChecksumVersion:;
+- (id)parametersToIncludeForChecksumVersion:;
+- (id)propertiesThatIfPresentExcludeThisComponentFromChecksummingForVersion:;
+- (id)propertiesToObscure;
+- (id)parametersToObscure;
+- (BOOL)shouldObscureValue;
+- (id)propertiesToHide;
+- (void)_ICSStringWithOptions:appendingToString:additionalParameters:;
+- (void)_appendDateTimeInDate:asUTCToResult:;
+- (void)addParametersFromDictionary:;
+- (void)removeParameterValueForName:;
+- (BOOL)alwaysHasParametersToSerialize;
+- (void)addParameter:withRawValue:options:;
+- (void)_setParsedValues:type:;
+- (void)setValueAsProperty:withRawValue:options:;
++ (BOOL)supportsSecureCoding;
++ (id)valueAndParameterClasses;
+@end

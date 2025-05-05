@@ -1,0 +1,30 @@
+@interface CNCoreDelegateInfo : NSObject
+@property (nonatomic) NSNumber dsid;
+@property (nonatomic) NSString altDSID;
+@property (nonatomic) NSString principalPath;
+@property (nonatomic) NSString appleID;
+@property (nonatomic) NSPersonNameComponents nameComponents;
+@property (nonatomic) BOOL isMe;
+- (id)appleID;
+- (BOOL)isMe;
+- (id)init;
+- (id)dsid;
+- (id)nameComponents;
+- (id)initWithAltDSID:;
+- (id)altDSID;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)mutableCopyWithZone:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)initWithFamilyMember:;
+- (id)initWithDSID:altDSID:appleID:principalPath:nameComponents:isMe:;
+- (id)_hardCodedPrincipalPathForFamilyMember:;
+- (id)principalPath;
++ (BOOL)supportsSecureCoding;
++ (id)nameComponentsForFamilyMember:;
++ (id)hardCodedPrincipalPathForDSID:;
+@end

@@ -1,0 +1,36 @@
+@interface ABUUserConfig : NSObject
+@property (nonatomic) NSMutableDictionary extra;
+@property (nonatomic) BOOL allowUploadDeviceInfo;
+@property (nonatomic) BOOL logEnable;
+@property (nonatomic) q themeStatus;
+@property (nonatomic) NSDictionary extraDeviceMap;
+@property (nonatomic) BOOL testMode;
+@property (nonatomic) NSString advanceSDKConfigPath;
+@property (nonatomic) NSString customIDFA;
+@property (nonatomic) NSDictionary extraData;
+@property (nonatomic) CTTelephonyNetworkInfo customNetworkInfo;
+- (void)setThemeStatus:;
+- (id)advanceSDKConfigPath;
+- (BOOL)allowUploadDeviceInfo;
+- (id)customIDFA;
+- (id)customNetworkInfo;
+- (id)extraDeviceMap;
+- (BOOL)logEnable;
+- (void)setAdvanceSDKConfigPath:;
+- (void)setAllowUploadDeviceInfo:;
+- (void)setCustomIDFA:;
+- (void)setCustomNetworkInfo:;
+- (void)setExtra:;
+- (void)setExtraData:forKey:;
+- (void)setExtraDeviceMap:;
+- (void)setLogEnable:;
+- (long long)themeStatus;
+- (id)extra;
+- (BOOL)isMemberOfClass:;
+- (void)setTestMode:;
+- (BOOL)testMode;
+- (void).cxx_destruct;
+- (BOOL)isKindOfClass:;
+- (id)copyWithZone:;
+- (id)extraData;
+@end

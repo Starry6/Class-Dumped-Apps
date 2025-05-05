@@ -1,0 +1,2 @@
+@interface HTSLiveGameIntroduceRoot : GPBRootObject
+@end

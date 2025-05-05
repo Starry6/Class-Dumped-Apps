@@ -1,0 +1,30 @@
+@interface IESLivePublicScreenSEIDelayCalculator : NSObject
+@property (nonatomic) double seiDelayMaxValue;
+@property (nonatomic) double seiDelayMinValue;
+@property (nonatomic) NSMutableArray seiDelayTimeArray;
+@property (nonatomic) double curEffectiveSEIDelayAvg;
+@property (nonatomic) q receivedEffectiveSEICount;
+@property (nonatomic) q ntpDiffTimeMS;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (unsigned long long)supportSeiTypes;
+- (void)calculateSEIAvgDelayWithCurDelayTime:;
+- (double)curEffectiveSEIDelayAvg;
+- (id)initWithDIContext:;
+- (long long)ntpDiffTimeMS;
+- (void)onParseredWithSEIResult:;
+- (long long)receivedEffectiveSEICount;
+- (double)seiDelayMaxValue;
+- (double)seiDelayMinValue;
+- (id)seiDelayTimeArray;
+- (void)setCurEffectiveSEIDelayAvg:;
+- (void)setNtpDiffTimeMS:;
+- (void)setReceivedEffectiveSEICount:;
+- (void)setSeiDelayMaxValue:;
+- (void)setSeiDelayMinValue:;
+- (void)setSeiDelayTimeArray:;
+- (void)setupSettings;
+- (void).cxx_destruct;
+@end

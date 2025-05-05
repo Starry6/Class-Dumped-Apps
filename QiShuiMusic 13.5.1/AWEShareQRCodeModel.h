@@ -1,0 +1,36 @@
+@interface AWEShareQRCodeModel : NSObject
+@property (nonatomic) IESIMUserModel user;
+@property (nonatomic) NSString itemName;
+@property (nonatomic) NSString ownerName;
+@property (nonatomic) NSString countString;
+@property (nonatomic) NSString firstLineText;
+@property (nonatomic) NSString secondLineText;
+@property (nonatomic) NSString thirdLineText;
+@property (nonatomic) NSDictionary extraInfo;
+@property (nonatomic) BOOL showsIM;
+@property (nonatomic) UIImage customGuideImage;
+@property (nonatomic) UIImage customGuideImageForSave;
+- (BOOL)showsIM;
+- (id)customGuideImage;
+- (id)customGuideImageForSave;
+- (id)firstLineText;
+- (void)setCustomGuideImage:;
+- (void)setCustomGuideImageForSave:;
+- (void)setExtraInfo:;
+- (void)setFirstLineText:;
+- (void)setShowsIM:;
+- (id)ownerName;
+- (void)setUser:;
+- (void)setOwnerName:;
+- (id)user;
+- (id)itemName;
+- (void).cxx_destruct;
+- (void)setCountString:;
+- (id)thirdLineText;
+- (void)setThirdLineText:;
+- (void)setItemName:;
+- (id)countString;
+- (id)extraInfo;
+- (void)setSecondLineText:;
+- (id)secondLineText;
+@end

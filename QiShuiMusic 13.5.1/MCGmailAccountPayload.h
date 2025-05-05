@@ -1,0 +1,31 @@
+@interface MCGmailAccountPayload : MCPayload
+@property (nonatomic) NSString accountDescription;
+@property (nonatomic) NSString accountName;
+@property (nonatomic) NSString emailAddress;
+@property (nonatomic) NSDictionary communicationServiceRules;
+@property (nonatomic) NSString acAccountIdentifier;
+@property (nonatomic) NSString VPNUUID;
+@property (nonatomic) NSArray mailAccountIdentifiers;
+@property (nonatomic) NSArray contactsAccountIdentifiers;
+@property (nonatomic) NSArray calendarAccountIdentifiers;
+- (id)emailAddress;
+- (void).cxx_destruct;
+- (id)accountDescription;
+- (id)accountName;
+- (id)verboseDescription;
+- (id)restrictions;
+- (id)mailAccountIdentifiers;
+- (id)initWithDictionary:profile:outError:;
+- (id)stubDictionary;
+- (id)payloadDescriptionKeyValueSections;
+- (id)subtitle1Label;
+- (id)subtitle1Description;
+- (id)VPNUUID;
+- (BOOL)mustInstallNonInteractively;
+- (id)acAccountIdentifier;
+- (void)setAcAccountIdentifier:;
+- (id)communicationServiceRules;
++ (id)typeStrings;
++ (id)localizedPluralForm;
++ (id)localizedSingularForm;
+@end

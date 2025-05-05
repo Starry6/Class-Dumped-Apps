@@ -1,0 +1,2 @@
+@interface AVCaptureMetadataInputInternal : NSObject
+@end

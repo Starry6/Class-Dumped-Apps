@@ -1,0 +1,2 @@
+@interface WalletGetItemSwitchApiRoot : GPBRootObject
+@end

@@ -1,0 +1,2 @@
+@interface MTUIKitStoreAMSBagDelegatePackage : MTStoreAMSBagDelegatePackage
+@end

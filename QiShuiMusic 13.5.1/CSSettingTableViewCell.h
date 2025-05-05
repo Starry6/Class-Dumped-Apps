@@ -1,0 +1,36 @@
+@interface CSSettingTableViewCell : UITableViewCell
+@property (nonatomic) CSSettingItem currentItem;
+@property (nonatomic) UIImageView dragHandleImageView;
+@property (nonatomic) UISwitch settingSwitch;
+@property (nonatomic) BOOL shouldAlignRight;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithStyle:reuseIdentifier:;
+- (void)setupUI;
+- (void)prepareForReuse;
+- (void)configureWithItem:;
+- (void)configureSwitchItem:;
+- (void)configureInputItem:;
+- (void)configureDisclosureItem:;
+- (void)configureActionItem:;
+- (void)configureNormalItem:;
+- (void)configureDraggableItem:;
+- (void)switchValueChanged:;
+- (void)layoutSubviews;
+- (void)updateAppearance;
+- (void)handleSelection;
+- (void)tapped;
+- (id)settingSwitch;
+- (void)setSettingSwitch:;
+- (BOOL)shouldAlignRight;
+- (void)setShouldAlignRight:;
+- (id)currentItem;
+- (void)setCurrentItem:;
+- (id)dragHandleImageView;
+- (void)setDragHandleImageView:;
+- (void).cxx_destruct;
++ (id)reuseIdentifier;
++ (void)registerToTableView:;
+@end

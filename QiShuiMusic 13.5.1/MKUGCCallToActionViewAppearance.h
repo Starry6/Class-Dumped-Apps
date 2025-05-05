@@ -1,0 +1,35 @@
+@interface MKUGCCallToActionViewAppearance : NSObject
+@property (nonatomic) q ratingState;
+@property (nonatomic) Q numberOfPhotosAdded;
+@property (nonatomic) q type;
+@property (nonatomic) NSAttributedString callToActionText;
+@property (nonatomic) NSString leadingGlyphName;
+@property (nonatomic) NSString trailingGlyphName;
+- (unsigned long long)hash;
+- (long long)type;
+- (void).cxx_destruct;
+- (BOOL)isEqual:;
+- (id)callToActionText;
+- (id)initWithType:callToActionTextRefreshBlock:;
+- (id)initWithType:callToActionTextRefreshBlock:leadingGlpyhName:;
+- (id)initWithType:callToActionTextRefreshBlock:leadingGlpyhName:trailingGlyphName:;
+- (id)leadingGlyphName;
+- (id)trailingGlyphName;
+- (long long)ratingState;
+- (void)setRatingState:;
+- (unsigned long long)numberOfPhotosAdded;
+- (void)setNumberOfPhotosAdded:;
++ (id)_ratingsCallToActionViewWithTextRefreshBlock:;
++ (id)_editSubmissionCallToActionViewWithTextRefreshBlock:;
++ (id)_photosCallToActionViewWithTextRefreshBlock:hasPhotoLibraryEmphasis:;
++ (id)activeThumbsUpAppearanceForThirdPartyPlacecard;
++ (id)activeAddPhotosAppearanceForThirdPartyPlacecardWithNumberOfPhotos:;
++ (id)userRecommendedAppearanceForRatingState:numberOfPhotosAdded:;
++ (id)userRecommendedAppearanceForNumberOfPhotosAdded:;
++ (id)userRecommendedAppearanceForRatingState:;
++ (id)userRecommendedFailureAppearance;
++ (id)userRecommendedLoadingAppearance;
++ (id)headerAppearanceForFirstPartyPlacecardWithMapItem:;
++ (id)passiveThumbsUpAppearanceForThirdPartyPlacecard;
++ (id)passiveAddPhotosAppearanceForThirdPartyPlacecard;
+@end

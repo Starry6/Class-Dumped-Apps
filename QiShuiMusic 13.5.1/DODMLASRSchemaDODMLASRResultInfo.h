@@ -1,0 +1,36 @@
+@interface DODMLASRSchemaDODMLASRResultInfo : SISchemaInstrumentationMessage
+@property (nonatomic) NSString stageName;
+@property (nonatomic) BOOL hasStageName;
+@property (nonatomic) BOOL isAligned;
+@property (nonatomic) BOOL hasIsAligned;
+@property (nonatomic) NSArray choices;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)choices;
+- (BOOL)hasStageName;
+- (void)deleteStageName;
+- (void)setIsAligned:;
+- (BOOL)hasIsAligned;
+- (void)setHasIsAligned:;
+- (void)deleteIsAligned;
+- (void)clearChoices;
+- (void)deleteChoices;
+- (void)addChoices:;
+- (unsigned long long)choicesCount;
+- (id)choicesAtIndex:;
+- (id)stageName;
+- (void)setStageName:;
+- (BOOL)isAligned;
+- (void)setChoices:;
+- (void)setHasStageName:;
+@end

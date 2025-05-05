@@ -1,0 +1,30 @@
+@interface FLEXNavigationController : UINavigationController
+@property (nonatomic) BOOL toolbarWasHidden;
+@property (nonatomic) BOOL waitingToAddTab;
+@property (nonatomic) BOOL canShowToolbar;
+@property (nonatomic) BOOL didSetupPendingDismissButtons;
+@property (nonatomic) UISwipeGestureRecognizer navigationBarSwipeGesture;
+- (BOOL)gestureRecognizerShouldBegin:;
+- (void)viewDidLoad;
+- (void)viewWillAppear:;
+- (void)viewDidAppear:;
+- (void)pushViewController:animated:;
+- (void)dismissViewControllerAnimated:completion:;
+- (void)dismissAnimated;
+- (BOOL)canShowToolbar;
+- (void)addNavigationBarItemsToViewController:;
+- (void)addNavigationBarSwipeGesture;
+- (void)handleNavigationBarSwipe:;
+- (void)handleNavigationBarTap:;
+- (BOOL)gestureRecognizer:shouldBeRequiredToFailByGestureRecognizer:;
+- (void)_gestureRecognizedInteractiveHide:;
+- (BOOL)toolbarWasHidden;
+- (BOOL)waitingToAddTab;
+- (void)setWaitingToAddTab:;
+- (BOOL)didSetupPendingDismissButtons;
+- (void)setDidSetupPendingDismissButtons:;
+- (id)navigationBarSwipeGesture;
+- (void)setNavigationBarSwipeGesture:;
+- (void).cxx_destruct;
++ (id)withRootViewController:;
+@end

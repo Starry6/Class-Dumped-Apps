@@ -1,0 +1,30 @@
+@interface CTSweetgumUsageAccountMetrics : NSObject
+@property (nonatomic) NSString networkUsageLabel;
+@property (nonatomic) q deviceType;
+@property (nonatomic) BOOL localDevice;
+@property (nonatomic) NSString subscriptionStatus;
+@property (nonatomic) NSString planType;
+@property (nonatomic) NSDate billingCycleEndDate;
+@property (nonatomic) NSArray applicablePlans;
+- (id)subscriptionStatus;
+- (long long)deviceType;
+- (void)setDeviceType:;
+- (id)init;
+- (void)setSubscriptionStatus:;
+- (BOOL)localDevice;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (void)setLocalDevice:;
+- (BOOL)isEqual:;
+- (id)planType;
+- (void)setPlanType:;
+- (id)billingCycleEndDate;
+- (void)setBillingCycleEndDate:;
+- (id)networkUsageLabel;
+- (void)setNetworkUsageLabel:;
+- (id)applicablePlans;
+- (void)setApplicablePlans:;
++ (BOOL)supportsSecureCoding;
+@end

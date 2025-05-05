@@ -1,0 +1,2 @@
+@interface IESECGoodsDetailEventIdentifier : NSObject
+@end

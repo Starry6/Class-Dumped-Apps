@@ -1,0 +1,2 @@
+@interface MTLIOAccelPooledResource : MTLIOAccelResource
+@end

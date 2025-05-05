@@ -1,0 +1,31 @@
+@interface IESLiveIntercomCommentInvitePanel : HTSLivePopUpView
+@property (nonatomic) BOOL isNotRemind;
+@property (nonatomic) UIButton notRemindButton;
+@property (nonatomic) UIButton inviteButton;
+@property (nonatomic) HTSLiveInteractiveAPIV2 interactiveAPI;
+@property (nonatomic) NSNumber channelID;
+@property (nonatomic) <IESLiveRoomServiceAdapter> room;
+@property (nonatomic) @? inviteSuccessBlock;
+- (id)notRemindButton;
+- (void)setIsNotRemind:;
+- (void)didTapInviteButton;
+- (void)didTapNotRemindButton;
+- (id)initWithFrame:roomModel:channelID:DIContext:;
+- (id)interactiveAPI;
+- (id)inviteButton;
+- (id)inviteSuccessBlock;
+- (BOOL)isNotRemind;
+- (BOOL)needShowInstruction:;
+- (void)onClickHelpIconButton;
+- (void)setInteractiveAPI:;
+- (void)setInviteButton:;
+- (void)setInviteSuccessBlock:;
+- (void)setNotRemindButton:;
+- (void)trackWithEvent:extra:;
+- (void)setChannelID:;
+- (void).cxx_destruct;
+- (id)channelID;
+- (void)setupUI;
+- (id)room;
+- (void)setRoom:;
+@end

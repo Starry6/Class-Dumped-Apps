@@ -1,0 +1,30 @@
+@interface IESECLiveReputationView : UIView
+@property (nonatomic) UILabel descLabel;
+@property (nonatomic) UILabel scoreLabel;
+@property (nonatomic) UILabel levelLabel;
+@property (nonatomic) UIImageView detailArrowImageView;
+@property (nonatomic) IESECLiveStackContainerView reputationInfoStackView;
+@property (nonatomic) UIStackView containerStackView;
+@property (nonatomic) IESECLiveGoodsListAuthorReputationModel reputationModel;
+@property (nonatomic) IESECLiveContext liveContext;
+- (id)reputationModel;
+- (void)setLiveContext:;
+- (void)tapOnReputation;
+- (id)descLabel;
+- (id)detailArrowImageView;
+- (id)levelLabel;
+- (id)liveContext;
+- (id)reputationInfoStackView;
+- (void)setDescLabel:;
+- (void)setDetailArrowImageView:;
+- (void)setLevelLabel:;
+- (void)setReputationInfoStackView:;
+- (void)setReputationModel:;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (id)scoreLabel;
+- (void)setScoreLabel:;
+- (id)containerStackView;
+- (void)setContainerStackView:;
+- (void)resetUI;
+@end

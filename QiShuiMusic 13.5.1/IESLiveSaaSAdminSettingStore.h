@@ -1,0 +1,36 @@
+@interface IESLiveSaaSAdminSettingStore : NSObject
+@property (nonatomic) RACDisposable disposable;
+@property (nonatomic) IESLiveSaaSAdminInteractiveAPI api;
+@property (nonatomic) IESLiveSaaSLiveRoomModel roomModel;
+@property (nonatomic) HTSEventContext eventContext;
+@property (nonatomic) NSMutableArray items;
+@property (nonatomic) <IESLiveSaaSAdminSettingReaction> reaction;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didSetAttachingDIContext;
+- (id)disposable;
+- (void)fetchAdminOperateAudienceStatus:;
+- (id)incrementalUpdate:on:;
+- (id)initWithLiveRoom:;
+- (void)p_trackAdminRight:;
+- (void)p_trackPrivilegeClicked:;
+- (id)roomModel;
+- (void)setDisposable:;
+- (void)setEventContext:;
+- (void)setRoomModel:;
+- (void)setupItems;
+- (void)toggleAdminOperateAudienceEnabled:completion:;
+- (void)dealloc;
+- (id)items;
+- (void)setItems:;
+- (void)setup;
+- (void).cxx_destruct;
+- (id)eventContext;
+- (unsigned long long)indexOfItem:;
+- (id)reaction;
+- (id)api;
+- (void)setReaction:;
+- (void)setApi:;
+@end

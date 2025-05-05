@@ -1,0 +1,31 @@
+@interface IESLiveSaaSPayGradeModel : BDDynamicMTLModel
+@property (nonatomic) IESLiveSaaSImage liveIcon;
+@property (nonatomic) IESLiveSaaSImage icon;
+@property (nonatomic) IESLiveSaaSImage iconWithLevel;
+@property (nonatomic) NSNumber gradeLevel;
+@property (nonatomic) IESLiveSaaSImage liveIconNew;
+@property (nonatomic) NSNumber currentDiamondCount;
+@property (nonatomic) NSString gradeDescribe;
+@property (nonatomic) NSArray gradeIconList;
+@property (nonatomic) NSNumber thisGradeMinDiamond;
+@property (nonatomic) NSNumber thisGradeMaxDiamond;
+@property (nonatomic) IESLiveSaaSImage profileDialogBg;
+@property (nonatomic) IESLiveSaaSImage profileDialogBgBack;
+@property (nonatomic) NSNumber totalDiamondCount;
+@property (nonatomic) NSNumber honorScore;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)mapToPbModel;
+- (id)dictionary;
++ (id)diamondIconJSONTransformer;
++ (id)gradeIconListJSONTransformer;
++ (id)iconJSONTransformer;
++ (id)imIconJSONTransformer;
++ (id)imIconWithLevelJSONTransformer;
++ (id)nextIconJSONTransformer;
++ (id)profileDialogBgBackJSONTransformer;
++ (id)profileDialogBgJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

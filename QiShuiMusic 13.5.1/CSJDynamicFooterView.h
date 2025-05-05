@@ -1,0 +1,2 @@
+@interface CSJDynamicFooterView : CSJDynamicAbstractView
+@end

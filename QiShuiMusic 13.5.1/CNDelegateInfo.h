@@ -1,0 +1,2 @@
+@interface CNDelegateInfo : CNCoreDelegateInfo
+@end

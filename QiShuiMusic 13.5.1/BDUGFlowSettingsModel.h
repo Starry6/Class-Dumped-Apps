@@ -1,0 +1,32 @@
+@interface BDUGFlowSettingsModel : BDUGFlowBasicModel
+@property (nonatomic) BOOL isEnable;
+@property (nonatomic) BOOL isShowOrderTips;
+@property (nonatomic) BOOL isEnableUploadFlow;
+@property (nonatomic) q serverRequestInterval;
+@property (nonatomic) q remainFlowThold;
+@property (nonatomic) q localQueryInterval;
+@property (nonatomic) q serverUpdateInterval;
+@property (nonatomic) NSString cmccRequestUrl;
+@property (nonatomic) NSString telecomRequestUrl;
+- (BOOL)isShowOrderTips;
+- (long long)remainFlowThold;
+- (id)cmccRequestUrl;
+- (BOOL)isEnable;
+- (BOOL)isEnableUploadFlow;
+- (long long)localQueryInterval;
+- (long long)serverRequestInterval;
+- (long long)serverUpdateInterval;
+- (void)setCmccRequestUrl:;
+- (void)setIsEnable:;
+- (void)setIsEnableUploadFlow:;
+- (void)setIsShowOrderTips:;
+- (void)setLocalQueryInterval:;
+- (void)setRemainFlowThold:;
+- (void)setServerRequestInterval:;
+- (void)setServerUpdateInterval:;
+- (void)setTelecomRequestUrl:;
+- (id)telecomRequestUrl;
+- (void).cxx_destruct;
+- (id)toJsonDictionary;
++ (id)modelWithDictionary:;
+@end

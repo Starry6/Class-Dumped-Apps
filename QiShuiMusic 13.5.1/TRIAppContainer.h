@@ -1,0 +1,33 @@
+@interface TRIAppContainer : NSObject
+@property (nonatomic) NSString identifier;
+@property (nonatomic) q type;
+- (id)init;
+- (id)identifier;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (long long)type;
+- (id)initWithIdentifier:type:;
+- (void).cxx_destruct;
+- (id)containerURL;
+- (id)description;
+- (id)copyWithReplacementType:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (long long)fetchStatus;
+- (id)_containerURLWithError:;
+- (id)containerURLAsOwner;
+- (id)sanitizedIdentifier;
+- (id)_containerError:withFormat:;
+- (id)_appContainerDirectoryAsSystemWithContainerClass:error:;
+- (id)_appBundleContainerDirectoryAsSystemWithError:;
+- (id)_appDataContainerDirectoryAsSystemWithError:;
+- (id)_groupContainerDirectoryAsSystemWithError:;
+- (id)_appBundleContainerDirectoryAsOwner;
+- (id)_appDataContainerDirectoryAsOwner;
+- (id)_groupContainerDirectoryAsOwner;
+- (id)copyWithReplacementIdentifier:;
+- (BOOL)isEqualToContainer:;
++ (BOOL)supportsSecureCoding;
++ (id)containerWithIdentifier:type:;
+@end

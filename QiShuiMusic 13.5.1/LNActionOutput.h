@@ -1,0 +1,30 @@
+@interface LNActionOutput : NSObject
+@property (nonatomic) NSUUID identifier;
+@property (nonatomic) LNAction showOutputAction;
+@property (nonatomic) LNDialog dialog;
+@property (nonatomic) LNViewSnippet viewSnippet;
+@property (nonatomic) LNValue value;
+@property (nonatomic) BOOL deferred;
+@property (nonatomic) LNAction nextAction;
+@property (nonatomic) LNConfirmationActionName confirmationActionName;
+@property (nonatomic) BOOL showPrompt;
+- (id)identifier;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)value;
+- (BOOL)isDeferred;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)dialog;
+- (id)nextAction;
+- (id)viewSnippet;
+- (id)initWithIdentifier:dialog:viewSnippet:value:showOutputAction:deferred:nextAction:confirmationActionName:;
+- (id)initWithIdentifier:dialog:viewSnippet:value:showOutputAction:deferred:nextAction:confirmationActionName:showPrompt:;
+- (id)showOutputAction;
+- (id)confirmationActionName;
+- (BOOL)shouldShowPrompt;
++ (BOOL)supportsSecureCoding;
+@end

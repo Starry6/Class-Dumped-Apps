@@ -1,0 +1,37 @@
+@interface MPSNNForwardLoss : MPSCNNKernel
+@property (nonatomic) I lossType;
+@property (nonatomic) NSInteger reductionType;
+@property (nonatomic) BOOL reduceAcrossBatch;
+@property (nonatomic) Q numberOfClasses;
+@property (nonatomic) float weight;
+@property (nonatomic) float labelSmoothing;
+@property (nonatomic) float epsilon;
+@property (nonatomic) float delta;
+- (unsigned long long)maxBatchSize;
+- (float)delta;
+- (id)initWithCoder:device:;
+- (id)copyWithZone:device:;
+- (void)dealloc;
+- (float)weight;
+- (id)resultStateForSourceImage:sourceStates:destinationImage:;
+- (void)setWeight:;
+- (void)setEpsilon:;
+- (id)debugDescription;
+- (float)epsilon;
+- (void)encodeWithCoder:;
+- (void)setDelta:;
+- (id)initWithDevice:;
+- (BOOL)isResultStateReusedAcrossBatch;
+- (id)temporaryResultStateForCommandBuffer:sourceImage:sourceStates:destinationImage:;
+- (unsigned long long)numberOfClasses;
+- (id)initWithDevice:lossDescriptor:;
+- (unsigned int)lossType;
+- (void)setLabelSmoothing:;
+- (id)encodeBatchToCommandBuffer:sourceImages:labels:weights:destinationStates:destinationStateIsTemporary:;
+- (int)reductionType;
+- (float)labelSmoothing;
+- (id)destinationImageDescriptorForSourceImages:sourceStates:;
+- (BOOL)reduceAcrossBatch;
+- (void)encodeBatchToCommandBuffer:sourceImages:labels:weights:destinationStates:destinationImages:;
++ (id)libraryInfo:;
+@end

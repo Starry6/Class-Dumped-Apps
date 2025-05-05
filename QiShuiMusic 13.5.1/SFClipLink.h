@@ -1,0 +1,32 @@
+@interface SFClipLink : NSObject
+@property (nonatomic) NSURL url;
+@property (nonatomic) NSString bundleIdentifier;
+@property (nonatomic) NSString clipName;
+@property (nonatomic) NSString appName;
+@property (nonatomic) NSString actionTitle;
+@property (nonatomic) NSString actionCaption;
+@property (nonatomic) UIImage icon;
+@property (nonatomic) BOOL siteRequestsShowCard;
+- (id)url;
+- (id)bundleIdentifier;
+- (id)icon;
+- (id)actionTitle;
+- (void)setAppName:;
+- (void)setUrl:;
+- (id)appName;
+- (void)setBundleIdentifier:;
+- (void)setActionTitle:;
+- (void)setIcon:;
+- (void).cxx_destruct;
+- (id)clipName;
+- (id)initWithURL:bundleIdentifier:actionTitle:;
+- (void)getClipAttributesWithCompletionHandler:;
+- (void)setClipName:;
+- (id)actionCaption;
+- (void)setActionCaption:;
+- (BOOL)siteRequestsShowCard;
+- (void)setSiteRequestsShowCard:;
++ (double)iconHeight;
++ (id)localizedUppercaseStringForAction:;
++ (id)localizedCaptionForClipNamed:action:;
+@end

@@ -1,0 +1,34 @@
+@interface GEOMapItemIdentifier : NSObject
+@property (nonatomic) Q muid;
+@property (nonatomic) {?=dd} coordinate;
+@property (nonatomic) NSInteger resultProviderID;
+@property (nonatomic) BOOL hasCoordinate;
+@property (nonatomic) NSData comparableRepresentation;
+- (id)init;
+- (id)initWithMUID:;
+- (id)initWithMUID:coordinate:;
+- (id)comparableRepresentation;
+- (BOOL)isEqualToGEOMapItemIdentifier:;
+- (int)resultProviderID;
+- (id)initWithPlace:;
+- (id)shortDebugDescription;
+- (unsigned long long)muid;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)debugDescription;
+- (id)initWithMUID:resultProviderID:coordinate:;
+- (id)mapsIdentifier;
+- (void)encodeWithCoder:;
+- (id)initWithMapItem:;
+- (BOOL)isValid;
+- (void).cxx_destruct;
+- (id)coordinate;
+- (id)description;
+- (BOOL)hasCoordinate;
+- (id)initWithBasemapId:resultProviderID:coordinate:;
+- (id)initWithMapsIdentifier:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
++ (BOOL)supportsSecureCoding;
++ (id)mapItemIdentifiersFromMapsIdentifiers:;
+@end

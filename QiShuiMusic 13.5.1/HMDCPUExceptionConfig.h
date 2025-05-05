@@ -1,0 +1,37 @@
+@interface HMDCPUExceptionConfig : HMDModuleConfig
+@property (nonatomic) float cpuThreshold;
+@property (nonatomic) float threadUsageThreshold;
+@property (nonatomic) q sampleInterval;
+@property (nonatomic) float powerConsumptionThreshold;
+@property (nonatomic) BOOL ignoreDuplicate;
+@property (nonatomic) BOOL threadSuspend;
+@property (nonatomic) q maxTreeDepth;
+@property (nonatomic) BOOL enablePerformaceCollect;
+@property (nonatomic) BOOL enableThermalMonitor;
+@property (nonatomic) float characterScale;
+- (BOOL)ignoreDuplicate;
+- (float)cpuThreshold;
+- (BOOL)enablePerformaceCollect;
+- (BOOL)enableThermalMonitor;
+- (id)getModule;
+- (long long)maxTreeDepth;
+- (float)powerConsumptionThreshold;
+- (void)setCpuThreshold:;
+- (void)setEnablePerformaceCollect:;
+- (void)setEnableThermalMonitor:;
+- (void)setIgnoreDuplicate:;
+- (void)setMaxTreeDepth:;
+- (void)setPowerConsumptionThreshold:;
+- (void)setThreadSuspend:;
+- (void)setThreadUsageThreshold:;
+- (long long)startWeight;
+- (BOOL)threadSuspend;
+- (float)threadUsageThreshold;
+- (void)setSampleInterval:;
+- (long long)sampleInterval;
+- (BOOL)canStart;
+- (void)setCharacterScale:;
+- (float)characterScale;
++ (id)hmd_attributeMapDictionary;
++ (id)configKey;
+@end

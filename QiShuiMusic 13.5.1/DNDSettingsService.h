@@ -1,0 +1,30 @@
+@interface DNDSettingsService : NSObject
+@property (nonatomic) NSString clientIdentifier;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)setPhoneCallBypassSettings:error:;
+- (id)_initWithClientIdentifier:;
+- (void).cxx_destruct;
+- (void)remoteService:didReceiveUpdatedPhoneCallBypassSettings:;
+- (id)clientIdentifier;
+- (void)remoteService:didReceiveUpdatedBehaviorSettings:;
+- (void)remoteService:didReceiveUpdatedScheduleSettings:;
+- (id)behaviorSettingsReturningError:;
+- (BOOL)setBehaviorSettings:error:;
+- (id)phoneCallBypassSettingsReturningError:;
+- (id)scheduleSettingsReturningError:;
+- (BOOL)setScheduleSettings:error:;
+- (id)configurationForModeIdentifier:error:;
+- (BOOL)setConfiguration:forModeIdentifier:error:;
+- (void)addSettingsUpdateListener:withCompletionHandler:;
+- (void)removeSettingsUpdateListener:;
+- (BOOL)_queue_registerForSettingsUpdatesIfRequired;
+- (BOOL)setBehaviorSettings:returningError:;
+- (BOOL)setPhoneCallBypassSettings:returningError:;
+- (BOOL)setScheduleSettings:returningError:;
+- (BOOL)addSettingsUpdateListener:error:;
+- (BOOL)removeSettingsUpdateListener:error:;
++ (id)serviceForClientIdentifier:;
+@end

@@ -1,0 +1,37 @@
+@interface AWDWiFiDPSNotification : PBCodable
+@property (nonatomic) BOOL hasTimestamp;
+@property (nonatomic) Q timestamp;
+@property (nonatomic) BOOL hasSymptom;
+@property (nonatomic) NSInteger symptom;
+@property (nonatomic) BOOL hasProblemAC;
+@property (nonatomic) I problemAC;
+@property (nonatomic) BOOL hasFacetimeCallInProgress;
+@property (nonatomic) BOOL facetimeCallInProgress;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)setHasTimestamp:;
+- (void)mergeFrom:;
+- (BOOL)hasTimestamp;
+- (void)setTimestamp:;
+- (BOOL)readFrom:;
+- (unsigned long long)timestamp;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (int)symptom;
+- (void)setFacetimeCallInProgress:;
+- (void)setHasFacetimeCallInProgress:;
+- (BOOL)hasFacetimeCallInProgress;
+- (BOOL)facetimeCallInProgress;
+- (void)setSymptom:;
+- (void)setHasSymptom:;
+- (BOOL)hasSymptom;
+- (id)symptomAsString:;
+- (int)StringAsSymptom:;
+- (void)setProblemAC:;
+- (void)setHasProblemAC:;
+- (BOOL)hasProblemAC;
+- (unsigned int)problemAC;
+@end

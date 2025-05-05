@@ -1,0 +1,30 @@
+@interface BMPostSiriEngagementEventSignalDeltaEvent : BMEventBase
+@property (nonatomic) BOOL hasDuration;
+@property (nonatomic) double duration;
+@property (nonatomic) BOOL hasSinceUIEnd;
+@property (nonatomic) double sinceUIEnd;
+@property (nonatomic) BOOL hasSinceUIStart;
+@property (nonatomic) double sinceUIStart;
+@property (nonatomic) I dataVersion;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)hasDuration;
+- (void)setHasDuration:;
+- (void)writeTo:;
+- (unsigned int)dataVersion;
+- (id)initByReadFrom:;
+- (id)description;
+- (id)serialize;
+- (double)duration;
+- (BOOL)isEqual:;
+- (id)initWithDuration:sinceUIEnd:sinceUIStart:;
+- (BOOL)hasSinceUIEnd;
+- (void)setHasSinceUIEnd:;
+- (double)sinceUIEnd;
+- (BOOL)hasSinceUIStart;
+- (void)setHasSinceUIStart:;
+- (double)sinceUIStart;
++ (id)eventWithData:dataVersion:;
+@end

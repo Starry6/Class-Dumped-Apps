@@ -1,0 +1,33 @@
+@interface IESECPDPRefreshManager : NSObject
+@property (nonatomic) <IESECPDPRefreshManagerDelegate> delegate;
+@property (nonatomic) BOOL needRefresh;
+@property (nonatomic) NSTimer timer;
+@property (nonatomic) IESECPDPRefreshConfig config;
+@property (nonatomic) NSMutableArray objects;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)postRefreshTask;
+- (void)setNeedRefresh:;
+- (void)configForceRefresh:;
+- (void)configNoMoreRecommend:;
+- (void)configRefreshSections:;
+- (void)configResizeOffsetEnable:;
+- (void)configUpdateSections:;
+- (id)initWithPdp:;
+- (void)refreshImmediately;
+- (void)timerTrigger;
+- (void)dealloc;
+- (void)setConfig:;
+- (void)setDelegate:;
+- (void)setObjects:;
+- (void)setTimer:;
+- (id)objects;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)timer;
+- (id)config;
+- (BOOL)needRefresh;
+- (void)resetConfig;
+@end

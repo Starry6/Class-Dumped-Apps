@@ -1,0 +1,32 @@
+@interface ICAgeVerificationState : NSObject
+@property (nonatomic) ICAgeVerifier ageVerifier;
+@property (nonatomic) BOOL dynamic;
+@property (nonatomic) q treatment;
+@property (nonatomic) q status;
+@property (nonatomic) NSURL verificationURL;
+@property (nonatomic) BOOL explicitContentAllowed;
+@property (nonatomic) NSError error;
+@property (nonatomic) ICUserIdentity userIdentity;
+- (BOOL)isDynamic;
+- (long long)treatment;
+- (id)verificationURL;
+- (id)initWithUserIdentity:ageVerifier:treatment:verificationURL:;
+- (void)saveToUserDefaults;
+- (id)error;
+- (id)userIdentity;
+- (id)_initWithUserIdentity:status:treatment:verificationURL:error:;
+- (void).cxx_destruct;
+- (id)description;
+- (long long)status;
+- (BOOL)isExplicitContentAllowed;
+- (id)_dictionaryRepresentationWithDSID:;
+- (id)ageVerifier;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
++ (id)ageVerificationStateNotRequiredForUserIdentity:;
++ (id)cachedStateForDSID:;
++ (id)ageVerificationStateNotRequiredForUserIdentity:withTreatment:;
++ (id)_stateFromDictionaryRepresentation:DSID:;
++ (id)ageVerificationStateNotRequiredForUserIdentity:withTreatment:verificationURL:;
++ (id)ageVerificationStateNotRequiredForUserIdentity:withError:;
+@end

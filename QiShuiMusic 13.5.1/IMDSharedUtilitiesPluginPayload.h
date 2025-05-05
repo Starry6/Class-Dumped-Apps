@@ -1,0 +1,33 @@
+@interface IMDSharedUtilitiesPluginPayload : NSObject
+@property (nonatomic) NSData data;
+@property (nonatomic) NSString messageGUID;
+@property (nonatomic) @ dataDetectedResult;
+@property (nonatomic) NSURL url;
+@property (nonatomic) @ datasource;
+@property (nonatomic) NSString pluginBundleID;
+@property (nonatomic) NSArray consumedSessionPayloads;
+@property (nonatomic) NSArray attachments;
+@property (nonatomic) BOOL isFromMe;
+@property (nonatomic) BOOL supportsCollaboration;
+- (id)url;
+- (void)dealloc;
+- (id)data;
+- (void)setUrl:;
+- (void).cxx_destruct;
+- (void)setAttachments:;
+- (void)setData:;
+- (id)attachments;
+- (BOOL)isFromMe;
+- (id)datasource;
+- (void)setDatasource:;
+- (id)consumedSessionPayloads;
+- (BOOL)supportsCollaboration;
+- (void)setPluginBundleID:;
+- (void)setConsumedSessionPayloads:;
+- (void)setDataDetectedResult:;
+- (id)dataDetectedResult;
+- (void)setMessageGUID:;
+- (id)messageGUID;
+- (void)setIsFromMe:;
+- (id)pluginBundleID;
+@end

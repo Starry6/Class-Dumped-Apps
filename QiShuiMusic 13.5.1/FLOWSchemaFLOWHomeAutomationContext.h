@@ -1,0 +1,36 @@
+@interface FLOWSchemaFLOWHomeAutomationContext : SISchemaInstrumentationMessage
+@property (nonatomic) NSArray homeKitServiceResponses;
+@property (nonatomic) FLOWSchemaFLOWHomeContext homeContext;
+@property (nonatomic) BOOL hasHomeContext;
+@property (nonatomic) FLOWSchemaFLOWHomeAutomationCommand homeAutomationCommand;
+@property (nonatomic) BOOL hasHomeAutomationCommand;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)clearHomeKitServiceResponse;
+- (void)deleteHomeKitServiceResponse;
+- (void)addHomeKitServiceResponse:;
+- (unsigned long long)homeKitServiceResponseCount;
+- (id)homeKitServiceResponseAtIndex:;
+- (BOOL)hasHomeContext;
+- (void)deleteHomeContext;
+- (BOOL)hasHomeAutomationCommand;
+- (void)deleteHomeAutomationCommand;
+- (id)homeKitServiceResponses;
+- (void)setHomeKitServiceResponses:;
+- (id)homeContext;
+- (void)setHomeContext:;
+- (id)homeAutomationCommand;
+- (void)setHomeAutomationCommand:;
+- (void)setHasHomeContext:;
+- (void)setHasHomeAutomationCommand:;
+@end

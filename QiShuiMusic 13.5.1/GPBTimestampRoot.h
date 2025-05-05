@@ -1,0 +1,2 @@
+@interface GPBTimestampRoot : GPBRootObject
+@end

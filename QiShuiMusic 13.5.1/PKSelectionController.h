@@ -1,0 +1,33 @@
+@interface PKSelectionController : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSObject<OS_dispatch_queue> selectionHullQueue;
+- (void)dealloc;
+- (id)dropInteraction:previewForDroppingItem:withDefault:;
+- (BOOL)dropInteraction:canHandleSession:;
+- (void).cxx_destruct;
+- (void)dropInteraction:performDrop:;
+- (void)dropInteraction:sessionDidEnter:;
+- (BOOL)isRTL;
+- (id)dropInteraction:sessionDidUpdate:;
+- (void)dropInteraction:sessionDidExit:;
+- (long long)_dropInteraction:dataOwnerForSession:;
+- (id)selectionColor;
+- (void)didEndScroll;
+- (id)transformFromStrokeSpaceToViewInDrawing:;
+- (id)attachmentBoundsForDrawing:;
+- (void)didBeginModifyDrawing;
+- (void)didEndModifyDrawing;
+- (id)_firstStrokesInStrokes:;
+- (id)_lastStrokesInStrokes:;
+- (void)didSelectStrokesNotification:;
+- (double)scaleForDrawing:;
+- (long long)currentIntersectionAlgorithm;
+- (id)selectionHullQueue;
+- (void)didSelect:lassoStroke:transform:drawing:;
+- (void)didSelect:lassoStroke:transform:drawing:selectionType:completion:;
+- (void)_addItemsToPasteboard:;
+- (void)didBeginSpaceInsertionWithLassoStroke:drawing:addDefaultSpace:strokesAbove:strokesBelow:externalElements:;
+@end

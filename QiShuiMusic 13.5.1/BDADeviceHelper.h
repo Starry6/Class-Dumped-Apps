@@ -1,0 +1,35 @@
+@interface BDADeviceHelper : NSObject
++ (BOOL)isIPhoneXDevice;
++ (float)OSVersionNumber;
++ (BOOL)isIPhoneXSeries;
++ (BOOL)isIpadProDevice;
++ (unsigned long long)currentSplitScreenWithSize:;
++ (long long)getTotalDiskSpace;
++ (id)idfaString;
++ (id)idfvString;
++ (BOOL)is480Screen;
++ (BOOL)is568Screen;
++ (BOOL)is667Screen;
++ (BOOL)is736Screen;
++ (BOOL)isJailBroken;
++ (BOOL)isPadDevice;
++ (BOOL)isScreenWidthLarge320;
++ (BOOL)judge480Screen;
++ (BOOL)judge568Screen;
++ (BOOL)judge667Screen;
++ (BOOL)judge736Screen;
++ (BOOL)judge812Screen;
++ (BOOL)judge896Screen;
++ (BOOL)judgePadDevice;
++ (id)resolutionString;
++ (double)ssOnePixel;
++ (id)windowSize;
++ (unsigned long long)getDeviceType;
++ (double)screenScale;
++ (id)resolution;
++ (id)platformName;
++ (long long)getFreeDiskSpace;
++ (id)MACAddress;
++ (id)currentLanguage;
++ (id)mainWindow;
+@end

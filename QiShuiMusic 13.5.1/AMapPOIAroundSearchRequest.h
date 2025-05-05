@@ -1,0 +1,32 @@
+@interface AMapPOIAroundSearchRequest : AMapPOISearchBaseRequest
+@property (nonatomic) NSString cachedKey;
+@property (nonatomic) NSString paramCompareString;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSString keywords;
+@property (nonatomic) AMapGeoPoint location;
+@property (nonatomic) q radius;
+@property (nonatomic) NSString city;
+@property (nonatomic) BOOL special;
+- (id)checkParameters;
+- (BOOL)special;
+- (id)cacheCopy;
+- (BOOL)compareResultWithAnother:;
+- (void)formattedCachedStringWithLanguage:;
+- (BOOL)isNeedCompareParam;
+- (BOOL)isSupportCache;
+- (id)paramCompareString;
+- (void)setParamCompareString:;
+- (void)setSpecial:;
+- (id)city;
+- (id)init;
+- (void).cxx_destruct;
+- (void)setCity:;
+- (unsigned long long)cacheType;
+- (id)requestPath;
+- (id)cachedKey;
+- (void)setCachedKey:;
++ (id)ajo_mapping;
+@end

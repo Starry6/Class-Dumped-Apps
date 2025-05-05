@@ -1,0 +1,31 @@
+@interface IESLiveLoadBaseCursor : NSObject
+@property (nonatomic) @? completedCallback;
+@property (nonatomic) Q loadStrategy;
+@property (nonatomic) NSInteger componentCount;
+@property (nonatomic) NSInteger curIndex;
+@property (nonatomic) q loopLoadNum;
+@property (nonatomic) double maxTime;
+@property (nonatomic) BOOL traversalOpt;
+- (void)setLoopLoadNum:;
+- (id)compStrWithComponents:;
+- (id)completedCallback;
+- (int)curIndex;
+- (void)fireLoopWithMaxTime;
+- (id)levelOrStage;
+- (unsigned long long)loadStrategy;
+- (long long)loopLoadNum;
+- (id)realArray;
+- (void)runCallback:;
+- (void)setCompletedCallback:;
+- (void)setCurIndex:;
+- (void)setLoadStrategy:;
+- (void)setTraversalOpt:;
+- (BOOL)traversalOpt;
+- (double)maxTime;
+- (void)setMaxTime:;
+- (void).cxx_destruct;
+- (void)fire;
+- (id)flagDescription;
+- (void)setComponentCount:;
+- (int)componentCount;
+@end

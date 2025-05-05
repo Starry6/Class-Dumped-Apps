@@ -1,0 +1,36 @@
+@interface IESContainerKitServiceLogProxy : NSObject
+@property (nonatomic) <IESContainerKitService> targetService;
+@property (nonatomic) <IESContainerKitService> proxyService;
+@property (nonatomic) IESContainerKitCallerInfo callerInfo;
+@property (nonatomic) NSArray proxyAllowList;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)addViewElement:;
+- (void)addView:viewType:;
+- (void)addView:viewType:insets:size:;
+- (void)addView:viewType:size:;
+- (id)dynamicLayoutRules;
+- (BOOL)enableProxyEngine;
+- (id)p_ckServiceWithType:;
+- (void)parseDynamicLayoutRule:;
+- (id)proxyAllowList;
+- (id)proxyWithCaller:;
+- (id)queryContainerByType:;
+- (id)queryViewByType:;
+- (void)removeViewElement:;
+- (id)roomContainerView;
+- (void)setProxyAllowList:;
+- (void)setProxyService:;
+- (void)setTargetService:;
+- (void)switchToNormalModel;
+- (void)switchToSideMode;
+- (id)targetService;
+- (id)initWithService:;
+- (void).cxx_destruct;
+- (id)callerInfo;
+- (void)setCallerInfo:;
+- (id)proxyService;
++ (void)registerLayoutRule:forViewType:;
+@end

@@ -1,0 +1,2 @@
+@interface IESLiveSaaSPBIESLiveSaaSPBRivalsRecommendRoot : GPBRootObject
+@end

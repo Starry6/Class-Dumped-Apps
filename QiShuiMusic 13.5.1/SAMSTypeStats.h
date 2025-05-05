@@ -1,0 +1,32 @@
+@interface SAMSTypeStats : NSObject
+@property (nonatomic) Q count;
+@property (nonatomic) Q bytes;
+@property (nonatomic) Q num_load_infos;
+@property (nonatomic) Q num_frames;
+@property (nonatomic) Q num_duplicate;
+@property (nonatomic) Q bytes_duplicate;
+@property (nonatomic) Q num_out_of_order;
+@property (nonatomic) Q bytes_out_of_order;
+@property (nonatomic) Q num_missing_load_info;
+@property (nonatomic) Q bytes_missing_load_info;
+- (void)setCount:;
+- (unsigned long long)bytes;
+- (unsigned long long)count;
+- (void)setBytes:;
+- (unsigned long long)num_load_infos;
+- (void)setNum_load_infos:;
+- (unsigned long long)num_frames;
+- (void)setNum_frames:;
+- (unsigned long long)num_duplicate;
+- (void)setNum_duplicate:;
+- (unsigned long long)bytes_duplicate;
+- (void)setBytes_duplicate:;
+- (unsigned long long)num_out_of_order;
+- (void)setNum_out_of_order:;
+- (unsigned long long)bytes_out_of_order;
+- (void)setBytes_out_of_order:;
+- (unsigned long long)num_missing_load_info;
+- (void)setNum_missing_load_info:;
+- (unsigned long long)bytes_missing_load_info;
+- (void)setBytes_missing_load_info:;
+@end

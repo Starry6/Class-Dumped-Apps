@@ -1,0 +1,38 @@
+@interface PHShareParticipant : PHObject
+@property (nonatomic) S role;
+@property (nonatomic) s permission;
+@property (nonatomic) s acceptanceStatus;
+@property (nonatomic) s exitState;
+@property (nonatomic) BOOL isCurrentUser;
+@property (nonatomic) NSString emailAddress;
+@property (nonatomic) NSPersonNameComponents nameComponents;
+@property (nonatomic) NSString phoneNumber;
+@property (nonatomic) NSString participantID;
+- (id)emailAddress;
+- (short)permission;
+- (id)nameComponents;
+- (id)phoneNumber;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (unsigned short)role;
+- (short)exitState;
+- (id)participantID;
+- (BOOL)isEqual:;
+- (short)acceptanceStatus;
+- (BOOL)isCurrentUser;
+- (id)initWithFetchDictionary:propertyHint:photoLibrary:;
+- (Class)changeRequestClass;
++ (id)transformValueExpression:forKeyPath:;
++ (id)identifierCode;
++ (id)fetchType;
++ (id)managedEntityName;
++ (id)entityKeyMap;
++ (id)propertiesToFetchWithHint:;
++ (id)localIdentifierWithUUID:;
++ (id)fetchParticipantsInShare:options:;
++ (id)fetchParticipantsWithLocalIdentifiers:options:;
++ (id)fetchContributorsForAsset:options:;
++ (id)fetchContributorsForAssets:options:;
++ (void)queryParticipantsWithEmails:phoneNumbers:photoLibrary:completionHandler:;
++ (id)fetchShareParticipantForPerson:options:;
+@end

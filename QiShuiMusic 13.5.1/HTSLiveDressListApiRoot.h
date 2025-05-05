@@ -1,0 +1,2 @@
+@interface HTSLiveDressListApiRoot : GPBRootObject
+@end

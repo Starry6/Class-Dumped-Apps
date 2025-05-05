@@ -1,0 +1,34 @@
+@interface LTSchemaMTSpeechTranslationEvent : SISchemaInstrumentationMessage
+@property (nonatomic) NSString requestID;
+@property (nonatomic) BOOL hasRequestID;
+@property (nonatomic) NSString selectedLocale;
+@property (nonatomic) BOOL hasSelectedLocale;
+@property (nonatomic) NSInteger responseTimeMs;
+@property (nonatomic) BOOL hasResponseTimeMs;
+@property (nonatomic) NSData jsonData;
+- (BOOL)hasRequestID;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (id)requestID;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)setRequestID:;
+- (void)deleteRequestID;
+- (BOOL)hasSelectedLocale;
+- (void)deleteSelectedLocale;
+- (id)selectedLocale;
+- (void)setSelectedLocale:;
+- (void)setHasRequestID:;
+- (void)setHasSelectedLocale:;
+- (void)setResponseTimeMs:;
+- (BOOL)hasResponseTimeMs;
+- (void)setHasResponseTimeMs:;
+- (void)deleteResponseTimeMs;
+- (int)responseTimeMs;
+@end

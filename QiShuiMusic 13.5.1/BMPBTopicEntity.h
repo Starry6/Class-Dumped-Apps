@@ -1,0 +1,30 @@
+@interface BMPBTopicEntity : PBCodable
+@property (nonatomic) BOOL hasTopicId;
+@property (nonatomic) NSString topicId;
+@property (nonatomic) BOOL hasDisplayName;
+@property (nonatomic) NSString displayName;
+@property (nonatomic) NSMutableArray attributes;
+- (void)setTopicId:;
+- (BOOL)hasDisplayName;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)setDisplayName:;
+- (id)displayName;
+- (void)setAttributes:;
+- (id)attributes;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (unsigned long long)attributesCount;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)topicId;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)clearAttributes;
+- (id)copyWithZone:;
+- (void)addAttributes:;
+- (id)attributesAtIndex:;
+- (BOOL)hasTopicId;
++ (Class)attributesType;
+@end

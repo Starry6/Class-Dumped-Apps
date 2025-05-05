@@ -1,0 +1,31 @@
+@interface MFMessageCriterionConverter : NSObject
+@property (nonatomic) <MFMessageCriterionConverterDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)_searchPredicateForCriterion:;
+- (id)_simplifiedCompoundPredicateOfType:forSubqueries:;
+- (id)messageCriterionFromPredicateFormatString:;
+- (long long)_criterionTypeFromExpression:;
+- (void)setDelegate:;
+- (id)predicateFromMessageCriterion:;
+- (id)messageCriterionFromPredicate:;
+- (long long)_defaultCriterionTypeForKey:;
+- (id)_predicateForKey:value:qualifier:;
+- (id)_messageCriterionForCompoundPredicate:;
+- (id)_defaultKeysForCriterionType:;
+- (id)_orPredicateForAttributes:matchingValue:qualifier:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (long long)_criterionTypeForKey:;
+- (id)_predicateKeysForCriterion:;
+- (id)_messageCriterionForComparisonPredicate:;
+- (unsigned long long)_proposedPredicateOperatorType:forKey:;
++ (id)log;
++ (id)spotlightSearchPredicateForValue:;
++ (id)spotlightRecipientSearchPredicateForValue:operator:;
++ (id)spotlightSenderSearchPredicateForValue:operator:;
++ (id)spotlightSubjectSearchPredicateForValue:operator:;
++ (id)spotlightBodySearchPredicateForValue:;
+@end

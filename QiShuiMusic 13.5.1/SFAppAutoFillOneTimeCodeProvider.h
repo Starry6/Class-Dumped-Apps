@@ -1,0 +1,34 @@
+@interface SFAppAutoFillOneTimeCodeProvider : NSObject
+@property (nonatomic) <SFAppAutoFillOneTimeCodeProviderDelegate> delegate;
+@property (nonatomic) WBSAutoFillAssociatedDomainsManager associatedDomainsManager;
+@property (nonatomic) BOOL hasOneTimeCode;
+- (void)removeObserver:;
+- (id)init;
+- (void)addObserver:;
+- (void)consumeOneTimeCode:;
+- (BOOL)hasOneTimeCode;
+- (id)initWithMessagesOneTimeCodeSupport:;
+- (id)currentOneTimeCodeWithAuditToken:website:;
+- (void)setAssociatedDomainsManager:;
+- (id)_associatedDomainEntriesForAppWithIdentifier:;
+- (void)setDelegate:;
+- (id)currentOneTimeCodesForWebBrowserWithWebsiteFrameURLs:fieldClassification:;
+- (id)_savedAccountsWithPasswordsForURL:;
+- (id)associatedDomainsManager;
+- (void)_startGeneratorTimer;
+- (BOOL)_validateURL:withURLFromOriginBoundCode:;
+- (void)consumeCurrentOneTimeCode;
+- (void)_stopGeneratorTimer;
+- (id)currentOneTimeCodesWithAuditToken:website:usernameHint:fieldClassification:;
+- (id)_sortedOneTimeCodesFromSavedAccounts:;
+- (BOOL)hasOneTimeCodeForAppWithAuditToken:;
+- (void)_processOneTimeCodeFromMessages:;
+- (id)delegate;
+- (void)consumeMessagesOneTimeCodeWithGUID:;
+- (void).cxx_destruct;
+- (id)_secureURLWithDomain:;
+- (void)removeObserverForOneTimeCode:;
+- (BOOL)_appWithAuditTokenIsWebBrowser:;
+- (void)addObserver:forOneTimeCode:;
+- (void)_validateCurrentOneTimeCode;
+@end

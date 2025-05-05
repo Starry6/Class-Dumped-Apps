@@ -1,0 +1,38 @@
+@interface HTSLiveSaaSPushStreamBitrateImp_Douyin : NSObject
+@property (nonatomic) LiveCore livecore;
+@property (nonatomic) Q livecoreNetworkQuality;
+@property (nonatomic) BOOL offNetwork;
+@property (nonatomic) @? realBitrateBlock;
+@property (nonatomic) @? networkQualityBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)getAudioBitrate;
+- (id)realFps;
+- (unsigned long long)convertLiveCoreNetworkQuality:;
+- (id)encodeFps;
+- (long long)getMaxBitrate;
+- (long long)getMinBitrate;
+- (long long)getRealBitrate;
+- (unsigned long long)getRealNetworkQuality;
+- (id)inCapFps;
+- (id)initWithLiveCore:;
+- (id)livecore;
+- (unsigned long long)livecoreNetworkQuality;
+- (id)networkQualityBlock;
+- (BOOL)offNetwork;
+- (void)onNetworkStatusChanged:;
+- (id)outCapFps;
+- (id)previewFps;
+- (id)realBitrateBlock;
+- (void)reportRealtimeBitrate;
+- (void)setLivecore:;
+- (void)setLivecoreNetworkQuality:;
+- (void)setNetworkQualityBlock:;
+- (void)setOffNetwork:;
+- (void)setRealBitrateBlock:;
+- (void)dealloc;
+- (void)setup;
+- (void).cxx_destruct;
+@end

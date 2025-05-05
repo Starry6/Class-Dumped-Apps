@@ -1,0 +1,35 @@
+@interface UIPasscodeField : UIView
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)hitTest:forEvent:;
+- (void)dealloc;
+- (void)setKeyboardType:;
+- (void)appendString:;
+- (void)setDelegate:;
+- (BOOL)isFirstResponder;
+- (void)setStringValue:;
+- (id)initWithFrame:;
+- (BOOL)becomeFirstResponder;
+- (BOOL)canBecomeFirstResponder;
+- (id)stringValue;
+- (void).cxx_destruct;
+- (void)_textDidChange;
+- (void)textFieldDidResignFirstResponder:;
+- (BOOL)textFieldShouldStartEditing:;
+- (void)setTextCentersHorizontally:;
+- (void)okButtonClicked:;
+- (void)setKeyboardType:appearance:;
+- (void)setKeyboardType:appearance:emptyContentReturnKeyType:;
+- (void)_updateFields;
+- (BOOL)showsOKButton;
+- (void)setShowsOKButton:;
+- (void)deleteLastCharacter;
+- (int)numberOfEntryFields;
+- (void)setNumberOfEntryFields:opaqueBackground:;
+- (void)setNumberOfEntryFields:;
+- (BOOL)textField:shouldInsertText:replacingRange:;
++ (double)defaultHeight;
++ (Class)textFieldClass;
+@end

@@ -1,0 +1,31 @@
+@interface BDTemplateDetailContentTask : NSObject
+@property (nonatomic) NSString templateKey;
+@property (nonatomic) NSArray detailKeys;
+@property (nonatomic) BDTemplateDetailRequestBuilder requestBuilder;
+@property (nonatomic) @? dataDecoder;
+@property (nonatomic) q retryCount;
+@property (nonatomic) double cacheDuration;
+@property (nonatomic) BOOL preloadOnlyWIFI;
+@property (nonatomic) BOOL forceRequest;
+- (BOOL)preloadOnlyWIFI;
+- (void)setDataDecoder:;
+- (void)setTemplateKey:;
+- (double)cacheDuration;
+- (id)dataDecoder;
+- (id)detailKeys;
+- (BOOL)forceRequest;
+- (void)setCacheDuration:;
+- (void)setDetailKeys:;
+- (void)setForceRequest:;
+- (void)setPreloadOnlyWIFI:;
+- (void)setRequestBuilder:;
+- (id)templateKey;
+- (id)init;
+- (void)setRetryCount:;
+- (long long)retryCount;
+- (void).cxx_destruct;
+- (BOOL)isEqual:;
+- (void)cancelTask;
+- (id)requestBuilder;
++ (id)taskWithKey:detailKeys:requestBuilder:dataDecoder:;
+@end

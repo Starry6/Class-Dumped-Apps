@@ -1,0 +1,30 @@
+@interface TTVideoEngineModelCache : NSObject
+@property (nonatomic) NSMutableArray caches;
+@property (nonatomic) q maxMemoryCount;
+@property (nonatomic) q maxCount;
+@property (nonatomic) TTVideoEngineKVStorage diskStorage;
+- (void)addItem:forKey:;
+- (void)setDiskStorage:;
+- (void)_exect:;
+- (void)_applicationDidReceiveMemoryWarningNotification:;
+- (void)_insertItemInMemoryCache:data:;
+- (id)_removeMemoryCacheIfExit:;
+- (void)clearAllMemoryItems;
+- (void)getItemForKey:withBlock:;
+- (void)getItemFromDiskForKey:withBlock:;
+- (long long)maxMemoryCount;
+- (void)removeItemFromDiskForKey:;
+- (void)saveItemToDisk:forKey:;
+- (void)setCaches:;
+- (void)setMaxMemoryCount:;
+- (id)init;
+- (void)dealloc;
+- (long long)maxCount;
+- (void)setMaxCount:;
+- (void).cxx_destruct;
+- (id)diskStorage;
+- (void)clearAllItems;
+- (id)caches;
+- (void)removeItemForKey:;
++ (id)shareCache;
+@end

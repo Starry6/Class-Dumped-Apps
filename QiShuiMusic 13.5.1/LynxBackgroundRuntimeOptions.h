@@ -1,0 +1,32 @@
+@interface LynxBackgroundRuntimeOptions : NSObject
+@property (nonatomic) LynxGroup group;
+@property (nonatomic) q backgroundJsRuntimeType;
+@property (nonatomic) LynxTemplateData presetData;
+@property (nonatomic) BOOL enableCodeCache;
+@property (nonatomic) NSString codeCacheUrl;
+- (BOOL)enableCodeCache;
+- (id)groupThreadName;
+- (void)addLynxResourceProvider:provider:;
+- (long long)backgroundJsRuntimeType;
+- (id)codeCacheUrl;
+- (id)codeCacheUrlString;
+- (BOOL)enableJSGroupThread;
+- (id)moduleWrappers;
+- (id)preloadJSPath;
+- (id)presetData;
+- (void)registerModule:param:;
+- (void)setBackgroundJsRuntimeType:;
+- (void)setCodeCacheUrl:;
+- (void)setEnableCodeCache:;
+- (void)setPresetData:;
+- (id)groupID;
+- (id)init;
+- (id)initWithOptions:;
+- (id)providers;
+- (void)setGroup:;
+- (id)group;
+- (void)merge:;
+- (void).cxx_destruct;
+- (void)registerModule:;
+- (id).cxx_construct;
+@end

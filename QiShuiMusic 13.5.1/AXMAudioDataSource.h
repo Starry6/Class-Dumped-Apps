@@ -1,0 +1,32 @@
+@interface AXMAudioDataSource : NSObject
+@property (nonatomic) NSString name;
+@property (nonatomic) double sampleRate;
+@property (nonatomic) ^v sampleBuffer;
+@property (nonatomic) Q length;
+@property (nonatomic) Q currentSampleIndex;
+@property (nonatomic) BOOL circular;
+@property (nonatomic) double level;
+@property (nonatomic) NSArray effectsChain;
+- (void)setLevel:;
+- (id)init;
+- (void)dealloc;
+- (void)setName:;
+- (double)level;
+- (double)sampleRate;
+- (BOOL)isCircular;
+- (id)sampleBuffer;
+- (void)setCircular:;
+- (void).cxx_destruct;
+- (id)description;
+- (unsigned long long)length;
+- (id)name;
+- (void)setLength:;
+- (id)initWithName:sampleRate:circular:;
+- (void)setCurrentSampleIndex:;
+- (void)addEffectToChain:;
+- (void)removeEffectFromChain:;
+- (void)processEffects:;
+- (void)normalizeAudio;
+- (unsigned long long)currentSampleIndex;
+- (id)effectsChain;
+@end

@@ -1,0 +1,33 @@
+@interface IESECliveSplitImageAttributeStringBuilder : NSObject
+@property (nonatomic) double limitWidth;
+@property (nonatomic) NSAttributedString fullAttributeText;
+@property (nonatomic) NSAttributedString prefix;
+@property (nonatomic) NSAttributedString content;
+@property (nonatomic) UIFont contentFont;
+@property (nonatomic) UIColor contentColor;
+@property (nonatomic) UIImage splitImage;
+@property (nonatomic) UIView container;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setContentFont:;
+- (id)contentFont;
+- (id)fullAttributeText;
+- (double)limitWidth;
+- (void)setFullAttributeText:;
+- (void)setLimitWidth:;
+- (void)setSplitImage:;
+- (id)splitImage;
+- (void)updateTextContent:;
+- (id)content;
+- (void)setContent:;
+- (void)setContainer:;
+- (void)setContentColor:;
+- (id)container;
+- (id)build;
+- (id)contentColor;
+- (void)setPrefix:;
+- (id)prefix;
+- (void).cxx_destruct;
+@end

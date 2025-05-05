@@ -1,0 +1,2 @@
+@interface SNModelMetadataUtils : NSObject
+@end

@@ -1,0 +1,31 @@
+@interface IESECShopGoodsSourceView : UIView
+@property (nonatomic) UIImageView sourceIconImageView;
+@property (nonatomic) UILabel sourceLabel;
+@property (nonatomic) UIImageView arrowIconImageView;
+@property (nonatomic) CAShapeLayer breatheCircleLayer;
+@property (nonatomic) CAShapeLayer breatheAnimationLayer;
+@property (nonatomic) BOOL showBreatheAnimation;
+@property (nonatomic) BOOL showIconWithoutBreatheAnimation;
+- (void)setSourceLabel:;
+- (BOOL)showIconWithoutBreatheAnimation;
+- (id)arrowIconImageView;
+- (id)breatheAnimationLayer;
+- (id)breatheCircleLayer;
+- (void)p_startBreatheAnimation;
+- (void)p_stopBreatheAnimation;
+- (void)setArrowIconImageView:;
+- (void)setBreatheAnimationLayer:;
+- (void)setBreatheCircleLayer:;
+- (void)setShowBreatheAnimation:;
+- (void)setShowIconWithoutBreatheAnimation:;
+- (void)setSourceIcon:text:showArrowIcon:;
+- (void)setSourceIcon:text:showArrowIcon:showIconBorder:;
+- (void)setSourceIconImageView:;
+- (BOOL)showBreatheAnimation;
+- (id)sourceIconImageView;
+- (void)updateSourceLabelWithColor:;
+- (id)init;
+- (void).cxx_destruct;
+- (id)sourceLabel;
+- (void)setupViews;
+@end

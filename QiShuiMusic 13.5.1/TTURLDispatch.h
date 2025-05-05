@@ -1,0 +1,31 @@
+@interface TTURLDispatch : NSObject
+@property (nonatomic) NSString originalUrl;
+@property (nonatomic) NSString requestTag;
+@property (nonatomic) NSObject<OS_dispatch_semaphore> semaphore;
+@property (nonatomic) TTDispatchResult result;
+@property (nonatomic) NSInteger delayTimeMils;
+@property (nonatomic) @? delayCallback;
+- (void)doDelay;
+- (void)await:;
+- (void)awaitV2:;
+- (void)delayAwait;
+- (id)delayCallback;
+- (int)delayTimeMils;
+- (void)doDispatch;
+- (id)initWithUrl:requestTag:;
+- (id)initWithUrl:requestTag:delayCallback:;
+- (id)requestTag;
+- (void)setDelayCallback:;
+- (void)setDelayTimeMils:;
+- (void)setRequestTag:;
+- (int)syncGetDelayTimeOnNetThread;
+- (id)result;
+- (void)dealloc;
+- (id)originalUrl;
+- (void)setSemaphore:;
+- (void)resume;
+- (void).cxx_destruct;
+- (id)semaphore;
+- (void)setResult:;
+- (void)setOriginalUrl:;
+@end

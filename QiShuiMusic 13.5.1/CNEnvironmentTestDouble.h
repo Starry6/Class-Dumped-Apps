@@ -1,0 +1,38 @@
+@interface CNEnvironmentTestDouble : CNEnvironment
+@property (nonatomic) <CNMetricsReporter> metricsReporter;
+@property (nonatomic) <CNAPeopleSuggesterFacade> peopleSuggester;
+@property (nonatomic) <CNACDPeopleSuggesterFacade> cdPeopleSuggester;
+@property (nonatomic) <CNAutocompleteSuggestedResultPrioritization> suggestedResultPrioritization;
+@property (nonatomic) <CNACTStewieFacade> stewie;
+@property (nonatomic) DADConnection dataAccessConnection;
+@property (nonatomic) <CNFileManager> fileManager;
+@property (nonatomic) CNUserDefaults userDefaults;
+@property (nonatomic) <CNSchedulerProvider> schedulerProvider;
+@property (nonatomic) <CNTimeProvider> timeProvider;
+@property (nonatomic) NSNotificationCenter notificationCenter;
+@property (nonatomic) <CNEntitlementVerification> entitlementVerifier;
+@property (nonatomic) <CNAuthorizationContext> authorizationContext;
+@property (nonatomic) <CNLocalizationServices> localizationServices;
+@property (nonatomic) NSString mainBundleIdentifier;
+@property (nonatomic) NSString defaultCountryCode;
+@property (nonatomic) BOOL internalBuild;
+@property (nonatomic) BOOL commLimitsEnabled;
+- (void)setMetricsReporter:;
+- (void)setStewie:;
+- (void)setPeopleSuggester:;
+- (void)setCdPeopleSuggester:;
+- (void)setSuggestedResultPrioritization:;
+- (void)setDataAccessConnection:;
+- (void)setInternalBuild:;
+- (void)setUserDefaults:;
+- (void)setSchedulerProvider:;
+- (void)setNotificationCenter:;
+- (void)setFileManager:;
+- (void)setAuthorizationContext:;
+- (void)setMainBundleIdentifier:;
+- (void)setTimeProvider:;
+- (void)setEntitlementVerifier:;
+- (void)setLocalizationServices:;
+- (void)setDefaultCountryCode:;
+- (void)setCommLimitsEnabled:;
+@end

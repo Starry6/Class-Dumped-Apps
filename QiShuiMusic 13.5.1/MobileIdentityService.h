@@ -1,0 +1,2 @@
+@interface MobileIdentityService : NSObject
+@end

@@ -1,0 +1,34 @@
+@interface VKSelectableBarButtonItem : UIBarButtonItem
+@property (nonatomic) VKSelectableBarButtonContainerView toggleView;
+@property (nonatomic) BOOL showsMenuAsPrimaryAction;
+@property (nonatomic) double padding;
+@property (nonatomic) double compactPadding;
+@property (nonatomic) double cornerRadiusRatio;
+@property (nonatomic) double width;
+@property (nonatomic) double alpha;
+- (void)setMenu:;
+- (id)init;
+- (BOOL)showsMenuAsPrimaryAction;
+- (void)setSelected:;
+- (void)setAlpha:;
+- (void)setWidth:;
+- (void)setImage:;
+- (id)menu;
+- (void)setAction:;
+- (void)setTarget:;
+- (void)setPadding:;
+- (double)width;
+- (double)alpha;
+- (void)setEnabled:;
+- (void).cxx_destruct;
+- (double)padding;
+- (void)setShowsMenuAsPrimaryAction:;
+- (id)image;
+- (double)compactPadding;
+- (void)setCompactPadding:;
+- (double)cornerRadiusRatio;
+- (void)setCornerRadiusRatio:;
+- (id)toggleView;
+- (void)setToggleView:;
++ (id)keyPathsForValuesAffectingAlpha;
+@end

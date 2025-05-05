@@ -1,0 +1,31 @@
+@interface CKEncryptedData : NSObject
+@property (nonatomic) NSData data;
+@property (nonatomic) NSData encryptedData;
+@property (nonatomic) BOOL needsEncryption;
+@property (nonatomic) BOOL needsDecryption;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (id)CKDescriptionPropertiesWithPublic:private:shouldExpand:;
+- (id)data;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)CKPropertiesDescription;
+- (void)encodeWithCoder:;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (id)description;
+- (void)setData:;
+- (id)value;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)initWithValue:;
+- (id)encryptedData;
+- (void)setEncryptedData:;
+- (BOOL)needsEncryption;
+- (BOOL)needsDecryption;
+- (id)initWithEncryptedData:;
++ (BOOL)supportsSecureCoding;
+@end

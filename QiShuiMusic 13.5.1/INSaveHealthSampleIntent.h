@@ -1,0 +1,33 @@
+@interface INSaveHealthSampleIntent : INIntent
+@property (nonatomic) INDateComponentsRange recordDate;
+@property (nonatomic) q objectType;
+@property (nonatomic) NSArray values;
+@property (nonatomic) HKUnit unit;
+@property (nonatomic) NSArray sampleMetadatas;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)_dictionaryRepresentation;
+- (id)values;
+- (long long)objectType;
+- (void)setUnit:;
+- (void)_setMetadata:;
+- (id)unit;
+- (id)domain;
+- (void)setDomain:;
+- (void)setValues:;
+- (id)_metadata;
+- (id)_typedBackingStore;
+- (void)_redactForMissingPrivacyEntitlementOptions:containingAppBundleId:;
+- (id)verb;
+- (void)setVerb:;
+- (id)parametersByName;
+- (void)setParametersByName:;
+- (id)recordDate;
+- (void)setRecordDate:;
+- (void)setObjectType:;
+- (id)sampleMetadatas;
+- (void)setSampleMetadatas:;
+- (id)initWithRecordDate:objectType:values:unit:sampleMetadatas:;
+@end

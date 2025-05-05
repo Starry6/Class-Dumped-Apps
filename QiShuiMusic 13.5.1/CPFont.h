@@ -1,0 +1,36 @@
+@interface CPFont : NSObject
+- (void)dealloc;
+- (void)dispose;
+- (double)maxWidth;
+- (void)finalize;
+- (double)fontWeight;
+- (double)ascent;
+- (double)descent;
+- (unsigned int)flags;
+- (id)fontName;
+- (double)leading;
+- (id)initWith:;
+- (double)capHeight;
+- (double)xHeight;
+- (BOOL)isHorizontal;
+- (double)underlinePosition;
+- (double)underlineThickness;
+- (double)fontStretch;
+- (id)matchingFontName;
+- (void)getFontName;
+- (void)loadExternalFontInfoFor:;
+- (void)loadEmbeddedFontInfo;
+- (id)cgPDFFont;
+- (id)cgFont;
+- (BOOL)isSameFontAs:;
+- (id)fontBBox;
+- (double)italicAngle;
+- (double)stemV;
+- (double)stemH;
+- (double)avgWidth;
+- (double)missingWidth;
+- (double)spaceWidth;
+- (double)kernBetweenUnicode:andUnicode:;
+- (BOOL)getGlyphs:forCodes:count:;
+- (void)uniCharsFor:count:toArray:maxChars:;
+@end

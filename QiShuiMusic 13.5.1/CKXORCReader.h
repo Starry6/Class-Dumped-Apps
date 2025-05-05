@@ -1,0 +1,38 @@
+@interface CKXORCReader : CKXReaderBase
+@property (nonatomic) CKDSReadableStorage storage;
+@property (nonatomic) <CKXORCHelpers> helpers;
+@property (nonatomic) CKXORCReaderOptions options;
+@property (nonatomic) Q loadCount;
+- (void)setStorage:;
+- (id)options;
+- (id)storage;
+- (void).cxx_destruct;
+- (id).cxx_construct;
+- (id)initWithSchema:;
+- (unsigned long long)valueSizeForField:;
+- (BOOL)size:error:;
+- (BOOL)setReadableStorage:error:;
+- (id)rootStructWithType:;
+- (id)referencedStructForReference:inStruct:;
+- (id)referencedListForReference:inStruct:;
+- (id)referencedStructAtIndex:inList:;
+- (BOOL)referenceIsNull:inStruct:;
+- (long long)lengthForList:;
+- (void)copyData:forField:inStruct:;
+- (void)copyData:forList:;
+- (id)initWithSchema:helpers:options:;
+- (BOOL)createReaderIfNecessaryWithError:;
+- (void)createRowReaderForStruct:;
+- (BOOL)loadBatchWithRow:forStruct:;
+- (unsigned long long)offsetInCurrentBatchForRow:forStruct:;
+- (id)rowsForStructColumn:;
+- (id)rootColumnForStruct:;
+- (BOOL)_setInputWithError:;
+- (id)structColumnForStruct:;
+- (id)structReferenceColumnForReference:;
+- (id)listColumnForReference:;
+- (id)valueColumnForField:;
+- (id)helpers;
+- (unsigned long long)loadCount;
+- (void)setLoadCount:;
+@end

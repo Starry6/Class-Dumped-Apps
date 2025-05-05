@@ -1,0 +1,2 @@
+@interface HTSLiveVsLinkedRoomsRoot : GPBRootObject
+@end

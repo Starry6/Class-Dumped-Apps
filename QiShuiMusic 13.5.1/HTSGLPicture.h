@@ -1,0 +1,34 @@
+@interface HTSGLPicture : HTSFilterInterface
+@property (nonatomic) VEMVPRenderer pixelBufferRenderer;
+@property (nonatomic) BOOL needDealloc;
+- (void)setNeedDealloc:;
+- (void)processImageUpToFilter:frameTime:orientation:completionHandler:;
+- (void)addTarget:atTextureLocation:;
+- (id)initWithCGImage:context:;
+- (id)initWithCGImage:removePremultiplication:context:;
+- (id)initWithCGImage:smoothlyScaleOutput:context:;
+- (id)initWithCGImage:smoothlyScaleOutput:removePremultiplication:context:;
+- (id)initWithImage:context:;
+- (id)initWithImage:removePremultiplication:context:;
+- (id)initWithImage:smoothlyScaleOutput:context:;
+- (id)initWithImage:smoothlyScaleOutput:removePremultiplication:context:;
+- (id)initWithPixelBuffer:context:;
+- (id)initWithURL:context:;
+- (BOOL)isFrameBufferValid;
+- (BOOL)needDealloc;
+- (id)pixelBufferRenderer;
+- (void)processImage;
+- (BOOL)processImageSync;
+- (void)processImageUpToFilter:frameTime:completionHandler:;
+- (void)processImageUpToFilter:frameTime:orientation:completionHandler:colorSpaceName:;
+- (void)processImageUpToFilter:withCompletionHandler:;
+- (BOOL)processImageWithCompletionHandler:;
+- (BOOL)processImageWithCompletionHandler:frameTime:;
+- (BOOL)processImageWithCompletionHandler:frameTime:filterInChain:;
+- (void)removeAllTargets;
+- (void)setPixelBufferRenderer:;
+- (id)initWithData:context:;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (id)outputImageSize;
+@end

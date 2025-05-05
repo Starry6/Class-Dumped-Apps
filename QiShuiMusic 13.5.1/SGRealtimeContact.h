@@ -1,0 +1,33 @@
+@interface SGRealtimeContact : NSObject
+@property (nonatomic) NSInteger state;
+@property (nonatomic) NSInteger updatedFields;
+@property (nonatomic) SGContact contact;
+@property (nonatomic) NSString cnContactIdentifier;
+@property (nonatomic) SGExtractionInfo extractionInfo;
+@property (nonatomic) BOOL isHarvested;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)contact;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (int)state;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)cnContactIdentifier;
+- (int)updatedFields;
+- (id)extractionInfo;
+- (BOOL)isHarvested;
+- (id)initWithState:updatedFields:contact:identifier:;
+- (id)markedAsHarvested;
+- (BOOL)isEqualToRealtimeContact:;
+- (void)setExtractionInfo;
+- (void)setCnContactIdentifier:;
++ (BOOL)supportsSecureCoding;
++ (id)realtimeContactForNewContact:;
++ (id)realtimeContactForFields:updatedFields:addedToCuratedContact:;
+@end

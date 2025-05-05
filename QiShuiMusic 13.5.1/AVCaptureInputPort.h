@@ -1,0 +1,34 @@
+@interface AVCaptureInputPort : NSObject
+@property (nonatomic) AVCaptureInput input;
+@property (nonatomic) NSString mediaType;
+@property (nonatomic) r^{opaqueCMFormatDescription=} formatDescription;
+@property (nonatomic) BOOL enabled;
+@property (nonatomic) ^{OpaqueCMClock=} clock;
+@property (nonatomic) NSString sourceDeviceType;
+@property (nonatomic) q sourceDevicePosition;
+- (void)bumpChangeSeed;
+- (id)mediaType;
+- (id)input;
+- (id)formatDescription;
+- (void)_setClock:;
+- (void)_updateBackgroundBlurUnavailableReasonsWithDevice:deviceInput:;
+- (id)clock;
+- (void)dealloc;
+- (id)_initWithInput:mediaType:formatDescription:enabled:sourceDeviceType:sourceDevicePosition:;
+- (int)changeSeed;
+- (id)sourceDeviceType;
+- (id)sourceID;
+- (void)setOwner:;
+- (BOOL)sourcesFromConstituentDevice;
+- (id)valueForUndefinedKey:;
+- (long long)sourceDevicePosition;
+- (id)figCaptureSourceConfigurationForSessionPreset:;
+- (void)setEnabled:;
+- (void)_setFormatDescription:;
+- (id)description;
+- (void)_updateCenterStageUnavailableReasonsWithDevice:deviceInput:;
+- (void)_updateStudioLightingUnavailableReasonsWithDevice:deviceInput:;
+- (BOOL)isEnabled;
++ (BOOL)automaticallyNotifiesObserversOfClock;
++ (id)portWithInput:mediaType:formatDescription:enabled:sourceDeviceType:sourceDevicePosition:;
+@end

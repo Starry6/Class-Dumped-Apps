@@ -1,0 +1,31 @@
+@interface AnnieSpeechRecognitionController : NSObject
+@property (nonatomic) NSObject<OS_dispatch_queue> recordSerailQueue;
+@property (nonatomic) <AnnieAudioRecorderProvider> audioRecorder;
+@property (nonatomic) AnnieSpeechRecognizer speechRecognizer;
+@property (nonatomic) <IESHYHybridViewProtocol> hybridView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setNetworkState;
+- (void)stopRecognition;
+- (void)_processRecognitionResult:;
+- (void)audioRecorder:didReceivedAudioData:;
+- (void)audioRecorderDidStop:;
+- (void)audioRecorderWithError:;
+- (id)hybridView;
+- (void)onMessageReceived:withBlock:;
+- (id)recordSerailQueue;
+- (void)setHybridView:;
+- (void)setRecordSerailQueue:;
+- (void)setSpeechRecognizer:;
+- (void)startRecognitionWithAppKey:sosSilenceTimeout:eosSilenceTimeout:sentenceMaxSeconds:completionHandler:;
+- (void)stopRecord;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (id)audioRecorder;
+- (void)setAudioRecorder:;
+- (void)setAsrState:;
+- (id)speechRecognizer;
+@end

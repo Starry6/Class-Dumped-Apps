@@ -1,0 +1,37 @@
+@interface IESLiveScreenshotStreamConfig : NSObject
+@property (nonatomic) double videoSolution;
+@property (nonatomic) BOOL rotateOrientation;
+@property (nonatomic) Q videoFps;
+@property (nonatomic) Q defaultBitrate;
+@property (nonatomic) Q maxBitrate;
+@property (nonatomic) Q minBitrate;
+@property (nonatomic) NSString pushRtmpURL;
+@property (nonatomic) NSString authorizationString;
+@property (nonatomic) NSDictionary sdkParams;
+@property (nonatomic) NSArray pushUrls;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setPushRtmpURL:;
+- (id)authorizationString;
+- (unsigned long long)defaultBitrate;
+- (id)pushRtmpURL;
+- (id)pushUrls;
+- (id)sdkParams;
+- (void)setAuthorizationString:;
+- (void)setDefaultBitrate:;
+- (void)setPushUrls:;
+- (void)setRotateOrientation:;
+- (void)setSdkParams:;
+- (void)setVideoFps:;
+- (void)setVideoSolution:;
+- (unsigned long long)videoFps;
+- (double)videoSolution;
+- (BOOL)rotateOrientation;
+- (void).cxx_destruct;
+- (unsigned long long)maxBitrate;
+- (void)setMaxBitrate:;
+- (unsigned long long)minBitrate;
+- (void)setMinBitrate:;
+@end

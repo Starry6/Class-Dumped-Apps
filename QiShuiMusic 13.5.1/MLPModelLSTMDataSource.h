@@ -1,0 +1,38 @@
+@interface MLPModelLSTMDataSource : NSObject
+@property (nonatomic) Q weightID;
+@property (nonatomic) Q columns;
+@property (nonatomic) Q rows;
+@property (nonatomic) Q lstmInputSize;
+@property (nonatomic) Q lstmOutputSize;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (unsigned long long)columns;
+- (void)purge;
+- (id)copyWithZone:device:;
+- (BOOL)load;
+- (id)descriptor;
+- (void)setRows:;
+- (unsigned long long)rows;
+- (unsigned int)dataType;
+- (id)label;
+- (void)checkpoint;
+- (id)weights;
+- (id)biasTerms;
+- (void).cxx_destruct;
+- (void)setColumns:;
+- (id).cxx_construct;
+- (id)copyWithZone:;
+- (id)initWithColumns:rows:lstmInputSize:lstmOutputSize:weightID:neuronType:neuronA:neuronB:initialWeights_0:initialWeights_1:bias_0:bias_1:weightAttributes:deviceHandler:;
+- (void)initializeWeightsAndBiases:;
+- (unsigned long long)weight_size;
+- (unsigned long long)bias_size;
+- (void)loadWithInitialWeights_0:initialWeights_1:bias_0:bias_1:weightAttributes:;
+- (unsigned long long)weightID;
+- (void)setWeightID:;
+- (unsigned long long)lstmInputSize;
+- (void)setLstmInputSize:;
+- (unsigned long long)lstmOutputSize;
+- (void)setLstmOutputSize:;
+@end

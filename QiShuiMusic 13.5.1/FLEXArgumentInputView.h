@@ -1,0 +1,33 @@
+@interface FLEXArgumentInputView : UIView
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) NSString typeEncoding;
+@property (nonatomic) NSString title;
+@property (nonatomic) @ inputValue;
+@property (nonatomic) Q targetSize;
+@property (nonatomic) <FLEXArgumentInputViewDelegate> delegate;
+@property (nonatomic) BOOL inputViewIsFirstResponder;
+@property (nonatomic) double topInputFieldVerticalLayoutGuide;
+- (id)initWithArgumentTypeEncoding:;
+- (void)layoutSubviews;
+- (void)setBackgroundColor:;
+- (void)setTitle:;
+- (id)titleLabel;
+- (BOOL)showsTitle;
+- (double)topInputFieldVerticalLayoutGuide;
+- (BOOL)inputViewIsFirstResponder;
+- (id)sizeThatFits:;
+- (id)title;
+- (id)inputValue;
+- (void)setInputValue:;
+- (unsigned long long)targetSize;
+- (void)setTargetSize:;
+- (id)delegate;
+- (void)setDelegate:;
+- (void)setTitleLabel:;
+- (id)typeEncoding;
+- (void)setTypeEncoding:;
+- (void).cxx_destruct;
++ (BOOL)supportsObjCType:withCurrentValue:;
++ (id)titleFont;
++ (double)titleBottomPadding;
+@end

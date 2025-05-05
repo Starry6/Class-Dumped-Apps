@@ -1,0 +1,30 @@
+@interface BDASplashComplianceBannerView : BDASplashComplianceBaseView
+@property (nonatomic) BDASplashBannerView bannerView;
+@property (nonatomic) NSMutableArray triangleViewArray;
+@property (nonatomic) double bottomHeight;
+@property (nonatomic) double bottomOffset;
+@property (nonatomic) BOOL btnAnimationHasShown;
+- (id)getSpecificControlsForAnimation;
+- (void)loadBannerViewHalationAnimation;
+- (BOOL)btnAnimationHasShown;
+- (BOOL)clickedBreathViewWithPoint:;
+- (id)getInteractionView;
+- (id)initWithFrame:viewHolder:viewModel:;
+- (void)loadAnimation;
+- (void)loadBannerViewBreathAnimation;
+- (void)loadFirstPhaseBannerViewAnimation;
+- (void)loadSecondPhaseBannerViewAnimation;
+- (void)loadSecondPhaseBannerViewTriangleAnimation;
+- (void)setBtnAnimationHasShown:;
+- (void)setTriangleViewArray:;
+- (void)splashValidClickWithPoint:;
+- (id)triangleViewArray;
+- (void).cxx_destruct;
+- (void)setupView;
+- (id)bannerView;
+- (void)setBannerView:;
+- (double)bottomHeight;
+- (void)setBottomHeight:;
+- (double)bottomOffset;
+- (void)setBottomOffset:;
+@end

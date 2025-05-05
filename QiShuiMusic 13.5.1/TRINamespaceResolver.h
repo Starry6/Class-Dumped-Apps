@@ -1,0 +1,33 @@
+@interface TRINamespaceResolver : NSObject
+@property (nonatomic) NSSet namespacesInFactorsState;
+@property (nonatomic) TRIRolloutDeployment rolloutDeploymentForFactorsState;
+@property (nonatomic) TRIExperimentDeployment experimentDeploymentForFactorsState;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (void)dealloc;
+- (id)_resolveTargetedFactorPackSetForRolloutDeployment:;
+- (id)namespacesInFactorsState;
+- (void)dispose;
+- (BOOL)_hasExperimentFactorsState;
+- (id)rolloutDeploymentForFactorsState;
+- (id)_resolvePropertyListFactorProviderChainForNamespaceName:;
+- (id)_resolverPropertyListWithResolvedPath:;
+- (BOOL)_hasRolloutFactorsState;
+- (id)initWithPaths:factorsState:;
+- (void)_faultOnceWithMessage:;
+- (id)experimentDeploymentForFactorsState;
+- (id)_getFactorPackPathForNamespaceName:withCandidatePath:parentId:deploymentId:promotable:;
+- (id)initWithPaths:;
+- (void).cxx_destruct;
+- (id)_factorProviderForNamespaceName:fromNamespaceDescriptorSetWithDir:resolvedPath:;
+- (id)_resolveTargetedNamespaceDescriptorSetForExperimentDeployment:;
+- (id)_factorProviderForNamespaceName:parentId:deploymentId:fromFactorPackSetWithDir:resolvedPath:;
+- (BOOL)_prepareFactorsState:;
+- (id)resolveFactorProviderChainForNamespaceName:faultOnMissingInstalledFactors:installedFactorsAccessible:;
++ (id)preferredPathForFactorDataWithCandidatePaths:;
++ (id)_namespacePathComponentsFromEntitlements;
++ (id)promotionDirForNamespaceName:withPaths:;
+@end

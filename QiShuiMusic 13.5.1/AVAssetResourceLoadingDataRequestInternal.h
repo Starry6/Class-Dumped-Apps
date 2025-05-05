@@ -1,0 +1,2 @@
+@interface AVAssetResourceLoadingDataRequestInternal : NSObject
+@end

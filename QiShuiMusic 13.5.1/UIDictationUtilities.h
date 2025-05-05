@@ -1,0 +1,37 @@
+@interface UIDictationUtilities : NSObject
++ (id)bestInterpretationForDictationResult:;
++ (id)tokenFromAFToken:;
++ (id)interpretationFromAFInterpretation:;
++ (id)interpretationFromAFTokens:;
++ (id)phraseFromAFPhrase:;
++ (id)dictationPhrasesFromTokenMatrix:;
++ (id)dictationPhrasesFromPhraseArray:;
++ (id)bestInterpretationForPhrases:;
++ (id)attributedStringForDictationResult:andCorrectionIdentifier:;
++ (id)voiceCommandParameterFromAFVoiceCommandGrammarParamMatch:;
++ (id)metadataDictionaryForCorrectionIdentifier:;
++ (BOOL)needsLeadingSpaceForPhrases:secureInput:;
++ (BOOL)needsLeadingSpaceForText:secureInput:;
++ (void)selectionStartInfoWithBlock:;
++ (BOOL)needsLeadingSpaceForText:secureInput:previousCharacter:selectionStartIsStartOfParagraph:;
++ (BOOL)needsTrailingSpaceForPhrases:secureInput:;
++ (BOOL)needsTrailingSpaceForText:secureInput:;
++ (id)_properNameForString:;
++ (unsigned long long)characterInsertionCount:;
++ (unsigned long long)characterDeletionCount:;
++ (unsigned long long)characterSubstitutionCount:;
++ (unsigned long long)updateCharacterDeletionCount:delta:;
++ (unsigned long long)updateCharacterSubstitutionCount:delta:;
++ (unsigned long long)updateCharacterInsertionCount:delta:;
++ (long long)updateCharacterModificationCount:delta:;
++ (void)trackInsertion:text:range:;
++ (void)trackDeletion:text:range:;
++ (void)trackSubstitution:originalText:originalTextRange:replacementText:replacementTextRange:;
++ (void)logSpeechAlternativeReplacement:originalText:replacementText:index:;
++ (void)attributedString:withIdentifiersBlock:;
++ (unsigned long long)maxLoggableLengthOfInsertionWithoutDeletion:;
++ (unsigned long long)maxLoggableLengthOfInsertionWithDeletion:;
++ (unsigned long long)maxLoggableLengthOfInsertionBySubstitution:;
++ (id)trackingPunctuations;
++ (BOOL)shouldLogCorrectionInfoForCurrentBundleId;
+@end

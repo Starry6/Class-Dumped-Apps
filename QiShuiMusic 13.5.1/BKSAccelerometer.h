@@ -1,0 +1,36 @@
+@interface BKSAccelerometer : NSObject
+@property (nonatomic) BOOL accelerometerEventsEnabled;
+@property (nonatomic) double updateInterval;
+@property (nonatomic) float xThreshold;
+@property (nonatomic) float yThreshold;
+@property (nonatomic) float zThreshold;
+@property (nonatomic) BOOL passiveOrientationEvents;
+@property (nonatomic) BOOL orientationEventsEnabled;
+@property (nonatomic) <BKSAccelerometerDelegate> delegate;
+- (id)init;
+- (void)dealloc;
+- (void)setOrientationEventsEnabled:;
+- (void)setAccelerometerEventsEnabled:;
+- (void)_updateOrientationServer;
+- (double)updateInterval;
+- (void)setDelegate:;
+- (void)setUpdateInterval:;
+- (long long)currentDeviceOrientation;
+- (BOOL)accelerometerEventsEnabled;
+- (void)setXThreshold:;
+- (id)_orientationEventsThread;
+- (id)delegate;
+- (void)setPassiveOrientationEvents:;
+- (void).cxx_destruct;
+- (BOOL)orientationEventsEnabled;
+- (void)_orientationDidChange;
+- (BOOL)passiveOrientationEvents;
+- (float)xThreshold;
+- (void)setZThreshold:;
+- (void)_checkIn;
+- (void)_serverWasRestarted;
+- (void)setYThreshold:;
+- (float)yThreshold;
+- (void)_checkOut;
+- (float)zThreshold;
+@end

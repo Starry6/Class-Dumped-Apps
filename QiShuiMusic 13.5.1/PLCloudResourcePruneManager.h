@@ -1,0 +1,23 @@
+@interface PLCloudResourcePruneManager : NSObject
+- (id)init;
+- (void)dealloc;
+- (id)_identifierForResource:;
+- (void)stop;
+- (void)updateCacheDeletePurgeableAmount;
+- (void).cxx_destruct;
+- (id)initWithCPLManager:libraryServicesManager:;
+- (void)_runOnWorkQueueWithTransaction:block:;
+- (long long)_totalPurgeableAmountForUrgency:;
+- (long long)_purgeableAmountWithBudget:debugString:;
+- (id)_handleCacheDeletePurge:info:;
+- (id)_handleCacheDeletePurgeable:info:;
+- (void)_handleCacheDeleteRegistration;
+- (void)startAutomaticPruneWithBudget:urgency:completionHandler:;
+- (long long)_fetchResourcesForPruningWithBudget:urgency:batchHandler:;
+- (id)pruneStatusForDebug:;
+- (void)_updateLocalStateForPrunedResources:inPhotoLibrary:;
+- (long long)_localResourcesSize;
+- (long long)diskSpaceToPrune;
+- (id)_predicateForPruneWithUrgency:;
+- (long long)pruneResources:inPhotoLibrary:;
+@end

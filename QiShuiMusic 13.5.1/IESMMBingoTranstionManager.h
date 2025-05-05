@@ -1,0 +1,38 @@
+@interface IESMMBingoTranstionManager : IESMMObject
+@property (nonatomic) NSMutableArray generators;
+@property (nonatomic) BOOL isCancel;
+@property (nonatomic) NSLock effectLock;
+@property (nonatomic) NSInteger mode;
+@property (nonatomic) NSInteger musicEmotion;
+@property (nonatomic) NSInteger musicStyle;
+@property (nonatomic) double randomness;
+@property (nonatomic) double videoGenerateAmountHead;
+@property (nonatomic) double videoGenerateAmountTail;
+@property (nonatomic) double videoGenerateInterval;
+- (BOOL)setProcessMode:;
+- (void)cancelResolve;
+- (id)effectLock;
+- (void)getResolve:progress:;
+- (id)initWithParameters:videoGenerateAmountHead:videoGenerateAmountTail:videoGenerateInterval:;
+- (BOOL)insertPic:picDuration:pos:;
+- (BOOL)insertVideo:pos:;
+- (int)musicEmotion;
+- (int)musicStyle;
+- (int)p_createHandle;
+- (BOOL)p_processImage:pos:;
+- (BOOL)p_processVideo:pos:;
+- (double)randomness;
+- (void)setEffectLock:;
+- (void)setGenerators:;
+- (double)videoGenerateAmountHead;
+- (double)videoGenerateAmountTail;
+- (double)videoGenerateInterval;
+- (id)init;
+- (void)dealloc;
+- (id)initWithParameters:;
+- (void).cxx_destruct;
+- (int)mode;
+- (BOOL)isCancel;
+- (void)setIsCancel:;
+- (id)generators;
+@end

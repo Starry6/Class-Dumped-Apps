@@ -1,0 +1,38 @@
+@interface IESLiveSaaSAuthTracker : NSObject
+@property (nonatomic) NSDictionary userInfo;
+@property (nonatomic) HTSEventContext trackContext;
+@property (nonatomic) BOOL useIntegrateAuth;
+@property (nonatomic) BOOL isOneClickLogin;
+- (void)awemeAuthSwitch;
+- (id)stringWithPage:;
+- (void)attachUserInfo:;
+- (BOOL)isOneClickLogin;
+- (void)acceptAgreementPopupClickWithButtonType:;
+- (void)acceptAgreementPopupShow;
+- (void)attachTrackContext:;
+- (void)authAlertViewClickCheckAgreement:;
+- (void)authPopupClickWithButtonType:;
+- (void)authPopupShow;
+- (void)authResult:withError:isOneClickLogin:;
+- (void)couponAuthPopupTrackEvent:extraParams:;
+- (void)detachTrackContext;
+- (id)extraParams;
+- (void)integratedPopupClickWithButtonType:isOneKeyLogin:;
+- (void)integratedPopupShow:;
+- (void)oneClickPopupClickWithButtonType:;
+- (void)oneClickPopupShow;
+- (void)setIsOneClickLogin:;
+- (void)setTrackContext:;
+- (void)setUseIntegrateAuth:;
+- (id)stringWithButtonType:;
+- (id)stringWithButtonTypeNew:isAgreementView:;
+- (id)trackContext;
+- (BOOL)useIntegrateAuth;
+- (id)userInfo;
+- (void)setUserInfo:;
+- (void).cxx_destruct;
++ (long long)p_convertButtonTypeString2Enum:;
++ (id)awemeAuthorizationFailInfoForErrorCode:;
++ (void)trackWithSource:action:buttonType:;
++ (id)shared;
+@end

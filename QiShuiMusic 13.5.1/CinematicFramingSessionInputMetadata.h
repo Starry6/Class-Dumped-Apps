@@ -1,0 +1,34 @@
+@interface CinematicFramingSessionInputMetadata : NSObject
+@property (nonatomic) NSArray bodyDetections;
+@property (nonatomic) NSArray faceDetections;
+@property (nonatomic) {?=qiIq} timestamp;
+@property (nonatomic) float aspectRatio;
+@property (nonatomic) BOOL hasGravity;
+@property (nonatomic) float gravityX;
+@property (nonatomic) float gravityY;
+@property (nonatomic) float gravityZ;
+@property (nonatomic) float additionalCameraRotation;
+@property (nonatomic) NSDictionary calibrationDataDictionary;
+@property (nonatomic) NSInteger sensorID;
+- (float)aspectRatio;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)timestamp;
+- (int)sensorID;
+- (BOOL)hasGravity;
+- (id)bodyDetections;
+- (id)initWithDetectedObjectsInfo:calibrationData:timestamp:aspectRatio:sensorID:;
+- (void)setGravityX:y:z:;
+- (id)faceDetections;
+- (id)initWithDetectedObjectsInfo:calibrationData:timestamp:aspectRatio:;
+- (void)setAdditionalCameraRotation:;
+- (void)_parseDetectedObjectsInfo:;
+- (id)_createCalibrationDataDictionary:;
+- (id)calibrationDataDictionary;
+- (float)gravityX;
+- (float)gravityY;
+- (float)gravityZ;
+- (float)additionalCameraRotation;
++ (BOOL)supportsSecureCoding;
+@end

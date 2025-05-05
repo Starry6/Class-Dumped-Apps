@@ -1,0 +1,36 @@
+@interface IESLiveWalletMyCoinViewController : UIViewController
+@property (nonatomic) NSDictionary trackInfo;
+@property (nonatomic) IESLiveWalletNavigationBar navigationBar;
+@property (nonatomic) UIView emptyView;
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) IGListAdapter listAdapter;
+@property (nonatomic) IESLiveWalletMyCoinDataSource dataSource;
+@property (nonatomic) IESLiveWalletMyCoinViewModel viewModel;
+- (void)trackViewAppear;
+- (void)setListAdapter:;
+- (id)initWithTrackInfo:;
+- (id)listAdapter;
+- (void)p_setupUI;
+- (void)p_tapDefaultEmptyView;
+- (void)p_updateWalletData;
+- (void)p_updateWithCoinModel:incomeModel:;
+- (void)trackViewControllerAppear;
+- (void)trackViewControllerDisapper;
+- (void)setNavigationBar:;
+- (void)setDataSource:;
+- (id)viewModel;
+- (id)navigationBar;
+- (void)setCollectionView:;
+- (id)dataSource;
+- (void).cxx_destruct;
+- (void)viewDidAppear:;
+- (void)viewWillAppear:;
+- (unsigned long long)supportedInterfaceOrientations;
+- (id)collectionView;
+- (void)setViewModel:;
+- (void)viewDidLoad;
+- (id)emptyView;
+- (void)setEmptyView:;
+- (id)trackInfo;
+- (void)setTrackInfo:;
+@end

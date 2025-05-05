@@ -1,0 +1,36 @@
+@interface MTTreatmentAction : NSObject
+@property (nonatomic) NSString field;
+@property (nonatomic) NSString sourceField;
+@property (nonatomic) @ overrideFieldValue;
+@property (nonatomic) BOOL denylisted;
+@property (nonatomic) NSArray denylistedFields;
+@property (nonatomic) NSArray allowlistedFields;
+@property (nonatomic) NSDictionary fieldsMap;
+@property (nonatomic) NSArray dstKeyPath;
+@property (nonatomic) NSArray srcKeyPath;
+- (id)field;
+- (id)fieldsMap;
+- (void)setField:;
+- (void).cxx_destruct;
+- (void)performActionWithContext:;
+- (id)performAction:context:;
+- (BOOL)denylisted;
+- (void)setSourceField:;
+- (id)sourceField;
+- (id)initWithField:configDictionary:;
+- (void)computeKeyPaths;
+- (id)performAction:atKeyIndex:context:;
+- (id)overrideFieldValue;
+- (void)setOverrideFieldValue:;
+- (void)setDenylisted:;
+- (id)denylistedFields;
+- (void)setDenylistedFields:;
+- (id)allowlistedFields;
+- (void)setAllowlistedFields:;
+- (void)setFieldsMap:;
+- (id)dstKeyPath;
+- (void)setDstKeyPath:;
+- (id)srcKeyPath;
+- (void)setSrcKeyPath:;
++ (id)treatmentActionWithField:configData:;
+@end

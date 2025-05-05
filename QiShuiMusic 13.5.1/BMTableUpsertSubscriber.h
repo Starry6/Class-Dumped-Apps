@@ -1,0 +1,33 @@
+@interface BMTableUpsertSubscriber : NSObject
+@property (nonatomic) {os_unfair_lock_s=I} lock;
+@property (nonatomic) BMTableStore store;
+@property (nonatomic) BOOL tableSetupComplete;
+@property (nonatomic) BPSSubscription subscription;
+@property (nonatomic) NSError tableSetupError;
+@property (nonatomic) <BMFlexibleSimpleKeyValueStorage> keyValueStore;
+@property (nonatomic) NSString tableName;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)subscription;
+- (void)cancel;
+- (id)newBookmark;
+- (void)setSubscription:;
+- (id)tableName;
+- (void)receiveSubscription:;
+- (id)keyValueStore;
+- (long long)receiveInput:;
+- (id)identifier;
+- (void)receiveCompletion:;
+- (id)lock;
+- (void).cxx_destruct;
+- (id)store;
+- (id)initWithTableName:identifier:keyValueStore:;
+- (id)initWithTableName:identifier:;
+- (BOOL)tableSetupComplete;
+- (void)setTableSetupComplete:;
+- (id)tableSetupError;
+- (void)setTableSetupError:;
+@end

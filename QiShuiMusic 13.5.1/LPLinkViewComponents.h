@@ -1,0 +1,34 @@
+@interface LPLinkViewComponents : NSObject
+@property (nonatomic) LPCaptionBarView captionBar;
+@property (nonatomic) LPComponentView media;
+@property (nonatomic) UIView mediaBackground;
+@property (nonatomic) LPCaptionBarView mediaTopCaptionBar;
+@property (nonatomic) LPCaptionBarView mediaBottomCaptionBar;
+@property (nonatomic) LPQuoteView quote;
+@property (nonatomic) LPImageView backgroundImage;
+@property (nonatomic) LPContactsBadgeView contactsBadge;
+@property (nonatomic) LPCollaborationHandleView collaborationHandle;
+@property (nonatomic) LPDomainNameIndicator domainNameIndicator;
+- (void)setBackgroundImage:;
+- (id)backgroundImage;
+- (void).cxx_destruct;
+- (id)media;
+- (id)captionBar;
+- (void)setCaptionBar:;
+- (id)quote;
+- (id)mediaBottomCaptionBar;
+- (id)mediaTopCaptionBar;
+- (void)setMediaTopCaptionBar:;
+- (void)setMediaBottomCaptionBar:;
+- (void)applyToAllViews:;
+- (void)setMedia:;
+- (id)mediaBackground;
+- (void)setMediaBackground:;
+- (void)setQuote:;
+- (id)contactsBadge;
+- (void)setContactsBadge:;
+- (id)collaborationHandle;
+- (void)setCollaborationHandle:;
+- (id)domainNameIndicator;
+- (void)setDomainNameIndicator:;
+@end

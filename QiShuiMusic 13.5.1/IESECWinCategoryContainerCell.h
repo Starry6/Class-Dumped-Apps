@@ -1,0 +1,33 @@
+@interface IESECWinCategoryContainerCell : UICollectionViewCell
+@property (nonatomic) UICollectionView containerView;
+@property (nonatomic) UICollectionViewFlowLayout layout;
+@property (nonatomic) IESECBubbleView guideBubbleView;
+@property (nonatomic) IESECWinCategoryCell attachCell;
+@property (nonatomic) <IESECWinCategoryContainerCellDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)guideBubbleView;
+- (id)attachCell;
+- (void)bindObject:;
+- (void)removeGuideBubbleView;
+- (void)setAttachCell:;
+- (void)setGuideBubbleView:;
+- (void)showGuideBubbleView:;
+- (id)collectionView:layout:sizeForItemAtIndexPath:;
+- (void)collectionView:willDisplayCell:forItemAtIndexPath:;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)containerView;
+- (void)setContainerView:;
+- (void)setDelegate:;
+- (void)setLayout:;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (id)initWithFrame:;
+- (id)layout;
+- (id)delegate;
+- (void).cxx_destruct;
+- (long long)numberOfSectionsInCollectionView:;
+- (void)setUpConstraints;
+@end

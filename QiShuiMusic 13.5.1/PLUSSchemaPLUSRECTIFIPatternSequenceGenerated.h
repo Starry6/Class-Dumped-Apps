@@ -1,0 +1,37 @@
+@interface PLUSSchemaPLUSRECTIFIPatternSequenceGenerated : SISchemaInstrumentationMessage
+@property (nonatomic) SISchemaUUID patternId;
+@property (nonatomic) BOOL hasPatternId;
+@property (nonatomic) NSArray sequences;
+@property (nonatomic) NSArray constraints;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (unsigned long long)sequenceCount;
+- (id)jsonData;
+- (id)constraints;
+- (unsigned long long)hash;
+- (void)setConstraints:;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)addConstraints:;
+- (id)sequences;
+- (id)patternId;
+- (void)setPatternId:;
+- (BOOL)hasPatternId;
+- (void)deletePatternId;
+- (void)clearSequence;
+- (void)deleteSequence;
+- (void)addSequence:;
+- (id)sequenceAtIndex:;
+- (void)clearConstraints;
+- (void)deleteConstraints;
+- (unsigned long long)constraintsCount;
+- (id)constraintsAtIndex:;
+- (void)setSequences:;
+- (void)setHasPatternId:;
+@end

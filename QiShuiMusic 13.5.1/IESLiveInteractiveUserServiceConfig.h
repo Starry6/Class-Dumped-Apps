@@ -1,0 +1,31 @@
+@interface IESLiveInteractiveUserServiceConfig : NSObject
+@property (nonatomic) <IESLiveRoomServiceAdapter> roomModel;
+@property (nonatomic) Q scene;
+@property (nonatomic) NSNumber channelID;
+@property (nonatomic) BOOL isAnchor;
+@property (nonatomic) NSNumber roomID;
+@property (nonatomic) # modelClass;
+@property (nonatomic) IESLiveInteractiveLinkService linkService;
+@property (nonatomic) Q fullLinkModule;
+@property (nonatomic) BOOL enableDataVersionCheck;
+- (void)setLinkService:;
+- (BOOL)enableDataVersionCheck;
+- (unsigned long long)fullLinkModule;
+- (id)linkService;
+- (id)roomModel;
+- (void)setEnableDataVersionCheck:;
+- (void)setFullLinkModule:;
+- (void)setIsAnchor:;
+- (void)setRoomModel:;
+- (void)setChannelID:;
+- (id)init;
+- (void)setScene:;
+- (unsigned long long)scene;
+- (BOOL)isAnchor;
+- (Class)modelClass;
+- (void)setModelClass:;
+- (void).cxx_destruct;
+- (id)channelID;
+- (id)roomID;
+- (void)setRoomID:;
+@end

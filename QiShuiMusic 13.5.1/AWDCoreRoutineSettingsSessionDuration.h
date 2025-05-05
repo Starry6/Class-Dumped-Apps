@@ -1,0 +1,35 @@
+@interface AWDCoreRoutineSettingsSessionDuration : PBCodable
+@property (nonatomic) BOOL hasTimestamp;
+@property (nonatomic) Q timestamp;
+@property (nonatomic) BOOL hasSessionId;
+@property (nonatomic) NSString sessionId;
+@property (nonatomic) BOOL hasDuration;
+@property (nonatomic) NSInteger duration;
+@property (nonatomic) BOOL hasEndedByScreenLock;
+@property (nonatomic) NSInteger endedByScreenLock;
+- (void)setSessionId:;
+- (id)sessionId;
+- (BOOL)hasSessionId;
+- (void)dealloc;
+- (BOOL)hasDuration;
+- (void)setHasDuration:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)setDuration:;
+- (void)setHasTimestamp:;
+- (void)mergeFrom:;
+- (BOOL)hasTimestamp;
+- (void)setTimestamp:;
+- (BOOL)readFrom:;
+- (unsigned long long)timestamp;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (int)duration;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setEndedByScreenLock:;
+- (void)setHasEndedByScreenLock:;
+- (BOOL)hasEndedByScreenLock;
+- (int)endedByScreenLock;
+@end

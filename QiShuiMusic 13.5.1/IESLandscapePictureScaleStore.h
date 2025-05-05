@@ -1,0 +1,38 @@
+@interface IESLandscapePictureScaleStore : NSObject
+@property (nonatomic) double scale;
+@property (nonatomic) {CGPoint=dd} positionTranslation;
+@property (nonatomic) double recordedScale;
+@property (nonatomic) {CGPoint=dd} recordedPositionTranslation;
+@property (nonatomic) {CGSize=dd} transformBaseRange;
+@property (nonatomic) {CGSize=dd} pictureContentSize;
+@property (nonatomic) BOOL isPinching;
+@property (nonatomic) BOOL isMoving;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)appendMovement:;
+- (void)setRecordedPositionTranslation:;
+- (void)didSetAttachingDIContext;
+- (id)initWithTransformBaseRange:;
+- (void)onFIFAPannelSatusChange:;
+- (id)pictureContentSize;
+- (id)positionTranslation;
+- (id)recordedPositionTranslation;
+- (void)resetRecordedIfNeed:;
+- (void)setMovedPosition:;
+- (void)setPictureContentSize:;
+- (void)setPositionTranslation:;
+- (void)setTransformBaseRange:;
+- (id)transformBaseRange;
+- (void)updateScale:;
+- (BOOL)isMoving;
+- (void)setScale:;
+- (BOOL)isPinching;
+- (void)reset;
+- (void)setIsMoving:;
+- (void)setIsPinching:;
+- (double)scale;
+- (double)recordedScale;
+- (void)setRecordedScale:;
+@end

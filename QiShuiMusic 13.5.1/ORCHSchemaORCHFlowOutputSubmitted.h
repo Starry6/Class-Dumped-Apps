@@ -1,0 +1,33 @@
+@interface ORCHSchemaORCHFlowOutputSubmitted : SISchemaInstrumentationMessage
+@property (nonatomic) NSInteger flowOutputSubmissionId;
+@property (nonatomic) BOOL hasFlowOutputSubmissionId;
+@property (nonatomic) BOOL flowCommandReceived;
+@property (nonatomic) BOOL hasFlowCommandReceived;
+@property (nonatomic) BOOL flowCommandResponseError;
+@property (nonatomic) BOOL hasFlowCommandResponseError;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)setFlowOutputSubmissionId:;
+- (BOOL)hasFlowOutputSubmissionId;
+- (void)setHasFlowOutputSubmissionId:;
+- (void)deleteFlowOutputSubmissionId;
+- (void)setFlowCommandReceived:;
+- (BOOL)hasFlowCommandReceived;
+- (void)setHasFlowCommandReceived:;
+- (void)deleteFlowCommandReceived;
+- (void)setFlowCommandResponseError:;
+- (BOOL)hasFlowCommandResponseError;
+- (void)setHasFlowCommandResponseError:;
+- (void)deleteFlowCommandResponseError;
+- (int)flowOutputSubmissionId;
+- (BOOL)flowCommandReceived;
+- (BOOL)flowCommandResponseError;
+@end

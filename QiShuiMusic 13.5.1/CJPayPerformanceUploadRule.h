@@ -1,0 +1,35 @@
+@interface CJPayPerformanceUploadRule : JSONModel
+@property (nonatomic) NSMutableArray events;
+@property (nonatomic) CJPayPerformanceStage headStage;
+@property (nonatomic) CJPayPerformanceStage endStage;
+@property (nonatomic) NSString searchMethod;
+@property (nonatomic) CJPayPerformanceUploadNode headNode;
+@property (nonatomic) CJPayPerformanceUploadNode endNode;
+@property (nonatomic) NSString mapToEventName;
+- (id)headStage;
+- (BOOL)isEndToHead;
+- (BOOL)isHeadToEnd;
+- (id)mapToEventName;
+- (void)p_caculateEventAndReset;
+- (void)p_processEndToHeadStage:;
+- (void)p_processHeadToEndStage:;
+- (void)processStage:;
+- (id)searchMethod;
+- (void)setEndStage:;
+- (void)setHeadStage:;
+- (void)setMapToEventName:;
+- (void)setSearchMethod:;
+- (void)uploadEvents:;
+- (BOOL)isValid;
+- (void).cxx_destruct;
+- (id)events;
+- (id)description;
+- (id)copyWithZone:;
+- (id)endNode;
+- (void)setEndNode:;
+- (id)headNode;
+- (void)setHeadNode:;
+- (id)endStage;
++ (id)keyMapper;
++ (BOOL)propertyIsOptional:;
+@end

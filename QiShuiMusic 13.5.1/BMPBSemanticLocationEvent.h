@@ -1,0 +1,33 @@
+@interface BMPBSemanticLocationEvent : PBCodable
+@property (nonatomic) BOOL hasStarting;
+@property (nonatomic) BOOL starting;
+@property (nonatomic) BOOL hasUserSpecificPlaceType;
+@property (nonatomic) NSInteger userSpecificPlaceType;
+@property (nonatomic) BOOL hasPlaceType;
+@property (nonatomic) NSInteger placeType;
+- (int)placeType;
+- (void)setStarting:;
+- (BOOL)hasStarting;
+- (id)userSpecificPlaceTypeAsString:;
+- (void)writeTo:;
+- (id)placeTypeAsString:;
+- (int)userSpecificPlaceType;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void)setPlaceType:;
+- (BOOL)starting;
+- (BOOL)hasUserSpecificPlaceType;
+- (int)StringAsUserSpecificPlaceType:;
+- (void)setHasUserSpecificPlaceType:;
+- (BOOL)readFrom:;
+- (id)description;
+- (void)setHasStarting:;
+- (id)dictionaryRepresentation;
+- (void)setHasPlaceType:;
+- (BOOL)hasPlaceType;
+- (int)StringAsPlaceType:;
+- (void)setUserSpecificPlaceType:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+@end

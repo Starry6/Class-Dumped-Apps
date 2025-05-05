@@ -1,0 +1,36 @@
+@interface AWEIMNoticeMessage : AWEIMMessage
+@property (nonatomic) NSString tips;
+@property (nonatomic) NSArray templateArray;
+@property (nonatomic) NSString displayText;
+@property (nonatomic) NSArray linkArray;
+@property (nonatomic) AWEIMLinkTextUtility textUtility;
+@property (nonatomic) BOOL hasSafeLink;
+@property (nonatomic) NSString orderId;
+@property (nonatomic) NSString scene;
+@property (nonatomic) NSString secSenderUid;
+@property (nonatomic) @? clickBlock;
+- (id)orderId;
+- (void)setHasSafeLink:;
+- (void)setTextUtility:;
+- (id)calculateAttributedContent;
+- (id)clickBlock;
+- (id)getContentDict;
+- (BOOL)hasSafeLink;
+- (id)initWithContentDict:;
+- (id)initWithTips:templateArray:;
+- (id)linkArray;
+- (void)prepareForConversationHint;
+- (id)secSenderUid;
+- (void)setClickBlock:;
+- (void)setOrderId:;
+- (void)setSecSenderUid:;
+- (void)setTemplateArray:;
+- (id)templateArray;
+- (id)textUtility;
+- (id)tips;
+- (void)setScene:;
+- (void)setTips:;
+- (id)scene;
+- (id)displayText;
+- (void).cxx_destruct;
+@end

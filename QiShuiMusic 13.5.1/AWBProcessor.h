@@ -1,0 +1,30 @@
+@interface AWBProcessor : NSObject
+@property (nonatomic) <AWBIBPParams> awbParams;
+@property (nonatomic) <MTLCommandQueue> metalCommandQueue;
+@property (nonatomic) BOOL supportsExternalMemoryResource;
+@property (nonatomic) CMIExternalMemoryResource externalMemoryResource;
+@property (nonatomic) NSDictionary tuningParameters;
+@property (nonatomic) NSDictionary cameraInfoByPortType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (int)resetState;
+- (void)setCameraInfoByPortType:;
+- (int)prewarm;
+- (void)setMetalCommandQueue:;
+- (int)setup;
+- (int)process;
+- (void).cxx_destruct;
+- (id)tuningParameters;
+- (int)purgeResources;
+- (void)setTuningParameters:;
+- (int)finishProcessing;
+- (int)prepareToProcess:;
+- (id)metalCommandQueue;
+- (id)cameraInfoByPortType;
+- (void)setExternalMemoryResource:;
+- (id)externalMemoryResource;
+- (id)awbParams;
++ (int)calculateSTRBKeyFromWideCamera:moduleConfig:;
+@end

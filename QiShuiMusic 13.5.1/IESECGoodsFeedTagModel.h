@@ -1,0 +1,30 @@
+@interface IESECGoodsFeedTagModel : NSObject
+@property (nonatomic) NSString ID;
+@property (nonatomic) NSString imageURL;
+@property (nonatomic) NSString text;
+@property (nonatomic) NSString urlScheme;
+@property (nonatomic) NSString categoryID;
+@property (nonatomic) NSString type;
+@property (nonatomic) NSString propertyID;
+@property (nonatomic) NSString propertyName;
+@property (nonatomic) NSString tagLabelInfo;
+- (void)setPropertyID:;
+- (void)setTagLabelInfo:;
+- (id)tagLabelInfo;
+- (void)setID:;
+- (id)ID;
+- (id)propertyName;
+- (void)setText:;
+- (void)setType:;
+- (id)categoryID;
+- (void)setCategoryID:;
+- (id)type;
+- (void).cxx_destruct;
+- (void)setImageURL:;
+- (id)text;
+- (id)imageURL;
+- (id)urlScheme;
+- (void)setPropertyName:;
+- (void)setUrlScheme:;
+- (id)propertyID;
+@end

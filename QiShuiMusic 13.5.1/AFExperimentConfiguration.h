@@ -1,0 +1,34 @@
+@interface AFExperimentConfiguration : NSObject
+@property (nonatomic) q type;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) NSString version;
+@property (nonatomic) AFExperimentGroup controlGroup;
+@property (nonatomic) NSArray experimentGroups;
+@property (nonatomic) NSString salt;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (id)version;
+- (id)buildDictionaryRepresentation;
+- (id)identifier;
+- (id)mutatedCopyWithMutator:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)salt;
+- (id)initWithDictionaryRepresentation:;
+- (id)_descriptionWithIndent:;
+- (id)initWithBuilder:;
+- (void)encodeWithCoder:;
+- (long long)type;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)initWithType:identifier:version:controlGroup:experimentGroups:salt:;
+- (id)controlGroup;
+- (id)experimentGroups;
++ (id)newWithBuilder:;
++ (BOOL)supportsSecureCoding;
+@end

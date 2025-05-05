@@ -1,0 +1,37 @@
+@interface MTLRenderPipelineReflectionInternal : MTLRenderPipelineReflection
+- (void)dealloc;
+- (id)formattedDescription:;
+- (id)usageFlags;
+- (id)description;
+- (id)performanceStatistics;
+- (void)setPerformanceStatistics:;
+- (unsigned int)traceBufferIndex;
+- (id)constantSamplerUniqueIdentifiers;
+- (id)constantSamplerDescriptors;
+- (void)setConstantSamplerUniqueIdentifiers:;
+- (void)setConstantSamplerDescriptorsFromBitmasks:count:;
+- (id)vertexBindings;
+- (id)fragmentBindings;
+- (id)tileBindings;
+- (id)objectBindings;
+- (id)meshBindings;
+- (id)vertexArguments;
+- (id)fragmentArguments;
+- (id)tileArguments;
+- (id)initWithVertexData:fragmentData:serializedVertexDescriptor:device:options:flags:;
+- (id)initWithTileData:functionType:device:options:flags:;
+- (id)initWithObjectData:meshData:fragmentData:device:options:flags:;
+- (id)vertexPluginReturnData;
+- (id)fragmentPluginReturnData;
+- (id)vertexBuiltInArguments;
+- (unsigned long long)postVertexDumpStride;
+- (id)postVertexDumpOutputs;
+- (id)inferredInputs;
+- (id)imageBlockDataReturn;
+- (id)objectArguments;
+- (id)meshArguments;
+- (id)objectBuiltInArguments;
+- (id)meshBuiltInArguments;
+- (id)objectPluginReturnData;
+- (id)meshPluginReturnData;
+@end

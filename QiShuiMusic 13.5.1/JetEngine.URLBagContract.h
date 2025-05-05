@@ -1,0 +1,32 @@
+@interface JetEngine.URLBagContract : NSObject
+@property (nonatomic) @ guidRegexes;
+@property (nonatomic) @ guidSchemes;
+@property (nonatomic) @ storefrontSuffix;
+@property (nonatomic) @ trustedDomains;
+@property (nonatomic) <AMSMetricsBagContract> metricsContract;
+@property (nonatomic) <AMSMescalBagContract> mescalContract;
+@property (nonatomic) @ TLSSamplingPercentage;
+@property (nonatomic) @ TLSSamplingSessionDuration;
+@property (nonatomic) @ TFOSamplingPercentage;
+@property (nonatomic) @ TFOSamplingSessionDuration;
+@property (nonatomic) @ apsEnabledPatterns;
+@property (nonatomic) @ apsSamplingPercent;
+@property (nonatomic) @ metricsURL;
+@property (nonatomic) @ metricsDictionary;
+- (id)init;
+- (id)metricsDictionary;
+- (void).cxx_destruct;
+- (id)trustedDomains;
+- (id)apsEnabledPatterns;
+- (id)apsSamplingPercent;
+- (id)guidRegexes;
+- (id)guidSchemes;
+- (id)mescalContract;
+- (id)storefrontSuffix;
+- (id)TLSSamplingPercentage;
+- (id)TLSSamplingSessionDuration;
+- (id)TFOSamplingPercentage;
+- (id)TFOSamplingSessionDuration;
+- (id)metricsContract;
+- (id)metricsURL;
+@end

@@ -1,0 +1,34 @@
+@interface MSASAlbumChange : NSObject
+@property (nonatomic) NSString ownerEmail;
+@property (nonatomic) NSString ownerPersonID;
+@property (nonatomic) NSString ownerFullName;
+@property (nonatomic) NSString ownerFirstName;
+@property (nonatomic) NSString ownerLastName;
+@property (nonatomic) NSString GUID;
+@property (nonatomic) NSString URLString;
+@property (nonatomic) NSString name;
+@property (nonatomic) BOOL wasDeleted;
+@property (nonatomic) MSASInvitation invitation;
+- (id)GUID;
+- (void)setName:;
+- (id)URLString;
+- (id)invitation;
+- (BOOL)wasDeleted;
+- (void)setInvitation:;
+- (void).cxx_destruct;
+- (void)setWasDeleted:;
+- (id)description;
+- (id)name;
+- (void)setURLString:;
+- (void)setGUID:;
+- (id)ownerEmail;
+- (id)ownerFirstName;
+- (id)ownerFullName;
+- (id)ownerLastName;
+- (id)ownerPersonID;
+- (void)setOwnerEmail:;
+- (void)setOwnerPersonID:;
+- (void)setOwnerFullName:;
+- (void)setOwnerFirstName:;
+- (void)setOwnerLastName:;
+@end

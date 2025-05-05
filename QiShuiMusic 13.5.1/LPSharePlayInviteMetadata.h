@@ -1,0 +1,34 @@
+@interface LPSharePlayInviteMetadata : LPSpecializationMetadata
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString applicationBundleIdentifier;
+@property (nonatomic) NSString application;
+@property (nonatomic) LPImage icon;
+- (id)applicationBundleIdentifier;
+- (void)setApplication:;
+- (id)icon;
+- (void)setTitle:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (void)setApplicationBundleIdentifier:;
+- (id)title;
+- (void)setIcon:;
+- (void).cxx_destruct;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)application;
+- (id)presentationPropertiesForTransformer:;
+- (BOOL)canGeneratePresentationPropertiesForURL:;
+- (id)previewSummaryForTransformer:;
+- (id)previewImageForTransformer:;
+- (void)populateMetadataForBackwardCompatibility:;
+- (id)sourceApplicationMetadataForTransformer:;
+- (void)_enumerateAsynchronousFields:;
++ (BOOL)supportsSecureCoding;
++ (id)applicationNameToDisplayForBundleID:fallbackName:;
++ (id)keyPathsForValuesAffecting_dummyPropertyForObservation;
+@end

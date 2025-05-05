@@ -1,0 +1,31 @@
+@interface CPSessionConfiguration : NSObject
+@property (nonatomic) Q limitedUserInterfaces;
+@property (nonatomic) CARSessionStatus currentStatus;
+@property (nonatomic) Q contentStyle;
+@property (nonatomic) CPSTemplateEnvironment templateEnvironment;
+@property (nonatomic) <CPSessionConfigurationDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)sessionDidConnect:;
+- (void)dealloc;
+- (void)setDelegate:;
+- (id)currentStatus;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)initWithDelegate:;
+- (void)setCurrentStatus:;
+- (void)_limitedUIDidChange:;
+- (unsigned long long)contentStyle;
+- (void)setContentStyle:;
+- (void)_contentStyleUpdated:;
+- (id)initWithDelegate:templateEnvironment:;
+- (void)_updateLimitedUIStatus;
+- (unsigned long long)convertLimitableUserInterfaces:;
+- (void)_updateContentStyleWithScene:;
+- (unsigned long long)limitedUserInterfaces;
+- (void)setLimitedUserInterfaces:;
+- (id)templateEnvironment;
+- (void)setTemplateEnvironment:;
+@end

@@ -1,0 +1,37 @@
+@interface IESECLiveGoodsMemoView : IESECLiveCarouselAnimationView
+@property (nonatomic) NSMutableDictionary labelPools;
+@property (nonatomic) NSMutableArray builders;
+@property (nonatomic) IESECLiveGoodsCarouselInfoModel carouselInfoModel;
+@property (nonatomic) UIFont contentFont;
+@property (nonatomic) UIColor contentColor;
+@property (nonatomic) UIImage splitImage;
+@property (nonatomic) NSString splitImageName;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setContentFont:;
+- (id)animationView:itemViewAtIndex:;
+- (id)buildBuilderWithContents:;
+- (id)builders;
+- (id)carouselInfoModel;
+- (id)contentFont;
+- (id)getLabelAtIndex:;
+- (void)itemViewDidAppear:;
+- (id)labelPools;
+- (unsigned long long)numberOfItemsCountInAnimationView:;
+- (void)setBuilders:;
+- (void)setCarouselInfoModel:;
+- (void)setLabelPools:;
+- (void)setSplitImage:;
+- (void)setSplitImageName:;
+- (id)splitImage;
+- (id)splitImageName;
+- (void)updateGoodsMemo:;
+- (void)updateLotteryGoodsMemo:;
+- (void)setContentColor:;
+- (id)intrinsicContentSize;
+- (id)contentColor;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+@end

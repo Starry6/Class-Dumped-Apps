@@ -1,0 +1,31 @@
+@interface IESLiveInteractionLayoutUIAdapterPreview : NSObject
+@property (nonatomic) {CGSize=dd} mediaSize;
+@property (nonatomic) q contentMode;
+@property (nonatomic) <IESLivePlayerProtocol> previewStreamPlayer;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} preferredContainerFrame;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} preferredGuestListContainerFrame;
+@property (nonatomic) double topOffset;
+@property (nonatomic) double uiContainerBottomOffset;
+@property (nonatomic) <IESLiveInteractionConfigLayoutCanvasAdjustable> canvasAdapter;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)canvasAdapter;
+- (id)preferredContainerFrame;
+- (id)preferredGuestListContainerFrame;
+- (id)previewStreamPlayer;
+- (void)setCanvasAdapter:;
+- (void)setPreferredContainerFrame:;
+- (void)setPreferredGuestListContainerFrame:;
+- (void)setPreviewStreamPlayer:;
+- (void)setUiContainerBottomOffset:;
+- (double)uiContainerBottomOffset;
+- (long long)contentMode;
+- (double)topOffset;
+- (void)setTopOffset:;
+- (void).cxx_destruct;
+- (void)setContentMode:;
+- (id)mediaSize;
+- (void)setMediaSize:;
+@end

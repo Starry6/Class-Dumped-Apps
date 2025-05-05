@@ -1,0 +1,32 @@
+@interface MPSNNLossGradientNode : MPSNNGradientFilterNode
+@property (nonatomic) I lossType;
+@property (nonatomic) NSInteger reductionType;
+@property (nonatomic) Q numberOfClasses;
+@property (nonatomic) BOOL reduceAcrossBatch;
+@property (nonatomic) float weight;
+@property (nonatomic) float labelSmoothing;
+@property (nonatomic) float epsilon;
+@property (nonatomic) float delta;
+@property (nonatomic) BOOL isLabelsGradientFilter;
+@property (nonatomic) <MPSNNLossCallback> propertyCallBack;
+- (float)delta;
+- (void)dealloc;
+- (float)weight;
+- (float)epsilon;
+- (unsigned long long)numberOfClasses;
+- (unsigned int)lossType;
+- (int)reductionType;
+- (float)labelSmoothing;
+- (id)gradientFilterWithSources:;
+- (id)newFilterNode;
+- (BOOL)reduceAcrossBatch;
+- (id)propertyCallBack;
+- (void)setPropertyCallBack:;
+- (id)initWithSourceGradient:sourceImage:labels:weights:gradientState:lossDescriptor:isLabelsGradientFilter:;
+- (id)initWithSourceGradient:sourceImage:labels:gradientState:lossDescriptor:isLabelsGradientFilter:;
+- (id)initWithSources:gradientState:lossDescriptor:isLabelsGradientFilter:;
+- (BOOL)isLabelsGradientFilter;
++ (id)nodeWithSourceGradient:sourceImage:labels:weights:gradientState:lossDescriptor:isLabelsGradientFilter:;
++ (id)nodeWithSourceGradient:sourceImage:labels:gradientState:lossDescriptor:isLabelsGradientFilter:;
++ (id)nodeWithSources:gradientState:lossDescriptor:isLabelsGradientFilter:;
+@end

@@ -1,0 +1,35 @@
+@interface LRSchemaLRWindow : SISchemaInstrumentationMessage
+@property (nonatomic) Q startTimeInNs;
+@property (nonatomic) BOOL hasStartTimeInNs;
+@property (nonatomic) Q endTimeInNs;
+@property (nonatomic) BOOL hasEndTimeInNs;
+@property (nonatomic) NSArray activeRedactionPolicies;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)setStartTimeInNs:;
+- (void)setActiveRedactionPolicies:;
+- (void)setEndTimeInNs:;
+- (BOOL)hasStartTimeInNs;
+- (void)setHasStartTimeInNs:;
+- (void)deleteStartTimeInNs;
+- (BOOL)hasEndTimeInNs;
+- (void)setHasEndTimeInNs:;
+- (void)deleteEndTimeInNs;
+- (unsigned long long)startTimeInNs;
+- (unsigned long long)endTimeInNs;
+- (void)clearActiveRedactionPolicies;
+- (void)deleteActiveRedactionPolicies;
+- (void)addActiveRedactionPolicies:;
+- (unsigned long long)activeRedactionPoliciesCount;
+- (int)activeRedactionPoliciesAtIndex:;
+- (id)activeRedactionPolicies;
+@end

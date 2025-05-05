@@ -1,0 +1,35 @@
+@interface NETunnelProviderManager : NEVPNManager
+@property (nonatomic) q routingMethod;
+@property (nonatomic) NSArray safariDomains;
+@property (nonatomic) NSArray mailDomains;
+@property (nonatomic) NSArray calendarDomains;
+@property (nonatomic) NSArray contactsDomains;
+@property (nonatomic) NSArray appRules;
+@property (nonatomic) NSArray excludedDomains;
+@property (nonatomic) NSArray associatedDomains;
+- (id)init;
+- (id)associatedDomains;
+- (id)descriptionWithIndent:options:;
+- (void)setCalendarDomains:;
+- (void)setAppRules:;
+- (id)appRules;
+- (void)setContactsDomains:;
+- (void)setExcludedDomains:;
+- (void).cxx_destruct;
+- (void)setMailDomains:;
+- (void)setAssociatedDomains:;
+- (BOOL)isProtocolTypeValid:;
+- (void)additionalSetup;
+- (void)loadFromPreferencesWithCompletionHandler:;
+- (long long)routingMethod;
+- (id)initWithSessionType:tunnelType:;
+- (id)copyAppRules;
+- (id)safariDomains;
+- (void)setSafariDomains:;
+- (id)mailDomains;
+- (id)calendarDomains;
+- (id)contactsDomains;
+- (id)excludedDomains;
++ (void)loadAllFromPreferencesWithCompletionHandler:;
++ (id)forPerAppVPN;
+@end

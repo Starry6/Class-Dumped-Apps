@@ -1,0 +1,30 @@
+@interface IESECRelationSubTagModel : MTLModel
+@property (nonatomic) q type;
+@property (nonatomic) IESECRelationTextConfigModel text;
+@property (nonatomic) IESECURLModel image;
+@property (nonatomic) IESECRelationDividerLineConfigModel dividerLine;
+@property (nonatomic) double leftMargin;
+@property (nonatomic) double rightMargin;
+@property (nonatomic) IESECRelationPadding padding;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setDividerLine:;
+- (id)dividerLine;
+- (void)setLeftMargin:;
+- (double)leftMargin;
+- (void)setText:;
+- (void)setType:;
+- (void)setImage:;
+- (void)setPadding:;
+- (long long)type;
+- (double)rightMargin;
+- (void).cxx_destruct;
+- (id)padding;
+- (id)text;
+- (id)image;
+- (id)copyWithZone:;
+- (void)setRightMargin:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

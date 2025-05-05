@@ -1,0 +1,30 @@
+@interface IESLivePinCommentVideoParams : NSObject
+@property (nonatomic) NSString mixUserId;
+@property (nonatomic) NSString nickName;
+@property (nonatomic) NSString videoTitle;
+@property (nonatomic) NSString videoCoverUrl;
+@property (nonatomic) q videoItemId;
+@property (nonatomic) q videoItemType;
+@property (nonatomic) q videoSenderRole;
+@property (nonatomic) q msgId;
+@property (nonatomic) NSString scene;
+- (void)setVideoItemId:;
+- (long long)videoSenderRole;
+- (id)mixUserId;
+- (void)setMixUserId:;
+- (void)setVideoCoverUrl:;
+- (void)setVideoItemType:;
+- (void)setVideoSenderRole:;
+- (void)setVideoTitle:;
+- (id)videoCoverUrl;
+- (long long)videoItemId;
+- (long long)videoItemType;
+- (id)videoTitle;
+- (void)setScene:;
+- (id)scene;
+- (id)nickName;
+- (void).cxx_destruct;
+- (void)setNickName:;
+- (long long)msgId;
+- (void)setMsgId:;
+@end

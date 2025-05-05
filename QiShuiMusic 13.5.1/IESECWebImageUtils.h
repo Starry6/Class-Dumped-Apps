@@ -1,0 +1,31 @@
+@interface IESECWebImageUtils : NSObject
++ (id)filterSafeURLs:;
++ (BOOL)containImageTemplateForUrl:;
++ (BOOL)enableEcomTemplateForUrl:;
++ (BOOL)enablePreloadAllFrame;
++ (BOOL)enableRemakeTemplate;
++ (BOOL)enableRequestPerformance;
++ (BOOL)enableUrlRemakeCache;
++ (id)findImageTemplateForUrl:;
++ (id)findServiceForUrl:;
++ (id)getBizTagWithURL:;
++ (id)getSceneTagWithURL:;
++ (id)getUrlQueryItem:url:;
++ (id)identifierForImageUrl:bizTag:sceneTag:preferredSize:;
++ (unsigned long long)imageTemplateLocationForUrl:;
++ (BOOL)optimizeConfigBoolValueForKey:;
++ (id)optimizeConfigValueForKey:;
++ (id)optimizePreferredSize:;
++ (id)optimizePreferredSize:templateFormat:scale:;
++ (long long)optimizePreferredSizeOffset;
++ (id)p_createTemplateStr:templateFormat:preferredSize:;
++ (id)p_matchString:pattern:;
++ (id)p_subString:range:;
++ (id)remakeImageUrl:templateRule:preferredSize:;
++ (id)remakeTemplateForImageUrlArray:bizTag:sceneTag:preferredSize:isPreview:;
++ (id)safeURL:;
++ (id)safeURLStr:;
++ (id)templateWidthOptions;
++ (BOOL)useSystemPreferredSizeScale;
++ (id)errorWithDomain:code:description:;
+@end

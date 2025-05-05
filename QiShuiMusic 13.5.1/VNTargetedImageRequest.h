@@ -1,0 +1,34 @@
+@interface VNTargetedImageRequest : VNImageBasedRequest
+- (id)sequencedRequestPreviousObservationsKey;
+- (void).cxx_destruct;
+- (BOOL)willAcceptCachedResultsFromRequestWithConfiguration:;
+- (BOOL)allowsCachingOfResults;
+- (id)newDefaultRequestInstance;
+- (id)initWithTargetedImageBuffer:completionHandler:;
+- (id)initWithTargetedCVPixelBuffer:options:;
+- (id)initWithTargetedCVPixelBuffer:options:completionHandler:;
+- (id)initWithTargetedCVPixelBuffer:orientation:options:;
+- (id)initWithTargetedCVPixelBuffer:orientation:options:completionHandler:;
+- (id)initWithTargetedCGImage:options:;
+- (id)initWithTargetedCGImage:options:completionHandler:;
+- (id)initWithTargetedCGImage:orientation:options:;
+- (id)initWithTargetedCGImage:orientation:options:completionHandler:;
+- (id)initWithTargetedCIImage:options:;
+- (id)initWithTargetedCIImage:options:completionHandler:;
+- (id)initWithTargetedCIImage:orientation:options:;
+- (id)initWithTargetedCIImage:orientation:options:completionHandler:;
+- (id)initWithTargetedImageURL:options:;
+- (id)initWithTargetedImageURL:options:completionHandler:;
+- (id)initWithTargetedImageURL:orientation:options:;
+- (id)initWithTargetedImageURL:orientation:options:completionHandler:;
+- (id)initWithTargetedImageData:options:;
+- (id)initWithTargetedImageData:options:completionHandler:;
+- (id)initWithTargetedImageData:orientation:options:;
+- (id)initWithTargetedImageData:orientation:options:completionHandler:;
+- (id)initWithTargetedCMSampleBuffer:options:;
+- (id)initWithTargetedCMSampleBuffer:options:completionHandler:;
+- (id)initWithTargetedCMSampleBuffer:orientation:options:;
+- (id)initWithTargetedCMSampleBuffer:orientation:options:completionHandler:;
+- (id)targetedImageBuffer;
+- (id)requiredTargetedImageBufferReturningError:;
+@end

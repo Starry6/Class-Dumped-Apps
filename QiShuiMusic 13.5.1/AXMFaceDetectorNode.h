@@ -1,0 +1,36 @@
+@interface AXMFaceDetectorNode : AXMEvaluationNode
+@property (nonatomic) AXMVisionFaceNameHelper _faceNameHelper;
+@property (nonatomic) VNDetectFaceRectanglesRequest _faceRectanglesRequest;
+@property (nonatomic) VNCreateFaceprintRequest _faceprintRequest;
+@property (nonatomic) VNClassifyFaceAttributesRequest _faceAttributesRequest;
+@property (nonatomic) VNDetectFaceExpressionsRequest _faceExpressionsRequest;
+@property (nonatomic) VNDetectFaceLandmarksRequest _faceLandmarksRequest;
+@property (nonatomic) VNDetectFacePoseRequest _facePoseRequest;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (void)nodeInitialize;
+- (BOOL)validateVisionKitSoftLinkSymbols;
+- (void)evaluate:metrics:;
+- (BOOL)requiresVisionFramework;
+- (id)_createRequestsForContext:;
+- (id)_faceDetectionResultsForVisionRequests:canvasSize:;
+- (id)_faceResultForUUID:inFaceDictionary:;
+- (id)_faceNameHelper;
+- (void)set_faceNameHelper:;
+- (id)_faceRectanglesRequest;
+- (void)set_faceRectanglesRequest:;
+- (id)_faceprintRequest;
+- (void)set_faceprintRequest:;
+- (id)_faceAttributesRequest;
+- (void)set_faceAttributesRequest:;
+- (id)_faceExpressionsRequest;
+- (void)set_faceExpressionsRequest:;
+- (id)_faceLandmarksRequest;
+- (void)set_faceLandmarksRequest:;
+- (id)_facePoseRequest;
+- (void)set_facePoseRequest:;
++ (BOOL)isSupported;
++ (BOOL)supportsSecureCoding;
++ (id)title;
+@end

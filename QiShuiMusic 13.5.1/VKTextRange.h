@@ -1,0 +1,37 @@
+@interface VKTextRange : VKBaseTextRange
+@property (nonatomic) VKTextPosition start;
+@property (nonatomic) VKTextPosition end;
+@property (nonatomic) {_NSRange=QQ} nsRange;
+@property (nonatomic) BOOL isZeroRange;
+@property (nonatomic) BOOL isNSNotFound;
+@property (nonatomic) Q minIndex;
+@property (nonatomic) Q maxIndex;
+@property (nonatomic) Q location;
+@property (nonatomic) Q length;
+- (void)setEnd:;
+- (void)setStart:;
+- (id)end;
+- (BOOL)isEmpty;
+- (id)start;
+- (BOOL)isNSNotFound;
+- (unsigned long long)maxIndex;
+- (id)summaryDescription;
+- (unsigned long long)minIndex;
+- (id)initWithRange:;
+- (id)nsRange;
+- (id)initWithStart:end:;
+- (BOOL)containsTextPosition:;
+- (unsigned long long)location;
+- (void).cxx_destruct;
+- (id)description;
+- (unsigned long long)length;
+- (id)initWithStartOffset:endOffset:;
+- (BOOL)isZeroRange;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
++ (id)rangeWithStart:end:;
++ (id)defaultRange;
++ (id)rangeWithNSRange:;
++ (id)rangeWithStartOffset:endOffset:;
++ (id)zeroRange;
+@end

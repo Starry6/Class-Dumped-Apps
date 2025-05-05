@@ -1,0 +1,33 @@
+@interface AMSBagFailingDataSource : NSObject
+@property (nonatomic) double delay;
+@property (nonatomic) NSError error;
+@property (nonatomic) NSString profile;
+@property (nonatomic) NSString profileVersion;
+@property (nonatomic) NSDate expirationDate;
+@property (nonatomic) BOOL loaded;
+@property (nonatomic) AMSProcessInfo processInfo;
+@property (nonatomic) NSString descriptionExtended;
+@property (nonatomic) @? dataSourceChangedHandler;
+@property (nonatomic) @? dataSourceDataInvalidatedHandler;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)processInfo;
+- (void)setDefaultValue:forKey:;
+- (void)setProfileVersion:;
+- (void)setError:;
+- (void)setProfile:;
+- (double)delay;
+- (id)error;
+- (id)profile;
+- (void)setDelay:;
+- (id)expirationDate;
+- (void).cxx_destruct;
+- (id)defaultValueForKey:;
+- (BOOL)isLoaded;
+- (void)loadWithCompletion:;
+- (id)valueForURLVariable:account:;
+- (id)profileVersion;
+- (id)initWithProfile:profileVersion:error:delay:;
+@end

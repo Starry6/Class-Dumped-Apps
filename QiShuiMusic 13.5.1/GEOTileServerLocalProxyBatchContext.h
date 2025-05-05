@@ -1,0 +1,33 @@
+@interface GEOTileServerLocalProxyBatchContext : NSObject
+@property (nonatomic) GEOTileKeyList fullList;
+@property (nonatomic) GEOTileKeyList interestList;
+@property (nonatomic) GEOTileKeyList networkList;
+@property (nonatomic) GEOTileKeyList pendingNetworkList;
+@property (nonatomic) GEOTileKeyList cacheMissNoDataList;
+@property (nonatomic) GEOTileKeyList cacheMissStaleDataList;
+@property (nonatomic) GEOTileKeyList cacheMissStaleUnusableDataList;
+@property (nonatomic) C loadReason;
+@property (nonatomic) BOOL proactivelyLoadOnFailure;
+@property (nonatomic) GEOTileRequester tileRequester;
+- (unsigned char)loadReason;
+- (void)setInterestList:;
+- (id)tileRequester;
+- (id)cacheMissStaleUnusableDataList;
+- (void)setPendingNetworkList:;
+- (id)networkList;
+- (void)setNetworkList:;
+- (id)cacheMissNoDataList;
+- (void)setTileRequester:;
+- (id)cacheMissStaleDataList;
+- (BOOL)proactivelyLoadOnFailure;
+- (id)pendingNetworkList;
+- (id)interestList;
+- (void)setFullList:;
+- (void).cxx_destruct;
+- (void)setCacheMissStaleDataList:;
+- (void)setLoadReason:;
+- (void)setCacheMissNoDataList:;
+- (void)setProactivelyLoadOnFailure:;
+- (id)fullList;
+- (void)setCacheMissStaleUnusableDataList:;
+@end

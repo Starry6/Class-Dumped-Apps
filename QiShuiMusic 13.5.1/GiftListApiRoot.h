@@ -1,0 +1,2 @@
+@interface GiftListApiRoot : GPBRootObject
+@end

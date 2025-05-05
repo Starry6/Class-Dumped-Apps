@@ -1,0 +1,31 @@
+@interface AMSSQLiteQueryResults : NSObject
+@property (nonatomic) q firstInt64Value;
+@property (nonatomic) NSNumber firstNumberValue;
+@property (nonatomic) BOOL hasRows;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (int)clearBindings;
+- (id)initWithStatement:;
+- (void)bindFloat:atPosition:;
+- (void)bindDate:atPosition:;
+- (void)bindInt64:atPosition:;
+- (void)bindURL:atPosition:;
+- (long long)firstInt64Value;
+- (void)bindString:atPosition:;
+- (BOOL)hasRows;
+- (void)bindDictionary:atPosition:;
+- (void)bindNullableString:atPosition:;
+- (void)bindDouble:atPosition:;
+- (void)bindArray:atPosition:;
+- (void)enumerateRowsUsingBlock:;
+- (void)bindDataCopy:atPosition:;
+- (void).cxx_destruct;
+- (id)firstNumberValue;
+- (void)bindStringCopy:atPosition:;
+- (void)bindInt:atPosition:;
+- (void)bindNumber:atPosition:;
+- (void)bindNullAtPosition:;
+- (void)bindData:atPosition:;
+@end

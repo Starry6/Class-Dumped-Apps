@@ -1,0 +1,31 @@
+@interface ARCoachingControlBlurredBackgroundView : UIVisualEffectView
+@property (nonatomic) q backgroundStyle;
+@property (nonatomic) q controlStyle;
+@property (nonatomic) BOOL highlighted;
+@property (nonatomic) BOOL selected;
+@property (nonatomic) BOOL enabled;
+- (void)setBackgroundStyle:;
+- (void)setSelected:;
+- (long long)backgroundStyle;
+- (BOOL)isSelected;
+- (BOOL)isHighlighted;
+- (void)setEnabled:;
+- (void)setHighlighted:;
+- (long long)controlStyle;
+- (BOOL)isEnabled;
+- (void)setControlStyle:;
+- (id)initWithFrame:backgroundStyle:controlStyle:;
+- (void)updateBackgroundEffects;
++ (id)disabledEffectsForARStyle;
++ (id)disabledEffectsForStudioStyle;
++ (id)normalEffectsForARStyle;
++ (id)normalEffectsForStudioStyle;
++ (id)highlightedEffectsForARStyle;
++ (id)highlightedEffectsForStudioStyle;
++ (id)disabledSelectedEffects;
++ (id)selectedEffects;
++ (id)normalEffectsForARDarkStyle;
++ (id)selectedEffectsForARDarkStyle;
++ (id)normalEffectsForDarkModeStyle;
++ (id)selectedEffectsForDarkModeStyle;
+@end

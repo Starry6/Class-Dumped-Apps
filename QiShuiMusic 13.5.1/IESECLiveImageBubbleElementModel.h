@@ -1,0 +1,32 @@
+@interface IESECLiveImageBubbleElementModel : MTLModel
+@property (nonatomic) double height;
+@property (nonatomic) double horizontalPadding;
+@property (nonatomic) double borderRadius;
+@property (nonatomic) NSString backgroundColor;
+@property (nonatomic) NSString borderColor;
+@property (nonatomic) NSString text;
+@property (nonatomic) double fontSize;
+@property (nonatomic) NSString textColor;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setBorderColor:;
+- (id)borderColor;
+- (void)setBackgroundColor:;
+- (id)backgroundColor;
+- (void)setText:;
+- (double)height;
+- (void)setTextColor:;
+- (double)fontSize;
+- (void)setHeight:;
+- (void).cxx_destruct;
+- (double)horizontalPadding;
+- (id)textColor;
+- (void)setFontSize:;
+- (id)text;
+- (void)setHorizontalPadding:;
+- (double)borderRadius;
+- (void)setBorderRadius:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

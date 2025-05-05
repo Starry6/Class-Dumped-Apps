@@ -1,0 +1,34 @@
+@interface ASOOverlayAppClipConfiguration : NSObject
+@property (nonatomic) NSMutableDictionary storage;
+@property (nonatomic) NSString campaignToken;
+@property (nonatomic) NSString providerToken;
+@property (nonatomic) q position;
+@property (nonatomic) NSString latestReleaseID;
+@property (nonatomic) NSString productVariantID;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setPosition:;
+- (long long)position;
+- (id)initWithStorage:;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (id)storage;
+- (void).cxx_destruct;
+- (id)description;
+- (id)copyWithZone:;
+- (void)setProductVariantID:;
+- (id)productVariantID;
+- (void)setCampaignToken:;
+- (id)campaignToken;
+- (void)setProviderToken:;
+- (id)providerToken;
+- (void)setLatestReleaseID:;
+- (id)latestReleaseID;
+- (void)setAdditionalValue:forKey:;
+- (id)additionalValueForKey:;
+- (id)initWithPosition:;
+- (id)additionalValueForKey:serviceContext:;
++ (BOOL)supportsSecureCoding;
+@end

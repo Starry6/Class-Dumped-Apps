@@ -1,0 +1,34 @@
+@interface LICacheClearScheduler : NSObject
+@property (nonatomic) NSObject<OS_dispatch_source> timer;
+@property (nonatomic) BOOL timerFired;
+@property (nonatomic) NSObject<OS_dispatch_source> memoryPreasure;
+@property (nonatomic) Q memoryPreasureState;
+@property (nonatomic) NSObject<OS_os_transaction> transaction;
+@property (nonatomic) NSObject<OS_dispatch_queue> queue;
+@property (nonatomic) BOOL holdTransaction;
+@property (nonatomic) @? clearHandler;
+@property (nonatomic) @ object;
+@property (nonatomic) double delay;
+- (BOOL)timerFired;
+- (void)setTransaction:;
+- (id)transaction;
+- (double)delay;
+- (void)setDelay:;
+- (void)setTimer:;
+- (void).cxx_destruct;
+- (id)object;
+- (id)timer;
+- (void)setQueue:;
+- (id)queue;
+- (id)initWithObject:delay:holdTransaction:clearHandler:;
+- (void)_queue_clearCache;
+- (void)setTimerFired:;
+- (id)memoryPreasure;
+- (void)setMemoryPreasure:;
+- (unsigned long long)memoryPreasureState;
+- (void)setMemoryPreasureState:;
+- (BOOL)holdTransaction;
+- (void)setHoldTransaction:;
+- (id)clearHandler;
++ (id)transactionDescription:;
+@end

@@ -1,0 +1,33 @@
+@interface IESLiveFeedAudioStageViewExtraModel : NSObject
+@property (nonatomic) UIColor statusBarBgColor;
+@property (nonatomic) UIColor contentBgColor;
+@property (nonatomic) UIColor gradientStartColor;
+@property (nonatomic) UIColor gradientEndColor;
+@property (nonatomic) NSArray linkerPlayModesArray;
+@property (nonatomic) q ktvStageMode;
+@property (nonatomic) NSNumber interactiveEnabled;
+@property (nonatomic) UIImage normalStagePlaceholderImage;
+@property (nonatomic) HTSLiveImage videoBg;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} videoVisibleRect;
+- (void)setNormalStagePlaceholderImage:;
+- (id)videoBg;
+- (id)contentBgColor;
+- (id)interactiveEnabled;
+- (long long)ktvStageMode;
+- (id)linkerPlayModesArray;
+- (id)normalStagePlaceholderImage;
+- (void)setContentBgColor:;
+- (void)setInteractiveEnabled:;
+- (void)setKtvStageMode:;
+- (void)setLinkerPlayModesArray:;
+- (void)setStatusBarBgColor:;
+- (void)setVideoBg:;
+- (void)setVideoVisibleRect:;
+- (id)statusBarBgColor;
+- (id)videoVisibleRect;
+- (void).cxx_destruct;
+- (void)setGradientStartColor:;
+- (void)setGradientEndColor:;
+- (id)gradientStartColor;
+- (id)gradientEndColor;
+@end

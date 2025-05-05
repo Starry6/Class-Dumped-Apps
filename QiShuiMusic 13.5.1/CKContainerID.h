@@ -1,0 +1,30 @@
+@interface CKContainerID : NSObject
+@property (nonatomic) q specialContainerType;
+@property (nonatomic) BOOL isTestContainer;
+@property (nonatomic) BOOL isAppleInternal;
+@property (nonatomic) NSString containerIdentifier;
+@property (nonatomic) q environment;
+- (id)sqliteRepresentation;
+- (id)ckShortDescription;
+- (void)ck_bindInStatement:atIndex:;
+- (id)initWithSqliteRepresentation:;
+- (id)containerIdentifier;
+- (id)representativeDataclass;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)initWithContainerIdentifier:environment:;
+- (long long)environment;
+- (BOOL)isTestContainer;
+- (id)CKPropertiesDescription;
+- (void)encodeWithCoder:;
+- (BOOL)isAppleInternal;
+- (void)setIsTestContainer:;
+- (void).cxx_destruct;
+- (void)setSpecialContainerType:;
+- (id)description;
+- (void)setIsAppleInternal:;
+- (BOOL)isEqual:;
+- (long long)specialContainerType;
+- (id)copyWithZone:;
++ (BOOL)supportsSecureCoding;
+@end

@@ -1,0 +1,2 @@
+@interface VisualIntelligence.LandmarkModelFactory : VisualIntelligence.DomainModelRequestFactory
+@end

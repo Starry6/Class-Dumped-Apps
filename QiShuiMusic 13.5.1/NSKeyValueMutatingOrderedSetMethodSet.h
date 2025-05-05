@@ -1,0 +1,2 @@
+@interface NSKeyValueMutatingOrderedSetMethodSet : NSKeyValueMutatingCollectionMethodSet
+@end

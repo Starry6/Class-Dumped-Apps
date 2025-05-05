@@ -1,0 +1,33 @@
+@interface SACFClientFlowScript : SABaseAceObject
+@property (nonatomic) NSData compressedScript;
+@property (nonatomic) SACFScriptEncryptionParameters encryptionParameters;
+@property (nonatomic) NSString fileContentType;
+@property (nonatomic) NSString jsScript;
+@property (nonatomic) NSData jsScriptChecksum;
+@property (nonatomic) NSString jsScriptIdentifier;
+@property (nonatomic) BOOL shouldCacheScript;
+@property (nonatomic) BOOL shouldSkipExecution;
+@property (nonatomic) SACFScriptUrlInformation urlInformation;
+- (id)groupIdentifier;
+- (id)encodedClassName;
+- (id)compressedScript;
+- (void)setCompressedScript:;
+- (id)encryptionParameters;
+- (void)setEncryptionParameters:;
+- (id)fileContentType;
+- (void)setFileContentType:;
+- (id)jsScript;
+- (void)setJsScript:;
+- (id)jsScriptChecksum;
+- (void)setJsScriptChecksum:;
+- (id)jsScriptIdentifier;
+- (void)setJsScriptIdentifier:;
+- (BOOL)shouldCacheScript;
+- (void)setShouldCacheScript:;
+- (BOOL)shouldSkipExecution;
+- (void)setShouldSkipExecution:;
+- (id)urlInformation;
+- (void)setUrlInformation:;
++ (id)clientFlowScript;
++ (id)clientFlowScriptWithDictionary:context:;
+@end

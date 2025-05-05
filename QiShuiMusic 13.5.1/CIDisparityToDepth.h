@@ -1,0 +1,2 @@
+@interface CIDisparityToDepth : CIDepthDisparityConverter
+@end

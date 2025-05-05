@@ -1,0 +1,36 @@
+@interface CEMSystemXsanSettingsDeclaration : CEMConfigurationBase
+@property (nonatomic) NSString payloadSanName;
+@property (nonatomic) NSArray payloadSanConfigURLs;
+@property (nonatomic) NSArray payloadFsnameservers;
+@property (nonatomic) NSString payloadSanAuthMethod;
+@property (nonatomic) NSString payloadSharedSecret;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (BOOL)multipleAllowed;
+- (BOOL)mustBeSupervised;
+- (int)activationLevel;
+- (id)assetReferences;
+- (BOOL)loadPayload:error:;
+- (id)serializePayloadWithAssetProviders:;
+- (id)payloadSharedSecret;
+- (void)setPayloadSharedSecret:;
+- (id)payloadSanName;
+- (void)setPayloadSanName:;
+- (id)payloadSanConfigURLs;
+- (void)setPayloadSanConfigURLs:;
+- (id)payloadFsnameservers;
+- (void)setPayloadFsnameservers:;
+- (id)payloadSanAuthMethod;
+- (void)setPayloadSanAuthMethod:;
++ (id)profileType;
++ (id)registeredClassName;
++ (id)registeredIdentifier;
++ (id)allowedPayloadKeys;
++ (id)restrictionPayloadKeys;
++ (id)buildWithIdentifier:withSanName:withSanConfigURLs:withFsnameservers:withSanAuthMethod:withSharedSecret:;
++ (id)buildRequiredOnlyWithIdentifier:withSanName:withSanConfigURLs:withFsnameservers:withSharedSecret:;
+@end

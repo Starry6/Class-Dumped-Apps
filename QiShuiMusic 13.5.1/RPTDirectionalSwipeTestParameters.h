@@ -1,0 +1,38 @@
+@interface RPTDirectionalSwipeTestParameters : NSObject
+@property (nonatomic) @? composerBlock;
+@property (nonatomic) NSString testName;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} scrollingBounds;
+@property (nonatomic) q direction;
+@property (nonatomic) q swipeCount;
+@property (nonatomic) NSNumber swipeSpeedFactor;
+@property (nonatomic) RPTCoordinateSpaceConverter conversion;
+@property (nonatomic) BOOL shouldFlick;
+@property (nonatomic) @? completionHandler;
+@property (nonatomic) BOOL managesTestStartAndEnd;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setTestName:;
+- (id)scrollingBounds;
+- (long long)direction;
+- (id)composerBlock;
+- (void)setDirection:;
+- (void)prepareWithComposer:;
+- (void)setScrollingBounds:;
+- (id)testName;
+- (id)conversion;
+- (void)setCompletionHandler:;
+- (void)scrollWithComposer:fromPoint:toPoint:speedFactor:;
+- (long long)swipeCount;
+- (void)setSwipeCount:;
+- (void)setShouldFlick:;
+- (void).cxx_destruct;
+- (id)initWithTestName:scrollingBounds:swipeCount:direction:completionHandler:;
+- (void)setConversion:;
+- (BOOL)shouldFlick;
+- (id)initWithTestName:scrollView:completionHandler:;
+- (id)swipeSpeedFactor;
+- (void)setSwipeSpeedFactor:;
+- (id)completionHandler;
+@end

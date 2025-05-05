@@ -1,0 +1,36 @@
+@interface HTTPPingMetricData : NSObject
+@property (nonatomic) double start_time;
+@property (nonatomic) double sendTime;
+@property (nonatomic) double end_time;
+@property (nonatomic) double request_time;
+@property (nonatomic) double response_time;
+@property (nonatomic) double dns_time;
+@property (nonatomic) double connect_time;
+@property (nonatomic) double tls_time;
+@property (nonatomic) double metric_duration;
+@property (nonatomic) double latency;
+@property (nonatomic) BOOL h3;
+- (double)metric_duration;
+- (double)connect_time;
+- (double)dns_time;
+- (BOOL)h3;
+- (double)request_time;
+- (double)response_time;
+- (void)setConnect_time:;
+- (void)setDns_time:;
+- (void)setH3:;
+- (void)setMetric_duration:;
+- (void)setRequest_time:;
+- (void)setResponse_time:;
+- (void)setStart_time:;
+- (void)setTls_time:;
+- (double)tls_time;
+- (double)latency;
+- (void)setLatency:;
+- (id)toDictionary;
+- (double)start_time;
+- (double)end_time;
+- (void)setEnd_time:;
+- (double)sendTime;
+- (void)setSendTime:;
+@end

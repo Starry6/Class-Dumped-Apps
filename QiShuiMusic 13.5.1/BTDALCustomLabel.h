@@ -1,0 +1,31 @@
+@interface BTDALCustomLabel : NSObject
+@property (nonatomic) NSString openUrlAppLabel;
+@property (nonatomic) NSString openUrlAppBackLabel;
+@property (nonatomic) NSString openAppback;
+@property (nonatomic) NSString successLabel;
+@property (nonatomic) NSString failLabel;
+@property (nonatomic) NSString wechatOpenLabel;
+@property (nonatomic) NSString wechatSuccessLabel;
+@property (nonatomic) NSString wechatFailLabel;
+- (id)openUrlAppLabel;
+- (void)setOpenAppback:;
+- (id)wechatOpenLabel;
+- (id)wechatFailLabel;
+- (id)failLabel;
+- (id)openAppback;
+- (id)openUrlAppBackLabel;
+- (void)setDefaltValue;
+- (void)setFailLabel:;
+- (void)setOpenUrlAppBackLabel:;
+- (void)setOpenUrlAppLabel:;
+- (void)setSuccessLabel:;
+- (void)setWechatFailLabel:;
+- (void)setWechatOpenLabel:;
+- (void)setWechatSuccessLabel:;
+- (id)successLabel;
+- (id)wechatSuccessLabel;
+- (id)init;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+@end

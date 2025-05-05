@@ -1,0 +1,30 @@
+@interface CJPayCommonExceptionView : UIView
+@property (nonatomic) NSString mainTitle;
+@property (nonatomic) NSString subTitle;
+@property (nonatomic) NSString buttonTitle;
+@property (nonatomic) @? actionBlock;
+@property (nonatomic) UILabel mainTitleLabel;
+@property (nonatomic) UILabel subTitleLabel;
+@property (nonatomic) UIButton actionButton;
+- (void)actionButtonClick;
+- (id)initWithFrame:mainTitle:subTitle:buttonTitle:;
+- (BOOL)isDouHuoStyle;
+- (id)mainTitleLabel;
+- (void)setMainTitleLabel:;
+- (void)drawRect:;
+- (id)actionBlock;
+- (void).cxx_destruct;
+- (void)didMoveToWindow;
+- (void)setSubTitle:;
+- (id)buttonTitle;
+- (id)subTitle;
+- (void)setButtonTitle:;
+- (void)setupUI;
+- (id)actionButton;
+- (void)setActionButton:;
+- (void)setActionBlock:;
+- (id)subTitleLabel;
+- (void)setSubTitleLabel:;
+- (id)mainTitle;
+- (void)setMainTitle:;
+@end

@@ -1,0 +1,35 @@
+@interface TUContactsDataProvider : NSObject
+@property (nonatomic) BOOL useAsianNameFormat;
+@property (nonatomic) @? localeSupportsPrefixHintForFetchRequest;
+@property (nonatomic) <TUContactsDataSource> contactsDataSource;
+@property (nonatomic) TUContactsDataProviderAppleCareHandles appleCareHandles;
+- (id)init;
+- (id)compositeNameForFetchRequest:;
+- (id)formattedNameForHandle:countryCode:;
+- (id)localeSupportsPrefixHintForFetchRequest;
+- (id)contactsForHandle:countryCode:keysToFetch:prefixHint:;
+- (int)personIDForContact:;
+- (id)executeFetchRequest:;
+- (id)labeledHandlesForContactWithIdentifier:;
+- (id)ISOCountryCodeForHandle:fetchRequest:;
+- (id)contactsDataSource;
+- (id)initWithContactsDataSource:;
+- (id)labeledHandlesForContacts:;
+- (id)contactWithIdentifier:keysToFetch:;
+- (BOOL)useAsianNameFormat;
+- (id)unifiedContactsForFetchRequest:;
+- (void).cxx_destruct;
+- (void)setUseAsianNameFormat:;
+- (id)contactLabelForContacts:matchingHandle:countryCode:;
+- (void)setLocaleSupportsPrefixHintForFetchRequest:;
+- (id)prefixHintForFetchRequest:;
+- (id)compositeNameForContacts:;
+- (void)setAppleCareHandles:;
+- (id)localizedCompositeNameForContact:secondContact:;
+- (id)appleCareHandles;
++ (id)numberFormatter;
++ (id)unsupportedLocalesForPrefixHint;
++ (id)asianLocaleCountryCodes;
++ (id)keysByCombiningDefaultKeysWithKeysToFetch:;
++ (id)defaultContactKeyDescriptors;
+@end

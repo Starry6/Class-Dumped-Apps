@@ -1,0 +1,21 @@
+@interface MPSCNNNeuronHWC2HWC4BufferC4 : MPSCNNKernel
+- (void)encodeHwc2Hwc4:sourceBuffer:destinationBuffer:params:threads:dispatchThreads:;
+- (void)encodeHwcHalf2Hwc4:sourceBuffer:destinationBuffer:params:threads:dispatchThreads:;
+- (void)encodeHwc_to_hwc4:sourceBuffer:destinationBuffer:para:outh:outw:batch:;
+- (void)encodeHwc_to_hwc4_tuned:sourceBuffer:destinationBuffer:para:;
+- (void)encodeToCommandBuffer:encoder:sourceBuffer:destinationBuffer:para:outh:outw:batch:;
+- (void)encodeToCommandBuffer:sourceBuffer:destinationBuffer:para:outh:outw:batch:;
+- (void)encodeToCommandBufferfloat2half_hwc4:encoder:sourceBuffer:destinationBuffer:para:outh:outw:batch:;
+- (void)encodeToCommandBufferfloat2half_hwc4:sourceBuffer:destinationBuffer:para:outh:outw:batch:;
+- (void)encodeToCommandBufferhalf2float_hwc4:encoder:sourceBuffer:destinationBuffer:para:outh:outw:batch:;
+- (void)encodeToCommandBufferhalf2float_hwc4:sourceBuffer:destinationBuffer:para:outh:outw:batch:;
+- (void)encodeToCommandBufferhwc4_buffer_to_hwc_texture:encoder:sourceBuffer:destinationTexture:para:outh:outw:batch:;
+- (void)encodeToCommandBufferhwc_texture_to_hwc4_buffer:encoder:sourceTexture:destinationBuffer:para:outh:outw:batch:;
+- (void)encodeToCommandBufferhwc_texture_to_hwc4_texture:encoder:sourceBuffer:destinationBuffer:para:outh:outw:batch:;
+- (void)encodeToCommandBufferhwc_to_hwc4:encoder:sourceBuffer:destinationBuffer:para:outh:outw:batch:;
+- (void)encodeToCommandBufferhwc_to_hwc4:sourceBuffer:destinationBuffer:para:outh:outw:batch:;
+- (id)getHwc2hwc4PipelineState;
+- (id)getHwc42hwcPipelineState;
+- (void).cxx_destruct;
+- (id)initWithDevice:library:;
+@end

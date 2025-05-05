@@ -1,0 +1,2 @@
+@interface SFMobileSafariFrameworkClass : NSObject
+@end

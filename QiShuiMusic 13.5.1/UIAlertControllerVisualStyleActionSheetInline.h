@@ -1,0 +1,35 @@
+@interface UIAlertControllerVisualStyleActionSheetInline : UIAlertControllerVisualStyleActionSheet
+@property (nonatomic) BOOL actionsReversed;
+@property (nonatomic) UIView headerView;
+@property (nonatomic) UIVisualEffectView revealEffectView;
+@property (nonatomic) _UIPreviewPresentationEffectView sourceViewSnapshot;
+- (void)setHeaderView:;
+- (double)minimumWidth;
+- (id)headerView;
+- (void).cxx_destruct;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)_shouldReverseActions;
+- (double)transitionDurationForPresentation:ofAlertController:;
+- (void)animateAlertControllerView:ofAlertController:forPresentation:inContainerView:descendantOfContainerView:duration:completionBlock:;
+- (long long)permittedActionLayoutDirection;
+- (BOOL)hideCancelAction:inAlertController:;
+- (BOOL)placementAvoidsKeyboard;
+- (double)_actionDescriptiveTextFontSize;
+- (BOOL)shouldOccludeDuringPresentation;
+- (BOOL)shouldPreserveRespondersAcrossWindows;
+- (id)_sourceRectForAlertController:inContainerView:;
+- (void)animateRevealOfAlertControllerView:alertController:inContainerView:duration:completionBlock:;
+- (BOOL)transitionOfType:shouldBeInteractiveForAlertController:;
+- (id)interactionProgressForTransitionOfType:forAlertController:;
+- (id)tintColorForAlertController:;
+- (id)dimmingViewForAlertController:;
+- (BOOL)actionsReversed;
+- (void)setActionsReversed:;
+- (id)revealEffectView;
+- (void)setRevealEffectView:;
+- (id)sourceViewSnapshot;
+- (void)setSourceViewSnapshot:;
++ (long long)interfaceActionPresentationStyle;
++ (void)positionContentsOfAlertController:alertContentView:availableSpaceView:visualStyle:updatableConstraints:;
+@end

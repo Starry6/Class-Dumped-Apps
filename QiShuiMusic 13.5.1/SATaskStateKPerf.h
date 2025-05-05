@@ -1,0 +1,2 @@
+@interface SATaskStateKPerf : SATaskState
+@end

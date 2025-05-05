@@ -1,0 +1,35 @@
+@interface BUTNCNetwork : NSObject
+@property (nonatomic) NSMutableDictionary requestMap;
+@property (nonatomic) NSMutableDictionary failDomains;
+@property (nonatomic) NSMutableDictionary lastTimeIntervals;
+@property (nonatomic) NSLock lock;
+@property (nonatomic) NSObject<OS_dispatch_semaphore> requestSemaphore;
+@property (nonatomic) NSMutableDictionary persistences;
+@property (nonatomic) NSMutableDictionary domains;
+@property (nonatomic) NSDictionary cur_domains;
+- (void)setCur_domains:;
+- (void)setFailDomains:;
+- (id)cur_domains;
+- (id)domainsWithAppKey:;
+- (id)failDomains;
+- (void)getDomainsWithConfig:andCompletion:;
+- (void)handleFailRequest:;
+- (id)lastTimeIntervals;
+- (id)persistenceCrateWithAppKey:;
+- (id)persistences;
+- (BOOL)recordFailCountDomain:;
+- (id)requestMap;
+- (id)requestSemaphore;
+- (void)setLastTimeIntervals:;
+- (void)setPersistences:;
+- (void)setRequestMap:;
+- (void)setRequestSemaphore:;
+- (void)updateDomains:withAppKey:;
+- (id)init;
+- (id)lock;
+- (void).cxx_destruct;
+- (void)setDomains:;
+- (id)domains;
+- (void)setLock:;
++ (id)sharedInstance;
+@end

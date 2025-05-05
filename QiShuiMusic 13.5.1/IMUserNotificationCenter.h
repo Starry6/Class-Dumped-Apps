@@ -1,0 +1,37 @@
+@interface IMUserNotificationCenter : NSObject
+@property (nonatomic) NSMutableDictionary identifierToIMUserNotificationQueueMap;
+@property (nonatomic) NSMutableDictionary identifierToListenerQueueMap;
+@property (nonatomic) NSMutableDictionary identifierToBlockQueueMap;
+@property (nonatomic) NSMutableDictionary identifierToRunLoopSourcesMap;
+@property (nonatomic) NSMutableDictionary identifierToCFUserNotificationMap;
+- (void)removeListener:;
+- (void)removeAllListeners;
+- (void)_enqueueBlock:forIdentifier:;
+- (void)_cancelActiveUserNotificationForIdentifier:;
+- (void)setIdentifierToBlockQueueMap:;
+- (id)_dequeueListenerForIdentifier:;
+- (id)identifierToListenerQueueMap;
+- (void)_enqueueUserNotification:forIdentifier:;
+- (id)_dequeueBlockForIdentifier:;
+- (unsigned long long)countForIdentifier:;
+- (void)_handleUserNotification:responseFlags:;
+- (void)removeNotificationsForServiceIdentifier:;
+- (void)setIdentifierToRunLoopSourcesMap:;
+- (void)setIdentifierToIMUserNotificationQueueMap:;
+- (id)identifierToRunLoopSourcesMap;
+- (void)_enqueueListener:forIdentifier:;
+- (id)_frontUserNotificationForIdentifier:;
+- (id)identifierToIMUserNotificationQueueMap;
+- (id)_frontBlockForIdentifier:;
+- (id)_dequeueUserNotificationForIdentifier:;
+- (void).cxx_destruct;
+- (void)addUserNotification:listener:completionHandler:;
+- (void)_displayNextUserNotificationForIdentifier:;
+- (id)_frontListenerForIdentifier:;
+- (void)setIdentifierToListenerQueueMap:;
+- (void)addUserNotification:listener:;
+- (void)setIdentifierToCFUserNotificationMap:;
+- (id)identifierToCFUserNotificationMap;
+- (id)identifierToBlockQueueMap;
++ (id)sharedInstance;
+@end

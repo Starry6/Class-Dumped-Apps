@@ -1,0 +1,38 @@
+@interface CKUserIdentityLookupInfo : NSObject
+@property (nonatomic) NSString emailAddress;
+@property (nonatomic) CKRecordID userRecordID;
+@property (nonatomic) NSString phoneNumber;
+@property (nonatomic) BOOL shouldReportMissingIdentity;
+@property (nonatomic) NSData encryptedPersonalInfo;
+- (id)emailAddress;
+- (id)ckShortDescription;
+- (id)CKDescriptionPropertiesWithPublic:private:shouldExpand:;
+- (id)phoneNumber;
+- (void)setEmailAddress:;
+- (void)setPhoneNumber:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)CKPropertiesDescription;
+- (void)encodeWithCoder:;
+- (id)initWithEmailAddress:;
+- (void).cxx_destruct;
+- (id)userRecordID;
+- (void)setUserRecordID:;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)initWithUserRecordID:;
+- (id)encryptedPersonalInfo;
+- (void)setEncryptedPersonalInfo:;
+- (id)initWithPhoneNumber:;
+- (long long)lookupField;
+- (id)lookupValue;
+- (void)_stripPersonalInfo;
+- (BOOL)shouldReportMissingIdentity;
+- (void)setShouldReportMissingIdentity:;
+- (id)CKXPCSuitableString;
++ (id)lookupInfosWithEmails:;
++ (BOOL)supportsSecureCoding;
++ (id)lookupInfosWithPhoneNumbers:;
++ (id)lookupInfosWithRecordIDs:;
+@end

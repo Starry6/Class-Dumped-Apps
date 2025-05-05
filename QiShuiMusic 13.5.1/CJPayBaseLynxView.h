@@ -1,0 +1,38 @@
+@interface CJPayBaseLynxView : UIView
+@property (nonatomic) UIView lynxView;
+@property (nonatomic) NSString containerId;
+@property (nonatomic) @? loadCompletion;
+@property (nonatomic) <CJPayLynxViewDelegate> delegate;
+@property (nonatomic) NSDictionary data;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)lynxView:receiveEvent:withData:;
+- (void)viewDidLoadFailedWithUrl:error:;
+- (void)viewWillCreated;
+- (id)initWithFrame:scheme:initDataStr:;
+- (id)lynxView;
+- (void)p_logInfoWithFuncName:params:;
+- (void)p_setupUI;
+- (void)publishEvent:data:;
+- (void)setLynxView:;
+- (void)viewDidChangeIntrinsicContentSize:;
+- (void)viewDidConstructJSRuntime;
+- (void)viewDidCreated;
+- (void)viewDidFinishLoadWithURL:;
+- (void)viewDidFirstScreen;
+- (void)viewDidPageUpdate;
+- (void)viewDidRecieveError:;
+- (void)viewDidStartLoading;
+- (void)viewDidUpdate;
+- (void)reload;
+- (id)containerId;
+- (id)data;
+- (void)setDelegate:;
+- (void)setContainerId:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)loadCompletion;
+- (void)setLoadCompletion:;
+@end

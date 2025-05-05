@@ -1,0 +1,37 @@
+@interface AWEIMGroupEntryLimitsPickerView : UIView
+@property (nonatomic) AWEIMGroupEntrySettingMenuModel entrySetting;
+@property (nonatomic) NSString selectedValue;
+@property (nonatomic) @? updateGroupEntryLimitBlock;
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UIPickerView pickerView;
+@property (nonatomic) UIView confirmView;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} superViewFrame;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)closePickerView;
+- (void)setConfirmView:;
+- (id)confirmView;
+- (id)entrySetting;
+- (id)initWithEntrySettingModel:selectedValue:;
+- (void)saveChoice:;
+- (void)setEntrySetting:;
+- (void)setSuperViewFrame:;
+- (void)setUpdateGroupEntryLimitBlock:;
+- (id)superViewFrame;
+- (id)updateGroupEntryLimitBlock;
+- (void)didMoveToSuperview;
+- (id)containerView;
+- (void)setContainerView:;
+- (void).cxx_destruct;
+- (long long)numberOfComponentsInPickerView:;
+- (long long)pickerView:numberOfRowsInComponent:;
+- (double)pickerView:rowHeightForComponent:;
+- (id)pickerView:viewForRow:forComponent:reusingView:;
+- (void)setupUI;
+- (id)pickerView;
+- (void)setPickerView:;
+- (id)selectedValue;
+- (void)setSelectedValue:;
+@end

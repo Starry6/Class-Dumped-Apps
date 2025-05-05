@@ -1,0 +1,34 @@
+@interface IESLiveFoundationAdapterImpl : IESLiveBaseAdapter
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)isWiFiConnected;
+- (BOOL)neverShownInThisAppLifeWithKey:;
+- (void)setAudienceAllowWatchNotInWifi:;
+- (BOOL)audienceAllowWatchNotInWifi:;
+- (void)checkIfUserFreeOfFlow:;
+- (BOOL)checkRoomService:;
+- (id)colorNamedWithLineSecondary;
+- (id)createAnimatedImageView;
+- (void)createLiveNodeOptimizeManager;
+- (void)dismissCurrentAlert:;
+- (id)getIESLiveVSVideoPlayerController;
+- (id)hts_liveLargeNumberWithNumber:;
+- (void)ieslive_applyAccessibilityWithView:label:hint:traits:;
+- (id)ieslive_promptsWithError:;
+- (BOOL)isTeenMode;
+- (id)livePromptsWith:;
+- (BOOL)liveStrategyDegradeEnable;
+- (id)live_errorWithPrompts:;
+- (void)openFreeFlowPage;
+- (void)openURL:fromInside:;
+- (void)showActionSheetWithTitle:buttonTitles:styles:blocks:;
+- (id)showAlertWithTitle:AttributedDescription:actionButtonTitle:cancelButtonTitle:actionBlock:cancelBlock:;
+- (id)showAlertWithTitle:description:actionButtonTitle:cancelButtonTitle:actionBlock:cancelBlock:;
+- (id)showAlertWithTitle:description:buttonTitles:buttonBlocks:;
+- (id)showAlertWithTitle:description:headerImage:actionButtonTitle:cancelButtonTitle:actionBlock:cancelBlock:;
+- (void)trackActionWithParams:;
+- (id)topViewController;
+- (id)pixelBufferFromImage:;
+@end

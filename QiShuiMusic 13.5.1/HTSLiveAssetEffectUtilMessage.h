@@ -1,0 +1,31 @@
+@interface HTSLiveAssetEffectUtilMessage : IESLivePBBaseMessage
+@property (nonatomic) NSDictionary effectMixGiftMaskInfo;
+@property (nonatomic) HTSLiveOpenAssetConfig openAsset;
+@property (nonatomic) NSNumber retryCount;
+@property (nonatomic) HTSLiveCommon common;
+@property (nonatomic) BOOL hasCommon;
+@property (nonatomic) q assetId;
+@property (nonatomic) q priority;
+@property (nonatomic) q price;
+@property (nonatomic) HTSLiveText text;
+@property (nonatomic) BOOL hasText;
+@property (nonatomic) q textWidth;
+@property (nonatomic) q textHeitht;
+@property (nonatomic) NSString tracking;
+@property (nonatomic) NSString dressId;
+@property (nonatomic) NSMutableArray imagesArray;
+@property (nonatomic) Q imagesArray_Count;
+@property (nonatomic) NSMutableArray textsArray;
+@property (nonatomic) Q textsArray_Count;
+@property (nonatomic) NSString finishSelfSchema;
+@property (nonatomic) NSMutableDictionary pieceValues;
+@property (nonatomic) Q pieceValues_Count;
+- (id)effectMixGiftMaskInfo;
+- (BOOL)hasEffectMixImages;
+- (void)setEffectMixGiftMaskInfo:;
+- (void)setOpenAsset:;
+- (void)setRetryCount:;
+- (id)retryCount;
+- (id)openAsset;
++ (id)descriptor;
+@end

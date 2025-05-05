@@ -1,0 +1,33 @@
+@interface IESLiveSaaSRightBottomManager : NSObject
+@property (nonatomic) IESLiveSaaSRightBottomMutuallyExclusiveItem currentItem;
+@property (nonatomic) NSMutableArray waitQueue;
+@property (nonatomic) NSArray cleanModeAllowList;
+@property (nonatomic) BOOL inCleanMode;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)cleanContainer:;
+- (void)setInCleanMode:;
+- (void)appendWaitQueue:;
+- (void)checkIfCleanMode;
+- (id)cleanModeAllowList;
+- (BOOL)couldShowItem:;
+- (void)didSetAttachingDIContext;
+- (void)hideRightBottomView:;
+- (void)hideRightBottomViewWithItem:processResult:;
+- (BOOL)inCleanMode;
+- (void)liveBannerDidHide;
+- (void)liveBannerDidShown;
+- (void)removeQueueItemByIdentifier:;
+- (void)setCleanModeAllowList:;
+- (void)setWaitQueue:;
+- (void)showRightBottomView:;
+- (void)showRightBottomViewWithItem:processResult:;
+- (id)waitQueue;
+- (BOOL)waitQueueContainsIdentifier:;
+- (id)init;
+- (void)setCurrentItem:;
+- (id)currentItem;
+- (void).cxx_destruct;
+@end

@@ -1,0 +1,36 @@
+@interface UITextSuggestion : NSObject
+@property (nonatomic) NSString inputText;
+@property (nonatomic) TIKeyboardCandidate _keyboardCandidate;
+@property (nonatomic) NSUUID uuid;
+@property (nonatomic) NSString searchText;
+@property (nonatomic) NSString displayText;
+@property (nonatomic) NSString headerText;
+@property (nonatomic) BOOL displayStylePlain;
+@property (nonatomic) UIImage image;
+- (id)headerText;
+- (id)init;
+- (id)uuid;
+- (void)setImage:;
+- (id)initWithCoder:;
+- (id)displayText;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)searchText;
+- (void)setDisplayText:;
+- (void)setSearchText:;
+- (id)image;
+- (id)copyWithZone:;
+- (void)setInputText:;
+- (id)_keyboardCandidate;
+- (id)initWithInputText:searchText:displayText:headerText:;
+- (id)inputText;
+- (void)setHeaderText:;
+- (BOOL)displayStylePlain;
+- (void)setDisplayStylePlain:;
++ (BOOL)supportsSecureCoding;
++ (id)classFallbacksForKeyedArchiver;
++ (id)textSuggestionWithInputText:;
++ (id)textSuggestionWithInputText:searchText:;
++ (id)encodeTextSuggestions:;
++ (id)decodeTextSuggestions:;
+@end

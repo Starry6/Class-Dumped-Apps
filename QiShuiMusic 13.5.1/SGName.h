@@ -1,0 +1,30 @@
+@interface SGName : SGObject
+@property (nonatomic) NSString fullName;
+@property (nonatomic) NSString firstName;
+@property (nonatomic) NSString middleName;
+@property (nonatomic) NSString lastName;
+@property (nonatomic) NSString prefix;
+@property (nonatomic) NSString suffix;
+@property (nonatomic) SGExtractionInfo extractionInfo;
+- (id)fullName;
+- (id)firstName;
+- (BOOL)isEqualToName:;
+- (id)middleName;
+- (id)lastName;
+- (id)suffix;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (id)prefix;
+- (void).cxx_destruct;
+- (id)description;
+- (id)name;
+- (BOOL)isEqual:;
+- (id)extractionInfo;
+- (id)initWithFirstName:middleName:lastName:fullName:prefix:suffix:recordId:origin:extractionInfo:;
+- (id)initWithFirstName:middleName:lastName:fullName:prefix:suffix:recordId:origin:;
++ (BOOL)supportsSecureCoding;
++ (id)nameWithFirstName:lastName:middleName:fullName:prefix:suffix:withRecordId:origin:;
++ (id)nameWithFirstName:lastName:withRecordId:origin:;
++ (id)nameWithFirstName:withRecordId:origin:;
+@end

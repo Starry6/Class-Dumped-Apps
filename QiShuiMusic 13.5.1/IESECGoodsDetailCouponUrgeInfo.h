@@ -1,0 +1,38 @@
+@interface IESECGoodsDetailCouponUrgeInfo : MTLModel
+@property (nonatomic) NSNumber couponMetaId;
+@property (nonatomic) q credit;
+@property (nonatomic) double startTime;
+@property (nonatomic) double expireTime;
+@property (nonatomic) q showTimePerDay;
+@property (nonatomic) NSNumber couponType;
+@property (nonatomic) NSNumber couponID;
+@property (nonatomic) IESECURLModel couponBgImg;
+@property (nonatomic) NSString desc;
+@property (nonatomic) NSString descShort;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setCouponBgImg:;
+- (id)couponBgImg;
+- (id)couponID;
+- (id)couponMetaId;
+- (id)couponType;
+- (id)descShort;
+- (void)setCouponID:;
+- (void)setCouponMetaId:;
+- (void)setCouponType:;
+- (void)setDescShort:;
+- (void)setShowTimePerDay:;
+- (long long)showTimePerDay;
+- (id)desc;
+- (void)setStartTime:;
+- (void)setDesc:;
+- (double)startTime;
+- (void).cxx_destruct;
+- (long long)credit;
+- (double)expireTime;
+- (void)setExpireTime:;
+- (void)setCredit:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

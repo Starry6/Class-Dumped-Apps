@@ -1,0 +1,31 @@
+@interface MIOModel : NSObject
+@property (nonatomic) NSObject<MIOModeling> modelImpl;
+@property (nonatomic) MIOVersionInfo specificationVersion;
+@property (nonatomic) NSString modelTypeName;
+@property (nonatomic) MIOModelDescription modelDescription;
+@property (nonatomic) NSArray layers;
+@property (nonatomic) NSArray subModels;
+@property (nonatomic) ^v irProgram;
+- (id)init;
+- (id)layers;
+- (BOOL)writeToURL:error:;
+- (unsigned long long)hash;
+- (id)modelDescription;
+- (void).cxx_destruct;
+- (id)description;
+- (id)mutableCopyWithZone:;
+- (BOOL)isEqual:;
+- (id)initWithContentsOfURL:error:;
+- (id)copyWithZone:;
+- (id)specificationVersion;
+- (void)setModelDescription:;
+- (id)initWithMessageStream:parserContext:error:;
+- (id)initWithModeling:;
+- (id)modelTypeName;
+- (id)subModels;
+- (id)irProgram;
+- (id)modelImpl;
+- (void)setModelImpl:;
+- (id)layerHistogram;
+- (void)MIOFindProtobufFieldsDummyObjC;
+@end

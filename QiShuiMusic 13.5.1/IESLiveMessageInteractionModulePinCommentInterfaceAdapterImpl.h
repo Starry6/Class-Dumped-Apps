@@ -1,0 +1,2 @@
+@interface IESLiveMessageInteractionModulePinCommentInterfaceAdapterImpl : nil
+@end

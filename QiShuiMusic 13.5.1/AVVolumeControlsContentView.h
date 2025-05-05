@@ -1,0 +1,2 @@
+@interface AVVolumeControlsContentView : UIView
+@end

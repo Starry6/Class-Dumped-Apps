@@ -1,0 +1,37 @@
+@interface IMNetworkConnectionMonitor : IMConnectionMonitor
+@property (nonatomic) IMReachability _hostReachability;
+@property (nonatomic) IMReachability _ipReachability;
+@property (nonatomic) Q _hostFlags;
+@property (nonatomic) Q _ipFlags;
+@property (nonatomic) BOOL _isConnected;
+@property (nonatomic) BOOL _isSleeping;
+@property (nonatomic) CUTDeferredTaskQueue performCallbackTask;
+- (unsigned long long)_ipFlags;
+- (void)systemWillSleep;
+- (void)set_isSleeping:;
+- (void)dealloc;
+- (void)set_ipReachability:;
+- (id)_hostReachability;
+- (void)set_isConnected:;
+- (void)_networkManagedUpdated:;
+- (id)_ipReachability;
+- (void)systemDidWake;
+- (BOOL)_isConnected;
+- (BOOL)isImmediatelyReachable;
+- (void)clear;
+- (void).cxx_destruct;
+- (unsigned long long)_hostFlags;
+- (void)goDisconnected;
+- (id)performCallbackTask;
+- (void)_setup;
+- (void)reachabilityDidChange:;
+- (void)_setupReachability;
+- (void)set_hostReachability:;
+- (void)_doCallbackLater;
+- (BOOL)_isSleeping;
+- (void)_clearReachability:flags:;
+- (void)set_ipFlags:;
+- (void)goConnectedWithLocalSocketAddress:remoteSocketAddress:;
+- (void)set_hostFlags:;
+- (void)_doCallbackNow;
+@end

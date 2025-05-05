@@ -1,0 +1,30 @@
+@interface BDXLynxEventTargetSpan : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)onResponseChain;
+- (BOOL)blockNativeEvent:;
+- (BOOL)consumeSlideEvent:;
+- (BOOL)dispatchTouch:touches:withEvent:;
+- (BOOL)enableTouchPseudoPropagation;
+- (id)eventSet;
+- (BOOL)eventThrough;
+- (long long)getGestureArenaMemberId;
+- (BOOL)ignoreFocus;
+- (id)initWithInfo:withRects:;
+- (BOOL)isOnResponseChain;
+- (void)offResponseChain;
+- (void)onPseudoStatusFrom:changedTo:;
+- (id)parentTarget;
+- (int)pseudoStatus;
+- (void)setParentEventTarget:;
+- (BOOL)shouldHitTest:withEvent:;
+- (id)targetRects;
+- (long long)signature;
+- (id)hitTest:withEvent:;
+- (void).cxx_destruct;
+- (BOOL)dispatchEvent:;
+- (BOOL)containsPoint:;
+- (id)gestureMap;
+@end

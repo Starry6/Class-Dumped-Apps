@@ -1,0 +1,34 @@
+@interface DYSDKOnekeyAuthManager : NSObject
+@property (nonatomic) BOOL phoneNumberUsedInDouyin;
+@property (nonatomic) BOOL inAuthRoutine;
+@property (nonatomic) NSDictionary extra;
+@property (nonatomic) BOOL enableUseOpenSDKOneKeyAuth;
+@property (nonatomic) UIView uiContainerView;
+@property (nonatomic) BOOL skipAuthDialog;
+@property (nonatomic) BOOL enableUseSDKOneKeyAuth;
+- (void)authFail:error:;
+- (BOOL)isInAuthRoutine;
+- (id)uiContainerView;
+- (void)authEntry:completion:extra:;
+- (void)authFinishToRequestAccessToken:completion:;
+- (void)bindDouyinAccountByPhoneFinal:completion:;
+- (void)checkBindDouyin:completion:;
+- (void)doDouyinAuthFinal:completion:;
+- (BOOL)enableUseOpenSDKOneKeyAuth;
+- (BOOL)enableUseSDKOneKeyAuth;
+- (BOOL)inAuthRoutine;
+- (BOOL)phoneNumberUsedInDouyin;
+- (void)routine:completion:;
+- (void)setEnableUseOpenSDKOneKeyAuth:;
+- (void)setEnableUseSDKOneKeyAuth:;
+- (void)setExtra:;
+- (void)setInAuthRoutine:;
+- (void)setPhoneNumberUsedInDouyin:;
+- (void)setSkipAuthDialog:;
+- (void)setUiContainerView:;
+- (void)showDouyinAuthDialog:phoneNumber:completion:;
+- (BOOL)skipAuthDialog;
+- (id)extra;
+- (void).cxx_destruct;
++ (id)shared;
+@end

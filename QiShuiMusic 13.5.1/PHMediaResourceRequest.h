@@ -1,0 +1,30 @@
+@interface PHMediaResourceRequest : PHMediaRequest
+@property (nonatomic) <PHMediaRequestDelegate> delegate;
+@property (nonatomic) @? progressHandler;
+@property (nonatomic) PHAssetResource resource;
+@property (nonatomic) q resourceType;
+@property (nonatomic) BOOL wantsURLOnly;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setProgressHandler:;
+- (id)progressHandler;
+- (void)_finishWithError:;
+- (void)cancel;
+- (long long)resourceType;
+- (void)setDelegate:;
+- (void)startRequest;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)resource;
+- (void)handleAvailabilityChangeForResource:url:info:error:;
+- (id)description;
+- (BOOL)isSynchronous;
+- (void)assetResourceRequest:didFinishWithError:;
+- (void)_handleDidFindFileURL:;
+- (id)initWithRequestID:requestIndex:contextType:managerID:asset:assetResource:networkAccessAllowed:downloadIntent:downloadPriority:wantsURLOnly:synchronous:delegate:;
+- (void)_reportProgress:;
+- (void)_receiveAssetResourceDataPart:;
+- (BOOL)wantsURLOnly;
+@end

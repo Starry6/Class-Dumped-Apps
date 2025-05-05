@@ -1,0 +1,38 @@
+@interface HMDNetTrafficSourceUsageModel : NSObject
+@property (nonatomic) NSString souceId;
+@property (nonatomic) q executeCount;
+@property (nonatomic) q resetTimestamp;
+@property (nonatomic) Q usageBytes;
+@property (nonatomic) NSString business;
+@property (nonatomic) Q totalUsage;
+@property (nonatomic) Q wifiBackUsage;
+@property (nonatomic) Q wifiFrontUsage;
+@property (nonatomic) Q mobileBackUsage;
+@property (nonatomic) Q mobileFrontUsage;
+- (unsigned long long)mobileBackUsage;
+- (id)souceId;
+- (void)addTrafficUsage:netType:;
+- (long long)executeCount;
+- (id)initWithSourceId:business:;
+- (unsigned long long)mobileFrontUsage;
+- (long long)resetTimestamp;
+- (void)setExecuteCount:;
+- (void)setMobileBackUsage:;
+- (void)setMobileFrontUsage:;
+- (void)setResetTimestamp:;
+- (void)setSouceId:;
+- (void)setWifiBackUsage:;
+- (void)setWifiFrontUsage:;
+- (unsigned long long)trafficUsageWithNetType:;
+- (unsigned long long)wifiBackUsage;
+- (unsigned long long)wifiFrontUsage;
+- (void).cxx_destruct;
+- (id)business;
+- (void)setBusiness:;
+- (void)setUsageBytes:;
+- (unsigned long long)usageBytes;
+- (unsigned long long)totalUsage;
+- (void)setTotalUsage:;
++ (id)formatHighFreqUsageInfosToStoredDicts:;
++ (id)formatNormalUsageInfosToStoredDicts:;
+@end

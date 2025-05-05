@@ -1,0 +1,2 @@
+@interface IESLiveSaaSPBIESLiveSaaSPBIntentRecognitionRoot : GPBRootObject
+@end

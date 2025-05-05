@@ -1,0 +1,35 @@
+@interface AWEIMQuoteImageContentView : UIView
+@property (nonatomic) UIImageView quoteImageView;
+@property (nonatomic) UIView quoteReplyLineView;
+@property (nonatomic) UIImageView playIconImageView;
+@property (nonatomic) MASConstraint quoteImageViewLeftConstraint;
+@property (nonatomic) MASConstraint quoteReplyLineViewLeftConstraint;
+@property (nonatomic) MASConstraint quoteLabelLeftConstraint;
+@property (nonatomic) UILabel quoteLabel;
+- (void)activeQuoteLabel;
+- (void)deactiveQuoteLabel;
+- (void)hidePlayIcon;
+- (void)initSubviews;
+- (id)playIconImageView;
+- (id)quoteImageView;
+- (id)quoteImageViewLeftConstraint;
+- (id)quoteLabel;
+- (id)quoteLabelLeftConstraint;
+- (id)quoteReplyLineView;
+- (id)quoteReplyLineViewLeftConstraint;
+- (void)setPlayIconImageView:;
+- (void)setQuoteImageView:;
+- (void)setQuoteImageViewLeftConstraint:;
+- (void)setQuoteLabelLeftConstraint:;
+- (void)setQuoteReplyLineView:;
+- (void)setQuoteReplyLineViewLeftConstraint:;
+- (void)showPlayIcon;
+- (void)updateQuoteImagePosition:;
+- (id)init;
+- (void).cxx_destruct;
+- (void)setupUI;
+- (void)setupSubviews;
+- (void)setupLayout;
++ (id)calculateContentSizeWithImageSize:;
++ (id)contentSizeWhenShowQuoteLabelWithText:;
+@end

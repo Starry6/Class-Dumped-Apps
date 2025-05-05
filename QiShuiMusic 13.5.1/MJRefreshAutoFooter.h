@@ -1,0 +1,31 @@
+@interface MJRefreshAutoFooter : MJRefreshFooter
+@property (nonatomic) BOOL triggerByDrag;
+@property (nonatomic) q leftTriggerTimes;
+@property (nonatomic) BOOL automaticallyRefresh;
+@property (nonatomic) double appearencePercentTriggerAutoRefresh;
+@property (nonatomic) double triggerAutomaticallyRefreshPercent;
+@property (nonatomic) q autoTriggerTimes;
+- (void)scrollViewContentSizeDidChange:;
+- (double)appearencePercentTriggerAutoRefresh;
+- (long long)autoTriggerTimes;
+- (void)beginRefreshingWithoutValidation;
+- (BOOL)isAutomaticallyRefresh;
+- (long long)leftTriggerTimes;
+- (void)resetTriggerTimes;
+- (void)scrollViewContentOffsetDidChange:;
+- (void)scrollViewPanStateDidChange:;
+- (void)setAppearencePercentTriggerAutoRefresh:;
+- (void)setAutoTriggerTimes:;
+- (void)setAutomaticallyRefresh:;
+- (void)setLeftTriggerTimes:;
+- (void)setTriggerAutomaticallyRefreshPercent:;
+- (void)setTriggerByDrag:;
+- (double)triggerAutomaticallyRefreshPercent;
+- (BOOL)triggerByDrag;
+- (BOOL)unlimitedTrigger;
+- (void)setState:;
+- (void)prepare;
+- (void)beginRefreshing;
+- (void)setHidden:;
+- (void)willMoveToSuperview:;
+@end

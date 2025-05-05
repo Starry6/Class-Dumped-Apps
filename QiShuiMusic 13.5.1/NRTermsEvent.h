@@ -1,0 +1,38 @@
+@interface NRTermsEvent : NRPBTermsEvent
+@property (nonatomic) NSString termsDigest;
+@property (nonatomic) BOOL flaggedForSend;
+@property (nonatomic) BOOL writable;
+- (id)initWithDeviceID:;
+- (void)setEventType:;
+- (id)initWithCoder:;
+- (BOOL)writable;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (void)setEventDate:;
+- (void)setTermsText:;
+- (void)setDocumentationID:;
+- (void)setPresentationReason:;
+- (void)setPresentationLocation:;
+- (void)setAcknowledgedDeviceName:;
+- (void)setAcknowledgedDeviceSerialNumber:;
+- (void)setDisplayDeviceName:;
+- (void)setDisplayDeviceSerialNumber:;
+- (void)setLoggingProcessName:;
+- (BOOL)isTermsAlreadyArchived;
+- (id)termsText;
+- (void)saveTerms;
+- (void)saveEventTextToFileIfNeeded;
+- (void)_setEventType:;
+- (void)updateEventDate;
+- (void)_setLoggingProcessName:;
+- (id)termsDigest;
+- (void)setTermsDigest:;
+- (BOOL)flaggedForSend;
+- (void)setFlaggedForSend:;
+- (void)setWritable:;
++ (BOOL)supportsSecureCoding;
++ (id)digestFromData:;
++ (id)loadTermsWithPath:;
++ (id)eventWithProtobuf:;
+@end

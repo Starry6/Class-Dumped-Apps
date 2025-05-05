@@ -1,0 +1,32 @@
+@interface AWEUserFollowResponseModel : IESIMBaseApiModel
+@property (nonatomic) q followStatus;
+@property (nonatomic) q postNotificationStatus;
+@property (nonatomic) NSString statusMsg;
+@property (nonatomic) NSString contactName;
+@property (nonatomic) BOOL isEnterprise;
+@property (nonatomic) BOOL isFirstFollow;
+@property (nonatomic) NSString verifyType;
+@property (nonatomic) IESIMAFDFamiliarActivityModel familiarActivityModel;
+@property (nonatomic) IESIMUserFollowUnreadFooter unreadFooter;
+- (id)familiarActivityModel;
+- (long long)followStatus;
+- (BOOL)isFirstFollow;
+- (long long)postNotificationStatus;
+- (void)setFamiliarActivityModel:;
+- (void)setFollowStatus:;
+- (void)setIsEnterprise:;
+- (void)setIsFirstFollow:;
+- (void)setPostNotificationStatus:;
+- (void)setUnreadFooter:;
+- (id)unreadFooter;
+- (id)contactName;
+- (BOOL)isEnterprise;
+- (void).cxx_destruct;
+- (id)verifyType;
+- (void)setVerifyType:;
+- (void)setContactName:;
++ (id)followStatusJSONTransformer;
++ (id)postNotificationStatusJSONTransformer;
++ (id)userJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

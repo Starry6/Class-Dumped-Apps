@@ -1,0 +1,36 @@
+@interface NSLineFragmentRenderingContext : NSObject
+@property (nonatomic) q resolvedTextAlignment;
+@property (nonatomic) q resolvedBaseWritingDirection;
+@property (nonatomic) CUICatalog cuiCatalog;
+@property (nonatomic) CUIStyleEffectConfiguration cuiStyleEffects;
+@property (nonatomic) BOOL usesSimpleTextEffects;
+@property (nonatomic) q applicationFrameworkContext;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)imageBounds;
+- (void)setApplicationFrameworkContext:;
+- (void)dealloc;
+- (void)getMaximumAscender:minimumDescender:;
+- (id)cuiStyleEffects;
+- (double)lineFragmentWidth;
+- (void)setResolvedBaseWritingDirection:;
+- (BOOL)_usesSimpleTextEffects;
+- (long long)applicationFrameworkContext;
+- (id)cuiCatalog;
+- (void)finalize;
+- (id)sizeWithBehavior:usesFontLeading:baselineDelta:;
+- (long long)resolvedTextAlignment;
+- (id)release;
+- (void)setCuiStyleEffects:;
+- (id)initWithTextStorage:runs:glyphOrigin:lineFragmentWidth:elasticWidth:usesScreenFonts:isRTL:applicationFrameworkContext:;
+- (void)drawAtPoint:inContext:;
+- (void)_setUsesSimpleTextEffects:;
+- (long long)resolvedBaseWritingDirection;
+- (void)setCuiCatalog:;
+- (BOOL)isRTL;
+- (double)elasticWidth;
+- (void)setResolvedTextAlignment:;
++ (id)allocWithZone:;
+@end

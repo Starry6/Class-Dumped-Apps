@@ -1,0 +1,2 @@
+@interface NSTempAttributeDictionary : NSAttributeDictionary
+@end

@@ -1,0 +1,2 @@
+@interface AVPlayerItemInternal : NSObject
+@end

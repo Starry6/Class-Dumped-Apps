@@ -1,0 +1,30 @@
+@interface AARequester : NSOperation
+@property (nonatomic) BOOL isExecuting;
+@property (nonatomic) BOOL finished;
+@property (nonatomic) BOOL canceled;
+@property (nonatomic) NSObject<OS_dispatch_queue> handlerQueue;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)isCanceled;
+- (void)setFinished:;
+- (void)cancel;
+- (void)setHandlerQueue:;
+- (void)start;
+- (id)handlerQueue;
+- (BOOL)isExecuting;
+- (void)_kickOffRequest:;
+- (void)setIsExecuting:;
+- (void)_callHandler;
+- (BOOL)isFinished;
+- (void)connection:didReceiveData:;
+- (void).cxx_destruct;
+- (void)connection:didReceiveResponse:;
+- (void)connection:willSendRequestForAuthenticationChallenge:;
+- (id)initWithRequest:handler:;
+- (void)setCanceled:;
+- (void)connectionDidFinishLoading:;
+- (void)__unsafe_callHandler;
+- (void)connection:didFailWithError:;
+@end

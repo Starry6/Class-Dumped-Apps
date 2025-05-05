@@ -1,0 +1,32 @@
+@interface LNIntentsValueType : LNValueType
+@property (nonatomic) q typeIdentifier;
+@property (nonatomic) NSString typeIdentifierAsString;
+- (Class)objectClass;
+- (id)cat_dialogType;
+- (id)cat_value:;
+- (id)cat_keyPath;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (long long)typeIdentifier;
+- (void)encodeWithCoder:;
+- (id)initWithTypeIdentifier:;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)typeIdentifierAsString;
++ (id)taskListValueType;
++ (BOOL)supportsSecureCoding;
++ (id)personValueType;
++ (id)environmentValueType;
++ (id)notificationValueType;
++ (id)noteValueType;
++ (id)currencyAmountValueType;
++ (id)timerValueType;
++ (id)fileValueType;
++ (id)applicationValueType;
++ (id)calendarEventValueType;
++ (id)taskValueType;
++ (id)paymentMethodValueType;
++ (id)mediaItemValueType;
++ (id)mediaSearchValueType;
++ (id)messageConversationValueType;
+@end

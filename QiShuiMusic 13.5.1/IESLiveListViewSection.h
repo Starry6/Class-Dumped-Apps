@@ -1,0 +1,32 @@
+@interface IESLiveListViewSection : NSObject
+@property (nonatomic) NSArray itemArray;
+@property (nonatomic) # classForHeader;
+@property (nonatomic) double heightForHeader;
+@property (nonatomic) NSString headerString;
+@property (nonatomic) # classForFooter;
+@property (nonatomic) double heightForFooter;
+@property (nonatomic) NSString footerString;
+@property (nonatomic) UIColor headerColor;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (Class)classForFooter;
+- (Class)classForHeader;
+- (id)itemArray;
+- (void)setClassForFooter:;
+- (void)setClassForHeader:;
+- (void)setHeightForFooter:;
+- (void)setHeightForHeader:;
+- (void)setItemArray:;
+- (id)headerColor;
+- (id)init;
+- (id)headerString;
+- (void).cxx_destruct;
+- (id)footerString;
+- (void)setHeaderString:;
+- (double)heightForHeader;
+- (double)heightForFooter;
+- (void)setFooterString:;
+- (void)setHeaderColor:;
+@end

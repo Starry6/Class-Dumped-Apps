@@ -1,0 +1,34 @@
+@interface SecTapToRadar : NSObject
+@property (nonatomic) NSString alert;
+@property (nonatomic) NSString radarDescription;
+@property (nonatomic) NSString radarnumber;
+@property (nonatomic) NSObject<OS_dispatch_queue> queue;
+@property (nonatomic) NSString componentID;
+@property (nonatomic) NSString componentName;
+@property (nonatomic) NSString componentVersion;
+- (id)alert;
+- (id)componentName;
+- (void)setAlert:;
+- (void)trigger;
+- (void).cxx_destruct;
+- (void)setQueue:;
+- (id)queue;
+- (id)radarDescription;
+- (void)setRadarDescription:;
+- (void)setComponentName:;
+- (id)componentVersion;
+- (void)setComponentVersion:;
+- (id)componentID;
+- (void)setComponentID:;
+- (id)radarnumber;
+- (void)setRadarnumber:;
+- (id)initTapToRadar:description:radar:;
+- (BOOL)isRateLimited;
+- (void)updateRetryTimestamp;
+- (void)clearRetryTimestamp;
++ (void)triggerTapToRadar:;
++ (id)keyname:;
++ (BOOL)isRateLimited:;
++ (void)disableTTRsEntirely;
++ (BOOL)askUserIfTTR:;
+@end

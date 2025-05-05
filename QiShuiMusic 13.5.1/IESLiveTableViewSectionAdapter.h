@@ -1,0 +1,31 @@
+@interface IESLiveTableViewSectionAdapter : NSObject
+@property (nonatomic) IESLiveTableViewSectionAdapterProxy proxy;
+@property (nonatomic) UITableView tableView;
+@property (nonatomic) <IESLiveTableViewSectionAdapterDelegate> delegate;
+@property (nonatomic) <UITableViewDataSource> dataSource;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)sections;
+- (void)setProxy:;
+- (void)setDataSource:;
+- (id)proxy;
+- (id)tableView:cellForRowAtIndexPath:;
+- (void)setDelegate:;
+- (double)tableView:heightForRowAtIndexPath:;
+- (id)tableView:viewForHeaderInSection:;
+- (id)dataSource;
+- (id)delegate;
+- (void)tableView:didSelectRowAtIndexPath:;
+- (void).cxx_destruct;
+- (void)setTableView:;
+- (double)tableView:heightForHeaderInSection:;
+- (void)tableView:willDisplayCell:forRowAtIndexPath:;
+- (id)tableView;
+- (long long)tableView:numberOfRowsInSection:;
+- (long long)numberOfSectionsInTableView:;
+- (double)tableView:heightForFooterInSection:;
+- (id)tableView:viewForFooterInSection:;
++ (id)adapterForTableView:;
+@end

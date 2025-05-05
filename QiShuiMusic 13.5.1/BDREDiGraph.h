@@ -1,0 +1,31 @@
+@interface BDREDiGraph : NSObject
+@property (nonatomic) NSMutableDictionary outputNodeMap;
+@property (nonatomic) NSMutableDictionary trieNodeMap;
+@property (nonatomic) NSMutableArray entryNodes;
+@property (nonatomic) NSMutableArray outNodes;
+@property (nonatomic) NSMutableArray fallBackRuleModels;
+@property (nonatomic) NSMutableArray defaultOutputNodes;
+- (void)setTrieNodeMap:;
+- (void)addCommandTree:index:outputValue:ruleModel:;
+- (void)addFallBackRuleModel:;
+- (void)addOutGraphNode:;
+- (id)defaultOutputNodes;
+- (id)entryNodes;
+- (id)fallBackRuleModels;
+- (id)getConstNodeWithValue:;
+- (id)getEntryNodeWithIdentifier:;
+- (id)getOutputNodeWithValue:;
+- (id)getTrieNodeWithIdentifier:;
+- (BOOL)hasTrieNode;
+- (id)outputNodeMap;
+- (void)setDefaultOutputNodes:;
+- (void)setEntryNodes:;
+- (void)setFallBackRuleModels:;
+- (void)setOutputNodeMap:;
+- (id)travelWithParams:needBreak:;
+- (id)trieNodeMap;
+- (id)init;
+- (void).cxx_destruct;
+- (id)outNodes;
+- (void)setOutNodes:;
+@end

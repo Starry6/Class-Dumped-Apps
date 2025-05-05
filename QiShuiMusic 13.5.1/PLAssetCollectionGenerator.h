@@ -1,0 +1,38 @@
+@interface PLAssetCollectionGenerator : NSObject
+@property (nonatomic) <PLMomentGenerationDataManagement> manager;
+@property (nonatomic) PLFrequentLocationManager frequentLocationManager;
+@property (nonatomic) PLLocalCreationDateCreator localCreationDateCreator;
+@property (nonatomic) NSMutableSet usedMomentObjectIDs;
+@property (nonatomic) NSMutableSet insertedOrUpdatedMoments;
+@property (nonatomic) NSMutableArray momentsFromAssetClusters;
+@property (nonatomic) NSDateFormatter debugDateFormatter;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setLocalCreationDateCreator:;
+- (void)_cleanUpMoment:;
+- (id)_createMomentOrUpdateForAssetCluster:existingMomentDataForAssets:;
+- (id)usedMomentObjectIDs;
+- (id)libraryClusterer:createMomentClustersForAssetClusters:existingMomentDataForAssets:;
+- (id)frequentLocationManager;
+- (void)setFrequentLocationManager:;
+- (id)manager;
+- (void)setInsertedOrUpdatedMoments:;
+- (void)setUsedMomentObjectIDs:;
+- (id)momentsFromAssetClusters;
+- (id)insertedOrUpdatedMoments;
+- (void)setManager:;
+- (void)setMomentsFromAssetClusters:;
+- (id)processMomentsWithAssets:affectedMoments:;
+- (id)_processMomentsCollectionsYearsWithAssets:affectedMoments:;
+- (void)logRoutineInformation;
+- (void)setDebugDateFormatter:;
+- (id)dataManager;
+- (void).cxx_destruct;
+- (id)initWithDataManager:frequentLocationManager:localCreationDateCreator:;
+- (id)debugDateFormatter;
+- (id)localCreationDateCreator;
++ (id)_createMomentOrUpdateForAssetCluster:existingMomentDataForAssets:dataManager:usedMomentObjectIDs:debugDateFormatter:;
++ (id)createMomentOrUpdateForAssetCluster:affectedMoment:dataManager:;
+@end

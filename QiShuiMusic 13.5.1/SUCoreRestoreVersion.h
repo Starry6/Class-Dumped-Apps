@@ -1,0 +1,34 @@
+@interface SUCoreRestoreVersion : NSObject
+@property (nonatomic) NSString restoreVersionString;
+@property (nonatomic) NSArray parsedVersion;
+@property (nonatomic) q buildGroup;
+@property (nonatomic) q majorVersion;
+@property (nonatomic) q minorVersion;
+@property (nonatomic) q buildVersion;
+@property (nonatomic) q syncedVersion;
+@property (nonatomic) q suffixVersion;
+- (long long)majorVersion;
+- (long long)buildVersion;
+- (BOOL)isComparable:;
+- (long long)suffixVersion;
+- (id)parsedVersion;
+- (long long)buildGroup;
+- (id)initWithRestoreVersion:;
+- (long long)minorVersion;
+- (BOOL)_isStringOnlyNumbers:;
+- (void)setRestoreVersionString:;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (id)summary;
+- (void)_parseRestoreVersionString;
+- (void)setBuildGroup:;
+- (long long)syncedVersion;
+- (long long)compare:;
+- (void).cxx_destruct;
+- (void)setParsedVersion:;
+- (id)description;
+- (id)restoreVersionString;
+- (BOOL)isEqual:;
++ (BOOL)supportsSecureCoding;
++ (id)_stringForNSComparisonResult:;
+@end

@@ -1,0 +1,33 @@
+@interface GEOPolyLocationShiftResponse : PBCodable
+@property (nonatomic) NSInteger status;
+@property (nonatomic) Q parametersCount;
+@property (nonatomic) ^d parameters;
+@property (nonatomic) double radius;
+- (void)readAll:;
+- (void)setRadius:;
+- (void)setStatus:;
+- (void)dealloc;
+- (id)initWithJSON:;
+- (id)statusAsString:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (double)radius;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)parameters;
+- (BOOL)readFrom:;
+- (id)description;
+- (int)status;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (int)StringAsStatus:;
+- (id)copyWithZone:;
+- (unsigned long long)parametersCount;
+- (void)clearParameters;
+- (void)addParameters:;
+- (double)parametersAtIndex:;
+- (void)setParameters:count:;
++ (BOOL)isValid:;
+@end

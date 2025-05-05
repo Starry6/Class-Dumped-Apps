@@ -1,0 +1,2 @@
+@interface HTSLiveLinkMicOchannelKickOutRoot : GPBRootObject
+@end

@@ -1,0 +1,2 @@
+@interface LinkmicGetSettingsApiRoot : GPBRootObject
+@end

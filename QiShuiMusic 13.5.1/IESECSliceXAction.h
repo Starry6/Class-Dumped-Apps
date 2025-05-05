@@ -1,0 +1,30 @@
+@interface IESECSliceXAction : IESECSliceXBaseModel
+@property (nonatomic) NSDictionary fieldsExprMap;
+@property (nonatomic) NSString type;
+@property (nonatomic) NSDictionary fields;
+@property (nonatomic) NSArray actions;
+@property (nonatomic) BOOL disable;
+@property (nonatomic) NSDictionary originActionDict;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)fieldsExprMap;
+- (id)originActionDict;
+- (void)setDisable:;
+- (void)setFieldsExprMap:;
+- (void)setOriginActionDict:;
+- (BOOL)disable;
+- (void)setFields:;
+- (void)updateModelWithData:;
+- (void)setActions:;
+- (void)setType:;
+- (id)fields;
+- (id)type;
+- (id)actions;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
++ (id)containerPropertyWithGenericClass;
++ (id)modelWithDict:context:;
++ (id)propertyKeyWithJSONKey;
+@end

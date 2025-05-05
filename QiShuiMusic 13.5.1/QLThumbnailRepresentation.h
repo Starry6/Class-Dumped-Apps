@@ -1,0 +1,33 @@
+@interface QLThumbnailRepresentation : NSObject
+@property (nonatomic) q type;
+@property (nonatomic) UIImage UIImageThumbnail;
+@property (nonatomic) ^{CGImage=} CGImageThumbnail;
+@property (nonatomic) double scale;
+@property (nonatomic) NSInteger flavor;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} contentRect;
+@property (nonatomic) QLThumbnailMetadata generatedProperties;
+@property (nonatomic) ^{CGImage=} CGImage;
+@property (nonatomic) UIImage UIImage;
+@property (nonatomic) NSImage NSImage;
+- (id)contentRect;
+- (void)dealloc;
+- (void)setScale:;
+- (void)setType:;
+- (id)CGImage;
+- (void)setContentRect:;
+- (long long)type;
+- (void).cxx_destruct;
+- (id)description;
+- (double)scale;
+- (int)flavor;
+- (id)UIImage;
+- (void)setFlavor:;
+- (id)initWithThumbnailType:iconFlavor:CGImage:scale:contentRect:generatedProperties:;
+- (id)NSImage;
+- (id)UIImageThumbnail;
+- (void)setUIImageThumbnail:;
+- (id)CGImageThumbnail;
+- (void)setCGImageThumbnail:;
+- (id)generatedProperties;
+- (void)setGeneratedProperties:;
+@end

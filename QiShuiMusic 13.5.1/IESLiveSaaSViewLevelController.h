@@ -1,0 +1,30 @@
+@interface IESLiveSaaSViewLevelController : NSObject
+@property (nonatomic) NSMapTable viewTable;
+@property (nonatomic) NSArray sortedLevels;
+@property (nonatomic) NSNumber undefined;
+@property (nonatomic) UIView addingView;
+@property (nonatomic) UIView view;
+@property (nonatomic) NSString levelName;
+- (void)addSubview:identifier:;
+- (id)addingView;
+- (BOOL)disableViewSorted;
+- (id)initWithLevelName:;
+- (void)insertSubview:identifier:;
+- (id)levelName;
+- (void)removeSubview:;
+- (void)setAddingView:;
+- (void)setLevelName:;
+- (void)setSortedLevels:;
+- (void)setUndefined:;
+- (void)setViewTable:;
+- (id)sortedLevels;
+- (id)viewTable;
+- (void)didAddSubview:;
+- (id)view;
+- (void).cxx_destruct;
+- (id)viewForIdentifier:;
+- (void)setView:;
+- (long long)indexOfIdentifier:;
+- (id)undefined;
+- (BOOL)containsSubview:;
+@end

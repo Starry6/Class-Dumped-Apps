@@ -1,0 +1,2 @@
+@interface IESLiveSaaSPBIESLiveSaaSPBLuckyBoxRoot : GPBRootObject
+@end

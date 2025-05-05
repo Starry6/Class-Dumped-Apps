@@ -1,0 +1,36 @@
+@interface CPDistributedMessagingCenter : NSObject
+- (id)_initAnonymousServer;
+- (void)runServerOnCurrentThreadProtectedByEntitlement:;
+- (void)dealloc;
+- (id)sendMessageAndReceiveReplyName:userInfo:;
+- (BOOL)_sendMessage:userInfo:receiveReply:error:toTarget:selector:context:;
+- (BOOL)_isTaskEntitled:;
+- (void)sendMessageAndReceiveReplyName:userInfo:toTarget:selector:context:;
+- (id)delayReply;
+- (void)_dispatchMessageNamed:userInfo:reply:auditToken:;
+- (void)_setSendPort:;
+- (id)_initClientWithPort:;
+- (void)_sendReplyMessage:portPassing:onMachPort:;
+- (void)runServerOnCurrentThread;
+- (void)unregisterForMessageName:;
+- (id)_requiredEntitlement;
+- (id)_initWithServerName:requireLookupByPID:;
+- (void)stopServer;
+- (void)setTargetPID:;
+- (BOOL)sendMessageName:userInfo:;
+- (BOOL)_sendMessage:userInfo:receiveReply:error:toTarget:selector:context:nonBlocking:;
+- (BOOL)doesServerExist;
+- (unsigned int)_sendPort;
+- (void)_setupInvalidationSource;
+- (BOOL)sendNonBlockingMessageName:userInfo:;
+- (BOOL)_sendMessage:userInfoData:oolKey:oolData:makeServer:receiveReply:nonBlocking:error:;
+- (id)name;
+- (id)sendMessageAndReceiveReplyName:userInfo:error:;
+- (unsigned int)_serverPort;
+- (void)registerForMessageName:target:selector:;
+- (void)sendDelayedReply:dictionary:;
+- (id)_initWithServerName:;
++ (id)pidRestrictedCenterNamed:;
++ (id)centerNamed:;
++ (id)_centerNamed:requireLookupByPID:;
+@end

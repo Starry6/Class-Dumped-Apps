@@ -1,0 +1,36 @@
+@interface AMSKeepAlive : NSObject
+@property (nonatomic) RBSAssertion rbsAssertion;
+@property (nonatomic) NSString name;
+@property (nonatomic) q style;
+- (void)_removeProcessAssertion;
+- (id)initWithName:style:;
+- (id)_assertionName;
+- (void)_removeOSTransaction;
+- (void)dealloc;
+- (void)_takeOSTransaction;
+- (id)initWithName:;
+- (void)_takeRBSAssertion;
+- (id)initRBSWithName:;
+- (void)_startRBSLogTimer;
+- (void)_takeProcessAssertion;
+- (void)setRbsAssertion:;
+- (void).cxx_destruct;
+- (void)_startLogTimer;
+- (id)rbsAssertion;
+- (void)rbs_invalidate;
+- (id)name;
+- (id)_cacheKey;
+- (void)_removeRBSAssertion;
+- (long long)style;
+- (void)invalidate;
+- (id)initRBSWithName:style:;
++ (void)keepAliveWithName:style:block:;
++ (id)rbs_keepAliveWithName:style:;
++ (void)rbs_keepAliveWithName:style:block:;
++ (id)keepAliveWithName:style:;
++ (void)_accessAssertionCache:;
++ (id)keepAliveWithFormat:;
++ (id)keepAliveWithName:;
++ (void)_handleAssertionExpiration;
++ (id)rbs_keepAliveWithName:;
+@end

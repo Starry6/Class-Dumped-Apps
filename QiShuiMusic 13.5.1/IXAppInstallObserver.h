@@ -1,0 +1,31 @@
+@interface IXAppInstallObserver : NSObject
+@property (nonatomic) NSXPCListener listener;
+@property (nonatomic) NSObject<OS_dispatch_queue> delegateQueue;
+@property (nonatomic) <IXAppInstallObserverDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)dealloc;
+- (id)_client_coordinatorShouldBeginRestoringUserDataWithSeed:;
+- (id)_client_coordinatorShouldPrioritizeWithSeed:;
+- (id)_client_shouldPrioritizeAppWithIdentity:;
+- (id)_oncePerBootUniqueIdentifierForServiceName:;
+- (id)initWithMachServiceName:forClients:delegate:;
+- (id)listener;
+- (id)delegateQueue;
+- (id)_client_coordinatorDidInstallPlaceholderWithSeed:forRecordPromise:;
+- (id)_client_coordinatorWithSeed:didCancelWithReason:client:;
+- (id)_client_shouldPrioritizeAppWithBundleID:;
+- (id)delegate;
+- (id)_client_coordinatorShouldResumeWithSeed:;
+- (BOOL)listener:shouldAcceptNewConnection:;
+- (void).cxx_destruct;
+- (id)_client_coordinatorWithSeed:configuredPromiseDidBeginFulfillment:;
+- (void)_internalInit;
+- (void)setDelegateQueue:;
+- (void)setListener:;
+- (id)initTransientForClients:delegate:;
+- (id)_client_coordinatorDidCompleteSuccessfullyWithSeed:forRecordPromise:;
+- (id)_client_coordinatorShouldPauseWithSeed:;
+@end

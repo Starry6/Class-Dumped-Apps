@@ -1,0 +1,32 @@
+@interface IESLiveTeamFightScoreBarBonusTimeView : UIView
+@property (nonatomic) UIImageView bonusBgView;
+@property (nonatomic) q bonusTimeType;
+@property (nonatomic) UILabel bonusTimeLabel;
+@property (nonatomic) UILabel bonusCoefficientLabel;
+@property (nonatomic) UIView seperatorLineView;
+@property (nonatomic) IESLiveCountTimer countTimer;
+@property (nonatomic) Q duration;
+@property (nonatomic) double coefficient;
+@property (nonatomic) @? countDownTimerCompletion;
+- (void)setBonusBgView:;
+- (id)bonusBgView;
+- (id)bonusCoefficientLabel;
+- (id)bonusTimeLabel;
+- (long long)bonusTimeType;
+- (id)countDownTimerCompletion;
+- (id)countTimer;
+- (id)initWithBonusTimeType:duration:coefficient:;
+- (id)seperatorLineView;
+- (void)setBonusCoefficientLabel:;
+- (void)setBonusTimeLabel:;
+- (void)setBonusTimeType:;
+- (void)setCountDownTimerCompletion:;
+- (void)setCountTimer:;
+- (void)setSeperatorLineView:;
+- (double)coefficient;
+- (void)setDuration:;
+- (void).cxx_destruct;
+- (unsigned long long)duration;
+- (void)setupUI;
+- (void)setCoefficient:;
+@end

@@ -1,0 +1,33 @@
+@interface CJPayBizDYPayModel : NSObject
+@property (nonatomic) CJPayDefaultChannelShowConfig showConfig;
+@property (nonatomic) CJPayHomePageViewController homeVC;
+@property (nonatomic) NSString createResponseStr;
+@property (nonatomic) NSDictionary trackParams;
+@property (nonatomic) BOOL isPaymentForOuterApp;
+@property (nonatomic) NSString cj_merchantID;
+@property (nonatomic) NSString intergratedTradeIdentify;
+@property (nonatomic) NSString processStr;
+@property (nonatomic) NSString jhResultPageStyle;
+@property (nonatomic) CJPayIntegratedCashierProcessManager processManager;
+- (void)setTrackParams:;
+- (id)cj_merchantID;
+- (id)createResponseStr;
+- (id)homeVC;
+- (id)intergratedTradeIdentify;
+- (BOOL)isPaymentForOuterApp;
+- (id)jhResultPageStyle;
+- (id)processStr;
+- (void)setCj_merchantID:;
+- (void)setCreateResponseStr:;
+- (void)setHomeVC:;
+- (void)setIntergratedTradeIdentify:;
+- (void)setIsPaymentForOuterApp:;
+- (void)setJhResultPageStyle:;
+- (void)setProcessStr:;
+- (void)setShowConfig:;
+- (id)showConfig;
+- (id)trackParams;
+- (void)setProcessManager:;
+- (void).cxx_destruct;
+- (id)processManager;
+@end

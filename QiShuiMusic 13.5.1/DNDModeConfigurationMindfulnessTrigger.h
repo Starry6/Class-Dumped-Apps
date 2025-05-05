@@ -1,0 +1,2 @@
+@interface DNDModeConfigurationMindfulnessTrigger : DNDModeConfigurationTrigger
+@end

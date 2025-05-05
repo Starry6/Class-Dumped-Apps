@@ -1,0 +1,2 @@
+@interface TRITriassignmentRoot : TRIPBRootObject
+@end

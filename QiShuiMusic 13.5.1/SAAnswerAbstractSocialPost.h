@@ -1,0 +1,37 @@
+@interface SAAnswerAbstractSocialPost : AceObject
+@property (nonatomic) NSString author;
+@property (nonatomic) NSString authorTitle;
+@property (nonatomic) NSArray comments;
+@property (nonatomic) NSDate dateCreated;
+@property (nonatomic) NSDate dateModified;
+@property (nonatomic) NSURL icon;
+@property (nonatomic) q rank;
+@property (nonatomic) NSString text;
+@property (nonatomic) NSString title;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)groupIdentifier;
+- (void)setText:;
+- (id)icon;
+- (id)author;
+- (void)setTitle:;
+- (long long)rank;
+- (id)title;
+- (id)encodedClassName;
+- (id)dateCreated;
+- (void)setIcon:;
+- (void)setAuthor:;
+- (void)setRank:;
+- (id)text;
+- (id)comments;
+- (void)setComments:;
+- (void)setDateCreated:;
+- (id)dateModified;
+- (void)setDateModified:;
+- (id)authorTitle;
+- (void)setAuthorTitle:;
++ (id)abstractSocialPost;
++ (id)abstractSocialPostWithDictionary:context:;
+@end

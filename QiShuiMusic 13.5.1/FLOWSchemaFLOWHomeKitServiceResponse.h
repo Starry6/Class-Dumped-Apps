@@ -1,0 +1,33 @@
+@interface FLOWSchemaFLOWHomeKitServiceResponse : SISchemaInstrumentationMessage
+@property (nonatomic) NSInteger homeKitServiceType;
+@property (nonatomic) BOOL hasHomeKitServiceType;
+@property (nonatomic) NSInteger numServicesCompleted;
+@property (nonatomic) BOOL hasNumServicesCompleted;
+@property (nonatomic) NSInteger numServicesFailed;
+@property (nonatomic) BOOL hasNumServicesFailed;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)setHomeKitServiceType:;
+- (BOOL)hasHomeKitServiceType;
+- (void)setHasHomeKitServiceType:;
+- (void)deleteHomeKitServiceType;
+- (void)setNumServicesCompleted:;
+- (BOOL)hasNumServicesCompleted;
+- (void)setHasNumServicesCompleted:;
+- (void)deleteNumServicesCompleted;
+- (void)setNumServicesFailed:;
+- (BOOL)hasNumServicesFailed;
+- (void)setHasNumServicesFailed:;
+- (void)deleteNumServicesFailed;
+- (int)homeKitServiceType;
+- (int)numServicesCompleted;
+- (int)numServicesFailed;
+@end

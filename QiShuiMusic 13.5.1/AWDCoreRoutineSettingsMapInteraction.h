@@ -1,0 +1,35 @@
+@interface AWDCoreRoutineSettingsMapInteraction : PBCodable
+@property (nonatomic) BOOL hasTimestamp;
+@property (nonatomic) Q timestamp;
+@property (nonatomic) BOOL hasSessionId;
+@property (nonatomic) NSString sessionId;
+@property (nonatomic) BOOL hasGestureType;
+@property (nonatomic) NSInteger gestureType;
+@property (nonatomic) BOOL hasDeviceClass;
+@property (nonatomic) NSInteger deviceClass;
+- (void)setHasDeviceClass:;
+- (BOOL)hasDeviceClass;
+- (void)setSessionId:;
+- (int)deviceClass;
+- (id)sessionId;
+- (BOOL)hasSessionId;
+- (void)setDeviceClass:;
+- (void)dealloc;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)setHasTimestamp:;
+- (void)mergeFrom:;
+- (BOOL)hasTimestamp;
+- (void)setTimestamp:;
+- (BOOL)readFrom:;
+- (unsigned long long)timestamp;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (int)gestureType;
+- (void)setGestureType:;
+- (void)setHasGestureType:;
+- (BOOL)hasGestureType;
+@end

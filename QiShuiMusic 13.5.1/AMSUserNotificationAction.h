@@ -1,0 +1,34 @@
+@interface AMSUserNotificationAction : NSObject
+@property (nonatomic) Q un_ActionOptions;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) NSURL defaultURL;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSURLRequest request;
+@property (nonatomic) NSString systemImageName;
+@property (nonatomic) AMSMetricsEvent metricsEvent;
+@property (nonatomic) NSDictionary userInfo;
+@property (nonatomic) q style;
+- (id)init;
+- (id)initWithTitle:style:;
+- (id)userInfo;
+- (id)identifier;
+- (void)setStyle:;
+- (id)initWithTitle:;
+- (void)setTitle:;
+- (id)request;
+- (id)systemImageName;
+- (void)setSystemImageName:;
+- (id)title;
+- (void)setUserInfo:;
+- (void).cxx_destruct;
+- (void)setRequest:;
+- (long long)style;
+- (void)setIdentifier:;
+- (id)metricsEvent;
+- (void)setMetricsEvent:;
+- (id)initWithUserInfoAction:;
+- (id)generateUserInfoAction;
+- (unsigned long long)un_ActionOptions;
+- (id)defaultURL;
+- (void)setDefaultURL:;
+@end

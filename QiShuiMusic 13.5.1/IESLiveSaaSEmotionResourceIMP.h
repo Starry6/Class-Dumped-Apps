@@ -1,0 +1,38 @@
+@interface IESLiveSaaSEmotionResourceIMP : NSObject
+@property (nonatomic) NSCache imageCache;
+@property (nonatomic) NSArray hostEmoticonItems;
+@property (nonatomic) NSArray set_hostEmoticonItems;
+@property (nonatomic) NSDictionary emoticonTitleImageMapper;
+@property (nonatomic) BOOL useLocalImage;
+@property (nonatomic) BOOL fix_same_name_emoji;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)imageWithEmojiTitle:imageScale:;
+- (void)clearRecentUseEmoticon;
+- (id)emoticonItems;
+- (id)emoticonTitleImageMapper;
+- (void)fetchImageWithEmojiText:imageScale:completion:;
+- (BOOL)fix_same_name_emoji;
+- (id)hostEmoticonItems;
+- (id)imageWithEmojiIconName:imageScale:;
+- (id)imageWithEmojiText:imageScale:;
+- (id)lastEmojiPath;
+- (void)loadEmojiResource;
+- (id)quickReplyEmoticonItems;
+- (void)setEmoticonTitleImageMapper:;
+- (void)setFix_same_name_emoji:;
+- (void)setHostEmoticonItems:;
+- (void)setLastEmojiPath:;
+- (void)setSet_hostEmoticonItems:;
+- (void)setUseLocalImage:;
+- (id)set_hostEmoticonItems;
+- (BOOL)useLocalImage;
+- (id)imageCache;
+- (id)init;
+- (void)setImageCache:;
+- (void).cxx_destruct;
+- (id)resourcePath;
++ (id)sharedInstance;
+@end

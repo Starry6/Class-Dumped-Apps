@@ -1,0 +1,35 @@
+@interface AWDIDSRealTimeEncryptionMissingPrekeys : PBCodable
+@property (nonatomic) BOOL hasTimestamp;
+@property (nonatomic) Q timestamp;
+@property (nonatomic) BOOL hasServiceName;
+@property (nonatomic) NSString serviceName;
+@property (nonatomic) BOOL hasActiveParticipants;
+@property (nonatomic) Q activeParticipants;
+@property (nonatomic) BOOL hasMissingPrekeys;
+@property (nonatomic) Q missingPrekeys;
+- (void)dealloc;
+- (void)setServiceName:;
+- (void)writeTo:;
+- (id)serviceName;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)setHasTimestamp:;
+- (void)mergeFrom:;
+- (BOOL)hasTimestamp;
+- (void)setTimestamp:;
+- (BOOL)hasServiceName;
+- (BOOL)readFrom:;
+- (unsigned long long)timestamp;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (unsigned long long)activeParticipants;
+- (void)setActiveParticipants:;
+- (void)setHasActiveParticipants:;
+- (BOOL)hasActiveParticipants;
+- (void)setMissingPrekeys:;
+- (void)setHasMissingPrekeys:;
+- (BOOL)hasMissingPrekeys;
+- (unsigned long long)missingPrekeys;
+@end

@@ -1,0 +1,34 @@
+@interface RFSchemaRFComponentShown : SISchemaInstrumentationMessage
+@property (nonatomic) NSInteger component;
+@property (nonatomic) BOOL hasComponent;
+@property (nonatomic) NSString componentName;
+@property (nonatomic) BOOL hasComponentName;
+@property (nonatomic) NSString componentIndex;
+@property (nonatomic) BOOL hasComponentIndex;
+@property (nonatomic) NSData jsonData;
+- (id)componentName;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (int)component;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)componentIndex;
+- (void)setComponentIndex:;
+- (void)setHasComponentIndex:;
+- (BOOL)hasComponentIndex;
+- (void)setComponentName:;
+- (BOOL)hasComponentName;
+- (void)setComponent:;
+- (BOOL)hasComponent;
+- (void)setHasComponent:;
+- (void)deleteComponent;
+- (void)deleteComponentName;
+- (void)deleteComponentIndex;
+- (void)setHasComponentName:;
+@end

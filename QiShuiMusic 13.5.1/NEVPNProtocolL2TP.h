@@ -1,0 +1,37 @@
+@interface NEVPNProtocolL2TP : NEVPNProtocolPPP
+@property (nonatomic) q machineAuthenticationMethod;
+@property (nonatomic) NSData sharedSecretReference;
+@property (nonatomic) NEKeychainItem sharedSecretKeychainItem;
+@property (nonatomic) NSData machineIdentityReference;
+@property (nonatomic) NSString localIdentifier;
+@property (nonatomic) NSArray userPreferences;
+- (BOOL)checkValidityAndCollectErrors:;
+- (id)init;
+- (id)descriptionWithIndent:options:;
+- (id)localIdentifier;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (void)setUserPreferences:;
+- (id)copyWithZone:;
+- (id)userPreferences;
+- (void)setLocalIdentifier:;
+- (id)sharedSecretReference;
+- (void)setSharedSecretReference:;
+- (BOOL)setServiceProtocolsInService:;
+- (BOOL)updateWithServiceProtocolsFromService:;
+- (void)removeKeychainItemsInDomain:keepIdentity:;
+- (void)syncWithKeychainInDomain:configuration:suffix:;
+- (id)createInterface;
+- (BOOL)needToUpdateKeychain;
+- (void)migratePasswordsFromPreferences:;
+- (id)sharedSecretKeychainItem;
+- (void)setSharedSecretKeychainItem:;
+- (void)setMachineIdentityReference:;
+- (id)machineIdentityReference;
+- (id)copyLegacyIPSecDictionary;
+- (void)setIPSecSettingsFromLegacyDictionary:;
+- (long long)machineAuthenticationMethod;
+- (void)setMachineAuthenticationMethod:;
++ (BOOL)supportsSecureCoding;
+@end

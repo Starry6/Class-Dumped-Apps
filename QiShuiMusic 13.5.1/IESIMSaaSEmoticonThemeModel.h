@@ -1,0 +1,34 @@
+@interface IESIMSaaSEmoticonThemeModel : MTLModel
+@property (nonatomic) q themeStyle;
+@property (nonatomic) NSString themeCoverIcon;
+@property (nonatomic) NSArray emoticonArray;
+@property (nonatomic) NSNumber identifier;
+@property (nonatomic) NSNumber version;
+@property (nonatomic) NSString display_name;
+@property (nonatomic) NSString icon_url;
+@property (nonatomic) NSArray stickers;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)display_name;
+- (id)emoticonArray;
+- (id)icon_url;
+- (void)setDisplay_name:;
+- (void)setEmoticonArray:;
+- (void)setIcon_url:;
+- (void)setThemeCoverIcon:;
+- (void)setThemeStyle:;
+- (id)themeCoverIcon;
+- (void)setVersion:;
+- (id)version;
+- (id)identifier;
+- (void).cxx_destruct;
+- (void)setIdentifier:;
+- (long long)themeStyle;
+- (id)stickers;
+- (void)setStickers:;
++ (id)emoticonArrayJSONTransformer;
++ (id)stickersJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

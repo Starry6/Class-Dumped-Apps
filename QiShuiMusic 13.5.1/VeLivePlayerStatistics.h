@@ -1,0 +1,31 @@
+@interface VeLivePlayerStatistics : NSObject
+@property (nonatomic) NSURL url;
+@property (nonatomic) BOOL isHardWareDecode;
+@property (nonatomic) NSInteger delayMs;
+@property (nonatomic) NSInteger stallTimeMs;
+@property (nonatomic) NSString videoCodec;
+@property (nonatomic) NSInteger width;
+@property (nonatomic) NSInteger height;
+@property (nonatomic) float fps;
+@property (nonatomic) q bitrate;
+@property (nonatomic) q videoBufferMs;
+@property (nonatomic) q audioBufferMs;
+@property (nonatomic) q format;
+@property (nonatomic) q protocol;
+- (long long)audioBufferMs;
+- (BOOL)isHardWareDecode;
+- (int)stallTimeMs;
+- (long long)videoBufferMs;
+- (long long)protocol;
+- (id)url;
+- (long long)format;
+- (long long)bitrate;
+- (int)height;
+- (void)parseData:;
+- (int)width;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (float)fps;
+- (id)videoCodec;
+- (int)delayMs;
+@end

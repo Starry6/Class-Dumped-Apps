@@ -1,0 +1,30 @@
+@interface AFSharedUserInfo : NSObject
+@property (nonatomic) NSString sharedUserId;
+@property (nonatomic) NSString loggableSharedUserId;
+@property (nonatomic) AFCompanionDeviceInfo companionDeviceInfo;
+@property (nonatomic) BOOL personalRequestsEnabled;
+@property (nonatomic) BOOL companionLinkReady;
+@property (nonatomic) NSString homeUserId;
+@property (nonatomic) NSString iCloudAltDSID;
+- (id)init;
+- (id)mutatedCopyWithMutator:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)_descriptionWithIndent:;
+- (id)initWithBuilder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)sharedUserId;
+- (id)loggableSharedUserId;
+- (id)initWithSharedUserId:loggableSharedUserId:companionDeviceInfo:personalRequestsEnabled:companionLinkReady:homeUserId:iCloudAltDSID:;
+- (id)companionDeviceInfo;
+- (BOOL)personalRequestsEnabled;
+- (BOOL)companionLinkReady;
+- (id)homeUserId;
+- (id)iCloudAltDSID;
++ (id)newWithBuilder:;
++ (BOOL)supportsSecureCoding;
+@end

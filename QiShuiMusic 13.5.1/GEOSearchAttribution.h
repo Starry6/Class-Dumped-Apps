@@ -1,0 +1,36 @@
+@interface GEOSearchAttribution : PBCodable
+@property (nonatomic) NSString sourceIdentifier;
+@property (nonatomic) I sourceVersion;
+@property (nonatomic) NSMutableArray attributionURLs;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (id)init;
+- (id)initWithJSON:;
+- (id)sourceIdentifier;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (unsigned int)sourceVersion;
+- (BOOL)isEqual:;
+- (void)setSourceIdentifier:;
+- (id)copyWithZone:;
+- (void)setSourceVersion:;
+- (id)attributionURLs;
+- (void)setAttributionURLs:;
+- (void)clearAttributionURLs;
+- (void)addAttributionURLs:;
+- (unsigned long long)attributionURLsCount;
+- (id)attributionURLsAtIndex:;
++ (BOOL)isValid:;
++ (Class)attributionURLsType;
+@end

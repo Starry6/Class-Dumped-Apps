@@ -1,0 +1,35 @@
+@interface NLXSchemaCDMTask : SISchemaInstrumentationMessage
+@property (nonatomic) SISchemaUUID taskId;
+@property (nonatomic) BOOL hasTaskId;
+@property (nonatomic) USOSchemaUSOGraph task;
+@property (nonatomic) BOOL hasTask;
+@property (nonatomic) double score;
+@property (nonatomic) BOOL hasScore;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (double)score;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)task;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (id)taskId;
+- (void)setTask:;
+- (void)setScore:;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (BOOL)hasScore;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)setHasScore:;
+- (BOOL)hasTaskId;
+- (void)setTaskId:;
+- (BOOL)hasTask;
+- (void)setHasTask:;
+- (void)deleteTask;
+- (void)deleteTaskId;
+- (void)setHasTaskId:;
+- (void)deleteScore;
+@end

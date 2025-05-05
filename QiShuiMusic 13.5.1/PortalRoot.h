@@ -1,0 +1,2 @@
+@interface PortalRoot : GPBRootObject
+@end

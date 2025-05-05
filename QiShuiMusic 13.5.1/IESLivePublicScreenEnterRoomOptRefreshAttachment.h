@@ -1,0 +1,38 @@
+@interface IESLivePublicScreenEnterRoomOptRefreshAttachment : NSObject
+@property (nonatomic) q useOptimizeConfigTime;
+@property (nonatomic) double refreshDuration;
+@property (nonatomic) q refreshMessageCount;
+@property (nonatomic) IESLivePublicScreenDataFlowManager dataFlowManager;
+@property (nonatomic) IESLivePublicScreenContext publicScreenContext;
+@property (nonatomic) HTSEventContext trackContext;
+@property (nonatomic) @? didAttach;
+@property (nonatomic) @? didDetach;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)abilityProtocol;
+- (id)dataFlowManager;
+- (double)refreshDuration;
+- (id)didAttach;
+- (id)didDetach;
+- (id)publicScreenContext;
+- (void)publicScreenDidCommitData:;
+- (long long)refreshMessageCount;
+- (void)setDataFlowManager:;
+- (void)setDidAttach:;
+- (void)setDidDetach:;
+- (void)setEnterRoomOptimizeConfig;
+- (void)setPublicScreenContext:;
+- (void)setRefreshDuration:;
+- (void)setRefreshMessageCount:;
+- (void)setTrackContext:;
+- (void)setUseOptimizeConfigTime:;
+- (BOOL)shouldActive;
+- (id)trackContext;
+- (long long)useOptimizeConfigTime;
+- (void)detach;
+- (void)attach;
+- (id)type;
+- (void).cxx_destruct;
+@end

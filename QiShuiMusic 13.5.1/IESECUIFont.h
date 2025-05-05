@@ -1,0 +1,29 @@
+@interface IESECUIFont : NSObject
++ (id)forceDouyinNumberABCFontOfSize:;
++ (BOOL)bigFontModeOn;
++ (id)byteNumberFontOfSize:weight:;
++ (double)currentFontScale;
++ (id)customFontWithName:;
++ (id)douyinNumberABCFontOfSize:;
++ (id)douyinNumberABCFontOfSize:originalWeight:;
++ (id)douyinNumberABCFontOfSize:weight:;
++ (double)enlargeSize:;
++ (id)fontOfSize:weight:;
++ (id)fontOfSize:weightOfInt:;
++ (double)fontWeightFromInt:;
++ (id)fontWithIESECTextStyle:;
++ (id)fontWithName:fontSize:fontWeight:;
++ (id)forceByteNumberFontOfSize:weight:;
++ (id)forceCustomFontWithName:;
++ (id)forceDouyinNumberABCFontOfSize:weight:;
++ (id)forceFontOfSize:;
++ (id)forceFontOfSize:weight:;
++ (id)forceFontWithName:size:;
++ (id)forceMonospaceSystemFontOfSize:weightOfInt:;
++ (id)forceMonospacedDigitSystemFontOfSize:weight:;
++ (id)monospacedDigitFontOfSize:weightOfInt:;
++ (id)fontWithName:size:;
++ (id)monospacedDigitSystemFontOfSize:weight:;
++ (id)fontOfSize:;
++ (id)boldFontOfSize:;
+@end

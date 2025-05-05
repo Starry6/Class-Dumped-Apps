@@ -1,0 +1,32 @@
+@interface IESECGoodsWarmupModel : MTLModel
+@property (nonatomic) double initTimeinterval;
+@property (nonatomic) double serverTime;
+@property (nonatomic) double startTime;
+@property (nonatomic) NSString startText;
+@property (nonatomic) NSString title;
+@property (nonatomic) BOOL isOrdered;
+@property (nonatomic) q orderCount;
+@property (nonatomic) double currentTime;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (double)initTimeinterval;
+- (long long)orderCount;
+- (void)setInitTimeinterval:;
+- (void)setIsOrdered:;
+- (void)setOrderCount:;
+- (void)setServerTime:;
+- (void)setStartText:;
+- (id)startText;
+- (id)init;
+- (BOOL)isOrdered;
+- (void)setStartTime:;
+- (void)setTitle:;
+- (double)startTime;
+- (id)title;
+- (void).cxx_destruct;
+- (double)currentTime;
+- (double)serverTime;
++ (id)JSONKeyPathsByPropertyKey;
+@end

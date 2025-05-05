@@ -1,0 +1,37 @@
+@interface AMSMarketingItem : NSObject
+@property (nonatomic) NSDictionary artworkDictionary;
+@property (nonatomic) NSString badge;
+@property (nonatomic) NSString campaignID;
+@property (nonatomic) NSString itemID;
+@property (nonatomic) NSArray itemActions;
+@property (nonatomic) NSDictionary rawValues;
+@property (nonatomic) NSArray relatedContent;
+@property (nonatomic) NSString serviceType;
+@property (nonatomic) NSString subtitle;
+@property (nonatomic) NSString templateID;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString type;
+@property (nonatomic) NSString URLString;
+@property (nonatomic) NSArray videos;
+- (id)templateID;
+- (id)URLString;
+- (id)badge;
+- (id)itemID;
+- (id)serviceType;
+- (id)initWithDictionary:;
+- (id)endDate;
+- (id)type;
+- (id)title;
+- (id)campaignID;
+- (void).cxx_destruct;
+- (id)rawValues;
+- (id)subtitle;
+- (id)video;
+- (id)artworkDictionary;
+- (id)itemActions;
+- (id)relatedContent;
+- (id)videos;
+- (id)abSettings;
+- (id)renderingAttributes;
+- (id)tagline;
+@end

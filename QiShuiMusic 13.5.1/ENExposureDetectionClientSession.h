@@ -1,0 +1,32 @@
+@interface ENExposureDetectionClientSession : NSObject
+@property (nonatomic) @? completionHandler;
+@property (nonatomic) ENExposureConfiguration configuration;
+@property (nonatomic) NSObject<OS_dispatch_queue> dispatchQueue;
+@property (nonatomic) NSArray diagnosisKeyURLs;
+@property (nonatomic) ENManager manager;
+@property (nonatomic) NSProgress progress;
+- (id)init;
+- (void)_run;
+- (void)encodeWithXPCObject:;
+- (id)dispatchQueue;
+- (void)setProgress:;
+- (id)initWithXPCObject:error:;
+- (void)setCompletionHandler:;
+- (void)setDispatchQueue:;
+- (void)setConfiguration:;
+- (id)progress;
+- (id)manager;
+- (void)setManager:;
+- (id)configuration;
+- (void).cxx_destruct;
+- (void)invalidate;
+- (void)activate;
+- (id)completionHandler;
+- (void)_reportError:where:;
+- (BOOL)_runActivateStart;
+- (BOOL)_runAddFile;
+- (BOOL)_runFinishStart;
+- (void)_runDetectionDone;
+- (id)diagnosisKeyURLs;
+- (void)setDiagnosisKeyURLs:;
+@end

@@ -1,0 +1,30 @@
+@interface GEOComposedRouteVisualInfo : NSObject
+@property (nonatomic) <GEOServerFormattedString> title;
+@property (nonatomic) <GEOServerFormattedString> detail;
+@property (nonatomic) GEOStyleAttributes styleAttributes;
+@property (nonatomic) <GEOTransitArtworkDataSource> icon;
+@property (nonatomic) NSArray laneChangeInfos;
+@property (nonatomic) {GEOPolylineCoordinateRange={?=If}{?=If}} routeCoordinateRange;
+@property (nonatomic) {?=ddd} startCoordinate;
+@property (nonatomic) {?=ddd} endCoordinate;
+- (id)icon;
+- (id)initWithCoder:;
+- (id)detail;
+- (void)encodeWithCoder:;
+- (id)title;
+- (void).cxx_destruct;
+- (id)description;
+- (id)styleAttributes;
+- (id)laneChangeInfos;
+- (id)routeCoordinateRange;
+- (id)startCoordinate;
+- (id)endCoordinate;
+- (id)initWithTitle:detail:routeCoordinate:locationCoordinate:;
+- (id)initWithGeoRouteLineStyleInfo:pathIndex:coordinates:distanceOffset:;
++ (BOOL)supportsSecureCoding;
++ (id)visualInfosForGeoWaypointRoute:coordinates:updateable:;
++ (id)cameraInfosForGeoWaypointRoute:coordinates:updateable:;
++ (id)visualInfosForRoute:etaRoute:;
++ (id)cameraInfosForRoute:etaRoute:;
++ (id)_infosForRouteLineStyleInfos:pathIndex:coordinates:updateable:;
+@end

@@ -1,0 +1,31 @@
+@interface DESEncryptedData : PBCodable
+@property (nonatomic) BOOL hasVersion;
+@property (nonatomic) NSInteger version;
+@property (nonatomic) NSData data;
+@property (nonatomic) BOOL hasEncryptedKey;
+@property (nonatomic) NSData encryptedKey;
+@property (nonatomic) BOOL hasAlgorithm;
+@property (nonatomic) NSString algorithm;
+- (id)algorithm;
+- (void)setHasVersion:;
+- (void)setVersion:;
+- (id)data;
+- (int)version;
+- (void)writeTo:;
+- (void)setAlgorithm:;
+- (unsigned long long)hash;
+- (BOOL)hasVersion;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (void)setData:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)encryptedKey;
+- (void)setEncryptedKey:;
+- (BOOL)hasAlgorithm;
+- (BOOL)hasEncryptedKey;
+@end

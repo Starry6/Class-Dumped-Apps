@@ -1,0 +1,33 @@
+@interface AWDITesterCertApplePayTestSubmission : PBCodable
+@property (nonatomic) BOOL hasTimestamp;
+@property (nonatomic) Q timestamp;
+@property (nonatomic) BOOL hasAccessoryName;
+@property (nonatomic) NSString accessoryName;
+@property (nonatomic) BOOL hasTestUUID;
+@property (nonatomic) NSString testUUID;
+@property (nonatomic) BOOL hasTestName;
+@property (nonatomic) NSString testName;
+- (id)accessoryName;
+- (void)setTestName:;
+- (void)dealloc;
+- (id)testName;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)setHasTimestamp:;
+- (void)mergeFrom:;
+- (BOOL)hasTimestamp;
+- (void)setTimestamp:;
+- (BOOL)readFrom:;
+- (unsigned long long)timestamp;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasAccessoryName;
+- (void)setAccessoryName:;
+- (BOOL)hasTestName;
+- (BOOL)hasTestUUID;
+- (id)testUUID;
+- (void)setTestUUID:;
+@end

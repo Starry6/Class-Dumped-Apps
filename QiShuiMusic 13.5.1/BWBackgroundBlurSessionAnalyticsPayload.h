@@ -1,0 +1,32 @@
+@interface BWBackgroundBlurSessionAnalyticsPayload : NSObject
+@property (nonatomic) NSString clientApplicationID;
+@property (nonatomic) q effectQuality;
+@property (nonatomic) double averageProcessingTime;
+@property (nonatomic) double maxProcessingTime;
+@property (nonatomic) q numberOfFrames;
+@property (nonatomic) NSInteger numberOfFrameDrops;
+@property (nonatomic) NSInteger maxThermalSystemPressureLevel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (void)dealloc;
+- (id)clientApplicationID;
+- (void)setClientApplicationID:;
+- (id)eventName;
+- (void)reset;
+- (id)eventDictionary;
+- (long long)effectQuality;
+- (void)setEffectQuality:;
+- (double)averageProcessingTime;
+- (void)setAverageProcessingTime:;
+- (double)maxProcessingTime;
+- (void)setMaxProcessingTime:;
+- (long long)numberOfFrames;
+- (void)setNumberOfFrames:;
+- (int)numberOfFrameDrops;
+- (void)setNumberOfFrameDrops:;
+- (int)maxThermalSystemPressureLevel;
+- (void)setMaxThermalSystemPressureLevel:;
+@end

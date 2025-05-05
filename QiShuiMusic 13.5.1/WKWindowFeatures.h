@@ -1,0 +1,33 @@
+@interface WKWindowFeatures : NSObject
+@property (nonatomic) NSNumber _locationBarVisibility;
+@property (nonatomic) NSNumber _scrollbarsVisibility;
+@property (nonatomic) NSNumber _fullscreenDisplay;
+@property (nonatomic) NSNumber _dialogDisplay;
+@property (nonatomic) NSNumber menuBarVisibility;
+@property (nonatomic) NSNumber statusBarVisibility;
+@property (nonatomic) NSNumber toolbarsVisibility;
+@property (nonatomic) NSNumber allowsResizing;
+@property (nonatomic) NSNumber x;
+@property (nonatomic) NSNumber y;
+@property (nonatomic) NSNumber width;
+@property (nonatomic) NSNumber height;
+@property (nonatomic) ^{Object=^^?@} _apiObject;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)dealloc;
+- (id)y;
+- (id)_apiObject;
+- (id)x;
+- (id)height;
+- (id)width;
+- (id)menuBarVisibility;
+- (id)statusBarVisibility;
+- (id)toolbarsVisibility;
+- (id)allowsResizing;
+- (id)_locationBarVisibility;
+- (id)_scrollbarsVisibility;
+- (id)_fullscreenDisplay;
+- (id)_dialogDisplay;
+@end

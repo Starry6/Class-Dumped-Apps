@@ -1,0 +1,35 @@
+@interface SKLightNode : SKNode
+@property (nonatomic) BOOL enabled;
+@property (nonatomic) UIColor lightColor;
+@property (nonatomic) UIColor ambientColor;
+@property (nonatomic) UIColor shadowColor;
+@property (nonatomic) double falloff;
+@property (nonatomic) I categoryBitMask;
+- (id)init;
+- (void)commonInit;
+- (id)lightColor;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void)setEnabled:;
+- (id)shadowColor;
+- (void)setShadowColor:;
+- (id)copyWithZone:;
+- (BOOL)isEnabled;
+- (unsigned int)categoryBitMask;
+- (void)setCategoryBitMask:;
+- (void)setFalloff:;
+- (double)falloff;
+- (void)setLightColor:;
+- (BOOL)isEqualToNode:;
+- (id)ambientColor;
+- (id)_makeBackingNode;
+- (void)_didMakeBackingNode;
+- (double)lightDecay;
+- (void)setLightDecay:;
+- (unsigned int)lightCategoryBitMask;
+- (void)setLightCategoryBitMask:;
+- (void)setAmbientColor:;
++ (BOOL)supportsSecureCoding;
++ (id)debugHierarchyPropertyDescriptions;
++ (id)debugHierarchyValueForPropertyWithName:onObject:outOptions:outError:;
+@end

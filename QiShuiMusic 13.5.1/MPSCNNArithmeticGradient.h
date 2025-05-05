@@ -1,0 +1,34 @@
+@interface MPSCNNArithmeticGradient : MPSCNNGradientKernel
+@property (nonatomic) float primaryScale;
+@property (nonatomic) float secondaryScale;
+@property (nonatomic) float bias;
+@property (nonatomic) Q secondaryStrideInFeatureChannels;
+@property (nonatomic) float minimumValue;
+@property (nonatomic) float maximumValue;
+@property (nonatomic) BOOL isSecondarySourceFilter;
+- (unsigned long long)maxBatchSize;
+- (void)setBias:;
+- (float)bias;
+- (id)initWithCoder:device:;
+- (id)copyWithZone:device:;
+- (float)minimumValue;
+- (void)setMaximumValue:;
+- (void)dealloc;
+- (float)maximumValue;
+- (void)setMinimumValue:;
+- (id)debugDescription;
+- (void)encodeWithCoder:;
+- (id)initWithDevice:;
+- (void)setSecondaryStrideInPixelsY:;
+- (void)setSecondaryStrideInPixelsX:;
+- (float)primaryScale;
+- (void)setPrimaryScale:;
+- (float)secondaryScale;
+- (void)setSecondaryScale:;
+- (id)destinationImageDescriptorForSourceImages:sourceStates:paddingMethod:primaryOffset:secondaryOffset:kernelOffset:;
+- (void)setSecondaryStrideInFeatureChannels:;
+- (unsigned long long)secondaryStrideInFeatureChannels;
+- (id)initWithDevice:arithmeticType:isSecondarySourceFilter:;
+- (BOOL)isSecondarySourceFilter;
++ (id)libraryInfo:;
+@end

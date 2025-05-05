@@ -1,0 +1,2 @@
+@interface IESLiveLinkMicLinkmicCancelApiRoot : GPBRootObject
+@end

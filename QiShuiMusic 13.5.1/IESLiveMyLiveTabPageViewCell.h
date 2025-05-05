@@ -1,0 +1,32 @@
+@interface IESLiveMyLiveTabPageViewCell : UICollectionViewCell
+@property (nonatomic) UITableView tableView;
+@property (nonatomic) IESLiveMyLiveTabViewModel viewModel;
+@property (nonatomic) <IESLiveMyLiveTabPageViewCellDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)didScrollToTop;
+- (BOOL)isScrollPanGesture:;
+- (void)loadMore:;
+- (void)resetRefreshWhenNoMoreData;
+- (double)scrollView:heightForRefreshViewWithRefreshType:refreshState:;
+- (id)scrollView:viewForRefreshWithRefreshType:refreshState:;
+- (void)scrollView:willBeginRefreshWithRefreshType:;
+- (void)updateDslData:withCell:;
+- (void)updateWithPageViewModel:;
+- (id)viewModel;
+- (id)tableView:cellForRowAtIndexPath:;
+- (void)setDelegate:;
+- (void)scrollViewDidScroll:;
+- (id)initWithFrame:;
+- (double)tableView:heightForRowAtIndexPath:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setTableView:;
+- (void)scrollToTop;
+- (void)setViewModel:;
+- (id)tableView;
+- (long long)tableView:numberOfRowsInSection:;
+- (void)setupViews;
+@end

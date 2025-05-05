@@ -1,0 +1,32 @@
+@interface PETTestLoggingOutlet : NSObject
+@property (nonatomic) NSString lastLoggedKey;
+@property (nonatomic) Q lastLoggedScalarValue;
+@property (nonatomic) double lastLoggedDistributionValue;
+@property (nonatomic) NSString previousLoggedKey;
+@property (nonatomic) Q previousLoggedScalarValue;
+@property (nonatomic) double previousLoggedDistributionValue;
+@property (nonatomic) NSMutableArray allLoggedKeys;
+@property (nonatomic) NSMutableArray allLoggedValues;
+@property (nonatomic) NSMutableDictionary keyValues;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (void)logUnsignedIntegerValue:forEvent:featureId:stringifiedProperties:metaData:;
+- (void)logErrorForEvent:featureId:reason:;
+- (void)setUnsignedIntegerValue:forEvent:featureId:stringifiedProperties:metaData:;
+- (id)getValueForKey:;
+- (void).cxx_destruct;
+- (void)reset;
+- (void)logDoubleValue:forEvent:featureId:stringifiedProperties:metaData:;
+- (id)keyValues;
+- (id)lastLoggedKey;
+- (unsigned long long)lastLoggedScalarValue;
+- (double)lastLoggedDistributionValue;
+- (id)previousLoggedKey;
+- (unsigned long long)previousLoggedScalarValue;
+- (double)previousLoggedDistributionValue;
+- (id)allLoggedKeys;
+- (id)allLoggedValues;
+@end

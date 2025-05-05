@@ -1,0 +1,30 @@
+@interface AFLocalization : NSObject
+- (id)init;
+- (void).cxx_destruct;
+- (id)outputVoiceDescriptorForOutputLanguageCode:voiceName:;
+- (id)localizedStringForKey:table:bundle:languageCode:;
+- (id)localizedUIUtteranceForKey:languageCode:;
+- (id)_relevantTablesForTableName:tableExtension:bundle:;
+- (id)_localizedStringForKey:tables:localizations:bundle:;
+- (id)localizedStringForKey:gender:table:bundle:languageCode:;
+- (id)longDisplayNameInLanguage:forSiriLanguage:;
+- (id)compactDisplayNameInLanguage:forSiriLanguage:;
+- (id)localizedCompactNameForSiriLanguage:inDisplayLanguage:;
+- (id)localizedNameForSiriLanguage:inDisplayLanguage:;
+- (id)localizedNameOfOutputVoiceWithIdentifier:inDisplayLanguage:;
+- (id)localizedNameOfOutputVoice:inDisplayLanguage:;
+- (id)localizedGenderOfOutputVoice:inDisplayLanguage:;
+- (id)localizedNameOfVoiceGender:inDisplayLanguage:;
+- (id)outputVoiceColorDescriptorForOutputLanguageCode:voiceName:;
+- (id)dialectsMap;
+- (id)allOutputVoiceIdentifiersForSiriLanguage:;
+- (id)defaultOutputVoiceForSiriSessionLanguage:;
+- (id)loadInfoForVoicesWithLanguageCode:;
+- (id)_voicesFromVoiceMapWithLanguage:;
+- (id)_getVoiceOrdering;
+- (id)_voiceMaps;
+- (id)voiceNamesForOutputLanguageCode:gender:;
+- (id)outputVoiceComparator;
+- (id)voiceSimilarToVoice:inSiriSessionLanguage:;
++ (id)sharedInstance;
+@end

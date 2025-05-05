@@ -1,0 +1,2 @@
+@interface RoomHighlightChatApiRoot : GPBRootObject
+@end

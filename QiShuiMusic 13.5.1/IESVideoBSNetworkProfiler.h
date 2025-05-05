@@ -1,0 +1,35 @@
+@interface IESVideoBSNetworkProfiler : NSObject
+@property (nonatomic) IESVideoBSObjectPool pool;
+@property (nonatomic) IESVideoBSLinkedList sampleList;
+@property (nonatomic) Q weight;
+@property (nonatomic) Q profilerType;
+@property (nonatomic) <IESVideoBSNetworkProfilerProtocol> speedPredictDelegate;
+@property (nonatomic) Q maxBufferSize;
+- (void)_sampleWithDataLength:interval:;
+- (unsigned long long)_bitrateFromPredict;
+- (void)_sampeWithDataLengthV1:interval:;
+- (void)_sampeWithDataLengthV2:interval:;
+- (unsigned long long)profilerType;
+- (id)sampleList;
+- (void)setProfilerType:;
+- (void)setSampleList:;
+- (void)setSpeedPredictDelegate:;
+- (id)speedPredictDelegate;
+- (id)init;
+- (unsigned long long)weight;
+- (void)setWeight:;
+- (unsigned long long)maxBufferSize;
+- (void)setPool:;
+- (void)setMaxBufferSize:;
+- (void).cxx_destruct;
+- (id)pool;
+- (unsigned long long)_bitrate;
++ (void)setStartUpType:;
++ (unsigned long long)_weightMin;
++ (void)sampleWithDataLength:interval:;
++ (void)setNetworkSpeedMonitorType:;
++ (void)setProfilerMaxBufferSize:;
++ (void)setSpeedPredictDelegate:;
++ (id)sharedInstance;
++ (unsigned long long)bitrate;
+@end

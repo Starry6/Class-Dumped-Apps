@@ -1,0 +1,37 @@
+@interface SMSFilterExtensionParams : NSObject
+@property (nonatomic) Q action;
+@property (nonatomic) Q subAction;
+@property (nonatomic) Q filterMode;
+@property (nonatomic) Q orderOfPlacementInUI;
+@property (nonatomic) Q category;
+@property (nonatomic) Q subCategory;
+@property (nonatomic) NSString filterModeStringValue;
+@property (nonatomic) NSString label;
+@property (nonatomic) NSString iconName;
+@property (nonatomic) NSString folderName;
+- (unsigned long long)filterMode;
+- (id)init;
+- (void)setFilterMode:;
+- (unsigned long long)action;
+- (void)setLabel:;
+- (id)initWithCoder:;
+- (id)iconName;
+- (id)label;
+- (void)setAction:;
+- (void)encodeWithCoder:;
+- (void)setCategory:;
+- (void).cxx_destruct;
+- (void)setIconName:;
+- (unsigned long long)category;
+- (id)filterModeStringValue;
+- (id)folderName;
+- (unsigned long long)subAction;
+- (void)setSubAction:;
+- (unsigned long long)orderOfPlacementInUI;
+- (void)setOrderOfPlacementInUI:;
+- (unsigned long long)subCategory;
+- (void)setSubCategory:;
+- (void)setFilterModeStringValue:;
+- (void)setFolderName:;
++ (BOOL)supportsSecureCoding;
+@end

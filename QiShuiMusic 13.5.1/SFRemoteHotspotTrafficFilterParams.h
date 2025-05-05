@@ -1,0 +1,31 @@
+@interface SFRemoteHotspotTrafficFilterParams : NSObject
+@property (nonatomic) NSString srcIPAddress;
+@property (nonatomic) S srcPort;
+@property (nonatomic) NSString destIPAddress;
+@property (nonatomic) S destPort;
+@property (nonatomic) S ipProtocol;
+@property (nonatomic) NSString trafficClass;
+@property (nonatomic) I ipVersion;
+@property (nonatomic) I idleTimeout;
+- (id)trafficClass;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (unsigned short)ipProtocol;
+- (void).cxx_destruct;
+- (id)description;
+- (unsigned int)idleTimeout;
+- (void)setIdleTimeout:;
+- (void)setTrafficClass:;
+- (void)setIpProtocol:;
+- (unsigned short)srcPort;
+- (void)setSrcPort:;
+- (id)srcIPAddress;
+- (void)setSrcIPAddress:;
+- (id)destIPAddress;
+- (void)setDestIPAddress:;
+- (unsigned short)destPort;
+- (void)setDestPort:;
+- (unsigned int)ipVersion;
+- (void)setIpVersion:;
++ (BOOL)supportsSecureCoding;
+@end

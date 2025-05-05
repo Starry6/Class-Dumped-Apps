@@ -1,0 +1,31 @@
+@interface DMFBookmark : NSObject
+@property (nonatomic) NSString identifier;
+@property (nonatomic) NSString name;
+@property (nonatomic) NSURL URL;
+@property (nonatomic) NSArray children;
+@property (nonatomic) BOOL folder;
+@property (nonatomic) BOOL favoritesFolder;
+@property (nonatomic) BOOL readingListFolder;
+- (id)identifier;
+- (BOOL)isFolder;
+- (id)initWithCoder:;
+- (id)children;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)name;
+- (BOOL)isEqual:;
+- (id)URL;
+- (id)copyWithZone:;
+- (id)initWithName:URL:children:identifier:;
+- (BOOL)isFavoritesFolder;
+- (BOOL)isReadingListFolder;
+- (BOOL)_isFolderWithIdentifier:;
++ (BOOL)supportsSecureCoding;
++ (id)favoritesFolderWithChildren:;
++ (id)readingListFolderWithChildren:;
++ (id)folderWithName:children:;
++ (id)folderWithName:children:identifier:;
++ (id)leafBookmarkWithName:URL:;
+@end

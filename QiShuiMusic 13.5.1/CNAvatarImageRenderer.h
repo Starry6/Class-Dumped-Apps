@@ -1,0 +1,30 @@
+@interface CNAvatarImageRenderer : NSObject
+@property (nonatomic) <CNUIPRLikenessResolver> resolver;
+@property (nonatomic) <CNUILikenessRendering> renderer;
+@property (nonatomic) <CNSchedulerProvider> schedulerProvider;
+- (id)renderer;
+- (id)init;
+- (id)schedulerProvider;
+- (id)initWithSettings:;
+- (void).cxx_destruct;
+- (id)resolver;
+- (id)renderAvatarsForContacts:handler:;
+- (id)renderMonogramForString:handler:;
+- (id)renderAvatarsForContacts:scope:imageHandler:;
+- (id)renderAvatarsForContacts:withBadges:scope:imageHandler:;
+- (id)renderAvatarsForContacts:scope:includePlaceholder:imageHandler:;
+- (id)renderAvatarsForContacts:withBadges:scope:includePlaceholder:imageHandler:;
+- (id)avatarImageForContacts:scope:;
+- (id)avatarImageForContacts:withBadges:scope:;
+- (id)renderAvatarsForContacts:withBadges:scope:placeholder:workScheduler:imageHandler:;
+- (id)renderMonogramForString:scope:imageHandler:;
+- (id)runScopeBasedImageObservable:scope:imageHandler:;
+- (id)renderedLikenessesForContacts:withBadges:scope:placeholder:workScheduler:;
+- (id)renderedMonogramObservableForString:scope:;
+- (id)imageForAvatarAccessoryView:scope:;
+- (id)placeholderImageProvider;
+- (id)loadingPlaceholderImageProvider;
+- (id)renderMonogramForString:color:scope:prohibitedSources:;
+- (id)renderMonogramForContact:color:scope:prohibitedSources:;
++ (id)descriptorForRequiredKeys;
+@end

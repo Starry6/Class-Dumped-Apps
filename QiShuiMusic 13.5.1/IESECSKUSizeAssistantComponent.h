@@ -1,0 +1,35 @@
+@interface IESECSKUSizeAssistantComponent : MTLModel
+@property (nonatomic) Q specLocation;
+@property (nonatomic) IESECSKUSizeComponent sizeComponent;
+@property (nonatomic) BOOL hasSizeComponent;
+@property (nonatomic) BOOL isFillUserClothesSize;
+@property (nonatomic) BOOL isSupportClothesSizeRecommend;
+@property (nonatomic) NSString recommendClothesSize;
+@property (nonatomic) NSString linkSchema;
+@property (nonatomic) q sizeComponentType;
+@property (nonatomic) NSString recommendText;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)hasSizeComponent;
+- (BOOL)isFillUserClothesSize;
+- (BOOL)isSupportClothesSizeRecommend;
+- (id)linkSchema;
+- (id)recommendClothesSize;
+- (id)recommendText;
+- (void)setHasSizeComponent:;
+- (void)setIsFillUserClothesSize:;
+- (void)setIsSupportClothesSizeRecommend:;
+- (void)setLinkSchema:;
+- (void)setRecommendClothesSize:;
+- (void)setRecommendText:;
+- (void)setSizeComponent:;
+- (void)setSizeComponentType:;
+- (void)setSpecLocation:;
+- (id)sizeComponent;
+- (long long)sizeComponentType;
+- (unsigned long long)specLocation;
+- (void).cxx_destruct;
++ (id)JSONKeyPathsByPropertyKey;
+@end

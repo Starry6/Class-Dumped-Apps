@@ -1,0 +1,37 @@
+@interface AVHUDStringGenerator : NSObject
+@property (nonatomic) AVPlayer player;
+@property (nonatomic) BOOL spatialDiagnostics;
+@property (nonatomic) BOOL captureCompleteURI;
+@property (nonatomic) q prevVariantIdx;
+@property (nonatomic) q prevStallCount;
+@property (nonatomic) q totalStallCount;
+@property (nonatomic) NSString formattedDisplayString;
+@property (nonatomic) NSNumber displayResolutionHeight;
+@property (nonatomic) NSNumber displayResolutionWidth;
+@property (nonatomic) NSNumber audioSpatializationMode;
+- (void)dealloc;
+- (id)player;
+- (void).cxx_destruct;
+- (void)setPlayer:;
+- (void)update;
+- (void)updateFromPlayer;
+- (void)updateFromPlayerItem;
+- (id)formattedDisplayString;
+- (BOOL)spatialDiagnostics;
+- (void)setSpatialDiagnostics:;
+- (BOOL)captureCompleteURI;
+- (void)setCaptureCompleteURI:;
+- (long long)prevVariantIdx;
+- (void)setPrevVariantIdx:;
+- (long long)prevStallCount;
+- (void)setPrevStallCount:;
+- (long long)totalStallCount;
+- (void)setTotalStallCount:;
+- (id)displayResolutionWidth;
+- (id)displayResolutionHeight;
+- (id)audioSpatializationMode;
++ (id)descriptionStringForFormatOfTrack:;
++ (id)descriptionStringForBitRate:;
++ (id)descriptionStringForVideoRangeOfFormatDescription:;
++ (id)descriptionStringForTracksOfPlayerItem:;
+@end

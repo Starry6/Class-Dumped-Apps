@@ -1,0 +1,31 @@
+@interface SFCoordinatedAlertRequest : NSObject
+@property (nonatomic) @? completionHandler;
+@property (nonatomic) NSObject<OS_dispatch_queue> dispatchQueue;
+@property (nonatomic) @? invalidationHandler;
+@property (nonatomic) double timeout;
+@property (nonatomic) q type;
+- (id)init;
+- (void)dealloc;
+- (void)_invalidated;
+- (void)start;
+- (id)dispatchQueue;
+- (void)setType:;
+- (void)setTimeout:;
+- (void)setCompletionHandler:;
+- (void)setDispatchQueue:;
+- (id)initWithCoder:;
+- (void)_interrupted;
+- (void)_ensureXPCStarted;
+- (void)encodeWithCoder:;
+- (void)_invalidate;
+- (long long)type;
+- (void).cxx_destruct;
+- (void)_start;
+- (id)invalidationHandler;
+- (double)timeout;
+- (void)setInvalidationHandler:;
+- (void)invalidate;
+- (id)completionHandler;
+- (void)_timeoutFired;
++ (BOOL)supportsSecureCoding;
+@end

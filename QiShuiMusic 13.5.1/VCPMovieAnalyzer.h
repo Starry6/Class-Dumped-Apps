@@ -1,0 +1,33 @@
+@interface VCPMovieAnalyzer : NSObject
+@property (nonatomic) BOOL allowStreaming;
+@property (nonatomic) float maxHighlightDuration;
+@property (nonatomic) BOOL faceDominated;
+@property (nonatomic) q status;
+- (void).cxx_destruct;
+- (long long)status;
+- (float)maxHighlightDuration;
+- (void)setMaxHighlightDuration:;
+- (id)privateResults;
+- (id)initWithVCPAsset:withExistingAnalysis:forAnalysisTypes:;
+- (id)initWithPHAsset:withPausedAnalysis:forAnalysisTypes:;
+- (id)initWithPHAsset:withExistingAnalysis:forAnalysisTypes:;
+- (void)loadPropertiesForAsset:;
+- (id)processExistingAnalysisForTimeRange:analysisTypes:;
+- (int)performMetadataAnalysisOnAsset:withCancelBlock:;
+- (id)createDecoderForTrack:timerange:forAnalysisTypes:;
+- (id)createVideoAnalyzer:withFrameStats:;
+- (int)analyzeVideoSegment:timerange:forAnalysisTypes:cancel:;
+- (int)postProcessAutoPlayable:;
+- (int)analyzeVideoTrack:start:forAnalysisTypes:cancel:;
+- (id)analyzeAsset:streamed:;
+- (int)generateKeyFrameResource:;
+- (BOOL)allowStreaming;
+- (void)setAllowStreaming:;
+- (BOOL)faceDominated;
+- (void)setFaceDominated:;
++ (BOOL)canAnalyzeUndegraded:withResources:;
++ (float)getMaximumHighlightInSec;
++ (id)getHumanActionClassiferType;
++ (BOOL)getEnableMovieHumanAction;
++ (id)analyzerWithVCPAsset:withExistingAnalysis:forAnalysisTypes:;
+@end

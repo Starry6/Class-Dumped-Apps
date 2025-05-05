@@ -1,0 +1,34 @@
+@interface GEOLPRLicensePlateRestrictionRules : PBCodable
+@property (nonatomic) NSData version;
+@property (nonatomic) I createTime;
+@property (nonatomic) NSMutableArray licensePlateRegions;
+- (id)plateRegionsContainingLatLngs:inRadius:;
+- (void)readAll:;
+- (id)init;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (void)setVersion:;
+- (id)version;
+- (unsigned int)createTime;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (void)setCreateTime:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)licensePlateRegions;
+- (void)setLicensePlateRegions:;
+- (void)clearLicensePlateRegions;
+- (void)addLicensePlateRegion:;
+- (unsigned long long)licensePlateRegionsCount;
+- (id)licensePlateRegionAtIndex:;
++ (BOOL)isValid:;
++ (Class)licensePlateRegionType;
+@end

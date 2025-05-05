@@ -1,0 +1,2 @@
+@interface VNTrackHomographyRequestConfiguration : VNStatefulRequestConfiguration
+@end

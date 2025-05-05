@@ -1,0 +1,2 @@
+@interface ActivityActivityVsInteractCreateCommentApiRoot : GPBRootObject
+@end

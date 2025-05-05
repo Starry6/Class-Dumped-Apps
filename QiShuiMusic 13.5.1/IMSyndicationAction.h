@@ -1,0 +1,30 @@
+@interface IMSyndicationAction : NSObject
+@property (nonatomic) C version;
+@property (nonatomic) C syndicatedItemType;
+@property (nonatomic) C syndicationActionType;
+@property (nonatomic) NSDate syndicationStartDate;
+@property (nonatomic) NSString chatGUID;
+- (id)init;
+- (unsigned char)version;
+- (id)initWithDictionary:;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)syndicationStartDate;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)chatGUID;
+- (void)encodeWithIMRemoteObjectSerializedDictionary:;
+- (id)initWithIMRemoteObjectSerializedDictionary:;
+- (id)copyDictionaryRepresentation;
+- (id)_stringFromActionType:;
+- (id)_stringFromItemType:;
+- (id)initWithChatGUID:syndicationStartDate:syndicationActionType:;
+- (unsigned char)syndicatedItemType;
+- (unsigned char)syndicationActionType;
++ (BOOL)supportsSecureCoding;
++ (id)dateFromNanoSeconds:;
++ (id)nanoSecondsFromDate:;
++ (id)unarchiveClasses;
+@end

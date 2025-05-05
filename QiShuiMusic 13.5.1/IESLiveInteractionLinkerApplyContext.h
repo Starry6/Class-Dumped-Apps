@@ -1,0 +1,37 @@
+@interface IESLiveInteractionLinkerApplyContext : NSObject
+@property (nonatomic) IESLiveLinkmicLinkAudienceApplyContext linkmicContext;
+@property (nonatomic) Q vendor;
+@property (nonatomic) NSString linkmicID;
+@property (nonatomic) NSString prompts;
+@property (nonatomic) BOOL autoJoin;
+@property (nonatomic) BOOL autoJoinFull;
+@property (nonatomic) q waitingListOffset;
+@property (nonatomic) NSInteger silenceStatus;
+@property (nonatomic) HTSLiveText fastMatchDisplayText;
+@property (nonatomic) NSInteger linkType;
+@property (nonatomic) NSString subRtcExtInfo;
+@property (nonatomic) IESLiveMicPosTagInfo micPosTagInfo;
+@property (nonatomic) NSObject rawData;
+@property (nonatomic) NSString promptString;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)autoJoinFull;
+- (id)fastMatchDisplayText;
+- (id)initWithLinkmicLinkAudienceApplyContext:;
+- (id)linkmicContext;
+- (id)linkmicID;
+- (id)micPosTagInfo;
+- (void)setLinkmicContext:;
+- (int)silenceStatus;
+- (id)subRtcExtInfo;
+- (long long)waitingListOffset;
+- (void).cxx_destruct;
+- (id)rawData;
+- (int)linkType;
+- (unsigned long long)vendor;
+- (id)prompts;
+- (BOOL)autoJoin;
+- (id)promptString;
+@end

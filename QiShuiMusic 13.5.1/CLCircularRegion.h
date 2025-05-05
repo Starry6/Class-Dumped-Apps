@@ -1,0 +1,38 @@
+@interface CLCircularRegion : CLRegion
+@property (nonatomic) {CLLocationCoordinate2D=dd} geoCenter;
+@property (nonatomic) double geoRadius;
+@property (nonatomic) NSInteger geoReferenceFrame;
+@property (nonatomic) BOOL isLowPower;
+@property (nonatomic) double desiredAccuracy;
+@property (nonatomic) BOOL allowMonitoringWhileNearby;
+@property (nonatomic) {CLLocationCoordinate2D=dd} center;
+@property (nonatomic) double radius;
+- (void)setReferenceFrame:;
+- (id)center;
+- (double)desiredAccuracy;
+- (BOOL)allowMonitoringWhileNearby;
+- (double)radius;
+- (BOOL)containsCoordinate:;
+- (id)initNearbyAllowedWithCenter:radius:identifier:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (int)referenceFrame;
+- (id)geoCenter;
+- (void)encodeWithCoder:;
+- (id)initWithCenter:radius:referenceFrame:allowMonitoringWhenNearby:lowPower:identifier:onBehalfOfBundleId:notifyOnEntry:notifyOnExit:conservativeEntry:emergency:;
+- (void)setGeoReferenceFrame:;
+- (id)initWithCenter:radius:identifier:;
+- (id)initWithCenter:radius:identifier:onBehalfOfBundleId:;
+- (id)description;
+- (int)geoReferenceFrame;
+- (id)initWithCenter:radius:referenceFrame:allowMonitoringWhenNearby:lowPower:identifier:onBehalfOfBundleId:notifyOnEntry:notifyOnExit:conservativeEntry:emergency:deviceId:handoffTag:;
+- (BOOL)isLowPower;
+- (double)geoRadius;
+- (id)initForLowPowerWithCenter:radius:identifier:;
+- (id)initLegacyObjectWithCoder:;
+- (BOOL)isEqual:;
+- (id)initWithCenter:radius:identifier:nearbyAllowed:;
+- (id)copyWithZone:;
++ (id)circularRegionFromMapRegion:;
++ (BOOL)supportsSecureCoding;
+@end

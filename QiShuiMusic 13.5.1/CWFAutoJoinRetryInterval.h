@@ -1,0 +1,32 @@
+@interface CWFAutoJoinRetryInterval : NSObject
+@property (nonatomic) Q interval;
+@property (nonatomic) Q count;
+@property (nonatomic) BOOL BSSChannelsOnly;
+@property (nonatomic) Q maxBSSChannelCount;
+@property (nonatomic) Q maxBSSChannelAge;
+@property (nonatomic) Q dwellTime;
+@property (nonatomic) BOOL passiveScan;
+@property (nonatomic) BOOL allowAutoHotspotFallback;
+@property (nonatomic) BOOL includeAdjacent5GHzChannel;
+- (void)setCount:;
+- (void)setAllowAutoHotspotFallback:;
+- (BOOL)includeAdjacent5GHzChannel;
+- (void)setIncludeAdjacent5GHzChannel:;
+- (BOOL)BSSChannelsOnly;
+- (unsigned long long)maxBSSChannelAge;
+- (void)setInterval:;
+- (void)setPassiveScan:;
+- (id)autoJoinRetryInterval:count:;
+- (void)setMaxBSSChannelCount:;
+- (id)description;
+- (unsigned long long)maxBSSChannelCount;
+- (BOOL)passiveScan;
+- (unsigned long long)dwellTime;
+- (unsigned long long)count;
+- (BOOL)allowAutoHotspotFallback;
+- (void)setBSSChannelsOnly:;
+- (void)setMaxBSSChannelAge:;
+- (unsigned long long)interval;
+- (id)copyWithZone:;
+- (void)setDwellTime:;
+@end

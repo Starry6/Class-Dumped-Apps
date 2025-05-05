@@ -1,0 +1,38 @@
+@interface MTLAccelerationStructureTriangleGeometryDescriptor : MTLAccelerationStructureGeometryDescriptor
+@property (nonatomic) <MTLBuffer> vertexBuffer;
+@property (nonatomic) Q vertexBufferOffset;
+@property (nonatomic) Q vertexFormat;
+@property (nonatomic) Q vertexStride;
+@property (nonatomic) <MTLBuffer> indexBuffer;
+@property (nonatomic) Q indexBufferOffset;
+@property (nonatomic) Q indexType;
+@property (nonatomic) Q triangleCount;
+@property (nonatomic) <MTLBuffer> transformationMatrixBuffer;
+@property (nonatomic) Q transformationMatrixBufferOffset;
+- (void)setIndexType:;
+- (id)init;
+- (void)dealloc;
+- (unsigned long long)hash;
+- (unsigned long long)indexType;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (unsigned long long)vertexStride;
+- (void)setVertexStride:;
+- (id)indexBuffer;
+- (void)setIndexBuffer:;
+- (unsigned long long)indexBufferOffset;
+- (void)setIndexBufferOffset:;
+- (unsigned long long)vertexFormat;
+- (void)setVertexFormat:;
+- (id)transformationMatrixBuffer;
+- (void)setTransformationMatrixBuffer:;
+- (unsigned long long)transformationMatrixBufferOffset;
+- (void)setTransformationMatrixBufferOffset:;
+- (id)vertexBuffer;
+- (void)setVertexBuffer:;
+- (unsigned long long)vertexBufferOffset;
+- (void)setVertexBufferOffset:;
+- (unsigned long long)triangleCount;
+- (void)setTriangleCount:;
++ (id)descriptor;
+@end

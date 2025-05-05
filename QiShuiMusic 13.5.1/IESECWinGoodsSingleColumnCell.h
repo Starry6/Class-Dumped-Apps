@@ -1,0 +1,36 @@
+@interface IESECWinGoodsSingleColumnCell : UICollectionViewCell
+@property (nonatomic) IESECLLView llView;
+@property (nonatomic) <IESECWinFlexGoodsCellProtocol> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (double)maxPlayDuration;
+- (id)playerContainer;
+- (void)animateWithUpdatedObject;
+- (void)bindObject:;
+- (void)clickFanCouponButtonView;
+- (void)clickGoodsCoverTagViewWithModel:;
+- (void)clickGoodsSourceView;
+- (void)clickRecommendView;
+- (void)clickTagList:goodsModel:;
+- (id)danmakuDataSource;
+- (id)getGoodsObject;
+- (BOOL)isVoiceControllable;
+- (id)llView;
+- (void)pausePlay;
+- (id)playItem;
+- (void)setHasPlayed:;
+- (void)setLlView:;
+- (void)startPlay;
+- (void)stopPlay;
+- (void)tagListShow:goodsModel:;
+- (void)updatePlayableDurationAndCurrentTimeWithDuration:currentTime:;
+- (void)setDelegate:;
+- (id)initWithFrame:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (BOOL)hasPlayed;
++ (id)cellBuilderWithObject:;
++ (id)cellBuilderWithObjectForLowPrice:;
+@end

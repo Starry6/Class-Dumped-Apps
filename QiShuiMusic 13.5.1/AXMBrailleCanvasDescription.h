@@ -1,0 +1,31 @@
+@interface AXMBrailleCanvasDescription : NSObject
+@property (nonatomic) Q width;
+@property (nonatomic) Q height;
+@property (nonatomic) Q numberOfDiscretePinHeights;
+@property (nonatomic) BOOL hasConsistentHorizontalPinSpacing;
+@property (nonatomic) BOOL hasConsistentVerticalPinSpacing;
+@property (nonatomic) double verticalPinSpacing;
+@property (nonatomic) double horizontalPinSpacing;
+@property (nonatomic) double interCellHorizontalSpacing;
+@property (nonatomic) double interCellVerticalSpacing;
+- (id)initWithCoder:;
+- (unsigned long long)height;
+- (void)encodeWithCoder:;
+- (unsigned long long)width;
+- (id)description;
+- (id)initWithHeight:width:numberOfDiscretePinHeights:;
+- (unsigned long long)numberOfDiscretePinHeights;
+- (BOOL)hasConsistentHorizontalPinSpacing;
+- (void)setHasConsistentHorizontalPinSpacing:;
+- (BOOL)hasConsistentVerticalPinSpacing;
+- (void)setHasConsistentVerticalPinSpacing:;
+- (double)verticalPinSpacing;
+- (void)setVerticalPinSpacing:;
+- (double)horizontalPinSpacing;
+- (void)setHorizontalPinSpacing:;
+- (double)interCellHorizontalSpacing;
+- (void)setInterCellHorizontalSpacing:;
+- (double)interCellVerticalSpacing;
+- (void)setInterCellVerticalSpacing:;
++ (BOOL)supportsSecureCoding;
+@end

@@ -1,0 +1,27 @@
+@interface NSStackInContainerRule : NSObject
+@property (nonatomic) NSLayoutRect containingRect;
+@property (nonatomic) NSArray stackedRects;
+@property (nonatomic) double spacing;
+@property (nonatomic) q orientation;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) NSString ruleDescription;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (double)spacing;
+- (void)dealloc;
+- (id)identifier;
+- (long long)orientation;
+- (unsigned long long)hash;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)makeChildRules;
+- (id)ruleDescription;
+- (id)stackedRects;
+- (id)containingRect;
++ (id)stackWithOrientation:stackedRects:inContainer:spacing:;
++ (id)horizontalStackWithRects:inContainer:spacing:;
++ (id)verticalStackWithRects:inContainer:spacing:;
+@end

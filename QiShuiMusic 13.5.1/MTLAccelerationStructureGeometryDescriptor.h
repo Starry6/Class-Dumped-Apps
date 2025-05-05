@@ -1,0 +1,31 @@
+@interface MTLAccelerationStructureGeometryDescriptor : NSObject
+@property (nonatomic) Q intersectionFunctionTableOffset;
+@property (nonatomic) BOOL opaque;
+@property (nonatomic) BOOL allowDuplicateIntersectionFunctionInvocation;
+@property (nonatomic) NSString label;
+@property (nonatomic) <MTLBuffer> primitiveDataBuffer;
+@property (nonatomic) Q primitiveDataBufferOffset;
+@property (nonatomic) Q primitiveDataStride;
+@property (nonatomic) Q primitiveDataElementSize;
+- (id)init;
+- (void)dealloc;
+- (void)setLabel:;
+- (unsigned long long)hash;
+- (id)label;
+- (BOOL)opaque;
+- (void)setOpaque:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)primitiveDataBuffer;
+- (void)setPrimitiveDataBuffer:;
+- (unsigned long long)primitiveDataBufferOffset;
+- (void)setPrimitiveDataBufferOffset:;
+- (unsigned long long)primitiveDataStride;
+- (void)setPrimitiveDataStride:;
+- (unsigned long long)primitiveDataElementSize;
+- (void)setPrimitiveDataElementSize:;
+- (unsigned long long)intersectionFunctionTableOffset;
+- (void)setIntersectionFunctionTableOffset:;
+- (BOOL)allowDuplicateIntersectionFunctionInvocation;
+- (void)setAllowDuplicateIntersectionFunctionInvocation:;
+@end

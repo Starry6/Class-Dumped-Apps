@@ -1,0 +1,30 @@
+@interface NEFilterNewFlowVerdict : NEFilterVerdict
+@property (nonatomic) BOOL filterInbound;
+@property (nonatomic) BOOL filterOutbound;
+@property (nonatomic) Q peekInboundBytes;
+@property (nonatomic) Q peekOutboundBytes;
+@property (nonatomic) q statisticsReportFrequency;
+- (id)descriptionWithIndent:options:;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (id)copyWithZone:;
+- (long long)filterAction;
+- (long long)statisticsReportFrequency;
+- (void)setStatisticsReportFrequency:;
+- (BOOL)filterInbound;
+- (void)setFilterInbound:;
+- (BOOL)filterOutbound;
+- (void)setFilterOutbound:;
+- (unsigned long long)peekInboundBytes;
+- (void)setPeekInboundBytes:;
+- (unsigned long long)peekOutboundBytes;
+- (void)setPeekOutboundBytes:;
++ (BOOL)supportsSecureCoding;
++ (id)needRulesVerdict;
++ (id)allowVerdict;
++ (id)dropVerdict;
++ (id)remediateVerdictWithRemediationURLMapKey:remediationButtonTextMapKey:;
++ (id)pauseVerdict;
++ (id)URLAppendStringVerdictWithMapKey:;
++ (id)filterDataVerdictWithFilterInbound:peekInboundBytes:filterOutbound:peekOutboundBytes:;
+@end

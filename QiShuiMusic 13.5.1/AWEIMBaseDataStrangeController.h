@@ -1,0 +1,38 @@
+@interface AWEIMBaseDataStrangeController : NSObject
+@property (nonatomic) AWEIMChatModel model;
+@property (nonatomic) <IESIMStrangerInboxManagerProtocol> dataController;
+@property (nonatomic) BOOL fetchingRemote;
+@property (nonatomic) BOOL needFetchLater;
+@property (nonatomic) <AWEIMBaseDataStrangeControllerDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didFinishLogout;
+- (void)p_updateTabStrangerUnreadCount:;
+- (void)didFinishLogin;
+- (BOOL)fetchingRemote;
+- (void)handleRemoveStrangerChatNoti:;
+- (void)iesim_didFinishLogin;
+- (void)iesim_didFinishLogout;
+- (void)iesim_strangerInboxDidUpdate:;
+- (BOOL)needFetchLater;
+- (void)p_addKVO;
+- (void)p_configWithStrangerMsg:unreadCount:;
+- (void)p_fetchRemoteStrangerChat;
+- (void)p_removeKVO;
+- (void)p_updateWithLatestChat:;
+- (void)removeAllStrangerChat:;
+- (void)setDataController:;
+- (void)setFetchingRemote:;
+- (void)setNeedFetchLater:;
+- (id)model;
+- (id)init;
+- (void)dealloc;
+- (void)setModel:;
+- (void)setDelegate:;
+- (void)observeValueForKeyPath:ofObject:change:context:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)dataController;
+@end

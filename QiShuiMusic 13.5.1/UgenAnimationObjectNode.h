@@ -1,0 +1,31 @@
+@interface UgenAnimationObjectNode : NSObject
+@property (nonatomic) NSString animationName;
+@property (nonatomic) double offsetDuration;
+@property (nonatomic) @ value;
+@property (nonatomic) UgenWidget widget;
+@property (nonatomic) UgenAnimationObjectNode next;
+- (id)defaultFirstAnimationObjectNode;
+- (id)animationKeyPathArray;
+- (id)animationValueWithIndex:;
+- (id)defaultFirstValue;
+- (id)initWithWidget:animationName:offsetDuration:value:;
+- (BOOL)needCleanBeforeStartAnimation;
+- (double)offsetDuration;
+- (id)p_animationValueWithIndex:;
+- (double)p_arcValue;
+- (double)p_floatValue;
+- (id)p_pointValue;
+- (void)setAnimationName:;
+- (void)setOffsetDuration:;
+- (id)next;
+- (void)setNext:;
+- (void)setWidget:;
+- (id)widget;
+- (void)setValue:;
+- (void).cxx_destruct;
+- (id)value;
+- (id)animationName;
++ (id)animationKeyPathMap;
++ (id)animationNodeClassMap;
++ (id)animationObjecNodeWithWidget:animationName:offsetDuration:value:;
+@end

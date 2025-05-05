@@ -1,0 +1,37 @@
+@interface DMCHangDetectionQueue : NSObject
+@property (nonatomic) NSString owner;
+@property (nonatomic) NSOperationQueue workerQueue;
+@property (nonatomic) NSObject<OS_dispatch_queue> logQueue;
+@property (nonatomic) double threshold;
+@property (nonatomic) DMCBacktraceLogger backtraceLogger;
+@property (nonatomic) NSInteger lastExecutedJob;
+@property (nonatomic) Ai blockNum;
+@property (nonatomic) DMCBacktraceLogger logger;
+@property (nonatomic) BOOL shouldDumpStackshot;
+@property (nonatomic) BOOL verboseLogEnabled;
+- (id)logger;
+- (double)threshold;
+- (id)workerQueue;
+- (id)init;
+- (id)backtraceLogger;
+- (void)setWorkerQueue:;
+- (int)lastExecutedJob;
+- (void)setOwner:;
+- (id)owner;
+- (void)setLogger:;
+- (BOOL)verboseLogEnabled;
+- (void)setBlockNum:;
+- (id)logQueue;
+- (void)setBacktraceLogger:;
+- (BOOL)shouldDumpStackshot;
+- (void)setLogQueue:;
+- (id)initWithQoS:hangThreshold:owner:;
+- (void)setShouldDumpStackshot:;
+- (void)setLastExecutedJob:;
+- (void).cxx_destruct;
+- (void)setVerboseLogEnabled:;
+- (int)blockNum;
+- (void)queueBlock:;
+- (void)waitUntilAllBlocksAreFinished;
+- (void)setThreshold:;
+@end

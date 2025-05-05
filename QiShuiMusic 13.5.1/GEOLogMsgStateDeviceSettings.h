@@ -1,0 +1,34 @@
+@interface GEOLogMsgStateDeviceSettings : PBCodable
+@property (nonatomic) BOOL hasDeviceDarkMode;
+@property (nonatomic) BOOL deviceDarkMode;
+@property (nonatomic) BOOL hasIsAltAccountPairedDevice;
+@property (nonatomic) BOOL isAltAccountPairedDevice;
+@property (nonatomic) BOOL hasSupportsAdvancedMap;
+@property (nonatomic) BOOL supportsAdvancedMap;
+- (void)setDeviceDarkMode:;
+- (void)setHasDeviceDarkMode:;
+- (BOOL)deviceDarkMode;
+- (BOOL)hasDeviceDarkMode;
+- (void)readAll:;
+- (BOOL)isAltAccountPairedDevice;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (BOOL)supportsAdvancedMap;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)setHasIsAltAccountPairedDevice:;
+- (void)setIsAltAccountPairedDevice:;
+- (void)mergeFrom:;
+- (BOOL)hasIsAltAccountPairedDevice;
+- (BOOL)readFrom:;
+- (void)setSupportsAdvancedMap:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (BOOL)hasSupportsAdvancedMap;
+- (id)copyWithZone:;
+- (void)setHasSupportsAdvancedMap:;
++ (BOOL)isValid:;
+@end

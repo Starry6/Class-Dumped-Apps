@@ -1,0 +1,30 @@
+@interface CEMSystemAllowedMediaDeclaration : CEMConfigurationBase
+@property (nonatomic) CEMSystemAllowedMediaDeclaration_MediaItems payloadLogoutEject;
+@property (nonatomic) CEMSystemAllowedMediaDeclaration_MediaItems payloadMountControls;
+@property (nonatomic) CEMSystemAllowedMediaDeclaration_MediaItems payloadUnmountControls;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (BOOL)multipleAllowed;
+- (BOOL)mustBeSupervised;
+- (int)activationLevel;
+- (id)assetReferences;
+- (BOOL)loadPayload:error:;
+- (id)serializePayloadWithAssetProviders:;
+- (id)payloadLogoutEject;
+- (void)setPayloadLogoutEject:;
+- (id)payloadMountControls;
+- (void)setPayloadMountControls:;
+- (id)payloadUnmountControls;
+- (void)setPayloadUnmountControls:;
++ (id)profileType;
++ (id)buildRequiredOnlyWithIdentifier:;
++ (id)registeredClassName;
++ (id)registeredIdentifier;
++ (id)allowedPayloadKeys;
++ (id)restrictionPayloadKeys;
++ (id)buildWithIdentifier:withLogoutEject:withMountControls:withUnmountControls:;
+@end

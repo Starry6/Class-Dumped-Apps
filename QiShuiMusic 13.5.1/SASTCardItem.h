@@ -1,0 +1,31 @@
+@interface SASTCardItem : AceObject
+@property (nonatomic) SAUIColor backgroundColor;
+@property (nonatomic) SAUIDecoratedText footnote;
+@property (nonatomic) SAUIDecoratedText label;
+@property (nonatomic) SAUIColor labelTextColor;
+@property (nonatomic) SAUIDecoratedText title;
+@property (nonatomic) SAUIColor titleBackgroundColor;
+@property (nonatomic) SAUIColor titleTextColor;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setBackgroundColor:;
+- (id)groupIdentifier;
+- (id)backgroundColor;
+- (void)setTitleTextColor:;
+- (id)titleTextColor;
+- (void)setLabel:;
+- (void)setTitle:;
+- (id)label;
+- (id)title;
+- (id)encodedClassName;
+- (void)setFootnote:;
+- (id)footnote;
+- (id)labelTextColor;
+- (void)setLabelTextColor:;
+- (id)titleBackgroundColor;
+- (void)setTitleBackgroundColor:;
++ (id)cardItem;
++ (id)cardItemWithDictionary:context:;
+@end

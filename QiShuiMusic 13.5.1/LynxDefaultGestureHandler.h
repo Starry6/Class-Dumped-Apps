@@ -1,0 +1,35 @@
+@interface LynxDefaultGestureHandler : LynxBaseGestureHandler
+@property (nonatomic) NSMutableDictionary eventParams;
+@property (nonatomic) {CGPoint=dd} lastPoint;
+@property (nonatomic) BOOL isInvokedBegin;
+@property (nonatomic) BOOL isInvokedStart;
+@property (nonatomic) BOOL isInvokedEnd;
+@property (nonatomic) LynxTouchEvent lastTouchEvent;
+- (void)setEventParams:;
+- (BOOL)canActiveWithCurrentGesture:;
+- (id)eventParamsInActive:;
+- (void)handleConfigMap:;
+- (id)initWithSign:context:member:detector:;
+- (BOOL)isGestureTypeMatched:;
+- (BOOL)isInvokedBegin;
+- (BOOL)isInvokedEnd;
+- (BOOL)isInvokedStart;
+- (void)onBegin:touchEvent:;
+- (void)onEnd:touchEvent:;
+- (void)onHandle:touches:event:touchEvent:flingPoint:;
+- (void)onStart:touchEvent:;
+- (void)onUpdate:touchEvent:;
+- (void)setIsInvokedBegin:;
+- (void)setIsInvokedEnd:;
+- (void)setIsInvokedStart:;
+- (BOOL)shouldFail:;
+- (void)end;
+- (id)lastTouchEvent;
+- (void).cxx_destruct;
+- (void)reset;
+- (id)lastPoint;
+- (void)setLastPoint:;
+- (void)fail;
+- (id)eventParams;
+- (void)setLastTouchEvent:;
+@end

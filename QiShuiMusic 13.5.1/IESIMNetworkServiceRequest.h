@@ -1,0 +1,37 @@
+@interface IESIMNetworkServiceRequest : NSObject
+@property (nonatomic) NSString urlString;
+@property (nonatomic) NSDictionary params;
+@property (nonatomic) NSString method;
+@property (nonatomic) BOOL needCommonParams;
+@property (nonatomic) NSDictionary headerField;
+@property (nonatomic) # modelClass;
+@property (nonatomic) NSArray targetAttributes;
+@property (nonatomic) # requestSerializer;
+@property (nonatomic) # responseSerializer;
+@property (nonatomic) @? responseBlock;
+@property (nonatomic) @? completionBlock;
+- (void)setHeaderField:;
+- (id)headerField;
+- (BOOL)needCommonParams;
+- (Class)requestSerializer;
+- (Class)responseSerializer;
+- (void)setNeedCommonParams:;
+- (void)setRequestSerializer:;
+- (void)setResponseSerializer:;
+- (id)urlString;
+- (id)init;
+- (id)method;
+- (void)setCompletionBlock:;
+- (Class)modelClass;
+- (void)setModelClass:;
+- (void).cxx_destruct;
+- (void)setMethod:;
+- (void)setUrlString:;
+- (id)completionBlock;
+- (id)params;
+- (void)setParams:;
+- (id)responseBlock;
+- (void)setResponseBlock:;
+- (id)targetAttributes;
+- (void)setTargetAttributes:;
+@end

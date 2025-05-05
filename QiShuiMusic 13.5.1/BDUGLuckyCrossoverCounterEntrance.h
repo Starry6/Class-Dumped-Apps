@@ -1,0 +1,35 @@
+@interface BDUGLuckyCrossoverCounterEntrance : NSObject
+@property (nonatomic) NSString crossToken;
+@property (nonatomic) NSString activityId;
+@property (nonatomic) <BDUGLuckyCounterTaskContextProtocol> taskContext;
+@property (nonatomic) NSString observerKey;
+@property (nonatomic) BDUGLuckyPendantPositionModel position;
+@property (nonatomic) q pendantOrien;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setObserverKey:;
+- (void)setTaskContext:;
+- (void)__createTaskWithSourceType:;
+- (void)__resetCrossoverTaskWithCrossToken:activityId:;
+- (void)createCrossoverCounterTask:activityId:;
+- (id)crossToken;
+- (id)observerKey;
+- (long long)pendantOrien;
+- (void)setCrossToken:;
+- (void)setPendantOrien:;
+- (void)setPendantRoundOrientation:;
+- (void)updatePendantPosition:;
+- (void)setPosition:;
+- (id)position;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (id)taskContext;
+- (id)activityId;
+- (void)setActivityId:;
++ (void)startupCrossoverCounterModule;
++ (id)sharedInstance;
++ (id)serviceProtocol;
+@end

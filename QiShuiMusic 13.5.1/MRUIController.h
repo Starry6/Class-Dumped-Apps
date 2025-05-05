@@ -1,0 +1,36 @@
+@interface MRUIController : NSObject
+@property (nonatomic) NSXPCConnection xpcConnection;
+@property (nonatomic) {os_unfair_lock_s=I} lock;
+@property (nonatomic) <MRUIServerXPCProtocol> server;
+@property (nonatomic) BOOL hasLockScreenControlsAssertion;
+@property (nonatomic) BOOL hasQuickControlsAssertion;
+@property (nonatomic) BOOL hasScreenMirroringQuickControlsAssertion;
+@property (nonatomic) BOOL shouldRestoreState;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (void)dealloc;
+- (id)server;
+- (id)lock;
+- (id)xpcConnection;
+- (void).cxx_destruct;
+- (void)acquireLockScreenControlsAssertion;
+- (void)releaseLockScreenControlsAssertion;
+- (id)acquireQuickControlsAssertion;
+- (void)releaseQuickControlsAssertion;
+- (void)acquireScreenMirroringQuickControlsAssertion;
+- (void)releaseScreenMirroringQuickControlsAssertion;
+- (id)contextForActivityIdentifier:;
+- (void)_restoreState;
+- (BOOL)hasUIAssertions;
+- (BOOL)hasLockScreenControlsAssertion;
+- (void)setHasLockScreenControlsAssertion:;
+- (BOOL)hasQuickControlsAssertion;
+- (void)setHasQuickControlsAssertion:;
+- (BOOL)hasScreenMirroringQuickControlsAssertion;
+- (void)setHasScreenMirroringQuickControlsAssertion:;
+- (BOOL)shouldRestoreState;
+- (void)setShouldRestoreState:;
+@end

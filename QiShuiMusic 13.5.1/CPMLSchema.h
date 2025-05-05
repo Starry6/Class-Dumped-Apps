@@ -1,0 +1,34 @@
+@interface CPMLSchema : NSObject
+@property (nonatomic) NSMutableArray attribute;
+@property (nonatomic) NSMutableArray indexColumnList;
+@property (nonatomic) NSMutableString schemaHeader;
+@property (nonatomic) NSMutableString schemaHeaderWithType;
+@property (nonatomic) NSMutableArray nsRemapTable;
+@property (nonatomic) NSMutableArray availableOptions;
+- (id)initWithPlist:;
+- (id)attribute;
+- (void).cxx_destruct;
+- (id)init:;
+- (id)availableOptions;
+- (id)getColumnName:;
+- (int)getSchemaType:;
+- (int)getVectorContent:;
+- (int)getYColumnPosition;
+- (unsigned long long)getTotalAttributes;
+- (BOOL)isNumType:;
+- (BOOL)isIntType:;
+- (BOOL)isRealType:;
+- (BOOL)isStringType:;
+- (BOOL)isVectorType:;
+- (BOOL)isColumnContinous:;
+- (int)getColumnPosition:;
+- (BOOL)hasOptions:;
+- (id)getUserDefinedCategoricalData:;
+- (unsigned long long)getUserDefinedCategoricalDataCount:;
+- (BOOL)matchSubstituteValue:theValue:;
+- (id)getSubstituteValue:;
+- (id)schemaHeader;
+- (id)schemaHeaderWithType;
+- (id)nsRemapTable;
+- (id)indexColumnList;
+@end

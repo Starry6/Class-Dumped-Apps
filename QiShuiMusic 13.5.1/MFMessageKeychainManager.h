@@ -1,0 +1,33 @@
+@interface MFMessageKeychainManager : NSObject
++ (id)_passwordForHost:username:port:keychainProtocol:;
++ (id)passwordForHost:username:port:keychainProtocol:;
++ (void)setPassword:forHost:username:port:keychainProtocol:keychainAccessibility:;
++ (void)removePasswordForHost:username:port:keychainProtocol:;
++ (id)_passwordForGenericAccount:service:error:;
++ (id)passwordForServiceName:accountName:synchronizable:error:;
++ (id)passwordForServiceName:accountName:error:;
++ (id)passwordForServiceName:accountName:;
++ (BOOL)addPassword:forServiceName:accountName:keychainAccessibility:synchronizable:error:;
++ (void)setPassword:forServiceName:accountName:keychainAccessibility:;
++ (void)removePasswordForServiceName:accountName:;
++ (id)copySMIMESigningPolicyForAddress:;
++ (id)copySMIMEEncryptionPolicyForAddress:;
++ (id)copyIdentityForPersistentReference:error:;
++ (id)persistentReferenceForIdentity:error:;
++ (BOOL)_matchSSLClientIdentity:withHostname:;
++ (id)copyClientSSLIdentityForHostName:error:;
++ (id)copyAllSigningIdentitiesForAddress:error:;
++ (id)copyAllEncryptionIdentitiesForAddress:error:;
++ (id)_copyAllIdentitiesWithError:usingBlock:;
++ (id)_copyAllIdentitiesFromSyncableKeychain:withError:usingBlock:;
++ (BOOL)validateSigningIdentity:forAddress:error:;
++ (BOOL)validateEncryptionIdentity:forAddress:error:;
++ (BOOL)_validateIdentity:forAddress:policy:usage:error:;
++ (id)copyEncryptionCertificateForAddress:error:;
++ (id)_addCertificate:persistent:;
++ (id)_copyCertificateForPersistent:error:;
++ (id)_addPersistentMapping:forAddress:;
++ (id)_removeCertificateForPersistent:;
++ (id)saveEncryptionCertificate:forAddress:;
++ (id)newTrustManager;
+@end

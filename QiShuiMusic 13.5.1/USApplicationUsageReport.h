@@ -1,0 +1,35 @@
+@interface USApplicationUsageReport : NSObject
+@property (nonatomic) NSDictionary userNotificationsByBundleIdentifier;
+@property (nonatomic) NSDictionary pickupsByBundleIdentifier;
+@property (nonatomic) NSString canonicalBundleIdentifier;
+@property (nonatomic) BOOL applicationUsageTrusted;
+@property (nonatomic) double totalUsageTime;
+@property (nonatomic) NSDictionary applicationUsageByBundleIdentifier;
+@property (nonatomic) NSDictionary webUsageByDomain;
+@property (nonatomic) Q totalUserNotifications;
+@property (nonatomic) Q totalPickups;
+@property (nonatomic) NSString bundleIdentifier;
+@property (nonatomic) double applicationUsageTime;
+- (id)bundleIdentifier;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)canonicalBundleIdentifier;
+- (double)totalUsageTime;
+- (unsigned long long)totalPickups;
+- (unsigned long long)totalUserNotifications;
+- (BOOL)applicationUsageTrusted;
+- (id)applicationUsageByBundleIdentifier;
+- (id)userNotificationsByBundleIdentifier;
+- (id)pickupsByBundleIdentifier;
+- (id)initWithBundleIdentifier:totalUsageTime:applicationUsageTime:webUsageByDomain:;
+- (id)initWithCanonicalBundleIdentifier:totalUsageTime:applicationUsageByBundleIdentifier:webUsageByDomain:userNotificationsByBundleIdentifier:pickupsByBundleIdentifier:;
+- (id)initWithCanonicalBundleIdentifier:applicationUsageTrusted:totalUsageTime:applicationUsageByBundleIdentifier:webUsageByDomain:userNotificationsByBundleIdentifier:pickupsByBundleIdentifier:;
+- (void)_usApplicationUsageReportCommonInitWithCanonicalBundleIdentifier:applicationUsageTrusted:totalUsageTime:applicationUsageByBundleIdentifier:webUsageByDomain:userNotificationsByBundleIdentifier:pickupsByBundleIdentifier:;
+- (double)applicationUsageTime;
+- (id)webUsageByDomain;
+- (void)setUserNotificationsByBundleIdentifier:;
+- (void)setPickupsByBundleIdentifier:;
++ (BOOL)supportsSecureCoding;
+@end

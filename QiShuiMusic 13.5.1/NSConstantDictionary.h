@@ -1,0 +1,31 @@
+@interface NSConstantDictionary : NSDictionary
+- (void)getObjects:andKeys:count:;
+- (id)keyOfEntryWithOptions:passingTest:;
+- (id)keysOfEntriesWithOptions:passingTest:;
+- (void)__apply:context:;
+- (id)init;
+- (void)dealloc;
+- (id)copy;
+- (id)allKeys;
+- (unsigned long long)countByEnumeratingWithState:objects:count:;
+- (void)enumerateKeysAndObjectsWithOptions:usingBlock:;
+- (BOOL)_isDeallocating;
+- (id)initWithObjects:forKeys:count:;
+- (id)mutableCopy;
+- (id)autorelease;
+- (id)keyEnumerator;
+- (id)release;
+- (id)retain;
+- (id)objectForKeyedSubscript:;
+- (BOOL)_tryRetain;
+- (id)objectForKey:;
+- (id)allValues;
+- (id)objectEnumerator;
+- (id)mutableCopyWithZone:;
+- (unsigned long long)count;
+- (unsigned long long)retainCount;
+- (id)copyWithZone:;
++ (id)allocWithZone:;
++ (id)new;
++ (BOOL)automaticallyNotifiesObserversForKey:;
+@end

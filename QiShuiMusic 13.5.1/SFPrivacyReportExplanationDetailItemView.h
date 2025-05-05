@@ -1,0 +1,31 @@
+@interface SFPrivacyReportExplanationDetailItemView : UIView
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UITextView bodyTextView;
+@property (nonatomic) double titleLabelTopSpacing;
+@property (nonatomic) double hairlineTopSpacing;
+@property (nonatomic) BOOL usesInsetStyle;
+@property (nonatomic) <SFPrivacyReportGridItemDelegate> delegate;
+@property (nonatomic) Q gridPosition;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setDelegate:;
+- (id)initWithFrame:;
+- (void)traitCollectionDidChange:;
+- (id)delegate;
+- (BOOL)textView:shouldInteractWithURL:inRange:interaction:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (id)bodyTextView;
+- (void)setUsesInsetStyle:;
+- (BOOL)usesInsetStyle;
+- (unsigned long long)gridPosition;
+- (void)setGridPosition:;
+- (void)setTitleLabelTopSpacing:;
+- (void)setHairlineTopSpacing:;
+- (void)_updateTopConstraints;
+- (void)_updateTopSpacing;
+- (double)titleLabelTopSpacing;
+- (double)hairlineTopSpacing;
+@end

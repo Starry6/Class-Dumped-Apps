@@ -1,0 +1,31 @@
+@interface BSActionResponse : NSObject
+@property (nonatomic) BSAuditToken auditToken;
+@property (nonatomic) BSSettings info;
+@property (nonatomic) NSError error;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (void)dealloc;
+- (void)encodeWithXPCDictionary:;
+- (id)succinctDescriptionBuilder;
+- (id)error;
+- (unsigned long long)hash;
+- (id)auditToken;
+- (id)initWithXPCDictionary:;
+- (id)valueDescriptionForFlag:object:ofSetting:;
+- (id)initWithInfo:error:;
+- (void).cxx_destruct;
+- (id)succinctDescription;
+- (id)description;
+- (id)info;
+- (id)descriptionBuilderWithMultilinePrefix:;
+- (BOOL)isEqual:;
+- (id)keyDescriptionForSetting:;
+- (id)descriptionWithMultilinePrefix:;
+- (id)copyWithZone:;
++ (id)response;
++ (id)responseWithInfo:;
++ (id)responseForError:;
+@end

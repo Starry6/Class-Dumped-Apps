@@ -1,0 +1,2 @@
+@interface CNUIUserActionTargetDiscoveringObservableCancelationToken : CNCancelationToken
+@end

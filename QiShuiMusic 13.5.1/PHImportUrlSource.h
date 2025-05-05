@@ -1,0 +1,36 @@
+@interface PHImportUrlSource : PHImportSource
+@property (nonatomic) NSArray baseNames;
+@property (nonatomic) NSArray urls;
+@property (nonatomic) BOOL isReadonlyVolume;
+@property (nonatomic) NSDictionary resourcePathsByIdentifier;
+- (id)path;
+- (id)urls;
+- (void)dealloc;
+- (unsigned long long)hash;
+- (void)setUrls:;
+- (void)endWork;
+- (BOOL)isAvailable;
+- (void)setPrefix:;
+- (id)prefix;
+- (void).cxx_destruct;
+- (id)name;
+- (BOOL)isEqual:;
+- (id)initWithUrls:;
+- (BOOL)containsSupportedMediaWithImportExceptions:;
+- (BOOL)isReadonlyVolume;
+- (id)productKind;
+- (BOOL)canReference;
+- (BOOL)isEqualToImportUrlSource:;
+- (id)resourcePathsInUrls:;
+- (void)beginProcessingWithCompletion:;
+- (id)assetsByProcessingItem:;
+- (id)volumePath;
+- (void)dispatchAssetDataRequestAsyncUsingBlock:;
+- (id)rootUrlOfUrls:;
+- (void)setIsReadonlyVolume:;
+- (id)resourcePathsByIdentifier;
+- (void)setResourcePathsByIdentifier:;
+- (id)baseNames;
+- (void)setBaseNames:;
++ (BOOL)treatAsReadonlyVolume:;
+@end

@@ -1,0 +1,34 @@
+@interface PPTopicStore : NSObject
+@property (nonatomic) NSString clientIdentifier;
+- (BOOL)clearWithError:;
+- (BOOL)deleteAllTopicsFromSourcesWithBundleId:deletedCount:error:;
+- (id)_initFromSubclass;
+- (id)init;
+- (BOOL)deleteAllTopicsFromSourcesWithBundleId:documentIds:deletedCount:error:;
+- (id)cachedTopicScores;
+- (id)unmapMappedTopicIdentifier:mappingIdentifier:error:;
+- (BOOL)iterRankedTopicsWithQuery:error:block:;
+- (id)topicRecordsWithQuery:error:;
+- (BOOL)cloudSyncWithError:;
+- (BOOL)donateTopics:source:algorithm:cloudSync:sentimentScore:exactMatchesInSourceText:error:;
+- (BOOL)computeAndCacheTopicScores:;
+- (void)registerFeedback:completion:;
+- (id)topicExtractionsFromText:error:;
+- (BOOL)iterTopicRecordsWithQuery:error:block:;
+- (BOOL)clearTopicScoresCache:;
+- (void)setClientIdentifier:;
+- (BOOL)deleteAllTopicsWithTopicId:deletedCount:error:;
+- (BOOL)deleteAllTopicsFromSourcesWithBundleId:groupIds:deletedCount:error:;
+- (BOOL)iterScoresForTopicMapping:query:error:block:;
+- (id)scoresForTopicMapping:query:error:;
+- (BOOL)clearWithError:deletedCount:;
+- (id)rankedTopicsWithQuery:error:;
+- (id)clientIdentifier;
+- (BOOL)deleteAllTopicsFromSourcesWithBundleId:groupId:olderThan:deletedCount:error:;
+- (id)topicCacheSandboxExtensionToken:;
+- (void)registerUniversalSearchSpotlightFeedback:completion:;
+- (id)cachePath:;
++ (id)new;
++ (id)defaultStore;
++ (double)decayValue:withDecayRate:forTimeElapsed:;
+@end

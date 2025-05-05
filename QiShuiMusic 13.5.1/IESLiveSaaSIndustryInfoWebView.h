@@ -1,0 +1,30 @@
+@interface IESLiveSaaSIndustryInfoWebView : UIView
+@property (nonatomic) PuzzleHybridContainer hybridContainer;
+@property (nonatomic) BOOL didLoad;
+@property (nonatomic) {CGSize=dd} containerSize;
+@property (nonatomic) <IESLiveSaaSIndustryInfoWebViewDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)hybridContainer;
+- (void)addAdditionJSB;
+- (id)loadHybridContainer:;
+- (id)pluginLayoutContentInsets;
+- (id)pluginLayoutContentSize;
+- (void)receiveUpdateMessage:;
+- (void)renderContentUrl:;
+- (void)resizeContainerSize:;
+- (void)setHybridContainer:;
+- (id)init;
+- (id)viewType;
+- (void)dealloc;
+- (id)intrinsicContentSize;
+- (void)setContainerSize:;
+- (void)setDelegate:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)containerSize;
+- (BOOL)didLoad;
+- (void)setDidLoad:;
+@end

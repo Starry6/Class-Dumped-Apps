@@ -1,0 +1,35 @@
+@interface SSFamilyMember : NSObject
+@property (nonatomic) NSNumber iTunesIdentifier;
+@property (nonatomic) NSNumber iCloudIdentifier;
+@property (nonatomic) NSString firstName;
+@property (nonatomic) NSString lastName;
+@property (nonatomic) NSString iCloudAccountName;
+@property (nonatomic) BOOL me;
+@property (nonatomic) BOOL sharingPurchases;
+@property (nonatomic) BOOL askToBuy;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setLastName:;
+- (id)initWithXPCEncoding:;
+- (BOOL)isMe;
+- (void)setMe:;
+- (id)copyXPCEncoding;
+- (void)setFirstName:;
+- (id)firstName;
+- (id)lastName;
+- (void).cxx_destruct;
+- (id)description;
+- (id)iTunesIdentifier;
+- (void)setITunesIdentifier:;
+- (BOOL)isSharingPurchases;
+- (id)initWithCacheRepresentation:;
+- (id)newCacheRepresentation;
+- (BOOL)askToBuy;
+- (id)iCloudAccountName;
+- (void)setICloudAccountName:;
+- (id)iCloudIdentifier;
+- (void)setICloudIdentifier:;
+- (void)setSharingPurchases:;
+@end

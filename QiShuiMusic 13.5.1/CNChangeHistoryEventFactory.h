@@ -1,0 +1,21 @@
+@interface CNChangeHistoryEventFactory : NSObject
+- (id)preferredContactForImageEventWithPreferredContact:unifiedContact:;
+- (id)dropEverythingEvent;
+- (id)addMemberToGroupEventWithMember:group:;
+- (id)unlinkContactEventWithContact:;
+- (id)differentMeCardEventWithContactIdentifier:;
+- (id)deleteGroupEventWithGroupIdentifier:externalURI:externalModificationTag:;
+- (id)updateContactEventWithContact:imagesChanged:;
+- (id)deleteGroupEventWithGroupIdentifier:;
+- (id)addContactEventWithContact:containerIdentifier:;
+- (id)deleteContactEventWithContactIdentifier:externalURI:externalModificationTag:;
+- (id)deleteContactEventWithContactIdentifier:;
+- (id)addGroupEventWithGroup:containerIdentifier:;
+- (id)addSubgroupToGroupEventWithSubgroup:group:;
+- (id)preferredContactForNameEventWithPreferredContact:unifiedContact:;
+- (id)updateGroupEventWithGroup:;
+- (id)updateContactEventWithContact:;
+- (id)removeMemberFromGroupEventWithMember:group:;
+- (id)removeSubgroupFromGroupEventWithSubgroup:group:;
+- (id)linkContactsEventWithFromContact:toContact:unifiedContact:;
+@end

@@ -1,0 +1,36 @@
+@interface GEORPFeedbackImageUploadParameters : PBCodable
+@property (nonatomic) NSMutableArray images;
+@property (nonatomic) BOOL hasIsEnrichment;
+@property (nonatomic) BOOL isEnrichment;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (BOOL)hasGreenTeaWithValue:;
+- (void)clearSensitiveFields:;
+- (id)initWithJSON:;
+- (void)clearImages;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (id)images;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (unsigned long long)imagesCount;
+- (void)setImages:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)addImage:;
+- (id)imageAtIndex:;
+- (BOOL)isEnrichment;
+- (void)setIsEnrichment:;
+- (void)setHasIsEnrichment:;
+- (BOOL)hasIsEnrichment;
++ (BOOL)isValid:;
++ (Class)imageType;
+@end

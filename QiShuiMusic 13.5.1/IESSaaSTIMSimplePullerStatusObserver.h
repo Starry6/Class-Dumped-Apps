@@ -1,0 +1,32 @@
+@interface IESSaaSTIMSimplePullerStatusObserver : NSObject
+@property (nonatomic) NSMutableDictionary currentReasonForInbox;
+@property (nonatomic) NSMutableDictionary currentStatusForInbox;
+@property (nonatomic) <IESSaaSTIMPullerStatusChangeObserverDelegate> notifier;
+@property (nonatomic) NSMutableDictionary everWakeUpStatusForInbox;
+@property (nonatomic) q requestMessagePropertyStrategy;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)currentReasonForInbox;
+- (id)currentStatusForInbox;
+- (long long)currentStatusForInbox:;
+- (void)didEndInstallInitForUser:inbox:pullerType:;
+- (void)didEndPullForUser:inbox:pullerType:error:hasMore:userInfo:;
+- (void)didSetNeedsToPullWithReason:forUser:inbox:pullerType:;
+- (void)didStartInstallInitForUser:inbox:pullerType:;
+- (void)didStartPullForUser:inbox:pullerType:;
+- (id)everWakeUpStatusForInbox;
+- (long long)requestMessagePropertyStrategy;
+- (void)requestMessagePropertyWithStrategy:;
+- (void)setCurrentReasonForInbox:;
+- (void)setCurrentStatusForInbox:;
+- (void)setEverWakeUpStatusForInbox:;
+- (void)setRequestMessagePropertyStrategy:;
+- (void)setStatus:forInbox:;
+- (id)notifier;
+- (void)setNotifier:;
+- (id)initWithNotifier:;
+- (void).cxx_destruct;
++ (id)sharedInstance;
+@end

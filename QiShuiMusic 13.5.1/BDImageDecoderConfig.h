@@ -1,0 +1,35 @@
+@interface BDImageDecoderConfig : NSObject
+@property (nonatomic) BOOL decodeForDisplay;
+@property (nonatomic) BOOL shouldScaleDown;
+@property (nonatomic) double scale;
+@property (nonatomic) {CGSize=dd} sizeLimit;
+@property (nonatomic) Q memoryLimit;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} cropRect;
+@property (nonatomic) BOOL smartCrop;
+@property (nonatomic) BDImageCropConfig customCropConfig;
+@property (nonatomic) {CGSize=dd} downsampleSize;
+- (BOOL)shouldScaleDown;
+- (id)customCropConfig;
+- (BOOL)decodeForDisplay;
+- (id)downsampleSize;
+- (id)imageCanvasSize:;
+- (unsigned long long)imageSizeType:;
+- (void)setCustomCropConfig:;
+- (void)setDecodeForDisplay:;
+- (void)setDownsampleSize:;
+- (void)setShouldScaleDown:;
+- (void)setSmartCrop:;
+- (BOOL)smartCrop;
+- (id)init;
+- (void)setScale:;
+- (id)cropRect;
+- (void)setCropRect:;
+- (void).cxx_destruct;
+- (id)sizeLimit;
+- (void)setMemoryLimit:;
+- (double)scale;
+- (unsigned long long)memoryLimit;
+- (id)copyWithZone:;
+- (void)setSizeLimit:;
++ (id)minimumSizeFromOriginSize:;
+@end

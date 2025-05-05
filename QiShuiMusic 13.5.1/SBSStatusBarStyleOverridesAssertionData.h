@@ -1,0 +1,36 @@
+@interface SBSStatusBarStyleOverridesAssertionData : NSObject
+@property (nonatomic) Q statusBarStyleOverrides;
+@property (nonatomic) NSInteger pid;
+@property (nonatomic) BOOL exclusive;
+@property (nonatomic) BOOL showsWhenForeground;
+@property (nonatomic) NSString uniqueIdentifier;
+@property (nonatomic) NSString statusString;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setUniqueIdentifier:;
+- (id)init;
+- (id)uniqueIdentifier;
+- (BOOL)isExclusive;
+- (void)setStatusBarStyleOverrides:;
+- (id)succinctDescriptionBuilder;
+- (unsigned long long)statusBarStyleOverrides;
+- (id)initWithCoder:;
+- (void)setStatusString:;
+- (id)statusString;
+- (void)encodeWithCoder:;
+- (int)pid;
+- (void).cxx_destruct;
+- (id)succinctDescription;
+- (id)description;
+- (id)descriptionBuilderWithMultilinePrefix:;
+- (void)setPid:;
+- (id)descriptionWithMultilinePrefix:;
+- (void)setExclusive:;
+- (id)initWithStatusBarStyleOverrides:forPID:exclusive:showsWhenForeground:;
+- (BOOL)showsWhenForeground;
+- (id)initWithStatusBarStyleOverrides:forPID:exclusive:showsWhenForeground:uniqueIdentifier:;
+- (void)setShowsWhenForeground:;
++ (BOOL)supportsSecureCoding;
+@end

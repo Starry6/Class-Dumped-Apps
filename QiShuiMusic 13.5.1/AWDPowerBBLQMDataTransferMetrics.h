@@ -1,0 +1,34 @@
+@interface AWDPowerBBLQMDataTransferMetrics : PBCodable
+@property (nonatomic) BOOL hasTimestamp;
+@property (nonatomic) Q timestamp;
+@property (nonatomic) NSMutableArray lQMBytes;
+@property (nonatomic) Q lQMTransitionCntBucketsCount;
+@property (nonatomic) ^I lQMTransitionCntBuckets;
+- (void)dealloc;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)setHasTimestamp:;
+- (void)mergeFrom:;
+- (BOOL)hasTimestamp;
+- (void)setTimestamp:;
+- (BOOL)readFrom:;
+- (unsigned long long)timestamp;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)clearLQMBytes;
+- (void)addLQMBytes:;
+- (unsigned long long)lQMBytesCount;
+- (id)lQMBytesAtIndex:;
+- (unsigned long long)lQMTransitionCntBucketsCount;
+- (id)lQMTransitionCntBuckets;
+- (void)clearLQMTransitionCntBuckets;
+- (void)addLQMTransitionCntBuckets:;
+- (unsigned int)lQMTransitionCntBucketsAtIndex:;
+- (void)setLQMTransitionCntBuckets:count:;
+- (id)lQMBytes;
+- (void)setLQMBytes:;
++ (Class)lQMBytesType;
+@end

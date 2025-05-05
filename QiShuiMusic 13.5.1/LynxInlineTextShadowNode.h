@@ -1,0 +1,29 @@
+@interface LynxInlineTextShadowNode : LynxBaseTextShadowNode
+- (void)setBackgroundSize:requestReset:;
+- (BOOL)needsEventSet;
+- (void)setBackgroundImage:requestReset:;
+- (void)setBackgroundOrMaskWithDrawable:reset:value:;
+- (void)setBackgroundOrMaskWithPosition:reset:value:;
+- (void)setBackgroundOrMaskWithRepeat:reset:value:;
+- (void)setBackgroundOrMaskWithSize:reset:value:;
+- (void)setBackgroundPosition:requestReset:;
+- (void)setBackgroundRepeat:requestReset:;
+- (void)setBorderBottomLeftRadius:requestReset:;
+- (void)setBorderBottomRightRadius:requestReset:;
+- (void)setBorderRadius:requestReset:;
+- (void)setBorderTopLeftRadius:requestReset:;
+- (void)setBorderTopRightRadius:requestReset:;
+- (void)setVerticalAlign:requestReset:;
+- (BOOL)isVirtual;
++ (id)__lynx_prop_config__1075;
++ (id)__lynx_prop_config__1346;
++ (id)__lynx_prop_config__1737;
++ (id)__lynx_prop_config__1768;
++ (id)__lynx_prop_config__1799;
++ (id)__lynx_prop_config__18110;
++ (id)__lynx_prop_config__251;
++ (id)__lynx_prop_config__292;
++ (id)__lynx_prop_config__633;
++ (id)__lynx_prop_config__834;
++ (void)lynxLazyLoad;
+@end

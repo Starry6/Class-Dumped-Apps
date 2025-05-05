@@ -1,0 +1,2 @@
+@interface IESLiveChorusRoot : GPBRootObject
+@end

@@ -1,0 +1,32 @@
+@interface IESLiveBigPartyStreamLayout : NSObject
+@property (nonatomic) BOOL seiFieldsSimplifiedUid;
+@property (nonatomic) HTSInteractionStreamAppData appData;
+@property (nonatomic) <IESLiveInteractiveBigPartyStreamLayoutDelegate> delegate;
+@property (nonatomic) IESLiveInteractionLayout layout;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)configLandscapeLayout:withSessions:withUserService:mediaConfig:;
+- (void)adjustAnchorLayoutWhenOpenContainerCastProcessingWithStreamLayout:anchorLayout:;
+- (id)appDataWithUserService:;
+- (void)configPortraitLayout:withSessions:withUserService:mediaConfig:;
+- (void)dealEnlargeGuestPosition:;
+- (BOOL)isFloatDynamicEnalrgeMode;
+- (BOOL)isNeedSubOneLayoutStyle;
+- (void)satisfyVisibleCheck:grids:;
+- (BOOL)seiFieldsSimplifiedUid;
+- (id)seiWithUserModel:session:userService:;
+- (void)setSeiFieldsSimplifiedUid:;
+- (void)updateLayoutOfPublisher:withSessions:withUserService:mediaConfig:;
+- (id)init;
+- (void)dealloc;
+- (void)setDelegate:;
+- (void)setLayout:;
+- (id)layout;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setAppData:;
+- (id)appData;
++ (id)regionsGeometricDataWithLayout:;
+@end

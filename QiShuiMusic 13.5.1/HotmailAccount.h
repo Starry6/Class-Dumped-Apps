@@ -1,0 +1,33 @@
+@interface HotmailAccount : IMAPAccount
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)hostname;
+- (unsigned int)portNumber;
+- (id)emailAddressStrings;
+- (id)statisticsKind;
+- (BOOL)shouldFetchACEDBInfoForError:;
+- (unsigned long long)credentialAccessibility;
+- (id)preferredAuthScheme;
+- (BOOL)shouldDisplayHostnameInErrorMessages;
+- (id)iconString;
+- (BOOL)derivesDeliveryAccountInfoFromMailAccount;
+- (id)_deliveryAccountCreateIfNeeded:;
+- (id)initWithLibrary:persistentAccount:;
+- (id)displayUsername;
+- (id)saveSentFolder;
++ (id)hostname;
++ (BOOL)usesSSL;
++ (id)accountTypeIdentifier;
++ (id)authSchemesForAccountClass;
++ (BOOL)isPredefinedAccountType;
++ (id)displayedAccountTypeString;
++ (id)emailAddressWithUsername:;
++ (id)deliveryAccountHostname;
++ (BOOL)deliveryAccountUsesSSL;
++ (unsigned int)deliveryAccountPortNumber;
++ (id)emailAddressHostPart;
++ (BOOL)usernameIsEmailAddress;
++ (BOOL)primaryDeliveryAccountIsDynamic;
+@end

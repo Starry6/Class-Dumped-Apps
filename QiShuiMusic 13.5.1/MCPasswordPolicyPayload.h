@@ -1,0 +1,36 @@
+@interface MCPasswordPolicyPayload : MCPayload
+@property (nonatomic) NSNumber isSimplePasscodeAllowed;
+@property (nonatomic) NSNumber isPasscodeRequired;
+@property (nonatomic) NSNumber isAlphanumericPasscodeRequired;
+@property (nonatomic) NSNumber isManualFetchingWhenRoaming;
+@property (nonatomic) NSNumber minLength;
+@property (nonatomic) NSNumber maxFailedAttempts;
+@property (nonatomic) NSNumber maxGracePeriodMinutes;
+@property (nonatomic) NSNumber maxInactivityMinutes;
+@property (nonatomic) NSNumber maxPasscodeAgeDays;
+@property (nonatomic) NSNumber passcodeHistoryCount;
+@property (nonatomic) NSNumber minComplexCharacters;
+- (id)minLength;
+- (id)isPasscodeRequired;
+- (id)title;
+- (void).cxx_destruct;
+- (id)verboseDescription;
+- (id)restrictions;
+- (id)initWithDictionary:profile:outError:;
+- (id)stubDictionary;
+- (id)payloadDescriptionKeyValueSections;
+- (id)subtitle1Description;
+- (id)filterForUserEnrollmentOutError:;
+- (id)isSimplePasscodeAllowed;
+- (id)isAlphanumericPasscodeRequired;
+- (id)isManualFetchingWhenRoaming;
+- (id)maxFailedAttempts;
+- (id)maxGracePeriodMinutes;
+- (id)maxInactivityMinutes;
+- (id)passcodeHistoryCount;
+- (id)maxPasscodeAgeDays;
+- (id)minComplexCharacters;
++ (id)typeStrings;
++ (id)localizedPluralForm;
++ (id)localizedSingularForm;
+@end

@@ -1,0 +1,35 @@
+@interface CIDepthEffectApplyBlurMap : CIFilter
+@property (nonatomic) CIImage inputImage;
+@property (nonatomic) CIImage inputBlurMap;
+@property (nonatomic) CIImage inputMatteImage;
+@property (nonatomic) CIImage inputGainMap;
+@property (nonatomic) NSNumber inputAperture;
+@property (nonatomic) NSNumber inputLumaNoiseScale;
+@property (nonatomic) NSNumber inputScale;
+@property (nonatomic) @ inputAuxDataMetadata;
+@property (nonatomic) NSString inputShape;
+@property (nonatomic) NSNumber inputDraftMode;
+- (id)inputScale;
+- (void)setInputScale:;
+- (id)inputImage;
+- (void)setInputImage:;
+- (id)outputImage;
+- (id)inputMatteImage;
+- (id)inputDraftMode;
+- (void)setInputDraftMode:;
+- (void)setInputMatteImage:;
+- (id)inputLumaNoiseScale;
+- (void)setInputLumaNoiseScale:;
+- (id)inputAperture;
+- (void)setInputAperture:;
+- (id)inputShape;
+- (void)setInputShape:;
+- (id)unifiedRenderingOutputImage:;
+- (id)inputGainMap;
+- (void)setInputGainMap:;
+- (id)inputAuxDataMetadata;
+- (void)setInputAuxDataMetadata:;
+- (id)inputBlurMap;
+- (void)setInputBlurMap:;
++ (id)customAttributes;
+@end

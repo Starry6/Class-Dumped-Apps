@@ -1,0 +1,2 @@
+@interface UIKeyboardCandidateViewConfigurationTenKeyPadSplit : UIKeyboardCandidateViewConfigurationTenKey
+@end

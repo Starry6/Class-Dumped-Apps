@@ -1,0 +1,38 @@
+@interface LNAutoShortcut : NSObject
+@property (nonatomic) NSString bundleIdentifier;
+@property (nonatomic) NSString localeIdentifier;
+@property (nonatomic) NSString actionIdentifier;
+@property (nonatomic) NSArray localizedPhrases;
+@property (nonatomic) NSDictionary localizedPhrasesByBasePhraseTemplate;
+@property (nonatomic) NSArray orderedPhrases;
+@property (nonatomic) NSString localizedTitle;
+@property (nonatomic) NSString localizedShortTitle;
+@property (nonatomic) NSString localizedActionDescription;
+@property (nonatomic) NSString localizedAutoShortcutDescription;
+@property (nonatomic) NSString systemImage;
+@property (nonatomic) NSString systemImageName;
+@property (nonatomic) q shortcutTileColor;
+- (id)allGroupedPhrases;
+- (id)bundleIdentifier;
+- (id)localizedShortTitle;
+- (id)initWithCoder:;
+- (id)systemImageName;
+- (void)encodeWithCoder:;
+- (id)actionIdentifier;
+- (void).cxx_destruct;
+- (id)localizedTitle;
+- (id)description;
+- (id)localeIdentifier;
+- (id)systemImage;
+- (long long)shortcutTileColor;
+- (id)orderedPhrases;
+- (id)localizedAutoShortcutDescription;
+- (id)initWithBundleIdentifier:localeIdentifier:actionIdentifier:orderedPhrases:localizedShortTitle:localizedAutoShortcutDescription:systemImageName:shortcutTileColor:;
+- (id)initWithBundleIdentifier:localeIdentifier:actionIdentifier:orderedPhrases:localizedShortTitle:localizedAutoShortcutDescription:systemImageName:;
+- (id)initWithBundleIdentifier:actionIdentifier:localizedPhrases:localizedTitle:localizedShortTitle:localizedAutoShortcutDescription:systemImageName:;
+- (id)initWithLocaleIdentifier:localizedApplicationName:basePhraseTemplateSubstitutions:actionIdentifier:phraseTemplates:title:shortTitle:actionDescription:systemImage:;
+- (id)localizedPhrases;
+- (id)localizedPhrasesByBasePhraseTemplate;
+- (id)localizedActionDescription;
++ (BOOL)supportsSecureCoding;
+@end

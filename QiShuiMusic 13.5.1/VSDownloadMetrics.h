@@ -1,0 +1,36 @@
+@interface VSDownloadMetrics : NSObject
+@property (nonatomic) NSString voiceDownloadKey;
+@property (nonatomic) q downloadBeginTimestamp;
+@property (nonatomic) q downloadEndTimestamp;
+@property (nonatomic) NSString clientBundleIdentifier;
+@property (nonatomic) BOOL isCellularAllowed;
+@property (nonatomic) BOOL discretionary;
+@property (nonatomic) NSNumber downloadSize;
+@property (nonatomic) float downloadProgress;
+@property (nonatomic) q errorCode;
+@property (nonatomic) double setupTimeInterval;
+- (float)downloadProgress;
+- (id)clientBundleIdentifier;
+- (void)setDownloadProgress:;
+- (void)setDiscretionary:;
+- (BOOL)discretionary;
+- (long long)errorCode;
+- (id)downloadSize;
+- (void)setErrorCode:;
+- (void).cxx_destruct;
+- (void)setDownloadSize:;
+- (id)description;
+- (void)setClientBundleIdentifier:;
+- (BOOL)isCellularAllowed;
+- (double)downloadDuration;
+- (void)setIsCellularAllowed:;
+- (id)dictionaryMetrics;
+- (id)initWithVoiceName:languageCode:gender:;
+- (BOOL)endMetrics;
+- (double)setupTimeInterval;
+- (void)setSetupTimeInterval:;
+- (id)voiceDownloadKey;
+- (long long)downloadBeginTimestamp;
+- (long long)downloadEndTimestamp;
++ (double)_clockFactor;
+@end

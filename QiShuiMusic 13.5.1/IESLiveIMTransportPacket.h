@@ -1,0 +1,31 @@
+@interface IESLiveIMTransportPacket : NSObject
+@property (nonatomic) NSString globalExt;
+@property (nonatomic) q fetchType;
+@property (nonatomic) q fetchInterval;
+@property (nonatomic) NSString pushServer;
+@property (nonatomic) NSDictionary routeParams;
+@property (nonatomic) @ object;
+@property (nonatomic) NSDictionary extra;
+@property (nonatomic) q pid;
+@property (nonatomic) double timeout;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setRouteParams:;
+- (id)globalExt;
+- (id)pushServer;
+- (id)routeParams;
+- (void)setExtra:;
+- (void)setGlobalExt:;
+- (void)setPushServer:;
+- (void)updateExtraWithKey:value:;
+- (void)setObject:;
+- (id)extra;
+- (long long)fetchType;
+- (void).cxx_destruct;
+- (id)object;
+- (long long)fetchInterval;
+- (void)setFetchInterval:;
+- (void)setFetchType:;
+@end

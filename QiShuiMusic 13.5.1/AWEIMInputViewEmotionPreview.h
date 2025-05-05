@@ -1,0 +1,33 @@
+@interface AWEIMInputViewEmotionPreview : UIImageView
+@property (nonatomic) UICollectionView emotionCollectionView;
+@property (nonatomic) NSArray matchedModels;
+@property (nonatomic) BOOL duringChange;
+@property (nonatomic) NSTimer timer;
+@property (nonatomic) <AWEIMInputViewEmotionPreviewDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)duringChange;
+- (id)emotionCollectionView;
+- (void)hidePreview;
+- (id)matchedModels;
+- (void)setDuringChange:;
+- (void)setEmotionCollectionView:;
+- (void)setFrame:arrowCenterPositionX:;
+- (void)setMatchedModels:;
+- (void)updateDataSource:withToUserID:conversationID:;
+- (id)collectionView:layout:sizeForItemAtIndexPath:;
+- (id)init;
+- (void)dealloc;
+- (void)layoutSubviews;
+- (long long)collectionView:numberOfItemsInSection:;
+- (void)setDelegate:;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (void)setTimer:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)timer;
+- (void)applicationDidEnterBackground;
+@end

@@ -1,0 +1,32 @@
+@interface STSiriMessage : STSiriModelObject
+- (id)bodyText;
+- (void)setBodyText:;
+- (id)init;
+- (void)setGroupName:;
+- (id)initWithCoder:;
+- (void)setEffect:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)groupName;
+- (id)effect;
+- (void)setRecipientAddresses:;
+- (id)recipientAddresses;
+- (id)attachmentURL;
+- (void)setAttachmentURL:;
+- (void)setChatIdentifier:;
+- (id)chatIdentifier;
+- (id)senderAddress;
+- (void)setSenderAddress:;
+- (id)_aceContextObjectValue;
+- (BOOL)isOutbound;
+- (void)setOutbound:;
+- (id)senderInternalGUID;
+- (void)_setSenderInternalGUID:;
+- (id)groupNameId;
+- (void)setGroupNameId:;
+- (id)subjectText;
+- (void)setSubjectText:;
+- (id)sendDate;
+- (void)setSendDate:;
++ (BOOL)supportsSecureCoding;
+@end

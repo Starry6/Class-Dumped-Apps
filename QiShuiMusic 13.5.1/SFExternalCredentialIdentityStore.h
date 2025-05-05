@@ -1,0 +1,27 @@
+@interface SFExternalCredentialIdentityStore : WBSSQLiteStore
+- (id)initWithURL:;
+- (int)_createFreshDatabaseSchema;
+- (void).cxx_destruct;
+- (void)fetchCredentialIdentitiesMatchingDomains:completion:;
+- (int)_vacuum;
+- (void)openAndCheckIntegrity:createIfNeeded:fallBackToMemoryStoreIfError:lockingPolicy:completionHandler:;
+- (int)_currentSchemaVersion;
+- (id)initWithURL:protectionType:;
+- (void)_databaseWillClose;
+- (void)saveCredentialIdentities:completion:;
+- (void)removeCredentialIdentities:completion:;
+- (void)removeAllCredentialIdentitiesWithCompletion:;
+- (void)replaceCredentialIdentitiesWithIdentities:completion:;
+- (int)_removeCredentialIdentities:;
+- (int)_removeCredentialIdentity:;
+- (int)_removeAllCredentialIdentities;
+- (int)_saveCredentialIdentities:;
+- (int)_insertCredentialIdentity:;
+- (int)_updateCredentialIdentity:;
+- (void)fetchCredentialIdentitiesWithCompletion:;
+- (id)_credentialIdentityFromRow:;
+- (id)_fetchCredentialIdentitiesMatchingDomains:;
+- (id)_fetchCredentialIdentities;
+- (void)fetchStoreEmptyStateWithCompletion:;
+- (BOOL)_fetchStoreIsEmpty;
+@end

@@ -1,0 +1,30 @@
+@interface UILocalNotification : NSObject
+@property (nonatomic) NSDate fireDate;
+@property (nonatomic) NSTimeZone timeZone;
+@property (nonatomic) Q repeatInterval;
+@property (nonatomic) NSCalendar repeatCalendar;
+@property (nonatomic) CLRegion region;
+@property (nonatomic) BOOL regionTriggersOnce;
+@property (nonatomic) NSString alertBody;
+@property (nonatomic) BOOL hasAction;
+@property (nonatomic) NSString alertAction;
+@property (nonatomic) NSString alertLaunchImage;
+@property (nonatomic) NSString alertTitle;
+@property (nonatomic) NSString soundName;
+@property (nonatomic) q applicationIconBadgeNumber;
+@property (nonatomic) NSDictionary userInfo;
+@property (nonatomic) NSString category;
+- (void)validate;
+- (id)init;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (BOOL)isValid;
+- (id)copyWithZone:;
+- (long long)compareFireDates:;
+- (id)nextFireDateForLastFireDate:;
+- (id)nextFireDateAfterDate:localTimeZone:;
+- (BOOL)isTriggeredByDate;
+- (BOOL)isTriggeredByRegion;
++ (id)allocWithZone:;
++ (id)alloc;
+@end

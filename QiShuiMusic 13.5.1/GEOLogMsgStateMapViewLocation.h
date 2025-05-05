@@ -1,0 +1,36 @@
+@interface GEOLogMsgStateMapViewLocation : PBCodable
+@property (nonatomic) BOOL hasLocationBucket;
+@property (nonatomic) NSInteger locationBucket;
+@property (nonatomic) BOOL hasIsCurrentLocationInViewport;
+@property (nonatomic) BOOL isCurrentLocationInViewport;
+@property (nonatomic) BOOL hasTouristInfo;
+@property (nonatomic) GEOTouristInfo touristInfo;
+- (void)readAll:;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (BOOL)isCurrentLocationInViewport;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)setLocationBucket:;
+- (void)copyTo:;
+- (void)setHasIsCurrentLocationInViewport:;
+- (void)mergeFrom:;
+- (int)StringAsLocationBucket:;
+- (void)setHasLocationBucket:;
+- (BOOL)hasTouristInfo;
+- (void).cxx_destruct;
+- (BOOL)hasLocationBucket;
+- (BOOL)readFrom:;
+- (id)description;
+- (void)setTouristInfo:;
+- (id)locationBucketAsString:;
+- (id)dictionaryRepresentation;
+- (BOOL)hasIsCurrentLocationInViewport;
+- (void)setIsCurrentLocationInViewport:;
+- (int)locationBucket;
+- (BOOL)isEqual:;
+- (id)touristInfo;
+- (id)copyWithZone:;
++ (BOOL)isValid:;
+@end

@@ -1,0 +1,38 @@
+@interface MNSpeechResourceController : NSObject
+@property (nonatomic) <MNSpeechControllerDelegate> delegate;
+@property (nonatomic) BOOL speaking;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)_cancelTimer;
+- (void)dealloc;
+- (void)setDelegate:;
+- (id)initWithLanguage:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)speechSynthesizer:didStartSpeakingRequest:;
+- (void)speechSynthesizer:didFinishSpeakingRequest:successfully:phonemesSpoken:withError:;
+- (void)speechSynthesizer:didFinishSpeakingRequest:withInstrumentMetrics:;
+- (void)speechSynthesizer:didFinishSynthesisRequest:withInstrumentMetrics:error:;
+- (BOOL)speaking;
+- (void)_audioSessionInterruption:;
+- (void)_mediaSessionServicesWereReset:;
+- (void)_registerForObservation;
+- (double)durationOf:;
+- (void)_cachingTimeoutOccurred:;
+- (void)_speakingTimeoutOccurred:;
+- (void)_prepareSynthesizerWithLanguage:andVoiceName:andGender:andAudioSessionID:;
+- (void)_warmUpTTSForLanguage:andVoiceName:andGender:andAudioSessionID:;
+- (void)_markVoiceForDownloadingWithLanguage:andVoiceName:andGender:;
+- (BOOL)cache:withDisclosure:andReport:;
+- (BOOL)speak:withDisclosure:andReport:;
+- (BOOL)stopSpeakingAndReport:;
+- (id)_requestForUtterance:withLanguage:andVoiceName:andGender:andAudioSessionID:andCanUseServerTTS:;
+- (double)_clampVolume:;
+- (BOOL)_createDurationCacheIfNecessary;
+- (void)_addDurationToCache:forUtterance:;
+- (double)_estimateDurationForUtterance:;
+- (void)_createTimerForUtterance:andIsCaching:;
+- (void)_updateEstimatorWithDuration:andUtterance:;
+@end

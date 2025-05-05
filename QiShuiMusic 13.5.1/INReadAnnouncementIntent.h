@@ -1,0 +1,33 @@
+@interface INReadAnnouncementIntent : INIntent
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) q readType;
+@property (nonatomic) NSString startAnnouncementIdentifier;
+@property (nonatomic) q userNotificationType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)_dictionaryRepresentation;
+- (void)_setMetadata:;
+- (id)domain;
+- (void)setDomain:;
+- (id)_metadata;
+- (id)_typedBackingStore;
+- (long long)_intentCategory;
+- (id)_categoryVerb;
+- (void)_redactForMissingPrivacyEntitlementOptions:containingAppBundleId:;
+- (id)verb;
+- (void)setVerb:;
+- (id)parametersByName;
+- (void)setParametersByName:;
+- (long long)readType;
+- (void)setReadType:;
+- (id)startAnnouncementIdentifier;
+- (void)setStartAnnouncementIdentifier:;
+- (long long)userNotificationType;
+- (void)setUserNotificationType:;
+- (id)initWithReadType:startAnnouncementIdentifier:userNotificationType:;
+@end

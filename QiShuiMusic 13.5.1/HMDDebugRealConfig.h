@@ -1,0 +1,32 @@
+@interface HMDDebugRealConfig : NSObject
+@property (nonatomic) double fetchStartTime;
+@property (nonatomic) double fetchEndTime;
+@property (nonatomic) NSArray uploadTypeArray;
+@property (nonatomic) NSMutableArray uploadFileTypeArray;
+@property (nonatomic) BOOL isNeedWifi;
+@property (nonatomic) Q limitCnt;
+@property (nonatomic) NSArray andConditions;
+@property (nonatomic) NSArray orConditions;
+- (id)uploadTypeArray;
+- (id)andConditions;
+- (BOOL)checkIfAllowedDebugRealUploadWithType:;
+- (BOOL)checkIfNetworkAllowedDebugRealUpload;
+- (void)defaultInitialize;
+- (double)fetchEndTime;
+- (BOOL)isNeedWifi;
+- (unsigned long long)limitCnt;
+- (id)orConditions;
+- (void)setAndConditions:;
+- (void)setFetchEndTime:;
+- (void)setIsNeedWifi:;
+- (void)setLimitCnt:;
+- (void)setOrConditions:;
+- (void)setUploadFileTypeArray:;
+- (void)setUploadTypeArray:;
+- (void)setupWithParams:;
+- (id)uploadFileTypeArray;
+- (double)fetchStartTime;
+- (id)initWithParams:;
+- (void)setFetchStartTime:;
+- (void).cxx_destruct;
+@end

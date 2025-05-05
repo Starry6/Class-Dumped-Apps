@@ -1,0 +1,31 @@
+@interface IESECBaseApiModel : MTLModel
+@property (nonatomic) NSString requestID;
+@property (nonatomic) NSNumber statusCode;
+@property (nonatomic) NSNumber timestamp;
+@property (nonatomic) NSString statusMsg;
+@property (nonatomic) NSDictionary logPassback;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setLogPassback:;
+- (void)_mergeAllPropertyKeysWithLogPassback:;
+- (void)_mergeAllPropertyKeysWithRequestId:;
+- (void)_mergeAllPropertyKeysWithRequestId:logPassback:;
+- (id)logPassback;
+- (void)mergeAllPropertyKeysWithLogPassback;
+- (void)mergeAllPropertyKeysWithRequestId;
+- (void)mergeAllPropertyKeysWithRequestIdAndLogPassback;
+- (id)netPerfMetrics;
+- (void)setStatusMsg:;
+- (id)statusMsg;
+- (void)setStatusCode:;
+- (id)statusCode;
+- (BOOL)validate:;
+- (void)setTimestamp:;
+- (id)requestID;
+- (void).cxx_destruct;
+- (id)timestamp;
+- (void)setRequestID:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

@@ -1,0 +1,30 @@
+@interface SSMemoryEntity : NSObject
+@property (nonatomic) q databaseID;
+@property (nonatomic) NSDictionary propertyValues;
+@property (nonatomic) NSDictionary externalPropertyValues;
+- (long long)databaseID;
+- (id)init;
+- (void)dealloc;
+- (unsigned long long)hash;
+- (void)setDatabaseID:;
+- (id)valueForProperty:;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setValue:forProperty:;
+- (void)setValuesWithDictionary:;
+- (id)initWithDatabaseEntity:properties:;
+- (void)reloadFromDatabaseEntity:properties:;
+- (void)setExternalValuesWithDictionary:;
+- (void)setValues:forProperties:count:;
+- (void)setValue:forExternalProperty:;
+- (void)setValues:forExternalProperties:count:;
+- (id)valueForExternalProperty:;
+- (id)propertyValues;
+- (id)externalPropertyValues;
++ (id)defaultProperties;
++ (Class)databaseEntityClass;
++ (id)anyInDatabase:predicate:;
++ (id)queryWithDatabase:predicate:;
++ (id)queryWithDatabase:predicate:orderingProperties:;
+@end

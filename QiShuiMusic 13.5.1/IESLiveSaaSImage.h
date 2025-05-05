@@ -1,0 +1,38 @@
+@interface IESLiveSaaSImage : MTLModel
+@property (nonatomic) UIImage localImage;
+@property (nonatomic) NSArray urlList;
+@property (nonatomic) NSString uri;
+@property (nonatomic) NSNumber width;
+@property (nonatomic) NSNumber height;
+@property (nonatomic) NSString placeholderColor;
+@property (nonatomic) Q imageType;
+@property (nonatomic) NSString openWebURL;
+@property (nonatomic) IESLiveSaaSImageContent content;
+@property (nonatomic) BOOL isAnimated;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)urlList;
+- (id)URLListArray;
+- (id)initWithPBImage:;
+- (id)initWithUrlList:uri:;
+- (id)initWithUrlList:uri:width:height:content:imageType:;
+- (id)mapToPBImage;
+- (id)openWebURL;
+- (void)setUrlList:;
+- (id)uri;
+- (unsigned long long)imageType;
+- (id)content;
+- (id)placeholderColor;
+- (BOOL)isAnimated;
+- (id)height;
+- (id)width;
+- (void).cxx_destruct;
+- (id)localImage;
+- (void)setLocalImage:;
++ (id)contentJSONTransformer;
++ (id)imageWithStruct:;
++ (id)mapImagesToPbImage:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

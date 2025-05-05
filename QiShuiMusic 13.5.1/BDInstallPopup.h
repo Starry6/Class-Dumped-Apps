@@ -1,0 +1,38 @@
+@interface BDInstallPopup : NSObject
+@property (nonatomic) BOOL popupSettingsFetchSucceed;
+@property (nonatomic) BDInstallPopupConfig config;
+@property (nonatomic) NSMutableDictionary params;
+@property (nonatomic) @ observer;
+@property (nonatomic) BDInstallPopupSysCoverView coverView;
+@property (nonatomic) q type;
+@property (nonatomic) @? completion;
+@property (nonatomic) BOOL isCustomShow;
+- (void)fetchPopupSettingsIfNeedCompletion:;
+- (void)hideCoverView;
+- (BOOL)isCustomShow;
+- (BOOL)needfetchPopupSettings;
+- (void)popUp;
+- (void)popupIfNeedWithConfig:completion:;
+- (void)popupIfNeedWithConfig:willShow:completion:;
+- (BOOL)popupSettingsFetchSucceed;
+- (void)requestTrackingAuthorization;
+- (void)setIsCustomShow:;
+- (void)setPopupSettingsFetchSucceed:;
+- (void)showCoverView;
+- (id)completion;
+- (void)setCompletion:;
+- (void)dealloc;
+- (void)setConfig:;
+- (void)setType:;
+- (void)show;
+- (long long)type;
+- (void)setObserver:;
+- (void).cxx_destruct;
+- (id)config;
+- (id)params;
+- (id)observer;
+- (void)setParams:;
+- (id)coverView;
+- (void)setCoverView:;
++ (id)sharedInstance;
+@end

@@ -1,0 +1,35 @@
+@interface IESECStoreSelectButtonModel : MTLModel
+@property (nonatomic) NSString selectParams;
+@property (nonatomic) NSString buttonName;
+@property (nonatomic) NSString primaryColor;
+@property (nonatomic) NSString selectButtonName;
+@property (nonatomic) NSString selectBackgroundColor;
+@property (nonatomic) BOOL isSelected;
+@property (nonatomic) IESECRelationTagListModel selectedTag;
+@property (nonatomic) IESECRelationTagListModel unselectedTag;
+@property (nonatomic) NSDictionary generalData;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setGeneralData:;
+- (void)setSelectedTag:;
+- (id)generalData;
+- (id)selectBackgroundColor;
+- (id)selectButtonName;
+- (id)selectParams;
+- (id)selectedTag;
+- (void)setButtonName:;
+- (void)setSelectBackgroundColor:;
+- (void)setSelectButtonName:;
+- (void)setSelectParams:;
+- (void)setUnselectedTag:;
+- (id)unselectedTag;
+- (id)primaryColor;
+- (void)setPrimaryColor:;
+- (BOOL)isSelected;
+- (void).cxx_destruct;
+- (void)setIsSelected:;
+- (id)buttonName;
++ (id)JSONKeyPathsByPropertyKey;
+@end

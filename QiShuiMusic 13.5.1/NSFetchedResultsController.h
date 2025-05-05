@@ -1,0 +1,32 @@
+@interface NSFetchedResultsController : NSObject
+@property (nonatomic) NSFetchRequest fetchRequest;
+@property (nonatomic) NSManagedObjectContext managedObjectContext;
+@property (nonatomic) NSString sectionNameKeyPath;
+@property (nonatomic) NSString cacheName;
+@property (nonatomic) <NSFetchedResultsControllerDelegate> delegate;
+@property (nonatomic) NSArray fetchedObjects;
+@property (nonatomic) NSArray sectionIndexTitles;
+@property (nonatomic) NSArray sections;
+- (id)managedObjectContext;
+- (id)sections;
+- (void)dealloc;
+- (id)fetchedObjects;
+- (id)cacheName;
+- (void)setDelegate:;
+- (void)_managedObjectContextDidSave:;
+- (id)delegate;
+- (BOOL)performFetch:;
+- (id)objectAtIndexPath:;
+- (id)sectionIndexTitles;
+- (id)fetchRequest;
+- (id)sectionNameKeyPath;
+- (id)initWithFetchRequest:managedObjectContext:sectionNameKeyPath:cacheName:;
+- (void)_managedObjectContextDidChange:;
+- (void)_managedObjectContextDidChangeObjectIDs:;
+- (void)_managedObjectContextDidMutateObjectIDs:;
+- (id)_fetchedObjects;
+- (id)indexPathForObject:;
+- (id)sectionIndexTitleForSectionName:;
+- (long long)sectionForSectionIndexTitle:atIndex:;
++ (void)deleteCacheWithName:;
+@end

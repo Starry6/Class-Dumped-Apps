@@ -1,0 +1,30 @@
+@interface MTLRenderPassDescriptor : NSObject
+@property (nonatomic) MTLRenderPassColorAttachmentDescriptorArray colorAttachments;
+@property (nonatomic) MTLRenderPassDepthAttachmentDescriptor depthAttachment;
+@property (nonatomic) MTLRenderPassStencilAttachmentDescriptor stencilAttachment;
+@property (nonatomic) <MTLBuffer> visibilityResultBuffer;
+@property (nonatomic) Q renderTargetArrayLength;
+@property (nonatomic) Q imageblockSampleLength;
+@property (nonatomic) Q threadgroupMemoryLength;
+@property (nonatomic) Q tileWidth;
+@property (nonatomic) Q tileHeight;
+@property (nonatomic) Q defaultRasterSampleCount;
+@property (nonatomic) Q renderTargetWidth;
+@property (nonatomic) Q renderTargetHeight;
+@property (nonatomic) <MTLRasterizationRateMap> rasterizationRateMap;
+@property (nonatomic) MTLRenderPassSampleBufferAttachmentDescriptorArray sampleBufferAttachments;
+- (unsigned long long)imageblockSampleLength;
+- (void)setThreadgroupMemoryLength:;
+- (unsigned long long)tileWidth;
+- (void)setTileWidth:;
+- (void)setImageblockSampleLength:;
+- (unsigned long long)getSamplePositions:count:;
+- (void)setTileHeight:;
+- (void)setSamplePositions:count:;
+- (unsigned long long)threadgroupMemoryLength;
+- (unsigned long long)tileHeight;
+- (id)copyWithZone:;
++ (id)allocWithZone:;
++ (id)alloc;
++ (id)renderPassDescriptor;
+@end

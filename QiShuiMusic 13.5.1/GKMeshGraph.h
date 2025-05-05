@@ -1,0 +1,34 @@
+@interface GKMeshGraph : GKGraph
+@property (nonatomic) NSArray obstacles;
+@property (nonatomic) float bufferRadius;
+@property (nonatomic) Q triangulationMode;
+@property (nonatomic) Q triangleCount;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (unsigned long long)triangleCount;
+- (Class)nodeClass;
+- (void)triangulate;
+- (id)makeCGraph;
+- (id)cMeshGraph;
+- (id)obstacles;
+- (void)setTriangulationMode:;
+- (unsigned long long)triangulationMode;
+- (void)setMakeNodesFromTriangleCenters:;
+- (BOOL)makeNodesFromTriangleCenters;
+- (void)setMakeNodesFromTriangleVertices:;
+- (BOOL)makeNodesFromTriangleVertices;
+- (void)setMakeNodesFromTriangleEdgeMidpoints:;
+- (BOOL)makeNodesFromTriangleEdgeMidpoints;
+- (float)bufferRadius;
+- (id)initWithBufferRadius:minCoordinate:maxCoordinate:nodeClass:;
+- (id)initWithBufferRadius:minCoordinate:maxCoordinate:;
+- (void)addObstacles:;
+- (void)removeObstacles:;
+- (void)connectNodeUsingObstacles:;
+- (id)triangleAtIndex:;
+- (Class)classForGenericArgumentAtIndex:;
++ (BOOL)supportsSecureCoding;
++ (id)graphWithBufferRadius:minCoordinate:maxCoordinate:nodeClass:;
++ (id)graphWithBufferRadius:minCoordinate:maxCoordinate:;
+@end

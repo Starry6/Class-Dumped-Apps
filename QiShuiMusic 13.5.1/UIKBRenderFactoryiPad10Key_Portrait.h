@@ -1,0 +1,24 @@
+@interface UIKBRenderFactoryiPad10Key_Portrait : UIKBRenderFactory10Key
+- (long long)assetIdiom;
+- (id)lightKeycapsFontName;
+- (id)wideShadowPaddleInsets;
+- (double)keyCornerRadius;
+- (void)setupLayoutSegments;
+- (id)backgroundTraitsForKeyplane:;
+- (id)_traitsForKey:onKeyplane:;
+- (id)multitapCompleteKeyImageName;
+- (id)muttitapReverseKeyImageName;
+- (id)messagesWriteboardKeyImageName;
+- (id)thinKeycapsFontName;
+- (void)_customizeTraits:forPopupForKey:withRenderingContext:keycapsFontName:;
+- (id)topEdgeAdjustmentInsets;
+- (unsigned long long)edgesAdjustedForTranslucentGapsForGeometry:key:onKeyplane:;
+- (id)abcKeyTextOffset;
+- (id)globeKeyTextOffset;
+- (id)dictationKeyTextOffset;
+- (double)numberPadKeyPrimarySymbolSize;
+- (id)numberPadKeyPrimaryTextOffset;
+- (id)numberPadKeySecondaryTextOffset;
+- (id)numberPadVBarSecondaryTextOffset;
+- (double)controlColumnWidthFactor;
+@end

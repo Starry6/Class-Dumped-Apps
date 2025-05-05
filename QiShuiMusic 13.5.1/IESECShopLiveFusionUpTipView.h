@@ -1,0 +1,34 @@
+@interface IESECShopLiveFusionUpTipView : UIView
+@property (nonatomic) <IESECShopLiveFusionContainerProtocol> containerVC;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) LOTAnimationView upLottieView;
+@property (nonatomic) UIImageView upImageView;
+@property (nonatomic) CAGradientLayer bgMaskLayer;
+@property (nonatomic) IESECLigoContext ligoContext;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)__setup;
+- (void)setContainerVC:;
+- (void)setLigoContext:;
+- (void)setBgMaskLayer:;
+- (void)__addGestureRecognizer;
+- (void)addInteractiveGestureRecognizer:;
+- (id)bgMaskLayer;
+- (id)containerVC;
+- (id)ligoContext;
+- (void)setUpLottieView:;
+- (id)upLottieView;
+- (void)updateTitleText:;
+- (void)setTitleLabel:;
+- (void)layoutSubviews;
+- (BOOL)gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (BOOL)gestureRecognizerShouldBegin:;
+- (id)titleLabel;
+- (void)panGestureHandler:;
+- (id)upImageView;
+- (void)setUpImageView:;
+@end

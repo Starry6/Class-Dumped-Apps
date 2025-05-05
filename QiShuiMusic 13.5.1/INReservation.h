@@ -1,0 +1,31 @@
+@interface INReservation : NSObject
+@property (nonatomic) INDateComponentsRange _duration;
+@property (nonatomic) INSpeakableString itemReference;
+@property (nonatomic) NSString reservationNumber;
+@property (nonatomic) NSDate bookingTime;
+@property (nonatomic) q reservationStatus;
+@property (nonatomic) NSString reservationHolderName;
+@property (nonatomic) NSArray actions;
+@property (nonatomic) NSURL URL;
+- (id)url;
+- (id)_dictionaryRepresentation;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (id)descriptionAtIndent:;
+- (id)actions;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)URL;
+- (id)copyWithZone:;
+- (id)_duration;
+- (id)initWithItemReference:reservationNumber:bookingTime:reservationStatus:reservationHolderName:actions:URL:;
+- (id)initWithItemReference:reservationNumber:bookingTime:reservationStatus:reservationHolderName:actions:;
+- (id)itemReference;
+- (id)reservationNumber;
+- (id)bookingTime;
+- (long long)reservationStatus;
+- (id)reservationHolderName;
++ (BOOL)supportsSecureCoding;
+@end

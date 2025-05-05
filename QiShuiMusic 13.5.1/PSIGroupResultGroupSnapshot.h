@@ -1,0 +1,34 @@
+@interface PSIGroupResultGroupSnapshot : NSObject
+@property (nonatomic) NSString contentString;
+@property (nonatomic) NSString normalizedString;
+@property (nonatomic) NSString lookupIdentifier;
+@property (nonatomic) NSArray tokens;
+@property (nonatomic) NSArray matchRanges;
+@property (nonatomic) NSArray groupRanges;
+@property (nonatomic) PSIDateFilter dateFilter;
+@property (nonatomic) NSArray datedTokens;
+@property (nonatomic) s category;
+@property (nonatomic) Q groupId;
+@property (nonatomic) Q owningGroupId;
+- (unsigned long long)owningGroupId;
+- (unsigned long long)groupId;
+- (void)addToken:;
+- (void).cxx_destruct;
+- (id)tokens;
+- (short)category;
+- (id)contentString;
+- (id)normalizedString;
+- (id)lookupIdentifier;
+- (id)matchRanges;
+- (id)datedTokens;
+- (id)dateFilter;
+- (id)initWithContentString:normalizedString:token:category:lookupIdentifier:dateFilter:groupId:owningGroupId:groupRanges:datedTokens:;
+- (id)initWithGroup:token:;
+- (id)initWithDateFilter:datedTokens:;
+- (id)initWithContentString:lookupIdentifier:category:;
+- (void)addMatchRange:;
+- (BOOL)isDateFilterFromFullSearchText;
+- (BOOL)isDateFilterPartiallyFromFullSearchText;
+- (BOOL)isDateFilterFromImplicitToken;
+- (id)groupRanges;
+@end

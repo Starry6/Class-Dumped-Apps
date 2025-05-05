@@ -1,0 +1,2 @@
+@interface IESECLiveProductListUpdateRoot : GPBRootObject
+@end

@@ -1,0 +1,37 @@
+@interface AWDWAAssociatedAPInfo : PBCodable
+@property (nonatomic) BOOL hasManufacturerElement;
+@property (nonatomic) NSString manufacturerElement;
+@property (nonatomic) BOOL hasModelName;
+@property (nonatomic) NSString modelName;
+@property (nonatomic) BOOL hasModelNumber;
+@property (nonatomic) NSString modelNumber;
+@property (nonatomic) BOOL hasDeviceNameElement;
+@property (nonatomic) NSString deviceNameElement;
+@property (nonatomic) BOOL hasDeviceNameData;
+@property (nonatomic) NSString deviceNameData;
+- (void)setModelNumber:;
+- (id)modelName;
+- (id)modelNumber;
+- (void)setModelName:;
+- (void)dealloc;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasModelName;
+- (BOOL)hasModelNumber;
+- (BOOL)hasManufacturerElement;
+- (BOOL)hasDeviceNameElement;
+- (BOOL)hasDeviceNameData;
+- (id)manufacturerElement;
+- (void)setManufacturerElement:;
+- (id)deviceNameElement;
+- (void)setDeviceNameElement:;
+- (id)deviceNameData;
+- (void)setDeviceNameData:;
+@end

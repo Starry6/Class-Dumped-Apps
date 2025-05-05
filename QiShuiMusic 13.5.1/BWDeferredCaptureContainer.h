@@ -1,0 +1,32 @@
+@interface BWDeferredCaptureContainer : BWDeferredContainer
+@property (nonatomic) BOOL committed;
+@property (nonatomic) BOOL cached;
+@property (nonatomic) Q cacheExpiryTime;
+@property (nonatomic) q commitDurationNS;
+@property (nonatomic) q flushDurationNS;
+- (int)commit;
+- (int)abort;
+- (void)dealloc;
+- (BOOL)cached;
+- (int)flush;
+- (BOOL)committed;
+- (void)setCached:;
+- (id)initWithApplicationID:captureRequestIdentifier:baseFolderURL:flushBuffersUponCommit:err:;
+- (id)copyXPCEncoding:;
+- (int)commitCaptureSettings:settings:;
+- (int)commitPhotoDescriptor:;
+- (int)commitArray:tag:;
+- (int)commitInference:tag:inferenceAttachmentKey:portType:;
+- (int)commitBuffer:tag:bufferType:captureFrameFlags:compressionProfile:metadataTag:rawThumbnailsBufferTag:rawThumbnailsMetadataTag:portType:;
+- (int)commitMetadata:tag:bufferTag:;
+- (int)commitInferenceBuffer:tag:inferenceAttachedMediaKey:compressionProfile:portType:;
+- (int)commitDictionary:tag:;
+- (int)preflush;
+- (int)waitForFlush;
+- (unsigned long long)cacheExpiryTime;
+- (void)setCacheExpiryTime:;
+- (long long)commitDurationNS;
+- (long long)flushDurationNS;
++ (id)captureRequestIdentifierForManifest:;
++ (id)timeForManifest:index:;
+@end

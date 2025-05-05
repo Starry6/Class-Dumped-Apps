@@ -1,0 +1,30 @@
+@interface MPSCNNConvolutionWeightsAndBiasesState : MPSState
+@property (nonatomic) Q numberOfWeights;
+@property (nonatomic) Q numberOfBiases;
+@property (nonatomic) I weightsDataType;
+@property (nonatomic) I weightsLayout;
+@property (nonatomic) <MTLBuffer> weights;
+@property (nonatomic) <MTLBuffer> biases;
+@property (nonatomic) Q weightsOffset;
+@property (nonatomic) Q biasesOffset;
+- (unsigned int)weightsDataType;
+- (id)biases;
+- (unsigned int)weightsLayout;
+- (id)weights;
+- (id)initWithWeights:biases:weightsDataType:weightsLayout:;
+- (id)initWithWeights:biases:;
+- (unsigned long long)numberOfWeights;
+- (unsigned long long)numberOfBiases;
+- (unsigned long long)weightsOffset;
+- (unsigned long long)biasesOffset;
+- (void)initializeWithWeightsCount:weightsOffset:weightsDataType:weightsLayout:biasesCount:biasesOffset:;
+- (id)initWithWeights:biases:weightsDataType:;
+- (id)initWithDevice:cnnConvolutionDescriptor:weightsDataType:;
+- (id)initWithDevice:cnnConvolutionDescriptor:weightsDataType:weightsLayout:;
+- (id)initWithDevice:cnnConvolutionDescriptor:;
+- (id)initWithWeights:weightsOffset:biases:biasesOffset:cnnConvolutionDescriptor:;
+- (id)initWithWeights:weightsOffset:weightsDataType:weightsLayout:biases:biasesOffset:cnnConvolutionDescriptor:;
++ (id)temporaryCNNConvolutionWeightsAndBiasesStateWithCommandBuffer:cnnConvolutionDescriptor:weightsDataType:;
++ (id)temporaryCNNConvolutionWeightsAndBiasesStateWithCommandBuffer:cnnConvolutionDescriptor:weightsDataType:weightsLayout:;
++ (id)temporaryCNNConvolutionWeightsAndBiasesStateWithCommandBuffer:cnnConvolutionDescriptor:;
+@end

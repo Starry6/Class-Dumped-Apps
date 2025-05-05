@@ -1,0 +1,35 @@
+@interface UIScrollTestParameters : NSObject
+@property (nonatomic) double startOffset;
+@property (nonatomic) double endOffset;
+@property (nonatomic) CADisplayLink displayLink;
+@property (nonatomic) @? completionBlock;
+@property (nonatomic) NSString testName;
+@property (nonatomic) q iterations;
+@property (nonatomic) double delta;
+@property (nonatomic) double length;
+@property (nonatomic) Q axis;
+@property (nonatomic) @? extraResultsBlock;
+- (id)displayLink;
+- (void)setDisplayLink:;
+- (double)delta;
+- (void)setTestName:;
+- (id)init;
+- (void)dealloc;
+- (id)testName;
+- (void)setAxis:;
+- (void)setIterations:;
+- (double)endOffset;
+- (id)extraResultsBlock;
+- (void)setCompletionBlock:;
+- (void)setStartOffset:;
+- (void)setExtraResultsBlock:;
+- (long long)iterations;
+- (void)setDelta:;
+- (void).cxx_destruct;
+- (unsigned long long)axis;
+- (double)length;
+- (id)completionBlock;
+- (double)startOffset;
+- (void)setLength:;
+- (id)copyWithZone:;
+@end

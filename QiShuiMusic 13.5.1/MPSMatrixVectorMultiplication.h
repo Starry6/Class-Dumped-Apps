@@ -1,0 +1,30 @@
+@interface MPSMatrixVectorMultiplication : MPSMatrixBinaryKernel
+@property (nonatomic) BOOL transpose;
+@property (nonatomic) double alpha;
+@property (nonatomic) double beta;
+@property (nonatomic) Q M;
+@property (nonatomic) Q N;
+- (unsigned long long)M;
+- (id)copyWithZone:device:;
+- (void)dealloc;
+- (unsigned long long)batchSize;
+- (void)setBatchSize:;
+- (void)setM:;
+- (double)beta;
+- (double)alpha;
+- (unsigned long long)batchStart;
+- (void)setBatchStart:;
+- (void)setResultMatrixOrigin:;
+- (BOOL)transpose;
+- (unsigned long long)N;
+- (void)setN:;
+- (id)resultMatrixOrigin;
+- (id)primarySourceMatrixOrigin;
+- (void)setPrimarySourceMatrixOrigin:;
+- (id)secondarySourceMatrixOrigin;
+- (void)setSecondarySourceMatrixOrigin:;
+- (id)initWithDevice:transpose:rows:columns:alpha:beta:;
+- (id)initWithDevice:rows:columns:;
+- (void)encodeToCommandBuffer:inputMatrix:inputVector:resultVector:;
++ (id)libraryInfo:;
+@end

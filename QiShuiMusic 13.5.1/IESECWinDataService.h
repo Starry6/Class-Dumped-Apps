@@ -1,0 +1,30 @@
+@interface IESECWinDataService : NSObject
+@property (nonatomic) IESECWinHeaderResponse headerResponse;
+@property (nonatomic) IESECWinAuthorInfoResponse authorResponse;
+@property (nonatomic) NSArray tabs;
+@property (nonatomic) q appointmentStatus;
+@property (nonatomic) NSArray globalMixFullCards;
+@property (nonatomic) IESECWinProductRefreshResponse productRefreshResponse;
+@property (nonatomic) NSDictionary feedItemConfigs;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)configTabCardsListWithSections:;
+- (id)feedItemConfigs;
+- (long long)appointmentStatus;
+- (id)authorResponse;
+- (void)configHeaderSectionsWithShowTabStatus:;
+- (id)globalMixFullCards;
+- (id)headerResponse;
+- (id)productRefreshResponse;
+- (void)setAppointmentStatus:;
+- (void)setAuthorResponse:;
+- (void)setFeedItemConfigs:;
+- (void)setGlobalMixFullCards:;
+- (void)setHeaderResponse:;
+- (void)setProductRefreshResponse:;
+- (id)tabs;
+- (void).cxx_destruct;
+- (void)setTabs:;
+@end

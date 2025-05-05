@@ -1,0 +1,32 @@
+@interface IESECShopRecommendMallResponse : IESECBaseApiModel
+@property (nonatomic) NSString mallUrl;
+@property (nonatomic) NSString recommendText;
+@property (nonatomic) NSArray products;
+@property (nonatomic) NSDictionary logExtra;
+@property (nonatomic) NSNumber moduleType;
+@property (nonatomic) NSString nextPageParam;
+@property (nonatomic) BOOL hasNextPage;
+@property (nonatomic) IESECShopRecommendFeedResponse recommendFeed;
+@property (nonatomic) NSString buttonText;
+- (id)mallUrl;
+- (id)logExtra;
+- (id)nextPageParam;
+- (id)recommendFeed;
+- (id)recommendText;
+- (void)setLogExtra:;
+- (void)setMallUrl:;
+- (void)setNextPageParam:;
+- (void)setRecommendFeed:;
+- (void)setRecommendText:;
+- (BOOL)hasNextPage;
+- (id)buttonText;
+- (id)products;
+- (void).cxx_destruct;
+- (id)moduleType;
+- (void)setHasNextPage:;
+- (void)setButtonText:;
+- (void)setProducts:;
+- (void)setModuleType:;
++ (id)productsJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

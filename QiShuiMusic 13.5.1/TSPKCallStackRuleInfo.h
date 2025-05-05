@@ -1,0 +1,30 @@
+@interface TSPKCallStackRuleInfo : NSObject
+@property (nonatomic) NSString className;
+@property (nonatomic) NSString selName;
+@property (nonatomic) BOOL isMeta;
+@property (nonatomic) NSString binaryName;
+@property (nonatomic) Q slide;
+@property (nonatomic) Q start;
+@property (nonatomic) Q end;
+- (id)selName;
+- (BOOL)isMeta;
+- (void)setBinaryName:;
+- (void)setIsMeta:;
+- (void)setSelName:;
+- (unsigned long long)vmOffset;
+- (void)setEnd:;
+- (void)setStart:;
+- (id)uniqueKey;
+- (unsigned long long)end;
+- (id)className;
+- (unsigned long long)start;
+- (void)setClassName:;
+- (id)initWithDictionary:;
+- (unsigned long long)slide;
+- (long long)compare:;
+- (BOOL)isCompleted;
+- (void).cxx_destruct;
+- (id)description;
+- (id)binaryName;
+- (void)setSlide:;
+@end

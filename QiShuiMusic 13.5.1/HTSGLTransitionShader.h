@@ -1,0 +1,2 @@
+@interface HTSGLTransitionShader : NSObject
+@end

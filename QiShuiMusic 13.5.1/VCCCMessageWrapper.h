@@ -1,0 +1,31 @@
+@interface VCCCMessageWrapper : PBCodable
+@property (nonatomic) BOOL hasMessage;
+@property (nonatomic) VCCCMessage message;
+@property (nonatomic) BOOL hasAcknowledgement;
+@property (nonatomic) VCCCMessageAcknowledgment acknowledgement;
+@property (nonatomic) BOOL hasContent;
+@property (nonatomic) NSInteger content;
+- (int)content;
+- (void)setContent:;
+- (void)dealloc;
+- (void)setMessage:;
+- (BOOL)hasContent;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)message;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasMessage;
+- (void)setAcknowledgement:;
+- (id)acknowledgement;
+- (void)setHasContent:;
+- (BOOL)hasAcknowledgement;
+- (id)contentAsString:;
+- (int)StringAsContent:;
+- (void)clearOneofValuesForContent;
+@end

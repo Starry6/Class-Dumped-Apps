@@ -1,0 +1,2 @@
+@interface IESLiveSaaSIESLiveSaaSPBGetFeedbackTypeRoot : GPBRootObject
+@end

@@ -1,0 +1,33 @@
+@interface IESECCommentSKUViewController : UIViewController
+@property (nonatomic) IESECCommentSKUContext skuContext;
+@property (nonatomic) IESECCommentSKUView skuView;
+@property (nonatomic) IESECCommentSKUViewModel skuModel;
+@property (nonatomic) UIView containerView;
+@property (nonatomic) <IESECCommentSKUDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)skuView;
+- (void)clearRecord;
+- (id)initWithSKUContext:;
+- (double)popoverContentHeight;
+- (void)removeFromParentViewWithClearRecord:;
+- (void)setSkuContext:;
+- (void)setSkuModel:;
+- (void)setSkuView:;
+- (id)skuContext;
+- (id)skuModel;
+- (void)tapConfirmWithSKUParams:;
+- (void)tapContainerView;
+- (void)tapDismiss;
+- (void)dismiss;
+- (id)containerView;
+- (void)setContainerView:;
+- (void)setDelegate:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)viewDidAppear:;
+- (void)viewWillAppear:;
+- (void)viewDidLoad;
+@end

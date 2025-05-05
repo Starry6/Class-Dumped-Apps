@@ -1,0 +1,2 @@
+@interface ICErrors : NSObject
+@end

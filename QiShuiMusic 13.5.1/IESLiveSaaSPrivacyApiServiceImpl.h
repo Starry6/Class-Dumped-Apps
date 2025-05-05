@@ -1,0 +1,36 @@
+@interface IESLiveSaaSPrivacyApiServiceImpl : NSObject
+@property (nonatomic) <IESLiveSaaSPrivacyApiService> service;
+@property (nonatomic) NSString privacyApiDisableSetting;
+@property (nonatomic) NSString idfaCache;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)enableSaaSPrivacyApiWithPrivacyCert:;
+- (id)getDisableSaaSPrivacyApiError:;
+- (id)getIDFAWithPrivacyCert:;
+- (void)getPasteboardContentWithCert:completion:;
+- (void)getPasteboardContentWithCert:isNeedConsumeRepeatedly:completion:;
+- (id)idfaCache;
+- (BOOL)isPrivacyAlertConfirmed;
+- (BOOL)openURL:withCert:error:;
+- (void)openURL:withCert:options:completionHandler:;
+- (id)privacyApiDisableSetting;
+- (void)requestAccessCameraWithPrivacyCert:completionHandler:;
+- (void)requestAccessMicrophoneWithPrivacyCert:completionHandler:;
+- (void)requestRecordPermission:audioSession:privacyCert:;
+- (void)setIdfaCache:;
+- (void)setItems:options:privacyCert:error:;
+- (void)setItems:privacyCert:error:;
+- (void)setPrivacyApiDisableSetting:;
+- (void)setString:privacyCert:error:;
+- (void)setString:privacyCert:isCache:error:;
+- (void)startRunningWithCaptureSession:privacyCert:error:;
+- (void)stopRunningWithCaptureSession:privacyCert:error:;
+- (void)setService:;
+- (id)init;
+- (id)service;
+- (void)setup;
+- (void).cxx_destruct;
+- (id)initWithServiceProvider:;
+@end

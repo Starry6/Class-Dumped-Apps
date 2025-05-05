@@ -1,0 +1,2 @@
+@interface ABUFilterRule : NSObject
+@end

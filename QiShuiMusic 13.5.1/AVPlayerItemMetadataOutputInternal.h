@@ -1,0 +1,2 @@
+@interface AVPlayerItemMetadataOutputInternal : NSObject
+@end

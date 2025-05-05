@@ -1,0 +1,36 @@
+@interface FTNetworkSupport : NSObject
+@property (nonatomic) BOOL allowAnyNetwork;
+@property (nonatomic) BOOL validNetworkEnabled;
+@property (nonatomic) BOOL validNetworkActive;
+@property (nonatomic) BOOL validNetworkReachable;
+@property (nonatomic) BOOL wiFiActiveAndReachable;
+@property (nonatomic) BOOL willSearchForNetwork;
+@property (nonatomic) BOOL dataActiveAndReachable;
+@property (nonatomic) BOOL networkEnabled;
+@property (nonatomic) BOOL networkActive;
+@property (nonatomic) BOOL networkReachable;
+@property (nonatomic) BOOL enableCriticalReliability;
+- (void)setEnableCriticalReliability:;
+- (BOOL)networkEnabled;
+- (void)_tryToEnableReliability;
+- (BOOL)willSearchForNetworkForBundleId:;
+- (void)_reallySetCriticalReliability:;
+- (BOOL)validNetworkActiveForBundleId:;
+- (BOOL)allowAnyNetwork;
+- (BOOL)validNetworkActive;
+- (void)_clearReliabilityTimeoutInterval;
+- (BOOL)dataActiveAndReachable;
+- (BOOL)networkActive;
+- (BOOL)validNetworkReachable;
+- (BOOL)willSearchForNetwork;
+- (void)_createAPSConnectionIfNeeded;
+- (void).cxx_destruct;
+- (BOOL)networkReachable;
+- (BOOL)validNetworkEnabled;
+- (BOOL)enableCriticalReliability;
+- (BOOL)validNetworkEnabledForBundleId:;
+- (BOOL)validNetworkReachableForBundleId:;
+- (BOOL)wiFiActiveAndReachable;
+- (void)_setReliabilityTimeoutInterval;
++ (id)sharedInstance;
+@end

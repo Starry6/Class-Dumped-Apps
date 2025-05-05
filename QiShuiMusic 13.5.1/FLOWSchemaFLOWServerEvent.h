@@ -1,0 +1,37 @@
+@interface FLOWSchemaFLOWServerEvent : SISchemaTopLevelUnionType
+@property (nonatomic) SISchemaInstrumentationMessage innerEvent;
+@property (nonatomic) FLOWSchemaFLOWEventMetadata eventMetadata;
+@property (nonatomic) BOOL hasEventMetadata;
+@property (nonatomic) FLOWSchemaFLOWStep flowStep;
+@property (nonatomic) BOOL hasFlowStep;
+@property (nonatomic) NSData jsonData;
+@property (nonatomic) Q whichEvent_Type;
+- (int)componentName;
+- (id)qualifiedMessageName;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (int)getAnyEventType;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (unsigned long long)whichEvent_Type;
+- (id)eventMetadata;
+- (void)setEventMetadata:;
+- (BOOL)hasEventMetadata;
+- (id)innerEvent;
+- (id)getComponentId;
+- (void)deleteEventMetadata;
+- (void)setHasEventMetadata:;
+- (void)setFlowStep:;
+- (id)flowStep;
+- (void)deleteFlowStep;
+- (BOOL)hasFlowStep;
+- (void)setHasFlowStep:;
++ (int)joinability;
+@end

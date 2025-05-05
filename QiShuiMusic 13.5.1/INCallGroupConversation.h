@@ -1,0 +1,33 @@
+@interface INCallGroupConversation : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSString conversationId;
+@property (nonatomic) INPerson caller;
+@property (nonatomic) NSArray otherParticipants;
+@property (nonatomic) INCallGroup callGroup;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)caller;
+- (id)_dictionaryRepresentation;
+- (void)_intents_updateContainerWithCache:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (id)descriptionAtIndent:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)_intents_cacheableObjects;
+- (id)_intents_encodeWithJSONEncoder:codableDescription:;
+- (BOOL)isEqual:;
+- (id)otherParticipants;
+- (id)copyWithZone:;
+- (id)conversationId;
+- (id)callGroup;
+- (id)initWithConversationId:caller:otherParticipants:callGroup:;
++ (id)_intents_decodeWithJSONDecoder:codableDescription:from:;
++ (BOOL)supportsSecureCoding;
+@end

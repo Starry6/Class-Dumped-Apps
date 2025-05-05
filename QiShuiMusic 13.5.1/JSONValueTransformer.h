@@ -1,0 +1,37 @@
+@interface JSONValueTransformer : NSObject
+@property (nonatomic) NSDictionary primitivesNames;
+- (id)BOOLFromNSNumber:;
+- (id)JSONObjectFromNSMutableSet:;
+- (id)JSONObjectFromNSTimeZone:;
+- (id)JSONObjectFromUIColor:;
+- (id)NSDateFromNSNumber:;
+- (id)NSMutableArrayFromNSArray:;
+- (id)NSMutableSetFromNSArray:;
+- (id)NSNumberFromNSString:;
+- (id)NSStringFromNSNumber:;
+- (id)NSURLFromNSString:;
+- (id)BOOLFromNSString:;
+- (id)JSONObjectFromBOOL:;
+- (id)JSONObjectFromNSSet:;
+- (id)JSONObjectFromNSURL:;
+- (id)NSDecimalNumberFromNSString:;
+- (id)NSMutableDictionaryFromNSDictionary:;
+- (id)NSMutableStringFromNSString:;
+- (id)NSNumberFromfloat:;
+- (id)NSSetFromNSArray:;
+- (id)NSStringFromNSDecimalNumber:;
+- (id)NSTimeZoneFromNSString:;
+- (id)primitivesNames;
+- (id)UIColorFromNSString:;
+- (id)__JSONObjectFromNSDate:;
+- (id)__NSDateFromNSString:;
+- (id)__NSDictionaryFromNSArray:;
+- (id)__NSMutableDictionaryFromNSArray:;
+- (float)floatFromNSNumber:;
+- (float)floatFromNSString:;
+- (float)floatFromObject:;
+- (id)init;
+- (void).cxx_destruct;
+- (id)importDateFormatter;
++ (Class)classByResolvingClusterClasses:;
+@end

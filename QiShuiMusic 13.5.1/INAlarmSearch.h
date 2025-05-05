@@ -1,0 +1,35 @@
+@interface INAlarmSearch : NSObject
+@property (nonatomic) q alarmReferenceType;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) INDateComponentsRange time;
+@property (nonatomic) INSpeakableString label;
+@property (nonatomic) q alarmSearchStatus;
+@property (nonatomic) NSNumber includeSleepAlarm;
+@property (nonatomic) q period;
+@property (nonatomic) NSNumber isMeridianInferred;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)time;
+- (id)_dictionaryRepresentation;
+- (id)identifier;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)label;
+- (void)encodeWithCoder:;
+- (id)descriptionAtIndent:;
+- (void).cxx_destruct;
+- (long long)period;
+- (id)description;
+- (id)_intents_encodeWithJSONEncoder:codableDescription:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (long long)alarmReferenceType;
+- (long long)alarmSearchStatus;
+- (id)includeSleepAlarm;
+- (id)isMeridianInferred;
+- (id)initWithAlarmReferenceType:identifier:time:label:alarmSearchStatus:includeSleepAlarm:period:isMeridianInferred:;
++ (id)_intents_decodeWithJSONDecoder:codableDescription:from:;
++ (BOOL)supportsSecureCoding;
+@end

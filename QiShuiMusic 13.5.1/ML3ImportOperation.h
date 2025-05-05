@@ -1,0 +1,33 @@
+@interface ML3ImportOperation : NSOperation
+@property (nonatomic) Q importSource;
+@property (nonatomic) ML3ServiceDatabaseImport import;
+@property (nonatomic) BOOL suspended;
+@property (nonatomic) float progress;
+@property (nonatomic) @? progressBlock;
+@property (nonatomic) BOOL success;
+@property (nonatomic) NSError error;
+@property (nonatomic) NSData returnData;
+- (id)progressBlock;
+- (id)init;
+- (void)setProgressBlock:;
+- (void)setError:;
+- (void)setProgress:;
+- (id)error;
+- (BOOL)success;
+- (BOOL)isSuspended;
+- (void)setSuccess:;
+- (float)progress;
+- (void)main;
+- (void).cxx_destruct;
+- (id)longDescription;
+- (void)setSuspended:;
+- (unsigned long long)importSource;
+- (id)initWithDatabaseImport:;
+- (void)setReturnData:;
+- (void)_writerTransactionWithBlock:;
+- (id)_clientCompletionHandler;
+- (void)_setClientCompletionHandler:;
+- (id)import;
+- (id)returnData;
++ (id)importOperationWithSourceType:databaseImport:;
+@end

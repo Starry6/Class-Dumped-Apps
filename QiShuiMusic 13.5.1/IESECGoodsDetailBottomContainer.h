@@ -1,0 +1,36 @@
+@interface IESECGoodsDetailBottomContainer : UIView
+@property (nonatomic) BOOL isLynxBottom;
+@property (nonatomic) NSArray sliceViews;
+@property (nonatomic) UIView normalBottom;
+@property (nonatomic) UIView supermarketBottom;
+@property (nonatomic) NSArray slices;
+@property (nonatomic) IESECSliceSlice bottomSliceModel;
+@property (nonatomic) <IESECGoodsDetailBottomContainerDelegate> bottomDelegate;
+- (void)setupLynxBottom;
+- (void)setupExtraSlice;
+- (id)bottomDelegate;
+- (id)bottomSliceModel;
+- (id)currentBottomView;
+- (id)initWithBottomDelegate:;
+- (void)insertNativeParamsToSlice:;
+- (BOOL)isLynxBottom;
+- (id)normalBottom;
+- (void)rebind;
+- (void)rebindBottom;
+- (void)rebindExtra;
+- (void)refreshLynx;
+- (void)setBottomDelegate:;
+- (void)setBottomSliceModel:;
+- (void)setIsLynxBottom:;
+- (void)setNormalBottom:;
+- (void)setSliceViews:;
+- (void)setSupermarketBottom:;
+- (void)setupBottom;
+- (void)setupNormalBottom;
+- (id)sliceViews;
+- (id)supermarketBottom;
+- (void).cxx_destruct;
+- (id)slices;
+- (void)setupUI;
+- (void)setSlices:;
+@end

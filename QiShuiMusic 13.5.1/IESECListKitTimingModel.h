@@ -1,0 +1,31 @@
+@interface IESECListKitTimingModel : NSObject
+@property (nonatomic) NSString bizID;
+@property (nonatomic) double openTime;
+@property (nonatomic) double loadBundleStartTime;
+@property (nonatomic) double loadBundleEndTime;
+@property (nonatomic) double networkStartTime;
+@property (nonatomic) double networkEndTime;
+@property (nonatomic) double listLoadStartTime;
+@property (nonatomic) double listFirstLoadFinishTime;
+@property (nonatomic) Q currentIdx;
+- (unsigned long long)currentIdx;
+- (double)listFirstLoadFinishTime;
+- (double)listLoadStartTime;
+- (double)loadBundleEndTime;
+- (double)loadBundleStartTime;
+- (double)networkEndTime;
+- (double)networkStartTime;
+- (double)openTime;
+- (void)setBizID:;
+- (void)setCurrentIdx:;
+- (void)setListFirstLoadFinishTime:;
+- (void)setListLoadStartTime:;
+- (void)setLoadBundleEndTime:;
+- (void)setLoadBundleStartTime:;
+- (void)setNetworkEndTime:;
+- (void)setNetworkStartTime:;
+- (void)setOpenTime:;
+- (id)toDictionary;
+- (void).cxx_destruct;
+- (id)bizID;
+@end

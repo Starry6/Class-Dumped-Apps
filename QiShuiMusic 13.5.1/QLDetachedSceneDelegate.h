@@ -1,0 +1,36 @@
+@interface QLDetachedSceneDelegate : NSObject
+@property (nonatomic) QLPreviewController quicklookController;
+@property (nonatomic) NSUserActivity quicklookActivity;
+@property (nonatomic) NSArray urls;
+@property (nonatomic) Q selectedURLIndex;
+@property (nonatomic) NSDictionary editingModes;
+@property (nonatomic) UIWindow window;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)numberOfPreviewItemsInPreviewController:;
+- (id)urls;
+- (id)previewController:previewItemAtIndex:;
+- (long long)previewController:editingModeForPreviewItem:;
+- (void)sceneDidBecomeActive:;
+- (void)sceneWillResignActive:;
+- (void)setUrls:;
+- (void)sceneWillEnterForeground:;
+- (void).cxx_destruct;
+- (id)stateRestorationActivityForScene:;
+- (void)setWindow:;
+- (id)window;
+- (void)scene:willConnectToSession:options:;
+- (void)sceneDidDisconnect:;
+- (void)previewControllerWillDismiss:;
+- (id)activityFromOptions:;
+- (id)quicklookController;
+- (void)setQuicklookController:;
+- (id)quicklookActivity;
+- (void)setQuicklookActivity:;
+- (unsigned long long)selectedURLIndex;
+- (void)setSelectedURLIndex:;
+- (id)editingModes;
+- (void)setEditingModes:;
+@end

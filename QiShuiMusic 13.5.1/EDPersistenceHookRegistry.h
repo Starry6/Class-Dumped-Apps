@@ -1,0 +1,35 @@
+@interface EDPersistenceHookRegistry : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)respondsToSelector:;
+- (id)init;
+- (void)dealloc;
+- (id)methodSignatureForSelector:;
+- (void)_forwardStackInvocation:;
+- (void)forwardInvocation:;
+- (void)registerDatabaseChangeHookResponder:;
+- (void)unregisterAllHookResponders;
+- (void)registerMessageChangeHookResponder:;
+- (void)registerProtectedDataReconciliationHookResponder:;
+- (void)_initializeMethodSignatures;
+- (void)_registerSelector:;
+- (void)_registerHookResponder:withMethodDescription:;
+- (void)_registerHookResponder:protocol:;
+- (void)unregisterHookResponder:;
+- (id)_copyRespondersForSelector:;
+- (void)_messageRespondersWithInvocation:;
+- (void)registerMailboxChangeHookResponder:;
+- (void)registerThreadChangeHookResponder:;
+- (void)registerAccountChangeHookResponder:;
+- (void)registerSearchableIndexHookResponder:;
+- (void)registerMessageReadHookResponder:;
+- (void)registerMessageDeliveryHookResponder:;
+- (void)registerCloudStorageChangeHookResponder:;
+- (void)registerActivityHookResponder:;
+- (void)registerBrandIndicatorChangeHookResponder:;
+- (void)registerSenderBucketChangeHookResponder:;
++ (id)log;
++ (id)_proxiedProtocols;
+@end

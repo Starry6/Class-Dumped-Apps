@@ -1,0 +1,38 @@
+@interface CalACMigrationAccount : NSObject
+@property (nonatomic) ACAccount account;
+@property (nonatomic) BOOL dirty;
+@property (nonatomic) NSString accountDescription;
+@property (nonatomic) BOOL enabledForCalendarsDataClass;
+@property (nonatomic) BOOL provisionedForCalendarsDataClass;
+@property (nonatomic) BOOL visible;
+@property (nonatomic) BOOL authenticated;
+@property (nonatomic) NSString username;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)account;
+- (void)setPassword:;
+- (id)username;
+- (BOOL)visible;
+- (void)setVisible:;
+- (void)setUsername:;
+- (id)identifier;
+- (BOOL)authenticated;
+- (void)setAuthenticated:;
+- (void)setAccountDescription:;
+- (BOOL)dirty;
+- (void).cxx_destruct;
+- (id)accountPropertyForKey:;
+- (id)accountDescription;
+- (id)parentAccountIdentifier;
+- (void)setAccountProperty:forKey:;
+- (id)accountTypeIdentifier;
+- (BOOL)enabledForCalendarsDataClass;
+- (BOOL)provisionedForCalendarsDataClass;
+- (void)setAuthenticationTypeParent;
+- (void)setAuthenticationTypeNone;
+- (void)setEnabledForCalendarsDataClass:;
+- (void)setProvisionedForCalendarsDataClass:;
+- (id)initWithACAccount:;
+@end

@@ -1,0 +1,38 @@
+@interface SFDynamicURLImageResource : NSObject
+@property (nonatomic) double pixelWidth;
+@property (nonatomic) double pixelHeight;
+@property (nonatomic) NSString formatURL;
+@property (nonatomic) BOOL supportsResizing;
+@property (nonatomic) NSArray imageOptions;
+@property (nonatomic) NSDictionary dictionaryRepresentation;
+@property (nonatomic) NSData jsonData;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithProtobuf:;
+- (id)initWithCoder:;
+- (id)jsonData;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)dictionaryRepresentation;
+- (id)imageOptions;
+- (id)copyWithZone:;
+- (double)pixelHeight;
+- (double)pixelWidth;
+- (void)setPixelHeight:;
+- (void)setPixelWidth:;
+- (id)formatURL;
+- (void)setFormatURL:;
+- (BOOL)supportsResizing;
+- (void)setSupportsResizing:;
+- (void)setImageOptions:;
+- (BOOL)hasPixelWidth;
+- (BOOL)hasPixelHeight;
+- (BOOL)hasSupportsResizing;
+- (id)sf_urlForSettings:;
+- (id)sf_urlForSettings:size:;
+- (id)_sf_urlForSettings:shouldResize:width:height:;
+- (id)_sf_replacementStringForPropertyEntryKey:value:;
++ (BOOL)supportsSecureCoding;
+@end

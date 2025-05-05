@@ -1,0 +1,33 @@
+@interface FBServiceClientAuthenticator : NSObject
+@property (nonatomic) NSString entitlement;
+@property (nonatomic) Q credentials;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (unsigned long long)credentials;
+- (int)authenticateAuditToken:withResult:;
+- (BOOL)authenticateClient:;
+- (id)initWithCredentials:;
+- (id)succinctDescriptionBuilder;
+- (id)initWithEntitlement:additionalCredentials:;
+- (BOOL)authenticateAuditToken:forEntitlement:error:;
+- (int)authenticateClient:withResult:;
+- (BOOL)authenticateAuditToken:error:;
+- (int)authenticateAuditToken:forEntitlement:withResult:;
+- (BOOL)authenticateAuditToken:;
+- (void).cxx_destruct;
+- (id)entitlement;
+- (id)initWithEntitlement:;
+- (id)succinctDescription;
+- (BOOL)authenticateClient:error:;
+- (id)descriptionBuilderWithMultilinePrefix:;
+- (id)descriptionWithMultilinePrefix:;
++ (id)sharedForegroundUIAppClientAuthenticator;
++ (BOOL)authenticateAuditToken:forEntitlement:error:;
++ (id)sharedSystemClientAuthenticator;
++ (id)sharedUIAppClientAuthenticator;
++ (id)_errorForCode:process:failedEntitlement:;
++ (int)_authenticateAuditToken:entitlement:credentials:error:withResult:;
+@end

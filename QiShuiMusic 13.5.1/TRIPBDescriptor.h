@@ -1,0 +1,34 @@
+@interface TRIPBDescriptor : NSObject
+@property (nonatomic) NSString name;
+@property (nonatomic) NSArray fields;
+@property (nonatomic) NSArray oneofs;
+@property (nonatomic) r^{TRIPBExtensionRange=II} extensionRanges;
+@property (nonatomic) I extensionRangesCount;
+@property (nonatomic) TRIPBFileDescriptor file;
+@property (nonatomic) BOOL wireFormat;
+@property (nonatomic) # messageClass;
+@property (nonatomic) TRIPBDescriptor containingType;
+@property (nonatomic) NSString fullName;
+- (id)containingType;
+- (Class)messageClass;
+- (id)fullName;
+- (id)initWithClass:file:fields:storageSize:wireFormat:;
+- (BOOL)isWireFormat;
+- (void)dealloc;
+- (id)fieldWithNumber:;
+- (id)extensionRanges;
+- (id)oneofs;
+- (id)fields;
+- (void)setupContainingMessageClassName:;
+- (void)setupExtraTextInfo:;
+- (id)fieldWithName:;
+- (id)file;
+- (void)setupMessageClassNameSuffix:;
+- (unsigned int)extensionRangesCount;
+- (void)setupExtensionRanges:count:;
+- (id)name;
+- (id)oneofWithName:;
+- (void)setupOneofs:count:firstHasIndex:;
+- (id)copyWithZone:;
++ (id)allocDescriptorForClass:rootClass:file:fields:fieldCount:storageSize:flags:;
+@end

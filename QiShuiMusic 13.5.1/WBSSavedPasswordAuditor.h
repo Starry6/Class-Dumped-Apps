@@ -1,0 +1,2 @@
+@interface WBSSavedPasswordAuditor : WBSPasswordAuditor
+@end

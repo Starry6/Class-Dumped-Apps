@@ -1,0 +1,34 @@
+@interface TTAScanQrCodeResultDataModel : TTADataRespModel
+@property (nonatomic) q error_code;
+@property (nonatomic) NSString errodDescription;
+@property (nonatomic) NSString csrf_token;
+@property (nonatomic) NSString source_icon;
+@property (nonatomic) NSString source_title;
+@property (nonatomic) NSString source_des;
+@property (nonatomic) NSString source_query;
+@property (nonatomic) NSString confirmed_url;
+@property (nonatomic) NSString extra;
+@property (nonatomic) q expire_time;
+- (void)setExpire_time:;
+- (void)setSource_icon:;
+- (id)confirmed_url;
+- (id)csrf_token;
+- (id)errodDescription;
+- (long long)expire_time;
+- (void)setConfirmed_url:;
+- (void)setCsrf_token:;
+- (void)setErrodDescription:;
+- (void)setExtra:;
+- (void)setSource_des:;
+- (void)setSource_query:;
+- (void)setSource_title:;
+- (id)source_des;
+- (id)source_icon;
+- (id)source_query;
+- (id)source_title;
+- (id)extra;
+- (void).cxx_destruct;
+- (long long)error_code;
+- (void)setError_code:;
++ (id)tta_modelCustomPropertyMapper;
+@end

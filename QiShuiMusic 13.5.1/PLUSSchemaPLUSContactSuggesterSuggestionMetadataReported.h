@@ -1,0 +1,35 @@
+@interface PLUSSchemaPLUSContactSuggesterSuggestionMetadataReported : SISchemaInstrumentationMessage
+@property (nonatomic) SISchemaUUID suggestionId;
+@property (nonatomic) BOOL hasSuggestionId;
+@property (nonatomic) BOOL isDuplicateSuggestion;
+@property (nonatomic) BOOL hasIsDuplicateSuggestion;
+@property (nonatomic) BOOL isSuggestionPresentInModelOutput;
+@property (nonatomic) BOOL hasIsSuggestionPresentInModelOutput;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (id)suggestionId;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void)setSuggestionId:;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (BOOL)hasSuggestionId;
+- (void)deleteSuggestionId;
+- (void)setIsDuplicateSuggestion:;
+- (BOOL)hasIsDuplicateSuggestion;
+- (void)setHasIsDuplicateSuggestion:;
+- (void)deleteIsDuplicateSuggestion;
+- (void)setIsSuggestionPresentInModelOutput:;
+- (BOOL)hasIsSuggestionPresentInModelOutput;
+- (void)setHasIsSuggestionPresentInModelOutput:;
+- (void)deleteIsSuggestionPresentInModelOutput;
+- (BOOL)isDuplicateSuggestion;
+- (BOOL)isSuggestionPresentInModelOutput;
+- (void)setHasSuggestionId:;
+@end

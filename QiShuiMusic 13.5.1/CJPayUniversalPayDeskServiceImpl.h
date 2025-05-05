@@ -1,0 +1,38 @@
+@interface CJPayUniversalPayDeskServiceImpl : NSObject
+@property (nonatomic) NSMutableDictionary multiApiDelegates;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)p_trackTTPayWakeWithExtra:from:;
+- (void)callState:fromScene:from:;
+- (void)i_callBackWithCallBackId:response:;
+- (void)i_openUniversalPayDeskWithParams:referVC:withDelegate:;
+- (void)i_openUniversalPayDeskWithParams:withDelegate:;
+- (id)i_processCallbackDataWithResponse:;
+- (id)multiApiDelegates;
+- (void)onResponse:from:;
+- (id)p_buildCallBackLynxBindCardCallMiniAppWithResponse:;
+- (id)p_buildCallbackPayDictWithResponse:;
+- (id)p_buildGeneralAbilityServiceDictWithResponse:;
+- (id)p_buildLynxCardDictWithResponse:;
+- (id)p_buildParamsSeriveDictWithResponse:;
+- (id)p_buildTrackerParams:;
+- (id)p_callBackDataWithResponse:;
+- (void)p_callState:fromScene:from:;
+- (id)p_callbackBindCardDictWithResponse:;
+- (void)p_createOrder:withDelegate:;
+- (void)p_handleBioService:from:;
+- (void)p_handleByRouterWithModel:delegate:;
+- (void)p_handleGetParamsServiceWith:delegate:;
+- (void)p_handleOpenLynxWithModel:delegate:;
+- (void)p_handlePayService:sdkInfo:withDelegate:;
+- (void)p_handleSuperPayResponse:;
+- (void)p_justOnResponse:from:;
+- (void)p_onResponseError:errorDesc:from:;
+- (void)p_trackTTPayCallbackWithResponse:from:;
+- (id)p_tryToRemoveTmpTrackInfoFromParams:;
+- (void)setMultiApiDelegates:;
+- (void).cxx_destruct;
++ (void)registerComponents;
+@end

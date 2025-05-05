@@ -1,0 +1,30 @@
+@interface SGTimeZoneDetector : NSObject
+- (id)init;
+- (void).cxx_destruct;
+- (id)countryCodeForAddress:;
+- (id)timeZoneNameForAddress:withCountryCode:;
+- (void)_handleMemoryPressureStatus;
+- (id)_getCountryCodeForCountryName;
+- (id)_getTimeZoneForCountryCode;
+- (void)_readPlistRegionAbbreviationsData;
+- (void)cleanupCache;
+- (id)_getTimeZoneForCountryCodeDictionarySupplement;
+- (id)_getRegionAbbreviations;
+- (id)_getTimeZoneForPostalCode;
+- (id)_getTimeZoneAbbreviations;
+- (id)_getUniquePostalCodeFormats;
+- (id)_getPostalCodeFormats;
+- (id)_getRegionNames;
+- (id)_postalCodeForAddress:withCountryCode:;
+- (id)_airportCodeRangeForAddress:;
+- (id)_acronymForAddress:airportCodeRange:airportCodeNames:;
+- (id)_countryCodeByRegionAbbreviationFromNormalizedAddress:;
+- (id)_countryCodeByRegularExpressionFromNormalizedAddress:;
+- (id)_countryCodeByRegionNameFromNormalizedAddress:withWords:;
+- (id)_countryCodeByCountryNameFromNormalizedAddressWords:;
+- (id)timeZoneFromAiportCodeForAddress:;
+- (id)_timeZoneNameForPostalCode:withPostalCodeTable:;
++ (id)_normalizedCountryString:;
++ (id)_normalizedString:;
++ (id)_regularExpressionForPostalCodeFormat:;
+@end

@@ -1,0 +1,35 @@
+@interface VEVideoImageReader : VEVideoReader
+@property (nonatomic) {?=qiIq} lastTime;
+@property (nonatomic) ^{__CVBuffer=} imageBuffer;
+@property (nonatomic) NSURL picUrl;
+@property (nonatomic) NSURL originalPicUrl;
+@property (nonatomic) ^{__CVBuffer=} originalPicImageBufer;
+@property (nonatomic) NSObject<OS_dispatch_queue> imageDecodeQueue;
+@property (nonatomic) VEVideoConfig config;
+- (id)createImageBufferFromOriginalPath;
+- (id)imageDecodeQueue;
+- (id)originalPicImageBufer;
+- (id)originalPicUrl;
+- (BOOL)p_isHeifImage:;
+- (id)picUrl;
+- (void)readPicture;
+- (void)setImageDecodeQueue:;
+- (void)setOriginalPicImageBufer:;
+- (void)setOriginalPicUrl:;
+- (void)setPicUrl:;
+- (void)seekToTime:;
+- (void)dealloc;
+- (void)play;
+- (void)setConfig:;
+- (id)initWithConfig:;
+- (void)stop;
+- (void).cxx_destruct;
+- (void)pause;
+- (id)config;
+- (void)setLastTime:;
+- (id)lastTime;
+- (id)imageBuffer;
+- (void)setImageBuffer:;
+- (void)updateVideoConfig:;
+- (id)copySampleBufferAtTime:;
+@end

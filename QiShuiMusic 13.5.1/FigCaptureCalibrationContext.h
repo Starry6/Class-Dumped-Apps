@@ -1,0 +1,32 @@
+@interface FigCaptureCalibrationContext : NSObject
+@property (nonatomic) NSDictionary lastSuccessfulCalibrationData;
+@property (nonatomic) double lastSuccessfulCalibrationTimeStamp;
+@property (nonatomic) {?=ddd} lastSuccessfulCalibrationMagneticField;
+@property (nonatomic) NSString activityName;
+@property (nonatomic) NSString propertyName;
+@property (nonatomic) Q expectedDataSize;
+@property (nonatomic) NSInteger interval;
+@property (nonatomic) NSInteger minimumBatteryLevelToRun;
+- (id)propertyName;
+- (id)initWithSupportedDeviceNames:;
+- (void)setLastSuccessfulCalibrationData:;
+- (void)pushCalibrationDataToHistory:isRejected:;
+- (void)reportLoggingWithCalibrationData:isValid:magneticFieldMagnitude:;
+- (id)calibrationDataHistory;
+- (int)interval;
+- (id)initWithPreferenceString:withActivityName:withPropertyName:withExpectedDataSize:withInterval:withMinimumBatteryLevel:withInternalLogName:supportedDeviceNames:;
+- (void)setLastSuccessfulCalibrationTimeStamp:;
+- (id)lastSuccessfulCalibrationData;
+- (void)updateWithNewCalibrationData:orExternalErrors:magneticFieldAttempts:magneticField:isCalibrationValid:calibrationStatus:;
+- (double)lastSuccessfulCalibrationTimeStamp;
+- (id)lastSuccessfulCalibrationMagneticField;
+- (void)setLastSuccessfulCalibrationMagneticField:;
+- (id)activityName;
+- (unsigned long long)expectedDataSize;
+- (int)minimumBatteryLevelToRun;
++ (void)printDebugInfoForRawStreamCalibrationData:;
++ (unsigned int)calibrationStatusFromRawStreamCalibrationData:;
++ (id)calibrationDataStringForInternalLogging:;
++ (id)createRawStreamCalibrationDataWithFailureReasons:;
++ (void)setStatusForCalibrationData:status:;
+@end

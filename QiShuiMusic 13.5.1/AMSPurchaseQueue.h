@@ -1,0 +1,38 @@
+@interface AMSPurchaseQueue : NSObject
+@property (nonatomic) NSMutableArray batches;
+@property (nonatomic) AMSPurchaseQueueConfiguration config;
+@property (nonatomic) NSMutableSet preAuthenticatedDSIDs;
+@property (nonatomic) NSObject<OS_dispatch_queue> dispatchQueue;
+@property (nonatomic) BOOL isSuspeneded;
+@property (nonatomic) {os_unfair_lock_s=I} lock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)dispatchQueue;
+- (void)setConfig:;
+- (void)setDispatchQueue:;
+- (id)lock;
+- (void).cxx_destruct;
+- (id)config;
+- (id)initWithConfiguration:;
+- (void)setLock:;
+- (id)batches;
+- (void)setBatches:;
+- (void)purchase:handleDialogRequest:completion:;
+- (void)purchase:handleAuthenticateRequest:completion:;
+- (void)purchase:handleEngagementRequest:completion:;
+- (id)enquePurchases:;
+- (void)setSuspended:logUUID:;
+- (void)_handleNextPurchase;
+- (id)_performPreauthenticateForPurchaseTask:;
+- (void)_processPurchase:;
+- (id)preAuthenticatedDSIDs;
+- (void)setPreAuthenticatedDSIDs:;
+- (BOOL)isSuspeneded;
+- (void)setIsSuspeneded:;
++ (id)createBagForSubProfile;
++ (id)bagSubProfileVersion;
++ (id)bagSubProfile;
++ (id)bagKeySet;
+@end

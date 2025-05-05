@@ -1,0 +1,37 @@
+@interface SAWebWebSearchResult : AceObject
+@property (nonatomic) NSArray imageResults;
+@property (nonatomic) NSArray newsResults;
+@property (nonatomic) NSArray relatedSearchResults;
+@property (nonatomic) NSNumber totalImageResults;
+@property (nonatomic) NSNumber totalNewsResults;
+@property (nonatomic) NSNumber totalVideoResults;
+@property (nonatomic) NSNumber totalWebResults;
+@property (nonatomic) NSArray videoResults;
+@property (nonatomic) NSArray webResults;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)groupIdentifier;
+- (id)encodedClassName;
+- (id)imageResults;
+- (void)setImageResults:;
+- (id)newsResults;
+- (void)setNewsResults:;
+- (id)relatedSearchResults;
+- (void)setRelatedSearchResults:;
+- (id)totalImageResults;
+- (void)setTotalImageResults:;
+- (id)totalNewsResults;
+- (void)setTotalNewsResults:;
+- (id)totalVideoResults;
+- (void)setTotalVideoResults:;
+- (id)totalWebResults;
+- (void)setTotalWebResults:;
+- (id)videoResults;
+- (void)setVideoResults:;
+- (id)webResults;
+- (void)setWebResults:;
++ (id)webSearchResult;
++ (id)webSearchResultWithDictionary:context:;
+@end

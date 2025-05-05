@@ -1,0 +1,2 @@
+@interface VKCTappableView : VKPlatformView
+@end

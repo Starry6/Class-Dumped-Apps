@@ -1,0 +1,33 @@
+@interface MTMetricsKitTemplate : NSObject
+@property (nonatomic) NSString topic;
+@property (nonatomic) MTConfig config;
+@property (nonatomic) MTEventHandlers eventHandlers;
+@property (nonatomic) MTSystem system;
+@property (nonatomic) MTUtils utils;
+@property (nonatomic) <MTDelegatePackage> delegatePackage;
+- (void)setTopic:;
+- (id)eventHandlers;
+- (void)setConfig:;
+- (id)system;
+- (void).cxx_destruct;
+- (id)topic;
+- (void)setEventHandlers:;
+- (id)config;
+- (void)setSystem:;
+- (id)initWithTopic:;
+- (id)utils;
+- (id)initWithTopic:delegatePackage:;
+- (id)sampling;
+- (id)metricsDataWithEventHandlerName:pageId:pageType:pageContext:eventData:;
+- (id)metricsDataWithEventHandlerName:pageId:pageType:pageContext:fields:;
+- (id)metricsDataWithEventHandlerName:pageData:eventData:;
+- (id)metricsDataWithEventHandlerName:pageData:fields:;
+- (id)metricsDataWithEventHandlerName:eventData:;
+- (id)metricsDataWithEventHandlerName:fields:;
+- (void)setUtils:;
+- (id)delegatePackage;
+- (void)setDelegatePackage:;
+- (id)initWithTopic:bagProfile:profileVersion:;
++ (id)kitWithTopic:bagProfile:profileVersion:;
++ (id)kitWithTopic:amsBag:;
+@end

@@ -1,0 +1,30 @@
+@interface CNQuickActionsUsageManager : NSObject
+@property (nonatomic) NSCountedSet actionsUsageSet;
+@property (nonatomic) NSMutableSet enabledActionIdentifiers;
+@property (nonatomic) CNContact contact;
+@property (nonatomic) NSArray cachedInteractions;
+@property (nonatomic) NSDate cachedInteractionsDate;
+@property (nonatomic) BOOL sortsWithDuet;
+- (id)init;
+- (id)contact;
+- (void)setContact:;
+- (void).cxx_destruct;
+- (void)setSortsWithDuet:;
+- (BOOL)sortsWithDuet;
+- (void)actionPerformed:;
+- (id)actionsUsageSet;
+- (id)enabledActionIdentifiers;
+- (double)scoreForAction:;
+- (void)cacheEnabledStateForAction:;
+- (void)updateCachedEnabledStateForAction:;
+- (void)_updateDuetInteractionsIfNeeded;
+- (id)sortedActions:;
+- (void)setActionsUsageSet:;
+- (void)setEnabledActionIdentifiers:;
+- (id)cachedInteractions;
+- (void)setCachedInteractions:;
+- (id)cachedInteractionsDate;
+- (void)setCachedInteractionsDate:;
++ (id)managerForContact:;
++ (BOOL)sortUsingCoreDuetAvailable;
+@end

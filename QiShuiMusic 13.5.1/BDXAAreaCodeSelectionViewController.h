@@ -1,0 +1,36 @@
+@interface BDXAAreaCodeSelectionViewController : BDXABaseViewController
+@property (nonatomic) UITableView tableView;
+@property (nonatomic) @? completionBlock;
+@property (nonatomic) NSArray areaCodeData;
+@property (nonatomic) NSArray areaKeyArray;
+@property (nonatomic) NSArray areaDataSourceArray;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)areaCodeData;
+- (id)areaDataSourceArray;
+- (id)areaKeyArray;
+- (void)parseAreaCodeData;
+- (void)setAreaCodeData:;
+- (void)setAreaDataSourceArray:;
+- (void)setAreaKeyArray:;
+- (id)init;
+- (id)tableView:cellForRowAtIndexPath:;
+- (void)setCompletionBlock:;
+- (double)tableView:heightForRowAtIndexPath:;
+- (id)sectionIndexTitlesForTableView:;
+- (void)tableView:didSelectRowAtIndexPath:;
+- (void).cxx_destruct;
+- (long long)tableView:sectionForSectionIndexTitle:atIndex:;
+- (void)setTableView:;
+- (double)tableView:heightForHeaderInSection:;
+- (id)tableView:titleForHeaderInSection:;
+- (id)completionBlock;
+- (id)tableView;
+- (void)tableView:willDisplayHeaderView:forSection:;
+- (long long)tableView:numberOfRowsInSection:;
+- (void)viewDidLoad;
+- (long long)numberOfSectionsInTableView:;
++ (void)selectAreaCodeFromViewController:completion:;
+@end

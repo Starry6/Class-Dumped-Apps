@@ -1,0 +1,32 @@
+@interface IDSQuickRelayFixedTokenAllocator : NSObject
+@property (nonatomic) NSData relayIP;
+@property (nonatomic) NSData relayIPv6;
+@property (nonatomic) NSNumber relayPort;
+@property (nonatomic) NSData relaySessionToken;
+@property (nonatomic) NSData relaySessionKey;
+@property (nonatomic) NSData relaySessionID;
+@property (nonatomic) NSNumber relayCombinedSoftwareID;
+@property (nonatomic) NSData appleID;
+- (id)appleID;
+- (id)initWithDictionary:;
+- (void)setAppleID:;
+- (id)initWithDefaults;
+- (void).cxx_destruct;
+- (void)_setAllValuesFromDictionary:;
+- (BOOL)_isSessionInfoValid:;
+- (id)_parseQuickRelayDefaults;
+- (id)relayIP;
+- (void)setRelayIP:;
+- (id)relayPort;
+- (void)setRelayPort:;
+- (id)relaySessionKey;
+- (void)setRelaySessionKey:;
+- (id)relaySessionToken;
+- (void)setRelaySessionToken:;
+- (id)relaySessionID;
+- (void)setRelaySessionID:;
+- (id)relayCombinedSoftwareID;
+- (void)setRelayCombinedSoftwareID:;
+- (id)relayIPv6;
+- (void)setRelayIPv6:;
+@end

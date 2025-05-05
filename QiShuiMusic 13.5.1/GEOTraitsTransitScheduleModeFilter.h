@@ -1,0 +1,32 @@
+@interface GEOTraitsTransitScheduleModeFilter : PBCodable
+@property (nonatomic) BOOL hasTimeRange;
+@property (nonatomic) GEOTraitsTransitScheduleTimeRange timeRange;
+@property (nonatomic) BOOL hasNumAdditionalDepartures;
+@property (nonatomic) I numAdditionalDepartures;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (id)timeRange;
+- (id)initWithJSON:;
+- (unsigned int)numAdditionalDepartures;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (BOOL)hasTimeRange;
+- (unsigned long long)hash;
+- (void)setTimeRange:;
+- (void)copyTo:;
+- (void)configureWithDefaultStartTime:duration:numAdditionalDepartures:;
+- (void)mergeFrom:;
+- (void)setHasNumAdditionalDepartures:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (void)setNumAdditionalDepartures:;
+- (BOOL)hasNumAdditionalDepartures;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
++ (BOOL)isValid:;
+@end

@@ -1,0 +1,38 @@
+@interface HMDTTNetMonitor : NSObject
+@property (nonatomic) BOOL isMonitoring;
+@property (nonatomic) BOOL isExchangeRequestFilter;
+@property (nonatomic) NSObject<OS_dispatch_queue> ttnetMonitorQueue;
+- (void)collectBizExtraRequestInfo:record:;
+- (void)collectTTNetBizTimingInfo:response:record:;
+- (void)collectTTNetConcurrentRequestInfo:record:;
+- (void)collectTTNetThreadInfoWithRequest:response:record:;
+- (void)dealSDKNetworkMonitorWithRecord:request:sdkAid:;
+- (id)getPropertyDictCopyFrom:cls:propertyName:instanceVar:;
+- (id)getPropertyValueCopyFrom:cls:propertyName:instanceVar:;
+- (void)handleTTNetRequstFilter;
+- (BOOL)isExchangeRequestFilter;
+- (id)isTTNetChromiumCore;
+- (void)receiveNetworkFinishNotification:;
+- (void)receiveNetworkStartNotification:;
+- (id)recordWithRequest:response:responseInfo:responseData:error:isHitMovingLine:;
+- (void)registNotification;
+- (void)setIsExchangeRequestFilter:;
+- (void)setTtnetMonitorQueue:;
+- (void)startExchangeTTNetRequestFilterBlockSetter;
+- (void)stopExchangeTTNetRequestFilterBlockSetter;
+- (void)stopHandleRequestFilter;
+- (id)ttnetMonitorQueue;
+- (void)ttnetworkMonitorWithTTNetUserInfo:;
+- (void)unregistNotification;
+- (void)updateTTNetConfig;
+- (id)init;
+- (void)start;
+- (void)stop;
+- (BOOL)isMonitoring;
+- (void).cxx_destruct;
+- (void)setIsMonitoring:;
++ (void)changeMonitorTTNetImpSwitch;
++ (id)requestInfoForURLRequest:;
++ (void)setRequestInfo:forURLRequest:;
++ (id)sharedMonitor;
+@end

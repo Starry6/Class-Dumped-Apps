@@ -1,0 +1,30 @@
+@interface TSXgPTPLocalClockPort : TSXgPTPPort
+@property (nonatomic) C localOscillatorType;
+@property (nonatomic) BOOL hasLocalFrequencyToleranceLower;
+@property (nonatomic) NSInteger localFrequencyToleranceLower;
+@property (nonatomic) BOOL hasLocalFrequencyToleranceUpper;
+@property (nonatomic) NSInteger localFrequencyToleranceUpper;
+@property (nonatomic) BOOL hasLocalFrequencyStabilityLower;
+@property (nonatomic) NSInteger localFrequencyStabilityLower;
+@property (nonatomic) BOOL hasLocalFrequencyStabilityUpper;
+@property (nonatomic) NSInteger localFrequencyStabilityUpper;
+- (void)_updateFromProperties:;
+- (unsigned char)localOscillatorType;
+- (void)setLocalOscillatorType:;
+- (BOOL)hasLocalFrequencyToleranceLower;
+- (void)setHasLocalFrequencyToleranceLower:;
+- (int)localFrequencyToleranceLower;
+- (void)setLocalFrequencyToleranceLower:;
+- (BOOL)hasLocalFrequencyToleranceUpper;
+- (void)setHasLocalFrequencyToleranceUpper:;
+- (int)localFrequencyToleranceUpper;
+- (void)setLocalFrequencyToleranceUpper:;
+- (BOOL)hasLocalFrequencyStabilityLower;
+- (void)setHasLocalFrequencyStabilityLower:;
+- (int)localFrequencyStabilityLower;
+- (void)setLocalFrequencyStabilityLower:;
+- (BOOL)hasLocalFrequencyStabilityUpper;
+- (void)setHasLocalFrequencyStabilityUpper:;
+- (int)localFrequencyStabilityUpper;
+- (void)setLocalFrequencyStabilityUpper:;
+@end

@@ -1,0 +1,32 @@
+@interface IESLiveTeamFightFanTicketStore : IESLiveBaseFanTicketStore
+@property (nonatomic) q teamFightType;
+@property (nonatomic) IESLiveTeamFightGameModel teamFightModel;
+@property (nonatomic) NSArray guestList;
+@property (nonatomic) BOOL guestCanAcceptGift;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)bizStoreDidChangeGuestCanAcceptGift:;
+- (void)bizStoreDidUpdatedGuestList:;
+- (void)bizStoreMount;
+- (id)guestList;
+- (void)interactionPlaymodeDidEnd:;
+- (void)interactionPlaymodeDidStart:;
+- (BOOL)isNeedShowExactScoreWith:;
+- (id)prepareBackgroundColor;
+- (void)setGuestList:;
+- (void)setTeamFightModel:;
+- (void)setTeamFightType:;
+- (BOOL)shouldHandleWithTeamFightType:;
+- (id)teamFightModel;
+- (id)teamFightSignColor:;
+- (long long)teamFightSignWithUserPosition:;
+- (long long)teamFightType;
+- (void)updateTeamFightScore:model:quickInteract:;
+- (void)updateTeamFightScore:model:quickInteract:withoutAnimation:;
+- (void)updateTeamFightStatus:status:preStatus:;
+- (void)updateTeamfightRole:team:uid:;
+- (void)clear;
+- (void).cxx_destruct;
+@end

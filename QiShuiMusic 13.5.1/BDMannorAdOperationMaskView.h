@@ -1,0 +1,38 @@
+@interface BDMannorAdOperationMaskView : UIView
+@property (nonatomic) BDMannorComponentManagerContext context;
+@property (nonatomic) BDMannorStyleTemplateComponentModel componentModel;
+@property (nonatomic) BDMannorStyleTemplateComponentDataModel data;
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UIButton replayBtn;
+@property (nonatomic) UIButton learnMoreBtn;
+@property (nonatomic) BDMannorAdOperationComponentView componentView;
+@property (nonatomic) @? dismissBlock;
+@property (nonatomic) @? onSubViewClick;
+- (id)componentModel;
+- (void)configDifferentUI;
+- (id)learnMoreBtn;
+- (void)learnMoreBtnClicked:;
+- (id)onSubViewClick;
+- (id)replayBtn;
+- (void)replayBtnClicked:;
+- (void)setComponentModel:;
+- (void)setLearnMoreBtn:;
+- (void)setOnSubViewClick:;
+- (void)setReplayBtn:;
+- (void)setupComponentViewUIWithModel;
+- (id)init;
+- (id)context;
+- (id)containerView;
+- (id)data;
+- (void)setContainerView:;
+- (void)prepareForDisplay;
+- (id)initWithContext:;
+- (void).cxx_destruct;
+- (void)setData:;
+- (void)setContext:;
+- (void)setComponentView:;
+- (id)componentView;
+- (void)setupUI;
+- (id)dismissBlock;
+- (void)setDismissBlock:;
+@end

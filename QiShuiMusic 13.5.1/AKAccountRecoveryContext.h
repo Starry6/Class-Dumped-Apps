@@ -1,0 +1,30 @@
+@interface AKAccountRecoveryContext : NSObject
+@property (nonatomic) BOOL supportsMasterKeyRecovery;
+@property (nonatomic) BOOL mandatesRecoveryKey;
+@property (nonatomic) NSString encodedRecoveryIdentityToken;
+@property (nonatomic) NSString encodedRecoveryPET;
+@property (nonatomic) NSURL recoveryContinuationURL;
+@property (nonatomic) AKAppleIDAuthenticationContext authContext;
+@property (nonatomic) NSString decodedRecoveryIdentityTokenString;
+@property (nonatomic) NSString decodedRecoveryPETString;
+- (void)setAuthContext:;
+- (id)initWithCoder:;
+- (id)authContext;
+- (void)encodeWithCoder:;
+- (BOOL)isValid;
+- (void).cxx_destruct;
+- (id)decodedRecoveryIdentityTokenString;
+- (id)decodedRecoveryPETString;
+- (BOOL)supportsMasterKeyRecovery;
+- (void)setSupportsMasterKeyRecovery:;
+- (BOOL)mandatesRecoveryKey;
+- (void)setMandatesRecoveryKey:;
+- (id)encodedRecoveryIdentityToken;
+- (void)setEncodedRecoveryIdentityToken:;
+- (id)encodedRecoveryPET;
+- (void)setEncodedRecoveryPET:;
+- (id)recoveryContinuationURL;
+- (void)setRecoveryContinuationURL:;
++ (BOOL)supportsSecureCoding;
++ (id)recoveryContextWithServerInfo:;
+@end

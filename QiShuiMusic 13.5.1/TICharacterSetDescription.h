@@ -1,0 +1,30 @@
+@interface TICharacterSetDescription : NSObject
+@property (nonatomic) q baseIdentifier;
+@property (nonatomic) NSString charactersAddedToBase;
+@property (nonatomic) NSString charactersRemovedFromBase;
+@property (nonatomic) BOOL inverted;
+@property (nonatomic) NSCharacterSet characterSet;
+- (id)characterSet;
+- (id)initWithBaseCharacterSet:;
+- (id)awakeAfterUsingCoder:;
+- (BOOL)inverted;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)charactersAddedToBase;
+- (id)initWithCharactersInString:;
+- (void)setCharactersAddedToBase:;
+- (id)invertedSetDescription;
+- (void)encodeWithCoder:;
+- (void)setCharactersRemovedFromBase:;
+- (long long)baseIdentifier;
+- (void).cxx_destruct;
+- (id)newCharacterSetFromDescription;
+- (id)initWithBase:additionalCharacters:removedCharacters:inverted:;
+- (id)description;
+- (id)charactersRemovedFromBase;
+- (id)mutableCopyWithZone:;
+- (void)clearCachedCharacterSet;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
++ (BOOL)supportsSecureCoding;
+@end

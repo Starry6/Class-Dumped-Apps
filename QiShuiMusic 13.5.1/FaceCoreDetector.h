@@ -1,0 +1,34 @@
+@interface FaceCoreDetector : NSObject
+- (id)initWithOptions:;
+- (id)version;
+- (void).cxx_destruct;
+- (id).cxx_construct;
+- (id)detectFacesInImage:options:error:;
+- (id)extractDetailsForFaces:inImage:options:error:;
+- (id)initWithProfile:parameters:;
+- (void)_updateDetectionParamsValues:;
+- (void)_updateExtractionParamsValues:;
+- (void)_createFaceCoreLightApiWithProfile:parameters:;
+- (void)_setParam:toValue:withDefaultValue:;
++ (id)faceDetector;
++ (id)faceDetectorWithOptions:;
++ (int)findProfileInParameters:;
++ (id)fastFaceDetector;
++ (id)preciseFaceDetector;
++ (id)standardTrackingDetector;
++ (id)keypointTrackingDetector;
++ (id)_transformROIs:image:usingBlock:;
++ (id)_parseRegionOfInterestParam:;
++ (id)_createImage:;
++ (id)_createFaceFromFCRFace:image:;
++ (id)_createFCRFaceFromFace:image:;
++ (void)_updateFCRFace:fromFace:image:;
++ (void)_addLandmarkOfType:fromMesh:indexes:to:image:;
++ (id)_makeYFlippedCoordFromPoint:image:;
++ (id)_makeYFlippedPointFromCoord:image:;
++ (id)_makeYFlippedRectFromRect:image:;
++ (float)_interpretAsFloat:withDefault:;
++ (id)_parseOption:value:;
++ (id)_parseNumericOrBoolValue:;
++ (id)_convertRectsToString:;
+@end

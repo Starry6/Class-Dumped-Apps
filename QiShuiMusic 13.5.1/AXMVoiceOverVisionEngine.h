@@ -1,0 +1,33 @@
+@interface AXMVoiceOverVisionEngine : AXMAXElementVisionEngine
+@property (nonatomic) AXMSceneDetectorNode sceneDetector;
+@property (nonatomic) AXMObjectDetectorNode objectDetector;
+@property (nonatomic) AXMFaceDetectorNode faceDetector;
+@property (nonatomic) AXMTraitDetectorNode traitDetector;
+@property (nonatomic) AXMProminentObjectsDetectorNode prominentObjectsDetector;
+@property (nonatomic) AXMCaptionDetectorNode captionDetector;
+@property (nonatomic) AXMNSFWDetectorNode nsfwDetector;
+@property (nonatomic) AXMSignificantEventDetectorNode significantEventDetector;
+@property (nonatomic) Q genderStrategy;
+- (id)init;
+- (id)faceDetector;
+- (void)setFaceDetector:;
+- (void)setObjectDetector:;
+- (void).cxx_destruct;
+- (id)objectDetector;
+- (id)initWithIdentifier:;
+- (unsigned long long)genderStrategy;
+- (void)setGenderStrategy:;
+- (id)sceneDetector;
+- (void)setSceneDetector:;
+- (id)configuredOptionsDisableAllDetectors:elementOptions:textRecognitionLevel:textDetectionLocales:preferringFullCaptions:;
+- (id)traitDetector;
+- (void)setTraitDetector:;
+- (id)prominentObjectsDetector;
+- (void)setProminentObjectsDetector:;
+- (id)captionDetector;
+- (void)setCaptionDetector:;
+- (id)nsfwDetector;
+- (void)setNsfwDetector:;
+- (id)significantEventDetector;
+- (void)setSignificantEventDetector:;
+@end

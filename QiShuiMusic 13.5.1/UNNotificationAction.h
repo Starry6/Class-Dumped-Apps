@@ -1,0 +1,32 @@
+@interface UNNotificationAction : NSObject
+@property (nonatomic) NSString textInputButtonTitle;
+@property (nonatomic) NSString textInputPlaceholder;
+@property (nonatomic) NSURL url;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) NSString title;
+@property (nonatomic) Q options;
+@property (nonatomic) UNNotificationActionIcon icon;
+- (id)url;
+- (id)_description;
+- (id)textInputPlaceholder;
+- (id)icon;
+- (id)identifier;
+- (id)_initWithIdentifier:title:options:textInputButtonTitle:textInputPlaceholder:url:icon:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)textInputButtonTitle;
+- (void)encodeWithCoder:;
+- (unsigned long long)options;
+- (id)title;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
++ (BOOL)supportsSecureCoding;
++ (id)actionWithIdentifier:title:url:;
++ (id)actionWithIdentifier:title:options:icon:;
++ (id)actionWithIdentifier:title:url:icon:;
++ (id)actionWithIdentifier:title:url:options:;
++ (id)actionWithIdentifier:title:url:options:icon:;
++ (id)actionWithIdentifier:title:options:;
+@end

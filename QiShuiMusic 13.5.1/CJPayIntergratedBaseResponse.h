@@ -1,0 +1,32 @@
+@interface CJPayIntergratedBaseResponse : JSONModel
+@property (nonatomic) NSString code;
+@property (nonatomic) NSString errorType;
+@property (nonatomic) NSString msg;
+@property (nonatomic) NSString innerMsg;
+@property (nonatomic) NSString typecnt;
+@property (nonatomic) NSString errorData;
+@property (nonatomic) NSString processStr;
+@property (nonatomic) double responseDuration;
+- (id)typecnt;
+- (id)innerMsg;
+- (id)processStr;
+- (void)setInnerMsg:;
+- (void)setProcessStr:;
+- (void)setTypecnt:;
+- (BOOL)isSuccess;
+- (id)initWithDictionary:error:;
+- (id)code;
+- (void).cxx_destruct;
+- (double)responseDuration;
+- (void)setCode:;
+- (id)errorType;
+- (void)setResponseDuration:;
+- (void)setErrorType:;
+- (id)errorData;
+- (void)setErrorData:;
+- (id)msg;
+- (void)setMsg:;
++ (id)basicMapperWith:;
++ (id)keyMapper;
++ (BOOL)propertyIsOptional:;
+@end

@@ -1,0 +1,30 @@
+@interface AVPictureInPictureViewController : UIViewController
+@property (nonatomic) AVPlayerController playerController;
+@property (nonatomic) AVPictureInPicturePlayerLayerView pictureInPicturePlayerLayerView;
+@property (nonatomic) BOOL shouldShowAlternateActionButtonImage;
+@property (nonatomic) <AVPictureInPictureViewControllerDelegate> delegate;
+@property (nonatomic) AVPictureInPictureViewController contentViewController;
+@property (nonatomic) BOOL shouldShowLoadingIndicator;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (void)dealloc;
+- (void)didAnimatePictureInPictureStop;
+- (id)playerController;
+- (void)setDelegate:;
+- (id)contentViewController;
+- (void)setContentViewController:;
+- (id)initWithCoder:;
+- (id)pictureInPicturePlayerLayerView;
+- (void)setShouldShowAlternateActionButtonImage:;
+- (id)delegate;
+- (void)setPlayerController:;
+- (BOOL)shouldShowAlternateActionButtonImage;
+- (id)initWithPictureInPicturePlayerLayerView:;
+- (void).cxx_destruct;
+- (void)willAnimatePictureInPictureStart;
+- (void)loadView;
+- (id)initWithNibName:bundle:;
+@end

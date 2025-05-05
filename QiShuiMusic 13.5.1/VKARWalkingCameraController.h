@@ -1,0 +1,38 @@
+@interface VKARWalkingCameraController : VKScreenCameraController
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setPitch:;
+- (id)centerCoordinate;
+- (double)altitude;
+- (BOOL)usesVKCamera;
+- (double)heading;
+- (void)setHeading:;
+- (double)maxPitch;
+- (double)topDownMinimumZoomLevel;
+- (double)maximumZoomLevel;
+- (double)pitch;
+- (double)minimumZoomLevel;
+- (void)setCamera:;
+- (void)setCenterCoordinate:altitude:yaw:pitch:duration:animationStyle:timingCurve:completion:;
+- (void)startTrackingAnnotation:trackHeading:animated:duration:timingFunction:;
+- (void)stopTrackingAnnotation;
+- (void)updateWithTimestamp:withContext:;
+- (double)minPitch;
+- (void)setAltitude:;
+- (void)_updateClipPlanes;
+- (void)setVkCamera:;
+- (double)presentationHeading;
+- (void)pushGesture:;
+- (void)setCenterCoordinate:;
+- (double)distanceFromCenterCoordinate;
+- (double)currentZoomLevel;
+- (void).cxx_destruct;
+- (id)_buildDebugString:;
+- (id)_locationProvider;
+- (id).cxx_construct;
+- (void)_updateDebugOverlay:;
+- (id)initWithTaskContext:mapDataAccess:animationRunner:runLoopController:cameraDelegate:arLogic:elevationLogic:;
+- (void)setDistanceFromCenterCoordinate:;
+@end

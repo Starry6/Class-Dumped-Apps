@@ -1,0 +1,30 @@
+@interface MSMessageLoadingAnalyticController : NSObject
+@property (nonatomic) MSDiagnosticManager diagnosticManager;
+@property (nonatomic) NSObject<OS_dispatch_queue> serialMessageLoadingTimerQueue;
+@property (nonatomic) Q maxLoadingTimeSeconds;
+@property (nonatomic) NSDictionary messageLoadTimes;
+@property (nonatomic) @? startedRecordingHandler;
+@property (nonatomic) @? endedRecordingHandler;
+- (void).cxx_destruct;
+- (id)diagnosticManager;
+- (void)setDiagnosticManager:;
+- (id)initWithDiagnosticManager:;
+- (id)initWithDiagnosticManager:maxLoadingTimeSeconds:;
+- (void)startRecordingForMessage:;
+- (void)endRecordingForMessage:;
+- (void)endAllRecording;
+- (void)_commonInitWithDiagnosticManager:maxLoadingTimeSeconds:;
+- (void)_endRecordingForMessage:;
+- (void)_startTimeoutForMessage:;
+- (void)_calculateAndSubmitTimeForLoadingInfo:;
+- (id)_retrieveAndRemoveMessageLoadingInfoForMessage:;
+- (id)serialMessageLoadingTimerQueue;
+- (void)setSerialMessageLoadingTimerQueue:;
+- (unsigned long long)maxLoadingTimeSeconds;
+- (void)setMaxLoadingTimeSeconds:;
+- (id)messageLoadTimes;
+- (id)startedRecordingHandler;
+- (void)setStartedRecordingHandler:;
+- (id)endedRecordingHandler;
+- (void)setEndedRecordingHandler:;
+@end

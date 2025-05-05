@@ -1,0 +1,37 @@
+@interface UICollectionViewUpdate : NSObject
+@property (nonatomic) NSUUID identifier;
+@property (nonatomic) BOOL layoutPreparedForUpdates;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)finalIndexPathForInitialIndexPath:;
+- (id)initialIndexPathForFinalIndexPath:;
+- (void)dealloc;
+- (id)initalSectionGlobalItemRangeForSection:;
+- (long long)finalSectionCount;
+- (id)identifier;
+- (long long)initialSectionIndexForFinalSectionIndex:;
+- (BOOL)hasMovedItemAtOldIndexPath:;
+- (id)initialIndexPathForSupplementaryElementOfKind:forFinalIndexPath:;
+- (id)oldIndexPathForSupplementaryElementOfKind:newIndexPath:;
+- (void)_computeAuxiliaryUpdates;
+- (long long)finalSectionIndexForInitialSectionIndex:;
+- (BOOL)hasDeletedAuxiliaryElementOfKind:atIndexPath:;
+- (id)newIndexPathForSupplementaryElementOfKind:oldIndexPath:;
+- (long long)initialSectionCount;
+- (id)initWithCollectionView:updateItems:moveItemSourceIndexPaths:oldModel:newModel:oldVisibleBounds:newVisibleBounds:;
+- (BOOL)isLayoutPreparedForUpdates;
+- (id)finalIndexPathForSupplementaryElementOfKind:forInitialIndexPath:;
+- (void).cxx_destruct;
+- (id)validatedOldIndexPathForSupplementaryElementOfKind:newIndexPath:;
+- (long long)finalGlobalIndexForInitialGlobalIndex:;
+- (BOOL)hasInsertedAuxiliaryElementOfKind:atIndexPath:;
+- (id)validatedNewIndexPathForSupplementaryElementOfKind:oldIndexPath:;
+- (void)setLayoutPreparedForUpdates;
+- (id)finalSectionGlobalItemRangeForSection:;
+- (id)description;
+- (void)_computeItemUpdates;
+- (long long)initialGlobalIndexForFinalGlobalIndex:;
+- (void)_computeSectionUpdates;
+@end

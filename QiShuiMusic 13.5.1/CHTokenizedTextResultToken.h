@@ -1,0 +1,35 @@
+@interface CHTokenizedTextResultToken : NSObject
+@property (nonatomic) double recognitionScore;
+@property (nonatomic) double combinedScore;
+@property (nonatomic) double alignmentScore;
+@property (nonatomic) Q properties;
+@property (nonatomic) q substrokeCount;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} bounds;
+@property (nonatomic) I wordID;
+@property (nonatomic) NSString string;
+@property (nonatomic) NSIndexSet strokeIndexes;
+- (id)string;
+- (id)init;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (unsigned long long)properties;
+- (void).cxx_destruct;
+- (id)description;
+- (id)bounds;
+- (id)mutableCopyWithZone:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (unsigned int)wordID;
+- (double)combinedScore;
+- (double)alignmentScore;
+- (id)initWithString:strokeIndexes:wordID:recognitionScore:combinedScore:alignmentScore:properties:substrokeCount:bounds:;
+- (double)heuristicTextScore;
+- (BOOL)isEquivalentToToken:;
+- (BOOL)isEqualToTokenizedTextResultToken:;
+- (id)strokeIndexes;
+- (double)recognitionScore;
+- (long long)substrokeCount;
++ (BOOL)supportsSecureCoding;
++ (id)tokenWithString:strokeIndexes:wordID:recognitionScore:combinedScore:alignmentScore:properties:substrokeCount:bounds:;
+@end

@@ -1,0 +1,30 @@
+@interface CLSFaultProcessor : NSObject
+@property (nonatomic) <CLSFaultProcessorDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)enumerate:;
+- (void)_addObject:;
+- (BOOL)waitUntilDone:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)initWithDelegate:;
+- (id)clientRemote_invalidate;
+- (id)clientRemote_deliverObject:;
+- (id)clientRemote_itemChanged:;
+- (id)clientRemote_finishWithOffset:error:;
+- (void)faultObject:;
+- (void)faultObjects:;
+- (void)_descendIntoObject:idsToProcess:enumerationBlock:;
+- (void)completionNotify:;
+- (void)_faultRelation:fromObject:;
+- (void)_faultObjectsBatch:;
+- (void)_insertRootObject:;
+- (void)_insertRootObjectID:withChildren:;
+- (BOOL)_isRootObject:;
+- (BOOL)_isRootObject:withRelation:;
+- (id)_childParentRelationForObject:;
+- (void)_inGroup:;
++ (id)rootClasses;
+@end

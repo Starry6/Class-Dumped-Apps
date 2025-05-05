@@ -1,0 +1,24 @@
+@interface GEOPDComponentFilter : PBCodable
+- (id)init;
+- (id)initRestaurantReservationLinkFilterWithTraits:;
+- (id)jsonRepresentation;
+- (id)initTransitScheduleFilterWithTraits:;
+- (void)writeTo:;
+- (id)initReviewUserPhotoFilterWithTraits:;
+- (id)initTransitTripStopTimeFilterWithTraits:;
+- (unsigned long long)hash;
+- (id)initCaptionedPhotoFilterWithTraits:;
+- (id)initAddressObjectFilterWithLibraryVersion:;
+- (id)initResultSnippetFilterWithTraits:;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)initTipUserPhotoFilterWithTraits:;
+- (id)description;
+- (id)initEntityFilterWithSpokenNames;
+- (id)initAnnotatedItemListFilterWithTraits:;
+- (id)dictionaryRepresentation;
+- (id)initPhotoFilterWithTraits:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+@end

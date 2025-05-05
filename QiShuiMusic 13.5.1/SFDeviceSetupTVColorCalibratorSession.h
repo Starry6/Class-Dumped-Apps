@@ -1,0 +1,36 @@
+@interface SFDeviceSetupTVColorCalibratorSession : NSObject
+@property (nonatomic) NSObject<OS_dispatch_queue> dispatchQueue;
+@property (nonatomic) SFDevice peerDevice;
+@property (nonatomic) @? progressHandler;
+@property (nonatomic) @? promptForPINHandler;
+@property (nonatomic) Q triggerMs;
+- (void)_cleanup;
+- (void)setProgressHandler:;
+- (id)progressHandler;
+- (void)setPromptForPINHandler:;
+- (id)init;
+- (id)promptForPINHandler;
+- (void)_run;
+- (id)dispatchQueue;
+- (void)setDispatchQueue:;
+- (id)peerDevice;
+- (void)setPeerDevice:;
+- (void)_reportError:;
+- (void).cxx_destruct;
+- (void)invalidate;
+- (void)activate;
+- (int)_runFinish;
+- (void)pairSetupTryPIN:;
+- (void)tryAgain;
+- (int)_runSFSessionStart;
+- (void)_runSFSessionActivated;
+- (int)_runPairVerify:;
+- (int)_runPairSetup;
+- (int)_runTVLatencySetup;
+- (void)_runTVLatencySetupRequest;
+- (void)_runTVColorCalibratorSetup;
+- (void)_runTVColorCalibratorProgressEvent:info:;
+- (void)_handleSetupActionRequest:responseHandler:;
+- (unsigned long long)triggerMs;
+- (void)setTriggerMs:;
+@end

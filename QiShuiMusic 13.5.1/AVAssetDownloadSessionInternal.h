@@ -1,0 +1,2 @@
+@interface AVAssetDownloadSessionInternal : NSObject
+@end

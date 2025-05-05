@@ -1,0 +1,31 @@
+@interface FHSView : NSObject
+@property (nonatomic) UIView view;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) NSString title;
+@property (nonatomic) BOOL important;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} frame;
+@property (nonatomic) BOOL hidden;
+@property (nonatomic) UIImage snapshotImage;
+@property (nonatomic) NSArray children;
+@property (nonatomic) NSString summary;
+- (id)initWithView:isInScrollView:;
+- (id)frame;
+- (BOOL)hidden;
+- (id)snapshotImage;
+- (id)children;
+- (id)summary;
+- (id)description;
+- (id)ifImportant:ifNormal:;
+- (id)view;
+- (id)identifier;
+- (id)title;
+- (BOOL)important;
+- (void)setImportant:;
+- (void).cxx_destruct;
++ (id)drawView:;
++ (BOOL)_hideViewsCoveringView:root:hiddenViews:;
++ (void)hideViewsCoveringView:doWhileHidden:;
++ (id)_snapshotVisualEffectBackdropView:;
++ (id)_snapshotView:;
++ (id)forView:isInScrollView:;
+@end

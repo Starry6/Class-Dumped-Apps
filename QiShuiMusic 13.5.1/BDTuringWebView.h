@@ -1,0 +1,35 @@
+@interface BDTuringWebView : UIView
+@property (nonatomic) WKWebView webView;
+@property (nonatomic) UIActivityIndicatorView indicatorView;
+@property (nonatomic) <BDTuringWebViewDelegate> delegate;
+@property (nonatomic) BOOL loadingSuccess;
+@property (nonatomic) q startLoadTime;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)stopLoadingView;
+- (id)createIndicatorView;
+- (void)dismissVerifyView;
+- (void)hideVerifyView;
+- (BOOL)loadingSuccess;
+- (void)scheduleDismissVerifyView;
+- (void)setLoadingSuccess:;
+- (void)setStartLoadTime:;
+- (void)showVerifyView;
+- (long long)startLoadTime;
+- (void)startLoadingView;
+- (void)setWebView:;
+- (void)dealloc;
+- (void)webView:didFinishNavigation:;
+- (id)webView;
+- (void)setDelegate:;
+- (void)webView:didFailProvisionalNavigation:withError:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)controller;
+- (id)indicatorView;
+- (void)webView:didFailNavigation:withError:;
+- (void)setIndicatorView:;
+- (void)loadWebView;
+@end

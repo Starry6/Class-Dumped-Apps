@@ -1,0 +1,4 @@
+@interface BNCommonAdapter.BNHideContentRequest : BNRestfulClient.BNBaseRequest
+- (id)init;
+- (void).cxx_destruct;
+@end

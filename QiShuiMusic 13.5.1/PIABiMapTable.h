@@ -1,0 +1,38 @@
+@interface PIABiMapTable : NSObject
+@property (nonatomic) NSMapTable valueKeyReleaseObjMap;
+@property (nonatomic) NSMapTable keyValueReleaseObjMap;
+@property (nonatomic) NSRecursiveLock locker;
+@property (nonatomic) Q keyOptions;
+@property (nonatomic) Q valueOptions;
+@property (nonatomic) Q count;
+- (id)convertDictionary;
+- (id)initWithKeyOptions:objectOptions:capacity:;
+- (id)keyValueReleaseObjMap;
+- (id)locker;
+- (void)removeObjectForReleasableKey:;
+- (void)removeReleasableObject:;
+- (void)setKeyValueReleaseObjMap:;
+- (void)setLocker:;
+- (void)setValueKeyReleaseObjMap:;
+- (void)setValueOptions:;
+- (id)valueKeyReleaseObjMap;
+- (void)setObject:forKey:;
+- (unsigned long long)keyOptions;
+- (void)addEntriesFromDictionary:;
+- (void)setKeyOptions:;
+- (id)allKeys;
+- (void)removeAllObjects;
+- (void)removeObject:;
+- (id)keyForObject:;
+- (id)objectForKey:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)allObjects;
+- (unsigned long long)count;
+- (void)removeObjectForKey:;
+- (unsigned long long)valueOptions;
++ (id)strongToWeakObjectsMapTable;
++ (id)weakToStrongObjectsMapTable;
++ (id)weakToWeakObjectsMapTable;
++ (id)strongToStrongObjectsMapTable;
+@end

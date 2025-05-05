@@ -1,0 +1,21 @@
+@interface IESSaaSTIMThreadSafeMutableDictionary : NSMutableDictionary
+- (void)performLockedWithDictionary:;
+- (id)init;
+- (void)setObject:forKey:;
+- (void)setDictionary:;
+- (void)addEntriesFromDictionary:;
+- (id)allKeys;
+- (unsigned long long)countByEnumeratingWithState:objects:count:;
+- (void)removeAllObjects;
+- (id)keyEnumerator;
+- (id)objectForKey:;
+- (void).cxx_destruct;
+- (id)allValues;
+- (id)mutableCopyWithZone:;
+- (unsigned long long)count;
+- (void)removeObjectForKey:;
+- (BOOL)isEqual:;
+- (id)initWithCapacity:;
+- (id)copyWithZone:;
+- (id)initWithObjects:forKeys:;
+@end

@@ -1,0 +1,33 @@
+@interface MPStoreAssetInfoPlaybackCacheRequest : NSObject
+@property (nonatomic) Q accountID;
+@property (nonatomic) Q delegatedAccountID;
+@property (nonatomic) q requestType;
+@property (nonatomic) NSString redownloadParameters;
+@property (nonatomic) NSString cloudUniversalLibraryID;
+@property (nonatomic) q storeSubscriptionAdamID;
+@property (nonatomic) Q storeCloudID;
+@property (nonatomic) q storePurchasedAdamID;
+@property (nonatomic) q storeRadioAdamID;
+- (long long)requestType;
+- (id)cloudUniversalLibraryID;
+- (void)setRequestType:;
+- (unsigned long long)accountID;
+- (void)setAccountID:;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (long long)storePurchasedAdamID;
+- (long long)storeSubscriptionAdamID;
+- (unsigned long long)delegatedAccountID;
+- (void)setDelegatedAccountID:;
+- (id)redownloadParameters;
+- (void)setRedownloadParameters:;
+- (void)setCloudUniversalLibraryID:;
+- (void)setStoreSubscriptionAdamID:;
+- (unsigned long long)storeCloudID;
+- (void)setStoreCloudID:;
+- (void)setStorePurchasedAdamID:;
+- (long long)storeRadioAdamID;
+- (void)setStoreRadioAdamID:;
+@end

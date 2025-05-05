@@ -1,0 +1,34 @@
+@interface IESLiveSaaSAnchorRankEntranceHourView : UIView
+@property (nonatomic) BOOL showFirstAppearText;
+@property (nonatomic) @? cackedBlock;
+@property (nonatomic) CAGradientLayer gradientLayer;
+@property (nonatomic) IESLiveSaaSAnchorRankEntranceHourViewModel viewModel;
+@property (nonatomic) IESLiveSaaSAnchorRankEntranceMarqueeView marqueeView;
+@property (nonatomic) UIImageView icon;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setCackedBlock:;
+- (id)attributedStringWithContent:;
+- (void)bindViewModel;
+- (id)cackedBlock;
+- (BOOL)isMarqueeAnimating;
+- (void)setShowFirstAppearText:;
+- (BOOL)shouldMarquee;
+- (BOOL)showFirstAppearText;
+- (void)updateWithContent:scrollingContent:firstShowContent:duration:;
+- (void)setupConstraints;
+- (id)viewModel;
+- (void)layoutSubviews;
+- (id)gradientLayer;
+- (id)icon;
+- (id)initWithViewModel:;
+- (void)startAnimation;
+- (id)marqueeView;
+- (void)setIcon:;
+- (void).cxx_destruct;
+- (void)setMarqueeView:;
+- (void)setViewModel:;
+- (void)setGradientLayer:;
+@end

@@ -1,0 +1,31 @@
+@interface CKUploadRequestManagerResponseActionThrottler : NSObject
+@property (nonatomic) NSMutableDictionary responseActionToMetadata;
+@property (nonatomic) double throttlePeriod;
+@property (nonatomic) q minimumThrottleCount;
+@property (nonatomic) double minimumThrottleTime;
+@property (nonatomic) double maximumThrottleTime;
+@property (nonatomic) double minimumRetryTime;
+@property (nonatomic) NSSet actionsToThrottle;
+- (id)init;
+- (void)setMinimumRetryTime:;
+- (unsigned long long)totalThrottleCountForAction:;
+- (id)actionsToThrottle;
+- (void)setMinimumThrottleTime:;
+- (id)responseActionToMetadata;
+- (double)throttlePeriod;
+- (void)setResponseActionToMetadata:;
+- (void)gateResponseAction:isRetry:;
+- (void)setActionsToThrottle:;
+- (void)gateResponseAction:isRetry:currentTime:;
+- (void)setMinimumThrottleCount:;
+- (long long)minimumThrottleCount;
+- (void).cxx_destruct;
+- (double)minimumRetryTime;
+- (double)minimumThrottleTime;
+- (void)setMaximumThrottleTime:;
+- (double)throttleTimeForCount:isRetry:;
+- (double)maximumThrottleTime;
+- (void)setThrottlePeriod:;
++ (void)sleep:;
++ (double)currentTime;
+@end

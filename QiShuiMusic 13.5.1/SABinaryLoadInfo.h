@@ -1,0 +1,37 @@
+@interface SABinaryLoadInfo : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) SABinary binary;
+@property (nonatomic) SASegment segment;
+@property (nonatomic) Q loadAddress;
+@property (nonatomic) Q length;
+@property (nonatomic) BOOL isInKernelAddressSpace;
+@property (nonatomic) Q textSegmentLoadAddress;
+- (BOOL)addSelfToBuffer:bufferLength:withCompletedSerializationDictionary:;
+- (BOOL)isInKernelAddressSpace;
+- (void)addSelfToSerializationDictionary:;
+- (void)populateReferencesUsingBuffer:bufferLength:andDeserializationDictionary:andDataBufferDictionary:;
+- (id)debugDescription;
+- (unsigned long long)sizeInBytesForSerializedVersion;
+- (void)writeJSONDictionaryEntriesToStream:;
+- (unsigned long long)loadAddress;
+- (void).cxx_destruct;
+- (id)binary;
+- (id)segment;
+- (unsigned long long)length;
+- (id)initWithBinary:segment:loadAddress:;
+- (id)instructionAtOffsetIntoLoadInfo:;
+- (unsigned long long)textSegmentLoadAddress;
++ (id)newInstanceWithoutReferencesFromSerializedBuffer:bufferLength:;
++ (id)classDictionaryKey;
++ (id)binaryLoadInfoForAddress:inBinaryLoadInfos:;
++ (id)binaryLoadInfoForAddress:inBinaryLoadInfos:libraryCache:;
++ (id)binaryLoadInfoForLiveProcessWithPid:;
++ (id)binaryLoadInfoForLiveProcessWithPid:dataGatheringOptions:;
+@end

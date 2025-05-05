@@ -1,0 +1,32 @@
+@interface IDSQRProtoSubscribedStream : PBCodable
+@property (nonatomic) BOOL wildcardSubscription;
+@property (nonatomic) Q peerParticipantId;
+@property (nonatomic) Q peerStreamIdsCount;
+@property (nonatomic) ^I peerStreamIds;
+@property (nonatomic) BOOL hasIsSeamlessTransition;
+@property (nonatomic) BOOL isSeamlessTransition;
+- (void)dealloc;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (unsigned long long)peerStreamIdsCount;
+- (id)peerStreamIds;
+- (void)clearPeerStreamIds;
+- (void)addPeerStreamIds:;
+- (unsigned int)peerStreamIdsAtIndex:;
+- (void)setPeerStreamIds:count:;
+- (void)setIsSeamlessTransition:;
+- (void)setHasIsSeamlessTransition:;
+- (BOOL)hasIsSeamlessTransition;
+- (BOOL)wildcardSubscription;
+- (void)setWildcardSubscription:;
+- (unsigned long long)peerParticipantId;
+- (void)setPeerParticipantId:;
+- (BOOL)isSeamlessTransition;
+@end

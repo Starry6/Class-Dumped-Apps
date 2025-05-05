@@ -1,0 +1,35 @@
+@interface DTFBaseViewController : UIViewController
+@property (nonatomic) BOOL isRotation;
+@property (nonatomic) APBDTFUploadToastView uploadView;
+@property (nonatomic) BOOL isClose;
+@property (nonatomic) NSString platformInfo;
+@property (nonatomic) UIActivityIndicatorView activityIndicatorView;
+@property (nonatomic) APBTaskContext context;
+- (BOOL)isClose;
+- (void)addWebGuideView:;
+- (void)dismissLoadingView;
+- (void)exitWithResult:failReason:retCodeSub:retMessageSub:;
+- (id)interfaceOrientationForStr;
+- (id)platformInfo;
+- (void)setIsClose:;
+- (void)setPlatformInfo:;
+- (void)setUploadView:;
+- (id)uploadView;
+- (BOOL)shouldAutorotate;
+- (long long)preferredInterfaceOrientationForPresentation;
+- (id)init;
+- (long long)preferredStatusBarStyle;
+- (void)dealloc;
+- (id)context;
+- (void)viewDidDisappear:;
+- (void).cxx_destruct;
+- (unsigned long long)supportedInterfaceOrientations;
+- (void)setContext:;
+- (void)viewDidLayoutSubviews;
+- (void)viewDidLoad;
+- (id)activityIndicatorView;
+- (void)setActivityIndicatorView:;
+- (void)showLoadingView;
+- (BOOL)isRotation;
+- (void)setIsRotation:;
+@end

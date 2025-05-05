@@ -1,0 +1,29 @@
+@interface LAErrorHelper : NSObject
++ (id)parameterErrorWithMessage:;
++ (id)errorWithCode:withUnderlyingErrors:;
++ (id)errorWithCode:;
++ (BOOL)storageError:hasCode:;
++ (id)parameterErrorForMissingOrInvalidObject:name:;
++ (BOOL)error:hasCodeFromArray:;
++ (id)errorWithCode:message:suberror:;
++ (BOOL)error:hasCode:subcode:;
++ (id)missingEntitlementError:;
++ (id)errorPlatformDoesNotSupportAction:;
++ (id)errorWithCode:message:;
++ (id)errorWithCode:message:moreInfo:;
++ (id)storageErrorWithCode:message:suberror:;
++ (id)redactInternalError:;
++ (id)silentInternalErrorWithMessage:;
++ (id)errorNotSupported;
++ (id)_errorNotSupportedAction:on:;
++ (id)errorDeviceDoesNotSupportAction:;
++ (BOOL)error:hasCode:;
++ (id)errorWithCode:userInfo:;
++ (id)internalErrorWithMessage:;
++ (id)storageErrorWithCode:message:;
++ (id)errorWithCode:subcode:message:;
++ (id)internalErrorWithMessage:suberror:;
++ (id)localizedStringForError:;
++ (void)raiseExceptionOnError:;
++ (id)xctErrorWithMessage:suberror:;
+@end

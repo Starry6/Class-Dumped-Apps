@@ -1,0 +1,31 @@
+@interface IESECRelationTagContainerModel : MTLModel
+@property (nonatomic) q type;
+@property (nonatomic) NSArray subTags;
+@property (nonatomic) IESECRelationTagContainerUIConfigModel containerUI;
+@property (nonatomic) q priority;
+@property (nonatomic) NSDictionary showEventParams;
+@property (nonatomic) NSDictionary clickEventParams;
+@property (nonatomic) NSDictionary extraInfo;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)subTags;
+- (void)setContainerUI:;
+- (id)showEventParams;
+- (id)clickEventParams;
+- (id)containerUI;
+- (void)setClickEventParams:;
+- (void)setExtraInfo:;
+- (void)setShowEventParams:;
+- (void)setSubTags:;
+- (void)setPriority:;
+- (void)setType:;
+- (long long)type;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (long long)priority;
+- (id)extraInfo;
++ (id)subTagsJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

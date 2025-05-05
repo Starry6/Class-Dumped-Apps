@@ -1,0 +1,2 @@
+@interface SNAudioUnitRegistration : NSObject
+@end

@@ -1,0 +1,32 @@
+@interface IESLiveDanmakuNodeBaseStrategy : NSObject
+@property (nonatomic) @ metaData;
+@property (nonatomic) IESLiveEmojiTextParser emojiTextParser;
+@property (nonatomic) <HTSLiveTemplateProviderAdapter> templateProvider;
+@property (nonatomic) <IESLiveRoomServiceAdapter> room;
+@property (nonatomic) <IESLiveUserService> userService;
+@property (nonatomic) <IESLiveWebImageService> webImageService;
+@property (nonatomic) <IESLiveDanmakuEngineSettingsProtocol> danmakuSettings;
+- (void)AsyncBuildNode:;
+- (id)danmakuSettings;
+- (id)emojiTextParser;
+- (void)setUserService:;
+- (id)webImageService;
+- (id)buildAttrCreateParamsWithDisplayText:;
+- (long long)buildingMode;
+- (id)initWithMetaData:diContext:;
+- (void)refreshNode:;
+- (void)setDanmakuSettings:;
+- (void)setEmojiTextParser:;
+- (void)setSelfAwarenessStyleForNode:;
+- (void)setWebImageService:;
+- (id)userService;
+- (BOOL)filter;
+- (void)setMetaData:;
+- (id)metaData;
+- (void).cxx_destruct;
+- (id)room;
+- (void)setRoom:;
+- (id)buildNode;
+- (id)templateProvider;
+- (void)setTemplateProvider:;
+@end

@@ -1,0 +1,31 @@
+@interface SOAuthorizationParametersCore : NSObject
+@property (nonatomic) NSString operation;
+@property (nonatomic) NSURL url;
+@property (nonatomic) NSDictionary httpHeaders;
+@property (nonatomic) NSData httpBody;
+@property (nonatomic) NSData auditTokenData;
+@property (nonatomic) BOOL useInternalExtensions;
+@property (nonatomic) q responseCode;
+@property (nonatomic) BOOL cfNetworkInterception;
+@property (nonatomic) NSString impersonationBundleIdentifier;
+- (id)operation;
+- (id)url;
+- (id)init;
+- (id)httpHeaders;
+- (id)auditTokenData;
+- (long long)responseCode;
+- (void)setOperation:;
+- (id)impersonationBundleIdentifier;
+- (void)setHttpHeaders:;
+- (void)setUrl:;
+- (id)httpBody;
+- (BOOL)isCFNetworkInterception;
+- (BOOL)useInternalExtensions;
+- (void)setUseInternalExtensions:;
+- (void)setCfNetworkInterception:;
+- (void)setImpersonationBundleIdentifier:;
+- (void).cxx_destruct;
+- (void)setAuditTokenData:;
+- (void)setResponseCode:;
+- (void)setHttpBody:;
+@end

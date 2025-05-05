@@ -1,0 +1,36 @@
+@interface INQueryHealthSampleIntent : INIntent
+@property (nonatomic) q objectType;
+@property (nonatomic) NSArray recordDates;
+@property (nonatomic) HKUnit unit;
+@property (nonatomic) q questionType;
+@property (nonatomic) NSArray thresholdValues;
+@property (nonatomic) q expectedResultType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)_dictionaryRepresentation;
+- (long long)objectType;
+- (void)setUnit:;
+- (void)_setMetadata:;
+- (id)unit;
+- (id)domain;
+- (void)setDomain:;
+- (id)_metadata;
+- (id)_typedBackingStore;
+- (void)_redactForMissingPrivacyEntitlementOptions:containingAppBundleId:;
+- (id)verb;
+- (void)setVerb:;
+- (id)parametersByName;
+- (void)setParametersByName:;
+- (long long)expectedResultType;
+- (void)setExpectedResultType:;
+- (void)setObjectType:;
+- (long long)questionType;
+- (void)setQuestionType:;
+- (id)recordDates;
+- (void)setRecordDates:;
+- (id)thresholdValues;
+- (void)setThresholdValues:;
+- (id)initWithObjectType:recordDates:unit:questionType:thresholdValues:expectedResultType:;
+@end

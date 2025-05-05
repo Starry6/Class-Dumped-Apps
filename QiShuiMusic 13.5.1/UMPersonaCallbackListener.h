@@ -1,0 +1,34 @@
+@interface UMPersonaCallbackListener : NSObject
+@property (nonatomic) NSString machServiceName;
+@property (nonatomic) NSMutableSet xpcConnections;
+@property (nonatomic) NSXPCListener xpcListener;
+@property (nonatomic) @? personaUpdateCallbackHandler;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)bubbleDidPop;
+- (void)userSwitchTaskListDidUpdate;
+- (id)xpcConnections;
+- (id)init;
+- (void)personaUpdateCallbackForMachServiceCompletionHandler:;
+- (void)_tearDownConnectionToUMServerWithConnection:;
+- (id)machServiceName;
+- (void)readyToSwitchToUser:completionHandler:;
+- (void)deviceLoginSessionStateDidUpdate;
+- (void)setXpcListener:;
+- (void)readyToSwitchToLoginSession:completionHandler:;
+- (void)setXpcConnections:;
+- (id)xpcListener;
+- (id)personaUpdateCallbackHandler;
+- (BOOL)listener:shouldAcceptNewConnection:;
+- (void).cxx_destruct;
+- (void)personaListDidUpdateCompletionHandler:;
+- (void)setMachServiceName:;
+- (void)willSwitchToUser:completionHandler:;
+- (void)uploadContentWithCompletionHandler:;
+- (void)setPersonaUpdateCallbackHandler:;
+- (id)setupPersonaCallbackMachService:callbackHandler:;
+- (void)_setUpUMServerXPCConnectionIfNeeded:;
++ (id)sharedServer;
+@end

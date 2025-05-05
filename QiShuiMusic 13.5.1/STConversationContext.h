@@ -1,0 +1,33 @@
+@interface STConversationContext : NSObject
+@property (nonatomic) BOOL allowedByScreenTime;
+@property (nonatomic) NSDictionary allowedByContactsHandle;
+@property (nonatomic) BOOL applicationCurrentlyLimited;
+@property (nonatomic) BOOL shouldBeAllowedByScreenTimeWhenLimited;
+@property (nonatomic) BOOL shouldBeAllowedDuringGeneralScreenTime;
+@property (nonatomic) NSDictionary contactsByHandle;
+@property (nonatomic) NSArray whitelistedHandles;
+@property (nonatomic) Q currentApplicationState;
+@property (nonatomic) BOOL emergencyModeEnabled;
+- (id)init;
+- (BOOL)emergencyModeEnabled;
+- (void).cxx_destruct;
+- (unsigned long long)currentApplicationState;
+- (void)setEmergencyModeEnabled:;
+- (void)setCurrentApplicationState:;
+- (id)allowedByContactsHandle;
+- (BOOL)allowedByScreenTime;
+- (void)setAllowedByScreenTime:;
+- (BOOL)applicationCurrentlyLimited;
+- (BOOL)shouldBeAllowedByScreenTimeWhenLimited;
+- (void)updateShouldBeAllowedDuringGeneralScreenTime:shouldBeAllowedByScreenTimeWhenLimited:currentApplicationState:emergencyModeEnabled:;
+- (void)updateForThirdPartyApplicationState:;
+- (void)setAllowedByContactsHandle:;
+- (void)setApplicationCurrentlyLimited:;
+- (void)setShouldBeAllowedByScreenTimeWhenLimited:;
+- (BOOL)shouldBeAllowedDuringGeneralScreenTime;
+- (void)setShouldBeAllowedDuringGeneralScreenTime:;
+- (id)contactsByHandle;
+- (void)setContactsByHandle:;
+- (id)whitelistedHandles;
+- (void)setWhitelistedHandles:;
+@end

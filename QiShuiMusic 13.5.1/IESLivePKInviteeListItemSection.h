@@ -1,0 +1,30 @@
+@interface IESLivePKInviteeListItemSection : NSObject
+@property (nonatomic) q sectionNumber;
+@property (nonatomic) NSAttributedString sectionName;
+@property (nonatomic) NSInteger sectionType;
+@property (nonatomic) NSInteger recommendStatus;
+@property (nonatomic) NSArray list;
+@property (nonatomic) BOOL showTips;
+@property (nonatomic) NSString filterTips;
+@property (nonatomic) BOOL showFilterButton;
+@property (nonatomic) BOOL needHiddenSectionHeaderView;
+- (int)recommendStatus;
+- (void)setNeedHiddenSectionHeaderView:;
+- (id)filterTips;
+- (BOOL)needHiddenSectionHeaderView;
+- (void)setFilterTips:;
+- (void)setRecommendStatus:;
+- (void)setShowFilterButton:;
+- (void)setShowTips:;
+- (BOOL)showFilterButton;
+- (BOOL)showTips;
+- (int)sectionType;
+- (void)setSectionType:;
+- (void)setList:;
+- (id)list;
+- (void).cxx_destruct;
+- (id)sectionName;
+- (void)setSectionName:;
+- (long long)sectionNumber;
+- (void)setSectionNumber:;
+@end

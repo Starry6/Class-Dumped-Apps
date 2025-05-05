@@ -1,0 +1,35 @@
+@interface UIViewControllerBuiltinTransitionViewAnimator : NSObject
+@property (nonatomic) @ delegate;
+@property (nonatomic) UIView toView;
+@property (nonatomic) UIView fromView;
+@property (nonatomic) BOOL removeFromView;
+@property (nonatomic) NSInteger transition;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)animateTransition:;
+- (void)setTransition:;
+- (int)transition;
+- (BOOL)transitionViewShouldUseViewControllerCallbacks;
+- (double)transitionDuration:;
+- (id)toView;
+- (void)transitionView:startCustomTransitionWithDuration:;
+- (BOOL)removeFromView;
+- (void)setDelegate:;
+- (id)fromView;
+- (id)_adjustOrigin:givenOtherOrigin:forTransition:;
+- (id)transitionView:beginOriginForToView:forTransition:defaultOrigin:;
+- (void)setToView:;
+- (id)delegate;
+- (double)durationForTransition:;
+- (void).cxx_destruct;
+- (void)transitionViewDidStart:;
+- (id)transitionView:endOriginForToView:forTransition:defaultOrigin:;
+- (void)transitionViewDidComplete:fromView:toView:removeFromView:;
+- (void)setFromView:;
+- (id)initWithTransition:;
+- (void)_prepareKeyboardForTransition:fromView:;
+- (void)setRemoveFromView:;
+- (id)transitionView:endOriginForFromView:forTransition:defaultOrigin:;
+@end

@@ -1,0 +1,2 @@
+@interface BLSInvalidationDurationAttribute : BLSDurationAttribute
+@end

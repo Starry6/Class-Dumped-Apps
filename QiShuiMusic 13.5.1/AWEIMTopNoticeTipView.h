@@ -1,0 +1,32 @@
+@interface AWEIMTopNoticeTipView : UIView
+@property (nonatomic) UILabel tipLabel;
+@property (nonatomic) UIButton closeButton;
+@property (nonatomic) UIButton actionButton;
+@property (nonatomic) UIView lineView;
+@property (nonatomic) NSString tipText;
+@property (nonatomic) NSString actionText;
+@property (nonatomic) @? cancelClickBlock;
+@property (nonatomic) @? actionClickBlock;
+- (id)tipText;
+- (id)actionClickBlock;
+- (id)cancelClickBlock;
+- (void)didClickActionButton:;
+- (void)didClickCloseButton:;
+- (id)initWithTip:actionText:;
+- (void)setActionClickBlock:;
+- (void)setCancelClickBlock:;
+- (void)setTipText:;
+- (void)layoutSubviews;
+- (void)setup;
+- (void).cxx_destruct;
+- (id)tipLabel;
+- (void)setTipLabel:;
+- (id)lineView;
+- (void)setLineView:;
+- (id)actionButton;
+- (void)setActionButton:;
+- (id)closeButton;
+- (void)setCloseButton:;
+- (id)actionText;
+- (void)setActionText:;
+@end

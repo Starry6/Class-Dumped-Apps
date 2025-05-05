@@ -1,0 +1,2 @@
+@interface OBFlow : NSObject
+@end

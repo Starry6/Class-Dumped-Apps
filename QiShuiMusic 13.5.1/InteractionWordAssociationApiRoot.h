@@ -1,0 +1,2 @@
+@interface InteractionWordAssociationApiRoot : GPBRootObject
+@end

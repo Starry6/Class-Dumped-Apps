@@ -1,0 +1,37 @@
+@interface AWDWiFiMetricsManagerBlacklistedNetworkInfo : PBCodable
+@property (nonatomic) BOOL hasSsidHash;
+@property (nonatomic) NSString ssidHash;
+@property (nonatomic) BOOL hasNetworkFlags;
+@property (nonatomic) I networkFlags;
+@property (nonatomic) BOOL hasReserverdInfo;
+@property (nonatomic) I reserverdInfo;
+@property (nonatomic) NSMutableArray blacklistingRecords;
+- (void)dealloc;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (unsigned int)networkFlags;
+- (void)setNetworkFlags:;
+- (void)setHasNetworkFlags:;
+- (BOOL)hasNetworkFlags;
+- (BOOL)hasSsidHash;
+- (void)setReserverdInfo:;
+- (void)setHasReserverdInfo:;
+- (BOOL)hasReserverdInfo;
+- (void)clearBlacklistingRecords;
+- (void)addBlacklistingRecord:;
+- (unsigned long long)blacklistingRecordsCount;
+- (id)blacklistingRecordAtIndex:;
+- (id)ssidHash;
+- (void)setSsidHash:;
+- (unsigned int)reserverdInfo;
+- (id)blacklistingRecords;
+- (void)setBlacklistingRecords:;
++ (Class)blacklistingRecordType;
+@end

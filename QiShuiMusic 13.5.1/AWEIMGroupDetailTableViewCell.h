@@ -1,0 +1,38 @@
+@interface AWEIMGroupDetailTableViewCell : UITableViewCell
+@property (nonatomic) q type;
+@property (nonatomic) AWEIMMessageConversation conversation;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel detailLabel;
+@property (nonatomic) UIImageView arrowImageView;
+@property (nonatomic) AWESettingSwitch aSwitch;
+@property (nonatomic) UIView dotLayer;
+@property (nonatomic) @? switchBlock;
+- (void)setSwitchBlock:;
+- (void)alertWhenSetMsgInbox;
+- (void)cellSwitchDidClick;
+- (void)changeSwitchValue;
+- (void)configWithConversation:type:;
+- (void)setDotLayer:;
+- (id)switchBlock;
+- (void)switchControlDidChanged:;
+- (id)titleWithCellType;
+- (void)updateLayout;
+- (id)initWithStyle:reuseIdentifier:;
+- (void)setTitleLabel:;
+- (void)setType:;
+- (id)conversation;
+- (void)setHighlighted:animated:;
+- (long long)type;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setConversation:;
+- (void)setupUI;
+- (id)detailLabel;
+- (id)aSwitch;
+- (void)setASwitch:;
+- (void)setDetailLabel:;
+- (id)dotLayer;
+- (id)arrowImageView;
+- (void)setArrowImageView:;
++ (double)heigthOfCellWithCellWidth:conversation:type:;
+@end

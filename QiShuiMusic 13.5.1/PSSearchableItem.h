@@ -1,0 +1,38 @@
+@interface PSSearchableItem : NSObject
+@property (nonatomic) NSString url;
+@property (nonatomic) NSString name;
+@property (nonatomic) NSString classIdentifier;
+@property (nonatomic) NSString contentDescription;
+@property (nonatomic) NSArray keywords;
+@property (nonatomic) NSString category;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) NSString bundleID;
+@property (nonatomic) NSNumber rankingHint;
+@property (nonatomic) NSArray requiredCapabilities;
+@property (nonatomic) NSArray requiredCapabilitiesOr;
+- (id)keywords;
+- (void)setKeywords:;
+- (id)contentDescription;
+- (id)url;
+- (void)setName:;
+- (id)identifier;
+- (id)requiredCapabilities;
+- (void)setUrl:;
+- (void)setContentDescription:;
+- (void)setCategory:;
+- (void).cxx_destruct;
+- (id)classIdentifier;
+- (id)name;
+- (id)bundleID;
+- (void)setIdentifier:;
+- (id)category;
+- (void)setBundleID:;
+- (void)setRankingHint:;
+- (id)rankingHint;
+- (void)setRequiredCapabilities:;
+- (id)toCSSearchableItem;
+- (id)toManifestDictionary;
+- (void)setClassIdentifier:;
+- (id)requiredCapabilitiesOr;
+- (void)setRequiredCapabilitiesOr:;
+@end

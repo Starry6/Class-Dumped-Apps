@@ -1,0 +1,30 @@
+@interface MRLanguageOptionGroup : NSObject
+@property (nonatomic) _MRLanguageOptionGroupProtobuf protobuf;
+@property (nonatomic) BOOL allowsEmptySelection;
+@property (nonatomic) BOOL hasAllowsEmptySelection;
+@property (nonatomic) NSArray languageOptions;
+@property (nonatomic) MRLanguageOption defaultLanguageOption;
+@property (nonatomic) NSData data;
+@property (nonatomic) NSDictionary dictionaryRepresentation;
+- (id)languageOptions;
+- (id)initWithProtobuf:;
+- (id)data;
+- (id)protobuf;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)allowsEmptySelection;
+- (id)defaultLanguageOption;
+- (void)setDefaultLanguageOption:;
+- (void)setLanguageOptions:;
+- (id)initWithLanguageOptions:defaultLanguageOption:allowsEmptySelection:;
+- (void)setAllowsEmptySelection:;
+- (BOOL)hasAllowsEmptySelection;
+- (void)setHasAllowsEmptySelection:;
++ (BOOL)supportsSecureCoding;
+@end

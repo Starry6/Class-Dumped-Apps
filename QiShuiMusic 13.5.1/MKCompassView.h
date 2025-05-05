@@ -1,0 +1,38 @@
+@interface MKCompassView : UIView
+@property (nonatomic) double mapHeading;
+@property (nonatomic) q compassViewSize;
+@property (nonatomic) q compassViewStyle;
+@property (nonatomic) double yaw;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)_commonInit;
+- (double)yaw;
+- (void)dealloc;
+- (id)intrinsicContentSize;
+- (void)layoutSubviews;
+- (void)_updateStyle;
+- (id)initWithCoder:;
+- (id)initWithFrame:;
+- (void)traitCollectionDidChange:;
+- (void).cxx_destruct;
+- (void)movedToWindow:;
+- (void)setYaw:;
+- (long long)compassViewSize;
+- (long long)compassViewStyle;
+- (void)updateLocale:;
+- (double)mapHeading;
+- (void)setMapHeading:;
+- (void)_setupImageView:;
+- (void)_adaptCompassStyleToUserInterfaceStyle;
+- (void)setCompassViewSize:style:;
+- (void)_updateLayerForCurrentSizeAndStyle;
+- (void)_updateImageForCompassDirection:;
+- (id)_compassDirectionImageForKey:sizeParams:styleParams:scale:;
+- (BOOL)isPointInNorthEastHalf:;
+- (id)stringForCompassPoint:;
+- (void)_populateCompassPointLocalizedAbbreviationsArray;
++ (id)_parameterForStyle:;
++ (id)_parameterForSize:;
+@end

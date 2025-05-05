@@ -1,0 +1,36 @@
+@interface BDStrategyStore : NSObject
+@property (nonatomic) BOOL isLoadStrategyFinished;
+@property (nonatomic) NSDictionary strategiesMap;
+@property (nonatomic) NSString signature;
+@property (nonatomic) # selectCacheImpl;
+- (void)__loadStrategy:;
+- (Class)selectCacheImpl;
+- (void)__preprocessStrategy:;
+- (BOOL)enableSelectCacheInSet:;
+- (id)findInstructionInRule:;
+- (id)hitConditionWithSetName:;
+- (BOOL)isLoadStrategyFinished;
+- (id)jsonFormat;
+- (void)loadStrategy:;
+- (id)parseStrategy:;
+- (void)preprocessStrategy:;
+- (id)reportParamsInSet:;
+- (BOOL)ruleExecBreakInSet:;
+- (id)ruleGroupGraphWithName:inSet:;
+- (void)setIsLoadStrategyFinished:;
+- (void)setStrategiesMap:;
+- (BOOL)shouldUseRuleFFFInSet:;
+- (id)storeWithName:;
+- (id)strategiesMap;
+- (id)strategyMapGraphInSet:;
+- (id)strategyMapKeysInSet:;
+- (id)strategyMapRuleInSet:;
+- (id)strategyMapRuleMD5Map;
+- (id)strategyRuleWithName:inSet:;
+- (BOOL)strategySelectBreakInSet:;
+- (void)setSignature:;
+- (id)init;
+- (id)signature;
+- (void)setup;
+- (void).cxx_destruct;
+@end

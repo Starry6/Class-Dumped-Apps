@@ -1,0 +1,2 @@
+@interface HTSLiveEcomFansClubRoot : GPBRootObject
+@end

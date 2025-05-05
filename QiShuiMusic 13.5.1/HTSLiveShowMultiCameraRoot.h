@@ -1,0 +1,2 @@
+@interface HTSLiveShowMultiCameraRoot : GPBRootObject
+@end

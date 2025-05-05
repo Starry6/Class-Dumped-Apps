@@ -1,0 +1,2 @@
+@interface PropConsumeApiRoot : GPBRootObject
+@end

@@ -1,0 +1,32 @@
+@interface MBContainer : NSObject
+@property (nonatomic) NSString identifier;
+@property (nonatomic) NSInteger containerType;
+@property (nonatomic) NSString containerTypeString;
+@property (nonatomic) NSString containerDir;
+@property (nonatomic) NSString safeHarborDir;
+@property (nonatomic) NSDate datePlacedInSafeHarbor;
+@property (nonatomic) BOOL isSystemContainer;
+@property (nonatomic) BOOL isSystemSharedContainer;
+@property (nonatomic) BOOL safeHarbor;
+- (void)dealloc;
+- (id)identifier;
+- (unsigned long long)hash;
+- (id)containerDir;
+- (id)initWithPropertyList:;
+- (id)domain;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (int)containerType;
+- (BOOL)isSafeHarbor;
+- (BOOL)isSystemContainer;
+- (BOOL)isSystemSharedContainer;
+- (id)containerTypeString;
+- (void)setContainerDir:;
+- (id)safeHarborDir;
+- (id)datePlacedInSafeHarbor;
+- (void)setDatePlacedInSafeHarbor:;
+- (id)propertyListForSafeHarborInfo;
+- (id)propertyListForBackupProperties;
++ (id)containerWithDomainName:;
++ (id)containerWithPropertyList:;
+@end

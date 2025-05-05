@@ -1,0 +1,33 @@
+@interface CXServiceClient : NSObject
+@property (nonatomic) q backgroundModeOptions;
+@property (nonatomic) BSServiceConnection<BSServiceConnectionHost> connection;
+@property (nonatomic) <CXServiceClientDelegate> delegate;
+@property (nonatomic) {?=[8I]} auditToken;
+@property (nonatomic) BOOL connected;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) NSString bundleIdentifier;
+@property (nonatomic) NSURL bundleURL;
+@property (nonatomic) NSString localizedName;
+@property (nonatomic) BOOL permittedToUseBluetoothAccessories;
+@property (nonatomic) BOOL permittedToUsePrivateAPI;
+@property (nonatomic) BOOL permittedToUsePublicAPI;
+@property (nonatomic) NSInteger processIdentifier;
+- (id)bundleIdentifier;
+- (id)bundleURL;
+- (void)setDelegate:;
+- (id)identifier;
+- (id)localizedName;
+- (BOOL)isPermittedToUseBluetoothAccessories;
+- (id)auditToken;
+- (int)processIdentifier;
+- (BOOL)isPermittedToUsePrivateAPI;
+- (id)delegate;
+- (id)connection;
+- (void).cxx_destruct;
+- (BOOL)isConnected;
+- (BOOL)isPermittedToUsePublicAPI;
+- (id)description;
+- (id)initWithConnection:;
+- (void)invalidate;
+- (long long)backgroundModeOptions;
+@end

@@ -1,0 +1,2 @@
+@interface IESLiveSaaSPBIESLiveSaaSPBChangeMultiPkTeamRoot : GPBRootObject
+@end

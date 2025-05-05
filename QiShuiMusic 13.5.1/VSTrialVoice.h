@@ -1,0 +1,37 @@
+@interface VSTrialVoice : NSObject
+@property (nonatomic) NSString path;
+@property (nonatomic) NSString language;
+@property (nonatomic) NSString name;
+@property (nonatomic) q type;
+@property (nonatomic) q footprint;
+@property (nonatomic) q gender;
+@property (nonatomic) Q version;
+@property (nonatomic) Q assetSize;
+@property (nonatomic) q compatibilityVersion;
+- (id)path;
+- (void)setAssetSize:;
+- (void)setFootprint:;
+- (void)setName:;
+- (long long)gender;
+- (void)setLanguage:;
+- (id)language;
+- (void)setCompatibilityVersion:;
+- (long long)compatibilityVersion;
+- (void)setVersion:;
+- (unsigned long long)version;
+- (void)setPath:;
+- (void)setGender:;
+- (id)initWithFactorName:;
+- (void)setType:;
+- (double)preferenceScore;
+- (long long)footprint;
+- (unsigned long long)assetSize;
+- (id)initWithLanguage:name:;
+- (long long)type;
+- (void).cxx_destruct;
+- (id)description;
+- (id)factorName;
+- (id)name;
+- (BOOL)isLocal;
+- (id)initWithFactorLevel:;
+@end

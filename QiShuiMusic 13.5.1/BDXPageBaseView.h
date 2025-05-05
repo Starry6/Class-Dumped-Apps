@@ -1,0 +1,38 @@
+@interface BDXPageBaseView : UIView
+@property (nonatomic) BOOL viewDidLoad;
+@property (nonatomic) NSArray titles;
+@property (nonatomic) BDXCategoryBaseView categoryView;
+@property (nonatomic) <BDXCategoryViewListContainer> listContainerView;
+@property (nonatomic) double categoryViewHeight;
+@property (nonatomic) <BDXPageBaseViewDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)categoryView:didClickSelectedItemAtIndex:;
+- (void)categoryView:didEndDisplayingCell:forItemAtIndexPath:;
+- (void)categoryView:didScrollSelectedItemAtIndex:;
+- (void)categoryView:didSelectedItemAtIndex:;
+- (void)categoryView:willDisplayCell:forItemAtIndexPath:;
+- (double)categoryViewHeight;
+- (id)listContainerView;
+- (id)listContainerView:initListForIndex:;
+- (void)listContainerViewDidScroll:;
+- (long long)numberOfListsInlistContainerView:;
+- (id)preferredCategoryView;
+- (double)preferredCategoryViewHeight;
+- (void)setCategoryViewHeight:;
+- (void)setListContainerView:;
+- (void)layoutSubviews;
+- (void)setDelegate:;
+- (id)initWithFrame:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)loadView;
+- (BOOL)viewDidLoad;
+- (id)titles;
+- (void)setTitles:;
+- (id)categoryView;
+- (void)setCategoryView:;
+- (void)setViewDidLoad:;
+@end

@@ -1,0 +1,2 @@
+@interface FeedFeedApiRoot : GPBRootObject
+@end

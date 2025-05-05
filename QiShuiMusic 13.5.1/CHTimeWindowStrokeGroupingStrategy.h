@@ -1,0 +1,5 @@
+@interface CHTimeWindowStrokeGroupingStrategy : CHStrokeGroupingStrategy
+- (id)updatedGroupingResult:byAddingStrokes:removingStrokeIdentifiers:stableStrokeIdentifiers:allSubstrokesByStrokeIdentifier:withCancellationBlock:;
+- (id)recognizableDrawingForStrokeGroup:translationVector:originalDrawing:orderedStrokesIDs:rescalingFactor:;
+- (id)_timeSortedStrokesForIdentifiers:;
+@end

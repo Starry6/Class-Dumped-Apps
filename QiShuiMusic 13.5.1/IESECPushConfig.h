@@ -1,0 +1,34 @@
+@interface IESECPushConfig : NSObject
+@property (nonatomic) NSInteger appId;
+@property (nonatomic) NSInteger fpid;
+@property (nonatomic) q deviceId;
+@property (nonatomic) q installId;
+@property (nonatomic) BOOL enableAppStateReport;
+@property (nonatomic) NSString appKey;
+@property (nonatomic) NSString sessionId;
+@property (nonatomic) NSDictionary customHeaders;
+@property (nonatomic) NSDictionary customParams;
+@property (nonatomic) NSArray urls;
+- (id)appKey;
+- (id)customParams;
+- (BOOL)enableAppStateReport;
+- (int)fpid;
+- (long long)installId;
+- (void)setAppKey:;
+- (void)setCustomParams:;
+- (void)setEnableAppStateReport:;
+- (void)setFpid:;
+- (void)setInstallId:;
+- (void)setSessionId:;
+- (id)sessionId;
+- (long long)deviceId;
+- (void)setDeviceId:;
+- (id)urls;
+- (int)appId;
+- (void)setAppId:;
+- (void)setUrls:;
+- (void).cxx_destruct;
+- (id)customHeaders;
+- (void)setCustomHeaders:;
++ (id)defaultConfig;
+@end

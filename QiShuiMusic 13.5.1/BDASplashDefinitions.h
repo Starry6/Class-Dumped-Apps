@@ -1,0 +1,2 @@
+@interface BDASplashDefinitions : NSObject
+@end

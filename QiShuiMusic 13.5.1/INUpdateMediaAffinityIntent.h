@@ -1,0 +1,31 @@
+@interface INUpdateMediaAffinityIntent : INIntent
+@property (nonatomic) NSArray mediaItems;
+@property (nonatomic) INMediaSearch mediaSearch;
+@property (nonatomic) q affinityType;
+@property (nonatomic) INPrivateUpdateMediaAffinityIntentData privateUpdateMediaAffinityIntentData;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)_dictionaryRepresentation;
+- (void)_setMetadata:;
+- (id)domain;
+- (void)setDomain:;
+- (id)_metadata;
+- (id)mediaItems;
+- (id)_typedBackingStore;
+- (void)_redactForMissingPrivacyEntitlementOptions:containingAppBundleId:;
+- (id)verb;
+- (void)setVerb:;
+- (id)parametersByName;
+- (void)setParametersByName:;
+- (void)setMediaItems:;
+- (id)mediaSearch;
+- (void)setMediaSearch:;
+- (BOOL)_intents_isExemptFromMulitWindowRequirementForInAppHandling;
+- (long long)affinityType;
+- (void)setAffinityType:;
+- (id)privateUpdateMediaAffinityIntentData;
+- (void)setPrivateUpdateMediaAffinityIntentData:;
+- (id)initWithMediaItems:mediaSearch:affinityType:;
+@end

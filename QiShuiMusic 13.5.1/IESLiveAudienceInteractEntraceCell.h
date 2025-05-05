@@ -1,0 +1,34 @@
+@interface IESLiveAudienceInteractEntraceCell : UICollectionViewCell
+@property (nonatomic) IESLiveImageView icon;
+@property (nonatomic) UIImageView tipImageView;
+@property (nonatomic) UILabel subtitleLabel;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) Q style;
+@property (nonatomic) UIView selectedDecorationView;
+@property (nonatomic) CAGradientLayer gradientLayer;
+@property (nonatomic) UIView gradientBackground;
+- (void)addGradientLayerWithConfiguration:;
+- (void)decorateSelected;
+- (void)didSetAttachingDIContext;
+- (id)gradientBackground;
+- (id)selectedDecorationView;
+- (void)setGradientBackground:;
+- (void)setSelectedDecorationView:;
+- (void)setTipImageView:;
+- (id)tipImageView;
+- (void)updateWithConfiguration:style:;
+- (void)setTitleLabel:;
+- (void)layoutSubviews;
+- (id)subtitleLabel;
+- (id)gradientLayer;
+- (void)setSubtitleLabel:;
+- (id)icon;
+- (void)setStyle:;
+- (void)setIcon:;
+- (void).cxx_destruct;
+- (unsigned long long)style;
+- (void)updateConstraints;
+- (id)titleLabel;
+- (void)setGradientLayer:;
+- (void)setupViews;
+@end

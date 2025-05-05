@@ -1,0 +1,32 @@
+@interface IESLiveInteractAudienceSettingItem : IESLiveDynamicModel
+@property (nonatomic) BOOL disabled;
+@property (nonatomic) NSString disableToast;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString prompts;
+@property (nonatomic) NSString valueText;
+@property (nonatomic) NSInteger key;
+@property (nonatomic) NSNumber defaultValue;
+@property (nonatomic) NSInteger status;
+@property (nonatomic) Q itemType;
+@property (nonatomic) @? trackCallback;
+@property (nonatomic) @? valueTextTransform;
+@property (nonatomic) @? didUpdateCallback;
+- (void)chooseSetting;
+- (void)didClickSettingSwitch:;
+- (id)didUpdateCallback;
+- (id)disableToast;
+- (void)setDidUpdateCallback:;
+- (void)setDisableToast:;
+- (void)setTrackCallback:;
+- (void)setValueTextTransform:;
+- (void)showDisabledToast;
+- (id)trackCallback;
+- (id)valueTextTransform;
+- (void)setStatus:;
+- (void)setDisabled:;
+- (int)key;
+- (BOOL)disabled;
+- (void)setKey:;
+- (void).cxx_destruct;
+- (int)status;
+@end

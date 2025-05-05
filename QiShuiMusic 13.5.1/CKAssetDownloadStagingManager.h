@@ -1,0 +1,31 @@
+@interface CKAssetDownloadStagingManager : NSObject
+@property (nonatomic) NSMutableDictionary fileHandlesForInflightLastPathComponent;
+@property (nonatomic) NSURL inflightDownloadDirectory;
+@property (nonatomic) NSURL finishedDownloadDirectory;
+@property (nonatomic) NSURL directory;
+@property (nonatomic) NSString fileProtectionType;
+@property (nonatomic) BOOL keepInflightFilesOpen;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)CKDescribePropertiesUsing:;
+- (id)directory;
+- (id)redactedDescription;
+- (void).cxx_destruct;
+- (void)setFileProtectionType:;
+- (id)fileProtectionType;
+- (id)initWithDirectory:;
+- (id)description;
+- (BOOL)keepInflightFilesOpen;
+- (void)setKeepInflightFilesOpen:;
+- (BOOL)openWithAssetDownloadStagingInfo:fileDescriptor:closeOnDealloc:error:;
+- (BOOL)finishWithAssetDownloadStagingInfo:fileURL:fileHandle:error:;
+- (id)inflightLastPathComponentWithInfo:;
+- (id)inflightURLWithLastPathComponent:;
+- (id)finishedURLWithInfo:;
+- (id)fileHandlesForInflightLastPathComponent;
+- (void)setFileHandlesForInflightLastPathComponent:;
+- (id)inflightDownloadDirectory;
+- (id)finishedDownloadDirectory;
+@end

@@ -1,0 +1,30 @@
+@interface IESLiveSaaSRoomBorderView : UIView
+@property (nonatomic) UIImageView borderTopView;
+@property (nonatomic) UIImageView borderLeftView;
+@property (nonatomic) UIImageView borderBottomView;
+@property (nonatomic) UIImageView borderRightView;
+@property (nonatomic) NSObject<OS_dispatch_group> staticBorderDownloadGroup;
+@property (nonatomic) double ratio;
+- (id)borderRightView;
+- (void)addBorder;
+- (void)addMaskForImageView:;
+- (id)borderBottomView;
+- (id)borderLeftView;
+- (id)borderTopView;
+- (void)loadStaticSkinWithResource:;
+- (void)monitorImageView:withName:;
+- (void)removeBorder;
+- (void)requestImageWithURLs:forView:;
+- (id)resizeWebImageWithScale:;
+- (void)setBorderBottomView:;
+- (void)setBorderLeftView:;
+- (void)setBorderRightView:;
+- (void)setBorderTopView:;
+- (void)setStaticBorderDownloadGroup:;
+- (id)staticBorderDownloadGroup;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)setupUI;
+- (double)ratio;
+- (void)setRatio:;
+@end

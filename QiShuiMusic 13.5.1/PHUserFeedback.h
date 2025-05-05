@@ -1,0 +1,32 @@
+@interface PHUserFeedback : NSObject
+@property (nonatomic) Q type;
+@property (nonatomic) Q feature;
+@property (nonatomic) NSString context;
+@property (nonatomic) NSDate lastModifiedDate;
+- (unsigned long long)feature;
+- (id)context;
+- (id)lastModifiedDate;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (unsigned long long)type;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)initWithType:feature:context:;
+- (id)initWithType:feature:context:lastModifiedDate:;
+- (id)contextAsStringWithError:;
+- (id)contextAsDateWithError:;
+- (id)contextAsDateIntervalWithError:;
+- (id)contextAsLocationWithError:;
+- (id)contextAsListOfSongIdentifiersWithError:;
++ (BOOL)supportsSecureCoding;
++ (id)negativeUserFeedbackForMemoryFeature:existingFeedback:;
++ (id)negativeUserFeedbackForMemoryMusicWithSongIdentifier:existingFeedback:;
++ (id)negativeUserFeedbackForPerson:;
++ (unsigned long long)mergeFeedbackType:withOtherFeedbackType:;
++ (unsigned long long)sumFeedbackType:withOtherFeedbackType:;
++ (id)_contextForMemoryFeature:;
++ (id)_contextForSongIdentifiers:;
++ (unsigned long long)_feedbackFeatureForMemoryFeature:;
+@end

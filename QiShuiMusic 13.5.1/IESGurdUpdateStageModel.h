@@ -1,0 +1,32 @@
+@interface IESGurdUpdateStageModel : NSObject
+@property (nonatomic) NSString prefix;
+@property (nonatomic) NSString errMsg;
+@property (nonatomic) NSString url;
+@property (nonatomic) BOOL result;
+@property (nonatomic) NSInteger errCode;
+@property (nonatomic) NSInteger downloadErrCode;
+@property (nonatomic) NSInteger failedTimes;
+@property (nonatomic) q backgroundDuration;
+@property (nonatomic) NSDate startTime;
+- (int)downloadErrCode;
+- (void)setFailedTimes:;
+- (int)errCode;
+- (long long)backgroundDuration;
+- (id)errMsg;
+- (int)failedTimes;
+- (void)putDataToDict:;
+- (void)setBackgroundDuration:;
+- (void)setDownloadErrCode:;
+- (void)setErrCode:;
+- (void)setErrMsg:;
+- (BOOL)result;
+- (id)url;
+- (void)setStartTime:;
+- (id)startTime;
+- (void)setUrl:;
+- (void)setPrefix:;
+- (id)prefix;
+- (void).cxx_destruct;
+- (id)initWithPrefix:;
+- (void)setResult:;
+@end

@@ -1,0 +1,30 @@
+@interface PTPDataPacket : NSObject
+- (unsigned int)transactionID;
+- (void)dealloc;
+- (long long)bytesTransferred;
+- (int)setRange:;
+- (id)data;
+- (void)setBytesTransferred:;
+- (void)setTransactionID:;
+- (id)range;
+- (id)description;
+- (void)setData:;
+- (long long)bufferSize;
+- (id)filepath;
+- (id)initWithOperationCode:transactionID:andData:;
+- (id)initWithOperationCode:transactionID:andDataSource:;
+- (id)initWithOperationCode:transactionID:andFilepath:;
+- (id)initWithTCPBuffer:;
+- (id)initWithUSBBuffer:;
+- (id)contentForTCP;
+- (id)contentForUSB;
+- (id)contentForUSBUsingBuffer:capacity:;
+- (unsigned short)operationCode;
+- (void)setOperationCode:;
+- (long long)offsetInBuffer;
+- (long long)copyToBuffer:numBytes:;
+- (long long)copyToWrappedBytes:forTransport:;
+- (long long)copyDataToWrappedBytes:forTransport:fromOffset:;
+- (long long)copyHeaderToWrappedBytes:forTransport:;
+- (long long)copyFromBuffer:numBytes:;
+@end

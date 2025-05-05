@@ -1,0 +1,30 @@
+@interface NEAppPush : NSObject
+@property (nonatomic) BOOL enabled;
+@property (nonatomic) NSDictionary providerConfiguration;
+@property (nonatomic) NSArray matchSSIDs;
+@property (nonatomic) NSArray matchPrivateLTENetworks;
+@property (nonatomic) NSString pluginType;
+@property (nonatomic) NSString providerBundleIdentifier;
+- (BOOL)checkValidityAndCollectErrors:;
+- (id)init;
+- (id)descriptionWithIndent:options:;
+- (id)pluginType;
+- (id)initWithCoder:;
+- (id)providerConfiguration;
+- (void)encodeWithCoder:;
+- (void)setEnabled:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)copyWithZone:;
+- (BOOL)isEnabled;
+- (id)providerBundleIdentifier;
+- (void)setProviderConfiguration:;
+- (void)setProviderBundleIdentifier:;
+- (void)setPluginType:;
+- (BOOL)overlapsWithConfiguration:;
+- (id)matchSSIDs;
+- (void)setMatchSSIDs:;
+- (id)matchPrivateLTENetworks;
+- (void)setMatchPrivateLTENetworks:;
++ (BOOL)supportsSecureCoding;
+@end

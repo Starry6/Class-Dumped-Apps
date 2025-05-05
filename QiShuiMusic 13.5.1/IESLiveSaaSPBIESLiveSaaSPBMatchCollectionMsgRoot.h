@@ -1,0 +1,2 @@
+@interface IESLiveSaaSPBIESLiveSaaSPBMatchCollectionMsgRoot : GPBRootObject
+@end

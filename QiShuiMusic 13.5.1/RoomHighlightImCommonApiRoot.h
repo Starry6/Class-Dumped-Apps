@@ -1,0 +1,2 @@
+@interface RoomHighlightImCommonApiRoot : GPBRootObject
+@end

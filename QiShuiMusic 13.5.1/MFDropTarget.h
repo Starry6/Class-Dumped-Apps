@@ -1,0 +1,33 @@
+@interface MFDropTarget : NSObject
+@property (nonatomic) <MFDropTargetDelegate> delegate;
+@property (nonatomic) UIView targetView;
+@property (nonatomic) UIDropInteraction dropInteraction;
+@property (nonatomic) NSSet acceptableUTIs;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithView:delegate:;
+- (void)setDelegate:;
+- (void)setDropInteraction:;
+- (id)targetView;
+- (BOOL)dropInteraction:canHandleSession:;
+- (void)dropInteraction:sessionDidEnd:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)dropInteraction:performDrop:;
+- (id)dropInteraction;
+- (void)dropInteraction:sessionDidEnter:;
+- (void)setTargetView:;
+- (id)dropInteraction:sessionDidUpdate:;
+- (void)dropInteraction:sessionDidExit:;
+- (long long)_dropInteraction:dataOwnerForSession:;
+- (void)_updateDelegateFlags;
+- (id)acceptableUTIs;
+- (BOOL)_sessionContainsOnlyAcceptableTypeIdentifiers:;
+- (void)_delegateDidDropItemsWithDropSession:;
+- (BOOL)_delegateHandlesDrops;
+- (BOOL)_delegateCanDropItemsWithDropSession:;
+- (void)_dropSessionEnded;
+- (void)setAcceptableUTIs:;
+@end

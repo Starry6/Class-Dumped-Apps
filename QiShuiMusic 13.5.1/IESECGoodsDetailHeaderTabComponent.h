@@ -1,0 +1,35 @@
+@interface IESECGoodsDetailHeaderTabComponent : IESECGoodsDetailHeaderFeatureComponent
+@property (nonatomic) IESECGoodsDetailHeaderTabComponentData data;
+@property (nonatomic) IESECGoodsDetailHeaderTabView tabView;
+@property (nonatomic) <IESECGoodsDetailHeaderTrackerService> tracker;
+@property (nonatomic) <IESECGoodsDetailHeaderStorageService> storage;
+@property (nonatomic) <IESECGoodsDetailHeaderEventHandlerService> handler;
+@property (nonatomic) <IESECGoodsDetailHeaderViewManagerServeice> viewManager;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setViewManager:;
+- (void)headerViewDidScrollToMode:;
+- (void)headerViewWillLoad;
+- (void)hideTabView;
+- (void)loadComponent;
+- (void)registerSelfService;
+- (void)setTabView:;
+- (void)trackClickAndDraw:tabIndex:;
+- (void)updateIndex:;
+- (void)updateTabViewHidden:;
+- (void)setTracker:;
+- (void)setModel:;
+- (id)tracker;
+- (id)data;
+- (void)setStorage:;
+- (void)setHandler:;
+- (void)showTabView;
+- (id)handler;
+- (id)storage;
+- (void).cxx_destruct;
+- (void)setData:;
+- (id)viewManager;
+- (id)tabView;
+@end

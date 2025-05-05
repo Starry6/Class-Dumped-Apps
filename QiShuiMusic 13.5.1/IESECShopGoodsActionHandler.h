@@ -1,0 +1,37 @@
+@interface IESECShopGoodsActionHandler : NSObject
+@property (nonatomic) IESECShopContext legacyShopContext;
+@property (nonatomic) IESECShopGoodsState state;
+@property (nonatomic) UIViewController viewController;
+@property (nonatomic) NSString tabNameSecond;
+@property (nonatomic) NSString moduleForm;
+@property (nonatomic) BOOL useEcomEntranceFormInsteadCarrierType;
+@property (nonatomic) BOOL selectedCouponFiltering;
+@property (nonatomic) IESECShopGoodsPickTypeModel productPickModel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)attachState:;
+- (void)didSelectRelationGoods:cell:atIndex:;
+- (void)handleAddToCartWithRelationGoods:fromRect:toPoint:atIndexPath:;
+- (void)handleShopEntranceClick;
+- (BOOL)isSelectedCouponFiltering;
+- (id)legacyShopContext;
+- (id)moduleForm;
+- (id)productPickModel;
+- (void)redirectFromRequestWithViewModel:btmID:btmToken:;
+- (void)redirectFromURLScheme:viewModel:btmToken:;
+- (void)redirectToGoodsDetailWithModel:cell:atIndex:;
+- (void)setModuleForm:;
+- (void)setProductPickModel:;
+- (void)setSelectedCouponFiltering:;
+- (void)setTabNameSecond:;
+- (void)setUseEcomEntranceFormInsteadCarrierType:;
+- (id)tabNameSecond;
+- (BOOL)useEcomEntranceFormInsteadCarrierType;
+- (void)setViewController:;
+- (void)setState:;
+- (id)viewController;
+- (id)state;
+- (void).cxx_destruct;
+@end

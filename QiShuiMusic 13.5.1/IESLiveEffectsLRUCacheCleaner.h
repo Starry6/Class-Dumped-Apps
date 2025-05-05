@@ -1,0 +1,31 @@
+@interface IESLiveEffectsLRUCacheCleaner : NSObject
+@property (nonatomic) q totalSize;
+@property (nonatomic) IESLiveEffectsLinkedNode head;
+@property (nonatomic) IESLiveEffectsLinkedNode rear;
+@property (nonatomic) NSMutableDictionary nodeMap;
+@property (nonatomic) NSObject<OS_dispatch_queue> queue;
+@property (nonatomic) IESLiveEffectsLRUCacheCleanerConfig lruConfig;
+- (id)nodeMap;
+- (void)accessEffect:;
+- (id)initWithLRUCacheConfiguration:dispatchQueue:;
+- (void)insertEffect:path:ignoreCache:;
+- (void)loadCachedData;
+- (id)lruConfig;
+- (void)putNodeToRear:;
+- (id)rear;
+- (void)setNodeMap:;
+- (void)setRear:;
+- (void)trimEffect:completion:;
+- (void)trimEffectMomentType:whiteList:completion:;
+- (void)updateWithCapacity:redLineCapacity:;
+- (void)setHead:;
+- (id)head;
+- (void)detachNode:;
+- (void).cxx_destruct;
+- (void)setQueue:;
+- (id)queue;
+- (long long)totalSize;
+- (void)setTotalSize:;
+- (void)removeEffect:;
+- (void)saveData;
+@end

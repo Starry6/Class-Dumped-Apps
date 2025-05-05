@@ -1,0 +1,31 @@
+@interface VCVideoRuleCollections : NSObject
+@property (nonatomic) NSArray supportedPayloads;
+@property (nonatomic) NSDictionary rules;
+@property (nonatomic) BOOL isEncodeSupported;
+@property (nonatomic) BOOL isDecodeSupported;
+@property (nonatomic) NSSet supportedTransportTypes;
+- (id)init;
+- (void)dealloc;
+- (id)rules;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)supportedTransportTypes;
+- (id)supportedPayloads;
+- (BOOL)isPayloadSupported:;
+- (void)addVideoRules:transportType:payload:encodingType:;
+- (id)filterRules:byBitrateRule:;
+- (id)supportedVideoRulesSyncForTransportType:payload:encodingType:;
+- (id)supportedVideoSizesForKey:;
+- (id)getVideoRulesForTransport:payload:encodingType:;
+- (id)supportedVideoRulesSizesForBitrate:transportType:payload:encodingType:;
+- (id)supportedVideoRulesForBitrate:transportType:payload:encodingType:;
+- (void)appendVideoRules:transportType:payload:encodingType:;
+- (void)removeVideoRulesWithWidth:height:transportType:encodingType:;
+- (void)limitRulesFromVideoRules:frameHeight:videoRules:;
+- (void)limitVideoRulesToMaxWidth:maxHeight:transportType:;
+- (void)addSupportedPayload:;
+- (BOOL)isEncodeSupported;
+- (BOOL)isDecodeSupported;
+- (id)videoRulesCollectionsByRemovingPayload:andPayload:removeCellular:;
++ (id)newCorrectedVideoRules:payload:;
+@end

@@ -1,0 +1,36 @@
+@interface IDSDestination : NSObject
+@property (nonatomic) BOOL empty;
+@property (nonatomic) BOOL guest;
+@property (nonatomic) BOOL device;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)isGuest;
+- (BOOL)isEmpty;
+- (BOOL)isDevice;
+- (id)normalizedURIStrings;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)destinationURIs;
+- (id)normalizedURIs;
+- (BOOL)isEqualToDestination:;
+- (void)encodeWithCoder:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
++ (id)destinationWithDevice:;
++ (id)destinationWithRapportPublicIdentifier:;
++ (BOOL)supportsSecureCoding;
++ (id)destinationWithDestinations:;
++ (id)destinationWithDeviceURI:;
++ (id)destinationWithRapportPublicIdentifierURI:;
++ (id)destinationWithStrings:;
++ (id)destinationWithURI:;
++ (id)classesForStrictUnarchiving;
++ (id)destinationWithAlias:pushToken:;
++ (id)destinationWithString:;
++ (id)destinationWithGroup:;
++ (id)destinationWithStringURI:isLightWeight:;
++ (id)defaultPairedDeviceDestination;
++ (id)sentinelSelfAliasDestination;
+@end

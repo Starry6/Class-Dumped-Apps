@@ -1,0 +1,2 @@
+@interface TRITripersistedEvaluationStatusRoot : TRIPBRootObject
+@end

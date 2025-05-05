@@ -1,0 +1,32 @@
+@interface TSBonjourInterface : NSObject
+@property (nonatomic) TSBonjourIPv4Address ipv4Address;
+@property (nonatomic) NSArray ipv4Addresses;
+@property (nonatomic) TSBonjourIPv6Address ipv6Address;
+@property (nonatomic) NSArray ipv6Addresses;
+@property (nonatomic) TSBonjourNode node;
+@property (nonatomic) NSString interfaceName;
+@property (nonatomic) <TSBonjourInterfaceDelegate> delegate;
+- (id)ipv4Addresses;
+- (id)node;
+- (id)init;
+- (void)dealloc;
+- (void)setDelegate:;
+- (id)ipv6Addresses;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)interfaceName;
+- (BOOL)stopResolve;
+- (void)setNode:;
+- (id)ipv4Address;
+- (id)ipv6Address;
+- (id)initWithServiceName:type:andDomain:onInterfaceIndex:andName:;
+- (void)resolvedWithHostTarget:port:;
+- (BOOL)startResolveWithError:;
+- (BOOL)startAddressLookupWithError:;
+- (BOOL)stopAddressLookup;
+- (void)pokeIPv6Destination;
+- (void)setIpv4Address:;
+- (void)setIpv4Addresses:;
+- (void)setIpv6Address:;
+- (void)setIpv6Addresses:;
+@end

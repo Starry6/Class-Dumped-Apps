@@ -1,0 +1,34 @@
+@interface AWEIMHalfScreenController : NSObject
+@property (nonatomic) NSArray allUserContacts;
+@property (nonatomic) NSArray recentContacts;
+@property (nonatomic) NSArray sectionTitles;
+@property (nonatomic) NSArray sectionData;
+@property (nonatomic) NSArray allContacts;
+@property (nonatomic) NSArray searchList;
+@property (nonatomic) <AWEIMHalfScreenControllerDelegate> delegate;
+@property (nonatomic) NSMutableArray selectList;
+- (id)allUserContacts;
+- (void)setSectionData:;
+- (id)conversationDataManager;
+- (void)createChat:shouldRouter:;
+- (void)didSelectedItem:;
+- (void)fetchData:;
+- (id)getShareModelAtIndexPath:isSearching:;
+- (void)prepareDataWithRecentContacts:allContacts:completeBlock:;
+- (id)recentContacts;
+- (id)selectList;
+- (void)setAllUserContacts:;
+- (void)setRecentContacts:;
+- (void)setSelectList:;
+- (void)setupSearchEngine;
+- (void)setDelegate:;
+- (id)allContacts;
+- (id)sectionTitles;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)searchList;
+- (void)setSearchList:;
+- (void)setAllContacts:;
+- (id)sectionData;
+- (void)setSectionTitles:;
+@end

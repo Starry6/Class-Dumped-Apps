@@ -1,0 +1,34 @@
+@interface MKMapItemPhoto : NSObject
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString subtitle;
+@property (nonatomic) q photoStyle;
+@property (nonatomic) _MKMapItemPhotosAttribution attribution;
+@property (nonatomic) NSString license;
+@property (nonatomic) NSURL largestPhotoURL;
+@property (nonatomic) NSString photoID;
+@property (nonatomic) BOOL useGallery;
+@property (nonatomic) q format;
+@property (nonatomic) BOOL displayFullScreenPhotoGallery;
+@property (nonatomic) <GEOMapItemPhoto> geoMapItemPhoto;
+@property (nonatomic) BOOL needsObfuscationWhenRenderedInFullScreen;
+- (long long)format;
+- (void)setSubtitle:;
+- (void)setTitle:;
+- (id)attribution;
+- (id)title;
+- (void).cxx_destruct;
+- (id)subtitle;
+- (BOOL)displayFullScreenPhotoGallery;
+- (BOOL)useGallery;
+- (BOOL)needsObfuscationWhenRenderedInFullScreen;
+- (id)initWithPictureItem:;
+- (id)initWithGeoMapItemPhoto:title:subtitle:;
+- (id)initWithGeoMapItemPhoto:;
+- (id)initWithGeoMapItemPhoto:fallbackTitle:;
+- (id)license;
+- (id)largestPhotoURL;
+- (id)photoID;
+- (id)urlForBestPhotoForSize:;
+- (long long)photoStyle;
+- (id)geoMapItemPhoto;
+@end

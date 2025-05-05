@@ -1,0 +1,34 @@
+@interface IESMMBingoOutput : NSObject
+@property (nonatomic) NSInteger videoId;
+@property (nonatomic) float beginTime;
+@property (nonatomic) float endTime;
+@property (nonatomic) float playDuration;
+@property (nonatomic) float rotateAngle;
+@property (nonatomic) NSString videoKey;
+@property (nonatomic) NSInteger type;
+@property (nonatomic) NSInteger effect;
+@property (nonatomic) NSInteger transType;
+@property (nonatomic) float transTime;
+- (void)setRotateAngle:;
+- (float)rotateAngle;
+- (void)setPlayDuration:;
+- (void)setTransTime:;
+- (void)setVideoKey:;
+- (float)transTime;
+- (id)videoKey;
+- (float)beginTime;
+- (void)setType:;
+- (void)setEndTime:;
+- (void)setEffect:;
+- (void)setBeginTime:;
+- (float)endTime;
+- (int)type;
+- (void).cxx_destruct;
+- (id)description;
+- (int)videoId;
+- (void)setVideoId:;
+- (int)effect;
+- (int)transType;
+- (void)setTransType:;
+- (float)playDuration;
+@end

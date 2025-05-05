@@ -1,0 +1,31 @@
+@interface UITapAndAHalfRecognizer : UIGestureRecognizer
+@property (nonatomic) UITouch touch;
+@property (nonatomic) NSInteger numberOfFullTaps;
+@property (nonatomic) double allowableMovement;
+@property (nonatomic) double minimumFinalPressDuration;
+@property (nonatomic) {CGPoint=dd} locationOfFirstTap;
+- (void)dealloc;
+- (void)clearTapTimer;
+- (void)tooSlow:;
+- (void)touchesBegan:withEvent:;
+- (void)startTapTimer:;
+- (id)touch;
+- (void)_verifyMovementInAllowableRange;
+- (void)recognized:;
+- (int)numberOfFullTaps;
+- (void)setNumberOfFullTaps:;
+- (id)locationOfFirstTap;
+- (void).cxx_destruct;
+- (void)setTouch:;
+- (void)startRecognitionTimer:;
+- (void)setAllowableMovement:;
+- (double)allowableMovement;
+- (void)setMinimumFinalPressDuration:;
+- (void)_resetGestureRecognizer;
+- (void)touchesMoved:withEvent:;
+- (void)touchesEnded:withEvent:;
+- (id)initWithTarget:action:;
+- (double)minimumFinalPressDuration;
+- (void)touchesCancelled:withEvent:;
+- (id)translationInWindowCoordinates;
+@end

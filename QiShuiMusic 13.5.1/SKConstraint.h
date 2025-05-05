@@ -1,0 +1,33 @@
+@interface SKConstraint : NSObject
+@property (nonatomic) BOOL enabled;
+@property (nonatomic) SKNode referenceNode;
+- (id)init;
+- (BOOL)enabled;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void)setEnabled:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)copyWithZone:;
+- (id)referenceNode;
+- (BOOL)isEqualToConstraint:;
+- (void)setReferenceNode:;
++ (BOOL)supportsSecureCoding;
++ (id)scaleX:scaleY:;
++ (id)scale:;
++ (id)positionX:;
++ (id)positionY:;
++ (id)positionX:Y:;
++ (id)distance:toNode:;
++ (id)distance:toPoint:;
++ (id)distance:toPoint:inNode:;
++ (id)zRotation:;
++ (id)orientToPoint:inNode:offset:;
++ (id)orientToNode:offset:;
++ (id)orientToPoint:offset:;
++ (id)width:;
++ (id)height:;
++ (id)width:height:;
++ (id)scaleX:;
++ (id)scaleY:;
+@end

@@ -1,0 +1,33 @@
+@interface QLExternalThumbnailCache : NSObject
+@property (nonatomic) QLExternalThumbnailCacheDatabase db;
+@property (nonatomic) NSURL directoryURL;
+@property (nonatomic) NSURL thumbnailsDirectoryURL;
+@property (nonatomic) NSURL databaseURL;
+@property (nonatomic) Q maximumCacheSize;
+- (id)db;
+- (id)databaseURL;
+- (void)dealloc;
+- (void)close;
+- (void).cxx_destruct;
+- (void)setDb:;
+- (id)directoryURL;
+- (BOOL)removeAllThumbnails:;
+- (void)storeThumbnailAtURL:forItem:completion:;
+- (void)getThumbnailURLForItem:completion:;
+- (void)getThumbnailCacheURLWrappersWithCompletion:;
+- (id)initWithDirectoryURL:maximumCacheSize:error:;
+- (id)thumbnailURLForItem:error:;
+- (BOOL)storeThumbnailAtURL:forItem:error:;
+- (BOOL)_saveOrUpdateCachedThumbnailRepresentingFPItem:withFileAtURL:error:;
+- (BOOL)_freeDiskSpaceToSaveThumbnailRepresentingFPItem:withFileAtURL:error:;
+- (BOOL)_updateDatabaseWithCachedThumbnailRepresentingFPItem:withFileAtURL:error:;
+- (BOOL)_saveToDiskCachedThumbnailRepresentingFPItem:withFileAtURL:error:;
+- (BOOL)_createDirectoryWithURL:error:;
+- (id)_urlForThumbnailWithFPItem:originalThumbnailURL:;
+- (id)_urlForThumbnailWithFPItemIdentifier:fileExtension:;
+- (id)inboxDirectoryURL;
+- (id)writeThumbnailImageInInbox:;
+- (id)thumbnailsDirectoryURL;
+- (unsigned long long)maximumCacheSize;
++ (id)writeThumbnailImage:inInboxAtURL:;
+@end

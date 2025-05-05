@@ -1,0 +1,37 @@
+@interface VCStreamOutputManager : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (void)dealloc;
+- (void)registerBlocksForService;
+- (void)deregisterBlocksForService;
+- (void)didReceiveFirstRemoteFrameForStreamToken:;
+- (void)remoteScreenAttributesDidChange:streamToken:;
+- (void)remoteVideoAttributesDidChange:streamToken:;
+- (void)remoteVideoDidPause:streamToken:;
+- (void)remoteMediaDidStall:streamToken:;
+- (void)remoteVideoDidDegrade:streamToken:;
+- (void)remoteVideoDidSuspend:streamToken:;
+- (void)releaseQueueForStreamToken:;
+- (void)connectionDidChangeWithLocalInterfaceType:remoteInterfaceType:streamToken:;
+- (void)dispatchedRemoteVideoDidPause:streamToken:;
+- (void)dispatchedRemoteMediaDidStall:streamToken:;
+- (void)dispatchedRemoteVideoDidDegrade:streamToken:;
+- (void)dispatchedRemoteVideoDidSuspend:streamToken:;
+- (void)cleanupStreamOutput:;
+- (void)dispatchedCleanupStreamOutput:;
+- (void)registerStreamOutputSource:forStreamToken:;
+- (void)dispatchedRegisterStreamOutputSource:forStreamToken:;
+- (void)deregisterStreamOutputSourceForStreamToken:;
+- (void)dispatchedDeregisterStreamOutputSourceForStreamToken:;
+- (id)allocStreamOutputWithStreamToken:clientPid:options:errorCode:;
+- (id)allocDispatchedStreamOutputWithStreamToken:clientPid:options:errorCode:;
+- (BOOL)sourceExistsForStreamToken:;
+- (id)serviceHandlerStreamOutputInitializeWithArguments:error:;
+- (id)serviceHandlerStreamOutputNotifyCacheWithArguments:error:;
+- (id)serviceHandlerStreamOutputTerminateWithArguments:error:;
+- (id)serviceHandlerStreamOutputSetTimeSyncOffsetWithArguments:error:;
++ (id)sharedInstance;
+@end

@@ -1,0 +1,32 @@
+@interface IESECGoodsFeedDiscountPriceView : UIView
+@property (nonatomic) q type;
+@property (nonatomic) q state;
+@property (nonatomic) IESECDiscountPrice discountModel;
+@property (nonatomic) BOOL hasGapPrice;
+@property (nonatomic) BOOL hideBackground;
+@property (nonatomic) NSNumber minPrice;
+@property (nonatomic) IESECGoodsPriceLabel priceLabel;
+@property (nonatomic) UILabel prefixAreaLabel;
+- (void)setHasGapPrice:;
+- (id)prefixAreaLabel;
+- (void)configInternalFeedV2Style;
+- (id)discountModel;
+- (BOOL)hasGapPrice;
+- (BOOL)hideBackground;
+- (id)initDiscountPriceViewWithDiscountConfigure:;
+- (id)minPrice;
+- (void)setDiscountModel:;
+- (void)setHideBackground:;
+- (void)setMinPrice:;
+- (void)setPrefixAreaLabel:;
+- (void)updateUIWithDiscountConfigure:;
+- (void)setState:;
+- (void)setType:;
+- (long long)type;
+- (long long)state;
+- (void).cxx_destruct;
+- (void)setupUI;
+- (void)updateUI;
+- (id)priceLabel;
+- (void)setPriceLabel:;
+@end

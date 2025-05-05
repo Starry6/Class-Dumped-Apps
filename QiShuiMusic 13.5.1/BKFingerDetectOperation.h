@@ -1,0 +1,2 @@
+@interface BKFingerDetectOperation : BKPresenceDetectOperation
+@end

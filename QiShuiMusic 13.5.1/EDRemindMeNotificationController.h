@@ -1,0 +1,31 @@
+@interface EDRemindMeNotificationController : NSObject
+@property (nonatomic) NSHashTable observers;
+@property (nonatomic) <EDRemindMeNotificationControllerEventDelegate> eventDelegate;
+@property (nonatomic) EFXPCAlarm xpcAlarm;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)removeObserver:;
+- (id)addObserver:;
+- (id)initWithHookRegistry:messagePersistence:alarmDateProvider:eventDelegate:alarmScheduler:;
+- (void)controller:scheduleAlarmForMessage:date:;
+- (void)test_waitForUpdates;
+- (void)resetRemindMeAlarmIfNeeded;
+- (id)initWithHookRegistry:messagePersistence:alarmScheduler:;
+- (id)xpcAlarm;
+- (void)_updateAlarm;
+- (void)persistenceDidChangeReadLaterDate:messages:changeIsRemote:generationWindow:;
+- (void)_notify:;
+- (void)persistenceDidDeleteMessages:generationWindow:;
+- (void).cxx_destruct;
+- (void)_updateAlarmUpdatedMessages:readLaterDate:;
+- (id)_fetchMessagesToNotifyWithStartDate:endDate:;
+- (void)performDelayedTasks;
+- (id)eventDelegate;
+- (id)observers;
+- (void)_alarmFired;
+- (void)test_tearDown;
++ (id)localizedRemindMeNotificationTitle;
++ (id)log;
+@end

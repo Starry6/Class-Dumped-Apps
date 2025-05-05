@@ -1,0 +1,31 @@
+@interface CNAutocompleteResultValue : NSObject
+@property (nonatomic) NSString stringForHashingMemo;
+@property (nonatomic) NSString address;
+@property (nonatomic) q addressType;
+@property (nonatomic) NSString instantMessageAddressService;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) NSString label;
+- (id)identifier;
+- (void)setAddress:;
+- (void)setLabel:;
+- (unsigned long long)hash;
+- (id)label;
+- (void).cxx_destruct;
+- (id)description;
+- (id)address;
+- (void)setIdentifier:;
+- (BOOL)isEqual:;
+- (long long)addressType;
+- (void)setAddressType:;
+- (id)stringForHashing;
+- (id)stringForSorting;
+- (BOOL)addressExactlyMatchesSearchTerm:;
+- (id)addressTypeDescription;
+- (id)instantMessageAddressService;
+- (void)setInstantMessageAddressService:;
+- (id)stringForHashingMemo;
+- (void)setStringForHashingMemo:;
++ (id)resultValueWithAddress:addressType:;
++ (id)stringForHashingValue:;
++ (id)normalizedAddressForValue:;
+@end

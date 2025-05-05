@@ -1,0 +1,31 @@
+@interface UIInterfaceActionViewState : UIInterfaceActionVisualStyleViewState
+@property (nonatomic) UIInterfaceAction action;
+@property (nonatomic) BOOL isHighlighted;
+@property (nonatomic) BOOL isPressed;
+@property (nonatomic) BOOL isFocused;
+@property (nonatomic) BOOL isPreferred;
+@property (nonatomic) @ actionViewStateContext;
+@property (nonatomic) Q visualCornerPosition;
+- (id)action;
+- (BOOL)isPreferred;
+- (BOOL)isHighlighted;
+- (void).cxx_destruct;
+- (BOOL)isFocused;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)initWithPropertiesFromActionRepresentationView:groupView:action:;
+- (void)_collectStateForDefaultState;
+- (void)_collectStateFromActionRepresentationView:;
+- (void)_collectStateFromAction:;
+- (void)_collectStateFromActionViewState:;
+- (BOOL)_stateEqualToActionViewState:;
+- (BOOL)isPressed;
+- (id)actionViewStateContext;
+- (unsigned long long)visualCornerPosition;
++ (id)_nullViewStateForActionType:;
++ (id)viewStateForActionRepresentationView:action:;
++ (id)viewStateForActionRepresentationViewDescendantView:action:;
++ (id)viewStateForAlertControllerActionView:;
++ (id)viewStateRepresentingDefaultAction;
++ (id)viewStateRepresentingPreferredAction;
+@end

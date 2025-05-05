@@ -1,0 +1,30 @@
+@interface TSPKStatisticModel : NSObject
+@property (nonatomic) NSString key;
+@property (nonatomic) q count;
+@property (nonatomic) double timestamp;
+@property (nonatomic) NSMutableArray timeDifferenceArray;
+@property (nonatomic) NSMutableDictionary hostStates;
+@property (nonatomic) q startTime;
+@property (nonatomic) q endTime;
+@property (nonatomic) q timeCountDown;
+@property (nonatomic) NSMutableArray bpeaCertToken;
+- (id)bpeaCertToken;
+- (id)hostStates;
+- (void)setBpeaCertToken:;
+- (void)setHostStates:;
+- (void)setTimeCountDown:;
+- (void)setTimeDifferenceArray:;
+- (long long)timeCountDown;
+- (id)timeDifferenceArray;
+- (void)setCount:;
+- (void)setStartTime:;
+- (id)key;
+- (void)setEndTime:;
+- (long long)startTime;
+- (void)setKey:;
+- (long long)endTime;
+- (void)setTimestamp:;
+- (void).cxx_destruct;
+- (double)timestamp;
+- (long long)count;
+@end

@@ -1,0 +1,30 @@
+@interface IESLivePKComponentAudienceCloseMic : IESLivePKComponent
+@property (nonatomic) BOOL hasBanToastOnce;
+@property (nonatomic) UIButton closeMicButton;
+@property (nonatomic) <IESLiveCompoundSubscription> disposable;
+@property (nonatomic) BOOL hasPropEffectInfo;
+- (BOOL)hasBanToastOnce;
+- (BOOL)enablePKComponentLayoutOptimize;
+- (void)bindAction;
+- (void)bindPlayAction;
+- (void)bindTeamTaskAction;
+- (id)closeMicButton;
+- (void)componentDidClear:;
+- (void)componentDidLoad;
+- (void)componentFinished;
+- (void)componentInteracting;
+- (void)componentPlaying;
+- (void)componentPunishing;
+- (id)disposable;
+- (BOOL)hasPropEffectInfo;
+- (void)loadCloseMicButton;
+- (BOOL)needShowOppoTeamTaskAdditionInfo;
+- (void)onClickCloseMicButton;
+- (void)setCloseMicButton:;
+- (void)setDisposable:;
+- (void)setHasBanToastOnce:;
+- (void)setHasPropEffectInfo:;
+- (void)updateCloseMicPosWithIsClear:;
+- (void).cxx_destruct;
+- (void)clean;
+@end

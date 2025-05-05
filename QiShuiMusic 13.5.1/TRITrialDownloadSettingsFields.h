@@ -1,0 +1,31 @@
+@interface TRITrialDownloadSettingsFields : PBCodable
+@property (nonatomic) BOOL hasAllowAnyNetworking;
+@property (nonatomic) BOOL allowAnyNetworking;
+@property (nonatomic) BOOL hasAllowBattery;
+@property (nonatomic) BOOL allowBattery;
+@property (nonatomic) BOOL hasDiscretionaryBehavior;
+@property (nonatomic) NSInteger discretionaryBehavior;
+- (BOOL)allowAnyNetworking;
+- (void)setHasAllowBattery:;
+- (void)setAllowBattery:;
+- (void)writeTo:;
+- (BOOL)hasAllowAnyNetworking;
+- (void)setHasDiscretionaryBehavior:;
+- (void)setDiscretionaryBehavior:;
+- (BOOL)allowBattery;
+- (unsigned long long)hash;
+- (int)StringAsDiscretionaryBehavior:;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void)setAllowAnyNetworking:;
+- (void)setHasAllowAnyNetworking:;
+- (BOOL)readFrom:;
+- (id)description;
+- (BOOL)hasDiscretionaryBehavior;
+- (id)discretionaryBehaviorAsString:;
+- (id)dictionaryRepresentation;
+- (BOOL)hasAllowBattery;
+- (int)discretionaryBehavior;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+@end

@@ -1,0 +1,33 @@
+@interface IESLiveRevenueInteractFeedbackCategoryCell : UITableViewCell
+@property (nonatomic) NSString questionTitle;
+@property (nonatomic) NSArray optionArray;
+@property (nonatomic) q type;
+@property (nonatomic) IESLiveRevenueInteractFeedbackViewModel viewModel;
+@property (nonatomic) IESLiveRevenueInteractFeedbackStyleConfig styleConfig;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setOptionArray:;
+- (void)setStyleConfig:;
+- (id)questionTitle;
+- (void)setQuestionTitle:;
+- (id)styleConfig;
+- (void)updateWithTitle:options:viewModel:type:styleConfig:;
+- (id)viewModel;
+- (void)setTitleLabel:;
+- (long long)collectionView:numberOfItemsInSection:;
+- (void)setType:;
+- (void)prepareForReuse;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (void)setCollectionView:;
+- (long long)type;
+- (void).cxx_destruct;
+- (id)collectionView;
+- (void)setViewModel:;
+- (id)titleLabel;
+- (id)optionArray;
+@end

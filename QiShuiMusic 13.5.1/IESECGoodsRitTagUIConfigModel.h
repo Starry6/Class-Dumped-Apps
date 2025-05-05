@@ -1,0 +1,32 @@
+@interface IESECGoodsRitTagUIConfigModel : MTLModel
+@property (nonatomic) BOOL useCornerRadius;
+@property (nonatomic) Q textSplitorStyle;
+@property (nonatomic) NSString textColor;
+@property (nonatomic) NSString textBgColor;
+@property (nonatomic) NSString textBorderColor;
+@property (nonatomic) NSString secondTextColor;
+@property (nonatomic) NSString secondTextBgColor;
+@property (nonatomic) NSString secondTextBorderColor;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)secondTextColor;
+- (void)setTextBgColor:;
+- (id)secondTextBgColor;
+- (id)secondTextBorderColor;
+- (void)setSecondTextBgColor:;
+- (void)setSecondTextBorderColor:;
+- (void)setSecondTextColor:;
+- (void)setTextSplitorStyle:;
+- (id)textBgColor;
+- (unsigned long long)textSplitorStyle;
+- (void)setTextColor:;
+- (void).cxx_destruct;
+- (id)textColor;
+- (void)setUseCornerRadius:;
+- (BOOL)useCornerRadius;
+- (void)setTextBorderColor:;
+- (id)textBorderColor;
++ (id)JSONKeyPathsByPropertyKey;
+@end

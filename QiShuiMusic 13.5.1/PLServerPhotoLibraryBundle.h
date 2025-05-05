@@ -1,0 +1,37 @@
+@interface PLServerPhotoLibraryBundle : PLPhotoLibraryBundle
+@property (nonatomic) NSURL presentedItemURL;
+@property (nonatomic) NSOperationQueue presentedItemOperationQueue;
+@property (nonatomic) NSURL primaryPresentedItemURL;
+@property (nonatomic) NSSet observedPresentedItemUbiquityAttributes;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)presentedItemURL;
+- (id)presentedItemOperationQueue;
+- (void)accommodatePresentedItemDeletionWithCompletionHandler:;
+- (void)touch;
+- (void)invalidateClientConnectionsWithReason:;
+- (id)transferPersons:toBundle:options:completion:;
+- (id)newChangePublisher;
+- (void)relinquishPresentedItemToReader:;
+- (void)close;
+- (BOOL)bindAssetsdService:error:;
+- (void)relinquishPresentedItemToWriter:;
+- (void)clearShutdownReason;
+- (void)unbindAssetsdService:;
+- (void)accommodatePresentedSubitemDeletionAtURL:completionHandler:;
+- (id)transferAssets:toBundle:options:completion:;
+- (id)boundAssetsdServices;
+- (void).cxx_destruct;
+- (id)newAssetsdClient;
+- (void)presentedItemDidMoveToURL:;
+- (BOOL)shouldRelinquishToWriterOfSubitemAtURL:;
+- (void)_touch;
+- (void)savePresentedItemChangesWithCompletionHandler:;
+- (id)newLibraryServicesManager;
+- (id)initWithLibraryURL:bundleController:backgroundJobService:libraryServicesDelegateClass:;
+- (void)shutdownWithReason:;
+- (id)newBoundAssetsdServicesTable;
+- (id)_newTouchCoalescer;
+@end

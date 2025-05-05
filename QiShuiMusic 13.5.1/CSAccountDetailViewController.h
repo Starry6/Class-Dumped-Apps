@@ -1,0 +1,38 @@
+@interface CSAccountDetailViewController : UITableViewController
+@property (nonatomic) NSArray sections;
+@property (nonatomic) NSArray appItems;
+@property (nonatomic) NSArray certItems;
+- (void)viewDidLoad;
+- (void)setupData;
+- (id)parseAllEntitlements:;
+- (id)displayNameForEntitlementKey:;
+- (id)iconNameForEntitlementKey:;
+- (id)determineProfileType:;
+- (id)readProvisioningProfile;
+- (id)getDeviceModelIdentifier;
+- (id)safeStringFromObject:;
+- (id)formatDate:withFormatter:;
+- (id)formatPushEnvironment:;
+- (id)formatPermissionValue:;
+- (id)createPermissionItem:value:iconName:;
+- (long long)numberOfSectionsInTableView:;
+- (long long)tableView:numberOfRowsInSection:;
+- (id)tableView:cellForRowAtIndexPath:;
+- (void)handleLongPress:;
+- (void)showToastMessage:;
+- (id)tableView:titleForHeaderInSection:;
+- (double)tableView:heightForRowAtIndexPath:;
+- (void)tableView:willDisplayCell:forRowAtIndexPath:;
+- (void)tableView:didSelectRowAtIndexPath:;
+- (void)showPermissionDetail:;
+- (void)showFullPermissionDetail:;
+- (void)copyPermissionDetail:;
+- (void)closeButtonTapped;
+- (id)sections;
+- (void)setSections:;
+- (id)appItems;
+- (void)setAppItems:;
+- (id)certItems;
+- (void)setCertItems:;
+- (void).cxx_destruct;
+@end

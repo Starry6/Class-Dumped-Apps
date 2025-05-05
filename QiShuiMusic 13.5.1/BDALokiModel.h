@@ -1,0 +1,37 @@
+@interface BDALokiModel : MTLModel
+@property (nonatomic) NSDictionary data;
+@property (nonatomic) NSString url;
+@property (nonatomic) NSString componentId;
+@property (nonatomic) BDALokiLayoutModel layout;
+@property (nonatomic) NSDictionary lynxGlobalProps;
+@property (nonatomic) NSDictionary hostData;
+@property (nonatomic) NSString lokiScene;
+@property (nonatomic) q componentType;
+@property (nonatomic) NSString type;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)lynxGlobalProps;
+- (void)setComponentId:;
+- (id)componentId;
+- (id)lokiScene;
+- (void)setHostData:;
+- (void)setLokiScene:;
+- (void)setLynxGlobalProps:;
+- (long long)componentType;
+- (id)url;
+- (id)data;
+- (void)setComponentType:;
+- (void)setLayout:;
+- (void)setType:;
+- (void)setUrl:;
+- (id)layout;
+- (id)type;
+- (void).cxx_destruct;
+- (void)setData:;
+- (id)hostData;
++ (BOOL)automaticallyDefaultMapping;
++ (id)layoutJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

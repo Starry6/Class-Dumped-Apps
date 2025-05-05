@@ -1,0 +1,34 @@
+@interface ICRadioStationMetadata : NSObject
+@property (nonatomic) ICStoreArtworkInfo artworkInfo;
+@property (nonatomic) NSString coreSeedName;
+@property (nonatomic) NSString descriptionText;
+@property (nonatomic) NSString name;
+@property (nonatomic) NSString stationHash;
+@property (nonatomic) q stationID;
+@property (nonatomic) NSString stationStringID;
+@property (nonatomic) NSString playbackAuthorizationToken;
+@property (nonatomic) NSString attributionLabel;
+@property (nonatomic) q type;
+@property (nonatomic) q subtype;
+@property (nonatomic) BOOL allowsItemLiking;
+@property (nonatomic) BOOL allowsSharing;
+@property (nonatomic) BOOL subscriptionRequired;
+@property (nonatomic) ICRadioStationProviderResource providerResource;
+- (long long)subtype;
+- (id)descriptionText;
+- (id)initWithResponseDictionary:;
+- (id)playbackAuthorizationToken;
+- (long long)type;
+- (void).cxx_destruct;
+- (id)name;
+- (BOOL)allowsSharing;
+- (long long)stationID;
+- (id)stationHash;
+- (id)stationStringID;
+- (BOOL)allowsItemLiking;
+- (id)attributionLabel;
+- (BOOL)isSubscriptionRequired;
+- (id)artworkInfo;
+- (id)coreSeedName;
+- (id)providerResource;
+@end

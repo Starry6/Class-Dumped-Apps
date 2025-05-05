@@ -1,0 +1,33 @@
+@interface IMCollaborationNoticeMetadata : NSObject
+@property (nonatomic) q type;
+@property (nonatomic) NSNumber typeNumber;
+@property (nonatomic) NSString bundleIdentifier;
+@property (nonatomic) NSURL contentURL;
+@property (nonatomic) NSString contentTitle;
+@property (nonatomic) UTType contentType;
+@property (nonatomic) NSString messageGUID;
+- (void)setContentType:;
+- (id)bundleIdentifier;
+- (id)contentType;
+- (void)setType:;
+- (id)contentURL;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)setBundleIdentifier:;
+- (void)encodeWithCoder:;
+- (long long)type;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setContentURL:;
+- (id)contentTitle;
+- (void)setMessageGUID:;
+- (id)messageGUID;
+- (void)setContentTitle:;
+- (id)initWithNoticeType:bundleIdentifier:contentURL:contentTitle:contentType:messageGUID:;
+- (id)typeNumber;
+- (void)setTypeNumber:;
++ (BOOL)supportsSecureCoding;
++ (id)metadataWithType:bundleIdentifier:contentURL:contentTitle:contentType:messageGUID:;
+@end

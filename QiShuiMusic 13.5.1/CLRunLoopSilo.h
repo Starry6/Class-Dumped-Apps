@@ -1,0 +1,22 @@
+@interface CLRunLoopSilo : CLSilo
+- (void)sync:;
+- (id)runloop;
+- (void)assertInside;
+- (void)heartBeat:;
+- (id)initWithUnderlyingRunLoop:;
+- (id)initWithCurrentRunLoopAndIdentifier:;
+- (void)assertOutside;
+- (id)newTimer;
+- (void)suspend;
+- (id)debugDescription;
+- (BOOL)isSuspended;
+- (void)resume;
+- (double)currentLatchedAbsoluteTimestamp;
+- (void)afterInterval:async:;
+- (void).cxx_destruct;
+- (id)getTimeCoercibleVariantInstance;
+- (id)initWithCurrentRunLoopAndIdentifier:bePermissive:;
+- (id)initWithIdentifier:;
+- (BOOL)inPermissiveMode;
+- (void)async:;
+@end

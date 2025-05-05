@@ -1,0 +1,31 @@
+@interface GEOLanguage : PBCodable
+@property (nonatomic) I identifier;
+@property (nonatomic) NSMutableArray languages;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (id)initWithJSON:;
+- (void)setLanguages:;
+- (id)jsonRepresentation;
+- (id)languages;
+- (id)initWithDictionary:;
+- (unsigned int)identifier;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (void)setIdentifier:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)clearLanguages;
+- (void)addLanguage:;
+- (unsigned long long)languagesCount;
+- (id)languageAtIndex:;
++ (BOOL)isValid:;
++ (Class)languageType;
+@end

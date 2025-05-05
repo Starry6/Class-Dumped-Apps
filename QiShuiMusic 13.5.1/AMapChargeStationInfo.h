@@ -1,0 +1,35 @@
+@interface AMapChargeStationInfo : AMapSearchObject
+@property (nonatomic) NSString poiid;
+@property (nonatomic) NSString name;
+@property (nonatomic) NSString brandName;
+@property (nonatomic) q maxPower;
+@property (nonatomic) q chargePercent;
+@property (nonatomic) q chargeTime;
+@property (nonatomic) q remainingCapacity;
+@property (nonatomic) q stepIndex;
+@property (nonatomic) AMapGeoPoint projectivePoint;
+@property (nonatomic) AMapGeoPoint showPoint;
+- (BOOL)ajo_validateValue:forKey:error:;
+- (id)projectivePoint;
+- (long long)chargeTime;
+- (long long)maxPower;
+- (id)poiid;
+- (long long)remainingCapacity;
+- (void)setChargeTime:;
+- (void)setMaxPower:;
+- (void)setPoiid:;
+- (void)setProjectivePoint:;
+- (void)setRemainingCapacity:;
+- (void)setShowPoint:;
+- (id)showPoint;
+- (long long)chargePercent;
+- (void)setChargePercent:;
+- (void)setName:;
+- (void)setBrandName:;
+- (id)brandName;
+- (void).cxx_destruct;
+- (id)name;
+- (long long)stepIndex;
+- (void)setStepIndex:;
++ (id)ajo_mapping;
+@end

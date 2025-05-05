@@ -1,0 +1,34 @@
+@interface AVHapticEvent : NSObject
+@property (nonatomic) double time;
+@property (nonatomic) double duration;
+@property (nonatomic) Q eventCategory;
+@property (nonatomic) Q eventType;
+@property (nonatomic) Q paramType;
+@property (nonatomic) float value;
+@property (nonatomic) ^{AVHapticPlayerFixedParameter=Qf} fixedParams;
+@property (nonatomic) AVHapticPlayerParameterCurve parameterCurve;
+@property (nonatomic) q fixedParamCount;
+- (double)time;
+- (unsigned long long)paramType;
+- (unsigned long long)eventType;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (float)value;
+- (unsigned long long)eventCategory;
+- (double)duration;
+- (id)initWithEventType:time:duration:;
+- (id)initWithEventType:time:parameters:count:duration:;
+- (id)initWithParameter:value:time:;
+- (id)initWithParameterCurve:;
+- (id)fixedParams;
+- (id)parameterCurve;
+- (long long)fixedParamCount;
++ (BOOL)supportsSecureCoding;
++ (id)eventWithEventType:time:;
++ (id)eventWithEventType:time:duration:;
++ (id)eventWithEventType:time:parameters:count:;
++ (id)eventWithEventType:time:parameters:count:duration:;
++ (id)eventWithParameter:value:time:;
++ (id)eventWithParameterCurve:;
+@end

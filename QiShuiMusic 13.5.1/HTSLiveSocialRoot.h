@@ -1,0 +1,2 @@
+@interface HTSLiveSocialRoot : GPBRootObject
+@end

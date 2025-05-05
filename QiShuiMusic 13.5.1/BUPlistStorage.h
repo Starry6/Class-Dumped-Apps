@@ -1,0 +1,37 @@
+@interface BUPlistStorage : NSObject
+@property (nonatomic) NSString filePath;
+@property (nonatomic) NSMutableDictionary data;
+@property (nonatomic) BOOL binaryFormat;
+@property (nonatomic) NSObject<OS_dispatch_queue> concurrentQueue;
+@property (nonatomic) BUPersistenceOption option;
+@property (nonatomic) BUPersistenceLRULinkedList linkedList;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)_setupDataWithPath:options:name:;
+- (void)_setupLinkedList;
+- (id)initWithPath:name:options:;
+- (id)linkedList;
+- (void)p_save;
+- (void)setBinaryFormat:;
+- (void)setLinkedList:;
+- (id)filePath;
+- (BOOL)removeAll;
+- (BOOL)setObject:forKey:;
+- (BOOL)save;
+- (BOOL)binaryFormat;
+- (id)data;
+- (void)setFilePath:;
+- (id)concurrentQueue;
+- (BOOL)removeObjectsForKeys:;
+- (void)setConcurrentQueue:;
+- (id)objectForKey:;
+- (void).cxx_destruct;
+- (void)setOption:;
+- (void)setData:;
+- (id)objectsForKeys:;
+- (id)allObjects;
+- (id)option;
+- (BOOL)hasObjectForKey:;
+@end

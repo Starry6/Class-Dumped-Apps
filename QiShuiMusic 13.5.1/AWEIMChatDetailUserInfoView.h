@@ -1,0 +1,36 @@
+@interface AWEIMChatDetailUserInfoView : UIView
+@property (nonatomic) UIButton followBtn;
+@property (nonatomic) IESIMSaaSAWEIMUser user;
+@property (nonatomic) UIImageView avatarView;
+@property (nonatomic) IESIMUserNameLabel nameLabel;
+@property (nonatomic) UILabel sigLabel;
+@property (nonatomic) UIImageView arrowView;
+@property (nonatomic) UIImageView verifiedLogoView;
+@property (nonatomic) UIView separatorLine;
+@property (nonatomic) @? onFollowButtonClick;
+- (void)p_configWithUser:isPrivateUser:;
+- (void)configWithUser:isPrivateUser:;
+- (id)followBtn;
+- (void)onFollowButtonAction;
+- (id)onFollowButtonClick;
+- (id)p_verifyBadgeImageByUser:;
+- (void)setFollowBtn:;
+- (void)setOnFollowButtonClick:;
+- (void)setSigLabel:;
+- (void)setVerifiedLogoView:;
+- (id)sigLabel;
+- (id)verifiedLogoView;
+- (void)setUser:;
+- (void)layoutSubviews;
+- (id)avatarView;
+- (void)setAvatarView:;
+- (id)initWithFrame:;
+- (id)user;
+- (void).cxx_destruct;
+- (id)nameLabel;
+- (id)arrowView;
+- (void)setArrowView:;
+- (void)setNameLabel:;
+- (id)separatorLine;
+- (void)setSeparatorLine:;
+@end

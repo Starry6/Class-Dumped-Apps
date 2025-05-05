@@ -1,0 +1,30 @@
+@interface TTVideoCacheManager : NSObject
+@property (nonatomic) NSString dir;
+@property (nonatomic) Q maxSize;
+@property (nonatomic) Q totalSize;
+@property (nonatomic) Q videoCacheSize;
+- (void)addCacheInfo:filePath:;
+- (void)addProtectKey:;
+- (BOOL)checkCacheFileComplete:;
+- (BOOL)checkCacheFileIntegrity:fileHash:fileSize:;
+- (id)getCacheInfo:;
+- (void)loadCacheInfos;
+- (void)removeCacheFiles:;
+- (void)removeCacheInfoIfNeeds:;
+- (void)removeProtectKey:;
+- (void)setCacheParameter:maxSize:;
+- (void)updateCacheInfo:;
+- (unsigned long long)videoCacheSize;
+- (void)compact;
+- (unsigned long long)maxSize;
+- (void)setMaxSize:;
+- (id)init;
+- (void)start;
+- (void).cxx_destruct;
+- (unsigned long long)totalSize;
+- (void)setDir:;
+- (void)setTotalSize:;
+- (id)dir;
++ (id)cacheFilePath:dir:;
++ (id)shared;
+@end

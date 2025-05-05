@@ -1,0 +1,2 @@
+@interface TTAccountPassportShareResp : TTAccountAuthResponse
+@end

@@ -1,0 +1,33 @@
+@interface CLPInstSchemaCLPNLv4SampleEvaluationFailed : SISchemaInstrumentationMessage
+@property (nonatomic) BOOL userProfileSandboxFailure;
+@property (nonatomic) BOOL hasUserProfileSandboxFailure;
+@property (nonatomic) BOOL xpcClientDisconnected;
+@property (nonatomic) BOOL hasXpcClientDisconnected;
+@property (nonatomic) BOOL xpcClientNLURequestTimeout;
+@property (nonatomic) BOOL hasXpcClientNLURequestTimeout;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)setUserProfileSandboxFailure:;
+- (BOOL)hasUserProfileSandboxFailure;
+- (void)setHasUserProfileSandboxFailure:;
+- (void)deleteUserProfileSandboxFailure;
+- (void)setXpcClientDisconnected:;
+- (BOOL)hasXpcClientDisconnected;
+- (void)setHasXpcClientDisconnected:;
+- (void)deleteXpcClientDisconnected;
+- (void)setXpcClientNLURequestTimeout:;
+- (BOOL)hasXpcClientNLURequestTimeout;
+- (void)setHasXpcClientNLURequestTimeout:;
+- (void)deleteXpcClientNLURequestTimeout;
+- (BOOL)userProfileSandboxFailure;
+- (BOOL)xpcClientDisconnected;
+- (BOOL)xpcClientNLURequestTimeout;
+@end

@@ -1,0 +1,30 @@
+@interface AWEIMMessageInteractiveUserListCollectionViewCell : UICollectionViewCell
+@property (nonatomic) UITableView tableView;
+@property (nonatomic) NSArray propertyList;
+@property (nonatomic) BOOL isMultiType;
+@property (nonatomic) NSString conversationID;
+@property (nonatomic) @? userCellTappedBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setIsMultiType:;
+- (void)configWithPropertyList:;
+- (BOOL)isMultiType;
+- (void)setUserCellTappedBlock:;
+- (id)userCellTappedBlock;
+- (id)propertyList;
+- (void)layoutSubviews;
+- (id)tableView:cellForRowAtIndexPath:;
+- (id)initWithFrame:;
+- (double)tableView:heightForRowAtIndexPath:;
+- (void)tableView:didSelectRowAtIndexPath:;
+- (void).cxx_destruct;
+- (void)setTableView:;
+- (id)conversationID;
+- (id)tableView;
+- (long long)tableView:numberOfRowsInSection:;
+- (void)setConversationID:;
+- (void)setPropertyList:;
++ (id)identifier;
+@end

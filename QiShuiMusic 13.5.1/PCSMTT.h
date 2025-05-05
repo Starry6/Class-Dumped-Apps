@@ -1,0 +1,31 @@
+@interface PCSMTT : NSObject
+@property (nonatomic) NSDate startTime;
+@property (nonatomic) NSMutableArray completedPoints;
+@property (nonatomic) NSUUID parentUUID;
+@property (nonatomic) NSUUID UUID;
+@property (nonatomic) double time;
+@property (nonatomic) BOOL returnedExistingIdentity;
+- (id)init;
+- (double)time;
+- (void)start;
+- (void)setStartTime:;
+- (void)stop;
+- (id)initWithCoder:;
+- (id)startTime;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)jsonDict;
+- (id)UUID;
+- (id)parentUUID;
+- (id)initWithMTT:;
+- (void)measure:block:;
+- (void)measure:success:time:;
+- (id)measurePoint:;
+- (void)completePoint:;
+- (BOOL)returnedExistingIdentity;
+- (void)setReturnedExistingIdentity:;
+- (id)completedPoints;
+- (void)setCompletedPoints:;
++ (BOOL)supportsSecureCoding;
+@end

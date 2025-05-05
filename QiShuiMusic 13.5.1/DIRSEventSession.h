@@ -1,0 +1,37 @@
+@interface DIRSEventSession : DIRSBasicModule
+@property (nonatomic) NSString sessionId;
+@property (nonatomic) NSDictionary latestLaunchDict;
+@property (nonatomic) BOOL enteredBackground;
+@property (nonatomic) BOOL launched;
+@property (nonatomic) Q launchType;
+@property (nonatomic) BOOL isEnabled;
+@property (nonatomic) q state;
+@property (nonatomic) DIRSContext context;
+@property (nonatomic) NSString category;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)_trackTerminate;
+- (void)onApplicationDidEnterBackground;
+- (void)_trackLaunch;
+- (BOOL)enteredBackground;
+- (id)latestLaunchDict;
+- (BOOL)launched;
+- (void)onApplicationWillEnterForeground;
+- (void)sessionUpdate;
+- (void)setEnteredBackground:;
+- (void)setLatestLaunchDict:;
+- (void)setLaunched:;
+- (void)trackLaunch;
+- (void)trackTerminate;
+- (void)setSessionId:;
+- (id)sessionId;
+- (void)setLaunchType:;
+- (void)commonInit;
+- (unsigned long long)launchType;
+- (void).cxx_destruct;
++ (id)moduleId;
++ (long long)priority;
++ (id)moduleVersion;
+@end

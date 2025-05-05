@@ -1,0 +1,34 @@
+@interface GEOVLFInitializationFailureDetails : PBCodable
+@property (nonatomic) BOOL hasArkitErrorCode;
+@property (nonatomic) NSInteger arkitErrorCode;
+@property (nonatomic) BOOL hasArkitUnderlyingErrorCode;
+@property (nonatomic) NSInteger arkitUnderlyingErrorCode;
+@property (nonatomic) BOOL hasArkitUnderlyingErrorDomain;
+@property (nonatomic) NSString arkitUnderlyingErrorDomain;
+- (void)readAll:;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (int)arkitErrorCode;
+- (void)setArkitErrorCode:;
+- (void)setHasArkitErrorCode:;
+- (BOOL)hasArkitErrorCode;
+- (int)arkitUnderlyingErrorCode;
+- (void)setArkitUnderlyingErrorCode:;
+- (void)setHasArkitUnderlyingErrorCode:;
+- (BOOL)hasArkitUnderlyingErrorCode;
+- (BOOL)hasArkitUnderlyingErrorDomain;
+- (id)arkitUnderlyingErrorDomain;
+- (void)setArkitUnderlyingErrorDomain:;
++ (BOOL)isValid:;
+@end

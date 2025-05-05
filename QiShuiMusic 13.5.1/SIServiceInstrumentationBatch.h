@@ -1,0 +1,36 @@
+@interface SIServiceInstrumentationBatch : SISchemaInstrumentationMessage
+@property (nonatomic) NSString app_id;
+@property (nonatomic) BOOL hasApp_id;
+@property (nonatomic) SIServiceBatchInfo batch_info;
+@property (nonatomic) BOOL hasBatch_info;
+@property (nonatomic) NSArray events;
+@property (nonatomic) NSData jsonData;
+- (unsigned long long)eventCount;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void)setEvents:;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (id)events;
+- (BOOL)readFrom:;
+- (void)addEvent:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)eventAtIndex:;
+- (id)app_id;
+- (void)setApp_id:;
+- (void)deleteEvent;
+- (BOOL)hasApp_id;
+- (void)deleteApp_id;
+- (BOOL)hasBatch_info;
+- (void)deleteBatch_info;
+- (void)clearEvent;
+- (id)batch_info;
+- (void)setBatch_info:;
+- (void)setHasApp_id:;
+- (void)setHasBatch_info:;
+@end

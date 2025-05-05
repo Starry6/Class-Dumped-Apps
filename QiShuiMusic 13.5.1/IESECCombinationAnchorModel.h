@@ -1,0 +1,32 @@
+@interface IESECCombinationAnchorModel : MTLModel
+@property (nonatomic) double positonX;
+@property (nonatomic) double positonY;
+@property (nonatomic) NSString direction;
+@property (nonatomic) IESECURLModel iconImage;
+@property (nonatomic) NSString goodsTitle;
+@property (nonatomic) NSString goodsPrice;
+@property (nonatomic) NSString urlSchema;
+@property (nonatomic) NSString productID;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)goodsPrice;
+- (id)goodsTitle;
+- (double)positonX;
+- (double)positonY;
+- (void)setGoodsPrice:;
+- (void)setGoodsTitle:;
+- (void)setPositonX:;
+- (void)setPositonY:;
+- (void)setUrlSchema:;
+- (id)urlSchema;
+- (id)productID;
+- (id)direction;
+- (void)setDirection:;
+- (void)setProductID:;
+- (void)setIconImage:;
+- (void).cxx_destruct;
+- (id)iconImage;
++ (id)JSONKeyPathsByPropertyKey;
+@end

@@ -1,0 +1,2 @@
+@interface HTSLiveLinkmicThemedCompetitionMessageRoot : GPBRootObject
+@end

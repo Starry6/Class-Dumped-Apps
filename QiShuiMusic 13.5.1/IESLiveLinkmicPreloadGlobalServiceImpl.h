@@ -1,0 +1,31 @@
+@interface IESLiveLinkmicPreloadGlobalServiceImpl : NSObject
+@property (nonatomic) <IESLiveRoomServiceAdapter> room;
+@property (nonatomic) <IESLivePlayerProtocol> player;
+@property (nonatomic) UIView container;
+@property (nonatomic) IESLiveGCDTimer protectTimer;
+@property (nonatomic) BOOL isPreloading;
+@property (nonatomic) BOOL isAnimating;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)roomDidPreload:;
+- (void)cleanBaseInfo;
+- (void)createCutInfoForBigPartyWithLinkmicEnterInfo:diContext:completion:;
+- (BOOL)isFloatDynamicLayoutWithLinkmicEnterInfo:;
+- (void)preloadCancel:;
+- (void)preloadWithRoom:player:container:;
+- (id)protectTimer;
+- (void)setIsPreloading:;
+- (void)setProtectTimer:;
+- (void)setContainer:;
+- (BOOL)isAnimating;
+- (id)container;
+- (id)player;
+- (void).cxx_destruct;
+- (void)setPlayer:;
+- (void)setIsAnimating:;
+- (id)room;
+- (void)setRoom:;
+- (BOOL)isPreloading;
+@end

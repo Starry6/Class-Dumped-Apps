@@ -1,0 +1,37 @@
+@interface ASORemoteOverlay : NSObject
+@property (nonatomic) BOOL isLoaded;
+@property (nonatomic) BOOL isActive;
+@property (nonatomic) ASOOverlayTransitionContext presentationTransitionContext;
+@property (nonatomic) <ASORemoteContextProvider> contextProvider;
+@property (nonatomic) <ASOOverlay> overlay;
+@property (nonatomic) ASCSignpostSpan hostSpan;
+@property (nonatomic) <ASOOverlayConfiguration> overlayConfiguration;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)overlay;
+- (id)context;
+- (void)setIsActive:;
+- (void)setOverlay:;
+- (void)setIsLoaded:;
+- (void).cxx_destruct;
+- (void)finishWithError:;
+- (BOOL)isLoaded;
+- (BOOL)isActive;
+- (id)overlayConfiguration;
+- (id)contextProvider;
+- (void)setContextProvider:;
+- (void)remoteStoreOverlayDidFailToLoadWithError:;
+- (void)remoteStoreOverlayWillStartPresenting:executeBlock:;
+- (void)remoteStoreOverlayDidFinishPresentation:;
+- (void)remoteStoreOverlayWillStartDismissing:executeBlock:;
+- (void)remoteStoreOverlayDidFinishDismissal:;
+- (id)initWithOverlay:contextProvider:hostSpan:;
+- (id)presentOverlayOperation;
+- (id)hostSpan;
+- (id)presentationTransitionContext;
+- (void)setPresentationTransitionContext:;
++ (id)log;
++ (id)dismissOverlayOperationWithContextProvider:;
+@end

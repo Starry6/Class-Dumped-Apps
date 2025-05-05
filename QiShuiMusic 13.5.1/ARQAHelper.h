@@ -1,0 +1,31 @@
+@interface ARQAHelper : NSObject
++ (id)arrayWithVector2:;
++ (id)arrayWithVector3:;
++ (id)arrayWithVector4:;
++ (id)arrayWithMatrix4x4:;
++ (id)arrayWithMatrix3x3:;
++ (id)arrayOf2dPoints:count:;
++ (id)arrayOf3dPoints:count:;
++ (id)generateTagsForConfiguration:replaySensor:technique:;
++ (void)traverseTechniques:withBlock:;
++ (void)techniquesArray:array:;
++ (id)headerInformationWithConfiguration:technique:;
++ (id)dictionaryFromPlaneExtent:;
++ (id)dictionaryFromVertices:vertexCount:textureCoordinates:textureCoordinateCount:;
++ (id)dictionaryFromMeshGeometry:;
++ (id)dictionaryFromPatchGrid:;
++ (id)extractAnchorDataForFrame:;
++ (id)extractDetectedBodiesForFrame:;
++ (id)traceFrameData:withFrameIndex:;
++ (id)traceFrameData:withFrameIndex:writeOBJ:;
++ (id)dictionaryFromCLLocation:;
++ (id)dictionaryFromRawCLLocation:;
++ (id)dictionaryFromRaycastQuery:;
++ (id)arrayFromRaycastResults:;
++ (float)_meanDepthValueOfDepthBuffer:consideringSegmentation:ofSegmentationBuffer:;
++ (id)formatDescriptionForAnchor;
++ (id)dictionaryFromAnchor:;
++ (id)formatDescriptionForPlaneAnchor;
++ (id)dictionaryFromPlaneAnchor:;
++ (id)dictionaryFromMeshAnchor:;
+@end

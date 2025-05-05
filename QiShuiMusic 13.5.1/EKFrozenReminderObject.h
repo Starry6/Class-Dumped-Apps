@@ -1,0 +1,37 @@
+@interface EKFrozenReminderObject : EKPersistentObject
+@property (nonatomic) EKChangeSet uncommittedChanges;
+@property (nonatomic) NSArray path;
+- (id)remObjectID;
+- (id)path;
+- (id)uniqueIdentifier;
+- (void)setPath:;
+- (id)changeSet;
+- (BOOL)isNew;
+- (unsigned long long)hash;
+- (id)initWithObject:;
+- (BOOL)isFrozen;
+- (void).cxx_destruct;
+- (int)entityType;
+- (BOOL)isEqual:;
+- (BOOL)isPartialObject;
+- (id)semanticIdentifier;
+- (id)initWithREMObject:inStore:withChanges:;
+- (BOOL)_applyChangesToSaveRequest:error:;
+- (id)existingMeltedObject;
+- (id)frozenObject;
+- (BOOL)isPropertyUnavailable:;
+- (BOOL)isCompletelyEqual:;
+- (BOOL)isEqual:ignoringProperties:;
+- (BOOL)existsInStore;
+- (id)updateParentToCommitSelf:;
+- (id)initWithREMObject:inStore:;
+- (id)REMObject;
+- (id)updatedFrozenObjectWithChanges:;
+- (id)updatedFrozenObjectWithChanges:updatedChildren:;
+- (id)valueForSingleValueKey:backingValue:;
+- (id)uncommittedChanges;
++ (Class)frozenClass;
++ (Class)meltedClass;
++ (id)uniqueIdentifierForREMObject:;
++ (BOOL)canCommitSelf;
+@end

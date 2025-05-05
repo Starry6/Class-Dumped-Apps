@@ -1,0 +1,2 @@
+@interface MPSNNMultiaryGradientStateNode : MPSNNStateNode
+@end

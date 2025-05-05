@@ -1,0 +1,32 @@
+@interface BDARPreloadManager : NSObject
+@property (nonatomic) BOOL isEnginePreloaderStarted;
+@property (nonatomic) NSMutableArray preloadedVids;
+@property (nonatomic) NSMutableArray preloadingVids;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)savePreloadVids;
+- (id)dicWithTaskInfo:;
+- (BOOL)isEnginePreloaderStarted;
+- (void)playerConfig;
+- (id)preloadedVids;
+- (id)preloadingVids;
+- (void)savePreloadInfo:;
+- (void)setIsEnginePreloaderStarted:;
+- (void)setPreloadedVids:;
+- (void)setPreloadingVids:;
+- (id)taskInfoWithDictionary:;
+- (id)init;
+- (void).cxx_destruct;
++ (void)startPreloadWithAdModel:finish:;
++ (BOOL)enablePlayerPreloadOptimizeAtBannerWithVideoId:withSDKAB:;
++ (BOOL)enablePlayerPreloadOptimizeWithVideoId:withSDKAB:;
++ (BOOL)isPreloadWithVideoId:;
++ (void)playerPreloadStatusMonitorWithError:;
++ (long long)playerResolutionWithVideoId:;
++ (void)removeExpiredCache;
++ (void)startPreload:;
++ (void)startPreloadWithVideoID:;
++ (id)sharedInstance;
+@end

@@ -1,0 +1,37 @@
+@interface IESECWinTabObject : NSObject
+@property (nonatomic) NSArray tabs;
+@property (nonatomic) IESECWinTabListModel selectTab;
+@property (nonatomic) BOOL isWindowUpgrade;
+@property (nonatomic) Q splitConfigType;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} cardRect;
+@property (nonatomic) BOOL shouldSticky;
+@property (nonatomic) BOOL hasSetStickyHeight;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)isWindowUpgrade;
+- (unsigned long long)splitConfigType;
+- (BOOL)getShouldSticky;
+- (id)cardRect;
+- (void)configCardFrame:;
+- (id)diffIdentifier;
+- (BOOL)getHasSetStickyHeight;
+- (id)getcardRect;
+- (BOOL)hasSetStickyHeight;
+- (BOOL)isEqualToDiffableObject:;
+- (BOOL)moveInSplit;
+- (id)selectTab;
+- (void)setCardRect:;
+- (void)setHasSetStickyHeight:;
+- (void)setIsWindowUpgrade:;
+- (void)setSelectTab:;
+- (void)setShouldSticky:;
+- (void)setSplitConfigType:;
+- (void)sethasSetStickyHeight:;
+- (BOOL)shouldSticky;
+- (BOOL)showInSplit;
+- (id)tabs;
+- (void).cxx_destruct;
+- (void)setTabs:;
+@end

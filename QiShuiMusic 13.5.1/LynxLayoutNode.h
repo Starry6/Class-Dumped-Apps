@@ -1,0 +1,38 @@
+@interface LynxLayoutNode : LynxComponent
+@property (nonatomic) q sign;
+@property (nonatomic) NSString tagName;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} frame;
+@property (nonatomic) {UIEdgeInsets=dddd} padding;
+@property (nonatomic) {UIEdgeInsets=dddd} margin;
+@property (nonatomic) {UIEdgeInsets=dddd} border;
+@property (nonatomic) LynxLayoutStyle style;
+@property (nonatomic) <LynxMeasureDelegate> measureDelegate;
+@property (nonatomic) <LynxCustomMeasureDelegate> customMeasureDelegate;
+@property (nonatomic) ^v layoutNodeManagerPtr;
+- (void)layoutDidUpdate;
+- (id)measureDelegate;
+- (void)adoptNativeLayoutNode:;
+- (id)customMeasureDelegate;
+- (id)initWithSign:tagName:;
+- (void)internalSetNeedsLayoutForce;
+- (void)layoutDidStart;
+- (id)layoutNodeManagerPtr;
+- (id)measureWithWidth:widthMode:height:heightMode:finalMeasure:;
+- (void)setCustomMeasureDelegate:;
+- (void)setLayoutNodeManagerPtr:;
+- (void)setMeasureDelegate:;
+- (long long)sign;
+- (void)turboNativeLayoutNode;
+- (void)updateLayoutWithFrame:;
+- (id)border;
+- (id)margin;
+- (id)frame;
+- (void)setNeedsLayout;
+- (void).cxx_destruct;
+- (id)padding;
+- (BOOL)needsLayout;
+- (id)style;
+- (id)tagName;
+- (BOOL)hasCustomLayout;
+- (void)align;
+@end

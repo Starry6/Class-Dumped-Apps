@@ -1,0 +1,31 @@
+@interface UIDragPreview : NSObject
+@property (nonatomic) BOOL preventAfterScreenUpdatesSnapshot;
+@property (nonatomic) BOOL avoidAnimation;
+@property (nonatomic) {CGPoint=dd} preferredAnchorPoint;
+@property (nonatomic) _DUIPreview _duiPreview;
+@property (nonatomic) BOOL _springboardPlatterStyle;
+@property (nonatomic) NSDictionary _springboardParameters;
+@property (nonatomic) UIView view;
+@property (nonatomic) UIDragPreviewParameters parameters;
+- (id)initWithView:;
+- (id)view;
+- (id)parameters;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (id)initWithView:parameters:;
+- (void)set_springboardPlatterStyle:;
+- (BOOL)_springboardPlatterStyle;
+- (BOOL)avoidAnimation;
+- (void)setAvoidAnimation:;
+- (id)_duiPreview;
+- (BOOL)_preventAfterScreenUpdatesSnapshot;
+- (void)_setPreventAfterScreenUpdatesSnapshot:;
+- (id)_springboardParameters;
+- (void)set_springboardParameters:;
+- (void)setPreferredAnchorPoint:;
+- (id)preferredAnchorPoint;
++ (id)previewForURL:;
++ (id)previewForURL:title:;
++ (id)defaultBoundingSize;
++ (id)textBoundingSize;
+@end

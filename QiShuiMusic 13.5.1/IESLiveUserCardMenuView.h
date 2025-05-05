@@ -1,0 +1,34 @@
+@interface IESLiveUserCardMenuView : UIView
+@property (nonatomic) IESLiveUserPreviewLikeDigAnimationView animationContain;
+@property (nonatomic) IESLiveUserCardStore store;
+@property (nonatomic) double viewWidth;
+@property (nonatomic) LOTAnimationView adventureInviteLottieView;
+@property (nonatomic) UIView adventureInviteTagView;
+- (void)onItemSelected:;
+- (double)widthOfMenuView;
+- (BOOL)actionsContainGame:;
+- (void)addAdventureInviteLottieView:rightView:actionButton:isMoreButton:;
+- (void)addAllActionsToMore:;
+- (id)adventureInviteLottieView;
+- (id)adventureInviteTagView;
+- (id)animationContain;
+- (void)cofingWithStore:;
+- (void)configWithActions:;
+- (id)createActionButton:tag:;
+- (id)createSeperatorView;
+- (void)onMoreTapped:;
+- (void)onMoreTappedWhenRelationEntranceShow:;
+- (id)renderActionItem:tag:;
+- (void)renderLiekButton:;
+- (void)setAdventureInviteLottieView:;
+- (void)setAdventureInviteTagView:;
+- (void)setAnimationContain:;
+- (void)setViewWidth:;
+- (BOOL)showLikeButtonWithConfig:;
+- (void)setStore:;
+- (void)layoutSubviews;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (id)store;
+- (double)viewWidth;
+@end

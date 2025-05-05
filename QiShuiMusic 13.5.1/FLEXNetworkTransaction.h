@@ -1,0 +1,31 @@
+@interface FLEXNetworkTransaction : NSObject
+@property (nonatomic) NSError error;
+@property (nonatomic) BOOL displayAsError;
+@property (nonatomic) NSDate startTime;
+@property (nonatomic) q state;
+@property (nonatomic) q receivedDataLength;
+@property (nonatomic) UIImage thumbnail;
+@property (nonatomic) NSString primaryDescription;
+@property (nonatomic) NSString secondaryDescription;
+@property (nonatomic) NSString tertiaryDescription;
+@property (nonatomic) NSString copyString;
+- (id)timestampStringFromRequestDate:;
+- (void)setState:;
+- (BOOL)displayAsError;
+- (id)copyString;
+- (BOOL)matchesQuery:;
+- (id)error;
+- (void)setError:;
+- (id)startTime;
+- (long long)state;
+- (long long)receivedDataLength;
+- (void)setReceivedDataLength:;
+- (id)thumbnail;
+- (void)setThumbnail:;
+- (id)primaryDescription;
+- (id)secondaryDescription;
+- (id)tertiaryDescription;
+- (void).cxx_destruct;
++ (id)readableStringFromTransactionState:;
++ (id)withStartTime:;
+@end

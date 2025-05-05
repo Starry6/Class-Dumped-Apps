@@ -1,0 +1,33 @@
+@interface MRNowPlayingOriginClientRequests : NSObject
+@property (nonatomic) MROrigin origin;
+@property (nonatomic) MRPlayerPath playerPath;
+@property (nonatomic) NSArray nowPlayingClientRequests;
+@property (nonatomic) MRDeviceInfo deviceInfo;
+@property (nonatomic) NSNumber volumeCapabilities;
+@property (nonatomic) NSNumber volume;
+@property (nonatomic) NSDate lastPlayingDate;
+- (void)restoreNowPlayingClientState;
+- (id)volumeCapabilities;
+- (void)removeClient:;
+- (void)handleLastPlayingDateRequestWithCompletion:;
+- (void)setDeviceInfo:;
+- (id)nowPlayingClientRequestsForPlayerPath:;
+- (void)handleVolumeRequestWithCompletion:;
+- (id)deviceInfo;
+- (id)volume;
+- (void)dealloc;
+- (void)setVolume:;
+- (id)debugDescription;
+- (id)origin;
+- (id)lastPlayingDate;
+- (id)initWithOrigin:;
+- (void)handleDeviceInfoRequestWithCompletion:;
+- (void).cxx_destruct;
+- (id)existingNowPlayingClientRequestsForPlayerPath:;
+- (void)removeAllClients;
+- (void)setVolumeCapabilities:;
+- (id)playerPath;
+- (void)setLastPlayingDate:;
+- (void)handleVolumeCapabilitiesRequestWithCompletion:;
+- (id)nowPlayingClientRequests;
+@end

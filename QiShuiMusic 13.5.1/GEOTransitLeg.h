@@ -1,0 +1,35 @@
+@interface GEOTransitLeg : PBCodable
+@property (nonatomic) BOOL hasSectionOptionIndex;
+@property (nonatomic) NSInteger sectionOptionIndex;
+@property (nonatomic) Q restrictedToSectionIndexsCount;
+@property (nonatomic) ^i restrictedToSectionIndexs;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (void)dealloc;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (int)sectionOptionIndex;
+- (void)setSectionOptionIndex:;
+- (void)setHasSectionOptionIndex:;
+- (BOOL)hasSectionOptionIndex;
+- (unsigned long long)restrictedToSectionIndexsCount;
+- (id)restrictedToSectionIndexs;
+- (void)clearRestrictedToSectionIndexs;
+- (void)addRestrictedToSectionIndex:;
+- (int)restrictedToSectionIndexAtIndex:;
+- (void)setRestrictedToSectionIndexs:count:;
++ (BOOL)isValid:;
+@end

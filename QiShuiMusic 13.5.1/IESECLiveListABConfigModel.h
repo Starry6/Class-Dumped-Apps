@@ -1,0 +1,31 @@
+@interface IESECLiveListABConfigModel : MTLModel
+@property (nonatomic) q searchButtonStyle;
+@property (nonatomic) q cartAddEnhanceStyle;
+@property (nonatomic) q liteListStyle;
+@property (nonatomic) q showAuthorConnect;
+@property (nonatomic) BOOL useListProductCardDesign;
+@property (nonatomic) BOOL listCellHeaderHotAtmosphere;
+@property (nonatomic) BOOL listCellHeaderCampaignAtmosphere;
+@property (nonatomic) BOOL instantShortBuyStyle;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setListCellHeaderHotAtmosphere:;
+- (long long)cartAddEnhanceStyle;
+- (BOOL)instantShortBuyStyle;
+- (BOOL)listCellHeaderCampaignAtmosphere;
+- (BOOL)listCellHeaderHotAtmosphere;
+- (long long)liteListStyle;
+- (long long)searchButtonStyle;
+- (void)setCartAddEnhanceStyle:;
+- (void)setInstantShortBuyStyle:;
+- (void)setListCellHeaderCampaignAtmosphere:;
+- (void)setLiteListStyle:;
+- (void)setSearchButtonStyle:;
+- (void)setShowAuthorConnect:;
+- (void)setUseListProductCardDesign:;
+- (long long)showAuthorConnect;
+- (BOOL)useListProductCardDesign;
++ (id)JSONKeyPathsByPropertyKey;
+@end

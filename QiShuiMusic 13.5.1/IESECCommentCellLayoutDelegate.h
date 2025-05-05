@@ -1,0 +1,33 @@
+@interface IESECCommentCellLayoutDelegate : NSObject
+@property (nonatomic) IESECGoodsCommentPageResponse commentPageResponse;
+@property (nonatomic) IESECCommentDataController dataController;
+@property (nonatomic) double sideSpace;
+@property (nonatomic) double normalHorizontalSpace;
+@property (nonatomic) double normalVerticalSpace;
+@property (nonatomic) double normalCellWidth;
+@property (nonatomic) double impressTagBottomOffset;
+@property (nonatomic) double commentListTopOffset;
+@property (nonatomic) double impressTagTopOffset;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (double)normalCellWidth;
+- (double)commentListTopOffset;
+- (id)commentPageResponse;
+- (double)impressTagBottomOffset;
+- (double)impressTagTopOffset;
+- (double)normalHorizontalSpace;
+- (double)normalVerticalSpace;
+- (void)setCommentPageResponse:;
+- (void)setDataController:;
+- (double)sideSpace;
+- (id)sizeForCommentItemAtIndexPath:;
+- (id)sizeForFooterWithCollectionViewH:maxY:;
+- (id)sizeForImpressionTagAtIndex:;
+- (id)sizeForNCellAtIndex:;
+- (void).cxx_destruct;
+- (id)dataController;
++ (void)setupShopReplyAttributeStringIfNeeded:;
++ (id)sizeForNCellNewStyleWithModel:dataController:atIndex:;
+@end

@@ -1,0 +1,35 @@
+@interface PCCProxyingDevice : NSObject
+@property (nonatomic) double requestTimeout;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)startTimer;
+- (id)initWithEndpoint:;
+- (BOOL)listener:shouldAcceptNewConnection:;
+- (void)handleMessage:from:;
+- (void).cxx_destruct;
+- (void)setRequestTimeout:;
+- (double)requestTimeout;
+- (void)handleFile:from:metadata:;
+- (void)ack:result:error:;
+- (void)handleConnection:from:;
+- (void)request:transferGroupWithOptions:onComplete:;
+- (void)request:logListWithOptions:onComplete:;
+- (void)request:transferLog:withOptions:onComplete:;
+- (void)requestProxyMetadata:onComplete:;
+- (void)deliver:tasking:taskId:fromBlob:;
+- (void)synchronize:withOptions:onComplete:;
+- (void)listDevices:;
+- (void)request:logList:;
+- (void)request:transferLog:onComplete:;
+- (void)summarizeLog:reason:;
+- (void)receivedReport:from:metadata:;
+- (BOOL)isFilenameReasonable:;
+- (void)updateProxiedDeviceMetadata:from:;
+- (void)startRequest:message:onComplete:;
+- (void)addRequest:event:type:onComplete:;
+- (void)finishRequest:result:;
+- (void)finishRequestWithMessage:result:;
+- (void)diagnosticResultsEvent:type:result:;
+@end

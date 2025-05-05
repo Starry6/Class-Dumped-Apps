@@ -1,0 +1,36 @@
+@interface IESLiveSaaSSaveDraftJSBParamObject : NSObject
+@property (nonatomic) NSString videoID;
+@property (nonatomic) NSString videoURL;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString roomID;
+@property (nonatomic) NSString roomTimeStr;
+@property (nonatomic) NSNumber startTime;
+@property (nonatomic) NSNumber endTime;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) NSString fragmentID;
+@property (nonatomic) NSDictionary shoppingExtras;
+@property (nonatomic) NSDictionary trackExtras;
+- (void)setRoomTimeStr:;
+- (void)setTrackExtras:;
+- (id)enterFrom;
+- (id)fragmentID;
+- (id)roomTimeStr;
+- (void)setEnterFrom:;
+- (void)setFragmentID:;
+- (void)setShoppingExtras:;
+- (id)shoppingExtras;
+- (id)trackExtras;
+- (id)videoURL;
+- (void)setStartTime:;
+- (void)setEndTime:;
+- (void)setTitle:;
+- (id)startTime;
+- (id)endTime;
+- (id)title;
+- (void)setVideoURL:;
+- (void).cxx_destruct;
+- (id)roomID;
+- (void)setRoomID:;
+- (id)videoID;
+- (void)setVideoID:;
+@end

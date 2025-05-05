@@ -1,0 +1,30 @@
+@interface BWVideoDepthInferenceConfiguration : BWInferenceConfiguration
+@property (nonatomic) NSInteger videoDepthAlgorithm;
+@property (nonatomic) {?=ii} outputDimensions;
+@property (nonatomic) {?=ii} inputDimensions;
+@property (nonatomic) {?=ii} featuresDimensions;
+@property (nonatomic) NSString portType;
+@property (nonatomic) Q concurrencyWidth;
+@property (nonatomic) I temporalDepthInputPixelFormat;
+@property (nonatomic) I featuresPixelFormat;
+@property (nonatomic) <MTLEvent> backpressureEvent;
+@property (nonatomic) NSInteger videoDepthLayout;
+@property (nonatomic) BOOL requiresAppleDepthPostProcessing;
+@property (nonatomic) float networkBias;
+- (id)portType;
+- (void)dealloc;
+- (id)outputDimensions;
+- (float)networkBias;
+- (id)inputDimensions;
+- (unsigned long long)concurrencyWidth;
+- (id)initWithConcurrencyWidth:videoDepthLayout:captureDevice:backpressureEvent:;
+- (id)initWithConcurrencyWidth:videoDepthLayout:captureDevice:overrideOutputDimensions:backpressureEvent:;
+- (int)videoDepthAlgorithm;
+- (unsigned int)temporalDepthInputPixelFormat;
+- (id)backpressureEvent;
+- (int)videoDepthLayout;
+- (BOOL)requiresAppleDepthPostProcessing;
+- (void)setRequiresAppleDepthPostProcessing:;
+- (id)featuresDimensions;
+- (unsigned int)featuresPixelFormat;
+@end

@@ -1,0 +1,31 @@
+@interface IESLiveLinkmicCanvasViewModel : NSObject
+@property (nonatomic) <IESLiveLinkmicCanvasLayoutProvider> layoutProvider;
+@property (nonatomic) @? onCellModelsUpdateBlock;
+@property (nonatomic) NSArray cellModels;
+@property (nonatomic) NSArray cellSlotConfigs;
+@property (nonatomic) NSArray separatorSlotConfigs;
+- (id)cellSlotConfigs;
+- (id)cellModelWithConfig:;
+- (id)cellModelWithIndex:;
+- (id)cellModels;
+- (id)createCellModelsWithConfigs:;
+- (id)createCellSlotConfigs;
+- (id)createSeparatorSlotConfigs;
+- (void)insertRTCSessionView:linkMicUser:;
+- (void)insertRTCSessionView:linkMicUserID:isLocalPreview:;
+- (void)insertUser:;
+- (void)insertUser:atIndex:;
+- (id)onCellModelsUpdateBlock;
+- (void)onCellModelsUpdated:;
+- (id)separatorSlotConfigs;
+- (void)setCellModels:;
+- (void)setCellSlotConfigs:;
+- (void)setOnCellModelsUpdateBlock:;
+- (void)setSeparatorSlotConfigs:;
+- (void)updateSlotConfigs;
+- (void)updateWithLayout:;
+- (id)layoutProvider;
+- (void)setLayoutProvider:;
+- (void).cxx_destruct;
+- (BOOL)isValidIndex:;
+@end

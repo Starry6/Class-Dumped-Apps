@@ -1,0 +1,34 @@
+@interface MFPhotoPickerCell : UICollectionViewCell
+@property (nonatomic) UIImageView imageView;
+@property (nonatomic) UIImageView mediaTypeBadgeView;
+@property (nonatomic) UIImageView selectedBadgeView;
+@property (nonatomic) MFRoundProgressView progressView;
+@property (nonatomic) NSString representedAssetIdentifier;
+@property (nonatomic) UIImage thumbnailImage;
+@property (nonatomic) q mediaType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)thumbnailImage;
+- (long long)mediaType;
+- (void)setMediaType:;
+- (void)resetProgress;
+- (void)setProgress:;
+- (void)setSelected:;
+- (void)setProgressView:;
+- (void)prepareForReuse;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (id)imageView;
+- (id)progressView;
+- (void)setImageView:;
+- (void)setThumbnailImage:;
+- (id)representedAssetIdentifier;
+- (void)setRepresentedAssetIdentifier:;
+- (id)mediaTypeBadgeView;
+- (void)setMediaTypeBadgeView:;
+- (id)selectedBadgeView;
+- (void)setSelectedBadgeView:;
++ (id)reusableIdentifier;
+@end

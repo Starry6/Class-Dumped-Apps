@@ -1,0 +1,32 @@
+@interface IDSQRProtoStatsRequest : PBRequest
+@property (nonatomic) I clientTimestampNtp;
+@property (nonatomic) BOOL hasClientLatencyMs;
+@property (nonatomic) I clientLatencyMs;
+@property (nonatomic) BOOL hasSentPackets;
+@property (nonatomic) I sentPackets;
+@property (nonatomic) BOOL hasReceivedPackets;
+@property (nonatomic) I receivedPackets;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setClientLatencyMs:;
+- (void)setHasClientLatencyMs:;
+- (BOOL)hasClientLatencyMs;
+- (void)setSentPackets:;
+- (void)setHasSentPackets:;
+- (BOOL)hasSentPackets;
+- (void)setReceivedPackets:;
+- (void)setHasReceivedPackets:;
+- (BOOL)hasReceivedPackets;
+- (unsigned int)clientTimestampNtp;
+- (void)setClientTimestampNtp:;
+- (unsigned int)clientLatencyMs;
+- (unsigned int)sentPackets;
+- (unsigned int)receivedPackets;
+@end

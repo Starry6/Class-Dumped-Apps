@@ -1,0 +1,38 @@
+@interface BDMannorAdFeedbackComponent : NSObject
+@property (nonatomic) BDMannorAdDataModel model;
+@property (nonatomic) NSString logExtra;
+@property (nonatomic) @? completionHandler;
+@property (nonatomic) NSMutableArray reportArray;
+@property (nonatomic) BDMannorAdFeedbackView currentView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setReportArray:;
+- (void)feedbackViewBack;
+- (id)logExtra;
+- (void)normalActionWithIndex:;
+- (void)parseWithJsonObj:;
+- (void)removeFeedbackView;
+- (void)reportActionWithIndex:;
+- (id)reportArray;
+- (void)reportFeedbackInfoWithParams:completionHandler:;
+- (void)requestDislike;
+- (void)requestDislikeWithParams:completionHandler:;
+- (void)requestReportInfo;
+- (void)requestReportInfoWithContext:;
+- (void)requestReportWithIndex:;
+- (void)setLogExtra:;
+- (void)showFeedbackViewWithModel:logExtra:completionHandler:;
+- (void)showToast;
+- (void)trackProblemEventWithIndex:;
+- (id)model;
+- (void)setModel:;
+- (id)initPrivate;
+- (void)setCompletionHandler:;
+- (void).cxx_destruct;
+- (id)completionHandler;
+- (id)currentView;
+- (void)setCurrentView:;
++ (id)sharedInstance;
+@end

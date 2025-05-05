@@ -1,0 +1,36 @@
+@interface IESECLiveCombinationBlockElementModel : MTLModel
+@property (nonatomic) IESECLiveImageURLModel backgroundImage;
+@property (nonatomic) NSString backgroundColor;
+@property (nonatomic) NSNumber cornerRadius;
+@property (nonatomic) NSArray content;
+@property (nonatomic) NSNumber elementHeight;
+@property (nonatomic) IESECLiveListBottomJumpInfo jumpInfo;
+@property (nonatomic) IESECLiveTrackConfigModel showTrackInfo;
+@property (nonatomic) IESECLiveTrackConfigModel clickTrackInfo;
+@property (nonatomic) NSString btmInfo;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)btmInfo;
+- (id)clickTrackInfo;
+- (id)jumpInfo;
+- (void)setBtmInfo:;
+- (void)setClickTrackInfo:;
+- (void)setElementHeight:;
+- (void)setJumpInfo:;
+- (void)setShowTrackInfo:;
+- (id)showTrackInfo;
+- (id)content;
+- (void)setContent:;
+- (void)setBackgroundColor:;
+- (id)backgroundColor;
+- (void)setBackgroundImage:;
+- (id)backgroundImage;
+- (void)setCornerRadius:;
+- (void).cxx_destruct;
+- (id)cornerRadius;
+- (id)elementHeight;
++ (id)contentJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

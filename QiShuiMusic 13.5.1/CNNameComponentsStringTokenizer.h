@@ -1,0 +1,32 @@
+@interface CNNameComponentsStringTokenizer : NSObject
+@property (nonatomic) NSString string;
+@property (nonatomic) NSPersonNameComponents components;
+@property (nonatomic) NSArray tokens;
+- (id)string;
+- (id)components;
+- (void)setComponents:;
+- (id)initWithString:;
+- (void)setString:;
+- (void)setTokens:;
+- (void).cxx_destruct;
+- (id)tokens;
+- (id)parseComponents;
+- (void)removeParentheticalContent;
+- (void)extractNicknameFromQuotedContent;
+- (void)extractNameSuffixFromEnd;
+- (void)extractNamePrefixFromBeginning;
+- (void)adjustTokensForNobiliaryParticles;
+- (void)extractGivenMiddleFamilyNamesFromWhatsLeftUsingOrder:;
++ (id)componentsFromString:;
++ (id)tokensFromString:nameOrder:;
++ (id)tokensByAdjustingForNobiliaryParticles:;
++ (id)whitespaceTokens:;
++ (BOOL)isNamePrefix:;
++ (id)namePrefixElements;
++ (BOOL)isNameSuffix:;
++ (id)nameSuffixElements;
++ (BOOL)isNobiliaryParticle:;
++ (id)nobiliaryParticleElements;
++ (id)nameComponentElements;
++ (id)uncachedNameComponentElements;
+@end

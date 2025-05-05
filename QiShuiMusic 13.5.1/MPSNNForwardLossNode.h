@@ -1,0 +1,34 @@
+@interface MPSNNForwardLossNode : MPSNNFilterNode
+@property (nonatomic) I lossType;
+@property (nonatomic) NSInteger reductionType;
+@property (nonatomic) Q numberOfClasses;
+@property (nonatomic) BOOL reduceAcrossBatch;
+@property (nonatomic) float weight;
+@property (nonatomic) float labelSmoothing;
+@property (nonatomic) float epsilon;
+@property (nonatomic) float delta;
+@property (nonatomic) <MPSNNLossCallback> propertyCallBack;
+- (float)delta;
+- (void)dealloc;
+- (float)weight;
+- (float)epsilon;
+- (unsigned long long)numberOfClasses;
+- (unsigned int)lossType;
+- (int)reductionType;
+- (float)labelSmoothing;
+- (id)gradientFilterWithSource:;
+- (id)gradientFilterWithSources:;
+- (id)gradientFiltersWithSources:;
+- (id)newFilterNode;
+- (Class)gradientClass;
+- (id)initWithSource:labels:weights:lossDescriptor:;
+- (id)initWithSource:labels:lossDescriptor:;
+- (id)initWithSources:lossDescriptor:;
+- (id)gradientFiltersWithSource:;
+- (BOOL)reduceAcrossBatch;
+- (id)propertyCallBack;
+- (void)setPropertyCallBack:;
++ (id)nodeWithSource:labels:lossDescriptor:;
++ (id)nodeWithSource:labels:weights:lossDescriptor:;
++ (id)nodeWithSources:lossDescriptor:;
+@end

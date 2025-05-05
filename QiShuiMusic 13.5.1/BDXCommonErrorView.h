@@ -1,0 +1,30 @@
+@interface BDXCommonErrorView : UIView
+@property (nonatomic) BDXErrorViewConfig config;
+@property (nonatomic) UIImageView iconImage;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel descriptionLabel;
+@property (nonatomic) UIButton retryButton;
+@property (nonatomic) UIButton closeButton;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setTitleLabel:;
+- (void)layoutSubviews;
+- (void)setConfig:;
+- (id)initWithConfig:;
+- (void)setDescriptionLabel:;
+- (id)descriptionLabel;
+- (void)setIconImage:;
+- (void).cxx_destruct;
+- (id)config;
+- (id)iconImage;
+- (id)titleLabel;
+- (void)setupView;
+- (id)closeButton;
+- (void)setCloseButton:;
+- (id)retryButton;
+- (void)setRetryButton:;
+- (void)removeErrorView;
+- (void)onRetry:;
+@end

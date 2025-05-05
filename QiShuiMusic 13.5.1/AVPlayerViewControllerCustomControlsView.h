@@ -1,0 +1,37 @@
+@interface AVPlayerViewControllerCustomControlsView : UIView
+@property (nonatomic) UIView transportControlsAreaLayoutGuideProvidingView;
+@property (nonatomic) UIView displayModeControlsAreaLayoutGuideProvidingView;
+@property (nonatomic) UIView volumeControlsAreaLayoutGuideProvidingView;
+@property (nonatomic) UIView unobscuredTopAreaLayoutGuideProvidingView;
+@property (nonatomic) UIView unobscuredCenterAreaLayoutGuideProvidingView;
+@property (nonatomic) UIView animatedUnobscuredCenterAreaLayoutGuideProvidingView;
+@property (nonatomic) BOOL areTransportControlsVisible;
+@property (nonatomic) BOOL areVolumeControlsVisible;
+@property (nonatomic) UILayoutGuide transportControlsAreaLayoutGuide;
+@property (nonatomic) UILayoutGuide displayModeControlsAreaLayoutGuide;
+@property (nonatomic) UILayoutGuide volumeControlsAreaLayoutGuide;
+@property (nonatomic) UILayoutGuide unobscuredCenterAreaLayoutGuide;
+@property (nonatomic) UILayoutGuide animatedUnobscuredCenterAreaLayoutGuide;
+@property (nonatomic) UILayoutGuide unobscuredTopAreaLayoutGuide;
+- (id)hitTest:withEvent:;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)updateConstraints;
+- (void)setAreVolumeControlsVisible:;
+- (void)setAreTransportControlsVisible:;
+- (id)transportControlsAreaLayoutGuide;
+- (id)displayModeControlsAreaLayoutGuide;
+- (id)volumeControlsAreaLayoutGuide;
+- (id)unobscuredCenterAreaLayoutGuide;
+- (id)animatedUnobscuredCenterAreaLayoutGuide;
+- (id)unobscuredTopAreaLayoutGuide;
+- (id)transportControlsAreaLayoutGuideProvidingView;
+- (id)displayModeControlsAreaLayoutGuideProvidingView;
+- (id)volumeControlsAreaLayoutGuideProvidingView;
+- (id)unobscuredTopAreaLayoutGuideProvidingView;
+- (id)unobscuredCenterAreaLayoutGuideProvidingView;
+- (id)animatedUnobscuredCenterAreaLayoutGuideProvidingView;
+- (BOOL)areTransportControlsVisible;
+- (BOOL)areVolumeControlsVisible;
++ (BOOL)requiresConstraintBasedLayout;
+@end

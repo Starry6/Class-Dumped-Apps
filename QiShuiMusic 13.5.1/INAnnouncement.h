@@ -1,0 +1,31 @@
+@interface INAnnouncement : NSObject
+@property (nonatomic) NSNumber startTime;
+@property (nonatomic) NSNumber endTime;
+@property (nonatomic) NSURL speechDataURL;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) NSString speechDataTranscription;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)_dictionaryRepresentation;
+- (id)identifier;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)startTime;
+- (id)endTime;
+- (void)encodeWithCoder:;
+- (id)descriptionAtIndent:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)_intents_encodeWithJSONEncoder:codableDescription:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)speechDataURL;
+- (id)initWithSpeechDataURL:startTime:endTime:identifier:;
+- (id)speechDataTranscription;
+- (id)initWithSpeechDataURL:identifier:speechDataTranscription:;
+- (id)initWithSpeechDataURL:identifier:;
++ (id)_intents_decodeWithJSONDecoder:codableDescription:from:;
++ (BOOL)supportsSecureCoding;
+@end

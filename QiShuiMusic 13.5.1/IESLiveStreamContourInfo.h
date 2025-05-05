@@ -1,0 +1,34 @@
+@interface IESLiveStreamContourInfo : NSObject
+@property (nonatomic) double validTiming;
+@property (nonatomic) UIBezierPath contourPath;
+@property (nonatomic) NSString interactID;
+@property (nonatomic) q width;
+@property (nonatomic) q height;
+@property (nonatomic) NSArray contourItems;
+@property (nonatomic) {CGPoint=dd} scalePoint;
+@property (nonatomic) {CGPoint=dd} offsetPoint;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} drawBounds;
+@property (nonatomic) {CGSize=dd} cameraSize;
+- (void)setOffsetPoint:;
+- (void)setValidTiming:;
+- (void)setContourPath:;
+- (id)cameraSize;
+- (id)contourItems;
+- (id)contourPath;
+- (id)drawBounds;
+- (id)initWithContourModel:;
+- (id)interactID;
+- (id)offsetPoint;
+- (id)scalePoint;
+- (void)setCameraSize:;
+- (void)setContourItems:;
+- (void)setDrawBounds:;
+- (void)setInteractID:;
+- (void)setScalePoint:;
+- (double)validTiming;
+- (void)setWidth:;
+- (long long)height;
+- (long long)width;
+- (void)setHeight:;
+- (void).cxx_destruct;
+@end

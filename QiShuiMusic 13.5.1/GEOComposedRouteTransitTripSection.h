@@ -1,0 +1,30 @@
+@interface GEOComposedRouteTransitTripSection : GEOComposedRouteSection
+@property (nonatomic) {Color<float lineColor;
+@property (nonatomic) {?=QQQ} fromNodeID;
+@property (nonatomic) {?=QQQ} toNodeID;
+@property (nonatomic) Q lineID;
+@property (nonatomic) BOOL isTransfer;
+@property (nonatomic) NSInteger toNodeSignificance;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)pathsForRenderRegion:inOverlay:shouldSnapToTransit:verifySnapping:;
+- (BOOL)_getEndPoints:rect:result:;
+- (BOOL)_validateSnappedPaths:snappedTileBounds:overlay:;
+- (id)unsnappedPathsInOverlay:;
+- (id)lineColor;
+- (id)toNodeID;
+- (id)description;
+- (id).cxx_construct;
+- (id)fromNodeID;
+- (BOOL)_MapsCarPlay_isEqual:;
+- (unsigned long long)lineID;
+- (BOOL)isTransfer;
+- (int)toNodeSignificance;
+- (id)initWithCoordinates:segment:segmentIndex:steps:startCoordinateIndex:coordinateCount:stepIndex:toNodeSignificance:transitLineColor:startDistance:lengthScaleFactor:decoderData:;
+- (id)initWithCoordinates:segment:segmentIndex:steps:startCoordinateIndex:coordinateCount:stepIndex:toNodeSignificance:transitLineColor:startDistance:lengthScaleFactor:fallbackStartCoordinate:fallbackEndCoordinate:;
+- (void)_initSupportWithDecoderData:step:toNodeSignificance:transitLineColor:;
+- (id)_hallForStop:withDecoderData:;
+- (id)_stationForHall:withDecoderData:;
+@end

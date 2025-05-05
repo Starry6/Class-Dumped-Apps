@@ -1,0 +1,2 @@
+@interface GiftUgcGiftApiRoot : GPBRootObject
+@end

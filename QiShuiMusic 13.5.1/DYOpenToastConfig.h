@@ -1,0 +1,31 @@
+@interface DYOpenToastConfig : NSObject
+@property (nonatomic) BOOL frequenceCheckEnable;
+@property (nonatomic) double frequenceDisplayTimeGap;
+@property (nonatomic) Q frequenceCacheCountLimit;
+@property (nonatomic) q displayMode;
+@property (nonatomic) BOOL debugMode;
+@property (nonatomic) <DYOpenToastDebugDelegate> delegate;
+@property (nonatomic) NSDictionary frequenceWhiteList;
+@property (nonatomic) UIFont font;
+@property (nonatomic) BOOL isDarkMode;
+- (unsigned long long)frequenceCacheCountLimit;
+- (BOOL)frequenceCheckEnable;
+- (double)frequenceDisplayTimeGap;
+- (id)frequenceWhiteList;
+- (void)setFrequenceCacheCountLimit:;
+- (void)setFrequenceCheckEnable:;
+- (void)setFrequenceDisplayTimeGap:;
+- (void)setFrequenceWhiteList:;
+- (void)setDebugMode:;
+- (long long)displayMode;
+- (void)setDelegate:;
+- (void)setFont:;
+- (void)setDisplayMode:;
+- (BOOL)debugMode;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)font;
+- (BOOL)isDarkMode;
+- (void)setIsDarkMode:;
++ (id)defaultToastConfig;
+@end

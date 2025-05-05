@@ -1,0 +1,2 @@
+@interface BDXLynxViewPagerCell : UICollectionViewCell
+@end

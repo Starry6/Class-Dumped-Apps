@@ -1,0 +1,2 @@
+@interface AnchorGroupLiveApiRoot : GPBRootObject
+@end

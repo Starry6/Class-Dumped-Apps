@@ -1,0 +1,33 @@
+@interface PPContactNameRecordLoadingDelegate : PPRecordLoadingDelegate
+@property (nonatomic) @? contactNameRecordsSetup;
+@property (nonatomic) @? contactNameRecordsHandler;
+@property (nonatomic) @? contactNameRecordsCompletion;
+@property (nonatomic) @? recentContactNameRecordsSetup;
+@property (nonatomic) @? recentContactNameRecordsHandler;
+@property (nonatomic) @? recentContactNameRecordsCompletion;
+@property (nonatomic) @? resetContactNameRecordData;
+- (void)setRecentContactNameRecordsSetup:;
+- (void)setRecentContactNameRecordsHandler:;
+- (unsigned char)recentRecordLoadingSetup;
+- (void)setContactNameRecordsSetup:;
+- (void)setContactNameRecordsHandler:;
+- (void)setContactNameRecordsCompletion:;
+- (id)initWithName:;
+- (id)contactNameRecordsCompletion;
+- (void)setRecentContactNameRecordsCompletion:;
+- (void)recordLoadingCompletion;
+- (id)contactNameRecordsSetup;
+- (unsigned char)recordLoadingSetup;
+- (void).cxx_destruct;
+- (id)resetContactNameRecordData;
+- (unsigned char)recordLoadingHandler:;
+- (id)description;
+- (void)setResetContactNameRecordData:;
+- (id)recentContactNameRecordsCompletion;
+- (id)recentContactNameRecordsHandler;
+- (void)recentRecordLoadingCompletion;
+- (void)resetRecordData;
+- (id)contactNameRecordsHandler;
+- (unsigned char)recentRecordLoadingHandler:;
+- (id)recentContactNameRecordsSetup;
+@end

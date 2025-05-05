@@ -1,0 +1,35 @@
+@interface IESLiveSaaSUnAuthExpansionCouponView : UIView
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIImageView expansionCouponImageView;
+@property (nonatomic) UIButton authButton;
+@property (nonatomic) UILabel couponThresholdLabel;
+@property (nonatomic) UILabel couponAmountLabel;
+@property (nonatomic) IESLiveSaaSExpansionCouponViewModel viewModel;
+@property (nonatomic) @? authBlock;
+- (void)authButtonClick;
+- (id)authBlock;
+- (id)authButton;
+- (id)couponAmountLabel;
+- (id)couponThresholdLabel;
+- (id)expansionCouponImageView;
+- (id)formatBaseCouponAmount;
+- (void)setAuthBlock:;
+- (void)setAuthButton:;
+- (void)setCouponAmountLabel:;
+- (void)setCouponThresholdLabel:;
+- (void)setExpansionCouponImageView:;
+- (void)dismiss;
+- (void)setupConstraints;
+- (id)viewModel;
+- (void)setTitleLabel:;
+- (void)layoutSubviews;
+- (id)containerView;
+- (void)setContainerView:;
+- (void)show;
+- (void).cxx_destruct;
+- (void)setViewModel:;
+- (id)titleLabel;
+- (void)setupUI;
+- (id)initWithFrame:viewModel:;
+@end

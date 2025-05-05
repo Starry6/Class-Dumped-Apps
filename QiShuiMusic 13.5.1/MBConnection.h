@@ -1,0 +1,32 @@
+@interface MBConnection : NSObject
+@property (nonatomic) <MBConnectionDelegate> delegate;
+@property (nonatomic) NSObject<OS_xpc_object> xpcConnection;
+@property (nonatomic) NSObject<OS_dispatch_queue> queue;
+@property (nonatomic) NSString processName;
+@property (nonatomic) NSString personaIdentifier;
+- (void)cancel;
+- (void)sendMessage:;
+- (id)personaIdentifier;
+- (void)setDelegate:;
+- (void)suspend;
+- (void)setXpcConnection:;
+- (void)setPersonaIdentifier:;
+- (id)initWithServiceName:delegate:delegateQueue:;
+- (id)processName;
+- (void)resume;
+- (id)delegate;
+- (id)xpcConnection;
+- (void)_refreshProcessInfoWithXPCConnection:;
+- (void).cxx_destruct;
+- (void)setProcessName:;
+- (id)description;
+- (void)_handleXPCEvent:;
+- (void)_setEventHandlerForXPCConnection:;
+- (void)setQueue:;
+- (id)initWithXPCConnection:delegate:delegateQueue:;
+- (id)initWithServiceName:;
+- (id)queue;
+- (void)sendMessage:barrierBlock:;
+- (void)_handleXPCError:;
+- (id)sendMessageWithReplyAndSync:error:;
+@end

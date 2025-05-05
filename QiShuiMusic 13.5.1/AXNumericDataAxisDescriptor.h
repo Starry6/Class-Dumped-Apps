@@ -1,0 +1,38 @@
+@interface AXNumericDataAxisDescriptor : NSObject
+@property (nonatomic) AXScale scale;
+@property (nonatomic) q scaleType;
+@property (nonatomic) double lowerBound;
+@property (nonatomic) double upperBound;
+@property (nonatomic) @? valueDescriptionProvider;
+@property (nonatomic) NSArray gridlinePositions;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSAttributedString attributedTitle;
+- (void)setScale:;
+- (id)attributedTitle;
+- (id)initWithDictionary:;
+- (void)setTitle:;
+- (void)setAttributedTitle:;
+- (id)title;
+- (void).cxx_destruct;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (id)scale;
+- (id)copyWithZone:;
+- (double)lowerBound;
+- (double)upperBound;
+- (id)initWithTitle:lowerBound:upperBound:gridlinePositions:valueDescriptionProvider:;
+- (id)initWithAttributedTitle:lowerBound:upperBound:gridlinePositions:valueDescriptionProvider:;
+- (void)_commonInitWithLowerBound:upperBound:gridlinePositions:valueDescriptionProvider:;
+- (long long)scaleType;
+- (void)setScaleType:;
+- (void)setLowerBound:;
+- (void)setUpperBound:;
+- (id)valueDescriptionProvider;
+- (void)setValueDescriptionProvider:;
+- (id)gridlinePositions;
+- (void)setGridlinePositions:;
+@end

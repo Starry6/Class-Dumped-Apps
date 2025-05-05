@@ -1,0 +1,33 @@
+@interface APBToygerGuideTask : APBToygerBaseTask
+@property (nonatomic) AFEWebGuideView guideView;
+@property (nonatomic) <DTFFaceViewProtocol> faceView;
+@property (nonatomic) NSString suitableType;
+@property (nonatomic) NSString platformInfo;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)onSuccessGoNext;
+- (void)onLoadFinished:;
+- (void)invokeWithPipeInfo:;
+- (void)onButtonAgreement;
+- (void)onButtonBegin:;
+- (void)onButtonCancel;
+- (void)onFailGoBack;
+- (void)onH5Logger:;
+- (void)onSoundStatusChanged:;
+- (id)platformInfo;
+- (void)processEvent:withCompletionCallback:;
+- (void)setPlatformInfo:;
+- (void)setSuitableType:;
+- (void)statusBarOrientationDidChange:;
+- (id)suitableType;
+- (id)updateUrl:key:value:;
+- (void).cxx_destruct;
+- (void)reset;
+- (id)faceView;
+- (id)getConfig;
+- (void)setFaceView:;
+- (void)setGuideView:;
+- (id)guideView;
+@end

@@ -1,0 +1,36 @@
+@interface SFTRSession : NSObject
+@property (nonatomic) NSObject<OS_dispatch_queue> dispatchQueue;
+@property (nonatomic) SFSession session;
+@property (nonatomic) TRSession trSession;
+@property (nonatomic) BOOL connected;
+@property (nonatomic) @? disconnectHandler;
+@property (nonatomic) @? sendEventImpHandler;
+@property (nonatomic) @? sendRequestImpHandler;
+- (void)_cleanup;
+- (void)setConnected:;
+- (void)setSession:;
+- (id)init;
+- (void)sendEvent:;
+- (void)dealloc;
+- (id)dispatchQueue;
+- (void)disconnect;
+- (void)setDispatchQueue:;
+- (id)session;
+- (void).cxx_destruct;
+- (BOOL)isConnected;
+- (void)invalidate;
+- (void)activate;
+- (void)sendRequest:withResponseHandler:;
+- (void)setRequestHandler:forRequestClass:;
+- (id)trSession;
+- (void)handleEvent:flags:;
+- (void)handleRequest:flags:responseHandler:;
+- (void)setEventHandler:forEventClass:;
+- (id)_decodeTRMessageData:kindOfClass:;
+- (id)disconnectHandler;
+- (void)setDisconnectHandler:;
+- (id)sendEventImpHandler;
+- (void)setSendEventImpHandler:;
+- (id)sendRequestImpHandler;
+- (void)setSendRequestImpHandler:;
+@end

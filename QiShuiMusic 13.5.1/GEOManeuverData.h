@@ -1,0 +1,33 @@
+@interface GEOManeuverData : PBCodable
+@property (nonatomic) BOOL hasManeuverType;
+@property (nonatomic) NSInteger maneuverType;
+@property (nonatomic) BOOL hasJunctionInfo;
+@property (nonatomic) GEOJunctionInfo junctionInfo;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (int)maneuverType;
+- (void)setManeuverType:;
+- (void)setHasManeuverType:;
+- (BOOL)hasManeuverType;
+- (id)maneuverTypeAsString:;
+- (int)StringAsManeuverType:;
+- (BOOL)hasJunctionInfo;
+- (id)junctionInfo;
+- (void)setJunctionInfo:;
++ (BOOL)isValid:;
+@end

@@ -1,0 +1,31 @@
+@interface SASSpeechCorrectionStatistics : SABaseCommand
+@property (nonatomic) q alternativeSelectCount;
+@property (nonatomic) q characterChangeCount;
+@property (nonatomic) NSString correctionSource;
+@property (nonatomic) NSString correctionText;
+@property (nonatomic) NSString interactionId;
+@property (nonatomic) NSString sessionId;
+@property (nonatomic) NSString aceId;
+@property (nonatomic) NSString refId;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setSessionId:;
+- (id)sessionId;
+- (id)groupIdentifier;
+- (BOOL)requiresResponse;
+- (id)encodedClassName;
+- (id)interactionId;
+- (void)setInteractionId:;
+- (long long)alternativeSelectCount;
+- (void)setAlternativeSelectCount:;
+- (long long)characterChangeCount;
+- (void)setCharacterChangeCount:;
+- (id)correctionSource;
+- (void)setCorrectionSource:;
+- (id)correctionText;
+- (void)setCorrectionText:;
++ (id)speechCorrectionStatistics;
++ (id)speechCorrectionStatisticsWithDictionary:context:;
+@end

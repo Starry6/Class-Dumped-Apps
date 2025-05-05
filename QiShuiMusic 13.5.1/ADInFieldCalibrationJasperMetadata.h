@@ -1,0 +1,2 @@
+@interface ADInFieldCalibrationJasperMetadata : ADInFieldCalibrationMetadata
+@end

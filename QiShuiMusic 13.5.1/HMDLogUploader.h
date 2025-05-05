@@ -1,0 +1,37 @@
+@interface HMDLogUploader : NSObject
+@property (nonatomic) NSObject<OS_dispatch_queue> uploadQueue;
+@property (nonatomic) NSObject<OS_dispatch_semaphore> uploadSemaphore;
+@property (nonatomic) Q crashUploadSecond;
+@property (nonatomic) BOOL shouldUploadAlogIfCrashed;
+@property (nonatomic) @? forbidAlogUploadBlock;
+- (void)exceptionALogUploadWithEndTime:;
+- (id)uploadSemaphore;
+- (long long)_maxUploadFileCount:;
+- (void)_reportALogAsyncWithScene:byUser:fetchStartTime:fetchEndTime:callback:;
+- (void)_reportALogWithScene:byUser:fetchStartTime:fetchEndTime:uploadStartTime:callback:;
+- (void)_uploadALogFileAtPath:scene:manner:byUser:commonParams:retryCount:uploadQueneWaitCost:fileProcessCost:uploadCost:;
+- (void)_uploadLastALogAsyncBeforeTime:byUser:;
+- (void)_uploadLastALogBeforeTime:scene:manner:byUser:uploadStartTime:;
+- (void)crashALogUploadWithEndTime:;
+- (unsigned long long)crashUploadSecond;
+- (id)forbidAlogUploadBlock;
+- (void)reportALogByUsersWithFetchStartTime:fetchEndTime:scene:reportALogCallback:;
+- (void)reportALogWithFetchStartTime:fetchEndTime:scene:;
+- (void)reportALogWithFetchStartTime:fetchEndTime:scene:reportALogCallback:;
+- (void)reportALogbyUsersWithFetchStartTime:fetchEndTime:scene:reportALogCallback:;
+- (void)reportFeedbackALogWithFetchStartTime:fetchEndTime:scene:reportALogCallback:;
+- (void)setCrashUploadSecond:;
+- (void)setForbidAlogUploadBlock:;
+- (void)setShouldUploadAlogIfCrashed:;
+- (void)setUploadSemaphore:;
+- (BOOL)shouldUploadAlogIfCrashed;
+- (void)uploadAlogIfCrashed;
+- (void)uploadAlogIfCrashedWithTime:;
+- (void)uploadLastAlogBeforeTime:;
+- (void)uploadLastFeedbackAlogBeforeTime:;
+- (id)init;
+- (id)uploadQueue;
+- (void).cxx_destruct;
+- (void)setUploadQueue:;
++ (id)sharedInstance;
+@end

@@ -1,0 +1,2 @@
+@interface SPIAsrEventContext : SPIEventContext
+@end

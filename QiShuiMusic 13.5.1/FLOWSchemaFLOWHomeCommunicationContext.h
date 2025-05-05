@@ -1,0 +1,37 @@
+@interface FLOWSchemaFLOWHomeCommunicationContext : SISchemaInstrumentationMessage
+@property (nonatomic) FLOWSchemaFLOWHomeContext homeContext;
+@property (nonatomic) BOOL hasHomeContext;
+@property (nonatomic) NSInteger taskType;
+@property (nonatomic) BOOL hasTaskType;
+@property (nonatomic) FLOWSchemaFLOWHomeCommunicationSendOrReply sendOrReplyContext;
+@property (nonatomic) BOOL hasSendOrReplyContext;
+@property (nonatomic) NSData jsonData;
+@property (nonatomic) Q whichTaskcontext;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (int)taskType;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)setTaskType:;
+- (BOOL)hasTaskType;
+- (void)setHasTaskType:;
+- (BOOL)hasHomeContext;
+- (void)deleteHomeContext;
+- (id)homeContext;
+- (void)setHomeContext:;
+- (void)setHasHomeContext:;
+- (void)deleteTaskType;
+- (void)setSendOrReplyContext:;
+- (id)sendOrReplyContext;
+- (void)deleteSendOrReplyContext;
+- (unsigned long long)whichTaskcontext;
+- (BOOL)hasSendOrReplyContext;
+- (void)setHasSendOrReplyContext:;
+@end

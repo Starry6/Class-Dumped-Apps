@@ -1,0 +1,35 @@
+@interface CKSQLiteCacheTable : CKSQLiteTable
+@property (nonatomic) Q entryCountLimit;
+@property (nonatomic) Q dataSizeLimit;
+@property (nonatomic) double cacheExpirationTime;
+@property (nonatomic) double expireDelay;
+@property (nonatomic) NSDate lastExpireDate;
+- (id)performTransaction:;
+- (void)expire;
+- (id)insertObject:;
+- (id)newEntryObject;
+- (id)finishInitializing:;
+- (void).cxx_destruct;
+- (unsigned long long)setProperties:valuesToStore:inEntriesMatching:label:error:predicate:;
+- (unsigned long long)deleteEntriesMatching:label:error:predicate:;
+- (id)initWithLogicalTableName:entryCountLimit:dataSizeLimit:expirationTime:expireDelay:;
+- (id)oldestFirstEnumerator;
+- (void)fetchExpirationDate:;
+- (id)oldestExpirationDate;
+- (void)setEntryCountLimit:;
+- (unsigned long long)expireByCount;
+- (void)setDataSizeLimit:;
+- (unsigned long long)expireByDataSize;
+- (void)setCacheExpirationTime:;
+- (unsigned long long)expireByTime:;
+- (unsigned long long)dataSizeForEntry:error:;
+- (void)periodicExpire;
+- (id)extendExpiration:;
+- (id)setEntryExpiration:date:;
+- (unsigned long long)entryCountLimit;
+- (unsigned long long)dataSizeLimit;
+- (double)cacheExpirationTime;
+- (double)expireDelay;
+- (id)lastExpireDate;
++ (id)dbProperties;
+@end

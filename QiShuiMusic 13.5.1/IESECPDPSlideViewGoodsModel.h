@@ -1,0 +1,31 @@
+@interface IESECPDPSlideViewGoodsModel : IESECBaseApiModel
+@property (nonatomic) NSString productID;
+@property (nonatomic) NSString promotionID;
+@property (nonatomic) NSString imageURL;
+@property (nonatomic) NSString preImageURL;
+@property (nonatomic) q minPrice;
+@property (nonatomic) NSString priceStr;
+@property (nonatomic) NSString schema;
+@property (nonatomic) BOOL isPopCard;
+@property (nonatomic) NSDictionary logExtra;
+- (void)setPreImageURL:;
+- (void)setPromotionID:;
+- (BOOL)isPopCard;
+- (id)logExtra;
+- (long long)minPrice;
+- (id)preImageURL;
+- (id)priceStr;
+- (id)promotionID;
+- (void)setIsPopCard:;
+- (void)setLogExtra:;
+- (void)setMinPrice:;
+- (void)setPriceStr:;
+- (id)productID;
+- (id)schema;
+- (void)setProductID:;
+- (void)setSchema:;
+- (void).cxx_destruct;
+- (void)setImageURL:;
+- (id)imageURL;
++ (id)JSONKeyPathsByPropertyKey;
+@end

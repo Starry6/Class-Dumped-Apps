@@ -1,0 +1,35 @@
+@interface BMNamedHandle : NSObject
+@property (nonatomic) NSString name;
+@property (nonatomic) NSString handleType;
+@property (nonatomic) NSString handle;
+@property (nonatomic) NSString contactIdentifier;
+@property (nonatomic) I dataVersion;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithProtoData:;
+- (id)init;
+- (id)proto;
+- (id)contactIdentifier;
+- (id)json;
+- (id)initWithString:;
+- (id)handle;
+- (id)encodeAsProto;
+- (id)initWithCoder:;
+- (unsigned int)dataVersion;
+- (unsigned long long)hash;
+- (BOOL)isCompleteWithContext:error:;
+- (void)encodeWithCoder:;
+- (id)initWithProto:;
+- (id)handleType;
+- (void).cxx_destruct;
+- (BOOL)isValidWithContext:error:;
+- (id)name;
+- (id)serialize;
+- (id)jsonDict;
+- (BOOL)isEqual:;
+- (id)initWithName:handleType:handle:contactIdentifier:;
++ (id)eventWithData:dataVersion:;
++ (BOOL)supportsSecureCoding;
+@end

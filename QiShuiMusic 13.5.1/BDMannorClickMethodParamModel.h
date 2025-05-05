@@ -1,0 +1,31 @@
+@interface BDMannorClickMethodParamModel : BDXBridgeModel
+@property (nonatomic) NSDictionary adExtraData;
+@property (nonatomic) NSString refer;
+@property (nonatomic) NSString tag;
+@property (nonatomic) NSString clickType;
+@property (nonatomic) NSString openUrl;
+@property (nonatomic) NSString webUrl;
+@property (nonatomic) NSString webTitle;
+@property (nonatomic) NSString mpUrl;
+@property (nonatomic) NSString lynxUrl;
+- (id)lynxUrl;
+- (id)openUrl;
+- (void)setAdExtraData:;
+- (id)adExtraData;
+- (id)clickType;
+- (id)mpUrl;
+- (id)refer;
+- (void)setClickType:;
+- (void)setLynxUrl:;
+- (void)setMpUrl:;
+- (void)setOpenUrl:;
+- (void)setRefer:;
+- (void)setWebTitle:;
+- (void)setWebUrl:;
+- (id)webTitle;
+- (id)webUrl;
+- (id)tag;
+- (void)setTag:;
+- (void).cxx_destruct;
++ (id)JSONKeyPathsByPropertyKey;
+@end

@@ -1,0 +1,30 @@
+@interface MTLArrayTypeInternal : MTLArrayType
+@property (nonatomic) BOOL isIndirectArgumentBuffer;
+@property (nonatomic) Q pixelFormat;
+@property (nonatomic) Q aluType;
+@property (nonatomic) Q argumentIndexStride;
+@property (nonatomic) Q indirectArgumentIndexStride;
+- (unsigned long long)arrayLength;
+- (void)setIsIndirectArgumentBuffer:;
+- (void)setIndirectArgumentIndexStride:;
+- (void)dealloc;
+- (id)formattedDescription:;
+- (id)elementArrayType;
+- (unsigned long long)stride;
+- (unsigned long long)dataType;
+- (id)elementIndirectArgumentType;
+- (unsigned long long)elementType;
+- (BOOL)isIndirectArgumentBuffer;
+- (id)initWithArrayLength:elementType:stride:pixelFormat:aluType:details:;
+- (unsigned long long)indirectArgumentIndexStride;
+- (id)elementTypeDescription;
+- (unsigned long long)argumentIndexStride;
+- (unsigned long long)pixelFormat;
+- (id)elementStructType;
+- (BOOL)isArrayLayoutThreadSafeWith:;
+- (void)setArgumentIndexStride:;
+- (id)elementPointerType;
+- (id)elementTextureReferenceType;
+- (void)setStride:;
+- (unsigned long long)aluType;
+@end

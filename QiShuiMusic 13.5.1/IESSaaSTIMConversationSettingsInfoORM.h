@@ -1,0 +1,38 @@
+@interface IESSaaSTIMConversationSettingsInfoORM : IESSaaSTIMBaseORM
+@property (nonatomic) NSString belongingConversationIdentifier;
+@property (nonatomic) q infoVersion;
+@property (nonatomic) BOOL shouldStickOnTop;
+@property (nonatomic) BOOL muted;
+@property (nonatomic) BOOL isFavorited;
+@property (nonatomic) NSString ext;
+@property (nonatomic) NSDictionary extDictionary;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)belongingConversationIdentifier;
+- (void)setIsFavorited:;
+- (void)setExt:;
+- (void)setInfoVersion:;
+- (id)extDictionary;
+- (long long)infoVersion;
+- (void)setBelongingConversationIdentifier:;
+- (void)setExtDictionary:;
+- (void)setShouldStickOnTop:;
+- (BOOL)shouldStickOnTop;
+- (BOOL)muted;
+- (void)setMuted:;
+- (void).cxx_destruct;
+- (BOOL)isFavorited;
+- (id)ext;
++ (id)belongingConversationIdentifier;
++ (id)AllProperties;
++ (id)AnyProperty;
++ (id)PropertyNamed;
++ (id)infoVersion;
++ (id)objectRelationalMappingForWCDB;
++ (id)shouldStickOnTop;
++ (id)muted;
++ (id)isFavorited;
++ (id)ext;
+@end

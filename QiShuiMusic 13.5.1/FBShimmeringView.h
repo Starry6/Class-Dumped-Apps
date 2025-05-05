@@ -1,0 +1,31 @@
+@interface FBShimmeringView : UIView
+@property (nonatomic) UIView contentView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) BOOL shimmering;
+@property (nonatomic) double shimmeringPauseDuration;
+@property (nonatomic) double shimmeringOpacity;
+@property (nonatomic) double shimmeringSpeed;
+@property (nonatomic) double shimmeringBeginFadeDuration;
+@property (nonatomic) double shimmeringEndFadeDuration;
+@property (nonatomic) double shimmeringFadeTime;
+- (void)setShimmeringBeginFadeDuration:;
+- (double)shimmeringSpeed;
+- (BOOL)isShimmering;
+- (void)setShimmering:;
+- (void)setShimmeringEndFadeDuration:;
+- (void)setShimmeringOpacity:;
+- (void)setShimmeringPauseDuration:;
+- (void)setShimmeringSpeed:;
+- (double)shimmeringBeginFadeDuration;
+- (double)shimmeringEndFadeDuration;
+- (double)shimmeringFadeTime;
+- (double)shimmeringOpacity;
+- (double)shimmeringPauseDuration;
+- (id)contentView;
+- (void).cxx_destruct;
+- (void)setContentView:;
++ (Class)layerClass;
+@end

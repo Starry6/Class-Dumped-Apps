@@ -1,0 +1,34 @@
+@interface PSKeychainSyncSecurityCodeController : PSKeychainSyncTextEntryController
+@property (nonatomic) NSString firstPasscodeEntry;
+@property (nonatomic) NSInteger mode;
+@property (nonatomic) NSInteger securityCodeType;
+@property (nonatomic) BOOL showsAdvancedSettings;
+- (id)specifiers;
+- (void)keyboardWillShow:;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (void)viewWillAppear:;
+- (int)mode;
+- (void)viewDidLayoutSubviews;
+- (void)setMode:;
+- (void)viewDidLoad;
+- (id)placeholderText;
+- (int)securityCodeType;
+- (void)setSecurityCodeType:;
+- (id)firstPasscodeEntry;
+- (void)setFirstPasscodeEntry:;
+- (Class)textEntryCellClass;
+- (id)textEntryCell;
+- (void)showAdvancedOptions;
+- (void)forgotSecurityCode;
+- (void)textEntryViewDidChange:;
+- (id)_configureTextEntryCell;
+- (void)animatePasscodeFieldLeft:;
+- (void)didFinishEnteringText:;
+- (void)updateNextButton;
+- (void)generateRandomCode;
+- (void)dismissAlerts;
+- (BOOL)showsAdvancedSettings;
+- (void)setShowsAdvancedSettings:;
+@end

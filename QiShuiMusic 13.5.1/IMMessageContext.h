@@ -1,0 +1,30 @@
+@interface IMMessageContext : NSObject
+@property (nonatomic) IMLocalObject localObject;
+@property (nonatomic) @ context;
+@property (nonatomic) BOOL shouldBoost;
+@property (nonatomic) BOOL sync;
+@property (nonatomic) BOOL reply;
+@property (nonatomic) BOOL needReply;
+@property (nonatomic) NSObject<OS_xpc_object> xpcMessage;
+@property (nonatomic) NSObject<OS_voucher> voucher;
+- (BOOL)reply;
+- (BOOL)isReply;
+- (BOOL)sync;
+- (id)init;
+- (id)voucher;
+- (void)setLocalObject:;
+- (id)context;
+- (void)setReply:;
+- (BOOL)shouldBoost;
+- (void)setShouldBoost:;
+- (void)setNeedReply:;
+- (id)localObject;
+- (BOOL)needReply;
+- (void)setXpcMessage:;
+- (void).cxx_destruct;
+- (id)xpcMessage;
+- (BOOL)isSync;
+- (void)setContext:;
+- (void)setSync:;
+- (void)setVoucher:;
+@end

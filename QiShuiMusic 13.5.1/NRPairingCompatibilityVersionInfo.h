@@ -1,0 +1,31 @@
+@interface NRPairingCompatibilityVersionInfo : NSObject
+@property (nonatomic) q pairingCompatibilityVersion;
+@property (nonatomic) q maxPairingCompatibilityVersion;
+@property (nonatomic) q minPairingCompatibilityVersion;
+@property (nonatomic) q minPairingCompatibilityVersionWithChipID;
+@property (nonatomic) q minQuickSwitchCompatibilityVersion;
+@property (nonatomic) BOOL isOverrideActive;
+@property (nonatomic) BOOL isRevlockFeatureFlagActive;
+- (id)initInternal;
+- (BOOL)isRevlockFeatureFlagActive;
+- (long long)minPairingCompatibilityVersion;
+- (void)setIsRevlockFeatureFlagActive:;
+- (long long)minQuickSwitchCompatibilityVersion;
+- (long long)maxPairingCompatibilityVersion;
+- (long long)minPairingCompatibilityVersionForChipID:name:defaultVersion:;
+- (void)setPairingCompatibilityVersion:;
+- (void)setIsOverrideActive:;
+- (long long)pairingCompatibilityVersion;
+- (long long)minPairingCompatibilityVersionForChipID:;
+- (BOOL)isOverrideActive;
+- (void)setMinPairingCompatibilityVersion:;
+- (void)setMinPairingCompatibilityVersionWithChipID:;
+- (long long)minPairingCompatibilityVersionWithChipID;
+- (void)setMinQuickSwitchCompatibilityVersion:;
+- (long long)minQuickSwitchPairingCompatibilityVersionForChipID:;
+- (void)setMaxPairingCompatibilityVersion:;
++ (id)systemVersions;
++ (id)stringFromCFPrefs:;
++ (id)numberFromCFPrefs:;
++ (unsigned long long)valueForToken:;
+@end

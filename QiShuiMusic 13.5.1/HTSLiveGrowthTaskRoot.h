@@ -1,0 +1,2 @@
+@interface HTSLiveGrowthTaskRoot : GPBRootObject
+@end

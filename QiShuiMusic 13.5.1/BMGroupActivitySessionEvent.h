@@ -1,0 +1,37 @@
+@interface BMGroupActivitySessionEvent : BMEventBase
+@property (nonatomic) BOOL isActive;
+@property (nonatomic) NSString sourceBundleID;
+@property (nonatomic) NSString activitySessionID;
+@property (nonatomic) NSString activityID;
+@property (nonatomic) NSString messagesChatGuid;
+@property (nonatomic) NSArray participantHandles;
+@property (nonatomic) NSArray memberHandles;
+@property (nonatomic) NSString experienceType;
+@property (nonatomic) I dataVersion;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithProtoData:;
+- (id)init;
+- (id)proto;
+- (id)encodeAsProto;
+- (unsigned int)dataVersion;
+- (unsigned long long)hash;
+- (id)initWithProto:;
+- (id)sourceBundleID;
+- (void).cxx_destruct;
+- (id)description;
+- (id)serialize;
+- (id)experienceType;
+- (BOOL)isEqual:;
+- (BOOL)isActive;
+- (id)messagesChatGuid;
+- (id)participantHandles;
+- (id)memberHandles;
+- (id)initWithIsActive:sourceBundleID:activitySessionID:activityID:messagesChatGuid:participantHandles:memberHandles:experienceType:;
+- (id)activitySessionID;
+- (id)activityID;
++ (id)new;
++ (id)eventWithData:dataVersion:;
+@end

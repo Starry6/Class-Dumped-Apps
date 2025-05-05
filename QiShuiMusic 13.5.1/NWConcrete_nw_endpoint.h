@@ -1,0 +1,34 @@
+@interface NWConcrete_nw_endpoint : NSObject
+@property (nonatomic) I type;
+@property (nonatomic) r* domainForPolicy;
+@property (nonatomic) r* hostname;
+@property (nonatomic) S port;
+@property (nonatomic) NSObject<OS_dispatch_data> echConfig;
+@property (nonatomic) S priority;
+@property (nonatomic) S weight;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)copyDictionary;
+- (id)hostname;
+- (id)init;
+- (void)setPriority:;
+- (void)dealloc;
+- (unsigned short)weight;
+- (id)redactedDescription;
+- (void)setWeight:;
+- (unsigned short)port;
+- (unsigned long long)getHash;
+- (id)domainForPolicy;
+- (void)setEchConfig:;
+- (unsigned int)type;
+- (void).cxx_destruct;
+- (BOOL)isEqualToEndpoint:matchFlags:;
+- (id)description;
+- (id)copyEndpoint;
+- (BOOL)isEqual:;
+- (char *)createDescription:;
+- (id)echConfig;
+- (unsigned short)priority;
+@end

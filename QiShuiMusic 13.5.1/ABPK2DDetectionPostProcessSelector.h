@@ -1,0 +1,4 @@
+@interface ABPK2DDetectionPostProcessSelector : NSObject
++ (id)get2DDetectionPostProcessWithNetworkConfig:use3DSkeletonForExtrapolation:shouldPush3DSupportSkeleton:withExtrapolationTime:;
++ (id)get2DDetectionPostProcessWithNetworkConfig:use3DSkeletonForExtrapolation:shouldPush3DSupportSkeleton:;
+@end

@@ -1,0 +1,2 @@
+@interface SGEntityTagLabelOptions : NSObject
+@end

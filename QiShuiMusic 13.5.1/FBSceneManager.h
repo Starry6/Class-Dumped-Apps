@@ -1,0 +1,35 @@
+@interface FBSceneManager : NSObject
+@property (nonatomic) BOOL _suppressConnectionHandshakes;
+@property (nonatomic) <FBSceneManagerDelegate> delegate;
+- (void)removeObserver:;
+- (id)init;
+- (void)addObserver:;
+- (id)sceneFromIdentityToken:;
+- (id)createSceneWithDefinition:initialParameters:;
+- (id)sceneWithIdentifier:;
+- (void)setDelegate:;
+- (id)createSceneWithIdentifier:parameters:clientProvider:transitionContext:;
+- (id)debugDescription;
+- (id)newSceneIdentityTokenForIdentity:;
+- (id)createLegacySceneFromRemnant:withSettings:transitionContext:;
+- (id)createSceneFromRemnant:withSettings:transitionContext:;
+- (id)sceneFromIdentityTokenStringRepresentation:;
+- (void)_setSuppressConnectionHandshakes:;
+- (void)destroyScene:withTransitionContext:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)_isSynchronizingSceneUpdates;
+- (id)scenesPassingTest:;
+- (id)createSceneWithDefinition:;
+- (id)createSceneWithIdentifier:settings:initialClientSettings:clientProvider:transitionContext:;
+- (id)_createSceneWithDefinition:settings:initialClientSettings:transitionContext:fromRemnant:usingClientProvider:completion:;
+- (BOOL)_suppressConnectionHandshakes;
+- (void)enumerateScenesWithBlock:;
++ (void)setKeyboardScene:;
++ (id)keyboardScene;
++ (void)synchronizeChanges:;
++ (id)sharedInstance;
++ (void)_clearKeyboardScene;
++ (id)observeKeyboardSceneAvailability:;
+@end

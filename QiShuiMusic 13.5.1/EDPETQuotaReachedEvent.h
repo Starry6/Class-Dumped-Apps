@@ -1,0 +1,36 @@
+@interface EDPETQuotaReachedEvent : PBCodable
+@property (nonatomic) BOOL hasTimestamp;
+@property (nonatomic) Q timestamp;
+@property (nonatomic) BOOL hasSequenceNumber;
+@property (nonatomic) I sequenceNumber;
+@property (nonatomic) BOOL hasTimezoneOffset;
+@property (nonatomic) NSInteger timezoneOffset;
+@property (nonatomic) BOOL hasDroppedEventsCount;
+@property (nonatomic) Q droppedEventsCount;
+- (void)setHasSequenceNumber:;
+- (BOOL)hasSequenceNumber;
+- (void)setTimezoneOffset:;
+- (int)timezoneOffset;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)setHasTimestamp:;
+- (void)mergeFrom:;
+- (int)messageFrameType;
+- (void)setSequenceNumber:;
+- (BOOL)hasTimestamp;
+- (void)setTimestamp:;
+- (BOOL)hasTimezoneOffset;
+- (unsigned int)sequenceNumber;
+- (BOOL)readFrom:;
+- (unsigned long long)timestamp;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (void)setHasTimezoneOffset:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setDroppedEventsCount:;
+- (void)setHasDroppedEventsCount:;
+- (BOOL)hasDroppedEventsCount;
+- (unsigned long long)droppedEventsCount;
+@end

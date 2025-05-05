@@ -1,0 +1,37 @@
+@interface MCAppLayerVPNPayload : MCVPNPayloadBase
+@property (nonatomic) NSString VPNUUID;
+@property (nonatomic) NSArray SafariDomains;
+@property (nonatomic) NSArray SMBDomains;
+@property (nonatomic) NSArray mailDomains;
+@property (nonatomic) NSArray calendarDomains;
+@property (nonatomic) NSArray contactsDomains;
+@property (nonatomic) NSArray excludedDomains;
+@property (nonatomic) NSArray associatedDomains;
+@property (nonatomic) BOOL restrictDomains;
+- (id)associatedDomains;
+- (void)setSMBDomains:;
+- (void)setCalendarDomains:;
+- (void)setContactsDomains:;
+- (void)setExcludedDomains:;
+- (void).cxx_destruct;
+- (void)setMailDomains:;
+- (void)setAssociatedDomains:;
+- (id)verboseDescription;
+- (void)setSafariDomains:;
+- (id)mailDomains;
+- (id)calendarDomains;
+- (id)contactsDomains;
+- (id)excludedDomains;
+- (BOOL)restrictDomains;
+- (id)initWithDictionary:profile:outError:;
+- (id)stubDictionary;
+- (id)payloadDescriptionKeyValueSections;
+- (id)filterForUserEnrollmentOutError:;
+- (id)VPNUUID;
+- (void)setVPNUUID:;
+- (id)SafariDomains;
+- (id)SMBDomains;
++ (id)typeStrings;
++ (id)localizedPluralForm;
++ (id)localizedSingularForm;
+@end

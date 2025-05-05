@@ -1,0 +1,31 @@
+@interface OSASubmitter : NSObject
+@property (nonatomic) BOOL allowUnsignedBlobs;
+@property (nonatomic) NSArray internalWhitelist;
+@property (nonatomic) NSString connectionType;
+@property (nonatomic) NSURL submissionURL;
+@property (nonatomic) NSDictionary launchInfo;
+- (id)connectionType;
+- (void)setConnectionType:;
+- (void)abort;
+- (id)init;
+- (void)postContent:withHeaders:;
+- (void).cxx_destruct;
+- (id)submissionURL;
+- (void)prefaceSubmission:withData:usingArchive:andHeaders:;
+- (id)processSubmissionJobs:usingConfig:summarize:;
+- (void)prepConfig:;
+- (id)locateLog:forRouting:usingConfig:options:error:;
+- (id)applyTasking:taskId:usingConfig:fromBlob:;
+- (id)processJob:forRouting:including:usingConfig:taskings:summarize:;
+- (BOOL)cheaterTaskingWithSets:usingConfig:resultsCallback:;
+- (BOOL)submitLogsUsingPolicy:resultsCallback:;
+- (id)primarySubmissionPaths;
+- (BOOL)allowUnsignedBlobs;
+- (void)setAllowUnsignedBlobs:;
+- (id)internalWhitelist;
+- (void)setInternalWhitelist:;
+- (id)launchInfo;
+- (void)setLaunchInfo:;
++ (id)submissionPathsWithHomeDirectory:;
++ (id)extractAuthenticatedBlob:error:;
+@end

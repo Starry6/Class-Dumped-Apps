@@ -1,0 +1,31 @@
+@interface IESLiveLinkRTCWaterMarkRegion : NSObject
+@property (nonatomic) NSString waterMarkId;
+@property (nonatomic) float x;
+@property (nonatomic) float y;
+@property (nonatomic) float w;
+@property (nonatomic) float h;
+@property (nonatomic) q zOrder;
+@property (nonatomic) q alpha;
+@property (nonatomic) q renderMode;
+@property (nonatomic) ^{__CVBuffer=} imageData;
+- (void)setWaterMarkId:;
+- (id)initWithId:WithX:withY:withW:withH:withZorder:withAlpha:withMode:withPixelBuffer:;
+- (id)waterMarkId;
+- (float)h;
+- (float)w;
+- (void)setImageData:;
+- (void)setX:;
+- (id)imageData;
+- (void)setY:;
+- (float)y;
+- (void)setAlpha:;
+- (void)setRenderMode:;
+- (float)x;
+- (long long)renderMode;
+- (long long)alpha;
+- (void).cxx_destruct;
+- (void)setW:;
+- (void)setH:;
+- (long long)zOrder;
+- (void)setZOrder:;
+@end

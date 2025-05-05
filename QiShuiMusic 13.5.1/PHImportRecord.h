@@ -1,0 +1,38 @@
+@interface PHImportRecord : PHImportExceptionRecorder
+@property (nonatomic) NSMutableArray relatedRecords;
+@property (nonatomic) BOOL referencedImport;
+@property (nonatomic) NSString assetIdentifier;
+@property (nonatomic) NSString rawAssetIdentifier;
+@property (nonatomic) PHImportAsset importAsset;
+@property (nonatomic) NSString downloadedPath;
+@property (nonatomic) PHImportTimerCollection timers;
+@property (nonatomic) C importType;
+@property (nonatomic) BOOL canReference;
+- (id)timers;
+- (void)setTimers:;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)canReference;
+- (id)initWithImportAsset:;
+- (id)descriptionWithPrefix:;
+- (void)cleanupAfterFailure;
+- (id)allAssetIdentifiers;
+- (id)rawAssetIdentifier;
+- (void)addRelatedRecord:;
+- (id)recordForAsset:;
+- (id)allImportAssets;
+- (id)allImportRecords;
+- (BOOL)needsDownload;
+- (id)assetIdentifier;
+- (void)setAssetIdentifier:;
+- (id)importAsset;
+- (void)setImportAsset:;
+- (id)relatedRecords;
+- (void)setRelatedRecords:;
+- (BOOL)referencedImport;
+- (void)setReferencedImport:;
+- (id)downloadedPath;
+- (void)setDownloadedPath:;
+- (unsigned char)importType;
+- (void)setImportType:;
+@end

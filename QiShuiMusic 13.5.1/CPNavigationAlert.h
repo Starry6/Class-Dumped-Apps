@@ -1,0 +1,31 @@
+@interface CPNavigationAlert : NSObject
+@property (nonatomic) NSUUID identifier;
+@property (nonatomic) <CPNavigationAlertUpdating> navigationAlertUpdateTarget;
+@property (nonatomic) NSArray titleVariants;
+@property (nonatomic) NSArray subtitleVariants;
+@property (nonatomic) CPImageSet imageSet;
+@property (nonatomic) UIImage image;
+@property (nonatomic) CPAlertAction primaryAction;
+@property (nonatomic) CPAlertAction secondaryAction;
+@property (nonatomic) double duration;
+- (id)identifier;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (double)duration;
+- (id)primaryAction;
+- (void)setIdentifier:;
+- (id)image;
+- (id)titleVariants;
+- (id)secondaryAction;
+- (id)imageSet;
+- (id)_initWithTitleVariants:subtitleVariants:imageSet:primaryAction:secondaryAction:duration:;
+- (id)initWithTitleVariants:subtitleVariants:imageSet:primaryAction:secondaryAction:duration:;
+- (id)initWithTitleVariants:subtitleVariants:image:primaryAction:secondaryAction:duration:;
+- (void)updateTitleVariants:subtitleVariants:;
+- (id)subtitleVariants;
+- (id)navigationAlertUpdateTarget;
+- (void)setNavigationAlertUpdateTarget:;
++ (BOOL)supportsSecureCoding;
+@end

@@ -1,0 +1,2 @@
+@interface HTSLiveGiftExhibitionRoot : GPBRootObject
+@end

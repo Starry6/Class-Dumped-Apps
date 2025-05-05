@@ -1,0 +1,37 @@
+@interface MNNavigationSessionLogger : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (void).cxx_destruct;
+- (void)navigationSession:didStartWithRoute:navigationType:isResumingMultipointRoute:isReconnecting:;
+- (void)navigationSession:didChangeNavigationState:;
+- (void)navigationSession:didStopWithReason:;
+- (void)navigationSession:didUpdateMatchedLocation:;
+- (void)navigationSession:matchedToStepIndex:segmentIndex:;
+- (void)navigationSession:didEnterPreArrivalStateForWaypoint:endOfLegIndex:;
+- (void)navigationSession:didArriveAtWaypoint:endOfLegIndex:;
+- (void)navigationSession:didResumeNavigatingFromWaypoint:endOfLegIndex:reason:;
+- (void)navigationSessionDidEnterPreArrivalState:;
+- (void)navigationSessionDidArrive:;
+- (void)navigationSession:didUpdateDisplayETA:remainingDistance:batteryChargeInfo:;
+- (void)navigationSession:didUpdateETAResponseForRoute:;
+- (void)navigationSessionWillReroute:;
+- (void)navigationSession:didSuppressReroute:;
+- (void)navigationSessionDidCancelReroute:;
+- (void)navigationSession:didReroute:withLocation:withAlternateRoutes:rerouteReason:;
+- (void)navigationSession:didSwitchToNewTransportType:newRoute:;
+- (void)navigationSession:didUpdateDestination:;
+- (void)navigationSession:didRerouteWithWaypoints:;
+- (void)navigationSession:didInsertWaypoint:;
+- (void)navigationSession:didRemoveWaypoint:;
+- (void)navigationSession:didFailRerouteWithError:;
+- (void)navigationSession:didUpdateAlternateRoutes:;
+- (void)navigationSession:updateSignsWithInfo:;
+- (void)navigationSession:updateSignsWithARInfo:;
+- (void)navigationSession:didReceiveTrafficIncidentAlert:responseCallback:;
+- (id)_stringForLocationType:;
+- (void)_updateCameraStyleAttributesForLocation:;
+- (id)_stringForStyleAttributeKey:;
+@end

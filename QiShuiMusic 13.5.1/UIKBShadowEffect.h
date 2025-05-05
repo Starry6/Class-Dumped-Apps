@@ -1,0 +1,34 @@
+@interface UIKBShadowEffect : NSObject
+@property (nonatomic) {CGSize=dd} offset;
+@property (nonatomic) {UIEdgeInsets=dddd} insets;
+@property (nonatomic) {UIEdgeInsets=dddd} concaveInsets;
+@property (nonatomic) BOOL isValid;
+@property (nonatomic) BOOL renderUnder;
+@property (nonatomic) double weight;
+@property (nonatomic) BOOL usesRGBColors;
+@property (nonatomic) UIKBGradient gradient;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setOffset:;
+- (double)weight;
+- (id)gradient;
+- (void)setWeight:;
+- (id)CGColor;
+- (void)setInsets:;
+- (id)offset;
+- (id)insets;
+- (void)renderEffectWithRenderer:traits:;
+- (BOOL)usesRGBColors;
+- (BOOL)isValid;
+- (void).cxx_destruct;
+- (BOOL)renderUnder;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)initWithColor:offset:insets:weight:;
+- (id)concaveInsets;
+- (void)setConcaveInsets:;
++ (id)effectWithColor:offset:insets:weight:;
+@end

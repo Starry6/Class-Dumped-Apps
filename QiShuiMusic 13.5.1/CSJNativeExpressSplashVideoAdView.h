@@ -1,0 +1,38 @@
+@interface CSJNativeExpressSplashVideoAdView : CSJNativeExpressAdView
+@property (nonatomic) BUPlayerItem playerItem;
+@property (nonatomic) BUTimer quitTimer;
+@property (nonatomic) BOOL hasCoverImage;
+@property (nonatomic) CSJVideoAdTracker videoTracker;
+@property (nonatomic) <CSJNativeExpressSplashVideoAdViewDelegate> delegate;
+- (void)handleSkipVideo;
+- (BOOL)p_hasCoverImage;
+- (void)addNotification;
+- (void)_initPlayer;
+- (BOOL)_shouldInitPlayer;
+- (void)forceQuit;
+- (void)handleClickEventIsVideoClicked:isEndcardClicked:;
+- (void)handleInvalidVideoUrl;
+- (BOOL)hasCoverImage;
+- (id)initWithFrame:nativeAd:nativeExpressAdViewSource:;
+- (void)invalidateQuitTimer;
+- (void)judgeQuit;
+- (void)player:decodeModeChanged:;
+- (void)player:stateDidChanged:;
+- (void)playerDidPlayFinish:error:;
+- (void)playerReadyToPlay:;
+- (id)quitTimer;
+- (void)removeNotification;
+- (void)setHasCoverImage:;
+- (void)setQuitTimer:;
+- (void)setVideoTracker:;
+- (void)startPlayVideo;
+- (id)videoTracker;
+- (void)dealloc;
+- (void)setDelegate:;
+- (id)playerItem;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setPlayerItem:;
+- (void)resetPlayer;
+- (void)applicationWillTerminateNotification:;
+@end

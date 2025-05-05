@@ -1,0 +1,36 @@
+@interface ICIAMLogEventRequest : PBRequest
+@property (nonatomic) BOOL hasApplicationMessageIdentifier;
+@property (nonatomic) NSString applicationMessageIdentifier;
+@property (nonatomic) BOOL hasDSID;
+@property (nonatomic) q dSID;
+@property (nonatomic) BOOL hasDeviceID;
+@property (nonatomic) NSString deviceID;
+@property (nonatomic) NSMutableArray eventParameters;
+- (void)setDSID:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)setDeviceID:;
+- (id)deviceID;
+- (void)mergeFrom:;
+- (BOOL)hasDeviceID;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setHasDSID:;
+- (BOOL)hasDSID;
+- (long long)dSID;
+- (BOOL)hasApplicationMessageIdentifier;
+- (void)clearEventParameters;
+- (void)addEventParameters:;
+- (unsigned long long)eventParametersCount;
+- (id)eventParametersAtIndex:;
+- (id)applicationMessageIdentifier;
+- (void)setApplicationMessageIdentifier:;
+- (id)eventParameters;
+- (void)setEventParameters:;
++ (Class)eventParametersType;
+@end

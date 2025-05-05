@@ -1,0 +1,35 @@
+@interface SISchemaDeviceDynamicContext : SISchemaInstrumentationMessage
+@property (nonatomic) SISchemaLocation location;
+@property (nonatomic) BOOL hasLocation;
+@property (nonatomic) NSString countryCode;
+@property (nonatomic) BOOL hasCountryCode;
+@property (nonatomic) double timeIntervalSince1970;
+@property (nonatomic) BOOL hasTimeIntervalSince1970;
+@property (nonatomic) NSData jsonData;
+- (BOOL)hasCountryCode;
+- (void)setCountryCode:;
+- (void)setHasLocation:;
+- (void)setTimeIntervalSince1970:;
+- (id)countryCode;
+- (id)initWithJSON:;
+- (BOOL)hasLocation;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (id)location;
+- (void)setLocation:;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (double)timeIntervalSince1970;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (BOOL)hasTimeIntervalSince1970;
+- (void)setHasTimeIntervalSince1970:;
+- (void)setHasCountryCode:;
+- (void)deleteCountryCode;
+- (void)deleteTimeIntervalSince1970;
+- (void)deleteLocation;
+@end

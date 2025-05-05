@@ -1,0 +1,2 @@
+@interface AVPairedDeviceInternal : NSObject
+@end

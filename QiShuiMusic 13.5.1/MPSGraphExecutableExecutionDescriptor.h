@@ -1,0 +1,36 @@
+@interface MPSGraphExecutableExecutionDescriptor : NSObject
+@property (nonatomic) BOOL enableCommitAndContinue;
+@property (nonatomic) @? scheduledGraphHandler;
+@property (nonatomic) @? completionGraphHandler;
+@property (nonatomic) BOOL enableProfilingOpNames;
+@property (nonatomic) BOOL briefProfilingOpNames;
+@property (nonatomic) BOOL breakUpMetalEncoders;
+@property (nonatomic) @? scheduledHandler;
+@property (nonatomic) @? completionHandler;
+@property (nonatomic) BOOL waitUntilCompleted;
+- (id)init;
+- (void)setCompletionHandler:;
+- (void).cxx_destruct;
+- (void)setWaitUntilCompleted:;
+- (BOOL)waitUntilCompleted;
+- (id)copyWithZone:;
+- (id)completionHandler;
+- (void)waitForEvent:value:;
+- (void)waitForANEPrePowerUpEvent:value:;
+- (void)signalEvent:atExecutionEvent:value:;
+- (id)scheduledHandler;
+- (void)setScheduledHandler:;
+- (BOOL)enableCommitAndContinue;
+- (void)setEnableCommitAndContinue:;
+- (BOOL)enableProfilingOpNames;
+- (void)setEnableProfilingOpNames:;
+- (BOOL)briefProfilingOpNames;
+- (void)setBriefProfilingOpNames:;
+- (BOOL)breakUpMetalEncoders;
+- (void)setBreakUpMetalEncoders:;
+- (id)initWithGraphExecutionDescriptor:;
+- (id)scheduledGraphHandler;
+- (void)setScheduledGraphHandler:;
+- (id)completionGraphHandler;
+- (void)setCompletionGraphHandler:;
+@end

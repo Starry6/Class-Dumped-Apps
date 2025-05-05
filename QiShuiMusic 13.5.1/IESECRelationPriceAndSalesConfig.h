@@ -1,0 +1,38 @@
+@interface IESECRelationPriceAndSalesConfig : NSObject
+@property (nonatomic) double priceHeight;
+@property (nonatomic) double integerFontSize;
+@property (nonatomic) double iphone5AlikeIntergerFontSize;
+@property (nonatomic) double decimalFontSize;
+@property (nonatomic) double prefixFontSize;
+@property (nonatomic) double suffixFontSize;
+@property (nonatomic) double tagFontSize;
+@property (nonatomic) BOOL showSuffix;
+@property (nonatomic) {UIEdgeInsets=dddd} padding;
+@property (nonatomic) BOOL hideSales;
+@property (nonatomic) double salesFontSize;
+@property (nonatomic) double maxWidth;
+- (double)integerFontSize;
+- (void)setTagFontSize:;
+- (double)decimalFontSize;
+- (void)setPriceHeight:;
+- (BOOL)hideSales;
+- (double)iphone5AlikeIntergerFontSize;
+- (double)prefixFontSize;
+- (double)priceHeight;
+- (double)salesFontSize;
+- (void)setDecimalFontSize:;
+- (void)setHideSales:;
+- (void)setIntegerFontSize:;
+- (void)setIphone5AlikeIntergerFontSize:;
+- (void)setPrefixFontSize:;
+- (void)setSalesFontSize:;
+- (void)setShowSuffix:;
+- (void)setSuffixFontSize:;
+- (BOOL)showSuffix;
+- (double)suffixFontSize;
+- (double)tagFontSize;
+- (double)maxWidth;
+- (void)setMaxWidth:;
+- (void)setPadding:;
+- (id)padding;
+@end

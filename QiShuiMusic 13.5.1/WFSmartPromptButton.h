@@ -1,0 +1,2 @@
+@interface WFSmartPromptButton : INObject
+@end

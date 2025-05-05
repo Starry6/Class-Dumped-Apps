@@ -1,0 +1,35 @@
+@interface CBRFCOMMChannel : NSObject
+@property (nonatomic) NSInteger socketFD;
+@property (nonatomic) CBClassicPeer peer;
+@property (nonatomic) NSInputStream inputStream;
+@property (nonatomic) NSOutputStream outputStream;
+@property (nonatomic) CBUUID serviceUUID;
+@property (nonatomic) C channelID;
+@property (nonatomic) S mtu;
+@property (nonatomic) BOOL isIncoming;
+@property (nonatomic) I baudRate;
+@property (nonatomic) C dataBits;
+@property (nonatomic) C parity;
+@property (nonatomic) C stopBits;
+- (unsigned short)mtu;
+- (id)serviceUUID;
+- (id)inputStream;
+- (BOOL)isIncoming;
+- (id)peer;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (id)outputStream;
+- (id)description;
+- (unsigned char)channelID;
+- (int)socketFD;
+- (id)initWithPeer:info:;
+- (void)configureChannelPortParams:dataBits:parity:stopBits:;
+- (unsigned int)baudRate;
+- (void)setBaudRate:;
+- (unsigned char)dataBits;
+- (void)setDataBits:;
+- (unsigned char)parity;
+- (void)setParity:;
+- (unsigned char)stopBits;
+- (void)setStopBits:;
+@end

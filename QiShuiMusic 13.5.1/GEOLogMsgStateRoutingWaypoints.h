@@ -1,0 +1,34 @@
+@interface GEOLogMsgStateRoutingWaypoints : PBCodable
+@property (nonatomic) BOOL hasOriginalNumberOfStops;
+@property (nonatomic) I originalNumberOfStops;
+@property (nonatomic) BOOL hasOriginalWaypointId;
+@property (nonatomic) I originalWaypointId;
+@property (nonatomic) BOOL hasFinalWaypointId;
+@property (nonatomic) I finalWaypointId;
+- (void)readAll:;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (unsigned int)originalNumberOfStops;
+- (void)setOriginalNumberOfStops:;
+- (void)setHasOriginalNumberOfStops:;
+- (BOOL)hasOriginalNumberOfStops;
+- (unsigned int)originalWaypointId;
+- (void)setOriginalWaypointId:;
+- (void)setHasOriginalWaypointId:;
+- (BOOL)hasOriginalWaypointId;
+- (unsigned int)finalWaypointId;
+- (void)setFinalWaypointId:;
+- (void)setHasFinalWaypointId:;
+- (BOOL)hasFinalWaypointId;
++ (BOOL)isValid:;
+@end

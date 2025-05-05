@@ -1,0 +1,35 @@
+@interface CPLEngineStatusCenter : CPLEngineStorage
+@property (nonatomic) BOOL hasStatusChanges;
+@property (nonatomic) CPLPlatformObject platformObject;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)_allScopedIdentifierInCollection:withScopeIdentifier:;
+- (id)recordViewForStatusWithScopedIdentifier:;
+- (void)writeTransactionDidSucceed;
+- (BOOL)acknowledgeChangedStatuses:error:;
+- (void)_removeScopedIdentifiersFromSet:withScopeIdentifier:;
+- (BOOL)discardNotificationForRecordWithScopedIdentifier:error:;
+- (id)statusesForRecordsWithScopedIdentifiers:;
+- (id)statusChanges;
+- (BOOL)notifyStatusForRecordHasChanged:persist:error:;
+- (void)resetAllTransientStatuses;
+- (BOOL)notifyStatusForRecordWithScopedIdentifierHasChanged:recordClass:persist:error:;
+- (void)_removeStatusesInDictionary:withScopeIdentifier:;
+- (id)_statusFromCachesWithRecordScopedIdentifier:;
+- (unsigned long long)scopeType;
+- (BOOL)deleteRecordsForScopeIndex:maxCount:deletedCount:error:;
+- (BOOL)hasStatusChanges;
+- (void).cxx_destruct;
+- (void)writeTransactionDidFail;
+- (BOOL)notifyStatusForRecordViewHasChanged:persist:error:;
+- (id)initWithEngineStore:name:;
+- (void)_fillStatus:withClientCacheRecordView:cloudCacheRecord:isConfirmed:isStaged:isInIDMapping:;
+- (id)status;
+- (id)statusesForRecordsWithIdentifiers:;
+- (void)_fillStatus:;
+- (void)resetTransientStatusesWithScopeIdentifier:;
+- (id)allStatusChanges;
+- (id)recordForStatusWithScopedIdentifier:;
+@end

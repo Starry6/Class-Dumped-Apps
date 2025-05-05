@@ -1,0 +1,36 @@
+@interface BDXResourceLoaderConfig : NSObject
+@property (nonatomic) NSString accessKey;
+@property (nonatomic) NSDictionary akToPrefixList;
+@property (nonatomic) NSDictionary defaultPrefixToAk;
+@property (nonatomic) NSNumber disableGurd;
+@property (nonatomic) NSNumber disableBuildin;
+@property (nonatomic) NSNumber disableGurdUpdate;
+@property (nonatomic) NSNumber useMemoryCache;
+@property (nonatomic) NSNumber enableDownloaderNegotiation;
+@property (nonatomic) q gurdDownloadPrority;
+@property (nonatomic) BOOL disableGurdThrottle;
+- (void)setDisableGurd:;
+- (void)setEnableDownloaderNegotiation:;
+- (id)akToPrefixList;
+- (id)defaultPrefixToAk;
+- (id)disableBuildin;
+- (id)disableGurd;
+- (BOOL)disableGurdThrottle;
+- (id)disableGurdUpdate;
+- (id)enableDownloaderNegotiation;
+- (long long)gurdDownloadPrority;
+- (void)setAkToPrefixList:;
+- (void)setDefaultPrefixToAk:;
+- (void)setDisableBuildin:;
+- (void)setDisableGurdThrottle:;
+- (void)setDisableGurdUpdate:;
+- (void)setGurdDownloadPrority:;
+- (void)setUseMemoryCache:;
+- (id)useMemoryCache;
+- (id)init;
+- (void).cxx_destruct;
+- (id)description;
+- (id)copyWithZone:;
+- (id)accessKey;
+- (void)setAccessKey:;
+@end

@@ -1,0 +1,30 @@
+@interface SSMetricsAppInstallEvent : SSMetricsMutableEvent
+@property (nonatomic) NSString buildVersion;
+@property (nonatomic) NSString bundleID;
+@property (nonatomic) NSString hardwareType;
+@property (nonatomic) NSString installError;
+@property (nonatomic) Q installStatus;
+@property (nonatomic) Q installType;
+@property (nonatomic) q jobID;
+- (void)setBuildVersion:;
+- (void)setInstallError:;
+- (unsigned long long)installType;
+- (id)buildVersion;
+- (id)init;
+- (id)installError;
+- (id)hardwareType;
+- (id)description;
+- (id)bundleID;
+- (void)setHardwareType:;
+- (void)setBundleID:;
+- (unsigned long long)installStatus;
+- (long long)jobID;
+- (void)setInstallStatus:;
+- (void)setInstallType:;
+- (void)setJobID:;
+- (BOOL)requiresDiagnosticSendingPermission;
++ (unsigned long long)_installStatusForString:;
++ (unsigned long long)_installTypeForString:;
++ (id)_stringForInstallStatus:;
++ (id)_stringForInstallType:;
+@end

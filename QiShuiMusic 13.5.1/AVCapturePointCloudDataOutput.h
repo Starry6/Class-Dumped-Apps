@@ -1,0 +1,34 @@
+@interface AVCapturePointCloudDataOutput : AVCaptureOutput
+@property (nonatomic) <AVCapturePointCloudDataOutputDelegate> delegate;
+@property (nonatomic) NSObject<OS_dispatch_queue> delegateCallbackQueue;
+@property (nonatomic) BOOL alwaysDiscardsLatePointCloudData;
+@property (nonatomic) @ delegateOverride;
+@property (nonatomic) NSObject<OS_dispatch_queue> delegateOverrideCallbackQueue;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)canAddConnection:failureReason:;
+- (id)init;
+- (void)dealloc;
+- (id)connectionMediaTypes;
+- (void)detachSafelyFromFigCaptureSession:;
+- (void)attachSafelyToFigCaptureSession:;
+- (void)setDelegateOverride:delegateOverrideCallbackQueue:;
+- (void)_handleNotification:payload:;
+- (id)delegateCallbackQueue;
+- (void)_updateRemoteQueue:;
+- (id)delegateOverride;
+- (void)_handleLocalQueueMessage:;
+- (void)_processSampleBuffer:;
+- (id)delegate;
+- (void)_handleRemoteQueueOperation:;
+- (id)delegateOverrideCallbackQueue;
+- (void)_updateLocalQueue:;
+- (void)setDelegate:callbackQueue:;
+- (BOOL)appliesOrientationWithPhysicalRotationForConnection:;
+- (BOOL)appliesMirroringWithPhysicalFlipForConnection:;
+- (BOOL)alwaysDiscardsLatePointCloudData;
+- (void)setAlwaysDiscardsLatePointCloudData:;
++ (id)new;
+@end

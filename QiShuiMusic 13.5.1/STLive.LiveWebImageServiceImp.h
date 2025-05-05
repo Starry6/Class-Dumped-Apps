@@ -1,0 +1,25 @@
+@interface STLive.LiveWebImageServiceImp : NSObject
+- (void)clearMemory;
+- (id)createWebPDecoderWithData:scale:;
+- (id)createWebPPlayer;
+- (void)ieslive_appliedImageView:imageURLs:placeholderImage:cornerRadius:completed:;
+- (void)ieslive_appliedImageView:imageURLs:placeholderImage:needCircular:completed:;
+- (void)ieslive_appliedUIButton:controlState:imageURLs:placeholderImage:options:cornerRadius:completed:;
+- (void)ieslive_cancelCurrentImageLoadWithImageView:;
+- (long long)ieslive_getWebInternalType;
+- (id)imageCachePathForKey:;
+- (BOOL)imageExistInCacheWithKey:cacheType:;
+- (id)imageFromCacheWithKey:cacheType:;
+- (id)imageFromCacheWithKey:cacheType:size:;
+- (id)imageWithData:preloadAllFrame:;
+- (void)loadImageWithURL:options:complete:;
+- (void)loadImageWithURL:options:targetSize:complete:;
+- (void)loadImageWithURLs:options:complete:;
+- (void)prefetchImagesWithURLs:complete:;
+- (void)storeImage:forKey:toDisk:;
+- (void)storeImage:imageData:forKey:toDisk:;
+- (id)webPPlayerWithName:;
+- (id)init;
+- (void).cxx_destruct;
+- (id)imageDataForKey:;
+@end

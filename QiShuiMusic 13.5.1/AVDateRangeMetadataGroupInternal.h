@@ -1,0 +1,2 @@
+@interface AVDateRangeMetadataGroupInternal : NSObject
+@end

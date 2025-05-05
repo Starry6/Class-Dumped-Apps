@@ -1,0 +1,36 @@
+@interface INSearchForNotebookItemsIntentResponse : INIntentResponse
+@property (nonatomic) q code;
+@property (nonatomic) NSArray notes;
+@property (nonatomic) NSArray taskLists;
+@property (nonatomic) NSArray tasks;
+@property (nonatomic) q sortType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)notes;
+- (id)init;
+- (id)_dictionaryRepresentation;
+- (id)initWithBackingStore:;
+- (long long)code;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void)setNotes:;
+- (long long)sortType;
+- (void)setSortType:;
+- (id)propertiesByName;
+- (id)_initWithCode:userActivity:;
+- (id)initWithCode:userActivity:;
+- (long long)_intentResponseCode;
+- (long long)_codeWithName:;
+- (void)setPropertiesByName:;
+- (id)tasks;
+- (void)setTasks:;
+- (id)taskLists;
+- (void)setTaskLists:;
++ (BOOL)supportsSecureCoding;
++ (long long)_codeFromType:errorCode:appLaunchRequested:;
++ (int)_typeFromCode:;
++ (int)_errorCodeFromCode:;
++ (BOOL)_appLaunchRequestedFromCode:;
+@end

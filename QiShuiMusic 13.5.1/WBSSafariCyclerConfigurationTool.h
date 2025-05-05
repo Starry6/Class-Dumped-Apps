@@ -1,0 +1,22 @@
+@interface WBSSafariCyclerConfigurationTool : NSObject
+- (id)init;
+- (id)_descriptionForErrorCode:;
+- (void)run;
+- (void).cxx_destruct;
+- (id)_supportedCommands;
+- (id)_errorWithCode:;
+- (void)_runTest:;
+- (void)_startCycler:;
+- (void)_stopCycler:;
+- (void)_resumeCycler:;
+- (void)_setConfigurationOption:;
+- (void)_sendRequestToTest:;
+- (void)_configureDevice:;
+- (void)_fetchStatus:;
+- (void)_fetchLogs:;
+- (void)_fetchLastError:;
+- (void)_waitForCyclerToFinish:;
+- (id)_commandWithName:;
+- (void)_printUsage;
+- (void)_exitWithError:;
+@end

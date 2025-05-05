@@ -1,0 +1,35 @@
+@interface AAStorableLoginContext : NSObject
+@property (nonatomic) NSString appleID;
+@property (nonatomic) NSString altDSID;
+@property (nonatomic) NSString DSID;
+@property (nonatomic) NSString rawPassword;
+@property (nonatomic) NSString continuationKey;
+@property (nonatomic) NSString passwordResetKey;
+@property (nonatomic) NSString cloudKitToken;
+@property (nonatomic) BOOL beneficiaryLogin;
+@property (nonatomic) NSString firstName;
+@property (nonatomic) NSString middleName;
+@property (nonatomic) NSString lastName;
+- (void)setLastName:;
+- (id)rawPassword;
+- (id)appleID;
+- (id)DSID;
+- (void)setDSID:;
+- (id)altDSID;
+- (void)setFirstName:;
+- (id)firstName;
+- (id)middleName;
+- (id)lastName;
+- (void)setRawPassword:;
+- (id)initWithAppleID:altDSID:;
+- (void).cxx_destruct;
+- (void)setMiddleName:;
+- (id)cloudKitToken;
+- (id)continuationKey;
+- (void)setContinuationKey:;
+- (id)passwordResetKey;
+- (void)setPasswordResetKey:;
+- (void)setCloudKitToken:;
+- (BOOL)isBeneficiaryLogin;
+- (void)setBeneficiaryLogin:;
+@end

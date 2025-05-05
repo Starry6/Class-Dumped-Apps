@@ -1,0 +1,26 @@
+@interface VKBuildingGroup : VKPolygonalItemGroup
+- (void)didFinishAddingData;
+- (id)initWithStyleQuery:tileZoom:fixedAroundCentroid:contentScale:;
+- (void)prepareForBuilding:forRoofStyle:scaleThreshold:;
+- (unsigned char)maxAttributeSetsPerGroup;
+- (id)pointyRoofStrokeMeshVendor;
+- (id)commitRangesToPointyRoofTopRenderItemBatcher:forMeshAtIndex:cullingMask:featureIdPredicate:;
+- (void)addBuilding:index:ofTotal:accessor:triangulator:prepareExtrusion:forRoofStyle:scaleThreshold:;
+- (id)extrusionFillMeshVendor;
+- (id)commitRangesToPointyRoofFillRenderItemBatcher:forMeshAtIndex:cullingMask:featureIdPredicate:;
+- (id)styleQueriesForPointyRoofs:selected:;
+- (void)updateWithStyleManager:;
+- (id)commitRangesToExtrusionFillRenderItemBatcher:forMeshAtIndex:cullingMask:featureIdPredicate:;
+- (id)pointyRoofFillMeshVendor;
+- (id)commitRangesToPointyRoofStrokeRenderItemBatcher:forMeshAtIndex:cullingMask:featureIdPredicate:;
+- (void)willAddDataWithAccessor:;
+- (id)strokeMeshes;
+- (BOOL)addPointyRoofForBuilding:buildingModel:scaleThreshold:styleIndex:;
+- (id)commitRangesToExtrusionStrokeRenderItemBatcher:forMeshAtIndex:cullingMask:featureIdPredicate:;
+- (void).cxx_destruct;
+- (id)fillMeshesForPointyRoofs;
+- (BOOL)canConstructPointyRoofForPolygon:building:buildingModel:scaleThreshold:;
+- (void)addExtrusionForBuilding:index:ofTotal:;
+- (id)extrusionStrokeMeshVendor;
+- (id).cxx_construct;
+@end

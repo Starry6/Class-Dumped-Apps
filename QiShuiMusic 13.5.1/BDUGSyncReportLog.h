@@ -1,0 +1,30 @@
+@interface BDUGSyncReportLog : NSObject
+@property (nonatomic) NSString did;
+@property (nonatomic) NSString uid;
+@property (nonatomic) NSInteger bucket;
+@property (nonatomic) q syncCursor;
+@property (nonatomic) NSInteger business;
+@property (nonatomic) NSString msgID;
+@property (nonatomic) c consumeType;
+@property (nonatomic) NSData data;
+@property (nonatomic) NSString md5;
+- (void)setDid:;
+- (id)did;
+- (void)setConsumeType:;
+- (char)consumeType;
+- (id)msgID;
+- (void)setMsgID:;
+- (void)setSyncCursor:;
+- (long long)syncCursor;
+- (id)uid;
+- (id)data;
+- (void)setUid:;
+- (void).cxx_destruct;
+- (void)setData:;
+- (void)setBucket:;
+- (int)bucket;
+- (int)business;
+- (void)setBusiness:;
+- (id)md5;
+- (void)setMd5:;
+@end

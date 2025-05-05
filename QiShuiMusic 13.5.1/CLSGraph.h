@@ -1,0 +1,38 @@
+@interface CLSGraph : NSObject
+@property (nonatomic) Q vertexCount;
+@property (nonatomic) Q edgeCount;
+@property (nonatomic) <CLSGraphVertex><NSObject> anyVertex;
+- (void)addVertex:;
+- (void)enumerate:;
+- (id)init;
+- (unsigned long long)vertexCount;
+- (unsigned long long)edgeCount;
+- (void).cxx_destruct;
+- (void)reset;
+- (void)removeVertex:;
+- (void)addEdgeFromVertex:toVertex:;
+- (id)initWithMemoryOptions:;
+- (id)anyVertex;
+- (unsigned long long)degree:;
+- (unsigned long long)inDegree:;
+- (unsigned long long)outDegree:;
+- (unsigned long long)_degreeOfVertex:inEdgeMap:;
+- (id)vertexWithVertexID:;
+- (BOOL)containsVertexWithVertexID:;
+- (BOOL)containsVertex:;
+- (BOOL)hasEdgeFromVertex:toVertex:;
+- (void)removeEdgeFromVertex:toVertex:;
+- (void)_removeEdgeFromVertexWithID:toVertexWithID:;
+- (void)removeSubtreeStartingAtVertex:;
+- (id)neighboursOfVertex:;
+- (void)enumerateNeighboursOfVertex:enumerationBlock:;
+- (id)inNeighboursOfVertex:;
+- (void)enumerateInNeighboursOfVertex:enumerationBlock:;
+- (id)outNeighboursOfVertex:;
+- (void)enumerateOutNeighboursOfVertex:enumerationBlock:;
+- (void)_enumerateVerticesInEdges:skipingEdges:enumerationBlock:;
+- (void)traverse:;
+- (void)traverseVerticesPassingTest:enumerationBlock:;
+- (void)traverseStartingAtVertex:enumerationBlock:;
+- (void)_traverseStartingAtVertex:previousVertex:visitedVertices:enumerationBlock:;
+@end

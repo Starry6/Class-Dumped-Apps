@@ -1,0 +1,32 @@
+@interface CSCoder : NSObject
+@property (nonatomic) ^{_MDPlistContainer=} container;
+@property (nonatomic) BOOL finalized;
+@property (nonatomic) NSData data;
+- (void)encodeObject:;
+- (BOOL)finalized;
+- (id)init;
+- (void)dealloc;
+- (void)encodeData:length:;
+- (id)data;
+- (void)encodeInt64:;
+- (id)container;
+- (void)beginType:;
+- (void)encodeBool:;
+- (void)encodeMDPlistObject:;
+- (void)encodeDouble:;
+- (void)beginDictionary;
+- (void)endType;
+- (void)beginArray;
+- (void).cxx_destruct;
+- (void)endDictionary;
+- (id)plistContainer;
+- (void)endArray;
+- (void)encodeString:stringLength:forKey:keyLength:;
+- (void)encodeInt32:;
+- (void)encodeString:length:;
+- (void)encodeObject:withKey:;
+- (void)encodeObject:forKey:keyLength:;
+- (void)encodeString:;
+- (void)encodeNSString:;
++ (id)encodeURLPreservingSecurityScope:;
+@end

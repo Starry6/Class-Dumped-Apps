@@ -1,0 +1,2 @@
+@interface CalDAVMkcalendarResponseItem : CoreDAVItem
+@end

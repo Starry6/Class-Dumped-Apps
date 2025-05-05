@@ -1,0 +1,31 @@
+@interface MKMultiPoint : MKShape
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) Q pointCount;
+- (void)dealloc;
+- (id)boundingMapRect;
+- (id)initWithCoder:;
+- (id)_initWithGeoJSONObject:error:;
+- (void)encodeWithCoder:;
+- (id)coordinate;
+- (BOOL)_determineSelfIntersecting;
+- (id)points;
+- (BOOL)intersectsMapRect:;
+- (void)_calculateBounds;
+- (unsigned long long)pointCount;
+- (id)elevations;
+- (void)_setBounds:;
+- (void)_pointsDidChange;
+- (void)_wrapAroundTheDateline:elevations:count:;
+- (void)_setCoordinates:elevations:count:;
+- (void)_setCoordinates:count:;
+- (void)_setPoints:count:;
+- (void)_assignPoints:count:;
+- (void)getCoordinates:range:;
+- (double)_mapPointsLength;
+- (BOOL)_isSelfIntersecting;
+- (double)locationAtPointIndex:;
+- (id)locationsAtPointIndexes:;
+@end

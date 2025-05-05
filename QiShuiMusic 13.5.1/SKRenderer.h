@@ -1,0 +1,37 @@
+@interface SKRenderer : NSObject
+@property (nonatomic) SKScene scene;
+@property (nonatomic) BOOL ignoresSiblingOrder;
+@property (nonatomic) BOOL shouldCullNonVisibleNodes;
+@property (nonatomic) BOOL showsDrawCount;
+@property (nonatomic) BOOL showsNodeCount;
+@property (nonatomic) BOOL showsQuadCount;
+@property (nonatomic) BOOL showsPhysics;
+@property (nonatomic) BOOL showsFields;
+- (void)setScene:;
+- (void)dealloc;
+- (void)_update:;
+- (id)scene;
+- (void).cxx_destruct;
+- (void)_initialize;
+- (void)updateAtTime:;
+- (void)setIgnoresSiblingOrder:;
+- (BOOL)ignoresSiblingOrder;
+- (id)initWithSKCRenderer:;
+- (void)setShowsNodeCount:;
+- (BOOL)showsNodeCount;
+- (void)setShowsQuadCount:;
+- (BOOL)showsQuadCount;
+- (void)setShowsDrawCount:;
+- (BOOL)showsDrawCount;
+- (void)setShowsPhysics:;
+- (BOOL)showsPhysics;
+- (void)setShowsFields:;
+- (BOOL)showsFields;
+- (id)_getOptions;
+- (void)renderWithViewport:renderCommandEncoder:renderPassDescriptor:commandQueue:;
+- (void)renderWithViewport:commandBuffer:renderPassDescriptor:;
+- (void)_notifyWillRenderContent;
+- (void)setShouldCullNonVisibleNodes:;
+- (BOOL)shouldCullNonVisibleNodes;
++ (id)rendererWithDevice:;
+@end

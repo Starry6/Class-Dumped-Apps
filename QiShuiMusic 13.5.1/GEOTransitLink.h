@@ -1,0 +1,31 @@
+@interface GEOTransitLink : NSObject
+@property (nonatomic) GEOVectorTile containingTile;
+@property (nonatomic) I sectionOffset;
+@property (nonatomic) I sectionCount;
+@property (nonatomic) ^{GeoCodecsRange=QQ} transitIndexRange;
+@property (nonatomic) ^{GeoCodecsConnectivityJunction=II^{GeoCodecsPointFeature}} fromJunction;
+@property (nonatomic) ^{GeoCodecsConnectivityJunction=II^{GeoCodecsPointFeature}} toJunction;
+@property (nonatomic) Q fromNodeID;
+@property (nonatomic) Q toNodeID;
+@property (nonatomic) ^{GeoCodecsRange=QQ} travelTimeIndexRange;
+@property (nonatomic) ^{GeoCodecsRange=QQ} shieldIndexRange;
+@property (nonatomic) ^{GeoCodecsRange=QQ} originalNodeIDPointerIndexRange;
+@property (nonatomic) ^{GeoCodecsRange=QQ} collapsedNodesIndexRange;
+@property (nonatomic) ^{GeoCodecsRange=QQ} collapsedNodesIDRange;
+- (unsigned int)sectionCount;
+- (id)travelTimeIndexRange;
+- (id)collapsedNodesIndexRange;
+- (id)shieldIndexRange;
+- (id)fromJunction;
+- (unsigned long long)toNodeID;
+- (id)transitIndexRange;
+- (id)toJunction;
+- (id)containingTile;
+- (void).cxx_destruct;
+- (unsigned int)sectionOffset;
+- (id)get;
+- (id)collapsedNodesIDRange;
+- (id)init:withVectorTile:;
+- (id)originalNodeIDPointerIndexRange;
+- (unsigned long long)fromNodeID;
+@end

@@ -1,0 +1,22 @@
+@interface CPMLModelEvaluate : NSObject
+- (void)dealloc;
+- (void).cxx_destruct;
+- (id).cxx_construct;
+- (BOOL)updateModel:;
+- (id)fileProtectionClassRequest:;
+- (id)evalString:;
+- (id)evalNSObjectV:;
+- (id)evalArray:;
+- (id)evalDict:;
+- (void)boundResult:;
+- (void)setCPMLAlgorithm:;
+- (void)setCPMLAlgorithmEngine:;
+- (id)initWithModel:withPropertyList:;
+- (int)getAttributeType:;
+- (void)constructVector:withColumnPosition:maxColNumber:withValue:;
+- (id)evalCTypesV:;
+- (void)doRemapToFeatureVector:withPositionID:withMaxCol:withValue:;
+- (id)doEvaluate:withBoundedList:;
+- (void)buildEvaluateMachineLearningAlgorithm;
+- (id)getModelData;
+@end

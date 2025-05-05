@@ -1,0 +1,2 @@
+@interface AVTimedMetadataGroupInternal : NSObject
+@end

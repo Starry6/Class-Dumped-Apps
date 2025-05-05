@@ -1,0 +1,31 @@
+@interface MUIBucketSendersCloudStorageUpgrader : NSObject
+@property (nonatomic) <MUIBucketSendersCloudStorageUpgraderDelegate> delegate;
+@property (nonatomic) MUIBucketSenderCloudStorage cloudStorage;
+@property (nonatomic) NSArray sentMailboxURLs;
+@property (nonatomic) CNContactStore contactStore;
+@property (nonatomic) NSObject<OS_dispatch_queue> queue;
+@property (nonatomic) <EFAssertableScheduler> scheduler;
+@property (nonatomic) BOOL observingContentProtection;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)scheduler;
+- (void)contentProtectionStateChanged:previousState:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)contactStore;
+- (id)cloudStorage;
+- (id)queue;
+- (BOOL)_upgrade;
+- (id)initWithDelegate:senderCloudStorage:sentMailboxURLs:contactStore:;
+- (void)performUpgradeIfNecessary;
+- (void)_verifyDatabaseAccessAndPerformUpgrade;
+- (void)_resetDatabaseAndCloud;
+- (BOOL)_hasBeenUpgraded;
+- (void)_markUpgradeComplete;
+- (BOOL)_canAccessDatabase;
+- (id)sentMailboxURLs;
+- (BOOL)observingContentProtection;
+- (void)setObservingContentProtection:;
+@end

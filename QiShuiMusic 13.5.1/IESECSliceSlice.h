@@ -1,0 +1,32 @@
+@interface IESECSliceSlice : MTLModel
+@property (nonatomic) NSString innerSliceType;
+@property (nonatomic) Q sliceType;
+@property (nonatomic) NSString sliceID;
+@property (nonatomic) IESECSliceAction showAction;
+@property (nonatomic) IESECSliceAction asyncDataAction;
+@property (nonatomic) IESECSliceTemplateSlice templateSlice;
+@property (nonatomic) NSDictionary sliceData;
+@property (nonatomic) BOOL skipDataBind;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)asyncDataAction;
+- (id)sliceID;
+- (id)innerSliceType;
+- (void)setAsyncDataAction:;
+- (void)setInnerSliceType:;
+- (void)setShowAction:;
+- (void)setSkipDataBind:;
+- (void)setSliceData:;
+- (void)setSliceID:;
+- (void)setSliceType:;
+- (void)setTemplateSlice:;
+- (id)showAction;
+- (BOOL)skipDataBind;
+- (id)sliceData;
+- (unsigned long long)sliceType;
+- (id)templateSlice;
+- (void).cxx_destruct;
++ (id)JSONKeyPathsByPropertyKey;
+@end

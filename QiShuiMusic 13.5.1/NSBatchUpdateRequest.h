@@ -1,0 +1,37 @@
+@interface NSBatchUpdateRequest : NSPersistentStoreRequest
+@property (nonatomic) BOOL shouldPerformSecureOperation;
+@property (nonatomic) NSString entityName;
+@property (nonatomic) NSEntityDescription entity;
+@property (nonatomic) NSPredicate predicate;
+@property (nonatomic) BOOL includesSubentities;
+@property (nonatomic) Q resultType;
+@property (nonatomic) NSDictionary propertiesToUpdate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)_resolveEntityWithContext:;
+- (void)_setSecureOperation:;
+- (unsigned long long)requestType;
+- (BOOL)includesSubentities;
+- (id)entity;
+- (id)encodeForXPC;
+- (id)entityName;
+- (void)setIncludesSubentities:;
+- (id)initWithEntityName:;
+- (id)init;
+- (void)dealloc;
+- (id)propertiesToUpdate;
+- (void)setResultType:;
+- (BOOL)shouldPerformSecureOperation;
+- (unsigned long long)resultType;
+- (id)predicate;
+- (void)setShouldPerformSecureOperation:;
+- (BOOL)_secureOperation;
+- (void)setPredicate:;
+- (id)description;
+- (id)initWithEntity:;
+- (void)setPropertiesToUpdate:;
++ (id)decodeFromXPCArchive:withContext:withPolicy:;
++ (id)batchUpdateRequestWithEntityName:;
+@end

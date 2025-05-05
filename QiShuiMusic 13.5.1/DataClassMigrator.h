@@ -1,0 +1,36 @@
+@interface DataClassMigrator : NSObject
+@property (nonatomic) I userDataDisposition;
+@property (nonatomic) NSString restoredBackupBuildVersion;
+@property (nonatomic) NSString restoredBackupProductType;
+@property (nonatomic) NSString restoredBackupDeviceName;
+@property (nonatomic) NSString dmBundleIdentifier;
+@property (nonatomic) BOOL shouldPreserveSettingsAfterRestore;
+@property (nonatomic) BOOL wasPasscodeSetInBackup;
+@property (nonatomic) BOOL didUpgrade;
+@property (nonatomic) BOOL didRestoreFromBackup;
+@property (nonatomic) BOOL didMigrateBackupFromDifferentDevice;
+@property (nonatomic) BOOL didRestoreFromCloudBackup;
+@property (nonatomic) NSDictionary context;
+- (BOOL)performMigration;
+- (id)context;
+- (unsigned int)userDataDisposition;
+- (void).cxx_destruct;
+- (void)setContext:;
+- (BOOL)didRestoreFromBackup;
+- (BOOL)didUpgrade;
+- (BOOL)didMigrateBackupFromDifferentDevice;
+- (BOOL)didRestoreFromCloudBackup;
+- (BOOL)shouldPreserveSettingsAfterRestore;
+- (BOOL)wasPasscodeSetInBackup;
+- (void)setUserDataDisposition:;
+- (id)restoredBackupBuildVersion;
+- (void)setRestoredBackupBuildVersion:;
+- (id)restoredBackupProductType;
+- (void)setRestoredBackupProductType:;
+- (id)restoredBackupDeviceName;
+- (void)setRestoredBackupDeviceName:;
+- (void)setDidUpgrade:;
+- (id)dmBundleIdentifier;
+- (void)setDmBundleIdentifier:;
++ (id)dataClassMigratorForBundleAtPath:;
+@end

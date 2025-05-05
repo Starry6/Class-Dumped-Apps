@@ -1,0 +1,34 @@
+@interface MBBackup : NSObject
+@property (nonatomic) NSString backupUDID;
+@property (nonatomic) NSString backupUUID;
+@property (nonatomic) NSString backupUUIDSansPrefix;
+@property (nonatomic) NSString deviceClass;
+@property (nonatomic) NSString productType;
+@property (nonatomic) NSString hardwareModel;
+@property (nonatomic) NSString marketingName;
+@property (nonatomic) NSArray snapshots;
+@property (nonatomic) BOOL restoreSystemFiles;
+@property (nonatomic) BOOL isMBSBackup;
+@property (nonatomic) BOOL isBackupEnabled;
+@property (nonatomic) BOOL hasBackupEnabledState;
+- (id)hardwareModel;
+- (id)deviceClass;
+- (id)productType;
+- (void)dealloc;
+- (BOOL)isBackupEnabled;
+- (id)initWithCoder:;
+- (id)marketingName;
+- (void)encodeWithCoder:;
+- (id)snapshots;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)backupUUID;
+- (id)backupUDID;
+- (id)initWithBackupUDID:backupUUID:deviceClass:productType:hardwareModel:marketingName:snapshots:restoreSystemFiles:isMBSBackup:isBackupEnabled:hasBackupEnabledState:;
+- (id)backupUUIDSansPrefix;
+- (BOOL)canRestoreSystemFiles;
+- (BOOL)isMBSBackup;
+- (BOOL)hasBackupEnabledState;
++ (BOOL)supportsSecureCoding;
+@end

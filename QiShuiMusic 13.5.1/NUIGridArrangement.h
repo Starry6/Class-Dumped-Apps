@@ -1,0 +1,33 @@
+@interface NUIGridArrangement : NSObject
+@property (nonatomic) <NUIArrangementContainer> container;
+@property (nonatomic) <NUIGridArrangementDataSource> dataSource;
+@property (nonatomic) BOOL baselineRelativeArrangement;
+@property (nonatomic) q horizontalDistribution;
+@property (nonatomic) q verticalDistribution;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)reloadData;
+- (BOOL)isBaselineRelativeArrangement;
+- (void)dealloc;
+- (id)container;
+- (id)dataSource;
+- (void).cxx_destruct;
+- (void)setBaselineRelativeArrangement:;
+- (id).cxx_construct;
+- (id)contentLayoutSizeFittingSize:forArrangedSubview:;
+- (id)layoutFrameForArrangedSubview:withProposedContentFrame:;
+- (void)populateGridArrangementCells:;
+- (void)populateGridArrangementDimension:withCells:axis:;
+- (long long)horizontalDistribution;
+- (void)setHorizontalDistribution:;
+- (long long)verticalDistribution;
+- (void)setVerticalDistribution:;
+- (id)initWithContainer:dataSource:;
+- (id)layoutSizeFittingSize:;
+- (void)positionItemsInBounds:block:;
+- (void)positionItemsInColumns:rows:inBounds:block:;
+- (id)unionFrameForItemsInColumns:rows:inBounds:;
+- (id)frameForColumns:rows:inBounds:;
+@end

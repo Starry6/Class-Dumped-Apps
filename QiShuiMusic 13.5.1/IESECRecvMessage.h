@@ -1,0 +1,35 @@
+@interface IESECRecvMessage : MTLModel
+@property (nonatomic) NSString msgID;
+@property (nonatomic) NSString sceneType;
+@property (nonatomic) NSString itemID;
+@property (nonatomic) NSString seqID;
+@property (nonatomic) NSString bizMsgID;
+@property (nonatomic) Q contentFormat;
+@property (nonatomic) NSString contentType;
+@property (nonatomic) @ content;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)bizMsgID;
+- (id)msgID;
+- (void)setBizMsgID:;
+- (void)setContentFormatString:;
+- (void)setMsgID:;
+- (void)setContentType:;
+- (id)content;
+- (void)setContent:;
+- (id)itemID;
+- (id)contentType;
+- (void)setItemID:;
+- (void).cxx_destruct;
+- (id)sceneType;
+- (void)setSceneType:;
+- (id)seqID;
+- (void)setSeqID:;
+- (unsigned long long)contentFormat;
+- (void)setContentFormat:;
++ (id)contentFormatJSONTransformer;
++ (id)contentJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

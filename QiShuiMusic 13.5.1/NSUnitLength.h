@@ -1,0 +1,29 @@
+@interface NSUnitLength : NSDimension
+- (id)_intents_stringRepresentation;
++ (id)decimeters;
++ (id)baseUnit;
++ (id)parsecs;
++ (id)lightyears;
++ (id)micrometers;
++ (id)hectometers;
++ (BOOL)supportsRegionalPreference;
++ (id)feet;
++ (id)nanometers;
++ (id)astronomicalUnits;
++ (id)fathoms;
++ (id)meters;
++ (id)scandinavianMiles;
++ (id)picometers;
++ (id)centimeters;
++ (id)decameters;
++ (id)inches;
++ (id)icuType;
++ (id)nauticalMiles;
++ (id)millimeters;
++ (id)_measurementWithNaturalScale:system:;
++ (id)miles;
++ (id)megameters;
++ (id)furlongs;
++ (id)kilometers;
++ (id)yards;
+@end

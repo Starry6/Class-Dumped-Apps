@@ -1,0 +1,30 @@
+@interface CLSAbstractHandout : CLSObject
+@property (nonatomic) NSDate dateOfPublication;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString instructions;
+@property (nonatomic) NSDate dueDate;
+@property (nonatomic) NSArray assets;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (id)assets;
+- (void)setTitle:;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (id)title;
+- (void).cxx_destruct;
+- (id)_init;
+- (id)dictionaryRepresentation;
+- (id)instructions;
+- (void)setInstructions:;
+- (id)dueDate;
+- (void)setDueDate:;
+- (void)mergeWithObject:;
+- (void)addAsset:;
+- (void)removeAsset:;
+- (id)dateOfPublication;
+- (void)setDateOfPublication:;
++ (BOOL)supportsSecureCoding;
+@end

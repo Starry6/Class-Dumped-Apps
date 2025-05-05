@@ -1,0 +1,33 @@
+@interface MHSchemaMHAssistantDaemonAudioFanInfo : SISchemaInstrumentationMessage
+@property (nonatomic) I fanId;
+@property (nonatomic) BOOL hasFanId;
+@property (nonatomic) NSInteger currentSpeed;
+@property (nonatomic) BOOL hasCurrentSpeed;
+@property (nonatomic) NSInteger targetSpeed;
+@property (nonatomic) BOOL hasTargetSpeed;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (int)currentSpeed;
+- (void)setFanId:;
+- (BOOL)hasFanId;
+- (void)setHasFanId:;
+- (void)deleteFanId;
+- (void)setCurrentSpeed:;
+- (BOOL)hasCurrentSpeed;
+- (void)setHasCurrentSpeed:;
+- (void)deleteCurrentSpeed;
+- (void)setTargetSpeed:;
+- (BOOL)hasTargetSpeed;
+- (void)setHasTargetSpeed:;
+- (void)deleteTargetSpeed;
+- (unsigned int)fanId;
+- (int)targetSpeed;
+@end

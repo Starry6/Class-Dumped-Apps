@@ -1,0 +1,36 @@
+@interface IESECMarketingManager : NSObject
+@property (nonatomic) IESECMarketingApi api;
+@property (nonatomic) BOOL openWithSaaS;
+@property (nonatomic) IESECUserTrackerPageContext currentPageContext;
+@property (nonatomic) IESECUserTrackerPageContext livePageContext;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)livePageContext;
+- (id)actionHistoryWithInfo:config:;
+- (id)currentPageContext;
+- (void)enterToPage:;
+- (id)fetchActionConfigMap;
+- (double)getCurrentTimeStamp;
+- (id)getNeedReportRulesWithHistory:;
+- (id)getRequestParamsWithHistory:rules:;
+- (void)initParamsWithApi:;
+- (BOOL)isLoginAweme;
+- (void)leaveFromPage:;
+- (BOOL)openWithSaaS;
+- (void)postAction:type:atPage:;
+- (void)postAction:type:scene:sceneId:anchorId:api:;
+- (void)postActionToServerWithHistory:;
+- (void)refreshStateWithActionHistory:;
+- (BOOL)serverSwitchOnWithHistory:ruleInfo:;
+- (void)setCurrentPageContext:;
+- (void)setLivePageContext:;
+- (void)setOpenWithSaaS:;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (id)api;
+- (void)setApi:;
++ (id)sharedInstance;
+@end

@@ -1,0 +1,2 @@
+@interface IESLiveSaaSPBIESLiveSaaSPBLinkmicCancelMatchRoot : GPBRootObject
+@end

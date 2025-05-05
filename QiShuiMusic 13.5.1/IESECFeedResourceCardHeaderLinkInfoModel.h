@@ -1,0 +1,31 @@
+@interface IESECFeedResourceCardHeaderLinkInfoModel : MTLModel
+@property (nonatomic) IESECURLModel icon;
+@property (nonatomic) NSString text;
+@property (nonatomic) NSString link;
+@property (nonatomic) NSString textColor;
+@property (nonatomic) q textSize;
+@property (nonatomic) IESECFeedResourceCardMarginModel textMargin;
+@property (nonatomic) IESECFeedResourceCardMarginModel iconMargin;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setIconMargin:;
+- (void)setTextMargin:;
+- (id)textMargin;
+- (id)link;
+- (void)setText:;
+- (void)setLink:;
+- (id)icon;
+- (void)setTextColor:;
+- (void)setIcon:;
+- (void).cxx_destruct;
+- (id)textColor;
+- (id)text;
+- (long long)textSize;
+- (id)iconMargin;
+- (void)setTextSize:;
++ (id)iconMarginJSONTransformer;
++ (id)textMarginJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

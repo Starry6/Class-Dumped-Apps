@@ -1,0 +1,36 @@
+@interface GEORPIncidentField : PBCodable
+@property (nonatomic) BOOL hasSiriType;
+@property (nonatomic) NSString siriType;
+@property (nonatomic) BOOL hasTrafficType;
+@property (nonatomic) NSInteger trafficType;
+@property (nonatomic) BOOL hasDisplayIncidentOnMap;
+@property (nonatomic) BOOL displayIncidentOnMap;
+- (void)readAll:;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (void)setHasTrafficType:;
+- (BOOL)hasTrafficType;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (int)trafficType;
+- (int)StringAsTrafficType:;
+- (void).cxx_destruct;
+- (void)setTrafficType:;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (id)trafficTypeAsString:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasSiriType;
+- (id)siriType;
+- (void)setSiriType:;
+- (BOOL)displayIncidentOnMap;
+- (void)setDisplayIncidentOnMap:;
+- (void)setHasDisplayIncidentOnMap:;
+- (BOOL)hasDisplayIncidentOnMap;
++ (BOOL)isValid:;
+@end

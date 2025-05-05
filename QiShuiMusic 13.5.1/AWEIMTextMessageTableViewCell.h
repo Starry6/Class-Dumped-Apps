@@ -1,0 +1,38 @@
+@interface AWEIMTextMessageTableViewCell : AWEIMUserMessageTableViewCell
+@property (nonatomic) UIView bubbleView;
+@property (nonatomic) CAShapeLayer bubbleLayer;
+@property (nonatomic) YYLabel contentLabel;
+@property (nonatomic) UIView highlightMaskView;
+@property (nonatomic) UIView quoteReplyLineView;
+@property (nonatomic) YYLabel quoteReplyLabel;
+- (id)quoteReplyLabel;
+- (void)setBubbleLayer:;
+- (void)layoutSubviews:;
+- (void)__tapQuoteReplyLabelWithGesture:;
+- (void)addForwardMsgResource;
+- (void)configWithMessage:;
+- (void)handleJumpUserProfileActionIfNeeded:tappedRange:;
+- (id)highlightMaskView;
+- (id)menuTargetView;
+- (void)p_updateBubbleLayer;
+- (id)quoteReplyLineView;
+- (void)setHighlightMaskView:;
+- (void)setQuoteReplyLabel:;
+- (void)setQuoteReplyLineView:;
+- (void)layoutSubviews;
+- (BOOL)gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:;
+- (void).cxx_destruct;
+- (id)menuItems;
+- (void)setupUI;
+- (id)contentLabel;
+- (void)setContentLabel:;
+- (id)bubbleView;
+- (void)setBubbleView:;
+- (id)bubbleLayer;
++ (id)contentSizeWithMesasge:;
++ (id)imageDisplayAttributedStringForMsg:;
++ (id)quoteReplyHintWithMesasge:;
++ (id)quoteReplySizeWithMesasge:;
++ (BOOL)shouldShowQuoteReplyMessageWithMessage:;
++ (id)identifier;
+@end

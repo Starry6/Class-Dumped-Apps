@@ -1,0 +1,31 @@
+@interface IDSQRProtoGoAwayIndication : PBCodable
+@property (nonatomic) I reasonCode;
+@property (nonatomic) BOOL hasReasonString;
+@property (nonatomic) NSString reasonString;
+@property (nonatomic) BOOL hasServerBlob;
+@property (nonatomic) NSData serverBlob;
+@property (nonatomic) BOOL hasTxnId;
+@property (nonatomic) Q txnId;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (void)setReasonCode:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (unsigned int)reasonCode;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasServerBlob;
+- (void)setTxnId:;
+- (void)setHasTxnId:;
+- (BOOL)hasTxnId;
+- (id)serverBlob;
+- (void)setServerBlob:;
+- (unsigned long long)txnId;
+- (BOOL)hasReasonString;
+- (id)reasonString;
+- (void)setReasonString:;
+@end

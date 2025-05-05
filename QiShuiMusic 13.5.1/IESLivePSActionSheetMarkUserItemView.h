@@ -1,0 +1,30 @@
+@interface IESLivePSActionSheetMarkUserItemView : UIView
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIButton introductionIcon;
+@property (nonatomic) UISwitch switchItem;
+@property (nonatomic) double disableActionFreq;
+@property (nonatomic) <IESLivePSActionSheetMarkUserItemViewDelegate> delegate;
+@property (nonatomic) @? didClick;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)didClick;
+- (double)disableActionFreq;
+- (id)introductionIcon;
+- (void)introductionIconDidClick;
+- (void)setDidClick:;
+- (void)setDisableActionFreq:;
+- (void)setIntroductionIcon:;
+- (void)setSwitchItem:;
+- (void)switchDidTap;
+- (id)switchItem;
+- (void)updateSwitchStatus:;
+- (id)init;
+- (void)setTitleLabel:;
+- (void)setDelegate:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setupUI;
+@end

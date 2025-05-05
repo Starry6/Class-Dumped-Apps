@@ -1,0 +1,37 @@
+@interface IESECLiveDynamicRegionNative : UIView
+@property (nonatomic) IESECLiveContext liveContext;
+@property (nonatomic) <IESECLiveDynamicRegionHybridDelegate> delegate;
+@property (nonatomic) NSString customEcomEntranceForm;
+@property (nonatomic) NSDictionary btmDictInfo;
+@property (nonatomic) <IESECLivePromotionCardProviderService> cardProvider;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setBtmDictInfo:;
+- (void)setLiveContext:;
+- (void)analysisBusinessParams:;
+- (id)btmDictInfo;
+- (id)btmParams;
+- (id)cardProvider;
+- (void)changeContentSize:;
+- (id)customEcomEntranceForm;
+- (id)ecomEntranceForm;
+- (id)initWithTemplateUrl:regionParams:liveContext:delegate:;
+- (id)liveContext;
+- (id)localPage;
+- (id)localView;
+- (id)providerCardPanelSize;
+- (id)providerCardScene;
+- (id)providerEcomEntranceForm;
+- (id)searchParams;
+- (void)setCardProvider:;
+- (void)setCustomEcomEntranceForm:;
+- (void)setupUIWithUrl:regionParams:;
+- (id)sourceVC;
+- (void)setDelegate:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)roomID;
+- (id)currentView;
+@end

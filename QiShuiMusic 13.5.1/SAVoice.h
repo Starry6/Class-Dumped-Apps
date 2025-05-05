@@ -1,0 +1,33 @@
+@interface SAVoice : SADomainObject
+@property (nonatomic) NSString gender;
+@property (nonatomic) NSString languageString;
+@property (nonatomic) NSString masteredVersion;
+@property (nonatomic) NSString name;
+@property (nonatomic) NSString quality;
+@property (nonatomic) q resourceContentVersion;
+@property (nonatomic) NSString resourceMasteredVersion;
+@property (nonatomic) q voiceContentVersion;
+@property (nonatomic) NSString voiceType;
+- (id)quality;
+- (void)setVoiceType:;
+- (void)setName:;
+- (id)groupIdentifier;
+- (id)gender;
+- (void)setQuality:;
+- (void)setMasteredVersion:;
+- (void)setGender:;
+- (id)encodedClassName;
+- (id)masteredVersion;
+- (id)name;
+- (id)voiceType;
+- (void)setVoiceContentVersion:;
+- (void)setLanguageString:;
+- (id)languageString;
+- (long long)resourceContentVersion;
+- (void)setResourceContentVersion:;
+- (id)resourceMasteredVersion;
+- (void)setResourceMasteredVersion:;
+- (long long)voiceContentVersion;
++ (id)voice;
++ (id)voiceWithDictionary:context:;
+@end

@@ -1,0 +1,31 @@
+@interface CHSMutableWidgetDescriptor : CHSWidgetDescriptor
+@property (nonatomic) NSData localeToken;
+@property (nonatomic) NSString eventMachServiceName;
+@property (nonatomic) NSString nativeContainerBundleIdentifier;
+@property (nonatomic) NSString extensionBundleIdentifier;
+@property (nonatomic) NSString kind;
+@property (nonatomic) Q supportedFamilies;
+@property (nonatomic) q widgetVisibility;
+@property (nonatomic) NSString intentType;
+@property (nonatomic) NSString displayName;
+@property (nonatomic) NSString widgetDescription;
+@property (nonatomic) NSString containerBundleIdentifier;
+@property (nonatomic) BOOL transparent;
+@property (nonatomic) NSArray intentRecommendations;
+- (void)setKind:;
+- (void)setBackgroundStyle:;
+- (void)setContainerBundleIdentifier:;
+- (void)setDisplayName:;
+- (void)setExtensionBundleIdentifier:;
+- (void)setIntentType:;
+- (id)copyWithZone:;
+- (void)setWidgetDescription:;
+- (void)setNativeContainerBundleIdentifier:;
+- (void)setSupportedFamilies:;
+- (void)setIntentRecommendations:;
+- (void)setWidgetVisibility:;
+- (void)setLocaleToken:;
+- (void)setEventMachServiceName:;
+- (void)setTransparent:;
+- (void)setSupportsVibrantContent:;
+@end

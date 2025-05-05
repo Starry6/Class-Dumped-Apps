@@ -1,0 +1,31 @@
+@interface CUMobileDeviceDiscovery : NSObject
+@property (nonatomic) I changeFlags;
+@property (nonatomic) NSObject<OS_dispatch_queue> dispatchQueue;
+@property (nonatomic) I discoveryFlags;
+@property (nonatomic) @? invalidationHandler;
+@property (nonatomic) @? deviceFoundHandler;
+@property (nonatomic) @? deviceLostHandler;
+@property (nonatomic) @? deviceChangedHandler;
+- (id)deviceFoundHandler;
+- (id)deviceChangedHandler;
+- (void)setDeviceFoundHandler:;
+- (unsigned int)changeFlags;
+- (void)setDeviceLostHandler:;
+- (void)setChangeFlags:;
+- (id)init;
+- (void)setDiscoveryFlags:;
+- (void)_invalidated;
+- (id)dispatchQueue;
+- (void)setDispatchQueue:;
+- (void).cxx_destruct;
+- (void)setDeviceChangedHandler:;
+- (id)invalidationHandler;
+- (void)setInvalidationHandler:;
+- (id)deviceLostHandler;
+- (void)invalidate;
+- (unsigned int)discoveryFlags;
+- (void)activate;
+- (void)_mdThreadInitialize;
+- (void)_mdThreadFinalize;
++ (void)getDevicesWithQueue:completion:;
+@end

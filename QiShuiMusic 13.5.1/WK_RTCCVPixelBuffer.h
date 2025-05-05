@@ -1,0 +1,32 @@
+@interface WK_RTCCVPixelBuffer : NSObject
+@property (nonatomic) ^{__CVBuffer=} pixelBuffer;
+@property (nonatomic) NSInteger cropX;
+@property (nonatomic) NSInteger cropY;
+@property (nonatomic) NSInteger cropWidth;
+@property (nonatomic) NSInteger cropHeight;
+@property (nonatomic) NSInteger width;
+@property (nonatomic) NSInteger height;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)dealloc;
+- (id)pixelBuffer;
+- (id)initWithPixelBuffer:;
+- (void)close;
+- (int)height;
+- (int)width;
+- (id)toI420;
+- (id)initWithPixelBuffer:adaptedWidth:adaptedHeight:cropWidth:cropHeight:cropX:cropY:;
+- (BOOL)requiresCropping;
+- (BOOL)requiresScalingToWidth:height:;
+- (int)bufferSizeForCroppingAndScalingToWidth:height:;
+- (BOOL)cropAndScaleTo:withTempBuffer:;
+- (void)cropAndScaleNV12To:withTempBuffer:;
+- (void)cropAndScaleARGBTo:;
+- (int)cropX;
+- (int)cropY;
+- (int)cropWidth;
+- (int)cropHeight;
++ (id)supportedPixelFormats;
+@end

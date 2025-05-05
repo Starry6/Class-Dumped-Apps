@@ -1,0 +1,34 @@
+@interface MHSchemaMHAssistantDaemonAudioRecordingFirstBufferStart : SISchemaInstrumentationMessage
+@property (nonatomic) Q firstBufferStartTimeOffsetInNs;
+@property (nonatomic) BOOL hasFirstBufferStartTimeOffsetInNs;
+@property (nonatomic) NSString audioInterfaceVendorId;
+@property (nonatomic) BOOL hasAudioInterfaceVendorId;
+@property (nonatomic) NSString audioInterfaceProductName;
+@property (nonatomic) BOOL hasAudioInterfaceProductName;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)setFirstBufferStartTimeOffsetInNs:;
+- (BOOL)hasFirstBufferStartTimeOffsetInNs;
+- (void)setHasFirstBufferStartTimeOffsetInNs:;
+- (void)deleteFirstBufferStartTimeOffsetInNs;
+- (BOOL)hasAudioInterfaceVendorId;
+- (void)deleteAudioInterfaceVendorId;
+- (BOOL)hasAudioInterfaceProductName;
+- (void)deleteAudioInterfaceProductName;
+- (unsigned long long)firstBufferStartTimeOffsetInNs;
+- (id)audioInterfaceVendorId;
+- (void)setAudioInterfaceVendorId:;
+- (id)audioInterfaceProductName;
+- (void)setAudioInterfaceProductName:;
+- (void)setHasAudioInterfaceVendorId:;
+- (void)setHasAudioInterfaceProductName:;
+@end

@@ -1,0 +1,31 @@
+@interface PETEventTracker : NSObject
+@property (nonatomic) BOOL testingMode;
+@property (nonatomic) <PETLoggingOutlet> loggingOutlet;
+@property (nonatomic) NSString featureId;
+@property (nonatomic) NSArray registeredProperties;
+@property (nonatomic) NSArray propertySubsets;
+- (void)_setLoggingOutlet:;
+- (id)loggingOutlet;
+- (void)_checkInTestingMode;
+- (id)_keyMetadataForEvent:;
+- (void)enableTestingMode;
+- (id)_stringifiedPropertiesForEvent:propertyValueArray:;
+- (void)_checkKeyLengthForEvent:metaData:;
+- (id)getKeyValueDict;
+- (void)_logValue:forEvent:stringifiedProperties:metaData:;
+- (BOOL)testingMode;
+- (id)getValueForKey:;
+- (BOOL)_validatePropertyValues:;
+- (void).cxx_destruct;
+- (id)_defaultLoggingOutlet;
+- (void)_trackEvent:withPropertyValues:value:;
+- (void)_checkPropertySubsets:;
+- (void)_trackEvent:withPropertyValues:value:overwrite:;
+- (void)_checkCardinalityForEvent:;
+- (id)featureId;
+- (void)_setValue:forEvent:stringifiedProperties:metaData:;
+- (id)initWithFeatureId:registerProperties:propertySubsets:;
+- (id)registeredProperties;
+- (void)disableTestingMode;
+- (id)propertySubsets;
+@end

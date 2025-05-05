@@ -1,0 +1,38 @@
+@interface LynxImageService : NSObject
+@property (nonatomic) IESForestResponse response;
+@property (nonatomic) LynxUIImage imageUI;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)imageUI;
+- (BOOL)checkImageType:;
+- (void)addAnimatedImageCallBack:UI:;
+- (void)appendExtraImageLoadDetailForEvent:originalDetail:;
+- (BOOL)checkImageType:callback:;
+- (void)failCallback:message:;
+- (long long)generateRequestOptions:;
+- (id)getMappedCategorizedPicErrorCode:;
+- (void)handleAnimatedImage:view:loopCount:;
+- (BOOL)isAnimatedImage:;
+- (id)loadNewImageFromURL:size:enableGenericFetcher:contextInfo:processors:completed:LynxUIImage:;
+- (void)pauseImage:callback:;
+- (void)prefetchImage:params:;
+- (void)reportError:errInfo:;
+- (void)reportResourceStatus:data:extra:;
+- (BOOL)restartImageIfPossible:callback:;
+- (void)resumeImage:callback:;
+- (void)setAutoPlay:value:;
+- (void)setImageUI:;
+- (void)stopImage:callback:;
+- (void)successCallback:message:;
+- (id)syncProcessorsHandler:withImage:;
+- (id)response;
+- (void).cxx_destruct;
+- (id)imageView;
+- (void)setResponse:;
+- (id)decodeImage:;
++ (id)serviceBizID;
++ (unsigned long long)serviceScope;
++ (unsigned long long)serviceType;
+@end

@@ -1,0 +1,37 @@
+@interface MTIDCloudKitLocalDB : NSObject
+@property (nonatomic) NSString recordType;
+@property (nonatomic) CKRecordZoneID recordZoneID;
+@property (nonatomic) NSURL pathURL;
+@property (nonatomic) BOOL zoneCreated;
+@property (nonatomic) <MTIDCloudKitLocalDBDelegate> delegate;
+- (void)setRecordType:;
+- (void)setDelegate:;
+- (id)recordType;
+- (BOOL)writeRecord:error:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setRecordZoneID:;
+- (void)clearData;
+- (id)allRecords;
+- (id)recordZoneID;
+- (BOOL)fileExists:;
+- (void)setZoneCreated:;
+- (BOOL)zoneCreated;
+- (id)syncStatusCode;
+- (void)setSyncStatusCode:;
+- (id)initWithContainerIdentifier:recordType:recordZoneID:;
+- (id)dataForName:error:;
+- (BOOL)writeData:forName:error:;
+- (BOOL)deleteIfExists:error:;
+- (id)encodeRecord:;
+- (id)decodeRecordFromData:recordID:isSynchronized:;
+- (id)userRecordIDName;
+- (BOOL)setUserRecordIDName:;
+- (BOOL)needsFetchRecords;
+- (void)setNeedsFetchRecords:;
+- (id)recordWithID:error:;
+- (BOOL)deleteRecordWithID:error:;
+- (id)pendingRecordIDs;
+- (id)pathURL;
+- (void)setPathURL:;
+@end

@@ -1,0 +1,38 @@
+@interface PKGroupQuery : PKQuery
+@property (nonatomic) CHStrokeGroupQuery strokeGroupQuery;
+@property (nonatomic) PKDrawing drawing;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)dealloc;
+- (void)teardown;
+- (void)start;
+- (void).cxx_destruct;
+- (void)pause;
+- (id)drawing;
+- (id)initWithRecognitionSessionManager:;
+- (void)queryDidUpdateResult:;
+- (void)setStrokeGroups:;
+- (id)strokeGroups;
+- (void)_precalculateStrokeGroupProperties:;
+- (id)_strokesForIdentifiers:inDrawing:;
+- (id)_lines:containingStrokes:;
+- (BOOL)_strokes:containsAnyStrokes:;
+- (void)q_fetchStrokesForPoint:selectionType:inputType:visibleOnscreenStrokes:completion:;
+- (long long)_tokenizationLevelForSelectionType:;
+- (id)_closestLineToPoint:isTop:;
+- (void)q_fetchStrokesBetweenTopPoint:bottomPoint:isRTL:completion:;
+- (id)_strokesInLine:leftOf:point:;
+- (long long)_firstLineIndexFromInitialStrokes:;
+- (long long)_lastLineIndexFromInitialStrokes:;
+- (id)firstStrokesInStrokes:isRTL:;
+- (id)_strokesAtLineIndex:containingStrokes:;
+- (id)lastStrokesInStrokes:isRTL:;
+- (void)q_fetchStrokesAmbiguouslyBelowAndAboveInsertSpaceHandleWithStrokes:completion:;
+- (long long)contentTypeForIntersectedStrokes:;
+- (id)strokeGroupQuery;
+- (void)setStrokeGroupQuery:;
+- (void)setDrawing:;
++ (id)_strokesInLine:inDrawing:;
+@end

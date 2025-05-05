@@ -1,0 +1,32 @@
+@interface IESLiveSaaSTopAnchorTableViewCell : UITableViewCell
+@property (nonatomic) IESLiveSaaSRankListFilePowerView firePowerView;
+@property (nonatomic) UIImageView medalImageView;
+@property (nonatomic) UILabel nameLabel;
+@property (nonatomic) UILabel firstTagLabel;
+@property (nonatomic) UILabel secondTagLabel;
+@property (nonatomic) UIView rankView;
+@property (nonatomic) IESLiveSaaSRankAvatorView avatorImageView;
+@property (nonatomic) UILabel rankLabel;
+- (id)avatorImageView;
+- (id)addSpaceAndTruncationWithString:;
+- (id)firePowerView;
+- (id)firstTagLabel;
+- (id)generateTagLabel;
+- (id)medalImageView;
+- (id)rankView;
+- (id)secondTagLabel;
+- (void)setAvatorImageView:;
+- (void)setFirePowerView:;
+- (void)setFirstTagLabel:;
+- (void)setMedalImageView:;
+- (void)setRankView:;
+- (void)setSecondTagLabel:;
+- (void)updateWithModel:user:;
+- (id)initWithStyle:reuseIdentifier:;
+- (void).cxx_destruct;
+- (id)nameLabel;
+- (void)setNameLabel:;
+- (void)setupViews;
+- (id)rankLabel;
+- (void)setRankLabel:;
+@end

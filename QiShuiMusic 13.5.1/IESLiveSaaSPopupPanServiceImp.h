@@ -1,0 +1,31 @@
+@interface IESLiveSaaSPopupPanServiceImp : NSObject
+@property (nonatomic) UIPanGestureRecognizer pan;
+@property (nonatomic) UIView view;
+@property (nonatomic) double backgroundBottom;
+@property (nonatomic) <IESLiveSaaSPopupDelegate> delegate;
+@property (nonatomic) @? completion;
+@property (nonatomic) BOOL viewDidReachTop;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)viewDidReachTop;
+- (void)addFollowGestureInView:backgroundBottom:completion:;
+- (void)addFollowGestureInView:backgroundBottom:delegate:completion:;
+- (double)backgroundBottom;
+- (void)setBackgroundBottom:;
+- (void)setViewDidReachTop:;
+- (id)completion;
+- (id)pan;
+- (void)setCompletion:;
+- (void)setPanEnabled:;
+- (BOOL)gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:;
+- (void)setDelegate:;
+- (void)pan:;
+- (id)view;
+- (void)setPan:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (BOOL)gestureRecognizerShouldBegin:;
+- (void)setView:;
+@end

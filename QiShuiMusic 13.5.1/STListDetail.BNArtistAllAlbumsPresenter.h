@@ -1,0 +1,3 @@
+@interface STListDetail.BNArtistAllAlbumsPresenter : _TtGC15BNCommonAdapter11BNPresenterC12STListDetail31BNArtistAllAlbumsViewControllerCS1_26BNArtistAllAlbumsFrameView_
+- (void).cxx_destruct;
+@end

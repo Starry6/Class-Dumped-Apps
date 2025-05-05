@@ -1,0 +1,36 @@
+@interface GEOWiFiQualityFeedback : PBCodable
+@property (nonatomic) BOOL hasType;
+@property (nonatomic) NSInteger type;
+@property (nonatomic) BOOL hasValue;
+@property (nonatomic) I value;
+@property (nonatomic) BOOL hasMaxValue;
+@property (nonatomic) I maxValue;
+- (void)readAll:;
+- (BOOL)hasValue;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (int)StringAsType:;
+- (id)initWithDictionary:;
+- (void)setType:;
+- (void)writeTo:;
+- (void)setHasType:;
+- (BOOL)hasType;
+- (unsigned long long)hash;
+- (unsigned int)maxValue;
+- (void)copyTo:;
+- (id)typeAsString:;
+- (void)setHasValue:;
+- (void)mergeFrom:;
+- (void)setValue:;
+- (int)type;
+- (BOOL)readFrom:;
+- (id)description;
+- (unsigned int)value;
+- (id)dictionaryRepresentation;
+- (void)setMaxValue:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setHasMaxValue:;
+- (BOOL)hasMaxValue;
++ (BOOL)isValid:;
+@end

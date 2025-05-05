@@ -1,0 +1,2 @@
+@interface HTSLiveLinkmicBizInviteRoot : GPBRootObject
+@end

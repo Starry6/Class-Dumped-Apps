@@ -1,0 +1,31 @@
+@interface WBSParsecSchema : NSObject
+@property (nonatomic) @? validationBlock;
+@property (nonatomic) @? specializedSchemaBlock;
+@property (nonatomic) BOOL optional;
+@property (nonatomic) # expectedClass;
+@property (nonatomic) NSError associatedError;
+- (void)setOptional:;
+- (BOOL)isOptional;
+- (void).cxx_destruct;
+- (id)_initWithExpectedClass:associatedError:isOptional:;
+- (void)validateObject:withErrorHandler:;
+- (BOOL)_validateChild:ofParent:withParentAssociatedError:errorHandler:;
+- (id)validationBlock;
+- (void)setValidationBlock:;
+- (id)specializedSchemaBlock;
+- (void)setSpecializedSchemaBlock:;
+- (Class)expectedClass;
+- (void)setExpectedClass:;
+- (id)associatedError;
+- (void)setAssociatedError:;
++ (id)schemaWithConstantValue:;
++ (id)schemaForArrayWithElementSchema:;
++ (id)schemaForDictionaryWithStructure:;
++ (id)schemaWithExpectedClass:;
++ (id)schemaForArrayWithElementSchema:associatedError:;
++ (id)schemaForDictionaryWithStructure:associatedError:;
++ (id)schemaWithExpectedClass:associatedError:;
++ (id)schemaForArrayWithElementSchema:associatedError:isOptional:;
++ (id)schemaForDictionaryWithStructure:associatedError:isOptional:;
++ (id)schemaWithExpectedClass:associatedError:isOptional:;
+@end

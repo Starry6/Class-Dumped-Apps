@@ -1,0 +1,34 @@
+@interface WBSAutoFillQuirksManager : NSObject
+@property (nonatomic) WBSPasswordGenerationManager passwordGenerationManager;
+@property (nonatomic) WBSAutoFillAssociatedDomainsManager associatedDomainsManager;
+@property (nonatomic) WBSPasswordAuditingEligibleDomainsManager passwordAuditingEligibleDomainsManager;
+@property (nonatomic) WBSChangePasswordURLManager changePasswordURLManager;
+@property (nonatomic) BOOL shouldAttemptToDownloadConfiguration;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (id)associatedDomainsManager;
+- (void)prepareForTermination;
+- (BOOL)shouldAttemptToDownloadConfiguration;
+- (void)setShouldAttemptToDownloadConfiguration:;
+- (void).cxx_destruct;
+- (BOOL)arePasskeysDisallowedForRelyingParty:;
+- (id)passwordGenerationManager;
+- (void)beginLoadingQuirksFromDisk;
+- (id)changePasswordURLManager;
+- (BOOL)isAutomaticLoginDisallowedOnURL:;
+- (BOOL)isStreamlinedLoginDisallowedOnURL:;
+- (id)initWithBuiltInQuirksURL:downloadsDirectoryURL:resourceName:resourceVersion:updateDateDefaultsKey:updateInterval:;
+- (void)didDownloadPlistForRemotePlistController:;
+- (id)passwordAuditingEligibleDomainsManager;
+- (id)_passwordRequirementsByDomainFromCurrentSnapshot;
+- (id)_domainsWithAssociatedCredentialsFromCurrentSnapshot;
+- (id)_domainsToConsiderIdenticalFromCurrentSnapshot;
+- (id)_domainsIneligibleForPasswordAuditingFromCurrentSnapshot;
+- (id)_changePasswordURLStringsFromCurrentSnapshot;
+- (BOOL)shouldUseFallbackUIForRelyingParty:;
+- (BOOL)_isURL:containedInQuirks:;
+- (id)_urlFromRelyingParty:;
+@end

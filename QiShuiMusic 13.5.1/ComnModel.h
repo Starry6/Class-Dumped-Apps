@@ -1,0 +1,30 @@
+@interface ComnModel : NSObject
+@property (nonatomic) MLModel model;
+@property (nonatomic) MLModelConfiguration mconfig;
+- (id)mconfig;
+- (id)compileModel:isHaveModel:;
+- (id)initWithContent:disableMLE5Engine:error:;
+- (id)initWithContentsOfURL:disableMLE5Engine:error:;
+- (BOOL)loadModel:completionHandler:;
+- (BOOL)loadModel:disableMLE5Engine:error:;
+- (BOOL)loadModel:isHaveModel:completionHandler:;
+- (BOOL)loadModel:isHaveModel:disableMLE5Engine:error:;
+- (id)moveModelcToNewUrl:modelName:;
+- (void)setMconfig:;
+- (BOOL)zipFileAtPath:toDestination:;
+- (id)model;
+- (id)init;
+- (void)dealloc;
+- (void)setModel:;
+- (id)initWithConfiguration:error:;
+- (void).cxx_destruct;
+- (id)initWithContentsOfURL:configuration:error:;
+- (BOOL)unzipFileAtPath:toDestination:;
++ (id)cacheZipDirPath;
++ (id)applicationLibirayDirectory:;
++ (id)applicationLibirayDirectory:suffix:;
++ (id)applicationZipDirectory:;
++ (id)cacheModleDirPath;
++ (void)clearAllCache;
++ (id)getSaveZipLibirayDir:;
+@end

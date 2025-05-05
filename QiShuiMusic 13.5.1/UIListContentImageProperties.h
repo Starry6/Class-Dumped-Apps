@@ -1,0 +1,33 @@
+@interface UIListContentImageProperties : NSObject
+@property (nonatomic) UIImageSymbolConfiguration preferredSymbolConfiguration;
+@property (nonatomic) UIColor tintColor;
+@property (nonatomic) @? tintColorTransformer;
+@property (nonatomic) double cornerRadius;
+@property (nonatomic) {CGSize=dd} maximumSize;
+@property (nonatomic) {CGSize=dd} reservedLayoutSize;
+@property (nonatomic) BOOL accessibilityIgnoresInvertColors;
+- (void)setPreferredSymbolConfiguration:;
+- (id)init;
+- (id)preferredSymbolConfiguration;
+- (void)setMaximumSize:;
+- (void)setTintColorTransformer:;
+- (id)resolvedTintColorForTintColor:;
+- (id)reservedLayoutSize;
+- (BOOL)accessibilityIgnoresInvertColors;
+- (void)setAccessibilityIgnoresInvertColors:;
+- (id)tintColor;
+- (id)initWithCoder:;
+- (void)setReservedLayoutSize:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (void)setCornerRadius:;
+- (void).cxx_destruct;
+- (void)setTintColor:;
+- (id)description;
+- (id)maximumSize;
+- (double)cornerRadius;
+- (id)tintColorTransformer;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
++ (BOOL)supportsSecureCoding;
+@end

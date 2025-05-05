@@ -1,0 +1,32 @@
+@interface PKPaletteBarButton : PKPaletteButton
+@property (nonatomic) UIView customView;
+@property (nonatomic) @? menuProvider;
+@property (nonatomic) UIBarButtonItem barButtonItem;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)_itemStandardViewNeedsUpdate:;
+- (id)barButtonItem;
+- (void)_itemDidChangeSelectionState:;
+- (void)_itemDidChangeEnabledState:;
+- (void)_itemCustomViewDidChange:fromView:;
+- (void)_itemDidChangeWidth:;
+- (void)_itemDidChangeHiddenState:;
+- (void)layoutSubviews;
+- (void)setMenuProvider:;
+- (id)_contextMenuInteraction:styleForMenuWithConfiguration:;
+- (void)setCustomView:;
+- (id)contextMenuInteraction:configurationForMenuAtLocation:;
+- (void).cxx_destruct;
+- (void)setTintColor:;
+- (id)customView;
+- (id)initWithBarButtonItem:;
+- (id)menuProvider;
+- (void)setScalingFactor:;
+- (void)_handleTouchUpInside:event:;
+- (void)_updateForButtonItemChange;
+- (void)_updateMenu;
+- (void)_checkCurrentBarButtonItemState;
++ (id)_imageByApplyingDefaultImageSymbolConfigurationWithImage:;
+@end

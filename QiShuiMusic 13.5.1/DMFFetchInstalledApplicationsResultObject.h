@@ -1,0 +1,2 @@
+@interface DMFFetchInstalledApplicationsResultObject : DMFFetchApplicationsResultObject
+@end

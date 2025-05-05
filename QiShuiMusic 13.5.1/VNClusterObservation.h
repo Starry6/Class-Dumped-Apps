@@ -1,0 +1,30 @@
+@interface VNClusterObservation : VNObservation
+@property (nonatomic) NSArray clusters;
+@property (nonatomic) NSArray suggestionsForCluster;
+@property (nonatomic) NSData clusterState;
+@property (nonatomic) NSSet clusteredFaceIds;
+@property (nonatomic) NSArray groupedClusteredFaceIdsForCluster;
+@property (nonatomic) NSNumber distance;
+@property (nonatomic) NSDictionary distancesById;
+- (id)distance;
+- (void)setDistance:;
+- (void)setClusterState:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)clusterState;
+- (BOOL)isEqual:;
+- (id)clusters;
+- (void)setClusters:;
+- (id)vn_cloneObject;
+- (id)suggestionsForCluster;
+- (void)setSuggestionsForCluster:;
+- (id)clusteredFaceIds;
+- (void)setClusteredFaceIds:;
+- (id)groupedClusteredFaceIdsForCluster;
+- (void)setGroupedClusteredFaceIdsForCluster:;
+- (id)distancesById;
+- (void)setDistancesById:;
++ (BOOL)supportsSecureCoding;
+@end

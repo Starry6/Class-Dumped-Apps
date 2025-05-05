@@ -1,0 +1,32 @@
+@interface PKHoverController : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)_resume:;
+- (BOOL)gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:;
+- (BOOL)gestureRecognizer:shouldBeRequiredToFailByGestureRecognizer:;
+- (void).cxx_destruct;
+- (BOOL)gestureRecognizer:shouldReceiveTouch:;
+- (id).cxx_construct;
+- (BOOL)gestureRecognizer:shouldRequireFailureOfGestureRecognizer:;
+- (void)vsync:;
+- (void)_pause:;
+- (void)_hoverGesture:;
+- (void)checkDidLiftAfterGestureEnd;
+- (double)inputPointFilter:distanceToEdge:;
+- (id)currentInputPoint;
+- (void)updateCurrentInputPointWithInputPoint:;
+- (void)_setupHoverGestureRecognizerInView:;
+- (void)_updateInputPointFilters;
+- (void)_triggerHoldGestureIfNecessary;
+- (void)_endIntentionalHoverTracking;
+- (void)_trackIntentionalHover:;
+- (void)_setupPredictorForNewPoint:;
+- (void)_handleHoverInputPoint:;
+- (void)_sendDidUpdate:;
+- (void)_sendDidUpdateNow:;
+- (void)hideLabel;
+- (double)currentMovementSpeed;
+- (void)logInputPoint:;
+@end

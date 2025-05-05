@@ -1,0 +1,30 @@
+@interface NSTextAttachmentViewProvider : NSObject
+@property (nonatomic) NSTextAttachment textAttachment;
+@property (nonatomic) Q characterIndex;
+@property (nonatomic) NSTextLayoutManager textLayoutManager;
+@property (nonatomic) NSLayoutManager layoutManager;
+@property (nonatomic) <NSTextLocation> location;
+@property (nonatomic) UIView view;
+@property (nonatomic) BOOL tracksTextAttachmentViewBounds;
+- (id)textLayoutManager;
+- (id)layoutManager;
+- (id)textAttachment;
+- (void)dealloc;
+- (id)attachmentBoundsForAttributes:location:textContainer:proposedLineFragment:position:;
+- (void)setTextLayoutManager:;
+- (id)location;
+- (id)view;
+- (void)setLocation:;
+- (void).cxx_destruct;
+- (void)loadView;
+- (unsigned long long)characterIndex;
+- (void)setView:;
+- (id)attachmentBoundsForTextContainer:proposedLineFragment:glyphPosition:characterIndex:;
+- (id)initWithTextAttachment:parentView:characterIndex:layoutManager:;
+- (void)setTracksTextAttachmentViewBounds:;
+- (id)initWithTextAttachment:parentView:textLayoutManager:location:;
+- (void)setLayoutManager:;
+- (void)removeView;
+- (void)setTextAttachment:;
+- (BOOL)tracksTextAttachmentViewBounds;
+@end

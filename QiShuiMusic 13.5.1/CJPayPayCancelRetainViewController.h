@@ -1,0 +1,36 @@
+@interface CJPayPayCancelRetainViewController : CJPayPopUpBaseViewController
+@property (nonatomic) UILabel mainTitleLabel;
+@property (nonatomic) UILabel subTitleLabel;
+@property (nonatomic) CJPayStyleButton topButton;
+@property (nonatomic) CJPayButton closeButton;
+@property (nonatomic) CJPayButton bottomButton;
+@property (nonatomic) CJPayRetainVoucherListView retainVoucherView;
+@property (nonatomic) CJPayRetainInfoModel retainInfoModel;
+@property (nonatomic) BOOL isDescTextAlignmentLeft;
+- (id)retainInfoModel;
+- (id)initWithRetainInfoModel:;
+- (BOOL)isDescTextAlignmentLeft;
+- (id)mainTitleLabel;
+- (void)p_bottomButtonTapped;
+- (void)p_closeButtonTapped;
+- (void)p_initTitleLabelStyle:;
+- (void)p_setupUI;
+- (void)p_setupUIForOtherVerify;
+- (id)p_stringSeparatedWithDollar:;
+- (void)p_topButtonTapped;
+- (id)retainVoucherView;
+- (void)setIsDescTextAlignmentLeft:;
+- (void)setMainTitleLabel:;
+- (void)setRetainInfoModel:;
+- (void)setRetainVoucherView:;
+- (void).cxx_destruct;
+- (void)viewDidLoad;
+- (id)subTitleLabel;
+- (void)setSubTitleLabel:;
+- (id)closeButton;
+- (void)setCloseButton:;
+- (id)topButton;
+- (void)setTopButton:;
+- (id)bottomButton;
+- (void)setBottomButton:;
+@end

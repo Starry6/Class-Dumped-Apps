@@ -1,0 +1,30 @@
+@interface CSLiveFSVolume : NSObject
+@property (nonatomic) NSObject<OS_dispatch_queue> queue;
+@property (nonatomic) r* volumeNameCString;
+@property (nonatomic) Q volumeNameCStringLength;
+@property (nonatomic) NSObject<OS_xpc_object> delayedObject;
+@property (nonatomic) NSURL volumeURL;
+@property (nonatomic) NSString volumeName;
+- (id)init;
+- (id)initWithVolumeURL:;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (void)setQueue:;
+- (id)queue;
+- (id)initWithVolumeName:;
+- (void)_handleDelayedEvent;
+- (int)sendCSLiveFSEvent:;
+- (void)sendEventOfType:pid:path:pathLength:attributes:;
+- (void)sendDeleteEventForPID:path:pathLength:;
+- (void)sendPairedEventOfType:pid:fromPath:fromPathLength:fromAttributes:toPath:toPathLength:toAttributes:;
+- (void)sendXattrModifiedEventForPID:path:pathLength:xAttrName:xAttrValue:attributes:;
+- (void)sendXattrRemovedEventForPID:path:pathLength:xAttrName:attributes:;
+- (BOOL)isInterestingPath:;
+- (id)volumeURL;
+- (id)volumeName;
+- (id)volumeNameCString;
+- (unsigned long long)volumeNameCStringLength;
+- (id)delayedObject;
+- (void)setDelayedObject:;
++ (id)sharedInstance;
+@end

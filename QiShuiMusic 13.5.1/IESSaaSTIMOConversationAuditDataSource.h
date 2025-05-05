@@ -1,0 +1,33 @@
+@interface IESSaaSTIMOConversationAuditDataSource : NSObject
+@property (nonatomic) <IESSaaSTIMOConversationAuditDataSourceDelegate> delegate;
+@property (nonatomic) q cursor;
+@property (nonatomic) <IESSaaSTIMConversationApplyProtocol> applier;
+@property (nonatomic) NSString handlerId;
+@property (nonatomic) IESSaaSTIMOEnterConversationNotifyHandler handler;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)_updateStatus:nextCursor:;
+- (void)fetchNewestAuditListWithLimit:completion:;
+- (void)loadMoreAuditListWithLimit:completion:;
+- (void)onPushedNewApply:type:;
+- (void)setHandlerId:;
+- (long long)cursor;
+- (id)init;
+- (void)dealloc;
+- (void)setDelegate:;
+- (void)setHandler:;
+- (void)setCursor:;
+- (id)handler;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)initWithDelegate:;
+- (id)applier;
+- (void)setApplier:;
+- (id)handlerId;
++ (void)ackConversationApplyWithApplyID:agree:bizExt:completion:;
++ (void)fetchAuditSwitchStatusWithShortID:type:completion:;
++ (void)sendConversationApplyWithShortID:type:bizExt:completion:;
++ (void)updateAuditSwitchStatusWithShortID:type:switchStatus:completion:;
+@end

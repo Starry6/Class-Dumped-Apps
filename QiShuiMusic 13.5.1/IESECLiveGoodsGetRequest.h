@@ -1,0 +1,36 @@
+@interface IESECLiveGoodsGetRequest : IESECLiveAPIBaseRequest
+@property (nonatomic) NSString pIDs;
+@property (nonatomic) NSArray productInfos;
+@property (nonatomic) NSString entranceInfo;
+@property (nonatomic) NSString apiPath;
+@property (nonatomic) q requestType;
+@property (nonatomic) NSString requestAdditions;
+@property (nonatomic) NSNumber livePanelHeightPercent;
+@property (nonatomic) NSDictionary extraRequestParams;
+@property (nonatomic) NSString containerRoomID;
+@property (nonatomic) NSString storeID;
+@property (nonatomic) NSString addressInfo;
+- (id)containerRoomID;
+- (void)setAddressInfo:;
+- (id)buildParams;
+- (id)entranceInfo;
+- (id)extraRequestParams;
+- (id)livePanelHeightPercent;
+- (id)pIDs;
+- (id)productInfos;
+- (id)requestAdditions;
+- (void)setContainerRoomID:;
+- (void)setEntranceInfo:;
+- (void)setExtraRequestParams:;
+- (void)setLivePanelHeightPercent:;
+- (void)setPIDs:;
+- (void)setProductInfos:;
+- (void)setRequestAdditions:;
+- (long long)requestType;
+- (void)setRequestType:;
+- (id)init;
+- (id)storeID;
+- (void)setStoreID:;
+- (void).cxx_destruct;
+- (id)addressInfo;
+@end

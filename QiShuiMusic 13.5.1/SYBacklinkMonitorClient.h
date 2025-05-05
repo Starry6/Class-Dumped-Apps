@@ -1,0 +1,30 @@
+@interface SYBacklinkMonitorClient : NSObject
+@property (nonatomic) NSXPCConnection _connection;
+@property (nonatomic) NSObject<OS_dispatch_queue> _clientQueue;
+@property (nonatomic) NSMutableSet _pendingCompletionBlocks;
+@property (nonatomic) SYBacklinkFilterCache _filterCache;
+@property (nonatomic) BOOL _previousFilterCacheMatched;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)_connection;
+- (void)_invalidateConnection;
+- (id)init;
+- (void)dealloc;
+- (void)set_connection:;
+- (id)_clientQueue;
+- (void).cxx_destruct;
+- (void)set_clientQueue:;
+- (void)_createConnectionIfNeeded;
+- (void)createConnectionWithEndpoint:;
+- (void)_configureConnectionAndResume;
+- (id)_pendingCompletionBlocks;
+- (id)updateWithFilterCache:;
+- (void)notifyActiveUserActivityDidChange:context:completion:;
+- (void)_processNotifyActiveUserActivityDidChange:context:serviceProxy:completion:;
+- (id)_filterCache;
+- (void)set_filterCache:;
+- (BOOL)_previousFilterCacheMatched;
+- (void)set_previousFilterCacheMatched:;
+@end

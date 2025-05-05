@@ -1,0 +1,34 @@
+@interface LPResources : NSObject
++ (void)clearCachedResources;
++ (id)chevron;
++ (id)muteButton;
++ (id)fileIcon;
++ (id)playButton;
++ (id)metadataExtractorJS;
++ (id)safariIcon;
++ (id)pagesIcon;
++ (id)notesIcon;
++ (id)numbersIcon;
++ (id)keynoteIcon;
++ (id)iCloudDriveIcon;
++ (id)remindersIcon;
++ (id)searchGlyph;
++ (id)pauseButton;
++ (id)unmuteButton;
++ (id)faceTimeIcon;
++ (id)_safariAppIconForSize:;
++ (id)safariAppIconBadge;
++ (id)safariAppIcon;
++ (id)textIcon;
++ (id)iCloudIcon;
++ (id)mapIcon;
++ (id)linkIcon;
++ (id)telephoneIcon;
++ (id)transportDriveIcon;
++ (id)transportTransitIcon;
++ (id)transportBicycleIcon;
++ (id)transportWalkIcon;
++ (id)openQuote;
++ (id)closeQuote;
++ (id)appClipIcon;
+@end

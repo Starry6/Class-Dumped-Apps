@@ -1,0 +1,13 @@
+@interface PHSuggestionWallpaperShuffleUtilities : NSObject
++ (id)matchingSuggestionInternalPredicateForPosterConfiguration:;
++ (id)suggestionLocalIdentifiersByFeatureForPosterConfiguration:inPhotoLibrary:;
++ (id)chosenSuggestionLocalIdentifiersForPosterConfiguration:fromSuggestionLocalIdentifiersByFeature:atDate:usingStrategy:withRejectedPersonLocalIdentifiers:;
++ (void)enumerateFeaturesOfPosterConfiguration:withRejectedPersonLocalIdentifiers:usingBlock:;
++ (id)allPotentialSuggestionLocalIdentifierGroupsForPosterConfiguration:fromSuggestionLocalIdentifiersByFeature:withRejectedPersonLocalIdentifiers:;
++ (id)allPotentialSuggestionLocalIdentifiersForPosterConfiguration:fromSuggestionLocalIdentifiersByFeature:withRejectedPersonLocalIdentifiers:;
++ (id)chosenSuggestionLocalIdentifiersIn:atDate:;
++ (id)chosenSuggestionLocalIdentifiersFromGroups:atDate:;
++ (id)chosenSuggestionsForPosterConfiguration:atDate:inPhotoLibrary:;
++ (id)mediaFromSuggestions:assetBySuggestionUUID:;
++ (void)setFeaturedStateOfSuggestions:;
+@end

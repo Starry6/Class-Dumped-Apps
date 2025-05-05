@@ -1,0 +1,31 @@
+@interface SACFAbstractClientCommand : SADomainCommand
+@property (nonatomic) NSString domain;
+@property (nonatomic) NSString jsFileNameSuffix;
+@property (nonatomic) NSArray jsLibraries;
+@property (nonatomic) NSString jsParameters;
+@property (nonatomic) NSString jsScript;
+@property (nonatomic) BOOL shouldCacheBytecode;
+@property (nonatomic) BOOL shouldCacheScript;
+@property (nonatomic) BOOL shouldRestartContext;
+- (id)groupIdentifier;
+- (BOOL)requiresResponse;
+- (id)encodedClassName;
+- (id)domain;
+- (void)setDomain:;
+- (id)jsScript;
+- (void)setJsScript:;
+- (BOOL)shouldCacheScript;
+- (void)setShouldCacheScript:;
+- (id)jsFileNameSuffix;
+- (void)setJsFileNameSuffix:;
+- (id)jsLibraries;
+- (void)setJsLibraries:;
+- (id)jsParameters;
+- (void)setJsParameters:;
+- (BOOL)shouldCacheBytecode;
+- (void)setShouldCacheBytecode:;
+- (BOOL)shouldRestartContext;
+- (void)setShouldRestartContext:;
++ (id)abstractClientCommand;
++ (id)abstractClientCommandWithDictionary:context:;
+@end

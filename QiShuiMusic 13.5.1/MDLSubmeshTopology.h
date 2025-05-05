@@ -1,0 +1,36 @@
+@interface MDLSubmeshTopology : NSObject
+@property (nonatomic) <MDLMeshBuffer> faceTopology;
+@property (nonatomic) Q faceCount;
+@property (nonatomic) <MDLMeshBuffer> vertexCreaseIndices;
+@property (nonatomic) <MDLMeshBuffer> vertexCreases;
+@property (nonatomic) Q vertexCreaseCount;
+@property (nonatomic) <MDLMeshBuffer> edgeCreaseIndices;
+@property (nonatomic) <MDLMeshBuffer> edgeCreases;
+@property (nonatomic) Q edgeCreaseCount;
+@property (nonatomic) <MDLMeshBuffer> holes;
+@property (nonatomic) Q holeCount;
+- (void).cxx_destruct;
+- (unsigned long long)faceCount;
+- (void)setFaceCount:;
+- (id)initWithSubmesh:;
+- (void)encodeTopologyWithCoder:allocator:;
+- (id)faceTopology;
+- (void)setFaceTopology:;
+- (id)vertexCreaseIndices;
+- (void)setVertexCreaseIndices:;
+- (id)vertexCreases;
+- (void)setVertexCreases:;
+- (unsigned long long)vertexCreaseCount;
+- (void)setVertexCreaseCount:;
+- (id)edgeCreaseIndices;
+- (void)setEdgeCreaseIndices:;
+- (id)edgeCreases;
+- (void)setEdgeCreases:;
+- (unsigned long long)edgeCreaseCount;
+- (void)setEdgeCreaseCount:;
+- (id)holes;
+- (void)setHoles:;
+- (unsigned long long)holeCount;
+- (void)setHoleCount:;
++ (id)decodeTopologyWithCoder:allocator:;
+@end

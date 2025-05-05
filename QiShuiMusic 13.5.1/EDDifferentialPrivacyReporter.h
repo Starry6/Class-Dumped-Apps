@@ -1,0 +1,32 @@
+@interface EDDifferentialPrivacyReporter : NSObject
+@property (nonatomic) @? recordingHandler;
+@property (nonatomic) NSObject<OS_dispatch_queue> recordingQueue;
+@property (nonatomic) NSString _recordingKey;
+@property (nonatomic) <EMUserProfileProvider> _profileProvider;
+@property (nonatomic) _MSTTLReference _userDomains;
+@property (nonatomic) EDMailDynamicDataAsset _mailDynamicData;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)_profileProvider;
+- (id)initWithUserProfileProvider:;
+- (id)_recordingKey;
+- (id)_localeIdentifier;
+- (void)reportSenderDomainForMessages:;
+- (void)setRecordingQueue:;
+- (void)setRecordingHandler:;
+- (void)persistenceDidAddMessages:generationWindow:;
+- (id)_userDomains;
+- (void)set_recordingKey:;
+- (void)set_userDomains:;
+- (void)set_mailDynamicData:;
+- (void).cxx_destruct;
+- (void)_recordSenders:;
+- (id)recordingHandler;
+- (void)set_profileProvider:;
+- (id)recordingQueue;
+- (BOOL)_shouldRecordMailbox:;
+- (BOOL)_isUserAccountDomain:;
+- (id)_mailDynamicData;
+@end

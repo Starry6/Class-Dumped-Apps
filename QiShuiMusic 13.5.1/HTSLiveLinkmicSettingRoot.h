@@ -1,0 +1,2 @@
+@interface HTSLiveLinkmicSettingRoot : GPBRootObject
+@end

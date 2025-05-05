@@ -1,0 +1,2 @@
+@interface WebNotificationPrivate : NSObject
+@end

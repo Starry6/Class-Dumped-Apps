@@ -1,0 +1,35 @@
+@interface SFAppTypicalUsage : NSManagedObject
+@property (nonatomic) NSDate firstTimeStamp;
+@property (nonatomic) NSNumber intervalType;
+@property (nonatomic) NSDate timeStamp;
+@property (nonatomic) NSNumber wifiIN;
+@property (nonatomic) NSNumber wifiIN_M2;
+@property (nonatomic) NSNumber wifiIN_mean;
+@property (nonatomic) NSNumber wifiIN_var;
+@property (nonatomic) NSNumber wifiOUT;
+@property (nonatomic) NSNumber wifiOUT_M2;
+@property (nonatomic) NSNumber wifiOUT_mean;
+@property (nonatomic) NSNumber wifiOUT_var;
+@property (nonatomic) NSNumber wifiSampleCount;
+@property (nonatomic) NSNumber wiredIN;
+@property (nonatomic) NSNumber wiredIN_M2;
+@property (nonatomic) NSNumber wiredIN_mean;
+@property (nonatomic) NSNumber wiredIN_var;
+@property (nonatomic) NSNumber wiredOUT;
+@property (nonatomic) NSNumber wiredOUT_M2;
+@property (nonatomic) NSNumber wiredOUT_mean;
+@property (nonatomic) NSNumber wiredOUT_var;
+@property (nonatomic) NSNumber wiredSampleCount;
+@property (nonatomic) NSNumber wwanIN;
+@property (nonatomic) NSNumber wwanIN_M2;
+@property (nonatomic) NSNumber wwanIN_mean;
+@property (nonatomic) NSNumber wwanIN_var;
+@property (nonatomic) NSNumber wwanOUT;
+@property (nonatomic) NSNumber wwanOUT_M2;
+@property (nonatomic) NSNumber wwanOUT_mean;
+@property (nonatomic) NSNumber wwanOUT_var;
+@property (nonatomic) NSNumber wwanSampleCount;
+@property (nonatomic) SFApp hasApp;
++ (id)entityName;
++ (id)fetchRequest;
+@end

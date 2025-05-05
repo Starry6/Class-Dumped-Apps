@@ -1,0 +1,36 @@
+@interface StingerParams : NSObject
+@property (nonatomic) NSString types;
+@property (nonatomic) : sel;
+@property (nonatomic) ^? originalIMP;
+@property (nonatomic) ^^v args;
+@property (nonatomic) NSArray argumentTypes;
+@property (nonatomic) NSArray arguments;
+@property (nonatomic) NSInvocation invocation;
+@property (nonatomic) BOOL valid;
+- (void)setOriginalIMP:;
+- (void)setSel:;
+- (id)slf;
+- (void)_internalGenerateInvocation;
+- (id)argumentTypes;
+- (id)initWithType:originalIMP:sel:args:argumentTypes:;
+- (void)invokeAndGetOriginalRetValue:;
+- (id)originalIMP;
+- (void)preGenerateInvocationIfNeed;
+- (void)setArgs:;
+- (void)setArgumentTypes:;
+- (id)st_argumentWithType:index:;
+- (void)st_genarateArguments;
+- (void)setArguments:;
+- (id)invocation;
+- (id)init;
+- (void)setInvocation:;
+- (id)arguments;
+- (SEL)sel;
+- (id)types;
+- (void)setTypes:;
+- (void)setValid:;
+- (BOOL)isValid;
+- (void).cxx_destruct;
+- (id)typeEncoding;
+- (id)args;
+@end

@@ -1,0 +1,30 @@
+@interface SISchemaRequestLink : SISchemaTopLevelUnionType
+@property (nonatomic) SISchemaRequestLinkInfo source;
+@property (nonatomic) BOOL hasSource;
+@property (nonatomic) SISchemaRequestLinkInfo target;
+@property (nonatomic) BOOL hasTarget;
+@property (nonatomic) NSData jsonData;
+- (BOOL)hasTarget;
+- (id)qualifiedMessageName;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (int)getAnyEventType;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (void)setHasSource:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void)setTarget:;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (id)source;
+- (BOOL)readFrom:;
+- (id)target;
+- (BOOL)hasSource;
+- (id)dictionaryRepresentation;
+- (void)setSource:;
+- (BOOL)isEqual:;
+- (void)setHasTarget:;
+- (void)deleteSource;
+- (void)deleteTarget;
+@end

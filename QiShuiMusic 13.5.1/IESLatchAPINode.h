@@ -1,0 +1,31 @@
+@interface IESLatchAPINode : NSObject
+@property (nonatomic) NSString apiName;
+@property (nonatomic) NSString url;
+@property (nonatomic) NSString method;
+@property (nonatomic) NSDictionary headers;
+@property (nonatomic) NSDictionary params;
+@property (nonatomic) NSDictionary data;
+@property (nonatomic) BOOL needCommonParams;
+@property (nonatomic) q expire;
+@property (nonatomic) NSDictionary extras;
+- (BOOL)needCommonParams;
+- (void)setNeedCommonParams:;
+- (id)url;
+- (long long)expire;
+- (id)jsonRepresentation;
+- (id)data;
+- (id)method;
+- (void)setExpire:;
+- (void)setHeaders:;
+- (void)setUrl:;
+- (void)setExtras:;
+- (void).cxx_destruct;
+- (id)extras;
+- (void)setData:;
+- (void)setMethod:;
+- (id)headers;
+- (id)params;
+- (void)setApiName:;
+- (void)setParams:;
+- (id)apiName;
+@end

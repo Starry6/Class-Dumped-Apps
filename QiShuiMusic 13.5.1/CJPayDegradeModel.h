@@ -1,0 +1,32 @@
+@interface CJPayDegradeModel : JSONModel
+@property (nonatomic) NSString bdpayAppId;
+@property (nonatomic) NSString cjpayAppId;
+@property (nonatomic) NSString bdpayMerchantId;
+@property (nonatomic) NSString cjpayMerchantId;
+@property (nonatomic) BOOL isPayUseH5;
+@property (nonatomic) BOOL isBalanceWithdrawUseH5;
+@property (nonatomic) BOOL isBalanceRechargeUseH5;
+@property (nonatomic) BOOL isCardListUseH5;
+@property (nonatomic) BOOL isBDPayUseH5;
+- (id)bdpayMerchantId;
+- (id)cjpayMerchantId;
+- (BOOL)isCardListUseH5;
+- (id)bdpayAppId;
+- (id)cjpayAppId;
+- (BOOL)isBDPayUseH5;
+- (BOOL)isBalanceRechargeUseH5;
+- (BOOL)isBalanceWithdrawUseH5;
+- (BOOL)isPayUseH5;
+- (void)setBdpayAppId:;
+- (void)setBdpayMerchantId:;
+- (void)setCjpayAppId:;
+- (void)setCjpayMerchantId:;
+- (void)setIsBDPayUseH5:;
+- (void)setIsBalanceRechargeUseH5:;
+- (void)setIsBalanceWithdrawUseH5:;
+- (void)setIsCardListUseH5:;
+- (void)setIsPayUseH5:;
+- (void).cxx_destruct;
++ (id)keyMapper;
++ (BOOL)propertyIsOptional:;
+@end

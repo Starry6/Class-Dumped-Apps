@@ -1,0 +1,36 @@
+@interface VSViewServiceRequestOperation : VSAsyncOperation
+@property (nonatomic) VSOptional result;
+@property (nonatomic) VSViewServiceHostViewController viewServiceHostViewController;
+@property (nonatomic) NSUUID requestID;
+@property (nonatomic) VSViewServiceRequest viewServiceRequest;
+@property (nonatomic) <VSViewServiceRequestOperationDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)result;
+- (void)executionDidBegin;
+- (id)init;
+- (void)cancel;
+- (void)setDelegate:;
+- (id)delegate;
+- (id)requestID;
+- (void).cxx_destruct;
+- (void)setResult:;
+- (void)setRequestID:;
+- (void)_dismissViewController;
+- (void)_presentViewController;
+- (void)finishExecutionIfPossible;
+- (void)presentViewServiceHostViewController:;
+- (void)dismissViewServiceHostViewController:;
+- (void)viewServiceHostViewController:request:didFinishWithResponse:;
+- (void)viewServiceHostViewController:request:didFailWithError:;
+- (void)viewServiceHostViewController:didChooseAdditionalProvidersForRequest:;
+- (void)viewServiceHostViewController:didCancelRequest:;
+- (BOOL)viewServiceHostViewController:shouldAuthenticateAccountProviderWithIdentifier:;
+- (id)initWithViewServiceRequest:;
+- (void)_dismissViewControllerIfRequired;
+- (id)viewServiceRequest;
+- (id)viewServiceHostViewController;
+- (void)setViewServiceHostViewController:;
+@end

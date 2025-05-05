@@ -1,0 +1,2 @@
+@interface IESLiveSaaSPBIESLiveSaaSPBRoomDataSyncRoot : GPBRootObject
+@end

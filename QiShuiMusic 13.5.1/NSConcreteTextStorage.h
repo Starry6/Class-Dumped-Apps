@@ -1,0 +1,32 @@
+@interface NSConcreteTextStorage : NSTextStorage
+- (BOOL)_attributeFixingInProgress;
+- (BOOL)_forceFixAttributes;
+- (void)replaceCharactersInRange:withAttributedString:;
+- (BOOL)_lockForWritingWithExceptionHandler:;
+- (void)replaceCharactersInRange:withString:;
+- (void)_setForceFixAttributes:;
+- (void)_unlock;
+- (id)string;
+- (void)removeAttribute:range:;
+- (void)setAttributes:range:;
+- (id)init;
+- (BOOL)_mayRequireIntentResolution;
+- (void)dealloc;
+- (id)attribute:atIndex:longestEffectiveRange:inRange:;
+- (id)initWithString:attributes:;
+- (id)attributesAtIndex:effectiveRange:;
+- (id)initWithString:;
+- (void)_initLocks;
+- (id)attributesAtIndex:longestEffectiveRange:inRange:;
+- (id)initWithAttributedString:;
+- (void)_markIntentsResolved;
+- (void)_setAttributeFixingInProgress:;
+- (id)attribute:atIndex:effectiveRange:;
+- (void)addAttributes:range:;
+- (BOOL)fixesAttributesLazily;
+- (unsigned long long)length;
+- (Class)classForCoder;
+- (BOOL)_lockForReading;
+- (void)addAttribute:value:range:;
++ (unsigned long long)_writerCountTSDKey;
+@end

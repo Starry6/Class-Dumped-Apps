@@ -1,0 +1,32 @@
+@interface SAWSUpdateTimeToIndexMapping : NSObject
+@property (nonatomic) Q frameStartSampleIndex;
+@property (nonatomic) Q numFrameIndices;
+@property (nonatomic) Q frameEndSampleIndex;
+@property (nonatomic) Q waitStartSampleIndex;
+@property (nonatomic) Q numWaitIndices;
+@property (nonatomic) Q waitEndSampleIndex;
+@property (nonatomic) Q deferStartSampleIndex;
+@property (nonatomic) Q numDeferIndices;
+@property (nonatomic) Q deferEndSampleIndex;
+@property (nonatomic) Q workStartSampleIndex;
+@property (nonatomic) Q numWorkIndices;
+@property (nonatomic) Q workEndSampleIndex;
+- (unsigned long long)frameStartSampleIndex;
+- (unsigned long long)numFrameIndices;
+- (unsigned long long)frameEndSampleIndex;
+- (unsigned long long)waitEndSampleIndex;
+- (unsigned long long)deferEndSampleIndex;
+- (unsigned long long)workEndSampleIndex;
+- (id)initWithWSUpdateData:andSampleDataStore:andHintIndex:;
+- (void)printFrameIndexRangeToStream:withTranslationDelta:;
+- (void)printWaitIndexRangeToStream:withTranslationDelta:;
+- (void)printDeferIndexRangeToStream:withTranslationDelta:;
+- (void)printWorkIndexRangeToStream:withTranslationDelta:;
+- (unsigned long long)waitStartSampleIndex;
+- (unsigned long long)numWaitIndices;
+- (unsigned long long)deferStartSampleIndex;
+- (unsigned long long)numDeferIndices;
+- (unsigned long long)workStartSampleIndex;
+- (unsigned long long)numWorkIndices;
++ (id)arrayOfMappingsFromWSUpdataDataArray:andSampleDataStore:;
+@end

@@ -1,0 +1,30 @@
+@interface CXJoinCallActivity : NSObject
+@property (nonatomic) NSData applicationContext;
+@property (nonatomic) NSString bundleIdentifier;
+@property (nonatomic) NSString activityIdentifier;
+@property (nonatomic) NSData metadata;
+@property (nonatomic) NSDate timestamp;
+@property (nonatomic) NSUUID UUID;
+- (id)bundleIdentifier;
+- (id)activityIdentifier;
+- (void)setUUID:;
+- (id)metadata;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)setMetadata:;
+- (void)setBundleIdentifier:;
+- (void)setApplicationContext:;
+- (id)applicationContext;
+- (void)encodeWithCoder:;
+- (void)setTimestamp:;
+- (void)setActivityIdentifier:;
+- (void).cxx_destruct;
+- (id)timestamp;
+- (id)description;
+- (id)UUID;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)initWithBundleIdentifier:metadata:applicationContext:activityIdentifier:;
+- (BOOL)isEqualToJoinCallActivity:;
++ (BOOL)supportsSecureCoding;
+@end

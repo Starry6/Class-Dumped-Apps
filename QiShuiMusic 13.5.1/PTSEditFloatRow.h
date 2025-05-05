@@ -1,0 +1,2 @@
+@interface PTSEditFloatRow : PTEditFloatRow
+@end

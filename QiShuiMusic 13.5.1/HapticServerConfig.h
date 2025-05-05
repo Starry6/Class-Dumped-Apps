@@ -1,0 +1,31 @@
+@interface HapticServerConfig : NSObject
+@property (nonatomic) BOOL usingInternalHaptics;
+@property (nonatomic) BOOL supportsAudioPlayback;
+@property (nonatomic) BOOL supportsHapticPlayback;
+@property (nonatomic) BOOL supportsAdvancedPatternPlayers;
+@property (nonatomic) float hapticContinuousTimeLimit;
+@property (nonatomic) NSString currentLocality;
+@property (nonatomic) float defaultHapticTransientEventSharpness;
+@property (nonatomic) float defaultHapticContinuousEventSharpness;
+@property (nonatomic) float defaultHapticTransientEventIntensity;
+@property (nonatomic) float defaultHapticContinuousEventIntensity;
+@property (nonatomic) {vector<unsigned long hapticTransientIDs;
+@property (nonatomic) {vector<unsigned long hapticContinuousSustainedIDs;
+@property (nonatomic) {vector<unsigned long hapticContinuousNonsustainedIDs;
+- (void).cxx_destruct;
+- (id).cxx_construct;
+- (id)initWithHapticPlayer:withOptions:error:;
+- (BOOL)usingInternalHaptics;
+- (BOOL)supportsAudioPlayback;
+- (BOOL)supportsHapticPlayback;
+- (BOOL)supportsAdvancedPatternPlayers;
+- (float)hapticContinuousTimeLimit;
+- (id)currentLocality;
+- (float)defaultHapticTransientEventSharpness;
+- (float)defaultHapticContinuousEventSharpness;
+- (float)defaultHapticTransientEventIntensity;
+- (float)defaultHapticContinuousEventIntensity;
+- (id)hapticTransientIDs;
+- (id)hapticContinuousSustainedIDs;
+- (id)hapticContinuousNonsustainedIDs;
+@end

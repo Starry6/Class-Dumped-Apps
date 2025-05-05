@@ -1,0 +1,2 @@
+@interface CSJDynamicEmptyView : CSJDynamicAbstractView
+@end

@@ -1,0 +1,36 @@
+@interface CJPayDouyinStyleLoadingView : UIView
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UIView backgroundView;
+@property (nonatomic) UIView logoFieldView;
+@property (nonatomic) BDImageView logoPreGifView;
+@property (nonatomic) BDImageView logoCompleteGifView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) CJPayLoadingStyleInfo loadingStyleInfo;
+- (id)completeSuccessGifUrl;
+- (id)loadingStyleInfo;
+- (id)logoCompleteGifView;
+- (id)logoFieldView;
+- (id)logoPreGifView;
+- (void)p_setupUI;
+- (id)preLoadGifUrl;
+- (id)repeatGifUrl;
+- (void)setLoadingStyleInfo:;
+- (void)setLogoCompleteGifView:;
+- (void)setLogoFieldView:;
+- (void)setLogoPreGifView:;
+- (void)showLoadingWithTitle:;
+- (void)stopLoadingWithState:;
+- (void)dismiss;
+- (id)backgroundView;
+- (void)setTitleLabel:;
+- (id)containerView;
+- (void)setContainerView:;
+- (void)setTitle:;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)setBackgroundView:;
+- (id)titleLabel;
+- (void)setLoadingTitle:;
+- (void)showLoading;
++ (id)sharedView;
+@end

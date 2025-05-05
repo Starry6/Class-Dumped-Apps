@@ -1,0 +1,2 @@
+@interface HTSLiveVsInteractiveRoot : GPBRootObject
+@end

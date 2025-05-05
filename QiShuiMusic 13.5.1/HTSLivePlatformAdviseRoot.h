@@ -1,0 +1,2 @@
+@interface HTSLivePlatformAdviseRoot : GPBRootObject
+@end

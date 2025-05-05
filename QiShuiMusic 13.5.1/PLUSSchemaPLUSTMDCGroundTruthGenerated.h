@@ -1,0 +1,35 @@
+@interface PLUSSchemaPLUSTMDCGroundTruthGenerated : SISchemaInstrumentationMessage
+@property (nonatomic) SISchemaUUID originalPlusId;
+@property (nonatomic) BOOL hasOriginalPlusId;
+@property (nonatomic) PLUSSchemaPLUSTMDCGroundTruth groundTruth;
+@property (nonatomic) BOOL hasGroundTruth;
+@property (nonatomic) SISchemaUUID originalRequestId;
+@property (nonatomic) BOOL hasOriginalRequestId;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (BOOL)hasOriginalRequestId;
+- (void)deleteOriginalRequestId;
+- (id)originalRequestId;
+- (void)setOriginalRequestId:;
+- (void)setHasOriginalRequestId:;
+- (BOOL)hasOriginalPlusId;
+- (void)deleteOriginalPlusId;
+- (BOOL)hasGroundTruth;
+- (void)deleteGroundTruth;
+- (id)originalPlusId;
+- (void)setOriginalPlusId:;
+- (id)groundTruth;
+- (void)setGroundTruth:;
+- (void)setHasOriginalPlusId:;
+- (void)setHasGroundTruth:;
+@end

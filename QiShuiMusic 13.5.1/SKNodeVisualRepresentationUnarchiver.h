@@ -1,0 +1,2 @@
+@interface SKNodeVisualRepresentationUnarchiver : NSKeyedUnarchiver
+@end

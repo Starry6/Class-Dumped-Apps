@@ -1,0 +1,31 @@
+@interface UIKeyboardSyntheticTouch : NSObject
+@property (nonatomic) double timestamp;
+@property (nonatomic) q phase;
+@property (nonatomic) Q tapCount;
+@property (nonatomic) UIWindow window;
+@property (nonatomic) {CGPoint=dd} locationInWindow;
+@property (nonatomic) C _pathIndex;
+@property (nonatomic) C _pathIdentity;
+@property (nonatomic) float _pathMajorRadius;
+- (id)locationInWindow;
+- (long long)phase;
+- (void)setPhase:;
+- (void)setTimestamp:;
+- (id)locationInView:;
+- (void).cxx_destruct;
+- (double)timestamp;
+- (void)setWindow:;
+- (id)window;
+- (unsigned long long)tapCount;
+- (id)initWithPoint:timestamp:window:;
+- (id)previousLocationInView:;
+- (id)getLocationInWindow;
+- (void)setLocationInWindow:;
+- (void)_setLocationInWindow:resetPrevious:;
+- (void)setTapCount:;
+- (unsigned char)_pathIndex;
+- (unsigned char)_pathIdentity;
+- (float)_pathMajorRadius;
+- (void)set_pathMajorRadius:;
++ (id)syntheticTouchWithPoint:timestamp:window:;
+@end

@@ -1,0 +1,32 @@
+@interface IESStore : NSObject
+@property (nonatomic) <IESStoreObserver> observer;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didFailTransaction:queue:error:;
+- (void)addPayment:orderIdentifier:paymentType:success:failure:;
+- (void)addPayment:orderIdentifier:success:failure:;
+- (void)addTransactionObsever;
+- (void)didPurchaseTransaction:queue:;
+- (void)didRestoreTransaction:queue:;
+- (void)removeProductsRequestDelegate:;
+- (void)removeTransactionObserver;
+- (void)requestProducts:success:failure:;
+- (void)restoreTransactions:success:failure:;
+- (void)restoreTransactionsSuccess:failure:;
+- (id)init;
+- (void)dealloc;
+- (void)finishTransaction:;
+- (void)paymentQueue:updatedTransactions:;
+- (void)setObserver:;
+- (void).cxx_destruct;
+- (id)observer;
+- (void)paymentQueue:restoreCompletedTransactionsFailedWithError:;
+- (void)paymentQueueRestoreCompletedTransactionsFinished:;
+- (BOOL)paymentQueue:shouldAddStorePayment:forProduct:;
+- (void)addProduct:;
++ (id)defaultStore;
++ (BOOL)canMakePayments;
++ (id)receipt;
+@end

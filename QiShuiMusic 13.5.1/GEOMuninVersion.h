@@ -1,0 +1,34 @@
+@interface GEOMuninVersion : PBCodable
+@property (nonatomic) BOOL hasVersion;
+@property (nonatomic) I version;
+@property (nonatomic) NSMutableArray coverages;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (void)setHasVersion:;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (void)setVersion:;
+- (unsigned int)version;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (BOOL)hasVersion;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)coverages;
+- (void)setCoverages:;
+- (void)clearCoverages;
+- (void)addCoverage:;
+- (unsigned long long)coveragesCount;
+- (id)coverageAtIndex:;
++ (BOOL)isValid:;
++ (Class)coverageType;
+@end

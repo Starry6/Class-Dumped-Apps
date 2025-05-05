@@ -1,0 +1,35 @@
+@interface BUMSdkInitConfig : BUInterfaceBaseObject
+@property (nonatomic) BUMSdkInitConfig iteration;
+@property (nonatomic) BUMUserConfig userConfig;
+@property (nonatomic) NSString appID;
+@property (nonatomic) NSString appKey;
+@property (nonatomic) NSString name;
+@property (nonatomic) BOOL valid;
+@property (nonatomic) BOOL custom;
+@property (nonatomic) NSString customAdnClassName;
+@property (nonatomic) NSString customBannerAdapterClassName;
+@property (nonatomic) NSString customInterstitialAdapterClassName;
+@property (nonatomic) NSString customRewardedVideoAdapterClassName;
+@property (nonatomic) NSString customFullscreenVideoAdapterClassName;
+@property (nonatomic) NSString customSplashAdapterClassName;
+@property (nonatomic) NSString customNativeAdapterClassName;
+@property (nonatomic) NSString customDrawAdapterClassName;
+- (id)appKey;
+- (id)customAdnClassName;
+- (id)customBannerAdapterClassName;
+- (id)customDrawAdapterClassName;
+- (id)customFullscreenVideoAdapterClassName;
+- (id)customInterstitialAdapterClassName;
+- (id)customNativeAdapterClassName;
+- (id)customRewardedVideoAdapterClassName;
+- (id)customSplashAdapterClassName;
+- (id)userConfig;
+- (id)init;
+- (BOOL)valid;
+- (BOOL)custom;
+- (id)appID;
+- (void).cxx_destruct;
+- (id)name;
+- (void)setIteration:;
+- (id)iteration;
+@end

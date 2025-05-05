@@ -1,0 +1,37 @@
+@interface MPSRNNMatrixTrainingLayer : MPSKernel
+@property (nonatomic) BOOL propagateFullRecurrentRows;
+@property (nonatomic) Q inputFeatureChannels;
+@property (nonatomic) Q outputFeatureChannels;
+@property (nonatomic) BOOL storeAllIntermediateStates;
+@property (nonatomic) BOOL recurrentOutputIsTemporary;
+@property (nonatomic) BOOL trainingStateIsTemporary;
+@property (nonatomic) BOOL accumulateWeightGradients;
+- (id)initWithCoder:device:;
+- (id)copyWithZone:device:;
+- (void)dealloc;
+- (void)encodeWithCoder:;
+- (unsigned long long)outputFeatureChannels;
+- (unsigned long long)inputFeatureChannels;
+- (void)encodeCopyWeightsToCommandBuffer:weights:matrixId:matrix:copyFromWeightsToMatrix:matrixOffset:;
+- (void)encodeForwardSequenceToCommandBuffer:sourceMatrices:destinationMatrices:trainingStates:weights:;
+- (void)encodeForwardSequenceToCommandBuffer:sourceMatrices:sourceOffsets:destinationMatrices:destinationOffsets:trainingStates:recurrentInputState:recurrentOutputStates:weights:;
+- (void)createWeightGradientMatrices:dataType:;
+- (void)createWeightMatrices:;
+- (void)encodeGradientSequenceToCommandBuffer:forwardSources:forwardSourceOffsets:sourceGradients:sourceGradientOffsets:destinationGradients:destinationOffsets:weightGradients:trainingStates:recurrentInputState:recurrentOutputStates:weights:;
+- (void)encodeGradientSequenceToCommandBuffer:forwardSources:sourceGradients:destinationGradients:weightGradients:trainingStates:weights:;
+- (id)initWithDevice:rnnDescriptor:trainableWeights:;
+- (id)temporaryRecurrentStateForCommandBuffer:batchSize:forGradientPass:;
+- (void)setPropagateFullRecurrentRows:;
+- (void)setRecurrentOutputIsTemporary:;
+- (BOOL)recurrentOutputIsTemporary;
+- (BOOL)storeAllIntermediateStates;
+- (void)setStoreAllIntermediateStates:;
+- (BOOL)propagateFullRecurrentRows;
+- (void)createTemporaryWeightGradientMatrices:dataType:commandBuffer:;
+- (id)recurrentStateForBatchSize:forGradientPass:;
+- (BOOL)trainingStateIsTemporary;
+- (void)setTrainingStateIsTemporary:;
+- (BOOL)accumulateWeightGradients;
+- (void)setAccumulateWeightGradients:;
++ (id)libraryInfo:;
+@end

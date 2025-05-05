@@ -1,0 +1,37 @@
+@interface IESECRelationTagListModel : MTLModel
+@property (nonatomic) NSArray tagContainers;
+@property (nonatomic) IESECRelationTagListUIConfig listUI;
+@property (nonatomic) q overLengthStrategy;
+@property (nonatomic) NSString showEventName;
+@property (nonatomic) NSString clickEventName;
+@property (nonatomic) NSDictionary showEventParams;
+@property (nonatomic) NSDictionary clickEventParams;
+@property (nonatomic) NSDictionary extraInfo;
+@property (nonatomic) IESECRelationClickAction clickAction;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setClickAction:;
+- (id)showEventParams;
+- (id)clickAction;
+- (id)clickEventName;
+- (id)clickEventParams;
+- (id)listUI;
+- (long long)overLengthStrategy;
+- (void)setClickEventName:;
+- (void)setClickEventParams:;
+- (void)setExtraInfo:;
+- (void)setListUI:;
+- (void)setOverLengthStrategy:;
+- (void)setShowEventName:;
+- (void)setShowEventParams:;
+- (void)setTagContainers:;
+- (id)showEventName;
+- (id)tagContainers;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (id)extraInfo;
++ (id)tagContainersJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

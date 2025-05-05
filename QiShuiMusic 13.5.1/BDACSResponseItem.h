@@ -1,0 +1,31 @@
+@interface BDACSResponseItem : NSObject
+@property (nonatomic) NSMutableData mData;
+@property (nonatomic) NSString strTaskAddr;
+@property (nonatomic) NSString fileName;
+@property (nonatomic) NSString url;
+@property (nonatomic) NSString mimeType;
+@property (nonatomic) BDACSWebLoadingState loadingState;
+@property (nonatomic) NSString jumpURLString;
+@property (nonatomic) NSString webURLString;
+- (void)setStrTaskAddr:;
+- (void)appendData:forKey:;
+- (id)jumpURLString;
+- (void)setJumpURLString:;
+- (void)setMData:;
+- (void)setWebURLString:;
+- (id)strTaskAddr;
+- (id)webURLString;
+- (id)url;
+- (id)fileName;
+- (id)responseData;
+- (void)setUrl:;
+- (id)mimeType;
+- (void).cxx_destruct;
+- (void)setFileName:;
+- (void)setMimeType:;
+- (void)clearData;
+- (id)loadingState;
+- (void)setLoadingState:;
+- (id)mData;
++ (id)generateItemWithTaskKey:;
+@end

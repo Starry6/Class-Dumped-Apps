@@ -1,0 +1,38 @@
+@interface HMDBaseModule : NSObject
+@property (nonatomic) HMModuleConfig config;
+@property (nonatomic) HMDHeimdallrConfig heimdallrConfig;
+@property (nonatomic) <HMDStoreIMP> database;
+@property (nonatomic) NSMutableArray operationRecords;
+@property (nonatomic) NSArray debugRealCondition;
+@property (nonatomic) q recordThreadShareMask;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)heimdallrConfig;
+- (void)reportHeimdallrNeedUploadedData;
+- (id)conditionArrayWithTableName:;
+- (id)dataBaseTableMap;
+- (void)dataDidReportSuccess:;
+- (id)debugRealCondition;
+- (id)fetchDataFromDatabase;
+- (id)getDataWithParam:;
+- (void)migrateBack;
+- (void)migrateForward;
+- (id)operationRecords;
+- (long long)recordThreadShareMask;
+- (void)removeDataWithParam:;
+- (void)removeHeimdallrExpiredData;
+- (void)reportData:callback:;
+- (void)setDebugRealCondition:;
+- (void)setHeimdallrConfig:;
+- (void)setOperationRecords:;
+- (void)setRecordThreadShareMask:;
+- (BOOL)shouldCareEnableUpload:;
+- (id)init;
+- (void)setConfig:;
+- (void)setDatabase:;
+- (void).cxx_destruct;
+- (id)config;
+- (id)database;
+@end

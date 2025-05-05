@@ -1,0 +1,31 @@
+@interface IESECLiveAnchorFlashSaleAuthModel : IESECLiveApiBaseModel
+@property (nonatomic) NSNumber isAuth;
+@property (nonatomic) BOOL isOpen;
+@property (nonatomic) NSString shopID;
+@property (nonatomic) NSString lastCategoryName;
+@property (nonatomic) NSString lastCategoryCids;
+@property (nonatomic) BOOL purchaseReturn;
+@property (nonatomic) NSDictionary lastProperties;
+@property (nonatomic) BOOL skuAuth;
+@property (nonatomic) NSNumber lastSKUState;
+- (BOOL)skuAuth;
+- (id)isAuth;
+- (id)lastCategoryCids;
+- (id)lastCategoryName;
+- (id)lastProperties;
+- (id)lastSKUState;
+- (BOOL)purchaseReturn;
+- (void)setIsAuth:;
+- (void)setLastCategoryCids:;
+- (void)setLastCategoryName:;
+- (void)setLastProperties:;
+- (void)setLastSKUState:;
+- (void)setPurchaseReturn:;
+- (void)setShopID:;
+- (void)setSkuAuth:;
+- (id)shopID;
+- (BOOL)isOpen;
+- (void)setIsOpen:;
+- (void).cxx_destruct;
++ (id)JSONKeyPathsByPropertyKey;
+@end

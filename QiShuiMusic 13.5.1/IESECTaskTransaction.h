@@ -1,0 +1,32 @@
+@interface IESECTaskTransaction : NSObject
+@property (nonatomic) @? block;
+@property (nonatomic) @ target;
+@property (nonatomic) : selector;
+@property (nonatomic) @ object1;
+@property (nonatomic) @ object2;
+@property (nonatomic) q numberOfArgs;
+@property (nonatomic) double timestamp;
+- (long long)numberOfArgs;
+- (void)setNumberOfArgs:;
+- (void)setObject1:;
+- (void)setObject2:;
+- (void)commit;
+- (SEL)selector;
+- (id)block;
+- (id)init;
+- (void)setSelector:;
+- (unsigned long long)hash;
+- (void)setTarget:;
+- (void)setTimestamp:;
+- (void).cxx_destruct;
+- (id)target;
+- (double)timestamp;
+- (void)setBlock:;
+- (BOOL)isEqual:;
+- (id)object1;
+- (id)object2;
++ (id)transactionWithTarget:selector:;
++ (id)transactionWithTarget:selector:object1:object2:;
++ (id)transactionWithTarget:selector:object:;
++ (id)transactionWithBlock:;
+@end

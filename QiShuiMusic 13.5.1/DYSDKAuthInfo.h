@@ -1,0 +1,35 @@
+@interface DYSDKAuthInfo : NSObject
+@property (nonatomic) NSString accessToken;
+@property (nonatomic) NSString refreshToken;
+@property (nonatomic) NSString scopes;
+@property (nonatomic) NSString openId;
+@property (nonatomic) double lastModified;
+@property (nonatomic) double expiresIn;
+@property (nonatomic) double refreshTokenExpiresIn;
+@property (nonatomic) double expiresTimestamp;
+@property (nonatomic) double refreshTokenExpiresTimestamp;
+- (double)expiresTimestamp;
+- (id)openId;
+- (double)refreshTokenExpiresIn;
+- (double)refreshTokenExpiresTimestamp;
+- (void)setExpiresTimestamp:;
+- (void)setOpenId:;
+- (void)setRefreshTokenExpiresIn:;
+- (void)setRefreshTokenExpiresTimestamp:;
+- (double)lastModified;
+- (void)setLastModified:;
+- (BOOL)isExpired;
+- (id)scopes;
+- (id)initWithCoder:;
+- (id)accessToken;
+- (void)encodeWithCoder:;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (id)refreshToken;
+- (void)setScopes:;
+- (id)copyWithZone:;
+- (void)setAccessToken:;
+- (double)expiresIn;
+- (void)setExpiresIn:;
+- (void)setRefreshToken:;
+@end

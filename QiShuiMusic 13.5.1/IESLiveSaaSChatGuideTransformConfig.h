@@ -1,0 +1,33 @@
+@interface IESLiveSaaSChatGuideTransformConfig : NSObject
+@property (nonatomic) q position;
+@property (nonatomic) q guide_style;
+@property (nonatomic) q pop_show_duration;
+@property (nonatomic) NSString pop_guide_text;
+@property (nonatomic) q sweep_times;
+@property (nonatomic) q intent_reco_type;
+@property (nonatomic) q limit_per_launch;
+@property (nonatomic) q limit_per_day;
+@property (nonatomic) NSDictionary arrow_icon;
+@property (nonatomic) BOOL disable_after_press;
+- (void)setGuide_style:;
+- (void)setSweep_times:;
+- (id)arrow_icon;
+- (BOOL)disable_after_press;
+- (long long)guide_style;
+- (long long)intent_reco_type;
+- (long long)limit_per_day;
+- (long long)limit_per_launch;
+- (id)pop_guide_text;
+- (long long)pop_show_duration;
+- (void)setArrow_icon:;
+- (void)setDisable_after_press:;
+- (void)setIntent_reco_type:;
+- (void)setLimit_per_day:;
+- (void)setLimit_per_launch:;
+- (void)setPop_guide_text:;
+- (void)setPop_show_duration:;
+- (long long)sweep_times;
+- (void)setPosition:;
+- (long long)position;
+- (void).cxx_destruct;
+@end

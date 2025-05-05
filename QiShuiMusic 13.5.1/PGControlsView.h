@@ -1,0 +1,30 @@
+@interface PGControlsView : PGLayoutContainerView
+@property (nonatomic) BOOL prefersControlsHidden;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)updateProgress;
+- (void)dealloc;
+- (void)layoutSubviews;
+- (void)_setContinuousCornerRadius:;
+- (id)initWithCoder:;
+- (id)hitTest:withEvent:;
+- (void).cxx_destruct;
+- (void)didMoveToWindow;
+- (void)buttonViewDidReceiveTouchUpInside:;
+- (id)buttonView:imageRectForContentRect:proposedRect:;
+- (id)buttonView:titleRectForContentRect:proposedRect:;
+- (id)buttonView:contentEdgeInsetsForProposedInsets:;
+- (id)initWithFrame:viewModel:;
+- (id)PG_backdropGroupLeader;
+- (BOOL)PG_preferredVisibilityForView:;
+- (void)viewModelDidUpdateValuesFromOldValues:;
+- (void)updateControlsAlpha;
+- (void)updateControlsHidden;
+- (void)setPrefersControlsHidden:;
+- (id)_prerollIndicatorFrameWithScaling:;
+- (id)_progressIndicatorFrameWithScaling:;
+- (BOOL)_showsDimmingView;
+- (BOOL)prefersControlsHidden;
+@end

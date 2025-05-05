@@ -1,0 +1,38 @@
+@interface IESLiveSaaSOfficialChannelInfo : BDDynamicMTLModel
+@property (nonatomic) IESLiveSaaSUserModel channelUser;
+@property (nonatomic) IESLiveSaaSUserModel originRoomOwner;
+@property (nonatomic) NSString channelName;
+@property (nonatomic) NSString channelIntro;
+@property (nonatomic) NSNumber endTimestamp;
+@property (nonatomic) NSNumber forbiddenBeforeEnd;
+@property (nonatomic) NSNumber currentShowID;
+@property (nonatomic) NSNumber maxEnterTime;
+@property (nonatomic) NSNumber maxNextTime;
+@property (nonatomic) NSDictionary delayEnterTime;
+@property (nonatomic) IESLiveSaaSUserModel livingUser;
+@property (nonatomic) q backupRoomId;
+@property (nonatomic) BOOL hostPermission;
+@property (nonatomic) BOOL enableHost;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)backupRoomId;
+- (id)channelIntro;
+- (id)currentShowID;
+- (id)delayEnterTime;
+- (BOOL)enableHost;
+- (id)forbiddenBeforeEnd;
+- (BOOL)hostPermission;
+- (id)livingUser;
+- (id)maxEnterTime;
+- (id)maxNextTime;
+- (void)setBackupRoomId:;
+- (void)setEnableHost:;
+- (void)setHostPermission:;
+- (void)setLivingUser:;
+- (id)endTimestamp;
+- (id)channelName;
+- (void).cxx_destruct;
++ (id)JSONKeyPathsByPropertyKey;
+@end

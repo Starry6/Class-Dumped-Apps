@@ -1,0 +1,2 @@
+@interface IESLiveLinkMicLinkmicChangeMultiPkModeTabApiRoot : GPBRootObject
+@end

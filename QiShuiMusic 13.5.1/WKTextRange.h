@@ -1,0 +1,32 @@
+@interface WKTextRange : UITextRange
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} startRect;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} endRect;
+@property (nonatomic) BOOL isNone;
+@property (nonatomic) BOOL isRange;
+@property (nonatomic) BOOL isEditable;
+@property (nonatomic) Q selectedTextLength;
+@property (nonatomic) NSArray selectionRects;
+- (id)end;
+- (BOOL)isEmpty;
+- (void)dealloc;
+- (void)setIsEditable:;
+- (id)start;
+- (BOOL)isEditable;
+- (id)selectionRects;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)startRect;
+- (id)endRect;
+- (void)setStartRect:;
+- (void)setEndRect:;
+- (BOOL)_isCaret;
+- (BOOL)_isRanged;
+- (BOOL)isNone;
+- (void)setIsNone:;
+- (BOOL)isRange;
+- (void)setIsRange:;
+- (unsigned long long)selectedTextLength;
+- (void)setSelectedTextLength:;
+- (void)setSelectionRects:;
++ (id)textRangeWithState:isRange:isEditable:startRect:endRect:selectionRects:selectedTextLength:;
+@end

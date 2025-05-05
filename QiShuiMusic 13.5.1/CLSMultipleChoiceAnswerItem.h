@@ -1,0 +1,32 @@
+@interface CLSMultipleChoiceAnswerItem : CLSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSString itemText;
+@property (nonatomic) q displayOrder;
+@property (nonatomic) NSArray assets;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithText:;
+- (id)assets;
+- (void)setDisplayOrder:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)_init;
+- (long long)displayOrder;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)itemText;
+- (void)mergeWithObject:;
+- (void)addAsset:;
+- (void)removeAsset:;
+- (void)setItemText:;
+- (BOOL)assetsEqual:;
++ (BOOL)supportsSecureCoding;
++ (id)relations;
+@end

@@ -1,0 +1,31 @@
+@interface UIPrinterTableViewCell : UITableViewCell
+@property (nonatomic) NSInteger printerState;
+@property (nonatomic) PKPrinter printer;
+@property (nonatomic) @ delegate;
+@property (nonatomic) BOOL checked;
+@property (nonatomic) UIPrinterAccessoryView printerAccessoryView;
+@property (nonatomic) UIGestureRecognizer expandedAccessoryTapRecognizer;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)printer;
+- (id)initWithStyle:reuseIdentifier:;
+- (void)layoutSubviews;
+- (void)setDelegate:;
+- (void)prepareForReuse;
+- (id)delegate;
+- (BOOL)checked;
+- (void).cxx_destruct;
+- (BOOL)gestureRecognizer:shouldReceiveTouch:;
+- (void)setChecked:;
+- (void)setPrinter:;
+- (void)printerAccessoryViewInfoButtonPressed:;
+- (void)setPrinterState:;
+- (int)printerState;
+- (void)expandedAccessoryAreaTapped;
+- (id)printerAccessoryView;
+- (void)setPrinterAccessoryView:;
+- (id)expandedAccessoryTapRecognizer;
+- (void)setExpandedAccessoryTapRecognizer:;
+@end

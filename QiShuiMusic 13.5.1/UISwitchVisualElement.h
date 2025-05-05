@@ -1,0 +1,32 @@
+@interface UISwitchVisualElement : UIView
+@property (nonatomic) double enabledAlpha;
+@property (nonatomic) BOOL enabled;
+@property (nonatomic) NSString title;
+@property (nonatomic) <UISwitchControl> switchControl;
+@property (nonatomic) UIImpactFeedbackGenerator impactFeedbackGenerator;
+- (void)_intrinsicContentSizeInvalidatedForChildView:;
+- (void)setOnTintColor:;
+- (void)setThumbTintColor:;
+- (void)setSwitchControl:;
+- (BOOL)enabled;
+- (void)setOffImage:;
+- (void)setTitle:;
+- (void)tintColorDidChange;
+- (id)initWithFrame:;
+- (id)title;
+- (void)setEnabled:;
+- (void).cxx_destruct;
+- (void)setTintColor:;
+- (void)setOn:animated:;
+- (id)preferredContentSize;
+- (void)setShowsOnOffLabel:;
+- (void)setOnImage:;
+- (id)impactFeedbackGenerator;
+- (id)switchControl;
+- (void)setImpactFeedbackGenerator:;
+- (double)enabledAlpha;
+- (void)setEnabledAlpha:;
++ (BOOL)isFixedSize;
++ (id)preferredAlignmentRectInsets;
++ (id)preferredContentSize;
+@end

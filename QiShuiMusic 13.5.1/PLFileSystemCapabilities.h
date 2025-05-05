@@ -1,0 +1,37 @@
+@interface PLFileSystemCapabilities : NSObject
+@property (nonatomic) BOOL isReadOnly;
+@property (nonatomic) BOOL isCloneCapable;
+@property (nonatomic) BOOL isWholeFileLockCapable;
+@property (nonatomic) BOOL isGenCountCapable;
+@property (nonatomic) BOOL isSecludeRenameCapable;
+@property (nonatomic) BOOL isLocalVolume;
+@property (nonatomic) BOOL isInternalVolume;
+@property (nonatomic) BOOL isRootFileSystemVolume;
+@property (nonatomic) BOOL supportsDataProtection;
+@property (nonatomic) NSString fileSystemTypeName;
+@property (nonatomic) BOOL isNetworkVolume;
+@property (nonatomic) BOOL isCentralizedCacheDeleteCapable;
+@property (nonatomic) BOOL isCoreDataCapable;
+@property (nonatomic) BOOL isCloudPhotoLibraryCapable;
+@property (nonatomic) BOOL isValid;
+@property (nonatomic) NSError error;
+- (BOOL)isReadOnly;
+- (BOOL)isCloneCapable;
+- (BOOL)determineCapabilitiesWithURL:error:;
+- (BOOL)isInternalVolume;
+- (id)error;
+- (BOOL)isNetworkVolume;
+- (BOOL)isWholeFileLockCapable;
+- (BOOL)isRootFileSystemVolume;
+- (BOOL)isCentralizedCacheDeleteCapable;
+- (BOOL)supportsDataProtection;
+- (BOOL)isValid;
+- (void).cxx_destruct;
+- (BOOL)isLocalVolume;
+- (id)description;
+- (id)fileSystemTypeName;
+- (BOOL)isSecludeRenameCapable;
+- (BOOL)isGenCountCapable;
++ (unsigned long long)minimumAvailableBytesRequiredForLibraryOpen;
++ (id)capabilitiesWithURL:;
+@end

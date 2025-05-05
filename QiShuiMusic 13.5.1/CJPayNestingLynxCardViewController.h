@@ -1,0 +1,37 @@
+@interface CJPayNestingLynxCardViewController : CJPayFullPageBaseViewController
+@property (nonatomic) NSDictionary data;
+@property (nonatomic) NSString schema;
+@property (nonatomic) CJPayBaseLynxView lynxCard;
+@property (nonatomic) BOOL haveReciveSuccess;
+@property (nonatomic) BOOL haveShowError;
+@property (nonatomic) @? eventBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)lynxView:receiveEvent:withData:;
+- (void)viewDidLoadFailedWithUrl:error:;
+- (BOOL)cjNeedAnimation;
+- (BOOL)cjShouldShowBottomView;
+- (BOOL)haveReciveSuccess;
+- (BOOL)haveShowError;
+- (id)initWithSchema:data:;
+- (id)lynxCard;
+- (BOOL)p_conformTimeInterval:;
+- (void)p_handleOpenError;
+- (void)p_judgeOpenStatus;
+- (void)setHaveReciveSuccess:;
+- (void)setHaveShowError:;
+- (void)setLynxCard:;
+- (void)viewDidFinishLoadWithError:;
+- (void)viewDidRecieveError:;
+- (id)schema;
+- (id)data;
+- (void)setSchema:;
+- (void)setEventBlock:;
+- (void).cxx_destruct;
+- (void)setData:;
+- (id)eventBlock;
+- (void)viewDidLoad;
+- (void)setupUI;
+@end

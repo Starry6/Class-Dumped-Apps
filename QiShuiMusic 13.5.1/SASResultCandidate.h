@@ -1,0 +1,32 @@
+@interface SASResultCandidate : SABaseClientBoundCommand
+@property (nonatomic) NSNumber latticeRnnMitigatorCalibrationOffset;
+@property (nonatomic) NSNumber latticeRnnMitigatorCalibrationScale;
+@property (nonatomic) double latticeRnnMitigatorScore;
+@property (nonatomic) double latticeRnnMitigatorThreshold;
+@property (nonatomic) NSNumber processedAudioDuration;
+@property (nonatomic) SASRecognition recognition;
+@property (nonatomic) NSString resultId;
+@property (nonatomic) NSString speechRecognitionTask;
+- (id)groupIdentifier;
+- (BOOL)requiresResponse;
+- (id)encodedClassName;
+- (id)recognition;
+- (id)resultId;
+- (void)setResultId:;
+- (id)processedAudioDuration;
+- (BOOL)mutatingCommand;
+- (void)setProcessedAudioDuration:;
+- (void)setRecognition:;
+- (id)latticeRnnMitigatorCalibrationOffset;
+- (void)setLatticeRnnMitigatorCalibrationOffset:;
+- (id)latticeRnnMitigatorCalibrationScale;
+- (void)setLatticeRnnMitigatorCalibrationScale:;
+- (double)latticeRnnMitigatorScore;
+- (void)setLatticeRnnMitigatorScore:;
+- (double)latticeRnnMitigatorThreshold;
+- (void)setLatticeRnnMitigatorThreshold:;
+- (id)speechRecognitionTask;
+- (void)setSpeechRecognitionTask:;
++ (id)resultCandidate;
++ (id)resultCandidateWithDictionary:context:;
+@end

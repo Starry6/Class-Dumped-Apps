@@ -1,0 +1,32 @@
+@interface GEOPreferenceEntity : PBCodable
+@property (nonatomic) BOOL hasChargingStationMuid;
+@property (nonatomic) Q chargingStationMuid;
+@property (nonatomic) BOOL hasChargeOnLegAfterUserWaypointId;
+@property (nonatomic) I chargeOnLegAfterUserWaypointId;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (unsigned long long)chargingStationMuid;
+- (void)setChargingStationMuid:;
+- (void)setHasChargingStationMuid:;
+- (BOOL)hasChargingStationMuid;
+- (unsigned int)chargeOnLegAfterUserWaypointId;
+- (void)setChargeOnLegAfterUserWaypointId:;
+- (void)setHasChargeOnLegAfterUserWaypointId:;
+- (BOOL)hasChargeOnLegAfterUserWaypointId;
++ (BOOL)isValid:;
+@end

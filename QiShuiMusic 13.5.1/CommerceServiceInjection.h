@@ -1,0 +1,2 @@
+@interface CommerceServiceInjection : NSObject
+@end

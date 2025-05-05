@@ -1,0 +1,31 @@
+@interface VNPersonsModelConfiguration : NSObject
+@property (nonatomic) VNPersonsModelAlgorithm algorithm;
+@property (nonatomic) Q maximumIdentities;
+@property (nonatomic) Q maximumTrainingFaceprintsPerIdentity;
+@property (nonatomic) Q faceprintRequestRevision;
+- (id)algorithm;
+- (id)init;
+- (int)faceID3ModelMaximumIDs;
+- (int)faceID3ModelMaximumElementsPerID;
+- (int)faceID3IndexMode;
+- (unsigned long long)faceprintRequestRevision;
+- (void)setAlgorithm:;
+- (void)setMaximumTrainingFaceprintsPerIdentity:;
+- (id)algorithmOfClass:error:;
+- (id)resolvedAlgorithmAndReturnError:;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (unsigned long long)maximumIdentities;
+- (void)setFaceprintRequestRevision:;
+- (void).cxx_destruct;
+- (id)description;
+- (void)setMaximumIdentities:;
+- (int)faceID2ModelMaximumElementsPerID;
+- (int)faceID3ModelSeed;
+- (unsigned long long)maximumTrainingFaceprintsPerIdentity;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
++ (BOOL)supportsSecureCoding;
++ (unsigned long long)maximumAllowableFaceprintsPerIdentity;
++ (unsigned long long)maximumAllowableIdentities;
+@end

@@ -1,0 +1,30 @@
+@interface CNStarkContactAddressPropertyCell : CNPropertyPostalAddressCell
+@property (nonatomic) CNStarkActionView actionView;
+@property (nonatomic) NSLayoutConstraint labelViewFirstBaselineAnchorConstraint;
+@property (nonatomic) NSLayoutConstraint valueViewFirstBaselineAnchorConstraint;
+@property (nonatomic) NSLayoutConstraint contentViewBottomAnchorConstraint;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithStyle:reuseIdentifier:;
+- (void).cxx_destruct;
+- (void)setSeparatorStyle:;
+- (void)didUpdateFocusInContext:withAnimationCoordinator:;
+- (id)actionView;
+- (id)variableConstraints;
+- (id)constantConstraints;
+- (void)performDefaultAction;
+- (id)contentViewBottomAnchorConstraint;
+- (void)setContentViewBottomAnchorConstraint:;
+- (void)_cnui_applyContactStyle;
+- (void)actionViewTapped:;
+- (BOOL)supportsTintColorValue;
+- (BOOL)shouldShowStar;
+- (void)updateTransportButtons;
+- (BOOL)supportsValueColorUsesLabelColor;
+- (id)labelViewFirstBaselineAnchorConstraint;
+- (void)setLabelViewFirstBaselineAnchorConstraint:;
+- (id)valueViewFirstBaselineAnchorConstraint;
+- (void)setValueViewFirstBaselineAnchorConstraint:;
+@end

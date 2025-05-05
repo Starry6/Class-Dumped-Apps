@@ -1,0 +1,30 @@
+@interface CNContactListDuplicatesBannerCell : UICollectionViewListCell
+@property (nonatomic) Q state;
+@property (nonatomic) q duplicatesCount;
+@property (nonatomic) CNContactListDuplicatesBannerView duplicatesBannerView;
+@property (nonatomic) <CNContactListDuplicatesBannerCellDelegate> delegate;
+@property (nonatomic) CNContactListStyleApplier contactListStyleApplier;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)contactListStyleApplier;
+- (void)setState:;
+- (void)setDelegate:;
+- (id)initWithFrame:;
+- (unsigned long long)state;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setContactListStyleApplier:;
+- (void)duplicatesBannerViewDidTapDismiss:;
+- (void)duplicatesBannerViewDidTapViewDuplicates:;
+- (void)updateWithState:;
+- (void)updateWithDuplicatesFoundBannerWithCount:;
+- (void)removeBannerView;
+- (void)updateWithCount:;
+- (void)updateText:;
+- (long long)duplicatesCount;
+- (void)setDuplicatesCount:;
+- (id)duplicatesBannerView;
+- (void)setDuplicatesBannerView:;
+@end

@@ -1,0 +1,34 @@
+@interface GEORPProblemStatusResponse : PBCodable
+@property (nonatomic) BOOL hasStatusCode;
+@property (nonatomic) NSInteger statusCode;
+@property (nonatomic) NSMutableArray problemStatus;
+- (void)readAll:;
+- (void)setStatusCode:;
+- (BOOL)hasGreenTeaWithValue:;
+- (int)statusCode;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setHasStatusCode:;
+- (BOOL)hasStatusCode;
+- (id)statusCodeAsString:;
+- (int)StringAsStatusCode:;
+- (id)problemStatus;
+- (void)setProblemStatus:;
+- (void)clearProblemStatus;
+- (void)addProblemStatus:;
+- (unsigned long long)problemStatusCount;
+- (id)problemStatusAtIndex:;
++ (BOOL)isValid:;
++ (Class)problemStatusType;
+@end

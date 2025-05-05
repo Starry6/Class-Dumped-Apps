@@ -1,0 +1,31 @@
+@interface CJPayPopAnimator : UIPercentDrivenInteractiveTransition
+@property (nonatomic) <UIViewControllerContextTransitioning> interactiveContext;
+@property (nonatomic) UIView interactiveMaskView;
+@property (nonatomic) BOOL isInteractive;
+@property (nonatomic) CJPayNavigationController naviViewController;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)interactiveContext;
+- (id)interactiveMaskView;
+- (id)naviViewController;
+- (void)p_finishTransitionWithContext:;
+- (BOOL)p_navHasFullPageVC:;
+- (void)p_popHalfVCWithTransitionContext:fromVC:toVC:completion:;
+- (void)p_popPopUpVCWithShareView:transitionContext:completion:;
+- (void)p_popWithTransitionContext:shareView:;
+- (void)setInteractiveContext:;
+- (void)setInteractiveMaskView:;
+- (void)setNaviViewController:;
+- (void)animateTransition:;
+- (BOOL)isInteractive;
+- (double)transitionDuration:;
+- (void)handleGesture:;
+- (void)updateInteractiveTransition:;
+- (void)cancelInteractiveTransition;
+- (void)startInteractiveTransition:;
+- (void).cxx_destruct;
+- (void)finishInteractiveTransition;
+- (void)setIsInteractive:;
+@end

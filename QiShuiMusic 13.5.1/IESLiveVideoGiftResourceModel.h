@@ -1,0 +1,35 @@
+@interface IESLiveVideoGiftResourceModel : MTLModel
+@property (nonatomic) Q currentOrientation;
+@property (nonatomic) IESLiveVideoGiftResourceInfo portraitResourceInfo;
+@property (nonatomic) IESLiveVideoGiftResourceInfo landscapeResourceInfo;
+@property (nonatomic) NSString directory;
+@property (nonatomic) IESLiveVideoGiftResourceInfo currentOrientationResourceInfo;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)prepareForMasks;
+- (void)buildFilePathForModel:;
+- (id)currentOrientationResourceInfo;
+- (id)genEdgeFromEdgeArray:;
+- (id)genPointFromPointArray:;
+- (id)genRectFromRectArray:;
+- (id)landscapeResourceInfo;
+- (id)portraitResourceInfo;
+- (void)pr_replenish;
+- (void)prepareForMultiVideoSource:;
+- (void)processMaskContainerModel:;
+- (void)processMaskDataModel:;
+- (void)processVideoLayerDataModel:;
+- (void)setCurrentOrientationResourceInfo:;
+- (void)setLandscapeResourceInfo:;
+- (void)setPortraitResourceInfo:;
+- (void)setDirectory:;
+- (id)directory;
+- (unsigned long long)currentOrientation;
+- (void).cxx_destruct;
+- (id)initWithDirectory:;
+- (void)setCurrentOrientation:;
++ (id)resourceModelFromDirectory:orientation:maskResourceDic:error:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

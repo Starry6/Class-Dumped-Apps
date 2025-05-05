@@ -1,0 +1,35 @@
+@interface INBusTrip : NSObject
+@property (nonatomic) NSString provider;
+@property (nonatomic) NSString busName;
+@property (nonatomic) NSString busNumber;
+@property (nonatomic) INDateComponentsRange tripDuration;
+@property (nonatomic) CLPlacemark departureBusStopLocation;
+@property (nonatomic) NSString departurePlatform;
+@property (nonatomic) CLPlacemark arrivalBusStopLocation;
+@property (nonatomic) NSString arrivalPlatform;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)_dictionaryRepresentation;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)provider;
+- (void)encodeWithCoder:;
+- (id)descriptionAtIndent:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)_intents_encodeWithJSONEncoder:codableDescription:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)arrivalPlatform;
+- (id)departurePlatform;
+- (id)tripDuration;
+- (id)arrivalBusStopLocation;
+- (id)busName;
+- (id)busNumber;
+- (id)departureBusStopLocation;
+- (id)initWithProvider:busName:busNumber:tripDuration:departureBusStopLocation:departurePlatform:arrivalBusStopLocation:arrivalPlatform:;
++ (id)_intents_decodeWithJSONDecoder:codableDescription:from:;
++ (BOOL)supportsSecureCoding;
+@end

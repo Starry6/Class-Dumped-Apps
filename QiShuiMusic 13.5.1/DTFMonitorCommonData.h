@@ -1,0 +1,31 @@
+@interface DTFMonitorCommonData : NSObject
+@property (nonatomic) NSString serviceLevel;
+@property (nonatomic) NSString beginTraceIDValue;
+@property (nonatomic) NSString verifyTraceIDValue;
+@property (nonatomic) NSString ocrTraceIDValue;
+@property (nonatomic) NSString beginTraceIDKey;
+@property (nonatomic) NSString verifyTraceIDKey;
+@property (nonatomic) NSString ocrTraceIDKey;
+- (id)ocrTraceIDValue;
+- (id)beginTraceIDKey;
+- (id)beginTraceIDValue;
+- (id)getBase64CommonMonitorData;
+- (id)getCommonMonitorData;
+- (long long)getIndex;
+- (id)ocrTraceIDKey;
+- (void)setBeginTraceIDKey:;
+- (void)setBeginTraceIDValue:;
+- (void)setOcrTraceIDKey:;
+- (void)setOcrTraceIDValue:;
+- (void)setVerifyTraceIDKey:;
+- (void)setVerifyTraceIDValue:;
+- (id)verifyTraceIDKey;
+- (id)verifyTraceIDValue;
+- (id)init;
+- (void)resetValue;
+- (void).cxx_destruct;
+- (id)getToken;
+- (id)serviceLevel;
+- (void)setServiceLevel:;
++ (id)getInstance;
+@end

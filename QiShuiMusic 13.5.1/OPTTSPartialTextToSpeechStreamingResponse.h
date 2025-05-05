@@ -1,0 +1,32 @@
+@interface OPTTSPartialTextToSpeechStreamingResponse : NSObject
+@property (nonatomic) NSString speech_id;
+@property (nonatomic) NSString session_id;
+@property (nonatomic) NSInteger error_code;
+@property (nonatomic) NSString error_str;
+@property (nonatomic) NSString stream_id;
+@property (nonatomic) NSInteger current_pkt_number;
+@property (nonatomic) NSData audio;
+@property (nonatomic) NSArray word_timing_info;
+@property (nonatomic) OPTTSTextToSpeechFeature feature;
+- (id)feature;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (id)audio;
+- (id)speech_id;
+- (id)session_id;
+- (id)stream_id;
+- (int)error_code;
+- (id)error_str;
+- (int)current_pkt_number;
+- (void)audio:;
+- (id)word_timing_info;
+- (id)flatbuffData;
+- (id)initWithFlatbuffData:;
+- (id)initAndVerifyWithFlatbuffData:;
+- (id)initWithFlatbuffData:root:;
+- (id)initWithFlatbuffData:root:verify:;
+- (id)addObjectToBuffer:;
+- (id)word_timing_info_objectAtIndex:;
+- (unsigned long long)word_timing_info_count;
+- (void)word_timing_info_enumerateObjectsUsingBlock:;
+@end

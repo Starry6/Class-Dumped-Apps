@@ -1,0 +1,38 @@
+@interface LynxCollectionScroller : NSObject
+@property (nonatomic) BOOL willScrollDown;
+@property (nonatomic) BOOL willScrollToInvisibleRect;
+@property (nonatomic) Q scrollPosition;
+@property (nonatomic) double offset;
+@property (nonatomic) BOOL sticky;
+@property (nonatomic) NSIndexPath targetIndexPath;
+@property (nonatomic) @? completion;
+@property (nonatomic) <LynxCollectionScrollerHolderDelegate> delegate;
+@property (nonatomic) BOOL horizontalLayout;
+- (void)collectionViewAdjustTargetContentOffsetAtNextRunloop:;
+- (void)collectionViewDidEndScrollingAnimation:;
+- (void)collectionViewStartScroll:animated:;
+- (void)collectionViewWillBeginDragging:;
+- (id)initWithTargetIndexPath:scrollDown:scrollToInvisibleRect:scrollPosition:offset:sticky:delegate:completion:;
+- (void)setWillScrollDown:;
+- (void)setWillScrollToInvisibleRect:;
+- (void)stopScroll;
+- (id)targetContentOffset:indexPath:offset:sticky:scrollPosition:;
+- (BOOL)willScrollDown;
+- (BOOL)willScrollToInvisibleRect;
+- (id)completion;
+- (void)setCompletion:;
+- (void)setOffset:;
+- (unsigned long long)scrollPosition;
+- (id)targetIndexPath;
+- (void)setHorizontalLayout:;
+- (void)setDelegate:;
+- (void)setTargetIndexPath:;
+- (double)offset;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setScrollPosition:;
+- (BOOL)horizontalLayout;
+- (BOOL)sticky;
+- (void)setSticky:;
+- (void)collectionViewDidScroll:;
+@end

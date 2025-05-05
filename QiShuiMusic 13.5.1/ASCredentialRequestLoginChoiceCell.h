@@ -1,0 +1,37 @@
+@interface ASCredentialRequestLoginChoiceCell : UITableViewCell
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString detailText;
+@property (nonatomic) UIImage iconImage;
+@property (nonatomic) BOOL isSelectedLoginChoice;
+- (void)setDetailText:;
+- (void)setTitle:;
+- (id)detailText;
+- (void)traitCollectionDidChange:;
+- (id)title;
+- (void)setIconImage:;
+- (void).cxx_destruct;
+- (id)iconImage;
+- (void)_updateAccessoryImageView;
+- (void)_setUpContent;
+- (id)initWithLoginChoice:presentationContext:authorizationProvider:;
+- (void)_setUpFormat;
+- (void)_configureImageViewForSymbolImage;
+- (void)_configureImageViewForAppIcon;
+- (BOOL)_shouldUseAppIconImageViewStyle;
+- (void)_configureIconImageStyle;
+- (id)_publicKeyCredentialImageForPresentationContext:;
+- (id)_titleForPublicKeyCredentialAssertionWithName:identifier:;
+- (id)_subtitleForPublicKeyCredentialAssertion;
+- (void)setIsSelectedLoginChoice:;
+- (id)_detailTextForPasswordLoginChoice:;
+- (id)_detailTextForPasswordLoginChoiceFromKeychain:;
+- (id)_detailTextForExternalPasswordLoginChoice:;
+- (id)_cableIcon;
+- (id)_defaultPasskeyIcon;
+- (void)_setUpAccessoryImageView;
+- (id)_emptyRadioButtonImage;
+- (id)_selectedRadioButtonImage;
+- (void)_updateLayoutForCurrentContentSizeCategory;
+- (double)_additionalLeadingSeparatorInset;
+- (BOOL)isSelectedLoginChoice;
+@end

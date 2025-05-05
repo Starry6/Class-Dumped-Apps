@@ -1,0 +1,32 @@
+@interface SISchemaAnyEvent : SISchemaInstrumentationMessage
+@property (nonatomic) NSInteger anyEventType;
+@property (nonatomic) BOOL hasAnyEventType;
+@property (nonatomic) NSData payload;
+@property (nonatomic) BOOL hasPayload;
+@property (nonatomic) NSData jsonData;
+- (id)payload;
+- (void)setPayload:;
+- (Class)topLevelUnionTypeClass;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (BOOL)hasPayload;
+- (int)anyEventType;
+- (id)initWithAnyEventType:payload:;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (void)willProduceDictionaryRepresentation:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void)unwrapMessageWithCompletion:;
+- (id)unwrap;
+- (void)setHasPayload:;
+- (BOOL)hasAnyEventType;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (void)deleteAnyEventType;
+- (BOOL)isEqual:;
+- (void)setHasAnyEventType:;
+- (void)setAnyEventType:;
+- (void)deletePayload;
+@end

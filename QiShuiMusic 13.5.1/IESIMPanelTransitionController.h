@@ -1,0 +1,32 @@
+@interface IESIMPanelTransitionController : IESIMPanelBaseTransitionController
+@property (nonatomic) BOOL dismissingInteractively;
+@property (nonatomic) BOOL allowsInteractiveDismissal;
+@property (nonatomic) q presentationOrientation;
+@property (nonatomic) UIPanGestureRecognizer interactivePanGestureRecognizer;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)interactivePanGestureRecognizer;
+- (void)beginInteractiveDismissal;
+- (id)finalFrameForPresentedViewController:transitionContext:;
+- (id)frameOriginForPresentedViewControllerInContainerView:;
+- (id)initialFrameForPresentedViewController:transitionContext:;
+- (BOOL)isDismissingInteractively;
+- (long long)presentationOrientation;
+- (void)presentedViewPanned:;
+- (void)setAllowsInteractiveDismissal:;
+- (void)setDismissingInteractively:;
+- (void)setPresentationOrientation:;
+- (id)animationControllerForPresentedController:presentingController:sourceController:;
+- (id)init;
+- (void)cancelInteractiveTransition;
+- (id)interactionControllerForDismissal:;
+- (id)presentationControllerForPresentedViewController:presentingViewController:sourceViewController:;
+- (void).cxx_destruct;
+- (void)finishInteractiveTransition;
+- (BOOL)gestureRecognizerShouldBegin:;
+- (unsigned long long)transitionAnimationOptions:;
+- (BOOL)allowsInteractiveDismissal;
++ (Class)presentationControllerClass;
+@end

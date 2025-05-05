@@ -1,0 +1,37 @@
+@interface UIPrinterSetupPINView : UIControl
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel enterLabel;
+@property (nonatomic) UIPasscodeField passcodeField;
+@property (nonatomic) UITextField textEntryField;
+@property (nonatomic) UILabel failedLabel;
+@property (nonatomic) UIImageView failedBackground;
+@property (nonatomic) q failedAttemptCount;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)failedAttemptCount;
+- (void)dealloc;
+- (void)setTitleLabel:;
+- (void)layoutSubviews;
+- (void)setFailedAttemptCount:;
+- (void)textDidChange:;
+- (id)sizeThatFits:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (id)passcodeField;
+- (void)setPasscodeField:;
+- (id)PIN;
+- (id)initWithPrinterName:;
+- (void)startPINInput;
+- (void)stopPINInput;
+- (void)showSuccess:;
+- (id)enterLabel;
+- (void)setEnterLabel:;
+- (id)textEntryField;
+- (void)setTextEntryField:;
+- (id)failedLabel;
+- (void)setFailedLabel:;
+- (id)failedBackground;
+- (void)setFailedBackground:;
+@end

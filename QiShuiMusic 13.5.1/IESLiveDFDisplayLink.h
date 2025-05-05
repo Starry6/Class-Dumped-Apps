@@ -1,0 +1,37 @@
+@interface IESLiveDFDisplayLink : NSObject
+@property (nonatomic) @? iesLiveDFInvokeBlock;
+@property (nonatomic) double timestamp;
+@property (nonatomic) double duration;
+@property (nonatomic) BOOL paused;
+@property (nonatomic) q preferredFramesPerSecond;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) q state;
+@property (nonatomic) q frameRateType;
+@property (nonatomic) q framesPerSecond;
+- (long long)frameRateType;
+- (id)iesLiveDFInvokeBlock;
+- (void)iesLiveDF_handleDispLink:;
+- (id)iesLive_displayLinkWithBlock:;
+- (void)setIesLiveDFInvokeBlock:;
+- (void)updateTime:;
+- (void)start;
+- (void)setPreferredFramesPerSecond:;
+- (void)stop;
+- (long long)preferredFramesPerSecond;
+- (void)prepare;
+- (BOOL)isPaused;
+- (void)setPaused:;
+- (void)resume;
+- (long long)state;
+- (void).cxx_destruct;
+- (double)timestamp;
+- (void)pause;
+- (id)initWithTarget:selector:;
+- (double)duration;
+- (void)invalidate;
+- (long long)framesPerSecond;
+- (id)displayLinkWithTarget:selector:;
+@end

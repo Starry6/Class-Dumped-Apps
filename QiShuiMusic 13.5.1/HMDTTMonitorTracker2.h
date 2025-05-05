@@ -1,0 +1,38 @@
+@interface HMDTTMonitorTracker2 : NSObject
+@property (nonatomic) HMDTTMonitorCounter counter;
+@property (nonatomic) NSObject<OS_dispatch_queue> syncQueue;
+@property (nonatomic) HMDMonitorDataManager2 dataManager;
+@property (nonatomic) HMInstance instance;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) BOOL ignoreLogType;
+- (BOOL)logTypeEnabled:;
+- (BOOL)ttmonitorConfigurationAvailable;
+- (void)countEvent:label:value:needAggregate:appID:;
+- (id)customConfig;
+- (BOOL)ignoreLogType;
+- (id)initMonitorWithAppID:injectedInfo:;
+- (BOOL)needUploadWithlogTypeStr:serviceType:;
+- (BOOL)performanceDataSource;
+- (void)recordGeneratedCheckPointWithlogType:serviceType:appID:actionType:uniqueCode:;
+- (BOOL)serviceTypeEnabled:;
+- (void)setIgnoreLogType:;
+- (void)setMovingLineAndNeedUploadForRecord:;
+- (void)timerEvent:label:value:needAggregate:appID:;
+- (void)trackData:logType:serviceType:appID:;
+- (void)trackData:logType:serviceType:appID:actionType:;
+- (void)trackData:logType:serviceType:appID:syncWrite:;
+- (void)trackData:type:serviceType:appID:;
+- (id)syncQueue;
+- (id)instance;
+- (void)setInstance:;
+- (void)setSyncQueue:;
+- (void)setDataManager:;
+- (id)dataManager;
+- (void).cxx_destruct;
+- (id)counter;
+- (void)setCounter:;
++ (id)globalSyncQueue;
+@end

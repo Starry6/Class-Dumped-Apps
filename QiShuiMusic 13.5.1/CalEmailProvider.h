@@ -1,0 +1,2 @@
+@interface CalEmailProvider : NSObject
+@end

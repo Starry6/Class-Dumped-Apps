@@ -1,0 +1,33 @@
+@interface UIAutocorrectInlinePrompt : UIView
+@property (nonatomic) I usageTrackingMask;
+- (int)textEffectsVisibilityLevel;
+- (BOOL)pointInside:forEvent:;
+- (void)dismiss;
+- (void)dealloc;
+- (void)touchesBegan:withEvent:;
+- (BOOL)pointInside:withEvent:;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (BOOL)gestureRecognizerShouldBegin:;
+- (void)touchesMoved:withEvent:;
+- (void)touchesEnded:withEvent:;
+- (void)touchesCancelled:withEvent:;
+- (int)textEffectsVisibilityLevelInKeyboardWindow;
+- (void)removePromptSubviews;
+- (id)shadowFrameForFrame:;
+- (void)setCorrection:typedText:inRect:maxX:;
+- (void)addTypedTextRect:;
+- (BOOL)isAcceptableTextEffectsFrame:afterScrollBy:;
+- (id)horizontallySquishedCorrectionFrame:;
+- (id)correctionFrameFromDesiredFrame:textHeight:withExtraGap:;
+- (id)correction;
+- (id)typedText;
+- (id)typedTextView;
+- (id)correctionView;
+- (id)correctionAnimationView;
+- (id)typedTextAnimationView;
+- (id)correctionShadowView;
+- (BOOL)prepareForAnimation:;
+- (unsigned int)usageTrackingMask;
+- (void)setUsageTrackingMask:;
+@end

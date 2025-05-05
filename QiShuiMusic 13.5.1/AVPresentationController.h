@@ -1,0 +1,34 @@
+@interface AVPresentationController : NSObject
+@property (nonatomic) AVObservationController observationController;
+@property (nonatomic) UIWindow presentationWindowForDisablingAutorotation;
+@property (nonatomic) AVPresentationContext context;
+@property (nonatomic) UIViewController presentingViewController;
+@property (nonatomic) UIViewController presentedViewController;
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UIView presentedView;
+- (void)containerViewWillLayoutSubviews;
+- (id)presentingViewController;
+- (BOOL)shouldPresentInFullscreen;
+- (id)presentedView;
+- (void)dealloc;
+- (void)presentationTransitionWillBegin;
+- (void)presentationTransitionDidEnd:;
+- (void)dismissalTransitionDidEnd:;
+- (id)context;
+- (id)containerView;
+- (void)dismissalTransitionWillBegin;
+- (id)observationController;
+- (void).cxx_destruct;
+- (BOOL)dismissed;
+- (BOOL)presenting;
+- (BOOL)presented;
+- (BOOL)dismissing;
+- (BOOL)shouldRemovePresentersView;
+- (id)presentedViewController;
+- (id)initWithPresentationController:presentedViewController:presentingViewController:withConfiguration:;
+- (void)_ensureOrientation:enablingMixedOrientations:;
+- (void)_prepareDismissingTransitionContext;
+- (void)_observeSceneDidBecomeActiveForRestoringRotatability;
+- (id)presentationWindowForDisablingAutorotation;
+- (void)setPresentationWindowForDisablingAutorotation:;
+@end

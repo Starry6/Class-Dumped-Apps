@@ -1,0 +1,38 @@
+@interface UIDebuggingSpecViewController : UIViewController
+@property (nonatomic) UIView spec;
+@property (nonatomic) NSMutableArray specImages;
+@property (nonatomic) {CGPoint=dd} origin;
+@property (nonatomic) double originalOpacity;
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) UICollectionViewFlowLayout flowLayout;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setOrigin:;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (id)origin;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (id)spec;
+- (void)setCollectionView:;
+- (void).cxx_destruct;
+- (long long)numberOfSectionsInCollectionView:;
+- (id)collectionView;
+- (void)setSpec:;
+- (id)initWithNibName:bundle:;
+- (void)viewDidLoad;
+- (void)imagePickerControllerDidCancel:;
+- (void)imagePickerController:didFinishPickingMediaWithInfo:;
+- (id)flowLayout;
+- (void)setFlowLayout:;
+- (void)prepareForMediaBrowser;
+- (void)gotDeleteGesture:;
+- (void)gotPanGesture:;
+- (void)hideImage;
+- (BOOL)startMediaBrowserFromViewController:;
+- (id)specImages;
+- (void)setSpecImages:;
+- (double)originalOpacity;
+- (void)setOriginalOpacity:;
+@end

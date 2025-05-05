@@ -1,0 +1,33 @@
+@interface IESLiveInteractConfigLayoutProcessor : NSObject
+@property (nonatomic) BOOL disableSeparator;
+@property (nonatomic) double separatorWidth;
+@property (nonatomic) BOOL useMarginReplaceSeparator;
+@property (nonatomic) UIColor separatorColor;
+@property (nonatomic) IESLiveInteractionLayout layout;
+@property (nonatomic) NSArray guestFrames;
+@property (nonatomic) NSArray guestSeparatorInsets;
+@property (nonatomic) NSArray guestSeparatorFrames;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setGuestFrames:;
+- (id)calculateGuestSeparatorInsets;
+- (id)calculateguestSeparatorFrames;
+- (BOOL)disableSeparator;
+- (id)guestFrames;
+- (id)guestLayoutConfigs;
+- (id)guestSeparatorFrames;
+- (id)guestSeparatorInsets;
+- (id)initWithGuestFrames:layout:;
+- (BOOL)isDynamicLayout1V6;
+- (id)separatorLayoutConfigs;
+- (void)setGuestSeparatorFrames:;
+- (void)setGuestSeparatorInsets:;
+- (BOOL)useMarginReplaceSeparator;
+- (id)separatorColor;
+- (void)setLayout:;
+- (id)layout;
+- (void).cxx_destruct;
+- (double)separatorWidth;
+@end

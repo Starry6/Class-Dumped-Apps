@@ -1,0 +1,34 @@
+@interface ASSStorageAccesserZZZX : NSObject
++ (id)getRandomizedID;
++ (id)loadGID;
++ (id)loadLastTMXTime;
++ (id)loadLocalToken:;
++ (void)saveDynamicKey:;
++ (void)clearStorage;
++ (id)getApdidcFromFile;
++ (id)getClientKeyDataFormation:;
++ (id)getFromFile;
++ (id)getNewRadomizedID;
++ (id)getRadomizedClientKey;
++ (id)getRandomizedTokenID;
++ (id)getTokenIdDataFormation:;
++ (id)loadApdidc;
++ (id)loadArpMac;
++ (id)loadDynamicKey;
++ (id)loadEnvironmentMode;
++ (id)loadJBErrorHistory;
++ (id)loadLastLoginTime;
++ (id)loadPreviousApdid;
++ (id)loadStorageModelFromKeychain;
++ (id)loadTMXSessionID;
++ (void)saveApdidc:;
++ (void)saveArpMac:;
++ (void)saveCurrentLoginTime:;
++ (void)saveEnvironmentMode:;
++ (void)saveGID:;
++ (void)saveJBErrorHistory:;
++ (void)saveLocalToken:keyName:;
++ (void)saveStorageModel:;
++ (void)saveTMXSessionID:;
++ (void)saveTMXTime:;
+@end

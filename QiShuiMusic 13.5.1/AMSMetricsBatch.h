@@ -1,0 +1,30 @@
+@interface AMSMetricsBatch : NSObject
+@property (nonatomic) ACAccount account;
+@property (nonatomic) BOOL anonymous;
+@property (nonatomic) NSString canaryIdentifier;
+@property (nonatomic) BOOL containsLoadURL;
+@property (nonatomic) NSArray droppedEvents;
+@property (nonatomic) NSArray eventDictionaries;
+@property (nonatomic) NSArray events;
+@property (nonatomic) NSURL reportURL;
+@property (nonatomic) NSArray skippedEvents;
+- (id)account;
+- (void)setAccount:;
+- (void)setEventDictionaries:;
+- (void)setReportURL:;
+- (void)setContainsLoadURL:;
+- (void)setCanaryIdentifier:;
+- (BOOL)anonymous;
+- (void)setSkippedEvents:;
+- (void)setAnonymous:;
+- (void)setEvents:;
+- (id)droppedEvents;
+- (id)canaryIdentifier;
+- (void).cxx_destruct;
+- (id)skippedEvents;
+- (id)eventDictionaries;
+- (BOOL)containsLoadURL;
+- (id)events;
+- (void)setDroppedEvents:;
+- (id)reportURL;
+@end

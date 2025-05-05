@@ -1,0 +1,36 @@
+@interface IESLiveChargeManualAgreementAlert : UIView
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UIButton actionButton;
+@property (nonatomic) UILabel cancelLabel;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel desLabel;
+@property (nonatomic) UILabel protocolLabel;
+@property (nonatomic) UILabel safetyLabel;
+@property (nonatomic) UILabel conjunctionLabel;
+@property (nonatomic) @? confirmBlock;
+- (void)setSafetyLabel:;
+- (void)tapActionButton;
+- (id)confirmBlock;
+- (id)conjunctionLabel;
+- (id)desLabel;
+- (id)protocolLabel;
+- (id)safetyLabel;
+- (void)setConfirmBlock:;
+- (void)setConjunctionLabel:;
+- (void)setDesLabel:;
+- (void)setProtocolLabel:;
+- (void)tapCancel;
+- (void)tapProtocol;
+- (void)tapSafeRemind;
+- (void)setTitleLabel:;
+- (id)containerView;
+- (void)setContainerView:;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setupUI;
+- (id)actionButton;
+- (void)setActionButton:;
+- (id)cancelLabel;
+- (void)setCancelLabel:;
+@end

@@ -1,0 +1,2 @@
+@interface AWEIMRedEnvelopeMessage : AWEIMMessage
+@end

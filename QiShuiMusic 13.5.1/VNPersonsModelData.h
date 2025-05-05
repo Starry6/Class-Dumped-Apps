@@ -1,0 +1,38 @@
+@interface VNPersonsModelData : NSObject
+@property (nonatomic) <VNPersonsModelDataDelegate> delegate;
+@property (nonatomic) NSDate lastModificationDate;
+@property (nonatomic) Q faceprintRequestRevision;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (unsigned long long)faceprintRequestRevision;
+- (void)setDelegate:;
+- (unsigned long long)personsModel:indexOfPersonWithUniqueIdentifier:;
+- (unsigned long long)numberOfPersonsInPersonsModel:;
+- (unsigned long long)personsModel:numberOfFaceObservationsForPersonAtIndex:;
+- (id)lastModificationDate;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)personsModel:faceObservationAtIndex:forPersonAtIndex:;
+- (id)initWithConfiguration:;
+- (id)personsModel:uniqueIdentifierOfPersonAtIndex:;
+- (BOOL)addFaceObservations:toPersonWithUniqueIdentifier:error:;
+- (BOOL)removeFaceObservations:fromPersonWithUniqueIdentifier:error:;
+- (BOOL)removeAllFaceObservationsFromPersonWithUniqueIdentifier:error:;
+- (BOOL)removePersonWithUniqueIdentifier:error:;
+- (unsigned long long)faceModelPersonsCount;
+- (id)faceModelUniqueIdentifierOfPersonAtIndex:;
+- (unsigned long long)faceModelIndexOfPersonWithUniqueIdentifier:;
+- (unsigned long long)faceModelNumberOfFaceObservationsForPersonAtIndex:;
+- (id)faceModelFaceObservationAtIndex:forPersonAtIndex:;
+- (void)_modelWasModified;
+- (id)_requestNewIdentitySerialNumberAndReturnError:;
+- (id)_uniqueFaceObservationsWithRegistrationState:forFaceObservations:withExpectedFaceprintRequestRevision:ofPersonWithUniqueIdentifier:error:;
+- (BOOL)_addUniqueFaceObservations:toPersonWithUniqueIdentifier:error:;
+- (void)_removeAllFaceObservationsFromIdentityWithSerialNumber:;
+- (void)_removePersonWithUniqueIdentifier:;
+- (void)_removeExistingFaceObservations:fromIdentityWithSerialNumber:;
+- (void)_removeExistingFaceObservations:fromPersonWithUniqueIdentifier:;
+- (id)_accessToMutableFaceObservationsForPersonAtIndex:;
+@end

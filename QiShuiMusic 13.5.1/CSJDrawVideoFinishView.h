@@ -1,0 +1,38 @@
+@interface CSJDrawVideoFinishView : UIView
+@property (nonatomic) UIView csj_maskView;
+@property (nonatomic) UIButton detailButton;
+@property (nonatomic) UIButton replayButton;
+@property (nonatomic) UIImageView finishBackgroundView;
+@property (nonatomic) @? replayClick;
+@property (nonatomic) @? detailClick;
+@property (nonatomic) CSJMaterialMeta materialMeta;
+@property (nonatomic) CSJAdSlot adSlot;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setDetailClick:;
+- (void)setReplayClick:;
+- (id)adSlot;
+- (void)addAccessibilityIdentifier;
+- (void)buildViews;
+- (id)csj_maskView;
+- (id)detailClick;
+- (id)finishBackgroundView;
+- (void)goToDetail:;
+- (id)materialMeta;
+- (void)reSetFrameWithsuperFrame:;
+- (id)replayClick;
+- (void)setAdSlot:;
+- (void)setCsj_maskView:;
+- (void)setFinishBackgroundView:;
+- (void)setFinishViewDataWithMaterialMeta:;
+- (void)setMaterialMeta:;
+- (id)init;
+- (void).cxx_destruct;
+- (void)replay:;
+- (id)detailButton;
+- (void)setDetailButton:;
+- (id)replayButton;
+- (void)setReplayButton:;
+@end

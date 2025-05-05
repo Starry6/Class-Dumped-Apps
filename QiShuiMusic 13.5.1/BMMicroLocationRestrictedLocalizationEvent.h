@@ -1,0 +1,30 @@
+@interface BMMicroLocationRestrictedLocalizationEvent : NSObject
+@property (nonatomic) double absoluteTimestamp;
+@property (nonatomic) NSString clientBundleIdentifier;
+@property (nonatomic) NSUUID maxProbabilityLabelIdentifier;
+@property (nonatomic) double maxProbability;
+@property (nonatomic) NSArray probabilityVector;
+@property (nonatomic) NSArray numDevicesVector;
+@property (nonatomic) I dataVersion;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)clientBundleIdentifier;
+- (id)initWithProtoData:;
+- (id)proto;
+- (id)encodeAsProto;
+- (double)absoluteTimestamp;
+- (id)probabilityVector;
+- (unsigned int)dataVersion;
+- (unsigned long long)hash;
+- (id)initWithProto:;
+- (void).cxx_destruct;
+- (id)serialize;
+- (BOOL)isEqual:;
+- (double)maxProbability;
+- (id)initWithAbsoluteTimeStamp:clientBundleIdentifier:maxProbabilityLabelIdentifier:maxProbability:probabilityVector:numDevicesVector:;
+- (id)maxProbabilityLabelIdentifier;
+- (id)numDevicesVector;
++ (id)eventWithData:dataVersion:;
+@end

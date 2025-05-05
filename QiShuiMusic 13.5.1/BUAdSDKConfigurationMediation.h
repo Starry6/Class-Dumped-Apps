@@ -1,0 +1,31 @@
+@interface BUAdSDKConfigurationMediation : NSObject
+@property (nonatomic) NSDictionary extraData;
+@property (nonatomic) BUMUserInfoForSegment userInfoForSegment;
+@property (nonatomic) NSNumber limitPersonalAds;
+@property (nonatomic) NSNumber limitProgrammaticAds;
+@property (nonatomic) NSNumber forbiddenCAID;
+@property (nonatomic) NSString advanceSDKConfigPath;
+@property (nonatomic) NSDictionary extraDeviceMap;
+@property (nonatomic) BOOL allowUploadDeviceInfo;
+@property (nonatomic) NSNumber forbiddenIDFA;
+- (id)advanceSDKConfigPath;
+- (BOOL)allowUploadDeviceInfo;
+- (id)extraDeviceMap;
+- (id)forbiddenCAID;
+- (id)forbiddenIDFA;
+- (id)limitPersonalAds;
+- (id)limitProgrammaticAds;
+- (void)setAdvanceSDKConfigPath:;
+- (void)setAllowUploadDeviceInfo:;
+- (void)setExtraData:forKey:;
+- (void)setExtraDeviceMap:;
+- (void)setForbiddenCAID:;
+- (void)setForbiddenIDFA:;
+- (void)setLimitPersonalAds:;
+- (void)setLimitProgrammaticAds:;
+- (void)setUserInfoForSegment:;
+- (id)userInfoForSegment;
+- (void).cxx_destruct;
+- (void)setExtraData:;
+- (id)extraData;
+@end

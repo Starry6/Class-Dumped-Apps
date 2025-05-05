@@ -1,0 +1,2 @@
+@interface HTSLiveBigeventMessageRoot : GPBRootObject
+@end

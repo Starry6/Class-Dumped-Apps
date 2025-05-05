@@ -1,0 +1,25 @@
+@interface RBFill : NSObject
+- (void)invalidateContents;
+- (void)setColor:;
+- (void)set9PartRBImage:transform:destinationRect:capInsets:repeat:interpolation:tintColor:colorSpace:flags:;
+- (void)setRBImage:transform:interpolation:tintColor:flags:;
+- (void)setRadialGradientCenter:startRadius:endRadius:stopCount:colors:colorSpace:locations:flags:;
+- (void)set9PartImage:transform:destinationRect:capInsets:repeat:interpolation:tintColor:flags:;
+- (void)setConicGradientCenter:angle:stopCount:colors:colorSpace:locations:flags:;
+- (void)setTiledImage:transform:sourceRect:interpolation:tintColor:flags:;
+- (void)concat:;
+- (void)setConicGradientCenter:angle:stopCount:colors:locations:flags:;
+- (void)setTiledRBImage:transform:sourceRect:interpolation:tintColor:flags:;
+- (void)setRadialGradientStartCenter:startRadius:endCenter:endRadius:stopCount:colors:locations:flags:;
+- (void)setImage:transform:interpolation:tintColor:flags:;
+- (void).cxx_destruct;
+- (void)setColor:colorSpace:;
+- (void)setRadialGradientCenter:startRadius:endRadius:stopCount:colors:locations:flags:;
+- (void)setRBImage:transform:interpolation:tintColor:colorSpace:flags:;
+- (void)setAxialGradientStartPoint:endPoint:stopCount:colors:colorSpace:locations:flags:;
+- (void)setRadialGradientStartCenter:startRadius:endCenter:endRadius:stopCount:colors:colorSpace:locations:flags:;
+- (void)set9PartRBImage:transform:destinationRect:capInsets:repeat:interpolation:tintColor:flags:;
+- (void)setTiledRBImage:transform:sourceRect:interpolation:tintColor:colorSpace:flags:;
+- (id).cxx_construct;
+- (void)setAxialGradientStartPoint:endPoint:stopCount:colors:locations:flags:;
+@end

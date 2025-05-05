@@ -1,0 +1,34 @@
+@interface SISchemaCarPlayInvocationContext : SISchemaInstrumentationMessage
+@property (nonatomic) NSString bundleID;
+@property (nonatomic) BOOL hasBundleID;
+@property (nonatomic) NSInteger directAction;
+@property (nonatomic) BOOL hasDirectAction;
+@property (nonatomic) NSInteger enhancedVoiceTriggerMode;
+@property (nonatomic) BOOL hasEnhancedVoiceTriggerMode;
+@property (nonatomic) NSData jsonData;
+- (BOOL)hasBundleID;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (id)bundleID;
+- (BOOL)isEqual:;
+- (void)setBundleID:;
+- (int)directAction;
+- (void)setDirectAction:;
+- (void)deleteBundleID;
+- (BOOL)hasDirectAction;
+- (void)setHasDirectAction:;
+- (void)deleteDirectAction;
+- (void)setEnhancedVoiceTriggerMode:;
+- (BOOL)hasEnhancedVoiceTriggerMode;
+- (void)setHasEnhancedVoiceTriggerMode:;
+- (void)deleteEnhancedVoiceTriggerMode;
+- (int)enhancedVoiceTriggerMode;
+- (void)setHasBundleID:;
+@end

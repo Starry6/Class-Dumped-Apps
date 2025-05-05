@@ -1,0 +1,32 @@
+@interface IESECSKUClientParamsParamsModel : MTLModel
+@property (nonatomic) NSArray defaultSpecId;
+@property (nonatomic) q defaultCount;
+@property (nonatomic) BOOL scrollToInstallment;
+@property (nonatomic) NSDictionary poiInfo;
+@property (nonatomic) BOOL popOnWindow;
+@property (nonatomic) NSString skuSessionId;
+@property (nonatomic) NSString maskBackgroundColor;
+@property (nonatomic) BOOL disableServerDefaultSelect;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setPopOnWindow:;
+- (id)poiInfo;
+- (id)defaultSpecId;
+- (BOOL)disableServerDefaultSelect;
+- (id)maskBackgroundColor;
+- (BOOL)popOnWindow;
+- (BOOL)scrollToInstallment;
+- (void)setDefaultCount:;
+- (void)setDefaultSpecId:;
+- (void)setDisableServerDefaultSelect:;
+- (void)setMaskBackgroundColor:;
+- (void)setPoiInfo:;
+- (void)setScrollToInstallment:;
+- (void)setSkuSessionId:;
+- (id)skuSessionId;
+- (void).cxx_destruct;
+- (long long)defaultCount;
++ (id)JSONKeyPathsByPropertyKey;
+@end

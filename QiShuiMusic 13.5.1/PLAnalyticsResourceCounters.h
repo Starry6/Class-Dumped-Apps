@@ -1,0 +1,2 @@
+@interface PLAnalyticsResourceCounters : NSObject
+@end

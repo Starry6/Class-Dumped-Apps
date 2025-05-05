@@ -1,0 +1,33 @@
+@interface IESVideoBSAutoBitrateModel : MTLModel
+@property (nonatomic) NSNumber bitrate;
+@property (nonatomic) NSNumber minNetwork;
+@property (nonatomic) NSNumber maxNetwork;
+@property (nonatomic) NSNumber paramA;
+@property (nonatomic) NSNumber paramB;
+@property (nonatomic) NSNumber paramC;
+@property (nonatomic) NSNumber paramD;
+@property (nonatomic) NSNumber minBitrate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)maxNetwork;
+- (id)minNetwork;
+- (id)paramD;
+- (void)setMaxNetwork:;
+- (void)setMinNetwork:;
+- (void)setParamA:;
+- (void)setParamB:;
+- (void)setParamC:;
+- (void)setParamD:;
+- (id)paramA;
+- (id)paramB;
+- (id)paramC;
+- (id)bitrate;
+- (void).cxx_destruct;
+- (id)description;
+- (void)setBitrate:;
+- (id)minBitrate;
+- (void)setMinBitrate:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

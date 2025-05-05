@@ -1,0 +1,33 @@
+@interface LNMetadataProvider : NSObject
+@property (nonatomic) NSXPCConnection connection;
+@property (nonatomic) <LNMetadataProviderInterface> provider;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (long long)metadataVersionForBundleIdentifier:error:;
+- (id)initWithOptions:;
+- (void)registerBundleWithIdentifier:force:reply:;
+- (id)actionForBundleIdentifier:andActionIdentifier:error:;
+- (id)entitiesForBundleIdentifier:error:;
+- (id)actionsAndSystemProtocolDefaultsForBundleIdentifier:error:;
+- (id)actionsForBundleIdentifier:andActionIdentifier:error:;
+- (id)provider;
+- (id)enumsForBundleIdentifier:error:;
+- (void)unregisterBundleWithIdentifier:reply:;
+- (id)actionsWithFullyQualifiedIdentifiers:error:;
+- (id)bundlesWithError:;
+- (id)connection;
+- (id)queriesWithError:;
+- (void).cxx_destruct;
+- (id)entitiesWithError:;
+- (id)queriesForBundleIdentifier:ofType:error:;
+- (void)resetWithReply:;
+- (id)actionsWithError:;
+- (id)actionsConformingToSystemProtocol:withParametersOfTypes:bundleIdentifier:error:;
+- (id)enumsWithError:;
+- (id)actionsConformingToSystemProtocols:logicalType:bundleIdentifier:error:;
+- (void)scanBundlesWithReply:;
+- (id)actionsForBundleIdentifier:error:;
+@end

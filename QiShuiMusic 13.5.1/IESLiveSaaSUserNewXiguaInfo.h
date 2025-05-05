@@ -1,0 +1,33 @@
+@interface IESLiveSaaSUserNewXiguaInfo : MTLModel
+@property (nonatomic) NSString userAuthInfo;
+@property (nonatomic) q xiguaUid;
+@property (nonatomic) NSString nickName;
+@property (nonatomic) IESLiveSaaSImage avatarThumb;
+@property (nonatomic) IESLiveSaaSImage avatarMedium;
+@property (nonatomic) IESLiveSaaSImage avatarLarge;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setAvatarLarge:;
+- (void)setAvatarThumb:;
+- (id)avatarLarge;
+- (id)avatarMedium;
+- (id)avatarThumb;
+- (id)initWithPBModel:;
+- (id)mapToPbModel;
+- (void)setAvatarMedium:;
+- (void)setUserAuthInfo:;
+- (void)setXiguaUid:;
+- (id)userAuthInfo;
+- (long long)xiguaUid;
+- (id)dictionary;
+- (id)nickName;
+- (void).cxx_destruct;
+- (void)setNickName:;
++ (id)avatarLargeJSONTransformer;
++ (id)avatarMediumJSONTransformer;
++ (id)avatarThumbJSONTransformer;
++ (id)modelWithPBModel:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

@@ -1,0 +1,31 @@
+@interface IESLivePKComponentStreamBackground : IESLivePKComponent
+@property (nonatomic) UIImageView backgroundImage;
+@property (nonatomic) UIImageView upBackgroundImage;
+@property (nonatomic) UIImageView downBackgroundImage;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)componentContainerFrameChanged;
+- (void)componentDidLoad;
+- (void)componentFinished;
+- (void)componentInteracting;
+- (void)componentPlaying;
+- (void)componentPunishing;
+- (id)downBackgroundImage;
+- (void)handleBattleBg:topImage:bottomImage:;
+- (void)loadStreamBackground;
+- (void)playerDidEndplayInSmallWindow;
+- (void)setCameraCornerHidden:;
+- (void)setDownBackgroundImage:;
+- (void)setUpBackgroundImage:;
+- (id)upBackgroundImage;
+- (void)updateBackgroundImage:;
+- (void)updateStreamBackground;
+- (void)updateTopBackgroundImage:bottomImageBlock:;
+- (void)dealloc;
+- (void)setBackgroundImage:;
+- (id)backgroundImage;
+- (void).cxx_destruct;
+- (void)clean;
+@end

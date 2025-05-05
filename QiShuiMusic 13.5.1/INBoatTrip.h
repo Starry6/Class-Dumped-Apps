@@ -1,0 +1,31 @@
+@interface INBoatTrip : NSObject
+@property (nonatomic) NSString provider;
+@property (nonatomic) NSString boatName;
+@property (nonatomic) NSString boatNumber;
+@property (nonatomic) INDateComponentsRange tripDuration;
+@property (nonatomic) CLPlacemark departureBoatTerminalLocation;
+@property (nonatomic) CLPlacemark arrivalBoatTerminalLocation;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)_dictionaryRepresentation;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)provider;
+- (void)encodeWithCoder:;
+- (id)descriptionAtIndent:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)_intents_encodeWithJSONEncoder:codableDescription:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)tripDuration;
+- (id)arrivalBoatTerminalLocation;
+- (id)boatName;
+- (id)boatNumber;
+- (id)departureBoatTerminalLocation;
+- (id)initWithProvider:boatName:boatNumber:tripDuration:departureBoatTerminalLocation:arrivalBoatTerminalLocation:;
++ (id)_intents_decodeWithJSONDecoder:codableDescription:from:;
++ (BOOL)supportsSecureCoding;
+@end

@@ -1,0 +1,33 @@
+@interface IESPrefetchDebugBizViewController : UIViewController
+@property (nonatomic) UITableView tableView;
+@property (nonatomic) NSString biz;
+@property (nonatomic) <IESPrefetchLoaderPrivateProtocol> loader;
+@property (nonatomic) NSArray caches;
+@property (nonatomic) NSArray projects;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)biz;
+- (void)setBiz:;
+- (id)initWithBiz:;
+- (void)loadCaches;
+- (void)loadProjects;
+- (void)setCaches:;
+- (id)tableView:cellForRowAtIndexPath:;
+- (void)tableView:didSelectRowAtIndexPath:;
+- (void).cxx_destruct;
+- (void)viewWillAppear:;
+- (void)setTableView:;
+- (id)tableView:titleForHeaderInSection:;
+- (id)caches;
+- (id)tableView;
+- (long long)tableView:numberOfRowsInSection:;
+- (void)viewDidLoad;
+- (long long)numberOfSectionsInTableView:;
+- (void)setupTableView;
+- (void)setProjects:;
+- (id)projects;
+- (id)loader;
+- (void)setLoader:;
+@end

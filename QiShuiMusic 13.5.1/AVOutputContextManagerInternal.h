@@ -1,0 +1,2 @@
+@interface AVOutputContextManagerInternal : NSObject
+@end

@@ -1,0 +1,35 @@
+@interface AMSKeychain : NSObject
++ (id)certificateKeychainLabelsForOptions:;
++ (id)copyCertificatePrivateKeyWithContext:account:options:error:;
++ (id)resumptionHeaders;
++ (id)keychainLabelForOptions:;
++ (id)_primaryConstraintsForMac;
++ (id)copyPublicKeyForAccount:options:error:;
++ (BOOL)deleteKeyPairWithOptions:error:;
++ (id)legacyAttestationForOptions:error:;
++ (id)copyPublicKeyForOptions:error:;
++ (void)setSecItemCopyMatchingFunc:;
++ (id)_ssCertificateKeychainLabelForAccount:options:;
++ (id)_certificatePrivateKeyLabelForOptions:;
++ (id)certificateChainStringsForOptions:error:;
++ (id)_primaryConstraintsForWatch;
++ (id)_primaryConstraintsWithOptions:;
++ (BOOL)deleteCertificateChainWithOptions:error:;
++ (id)_resumptionHeadersQuery;
++ (BOOL)_generateLegacyKeypairForOptions:error:;
++ (id)createAccessControlRefWithOptions:error:;
++ (id)copyPrivateKeyWithContext:options:error:;
++ (id)_primaryConstraints;
++ (void)stashResumptionHeaders:;
++ (id)copyPrivateKeyWithContext:account:options:error:;
++ (id)secItemCopyMatchingFunc;
++ (BOOL)storePrimaryCert:intermediateCert:privateKey:options:error:;
++ (void)_deleteResumptionHeaders;
++ (id)_legacyAttestationForOptions:error:;
++ (id)_copyLegacyPublicKeyForOptions:error:;
++ (id)_copyLegacyPrivateKeyForOptions:error:;
++ (id)_extendedConstraintsWithOptions:;
++ (id)_ssKeychainLabelForAccount:options:;
++ (id)copyAccessControlRefWithAccount:options:error:;
++ (BOOL)performForwardKeyMigrationForDSID:forceMigration:;
+@end

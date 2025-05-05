@@ -1,0 +1,30 @@
+@interface IESLiveSaaSLinkMicContributeListViewModel : NSObject
+@property (nonatomic) IESLiveSaaSLiveRoomModel roomModel;
+@property (nonatomic) IESLiveSaaSLinkMicContributeListModel listModel;
+@property (nonatomic) RACSubject updateCompleteSubject;
+@property (nonatomic) IESLiveSaaSAudienceListApi audienceListApi;
+@property (nonatomic) HTSEventContext trackContext;
+@property (nonatomic) HTSLiveUser guestUserModel;
+@property (nonatomic) RACSignal updateCompleteSignal;
+- (id)audienceListApi;
+- (void)sendGiftToGuest;
+- (void)didSetAttachingDIContext;
+- (void)fetchLinkMicContributeList;
+- (void)fetchLinkMicContributeListWithCompletion:;
+- (id)guestUserModel;
+- (id)initWithRoomModel:componentContext:;
+- (unsigned long long)pr_getInteractScene;
+- (id)roomModel;
+- (void)setAudienceListApi:;
+- (void)setGuestUserModel:;
+- (void)setListModel:;
+- (void)setRoomModel:;
+- (void)setTrackContext:;
+- (void)setUpdateCompleteSubject:;
+- (id)trackContext;
+- (id)updateCompleteSignal;
+- (id)updateCompleteSubject;
+- (void)dealloc;
+- (id)listModel;
+- (void).cxx_destruct;
+@end

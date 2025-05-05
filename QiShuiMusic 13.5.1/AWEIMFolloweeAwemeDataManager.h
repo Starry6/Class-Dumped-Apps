@@ -1,0 +1,31 @@
+@interface AWEIMFolloweeAwemeDataManager : NSObject
+@property (nonatomic) NSDictionary followeeAwemeDict;
+@property (nonatomic) NSCache monitorBlockCache;
+@property (nonatomic) NSMutableSet secUidSetM;
+@property (nonatomic) NSCache requestFrequencyCache;
+@property (nonatomic) NSString needInsetSecUid;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didFinishLogout;
+- (id)needInsetSecUid;
+- (void)batchAcquireShortAwemeDataForSourceTab:;
+- (id)cachedShortAwemeItemForSecUserID:;
+- (void)clearFolloweeAwemeUpdateCacheForSecUserID:;
+- (id)followeeAwemeDict;
+- (id)monitorBlockCache;
+- (void)monitorShortAwemeDataForSecUid:source:context:completion:;
+- (id)requestFrequencyCache;
+- (id)secUidSetM;
+- (void)setFolloweeAwemeDict:;
+- (void)setMonitorBlockCache:;
+- (void)setNeedInsetSecUid:;
+- (void)setRequestFrequencyCache:;
+- (void)setSecUidSetM:;
+- (unsigned long long)unreadAwemeUpdateCountForUserID:;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
++ (id)sharedInstance;
+@end

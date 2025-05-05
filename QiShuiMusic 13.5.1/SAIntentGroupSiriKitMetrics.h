@@ -1,0 +1,31 @@
+@interface SAIntentGroupSiriKitMetrics : AceObject
+@property (nonatomic) NSString intentTypeName;
+@property (nonatomic) NSString interactionId;
+@property (nonatomic) NSString metricsStateOrigin;
+@property (nonatomic) NSString resultCandidateId;
+@property (nonatomic) NSString taskId;
+@property (nonatomic) NSNumber taskStepStartTime;
+@property (nonatomic) NSString turnId;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)groupIdentifier;
+- (id)taskId;
+- (id)encodedClassName;
+- (id)intentTypeName;
+- (void)setIntentTypeName:;
+- (id)interactionId;
+- (void)setTaskId:;
+- (void)setInteractionId:;
+- (id)resultCandidateId;
+- (id)turnId;
+- (void)setTurnId:;
+- (id)metricsStateOrigin;
+- (void)setMetricsStateOrigin:;
+- (void)setResultCandidateId:;
+- (id)taskStepStartTime;
+- (void)setTaskStepStartTime:;
++ (id)siriKitMetrics;
++ (id)siriKitMetricsWithDictionary:context:;
+@end

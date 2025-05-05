@@ -1,0 +1,36 @@
+@interface GEOLocalizedString : PBCodable
+@property (nonatomic) BOOL hasLocale;
+@property (nonatomic) NSString locale;
+@property (nonatomic) BOOL hasStringValue;
+@property (nonatomic) NSString stringValue;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (void)setLocale:;
+- (id)unknownFields;
+- (id)init;
+- (BOOL)hasLocale;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (id)locale;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)setStringValue:;
+- (void)mergeFrom:;
+- (id)stringValue;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (BOOL)hasStringValue;
+- (id)copyWithZone:;
++ (BOOL)isValid:;
++ (id)bestLocalizedStringForCurrentLocale:fallbackToFirstAvailable:;
++ (id)bestStringForCurrentLocale:fallbackToFirstAvailable:;
++ (id)bestLocalizedString:forPreferredLanguages:fallbackToFirstAvailable:;
++ (id)bestString:forPreferredLanguages:fallbackToFirstAvailable:;
+@end

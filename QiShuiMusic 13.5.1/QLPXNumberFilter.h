@@ -1,0 +1,33 @@
+@interface QLPXNumberFilter : QLPXObservable
+@property (nonatomic) double output;
+@property (nonatomic) double currentTime;
+@property (nonatomic) double lastTime;
+@property (nonatomic) double input;
+@property (nonatomic) double time;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (double)output;
+- (double)input;
+- (id)mutableChangeObject;
+- (id)initWithInput:;
+- (void)setTime:;
+- (id)init;
+- (double)time;
+- (double)updatedOutput;
+- (void)setInput:;
+- (void)performChanges:;
+- (void)_setNeedsUpdate;
+- (double)currentTime;
+- (BOOL)_needsUpdate;
+- (void)_updateIfNeeded;
+- (void)didPerformChanges;
+- (double)lastTime;
+- (void)_setLastTime:;
+- (double)initialOutputForInput:;
+- (void)_setOutput:;
+- (void)invalidateOutput;
+- (void)_invalidateOutput;
+- (void)_updateOutputIfNeeded;
+@end

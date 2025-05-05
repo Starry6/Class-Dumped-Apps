@@ -1,0 +1,37 @@
+@interface ANCSchemaANCServerEvent : SISchemaTopLevelUnionType
+@property (nonatomic) SISchemaInstrumentationMessage innerEvent;
+@property (nonatomic) ANCSchemaANCServerEventMetadata eventMetadata;
+@property (nonatomic) BOOL hasEventMetadata;
+@property (nonatomic) ANCSchemaANCServerUserResponseEvaluated userResponseEvaluated;
+@property (nonatomic) BOOL hasUserResponseEvaluated;
+@property (nonatomic) NSData jsonData;
+@property (nonatomic) Q whichEvent_Type;
+- (int)componentName;
+- (id)qualifiedMessageName;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (int)getAnyEventType;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (unsigned long long)whichEvent_Type;
+- (id)eventMetadata;
+- (void)setEventMetadata:;
+- (BOOL)hasEventMetadata;
+- (id)innerEvent;
+- (id)getComponentId;
+- (void)deleteEventMetadata;
+- (void)setUserResponseEvaluated:;
+- (id)userResponseEvaluated;
+- (void)deleteUserResponseEvaluated;
+- (void)setHasEventMetadata:;
+- (BOOL)hasUserResponseEvaluated;
+- (void)setHasUserResponseEvaluated:;
++ (int)joinability;
+@end

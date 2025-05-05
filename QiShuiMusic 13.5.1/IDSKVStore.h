@@ -1,0 +1,37 @@
+@interface IDSKVStore : NSObject
+@property (nonatomic) NSString storeName;
+@property (nonatomic) NSString path;
+@property (nonatomic) CSDBThreadedRecordStore messageStore;
+@property (nonatomic) I dataProtectionClass;
+- (id)messageStore;
+- (id)path;
+- (void)setPath:;
+- (void)setDataProtectionClass:;
+- (id)_onIvarQueue_serializedValuesUpToLimit:valueType:deleteContext:;
+- (void)_onIvarQueue_performBlock:initializeStore:;
+- (void)setMessageStore:;
+- (BOOL)deleteBatchWithContext:error:;
+- (id)datasUpToLimit:deleteContext:error:;
+- (BOOL)deleteEntriesBeforeDate:afterDate:error:;
+- (void)deleteDatabase;
+- (void)_clearDatabaseCloseTimerOnIvarQueue;
+- (id)storeName;
+- (void)_setDatabaseCloseTimerOnIvarQueue;
+- (void)__closeDatabaseOnIvarQueue;
+- (void)_onIvarQueue_persistSerializedValue:forKey:valueType:;
+- (void)closeDatabaseSynchronously:;
+- (void)_onIvarQueue_deleteUpToRowID:valueType:;
+- (void)setStoreName:;
+- (void).cxx_destruct;
+- (id)_onIvarQueue_serializedValueForKey:valueType:;
+- (id)dataForKey:error:;
+- (BOOL)persistData:forKey:error:;
+- (void)_onIvarQueue_performBlock:initializeStore:waitUntilDone:;
+- (id)initWithPath:storeName:dataProtectionClass:;
+- (void)_onIvarQueue_deleteDatesBefore:after:;
+- (void)_performInitialHousekeepingOnIvarQueue;
+- (void)_onIvarQueue_deleteSerializedValueForKey:valueType:;
+- (unsigned int)dataProtectionClass;
++ (void)_invalidateCachesForMessageStore:;
++ (void)_initializeMessageStoreIfNeeded:path:dataProtectionClass:;
+@end

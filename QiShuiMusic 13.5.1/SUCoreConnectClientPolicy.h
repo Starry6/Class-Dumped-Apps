@@ -1,0 +1,34 @@
+@interface SUCoreConnectClientPolicy : NSObject
+@property (nonatomic) NSSet proxyObjectClasses;
+@property (nonatomic) NSString serviceName;
+@property (nonatomic) <SUCoreConnectClientDelegate> clientDelegate;
+@property (nonatomic) NSString clientID;
+@property (nonatomic) NSString clientIDRaw;
+@property (nonatomic) NSInteger clientProcessIdentifier;
+@property (nonatomic) BOOL usesPersistentXPCConnections;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)clientDelegate;
+- (int)clientProcessIdentifier;
+- (id)initForServiceName:delegate:clientID:;
+- (id)serviceName;
+- (void).cxx_destruct;
+- (id)proxyObjectClasses;
+- (id)description;
+- (id)clientIDRaw;
+- (void)setUsesPersistentXPCConnections:;
+- (id)clientID;
+- (void)setProxyObjectClasses:;
+- (id)initForServiceName:delegate:;
+- (BOOL)usesPersistentXPCConnections;
++ (id)_getSharedClientAccessQueue;
++ (id)_getSharedClientAllowlistedClasses;
++ (void)setAllowlistedClass:forKey:;
++ (id)_getAllowlistedClassesForKey:;
++ (void)setAllowlistedClasses:forKey:;
++ (void)setAllowlistedClasses:forKeys:;
++ (id)getAllowlistedClassesForKey:;
++ (void)clearAllowlistedClasses;
+@end

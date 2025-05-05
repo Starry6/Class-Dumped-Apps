@@ -1,0 +1,36 @@
+@interface NSPFlowDivert : NEAppProxyProviderContainer
+@property (nonatomic) NEPolicySession policySession;
+@property (nonatomic) BOOL started;
+@property (nonatomic) BOOL shouldResetPolicies;
+@property (nonatomic) NSPConfiguration configuration;
+@property (nonatomic) NEFlowDivertFileHandle flowDivertControlHandle;
+- (void)setStarted:;
+- (void)destroyPolicySession;
+- (void)addPoliciesForDivertDNSOnly:domainConditions:divertResult:;
+- (id)getEffectiveAppRules:;
+- (BOOL)started;
+- (void)teardown;
+- (void)addPoliciesForAgent:conditions:;
+- (void)didStartWithError:;
+- (BOOL)resetPolicies:;
+- (void)setFlowDivertControlHandle:;
+- (id)createPolicySession;
+- (void)stop;
+- (void)setConfiguration:;
+- (void)startWithOptions:completionHandler:;
+- (void)addPolicy:;
+- (BOOL)shouldResetPolicies;
+- (id)configuration;
+- (id)getAgentResultsForSelf;
+- (void).cxx_destruct;
+- (id)createFlowDivertSocketHandle;
+- (id)getAgentResults:;
+- (id)flowDivertControlHandle;
+- (id)policySession;
+- (id)initWithDelegate:providerClass:configuration:;
+- (void)setShouldResetPolicies:;
+- (void)destroyFlowDivertSocketHandles;
+- (id)getExecutableConditions:;
+- (void)setPolicySession:;
+- (void)didFailWithError:;
+@end

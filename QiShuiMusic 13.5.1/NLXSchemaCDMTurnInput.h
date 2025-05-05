@@ -1,0 +1,36 @@
+@interface NLXSchemaCDMTurnInput : SISchemaInstrumentationMessage
+@property (nonatomic) NSArray asrHypothesisIds;
+@property (nonatomic) NLXSchemaCDMTurnContext turnContext;
+@property (nonatomic) BOOL hasTurnContext;
+@property (nonatomic) BOOL isTapToEdit;
+@property (nonatomic) BOOL hasIsTapToEdit;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (BOOL)hasTurnContext;
+- (id)turnContext;
+- (void)setTurnContext:;
+- (void)clearAsrHypothesisIds;
+- (void)deleteAsrHypothesisIds;
+- (void)addAsrHypothesisIds:;
+- (unsigned long long)asrHypothesisIdsCount;
+- (id)asrHypothesisIdsAtIndex:;
+- (void)deleteTurnContext;
+- (void)setIsTapToEdit:;
+- (BOOL)hasIsTapToEdit;
+- (void)setHasIsTapToEdit:;
+- (void)deleteIsTapToEdit;
+- (id)asrHypothesisIds;
+- (void)setAsrHypothesisIds:;
+- (BOOL)isTapToEdit;
+- (void)setHasTurnContext:;
+@end

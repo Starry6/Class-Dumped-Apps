@@ -1,0 +1,32 @@
+@interface IESLiveLinkmicDefaultStreamLayout : NSObject
+@property (nonatomic) HTSInteractionStreamAppData appData;
+@property (nonatomic) <IESLiveInteractiveUserService> userService;
+@property (nonatomic) {CGSize=dd} canvasSize;
+@property (nonatomic) @? onAppDataUpdated;
+@property (nonatomic) @? layoutProviderGetter;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setUserService:;
+- (id)appDataWithUserService:;
+- (void)configLayout:withSessions:withUserService:mediaConfig:;
+- (id)layoutProviderGetter;
+- (id)onAppDataUpdated;
+- (void)onAppDataUpdated:;
+- (void)setLayoutProviderGetter:;
+- (void)setOnAppDataUpdated:;
+- (id)streamRegionWithLayoutRegion:userModel:session:userService:;
+- (void)updateLayoutOfPublisher:withSessions:withUserService:mediaConfig:;
+- (void)updateWithPushGrids:;
+- (id)userService;
+- (long long)viewIndexWithUser:;
+- (id)layoutProvider;
+- (id)init;
+- (void)dealloc;
+- (id)canvasSize;
+- (void)setCanvasSize:;
+- (void).cxx_destruct;
+- (void)setAppData:;
+- (id)appData;
+@end

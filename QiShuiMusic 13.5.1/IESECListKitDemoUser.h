@@ -1,0 +1,38 @@
+@interface IESECListKitDemoUser : MTLModel
+@property (nonatomic) NSString id;
+@property (nonatomic) NSString userId;
+@property (nonatomic) NSString nickName;
+@property (nonatomic) NSString link;
+@property (nonatomic) NSString secUid;
+@property (nonatomic) q followStatus;
+@property (nonatomic) BOOL isLive;
+@property (nonatomic) BOOL isFollowed;
+@property (nonatomic) IESECListKitDemoAvatar avatar;
+@property (nonatomic) NSString name;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)followStatus;
+- (BOOL)isFollowed;
+- (id)secUid;
+- (void)setFollowStatus:;
+- (void)setIsFollowed:;
+- (void)setSecUid:;
+- (id)link;
+- (void)setName:;
+- (id)id;
+- (id)userId;
+- (void)setLink:;
+- (BOOL)isLive;
+- (id)nickName;
+- (void).cxx_destruct;
+- (void)setUserId:;
+- (id)name;
+- (void)setNickName:;
+- (void)setId:;
+- (id)avatar;
+- (void)setAvatar:;
+- (void)setIsLive:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

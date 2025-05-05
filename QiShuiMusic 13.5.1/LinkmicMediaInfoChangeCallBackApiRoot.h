@@ -1,0 +1,2 @@
+@interface LinkmicMediaInfoChangeCallBackApiRoot : GPBRootObject
+@end

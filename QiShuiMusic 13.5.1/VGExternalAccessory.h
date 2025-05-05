@@ -1,0 +1,35 @@
+@interface VGExternalAccessory : NSObject
+@property (nonatomic) <VGExternalAccessoryUpdating> accessoryUpdateDelegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)_identifier;
+- (id)init;
+- (void)dealloc;
+- (id)_firmwareId;
+- (id)accessoryUpdateDelegate;
+- (void)setAccessoryUpdateDelegate:;
+- (BOOL)isConnectedToVehicle:;
+- (void)_notifyDelegateWithCurrentVehicle;
+- (BOOL)_currentStatePassesEVRoutingRequirements;
+- (void)getStateOfChargeForVehicle:completion:;
+- (void)_checkAvailableAccessoriesAndAttachIfNeeded;
+- (id)_vehicleStateForCurrentState;
+- (void)_removeCarPlayAccessory:;
+- (void).cxx_destruct;
+- (void)_accessoryDidDisconnect:;
+- (BOOL)_isAccessoryTracked:;
+- (id)_bluetoothIdentifier;
+- (BOOL)_isConnectedToCarPlayAccessory;
+- (void)_updateFromVehicleInfo:;
+- (BOOL)_isConnectedVehicleAllowlisted;
+- (void)_accessoryDidUpdateVehicle:;
+- (void)listCarsWithCompletion:;
+- (id)_modelIdFromArguments:;
+- (id)_vehicleForCurrentState;
+- (void)_addNewCarPlayAccessory:;
+- (BOOL)_isConnectedToElectricVehicle;
+- (void)_accessoryDidConnect:;
+- (BOOL)isConnectedToAccessoryWithIdentifier:;
+@end

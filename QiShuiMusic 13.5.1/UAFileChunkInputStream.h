@@ -1,0 +1,31 @@
+@interface UAFileChunkInputStream : NSInputStream
+@property (nonatomic) NSFileHandle file;
+@property (nonatomic) NSNumber chunkOffset;
+@property (nonatomic) q chunkSize;
+@property (nonatomic) NSNumber currentOffset;
+@property (nonatomic) q readSize;
+@property (nonatomic) Q status;
+- (void)setStatus:;
+- (unsigned long long)streamStatus;
+- (BOOL)hasBytesAvailable;
+- (void)open;
+- (id)currentOffset;
+- (id)streamError;
+- (void)close;
+- (void)setFile:;
+- (BOOL)setProperty:forKey:;
+- (id)propertyForKey:;
+- (id)file;
+- (void).cxx_destruct;
+- (BOOL)getBuffer:length:;
+- (unsigned long long)status;
+- (long long)read:maxLength:;
+- (void)setCurrentOffset:;
+- (long long)chunkSize;
+- (void)setChunkSize:;
+- (id)initWithFileHandle:offsetInFile:size:;
+- (id)chunkOffset;
+- (void)setChunkOffset:;
+- (long long)readSize;
+- (void)setReadSize:;
+@end

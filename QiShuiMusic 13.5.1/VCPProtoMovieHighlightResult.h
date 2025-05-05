@@ -1,0 +1,31 @@
+@interface VCPProtoMovieHighlightResult : PBCodable
+@property (nonatomic) VCPProtoTimeRange timeRange;
+@property (nonatomic) float curationScore;
+@property (nonatomic) VCPProtoVideoKeyFrame keyFrame;
+@property (nonatomic) VCPProtoBounds playbackCrop;
+@property (nonatomic) BOOL hasColorNormalizationBlob;
+@property (nonatomic) NSData colorNormalizationBlob;
+- (id)timeRange;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)setTimeRange:;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setCurationScore:;
+- (float)curationScore;
+- (id)exportToLegacyDictionary;
+- (id)keyFrame;
+- (void)setKeyFrame:;
+- (BOOL)hasColorNormalizationBlob;
+- (id)playbackCrop;
+- (void)setPlaybackCrop:;
+- (id)colorNormalizationBlob;
+- (void)setColorNormalizationBlob:;
++ (id)resultFromLegacyDictionary:;
+@end

@@ -1,0 +1,35 @@
+@interface IESLiveSaaSDisplayTextModel : BDDynamicMTLModel
+@property (nonatomic) NSString key;
+@property (nonatomic) NSString defaultPattern;
+@property (nonatomic) IESLiveSaaSTextFormatModel defaultFormat;
+@property (nonatomic) NSArray pieces;
+@property (nonatomic) NSDictionary schemaInfos;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)mapFormatModel:;
+- (id)htslive_mapFormatModel:;
+- (id)htslive_mapGiftPiece:;
+- (id)htslive_mapHeartPiece:;
+- (id)htslive_mapImagePiece:;
+- (id)htslive_mapPatternModel:;
+- (id)htslive_mapPatternPiece:;
+- (id)htslive_mapPiecesModel;
+- (id)htslive_mapToHTSLiveText;
+- (id)htslive_mapToPBDisplayText;
+- (id)htslive_mapUserPiece:;
+- (id)mapGiftPiece:;
+- (id)mapHeartPiece:;
+- (id)mapImagePiece:;
+- (id)mapPatternModel:;
+- (id)mapPatternPiece:;
+- (id)mapPiecesModel;
+- (id)mapSchemaInfosModel;
+- (id)mapUserPiece:;
+- (id)parseWithFont:diContext:;
++ (id)defaultFormatJSONTransformer;
++ (id)piecesJSONTransformer;
++ (id)schemaInfosJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

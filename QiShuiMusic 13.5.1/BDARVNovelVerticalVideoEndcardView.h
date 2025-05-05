@@ -1,0 +1,34 @@
+@interface BDARVNovelVerticalVideoEndcardView : UIView
+@property (nonatomic) UIImageView avatar;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel sourceLabel;
+@property (nonatomic) UIButton replayButton;
+@property (nonatomic) UILabel avatarLabel;
+@property (nonatomic) UIButton actionButton;
+@property (nonatomic) <BDARVNovelVerticalVideoEndcardViewDelegate> delegate;
+@property (nonatomic) BDARVADModel adModel;
+- (void)actionBtnClick:;
+- (void)replayBtnClick:;
+- (void)setSourceLabel:;
+- (id)adModel;
+- (void)setAvatarLabel:;
+- (id)avatarLabel;
+- (id)getDefaultAvatarImage;
+- (void)setAdModel:;
+- (void)tapAction:forEvent:;
+- (void)setTitleLabel:;
+- (void)setDelegate:;
+- (id)initWithFrame:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (id)avatar;
+- (void)setAvatar:;
+- (id)actionButton;
+- (void)setActionButton:;
+- (void)setupSubviews;
+- (id)sourceLabel;
+- (double)labelWidth;
+- (id)replayButton;
+- (void)setReplayButton:;
+@end

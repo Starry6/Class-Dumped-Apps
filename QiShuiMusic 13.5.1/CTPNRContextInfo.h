@@ -1,0 +1,32 @@
+@interface CTPNRContextInfo : NSObject
+@property (nonatomic) NSString phoneNumber;
+@property (nonatomic) NSString phoneNumberOnSIM;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) BOOL isReady;
+@property (nonatomic) NSString plmn;
+@property (nonatomic) NSString imsi;
+@property (nonatomic) NSString phoneNumber;
+@property (nonatomic) NSString phoneNumberOnSIM;
+- (id)init;
+- (id)phoneNumber;
+- (void)setPhoneNumber:;
+- (BOOL)isReady;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)plmn;
+- (void)setPlmn:;
+- (BOOL)isEqualToPNRContextInfo:;
+- (void)setIsReady:;
+- (id)imsi;
+- (void)setImsi:;
+- (id)phoneNumberOnSIM;
+- (void)setPhoneNumberOnSIM:;
++ (BOOL)supportsSecureCoding;
+@end

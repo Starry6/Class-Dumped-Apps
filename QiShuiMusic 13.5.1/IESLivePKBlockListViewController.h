@@ -1,0 +1,37 @@
+@interface IESLivePKBlockListViewController : IESLiveRevenueInteractPopupViewController
+@property (nonatomic) q blockType;
+@property (nonatomic) IESLivePKBlockListViewModel viewModel;
+@property (nonatomic) NSString navBarName;
+@property (nonatomic) UITableView tableView;
+@property (nonatomic) IESLiveEmptyView emptyView;
+@property (nonatomic) UIImageView assistImageView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)assistImageView;
+- (void)bindAction;
+- (id)initWithDIContext:blockType:;
+- (id)navBarName;
+- (void)onSetupNavBar:;
+- (double)scrollView:heightForRefreshViewWithRefreshType:refreshState:;
+- (id)scrollView:viewForRefreshWithRefreshType:refreshState:;
+- (void)scrollView:willBeginRefreshWithRefreshType:;
+- (void)setAssistImageView:;
+- (void)setBlockType:;
+- (void)setNavBarName:;
+- (void)showEmptyView;
+- (id)viewModel;
+- (id)tableView:cellForRowAtIndexPath:;
+- (void).cxx_destruct;
+- (void)viewDidAppear:;
+- (void)setTableView:;
+- (void)setViewModel:;
+- (id)tableView;
+- (long long)tableView:numberOfRowsInSection:;
+- (void)viewDidLoad;
+- (void)setupViews;
+- (id)emptyView;
+- (void)setEmptyView:;
+- (long long)blockType;
+@end

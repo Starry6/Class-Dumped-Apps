@@ -1,0 +1,38 @@
+@interface IESLiveMessageListValuePriorityQueue : NSObject
+@property (nonatomic) NSMutableArray lowPriorityArray;
+@property (nonatomic) NSMutableArray middlePriorityArray;
+@property (nonatomic) NSMutableArray highPriorityArray;
+@property (nonatomic) double expireTime;
+@property (nonatomic) q highPriorityArrayMaxCount;
+@property (nonatomic) q middlePriorityArrayMaxCount;
+@property (nonatomic) q lowPriorityArrayMaxCount;
+@property (nonatomic) <IESLivePublicScreenMonitorProtocol> monitor;
+- (void)setMiddlePriorityArrayMaxCount:;
+- (id)highPriorityArray;
+- (long long)highPriorityArrayMaxCount;
+- (double)localTimeStampWith:;
+- (id)lowPriorityArray;
+- (long long)lowPriorityArrayMaxCount;
+- (id)middlePriorityArray;
+- (long long)middlePriorityArrayMaxCount;
+- (id)popObjectsByStrategyWithHighPCount:middlePCount:lowPCount:;
+- (id)popObjectsFromArray:count:;
+- (id)popObjectsFromArrays:count:;
+- (void)pushObject:withPriority:;
+- (void)recordObjectDiscard:withState:;
+- (void)setHighPriorityArray:;
+- (void)setHighPriorityArrayMaxCount:;
+- (void)setLowPriorityArray:;
+- (void)setLowPriorityArrayMaxCount:;
+- (void)setMiddlePriorityArray:;
+- (id)init;
+- (BOOL)isEmpty;
+- (void)setMonitor:;
+- (void)clear;
+- (void).cxx_destruct;
+- (id)monitor;
+- (id)allObjects;
+- (long long)count;
+- (double)expireTime;
+- (void)setExpireTime:;
+@end

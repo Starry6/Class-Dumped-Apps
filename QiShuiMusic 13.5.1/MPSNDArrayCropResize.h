@@ -1,0 +1,32 @@
+@interface MPSNDArrayCropResize : MPSNDArrayMultiaryKernel
+@property (nonatomic) Q resizeHeight;
+@property (nonatomic) Q resizeWidth;
+@property (nonatomic) BOOL normalizeCoordinates;
+@property (nonatomic) float spatialScale;
+@property (nonatomic) I resampleMode;
+@property (nonatomic) I samplingMode;
+@property (nonatomic) I coordinateMode;
+- (id)initWithCoder:device:;
+- (id)copyWithZone:device:;
+- (void)encodeWithCoder:;
+- (id)initWithDevice:;
+- (id)destinationArrayDescriptorForSourceArrays:sourceState:;
+- (void)setResampleMode:;
+- (unsigned long long)resizeWidth;
+- (void)setResizeWidth:;
+- (unsigned long long)resizeHeight;
+- (void)setResizeHeight:;
+- (BOOL)normalizeCoordinates;
+- (void)setNormalizeCoordinates:;
+- (float)spatialScale;
+- (void)setSpatialScale:;
+- (unsigned int)samplingMode;
+- (void)setSamplingMode:;
+- (unsigned int)coordinateMode;
+- (void)setCoordinateMode:;
+- (unsigned long long)kernelDimensionalityForSourceArrays:;
+- (id)dimensionsNotToBeBroadcast;
+- (id)dimensionsToBeRetained;
+- (unsigned int)resampleMode;
++ (id)libraryInfo:;
+@end

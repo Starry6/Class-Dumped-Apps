@@ -1,0 +1,36 @@
+@interface IFIconSpecification : NSObject
+@property (nonatomic) NSArray imageSpecifications;
+@property (nonatomic) NSString name;
+@property (nonatomic) {CGSize=dd} maxSize;
+@property (nonatomic) {CGSize=dd} minSize;
+@property (nonatomic) double maxScale;
+@property (nonatomic) double minScale;
+@property (nonatomic) NSArray allImageSpecifications;
+@property (nonatomic) NSArray variants;
+@property (nonatomic) NSArray allVariants;
+- (id)maxSize;
+- (id)minSize;
+- (id)imageSpecificationsWithTags:withoutTags:;
+- (id)init;
+- (id)imageSpecificationsMatchingPredicate:;
+- (id)variants;
+- (id)imageSpecifications;
+- (id)allImageSpecifications;
+- (id)allVariants;
+- (double)minScale;
+- (id)imageSpecificationForSize:scale:;
+- (double)maxScale;
+- (id)_initWithName:imageSpecifiactions:variants:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)name;
++ (id)iosMessagesAppIconSpecification;
++ (id)macosTemplateIconSpecification;
++ (id)macosIconSpecification;
++ (id)iosDocumentGlyphSpecification;
++ (id)iosDocumentIconSpecification;
++ (id)defaultIconSpecification;
++ (id)macosDocumentIconSpecification;
++ (id)watchAppIconSpecification;
++ (id)iosAppIconSpecification;
+@end

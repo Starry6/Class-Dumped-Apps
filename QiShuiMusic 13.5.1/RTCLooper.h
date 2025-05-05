@@ -1,0 +1,35 @@
+@interface RTCLooper : NSObject
+@property (nonatomic) NSMutableArray eventQueue;
+@property (nonatomic) NSString name;
+@property (nonatomic) NSNumber priority;
+@property (nonatomic) BOOL runningLocally;
+@property (nonatomic) RTCLooperThread thread;
+@property (nonatomic) NSCondition conditionLock;
+@property (nonatomic) NSCondition repiesConditionLock;
+- (id)initWithName:priority:;
+- (long long)postMessage:delayMillis:;
+- (long long)awaitReplyToken:AndAwaitResponse:timeoutMillis:;
+- (long long)signalReplyToken:AndSendResponse:;
+- (id)createReplyToken;
+- (BOOL)runningLocally;
+- (void)setRunningLocally:;
+- (id)conditionLock;
+- (void)setConditionLock:;
+- (id)repiesConditionLock;
+- (void)setRepiesConditionLock:;
+- (void)setEventQueue:;
+- (id)eventQueue;
+- (id)thread;
+- (long long)start:;
+- (void)setPriority:;
+- (void)dealloc;
+- (void)setName:;
+- (long long)registerHandler:;
+- (long long)stop;
+- (void).cxx_destruct;
+- (id)name;
+- (id)priority;
+- (BOOL)loop;
+- (void)setThread:;
+- (void)unregisterHandler:;
+@end

@@ -1,0 +1,2 @@
+@interface AVTextStyleRuleInternal : NSObject
+@end

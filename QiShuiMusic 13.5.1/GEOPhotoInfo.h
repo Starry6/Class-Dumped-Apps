@@ -1,0 +1,34 @@
+@interface GEOPhotoInfo : PBCodable
+@property (nonatomic) BOOL hasSize;
+@property (nonatomic) NSInteger size;
+@property (nonatomic) BOOL hasUrl;
+@property (nonatomic) NSString url;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (int)StringAsSize:;
+- (void)readAll:;
+- (id)unknownFields;
+- (void)setHasSize:;
+- (BOOL)hasSize;
+- (id)url;
+- (BOOL)hasUrl;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (id)sizeAsString:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)setUrl:;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (void)setSize:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (int)size;
+- (id)initWithPlaceDataPhotoContent:;
++ (BOOL)isValid:;
+@end

@@ -1,0 +1,33 @@
+@interface IESLiveSaaSAudienceListEnterItem : UIButton
+@property (nonatomic) q lastValue;
+@property (nonatomic) q destinationValue;
+@property (nonatomic) CADisplayLink timer;
+@property (nonatomic) double progress;
+@property (nonatomic) double lastUpdate;
+@property (nonatomic) double totalTime;
+@property (nonatomic) BOOL isDouPlusEnable;
+@property (nonatomic) MASConstraint unexpectwidth;
+- (BOOL)isDouPlusEnable;
+- (long long)destinationValue;
+- (void)refreshUserCount:isDouPlusEnable:enableAnimation:;
+- (void)setDestinationValue:;
+- (void)setIsDouPlusEnable:;
+- (void)setUnexpectwidth:;
+- (id)unexpectwidth;
+- (void)updateItemConfig:isDouPlusEnable:;
+- (double)totalTime;
+- (double)lastUpdate;
+- (id)currentValue;
+- (id)intrinsicContentSize;
+- (void)setProgress:;
+- (long long)lastValue;
+- (void)setTimer:;
+- (double)progress;
+- (void)setTotalTime:;
+- (id)sizeThatFits:;
+- (void).cxx_destruct;
+- (id)timer;
+- (void)setLastUpdate:;
+- (void)updateValue;
+- (void)setLastValue:;
+@end

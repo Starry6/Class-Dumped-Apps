@@ -1,0 +1,38 @@
+@interface AWEIMBaseCollectionView : UICollectionView
+@property (nonatomic) NSMutableArray<AWEIMBaseCollectionViewSessionProtocol> sessions;
+@property (nonatomic) NSMapTable cellViewModelMap;
+@property (nonatomic) <AWEIMBaseCollectionViewProtocol> collectionViewDelegate;
+@property (nonatomic) <AWEIMBaseCollectionViewEventProtocol> cellDelegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)awe_collectionView:afterConfigCell:atIndexPath:;
+- (void)awe_collectionView:beforeConfigCell:atIndexPath:;
+- (id)cellReuseIdentifierWithViewModel:;
+- (id)cellViewModelMap;
+- (id)collectionViewDelegate;
+- (id)getSession:;
+- (void)registerCell:forViewModel:;
+- (void)registerCellClass:;
+- (void)setCellViewModelMap:;
+- (void)setCollectionViewDelegate:;
+- (id)collectionView:layout:sizeForItemAtIndexPath:;
+- (double)collectionView:layout:minimumLineSpacingForSectionAtIndex:;
+- (double)collectionView:layout:minimumInteritemSpacingForSectionAtIndex:;
+- (void)setSessions:;
+- (id)initWithFrame:collectionViewLayout:;
+- (id)init;
+- (void)collectionView:willDisplayCell:forItemAtIndexPath:;
+- (id)sessions;
+- (long long)collectionView:numberOfItemsInSection:;
+- (void)registerSession:;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (id)initWithFrame:;
+- (void)setup;
+- (void).cxx_destruct;
+- (long long)numberOfSectionsInCollectionView:;
+- (id)cellDelegate;
+- (void)setCellDelegate:;
+@end

@@ -1,0 +1,2 @@
+@interface HTSLiveLinkMicSignalingRoot : GPBRootObject
+@end

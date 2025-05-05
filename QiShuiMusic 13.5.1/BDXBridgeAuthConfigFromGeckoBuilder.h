@@ -1,0 +1,30 @@
+@interface BDXBridgeAuthConfigFromGeckoBuilder : NSObject
+@property (nonatomic) NSString accessKey;
+@property (nonatomic) NSString authDomain;
+@property (nonatomic) NSString deviceId;
+@property (nonatomic) NSString appVersion;
+@property (nonatomic) NSString appId;
+@property (nonatomic) NSArray extraChannels;
+@property (nonatomic) NSString boeHostSuffix;
+@property (nonatomic) q delay;
+@property (nonatomic) BOOL builtinAuthInfosEnabled;
+- (id)authDomain;
+- (id)boeHostSuffix;
+- (BOOL)builtinAuthInfosEnabled;
+- (id)extraChannels;
+- (void)setAuthDomain:;
+- (void)setBoeHostSuffix:;
+- (void)setBuiltinAuthInfosEnabled:;
+- (void)setExtraChannels:;
+- (void)setAppVersion:;
+- (id)appVersion;
+- (id)deviceId;
+- (void)setDeviceId:;
+- (id)appId;
+- (long long)delay;
+- (void)setAppId:;
+- (void)setDelay:;
+- (void).cxx_destruct;
+- (id)accessKey;
+- (void)setAccessKey:;
+@end

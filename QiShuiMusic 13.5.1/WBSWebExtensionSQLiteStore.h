@@ -1,0 +1,32 @@
+@interface WBSWebExtensionSQLiteStore : NSObject
+@property (nonatomic) NSInteger _currentDatabaseSchemaVersion;
+@property (nonatomic) NSURL _databaseURL;
+@property (nonatomic) BOOL useInMemoryDatabase;
+- (void)dealloc;
+- (id)_deleteDatabase;
+- (BOOL)_isDatabaseOpen;
+- (int)_migrateToCurrentSchemaVersionIfNeeded;
+- (int)_createFreshDatabaseSchema;
+- (int)_setDatabaseSchemaVersion:;
+- (void).cxx_destruct;
+- (id)_databaseURL;
+- (void)_vacuum;
+- (id)initWithComposedIdentifier:usesInMemoryDatabase:;
+- (void)deleteDatabaseWithCompletionHandler:;
+- (int)_currentDatabaseSchemaVersion;
+- (int)_resetDatabaseSchema;
+- (BOOL)_isDatabaseEmpty;
+- (id)_savepointNameFromUUID:;
+- (void)createSavepointWithCompletionHandler:;
+- (void)commitSavepoint:completionHandler:;
+- (void)rollbackToSavepoint:completionHandler:;
+- (BOOL)useInMemoryDatabase;
+- (BOOL)_openDatabaseIfNecessaryReturningErrorMessage:;
+- (id)_openDatabase:deleteDatabaseFileOnError:;
+- (id)_deleteDatabaseFileAtURL:reopenDatabase:;
+- (void)_deleteExtensionStorageFolderIfEmpty;
+- (id)_deleteDatabaseIfEmpty;
+- (id)_handleSchemaVersioningWithDeleteDatabaseFileOnError:;
++ (id)_urlForExtensionStorageFolderWithIdentifier:;
++ (void)deleteStorageForComposedIdentifier:completionHandler:;
+@end

@@ -1,0 +1,30 @@
+@interface IESLiveMultiLinkerBattleView : HTSEventForwardingView
+@property (nonatomic) IESLiveRevenueInteractPlayAnchorModel model;
+@property (nonatomic) UIView scoreViewContainer;
+@property (nonatomic) UIView personalBarContainer;
+@property (nonatomic) UIView effectInfoContainer;
+- (id)effectInfoContainer;
+- (void)handleNativeComponents:;
+- (id)initWithFrame:model:diContext:;
+- (BOOL)needLoadPersonalBarContainer;
+- (BOOL)needThinPersonalBarOffset;
+- (BOOL)needTopPersonalBarOffset;
+- (id)personalBarContainer;
+- (void)refreshEffectInfoContainerWithHeight:;
+- (void)resetBattleInfoViewFrame;
+- (id)scoreViewContainer;
+- (void)setBattleInfoViewFrame:;
+- (void)setEffectInfoContainer:;
+- (void)setPersonalBarContainer:;
+- (void)setScoreViewContainer:;
+- (void)setupPersonalBarContainer;
+- (void)setupScoreViewContainer;
+- (void)updateBattleViewWithFrame:;
+- (void)updatePersonalBarContainer;
+- (void)updateViewWithClear:;
+- (double)viewPadBottomOffset;
+- (double)viewPadTopOffset;
+- (id)model;
+- (void)setModel:;
+- (void).cxx_destruct;
+@end

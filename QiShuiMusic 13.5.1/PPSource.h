@@ -1,0 +1,33 @@
+@interface PPSource : NSObject
+@property (nonatomic) PPSourceMetadata metadata;
+@property (nonatomic) NSDate relevanceDate;
+@property (nonatomic) NSString language;
+@property (nonatomic) NSArray contactHandles;
+@property (nonatomic) NSString bundleId;
+@property (nonatomic) NSString groupId;
+@property (nonatomic) NSString documentId;
+@property (nonatomic) NSDate date;
+@property (nonatomic) NSSet featureNames;
+- (id)initWithBundleId:groupId:documentId:date:;
+- (id)language;
+- (id)relevanceDate;
+- (id)bundleId;
+- (id)initWithBundleId:groupId:documentId:date:relevanceDate:contactHandles:language:metadata:;
+- (id)metadata;
+- (id)featureValueForName:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)featureNames;
+- (id)sha256;
+- (id)date;
+- (void)encodeWithCoder:;
+- (BOOL)isEqualToSource:;
+- (id)groupId;
+- (id)documentId;
+- (id)contactHandles;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
++ (BOOL)supportsSecureCoding;
+@end

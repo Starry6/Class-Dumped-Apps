@@ -1,0 +1,35 @@
+@interface PLUSSchemaPLUSContactSuggestionAccuracySignalReported : SISchemaInstrumentationMessage
+@property (nonatomic) SISchemaUUID originalPlusId;
+@property (nonatomic) BOOL hasOriginalPlusId;
+@property (nonatomic) SISchemaUUID suggestionId;
+@property (nonatomic) BOOL hasSuggestionId;
+@property (nonatomic) PLUSSchemaPLUSSuggestionAccuracySignal accuracySignal;
+@property (nonatomic) BOOL hasAccuracySignal;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (id)suggestionId;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void)setSuggestionId:;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (BOOL)hasOriginalPlusId;
+- (void)deleteOriginalPlusId;
+- (id)originalPlusId;
+- (void)setOriginalPlusId:;
+- (void)setHasOriginalPlusId:;
+- (BOOL)hasSuggestionId;
+- (void)deleteSuggestionId;
+- (void)setHasSuggestionId:;
+- (BOOL)hasAccuracySignal;
+- (void)deleteAccuracySignal;
+- (id)accuracySignal;
+- (void)setAccuracySignal:;
+- (void)setHasAccuracySignal:;
+@end

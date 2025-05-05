@@ -1,0 +1,36 @@
+@interface DODMLASRSchemaDODMLASRUtteranceInfo : SISchemaInstrumentationMessage
+@property (nonatomic) NSArray results;
+@property (nonatomic) Q startTimeInNs;
+@property (nonatomic) BOOL hasStartTimeInNs;
+@property (nonatomic) Q endTimeInNs;
+@property (nonatomic) BOOL hasEndTimeInNs;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (unsigned long long)resultsCount;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void)addResults:;
+- (void)clearResults;
+- (id)results;
+- (id)resultsAtIndex:;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)setResults:;
+- (void)setStartTimeInNs:;
+- (void)setEndTimeInNs:;
+- (BOOL)hasStartTimeInNs;
+- (void)setHasStartTimeInNs:;
+- (void)deleteStartTimeInNs;
+- (BOOL)hasEndTimeInNs;
+- (void)setHasEndTimeInNs:;
+- (void)deleteEndTimeInNs;
+- (unsigned long long)startTimeInNs;
+- (unsigned long long)endTimeInNs;
+- (void)deleteResults;
+@end

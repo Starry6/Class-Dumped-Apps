@@ -1,0 +1,32 @@
+@interface SSVPlayActivityController : NSObject
+@property (nonatomic) Q writingStyle;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (id)initWithWritingStyle:;
+- (void)acquirePendingPlayActivityEventsForEndpointIdentifier:withStoreAccountID:completionHandler:;
+- (void)acquirePendingPlayActivityEventsForEndpointIdentifier:withCompletionHandler:;
+- (void)completePendingPlayActivityEvents:forSessionToken:withResult:completionHandler:;
+- (void)completePendingPlayActivityEventPersistentIDs:forSessionToken:withResult:completionHandler:;
+- (void)flushPendingPlayActivityEventsForEndpointIdentifier:withCompletionHandler:;
+- (void)getHasPendingPlayEventsForEndpointIdentifier:withCompletionHandler:;
+- (void)getRevisionInformationWithCompletionHandler:;
+- (void)getPlayActivityEventsFromRevision:toRevision:withCompletionHandler:;
+- (void)recordPlayActivityEvents:withCompletionHandler:;
+- (void)removeFlushedPlayActivityEventsWithCompletionHandler:;
+- (void)removePlayActivityEventsUpToRevision:withCompletionHandler:;
+- (void)setCurrentRevision:revisionVersionToken:forEndpointIdentifier:withCompletionHandler:;
+- (void)_acquirePendingPlayActivityEventsForEndpointIdentifier:withStoreAccountID:shouldFilterStoreAccountID:completionHandler:;
+- (void)_completePendingPlayEventsWithRevisionIndexSet:forSessionToken:withResult:completionHandler:;
+- (id)_daemonPlayActivityControllerConnection;
+- (id)_copyEndpointRevisionInformationForEndpointIdentifier:;
+- (void)_getFlushSessionInformationForEndpointIdentifier:shouldAcquire:storeAccountID:shouldFilterStoreAccountID:withCompletionHandler:;
+- (void)_loadEndpointIdentifierInformationIfNeeded;
+- (id)_revisionsIndexSetForPlayActivityEvents:;
+- (id)_revisionsIndexSetForPlayActivityEventPersistentIDs:;
+- (id)_sessionInformationForSessionToken:;
+- (BOOL)_setEndpointRevisionInformation:forEndpointIdentifier:;
+- (void)_setupNotifyTokenIfNeeded;
+- (unsigned long long)writingStyle;
++ (id)_requiredEndpointIdentifiers;
+@end

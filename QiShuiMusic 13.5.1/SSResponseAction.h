@@ -1,0 +1,30 @@
+@interface SSResponseAction : NSObject
+@property (nonatomic) NSString actionType;
+@property (nonatomic) SSAccount account;
+@property (nonatomic) NSString clientIdentifier;
+@property (nonatomic) NSString creditsString;
+@property (nonatomic) SSDialog dialog;
+@property (nonatomic) NSString footerSection;
+@property (nonatomic) NSURL URL;
+@property (nonatomic) q URLBagType;
+- (id)account;
+- (id)actionType;
+- (id)creditsString;
+- (void).cxx_destruct;
+- (id)description;
+- (id)clientIdentifier;
+- (id)URL;
+- (id)copyWithZone:;
+- (id)dialog;
+- (long long)URLBagType;
+- (id)footerSection;
++ (id)_actionWithActionType:;
++ (id)_checkInAppQueueActionWithClientID:environment:;
++ (id)_dialogActionWithDialog:;
++ (id)_dialogActionWithTouchIDDialog:;
++ (id)_invalidateURLBagsAction;
++ (id)_selectFooterActionWithSection:;
++ (id)_setActiveAccountActionWithAccount:;
++ (id)_setCreditsActionWithCredits:account:;
++ (id)_urlActionWithType:URL:;
+@end

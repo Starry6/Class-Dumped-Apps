@@ -1,0 +1,30 @@
+@interface AWEIMVideoTransCoderOperation : NSOperation
+@property (nonatomic) NSString assetIdentifier;
+@property (nonatomic) NSString locoalVideoPath;
+@property (nonatomic) AVAsset asset;
+@property (nonatomic) @? completion;
+@property (nonatomic) AWEIMPhotoAlbumLoader assetLoader;
+@property (nonatomic) NSString messageId;
+- (id)locoalVideoPath;
+- (id)initWithVideoAsset:messageId:completion:;
+- (id)initWithVideoAssetIdentifier:locoalVideoPath:messageId:completion:;
+- (void)markFinish;
+- (void)setLocoalVideoPath:;
+- (id)completion;
+- (void)setCompletion:;
+- (void)dealloc;
+- (id)messageId;
+- (void)start;
+- (id)asset;
+- (id)assetLoader;
+- (BOOL)isExecuting;
+- (BOOL)isAsynchronous;
+- (BOOL)isFinished;
+- (void).cxx_destruct;
+- (void)setAsset:;
+- (void)setAssetLoader:;
+- (void)setMessageId:;
+- (id)assetIdentifier;
+- (void)setAssetIdentifier:;
+- (void)transcode;
+@end

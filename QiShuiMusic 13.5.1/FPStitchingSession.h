@@ -1,0 +1,38 @@
+@interface FPStitchingSession : NSObject
+@property (nonatomic) @? placeholdersCreationBlock;
+@property (nonatomic) NSArray placeholderItems;
+@property (nonatomic) NSDictionary stitchedFieldsAndItemsByItemIDs;
+@property (nonatomic) NSDictionary stitchedItemsByParentID;
+@property (nonatomic) NSArray placeholderReplacementsIDs;
+@property (nonatomic) NSArray deletedIDs;
+@property (nonatomic) BOOL isActive;
+- (id)init;
+- (void)dealloc;
+- (void)start;
+- (void)finish;
+- (void)flush;
+- (void).cxx_destruct;
+- (void)deleteItems:;
+- (BOOL)isActive;
+- (id)stitchedFieldsAndItemsByItemIDs;
+- (id)placeholderItems;
+- (id)placeholderReplacementsIDs;
+- (BOOL)cleanStitchedItemForItemID:;
+- (id)stitchedItemsByParentID;
+- (id)deletedIDs;
+- (void)transformItems:handler:;
+- (void)trashItems:;
+- (void)finishWithItems:error:;
+- (void)finishWithItem:error:;
+- (void)associateItem:withPlaceholderID:;
+- (id)itemWithPlaceholderID:;
+- (void)replacePlaceholderWithID:withItem:;
+- (id)createPlaceholderWithCopyOfExistingItem:lastUsageUpdatePolicy:underParent:inProviderDomainID:;
+- (id)createGenericArchivePlaceholderUnderParent:inProviderDomainID:;
+- (id)createArchivePlaceholderForItem:underParent:inProviderDomainID:;
+- (id)createPlaceholderWithName:isFolder:contentAccessDate:underParent:inProviderDomainID:;
+- (id)createPlaceholderWithName:typeIdentifier:contentAccessDate:underParent:inProviderDomainID:;
+- (id)createPlaceholderWithName:contentType:contentAccessDate:underParent:inProviderDomainID:;
+- (id)placeholdersCreationBlock;
+- (void)setPlaceholdersCreationBlock:;
+@end

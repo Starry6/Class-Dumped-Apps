@@ -1,0 +1,34 @@
+@interface SFSportsTeam : NSObject
+@property (nonatomic) SFImage logo;
+@property (nonatomic) NSString record;
+@property (nonatomic) NSString score;
+@property (nonatomic) NSString accessibilityDescription;
+@property (nonatomic) NSString name;
+@property (nonatomic) SFButtonItem button;
+@property (nonatomic) NSDictionary dictionaryRepresentation;
+@property (nonatomic) NSData jsonData;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setName:;
+- (id)score;
+- (id)initWithProtobuf:;
+- (id)accessibilityDescription;
+- (id)record;
+- (void)setLogo:;
+- (id)initWithCoder:;
+- (id)jsonData;
+- (void)encodeWithCoder:;
+- (id)button;
+- (void)setScore:;
+- (id)logo;
+- (void).cxx_destruct;
+- (void)setRecord:;
+- (id)name;
+- (id)dictionaryRepresentation;
+- (void)setButton:;
+- (id)copyWithZone:;
+- (void)setAccessibilityDescription:;
++ (BOOL)supportsSecureCoding;
+@end

@@ -1,0 +1,31 @@
+@interface IESLiveInteractLinkMicMatchSuccessPanelConfig : NSObject
+@property (nonatomic) HTSLiveImage avatarImage;
+@property (nonatomic) NSString name;
+@property (nonatomic) Q gender;
+@property (nonatomic) NSArray tagStrings;
+@property (nonatomic) Q scene;
+@property (nonatomic) BOOL enableCountdown;
+@property (nonatomic) q countdownInSec;
+@property (nonatomic) BOOL isLinkUsersExposedStyle;
+@property (nonatomic) NSArray linkUserAvatarURLs;
+- (BOOL)enableCountdown;
+- (long long)countdownInSec;
+- (BOOL)isLinkUsersExposedStyle;
+- (id)linkUserAvatarURLs;
+- (void)setCountdownInSec:;
+- (void)setEnableCountdown:;
+- (void)setIsLinkUsersExposedStyle:;
+- (void)setLinkUserAvatarURLs:;
+- (void)setTagStrings:;
+- (id)tagStrings;
+- (id)init;
+- (void)setScene:;
+- (void)setName:;
+- (unsigned long long)gender;
+- (void)setGender:;
+- (unsigned long long)scene;
+- (void).cxx_destruct;
+- (id)name;
+- (void)setAvatarImage:;
+- (id)avatarImage;
+@end

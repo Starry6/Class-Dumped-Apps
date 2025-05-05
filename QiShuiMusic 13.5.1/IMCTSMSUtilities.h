@@ -1,0 +1,33 @@
+@interface IMCTSMSUtilities : NSObject
++ (id)carrierNameForPhoneNumber:;
++ (BOOL)IMIsEagerUploadEnabledForPhoneNumber:simID:;
++ (id)IMMMSEmailAddressToMatchForPhoneNumber:simID:;
++ (BOOL)IMMMSGroupTextOnlyMessagesSendAsMMSForPhoneNumber:simID:;
++ (int)IMMMSMaxRecipientsForPhoneNumber:simID:;
++ (double)IMMMSMaximumAudioDurationForPhoneNumber:simID:;
++ (int)IMMMSMaximumMessageByteCountForPhoneNumber:simID:;
++ (int)IMMMSMaximumSlideCountForPhoneNumber:simID:;
++ (double)IMMMSMaximumVideoDurationForPhoneNumber:simID:;
++ (BOOL)IMMMSRestrictedModeEnabledForPhoneNumber:simID:;
++ (BOOL)IMMessagesFilteringSettingForPreferedSubscription;
++ (BOOL)IMShouldShowMMSEmailAddress:simID:;
++ (void)IMiMessageMaxTransferFileSizeForWifiForPhoneNumber:cellSize:serverConfigurationBag:phoneNumber:simID:;
++ (id)IMUniqueIdentifierForPhoneNumber:simID:;
++ (BOOL)IMReadMMSUserOverrideForPhoneNumber:simID:;
++ (id)IMPhoneNumbersEnabledForMultipleSubscriptionDevice;
++ (BOOL)IMMMSEnabledForPhoneNumber:simID:;
++ (BOOL)IMReadEnablePreviewTranscodingQualityCarrierValueForPhoneNumber:simID:;
++ (BOOL)IMReadDisablePreviewTranscodingQualityOnWiFiCarrierValueForPhoneNumber:simID:;
++ (unsigned long long)IMReadAttachmentPreviewTranscodingQualitySizeCarrierValueForPhoneNumber:simID:;
++ (BOOL)IMMMSSupportedAndConfiguredForPhoneNumber:simID:;
++ (int)IMMMSMaxImageDimensionForPhoneNumber:simID:;
++ (BOOL)IMMMSSupportsH264VideoForPhoneNumber:simID:;
++ (double)IMMMSMaximumDurationWithPreset:phoneNumber:simID:;
++ (unsigned long long)IMiMessageMaxTransferAudioFileSizeForWifiForPhoneNumber:cellSize:serverConfigurationBag:phoneNumber:simID:;
++ (unsigned long long)IMiMessageMaxTransferVideoFileSizeForWifiForPhoneNumber:cellSize:serverConfigurationBag:phoneNumber:simID:;
++ (BOOL)IMMMSEagerUploadDisabledInCarrierBundleForPhoneNumber:simID:;
++ (BOOL)MMSRestrictedModeEnabledForPhoneNumber:simID:reset:;
++ (void)IMSynchronizeMMSCapabilityToWatch:;
++ (void)IMSynchronizePreferredSubscriptionMMSCapabilityToWatch;
++ (id)carrierBundleValueForKeyHierarchy:phoneNumber:simID:;
+@end

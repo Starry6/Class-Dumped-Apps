@@ -1,0 +1,30 @@
+@interface VKAnalyticsTextEvent : VKAnalyticsEvent
+@property (nonatomic) q source;
+@property (nonatomic) q textEventType;
+@property (nonatomic) Q selectionLength;
+@property (nonatomic) Q selectionWordCount;
+@property (nonatomic) Q totalLength;
+@property (nonatomic) BOOL includesRichPasteboardContent;
+@property (nonatomic) : macOSKBNavigationSelector;
+@property (nonatomic) q eventType;
+- (long long)eventType;
+- (id)eventKey;
+- (long long)type;
+- (id)coreAnalyticsDictionary;
+- (long long)source;
+- (id)description;
+- (void)setSource:;
+- (void)setTotalLength:;
+- (unsigned long long)totalLength;
+- (unsigned long long)selectionLength;
+- (void)setSelectionLength:;
+- (id)initWithSelectionLength:totalLength:selectionWordCount:macOSSelector:includesRichPasteBoardContent:eventType:source:customIdentifier:;
+- (unsigned long long)selectionWordCount;
+- (void)setSelectionWordCount:;
+- (SEL)macOSKBNavigationSelector;
+- (void)setMacOSKBNavigationSelector:;
+- (long long)textEventType;
+- (void)setTextEventType:;
+- (BOOL)includesRichPasteboardContent;
+- (void)setIncludesRichPasteboardContent:;
+@end

@@ -1,0 +1,32 @@
+@interface BDXLynxRevealView : LynxUI
+@property (nonatomic) NSString mode;
+@property (nonatomic) NSString dragEdge;
+@property (nonatomic) BDXLynxRevealViewInnerView innerView;
+@property (nonatomic) UIView contentView;
+@property (nonatomic) BOOL hasDataChanged;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)dragEdge;
+- (BOOL)hasDataChanged;
+- (id)hitTest:withEvent:onUIWithCustomLayout:;
+- (void)layoutDidFinished;
+- (void)mode:requestReset:;
+- (void)setDragEdge:;
+- (void)setHasDataChanged:;
+- (void)setInnerView:;
+- (void)toggleActive:withResult:;
+- (id)contentView;
+- (void)changeState:;
+- (id)hitTest:withEvent:;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (id)mode;
+- (void)setMode:;
+- (void)insertChild:atIndex:;
+- (id)createView;
+- (id)innerView;
++ (id)__lynx_prop_config__2900;
++ (id)__lynx_ui_method_config__2931;
+@end

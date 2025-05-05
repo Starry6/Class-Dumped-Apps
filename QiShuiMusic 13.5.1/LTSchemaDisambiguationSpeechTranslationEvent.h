@@ -1,0 +1,34 @@
+@interface LTSchemaDisambiguationSpeechTranslationEvent : SISchemaInstrumentationMessage
+@property (nonatomic) NSString requestID;
+@property (nonatomic) BOOL hasRequestID;
+@property (nonatomic) NSString sourceLocale;
+@property (nonatomic) BOOL hasSourceLocale;
+@property (nonatomic) NSString senseID;
+@property (nonatomic) BOOL hasSenseID;
+@property (nonatomic) NSData jsonData;
+- (BOOL)hasRequestID;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (id)requestID;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)setRequestID:;
+- (id)sourceLocale;
+- (void)deleteRequestID;
+- (void)setHasRequestID:;
+- (BOOL)hasSourceLocale;
+- (void)deleteSourceLocale;
+- (BOOL)hasSenseID;
+- (void)deleteSenseID;
+- (void)setSourceLocale:;
+- (id)senseID;
+- (void)setSenseID:;
+- (void)setHasSourceLocale:;
+- (void)setHasSenseID:;
+@end

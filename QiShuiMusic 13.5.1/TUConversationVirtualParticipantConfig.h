@@ -1,0 +1,32 @@
+@interface TUConversationVirtualParticipantConfig : NSObject
+@property (nonatomic) Q connectionRetryIntervalMillis;
+@property (nonatomic) Q connectionMaxAttempts;
+@property (nonatomic) Q rpcStreamRetryIntervalMillis;
+@property (nonatomic) Q rpcStreamMaxAttempts;
+@property (nonatomic) BOOL serverCertValidationEnabled;
+@property (nonatomic) NSString serverCertHostnameOverride;
+@property (nonatomic) NSString serverCertLeafMarkerOIDOverride;
+@property (nonatomic) NSData idsAliasingSalt;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (unsigned long long)connectionRetryIntervalMillis;
+- (unsigned long long)connectionMaxAttempts;
+- (unsigned long long)rpcStreamRetryIntervalMillis;
+- (unsigned long long)rpcStreamMaxAttempts;
+- (BOOL)serverCertValidationEnabled;
+- (id)serverCertHostnameOverride;
+- (id)serverCertLeafMarkerOIDOverride;
+- (id)idsAliasingSalt;
+- (id)initWithConnectionRetryIntervalMillis:connectionMaxAttempts:rpcStreamRetryIntervalMillis:rpcStreamMaxAttempts:serverCertValidationEnabled:serverCertHostnameOverride:serverCertLeafMarkerOIDOverride:;
+- (BOOL)isEqualToConversationVirtualParticipantConfig:;
+- (void)setIdsAliasingSalt:;
++ (BOOL)supportsSecureCoding;
++ (id)serverCertValidationEnabledUserDefaultsKey;
++ (id)serverCertHostnameUserDefaultsKey;
++ (id)serverCertLeafMarkerOIDUserDefaultsKey;
+@end

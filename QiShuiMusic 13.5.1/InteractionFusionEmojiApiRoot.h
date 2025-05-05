@@ -1,0 +1,2 @@
+@interface InteractionFusionEmojiApiRoot : GPBRootObject
+@end

@@ -1,0 +1,38 @@
+@interface LPQuoteView : LPComponentView
+@property (nonatomic) NSAttributedString attributedString;
+@property (nonatomic) LPQuotedTextViewStyle style;
+@property (nonatomic) q overrideMaximumNumberOfLines;
+@property (nonatomic) NSRegularExpression emphasizedTextExpression;
+- (void)setFont:;
+- (id)attributedString;
+- (id)effectiveInsets;
+- (void)tintColorDidChange;
+- (id)sizeThatFits:;
+- (id)initWithHost:;
+- (void).cxx_destruct;
+- (void)setContentInset:;
+- (id)style;
+- (double)descender;
+- (double)ascender;
+- (id)lastBaselineAnchor;
+- (id)firstBaselineAnchor;
+- (void)layoutComponentView;
+- (double)firstLineLeading;
+- (double)lastLineDescent;
+- (long long)computedNumberOfLines;
+- (long long)overrideMaximumNumberOfLines;
+- (void)setOverrideMaximumNumberOfLines:;
+- (id)emphasizedTextExpression;
+- (void)setEmphasizedTextExpression:;
+- (BOOL)_lp_isLTR;
+- (id)initWithHost:text:style:;
+- (void)_buildSubviewsIfNeeded;
+- (id)effectiveAttributedString;
+- (long long)effectiveMaximumNumberOfLines;
+- (void)applyAttributedString:;
+- (long long)computedNumberOfLinesWithFont:forSize:;
+- (id)effectiveInsetsWithoutQuoteIndicator;
+- (void)updateExclusionRects;
+- (void)updateEffectiveFontForSize:;
+- (id)_createTextView;
+@end

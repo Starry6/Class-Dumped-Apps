@@ -1,0 +1,36 @@
+@interface GEOExternalRequestCounterInfo : NSObject
+@property (nonatomic) NSString appId;
+@property (nonatomic) NSDate startTime;
+@property (nonatomic) NSDate endTime;
+@property (nonatomic) q xmitBytes;
+@property (nonatomic) q recvBytes;
+@property (nonatomic) Q usedInterface;
+@property (nonatomic) NSString requestType;
+@property (nonatomic) NSString requestSubtype;
+@property (nonatomic) NSString source;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)requestType;
+- (void)setRequestType:;
+- (id)appId;
+- (void)setStartTime:;
+- (void)setEndTime:;
+- (void)encodeToXPCDictionary:;
+- (void)setAppId:;
+- (id)startTime;
+- (id)initWithXPCDictionary:error:;
+- (id)endTime;
+- (void).cxx_destruct;
+- (id)source;
+- (void)setSource:;
+- (long long)xmitBytes;
+- (long long)recvBytes;
+- (void)setXmitBytes:;
+- (void)setRecvBytes:;
+- (unsigned long long)usedInterface;
+- (void)setUsedInterface:;
+- (id)requestSubtype;
+- (void)setRequestSubtype:;
+@end

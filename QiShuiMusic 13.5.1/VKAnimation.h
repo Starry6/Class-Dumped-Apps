@@ -1,0 +1,38 @@
+@interface VKAnimation : NSObject
+@property (nonatomic) q state;
+@property (nonatomic) BOOL running;
+@property (nonatomic) BOOL runsForever;
+@property (nonatomic) float frequency;
+@property (nonatomic) BOOL hasFrequency;
+@property (nonatomic) double duration;
+@property (nonatomic) BOOL timed;
+@property (nonatomic) @? completionHandler;
+@property (nonatomic) q priority;
+@property (nonatomic) NSString name;
+- (id)initWithPriority:;
+- (void)setRunsForever:;
+- (void)stopAnimation:;
+- (void)startWithRunner:;
+- (float)frequency;
+- (void)setFrequency:;
+- (BOOL)runsForever;
+- (BOOL)running;
+- (void)stop;
+- (void)setCompletionHandler:;
+- (id)initWithName:;
+- (void)transferToRunner:;
+- (BOOL)hasFrequency;
+- (void)setDuration:;
+- (void)resume;
+- (void)onTimerFired:;
+- (long long)state;
+- (void).cxx_destruct;
+- (id)description;
+- (id)name;
+- (void)pause;
+- (double)duration;
+- (id)initWithPriority:name:;
+- (BOOL)timed;
+- (id)completionHandler;
+- (long long)priority;
+@end

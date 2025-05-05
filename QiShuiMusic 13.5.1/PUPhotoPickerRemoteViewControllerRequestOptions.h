@@ -1,0 +1,38 @@
+@interface PUPhotoPickerRemoteViewControllerRequestOptions : NSObject
+@property (nonatomic) NSUUID requestedIdentifier;
+@property (nonatomic) NSString requestedClassName;
+@property (nonatomic) NSDictionary photoPickerProperties;
+@property (nonatomic) q modalPresentationStyle;
+@property (nonatomic) q sourceType;
+@property (nonatomic) Q savingOptions;
+@property (nonatomic) NSArray mediaTypes;
+@property (nonatomic) BOOL allowsMultipleSelection;
+@property (nonatomic) Q multipleSelectionLimit;
+@property (nonatomic) BOOL requiresPickingConfirmation;
+@property (nonatomic) BOOL showsFileSizePicker;
+@property (nonatomic) BOOL showsPrompt;
+@property (nonatomic) BOOL convertAutoloopsToGIF;
+- (long long)modalPresentationStyle;
+- (long long)sourceType;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)initWithRequestedIdentifier:photoPickerProperties:;
+- (id)initWithRequestedClassName:photoPickerProperties:;
+- (BOOL)allowsMultipleSelection;
+- (id)mediaTypes;
+- (id)photoPickerProperties;
+- (unsigned long long)savingOptions;
+- (unsigned long long)multipleSelectionLimit;
+- (BOOL)requiresPickingConfirmation;
+- (BOOL)showsFileSizePicker;
+- (BOOL)showsPrompt;
+- (BOOL)convertAutoloopsToGIF;
+- (void)setRequestedIdentifier:;
+- (id)requestedIdentifier;
+- (id)requestedClassName;
+- (void)setRequestedClassName:;
+- (void)setPhotoPickerProperties:;
++ (BOOL)supportsSecureCoding;
+@end

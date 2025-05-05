@@ -1,0 +1,35 @@
+@interface IMSharedUtilitiesProtoCloudKitEncryptedMessageP3 : PBCodable
+@property (nonatomic) BOOL hasVersion;
+@property (nonatomic) I version;
+@property (nonatomic) BOOL hasCmmState;
+@property (nonatomic) I cmmState;
+@property (nonatomic) BOOL hasCmmAssetOffset;
+@property (nonatomic) I cmmAssetOffset;
+@property (nonatomic) BOOL hasPadding;
+@property (nonatomic) NSData padding;
+- (void)setHasVersion:;
+- (void)dealloc;
+- (void)setVersion:;
+- (unsigned int)version;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (BOOL)hasVersion;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void)setPadding:;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)padding;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasPadding;
+- (void)setCmmState:;
+- (void)setHasCmmState:;
+- (BOOL)hasCmmState;
+- (void)setCmmAssetOffset:;
+- (void)setHasCmmAssetOffset:;
+- (BOOL)hasCmmAssetOffset;
+- (unsigned int)cmmState;
+- (unsigned int)cmmAssetOffset;
+@end

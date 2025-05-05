@@ -1,0 +1,37 @@
+@interface IESEffectDownloadResultInfo : NSObject
+@property (nonatomic) Q downloadAlgorithmModelCount;
+@property (nonatomic) Q dependentAlgorithmModelCount;
+@property (nonatomic) double unzipTime;
+@property (nonatomic) double md5HashTime;
+@property (nonatomic) BOOL isParallelDownload;
+@property (nonatomic) double effectDonwloadTime;
+@property (nonatomic) double algorithmModelDownloadTime;
+@property (nonatomic) NSError algorithmModelDownloadError;
+@property (nonatomic) NSError effectDownloadError;
+@property (nonatomic) Q networkType;
+@property (nonatomic) BOOL hitCache;
+- (void)setAlgorithmModelDownloadError:;
+- (void)setDownloadAlgorithmModelCount:;
+- (void)setMd5HashTime:;
+- (id)algorithmModelDownloadError;
+- (double)algorithmModelDownloadTime;
+- (unsigned long long)dependentAlgorithmModelCount;
+- (unsigned long long)downloadAlgorithmModelCount;
+- (double)effectDonwloadTime;
+- (id)effectDownloadError;
+- (BOOL)hitCache;
+- (BOOL)isParallelDownload;
+- (double)md5HashTime;
+- (void)setAlgorithmModelDownloadTime:;
+- (void)setDependentAlgorithmModelCount:;
+- (void)setEffectDonwloadTime:;
+- (void)setEffectDownloadError:;
+- (void)setHitCache:;
+- (void)setIsParallelDownload:;
+- (void)setUnzipTime:;
+- (double)unzipTime;
+- (unsigned long long)networkType;
+- (id)init;
+- (void)setNetworkType:;
+- (void).cxx_destruct;
+@end

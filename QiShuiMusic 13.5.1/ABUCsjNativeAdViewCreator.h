@@ -1,0 +1,31 @@
+@interface ABUCsjNativeAdViewCreator : NSObject
+@property (nonatomic) BUNativeAd ad;
+@property (nonatomic) BUNativeAdRelatedView adRelatedView;
+@property (nonatomic) <BUVideoAdReportor> videoAdReportor;
+@property (nonatomic) BOOL hasSupportActionBtn;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel descLabel;
+@property (nonatomic) UIImageView iconImageView;
+@property (nonatomic) UIImageView imageView;
+@property (nonatomic) UIButton callToActionBtn;
+@property (nonatomic) UIView advertiserView;
+@property (nonatomic) UIButton dislikeBtn;
+@property (nonatomic) UIView mediaView;
+@property (nonatomic) UIView adLogoView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)videoAdReportor;
+- (id)adLogoView;
+- (id)adRelatedView;
+- (id)dislikeBtn;
+- (id)initWithAd:videoViewDelegate:;
+- (void)setAd:;
+- (void)setAdRelatedView:;
+- (void)dealloc;
+- (id)mediaView;
+- (void).cxx_destruct;
+- (id)iconImageView;
+- (id)ad;
+@end

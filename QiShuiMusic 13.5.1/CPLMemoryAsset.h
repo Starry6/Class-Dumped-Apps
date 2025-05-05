@@ -1,0 +1,32 @@
+@interface CPLMemoryAsset : PBCodable
+@property (nonatomic) BOOL hasAssetIdentifier;
+@property (nonatomic) NSString assetIdentifier;
+@property (nonatomic) BOOL hasAssetFlag;
+@property (nonatomic) CPLMemoryAssetFlag assetFlag;
+@property (nonatomic) BOOL hasAssetMovieData;
+@property (nonatomic) NSData assetMovieData;
+@property (nonatomic) BOOL hasMasterFingerprint;
+@property (nonatomic) NSString masterFingerprint;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)assetIdentifier;
+- (void)setAssetIdentifier:;
+- (id)assetFlag;
+- (id)assetMovieData;
+- (void)setAssetFlag:;
+- (void)setAssetMovieData:;
+- (void)setMasterFingerprint:;
+- (BOOL)hasAssetIdentifier;
+- (BOOL)hasAssetFlag;
+- (BOOL)hasAssetMovieData;
+- (BOOL)hasMasterFingerprint;
+- (id)masterFingerprint;
+@end

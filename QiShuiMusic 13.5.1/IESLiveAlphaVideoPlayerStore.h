@@ -1,0 +1,35 @@
+@interface IESLiveAlphaVideoPlayerStore : NSObject
+@property (nonatomic) <IESLiveRoomServiceAdapter> room;
+@property (nonatomic) HTSEventContext trackContext;
+@property (nonatomic) IESLiveAlphaVideoPlayer alphaVideoPlayer;
+@property (nonatomic) IESLiveAlphaVideoPlayerQueue playerQueue;
+@property (nonatomic) BOOL isPlayingVideo;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setPlayerQueue:;
+- (id)alphaVideoPlayer;
+- (void)buttonDidClickWithType:enable:;
+- (void)buttonDidShowWithType:;
+- (id)createAlphaVideoPlayerWithRoom:trackContext:;
+- (id)descriptionOfButtonType:;
+- (void)didSetAttachingDIContext;
+- (id)initWithRoom:context:componentContext:;
+- (void)playerDidFinishedWithConfiguration:error:;
+- (void)playerSceneError:scene:;
+- (void)setAlphaVideoPlayer:;
+- (void)setIsPlayingVideo:;
+- (void)setTrackContext:;
+- (void)startPlayWithConfiguration:displayImmediately:;
+- (id)trackContext;
+- (BOOL)isPlaying;
+- (void)checkQueue;
+- (void)setup;
+- (void).cxx_destruct;
+- (void)stopPlaying;
+- (id)room;
+- (void)setRoom:;
+- (id)playerQueue;
+- (BOOL)isPlayingVideo;
+@end

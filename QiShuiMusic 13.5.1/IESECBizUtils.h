@@ -1,0 +1,37 @@
+@interface IESECBizUtils : NSObject
++ (BOOL)isStatusOnSale:;
++ (double)acquireAccurateActivityTime:serverTime:;
++ (void)addToCartAnimationWithContainerView:animationDelegate:animationLayer:startPoint:endPoint:animationKey:;
++ (void)addToCartAnimationWithContainerView:animationDelegate:animationRedPoint:startPoint:endPoint:animationSpeed:redPointRadius:scaleSize:endOpacity:animationKey:;
++ (BOOL)canOpenURLString:;
++ (id)createBasicAnimationWithType:from:to:duration:;
++ (id)createBezierAnimationWithStartPoint:endPoint:controlPoint:duration:;
++ (void)detailAddCartAnimationWithContainerView:animationDelegate:animationLayer:startPoint:endPoint:animationKey:;
++ (BOOL)fromFeedWithMetaParamsDict:;
++ (BOOL)fromLiveWithSourcePage:metaParamsDict:;
++ (id)getCurrentTimeStamp;
++ (id)getImageWithFullScreenshot;
++ (BOOL)gpsOn;
++ (id)iesec_imageCropping:fromRect:;
++ (void)internalAddCartAnimationWithContainerView:animationDelegate:animationLayer:startPoint:endPoint:redPointRadius:animationKey:;
++ (BOOL)isLiveMiniWindowAttached;
++ (BOOL)isLiveMiniWindowIsMuted;
++ (BOOL)isTaobao:;
++ (BOOL)isToutiao:;
++ (id)lastEcomSceneID:;
++ (id)mergeBTMToken:openURL:;
++ (void)openURLString:;
++ (void)openURLString:animationType:;
++ (void)openURLString:fromViewController:;
++ (void)openURLString:isTopLevel:;
++ (void)openURLString:needSaaSParam:;
++ (void)openURLString:needSaaSParam:animationType:;
++ (void)openURLString:withBTMIdentifier:withBCMParams:host:;
++ (void)openURLString:withBTMIdentifier:withBCMParams:host:fromViewController:;
++ (id)p_caculateControlPointWithStartPoint:endPoint:;
++ (id)resizeImageView:originalImage:;
++ (id)toutiaoPromotionSources;
++ (id)updateEcomSceneID:withType:;
++ (id)viewControllerForURLString:;
++ (BOOL)isSmallScreenDevice;
+@end

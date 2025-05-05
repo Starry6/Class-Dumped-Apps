@@ -1,0 +1,33 @@
+@interface BWFigCaptureDeviceVendor : NSObject
+@property (nonatomic) NSInteger activeDeviceClientPriority;
+@property (nonatomic) BOOL cameraCalibrationValid;
+- (id)copyStreamWithPosition:deviceType:forDevice:error:;
+- (void)dealloc;
+- (id)copyStreamWithPosition:deviceType:allowsStreamControlLoss:forDevice:error:;
+- (id)cameraPoseMatrixForStreamWithPosition:deviceType:;
+- (void)shutDownSystemPressuredDevice:;
+- (void)takeBackStreams:device:;
+- (void)resumeSystemPressuredDevice;
+- (void)prewarmDefaultVideoDeviceForPID:completionHandler:;
+- (id)copyStreamsWithPositions:deviceTypes:forDevice:error:;
+- (BOOL)streamsInUseForDevice:;
+- (id)_registeredDeviceClientWithID:;
+- (id)copyStreamForFlashlightWithPosition:deviceType:forDevice:;
+- (float)structuredLightProjectorStandbyTemperatureWithError:;
+- (id)copyStreamsWithUniqueIDs:forDevice:error:;
+- (BOOL)cameraCalibrationValid;
+- (id)copyStreamWithoutControlWithPosition:deviceType:forDevice:;
+- (void)unregisterCallbacksForClient:;
+- (int)registerClientWithPID:clientDescription:clientPriority:canStealFromClientsWithSamePriority:deviceSharingWithOtherClientsAllowed:deviceAvailabilityChangedHandler:;
+- (void)takeBackDevice:forClient:informClientWhenDeviceAvailableAgain:;
+- (id)initWithDeviceCreateFunction:;
+- (id)copyDeviceForClient:informClientWhenDeviceAvailableAgain:error:;
+- (BOOL)activeDeviceEquals:;
+- (int)activeDeviceClientPriority;
+- (void)invalidateVideoDevice:forPID:;
+- (int)keepControlOfStreamsWithPositions:deviceTypes:forDevice:;
+- (int)requestControlOfStreams:device:;
+- (id)_copyStreamsWithPositions:deviceTypes:allowsStreamControlLoss:forDevice:requestControl:error:;
++ (id)sharedCaptureDeviceVendor;
++ (BOOL)videoCaptureDeviceFirmwareIsLoaded;
+@end

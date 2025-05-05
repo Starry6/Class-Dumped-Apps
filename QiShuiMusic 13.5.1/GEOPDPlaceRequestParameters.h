@@ -1,0 +1,36 @@
+@interface GEOPDPlaceRequestParameters : PBCodable
+- (void)clearLocations;
+- (id)init;
+- (id)initWithForwardGeocodeAddressString:maxResults:traits:;
+- (id)initWithReverseGeocodeCoordinate:;
+- (id)initWithSearchQuery:entryMetadata:metadata:autocompleteEntry:retainedSearch:maxResults:filters:traits:routeInfo:error:;
+- (id)initWithExternalTransitStationCodes:sourceID:transactionDate:transactionLocation:;
+- (id)jsonRepresentation;
+- (id)initWithReverseGeocodeLocation:preserveOriginalLocation:placeTypeLimit:;
+- (id)initWithSearchURLQuery:identifier:;
+- (id)initWithForwardGeocodeAddress:maxResults:traits:;
+- (id)initWithMerchantCode:rawMerchantCode:relyingPartyIdentifier:industryCategory:industryCode:paymentNetwork:transactionDate:transactionLocation:terminalId:transactionCurrencyCode:transactionType:transactionId:warsawMerchantDomain:warsawMerchantName:warsawMerchantId:adamId:merchantId:merchantDoingBizAsName:merchantEnhancedName:merchantCity:merchantRawCity:merchantState:merchantRawState:merchantZip:merchantAddress:merchantRawAddress:merchantCountryCode:merchantType:merchantCleanConfidenceLevel:merchantAdditionalData:merchantCanl:brandFallbackSupported:isSettlement:isRefund:fuzzyMatched:coarseLocationUsed:;
+- (id)initWithBatchReverseGeocodeLocations:additionalPlaceTypes:additionalPlaceTypesCount:traits:;
+- (void)writeTo:;
+- (id)initWithVendorSpecificPlaceRefinementParameters:traits:;
+- (unsigned long long)hash;
+- (id)initWithMapItemToRefine:traits:;
+- (id)initWithMapItemToRefine:coordinate:traits:;
+- (id)initWithData:;
+- (id)initWithExternalBusinessID:contentProvider:;
+- (void).cxx_destruct;
+- (id)initWithCanonicalLocationSearchQueryString:;
+- (id)initWithBrandMUID:traits:;
+- (id)initWithAirportCode:terminalCode:gateCode:traits:;
+- (id)initWithIdentifiers:resultProviderID:;
+- (id)initWithSearchURLQuery:coordinate:maxResults:traits:;
+- (id)initWithPlaceRefinementParameters:traits:;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)initWithReverseGeocodeCoordinate:preserveOriginalLocation:;
+- (id)initWithReverseGeocodeCoordinate:preserveOriginalLocation:floorOrdinal:;
+- (id)dictionaryRepresentation;
+- (id)initWithSearchURLQuery:coordinate:muid:resultProviderId:contentProvider:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+@end

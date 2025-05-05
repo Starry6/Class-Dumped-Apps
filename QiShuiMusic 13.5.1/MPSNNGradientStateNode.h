@@ -1,0 +1,2 @@
+@interface MPSNNGradientStateNode : MPSNNStateNode
+@end

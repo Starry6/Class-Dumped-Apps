@@ -1,0 +1,38 @@
+@interface RBSAssertion : NSObject
+@property (nonatomic) C workspaceAssertionState;
+@property (nonatomic) RBSAssertionIdentifier identifier;
+@property (nonatomic) RBSAssertionDescriptor descriptor;
+@property (nonatomic) Q state;
+@property (nonatomic) NSString explanation;
+@property (nonatomic) RBSTarget target;
+@property (nonatomic) NSArray attributes;
+@property (nonatomic) BOOL valid;
+- (unsigned char)fb_workspaceAssertionState;
+- (void)fb_setWorkspaceAssertionState:;
+- (id)explanation;
+- (void)removeObserver:;
+- (BOOL)invalidateWithError:;
+- (id)descriptor;
+- (id)init;
+- (void)addObserver:;
+- (void)dealloc;
+- (id)identifier;
+- (id)debugDescription;
+- (id)attributes;
+- (unsigned long long)state;
+- (BOOL)isValid;
+- (void).cxx_destruct;
+- (id)target;
+- (void)setInvalidationHandler:;
+- (id)description;
+- (id)invalidate;
+- (id)initWithExplanation:target:attributes:;
+- (BOOL)acquireWithError:;
+- (id)acquireWithInvalidationHandler:;
+- (BOOL)invalidateSyncWithError:;
+- (void)setExpirationWarningHandler:;
+- (id)_initWithServerValidatedDescriptor:service:;
+- (id)_initWithServerValidatedDescriptor:;
+- (id)_initWithDescriptor:service:;
+- (void)_serverInvalidateWithError:;
+@end

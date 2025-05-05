@@ -1,0 +1,32 @@
+@interface ARPointCloudSensorData : NSObject
+@property (nonatomic) double timestamp;
+@property (nonatomic) {?=[4]} visionCameraTransform;
+@property (nonatomic) {?=[4]} cameraTransform;
+@property (nonatomic) ADJasperPointCloud pointCloud;
+@property (nonatomic) q cameraPosition;
+@property (nonatomic) NSString cameraType;
+@property (nonatomic) {?=[4]} extrinsicsToWideSensor;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)cameraPosition;
+- (id)cameraType;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (long long)projectorMode;
+- (void)setTimestamp:;
+- (void).cxx_destruct;
+- (double)timestamp;
+- (void)setCameraTransform:;
+- (id)pointCloudData;
+- (id)cameraTransform;
+- (id)pointCloud;
+- (id)extrinsicsToWideSensor;
+- (void)setExtrinsicsToWideSensor:;
+- (void)setVisionCameraTransform:;
+- (id)visionCameraTransform;
+- (id)initWithPointCloudData:captureFramePerSecond:captureDevice:captureSession:;
+- (id)initWithPointCloudData:projectorMode:timestamp:;
++ (BOOL)supportsSecureCoding;
+@end

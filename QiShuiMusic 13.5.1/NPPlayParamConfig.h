@@ -1,0 +1,34 @@
+@interface NPPlayParamConfig : NSObject
+@property (nonatomic) NSMutableDictionary netWorkLevelAndStartPlayBufferMap;
+@property (nonatomic) NSMutableDictionary playSessionMap;
+@property (nonatomic) NSString lastSessionId;
+@property (nonatomic) NSInteger minStartPlayBuffer;
+@property (nonatomic) NSInteger maxStartPlayBuffer;
+@property (nonatomic) double coefficient;
+@property (nonatomic) NSInteger attenuationTimeOffset;
+@property (nonatomic) @? appInfoRequest;
+- (id)appInfoRequest;
+- (int)attenuationTimeOffset;
+- (void)configWithSettings;
+- (long long)getStartPlayBuffer:stallTotalCount:retryTotalCount:;
+- (void)initWithSettings;
+- (id)lastSessionId;
+- (int)maxStartPlayBuffer;
+- (int)minStartPlayBuffer;
+- (id)netWorkLevelAndStartPlayBufferMap;
+- (id)playConfigWithKey:userInfo:;
+- (id)playSessionMap;
+- (void)setAppInfoRequest:;
+- (void)setAttenuationTimeOffset:;
+- (void)setLastSessionId:;
+- (void)setMaxStartPlayBuffer:;
+- (void)setMinStartPlayBuffer:;
+- (void)setNetWorkLevelAndStartPlayBufferMap:;
+- (void)setPlaySessionMap:;
+- (void)updatePlaySessionInfo:sessionInfo:;
+- (double)coefficient;
+- (id)init;
+- (void).cxx_destruct;
+- (void)setCoefficient:;
++ (id)shareInstance;
+@end

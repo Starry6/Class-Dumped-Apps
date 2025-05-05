@@ -1,0 +1,30 @@
+@interface IESLiveSendGiftAPIImpl : HTSLiveApi
+@property (nonatomic) <IESLiveMonitor> monitor;
+@property (nonatomic) <IESLiveCertifyCenter> certifyCenter;
+@property (nonatomic) <IESLiveRoomServiceAdapter> roomModel;
+@property (nonatomic) NSDictionary sendGiftExtraParams;
+@property (nonatomic) HTSEventContext trackContext;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)certifyCenter;
+- (id)pb_errorFromSpecialResponse:withGiftSendRequest:error:;
+- (void)pr_addGameExtraIfNeededWithGiftId:forParameters:extra:;
+- (void)pr_appendDouPlusInfoGiftExtraInfo:;
+- (void)pr_appendExtraIfNeededWithParameters:;
+- (void)pr_appendInteractiveGiftExtraInfo:toParameters:;
+- (void)pr_appendTeamFightGiftExtraInfo:scene:toUserID:;
+- (id)roomModel;
+- (id)sendGiftExtraParams;
+- (void)sendGiftReportWithTraceID:;
+- (void)sendGiftWithGiftId:user:allMic:count:sendType:sendScene:sendToIndependentAnchor:extra:callback:;
+- (void)setCertifyCenter:;
+- (void)setRoomModel:;
+- (void)setSendGiftExtraParams:;
+- (void)setTrackContext:;
+- (id)trackContext;
+- (void)setMonitor:;
+- (void).cxx_destruct;
+- (id)monitor;
+@end

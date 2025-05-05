@@ -1,0 +1,34 @@
+@interface IESLivePKGuestSearchTextField : UITextField
+@property (nonatomic) UIImage leftImage;
+@property (nonatomic) UIImage rightImage;
+@property (nonatomic) double leftSpacer;
+@property (nonatomic) double rightSpacer;
+@property (nonatomic) double textleftSpacer;
+@property (nonatomic) @? textFieldDidChangeBlock;
+@property (nonatomic) @? didClickedClearButtonBlock;
+- (void)setRightSpacer:;
+- (void)setClearHidden:;
+- (void)didClickedClearButton:;
+- (id)didClickedClearButtonBlock;
+- (double)leftSpacer;
+- (double)rightSpacer;
+- (void)setDidClickedClearButtonBlock:;
+- (void)setLeftSpacer:;
+- (void)setTextFieldDidChangeBlock:;
+- (void)setTextleftSpacer:;
+- (id)textFieldDidChangeBlock;
+- (double)textleftSpacer;
+- (void)dealloc;
+- (id)leftViewRectForBounds:;
+- (id)initWithFrame:;
+- (id)editingRectForBounds:;
+- (void).cxx_destruct;
+- (id)textRectForBounds:;
+- (id)placeholderRectForBounds:;
+- (id)rightViewRectForBounds:;
+- (id)leftImage;
+- (void)setLeftImage:;
+- (void)textFieldTextDidChange:;
+- (id)rightImage;
+- (void)setRightImage:;
+@end

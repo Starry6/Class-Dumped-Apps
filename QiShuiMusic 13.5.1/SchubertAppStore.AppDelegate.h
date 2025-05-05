@@ -1,0 +1,33 @@
+@interface SchubertAppStore.AppDelegate : UIResponder
+@property (nonatomic) UIWindow window;
+- (void)MOCK_applicationWillTerminate:;
+- (void)application:didFailToRegisterForRemoteNotificationsWithError:;
+- (void)application:didRegisterForRemoteNotificationsWithDeviceToken:;
+- (void)application:didRegisterUserNotificationSettings:;
+- (void)application:handleActionWithIdentifier:forLocalNotification:withResponseInfo:completionHandler:;
+- (void)application:didReceiveLocalNotification:;
+- (void)application:handleActionWithIdentifier:forRemoteNotification:completionHandler:;
+- (void)application:handleActionWithIdentifier:forRemoteNotification:withResponseInfo:completionHandler:;
+- (void)application:didReceiveRemoteNotification:fetchCompletionHandler:;
+- (void)applicationWillResignActive:;
+- (id)init;
+- (BOOL)application:didFinishLaunchingWithOptions:;
+- (BOOL)application:willFinishLaunchingWithOptions:;
+- (void)application:performActionForShortcutItem:completionHandler:;
+- (BOOL)application:handleOpenURL:;
+- (void)applicationDidBecomeActive:;
+- (void)applicationDidEnterBackground:;
+- (void)applicationWillTerminate:;
+- (void).cxx_destruct;
+- (BOOL)application:openURL:options:;
+- (void)application:handleEventsForBackgroundURLSession:completionHandler:;
+- (void)setWindow:;
+- (id)window;
+- (void)applicationWillEnterForeground:;
+- (BOOL)application:openURL:sourceApplication:annotation:;
+- (unsigned long long)application:supportedInterfaceOrientationsForWindow:;
+- (BOOL)application:continueUserActivity:restorationHandler:;
+- (void)applicationProtectedDataWillBecomeUnavailable:;
+- (void)applicationProtectedDataDidBecomeAvailable:;
+- (id)application:handlerForIntent:;
+@end

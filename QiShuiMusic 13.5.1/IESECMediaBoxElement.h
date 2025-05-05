@@ -1,0 +1,37 @@
+@interface IESECMediaBoxElement : IESECBasicElement
+@property (nonatomic) IESECLinkConfig link;
+@property (nonatomic) IESECRadiusConfig radius;
+@property (nonatomic) IESECBorderConfig border;
+@property (nonatomic) IESECBorderConfig selectInBorder;
+@property (nonatomic) IESECBorderConfig defaultInBorder;
+@property (nonatomic) IESECBackgroundDescribeInfo background;
+@property (nonatomic) IESECHeadVideoModel videoModel;
+@property (nonatomic) IESECImageModel image;
+@property (nonatomic) IESECImageModel thumbnail;
+@property (nonatomic) BOOL usePlaceholder;
+@property (nonatomic) Q mediaType;
+- (id)defaultInBorder;
+- (id)selectInBorder;
+- (void)setDefaultInBorder:;
+- (void)setSelectInBorder:;
+- (void)setVideoModel:;
+- (id)videoModel;
+- (id)link;
+- (id)background;
+- (unsigned long long)mediaType;
+- (void)setMediaType:;
+- (void)setRadius:;
+- (void)setThumbnail:;
+- (void)setBackground:;
+- (id)border;
+- (void)setLink:;
+- (id)radius;
+- (void)setImage:;
+- (id)thumbnail;
+- (void).cxx_destruct;
+- (void)setBorder:;
+- (id)image;
+- (BOOL)usePlaceholder;
+- (void)setUsePlaceholder:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

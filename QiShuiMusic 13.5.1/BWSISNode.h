@@ -1,0 +1,21 @@
+@interface BWSISNode : BWNode
+- (void)dealloc;
+- (id)nodeType;
+- (void)didSelectFormat:forInput:;
+- (void)handleNodeError:forInput:;
+- (BOOL)attachesInputBracketToOutputSampleBuffer;
+- (void)prepareForCurrentConfigurationToBecomeLive;
+- (void)setAttachesInputBracketToOutputSampleBuffer:;
+- (void)renderSampleBuffer:forInput:;
+- (id)nodeSubType;
+- (id)initWithCameraTuningDictionary:sensorIDDictionary:fusionScheme:;
+- (id)_initWithCameraTuningDictionary:sensorIDDictionary:sbpCreationFunction:fusionScheme:allowExperimentalOverrides:;
+- (void)setAlwaysRequestsPreBracketedEV0:;
+- (BOOL)alwaysRequestsPreBracketedEV0;
+- (void)setLivePhotoSupported:;
+- (BOOL)livePhotoSupported;
+- (void)setOISSupported:;
+- (BOOL)OISSupported;
+- (void)setAllowAllocationsAtPrepareTime:;
+- (BOOL)allowAllocationsAtPrepareTime;
+@end

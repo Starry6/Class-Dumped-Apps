@@ -1,0 +1,2 @@
+@interface AVFragmentedMediaDataReportInternal : NSObject
+@end

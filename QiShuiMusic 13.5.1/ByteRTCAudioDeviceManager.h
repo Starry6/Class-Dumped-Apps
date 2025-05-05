@@ -1,0 +1,33 @@
+@interface ByteRTCAudioDeviceManager : NSObject
+- (void)setEnableSpeakerphone:;
+- (id)initDeviceManager:;
+- (id)initWithAudioDeviceManager:;
+- (int)startAudioPlaybackDeviceTest:interval:;
+- (int)stopAudioPlaybackDeviceTest;
+- (int)startAudioDeviceRecordTest:;
+- (int)stopAudioDeviceRecordAndPlayTest;
+- (int)stopAudioDevicePlayTest;
+- (void)followSystemCaptureDevice:;
+- (void)followSystemPlaybackDevice:;
+- (id)enumerateAudioPlaybackDevices;
+- (id)enumerateAudioCaptureDevices;
+- (int)setAudioPlaybackDevice:;
+- (int)getAudioPlaybackDevice:;
+- (int)setAudioCaptureDevice:;
+- (int)getAudioCaptureDevice:;
+- (int)setAudioPlaybackDeviceMute:;
+- (int)getAudioPlaybackDeviceMute:;
+- (int)setAudioCaptureDeviceMute:;
+- (int)getAudioCaptureDeviceMute:;
+- (int)setAudioPlaybackDeviceVolume:;
+- (int)getAudioPlaybackDeviceVolume:;
+- (int)setAudioCaptureDeviceVolume:;
+- (int)getAudioCaptureDeviceVolume:;
+- (int)initAudioPlaybackDeviceForTest:;
+- (int)initAudioCaptureDeviceForTest:;
+- (int)startAudioRecordingDeviceTest:;
+- (int)stopAudioRecordingDeviceTest;
+- (int)startAudioDeviceLoopbackTest:;
+- (int)stopAudioDeviceLoopbackTest;
+- (void)dealloc;
+@end

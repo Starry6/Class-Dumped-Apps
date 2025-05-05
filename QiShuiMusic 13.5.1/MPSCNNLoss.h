@@ -1,0 +1,34 @@
+@interface MPSCNNLoss : MPSCNNKernel
+@property (nonatomic) float weight;
+@property (nonatomic) I lossType;
+@property (nonatomic) NSInteger reductionType;
+@property (nonatomic) float labelSmoothing;
+@property (nonatomic) Q numberOfClasses;
+@property (nonatomic) float epsilon;
+@property (nonatomic) float delta;
+@property (nonatomic) BOOL reduceAcrossBatch;
+- (unsigned long long)maxBatchSize;
+- (float)delta;
+- (id)initWithCoder:device:;
+- (id)copyWithZone:device:;
+- (void)dealloc;
+- (float)weight;
+- (void)setWeight:;
+- (id)debugDescription;
+- (float)epsilon;
+- (void)encodeWithCoder:;
+- (id)initWithDevice:;
+- (unsigned long long)numberOfClasses;
+- (id)encodeBatchToCommandBuffer:sourceImages:labels:;
+- (id)initWithDevice:lossDescriptor:;
+- (unsigned int)lossType;
+- (int)reductionType;
+- (float)labelSmoothing;
+- (BOOL)reduceAcrossBatch;
+- (id)resultStateForSourceImage:sourceStates:;
+- (id)temporaryResultStateForCommandBuffer:sourceImage:sourceStates:;
+- (void)encodeToCommandBuffer:sourceImage:labels:destinationImage:;
+- (id)encodeToCommandBuffer:sourceImage:labels:;
+- (void)encodeBatchToCommandBuffer:sourceImages:labels:destinationImages:;
++ (id)libraryInfo:;
+@end

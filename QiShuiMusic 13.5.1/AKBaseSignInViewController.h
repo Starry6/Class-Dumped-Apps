@@ -1,0 +1,34 @@
+@interface AKBaseSignInViewController : UIViewController
+@property (nonatomic) BOOL authInProgress;
+@property (nonatomic) BOOL usesDarkMode;
+@property (nonatomic) AKAppleIDAuthenticationInAppContext context;
+@property (nonatomic) <AKSignInViewControllerDelegate> delegate;
+@property (nonatomic) AKAppleIDAuthenticationController authenticationController;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)context;
+- (void)setDelegate:;
+- (id)authenticationController;
+- (void)startAnimating;
+- (void)stopAnimating;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)viewDidAppear:;
+- (void)setContext:;
+- (void)setUsesDarkMode:;
+- (id)_initWithAuthController:;
+- (id)_initWithNibName:bundle:;
+- (void)_setPasswordFieldHiddenIfNeeded;
+- (BOOL)_isSignInAllowed;
+- (BOOL)_isAccountModificationRestricted;
+- (BOOL)_canBeginAuthenticationWithOption:;
+- (void)_beginAuthenticationIfPossibleWithOption:withUsername:password:;
+- (void)_authenticateWithContext:;
+- (void)_provideDelegateWithAuthResults:error:;
+- (void)_setPasswordFieldHidden:animated:;
+- (BOOL)usesDarkMode;
+- (BOOL)isAuthInProgress;
+- (void)setAuthInProgress:;
+@end

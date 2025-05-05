@@ -1,0 +1,30 @@
+@interface MNTracePlaybackDetails : NSObject
+@property (nonatomic) Q eventType;
+@property (nonatomic) NSString tracePath;
+@property (nonatomic) double traceDuration;
+@property (nonatomic) double currentPosition;
+@property (nonatomic) NSArray bookmarks;
+@property (nonatomic) Q recordedBookmarkID;
+@property (nonatomic) NSString pedestrianTracePath;
+@property (nonatomic) double pedestrianTraceStartRelativeTimestamp;
+- (double)currentPosition;
+- (void)setTraceDuration:;
+- (unsigned long long)eventType;
+- (void)setEventType:;
+- (id)initWithCoder:;
+- (id)tracePath;
+- (void)encodeWithCoder:;
+- (double)traceDuration;
+- (void).cxx_destruct;
+- (void)setTracePath:;
+- (void)setCurrentPosition:;
+- (id)bookmarks;
+- (void)setBookmarks:;
+- (id)pedestrianTracePath;
+- (void)setPedestrianTracePath:;
+- (double)pedestrianTraceStartRelativeTimestamp;
+- (void)setPedestrianTraceStartRelativeTimestamp:;
+- (unsigned long long)recordedBookmarkID;
+- (void)setRecordedBookmarkID:;
++ (BOOL)supportsSecureCoding;
+@end

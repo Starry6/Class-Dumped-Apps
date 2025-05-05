@@ -1,0 +1,29 @@
+@interface AWEUserRelation : NSObject
++ (void)approve:completion:;
++ (id)approveWithUserID:;
++ (void)block:completion:;
++ (id)blockWithUserID:;
++ (id)checkFollowRequestOnAir:;
++ (id)commitFollowWithContext:followType:;
++ (void)follow:completion:;
++ (void)follow:completionWithErrorToastControl:;
++ (id)getLoginContextWithUserID:fromPageType:;
++ (id)handleFollowRequestWithNotice:;
++ (void)reject:completion:;
++ (void)rejectWithNotice:userID:completion:;
++ (id)rejectWithUserID:;
++ (void)removeFans:completion:;
++ (BOOL)showLimitationView:;
++ (void)taskSource:completion:;
++ (void)taskSource:completion:;
++ (void)topFollowingUser:completion:;
++ (id)topWithUserID:;
++ (void)tryRevertFollowStatus:task:;
++ (void)tryRevertUnfollowStatus:task:;
++ (void)unblock:completion:;
++ (id)unblockWithUserID:;
++ (void)unfollow:completion:;
++ (void)untopFollowingUser:completion:;
++ (id)untopWithUserID:;
++ (id)contentString;
+@end

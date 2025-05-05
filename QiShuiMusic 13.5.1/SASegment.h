@@ -1,0 +1,30 @@
+@interface SASegment : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) SABinary binary;
+@property (nonatomic) NSString name;
+@property (nonatomic) Q length;
+@property (nonatomic) q offsetIntoBinary;
+- (BOOL)addSelfToBuffer:bufferLength:withCompletedSerializationDictionary:;
+- (id)initWithBinary:name:length:offsetIntoBinary:;
+- (void)addSelfToSerializationDictionary:;
+- (void)populateReferencesUsingBuffer:bufferLength:andDeserializationDictionary:andDataBufferDictionary:;
+- (id)debugDescription;
+- (unsigned long long)sizeInBytesForSerializedVersion;
+- (BOOL)hasOffsetIntoBinary;
+- (void)writeJSONDictionaryEntriesToStream:;
+- (long long)offsetIntoBinary;
+- (void).cxx_destruct;
+- (id)binary;
+- (id)instructionAtOffsetIntoSegment:;
+- (unsigned long long)length;
+- (id)name;
++ (id)newInstanceWithoutReferencesFromSerializedBuffer:bufferLength:andDeserializationDictionary:andDataBufferDictionary:;
++ (id)classDictionaryKey;
+@end

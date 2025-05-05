@@ -1,0 +1,37 @@
+@interface WFAutoShortcutContextualAction : WFContextualAction
+@property (nonatomic) WFAutoShortcutContextualAction parentAction;
+@property (nonatomic) Q orderOfShortcut;
+@property (nonatomic) NSNumber cachedProminentDisplayEligibility;
+@property (nonatomic) LNAutoShortcut autoShortcut;
+@property (nonatomic) LNAutoShortcutLocalizedPhrase phrase;
+@property (nonatomic) NSArray alternativePhrases;
+@property (nonatomic) NSString bundleIdentifier;
+@property (nonatomic) BOOL eligibleForProminentDisplay;
+- (id)phrase;
+- (id)bundleIdentifier;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (unsigned long long)displayOrder;
+- (BOOL)isEqual:;
+- (id)creationDate;
+- (id)spotlightItem;
+- (id)initWithAutoShortcut:bundleIdentifier:;
+- (id)initWithAutoShortcut:phrase:alternativePhrases:bundleIdentifier:;
+- (id)initWithAutoShortcut:phrase:alternativePhrases:bundleIdentifier:orderOfShortcut:parentAction:prominentDisplayEligibility:;
+- (BOOL)definesDisplayOrder;
+- (id)relatedApp;
+- (BOOL)isEligibleForProminentDisplay;
+- (id)actionBySettingEligibilityForProminentDisplay:;
+- (id)actionForRunningFromSpotlight;
+- (id)autoShortcut;
+- (id)alternativePhrases;
+- (id)parentAction;
+- (unsigned long long)orderOfShortcut;
+- (id)cachedProminentDisplayEligibility;
++ (BOOL)supportsSecureCoding;
++ (id)spotlightDomainIdentifier;
++ (id)allActionsForAutoShortcut:bundleIdentifier:;
++ (id)autoShortcutContextualActionsByQueryingEligibilityForProminentDisplay:;
+@end

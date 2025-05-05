@@ -1,0 +1,31 @@
+@interface CPColumn : CPRotatedRegion
+@property (nonatomic) BOOL complete;
+- (BOOL)complete;
+- (id)init;
+- (void)dealloc;
+- (id)description;
+- (void)setComplete:;
+- (id)copyWithZone:;
+- (void)accept:;
+- (void)setHasColumnBreak:;
+- (BOOL)isBoxRegion;
+- (BOOL)isGraphicalRegion;
+- (BOOL)isRowRegion;
+- (void)setIsImageRegion:;
+- (BOOL)isImageRegion;
+- (BOOL)isShapeRegion;
+- (id)columnBounds;
+- (double)bottomBaseline;
+- (BOOL)hasCentredParagraph;
+- (void)setHasCentredParagraph:;
+- (double)leftPad;
+- (double)rightPad;
+- (double)maxLeftPad;
+- (void)setMaxLeftPad:;
+- (double)maxRightPad;
+- (void)setMaxRightPad:;
+- (id)paddedBounds;
+- (double)selectionBottom;
+- (int)outOrder;
+- (int)inOrder;
+@end

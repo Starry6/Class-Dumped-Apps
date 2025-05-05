@@ -1,0 +1,36 @@
+@interface QLNetworkStateObserver : NSObject
+@property (nonatomic) Q networkState;
+@property (nonatomic) <QLNetworkStateListener> remoteObserver;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)_commonInit;
+- (void)_update;
+- (id)init;
+- (void)dealloc;
+- (void)airplaneModeChanged;
+- (void)startObserving;
+- (void)stopObserving;
+- (void)updateState:;
+- (unsigned long long)networkState;
+- (void).cxx_destruct;
+- (BOOL)isConnected;
+- (id)remoteObserver;
+- (void)setRemoteObserver:;
+- (void)pushOperation;
+- (void)popOperation;
+- (void)_updateNetworkStateWithNotifyToken:;
+- (void)_unregisterReachability;
+- (BOOL)isWifiCapable;
+- (void)_updateNetworkActivityIndicator;
+- (void)_setNetworkState:;
+- (void)_updateNetworkStateWithFlags:;
+- (void)setNetworkState:;
+- (void)networkStateWithCompletionBlock:;
+- (void)_updateCompletionBlocks;
+- (void)_updateRemoteObserver;
++ (id)sharedInstance;
++ (BOOL)usingRemoteNetworkObserver;
++ (BOOL)networkAccessShouldGoThroughCloudDocsDaemon;
+@end

@@ -1,0 +1,32 @@
+@interface RPPerson : NSObject
+@property (nonatomic) NSMutableDictionary deviceDict;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) CURangingMeasurement relativeLocation;
+@property (nonatomic) NSInteger activityLevel;
+@property (nonatomic) NSString contactID;
+@property (nonatomic) NSArray devices;
+@property (nonatomic) I flags;
+@property (nonatomic) NSString name;
+@property (nonatomic) NSInteger proximity;
+- (id)descriptionWithLevel:;
+- (id)devices;
+- (int)proximity;
+- (id)identifier;
+- (id)contactID;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)name;
+- (unsigned int)flags;
+- (void)setIdentifier:;
+- (id)relativeLocation;
+- (int)activityLevel;
+- (void)setRelativeLocation:;
+- (unsigned int)removeRPDevice:;
+- (unsigned int)updateWithRPDevice:;
+- (unsigned int)_updateDeviceDerivedInfo;
+- (id)deviceDict;
+- (void)setDeviceDict:;
++ (BOOL)supportsSecureCoding;
+@end

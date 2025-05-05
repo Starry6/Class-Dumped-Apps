@@ -1,0 +1,30 @@
+@interface IESECLiveGoodsIntroducingBanner : UIView
+@property (nonatomic) UIView containerView;
+@property (nonatomic) IESECLiveGradientView indexGradientView;
+@property (nonatomic) UILabel indexHeaderLabel;
+@property (nonatomic) UILabel contentLabel;
+@property (nonatomic) UILabel goodsTitleLabel;
+@property (nonatomic) UIImageView arrorImgView;
+@property (nonatomic) IESECLiveGoodsModel goodsModel;
+@property (nonatomic) <IESECLiveGoodsIntroducingBannerDelegate> delegate;
+- (id)goodsTitleLabel;
+- (id)arrorImgView;
+- (void)clickBanner;
+- (id)goodsModel;
+- (id)indexGradientView;
+- (id)indexHeaderLabel;
+- (void)setArrorImgView:;
+- (void)setGoodsModel:;
+- (void)setGoodsTitleLabel:;
+- (void)setIndexGradientView:;
+- (void)setIndexHeaderLabel:;
+- (id)containerView;
+- (void)setContainerView:;
+- (void)setDelegate:;
+- (id)initWithFrame:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setupUI;
+- (id)contentLabel;
+- (void)setContentLabel:;
+@end

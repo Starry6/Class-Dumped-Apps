@@ -1,0 +1,31 @@
+@interface BDASplashControllerView : UIView
+@property (nonatomic) UIView bgView;
+@property (nonatomic) UIView fakeLaunchView;
+@property (nonatomic) BDASplashView splashView;
+@property (nonatomic) TTAdSplashModel model;
+@property (nonatomic) <BDASplashControllerViewProtocol> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)fakeLaunchView;
+- (id)initWithFrame:model:;
+- (void)removeBgView;
+- (void)setFakeLaunchView:;
+- (void)setSplashView:;
+- (id)splashView;
+- (void)splashViewClickedWithExtra:animationBlock:;
+- (void)splashViewReadyToShow;
+- (void)splashViewShowFinishedAnimation:;
+- (id)model;
+- (void)setModel:;
+- (void)layoutSubviews;
+- (void)setDelegate:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)didMoveToWindow;
+- (id)bgView;
+- (void)setBgView:;
+- (void)setupView;
++ (id)getFakeLaunchViewWithFrame:;
+@end

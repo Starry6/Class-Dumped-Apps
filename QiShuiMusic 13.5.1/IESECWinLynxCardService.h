@@ -1,0 +1,37 @@
+@interface IESECWinLynxCardService : NSObject
+@property (nonatomic) IESECWinContext context;
+@property (nonatomic) IESECServiceProxy<IESECWinGoodsService> goodsService;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) @? itemNeedRemoved;
+@property (nonatomic) @? itemNeedReload;
+@property (nonatomic) BOOL isUseLynxCard;
+@property (nonatomic) NSDictionary forwardEventDic;
+- (id)instanceBridges;
+- (id)itemNeedRemoved;
+- (id)forwardEventDic;
+- (void)currentCardsWriteAlogMethodName:paramModel:result:context:;
+- (id)currentEnvIdentifier;
+- (id)currentListContextIdForCards;
+- (id)customConfigWithLynxData:tabLayout:;
+- (id)globalPropsExtraWithItemType:trackContextExtra:extra:;
+- (id)goodsService;
+- (BOOL)isUseLynxCard;
+- (id)itemNeedReload;
+- (void)registerInstranceBridge:;
+- (void)registerWindowInstranceBridges;
+- (void)setForwardEventDic:;
+- (void)setGoodsService:;
+- (void)setIsUseLynxCard:;
+- (void)setItemNeedReload:;
+- (void)setItemNeedRemoved:;
+- (id)init;
+- (id)context;
+- (id)initWithContext:;
+- (void).cxx_destruct;
+- (id)trackContext:;
+- (void)setContext:;
++ (id)getSSRApiVersion;
+@end

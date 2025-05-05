@@ -1,0 +1,32 @@
+@interface NSConcreteSetChanges : NSSetChanges
+- (void)HMDP_setSet:;
+- (void)HMDP_minusSet:;
+- (void)HMDP_addObjectsFromArray:;
+- (void)HMDP_unionSet:;
+- (void)HMDP_intersectSet:;
+- (unsigned long long)changeCount;
+- (void)intersectSet:;
+- (id)init;
+- (void)dealloc;
+- (void)unionSet:;
+- (void)addChange:;
+- (void)addObjectsFromArray:;
+- (unsigned long long)countByEnumeratingWithState:objects:count:;
+- (void)_willChange;
+- (void)removeAllObjects;
+- (void)minusSet:;
+- (id)member:;
+- (id)initWithObjects:count:;
+- (id)initWithSet:;
+- (id)description;
+- (id)objectEnumerator;
+- (unsigned long long)count;
+- (void)setSet:;
+- (id)initWithCapacity:;
+- (id)copyWithZone:;
+- (void)enumerateChangesUsingBlock:;
+- (void)enumerateChanges:usingBlock:;
+- (void)filterObjectsWithTest:;
+- (void)transformObjectsWithBlock:;
+- (void)_fault;
+@end

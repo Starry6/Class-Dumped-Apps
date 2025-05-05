@@ -1,0 +1,36 @@
+@interface BKSApplicationStateMonitor : NSObject
+@property (nonatomic) @? handler;
+@property (nonatomic) I interestedStates;
+@property (nonatomic) NSArray interestedBundleIDs;
+@property (nonatomic) BOOL elevatedPriority;
+- (id)init;
+- (void)dealloc;
+- (void)applicationInfoForPID:completion:;
+- (id)initWithBundleIDs:states:elevatedPriority:;
+- (void)setHandler:;
+- (id)applicationInfoForApplication:;
+- (void)applicationInfoForApplication:completion:;
+- (void)updateInterestedStates:;
+- (id)initWithEndpoint:bundleIDs:states:elevatedPriority:;
+- (id)interestedBundleIDs;
+- (BOOL)_clientSubscribedToThisStateChange:state:prevState:;
+- (unsigned int)applicationStateForApplication:;
+- (unsigned int)interestedStates;
+- (id)handler;
+- (id)applicationInfoForPID:;
+- (BOOL)elevatedPriority;
+- (void).cxx_destruct;
+- (unsigned int)_legacyStateForProcess:state:;
+- (void)updateInterestedBundleIDs:states:;
+- (id)bundleInfoValueForKey:PID:;
+- (id)_legacyInfoForProcess:state:;
+- (id)initWithBundleIDs:states:;
+- (id)initWithBundleIDs:states:isUserInteractive:;
+- (id)_legacyInfoForProcess:;
+- (void)lock_updateConfiguration;
+- (unsigned int)mostElevatedApplicationStateForPID:;
+- (BOOL)_clientSubscribedToThisReasonChange:;
+- (void)invalidate;
+- (void)updateInterestedBundleIDs:;
+- (void)updateInterestedAssertionReasons:;
+@end

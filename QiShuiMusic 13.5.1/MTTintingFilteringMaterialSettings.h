@@ -1,0 +1,38 @@
+@interface MTTintingFilteringMaterialSettings : MTTintingMaterialSettings
+@property (nonatomic) double luminanceAmount;
+@property (nonatomic) NSArray luminanceValues;
+@property (nonatomic) double blurRadius;
+@property (nonatomic) BOOL averageColorEnabled;
+@property (nonatomic) double saturation;
+@property (nonatomic) double brightness;
+@property (nonatomic) {CAColorMatrix=ffffffffffffffffffff} colorMatrix;
+@property (nonatomic) double zoom;
+@property (nonatomic) double backdropScale;
+@property (nonatomic) NSString blurInputQuality;
+@property (nonatomic) BOOL blurAtEnd;
+@property (nonatomic) NSString variableBlurInputMaskName;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSDictionary userInfo;
+- (double)zoom;
+- (void)_processMaterialFilteringDescription:defaultingToIdentity:bundle:;
+- (void)dealloc;
+- (id)userInfo;
+- (BOOL)isAverageColorEnabled;
+- (double)blurRadius;
+- (double)brightness;
+- (double)luminanceAmount;
+- (id)variableBlurInputMaskName;
+- (BOOL)isBlurAtEnd;
+- (double)backdropScale;
+- (void)_processUserInfoDescription:;
+- (void).cxx_destruct;
+- (id)variableBlurInputMask;
+- (double)saturation;
+- (id)colorMatrix;
+- (id)luminanceValues;
+- (id)blurInputQuality;
+- (id)initWithMaterialDescription:andDescendantDescriptions:bundle:;
+@end

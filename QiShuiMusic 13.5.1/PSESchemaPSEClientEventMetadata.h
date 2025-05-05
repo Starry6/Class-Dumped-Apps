@@ -1,0 +1,35 @@
+@interface PSESchemaPSEClientEventMetadata : SISchemaInstrumentationMessage
+@property (nonatomic) SISchemaUUID uiSessionId;
+@property (nonatomic) BOOL hasUiSessionId;
+@property (nonatomic) SISchemaUUID originalLastRequestId;
+@property (nonatomic) BOOL hasOriginalLastRequestId;
+@property (nonatomic) NSInteger siriEngagementTaskSuccess;
+@property (nonatomic) BOOL hasSiriEngagementTaskSuccess;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (BOOL)hasUiSessionId;
+- (void)deleteUiSessionId;
+- (BOOL)hasOriginalLastRequestId;
+- (void)deleteOriginalLastRequestId;
+- (void)setSiriEngagementTaskSuccess:;
+- (BOOL)hasSiriEngagementTaskSuccess;
+- (void)setHasSiriEngagementTaskSuccess:;
+- (void)deleteSiriEngagementTaskSuccess;
+- (id)uiSessionId;
+- (void)setUiSessionId:;
+- (id)originalLastRequestId;
+- (void)setOriginalLastRequestId:;
+- (int)siriEngagementTaskSuccess;
+- (void)setHasUiSessionId:;
+- (void)setHasOriginalLastRequestId:;
+@end

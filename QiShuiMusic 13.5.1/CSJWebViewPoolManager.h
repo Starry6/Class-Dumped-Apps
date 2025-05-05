@@ -1,0 +1,32 @@
+@interface CSJWebViewPoolManager : NSObject
+@property (nonatomic) NSMapTable usedMapTable;
+@property (nonatomic) NSMutableArray webViewArray;
+@property (nonatomic) NSLock webViewArrayLock;
+@property (nonatomic) UIView zeroView;
+@property (nonatomic) q webviewCount;
+@property (nonatomic) q availableCacheCount;
+@property (nonatomic) q usedCount;
+- (void)resume_webViewPriorityWithView:;
+- (long long)availableCacheCount;
+- (void)pbu_checkInMainWindow;
+- (id)pbu_createWebViewClient;
+- (id)pbu_keyFromWebViewClient:;
+- (void)pbu_removeCacheWebViewClient:;
+- (void)promote_webViewPriorityWithView:;
+- (void)resetWithWebViewOwner:;
+- (void)setUsedMapTable:;
+- (void)setWebViewArray:;
+- (void)setWebViewArrayLock:;
+- (void)setZeroView:;
+- (id)usableWebViewOwnerWithFrame:;
+- (id)usedMapTable;
+- (id)webViewArray;
+- (id)webViewArrayLock;
+- (long long)webviewCount;
+- (id)zeroView;
+- (id)init;
+- (long long)maxCount;
+- (long long)usedCount;
+- (void)clearAll;
+- (void).cxx_destruct;
+@end

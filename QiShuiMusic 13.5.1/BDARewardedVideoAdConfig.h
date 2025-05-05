@@ -1,0 +1,30 @@
+@interface BDARewardedVideoAdConfig : NSObject
+@property (nonatomic) NSDictionary originalDict;
+@property (nonatomic) NSNumber scaleModel;
+@property (nonatomic) NSNumber disableSessionDeactive;
+@property (nonatomic) NSNumber disableSessionBeactive;
+@property (nonatomic) NSNumber enableOneMore;
+@property (nonatomic) NSNumber disableLoad;
+@property (nonatomic) NSNumber isPreloadAtInit;
+- (void)setDisableLoad:;
+- (void)BDARSetscaleModel:;
+- (id)isPreloadAtInit;
+- (id)disableLoad;
+- (id)disableSessionBeactive;
+- (id)disableSessionDeactive;
+- (id)enableOneMore;
+- (id)generateSelectorWithProperty:;
+- (id)originalDict;
+- (id)scaleModel;
+- (void)setDisableSessionBeactive:;
+- (void)setDisableSessionDeactive:;
+- (void)setEnableOneMore:;
+- (void)setIsPreloadAtInit:;
+- (void)setOriginalDict:;
+- (id)init;
+- (id)initWithDictionary:;
+- (void)setObject:forKeyedSubscript:;
+- (id)objectForKeyedSubscript:;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+@end

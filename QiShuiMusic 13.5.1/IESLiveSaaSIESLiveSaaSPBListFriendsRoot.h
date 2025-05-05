@@ -1,0 +1,2 @@
+@interface IESLiveSaaSIESLiveSaaSPBListFriendsRoot : GPBRootObject
+@end

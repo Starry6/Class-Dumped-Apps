@@ -1,0 +1,34 @@
+@interface FLEXResources : NSObject
++ (id)closeIcon;
++ (id)dragHandle;
++ (id)globalsIcon;
++ (id)hierarchyIcon;
++ (id)recentIcon;
++ (id)moveIcon;
++ (id)selectIcon;
++ (id)bookmarksIcon;
++ (id)openTabsIcon;
++ (id)moreIcon;
++ (id)gearIcon;
++ (id)scrollToBottomIcon;
++ (id)jsonIcon;
++ (id)textPlainIcon;
++ (id)htmlIcon;
++ (id)audioIcon;
++ (id)jsIcon;
++ (id)plistIcon;
++ (id)textIcon;
++ (id)videoIcon;
++ (id)xmlIcon;
++ (id)binaryIcon;
++ (id)toggle2DIcon;
++ (id)toggle3DIcon;
++ (id)rangeSliderLeftHandle;
++ (id)rangeSliderRightHandle;
++ (id)rangeSliderTrack;
++ (id)rangeSliderFill;
++ (id)checkerPattern;
++ (id)checkerPatternColor;
++ (id)hierarchyIndentPattern;
++ (id)imageWithBytesNoCopy:length:scale:;
+@end

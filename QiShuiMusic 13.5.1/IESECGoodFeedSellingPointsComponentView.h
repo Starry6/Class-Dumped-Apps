@@ -1,0 +1,36 @@
+@interface IESECGoodFeedSellingPointsComponentView : IESECGoodsDetailBaseComponentView
+@property (nonatomic) UILabel privilegeLabel;
+@property (nonatomic) UILabel logisticLabel;
+@property (nonatomic) NSMutableArray secondLabels;
+@property (nonatomic) UILabel rankingLabel;
+@property (nonatomic) IESEGoodsFeedSellingPointsStackView stackView;
+@property (nonatomic) UIImage rankIcon;
+@property (nonatomic) UIImage arrowIcon;
+- (id)arrowIcon;
+- (void)configLogisticWithParams:isFirst:;
+- (void)configRankingListWithParams:isFirst:;
+- (void)configSecondLabelWithParams:count:isFirst:;
+- (void)configUI;
+- (id)initWithParameters:style:tracker:;
+- (id)logisticLabel;
+- (id)privilegeLabel;
+- (id)rankIcon;
+- (id)rankingLabel;
+- (BOOL)salePointsShouldShow:;
+- (id)seconLabelWithIndex:;
+- (id)secondLabels;
+- (BOOL)servicesShouldShow:;
+- (void)setArrowIcon:;
+- (void)setLogisticLabel:;
+- (void)setPrivilegeLabel:;
+- (void)setRankIcon:;
+- (void)setRankingLabel:;
+- (void)setSecondLabels:;
+- (void)updateWithParameters:;
+- (void)setStackView:;
+- (void)layoutSubviews;
+- (id)stackView;
+- (void).cxx_destruct;
++ (double)componentViewHeight:style:;
++ (BOOL)componentViewShouldShow:style:;
+@end

@@ -1,0 +1,33 @@
+@interface PFVideoMetadataVideoTrackFormatInfo : NSObject
+@property (nonatomic) I codec;
+@property (nonatomic) BOOL isHighDynamicRange;
+@property (nonatomic) BOOL hasDolby8_4Metadata;
+@property (nonatomic) BOOL hasHEVCProfileTierLevelInfo;
+@property (nonatomic) C hevcProfile;
+@property (nonatomic) C hevcTier;
+@property (nonatomic) C hevcLevel;
+@property (nonatomic) q bitsPerComponent;
+@property (nonatomic) NSString colorPrimaries;
+@property (nonatomic) NSString transferFunction;
+@property (nonatomic) {CGSize=dd} displaySize;
+@property (nonatomic) NSString formatDebugDescription;
+- (unsigned int)codec;
+- (id)displaySize;
+- (void).cxx_destruct;
+- (long long)bitsPerComponent;
+- (id)colorPrimaries;
+- (BOOL)hasHEVCProfileTierLevelInfo;
+- (unsigned char)hevcLevel;
+- (unsigned char)hevcProfile;
+- (unsigned char)hevcTier;
+- (BOOL)isHighDynamicRange;
+- (id)initWithFirstVideoTrackOfAsset:;
+- (void)_checkFormat;
+- (id)formatDebugDescription;
+- (id)hevcProfileTierLevelDescription;
+- (BOOL)hasDolby8_4Metadata;
+- (id)transferFunction;
++ (id)infoForFirstVideoTrackOfAsset:;
++ (short)_getProfile:tier:level:fromFormatDescriptionExtensions:;
++ (BOOL)videoTrackFormatDescriptionHasDolby8_4Metadata:;
+@end

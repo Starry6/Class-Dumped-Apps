@@ -1,0 +1,35 @@
+@interface MKPlaceHoursViewController : MKPlaceSectionViewController
+@property (nonatomic) MKMapItem mapItem;
+@property (nonatomic) NSTimeZone timeZone;
+@property (nonatomic) NSArray businessHours;
+@property (nonatomic) <_MKInfoCardAnalyticsDelegate> analyticsDelegate;
+@property (nonatomic) BOOL resizableViewsDisabled;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)mapItem;
+- (void)setMapItem:;
+- (BOOL)_canShowWhileLocked;
+- (id)initWithMapItem:;
+- (void).cxx_destruct;
+- (void)viewWillAppear:;
+- (id)timeZone;
+- (void)viewDidLoad;
+- (void)_setExpanded:;
+- (void)_contentSizeDidChange;
+- (id)businessHours;
+- (id)titleString;
+- (void)infoCardThemeChanged;
+- (BOOL)resizableViewsDisabled;
+- (void)setResizableViewsDisabled:;
+- (id)infoCardChildPossibleActions;
+- (id)infoCardChildUnactionableUIElements;
+- (id)analyticsDelegate;
+- (void)setAnalyticsDelegate:;
+- (void)_toggleShowAllHours;
+- (id)hoursBuilderWithHours:;
+- (BOOL)_shouldOnlyShowExpanded;
+- (void)_updateHoursAnimated:;
++ (id)placeHoursWithMapItem:;
+@end

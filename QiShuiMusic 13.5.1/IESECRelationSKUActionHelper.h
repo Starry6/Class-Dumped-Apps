@@ -1,0 +1,31 @@
+@interface IESECRelationSKUActionHelper : NSObject
+@property (nonatomic) UIView<IESECSKUViewProtocol> skuView;
+@property (nonatomic) IESECTracker tracker;
+@property (nonatomic) IESECBTMModel btmModel;
+@property (nonatomic) NSString bcmChain;
+@property (nonatomic) IESECRelationSKUInfo info;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)buy;
+- (id)skuView;
+- (void)addToCartClick:skuInfo:;
+- (void)addToCartWithCompletion:;
+- (void)addToShoppingCartActionWithSKUInfo:completion:;
+- (void)backClick:skuInfo:;
+- (id)bcmChain;
+- (id)btmModel;
+- (void)closeSKUView;
+- (void)confirmClick:skuInfo:couponId:;
+- (void)setBcmChain:;
+- (void)setBtmModel:;
+- (void)setSkuView:;
+- (void)showSKUViewWithShowRequest:;
+- (void)setTracker:;
+- (id)tracker;
+- (id)initWithInfo:;
+- (void)setInfo:;
+- (void).cxx_destruct;
+- (id)info;
+@end

@@ -1,0 +1,2 @@
+@interface HTSLiveLinkmicInteractiveScreenCastRoot : GPBRootObject
+@end

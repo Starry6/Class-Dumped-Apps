@@ -1,0 +1,35 @@
+@interface INAppIntentDeliverer : NSObject
+@property (nonatomic) NSObject<OS_dispatch_queue> queue;
+@property (nonatomic) RBSAssertion processAssertion;
+@property (nonatomic) RBSProcessMonitor processMonitor;
+@property (nonatomic) @? completionBlock;
+@property (nonatomic) INWatchdogTimer requestTimer;
+@property (nonatomic) <INIntentBackgroundHandlingAssertion> auxiliaryAssertion;
+@property (nonatomic) INIntentForwardingAction intentForwardingAction;
+@property (nonatomic) NSString bundleIdentifier;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)processMonitor;
+- (void)assertion:didInvalidateWithError:;
+- (id)bundleIdentifier;
+- (void)dealloc;
+- (void)setCompletionBlock:;
+- (id)initWithBundleIdentifier:;
+- (void).cxx_destruct;
+- (id)completionBlock;
+- (id)queue;
+- (id)initWithBundleIdentifier:intentForwardingAction:;
+- (void)deliverIntentForwardingActionWithResponseHandler:;
+- (void)deliverIntent:reply:;
+- (void)_deliverIntentForwardingActionWithResponseHandler:;
+- (void)invalidateIntentDelivery;
+- (void)completeWithIntentForwardingActionResponse:;
+- (id)intentForwardingAction;
+- (id)processAssertion;
+- (id)requestTimer;
+- (void)setRequestTimer:;
+- (id)auxiliaryAssertion;
+- (void)setAuxiliaryAssertion:;
+@end

@@ -1,0 +1,31 @@
+@interface IESLiveSaaSConfigurableShortTouchEntranceView : UIView
+@property (nonatomic) IESLiveSaaSConfigurableEntranceModel model;
+@property (nonatomic) @? success;
+@property (nonatomic) @? timeout;
+@property (nonatomic) IESLiveSaaSGCDTimer timer;
+@property (nonatomic) PuzzleHybridContainer webView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)viewDidLoadFailedWithUrl:error:;
+- (void)didSetAttachingDIContext;
+- (id)initWithModel:success:timeout:;
+- (void)invalidTimer;
+- (void)resetSuccessCallback;
+- (void)resetTimeoutCallback;
+- (void)viewDidFinishLoadWithURL:;
+- (id)model;
+- (void)setWebView:;
+- (void)dealloc;
+- (void)setModel:;
+- (id)webView;
+- (void)setTimeout:;
+- (id)success;
+- (void)setSuccess:;
+- (void)setTimer:;
+- (void)setup;
+- (void).cxx_destruct;
+- (id)timeout;
+- (id)timer;
+@end

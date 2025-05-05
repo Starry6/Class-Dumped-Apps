@@ -1,0 +1,36 @@
+@interface PerspectiveDistortionCorrectionSession : FrameUndistortionSession
+- (id)initWithOutputDimensions:mode:portType:;
+- (id)_framingSpaceBoundsLandscapeLeft;
+- (float)_getHeightDerivativeForWidth:widthDerivative:outputAspectRatioInDeviceOrientation:;
+- (float)_getHeightForWidth:outputAspectRatioInDeviceOrientation:;
+- (float)_getWidthForHeight:outputAspectRatioInDeviceOrientation:;
+- (id)_adjustDisplayRectToFitInFramingSpaceLandscapeLeft:;
+- (id)_scaleDisplayRectSizeToFit:;
+- (id)_searchValidSizeForStartSize:invalidPoint:;
+- (id)_moveDisplayRectToFitInFramingSpaceLandscapeLeft:;
+- (id)_searchEarliestValidPointOnIntervalWithStart:andEnd:displayRect:;
+- (BOOL)_pointInFramingSpaceLandscapeLeftIsValid:withDisplayRect:;
+- (float)_fisheyeStrengthForDisplayRect:;
+- (void)_constrainedRollUpdate:;
+- (void)_updatePitchAndRoll;
+- (id)projectPointToInputImageCoordinates:;
+- (id)projectPointToFramingSpaceLandscapeLeft:;
+- (id)_shiftOutputPlaneToFitInFramingSpaceLandscapeLeft:;
+- (id)backProjectedFramingSpaceViewport;
+- (id)projectRectInFramingSpaceLandscapeLeftToInputImageCoordinates:;
+- (id)projectRectInInputImageToFramingSpaceLandscapeLeftCoordinates:;
+- (BOOL)_pointInFramingSpaceLandscapeLeftIsValid:;
+- (int)_outputPlaneCcwRotations;
+- (unsigned int)cameraOrientationToExifOrientation:;
+- (id)_outputPlaneSizeForDisplayRect:;
+- (BOOL)_gravityVectorIsValid;
+- (id)_rotationMatrixForDisplayRect:;
+- (id)_outputPlaneRectForDisplayRect:;
+- (id)normalizedFramingSpaceLandscapeLeftToInputImageTransformMatrix;
+- (BOOL)imageTransformIsValid;
+- (id)_projectRectInFramingSpaceLandscapeLeft:toDisplayRectInFramingSpaceLandscapeLeft:;
+- (id)_projectPointInFramingSpaceLandscapeLeft:toDisplayRectInFramingSpaceLandscapeLeft:;
+- (id)_warpRectInInputImageCoordinatesToFramingSpaceInLandscapeLeft:calibrationParameters:;
+- (id)_scalePlaneToFitInFramingSpaceLandscapeLeft:;
+- (void)_setShaderParametersForRotationNormalizedDisplayRect:gidToNormalizedOutput:calibrationParameters:commandEncoder:;
+@end

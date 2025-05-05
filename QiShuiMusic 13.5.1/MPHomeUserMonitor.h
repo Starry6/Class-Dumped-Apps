@@ -1,0 +1,35 @@
+@interface MPHomeUserMonitor : NSObject
+@property (nonatomic) BOOL explicitSettingEnabled;
+@property (nonatomic) BOOL privateListeningEnabledForCurrentAccessory;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)_update;
+- (void).cxx_destruct;
+- (void)user:didUpdateUserListeningHistoryUpdateControl:forHome:;
+- (void)_postNotificationWithName:;
+- (void)settingsDidUpdate:;
+- (id)initWithUser:home:;
+- (BOOL)isExplicitSettingEnabled;
+- (void)setExplicitSettingEnabled:;
+- (BOOL)isPrivateListeningEnabledForCurrentAccessory;
+- (void)setPrivateListeningEnabledForCurrentAccessory:;
+- (void)setPrivateListeningEnabledForAccessoryWithRouteID:enabled:;
+- (BOOL)hasAccessoryWithRouteID:;
+- (BOOL)privateListeningEnabledForAccessoryWithRouteID:;
+- (id)privateListeningEnabledForGroupWithRouteIDs:;
+- (void)_loadAllowExplicitValue;
+- (void)_loadCurrentAccessoryPrivateListening;
+- (void)_updateUserListeningHistoryControlForAccessory:enable:;
+- (void)_notifyPrivateListeningUpdated;
+- (void)_notifyAllowExplicitUpdated;
++ (id)monitorForCurrentUser;
++ (id)userMonitorWithHomeIdentifier:;
++ (id)userMonitorWithHomeIdentifiers:;
++ (id)userMonitorWithUserIdentity:fromUserIdentityStore:;
++ (BOOL)isExplicitSettingEnabledForCurrentUser;
++ (void)setExplicitSettingEnabledForCurrentUser:;
++ (BOOL)isPrivateListeningEnabledForCurrentUserAndAccessory;
++ (void)setPrivateListeningEnabledForCurrentUserAndAccessory:;
+@end

@@ -1,0 +1,2 @@
+@interface IESLiveSaaSIESLiveSaaSPBSilenceRoot : GPBRootObject
+@end

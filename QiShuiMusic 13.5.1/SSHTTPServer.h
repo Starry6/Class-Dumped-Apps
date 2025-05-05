@@ -1,0 +1,31 @@
+@interface SSHTTPServer : NSObject
+@property (nonatomic) BOOL allowsSecure;
+@property (nonatomic) NSInteger downloadSpeed;
+@property (nonatomic) s port;
+@property (nonatomic) q responsesDelivered;
+@property (nonatomic) NSInteger state;
+@property (nonatomic) BOOL verbose;
+- (id)init;
+- (void)dealloc;
+- (BOOL)start;
+- (short)port;
+- (void)stop;
+- (void)setPort:;
+- (int)state;
+- (void).cxx_destruct;
+- (void)requestDidFinish:;
+- (BOOL)verbose;
+- (void)setVerbose:;
+- (id)_ipAddress;
+- (id)serverURL;
+- (id)responseBlockForPath:;
+- (long long)responsesDelivered;
+- (id)serverLocalhostURL;
+- (void)setResponseForPath:handler:;
+- (void)_handleConnectWithType:handle:;
+- (BOOL)allowsSecure;
+- (int)downloadSpeed;
+- (void)setDownloadSpeed:;
++ (id)sharedServer;
++ (BOOL)_isPortOccupied:;
+@end

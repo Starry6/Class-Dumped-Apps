@@ -1,0 +1,31 @@
+@interface BUAudioSessionSetting : NSObject
+@property (nonatomic) BOOL systemMute;
+@property (nonatomic) double beginPlayTimeInterval;
+@property (nonatomic) NSString originalCategory;
+@property (nonatomic) NSURL url;
+@property (nonatomic) AVAudioSession audioSession;
+@property (nonatomic) BOOL allowModifyAudioSessionSetting;
+@property (nonatomic) NSString sourcePath;
+- (void)longRunningInit;
+- (BOOL)allowModifyAudioSessionSetting;
+- (double)beginPlayTimeInterval;
+- (void)monitorMute;
+- (void)monitorMute:;
+- (id)originalCategory;
+- (void)playToEnd;
+- (void)saveAudioSessionOriginCategory;
+- (void)setAllowModifyAudioSessionSetting:;
+- (void)setBeginPlayTimeInterval:;
+- (void)setOriginalCategory:;
+- (void)setSystemMute:;
+- (BOOL)systemMute;
+- (long long)systemVolume;
+- (id)url;
+- (id)sourcePath;
+- (void)setUrl:;
+- (void).cxx_destruct;
+- (void)setSourcePath:;
+- (void)setAudioSession:;
+- (id)audioSession;
++ (id)shareInstance;
+@end

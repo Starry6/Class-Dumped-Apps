@@ -1,0 +1,33 @@
+@interface PAVideoConversionServiceClient : NSObject
+@property (nonatomic) NSXPCConnection serviceConnection;
+@property (nonatomic) NSMutableDictionary pendingRequestIdentifierToProgressMap;
+@property (nonatomic) NSObject<OS_dispatch_queue> isolationQueue;
+@property (nonatomic) Q state;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)serviceConnection;
+- (id)init;
+- (void)setState:;
+- (id)isolationQueue;
+- (void)setIsolationQueue:;
+- (unsigned long long)state;
+- (void)setServiceConnection:;
+- (void).cxx_destruct;
+- (void)extractStillImageFromVideoAtSourceURL:toDestinationURL:options:completionHandler:;
+- (id)convertVideoAtSourceURLCollection:toDestinationURLCollection:options:completionHandler:;
+- (void)invalidateAfterPendingRequestCompletion;
+- (BOOL)canMarkPendingRequestAsOptionalForProgress:;
+- (void)markPendingRequestAsOptionalForProgress:;
+- (void)updateProgress:;
+- (id)convertVideoAtSourceURL:toDestinationURL:options:completionHandler:;
+- (void)setupServiceConnection;
+- (void)modifyRequestWithIdentifier:modifications:;
+- (void)handleRequestCompletionForIdentifier:;
+- (void)transitionToInvalidatedState;
+- (void)requestStatusWithCompletionHandler:;
+- (id)pendingRequestIdentifierToProgressMap;
+- (void)setPendingRequestIdentifierToProgressMap:;
+- (void)ut_invalidateServiceConnection;
+@end

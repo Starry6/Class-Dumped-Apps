@@ -1,0 +1,32 @@
+@interface SFSafariViewControllerConfiguration : NSObject
+@property (nonatomic) q _redirectNotificationBehavior;
+@property (nonatomic) BOOL _ephemeral;
+@property (nonatomic) BOOL _performingAccountSecurityUpgrade;
+@property (nonatomic) BOOL _jitEnabled;
+@property (nonatomic) BOOL entersReaderIfAvailable;
+@property (nonatomic) BOOL barCollapsingEnabled;
+@property (nonatomic) SFSafariViewControllerActivityButton activityButton;
+@property (nonatomic) UIEventAttribution eventAttribution;
+- (id)init;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)eventAttribution;
+- (id)copyWithZone:;
+- (void)setEventAttribution:;
+- (BOOL)_isEphemeral;
+- (long long)_redirectNotificationBehavior;
+- (void)set_redirectNotificationBehavior:;
+- (void)_setEphemeral:;
+- (BOOL)_isPerformingAccountSecurityUpgrade;
+- (void)_setPerformingAccountSecurityUpgrade:;
+- (BOOL)_isJITEnabled;
+- (void)_setJITEnabled:;
+- (BOOL)entersReaderIfAvailable;
+- (void)setEntersReaderIfAvailable:;
+- (BOOL)barCollapsingEnabled;
+- (void)setBarCollapsingEnabled:;
+- (id)activityButton;
+- (void)setActivityButton:;
++ (BOOL)supportsSecureCoding;
+@end

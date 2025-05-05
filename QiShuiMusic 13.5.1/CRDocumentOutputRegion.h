@@ -1,0 +1,37 @@
+@interface CRDocumentOutputRegion : CROutputRegion
+@property (nonatomic) CROutputRegion title;
+@property (nonatomic) CRTextDetectorResults detectorResults;
+@property (nonatomic) Q documentRevision;
+@property (nonatomic) CRDocumentOutputRegionMetadata additionalMetadata;
+@property (nonatomic) NSArray cachedLayoutComponents;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setTitle:;
+- (void)setChildren:;
+- (unsigned long long)type;
+- (id)title;
+- (void).cxx_destruct;
+- (BOOL)isEqual:;
+- (id)outputRegionWithContentsOfCharacterRange:;
+- (BOOL)shouldReprocessDocument;
+- (id)additionalMetadata;
+- (void)setAdditionalMetadata:;
+- (id)outputRegionWithContentsOfQuad:;
+- (id)layoutComponents;
+- (id)initWithCRCodableDataRepresentation:version:offset:;
+- (id)crCodableDataRepresentation;
+- (id)copyWithZone:copyChildren:copyCandidates:;
+- (id)detectorResults;
+- (void)setDetectorResults:;
+- (id)outputRegionWithContentsBetweenStartPoint:endPoint:;
+- (void)collectMetadataFromResults:;
+- (BOOL)_shouldReprocessRev1;
+- (unsigned long long)documentRevision;
+- (void)setDocumentRevision:;
+- (id)cachedLayoutComponents;
+- (void)setCachedLayoutComponents:;
++ (id)documentWithRegions:title:confidence:imageSize:;
++ (id)documentWithLines:title:confidence:imageSize:;
+@end

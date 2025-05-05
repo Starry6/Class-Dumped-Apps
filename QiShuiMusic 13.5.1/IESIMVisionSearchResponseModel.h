@@ -1,0 +1,30 @@
+@interface IESIMVisionSearchResponseModel : IESIMBaseApiModel
+@property (nonatomic) NSArray dataModels;
+@property (nonatomic) NSArray objectModels;
+@property (nonatomic) q cursor;
+@property (nonatomic) q offset;
+@property (nonatomic) BOOL hasMore;
+@property (nonatomic) NSString contentHash;
+@property (nonatomic) NSString queryID;
+@property (nonatomic) NSString searchID;
+- (id)dataModels;
+- (void)setDataModels:;
+- (id)queryID;
+- (long long)cursor;
+- (void)setOffset:;
+- (void)setHasMore:;
+- (void)setQueryID:;
+- (void)setCursor:;
+- (long long)offset;
+- (void).cxx_destruct;
+- (BOOL)hasMore;
+- (void)setContentHash:;
+- (id)contentHash;
+- (id)searchID;
+- (void)setSearchID:;
+- (id)objectModels;
+- (void)setObjectModels:;
++ (id)dataModelsJSONTransformer;
++ (id)objectModelsJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

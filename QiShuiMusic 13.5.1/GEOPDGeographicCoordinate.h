@@ -1,0 +1,34 @@
+@interface GEOPDGeographicCoordinate : PBCodable
+@property (nonatomic) BOOL hasLatitude;
+@property (nonatomic) double latitude;
+@property (nonatomic) BOOL hasLongitude;
+@property (nonatomic) double longitude;
+@property (nonatomic) BOOL hasAltitude;
+@property (nonatomic) double altitude;
+- (void)readAll:;
+- (double)altitude;
+- (id)initWithJSON:;
+- (double)latitude;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (BOOL)hasLongitude;
+- (unsigned long long)hash;
+- (BOOL)hasLatitude;
+- (void)copyTo:;
+- (void)setHasLatitude:;
+- (void)setAltitude:;
+- (void)mergeFrom:;
+- (void)setLatitude:;
+- (void)setHasLongitude:;
+- (void)setLongitude:;
+- (BOOL)readFrom:;
+- (id)description;
+- (double)longitude;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setHasAltitude:;
+- (BOOL)hasAltitude;
++ (BOOL)isValid:;
+@end

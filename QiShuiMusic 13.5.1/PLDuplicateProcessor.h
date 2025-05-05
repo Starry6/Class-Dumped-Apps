@@ -1,0 +1,33 @@
+@interface PLDuplicateProcessor : NSObject
+- (id)initWithLibraryServicesManager:;
+- (id)_photoLibrary;
+- (void).cxx_destruct;
+- (id)_appPrivateData;
+- (BOOL)processDuplicatesOfAssetObjectIds:processingType:library:error:continuationHandler:;
+- (BOOL)_batchEnumerateOrGenerateAssetObjectIdsFromStartingAssetOIDs:library:error:continuationHandler:processingBatchBlock:;
+- (void)_setInterruptMarker:;
+- (id)_resumeInterruptMarker;
+- (id)_buildInterruptBatchFromStartingOIDs:library:;
+- (BOOL)_processDuplicatesWithPhotoLibrary:processingType:assetObjectIds:error:;
+- (BOOL)_detectDuplicatesAndInsertIntoDuplicateAlbumWithPhotoLibrary:detector:duplicateType:error:;
+- (BOOL)_processedDuplicateAssetSubGroupWithPhotoLibrary:assetObjectIDs:duplicateType:error:;
+- (id)_processedDuplicateAssetsWithPhotoLibrary:assetObjectIDs:duplicateType:associatedDuplicateAlbum:error:;
+- (BOOL)_processedRemoveExclusionGroupAssetsWithPhotoLibrary:assetObjectIDs:error:;
+- (id)_fetchAssetsWithPhotoLibrary:assetObjectIDs:error:;
+- (id)_fetchAssetOIDsForPhotoLibrary:error:;
+- (BOOL)_moveDuplicateAlbumAssestFromAlbums:toTargetAlbum:duplicateType:error:;
+- (BOOL)_insertIntoDuplicateAlbum:assets:duplicateType:photoLibrary:error:;
+- (id)_duplicateAlbumsFromAssets:;
+- (BOOL)assetsArePendingForDuplicateMergeProcessing:;
+- (BOOL)_checkMergeFeatureEnabled:;
+- (void)mergeDuplicateAssetsWithAssetUUIDs:library:completionHandler:;
+- (void)_cloudScopedIdentifiersFromAssetUUIDS:library:completionHandler:;
+- (id)_albumGroupingFromAssets:localIdentifierToCloudIdentifiers:library:;
+- (id)_fetchAssetsFromReference:library:error:;
+- (BOOL)_isAssetValidForMerge:;
+- (id)_sortMergeDuplicateAssets:library:error:;
+- (void)_inFlightMergeAssetsAddUUIDs:;
+- (void)_inFlightMergeAssetsRemoveUUIDs:;
++ (BOOL)isValidDuplicateProcessorForLibraryServicesManager:;
++ (void)signalBackgroundJobSeviceDuplicateProcessingWithLibrary:;
+@end

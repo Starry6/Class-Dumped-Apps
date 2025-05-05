@@ -1,0 +1,36 @@
+@interface TLKImage : NSObject
+@property (nonatomic) NSCache imageCache;
+@property (nonatomic) UIImage uiImage;
+@property (nonatomic) {CGSize=dd} size;
+@property (nonatomic) double aspectRatio;
+@property (nonatomic) BOOL isTemplate;
+@property (nonatomic) Q cornerRoundingStyle;
+@property (nonatomic) BOOL supportsFastPathShadow;
+@property (nonatomic) double cornerRadius;
+- (BOOL)isTemplate;
+- (void)setAspectRatio:;
+- (id)imageCache;
+- (id)initWithImage:;
+- (id)init;
+- (double)aspectRatio;
+- (void)setImageCache:;
+- (void)setCornerRadius:;
+- (void).cxx_destruct;
+- (void)setIsTemplate:;
+- (double)cornerRadius;
+- (void)setSize:;
+- (id)size;
+- (unsigned long long)cornerRoundingStyle;
+- (void)setCornerRoundingStyle:;
+- (void)loadImageWithScale:isDarkStyle:completionHandler:;
+- (id)cachedImageForScale:isDarkStyle:;
+- (void)cacheImage:forScale:isDarkStyle:;
+- (id)uiImage;
+- (void)setUiImage:;
+- (BOOL)supportsFastPathShadow;
+- (void)setSupportsFastPathShadow:;
++ (id)templateImageForImage:;
++ (id)applyTintColor:toImage:;
++ (id)keyForScale:isDarkStyle:;
++ (BOOL)imageIsSymbol:;
+@end

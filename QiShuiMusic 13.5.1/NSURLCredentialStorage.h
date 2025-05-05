@@ -1,0 +1,35 @@
+@interface NSURLCredentialStorage : NSObject
+@property (nonatomic) NSDictionary safari_allSafariCredentials;
+@property (nonatomic) NSArray safari_allPasswordManagerSidecarEntriesInPersonalKeychain;
+@property (nonatomic) BOOL _useSystemKeychain;
+@property (nonatomic) NSDictionary allCredentials;
+- (void)safari_setDefaultCredential:forHTMLFormProtectionSpace:;
+- (id)safari_allSafariCredentials;
+- (void)safari_setSynchronizableCredential:forHTMLFormProtectionSpace:;
+- (void)safari_deleteSynchronizableCredentialWithEmptyServerHost:forHTMLFormProtectionSpace:;
+- (id)_formattedLabelWithHost:user:;
+- (id)safari_allPasswordManagerSidecarEntriesInPersonalKeychain;
+- (void)safari_setSynchronizableSidecar:credential:forHTMLFormProtectionSpace:;
+- (void)safari_deleteSynchronizableSidecarForCredential:forHTMLFormProtectionSpace:;
+- (id)init;
+- (void)dealloc;
+- (id)_initWithIdentifier:private:;
+- (id)_initWithCFURLCredentialStorage:;
+- (id)_CFURLCredentialStorage;
+- (BOOL)_useSystemKeychain;
+- (void)set_useSystemKeychain:;
+- (id)credentialsForProtectionSpace:;
+- (id)allCredentials;
+- (id)_allCredentialsWithAccessControlGroup:includeLegacyKeychain:;
+- (void)setCredential:forProtectionSpace:;
+- (void)removeCredential:forProtectionSpace:;
+- (void)removeCredential:forProtectionSpace:options:;
+- (id)defaultCredentialForProtectionSpace:;
+- (void)setDefaultCredential:forProtectionSpace:;
+- (void)getCredentialsForProtectionSpace:task:completionHandler:;
+- (void)setCredential:forProtectionSpace:task:;
+- (void)removeCredential:forProtectionSpace:options:task:;
+- (void)getDefaultCredentialForProtectionSpace:task:completionHandler:;
+- (void)setDefaultCredential:forProtectionSpace:task:;
++ (id)sharedCredentialStorage;
+@end

@@ -1,0 +1,33 @@
+@interface IESLiveSaaSFeedDrawerTipAvatarsView : UIView
+@property (nonatomic) double avatarWidth;
+@property (nonatomic) UIImageView firstAvatar;
+@property (nonatomic) UIImageView secondAvatar;
+@property (nonatomic) UIImageView thirdAvatar;
+@property (nonatomic) UIImageView inComingAvatar;
+@property (nonatomic) UIView bgView;
+@property (nonatomic) BOOL disableLoopAnimation;
+- (BOOL)disableLoopAnimation;
+- (id)dismissFrame;
+- (void)doAvatarAnimation;
+- (id)firstFrame;
+- (id)inComingAvatar;
+- (id)inComingFrame;
+- (id)initWithFrame:avatarUrls:;
+- (id)roundedImageViewWithAvatarUrl:;
+- (id)secondFrame;
+- (void)setDisableLoopAnimation:;
+- (void)setInComingAvatar:;
+- (void)stopAvatarAnimation;
+- (id)thirdFrame;
+- (void).cxx_destruct;
+- (id)bgView;
+- (void)setBgView:;
+- (id)firstAvatar;
+- (void)setFirstAvatar:;
+- (id)secondAvatar;
+- (void)setSecondAvatar:;
+- (id)thirdAvatar;
+- (void)setThirdAvatar:;
+- (double)avatarWidth;
+- (void)setAvatarWidth:;
+@end

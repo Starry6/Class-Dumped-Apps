@@ -1,0 +1,32 @@
+@interface NWTCPListener : NSObject
+@property (nonatomic) NSObject<OS_nw_listener> internalListener;
+@property (nonatomic) NWParameters parameters;
+@property (nonatomic) NWEndpoint endpoint;
+@property (nonatomic) NSString launchdKey;
+@property (nonatomic) <NWTCPListenerDelegate> delegate;
+@property (nonatomic) NSError error;
+@property (nonatomic) NWEndpoint localEndpoint;
+- (void)cancel;
+- (void)handleError:;
+- (void)setError:;
+- (void)setDelegate:;
+- (void)setEndpoint:;
+- (id)error;
+- (id)initWithParameters:delegate:;
+- (id)parameters;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)internalListener;
+- (id)endpoint;
+- (void)setInternalListener:;
+- (void)setParameters:;
+- (void)startInternal;
+- (id)localEndpoint;
+- (void)setLocalEndpoint:;
+- (void)handleNewConnection:;
+- (id)initWithParameters:delegate:launchdKey:bonjourEndpoint:;
+- (id)initWithLaunchdKey:parameters:delegate:;
+- (id)initWithBonjourServiceEndpoint:parameters:delegate:;
+- (id)launchdKey;
+- (void)setLaunchdKey:;
+@end

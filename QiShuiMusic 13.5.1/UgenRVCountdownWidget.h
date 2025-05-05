@@ -1,0 +1,2 @@
+@interface UgenRVCountdownWidget : UgenWidget
+@end

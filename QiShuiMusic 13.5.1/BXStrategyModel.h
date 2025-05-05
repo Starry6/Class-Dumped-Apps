@@ -1,0 +1,31 @@
+@interface BXStrategyModel : NSObject
+@property (nonatomic) NSString key;
+@property (nonatomic) NSString spaceId;
+@property (nonatomic) NSString benchId;
+@property (nonatomic) NSString dec;
+@property (nonatomic) NSString owner;
+@property (nonatomic) @ defaultValue;
+@property (nonatomic) BOOL isSticky;
+@property (nonatomic) BOOL isDynamic;
+@property (nonatomic) @ strickyValue;
+- (id)spaceId;
+- (id)benchId;
+- (id)dec;
+- (void)setDec:;
+- (void)setBenchId:;
+- (void)setIsSticky:;
+- (void)setSpaceId:;
+- (void)setStrickyValue:;
+- (id)strickyValue;
+- (BOOL)isDynamic;
+- (id)init;
+- (void)setOwner:;
+- (void)setDefaultValue:;
+- (id)key;
+- (id)owner;
+- (id)defaultValue;
+- (void)setKey:;
+- (void).cxx_destruct;
+- (void)setIsDynamic:;
+- (BOOL)isSticky;
+@end

@@ -1,0 +1,2 @@
+@interface IESIMConversationAuditDataManager : NSObject
+@end

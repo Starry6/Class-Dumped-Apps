@@ -1,0 +1,31 @@
+@interface MSDecodeOptions : NSObject
+@property (nonatomic) BOOL verifySignatures;
+@property (nonatomic) BOOL verifySigners;
+@property (nonatomic) NSArray signerPolicies;
+@property (nonatomic) NSDate verifyTime;
+@property (nonatomic) ^{__SecIdentity=} identity;
+@property (nonatomic) NSData key;
+@property (nonatomic) NSData LAContext;
+@property (nonatomic) NSArray additionalCertificates;
+- (void)setIdentity:;
+- (id)init;
+- (id)identity;
+- (void)dealloc;
+- (void)setLAContext:;
+- (id)key;
+- (void)setKey:;
+- (void).cxx_destruct;
+- (id)LAContext;
+- (void)setAdditionalCertificates:;
+- (id)initWithDecryptionIdentity:;
+- (id)initWithDecryptionKey:;
+- (BOOL)verifySignatures;
+- (void)setVerifySignatures:;
+- (BOOL)verifySigners;
+- (void)setVerifySigners:;
+- (id)signerPolicies;
+- (void)setSignerPolicies:;
+- (id)verifyTime;
+- (void)setVerifyTime:;
+- (id)additionalCertificates;
+@end

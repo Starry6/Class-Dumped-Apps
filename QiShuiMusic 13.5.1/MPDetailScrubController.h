@@ -1,0 +1,36 @@
+@interface MPDetailScrubController : NSObject
+@property (nonatomic) UIControl<MPDetailedScrubbing> scrubbingControl;
+@property (nonatomic) <MPDetailScrubControllerDelegate> delegate;
+@property (nonatomic) double duration;
+@property (nonatomic) double scrubbingVerticalRange;
+@property (nonatomic) BOOL detailedScrubbingEnabled;
+@property (nonatomic) BOOL durationAllowsForDetailedScrubbing;
+@property (nonatomic) BOOL isTracking;
+@property (nonatomic) q currentScrubSpeed;
+- (BOOL)isTracking;
+- (id)init;
+- (BOOL)beginTrackingWithTouch:withEvent:;
+- (void)setDelegate:;
+- (void)_endScrubbing;
+- (void)setDuration:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)cancelTrackingWithEvent:;
+- (double)duration;
+- (void)endTrackingWithTouch:withEvent:;
+- (BOOL)continueTrackingWithTouch:withEvent:;
+- (float)_minimumScale;
+- (id)initWithScrubbingControl:;
+- (BOOL)durationAllowsForDetailedScrubbing;
+- (float)scaleForVerticalPosition:;
+- (float)_scaleForIdealValueForVerticalPosition:;
+- (void)_beginScrubbing;
+- (void)_commitValue:;
+- (id)scrubbingControl;
+- (void)setScrubbingControl:;
+- (double)scrubbingVerticalRange;
+- (void)setScrubbingVerticalRange:;
+- (BOOL)detailedScrubbingEnabled;
+- (void)setDetailedScrubbingEnabled:;
+- (long long)currentScrubSpeed;
+@end

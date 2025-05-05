@@ -1,0 +1,34 @@
+@interface TCAddShareDic : TCAPIRequest
+@property (nonatomic) NSString paramTitle;
+@property (nonatomic) NSString paramUrl;
+@property (nonatomic) NSString paramComment;
+@property (nonatomic) NSString paramSummary;
+@property (nonatomic) NSString paramImages;
+@property (nonatomic) NSString paramType;
+@property (nonatomic) NSString paramPlayurl;
+@property (nonatomic) NSString paramSite;
+@property (nonatomic) NSString paramFromurl;
+@property (nonatomic) NSString paramNswb;
+- (void)setParamImages:;
+- (id)paramComment;
+- (id)paramFromurl;
+- (id)paramImages;
+- (id)paramNswb;
+- (id)paramPlayurl;
+- (id)paramSite;
+- (id)paramSummary;
+- (id)paramTitle;
+- (id)paramUrl;
+- (void)setParamComment:;
+- (void)setParamFromurl:;
+- (void)setParamNswb:;
+- (void)setParamPlayurl:;
+- (void)setParamSite:;
+- (void)setParamSummary:;
+- (void)setParamTitle:;
+- (void)setParamType:;
+- (void)setParamUrl:;
+- (id)paramType;
+- (void).cxx_destruct;
++ (id)dictionary;
+@end

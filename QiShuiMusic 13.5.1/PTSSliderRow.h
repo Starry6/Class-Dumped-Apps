@@ -1,0 +1,2 @@
+@interface PTSSliderRow : PTSliderRow
+@end

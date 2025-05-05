@@ -1,0 +1,26 @@
+@interface PPXPCTopicStore : PPTopicStore
+- (BOOL)deleteAllTopicsFromSourcesWithBundleId:deletedCount:error:;
+- (BOOL)deleteAllTopicsFromSourcesWithBundleId:documentIds:deletedCount:error:;
+- (id)unmapMappedTopicIdentifier:mappingIdentifier:error:;
+- (BOOL)iterRankedTopicsWithQuery:error:block:;
+- (id)topicRecordsWithQuery:error:;
+- (BOOL)cloudSyncWithError:;
+- (BOOL)donateTopics:source:algorithm:cloudSync:sentimentScore:exactMatchesInSourceText:error:;
+- (BOOL)computeAndCacheTopicScores:;
+- (void)registerFeedback:completion:;
+- (id)topicExtractionsFromText:error:;
+- (BOOL)iterTopicRecordsWithQuery:error:block:;
+- (void).cxx_destruct;
+- (void)setClientIdentifier:;
+- (BOOL)deleteAllTopicsWithTopicId:deletedCount:error:;
+- (BOOL)deleteAllTopicsFromSourcesWithBundleId:groupIds:deletedCount:error:;
+- (id)_init;
+- (BOOL)iterScoresForTopicMapping:query:error:block:;
+- (id)scoresForTopicMapping:query:error:;
+- (BOOL)clearWithError:deletedCount:;
+- (id)rankedTopicsWithQuery:error:;
+- (id)clientIdentifier;
+- (id)topicCacheSandboxExtensionToken:;
+- (void)registerUniversalSearchSpotlightFeedback:completion:;
+- (id)cachePath:;
+@end

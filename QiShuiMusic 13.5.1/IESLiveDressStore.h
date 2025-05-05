@@ -1,0 +1,35 @@
+@interface IESLiveDressStore : NSObject
+@property (nonatomic) <IESLiveRoomServiceAdapter> room;
+@property (nonatomic) HTSEventContext trackContext;
+@property (nonatomic) <IESLivePrivilegeDressAPI> buyDressApi;
+@property (nonatomic) IESLiveComponentContext componentContext;
+@property (nonatomic) <IESLivePrivilegeRoomModuleAdapter> privilegeAdapter;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)kitView:willCreatedWithContext:;
+- (void)setBuyDressApi:;
+- (void)prefetchOpenAssetWithGiftPages:;
+- (id)buyDressApi;
+- (void)buyDressFormGiftPanel:trackParams:rechargeBlock:buyCompletion:;
+- (id)componentContext;
+- (void)didSetAttachingDIContext;
+- (BOOL)hasPlentyDiamand:;
+- (id)initWithRoom:componentContext:trackContext:;
+- (id)openEffectPreloadConfig;
+- (BOOL)p_shouldSkipDiamondCheck;
+- (void)prefetchCurrentUserDress;
+- (void)prefetchOpenAssetWithGiftPage:;
+- (id)privilegeAdapter;
+- (void)registerDressModule;
+- (void)setComponentContext:;
+- (void)setPrivilegeAdapter:;
+- (void)setTrackContext:;
+- (id)trackContext;
+- (void)updateDressContext;
+- (void).cxx_destruct;
+- (id)room;
+- (void)setRoom:;
+- (void)messageReceived:;
+@end

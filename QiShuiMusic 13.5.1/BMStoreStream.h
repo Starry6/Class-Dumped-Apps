@@ -1,0 +1,37 @@
+@interface BMStoreStream : NSObject
+@property (nonatomic) NSString identifier;
+- (id)publisherFromStartTime:;
+- (void)pruneWithPredicateBlock:;
+- (id)init;
+- (BOOL)pruneEventsWithError:predicateBlock:;
+- (id)remoteDevices;
+- (id)publishersForRemoteDevices:startTime:includeLocal:pipeline:;
+- (void)pruneLocalAndRemoteEventsWithPredicateBlock:;
+- (id)publisherWithStartTime:endTime:maxEvents:reversed:;
+- (void)pruneLocalAndRemoteEventsWithReason:usingPredicateBlock:;
+- (id)publisherWithStartTime:endTime:maxEvents:lastN:reversed:;
+- (id)initWithRestrictedStreamIdentifier:storeConfig:;
+- (id)publisher;
+- (BOOL)_requestReadWriteAccess;
+- (id)identifier;
+- (id)validator;
+- (id)publishersForRemoteDevices:startTime:endTime:maxEvents:lastN:reversed:includeLocal:pipeline:;
+- (id)initWithRestrictedStreamIdentifier:;
+- (id)initWithStreamIdentifier:storeConfig:;
+- (id)initWithStreamIdentifier:storeConfig:streamType:;
+- (void)pruneWithReason:usingPredicateBlock:;
+- (void)_pruneWithStoreConfig:expirationAge:block:;
+- (id)initWithPrivateStreamIdentifier:storeConfig:;
+- (void)pruneTombstonesByAge:;
+- (id)initWithPublicStream:protectionClass:;
+- (void).cxx_destruct;
+- (id)source;
+- (void)pruneExpiredEventsWithBlock:;
+- (BOOL)_requestReadAccess;
+- (id)publisherWithStartTime:withEndTime:withMaxEvents:reversed:;
+- (id)initWithRestrictedStreamIdentifier:protectionClass:;
+- (BOOL)pruneEventsWithReason:error:predicateBlock:;
+- (id)initWithPublicStream:;
+- (id)initWithPublicStream:storeConfig:;
++ (id)new;
+@end

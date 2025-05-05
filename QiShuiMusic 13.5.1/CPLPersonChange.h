@@ -1,0 +1,37 @@
+@interface CPLPersonChange : CPLRecordChange
+@property (nonatomic) NSData contactDescriptor;
+@property (nonatomic) NSString fullName;
+@property (nonatomic) q personType;
+@property (nonatomic) q manualSortOrder;
+@property (nonatomic) NSDictionary contactMatchingDictionary;
+@property (nonatomic) NSString displayName;
+@property (nonatomic) q verifiedType;
+@property (nonatomic) NSString mergeTargetPersonIdentifier;
+- (id)fullName;
+- (void)setDisplayName:;
+- (id)displayName;
+- (void)setFullName:;
+- (void).cxx_destruct;
+- (id)contactMatchingDictionary;
+- (long long)verifiedType;
+- (void)setVerifiedType:;
+- (void)setContactMatchingDictionary:;
+- (long long)personType;
+- (void)setManualSortOrder:;
+- (long long)manualSortOrder;
+- (void)setMergeTargetPersonIdentifier:;
+- (void)setPersonType:;
+- (id)mergeTargetPersonIdentifier;
+- (id)relatedIdentifier;
+- (void)setRelatedIdentifier:;
+- (id)contactDescriptor;
+- (void)setContactDescriptor:;
+- (BOOL)validateRecordForTracker:;
++ (BOOL)supportsDeletion;
++ (BOOL)cplShouldIgnorePropertyForCoding:;
++ (BOOL)supportsDirectDeletion;
++ (BOOL)serverSupportsGraphPeopleHome;
++ (BOOL)serverSupportsMergeTargetRef;
++ (BOOL)cplShouldIgnorePropertyForEquality:;
++ (Class)relatedRecordClass;
+@end

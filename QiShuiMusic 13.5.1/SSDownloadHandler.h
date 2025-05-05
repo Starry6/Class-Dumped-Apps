@@ -1,0 +1,30 @@
+@interface SSDownloadHandler : NSObject
+@property (nonatomic) q handlerIdentifier;
+@property (nonatomic) <SSDownloadHandlerDelegate> delegate;
+@property (nonatomic) NSArray downloadPhasesToIgnore;
+@property (nonatomic) BOOL sessionsNeedPowerAssertion;
+@property (nonatomic) BOOL sessionsShouldBlockOtherDownloads;
+- (void)_handleMessage:fromServerConnection:;
+- (id)init;
+- (void)dealloc;
+- (void)setDelegate:;
+- (void)_connectToDaemon;
+- (id)delegate;
+- (void)_setValue:forProperty:;
+- (id)description;
+- (void)setDownloadPhasesToIgnore:;
+- (id)downloadPhasesToIgnore;
+- (long long)handlerIdentifier;
+- (void)resetDisavowedSessions;
+- (BOOL)sessionsNeedPowerAssertion;
+- (BOOL)sessionsShouldBlockOtherDownloads;
+- (void)setSessionsNeedPowerAssertion:;
+- (void)setSessionsShouldBlockOtherDownloads:;
+- (id)_controlConnection;
+- (id)_newSessionWithMessage:;
+- (BOOL)_sendAuthenticationSessionWithMessage:;
+- (void)_sendDisconnectMessage;
+- (BOOL)_sendSessionCancelWithMessage:;
+- (BOOL)_sendSessionHandleWithMessage:;
+- (BOOL)_sendSessionPauseWithMessage:;
+@end

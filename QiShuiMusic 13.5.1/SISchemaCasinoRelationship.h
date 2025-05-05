@@ -1,0 +1,34 @@
+@interface SISchemaCasinoRelationship : SISchemaInstrumentationMessage
+@property (nonatomic) NSString viewIDFrom;
+@property (nonatomic) BOOL hasViewIDFrom;
+@property (nonatomic) NSString viewIDTo;
+@property (nonatomic) BOOL hasViewIDTo;
+@property (nonatomic) NSInteger casinoFromType;
+@property (nonatomic) BOOL hasCasinoFromType;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (BOOL)hasViewIDFrom;
+- (void)deleteViewIDFrom;
+- (BOOL)hasViewIDTo;
+- (void)deleteViewIDTo;
+- (void)setCasinoFromType:;
+- (BOOL)hasCasinoFromType;
+- (void)setHasCasinoFromType:;
+- (void)deleteCasinoFromType;
+- (id)viewIDFrom;
+- (void)setViewIDFrom:;
+- (id)viewIDTo;
+- (void)setViewIDTo:;
+- (int)casinoFromType;
+- (void)setHasViewIDFrom:;
+- (void)setHasViewIDTo:;
+@end

@@ -1,0 +1,35 @@
+@interface IESECLiveListSKUInfo : MTLModel
+@property (nonatomic) NSNumber status;
+@property (nonatomic) NSString ID;
+@property (nonatomic) NSString pairID;
+@property (nonatomic) BOOL itemSelected;
+@property (nonatomic) IESECLiveSubsetGoodsModel subsetGoodsModel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) q itemType;
+@property (nonatomic) NSString itemName;
+@property (nonatomic) NSString itemImageName;
+@property (nonatomic) NSNumber canSelect;
+- (id)itemImageName;
+- (void)setItemImageName:;
+- (void)setSubsetGoodsModel:;
+- (id)subsetGoodsModel;
+- (void)setID:;
+- (void)setStatus:;
+- (void)setItemType:;
+- (id)ID;
+- (long long)itemType;
+- (id)itemName;
+- (void).cxx_destruct;
+- (id)status;
+- (void)setItemName:;
+- (void)setItemSelected:;
+- (BOOL)itemSelected;
+- (id)canSelect;
+- (void)setCanSelect:;
+- (id)pairID;
+- (void)setPairID:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

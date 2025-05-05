@@ -1,0 +1,32 @@
+@interface TTAccountEditUserProfileActivityTipsModel : TTAccountBaseEntity
+@property (nonatomic) q status;
+@property (nonatomic) NSString pendantUrl;
+@property (nonatomic) BOOL hasArrow;
+@property (nonatomic) NSString popupSchema;
+@property (nonatomic) NSString content;
+@property (nonatomic) NSArray contentFormats;
+@property (nonatomic) NSString buttonName;
+@property (nonatomic) NSString pendantId;
+@property (nonatomic) NSString pendantActivityId;
+- (void)setPopupSchema:;
+- (BOOL)hasArrow;
+- (id)pendantActivityId;
+- (id)pendantId;
+- (id)pendantUrl;
+- (id)popupSchema;
+- (void)setButtonName:;
+- (void)setContentFormats:;
+- (void)setHasArrow:;
+- (void)setPendantActivityId:;
+- (void)setPendantId:;
+- (void)setPendantUrl:;
+- (id)content;
+- (void)setStatus:;
+- (void)setContent:;
+- (void).cxx_destruct;
+- (long long)status;
+- (id)buttonName;
+- (id)contentFormats;
++ (id)modelContainerPropertyGenericClass;
++ (unsigned long long)modelCustomMappingOptions;
+@end

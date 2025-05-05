@@ -1,0 +1,33 @@
+@interface SGM2ContactDetailUsed : PBCodable
+@property (nonatomic) BOOL hasKey;
+@property (nonatomic) NSString key;
+@property (nonatomic) BOOL hasApp;
+@property (nonatomic) NSInteger app;
+@property (nonatomic) BOOL hasType;
+@property (nonatomic) NSInteger type;
+- (BOOL)hasKey;
+- (int)app;
+- (void)setApp:;
+- (int)StringAsType:;
+- (id)key;
+- (void)setType:;
+- (void)writeTo:;
+- (void)setHasType:;
+- (BOOL)hasType;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (id)typeAsString:;
+- (void)mergeFrom:;
+- (void)setKey:;
+- (int)type;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setHasApp:;
+- (BOOL)hasApp;
+- (id)appAsString:;
+- (int)StringAsApp:;
+@end

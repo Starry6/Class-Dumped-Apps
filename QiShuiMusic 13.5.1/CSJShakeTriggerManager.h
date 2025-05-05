@@ -1,0 +1,32 @@
+@interface CSJShakeTriggerManager : NSObject
+@property (nonatomic) NSMapTable trackerContainers;
+@property (nonatomic) NSMapTable handlerContainers;
+@property (nonatomic) NSLock trackerLock;
+- (void)setTrackerLock:;
+- (id)handlerContainers;
+- (void)setHandlerContainers:;
+- (void)setTrackerContainers:;
+- (id)trackerContainers;
+- (id)trackerLock;
+- (id)copy;
+- (id)mutableCopy;
+- (void).cxx_destruct;
++ (id)allRegisterKeys;
++ (void)acceleroMotionActionWithConfiguration:handler:;
++ (void)registerWithContainerView:key:;
++ (void)removeTrackerContainersForKey:;
++ (void)removeTriggerHandlerForKey:;
++ (void)setContainerView:forKey:;
++ (void)setTriggerHandler:forKey:;
++ (id)shakeContainerViewWithKey:;
++ (void)startAccelerometerWithConfiguration:handler:;
++ (void)stopAccelerometerWithScence:;
++ (void)stopAllAccelerometer;
++ (id)triggerHandlerWithAdInfo:;
++ (void)unregisterWithKey:;
++ (BOOL)validShakeWithContainer:;
++ (id)allocWithZone:;
++ (void)unlock;
++ (void)lock;
++ (id)manager;
+@end

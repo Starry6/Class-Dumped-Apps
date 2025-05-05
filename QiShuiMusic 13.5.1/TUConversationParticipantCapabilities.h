@@ -1,0 +1,31 @@
+@interface TUConversationParticipantCapabilities : NSObject
+@property (nonatomic) BOOL momentsAvailable;
+@property (nonatomic) BOOL screenSharingAvailable;
+@property (nonatomic) BOOL gondolaCallingAvailable;
+@property (nonatomic) BOOL mirageAvailable;
+@property (nonatomic) BOOL gftDowngradeToOneToOneAvailable;
+@property (nonatomic) BOOL uPlusNDowngradeAvailable;
+@property (nonatomic) Q sharePlayProtocolVersion;
+- (BOOL)isScreenSharingAvailable;
+- (void)setScreenSharingAvailable:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (BOOL)isEqualToCapabilities:;
+- (void)encodeWithCoder:;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)isMomentsAvailable;
+- (void)setMomentsAvailable:;
+- (BOOL)isGondolaCallingAvailable;
+- (BOOL)isMirageAvailable;
+- (BOOL)isGFTDowngradeToOneToOneAvailable;
+- (BOOL)isUPlusNDowngradeAvailable;
+- (unsigned long long)sharePlayProtocolVersion;
+- (void)setGondolaCallingAvailable:;
+- (void)setMirageAvailable:;
+- (void)setGftDowngradeToOneToOneAvailable:;
+- (void)setUPlusNDowngradeAvailable:;
+- (void)setSharePlayProtocolVersion:;
++ (BOOL)supportsSecureCoding;
+@end

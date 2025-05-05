@@ -1,0 +1,31 @@
+@interface CNContactViewExtensionHostContext : NSExtensionContext
+@property (nonatomic) CNContactViewHostViewController viewController;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setViewController:;
+- (id)viewController;
+- (void).cxx_destruct;
+- (void)viewDidAppear;
+- (BOOL)shouldPerformDefaultActionForContact:propertyKey:propertyIdentifier:;
+- (void)updateEditing:doneButtonEnabled:doneButtonText:;
+- (void)didCompleteWithContact:;
+- (void)didDeleteContact:;
+- (void)isPresentingFullscreen:;
+- (void)isPresentingEditingController:;
+- (void)didChangePreferredContentSize:;
+- (void)didExecuteClearRecentsDataAction;
+- (void)didExecuteDeleteFromDowntimeWhitelistAction;
+- (void)presentCancelConfirmationAlert;
+- (void)setupWithOptions:readyBlock:;
+- (void)didChangeToEditMode:;
+- (void)didChangeToShowTitle:;
+- (void)editCancel;
+- (void)toggleEditing;
+- (void)performConfirmedCancel;
+- (void)asyncShouldPerformDefaultActionForContact:propertyKey:propertyIdentifier:;
+- (id)protocolService;
++ (id)_extensionAuxiliaryHostProtocol;
++ (id)_extensionAuxiliaryVendorProtocol;
+@end

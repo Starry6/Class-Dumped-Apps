@@ -1,0 +1,30 @@
+@interface IESLiveChatRoomInviteGuideHelper : NSObject
+@property (nonatomic) RACCompoundDisposable disposable;
+@property (nonatomic) HTSLiveLinkMicFriendOnlineMessage onlineMessage;
+@property (nonatomic) @? block;
+@property (nonatomic) IESLiveChatRoomInviteGuideView guideView;
+@property (nonatomic) IESLiveChatRoomInviteGuideConfig config;
+@property (nonatomic) <IESLiveChatRoomInviteGuideHelperDeleagte> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)removeGuideView;
+- (void)didSetAttachingDIContext;
+- (id)disposable;
+- (id)initWithConfig:andDelegate:;
+- (id)onlineMessage;
+- (void)setDisposable:;
+- (void)setOnlineMessage:;
+- (void)showGuideView;
+- (id)block;
+- (void)setConfig:;
+- (void)setDelegate:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setBlock:;
+- (id)config;
+- (void)messageReceived:;
+- (void)setGuideView:;
+- (id)guideView;
+@end

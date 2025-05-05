@@ -1,0 +1,22 @@
+@interface MSCameraDeviceManager : ICDeviceManager
+- (id)deviceManagerConnection;
+- (void)startDeviceWithHandle:;
+- (void)ejectImp:;
+- (void)syncClockImp:;
+- (void)getFileThumbnailImp:;
+- (void)getFileMetadataImp:;
+- (void)getFileDataImp:;
+- (void)deleteFileImp:;
+- (void)downloadFileImp:;
+- (long long)checkFile:andDevice:;
+- (void)executeCompletionBlockWithErrorCode:info:file:completionDict:completionBlk:;
+- (void)notifyAddedItems:;
+- (void)notifyRemovedItems:;
+- (void)notifyUpdatedItems:;
+- (void)notifyPtpEvent:;
+- (void)notifyStatus:;
+- (void)updateCameraFolder:withInfo:;
+- (void)updateCameraFile:withInfo:;
+- (id)cropThumbSize:fullSize:finalSize:;
+- (id)removeLetterboxFromThumbnail:fullSize:;
+@end

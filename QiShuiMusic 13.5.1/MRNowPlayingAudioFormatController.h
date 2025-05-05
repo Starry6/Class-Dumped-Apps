@@ -1,0 +1,36 @@
+@interface MRNowPlayingAudioFormatController : NSObject
+@property (nonatomic) BOOL isUpdating;
+@property (nonatomic) BOOL pendingUpdate;
+@property (nonatomic) <MRNowPlayingAudioFormatControllerDelegate> delegate;
+@property (nonatomic) MRNowPlayingAudioFormatContentInfo audioFormatContentInfo;
+@property (nonatomic) NSString bundleID;
+@property (nonatomic) NSString displayName;
+@property (nonatomic) BOOL hasNowPlayingApp;
+@property (nonatomic) NSString audioFormatDescription;
+@property (nonatomic) NSString bestAvailableAudioFormatDescription;
+@property (nonatomic) BOOL multichannel;
+@property (nonatomic) q bestAvailableAudioFormat;
+@property (nonatomic) BOOL eligibleForSpatialization;
+- (BOOL)isUpdating;
+- (id)init;
+- (long long)bestAvailableAudioFormat;
+- (BOOL)pendingUpdate;
+- (id)audioFormatContentInfo;
+- (void)setDelegate:;
+- (BOOL)isMultichannel;
+- (void)sourceFormatDidChange:;
+- (void)updateNotifications;
+- (id)displayName;
+- (void)updateAudioFormatContentInfo:client:reason:;
+- (id)delegate;
+- (void)setPendingUpdate:;
+- (void)updateAudioFormatWithReason:;
+- (void).cxx_destruct;
+- (id)audioFormatDescription;
+- (id)description;
+- (void)setIsUpdating:;
+- (BOOL)hasNowPlayingApp;
+- (id)bundleID;
+- (BOOL)isEligibleForSpatialization;
+- (id)bestAvailableAudioFormatDescription;
+@end

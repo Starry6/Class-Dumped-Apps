@@ -1,0 +1,38 @@
+@interface IESECSKUSpecViewModel : NSObject
+@property (nonatomic) IESECSKUModel skuModel;
+@property (nonatomic) IESECSKUDetailContext detailContext;
+@property (nonatomic) Q specSection;
+@property (nonatomic) NSString specName;
+@property (nonatomic) Q specIndex;
+@property (nonatomic) IESECSKUSizeAssistantComponent sizeAssistant;
+@property (nonatomic) NSArray specItems;
+@property (nonatomic) q specImageType;
+@property (nonatomic) UIColor atmosphereColor;
+@property (nonatomic) IESECSKUSpecInfo specInfo;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setSpecSection:;
+- (id)atmosphereColor;
+- (id)initWithSKUModel:detailContext:;
+- (id)detailContext;
+- (id)getSkuFromString;
+- (id)initWithSKUModel:detailContext:specInfo:specSection:;
+- (void)openSizeChartPanel;
+- (void)setDetailContext:;
+- (void)setSkuModel:;
+- (void)setSpecImageType:;
+- (void)setSpecInfo:;
+- (void)setUpDefaultSelectedSpec;
+- (id)sizeAssistant;
+- (id)skuModel;
+- (long long)specImageType;
+- (unsigned long long)specIndex;
+- (id)specInfo;
+- (id)specItems;
+- (id)specName;
+- (unsigned long long)specSection;
+- (void).cxx_destruct;
+- (void)selectItemAtIndex:;
+@end

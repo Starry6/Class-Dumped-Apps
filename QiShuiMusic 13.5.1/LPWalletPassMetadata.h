@@ -1,0 +1,33 @@
+@interface LPWalletPassMetadata : LPSpecializationMetadata
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSString name;
+@property (nonatomic) q style;
+@property (nonatomic) NSDate eventDate;
+@property (nonatomic) NSDate expirationDate;
+- (id)eventDate;
+- (void)setName:;
+- (id)_subtitle;
+- (void)setStyle:;
+- (void)setExpirationDate:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)expirationDate;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)name;
+- (long long)style;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setEventDate:;
+- (id)presentationPropertiesForTransformer:;
+- (BOOL)canGeneratePresentationPropertiesForURL:;
+- (id)previewSummaryForTransformer:;
+- (id)previewImageForTransformer:;
+- (void)populateMetadataForBackwardCompatibility:;
+- (id)fallbackIconForTransformer:;
++ (BOOL)supportsSecureCoding;
++ (id)keyPathsForValuesAffecting_dummyPropertyForObservation;
+@end

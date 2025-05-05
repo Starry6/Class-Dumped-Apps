@@ -1,0 +1,34 @@
+@interface BDADetailJSBCommand : NSObject
+@property (nonatomic) NSString messageType;
+@property (nonatomic) NSString eventID;
+@property (nonatomic) NSString callbackID;
+@property (nonatomic) NSDictionary params;
+@property (nonatomic) NSString fullName;
+@property (nonatomic) NSString origName;
+@property (nonatomic) NSString className;
+@property (nonatomic) NSString methodName;
+@property (nonatomic) NSString JSSDKVersion;
+- (id)JSSDKVersion;
+- (void)amendDynamicPluginNameWithFullName:;
+- (id)callbackID;
+- (id)origName;
+- (void)setCallbackID:;
+- (void)setJSSDKVersion:;
+- (void)setOrigName:;
+- (id)toJSONString;
+- (id)messageType;
+- (id)fullName;
+- (void)setEventID:;
+- (id)className;
+- (void)setClassName:;
+- (id)eventID;
+- (void)setFullName:;
+- (void).cxx_destruct;
+- (void)setMessageType:;
+- (id)params;
+- (id)copyWithZone:;
+- (id)initWithDictonary:;
+- (void)setParams:;
+- (id)methodName;
+- (void)setMethodName:;
+@end

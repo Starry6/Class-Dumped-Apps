@@ -1,0 +1,30 @@
+@interface STCallingStatusDomainCallDescriptor : NSObject
+@property (nonatomic) Q callType;
+@property (nonatomic) Q callState;
+@property (nonatomic) Q copresenceActivityType;
+@property (nonatomic) STActivityAttribution callProviderAttribution;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)succinctDescriptionBuilder;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)succinctDescription;
+- (id)description;
+- (unsigned long long)callState;
+- (id)descriptionBuilderWithMultilinePrefix:;
+- (BOOL)isEqual:;
+- (id)descriptionWithMultilinePrefix:;
+- (unsigned long long)callType;
+- (id)callProviderAttribution;
+- (unsigned long long)copresenceActivityType;
+- (id)initWithCallType:callState:copresenceActivityType:;
+- (id)initWithCallType:callState:copresenceActivityType:callProviderAttribution:;
++ (id)videoCallDescriptorWithState:;
++ (BOOL)supportsSecureCoding;
++ (id)copresenceCallDescriptorWithActivityType:;
++ (id)audioCallDescriptorWithState:;
+@end

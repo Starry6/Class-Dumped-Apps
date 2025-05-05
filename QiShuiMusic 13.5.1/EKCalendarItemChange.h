@@ -1,0 +1,33 @@
+@interface EKCalendarItemChange : EKObjectChange
+@property (nonatomic) EKObjectID calendarID;
+@property (nonatomic) EKObjectID oldCalendarID;
+@property (nonatomic) NSString externalID;
+@property (nonatomic) NSString oldExternalID;
+@property (nonatomic) NSString uuid;
+@property (nonatomic) BOOL titleChanged;
+@property (nonatomic) BOOL locationChanged;
+@property (nonatomic) BOOL startDateChanged;
+@property (nonatomic) BOOL startTimezoneChanged;
+@property (nonatomic) BOOL endDateChanged;
+@property (nonatomic) BOOL endTimezoneChanged;
+@property (nonatomic) BOOL notesChanged;
+@property (nonatomic) BOOL allDayChanged;
+@property (nonatomic) BOOL suppressNotificationForChanges;
+- (id)externalID;
+- (id)uuid;
+- (void).cxx_destruct;
+- (id)initWithChangeProperties:;
+- (id)calendarID;
+- (id)oldCalendarID;
+- (id)oldExternalID;
+- (BOOL)titleChanged;
+- (BOOL)locationChanged;
+- (BOOL)startDateChanged;
+- (BOOL)startTimezoneChanged;
+- (BOOL)endDateChanged;
+- (BOOL)endTimezoneChanged;
+- (BOOL)notesChanged;
+- (BOOL)allDayChanged;
+- (BOOL)suppressNotificationForChanges;
++ (int)entityType;
+@end

@@ -1,0 +1,31 @@
+@interface VCPProtoImageHumanPoseResult : PBCodable
+@property (nonatomic) float confidence;
+@property (nonatomic) VCPProtoBounds bounds;
+@property (nonatomic) NSInteger flags;
+@property (nonatomic) NSMutableArray keypoints;
+- (float)confidence;
+- (void)setConfidence:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void)setBounds:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (void)setFlags:;
+- (id)dictionaryRepresentation;
+- (id)bounds;
+- (int)flags;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)keypoints;
+- (id)exportToLegacyDictionary;
+- (void)clearKeypoints;
+- (void)addKeypoints:;
+- (unsigned long long)keypointsCount;
+- (id)keypointsAtIndex:;
+- (void)setKeypoints:;
++ (id)resultFromLegacyDictionary:;
++ (Class)keypointsType;
+@end

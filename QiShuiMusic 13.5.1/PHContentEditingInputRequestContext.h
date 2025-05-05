@@ -1,0 +1,35 @@
+@interface PHContentEditingInputRequestContext : PHMediaRequestContext
+@property (nonatomic) PHContentEditingInputRequestOptions options;
+- (id)progressHandler;
+- (void)cancel;
+- (id)produceChildRequestsForRequest:reportingIsLocallyAvailable:isDegraded:result:;
+- (void)start;
+- (id)initialRequests;
+- (id)progresses;
+- (BOOL)isNetworkAccessAllowed;
+- (id)options;
+- (long long)type;
+- (void).cxx_destruct;
+- (void)processMediaResult:forRequest:;
+- (id)_assetResources;
+- (BOOL)_shouldRequestVideo;
+- (id)_lazyImageProgress;
+- (id)_lazyVideoProgress;
+- (void)_renderTemporaryVideoForObjectBuilder:resultHandler:;
+- (id)initWithRequestID:managerID:asset:options:useRAWAsUnadjustedBase:resultHandler:;
+- (void)processAndReturnResultsWithRequest:;
+- (BOOL)_shouldRequestImage;
+- (id)_lazyAdjustmentProgress;
+- (id)_videoBehaviorSpecForBaseVersion:;
+- (id)_imageBehaviorSpecForBaseVersion:;
+- (long long)_adjustmentBaseVersionFromResult:request:canHandleAdjustmentData:;
+- (BOOL)_canSkipMediaMetadataCheckWithBaseVersion:;
+- (void)_renderVideoFromVideoURL:asset:adjustmentData:canHandleAdjustmentData:resultHandler:;
+- (id)_baseMediaRequestsForBaseVersion:error:;
+- (void)_prepareAndAddMediaRequestsToChildRequests:;
+- (long long)_assetResourceTypeForResourceType:withBaseVersion:;
+- (id)_assetResourceForType:;
+- (id)_largestUnadjustedDerivativeImageResource;
+- (id)_resourceRequestForAssetResource:wantsURLOnly:progress:;
+- (void)_finishIfAllCompleteWithRequest:;
+@end

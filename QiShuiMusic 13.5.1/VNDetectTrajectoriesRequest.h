@@ -1,0 +1,30 @@
+@interface VNDetectTrajectoriesRequest : VNStatefulRequest
+@property (nonatomic) q trajectoryLength;
+@property (nonatomic) float objectMinimumNormalizedRadius;
+@property (nonatomic) float minimumObjectSize;
+@property (nonatomic) float objectMaximumNormalizedRadius;
+@property (nonatomic) float maximumObjectSize;
+@property (nonatomic) {?=qiIq} targetFrameTime;
+@property (nonatomic) NSArray results;
+- (BOOL)internalPerformRevision:inContext:error:;
+- (void)applyConfigurationOfRequest:;
+- (id)newDefaultDetectorOptionsForRequestRevision:session:;
+- (void).cxx_destruct;
+- (BOOL)willAcceptCachedResultsFromRequestWithConfiguration:;
+- (id)newDefaultRequestInstance;
+- (long long)trajectoryLength;
+- (float)objectMinimumNormalizedRadius;
+- (void)setObjectMinimumNormalizedRadius:;
+- (float)objectMaximumNormalizedRadius;
+- (void)setObjectMaximumNormalizedRadius:;
+- (id)targetFrameTime;
+- (void)setTargetFrameTime:;
+- (id)initWithFrameAnalysisSpacing:trajectoryLength:completionHandler:;
+- (void)setobjectMaximumNormalizedRadius:;
+- (float)minimumObjectSize;
+- (void)setMinimumObjectSize:;
+- (float)maximumObjectSize;
+- (void)setMaximumObjectSize:;
++ (Class)configurationClass;
++ (BOOL)setsTimeRangeOnResults;
+@end

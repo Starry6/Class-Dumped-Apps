@@ -1,0 +1,2 @@
+@interface IESLiveBackendRequestDefine : NSObject
+@end

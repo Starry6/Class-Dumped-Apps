@@ -1,0 +1,31 @@
+@interface BDWebDefaultURLSchemaHandler : NSObject
+@property (nonatomic) <BDWebURLSchemeTask> schemaTask;
+@property (nonatomic) NSURLSessionDataTask task;
+@property (nonatomic) double httpTaskStartTime;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)bdw_startURLSchemeTask;
+- (void)bdw_stopURLSchemeTask;
+- (double)httpTaskStartTime;
+- (id)initWithWebView:schemeTask:;
+- (void)recordURLSession:task:finishWithError:;
+- (id)schemaTask;
+- (void)setHttpTaskStartTime:;
+- (void)setSchemaTask:;
+- (void)URLSession:dataTask:didReceiveData:;
+- (void)URLSession:task:didCompleteWithError:;
+- (void)URLSession:dataTask:didReceiveResponse:completionHandler:;
+- (id)task;
+- (void)URLSession:task:willPerformHTTPRedirection:newRequest:completionHandler:;
+- (void)setTask:;
+- (void).cxx_destruct;
++ (BOOL)bdw_canHandleRequest:;
++ (id)falconMonitorResponseHeaders;
++ (id)httpURLResponseHeaders:;
++ (id)responseHeaderStringFromDic:;
++ (id)sharedCallbackQueue;
++ (id)sharedDemux;
++ (BOOL)useRecursiveRequestFlagCheck;
+@end

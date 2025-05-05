@@ -1,0 +1,32 @@
+@interface IESLiveSaaSStreamAbnormalAction : NSObject
+@property (nonatomic) IESLiveSaaSStreamAbnormalView streamAbnormalView;
+@property (nonatomic) NSMutableSet showingSourceSet;
+@property (nonatomic) {CGSize=dd} lastContainerViewSize;
+@property (nonatomic) <IESLivePlayerProtocol> player;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) BOOL isShow;
+- (unsigned long long)supportSeiTypes;
+- (void)didSetAttachingDIContext;
+- (void)handleSpecialRoomPPlayerViewHierarchy:;
+- (BOOL)isShow;
+- (id)lastContainerViewSize;
+- (void)onParseredWithSEIResult:;
+- (void)setIsShow:;
+- (void)setLastContainerViewSize:;
+- (void)setShowingSourceSet:;
+- (void)setStreamAbnormalView:;
+- (id)showingSourceSet;
+- (id)streamAbnormalView;
+- (void)updatePlayerMuteStatusIfNeed;
+- (void)updateSpecialRoomPlayerAbnormalViewTopMargin:;
+- (void)updateStreamAbnormalView:shouldShow:source:;
+- (void)updateStreamAbnormalView:source:;
+- (void)updateStreamAbnormalViewLayout;
+- (id)initWithPlayer:;
+- (id)player;
+- (void).cxx_destruct;
+- (void)setPlayer:;
+@end

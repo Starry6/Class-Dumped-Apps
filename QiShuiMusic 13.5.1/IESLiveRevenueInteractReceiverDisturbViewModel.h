@@ -1,0 +1,35 @@
+@interface IESLiveRevenueInteractReceiverDisturbViewModel : NSObject
+@property (nonatomic) IESLiveMultiLinkerApi mLinkerApi;
+@property (nonatomic) HTSLivePKApi pkApi;
+@property (nonatomic) HTSLiveUser oppositeUser;
+@property (nonatomic) Q scene;
+@property (nonatomic) <IESLiveRevenueInteractProvider> provider;
+@property (nonatomic) NSDictionary tempTrackParams;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)tempTrackParams;
+- (void)autoRejectCurrentRoomWithComplete:;
+- (void)didChangePKStateFrom:to:;
+- (void)didSetAttachingDIContext;
+- (id)initWithDIContext:oppositeAnchor:scene:provider:;
+- (id)mLinkerApi;
+- (id)oppositeUser;
+- (void)p_multiLinkerAutoRejectCurrentRoom:roomID:secUid:complete:;
+- (void)p_multiLinkerTemporaryRejectInvitedForAnchor:roomID:secUid:complete:;
+- (void)p_pkAutoRejectCurrentRoom:roomID:secUid:complete:;
+- (void)p_pkTemporaryRejectInvitedForAnchor:roomID:secUid:complete:;
+- (void)p_rejectAutoMatchInvitation;
+- (id)pkApi;
+- (void)setMLinkerApi:;
+- (void)setOppositeUser:;
+- (void)setPkApi:;
+- (void)setTempTrackParams:;
+- (void)temporaryRejectInvitedForAnchor:complete:;
+- (void)setProvider:;
+- (void)setScene:;
+- (unsigned long long)scene;
+- (id)provider;
+- (void).cxx_destruct;
+@end

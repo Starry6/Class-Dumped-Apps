@@ -1,0 +1,2 @@
+@interface BattleBizReplyApiRoot : GPBRootObject
+@end

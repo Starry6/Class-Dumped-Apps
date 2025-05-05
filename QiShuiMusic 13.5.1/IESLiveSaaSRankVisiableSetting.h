@@ -1,0 +1,33 @@
+@interface IESLiveSaaSRankVisiableSetting : NSObject
+@property (nonatomic) NSDictionary liveRankConfigDic;
+- (id)liveRankConfigDic;
+- (id)rankRules;
+- (unsigned long long)rankSetting;
+- (void)setLiveRankConfigDic:;
+- (id)init;
+- (void).cxx_destruct;
++ (unsigned long long)ecommerceRankVisibleType;
++ (long long)entranceDisplayThreshold;
++ (double)epilogueStageCountdownTimeInterval;
++ (double)epilogueStageTime;
++ (double)getHourCustomAvatarCircleImageSize;
++ (double)getHourCustomAvatarImageSize;
++ (id)getHourCustomRankConfig;
++ (id)getHourCustomRankType;
++ (long long)highlightHeaderTime;
++ (id)hourEntranceDefaultText;
++ (BOOL)isEcommercePopupEnabled;
++ (BOOL)isEcommerceRankVisible;
++ (BOOL)isHourCustomRankList;
++ (BOOL)isRegionPopupEnabled;
++ (BOOL)isRegionRankVisible;
++ (BOOL)isRewardSpecialEffectsEnabled;
++ (double)loopDelayDuration;
++ (id)rankListBottomButtonText;
++ (id)rankRules;
++ (unsigned long long)rankSetting;
++ (id)rewardBubbleText;
++ (id)rewardDividerText;
++ (double)sameTypeDelayDuration;
++ (id)singleton;
+@end

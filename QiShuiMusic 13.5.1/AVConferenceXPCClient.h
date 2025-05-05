@@ -1,0 +1,36 @@
+@interface AVConferenceXPCClient : NSObject
+@property (nonatomic) NSObject<OS_xpc_object> connection;
+@property (nonatomic) NSMutableDictionary registeredBlocks;
+@property (nonatomic) BOOL connectionPersists;
+- (id)init;
+- (void)dealloc;
+- (void)deregisterFromService:;
+- (id)registeredBlocks;
+- (id)sendMessageSync:;
+- (id)newNSErrorFromNSDictionary:;
+- (void)registerBlockForService:block:queue:eventLogLevel:;
+- (void)sendMessageAsync:arguments:;
+- (id)newNSDictionaryFromNSError:;
+- (id)connection;
+- (void)registerBlockForService:block:queue:;
+- (id)newNSDictionaryFromXPCDictionary:;
+- (void)registerBlockForService:block:;
+- (void)sendMessageAsync:;
+- (id)newXPCDictionaryFromNSDictionary:error:;
+- (id)newNSDictionaryFromNSDictionary:;
+- (id)newServerDiedDictionary;
+- (id)newTimeoutDictionary;
+- (id)copyConnection;
+- (void)closeConnectionToServer;
+- (id)createConnectionToServer;
+- (void)sendMessageAsync:arguments:reply:;
+- (void)sendMessageAsync:arguments:reply:queue:;
+- (void)sendMessageAsync:arguments:xpcArguments:reply:;
+- (void)sendMessageAsync:arguments:xpcArguments:reply:queue:;
+- (void)sendMessageAsync:arguments:xpcArguments:reply:queue:replyLogLevel:;
+- (id)sendMessageSync:arguments:;
+- (id)sendMessageSync:arguments:xpcArguments:;
+- (BOOL)connectionPersists;
+- (void)setConnectionPersists:;
++ (id)AVConferenceXPCClientSingleton;
+@end

@@ -1,0 +1,38 @@
+@interface VeLivePlayerLogConfig : NSObject
+@property (nonatomic) NSString deviceID;
+@property (nonatomic) NSString logPath;
+@property (nonatomic) Q maxLogSizeM;
+@property (nonatomic) Q singleLogSizeM;
+@property (nonatomic) Q logExpireTimeS;
+@property (nonatomic) BOOL enableConsole;
+@property (nonatomic) BOOL enableLogFile;
+@property (nonatomic) Q logLevel;
+@property (nonatomic) NSString queryUrl;
+@property (nonatomic) Q intervalMs;
+@property (nonatomic) NSInteger enableThreadLoop;
+- (void)setMaxLogSizeM:;
+- (BOOL)enableConsole;
+- (BOOL)enableLogFile;
+- (int)enableThreadLoop;
+- (unsigned long long)logExpireTimeS;
+- (unsigned long long)maxLogSizeM;
+- (id)queryUrl;
+- (void)setEnableConsole:;
+- (void)setEnableLogFile:;
+- (void)setEnableThreadLoop:;
+- (void)setLogExpireTimeS:;
+- (void)setQueryUrl:;
+- (void)setSingleLogSizeM:;
+- (unsigned long long)singleLogSizeM;
+- (id)logPath;
+- (id)init;
+- (void)setLogPath:;
+- (void)setDeviceID:;
+- (id)deviceID;
+- (void)setLogLevel:;
+- (unsigned long long)logLevel;
+- (void).cxx_destruct;
+- (id)description;
+- (unsigned long long)intervalMs;
+- (void)setIntervalMs:;
+@end

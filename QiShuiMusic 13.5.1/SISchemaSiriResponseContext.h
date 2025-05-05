@@ -1,0 +1,34 @@
+@interface SISchemaSiriResponseContext : SISchemaInstrumentationMessage
+@property (nonatomic) NSString dialogPhase;
+@property (nonatomic) BOOL hasDialogPhase;
+@property (nonatomic) NSInteger presentationType;
+@property (nonatomic) BOOL hasPresentationType;
+@property (nonatomic) NSInteger siriResponseMode;
+@property (nonatomic) BOOL hasSiriResponseMode;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (void)setPresentationType:;
+- (int)presentationType;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)dialogPhase;
+- (void)setDialogPhase:;
+- (BOOL)hasDialogPhase;
+- (void)deleteDialogPhase;
+- (BOOL)hasPresentationType;
+- (void)setHasPresentationType:;
+- (void)deletePresentationType;
+- (void)setSiriResponseMode:;
+- (BOOL)hasSiriResponseMode;
+- (void)setHasSiriResponseMode:;
+- (void)deleteSiriResponseMode;
+- (int)siriResponseMode;
+- (void)setHasDialogPhase:;
+@end

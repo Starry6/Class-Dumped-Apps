@@ -1,0 +1,30 @@
+@interface EAccountAPIParasUtil : NSObject
++ (id)EAccountAPIGetSafeString:;
++ (BOOL)EAccountAPIIsNullObject:;
++ (void)startReportLog:;
++ (BOOL)EAccountAPIIsEmptyStr:;
++ (id)dicFromJsonStr:;
++ (id)dicValueFormatter:;
++ (id)dictionaryToJson:;
++ (id)getCurrentCellularProvider;
++ (id)getCurrentCellularProviderInOSVersion12WithDualCard:providers:;
++ (id)getCurrentProviderCode;
++ (id)getCurrentProviderInfo;
++ (id)getDescriptionFromError:netType:;
++ (id)getDetailModel;
++ (long long)getErrCode:;
++ (id)getLogNetworkStatus;
++ (id)getNetworkStatus;
++ (id)getOnLineType;
++ (double)getRemainingIntervalByCostInterval:andTotalInterval:;
++ (void)hasCellularDataPermission:;
++ (id)hmacSha1WithKey:text:;
++ (BOOL)ipAddressWithIfaName:;
++ (BOOL)reachableViaWWAN;
++ (void)saveLogLevel:;
++ (void)savePReset:;
++ (void)savePikgx:;
++ (id)getTimeStamp;
++ (BOOL)networkReachable;
++ (void)setTimeStamp:;
+@end

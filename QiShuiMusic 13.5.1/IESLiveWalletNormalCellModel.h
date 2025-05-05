@@ -1,0 +1,31 @@
+@interface IESLiveWalletNormalCellModel : MTLModel
+@property (nonatomic) NSString name;
+@property (nonatomic) IESLiveWalletImageModel icon;
+@property (nonatomic) IESLiveWalletImageModel light_icon;
+@property (nonatomic) NSString link;
+@property (nonatomic) NSString hint;
+@property (nonatomic) NSString tag;
+@property (nonatomic) NSString desc;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)light_icon;
+- (void)setLight_icon:;
+- (id)link;
+- (id)tag;
+- (void)setName:;
+- (id)desc;
+- (void)setLink:;
+- (id)icon;
+- (void)setDesc:;
+- (void)setTag:;
+- (void)setIcon:;
+- (void).cxx_destruct;
+- (id)name;
+- (void)setHint:;
+- (id)hint;
++ (id)iconJSONTransformer;
++ (id)light_iconJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

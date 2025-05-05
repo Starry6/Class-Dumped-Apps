@@ -1,0 +1,33 @@
+@interface IESECGoodsMemberSampleModel : MTLModel
+@property (nonatomic) double initTimeinterval;
+@property (nonatomic) double serverTime;
+@property (nonatomic) double preBeginTime;
+@property (nonatomic) double beginTime;
+@property (nonatomic) double endTime;
+@property (nonatomic) NSString reason;
+@property (nonatomic) q type;
+@property (nonatomic) double currentTime;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)getTrackParams;
+- (double)initTimeinterval;
+- (double)preBeginTime;
+- (void)setInitTimeinterval:;
+- (void)setPreBeginTime:;
+- (void)setServerTime:;
+- (id)init;
+- (double)beginTime;
+- (void)setType:;
+- (id)reason;
+- (void)setEndTime:;
+- (void)setReason:;
+- (void)setBeginTime:;
+- (double)endTime;
+- (long long)type;
+- (void).cxx_destruct;
+- (double)currentTime;
+- (double)serverTime;
++ (id)JSONKeyPathsByPropertyKey;
+@end

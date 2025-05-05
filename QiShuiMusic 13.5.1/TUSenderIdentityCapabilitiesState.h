@@ -1,0 +1,32 @@
+@interface TUSenderIdentityCapabilitiesState : NSObject
+@property (nonatomic) NSUUID senderIdentityUUID;
+@property (nonatomic) BOOL supportsSimultaneousVoiceAndData;
+@property (nonatomic) TUCTCapabilitiesState csCallingCapabilitiesState;
+@property (nonatomic) TUCTCapabilitiesState voLTECallingCapabilitiesState;
+@property (nonatomic) TUCTCapabilitiesState wiFiCallingCapabilitiesState;
+@property (nonatomic) TUThumperCTCapabilitiesState thumperCallingCapabilitiesState;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithCoder:;
+- (BOOL)supportsSimultaneousVoiceAndData;
+- (void)encodeWithCoder:;
+- (id)publiclyAccessibleCopyWithZone:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)publiclyAccessibleCopy;
+- (id)copyWithZone:;
+- (id)senderIdentityUUID;
+- (id)csCallingCapabilitiesState;
+- (id)voLTECallingCapabilitiesState;
+- (id)wiFiCallingCapabilitiesState;
+- (id)thumperCallingCapabilitiesState;
+- (id)initWithSenderIdentityUUID:;
+- (void)setSupportsSimultaneousVoiceAndData:;
+- (void)setCsCallingCapabilitiesState:;
+- (void)setVoLTECallingCapabilitiesState:;
+- (void)setWiFiCallingCapabilitiesState:;
+- (void)setThumperCallingCapabilitiesState:;
++ (BOOL)supportsSecureCoding;
+@end

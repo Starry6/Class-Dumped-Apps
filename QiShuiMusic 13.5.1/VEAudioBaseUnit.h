@@ -1,0 +1,38 @@
+@interface VEAudioBaseUnit : VEUnitObject
+@property (nonatomic) q targetSampleCount;
+@property (nonatomic) NSMutableDictionary streamsMap;
+@property (nonatomic) NSMutableArray sampleDatas;
+@property (nonatomic) VEAudioProcessConfig config;
+@property (nonatomic) BOOL isStoped;
+@property (nonatomic) NSString route;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)p_stopProcessor;
+- (BOOL)setAudioConfig:;
+- (void)setSampleDatas:;
+- (void)addDownStream:innerRoute:;
+- (void)checkConfig:;
+- (void)downData:;
+- (id)getStreamsMap;
+- (BOOL)isStoped;
+- (void)p_onStopProcessor;
+- (void)p_startProcessor;
+- (BOOL)processAudioSampleData:;
+- (BOOL)processSampleData:;
+- (void)removeAllDownStreams;
+- (id)sampleDatas;
+- (void)setIsStoped:;
+- (void)setStreamsMap:;
+- (void)setTargetSampleCount:;
+- (id)streamsMap;
+- (long long)targetSampleCount;
+- (id)init;
+- (void)setRoute:;
+- (id)route;
+- (void)setConfig:;
+- (void).cxx_destruct;
+- (id)config;
+- (void)clearData;
+@end

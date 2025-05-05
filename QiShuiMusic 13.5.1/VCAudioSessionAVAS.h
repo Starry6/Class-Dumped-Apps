@@ -1,0 +1,28 @@
+@interface VCAudioSessionAVAS : VCAudioSession
+- (id)initWithMode:;
+- (void)dealloc;
+- (BOOL)hasStarted;
+- (BOOL)stopSession;
+- (BOOL)startInternal;
+- (BOOL)setSampleRate:;
+- (void)resetOverrideRoute;
+- (void)setSpeakerProperty:;
+- (BOOL)applyRequestedProperty:defaultValue:;
+- (void)setupSharePlayWithVPOperatingMode:;
+- (void)setBlockSize:sampleRate:force:;
+- (void)setVPBlockConfigurationProperties:;
+- (BOOL)applyAudioSessionMediaProperties:;
+- (BOOL)startSessionWithMediaProperties:sessionRef:;
+- (void)handleAudioSessionInterruption:;
+- (void)setupInputBeamforming;
+- (BOOL)internalSelectMicrophoneWithType:;
+- (void)handleAudioSessionAvailableSampleRateChange:;
+- (void)handleAudioSessionMediaServicesWereLostNotification:;
+- (BOOL)setSessionProperty:value:;
+- (id)avAudioSessionKeyFromCMSessionKey:;
+- (unsigned long long)avAudioSessionAllowedRouteTypesFromCMSession:;
+- (void)applyAudioSessionMediaPropertiesForSystemAudio;
+- (void)applyClientPid;
+- (void)destroyAudioSession;
+- (void)handleSecureMicNotificationWithInterruptionInfo:;
+@end

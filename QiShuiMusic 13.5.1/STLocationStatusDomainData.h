@@ -1,0 +1,35 @@
+@interface STLocationStatusDomainData : NSObject
+@property (nonatomic) STListData locationAttributionListData;
+@property (nonatomic) NSArray attributions;
+@property (nonatomic) Q activeDisplayModes;
+@property (nonatomic) NSArray locationAttributions;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (unsigned long long)activeDisplayModes;
+- (id)locationAttributions;
+- (id)dataByApplyingDiff:;
+- (id)_initWithLocationAttributionListData:activeDisplayModes:;
+- (id)locationAttributionListData;
+- (id)initWithLocationAttributionListData:activeDisplayModes:;
+- (id)succinctDescriptionBuilder;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)debugDescription;
+- (id)diffFromData:;
+- (id)debugDescriptionWithMultilinePrefix:;
+- (void)encodeWithCoder:;
+- (id)attributions;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (id)succinctDescription;
+- (id)description;
+- (id)mutableCopyWithZone:;
+- (id)descriptionBuilderWithMultilinePrefix:;
+- (BOOL)isEqual:;
+- (id)descriptionWithMultilinePrefix:;
+- (id)copyWithZone:;
++ (BOOL)supportsSecureCoding;
+@end

@@ -1,0 +1,35 @@
+@interface LynxResourceServiceResponse : NSObject
+@property (nonatomic) IESForestResponse response;
+@property (nonatomic) q sourceType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)calculatedMetricInfo;
+- (id)errorInfo;
+- (id)expiredDate;
+- (id)loaderInfo;
+- (id)resourceInfo;
+- (BOOL)isTemplate;
+- (BOOL)isSuccess;
+- (id)cacheKey;
+- (id)resolvedURL;
+- (id)fetcher;
+- (id)channel;
+- (long long)sourceType;
+- (id)debugInfo;
+- (id)data;
+- (unsigned long long)version;
+- (void)setSourceType:;
+- (id)initWithResponse:;
+- (id)bundle;
+- (id)response;
+- (void).cxx_destruct;
+- (void)setResponse:;
+- (id)metricInfo;
+- (id)sourceUrl;
+- (id)accessKey;
+- (id)absolutePath;
+- (id)extraInfo;
+- (id)sourceTypeDescription;
+@end

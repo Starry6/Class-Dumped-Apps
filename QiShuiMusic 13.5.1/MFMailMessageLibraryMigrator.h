@@ -1,0 +1,32 @@
+@interface MFMailMessageLibraryMigrator : NSObject
+@property (nonatomic) <MFMailMessageLibraryMigratorDelegate> delegate;
+@property (nonatomic) NSObject<OS_dispatch_queue> contentProtectionQueue;
+@property (nonatomic) NSConditionLock migrationState;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)migrationState;
+- (void)contentProtectionStateChanged:previousState:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)contentProtectionQueue;
+- (id)initWithDelegate:;
+- (BOOL)migrateWithDatabaseConnection:schema:;
+- (long long)_runMigrationStepsFromVersion:connection:schema:;
+- (long long)_checkContentProtectionState;
+- (BOOL)_checkForeignKeysWithConnection:;
+- (void)noteNeedsRebuildTriggers;
+- (BOOL)needsRebuildTriggers;
+- (void)noteRebuildMessageInfoIndex;
+- (BOOL)needsRebuildMessageInfoIndex;
+- (void)resetTTRPromptAndForceReindex;
+- (void)noteNeedsSpotlightReindex;
+- (BOOL)needsSpotlightReindex;
+- (void)addPostMigrationBlock:;
+- (void)runPostMigrationBlocksWithConnection:;
+- (long long)attachProtectedDatabaseWithConnection:;
+- (void)detachProtectedDatabaseWithConnection:;
++ (id)log;
++ (int)currentVersion;
+@end

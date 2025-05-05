@@ -1,0 +1,30 @@
+@interface SAAlarmObject : SADomainObject
+@property (nonatomic) SADataSourceInfo dataSourceInfo;
+@property (nonatomic) NSNumber enabled;
+@property (nonatomic) NSNumber firing;
+@property (nonatomic) NSArray frequency;
+@property (nonatomic) NSNumber hour;
+@property (nonatomic) NSString label;
+@property (nonatomic) NSNumber minute;
+@property (nonatomic) NSNumber relativeOffsetMinutes;
+- (id)minute;
+- (id)hour;
+- (void)setMinute:;
+- (void)setHour:;
+- (id)frequency;
+- (id)groupIdentifier;
+- (void)setFrequency:;
+- (id)enabled;
+- (void)setLabel:;
+- (void)setFiring:;
+- (id)label;
+- (id)encodedClassName;
+- (void)setEnabled:;
+- (id)firing;
+- (id)dataSourceInfo;
+- (void)setDataSourceInfo:;
+- (id)relativeOffsetMinutes;
+- (void)setRelativeOffsetMinutes:;
++ (id)object;
++ (id)objectWithDictionary:context:;
+@end

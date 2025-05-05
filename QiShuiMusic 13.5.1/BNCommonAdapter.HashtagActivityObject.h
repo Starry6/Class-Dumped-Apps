@@ -1,0 +1,2 @@
+@interface BNCommonAdapter.HashtagActivityObject : _TtGC15BNCommonAdapter14NetModelObjectV10STNetProto15HashtagActivity_
+@end

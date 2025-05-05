@@ -1,0 +1,31 @@
+@interface NWActivityClientMetricStatistics : NSObject
+@property (nonatomic) {nw_activity_client_metric_report_s=[16C][256c][5000c][0C]} report;
+@property (nonatomic) NSUUID activityUUID;
+@property (nonatomic) NSString clientMetricName;
+@property (nonatomic) NSString clientMetricString;
+@property (nonatomic) NSDictionary dictionaryRepresentation;
+@property (nonatomic) NSData metricData;
+@property (nonatomic) NSUUID externallyVisibleActivityUUID;
+@property (nonatomic) NSString bundleID;
+@property (nonatomic) NSDictionary clientMetric;
+- (void)setReport:;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (id)dictionaryRepresentation;
+- (id)bundleID;
+- (id)report;
+- (void)setBundleID:;
+- (id)activityUUID;
+- (void)setActivityUUID:;
+- (id)externallyVisibleActivityUUID;
+- (void)setExternallyVisibleActivityUUID:;
+- (id)clientMetricName;
+- (void)setClientMetricName:;
+- (id)clientMetricString;
+- (void)setClientMetricString:;
+- (id)clientMetric;
+- (id)metricData;
+- (id)initWithNWActivityClientMetricReport:length:;
+- (void)setDictionaryRepresentation:;
+- (void)setMetricData:;
+@end

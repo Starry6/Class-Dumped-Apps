@@ -1,0 +1,32 @@
+@interface ICMusicSubscriptionLeaseSession : NSObject
+@property (nonatomic) <ICMusicSubscriptionLeaseSessionDelegate> delegate;
+@property (nonatomic) NSDate leaseExpirationDate;
+@property (nonatomic) BOOL delegatedLeaseSession;
+@property (nonatomic) ICStoreRequestContext requestContext;
+@property (nonatomic) ICMusicSubscriptionLeaseStatus leaseStatus;
+@property (nonatomic) BOOL automaticallyRefreshingLease;
+- (void)dealloc;
+- (id)delegate;
+- (id)requestContext;
+- (void)_handlePlaybackLeaseDidEndPushNotification;
+- (void).cxx_destruct;
+- (id)description;
+- (id)leaseStatus;
+- (void)beginAutomaticallyRefreshingLease;
+- (void)endAutomaticallyRefreshingLease;
+- (id)_initWithRequestContext:isDelegatedLeaseSession:delegate:leaseStatus:;
+- (BOOL)isAutomaticallyRefreshingLease;
+- (id)performPlaybackRequest:completionHandler:;
+- (void)reloadFairPlayKeyStatusWithCompletionHandler:;
+- (void)_handleRemoteServerDidBecomeLikelyReachable;
+- (void)_receivedUserInteractionEvent;
+- (void)_setLeaseStatus:updatedLeaseExpirationDate:;
+- (id)_newOperationForPlaybackRequest:completionHandler:;
+- (void)_locked_performAutomaticRefresh;
+- (void)_locked_setLeaseStatus:updatedLeaseExpirationDate:;
+- (void)_locked_updateAutomaticRefreshProperties;
+- (void)_locked_handlePendingPlaybackLeaseDidEndPushNotificationIfReady;
+- (BOOL)isDelegatedLeaseSession;
+- (id)leaseExpirationDate;
++ (id)_sharedOperationQueue;
+@end

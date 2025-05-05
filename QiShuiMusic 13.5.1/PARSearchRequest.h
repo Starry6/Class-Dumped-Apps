@@ -1,0 +1,37 @@
+@interface PARSearchRequest : PARRequest
+@property (nonatomic) NSString queryString;
+@property (nonatomic) SFSearchSuggestion engagedSuggestion;
+@property (nonatomic) NSArray completionCacheSuggestions;
+@property (nonatomic) NSString previouslyEngagedQuery;
+@property (nonatomic) NSDictionary topics;
+@property (nonatomic) q type;
+@property (nonatomic) NSString l2version;
+@property (nonatomic) NSString l3version;
+@property (nonatomic) NSArray localContextualSuggestions;
+@property (nonatomic) q exp;
+- (void)setTopics:;
+- (id)topics;
+- (void)setType:;
+- (id)engagedSuggestion;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (long long)type;
+- (void)setQueryString:;
+- (void).cxx_destruct;
+- (void)setEngagedSuggestion:;
+- (id)queryString;
+- (long long)exp;
+- (unsigned int)nwActivityLabel;
+- (id)l2version;
+- (void)setL2version:;
+- (id)l3version;
+- (void)setL3version:;
+- (id)localContextualSuggestions;
+- (void)setLocalContextualSuggestions:;
+- (void)setExp:;
+- (id)completionCacheSuggestions;
+- (void)setCompletionCacheSuggestions:;
+- (id)previouslyEngagedQuery;
+- (void)setPreviouslyEngagedQuery:;
++ (BOOL)supportsSecureCoding;
+@end

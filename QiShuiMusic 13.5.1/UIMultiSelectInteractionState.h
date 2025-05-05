@@ -1,0 +1,35 @@
+@interface UIMultiSelectInteractionState : NSObject
+@property (nonatomic) {CGPoint=dd} startPoint;
+@property (nonatomic) NSIndexPath startIndexPath;
+@property (nonatomic) NSIndexPath endIndexPath;
+@property (nonatomic) BOOL selecting;
+@property (nonatomic) NSArray originallySelectedIndexPaths;
+@property (nonatomic) NSArray allSelectedIndexPaths;
+@property (nonatomic) BOOL ignoringSelectionChangedNotifications;
+@property (nonatomic) BOOL inMultiselectInteraction;
+- (id)startPoint;
+- (void)setStartPoint:;
+- (BOOL)isSelecting;
+- (void).cxx_destruct;
+- (BOOL)isInMultiselectInteraction;
+- (id)initWithCurrentSelection:;
+- (void)setOriginallySelectedIndexPaths:;
+- (void)ignoreSelectionChangedNotificationsWithBlock:;
+- (BOOL)ignoringSelectionChangedNotifications;
+- (BOOL)stillValidForSelectedIndexPaths:;
+- (void)updateStateWithDifferenceFromCurrentSelection:;
+- (void)updateStateWithStartingIndexPath:otherSelectedIndexPaths:;
+- (void)beginSelectingWithStartingIndexPath:otherSelectedIndexPaths:keepCurrentSelection:;
+- (id)pathsToSelectForInterpolatedIndexPaths:;
+- (id)pathsToDeselectForInterpolatedIndexPaths:currentlySelectedIndexPaths:;
+- (void)beginMultiselectInteraction;
+- (void)endMultiselectInteraction;
+- (id)startIndexPath;
+- (void)setStartIndexPath:;
+- (id)endIndexPath;
+- (void)setEndIndexPath:;
+- (void)setSelecting:;
+- (id)originallySelectedIndexPaths;
+- (id)allSelectedIndexPaths;
+- (void)setAllSelectedIndexPaths:;
+@end

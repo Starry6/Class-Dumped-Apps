@@ -1,0 +1,2 @@
+@interface TRIPBApiRoot : TRIPBRootObject
+@end

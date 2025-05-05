@@ -1,0 +1,31 @@
+@interface CNVCardLine : NSObject
+@property (nonatomic) NSString name;
+@property (nonatomic) @ value;
+@property (nonatomic) NSArray parameters;
+@property (nonatomic) NSString groupingName;
+@property (nonatomic) NSArray groupedLines;
+@property (nonatomic) NSString itemSeparator;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)parameters;
+- (void).cxx_destruct;
+- (id)value;
+- (id)name;
+- (void)serializeWithStrategy:;
+- (void)addParameterWithName:value:;
+- (void)insertParameterWithName:value:atIndex:;
+- (void)addGroupedLine:withCounter:;
+- (BOOL)canSerializeWithStrategy:;
+- (void)serializeValueWithStrategy:;
+- (id)initWithName:value:itemSeparator:;
+- (id)makeGroupingNameWithCounter:;
+- (id)groupingName;
+- (id)groupedLines;
+- (id)itemSeparator;
++ (id)lineWithName:value:;
++ (id)lineWithName:value:itemSeparator:;
++ (id)lineWithLiteralValue:;
++ (id)versionPlaceholderLine;
+@end

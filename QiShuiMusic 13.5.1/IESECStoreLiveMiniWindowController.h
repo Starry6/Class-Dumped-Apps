@@ -1,0 +1,31 @@
+@interface IESECStoreLiveMiniWindowController : IESECRelationLiveMiniWindowController
+@property (nonatomic) IESECStoreLiveViewModel viewModel;
+@property (nonatomic) IESECServiceProxy<IESECShopDataService> dataService;
+@property (nonatomic) Q liveMiniWindowType;
+@property (nonatomic) BOOL installMute;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setDataService:;
+- (void)p_attachLiveMiniWindowIfNeeded:;
+- (void)__subscribeAttachMiniWindow;
+- (void)configLiveMiniWindowInstallMute:;
+- (void)controllerDidLoad;
+- (id)dataService;
+- (void)didSetPageContextV2:;
+- (void)headerTypeDidChange:;
+- (void)iesecshop_didFinishExtensionAreaAnimation;
+- (void)p_tapMiniLiveWindow:;
+- (void)pagerView:mainScrollViewDidScroll:;
+- (void)setupBinding;
+- (void)setupBindingV2;
+- (void)updateLiveInfoModel:;
+- (void)dealloc;
+- (id)viewModel;
+- (void)viewWillDisappear:;
+- (void).cxx_destruct;
+- (void)viewDidAppear:;
+- (void)setViewModel:;
+- (void)viewDidLoad;
+@end

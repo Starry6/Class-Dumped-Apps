@@ -1,0 +1,31 @@
+@interface EMClientState : NSObject
+@property (nonatomic) EMRemoteConnection connection;
+@property (nonatomic) BOOL isForeground;
+@property (nonatomic) EFObservable<EFObserver> foregroundObservable;
+@property (nonatomic) BOOL isRunningTests;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setIsRunningTests:;
+- (BOOL)isRunningTests;
+- (BOOL)isForeground;
+- (void)setStateForDemoMode:;
+- (id)initWithRemoteConnection:;
+- (void)setIsForeground:;
+- (id)connection;
+- (void).cxx_destruct;
+- (void)setConnection:;
+- (void)_handleApplicationWillEnterForeground;
+- (void)_handleApplicationDidEnterBackground;
+- (void)setCurrentlyVisibleMailboxes:;
+- (void)setCurrentlyVisibleMailboxObjectIDs:;
+- (id)daemonBoosterWithDescription:;
+- (void)test_handleApplicationWillEnterForeground;
+- (void)test_handleApplicationDidEnterBackground;
+- (void)_performAsyncUpdate:;
+- (id)foregroundObservable;
+- (void)setForegroundObservable:;
++ (id)log;
++ (id)remoteInterface;
+@end

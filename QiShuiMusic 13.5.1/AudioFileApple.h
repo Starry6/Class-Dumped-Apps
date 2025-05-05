@@ -1,0 +1,34 @@
+@interface AudioFileApple : NSObject
+@property (nonatomic) NSURLSession httpSession;
+@property (nonatomic) NSURLSessionDataTask datatask;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)initWithLocalFilePath:withStreamDescription:useTrack:;
+- (BOOL)initWithIpodFilePath:withStreamDescription:useTrack:;
+- (BOOL)initWithOnlineFilePath:withStreamDescription:useTrack:;
+- (BOOL)initWithFilePath:withStreamDescription:useTrack:;
+- (BOOL)readAudioData:readFrameNumber:;
+- (long long)getCurrentPosition;
+- (int)getAudioTrackCount;
+- (int)getUsedTrackIdx;
+- (void)selectTrack:;
+- (void)stopLoadOnlineAudio;
+- (id)httpSession;
+- (void)setHttpSession:;
+- (id)datatask;
+- (void)setDatatask:;
+- (void)URLSession:dataTask:didReceiveData:;
+- (void)closeFile;
+- (void)dealloc;
+- (void)URLSession:task:didCompleteWithError:;
+- (void)URLSession:didBecomeInvalidWithError:;
+- (void)URLSession:dataTask:didReceiveResponse:completionHandler:;
+- (unsigned int)getDuration;
+- (void).cxx_destruct;
+- (id).cxx_construct;
+- (void)seek:;
++ (BOOL)isOnlineUrl:;
++ (BOOL)isIpodUrl:;
+@end

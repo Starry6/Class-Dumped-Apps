@@ -1,0 +1,22 @@
+@interface BDUGFlowStatisticsSettings : NSObject
+- (id)flowCmccRequestUrl;
+- (long long)flowDefaultCheckTimeInterval;
+- (long long)flowLocalQueryInterval;
+- (BOOL)flowOrderEntranceEnable;
+- (BOOL)flowStatisticsEnable;
+- (id)flowStatisticsOptions;
+- (long long)flowStatisticsRemainTipValue;
+- (long long)flowStatisticsRequestInterval;
+- (id)flowTelecomRequestUrl;
+- (BOOL)flowUploadLoaclIsEnable;
+- (void)setFlowCmccRequestUrl:;
+- (void)setFlowDefaultCheckTimeInterval:;
+- (void)setFlowLocalQueryInterval:;
+- (void)setFlowOrderEntranceIsEnable:;
+- (void)setFlowStatisticsEnable:;
+- (void)setFlowStatisticsOptions:;
+- (void)setFlowStatisticsRemainTipValue:;
+- (void)setFlowStatisticsRequestInterval:;
+- (void)setFlowTelecomRequestUrl:;
+- (void)setFlowUploadLoaclIsEnable:;
+@end

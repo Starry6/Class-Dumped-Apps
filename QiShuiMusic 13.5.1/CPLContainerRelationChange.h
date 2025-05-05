@@ -1,0 +1,30 @@
+@interface CPLContainerRelationChange : CPLRecordChange
+@property (nonatomic) NSString itemIdentifier;
+@property (nonatomic) CPLContainerRelation relation;
+- (void)setItemIdentifier:;
+- (id)itemIdentifier;
+- (id)relation;
+- (void).cxx_destruct;
+- (void)setRelation:;
+- (id)description;
+- (id)secondaryIdentifier;
+- (id)itemScopedIdentifier;
+- (id)scopedIdentifiersForMapping;
+- (id)translateToCloudChangeUsingIDMapping:error:;
+- (id)translateToClientChangeUsingIDMapping:error:;
+- (id)compactedChangeWithRelatedChanges:isOnlyChange:fullRecord:usingStorageView:;
+- (void)setItemScopedIdentifier:;
+- (BOOL)validateFullRecord;
+- (id)containerScopedIdentifier;
+- (void)setContainerScopedIdentifier:;
+- (id)relatedIdentifier;
+- (void)setRelatedIdentifier:;
+- (void)setSecondaryIdentifier:;
++ (BOOL)supportsDeletion;
++ (BOOL)supportsDirectDeletion;
++ (id)relationToContainerWithIdentifier:;
++ (id)relationWithItemScopedIdentifier:containerIdentifier:;
++ (id)relationWithItemIdentifier:containerIdentifier:;
++ (BOOL)shouldReallyQuarantineRecord;
++ (Class)relatedRecordClass;
+@end

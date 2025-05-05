@@ -1,0 +1,35 @@
+@interface VideoEncoderInterface : NSObject
+@property (nonatomic) q pendigFrames;
+@property (nonatomic) I lastEncodingStatus;
+@property (nonatomic) I lastEncodingInfoFlags;
+@property (nonatomic) BOOL frameReorderingEnabled;
+@property (nonatomic) BOOL customEncoderConfig;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (BOOL)customEncoderConfig;
+- (id)overrideVideoEncoderSpecification;
+- (BOOL)configureSessionOverride:;
+- (unsigned int)codecTypeOverride;
+- (id)initWithExpectedFrameRate:forStream:delegate:;
+- (id)initForStream:configuration:delegate:;
+- (void)useQPEncoding:;
+- (void)setupEncoderWithWidth:andHeight:imageFormat:andFramerate:;
+- (void)processFrame:pst:frameProperties:metadata:;
+- (void)encodeFrame:pst:frameProperties:metadata:;
+- (BOOL)frameReorderingEnabled;
+- (void)closeEncoder;
+- (void)closeEncoderInDispatchGroup:;
+- (void)skipFrameWithStatus:andFlags:;
+- (void)writeSampleBuffer:pts:metadata:withStatus:andFlags:;
+- (unsigned int)lastEncodingStatus;
+- (unsigned int)lastEncodingInfoFlags;
+- (long long)pendigFrames;
+- (void)setPendigFrames:;
+- (void)setCustomEncoderConfig:;
++ (id)createHEVCCompatiblePixelBuffer:;
+@end

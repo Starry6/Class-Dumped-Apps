@@ -1,0 +1,37 @@
+@interface NUIContentScrollView : UIScrollView
+@property (nonatomic) UIView contentView;
+@property (nonatomic) UIView documentView;
+@property (nonatomic) q horizontalAlignment;
+@property (nonatomic) q verticalAlignment;
+@property (nonatomic) BOOL canScrollDocumentViewHorizontally;
+@property (nonatomic) BOOL canScrollDocumentViewVertically;
+- (long long)verticalAlignment;
+- (id)_baselineOffsetsAtSize:;
+- (void)_intrinsicContentSizeInvalidatedForChildView:;
+- (id)initWithContentView:;
+- (id)contentView;
+- (id)_intrinsicSizeWithinSize:;
+- (void)layoutSubviews;
+- (id)viewForFirstBaselineLayout;
+- (id)viewForLastBaselineLayout;
+- (BOOL)_layoutHeightDependsOnWidth;
+- (void)setVerticalAlignment:;
+- (id)initWithFrame:;
+- (id)sizeThatFits:;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (unsigned long long)_axesForDerivingIntrinsicContentSizeFromLayoutSize;
+- (id)documentView;
+- (void)setDocumentView:;
+- (void)setHorizontalAlignment:;
+- (BOOL)isLayoutSizeDependentOnPerpendicularAxis;
+- (long long)horizontalAlignment;
+- (void)setCanScrollDocumentViewHorizontally:;
+- (void)setCanScrollDocumentViewVertically:;
+- (id)initWithDocumentView:;
+- (id)_measureSizeForTargetSize:insets:;
+- (id)_finalSizeForTargetSize:resultSize:insets:;
+- (BOOL)canScrollDocumentViewHorizontally;
+- (BOOL)canScrollDocumentViewVertically;
++ (BOOL)requiresConstraintBasedLayout;
+@end

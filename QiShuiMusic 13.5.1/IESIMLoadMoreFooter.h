@@ -1,0 +1,37 @@
+@interface IESIMLoadMoreFooter : MJRefreshBackFooter
+@property (nonatomic) IESIMUILoadingView loadingView;
+@property (nonatomic) UILabel label;
+@property (nonatomic) BOOL isFirstAppear;
+@property (nonatomic) BOOL showNoMoreDataText;
+@property (nonatomic) NSString noMoreDataString;
+@property (nonatomic) NSAttributedString noMoreDataAttributedString;
+- (void)scrollViewContentSizeDidChange:;
+- (void)_startLoadingAnim;
+- (void)_stopLoadingAnim;
+- (id)noMoreDataAttributedString;
+- (id)noMoreDataString;
+- (void)placeSubviews;
+- (BOOL)scrollViewContentHeightBiggerThanFrameHeight;
+- (void)scrollViewContentOffsetDidChange:;
+- (BOOL)scrollViewDidReachBottom;
+- (BOOL)scrollViewDidScrollUp;
+- (void)setIsFirstAppear:;
+- (void)setLoadMoreLabelTextColor:;
+- (void)setNoMoreDataAttributedString:;
+- (void)setNoMoreDataString:;
+- (void)setShowNoMoreDataText:;
+- (BOOL)showNoMoreDataText;
+- (void)_removeObservers;
+- (void)dealloc;
+- (void)_addObservers;
+- (void)setState:;
+- (void)prepare;
+- (void)setLabel:;
+- (id)label;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)applicationWillEnterForeground:;
+- (BOOL)isFirstAppear;
+- (id)loadingView;
+- (void)setLoadingView:;
+@end

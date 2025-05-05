@@ -1,0 +1,26 @@
+@interface IESIMStickCollectionView : UICollectionView
+- (BOOL)IESIMListKit_lock;
+- (void)IESIMListKit_scrollViewDidEndScrolling;
+- (id)IESIMListKit_delegateForwarder;
+- (BOOL)IESIMListKit_isObserving;
+- (id)IESIMListKit_observedViews;
+- (void)addObservedView:;
+- (void)addObserverToView:;
+- (void)removeObservedViews;
+- (void)removeObserverFromView:;
+- (void)scrollView:setContentOffset:;
+- (void)setIESIMListKit_delegateForwarder:;
+- (void)setIESIMListKit_isObserving:;
+- (void)setIESIMListKit_lock:;
+- (void)setIESIMListKit_observedViews:;
+- (void)scrollViewDidEndDecelerating:;
+- (void)initialize;
+- (void)dealloc;
+- (void)setDelegate:;
+- (void)observeValueForKeyPath:ofObject:change:context:;
+- (void)scrollViewDidScroll:;
+- (id)delegate;
+- (void)scrollViewDidEndDragging:willDecelerate:;
+- (BOOL)_gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:;
+- (BOOL)_gestureRecognizerShouldBegin:;
+@end

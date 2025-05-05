@@ -1,0 +1,2 @@
+@interface AVFrameRateRangeInternal : NSObject
+@end

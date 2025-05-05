@@ -1,0 +1,38 @@
+@interface TIKeyboardBehaviorState : NSObject
+@property (nonatomic) BOOL hasInput;
+@property (nonatomic) BOOL hasAutocorrection;
+@property (nonatomic) BOOL hasCandidates;
+@property (nonatomic) BOOL hasCandidateSelected;
+@property (nonatomic) BOOL userSelectedCurrentCandidate;
+@property (nonatomic) BOOL hasNextPage;
+@property (nonatomic) BOOL showsExtendedList;
+@property (nonatomic) BOOL followsZhuyin;
+@property (nonatomic) BOOL spaceConfirmation;
+@property (nonatomic) BOOL showsCandidatesInLayout;
+@property (nonatomic) BOOL hardwareKeyboardMode;
+@property (nonatomic) BOOL followsIncompleteRomaji;
+- (void)setUserSelectedCurrentCandidate:;
+- (BOOL)userSelectedCurrentCandidate;
+- (BOOL)followsIncompleteRomaji;
+- (BOOL)hasNextPage;
+- (BOOL)spaceConfirmation;
+- (BOOL)hasAutocorrection;
+- (void)setFollowsZhuyin:;
+- (BOOL)showsCandidatesInLayout;
+- (void)setSpaceConfirmation:;
+- (BOOL)hasCandidateSelected;
+- (void)setHasCandidates:;
+- (void)setShowsCandidatesInLayout:;
+- (BOOL)hasCandidates;
+- (void)setHasInput:;
+- (void)setFollowsIncompleteRomaji:;
+- (void)setShowsExtendedList:;
+- (void)setHasAutocorrection:;
+- (BOOL)hasInput;
+- (BOOL)followsZhuyin;
+- (void)setHasCandidateSelected:;
+- (BOOL)hardwareKeyboardMode;
+- (void)setHardwareKeyboardMode:;
+- (BOOL)showsExtendedList;
+- (void)setHasNextPage:;
+@end

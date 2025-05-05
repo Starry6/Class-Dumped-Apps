@@ -1,0 +1,38 @@
+@interface SBIdleTimerRequestConfiguration : ITIdleTimerConfiguration
+@property (nonatomic) NSNumber boxed_minExpirationTimeout;
+@property (nonatomic) NSNumber boxed_maxExpirationTimeout;
+@property (nonatomic) Q idleEventMask;
+@property (nonatomic) Q precedence;
+@property (nonatomic) double minExpirationTimeout;
+@property (nonatomic) BOOL hasMinExpirationTimeout;
+@property (nonatomic) double maxExpirationTimeout;
+@property (nonatomic) BOOL hasMaxExpirationTimeout;
+- (id)init;
+- (id)initWithBSXPCCoder:;
+- (id)succinctDescriptionBuilder;
+- (void).cxx_destruct;
+- (void)encodeWithBSXPCCoder:;
+- (id)succinctDescription;
+- (id)description;
+- (id)descriptionBuilderWithMultilinePrefix:;
+- (id)initWithConfiguration:;
+- (id)descriptionWithMultilinePrefix:;
+- (unsigned long long)precedence;
+- (void)setPrecedence:;
+- (BOOL)hasMinExpirationTimeout;
+- (double)minExpirationTimeout;
+- (void)setMinExpirationTimeout:;
+- (BOOL)hasMaxExpirationTimeout;
+- (double)maxExpirationTimeout;
+- (void)setMaxExpirationTimeout:;
+- (void)_setIdleEventHandler:;
+- (unsigned long long)idleEventMask;
+- (id)_boxed_minExpirationTimeout;
+- (void)_setBoxed_minExpirationTimeout:;
+- (id)_boxed_maxExpirationTimeout;
+- (void)_setBoxed_maxExpirationTimeout:;
++ (id)configurationWithMinimumExpirationTimeout:;
++ (id)configurationWithMaximumExpirationTimeout:;
++ (id)configurationWithMinimumExpirationTimeout:maximumExpirationTimeout:;
++ (id)configurationWithIdleEventHandler:;
+@end

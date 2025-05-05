@@ -1,0 +1,36 @@
+@interface BDXAConfirmAgreementViewController : UIViewController
+@property (nonatomic) BDXAClickableTextView agreementView;
+@property (nonatomic) BDXAPageContent pageContent;
+@property (nonatomic) BDXAButton closeButton;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) BDXAButton confirmButton;
+@property (nonatomic) BDXAButton disagreeButton;
+@property (nonatomic) BDXAButton bottomButton;
+@property (nonatomic) NSString type;
+@property (nonatomic) <BDXAConfirmAgreementViewControllerDelegate> delegate;
+- (id)agreementView;
+- (void)bottomButtonTapped;
+- (void)comfirmButtonTapped;
+- (id)disagreeButton;
+- (id)initWithPageContent:type:;
+- (void)loadClickableTextView;
+- (void)setAgreementView:;
+- (void)setDisagreeButton:;
+- (void)setTitleLabel:;
+- (void)setDelegate:;
+- (void)setType:;
+- (id)type;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)viewDidLoad;
+- (id)confirmButton;
+- (void)setConfirmButton:;
+- (id)closeButton;
+- (void)setCloseButton:;
+- (id)pageContent;
+- (void)setPageContent:;
+- (void)closeButtonTapped;
+- (id)bottomButton;
+- (void)setBottomButton:;
+@end

@@ -1,0 +1,28 @@
+@interface BWFileCoordinatorNode : BWNode
+- (int)cinematicLookAheadFrameCount;
+- (id)init;
+- (void)dealloc;
+- (void)tryToEmitFramesWaitingForMotion;
+- (void)setFlagsLastFrameForVideoCompressor:;
+- (void)handleDroppedSample:forInput:;
+- (id)nodeType;
+- (void)configurationWithID:updatedFormat:didBecomeLiveForInput:;
+- (void)didSelectFormat:forInput:;
+- (id)fileCoordiatorStatusDelegate;
+- (void)setCinematicLookAheadFrameCount:;
+- (void)didReachEndOfDataForInput:;
+- (void)recordingTerminated:;
+- (void)cancelStartRecordingWithSettings:;
+- (void)renderSampleBuffer:forInput:;
+- (BOOL)updateStopPTS:audioOffset:previousStopPTS:previousAudioOffset:;
+- (void)resumeRecording;
+- (void)setFileCoordiatorStatusDelegate:;
+- (int)startRecordingWithSettings:videoSettings:maxFrameRate:stopAtPTS:startAfterPTS:;
+- (void)pauseRecording;
+- (void)setAudioSourceDelegate:;
+- (void)stopRecordingWithErrorCode:;
+- (id)initWithNumberOfVideoInputs:numberOfAudioInputs:numberOfMetadataInputs:numberOfActionOnlyOutputs:overCaptureEnabled:allowLowLatencyWhenPossible:motionDataTimeMachine:;
+- (BOOL)flagsLastFrameForVideoCompressor;
+- (id)nodeSubType;
+- (id)audioSourceDelegate;
+@end

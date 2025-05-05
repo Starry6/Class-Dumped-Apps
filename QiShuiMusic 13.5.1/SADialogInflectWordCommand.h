@@ -1,0 +1,31 @@
+@interface SADialogInflectWordCommand : SABaseCommand
+@property (nonatomic) NSArray constraints;
+@property (nonatomic) BOOL defaultToSemantic;
+@property (nonatomic) NSString label;
+@property (nonatomic) NSString locale;
+@property (nonatomic) NSString semanticFeatureName;
+@property (nonatomic) NSString value;
+@property (nonatomic) NSString aceId;
+@property (nonatomic) NSString refId;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setLocale:;
+- (id)groupIdentifier;
+- (id)locale;
+- (void)setLabel:;
+- (id)constraints;
+- (id)label;
+- (BOOL)requiresResponse;
+- (void)setConstraints:;
+- (void)setValue:;
+- (id)encodedClassName;
+- (id)value;
+- (BOOL)defaultToSemantic;
+- (void)setDefaultToSemantic:;
+- (id)semanticFeatureName;
+- (void)setSemanticFeatureName:;
++ (id)inflectWordCommand;
++ (id)inflectWordCommandWithDictionary:context:;
+@end

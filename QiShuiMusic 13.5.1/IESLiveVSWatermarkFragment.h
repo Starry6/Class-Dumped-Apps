@@ -1,0 +1,32 @@
+@interface IESLiveVSWatermarkFragment : IESLiveRoomComponent
+@property (nonatomic) <IESLivePlayerProtocol> streamPlayer;
+@property (nonatomic) q currentOrientation;
+@property (nonatomic) UIView vsLiveWaterMarkView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)addWaterForLive;
+- (void)componentCreate;
+- (void)componentBindService;
+- (void)componentMount;
+- (void)componentOrientationChanged:;
+- (void)componentOrientationTransitionBegin:;
+- (void)componentUnmount;
+- (BOOL)isVerticalStream;
+- (void)onFIFAPannelSatusChange:;
+- (void)p_removeVSWatermark;
+- (void)playerDidEndplayInSmallWindow;
+- (void)playerWillPlayInSmallWindow;
+- (void)remoteRoomDataReady:;
+- (void)setStreamPlayer:;
+- (void)setVsLiveWaterMarkView:;
+- (id)streamPlayer;
+- (void)streamPlayerDidReadyToRender;
+- (void)updateRoom:;
+- (id)vsLiveWaterMarkView;
+- (long long)currentOrientation;
+- (void).cxx_destruct;
+- (void)setCurrentOrientation:;
++ (BOOL)componentShouldActive:;
+@end

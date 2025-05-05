@@ -1,0 +1,31 @@
+@interface ARFaceGeometry : NSObject
+@property (nonatomic) Q vertexCount;
+@property (nonatomic) r^ vertices;
+@property (nonatomic) Q textureCoordinateCount;
+@property (nonatomic) r^ textureCoordinates;
+@property (nonatomic) Q triangleCount;
+@property (nonatomic) r^s triangleIndices;
+- (id)initPrivate;
+- (unsigned long long)vertexCount;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (id)textureCoordinates;
+- (void).cxx_destruct;
+- (id).cxx_construct;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (unsigned long long)triangleCount;
+- (id)vertices;
+- (id)normals;
+- (unsigned long long)normalCount;
+- (unsigned long long)textureCoordinateCount;
+- (id)triangleIndices;
+- (id)initWithBlendShapes:;
+- (id)initWithFaceTrackingData:;
+- (id)initWithFaceTrackingDataProtocol:;
+- (id)initWithCustomVertices:verticesCount:;
+- (id)positionForLabeledFacePosition:;
+- (id)normalForLabeledFacePosition:;
+- (short)closestVertexIndexToLabeledFacePosition:;
++ (BOOL)supportsSecureCoding;
+@end

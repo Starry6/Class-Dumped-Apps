@@ -1,0 +1,35 @@
+@interface SFDeviceOperationCNJSetup : NSObject
+@property (nonatomic) SFSession sfSession;
+@property (nonatomic) NSObject<OS_dispatch_queue> dispatchQueue;
+@property (nonatomic) UIViewController presentingViewController;
+@property (nonatomic) BOOL isSetup;
+@property (nonatomic) @? promptForConfirmationHandler;
+@property (nonatomic) @? completionHandler;
+@property (nonatomic) double metricTotalSeconds;
+- (BOOL)isSetup;
+- (id)presentingViewController;
+- (void)setPresentingViewController:;
+- (id)dispatchQueue;
+- (void)setCompletionHandler:;
+- (void)setDispatchQueue:;
+- (void)_complete:;
+- (void).cxx_destruct;
+- (void)invalidate;
+- (void)activate;
+- (id)completionHandler;
+- (id)sfSession;
+- (void)setSfSession:;
+- (double)metricTotalSeconds;
+- (void)handleWebNavigationWithCompletionHandler:;
+- (void)handleDismissal;
+- (void)handleCompleteNotificationWithRedirectURLtype:result:;
+- (void)scrapeCredentialsUsingPOSTMessage:loginURL:;
+- (void)_startClient;
+- (void)showWebSheet;
+- (void)_handleCaptiveNetworkPresentEvent:;
+- (void)_showCaptiveSheet:;
+- (void)_handleCompletedEventWithError:;
+- (void)setIsSetup:;
+- (id)promptForConfirmationHandler;
+- (void)setPromptForConfirmationHandler:;
+@end

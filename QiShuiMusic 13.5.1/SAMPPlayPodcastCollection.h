@@ -1,0 +1,30 @@
+@interface SAMPPlayPodcastCollection : SADomainCommand
+@property (nonatomic) NSString assetInfo;
+@property (nonatomic) NSString episodePlaybackOrder;
+@property (nonatomic) NSArray hashedRouteUIDs;
+@property (nonatomic) SAMPPodcastCollection podcastCollection;
+@property (nonatomic) NSString requesterSharedUserId;
+@property (nonatomic) NSString sharedUserIdFromPlayableITunesAccount;
+@property (nonatomic) BOOL startPlaying;
+- (void)af_addEntriesToAnalyticsContext:;
+- (id)groupIdentifier;
+- (BOOL)requiresResponse;
+- (id)encodedClassName;
+- (id)hashedRouteUIDs;
+- (void)setHashedRouteUIDs:;
+- (id)assetInfo;
+- (void)setAssetInfo:;
+- (BOOL)startPlaying;
+- (BOOL)mutatingCommand;
+- (void)setStartPlaying:;
+- (id)requesterSharedUserId;
+- (void)setRequesterSharedUserId:;
+- (id)podcastCollection;
+- (void)setPodcastCollection:;
+- (id)sharedUserIdFromPlayableITunesAccount;
+- (void)setSharedUserIdFromPlayableITunesAccount:;
+- (id)episodePlaybackOrder;
+- (void)setEpisodePlaybackOrder:;
++ (id)playPodcastCollection;
++ (id)playPodcastCollectionWithDictionary:context:;
+@end

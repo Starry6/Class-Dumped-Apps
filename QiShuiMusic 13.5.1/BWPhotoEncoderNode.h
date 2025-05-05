@@ -1,0 +1,31 @@
+@interface BWPhotoEncoderNode : BWNode
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setZeroShutterLagEnabled:;
+- (id)outputFormatForAttachedMediaKey:;
+- (BOOL)intermediateResourceTrackingAllowedForAttachedMediaKey:;
+- (BOOL)zeroShutterLagEnabled;
+- (void)didSelectFormat:forInput:forAttachedMediaKey:;
+- (void)dealloc;
+- (id)inputColorInfo;
+- (void)setAttachedMediaConfigurationByAttachedMediaKey:;
+- (BOOL)cameraSupportsFlash;
+- (void)handleStillImagePrewarmWithSettings:forInput:;
+- (id)nodeType;
+- (void)setCameraSupportsFlash:;
+- (id)inputInferenceVideoFormatForAttachedMediaKey:;
+- (void)setUsesHighEncodingPriority:;
+- (id)initWithNodeConfiguration:semanticDevelopmentVersion:inferenceScheduler:alwaysAwaitInference:portraitRenderQuality:deferredPhotoProcessorEnabled:alwaysEncodedSemanticSegmentationMatteURNs:;
+- (void)prepareForCurrentConfigurationToBecomeLive;
+- (void)didReachEndOfDataForInput:;
+- (void)setInputColorInfo:;
+- (void)renderSampleBuffer:forInput:;
+- (id)inputVideoFormatForAttachedMediaKey:;
+- (id)attachedMediaConfigurationByAttachedMediaKey;
+- (id)outputVideoFormatForAttachedMediaKey:;
+- (id)inputFormatForAttachedMediaKey:;
+- (id)nodeSubType;
+- (BOOL)usesHighEncodingPriority;
+@end

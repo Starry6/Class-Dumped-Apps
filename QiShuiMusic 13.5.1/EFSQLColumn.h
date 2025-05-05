@@ -1,0 +1,31 @@
+@interface EFSQLColumn : NSObject
+@property (nonatomic) ^{sqlite3_stmt=} statement;
+@property (nonatomic) q index;
+@property (nonatomic) NSString name;
+@property (nonatomic) @ objectValue;
+@property (nonatomic) NSString stringValue;
+@property (nonatomic) NSData dataValue;
+@property (nonatomic) NSNumber numberValue;
+@property (nonatomic) q databaseIDValue;
+@property (nonatomic) BOOL boolValue;
+@property (nonatomic) q int64Value;
+@property (nonatomic) q integerValue;
+@property (nonatomic) double doubleValue;
+@property (nonatomic) NSDate dateValue;
+- (id)dataValue;
+- (id)statement;
+- (id)numberValue;
+- (long long)int64Value;
+- (id)objectValue;
+- (id)dateValue;
+- (double)doubleValue;
+- (id)initWithPreparedStatement:index:;
+- (id)initWithSQLiteStatement:index:;
+- (id)debugDescription;
+- (long long)index;
+- (BOOL)boolValue;
+- (id)stringValue;
+- (long long)integerValue;
+- (long long)databaseIDValue;
+- (id)name;
+@end

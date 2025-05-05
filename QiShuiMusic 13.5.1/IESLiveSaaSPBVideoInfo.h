@@ -1,0 +1,32 @@
+@interface IESLiveSaaSPBVideoInfo : GPBMessage
+@property (nonatomic) BOOL isReusePlayer;
+@property (nonatomic) IESLiveSaaSPBVideoModelContainer playInfo;
+@property (nonatomic) BOOL hasPlayInfo;
+@property (nonatomic) IESLiveSaaSPBVideoInfo_StartLocation startPosition;
+@property (nonatomic) BOOL hasStartPosition;
+@property (nonatomic) IESLiveSaaSPBVideoModelContainer castInfo;
+@property (nonatomic) BOOL hasCastInfo;
+@property (nonatomic) IESLiveSaaSPBVideoModelContainer watermarkedEncrypt;
+@property (nonatomic) BOOL hasWatermarkedEncrypt;
+@property (nonatomic) NSString vid;
+@property (nonatomic) NSMutableArray segmentFlowTimeListArray;
+@property (nonatomic) Q segmentFlowTimeListArray_Count;
+@property (nonatomic) q duration;
+@property (nonatomic) NSMutableArray downloadSizesArray;
+@property (nonatomic) Q downloadSizesArray_Count;
+@property (nonatomic) NSInteger videoCode;
+@property (nonatomic) IESLiveSaaSPBVideoPlayInfo unfoldPlayInfo;
+@property (nonatomic) BOOL hasUnfoldPlayInfo;
+@property (nonatomic) NSInteger videoModelType;
+@property (nonatomic) IESLiveSaaSPBStreamUrl streamURL;
+@property (nonatomic) BOOL hasStreamURL;
+@property (nonatomic) IESLiveSaaSPBReplayStreamUrl replayStreamURL;
+@property (nonatomic) BOOL hasReplayStreamURL;
+@property (nonatomic) BOOL refresh;
+@property (nonatomic) NSString playAuthToken;
+@property (nonatomic) NSMutableArray definitionInfosArray;
+@property (nonatomic) Q definitionInfosArray_Count;
+- (BOOL)isReusePlayer;
+- (void)setIsReusePlayer:;
++ (id)descriptor;
+@end

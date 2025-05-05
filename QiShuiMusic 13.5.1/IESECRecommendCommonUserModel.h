@@ -1,0 +1,32 @@
+@interface IESECRecommendCommonUserModel : MTLModel
+@property (nonatomic) NSNumber uid;
+@property (nonatomic) NSString name;
+@property (nonatomic) IESECURLModel avatar;
+@property (nonatomic) BOOL isLive;
+@property (nonatomic) NSString link;
+@property (nonatomic) Q followStatus;
+@property (nonatomic) NSNumber roomID;
+@property (nonatomic) NSString secUid;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (unsigned long long)followStatus;
+- (id)secUid;
+- (void)setFollowStatus:;
+- (void)setSecUid:;
+- (id)link;
+- (void)setName:;
+- (id)uid;
+- (void)setLink:;
+- (void)setUid:;
+- (BOOL)isLive;
+- (void).cxx_destruct;
+- (id)name;
+- (id)avatar;
+- (void)setAvatar:;
+- (id)roomID;
+- (void)setRoomID:;
+- (void)setIsLive:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

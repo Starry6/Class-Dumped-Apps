@@ -1,0 +1,31 @@
+@interface GEOWiFiESSMatch : PBCodable
+@property (nonatomic) BOOL hasStatus;
+@property (nonatomic) NSInteger status;
+@property (nonatomic) BOOL hasEss;
+@property (nonatomic) GEOWiFiESS ess;
+- (void)readAll:;
+- (void)setStatus:;
+- (BOOL)hasStatus;
+- (BOOL)hasGreenTeaWithValue:;
+- (id)initWithJSON:;
+- (id)statusAsString:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)setHasStatus:;
+- (void)mergeFrom:;
+- (id)ess;
+- (void).cxx_destruct;
+- (void)setEss:;
+- (BOOL)readFrom:;
+- (id)description;
+- (int)status;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (int)StringAsStatus:;
+- (id)copyWithZone:;
+- (BOOL)hasEss;
++ (BOOL)isValid:;
+@end

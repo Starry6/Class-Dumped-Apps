@@ -1,0 +1,38 @@
+@interface CPMapButton : NSObject
+@property (nonatomic) @? handler;
+@property (nonatomic) CPImageSet imageSet;
+@property (nonatomic) <CPMapButtonDelegate> controlDelegate;
+@property (nonatomic) BOOL enabled;
+@property (nonatomic) BOOL hidden;
+@property (nonatomic) UIImage image;
+@property (nonatomic) UIImage focusedImage;
+@property (nonatomic) NSUUID identifier;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (id)initWithHandler:;
+- (id)identifier;
+- (void)setHandler:;
+- (void)setImage:;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (id)handler;
+- (void)setEnabled:;
+- (void).cxx_destruct;
+- (void)setHidden:;
+- (id)description;
+- (BOOL)isHidden;
+- (void)setIdentifier:;
+- (id)image;
+- (BOOL)isEnabled;
+- (void)handlePrimaryAction;
+- (void)setFocusedImage:;
+- (id)focusedImage;
+- (id)imageSet;
+- (void)setImageSet:;
+- (id)controlDelegate;
+- (void)setControlDelegate:;
++ (BOOL)supportsSecureCoding;
+@end

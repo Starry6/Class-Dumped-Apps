@@ -1,0 +1,30 @@
+@interface AXMVisionColor : NSObject
+@property (nonatomic) double redFloat;
+@property (nonatomic) double greenFloat;
+@property (nonatomic) double blueFloat;
+@property (nonatomic) double hueFloat;
+@property (nonatomic) double saturationFloat;
+@property (nonatomic) double brightnessFloat;
+- (id)init;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (id)description;
+- (BOOL)isEqual:;
+- (BOOL)isEqualToAXMVisionColor:;
+- (void)_getHue:saturation:brightness:;
+- (void)_getRed:green:blue:;
+- (double)euclidianDistanceHSV:;
+- (double)euclidianDistanceHS:;
+- (double)redFloat;
+- (double)greenFloat;
+- (double)blueFloat;
+- (double)hueFloat;
+- (double)hueRadians;
+- (double)saturationFloat;
+- (double)brightnessFloat;
++ (BOOL)supportsSecureCoding;
++ (id)colorWithRed:green:blue:;
++ (id)colorWithHue:saturation:brightness:;
++ (id)colorWithHueDegrees:saturation:brightness:;
+@end

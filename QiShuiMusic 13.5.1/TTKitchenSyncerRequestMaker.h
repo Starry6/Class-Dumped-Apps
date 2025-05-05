@@ -1,0 +1,33 @@
+@interface TTKitchenSyncerRequestMaker : NSObject
+@property (nonatomic) Q aidValue;
+@property (nonatomic) NSString didValue;
+@property (nonatomic) NSDictionary localSettingsValue;
+@property (nonatomic) @? callbackValue;
+@property (nonatomic) NSString URLHostValue;
+@property (nonatomic) NSDictionary headerValue;
+@property (nonatomic) @? did;
+@property (nonatomic) @? aid;
+@property (nonatomic) @? URLHost;
+@property (nonatomic) @? localSettings;
+@property (nonatomic) @? callback;
+@property (nonatomic) @? header;
+- (id)did;
+- (id)URLHostValue;
+- (unsigned long long)aidValue;
+- (id)callbackValue;
+- (id)didValue;
+- (id)localSettingsValue;
+- (void)setAidValue:;
+- (void)setCallbackValue:;
+- (void)setDidValue:;
+- (void)setLocalSettingsValue:;
+- (void)setURLHostValue:;
+- (id)callback;
+- (void)setHeaderValue:;
+- (void).cxx_destruct;
+- (id)header;
+- (id)headerValue;
+- (id)URLHost;
+- (id)aid;
+- (id)localSettings;
+@end

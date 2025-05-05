@@ -1,0 +1,31 @@
+@interface CKMultiValueRegister : NSObject
+@property (nonatomic) NSMutableDictionary timestampToContents;
+@property (nonatomic) Q nextClockValue;
+@property (nonatomic) NSUUID identifier;
+@property (nonatomic) CKDistributedTimestampStateVector vector;
+@property (nonatomic) NSArray contents;
+@property (nonatomic) BOOL isConsumedState;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)CKDescribePropertiesUsing:;
+- (id)contents;
+- (id)redactedDescription;
+- (id)identifier;
+- (unsigned long long)hash;
+- (void)setContents:;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)vector;
+- (id)initWithIdentifier:vector:;
+- (id)initWithIdentifier:vector:contents:error:;
+- (unsigned long long)nextClockValue;
+- (id)siteIdentifier;
+- (BOOL)isConsumedState;
+- (unsigned long long)replaceVectorStateForPresentOrTombstonedTimestamps:;
+- (BOOL)merge:error:;
+- (id)timestampToContents;
++ (id)placeholderIdentifier;
+@end

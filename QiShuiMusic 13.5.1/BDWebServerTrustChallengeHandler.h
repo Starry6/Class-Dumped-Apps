@@ -1,0 +1,31 @@
+@interface BDWebServerTrustChallengeHandler : NSObject
+@property (nonatomic) WKWebView webView;
+@property (nonatomic) NSURL currentURL;
+@property (nonatomic) Q challengeState;
+@property (nonatomic) NSMutableArray challenges;
+- (void)_showWarningAlertController:;
+- (void)_tryShowWarningAlertController;
+- (unsigned long long)challengeState;
+- (void)dispatchHandler:needForceMainThread:;
+- (id)getMultiLangText:;
+- (id)handleCerErrWith:evaStatus:;
+- (void)handleSSLError:WithComplete:;
+- (void)handleServerTrustWithHost:withChallenge:certResultDic:;
+- (BOOL)isWebViewHandleServerTrustWithHost:;
+- (id)myBDWebKitBundle;
+- (void)setChallengeState:;
+- (void)setPageChallengeIsPass:withHost:;
+- (BOOL)shouldSkipSSLCertificateError;
+- (void)webView:challenge:challengecCompletion:ttnetErrorURL:ttnetCompletion:needForceMainThread:;
+- (void)webView:challenge:challengecCompletion:ttnetErrorURL:ttnetCompletion:url:;
+- (void)setWebView:;
+- (void)dealloc;
+- (id)webView;
+- (void)webView:didReceiveAuthenticationChallenge:completionHandler:;
+- (id)initWithWebView:;
+- (void).cxx_destruct;
+- (id)challenges;
+- (void)setChallenges:;
+- (id)currentURL;
+- (void)setCurrentURL:;
+@end

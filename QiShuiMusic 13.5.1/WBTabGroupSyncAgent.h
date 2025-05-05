@@ -1,0 +1,35 @@
+@interface WBTabGroupSyncAgent : NSObject
+@property (nonatomic) WBCollectionConfiguration configuration;
+@property (nonatomic) WBTabCollection tabCollection;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)saveWindowState:completionHandler:;
+- (void)deleteWindowStates:completionHandler:;
+- (void)saveBrowserState:completionHandler:;
+- (id)tabCollection;
+- (void)saveTab:completionHandler:;
+- (void)deleteTabs:completionHandler:;
+- (void)userDidAcceptCloudKitShareWithMetadata:;
+- (void)movePresenceForParticipantToTabWithUUID:;
+- (id)deviceIdentifier;
+- (void)moveTabGroup:afterTabGroup:completionHandler:;
+- (void)setTabCollection:;
+- (void)deleteTabGroup:completionHandler:;
+- (void)saveTabGroup:completionHandler:;
+- (void)_performOnTabCollectionQueue:scheduleSync:completionHandler:;
+- (void)addSyncObserver:;
+- (void)removeSyncObserver:;
+- (void)insertTabGroup:afterTabGroup:completionHandler:;
+- (id)configuration;
+- (void)updateTabs:inTabGroup:completionHandler:;
+- (void).cxx_destruct;
+- (void)insertTabs:inTabGroup:afterTab:completionHandler:;
+- (void)deleteWindowState:completionHandler:;
+- (void)acceptShareForURL:invitationTokenData:completionHandler:;
+- (void)closeWindowState:completionHandler:;
+- (void)scheduleSyncIfNeeded;
+- (id)initWithConfiguration:;
+- (void)beginSharingTabGroupWithUUID:completionHandler:;
+@end

@@ -1,0 +1,35 @@
+@interface RACSequence : RACStream
+@property (nonatomic) @ head;
+@property (nonatomic) RACSequence tail;
+@property (nonatomic) NSArray array;
+@property (nonatomic) NSEnumerator objectEnumerator;
+@property (nonatomic) RACSequence eagerSequence;
+@property (nonatomic) RACSequence lazySequence;
+- (id)bind:passingThroughValuesFromSequence:;
+- (id)eagerSequence;
+- (id)foldLeftWithStart:reduce:;
+- (id)foldRightWithStart:reduce:;
+- (id)lazySequence;
+- (id)signalWithScheduler:;
+- (id)zipWith:;
+- (id)head;
+- (id)tail;
+- (id)signal;
+- (unsigned long long)countByEnumeratingWithState:objects:count:;
+- (id)array;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)concat:;
+- (void)encodeWithCoder:;
+- (BOOL)any:;
+- (id)objectEnumerator;
+- (Class)classForCoder;
+- (BOOL)all:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)objectPassingTest:;
+- (id)bind:;
++ (id)return:;
++ (id)sequenceWithHeadBlock:tailBlock:;
++ (id)empty;
+@end

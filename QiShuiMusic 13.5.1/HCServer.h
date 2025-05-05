@@ -1,0 +1,33 @@
+@interface HCServer : NSObject
+@property (nonatomic) NSObject<OS_xpc_object> xpcConnection;
+@property (nonatomic) NSObject<OS_dispatch_queue> connectionQueue;
+@property (nonatomic) BOOL deadConnection;
+@property (nonatomic) <AXHeardServerDelegate> delegate;
+@property (nonatomic) <AXHeardServerMessageDelegate> messageDelegate;
+@property (nonatomic) BOOL isConnected;
+- (void)setConnectionQueue:;
+- (id)init;
+- (void)dealloc;
+- (id)connectionQueue;
+- (void)setDelegate:;
+- (void)resetConnection;
+- (void)setXpcConnection:;
+- (id)delegate;
+- (id)xpcConnection;
+- (void).cxx_destruct;
+- (BOOL)isConnected;
+- (void)handleReply:;
+- (void)handleMessageWithPayload:forIdentifier:;
+- (void)handleMessageError:destructive:;
+- (void)startServerWithDelegate:;
+- (void)terminateConnectionAndNotify:;
+- (BOOL)shouldRestartOnInterruption;
+- (id)setupServerIfNecessary;
+- (void)sendSynchronousMessageWithPayload:andIdentifier:;
+- (void)sendMessageWithPayload:andIdentifier:;
+- (void)startServerAndBoostPriority;
+- (id)messageDelegate;
+- (void)setMessageDelegate:;
+- (BOOL)deadConnection;
+- (void)setDeadConnection:;
+@end

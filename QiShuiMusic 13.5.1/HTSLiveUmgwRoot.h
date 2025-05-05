@@ -1,0 +1,2 @@
+@interface HTSLiveUmgwRoot : GPBRootObject
+@end

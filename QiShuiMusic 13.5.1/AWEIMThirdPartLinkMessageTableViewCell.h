@@ -1,0 +1,35 @@
+@interface AWEIMThirdPartLinkMessageTableViewCell : AWEIMUserMessageTableViewCell
+@property (nonatomic) UIView bubbleView;
+@property (nonatomic) CAShapeLayer bubbleLayer;
+@property (nonatomic) TTTAttributedLabel titleLabel;
+@property (nonatomic) UIImageView iconView;
+@property (nonatomic) TTTAttributedLabel descLabel;
+@property (nonatomic) UIImageView sourceIconView;
+@property (nonatomic) UILabel sourceTitleLabel;
+@property (nonatomic) UIView lineView;
+- (void)setBubbleLayer:;
+- (void)bubbleViewTapped:;
+- (void)configWithMessage:;
+- (id)descLabel;
+- (id)menuTargetView;
+- (void)setDescLabel:;
+- (void)setSourceIconView:;
+- (void)setSourceTitleLabel:;
+- (id)sourceTitleLabel;
+- (void)setTitleLabel:;
+- (void)layoutSubviews;
+- (id)iconView;
+- (void)setIconView:;
+- (void).cxx_destruct;
+- (id)menuItems;
+- (id)titleLabel;
+- (id)lineView;
+- (void)setLineView:;
+- (void)setupUI;
+- (id)bubbleView;
+- (void)setBubbleView:;
+- (id)sourceIconView;
+- (id)bubbleLayer;
++ (id)contentSizeWithMesasge:;
++ (id)identifier;
+@end

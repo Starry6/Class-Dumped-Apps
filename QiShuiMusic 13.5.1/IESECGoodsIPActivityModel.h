@@ -1,0 +1,32 @@
+@interface IESECGoodsIPActivityModel : MTLModel
+@property (nonatomic) double initTimeinterval;
+@property (nonatomic) double serverTime;
+@property (nonatomic) NSString slogan;
+@property (nonatomic) IESECURLModel logoURL;
+@property (nonatomic) NSString backgroundURL;
+@property (nonatomic) double startTime;
+@property (nonatomic) double endTime;
+@property (nonatomic) double currentTime;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)backgroundURL;
+- (double)initTimeinterval;
+- (void)setBackgroundURL:;
+- (void)setInitTimeinterval:;
+- (void)setServerTime:;
+- (void)setSlogan:;
+- (id)slogan;
+- (id)init;
+- (void)setStartTime:;
+- (void)setEndTime:;
+- (double)startTime;
+- (double)endTime;
+- (void).cxx_destruct;
+- (double)currentTime;
+- (double)serverTime;
+- (id)logoURL;
+- (void)setLogoURL:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

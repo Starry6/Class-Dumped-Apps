@@ -1,0 +1,31 @@
+@interface IESECGoodsCommentHeaderConfig : NSObject
+@property (nonatomic) BOOL showShareButton;
+@property (nonatomic) BOOL showAddToCartButton;
+@property (nonatomic) BOOL showMoreButton;
+@property (nonatomic) BOOL showCollectButton;
+@property (nonatomic) BOOL isCollected;
+@property (nonatomic) NSNumber shopCartCount;
+@property (nonatomic) NSString mainTitle;
+@property (nonatomic) BOOL showOldStyle;
+@property (nonatomic) BOOL hideLeftTitle;
+- (void)setIsCollected:;
+- (BOOL)hideLeftTitle;
+- (BOOL)isCollected;
+- (void)setHideLeftTitle:;
+- (void)setShopCartCount:;
+- (void)setShowAddToCartButton:;
+- (void)setShowCollectButton:;
+- (void)setShowOldStyle:;
+- (id)shopCartCount;
+- (BOOL)showAddToCartButton;
+- (BOOL)showCollectButton;
+- (BOOL)showOldStyle;
+- (id)init;
+- (BOOL)showMoreButton;
+- (void).cxx_destruct;
+- (void)setShowMoreButton:;
+- (BOOL)showShareButton;
+- (void)setShowShareButton:;
+- (id)mainTitle;
+- (void)setMainTitle:;
+@end

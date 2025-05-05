@@ -1,0 +1,38 @@
+@interface IESECSKUSpecInfo : MTLModel
+@property (nonatomic) NSString name;
+@property (nonatomic) BOOL shouldHideSpecs;
+@property (nonatomic) BOOL shouldDefualtSelect;
+@property (nonatomic) q specType;
+@property (nonatomic) BOOL hasSelectedByUser;
+@property (nonatomic) NSArray specItems;
+@property (nonatomic) BOOL isTimeSKU;
+@property (nonatomic) BOOL showBigPic;
+@property (nonatomic) BOOL showSmallPic;
+@property (nonatomic) q specMode;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)shouldHideSpecs;
+- (BOOL)hasSelectedByUser;
+- (BOOL)isTimeSKU;
+- (void)setHasSelectedByUser:;
+- (void)setShouldDefualtSelect:;
+- (void)setShouldHideSpecs:;
+- (void)setShowBigPic:;
+- (void)setShowSmallPic:;
+- (void)setSpecItems:;
+- (void)setSpecMode:;
+- (void)setSpecType:;
+- (BOOL)shouldDefualtSelect;
+- (BOOL)showBigPic;
+- (BOOL)showSmallPic;
+- (id)specItems;
+- (long long)specMode;
+- (long long)specType;
+- (void)setName:;
+- (void).cxx_destruct;
+- (id)name;
++ (id)specItemsJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

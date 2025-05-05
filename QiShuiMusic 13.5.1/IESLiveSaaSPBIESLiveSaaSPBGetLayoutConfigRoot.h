@@ -1,0 +1,2 @@
+@interface IESLiveSaaSPBIESLiveSaaSPBGetLayoutConfigRoot : GPBRootObject
+@end

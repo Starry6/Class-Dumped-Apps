@@ -1,0 +1,2 @@
+@interface JSExport : nil
+@end

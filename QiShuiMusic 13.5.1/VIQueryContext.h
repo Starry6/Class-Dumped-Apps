@@ -1,0 +1,36 @@
+@interface VIQueryContext : NSObject
+@property (nonatomic) NSString description;
+@property (nonatomic) BOOL includeLowConfidenceRegions;
+@property (nonatomic) NSString locale;
+@property (nonatomic) NSString countryCode;
+@property (nonatomic) Q queryID;
+@property (nonatomic) NSString applicationIdentifier;
+@property (nonatomic) double uiScale;
+@property (nonatomic) NSString teamID;
+@property (nonatomic) NSArray catalogIDs;
+@property (nonatomic) CLLocation location;
+@property (nonatomic) NSURL imageURL;
+@property (nonatomic) NSURL referralURL;
+@property (nonatomic) q imageType;
+@property (nonatomic) NSString featureIdentifier;
+@property (nonatomic) <MTLDevice> preferredMetalDevice;
+- (unsigned long long)queryID;
+- (id)applicationIdentifier;
+- (id)teamID;
+- (long long)imageType;
+- (id)featureIdentifier;
+- (id)countryCode;
+- (id)locale;
+- (double)uiScale;
+- (id)location;
+- (void).cxx_destruct;
+- (id)description;
+- (id)imageURL;
+- (id)copyWithZone:;
+- (id)preferredMetalDevice;
+- (id)catalogIDs;
+- (id)referralURL;
+- (id)initWithQueryID:applicationIdentifier:uiScale:teamID:catalogIDs:location:imageURL:referralURL:imageType:featureIdentifier:locale:countryCode:preferredMetalDevice:includeLowConfidenceRegions:;
+- (BOOL)includeLowConfidenceRegions;
++ (id)contextWithDictionary:error:;
+@end

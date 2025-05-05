@@ -1,0 +1,37 @@
+@interface SBSTestAutomationService : SBSAbstractSystemService
+@property (nonatomic) BOOL chamoisWindowingUIEnabled;
+@property (nonatomic) BOOL chamoisPrefersDockHidden;
+@property (nonatomic) BOOL chamoisPrefersStripHidden;
+@property (nonatomic) BOOL deviceSupportsSystemAperture;
+@property (nonatomic) NSArray systemApertureStateDump;
+- (void)setChamoisWindowingUIEnabled:;
+- (void)setReachabilityActive:;
+- (void)clearAllUserNotifications;
+- (BOOL)isChamoisWindowingUIEnabled;
+- (BOOL)deviceSupportsSystemAperture;
+- (void)addWidgetsToEachPage;
+- (void)resetToHomeScreenAnimated:;
+- (void)setAlertsEnabled:;
+- (BOOL)chamoisPrefersDockHidden;
+- (void)enterLostMode;
+- (void)setChamoisPrefersStripHidden:;
+- (void)suspendAllDisplays;
+- (void)exitLostMode;
+- (void)setAccessoryType:attached:;
+- (void)setOrientationLockEnabled:;
+- (void)countScenesForBundleIdentifier:withCompletion:;
+- (id)acquireHUDHiddenAssertionForIdentifier:;
+- (void)stashSwitcherModelToPath:;
+- (BOOL)chamoisPrefersStripHidden;
+- (void)setApplicationBundleIdentifier:blockedForScreenTime:;
+- (void)setHiddenFeaturesEnabled:;
+- (void)setMallocStackLoggingEnabled:;
+- (void)setIdleTimerEnabled:;
+- (id)acquireAssertionForReachabilityEnabled:;
+- (void)setTestRunnerRecoveryApplicationBundleIdentifier:;
+- (void)loadStashedSwitcherModelFromPath:;
+- (void)addWidgetWithIdentifier:toPage:withSizing:;
+- (id)systemApertureStateDump;
+- (void)setChamoisPrefersDockHidden:;
+- (void)addWidgetStackWithIdentifiers:toPage:withSizing:;
+@end

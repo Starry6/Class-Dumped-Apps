@@ -1,0 +1,32 @@
+@interface IESECLiveGoodsBackGroundLeftModel : MTLModel
+@property (nonatomic) NSString iconUrl;
+@property (nonatomic) NSNumber iconWidth;
+@property (nonatomic) NSNumber iconHeight;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString titleColor;
+@property (nonatomic) NSNumber titleSize;
+@property (nonatomic) NSString jumpURL;
+@property (nonatomic) NSDictionary extra;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)jumpURL;
+- (id)iconUrl;
+- (void)setExtra:;
+- (void)setIconUrl:;
+- (void)setJumpURL:;
+- (void)setTitleSize:;
+- (id)extra;
+- (id)iconWidth;
+- (void)setTitleColor:;
+- (void)setTitle:;
+- (id)titleColor;
+- (id)title;
+- (void).cxx_destruct;
+- (id)iconHeight;
+- (id)titleSize;
+- (void)setIconWidth:;
+- (void)setIconHeight:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

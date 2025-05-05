@@ -1,0 +1,38 @@
+@interface TTSettingsBrowserViewController : UIViewController
+@property (nonatomic) UITableView tableView;
+@property (nonatomic) UISearchBar searchBar;
+@property (nonatomic) UISearchDisplayController searchDC;
+@property (nonatomic) NSDictionary settings;
+@property (nonatomic) NSArray settingsKeys;
+@property (nonatomic) NSArray searchKeys;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)addActionFired:;
+- (void)cancelActionFired:;
+- (id)searchDC;
+- (id)searchKeys;
+- (void)setSearchDC:;
+- (void)setSearchKeys:;
+- (void)setSettingsKeys:;
+- (void)showAlertView:;
+- (id)settingsKeys;
+- (void)dealloc;
+- (id)settings;
+- (id)tableView:cellForRowAtIndexPath:;
+- (void)setSettings:;
+- (void)setSearchBar:;
+- (id)searchBar;
+- (void)tableView:didSelectRowAtIndexPath:;
+- (void).cxx_destruct;
+- (void)setTableView:;
+- (id)tableView;
+- (long long)tableView:numberOfRowsInSection:;
+- (void)viewDidLoad;
+- (long long)numberOfSectionsInTableView:;
+- (BOOL)searchDisplayController:shouldReloadTableForSearchString:;
+- (void)settingsDidUpdate:;
++ (id)descriptionForValue:;
++ (void)showBrowserViewControllerInViewController:;
+@end

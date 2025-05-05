@@ -1,0 +1,37 @@
+@interface CPPointOfInterestTemplate : CPTemplate
+@property (nonatomic) CPPointsOfInterestEntity poiEntity;
+@property (nonatomic) NSArray pointsOfInterest;
+@property (nonatomic) NAFuture templateProviderFuture;
+@property (nonatomic) NSString title;
+@property (nonatomic) Q selectedIndex;
+@property (nonatomic) <CPPointOfInterestTemplateDelegate> pointOfInterestDelegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSArray leadingNavigationBarButtons;
+@property (nonatomic) NSArray trailingNavigationBarButtons;
+@property (nonatomic) CPBarButton backButton;
+- (id)entity;
+- (unsigned long long)selectedIndex;
+- (void)setTitle:;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (id)title;
+- (void)performUpdate;
+- (void).cxx_destruct;
+- (void)setSelectedIndex:;
+- (void)handleActionForControlIdentifier:;
+- (void)handleMapRegionDidChange:;
+- (void)handleDidSelectPointOfInterestWithIdentifier:;
+- (id)pointsOfInterest;
+- (void)setPointsOfInterest:;
+- (id)initWithTitle:pointsOfInterest:selectedIndex:;
+- (void)setPointsOfInterest:selectedIndex:;
+- (id)_pointOfInterestWithIdentifier:;
+- (id)pointOfInterestDelegate;
+- (void)setPointOfInterestDelegate:;
+- (id)poiEntity;
+- (void)setPoiEntity:;
++ (BOOL)supportsSecureCoding;
+@end

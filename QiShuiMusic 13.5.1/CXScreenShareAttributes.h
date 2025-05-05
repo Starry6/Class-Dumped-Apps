@@ -1,0 +1,36 @@
+@interface CXScreenShareAttributes : NSObject
+@property (nonatomic) NSNumber frameRate;
+@property (nonatomic) NSNumber displayID;
+@property (nonatomic) BOOL windowed;
+@property (nonatomic) NSUUID windowUUID;
+@property (nonatomic) q deviceFamily;
+@property (nonatomic) q style;
+@property (nonatomic) NSNumber displayScale;
+@property (nonatomic) NSNumber scaleFactor;
+@property (nonatomic) NSValue originalResolution;
+- (id)displayID;
+- (long long)deviceFamily;
+- (void)setFrameRate:;
+- (id)frameRate;
+- (id)scaleFactor;
+- (void)setWindowed:;
+- (void)setScaleFactor:;
+- (void)setStyle:;
+- (id)initWithCoder:;
+- (void)setDisplayID:;
+- (id)displayScale;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (long long)style;
+- (id)customDescription;
+- (void)setDisplayScale:;
+- (id)copyWithZone:;
+- (id)windowUUID;
+- (id)originalResolution;
+- (void)setOriginalResolution:;
+- (id)sanitizedCopyWithZone:;
+- (BOOL)isWindowed;
+- (void)setDeviceFamily:;
+- (void)setWindowUUID:;
++ (BOOL)supportsSecureCoding;
+@end

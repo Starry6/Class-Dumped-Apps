@@ -1,0 +1,31 @@
+@interface IESLiveNativeAppEntranceStageMachine : NSObject
+@property (nonatomic) NSString appID;
+@property (nonatomic) Q linkType;
+@property (nonatomic) Q currentStage;
+@property (nonatomic) double startTime;
+@property (nonatomic) NSString currentStageDesc;
+@property (nonatomic) NSString stageExtra;
+@property (nonatomic) NSMutableArray stageArray;
+- (id)buildMonitorModel;
+- (id)currentStageDesc;
+- (id)currentStageInString;
+- (id)entranceSourceInString;
+- (id)initWithAppID:linkType:;
+- (id)nextStage:stageDesc:extra:;
+- (void)setCurrentStage:;
+- (void)setCurrentStageDesc:;
+- (void)setStageArray:;
+- (void)setStageExtra:;
+- (id)stageArray;
+- (id)stageDescResloved;
+- (id)stageExtra;
+- (id)stopMachine;
+- (void)setStartTime:;
+- (void)setLinkType:;
+- (double)startTime;
+- (void)setAppID:;
+- (id)appID;
+- (void).cxx_destruct;
+- (unsigned long long)linkType;
+- (unsigned long long)currentStage;
+@end

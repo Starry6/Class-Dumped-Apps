@@ -1,0 +1,30 @@
+@interface STListData : NSObject
+@property (nonatomic) Q count;
+@property (nonatomic) NSArray objects;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (id)dataByApplyingDiff:;
+- (id)succinctDescriptionBuilder;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)debugDescription;
+- (id)diffFromData:;
+- (id)debugDescriptionWithMultilinePrefix:;
+- (void)encodeWithCoder:;
+- (id)objects;
+- (void).cxx_destruct;
+- (id)initWithObjects:;
+- (void)enumerateObjectsUsingBlock:;
+- (id)succinctDescription;
+- (id)description;
+- (id)mutableCopyWithZone:;
+- (unsigned long long)count;
+- (id)descriptionBuilderWithMultilinePrefix:;
+- (BOOL)isEqual:;
+- (id)descriptionWithMultilinePrefix:;
+- (id)copyWithZone:;
++ (BOOL)supportsSecureCoding;
+@end

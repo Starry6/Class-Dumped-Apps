@@ -1,0 +1,33 @@
+@interface VKNavContext : NSObject
+@property (nonatomic) GEOComposedRoute route;
+@property (nonatomic) GEORouteMatch routeMatch;
+@property (nonatomic) Q currentStepIndex;
+@property (nonatomic) Q groupedManeuverCount;
+@property (nonatomic) NSArray groupedManeuverCounts;
+@property (nonatomic) Q navigationCameraHeadingOverride;
+- (void)removeObserver:;
+- (id)init;
+- (void)addObserver:;
+- (id)route;
+- (id)routeMatch;
+- (void)setRouteMatch:;
+- (void).cxx_destruct;
+- (id).cxx_construct;
+- (void)setCurrentStepIndex:;
+- (void)updateWithNewRoute:currentStepIndex:;
+- (unsigned long long)groupedManeuverCount;
+- (void)clearPointsToFrame;
+- (void)clearPointsToFrameOfType:;
+- (void)addPointToFrame:ofType:;
+- (void)enumeratePointsToFrameOfType:usingBlock:;
+- (void)enumeratePointsToFrameUsingBlock:;
+- (void)_notifyObserversStateChanged;
+- (void)setNavigationCameraHeadingOverride:;
+- (unsigned long long)navigationCameraHeadingOverride;
+- (void)clearAdditionalRoutesToFrame;
+- (void)addRouteToFrame:divergenceCoord:convergenceCoord:;
+- (void)enumerateAdditionalRoutesToFrameUsingBlock:;
+- (unsigned long long)currentStepIndex;
+- (id)groupedManeuverCounts;
+- (void)setGroupedManeuverCounts:;
+@end

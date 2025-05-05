@@ -1,0 +1,32 @@
+@interface WBSPasswordWarningManager : NSObject
+@property (nonatomic) WBSPasswordAuditor passwordAuditor;
+@property (nonatomic) WBSPasswordEvaluator passwordEvaluator;
+@property (nonatomic) q numberOfNonHiddenWarningsWithSpecifiedPriority;
+@property (nonatomic) BOOL hasUnacknowledgedHighPriorityWarnings;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (id)passwordEvaluator;
+- (id)passwordAuditor;
+- (void)getWarningForSavedAccount:completionHandler:;
+- (id)initWithSavedAccountStore:autoFillQuirksManager:userDefaults:highLevelDomainsProvider:;
+- (void)getAllWarningsForcingUpdate:completionHandler:;
+- (void)removeWarningForSavedAccount:;
+- (BOOL)hasUnacknowledgedHighPriorityWarnings;
+- (long long)numberOfNonHiddenWarningsWithSpecifiedPriority;
+- (void)acknowledgeHighPriorityWarnings;
+- (void)preWarmWarningsWithCompletionHandler:;
+- (id)_warningForSavedAccount:breachResultRecord:;
+- (id)_scoredWarningForSavedAccount:topFraudTargets:contextKitCategories:breachResultRecord:;
+- (unsigned long long)_issuesForPassword:withWeakPasswordEvaluation:breachResultRecord:;
+- (long long)_scoreForSavedAccount:issueTypes:topFraudTargets:contextKitCategories:;
+- (BOOL)_historyContainsItemForDomain:;
+- (id)_passwordBreachHelperProxy;
+- (void)_getBreachResultRecordsForPasswords:startSessionIfNecessary:withCompletionHandler:;
+- (void)_scoreWarnings:contextKitCategoryMap:topFraudTargets:;
+- (void)_sortWarningsBySeverity:intoHighPriorityBucket:intoStandardPriorityBucket:unspecifiedSeverityBucket:savedAccountMap:highPriorityWarningHashes:;
+- (void)_updateUserDefaultsWithWarningHashes:;
+@end

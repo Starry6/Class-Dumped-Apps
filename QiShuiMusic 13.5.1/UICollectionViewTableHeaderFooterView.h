@@ -1,0 +1,34 @@
+@interface UICollectionViewTableHeaderFooterView : UICollectionReusableView
+@property (nonatomic) UITableViewHeaderFooterView tableViewHeaderFooterView;
+@property (nonatomic) UICollectionViewTableLayout tableLayout;
+@property (nonatomic) UICollectionViewTableLayoutAttributes tableAttributes;
+@property (nonatomic) UIColor tintColor;
+@property (nonatomic) UILabel textLabel;
+@property (nonatomic) UILabel detailTextLabel;
+@property (nonatomic) UIView contentView;
+@property (nonatomic) UIView backgroundView;
+@property (nonatomic) BOOL floating;
+- (BOOL)floating;
+- (void)_commonInit;
+- (id)initWithReuseIdentifier:;
+- (id)backgroundView;
+- (id)textLabel;
+- (id)contentView;
+- (void)setFloating:;
+- (void)layoutSubviews;
+- (id)preferredLayoutAttributesFittingAttributes:;
+- (id)tintColor;
+- (void)prepareForReuse;
+- (id)initWithCoder:;
+- (id)initWithFrame:;
+- (void)encodeWithCoder:;
+- (void)applyLayoutAttributes:;
+- (void).cxx_destruct;
+- (void)setTintColor:;
+- (void)setBackgroundView:;
+- (id)_tableLayout;
+- (id)_tableAttributes;
+- (id)detailTextLabel;
+- (id)tableViewHeaderFooterView;
+- (void)setTableViewHeaderFooterView:;
+@end

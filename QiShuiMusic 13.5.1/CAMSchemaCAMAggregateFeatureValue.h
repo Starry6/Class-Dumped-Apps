@@ -1,0 +1,33 @@
+@interface CAMSchemaCAMAggregateFeatureValue : SISchemaInstrumentationMessage
+@property (nonatomic) double mean;
+@property (nonatomic) BOOL hasMean;
+@property (nonatomic) double variance;
+@property (nonatomic) BOOL hasVariance;
+@property (nonatomic) I numInteractions;
+@property (nonatomic) BOOL hasNumInteractions;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (double)mean;
+- (void)setMean:;
+- (void)setHasMean:;
+- (BOOL)hasMean;
+- (void)setVariance:;
+- (void)setHasVariance:;
+- (BOOL)hasVariance;
+- (double)variance;
+- (void)deleteMean;
+- (void)deleteVariance;
+- (void)setNumInteractions:;
+- (BOOL)hasNumInteractions;
+- (void)setHasNumInteractions:;
+- (void)deleteNumInteractions;
+- (unsigned int)numInteractions;
+@end

@@ -1,0 +1,38 @@
+@interface CLSQuestionStep : CLSSurveyStep
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) q questionType;
+@property (nonatomic) NSString questionText;
+@property (nonatomic) CLSAnswerFormat answerFormat;
+@property (nonatomic) q displayOrder;
+@property (nonatomic) NSArray assets;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (id)assets;
+- (void)setDisplayOrder:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (long long)displayOrder;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (long long)questionType;
+- (void)setQuestionType:;
+- (void)mergeWithObject:;
+- (void)addAsset:;
+- (void)removeAsset:;
+- (id)questionText;
+- (id)initWithQuestionText:answerFormat:;
+- (void)setQuestionText:;
+- (id)answerFormat;
+- (void)setAnswerFormat:;
+- (BOOL)assetsEqual:;
++ (BOOL)supportsSecureCoding;
++ (id)relations;
+@end

@@ -1,0 +1,30 @@
+@interface IESECLStackContainerView : UIView
+@property (nonatomic) UIStackView stackView;
+@property (nonatomic) double spacing;
+@property (nonatomic) q alignment;
+@property (nonatomic) q distribution;
+@property (nonatomic) BOOL alignRight;
+@property (nonatomic) @? onLayoutBlock;
+- (BOOL)alignRight;
+- (id)initWithSubViews:;
+- (id)onLayoutBlock;
+- (void)removeAllArrangedSubviews;
+- (void)setAlignRight:;
+- (void)setOnLayoutBlock:;
+- (void)setupWithSubViews:;
+- (id)subViews;
+- (void)updateStackConstraints;
+- (long long)distribution;
+- (void)setDistribution:;
+- (double)spacing;
+- (void)setSpacing:;
+- (void)setAlignment:;
+- (void)setStackView:;
+- (void)addArrangedSubview:;
+- (id)stackView;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (long long)alignment;
+- (void)insertArrangedSubview:atIndex:;
+- (void)removeArrangedSubview:;
+@end

@@ -1,0 +1,33 @@
+@interface HTSLiveGiftStore : NSObject
+@property (nonatomic) NSArray giftGroup;
+@property (nonatomic) <IESLiveRoomServiceAdapter> roomModel;
+@property (nonatomic) NSArray giftModels;
+@property (nonatomic) <HTSLiveGiftViewReactions> viewReactions;
+@property (nonatomic) BOOL isAnchor;
+@property (nonatomic) HTSLiveUser toUser;
+@property (nonatomic) HTSEventContext trackContext;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)diamondHasUpdated;
+- (void)didSetAttachingDIContext;
+- (id)giftGroup;
+- (id)giftModels;
+- (id)initWithRoomModel:;
+- (id)roomModel;
+- (void)setGiftGroup:;
+- (void)setGiftModels:;
+- (void)setIsAnchor:;
+- (void)setRoomModel:;
+- (void)setToUser:;
+- (void)setTrackContext:;
+- (void)setViewReactions:;
+- (id)trackContext;
+- (void)updateWalletModel;
+- (id)viewReactions;
+- (BOOL)isAnchor;
+- (void)setup;
+- (void).cxx_destruct;
+- (id)toUser;
+@end

@@ -1,0 +1,31 @@
+@interface AMSRatingsProviderTask : AMSTask
+@property (nonatomic) Q mediaType;
+@property (nonatomic) NSString storeFront;
+@property (nonatomic) <AMSBagProtocol> bag;
+@property (nonatomic) NSString clientIdentifier;
+@property (nonatomic) Q useCase;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (unsigned long long)mediaType;
+- (unsigned long long)useCase;
+- (void).cxx_destruct;
+- (id)storeFront;
+- (id)bag;
+- (id)clientIdentifier;
+- (id)performTask;
+- (id)initForAllMediaWithStoreFront:clientIdentifier:useCase:bag:;
+- (id)initForAllMediaWithClientIdentifier:useCase:bag:;
+- (id)initWithMediaType:clientIdentifier:bag:;
+- (id)initWithMediaType:storeFront:clientIdentifier:bag:;
+- (id)resultWithCachedData:;
+- (id)_urlForMediaType:error:;
+- (id)_appQueryItems;
+- (id)_commonQueryItems;
++ (id)createBagForSubProfile;
++ (id)bagSubProfileVersion;
++ (id)bagSubProfile;
++ (id)bagKeySet;
++ (id)ratingWithValue:mediaType:storeFront:clientIdentifier:bag:;
+@end

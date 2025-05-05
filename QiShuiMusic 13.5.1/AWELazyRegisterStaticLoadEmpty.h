@@ -1,0 +1,2 @@
+@interface AWELazyRegisterStaticLoadEmpty : NSObject
+@end

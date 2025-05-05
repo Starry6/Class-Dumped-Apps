@@ -1,0 +1,36 @@
+@interface BisBehavToken : NSObject
+@property (nonatomic) NSString token;
+@property (nonatomic) NSString type;
+@property (nonatomic) NSString sampleMode;
+@property (nonatomic) NSString uid;
+@property (nonatomic) NSString apdid;
+@property (nonatomic) NSString appid;
+@property (nonatomic) NSString behid;
+@property (nonatomic) NSString bizid;
+@property (nonatomic) NSString verifyid;
+@property (nonatomic) NSString vtoken;
+@property (nonatomic) NSString apdidToken;
+- (id)apdid;
+- (id)apdidToken;
+- (id)behid;
+- (id)bizid;
+- (void)setApdid:;
+- (void)setApdidToken:;
+- (void)setBehid:;
+- (void)setBizid:;
+- (void)setVerifyid:;
+- (void)setVtoken:;
+- (id)verifyid;
+- (id)vtoken;
+- (id)token;
+- (id)uid;
+- (void)setUid:;
+- (void)setType:;
+- (void)setToken:;
+- (id)type;
+- (void).cxx_destruct;
+- (id)appid;
+- (void)setAppid:;
+- (id)sampleMode;
+- (void)setSampleMode:;
+@end

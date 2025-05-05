@@ -1,0 +1,33 @@
+@interface IESECLiveReplayAuthorModel : MTLModel
+@property (nonatomic) q followStatus;
+@property (nonatomic) NSString nickname;
+@property (nonatomic) NSString userID;
+@property (nonatomic) NSString secUserID;
+@property (nonatomic) IESECLiveImageURLModel avatarThumb;
+@property (nonatomic) NSString schema;
+@property (nonatomic) NSNumber roomID;
+@property (nonatomic) q liveStatus;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setAvatarThumb:;
+- (id)avatarThumb;
+- (long long)followStatus;
+- (id)secUserID;
+- (void)setFollowStatus:;
+- (void)setLiveStatus:;
+- (void)setSecUserID:;
+- (id)schema;
+- (id)userID;
+- (void)setSchema:;
+- (id)nickname;
+- (void).cxx_destruct;
+- (void)setNickname:;
+- (void)setUserID:;
+- (long long)liveStatus;
+- (id)roomID;
+- (void)setRoomID:;
++ (id)createAuthorWithModel:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

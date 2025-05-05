@@ -1,0 +1,30 @@
+@interface BDUGFlowCommonParamsModel : NSObject
+@property (nonatomic) NSString appId;
+@property (nonatomic) NSString deviceId;
+@property (nonatomic) NSString appName;
+@property (nonatomic) NSString channelId;
+@property (nonatomic) NSString clientId;
+@property (nonatomic) BOOL isLogin;
+@property (nonatomic) NSString province;
+@property (nonatomic) NSString city;
+@property (nonatomic) q reportThreshold;
+- (long long)reportThreshold;
+- (id)province;
+- (void)setIsLogin:;
+- (void)setProvince:;
+- (void)setReportThreshold:;
+- (id)city;
+- (id)deviceId;
+- (void)setDeviceId:;
+- (id)clientId;
+- (id)appId;
+- (void)setAppId:;
+- (void)setAppName:;
+- (id)appName;
+- (void).cxx_destruct;
+- (void)setCity:;
+- (void)setClientId:;
+- (id)channelId;
+- (void)setChannelId:;
+- (BOOL)isLogin;
+@end

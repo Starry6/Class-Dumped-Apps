@@ -1,0 +1,34 @@
+@interface AMSPurchaseSIWATask : AMSPurchaseTask
+@property (nonatomic) AMSPurchaseSIWA purchaseSIWA;
+@property (nonatomic) AKCredentialRequestContext requestContext;
+@property (nonatomic) NSUUID continuationRequestIdentifier;
+@property (nonatomic) NSError siwaError;
+@property (nonatomic) BOOL purchaseRequiresAuthorization;
+@property (nonatomic) AKAuthorization authorization;
+- (id)authorization;
+- (void)setRequestContext:;
+- (void)setAuthorization:;
+- (id)requestContext;
+- (void).cxx_destruct;
+- (id)performPreauthenticate;
+- (id)preauthenticateOptions;
+- (id)initWithPurchaseSIWA:bag:;
+- (void)performPreActionRequestForTaskInfo:requiresAuthorization:error:;
+- (id)performPurchaseSIWA;
+- (id)_beginAuthorization;
+- (id)_continueAuthorization;
+- (id)_cancelAuthorization;
+- (void)_updateRequestContextWithPurchaseInfo:;
+- (BOOL)_beginAuthorizationWasPerformed;
+- (BOOL)_siwaDidCommence;
+- (BOOL)_willRequireAskToBuyForTaskInfo:;
+- (id)newAuthorizationController;
+- (id)purchaseSIWA;
+- (void)setPurchaseSIWA:;
+- (id)continuationRequestIdentifier;
+- (void)setContinuationRequestIdentifier:;
+- (id)siwaError;
+- (void)setSiwaError:;
+- (BOOL)purchaseRequiresAuthorization;
+- (void)setPurchaseRequiresAuthorization:;
+@end

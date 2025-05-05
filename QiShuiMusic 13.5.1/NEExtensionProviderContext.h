@@ -1,0 +1,31 @@
+@interface NEExtensionProviderContext : NSExtensionContext
+@property (nonatomic) NSString extensionPoint;
+@property (nonatomic) # requiredProviderSuperClass;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)dealloc;
+- (id)_principalObject;
+- (void)dispose;
+- (void)wake;
+- (void)observeValueForKeyPath:ofObject:change:context:;
+- (id)initWithProvider:;
+- (void)startWithOptions:completionHandler:;
+- (void)sleepWithCompletionHandler:;
+- (id)extensionPoint;
+- (void)cancelWithError:;
+- (void).cxx_destruct;
+- (id)description;
+- (void)createWithCompletionHandler:;
+- (void)setConfiguration:extensionIdentifier:;
+- (void)stopWithReason:;
+- (void)validateWithCompletionHandler:;
+- (void)startedWithError:;
+- (void)displayMessage:message:completionHandler:;
+- (Class)requiredProviderSuperClass;
+- (void)completeSession;
+- (void)dropProvider;
++ (id)_extensionAuxiliaryHostProtocol;
++ (id)_extensionAuxiliaryVendorProtocol;
+@end

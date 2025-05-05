@@ -1,0 +1,35 @@
+@interface FBSceneObserver : NSObject
+@property (nonatomic) <FBSceneObserver> observer;
+@property (nonatomic) <FBSceneDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)scene:didApplyUpdateWithContext:;
+- (void)scene:didUpdateClientSettingsWithDiff:oldClientSettings:transitionContext:;
+- (void)scene:clientDidConnect:;
+- (void)scene:didPrepareUpdateWithContext:;
+- (void)sceneContentStateDidChange:;
+- (void)sceneDidActivate:;
+- (void)scene:didReceiveActions:;
+- (void)sceneDidInvalidate:;
+- (void)sceneDidDeactivate:withError:;
+- (void)scene:willUpdateSettings:withTransitionContext:;
+- (id)succinctDescriptionBuilder;
+- (unsigned long long)hash;
+- (id)_initWithObserver:;
+- (void)sceneWillDeactivate:withError:;
+- (id)initWithObserver:;
+- (void)scene:didCompleteUpdateWithContext:error:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)succinctDescription;
+- (id)description;
+- (id)initWithDelegate:;
+- (BOOL)isDelegate;
+- (BOOL)delegateHandlesActions;
+- (id)descriptionBuilderWithMultilinePrefix:;
+- (BOOL)isEqual:;
+- (id)observer;
+- (id)descriptionWithMultilinePrefix:;
+@end

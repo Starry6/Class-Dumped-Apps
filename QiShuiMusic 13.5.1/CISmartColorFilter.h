@@ -1,0 +1,30 @@
+@interface CISmartColorFilter : CIFilter
+@property (nonatomic) CIImage inputImage;
+@property (nonatomic) NSNumber inputVibrancy;
+@property (nonatomic) NSNumber inputContrast;
+@property (nonatomic) NSNumber inputCast;
+@property (nonatomic) NSNumber inputUseCube;
+@property (nonatomic) @ inputUseCubeColorSpace;
+- (void)setValue:forKey:;
+- (void)dealloc;
+- (id)inputUseCube;
+- (void)setInputUseCubeColorSpace:;
+- (id)inputUseCubeColorSpace;
+- (id)inputContrast;
+- (id)inputImage;
+- (void)setInputUseCube:;
+- (void)setInputImage:;
+- (void)setInputContrast:;
+- (BOOL)_isIdentity;
+- (id)outputImage;
+- (id)_kernelCPos;
+- (id)_kernelCNeg;
+- (id)_kernelV_gt1;
+- (id)_kernelV_lt1;
+- (id)_kernelCast;
+- (id)inputVibrancy;
+- (void)setInputVibrancy:;
+- (id)inputCast;
+- (void)setInputCast:;
++ (id)customAttributes;
+@end

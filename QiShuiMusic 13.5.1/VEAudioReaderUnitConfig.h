@@ -1,0 +1,37 @@
+@interface VEAudioReaderUnitConfig : NSObject
+@property (nonatomic) BOOL useForPlayer;
+@property (nonatomic) BOOL enableMultiTrack;
+@property (nonatomic) BOOL disableDurationCheck;
+@property (nonatomic) BOOL isRecordingScenes;
+@property (nonatomic) BOOL useRealAudioDuration;
+@property (nonatomic) I processFrameCount;
+@property (nonatomic) BOOL disableVideoAssets;
+@property (nonatomic) BOOL disableTimeoutSkip;
+@property (nonatomic) BOOL disableAVAudioCheck;
+@property (nonatomic) <VEAudioPlayerProtocol> audioQueueUnit;
+@property (nonatomic) {AudioStreamBasicDescription=dIIIIIIII} asbd;
+- (id)audioQueueUnit;
+- (BOOL)disableAVAudioCheck;
+- (BOOL)disableDurationCheck;
+- (BOOL)disableTimeoutSkip;
+- (BOOL)disableVideoAssets;
+- (BOOL)enableMultiTrack;
+- (BOOL)isRecordingScenes;
+- (unsigned int)processFrameCount;
+- (void)setAudioQueueUnit:;
+- (void)setDisableAVAudioCheck:;
+- (void)setDisableDurationCheck:;
+- (void)setDisableTimeoutSkip:;
+- (void)setDisableVideoAssets:;
+- (void)setEnableMultiTrack:;
+- (void)setIsRecordingScenes:;
+- (void)setProcessFrameCount:;
+- (void)setUseForPlayer:;
+- (void)setUseRealAudioDuration:;
+- (BOOL)useForPlayer;
+- (BOOL)useRealAudioDuration;
+- (id)init;
+- (void).cxx_destruct;
+- (id)asbd;
+- (void)setAsbd:;
+@end

@@ -1,0 +1,2 @@
+@interface IESLiveSaaSPBIESLiveSaaSPBChatCarnivalRoot : GPBRootObject
+@end

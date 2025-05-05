@@ -1,0 +1,2 @@
+@interface SFNullCardSection : SFCardSection
+@end

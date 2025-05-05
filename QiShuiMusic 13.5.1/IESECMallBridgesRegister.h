@@ -1,0 +1,30 @@
+@interface IESECMallBridgesRegister : NSObject
+@property (nonatomic) <IESECMallXBridgeRegisterDelegate> delegate;
+@property (nonatomic) NSDictionary pageXBridges;
+- (id)popupSubmitTask;
+- (id)anchorPendantDismiss;
+- (id)anchorPendantVisibility;
+- (id)categoryImplementXBridges;
+- (id)closeHalfMall;
+- (id)commonImpression;
+- (id)currentPageXBridges;
+- (id)currentPageXBridgesMap;
+- (id)currentPageXBridgesWithInstanceBridges:;
+- (id)getCachedApiResponseMethod;
+- (id)getFeedDataMethod;
+- (id)getHalfMallState;
+- (id)getRecommendParams;
+- (id)lottieMountMethod;
+- (id)mallAnchorPendantShowMethod;
+- (id)mallGetCardPosition;
+- (id)mallPageXBridges;
+- (id)negFeedbackClickMethod;
+- (id)pageXBridges;
+- (id)popupDismiss;
+- (void)setPageXBridges:;
+- (id)updateMallFilters;
+- (void)setDelegate:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)initWithDelegate:;
+@end

@@ -1,0 +1,35 @@
+@interface USPSchemaUSPClientEventMetadata : SISchemaInstrumentationMessage
+@property (nonatomic) SISchemaUUID uspId;
+@property (nonatomic) BOOL hasUspId;
+@property (nonatomic) USPSchemaUSPMeasurementContext context;
+@property (nonatomic) BOOL hasContext;
+@property (nonatomic) SISchemaUUID sutFingerprint;
+@property (nonatomic) BOOL hasSutFingerprint;
+@property (nonatomic) NSData jsonData;
+- (BOOL)hasContext;
+- (id)initWithJSON:;
+- (id)context;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void)deleteContext;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (void)setHasContext:;
+- (id)dictionaryRepresentation;
+- (void)setContext:;
+- (BOOL)isEqual:;
+- (BOOL)hasUspId;
+- (void)deleteUspId;
+- (BOOL)hasSutFingerprint;
+- (void)deleteSutFingerprint;
+- (id)uspId;
+- (void)setUspId:;
+- (id)sutFingerprint;
+- (void)setSutFingerprint:;
+- (void)setHasUspId:;
+- (void)setHasSutFingerprint:;
+@end

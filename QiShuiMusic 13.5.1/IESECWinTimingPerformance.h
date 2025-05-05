@@ -1,0 +1,36 @@
+@interface IESECWinTimingPerformance : NSObject
+@property (nonatomic) double pageShowWithLynxT;
+@property (nonatomic) double pageShowWithLynxSsrT;
+@property (nonatomic) q lastLynxCardType;
+@property (nonatomic) BOOL isLastLynxCardPreload;
+@property (nonatomic) NSDictionary lastLynxCardResPerf;
+@property (nonatomic) BOOL hasPerfReport;
+@property (nonatomic) BOOL hasPerfLynxReport;
+@property (nonatomic) BOOL isLynxTimeOut;
+- (id)PerfInfoDict:;
+- (id)getPerfCategory;
+- (id)getPerfMetric;
+- (BOOL)hasPerfLynxReport;
+- (BOOL)hasPerfReport;
+- (BOOL)isLastLynxCardPreload;
+- (BOOL)isLynxTimeOut;
+- (id)lastLynxCardResPerf;
+- (long long)lastLynxCardType;
+- (BOOL)lynxCardDidLoad:perfInfo:isUpdate:isPreloader:;
+- (void)lynxCardWillLoad:isUpdate:;
+- (id)lynxCards:;
+- (double)pageShowWithLynxSsrT;
+- (double)pageShowWithLynxT;
+- (void)setHasPerfLynxReport:;
+- (void)setHasPerfReport:;
+- (void)setIsLastLynxCardPreload:;
+- (void)setIsLynxTimeOut:;
+- (void)setLastLynxCardResPerf:;
+- (void)setLastLynxCardType:;
+- (void)setPageShowWithLynxSsrT:;
+- (void)setPageShowWithLynxT:;
+- (BOOL)shouldReportPerfLynxRender;
+- (id)init;
+- (void).cxx_destruct;
++ (id)getLynxCategoryWithPerfInfoDict:;
+@end

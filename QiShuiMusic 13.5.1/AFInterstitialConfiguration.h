@@ -1,0 +1,32 @@
+@interface AFInterstitialConfiguration : NSObject
+@property (nonatomic) q style;
+@property (nonatomic) NSString languageCode;
+@property (nonatomic) q gender;
+@property (nonatomic) NSString recordRoute;
+@property (nonatomic) BOOL isVoiceTrigger;
+@property (nonatomic) BOOL isDucking;
+@property (nonatomic) BOOL isTwoShot;
+@property (nonatomic) Q speechEndHostTime;
+- (id)init;
+- (long long)gender;
+- (id)languageCode;
+- (id)mutatedCopyWithMutator:;
+- (id)recordRoute;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)_descriptionWithIndent:;
+- (id)initWithBuilder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (long long)style;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)isVoiceTrigger;
+- (id)initWithStyle:languageCode:gender:recordRoute:isVoiceTrigger:isDucking:isTwoShot:speechEndHostTime:;
+- (BOOL)isDucking;
+- (BOOL)isTwoShot;
+- (unsigned long long)speechEndHostTime;
++ (id)newWithBuilder:;
++ (BOOL)supportsSecureCoding;
+@end

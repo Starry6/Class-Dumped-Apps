@@ -1,0 +1,2 @@
+@interface PHCloudSharedPhoto : PHAsset
+@end

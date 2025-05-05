@@ -1,0 +1,33 @@
+@interface ASRSchemaASRAppLanguageModelLoadFailed : SISchemaInstrumentationMessage
+@property (nonatomic) NSInteger reason;
+@property (nonatomic) BOOL hasReason;
+@property (nonatomic) Q loadTimeInNs;
+@property (nonatomic) BOOL hasLoadTimeInNs;
+@property (nonatomic) Q foregroundCheckTimeInNs;
+@property (nonatomic) BOOL hasForegroundCheckTimeInNs;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (int)reason;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void)setReason:;
+- (BOOL)hasReason;
+- (void)setHasReason:;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)deleteReason;
+- (void)setLoadTimeInNs:;
+- (BOOL)hasLoadTimeInNs;
+- (void)setHasLoadTimeInNs:;
+- (void)deleteLoadTimeInNs;
+- (void)setForegroundCheckTimeInNs:;
+- (BOOL)hasForegroundCheckTimeInNs;
+- (void)setHasForegroundCheckTimeInNs:;
+- (void)deleteForegroundCheckTimeInNs;
+- (unsigned long long)loadTimeInNs;
+- (unsigned long long)foregroundCheckTimeInNs;
+@end

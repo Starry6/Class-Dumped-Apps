@@ -1,0 +1,34 @@
+@interface HMDCrashBinaryImage : HMDCrashModel
+@property (nonatomic) NSString path;
+@property (nonatomic) Q base;
+@property (nonatomic) Q size;
+@property (nonatomic) NSArray segments;
+@property (nonatomic) NSString uuid;
+@property (nonatomic) NSString arch;
+@property (nonatomic) BOOL load;
+@property (nonatomic) BOOL isEnvAbnormal;
+@property (nonatomic) BOOL isMain;
+- (id)arch;
+- (BOOL)containingAddress:;
+- (BOOL)isEnvAbnormal;
+- (void)setArch:;
+- (void)setIsEnvAbnormal:;
+- (void)setIsMain:;
+- (void)setLoad:;
+- (id)path;
+- (id)segments;
+- (void)updateWithDictionary:;
+- (BOOL)load;
+- (void)setBase:;
+- (id)uuid;
+- (void)setPath:;
+- (void)setUuid:;
+- (unsigned long long)base;
+- (unsigned long long)hash;
+- (void)setSegments:;
+- (void).cxx_destruct;
+- (void)setSize:;
+- (BOOL)isEqual:;
+- (unsigned long long)size;
+- (BOOL)isMain;
+@end

@@ -1,0 +1,35 @@
+@interface IESIMTabContentViewController : UIViewController
+@property (nonatomic) IESIMBaseListSectionViewModel contentSectionViewModel;
+@property (nonatomic) NSMutableDictionary itemViewControllerDictionary;
+@property (nonatomic) q currentIndex;
+@property (nonatomic) <IESIMTabContentViewControllerDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)cleanTabContent;
+- (void)addItemViewController:atIndex:;
+- (id)contentSectionViewModel;
+- (void)dataSourceDidCreateSectionController:forSectionViewModel:;
+- (id)itemViewAtIndex:;
+- (id)itemViewControllerAtIndex:;
+- (id)itemViewControllerDictionary;
+- (void)reloadTabContent;
+- (void)scrollToSelectedItem:;
+- (id)sectionControllerClassArray;
+- (id)sectionViewModels;
+- (void)setContentSectionViewModel:;
+- (void)setItemViewControllerDictionary:;
+- (void)updateSelectedIndex:animated:;
+- (void)scrollViewDidEndDecelerating:;
+- (void)setCurrentIndex:;
+- (void)setDelegate:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (long long)currentIndex;
+- (void)scrollViewWillEndDragging:withVelocity:targetContentOffset:;
+- (void)scrollViewDidEndScrollingAnimation:;
+- (void)viewDidLayoutSubviews;
+- (void)viewDidLoad;
+- (void)setupCollectionView;
+@end

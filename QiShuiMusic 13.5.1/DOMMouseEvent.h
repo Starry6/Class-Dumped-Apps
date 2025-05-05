@@ -1,0 +1,36 @@
+@interface DOMMouseEvent : DOMUIEvent
+@property (nonatomic) NSInteger screenX;
+@property (nonatomic) NSInteger screenY;
+@property (nonatomic) NSInteger clientX;
+@property (nonatomic) NSInteger clientY;
+@property (nonatomic) BOOL ctrlKey;
+@property (nonatomic) BOOL shiftKey;
+@property (nonatomic) BOOL altKey;
+@property (nonatomic) BOOL metaKey;
+@property (nonatomic) s button;
+@property (nonatomic) <DOMEventTarget> relatedTarget;
+@property (nonatomic) NSInteger offsetX;
+@property (nonatomic) NSInteger offsetY;
+@property (nonatomic) NSInteger x;
+@property (nonatomic) NSInteger y;
+@property (nonatomic) DOMNode fromElement;
+@property (nonatomic) DOMNode toElement;
+- (int)y;
+- (int)x;
+- (short)button;
+- (int)offsetX;
+- (int)offsetY;
+- (BOOL)ctrlKey;
+- (BOOL)shiftKey;
+- (BOOL)altKey;
+- (BOOL)metaKey;
+- (int)screenX;
+- (int)screenY;
+- (int)clientX;
+- (int)clientY;
+- (id)relatedTarget;
+- (id)fromElement;
+- (id)toElement;
+- (void)initMouseEvent:canBubble:cancelable:view:detail:screenX:screenY:clientX:clientY:ctrlKey:altKey:shiftKey:metaKey:button:relatedTarget:;
+- (void)initMouseEvent:::::::::::::::;
+@end

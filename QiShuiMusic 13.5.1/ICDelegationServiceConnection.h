@@ -1,0 +1,30 @@
+@interface ICDelegationServiceConnection : NSObject
+@property (nonatomic) <ICDelegationServiceConnectionDelegate> delegate;
+@property (nonatomic) q connectionRole;
+@property (nonatomic) ICDelegationServiceSecuritySettings securitySettings;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)openWithCompletionHandler:;
+- (void)dealloc;
+- (void)setDelegate:;
+- (void)close;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)parser:didParseMessage:;
+- (void)sendRequest:withResponseHandler:;
+- (id)securitySettings;
+- (void)delegationServicePairingSession:sendData:withCompletionHandler:;
+- (id)initWithConnectionRole:inputStream:outputStream:securitySettings:;
+- (void)sendResponse:forRequest:withCompletionHandler:;
+- (unsigned int)_nextRequestUniqueID;
+- (void)_sendMessage:withCompletionHandler:;
+- (void)_sendRequest:withResponseHandler:;
+- (void)_sendResponse:forRequest:withCompletionHandler:;
+- (void)_streamDidClose;
+- (void)_streamDidParseMessage:;
+- (void)_finishPendingRequestsWithError:;
+- (void)_streamEncounteredError:;
+- (long long)connectionRole;
+@end

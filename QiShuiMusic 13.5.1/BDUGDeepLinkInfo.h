@@ -1,0 +1,34 @@
+@interface BDUGDeepLinkInfo : NSObject
+@property (nonatomic) q maxATTWaitTime;
+@property (nonatomic) q appID;
+@property (nonatomic) @? did;
+@property (nonatomic) @? iid;
+@property (nonatomic) NSArray schemes;
+@property (nonatomic) BOOL enableUrlDecode;
+@property (nonatomic) BDUGDeepLinkCustomizedLinkModel customizedModel;
+@property (nonatomic) NSString settingDomain;
+@property (nonatomic) BOOL enableSettingsRequestOptimize;
+@property (nonatomic) BOOL disableLaunchEventReportOnDeeplink;
+- (BOOL)enableUrlDecode;
+- (void)setDid:;
+- (void)setIid:;
+- (id)customizedModel;
+- (id)did;
+- (id)iid;
+- (BOOL)disableLaunchEventReportOnDeeplink;
+- (BOOL)enableSettingsRequestOptimize;
+- (long long)maxATTWaitTime;
+- (void)setCustomizedModel:;
+- (void)setDisableLaunchEventReportOnDeeplink:;
+- (void)setEnableSettingsRequestOptimize:;
+- (void)setEnableUrlDecode:;
+- (void)setMaxATTWaitTime:;
+- (void)setSchemes:;
+- (void)setSettingDomain:;
+- (id)settingDomain;
+- (id)init;
+- (void)setAppID:;
+- (long long)appID;
+- (void).cxx_destruct;
+- (id)schemes;
+@end

@@ -1,0 +1,36 @@
+@interface VernierView : UIView
+@property (nonatomic) NSLayoutConstraint vernierBottomConstraint;
+@property (nonatomic) NSLayoutConstraint vernierHeightConstraint;
+@property (nonatomic) NSLayoutConstraint vernierLeftConstraint;
+@property (nonatomic) NSLayoutConstraint vernierWidthConstraint;
+@property (nonatomic) UICollectionView associatedCollectionVIew;
+@property (nonatomic) UIView associatedTabbarView;
+@property (nonatomic) BOOL isFixedWidth;
+@property (nonatomic) double height;
+@property (nonatomic) double width;
+@property (nonatomic) double top;
+- (id)associatedCollectionVIew;
+- (id)associatedTabbarView;
+- (id)initWithSuperView:tabbarView:vernierHeight:vernierWidth:vernierTop:color:;
+- (BOOL)isFixedWidth;
+- (void)setAssociatedCollectionVIew:;
+- (void)setAssociatedTabbarView:;
+- (void)setIsFixedWidth:;
+- (void)setVernierBottomConstraint:;
+- (void)setVernierHeightConstraint:;
+- (void)setVernierLeftConstraint:;
+- (void)setVernierWidthConstraint:;
+- (void)updateLocationToCenterX:width:animated:;
+- (id)vernierBottomConstraint;
+- (id)vernierHeightConstraint;
+- (id)vernierLeftConstraint;
+- (id)vernierWidthConstraint;
+- (double)top;
+- (void)setTop:;
+- (void)setWidth:;
+- (double)height;
+- (double)width;
+- (void)setHeight:;
+- (void).cxx_destruct;
+- (void)setupUI;
+@end

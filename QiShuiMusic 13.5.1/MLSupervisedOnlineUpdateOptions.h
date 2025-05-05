@@ -1,0 +1,2 @@
+@interface MLSupervisedOnlineUpdateOptions : MLPredictionOptions
+@end

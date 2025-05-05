@@ -1,0 +1,2 @@
+@interface ISIconSpecification : IFIconSpecification
+@end

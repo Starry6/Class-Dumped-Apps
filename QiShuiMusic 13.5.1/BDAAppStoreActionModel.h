@@ -1,0 +1,36 @@
+@interface BDAAppStoreActionModel : NSObject
+@property (nonatomic) NSString appId;
+@property (nonatomic) NSString creativeId;
+@property (nonatomic) NSString logExtra;
+@property (nonatomic) NSString skAdNetworkParams;
+@property (nonatomic) NSDictionary businessIdentifyInfo;
+@property (nonatomic) q downloadScene;
+@property (nonatomic) NSDictionary complianceData;
+@property (nonatomic) NSString webURL;
+@property (nonatomic) @? complianceCompletion;
+@property (nonatomic) NSString downloadUrl;
+@property (nonatomic) NSDictionary trackExtra;
+- (id)businessIdentifyInfo;
+- (id)complianceCompletion;
+- (id)complianceData;
+- (long long)downloadScene;
+- (id)logExtra;
+- (void)setBusinessIdentifyInfo:;
+- (void)setComplianceCompletion:;
+- (void)setComplianceData:;
+- (void)setDownloadScene:;
+- (void)setLogExtra:;
+- (void)setSkAdNetworkParams:;
+- (void)setTrackExtra:;
+- (id)skAdNetworkParams;
+- (id)trackExtra;
+- (id)appId;
+- (void)setAppId:;
+- (void).cxx_destruct;
+- (id)webURL;
+- (void)setWebURL:;
+- (id)downloadUrl;
+- (void)setDownloadUrl:;
+- (id)creativeId;
+- (void)setCreativeId:;
+@end

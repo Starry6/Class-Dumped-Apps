@@ -1,0 +1,30 @@
+@interface BDTrackerSessionHandler : NSObject
+@property (nonatomic) NSString sessionID;
+@property (nonatomic) BOOL isTerminating;
+@property (nonatomic) BOOL isBackgroundLaunching;
+@property (nonatomic) BOOL sessionStart;
+@property (nonatomic) q launchFrom;
+- (void)_startSession:;
+- (void)forceReportTerminateInBackgroundSceneWithCompletion:;
+- (BOOL)isBackgroundLaunching;
+- (long long)launchFrom;
+- (void)restartSession;
+- (void)setIsBackgroundLaunching:;
+- (void)setLaunchFrom:;
+- (void)traceTerminate;
+- (void)setSessionID:;
+- (id)sessionID;
+- (id)init;
+- (void)dealloc;
+- (BOOL)isTerminating;
+- (void)didEnterBackground;
+- (void)willEnterForeground;
+- (void)startSession;
+- (void)setSessionStart:;
+- (void).cxx_destruct;
+- (void)willTerminate;
+- (BOOL)sessionStart;
+- (void)stopSession;
+- (void)setIsTerminating:;
++ (id)sharedHandler;
+@end

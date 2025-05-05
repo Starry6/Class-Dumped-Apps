@@ -1,0 +1,31 @@
+@interface ABUAdUnit : NSObject
+@property (nonatomic) q AdType;
+@property (nonatomic) q position;
+@property (nonatomic) BOOL isSupportDeepLink;
+@property (nonatomic) NSString ID;
+@property (nonatomic) BOOL getExpressAdIfCan;
+@property (nonatomic) ABUSize imgSize;
+@property (nonatomic) {CGSize=dd} imageOrVideoSize;
+@property (nonatomic) {CGSize=dd} adSize;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)imgSize;
+- (long long)AdType;
+- (BOOL)getExpressAdIfCan;
+- (id)imageOrVideoSize;
+- (BOOL)isSupportDeepLink;
+- (void)setAdSize:;
+- (void)setGetExpressAdIfCan:;
+- (void)setImageOrVideoSize:;
+- (void)setImgSize:;
+- (void)setIsSupportDeepLink:;
+- (void)setPosition:;
+- (void)setID:;
+- (long long)position;
+- (id)ID;
+- (void).cxx_destruct;
+- (void)setAdType:;
+- (id)adSize;
+@end

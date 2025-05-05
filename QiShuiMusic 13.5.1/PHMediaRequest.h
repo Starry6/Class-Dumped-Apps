@@ -1,0 +1,38 @@
+@interface PHMediaRequest : NSObject
+@property (nonatomic) NSInteger requestID;
+@property (nonatomic) Q requestIndex;
+@property (nonatomic) Q managerID;
+@property (nonatomic) PHAsset asset;
+@property (nonatomic) q contextType;
+@property (nonatomic) Q signpostID;
+@property (nonatomic) BOOL cancelled;
+@property (nonatomic) BOOL synchronous;
+@property (nonatomic) BOOL networkAccessAllowed;
+@property (nonatomic) q downloadIntent;
+@property (nonatomic) q downloadPriority;
+@property (nonatomic) BOOL wantsProgress;
+- (void)cancel;
+- (unsigned long long)signpostID;
+- (BOOL)isCancelled;
+- (long long)contextType;
+- (id)asset;
+- (void)startRequest;
+- (long long)downloadPriority;
+- (long long)downloadIntent;
+- (BOOL)isNetworkAccessAllowed;
+- (int)requestID;
+- (void).cxx_destruct;
+- (void)handleAvailabilityChangeForResource:url:info:error:;
+- (void)setSignpostID:;
+- (id)identifierString;
+- (BOOL)isSynchronous;
+- (void)setWantsProgress:;
+- (id)initWithRequestID:requestIndex:contextType:managerID:asset:;
+- (unsigned long long)managerID;
+- (BOOL)wantsProgress;
+- (id)sendMakeAvailableRequestForResource:reply:;
+- (id)sendResourceRepairRequestForResource:errorCodes:reply:;
+- (id)sendResourceRepairRequestWithErrorCodes:reply:;
+- (void)recordMetricsWithMetricsHandler:;
+- (unsigned long long)requestIndex;
+@end

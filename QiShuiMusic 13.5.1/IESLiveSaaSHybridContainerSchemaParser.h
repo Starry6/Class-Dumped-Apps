@@ -1,0 +1,31 @@
+@interface IESLiveSaaSHybridContainerSchemaParser : NSObject
+@property (nonatomic) <IESLiveSaaSRoomService> roomService;
+@property (nonatomic) <IESLiveSaaSInternalRouter> internalRouter;
+@property (nonatomic) <IESLiveSaaSWebViewService> webViewService;
+@property (nonatomic) <IESLiveSaaSURLSchemaHandler> schemaHandler;
+@property (nonatomic) IESLiveSaaSHYURLParserHandler hyURLHandler;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setRoomService:;
+- (id)getComponentsWithURLString:;
+- (id)getQueryItemsWithURLString:;
+- (id)hyURLHandler;
+- (id)internalRouter;
+- (id)p_parseVCWebViewWithParameter:fromInside:;
+- (void)p_parseWebViewWithParameter:fromInside:;
+- (id)parseVCWithParams:fromInside:completion:;
+- (id)parseWebViewWithParameter:fromInside:;
+- (void)parseWithParams:fromInside:completion:;
+- (id)roomService;
+- (id)schemaHandler;
+- (void)setHyURLHandler:;
+- (void)setInternalRouter:;
+- (void)setSchemaHandler:;
+- (void)setWebViewService:;
+- (void)trackTaroRuntimeWithURL:status:metaData:;
+- (id)webViewService;
+- (void).cxx_destruct;
++ (void)ieslivekit_register_schema;
+@end

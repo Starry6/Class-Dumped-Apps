@@ -1,0 +1,31 @@
+@interface PFVideoComplement : NSObject
+@property (nonatomic) NSString videoPath;
+@property (nonatomic) NSString imagePath;
+@property (nonatomic) NSString pairingIdentifier;
+@property (nonatomic) {?=qiIq} imageDisplayTime;
+@property (nonatomic) NSString originalPairingIdentifier;
+@property (nonatomic) {?=qiIq} originalImageDisplayTime;
+@property (nonatomic) {?=qiIq} originalVideoDuration;
+@property (nonatomic) NSString videoPath;
+@property (nonatomic) NSString imagePath;
+- (id)imagePath;
+- (id)init;
+- (id)propertyListRepresentation;
+- (id)initWithPropertyList:;
+- (void).cxx_destruct;
+- (id)videoPath;
+- (id)initWithPathToVideo:pathToImage:imageDisplayTime:pairingIdentifier:;
+- (BOOL)writeToBundleAtURL:error:;
+- (id)initWithBundleAtURL:;
+- (id)initWithPathToVideo:pathToImage:;
+- (id)originalVideoDuration;
+- (id)pairingIdentifier;
+- (id)imageDisplayTime;
+- (BOOL)copyOrLinkPath:toPath:error:;
+- (BOOL)_getSourceFilePath:destinationFilePath:areOnSameVolume:volumeSupportsCloning:;
+- (void)_readMetadataIfNeeded;
+- (id)originalPairingIdentifier;
+- (id)originalImageDisplayTime;
+- (int)numberOfFramesRecoveredWithError:;
++ (id)currentFormatVersion;
+@end

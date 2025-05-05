@@ -1,0 +1,33 @@
+@interface SFLocalImage : SFImage
+@property (nonatomic) NSInteger localImageType;
+@property (nonatomic) NSDictionary dictionaryRepresentation;
+@property (nonatomic) NSData jsonData;
+@property (nonatomic) NSData imageData;
+@property (nonatomic) BOOL isTemplate;
+@property (nonatomic) BOOL shouldCropToCircle;
+@property (nonatomic) double cornerRadius;
+@property (nonatomic) double scale;
+@property (nonatomic) {CGSize=dd} size;
+@property (nonatomic) NSString contentType;
+@property (nonatomic) NSString keyColor;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) NSInteger source;
+@property (nonatomic) NSInteger cornerRoundingStyle;
+@property (nonatomic) NSString accessibilityLabel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithProtobuf:;
+- (id)initWithCoder:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (int)localImageType;
+- (void)setLocalImageType:;
+- (BOOL)hasLocalImageType;
++ (BOOL)supportsSecureCoding;
+@end

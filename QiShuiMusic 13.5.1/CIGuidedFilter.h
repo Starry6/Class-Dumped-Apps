@@ -1,0 +1,30 @@
+@interface CIGuidedFilter : CIFilter
+@property (nonatomic) CIImage inputImage;
+@property (nonatomic) CIImage inputGuideImage;
+@property (nonatomic) NSNumber inputRadius;
+@property (nonatomic) NSNumber inputEpsilon;
+- (void)setInputRadius:;
+- (id)inputImage;
+- (void)setInputImage:;
+- (id)inputRadius;
+- (id)outputImage;
+- (id)_finalResult;
+- (id)_downsampledColorImage:;
+- (id)_upsampleImage:targetImageSize:;
+- (id)_fullFloatBoxFilter;
+- (id)_boxFilter:fullFloat:;
+- (id)_multiplyImagesKernel;
+- (id)multiplyImages:imageB:;
+- (id)subtract:minus:;
+- (id)_computeABKernel;
+- (id)_combineRGB_and_A;
+- (id)_swizzleImageXXX1:;
+- (id)_swizzleImageYYZ1:;
+- (id)_swizzleImageYZZ1:;
+- (id)computeAB:;
+- (id)inputGuideImage;
+- (void)setInputGuideImage:;
+- (id)inputEpsilon;
+- (void)setInputEpsilon:;
++ (id)customAttributes;
+@end

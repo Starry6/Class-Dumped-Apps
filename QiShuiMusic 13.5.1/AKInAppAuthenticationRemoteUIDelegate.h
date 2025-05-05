@@ -1,0 +1,34 @@
+@interface AKInAppAuthenticationRemoteUIDelegate : NSObject
+@property (nonatomic) AKAppleIDServerUIContextController serverUIContextController;
+@property (nonatomic) RUIObjectModel currentRemoteOM;
+@property (nonatomic) UINavigationController modalRemoteUINavController;
+@property (nonatomic) BOOL overrideFirstActionSignal;
+@property (nonatomic) AAUICDPStingrayRemoteUIController stingrayController;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)_showAlert:;
+- (id)initWithContext:;
+- (void).cxx_destruct;
+- (void)remoteUIController:willPresentObjectModel:modally:;
+- (void)remoteUIController:shouldLoadRequest:redirectResponse:withCompletionHandler:;
+- (void)remoteUIController:didFinishLoadWithError:forRequest:;
+- (void)remoteUIController:didReceiveHTTPResponse:forRequest:;
+- (void)remoteUIController:didReceiveChallenge:completionHandler:;
+- (void)remoteUIController:willPresentModalNavigationController:;
+- (void)remoteUIController:didDismissModalNavigationWithObjectModels:;
+- (void)remoteUIController:didReceiveObjectModel:actionSignal:;
+- (void)_handleBackButtonTap:;
+- (void)clearObjectModel;
+- (BOOL)_isDeferrableFinalResponseHarvested;
+- (void)_processAndHandleConflictErrorFromResponse:;
+- (id)serverUIContextController;
+- (void)setServerUIContextController:;
+- (id)currentRemoteOM;
+- (id)modalRemoteUINavController;
+- (BOOL)overrideFirstActionSignal;
+- (void)setOverrideFirstActionSignal:;
+- (id)stingrayController;
+- (void)setStingrayController:;
+@end

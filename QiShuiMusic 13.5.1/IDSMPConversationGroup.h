@@ -1,0 +1,30 @@
+@interface IDSMPConversationGroup : NSObject
+@property (nonatomic) ENGroupID groupID;
+@property (nonatomic) NSData publicKeyData;
+@property (nonatomic) NSData forwardingTicket;
+@property (nonatomic) Q generation;
+@property (nonatomic) NSData applicationData;
+@property (nonatomic) NSString sponsorAlias;
+@property (nonatomic) NSDictionary groupMembers;
+- (id)signData:error:;
+- (id)groupID;
+- (id)groupMembers;
+- (void).cxx_destruct;
+- (unsigned long long)generation;
+- (id)applicationData;
+- (id)signAndProtectData:senderSigningIdentity:members:error:;
+- (id)verifyAndExposeData:senderSigningIdentity:members:error:;
+- (id)publicDataRepresentationWithSponsor:error:;
+- (id)conversationGroupWithUpdatedGroupID:error:;
+- (id)privateDataRepresentationWithError:;
+- (BOOL)isParentOfGroup:;
+- (id)publicKeyData;
+- (id)forwardingTicket;
+- (id)sponsorAlias;
++ (id)conversationGroupWithParent:members:sponsor:applicationData:error:;
++ (id)conversationGroupWithParent:sponsor:deviceIdentity:groupID:publicKeyData:publicData:signature:error:;
++ (id)conversationGroupWithParent:members:sponsorAlias:sponsor:applicationData:error:;
++ (id)conversationSponsorPairFromPublicData:publicKey:signature:groupID:parent:parentPublicKey:forwardingTicket:fullDeviceIdentity:error:;
++ (id)conversationGroupWithPrivateDataRepresentation:;
++ (id)conversationGroupWithConversationKey:fromPublicData:publicKey:signature:groupID:parent:parentPublicKey:forwardingTicket:sponsor:error:;
+@end

@@ -1,0 +1,22 @@
+@interface WKPaymentAuthorizationDelegate : NSObject
+- (void)_didFinish;
+- (void).cxx_destruct;
+- (void)invalidate;
+- (id).cxx_construct;
+- (id)_initWithRequest:presenter:;
+- (void)_getPaymentServicesMerchantURL:;
+- (void)completeMerchantValidation:error:;
+- (void)completePaymentMethodSelection:;
+- (void)completePaymentSession:errors:;
+- (void)completePaymentSession:errors:orderDetails:;
+- (void)completeShippingContactSelection:;
+- (void)completeShippingMethodSelection:;
+- (void)completeCouponCodeChange:;
+- (void)_didAuthorizePayment:completion:;
+- (void)_didRequestMerchantSession:;
+- (void)_didSelectPaymentMethod:completion:;
+- (void)_didSelectShippingContact:completion:;
+- (void)_didSelectShippingMethod:completion:;
+- (void)_didChangeCouponCode:completion:;
+- (void)_willFinishWithError:;
+@end

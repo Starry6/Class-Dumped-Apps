@@ -1,0 +1,2 @@
+@interface AVAssetExportSessionInternal : NSObject
+@end

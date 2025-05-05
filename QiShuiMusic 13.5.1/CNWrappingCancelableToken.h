@@ -1,0 +1,2 @@
+@interface CNWrappingCancelableToken : CNCancelationToken
+@end

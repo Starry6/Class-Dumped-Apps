@@ -1,0 +1,34 @@
+@interface IESLiveSaaSFeedLoadMoreFooter : MJRefreshAutoFooter
+@property (nonatomic) UITapGestureRecognizer tapGesture;
+@property (nonatomic) BOOL isShowingOnScreen;
+@property (nonatomic) @? paramsRefreshingBlock;
+@property (nonatomic) NSDictionary refreshingParams;
+@property (nonatomic) UIView<IESLiveSaaSRefreshView> loading;
+@property (nonatomic) <IESLiveSaaSFeedViewFactory> feedFactory;
+@property (nonatomic) @? noMoreDataClickBlock;
+@property (nonatomic) @? showStateChangeBlock;
+- (void)setFeedFactory:;
+- (void)beginRefreshingWithParams:;
+- (id)feedFactory;
+- (void)handleTapInView:;
+- (BOOL)isShowingOnScreen;
+- (id)noMoreDataClickBlock;
+- (id)paramsRefreshingBlock;
+- (void)placeSubviews;
+- (id)refreshingParams;
+- (void)scrollViewContentOffsetDidChange:;
+- (void)setIsShowingOnScreen:;
+- (void)setNoMoreDataClickBlock:;
+- (void)setParamsRefreshingBlock:;
+- (void)setRefreshingParams:;
+- (void)setShowStateChangeBlock:;
+- (id)showStateChangeBlock;
+- (void)setLoading:;
+- (void)setState:;
+- (id)loading;
+- (void)prepare;
+- (void).cxx_destruct;
+- (id)tapGesture;
+- (void)setTapGesture:;
++ (id)footerWithRefreshingParamsBlock:;
+@end

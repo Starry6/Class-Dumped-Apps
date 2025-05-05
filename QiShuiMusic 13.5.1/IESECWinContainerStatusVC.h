@@ -1,0 +1,31 @@
+@interface IESECWinContainerStatusVC : UIViewController
+@property (nonatomic) FBKVOController kvoCtrl;
+@property (nonatomic) IESECWinContext context;
+@property (nonatomic) UIImageView loadingImageView;
+@property (nonatomic) IESECWinContainerErrorView errorView;
+@property (nonatomic) IESECWinDataController dataController;
+@property (nonatomic) IESECServiceProxy<IESECWinSplitService> splitService;
+@property (nonatomic) IESECServiceProxy<IESECWinDataStatusService> dataStatusService;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)kvoCtrl;
+- (id)dataStatusService;
+- (id)loadingImageView;
+- (void)setDataController:;
+- (void)setDataStatusService:;
+- (void)setKvoCtrl:;
+- (void)setLoadingImageView:;
+- (void)setSplitService:;
+- (id)splitService;
+- (id)context;
+- (id)initWithContext:;
+- (void).cxx_destruct;
+- (void)_addObserver;
+- (void)setContext:;
+- (void)viewDidLoad;
+- (id)dataController;
+- (id)errorView;
+- (void)setErrorView:;
+@end

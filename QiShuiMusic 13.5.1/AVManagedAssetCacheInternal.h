@@ -1,0 +1,2 @@
+@interface AVManagedAssetCacheInternal : NSObject
+@end

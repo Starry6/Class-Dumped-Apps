@@ -1,0 +1,32 @@
+@interface PLCloudRecordOrganizer : NSObject
+@property (nonatomic) NSMutableArray assetRecordsWithContainerChange;
+@property (nonatomic) NSMutableArray albumRecordsWithContainerChange;
+@property (nonatomic) NSMutableArray personRecords;
+@property (nonatomic) NSMutableArray scopeRecords;
+@property (nonatomic) NSMutableArray masterRecords;
+@property (nonatomic) NSMutableArray assetRecords;
+@property (nonatomic) NSMutableArray albumRecords;
+@property (nonatomic) NSMutableArray memoryRecords;
+@property (nonatomic) NSMutableArray faceCropRecords;
+@property (nonatomic) NSMutableArray deleteRecords;
+@property (nonatomic) NSMutableArray deletePersonRecords;
+@property (nonatomic) NSMutableArray expungedRecords;
+@property (nonatomic) NSMutableArray suggestionRecords;
+- (id)initWithPhotoLibrary:;
+- (id)memoryRecords;
+- (void)organizeRecords:;
+- (id)deleteRecords;
+- (id)assetRecords;
+- (id)albumRecordsWithContainerChange;
+- (id)personRecords;
+- (id)expungedRecords;
+- (id)masterRecords;
+- (id)faceCropRecords;
+- (id)albumRecords;
+- (void).cxx_destruct;
+- (id)assetRecordsWithContainerChange;
+- (id)scopeRecords;
+- (id)deletePersonRecords;
+- (id)suggestionRecords;
++ (BOOL)records:containsScopedIdentifier:;
+@end

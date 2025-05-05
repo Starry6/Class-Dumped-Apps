@@ -1,0 +1,30 @@
+@interface IESLivePKComponentEnterBackground : IESLivePKComponent
+@property (nonatomic) <IESLiveCompoundSubscription> disposable;
+@property (nonatomic) IESLivePKBackgroundTipView selfBackgroundTip;
+@property (nonatomic) IESLivePKBackgroundTipView oppositeBackgroundTip;
+@property (nonatomic) UIView separatedLine;
+@property (nonatomic) double selfGuestOffset;
+@property (nonatomic) double oppoGuestOffset;
+- (double)selfGuestOffset;
+- (double)oppoGuestOffset;
+- (void)componentContainerFrameChanged;
+- (void)componentFinished;
+- (void)componentInteracting;
+- (void)componentPlaying;
+- (void)componentPunishing;
+- (id)disposable;
+- (void)observeUserBackgroundStatus;
+- (id)oppositeBackgroundFrame;
+- (id)oppositeBackgroundTip;
+- (id)selfBackgroundFrame;
+- (id)selfBackgroundTip;
+- (id)separatedLine;
+- (void)setDisposable:;
+- (void)setOppoGuestOffset:;
+- (void)setOppositeBackgroundTip:;
+- (void)setSelfBackgroundTip:;
+- (void)setSelfGuestOffset:;
+- (void)setSeparatedLine:;
+- (void)showSeparatedLineIfNeed;
+- (void).cxx_destruct;
+@end

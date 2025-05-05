@@ -1,0 +1,36 @@
+@interface DASearchQuery : NSObject
+@property (nonatomic) NSString searchString;
+@property (nonatomic) NSPredicate searchPredicate;
+@property (nonatomic) NSString searchID;
+@property (nonatomic) Q state;
+@property (nonatomic) {_NSRange=QQ} range;
+@property (nonatomic) I maxResults;
+@property (nonatomic) NSInteger timeLimit;
+@property (nonatomic) <DASearchQueryConsumer> consumer;
+- (void)setSearchString:;
+- (id)consumer;
+- (id)searchString;
+- (void)setState:;
+- (void)setRange:;
+- (id)range;
+- (unsigned long long)state;
+- (void).cxx_destruct;
+- (void)setSearchPredicate:;
+- (void)setTimeLimit:;
+- (void)setMaxResults:;
+- (id)searchPredicate;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (int)timeLimit;
+- (unsigned int)maxResults;
+- (void)setConsumer:;
+- (id)searchID;
+- (void)setSearchID:;
+- (void)sendFinishedToConsumerWithError:;
+- (id)initWithSearchString:consumer:;
+- (id)initWithSearchString:predicate:consumer:;
+- (id)initWithDictionaryRepresentation:consumer:;
+- (BOOL)isQueryRunning;
+- (void)sendResultsToConsumer:;
++ (id)searchQueryWithSearchString:consumer:;
+@end

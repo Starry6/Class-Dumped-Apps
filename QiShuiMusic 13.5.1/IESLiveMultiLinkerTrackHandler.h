@@ -1,0 +1,31 @@
+@interface IESLiveMultiLinkerTrackHandler : NSObject
+@property (nonatomic) HTSEventContext trackContext;
+@property (nonatomic) IESLiveRevenueInteractFullLinkMonitor fullLinkMonitor;
+@property (nonatomic) <IESLiveMultiLinkerProvider> provider;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)baseTrackParams;
+- (id)fullLinkMonitor;
+- (id)initWithTrackContext:diContext:;
+- (id)linkerStatusStr;
+- (id)baseMonitorParams;
+- (id)baseTrackParamsForCommon;
+- (void)monitorBusinessName:extra:;
+- (void)monitorMessage:extra:;
+- (void)monitorResponse:error:apiRequestTime:path:extra:;
+- (id)rtcStatusStr;
+- (void)setFullLinkMonitor:;
+- (void)setTrackContext:;
+- (void)setupMonitor;
+- (BOOL)showAddPlayCommonTrackParams:;
+- (id)trackContext;
+- (void)trackEvent:extra:;
+- (id)trackParamsForAnchor;
+- (id)trackParamsForAnchorByRD;
+- (id)trackParamsForAudience;
+- (void)setProvider:;
+- (id)provider;
+- (void).cxx_destruct;
+@end

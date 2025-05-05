@@ -1,0 +1,37 @@
+@interface GEOAbAssignInfo : PBCodable
+@property (nonatomic) BOOL hasCreatedAtTimestamp;
+@property (nonatomic) Q createdAtTimestamp;
+@property (nonatomic) BOOL hasAbAssignId;
+@property (nonatomic) NSString abAssignId;
+@property (nonatomic) BOOL hasRelativeTimestamp;
+@property (nonatomic) Q relativeTimestamp;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (void)setRelativeTimestamp:;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (unsigned long long)relativeTimestamp;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)setHasRelativeTimestamp:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (BOOL)hasRelativeTimestamp;
+- (id)copyWithZone:;
+- (BOOL)hasAbAssignId;
+- (id)abAssignId;
+- (void)setAbAssignId:;
+- (unsigned long long)createdAtTimestamp;
+- (void)setCreatedAtTimestamp:;
+- (void)setHasCreatedAtTimestamp:;
+- (BOOL)hasCreatedAtTimestamp;
++ (BOOL)isValid:;
+@end

@@ -1,0 +1,31 @@
+@interface IESLivePersonalizedEmoticonModel : NSObject
+@property (nonatomic) NSString emoticonTitle;
+@property (nonatomic) double latestUseTimestamp;
+@property (nonatomic) NSMutableDictionary latestUseCount;
+@property (nonatomic) q latestAllUseCount;
+@property (nonatomic) q allUserScore;
+@property (nonatomic) double finalScore;
+@property (nonatomic) NSString emoticonID;
+@property (nonatomic) NSString emoticonGroupID;
+- (id)emoticonGroupID;
+- (long long)allUserScore;
+- (id)emoticonID;
+- (void)emoticonModelDidClicked;
+- (id)emoticonTitle;
+- (id)initWithEmoticonTitle:;
+- (long long)latestAllUseCount;
+- (id)latestUseCount;
+- (double)latestUseTimestamp;
+- (void)setAllUserScore:;
+- (void)setEmoticonGroupID:;
+- (void)setEmoticonID:;
+- (void)setEmoticonTitle:;
+- (void)setLatestAllUseCount:;
+- (void)setLatestUseCount:;
+- (void)setLatestUseTimestamp:;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (void)setFinalScore:;
+- (double)finalScore;
+@end

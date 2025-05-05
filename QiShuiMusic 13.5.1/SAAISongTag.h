@@ -1,0 +1,36 @@
+@interface SAAISongTag : SADomainObject
+@property (nonatomic) NSString adamId;
+@property (nonatomic) NSString album;
+@property (nonatomic) NSString albumAdamId;
+@property (nonatomic) NSString artist;
+@property (nonatomic) NSString artistAdamId;
+@property (nonatomic) NSString contentRating;
+@property (nonatomic) NSURL iTunesUri;
+@property (nonatomic) SAUIImageResource previewImage;
+@property (nonatomic) NSURL radioStationUri;
+@property (nonatomic) NSString title;
+- (id)artist;
+- (void)setAlbum:;
+- (void)setArtist:;
+- (id)adamId;
+- (id)groupIdentifier;
+- (id)album;
+- (void)setTitle:;
+- (id)title;
+- (id)encodedClassName;
+- (void)setAdamId:;
+- (id)contentRating;
+- (void)setContentRating:;
+- (void)setPreviewImage:;
+- (id)previewImage;
+- (id)albumAdamId;
+- (void)setAlbumAdamId:;
+- (id)artistAdamId;
+- (void)setArtistAdamId:;
+- (id)iTunesUri;
+- (void)setITunesUri:;
+- (id)radioStationUri;
+- (void)setRadioStationUri:;
++ (id)songTag;
++ (id)songTagWithDictionary:context:;
+@end

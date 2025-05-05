@@ -1,0 +1,24 @@
+@interface STAd.MannorMediator : NSObject
+- (void)openLandingPageWith:logExtra:;
+- (void)reportALogWithFetchStartTime:fetchEndTime:scene:;
+- (void)showToast:type:icon:;
+- (id)skStoreProductContainer;
+- (void)awemeTrackEvent:params:logExtra:creativeID:;
+- (BOOL)enablePerformanceMonitor;
+- (id)sendAdLog:;
+- (id)sendLogV3:;
+- (void)trackEvent:params:;
+- (id)trackURL:;
+- (void)requestForJSONWithURL:params:method:needCommonParams:callback:;
+- (void)splashStatusDidChanged:context:;
+- (BOOL)canShowSemiRealtimeSplashWithModel:;
+- (unsigned long long)logoAreaHeight;
+- (BOOL)splashActionWithModel:logExtra:context:animationBlock:;
+- (id)splashBGViewWithFrame:logoColor:;
+- (id)splashBaseUrl;
+- (id)splashFakeLaunchView;
+- (id)splashLogoViewWithColor:;
+- (void)splashRequestStatusChanged:;
+- (id)init;
+- (void).cxx_destruct;
+@end

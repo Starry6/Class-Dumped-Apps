@@ -1,0 +1,34 @@
+@interface HTSLiveScreenChatMessage : IESLivePBBaseMessage
+@property (nonatomic) BOOL isFakeMessage;
+@property (nonatomic) BOOL isSendTcs;
+@property (nonatomic) BOOL isFakeMessage;
+@property (nonatomic) HTSLiveCommon common;
+@property (nonatomic) BOOL hasCommon;
+@property (nonatomic) HTSLiveUser user;
+@property (nonatomic) BOOL hasUser;
+@property (nonatomic) NSString content;
+@property (nonatomic) q screenChatType;
+@property (nonatomic) q priority;
+@property (nonatomic) HTSLiveScreenChatMessage_Effect effectV2;
+@property (nonatomic) BOOL hasEffectV2;
+@property (nonatomic) HTSLiveImage backgroundImageV2;
+@property (nonatomic) BOOL hasBackgroundImageV2;
+@property (nonatomic) HTSLivePublicAreaCommon publicAreaCommon;
+@property (nonatomic) BOOL hasPublicAreaCommon;
+@property (nonatomic) HTSLiveScreenChatMessage_OfficialCommentConfig officialCommentConfig;
+@property (nonatomic) BOOL hasOfficialCommentConfig;
+@property (nonatomic) q eventTime;
+@property (nonatomic) BOOL sendReview;
+@property (nonatomic) HTSLiveChatIdentity chatIdentityInfo;
+@property (nonatomic) BOOL hasChatIdentityInfo;
+@property (nonatomic) BOOL publicAreaDoesNotDisplay;
+@property (nonatomic) HTSLiveText rtfContentV2;
+@property (nonatomic) BOOL hasRtfContentV2;
+- (BOOL)isFakeMessage;
+- (BOOL)isFakeMessage;
+- (BOOL)isSendTcs;
+- (void)setIsFakeMessage:;
+- (void)setIsFakeMessage:;
+- (void)setIsSendTcs:;
++ (id)descriptor;
+@end

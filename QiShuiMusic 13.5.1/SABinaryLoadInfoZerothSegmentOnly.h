@@ -1,0 +1,2 @@
+@interface SABinaryLoadInfoZerothSegmentOnly : SABinaryLoadInfoTrackingHighestOffset
+@end

@@ -1,0 +1,34 @@
+@interface NSCloudKitMirroringDelegate : NSObject
+@property (nonatomic) PFApplicationStateMonitor applicationMonitor;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)applicationMonitor;
+- (BOOL)validateManagedObjectModel:forUseWithStoreWithDescription:error:;
+- (void)applicationStateMonitorEnteredBackground:;
+- (void)dealloc;
+- (void)eventUpdated:;
+- (id)initWithOptions:;
+- (void)managedObjectContextSaved:;
+- (void)ckAccountOrIdentityChangedHandler:;
+- (void)exporter:willScheduleOperations:;
+- (void)storesDidChange:;
+- (void).cxx_destruct;
+- (id)initWithCloudKitContainerOptions:;
+- (void)coordinatorWillRemoveStore:;
+- (void)persistentStoreCoordinator:didSuccessfullyAddPersistentStore:withDescription:;
+- (void)remoteStoreDidChange:;
+- (void)applicationStateMonitorExpiredBackgroundActivityTimeout:;
+- (void)logResetSyncNotification:;
+- (void)applicationStateMonitorEnteredForeground:;
++ (id)cloudKitMachServiceName;
++ (BOOL)isFirstPartyContainerIdentifier:;
++ (BOOL)checkIfContentsOfStore:matchContentsOfStore:error:;
++ (BOOL)checkAndCreateDirectoryAtURL:wipeIfExists:error:;
++ (id)stringForResetReason:;
++ (id)cloudKitMetadataTransformerName;
++ (void)printRepresentativeSchemaForModelAtURL:orStoreAtURL:withConfiguration:;
++ (void)printMetadataForStoreAtURL:withConfiguration:operateOnACopy:;
++ (id)createCloudKitServerWithMachServiceName:andStorageDirectoryPath:;
+@end

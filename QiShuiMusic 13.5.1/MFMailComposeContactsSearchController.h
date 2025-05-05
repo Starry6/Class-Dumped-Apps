@@ -1,0 +1,30 @@
+@interface MFMailComposeContactsSearchController : NSObject
+@property (nonatomic) NSNumber taskID;
+@property (nonatomic) <MFMailComposeContactsSearchControllerDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)cancelSearch;
+- (void)_reset;
+- (id)init;
+- (void)setDelegate:;
+- (void)setTaskID:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)taskID;
+- (void)removeRecipient:;
+- (void)didSelectRecipient:atIndex:;
+- (void)consumeAutocompleteSearchResults:taskID:;
+- (void)finishedSearchingForAutocompleteResults;
+- (void)consumeCorecipientSearchResults:taskID:;
+- (void)finishedSearchingForCorecipients;
+- (void)finishedTaskWithID:;
+- (void)beganNetworkActivity;
+- (void)endedNetworkActivity;
+- (void)searchWithString:;
+- (void)searchWithString:enteredRecipients:title:;
+- (void)_cancelSearchAndNotify:;
+- (void)findCorecipientsWithRecipients:;
+- (void)_finishSearch;
+@end

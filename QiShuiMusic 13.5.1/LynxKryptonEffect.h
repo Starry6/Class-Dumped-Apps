@@ -1,0 +1,2 @@
+@interface LynxKryptonEffect : NSObject
+@end

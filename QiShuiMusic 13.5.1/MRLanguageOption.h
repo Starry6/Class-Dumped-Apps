@@ -1,0 +1,38 @@
+@interface MRLanguageOption : NSObject
+@property (nonatomic) _MRLanguageOptionProtobuf protobuf;
+@property (nonatomic) I type;
+@property (nonatomic) BOOL hasType;
+@property (nonatomic) NSString languageTag;
+@property (nonatomic) NSArray characteristics;
+@property (nonatomic) NSString displayName;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) NSData data;
+@property (nonatomic) NSDictionary dictionaryRepresentation;
+- (id)languageTag;
+- (void)setLanguageTag:;
+- (id)initWithProtobuf:;
+- (id)data;
+- (id)protobuf;
+- (id)identifier;
+- (void)setType:;
+- (void)setHasType:;
+- (BOOL)hasType;
+- (id)initWithCoder:;
+- (void)setDisplayName:;
+- (id)displayName;
+- (id)characteristics;
+- (void)encodeWithCoder:;
+- (unsigned int)type;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (void)setCharacteristics:;
+- (void)setIdentifier:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)initWithType:languageTag:characteristics:displayName:identifier:;
+- (BOOL)isAutomaticLanguageOptionWithType:;
++ (BOOL)supportsSecureCoding;
++ (id)automaticLanguageOptionWithType:;
+@end

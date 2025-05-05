@@ -1,0 +1,30 @@
+@interface SNSpeechEmotionResult : NSObject
+@property (nonatomic) double mood;
+@property (nonatomic) double valence;
+@property (nonatomic) double arousal;
+@property (nonatomic) double dominance;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) {?={?=qiIq}{?=qiIq}} timeRange;
+@property (nonatomic) double confidence;
+- (double)confidence;
+- (id)timeRange;
+- (void)setConfidence:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)setTimeRange:;
+- (void)encodeWithCoder:;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (double)mood;
+- (id)initWithBinarySampleRepresentation:metadata:timestamp:;
+- (id)binarySampleRepresentation;
+- (double)valence;
+- (double)arousal;
+- (id)initWithMood:valence:arousal:dominance:;
+- (double)dominance;
++ (BOOL)supportsSecureCoding;
+@end

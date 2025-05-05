@@ -1,0 +1,34 @@
+@interface IESSearchEffectsModel : MTLModel
+@property (nonatomic) NSString searchTips;
+@property (nonatomic) NSString searchID;
+@property (nonatomic) q cursor;
+@property (nonatomic) BOOL hasMore;
+@property (nonatomic) BOOL isUseHot;
+@property (nonatomic) NSArray effects;
+@property (nonatomic) NSArray collection;
+@property (nonatomic) NSArray bindEffects;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setBindEffects:;
+- (id)bindEffects;
+- (BOOL)isUseHot;
+- (id)searchTips;
+- (void)setIsUseHot:;
+- (void)setSearchTips:;
+- (id)collection;
+- (long long)cursor;
+- (void)setCollection:;
+- (id)effects;
+- (void)setHasMore:;
+- (void)setCursor:;
+- (void).cxx_destruct;
+- (BOOL)hasMore;
+- (void)setEffects:;
+- (id)searchID;
+- (void)setSearchID:;
+- (void)updateEffects;
++ (id)JSONKeyPathsByPropertyKey;
++ (id)JSONTransformerForKey:;
+@end

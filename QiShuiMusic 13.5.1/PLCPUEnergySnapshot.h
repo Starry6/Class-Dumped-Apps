@@ -1,0 +1,30 @@
+@interface PLCPUEnergySnapshot : NSObject
+@property (nonatomic) Q cpuEnergy;
+@property (nonatomic) Q cpuEnergyBilledToMe;
+@property (nonatomic) Q cpuEnergyBilledToOthers;
+@property (nonatomic) NSMutableDictionary mockData;
+- (id)mockData;
+- (unsigned long long)cpuEnergy;
+- (void)setMockData:;
+- (BOOL)isValid;
+- (void).cxx_destruct;
+- (void)setCpuEnergy:;
+- (id)description;
+- (double)computeEnergyDiff:;
+- (id)initWithIdentifier:andMockData:;
+- (double)computeEnergyDiffUntilNow:andAdjustSnapshotToNow:;
+- (BOOL)snapshotCPUEnergy:;
+- (void)refreshCoalitionIDMapping;
+- (id)getCoalitionIDForIdentifier:;
+- (id)searchCoalitionsCacheForID:;
+- (unsigned long long)cpuEnergyBilledToMe;
+- (void)setCpuEnergyBilledToMe:;
+- (unsigned long long)cpuEnergyBilledToOthers;
+- (void)setCpuEnergyBilledToOthers:;
++ (void)setIdentifierToCoalitionID:;
++ (void)setIdentifierToAccountingName:;
++ (id)identifierToCoalitionID;
++ (id)identifierToAccountingName;
++ (id)coalitionIDToCoalitionNameMapping;
++ (void)setCoalitionIDToCoalitionNameMapping:;
+@end

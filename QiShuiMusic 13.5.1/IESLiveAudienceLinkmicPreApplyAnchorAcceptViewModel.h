@@ -1,0 +1,32 @@
+@interface IESLiveAudienceLinkmicPreApplyAnchorAcceptViewModel : NSObject
+@property (nonatomic) HTSLiveInteractiveAPI api;
+@property (nonatomic) NSString cursor;
+@property (nonatomic) q size;
+@property (nonatomic) HTSEventContext eventContext;
+@property (nonatomic) NSNumber serverTime;
+@property (nonatomic) NSMutableArray usersArray;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithDIContext:eventContext:;
+- (void)audienceInteractivePermitApplicationOfUser:extraInfo:;
+- (void)didSetAttachingDIContext;
+- (void)fetchPreApplyList;
+- (BOOL)isSelfAnchor;
+- (void)permitPreApplyThenStartBigPartyWithUser:;
+- (void)setEventContext:;
+- (void)setServerTime:;
+- (void)setUsersArray:;
+- (void)trackShowWithUser:;
+- (id)usersArray;
+- (id)cursor;
+- (void)setCursor:;
+- (void).cxx_destruct;
+- (id)serverTime;
+- (id)eventContext;
+- (void)setSize:;
+- (long long)size;
+- (id)api;
+- (void)setApi:;
+@end

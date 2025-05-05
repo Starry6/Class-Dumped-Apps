@@ -1,0 +1,33 @@
+@interface FBSProcessTerminationRequest : NSObject
+@property (nonatomic) NSString label;
+@property (nonatomic) <FBSProcess> process;
+@property (nonatomic) Q options;
+@property (nonatomic) q reportType;
+@property (nonatomic) q exceptionCode;
+@property (nonatomic) NSString explanation;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)explanation;
+- (void)setOptions:;
+- (void)execute;
+- (void)setLabel:;
+- (id)succinctDescriptionBuilder;
+- (id)label;
+- (void)setProcess:;
+- (void)setReportType:;
+- (unsigned long long)options;
+- (id)process;
+- (void).cxx_destruct;
+- (long long)exceptionCode;
+- (void)setExplanation:;
+- (id)succinctDescription;
+- (id)description;
+- (void)setExceptionCode:;
+- (long long)reportType;
+- (id)descriptionBuilderWithMultilinePrefix:;
+- (id)descriptionWithMultilinePrefix:;
+- (id)copyWithZone:;
++ (id)requestForProcess:withLabel:;
+@end

@@ -1,0 +1,31 @@
+@interface BDTrackerDefaults : NSObject
+@property (nonatomic) double dataKeepInterval;
+@property (nonatomic) BOOL eventPriorityEnable;
+@property (nonatomic) BOOL eventSamplingEnable;
+@property (nonatomic) q timerInterval;
+@property (nonatomic) NSMutableDictionary rawData;
+@property (nonatomic) NSString plistPath;
+- (id)arrayValueForKey:;
+- (double)dataKeepInterval;
+- (BOOL)eventPriorityEnable;
+- (BOOL)eventSamplingEnable;
+- (long long)longlongValueForKey:;
+- (void)saveDataToFile;
+- (void)setDataKeepInterval:;
+- (void)setEventPriorityEnable:;
+- (void)setEventSamplingEnable:;
+- (void)setPlistPath:;
+- (long long)timerInterval;
+- (long long)integerValueForKey:;
+- (id)init;
+- (void)setDefaultValue:forKey:;
+- (void)setRawData:;
+- (id)plistPath;
+- (id)objectForKey:;
+- (void).cxx_destruct;
+- (double)doubleValueForKey:;
+- (BOOL)boolValueForKey:;
+- (id)rawData;
+- (void)setTimerInterval:;
++ (id)sharedInstance;
+@end

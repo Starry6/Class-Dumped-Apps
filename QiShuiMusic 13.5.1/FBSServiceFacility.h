@@ -1,0 +1,31 @@
+@interface FBSServiceFacility : NSObject
+@property (nonatomic) NSSet _prerequisiteMilestones;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) FBSSerialQueue queue;
+@property (nonatomic) NSSet clients;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (id)clients;
+- (void)dealloc;
+- (void)noteClientDidConnect:withMessage:;
+- (id)identifier;
+- (id)succinctDescriptionBuilder;
+- (id)initWithIdentifier:queue:;
+- (id)_prerequisiteMilestones;
+- (void).cxx_destruct;
+- (id)succinctDescription;
+- (void)noteDidReceiveMessage:withType:fromClient:;
+- (id)queue;
+- (id)descriptionBuilderWithMultilinePrefix:;
+- (void)invalidate;
+- (void)noteClientDidDisconnect:;
+- (id)descriptionWithMultilinePrefix:;
+- (BOOL)queue_clientDidConnect:withMessage:;
+- (void)queue_clientDidDisconnect:;
+- (void)queue_handleMessage:withType:fromClient:;
+- (void)sendMessage:withType:toClients:;
+- (BOOL)shouldAllowClientConnection:withMessage:;
+@end

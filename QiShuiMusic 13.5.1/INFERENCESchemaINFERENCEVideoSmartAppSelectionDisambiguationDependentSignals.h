@@ -1,0 +1,33 @@
+@interface INFERENCESchemaINFERENCEVideoSmartAppSelectionDisambiguationDependentSignals : SISchemaInstrumentationMessage
+@property (nonatomic) BOOL isDisambiguatedApp;
+@property (nonatomic) BOOL hasIsDisambiguatedApp;
+@property (nonatomic) NSInteger modelAppConfidence;
+@property (nonatomic) BOOL hasModelAppConfidence;
+@property (nonatomic) NSInteger disambiguationAppOrdinal;
+@property (nonatomic) BOOL hasDisambiguationAppOrdinal;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)setIsDisambiguatedApp:;
+- (BOOL)hasIsDisambiguatedApp;
+- (void)setHasIsDisambiguatedApp:;
+- (void)deleteIsDisambiguatedApp;
+- (void)setModelAppConfidence:;
+- (BOOL)hasModelAppConfidence;
+- (void)setHasModelAppConfidence:;
+- (void)deleteModelAppConfidence;
+- (void)setDisambiguationAppOrdinal:;
+- (BOOL)hasDisambiguationAppOrdinal;
+- (void)setHasDisambiguationAppOrdinal:;
+- (void)deleteDisambiguationAppOrdinal;
+- (BOOL)isDisambiguatedApp;
+- (int)modelAppConfidence;
+- (int)disambiguationAppOrdinal;
+@end

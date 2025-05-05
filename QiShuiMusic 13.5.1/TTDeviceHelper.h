@@ -1,0 +1,38 @@
+@interface TTDeviceHelper : NSObject
++ (unsigned long long)deviceWidthType;
++ (BOOL)isIPhoneXDevice;
++ (float)OSVersionNumber;
++ (BOOL)isIPhoneXSeries;
++ (BOOL)isIpadProDevice;
++ (long long)getTotalDiskSpace;
++ (BOOL)is480Screen;
++ (BOOL)is568Screen;
++ (BOOL)is667Screen;
++ (BOOL)is736Screen;
++ (BOOL)is812Screen;
++ (BOOL)is844Screen;
++ (BOOL)is896Screen;
++ (BOOL)is926Screen;
++ (BOOL)isIpadDeviceModel;
++ (BOOL)isJailBroken;
++ (BOOL)isPadDevice;
++ (BOOL)isScreenWidthLarge320;
++ (BOOL)judge480Screen;
++ (BOOL)judge568Screen;
++ (BOOL)judge667Screen;
++ (BOOL)judge736Screen;
++ (BOOL)judge812Screen;
++ (BOOL)judge844Screen;
++ (BOOL)judge896Screen;
++ (BOOL)judge926Screen;
++ (BOOL)judgePadScreen;
++ (id)resolutionString;
++ (double)ssOnePixel;
++ (unsigned long long)getDeviceType;
++ (double)screenScale;
++ (id)resolution;
++ (id)platformName;
++ (long long)getFreeDiskSpace;
++ (id)MACAddress;
++ (id)currentLanguage;
+@end

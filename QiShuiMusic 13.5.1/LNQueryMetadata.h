@@ -1,0 +1,38 @@
+@interface LNQueryMetadata : NSObject
+@property (nonatomic) NSString queryType;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) NSString entityType;
+@property (nonatomic) NSArray parameters;
+@property (nonatomic) NSArray sortingOptions;
+@property (nonatomic) NSString mangledTypeName;
+@property (nonatomic) NSDictionary mangledTypeNameByBundleIdentifier;
+@property (nonatomic) NSOrderedSet effectiveBundleIdentifiers;
+@property (nonatomic) NSDictionary availabilityAnnotations;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)identifier;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)parameters;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)entityType;
+- (id)description;
+- (id)queryType;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)mangledTypeName;
+- (id)mangledTypeNameByBundleIdentifier;
+- (id)effectiveBundleIdentifiers;
+- (id)availabilityAnnotations;
+- (id)sortingOptions;
+- (id)initWithIdentifier:entityType:mangledTypeName:mangledTypeNameByBundleIdentifier:effectiveBundleIdentifiers:parameters:sortingOptions:availabilityAnnotations:;
+- (id)metadataByAddingEffectiveBundleIdentifiers:mangledTypeName:;
+- (id)mangledTypeNameForBundleIdentifier:;
+- (id)initWithIdentifier:entityType:mangledTypeName:mangledTypeNameByBundleIdentifier:effectiveBundleIdentifiers:parameters:sortingOptions:;
+- (id)initWithIdentifier:queryType:entityType:mangledTypeName:mangledTypeNameByBundleIdentifier:effectiveBundleIdentifiers:parameters:sortingOptions:;
+- (id)initWithIdentifier:queryType:entityType:parameters:sortingOptions:;
++ (BOOL)supportsSecureCoding;
+@end

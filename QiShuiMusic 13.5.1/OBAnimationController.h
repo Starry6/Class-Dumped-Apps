@@ -1,0 +1,38 @@
+@interface OBAnimationController : NSObject
+@property (nonatomic) CAPackage package;
+@property (nonatomic) CAStateController stateController;
+@property (nonatomic) OBAnimationView animationView;
+@property (nonatomic) NSArray animatedStates;
+@property (nonatomic) BOOL canceled;
+@property (nonatomic) Q stateIndex;
+@property (nonatomic) OBAnimationState firstState;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setPackage:;
+- (id)package;
+- (void)startAnimation;
+- (void).cxx_destruct;
+- (void)setCanceled:;
+- (id)stateController;
+- (BOOL)canceled;
+- (void)stopAnimation;
+- (void)setStateController:;
+- (void)_stepAnimationStatesForLayer:;
+- (void)updateAnimationForAppearanceChange;
+- (id)initWithUrlToPackage:animationView:animatedStates:startAtFirstState:;
+- (id)initWithUrlToPackage:animationView:sizingTransformScale:animatedStates:startAtFirstState:;
+- (void)_initializeStartingStateForStopAnimation:;
+- (void)_startAnimationForLayer:;
+- (id)_caStateForAnimationState:;
+- (id)animationView;
+- (void)setAnimationView:;
+- (id)animatedStates;
+- (void)setAnimatedStates:;
+- (unsigned long long)stateIndex;
+- (void)setStateIndex:;
+- (id)firstState;
+- (void)setFirstState:;
++ (id)packageForURL:;
+@end

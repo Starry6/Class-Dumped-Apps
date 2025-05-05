@@ -1,0 +1,30 @@
+@interface IESECLynxCardBridgeEventSubscriber : NSObject
+@property (nonatomic) HybridLynxView container;
+@property (nonatomic) @? callback;
+@property (nonatomic) double timestamp;
+@property (nonatomic) NSString eventId;
+@property (nonatomic) BOOL shouldFilterEvent;
+@property (nonatomic) NSString listContextId;
+@property (nonatomic) BOOL breakEventDispatch;
+- (BOOL)breakEventDispatch;
+- (id)listContextId;
+- (void)setBreakEventDispatch:;
+- (void)setListContextId:;
+- (void)setShouldFilterEvent:;
+- (BOOL)shouldFilterEvent;
+- (id)callback;
+- (void)setContainer:;
+- (void)setCallback:;
+- (id)container;
+- (unsigned long long)hash;
+- (BOOL)receiveEvent:;
+- (void)setTimestamp:;
+- (void).cxx_destruct;
+- (double)timestamp;
+- (BOOL)isEqual:;
+- (id)eventId;
+- (void)setEventId:;
++ (id)subscriberWithEventId:callback:;
++ (id)subscriberWithCallback:;
++ (id)subscriberWithContainer:timestamp:;
+@end

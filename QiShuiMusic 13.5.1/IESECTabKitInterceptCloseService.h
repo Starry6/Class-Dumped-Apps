@@ -1,0 +1,38 @@
+@interface IESECTabKitInterceptCloseService : IESECTabKitService
+@property (nonatomic) IESECServiceProxy<IESECTabKitDataService> dataService;
+@property (nonatomic) IESECServiceProxy<IESECTabKitStorageService> storageService;
+@property (nonatomic) IESECServiceProxy<IESECTabKitEventService><IESECTabKitEventSubscriber> eventService;
+@property (nonatomic) @? willCloseAction;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)configForTabID:;
+- (void)setDataService:;
+- (void)close:animated:;
+- (id)willCloseAction;
+- (void)ackCloseActionIntercepted;
+- (void)close:action:;
+- (void)close:action:animated:;
+- (void)configInterceptClose:;
+- (id)currentInterceptCloseConfig;
+- (id)dataService;
+- (void)doCloseAction:;
+- (void)doInterceptCloseAction:;
+- (void)enableInteractivePopIntercept:;
+- (void)handleInteractivePopGestureRecognizer:;
+- (void)notifyDidInterceptCloseAction:;
+- (void)p_doCloseAction:;
+- (void)p_notifyDidInterceptCloseAction:;
+- (void)setStorageService:;
+- (void)setWillCloseAction:;
+- (void)setupAckCloseActionInterceptedTimeoutHandler;
+- (void)setupInterceptClose;
+- (BOOL)shouldIntercept:closeAction:;
+- (id)init;
+- (void)setEventService:;
+- (void)close:;
+- (void).cxx_destruct;
+- (id)eventService;
+- (id)storageService;
+@end

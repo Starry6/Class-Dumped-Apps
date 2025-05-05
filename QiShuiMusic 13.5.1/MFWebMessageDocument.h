@@ -1,0 +1,30 @@
+@interface MFWebMessageDocument : MFWebAttachmentSource
+@property (nonatomic) BOOL visuallyEmpty;
+@property (nonatomic) NSURL baseURL;
+@property (nonatomic) MFMimeBody mimeBody;
+@property (nonatomic) MFMimePart mimePart;
+@property (nonatomic) NSData htmlData;
+@property (nonatomic) I preferredEncoding;
+@property (nonatomic) MFAttachmentManager attachmentManager;
+- (id)init;
+- (id)baseURL;
+- (id)attachmentManager;
+- (void).cxx_destruct;
+- (id)fileWrapper;
+- (void)setPreferredEncoding:;
+- (id)mimeBody;
+- (unsigned int)preferredEncoding;
+- (id)initWithMimePart:;
+- (id)htmlData;
+- (id)attachmentForURL:;
+- (id)initWithMimeBody:;
+- (id)_initWithMimePart:htmlData:;
+- (id)initWithMimePart:htmlData:encoding:;
+- (id)mimePartForURL:;
+- (id)attachmentsInDocument;
+- (id)preferredCharacterSet;
+- (id)mimePart;
+- (BOOL)isVisuallyEmpty;
+- (void)setVisuallyEmpty:;
+- (void)setAttachmentManager:;
+@end

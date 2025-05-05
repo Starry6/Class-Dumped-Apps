@@ -1,0 +1,34 @@
+@interface JSONModelClassProperty : NSObject
+@property (nonatomic) BOOL isIndex;
+@property (nonatomic) NSString name;
+@property (nonatomic) # type;
+@property (nonatomic) NSString structName;
+@property (nonatomic) NSString protocol;
+@property (nonatomic) BOOL isOptional;
+@property (nonatomic) BOOL isStandardJSONType;
+@property (nonatomic) BOOL isMutable;
+@property (nonatomic) : customGetter;
+@property (nonatomic) NSMutableDictionary customSetters;
+- (SEL)customGetter;
+- (id)customSetters;
+- (BOOL)isStandardJSONType;
+- (void)setCustomGetter:;
+- (void)setCustomSetters:;
+- (void)setIsIndex:;
+- (void)setIsMutable:;
+- (void)setIsOptional:;
+- (void)setIsStandardJSONType:;
+- (id)protocol;
+- (BOOL)isOptional;
+- (void)setProtocol:;
+- (void)setName:;
+- (void)setType:;
+- (void)setStructName:;
+- (Class)type;
+- (id)structName;
+- (void).cxx_destruct;
+- (BOOL)isMutable;
+- (id)description;
+- (id)name;
+- (BOOL)isIndex;
+@end

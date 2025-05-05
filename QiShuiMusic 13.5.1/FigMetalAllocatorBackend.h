@@ -1,0 +1,30 @@
+@interface FigMetalAllocatorBackend : NSObject
+@property (nonatomic) Q memSize;
+@property (nonatomic) Q usedSize;
+@property (nonatomic) Q largestOccupiedOffset;
+@property (nonatomic) NSInteger allocatorType;
+@property (nonatomic) Q resourceOptions;
+@property (nonatomic) Q maxContiguousFreeSize;
+- (unsigned long long)resourceOptions;
+- (void)dealloc;
+- (unsigned long long)usedSize;
+- (void).cxx_destruct;
+- (void)purgeResources;
+- (void)reset;
+- (id)description;
+- (unsigned long long)memSize;
+- (id)initWithDevice:allocatorType:;
+- (int)setupWithDescriptor:;
+- (unsigned long long)largestOccupiedOffset;
+- (int)allocatorType;
+- (id)getSizeAndAlignForDescriptor:;
+- (id)getSizeAndAlignForBufferDescriptor:;
+- (unsigned long long)maxContiguousFreeSize;
+- (int)setupWithDescriptor:allocatorBackend:;
+- (void)makeBufferAliasable:;
+- (void)makeTextureAliasable:;
+- (unsigned long long)usedSizeAll;
+- (BOOL)hasCreatedResource:;
+- (id)newBufferWithDescriptor:sizeAlign:;
+- (id)newTextureWithDescriptor:sizeAlign:;
+@end

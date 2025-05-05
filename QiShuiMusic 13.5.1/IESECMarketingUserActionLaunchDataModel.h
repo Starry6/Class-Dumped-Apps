@@ -1,0 +1,31 @@
+@interface IESECMarketingUserActionLaunchDataModel : MTLModel
+@property (nonatomic) BOOL switchOn;
+@property (nonatomic) q ruleId;
+@property (nonatomic) q sceneId;
+@property (nonatomic) double closeDuration;
+@property (nonatomic) double startTimeStamp;
+@property (nonatomic) NSString action;
+@property (nonatomic) NSString scene;
+@property (nonatomic) NSString sceneIdStr;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (double)closeDuration;
+- (id)sceneIdStr;
+- (void)setCloseDuration:;
+- (void)setStartTimeStamp:;
+- (void)setScene:;
+- (id)action;
+- (id)scene;
+- (void)setAction:;
+- (void).cxx_destruct;
+- (void)setSwitchOn:;
+- (BOOL)switchOn;
+- (long long)sceneId;
+- (void)setSceneId:;
+- (double)startTimeStamp;
+- (void)setRuleId:;
+- (long long)ruleId;
++ (id)JSONKeyPathsByPropertyKey;
+@end

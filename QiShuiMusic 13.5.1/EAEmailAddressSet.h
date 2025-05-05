@@ -1,0 +1,38 @@
+@interface EAEmailAddressSet : NSMutableSet
+@property (nonatomic) NSMutableSet internalSet;
+@property (nonatomic) NSData serializedRepresentation;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)intersectSet:;
+- (id)init;
+- (void)unionSet:;
+- (id)serializedRepresentation;
+- (id)initWithSerializedRepresentation:;
+- (unsigned long long)countByEnumeratingWithState:objects:count:;
+- (BOOL)isSubsetOfSet:;
+- (id)initWithCoder:;
+- (void)addObject:;
+- (void)removeAllObjects;
+- (void)removeObject:;
+- (void)encodeWithCoder:;
+- (BOOL)intersectsSet:;
+- (void)minusSet:;
+- (id)member:;
+- (id)internalSet;
+- (void).cxx_destruct;
+- (BOOL)isEqualToSet:;
+- (id)objectEnumerator;
+- (id)mutableCopyWithZone:;
+- (id)allObjects;
+- (unsigned long long)count;
+- (void)setInternalSet:;
+- (void)setSet:;
+- (id)initWithCapacity:;
+- (id)copyWithZone:;
++ (id)log;
++ (BOOL)supportsSecureCoding;
++ (id)set;
++ (id)setWithCapacity:;
+@end

@@ -1,0 +1,31 @@
+@interface IESLiveSaaSUserListView : UIView
+@property (nonatomic) IESLiveSaaSRoomProfileStore store;
+@property (nonatomic) IESLiveSaaSLiveUserListView listView;
+@property (nonatomic) <HTSLiveSaaSRoomProfileActions> profileActionCreator;
+@property (nonatomic) <IESLiveSaaSFeedDrawerProvider> drawerProvider;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didSetAttachingDIContext;
+- (void)didUpdateRoomUserCount:;
+- (id)drawerProvider;
+- (id)pluginLayoutContentInsets;
+- (id)pluginLayoutContentSize;
+- (id)profileActionCreator;
+- (void)refreshAudienceList:;
+- (void)refreshAudienceRankList:;
+- (void)refreshLiveRoomModel:;
+- (void)setDrawerProvider:;
+- (void)setProfileActionCreator:;
+- (id)viewType;
+- (void)setStore:;
+- (id)initWithStore:;
+- (id)intrinsicContentSize;
+- (id)containerView;
+- (void)setListView:;
+- (id)listView;
+- (void).cxx_destruct;
+- (id)store;
+- (void)setupViews;
+@end

@@ -1,0 +1,31 @@
+@interface UIInputViewSetPlacementWrapper : UIInputViewSetPlacement
+- (BOOL)isInteractive;
+- (BOOL)showsInputViews;
+- (BOOL)showsEditItems;
+- (id)initWithCoder:;
+- (BOOL)accessoryViewWillAppear;
+- (id)remoteIntrinsicContentSizeForInputViewInSet:includingIAV:;
+- (void)encodeWithCoder:;
+- (id)verticalConstraintForInputViewSet:hostView:containerView:;
+- (double)alpha;
+- (BOOL)showsInputOrAssistantViews;
+- (id)transform;
+- (Class)applicatorClassForKeyboard:;
+- (void).cxx_destruct;
+- (BOOL)inputViewWillAppear;
+- (id)description;
+- (BOOL)isVisible;
+- (BOOL)showsKeyboard;
+- (BOOL)isUndocked;
+- (BOOL)isEqual:;
+- (void)setDirty;
+- (id)horizontalConstraintForInputViewSet:hostView:containerView:;
+- (id)widthConstraintForInputViewSet:hostView:containerView:;
+- (double)inputAssistantViewHeightForInputViewSet:;
+- (id)applicatorInfoForOwner:;
+- (id)subPlacements;
+- (unsigned long long)indexForPurpose:;
+- (unsigned long long)computeComparisonMask;
++ (BOOL)supportsSecureCoding;
++ (id)placementWithPlacement:;
+@end

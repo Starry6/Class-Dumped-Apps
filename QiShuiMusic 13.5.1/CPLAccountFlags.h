@@ -1,0 +1,31 @@
+@interface CPLAccountFlags : PBCodable
+@property (nonatomic) BOOL hasDefaultHEVC;
+@property (nonatomic) BOOL defaultHEVC;
+@property (nonatomic) BOOL hasReason;
+@property (nonatomic) NSInteger reason;
+@property (nonatomic) BOOL hasVersion;
+@property (nonatomic) q version;
+- (id)reasonAsString:;
+- (void)setHasVersion:;
+- (void)setVersion:;
+- (long long)version;
+- (void)writeTo:;
+- (int)reason;
+- (unsigned long long)hash;
+- (BOOL)hasDefaultHEVC;
+- (BOOL)hasVersion;
+- (void)setReason:;
+- (void)copyTo:;
+- (BOOL)hasReason;
+- (void)mergeFrom:;
+- (void)setHasReason:;
+- (BOOL)defaultHEVC;
+- (BOOL)readFrom:;
+- (id)description;
+- (void)setHasDefaultHEVC:;
+- (int)StringAsReason:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)setDefaultHEVC:;
+- (id)copyWithZone:;
+@end

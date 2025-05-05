@@ -1,0 +1,37 @@
+@interface RVDocumentContext : NSObject
+@property (nonatomic) NSString authorName;
+@property (nonatomic) NSString authorEmailAddress;
+@property (nonatomic) NSString authorContactUUID;
+@property (nonatomic) NSDate contentReferenceDate;
+@property (nonatomic) NSTimeZone contentReferenceTimeZone;
+@property (nonatomic) NSString contentSubject;
+@property (nonatomic) NSString selectedText;
+@property (nonatomic) NSURL documentURL;
+@property (nonatomic) NSArray existingDDResultsList;
+@property (nonatomic) NSString coreSpotlightUniqueIdentifier;
+- (id)selectedText;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)documentURL;
+- (void)setSelectedText:;
+- (void)setDocumentURL:;
+- (id)authorName;
+- (void)setAuthorName:;
+- (id)coreSpotlightUniqueIdentifier;
+- (void)setCoreSpotlightUniqueIdentifier:;
+- (void)setNameAndEmailWithRawSenderField:;
+- (id)authorEmailAddress;
+- (void)setAuthorEmailAddress:;
+- (id)authorContactUUID;
+- (void)setAuthorContactUUID:;
+- (id)contentReferenceDate;
+- (void)setContentReferenceDate:;
+- (id)contentReferenceTimeZone;
+- (void)setContentReferenceTimeZone:;
+- (id)contentSubject;
+- (void)setContentSubject:;
+- (id)existingDDResultsList;
+- (void)setExistingDDResultsList:;
++ (BOOL)supportsSecureCoding;
+@end

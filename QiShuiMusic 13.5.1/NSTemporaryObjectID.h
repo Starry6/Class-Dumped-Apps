@@ -1,0 +1,34 @@
+@interface NSTemporaryObjectID : NSManagedObjectID
+- (id)entity;
+- (BOOL)_isPersistentStoreAlive;
+- (id)URIRepresentation;
+- (void)dealloc;
+- (unsigned long long)hash;
+- (id)persistentStore;
+- (id)release;
+- (id)_retainedURIString;
+- (id)_storeIdentifier;
+- (id)retain;
+- (BOOL)isTemporaryID;
+- (id)initWithEntity:andUUIDString:;
+- (id)initWithEntity:;
+- (unsigned long long)retainCount;
+- (BOOL)isEqual:;
+- (id)_referenceData;
+- (int)_temporaryIDCounter;
+- (void)_setPersistentStore:;
++ (void)setObjectStoreIdentifier:;
++ (id)allocWithZone:;
++ (id)alloc;
++ (BOOL)automaticallyNotifiesObserversForKey:;
++ (BOOL)accessInstanceVariablesDirectly;
++ (void)_storeDeallocated;
++ (long long)version;
++ (Class)classForStore:;
++ (unsigned int)allocateBatch:forEntity:count:;
++ (id)_retain_1;
++ (id)initWithEntity:andUUIDString:;
++ (BOOL)_usesTaggedPointers;
++ (void)_release_1;
++ (id)initWithEntity:;
+@end

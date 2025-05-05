@@ -1,0 +1,31 @@
+@interface UIStatusBarButtonActionItemView : UIStatusBarItemView
+@property (nonatomic) BOOL selected;
+@property (nonatomic) CALayer ringLayer;
+@property (nonatomic) BOOL extendsHitTestingFrame;
+- (BOOL)selected;
+- (void)pressesCancelled:withEvent:;
+- (BOOL)canBecomeFocused;
+- (void)layoutSubviews;
+- (BOOL)pointInside:withEvent:;
+- (void)setSelected:;
+- (void)pressesEnded:withEvent:;
+- (void)pressesBegan:withEvent:;
+- (void).cxx_destruct;
+- (void)didUpdateFocusInContext:withAnimationCoordinator:;
+- (long long)buttonType;
+- (BOOL)showsTouchWhenHighlighted;
+- (BOOL)allowsUserInteraction;
+- (double)updateContentsAndWidth;
+- (id)highlightImage;
+- (BOOL)usesAdvancedActions;
+- (void)_pressButton:;
+- (void)_doubleTapButton:;
+- (void)_pressAndHoldButton:;
+- (BOOL)extendsHitTestingFrame;
+- (id)_createButton;
+- (void)_triggerButtonWithAction:;
+- (id)_contentsImageFrame;
+- (void)setLayerHighlightImage:;
+- (id)ringLayer;
+- (void)setRingLayer:;
+@end

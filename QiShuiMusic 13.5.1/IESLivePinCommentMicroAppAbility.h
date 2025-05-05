@@ -1,0 +1,36 @@
+@interface IESLivePinCommentMicroAppAbility : NSObject
+@property (nonatomic) <IESLiveRoomServiceAdapter> room;
+@property (nonatomic) HTSLiveApi api;
+@property (nonatomic) <IESLivePinCommentAbilityDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)itemId:;
+- (id)paramsWithNode:;
+- (void)pinCommentNode:;
+- (id)createNodeWithMsgListNode:;
+- (void)didClickedActionSheetItemWithMsgListNode:;
+- (void)didClickedOnPinWithNode:;
+- (void)didDisplayedOnPinWithNode:;
+- (void)didDisplayedOnceOnPinWithNode:;
+- (id)duplicateToastText;
+- (id)fetchProcessedSchemaWithNode:;
+- (void)handleHighlightItem:withNode:;
+- (BOOL)hasPinAuth;
+- (id)initWithRoomModel:diContext:;
+- (void)injectTrackEventParams:withNode:forType:;
+- (BOOL)isDuplicateNode:withOtherNode:;
+- (id)pinCommonFromHighlightItem:;
+- (void)pinMicroAppNode:actionType:finish:;
+- (double)preferHeightWithNode:;
+- (void)unPinCommentNode:;
+- (void)updateNode:withHighlightItem:;
+- (void)setDelegate:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)room;
+- (void)setRoom:;
+- (id)api;
+- (void)setApi:;
+@end

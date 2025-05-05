@@ -1,0 +1,35 @@
+@interface CNMeCardSharingSettingsHeaderViewController : UIViewController
+@property (nonatomic) <CNMeCardSharingAvatarProvider> avatarProvider;
+@property (nonatomic) CNMeCardSharingAvatarViewController avatarViewController;
+@property (nonatomic) UIButton labelButton;
+@property (nonatomic) UIView separatorView;
+@property (nonatomic) <CNMeCardSharingSettingsHeaderViewControllerDelegate> delegate;
+@property (nonatomic) double separatorHeight;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)reload;
+- (double)separatorHeight;
+- (id)separatorView;
+- (void)setDelegate:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)viewDidLayoutSubviews;
+- (void)setSeparatorView:;
+- (void)viewDidLoad;
+- (id)avatarViewController;
+- (void)setAvatarViewController:;
+- (id)avatarProvider;
+- (void)setAvatarProvider:;
+- (id)labelButton;
+- (void)labelButtonTapped:;
+- (void)avatarViewControllerDidUpdateImage:;
+- (void)avatarViewControllerWasTapped:;
+- (id)initWithAvatarProvider:;
+- (double)desiredHeightForTraitCollection:;
+- (void)updateWithAvatarProvider:;
+- (void)updateForChangedImage;
+- (void)setLabelButton:;
++ (double)avatarEdgeLengthForTraitCollection:;
+@end

@@ -1,0 +1,33 @@
+@interface IESECListKitMediaAutoPlayManager : NSObject
+@property (nonatomic) <IESECListKitCellModelProtocol> playingCellModel;
+@property (nonatomic) IESECListKitBFFViewController bffVC;
+@property (nonatomic) NSMutableArray playerQueue;
+@property (nonatomic) double autoPlayWindowRatio;
+@property (nonatomic) double cellRatio;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setPlayerQueue:;
+- (double)autoPlayWindowRatio;
+- (id)bffVC;
+- (double)cellRatio;
+- (id)firstPlayableCell;
+- (id)firstPlayableCellModel;
+- (id)initWithVC:;
+- (void)playVisibleCellIfNeed;
+- (id)playingCellModel;
+- (void)setAutoPlayWindowRatio:;
+- (void)setBffVC:;
+- (void)setCellRatio:;
+- (void)setPlayingCellModel:;
+- (BOOL)shouldPlay:;
+- (void)stopCurrentPlayer;
+- (void)updatePlayingCellModel:;
+- (void)scrollViewDidEndDecelerating:;
+- (void)scrollViewDidEndDragging:willDecelerate:;
+- (void).cxx_destruct;
+- (void)scrollViewDidEndScrollingAnimation:;
+- (id)playerQueue;
+- (void)playNext;
+@end

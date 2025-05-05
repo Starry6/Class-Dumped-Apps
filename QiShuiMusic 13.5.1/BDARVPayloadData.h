@@ -1,0 +1,38 @@
+@interface BDARVPayloadData : NSObject
+@property (nonatomic) NSArray meta;
+@property (nonatomic) NSDictionary rawData;
+@property (nonatomic) NSDictionary styleSameLynxRawData;
+@property (nonatomic) BOOL styleSame;
+@property (nonatomic) NSDictionary data;
+@property (nonatomic) BDARVDataModel dataModel;
+@property (nonatomic) NSString requestid;
+@property (nonatomic) NSString timestamp;
+@property (nonatomic) BOOL disableNativeSendReward;
+@property (nonatomic) NSDictionary adShoppingDic;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)adShoppingDic;
+- (id)defaultMeta;
+- (BOOL)disableNativeSendReward;
+- (id)requestid;
+- (void)setAdShoppingDic:;
+- (void)setDisableNativeSendReward:;
+- (void)setRequestid:;
+- (void)setStyleSame:;
+- (void)setStyleSameLynxRawData:;
+- (BOOL)styleSame;
+- (id)styleSameLynxRawData;
+- (id)meta;
+- (void)setRawData:;
+- (id)data;
+- (id)initWithDictionary:error:;
+- (void)setMeta:;
+- (void)setTimestamp:;
+- (void).cxx_destruct;
+- (id)timestamp;
+- (id)rawData;
+- (id)dataModel;
+- (void)setDataModel:;
+@end

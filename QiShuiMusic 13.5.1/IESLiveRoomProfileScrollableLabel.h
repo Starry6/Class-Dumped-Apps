@@ -1,0 +1,38 @@
+@interface IESLiveRoomProfileScrollableLabel : UILabel
+@property (nonatomic) UIView labelsContainerView;
+@property (nonatomic) NSArray textArray;
+@property (nonatomic) NSString scrollableText;
+@property (nonatomic) UIStackView labelsContainerStackView;
+@property (nonatomic) NSString scrollableTextV2;
+@property (nonatomic) BOOL diggCountOptimizeEnabled;
+@property (nonatomic) UIFont scrollableFont;
+@property (nonatomic) UIColor scrollableTextColor;
+- (void)playAnimationWithText:duration:;
+- (BOOL)diggCountOptimizeEnabled;
+- (id)initWithText:font:textColor:;
+- (id)labelsContainerStackView;
+- (id)labelsContainerWithArray:;
+- (void)playAnimationWithNewText:duration:;
+- (id)scrollableFont;
+- (id)scrollableText;
+- (id)scrollableTextColor;
+- (id)scrollableTextV2;
+- (void)setDiggCountOptimizeEnabled:;
+- (void)setLabelsContainerStackView:;
+- (void)setLabelsContainerView:;
+- (void)setScrollableFont:;
+- (void)setScrollableText:;
+- (void)setScrollableTextColor:;
+- (void)setScrollableTextV2:;
+- (void)setTextArray:;
+- (void)textChangeAnimationForLabel:fromOldText:toNewText:duration:;
+- (void)updateLabelsContainerStackViewWithText:;
+- (void)updateTextV2:;
+- (void).cxx_destruct;
+- (id)textArray;
+- (void)updateText:;
+- (id)labelsContainerView;
++ (id)charStringArrayWithSourceString:;
++ (id)labelWithText:font:textColor:;
++ (void)textChangeAnimationForLabel:fromOldText:toNewText:newFrame:duration:;
+@end

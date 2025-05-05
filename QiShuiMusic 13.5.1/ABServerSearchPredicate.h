@@ -1,0 +1,37 @@
+@interface ABServerSearchPredicate : ABPredicate
+@property (nonatomic) DADConnection connection;
+@property (nonatomic) ^v source;
+@property (nonatomic) NSString accountIdentifier;
+@property (nonatomic) NSString searchString;
+@property (nonatomic) BOOL includeSourceInResults;
+@property (nonatomic) BOOL includePhotosInResults;
+@property (nonatomic) <ABPredicateDelegate> delegate;
+@property (nonatomic) NSInteger error;
+- (void)setSearchString:;
+- (void)dealloc;
+- (void)setAccountIdentifier:;
+- (id)searchString;
+- (id)accountIdentifier;
+- (void)setDelegate:;
+- (int)error;
+- (id)delegate;
+- (id)connection;
+- (id)source;
+- (void)setConnection:;
+- (void)setSource:;
+- (id)querySerializationIdentifier;
+- (void)ab_runPredicateWithSortOrder:ranked:inAddressBook:withDelegate:;
+- (void)searchQuery:returnedResults:;
+- (void)searchQuery:finishedWithError:;
+- (id)initWithSearchString:source:account:includeSourceInResults:includePhotosInResults:;
+- (id)initWithSearchString:source:account:includeSourceInResults:;
+- (id)initWithSearchString:source:account:;
+- (void)runPredicate;
+- (void)runPredicateWithDelegate:;
+- (int)_errorForDAStatusCode:;
+- (void)_searchQueryIsDone;
+- (BOOL)includeSourceInResults;
+- (void)setIncludeSourceInResults:;
+- (BOOL)includePhotosInResults;
+- (void)setIncludePhotosInResults:;
+@end

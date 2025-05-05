@@ -1,0 +1,34 @@
+@interface BDImageNSCache : NSCache
+@property (nonatomic) BOOL clearMemoryOnMemoryWarning;
+@property (nonatomic) BOOL clearMemoryWhenEnteringBackground;
+@property (nonatomic) BOOL shouldUseWeakMemoryCache;
+@property (nonatomic) NSMapTable weakCache;
+@property (nonatomic) NSObject<OS_dispatch_semaphore> weakCacheLock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)clearMemoryOnMemoryWarning;
+- (BOOL)clearMemoryWhenEnteringBackground;
+- (void)commonInit:;
+- (void)setClearMemoryOnMemoryWarning:;
+- (void)setClearMemoryWhenEnteringBackground:;
+- (void)setShouldUseWeakMemoryCache:;
+- (void)setWeakCache:;
+- (void)setWeakCacheLock:;
+- (BOOL)shouldUseWeakMemoryCache;
+- (id)weakCacheLock;
+- (BOOL)containsObjectForKey:;
+- (id)init;
+- (void)dealloc;
+- (void)didEnterBackground:;
+- (void)setConfig:;
+- (id)initWithConfig:;
+- (void)didReceiveMemoryWarning:;
+- (void)removeAllObjects;
+- (id)weakCache;
+- (id)objectForKey:;
+- (void).cxx_destruct;
+- (void)removeObjectForKey:;
+- (void)setObject:forKey:cost:;
+@end

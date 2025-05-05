@@ -1,0 +1,31 @@
+@interface GLTFAccessor : NSObject
+@property (nonatomic) GLTFBufferView bufferView;
+@property (nonatomic) q offset;
+@property (nonatomic) q componentType;
+@property (nonatomic) q dimension;
+@property (nonatomic) BOOL normalized;
+@property (nonatomic) q count;
+@property (nonatomic) NSArray minValues;
+@property (nonatomic) NSArray maxValues;
+@property (nonatomic) GLTFSparseStorage sparse;
+- (id)bufferView;
+- (id)initWithBufferView:offset:componentType:dimension:count:normalized:;
+- (id)maxValues;
+- (id)minValues;
+- (void)setBufferView:;
+- (void)setMaxValues:;
+- (void)setMinValues:;
+- (void)setCount:;
+- (long long)componentType;
+- (void)setDimension:;
+- (void)setOffset:;
+- (BOOL)isNormalized;
+- (long long)dimension;
+- (void)setComponentType:;
+- (long long)offset;
+- (void).cxx_destruct;
+- (long long)count;
+- (void)setNormalized:;
+- (void)setSparse:;
+- (id)sparse;
+@end

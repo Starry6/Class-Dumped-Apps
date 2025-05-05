@@ -1,0 +1,38 @@
+@interface SSMetricsBaseEvent : SSMetricsMutableEvent
+@property (nonatomic) NSNumber pixelRatio;
+@property (nonatomic) NSNumber screenHeight;
+@property (nonatomic) NSNumber screenWidth;
+@property (nonatomic) NSNumber windowHeight;
+@property (nonatomic) NSString windowOrientation;
+@property (nonatomic) NSNumber windowWidth;
+@property (nonatomic) NSString pageContext;
+@property (nonatomic) NSString pageDescription;
+@property (nonatomic) Q pageID;
+@property (nonatomic) NSString pageType;
+@property (nonatomic) NSString pageURL;
+- (id)screenWidth;
+- (void)setScreenHeight:;
+- (id)screenHeight;
+- (id)init;
+- (void)setPageID:;
+- (void)setWindowOrientation:;
+- (void)setPageType:;
+- (id)windowOrientation;
+- (id)description;
+- (id)pageType;
+- (unsigned long long)pageID;
+- (void)setScreenWidth:;
+- (id)pageURL;
+- (void)setPageURL:;
+- (BOOL)isBlacklistedByConfiguration:;
+- (id)pageContext;
+- (id)pageDescription;
+- (id)pixelRatio;
+- (void)setPageContext:;
+- (void)setPageDescription:;
+- (void)setPixelRatio:;
+- (void)setWindowHeight:;
+- (void)setWindowWidth:;
+- (id)windowHeight;
+- (id)windowWidth;
+@end

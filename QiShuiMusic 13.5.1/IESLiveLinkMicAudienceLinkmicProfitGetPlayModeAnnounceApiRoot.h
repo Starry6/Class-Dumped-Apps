@@ -1,0 +1,2 @@
+@interface IESLiveLinkMicAudienceLinkmicProfitGetPlayModeAnnounceApiRoot : GPBRootObject
+@end

@@ -1,0 +1,2 @@
+@interface UMPasswd : NSObject
+@end

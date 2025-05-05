@@ -1,0 +1,37 @@
+@interface CPLMomentShareScopeChange : CPLScopeChange
+@property (nonatomic) NSDate creationDate;
+@property (nonatomic) NSDate startDate;
+@property (nonatomic) NSDate endDate;
+@property (nonatomic) NSDate expiryDate;
+@property (nonatomic) q promisedAssetCount;
+@property (nonatomic) q promisedPhotosCount;
+@property (nonatomic) q promisedVideosCount;
+@property (nonatomic) NSData thumbnailImageData;
+@property (nonatomic) NSData previewImageData;
+@property (nonatomic) NSString originatingScopeIdentifier;
+- (id)startDate;
+- (void)setCreationDate:;
+- (void)setStartDate:;
+- (id)expiryDate;
+- (void)setEndDate:;
+- (id)endDate;
+- (void).cxx_destruct;
+- (void)setExpiryDate:;
+- (id)creationDate;
+- (id)thumbnailImageData;
+- (void)setThumbnailImageData:;
+- (id)previewImageData;
+- (id)momentShare;
+- (void)setMomentShare:;
+- (id)originatingScopeIdentifier;
+- (void)setOriginatingScopeIdentifier:;
+- (void)setPreviewImageData:;
+- (void)setPromisedAssetCount:;
+- (void)setPromisedPhotosCount:;
+- (void)setPromisedVideosCount:;
+- (long long)promisedAssetCount;
+- (long long)promisedPhotosCount;
+- (long long)promisedVideosCount;
+- (void)updateScopeFromScopeChange:direction:didHaveChanges:;
+- (void)setLibraryInfo:;
+@end

@@ -1,0 +1,38 @@
+@interface IESLiveGiftToolBarItemFragment : IESLiveRoomComponent
+@property (nonatomic) IESLiveGiftToolBarItemStore store;
+@property (nonatomic) HTSLiveToolbarItem giftItem;
+@property (nonatomic) BOOL disableCtrlRefresh;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)componentCreate;
+- (unsigned long long)animationTriggerState;
+- (void)bindToolBarController;
+- (void)checkIfGiftCycleReleaseMessageContainsPreSelectGiftId:;
+- (void)componentBindService;
+- (void)componentMount;
+- (void)componentOrientationChanged:;
+- (BOOL)disableCtrlRefresh;
+- (void)hideComponent;
+- (void)loadGiftItemIfNeed;
+- (void)mountDidFinishForLevel:;
+- (void)removeCoordinaryAnimatonItem;
+- (void)removeGiftItemCustomIconViewAndResetItemImageIfNeededWith:;
+- (void)requireAnimationFromBDXBridge;
+- (void)resetGiftItemAppearanceWithWebPImage:;
+- (void)setDisableCtrlRefresh:;
+- (void)setItemHidden:;
+- (void)showComponent;
+- (void)toolbarComponentRemovedReason:extra:;
+- (void)toolbarComponentUpdate:;
+- (void)toolbarReceiveComponent:completion:;
+- (void)setStore:;
+- (void).cxx_destruct;
+- (id)store;
+- (void)triggerAnimation;
+- (id)giftItem;
+- (void)setGiftItem:;
++ (BOOL)isMixed;
++ (BOOL)componentShouldActive:;
+@end

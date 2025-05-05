@@ -1,0 +1,38 @@
+@interface IESLiveSaaSTapContainerFragment : IESLiveRoomComponent
+@property (nonatomic) IESLiveSaaSLiveRoomModel room;
+@property (nonatomic) <HTSLiveSaaSDiggAction> diggActionCreator;
+@property (nonatomic) <IESLiveTapAction> tapAction;
+@property (nonatomic) BOOL isKeyboardShowing;
+@property (nonatomic) BOOL isHideTaskRunning;
+@property (nonatomic) BOOL isHideClick;
+@property (nonatomic) NSHashTable doubleTapFowardingViewTable;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setDoubleTapFowardingViewTable:;
+- (void)setIsHideClick:;
+- (void)addTapGesture;
+- (void)componentDidMount;
+- (void)componentWillUnmount;
+- (void)didClickContainerView:;
+- (id)diggActionCreator;
+- (void)doubleClickContainerView:;
+- (id)doubleTapFowardingViewTable;
+- (BOOL)isHideClick;
+- (BOOL)isHideTaskRunning;
+- (BOOL)isKeyboardShowing;
+- (void)registerDoubleTapForwardingView:;
+- (void)setDiggActionCreator:;
+- (void)setIsHideTaskRunning:;
+- (void)setIsKeyboardShowing:;
+- (void)unregisterDoubleTapForwardingView:;
+- (id)init;
+- (void)keyboardWillHide;
+- (void)keyboardWillShow;
+- (void).cxx_destruct;
+- (BOOL)shouldReceiveTouch:;
+- (id)tapAction;
+- (void)setTapAction:;
++ (id)componentWithRoom:trackContext:componentContext:;
+@end

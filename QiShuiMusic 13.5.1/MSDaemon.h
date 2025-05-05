@@ -1,0 +1,32 @@
+@interface MSDaemon : NSObject
+@property (nonatomic) NSInteger busyCount;
+@property (nonatomic) NSInteger UIBusyCount;
+@property (nonatomic) NSTimer hysteresisTimer;
+@property (nonatomic) BOOL stabilizedIsBusy;
+@property (nonatomic) NSObject<OS_dispatch_queue> idleCountQueue;
+- (void)retainBusy;
+- (id)init;
+- (void)retainUIBusy;
+- (BOOL)isBusy;
+- (int)busyCount;
+- (void)releaseBusy;
+- (int)UIBusyCount;
+- (void)didIdle;
+- (void)releasePowerAssertion;
+- (void)setUIBusyCount:;
+- (void)releaseUIBusy;
+- (void)setBusyCount:;
+- (void).cxx_destruct;
+- (void)didUnidle;
+- (void)_hysteresisTimerDidFire:;
+- (void)retainPowerAssertion;
+- (void)_didChangeIdleBusyState:;
+- (void)stabilizedDidIdle;
+- (void)stabilizedDidUnidle;
+- (id)idleCountQueue;
+- (void)setIdleCountQueue:;
+- (id)hysteresisTimer;
+- (void)setHysteresisTimer:;
+- (BOOL)stabilizedIsBusy;
+- (void)setStabilizedIsBusy:;
+@end

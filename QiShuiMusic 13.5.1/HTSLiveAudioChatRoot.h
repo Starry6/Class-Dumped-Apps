@@ -1,0 +1,2 @@
+@interface HTSLiveAudioChatRoot : GPBRootObject
+@end

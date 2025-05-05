@@ -1,0 +1,37 @@
+@interface IESLiveMyLiveMultiTabView : UIView
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) NSArray tabItems;
+@property (nonatomic) UIView indicator;
+@property (nonatomic) q currentSelectedTabIndex;
+@property (nonatomic) BOOL didSelectDefaultTab;
+@property (nonatomic) @? didSelectTabWithPageItem;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)currentSelectedTabIndex;
+- (BOOL)didSelectDefaultTab;
+- (id)didSelectTabWithPageItem;
+- (void)loadWithTabItems:;
+- (void)locateTabItem:;
+- (void)refreshIndicatorPositionWithProgress:;
+- (double)selectionWidth;
+- (void)setCurrentSelectedTabIndex:;
+- (void)setDidSelectDefaultTab:;
+- (void)setDidSelectTabWithPageItem:;
+- (id)indicator;
+- (id)collectionView:layout:sizeForItemAtIndexPath:;
+- (double)collectionView:layout:minimumLineSpacingForSectionAtIndex:;
+- (void)setIndicator:;
+- (void)layoutSubviews;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (id)initWithFrame:;
+- (void)setCollectionView:;
+- (void).cxx_destruct;
+- (id)collectionView;
+- (void)setupViews;
+- (id)tabItems;
+- (void)setTabItems:;
+@end

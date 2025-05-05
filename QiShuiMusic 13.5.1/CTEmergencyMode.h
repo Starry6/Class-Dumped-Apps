@@ -1,0 +1,33 @@
+@interface CTEmergencyMode : NSObject
+@property (nonatomic) BOOL enabled;
+@property (nonatomic) q type;
+@property (nonatomic) BOOL isEmergencyText;
+@property (nonatomic) BOOL isEmergencySetup;
+@property (nonatomic) q state;
+@property (nonatomic) BOOL isStewieActive;
+- (void)setIsEmergencyText:;
+- (id)init;
+- (BOOL)isStewieActive;
+- (BOOL)enabled;
+- (void)setState:;
+- (void)setType:;
+- (id)initWithCoder:;
+- (id)initWithEnabled:type:isEmergencyText:isEmergencySetup:state:;
+- (id)initWithEnabled:type:isEmergencyText:isEmergencySetup:isStewieActive:state:;
+- (void)encodeWithCoder:;
+- (long long)type;
+- (long long)state;
+- (id)initWithEnabled:type:isEmergencyText:;
+- (BOOL)isEmergencyText;
+- (void)setEnabled:;
+- (BOOL)isEqualToCTEmergencyMode:;
+- (id)initWithEnabled:type:isEmergencyText:isEmergencySetup:;
+- (id)description;
+- (id)initWithEnabled:type:isEmergencyText:isEmergencySetup:isStewieActive:;
+- (BOOL)isEqual:;
+- (BOOL)isEmergencySetup;
+- (void)setIsEmergencySetup:;
+- (id)copyWithZone:;
++ (BOOL)supportsSecureCoding;
++ (id)convertFromEmergencyMode:;
+@end

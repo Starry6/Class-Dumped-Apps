@@ -1,0 +1,37 @@
+@interface LynxPanGestureHandler : LynxBaseGestureHandler
+@property (nonatomic) {CGPoint=dd} startPoint;
+@property (nonatomic) {CGPoint=dd} lastPoint;
+@property (nonatomic) BOOL isInvokedBegin;
+@property (nonatomic) BOOL isInvokedStart;
+@property (nonatomic) BOOL isInvokedEnd;
+@property (nonatomic) LynxTouchEvent lastTouchEvent;
+@property (nonatomic) float minDistance;
+- (id)eventParamsInActive:;
+- (void)handleConfigMap:;
+- (id)initWithSign:context:member:detector:;
+- (BOOL)isGestureTypeMatched:;
+- (BOOL)isInvokedBegin;
+- (BOOL)isInvokedEnd;
+- (BOOL)isInvokedStart;
+- (void)onBegin:touchEvent:;
+- (void)onEnd:touchEvent:;
+- (void)onHandle:touches:event:touchEvent:flingPoint:;
+- (void)onStart:touchEvent:;
+- (void)onUpdate:touchEvent:;
+- (void)setIsInvokedBegin:;
+- (void)setIsInvokedEnd:;
+- (void)setIsInvokedStart:;
+- (BOOL)shouldActive;
+- (id)startPoint;
+- (void)setStartPoint:;
+- (void)end;
+- (id)lastTouchEvent;
+- (void).cxx_destruct;
+- (void)reset;
+- (id)lastPoint;
+- (void)setLastPoint:;
+- (void)fail;
+- (void)setMinDistance:;
+- (void)setLastTouchEvent:;
+- (float)minDistance;
+@end

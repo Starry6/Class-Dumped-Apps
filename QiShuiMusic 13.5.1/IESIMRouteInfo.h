@@ -1,0 +1,37 @@
+@interface IESIMRouteInfo : NSObject
+@property (nonatomic) NSString URLString;
+@property (nonatomic) q transitionType;
+@property (nonatomic) NSArray requiredParams;
+@property (nonatomic) NSArray optionalParams;
+@property (nonatomic) Q options;
+@property (nonatomic) # viewControllerClass;
+@property (nonatomic) @? customInitialization;
+@property (nonatomic) @? customTransition;
+@property (nonatomic) @? URLValidation;
+- (id)URLValidation;
+- (id)customInitialization;
+- (id)customTransition;
+- (id)optionalParams;
+- (id)registerCustomTransition:;
+- (id)registerOptionalParams:;
+- (id)registerRequiredParams:;
+- (id)registerRouteOptions:;
+- (id)registerTransitionType:;
+- (id)registerURLValidation:;
+- (id)requiredParams;
+- (void)setCustomInitialization:;
+- (void)setCustomTransition:;
+- (void)setOptionalParams:;
+- (void)setRequiredParams:;
+- (void)setURLValidation:;
+- (void)setOptions:;
+- (id)init;
+- (id)URLString;
+- (Class)viewControllerClass;
+- (void)setTransitionType:;
+- (long long)transitionType;
+- (void)setViewControllerClass:;
+- (unsigned long long)options;
+- (void).cxx_destruct;
+- (void)setURLString:;
+@end

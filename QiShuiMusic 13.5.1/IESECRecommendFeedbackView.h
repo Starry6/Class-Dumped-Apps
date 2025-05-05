@@ -1,0 +1,35 @@
+@interface IESECRecommendFeedbackView : UIView
+@property (nonatomic) UIView navView;
+@property (nonatomic) IESECUIButton backButton;
+@property (nonatomic) IESECUIButton closeButton;
+@property (nonatomic) UIStackView stackView;
+@property (nonatomic) BOOL isFirstPage;
+@property (nonatomic) NSArray itemList;
+@property (nonatomic) IESECRecommendFeedbackModel model;
+@property (nonatomic) <IESECRecommendFeedbackViewDelegate> delegate;
+- (id)navView;
+- (void)setIsFirstPage:;
+- (BOOL)isFirstPage;
+- (void)itemAction:;
+- (void)reloadDataWithAnimation:;
+- (void)reloadStackViewData;
+- (void)setNavView:;
+- (void)spaceAction;
+- (id)model;
+- (void)setModel:;
+- (void)setStackView:;
+- (void)setDelegate:;
+- (id)backButton;
+- (id)stackView;
+- (void)closeAction;
+- (id)initWithFrame:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)backAction;
+- (void)setBackButton:;
+- (id)itemList;
+- (void)setItemList:;
+- (void)setupUI;
+- (id)closeButton;
+- (void)setCloseButton:;
+@end

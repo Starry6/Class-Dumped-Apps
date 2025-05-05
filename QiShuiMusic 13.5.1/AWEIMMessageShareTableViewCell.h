@@ -1,0 +1,36 @@
+@interface AWEIMMessageShareTableViewCell : UITableViewCell
+@property (nonatomic) UIImageView iconView;
+@property (nonatomic) UIView onlineDotView;
+@property (nonatomic) UILabel nameLabel;
+@property (nonatomic) UIView separatorLine;
+@property (nonatomic) UIButton shareButton;
+@property (nonatomic) AWEIMMessageShareCellViewModel viewModel;
+@property (nonatomic) NSString uniqueFlag;
+@property (nonatomic) NSString pageIdentifier;
+@property (nonatomic) <AWEIMMessageShareTableViewCellDelegate> delegate;
+- (id)onlineDotView;
+- (void)p_onShareButtonClick;
+- (void)p_setupUI;
+- (void)setOnlineDotView:;
+- (void)setUniqueFlag:;
+- (id)uniqueFlag;
+- (void)updateWithHasSendMsg:;
+- (id)initWithStyle:reuseIdentifier:;
+- (id)viewModel;
+- (id)iconView;
+- (void)setIconView:;
+- (void)setDelegate:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setViewModel:;
+- (id)nameLabel;
+- (void)setNameLabel:;
+- (id)pageIdentifier;
+- (void)setPageIdentifier:;
+- (void)updateWithModel:;
+- (id)shareButton;
+- (void)setShareButton:;
+- (id)separatorLine;
+- (void)setSeparatorLine:;
+- (void)updateActiveStatus;
+@end

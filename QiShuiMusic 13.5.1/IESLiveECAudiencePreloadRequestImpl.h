@@ -1,0 +1,37 @@
+@interface IESLiveECAudiencePreloadRequestImpl : IESLivePreloadRequestBaseImpl
+@property (nonatomic) NSDictionary ecomLiveParams;
+@property (nonatomic) NSDictionary contextParams;
+@property (nonatomic) Q requestStage;
+@property (nonatomic) double beginRequestTime;
+@property (nonatomic) double endRequestTime;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (double)beginRequestTime;
+- (BOOL)canRequestInStage:;
+- (id)contextParams;
+- (id)customRequest;
+- (id)ecomLiveParams;
+- (id)ecomSceneIDStr;
+- (double)endRequestTime;
+- (void)preloadBindService;
+- (void)preloadRequestDidCompleteWithRequest:;
+- (unsigned long long)preloadRequestMethod;
+- (void)preloadRequestWillRequest;
+- (unsigned long long)requestStage;
+- (id)saasRoomModel;
+- (void)setBeginRequestTime:;
+- (void)setContextParams:;
+- (void)setEcomLiveParams:;
+- (void)setEndRequestTime:;
+- (void)setRequestStage:;
+- (BOOL)showCart;
+- (id)trackParams;
+- (id)actionType;
+- (void).cxx_destruct;
+- (id)roomID;
+- (id)authorID;
++ (void)ieslivekit_register_preloadrequstAction;
++ (unsigned long long)requestBusinessIdentifier;
+@end

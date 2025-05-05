@@ -1,0 +1,34 @@
+@interface GEOFeature : NSObject
+@property (nonatomic) GEOVectorTile containingTile;
+@property (nonatomic) r* name;
+@property (nonatomic) Q labelOffset;
+@property (nonatomic) Q labelCount;
+@property (nonatomic) Q shieldOffset;
+@property (nonatomic) Q shieldCount;
+@property (nonatomic) I styleID;
+@property (nonatomic) Q featureID;
+@property (nonatomic) BOOL hasBusinessID;
+@property (nonatomic) Q businessID;
+@property (nonatomic) float minZoomRank;
+@property (nonatomic) Q flyoverAnimationID;
+@property (nonatomic) GEOFeatureStyleAttributes attributes;
+@property (nonatomic) NSInteger type;
+- (void)dealloc;
+- (BOOL)hasBusinessID;
+- (unsigned long long)businessID;
+- (unsigned long long)flyoverAnimationID;
+- (unsigned long long)shieldCount;
+- (id)attributes;
+- (int)type;
+- (unsigned long long)labelOffset;
+- (unsigned long long)featureID;
+- (id)containingTile;
+- (void).cxx_destruct;
+- (unsigned long long)shieldOffset;
+- (unsigned int)styleID;
+- (float)minZoomRank;
+- (id)get;
+- (id)name;
+- (id)init:withVectorTile:;
+- (unsigned long long)labelCount;
+@end

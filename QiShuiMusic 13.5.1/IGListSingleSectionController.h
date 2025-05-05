@@ -1,0 +1,30 @@
+@interface IGListSingleSectionController : IGListSectionController
+@property (nonatomic) NSString nibName;
+@property (nonatomic) NSBundle bundle;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) # cellClass;
+@property (nonatomic) @? configureBlock;
+@property (nonatomic) @? sizeBlock;
+@property (nonatomic) @ item;
+@property (nonatomic) <IGListSingleSectionControllerDelegate> selectionDelegate;
+- (id)cellForItemAtIndex:;
+- (void)didDeselectItemAtIndex:;
+- (void)didUpdateToObject:;
+- (id)initWithCellClass:configureBlock:sizeBlock:;
+- (id)initWithNibName:bundle:configureBlock:sizeBlock:;
+- (id)initWithStoryboardCellIdentifier:configureBlock:sizeBlock:;
+- (id)item;
+- (long long)numberOfItems;
+- (id)identifier;
+- (id)bundle;
+- (void)setItem:;
+- (void).cxx_destruct;
+- (Class)cellClass;
+- (id)nibName;
+- (void)didSelectItemAtIndex:;
+- (id)selectionDelegate;
+- (void)setSelectionDelegate:;
+- (id)configureBlock;
+- (id)sizeForItemAtIndex:;
+- (id)sizeBlock;
+@end

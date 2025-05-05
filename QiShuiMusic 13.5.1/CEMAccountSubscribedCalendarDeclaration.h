@@ -1,0 +1,33 @@
+@interface CEMAccountSubscribedCalendarDeclaration : CEMConfigurationBase
+@property (nonatomic) NSString payloadSubCalAccountDescription;
+@property (nonatomic) NSString payloadSubCalAccountHostName;
+@property (nonatomic) NSNumber payloadSubCalAccountUseSSL;
+@property (nonatomic) NSString payloadSubCalAccountCredentials;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (BOOL)multipleAllowed;
+- (BOOL)mustBeSupervised;
+- (int)activationLevel;
+- (id)assetReferences;
+- (BOOL)loadPayload:error:;
+- (id)serializePayloadWithAssetProviders:;
+- (id)payloadSubCalAccountDescription;
+- (void)setPayloadSubCalAccountDescription:;
+- (id)payloadSubCalAccountHostName;
+- (void)setPayloadSubCalAccountHostName:;
+- (id)payloadSubCalAccountUseSSL;
+- (void)setPayloadSubCalAccountUseSSL:;
+- (id)payloadSubCalAccountCredentials;
+- (void)setPayloadSubCalAccountCredentials:;
++ (id)profileType;
++ (id)registeredClassName;
++ (id)registeredIdentifier;
++ (id)allowedPayloadKeys;
++ (id)restrictionPayloadKeys;
++ (id)buildWithIdentifier:withSubCalAccountDescription:withSubCalAccountHostName:withSubCalAccountUseSSL:withSubCalAccountCredentials:;
++ (id)buildRequiredOnlyWithIdentifier:withSubCalAccountHostName:;
+@end

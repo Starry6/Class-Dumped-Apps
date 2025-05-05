@@ -1,0 +1,33 @@
+@interface SADSchemaSADImmediateDownloadTriggered : SISchemaInstrumentationMessage
+@property (nonatomic) NSInteger locale;
+@property (nonatomic) BOOL hasLocale;
+@property (nonatomic) BOOL existingAssets;
+@property (nonatomic) BOOL hasExistingAssets;
+@property (nonatomic) I retryCount;
+@property (nonatomic) BOOL hasRetryCount;
+@property (nonatomic) NSData jsonData;
+- (void)setLocale:;
+- (BOOL)hasLocale;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (int)locale;
+- (void)setRetryCount:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (unsigned int)retryCount;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (BOOL)existingAssets;
+- (void)deleteLocale;
+- (void)setHasLocale:;
+- (void)setExistingAssets:;
+- (BOOL)hasExistingAssets;
+- (void)setHasExistingAssets:;
+- (void)deleteExistingAssets;
+- (BOOL)hasRetryCount;
+- (void)setHasRetryCount:;
+- (void)deleteRetryCount;
+@end

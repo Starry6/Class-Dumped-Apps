@@ -1,0 +1,33 @@
+@interface UIScribbleInteractionWrapper : NSObject
+@property (nonatomic) UIView view;
+@property (nonatomic) UIView interactionView;
+@property (nonatomic) <UIInteraction> interaction;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)interaction;
+- (id)view;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)isEqual:;
+- (BOOL)supportsShouldBegin;
+- (BOOL)isElementContainer;
+- (id)frameForElement:;
+- (BOOL)focusWillTransformElement:;
+- (BOOL)shouldBeginAtLocation:;
+- (void)willBeginWritingInElement:;
+- (void)didFinishWritingInElement:;
+- (void)requestElementsInRect:completion:;
+- (void)focusElement:initialFocusSelectionReferencePoint:completion:;
+- (id)hitToleranceInsetsWithDefaultInsets:element:;
+- (BOOL)beginSuppressingPlaceholderForElement:;
+- (void)endSuppressingPlaceholderForElement:;
+- (BOOL)supportsIsElementFocused;
+- (BOOL)isElementFocused:;
+- (BOOL)shouldDisableInputAssistant;
+- (id)initWithCustomScribbleInteraction:indirectScribbleInteraction:;
+- (BOOL)supportsIsElementInFrontOfElement;
+- (BOOL)isElement:inFrontOf:;
+- (id)suggestedStrokeColorForElement:;
+@end

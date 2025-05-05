@@ -1,0 +1,32 @@
+@interface GEOResourceManifestDownload : PBCodable
+@property (nonatomic) BOOL hasResources;
+@property (nonatomic) GEOResources resources;
+@property (nonatomic) GEODownloadMetadata metadata;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (BOOL)hasGreenTeaWithValue:;
+- (id)init;
+- (BOOL)hasResources;
+- (id)initWithJSON:;
+- (id)resources;
+- (id)jsonRepresentation;
+- (void)setResources:;
+- (id)metadata;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)setMetadata:;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (id)initWithResourceManifestData:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
++ (BOOL)isValid:;
+@end

@@ -1,0 +1,33 @@
+@interface IDSGFTGL : IDSGlobalLink
+- (void)disconnectWithCompletionHandler:;
+- (void).cxx_destruct;
+- (void)startWithOptions:;
+- (void)invalidate;
+- (BOOL)_setupNewQRLinkIfNecessary:;
+- (BOOL)_postProcessAllocbindResponse:candidatePair:candidatePairToken:;
+- (void)setDefaultUnderlyingLink:;
+- (BOOL)_postProcessQUICAllocbindResponse:candidatePair:;
+- (BOOL)_processRemovedLocalAddressList:;
+- (void)_notifyDefaultUnderlyingLinkChanged:error:;
+- (void)_discardCandidatePairsWithOption:;
+- (long long)_getQRAllocateType;
+- (void)manageDesignatedDestinations:relayGroupID:relaySessionID:withType:sessionStateCounter:;
+- (void)removeParticipantIDs:relayGroupID:relaySessionID:sessionStateCounter:;
+- (void)_destroyVirtualRelayLinksForCandidatePair:;
+- (void)updateURIToParticipantIDs:relaySessionID:sessionInfo:;
+- (void)_sendConnectionDataWithRemovedAddressList:;
+- (void)sendKeyMaterialMessageData:relayGroupID:destinationURIs:completionHandler:;
+- (void)setTimeBase:;
+- (void)setParticipantType:relayGroupID:relaySessionID:sessionStateCounter:;
+- (void)_enableE2E;
+- (void)_sendRelayInterfaceInfo:;
+- (void)receiveJoinNotificationFromAParticipant;
+- (void)setIsUPlusOneSession:;
+- (void)enableUPlusOneSessionForTransition:;
+- (void)_processCommandRelayInterfaceInfo:candidatePairToken:;
+- (void)_discardKeyMaterialMessage:;
+- (id)_findVirtualCandidatePair:;
+- (void)_setupVirtualCandidatePairs:remoteCandidatePair:;
+- (void)_processReceivedRemoteCandidatePairs:;
+- (void)_disableE2E;
+@end

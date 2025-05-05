@@ -1,0 +1,35 @@
+@interface IESLiveGiftAssemblyCustomizedCardConfigFactory : NSObject
+@property (nonatomic) HTSLiveDIYGiftToolbarInfo giftAssemblyInfo;
+@property (nonatomic) NSNumber giftId;
+@property (nonatomic) NSString preSelectCardName;
+@property (nonatomic) NSArray officialCardConfigs;
+@property (nonatomic) NSArray forceIndexOfficialCardConfigs;
+@property (nonatomic) BOOL preSelectCardIsUnlocked;
+@property (nonatomic) NSString toUserId;
+@property (nonatomic) BOOL useLynxDIYCard;
+- (BOOL)getDisplaySubArray:length:from:;
+- (id)buildCustomizedCardConfigs;
+- (void)findLatestConsumedCardFrom:;
+- (id)forceIndexOfficialCardConfigs;
+- (id)giftAssemblyInfo;
+- (id)giftId;
+- (id)initWithGiftAssemblyInfo:giftId:preSelectCardName:toUserId:;
+- (id)officialCardConfigs;
+- (id)p_buildCustomizedCardConfigWithCardInfo:;
+- (id)p_buildCustomizedCardConfigsWithGiftExtraAssemblyInfo:;
+- (id)p_conflictCheckWithCachedCards:officialCards:;
+- (void)p_saveCustomizedCardsToCacheWithConfigList:;
+- (BOOL)preSelectCardIsUnlocked;
+- (id)preSelectCardName;
+- (void)setForceIndexOfficialCardConfigs:;
+- (void)setGiftAssemblyInfo:;
+- (void)setGiftId:;
+- (void)setOfficialCardConfigs:;
+- (void)setPreSelectCardIsUnlocked:;
+- (void)setPreSelectCardName:;
+- (void)setToUserId:;
+- (void)setUseLynxDIYCard:;
+- (id)toUserId;
+- (BOOL)useLynxDIYCard;
+- (void).cxx_destruct;
+@end

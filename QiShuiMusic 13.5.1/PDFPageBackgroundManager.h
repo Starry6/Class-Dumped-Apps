@@ -1,0 +1,21 @@
+@interface PDFPageBackgroundManager : NSObject
+- (void)_cleanup;
+- (void)_update;
+- (void)cancel;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (void)willForceUpdate;
+- (void)forceUpdateActivePageIndex:withMaxDuration:;
+- (BOOL)drawProgressCallback;
+- (id)initWithDelegate:andRenderingProperties:;
+- (void)updateActivePageIndex:;
+- (id)backgroundImageForPageIndex:withFoundQuality:;
+- (void)didInsertPageAtIndex:;
+- (void)didRemovePageAtIndex:;
+- (void)didSwapPageAtIndex:withIndex:;
+- (void)forceSetBackgroundImage:forPageIndex:;
+- (BOOL)_findPageIndexNeedingUpdate:forQuality:;
+- (void)_drawPageImage:forQuality:;
+- (BOOL)_expectedQualityIndexForPageIndex:forQuality:;
+- (void)_shiftImagesAtIndex:downwards:;
+@end

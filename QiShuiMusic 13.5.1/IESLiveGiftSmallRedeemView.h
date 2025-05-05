@@ -1,0 +1,36 @@
+@interface IESLiveGiftSmallRedeemView : UIView
+@property (nonatomic) BOOL didTrackShow;
+@property (nonatomic) double originWidth;
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UILabel hintLabel;
+@property (nonatomic) UIView diamondContainer;
+@property (nonatomic) UILabel diamondLabel;
+@property (nonatomic) <IESLiveCollectionViewItemProtocol> item;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) <IESLiveRefactGiftPanelSectionVMProtocol> sectionVM;
+- (void)setOriginWidth:;
+- (id)diamondContainer;
+- (id)diamondLabel;
+- (void)didSetAttachingDIContext;
+- (BOOL)didTrackShow;
+- (double)originWidth;
+- (void)p_setupUI;
+- (void)p_tap;
+- (id)sectionVM;
+- (void)setDiamondContainer:;
+- (void)setDiamondContainerPath;
+- (void)setDiamondLabel:;
+- (void)setDidTrackShow:;
+- (void)setSectionVM:;
+- (void)updateDiamondText:;
+- (id)item;
+- (id)containerView;
+- (void)setContainerView:;
+- (void)setItem:;
+- (void).cxx_destruct;
+- (id)hintLabel;
+- (void)setHintLabel:;
+@end

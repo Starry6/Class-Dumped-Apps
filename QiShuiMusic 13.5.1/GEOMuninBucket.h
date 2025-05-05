@@ -1,0 +1,37 @@
+@interface GEOMuninBucket : PBCodable
+@property (nonatomic) BOOL hasBucketID;
+@property (nonatomic) I bucketID;
+@property (nonatomic) BOOL hasBucketURL;
+@property (nonatomic) NSString bucketURL;
+@property (nonatomic) BOOL hasLodLevel;
+@property (nonatomic) I lodLevel;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (BOOL)hasBucketURL;
+- (void)copyTo:;
+- (void)setBucketURL:;
+- (void)mergeFrom:;
+- (void)setHasBucketID:;
+- (id)bucketURL;
+- (void).cxx_destruct;
+- (unsigned int)bucketID;
+- (unsigned int)lodLevel;
+- (void)setHasLodLevel:;
+- (BOOL)readFrom:;
+- (id)description;
+- (void)setLodLevel:;
+- (void)setBucketID:;
+- (BOOL)hasBucketID;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (BOOL)hasLodLevel;
+- (id)copyWithZone:;
++ (BOOL)isValid:;
+@end

@@ -1,0 +1,36 @@
+@interface VCPCNNData : NSObject
+@property (nonatomic) NSMutableArray size;
+@property (nonatomic) ^f data;
+@property (nonatomic) BOOL isInputOutput;
+@property (nonatomic) MPSImage mpsImg;
+@property (nonatomic) VCPCNNMetalContext context;
+- (id)init;
+- (void)dealloc;
+- (id)context;
+- (id)data;
+- (void).cxx_destruct;
+- (void)setData:;
+- (void)setContext:;
+- (void)setSize:;
+- (id)size;
+- (int)normalization;
+- (int)softmax;
+- (int)allocBuffers:;
+- (int)reallocGPUTemporalBuffers;
+- (int)convertCPUData2GPU;
+- (int)convertGPUData2CPU;
+- (int)readFromDisk:quantFactor:;
+- (id)initWithGPUContext:;
+- (id)initWithParameters:height:width:context:;
+- (int)randInit;
+- (int)bufferAllocCPU;
+- (int)copyImage:withChunk:;
+- (BOOL)isInputOutput;
+- (void)setIsInputOutput:;
+- (id)mpsImg;
+- (void)setMpsImg:;
++ (Class)cnnDataClass;
++ (id)cnnData;
++ (id)cnnDataWithGPUContext:;
++ (id)cnnDataWithPlane:height:width:context:;
+@end

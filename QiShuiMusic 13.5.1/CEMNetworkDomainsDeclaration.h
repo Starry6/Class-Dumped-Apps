@@ -1,0 +1,30 @@
+@interface CEMNetworkDomainsDeclaration : CEMConfigurationBase
+@property (nonatomic) NSArray payloadEmailDomains;
+@property (nonatomic) NSArray payloadWebDomains;
+@property (nonatomic) NSArray payloadSafariPasswordAutoFillDomains;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (BOOL)multipleAllowed;
+- (BOOL)mustBeSupervised;
+- (int)activationLevel;
+- (id)assetReferences;
+- (BOOL)loadPayload:error:;
+- (id)serializePayloadWithAssetProviders:;
+- (id)payloadEmailDomains;
+- (void)setPayloadEmailDomains:;
+- (id)payloadWebDomains;
+- (void)setPayloadWebDomains:;
+- (id)payloadSafariPasswordAutoFillDomains;
+- (void)setPayloadSafariPasswordAutoFillDomains:;
++ (id)profileType;
++ (id)buildRequiredOnlyWithIdentifier:;
++ (id)registeredClassName;
++ (id)registeredIdentifier;
++ (id)allowedPayloadKeys;
++ (id)restrictionPayloadKeys;
++ (id)buildWithIdentifier:withEmailDomains:withWebDomains:withSafariPasswordAutoFillDomains:;
+@end

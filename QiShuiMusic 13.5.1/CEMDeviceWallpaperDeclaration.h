@@ -1,0 +1,30 @@
+@interface CEMDeviceWallpaperDeclaration : CEMConfigurationBase
+@property (nonatomic) NSString payloadLockScreenAsset;
+@property (nonatomic) NSString payloadHomeScreenAsset;
+@property (nonatomic) NSNumber payloadAllowWallpaperModification;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (BOOL)multipleAllowed;
+- (BOOL)mustBeSupervised;
+- (int)activationLevel;
+- (id)assetReferences;
+- (BOOL)loadPayload:error:;
+- (id)serializePayloadWithAssetProviders:;
+- (id)payloadLockScreenAsset;
+- (void)setPayloadLockScreenAsset:;
+- (id)payloadHomeScreenAsset;
+- (void)setPayloadHomeScreenAsset:;
+- (id)payloadAllowWallpaperModification;
+- (void)setPayloadAllowWallpaperModification:;
++ (id)profileType;
++ (id)buildRequiredOnlyWithIdentifier:;
++ (id)registeredClassName;
++ (id)registeredIdentifier;
++ (id)allowedPayloadKeys;
++ (id)restrictionPayloadKeys;
++ (id)buildWithIdentifier:withLockScreenAsset:withHomeScreenAsset:withAllowWallpaperModification:;
+@end

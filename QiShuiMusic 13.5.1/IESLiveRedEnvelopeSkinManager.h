@@ -1,0 +1,33 @@
+@interface IESLiveRedEnvelopeSkinManager : NSObject
+@property (nonatomic) IESLiveRedEnvelopeSkinModel skinModel;
+@property (nonatomic) IESLiveRedEnvelopeSmallSkinModel smallSkinModel;
+@property (nonatomic) <IESLiveWebImageService> webImageService;
+@property (nonatomic) BoxListResponse_ResponseData currentShowingRedEnvelope;
+@property (nonatomic) BoxListResponse_ResponseData currentShowingSmallRedEnvelope;
+@property (nonatomic) @? didUpdate;
+- (id)webImageService;
+- (id)currentShowingRedEnvelope;
+- (id)currentShowingSmallRedEnvelope;
+- (id)enterBackgroundImageUrl:;
+- (void)fetchResourceImmediately:;
+- (id)getWebDecoder:;
+- (void)p_DressListStorageDidUpdate;
+- (void)p_DressListStorageDidUpdateHandler:;
+- (void)setCurrentShowingRedEnvelope:;
+- (void)setCurrentShowingSmallRedEnvelope:;
+- (void)setSkinModel:;
+- (void)setSmallSkinModel:;
+- (void)setWebImageService:;
+- (void)setupObserver;
+- (id)skinModel;
+- (id)smallSkinModel;
+- (void)updateCurrentShowingRedEnvelope:;
+- (void)updateCurrentShowingRedEnvelopeAfterGrab:;
+- (void)updateCurrentShowingSmallRedEnvelope:;
+- (void)updateSmallModel:;
+- (id)init;
+- (id)didUpdate;
+- (void).cxx_destruct;
+- (void)setDidUpdate:;
+- (void)updateModel:;
+@end

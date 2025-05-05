@@ -1,0 +1,33 @@
+@interface VNPersonsModel : NSObject
+@property (nonatomic) VNPersonsModelAlgorithm algorithm;
+@property (nonatomic) VNPersonsModelConfiguration configuration;
+- (id)algorithm;
+- (id)faceObservationsForPersonWithUniqueIdentifier:error:;
+- (id)faceCountsForAllPersons;
+- (unsigned long long)personCount;
+- (id)personUniqueIdentifiers;
+- (id)configuration;
+- (BOOL)dropCurrentFaceModelAndReturnError:;
+- (unsigned long long)faceCountForPersonWithUniqueIdentifier:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)faceCountsForPersonsWithUniqueIdentifiers:;
+- (id)upToDateFaceModelWithCanceller:error:;
+- (id)initWithConfiguration:dataSource:;
+- (BOOL)updateInternalConfigurationWithModelFaceprintRequestRevision:error:;
+- (BOOL)convertToAlgorithm:error:;
+- (id)predictPersonFromFaceObservation:limit:canceller:error:;
+- (id)trainingFaceObservationsForPersonWithUniqueIdentifier:canceller:error:;
+- (id)trainingFaceprintsForPersonWithUniqueIdentifier:canceller:error:;
++ (BOOL)isReadOnly;
++ (id)newModelFromVersion:objects:error:;
++ (id)configurationFromLoadedObjects:error:;
++ (id)versionNumbersEncodedInClass:withMethodNamePrefix:suffix:;
++ (id)supportedReadVersions;
++ (id)modelFromStream:options:error:;
++ (id)modelFromData:options:error:;
++ (id)modelFromURL:options:error:;
++ (id)informationForModelWithData:error:;
++ (id)informationForModelWithURL:error:;
++ (BOOL)readObjectForModelVersion:tag:fromInputStream:intoObjectDictionary:md5Context:error:;
+@end

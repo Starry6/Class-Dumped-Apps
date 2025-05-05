@@ -1,0 +1,33 @@
+@interface VKImageCanvas : NSObject
+@property (nonatomic) {shared_ptr<md::TaskContext>=^{TaskContext}^{__shared_weak_count}} taskContext;
+@property (nonatomic) GEOMapRegion mapRegion;
+@property (nonatomic) double pitch;
+@property (nonatomic) double yaw;
+@property (nonatomic) VKCamera vkCamera;
+@property (nonatomic) {shared_ptr<gdc::Camera>=^{Camera}^{__shared_weak_count}} camera;
+@property (nonatomic) NSInteger mapType;
+@property (nonatomic) {VKEdgeInsets=ffff} edgeInsets;
+- (id)camera;
+- (void)setMapType:;
+- (double)yaw;
+- (void)setEdgeInsets:;
+- (int)mapType;
+- (void)loadScene;
+- (void)setCenterCoordinate:altitude:yaw:pitch:;
+- (void)didLayout;
+- (id)mapRegion;
+- (void)didReceiveMemoryWarning:;
+- (double)pitch;
+- (void)renderSceneWithEngine:completion:;
+- (void)updateWithTimestamp:withContext:;
+- (id)edgeInsets;
+- (void)setMapRegion:pitch:yaw:;
+- (void)cancelTileRequests;
+- (void)cancelLoad;
+- (id)vkCamera;
+- (void).cxx_destruct;
+- (id)initWithMapEngine:;
+- (id).cxx_construct;
+- (void)clearScene;
+- (id)taskContext;
+@end

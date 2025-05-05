@@ -1,0 +1,34 @@
+@interface TTAccountHttpRequest : NSObject
+@property (nonatomic) NSString URLString;
+@property (nonatomic) NSString method;
+@property (nonatomic) NSDictionary params;
+@property (nonatomic) NSDictionary extraGetParams;
+@property (nonatomic) BOOL needCommonParams;
+@property (nonatomic) BOOL follow302Redirect;
+@property (nonatomic) BOOL dispatchNote;
+@property (nonatomic) NSDictionary headerField;
+@property (nonatomic) BOOL needHandlePictureVerify;
+@property (nonatomic) @? callback;
+- (void)addExtraParams:;
+- (void)setHeaderField:;
+- (BOOL)dispatchNote;
+- (id)extraGetParams;
+- (BOOL)follow302Redirect;
+- (id)headerField;
+- (BOOL)needCommonParams;
+- (BOOL)needHandlePictureVerify;
+- (void)setDispatchNote:;
+- (void)setExtraGetParams:;
+- (void)setFollow302Redirect:;
+- (void)setNeedCommonParams:;
+- (void)setNeedHandlePictureVerify:;
+- (id)callback;
+- (void)setCallback:;
+- (id)URLString;
+- (id)method;
+- (void).cxx_destruct;
+- (void)setMethod:;
+- (id)params;
+- (void)setURLString:;
+- (void)setParams:;
+@end

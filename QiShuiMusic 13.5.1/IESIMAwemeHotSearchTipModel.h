@@ -1,0 +1,34 @@
+@interface IESIMAwemeHotSearchTipModel : IESIMBaseApiModel
+@property (nonatomic) NSString hotSearchTip;
+@property (nonatomic) NSString hotSearchKeyword;
+@property (nonatomic) NSString challengeID;
+@property (nonatomic) q hotValue;
+@property (nonatomic) q videoBillBoardRank;
+@property (nonatomic) q videoViewCountForToday;
+@property (nonatomic) NSString groupID;
+@property (nonatomic) q label;
+@property (nonatomic) q hotSpotRank;
+@property (nonatomic) q patternType;
+- (void)setHotSpotRank:;
+- (id)hotSearchKeyword;
+- (id)hotSearchTip;
+- (long long)hotSpotRank;
+- (long long)hotValue;
+- (void)setHotSearchKeyword:;
+- (void)setHotSearchTip:;
+- (void)setHotValue:;
+- (void)setVideoBillBoardRank:;
+- (void)setVideoViewCountForToday:;
+- (long long)videoBillBoardRank;
+- (long long)videoViewCountForToday;
+- (void)setGroupID:;
+- (id)groupID;
+- (void)setLabel:;
+- (long long)label;
+- (void).cxx_destruct;
+- (long long)patternType;
+- (void)setPatternType:;
+- (id)challengeID;
+- (void)setChallengeID:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

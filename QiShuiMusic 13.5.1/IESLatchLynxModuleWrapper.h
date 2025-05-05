@@ -1,0 +1,35 @@
+@interface IESLatchLynxModuleWrapper : NSObject
+@property (nonatomic) <IESLatchLynxModuleWrapperDelegate> delegate;
+@property (nonatomic) NSString latchID;
+@property (nonatomic) <IESLatchLynxBridgeExcutorProtocol> excutor;
+@property (nonatomic) JSWorkerBridge exBridge;
+@property (nonatomic) JSWorkerBridgeEngine bridgeEntry;
+@property (nonatomic) NSString href;
+@property (nonatomic) BOOL enableXBridge;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)latchID;
+- (void)setBridgeEntry:;
+- (id)excutor;
+- (id)bridgeEntry;
+- (void)call:params:callback:;
+- (BOOL)canFallbackXBridge;
+- (BOOL)enableXBridge;
+- (id)exBridge;
+- (id)initWithParam:;
+- (id)p_getResultWrapperWithCode:result:error:;
+- (void)setEnableXBridge:;
+- (void)setExBridge:;
+- (void)setExcutor:;
+- (void)setLatchID:;
+- (void)setHref:;
+- (id)href;
+- (void)dealloc;
+- (void)setDelegate:;
+- (id)delegate;
+- (void).cxx_destruct;
++ (id)methodLookup;
++ (id)name;
+@end

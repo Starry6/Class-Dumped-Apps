@@ -1,0 +1,37 @@
+@interface SAKernelCache : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSArray binaryLoadInfos;
+@property (nonatomic) Q loadAddress;
+@property (nonatomic) NSUUID uuid;
+@property (nonatomic) Q startAddress;
+@property (nonatomic) Q endAddress;
+@property (nonatomic) Q textSegmentsStartAddress;
+@property (nonatomic) Q textSegmentsEndAddress;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)binaryLoadInfos;
+- (unsigned long long)textSegmentsStartAddress;
+- (unsigned long long)textSegmentsEndAddress;
+- (void)setBinaryLoadInfos:;
+- (BOOL)addSelfToBuffer:bufferLength:withCompletedSerializationDictionary:;
+- (unsigned long long)startAddress;
+- (unsigned long long)endAddress;
+- (id)uuid;
+- (BOOL)matchesUUID:loadAddress:;
+- (void)addSelfToSerializationDictionary:;
+- (void)populateReferencesUsingBuffer:bufferLength:andDeserializationDictionary:andDataBufferDictionary:;
+- (id)debugDescription;
+- (unsigned long long)sizeInBytesForSerializedVersion;
+- (void)writeJSONDictionaryEntriesToStream:;
+- (unsigned long long)loadAddress;
+- (void).cxx_destruct;
++ (void)clearCaches;
++ (id)kernelCacheWithUUID:loadAddress:;
++ (id)newInstanceWithoutReferencesFromSerializedBuffer:bufferLength:;
++ (id)classDictionaryKey;
+@end

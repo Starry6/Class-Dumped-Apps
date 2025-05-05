@@ -1,0 +1,31 @@
+@interface BKSTouchAuthenticationSpecification : NSObject
+@property (nonatomic) NSSet displays;
+@property (nonatomic) I slotID;
+@property (nonatomic) Q authenticationMessageContext;
+@property (nonatomic) I secureName;
+@property (nonatomic) Q hitTestInformationMask;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)displays;
+- (id)init;
+- (unsigned int)slotID;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)initForProtobufDecoding;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (void)appendDescriptionToFormatter:;
+- (id)mutableCopyWithZone:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (unsigned int)secureName;
+- (unsigned long long)authenticationMessageContext;
+- (unsigned long long)hitTestInformationMask;
++ (id)new;
++ (id)protobufSchema;
++ (BOOL)supportsSecureCoding;
++ (id)buildSpecification:;
+@end

@@ -1,0 +1,30 @@
+@interface MFPersistenceDatabase_iOS : EDPersistenceDatabase
+@property (nonatomic) @ migrationLock;
+@property (nonatomic) BOOL migrationHasRun;
+@property (nonatomic) BOOL createdTempTable;
+@property (nonatomic) NSMutableArray postMigrationSteps;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)_migrateWithDatabaseConnection:migrator:;
+- (BOOL)enforceDataProtection;
+- (void)addPostMigrationStep:;
+- (id)postMigrationSteps;
+- (void)setMigrationHasRun:;
+- (id)openConnectionIsWriter:;
+- (void)mailMessageLibraryMigrator:isInitializingDatabaseWithConnection:;
+- (BOOL)createdTempTable;
+- (void)setCreatedTempTable:;
+- (BOOL)migrationHasRun;
+- (id)migrationLock;
+- (void)mailMessageLibraryMigrator:detachProtectedDatabaseWithConnection:;
+- (BOOL)mailMessageLibraryMigrator:attachProtectedDatabaseWithName:connection:error:;
+- (void)setPostMigrationSteps:;
+- (void).cxx_destruct;
+- (id)initWithBasePath:databaseName:maxConcurrentReaders:schema:protectedSchema:propertyMapper:protectedDatabasePersistence:;
+- (id)checkOutConnectionIsWriter:;
+- (void)mailMessageLibraryMigratorScheduleSpotlightReindex:;
+- (void)checkInConnection:;
++ (id)log;
+@end

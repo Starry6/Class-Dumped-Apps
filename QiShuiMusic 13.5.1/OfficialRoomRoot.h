@@ -1,0 +1,2 @@
+@interface OfficialRoomRoot : GPBRootObject
+@end

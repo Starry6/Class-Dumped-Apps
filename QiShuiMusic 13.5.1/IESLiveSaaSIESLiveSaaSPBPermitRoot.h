@@ -1,0 +1,2 @@
+@interface IESLiveSaaSIESLiveSaaSPBPermitRoot : GPBRootObject
+@end

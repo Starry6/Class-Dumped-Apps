@@ -1,0 +1,30 @@
+@interface GEOVLFDeviceOrientation : PBCodable
+@property (nonatomic) BOOL hasRelativeTimestampMs;
+@property (nonatomic) I relativeTimestampMs;
+@property (nonatomic) BOOL hasOrientation;
+@property (nonatomic) NSInteger orientation;
+- (void)readAll:;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (int)orientation;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)setOrientation:;
+- (id)copyWithZone:;
+- (unsigned int)relativeTimestampMs;
+- (void)setRelativeTimestampMs:;
+- (void)setHasRelativeTimestampMs:;
+- (BOOL)hasRelativeTimestampMs;
+- (void)setHasOrientation:;
+- (BOOL)hasOrientation;
+- (id)orientationAsString:;
+- (int)StringAsOrientation:;
++ (BOOL)isValid:;
+@end

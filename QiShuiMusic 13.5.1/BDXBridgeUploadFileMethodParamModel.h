@@ -1,0 +1,34 @@
+@interface BDXBridgeUploadFileMethodParamModel : BDXBridgeModel
+@property (nonatomic) NSString url;
+@property (nonatomic) NSString filePath;
+@property (nonatomic) NSDictionary params;
+@property (nonatomic) NSDictionary header;
+@property (nonatomic) BOOL addCommonParams;
+@property (nonatomic) BOOL needCommonParams;
+@property (nonatomic) q fileType;
+@property (nonatomic) BOOL shouldUploadRawFile;
+@property (nonatomic) double timeoutInterval;
+- (BOOL)addCommonParams;
+- (BOOL)needCommonParams;
+- (void)setAddCommonParams:;
+- (void)setNeedCommonParams:;
+- (void)setShouldUploadRawFile:;
+- (BOOL)shouldUploadRawFile;
+- (id)filePath;
+- (void)setHeader:;
+- (id)url;
+- (void)setFilePath:;
+- (void)setFileType:;
+- (void)setUrl:;
+- (long long)fileType;
+- (double)timeoutInterval;
+- (void).cxx_destruct;
+- (id)header;
+- (void)setTimeoutInterval:;
+- (id)params;
+- (void)setParams:;
++ (id)fileTypeJSONTransformer;
++ (id)requiredKeyPaths;
++ (id)defaultValues;
++ (id)JSONKeyPathsByPropertyKey;
+@end

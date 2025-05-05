@@ -1,0 +1,38 @@
+@interface SYBacklinkMonitorOperation : NSObject
+@property (nonatomic) NSArray _testingForcedFoundDomainIdentifiers;
+@property (nonatomic) NSArray _testingForcedFoundLinkedIdentifiers;
+@property (nonatomic) q _operationState;
+@property (nonatomic) <SYUserActivityInfo> inputUserActivityInfo;
+@property (nonatomic) q _operationState;
+@property (nonatomic) NSArray _testingForcedFoundDomainIdentifiers;
+@property (nonatomic) NSArray _testingForcedFoundLinkedIdentifiers;
+@property (nonatomic) <SYBacklinkMonitorOperationDelegate_Testing> _testingDelegate;
+@property (nonatomic) SYShowBacklinkIndicatorCommand _indicatorCommand;
+@property (nonatomic) <SYBacklinkMonitorOperationDelegate> delegate;
+@property (nonatomic) NSObject<OS_dispatch_queue> processingQueue;
+@property (nonatomic) <SYUserActivityInfo> inputUserActivityInfo;
+@property (nonatomic) NSInteger processIdentifier;
+@property (nonatomic) q type;
+- (id)processingQueue;
+- (int)processIdentifier;
+- (long long)type;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)description;
+- (long long)_operationState;
+- (id)_testingDelegate;
+- (id)initWithDelegate:processingQueue:inputUserActivityInfo:processIdentifier:;
+- (void)beginProcessing;
+- (void)_searchBacklinksForInputUserActivity;
+- (void)_showOrHideBacklinkIndicatorForDomainIdentifiers:linkedIdentifiers:;
+- (void)_finishProcessingAndNotify;
+- (void)_setOperationState:;
+- (id)inputUserActivityInfo;
+- (id)_testingForcedFoundDomainIdentifiers;
+- (void)set_testingForcedFoundDomainIdentifiers:;
+- (id)_testingForcedFoundLinkedIdentifiers;
+- (void)set_testingForcedFoundLinkedIdentifiers:;
+- (id)_indicatorCommand;
+- (void)set_indicatorCommand:;
+- (void)setInputUserActivityInfo:;
+@end

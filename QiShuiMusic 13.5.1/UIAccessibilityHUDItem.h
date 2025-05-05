@@ -1,0 +1,35 @@
+@interface UIAccessibilityHUDItem : NSObject
+@property (nonatomic) BOOL disabledAppearance;
+@property (nonatomic) BOOL flattenImage;
+@property (nonatomic) BOOL scaleImage;
+@property (nonatomic) q customUserInterfaceStyle;
+@property (nonatomic) NSString title;
+@property (nonatomic) UIImage image;
+@property (nonatomic) {UIEdgeInsets=dddd} imageInsets;
+@property (nonatomic) UIView customView;
+- (void)setImage:;
+- (void)setTitle:;
+- (unsigned long long)hash;
+- (void)setCustomView:;
+- (id)title;
+- (void).cxx_destruct;
+- (id)customView;
+- (BOOL)isEqual:;
+- (id)image;
+- (id)copyWithZone:;
+- (id)initWithTitle:image:imageInsets:;
+- (id)initWithTitle:image:imageInsets:scaleImage:;
+- (id)initWithCustomView:;
+- (BOOL)disabledAppearance;
+- (void)setDisabledAppearance:;
+- (BOOL)flattenImage;
+- (void)setFlattenImage:;
+- (BOOL)scaleImage;
+- (void)setScaleImage:;
+- (long long)customUserInterfaceStyle;
+- (void)setCustomUserInterfaceStyle:;
+- (id)imageInsets;
+- (void)setImageInsets:;
++ (id)HUDItemForTabBarItem:;
++ (id)HUDItemForBarButtonItem:atPoint:inView:isBackButton:;
+@end

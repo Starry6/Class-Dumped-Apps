@@ -1,0 +1,33 @@
+@interface PFVideoAdjustments : PFAssetAdjustments
+@property (nonatomic) float slowMotionRate;
+@property (nonatomic) {?={?=qiIq}{?=qiIq}} slowMotionTimeRange;
+@property (nonatomic) {?={?=qiIq}{?=qiIq}} slowMotionRampIn;
+@property (nonatomic) {?={?=qiIq}{?=qiIq}} slowMotionRampOut;
+@property (nonatomic) float slowMotionRate;
+@property (nonatomic) {?={?=qiIq}{?=qiIq}} slowMotionTimeRange;
+- (id)description;
+- (BOOL)isRecognizedFormat;
+- (float)slowMotionRate;
+- (id)slowMotionTimeRange;
+- (id)initWithPropertyListDictionary:;
+- (id)initWithSlowMotionTimeRange:rate:;
+- (void)_updateDerivedPropertiesFromVersionedData;
+- (BOOL)_parseLegacySLMDictionary:forSlowMotionTimeRange:rate:;
+- (BOOL)_parseVersionedDataForSlowMotionTimeRange:rate:;
+- (BOOL)_parseAppleVideoDataBlobDictionary:forSlowMotionTimeRange:rate:;
+- (id)_dictionaryFromSlowMotionTimeRange:rate:;
+- (id)_adjustmentsObjectFromNSKeyedArchiverData:;
+- (void)setSlowMotionRate:;
+- (void)setSlowMotionTimeRange:;
+- (BOOL)_isValidSlowMotionTimeRange:rate:;
+- (BOOL)hasSlowMotionAdjustments;
+- (id)slowMotionRampIn;
+- (id)slowMotionRampOut;
+- (id)convertToScaledTimeFromOriginalTime:forExport:;
+- (id)convertToOriginalTimeFromScaledTime:forExport:;
++ (BOOL)isRecognizedSlowMotionFormatWithIdentifier:version:;
++ (float)defaultSlowMotionRateForNominalFrameRate:;
++ (id)defaultSlowMotionTimeRangeForDuration:;
++ (id)defaultVideoAdjustmentsURLForVideoURL:;
++ (id)defaultSlowMotionAdjustmentsForAsset:;
+@end

@@ -1,0 +1,32 @@
+@interface BWInferenceEngineController : BWStillImageProcessorController
+@property (nonatomic) NSArray providedAttachedMediaKeys;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)outputFormatForAttachedMediaKey:;
+- (BOOL)intermediateResourceTrackingAllowedForAttachedMediaKey:;
+- (void)dealloc;
+- (id)inputInferenceVideoFormatForAttachedMediaKey:;
+- (int)prepare;
+- (int)process;
+- (void)reset;
+- (id)inputVideoFormatForAttachedMediaKey:;
+- (id)outputVideoFormatForAttachedMediaKey:;
+- (id)inputFormatForAttachedMediaKey:;
+- (id)requestForInput:delegate:errOut:;
+- (void)inputReceivedNewData:;
+- (id)initWithConfiguration:contextName:;
+- (id)providedAttachedMediaKeys;
+- (int)prepareWithPixelBufferPoolProvider:;
+- (id)_suppressedInferenceTypesForInput:;
++ (BOOL)usesCustomProcessingFlow;
++ (id)inferenceMaskFromSbuf:attachedMediaKey:;
++ (id)inferenceMaskSbufFromSbuf:attachedMediaKey:;
++ (id)lowResPersonInstanceMasksFromSbuf:;
++ (id)lowResPersonInstanceConfidencesFromSbuf:;
++ (id)lowResPersonInstanceBoundingBoxesFromSbuf:;
++ (id)smartCameraClassificationsFromSbuf:;
++ (id)skinToneClassificationsFromSbuf:;
++ (id)faceObservationsFromSbuf:;
+@end

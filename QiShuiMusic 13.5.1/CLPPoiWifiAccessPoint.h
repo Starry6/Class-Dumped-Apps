@@ -1,0 +1,33 @@
+@interface CLPPoiWifiAccessPoint : PBCodable
+@property (nonatomic) NSString mac;
+@property (nonatomic) NSInteger rssi;
+@property (nonatomic) NSInteger channel;
+@property (nonatomic) BOOL hasAge;
+@property (nonatomic) double age;
+@property (nonatomic) BOOL hasScanTimestamp;
+@property (nonatomic) double scanTimestamp;
+- (void)setMac:;
+- (void)setChannel:;
+- (int)rssi;
+- (int)channel;
+- (id)mac;
+- (double)age;
+- (void)writeTo:;
+- (void)setHasAge:;
+- (unsigned long long)hash;
+- (void)setScanTimestamp:;
+- (void)setRssi:;
+- (void)copyTo:;
+- (BOOL)hasAge;
+- (void)mergeFrom:;
+- (void)setAge:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (BOOL)hasScanTimestamp;
+- (double)scanTimestamp;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)setHasScanTimestamp:;
+- (id)copyWithZone:;
+@end

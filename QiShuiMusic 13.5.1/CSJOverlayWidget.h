@@ -1,0 +1,34 @@
+@interface CSJOverlayWidget : NSObject
+@property (nonatomic) UIView widget;
+@property (nonatomic) CSJOverlayWidgetModel widgetModel;
+@property (nonatomic) UIView parentView;
+@property (nonatomic) <CSJOverlayWidgetDelegate> delegate;
+@property (nonatomic) <CSJOverlayWidgetPlayerDelegate> playerDelegate;
+@property (nonatomic) @? renderFailed;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setWidgetModel:;
+- (id)initWithFrame:overlayWidgetModel:;
+- (void)loadUgenWidgetWithFrame:;
+- (void)p_renderFiled;
+- (id)playerDelegate;
+- (id)renderFailed;
+- (void)setPlayerDelegate:;
+- (void)setRenderFailed:;
+- (void)ugenContentView:event:;
+- (void)ugenContentView:loadFailWithInfo:error:;
+- (void)ugenContentView:loadFinishWithInfo:;
+- (id)widgetModel;
+- (void)closeView;
+- (void)setWidget:;
+- (void)dealloc;
+- (id)widget;
+- (void)setDelegate:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)showInView:;
+- (id)parentView;
+- (void)setParentView:;
+@end

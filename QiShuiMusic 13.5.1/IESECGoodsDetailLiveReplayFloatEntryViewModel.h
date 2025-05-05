@@ -1,0 +1,2 @@
+@interface IESECGoodsDetailLiveReplayFloatEntryViewModel : IESECGoodsDetailPageBaseViewModel
+@end

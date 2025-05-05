@@ -1,0 +1,2 @@
+@interface AWEIMSystemMessageTableViewCell : AWEIMMessageBaseTableViewCell
+@end

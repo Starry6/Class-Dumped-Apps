@@ -1,0 +1,35 @@
+@interface GEORPFeedbackMultiSelectField : PBCodable
+@property (nonatomic) NSMutableArray options;
+@property (nonatomic) NSMutableArray selecteds;
+- (void)readAll:;
+- (void)setOptions:;
+- (id)init;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)options;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)clearOptions;
+- (void)addOptions:;
+- (unsigned long long)optionsCount;
+- (id)optionsAtIndex:;
+- (id)selecteds;
+- (void)setSelecteds:;
+- (void)clearSelecteds;
+- (void)addSelected:;
+- (unsigned long long)selectedsCount;
+- (id)selectedAtIndex:;
++ (BOOL)isValid:;
++ (Class)optionsType;
++ (Class)selectedType;
+@end

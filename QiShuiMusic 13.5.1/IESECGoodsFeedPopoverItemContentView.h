@@ -1,0 +1,30 @@
+@interface IESECGoodsFeedPopoverItemContentView : UIView
+@property (nonatomic) CAShapeLayer fillLayer;
+@property (nonatomic) CAShapeLayer pointLayer;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} lastBounds;
+@property (nonatomic) Q position;
+@property (nonatomic) double sharpOffset;
+@property (nonatomic) BOOL shapeOffsetInCenter;
+@property (nonatomic) BOOL showPoint;
+@property (nonatomic) UIColor popoverColor;
+- (void)setSharpOffset:;
+- (void)setPopoverColor:;
+- (void)setShapeOffsetInCenter:;
+- (void)setShowPoint:;
+- (BOOL)shapeOffsetInCenter;
+- (double)sharpOffset;
+- (BOOL)showPoint;
+- (void)setPosition:;
+- (unsigned long long)position;
+- (id)fillLayer;
+- (void)setFillLayer:;
+- (id)init;
+- (void)layoutSubviews;
+- (void).cxx_destruct;
+- (id)pointLayer;
+- (void)setPointLayer:;
+- (id)popoverColor;
+- (id)lastBounds;
+- (void)setLastBounds:;
++ (id)duxPopoverSharpBezierPathWithRect:position:sharpOffset:sharpSmooth:;
+@end

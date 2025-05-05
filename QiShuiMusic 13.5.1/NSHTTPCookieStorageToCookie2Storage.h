@@ -1,0 +1,27 @@
+@interface NSHTTPCookieStorageToCookie2Storage : NSHTTPCookieStorage
+- (id)init;
+- (void)dealloc;
+- (id)cookies;
+- (void).cxx_destruct;
+- (id)_initWithCFHTTPCookieStorage:;
+- (void)_getCookiesForURL:mainDocumentURL:partition:policyProperties:completionHandler:;
+- (void)_setCookies:forURL:mainDocumentURL:policyProperties:;
+- (id)_cookieStorage;
+- (id)_initWithIdentifier:private:;
+- (void)setCookie:;
+- (void)setCookies:forURL:mainDocumentURL:;
+- (void)_testingOfStoringOfCookie:;
+- (void)storeCookies:forTask:;
+- (void)_saveCookies:;
+- (void)_saveCookies;
+- (id)cookiesForURL:;
+- (void)getCookiesForTask:completionHandler:;
+- (id)_cookiesForURL:mainDocumentURL:;
+- (void)_getCookiesForURL:mainDocumentURL:partition:completionHandler:;
+- (void)_getCookiesForPartition:completionHandler:;
+- (void)deleteCookie:;
+- (void)removeCookiesSinceDate:;
+- (void)setCookieAcceptPolicy:;
+- (unsigned long long)cookieAcceptPolicy;
+- (void)_setPrivateBrowsingEnabled:;
+@end

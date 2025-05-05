@@ -1,0 +1,31 @@
+@interface UAPasteboardFileItemProvider : NSObject
+@property (nonatomic) NSURL fileURL;
+@property (nonatomic) NSData sandboxExtension;
+@property (nonatomic) BOOL isDir;
+@property (nonatomic) BOOL preferFileRep;
+@property (nonatomic) NSUUID uuid;
+@property (nonatomic) NSString type;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setFileURL:;
+- (id)uuid;
+- (void)setType:;
+- (void)setUuid:;
+- (id)type;
+- (void).cxx_destruct;
+- (id)fileURL;
+- (id)sandboxExtension;
+- (void)setSandboxExtension:;
+- (void)getDataWithCompletionBlock:;
+- (BOOL)preferFileRep;
+- (void)setPreferFileRep:;
+- (void)getDataFileWithCompletionBlock:;
+- (id)getFileName;
+- (id)initWithURL:sandboxExtension:;
+- (void)accessFileAtURLWithCompletion:;
+- (BOOL)isDir;
+- (void)setIsDir:;
++ (BOOL)conformsToProtocol:;
+@end

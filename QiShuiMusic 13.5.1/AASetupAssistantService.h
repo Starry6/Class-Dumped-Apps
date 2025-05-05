@@ -1,0 +1,33 @@
+@interface AASetupAssistantService : NSObject
+@property (nonatomic) NSString appleID;
+@property (nonatomic) NSString password;
+@property (nonatomic) NSString emailChoice;
+- (id)appleID;
+- (void)setPassword:;
+- (id)init;
+- (id)password;
+- (void)dealloc;
+- (void)setCookieStorage:;
+- (void)setAppleID:;
+- (void).cxx_destruct;
+- (id)initWithAccount:;
+- (void)authenticateWithHandler:;
+- (id)_signingSession;
+- (id)initWithAppleID:password:;
+- (void)downloadURLConfiguration:;
+- (void)createAppleIDWithParameters:handler:;
+- (void)createAppleIDWithParameters:handlerWithResponse:;
+- (void)updateAppleIDWithParameters:handler:;
+- (void)setupDelegateAccountsWithParameters:handler:;
+- (void)loginDelegatesWithParameters:completion:;
+- (void)upgradeiCloudTermsIfNecessaryWithHandler:;
+- (void)upgradeiCloudTermsIfNecessaryWithCustomHeaders:handler:;
+- (void)shouldPresentUpgradeFlowWithCompletion:;
+- (void)_doHSADeviceProvisioningWithDSID:data:;
+- (void)_doHSADeviceProvisioningSynchronizationWithDSID:data:;
+- (void)_doHSADeviceReprovisioningWithDSID:;
+- (id)emailChoice;
+- (void)setEmailChoice:;
++ (id)urlConfiguration;
++ (void)resetURLConfiguration;
+@end

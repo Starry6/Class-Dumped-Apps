@@ -1,0 +1,33 @@
+@interface GEOBusinessResolutionRequest : PBRequest
+@property (nonatomic) BOOL hasShortBusinessName;
+@property (nonatomic) NSString shortBusinessName;
+@property (nonatomic) BOOL hasDeviceLocation;
+@property (nonatomic) GEOLocation deviceLocation;
+- (void)readAll:;
+- (BOOL)hasGreenTeaWithValue:;
+- (id)init;
+- (void)clearSensitiveFields:;
+- (id)initWithJSON:;
+- (id)deviceLocation;
+- (id)jsonRepresentation;
+- (Class)responseClass;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (BOOL)hasDeviceLocation;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (void)setDeviceLocation:;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (unsigned int)requestTypeCode;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasShortBusinessName;
+- (id)shortBusinessName;
+- (void)setShortBusinessName:;
++ (BOOL)isValid:;
+@end

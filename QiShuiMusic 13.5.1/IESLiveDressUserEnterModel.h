@@ -1,0 +1,2 @@
+@interface IESLiveDressUserEnterModel : NSObject
+@end

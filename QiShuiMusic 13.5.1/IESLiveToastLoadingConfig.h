@@ -1,0 +1,32 @@
+@interface IESLiveToastLoadingConfig : NSObject
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString imageName;
+@property (nonatomic) NSString webpName;
+@property (nonatomic) NSString lottieName;
+@property (nonatomic) UIColor tintColor;
+@property (nonatomic) NSProgress loadingProgress;
+@property (nonatomic) BOOL canBeClosed;
+@property (nonatomic) @? closeActionBlock;
+@property (nonatomic) BOOL canBeClosedByTapBackground;
+- (void)setCanBeClosed:;
+- (BOOL)canBeClosed;
+- (BOOL)canBeClosedByTapBackground;
+- (id)closeActionBlock;
+- (id)lottieName;
+- (BOOL)p_isToastLoadingConfigValid;
+- (void)setCanBeClosedByTapBackground:;
+- (void)setCloseActionBlock:;
+- (void)setLottieName:;
+- (void)setWebpName:;
+- (id)webpName;
+- (void)setImageName:;
+- (id)imageName;
+- (id)tintColor;
+- (void)setTitle:;
+- (id)loadingProgress;
+- (id)title;
+- (void)setLoadingProgress:;
+- (void).cxx_destruct;
+- (void)setTintColor:;
++ (id)defaultConfig;
+@end

@@ -1,0 +1,36 @@
+@interface SCNHitTestResult : NSObject
+@property (nonatomic)  simdLocalCoordinates;
+@property (nonatomic)  simdWorldCoordinates;
+@property (nonatomic)  simdLocalNormal;
+@property (nonatomic)  simdWorldNormal;
+@property (nonatomic) {?=[4]} simdModelTransform;
+@property (nonatomic) SCNNode node;
+@property (nonatomic) q geometryIndex;
+@property (nonatomic) q faceIndex;
+@property (nonatomic) {SCNVector3=fff} localCoordinates;
+@property (nonatomic) {SCNVector3=fff} worldCoordinates;
+@property (nonatomic) {SCNVector3=fff} localNormal;
+@property (nonatomic) {SCNVector3=fff} worldNormal;
+@property (nonatomic) {SCNMatrix4=ffffffffffffffff} modelTransform;
+@property (nonatomic) SCNNode boneNode;
+- (id)node;
+- (void)dealloc;
+- (id)initWithResult:;
+- (id)description;
+- (id)simdWorldCoordinates;
+- (id)localCoordinates;
+- (id)boneNode;
+- (long long)geometryIndex;
+- (long long)faceIndex;
+- (id)worldCoordinates;
+- (id)localNormal;
+- (id)worldNormal;
+- (id)textureCoordinatesWithMappingChannel:;
+- (id)textureCoordinate;
+- (id)modelTransform;
+- (id)simdLocalCoordinates;
+- (id)simdLocalNormal;
+- (id)simdWorldNormal;
+- (id)simdModelTransform;
++ (id)hitTestResultsFromHitTestResultRef:;
+@end

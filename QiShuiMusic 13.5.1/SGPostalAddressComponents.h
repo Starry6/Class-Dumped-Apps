@@ -1,0 +1,30 @@
+@interface SGPostalAddressComponents : NSObject
+@property (nonatomic) NSString street;
+@property (nonatomic) NSString subLocality;
+@property (nonatomic) NSString city;
+@property (nonatomic) NSString subAdministrativeArea;
+@property (nonatomic) NSString state;
+@property (nonatomic) NSString postalCode;
+@property (nonatomic) NSString country;
+@property (nonatomic) NSString isoCountryCode;
+- (id)city;
+- (id)postalCode;
+- (id)country;
+- (id)subAdministrativeArea;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)isoCountryCode;
+- (void)encodeWithCoder:;
+- (id)state;
+- (id)subLocality;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)street;
+- (id)initWithStreet:subLocality:city:subAdministrativeArea:state:postalCode:country:isoCountryCode:;
+- (BOOL)isEqualToPostalAddressComponents:;
++ (BOOL)supportsSecureCoding;
++ (id)components:city:state:postalCode:country:;
++ (id)components:subLocality:city:subAdministrativeArea:state:postalCode:country:isoCountryCode:;
+@end

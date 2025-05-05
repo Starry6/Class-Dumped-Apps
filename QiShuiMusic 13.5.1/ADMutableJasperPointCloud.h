@@ -1,0 +1,34 @@
+@interface ADMutableJasperPointCloud : ADJasperPointCloud
+@property (nonatomic) NSInteger capacity;
+@property (nonatomic) ^f mutableEuclideanDistances;
+@property (nonatomic) ^{CGPoint=dd} mutableCameraPixels;
+@property (nonatomic) ^{CGPoint=dd} mutableUndistortedCameraPixels;
+@property (nonatomic) ^ mutablePoints;
+@property (nonatomic) ^f mutableIntensities;
+@property (nonatomic) ^f mutableConfidences;
+@property (nonatomic) ^f mutableSignalToNoiseRatios;
+@property (nonatomic) * mutableBankIds;
+@property (nonatomic) * mutableSpotIds;
+@property (nonatomic) * mutableEchoIds;
+@property (nonatomic) ^I mutableFlags;
+- (int)capacity;
+- (id)mutableFlags;
+- (id)initWithCapacity:;
+- (void)blacken;
+- (void)replacePointsInRange:withPointsFrom:range:;
+- (void)resize:;
+- (id)mutablePoints;
+- (void)appendPointsFrom:;
+- (id)initWithCapacity:storage:;
+- (void)appendPointsFrom:range:;
+- (id)mutableEuclideanDistances;
+- (id)mutableCameraPixels;
+- (id)mutableUndistortedCameraPixels;
+- (id)mutableIntensities;
+- (id)mutableConfidences;
+- (id)mutableSignalToNoiseRatios;
+- (char *)mutableBankIds;
+- (char *)mutableSpotIds;
+- (char *)mutableEchoIds;
+- (void)applyPerformanceOverrides;
+@end

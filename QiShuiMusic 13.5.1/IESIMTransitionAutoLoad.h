@@ -1,0 +1,2 @@
+@interface IESIMTransitionAutoLoad : NSObject
+@end

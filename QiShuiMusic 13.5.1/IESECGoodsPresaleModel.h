@@ -1,0 +1,35 @@
+@interface IESECGoodsPresaleModel : MTLModel
+@property (nonatomic) double initTimeinterval;
+@property (nonatomic) double serverTime;
+@property (nonatomic) double deliveryTime;
+@property (nonatomic) NSString endText;
+@property (nonatomic) NSString deliveryTextTag;
+@property (nonatomic) NSString deliveryText;
+@property (nonatomic) NSString buyButtonPrefix;
+@property (nonatomic) double endTime;
+@property (nonatomic) double currentTime;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)buyButtonPrefix;
+- (id)deliveryTextTag;
+- (id)endText;
+- (id)deliveryText;
+- (double)initTimeinterval;
+- (void)setBuyButtonPrefix:;
+- (void)setDeliveryText:;
+- (void)setDeliveryTextTag:;
+- (void)setEndText:;
+- (void)setInitTimeinterval:;
+- (void)setServerTime:;
+- (id)init;
+- (void)setEndTime:;
+- (double)endTime;
+- (void).cxx_destruct;
+- (double)currentTime;
+- (double)serverTime;
+- (void)setDeliveryTime:;
+- (double)deliveryTime;
++ (id)JSONKeyPathsByPropertyKey;
+@end

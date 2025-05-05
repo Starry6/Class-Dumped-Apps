@@ -1,0 +1,34 @@
+@interface GEORPMerchantLookupCorrections : PBCodable
+@property (nonatomic) BOOL hasIsCategoryIncorrect;
+@property (nonatomic) BOOL isCategoryIncorrect;
+@property (nonatomic) BOOL hasIsMerchantIncorrect;
+@property (nonatomic) BOOL isMerchantIncorrect;
+@property (nonatomic) BOOL hasIsOtherIssue;
+@property (nonatomic) BOOL isOtherIssue;
+- (void)readAll:;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)isCategoryIncorrect;
+- (void)setIsCategoryIncorrect:;
+- (void)setHasIsCategoryIncorrect:;
+- (BOOL)hasIsCategoryIncorrect;
+- (BOOL)isMerchantIncorrect;
+- (void)setIsMerchantIncorrect:;
+- (void)setHasIsMerchantIncorrect:;
+- (BOOL)hasIsMerchantIncorrect;
+- (BOOL)isOtherIssue;
+- (void)setIsOtherIssue:;
+- (void)setHasIsOtherIssue:;
+- (BOOL)hasIsOtherIssue;
++ (BOOL)isValid:;
+@end

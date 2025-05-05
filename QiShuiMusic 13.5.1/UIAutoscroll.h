@@ -1,0 +1,31 @@
+@interface UIAutoscroll : NSObject
+@property (nonatomic) @ target;
+@property (nonatomic) UIView<UIAutoscrollContainer> scrollContainer;
+@property (nonatomic) {CGPoint=dd} point;
+@property (nonatomic) NSInteger directions;
+@property (nonatomic) double repeatInterval;
+@property (nonatomic) Q count;
+@property (nonatomic) BOOL active;
+@property (nonatomic) BOOL disabled;
+- (BOOL)active;
+- (void)setCount:;
+- (void)timerFired:;
+- (void)setDisabled:;
+- (id)point;
+- (void)dealloc;
+- (double)repeatInterval;
+- (BOOL)disabled;
+- (void)setTarget:;
+- (void)setRepeatInterval:;
+- (void).cxx_destruct;
+- (id)target;
+- (void)setActive:;
+- (unsigned long long)count;
+- (void)invalidate;
+- (void)setPoint:;
+- (BOOL)startAutoscroll:scrollContainer:point:directions:repeatInterval:;
+- (id)scrollContainer;
+- (void)setScrollContainer:;
+- (int)directions;
+- (void)setDirections:;
+@end

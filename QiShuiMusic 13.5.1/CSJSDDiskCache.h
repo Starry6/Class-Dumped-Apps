@@ -1,0 +1,32 @@
+@interface CSJSDDiskCache : NSObject
+@property (nonatomic) NSString diskCachePath;
+@property (nonatomic) NSFileManager fileManager;
+@property (nonatomic) CSJSDImageCacheConfig config;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)cachePathForKey:;
+- (id)cachePathForKey:inPath:;
+- (BOOL)containsDataForKey:;
+- (id)diskCachePath;
+- (id)extendedDataForKey:;
+- (id)initWithCachePath:config:;
+- (void)moveCacheDirectoryFromPath:toPath:;
+- (void)removeAllData;
+- (void)setDiskCachePath:;
+- (void)setExtendedData:forKey:;
+- (id)fileManager;
+- (id)dataForKey:;
+- (id)init;
+- (void)createDirectory;
+- (void)setData:forKey:;
+- (void)commonInit;
+- (unsigned long long)totalCount;
+- (void)setFileManager:;
+- (void).cxx_destruct;
+- (void)removeDataForKey:;
+- (id)config;
+- (unsigned long long)totalSize;
+- (void)removeExpiredData;
+@end

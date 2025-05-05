@@ -1,0 +1,36 @@
+@interface CKAssetRereferenceInfo : NSObject
+@property (nonatomic) CKRecordZoneID sourceZoneID;
+@property (nonatomic) NSURL contentBaseURL;
+@property (nonatomic) NSString owner;
+@property (nonatomic) NSString requestor;
+@property (nonatomic) NSData assetKey;
+@property (nonatomic) NSData referenceSignature;
+@property (nonatomic) NSString downloadToken;
+@property (nonatomic) Q downloadTokenExpiration;
+@property (nonatomic) NSError error;
+@property (nonatomic) NSString destinationFieldName;
+- (id)downloadToken;
+- (id)referenceSignature;
+- (void)setReferenceSignature:;
+- (id)CKDescriptionPropertiesWithPublic:private:shouldExpand:;
+- (id)requestor;
+- (void)setOwner:;
+- (void)setError:;
+- (id)owner;
+- (void)setDownloadTokenExpiration:;
+- (id)error;
+- (unsigned long long)downloadTokenExpiration;
+- (void)setDownloadToken:;
+- (id)assetKey;
+- (id)sourceZoneID;
+- (void).cxx_destruct;
+- (void)setRequestor:;
+- (id)description;
+- (void)setSourceZoneID:;
+- (void)setAssetKey:;
+- (void)setContentBaseURL:;
+- (id)contentBaseURL;
+- (id)initWithSourceZoneID:;
+- (id)destinationFieldName;
+- (void)setDestinationFieldName:;
+@end

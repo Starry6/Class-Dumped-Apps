@@ -1,0 +1,31 @@
+@interface BUSDKLocation : NSObject
+@property (nonatomic) CLLocationManager locationManager;
+@property (nonatomic) NSDate latestUpdateTimestamp;
+@property (nonatomic) {CLLocationCoordinate2D=dd} latestLocation;
+@property (nonatomic) NSNumber latitude;
+@property (nonatomic) NSNumber longitude;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)asyncStartUpdate;
+- (id)downNumber:;
+- (id)latestUpdateTimestamp;
+- (void)requestLatestStatus;
+- (BOOL)serviceEnable;
+- (void)setLatestUpdateTimestamp:;
+- (void)setLocationManager:;
+- (id)latitude;
+- (id)latestLocation;
+- (void)setLatestLocation:;
+- (void)locationManager:didFailWithError:;
+- (void)locationManager:didUpdateLocations:;
+- (void)setLatitude:;
+- (void)setLongitude:;
+- (id)locationManager;
+- (void).cxx_destruct;
+- (id)longitude;
+- (id)copyWithZone:;
++ (id)locationService;
++ (id)allocWithZone:;
+@end

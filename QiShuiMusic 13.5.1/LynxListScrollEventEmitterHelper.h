@@ -1,0 +1,30 @@
+@interface LynxListScrollEventEmitterHelper : NSObject
+@property (nonatomic) {CGPoint=dd} lastContentOffset;
+@property (nonatomic) {CGSize=dd} lastContentSize;
+@property (nonatomic) LynxListScrollEventEmitter emitter;
+@property (nonatomic) double lastUpdateTime;
+@property (nonatomic) NSString lastEvent;
+@property (nonatomic) Q scrollPosition;
+@property (nonatomic) Q scrollState;
+@property (nonatomic) BOOL horizontalLayout;
+- (id)fetchScrollEvent:;
+- (id)initWithEmitter:;
+- (unsigned long long)position:;
+- (double)lastUpdateTime;
+- (unsigned long long)scrollPosition;
+- (void)setHorizontalLayout:;
+- (id)lastEvent;
+- (unsigned long long)scrollState;
+- (void).cxx_destruct;
+- (void)setScrollPosition:;
+- (void)setEmitter:;
+- (id)emitter;
+- (BOOL)horizontalLayout;
+- (void)setLastUpdateTime:;
+- (id)lastContentOffset;
+- (void)setLastContentOffset:;
+- (id)lastContentSize;
+- (void)setLastContentSize:;
+- (void)setLastEvent:;
+- (void)setScrollState:;
+@end

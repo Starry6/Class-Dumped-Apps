@@ -1,0 +1,33 @@
+@interface IESLiveSaaSLoadingViewController : UIViewController
+@property (nonatomic) UIImageView backupImageView;
+@property (nonatomic) IESLiveSaaSWebpLoadingView loadingIndicator;
+@property (nonatomic) <IESLiveSaaSAudienceRoomAwareness> audienceAwareness;
+@property (nonatomic) double clickTime;
+@property (nonatomic) NSString imageUrlStr;
+- (id)backupImageView;
+- (void)setImageUrlStr:;
+- (void)addbackupImageView;
+- (id)audienceAwareness;
+- (double)clickTime;
+- (id)imageUrlStr;
+- (id)initWithBackImageUrlStr:;
+- (void)setAudienceAwareness:;
+- (void)setBackupImageView:;
+- (void)setClickTime:;
+- (void)showBackImageViewIfNeeded;
+- (long long)preferredInterfaceOrientationForPresentation;
+- (id)init;
+- (long long)preferredStatusBarStyle;
+- (BOOL)prefersStatusBarHidden;
+- (void).cxx_destruct;
+- (void)viewDidAppear:;
+- (void)viewWillAppear:;
+- (unsigned long long)supportedInterfaceOrientations;
+- (void)viewDidLoad;
+- (id)loadingIndicator;
+- (void)setLoadingIndicator:;
+- (void)startLoadingAnimation;
+- (void)stopLoadingAnimation;
++ (void)replaceLoadingVC:withAudienceVC:inNavigationVC:;
++ (void)replaceLoadingVC:withAudienceVC:withSegue:;
+@end

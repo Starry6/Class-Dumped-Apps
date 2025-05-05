@@ -1,0 +1,32 @@
+@interface MRExternalDeviceTransportConnection : NSObject
+@property (nonatomic) NSString label;
+@property (nonatomic) NSString destinationOutputDeviceUID;
+@property (nonatomic) NSString destinationGroupUID;
+@property (nonatomic) I options;
+@property (nonatomic) BOOL isValid;
+@property (nonatomic) NSError error;
+@property (nonatomic) <MRExternalDeviceTransportConnectionDelegate> delegate;
+- (void)setOptions:;
+- (void)closeWithError:;
+- (void)setDelegate:;
+- (void)setLabel:;
+- (id)error;
+- (void)close;
+- (id)label;
+- (id)destinationOutputDeviceUID;
+- (unsigned int)options;
+- (id)delegate;
+- (BOOL)isValid;
+- (void).cxx_destruct;
+- (unsigned long long)sendTransportData:options:;
+- (id)exportEndpoint:;
+- (id)exportOutputDevice:endpoint:;
+- (void)_notifyDelegateDidCloseWithError:;
+- (void)_notifyDelegateDidReceiveData:;
+- (void)_notifyDelegateHasSpaceAvailable;
+- (id)exportEndpoints:;
+- (id)exportOutputDevices:endpoint:;
+- (void)setDestinationOutputDeviceUID:;
+- (id)destinationGroupUID;
+- (void)setDestinationGroupUID:;
+@end

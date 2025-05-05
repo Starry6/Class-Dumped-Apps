@@ -1,0 +1,2 @@
+@interface VKBaseTextPosition : UITextPosition
+@end

@@ -1,0 +1,35 @@
+@interface CSJUgenAggregationLUAdapter : CSJUgenAggregationAdapter
+@property (nonatomic) BOOL showOnceLU;
+@property (nonatomic) BOOL isShowLUAlert;
+@property (nonatomic) CSJRewardedAgainAlertView alert;
+- (void)resumeCountDown;
+- (void)ugenAggregationContentViewClose;
+- (void)invalidateCountDown;
+- (BOOL)isShowLUAlert;
+- (BOOL)isValidCountDown;
+- (void)pauseCountDown;
+- (BOOL)pbu_shouldShowLuSeachAlert;
+- (void)pbu_showRewardLuSearchAlert;
+- (void)scheduleCountDown;
+- (void)setIsShowLUAlert:;
+- (void)setShowOnceLU:;
+- (BOOL)shouldShowUgenAggregationAlert;
+- (BOOL)showOnceLU;
+- (void)ugenAggregationContentViewRender;
+- (void)ugenAggregationCountDownWidgetRender;
+- (void)ugenAggregationGuidePageRender;
+- (void)ugenAggregationSendReward;
+- (void)ugenAggregationTopBarRender;
+- (long long)ugenAggregationTopBarStyle;
+- (void)ugenContentView:event:;
+- (void)ugenContentView:loadFailWithInfo:error:;
+- (void)ugenContentView:loadFinishWithInfo:;
+- (void)ugenContentView:loadStartWithInfo:;
+- (void)vmAggregationLoadData;
+- (void)vmAggregationViewDidAppear;
+- (void)vmAggregationViewDidDisappear;
+- (void)vmAggregationViewDidLoad;
+- (id)alert;
+- (void)setAlert:;
+- (void).cxx_destruct;
+@end

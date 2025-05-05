@@ -1,0 +1,37 @@
+@interface CSJWebviewPrecreator : NSObject
+@property (nonatomic) NSMutableArray arrOfInstances;
+@property (nonatomic) NSRecursiveLock lock;
+@property (nonatomic) double lastMemoryWarningTime;
+@property (nonatomic) q maxNumberOfInstances;
+@property (nonatomic) double precreateDelaySeconds;
+@property (nonatomic) q memoryWarningProtectDuration;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)needAddInstance;
+- (void)adjustmentWKIfNeed;
+- (id)arrOfInstances;
+- (id)generateWKWebView;
+- (double)lastMemoryWarningTime;
+- (long long)maxNumberOfInstances;
+- (long long)memoryWarningProtectDuration;
+- (double)precreateDelaySeconds;
+- (void)produceWKWhenMainThreadIdle;
+- (void)setArrOfInstances:;
+- (void)setLastMemoryWarningTime:;
+- (void)setMaxNumberOfInstances:;
+- (void)setMemoryWarningProtectDuration:;
+- (void)setPrecreateDelaySeconds:;
+- (id)takeWebView;
+- (id)takeWebViewWithIsFromCache:;
+- (id)init;
+- (void)dealloc;
+- (void)didReceiveMemoryWarning;
+- (void)start;
+- (id)lock;
+- (void).cxx_destruct;
+- (void)webViewWebContentProcessDidTerminate:;
+- (void)setLock:;
++ (id)sharedInstance;
+@end

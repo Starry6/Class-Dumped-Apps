@@ -1,0 +1,33 @@
+@interface GEORoadDescription : PBCodable
+@property (nonatomic) BOOL hasFormattedDescription;
+@property (nonatomic) GEOFormattedString formattedDescription;
+@property (nonatomic) BOOL hasNavigationFriendliness;
+@property (nonatomic) NSInteger navigationFriendliness;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasFormattedDescription;
+- (id)formattedDescription;
+- (void)setFormattedDescription:;
+- (int)navigationFriendliness;
+- (void)setNavigationFriendliness:;
+- (void)setHasNavigationFriendliness:;
+- (BOOL)hasNavigationFriendliness;
+- (id)navigationFriendlinessAsString:;
+- (int)StringAsNavigationFriendliness:;
++ (BOOL)isValid:;
+@end

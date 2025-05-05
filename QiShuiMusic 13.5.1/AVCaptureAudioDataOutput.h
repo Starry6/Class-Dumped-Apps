@@ -1,0 +1,35 @@
+@interface AVCaptureAudioDataOutput : AVCaptureOutput
+@property (nonatomic) <AVCaptureAudioDataOutputSampleBufferDelegate> sampleBufferDelegate;
+@property (nonatomic) NSObject<OS_dispatch_queue> sampleBufferCallbackQueue;
+@property (nonatomic) NSDictionary audioSettings;
+@property (nonatomic) @ delegateOverride;
+@property (nonatomic) NSObject<OS_dispatch_queue> delegateOverrideCallbackQueue;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)canAddConnection:failureReason:;
+- (id)init;
+- (void)dealloc;
+- (id)connectionMediaTypes;
+- (void)detachSafelyFromFigCaptureSession:;
+- (void)attachSafelyToFigCaptureSession:;
+- (void)setDelegateOverride:delegateOverrideCallbackQueue:;
+- (void)_handleNotification:payload:;
+- (void)_updateRemoteQueue:;
+- (id)delegateOverride;
+- (void)_handleLocalQueueMessage:;
+- (void)_handleRemoteQueueOperation:;
+- (id)delegateOverrideCallbackQueue;
+- (void)setAudioSettings:;
+- (id)audioSettings;
+- (void)_updateLocalQueue:;
+- (void)setSampleBufferDelegate:queue:;
+- (id)sampleBufferDelegate;
+- (id)sampleBufferCallbackQueue;
+- (id)supportedAssetWriterOutputFileTypes;
+- (id)recommendedAudioSettingsForAssetWriterWithOutputFileType:;
+- (void)_handleConfigurationLiveEventForID:updatedFormatDescription:;
+- (void)_handleSampleBufferEventForSampleBuffer:;
++ (id)new;
+@end

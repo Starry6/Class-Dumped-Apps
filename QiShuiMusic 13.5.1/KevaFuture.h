@@ -1,0 +1,36 @@
+@interface KevaFuture : Keva
+@property (nonatomic) KevaImpl repo;
+@property (nonatomic) NSCondition condition;
+@property (nonatomic) NSString repoName;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)updateMemoryCacheWithKey:value:;
+- (id)initWithRepoName:withAsyncBlock:;
+- (id)repoName;
+- (void)setRepoName:;
+- (void)storeBool:forKey:;
+- (void)storeDouble:forKey:;
+- (void)storeFloat:forKey:;
+- (void)storeInteger:forKey:;
+- (void)storeObject:forKey:;
+- (void)storeString:forKey:;
+- (id)condition;
+- (void)setCondition:;
+- (id)stringForKey:;
+- (id)all;
+- (BOOL)boolForKey:defaultValue:;
+- (void)clear;
+- (float)floatForKey:defaultValue:;
+- (id)objectForKey:;
+- (void).cxx_destruct;
+- (id)name;
+- (long long)count;
+- (long long)integerForKey:defaultValue:;
+- (double)doubleForKey:defaultValue:;
+- (BOOL)contains:;
+- (void)removeForKey:;
+- (id)repo;
+- (void)setRepo:;
+@end

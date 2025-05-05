@@ -1,0 +1,31 @@
+@interface AWDRATConnectedPower : PBCodable
+@property (nonatomic) BOOL hasRAT;
+@property (nonatomic) NSInteger rAT;
+@property (nonatomic) BOOL hasPowerConnectedMicroWatt;
+@property (nonatomic) I powerConnectedMicroWatt;
+@property (nonatomic) BOOL hasPowerConnSetupMicroWatt;
+@property (nonatomic) I powerConnSetupMicroWatt;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (int)rAT;
+- (void)setRAT:;
+- (void)setHasRAT:;
+- (BOOL)hasRAT;
+- (id)rATAsString:;
+- (int)StringAsRAT:;
+- (void)setPowerConnectedMicroWatt:;
+- (void)setHasPowerConnectedMicroWatt:;
+- (BOOL)hasPowerConnectedMicroWatt;
+- (void)setPowerConnSetupMicroWatt:;
+- (void)setHasPowerConnSetupMicroWatt:;
+- (BOOL)hasPowerConnSetupMicroWatt;
+- (unsigned int)powerConnectedMicroWatt;
+- (unsigned int)powerConnSetupMicroWatt;
+@end

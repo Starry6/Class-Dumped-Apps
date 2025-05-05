@@ -1,0 +1,31 @@
+@interface VCLinkProbingHandler : NSObject
+@property (nonatomic) <VCLinkProbingHandlerDelegate> linkProbingHandlerDelegate;
+@property (nonatomic) C linkProbingCapabilityVersion;
+@property (nonatomic) BOOL isLinkProbingActive;
+@property (nonatomic) NSSet activelyProbingLinkIDs;
+@property (nonatomic) BOOL isDuplicationEnabled;
+- (void)dealloc;
+- (id)initWithDelegate:;
+- (unsigned char)linkProbingCapabilityVersion;
+- (void)setLinkProbingCapabilityVersion:;
+- (BOOL)isDuplicationEnabled;
+- (void)updateProbingResults:;
+- (id)linkProbingHandlerDelegate;
+- (void)setLinkProbingHandlerDelegate:;
+- (BOOL)isLinkProbingActive;
+- (void)startActiveProbingOnLinks:;
+- (void)stopActiveProbingOnLinks:resetStats:;
+- (void)dispatchedUpdateProbingResults:;
+- (void)flushProbingResults:;
+- (BOOL)isValidProbingResult:;
+- (void)removeProbingResultsForLinks:;
+- (id)getProbingResultsForLinkID:;
+- (void)loadStorebagValues;
+- (void)setLinkProbingResultConfig;
+- (void)queryProbingResults;
+- (void)updateLinkPreferenceOrder;
+- (void)probingLockdownEnded;
+- (void)resetAggregatedProbingResults;
+- (id)activelyProbingLinkIDs;
+- (void)setIsDuplicationEnabled:;
+@end

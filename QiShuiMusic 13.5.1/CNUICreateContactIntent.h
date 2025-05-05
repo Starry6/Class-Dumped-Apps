@@ -1,0 +1,2 @@
+@interface CNUICreateContactIntent : INIntent
+@end

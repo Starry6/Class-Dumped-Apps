@@ -1,0 +1,37 @@
+@interface TVLStrategyInLSS : NSObject
+@property (nonatomic) <TVLStrategyInLSSDelegate> delegate;
+@property (nonatomic) NSString name;
+@property (nonatomic) BOOL enabled;
+@property (nonatomic) BOOL repeat;
+@property (nonatomic) BOOL shouldFallBackToPlayerAbrStrategy;
+@property (nonatomic) q time;
+@property (nonatomic) q runningType;
+@property (nonatomic) NSDictionary strategyPredictRes;
+@property (nonatomic) NSDictionary rowData;
+- (void)setRunningType:;
+- (void)callStrategy;
+- (void)reloadConfig;
+- (long long)runningType;
+- (void)setShouldFallBackToPlayerAbrStrategy:;
+- (void)setStrategyPredictRes:;
+- (BOOL)shouldFallBackToPlayerAbrStrategy;
+- (void)startStrategy:;
+- (void)stopStrategy;
+- (id)strategyPredictRes;
+- (void)setTime:;
+- (void)dealloc;
+- (void)setName:;
+- (long long)time;
+- (BOOL)enabled;
+- (id)initWithConfig:;
+- (void)setDelegate:;
+- (id)delegate;
+- (void)setEnabled:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)name;
+- (id)rowData;
+- (void)setRowData:;
+- (BOOL)repeat;
+- (void)setRepeat:;
+@end

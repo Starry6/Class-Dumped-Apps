@@ -1,0 +1,2 @@
+@interface DMFManagementUnlockRequest : DMFTaskRequest
+@end

@@ -1,0 +1,2 @@
+@interface BNSceneContract.PackUpReplyCommentEventModel : BNSceneContract.CommentDataSourceEventModel
+@end

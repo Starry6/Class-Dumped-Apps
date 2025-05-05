@@ -1,0 +1,21 @@
+@interface AVPlaybackItemTrackInspector : AVAssetTrackInspector
+- (id)dimensions;
+- (id)mediaType;
+- (float)peakDataRate;
+- (unsigned int)_figMediaType;
+- (id)_valueAsCFTypeForProperty:;
+- (id)timeRange;
+- (id)naturalSize;
+- (void)dealloc;
+- (id)formatDescriptions;
+- (id)asset;
+- (unsigned long long)hash;
+- (float)estimatedDataRate;
+- (id)_playbackItem;
+- (int)trackID;
+- (id)_initWithAsset:trackID:trackIndex:;
+- (BOOL)isEqual:;
+- (id)preferredTransform;
+- (id)samplePresentationTimeForTrackTime:;
+- (BOOL)isEnabled;
+@end

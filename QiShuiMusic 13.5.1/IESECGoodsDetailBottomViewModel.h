@@ -1,0 +1,34 @@
+@interface IESECGoodsDetailBottomViewModel : IESECGoodsDetailPageBaseViewModel
+@property (nonatomic) NSArray bottomItemElements;
+@property (nonatomic) NSArray bottomButtonElements;
+@property (nonatomic) NSArray bottomButtonElementsSmallMode;
+- (id)bottomDataModel;
+- (id)bottomMetaModel;
+- (id)bottomButtonElementAtIndex:;
+- (id)bottomButtonElements;
+- (id)bottomButtonElementsSmallMode;
+- (double)bottomButtonWeightSum;
+- (double)bottomButtonWeightSumSmallMode;
+- (id)bottomItemElementAtIndex:;
+- (id)bottomItemElements;
+- (double)bottomItemsSpace;
+- (id)buttonDivider;
+- (BOOL)isLynxBottomContainer;
+- (void)setBottomButtonElements:;
+- (void)setBottomButtonElementsSmallMode:;
+- (void)setBottomItemElements:;
+- (void)setupBottomButtonElements;
+- (void)setupBottomItemElements;
+- (void)setupViewModel;
+- (void)trackAddCartGuidePopupShow:;
+- (void)trackFindSameButtonShow;
+- (void)trackJoinMemberButtonShow;
+- (void)trackNoRemindClick:;
+- (void)trackSendGiftButtonShow;
+- (void)trackShow:;
+- (void)trackShowAddToCart:;
+- (void)trackShowBuyNowWithParams:container:;
+- (void)trackTipsShow;
+- (void)updateCartNum:;
+- (void).cxx_destruct;
+@end

@@ -1,0 +1,36 @@
+@interface UIContentUnavailableTextProperties : NSObject
+@property (nonatomic) UIFont font;
+@property (nonatomic) UIColor color;
+@property (nonatomic) @? colorTransformer;
+@property (nonatomic) q lineBreakMode;
+@property (nonatomic) q numberOfLines;
+@property (nonatomic) BOOL adjustsFontSizeToFitWidth;
+@property (nonatomic) double minimumScaleFactor;
+@property (nonatomic) BOOL allowsDefaultTighteningForTruncation;
+- (id)init;
+- (void)setLineBreakMode:;
+- (void)setColor:;
+- (void)setFont:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (long long)lineBreakMode;
+- (id)color;
+- (void)encodeWithCoder:;
+- (void)setAllowsDefaultTighteningForTruncation:;
+- (id)resolvedColor;
+- (void)setAdjustsFontSizeToFitWidth:;
+- (BOOL)allowsDefaultTighteningForTruncation;
+- (void).cxx_destruct;
+- (id)font;
+- (void)setMinimumScaleFactor:;
+- (double)minimumScaleFactor;
+- (BOOL)adjustsFontSizeToFitWidth;
+- (id)description;
+- (void)setNumberOfLines:;
+- (id)colorTransformer;
+- (long long)numberOfLines;
+- (void)setColorTransformer:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
++ (BOOL)supportsSecureCoding;
+@end

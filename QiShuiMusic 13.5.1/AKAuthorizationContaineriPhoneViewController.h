@@ -1,0 +1,30 @@
+@interface AKAuthorizationContaineriPhoneViewController : AKAuthorizationContainerViewController
+@property (nonatomic) UIVisualEffectView blurBackgroundView;
+@property (nonatomic) {CGSize=dd} containerContentSize;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)animationControllerForPresentedController:presentingController:sourceController:;
+- (id)init;
+- (void)preferredContentSizeDidChangeForChildContentContainer:;
+- (void)viewWillTransitionToSize:withTransitionCoordinator:;
+- (id)animationControllerForDismissedController:;
+- (void)viewWillDisappear:;
+- (void).cxx_destruct;
+- (void)viewDidAppear:;
+- (void)viewWillAppear:;
+- (void)viewDidLoad;
+- (void)_handleTapGesture:;
+- (id)initWithRootViewController:authorizationContext:;
+- (void)setContainerContentSize:;
+- (void)setContainerContentSize:animated:;
+- (void)_layoutContainerView:;
+- (id)_layoutFrameForContentSize:;
+- (id)_dismissalFrameForContentSize:;
+- (BOOL)_delegate_authorizationContainerViewControllerShouldDismiss;
+- (void)_delegate_authorizationContainerViewControllerDidDismiss;
+- (id)blurBackgroundView;
+- (void)setBlurBackgroundView:;
+- (id)containerContentSize;
+@end

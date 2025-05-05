@@ -1,0 +1,33 @@
+@interface UIDynamicsDebug : NSObject
+@property (nonatomic) UIDynamicAnimator animator;
+@property (nonatomic) GLKView debugView;
+@property (nonatomic) BOOL enabled;
+@property (nonatomic) BOOL showPhysics;
+@property (nonatomic) BOOL showOutlineInterior;
+@property (nonatomic) BOOL showFields;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)animator;
+- (id)init;
+- (void)dealloc;
+- (BOOL)enabled;
+- (void)setAnimator:;
+- (void)setNeedsDisplay;
+- (void)setEnabled:;
+- (void).cxx_destruct;
+- (id)initWithAnimator:;
+- (id)debugView;
+- (void)glkView:drawInRect:;
+- (void)captureDebugInformation;
+- (void)_setupDebugViewIfNeccessary;
+- (void)_teardownDebugView;
+- (BOOL)showPhysics;
+- (void)setShowPhysics:;
+- (BOOL)showOutlineInterior;
+- (void)setShowOutlineInterior:;
+- (BOOL)showFields;
+- (void)setShowFields:;
+- (void)setDebugView:;
+@end

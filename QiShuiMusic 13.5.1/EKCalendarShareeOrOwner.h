@@ -1,0 +1,35 @@
+@interface EKCalendarShareeOrOwner : NSObject
+@property (nonatomic) NSString name;
+@property (nonatomic) NSString emailAddress;
+@property (nonatomic) NSString phoneNumber;
+@property (nonatomic) NSString firstName;
+@property (nonatomic) NSString lastName;
+@property (nonatomic) NSURL URL;
+@property (nonatomic) NSString UUID;
+@property (nonatomic) BOOL isCurrentUserForScheduling;
+@property (nonatomic) BOOL isCurrentUserForSharing;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)emailAddress;
+- (void)setLastName:;
+- (void)setName:;
+- (id)phoneNumber;
+- (void)setEmailAddress:;
+- (void)setFirstName:;
+- (void)setPhoneNumber:;
+- (id)firstName;
+- (id)lastName;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (id)name;
+- (id)UUID;
+- (BOOL)isEqual:;
+- (void)setURL:;
+- (id)URL;
+- (BOOL)isCurrentUserForSharing;
+- (BOOL)isCurrentUserForScheduling;
++ (id)shareeWithEKSharee:forCalendar:;
++ (id)ownerForEKCalendar:;
+@end

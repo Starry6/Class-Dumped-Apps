@@ -1,0 +1,38 @@
+@interface CVNLPCommSafetyImageAnalyzer : CVNLPModelBase
+@property (nonatomic) NSDictionary acceptedOutputIndices;
+@property (nonatomic) NSNumber otgxMainThreshold;
+@property (nonatomic) Q otgxMainIndex;
+@property (nonatomic) BOOL otgxRetrieveAllClasses;
+@property (nonatomic) NSURL modelUrl;
+@property (nonatomic) NSInteger _espressoEngine;
+@property (nonatomic) NSInteger _espressoDeviceId;
+@property (nonatomic) NSInteger _espressoStorageType;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (id)classifyImage:error:;
+- (id)generateClassificationScoresForImage:error:;
+- (id)classifyPixelBuffer:error:;
+- (id)generateClassificationScoresForPixelBuffer:error:;
+- (id)initWithModelURL:options:error:;
+- (BOOL)loadNetworkForURL:espressoEngine:storageType:deviceId:;
+- (void)_extractThresholdForOTGXMain:;
+- (id)computeOutputForImage:error:;
+- (id)_computeOutputForPixelBuffer:error:;
+- (id)_processNetworkOutput:;
+- (id)acceptedOutputIndices;
+- (id)otgxMainThreshold;
+- (unsigned long long)otgxMainIndex;
+- (BOOL)otgxRetrieveAllClasses;
+- (id)modelUrl;
+- (int)_espressoEngine;
+- (int)_espressoDeviceId;
+- (int)_espressoStorageType;
++ (BOOL)_checkIfOnANEDevice;
++ (id)_readOperatingThresholdsDataUsingModelURL:error:;
++ (id)_nameFromRevParts:;
++ (id)_createNameEncodingDict;
++ (id)_createNameDecodingDict;
++ (id)_encodeName:;
++ (id)_decodeName:;
++ (id)getOperatingPointDataForClassName:modelURL:error:;
+@end

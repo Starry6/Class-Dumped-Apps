@@ -1,0 +1,38 @@
+@interface IESECWinLynxCardConfig : MTLModel
+@property (nonatomic) NSString lynxUrl;
+@property (nonatomic) double predictHeight;
+@property (nonatomic) double fixedHeight;
+@property (nonatomic) NSString calHeightSingle;
+@property (nonatomic) NSString calHeightDouble;
+@property (nonatomic) double spanRatio;
+@property (nonatomic) BOOL formModifiable;
+@property (nonatomic) NSDictionary edge;
+@property (nonatomic) BOOL followLastCard;
+@property (nonatomic) double rootHeight;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)calHeightSingle;
+- (id)calHeightDouble;
+- (id)lynxUrl;
+- (BOOL)followLastCard;
+- (BOOL)formModifiable;
+- (double)predictHeight;
+- (double)rootHeight;
+- (void)setCalHeightDouble:;
+- (void)setCalHeightSingle:;
+- (void)setFollowLastCard:;
+- (void)setFormModifiable:;
+- (void)setLynxUrl:;
+- (void)setPredictHeight:;
+- (void)setRootHeight:;
+- (void)setSpanRatio:;
+- (double)spanRatio;
+- (void)setEdge:;
+- (double)fixedHeight;
+- (void)setFixedHeight:;
+- (void).cxx_destruct;
+- (id)edge;
++ (id)JSONKeyPathsByPropertyKey;
+@end

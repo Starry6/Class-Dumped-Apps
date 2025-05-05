@@ -1,0 +1,2 @@
+@interface PTSEditStringRow : PTEditStringRow
+@end

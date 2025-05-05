@@ -1,0 +1,2 @@
+@interface CSJDynamicImageGroupView : CSJDynamicAbstractView
+@end

@@ -1,0 +1,38 @@
+@interface EMSmartMailbox : EMMailbox
+@property (nonatomic) EMMailboxScope mailboxScope;
+@property (nonatomic) q smartMailboxType;
+- (id)ef_publicDescription;
+- (id)mailboxScope;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (id)makePredicate;
+- (BOOL)isEqual:;
+- (BOOL)isSendLaterMailbox;
+- (BOOL)isSmartMailbox;
+- (BOOL)supportsSelectAll;
+- (BOOL)_shouldArchiveByDefault;
+- (id)initWithType:mailboxType:name:mailboxScope:predicateGenerator:;
+- (long long)smartMailboxType;
++ (id)vipMailboxWithMailboxScope:;
++ (id)flaggedMailboxWithMailboxScope:;
++ (id)orangeMailboxWithMailboxScope:;
++ (id)redMailboxWithMailboxScope:;
++ (id)purpleMailboxWithMailboxScope:;
++ (id)blueMailboxWithMailboxScope:;
++ (id)yellowMailboxWithMailboxScope:;
++ (id)greenMailboxWithMailboxScope:;
++ (id)grayMailboxWithMailboxScope:;
++ (id)unreadMailboxWithMailboxScope:;
++ (id)hasAttachmentsMailboxWithMailboxScope:;
++ (id)notifyThreadsMailboxWithMailboxScope:;
++ (id)todayMailboxWithMailboxScope:;
++ (id)muteThreadsMailboxWithMailboxScope:;
++ (id)includesMeMailboxWithMailboxScope:;
++ (id)readLaterMailboxWithMailboxScope:;
++ (id)followUpMailboxWithMailboxScope:;
++ (id)sendLaterMailboxWithMailboxScope:;
++ (id)unsubscribeMailboxWithMailboxScope:;
++ (id)unifiedMailboxOfType:name:;
++ (id)unifiedMailboxOfType:name:additionalPredicate:;
++ (id)vipMailboxWithName:additionalPredicate:;
+@end

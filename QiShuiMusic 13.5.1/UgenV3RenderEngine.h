@@ -1,0 +1,37 @@
+@interface UgenV3RenderEngine : NSObject
+@property (nonatomic) NSMutableDictionary resultInfo;
+@property (nonatomic) {CGSize=dd} rootMeasureSize;
+@property (nonatomic) UgenEngine ugenEngine;
+@property (nonatomic) UgenV3FlexLayoutWidget rootWidget;
+@property (nonatomic) NSDictionary componentsMap;
+@property (nonatomic) NSMutableDictionary widgetsMap;
+@property (nonatomic) UgenV3Context v3Context;
+@property (nonatomic) @? firstPageRenderResult;
+@property (nonatomic) BOOL isRecycleLayout;
+- (BOOL)isRecycleLayout;
+- (id)rootMeasureSize;
+- (void)closingWorkAfterRender;
+- (id)componentsMap;
+- (id)findWidgetWithId:;
+- (id)firstPageRenderResult;
+- (id)p_findWidgetWithId:inParentWidget:;
+- (id)p_widgetWithNode:dataInfo:;
+- (void)renderWithMainNodeTree:result:firstPageRenderResult:;
+- (id)rootWidget;
+- (void)setComponentsMap:;
+- (void)setFirstPageRenderResult:;
+- (void)setIsRecycleLayout:;
+- (void)setRootMeasureSize:;
+- (void)setRootWidget:;
+- (void)setUgenEngine:;
+- (void)setV3Context:;
+- (void)setWidgetsMap:;
+- (id)ugenEngine;
+- (id)v3Context;
+- (id)v3_p_renderNodeTreeWithNode:parentWidget:dataInfo:;
+- (id)widgetsMap;
+- (id)init;
+- (id)resultInfo;
+- (void).cxx_destruct;
+- (void)setResultInfo:;
+@end

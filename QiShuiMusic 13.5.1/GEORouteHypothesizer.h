@@ -1,0 +1,36 @@
+@interface GEORouteHypothesizer : NSObject
+@property (nonatomic) Q state;
+@property (nonatomic) GEOPlannedDestination plannedDestination;
+@property (nonatomic) BOOL unableToFindRouteForOriginalTransportType;
+@property (nonatomic) GEORouteHypothesis currentHypothesis;
+@property (nonatomic) NSError currentError;
+@property (nonatomic) double willBeginHypothesizingInterval;
+@property (nonatomic) double willEndHypothesizingInterval;
+- (void)dealloc;
+- (void)setState:;
+- (id)currentError;
+- (unsigned long long)state;
+- (void).cxx_destruct;
+- (id)description;
+- (id)currentHypothesis;
+- (id)initWithPlannedDestination:;
+- (double)willBeginHypothesizingInterval;
+- (double)willEndHypothesizingInterval;
+- (BOOL)wakeForDelay;
+- (void)setDoNotWakeForDelay;
+- (BOOL)_wontHypothesizeAgain;
+- (void)_performDelayedStart;
+- (void)_delayStartingWithoutXpc;
+- (void)cancelDelayDispatchTimer;
+- (void)_delayStartingWithXpc;
+- (void)startHypothesizingWithUpdateHandler:;
+- (void)requestRefresh;
+- (void)stopHypothesizing;
+- (void)onlyPerformLocalUpdates;
+- (void)didPostUINotification:;
+- (id)plannedDestination;
+- (BOOL)unableToFindRouteForOriginalTransportType;
++ (id)hypothesizerForPlannedDestination:;
++ (void)didDismissUINotification:forPlannedDestination:dismissalType:;
++ (BOOL)transitTTLSupportedInCurrentCountry;
+@end

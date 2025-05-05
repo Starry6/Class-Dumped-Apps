@@ -1,0 +1,31 @@
+@interface NEFilterDataExtensionProviderContext : NEFilterExtensionProviderContext
+@property (nonatomic) NSDictionary remediationMap;
+@property (nonatomic) NSDictionary URLAppendStringMap;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)extensionPoint;
+- (void).cxx_destruct;
+- (void)stopWithReason:;
+- (Class)requiredProviderSuperClass;
+- (void)startFilterWithOptions:completionHandler:;
+- (void)provideRemediationMap:;
+- (void)provideURLAppendStringMap:;
+- (id)remediationMap;
+- (id)URLAppendStringMap;
+- (void)fetchProviderConnectionWithCompletionHandler:;
+- (void)providerControlSocketFileHandle:;
+- (void)handleRulesChanged;
+- (void)report:;
+- (void)sendBrowserContentFilterServerRequest;
+- (void)sendSocketContentFilterRequest;
+- (void)fetchCurrentRulesForFlow:completionHandler:;
+- (void)applySettings:completionHandler:;
+- (void)fetchAppInfoForPID:UUID:bundleID:completionHandler:;
+- (void)resumeFlow:withVerdict:;
+- (void)updateFlow:withVerdict:forDirection:;
+- (void)handleClientMessage:filloutReply:completionHandler:;
++ (id)_extensionAuxiliaryHostProtocol;
++ (id)_extensionAuxiliaryVendorProtocol;
+@end

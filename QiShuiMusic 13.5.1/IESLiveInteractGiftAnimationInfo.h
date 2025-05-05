@@ -1,0 +1,33 @@
+@interface IESLiveInteractGiftAnimationInfo : NSObject
+@property (nonatomic) HTSLiveUser user;
+@property (nonatomic) q durationMs;
+@property (nonatomic) <IESLiveWebPDecoder> webpDecoder;
+@property (nonatomic) {CGPoint=dd} fromPoint;
+@property (nonatomic) {CGPoint=dd} toPoint;
+@property (nonatomic) double radians;
+@property (nonatomic) {CGSize=dd} size;
+@property (nonatomic) Q type;
+@property (nonatomic) @? finishRenderCompletionBlock;
+@property (nonatomic) @? interruptPlayBlock;
+- (void)setWebpDecoder:;
+- (void)setFinishRenderCompletionBlock:;
+- (id)finishRenderCompletionBlock;
+- (id)interruptPlayBlock;
+- (void)setInterruptPlayBlock:;
+- (void)setRadians:;
+- (id)webpDecoder;
+- (void)setUser:;
+- (double)radians;
+- (void)setType:;
+- (unsigned long long)type;
+- (id)user;
+- (void).cxx_destruct;
+- (void)setFromPoint:;
+- (id)fromPoint;
+- (void)setSize:;
+- (id)size;
+- (long long)durationMs;
+- (void)setDurationMs:;
+- (id)toPoint;
+- (void)setToPoint:;
+@end

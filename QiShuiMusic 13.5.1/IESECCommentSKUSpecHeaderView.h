@@ -1,0 +1,34 @@
+@interface IESECCommentSKUSpecHeaderView : UICollectionReusableView
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel warningLabel;
+@property (nonatomic) UILabel sizeComponentLabel;
+@property (nonatomic) UILabel sizeAssistantLabel;
+@property (nonatomic) UIView sizeAssistantView;
+@property (nonatomic) UIView separator;
+@property (nonatomic) <IESECCommentSKUSpecHeaderDelegate> delegate;
+@property (nonatomic) NSString title;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setSizeAssistantLabel:;
+- (void)setSizeAssistantView:;
+- (void)setSizeComponentLabel:;
+- (id)sizeAssistantLabel;
+- (id)sizeAssistantView;
+- (id)sizeComponentLabel;
+- (void)tappedSizeComponent;
+- (void)setSeparator:;
+- (void)setTitleLabel:;
+- (void)setDelegate:;
+- (void)setTitle:;
+- (id)initWithFrame:;
+- (id)title;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (id)separator;
+- (id)warningLabel;
+- (void)setWarningLabel:;
+- (void)setupGestures;
+@end

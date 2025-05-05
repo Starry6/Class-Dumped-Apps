@@ -1,0 +1,34 @@
+@interface ASCOfferPresenter : NSObject
+@property (nonatomic) <ASCOfferPresenterView> view;
+@property (nonatomic) ASCPresenterContext context;
+@property (nonatomic) ASCAppOfferStateMachine offerStateMachine;
+@property (nonatomic) NSString mostRecentAppState;
+@property (nonatomic) ASCOfferPresenterViewState savedStateForConfirm;
+@property (nonatomic) <ASCOfferPresenterObserver> observer;
+@property (nonatomic) <ASCOffer> offer;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)offer;
+- (id)initWithView:;
+- (id)context;
+- (void)setOffer:;
+- (id)view;
+- (void)setObserver:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)observer;
+- (void)performOfferAction;
+- (void)offerStatusTextDidChange:;
+- (void)offerStateDidChange:withMetadata:isActionable:;
+- (id)initWithView:context:;
+- (void)setOfferStateMachine:;
+- (BOOL)clearConfirmForNewStateIfNeeded;
+- (BOOL)confirmOfferActionIfNeeded;
+- (id)offerStateMachine;
+- (id)mostRecentAppState;
+- (void)setMostRecentAppState:;
+- (id)savedStateForConfirm;
+- (void)setSavedStateForConfirm:;
+@end

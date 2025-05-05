@@ -1,0 +1,36 @@
+@interface FBSProcessExecutionProvision : NSObject
+@property (nonatomic) <FBSProcessExecutionProvisionDelegate> delegate;
+@property (nonatomic) <FBSProcessInternal> process;
+@property (nonatomic) BOOL monitoring;
+@property (nonatomic) BOOL violated;
+@property (nonatomic) NSError error;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)updateProgress;
+- (void)_beginMonitoring;
+- (id)init;
+- (void)setDelegate:;
+- (void)_noteViolatedWithError:;
+- (id)succinctDescriptionBuilder;
+- (id)error;
+- (BOOL)isResourceProvision;
+- (BOOL)isViolated;
+- (void)prepareForReuse;
+- (void)_prepareForReuse;
+- (BOOL)isMonitoring;
+- (id)delegate;
+- (id)process;
+- (void)_stopMonitoring;
+- (void).cxx_destruct;
+- (void)monitorProcess:;
+- (void)_performDelegateCallout:;
+- (id)succinctDescription;
+- (id)description;
+- (void)stopMonitoring;
+- (id)descriptionBuilderWithMultilinePrefix:;
+- (id)descriptionWithMultilinePrefix:;
+- (void)_updateProgress;
+- (id)copyWithZone:;
+@end

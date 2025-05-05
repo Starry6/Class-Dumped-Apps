@@ -1,0 +1,37 @@
+@interface IESLiveEffectCleanStrategyContextHolder : NSObject
+@property (nonatomic) IESLiveThreadSafeDictionary assetUsedTimeRecord;
+@property (nonatomic) BOOL isInLiveRoom;
+@property (nonatomic) BOOL isApplicationActive;
+@property (nonatomic) NSSet keepProtectEffectIds;
+@property (nonatomic) IESLiveEffectsLRUCacheCleaner currentDownloadAssetRelatedLRUCacheCleaner;
+@property (nonatomic) NSArray offlineAssetList;
+@property (nonatomic) NSArray zipSweepMarkAssetsArray;
+@property (nonatomic) BOOL deleteAllResource;
+@property (nonatomic) q deleteCount;
+@property (nonatomic) q deleteExpireDuration;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)assetUsedTimeRecord;
+- (id)currentDownloadAssetRelatedLRUCacheCleaner;
+- (BOOL)deleteAllResource;
+- (long long)deleteExpireDuration;
+- (BOOL)isInLiveRoom;
+- (id)keepProtectEffectIds;
+- (id)offlineAssetList;
+- (void)setAssetUsedTimeRecord:;
+- (void)setCurrentDownloadAssetRelatedLRUCacheCleaner:;
+- (void)setDeleteAllResource:;
+- (void)setDeleteExpireDuration:;
+- (void)setIsApplicationActive:;
+- (void)setIsInLiveRoom:;
+- (void)setKeepProtectEffectIds:;
+- (void)setOfflineAssetList:;
+- (void)setZipSweepMarkAssetsArray:;
+- (id)zipSweepMarkAssetsArray;
+- (BOOL)isApplicationActive;
+- (long long)deleteCount;
+- (void).cxx_destruct;
+- (void)setDeleteCount:;
+@end

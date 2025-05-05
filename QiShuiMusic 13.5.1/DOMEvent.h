@@ -1,0 +1,33 @@
+@interface DOMEvent : DOMObject
+@property (nonatomic) NSString type;
+@property (nonatomic) <DOMEventTarget> target;
+@property (nonatomic) <DOMEventTarget> currentTarget;
+@property (nonatomic) S eventPhase;
+@property (nonatomic) BOOL bubbles;
+@property (nonatomic) BOOL cancelable;
+@property (nonatomic) Q timeStamp;
+@property (nonatomic) <DOMEventTarget> srcElement;
+@property (nonatomic) BOOL returnValue;
+@property (nonatomic) BOOL cancelBubble;
+- (BOOL)returnValue;
+- (void)dealloc;
+- (BOOL)isTrusted;
+- (id)type;
+- (BOOL)cancelable;
+- (id)target;
+- (unsigned long long)timeStamp;
+- (void)setReturnValue:;
+- (id)currentTarget;
+- (BOOL)defaultPrevented;
+- (unsigned short)eventPhase;
+- (BOOL)bubbles;
+- (BOOL)composed;
+- (id)srcElement;
+- (BOOL)cancelBubble;
+- (void)setCancelBubble:;
+- (void)stopPropagation;
+- (void)preventDefault;
+- (void)initEvent:canBubbleArg:cancelableArg:;
+- (void)stopImmediatePropagation;
+- (void)initEvent:::;
+@end

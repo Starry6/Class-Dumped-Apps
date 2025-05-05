@@ -1,0 +1,32 @@
+@interface IESIMMvDetailModel : IESIMBaseApiModel
+@property (nonatomic) NSString mvID;
+@property (nonatomic) NSString mvName;
+@property (nonatomic) IESIMURLModel iconURL;
+@property (nonatomic) q userCount;
+@property (nonatomic) NSString extra;
+@property (nonatomic) NSString desc;
+@property (nonatomic) BOOL isCollected;
+@property (nonatomic) IESIMWelfareActivityModel welfareActivityModel;
+- (void)setIsCollected:;
+- (BOOL)isCollected;
+- (id)mvID;
+- (id)mvName;
+- (void)setExtra:;
+- (void)setMvID:;
+- (void)setMvName:;
+- (void)setWelfareActivityModel:;
+- (id)welfareActivityID;
+- (id)welfareActivityModel;
+- (void)setIconURL:;
+- (id)extra;
+- (id)desc;
+- (void)setDesc:;
+- (void).cxx_destruct;
+- (id)iconURL;
+- (long long)userCount;
+- (void)setUserCount:;
++ (id)iconURLJSONTransformer;
++ (id)placeholderModel;
++ (id)welfareActivityModelJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

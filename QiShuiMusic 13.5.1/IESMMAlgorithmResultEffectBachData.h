@@ -1,0 +1,2 @@
+@interface IESMMAlgorithmResultEffectBachData : IESMMAlgorithmResultData
+@end

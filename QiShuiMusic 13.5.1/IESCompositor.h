@@ -1,0 +1,34 @@
+@interface IESCompositor : NSObject
+@property (nonatomic) BOOL shouldCancelAllRequests;
+@property (nonatomic) BOOL renderContextDidChange;
+@property (nonatomic) AVVideoCompositionRenderContext renderContext;
+@property (nonatomic) NSObject<OS_dispatch_queue> renderingQueue;
+@property (nonatomic) ^{__CVBuffer=} previousPixelBuffer;
+@property (nonatomic) NSDictionary sourcePixelBufferAttributes;
+@property (nonatomic) NSDictionary requiredPixelBufferAttributesForRenderContext;
+@property (nonatomic) BOOL supportsWideColorSourceFrames;
+@property (nonatomic) BOOL supportsHDRSourceFrames;
+@property (nonatomic) BOOL canConformColorOfSourceFrames;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)previousPixelBuffer;
+- (BOOL)renderContextDidChange;
+- (void)setPreviousPixelBuffer:;
+- (void)setRenderContextDidChange:;
+- (id)renderContext;
+- (id)init;
+- (void)dealloc;
+- (id)sourcePixelBufferAttributes;
+- (void).cxx_destruct;
+- (id)renderingQueue;
+- (void)renderContextChanged:;
+- (void)startVideoCompositionRequest:;
+- (id)requiredPixelBufferAttributesForRenderContext;
+- (void)cancelAllPendingVideoCompositionRequests;
+- (BOOL)shouldCancelAllRequests;
+- (void)setShouldCancelAllRequests:;
+- (void)setRenderContext:;
+- (void)setRenderingQueue:;
+@end

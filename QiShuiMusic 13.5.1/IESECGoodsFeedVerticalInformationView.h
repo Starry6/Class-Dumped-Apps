@@ -1,0 +1,38 @@
+@interface IESECGoodsFeedVerticalInformationView : UIView
+@property (nonatomic) <IESECGoodsFeedVerticalInformationViewDelegate> delegate;
+@property (nonatomic) BOOL hideBuyButton;
+@property (nonatomic) q maximumNumberOfLinesForTitle;
+@property (nonatomic) Q buttonStyle;
+@property (nonatomic) double buttonWidth;
+@property (nonatomic) BOOL showSalesInGuaranteedArea;
+@property (nonatomic) BOOL exclusiveCouponAndSales;
+@property (nonatomic) BOOL hidesAreaBetweenPriceAndBuyButton;
+- (void)updateBuyButton;
+- (void)buyButtonDidClick:;
+- (BOOL)exclusiveCouponAndSales;
+- (BOOL)hideBuyButton;
+- (BOOL)hidesAreaBetweenPriceAndBuyButton;
+- (id)horizontalSpacerView;
+- (long long)maximumNumberOfLinesForTitle;
+- (id)salesText;
+- (void)setExclusiveCouponAndSales:;
+- (void)setHideBuyButton:;
+- (void)setHidesAreaBetweenPriceAndBuyButton:;
+- (void)setMaximumNumberOfLinesForTitle:;
+- (void)setShowSalesInGuaranteedArea:;
+- (BOOL)showSalesInGuaranteedArea;
+- (void)updateBorderedTag;
+- (void)updatePrice;
+- (void)updateServiceLabel;
+- (void)updateWithParameters:;
+- (void)layoutSubviews;
+- (void)setButtonStyle:;
+- (void)setDelegate:;
+- (unsigned long long)buttonStyle;
+- (id)initWithFrame:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (double)buttonWidth;
+- (void)setupSubviews;
+- (void)setButtonWidth:;
+@end

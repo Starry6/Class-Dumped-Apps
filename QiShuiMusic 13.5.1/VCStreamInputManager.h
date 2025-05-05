@@ -1,0 +1,31 @@
+@interface VCStreamInputManager : VCObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)allocWithZone:;
+- (id)init;
+- (void)dealloc;
+- (id)autorelease;
+- (id)release;
+- (id)retain;
+- (void)registerBlocksForService;
+- (void)deregisterBlocksForService;
+- (unsigned long long)retainCount;
+- (id)copyWithZone:;
+- (void)didStartStreamInput:;
+- (void)didStopStreamInput:;
+- (void)didSuspendStreamInput:;
+- (void)didResumeStreamInput:;
+- (id)newStreamInputID;
+- (BOOL)initializeStreamInputWithXPCArguments:result:error:;
+- (BOOL)getServerPidWithXPCArguments:result:error:;
+- (BOOL)terminateStreamInputWithXPCArguments:result:error:;
+- (BOOL)clientProcessDiedWithXPCArguments:result:error:;
+- (BOOL)pushSampleBufferWithXPCArguments:result:error:;
+- (void)registerService:weakSelf:block:;
+- (void)registerService:weakSelf:eventLogLevel:block:;
+- (void)registerDidClientDieBlock:;
+- (id)streamInputWithID:;
++ (id)sharedInstance;
+@end

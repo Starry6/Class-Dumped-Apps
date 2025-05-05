@@ -1,0 +1,38 @@
+@interface AVCABackdropLayerView : UIView
+@property (nonatomic) AVCABackdropLayerView groupLeader;
+@property (nonatomic) NSHashTable dependents;
+@property (nonatomic) q activeBackdropEffect;
+@property (nonatomic) CABackdropLayer layer;
+@property (nonatomic) BOOL captureOnly;
+@property (nonatomic) BOOL forceLowQualityEffect;
+@property (nonatomic) UIColor customBackgroundColor;
+- (id)groupLeader;
+- (void)setCustomBackgroundColor:;
+- (void)_ensureDependents;
+- (void)didMoveToSuperview;
+- (void)_updateFilters;
+- (void)_enumerateDependents:;
+- (BOOL)pointInside:withEvent:;
+- (id)dependents;
+- (void)setGroupLeader:;
+- (id)customBackgroundColor;
+- (id)hitTest:withEvent:;
+- (void)setCaptureOnly:;
+- (id)initWithFrame:;
+- (void)removeDependent:;
+- (void)addDependent:;
+- (void).cxx_destruct;
+- (void)didMoveToWindow;
+- (BOOL)forceLowQualityEffect;
+- (void)updateGroupLeader;
+- (void)setForceLowQualityEffect:;
+- (long long)activeBackdropEffect;
+- (void)updateActiveBackdropEffectIfGroupLeader;
+- (BOOL)isCaptureOnly;
+- (void)setActiveBackdropEffect:;
++ (id)blurFilter;
++ (id)colorMatrixFilter;
++ (Class)layerClass;
++ (id)reducedTransparencyColor;
++ (id)averageFilter;
+@end

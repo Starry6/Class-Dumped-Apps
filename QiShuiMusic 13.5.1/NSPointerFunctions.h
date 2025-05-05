@@ -1,0 +1,30 @@
+@interface NSPointerFunctions : NSObject
+@property (nonatomic) ^? hashFunction;
+@property (nonatomic) ^? isEqualFunction;
+@property (nonatomic) ^? sizeFunction;
+@property (nonatomic) ^? descriptionFunction;
+@property (nonatomic) ^? relinquishFunction;
+@property (nonatomic) ^? acquireFunction;
+@property (nonatomic) BOOL usesStrongWriteBarrier;
+@property (nonatomic) BOOL usesWeakReadAndWriteBarriers;
+- (void)setAcquireFunction:;
+- (BOOL)usesWeakReadAndWriteBarriers;
+- (id)initWithOptions:;
+- (void)setRelinquishFunction:;
+- (void)setIsEqualFunction:;
+- (id)acquireFunction;
+- (id)sizeFunction;
+- (void)setSizeFunction:;
+- (id)isEqualFunction;
+- (id)descriptionFunction;
+- (BOOL)usesStrongWriteBarrier;
+- (void)setUsesStrongWriteBarrier:;
+- (void)setUsesWeakReadAndWriteBarriers:;
+- (id)relinquishFunction;
+- (id)hashFunction;
+- (void)setHashFunction:;
+- (void)setDescriptionFunction:;
+- (id)copyWithZone:;
++ (id)allocWithZone:;
++ (id)pointerFunctionsWithOptions:;
+@end

@@ -1,0 +1,34 @@
+@interface IESECMessageDispatcher : NSObject
+@property (nonatomic) <IESECPushManagerProtocol> pushManager;
+@property (nonatomic) NSMutableDictionary subscriberDic;
+@property (nonatomic) Q subscriberCount;
+@property (nonatomic) NSMutableArray cachedSendMessages;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)addSubscriber:forSceneType:itemID:;
+- (id)cachedSendMessages;
+- (void)configConnection:;
+- (void)onConnectionErrorWithState:connectionState:url:error:;
+- (void)onConnectionStateChanged:connectionState:url:;
+- (void)onFrontierMessageReceived:message:;
+- (BOOL)p_sendPushMessage:;
+- (BOOL)p_sendSceneMessageWithSceneType:itemID:action:;
+- (id)p_separateUniqueKey:;
+- (id)p_uniqueKeyWithSceneType:itemID:;
+- (void)sendPushMessage:;
+- (void)setCachedSendMessages:;
+- (void)setSubscriberDic:;
+- (id)subscriberDic;
+- (void)unSubscribe:forSceneType:itemID:;
+- (void)unSubscribeForAll:;
+- (void)dispatchMessage:;
+- (id)init;
+- (void)setPushManager:;
+- (id)pushManager;
+- (void).cxx_destruct;
+- (void)setSubscriberCount:;
+- (unsigned long long)subscriberCount;
++ (id)sharedDispatcher;
+@end

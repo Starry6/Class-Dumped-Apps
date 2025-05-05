@@ -1,0 +1,34 @@
+@interface DIMSchemaDIMSiriAccountInformation : SISchemaInstrumentationMessage
+@property (nonatomic) NSString siriDeviceId;
+@property (nonatomic) BOOL hasSiriDeviceId;
+@property (nonatomic) NSString siriSpeechId;
+@property (nonatomic) BOOL hasSiriSpeechId;
+@property (nonatomic) NSString siriUserId;
+@property (nonatomic) BOOL hasSiriUserId;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (BOOL)hasSiriDeviceId;
+- (void)deleteSiriDeviceId;
+- (id)siriDeviceId;
+- (void)setSiriDeviceId:;
+- (void)setHasSiriDeviceId:;
+- (BOOL)hasSiriSpeechId;
+- (void)deleteSiriSpeechId;
+- (BOOL)hasSiriUserId;
+- (void)deleteSiriUserId;
+- (id)siriSpeechId;
+- (void)setSiriSpeechId:;
+- (id)siriUserId;
+- (void)setSiriUserId:;
+- (void)setHasSiriSpeechId:;
+- (void)setHasSiriUserId:;
+@end

@@ -1,0 +1,33 @@
+@interface CSJLOTLayerContainer : CALayer
+@property (nonatomic) NSString layerName;
+@property (nonatomic) NSString layerRefId;
+@property (nonatomic) CSJLOTAsset imageAsset;
+@property (nonatomic) NSNumber currentFrame;
+@property (nonatomic) NSNumber timeStretchFactor;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} viewportBounds;
+@property (nonatomic) CALayer wrapperLayer;
+@property (nonatomic) NSDictionary valueInterpolators;
+@property (nonatomic) <CSJLOTAnimationViewDatasource> datasource;
+- (void)_setImageForAsset:;
+- (void)buildContents:;
+- (void)commonInitializeWith:inLayerGroup:;
+- (void)displayWithFrame:;
+- (void)displayWithFrame:forceUpdate:;
+- (id)initWithModel:inLayerGroup:withDatasource:;
+- (id)layerRefId;
+- (void)searchNodesForKeypath:;
+- (void)setValueDelegate:forKeypath:;
+- (void)setViewportBounds:;
+- (id)timeStretchFactor;
+- (id)valueInterpolators;
+- (id)wrapperLayer;
+- (id)actionForKey:;
+- (id)imageAsset;
+- (id)viewportBounds;
+- (void)display;
+- (id)initWithLayer:;
+- (id)layerName;
+- (void).cxx_destruct;
+- (id)datasource;
++ (BOOL)needsDisplayForKey:;
+@end

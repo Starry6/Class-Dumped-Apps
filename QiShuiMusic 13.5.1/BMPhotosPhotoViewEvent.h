@@ -1,0 +1,37 @@
+@interface BMPhotosPhotoViewEvent : NSObject
+@property (nonatomic) NSString uniqueId;
+@property (nonatomic) NSArray locations;
+@property (nonatomic) double absoluteTimestamp;
+@property (nonatomic) NSString contentProtection;
+@property (nonatomic) NSString domainId;
+@property (nonatomic) NSString bundleId;
+@property (nonatomic) I dataVersion;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithProtoData:;
+- (id)locations;
+- (id)init;
+- (id)uniqueId;
+- (id)proto;
+- (id)json;
+- (id)encodeAsProto;
+- (double)absoluteTimestamp;
+- (id)initWithCoder:;
+- (unsigned int)dataVersion;
+- (unsigned long long)hash;
+- (BOOL)isCompleteWithContext:error:;
+- (void)encodeWithCoder:;
+- (id)initWithProto:;
+- (void).cxx_destruct;
+- (id)contentProtection;
+- (BOOL)isValidWithContext:error:;
+- (id)serialize;
+- (id)jsonDict;
+- (BOOL)isEqual:;
+- (id)initWithUniqueId:locations:absoluteTimestamp:contentProtection:;
+- (id)initWithUniqueId:locations:absoluteTimestamp:;
++ (id)eventWithData:dataVersion:;
++ (BOOL)supportsSecureCoding;
+@end

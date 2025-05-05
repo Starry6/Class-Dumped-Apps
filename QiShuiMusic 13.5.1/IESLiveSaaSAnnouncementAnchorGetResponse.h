@@ -1,0 +1,37 @@
+@interface IESLiveSaaSAnnouncementAnchorGetResponse : BDDynamicMTLModel
+@property (nonatomic) BOOL available;
+@property (nonatomic) BOOL switch_p;
+@property (nonatomic) BOOL switchCanOpen;
+@property (nonatomic) Q banned;
+@property (nonatomic) q banFinishTime;
+@property (nonatomic) NSInteger scheduledTime;
+@property (nonatomic) NSInteger scheduledDate;
+@property (nonatomic) NSMutableArray scheduledWeekdaysArray;
+@property (nonatomic) NSString scheduledTimeText;
+@property (nonatomic) NSString content;
+@property (nonatomic) Q auditStatus;
+@property (nonatomic) NSInteger updateLimit;
+@property (nonatomic) BOOL reachUpdateLimit;
+@property (nonatomic) BOOL groupSwitch;
+@property (nonatomic) NSMutableArray groupIdListArray;
+@property (nonatomic) NSMutableArray allGroupListArray;
+@property (nonatomic) q groupRemindTime;
+@property (nonatomic) NSInteger banType;
+@property (nonatomic) IESLiveSaaSAnnouncementAnchorGetResponseSubscribeInfo subscribeInfo;
+@property (nonatomic) BOOL appointmentContainerOpen;
+@property (nonatomic) BOOL stickerBan;
+@property (nonatomic) NSString stickerBanToast;
+@property (nonatomic) NSInteger autoPublishHighlight;
+@property (nonatomic) q announcementId;
+@property (nonatomic) NSMutableArray videoItemIdsArray;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)detailContentWithTextColor:isDarkPanel:;
+- (id)tipBackgroundWithLightMode:;
+- (id)tipContentWithLightMode:;
++ (id)allGroupListArrayJSONTransformer;
++ (id)subscribeInfoJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

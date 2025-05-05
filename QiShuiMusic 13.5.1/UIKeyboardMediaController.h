@@ -1,0 +1,35 @@
+@interface UIKeyboardMediaController : NSObject
+@property (nonatomic) <UIKeyboardMediaControllerDelegate> delegate;
+@property (nonatomic) BOOL shouldRetryFetchingRecents;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)dismissCardIfNeeded;
+- (void)setDelegate:;
+- (void)viewServiceDidTerminateWithError:;
+- (void)dismissCardAnimated;
+- (void)requestInsertionPointCompletion:;
+- (BOOL)shouldPrefetchRemoteView;
+- (void)stageStickerWithFileHandle:url:accessibilityLabel:;
+- (void)showRecentlyUsedMediaInView:;
+- (void)pasteImageAtFileHandle:;
+- (void)draggedStickerToPoint:;
+- (void)_keyboardDidChangeFrame:;
+- (BOOL)shouldRetryFetchingRecents;
+- (void)releaseRecentlyUsedMediaViewIfNeeded;
+- (void)_instantiateViewServiceRecentlyUsedMediaWithCompletionHandler:;
+- (void)_embedRecentlyUsedMediaViewInView:animated:;
+- (id)delegate;
+- (void)_instantiateCardFromViewService;
+- (void)_didInsertMedia;
+- (void).cxx_destruct;
+- (void)_didPresentCard;
+- (BOOL)recentsViewWillBeVisible;
+- (void)_displayiMessageAppWithID:;
+- (void)_tearDownRemoteViews;
+- (void)presentCard;
+- (void)prefetchRecentsViewControllerWithCompletion:;
+- (void)dismissCard;
++ (id)sharedKeyboardMediaController;
+@end

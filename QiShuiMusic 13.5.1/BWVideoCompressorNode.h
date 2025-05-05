@@ -1,0 +1,28 @@
+@interface BWVideoCompressorNode : BWNode
+- (void)suspendResources;
+- (void)_releaseCompressionSession;
+- (void)dealloc;
+- (void)setMaximumAllowedInFlightCompressedBytes:;
+- (void)handleDroppedSample:forInput:;
+- (int)pipelineTraceID;
+- (id)nodeType;
+- (void)configurationWithID:updatedFormat:didBecomeLiveForInput:;
+- (void)didSelectFormat:forInput:;
+- (void)makeCurrentConfigurationLive;
+- (id)initWithCompressionSettings:overCaptureEnabled:maxVideoFrameRate:delayedCompressorCleanupEnabled:maxLossyCompressionLevel:;
+- (void)setPipelineTraceID:;
+- (void)prepareForCurrentConfigurationToBecomeLive;
+- (void)didReachEndOfDataForInput:;
+- (BOOL)compressionDimensionsFromInputEnabled;
+- (long long)maximumAllowedInFlightCompressedBytes;
+- (id)alternateCompressionSettingsKey;
+- (void)setCompressionDimensionsFromInputEnabled:;
+- (BOOL)prioritizeEncodingSpeedOverQuality;
+- (void)renderSampleBuffer:forInput:;
+- (id)_compresessionSession;
+- (void)insertKeyFrame;
+- (void)setReapCompressionSessionTimerDurationInSeconds:;
+- (void)setPrioritizeEncodingSpeedOverQuality:;
+- (void)setAlternateCompressionSettingsKey:;
+- (id)nodeSubType;
+@end

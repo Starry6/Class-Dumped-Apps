@@ -1,0 +1,35 @@
+@interface IESLiveRoomBattleSearchViewModel : NSObject
+@property (nonatomic) IESLiveRoomBattleApi roomBattleApi;
+@property (nonatomic) q currentOffset;
+@property (nonatomic) q searchStatus;
+@property (nonatomic) NSArray historyWords;
+@property (nonatomic) NSArray suggestWords;
+@property (nonatomic) NSString currentQuery;
+@property (nonatomic) RivalsSearchResponse_ResponseData searchResult;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)searchForResultWith:isLoadMore:;
+- (void)deleteHistoryWord:;
+- (void)didSetAttachingDIContext;
+- (id)historyWords;
+- (id)initWithDIContext:;
+- (void)initialHistoryData;
+- (id)roomBattleApi;
+- (void)searchForSuggestWordsWith:;
+- (long long)searchStatus;
+- (void)setHistoryWords:;
+- (void)setRoomBattleApi:;
+- (void)setSearchStatus:;
+- (void)setSuggestWords:;
+- (id)suggestWords;
+- (void)updateHistoryWords:;
+- (id)searchResult;
+- (long long)currentOffset;
+- (id)currentQuery;
+- (void).cxx_destruct;
+- (void)setSearchResult:;
+- (void)setCurrentQuery:;
+- (void)setCurrentOffset:;
+@end

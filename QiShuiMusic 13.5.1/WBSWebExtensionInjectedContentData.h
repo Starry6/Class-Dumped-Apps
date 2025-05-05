@@ -1,0 +1,34 @@
+@interface WBSWebExtensionInjectedContentData : NSObject
+@property (nonatomic) NSArray scriptPaths;
+@property (nonatomic) NSArray styleSheetPaths;
+@property (nonatomic) NSArray scriptContents;
+@property (nonatomic) NSArray styleSheetContents;
+@property (nonatomic) NSSet includeMatchPatterns;
+@property (nonatomic) NSSet excludeMatchPatterns;
+@property (nonatomic) NSArray includeMatchPatternStrings;
+@property (nonatomic) NSArray excludeMatchPatternStrings;
+@property (nonatomic) NSArray includeGlobPatternStrings;
+@property (nonatomic) NSArray excludeGlobPatternStrings;
+@property (nonatomic) q injectionTime;
+@property (nonatomic) BOOL matchesAboutBlank;
+@property (nonatomic) BOOL injectsIntoAllFrames;
+- (void).cxx_destruct;
+- (long long)injectionTime;
+- (id)initWithManifestDictionary:extensionIdentifier:error:;
+- (BOOL)_parseManifestDictionary:extensionIdentifier:error:;
+- (id)scriptPaths;
+- (id)styleSheetPaths;
+- (id)scriptContents;
+- (void)setScriptContents:;
+- (id)styleSheetContents;
+- (void)setStyleSheetContents:;
+- (id)includeMatchPatterns;
+- (id)excludeMatchPatterns;
+- (id)includeMatchPatternStrings;
+- (id)excludeMatchPatternStrings;
+- (id)includeGlobPatternStrings;
+- (id)excludeGlobPatternStrings;
+- (BOOL)matchesAboutBlank;
+- (BOOL)injectsIntoAllFrames;
++ (id)supportedInjectedContentFeatures;
+@end

@@ -1,0 +1,38 @@
+@interface CJPayCreditPayMethodModel : CJPayChannelModel
+@property (nonatomic) NSString installment;
+@property (nonatomic) q fee;
+@property (nonatomic) q payAmountPerInstallment;
+@property (nonatomic) q totalAmountPerInstallment;
+@property (nonatomic) NSString voucherFeeMsg;
+@property (nonatomic) NSString voucherPlatformMsg;
+@property (nonatomic) CJPayVoucherInfoModel voucherInfo;
+@property (nonatomic) NSString standardRecDesc;
+@property (nonatomic) NSString standardShowAmount;
+@property (nonatomic) NSString firstPageVoucherMsg;
+- (void)setFee:;
+- (void)setInstallment:;
+- (id)standardRecDesc;
+- (id)buildShowConfig;
+- (long long)fee;
+- (void)setVoucherInfo:;
+- (id)firstPageVoucherMsg;
+- (long long)payAmountPerInstallment;
+- (id)requestNeedParams;
+- (void)setFirstPageVoucherMsg:;
+- (void)setPayAmountPerInstallment:;
+- (void)setStandardRecDesc:;
+- (void)setStandardShowAmount:;
+- (void)setTotalAmountPerInstallment:;
+- (void)setVoucherFeeMsg:;
+- (void)setVoucherPlatformMsg:;
+- (id)standardShowAmount;
+- (long long)totalAmountPerInstallment;
+- (id)voucherFeeMsg;
+- (id)voucherInfo;
+- (id)voucherPlatformMsg;
+- (void).cxx_destruct;
+- (id)installment;
++ (id)basicDict;
++ (id)keyMapper;
++ (BOOL)propertyIsOptional:;
+@end

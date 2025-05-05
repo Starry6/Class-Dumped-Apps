@@ -1,0 +1,24 @@
+@interface CMWorkoutManagerInternal : NSObject
+- (id)init;
+- (void)dealloc;
+- (void)_teardown;
+- (void)_startWorkout:;
+- (void)_stopWorkout:;
+- (void)_setSuggestedStopTimeout:;
+- (void)_userDismissedWorkoutAlert;
+- (void)_triggerWorkoutLocationUpdateForTesting:;
+- (void)_setMode:forWorkout:;
+- (void)_handleDaemonResponse:;
+- (void)_handleDaemonEvent:;
+- (void)_registerForWorkoutEvents;
+- (void)_unregisterForWorkoutEvents;
+- (BOOL)_shouldAllowMotionCalibrationPromptsForWorkoutType:;
+- (void)_getPromptsNeededForWorkoutType:handler:;
+- (void)_beginWorkoutSession:withWorkout:enableWorkoutChangeDetection:;
+- (void)_setCurrentWorkoutType:isManualTransition:;
+- (void)_setWorkout:;
+- (void)_endWorkoutSession:;
+- (void)_pauseWorkout:;
+- (void)_resumeWorkout:;
+- (void)_checkWorkout:;
+@end

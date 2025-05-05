@@ -1,0 +1,35 @@
+@interface PLCloudSharingInvitationChangeJob : PLCloudSharingJob
+@property (nonatomic) NSArray MSASSharingRelationships;
+@property (nonatomic) q relationshipChangeType;
+@property (nonatomic) NSString albumGUID;
+@property (nonatomic) NSString resendInvitationGUID;
+@property (nonatomic) q jobType;
+@property (nonatomic) NSDictionary mstreamdInfoDictionary;
+- (id)initFromXPCObject:libraryServicesManager:;
+- (long long)jobType;
+- (void)run;
+- (long long)daemonOperation;
+- (void)runDaemonSide;
+- (void).cxx_destruct;
+- (id)description;
+- (void)encodeToXPCObject:;
+- (void)setJobType:;
+- (id)albumGUID;
+- (void)setAlbumGUID:;
+- (BOOL)shouldArchiveXPCToDisk;
+- (id)mstreamdInfoDictionary;
+- (void)setMstreamdInfoDictionary:;
+- (void)executeSaveServerStateLocallyForSharingInvitationRelationships;
+- (void)executeSaveServerStateLocallyForSharingACLRelationships;
+- (void)executeSendServerPendingInvitationsForAlbumWithGUID;
+- (id)MSASSharingRelationships;
+- (void)setMSASSharingRelationships:;
+- (long long)relationshipChangeType;
+- (void)setRelationshipChangeType:;
+- (id)resendInvitationGUID;
+- (void)setResendInvitationGUID:;
++ (void)saveServerStateLocallyForSharingACLRelationships:changeType:info:;
++ (void)saveServerStateLocallyForSharingInvitationRelationships:changeType:info:;
++ (void)sendServerPendingInvitationsForAlbumWithGUID:;
++ (void)resendPendingInvitationWithGUID:albumGUID:;
+@end

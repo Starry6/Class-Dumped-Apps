@@ -1,0 +1,30 @@
+@interface BDASplashVideoInfoModel : NSObject
+@property (nonatomic) NSString videoId;
+@property (nonatomic) NSString videoGroupId;
+@property (nonatomic) NSArray videoURLArray;
+@property (nonatomic) NSArray videoPlayTrackURLArray;
+@property (nonatomic) NSArray videoPlayOverTrackURLArray;
+@property (nonatomic) NSString videoDensity;
+@property (nonatomic) NSString videoSecretKey;
+@property (nonatomic) NSNumber isH265;
+- (id)isH265;
+- (BOOL)isValidModel;
+- (void)setIsH265:;
+- (void)setVideoDensity:;
+- (void)setVideoGroupId:;
+- (void)setVideoPlayOverTrackURLArray:;
+- (void)setVideoPlayTrackURLArray:;
+- (void)setVideoSecretKey:;
+- (void)setVideoURLArray:;
+- (id)videoDensity;
+- (id)videoFilePath;
+- (id)videoGroupId;
+- (id)videoPlayOverTrackURLArray;
+- (id)videoPlayTrackURLArray;
+- (id)videoSecretKey;
+- (id)videoURLArray;
+- (id)initWithDictionary:;
+- (void).cxx_destruct;
+- (id)videoId;
+- (void)setVideoId:;
+@end

@@ -1,0 +1,30 @@
+@interface LOTAnimatorNode : NSObject
+@property (nonatomic) NSDictionary valueInterpolators;
+@property (nonatomic) NSString keyname;
+@property (nonatomic) NSNumber currentFrame;
+@property (nonatomic) LOTAnimatorNode inputNode;
+@property (nonatomic) LOTBezierPath localPath;
+@property (nonatomic) LOTBezierPath outputPath;
+@property (nonatomic) BOOL pathShouldCacheLengths;
+- (id)keyname;
+- (void)forceSetCurrentFrame:;
+- (id)initWithInputNode:keyName:;
+- (BOOL)needsUpdateForFrame:;
+- (BOOL)pathShouldCacheLengths;
+- (void)performLocalUpdate;
+- (void)rebuildOutputs;
+- (void)searchNodesForKeypath:;
+- (void)setPathShouldCacheLengths:;
+- (void)setValueDelegate:forKeypath:;
+- (BOOL)updateWithFrame:withModifierBlock:forceLocalUpdate:;
+- (id)valueInterpolators;
+- (id)inputNode;
+- (void).cxx_destruct;
+- (id)currentFrame;
+- (id)localPath;
+- (BOOL)updateWithFrame:;
+- (id)outputPath;
+- (void)setOutputPath:;
+- (void)logString:;
+- (void)setLocalPath:;
+@end

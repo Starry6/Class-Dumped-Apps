@@ -1,0 +1,31 @@
+@interface IESECTabKitMonitorService : IESECTabKitService
+@property (nonatomic) IESECServiceProxy<IESECTabKitDataService> dataService;
+@property (nonatomic) IESECTabKitTimingCategory category;
+@property (nonatomic) IESECTabKitTimingMetric metric;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setDataService:;
+- (void)tabKitDidCreate;
+- (void)configCategoryWithParameters:;
+- (id)dataService;
+- (void)reportFirstScreenWithTabPerf:;
+- (void)reportSwitchTabWithTabPerf:;
+- (void)reportWithEventName:metric:category:;
+- (void)tabDataRequestDidEnd:;
+- (void)tabDataRequestDidStart:;
+- (void)tabElementDidCreate:;
+- (void)tabElementDidEnter:;
+- (void)tabElementDidLeave:;
+- (id)tabElementKey:;
+- (void)tabHybridViewDidCreate:;
+- (void)tabHybridViewDidFinishLoad:;
+- (id)timingModelForTabModel:;
+- (id)init;
+- (void)setCategory:;
+- (void).cxx_destruct;
+- (void)setMetric:;
+- (id)metric;
+- (id)category;
+@end

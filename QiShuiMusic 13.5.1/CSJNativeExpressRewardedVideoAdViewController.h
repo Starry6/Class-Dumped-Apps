@@ -1,0 +1,31 @@
+@interface CSJNativeExpressRewardedVideoAdViewController : UIViewController
+@property (nonatomic) <CSJNativeExpressVideoAdDelegate> rewardedVideoAd;
+@property (nonatomic) BOOL isRewardedVideo;
+@property (nonatomic) CSJAdSlot adSlot;
+@property (nonatomic) @? purePlayableClickBlock;
+@property (nonatomic) CSJExpressRewardFullScreenVM viewModel;
+@property (nonatomic) @? refreshAdShowBlock;
+- (BOOL)isRewardedVideo;
+- (id)rewardedVideoAd;
+- (id)adSlot;
+- (id)initWithNativeExpressAdView:nativeExpressAdViews:purePlayableNativeAd:;
+- (id)purePlayableClickBlock;
+- (id)reallyMaterialMeta;
+- (id)refreshAdShowBlock;
+- (void)setAdSlot:;
+- (void)setIsRewardedVideo:;
+- (void)setPurePlayableClickBlock:;
+- (void)setRefreshAdShowBlock:;
+- (void)setRewardedVideoAd:;
+- (BOOL)shouldAutorotate;
+- (long long)preferredInterfaceOrientationForPresentation;
+- (id)viewModel;
+- (BOOL)prefersStatusBarHidden;
+- (void)viewDidDisappear:;
+- (void)viewWillLayoutSubviews;
+- (void).cxx_destruct;
+- (void)viewDidAppear:;
+- (unsigned long long)supportedInterfaceOrientations;
+- (void)setViewModel:;
+- (void)viewDidLoad;
+@end

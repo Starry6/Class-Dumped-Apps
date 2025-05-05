@@ -1,0 +1,34 @@
+@interface IESLivePKStartAnchorInfoView : UIView
+@property (nonatomic) BattleUserInfo userInfo;
+@property (nonatomic) Q type;
+@property (nonatomic) UIImageView backgroundView;
+@property (nonatomic) UIImageView avatarView;
+@property (nonatomic) UILabel nicknameLabel;
+@property (nonatomic) UILabel rankLabel;
+@property (nonatomic) UIView tagView;
+@property (nonatomic) UILabel consecutiveWinLabel;
+@property (nonatomic) NSMutableArray attrView;
+- (id)attrView;
+- (id)consecutiveWinLabel;
+- (id)initWithUserInfo:type:diContext:;
+- (void)setAttrView:;
+- (void)setConsecutiveWinLabel:;
+- (BOOL)showPKConsecutiveWinIfNeed;
+- (id)tagViewWithRivalTag:;
+- (id)backgroundView;
+- (id)userInfo;
+- (id)avatarView;
+- (void)setAvatarView:;
+- (void)setType:;
+- (unsigned long long)type;
+- (void)setUserInfo:;
+- (void).cxx_destruct;
+- (void)setBackgroundView:;
+- (void)setupUI;
+- (id)rankLabel;
+- (void)setRankLabel:;
+- (id)nicknameLabel;
+- (void)setNicknameLabel:;
+- (id)tagView;
+- (void)setTagView:;
+@end

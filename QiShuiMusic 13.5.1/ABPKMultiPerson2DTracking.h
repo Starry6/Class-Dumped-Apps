@@ -1,0 +1,21 @@
+@interface ABPKMultiPerson2DTracking : NSObject
+- (id)init;
+- (void).cxx_destruct;
+- (int)runWithInput:deviceOrientation:atTimeStamp:andOutput:;
+- (int)runPoseEstimationWithInput:deviceOrientation:atTimeStamp:andOutput:;
+- (int)runWithInput:abpkDeviceOrientation:atTimeStamp:andOutput:;
+- (int)runPoseEstimationWithInput:abpkDeviceOrientation:atTimeStamp:andOutput:;
+- (BOOL)overlayResult:OnImage:andGenerateOverlayImage:;
+- (void)_startInitABPKSignpost;
+- (void)_endInitABPKSignpost;
+- (void)_startMultiPerson2DTrackingRunWithInputSignpostWithTimestamp:;
+- (void)_endMultiPerson2DTrackingRunWithInputSignpostWithTimestamp:;
+- (void)_startMultiPerson2DTrackingImagePreProcessingSignpostWithTimestamp:;
+- (void)_endMultiPerson2DTrackingImagePreProcessingSignpostWithTimestamp:;
+- (void)_startMultiPerson2DTracking2DDetectionMLSignpostWithTimestamp:;
+- (void)_endMultiPerson2DTracking2DDetectionMLSignpostWithTimestamp:;
+- (void)_startMultiPerson2DTracking2DDetectionPostProcessingSignpostWithTimestamp:;
+- (void)_endMultiPerson2DTracking2DDetectionPostProcessingSignpostWithTimestamp:;
+- (void)_startMultiPerson2DTrackingPersonTrackingSignpostWithTimestamp:;
+- (void)_endMultiPerson2DTrackingPersonTrackingSignpostWithTimestamp:;
+@end

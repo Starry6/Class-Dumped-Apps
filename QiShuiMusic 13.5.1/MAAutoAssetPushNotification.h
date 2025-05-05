@@ -1,0 +1,30 @@
+@interface MAAutoAssetPushNotification : NSObject
+@property (nonatomic) q pushReason;
+@property (nonatomic) NSString assetType;
+@property (nonatomic) NSString assetSpecifier;
+@property (nonatomic) NSString assetVersion;
+@property (nonatomic) MAAutoAssetUpdatePolicy autoUpdatePolicy;
+@property (nonatomic) NSDictionary additionalPushParameters;
+@property (nonatomic) NSDictionary historyRepresentation;
+- (id)assetType;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (id)summary;
+- (void).cxx_destruct;
+- (id)assetVersion;
+- (id)description;
+- (id)assetSpecifier;
+- (id)initWithPushReason:;
+- (id)initWithPushReason:forAssetType:withAssetSpecifier:matchingAssetVersion:;
+- (id)initWithPushReason:forAssetType:withAssetSpecifier:matchingAssetVersion:withUpdatePolicy:;
+- (id)initWithPushReason:forAssetType:withAssetSpecifier:matchingAssetVersion:withUpdatePolicy:withAdditional:;
+- (id)pushReasonName;
+- (id)historyRepresentation;
+- (long long)pushReason;
+- (void)setPushReason:;
+- (id)autoUpdatePolicy;
+- (id)additionalPushParameters;
+- (void)setAdditionalPushParameters:;
++ (BOOL)supportsSecureCoding;
++ (id)pushReasonName:;
+@end

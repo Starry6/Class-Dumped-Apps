@@ -1,0 +1,31 @@
+@interface IESLiveTeamFightCountDownTopBar : UIView
+@property (nonatomic) UIImageView bgView;
+@property (nonatomic) UILabel statusLabel;
+@property (nonatomic) UILabel timeLabel;
+@property (nonatomic) <IESLiveCompoundSubscription> disposable;
+@property (nonatomic) <IESLiveTeamFightBaseProvider> provider;
+@property (nonatomic) q teamFightType;
+- (id)fightStatusText;
+- (void)bindAction;
+- (id)countDownStr:;
+- (id)disposable;
+- (id)initWithType:DIContext:;
+- (void)openExplanationPanel;
+- (void)setDisposable:;
+- (void)setTeamFightType:;
+- (void)showResult;
+- (id)showResultStatusText;
+- (id)statusNameWith:teamFightInfoType:;
+- (long long)teamFightType;
+- (void)setTimeLabel:;
+- (void)setProvider:;
+- (id)timeLabel;
+- (void)dealloc;
+- (id)provider;
+- (void).cxx_destruct;
+- (id)bgView;
+- (void)setBgView:;
+- (void)setupViews;
+- (id)statusLabel;
+- (void)setStatusLabel:;
+@end

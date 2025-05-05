@@ -1,0 +1,31 @@
+@interface IESECListKitNativeCellModel : NSObject
+@property (nonatomic) NSDictionary rawData;
+@property (nonatomic) <IESECListKitCellModelDelegate> delegate;
+@property (nonatomic) {CGSize=dd} itemSize;
+@property (nonatomic) BOOL isFirstShow;
+@property (nonatomic) <IESECListKitCellControllerProtocol> cellController;
+@property (nonatomic) Q engineType;
+@property (nonatomic) @ model;
+@property (nonatomic) IESECListKitItemDataModel bffItemData;
+@property (nonatomic) # cellClass;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setIsFirstShow:;
+- (void)updateItemData:;
+- (id)bffItemData;
+- (id)cellController;
+- (id)initWithBFFItemData:itemConfig:cellWidth:context:;
+- (BOOL)isFirstShow;
+- (id)model;
+- (void)setRawData:;
+- (void)setDelegate:;
+- (id)delegate;
+- (unsigned long long)engineType;
+- (id)itemSize;
+- (void).cxx_destruct;
+- (id)rawData;
+- (Class)cellClass;
+- (void)setItemSize:;
+@end

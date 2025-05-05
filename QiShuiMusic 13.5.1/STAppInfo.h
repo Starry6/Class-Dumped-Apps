@@ -1,0 +1,31 @@
+@interface STAppInfo : NSObject
+@property (nonatomic) q source;
+@property (nonatomic) NSString bundleIdentifier;
+@property (nonatomic) NSString displayName;
+@property (nonatomic) s platform;
+@property (nonatomic) NSString developerName;
+@property (nonatomic) NSString ratingLabel;
+@property (nonatomic) NSURL localURL;
+@property (nonatomic) NSURL artworkURL;
+@property (nonatomic) NSData artworkData;
+- (id)artworkURL;
+- (void)setArtworkData:;
+- (void)setArtworkURL:;
+- (id)artworkData;
+- (id)bundleIdentifier;
+- (void)setPlatform:;
+- (void)setDisplayName:;
+- (id)displayName;
+- (id)ratingLabel;
+- (void)setBundleIdentifier:;
+- (short)platform;
+- (void).cxx_destruct;
+- (long long)source;
+- (id)description;
+- (void)setSource:;
+- (id)localURL;
+- (void)setLocalURL:;
+- (id)developerName;
+- (void)setDeveloperName:;
+- (void)setRatingLabel:;
+@end

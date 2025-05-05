@@ -1,0 +1,32 @@
+@interface FBSSystemService : NSObject
+- (void)terminateApplication:forReason:andReport:withDescription:completion:;
+- (void)terminateApplicationGroup:forReason:andReport:withDescription:completion:;
+- (void)shutdownWithOptions:;
+- (id)init;
+- (void)shutdown;
+- (unsigned int)createClientPort;
+- (void)sendActions:withResult:;
+- (void)dealloc;
+- (void)reboot;
+- (id)systemApplicationBundleIdentifier;
+- (void)terminateApplication:forReason:andReport:withDescription:;
+- (void)openApplication:options:clientPort:withResult:;
+- (void)cleanupClientPort:;
+- (id)processHandleForApplication:;
+- (BOOL)isPasscodeLockedOrBlocked;
+- (void)openApplication:options:withResult:;
+- (void)setKeyboardFocusApplicationPID:completion:;
+- (void)setKeyboardFocusApplicationWithBundleID:pid:completion:;
+- (id)initWithEndpoint:;
+- (void)dataResetWithRequest:completion:;
+- (void).cxx_destruct;
+- (int)pidForApplication:;
+- (void)setKeyboardFocusApplicationPID:deferringToken:completion:;
+- (void)openURL:application:options:clientPort:withResult:;
+- (void)terminateApplicationGroup:forReason:andReport:withDescription:;
+- (void)setBadgeValue:forBundleID:;
+- (BOOL)canOpenApplication:reason:;
+- (id)badgeValueForBundleID:;
++ (id)clientCallbackQueue;
++ (id)sharedService;
+@end

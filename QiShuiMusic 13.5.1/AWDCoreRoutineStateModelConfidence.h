@@ -1,0 +1,35 @@
+@interface AWDCoreRoutineStateModelConfidence : PBCodable
+@property (nonatomic) BOOL hasTimestamp;
+@property (nonatomic) Q timestamp;
+@property (nonatomic) BOOL hasImpossibleTransitions;
+@property (nonatomic) I impossibleTransitions;
+@property (nonatomic) BOOL hasNearbyLocations;
+@property (nonatomic) I nearbyLocations;
+@property (nonatomic) BOOL hasConfidence;
+@property (nonatomic) I confidence;
+- (unsigned int)confidence;
+- (void)setConfidence:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)setHasTimestamp:;
+- (void)mergeFrom:;
+- (BOOL)hasTimestamp;
+- (void)setTimestamp:;
+- (BOOL)readFrom:;
+- (unsigned long long)timestamp;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setHasConfidence:;
+- (BOOL)hasConfidence;
+- (void)setImpossibleTransitions:;
+- (void)setHasImpossibleTransitions:;
+- (BOOL)hasImpossibleTransitions;
+- (void)setNearbyLocations:;
+- (void)setHasNearbyLocations:;
+- (BOOL)hasNearbyLocations;
+- (unsigned int)impossibleTransitions;
+- (unsigned int)nearbyLocations;
+@end

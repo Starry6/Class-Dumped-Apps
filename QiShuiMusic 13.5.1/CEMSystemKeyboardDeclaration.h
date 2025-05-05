@@ -1,0 +1,33 @@
+@interface CEMSystemKeyboardDeclaration : CEMConfigurationBase
+@property (nonatomic) NSNumber payloadAllowPredictiveKeyboard;
+@property (nonatomic) NSNumber payloadAllowAutoCorrection;
+@property (nonatomic) NSNumber payloadAllowSpellCheck;
+@property (nonatomic) NSNumber payloadAllowKeyboardShortcuts;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (BOOL)multipleAllowed;
+- (BOOL)mustBeSupervised;
+- (int)activationLevel;
+- (id)assetReferences;
+- (BOOL)loadPayload:error:;
+- (id)serializePayloadWithAssetProviders:;
+- (id)payloadAllowPredictiveKeyboard;
+- (void)setPayloadAllowPredictiveKeyboard:;
+- (id)payloadAllowAutoCorrection;
+- (void)setPayloadAllowAutoCorrection:;
+- (id)payloadAllowSpellCheck;
+- (void)setPayloadAllowSpellCheck:;
+- (id)payloadAllowKeyboardShortcuts;
+- (void)setPayloadAllowKeyboardShortcuts:;
++ (id)profileType;
++ (id)buildRequiredOnlyWithIdentifier:;
++ (id)registeredClassName;
++ (id)registeredIdentifier;
++ (id)allowedPayloadKeys;
++ (id)restrictionPayloadKeys;
++ (id)buildWithIdentifier:withAllowPredictiveKeyboard:withAllowAutoCorrection:withAllowSpellCheck:withAllowKeyboardShortcuts:;
+@end

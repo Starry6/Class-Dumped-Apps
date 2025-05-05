@@ -1,0 +1,34 @@
+@interface UICollectionViewAnimation : NSObject
+@property (nonatomic) UICollectionReusableView view;
+@property (nonatomic) q viewType;
+@property (nonatomic) UICollectionViewLayoutAttributes finalLayoutAttributes;
+@property (nonatomic) double startFraction;
+@property (nonatomic) double endFraction;
+@property (nonatomic) BOOL animateFromCurrentPosition;
+@property (nonatomic) BOOL deleteAfterAnimation;
+@property (nonatomic) BOOL updateZIndexAfterAnimation;
+@property (nonatomic) BOOL rasterizeAfterAnimation;
+@property (nonatomic) BOOL resetRasterizationAfterAnimation;
+@property (nonatomic) BOOL parentInCollectionViewDuringAnimation;
+- (long long)viewType;
+- (double)startFraction;
+- (void)start;
+- (BOOL)updateZIndexAfterAnimation;
+- (BOOL)animateFromCurrentPosition;
+- (void)setParentInCollectionViewDuringAnimation:;
+- (void)startWithAnimator:;
+- (BOOL)rasterizeAfterAnimation;
+- (id)view;
+- (void)addCompletionHandler:;
+- (double)endFraction;
+- (void).cxx_destruct;
+- (BOOL)resetRasterizationAfterAnimation;
+- (void)addStartupHandler:;
+- (id)description;
+- (void)setResetRasterizationAfterAnimation:;
+- (BOOL)parentInCollectionViewDuringAnimation;
+- (void)setRasterizeAfterAnimation:;
+- (BOOL)deleteAfterAnimation;
+- (id)finalLayoutAttributes;
+- (id)initWithView:viewType:finalLayoutAttributes:startFraction:endFraction:animateFromCurrentPostion:deleteAfterAnimation:customAnimations:;
+@end

@@ -1,0 +1,33 @@
+@interface PSFooterHyperlinkView : UITableViewHeaderFooterView
+@property (nonatomic) UITextView textView;
+@property (nonatomic) NSString text;
+@property (nonatomic) {_NSRange=QQ} linkRange;
+@property (nonatomic) @ target;
+@property (nonatomic) : action;
+@property (nonatomic) NSURL URL;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)textView;
+- (void)setupSubviewsAndContstraints;
+- (double)preferredHeightForWidth:inTableView:;
+- (void)refreshContentsWithSpecifier:;
+- (void)setText:;
+- (SEL)action;
+- (void)_linkify;
+- (void)setAction:;
+- (void)_accessibilitySetInterfaceStyleIntent:;
+- (id)linkRange;
+- (void)setTarget:;
+- (void)setTextView:;
+- (void).cxx_destruct;
+- (id)target;
+- (BOOL)isValidLinkRange;
+- (void)setLinkRange:;
+- (id)initWithSpecifier:;
+- (id)text;
+- (void)setURL:;
+- (id)URL;
+- (BOOL)textView:shouldInteractWithURL:inRange:;
+@end

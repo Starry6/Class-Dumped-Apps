@@ -1,0 +1,30 @@
+@interface GEOLogMsgEventUserActionModuleInfo : PBCodable
+@property (nonatomic) BOOL hasType;
+@property (nonatomic) NSInteger type;
+@property (nonatomic) BOOL hasModuleMetadata;
+@property (nonatomic) NSString moduleMetadata;
+- (void)readAll:;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (int)StringAsType:;
+- (id)initWithDictionary:;
+- (void)setType:;
+- (void)writeTo:;
+- (void)setHasType:;
+- (BOOL)hasType;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (id)typeAsString:;
+- (void)mergeFrom:;
+- (int)type;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasModuleMetadata;
+- (id)moduleMetadata;
+- (void)setModuleMetadata:;
++ (BOOL)isValid:;
+@end

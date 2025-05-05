@@ -1,0 +1,33 @@
+@interface BMPBNowPlayingOutputDevice : PBCodable
+@property (nonatomic) BOOL hasOutputDeviceType;
+@property (nonatomic) NSInteger outputDeviceType;
+@property (nonatomic) BOOL hasOutputDeviceSubType;
+@property (nonatomic) NSInteger outputDeviceSubType;
+@property (nonatomic) BOOL hasOutputDeviceId;
+@property (nonatomic) NSString outputDeviceId;
+- (void)setOutputDeviceSubType:;
+- (BOOL)hasOutputDeviceType;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (int)outputDeviceType;
+- (int)outputDeviceSubType;
+- (BOOL)hasOutputDeviceSubType;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void)setHasOutputDeviceSubType:;
+- (void).cxx_destruct;
+- (void)setOutputDeviceType:;
+- (int)StringAsOutputDeviceType:;
+- (id)outputDeviceTypeAsString:;
+- (BOOL)readFrom:;
+- (id)description;
+- (void)setOutputDeviceId:;
+- (id)dictionaryRepresentation;
+- (id)outputDeviceSubTypeAsString:;
+- (void)setHasOutputDeviceType:;
+- (id)outputDeviceId;
+- (BOOL)isEqual:;
+- (int)StringAsOutputDeviceSubType:;
+- (BOOL)hasOutputDeviceId;
+- (id)copyWithZone:;
+@end

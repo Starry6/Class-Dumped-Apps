@@ -1,0 +1,30 @@
+@interface UICubicTimingParameters : NSObject
+@property (nonatomic) _UIViewCubicTimingFunction timingFunction;
+@property (nonatomic) UISpringTimingParameters springTimingParameters;
+@property (nonatomic) q animationCurve;
+@property (nonatomic) {CGPoint=dd} controlPoint1;
+@property (nonatomic) {CGPoint=dd} controlPoint2;
+@property (nonatomic) q timingCurveType;
+@property (nonatomic) UICubicTimingParameters cubicTimingParameters;
+- (id)cubicTimingParameters;
+- (id)init;
+- (id)springTimingParameters;
+- (id)initWithAnimationCurve:;
+- (id)_mediaTimingFunction;
+- (id)controlPoint1;
+- (void)setSpringTimingParameters:;
+- (long long)timingCurveType;
+- (id)initWithCoder:;
+- (id)controlPoint2;
+- (id)timingFunction;
+- (void)encodeWithCoder:;
+- (void)_setAnimationCurve:;
+- (void).cxx_destruct;
+- (id)initWithCustomCurve:;
+- (id)description;
+- (id)initWithControlPoint1:controlPoint2:;
+- (id)effectiveTimingFunction;
+- (BOOL)isEqual:;
+- (long long)animationCurve;
+- (id)copyWithZone:;
+@end

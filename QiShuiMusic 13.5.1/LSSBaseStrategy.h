@@ -1,0 +1,36 @@
+@interface LSSBaseStrategy : NSObject
+@property (nonatomic) NSDictionary strategyInfo;
+@property (nonatomic) NSString strategyName;
+@property (nonatomic) NSMutableArray RTPlayFeaturesBundle;
+@property (nonatomic) NSMutableArray PlayFeaturesBundle;
+@property (nonatomic) NSMutableArray DeviceFeaturesBundle;
+@property (nonatomic) NSMutableArray NetworkFeaturesBundle;
+@property (nonatomic) NSMutableArray UserFeaturesBundle;
+@property (nonatomic) NSMutableArray PushFeaturesBundle;
+- (id)NetworkFeaturesBundle;
+- (id)PlayFeaturesBundle;
+- (id)PushFeaturesBundle;
+- (id)RTPlayFeaturesBundle;
+- (id)DeviceFeaturesBundle;
+- (id)UserFeaturesBundle;
+- (unsigned long long)checkStrategyConfig;
+- (id)filleFeature:sdkInfo:;
+- (id)resolutionResult:bitrate:;
+- (id)runLocalStrategy:;
+- (id)runSmartStrategy:;
+- (id)runStrategy:sdkInfo:;
+- (void)setDeviceFeaturesBundle:;
+- (void)setNetworkFeaturesBundle:;
+- (void)setPlayFeaturesBundle:;
+- (void)setPushFeaturesBundle:;
+- (void)setRTPlayFeaturesBundle:;
+- (void)setStrategyInfo:;
+- (void)setUserFeaturesBundle:;
+- (id)strategyInfo;
+- (void)updateStrategyConfig:;
+- (id)init;
+- (void).cxx_destruct;
+- (id)strategyName;
+- (void)setStrategyName:;
++ (id)defaultStrategyInstance;
+@end

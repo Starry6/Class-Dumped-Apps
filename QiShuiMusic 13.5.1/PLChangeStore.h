@@ -1,0 +1,30 @@
+@interface PLChangeStore : NSObject
+@property (nonatomic) Q firstOnDiskEventIndex;
+@property (nonatomic) NSURL databaseFileURL;
+@property (nonatomic) PLPhotoLibraryPathManager photoLibraryPathManager;
+- (void)dealloc;
+- (void)openDatabase;
+- (id)prepareStatement:;
+- (void)setupDatabase;
+- (void)_clearStore;
+- (id)databaseFileURL;
+- (void).cxx_destruct;
+- (unsigned long long)lastIndex;
+- (id)initWithPhotoLibraryPathManager:;
+- (void)getEventsSinceIndex:filteredBy:onQueue:withBlock:;
+- (void)clearStore:;
+- (unsigned long long)firstOnDiskEventIndex;
+- (BOOL)getInMemoryEventsSinceIndex:filteredBy:onQueue:withBlock:;
+- (id)newArrayWithEventsSince:filteredBy:lastEventIndex:;
+- (void)getOnDiskEventsSinceIndex:filteredBy:onQueue:withBlock:;
+- (void)enumeratePersistedDidSaveEventsInRange:withBlock:;
+- (void)performBlockAsTransaction:;
+- (void)prepareAndEvaluateStatement:;
+- (void)bindInt:toStatement:column:;
+- (void)bindInt64:toStatement:column:;
+- (void)bindXPCData:toStatement:column:;
+- (void)bindString:toStatement:column:;
+- (void)bindUUID:toStatement:column:;
+- (void)_backupStore;
+- (id)photoLibraryPathManager;
+@end

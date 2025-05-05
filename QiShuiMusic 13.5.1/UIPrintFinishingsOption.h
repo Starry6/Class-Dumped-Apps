@@ -1,0 +1,31 @@
+@interface UIPrintFinishingsOption : UIPrintOption
+@property (nonatomic) UIPrintFinishingTemplatesOption finishingTemplatesOption;
+@property (nonatomic) NSArray printerFinishingOptions;
+@property (nonatomic) UITableView finishingOptionsTableView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)dealloc;
+- (id)tableView:cellForRowAtIndexPath:;
+- (void)observeValueForKeyPath:ofObject:change:context:;
+- (id)summaryString;
+- (id)summary;
+- (id)title;
+- (void)tableView:didSelectRowAtIndexPath:;
+- (void).cxx_destruct;
+- (double)tableView:heightForHeaderInSection:;
+- (long long)tableView:numberOfRowsInSection:;
+- (long long)numberOfSectionsInTableView:;
+- (BOOL)shouldShow;
+- (id)initWithPrintInfo:printPanelViewController:;
+- (void)updateFromPrintInfo;
+- (void)currentPrinterChanged;
+- (id)printerFinishingOptions;
+- (void)clearFinishingOptions;
+- (id)finishingOptionsTableView;
+- (void)setPrinterFinishingOptions:;
+- (void)setFinishingOptionsTableView:;
+- (id)finishingTemplatesOption;
+- (void)setFinishingTemplatesOption:;
+@end

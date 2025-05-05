@@ -1,0 +1,37 @@
+@interface CNAutocompleteCoreAnalyticsUsageMonitorProbe : NSObject
+@property (nonatomic) NSMutableDictionary coreAnalyticsDictionary;
+@property (nonatomic) NSNumber selectedIndex;
+@property (nonatomic) NSNumber selectedPredictionIndex;
+@property (nonatomic) NSNumber lengthOfSearchString;
+@property (nonatomic) NSNumber sourceType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (id)sourceType;
+- (id)selectedIndex;
+- (void)setSourceType:;
+- (id)coreAnalyticsDictionary;
+- (void).cxx_destruct;
+- (void)setSelectedIndex:;
+- (void)sendData;
+- (id)bundleIdentifierOfCurrentProcess;
+- (id)makeBundleIdentifierOfCurrentProcess;
+- (void)recordUserSawPredictions;
+- (void)recordUserSawCuratedResults:;
+- (void)recordUserSawResultsConsideredSuggestion:;
+- (void)recordUserSelectedPredictionAtIndex:;
+- (void)recordUserSelectedIndex:;
+- (void)recordUserTypedInNumberOfCharacters:;
+- (void)recordUserSelectedResultWithSourceType:;
+- (void)recordDuetReturnedResults:;
+- (void)recordUserIgnoredPredictionAfterDelay:;
+- (void)recordUserIgnoredPrefixedResultAfterDelay:batch:;
+- (id)sourceKeysForSourceType:;
+- (void)setCoreAnalyticsDictionary:;
+- (id)selectedPredictionIndex;
+- (void)setSelectedPredictionIndex:;
+- (id)lengthOfSearchString;
+- (void)setLengthOfSearchString:;
+@end

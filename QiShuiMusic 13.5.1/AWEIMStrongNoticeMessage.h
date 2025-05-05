@@ -1,0 +1,33 @@
+@interface AWEIMStrongNoticeMessage : AWEIMMessage
+@property (nonatomic) NSString tips;
+@property (nonatomic) NSString fallbackTips;
+@property (nonatomic) NSArray templateArray;
+@property (nonatomic) AWEIMLinkTextUtility textUtility;
+@property (nonatomic) BOOL hasSafeLink;
+@property (nonatomic) NSString displayText;
+@property (nonatomic) NSArray linkArray;
+@property (nonatomic) <IESIMStrangerMessageProtocol> attachStrangerMsg;
+@property (nonatomic) <IESIMMessageProtocol> attachMsg;
+- (void)setHasSafeLink:;
+- (void)setTextUtility:;
+- (id)attachMsg;
+- (id)attachStrangerMsg;
+- (id)calculateAttributedContent;
+- (id)fallbackTips;
+- (id)getContentDict;
+- (BOOL)hasSafeLink;
+- (id)initWithContentDict:;
+- (id)initWithTips:templateArray:;
+- (id)linkArray;
+- (void)prepareForConversationHint;
+- (void)setAttachMsg:;
+- (void)setAttachStrangerMsg:;
+- (void)setFallbackTips:;
+- (void)setTemplateArray:;
+- (id)templateArray;
+- (id)textUtility;
+- (id)tips;
+- (void)setTips:;
+- (id)displayText;
+- (void).cxx_destruct;
+@end

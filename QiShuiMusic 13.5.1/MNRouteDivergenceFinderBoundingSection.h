@@ -1,0 +1,30 @@
+@interface MNRouteDivergenceFinderBoundingSection : NSObject
+@property (nonatomic) {GEOPolylineCoordinateRange={PolylineCoordinate=If}{PolylineCoordinate=If}} range;
+@property (nonatomic) {?={?=dd}{?=dd}} boundingRect;
+@property (nonatomic) MNRouteDivergenceFinderBoundingSection left;
+@property (nonatomic) MNRouteDivergenceFinderBoundingSection right;
+@property (nonatomic) BOOL isLeaf;
+@property (nonatomic) Q leafIndex;
+@property (nonatomic) double length;
+- (void)setRange:;
+- (id)boundingRect;
+- (id)left;
+- (id)range;
+- (void).cxx_destruct;
+- (id)right;
+- (id)description;
+- (double)length;
+- (void)setLength:;
+- (id).cxx_construct;
+- (void)setLeft:;
+- (id)treeDescription;
+- (BOOL)isLeaf;
+- (void)setRight:;
+- (id)leafSectionsIntersectingSection:paddingMapPoints:;
+- (void)traverseWithHandler:;
+- (id)boundsDescription;
+- (void)_appendDescription:indent:;
+- (void)setBoundingRect:;
+- (unsigned long long)leafIndex;
+- (void)setLeafIndex:;
+@end

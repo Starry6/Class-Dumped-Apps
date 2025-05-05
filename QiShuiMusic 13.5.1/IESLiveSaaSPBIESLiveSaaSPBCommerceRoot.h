@@ -1,0 +1,2 @@
+@interface IESLiveSaaSPBIESLiveSaaSPBCommerceRoot : GPBRootObject
+@end

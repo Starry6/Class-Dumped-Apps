@@ -1,0 +1,30 @@
+@interface INSetDefrosterSettingsInCarIntent : INIntent
+@property (nonatomic) NSNumber enable;
+@property (nonatomic) q defroster;
+@property (nonatomic) INSpeakableString carName;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)enable;
+- (id)_dictionaryRepresentation;
+- (void)_setMetadata:;
+- (id)domain;
+- (void)setDomain:;
+- (void)setEnable:;
+- (id)_metadata;
+- (id)carName;
+- (void)setCarName:;
+- (id)_typedBackingStore;
+- (long long)_intentCategory;
+- (id)_categoryVerb;
+- (void)_redactForMissingPrivacyEntitlementOptions:containingAppBundleId:;
+- (id)verb;
+- (void)setVerb:;
+- (id)parametersByName;
+- (void)setParametersByName:;
+- (id)initWithEnable:defroster:;
+- (long long)defroster;
+- (void)setDefroster:;
+- (id)initWithEnable:defroster:carName:;
+@end

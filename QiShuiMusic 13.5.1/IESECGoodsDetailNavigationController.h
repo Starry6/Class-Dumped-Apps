@@ -1,0 +1,2 @@
+@interface IESECGoodsDetailNavigationController : UINavigationController
+@end

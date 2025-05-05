@@ -1,0 +1,33 @@
+@interface SISchemaOrderedAnyEvent : SISchemaTopLevelUnionType
+@property (nonatomic) SISchemaCommonEventMetadata metadata;
+@property (nonatomic) BOOL hasMetadata;
+@property (nonatomic) SISchemaAnyEvent event;
+@property (nonatomic) BOOL hasEvent;
+@property (nonatomic) NSData jsonData;
+- (BOOL)hasEvent;
+- (id)qualifiedMessageName;
+- (void)setEvent:;
+- (id)event;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (int)getAnyEventType;
+- (id)metadata;
+- (id)initWithDictionary:;
+- (void)setHasEvent:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void)unwrapMessageWithCompletion:;
+- (void)setMetadata:;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (BOOL)hasMetadata;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)setHasMetadata:;
+- (void)deleteEvent;
+- (void)deleteMetadata;
++ (id)orderedAnyEventWithAnyEvent:timestamp:clockIdentifier:;
++ (id)orderedAnyEventWithAnyEvent:timestamp:;
+@end

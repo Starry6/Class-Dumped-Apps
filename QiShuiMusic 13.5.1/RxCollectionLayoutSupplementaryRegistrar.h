@@ -1,0 +1,30 @@
+@interface RxCollectionLayoutSupplementaryRegistrar : NSObject
+@property (nonatomic) NSMutableDictionary kindEnrollmentsDict;
+@property (nonatomic) NSMutableDictionary enrollmentsDict;
+@property (nonatomic) NSMutableSet uncommittedEnrollmentIdentifiers;
+@property (nonatomic) NSMutableOrderedSet enrollmentIdentifiers;
+@property (nonatomic) NSSet kinds;
+@property (nonatomic) Q count;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)enrollmentsDict;
+- (void)__addEnrollmentToKindDict:;
+- (void)__removeEnrollmentWithIdentifier:;
+- (id)enrollmentIdentifiers;
+- (id)kindEnrollmentsDict;
+- (void)pruneUncommitedEnrollments;
+- (id)uncommittedEnrollmentIdentifiers;
+- (id)init;
+- (id)kinds;
+- (void).cxx_destruct;
+- (id)description;
+- (unsigned long long)count;
+- (id)enrollSupplementaryForKind:;
+- (long long)countForKind:;
+- (unsigned long long)kindIndexForEnrollmentIdentifier:;
+- (void)unenrollAllAfterAndIncludingEnrollment:;
+- (void)unenrollAllAfterEnrollment:;
+- (void)commitEnrollment:;
+@end

@@ -1,0 +1,34 @@
+@interface C2MPPathInfo : PBCodable
+@property (nonatomic) BOOL hasInterfaceType;
+@property (nonatomic) NSString interfaceType;
+@property (nonatomic) BOOL hasRadioType;
+@property (nonatomic) NSString radioType;
+@property (nonatomic) BOOL hasApplicationBytesSent;
+@property (nonatomic) Q applicationBytesSent;
+@property (nonatomic) BOOL hasApplicationBytesReceived;
+@property (nonatomic) Q applicationBytesReceived;
+- (void)setRadioType:;
+- (id)radioType;
+- (void)setInterfaceType:;
+- (id)interfaceType;
+- (BOOL)hasApplicationBytesReceived;
+- (void)setHasApplicationBytesReceived:;
+- (unsigned long long)applicationBytesReceived;
+- (void)setHasApplicationBytesSent:;
+- (void)writeTo:;
+- (void)setApplicationBytesReceived:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (unsigned long long)applicationBytesSent;
+- (void)mergeFrom:;
+- (BOOL)hasInterfaceType;
+- (void)setApplicationBytesSent:;
+- (void).cxx_destruct;
+- (BOOL)hasRadioType;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (BOOL)hasApplicationBytesSent;
+- (id)copyWithZone:;
+@end

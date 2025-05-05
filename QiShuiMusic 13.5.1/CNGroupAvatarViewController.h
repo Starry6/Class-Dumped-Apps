@@ -1,0 +1,33 @@
+@interface CNGroupAvatarViewController : UIViewController
+@property (nonatomic) CNGroupIdentity group;
+@property (nonatomic) CNVisualIdentityAvatarViewController avatarViewController;
+@property (nonatomic) UIImage badgeImage;
+@property (nonatomic) CNBadgingAvatarBadgeStyleSettings badgeStyleSettings;
+@property (nonatomic) BOOL isMarkedForSyndication;
+@property (nonatomic) BOOL isDoNotDisturb;
+@property (nonatomic) CNAvatarAccessoryView mediaContextBadge;
+- (BOOL)_canShowWhileLocked;
+- (void)setGroup:;
+- (id)group;
+- (void).cxx_destruct;
+- (void)loadView;
+- (id)avatarViewController;
+- (void)setAvatarViewController:;
+- (void)groupIdentityDidUpdate:;
+- (void)setIsMarkedForSyndication:;
+- (void)setMediaContextBadge:;
+- (BOOL)isMarkedForSyndication;
+- (id)mediaContextBadge;
+- (void)setBadgeStyleSettings:;
+- (void)setBadgeImage:;
+- (id)badgeImage;
+- (id)badgeStyleSettings;
+- (id)initWithGroup:;
+- (id)initWithGroup:avatarViewControllerSettings:;
+- (BOOL)contactsEqualToContactsFromGroup:;
+- (void)setIsDoNotDisturb:;
+- (BOOL)isDoNotDisturb;
++ (id)log;
++ (id)descriptorForRequiredKeys;
++ (unsigned long long)maxContactAvatars;
+@end

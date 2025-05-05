@@ -1,0 +1,33 @@
+@interface VNContour : NSObject
+@property (nonatomic) Q topLevelIndex;
+@property (nonatomic) NSIndexPath indexPath;
+@property (nonatomic) q childContourCount;
+@property (nonatomic) NSArray childContours;
+@property (nonatomic) q pointCount;
+@property (nonatomic) r^ normalizedPoints;
+@property (nonatomic) r^{CGPath=} normalizedPath;
+@property (nonatomic) float aspectRatio;
+@property (nonatomic) Q requestRevision;
+- (id)debugQuickLookObject;
+- (void)dealloc;
+- (float)aspectRatio;
+- (unsigned long long)hash;
+- (unsigned long long)requestRevision;
+- (void).cxx_destruct;
+- (id)indexPath;
+- (id).cxx_construct;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (long long)pointCount;
+- (id)normalizedPath;
+- (id)normalizedPoints;
+- (id)initWithPoints:topLevelIndex:indexPath:aspectRatio:;
+- (long long)childContourCount;
+- (id)childContours;
+- (id)childContourAtIndex:error:;
+- (id)polygonApproximationWithEpsilon:error:;
+- (unsigned long long)topLevelIndex;
+- (id)normalizedPointsInTopLeftOrigin:orientation:;
+- (id)normalizedPathInTopLeftOrigin:orientation:;
+- (float)aspectRatioInOrientation:;
+@end

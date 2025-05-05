@@ -1,0 +1,30 @@
+@interface MAAbsoluteAssetId : NSObject
+@property (nonatomic) NSString assetId;
+@property (nonatomic) NSString assetType;
+- (id)initWithPlist:;
+- (id)assetType;
+- (id)assetId;
+- (id)encodeAsPlist;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (id)summary;
+- (void)setAssetType:;
+- (void).cxx_destruct;
+- (id)urlHash;
+- (id)description;
+- (void)setAssetId:;
+- (id)contentHash;
+- (BOOL)isEqual:;
+- (id)policyHash;
+- (id)allAttributesHash;
+- (id)nonIdHash;
+- (id)assetIdHash;
+- (id)pallasDynamicAssetIdHash;
+- (id)initWithAssetId:forAssetType:;
+- (id)initWithAssetId:forAssetType:attributes:;
+- (id)diffFrom:;
+- (id)diffFromAsset:;
+- (id)diffFromAssetId:assetType:attributes:;
+- (BOOL)hasOnlyAssetTypeAndId;
++ (BOOL)supportsSecureCoding;
+@end

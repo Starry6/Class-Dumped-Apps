@@ -1,0 +1,34 @@
+@interface PDFAppearanceCharacteristics : NSObject
+@property (nonatomic) q controlType;
+@property (nonatomic) UIColor backgroundColor;
+@property (nonatomic) UIColor borderColor;
+@property (nonatomic) q rotation;
+@property (nonatomic) NSString caption;
+@property (nonatomic) NSString rolloverCaption;
+@property (nonatomic) NSString downCaption;
+@property (nonatomic) NSDictionary appearanceCharacteristicsKeyValues;
+- (void)setBorderColor:;
+- (id)borderColor;
+- (id)init;
+- (void)setBackgroundColor:;
+- (void)dealloc;
+- (id)backgroundColor;
+- (id)icon;
+- (id)caption;
+- (void)setRotation:;
+- (void)setCaption:;
+- (void).cxx_destruct;
+- (void)setControlType:;
+- (long long)rotation;
+- (long long)controlType;
+- (id)copyWithZone:;
+- (void)addColor:forKey:toDictionaryRef:;
+- (id)createDictionaryRef;
+- (id)rolloverCaption;
+- (id)downCaption;
+- (BOOL)scaleProportional;
+- (id)initWithAnnotationDictionary:forControlType:;
+- (void)setRolloverCaption:;
+- (void)setDownCaption:;
+- (id)appearanceCharacteristicsKeyValues;
+@end

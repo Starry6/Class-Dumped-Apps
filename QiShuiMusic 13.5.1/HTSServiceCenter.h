@@ -1,0 +1,37 @@
+@interface HTSServiceCenter : NSObject
+- (int)__getScopeType:;
+- (void)unbindProtocol:;
+- (void)__checkDebugStandardClassName:protocolName:;
+- (int)__checkScopeType:;
+- (id)__convertAndCheckForClassNameFromStandardProtocolName:;
+- (Class)__convertDIClass:;
+- (id)__getInstanceProtocol:;
+- (id)__getMultipleInstanceProtocolName:;
+- (id)__getSingleInstanceProtocolName:;
+- (id)__getWeakSingletonInstanceProtocolName:;
+- (BOOL)__isConformsScopeDI:;
+- (BOOL)__isEmptyString:;
+- (BOOL)__isSupportScopeScenarios:;
+- (Class)__swiftClassForClassName:;
+- (void)bindBlock:toProtocol:;
+- (void)bindClass:toProtocol:;
+- (void)callClearData;
+- (void)callEnterBackground;
+- (void)callEnterForeground;
+- (void)callServiceMemoryWarning;
+- (void)callTerminate;
+- (void)checkDebugStandardClassName:protocolName:;
+- (id)convertAndCheckForClassNameFromStandardProtocolName:;
+- (Class)getClassFromProtocol:;
+- (id)getProtocolService:;
+- (Class)getStatelessProtocolService:;
+- (Class)swiftClassForClassName:;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (void)removeService:;
+- (id)getService:;
++ (BOOL)debugAssertOn;
++ (void)setDebugAssertOn:;
++ (id)defaultCenter;
+@end

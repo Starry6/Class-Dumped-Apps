@@ -1,0 +1,33 @@
+@interface AWEIMNextGenerationUploadImageClient : NSObject
+@property (nonatomic) NSData data;
+@property (nonatomic) NSInteger fileType;
+@property (nonatomic) AWEIMNextGenerationUploadConfigModel config;
+@property (nonatomic) BDImageUploaderClient client;
+@property (nonatomic) @? progressBlock;
+@property (nonatomic) @? completionBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)createImageUploaderClient;
+- (void)imageUpload:fileIndex:progressDidUpdate:;
+- (void)imageUpload:fileIndex:singleImage:error:;
+- (void)imageUpload:onLogInfo:;
+- (void)imageUploadDidFinish:;
+- (long long)imageUploadGetNetState:;
+- (void)uploadOriginData:filePath:fileType:progressBlock:completion:;
+- (id)progressBlock;
+- (void)setProgressBlock:;
+- (id)data;
+- (void)setConfig:;
+- (id)initWithConfig:;
+- (void)setCompletionBlock:;
+- (void)setClient:;
+- (void)setFileType:;
+- (int)fileType;
+- (id)client;
+- (void).cxx_destruct;
+- (void)setData:;
+- (id)config;
+- (id)completionBlock;
+@end

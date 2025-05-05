@@ -1,0 +1,33 @@
+@interface ECSubjectFormatter : NSFormatter
+@property (nonatomic) q style;
+@property (nonatomic) _ECSubjectFormatterContext replyContext;
+@property (nonatomic) _ECSubjectFormatterContext forwardContext;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)stringForObjectValue:;
+- (id)init;
+- (BOOL)getObjectValue:forString:errorDescription:;
+- (void)setStyle:;
+- (void).cxx_destruct;
+- (long long)style;
+- (id)initWithStyle:;
+- (id)_localizedPrefixForSubjectFromSubject:;
+- (id)replyContext;
+- (void)setReplyContext:;
+- (id)forwardContext;
+- (void)setForwardContext:;
++ (id)log;
++ (id)subjectStringForDisplayForSubject:style:;
++ (id)_subjectStringForDisplayForObject:style:;
++ (id)subjectStringForDisplayForSubjectString:style:;
++ (id)nonLocalizedReplyPrefix;
++ (id)subjectStringForDisplayForSubject:;
++ (id)subjectStringForDisplayForMessage:;
++ (id)localizedForwardPrefix;
++ (id)localizedReplyPrefix;
++ (id)subjectStringForDisplayForSubjectString:;
++ (id)nonLocalizedForwardPrefix;
++ (id)subjectStringForDisplayForMessage:style:;
+@end

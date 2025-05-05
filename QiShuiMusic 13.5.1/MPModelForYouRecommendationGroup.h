@@ -1,0 +1,35 @@
+@interface MPModelForYouRecommendationGroup : MPModelObject
+@property (nonatomic) Q groupType;
+@property (nonatomic) NSDate lastUpdatedDate;
+@property (nonatomic) NSString title;
+@property (nonatomic) MPSectionedCollection sectionedItems;
+@property (nonatomic) q sectionIndex;
+@property (nonatomic) NSArray subgroups;
+@property (nonatomic) NSURL loadAdditionalContentURL;
+@property (nonatomic) NSURL hrefURL;
+@property (nonatomic) NSURL refreshURL;
+@property (nonatomic) BOOL groupRecommendation;
+@property (nonatomic) Q traits;
+@property (nonatomic) BOOL displaysAsGridCellInCarPlay;
+@property (nonatomic) BOOL displaysAsTitledSectionWithRowsInCarPlay;
+- (long long)numberOfItems;
+- (void).cxx_destruct;
+- (id)itemAtIndex:;
+- (id)refreshURL;
+- (void)setRefreshURL:;
+- (BOOL)isGroupRecommendation;
+- (void)setGroupRecommendation:;
++ (id)__title_KEY;
++ (id)__traits_KEY;
++ (id)classesForSecureCoding;
++ (id)__groupType_KEY;
++ (id)__lastUpdatedDate_KEY;
++ (id)__sectionedItems_KEY;
++ (id)__sectionIndex_KEY;
++ (id)__subgroups_KEY;
++ (id)__loadAdditionalContentURL_KEY;
++ (id)__hrefURL_KEY;
++ (id)__refreshURL_KEY;
++ (id)__displaysAsGridCellInCarPlay_KEY;
++ (id)__displaysAsTitledSectionWithRowsInCarPlay_KEY;
+@end

@@ -1,0 +1,32 @@
+@interface IESECFeedRecommendProductWrapperModel : MTLModel
+@property (nonatomic) NSString promotionID;
+@property (nonatomic) IESECGoodsDetailModel promotion;
+@property (nonatomic) NSString scheme;
+@property (nonatomic) NSString recommendInfo;
+@property (nonatomic) NSString recommendReason;
+@property (nonatomic) NSString coverTag;
+@property (nonatomic) BOOL IsCurrentInLive;
+@property (nonatomic) NSString priceBackgroundColor;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)IsCurrentInLive;
+- (id)recommendReason;
+- (void)setPromotionID:;
+- (id)coverTag;
+- (id)priceBackgroundColor;
+- (id)promotion;
+- (id)promotionID;
+- (id)recommendInfo;
+- (void)setCoverTag:;
+- (void)setIsCurrentInLive:;
+- (void)setPriceBackgroundColor:;
+- (void)setPromotion:;
+- (void)setRecommendInfo:;
+- (void)setRecommendReason:;
+- (void)setScheme:;
+- (id)scheme;
+- (void).cxx_destruct;
++ (id)JSONKeyPathsByPropertyKey;
+@end

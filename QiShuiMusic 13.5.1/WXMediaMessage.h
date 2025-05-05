@@ -1,0 +1,32 @@
+@interface WXMediaMessage : NSObject
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSData thumbData;
+@property (nonatomic) NSString mediaTagName;
+@property (nonatomic) NSString messageExt;
+@property (nonatomic) NSString messageAction;
+@property (nonatomic) @ mediaObject;
+@property (nonatomic) NSString thumbDataHash;
+@property (nonatomic) NSString msgSignature;
+- (id)mediaTagName;
+- (id)messageAction;
+- (id)messageExt;
+- (id)msgSignature;
+- (void)setMediaTagName:;
+- (void)setMessageAction:;
+- (void)setMessageExt:;
+- (void)setMsgSignature:;
+- (void)setThumbData:;
+- (void)setThumbDataHash:;
+- (void)setThumbImage:;
+- (id)thumbData;
+- (id)thumbDataHash;
+- (void)setTitle:;
+- (id)title;
+- (void).cxx_destruct;
+- (id)description;
+- (void)setDescription:;
+- (id)mediaObject;
+- (void)setMediaObject:;
++ (id)message;
+@end

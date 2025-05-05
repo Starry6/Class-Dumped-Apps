@@ -1,0 +1,34 @@
+@interface ICDocCamViewControllerMeshTransform : NSObject
+@property (nonatomic) UIImageView animationImageView;
+@property (nonatomic) UIView scrimView;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} imageViewFrame;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} previewViewFrame;
+@property (nonatomic) {CGSize=dd} imageSize;
+@property (nonatomic) ICDocCamImageQuad imageQuad;
+@property (nonatomic) @? imageMeshAnimationCompletionBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)startWithCompletionBlock:;
+- (void)hide;
+- (void)animationDidStop:finished:;
+- (id)imageSize;
+- (void).cxx_destruct;
+- (void)setImageSize:;
+- (id)previewViewFrame;
+- (id)imageQuad;
+- (void)setImageQuad:;
+- (id)initWithImage:backgroundImage:imageViewFrame:view:imageQuad:previewView:previewBounds:scrimView:;
+- (id)frameForImageInImageViewFrame:;
+- (id)imageMeshTransformWithImageQuad:imageViewFrame:previewBounds:finalTransform:;
+- (id)animationImageView;
+- (void)setAnimationImageView:;
+- (id)scrimView;
+- (void)setScrimView:;
+- (id)imageViewFrame;
+- (void)setImageViewFrame:;
+- (void)setPreviewViewFrame:;
+- (id)imageMeshAnimationCompletionBlock;
+- (void)setImageMeshAnimationCompletionBlock:;
+@end

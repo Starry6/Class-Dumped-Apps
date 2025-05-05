@@ -1,0 +1,2 @@
+@interface CPNowPlayingAddToLibraryButton : CPNowPlayingButton
+@end

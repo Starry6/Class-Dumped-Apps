@@ -1,0 +1,37 @@
+@interface FLOWSchemaFLOWMapsEntity : SISchemaInstrumentationMessage
+@property (nonatomic) Q muid;
+@property (nonatomic) BOOL hasMuid;
+@property (nonatomic) Q mapsFeatureId;
+@property (nonatomic) BOOL hasMapsFeatureId;
+@property (nonatomic) NSString addressId;
+@property (nonatomic) BOOL hasAddressId;
+@property (nonatomic) NSData jsonData;
+@property (nonatomic) Q whichEntityid;
+- (void)setHasMuid:;
+- (BOOL)hasMuid;
+- (void)setMuid:;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (unsigned long long)muid;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)deleteMuid;
+- (void)setMapsFeatureId:;
+- (unsigned long long)mapsFeatureId;
+- (void)deleteMapsFeatureId;
+- (void)setAddressId:;
+- (id)addressId;
+- (void)deleteAddressId;
+- (unsigned long long)whichEntityid;
+- (BOOL)hasMapsFeatureId;
+- (void)setHasMapsFeatureId:;
+- (BOOL)hasAddressId;
+- (void)setHasAddressId:;
+@end

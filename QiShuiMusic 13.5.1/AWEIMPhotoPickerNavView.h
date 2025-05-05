@@ -1,0 +1,36 @@
+@interface AWEIMPhotoPickerNavView : UIView
+@property (nonatomic) UIButton backButton;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIImageView arrowImageView;
+@property (nonatomic) UIView touchView;
+@property (nonatomic) UIView containerView;
+@property (nonatomic) @? backBlock;
+@property (nonatomic) BOOL collectionOn;
+@property (nonatomic) @? switchImageCollectionBlock;
+- (void)addGestures;
+- (void)addSubviews;
+- (id)backBlock;
+- (BOOL)collectionOn;
+- (void)setBackBlock:;
+- (void)setCollectionOn:;
+- (void)setSwitchImageCollectionBlock:;
+- (void)setTouchView:;
+- (void)switchButtonPressed:;
+- (id)switchImageCollectionBlock;
+- (id)touchView;
+- (void)setTitleLabel:;
+- (void)layoutSubviews;
+- (id)containerView;
+- (void)setContainerView:;
+- (void)commonInit;
+- (id)backButton;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setBackButton:;
+- (void)backButtonPressed:;
+- (void)setNavTitle:;
+- (void)setUpConstraints;
+- (id)arrowImageView;
+- (void)setArrowImageView:;
+@end

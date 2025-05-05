@@ -1,0 +1,31 @@
+@interface MPStoreModelRequestOperation : MPAsyncOperation
+@property (nonatomic) double remainingTimeInterval;
+@property (nonatomic) MPStoreModelRequest request;
+@property (nonatomic) @? responseHandler;
+- (void)execute;
+- (id)init;
+- (void)cancel;
+- (id)responseHandler;
+- (void)dealloc;
+- (void)setResponseHandler:;
+- (void)dispatchAsync:;
+- (id)request;
+- (void)_finishWithResponse:error:;
+- (void).cxx_destruct;
+- (void)_handleTimeout;
+- (void)finishWithError:;
+- (void)setRequest:;
+- (void)dispatchSync:;
+- (id)configurationForLoadingModelDataWithStoreURLBag:error:;
+- (void)produceResponseWithLoadedOutput:completion:;
+- (double)adjustTimeoutInterval:;
+- (id)initWithRequest:responseHandler:;
+- (double)remainingTimeInterval;
+- (id)configurationForLoadingModelDataWithStoreBagDictionary:error:;
+- (void)assertRunningInAccessQueue;
+- (void)_executeItemMetadataLoadForRequestedItemIdentifiers:reason:requestContext:;
+- (void)_executeURLLoadWithRequest:storeURLBag:requestContext:;
+- (void)_executeURLLoadWithRequests:storeURLBag:requestContext:;
+- (void)_tearDownTimeoutTimerSource;
+- (id)_URLLoadRequestWithRequest:requestContext:;
+@end

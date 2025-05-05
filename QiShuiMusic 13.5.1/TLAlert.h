@@ -1,0 +1,38 @@
+@interface TLAlert : NSObject
+@property (nonatomic) BOOL _hasSynchronizedVibrationUnmatchedWithTone;
+@property (nonatomic) <TLAlertPlaybackObserver> playbackObserver;
+@property (nonatomic) TLAlertConfiguration configuration;
+@property (nonatomic) q type;
+@property (nonatomic) NSString toneIdentifier;
+@property (nonatomic) NSString vibrationIdentifier;
+- (id)vibrationIdentifier;
+- (void)play;
+- (void)stop;
+- (id)debugDescription;
+- (long long)type;
+- (id)configuration;
+- (id)toneIdentifier;
+- (void).cxx_destruct;
+- (id)description;
+- (id)initWithType:;
+- (void)playWithCompletionHandler:;
+- (void)preheatWithCompletionHandler:;
+- (void)_updateAudioVolumeDynamicallyToValue:;
+- (id)_descriptionForDebugging:;
+- (id)initWithType:accountIdentifier:;
+- (id)initWithType:toneIdentifier:vibrationIdentifier:;
+- (BOOL)playWithCompletionHandler:targetQueue:;
+- (id)playbackObserver;
+- (void)setPlaybackObserver:;
+- (id)_initWithConfiguration:toneIdentifier:vibrationIdentifier:hasSynchronizedVibrationUnmatchedWithTone:;
+- (void)stopWithOptions:;
+- (BOOL)_hasSynchronizedVibrationUnmatchedWithTone;
++ (id)alertWithConfiguration:;
++ (BOOL)_stopAllAlerts;
++ (void)playToneAndVibrationForType:;
++ (void)playAlertForType:;
++ (BOOL)_watchPrefersSalientToneAndVibration;
++ (void)_setWatchPrefersSalientToneAndVibration:;
++ (long long)_currentOverridePolicyForType:;
++ (void)_setCurrentOverridePolicy:forType:;
+@end

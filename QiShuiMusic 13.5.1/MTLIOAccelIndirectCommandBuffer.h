@@ -1,0 +1,30 @@
+@interface MTLIOAccelIndirectCommandBuffer : MTLIOAccelResource
+@property (nonatomic) MTLIOAccelBuffer privateICBuffer;
+@property (nonatomic) Q commandBufferType;
+@property (nonatomic) MTLIndirectCommandBufferDescriptor descriptor;
+@property (nonatomic) Q storageMode;
+@property (nonatomic) Q size;
+@property (nonatomic) {MTLResourceID=Q} gpuResourceID;
+- (BOOL)isComplete;
+- (id)gpuResourceID;
+- (id)descriptor;
+- (unsigned long long)gpuHandle;
+- (unsigned long long)storageMode;
+- (void)dealloc;
+- (unsigned long long)uniqueIdentifier;
+- (BOOL)isAliasable;
+- (unsigned long long)setPurgeableState:;
+- (void)waitUntilComplete;
+- (void)makeAliasable;
+- (unsigned long long)size;
+- (id)initWithBuffer:descriptor:maxCommandCount:;
+- (void)getHeader:headerSize:;
+- (id)indirectRenderCommandAtIndex:;
+- (id)indirectComputeCommandAtIndex:;
+- (void)resetWithRange:;
+- (unsigned long long)commandBufferType;
+- (id)privateICBuffer;
+- (BOOL)doesAliasAllResources:count:;
+- (BOOL)doesAliasAnyResources:count:;
+- (BOOL)doesAliasResource:;
+@end

@@ -1,0 +1,2 @@
+@interface STListDetail.BNArtistProfilePresenter : _TtGC15BNCommonAdapter11BNPresenterC12STListDetail29BNArtistProfileViewControllerCS1_24BNArtistProfileFrameView_
+@end

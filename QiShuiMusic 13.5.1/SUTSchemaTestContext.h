@@ -1,0 +1,35 @@
+@interface SUTSchemaTestContext : SISchemaInstrumentationMessage
+@property (nonatomic) NSString testName;
+@property (nonatomic) BOOL hasTestName;
+@property (nonatomic) NSInteger testType;
+@property (nonatomic) BOOL hasTestType;
+@property (nonatomic) SUTSchemaTestSessionInfo testSessionInfo;
+@property (nonatomic) BOOL hasTestSessionInfo;
+@property (nonatomic) NSData jsonData;
+- (void)setTestName:;
+- (id)testName;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (BOOL)hasTestName;
+- (void)deleteTestName;
+- (void)setTestType:;
+- (BOOL)hasTestType;
+- (void)setHasTestType:;
+- (void)deleteTestType;
+- (BOOL)hasTestSessionInfo;
+- (void)deleteTestSessionInfo;
+- (int)testType;
+- (id)testSessionInfo;
+- (void)setTestSessionInfo:;
+- (void)setHasTestName:;
+- (void)setHasTestSessionInfo:;
+@end

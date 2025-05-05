@@ -1,0 +1,33 @@
+@interface IESLiveRelatedLiveSelectionTabView : UIView
+@property (nonatomic) NSArray tabModels;
+@property (nonatomic) UIView flagView;
+@property (nonatomic) UIButton selectButton;
+@property (nonatomic) NSMutableArray seletedButtonArray;
+@property (nonatomic) BOOL useSmallFont;
+@property (nonatomic) @? selectedBlock;
+@property (nonatomic) @? totalSelectionTabClick;
+- (void)changeSelectToIndex:;
+- (id)createTabTagButtonWithTitle:;
+- (void)flagButtonClick:;
+- (id)flagView;
+- (id)initWithPanelTabModels:showIcon:useSmallFont:;
+- (id)selectedBlock;
+- (id)seletedButtonArray;
+- (void)setFlagView:;
+- (void)setSelectedBlock:;
+- (void)setSeletedButtonArray:;
+- (void)setTabModels:;
+- (void)setTotalSelectionTabClick:;
+- (void)setupIconTabView;
+- (void)setupMultiTabView;
+- (void)setupSubview:;
+- (void)switchFlagTo:;
+- (id)tabModels;
+- (id)totalSelectionTabClick;
+- (void)handleTapGesture:;
+- (BOOL)useSmallFont;
+- (void)setUseSmallFont:;
+- (void).cxx_destruct;
+- (id)selectButton;
+- (void)setSelectButton:;
+@end

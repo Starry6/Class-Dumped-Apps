@@ -1,0 +1,31 @@
+@interface IESLivePreloadRequestControl : NSObject
+@property (nonatomic) NSMutableDictionary requestUnitPool;
+@property (nonatomic) BOOL installed;
+@property (nonatomic) Q currentRequestStage;
+@property (nonatomic) IESLivePreloadControlAdapter preloadControlAdapter;
+@property (nonatomic) IESLivePreloadRequestParam preloadRequestParam;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)requestUnitPool;
+- (unsigned long long)currentRequestStage;
+- (void)didSetAttachingDIContext;
+- (id)preloadControlAdapter;
+- (id)preloadRequestParam;
+- (void)realRequestStage:;
+- (void)removeSubscriberWithBusiness:identifier:;
+- (void)requestStage:;
+- (void)setCurrentRequestStage:;
+- (void)setPreloadControlAdapter:;
+- (void)setPreloadRequestParam:;
+- (void)setRequestUnitPool:;
+- (BOOL)subscribePreloadBusiness:identifier:complete:;
+- (id)unitWithBusiness:;
+- (id)init;
+- (void)clear;
+- (void).cxx_destruct;
+- (BOOL)installed;
+- (void)install;
+- (void)setInstalled:;
+@end

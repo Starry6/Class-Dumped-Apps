@@ -1,0 +1,35 @@
+@interface IESLiveSaaSMatchRoomData : BDDynamicMTLModel
+@property (nonatomic) IESLiveSaaSMatchDrawer drawer;
+@property (nonatomic) BOOL hasDrawer;
+@property (nonatomic) IESLiveSaaSToutiaoMatchData match_sub;
+@property (nonatomic) BOOL hasMatch;
+@property (nonatomic) IESLiveSaaSImage drawerLabel;
+@property (nonatomic) BOOL hasDrawerLabel;
+@property (nonatomic) NSString pcuStr;
+@property (nonatomic) IESLiveSaaSImage drawerOfficialLabel;
+@property (nonatomic) BOOL hasDrawerOfficialLabel;
+@property (nonatomic) IESLiveSaaSImage matchBackground;
+@property (nonatomic) IESLiveSaaSMatchUserInfo matchUserInfo;
+@property (nonatomic) BOOL hasMatchBackground;
+@property (nonatomic) BOOL hasMatchUserInfo;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)hasDrawer;
+- (BOOL)hasDrawerLabel;
+- (BOOL)hasDrawerOfficialLabel;
+- (BOOL)hasMatchBackground;
+- (BOOL)hasMatchUserInfo;
+- (id)matchUserInfo;
+- (void)setMatchUserInfo:;
+- (BOOL)hasMatch;
+- (void).cxx_destruct;
++ (id)drawerJSONTransformer;
++ (id)drawerLabelJSONTransformer;
++ (id)drawerOfficialLabelJSONTransformer;
++ (id)matchBackgroundJSONTransformer;
++ (id)matchUserInfoJSONTransformer;
++ (id)match_subJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

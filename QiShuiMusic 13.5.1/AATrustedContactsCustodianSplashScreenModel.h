@@ -1,0 +1,36 @@
+@interface AATrustedContactsCustodianSplashScreenModel : NSObject
+@property (nonatomic) NSString imageName;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString detailText;
+@property (nonatomic) NSString primaryButton;
+@property (nonatomic) NSString secondaryButton;
+@property (nonatomic) NSString leftBarButton;
+@property (nonatomic) NSString helpLinkTitle;
+@property (nonatomic) NSString helpLinkURL;
+@property (nonatomic) NSString ownerHandle;
+@property (nonatomic) NSString recipientHandle;
+@property (nonatomic) AACustodianshipInfo custodianshipInfo;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)imageName;
+- (void)setDetailText:;
+- (id)detailText;
+- (id)title;
+- (void).cxx_destruct;
+- (id)secondaryButton;
+- (id)bullets;
+- (id)primaryButton;
+- (id)helpLinkTitle;
+- (id)helpLinkURL;
+- (id)_firstBulletPointDescription;
+- (id)_firstBulletPointSymbolName;
+- (id)_firstBulletPointTitle;
+- (id)_secondBulletPointDescription;
+- (id)_secondBulletPointSymbolName;
+- (id)_secondBulletPointTitle;
+- (id)_thirdBulletPointDescription;
+- (id)_thirdBulletPointSymbolName;
+- (id)_thirdBulletPointTitle;
+@end

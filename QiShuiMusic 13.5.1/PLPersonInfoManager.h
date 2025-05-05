@@ -1,0 +1,21 @@
+@interface PLPersonInfoManager : NSObject
+- (id)assetsdClient;
+- (void)dealloc;
+- (id)plistPath;
+- (void).cxx_destruct;
+- (id)phonesForInvitationRecordGUID:;
+- (id)firstNameForPersonID:;
+- (id)emailsForInvitationRecordGUID:;
+- (id)emailForPersonID:;
+- (id)lastNameForPersonID:;
+- (id)fullNameForPersonID:;
+- (id)initWithPathManager:lazyAssetsdClient:;
+- (void)setFirstName:lastName:fullName:email:forPersonID:;
+- (void)setEmails:phones:forInvitationRecordGUID:;
+- (void)deleteEmailsAndPhonesForInvitationRecordGUID:;
+- (void)clearCacheForPersonID:;
+- (void)_loadDictionariesIfNeeded;
+- (void)removePersistedInfo;
+- (id)personInfoForPersonID:;
+- (void)setPersonInfo:forPersonID:;
+@end

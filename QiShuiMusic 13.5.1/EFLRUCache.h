@@ -1,0 +1,33 @@
+@interface EFLRUCache : NSObject
+@property (nonatomic) Q capacity;
+@property (nonatomic) NSMutableDictionary nodesByKey;
+@property (nonatomic) Q size;
+@property (nonatomic) _EFLRUCacheNode firstNode;
+@property (nonatomic) _EFLRUCacheNode lastNode;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSString ef_publicDescription;
+- (id)ef_publicDescription;
+- (unsigned long long)capacity;
+- (void)addObject:forKey:;
+- (id)lastNode;
+- (void)removeAllObjects;
+- (id)objectForKey:;
+- (void).cxx_destruct;
+- (id)firstNode;
+- (id)description;
+- (void)setSize:;
+- (id)initWithCapacity:;
+- (unsigned long long)size;
+- (void)_pushToTop:;
+- (void)_pruneLastObject;
+- (unsigned long long)test_size;
+- (id)test_firstNode;
+- (id)test_lastNode;
+- (id)nodesByKey;
+- (void)setFirstNode:;
+- (void)setLastNode:;
++ (id)log;
+@end

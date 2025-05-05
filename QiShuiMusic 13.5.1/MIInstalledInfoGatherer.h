@@ -1,0 +1,30 @@
+@interface MIInstalledInfoGatherer : NSObject
+@property (nonatomic) MIExecutableBundle bundle;
+@property (nonatomic) MIExecutableBundle builtInAppParallelPlaceholderBundle;
+@property (nonatomic) MIBundleContainer bundleContainer;
+@property (nonatomic) MIDataContainer dataContainer;
+@property (nonatomic) NSString owningBundleIdentifier;
+@property (nonatomic) NSURL parentBundleURL;
+- (id)bundle;
+- (void).cxx_destruct;
+- (id)_staticDiskUsage;
+- (void)_fixUpForBuiltInAppParallelPlaceholder;
+- (id)initWithBundle:dataContainer:;
+- (id)initWithBundleContainer:;
+- (id)initWithBundleContainer:dataContainer:;
+- (id)initWithAppExtensionBundle:inBundleIdentifier:dataContainer:;
+- (id)_sandboxEnvironment;
+- (id)_groupContainersDictionary;
+- (id)_stashedAppRecordForStashedContainer:;
+- (BOOL)_populateBundleRecordValues:signingInfo:error:;
+- (void)_populateAppRecordValues:;
+- (void)_populateAppExtensionRecordValues:;
+- (void)_populatePlaceholderRecordValues:signingInfo:;
+- (id)bundleRecordWithError:;
+- (BOOL)_populateBundleRecord:error:;
+- (id)builtInAppParallelPlaceholderBundle;
+- (id)bundleContainer;
+- (id)dataContainer;
+- (id)owningBundleIdentifier;
+- (id)parentBundleURL;
+@end

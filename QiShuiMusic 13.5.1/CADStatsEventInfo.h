@@ -1,0 +1,2 @@
+@interface CADStatsEventInfo : NSObject
+@end

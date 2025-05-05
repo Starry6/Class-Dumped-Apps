@@ -1,0 +1,35 @@
+@interface AWDWiFiMetricsHealthUIEvent : PBCodable
+@property (nonatomic) BOOL hasTimestamp;
+@property (nonatomic) Q timestamp;
+@property (nonatomic) BOOL hasEventType;
+@property (nonatomic) I eventType;
+@property (nonatomic) BOOL hasHealthIssues;
+@property (nonatomic) Q healthIssues;
+@property (nonatomic) BOOL hasHashCode;
+@property (nonatomic) NSString hashCode;
+- (void)dealloc;
+- (void)writeTo:;
+- (unsigned int)eventType;
+- (void)setEventType:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)setHasTimestamp:;
+- (void)mergeFrom:;
+- (BOOL)hasTimestamp;
+- (void)setTimestamp:;
+- (void)setHasEventType:;
+- (BOOL)hasEventType;
+- (BOOL)readFrom:;
+- (unsigned long long)timestamp;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setHealthIssues:;
+- (void)setHasHealthIssues:;
+- (BOOL)hasHealthIssues;
+- (BOOL)hasHashCode;
+- (unsigned long long)healthIssues;
+- (id)hashCode;
+- (void)setHashCode:;
+@end

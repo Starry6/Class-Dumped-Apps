@@ -1,0 +1,35 @@
+@interface MTLJSONAdapter : NSObject
+@property (nonatomic) <MTLJSONSerializing> model;
+@property (nonatomic) # modelClass;
+@property (nonatomic) NSDictionary JSONKeyPathsByPropertyKey;
+@property (nonatomic) NSDictionary valueTransformersByPropertyKey;
+@property (nonatomic) NSMapTable JSONAdaptersByModelClass;
+- (id)init;
+- (Class)modelClass;
+- (void).cxx_destruct;
+- (id)JSONDictionaryFromModel:error:;
+- (id)JSONKeyPathsByPropertyKey;
+- (id)serializablePropertyKeys:forModel:;
+- (id)initWithModelClass:;
+- (id)modelFromJSONDictionary:error:;
+- (id)JSONAdapterForModelClass:error:;
+- (id)valueTransformersByPropertyKey;
+- (id)JSONAdaptersByModelClass;
++ (id)ieseclistkit_jsonStringToModelTransformer:;
++ (id)ieseclistkit_modelValueDictionaryTransformer:;
++ (id)ieseclistkit_stringToColorTransformer;
++ (id)mock_dictionaryTransformerWithModelClass:;
++ (id)modelOfClass:fromJSONDictionary:error:;
++ (id)JSONDictionaryFromModel:error:;
++ (id)modelsOfClass:fromJSONArray:error:;
++ (id)JSONArrayFromModels:error:;
++ (id)valueTransformersForModelClass:;
++ (id)transformerForModelPropertiesOfClass:;
++ (id)transformerForModelPropertiesOfObjCType:;
++ (id)dictionaryTransformerWithModelClass:;
++ (id)arrayTransformerWithModelClass:;
++ (id)NSURLJSONTransformer;
++ (id)NSUUIDJSONTransformer;
++ (id)JSONArrayFromModels:;
++ (id)JSONDictionaryFromModel:;
+@end

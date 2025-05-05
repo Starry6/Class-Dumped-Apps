@@ -1,0 +1,33 @@
+@interface UIDynamicBehavior : NSObject
+@property (nonatomic) NSArray childBehaviors;
+@property (nonatomic) @? action;
+@property (nonatomic) UIDynamicAnimator dynamicAnimator;
+- (void)_step;
+- (id)_context;
+- (void)_setContext:;
+- (id)_items;
+- (id)init;
+- (id)items;
+- (id)action;
+- (void)setAction:;
+- (void).cxx_destruct;
+- (void)_setItems:;
+- (id)description;
+- (void)_associate;
+- (void)_dissociate;
+- (void)_reevaluate:;
+- (void)_addItem:;
+- (void)_removeItem:;
+- (id)dynamicAnimator;
+- (void)willMoveToAnimator:;
+- (void)_updateAutolayoutEngagementForItemIfNecessary:detach:;
+- (void)_detachAutolayoutFromItemIfNecessary:;
+- (void)_reattachAutolayoutToItemIfNecessary:;
+- (BOOL)allowsAnimatorToStop;
+- (void)addChildBehavior:;
+- (void)removeChildBehavior:;
+- (id)childBehaviors;
+- (void)_changedParameterForBody:;
+- (id)_itemsDescription;
++ (BOOL)_isPrimitiveBehavior;
+@end

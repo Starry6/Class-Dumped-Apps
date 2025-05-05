@@ -1,0 +1,37 @@
+@interface BSUIMappedImageCache : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithName:options:;
+- (id)init;
+- (id)initWithUniqueIdentifier:;
+- (void)dealloc;
+- (id)allKeys;
+- (id)initWithName:;
+- (id)succinctDescriptionBuilder;
+- (id)debugDescription;
+- (void)removeAllObjects;
+- (id)debugDescriptionWithMultilinePrefix:;
+- (void).cxx_destruct;
+- (id)succinctDescription;
+- (id)description;
+- (id)imageForKey:;
+- (id)descriptionBuilderWithMultilinePrefix:;
+- (id)descriptionWithMultilinePrefix:;
+- (id)_imageForKey:withCPBitmapReadFlags:generatingIfNecessaryWithBlock:;
+- (void)_warmupImageForKey:;
+- (void)setImage:forKey:;
+- (id)initWithUniqueIdentifier:options:;
+- (id)imageForKey:generatingIfNecessaryWithBlock:;
+- (id)imageForKey:generatingIfNecessaryWithBlock:completion:;
+- (void)setImage:forKey:withCompletion:;
+- (void)setImage:forKey:withPersistenceOptions:;
+- (void)setImage:forKey:withPersistenceOptions:completion:;
+- (void)removeImageForKey:;
+- (void)removeImageForKey:withCompletion:;
+- (void)removeAllImagesWithCompletion:;
+- (void)_setImage:forKey:completion:;
+- (void)_setImage:forKey:withPersistenceOptions:andCPBitmapReadFlags:;
+- (void)_noteExternalChangeForKey:;
+@end

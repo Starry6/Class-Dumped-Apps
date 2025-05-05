@@ -1,0 +1,38 @@
+@interface UISSceneRequestOptions : FBSWorkspaceSceneRequestOptions
+@property (nonatomic) NSString sourceIdentifier;
+@property (nonatomic) NSString interactionIdentifier;
+@property (nonatomic) NSSet actions;
+@property (nonatomic) BOOL requestFullscreen;
+@property (nonatomic) BOOL requestBackground;
+@property (nonatomic) BOOL requestCenterSlot;
+@property (nonatomic) BOOL preserveLayout;
+@property (nonatomic) q sceneRequestIntent;
+@property (nonatomic) BOOL requestQuickLookScene;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setActions:;
+- (BOOL)requestQuickLookScene;
+- (id)sourceIdentifier;
+- (id)initWithBSXPCCoder:;
+- (void)setSceneRequestIntent:;
+- (BOOL)preserveLayout;
+- (void)setRequestBackground:;
+- (BOOL)requestFullscreen;
+- (id)actions;
+- (id)interactionIdentifier;
+- (void)setInteractionIdentifier:;
+- (void).cxx_destruct;
+- (BOOL)isKindOfClass:;
+- (void)encodeWithBSXPCCoder:;
+- (void)setRequestQuickLookScene:;
+- (long long)sceneRequestIntent;
+- (void)setRequestCenterSlot:;
+- (void)setPreserveLayout:;
+- (BOOL)requestBackground;
+- (void)setRequestFullscreen:;
+- (BOOL)requestCenterSlot;
+- (void)setSourceIdentifier:;
++ (BOOL)supportsBSXPCSecureCoding;
+@end

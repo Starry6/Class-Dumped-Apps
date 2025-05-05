@@ -1,0 +1,2 @@
+@interface AVAssetImageGeneratorInternal : NSObject
+@end

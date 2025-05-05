@@ -1,0 +1,32 @@
+@interface UIStatusBarStyleAttributes : NSObject
+@property (nonatomic) double foregroundAlpha;
+@property (nonatomic) BOOL pulsingAnimationEnabled;
+- (BOOL)isTransparent;
+- (double)heightForMetrics:;
+- (id)initWithRequest:;
+- (BOOL)isDoubleHeight;
+- (id)init;
+- (long long)legibilityStyle;
+- (BOOL)shouldProduceReturnEvent;
+- (BOOL)shouldShowInternalItemType:withScreenCapabilities:;
+- (double)heightForOrientation:;
+- (id)backgroundImageName;
+- (id)backgroundColorWithTintColor:;
+- (long long)idiom;
+- (BOOL)shouldUseVisualAltitude;
+- (void).cxx_destruct;
+- (long long)tapButtonType;
+- (BOOL)isLockScreen;
+- (double)foregroundAlpha;
+- (BOOL)isTranslucent;
+- (long long)style;
+- (id)newForegroundStyleWithHeight:;
+- (void)setForegroundAlpha:;
+- (id)copyWithZone:;
+- (BOOL)usesVerticalLayout;
+- (id)foregroundStyle;
+- (BOOL)supportsRasterization;
+- (double)glowAnimationDuration;
+- (BOOL)isPulsingAnimationEnabled;
+- (void)setPulsingAnimationEnabled:;
+@end

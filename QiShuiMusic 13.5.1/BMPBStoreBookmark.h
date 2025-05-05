@@ -1,0 +1,34 @@
+@interface BMPBStoreBookmark : PBCodable
+@property (nonatomic) BOOL hasStreamId;
+@property (nonatomic) NSString streamId;
+@property (nonatomic) BOOL hasSegmentName;
+@property (nonatomic) NSString segmentName;
+@property (nonatomic) BOOL hasIterationStartTime;
+@property (nonatomic) double iterationStartTime;
+@property (nonatomic) BOOL hasOffset;
+@property (nonatomic) I offset;
+- (id)streamId;
+- (id)segmentName;
+- (BOOL)hasOffset;
+- (void)setOffset:;
+- (BOOL)hasSegmentName;
+- (void)setStreamId:;
+- (double)iterationStartTime;
+- (BOOL)hasStreamId;
+- (void)setHasIterationStartTime:;
+- (void)writeTo:;
+- (void)setSegmentName:;
+- (void)setIterationStartTime:;
+- (BOOL)hasIterationStartTime;
+- (unsigned long long)hash;
+- (unsigned int)offset;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (void)setHasOffset:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+@end

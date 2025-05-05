@@ -1,0 +1,37 @@
+@interface BKMatchOperation : BKOperation
+@property (nonatomic) <BKMatchOperationDelegate> delegate;
+@property (nonatomic) q purpose;
+@property (nonatomic) NSNumber userID;
+@property (nonatomic) NSArray selectedIdentities;
+@property (nonatomic) q priority;
+@property (nonatomic) NSData credentialSet;
+@property (nonatomic) q useCase;
+@property (nonatomic) BOOL stopOnSuccess;
+@property (nonatomic) BOOL captureOnly;
+- (void)setPurpose:;
+- (long long)useCase;
+- (id)userID;
+- (void)setPriority:;
+- (void)dealloc;
+- (void)startBioOperation:reply:;
+- (void)setUseCase:;
+- (long long)purpose;
+- (void)setCaptureOnly:;
+- (id)optionsDictionaryWithError:;
+- (void).cxx_destruct;
+- (void)statusMessage:client:;
+- (id)initWithDevice:;
+- (void)setUserID:;
+- (void)matchResult:details:client:;
+- (long long)priority;
+- (BOOL)captureOnly;
+- (void)setStopOnSuccess:;
+- (void)setCredentialSet:;
+- (void)operationInterrupted;
+- (id)credentialSet;
+- (id)matchResultInfoWithServerIdentity:details:;
+- (void)processMatchFailReason:;
+- (id)selectedIdentities;
+- (void)setSelectedIdentities:;
+- (BOOL)stopOnSuccess;
+@end

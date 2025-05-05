@@ -1,0 +1,31 @@
+@interface IESLiveMultiLinkerRelinkAnchorViewController : IESLiveRevenueInteractPopupViewController
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) IESLiveInteractAnchorLinkersView linkersView;
+@property (nonatomic) IESLiveCustomButton relinkStartButton;
+@property (nonatomic) <IESLiveMultiLinkerProvider> mLinkerProvider;
+@property (nonatomic) <IESLiveCompoundSubscription> disposable;
+@property (nonatomic) IESLiveMultilLinkerRelinkAnchorViewModel viewModel;
+@property (nonatomic) BOOL isNetworkProcessing;
+- (id)mLinkerProvider;
+- (void)setLinkersView:;
+- (id)disposable;
+- (id)initWithDIContext:;
+- (BOOL)isNetworkProcessing;
+- (id)linkersView;
+- (void)onReLinkAnchorStartButtonClicked;
+- (void)onSetupNavBar:;
+- (id)relinkStartButton;
+- (void)setDisposable:;
+- (void)setIsNetworkProcessing:;
+- (void)setMLinkerProvider:;
+- (void)setRelinkStartButton:;
+- (void)dealloc;
+- (id)viewModel;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (void)setViewModel:;
+- (id)titleLabel;
+- (void)viewDidLoad;
+- (void)setupSubviews;
+- (void)setupData;
+@end

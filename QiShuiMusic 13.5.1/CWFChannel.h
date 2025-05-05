@@ -1,0 +1,37 @@
+@interface CWFChannel : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) Q channel;
+@property (nonatomic) I flags;
+@property (nonatomic) NSInteger width;
+@property (nonatomic) NSInteger band;
+@property (nonatomic) BOOL is2GHz;
+@property (nonatomic) BOOL is5GHz;
+@property (nonatomic) BOOL is6GHz;
+@property (nonatomic) BOOL is6GHzPSC;
+@property (nonatomic) BOOL isDFS;
+- (int)band;
+- (void)setChannel:;
+- (BOOL)is2GHz;
+- (unsigned long long)channel;
+- (BOOL)isDFS;
+- (BOOL)isEqualToChannel:;
+- (BOOL)is6GHz;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (BOOL)is6GHzPSC;
+- (void)encodeWithCoder:;
+- (int)width;
+- (BOOL)is5GHz;
+- (id)description;
+- (void)setFlags:;
+- (unsigned int)flags;
+- (id)JSONCompatibleKeyValueMap;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)extAbove;
++ (BOOL)supportsSecureCoding;
++ (id)channelWithNumber:band:width:;
+@end

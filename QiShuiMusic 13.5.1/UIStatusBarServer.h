@@ -1,0 +1,32 @@
+@interface UIStatusBarServer : NSObject
+@property (nonatomic) <UIStatusBarServerClient> statusBar;
+- (void)setStatusBar:;
+- (void)dealloc;
+- (id)statusBar;
+- (id)initWithStatusBar:;
+- (void)_receivedStatusBarData:actions:animated:;
+- (void).cxx_destruct;
+- (void)_receivedStyleOverrides:;
++ (BOOL)getGlowAnimationStateForStyle:;
++ (void)_updateStatusBarDataAnimated:;
++ (unsigned long long)getStyleOverrides;
++ (void)postDoubleHeightStatusString:forStyle:;
++ (void)runServer;
++ (id)serviceName;
++ (id)getDoubleHeightStatusStringForStyle:;
++ (void)removeStatusBarItem:;
++ (id)_statusBarData;
++ (void)addStatusBarItem:;
++ (id)getStatusBarOverrideData;
++ (void)postGlowAnimationState:forStyle:;
++ (unsigned int)_publisherPort;
++ (double)getGlowAnimationEndTimeForStyle:;
++ (void)postStatusBarOverrideData:;
++ (id)_cachedTimeStringFromData:;
++ (void)removeStyleOverrides:;
++ (id)getStatusBarData;
++ (unsigned int)_serverPort;
++ (void)permanentizeStatusBarOverrideData;
++ (void)addStyleOverrides:;
++ (void)postStatusBarData:withActions:;
+@end

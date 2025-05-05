@@ -1,0 +1,2 @@
+@interface HTSLiveResponseRoot : GPBRootObject
+@end

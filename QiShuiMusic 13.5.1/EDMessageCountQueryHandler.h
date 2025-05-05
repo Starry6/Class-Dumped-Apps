@@ -1,0 +1,34 @@
+@interface EDMessageCountQueryHandler : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)persistenceIsAddingMailboxWithDatabaseID:objectID:generationWindow:;
+- (void)persistenceDidUpdateServerCount:forMailboxWithObjectID:generationWindow:;
+- (void)cancel;
+- (id)labelForStateCapture;
+- (void)dealloc;
+- (void)persistenceDidUpdateSendLaterDate:messages:generationWindow:;
+- (void)persistenceDidUpdateMostRecentStatusCount:forMailboxWithObjectID:generationWindow:;
+- (void)persistenceWillChangeFlags:messages:;
+- (void)persistenceDidChangeVIPStatus:messages:;
+- (void)persistenceDidAddMessages:generationWindow:;
+- (void)persistenceDidChangeGlobalMessageID:orConversationID:message:generationWindow:;
+- (void)persistenceDidUpdateFollowUpForMessages:generationWindow:;
+- (void)persistenceDidChangeReadLaterDate:messages:changeIsRemote:generationWindow:;
+- (void)persistenceDidChangeFlags:messages:generationWindow:;
+- (void)didSyncMailbox:;
+- (void)persistenceDidDeleteMessages:generationWindow:;
+- (void)persistenceDidUpdateDisplayDateForMessages:changeIsRemote:generation:;
+- (void).cxx_destruct;
+- (id)initWithQuery:serverCountMailboxScope:messagePersistence:hookRegistry:observer:refireDebounceInterval:;
+- (id)descriptionForItem:;
+- (void)mailboxListChanged:;
+- (id)initWithQuery:serverCountMailboxScope:messagePersistence:hookRegistry:observer:;
+- (void)persistenceDidUpdateLastSyncAndMostRecentStatusCount:forMailboxWithObjectID:generationWindow:;
+- (void)persistenceDidUpdateProperties:message:generationWindow:;
+- (id)itemsForStateCaptureWithErrorString:;
+- (void)test_tearDown;
+- (void)willSyncMailbox:;
++ (id)log;
+@end

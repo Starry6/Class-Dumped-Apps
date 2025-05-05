@@ -1,0 +1,34 @@
+@interface FLEXKeychainQuery : NSObject
+@property (nonatomic) NSString account;
+@property (nonatomic) NSString service;
+@property (nonatomic) NSString label;
+@property (nonatomic) NSString accessGroup;
+@property (nonatomic) Q synchronizationMode;
+@property (nonatomic) NSData passwordData;
+@property (nonatomic) <NSCoding> passwordObject;
+@property (nonatomic) NSString password;
+- (BOOL)save:;
+- (BOOL)deleteItem:;
+- (id)fetchAll:;
+- (BOOL)fetch:;
+- (void)setPasswordObject:;
+- (id)passwordObject;
+- (void)setPassword:;
+- (id)password;
+- (id)query;
+- (id)errorWithCode:;
+- (id)account;
+- (void)setAccount:;
+- (id)service;
+- (void)setService:;
+- (id)label;
+- (void)setLabel:;
+- (id)accessGroup;
+- (void)setAccessGroup:;
+- (unsigned long long)synchronizationMode;
+- (void)setSynchronizationMode:;
+- (id)passwordData;
+- (void)setPasswordData:;
+- (void).cxx_destruct;
++ (BOOL)isSynchronizationAvailable;
+@end

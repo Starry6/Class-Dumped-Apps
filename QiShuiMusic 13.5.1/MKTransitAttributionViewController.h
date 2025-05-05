@@ -1,0 +1,38 @@
+@interface MKTransitAttributionViewController : _MKTableViewController
+@property (nonatomic) MKMapItem mapItem;
+@property (nonatomic) <GEOTransitLineItem> lineItem;
+@property (nonatomic) <MKTransitAttributionViewControllerDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) BOOL requiresPreferredContentSizeInStackingView;
+- (id)mapItem;
+- (void)_commonInit;
+- (id)_attribution;
+- (void)dealloc;
+- (id)lineItem;
+- (id)tableView:cellForRowAtIndexPath:;
+- (void)setDelegate:;
+- (void)setMapItem:;
+- (BOOL)_canShowWhileLocked;
+- (double)tableView:heightForRowAtIndexPath:;
+- (double)tableView:estimatedHeightForRowAtIndexPath:;
+- (id)delegate;
+- (id)initWithMapItem:;
+- (void)tableView:didSelectRowAtIndexPath:;
+- (void).cxx_destruct;
+- (void)resourceManifestManagerDidChangeActiveTileGroup:;
+- (void)viewDidLayoutSubviews;
+- (void)tableView:willDisplayCell:forRowAtIndexPath:;
+- (long long)tableView:numberOfRowsInSection:;
+- (void)viewDidLoad;
+- (long long)numberOfSectionsInTableView:;
+- (void)_transitInfoUpdated;
+- (BOOL)requiresPreferredContentSizeInStackingView;
+- (id)initWithTransitLineItem:;
+- (BOOL)_hasAttribution;
+- (id)_attributionCell;
+- (void)_presentTransitAttributionDetails;
+- (void)setLineItem:;
+@end

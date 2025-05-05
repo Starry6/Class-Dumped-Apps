@@ -1,0 +1,38 @@
+@interface PHUserFeedbackDataCache : NSObject
+@property (nonatomic) NSArray importantPersons;
+@property (nonatomic) NSDictionary userFeedbackTypeByPersonUUID;
+@property (nonatomic) NSSet holidayNamesWithNegativeFeedback;
+@property (nonatomic) NSSet areaNamesWithNegativeFeedback;
+@property (nonatomic) NSSet datesWithNegativeFeedback;
+@property (nonatomic) NSSet dateIntervalsWithNegativeFeedback;
+@property (nonatomic) NSSet locationsWithNegativeFeedback;
+@property (nonatomic) NSSet deniedFeaturedPhotoUUIDs;
+@property (nonatomic) PHPhotoLibrary photoLibrary;
+- (id)photoLibrary;
+- (id)initWithPhotoLibrary:;
+- (void)_loadDeniedFeaturedPhotoUUIDsWithPhotoLibrary:;
+- (void)setAreaNamesWithNegativeFeedback:;
+- (id)userFeedbackTypeByPersonUUID;
+- (id)locationsWithNegativeFeedback;
+- (id)deniedFeaturedPhotoUUIDs;
+- (id)importantPersons;
+- (void)setDeniedFeaturedPhotoUUIDs:;
+- (void)setUserFeedbackTypeByPersonUUID:;
+- (id)areaNamesWithNegativeFeedback;
+- (void)setImportantPersons:;
+- (id)dateIntervalsWithNegativeFeedback;
+- (void)loadDataWithPhotoLibrary:;
+- (void)setLocationsWithNegativeFeedback:;
+- (void).cxx_destruct;
+- (void)_loadPersonFeedbackDataWithPhotoLibrary:;
+- (id)datesWithNegativeFeedback;
+- (id)holidayNamesWithNegativeFeedback;
+- (void)setDatesWithNegativeFeedback:;
+- (id)initWithPhotoLibrary:importantPersons:;
+- (void)setDateIntervalsWithNegativeFeedback:;
+- (void)_loadMemoryFeedbackDataWithPhotoLibrary:;
+- (id)_confidentMergeCandidateUUIDsForPerson:;
+- (void)setHolidayNamesWithNegativeFeedback:;
++ (id)_emptyUserFeedbackDataCache;
++ (BOOL)_isUserFeedbackFeatureFlagEnabled;
+@end

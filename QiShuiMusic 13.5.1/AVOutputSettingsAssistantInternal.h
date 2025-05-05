@@ -1,0 +1,2 @@
+@interface AVOutputSettingsAssistantInternal : NSObject
+@end

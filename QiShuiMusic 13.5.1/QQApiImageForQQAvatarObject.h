@@ -1,0 +1,2 @@
+@interface QQApiImageForQQAvatarObject : QQApiExtendObject
+@end

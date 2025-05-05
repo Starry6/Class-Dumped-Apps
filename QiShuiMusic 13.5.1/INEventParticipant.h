@@ -1,0 +1,33 @@
+@interface INEventParticipant : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) INPerson person;
+@property (nonatomic) q status;
+@property (nonatomic) NSNumber isUser;
+@property (nonatomic) NSNumber isEventOrganizer;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)_dictionaryRepresentation;
+- (void)_intents_updateContainerWithCache:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (id)descriptionAtIndent:;
+- (void).cxx_destruct;
+- (id)person;
+- (id)description;
+- (id)_intents_cacheableObjects;
+- (long long)status;
+- (id)_intents_encodeWithJSONEncoder:codableDescription:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)initWithPerson:status:isUser:isEventOrganizer:;
+- (id)isUser;
+- (id)isEventOrganizer;
++ (id)_intents_decodeWithJSONDecoder:codableDescription:from:;
++ (BOOL)supportsSecureCoding;
+@end

@@ -1,0 +1,34 @@
+@interface INTransferMoneyIntent : INIntent
+@property (nonatomic) INPaymentAccount fromAccount;
+@property (nonatomic) INPaymentAccount toAccount;
+@property (nonatomic) INPaymentAmount transactionAmount;
+@property (nonatomic) INDateComponentsRange transactionScheduledDate;
+@property (nonatomic) NSString transactionNote;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)_dictionaryRepresentation;
+- (void)_setMetadata:;
+- (id)domain;
+- (void)setDomain:;
+- (id)_metadata;
+- (id)_typedBackingStore;
+- (void)_redactForMissingPrivacyEntitlementOptions:containingAppBundleId:;
+- (id)verb;
+- (void)setVerb:;
+- (id)parametersByName;
+- (void)setParametersByName:;
+- (id)fromAccount;
+- (void)setFromAccount:;
+- (id)toAccount;
+- (void)setToAccount:;
+- (id)transactionAmount;
+- (void)setTransactionAmount:;
+- (id)transactionScheduledDate;
+- (void)setTransactionScheduledDate:;
+- (id)transactionNote;
+- (void)setTransactionNote:;
+- (id)initWithFromAccount:toAccount:transactionAmount:transactionScheduledDate:transactionNote:;
+- (BOOL)_isUserConfirmationRequired;
+@end

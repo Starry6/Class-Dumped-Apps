@@ -1,0 +1,38 @@
+@interface ASDProgress : NSObject
+@property (nonatomic) NSString bundleID;
+@property (nonatomic) q completedUnitCount;
+@property (nonatomic) q downloadCompletedUnitCount;
+@property (nonatomic) q downloadTotalUnitCount;
+@property (nonatomic) q installCompletedUnitCount;
+@property (nonatomic) q installTotalUnitCount;
+@property (nonatomic) q phase;
+@property (nonatomic) BOOL reportRemotely;
+@property (nonatomic) double throughput;
+@property (nonatomic) q totalUnitCount;
+- (long long)phase;
+- (void)setPhase:;
+- (void)setCompletedUnitCount:;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (void)setTotalUnitCount:;
+- (id)description;
+- (long long)totalUnitCount;
+- (id)bundleID;
+- (long long)completedUnitCount;
+- (id)copyWithZone:;
+- (void)setBundleID:;
+- (double)throughput;
+- (void)setThroughput:;
+- (BOOL)reportRemotely;
+- (void)setReportRemotely:;
+- (long long)downloadCompletedUnitCount;
+- (void)setDownloadCompletedUnitCount:;
+- (long long)downloadTotalUnitCount;
+- (void)setDownloadTotalUnitCount:;
+- (long long)installCompletedUnitCount;
+- (void)setInstallCompletedUnitCount:;
+- (long long)installTotalUnitCount;
+- (void)setInstallTotalUnitCount:;
++ (BOOL)supportsSecureCoding;
+@end

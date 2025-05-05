@@ -1,0 +1,37 @@
+@interface VNEntityIdentificationModelTrainingData : NSObject
+@property (nonatomic) VNRequestSpecifier entityPrintOriginatingRequestSpecifier;
+@property (nonatomic) <VNEntityIdentificationModelTrainingDataDelegate> delegate;
+@property (nonatomic) NSDate lastModificationDate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setDelegate:;
+- (unsigned long long)entityCount;
+- (id)lastModificationDate;
+- (id)delegate;
+- (void).cxx_destruct;
+- (unsigned long long)numberOfEntitiesInEntityIdentificationModel:;
+- (id)entityIdentificationModel:uniqueIdentifierOfEntityAtIndex:;
+- (unsigned long long)entityIdentificationModel:indexOfEntityWithUniqueIdentifier:;
+- (unsigned long long)entityIdentificationModel:numberOfObservationsForEntityAtIndex:;
+- (id)entityIdentificationModel:observationAtIndex:forEntityAtIndex:;
+- (unsigned long long)lastDataChangeSequenceNumberForEntityIdentificationModel:;
+- (id)lastModificationDateForEntityIdentificationModel:;
+- (unsigned long long)trainedModelEntityCount;
+- (id)trainedModelUniqueIdentifierOfEntityAtIndex:;
+- (unsigned long long)trainedModelIndexOfEntityWithUniqueIdentifier:;
+- (unsigned long long)trainedModelNumberOfObservationsForEntityAtIndex:;
+- (id)trainedModelObservationAtIndex:forEntityAtIndex:;
+- (id)initWithModelConfiguration:;
+- (id)uniqueIdentifierOfEntityAtIndex:;
+- (unsigned long long)indexOfEntityWithUniqueIdentifier:;
+- (unsigned long long)observationCountForEntityAtIndex:;
+- (id)observationAtIndex:forEntityAtIndex:;
+- (BOOL)addObservations:toEntityWithUniqueIdentifier:error:;
+- (BOOL)removeObservations:fromEntityWithUniqueIdentifier:error:;
+- (BOOL)removeAllObservationsFromEntityWithUniqueIdentifier:error:;
+- (BOOL)removeEntityWithUniqueIdentifier:error:;
+- (BOOL)validateWithCanceller:error:;
+- (id)entityPrintOriginatingRequestSpecifier;
+@end

@@ -1,0 +1,36 @@
+@interface IESLiveSaaSFeedSkyLightCell : UICollectionViewCell
+@property (nonatomic) UIImageView avatarView;
+@property (nonatomic) UILabel nickNameLabel;
+@property (nonatomic) UIView liveLabelContainer;
+@property (nonatomic) UILabel liveLabel;
+@property (nonatomic) UIView circleView;
+@property (nonatomic) UIImageView douyinIcon;
+@property (nonatomic) NSDictionary trackParams;
+@property (nonatomic) IESLiveSaaSFeedLiveMarkView liveMarkView;
+@property (nonatomic) IESLiveSaaSFeedCustomizedElementsModel model;
+- (void)setTrackParams:;
+- (id)douyinIcon;
+- (id)getEnterRoomParams;
+- (BOOL)isDarkTheme:;
+- (id)liveLabelContainer;
+- (id)liveMarkView;
+- (id)nickNameLabel;
+- (void)setDIYUI;
+- (void)setDouyinIcon:;
+- (void)setLiveLabelContainer:;
+- (void)setLiveMarkView:;
+- (void)setNickNameLabel:;
+- (id)trackParams;
+- (id)model;
+- (void)setModel:;
+- (id)avatarView;
+- (void)setLiveLabel:;
+- (void)setAvatarView:;
+- (id)liveLabel;
+- (id)initWithFrame:;
+- (void)updateData:;
+- (void).cxx_destruct;
+- (id)circleView;
+- (void)setCircleView:;
+- (void)buildView;
+@end

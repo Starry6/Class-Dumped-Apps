@@ -1,0 +1,30 @@
+@interface RBSProcessExitStatus : NSObject
+@property (nonatomic) I domain;
+@property (nonatomic) Q code;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithRBSXPCCoder:;
+- (BOOL)isSignal;
+- (id)_dictionaryRepresentation;
+- (void)encodeWithRBSXPCCoder:;
+- (BOOL)isJetsam;
+- (unsigned long long)code;
+- (id)error;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (BOOL)isCrash;
+- (BOOL)isValid;
+- (id)_initWithDictionaryRepresentation:;
+- (id)description;
+- (BOOL)_isVoluntary;
+- (unsigned int)domain;
+- (BOOL)isFairPlayFailure;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
++ (BOOL)supportsRBSXPCSecureCoding;
++ (BOOL)supportsSecureCoding;
++ (id)statusWithDomain:code:;
+@end

@@ -1,0 +1,31 @@
+@interface AMapNetFlowManager : NSObject
+@property (nonatomic) NSMutableDictionary blockConfig;
+@property (nonatomic) NSMutableDictionary domainMaps;
+@property (nonatomic) NSMutableDictionary domainStatistic;
+@property (nonatomic) AMapErrorCodeStrategy appBlock;
+@property (nonatomic) NSMutableDictionary errorCodeBlock;
+- (id)domainStatistic;
+- (id)exchangeDomain:;
+- (void)loadCloudConfig;
+- (void)setBlockConfig:;
+- (id)appBlock;
+- (id)blockConfig;
+- (void)checkResponse:withRequest:responseData:;
+- (id)domainMaps;
+- (id)errorCodeBlock;
+- (id)isBlock:;
+- (void)setAppBlock:;
+- (void)setDomainMaps:;
+- (void)setDomainStatistic:;
+- (void)setErrorCodeBlock:;
+- (void)updateNetFlowBlockConfig:;
+- (void)updateNetFlowConfig:;
+- (void)updateNetFlowDomainMapsConfig:;
+- (id)init;
+- (void).cxx_destruct;
++ (id)exchangeDomain:;
++ (void)checkResponse:withRequest:responseData:;
++ (id)isBlock:;
++ (void)updateNetFlowConfig:;
++ (id)sharedManager;
+@end

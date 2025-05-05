@@ -1,0 +1,30 @@
+@interface MSServerSideConfigManager : NSObject
+@property (nonatomic) NSString personID;
+@property (nonatomic) NSDictionary config;
+@property (nonatomic) MSMediaStreamDaemon daemon;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setDaemon:;
+- (void)abort;
+- (id)daemon;
+- (void)dealloc;
+- (void)setConfig:;
+- (id)personID;
+- (void)serverSideConfigProtocol:didFinishWithConfiguration:error:;
+- (void).cxx_destruct;
+- (id)initWithPersonID:baseURL:;
+- (void)serverSideConfigProtocol:didReceiveAuthenticationError:;
+- (void)refreshConfiguration;
+- (id)config;
++ (long long)longLongValueForParameter:forPersonID:defaultValue:;
++ (void)forgetPersonID:;
++ (void)abortAllActivities;
++ (double)doubleValueForParameter:forPersonID:defaultValue:;
++ (id)objectForKey:forPersonID:defaultValue:;
++ (int)intValueForParameter:forPersonID:defaultValue:;
++ (id)existingConfigManagerForPersonID:;
++ (long long)longValueForParameter:forPersonID:defaultValue:;
++ (id)configManagerForPersonID:;
+@end

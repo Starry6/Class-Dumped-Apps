@@ -1,0 +1,38 @@
+@interface CPLMomentShareParticipant : NSObject
+@property (nonatomic) NSString email;
+@property (nonatomic) NSString phoneNumber;
+@property (nonatomic) NSString userIdentifier;
+@property (nonatomic) NSPersonNameComponents nameComponents;
+@property (nonatomic) BOOL hasiCloudAccount;
+@property (nonatomic) BOOL isCurrentUser;
+@property (nonatomic) s type;
+@property (nonatomic) s status;
+- (void)setStatus:;
+- (id)nameComponents;
+- (id)phoneNumber;
+- (void)setPhoneNumber:;
+- (id)userIdentifier;
+- (void)setType:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)setEmail:;
+- (void)encodeWithCoder:;
+- (void)setUserIdentifier:;
+- (void)setNameComponents:;
+- (short)type;
+- (void).cxx_destruct;
+- (id)description;
+- (id)email;
+- (short)status;
+- (void)setHasiCloudAccount:;
+- (BOOL)hasiCloudAccount;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)isCurrentUser;
+- (void)setIsCurrentUser:;
+- (id)initWithShareParticipant:;
+- (id)asShareParticipant;
++ (BOOL)supportsSecureCoding;
++ (id)momentShareParticipantsFromParticipants:;
++ (id)shareParticipantsFromMomentShareParticipants:;
+@end

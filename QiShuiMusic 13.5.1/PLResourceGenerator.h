@@ -1,0 +1,8 @@
+@interface PLResourceGenerator : NSObject
++ (id)expectedLocalResourceRecipesForAssetWithLibraryID:versions:assetHasAdjustments:isDefaultAdjustedSlomo:assetIsRAWOrRawPlugJPEGWithRawOnTop:assetWidth:assetHeight:assetKind:assetkindSubtype:deferredProcessingNeeded:videoDeferredProcessingNeeded:;
++ (id)fileAndTableBackedThumbnailManagerRecipesForLibraryID:;
++ (id)expectedLocalResourceRecipesForAsset:versions:;
++ (id)locallyUnavailableRecipesFromRecipes:versions:asset:;
++ (id)generateAndStoreMissingExpectedLocalResourcesForAsset:versions:imageConversionClient:videoConversionClient:reason:completion:;
++ (void)_continueGeneratingResourcesForAsset:versions:imageConversionClient:videoConversionClient:remainingRecipes:storedRecipes:attemptedRecipes:errorsEncountered:progress:reason:completion:;
+@end

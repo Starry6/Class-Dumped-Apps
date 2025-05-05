@@ -1,0 +1,31 @@
+@interface CLHeading : NSObject
+@property (nonatomic) double heading;
+@property (nonatomic) BOOL hasGeomagneticVector;
+@property (nonatomic) NSString compactDescription;
+@property (nonatomic) double magneticHeading;
+@property (nonatomic) double trueHeading;
+@property (nonatomic) double headingAccuracy;
+@property (nonatomic) double x;
+@property (nonatomic) double y;
+@property (nonatomic) double z;
+@property (nonatomic) NSDate timestamp;
+- (double)heading;
+- (id)compactDescription;
+- (id)initWithHeading:accuracy:;
+- (BOOL)hasGeomagneticVector;
+- (void)dealloc;
+- (id)shortDescription;
+- (double)y;
+- (double)headingAccuracy;
+- (id)initWithCoder:;
+- (double)x;
+- (void)encodeWithCoder:;
+- (id)initWithClientHeading:;
+- (double)z;
+- (id)timestamp;
+- (id)description;
+- (id)copyWithZone:;
+- (double)trueHeading;
+- (double)magneticHeading;
++ (BOOL)supportsSecureCoding;
+@end

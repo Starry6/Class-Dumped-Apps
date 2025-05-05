@@ -1,0 +1,30 @@
+@interface GEOPlatform : NSObject
+- (id)hardwareModel;
+- (id)productName;
+- (id)buildVersion;
+- (BOOL)isInternalInstall;
+- (id)init;
+- (id)osVersion;
+- (id)hardwareIdentifier;
+- (BOOL)supportsAdvancedMap;
+- (id)deviceCountrySKU;
+- (id)deviceCountrySKUForServiceRequests;
+- (BOOL)mapsFeatureFreedomEnabled;
+- (id)clientCapabilities;
+- (BOOL)supportsASTC;
+- (BOOL)supportsForceTouch;
+- (id)osAndBuildVersion;
+- (long long)deviceScreenWidthInPixels;
+- (void).cxx_destruct;
+- (double)deviceScreenScale;
+- (id)hardwareClass;
+- (BOOL)isCellDataPossible;
+- (BOOL)supportsRealisticTiles;
+- (BOOL)isMacSetupUser;
+- (long long)deviceScreenHeightInPixels;
+- (BOOL)supportsMultiUser;
+- (BOOL)supportsNavigation;
++ (id)sharedPlatform;
++ (void)setIsRunningInGeod:;
++ (BOOL)isRunningInGeod;
+@end

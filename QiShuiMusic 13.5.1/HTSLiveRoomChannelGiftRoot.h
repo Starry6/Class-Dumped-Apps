@@ -1,0 +1,2 @@
+@interface HTSLiveRoomChannelGiftRoot : GPBRootObject
+@end

@@ -1,0 +1,35 @@
+@interface IESECSliceXInstanceConfig : NSObject
+@property (nonatomic) NSDictionary globalProps;
+@property (nonatomic) q deltaTime;
+@property (nonatomic) NSString bizIdentify;
+@property (nonatomic) BOOL fitPhoneWidth;
+@property (nonatomic) BOOL enableClickDebounce;
+@property (nonatomic) Q clickIntervalTime;
+@property (nonatomic) double viewScaleRatio;
+@property (nonatomic) double fontScaleRatio;
+@property (nonatomic) NSDictionary customGlobalProps;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setGlobalProps:;
+- (id)bizIdentify;
+- (unsigned long long)clickIntervalTime;
+- (id)customGlobalProps;
+- (BOOL)enableClickDebounce;
+- (BOOL)fitPhoneWidth;
+- (double)fontScaleRatio;
+- (id)globalProps;
+- (id)initWithBizIdentify:;
+- (void)setClickIntervalTime:;
+- (void)setCustomGlobalProps:;
+- (void)setEnableClickDebounce:;
+- (void)setFitPhoneWidth:;
+- (void)setFontScaleRatio:;
+- (void)setServerTime:;
+- (void)setViewScaleRatio:;
+- (double)viewScaleRatio;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (long long)deltaTime;
+@end

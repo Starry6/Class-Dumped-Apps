@@ -1,0 +1,31 @@
+@interface IDSURI : NSObject
+@property (nonatomic) NSString prefixedURI;
+@property (nonatomic) NSString unprefixedURI;
+@property (nonatomic) q IDSIDType;
+@property (nonatomic) q FZIDType;
+@property (nonatomic) BOOL isTokenURI;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)FZIDType;
+- (void)setPrefixedURI:;
+- (long long)IDSIDType;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)unprefixedURI;
+- (id)destinationURIs;
+- (BOOL)isTokenURI;
+- (id)initWithUnprefixedURI:;
+- (BOOL)isEqualToURI:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)prefixedURI;
+- (id)copyWithZone:;
+- (id)initWithPrefixedURI:;
++ (BOOL)supportsSecureCoding;
++ (id)URIWithUnprefixedURI:;
++ (id)URIWithPrefixedURI:;
+@end

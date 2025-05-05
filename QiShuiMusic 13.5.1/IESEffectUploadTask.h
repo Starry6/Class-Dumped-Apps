@@ -1,0 +1,31 @@
+@interface IESEffectUploadTask : NSObject
+@property (nonatomic) BDObjectUploaderClient uploadClient;
+@property (nonatomic) IESEffectUploadConfiguration uploadConfig;
+@property (nonatomic) NSArray filePaths;
+@property (nonatomic) @? resultBlock;
+@property (nonatomic) @? releaseBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithFilePaths:uploadConfig:;
+- (void)objectUpload:fileIndex:progressDidUpdate:;
+- (void)objectUpload:fileIndex:singleObject:error:;
+- (void)objectUpload:onLogInfo:;
+- (void)objectUploadDidFinish:;
+- (long long)objectUploadGetNetState:;
+- (id)p_uploadAuthParams;
+- (id)p_uploadConfigParams;
+- (id)releaseBlock;
+- (void)setReleaseBlock:;
+- (void)setUploadClient:;
+- (void)setUploadConfig:;
+- (void)startUpload;
+- (id)uploadClient;
+- (id)uploadConfig;
+- (id)filePaths;
+- (id)resultBlock;
+- (void)setResultBlock:;
+- (void).cxx_destruct;
+- (void)setFilePaths:;
+@end

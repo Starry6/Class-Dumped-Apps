@@ -1,0 +1,2 @@
+@interface MKSearchCompletion : MKLocalSearchCompletion
+@end

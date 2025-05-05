@@ -1,0 +1,30 @@
+@interface VKCTextHighlightDot : UIView
+@property (nonatomic) CALayer pulsingLayer;
+@property (nonatomic) CALayer circleLayer;
+@property (nonatomic) UIColor highlightColor;
+@property (nonatomic) BOOL pulsing;
+@property (nonatomic) {VKQuadSideLength=dddd} quadSideLength;
+@property (nonatomic) CALayer textHighlightLayer;
+- (id)initWithColor:;
+- (void)setHighlightColor:;
+- (void)layoutSubviews;
+- (void)setPulsing:;
+- (id)highlightColor;
+- (void)traitCollectionDidChange:;
+- (void).cxx_destruct;
+- (BOOL)pulsing;
+- (void)_updateLayout;
+- (id)circleLayer;
+- (void)setCircleLayer:;
+- (void)updateIndicatorDotForState;
+- (double)opacityForCurrentQuadSize;
+- (id)rectForIndicatorDot;
+- (id)_rectForViewSpace:;
+- (void)configureForPulsing:;
+- (id)quadSideLength;
+- (void)setQuadSideLength:;
+- (id)textHighlightLayer;
+- (void)setTextHighlightLayer:;
+- (id)pulsingLayer;
+- (void)setPulsingLayer:;
+@end

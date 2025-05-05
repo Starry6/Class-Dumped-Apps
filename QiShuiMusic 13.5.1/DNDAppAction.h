@@ -1,0 +1,36 @@
+@interface DNDAppAction : NSObject
+@property (nonatomic) LNAction rawAction;
+@property (nonatomic) NSString bundleIdentifier;
+@property (nonatomic) NSData encodedAction;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) LNAction action;
+@property (nonatomic) BOOL enabled;
+- (id)bundleIdentifier;
+- (id)identifier;
+- (id)action;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)setBundleIdentifier:;
+- (void)encodeWithCoder:;
+- (id)effectiveBundleIdentifier;
+- (void)setEnabled:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (id)mutableCopyWithZone:;
+- (void)setIdentifier:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)isEnabled;
+- (id)initWithAction:enabled:;
+- (id)initWithEncodedAction:actionIdentifier:bundleIdentifier:enabled:;
+- (id)_initWithAction:bundleIdentifier:actionIdentifier:encodedAction:enabled:;
+- (id)encodedAction;
+- (id)rawAction;
+- (void)setRawAction:;
+- (void)setEncodedAction:;
++ (BOOL)archivingIsSupported:;
++ (BOOL)supportsSecureCoding;
++ (BOOL)runtimeIsSupported:;
++ (id)appActionFromDictionaryRepresentation:;
+@end

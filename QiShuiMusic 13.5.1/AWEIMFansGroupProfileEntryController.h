@@ -1,0 +1,38 @@
+@interface AWEIMFansGroupProfileEntryController : NSObject
+@property (nonatomic) AWEIMFansGroupProfileEntryCard cardView;
+@property (nonatomic) IESIMUserModel userModel;
+@property (nonatomic) AWEProfileExtensionAreaCardModel cardModel;
+@property (nonatomic) Q cardIndex;
+@property (nonatomic) @? reloadCardListBlock;
+@property (nonatomic) BOOL isMyEntry;
+@property (nonatomic) BOOL isFirstShow;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setIsFirstShow:;
+- (void)AWEIMFansGroupExportUpdateNoti;
+- (void)__cardClick;
+- (BOOL)__isMyEntry;
+- (void)__trackEventName:;
+- (void)cardDidDisappear;
+- (unsigned long long)cardIndex;
+- (id)cardModel;
+- (void)cardWillAppear;
+- (BOOL)isFirstShow;
+- (BOOL)isMyEntry;
+- (id)reloadCardListBlock;
+- (void)setCardIndex:;
+- (void)setCardModel:;
+- (void)setIsMyEntry:;
+- (void)setReloadCardListBlock:;
+- (BOOL)shouldShowCard;
+- (double)widthOfCard;
+- (id)init;
+- (void)setUserModel:;
+- (id)userModel;
+- (void).cxx_destruct;
+- (id)cardView;
+- (void)setCardView:;
++ (id)cardControllerWithUserModel:cardModel:cardIndex:extraInfo:reloadCardListBlock:;
+@end

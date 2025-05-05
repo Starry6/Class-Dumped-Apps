@@ -1,0 +1,32 @@
+@interface IESLiveFeedAudioPartyKTVStageView : UIView
+@property (nonatomic) <IESLivePlayerProtocol> player;
+@property (nonatomic) HTSLiveUser roomOwner;
+@property (nonatomic) <IESLiveRoomServiceAdapter> roomModel;
+@property (nonatomic) IESLiveFeedAudioStageViewExtraModel extraModel;
+@property (nonatomic) BOOL smallMode;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)allSeatProviderViews;
+- (void)configWithListModel:;
+- (id)extraModel;
+- (id)guestListViewFrame;
+- (void)handleSEIParseResult:;
+- (id)initWithFrame:roomOwner:roomModel:extra:;
+- (void)loadStageView;
+- (id)roomModel;
+- (void)setExtraModel:;
+- (void)setRoomModel:;
+- (void)setSmallMode:;
+- (BOOL)smallMode;
+- (void)smoothEnterRoomFromPreview;
+- (void)smoothExitRoomToPreview;
+- (id)stageInsetsForAdapterSize:;
+- (void)updateAnchorUser:;
+- (id)player;
+- (void).cxx_destruct;
+- (void)setPlayer:;
+- (id)roomOwner;
+- (void)setRoomOwner:;
+@end

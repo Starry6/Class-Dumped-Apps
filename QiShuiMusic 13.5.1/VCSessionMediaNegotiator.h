@@ -1,0 +1,34 @@
+@interface VCSessionMediaNegotiator : NSObject
+@property (nonatomic) VCMediaNegotiatorLocalConfiguration localSettings;
+@property (nonatomic) VCMediaNegotiatorResults negotiatedSettings;
+@property (nonatomic) VCMediaNegotiatorResultsAudio negotiatedAudioSettings;
+@property (nonatomic) VCMediaNegotiatorResultsVideo negotiatedVideoSettings;
+@property (nonatomic) VCMediaNegotiatorResultsVideo negotiatedScreenSettings;
+@property (nonatomic) VCMediaNegotiatorResultsMoments negotiatedMomentsSettings;
+@property (nonatomic) VCMediaNegotiatorResultsFaceTimeSettings negotiatedFaceTimeSettings;
+@property (nonatomic) NSArray negotiatedStreamGroups;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)dealloc;
+- (id)localSettings;
+- (id)negotiationData;
+- (BOOL)processRemoteNegotiationData:;
+- (unsigned int)remoteMaxBandwidthForOperatingMode:connectionType:;
+- (id)negotiatedSettings;
+- (id)negotiatedAudioSettings;
+- (id)negotiatedVideoSettings;
+- (id)negotiatedScreenSettings;
+- (id)negotiatedMomentsSettings;
+- (id)negotiatedFaceTimeSettings;
+- (id)negotiatedStreamGroups;
+- (id)initWithLocalConfiguration:;
++ (BOOL)initializeLocalConfiguration:negotiationData:deviceRole:preferredAudioPayload:;
++ (id)streamGroupIDsWithMediaBlob:;
++ (id)mediaBlobForVersion:negotiationData:;
++ (id)negotiationDataWithVersion:mediaBlob:;
++ (id)negotiationDataWithVersion1:version2:;
++ (id)serializeNegotiationData:;
++ (id)unserializeNegotiationData:;
+@end

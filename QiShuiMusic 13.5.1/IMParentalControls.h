@@ -1,0 +1,34 @@
+@interface IMParentalControls : NSObject
+@property (nonatomic) NSMutableDictionary _parentalControls;
+@property (nonatomic) BOOL _disableAV;
+@property (nonatomic) BOOL _forceChatLogging;
+@property (nonatomic) BOOL active;
+@property (nonatomic) BOOL disableAV;
+@property (nonatomic) BOOL forceChatLogging;
+@property (nonatomic) BOOL shouldPostNotifications;
+- (BOOL)active;
+- (BOOL)disableAccount:;
+- (id)init;
+- (id)_parentalControls;
+- (void)dealloc;
+- (BOOL)_disableAV;
+- (id)_serviceWithName:;
+- (BOOL)forceAllowlistForService:;
+- (BOOL)forceAllowlistForAccount:;
+- (BOOL)disableService:;
+- (BOOL)accountHasAllowlist:;
+- (BOOL)forceChatLogging;
+- (id)allowlistForService:;
+- (id)allowlistForAccount:;
+- (BOOL)shouldPostNotifications;
+- (BOOL)accountIsEnabled:;
+- (void).cxx_destruct;
+- (BOOL)disableAV;
+- (void)_updateParentalSettings;
+- (BOOL)_forceChatLogging;
+- (void)_managedPrefsNotification:;
+- (void)setShouldPostNotifications:;
+- (BOOL)okToConnectAccount:;
++ (id)objectForKey:;
++ (id)standardControls;
+@end

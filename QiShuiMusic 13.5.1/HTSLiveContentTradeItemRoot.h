@@ -1,0 +1,2 @@
+@interface HTSLiveContentTradeItemRoot : GPBRootObject
+@end

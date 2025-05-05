@@ -1,0 +1,2 @@
+@interface AVAssetResourceLoaderInternal : NSObject
+@end

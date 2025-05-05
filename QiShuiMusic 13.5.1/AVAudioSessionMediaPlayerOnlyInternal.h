@@ -1,0 +1,2 @@
+@interface AVAudioSessionMediaPlayerOnlyInternal : NSObject
+@end

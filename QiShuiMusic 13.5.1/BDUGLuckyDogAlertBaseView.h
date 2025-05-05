@@ -1,0 +1,30 @@
+@interface BDUGLuckyDogAlertBaseView : UIView
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UIViewController alertVC;
+@property (nonatomic) UINavigationController alertNavigationController;
+@property (nonatomic) UIWindow alertWindow;
+@property (nonatomic) UIWindow originWindow;
+@property (nonatomic) BDUGLuckyDogPopUpObj dialogObj;
+@property (nonatomic) BOOL isFinishDialogManager;
+- (id)alertVC;
+- (id)alertNavigationController;
+- (id)dialogObj;
+- (void)hideWithAsyncCompletion:;
+- (BOOL)isFinishDialogManager;
+- (id)originWindow;
+- (void)setAlertNavigationController:;
+- (void)setAlertVC:;
+- (void)setDialogObj:;
+- (void)setIsFinishDialogManager:;
+- (void)setOriginWindow:;
+- (id)setString:placeholder:;
+- (void)dealloc;
+- (id)containerView;
+- (void)hide;
+- (void)setContainerView:;
+- (void)show;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (id)alertWindow;
+- (void)setAlertWindow:;
+@end

@@ -1,0 +1,31 @@
+@interface CHStrokeGroupingResult : NSObject
+@property (nonatomic) NSSet strokeGroups;
+@property (nonatomic) NSSet createdStrokeGroups;
+@property (nonatomic) NSSet deletedStrokeGroups;
+@property (nonatomic) NSArray textStrokeGroupsSortedTopBottomLeftRight;
+@property (nonatomic) NSArray textStrokeGroupsSortedByWritingOrientation;
+@property (nonatomic) NSArray strokeGroupsSortedByWritingOrientation;
+@property (nonatomic) NSArray strokeGroupClusters;
+@property (nonatomic) NSArray textStrokeGroupClusters;
+@property (nonatomic) NSSet textStrokeGroups;
+- (id)init;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)strokeGroups;
+- (id)initWithStrokeGroups:createdStrokeGroups:deletedStrokeGroups:;
+- (id)textStrokeGroupsSortedTopBottomLeftRight;
+- (id)textStrokeGroupsSortedByWritingOrientation;
+- (id)strokeGroupsSortedByWritingOrientation;
+- (id)_sortedStrokeGroupsByWritingOrientationTextOnly:;
+- (id)strokeGroupClusters;
+- (id)textStrokeGroupClusters;
+- (id)textStrokeGroups;
+- (BOOL)isEqualToStrokeGroupingResult:;
+- (id)createdStrokeGroups;
+- (id)deletedStrokeGroups;
++ (BOOL)supportsSecureCoding;
+@end

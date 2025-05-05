@@ -1,0 +1,38 @@
+@interface CPLLibraryShareScopeChange : CPLScopeChange
+@property (nonatomic) q exitRetentionPolicy;
+@property (nonatomic) q exitSource;
+@property (nonatomic) NSArray exitingUserIdentifiers;
+@property (nonatomic) q exitState;
+@property (nonatomic) q exitType;
+@property (nonatomic) NSData userDefinedRules;
+@property (nonatomic) NSDate userViewedParticipantTrashNotificationDate;
+- (void).cxx_destruct;
+- (long long)exitState;
+- (long long)exitType;
+- (BOOL)areSomeUsersExiting;
+- (void)setExitSource:;
+- (void)setExitType:;
+- (BOOL)isUserWithIdentifierExiting:;
+- (id)userDefinedRules;
+- (id)userViewedParticipantTrashNotificationDate;
+- (long long)exitRetentionPolicy;
+- (void)setUserDefinedRules:;
+- (void)setUserViewedParticipantTrashNotificationDate:;
+- (long long)exitSource;
+- (void)setExitRetentionPolicy:;
+- (id)_additionalDescription;
+- (void)updateScopeFromScopeChange:direction:didHaveChanges:;
+- (BOOL)shouldAlwaysUpdateScopeInfoWhenPossible;
+- (id)exitingUserIdentifiers;
+- (void)setExitingUserIdentifiers:;
+- (BOOL)isCurrentUserExiting;
+- (void)addExitingUserIdentifiers:;
+- (void)removePendingParticipantIDs:;
++ (BOOL)serverSupportsLibraryShareSettingsRecordSyncing;
++ (BOOL)serverSupportsLibraryShareSettingsUserViewedParticipantTrashNotificationDateSyncing;
++ (id)descriptionForExitState:;
++ (id)mappingForExitState;
++ (id)mappingForExitType;
++ (id)descriptionForExitType:;
++ (id)cplAdditionalSecureClassesForProperty:;
+@end

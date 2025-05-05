@@ -1,0 +1,38 @@
+@interface APSIncomingMessage : APSMessage
+@property (nonatomic) NSDate timestamp;
+@property (nonatomic) NSDate expirationDate;
+@property (nonatomic) NSData token;
+@property (nonatomic) NSData perAppToken;
+@property (nonatomic) BOOL fromStorage;
+@property (nonatomic) BOOL lastMessageFromStorage;
+@property (nonatomic) q priority;
+@property (nonatomic) BOOL tracingEnabled;
+@property (nonatomic) NSData tracingUUID;
+@property (nonatomic) Q pushType;
+@property (nonatomic) I pushFlags;
+@property (nonatomic) NSString channelID;
+- (void)setChannelID:;
+- (void)setPriority:;
+- (id)token;
+- (void)setExpirationDate:;
+- (void)setPushFlags:;
+- (BOOL)isTracingEnabled;
+- (id)perAppToken;
+- (id)expirationDate;
+- (void)setToken:;
+- (void)setFromStorage:;
+- (void)setTimestamp:;
+- (void)setLastMessageFromStorage:;
+- (unsigned int)pushFlags;
+- (void)setPerAppToken:;
+- (void)setTracingEnabled:;
+- (id)timestamp;
+- (void)setTracingUUID:;
+- (void)setPushType:;
+- (BOOL)wasFromStorage;
+- (id)tracingUUID;
+- (unsigned long long)pushType;
+- (BOOL)wasLastMessageFromStorage;
+- (id)channelID;
+- (long long)priority;
+@end

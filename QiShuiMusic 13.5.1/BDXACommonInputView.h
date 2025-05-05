@@ -1,0 +1,37 @@
+@interface BDXACommonInputView : UIView
+@property (nonatomic) UITextField textField;
+@property (nonatomic) UIButton clearBtn;
+@property (nonatomic) UIView bottomLineView;
+@property (nonatomic) <BDXACommonInputViewDelegate> delegate;
+@property (nonatomic) UIFont font;
+@property (nonatomic) NSString placeHolder;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)clearBtn;
+- (void)handleTextFieldEditingStateChangeNotification:;
+- (void)loadSubViews;
+- (void)setClearBtn:;
+- (void)clearInput;
+- (id)input;
+- (BOOL)textFieldShouldReturn:;
+- (BOOL)textFieldShouldBeginEditing:;
+- (void)dealloc;
+- (id)textField;
+- (void)setDelegate:;
+- (void)setFont:;
+- (void)setInput:;
+- (void)setTextField:;
+- (id)initWithFrame:;
+- (BOOL)becomeFirstResponder;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)font;
+- (BOOL)textField:shouldChangeCharactersInRange:replacementString:;
+- (void)textFieldDidChange:;
+- (id)bottomLineView;
+- (void)setBottomLineView:;
+- (id)placeHolder;
+- (void)setPlaceHolder:;
+@end

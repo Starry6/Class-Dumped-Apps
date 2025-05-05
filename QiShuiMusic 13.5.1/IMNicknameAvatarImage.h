@@ -1,0 +1,31 @@
+@interface IMNicknameAvatarImage : IMNicknameAvatar
+@property (nonatomic) BOOL hasImage;
+@property (nonatomic) NSString imageName;
+@property (nonatomic) NSString imageFilePath;
+@property (nonatomic) BOOL imageExists;
+- (id)init;
+- (void)setImageName:;
+- (id)imageName;
+- (id)imageData;
+- (id)initWithCoder:;
+- (id)initWithDictionaryRepresentation:;
+- (void)encodeWithCoder:;
+- (BOOL)hasImage;
+- (void).cxx_destruct;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (id)copyWithZone:;
+- (id)publicDictionaryRepresentation;
+- (id)initWithImageName:imageFilePath:;
+- (id)initWithImageName:imageData:imageFilePath:;
+- (id)initWithImageName:imageData:imageFilePath:error:;
+- (id)initWithPublicDictionaryMetadataRepresentation:;
+- (id)initWithPublicDictionaryMetadataRepresentation:imageData:imageFilePath:error:;
+- (id)publicDictionaryMetadataRepresentation;
+- (BOOL)_writeImageData:path:error:;
+- (id)loadAndReturnImageData;
+- (BOOL)imageExists;
+- (id)imageFilePath;
+- (void)setImageFilePath:;
++ (BOOL)supportsSecureCoding;
+@end

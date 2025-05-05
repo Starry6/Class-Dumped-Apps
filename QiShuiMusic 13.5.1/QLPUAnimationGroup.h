@@ -1,0 +1,30 @@
+@interface QLPUAnimationGroup : NSObject
+@property (nonatomic) QLPUAnimationGroup superAnimationGroup;
+@property (nonatomic) NSMutableArray subAnimationGroups;
+@property (nonatomic) @? completionHandler;
+@property (nonatomic) BOOL readyToComplete;
+@property (nonatomic) double elapsedTime;
+@property (nonatomic) BOOL paused;
+- (void)complete;
+- (void)setElapsedTime:;
+- (void)dealloc;
+- (double)elapsedTime;
+- (void)setCompletionHandler:;
+- (BOOL)isPaused;
+- (void)setPaused:;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)isReadyToComplete;
+- (id)completionHandler;
+- (void)finishImmediately;
+- (void)addSubAnimationGroup:;
+- (void)setSuperAnimationGroup:;
+- (void)completeIfNeeded;
+- (void)pauseAnimations;
+- (void)resumeAnimations;
+- (id)superAnimationGroup;
+- (id)subAnimationGroups;
++ (id)animationGroupWithAnimations:;
++ (void)pushAnimationGroup:;
++ (void)popAnimationGroup:;
+@end

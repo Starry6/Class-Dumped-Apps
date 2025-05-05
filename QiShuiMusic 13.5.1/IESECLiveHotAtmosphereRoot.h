@@ -1,0 +1,2 @@
+@interface IESECLiveHotAtmosphereRoot : GPBRootObject
+@end

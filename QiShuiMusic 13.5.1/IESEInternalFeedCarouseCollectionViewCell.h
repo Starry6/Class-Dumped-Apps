@@ -1,0 +1,31 @@
+@interface IESEInternalFeedCarouseCollectionViewCell : UICollectionViewCell
+@property (nonatomic) IESECGoodsFeedCompareDealsBarView compareDealsBar;
+@property (nonatomic) NSString bizTag;
+@property (nonatomic) NSString sceneTag;
+@property (nonatomic) UIImageView goodImageView;
+@property (nonatomic) UIImageView blurredContainerView;
+@property (nonatomic) UIImageView promotionImageView;
+@property (nonatomic) IESECURLModel promotionImageModel;
+- (id)compareDealsBar;
+- (void)bindActivityURLModel:;
+- (void)bindURLModel:;
+- (id)bizTag;
+- (id)blurredContainerView;
+- (void)configUI;
+- (id)goodImageView;
+- (id)promotionImageModel;
+- (id)promotionImageView;
+- (id)sceneTag;
+- (void)setBizTag:;
+- (void)setBlurredContainerView:;
+- (void)setCompareDealsBar:;
+- (void)setGoodImageView:;
+- (void)setPromotionImageModel:;
+- (void)setPromotionImageView:;
+- (void)setSceneTag:;
+- (void)steupCompareDealsBar:;
+- (void)unbindActivityURLModel;
+- (void)updateCompareDealsBar:index:actionBlock:;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+@end

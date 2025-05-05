@@ -1,0 +1,37 @@
+@interface AVDepthData : NSObject
+@property (nonatomic) NSArray availableDepthDataTypes;
+@property (nonatomic) I depthDataType;
+@property (nonatomic) ^{__CVBuffer=} depthDataMap;
+@property (nonatomic) q depthDataQuality;
+@property (nonatomic) BOOL depthDataFiltered;
+@property (nonatomic) q depthDataAccuracy;
+@property (nonatomic) AVCameraCalibrationData cameraCalibrationData;
+- (void)dealloc;
+- (id)debugDescription;
+- (id)description;
+- (float)portraitLightingEffectStrength;
+- (id)cameraCalibrationData;
+- (id)depthDataByConvertingToDepthDataType:;
+- (id)depthDataByReplacingDepthDataMapWithPixelBuffer:error:;
+- (id)depthDataMap;
+- (unsigned int)depthDataType;
+- (id)dictionaryRepresentationForAuxiliaryDataType:;
+- (id)copyAuxiliaryMetadata;
+- (id)auxiliaryImageType;
+- (BOOL)isDepthDataFiltered;
+- (float)depthBlurEffectSimulatedAperture;
+- (id)depthBlurEffectRenderingParameters;
+- (BOOL)portraitScoreIsHigh;
+- (float)portraitScore;
+- (id)depthDataByApplyingExifOrientation:;
+- (id)availableDepthDataTypes;
+- (long long)depthDataQuality;
+- (long long)depthDataAccuracy;
+- (short)depthDataVersionMajor;
+- (short)depthDataVersionMinor;
+- (id)initWithPixelBuffer:auxiliaryMetadata:;
+- (id)initWithPixelBuffer:depthMetadataDictionary:;
+- (id)_copyPixelBufferRepresentationWithPixelFormatType:;
++ (id)depthDataFromDictionaryRepresentation:error:;
++ (id)_allSupportedDepthDataPixelFormatTypes;
+@end

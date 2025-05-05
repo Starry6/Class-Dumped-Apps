@@ -1,0 +1,36 @@
+@interface IESMMLogger : NSObject
+@property (nonatomic) @? fabricLogBlock;
+@property (nonatomic) NSDate startDate;
+@property (nonatomic) NSDate endDate;
+@property (nonatomic) BOOL getAWECommand;
+@property (nonatomic) BOOL logEnable;
+@property (nonatomic) NSString sign;
+@property (nonatomic) <IESEditorLoggerDelegate> loggerDelegate;
+@property (nonatomic) NSInteger logLevel;
+- (void)__updateEffectLogCallbackFunc;
+- (int)caculateLogLevel:;
+- (BOOL)getAWECommand;
+- (BOOL)logEnable;
+- (id)loggerDelegate;
+- (void)loggerMessage:andLevel:;
+- (void)setGetAWECommand:;
+- (void)setLogEnable:;
+- (void)setLoggerDelegate:;
+- (void)setSign:;
+- (id)sign;
+- (void)setFabricLogBlock:;
+- (BOOL)execCloudControlCommand:;
+- (void)enableVESDKLoggerAction;
+- (void)disableVESDKLoggerAction;
+- (id)fabricLogBlock;
+- (id)startDate;
+- (id)init;
+- (void)setStartDate:;
+- (void)setLogLevel:;
+- (void)setEndDate:;
+- (id)endDate;
+- (int)logLevel;
+- (void).cxx_destruct;
++ (void)bef_effect_set_log_level:;
++ (id)sharedInstance;
+@end

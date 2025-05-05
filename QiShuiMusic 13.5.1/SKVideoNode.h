@@ -1,0 +1,38 @@
+@interface SKVideoNode : SKNode
+@property (nonatomic) AVPlayer _player;
+@property (nonatomic) {CGSize=dd} size;
+@property (nonatomic) {CGPoint=dd} anchorPoint;
+- (id)init;
+- (void)dealloc;
+- (id)initWithURL:;
+- (void)play;
+- (void)commonInit;
+- (void)observeValueForKeyPath:ofObject:change:context:;
+- (id)initWithCoder:;
+- (id)anchorPoint;
+- (void)setPaused:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (void)pause;
+- (void)setAnchorPoint:;
+- (void)setSize:;
+- (id)size;
+- (id)_player;
+- (id)initWithVideoURL:;
+- (BOOL)isEqualToNode:;
+- (id)_makeBackingNode;
+- (void)_didMakeBackingNode;
+- (id)initWithFileNamed:;
+- (void)set_player:;
+- (id)initWithVideoFileNamed:;
+- (id)initWithAVPlayer:;
++ (BOOL)supportsSecureCoding;
++ (id)debugHierarchyPropertyDescriptions;
++ (id)debugHierarchyValueForPropertyWithName:onObject:outOptions:outError:;
++ (id)videoNodeWithVideoFileNamed:;
++ (id)videoNodeWithVideoURL:;
++ (id)videoNodeWithFileNamed:;
++ (id)videoNodeWithURL:;
++ (id)videoNodeWithAVPlayer:;
+@end

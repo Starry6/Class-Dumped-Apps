@@ -1,0 +1,33 @@
+@interface YYTextHighlight : NSObject
+@property (nonatomic) NSDictionary attributes;
+@property (nonatomic) NSDictionary userInfo;
+@property (nonatomic) @? tapAction;
+@property (nonatomic) @? longPressAction;
+- (void)setInnerShadow:;
+- (void)_makeMutableAttributes;
+- (void)setBackgroundBorder:;
+- (void)setStrikethrough:;
+- (void)setTextAttribute:value:;
+- (id)userInfo;
+- (void)setStrokeColor:;
+- (void)setColor:;
+- (void)setStrokeWidth:;
+- (void)setFont:;
+- (id)initWithCoder:;
+- (void)setAttributes:;
+- (id)attributes;
+- (void)encodeWithCoder:;
+- (void)setUserInfo:;
+- (void).cxx_destruct;
+- (void)setBorder:;
+- (id)copyWithZone:;
+- (id)longPressAction;
+- (void)setAttachment:;
+- (void)setShadow:;
+- (void)setLongPressAction:;
+- (void)setUnderline:;
+- (id)tapAction;
+- (void)setTapAction:;
++ (id)highlightWithAttributes:;
++ (id)highlightWithBackgroundColor:;
+@end

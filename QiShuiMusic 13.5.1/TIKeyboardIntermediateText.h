@@ -1,0 +1,32 @@
+@interface TIKeyboardIntermediateText : NSObject
+@property (nonatomic) NSString inputString;
+@property (nonatomic) NSString lastInputString;
+@property (nonatomic) NSString displayString;
+@property (nonatomic) {_NSRange=QQ} selectedRange;
+@property (nonatomic) q candidateOffset;
+@property (nonatomic) NSArray liveConversionSegments;
+@property (nonatomic) q highlightSegmentIndex;
+@property (nonatomic) NSString searchString;
+- (id)displayString;
+- (id)searchString;
+- (id)selectedRange;
+- (id)inputString;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (long long)candidateOffset;
+- (id)liveConversionSegments;
+- (long long)highlightSegmentIndex;
+- (id)lastInputString;
+- (id)initWithInputString:displayString:selectionLocation:searchString:candidateOffset:liveConversionSegments:highlightSegmentIndex:lastInputString:;
++ (BOOL)supportsSecureCoding;
++ (id)intermediateTextWithInputString:displayString:;
++ (id)intermediateTextWithInputString:displayString:lastInputString:;
++ (id)intermediateTextWithInputString:displayString:selectionLocation:lastInputString:;
++ (id)intermediateTextWithInputString:displayString:selectionLocation:searchString:lastInputString:;
++ (id)intermediateTextWithInputString:displayString:selectionLocation:searchString:candidateOffset:liveConversionSegments:highlightSegmentIndex:lastInputString:;
+@end

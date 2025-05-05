@@ -1,0 +1,2 @@
+@interface BNTrackList.BNMultipleSelectionPresent : _TtGC15BNCommonAdapter11BNPresenterC11BNTrackList33BNMultipleSelectionViewControllerCS1_28BNMultipleSelectionFrameView_
+@end

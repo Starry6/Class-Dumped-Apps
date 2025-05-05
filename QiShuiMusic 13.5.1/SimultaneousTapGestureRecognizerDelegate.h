@@ -1,0 +1,3 @@
+@interface SimultaneousTapGestureRecognizerDelegate : TapGestureRecognizerDelegate
+- (BOOL)gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:;
+@end

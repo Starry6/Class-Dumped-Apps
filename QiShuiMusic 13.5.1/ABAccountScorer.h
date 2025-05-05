@@ -1,0 +1,32 @@
+@interface ABAccountScorer : NSObject
+@property (nonatomic) ^v addressBook;
+@property (nonatomic) ACAccountStore accountStore;
+@property (nonatomic) ^v account;
+@property (nonatomic) NSInteger defaultSourceID;
+@property (nonatomic) double score;
+@property (nonatomic) NSString accountType;
+@property (nonatomic) NSString accountTypeDescription;
+@property (nonatomic) NSString accountDisambiguationDescription;
+@property (nonatomic) NSInteger sourceID;
+- (id)account;
+- (id)accountType;
+- (void)setSourceID:;
+- (void)setAccountStore:;
+- (id)accountStore;
+- (void)setAccount:;
+- (void)dealloc;
+- (double)score;
+- (int)sourceID;
+- (int)defaultSourceID;
+- (id)accountTypeDescription;
+- (id)addressBook;
+- (void)setScore:;
+- (void)setAccountType:;
+- (void).cxx_destruct;
+- (void)setAddressBook:;
+- (id)initWithAddressBook:accountStore:account:defaultSourceID:;
+- (id)accountDisambiguationDescription;
+- (void)calculateScore;
+- (int)_findBestSourceID;
+- (void)setDefaultSourceID:;
+@end

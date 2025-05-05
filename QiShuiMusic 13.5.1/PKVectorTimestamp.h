@@ -1,0 +1,33 @@
+@interface PKVectorTimestamp : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (BOOL)isEmpty;
+- (id)shortDescription;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)initWithArchive:;
+- (void)encodeWithCoder:;
+- (unsigned long long)compareTo:;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)serialize;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)clockElementForUUID:;
+- (unsigned long long)clockForUUID:;
+- (unsigned long long)subclockForUUID:;
+- (void)setClock:forUUID:;
+- (void)setClock:subclock:forUUID:;
+- (void)incrementClockForUUID:;
+- (id)allUUIDs;
+- (id)sortedUUIDs;
+- (void)mergeWithTimestamp:;
+- (void)saveToArchive:;
+- (void)unionClock:subclock:forUUID:;
+- (long long)compareClock:subclock:forUUID:;
++ (BOOL)supportsSecureCoding;
+@end

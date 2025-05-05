@@ -1,0 +1,37 @@
+@interface IESECMallListKitBffDataModel : MTLModel
+@property (nonatomic) IESECListKitListModel feed;
+@property (nonatomic) IESECListKitLynxCardModel topBar;
+@property (nonatomic) IESECListKitBackgroundModel background;
+@property (nonatomic) IESECListKitLynxCardModel popup;
+@property (nonatomic) IESECListKitPendantListModel pendant;
+@property (nonatomic) NSDictionary bizInfo;
+@property (nonatomic) NSDictionary extraData;
+@property (nonatomic) NSDictionary dynamicParams;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)bizInfo;
+- (id)pendant;
+- (void)setBizInfo:;
+- (void)setDynamicParams:;
+- (void)setPendant:;
+- (id)feed;
+- (id)background;
+- (void)setBackground:;
+- (id)topBar;
+- (void)setTopBar:;
+- (void)setFeed:;
+- (void).cxx_destruct;
+- (void)setExtraData:;
+- (id)extraData;
+- (id)popup;
+- (void)setPopup:;
+- (id)dynamicParams;
++ (id)backgroundJSONTransformer;
++ (id)feedJSONTransformer;
++ (id)pendantJSONTransformer;
++ (id)popupJSONTransformer;
++ (id)topBarJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

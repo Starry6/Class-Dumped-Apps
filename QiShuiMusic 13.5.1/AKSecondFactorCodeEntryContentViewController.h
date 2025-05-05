@@ -1,0 +1,35 @@
+@interface AKSecondFactorCodeEntryContentViewController : UIViewController
+@property (nonatomic) AKCodeEntryView codeGeneratorView;
+@property (nonatomic) AKBasicLoginContentViewController titleHeaderViewController;
+@property (nonatomic) AKAppleIDAuthenticationContext authenticationContext;
+@property (nonatomic) NSArray activeConstraints;
+@property (nonatomic) NSString reason;
+@property (nonatomic) NSString generatedCode;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)dealloc;
+- (id)authenticationContext;
+- (void)setAuthenticationContext:;
+- (id)reason;
+- (void)setReason:;
+- (void)viewWillLayoutSubviews;
+- (void).cxx_destruct;
+- (void)updateViewConstraints;
+- (void)viewDidAppear:;
+- (void)loadView;
+- (id)generatedCode;
+- (id)activeConstraints;
+- (void)setActiveConstraints:;
+- (void)setPasscodeFieldDisabled:;
+- (void)_updateFontContstraints:;
+- (void)jiggleAView;
+- (void)clearSecondFactorEntry;
+- (void)_configureTitleHeaderView;
+- (void)_configureCodeGenView;
+- (id)codeGeneratorView;
+- (void)setCodeGeneratorView:;
+- (id)titleHeaderViewController;
+- (void)setTitleHeaderViewController:;
+@end

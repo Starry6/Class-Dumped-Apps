@@ -1,0 +1,30 @@
+@interface BDUGLuckyTipConf : BDUGLuckyBDModel
+@property (nonatomic) NSString content;
+@property (nonatomic) NSString contentColor;
+@property (nonatomic) NSString backgroundUrl;
+@property (nonatomic) UIImage backgroundImage;
+@property (nonatomic) double showDurationMs;
+@property (nonatomic) BOOL disappearTapped;
+@property (nonatomic) q contentSize;
+@property (nonatomic) NSString frame;
+- (BOOL)disappearTapped;
+- (id)backgroundUrl;
+- (void)setBackgroundUrl:;
+- (void)setDisappearTapped:;
+- (void)setShowDurationMs:;
+- (double)showDurationMs;
+- (id)content;
+- (void)setContent:;
+- (void)setContentColor:;
+- (void)setFrame:;
+- (void)setBackgroundImage:;
+- (id)backgroundImage;
+- (id)contentColor;
+- (id)frame;
+- (void).cxx_destruct;
+- (long long)contentSize;
+- (id)hashString;
+- (void)setContentSize:;
+- (id)copyWithZone:;
++ (id)modelCustomPropertyMapper;
+@end

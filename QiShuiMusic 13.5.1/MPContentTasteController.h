@@ -1,0 +1,37 @@
+@interface MPContentTasteController : NSObject
+@property (nonatomic) ICUserIdentity userIdentity;
+- (id)init;
+- (id)_initWithUserIdentity:;
+- (id)userIdentity;
+- (void).cxx_destruct;
+- (id)_mediaLibrary;
+- (void)_deviceMediaLibraryDidChangeNotification:;
+- (void)_libraryPathDidChangeForTasteController:;
+- (void)setTasteType:forModel:withCompletionHandler:;
+- (void)setTasteType:forMediaEntity:withCompletionHandler:;
+- (void)setTasteType:forPlaylistGlobalID:withCompletionHandler:;
+- (void)setTasteType:forStoreAdamID:withContentType:completionHandler:;
+- (long long)tasteTypeForModel:;
+- (long long)tasteTypeForMediaEntity:;
+- (long long)tasteTypeForPlaylistGlobalID:;
+- (long long)tasteTypeForStoreAdamID:;
+- (id)_libraryEntityForModel:;
+- (id)_libraryPlaylistWithGlobalID:;
+- (id)_libraryEntityWithStoreID:contentType:;
+- (id)_ML3QueryWithEntityClass:predicate:options:;
+- (id)_addPendingUpdateRecord:withKey:inDictionary:;
+- (id)_addPendingUpdateRecordForPlaylistGlobalID:contentTasteType:;
+- (id)_addPendingUpdateRecordForStoreAdamID:contentTasteType:;
+- (void)_removePendingUpdateRecordForPlaylistGlobalID:token:;
+- (void)_removePendingUpdateRecordForStoreAdamID:token:;
+- (id)_pendingUpdateRecordForKey:inDictionary:;
+- (id)_pendingUpdateRecordForStoreAdamID:;
+- (id)_pendingUpdateRecordForPlaylistGlobalID:;
++ (id)controllers;
++ (id)controllerWithUserIdentity:;
++ (id)globalSerialQueue;
++ (id)sharedController;
++ (void)_postNotificationName:controller:userInfo:;
++ (void)_postNotificationName:controller:;
++ (id)_tasteControllerWithUserIdentity:isSingleton:createIfRequired:;
+@end

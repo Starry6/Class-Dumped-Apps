@@ -1,0 +1,2 @@
+@interface CVALightRequestImplStudio : CVALightRequestImplBase
+@end

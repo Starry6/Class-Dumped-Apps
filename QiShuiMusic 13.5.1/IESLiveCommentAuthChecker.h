@@ -1,0 +1,35 @@
+@interface IESLiveCommentAuthChecker : NSObject
+@property (nonatomic) HTSLiveCommentStore store;
+@property (nonatomic) <IESLiveRoomServiceAdapter> roomModel;
+@property (nonatomic) <IESLiveVerifyConfigAdapter> verifyConfig;
+@property (nonatomic) <IESLiveCustomConfig> customConfig;
+@property (nonatomic) IESLiveCommentContext context;
+@property (nonatomic) BOOL isProhibitHot;
+- (BOOL)checkAnchorCommentSettingEnable;
+- (BOOL)checkAnchorCommentSettingDisableInTrial;
+- (BOOL)checkIfCommentEnableBase:;
+- (BOOL)checkIfCommentEnableFurther:;
+- (BOOL)checkIfCommentEnableWithContext:completion:;
+- (BOOL)checkPublicScreenType;
+- (id)commentAuthCheckSendAuthTip;
+- (id)customConfig;
+- (void)fetchAndProcessForbiddenInfo;
+- (BOOL)isProhibitHot;
+- (void)loginWithEntriesInfo:completion:;
+- (void)monitorCheckFailedWithResult:baseState:toast:;
+- (BOOL)needBindPhone;
+- (void)processWindowsPrompt:;
+- (id)roomModel;
+- (void)setCustomConfig:;
+- (void)setIsProhibitHot:;
+- (void)setRoomModel:;
+- (void)setVerifyConfig:;
+- (id)toastStringWithAuthType:;
+- (id)verifyConfig;
+- (void)setStore:;
+- (id)initWithStore:;
+- (id)context;
+- (void).cxx_destruct;
+- (id)store;
+- (void)setContext:;
+@end

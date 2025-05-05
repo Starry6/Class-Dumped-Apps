@@ -1,0 +1,36 @@
+@interface AMSStorage : NSObject
++ (long long)_integerForKey:defaultValue:;
++ (void)setDeviceOfferEligibility:;
++ (void)_setBool:forKey:;
++ (BOOL)_boolForKey:defaultValue:domain:;
++ (void)_setValue:forKey:;
++ (id)_valueForKey:;
++ (long long)_integerForKey:defaultValue:domain:;
++ (void)_setInteger:forKey:;
++ (void)_setValue:forKey:domain:;
++ (id)_valueForKey:domain:;
++ (BOOL)_boolForKey:defaultValue:;
++ (long long)_integerFromCFPreferencesForKey:defaultValue:domain:;
++ (void)_setInteger:forKey:domain:;
++ (void)_migrateBoolToDatabase:forKey:domain:;
++ (id)_allKeysWithDomain:;
++ (BOOL)_boolFromDatabaseForKey:defaultValue:domain:error:;
++ (BOOL)_setIntegerWithDatabase:forKey:domain:error:;
++ (BOOL)_setBoolWithDatabase:forKey:domain:error:;
++ (BOOL)_setValueWithDatabase:forKey:domain:error:;
++ (void)setSharedStoreReviewMetrics:forProcess:;
++ (id)sharedStoreReviewMetricsForProcess:;
++ (void)_migrateValueToDatabase:forKey:domain:;
++ (id)bagURLCookies;
++ (void)_setBoolWithCFPreferences:forKey:domain:;
++ (BOOL)_boolFromCFPreferencesForKey:defaultValue:domain:;
++ (void)setBagURLCookies:;
++ (void)_setBool:forKey:domain:;
++ (long long)_integerFromDatabaseForKey:defaultValue:domain:error:;
++ (void)_setIntegerWithCFPreferences:forKey:domain:;
++ (void)_migrateIntegerToDatabase:forKey:domain:;
++ (id)_valueFromDatabaseForKey:domain:error:;
++ (id)_valueFromCFPreferencesForKey:domain:;
++ (id)deviceOfferEligibility;
++ (void)_setValueWithCFPreferences:forKey:domain:;
+@end

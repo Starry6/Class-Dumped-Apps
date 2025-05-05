@@ -1,0 +1,31 @@
+@interface SYUserActivityIdentifierInfo : NSObject
+@property (nonatomic) NSString activityType;
+@property (nonatomic) NSURL webpageURL;
+@property (nonatomic) NSURL canonicalURL;
+@property (nonatomic) NSString targetContentIdentifier;
+@property (nonatomic) NSString persistentIdentifier;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)activityType;
+- (id)webpageURL;
+- (id)init;
+- (id)initWithUserActivity:;
+- (void)setWebpageURL:;
+- (void)setPersistentIdentifier:;
+- (id)initWithCoder:;
+- (id)persistentIdentifier;
+- (unsigned long long)hash;
+- (void)setTargetContentIdentifier:;
+- (id)initWithActivityType:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)canonicalURL;
+- (BOOL)isEqual:;
+- (id)targetContentIdentifier;
+- (BOOL)isEqualToActivityIdentifierInfo:;
+- (void)setCanonicalURL:;
++ (BOOL)supportsSecureCoding;
+@end

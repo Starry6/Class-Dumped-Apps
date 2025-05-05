@@ -1,0 +1,31 @@
+@interface CKFetchRecordZoneChangesOperationInfo : CKDatabaseOperationInfo
+@property (nonatomic) NSArray recordZoneIDs;
+@property (nonatomic) NSDictionary configurationsByRecordZoneID;
+@property (nonatomic) BOOL shouldFetchAssetContents;
+@property (nonatomic) q changeTypes;
+@property (nonatomic) BOOL fetchAllChanges;
+@property (nonatomic) NSDictionary assetTransferOptionsByRecordTypeAndKey;
+@property (nonatomic) NSDictionary supplementalChangeTokenByZoneID;
+@property (nonatomic) q errorReportingStyle;
+@property (nonatomic) BOOL forcePCSDecryptionAttempt;
+- (long long)errorReportingStyle;
+- (long long)changeTypes;
+- (BOOL)shouldFetchAssetContents;
+- (id)configurationsByRecordZoneID;
+- (id)init;
+- (void)setSupplementalChangeTokenByZoneID:;
+- (void)setRecordZoneIDs:;
+- (void)setErrorReportingStyle:;
+- (BOOL)forcePCSDecryptionAttempt;
+- (void)setConfigurationsByRecordZoneID:;
+- (id)assetTransferOptionsByRecordTypeAndKey;
+- (void)setFetchAllChanges:;
+- (id)supplementalChangeTokenByZoneID;
+- (BOOL)fetchAllChanges;
+- (id)recordZoneIDs;
+- (void)setForcePCSDecryptionAttempt:;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
++ (BOOL)supportsSecureCoding;
+@end

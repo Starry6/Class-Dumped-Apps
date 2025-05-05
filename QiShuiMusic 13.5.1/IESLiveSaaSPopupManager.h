@@ -1,0 +1,34 @@
+@interface IESLiveSaaSPopupManager : NSObject
+@property (nonatomic) NSMutableArray popupItems;
+@property (nonatomic) @? allowListFilterBlock;
+- (void)removeWithType:;
+- (void)removeWithItem:;
+- (id)allItemsWithType:;
+- (id)allowListFilterBlock;
+- (void)animationForAutoRotateToOrientation:duration:size:;
+- (void)cleanWithItem:;
+- (void)configItem:;
+- (BOOL)enableUserManager;
+- (id)getLastPopupItem;
+- (void)hideAllPopupItemImmediately;
+- (void)hideImmediately:;
+- (void)hideImmediatelyWithType:;
+- (void)hideWithType:;
+- (BOOL)isItemShowing:;
+- (id)itemWithType:;
+- (id)popupItems;
+- (id)presentView:hostVC:backgroundView:landscape:presentHandler:dismissHandler:;
+- (id)presentView:hostVC:viewSize:backgroundView:landscape:presentHandler:dismissHandler:;
+- (id)presentViewController:hostVC:viewSize:backgroundView:landscape:presentHandler:dismissHandler:;
+- (void)removeAllWithType:;
+- (BOOL)rmOptimize;
+- (void)setAllowListFilterBlock:;
+- (void)setPopupItems:;
+- (void)showInAutoLayout:;
+- (void)showSimpleDynamicPortraitView:itemType:backgroundContainer:animType:;
+- (void)showSimpleDynamicPortraitView:itemType:backgroundContainer:cornerRadii:;
+- (void).cxx_destruct;
+- (void)hide:;
+- (void)show:;
++ (id)shareManager;
+@end

@@ -1,0 +1,34 @@
+@interface LynxServices : NSObject
+@property (nonatomic) NSMutableDictionary protocolToClassMap;
+@property (nonatomic) NSMutableDictionary protocolToInstanceMap;
+@property (nonatomic) NSRecursiveLock recLock;
+@property (nonatomic) NSMutableSet protocolClassCalledSet;
+- (id)recLock;
+- (void)bindClass:toProtocol:;
+- (id)getInstanceWithClass:;
+- (id)getInstanceWithProtocol:bizID:;
+- (id)protocolClassCalledSet;
+- (id)protocolToClassMap;
+- (id)protocolToInstanceMap;
+- (void)setProtocolClassCalledSet:;
+- (void)setProtocolToClassMap:;
+- (void)setProtocolToInstanceMap:;
+- (void)setRecLock:;
+- (id)init;
+- (void).cxx_destruct;
++ (id)__lynx_auto_register_serivce__LynxAsyncService450;
++ (id)__lynx_auto_register_serivce__LynxEventReporterService100;
++ (id)__lynx_auto_register_serivce__LynxImageService340;
++ (id)__lynx_auto_register_serivce__LynxModuleService80;
++ (id)__lynx_auto_register_serivce__LynxMonitorService200;
++ (id)__lynx_auto_register_serivce__LynxResourceService110;
++ (id)__lynx_auto_register_serivce__LynxServiceCanvasImpl380;
++ (id)__lynx_auto_register_serivce__LynxServiceInitializer110;
++ (id)__lynx_auto_register_serivce__LynxTrailService90;
++ (id)__lynx_auto_register_serivce__LynxVideoService70;
++ (void)bindClass:toProtocol:;
++ (id)getInstanceWithProtocol:bizID:;
++ (void)lynxLazyLoad;
++ (void)registerService:;
++ (id)sharedInstance;
+@end

@@ -1,0 +1,37 @@
+@interface CSJOverlayWidgetModel : NSObject
+@property (nonatomic) CSJAdSlot adSlot;
+@property (nonatomic) CSJMaterialMeta materialMeta;
+@property (nonatomic) q render_sequence;
+@property (nonatomic) q displayAreaIOS;
+@property (nonatomic) q minWidth;
+@property (nonatomic) q minHeight;
+@property (nonatomic) double minRatio;
+@property (nonatomic) BOOL need_backup_convert_area;
+@property (nonatomic) NSString ugen_id;
+@property (nonatomic) NSString ugen_md5;
+@property (nonatomic) NSString ugen_url;
+- (long long)render_sequence;
+- (id)ugen_id;
+- (id)adSlot;
+- (long long)displayAreaIOS;
+- (id)initWithComponent:data:slot:materialMeta:;
+- (id)materialMeta;
+- (BOOL)need_backup_convert_area;
+- (void)setAdSlot:;
+- (void)setDisplayAreaIOS:;
+- (void)setMaterialMeta:;
+- (void)setNeed_backup_convert_area:;
+- (void)setRender_sequence:;
+- (void)setUgen_id:;
+- (void)setUgen_md5:;
+- (void)setUgen_url:;
+- (id)ugen_md5;
+- (id)ugen_url;
+- (long long)minHeight;
+- (long long)minWidth;
+- (void).cxx_destruct;
+- (void)setMinHeight:;
+- (void)setMinWidth:;
+- (double)minRatio;
+- (void)setMinRatio:;
+@end

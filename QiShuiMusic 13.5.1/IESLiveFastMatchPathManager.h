@@ -1,0 +1,34 @@
+@interface IESLiveFastMatchPathManager : NSObject
+@property (nonatomic) NSMutableArray fastMatchRoomStack;
+@property (nonatomic) NSMutableArray fastMatchTrackStack;
+@property (nonatomic) BOOL fastMatchV4FirstUsedFlag;
+- (BOOL)applyByFastMatchInRoomByRoomID:;
+- (BOOL)audienceShouldStartApply;
+- (void)audienceWillEnterFastMatchRoomWithID:requestPage:mute:isFromOutside:;
+- (void)audienceWillEnterFastMatchRoomWithID:requestPage:mute:isFromOutside:isLiveEnd:;
+- (void)audienceWillEnterFastMatchRoomWithID:requestPage:mute:isFromOutside:orderSongList:;
+- (void)audienceWillEnterFastMatchRoomWithID:requestPage:mute:isFromOutside:orderSongList:isLiveEnd:;
+- (void)audienceWillFastMatchApplyWithRoomId:;
+- (void)audienceWillReturnBack;
+- (BOOL)currentIsFromOutside;
+- (id)fastMatchResultTagTrackInfoByRoomID:;
+- (id)fastMatchRoomStack;
+- (id)fastMatchTrackStack;
+- (BOOL)fastMatchTriggeredPerApplyByRoomID:;
+- (BOOL)fastMatchV4FirstUsedFlag;
+- (BOOL)getCurrentIsLiveEndWithRoomId:;
+- (id)getCurrentRequestPage;
+- (id)lastRoomMutedState;
+- (id)lastRoomOrderSongList;
+- (void)markApplyByFastMatchInRoom:roomID:;
+- (void)markFastMatchTriggeredPerApply:roomID:;
+- (id)p_trackNodeByRoomID:;
+- (void)resetStack;
+- (void)setFastMatchRoomStack:;
+- (void)setFastMatchTrackStack:;
+- (void)setFastMatchV4FirstUsedFlag:;
+- (void)setupFastMatchResultTagTrackInfo:roomID:;
+- (id)init;
+- (void).cxx_destruct;
++ (id)shardManager;
+@end

@@ -1,0 +1,33 @@
+@interface AVDateRangeMetadataGroup : AVMetadataGroup
+@property (nonatomic) NSString cueingOptions;
+@property (nonatomic) NSDate discoveryTimestamp;
+@property (nonatomic) NSDate modificationTimestamp;
+@property (nonatomic) AVDateRangeMetadataGroupInternal dateRangeMetadataGroupInternal;
+@property (nonatomic) NSDate startDate;
+@property (nonatomic) NSDate endDate;
+@property (nonatomic) NSArray items;
+- (id)propertyList;
+- (id)startDate;
+- (id)init;
+- (id)uniqueID;
+- (void)dealloc;
+- (id)items;
+- (unsigned long long)hash;
+- (id)endDate;
+- (id)initWithPropertyList:;
+- (id)description;
+- (id)mutableCopyWithZone:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)discoveryTimestamp;
+- (id)classifyingLabel;
+- (id)cueingOptions;
+- (id)modificationTimestamp;
+- (id)initWithItems:startDate:endDate:;
+- (id)_initWithTaggedRangeMetadataDictionary:items:;
+- (id)_dateRangeMetadataGroupInternal;
+- (id)_taggedRangeMetadataDictionary;
+- (void)_extractPropertiesFromTaggedRangeMetadataDictionary:;
++ (id)_figMetadataArrayForMetadataItems:;
++ (id)_metadataItemsForFigMetadataArray:;
+@end

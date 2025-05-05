@@ -1,0 +1,34 @@
+@interface IESECGoodsDetailBottomButton : UIView
+@property (nonatomic) UIImageView mainButtonImageView;
+@property (nonatomic) UILabel mainButtonTitleLabel;
+@property (nonatomic) BOOL withCoupon;
+@property (nonatomic) UILabel couponLabel;
+@property (nonatomic) UIImageView separatorLineView;
+@property (nonatomic) q actionType;
+@property (nonatomic) Q rectCorner;
+@property (nonatomic) {CGSize=dd} rectCornerRadius;
+- (void)setCouponLabel:;
+- (id)couponLabel;
+- (id)initWithFrame:actionType:withCoupon:;
+- (id)mainButtonImageView;
+- (id)mainButtonTitleLabel;
+- (void)maskToRectCorner:ofSize:;
+- (unsigned long long)rectCorner;
+- (id)rectCornerRadius;
+- (void)setMainButtonImageView:;
+- (void)setMainButtonTitleLabel:;
+- (void)setRectCorner:;
+- (void)setRectCornerRadius:;
+- (void)setWithCoupon:;
+- (void)updateMainButtonBackgroundColorForType:;
+- (void)updateTitle:detailText:type:;
+- (BOOL)withCoupon;
+- (long long)actionType;
+- (void)setActionType:;
+- (void)layoutSubviews;
+- (id)gradientLayer;
+- (void).cxx_destruct;
+- (id)separatorLineView;
+- (void)setSeparatorLineView:;
++ (Class)layerClass;
+@end

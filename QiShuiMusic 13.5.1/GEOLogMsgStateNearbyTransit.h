@@ -1,0 +1,31 @@
+@interface GEOLogMsgStateNearbyTransit : PBCodable
+@property (nonatomic) BOOL hasPinnedLines;
+@property (nonatomic) I pinnedLines;
+@property (nonatomic) NSMutableArray groups;
+- (void)readAll:;
+- (id)initWithJSON:;
+- (id)groups;
+- (id)jsonRepresentation;
+- (void)setGroups:;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (unsigned int)pinnedLines;
+- (void)setPinnedLines:;
+- (void)setHasPinnedLines:;
+- (BOOL)hasPinnedLines;
+- (void)clearGroups;
+- (void)addGroups:;
+- (unsigned long long)groupsCount;
+- (id)groupsAtIndex:;
++ (BOOL)isValid:;
++ (Class)groupsType;
+@end

@@ -1,0 +1,30 @@
+@interface IESLiveLinkmicLinkAudienceApi : NSObject
+@property (nonatomic) <IESLiveRoomServiceAdapter> roomModel;
+@property (nonatomic) HTSLiveInteractiveAPI htsAPI;
+@property (nonatomic) IESLiveInteractiveAPI interactiveAPI;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)applyWithParams:completion:;
+- (void)cancelApplyWithParams:completion:;
+- (void)cancelInviteWithParams:completion:;
+- (id)htsAPI;
+- (id)initWithRoom:scene:;
+- (id)interactiveAPI;
+- (void)inviteWithParams:completion:;
+- (void)joinChannelWithParams:completion:;
+- (void)kickoutWithParams:completion:;
+- (void)leaveChannelWithParams:completion:;
+- (void)permitWithParams:completion:;
+- (void)replyWithParams:completion:;
+- (void)resumeWithParams:completion:;
+- (id)roomModel;
+- (void)setHtsAPI:;
+- (void)setInteractiveAPI:;
+- (void)setRoomModel:;
+- (void)silenceWithParams:completion:;
+- (void)turnOffWithParams:completion:;
+- (void)turnOnWithParams:completion:;
+- (void).cxx_destruct;
+@end

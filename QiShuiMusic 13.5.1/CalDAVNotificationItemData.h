@@ -1,0 +1,2 @@
+@interface CalDAVNotificationItemData : CoreDAVLeafDataPayload
+@end

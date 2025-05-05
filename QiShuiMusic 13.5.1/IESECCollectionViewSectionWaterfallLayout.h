@@ -1,0 +1,37 @@
+@interface IESECCollectionViewSectionWaterfallLayout : IESECCollectionViewSectionLayout
+@property (nonatomic) double contentHeight;
+@property (nonatomic) q itemCount;
+@property (nonatomic) NSMutableArray colHeights;
+@property (nonatomic) Q layoutOrder;
+@property (nonatomic) double totalGap;
+@property (nonatomic) double contentWidth;
+@property (nonatomic) double itemWidth;
+@property (nonatomic) NSArray cachedItemArray;
+@property (nonatomic) NSArray cachedColHeightArray;
+- (id)cachedItemArray;
+- (id)cachedColHeightArray;
+- (id)colHeights;
+- (unsigned long long)longestColumnIndex;
+- (unsigned long long)nextColumnIndexForItem:;
+- (id)prepareSectionItemLayoutAttributes;
+- (double)sectionContentHeight;
+- (void)setCachedColHeightArray:;
+- (void)setCachedItemArray:;
+- (void)setColHeights:;
+- (void)setTotalGap:;
+- (unsigned long long)shortestColumnIndex;
+- (double)totalGap;
+- (long long)itemCount;
+- (double)contentHeight;
+- (id)initWithConfig:;
+- (void)setContentWidth:;
+- (double)contentWidth;
+- (void)setItemWidth:;
+- (double)itemWidth;
+- (void)setCollectionView:;
+- (void).cxx_destruct;
+- (void)setContentHeight:;
+- (void)setItemCount:;
+- (unsigned long long)layoutOrder;
+- (void)setLayoutOrder:;
+@end

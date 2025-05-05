@@ -1,0 +1,2 @@
+@interface RBSAppNapInactiveGrant : RBSAppNapGrant
+@end

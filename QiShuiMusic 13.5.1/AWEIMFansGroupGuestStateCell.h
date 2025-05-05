@@ -1,0 +1,38 @@
+@interface AWEIMFansGroupGuestStateCell : UICollectionViewCell
+@property (nonatomic) UIView baseView;
+@property (nonatomic) UIImageView avatarImageView;
+@property (nonatomic) UILabel nameLable;
+@property (nonatomic) UILabel numberLabel;
+@property (nonatomic) UILabel limitLabel;
+@property (nonatomic) UIButton joinGroupButton;
+@property (nonatomic) UIView tagsContainerView;
+@property (nonatomic) <AWEIMFansGroupGuestStateCellDelegate> delegate;
+@property (nonatomic) AWEIMFansGroupGuestItemViewModel viewModel;
+- (id)joinGroupButton;
+- (void)__configGroupTags:;
+- (void)__joinGroupButtoneClick;
+- (void)__setupGroupTags;
+- (void)__setupUI;
+- (id)__tagWithText:;
+- (void)configWithViewModel:;
+- (id)limitLabel;
+- (id)nameLable;
+- (void)setJoinGroupButton:;
+- (void)setLimitLabel:;
+- (void)setNameLable:;
+- (void)setTagsContainerView:;
+- (id)tagsContainerView;
+- (id)viewModel;
+- (void)setDelegate:;
+- (id)initWithFrame:;
+- (id)baseView;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setBaseView:;
+- (void)setViewModel:;
+- (id)avatarImageView;
+- (void)setAvatarImageView:;
+- (id)numberLabel;
+- (void)setNumberLabel:;
++ (id)identifier;
+@end

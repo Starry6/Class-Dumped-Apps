@@ -1,0 +1,30 @@
+@interface UIInputSetContainerView : UIInputSetHostView
+@property (nonatomic) {CGPoint=dd} offsetOrigin;
+@property (nonatomic) UIScreen hostingScreen;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)_didRemoveSubview:;
+- (void)setCenter:;
+- (void)dealloc;
+- (id)_inputWindowController;
+- (void)setFrame:;
+- (id)_inheritedRenderConfig;
+- (BOOL)_disableGeometryObserverNotification;
+- (void)performWithoutGeometryObserverNotifications:;
+- (BOOL)hasHostedViews;
+- (void)_setRenderConfig:;
+- (void)setOffsetOrigin:;
+- (id)offsetOrigin;
+- (void)didAddSubview:;
+- (void)addHostedView:withViewRemovalHandler:;
+- (id)initWithFrame:;
+- (id)_accessoryViewFrame;
+- (id)hostingScreen;
+- (void).cxx_destruct;
+- (BOOL)_isTransparentFocusRegion;
+- (void)_setAccessoryViewFrame:;
++ (BOOL)_notifyOnExplicitLayout;
++ (BOOL)_shouldHitTestInputViewFirst;
+@end

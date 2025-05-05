@@ -1,0 +1,36 @@
+@interface CEMManagementOrganizationInformationDeclaration : CEMConfigurationBase
+@property (nonatomic) NSString payloadOrganizationName;
+@property (nonatomic) NSString payloadOrganizationAddress;
+@property (nonatomic) NSString payloadOrganizationPhone;
+@property (nonatomic) NSString payloadOrganizationEmail;
+@property (nonatomic) NSString payloadOrganizationMagic;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (BOOL)multipleAllowed;
+- (BOOL)mustBeSupervised;
+- (int)activationLevel;
+- (id)assetReferences;
+- (BOOL)loadPayload:error:;
+- (id)serializePayloadWithAssetProviders:;
+- (id)payloadOrganizationName;
+- (void)setPayloadOrganizationName:;
+- (id)payloadOrganizationAddress;
+- (void)setPayloadOrganizationAddress:;
+- (id)payloadOrganizationPhone;
+- (void)setPayloadOrganizationPhone:;
+- (id)payloadOrganizationEmail;
+- (void)setPayloadOrganizationEmail:;
+- (id)payloadOrganizationMagic;
+- (void)setPayloadOrganizationMagic:;
++ (id)profileType;
++ (id)registeredClassName;
++ (id)registeredIdentifier;
++ (id)allowedPayloadKeys;
++ (id)restrictionPayloadKeys;
++ (id)buildWithIdentifier:withOrganizationName:withOrganizationAddress:withOrganizationPhone:withOrganizationEmail:withOrganizationMagic:;
++ (id)buildRequiredOnlyWithIdentifier:withOrganizationName:;
+@end

@@ -1,0 +1,31 @@
+@interface DanceUIDataSourceSnapshotter : NSObject
+- (long long)globalIndexForSection:item:;
+- (long long)indexPathItemForGlobalIndex:section:;
+- (long long)numberOfItems;
+- (id)init;
+- (long long)numberOfItemsInSection:;
+- (long long)globalIndexForIndexPath:;
+- (void)dealloc;
+- (id)rangeForSection:;
+- (long long)globalIndexForItemAtIndexPath:;
+- (id)indexPathForGlobalIndex:;
+- (void)_recomputeRangeLocations;
+- (long long)sectionForGlobalIndex:;
+- (id)initWithSectionCounts:;
+- (BOOL)_incrementSectionCount:;
+- (BOOL)_insertSection:withInitialCount:;
+- (id)indexPathForAppendingInsertInSection:;
+- (long long)numberOfItemsBeforeSection:;
+- (BOOL)_incrementSectionCount:byCount:;
+- (BOOL)_decrementSectionCount:;
+- (void).cxx_destruct;
+- (id)snapshot;
+- (BOOL)_deleteSection:;
+- (BOOL)indexPathIsSectionAppendingInsert:;
+- (id)description;
+- (long long)numberOfSections;
+- (BOOL)_decrementSectionCount:byCount:;
+- (id).cxx_construct;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+@end

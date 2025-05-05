@@ -1,0 +1,37 @@
+@interface AMapReGeocodeSearchRequest : AMapSearchObject
+@property (nonatomic) NSString cachedKey;
+@property (nonatomic) NSString paramCompareString;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) BOOL requireExtension;
+@property (nonatomic) AMapGeoPoint location;
+@property (nonatomic) q radius;
+@property (nonatomic) NSString poitype;
+@property (nonatomic) NSString mode;
+- (id)poitype;
+- (id)cacheCopy;
+- (BOOL)compareResultWithAnother:;
+- (void)formattedCachedStringWithLanguage:;
+- (BOOL)isNeedCompareParam;
+- (BOOL)isSupportCache;
+- (id)paramCompareString;
+- (BOOL)requireExtension;
+- (void)setParamCompareString:;
+- (void)setPoitype:;
+- (void)setRequireExtension:;
+- (void)setRadius:;
+- (id)init;
+- (long long)radius;
+- (id)location;
+- (void)setLocation:;
+- (void).cxx_destruct;
+- (id)mode;
+- (void)setMode:;
+- (unsigned long long)cacheType;
+- (id)requestPath;
+- (id)cachedKey;
+- (void)setCachedKey:;
++ (id)ajo_mapping;
+@end

@@ -1,0 +1,2 @@
+@interface IESLiveLinkmicSettingWrdsWarpper : NSObject
+@end

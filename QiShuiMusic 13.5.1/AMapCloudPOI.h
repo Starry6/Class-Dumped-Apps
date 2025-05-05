@@ -1,0 +1,35 @@
+@interface AMapCloudPOI : AMapSearchObject
+@property (nonatomic) q uid;
+@property (nonatomic) NSString name;
+@property (nonatomic) AMapGeoPoint location;
+@property (nonatomic) NSString address;
+@property (nonatomic) NSDictionary customFields;
+@property (nonatomic) NSString createTime;
+@property (nonatomic) NSString updateTime;
+@property (nonatomic) q distance;
+@property (nonatomic) NSArray images;
+- (BOOL)ajo_validateValue:forKey:error:;
+- (void)ajo_ignoredSetValue:forUndefinedMappingKey:;
+- (id)customFields;
+- (void)setCustomFields:;
+- (long long)distance;
+- (id)init;
+- (void)setName:;
+- (long long)uid;
+- (void)setDistance:;
+- (id)createTime;
+- (void)setUid:;
+- (void)setAddress:;
+- (id)images;
+- (id)location;
+- (void)setLocation:;
+- (void).cxx_destruct;
+- (void)setCreateTime:;
+- (id)address;
+- (void)setImages:;
+- (id)name;
+- (id)updateTime;
+- (void)setUpdateTime:;
++ (id)ajo_arrayClassMapping;
++ (id)ajo_mapping;
+@end

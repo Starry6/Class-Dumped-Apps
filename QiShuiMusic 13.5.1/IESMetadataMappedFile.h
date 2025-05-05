@@ -1,0 +1,31 @@
+@interface IESMetadataMappedFile : NSObject
+@property (nonatomic) NSString filePath;
+@property (nonatomic) NSInteger mapLength;
+@property (nonatomic) NSInteger fileSize;
+- (BOOL)mmapWithLength:;
+- (void)mapFile;
+- (BOOL)validateAction:location:length:;
+- (BOOL)boolValueAtLocation:;
+- (id)charsAtLocation:length:;
+- (unsigned int)crc32AtLocation:;
+- (id)dataAtLocation:length:;
+- (BOOL)extendFile;
+- (BOOL)extendFileToSize:;
+- (int)intValueAtLocation:;
+- (int)mapLength;
+- (void)resetFile;
+- (BOOL)resetToNewFile;
+- (BOOL)safeTruncateFileToSize:;
+- (void)setMapLength:;
+- (void)writeBool:location:;
+- (void)writeChars:location:;
+- (void)writeCrc32:location:;
+- (void)writeData:location:;
+- (void)writeIntValue:location:;
+- (id)filePath;
+- (int)fileSize;
+- (void)dealloc;
+- (void)setFilePath:;
+- (void).cxx_destruct;
++ (id)mappedFileWithPath:mapLength:;
+@end

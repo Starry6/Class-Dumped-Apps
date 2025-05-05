@@ -1,0 +1,34 @@
+@interface IESECWinTabSectionController : IESECWinListKitCellController
+@property (nonatomic) FBKVOController KVOCtrl;
+@property (nonatomic) IESECWinTabCell tabCell;
+@property (nonatomic) IESECServiceProxy<IESECWinTabService> tabService;
+@property (nonatomic) IESECServiceProxy<IESECWinDataService> dataService;
+@property (nonatomic) IESECServiceProxy<IESECWinFeedLinkedService> linkService;
+@property (nonatomic) IESECServiceProxy<IESECWinSplitService> splitService;
+@property (nonatomic) IESECServiceProxy<IESECWinCategoryService> categoryService;
+@property (nonatomic) IESECServiceProxy<IESECWinPageCardService> pageCardService;
+- (id)KVOCtrl;
+- (void)setDataService:;
+- (id)tabCell;
+- (id)categoryService;
+- (id)configWithCell:;
+- (id)pageCardService;
+- (void)setLinkService:;
+- (id)cellForItemAtIndex:;
+- (id)dataService;
+- (void)didUpdateToObject:;
+- (id)linkService;
+- (void)setCategoryService:;
+- (void)setKVOCtrl:;
+- (void)setPageCardService:;
+- (void)setSplitService:;
+- (void)setTabCell:;
+- (void)setTabService:;
+- (id)splitService;
+- (id)tabService;
+- (void)tabTrackWithEvent:tab:clickType:;
+- (long long)numberOfItems;
+- (void).cxx_destruct;
+- (void)addObserver;
+- (id)sizeForItemAtIndex:;
+@end

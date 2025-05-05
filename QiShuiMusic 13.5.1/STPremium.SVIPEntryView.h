@@ -1,0 +1,8 @@
+@interface STPremium.SVIPEntryView : UIView
+@property (nonatomic) BOOL hidden;
+- (id)initWithCoder:;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)setHidden:;
+- (BOOL)isHidden;
+@end

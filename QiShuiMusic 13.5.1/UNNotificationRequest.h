@@ -1,0 +1,32 @@
+@interface UNNotificationRequest : NSObject
+@property (nonatomic) Q destinations;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) UNNotificationContent content;
+@property (nonatomic) UNNotificationTrigger trigger;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)content;
+- (unsigned long long)destinations;
+- (void)enterSecurityScope;
+- (id)identifier;
+- (id)initWithCoder:;
+- (void)removeSecurityScope;
+- (unsigned long long)hash;
+- (id)trigger;
+- (void)leaveSecurityScope;
+- (void)encodeWithCoder:;
+- (void)addSecurityScope:;
+- (id)_initWithIdentifier:content:trigger:destinations:;
+- (void).cxx_destruct;
+- (void)setDestinations:;
+- (id)description;
+- (unsigned long long)_notificationDestinationsForInterruptionLevel:inputDestinations:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
++ (BOOL)supportsSecureCoding;
++ (id)requestWithIdentifier:content:trigger:;
++ (id)requestWithIdentifier:pushPayload:bundleIdentifier:;
++ (id)requestWithIdentifier:content:trigger:destinations:;
+@end

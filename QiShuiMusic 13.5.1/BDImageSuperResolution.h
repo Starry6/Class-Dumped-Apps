@@ -1,0 +1,32 @@
+@interface BDImageSuperResolution : NSObject
++ (int)bmfSrAlgorithmTypeForScaleMode:;
++ (void)removeSuperResolutionCache_sync;
++ (void)setConcurrencyExceededStrategy:;
++ (id)CGImageToMTLTexture:pixelFormat:;
++ (unsigned long long)concurrencyExceededStrategy;
++ (id)createCGImageFromMTLTexture:pixelFormat:;
++ (id)createCGImageFromRedrawRGBA:;
++ (id)createSuperResolutionImageFromImage:scaleMode:cacheCanvas:error:;
++ (id)forceCreateBMFSRProcessWithImageSize:scaleMode:error:;
++ (void)internal_removeSuperResolutionCache_noLock;
++ (BOOL)isSmallSrScaleMode:;
++ (unsigned long long)maxCacheCount;
++ (double)maxLevel;
++ (double)minLevel;
++ (void)registerMemoryWarningIfNeed;
++ (void)removeSuperResolutionCacheWhenChangingSRAlgorithm;
++ (void)removeSuperResolutionCache_async;
++ (id)requestBMFSRProcessWithImageSize:scaleMode:error:;
++ (float)scaleRatioWithScaleMode:;
++ (void)setMaxCacheCount:;
++ (void)setMaxConcurrentCount:;
++ (void)setMaxLevel:;
++ (void)setMinLevel:;
++ (id)superResolution:processImage:withScaleMode:error:;
++ (id)superResolutionImageWithImage:error:;
++ (id)superResolutionImageWithImage:level:cacheCanvas:error:;
++ (id)superResolutionImageWithImage:level:error:;
++ (id)texture:performSuperResolutionWithScaleMode:cacheCanvas:error:;
++ (void)didReceiveMemoryWarning:;
++ (unsigned long long)maxConcurrentCount;
+@end

@@ -1,0 +1,35 @@
+@interface GEOTransitDepartureSequenceUsage : PBCodable
+@property (nonatomic) BOOL hasLineId;
+@property (nonatomic) Q lineId;
+@property (nonatomic) BOOL hasDirection;
+@property (nonatomic) NSString direction;
+@property (nonatomic) BOOL hasHeadsign;
+@property (nonatomic) NSString headsign;
+- (void)readAll:;
+- (id)direction;
+- (id)init;
+- (void)setDirection:;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (unsigned long long)lineId;
+- (void)setLineId:;
+- (void)setHasLineId:;
+- (BOOL)hasLineId;
+- (BOOL)hasDirection;
+- (BOOL)hasHeadsign;
+- (id)headsign;
+- (void)setHeadsign:;
++ (BOOL)isValid:;
+@end

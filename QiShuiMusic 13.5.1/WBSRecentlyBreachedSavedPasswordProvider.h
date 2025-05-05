@@ -1,0 +1,2 @@
+@interface WBSRecentlyBreachedSavedPasswordProvider : WBSRecentlyBreachedPasswordProvider
+@end

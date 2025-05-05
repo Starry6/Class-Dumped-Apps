@@ -1,0 +1,33 @@
+@interface AWETCMNoticeModel : IESIMBaseApiModel
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString content;
+@property (nonatomic) NSString schemaURL;
+@property (nonatomic) NSString logExtra;
+@property (nonatomic) NSString sourceName;
+@property (nonatomic) IESIMURLModel sourceAvatar;
+@property (nonatomic) IESIMURLModel sourceAvatarOnDarkMode;
+@property (nonatomic) double contentW;
+@property (nonatomic) double contentH;
+- (double)contentH;
+- (double)contentW;
+- (id)logExtra;
+- (id)schemaURL;
+- (void)setContentH:;
+- (void)setContentW:;
+- (void)setLogExtra:;
+- (void)setSchemaURL:;
+- (void)setSourceAvatar:;
+- (void)setSourceAvatarOnDarkMode:;
+- (id)sourceAvatar;
+- (id)sourceAvatarOnDarkMode;
+- (id)sourceName;
+- (id)content;
+- (void)setContent:;
+- (void)setSourceName:;
+- (void)setTitle:;
+- (id)title;
+- (void).cxx_destruct;
++ (id)sourceAvatarJSONTransformer;
++ (id)sourceAvatarOnDarkModeJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

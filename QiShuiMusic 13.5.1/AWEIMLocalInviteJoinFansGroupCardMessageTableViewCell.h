@@ -1,0 +1,32 @@
+@interface AWEIMLocalInviteJoinFansGroupCardMessageTableViewCell : AWEIMSystemMessageTableViewCell
+@property (nonatomic) UIView cardView;
+@property (nonatomic) UIImageView avatarImageView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel subTitleLabel;
+@property (nonatomic) BOOL isBlockedByTheOtherPerson;
+@property (nonatomic) IESIMUserModel fullDetailUser;
+- (void)__fetchBlockedStatusAndDataAndUpdateLabels;
+- (void)__fetchDataIfNecessaryWithCompletion:;
+- (void)__fetchFullDetailUserWithCompletion:;
+- (void)__trackShowEvent;
+- (void)__transferToFansGroupPage;
+- (void)__updateTitleLabel:subTitleLabel:;
+- (id)__zeroGroupStr;
+- (void)configWithMessage:;
+- (id)fullDetailUser;
+- (BOOL)isBlockedByTheOtherPerson;
+- (void)setFullDetailUser:;
+- (void)setIsBlockedByTheOtherPerson:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setupUI;
+- (id)avatarImageView;
+- (void)setAvatarImageView:;
+- (id)cardView;
+- (void)setCardView:;
+- (id)subTitleLabel;
+- (void)setSubTitleLabel:;
++ (id)contentSizeWithMesasge:;
++ (id)identifier;
+@end

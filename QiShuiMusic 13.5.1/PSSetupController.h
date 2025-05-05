@@ -1,0 +1,21 @@
+@interface PSSetupController : PSRootController
+- (void)handleURL:;
+- (void)dismiss;
+- (id)init;
+- (void)dismissAnimated:;
+- (void)setParentController:;
+- (id)parentController;
+- (void)dismissWithCompletion:;
+- (void)viewDidDisappear:;
+- (void)viewWillDisappear:;
+- (void)dismissAnimated:completion:;
+- (void).cxx_destruct;
+- (id)controller;
+- (void)showController:animate:;
+- (void)setupController;
+- (void)statusBarWillChangeHeight:;
+- (void)pushControllerOnParentWithSpecifier:;
+- (void)popControllerOnParent;
+- (BOOL)usePopupStyle;
+- (BOOL)popupStyleIsModal;
+@end

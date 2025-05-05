@@ -1,0 +1,24 @@
+@interface CUIRenditionMetrics : NSObject
+- (id)contentRect;
+- (id)auxiliary2TopRightMargin;
+- (id)edgeBottomLeftMargin;
+- (id)edgeTopRightMargin;
+- (id)contentTopRightMargin;
+- (id)imageSize;
+- (BOOL)hasAlignmentEdgeMargins;
+- (BOOL)scalesHorizontally;
+- (id)metricsByMirroringHorizontally;
+- (double)baseline;
+- (id)auxiliary1TopRightMargin;
+- (id)auxiliary2BottomLeftMargin;
+- (id)auxiliary1BottomLeftMargin;
+- (id)insetContentRectWithMetrics:;
+- (id)contentBottomLeftMargin;
+- (id)defaultImageSize;
+- (id)insetRectWithMetrics:;
+- (BOOL)scalesVertically;
+- (BOOL)hasOpaqueContentBounds;
+- (double)scale;
+- (id)edgeRect;
+- (id)copyWithZone:;
+@end

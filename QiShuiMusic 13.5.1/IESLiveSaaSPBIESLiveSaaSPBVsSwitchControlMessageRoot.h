@@ -1,0 +1,2 @@
+@interface IESLiveSaaSPBIESLiveSaaSPBVsSwitchControlMessageRoot : GPBRootObject
+@end

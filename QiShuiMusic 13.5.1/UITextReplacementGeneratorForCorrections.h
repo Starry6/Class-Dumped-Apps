@@ -1,0 +1,35 @@
+@interface UITextReplacementGeneratorForCorrections : UITextReplacementGenerator
+@property (nonatomic) UITextChecker textChecker;
+@property (nonatomic) TIKeyboardCandidate autocorrectionRecord;
+@property (nonatomic) BOOL forceHistoryReplacement;
+@property (nonatomic) Q maxEditDistance;
+@property (nonatomic) Q maxCountAfterAutocorrectionGuesses;
+@property (nonatomic) BOOL forceAutocorrectionGuesses;
+@property (nonatomic) Q maxCountAfterSpellingGuesses;
+@property (nonatomic) BOOL forceSpellingGuesses;
+- (id)textChecker;
+- (id)init;
+- (void).cxx_destruct;
+- (id)replacements;
+- (BOOL)isStringToReplaceMisspelled;
+- (BOOL)isStringMisspelled:;
+- (id)addReplacementRevertingAutocorrectionToReplacements:;
+- (void)addPreviouslySuggestedAutocorrectionToReplacements:;
+- (void)addAutocorrectionGuessesToReplacements:;
+- (void)addSpellingGuessesForString:ToReplacements:;
+- (void)setTextChecker:;
+- (id)autocorrectionRecord;
+- (void)setAutocorrectionRecord:;
+- (BOOL)forceHistoryReplacement;
+- (void)setForceHistoryReplacement:;
+- (unsigned long long)maxEditDistance;
+- (void)setMaxEditDistance:;
+- (unsigned long long)maxCountAfterAutocorrectionGuesses;
+- (void)setMaxCountAfterAutocorrectionGuesses:;
+- (BOOL)forceAutocorrectionGuesses;
+- (void)setForceAutocorrectionGuesses:;
+- (unsigned long long)maxCountAfterSpellingGuesses;
+- (void)setMaxCountAfterSpellingGuesses:;
+- (BOOL)forceSpellingGuesses;
+- (void)setForceSpellingGuesses:;
+@end

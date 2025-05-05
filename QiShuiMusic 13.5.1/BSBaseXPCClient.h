@@ -1,0 +1,33 @@
+@interface BSBaseXPCClient : NSObject
+@property (nonatomic) BOOL suspended;
+- (id)_connection;
+- (id)init;
+- (void)resumeConnection;
+- (void)dealloc;
+- (id)_getStringFromMessage:key:;
+- (void)_sendReplyForMessage:messagePacker:;
+- (void)suspendConnection;
+- (BOOL)isSuspended;
+- (id)initWithEndpoint:;
+- (void)_sendReply:messagePacker:;
+- (id)initWithServiceName:;
+- (void)_sendMessageReply:messagePacker:;
+- (void)invalidate;
+- (void)_setEndpoint:;
+- (id)initWithServiceName:endpoint:;
+- (void)reconnectIfNecessary;
+- (id)_errorFromMessageIfAny:;
+- (void)_sendMessage:;
+- (void)_sendMessage:withReplyHandler:waitForReply:waitDuration:;
+- (void)queue_handleMessage:;
+- (void)queue_handleError:;
+- (void)queue_connectionWasCreated;
+- (void)queue_connectionWasResumed;
+- (void)queue_connectionWasSuspended;
+- (void)queue_connectionWasDestroyed;
+- (void)queue_connectionWasInterrupted;
+- (void)queue_connectionWasInvalidated;
+- (void)queue_clientWasInvalidated;
+- (id)_connectionInstanceUUID;
+- (id)queue_connection;
+@end

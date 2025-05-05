@@ -1,0 +1,2 @@
+@interface TRITripersistedNetworkBehaviorRoot : TRIPBRootObject
+@end

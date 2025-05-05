@@ -1,0 +1,2 @@
+@interface InteractionUpdateSettingApiRoot : GPBRootObject
+@end

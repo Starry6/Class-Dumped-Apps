@@ -1,0 +1,31 @@
+@interface IESIMPOITradingModel : IESIMBaseApiModel
+@property (nonatomic) NSString typeText;
+@property (nonatomic) NSString typeTextColor;
+@property (nonatomic) NSString typeTextLightColor;
+@property (nonatomic) NSString typeTextBackgroundColor;
+@property (nonatomic) NSString typeTextLightBackgroundColor;
+@property (nonatomic) NSString infoText;
+@property (nonatomic) NSString priceText;
+@property (nonatomic) NSString recruitedText;
+@property (nonatomic) q style;
+- (id)recruitedText;
+- (void)setRecruitedText:;
+- (void)setTypeText:;
+- (void)setTypeTextBackgroundColor:;
+- (void)setTypeTextColor:;
+- (void)setTypeTextLightBackgroundColor:;
+- (void)setTypeTextLightColor:;
+- (id)typeText;
+- (id)typeTextBackgroundColor;
+- (id)typeTextColor;
+- (id)typeTextLightBackgroundColor;
+- (id)typeTextLightColor;
+- (void)setStyle:;
+- (void).cxx_destruct;
+- (long long)style;
+- (void)setInfoText:;
+- (id)infoText;
+- (id)priceText;
+- (void)setPriceText:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

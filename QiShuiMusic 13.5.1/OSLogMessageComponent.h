@@ -1,0 +1,33 @@
+@interface OSLogMessageComponent : NSObject
+@property (nonatomic) NSString formatSubstring;
+@property (nonatomic) NSString placeholder;
+@property (nonatomic) NSData argumentDataValue;
+@property (nonatomic) NSNumber argumentNumberValue;
+@property (nonatomic) NSString argumentStringValue;
+@property (nonatomic) q argumentCategory;
+@property (nonatomic) double argumentDoubleValue;
+@property (nonatomic) q argumentInt64Value;
+@property (nonatomic) Q argumentUInt64Value;
+- (id)placeholder;
+- (id)initWithCoder:;
+- (void)setPlaceholder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)initWithDecomposedMessage:atIndex:;
+- (void)fillWithScalar:;
+- (void)fillWithString:;
+- (void)fillWithData:;
+- (id)formatSubstring;
+- (void)setFormatSubstring:;
+- (long long)argumentCategory;
+- (id)argumentDataValue;
+- (void)setArgumentDataValue:;
+- (double)argumentDoubleValue;
+- (long long)argumentInt64Value;
+- (id)argumentNumberValue;
+- (void)setArgumentNumberValue:;
+- (id)argumentStringValue;
+- (void)setArgumentStringValue:;
+- (unsigned long long)argumentUInt64Value;
++ (BOOL)supportsSecureCoding;
+@end

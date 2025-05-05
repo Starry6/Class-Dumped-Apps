@@ -1,0 +1,30 @@
+@interface LiveStreamRenderSink : NSObject
+@property (nonatomic) LiveStreamRenderSinkBuffer sinkBuffer;
+@property (nonatomic) @? getAudioCallback;
+- (float)getPlayerVolume;
+- (void)enableAGC:isVoice:;
+- (id)getAudioCallback;
+- (long long)getQuirks;
+- (id)initWithByteAudioRenderSink:;
+- (BOOL)isEnableAGC;
+- (void)openForceMediaMode:;
+- (void)pushAudioData:samplesPerChannel:sampleRate:numChannels:timestamp:;
+- (void)setAudioLoudNormParam:;
+- (void)setDisAbleLockWhenStopAndPull:;
+- (void)setEnableMix2Output:;
+- (void)setExhaustMode:withConfig:;
+- (void)setGetAudioCallback:;
+- (void)setPlayerVolume:;
+- (void)setQuirks:;
+- (void)setSinkBuffer:;
+- (id)sinkBuffer;
+- (void)dealloc;
+- (void)setVolume:;
+- (void)setMute:;
+- (void)startStream;
+- (void).cxx_destruct;
+- (id).cxx_construct;
+- (float)getVolume;
+- (void)stopStream;
+- (BOOL)isMute;
+@end

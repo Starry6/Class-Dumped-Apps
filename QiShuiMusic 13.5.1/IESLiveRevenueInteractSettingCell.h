@@ -1,0 +1,38 @@
+@interface IESLiveRevenueInteractSettingCell : UITableViewCell
+@property (nonatomic) <IESLiveCompoundSubscription> disposable;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIButton onOffSwitchTouchButton;
+@property (nonatomic) UISwitch onOffSuperficialSwitch;
+@property (nonatomic) UIImageView arrowImage;
+@property (nonatomic) UILabel valueLabel;
+@property (nonatomic) IESLiveButton rightButton;
+@property (nonatomic) IESLiveRevenueInteractSettingCellItem item;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)bindAction;
+- (id)disposable;
+- (id)getTextValueFromTextFieldCell;
+- (id)onOffSuperficialSwitch;
+- (void)onOffSwitchChanged;
+- (id)onOffSwitchTouchButton;
+- (void)onRightButtonClicked;
+- (void)setDisposable:;
+- (void)setOnOffSuperficialSwitch:;
+- (void)setOnOffSwitchTouchButton:;
+- (void)updateItem:;
+- (id)initWithStyle:reuseIdentifier:;
+- (id)item;
+- (void)setTitleLabel:;
+- (void)prepareForReuse;
+- (id)rightButton;
+- (void)setItem:;
+- (void).cxx_destruct;
+- (void)setRightButton:;
+- (id)titleLabel;
+- (id)valueLabel;
+- (void)setValueLabel:;
+- (id)arrowImage;
+- (void)setArrowImage:;
+@end

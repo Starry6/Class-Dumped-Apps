@@ -1,0 +1,30 @@
+@interface WBSHistoryTagsPredicate : NSObject
+@property (nonatomic) NSDate startDate;
+@property (nonatomic) NSDate endDate;
+@property (nonatomic) Q tagType;
+@property (nonatomic) NSSet identifiers;
+@property (nonatomic) Q limit;
+@property (nonatomic) Q minimumItemCount;
+@property (nonatomic) q sortOrder;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)sortOrder;
+- (unsigned long long)tagType;
+- (unsigned long long)limit;
+- (id)startDate;
+- (void)setSortOrder:;
+- (id)identifiers;
+- (id)initWithCoder:;
+- (void)setLimit:;
+- (void)encodeWithCoder:;
+- (id)endDate;
+- (void)setIdentifiers:;
+- (void).cxx_destruct;
+- (id)statementForDatabase:cache:fetchOptions:error:;
+- (id)initWithStartDate:endDate:tagType:;
+- (unsigned long long)minimumItemCount;
+- (void)setMinimumItemCount:;
++ (BOOL)supportsSecureCoding;
+@end

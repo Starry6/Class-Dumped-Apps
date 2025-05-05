@@ -1,0 +1,33 @@
+@interface VSSubscriptionPersistentContainer : NSObject
+@property (nonatomic) NSOperationQueue migrationQueue;
+@property (nonatomic) BOOL didSetupPersistence;
+@property (nonatomic) NSPersistentStoreCoordinator persistentStoreCoordinator;
+@property (nonatomic) VSOptional viewContext;
+@property (nonatomic) BOOL skipMigration;
+@property (nonatomic) NSString persistentStoreType;
+@property (nonatomic) NSURL persistentStoreURL;
+@property (nonatomic) NSURL subscriptionsPropertyListURL;
+- (void)setPersistentStoreCoordinator:;
+- (id)persistentStoreCoordinator;
+- (id)init;
+- (void)setMigrationQueue:;
+- (void)setDidSetupPersistence:;
+- (void)setSkipMigration:;
+- (void)setPersistentStoreURL:;
+- (id)migrationQueue;
+- (BOOL)didSetupPersistence;
+- (void)performBlockAndWait:;
+- (void)_removePersistentStore;
+- (BOOL)skipMigration;
+- (void)setSubscriptionsPropertyListURL:;
+- (void)setPersistentStoreType:;
+- (BOOL)_setupPersistenceIfNeeded:;
+- (id)viewContext;
+- (void).cxx_destruct;
+- (void)_performBlock:andWait:;
+- (id)persistentStoreType;
+- (id)persistentStoreURL;
+- (void)setViewContext:;
+- (id)subscriptionsPropertyListURL;
+- (void)performBlock:;
+@end

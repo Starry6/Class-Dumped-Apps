@@ -1,0 +1,35 @@
+@interface IESECPlaybackCardListDataSource : NSObject
+@property (nonatomic) BOOL haveTimeStamp;
+@property (nonatomic) IESECLiveRoomContext roomContext;
+@property (nonatomic) NSDictionary addtionalParams;
+@property (nonatomic) NSArray pageTimeStamp;
+@property (nonatomic) NSMutableArray replayCards;
+@property (nonatomic) NSMutableArray pageAlreadyRequested;
+@property (nonatomic) NSString authorID;
+@property (nonatomic) NSString roomID;
+@property (nonatomic) q mode;
+- (void)setReplayCards:;
+- (void)setRoomContext:;
+- (id)addtionalParams;
+- (void)fetchReplayCardsWithPage:completion:;
+- (void)fetchTimeStampWithCompletion:;
+- (BOOL)haveTimeStamp;
+- (id)liveContext;
+- (id)pageAlreadyRequested;
+- (id)pageTimeStamp;
+- (id)replayCards;
+- (void)setAddtionalParams:;
+- (void)setHaveTimeStamp:;
+- (void)setPageAlreadyRequested:;
+- (void)setPageTimeStamp:;
+- (void)updateAdditionalParams:;
+- (id)init;
+- (void).cxx_destruct;
+- (long long)mode;
+- (void)setMode:;
+- (id)roomID;
+- (void)setRoomID:;
+- (id)roomContext;
+- (id)authorID;
+- (void)setAuthorID:;
+@end

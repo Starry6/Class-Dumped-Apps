@@ -1,0 +1,30 @@
+@interface CPLResourceTransferTaskOptions : NSObject
+@property (nonatomic) Q intent;
+@property (nonatomic) Q priority;
+@property (nonatomic) {?={?=qiIq}{?=qiIq}} timeRange;
+- (unsigned long long)intent;
+- (id)timeRange;
+- (id)init;
+- (BOOL)isForeground;
+- (id)initWithCoder:;
+- (void)setTimeRange:;
+- (BOOL)isHighPriority;
+- (void)encodeWithCoder:;
+- (id)description;
+- (id)copyWithZone:;
+- (unsigned long long)priority;
+- (id)initWithIntent:priority:;
+- (BOOL)hasValidTimeRange;
+- (id)initWithHighPriority:;
+- (id)initWithIntent:priority:timeRange:;
+- (BOOL)shouldKeepPower;
+- (unsigned long long)legacyIntent;
++ (BOOL)supportsSecureCoding;
++ (id)optionsForLegacyIntent:;
++ (id)descriptionForIntentPriority:;
++ (BOOL)isHighPriorityForIntent:priority:;
++ (id)defaultOptions;
++ (id)descriptionForIntent:;
++ (id)intentsToBackgroundDownload;
++ (BOOL)isForegroundOperationForIntent:priority:;
+@end

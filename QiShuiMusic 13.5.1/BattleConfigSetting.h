@@ -1,0 +1,31 @@
+@interface BattleConfigSetting : IESLivePBBaseMessage
+@property (nonatomic) NSString mixFromAnchorId;
+@property (nonatomic) BOOL isShell;
+@property (nonatomic) NSInteger modType;
+@property (nonatomic) BattleSelfData selfData;
+@property (nonatomic) BOOL hasSelfData;
+@property (nonatomic) VoteSetting voteData;
+@property (nonatomic) BOOL hasVoteData;
+@property (nonatomic) BattleSelfSettingRate selfSettingRate;
+@property (nonatomic) BOOL hasSelfSettingRate;
+@property (nonatomic) q flexActivityId;
+@property (nonatomic) BattleShellConfig shellConfig;
+@property (nonatomic) BOOL hasShellConfig;
+@property (nonatomic) BreakthroughConfig breakthroughConfig;
+@property (nonatomic) BOOL hasBreakthroughConfig;
+@property (nonatomic) SpecifyGiftConfig specifyGiftConfig;
+@property (nonatomic) BOOL hasSpecifyGiftConfig;
+@property (nonatomic) NSInteger playMode;
+@property (nonatomic) NSInteger teamMode;
+@property (nonatomic) NSInteger activityMode;
+@property (nonatomic) SurvivalConfig survivalConfig;
+@property (nonatomic) BOOL hasSurvivalConfig;
+@property (nonatomic) SeasonConfig seasonConfig;
+@property (nonatomic) BOOL hasSeasonConfig;
+@property (nonatomic) CustomConfig customConfig;
+@property (nonatomic) BOOL hasCustomConfig;
+@property (nonatomic) NSString fromAnchorOpenId;
+- (BOOL)isShell;
+- (id)mixFromAnchorId;
++ (id)descriptor;
+@end

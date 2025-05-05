@@ -1,0 +1,34 @@
+@interface IESLiveInteractionLayoutOperationView : UIView
+@property (nonatomic) UIButton actionBtn;
+@property (nonatomic) UIImageView arrowImgView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) double scale;
+@property (nonatomic) Q layout;
+@property (nonatomic) @? onSwitchLayout;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)actionBtn;
+- (id)arrowImgView;
+- (id)btd_hitTestEdgeInsets;
+- (void)onLayoutOperation:;
+- (id)onSwitchLayout;
+- (void)setActionBtn:;
+- (void)setArrowImgView:;
+- (void)setOnSwitchLayout:;
+- (void)setupWithLayout:;
+- (void)updatePaidLinkMicText:;
+- (void)updateWithLayout:;
+- (void)updateWithListCount:;
+- (void)setTitleLabel:;
+- (void)layoutSubviews;
+- (void)setScale:;
+- (void)setLayout:;
+- (unsigned long long)layout;
+- (id)initWithFrame:layout:;
+- (void).cxx_destruct;
+- (double)scale;
+- (id)titleLabel;
+- (void)setupViews;
+@end

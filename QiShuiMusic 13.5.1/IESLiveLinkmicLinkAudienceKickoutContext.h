@@ -1,0 +1,37 @@
+@interface IESLiveLinkmicLinkAudienceKickoutContext : IESLiveLinkmicLinkContext
+@property (nonatomic) IESLiveLinkMicAudienceKickOutResponse_ResponseData kickOutResponse;
+@property (nonatomic) HTSLiveLinkMicMethod message;
+@property (nonatomic) HTSLiveLinkMessage linkMessage;
+@property (nonatomic) NSString kickoutFromUserID;
+@property (nonatomic) BOOL isSysKickOut;
+@property (nonatomic) q sysKickOutSource;
+@property (nonatomic) Q vendor;
+@property (nonatomic) NSNumber channelID;
+@property (nonatomic) NSString linkmicID;
+@property (nonatomic) NSString promptString;
+@property (nonatomic) NSString linkerSessionId;
+@property (nonatomic) NSString remoteLinkerSessionId;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)kickOutResponse;
+- (id)initWithKickoutResponse:;
+- (id)initWithLinkMessage:;
+- (id)initWithLinkMicMethodMessage:;
+- (BOOL)isSysKickOut;
+- (id)kickoutFromUserID;
+- (id)linkmicID;
+- (void)setIsSysKickOut:;
+- (void)setKickOutResponse:;
+- (void)setKickoutFromUserID:;
+- (void)setSysKickOutSource:;
+- (long long)sysKickOutSource;
+- (void)setMessage:;
+- (id)message;
+- (void).cxx_destruct;
+- (id)rawData;
+- (id)promptString;
+- (id)linkMessage;
+- (void)setLinkMessage:;
+@end

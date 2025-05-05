@@ -1,0 +1,35 @@
+@interface CLPInstSchemaCLPNLv4SampleEvaluationStarted : SISchemaInstrumentationMessage
+@property (nonatomic) I batchNumChunks;
+@property (nonatomic) BOOL hasBatchNumChunks;
+@property (nonatomic) I batchChunkId;
+@property (nonatomic) BOOL hasBatchChunkId;
+@property (nonatomic) SISchemaUUID syntheticRequestId;
+@property (nonatomic) BOOL hasSyntheticRequestId;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)setBatchNumChunks:;
+- (BOOL)hasBatchNumChunks;
+- (void)setHasBatchNumChunks:;
+- (void)deleteBatchNumChunks;
+- (void)setBatchChunkId:;
+- (BOOL)hasBatchChunkId;
+- (void)setHasBatchChunkId:;
+- (void)deleteBatchChunkId;
+- (BOOL)hasSyntheticRequestId;
+- (void)deleteSyntheticRequestId;
+- (unsigned int)batchNumChunks;
+- (unsigned int)batchChunkId;
+- (id)syntheticRequestId;
+- (void)setSyntheticRequestId:;
+- (void)setHasSyntheticRequestId:;
+@end

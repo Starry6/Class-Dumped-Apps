@@ -1,0 +1,32 @@
+@interface GEORPPlaceContainmentCorrections : PBCodable
+@property (nonatomic) BOOL hasParentContainment;
+@property (nonatomic) GEORPContainmentCorrection parentContainment;
+@property (nonatomic) BOOL hasChildContainment;
+@property (nonatomic) GEORPContainmentCorrection childContainment;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (id)init;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasParentContainment;
+- (id)parentContainment;
+- (void)setParentContainment:;
+- (BOOL)hasChildContainment;
+- (id)childContainment;
+- (void)setChildContainment:;
++ (BOOL)isValid:;
+@end

@@ -1,0 +1,32 @@
+@interface AXMRectangleDetectorNode : AXMEvaluationNode
+@property (nonatomic) double cameraPixelFocalLength;
+@property (nonatomic) {CGPoint=dd} cameraOpticalOrigin;
+@property (nonatomic) double minimumAspectRatio;
+@property (nonatomic) double maximumAspectRatio;
+@property (nonatomic) double quadratureTolerance;
+@property (nonatomic) double minimumSize;
+@property (nonatomic) q maximumNumberOfRects;
+- (void)setMinimumSize:;
+- (id)initWithCoder:;
+- (double)minimumSize;
+- (void)encodeWithCoder:;
+- (void)setQuadratureTolerance:;
+- (void)setMaximumAspectRatio:;
+- (void)setMinimumAspectRatio:;
+- (double)minimumAspectRatio;
+- (double)maximumAspectRatio;
+- (double)quadratureTolerance;
+- (void)nodeInitialize;
+- (BOOL)validateVisionKitSoftLinkSymbols;
+- (void)evaluate:metrics:;
+- (BOOL)requiresVisionFramework;
+- (void)setCameraPixelFocalLength:;
+- (void)setMaximumNumberOfRects:;
+- (double)cameraPixelFocalLength;
+- (id)cameraOpticalOrigin;
+- (void)setCameraOpticalOrigin:;
+- (long long)maximumNumberOfRects;
++ (BOOL)isSupported;
++ (BOOL)supportsSecureCoding;
++ (id)title;
+@end

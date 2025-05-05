@@ -1,0 +1,28 @@
+@interface MTLRenderPipelineColorAttachmentDescriptorInternal : MTLRenderPipelineColorAttachmentDescriptor
+- (id)_descriptorPrivate;
+- (id)init;
+- (void)dealloc;
+- (id)formattedDescription:;
+- (void)setPixelFormat:;
+- (unsigned long long)destinationRGBBlendFactor;
+- (void)setBlendingEnabled:;
+- (void)setRgbBlendOperation:;
+- (void)setDestinationRGBBlendFactor:;
+- (unsigned long long)rgbBlendOperation;
+- (unsigned long long)hash;
+- (unsigned long long)alphaBlendOperation;
+- (unsigned long long)sourceAlphaBlendFactor;
+- (void)setDestinationAlphaBlendFactor:;
+- (unsigned long long)destinationAlphaBlendFactor;
+- (BOOL)isBlendingEnabled;
+- (void)setAlphaBlendOperation:;
+- (unsigned long long)pixelFormat;
+- (id)description;
+- (void)setWriteMask:;
+- (void)setSourceAlphaBlendFactor:;
+- (unsigned long long)writeMask;
+- (unsigned long long)sourceRGBBlendFactor;
+- (void)setSourceRGBBlendFactor:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+@end

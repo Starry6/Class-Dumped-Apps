@@ -1,0 +1,32 @@
+@interface MFMessageBodyParser : MFMessageBodyParserObject
+@property (nonatomic) Q options;
+- (void)setOptions:;
+- (id)init;
+- (void)dealloc;
+- (id)parserError;
+- (BOOL)parse;
+- (unsigned long long)options;
+- (void)didFindError:;
+- (int)messageBodyStringAccumulatorDefaultOptions;
+- (Class)messageBodyElementClass;
+- (void)copyBlocks;
+- (BOOL)shouldProceedParsing;
+- (id)newStringAccumulatorWithOptions:lengthLimit:;
+- (void)setFoundMessageBodyElementBlock:;
+- (void)addSubparser:;
+- (void)removeSubparser:;
+- (id)getAvailableMessageBodyElement;
+- (BOOL)isLandmarkTagName:;
+- (BOOL)shouldIgnoreTagWithTagName:;
+- (Class)messageBodyStringAccumulatorClass;
+- (void)enqueueParagraphNode:withTagName:;
+- (void)flushParagraphNodes;
+- (void)didFindBodyElement:;
+- (void)willBeginParsing;
+- (void)didFinishParsing;
+- (unsigned long long)quoteLevelForBodyNode:;
+- (void)getLevel:quoteLevel:forBodyNode:;
++ (BOOL)cacheRetainsNodes;
++ (BOOL)isLinebreakImpliedBeforeTagName:;
++ (BOOL)isLinebreakImpliedAfterTagName:;
+@end

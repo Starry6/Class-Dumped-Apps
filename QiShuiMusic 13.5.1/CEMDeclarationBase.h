@@ -1,0 +1,32 @@
+@interface CEMDeclarationBase : CEMPayloadBase
+@property (nonatomic) NSString declarationType;
+@property (nonatomic) NSString declarationIdentifier;
+@property (nonatomic) NSString declarationDescription;
+@property (nonatomic) NSString declarationServerHash;
+@property (nonatomic) NSNumber declarationRequiresNetworkTether;
+@property (nonatomic) NSString declarationActivationScope;
+@property (nonatomic) CEMAnyPayload declarationPayload;
+- (void).cxx_destruct;
+- (id)serialize;
+- (id)copyWithZone:;
+- (id)declarationIdentifier;
+- (id)declarationType;
+- (id)serializeAsDataWithError:;
+- (void)updateServerHash;
+- (BOOL)loadDeclarationFromDictionary:error:;
+- (void)setDeclarationType:;
+- (void)setDeclarationIdentifier:;
+- (id)declarationDescription;
+- (void)setDeclarationDescription:;
+- (id)declarationServerHash;
+- (void)setDeclarationServerHash:;
+- (id)declarationRequiresNetworkTether;
+- (void)setDeclarationRequiresNetworkTether:;
+- (id)declarationActivationScope;
+- (void)setDeclarationActivationScope:;
+- (id)declarationPayload;
+- (void)setDeclarationPayload:;
++ (id)declarationForData:error:;
++ (id)declarationClass;
++ (id)declarationForPayload:error:;
+@end

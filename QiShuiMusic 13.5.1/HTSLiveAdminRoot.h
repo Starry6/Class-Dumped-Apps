@@ -1,0 +1,2 @@
+@interface HTSLiveAdminRoot : GPBRootObject
+@end

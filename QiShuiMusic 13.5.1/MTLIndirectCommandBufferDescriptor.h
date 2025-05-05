@@ -1,0 +1,36 @@
+@interface MTLIndirectCommandBufferDescriptor : NSObject
+@property (nonatomic) Q resourceIndex;
+@property (nonatomic) Q maxObjectBufferBindCount;
+@property (nonatomic) Q maxMeshBufferBindCount;
+@property (nonatomic) Q commandTypes;
+@property (nonatomic) BOOL inheritPipelineState;
+@property (nonatomic) BOOL inheritBuffers;
+@property (nonatomic) Q maxVertexBufferBindCount;
+@property (nonatomic) Q maxFragmentBufferBindCount;
+@property (nonatomic) Q maxKernelBufferBindCount;
+@property (nonatomic) BOOL supportRayTracing;
+- (void)setResourceIndex:;
+- (unsigned long long)resourceIndex;
+- (id)init;
+- (unsigned long long)hash;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (unsigned long long)commandTypes;
+- (void)setCommandTypes:;
+- (BOOL)inheritPipelineState;
+- (void)setInheritPipelineState:;
+- (BOOL)inheritBuffers;
+- (void)setInheritBuffers:;
+- (unsigned long long)maxVertexBufferBindCount;
+- (void)setMaxVertexBufferBindCount:;
+- (unsigned long long)maxFragmentBufferBindCount;
+- (void)setMaxFragmentBufferBindCount:;
+- (unsigned long long)maxKernelBufferBindCount;
+- (void)setMaxKernelBufferBindCount:;
+- (unsigned long long)maxObjectBufferBindCount;
+- (void)setMaxObjectBufferBindCount:;
+- (unsigned long long)maxMeshBufferBindCount;
+- (void)setMaxMeshBufferBindCount:;
+- (BOOL)supportRayTracing;
+- (void)setSupportRayTracing:;
+@end

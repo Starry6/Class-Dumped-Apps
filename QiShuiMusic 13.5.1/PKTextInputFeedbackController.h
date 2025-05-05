@@ -1,0 +1,36 @@
+@interface PKTextInputFeedbackController : NSObject
+@property (nonatomic) PKTextInputElementContent referenceElementContent;
+@property (nonatomic) {_NSRange=QQ} referenceTextRange;
+@property (nonatomic) PKTextInputTextPlaceholder placeholder;
+@property (nonatomic) q feedbackType;
+@property (nonatomic) BOOL showingCustomFeedback;
+@property (nonatomic) PKTextInputGestureFeedbackView _feedbackView;
+@property (nonatomic) <PKTextInputFeedbackControllerDelegate> delegate;
+@property (nonatomic) PKTextInputTextPlaceholder reserveSpacePlaceholder;
+- (long long)feedbackType;
+- (void)setFeedbackType:;
+- (id)init;
+- (void)dealloc;
+- (id)placeholder;
+- (void)setDelegate:;
+- (void)setPlaceholder:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)_feedbackView;
+- (void)_placeholderChanged:;
+- (BOOL)_shouldShowCustomFeedback;
+- (void)_updateFeedbackState;
+- (void)_setShowingCustomFeedback:;
+- (void)_updateFeedbackView;
+- (void)setReferenceElementContent:referenceRange:feedbackType:;
+- (void)cancelShowingReserveSpaceIntro;
+- (void)beginDisplayForReserveSpacePlaceholder:;
+- (void)endDisplayForReserveSpacePlaceholder:;
+- (id)reserveSpacePlaceholder;
+- (id)referenceElementContent;
+- (void)setReferenceElementContent:;
+- (id)referenceTextRange;
+- (void)setReferenceTextRange:;
+- (BOOL)showingCustomFeedback;
+- (void)set_feedbackView:;
+@end

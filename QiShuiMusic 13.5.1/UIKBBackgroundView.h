@@ -1,0 +1,33 @@
+@interface UIKBBackgroundView : UIKBSplitImageView
+@property (nonatomic) NSObject geometryCacheKey;
+@property (nonatomic) UIKBScreenTraits screenTraits;
+@property (nonatomic) UIKBRenderConfig renderConfig;
+@property (nonatomic) NSString cacheKey;
+@property (nonatomic) BOOL cacheDeferable;
+@property (nonatomic) double cachedWidth;
+@property (nonatomic) BOOL keepNonPersistent;
+@property (nonatomic) q assetIdiom;
+@property (nonatomic) q cacheDeferPriority;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)cacheDeferable;
+- (id)cacheKey;
+- (BOOL)keepNonPersistent;
+- (long long)assetIdiom;
+- (void)drawContentsOfRenderers:;
+- (id)cacheKeysForRenderFlags:;
+- (id)renderConfig;
+- (double)cachedWidth;
+- (void)displayLayer:;
+- (BOOL)_canDrawContent;
+- (void)setRenderConfig:;
+- (id)geometryCacheKey;
+- (id)screenTraits;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)refreshStyleForKeyplane:inputTraits:;
+- (void)setScreenTraits:;
+- (void)setGeometryCacheKey:;
+@end

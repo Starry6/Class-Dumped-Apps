@@ -1,0 +1,30 @@
+@interface CKContextExtractionItem : NSObject
+@property (nonatomic) NSString title;
+@property (nonatomic) Q type;
+@property (nonatomic) NSString bundleIdentifier;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) NSString extractionSourceClassName;
+@property (nonatomic) BOOL onScreen;
+- (BOOL)isOnScreen;
+- (id)bundleIdentifier;
+- (void)setOnScreen:;
+- (id)toJSONSerializableDictionary;
+- (id)identifier;
+- (void)setType:;
+- (void)setTitle:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)setBundleIdentifier:;
+- (void)encodeWithCoder:;
+- (unsigned long long)type;
+- (id)title;
+- (void).cxx_destruct;
+- (id)description;
+- (void)setIdentifier:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)initWithTitle:type:bundleIdentifier:;
+- (id)extractionSourceClassName;
+- (void)setExtractionSourceClassName:;
++ (BOOL)supportsSecureCoding;
+@end

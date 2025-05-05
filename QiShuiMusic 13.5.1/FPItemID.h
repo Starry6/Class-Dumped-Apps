@@ -1,0 +1,38 @@
+@interface FPItemID : NSObject
+@property (nonatomic) BOOL diskIdentifier;
+@property (nonatomic) BOOL isPlaceholder;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) NSString providerDomainID;
+@property (nonatomic) NSString providerID;
+@property (nonatomic) NSString domainIdentifier;
+@property (nonatomic) NSString providerIdentifier;
+- (id)providerID;
+- (id)providerDomainID;
+- (id)domainIdentifier;
+- (id)initWithSearchableItem:;
+- (id)providerIdentifier;
+- (BOOL)isPlaceholder;
+- (BOOL)isEqualToItemID:;
+- (id)identifier;
+- (id)initWithProviderID:domainIdentifier:coreSpotlightIdentifier:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)initWithProviderID:domainIdentifier:itemIdentifier:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)coreSpotlightIdentifier;
+- (id)initWithProviderDomainID:itemIdentifier:;
+- (void)setProviderDomainID:;
+- (BOOL)isEqual:;
+- (BOOL)isDiskIdentifier;
+- (id)copyWithZone:;
++ (void)getDomainIdentifier:andIdentifier:fromCoreSpotlightIdentifier:;
++ (BOOL)supportsSecureCoding;
++ (id)rootItemIDWithProviderIdentifier:domainIdentifier:;
++ (id)coreSpotlightEncodedDomainIdentifier:;
++ (id)csIdentifierFromFPIdentifier:domainIdentifier:;
++ (id)rootItemIDWithProviderDomainID:;
++ (id)stringByRemovingPrefix:fromIdentifier:;
++ (id)fpIdentifierFromCoreSpotlightIdentifier:domainIdentifier:;
+@end

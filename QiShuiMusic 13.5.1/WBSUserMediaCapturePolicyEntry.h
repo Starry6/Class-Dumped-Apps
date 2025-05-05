@@ -1,0 +1,31 @@
+@interface WBSUserMediaCapturePolicyEntry : NSObject
+@property (nonatomic) double permissionExpirationDate;
+@property (nonatomic) double permissionGrantDate;
+@property (nonatomic) NSString origin;
+@property (nonatomic) NSString topLevelOrigin;
+@property (nonatomic) NSString persistentSalt;
+@property (nonatomic) Q permission;
+@property (nonatomic) NSMutableDictionary ephemeralSalts;
+- (unsigned long long)permission;
+- (void)setOrigin:;
+- (void)setPermission:;
+- (id)origin;
+- (id)initWithDictionaryRepresentation:;
+- (BOOL)isValid;
+- (void).cxx_destruct;
+- (id)dictionaryRepresentation;
+- (id)initWithPermission:expirationPolicy:forOrigin:topLevelOrigin:;
+- (BOOL)permissionExpiresWithinOneDay;
+- (void)updatePermission:expirationPolicy:;
+- (BOOL)_isValidUserMediaPermission:;
+- (double)permissionExpirationDate;
+- (void)setPermissionExpirationDate:;
+- (double)permissionGrantDate;
+- (void)setPermissionGrantDate:;
+- (id)topLevelOrigin;
+- (void)setTopLevelOrigin:;
+- (id)persistentSalt;
+- (void)setPersistentSalt:;
+- (id)ephemeralSalts;
+- (void)setEphemeralSalts:;
+@end

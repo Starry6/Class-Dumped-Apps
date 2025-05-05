@@ -1,0 +1,36 @@
+@interface AXBaseSettings : NSObject
+@property (nonatomic) NSMutableSet registeredPreferenceKeys;
+@property (nonatomic) NSMutableDictionary preferenceKeysByDomainNameToSynchronize;
+@property (nonatomic) NSMutableDictionary updateBlocks;
+- (void)_synchronizeIfNecessaryForPreferenceKey:domainName:;
+- (BOOL)boolValueForPreferenceKey:defaultValue:;
+- (id)init;
+- (id)_userDefaultsStoreForDomainName:;
+- (void)dealloc;
+- (id)domainNameForPreferenceKey:;
+- (id)valueForPreferenceKey:;
+- (void)setPreferenceKeysByDomainNameToSynchronize:;
+- (id)allDomainNamesForPreferenceKey:;
+- (id)updateBlocks;
+- (void)_registerForNotification:;
+- (void)clearExistingValueForPreferenceWithSelector:;
+- (void)setValue:forPreferenceKey:;
+- (id)notificationNameForPreferenceKey:;
+- (BOOL)hasExistingValueForPreferenceWithSelector:;
+- (void)observeValueForKeyPath:ofObject:change:context:;
+- (long long)integerValueForPreferenceKey:defaultValue:;
+- (id)preferenceKeysByDomainNameToSynchronize;
+- (void)willPerformUpdateBlocksForPreferenceKey:;
+- (void)setRegisteredPreferenceKeys:;
+- (id)registeredPreferenceKeys;
+- (void)willPostNotificationForPreferenceKey:value:;
+- (id)objectValueForPreferenceKey:ofClass:defaultValue:;
+- (void)registerUpdateBlock:forRetrieveSelector:withListener:;
+- (void)setUpdateBlocks:;
+- (void)_handlePreferenceChangedWithNotificationName:;
+- (double)doubleValueForPreferenceKey:defaultValue:;
+- (BOOL)_switchFromRootUserIfNecessary:;
+- (void)postNotificationForPreferenceKey:;
+- (id)preferenceKeyForSelector:;
+- (void).cxx_destruct;
+@end

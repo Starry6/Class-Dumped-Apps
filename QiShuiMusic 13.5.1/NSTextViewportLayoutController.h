@@ -1,0 +1,32 @@
+@interface NSTextViewportLayoutController : NSObject
+@property (nonatomic) <NSTextViewportElementProvider> elementProvider;
+@property (nonatomic) <NSTextViewportLayoutControllerDelegate> delegate;
+@property (nonatomic) NSTextLayoutManager textLayoutManager;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} viewportBounds;
+@property (nonatomic) NSTextRange viewportRange;
+- (id)textLayoutManager;
+- (id)elementProvider;
+- (void)dealloc;
+- (id)viewportBounds;
+- (void)setDelegate:;
+- (id)locationAtPoint:;
+- (id)textViewportElementsInRect:;
+- (void)layoutViewport;
+- (double)relocateViewportToTextLocation:;
+- (id)viewportRange;
+- (void)enumerateTextViewportElementsInRect:options:usingBlock:;
+- (id)viewport;
+- (void)adjustViewport:atLocation:verticalOffsetFromLocation:;
+- (void)setNeedsLayout;
+- (id)initWithElementProvider:;
+- (id)delegate;
+- (id)textViewportElementForLocation:;
+- (void).cxx_destruct;
+- (id)textViewportElementAtPoint:;
+- (id)_viewportBounds;
+- (id)initWithTextLayoutManager:;
+- (void)addViewportLayoutObserver:;
+- (void)removeViewportLayoutObserver:;
+- (void)adjustViewportByVerticalOffset:;
++ (BOOL)flushesCachedViewportElements;
+@end

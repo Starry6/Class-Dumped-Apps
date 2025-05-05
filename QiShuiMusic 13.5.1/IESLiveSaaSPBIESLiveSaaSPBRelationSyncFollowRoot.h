@@ -1,0 +1,2 @@
+@interface IESLiveSaaSPBIESLiveSaaSPBRelationSyncFollowRoot : GPBRootObject
+@end

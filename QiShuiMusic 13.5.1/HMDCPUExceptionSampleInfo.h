@@ -1,0 +1,34 @@
+@interface HMDCPUExceptionSampleInfo : NSObject
+@property (nonatomic) BOOL isLowPowerModel;
+@property (nonatomic) BOOL isBack;
+@property (nonatomic) q thermalModel;
+@property (nonatomic) NSInteger threadCount;
+@property (nonatomic) float averageUsage;
+@property (nonatomic) Q processorCount;
+@property (nonatomic) q timestamp;
+@property (nonatomic) NSString scene;
+@property (nonatomic) NSString customScene;
+@property (nonatomic) NSArray threadsInfo;
+- (void)setThreadCount:;
+- (BOOL)isLowPowerModel;
+- (void)setCustomScene:;
+- (void)setThreadsInfo:;
+- (float)averageUsage;
+- (id)customScene;
+- (BOOL)isBack;
+- (void)setAverageUsage:;
+- (void)setIsBack:;
+- (void)setIsLowPowerModel:;
+- (void)setThermalModel:;
+- (long long)thermalModel;
+- (id)threadsInfo;
+- (void)setScene:;
+- (id)scene;
+- (int)threadCount;
+- (void)setTimestamp:;
+- (void).cxx_destruct;
+- (long long)timestamp;
+- (unsigned long long)processorCount;
+- (void)setProcessorCount:;
++ (id)sampleInfo;
+@end

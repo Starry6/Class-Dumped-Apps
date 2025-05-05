@@ -1,0 +1,32 @@
+@interface GEORPRapProfileInfo : PBCodable
+@property (nonatomic) BOOL hasTitle;
+@property (nonatomic) GEOLocalizedString title;
+@property (nonatomic) BOOL hasSummary;
+@property (nonatomic) GEOLocalizedString summary;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (id)init;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (void)setTitle:;
+- (void)setSummary:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)summary;
+- (id)title;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (BOOL)hasTitle;
+- (id)copyWithZone:;
+- (BOOL)hasSummary;
++ (BOOL)isValid:;
+@end

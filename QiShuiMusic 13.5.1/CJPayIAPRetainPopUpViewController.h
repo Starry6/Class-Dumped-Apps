@@ -1,0 +1,36 @@
+@interface CJPayIAPRetainPopUpViewController : CJPayPopUpBaseViewController
+@property (nonatomic) CJPayButton confirmButton;
+@property (nonatomic) CJPayButton cancelButton;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel contentLabel;
+@property (nonatomic) UILabel helpLabel;
+@property (nonatomic) UIImageView arrowView;
+@property (nonatomic) @? clickConfirmBlock;
+@property (nonatomic) @? clickHelpBlock;
+@property (nonatomic) @? clickCancelBlock;
+- (id)clickCancelBlock;
+- (id)clickConfirmBlock;
+- (id)clickHelpBlock;
+- (void)p_cancelClick;
+- (void)p_confirmClick;
+- (void)p_helpClick;
+- (void)setClickCancelBlock:;
+- (void)setClickConfirmBlock:;
+- (void)setClickHelpBlock:;
+- (void)showOnTopVC:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (void)setCancelButton:;
+- (id)titleLabel;
+- (id)cancelButton;
+- (id)arrowView;
+- (void)setArrowView:;
+- (id)helpLabel;
+- (void)setHelpLabel:;
+- (void)setupUI;
+- (id)contentLabel;
+- (void)setContentLabel:;
+- (id)confirmButton;
+- (void)setConfirmButton:;
+- (id)initWithTitle:content:;
+@end

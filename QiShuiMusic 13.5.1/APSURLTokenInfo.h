@@ -1,0 +1,33 @@
+@interface APSURLTokenInfo : NSObject
+@property (nonatomic) NSString topic;
+@property (nonatomic) NSData vapidPublicKey;
+@property (nonatomic) NSDate expirationDate;
+@property (nonatomic) q type;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setTopic:;
+- (id)initWithDictionary:;
+- (id)identifier;
+- (void)setExpirationDate:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)expirationDate;
+- (void)encodeWithCoder:;
+- (long long)type;
+- (void).cxx_destruct;
+- (id)description;
+- (id)topic;
+- (id)vapidPublicKey;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)initWithTopic:;
+- (id)initWithTopic:vapidPublicKey:;
+- (id)initWithTopic:vapidPublicKey:expirationDate:;
+- (BOOL)allowMultipleTokens;
+- (void)setVapidPublicKey:;
++ (BOOL)supportsSecureCoding;
+@end

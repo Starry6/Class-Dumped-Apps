@@ -1,0 +1,31 @@
+@interface MNGuidanceSignDescription : NSObject
+@property (nonatomic) NSUUID uniqueID;
+@property (nonatomic) NSArray titles;
+@property (nonatomic) NSArray details;
+@property (nonatomic) NSDictionary variableOverrides;
+@property (nonatomic) q distanceDetailLevel;
+@property (nonatomic) GEOJunction junction;
+@property (nonatomic) <GEOTransitArtworkDataSource> artworkOverride;
+@property (nonatomic) NSString shieldText;
+@property (nonatomic) NSInteger shieldID;
+@property (nonatomic) NSString shieldStringID;
+@property (nonatomic) NSInteger composedGuidanceEventIndex;
+- (id)uniqueID;
+- (id)initWithCoder:;
+- (id)debugDescription;
+- (void)encodeWithCoder:;
+- (id)shieldText;
+- (void).cxx_destruct;
+- (id)description;
+- (id)details;
+- (id)titles;
+- (id)artworkOverride;
+- (id)junction;
+- (id)variableOverrides;
+- (id)initWithID:titles:details:variableOverrides:distanceDetailLevel:junction:artworkOverride:shieldText:shieldID:shieldStringID:composedGuidanceEventIndex:;
+- (int)shieldID;
+- (id)shieldStringID;
+- (long long)distanceDetailLevel;
+- (int)composedGuidanceEventIndex;
++ (BOOL)supportsSecureCoding;
+@end

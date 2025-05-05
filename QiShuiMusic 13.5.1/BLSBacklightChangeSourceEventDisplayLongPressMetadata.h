@@ -1,0 +1,2 @@
+@interface BLSBacklightChangeSourceEventDisplayLongPressMetadata : BLSBacklightChangeSourceEventDisplayTapMetadata
+@end

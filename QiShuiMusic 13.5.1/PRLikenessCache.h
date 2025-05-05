@@ -1,0 +1,32 @@
+@interface PRLikenessCache : NSObject
+@property (nonatomic) NSURL cacheDirectory;
+@property (nonatomic) BOOL useMemory;
+@property (nonatomic) BOOL useFilesystem;
+@property (nonatomic) BOOL renderIfNeeded;
+- (id)cacheDirectory;
+- (id)init;
+- (void).cxx_destruct;
+- (void)setCacheDirectory:;
+- (BOOL)renderIfNeeded;
+- (id)_cacheKeyForLikeness:context:;
+- (id)_cacheURLForLikeness:context:;
+- (void)imageForLikeness:context:completion:;
+- (void)_fetchFromMemory:context:renderBlock:completion:;
+- (void)_fetchFromFilesystem:context:renderBlock:completion:;
+- (void)_renderImageForLikeness:context:completion:;
+- (void)_fetchWithReadBlock:writeBlock:renderBlock:completion:;
+- (BOOL)useMemory;
+- (void)setUseMemory:;
+- (BOOL)useFilesystem;
+- (void)setUseFilesystem:;
+- (void)setRenderIfNeeded:;
++ (id)sharedInstance;
++ (id)_imageAtURL:;
++ (id)_applicationCacheDirectory;
++ (id)_staticRepresentationCacheURL;
++ (BOOL)_ensureExistenceOfDirectory:;
++ (BOOL)_writeImage:toURL:;
++ (BOOL)_removeImageAtURL:;
++ (BOOL)_purgeOldCacheFilesInDirectory:;
++ (id)_propertyValueForURL:forKey:;
+@end

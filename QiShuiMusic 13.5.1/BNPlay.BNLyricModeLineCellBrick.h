@@ -1,0 +1,2 @@
+@interface BNPlay.BNLyricModeLineCellBrick : _TtGC4Lego9CellBrickC6BNPlay19BNLyricModeLineCell_
+@end

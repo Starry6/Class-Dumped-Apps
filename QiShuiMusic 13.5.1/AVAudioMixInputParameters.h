@@ -1,0 +1,30 @@
+@interface AVAudioMixInputParameters : NSObject
+@property (nonatomic) NSInteger trackID;
+@property (nonatomic) NSString audioTimePitchAlgorithm;
+@property (nonatomic) r^{opaqueMTAudioProcessingTap=} audioTapProcessor;
+- (id)init;
+- (void)dealloc;
+- (unsigned long long)hash;
+- (id)audioTimePitchAlgorithm;
+- (void)setAudioTimePitchAlgorithm:;
+- (int)trackID;
+- (id)description;
+- (id)mutableCopyWithZone:;
+- (void)setTrackID:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)audioTapProcessor;
+- (void)setAudioTapProcessor:;
+- (id)effectParameters;
+- (void)setEffectParameters:;
+- (void)_setVolumeRampFromStartVolume:toEndVolume:timeRange:rampMode:;
+- (void)_setVolume:atTime:;
+- (void)setVolumeRampFromStartVolume:toEndVolume:timeRange:;
+- (void)setVolumeRampFromStartVolume:toEndVolume:timeRange:rampMode:;
+- (void)setVolume:atTime:;
+- (BOOL)getVolumeRampForTime:startVolume:endVolume:timeRange:;
+- (BOOL)getVolumeRampForTime:startVolume:endVolume:timeRange:rampMode:;
+- (void)_setScheduledAudioParameters:;
+- (id)_audioVolumeCurve;
+- (id)_volumeCurveAsString;
+@end

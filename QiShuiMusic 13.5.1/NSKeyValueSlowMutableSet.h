@@ -1,0 +1,25 @@
+@interface NSKeyValueSlowMutableSet : NSKeyValueMutableSet
+- (void)HMDP_setSet:;
+- (void)HMDP_minusSet:;
+- (void)HMDP_removeObject:;
+- (void)HMDP_addObject:;
+- (void)HMDP_addObjectsFromArray:;
+- (void)HMDP_unionSet:;
+- (void)HMDP_intersectSet:;
+- (id)_proxyInitWithContainer:getter:;
+- (void)_proxyNonGCFinalize;
+- (void)intersectSet:;
+- (void)unionSet:;
+- (void)addObjectsFromArray:;
+- (void)_raiseNilValueExceptionWithSelector:;
+- (void)addObject:;
+- (void)removeAllObjects;
+- (void)removeObject:;
+- (void)minusSet:;
+- (id)member:;
+- (id)objectEnumerator;
+- (unsigned long long)count;
+- (void)setSet:;
+- (id)_setValueWithSelector:;
+- (id)_createMutableSetValueWithSelector:;
+@end

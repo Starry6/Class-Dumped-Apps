@@ -1,0 +1,33 @@
+@interface CNProcessSharedLock : NSObject
+@property (nonatomic) <CNInhibitor> runningBoardInhibitor;
+@property (nonatomic) NSString name;
+@property (nonatomic) NSString lockFilePath;
+- (id)init;
+- (void)dealloc;
+- (void)setName:;
+- (void)unlock;
+- (void)lock;
+- (BOOL)open:;
+- (BOOL)isValid;
+- (void).cxx_destruct;
+- (id)description;
+- (id)name;
+- (void)invalidate;
+- (id)initWithLockFilePath:localLock:;
+- (id)initWithLockFilePath:localLock:fileServices:;
+- (BOOL)ensureFileDescriptorIsInvalid:;
+- (BOOL)openLockFile:;
+- (BOOL)ensureFileIsLocal:;
+- (void)lockRetryOnEDEADLK;
+- (BOOL)isValidFileDescriptor;
+- (id)exceptionWithName:reason:;
+- (id)errorUserInfo;
+- (id)errorUserInfoWithDescription:;
+- (id)lockFilePath;
+- (id)runningBoardInhibitor;
+- (void)setRunningBoardInhibitor:;
++ (id)os_log;
++ (id)sharedLockWithLockFilePath:;
++ (id)recursiveSharedLockWithLockFilePath:;
++ (id)semaphoreSharedLockWithLockFilePath:;
+@end

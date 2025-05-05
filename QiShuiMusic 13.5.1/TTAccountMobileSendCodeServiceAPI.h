@@ -1,0 +1,2 @@
+@interface TTAccountMobileSendCodeServiceAPI : NSObject
+@end

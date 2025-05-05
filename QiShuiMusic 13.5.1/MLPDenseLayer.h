@@ -1,0 +1,38 @@
+@interface MLPDenseLayer : MLPMatrixLayer
+@property (nonatomic) MPSMatrix weights;
+@property (nonatomic) MPSVector biasVector;
+@property (nonatomic) MLPOptimizer optimizerWeights;
+@property (nonatomic) MLPOptimizer optimizerBiases;
+@property (nonatomic) r^v initialWeights;
+@property (nonatomic) r^v initialBias;
+@property (nonatomic) NSArray mlpOptimizers;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)weights;
+- (void).cxx_destruct;
+- (void)setWeights:;
+- (id)biasVector;
+- (void)setBiasVector:;
+- (id)initWithName:parameters:;
+- (void)createKernel;
+- (id)forward:input:labels:runInference:;
+- (id)backward:inputGradient:;
+- (id)generateNode:model:weightIter:;
+- (id)mlpOptimizers;
+- (id)seqForward:input:dataBatch:runInference:;
+- (id)seqBackward:dataBatch:inputGradient:;
+- (id)initialWeights;
+- (void)setInitialWeights:;
+- (id)initialBias;
+- (void)setInitialBias:;
+- (id)initWithName:previousLayer:numOutputs:neuronType:neuronParams:;
+- (id)initWithName:numInputs:numOutputs:neuronType:neuronParams:;
+- (id)forward:inputMatrix:index:runInference:;
+- (id)backward:index:inputGradientMatrix:;
+- (id)optimizerWeights;
+- (void)setOptimizerWeights:;
+- (id)optimizerBiases;
+- (void)setOptimizerBiases:;
+@end

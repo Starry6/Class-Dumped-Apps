@@ -1,0 +1,31 @@
+@interface BDARVPlayerContext : NSObject
+@property (nonatomic) BDARTrackerDataModel trackerDataModel;
+@property (nonatomic) BOOL enableReplay;
+@property (nonatomic) Q scene;
+@property (nonatomic) BOOL isPreload;
+@property (nonatomic) BOOL isPlayerPreload;
+@property (nonatomic) q currentResolution;
+@property (nonatomic) BOOL isPreloadAtInit;
+@property (nonatomic) double inspirePlayTime;
+@property (nonatomic) BDARVSourceModel source;
+- (double)inspirePlayTime;
+- (BOOL)isPlayerPreload;
+- (BOOL)isPreloadAtInit;
+- (BOOL)enableReplay;
+- (BOOL)isPreload;
+- (void)setEnableReplay:;
+- (void)setInspirePlayTime:;
+- (void)setIsPlayerPreload:;
+- (void)setIsPreload:;
+- (void)setIsPreloadAtInit:;
+- (void)setTrackerDataModel:;
+- (id)trackerDataModel;
+- (id)init;
+- (void)setScene:;
+- (unsigned long long)scene;
+- (void).cxx_destruct;
+- (id)source;
+- (void)setSource:;
+- (long long)currentResolution;
+- (void)setCurrentResolution:;
+@end

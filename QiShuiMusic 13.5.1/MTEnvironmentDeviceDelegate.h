@@ -1,0 +1,37 @@
+@interface MTEnvironmentDeviceDelegate : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)hardwareModel;
+- (id)os;
+- (id)connectionType;
+- (id)userAgent;
+- (id)screenWidth;
+- (id)appVersion;
+- (id)app;
+- (id)screenHeight;
+- (id)osVersion;
+- (id)pageUrl;
+- (id)userType;
+- (BOOL)isAnonymous;
+- (id)cookies;
+- (id)pixelRatio;
+- (id)hostApp;
+- (id)_diskUsage;
+- (id)dsId;
+- (id)capacityData;
+- (id)capacityDataAvailable;
+- (id)capacityDisk;
+- (id)capacitySystem;
+- (id)capacitySystemAvailable;
+- (id)hardwareFamily;
+- (id)osBuildNumber;
+- (id)osLanguages;
+- (id)resourceRevNum;
+- (id)storeFrontHeader;
+- (id)windowInnerHeight;
+- (id)windowInnerWidth;
+- (id)windowOuterHeight;
+- (id)windowOuterWidth;
+@end

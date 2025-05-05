@@ -1,0 +1,2 @@
+@interface BCAABundleContextPlaceholder : NSObject
+@end

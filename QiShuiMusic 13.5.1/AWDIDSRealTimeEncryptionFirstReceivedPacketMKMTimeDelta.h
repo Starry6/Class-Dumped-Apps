@@ -1,0 +1,35 @@
+@interface AWDIDSRealTimeEncryptionFirstReceivedPacketMKMTimeDelta : PBCodable
+@property (nonatomic) BOOL hasTimestamp;
+@property (nonatomic) Q timestamp;
+@property (nonatomic) BOOL hasServiceName;
+@property (nonatomic) NSString serviceName;
+@property (nonatomic) BOOL hasActiveParticipantBucket;
+@property (nonatomic) I activeParticipantBucket;
+@property (nonatomic) BOOL hasTimeDelta;
+@property (nonatomic) q timeDelta;
+- (void)dealloc;
+- (void)setServiceName:;
+- (void)writeTo:;
+- (id)serviceName;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)setHasTimestamp:;
+- (void)mergeFrom:;
+- (BOOL)hasTimestamp;
+- (void)setTimestamp:;
+- (BOOL)hasServiceName;
+- (BOOL)readFrom:;
+- (unsigned long long)timestamp;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setActiveParticipantBucket:;
+- (void)setHasActiveParticipantBucket:;
+- (BOOL)hasActiveParticipantBucket;
+- (void)setTimeDelta:;
+- (void)setHasTimeDelta:;
+- (BOOL)hasTimeDelta;
+- (unsigned int)activeParticipantBucket;
+- (long long)timeDelta;
+@end

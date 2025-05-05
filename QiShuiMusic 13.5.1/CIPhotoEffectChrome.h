@@ -1,0 +1,2 @@
+@interface CIPhotoEffectChrome : CIPhotoEffect
+@end

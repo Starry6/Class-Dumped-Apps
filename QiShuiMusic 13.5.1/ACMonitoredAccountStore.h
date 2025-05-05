@@ -1,0 +1,31 @@
+@interface ACMonitoredAccountStore : ACAccountStore
+@property (nonatomic) NSArray monitoredAccounts;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)accountWasAdded:;
+- (void)addDelegate:;
+- (void)_reregister;
+- (id)connectionDelegate;
+- (void)dealloc;
+- (void)_registerAccountMonitorWithCompletion:;
+- (void)removeDelegate:;
+- (void)registerWithCompletion:;
+- (id)initWithAccountTypes:delegate:;
+- (void)connectionClosed;
+- (id)_allDelegates;
+- (void)_registerAccountMonitorSynchronouslyWithCompletion:;
+- (id)monitoredAccounts;
+- (void)_accountsListPopulated:;
+- (void)accountWasModified:;
+- (void)accountWasRemoved:;
+- (id)initWithAccountTypes:propertiesToPrefetch:delegate:;
+- (void).cxx_destruct;
+- (void)credentialsChangedNotification:;
+- (id)monitoredAccountWithIdentifier:;
+- (void)_registerForCredentialChangedNotifications;
+- (void)_processAccountsListForNotifications:;
+- (id)initWithWithRemoteEndpoint:effectiveBundleID:accountTypes:propertiesToPrefetch:delegate:;
+- (void)registerSynchronouslyWithError:;
+@end

@@ -1,0 +1,33 @@
+@interface IESLiveUniformTag : UIView
+@property (nonatomic) IESLiveMicPosTagInfo tagInfo;
+@property (nonatomic) UIImageView bgView;
+@property (nonatomic) UILabel tagLabel;
+@property (nonatomic) NSString linkUrl;
+@property (nonatomic) q tagType;
+- (id)tagInfo;
+- (void)didClickTag;
+- (BOOL)isAudioSeat;
+- (BOOL)isLinkPanel;
+- (BOOL)isVideoSeat;
+- (void)p_updateBg;
+- (void)setBackgroundColorsARGBHexStr:;
+- (void)setTagInfo:;
+- (void)setTagLabel:;
+- (void)setTagString:;
+- (id)tagLabel;
+- (void)trackTagShow:;
+- (void)trackTagShow:extra:;
+- (void)updateTagInfo:;
+- (long long)tagType;
+- (id)intrinsicContentSize;
+- (void)layoutSubviews;
+- (void).cxx_destruct;
+- (id)initWithType:;
+- (id)bgView;
+- (void)setBgView:;
+- (void)setupUI;
+- (void)setTagType:;
+- (id)linkUrl;
+- (void)setLinkUrl:;
+- (void)setTagColor:;
+@end

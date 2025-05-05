@@ -1,0 +1,30 @@
+@interface IESECCommentMediaStatusBarView : UIView
+@property (nonatomic) IESECUIButton backButton;
+@property (nonatomic) IESECInsetsLabel indexLabel;
+@property (nonatomic) IESECUIButton multipleMediaModeButton;
+@property (nonatomic) IESECCommentMediaItemViewModel model;
+@property (nonatomic) Q enterFrom;
+@property (nonatomic) <IESECCommentMediaStatusBarDelegate> delegate;
+@property (nonatomic) q index;
+- (void)clickBackButton;
+- (void)clickMultipleMediasButton;
+- (unsigned long long)enterFrom;
+- (id)initWithFrame:enterFrom:;
+- (id)multipleMediaModeButton;
+- (void)setEnterFrom:;
+- (void)setIndexLabel:;
+- (void)setMultipleMediaModeButton:;
+- (void)updateMultiplyButtonStatus:;
+- (void)updateViewWithModel:length:;
+- (id)model;
+- (void)setModel:;
+- (void)setDelegate:;
+- (id)backButton;
+- (long long)index;
+- (id)delegate;
+- (id)indexLabel;
+- (void)setIndex:;
+- (void).cxx_destruct;
+- (void)setBackButton:;
+- (void)setupSubviews;
+@end

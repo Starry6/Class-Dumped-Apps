@@ -1,0 +1,37 @@
+@interface PKPaletteToolPickerContainerView : UIView
+@property (nonatomic) NSLayoutConstraint toolPickerViewTopConstraint;
+@property (nonatomic) NSLayoutConstraint toolPickerViewBottomConstraint;
+@property (nonatomic) NSLayoutConstraint toolPickerViewLeftConstraint;
+@property (nonatomic) NSLayoutConstraint toolPickerViewRightConstraint;
+@property (nonatomic) NSLayoutConstraint toolPickerViewCenterXConstraint;
+@property (nonatomic) NSLayoutConstraint toolPickerViewCenterYConstraint;
+@property (nonatomic) PKPaletteToolPickerView toolPickerView;
+@property (nonatomic) Q edgeLocation;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) double scalingFactor;
+- (id)init;
+- (id)hitTest:withEvent:;
+- (void)traitCollectionDidChange:;
+- (void).cxx_destruct;
+- (double)scalingFactor;
+- (void)_updateUI;
+- (void)setScalingFactor:;
+- (unsigned long long)edgeLocation;
+- (void)setEdgeLocation:;
+- (id)toolPickerView;
+- (id)toolPickerViewTopConstraint;
+- (void)setToolPickerViewTopConstraint:;
+- (id)toolPickerViewBottomConstraint;
+- (void)setToolPickerViewBottomConstraint:;
+- (id)toolPickerViewLeftConstraint;
+- (void)setToolPickerViewLeftConstraint:;
+- (id)toolPickerViewRightConstraint;
+- (void)setToolPickerViewRightConstraint:;
+- (id)toolPickerViewCenterXConstraint;
+- (void)setToolPickerViewCenterXConstraint:;
+- (id)toolPickerViewCenterYConstraint;
+- (void)setToolPickerViewCenterYConstraint:;
+@end

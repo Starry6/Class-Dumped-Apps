@@ -1,0 +1,36 @@
+@interface RTIInputSourceState : NSObject
+@property (nonatomic) NSString inputMode;
+@property (nonatomic) BOOL minimized;
+@property (nonatomic) BOOL hardwareKeyboardMode;
+@property (nonatomic) BOOL centerFilled;
+@property (nonatomic) BOOL split;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} leftSplitFrame;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} rightSplitFrame;
+@property (nonatomic) BOOL floating;
+@property (nonatomic) BOOL showingEmojiSearch;
+- (BOOL)floating;
+- (BOOL)showingEmojiSearch;
+- (BOOL)centerFilled;
+- (void)setInputMode:;
+- (id)inputMode;
+- (id)init;
+- (void)setFloating:;
+- (void)setMinimized:;
+- (id)initWithCoder:;
+- (void)setCenterFilled:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)hardwareKeyboardMode;
+- (void)setHardwareKeyboardMode:;
+- (BOOL)isEqual:;
+- (BOOL)minimized;
+- (void)setSplit:;
+- (void)setShowingEmojiSearch:;
+- (BOOL)split;
+- (id)leftSplitFrame;
+- (id)rightSplitFrame;
+- (void)setLeftSplitFrame:;
+- (void)setRightSplitFrame:;
++ (BOOL)supportsSecureCoding;
+@end

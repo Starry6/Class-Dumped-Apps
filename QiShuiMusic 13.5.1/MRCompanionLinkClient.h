@@ -1,0 +1,38 @@
+@interface MRCompanionLinkClient : NSObject
+@property (nonatomic) RPCompanionLinkClient connection;
+@property (nonatomic) NSMutableDictionary eventCallbacks;
+@property (nonatomic) NSMutableDictionary requestCallbacks;
+@property (nonatomic) NSArray companionLinkDevices;
+- (id)rapportUIDForDeviceUID:;
+- (id)initWithOptions:;
+- (id)deviceUIDForRapportUID:;
+- (void)removeCallback:;
+- (void)_sendEvent:userInfo:destination:uid:;
+- (void)_registerRequest:;
+- (id)registerRequest:callback:;
+- (void)sendEvent:toDevicesOfHomeUser:userInfo:;
+- (id)companionLinkDevices;
+- (id)eventCallbacks;
+- (void)_handleEventID:event:options:;
+- (void)_sendRequest:userInfo:destination:uid:date:response:;
+- (id)nameForUID:;
+- (void)sendEventToHome:userInfo:;
+- (void)_handleRequestID:request:options:response:;
+- (void)sendEvent:destination:userInfo:;
+- (void)_enqueueRequest:userInfo:destination:uid:date:response:;
+- (void)sendEventToCompanion:userInfo:;
+- (id)requestCallbacks;
+- (id)registerEvent:callback:;
+- (id)connection;
+- (void).cxx_destruct;
+- (void)setConnection:;
+- (void)setEventCallbacks:;
+- (void)sendRequest:destination:userInfo:timeout:response:;
+- (void)setRequestCallbacks:;
+- (void)_enqueueEvent:userInfo:destination:uid:;
+- (id)_resolveEventID:;
+- (void)_registerEvent:;
++ (id)sharedIDSCompanionLinkClient;
++ (id)sharedCompanionLinkClient;
++ (void)rapportCompanionLinkClient:;
+@end

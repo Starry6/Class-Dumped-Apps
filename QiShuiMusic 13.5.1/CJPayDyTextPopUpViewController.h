@@ -1,0 +1,35 @@
+@interface CJPayDyTextPopUpViewController : CJPayPopUpBaseViewController
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel contentLabel;
+@property (nonatomic) CJPayButton mainOperation;
+@property (nonatomic) CJPayButton secondOperation;
+@property (nonatomic) CJPayButton thirdOperation;
+@property (nonatomic) CJPayDyTextPopUpModel model;
+@property (nonatomic) UIView contentView;
+@property (nonatomic) BOOL isOuterContentView;
+- (id)initWithPopUpModel:contentView:;
+- (long long)p_mapAlignment:;
+- (id)secondOperation;
+- (id)initWithPopUpModel:;
+- (BOOL)isOuterContentView;
+- (void)p_clickMainOperation;
+- (void)p_clickSecondOperation;
+- (void)p_clickThirdOperation;
+- (void)setIsOuterContentView:;
+- (void)setSecondOperation:;
+- (void)setThirdOperation:;
+- (void)showOnTopVC:;
+- (id)thirdOperation;
+- (id)model;
+- (id)contentView;
+- (void)setModel:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (id)titleLabel;
+- (void)setupUI;
+- (id)contentLabel;
+- (void)setContentLabel:;
+- (id)mainOperation;
+- (void)setMainOperation:;
+@end

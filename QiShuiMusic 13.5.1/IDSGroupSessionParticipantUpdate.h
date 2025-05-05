@@ -1,0 +1,34 @@
+@interface IDSGroupSessionParticipantUpdate : NSObject
+@property (nonatomic) BOOL isInitiator;
+@property (nonatomic) NSUUID groupUUID;
+@property (nonatomic) Q participantIdentifier;
+@property (nonatomic) NSString participantDestinationID;
+@property (nonatomic) Q participantUpdateType;
+@property (nonatomic) Q participantUpdateSubtype;
+@property (nonatomic) BOOL fromServer;
+@property (nonatomic) NSDate serverDate;
+@property (nonatomic) NSData participantData;
+@property (nonatomic) NSData clientContextData;
+@property (nonatomic) NSArray members;
+@property (nonatomic) NSDictionary participantIDs;
+@property (nonatomic) NSUUID relaySessionID;
+- (id)members;
+- (id)groupUUID;
+- (unsigned long long)participantIdentifier;
+- (id)debugDescription;
+- (id)initWithDictionaryRepresentation:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isInitiator;
+- (id)participantData;
+- (id)relaySessionID;
+- (id)initWithGroupUUID:isInitiator:participantIdentifier:participantDestinationID:participantUpdateType:participantUpdateSubtype:fromServer:serverDate:participantData:clientContextData:members:participantIDs:relaySessionID:;
+- (id)participantDestinationID;
+- (unsigned long long)participantUpdateType;
+- (id)clientContextData;
+- (id)participantIDs;
+- (unsigned long long)participantUpdateSubtype;
+- (BOOL)fromServer;
+- (id)serverDate;
+@end

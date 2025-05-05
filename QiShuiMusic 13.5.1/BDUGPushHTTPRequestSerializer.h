@@ -1,0 +1,3 @@
+@interface BDUGPushHTTPRequestSerializer : TTDefaultHTTPRequestSerializer
+- (id)URLRequestWithURL:params:method:constructingBodyBlock:commonParams:;
+@end

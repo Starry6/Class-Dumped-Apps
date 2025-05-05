@@ -1,0 +1,33 @@
+@interface IESLiveLCAudioPlayer : NSObject
+@property (nonatomic) <IESLiveRoomRealStreamingServiceAdapter> player;
+@property (nonatomic) <IESLiveAudioPlayerDelegate> delegate;
+@property (nonatomic) <IESLiveAudioPlayerInput> audioInput;
+@property (nonatomic) BOOL isRunning;
+@property (nonatomic) float volume;
+@property (nonatomic) float duration;
+@property (nonatomic) float overtime;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (float)overtime;
+- (void)setOvertime:;
+- (void)startPlay;
+- (void)stopPlay;
+- (float)volume;
+- (void)setVolume:;
+- (void)setDelegate:;
+- (void)setIsRunning:;
+- (BOOL)isRunning;
+- (id)player;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setPlayer:;
+- (void)pause;
+- (float)duration;
+- (id)initWith:;
+- (BOOL)prepareToPlay;
+- (id)audioInput;
+- (void)setAudioInput:;
+- (void)playAtTime:;
+@end

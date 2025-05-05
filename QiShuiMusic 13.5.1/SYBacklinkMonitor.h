@@ -1,0 +1,35 @@
+@interface SYBacklinkMonitor : NSObject
+@property (nonatomic) NSObject<OS_dispatch_queue> _monitorQueue;
+@property (nonatomic) BOOL _needsActivityUpdate;
+@property (nonatomic) SYBacklinkMonitorOperation _activeOperation;
+@property (nonatomic) @? _delayedChangeEvaluationBlock;
+@property (nonatomic) NSDate _lastOperationStartTime;
+@property (nonatomic) <SYBacklinkMonitorTestingDelegate> testingDelegate;
+@property (nonatomic) double testingOperationCoalescingInterval;
+@property (nonatomic) <SYBacklinkMonitorDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (void)setDelegate:;
+- (id)_activeOperation;
+- (void)backlinkMonitorOperationDidFinish:;
+- (void)setTestingDelegate:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)testingDelegate;
+- (void)set_activeOperation:;
+- (id)_monitorQueue;
+- (void)userActivityDidChange;
+- (void)_evaluatePendingRequests;
+- (void)_beginNewOperation;
+- (BOOL)_needsActivityUpdate;
+- (void)set_needsActivityUpdate:;
+- (id)_delayedChangeEvaluationBlock;
+- (void)set_delayedChangeEvaluationBlock:;
+- (id)_lastOperationStartTime;
+- (void)set_lastOperationStartTime:;
+- (double)testingOperationCoalescingInterval;
+- (void)setTestingOperationCoalescingInterval:;
+@end

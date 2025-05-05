@@ -1,0 +1,34 @@
+@interface TLAlertSystemSoundController : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (void)dealloc;
+- (void)playAlert:withCompletionHandler:;
+- (void).cxx_destruct;
+- (BOOL)stopPlayingAlerts:withOptions:playbackCompletionType:;
+- (void)preheatForAlert:completionHandler:;
+- (void)backlightStatusDidChange:;
+- (void)_playAlert:alertSystemSoundContext:toneIdentifierForDeemphasizingAlert:backlightStatusResolutionDeferralContext:;
+- (id)_considerDeferringPlayingAlertForBacklightStatusResolution:alertSystemSoundContext:;
+- (id)_playTaskDescriptorForAlert:withSound:alertSystemSoundContext:;
+- (void)_processPlayTaskDescriptors:;
+- (id)_prepareForStoppingAlerts:withOptions:playbackCompletionType:;
+- (void)_processStopTasksDescriptor:;
+- (id)_prepareForPreemptingAlertsBeforeBeginningPlaybackOfAlert:withSound:playbackCompletionType:;
+- (void)_preheatForAlert:backlightStatus:completionHandler:;
+- (void)_didCompletePlaybackForAlert:;
+- (void)_processPlaybackCompletionContexts:;
+- (void)_removeAlert:alertSystemSoundContext:didFailToPrepareSound:appendingPlaybackCompletionContextToArray:;
+- (void)_beginRequiringBacklightObservationForAlert:alertSystemSoundContext:;
+- (void)_endRequiringBacklightObservationForAlert:alertSystemSoundContext:;
+- (void)_processDeemphasizableAlertChangesForBackglightStatus:stopTasksDescriptorForDeemphasizedAlerts:deemphasizableAlertBeginPlayingContexts:;
++ (id)_soundForAlert:toneIdentifierForDeemphasizingAlert:;
++ (id)_toneIdentifierForDeemphasizingAlert:;
++ (unsigned int)_soundBehaviorForAlert:withSound:;
++ (id)_vibrationPatternForAlert:withSound:;
++ (unsigned int)_componentSuppressionFlagsForAlert:;
++ (id)_descriptionForAlertComponentsSuppressionFlags:;
++ (id)_optionsForSystemSoundAlert:withSound:;
+@end

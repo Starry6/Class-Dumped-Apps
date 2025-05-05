@@ -1,0 +1,2 @@
+@interface IESECLiveAnchorEntry : NSObject
+@end

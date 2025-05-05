@@ -1,0 +1,33 @@
+@interface DTFMobileIdentifier : NSObject
+@property (nonatomic) NSString UTDID;
+@property (nonatomic) NSString IMSI;
+@property (nonatomic) NSString IMEI;
+@property (nonatomic) NSString UUID;
+@property (nonatomic) NSString TID;
+@property (nonatomic) NSString deviceFingerprint;
+@property (nonatomic) NSString AWID;
+@property (nonatomic) NSString clientId;
+@property (nonatomic) NSString deviceModel;
+@property (nonatomic) Q memoryAwailable;
+@property (nonatomic) NSInteger diskTotalSpace;
+- (id)TID;
+- (void)setTID:;
+- (id)AWID;
+- (unsigned long long)memoryAwailable;
+- (id)UTDID;
+- (id)deviceFingerprint;
+- (int)diskTotalSpace;
+- (void)setDeviceFingerprint:;
+- (void)setUTDID:;
+- (id)deviceModel;
+- (id)init;
+- (id)clientId;
+- (void)setUUID:;
+- (void)setIMSI:;
+- (id)IMEI;
+- (void).cxx_destruct;
+- (void)setIMEI:;
+- (id)IMSI;
+- (id)UUID;
++ (id)shareIdentifier;
+@end

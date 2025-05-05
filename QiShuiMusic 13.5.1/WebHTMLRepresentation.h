@@ -1,0 +1,33 @@
+@interface WebHTMLRepresentation : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setDataSource:;
+- (id)init;
+- (void)dealloc;
+- (id)title;
+- (id)DOMDocument;
+- (id)documentSource;
+- (void)receivedData:withDataSource:;
+- (void)receivedError:withDataSource:;
+- (void)finishedLoadingWithDataSource:;
+- (BOOL)canProvideDocumentSource;
+- (BOOL)canSaveAsWebArchive;
+- (void)_redirectDataToManualLoader:forPluginView:;
+- (BOOL)_isDisplayingWebArchive;
+- (id)elementWithName:inForm:;
+- (BOOL)elementDoesAutoComplete:;
+- (BOOL)elementIsPassword:;
+- (id)formForElement:;
+- (id)currentForm;
+- (id)controlsInForm:;
+- (id)searchForLabels:beforeElement:;
+- (id)searchForLabels:beforeElement:resultDistance:resultIsInCellAbove:;
+- (id)matchLabels:againstElement:;
++ (id)supportedMIMETypes;
++ (id)supportedMediaMIMETypes;
++ (id)supportedImageMIMETypes;
++ (id)supportedNonImageMIMETypes;
++ (id)unsupportedTextMIMETypes;
+@end

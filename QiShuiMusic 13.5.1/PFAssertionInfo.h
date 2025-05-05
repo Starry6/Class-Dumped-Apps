@@ -1,0 +1,33 @@
+@interface PFAssertionInfo : NSObject
+@property (nonatomic) : selector;
+@property (nonatomic) # objectClass;
+@property (nonatomic) BOOL isClassMethod;
+@property (nonatomic) NSString functionName;
+@property (nonatomic) NSString fileName;
+@property (nonatomic) Q lineNumber;
+@property (nonatomic) NSString message;
+@property (nonatomic) NSArray backtrace;
+@property (nonatomic) BOOL isFatal;
+- (SEL)selector;
+- (void)setSelector:;
+- (id)backtrace;
+- (Class)objectClass;
+- (id)fileName;
+- (void)setMessage:;
+- (void)setLineNumber:;
+- (id)functionName;
+- (id)message;
+- (void).cxx_destruct;
+- (unsigned long long)lineNumber;
+- (id)description;
+- (void)setFileName:;
+- (void)setFunctionName:;
+- (id)prettyMethodName;
+- (BOOL)isWarning;
+- (void)setObjectClass:;
+- (BOOL)isClassMethod;
+- (void)setIsClassMethod:;
+- (BOOL)isFatal;
+- (void)setIsFatal:;
+- (void)setBacktrace:;
+@end

@@ -1,0 +1,33 @@
+@interface ABPK2dSkeleton : NSObject
+@property (nonatomic) NSInteger skeletonType;
+@property (nonatomic) ABPKSkeletonDefinition skeletonDefinition;
+@property (nonatomic) r^ keypoints2d;
+@property (nonatomic) r^ normalizedKeypoints2d;
+@property (nonatomic) r^f confidences;
+@property (nonatomic) r^I visibility;
+@property (nonatomic) {CGSize=dd} imageRes;
+@property (nonatomic) NSInteger imageType;
+@property (nonatomic) BOOL hasMissingJoints;
+- (int)imageType;
+- (id)init;
+- (id)toDictionary;
+- (id)visibility;
+- (void).cxx_destruct;
+- (id)description;
+- (id).cxx_construct;
+- (id)initWithType:;
+- (id)confidences;
+- (void)printData;
+- (int)skeletonType;
+- (id)skeletonDefinition;
+- (void)setNormalizedKeypoints2d:withImageRes:;
+- (void)setKeypoints2d:withImageRes:;
+- (void)setJointConfidences:;
+- (void)setJointVisibility:;
+- (void)setHasMissingJoints:;
+- (id)keypoints2d;
+- (id)normalizedKeypoints2d;
+- (BOOL)hasMissingJoints;
+- (int)overlaySkeletonOnImage:withResult:withColor:;
+- (id)imageRes;
+@end

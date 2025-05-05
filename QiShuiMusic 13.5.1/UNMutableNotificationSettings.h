@@ -1,0 +1,35 @@
+@interface UNMutableNotificationSettings : UNNotificationSettings
+@property (nonatomic) q authorizationStatus;
+@property (nonatomic) q soundSetting;
+@property (nonatomic) q badgeSetting;
+@property (nonatomic) q alertSetting;
+@property (nonatomic) q notificationCenterSetting;
+@property (nonatomic) q lockScreenSetting;
+@property (nonatomic) q carPlaySetting;
+@property (nonatomic) q alertStyle;
+@property (nonatomic) q showPreviewsSetting;
+@property (nonatomic) q criticalAlertSetting;
+@property (nonatomic) BOOL providesAppNotificationSettings;
+@property (nonatomic) q announcementSetting;
+@property (nonatomic) q groupingSetting;
+@property (nonatomic) q timeSensitiveSetting;
+@property (nonatomic) q scheduledDeliverySetting;
+@property (nonatomic) q directMessagesSetting;
+- (void)setAuthorizationStatus:;
+- (void)setTimeSensitiveSetting:;
+- (void)setGroupingSetting:;
+- (void)setNotificationCenterSetting:;
+- (void)setShowPreviewsSetting:;
+- (void)setAlertStyle:;
+- (void)setCriticalAlertSetting:;
+- (void)setBadgeSetting:;
+- (void)setScheduledDeliverySetting:;
+- (void)setLockScreenSetting:;
+- (void)setCarPlaySetting:;
+- (void)setAlertSetting:;
+- (void)setProvidesAppNotificationSettings:;
+- (void)setSoundSetting:;
+- (void)setDirectMessagesSetting:;
+- (void)setAnnouncementSetting:;
+- (id)copyWithZone:;
+@end

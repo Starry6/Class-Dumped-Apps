@@ -1,0 +1,33 @@
+@interface GKGoal : NSObject
+- (id)init;
+- (id)copy;
+- (float)speed;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (id)initToSeekAgent:;
+- (id)initToFleeAgent:;
+- (id)initToAvoidObstacles:maxPredictionTime:;
+- (id)initToAvoidAgents:maxPredictionTime:;
+- (id)initToSeparateFromAgents:maxDistance:maxAngle:;
+- (id)initToAlignWithAgents:maxDistance:maxAngle:;
+- (id)initToCohereWithAgents:maxDistance:maxAngle:;
+- (id)initToReachTargetSpeed:;
+- (id)initToWander:;
+- (id)initToInterceptAgent:maxPredictionTime:;
+- (id)initToFollowPath:maxPredictionTime:forward:;
+- (id)initToStayOnPath:maxPredictionTime:;
+- (id)getForce:agent:;
+- (BOOL)isTargetSpeedGoal;
++ (id)goalToSeekAgent:;
++ (id)goalToFleeAgent:;
++ (id)goalToAvoidObstacles:maxPredictionTime:;
++ (id)goalToAvoidAgents:maxPredictionTime:;
++ (id)goalToSeparateFromAgents:maxDistance:maxAngle:;
++ (id)goalToAlignWithAgents:maxDistance:maxAngle:;
++ (id)goalToCohereWithAgents:maxDistance:maxAngle:;
++ (id)goalToReachTargetSpeed:;
++ (id)goalToWander:;
++ (id)goalToInterceptAgent:maxPredictionTime:;
++ (id)goalToFollowPath:maxPredictionTime:forward:;
++ (id)goalToStayOnPath:maxPredictionTime:;
+@end

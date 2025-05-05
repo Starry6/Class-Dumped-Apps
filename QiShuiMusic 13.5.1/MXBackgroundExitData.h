@@ -1,0 +1,33 @@
+@interface MXBackgroundExitData : NSObject
+@property (nonatomic) Q cumulativeBackgroundFetchCompletionTimeoutExitCount;
+@property (nonatomic) Q cumulativeBackgroundURLSessionCompletionTimeoutExitCount;
+@property (nonatomic) Q cumulativeNormalAppExitCount;
+@property (nonatomic) Q cumulativeMemoryResourceLimitExitCount;
+@property (nonatomic) Q cumulativeCPUResourceLimitExitCount;
+@property (nonatomic) Q cumulativeMemoryPressureExitCount;
+@property (nonatomic) Q cumulativeBadAccessExitCount;
+@property (nonatomic) Q cumulativeAbnormalExitCount;
+@property (nonatomic) Q cumulativeIllegalInstructionExitCount;
+@property (nonatomic) Q cumulativeAppWatchdogExitCount;
+@property (nonatomic) Q cumulativeSuspendedWithLockedFileExitCount;
+@property (nonatomic) Q cumulativeBackgroundTaskAssertionTimeoutExitCount;
+- (id)toDictionary;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (id)initWithNormalAppExitCount:memoryResourceLimitExitCount:cpuResourceLimitExitCount:memoryPressureExitCount:badAccessExitCount:abnormalExitCount:illegalInstructionExitCount:appWatchDogExitCount:cumulativeSuspendedWithLockedFileExitCount:cumulativeBackgroundTaskAssertionTimeoutExitCount:cumulativeBackgroundURLSessionCompletionTimeoutExitCount:cumulativeBackgroundFetchCompletionTimeoutExitCount:;
+- (unsigned long long)cumulativeNormalAppExitCount;
+- (unsigned long long)cumulativeMemoryResourceLimitExitCount;
+- (unsigned long long)cumulativeBadAccessExitCount;
+- (unsigned long long)cumulativeAbnormalExitCount;
+- (unsigned long long)cumulativeIllegalInstructionExitCount;
+- (unsigned long long)cumulativeAppWatchdogExitCount;
+- (unsigned long long)cumulativeCPUResourceLimitExitCount;
+- (id)initWithNormalAppExitCount:memoryResourceLimitExitCount:cpuResourceLimitExitCount:badAccessExitCount:abnormalExitCount:illegalInstructionExitCount:appWatchDogExitCount:cumulativeSuspendedWithLockedFileExitCount:cumulativeBackgroundTaskAssertionTimeoutExitCount:;
+- (id)initWithNormalAppExitCount:memoryResourceLimitExitCount:cpuResourceLimitExitCount:memoryPressureExitCount:badAccessExitCount:abnormalExitCount:illegalInstructionExitCount:appWatchDogExitCount:cumulativeSuspendedWithLockedFileExitCount:cumulativeBackgroundTaskAssertionTimeoutExitCount:;
+- (unsigned long long)cumulativeMemoryPressureExitCount;
+- (unsigned long long)cumulativeSuspendedWithLockedFileExitCount;
+- (unsigned long long)cumulativeBackgroundTaskAssertionTimeoutExitCount;
+- (unsigned long long)cumulativeBackgroundFetchCompletionTimeoutExitCount;
+- (unsigned long long)cumulativeBackgroundURLSessionCompletionTimeoutExitCount;
++ (BOOL)supportsSecureCoding;
+@end

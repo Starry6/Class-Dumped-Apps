@@ -1,0 +1,34 @@
+@interface ARSpatialMappingPointCloud : NSObject
+@property (nonatomic) q count;
+@property (nonatomic) r^ points;
+@property (nonatomic) r^ semanticLabels;
+@property (nonatomic) r^ semanticVotes;
+@property (nonatomic) {?=[4]} cameraPose;
+@property (nonatomic) ^ normals;
+@property (nonatomic) ^ colors;
+@property (nonatomic) * semantics;
+@property (nonatomic) Q semanticsBinSize;
+@property (nonatomic) NSUUID identifier;
+@property (nonatomic) ^ pointsToWorld;
+@property (nonatomic) double timestamp;
+- (id)colors;
+- (id)identifier;
+- (void).cxx_destruct;
+- (double)timestamp;
+- (id)points;
+- (long long)count;
+- (id).cxx_construct;
+- (id)copyWithZone:;
+- (char *)semantics;
+- (id)cameraPose;
+- (void)setCameraPose:;
+- (id)normals;
+- (id)initWithPointCloud:smTransform:identifier:timestamp:;
+- (id)initWithPointCloud:transform:identifier:timestamp:;
+- (void)updateTransform:;
+- (id)semanticLabels;
+- (id)semanticVotes;
+- (id)pointsToWorld;
+- (unsigned long long)semanticsBinSize;
++ (id)dictionaryFromArray:;
+@end

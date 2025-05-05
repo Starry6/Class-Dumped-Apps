@@ -1,0 +1,33 @@
+@interface CJPayBDMethodTableView : UIView
+@property (nonatomic) UITableView tableView;
+@property (nonatomic) CJPayMethodAddCardCellView addBankCardCell;
+@property (nonatomic) NSArray models;
+@property (nonatomic) <CJCJPayBDMethodTableViewDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)addBankCardCell;
+- (double)calculBankCardModelHeight:;
+- (Class)getCellClass:;
+- (id)p_getLoadingCell;
+- (void)setAddBankCardCell:;
+- (void)startLoadingAnimationOnAddBankCardCell;
+- (void)stopLoadingAnimationOnAddBankCardCell;
+- (void)stopLoading;
+- (void)setModels:;
+- (void)startLoading;
+- (id)tableView:cellForRowAtIndexPath:;
+- (void)setDelegate:;
+- (id)models;
+- (id)initWithFrame:;
+- (double)tableView:heightForRowAtIndexPath:;
+- (id)delegate;
+- (void)tableView:didSelectRowAtIndexPath:;
+- (void).cxx_destruct;
+- (void)setTableView:;
+- (void)tableView:willDisplayCell:forRowAtIndexPath:;
+- (id)tableView;
+- (long long)tableView:numberOfRowsInSection:;
+- (void)setupUI;
+@end

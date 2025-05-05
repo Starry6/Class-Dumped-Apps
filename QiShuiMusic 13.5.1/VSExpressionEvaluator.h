@@ -1,0 +1,37 @@
+@interface VSExpressionEvaluator : NSObject
+@property (nonatomic) @ value;
+@property (nonatomic) BOOL monitoringForChanges;
+@property (nonatomic) NSArray observers;
+@property (nonatomic) BOOL hasDeterminedValue;
+@property (nonatomic) NSExpression expression;
+@property (nonatomic) @ object;
+@property (nonatomic) NSDictionary substitutionVariables;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setObject:;
+- (id)expression;
+- (void)dealloc;
+- (void)setExpression:;
+- (id)substitutionVariables;
+- (void)setSubstitutionVariables:;
+- (void)setValue:;
+- (void).cxx_destruct;
+- (id)object;
+- (void)setObservers:;
+- (id)value;
+- (id)observers;
+- (void)observeChange:forObservance:;
+- (id)_observersForExpression:;
+- (id)_observersForPredicate:;
+- (void)_startMonitoringForChanges;
+- (void)_stopMonitoringForChanges;
+- (void)_updateComputedResult:;
+- (void)_updateComputedResultIfNeeded;
+- (BOOL)isMonitoringForChanges;
+- (void)setMonitoringForChanges:;
+- (BOOL)hasDeterminedValue;
+- (void)setHasDeterminedValue:;
++ (BOOL)automaticallyNotifiesObserversOfValue;
+@end

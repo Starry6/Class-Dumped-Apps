@@ -1,0 +1,2 @@
+@interface IESLiveSaaSPBIESLiveSaaSPBLinkedLiveRoomsRoot : GPBRootObject
+@end

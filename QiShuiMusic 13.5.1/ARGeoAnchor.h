@@ -1,0 +1,38 @@
+@interface ARGeoAnchor : ARAnchor
+@property (nonatomic) BOOL isAltitudeAvailable;
+@property (nonatomic) BOOL isAltitudeLookupInProgress;
+@property (nonatomic) double undulation;
+@property (nonatomic) BOOL isTracked;
+@property (nonatomic)  locationLLA;
+@property (nonatomic)  locationECEF;
+@property (nonatomic) {?=[4]} ecefFromAnchor;
+@property (nonatomic) {CLLocationCoordinate2D=dd} coordinate;
+@property (nonatomic) double altitude;
+@property (nonatomic) q altitudeSource;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithCoordinate:;
+- (double)altitude;
+- (double)undulation;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (id)coordinate;
+- (id)description;
+- (id)initWithAnchor:;
+- (BOOL)isTracked;
+- (void)setIsTracked:;
+- (id)initWithCoordinate:altitude:;
+- (id)initWithName:coordinate:;
+- (id)initWithName:coordinate:altitude:;
+- (void)initWithCoordinate:altitude:altitudeSource:isAltitudeAvailable:undulation:;
+- (long long)altitudeSource;
+- (BOOL)isAltitudeAvailable;
+- (BOOL)isAltitudeLookupInProgress;
+- (void)setIsAltitudeLookupInProgress:;
+- (id)locationLLA;
+- (id)locationECEF;
+- (id)ecefFromAnchor;
++ (BOOL)supportsSecureCoding;
+@end

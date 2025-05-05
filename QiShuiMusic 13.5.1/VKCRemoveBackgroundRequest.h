@@ -1,0 +1,37 @@
+@interface VKCRemoveBackgroundRequest : NSObject
+@property (nonatomic) VKCImageAnalyzerRequest photosRequest;
+@property (nonatomic) BOOL performInPlace;
+@property (nonatomic) {CGSize=dd} size;
+@property (nonatomic) ^{__CVBuffer=} pixelBuffer;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) NSInteger MADRequestID;
+@property (nonatomic) ^{CGImage=} CGImage;
+@property (nonatomic) q imageOrientation;
+@property (nonatomic) BOOL cropToFit;
+@property (nonatomic) BOOL maskOnly;
+@property (nonatomic) NSNumber VIImageType;
+- (void)dealloc;
+- (id)pixelBuffer;
+- (id)identifier;
+- (id)CGImage;
+- (long long)imageOrientation;
+- (id)initWithCGImage:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)size;
+- (BOOL)performInPlace;
+- (void)setPerformInPlace:;
+- (BOOL)cropToFit;
+- (BOOL)maskOnly;
+- (void)setMaskOnly:;
+- (id)initWithPhotosAnalyzerRequest:;
+- (id)initWithCGImage:orientation:;
+- (int)MADRequestID;
+- (void)setMADRequestID:;
+- (id)createMADRequest;
+- (void)setCropToFit:;
+- (id)VIImageType;
+- (void)setVIImageType:;
+- (id)photosRequest;
++ (id)requestWithImage:orientation:canResize:;
+@end

@@ -1,0 +1,33 @@
+@interface POWSchemaProvisionalPOWUsage : SISchemaInstrumentationMessage
+@property (nonatomic) NSInteger process;
+@property (nonatomic) BOOL hasProcess;
+@property (nonatomic) POWSchemaProvisionalPOWProcessUsage processUsage;
+@property (nonatomic) BOOL hasProcessUsage;
+@property (nonatomic) NSInteger context;
+@property (nonatomic) BOOL hasContext;
+@property (nonatomic) NSData jsonData;
+- (BOOL)hasContext;
+- (id)initWithJSON:;
+- (int)context;
+- (BOOL)hasProcess;
+- (void)deleteProcess;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void)setProcess:;
+- (void)deleteContext;
+- (id)processUsage;
+- (int)process;
+- (void).cxx_destruct;
+- (void)setHasProcessUsage:;
+- (BOOL)readFrom:;
+- (void)setHasProcess:;
+- (void)setHasContext:;
+- (id)dictionaryRepresentation;
+- (void)setProcessUsage:;
+- (void)setContext:;
+- (BOOL)isEqual:;
+- (BOOL)hasProcessUsage;
+- (void)deleteProcessUsage;
+@end

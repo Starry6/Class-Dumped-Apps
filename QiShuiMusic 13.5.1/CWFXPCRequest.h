@@ -1,0 +1,31 @@
+@interface CWFXPCRequest : NSBlockOperation
+@property (nonatomic) BOOL didSendResponse;
+@property (nonatomic) NSUUID UUID;
+@property (nonatomic) q type;
+@property (nonatomic) CWFRequestParameters requestParameters;
+@property (nonatomic) NSDate receivedAt;
+@property (nonatomic) NSDictionary info;
+@property (nonatomic) @? response;
+@property (nonatomic) BOOL isSubrequest;
+- (void)setRequestParameters:;
+- (id)init;
+- (id)receivedAt;
+- (void)setUUID:;
+- (void)setInfo:;
+- (void)setType:;
+- (BOOL)isExecuting;
+- (void)setReceivedAt:;
+- (BOOL)isFinished;
+- (long long)type;
+- (id)response;
+- (id)requestParameters;
+- (void).cxx_destruct;
+- (void)setDidSendResponse:;
+- (id)description;
+- (id)info;
+- (BOOL)didSendResponse;
+- (void)setResponse:;
+- (BOOL)isSubrequest;
+- (void)setIsSubrequest:;
+- (id)UUID;
+@end

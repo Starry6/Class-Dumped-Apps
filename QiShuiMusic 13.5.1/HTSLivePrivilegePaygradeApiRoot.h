@@ -1,0 +1,2 @@
+@interface HTSLivePrivilegePaygradeApiRoot : GPBRootObject
+@end

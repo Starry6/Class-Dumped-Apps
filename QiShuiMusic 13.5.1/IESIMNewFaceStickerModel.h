@@ -1,0 +1,30 @@
+@interface IESIMNewFaceStickerModel : IESIMStickerDetailModel
+@property (nonatomic) NSString effectID;
+@property (nonatomic) BOOL isFavorited;
+@property (nonatomic) NSArray childrenStickersIDs;
+@property (nonatomic) IESIMCommerceStickerDetailModel commerceSticker;
+@property (nonatomic) IESIMURLModel activityIconURL;
+@property (nonatomic) NSString activityOpenURL;
+@property (nonatomic) NSString activityWebviewTitle;
+@property (nonatomic) IESIMWelfareActivityModel welfareActivityModel;
+- (id)activityIconURL;
+- (id)activityOpenURL;
+- (void)setIsFavorited:;
+- (id)commerceSticker;
+- (id)activityWebviewTitle;
+- (id)childrenStickersIDs;
+- (void)setActivityIconURL:;
+- (void)setActivityOpenURL:;
+- (void)setActivityWebviewTitle:;
+- (void)setChildrenStickersIDs:;
+- (void)setCommerceSticker:;
+- (void)setEffectID:;
+- (void)setWelfareActivityModel:;
+- (id)welfareActivityModel;
+- (void).cxx_destruct;
+- (id)effectID;
+- (BOOL)isFavorited;
++ (id)commerceStickerJSONTransformer;
++ (id)welfareActivityModelJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

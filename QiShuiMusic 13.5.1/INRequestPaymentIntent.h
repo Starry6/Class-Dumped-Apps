@@ -1,0 +1,31 @@
+@interface INRequestPaymentIntent : INIntent
+@property (nonatomic) INPerson payer;
+@property (nonatomic) INCurrencyAmount currencyAmount;
+@property (nonatomic) NSString note;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)_dictionaryRepresentation;
+- (id)note;
+- (void)_setMetadata:;
+- (void)setNote:;
+- (id)domain;
+- (void)setDomain:;
+- (id)_metadata;
+- (id)_typedBackingStore;
+- (long long)_intentCategory;
+- (id)_categoryVerb;
+- (void)_redactForMissingPrivacyEntitlementOptions:containingAppBundleId:;
+- (id)verb;
+- (void)setVerb:;
+- (id)parametersByName;
+- (void)setParametersByName:;
+- (BOOL)_isUserConfirmationRequired;
+- (BOOL)configureAttributeSet:includingData:;
+- (id)currencyAmount;
+- (void)setCurrencyAmount:;
+- (id)payer;
+- (void)setPayer:;
+- (id)initWithPayer:currencyAmount:note:;
+@end

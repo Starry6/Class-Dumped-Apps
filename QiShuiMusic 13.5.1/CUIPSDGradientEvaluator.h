@@ -1,0 +1,30 @@
+@interface CUIPSDGradientEvaluator : NSObject
+@property (nonatomic) NSInteger blendMode;
+- (id)fillColor;
+- (void)dealloc;
+- (BOOL)isDithered;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void)setBlendMode:;
+- (int)blendMode;
+- (id)description;
+- (id)copyWithZone:;
+- (id)_cleanedUpMidpointLocationsFromLocations:;
+- (void)_createOrderedStops:midpoints:fromStops:midpoints:edgePixel:;
+- (id)initWithColorStops:colorMidpoints:opacityStops:opacityMidpoints:smoothingCoefficient:fillCoefficient:;
+- (id)initWithColorStops:colorMidpoints:opacityStops:opacityMidpoints:smoothingCoefficient:fillColor:dither:;
+- (double)_smoothedInterpolationOfLocation:betweenLower:upper:scaledMidpoint:;
+- (id)_smoothedGradientColorAtLocation:;
+- (id)colorStops;
+- (id)colorMidpointLocations;
+- (id)opacityStops;
+- (id)opacityMidpointLocations;
+- (double)smoothingCoefficient;
+- (double)fillCoefficient;
+- (BOOL)hasEdgePixel;
+- (void)setColorStops:midpoints:;
+- (void)setOpacityStops:midpoints:;
+- (void)setSmoothingCoefficient:;
+- (void)setFillCoefficient:;
+- (void)customizeForDistance:;
+@end

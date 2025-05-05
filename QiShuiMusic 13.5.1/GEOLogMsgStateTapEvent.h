@@ -1,0 +1,33 @@
+@interface GEOLogMsgStateTapEvent : PBCodable
+@property (nonatomic) NSMutableArray searchResults;
+@property (nonatomic) BOOL hasPinType;
+@property (nonatomic) NSInteger pinType;
+- (void)readAll:;
+- (int)pinType;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)searchResults;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)setSearchResults:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (void)setPinType:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setHasPinType:;
+- (BOOL)hasPinType;
+- (id)pinTypeAsString:;
+- (int)StringAsPinType:;
+- (void)clearSearchResults;
+- (void)addSearchResults:;
+- (unsigned long long)searchResultsCount;
+- (id)searchResultsAtIndex:;
++ (BOOL)isValid:;
++ (Class)searchResultsType;
+@end

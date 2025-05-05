@@ -1,0 +1,35 @@
+@interface BWInferenceEngine : NSObject
+@property (nonatomic) NSDictionary providedVideoRequirementsByAttachedMediaKey;
+@property (nonatomic) BOOL requiresDeviceOrientationMetadata;
+@property (nonatomic) BOOL configuredForInference;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithScheduler:priority:shareIntermediateBuffer:;
+- (int)prewarmInferencesUsingLimitedMemory:;
+- (void)dealloc;
+- (id)initWithConvEngineSupportWithCaptureDevice:scheduler:priority:shareIntermediateBuffer:;
+- (id)initWithScheduler:priority:;
+- (int)prepareForInputVideoFormat:attachedMediaKey:;
+- (BOOL)isConfiguredForInference;
+- (int)performInferencesOnSampleBuffer:attachingResultsToSampleBuffer:skippingInferencesWithTypes:;
+- (int)prepareForInputInferenceVideoFormat:attachedMediaKey:;
+- (int)addInferenceOfType:version:configuration:;
+- (id)defaultDeviceMetalContext;
+- (id)visionContextForExecutionTarget:;
+- (int)prepareForInferenceWithFormatProvider:pixelBufferPoolProvider:;
+- (id)metalCommandBuffer;
+- (id)initWithConvEngineSupportWithCaptureDevice:scheduler:priority:;
+- (int)prepareForInferenceWithFormatProvider:;
+- (id)newMetalEvent;
+- (id)providedVideoRequirementsByAttachedMediaKey;
+- (int)enableIntermediateBufferSharingWithNetworksLoadedFromPath:;
+- (id)espressoContextForExecutionTarget:;
+- (int)performInferencesOnSampleBuffer:attachingResultsToSampleBuffer:;
+- (id)ispProcessingSessionForExecutionTarget:;
+- (BOOL)requiresDeviceOrientationMetadata;
++ (BOOL)isConvolutionEngineSupported;
++ (BOOL)isNeuralEngineSupported;
++ (unsigned int)allowedBufferCompressionDirectionForExecutionTarget:;
+@end

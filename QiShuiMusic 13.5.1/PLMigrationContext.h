@@ -1,0 +1,35 @@
+@interface PLMigrationContext : NSObject
+@property (nonatomic) NSPersistentStoreCoordinator coordinator;
+@property (nonatomic) NSURL storeURL;
+@property (nonatomic) NSDictionary options;
+@property (nonatomic) PLCoreAnalyticsEventManager analyticsEventManager;
+@property (nonatomic) PLPhotoLibraryPathManager pathManager;
+@property (nonatomic) S previousStoreVersion;
+@property (nonatomic) I policy;
+@property (nonatomic) q libraryIdentifier;
+@property (nonatomic) NSPersistentStore store;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)storeURL;
+- (void)setPolicy:;
+- (id)pathManager;
+- (void)setOptions:;
+- (void)setStore:;
+- (unsigned int)policy;
+- (void)setPathManager:;
+- (id)coordinator;
+- (id)options;
+- (long long)libraryIdentifier;
+- (void).cxx_destruct;
+- (id)store;
+- (void)setStoreURL:;
+- (id)analyticsEventManager;
+- (void)setCoordinator:;
+- (id)initWithPathManager:coordinator:onStore:orStoreURL:version:options:migrationPolicy:analyticsEventManager:;
+- (unsigned short)previousStoreVersion;
+- (void)setPreviousStoreVersion:;
+- (void)setAnalyticsEventManager:;
+- (void)setLibraryIdentifier:;
+@end

@@ -1,0 +1,2 @@
+@interface BattleAutoMatchApiRoot : GPBRootObject
+@end

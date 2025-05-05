@@ -1,0 +1,33 @@
+@interface IESLiveMyLiveViewModel : NSObject
+@property (nonatomic) IESLiveUserProfileData metaData;
+@property (nonatomic) IESLiveUserCardStore userCardStore;
+@property (nonatomic) double showTimestamp;
+@property (nonatomic) IESLiveMyLiveVisitorEntryViewModel visitorEntryViewModel;
+@property (nonatomic) NSArray myTabs;
+@property (nonatomic) IESLiveMyLiveTabViewModel selectedTab;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)trackMyLiveShow;
+- (void)createMultiTabsData;
+- (void)didSetAttachingDIContext;
+- (id)initWithMetaData:diContext:;
+- (id)myTabs;
+- (void)setMyTabs:;
+- (void)setUserCardStore:;
+- (void)setVisitorEntryViewModel:;
+- (void)setupUserCardStore:;
+- (void)trackEnterTab:fromTab:;
+- (void)trackMyLiveShowDuration;
+- (void)userCardDidFinishedAction;
+- (id)userCardStore;
+- (id)visitorEntryViewModel;
+- (void)setMetaData:;
+- (id)metaData;
+- (void).cxx_destruct;
+- (void)setSelectedTab:;
+- (id)selectedTab;
+- (double)showTimestamp;
+- (void)setShowTimestamp:;
+@end

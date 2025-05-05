@@ -1,0 +1,31 @@
+@interface VCCaptionsTranscription : NSObject
+@property (nonatomic) I utteranceNumber;
+@property (nonatomic) I updateNumber;
+@property (nonatomic) BOOL isLocal;
+@property (nonatomic) BOOL isFinal;
+@property (nonatomic) NSString formattedText;
+@property (nonatomic) q streamToken;
+@property (nonatomic) NSArray segments;
+- (id)segments;
+- (void)dealloc;
+- (void)setIsLocal:;
+- (id)formattedText;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (void)addSegment:;
+- (id)description;
+- (BOOL)isLocal;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (long long)streamToken;
+- (BOOL)isFinal;
+- (void)setIsFinal:;
+- (unsigned int)utteranceNumber;
+- (unsigned int)updateNumber;
+- (void)setUpdateNumber:;
+- (void)setUtteranceNumber:;
+- (id)initWithUtteranceNumber:updateNumber:isLocal:isFinal:streamToken:;
+- (id)initWithSFTranscription:utteranceNumber:updateNumber:isLocal:isFinal:streamToken:;
++ (BOOL)supportsSecureCoding;
+@end

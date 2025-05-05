@@ -1,0 +1,2 @@
+@interface RoomDsl : NSObject
+@end

@@ -1,0 +1,32 @@
+@interface AWEIMGroupEntrySettingMenuModel : IESIMBaseApiModel
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString subtitle;
+@property (nonatomic) NSString hintTitle;
+@property (nonatomic) NSString type;
+@property (nonatomic) NSString key;
+@property (nonatomic) NSString defaultOptionValue;
+@property (nonatomic) NSArray options;
+- (id)defaultOptionTitle;
+- (id)defaultOptionValue;
+- (BOOL)isDialogType;
+- (long long)optionIndexWithValue:;
+- (id)optionTitleWithValue:;
+- (void)setDefaultOptionValue:;
+- (void)setHintTitle:;
+- (id)titleForCellWithRow:;
+- (id)valueWithOptionIndex:;
+- (id)hintTitle;
+- (void)setOptions:;
+- (id)key;
+- (void)setType:;
+- (void)setSubtitle:;
+- (void)setTitle:;
+- (void)setKey:;
+- (id)options;
+- (id)type;
+- (id)title;
+- (void).cxx_destruct;
+- (id)subtitle;
++ (id)optionsJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

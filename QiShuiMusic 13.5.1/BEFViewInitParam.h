@@ -1,0 +1,33 @@
+@interface BEFViewInitParam : NSObject
+@property (nonatomic) ^v effectHandle;
+@property (nonatomic) {CGSize=dd} renderSize;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} frame;
+@property (nonatomic) Q fitMode;
+@property (nonatomic) NSString bizId;
+@property (nonatomic) q fps;
+@property (nonatomic) ^? resourceFinder;
+@property (nonatomic) ^? resourceFinderReleaser;
+@property (nonatomic) NSInteger sceneKey;
+@property (nonatomic) BOOL neglectTouchEvent;
+- (unsigned long long)fitMode;
+- (id)effectHandle;
+- (BOOL)neglectTouchEvent;
+- (id)resourceFinder;
+- (id)resourceFinderReleaser;
+- (int)sceneKey;
+- (void)setEffectHandle:;
+- (void)setFitMode:;
+- (void)setNeglectTouchEvent:;
+- (void)setResourceFinder:;
+- (void)setResourceFinderReleaser:;
+- (void)setSceneKey:;
+- (void)setFrame:;
+- (id)renderSize;
+- (id)frame;
+- (void).cxx_destruct;
+- (long long)fps;
+- (void)setRenderSize:;
+- (void)setFps:;
+- (id)bizId;
+- (void)setBizId:;
+@end

@@ -1,0 +1,37 @@
+@interface TIAnalyticsService : NSObject
+@property (nonatomic) NSMutableDictionary eventSpecs;
+@property (nonatomic) <TIAnalyticsServiceProvider> provider;
+- (void)sendCoreAnalyticsEventWithName:payload:;
+- (void)dispatchEventWithName:;
+- (id)init;
+- (id)settingsFromPayload:andValues:eventSpec:allowSparsePayload:errors:;
+- (void)dispatchEventWithName:inputMode:withCompletionHandler:;
+- (void)dispatchEventWithName:values:withCompletionHandler:;
+- (void)dispatchEventWithName:payload:testingParameters:allowSparsePayload:withCompletionHandler:;
+- (BOOL)dispatchEventWithName:inputMode:error:;
+- (void)registerEventSpec:withCompletionHandler:;
+- (id)initWithProvider:;
+- (void)dispatchEventWithName:values:inputMode:;
+- (void)registerEventSpec:;
+- (BOOL)registerEventSpec:error:;
+- (void)dispatchEventWithName:payload:testingParameters:allowSparsePayload:;
+- (void)dispatchEventWithName:withCompletionHandler:;
+- (void)dispatchEventWithName:values:;
+- (id)provider;
+- (id)eventSpecs;
+- (void)dispatchEventWithName:values:inputMode:withCompletionHandler:;
+- (void)addSettings:toPayload:errors:;
+- (void).cxx_destruct;
+- (BOOL)dispatchEventWithName:error:;
+- (void)dispatchEventWithName:inputMode:;
+- (void)_registerEventSpec:withCompletionHandler:;
+- (BOOL)dispatchEventWithName:values:error:;
+- (id)settingsFromInputMode:eventSpec:errors:;
+- (BOOL)dispatchEventWithName:values:inputMode:error:;
+- (void)_dispatchEventWithName:payload:values:inputMode:testingParameters:allowSparsePayload:withCompletionHandler:;
+- (void)queueCompletionHandler:;
+- (BOOL)dispatchEventWithName:payload:testingParameters:allowSparsePayload:error:;
+- (void)appendToErrors:code:message:;
++ (void)setMockInstance:;
++ (id)sharedInstance;
+@end

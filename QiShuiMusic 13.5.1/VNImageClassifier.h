@@ -1,0 +1,9 @@
+@interface VNImageClassifier : NSObject
++ (BOOL)computeImageCropWithImage:regionOfInterest:usingDescriptorProcessor:scalingImage:options:pixelBuffer:error:;
++ (BOOL)computeImageDescriptorsWithImage:pixelBuffer:regionOfInterest:usingDescriptorProcessor:tileCount:augmentationMode:resultantDescriptorBuffer:options:metalContext:canceller:tileColumns:tileRows:error:;
++ (BOOL)computeLabelsAndConfidence:usingDescriptorBuffer:populateLabelsAndConfidence:options:metalContext:error:;
++ (id)classifyImageWithDescriptors:usingImageClassifier:andMinConfidenceForClassification:options:metalContext:error:;
++ (id)classifyImageHierarchicallyWithDescriptors:usingImageClassifier:hierarchicalClassifier:minimumClassificationConfidence:minimumClassificationConfidenceRatio:maximumLeafLabels:maximumHierarchicalLabels:options:metalContext:error:;
++ (BOOL)_dumpIntermediatesFullImage:imageURL:requiredImageSource:imageProcessingType:error:;
++ (BOOL)_dumpIntermediatesTiles:imageURL:requiredImageSource:imageProcessingType:allocatedTileCount:imageTiles:bytesPerPixel:numTiles:scaleFactor:augmentationMode:scalingImage:error:;
+@end

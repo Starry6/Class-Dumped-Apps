@@ -1,0 +1,30 @@
+@interface MSEmailModel : NSObject
+@property (nonatomic) NSString subject;
+@property (nonatomic) NSString sender;
+@property (nonatomic) NSArray to;
+@property (nonatomic) NSArray cc;
+@property (nonatomic) NSArray bcc;
+@property (nonatomic) NSString body;
+@property (nonatomic) NSURL reference;
+@property (nonatomic) NSInteger type;
+- (id)reference;
+- (void)setReference:;
+- (id)subject;
+- (void)setSubject:;
+- (id)body;
+- (id)sender;
+- (void)setType:;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void)setBody:;
+- (int)type;
+- (void).cxx_destruct;
+- (void)setSender:;
+- (id)to;
+- (void)setTo:;
+- (id)cc;
+- (void)setCc:;
+- (id)bcc;
+- (void)setBcc:;
++ (BOOL)supportsSecureCoding;
+@end

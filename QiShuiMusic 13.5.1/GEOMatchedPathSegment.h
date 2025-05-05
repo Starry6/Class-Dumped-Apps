@@ -1,0 +1,37 @@
+@interface GEOMatchedPathSegment : NSObject
+@property (nonatomic) Q pointCount;
+@property (nonatomic) {?=ddd} startLocationCoordinate;
+@property (nonatomic) {?=ddd} endLocationCoordinate;
+@property (nonatomic) {PolylineCoordinate=If} startRouteCoordinate;
+@property (nonatomic) {PolylineCoordinate=If} endRouteCoordinate;
+@property (nonatomic) {GEOPolylineCoordinateRange={PolylineCoordinate=If}{PolylineCoordinate=If}} range;
+@property (nonatomic) GEOComposedRoute route;
+@property (nonatomic) GEOMapFeatureRoad road;
+@property (nonatomic) {GEOPolylineCoordinateRange={PolylineCoordinate=If}{PolylineCoordinate=If}} roadRange;
+@property (nonatomic) BOOL isPartialStart;
+@property (nonatomic) BOOL isPartialEnd;
+- (id)init;
+- (id)route;
+- (id)debugDescription;
+- (id)range;
+- (void).cxx_destruct;
+- (id)description;
+- (id).cxx_construct;
+- (id)road;
+- (unsigned long long)pointCount;
+- (id)endRouteCoordinate;
+- (id)initWithRoute:road:coordinates:roadRange:;
+- (id)initForFailedMatchWithRoute:range:;
+- (id)trimmedSegmentWithinRange:;
+- (id)locationCoordinateAt:;
+- (id)routeCoordinateAt:;
+- (id)startLocationCoordinate;
+- (id)endLocationCoordinate;
+- (id)startRouteCoordinate;
+- (id)locationCoordinateForRouteCoordinate:;
+- (id)_interpolatedCoordinateFrom:to:routeCoordinate:;
+- (id)_roadPolylineCoordinateForCoordinate:segmentCoordinateIndex:trimRange:;
+- (id)roadRange;
+- (BOOL)isPartialStart;
+- (BOOL)isPartialEnd;
+@end

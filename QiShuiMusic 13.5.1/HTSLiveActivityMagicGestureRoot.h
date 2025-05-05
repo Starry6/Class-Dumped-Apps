@@ -1,0 +1,2 @@
+@interface HTSLiveActivityMagicGestureRoot : GPBRootObject
+@end

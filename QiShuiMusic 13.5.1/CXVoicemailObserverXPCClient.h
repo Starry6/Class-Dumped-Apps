@@ -1,0 +1,37 @@
+@interface CXVoicemailObserverXPCClient : NSObject
+@property (nonatomic) NSMutableDictionary mutableVoicemailUUIDToVoicemailMap;
+@property (nonatomic) NSHashTable delegates;
+@property (nonatomic) NSXPCConnection connection;
+@property (nonatomic) NSInteger notifyToken;
+@property (nonatomic) NSObject<OS_dispatch_queue> queue;
+@property (nonatomic) NSDictionary voicemailUUIDToVoicemailMap;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)addDelegate:;
+- (id)init;
+- (id)delegates;
+- (void)dealloc;
+- (int)notifyToken;
+- (void)removeDelegate:;
+- (void)requestTransaction:completion:;
+- (void)_invalidate;
+- (id)_remoteObjectProxyWithErrorHandler:isSynchronous:;
+- (id)connection;
+- (void).cxx_destruct;
+- (void)setConnection:;
+- (id)_init;
+- (id)queue;
+- (void)invalidate;
+- (id)voicemailUUIDToVoicemailMap;
+- (void)_addOrUpdateVoicemails:;
+- (void)_removeVoicemails:;
+- (void)_requestVoicemails;
+- (id)addOrUpdateVoicemails:;
+- (id)removeVoicemails:;
+- (id)mutableVoicemailUUIDToVoicemailMap;
++ (id)sharedXPCClient;
++ (void)releaseSharedXPCClient;
++ (id)sharedXPCClientSemaphore;
+@end

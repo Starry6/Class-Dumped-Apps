@@ -1,0 +1,34 @@
+@interface MFComposeMultiView : MFMailComposeHeaderView
+@property (nonatomic) BOOL accountAutoselected;
+@property (nonatomic) BOOL accountHasUnsafeDomain;
+@property (nonatomic) <MFComposeMultiViewDelegate> scribbleDelegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)layoutSubviews;
+- (id)_scribbleInteraction:frameForElement:;
+- (void)setAccountDescription:;
+- (void)_scribbleInteraction:requestElementsInRect:completion:;
+- (id)initWithFrame:;
+- (void)_scribbleInteraction:focusElement:initialFocusSelectionReferencePoint:completion:;
+- (void).cxx_destruct;
+- (BOOL)_scribbleInteraction:shouldBeginAtLocation:;
+- (BOOL)_scribbleInteraction:focusWillTransformElement:;
+- (id)labelColor;
+- (id)accountLabel;
+- (void)refreshPreferredContentSize;
+- (void)showLoadingState:;
+- (id)imageSizeLabel;
+- (id)placeholderImageSizeLabel;
+- (id)imageSizeHeaderLabelView;
+- (id)_accountDescriptionAttributedString;
+- (void)setAccountHasUnsafeDomain:;
+- (void)setImageSizeDescription:;
+- (void)setShowsImageSize:;
+- (void)setAccountAutoselected:;
+- (BOOL)accountHasUnsafeDomain;
+- (BOOL)isAccountAutoselected;
+- (id)scribbleDelegate;
+- (void)setScribbleDelegate:;
+@end

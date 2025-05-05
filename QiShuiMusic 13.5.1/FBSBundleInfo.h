@@ -1,0 +1,31 @@
+@interface FBSBundleInfo : NSObject
+@property (nonatomic) NSString bundleIdentifier;
+@property (nonatomic) NSURL bundleURL;
+@property (nonatomic) NSString displayName;
+@property (nonatomic) NSString bundleVersion;
+@property (nonatomic) NSString bundleType;
+@property (nonatomic) Q sequenceNumber;
+@property (nonatomic) NSUUID cacheGUID;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)bundleVersion;
+- (id)init;
+- (id)bundleIdentifier;
+- (id)bundleURL;
+- (id)succinctDescriptionBuilder;
+- (id)debugDescription;
+- (id)displayName;
+- (unsigned long long)sequenceNumber;
+- (void).cxx_destruct;
+- (id)succinctDescription;
+- (id)description;
+- (id)descriptionBuilderWithMultilinePrefix:;
+- (id)descriptionWithMultilinePrefix:;
+- (id)bundleType;
+- (id)cacheGUID;
+- (id)_initWithBundleProxy:overrideURL:;
+- (id)_initWithBundleIdentifier:url:;
+- (id)_initWithBundleProxy:bundleIdentifier:url:;
+@end

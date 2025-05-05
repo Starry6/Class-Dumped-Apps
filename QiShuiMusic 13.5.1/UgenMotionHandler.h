@@ -1,0 +1,2 @@
+@interface UgenMotionHandler : NSObject
+@end

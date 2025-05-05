@@ -1,0 +1,31 @@
+@interface ASDTestFlightFeedback : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (void).cxx_destruct;
+- (void)getFeedbackMetadataForBundleID:withCompletionHandler:;
+- (void)getFeedbackMetadataForBundleURL:withCompletionHandler:;
+- (void)getLaunchInfoForBundleID:withCompletionHandler:;
+- (void)getLaunchInfoForBundleURL:withCompletionHandler:;
+- (void)setFeedbackEnabled:forVersion:withCompletionHandler:;
+- (void)setLaunchScreenEnabled:forVersion:withCompletionHandler:;
+- (void)setLaunchInfo:withCompletionHandler:;
+- (void)submitFeedback:withCompletionHandler:;
+- (void)submitFeedback:bundleURL:withCompletionHandler:;
+- (void)updateTestNotes:forVersion:withCompletionHandler:;
+- (id)getDisplayNamesForBundleID:;
+- (id)getDisplayNamesForBundleURL:;
+- (id)getEmailAddressForBundleID:;
+- (id)getEmailAddressForBundleURL:;
+- (id)getLaunchInfoForBundleID:;
+- (id)getLaunchInfoForBundleURL:;
+- (id)getLaunchInfoForVersion:;
+- (BOOL)isFeedbackEnabledForBundleID:;
+- (BOOL)isFeedbackEnabledForBundleURL:;
+- (BOOL)isLaunchScreenEnabledForBundleID:;
+- (BOOL)isLaunchScreenEnabledForBundleURL:;
++ (id)interface;
++ (id)sharedInstance;
+@end

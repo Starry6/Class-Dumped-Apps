@@ -1,0 +1,32 @@
+@interface INIntentSummaryCache : NSObject
+@property (nonatomic) NSObject<OS_dispatch_queue> resourceAccessQueue;
+@property (nonatomic) NSMutableDictionary allBundlesCache;
+@property (nonatomic) NSInteger systemLanguageChangeNotificationToken;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)invalidateCache;
+- (id)init;
+- (void)dealloc;
+- (void)applicationsDidInstall:;
+- (void)setSubtitle:forIntent:languageCode:;
+- (void)stopObservingSystemLanguageChanges;
+- (void)invalidateCacheForBundleId:;
+- (void)stopObservingApplicationWorkspaceChanges;
+- (void)startObservingApplicationWorkspaceChanges;
+- (id)cachedSummaryForIntent:languageCode:creatingIfNeeded:;
+- (id)bundleCacheForBundleId:;
+- (void)setTitle:forIntent:languageCode:;
+- (BOOL)getSubtitle:forIntent:languageCode:;
+- (void)startObservingSystemLanguageChanges;
+- (BOOL)getTitle:forIntent:languageCode:;
+- (id)allBundlesCache;
+- (void).cxx_destruct;
+- (int)systemLanguageChangeNotificationToken;
+- (void)stopAutomaticInvalidation;
+- (id)resourceAccessQueue;
+- (void)startAutomaticInvalidation;
+- (void)setBundleCache:forBundleId:;
++ (id)sharedCache;
+@end

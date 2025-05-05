@@ -1,0 +1,37 @@
+@interface SATimeRange : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) SATimestamp startTime;
+@property (nonatomic) SATimestamp endTime;
+@property (nonatomic) Q deltaMachAbsTime;
+@property (nonatomic) double deltaMachAbsTimeSeconds;
+@property (nonatomic) Q deltaMachContTime;
+@property (nonatomic) double deltaMachContTimeSeconds;
+@property (nonatomic) double deltaWallTime;
+- (BOOL)addSelfToBuffer:bufferLength:withCompletedSerializationDictionary:;
+- (void)addSelfToSerializationDictionary:;
+- (unsigned long long)deltaMachAbsTime;
+- (double)deltaMachAbsTimeSeconds;
+- (void)populateReferencesUsingBuffer:bufferLength:andDeserializationDictionary:andDataBufferDictionary:;
+- (id)startTime;
+- (id)debugDescription;
+- (id)initWithStart:end:;
+- (unsigned long long)sizeInBytesForSerializedVersion;
+- (void)writeJSONDictionaryEntriesToStream:;
+- (id)endTime;
+- (double)deltaWallTime;
+- (long long)compare:;
+- (void).cxx_destruct;
+- (unsigned long long)deltaMachContTime;
+- (double)deltaMachContTimeSeconds;
+- (id)copyWithZone:;
++ (id)timeRangeStart:end:;
++ (id)newInstanceWithoutReferencesFromSerializedBuffer:bufferLength:;
++ (id)classDictionaryKey;
+@end

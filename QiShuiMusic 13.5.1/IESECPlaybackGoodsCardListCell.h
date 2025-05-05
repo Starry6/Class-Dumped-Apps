@@ -1,0 +1,30 @@
+@interface IESECPlaybackGoodsCardListCell : UICollectionViewCell
+@property (nonatomic) IESECPlaybackGoodsCardView card;
+@property (nonatomic) IESECLiveReplayCardModel cardModel;
+@property (nonatomic) <IESECPlaybackGoodsCardViewDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)infoViewClicked;
+- (id)cardModel;
+- (BOOL)cardUseMultiMode;
+- (void)expandWithAnimation:;
+- (long long)isFirstLocatedCardWithGoodsIndex:;
+- (BOOL)isFromGoodsDetail;
+- (void)setCardModel:;
+- (void)showViewInParent:;
+- (void)shrink;
+- (void)updateDataSource:;
+- (void)updateModel:withIndex:;
+- (void)goBack;
+- (void)layoutSubviews;
+- (void)setCard:;
+- (void)setDelegate:;
+- (id)initWithFrame:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)card;
+- (void)setupUI;
++ (id)identity;
+@end

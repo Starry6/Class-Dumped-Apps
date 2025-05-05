@@ -1,0 +1,35 @@
+@interface ICIAMSynchronizeMessagesRequest : PBRequest
+@property (nonatomic) BOOL hasCommandSerialNumber;
+@property (nonatomic) q commandSerialNumber;
+@property (nonatomic) BOOL hasDSID;
+@property (nonatomic) q dSID;
+@property (nonatomic) BOOL hasDeviceID;
+@property (nonatomic) NSString deviceID;
+@property (nonatomic) BOOL hasActiveCommandsOnly;
+@property (nonatomic) BOOL activeCommandsOnly;
+- (void)setDSID:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)setDeviceID:;
+- (id)deviceID;
+- (void)mergeFrom:;
+- (BOOL)hasDeviceID;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setHasDSID:;
+- (BOOL)hasDSID;
+- (long long)dSID;
+- (void)setCommandSerialNumber:;
+- (void)setHasCommandSerialNumber:;
+- (BOOL)hasCommandSerialNumber;
+- (long long)commandSerialNumber;
+- (void)setActiveCommandsOnly:;
+- (void)setHasActiveCommandsOnly:;
+- (BOOL)hasActiveCommandsOnly;
+- (BOOL)activeCommandsOnly;
+@end

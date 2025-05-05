@@ -1,0 +1,30 @@
+@interface LPInlineMediaPlaybackInformation : NSObject
+@property (nonatomic) Q type;
+@property (nonatomic) NSString storeIdentifier;
+@property (nonatomic) NSString storefrontIdentifier;
+@property (nonatomic) NSArray offers;
+@property (nonatomic) BOOL isAvailableForAnonymousDownload;
+@property (nonatomic) NSURL previewURL;
+@property (nonatomic) LPLyricExcerptMetadata lyricExcerpt;
+@property (nonatomic) NSString persistentIdentifier;
+@property (nonatomic) LPAudio audio;
+- (id)storeIdentifier;
+- (void)setPersistentIdentifier:;
+- (id)offers;
+- (id)persistentIdentifier;
+- (void)setStorefrontIdentifier:;
+- (unsigned long long)availability;
+- (unsigned long long)type;
+- (id)previewURL;
+- (void).cxx_destruct;
+- (id)storefrontIdentifier;
+- (void)setOffers:;
+- (id)initWithType:;
+- (id)audio;
+- (void)setStoreIdentifier:;
+- (void)setPreviewURL:;
+- (void)setAudio:;
+- (BOOL)isAvailableForAnonymousDownload;
+- (id)lyricExcerpt;
+- (void)setLyricExcerpt:;
+@end

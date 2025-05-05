@@ -1,0 +1,30 @@
+@interface TRILogEvent : PBCodable
+@property (nonatomic) BOOL hasContext;
+@property (nonatomic) TRILogContext context;
+@property (nonatomic) BOOL hasLogEventId;
+@property (nonatomic) NSString logEventId;
+@property (nonatomic) BOOL hasDenormalizedEvent;
+@property (nonatomic) TRIDenormalizedEvent denormalizedEvent;
+- (BOOL)hasContext;
+- (id)context;
+- (void)writeTo:;
+- (void)setLogEventId:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (id)logEventId;
+- (void)mergeFrom:;
+- (id)denormalizedEvent;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (BOOL)hasDenormalizedEvent;
+- (id)description;
+- (void)setDenormalizedEvent:;
+- (id)dictionaryRepresentation;
+- (void)setContext:;
+- (BOOL)hasLogEventId;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
++ (id)currentTime;
++ (id)contextWithTrackingId:projectId:;
++ (id)eventWithTrackingId:projectId:;
+@end

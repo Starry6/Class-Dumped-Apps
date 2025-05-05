@@ -1,0 +1,33 @@
+@interface CSItemSummary : NSObject
+@property (nonatomic) NSString type;
+@property (nonatomic) CSSearchableItem sourceItem;
+- (id)phoneNumbers;
+- (id)emailAddresses;
+- (id)contactIdentifier;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (id)type;
+- (id)initWithStatus:;
+- (void).cxx_destruct;
+- (id)allEmailAddresses;
+- (id)name;
+- (id)copyWithZone:;
+- (id)alternateNames;
+- (id)sourceItem;
+- (id)initWithItemSummaryType:;
+- (id)initWithItemSummary:newContactScope:;
+- (id)initWithName:contactIdentifier:alternateNames:phoneNumbers:emailAddresses:contactScope:;
+- (id)initWithName:contactIdentifier:alternateNames:phoneNumbers:emailAddresses:allEmailAddresses:contactScope:;
+- (id)initWithDateFrom:dateTo:;
+- (id)initWithTextQuery:textScope:;
+- (id)initWithAttachmentQuery:attachmentScope:;
+- (long long)contactScope;
+- (id)dateFrom;
+- (id)dateTo;
+- (id)textQuery;
+- (long long)textScope;
+- (long long)statusValue;
+- (id)attachmentQuery;
+- (long long)attachmentScope;
++ (BOOL)supportsSecureCoding;
+@end

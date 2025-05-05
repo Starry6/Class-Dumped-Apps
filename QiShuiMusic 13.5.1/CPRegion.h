@@ -1,0 +1,28 @@
+@interface CPRegion : CPChunk
+- (id)link;
+- (void)dealloc;
+- (void)setLink:;
+- (int)order;
+- (void)setOrder:;
+- (id)copyWithZone:;
+- (BOOL)isRotated;
+- (BOOL)isTextRegion;
+- (void)accept:;
+- (BOOL)isIndivisible;
+- (BOOL)isBoxRegion;
+- (BOOL)isGraphicalRegion;
+- (BOOL)isRowRegion;
+- (void)setIsImageRegion:;
+- (BOOL)isImageRegion;
+- (BOOL)isShapeRegion;
+- (BOOL)isParagraphRegion;
+- (BOOL)isListItemRegion;
+- (void)setIsTextRegion:;
+- (BOOL)isTableCellRegion;
+- (BOOL)isBodyZone;
+- (BOOL)isCompoundShape;
+- (void)setIsCompoundShape:;
+- (BOOL)isZone;
+- (id)nextRegion;
+- (void)setNextRegion:;
+@end

@@ -1,0 +1,32 @@
+@interface GEOLocalizedBytes : PBCodable
+@property (nonatomic) BOOL hasLocale;
+@property (nonatomic) NSString locale;
+@property (nonatomic) BOOL hasByteValue;
+@property (nonatomic) NSData byteValue;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (void)setLocale:;
+- (id)unknownFields;
+- (id)init;
+- (BOOL)hasLocale;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (id)locale;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasByteValue;
+- (id)byteValue;
+- (void)setByteValue:;
++ (BOOL)isValid:;
+@end

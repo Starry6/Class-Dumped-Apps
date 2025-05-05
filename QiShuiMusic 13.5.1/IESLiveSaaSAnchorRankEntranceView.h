@@ -1,0 +1,37 @@
+@interface IESLiveSaaSAnchorRankEntranceView : UIButton
+@property (nonatomic) BOOL isSwitchingRankType;
+@property (nonatomic) IESLiveSaaSAnchorRankEntranceEcommerceView ecommerceView;
+@property (nonatomic) IESLiveSaaSAnchorRankEntranceHourView hourView;
+@property (nonatomic) IESLiveSaaSAnchorRankEntranceViewModel viewModel;
+@property (nonatomic) RACDisposable loopDispose;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)zoomUpTransform;
+- (void)doHintAnimation;
+- (void)setLoopDispose:;
+- (id)zoomInTransform;
+- (void)bindViewModel;
+- (void)doFlipAnimation:completion:;
+- (id)ecommerceView;
+- (void)forceHideRank:hidden:;
+- (id)hourView;
+- (BOOL)isSwitchingRankType;
+- (void)loopAnimationDelay:forceFlip:;
+- (void)loopAnimationForceFlip:animated:;
+- (id)loopDispose;
+- (id)pluginLayoutContentSize;
+- (void)screenOrientationChanged:;
+- (void)setEcommerceView:;
+- (void)setHourView:;
+- (void)setIsSwitchingRankType:;
+- (long long)visiableRankItemType;
+- (id)visiableRankItemView;
+- (id)zoomTransform:;
+- (id)viewType;
+- (id)viewModel;
+- (id)initWithViewModel:;
+- (void).cxx_destruct;
+- (void)setViewModel:;
+@end

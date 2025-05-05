@@ -1,0 +1,34 @@
+@interface PTPOperationResponsePacket : NSObject
+- (unsigned int)transactionID;
+- (unsigned short)responseCode;
+- (void)setTransactionID:;
+- (void)setResponseCode:;
+- (id)description;
+- (id)copyWithZone:;
+- (unsigned int)parameterAtIndex:;
+- (id)initWithTCPBuffer:;
+- (id)initWithUSBBuffer:;
+- (id)contentForTCP;
+- (id)contentForUSB;
+- (id)contentForUSBUsingBuffer:capacity:;
+- (int)numParameters;
+- (void)setPparameter:atIndex:;
+- (unsigned int)parameter1;
+- (void)setParameter1:;
+- (unsigned int)parameter2;
+- (void)setParameter2:;
+- (unsigned int)parameter3;
+- (void)setParameter3:;
+- (unsigned int)parameter4;
+- (void)setParameter4:;
+- (unsigned int)parameter5;
+- (void)setParameter5:;
+- (id)initWithResponseCode:transactionID:numParameters:parameters:;
+- (id)initWithResponseCode:transactionID:;
+- (id)initWithResponseCode:transactionID:parameter1:;
+- (id)initWithResponseCode:transactionID:parameter1:parameter2:;
+- (id)initWithResponseCode:transactionID:parameter1:parameter2:parameter3:;
+- (id)initWithResponseCode:transactionID:parameter1:parameter2:parameter3:parameter4:;
+- (id)initWithResponseCode:transactionID:parameter1:parameter2:parameter3:parameter4:parameter5:;
+- (void)setNumParameters:;
+@end

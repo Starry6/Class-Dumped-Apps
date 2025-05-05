@@ -1,0 +1,32 @@
+@interface PLSpotlightDonationManager : NSObject
+@property (nonatomic) CSSearchableIndex spotlightIndex;
+@property (nonatomic) PLPhotoLibrary photoLibrary;
+@property (nonatomic) NSOperationQueue operationQueue;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)photoLibrary;
+- (id)initWithPhotoLibrary:;
+- (void)_signPostIntervalForOperationType:searchableItemCount:isBegin:;
+- (unsigned long long)pendingOperationCount;
+- (void)beginSignpostIntervalForOperationType:searchableItemCount:;
+- (void)deleteAllSearchableItemsWithCompletion:;
+- (void)endSignpostIntervalForOperationType:searchableItemCount:;
+- (void)deleteSearchableItemsWithIdentifiers:;
+- (id)operationQueue;
+- (id)spotlightDonationManagerLog;
+- (unsigned long long)deleteItemsFromSpotlightWithSearchableItemIdentifiers:;
+- (void)setSpotlightOperationQueueSuspended:;
+- (void).cxx_destruct;
+- (void)removeOperationCountObserver:;
+- (void)addOperationCountObserver:;
+- (void)donateSearchableItems:bundleIdentifier:;
+- (id)spotlightIndex;
+- (unsigned long long)deleteAllSearchableItemsFromSpotlight;
+- (unsigned long long)donateSearchableItemsToSpotlight:bundleIdentifier:;
++ (void)handleUniversalSearchPhotoLibraryEligibilityChangeWithDetectedPathChange:;
++ (void)handleDeletionForPhotoLibraryWithURL:completion:;
++ (BOOL)_deleteAllSearchableItemsForSystemPhotoLibraryWithError:;
++ (id)_photolibraryDatabaseUUIDForPhotolibraryWithURL:;
+@end

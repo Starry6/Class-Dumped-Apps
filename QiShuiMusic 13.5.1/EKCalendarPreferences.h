@@ -1,0 +1,38 @@
+@interface EKCalendarPreferences : NSObject
+@property (nonatomic) CalPreferences calPreferences;
+@property (nonatomic) BOOL sharedCalendarNotificationsDisabled;
+@property (nonatomic) BOOL invitationNotificationsDisabled;
+@property (nonatomic) BOOL timeToLeaveEnabled;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)displayOrderForAccounts;
+- (id)init;
+- (unsigned long long)_displayOrderForSourceWithIdentifier:key:;
+- (BOOL)invitationNotificationsDisabled;
+- (void)setTimeToLeaveEnabled:;
+- (void)updateDisplayOrderForLocalGroupsWithSourceIdentifiers:;
+- (BOOL)expandedStateForTopLevelNodeWithUID:;
+- (id)disabledCalendarsForMainWindow;
+- (void)_updateStateForDisabledOrCollapsedItemWithUID:delegateID:state:withKey:withNotification:;
+- (id)disabledCalendarsForDelegateWithUID:;
+- (void)_updateDisplayOrderForSources:key:;
+- (BOOL)timeToLeaveEnabled;
+- (id)calPreferences;
+- (id)_keyForDelegateID:;
+- (BOOL)sharedCalendarNotificationsDisabled;
+- (id)_disabledOrCollapsedItemsForDelegateID:withKey:;
+- (void)setCalPreferences:;
+- (unsigned long long)displayOrderForLocalGroupWithSourceIdentifier:;
+- (void).cxx_destruct;
+- (BOOL)_checkedStateForDisabledOrCollapsedItemWithUID:delegateID:withKey:;
+- (BOOL)checkedStateForCalendarWithUID:delegateID:;
+- (void)setSharedCalendarNotificationsDisabled:;
+- (unsigned long long)displayOrderForAccountWithSourceIdentifier:;
+- (void)updateExpandedStateForTopLevelNodeWithUID:state:;
+- (void)updateDisplayOrderForAccountsWithSourceIdentifiers:;
+- (void)setInvitationNotificationsDisabled:;
+- (void)updateCheckedStateForCalendarWithUID:delegateID:state:;
++ (id)calendarPreferences;
+@end

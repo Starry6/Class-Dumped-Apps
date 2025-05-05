@@ -1,0 +1,31 @@
+@interface PLDeviceRestoreMigrationSupport : NSObject
+@property (nonatomic) @? prerequisitesCompleteBlock;
+@property (nonatomic) BOOL dataMigratorPluginHasRequestedLibraryMigration;
+- (void)_linkAsideAlbumMetadata;
+- (void)_prepareDatabaseForOTAAssetsPhase;
+- (id)initWithLibraryServicesManager:;
+- (void)_setAlbumPendingItemCountsWithContext:shouldSave:;
+- (BOOL)isOTARestoreInProgress;
+- (void)waitForDataMigratorPrerequisitesForTrackingRestoreFromCloud;
+- (BOOL)isRestoreFromBackupSourceCloud;
+- (BOOL)hasDataMigratorPluginRequestedLibraryMigration;
+- (void)setPrerequisitesCompleteBlock:;
+- (BOOL)isRestoreFromBackupSourceDeviceToDevice;
+- (id)restoreTypeDescription;
+- (void)_batchDeleteAllAssetsExcludedFromOTARestoreWithContext:;
+- (BOOL)hasCompletedDataMigratorPrerequisitesForTrackingRestoreFromCloud;
+- (BOOL)isRestoreFromBackupSourceiTunes;
+- (void).cxx_destruct;
+- (id)_newShortLivedLibrarySupportingLibraryOpenWithName:;
+- (void)deletePhotoStreamDataForStreamID:;
+- (void)setDataMigratorPluginHasRequestedLibraryMigration:;
+- (id)_dataMigrationInfo;
+- (BOOL)isRestoreFromBackupSourceMegaBackup;
+- (BOOL)_userDataDispositionMatchesDisposition:;
+- (BOOL)prepareDatabaseForOTARestoreIfNecessaryWithMigrationType:;
+- (BOOL)isRestoreFromBackupSourceDifferentDevice;
+- (BOOL)isRestoreFromBackup;
+- (id)prerequisitesCompleteBlock;
+- (void)_setAssetsToOTARestoreAsIncompleteWithContext:populateAlbumMappings:;
++ (BOOL)isDataMigrationInProgress;
+@end

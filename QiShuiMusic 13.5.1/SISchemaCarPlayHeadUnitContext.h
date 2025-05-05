@@ -1,0 +1,34 @@
+@interface SISchemaCarPlayHeadUnitContext : SISchemaInstrumentationMessage
+@property (nonatomic) NSString vehicleName;
+@property (nonatomic) BOOL hasVehicleName;
+@property (nonatomic) NSString vehicleModel;
+@property (nonatomic) BOOL hasVehicleModel;
+@property (nonatomic) NSString vehicleManufacturer;
+@property (nonatomic) BOOL hasVehicleManufacturer;
+@property (nonatomic) NSData jsonData;
+- (id)vehicleName;
+- (id)vehicleModel;
+- (id)vehicleManufacturer;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (void)setVehicleModel:;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void)setVehicleName:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)setVehicleManufacturer:;
+- (BOOL)hasVehicleName;
+- (void)deleteVehicleName;
+- (BOOL)hasVehicleModel;
+- (void)deleteVehicleModel;
+- (BOOL)hasVehicleManufacturer;
+- (void)deleteVehicleManufacturer;
+- (void)setHasVehicleName:;
+- (void)setHasVehicleModel:;
+- (void)setHasVehicleManufacturer:;
+@end

@@ -1,0 +1,2 @@
+@interface IESLiveSaaSPBIESLiveSaaSPBGetLotteryInfoRoot : GPBRootObject
+@end

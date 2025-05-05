@@ -1,0 +1,38 @@
+@interface ICRadioStationTrack : NSObject
+@property (nonatomic) q storeAdamID;
+@property (nonatomic) ICStorePlatformMetadata storePlatformMetadata;
+@property (nonatomic) NSDictionary serverTrackInfo;
+@property (nonatomic) NSArray fileAssets;
+@property (nonatomic) ICStoreHLSAssetInfo hlsAsset;
+@property (nonatomic) NSArray radioStreamAssets;
+@property (nonatomic) q likeState;
+@property (nonatomic) BOOL skippable;
+@property (nonatomic) q trackType;
+@property (nonatomic) BOOL hasStartTime;
+@property (nonatomic) double startTime;
+@property (nonatomic) NSDate expirationDate;
+@property (nonatomic) ICRadioStationTrack beforePromoContentTrack;
+@property (nonatomic) ICRadioStationTrack afterPromoContentTrack;
+@property (nonatomic) ICRadioStationTrack parentTrack;
+@property (nonatomic) NSString playbackAuthorizationToken;
+- (BOOL)hasStartTime;
+- (id)playbackAuthorizationToken;
+- (double)startTime;
+- (id)expirationDate;
+- (long long)storeAdamID;
+- (void).cxx_destruct;
+- (long long)trackType;
+- (id)fileAssets;
+- (id)hlsAsset;
+- (id)initWithResponseDictionary:responseVersion:expirationDate:;
+- (id)afterPromoContentTrack;
+- (id)beforePromoContentTrack;
+- (id)radioStreamAssets;
+- (BOOL)isSkippable;
+- (long long)likeState;
+- (id)serverTrackInfo;
+- (id)storePlatformMetadata;
+- (id)_hlsAssetFromAssetDictionary:;
+- (id)parentTrack;
++ (id)flattenedTracksWithTracks:;
+@end

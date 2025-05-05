@@ -1,0 +1,2 @@
+@interface ISSymbolImage : IFSymbolImage
+@end

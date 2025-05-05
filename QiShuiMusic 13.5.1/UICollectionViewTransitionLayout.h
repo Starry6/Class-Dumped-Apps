@@ -1,0 +1,31 @@
+@interface UICollectionViewTransitionLayout : UICollectionViewLayout
+@property (nonatomic) double transitionProgress;
+@property (nonatomic) UICollectionViewLayout currentLayout;
+@property (nonatomic) UICollectionViewLayout nextLayout;
+- (id)layoutAttributesForElementsInRect:;
+- (id)init;
+- (void)_prepareForTransitionToLayout:;
+- (id)layoutAttributesForDecorationViewOfKind:atIndexPath:;
+- (void)_setCollectionView:;
+- (void)invalidateLayout;
+- (void)prepareLayout;
+- (id)layoutAttributesForSupplementaryViewOfKind:atIndexPath:;
+- (id)layoutAttributesForItemAtIndexPath:;
+- (id)collectionViewContentSize;
+- (id)currentLayout;
+- (double)transitionProgress;
+- (id)initWithCoder:;
+- (void)setTransitionProgress:;
+- (void).cxx_destruct;
+- (id)targetContentOffsetForProposedContentOffset:;
+- (void)_prepareForTransitionFromLayout:;
+- (void)_finalizeLayoutTransition;
+- (BOOL)_supportsAdvancedTransitionAnimations;
+- (id)initWithCurrentLayout:nextLayout:;
+- (id)_oldVisibleBounds;
+- (id)_newVisibleBounds;
+- (void)updateValue:forAnimatedKey:;
+- (double)valueForAnimatedKey:;
+- (id)interpolatedLayoutAttributesFromLayoutAttributes:toLayoutAttributes:progress:;
+- (id)nextLayout;
+@end

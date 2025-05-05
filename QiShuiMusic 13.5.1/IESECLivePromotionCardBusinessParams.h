@@ -1,0 +1,33 @@
+@interface IESECLivePromotionCardBusinessParams : NSObject
+@property (nonatomic) IESECLiveContext liveContext;
+@property (nonatomic) <IESECLivePromotionCardBusinessParamsDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setLiveContext:;
+- (BOOL)currentLandscape;
+- (BOOL)enableShowAddressAlert;
+- (id)getBasicTrackParams;
+- (long long)getBusinessEnvironmentType;
+- (id)getGoodsListLogID;
+- (id)getGoodsListOpenParams;
+- (id)getHourBuyShopID;
+- (id)getListMergeShopGoodsTrackParams;
+- (id)getPassthroughTrackDic;
+- (id)getSelectedSKUItem;
+- (id)getSkuFrom;
+- (id)getStoreTrack;
+- (id)initWithLiveContext:;
+- (id)liveContext;
+- (id)localPage;
+- (id)promotionCardEcomEntranceForm;
+- (BOOL)promotionCardInFusion;
+- (id)promotionCardLiveListChannel;
+- (id)promotionCardPanelSize;
+- (id)searchParams;
+- (id)skuMaskBgColor;
+- (void)setDelegate:;
+- (id)delegate;
+- (void).cxx_destruct;
+@end

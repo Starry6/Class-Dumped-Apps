@@ -1,0 +1,36 @@
+@interface CIEnhancementCalculation : NSObject
+@property (nonatomic) {?=dd} originalFaceColor;
+@property (nonatomic) CIEnhancementHistogram lumHist;
+@property (nonatomic) CIEnhancementHistogram rgbSumHist;
+@property (nonatomic) CIEnhancementHistogram satHist;
+@property (nonatomic) CIEnhancementHistogram borderHist;
+- (id)init;
+- (void)dealloc;
+- (id)shadow;
+- (void)setCurvePercent:;
+- (void)setLuminanceHistogram:;
+- (void)setRGBSumHistogram:;
+- (void)setBorderHistogram:;
+- (void)setSaturationHistogram:;
+- (void)setFaceColorFromChromaI:andChromaQ:;
+- (void)setupFaceColor:redIndex:greenIndex:blueIndex:;
+- (void)setExposureValue:;
+- (void)setShadowsMin:max:zeroExposure:;
+- (id)faceBalanceStrength;
+- (id)faceBalanceWarmth;
+- (id)originalFaceColor;
+- (id)vibrance;
+- (unsigned long long)curveCount;
+- (id)curvePointAtIndex:;
+- (int)putShadowsAnalysisInto:;
+- (id)rawShadow;
+- (void)downSampleHistogram:to:storeIn:;
+- (void)printHistogram:downsampledTo:;
+- (void)printAnalysis;
+- (void)printHistogramsDownsampledTo:;
+- (id)lumHist;
+- (id)rgbSumHist;
+- (id)satHist;
+- (id)borderHist;
++ (double)bestWarmthForI:q:percentChange:;
+@end

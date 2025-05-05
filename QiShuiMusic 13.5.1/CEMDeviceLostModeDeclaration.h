@@ -1,0 +1,33 @@
+@interface CEMDeviceLostModeDeclaration : CEMConfigurationBase
+@property (nonatomic) NSNumber payloadEnable;
+@property (nonatomic) NSString payloadMessage;
+@property (nonatomic) NSString payloadPhoneNumber;
+@property (nonatomic) NSString payloadFootnote;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (BOOL)multipleAllowed;
+- (BOOL)mustBeSupervised;
+- (int)activationLevel;
+- (id)assetReferences;
+- (BOOL)loadPayload:error:;
+- (id)serializePayloadWithAssetProviders:;
+- (id)payloadMessage;
+- (void)setPayloadMessage:;
+- (id)payloadPhoneNumber;
+- (void)setPayloadPhoneNumber:;
+- (id)payloadEnable;
+- (void)setPayloadEnable:;
+- (id)payloadFootnote;
+- (void)setPayloadFootnote:;
++ (id)profileType;
++ (id)registeredClassName;
++ (id)registeredIdentifier;
++ (id)allowedPayloadKeys;
++ (id)restrictionPayloadKeys;
++ (id)buildWithIdentifier:withEnable:withMessage:withPhoneNumber:withFootnote:;
++ (id)buildRequiredOnlyWithIdentifier:withEnable:;
+@end

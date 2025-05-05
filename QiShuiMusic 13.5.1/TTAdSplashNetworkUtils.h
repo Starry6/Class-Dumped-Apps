@@ -1,0 +1,2 @@
+@interface TTAdSplashNetworkUtils : NSObject
+@end

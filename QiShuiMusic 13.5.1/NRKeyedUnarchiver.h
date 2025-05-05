@@ -1,0 +1,2 @@
+@interface NRKeyedUnarchiver : NSKeyedUnarchiver
+@end

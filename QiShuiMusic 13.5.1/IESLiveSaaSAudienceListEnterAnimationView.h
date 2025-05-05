@@ -1,0 +1,38 @@
+@interface IESLiveSaaSAudienceListEnterAnimationView : UIView
+@property (nonatomic) @? animationComplete;
+@property (nonatomic) IESLiveSaaSAudienceListEnterItem enterBtn;
+@property (nonatomic) UIImageView divideView;
+@property (nonatomic) IESLiveSaaSAudienceListEnterDouplusItem douPlusBtn;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} toFrame;
+@property (nonatomic) CAGradientLayer gradientLayer;
+@property (nonatomic) <IESLiveSaaSLayoutContainerProvider> containerProvider;
+@property (nonatomic) BOOL enterBtnShowImage;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)toFrame;
+- (id)divideView;
+- (id)douPlusBtn;
+- (id)enterBtn;
+- (BOOL)enterBtnShowImage;
+- (id)initWithFrame:douPlusBtnText:enterListBtnText:enterListImage:animationComplete:;
+- (void)playDouplusEndAnimation:;
+- (void)playDouplusStartAnimation:;
+- (void)playEndSeqlistAnimation:;
+- (void)playStartSeqlistAnimation:;
+- (void)setAnimationComplete:;
+- (void)setContainerProvider:;
+- (void)setDivideView:;
+- (void)setDouPlusBtn:;
+- (void)setEnterBtn:;
+- (void)setEnterBtnShowImage:;
+- (void)setToFrame:;
+- (void)layoutSubviews;
+- (id)gradientLayer;
+- (void)animationDidStop:finished:;
+- (id)containerProvider;
+- (void).cxx_destruct;
+- (void)setGradientLayer:;
+- (id)animationComplete;
+@end

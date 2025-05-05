@@ -1,0 +1,34 @@
+@interface SFPerson : NSObject
+@property (nonatomic) NSString personIdentifier;
+@property (nonatomic) NSString contactIdentifier;
+@property (nonatomic) NSString displayName;
+@property (nonatomic) NSArray phoneNumbers;
+@property (nonatomic) NSArray emailAddresses;
+@property (nonatomic) NSString photosIdentifier;
+@property (nonatomic) NSDictionary dictionaryRepresentation;
+@property (nonatomic) NSData jsonData;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)phoneNumbers;
+- (id)emailAddresses;
+- (void)setContactIdentifier:;
+- (id)initWithProtobuf:;
+- (id)contactIdentifier;
+- (id)initWithCoder:;
+- (id)jsonData;
+- (void)setDisplayName:;
+- (id)displayName;
+- (void)encodeWithCoder:;
+- (void)setPhoneNumbers:;
+- (void).cxx_destruct;
+- (void)setEmailAddresses:;
+- (id)dictionaryRepresentation;
+- (id)copyWithZone:;
+- (id)personIdentifier;
+- (void)setPersonIdentifier:;
+- (id)photosIdentifier;
+- (void)setPhotosIdentifier:;
++ (BOOL)supportsSecureCoding;
+@end

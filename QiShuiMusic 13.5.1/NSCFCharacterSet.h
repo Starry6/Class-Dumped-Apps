@@ -1,0 +1,30 @@
+@interface NSCFCharacterSet : NSMutableCharacterSet
+- (Class)classForKeyedArchiver;
+- (BOOL)allowsWeakReference;
+- (id)bitmapRepresentation;
+- (id)invertedSet;
+- (void)addCharactersInString:;
+- (Class)classForArchiver;
+- (void)removeCharactersInString:;
+- (void)formIntersectionWithCharacterSet:;
+- (void)addCharactersInRange:;
+- (void)makeCharacterSetCompact;
+- (unsigned long long)hash;
+- (void)makeCharacterSetFast;
+- (id)release;
+- (void)encodeWithCoder:;
+- (BOOL)retainWeakReference;
+- (BOOL)hasMemberInPlane:;
+- (id)retain;
+- (void)removeCharactersInRange:;
+- (void)invert;
+- (BOOL)isSupersetOfSet:;
+- (BOOL)longCharacterIsMember:;
+- (BOOL)characterIsMember:;
+- (id)mutableCopyWithZone:;
+- (unsigned long long)retainCount;
+- (void)formUnionWithCharacterSet:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
++ (BOOL)automaticallyNotifiesObserversForKey:;
+@end

@@ -1,0 +1,30 @@
+@interface GEORequestCounterRemoteProxy : NSObject
+@property (nonatomic) BOOL countersEnabled;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)countersEnabled;
+- (id)requestCounterTicketForType:appId:;
+- (void)finishedProactiveTileDownloadForIdentifier:policy:tilesConsidered:tileDownloadAttempts:successes:failures:bytesDownloaded:;
+- (void)fetchAnalyticsHandlingDataFrom:completion:completionQueue:;
+- (void)recordAnalyticsUploadFailureCount:logMsgType:at:;
+- (void)recordAnalyticsUploadSuccessCount:bytes:logMsgType:usedCellular:at:;
+- (void)recordAnalyticsPersistCount:logMsgType:at:;
+- (void)_incrementForApp:startTime:endTime:requestType:result:xmitBytes:recvBytes:usedInterfaces:;
+- (id)externalRequestCounterTicketForType:subtype:source:appId:;
+- (void)placeCacheGetCounts:forApp:inTimeRange:ofType:handler:;
+- (void)recordAnalyticsDBExpireCount:logMsgType:at:;
+- (void)readRequestsPerAppDuring:handler:;
+- (void)recordRoutePreloadSessionAt:transportType:tilesPreloaded:tilesUsed:tilesMissed:;
+- (void)startedProactiveTileDownloadForIdentifier:policy:;
+- (void)placeCacheRegisterCacheResult:forApp:requestType:timestamp:;
+- (void)clearCounters;
+- (void)externalRequestsCount:;
+- (void)setCountersEnabled:;
+- (void)readProactiveTileDownloadsSince:handler:;
+- (void)fetchRoutePreloadSessionsFrom:completion:completionQueue:;
+- (void)readRequestLogsDuring:handler:;
+- (void)_incrementExternalForApp:startTime:endTime:xmitBytes:recvBytes:usedInterfaces:requestType:requestSubtype:source:;
+- (void)recordTrafficProbeCollectionAt:tripId:locationCount:result:;
+@end

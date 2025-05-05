@@ -1,0 +1,32 @@
+@interface GEORPCorrectedString : PBCodable
+@property (nonatomic) BOOL hasOriginalValue;
+@property (nonatomic) NSString originalValue;
+@property (nonatomic) BOOL hasCorrectedValue;
+@property (nonatomic) NSString correctedValue;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (id)init;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasOriginalValue;
+- (id)originalValue;
+- (void)setOriginalValue:;
+- (BOOL)hasCorrectedValue;
+- (id)correctedValue;
+- (void)setCorrectedValue:;
++ (BOOL)isValid:;
+@end

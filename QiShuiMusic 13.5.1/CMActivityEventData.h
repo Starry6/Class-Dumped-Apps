@@ -1,0 +1,33 @@
+@interface CMActivityEventData : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSDate startDate;
+@property (nonatomic) q eventType;
+@property (nonatomic) q action;
+@property (nonatomic) q reason;
+@property (nonatomic) q workoutType;
+- (id)startDate;
+- (void)dealloc;
+- (long long)action;
+- (long long)reason;
+- (long long)eventType;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (id)description;
+- (id)copyWithZone:;
+- (id)initWithBinarySampleRepresentation:metadata:timestamp:;
+- (id)binarySampleRepresentation;
+- (id)sr_dictionaryRepresentation;
+- (long long)workoutType;
+- (id)initWithStartDate:eventType:action:reason:workoutType:;
++ (BOOL)supportsSecureCoding;
++ (id)eventTypeName:;
++ (id)actionName:;
++ (id)reasonName:;
+@end

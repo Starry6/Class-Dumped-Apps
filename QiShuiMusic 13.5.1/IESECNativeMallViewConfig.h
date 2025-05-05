@@ -1,0 +1,36 @@
+@interface IESECNativeMallViewConfig : NSObject
+@property (nonatomic) Q platform;
+@property (nonatomic) BOOL hideLoading;
+@property (nonatomic) NSDictionary routerParam;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) NSString enterFromMerge;
+@property (nonatomic) NSString pageName;
+@property (nonatomic) BOOL adReportForbidPageChange;
+@property (nonatomic) NSArray needlessComponents;
+@property (nonatomic) BOOL delayRequestFirstScreenApis;
+@property (nonatomic) BOOL manuallyRefreshEnabled;
+@property (nonatomic) BOOL enableSyncStraightOut;
+- (void)setRouterParam:;
+- (void)setDelayRequestFirstScreenApis:;
+- (void)setHideLoading:;
+- (BOOL)adReportForbidPageChange;
+- (BOOL)delayRequestFirstScreenApis;
+- (BOOL)enableSyncStraightOut;
+- (id)enterFrom;
+- (id)enterFromMerge;
+- (BOOL)hideLoading;
+- (BOOL)manuallyRefreshEnabled;
+- (id)needlessComponents;
+- (id)routerParam;
+- (void)setAdReportForbidPageChange:;
+- (void)setEnableSyncStraightOut:;
+- (void)setEnterFrom:;
+- (void)setEnterFromMerge:;
+- (void)setManuallyRefreshEnabled:;
+- (void)setNeedlessComponents:;
+- (void)setPlatform:;
+- (unsigned long long)platform;
+- (void).cxx_destruct;
+- (void)setPageName:;
+- (id)pageName;
+@end

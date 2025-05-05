@@ -1,0 +1,34 @@
+@interface LNSnippetEnvironment : NSObject
+@property (nonatomic) {CGSize=dd} size;
+@property (nonatomic) NSLocale locale;
+@property (nonatomic) q dynamicTypeSize;
+@property (nonatomic) q legibilityWeight;
+@property (nonatomic) q layoutDirection;
+@property (nonatomic) q colorScheme;
+@property (nonatomic) q colorSchemeContrast;
+@property (nonatomic) double displayScale;
+@property (nonatomic) q displayGamut;
+@property (nonatomic) BOOL accessibilityDifferentiateWithoutColor;
+@property (nonatomic) BOOL accessibilityInvertColors;
+@property (nonatomic) BOOL accessibilityReduceMotion;
+@property (nonatomic) BOOL accessibilityReduceTransparency;
+- (id)locale;
+- (id)initWithCoder:;
+- (long long)legibilityWeight;
+- (double)displayScale;
+- (void)encodeWithCoder:;
+- (long long)colorScheme;
+- (void).cxx_destruct;
+- (long long)layoutDirection;
+- (BOOL)isEqual:;
+- (id)size;
+- (long long)displayGamut;
+- (id)initWithSize:locale:dynamicTypeSize:legibilityWeight:layoutDirection:colorScheme:colorSchemeContrast:displayScale:displayGamut:accessibilityDifferentiateWithoutColor:accessibilityInvertColors:accessibilityReduceMotion:accessibilityReduceTransparency:;
+- (long long)dynamicTypeSize;
+- (long long)colorSchemeContrast;
+- (BOOL)accessibilityDifferentiateWithoutColor;
+- (BOOL)accessibilityInvertColors;
+- (BOOL)accessibilityReduceMotion;
+- (BOOL)accessibilityReduceTransparency;
++ (BOOL)supportsSecureCoding;
+@end

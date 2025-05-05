@@ -1,0 +1,30 @@
+@interface AWEIMMessageStrangerInteractor : AWEIMInteractorObject
+@property (nonatomic) BOOL didTransferedToFriend;
+@property (nonatomic) NSString userID;
+@property (nonatomic) NSString secUserID;
+@property (nonatomic) <IESIMStrangerChatDataManagerProtocol> dataController;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)deleteMessage:;
+- (void)didFinishFollowUser:status:error:;
+- (void)didSendEmoticon:belongToTheme:;
+- (BOOL)didTransferedToFriend;
+- (void)fetchData:;
+- (void)handleStrangerDidTransferToFriendNty:;
+- (void)iesim_strangerConversationDataSourceDidUpdate:updateConversationIdentifiers:reason:;
+- (id)secUserID;
+- (void)setDataController:;
+- (void)setDidTransferedToFriend:;
+- (void)setSecUserID:;
+- (id)vcParent;
+- (void)viewControllerWillDealloc;
+- (id)filter;
+- (id)userID;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (void)setUserID:;
+- (void)viewDidLoad;
+- (id)dataController;
+@end

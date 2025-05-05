@@ -1,0 +1,35 @@
+@interface EKFrozenReminderCalendar : EKFrozenReminderObject
+- (id)remObjectID;
+- (id)allAlarms;
+- (id)calendarIdentifier;
+- (id)_account;
+- (id)syncError;
+- (id)uniqueIdentifier;
+- (id)externalID;
+- (BOOL)isPublished;
+- (id)symbolicColorName;
+- (id)sharees;
+- (id)publishURLString;
+- (id)unlocalizedTitle;
+- (id)title;
+- (int)allowedEntities;
+- (id)colorStringRaw;
+- (void).cxx_destruct;
+- (id)source;
+- (BOOL)isColorDisplayOnly;
+- (unsigned long long)sharingStatus;
+- (int)flags;
+- (id)UUID;
+- (int)displayOrder;
+- (id)sharedOwnerName;
+- (id)_list;
+- (id)initNewListInStore:;
+- (unsigned long long)ekSharingStatusFromREMSharingStatus:;
+- (id)REMColorFromEKHexColorString:;
+- (id)hexColorStringFromREMColor:;
+- (BOOL)_applyChanges:error:;
+- (BOOL)_applyChangesToSaveRequest:error:;
+- (id)frozenReminderSource;
+- (id)updateListWithSaveRequest:error:;
++ (Class)meltedClass;
+@end

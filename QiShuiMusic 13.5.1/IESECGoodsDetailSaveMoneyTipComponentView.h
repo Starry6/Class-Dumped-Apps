@@ -1,0 +1,31 @@
+@interface IESECGoodsDetailSaveMoneyTipComponentView : IESECGoodsDetailBaseComponentView
+@property (nonatomic) UIStackView labelStackView;
+@property (nonatomic) UIImageView rightArrow;
+@property (nonatomic) q expireTime;
+@property (nonatomic) NSTimer timer;
+@property (nonatomic) UILabel countdownLabel;
+@property (nonatomic) BOOL isFirstCard;
+- (void)setIsFirstCard:;
+- (id)countdownLabel;
+- (id)initWithParameters:style:tracker:;
+- (BOOL)isFirstCard;
+- (void)openSaveCardCenter;
+- (void)setCountDownTimer;
+- (void)setCountdownLabel:;
+- (void)setRightArrow:;
+- (void)setupLabelStackView;
+- (void)updateCountdownLabel;
+- (void)updateWithParameters:;
+- (void)dealloc;
+- (void)setTimer:;
+- (void).cxx_destruct;
+- (id)timer;
+- (id)labelStackView;
+- (void)setLabelStackView:;
+- (long long)expireTime;
+- (void)setExpireTime:;
+- (void)setupUI;
+- (id)rightArrow;
++ (double)componentViewHeight:style:;
++ (BOOL)componentViewShouldShow:style:;
+@end

@@ -1,0 +1,38 @@
+@interface ICIndexItemsOperation : NSOperation
+@property (nonatomic) CSSearchableIndex searchableIndex;
+@property (nonatomic) NSArray dataSources;
+@property (nonatomic) NSError error;
+@property (nonatomic) NSMutableArray objectIDsToIndex;
+@property (nonatomic) NSMutableArray searchableItemsToIndex;
+@property (nonatomic) Q totalSizeOfSearchableItemsToIndex;
+@property (nonatomic) NSMutableArray objectIDURIsToDelete;
+@property (nonatomic) NSMutableDictionary contextCache;
+- (id)dataSources;
+- (id)init;
+- (void)setError:;
+- (id)error;
+- (void)main;
+- (void)setDataSources:;
+- (void).cxx_destruct;
+- (void)setSearchableIndex:;
+- (id)searchableIndex;
+- (BOOL)universalSearchProcessingLibraryEnabled;
+- (id)initWithSearchableIndex:dataSources:;
+- (id)managedObjectContextForDataSource:;
+- (void)processItems;
+- (void)commitIfNecessaryForDataSource:hasItemsToDeleteThenUpdate:forceCommit:;
+- (BOOL)_shouldCommitDeletionWithHasItemsToDeleteThenUpdate:shouldForceCommit:;
+- (void)_commitObjectIDURIsToDeleteForDataSource:;
+- (BOOL)_shouldCommitIndexingWithHasItemsToDeleteThenUpdate:shouldForceCommit:;
+- (void)_commitObjectIDsToIndexForDataSource:;
+- (id)objectIDsToIndex;
+- (void)setObjectIDsToIndex:;
+- (id)searchableItemsToIndex;
+- (void)setSearchableItemsToIndex:;
+- (unsigned long long)totalSizeOfSearchableItemsToIndex;
+- (void)setTotalSizeOfSearchableItemsToIndex:;
+- (id)objectIDURIsToDelete;
+- (void)setObjectIDURIsToDelete:;
+- (id)contextCache;
+- (void)setContextCache:;
+@end

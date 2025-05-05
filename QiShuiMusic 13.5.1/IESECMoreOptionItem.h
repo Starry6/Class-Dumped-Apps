@@ -1,0 +1,33 @@
+@interface IESECMoreOptionItem : NSObject
+@property (nonatomic) UIImage image;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString imageName;
+@property (nonatomic) IESECURLModel imageUrl;
+@property (nonatomic) NSNumber iconRadius;
+@property (nonatomic) @? tapBlock;
+@property (nonatomic) UIColor backgroundColor;
+@property (nonatomic) NSString bubbleContent;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)bubbleContent;
+- (id)iconRadius;
+- (id)initWithImageName:title:;
+- (void)setBubbleContent:;
+- (void)setIconRadius:;
+- (void)setTapBlock:;
+- (id)tapBlock;
+- (void)setBackgroundColor:;
+- (void)setImageName:;
+- (id)imageName;
+- (id)backgroundColor;
+- (void)setImage:;
+- (void)setTitle:;
+- (id)title;
+- (void).cxx_destruct;
+- (id)image;
+- (id)imageUrl;
+- (void)setImageUrl:;
+- (id)initWithImage:title:;
+@end

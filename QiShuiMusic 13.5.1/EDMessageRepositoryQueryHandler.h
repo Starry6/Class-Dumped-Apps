@@ -1,0 +1,37 @@
+@interface EDMessageRepositoryQueryHandler : NSObject
+@property (nonatomic) EFLocked summaryLoadersMapTable;
+@property (nonatomic) EFQuery query;
+@property (nonatomic) EDMessagePersistence messagePersistence;
+@property (nonatomic) EDPersistenceHookRegistry hookRegistry;
+@property (nonatomic) EDRemindMeNotificationController remindMeNotificationController;
+@property (nonatomic) <EMMessageListItemQueryResultsObserver> resultsObserver;
+@property (nonatomic) EMObjectID observationIdentifier;
+@property (nonatomic) NSSet mailboxes;
+@property (nonatomic) q dateSortOrder;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)cancel;
+- (void)dealloc;
+- (BOOL)start;
+- (id)threadReconciliationQueries;
+- (id)query;
+- (void)tearDown;
+- (id)messageReconciliationQueries;
+- (void).cxx_destruct;
+- (void)requestSummaryForMessageObjectID:;
+- (id)hookRegistry;
+- (id)mailboxes;
+- (id)remindMeNotificationController;
+- (void)test_tearDown;
+- (id)messagePersistence;
+- (id)initWithQuery:messagePersistence:hookRegistry:remindMeNotificationController:observer:observationIdentifier:;
+- (BOOL)keyPathsAffectSorting:;
+- (id)_distinctObjectIDs:queryHandlerLog:;
+- (id)resultsObserver;
+- (id)observationIdentifier;
+- (long long)dateSortOrder;
+- (id)summaryLoadersMapTable;
+- (void)setSummaryLoadersMapTable:;
+@end

@@ -1,0 +1,36 @@
+@interface IESIMHomepageBottomToast : MTLModel
+@property (nonatomic) NSNumber toastType;
+@property (nonatomic) NSString toast;
+@property (nonatomic) NSString jumpURLTitle;
+@property (nonatomic) NSString jumpURL;
+@property (nonatomic) IESIMURLModel iconURL;
+@property (nonatomic) Q groupId;
+@property (nonatomic) Q interval;
+@property (nonatomic) Q limit;
+@property (nonatomic) Q typeLimit;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)jumpURL;
+- (id)jumpURLTitle;
+- (void)setJumpURL:;
+- (void)setJumpURLTitle:;
+- (void)setToastType:;
+- (void)setTypeLimit:;
+- (id)toastType;
+- (unsigned long long)typeLimit;
+- (void)setIconURL:;
+- (unsigned long long)limit;
+- (void)setLimit:;
+- (unsigned long long)groupId;
+- (void)setInterval:;
+- (void).cxx_destruct;
+- (id)iconURL;
+- (void)setGroupId:;
+- (unsigned long long)interval;
+- (void)setToast:;
+- (id)toast;
++ (id)iconURLJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

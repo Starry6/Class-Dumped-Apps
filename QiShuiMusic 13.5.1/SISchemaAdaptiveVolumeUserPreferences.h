@@ -1,0 +1,33 @@
+@interface SISchemaAdaptiveVolumeUserPreferences : SISchemaInstrumentationMessage
+@property (nonatomic) NSInteger mostRecentIntent;
+@property (nonatomic) BOOL hasMostRecentIntent;
+@property (nonatomic) BOOL isPermanentOffsetEnabled;
+@property (nonatomic) BOOL hasIsPermanentOffsetEnabled;
+@property (nonatomic) float permanentOffsetFactor;
+@property (nonatomic) BOOL hasPermanentOffsetFactor;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)setMostRecentIntent:;
+- (BOOL)hasMostRecentIntent;
+- (void)setHasMostRecentIntent:;
+- (void)deleteMostRecentIntent;
+- (void)setIsPermanentOffsetEnabled:;
+- (BOOL)hasIsPermanentOffsetEnabled;
+- (void)setHasIsPermanentOffsetEnabled:;
+- (void)deleteIsPermanentOffsetEnabled;
+- (void)setPermanentOffsetFactor:;
+- (BOOL)hasPermanentOffsetFactor;
+- (void)setHasPermanentOffsetFactor:;
+- (void)deletePermanentOffsetFactor;
+- (int)mostRecentIntent;
+- (BOOL)isPermanentOffsetEnabled;
+- (float)permanentOffsetFactor;
+@end

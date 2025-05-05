@@ -1,0 +1,30 @@
+@interface CSToastManager : NSObject
+@property (nonatomic) CSToastStyle sharedStyle;
+@property (nonatomic) BOOL tapToDismissEnabled;
+@property (nonatomic) BOOL queueEnabled;
+@property (nonatomic) double defaultDuration;
+@property (nonatomic) @ defaultPosition;
+- (void)setSharedStyle:;
+- (BOOL)isQueueEnabled;
+- (BOOL)isTapToDismissEnabled;
+- (void)setDefaultPosition:;
+- (void)setQueueEnabled:;
+- (void)setTapToDismissEnabled:;
+- (id)init;
+- (void)setDefaultDuration:;
+- (void).cxx_destruct;
+- (double)defaultDuration;
+- (id)sharedStyle;
+- (id)defaultPosition;
++ (void)setSharedStyle:;
++ (BOOL)isQueueEnabled;
++ (BOOL)isTapToDismissEnabled;
++ (void)setDefaultPosition:;
++ (void)setQueueEnabled:;
++ (void)setTapToDismissEnabled:;
++ (void)setDefaultDuration:;
++ (id)sharedManager;
++ (double)defaultDuration;
++ (id)sharedStyle;
++ (id)defaultPosition;
+@end

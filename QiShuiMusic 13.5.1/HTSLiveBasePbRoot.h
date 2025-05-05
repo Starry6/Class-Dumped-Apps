@@ -1,0 +1,2 @@
+@interface HTSLiveBasePbRoot : GPBRootObject
+@end

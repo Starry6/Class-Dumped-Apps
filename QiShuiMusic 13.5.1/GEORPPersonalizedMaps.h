@@ -1,0 +1,38 @@
+@interface GEORPPersonalizedMaps : PBCodable
+@property (nonatomic) BOOL hasAddressType;
+@property (nonatomic) NSInteger addressType;
+@property (nonatomic) BOOL hasPlaceType;
+@property (nonatomic) NSInteger placeType;
+@property (nonatomic) BOOL hasAddress;
+@property (nonatomic) GEORPAddress address;
+- (int)placeType;
+- (void)readAll:;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (void)setAddress:;
+- (id)placeTypeAsString:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void)setPlaceType:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)address;
+- (id)dictionaryRepresentation;
+- (void)setHasPlaceType:;
+- (BOOL)hasPlaceType;
+- (int)StringAsPlaceType:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasAddress;
+- (int)addressType;
+- (void)setAddressType:;
+- (void)setHasAddressType:;
+- (BOOL)hasAddressType;
+- (id)addressTypeAsString:;
+- (int)StringAsAddressType:;
++ (BOOL)isValid:;
+@end

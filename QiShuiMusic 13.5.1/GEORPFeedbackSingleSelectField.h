@@ -1,0 +1,32 @@
+@interface GEORPFeedbackSingleSelectField : PBCodable
+@property (nonatomic) NSMutableArray options;
+@property (nonatomic) BOOL hasSelected;
+@property (nonatomic) GEORPFeedbackFieldOption selected;
+- (void)readAll:;
+- (void)setOptions:;
+- (id)selected;
+- (id)init;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)setSelected:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)options;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)clearOptions;
+- (void)addOptions:;
+- (unsigned long long)optionsCount;
+- (id)optionsAtIndex:;
+- (BOOL)hasSelected;
++ (BOOL)isValid:;
++ (Class)optionsType;
+@end

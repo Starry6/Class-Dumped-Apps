@@ -1,0 +1,37 @@
+@interface MFAttachmentPlaceholder : NSObject
+- (unsigned long long)fileSize;
+- (id)init;
+- (id)fileName;
+- (id)serializedRepresentation;
+- (id)mimeType;
+- (id)contentID;
+- (void)setFileSize:;
+- (void).cxx_destruct;
+- (id)fileURL;
+- (id)description;
+- (void)setFileName:;
+- (void)setMimeType:;
+- (void)setContentID:;
+- (void)_setJSONDictionary:;
+- (id)fileURLString;
+- (void)setFileURLString:;
+- (BOOL)useMailDrop;
+- (void)setUseMailDrop:;
++ (id)placeholder;
++ (id)attachmentPlaceholderForFileURL:fileName:fileSize:type:contentID:;
++ (id)attachmentPlaceholderForData:fileName:type:contentID:;
++ (id)_localStoreURLForFileData:contentID:;
++ (id)placeholderFromSerializedRepresentation:;
++ (id)_placeholderMagic;
++ (BOOL)isPlaceholderSerializedRepresentation:;
++ (BOOL)hasPlaceholderRepresentation:;
++ (id)placeholderRepresentations:;
++ (id)dataForPlaceholder:;
++ (BOOL)writeData:forURL:;
++ (void)cloneFileAtURL:toPlaceholderURL:;
++ (BOOL)setFileProtectionForFileAt:error:;
++ (void)removePlaceholderForFileURL:;
++ (void)removePlaceholder:;
++ (id)placeholderDirectory;
++ (id)serializedPlaceholderForFileName:fileSize:mimeType:contentID:;
+@end

@@ -1,0 +1,34 @@
+@interface IESPiper : NSObject
+@property (nonatomic) IESBridgeEngine bridgeEngine;
+@property (nonatomic) IESBridgeEngine_Deprecated deprecatedBridgeEngine;
+@property (nonatomic) NSMutableDictionary callbackHandlers;
+@property (nonatomic) NSInteger uniqueID;
+@property (nonatomic) NSMutableSet publicCallSet;
+@property (nonatomic) NSMutableSet protectedSet;
+@property (nonatomic) NSMutableSet privateSet;
+@property (nonatomic) UIView<IESBridgeExecutor> webView;
+- (id)bridgeEngine;
+- (id)callbackHandlers;
+- (id)deprecatedBridgeEngine;
+- (id)getNewUnqiueID;
+- (void)invokeJSWithCallbackID:parameters:;
+- (void)invokeJSWithEventID:parameters:finishBlock:;
+- (id)privateSet;
+- (void)processIFrameMessage:;
+- (id)protectedSet;
+- (id)publicCallSet;
+- (void)registerHandlerBlock:forJSMethod:authType:;
+- (void)registerHandlerBlock:forJSMethod:authType:methodNamespace:;
+- (void)registerJS2NativeHandlerBlock:forJSMethod:authType:;
+- (void)registerJS2NativeHandlerBlock:forJSMethod:authType:methodNamespace:;
+- (void)setCallbackHandlers:;
+- (void)setDeprecatedBridgeEngine:;
+- (void)setWebView:;
+- (int)uniqueID;
+- (id)webView;
+- (void)setUniqueID:;
+- (id)initWithWebView:;
+- (void).cxx_destruct;
+- (void)flushMessages;
++ (id)currentJSSDKVersion;
+@end

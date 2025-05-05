@@ -1,0 +1,33 @@
+@interface PFStoryConcreteMutableRecipe : PFStoryConcreteRecipe
+@property (nonatomic) NSArray libraries;
+@property (nonatomic) NSArray assets;
+@property (nonatomic) NSArray presentations;
+@property (nonatomic) NSString contentIdentifier;
+@property (nonatomic) q majorVersion;
+@property (nonatomic) q minorVersion;
+@property (nonatomic) {?=q{?={?=qiIq}{?=qiIq}{?=qiIq}}} overallDurationInfo;
+@property (nonatomic) <PFStoryRecipeStyle> currentStyle;
+@property (nonatomic) NSDictionary seedSongIdentifiersByCatalog;
+@property (nonatomic) NSDictionary autoEditDecisionLists;
+@property (nonatomic) q numberOfAssets;
+@property (nonatomic) <PFStoryRecipeSongAsset> currentStyleSongAsset;
+@property (nonatomic) NSString diagnosticDescription;
+@property (nonatomic) q numberOfPresentations;
+- (void)setAssets:;
+- (void)setCurrentStyle:;
+- (void)setContentIdentifier:;
+- (void)setMajorVersion:;
+- (void)removeAssetWithIdentifier:;
+- (void)setPresentations:;
+- (id)copyWithZone:;
+- (void)addLibrary:;
+- (void)setLibraries:;
+- (void)setMinorVersion:;
+- (void)addAsset:;
+- (void)removeLibraryWithKind:;
+- (void)addPresentation:;
+- (void)removePresentationWithIdentifier:;
+- (void)setOverallDurationInfo:;
+- (void)setSeedSongIdentifiersByCatalog:;
+- (void)setAutoEditDecisionLists:;
+@end

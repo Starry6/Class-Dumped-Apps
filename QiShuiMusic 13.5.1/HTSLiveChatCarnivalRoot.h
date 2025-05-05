@@ -1,0 +1,2 @@
+@interface HTSLiveChatCarnivalRoot : GPBRootObject
+@end

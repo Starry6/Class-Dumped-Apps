@@ -1,0 +1,35 @@
+@interface UIKeyboardCandidateViewConfiguration : NSObject
+@property (nonatomic) UIColor highlightedBackgroundColor;
+@property (nonatomic) BOOL darkKeyboard;
+@property (nonatomic) Q rowsToExtend;
+@property (nonatomic) Q maxNumberOfProactiveCandidates;
+@property (nonatomic) BOOL shouldResizeKeyboardBackdrop;
+@property (nonatomic) BOOL shouldAlwaysShowSortControl;
+@property (nonatomic) BOOL shouldAnimateStateTransition;
+@property (nonatomic) BOOL shouldUsePredictionViewSecureRenderTraits;
+@property (nonatomic) BOOL willCoverKeyboardLayout;
+@property (nonatomic) BOOL allowsPullDownGesture;
+@property (nonatomic) {CGSize=dd} preferredInlineFloatingViewSize;
+@property (nonatomic) NSInteger inlineFloatingViewAdjustMode;
+- (id)extendedState;
+- (id)initialState;
+- (BOOL)darkKeyboard;
+- (void)setDarkKeyboard:;
+- (id)extendedScrolledState;
+- (unsigned long long)rowsToExtend;
+- (unsigned long long)maxNumberOfProactiveCandidates;
+- (BOOL)shouldResizeKeyboardBackdrop;
+- (BOOL)shouldAnimateStateTransition;
+- (id)candidateFontWithSize:;
+- (id)candidateFontWithSize:language:;
+- (double)candidateDefaultFontSize;
+- (BOOL)usesReducedFontSize;
+- (BOOL)willCoverKeyboardLayout;
+- (BOOL)allowsPullDownGesture;
+- (id)preferredInlineFloatingViewSize;
+- (id)highlightedBackgroundColor;
+- (int)inlineFloatingViewAdjustMode;
+- (BOOL)shouldAlwaysShowSortControl;
+- (BOOL)shouldUsePredictionViewSecureRenderTraits;
++ (id)configuration;
+@end

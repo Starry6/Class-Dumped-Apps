@@ -1,0 +1,31 @@
+@interface DOCTag : NSObject
+@property (nonatomic) NSString displayName;
+@property (nonatomic) q labelIndex;
+@property (nonatomic) q type;
+@property (nonatomic) q itemCount;
+@property (nonatomic) NSNumber sidebarVisible;
+@property (nonatomic) NSNumber sidebarPinned;
+- (long long)itemCount;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)displayName;
+- (BOOL)isEqualToTag:;
+- (void)encodeWithCoder:;
+- (long long)type;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)sidebarPinned;
+- (long long)labelIndex;
+- (id)sidebarVisible;
+- (id)initWithICloudTagAttributes:;
+- (id)initWithDisplayName:labelIndex:type:;
+- (id)initWithDisplayName:labelIndex:type:itemCount:sidebarVisible:sidebarPinned:;
+- (id)iCloudTagAttributes;
+- (void)mergeWithTag:options:;
++ (BOOL)supportsSecureCoding;
++ (id)tagsLoadedFromUserDefaults;
++ (BOOL)areTags:equalByNameAndColorTo:;
++ (id)untitledTagForRendering:;
+@end

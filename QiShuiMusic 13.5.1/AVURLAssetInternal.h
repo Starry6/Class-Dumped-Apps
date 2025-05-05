@@ -1,0 +1,2 @@
+@interface AVURLAssetInternal : NSObject
+@end

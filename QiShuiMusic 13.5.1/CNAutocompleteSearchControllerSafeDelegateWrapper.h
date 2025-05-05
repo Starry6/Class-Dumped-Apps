@@ -1,0 +1,32 @@
+@interface CNAutocompleteSearchControllerSafeDelegateWrapper : NSObject
+@property (nonatomic) <CNAutocompleteSearchControllerInternalDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setDelegate:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)initWithDelegate:;
+- (id)searchController:composeRecipientForAddress:;
+- (void)searchController:didAddRecipient:;
+- (void)searchController:didRemoveRecipient:;
+- (unsigned long long)searchController:presentationOptionsForRecipient:;
+- (id)searchController:preferredRecipientForRecipient:;
+- (id)searchController:tintColorForRecipient:;
+- (BOOL)searchController:imageDataForRecipient:imageUpdateBlock:;
+- (void)searchController:willDisplayRowForRecipient:;
+- (void)searchController:didEndDisplayingRowForRecipient:;
+- (void)didTapTextViewAccessoryButtonForSearchController:;
+- (void)didTapTextViewAccessoryButtonForSearchController:anchoredToView:;
+- (void)searchController:didTapTableAccessoryForRecipient:;
+- (id)searchController:contextMenuConfigurationForRecipient:;
+- (void)searchController:willShowResultsView:;
+- (void)searchController:didShowResultsView:;
+- (void)searchController:willHideResultsView:;
+- (void)searchController:didHideResultsView:;
+- (void)searchController:textViewWillChangeSize:;
+- (void)searchController:textViewDidChangeSize:;
+- (BOOL)searchController:supplementalGroupsForSearchQuery:completionHandler:;
++ (id)log;
+@end

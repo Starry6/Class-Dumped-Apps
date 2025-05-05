@@ -1,0 +1,36 @@
+@interface IMUserNotification : NSObject
+@property (nonatomic) @ identifier;
+@property (nonatomic) double timeout;
+@property (nonatomic) Q displayFlags;
+@property (nonatomic) NSDictionary displayInformation;
+@property (nonatomic) BOOL showInLockScreen;
+@property (nonatomic) BOOL requireUserInteraction;
+@property (nonatomic) BOOL usesNotificationCenter;
+@property (nonatomic) NSString representedApplicationBundle;
+@property (nonatomic) Q response;
+@property (nonatomic) Q responseFlags;
+@property (nonatomic) NSDictionary responseInformation;
+@property (nonatomic) NSDictionary userInfo;
+- (id)userInfo;
+- (id)identifier;
+- (unsigned long long)response;
+- (void)setUserInfo:;
+- (void).cxx_destruct;
+- (double)timeout;
+- (id)displayInformation;
+- (id)_initWithIdentifier:timeout:displayFlags:displayInformation:;
+- (unsigned long long)displayFlags;
+- (id)representedApplicationBundle;
+- (void)setRepresentedApplicationBundle:;
+- (BOOL)showInLockScreen;
+- (void)setShowInLockScreen:;
+- (BOOL)usesNotificationCenter;
+- (BOOL)requireUserInteraction;
+- (void)setRequireUserInteraction:;
+- (void)setUsesNotificationCenter:;
+- (unsigned long long)responseFlags;
+- (id)responseInformation;
+- (void)_setResponseFlags:responseInformation:;
++ (id)userNotificationWithIdentifier:title:message:defaultButton:alternateButton:otherButton:;
++ (id)userNotificationWithIdentifier:timeout:alertLevel:displayFlags:displayInformation:;
+@end

@@ -1,0 +1,35 @@
+@interface AWDMailComposeAttachmentReport : PBCodable
+@property (nonatomic) BOOL hasTimestamp;
+@property (nonatomic) Q timestamp;
+@property (nonatomic) BOOL hasDrawingInsertCount;
+@property (nonatomic) q drawingInsertCount;
+@property (nonatomic) BOOL hasDrawingSentCount;
+@property (nonatomic) q drawingSentCount;
+@property (nonatomic) BOOL hasMessageSent;
+@property (nonatomic) BOOL messageSent;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)setHasTimestamp:;
+- (void)mergeFrom:;
+- (BOOL)hasTimestamp;
+- (void)setTimestamp:;
+- (BOOL)readFrom:;
+- (unsigned long long)timestamp;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (long long)drawingInsertCount;
+- (void)setDrawingInsertCount:;
+- (void)setHasDrawingInsertCount:;
+- (BOOL)hasDrawingInsertCount;
+- (void)setDrawingSentCount:;
+- (void)setHasDrawingSentCount:;
+- (BOOL)hasDrawingSentCount;
+- (void)setMessageSent:;
+- (void)setHasMessageSent:;
+- (BOOL)hasMessageSent;
+- (long long)drawingSentCount;
+- (BOOL)messageSent;
+@end

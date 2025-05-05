@@ -1,0 +1,32 @@
+@interface GEORPSourceInfo : PBCodable
+@property (nonatomic) BOOL hasSourceApplication;
+@property (nonatomic) NSString sourceApplication;
+@property (nonatomic) BOOL hasSourceUrl;
+@property (nonatomic) NSString sourceUrl;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (id)init;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (id)sourceApplication;
+- (void)mergeFrom:;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasSourceApplication;
+- (void)setSourceApplication:;
+- (BOOL)hasSourceUrl;
+- (id)sourceUrl;
+- (void)setSourceUrl:;
++ (BOOL)isValid:;
+@end

@@ -1,0 +1,35 @@
+@interface MCManifest : NSObject
+- (void)invalidateCache;
+- (id)init;
+- (id)installedMDMProfile;
+- (void)dealloc;
+- (id)allInstalledProfileIdentifiers;
+- (void)removeIdentifierFromSystemManifest:flag:;
+- (id)_userManifest;
+- (id)installedProfileWithIdentifier:;
+- (void)addIdentifierToUserManifest:flag:;
+- (void)_setSystemManifest:userManifest:;
+- (id)identifiersOfProfilesWithFilterFlags:;
+- (id)allInstalledUserProfileIdentifiers;
+- (id)systemManifest;
+- (id)allInstalledSystemProfileIdentifiers;
+- (void)addIdentifierToSystemManifest:flag:;
+- (void)removeIdentifierFromUserManifest:flag:;
+- (id)userManifest;
+- (void).cxx_destruct;
+- (id)installedProfileDataWithIdentifier:;
+- (id)installedUserProfileWithIdentifier:;
+- (id)_systemManifest;
+- (id)installedSystemProfileWithIdentifier:;
+- (id)allInstalledPayloadsOfClass:;
+- (void)_adjustManifestIdentifier:isUserInstall:flag:addingIdentifier:;
+- (id)allProfileIdentifiersInstalledNonInteractivelyWithFilterFlags:;
++ (id)installedProfileWithIdentifier:;
++ (id)installedUserProfileDataWithIdentifier:;
++ (void)_setSystemManifestPath:userManifestPath:;
++ (id)installedSystemProfileDataWithIdentifier:;
++ (id)sharedManifest;
++ (id)installedProfileDataWithIdentifier:;
++ (id)installedUserProfileWithIdentifier:;
++ (id)installedSystemProfileWithIdentifier:;
+@end

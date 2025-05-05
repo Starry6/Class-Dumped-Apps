@@ -1,0 +1,30 @@
+@interface IESECWinBackService : NSObject
+@property (nonatomic) IESECServiceProxy<IESECWinDataService> dataService;
+@property (nonatomic) IESECServiceProxy<IESECWinLiveService> liveService;
+@property (nonatomic) IESECWinContext context;
+@property (nonatomic) NSString coverColor;
+@property (nonatomic) NSString navBarColor;
+@property (nonatomic) BOOL useBackImage;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setDataService:;
+- (id)screenShotView:;
+- (void)setNavBarColor:;
+- (id)calculateHeaderBackViewGradient:;
+- (id)coverColor;
+- (id)dataService;
+- (BOOL)getHue:saturation:lightness:alpha:color:;
+- (id)navBarColor;
+- (void)setCoverColor:;
+- (void)setUseBackImage:;
+- (BOOL)useBackImage;
+- (id)context;
+- (id)initWithContext:;
+- (void).cxx_destruct;
+- (void)setContext:;
+- (id)colorWithHue:saturation:lightness:alpha:;
+- (void)setLiveService:;
+- (id)liveService;
+@end

@@ -1,0 +1,38 @@
+@interface SUCoreErrorInformation : NSObject
+@property (nonatomic) NSObject<OS_dispatch_queue> informationQueue;
+@property (nonatomic) NSMutableDictionary layerInformation;
+@property (nonatomic) NSMutableDictionary errorInformation;
+@property (nonatomic) NSArray safeUserInfoValues;
+- (id)init;
+- (id)layerInformation;
+- (void)_attributesOfErrorForDomain:withCode:codeName:indicating:ifKeyTrue:keyMatchTrueMap:;
+- (id)informationQueue;
+- (void).cxx_destruct;
+- (id)errorInformation;
+- (id)safeUserInfoValues;
+- (void)_associateLayer:withDomain:minCode:maxCode:indicating:ifKeyTrue:keyMatchTrueMap:;
+- (void)_defineErrorLayers;
+- (void)_associateLayer:withDomain:minCode:maxCode:;
++ (void)associateLayer:withDomain:indicating:ifKeyTrue:;
++ (id)codeNameForError:;
++ (long long)indicationsForError:matchingMask:;
++ (id)codeNameForDomain:withCode:;
++ (void)associateLayer:withDomain:;
++ (long long)allIndicationsForError:;
++ (void)attributesOfErrorForDomain:withCode:codeName:keyMatchTrueMap:;
++ (void)attributesOfSUCoreErrorCode:indicating:;
++ (id)nameForSUCoreCode:;
++ (void)attributesOfErrorForDomain:withCode:codeName:;
++ (id)sharedErrorInformation;
++ (id)safeUserInfoValueClasses;
++ (void)attributesOfErrorForDomain:withCode:codeName:indicating:;
++ (long long)layerForError:;
++ (id)summaryOfIndications:;
++ (void)attributesOfErrorForDomain:withCode:codeName:indicating:ifKeyTrue:;
++ (void)associateLayer:withDomain:minCode:maxCode:indicating:ifKeyTrue:keyMatchTrueMap:;
++ (id)setupCoreErrorInformation;
++ (void)associateLayer:withDomain:minCode:maxCode:;
++ (void)attributesOfErrorForDomain:withCode:codeName:indicating:ifKeyTrue:keyMatchTrueMap:;
++ (id)nameForSUCoreLayer:;
++ (void)associateLayer:withDomain:keyMatchTrueMap:;
+@end

@@ -1,0 +1,32 @@
+@interface INRestaurantReservationUserBooking : INRestaurantReservationBooking
+@property (nonatomic) INRestaurantGuest guest;
+@property (nonatomic) NSString advisementText;
+@property (nonatomic) INRestaurantOffer selectedOffer;
+@property (nonatomic) NSString guestProvidedSpecialRequestText;
+@property (nonatomic) Q status;
+@property (nonatomic) NSDate dateStatusModified;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setStatus:;
+- (id)_dictionaryRepresentation;
+- (id)initWithCoder:;
+- (void)setGuest:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (unsigned long long)status;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)guest;
+- (id)advisementText;
+- (void)setAdvisementText:;
+- (id)selectedOffer;
+- (void)setSelectedOffer:;
+- (id)guestProvidedSpecialRequestText;
+- (void)setGuestProvidedSpecialRequestText:;
+- (id)dateStatusModified;
+- (void)setDateStatusModified:;
+- (id)initWithRestaurant:bookingDate:partySize:bookingIdentifier:guest:status:dateStatusModified:;
++ (BOOL)supportsSecureCoding;
+@end

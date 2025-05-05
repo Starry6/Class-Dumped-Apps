@@ -1,0 +1,30 @@
+@interface CJPaySignChannel : CJPayBasicChannel
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSString signAliPayScheme;
+@property (nonatomic) @? signAliPayCompletionBlock;
+@property (nonatomic) BOOL wakingApp;
+- (void)appDidInForeground;
+- (BOOL)canProcessWithURL:;
+- (void)handleSignAliPayResponseWith:;
+- (void)i_signActionWithDataDict:completionBlock:;
+- (void)p_signByAliPaySDK:;
+- (void)payActionWithDataDict:completionBlock:;
+- (void)setSignAliPayCompletionBlock:;
+- (void)setSignAliPayScheme:;
+- (void)setWakingApp:;
+- (void)signActionWithDataDict:completionBlock:;
+- (id)signAliPayCompletionBlock;
+- (id)signAliPayScheme;
+- (BOOL)wakeByUniversalPayDesk:withDelegate:;
+- (BOOL)wakingApp;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
++ (BOOL)isAvailableUse;
++ (void)registerComponents;
++ (void)registerPlugin;
++ (id)sharedInstance;
+@end

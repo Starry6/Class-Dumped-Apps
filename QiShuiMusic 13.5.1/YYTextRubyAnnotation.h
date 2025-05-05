@@ -1,0 +1,30 @@
+@interface YYTextRubyAnnotation : NSObject
+@property (nonatomic) C alignment;
+@property (nonatomic) C overhang;
+@property (nonatomic) double sizeFactor;
+@property (nonatomic) NSString textBefore;
+@property (nonatomic) NSString textAfter;
+@property (nonatomic) NSString textInterCharacter;
+@property (nonatomic) NSString textInline;
+- (id)CTRubyAnnotation;
+- (unsigned char)overhang;
+- (void)setOverhang:;
+- (void)setSizeFactor:;
+- (void)setTextAfter:;
+- (void)setTextBefore:;
+- (void)setTextInline:;
+- (void)setTextInterCharacter:;
+- (double)sizeFactor;
+- (id)textAfter;
+- (id)textBefore;
+- (id)textInline;
+- (id)textInterCharacter;
+- (id)init;
+- (void)setAlignment:;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (unsigned char)alignment;
+- (id)copyWithZone:;
++ (id)rubyWithCTRubyRef:;
+@end

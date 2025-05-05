@@ -1,0 +1,34 @@
+@interface AWDCoreRoutineLMPScoreBoard : PBCodable
+@property (nonatomic) BOOL hasTimestamp;
+@property (nonatomic) Q timestamp;
+@property (nonatomic) NSMutableArray instances;
+@property (nonatomic) NSMutableArray secondaryInstances;
+- (void)dealloc;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (id)instances;
+- (void)copyTo:;
+- (void)setHasTimestamp:;
+- (void)mergeFrom:;
+- (BOOL)hasTimestamp;
+- (void)setTimestamp:;
+- (BOOL)readFrom:;
+- (unsigned long long)timestamp;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setInstances:;
+- (unsigned long long)instancesCount;
+- (void)clearInstances;
+- (void)addInstances:;
+- (id)instancesAtIndex:;
+- (void)clearSecondaryInstances;
+- (void)addSecondaryInstances:;
+- (unsigned long long)secondaryInstancesCount;
+- (id)secondaryInstancesAtIndex:;
+- (id)secondaryInstances;
+- (void)setSecondaryInstances:;
++ (Class)instancesType;
++ (Class)secondaryInstancesType;
+@end

@@ -1,0 +1,35 @@
+@interface CLPLocationConsumptionScoreInfo : PBCodable
+@property (nonatomic) BOOL hasStartTime;
+@property (nonatomic) double startTime;
+@property (nonatomic) BOOL hasStopTime;
+@property (nonatomic) double stopTime;
+@property (nonatomic) BOOL hasClientKey;
+@property (nonatomic) NSString clientKey;
+@property (nonatomic) BOOL hasScore;
+@property (nonatomic) NSInteger score;
+- (void)setHasStartTime:;
+- (void)setHasStopTime:;
+- (BOOL)hasStartTime;
+- (int)score;
+- (void)setStartTime:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (double)startTime;
+- (double)stopTime;
+- (void)copyTo:;
+- (id)clientKey;
+- (void)mergeFrom:;
+- (void)setScore:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (BOOL)hasScore;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)hasClientKey;
+- (void)setClientKey:;
+- (BOOL)isEqual:;
+- (void)setHasScore:;
+- (id)copyWithZone:;
+- (BOOL)hasStopTime;
+- (void)setStopTime:;
+@end

@@ -1,0 +1,34 @@
+@interface BDWebFalconURLSchemaHandler : NSObject
+@property (nonatomic) <BDWebURLSchemeTask> schemaTask;
+@property (nonatomic) NSURLSessionDataTask task;
+@property (nonatomic) NSDate onlineStartDate;
+@property (nonatomic) IESFalconStatModel onlineStatModel;
+@property (nonatomic) WKWebView webview;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)onlineStatModel;
+- (id)onlineStartDate;
+- (void)bdw_startURLSchemeTask;
+- (void)bdw_stopURLSchemeTask;
+- (id)initWithWebView:schemeTask:;
+- (void)recordOnlineStatIfNeeded;
+- (id)schemaTask;
+- (void)setOnlineStartDate:;
+- (void)setOnlineStatModel:;
+- (void)setSchemaTask:;
+- (void)URLSession:dataTask:didReceiveData:;
+- (void)URLSession:task:didCompleteWithError:;
+- (void)URLSession:dataTask:didReceiveResponse:completionHandler:;
+- (id)task;
+- (void)URLSession:task:willPerformHTTPRedirection:newRequest:completionHandler:;
+- (void)setTask:;
+- (void).cxx_destruct;
+- (id)webview;
+- (void)setWebview:;
++ (BOOL)bdw_canHandleRequest:;
++ (BOOL)bdw_canHandleRequest:webview:;
++ (id)falconFixedRequest:;
++ (id)sharedDemux;
+@end

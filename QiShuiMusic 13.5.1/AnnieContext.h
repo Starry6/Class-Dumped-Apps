@@ -1,0 +1,35 @@
+@interface AnnieContext : PuzzleContext
+@property (nonatomic) BOOL didMergeGlobalContext;
+@property (nonatomic) BOOL freezeFlag;
+@property (nonatomic) <AnnieContainerLifecycleProtocol> containerLifecycleDelegate;
+@property (nonatomic) NSString accessKey;
+@property (nonatomic) NSString bizKey;
+@property (nonatomic) Q kernelType;
+@property (nonatomic) BOOL webEnableResue;
+@property (nonatomic) @? schemaPostProcessor;
+- (void)freeze:;
+- (id)bizKey;
+- (id)containerLifecycleDelegate;
+- (BOOL)didMergeGlobalContext;
+- (BOOL)freezeFlag;
+- (unsigned long long)kernelType;
+- (void)mergeContext:;
+- (void)mergeContext:shouldOverride:;
+- (void)mergeGlobalCtxWithBid:;
+- (id)schemaPostProcessor;
+- (void)setBizKey:;
+- (void)setContainerLifecycleDelegate:;
+- (void)setDidMergeGlobalContext:;
+- (void)setFreezeFlag:;
+- (void)setKernelType:;
+- (void)setSchemaPostProcessor:;
+- (void)setWebEnableResue:;
+- (BOOL)webEnableResue;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (id)accessKey;
+- (void)setAccessKey:;
++ (id)mergeArray:to:override:;
++ (id)mergeDict:to:override:;
++ (id)mergeProp:to:override:;
+@end

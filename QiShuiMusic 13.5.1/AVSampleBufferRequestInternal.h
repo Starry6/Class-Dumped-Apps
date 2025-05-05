@@ -1,0 +1,2 @@
+@interface AVSampleBufferRequestInternal : NSObject
+@end

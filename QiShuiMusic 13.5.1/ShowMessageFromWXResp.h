@@ -1,0 +1,2 @@
+@interface ShowMessageFromWXResp : BaseResp
+@end

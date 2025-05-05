@@ -1,0 +1,31 @@
+@interface BWInferenceSchedulerScaler : NSObject
+@property (nonatomic) NSArray inputVideoRequirements;
+@property (nonatomic) NSArray outputRequirements;
+@property (nonatomic) NSInteger type;
+@property (nonatomic) <BWInferenceExecutable> executable;
+@property (nonatomic) <BWInferenceSubmittable> submittable;
+@property (nonatomic) <BWInferenceExtractable> extractable;
+@property (nonatomic) <BWInferencePropagatable> propagatable;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) BOOL mustExecuteWhenAllowed;
+- (BOOL)mustExecuteWhenAllowed;
+- (id)submittable;
+- (id)inputVideoRequirements;
+- (id)extractable;
+- (int)prepareForExecution;
+- (id)executable;
+- (id)propagatable;
+- (id)preventionReasonWithSampleBuffer:executionTime:;
+- (void)dealloc;
+- (int)prepareForSubmissionWithWorkQueue:;
+- (int)submitForSampleBuffer:usingStorage:withSubmissionTime:workQueue:completionHandler:;
+- (int)type;
+- (id)newStorage;
+- (id)description;
+- (int)executeOnSampleBuffer:usingStorage:withExecutionTime:completionHandler:;
+- (id)outputRequirements;
+- (id)initWithInputRequirement:derivedFromRequirement:outputRequirements:options:;
+@end

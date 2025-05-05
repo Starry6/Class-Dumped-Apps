@@ -1,0 +1,31 @@
+@interface IESECMeaninglessCommentSectionController : IGListSectionController
+@property (nonatomic) IESECCommentDetailModel model;
+@property (nonatomic) IESECCommentEvaluatorView evaluatorView;
+@property (nonatomic) IESECCommentDataController dataController;
+@property (nonatomic) IESECGoodsCommentContext context;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)cellForItemAtIndex:;
+- (void)didUpdateToObject:;
+- (id)evaluatorView;
+- (void)setDataController:;
+- (void)setEvaluatorView:;
+- (void)showCommentGuestWindowViewWithDetailModel:;
+- (void)showGoodsProductEvaluatorViewWithType:;
+- (id)sizeForSupplementaryViewOfKind:atIndex:;
+- (id)supportedElementKinds;
+- (void)tapCommentEvaluatorCancel;
+- (void)tapCommentEvaluatorEntrance;
+- (id)viewForSupplementaryElementOfKind:atIndex:;
+- (id)model;
+- (long long)numberOfItems;
+- (id)init;
+- (void)setModel:;
+- (id)context;
+- (void).cxx_destruct;
+- (void)setContext:;
+- (id)dataController;
+- (id)sizeForItemAtIndex:;
+@end

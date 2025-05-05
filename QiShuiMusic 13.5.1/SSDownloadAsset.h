@@ -1,0 +1,37 @@
+@interface SSDownloadAsset : SSEntity
+@property (nonatomic) q fileSize;
+@property (nonatomic) NSString downloadFileName;
+@property (nonatomic) NSString downloadPath;
+@property (nonatomic) NSString finalizedPath;
+@property (nonatomic) BOOL external;
+@property (nonatomic) SSURLRequestProperties URLRequestProperties;
+@property (nonatomic) SSURLRequestProperties _localProperties;
+@property (nonatomic) NSURLRequest URLRequest;
+@property (nonatomic) NSArray sinfs;
+- (long long)fileSize;
+- (long long)assetType;
+- (long long)bytesDownloaded;
+- (void)dealloc;
+- (id)copyXPCEncoding;
+- (id)initWithURLRequest:;
+- (id)initWithURLRequestProperties:;
+- (long long)bytesUploaded;
+- (id)URLRequest;
+- (BOOL)isExternal;
+- (id)sinfs;
+- (void)_resetLocalIVars;
+- (long long)bytesUploadTotal;
+- (id)URLRequestProperties;
+- (long long)_legacyAssetType;
+- (id)_localProperties;
+- (id)initWithURLRequest:type:;
+- (id)downloadFileName;
+- (id)downloadPath;
+- (id)finalizedPath;
+- (id)_copyURLRequestProperties;
++ (long long)_existsMessage;
++ (long long)_getExternalValuesMessage;
++ (long long)_getValueMessage;
++ (long long)_setValuesMessage;
++ (id)assetWithURL:type:;
+@end

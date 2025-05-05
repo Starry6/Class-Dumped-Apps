@@ -1,0 +1,38 @@
+@interface DMFConnection : NSObject
+@property (nonatomic) <DMFTransportProvider> transportProvider;
+@property (nonatomic) CATTaskClient taskClient;
+@property (nonatomic) CATOperationQueue operationQueue;
+@property (nonatomic) Q connectionState;
+@property (nonatomic) BOOL isSystemConnection;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (unsigned long long)connectionState;
+- (void)dealloc;
+- (id)makeNewTransport;
+- (void)client:didInterruptWithError:;
+- (void)clientDidInvalidate:;
+- (id)operationQueue;
+- (void)setConnectionState:;
+- (void)performRequest:completion:;
+- (id)initWithUserInfo:;
+- (void)setIsSystemConnection:;
+- (id)taskClient;
+- (id)prepareOperationForRequest:;
+- (id)transportProvider;
+- (void)_operationDidFinish:completion:;
+- (BOOL)isSystemConnection;
+- (void).cxx_destruct;
+- (void)clientDidDisconnect:;
+- (void)clientDidConnect:;
+- (void)_reconnectTaskClient;
+- (void)invalidate;
+- (id)initWithTransportProvider:userInfo:;
+- (id)batchOperationToPerformOperations:;
++ (id)connectionForUID:;
++ (id)connectionForAppleID:;
++ (id)sharedConnection;
++ (id)systemConnection;
++ (id)currentUserConnection;
+@end

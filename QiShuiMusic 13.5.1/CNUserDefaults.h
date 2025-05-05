@@ -1,0 +1,35 @@
+@interface CNUserDefaults : NSObject
+@property (nonatomic) NSDictionary registeredDefaults;
+- (id)primitiveObjectForKey:;
+- (BOOL)primitiveBoolValueForKey:keyExists:;
+- (void)setString:forKey:;
+- (void)setObject:forKey:;
+- (long long)integerForKey:keyExists:;
+- (BOOL)boolForKey:keyExists:;
+- (void)primitiveRemoveObjectForKey:;
+- (void)setDouble:forKey:;
+- (BOOL)userHasOptedOutOfPreference:;
+- (BOOL)userHasOptedInToPreference:;
+- (void)setupAutosync;
+- (id)registeredDefaults;
+- (long long)primitiveIntegerValueForKey:keyExists:;
+- (void)setRegisteredDefaults:;
+- (void)registerDefaults:;
+- (void)setBool:forKey:;
+- (id)initWithPrimitiveDefaults:;
+- (id)primitiveDefaults;
+- (void)setPrimitiveObject:forKey:;
+- (BOOL)boolForKey:;
+- (id)initWithApplicationID:;
+- (id)stringForKey:;
+- (BOOL)synchronize;
+- (void)setInteger:forKey:;
+- (id)objectForKey:;
+- (void).cxx_destruct;
+- (double)doubleForKey:;
+- (void)removeObjectForKey:;
+- (long long)integerForKey:;
++ (id)inMemoryPreferences;
++ (id)standardPreferences;
++ (id)preferencesWithApplicationID:;
+@end

@@ -1,0 +1,32 @@
+@interface SAIOEvent : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) SATimestamp startTimestamp;
+@property (nonatomic) SATimestamp endTimestamp;
+@property (nonatomic) Q size;
+@property (nonatomic) NSString type;
+@property (nonatomic) I tier;
+@property (nonatomic) BOOL isRead;
+@property (nonatomic) Q threadID;
+- (BOOL)addSelfToBuffer:bufferLength:withCompletedSerializationDictionary:;
+- (id)endTimestamp;
+- (id)initWithStartTime:threadID:blockNumber:size:type:tier:;
+- (unsigned long long)threadID;
+- (unsigned int)tier;
+- (void)addSelfToSerializationDictionary:;
+- (id)startTimestamp;
+- (void)setEndTimestamp:;
+- (void)populateReferencesUsingBuffer:bufferLength:andDeserializationDictionary:andDataBufferDictionary:;
+- (id)debugDescription;
+- (BOOL)isRead;
+- (unsigned long long)sizeInBytesForSerializedVersion;
+- (void)writeJSONDictionaryEntriesToStream:;
+- (id)type;
+- (void).cxx_destruct;
+- (unsigned long long)size;
++ (id)newInstanceWithoutReferencesFromSerializedBuffer:bufferLength:;
++ (id)typeString:;
++ (id)classDictionaryKey;
+@end

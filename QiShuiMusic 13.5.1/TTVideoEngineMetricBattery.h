@@ -1,0 +1,35 @@
+@interface TTVideoEngineMetricBattery : TTVideoEngineMetricInfoBase
+@property (nonatomic) float batteryUsage;
+@property (nonatomic) q lastThermalState;
+@property (nonatomic) float lastBatteryLevel;
+@property (nonatomic) BOOL lowPowerMode;
+@property (nonatomic) q batteryState;
+@property (nonatomic) double startTime;
+@property (nonatomic) double totalTime;
+@property (nonatomic) double startCriticalTime;
+@property (nonatomic) double totalCriticalTime;
+@property (nonatomic) double startSeriousTime;
+@property (nonatomic) double totalSeriousTime;
+- (long long)lastThermalState;
+- (void)setLastThermalState:;
+- (void)setStartCriticalTime:;
+- (void)setStartSeriousTime:;
+- (void)setTotalCriticalTime:;
+- (void)setTotalSeriousTime:;
+- (double)startCriticalTime;
+- (double)startSeriousTime;
+- (double)totalCriticalTime;
+- (double)totalSeriousTime;
+- (double)totalTime;
+- (void)setLastBatteryLevel:;
+- (void)setStartTime:;
+- (double)startTime;
+- (BOOL)lowPowerMode;
+- (void)setTotalTime:;
+- (float)lastBatteryLevel;
+- (long long)batteryState;
+- (void)setBatteryState:;
+- (void)setBatteryUsage:;
+- (float)batteryUsage;
+- (void)setLowPowerMode:;
+@end

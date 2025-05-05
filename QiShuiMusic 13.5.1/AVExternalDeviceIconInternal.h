@@ -1,0 +1,2 @@
+@interface AVExternalDeviceIconInternal : NSObject
+@end

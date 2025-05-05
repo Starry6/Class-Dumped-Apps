@@ -1,0 +1,31 @@
+@interface UIDocumentPickerExtensionViewController : UIViewController
+@property (nonatomic) NSURL originalURL;
+@property (nonatomic) NSArray validTypes;
+@property (nonatomic) NSString providerIdentifier;
+@property (nonatomic) NSURL documentStorageURL;
+@property (nonatomic) Q documentPickerMode;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)providerIdentifier;
+- (id)documentStorageURL;
+- (void)_setTintColor:;
+- (void).cxx_destruct;
+- (id)originalURL;
+- (void)_setPickableTypes:;
+- (void)_setPickerMode:;
+- (void)_setUploadURLWrapper:;
+- (void)_prepareWithExtensionInfo:completionHandler:;
+- (void)_documentPickerDidDismiss;
+- (void)dismissGrantingAccessToURL:;
+- (void)_setUploadURL:;
+- (void)prepareForDocumentSelectionInMode:;
+- (void)prepareForPresentationInMode:;
+- (unsigned long long)documentPickerMode;
+- (id)validTypes;
+- (void)_setProviderIdentifier:;
+- (void)_setDocumentStorageURL:;
++ (id)_exportedInterface;
++ (id)_remoteViewControllerInterface;
+@end

@@ -1,0 +1,37 @@
+@interface RunnerContext : NSObject
+@property (nonatomic) BDRuleExecutor executor;
+@property (nonatomic) NSDictionary inputParams;
+@property (nonatomic) BOOL strategySelectHitCache;
+@property (nonatomic) BOOL strategySelectFromGraph;
+@property (nonatomic) BOOL strategySelectFromGraphTrie;
+@property (nonatomic) BOOL executeFromRuleFFF;
+@property (nonatomic) double startTime;
+@property (nonatomic) double startSelectStrategyTime;
+@property (nonatomic) double ruleExecuteEndTime;
+@property (nonatomic) double startBuildRuleTime;
+@property (nonatomic) double startComputeRuleTime;
+- (void)setStrategySelectFromGraphTrie:;
+- (BOOL)executeFromRuleFFF;
+- (double)ruleExecuteEndTime;
+- (void)setExecuteFromRuleFFF:;
+- (void)setRuleExecuteEndTime:;
+- (void)setStartBuildRuleTime:;
+- (void)setStartComputeRuleTime:;
+- (void)setStartSelectStrategyTime:;
+- (void)setStrategySelectFromGraph:;
+- (void)setStrategySelectHitCache:;
+- (double)startBuildRuleTime;
+- (double)startComputeRuleTime;
+- (double)startSelectStrategyTime;
+- (BOOL)strategySelectFromGraph;
+- (BOOL)strategySelectFromGraphTrie;
+- (BOOL)strategySelectHitCache;
+- (void)setStartTime:;
+- (id)initWithParams:;
+- (double)startTime;
+- (void).cxx_destruct;
+- (id)executor;
+- (id)inputParams;
+- (void)setInputParams:;
+- (void)setExecutor:;
+@end

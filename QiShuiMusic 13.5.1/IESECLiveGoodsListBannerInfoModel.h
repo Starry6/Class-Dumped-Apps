@@ -1,0 +1,31 @@
+@interface IESECLiveGoodsListBannerInfoModel : MTLModel
+@property (nonatomic) IESECLiveTrackConfigModel trackConfig;
+@property (nonatomic) q bannerType;
+@property (nonatomic) q priority;
+@property (nonatomic) NSString jumpURLStr;
+@property (nonatomic) NSString bgImageURLStr;
+@property (nonatomic) NSArray leftContent;
+@property (nonatomic) NSArray rightContent;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setTrackConfig:;
+- (void)setLeftContent:;
+- (id)bgImageURLStr;
+- (id)jumpURLStr;
+- (id)leftContent;
+- (id)rightContent;
+- (void)setBgImageURLStr:;
+- (void)setJumpURLStr:;
+- (void)setRightContent:;
+- (id)trackConfig;
+- (void)setPriority:;
+- (void).cxx_destruct;
+- (long long)priority;
+- (long long)bannerType;
+- (void)setBannerType:;
++ (id)leftContentJSONTransformer;
++ (id)rightContentJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

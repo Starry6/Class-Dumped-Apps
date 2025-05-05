@@ -1,0 +1,32 @@
+@interface SFPrivacyReportGridView : UIView
+@property (nonatomic) NSArray itemViews;
+@property (nonatomic) <SFPrivacyReportGridViewDelegate> delegate;
+@property (nonatomic) double interItemSpacing;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)collectionView:layout:sizeForItemAtIndexPath:;
+- (void)layoutMarginsDidChange;
+- (id)init;
+- (id)intrinsicContentSize;
+- (void)layoutSubviews;
+- (long long)collectionView:numberOfItemsInSection:;
+- (void)setDelegate:;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (double)interItemSpacing;
+- (void)invalidateIntrinsicContentSize;
+- (id)initWithFrame:;
+- (void)traitCollectionDidChange:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)itemDidChangeContentSize:;
+- (void)updateInterItemSpacing;
+- (void)_rebuildRowLayoutInfoIfNeeded;
+- (BOOL)itemViewCanUseCompactWidth:;
+- (BOOL)itemViewIsLineBreak:;
+- (void)didUpdateInterItemSpacing:;
+- (unsigned long long)_gridPositionForItemAtIndexPath:;
+- (id)itemViews;
+- (void)setItemViews:;
+@end

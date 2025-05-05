@@ -1,0 +1,38 @@
+@interface AWDCoreRoutineDeletionStats : PBCodable
+@property (nonatomic) BOOL hasTimestamp;
+@property (nonatomic) Q timestamp;
+@property (nonatomic) BOOL hasSyncEnabled;
+@property (nonatomic) BOOL syncEnabled;
+@property (nonatomic) BOOL hasDeleteType;
+@property (nonatomic) I deleteType;
+@property (nonatomic) NSMutableArray groups;
+- (void)dealloc;
+- (id)groups;
+- (void)setGroups:;
+- (void)writeTo:;
+- (void)setDeleteType:;
+- (unsigned long long)hash;
+- (void)setHasDeleteType:;
+- (void)copyTo:;
+- (void)setHasTimestamp:;
+- (void)mergeFrom:;
+- (void)setSyncEnabled:;
+- (BOOL)hasTimestamp;
+- (void)setTimestamp:;
+- (unsigned int)deleteType;
+- (BOOL)hasDeleteType;
+- (BOOL)readFrom:;
+- (unsigned long long)timestamp;
+- (id)description;
+- (BOOL)syncEnabled;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)clearGroups;
+- (void)addGroups:;
+- (unsigned long long)groupsCount;
+- (id)groupsAtIndex:;
+- (void)setHasSyncEnabled:;
+- (BOOL)hasSyncEnabled;
++ (Class)groupsType;
+@end

@@ -1,0 +1,37 @@
+@interface IESECLiveEnterRoomExtraRequest : IESECLiveAPIBaseRequest
+@property (nonatomic) NSString host;
+@property (nonatomic) NSString path;
+@property (nonatomic) NSString groupID;
+@property (nonatomic) NSString relatedInfo;
+@property (nonatomic) NSString entranceInfo;
+@property (nonatomic) NSDictionary extraParams;
+@property (nonatomic) NSString outOfTimeKeysInfo;
+@property (nonatomic) BOOL IsLinkMic;
+@property (nonatomic) BOOL isEcomRoom;
+@property (nonatomic) NSString storeID;
+@property (nonatomic) NSString addressInfo;
+- (BOOL)IsLinkMic;
+- (void)setAddressInfo:;
+- (void)setExtraParams:;
+- (void)setRelatedInfo:;
+- (id)buildParams;
+- (id)entranceInfo;
+- (id)extraParams;
+- (BOOL)isEcomRoom;
+- (id)outOfTimeKeysInfo;
+- (id)relatedInfo;
+- (void)setEntranceInfo:;
+- (void)setIsEcomRoom:;
+- (void)setIsLinkMic:;
+- (void)setOutOfTimeKeysInfo:;
+- (id)path;
+- (void)setGroupID:;
+- (id)groupID;
+- (id)storeID;
+- (id)host;
+- (void)setPath:;
+- (void)setHost:;
+- (void)setStoreID:;
+- (void).cxx_destruct;
+- (id)addressInfo;
+@end

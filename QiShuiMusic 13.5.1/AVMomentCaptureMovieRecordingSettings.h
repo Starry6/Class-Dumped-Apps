@@ -1,0 +1,34 @@
+@interface AVMomentCaptureMovieRecordingSettings : NSObject
+@property (nonatomic) q uniqueID;
+@property (nonatomic) Q userInitiatedCaptureTime;
+@property (nonatomic) NSString videoCodecType;
+@property (nonatomic) NSURL movieFileURL;
+@property (nonatomic) NSArray movieMetadata;
+@property (nonatomic) BOOL autoSpatialOverCaptureEnabled;
+@property (nonatomic) NSURL spatialOverCaptureMovieFileURL;
+@property (nonatomic) NSArray spatialOverCaptureMovieMetadata;
+- (long long)uniqueID;
+- (void)dealloc;
+- (id)debugDescription;
+- (id)description;
+- (id)copyWithZone:;
+- (id)videoCodecType;
+- (id)spatialOverCaptureGroupIdentifier;
+- (id)spatialOverCaptureMovieFileURL;
+- (id)spatialOverCaptureMovieMetadata;
+- (BOOL)isAutoSpatialOverCaptureEnabled;
+- (void)setAutoSpatialOverCaptureEnabled:;
+- (unsigned long long)userInitiatedCaptureTime;
+- (id)_initFromMomentCaptureSettings:;
+- (void)setVideoCodecType:;
+- (id)movieMetadata;
+- (void)setMovieMetadata:;
+- (void)setSpatialOverCaptureMovieMetadata:;
+- (id)_sanitizedMovieMetadataArrayForMovieMetadataArray:exceptionReason:;
+- (void)setUserInitiatedCaptureTime:;
+- (id)movieFileURL;
+- (void)setMovieFileURL:;
+- (void)setSpatialOverCaptureMovieFileURL:;
++ (id)movieRecordingSettings;
++ (id)movieRecordingSettingsFromMomentCaptureSettings:;
+@end

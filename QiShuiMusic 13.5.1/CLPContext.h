@@ -1,0 +1,35 @@
+@interface CLPContext : PBCodable
+@property (nonatomic) BOOL hasType;
+@property (nonatomic) NSInteger type;
+@property (nonatomic) BOOL hasIsDriving;
+@property (nonatomic) BOOL isDriving;
+@property (nonatomic) BOOL hasWorkoutType;
+@property (nonatomic) NSInteger workoutType;
+@property (nonatomic) BOOL hasBundleCategory;
+@property (nonatomic) NSString bundleCategory;
+- (void)setIsDriving:;
+- (void)setType:;
+- (void)writeTo:;
+- (void)setHasType:;
+- (BOOL)hasType;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (int)type;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)isDriving;
+- (void)setWorkoutType:;
+- (int)workoutType;
+- (void)setHasIsDriving:;
+- (BOOL)hasIsDriving;
+- (void)setHasWorkoutType:;
+- (BOOL)hasWorkoutType;
+- (BOOL)hasBundleCategory;
+- (id)bundleCategory;
+- (void)setBundleCategory:;
+@end

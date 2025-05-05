@@ -1,0 +1,30 @@
+@interface PLCacheDeleteSupport : NSObject
+@property (nonatomic) NSDate exitDeleteTime;
+- (void)dealloc;
+- (id)initWithLibraryServicesManager:cplStatus:;
+- (BOOL)clearPurgeableFlagsForAllResources;
+- (void)rescanResourcesFromFileSystem;
+- (id)purgeableDirectories;
+- (BOOL)isFilePurgedForFileID:purgedPath:;
+- (id)exitDeleteTime;
+- (void).cxx_destruct;
+- (void)_markAsNotLocallyAvailableForResourcesWithFileIDsToPath:inLibrary:;
+- (void)setExitDeleteTime:;
+- (BOOL)markResourceAsPurgeable:withUrgency:;
+- (void)markAsNotLocallyAvailableForResourcesWithFileIDsToPath:;
+- (void)invalidate;
+- (id)_newShortLivedPhotoLibrary;
++ (BOOL)isPurgeableFile:outIsPhotoType:outUrgencyLevel:error:;
++ (id)purgeableStateDescriptionForFile:;
++ (BOOL)clearPurgeableFlagForResource:;
++ (BOOL)clearPurgeableFlagsForAllResourcesInPhotoLibraryURL:;
++ (BOOL)markPurgeableForFileAtURL:withUrgency:outInode:;
++ (id)fsidForURL:;
++ (BOOL)setClearPurgeableIsCloneStateOnPurgeableResourcesOnceWithPathManager:error:;
++ (void)clearPurgeableIsCloneStateOnPurgeableResourcesOnceIfNecessaryInManagedObjectContext:pathManager:;
++ (id)_purgeableResourceDirectoriesForPathManager:;
++ (id)_unclearablePurgeableResourceDirectoriesForPathManager:;
++ (id)_clearablePurgeableResourceDirectoriesForPathManager:;
++ (BOOL)markPurgeableForFileAtURL:withUrgency:outInode:error:;
++ (BOOL)verifyAndFixLocalAvailabilityForMissingResourcesUsingFileIDInManagedObjectContext:countPresent:countMissing:countUnableToVerify:error:;
+@end

@@ -1,0 +1,34 @@
+@interface UIKeyboardLayoutGuide : UITrackingLayoutGuide
+@property (nonatomic) {UIOffset=dd} previousOffset;
+@property (nonatomic) {CGSize=dd} previousSize;
+@property (nonatomic) BOOL hasPausedEdges;
+@property (nonatomic) BOOL docked;
+@property (nonatomic) BOOL windowGuide;
+@property (nonatomic) BOOL transitioning;
+@property (nonatomic) BOOL addsHeightWhenUndocked;
+@property (nonatomic) BOOL followsUndockedKeyboard;
+- (void)_commonInit;
+- (void)setPreviousOffset:;
+- (void)setTransitioning:;
+- (BOOL)shouldPauseEdgesForSize:;
+- (id)init;
+- (void)setFollowsUndockedKeyboard:;
+- (void)setPreviousSize:;
+- (BOOL)isTransitioning;
+- (id)previousSize;
+- (id)initWithCoder:;
+- (void)setWindowGuide:;
+- (BOOL)changeSizingConstants:;
+- (BOOL)isWindowGuide;
+- (BOOL)hasPausedEdges;
+- (void)encodeWithCoder:;
+- (void)updateShouldPauseEdges:;
+- (BOOL)addsHeightWhenUndocked;
+- (BOOL)followsUndockedKeyboard;
+- (BOOL)isDocked;
+- (void)setAddsHeightWhenUndocked:;
+- (id)previousOffset;
+- (BOOL)changeOffsetConstants:;
+- (void)setDocked:;
+- (void)setHasPausedEdges:;
+@end

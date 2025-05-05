@@ -1,0 +1,32 @@
+@interface IESLivePKComponentPowerContainer : IESLiveRevenueInteractPlayComponent
+@property (nonatomic) <IESLiveCompoundSubscription> disposable;
+@property (nonatomic) UIView<IESHYContainerProtocol> pkPowerContainer;
+@property (nonatomic) q remainTime;
+@property (nonatomic) BOOL inSprintTime;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)componentContainerFrameChanged;
+- (void)componentDidClear:;
+- (void)componentFinished;
+- (void)componentInteracting;
+- (void)componentPlaying;
+- (void)componentPunishing;
+- (id)disposable;
+- (BOOL)inSprintTime;
+- (void)invokeNotificationEventWithParams:;
+- (void)loadPKPowerContainerView;
+- (void)onReceivedBattlePowerContainerMessage:;
+- (id)pkPowerContainer;
+- (id)pkPowerContainerFrame;
+- (long long)remainTime;
+- (void)setDisposable:;
+- (void)setInSprintTime:;
+- (void)setPkPowerContainer:;
+- (void)setRemainTime:;
+- (void)setupAction;
+- (id)trackPKBattlePowerContainer;
+- (void).cxx_destruct;
+- (void)clean;
+@end

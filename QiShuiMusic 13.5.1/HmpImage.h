@@ -1,0 +1,32 @@
+@interface HmpImage : NSObject
+@property (nonatomic) ^v impl;
+@property (nonatomic) BOOL own;
+- (BOOL)own;
+- (void)setOwn:;
+- (int)cdim;
+- (id)color_model;
+- (id)copy_:;
+- (id)crop::::;
+- (int)hdim;
+- (id)init::;
+- (id)init:::::;
+- (id)initFromPtr::;
+- (int)nchannels;
+- (void)set_color_model:;
+- (id)unsafe_data;
+- (int)wdim;
+- (id)select:;
+- (void)dealloc;
+- (int)format;
+- (id)data;
+- (int)height;
+- (int)width;
+- (id)ptr;
+- (id)impl;
+- (id)description;
+- (void)setImpl:;
+- (id)clone;
+- (id)device;
+- (int)dtype;
+- (BOOL)defined;
+@end

@@ -1,0 +1,30 @@
+@interface CIToneCurve : CIFilter
+@property (nonatomic) CIImage inputImage;
+@property (nonatomic) CIVector inputPoint0;
+@property (nonatomic) CIVector inputPoint1;
+@property (nonatomic) CIVector inputPoint2;
+@property (nonatomic) CIVector inputPoint3;
+@property (nonatomic) CIVector inputPoint4;
+- (void)dealloc;
+- (id)_outputProperties;
+- (id)inputImage;
+- (id)_initFromProperties:;
+- (void)setInputImage:;
+- (BOOL)_isIdentity;
+- (id)outputImage;
+- (id)inputPoint0;
+- (id)inputPoint1;
+- (void)setInputPoint0:;
+- (void)setInputPoint1:;
+- (void)setInputPoint2:;
+- (void)setInputPoint3:;
+- (void)setInputPoint4:;
+- (id)_kernel16;
+- (id)inputPoint2;
+- (id)inputPoint3;
+- (id)inputPoint4;
++ (id)customAttributes;
++ (id)curveImageFromPoints:linear:;
++ (id)curveImageFromPoints:;
++ (void)splineCurveTable:tableSize:gamma:from:;
+@end

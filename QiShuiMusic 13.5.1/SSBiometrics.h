@@ -1,0 +1,23 @@
+@interface SSBiometrics : NSObject
+- (void)_sendMessage:withCompletionBlock:;
+- (id)init;
+- (void).cxx_destruct;
+- (void)getAllCachedBiometricHTTPHeadersWithToken:accountID:evict:completionBlock:;
+- (void)getCachedBiometricAuthenticationContextWithToken:evict:completionBlock:;
+- (void)getCachedBiometricHTTPHeadersWithToken:accountID:evict:completionBlock:;
+- (void)getConstraintsDictionaryForPurpose:completion:;
+- (void)getCurrentACLVersionWithCompletion:;
+- (void)getStateWithCompletionBlock:;
+- (void)renewPurchaseTokenWithAuthToken:completionBlock:;
+- (void)resetAccount:withCompletionBlock:;
+- (void)resetWithCompletionBlock:;
+- (void)setEnabled:withCompletionBlock:;
+- (void)setEnabled:withAuthToken:completionBlock:;
+- (void)setAllowed:completionBlock:;
+- (void)tokenUpdateDidFinishWithLogKey:completion:;
+- (void)tokenUpdateShouldStartWithLogKey:completion:;
+- (void)tokenUpdateStateWithCompletionBlock:;
+- (void)getIdentityMapCountWithCompletionBlock:;
+- (void)isIdentityMapValidForAccountIdentifier:completionBlock:;
+- (void)saveIdentityMapForAccountIdentifier:completionBlock:;
+@end

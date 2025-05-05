@@ -1,0 +1,33 @@
+@interface CSPerson : NSObject
+@property (nonatomic) NSString displayName;
+@property (nonatomic) NSArray handles;
+@property (nonatomic) NSString handleIdentifier;
+@property (nonatomic) NSString photosPersonIdentifier;
+@property (nonatomic) NSString contactIdentifier;
+- (id)sg_emailAddress;
+- (id)sg_namedEmailAddress;
+- (id)sg_initWithNamedEmailAddress:;
+- (id)sg_serialized;
+- (id)sg_initWithSerializedForm:;
+- (void)setContactIdentifier:;
+- (id)contactIdentifier;
+- (void)encodeWithCSCoder:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)setDisplayName:;
+- (id)displayName;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)handles;
+- (void)setHandles:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)initWithDisplayName:handles:handleIdentifier:;
+- (id)initWithDisplayName:handles:handleIdentifier:photosPersonIdentifier:;
+- (id)handleIdentifier;
+- (void)setHandleIdentifier:;
+- (id)photosPersonIdentifier;
+- (void)setPhotosPersonIdentifier:;
++ (BOOL)supportsSecureCoding;
+@end

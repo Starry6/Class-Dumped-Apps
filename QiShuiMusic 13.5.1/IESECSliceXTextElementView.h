@@ -1,0 +1,32 @@
+@interface IESECSliceXTextElementView : IESECSliceXBaseContentElementView
+@property (nonatomic) NSArray inlineContents;
+@property (nonatomic) {IESECSliceXTextElementParagraphStyle=BQdq} paragraphStyle;
+@property (nonatomic) UITapGestureRecognizer tapLabel;
+@property (nonatomic) UILongPressGestureRecognizer longPressLabel;
+@property (nonatomic) {IESECSliceXTextElementLooseMeasureResult=dd{CGSize=dd}} loosestMeasureResult;
+@property (nonatomic) YYLabel contentLabel;
+- (void)longPressLabel:;
+- (void)applyParagraphStyle;
+- (id)createAttributedStr:withState:;
+- (id)getInlineContentAtPoint:;
+- (id)inlineContents;
+- (id)longPressLabel;
+- (id)loosestMeasureResult;
+- (void)resetLooseMeasureResult;
+- (void)setInlineContents:;
+- (void)setLayoutNeedUpdate;
+- (void)setLongPressLabel:;
+- (void)setLoosestMeasureResult:;
+- (void)setTapLabel:;
+- (void)setupElementView;
+- (id)sliceXFlexLayoutMeasureView:width:widthMode:height:heightMode:;
+- (id)tapLabel;
+- (void)tapLabel:;
+- (void)layoutSubviews;
+- (id)paragraphStyle;
+- (void).cxx_destruct;
+- (BOOL)gestureRecognizerShouldBegin:;
+- (id)contentLabel;
+- (void)setContentLabel:;
+- (void)setParagraphStyle:;
+@end

@@ -1,0 +1,30 @@
+@interface CRMLModel : NSObject
+@property (nonatomic) NSString modelName;
+@property (nonatomic) r^i codeMap;
+@property (nonatomic) NSInteger classCount;
+@property (nonatomic) NSArray modelShape;
+@property (nonatomic) NSInteger inputWidth;
+@property (nonatomic) NSInteger inputHeight;
+@property (nonatomic) q gpuBatchSize;
+@property (nonatomic) q cpuBatchSize;
+- (id)modelName;
+- (id)init;
+- (void).cxx_destruct;
+- (id)predict:error:;
+- (id)initWithURL:error:;
+- (int)inputWidth;
+- (int)inputHeight;
+- (id)codeMap;
+- (int)classCount;
+- (id)decodeActivations:;
+- (id)decodeActivations:blank:ctcAllowGarbage:numResultNeeded:;
+- (id)activationsFromImage:;
+- (id)initRestrictingToCPU:;
+- (id)initWithURL:restrictToCPU:error:;
+- (id)modelShape;
+- (void)setModelShape:;
+- (long long)gpuBatchSize;
+- (void)setGpuBatchSize:;
+- (long long)cpuBatchSize;
+- (void)setCpuBatchSize:;
+@end

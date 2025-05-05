@@ -1,0 +1,36 @@
+@interface IESLiveSaaSGuideDot : NSObject
+@property (nonatomic) NSString identifier;
+@property (nonatomic) NSString parent;
+@property (nonatomic) NSString name;
+@property (nonatomic) NSString title;
+@property (nonatomic) q beginVersion;
+@property (nonatomic) q endVersion;
+@property (nonatomic) BOOL showRedDot;
+@property (nonatomic) q type;
+@property (nonatomic) q priority;
+@property (nonatomic) NSArray childList;
+- (long long)beginVersion;
+- (id)childList;
+- (long long)endVersion;
+- (void)setBeginVersion:;
+- (void)setChildList:;
+- (void)setEndVersion:;
+- (void)setShowRedDot:;
+- (BOOL)showRedDot;
+- (void)setParent:;
+- (void)setPriority:;
+- (void)setName:;
+- (id)identifier;
+- (void)setType:;
+- (void)setTitle:;
+- (id)initWithID:;
+- (long long)type;
+- (id)title;
+- (void).cxx_destruct;
+- (id)name;
+- (id)parent;
+- (void)setIdentifier:;
+- (long long)priority;
++ (long long)beginVersionForHistory;
++ (long long)endVersionForHistory;
+@end

@@ -1,0 +1,2 @@
+@interface HTSLiveLinkMicOchannelNotifyRoot : GPBRootObject
+@end

@@ -1,0 +1,37 @@
+@interface IESIMUITextLoadingView : UIView
+@property (nonatomic) UIView hudView;
+@property (nonatomic) IESIMUILoadingView loadingView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIView containerView;
+- (void)allowUserInteraction:;
+- (void)dismissWithAnimated:;
+- (void)p_showLoadingOnView:;
+- (void)p_showLoadingOnView:title:animated:;
+- (void)dismiss;
+- (id)init;
+- (void)setTitleLabel:;
+- (id)containerView;
+- (void)setContainerView:;
+- (void)setTitle:;
+- (void)startAnimating;
+- (id)initWithFrame:;
+- (void)stopAnimating;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setupUI;
+- (id)loadingView;
+- (void)setLoadingView:;
+- (id)hudView;
+- (void)setHudView:;
+- (void)updateTitle:;
++ (void)dismissWindowLoading;
++ (void)dismissWindowLoadingWithAnimated:;
++ (id)p_imageWithColor:;
++ (id)sharedView;
++ (id)showLoadingOnView:title:animated:;
++ (id)showLoadingOnView:title:animated:afterDelay:;
++ (id)showLoadingOnView:withTitle:;
++ (id)showWindowLoadingWithTitle:;
++ (id)showWindowLoadingWithTitle:animated:;
++ (id)showWindowLoadingWithTitle:animated:afterDelay:;
+@end

@@ -1,0 +1,33 @@
+@interface IESECLiveAnchorPickedCommodityHeader : UICollectionReusableView
+@property (nonatomic) UIView bkgView;
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) UIView lineView;
+@property (nonatomic) UILabel textLabel;
+@property (nonatomic) IESECLiveAnchorAuthorStatsModel statsModel;
+@property (nonatomic) <IESECLiveAnchorPickedCommodityHeaderDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)bkgView;
+- (void)commodityHeaderCellClick:;
+- (void)setBkgView:;
+- (void)setStatsModel:;
+- (id)statsModel;
+- (id)collectionView:layout:sizeForItemAtIndexPath:;
+- (id)textLabel;
+- (long long)collectionView:numberOfItemsInSection:;
+- (void)setDelegate:;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (id)initWithFrame:;
+- (void)setCollectionView:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)collectionView;
+- (void)setTextLabel:;
+- (id)lineView;
+- (void)setLineView:;
+- (void)setupUI;
++ (id)identity;
++ (double)height;
+@end

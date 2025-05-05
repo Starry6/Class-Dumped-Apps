@@ -1,0 +1,32 @@
+@interface IESLiveLayoutContainerItem : IESLiveDynamicModel
+@property (nonatomic) NSMutableSet hiddenReasons;
+@property (nonatomic) BOOL useProxyStackView;
+@property (nonatomic) NSString viewType;
+@property (nonatomic) NSString containerType;
+@property (nonatomic) IESLiveLayoutContainerView view;
+@property (nonatomic) UIView contentView;
+@property (nonatomic) {UIEdgeInsets=dddd} insets;
+@property (nonatomic) {CGSize=dd} size;
+@property (nonatomic) BOOL hasRemoved;
+- (void)bindingView:insets:size:;
+- (id)hiddenReasons;
+- (BOOL)isHiddenForReason:;
+- (void)remakeInsets:size:;
+- (void)setHidden:forReason:;
+- (void)setHiddenReasons:;
+- (void)setUseProxyStackView:;
+- (BOOL)useProxyStackView;
+- (id)contentView;
+- (id)viewType;
+- (void)setInsets:;
+- (id)insets;
+- (id)view;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (BOOL)isHidden;
+- (void)setSize:;
+- (id)size;
+- (id)containerType;
+- (void)setContainerType:;
+- (void)setViewType:;
+@end

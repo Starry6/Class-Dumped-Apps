@@ -1,0 +1,31 @@
+@interface TSCENTERDeviceDataReportResultV2MXXT : TSCENTERBaseResultMXXT
+@property (nonatomic) NSString apdid;
+@property (nonatomic) NSString token;
+@property (nonatomic) NSString currentTime;
+@property (nonatomic) NSString version;
+@property (nonatomic) NSString vkeySwitch;
+@property (nonatomic) NSString bugTrackSwitch;
+@property (nonatomic) NSString appListVer;
+@property (nonatomic) NSString dynamicKey;
+@property (nonatomic) NSDictionary resultData;
+- (id)apdid;
+- (id)appListVer;
+- (id)bugTrackSwitch;
+- (id)dynamicKey;
+- (void)setApdid:;
+- (void)setAppListVer:;
+- (void)setBugTrackSwitch:;
+- (void)setDynamicKey:;
+- (void)setVkeySwitch:;
+- (id)vkeySwitch;
+- (void)setCurrentTime:;
+- (id)token;
+- (void)setVersion:;
+- (id)version;
+- (id)resultData;
+- (void)setToken:;
+- (void).cxx_destruct;
+- (id)currentTime;
+- (void)setResultData:;
++ (Class)resultDataElementClass;
+@end

@@ -1,0 +1,30 @@
+@interface IESECStoreSearchHotView : UIView
+@property (nonatomic) IESECStoreSearchHotHeader headerView;
+@property (nonatomic) UICollectionView contentCollectionView;
+@property (nonatomic) NSArray dataSource;
+@property (nonatomic) <IESECStoreSearchHotViewDelegate> delegate;
+@property (nonatomic) BOOL showRefreshButton;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)reloadHotWords:;
+- (id)p_hotIconImage:;
+- (id)contentCollectionView;
+- (void)setContentCollectionView:;
+- (void)setShowRefreshButton:;
+- (BOOL)showRefreshButton;
+- (void)setHeaderView:;
+- (void)setDataSource:;
+- (void)collectionView:willDisplayCell:forItemAtIndexPath:;
+- (long long)collectionView:numberOfItemsInSection:;
+- (void)setDelegate:;
+- (id)headerView;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (id)initWithFrame:;
+- (id)dataSource;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setupViews;
+@end

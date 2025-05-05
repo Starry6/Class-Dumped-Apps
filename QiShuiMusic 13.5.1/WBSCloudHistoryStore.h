@@ -1,0 +1,27 @@
+@interface WBSCloudHistoryStore : NSObject
+- (void)_saveCloudHistoryVisits:tombstones:longLivedOperationPersistenceCompletion:completion:;
+- (id)_recordWithType:version:dataDictionary:;
+- (void)fetchRecordsWithServerChangeTokenData:completion:;
+- (id)_recordsWithCloudHistoryVisits:;
+- (id)_recordDataForDictionary:;
+- (id)_recordWithCloudHistoryVisits:;
+- (void)_prepareRecordZoneWithCompletion:;
+- (void)initializePushNotifications:;
+- (void)_configureFetchChangesOperation:;
+- (id)_dictionaryForRecordData:;
+- (id)_recordWithHistoryTombstones:version:;
+- (void)replayPersistedLongLivedSaveOperationWithID:completion:;
+- (BOOL)_shouldTryToResetRecordZoneForError:;
+- (void)_scheduleOperation:;
+- (void)_batchSaveRecords:useLongLivedOperation:longLivedOperationPersistenceCompletion:completion:;
+- (void)_resetRecordZone;
+- (id)_prepareRecordZoneWithoutCachingWithError:;
+- (void).cxx_destruct;
+- (void)_saveRecords:withCompletion:;
+- (void)_fetchRecordsWithServerChangeToken:numberOfFetchRecordsOperationsPerformedSoFar:result:completion:;
+- (void)fetchNumberOfDevicesInSyncCircleWithCompletion:;
+- (void)deleteHistoryZoneWithCompletion:;
+- (void)_appendRecord:toResult:;
+- (void)saveCloudHistoryVisits:tombstones:longLivedOperationPersistenceCompletion:completion:;
+- (id)initWithConfiguration:useManateeContainer:;
+@end

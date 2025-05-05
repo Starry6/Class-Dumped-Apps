@@ -1,0 +1,36 @@
+@interface BSServiceConnection : NSObject
+@property (nonatomic) BSProcessHandle remoteProcess;
+@property (nonatomic) NSString service;
+@property (nonatomic) NSString instance;
+@property (nonatomic) <NSCopying> userInfo;
+@property (nonatomic) @ remoteTarget;
+@property (nonatomic) RBSTarget remoteAssertionTarget;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)instance;
+- (void)configureConnection:;
+- (id)init;
+- (void)dealloc;
+- (id)userInfo;
+- (id)remoteAssertionTarget;
+- (id)createMessageWithCompletion:;
+- (id)service;
+- (id)createMessage;
+- (id)remoteTargetWithAssertionAttributes:;
+- (void)_configureConnection:;
+- (void).cxx_destruct;
+- (id)extractNSXPCConnectionWithConfigurator:;
+- (id)remoteTarget;
+- (id)description;
+- (id)remoteTargetWithLaunchingAssertionAttributes:;
+- (void)invalidate;
+- (id)remoteProcess;
+- (void)activate;
++ (id)NSXPCConnectionWithEndpoint:clientContextBuilder:configurator:;
++ (id)currentContext;
++ (id)NSXPCConnectionWithEndpoint:configurator:;
++ (id)connectionWithEndpoint:clientContextBuilder:;
++ (id)connectionWithEndpoint:;
+@end

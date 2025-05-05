@@ -1,0 +1,38 @@
+@interface CXVoicemail : NSObject
+@property (nonatomic) NSUUID UUID;
+@property (nonatomic) CXHandle sender;
+@property (nonatomic) NSDate dateReceived;
+@property (nonatomic) NSURL audioFileURL;
+@property (nonatomic) BOOL played;
+@property (nonatomic) BOOL trashed;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithUUID:;
+- (id)init;
+- (void)setDateReceived:;
+- (id)sender;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (id)sanitizedCopy;
+- (void).cxx_destruct;
+- (id)description;
+- (id)dateReceived;
+- (id)UUID;
+- (void)setSender:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setTrashed:;
+- (BOOL)isTrashed;
+- (BOOL)isPlayed;
+- (void)setPlayed:;
+- (id)sanitizedCopyWithZone:;
+- (id)audioFileURL;
+- (void)setAudioFileURL:;
+- (void)updateSanitizedCopy:withZone:;
+- (void)updateCopy:withZone:;
+- (BOOL)isEqualToVoicemail:;
++ (BOOL)supportsSecureCoding;
+@end

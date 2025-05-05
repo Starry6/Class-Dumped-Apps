@@ -1,0 +1,2 @@
+@interface PuzzleJSBContext : NSObject
+@end

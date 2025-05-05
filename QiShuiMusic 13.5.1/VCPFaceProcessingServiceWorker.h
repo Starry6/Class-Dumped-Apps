@@ -1,0 +1,29 @@
+@interface VCPFaceProcessingServiceWorker : NSObject
+- (void).cxx_destruct;
+- (void)updateKeyFacesOfPersonsWithLocalIdentifiers:forceUpdate:context:reply:;
+- (void)resetFaceClusteringStateWithContext:reply:;
+- (void)requestSuggestedMePersonIdentifierWithContext:reply:;
+- (void)personPromoterStatusWithContext:reply:;
+- (void)faceCandidatesforKeyFaceForPersonsWithLocalIdentifiers:context:reply:;
+- (id)initWithPhotoLibrary:andContext:;
+- (void)_openSuggestionsLoggingSession;
+- (void)_closeSuggestionsLoggingSession;
+- (void)_appendToSuggestionsLog:;
+- (void)_copyImageAtURLToSuggestionsLoggingSession:;
+- (void)_logFaceToSuggestionsLog:;
+- (void)_finalizeSuggestionsLog;
+- (void)_startAndSyncClusterCacheWithLibrary:reply:;
+- (id)_suggestionsForPersonLocalIdentifier:clusterSequenceNumbers:excludePersonLocalIdentifiers:cancel:context:error:;
+- (id)_suggestionsForPersonWithLocalIdentifier:toBeConfirmedPersonSuggestions:toBeRejectedPersonSuggestions:cancel:error:;
+- (void)suggestPersonsForPersonWithLocalIdentifier:toBeConfirmedPersonSuggestions:toBeRejectedPersonSuggestions:context:reply:cancel:;
+- (void)resetPersonsModelWithReply:;
+- (void)resetPetsModelWithReply:;
+- (void)validateClusterCacheWithContext:cancelOrExtendTimeoutBlock:reply:;
+- (BOOL)_deleteAllVerifiedPersonsWithError:;
+- (void)reclusterFacesWithContext:reply:extendTimeout:cancel:;
+- (void)rebuildPersonsWithContext:reply:extendTimeout:cancel:;
++ (BOOL)_includeTorsoOnlyFaces;
++ (id)newAllPersonsWithAtLeastOneFaceFetchOptionsWithPhotoLibrary:;
++ (id)newAllFacesFetchOptionsWithPhotoLibrary:;
++ (id)workerWithPhotoLibrary:andContext:;
+@end

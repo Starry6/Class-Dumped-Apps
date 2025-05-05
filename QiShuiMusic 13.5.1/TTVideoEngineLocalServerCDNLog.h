@@ -1,0 +1,30 @@
+@interface TTVideoEngineLocalServerCDNLog : NSObject
+@property (nonatomic) NSString fileKey;
+@property (nonatomic) NSString host;
+@property (nonatomic) NSString url;
+@property (nonatomic) NSString serverIp;
+@property (nonatomic) NSString xCache;
+@property (nonatomic) NSString xMCache;
+@property (nonatomic) q contentLength;
+@property (nonatomic) q reqStartT;
+@property (nonatomic) q reqEndT;
+- (id)xMCache;
+- (id)fileKey;
+- (long long)reqEndT;
+- (long long)reqStartT;
+- (id)serverIp;
+- (void)setFileKey:;
+- (void)setReqEndT:;
+- (void)setReqStartT:;
+- (void)setServerIp:;
+- (void)setXCache:;
+- (void)setXMCache:;
+- (id)xCache;
+- (id)url;
+- (id)host;
+- (void)setContentLength:;
+- (void)setHost:;
+- (void)setUrl:;
+- (void).cxx_destruct;
+- (long long)contentLength;
+@end

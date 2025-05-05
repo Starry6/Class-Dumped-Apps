@@ -1,0 +1,38 @@
+@interface IESLiveInteractionOptionListBubbleView : UIView
+@property (nonatomic) IESLiveInteractionOptionListBubbleViewModel viewModel;
+@property (nonatomic) UIView container;
+@property (nonatomic) UIImageView anchorArrow;
+@property (nonatomic) UIView shadow;
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) @? willSelect;
+@property (nonatomic) @? didSelect;
+@property (nonatomic) @? didHide;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setAnchorArrow:;
+- (id)anchorArrow;
+- (void)didTapAtEmptyArea;
+- (id)initWithViewModel:container:;
+- (void)popupAtBottomOf:willSelect:didSelect:didHide:;
+- (void)setDidHide:;
+- (void)setDidSelect:;
+- (void)setWillSelect:;
+- (id)collectionView:layout:sizeForItemAtIndexPath:;
+- (void)dismiss;
+- (void)setContainer:;
+- (id)viewModel;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)container;
+- (id)shadow;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (void)setCollectionView:;
+- (void).cxx_destruct;
+- (id)collectionView;
+- (void)setViewModel:;
+- (void)setShadow:;
+- (id)didSelect;
+- (id)willSelect;
+- (id)didHide;
+@end

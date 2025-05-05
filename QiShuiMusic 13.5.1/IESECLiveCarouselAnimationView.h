@@ -1,0 +1,36 @@
+@interface IESECLiveCarouselAnimationView : UIView
+@property (nonatomic) UIView currentItemView;
+@property (nonatomic) IESECGCDTimer animationTimer;
+@property (nonatomic) IESECGCDTimer delayAnimationTimer;
+@property (nonatomic) IESECLiveCarouselAnimationConfig config;
+@property (nonatomic) <IESECLiveCarouselAnimationViewDelegate> delegate;
+@property (nonatomic) <IESECLiveCarouselAnimationViewDataSource> dataSource;
+@property (nonatomic) Q currentIndex;
+- (id)currentItemView;
+- (id)delayAnimationTimer;
+- (void)itemViewDidAppear:;
+- (void)itemViewDidDisappear:;
+- (void)itemViewWillAppear:;
+- (void)itemViewWillDisappear:;
+- (void)p_doAppearAnimation:index:;
+- (void)p_doDisappearAnimation:index:completion:;
+- (id)p_itemsViewAtIndex:;
+- (unsigned long long)p_numberOfItemsCount;
+- (void)p_prepareAnimation;
+- (void)p_resetAnimationState;
+- (void)setCurrentItemView:;
+- (void)setDelayAnimationTimer:;
+- (void)setDataSource:;
+- (void)layoutSubviews;
+- (void)setCurrentIndex:;
+- (void)setConfig:;
+- (void)setDelegate:;
+- (void)startAnimation;
+- (id)dataSource;
+- (id)delegate;
+- (void).cxx_destruct;
+- (unsigned long long)currentIndex;
+- (id)config;
+- (id)animationTimer;
+- (void)setAnimationTimer:;
+@end

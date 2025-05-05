@@ -1,0 +1,32 @@
+@interface IESLivePKGuestInteractSettingChooseViewModel : NSObject
+@property (nonatomic) NSString title;
+@property (nonatomic) Q type;
+@property (nonatomic) NSArray items;
+@property (nonatomic) NSInteger selectedIndex;
+@property (nonatomic) Q currentScene;
+@property (nonatomic) @? onItemSelected;
+@property (nonatomic) NSMutableArray authorityItems;
+@property (nonatomic) BOOL isOnlyJoinThroughInvitation;
+@property (nonatomic) <IESLivePKGuestInteractSettingsAction> actionDelegate;
+- (void)setIsOnlyJoinThroughInvitation:;
+- (id)authorityItems;
+- (void)didClickItem:completion:;
+- (BOOL)isOnlyJoinThroughInvitation;
+- (id)onItemSelected;
+- (void)setAuthorityItems:;
+- (void)setCurrentScene:;
+- (void)setOnItemSelected:;
+- (void)updateWithAuthoritySettings:;
+- (id)items;
+- (int)selectedIndex;
+- (void)setType:;
+- (unsigned long long)currentScene;
+- (id)actionDelegate;
+- (void)setTitle:;
+- (void)setItems:;
+- (unsigned long long)type;
+- (id)title;
+- (void).cxx_destruct;
+- (void)setSelectedIndex:;
+- (void)setActionDelegate:;
+@end

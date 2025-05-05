@@ -1,0 +1,30 @@
+@interface RBSXPCServiceIdentity : NSObject
+@property (nonatomic) RBSXPCServiceDefinition definition;
+@property (nonatomic) NSString sessionID;
+@property (nonatomic) RBSProcessInstance host;
+@property (nonatomic) NSUUID uuid;
+@property (nonatomic) NSString persona;
+@property (nonatomic) NSData validationToken;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)definition;
+- (id)validationToken;
+- (id)sessionID;
+- (id)persona;
+- (id)initWithRBSXPCCoder:;
+- (id)host;
+- (void)encodeWithRBSXPCCoder:;
+- (id)uuid;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)isEqual:;
++ (BOOL)supportsRBSXPCSecureCoding;
++ (BOOL)supportsSecureCoding;
++ (id)identityWithDefinition:sessionID:host:UUID:persona:validationToken:;
++ (id)identityWithDefinition:sessionID:host:UUID:;
+@end

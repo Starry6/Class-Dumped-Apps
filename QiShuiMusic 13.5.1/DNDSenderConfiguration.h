@@ -1,0 +1,32 @@
+@interface DNDSenderConfiguration : NSObject
+@property (nonatomic) NSSet allowedContactTypes;
+@property (nonatomic) NSSet deniedContactTypes;
+@property (nonatomic) NSSet allowedContactGroups;
+@property (nonatomic) NSSet deniedContactGroups;
+@property (nonatomic) NSSet allowedContacts;
+@property (nonatomic) NSSet deniedContacts;
+@property (nonatomic) DNDBypassSettings phoneCallBypassSettings;
+- (id)allowedContacts;
+- (id)deniedContactGroups;
+- (id)init;
+- (id)_descriptionForRedacted:;
+- (id)allowedContactGroups;
+- (id)redactedDescription;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)deniedContacts;
+- (id)phoneCallBypassSettings;
+- (void)encodeWithCoder:;
+- (id)_initWithAllowedContactTypes:deniedContactTypes:allowedContactGroups:deniedContactGroups:allowedContacts:deniedContacts:phoneCallBypassSettings:;
+- (void).cxx_destruct;
+- (id)deniedContactTypes;
+- (id)description;
+- (id)mutableCopyWithZone:;
+- (id)allowedContactTypes;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)_redactedDescriptionsForContacts:;
+- (void)diffAgainstObject:usingDiffBuilder:withDescription:;
+- (id)_evaluatedBypassSettings:;
++ (BOOL)supportsSecureCoding;
+@end

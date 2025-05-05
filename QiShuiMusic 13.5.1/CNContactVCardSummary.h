@@ -1,0 +1,30 @@
+@interface CNContactVCardSummary : NSObject
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString descriptiveLabel;
+@property (nonatomic) NSString subtitle;
+@property (nonatomic) Q contactCount;
+@property (nonatomic) NSArray avatarContacts;
+- (id)initWithData:error:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (id)title;
+- (void).cxx_destruct;
+- (id)description;
+- (id)subtitle;
+- (unsigned long long)contactCount;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)avatarContacts;
+- (id)initWithTitle:subtitle:contactCount:avatarContacts:;
+- (id)descriptiveLabel;
++ (BOOL)supportsSecureCoding;
++ (id)namesForContact:;
++ (id)localizedStringWithName:andThisManyOthers:;
++ (id)localizedStringWithName:andOtherName:;
++ (id)defaultNameFormatter;
++ (BOOL)isAvatarContacts:equalTo:;
++ (id)nameForContact:;
++ (id)readingOptionsWithContactLimit:;
++ (id)makeFormatter;
+@end

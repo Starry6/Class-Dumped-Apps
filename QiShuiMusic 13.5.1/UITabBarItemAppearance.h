@@ -1,0 +1,37 @@
+@interface UITabBarItemAppearance : NSObject
+@property (nonatomic) _UITabBarItemData _data;
+@property (nonatomic) UITabBarAppearance _owningAppearance;
+@property (nonatomic) UITabBarItemStateAppearance highlighted;
+@property (nonatomic) UITabBarItemStateAppearance normal;
+@property (nonatomic) UITabBarItemStateAppearance selected;
+@property (nonatomic) UITabBarItemStateAppearance disabled;
+@property (nonatomic) UITabBarItemStateAppearance focused;
+- (id)selected;
+- (id)init;
+- (void)_describeInto:;
+- (void)dealloc;
+- (id)copy;
+- (id)initWithTabBarItemAppearance:;
+- (id)initWithCoder:;
+- (id)disabled;
+- (unsigned long long)hash;
+- (void)_setData:;
+- (void)_setOwningAppearance:;
+- (id)_data;
+- (id)highlighted;
+- (void)encodeWithCoder:;
+- (id)_proxyForState:;
+- (id)normal;
+- (void)configureWithDefaultForStyle:;
+- (void).cxx_destruct;
+- (id)_initWithTabBarItemData:;
+- (id)focused;
+- (id)description;
+- (void)_updateDataTo:;
+- (id)_owningAppearance;
+- (id)initWithStyle:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)_writeToStorage:;
++ (BOOL)supportsSecureCoding;
+@end

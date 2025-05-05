@@ -1,0 +1,33 @@
+@interface CLSOrganization : CLSObject
+@property (nonatomic) NSString name;
+@property (nonatomic) q type;
+@property (nonatomic) NSArray locationIDs;
+@property (nonatomic) NSArray emailDomains;
+@property (nonatomic) NSString searchText;
+@property (nonatomic) NSString displayName;
+@property (nonatomic) NSPersonNameComponents nameComponents;
+@property (nonatomic) NSString emailAddress;
+@property (nonatomic) NSString groupIdentifier;
+- (void)setName:;
+- (void)setType:;
+- (id)emailDomains;
+- (id)initWithCoder:;
+- (id)displayName;
+- (void)setEmailDomains:;
+- (void)encodeWithCoder:;
+- (long long)type;
+- (void).cxx_destruct;
+- (id)searchText;
+- (id)_init;
+- (id)name;
+- (id)dictionaryRepresentation;
+- (void)setSearchText:;
+- (void)mergeWithObject:;
+- (id)initWithOrganizationID:type:name:;
+- (id)locationIDs;
+- (void)setLocationIDs:;
++ (BOOL)supportsSecureCoding;
++ (id)_propertyNames;
++ (id)stringForType:;
++ (long long)typeFromString:;
+@end

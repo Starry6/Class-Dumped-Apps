@@ -1,0 +1,35 @@
+@interface SISchemaPersonalization : SISchemaInstrumentationMessage
+@property (nonatomic) BOOL personalDomainsSetup;
+@property (nonatomic) BOOL hasPersonalDomainsSetup;
+@property (nonatomic) BOOL appleMusicSubscriber;
+@property (nonatomic) BOOL hasAppleMusicSubscriber;
+@property (nonatomic) SISchemaVoiceSettings voiceSettings;
+@property (nonatomic) BOOL hasVoiceSettings;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)setVoiceSettings:;
+- (id)voiceSettings;
+- (BOOL)hasVoiceSettings;
+- (void)deleteVoiceSettings;
+- (void)setHasVoiceSettings:;
+- (void)setPersonalDomainsSetup:;
+- (BOOL)hasPersonalDomainsSetup;
+- (void)setHasPersonalDomainsSetup:;
+- (void)deletePersonalDomainsSetup;
+- (void)setAppleMusicSubscriber:;
+- (BOOL)hasAppleMusicSubscriber;
+- (void)setHasAppleMusicSubscriber:;
+- (void)deleteAppleMusicSubscriber;
+- (BOOL)personalDomainsSetup;
+- (BOOL)appleMusicSubscriber;
+@end

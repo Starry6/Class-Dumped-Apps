@@ -1,0 +1,32 @@
+@interface GEORPPoiEnrichment : PBCodable
+@property (nonatomic) BOOL hasScorecard;
+@property (nonatomic) GEORPScorecard scorecard;
+@property (nonatomic) NSMutableArray images;
+- (void)readAll:;
+- (id)init;
+- (id)initWithJSON:;
+- (void)clearImages;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (id)images;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (unsigned long long)imagesCount;
+- (void)setImages:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)addImage:;
+- (id)imageAtIndex:;
+- (BOOL)hasScorecard;
+- (id)scorecard;
+- (void)setScorecard:;
++ (BOOL)isValid:;
++ (Class)imageType;
+@end

@@ -1,0 +1,33 @@
+@interface MCACMEPayload : MCCertificatePayload
+@property (nonatomic) NSString directoryURLString;
+@property (nonatomic) NSString clientIdentifier;
+@property (nonatomic) NSString keyType;
+@property (nonatomic) Q keySize;
+@property (nonatomic) BOOL isHardwareBound;
+@property (nonatomic) NSArray subject;
+@property (nonatomic) NSDictionary subjectAltName;
+@property (nonatomic) I usageFlags;
+@property (nonatomic) NSArray extendedKeyUsage;
+@property (nonatomic) BOOL attest;
+- (id)subject;
+- (unsigned long long)keySize;
+- (BOOL)isRoot;
+- (unsigned int)usageFlags;
+- (void).cxx_destruct;
+- (id)keyType;
+- (id)clientIdentifier;
+- (id)verboseDescription;
+- (BOOL)isIdentity;
+- (id)initWithDictionary:profile:outError:;
+- (id)stubDictionary;
+- (id)payloadDescriptionKeyValueSections;
+- (id)subtitle1Description;
+- (id)directoryURLString;
+- (BOOL)isHardwareBound;
+- (id)subjectAltName;
+- (id)extendedKeyUsage;
+- (BOOL)attest;
++ (id)typeStrings;
++ (id)localizedPluralForm;
++ (id)localizedSingularForm;
+@end

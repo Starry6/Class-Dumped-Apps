@@ -1,0 +1,33 @@
+@interface BDCommonABTestExposureManager : NSObject
+@property (nonatomic) NSMutableSet exposedVids;
+@property (nonatomic) NSMutableDictionary exposedVidBindUserDic;
+@property (nonatomic) NSString commonExposedVidString;
+@property (nonatomic) NSString totalExposedVidString;
+@property (nonatomic) NSString currentUserKey;
+@property (nonatomic) BOOL hasSwizzled;
+@property (nonatomic) q maxExposureOfflineStorageTimeInterval;
+- (void)setHasSwizzled:;
+- (void)updateExposureVidStringSwizzled;
+- (void)setExposedVids:;
+- (id)commonExposedVidString;
+- (void)exposeVid:isBind2User:;
+- (id)exposedVidBindUserDic;
+- (id)exposedVids;
+- (id)exposureVidString;
+- (id)exposureVidStringForUserKey:;
+- (BOOL)hasSwizzled;
+- (long long)maxExposureOfflineStorageTimeInterval;
+- (void)setCommonExposedVidString:;
+- (void)setExposedVidBindUserDic:;
+- (void)setMaxExposureOfflineStorageTimeInterval:;
+- (void)setTotalExposedVidString:;
+- (id)totalExposedVidString;
+- (void)updateExposureVidString;
+- (void)userChanged:;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (id)currentUserKey;
+- (void)setCurrentUserKey:;
++ (id)sharedManager;
+@end

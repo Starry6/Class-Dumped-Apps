@@ -1,0 +1,26 @@
+@interface DanceUIParchment.PagingViewController : UIViewController
+- (id)collectionView:targetContentOffsetForProposedContentOffset:;
+- (void)scrollViewDidEndDecelerating:;
+- (void)collectionView:didHighlightItemAtIndexPath:;
+- (void)collectionView:didUnhighlightItemAtIndexPath:;
+- (void)collectionView:willDisplayCell:forItemAtIndexPath:;
+- (void)viewWillTransitionToSize:withTransitionCoordinator:;
+- (void)collectionView:didDeselectItemAtIndexPath:;
+- (id)initWithCoder:;
+- (void)scrollViewWillBeginDecelerating:;
+- (void)scrollViewDidScroll:;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (void)scrollViewWillBeginDragging:;
+- (void)scrollViewDidEndDragging:willDecelerate:;
+- (void).cxx_destruct;
+- (void)scrollViewWillEndDragging:withVelocity:targetContentOffset:;
+- (void)viewDidAppear:;
+- (void)viewWillAppear:;
+- (void)loadView;
+- (void)scrollViewDidEndScrollingAnimation:;
+- (void)collectionView:didEndDisplayingCell:forItemAtIndexPath:;
+- (void)viewDidLayoutSubviews;
+- (id)initWithNibName:bundle:;
+- (void)viewDidLoad;
+- (void)handleLongPressWithGestureRecognizer:;
+@end

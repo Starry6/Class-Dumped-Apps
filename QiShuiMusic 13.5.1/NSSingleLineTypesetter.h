@@ -1,0 +1,33 @@
+@interface NSSingleLineTypesetter : NSATSTypesetter
+- (id)characterRangeForGlyphRange:actualGlyphRange:;
+- (unsigned long long)getGlyphsInRange:glyphs:properties:characterIndexes:bidiLevels:;
+- (void)deleteGlyphsInRange:;
+- (id)glyphRangeForCharacterRange:actualCharacterRange:;
+- (void)setLineFragmentRect:forGlyphRange:usedRect:baselineOffset:;
+- (id)init;
+- (void)substituteGlyphsInRange:withGlyphs:;
+- (void)dealloc;
+- (unsigned long long)layoutOptions;
+- (void)setLocation:withAdvancements:forStartOfGlyphRange:;
+- (void)setIntAttribute:value:forGlyphAtIndex:;
+- (id)createRenderingContextForCharacterRange:typesetterBehavior:usesScreenFonts:hasStrongRight:syncDirection:mirrorsTextAlignment:maximumWidth:;
+- (void)insertGlyph:atGlyphIndex:characterIndex:;
+- (id)attributedString;
+- (BOOL)_mirrorsTextAlignment;
+- (id)_textContainerForAttachmentProtocol;
+- (id)_textStorageForAttachmentProtocol;
+- (void)setAttachmentSize:forGlyphRange:;
+- (BOOL)synchronizesAlignmentToDirection;
+- (void)setGlyphs:properties:characterIndexes:font:forGlyphRange:;
+- (id)createRenderingContextForCharacterRange:typesetterBehavior:usesScreenFonts:hasStrongRight:maximumWidth:;
+- (BOOL)_usesScreenFonts;
+- (void)setNotShownAttribute:forGlyphRange:;
+- (void)insertGlyphs:length:forStartingGlyphAtIndex:characterIndex:;
+- (void)setDrawsOutsideLineFragment:forGlyphRange:;
+- (id)substituteFontForFont:;
+- (void)getLineFragmentRect:usedRect:remainingRect:forStartingGlyphAtIndex:proposedRect:lineSpacing:paragraphSpacingBefore:paragraphSpacingAfter:;
+- (void)setBidiLevels:forGlyphRange:;
+- (BOOL)_allowsEllipsisGlyphSubstitution;
++ (void)performWithSingleLineTypesetterContext:;
++ (BOOL)_validateAttributes:measuringOnly:;
+@end

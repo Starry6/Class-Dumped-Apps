@@ -1,0 +1,35 @@
+@interface CEKSubjectIndicatorView : UIView
+@property (nonatomic) UIImageView _topLeftCornerView;
+@property (nonatomic) UIImageView _topRightCornerView;
+@property (nonatomic) UIImageView _bottomLeftCornerView;
+@property (nonatomic) UIImageView _bottomRightCornerView;
+@property (nonatomic) UIImageView _fullSizeIndicatorView;
+@property (nonatomic) UIView _containerView;
+@property (nonatomic) BOOL inactive;
+@property (nonatomic) q shape;
+@property (nonatomic) BOOL pulsing;
+- (void)setShape:;
+- (void)startScalingWithExpansionWidth:duration:repeatCount:;
+- (id)_containerView;
+- (id)intrinsicContentSize;
+- (void)layoutSubviews;
+- (void)setPulsing:;
+- (long long)shape;
+- (id)initWithFrame:;
+- (id)sizeThatFits:;
+- (void).cxx_destruct;
+- (void)setInactive:;
+- (BOOL)isPulsing;
+- (BOOL)isInactive;
+- (void)setHidden:animated:;
+- (void)setShape:animated:;
+- (id)_topLeftCornerView;
+- (id)_topRightCornerView;
+- (id)_bottomLeftCornerView;
+- (id)_bottomRightCornerView;
+- (void)startScalingWithExpansionWidth:duration:repeatCount:timingFunction:;
+- (void)stopScalingWithDuration:;
+- (id)_fullSizeIndicatorView;
++ (id)fixedSizeWithScale:;
++ (id)_fixedSubjectIndicatorSizeForReferenceBounds:withScale:;
+@end

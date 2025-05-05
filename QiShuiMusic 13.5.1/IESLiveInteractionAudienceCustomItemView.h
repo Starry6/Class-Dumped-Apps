@@ -1,0 +1,37 @@
+@interface IESLiveInteractionAudienceCustomItemView : UIView
+@property (nonatomic) UIImageView iconImageView;
+@property (nonatomic) UIImageView<IESLiveWebPPlayer> animationView;
+@property (nonatomic) LOTAnimationView matchingAnimationView;
+@property (nonatomic) UIImageView themeBgView;
+@property (nonatomic) UIImageView waitingTipView;
+@property (nonatomic) UILabel waitingNumberLabel;
+@property (nonatomic) Q currentStatus;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)interactionModeEndedWithLayout:;
+- (void)setThemeBgView:;
+- (void)didSetAttachingDIContext;
+- (id)matchingAnimationView;
+- (void)p_animateWithResourceName:;
+- (void)renderStatus:;
+- (void)setMatchingAnimationView:;
+- (void)setWaitingNumberLabel:;
+- (void)setWaitingTipView:;
+- (void)showWaitingApplicationNumTip:;
+- (void)startMatchingAnimation;
+- (void)stopMatchingAnimation;
+- (id)themeBgView;
+- (void)updateThemeBgView;
+- (id)waitingNumberLabel;
+- (id)waitingTipView;
+- (unsigned long long)currentStatus;
+- (void).cxx_destruct;
+- (id)iconImageView;
+- (void)setCurrentStatus:;
+- (void)loadViews;
+- (void)setIconImageView:;
+- (id)animationView;
+- (void)setAnimationView:;
+@end

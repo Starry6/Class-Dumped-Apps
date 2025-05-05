@@ -1,0 +1,35 @@
+@interface MKPlaceInfoContactRowView : MKPlaceSectionRowView
+@property (nonatomic) MKVibrantLabel titleLabel;
+@property (nonatomic) _MKUILabel valueLabel;
+@property (nonatomic) NSLayoutConstraint valueToBottomConstraint;
+@property (nonatomic) UIColor labelColor;
+@property (nonatomic) CNLabeledValue labeledValue;
+@property (nonatomic) @? iconSelectedBlock;
+@property (nonatomic) <NSItemProviderWriting> draggableContent;
+@property (nonatomic) NSInteger analyticsTarget;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)labeledValue;
+- (id)initWithFrame:;
+- (void)copy:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (id)_icon;
+- (id)labelColor;
+- (id)valueLabel;
+- (void)_contentSizeDidChange;
+- (id)_valueString;
+- (void)setLabeledValue:;
+- (id)_iconAccessibilityLabel;
+- (Class)_labeledValueExpectedValueType;
+- (void)setLabelColor:;
+- (id)draggableContent;
+- (int)analyticsTarget;
+- (id)iconSelectedBlock;
+- (void)setIconSelectedBlock:;
+- (id)valueToBottomConstraint;
+- (void)setValueToBottomConstraint:;
++ (id)icon;
+@end

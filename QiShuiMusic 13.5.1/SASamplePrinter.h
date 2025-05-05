@@ -1,0 +1,31 @@
+@interface SASamplePrinter : NSObject
+@property (nonatomic) SASampleStore sampleStore;
+@property (nonatomic) SASamplePrintOptions options;
+@property (nonatomic) NSString headerNote;
+@property (nonatomic) NSUUID incidentUUID;
+@property (nonatomic) BOOL shareWithAppDevs;
+- (void)setOptions:;
+- (id)callTreeForTask:;
+- (void)printToMutableData:;
+- (BOOL)shareWithAppDevs;
+- (void)printToStream:;
+- (id)incidentUUID;
+- (void)filterToWallTimeRangeStart:end:;
+- (void)filterToMachAbsTimeRangeStart:end:;
+- (void)filterToTimestampRangeStart:end:;
+- (id)callTreeForExecutable:;
+- (id)options;
+- (void)setShareWithAppDevs:;
+- (id)callTreeForThread:inTask:;
+- (id)callTreeForDispatchQueue:andThread:inTask:;
+- (void).cxx_destruct;
+- (id)callTreesForThreadsInTask:;
+- (void)setHeaderNote:;
+- (void)setIncidentUUID:;
+- (id)initWithSampleStore:;
+- (void)filterToDisplayTimeIndexStart:end:;
+- (id)sampleStore;
+- (id)callTreeForDispatchQueue:swiftTask:thread:inTask:;
+- (id)callTreeForSwiftTask:thread:inTask:;
+- (id)headerNote;
+@end

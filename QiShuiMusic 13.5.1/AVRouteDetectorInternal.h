@@ -1,0 +1,2 @@
+@interface AVRouteDetectorInternal : NSObject
+@end

@@ -1,0 +1,33 @@
+@interface AWEIMSafetyWarningModel : NSObject
+@property (nonatomic) q warningType;
+@property (nonatomic) AWEIMMessageConversation conversation;
+@property (nonatomic) Q options;
+@property (nonatomic) BOOL needShowSafetyWarning;
+@property (nonatomic) NSString url;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString content;
+@property (nonatomic) q time;
+@property (nonatomic) BOOL needShowReport;
+@property (nonatomic) NSString confirm;
+- (void)setWarningType:;
+- (BOOL)needShowReport;
+- (BOOL)needShowSafetyWarning;
+- (void)setNeedShowReport:;
+- (void)setNeedShowSafetyWarning:;
+- (void)setOptions:;
+- (id)content;
+- (void)setContent:;
+- (id)url;
+- (void)setTime:;
+- (long long)time;
+- (id)conversation;
+- (void)setTitle:;
+- (void)setUrl:;
+- (unsigned long long)options;
+- (id)title;
+- (void).cxx_destruct;
+- (void)setConversation:;
+- (id)confirm;
+- (void)setConfirm:;
+- (long long)warningType;
+@end

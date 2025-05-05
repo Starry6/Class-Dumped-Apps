@@ -1,0 +1,2 @@
+@interface DMFFetchInstalledProfilesResultObject : DMFFetchProfilesResultObject
+@end

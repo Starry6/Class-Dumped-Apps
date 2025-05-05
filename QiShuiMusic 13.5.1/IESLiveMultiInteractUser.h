@@ -1,0 +1,36 @@
+@interface IESLiveMultiInteractUser : NSObject
+@property (nonatomic) NSString userID;
+@property (nonatomic) NSString linkMicStrID;
+@property (nonatomic) NSNumber linkMicIntID;
+@property (nonatomic) NSString nickName;
+@property (nonatomic) HTSLiveImage avatarMedium;
+@property (nonatomic) NSNumber linkStatus;
+@property (nonatomic) NSNumber linkMicIndex;
+@property (nonatomic) NSNumber roleType;
+@property (nonatomic) Q silenceStatus;
+@property (nonatomic) Q talking;
+@property (nonatomic) IESLiveInteractUserModelWrapper userModel;
+- (id)avatarMedium;
+- (id)linkMicIndex;
+- (id)linkMicIntID;
+- (id)linkMicStrID;
+- (id)roleType;
+- (void)setAvatarMedium:;
+- (void)setLinkMicIndex:;
+- (void)setLinkMicIntID:;
+- (void)setLinkMicStrID:;
+- (void)setLinkStatus:;
+- (void)setRoleType:;
+- (void)setSilenceStatus:;
+- (unsigned long long)silenceStatus;
+- (id)userID;
+- (void)setUserModel:;
+- (id)userModel;
+- (id)nickName;
+- (void).cxx_destruct;
+- (void)setUserID:;
+- (void)setNickName:;
+- (void)setTalking:;
+- (unsigned long long)talking;
+- (id)linkStatus;
+@end

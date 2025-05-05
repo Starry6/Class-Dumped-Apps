@@ -1,0 +1,37 @@
+@interface IESIMPushManager : NSObject
+@property (nonatomic) TTPushManager pushManager;
+@property (nonatomic) NSArray urlArray;
+@property (nonatomic) BOOL disableLongConnection;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) Q currentState;
+- (BOOL)disableLongConnection;
+- (void)handleAppDidBecomeActiveNoti:;
+- (void)handlePushManagerConnectionError:;
+- (void)handlePushManagerConnectionStateChanged:;
+- (void)handleReachabilityChangedNotificationNoti:;
+- (void)p_handleNetworkStateChange:;
+- (BOOL)p_isUrlValid:;
+- (BOOL)sendPushMessage:;
+- (void)setDisableLongConnection:;
+- (void)setUrlArray:;
+- (void)startConnectionWithConfig:;
+- (id)urlArray;
+- (void)setCurrentState:;
+- (id)init;
+- (void)dealloc;
+- (unsigned long long)currentState;
+- (void)setPushManager:;
+- (id)pushManager;
+- (void)stopConnection;
+- (void).cxx_destruct;
+- (BOOL)isConnected;
+- (void)p_removeObservers;
+- (void)p_addObservers;
++ (int)clientNetworkStatus;
++ (int)clientPlatformNumber;
++ (int)clientVersionNumber;
++ (int)clientVersionNumberOfShorVersionString:;
+@end

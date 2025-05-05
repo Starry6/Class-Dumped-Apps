@@ -1,0 +1,2 @@
+@interface BNSceneContract.LoadCommentEventModel : BNSceneContract.CommentDataSourceEventModel
+@end

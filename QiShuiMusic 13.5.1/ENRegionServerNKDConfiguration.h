@@ -1,0 +1,30 @@
+@interface ENRegionServerNKDConfiguration : NSObject
+@property (nonatomic) ENRegion region;
+@property (nonatomic) NSURL tekLocalDownloadBaseURL;
+@property (nonatomic) NSURL tekLocalDownloadIndexURL;
+@property (nonatomic) double tekPublishInterval;
+@property (nonatomic) NSURL tekUploadURL;
+@property (nonatomic) NSString healthAuthorityID;
+@property (nonatomic) NSArray acceptedReportTypes;
+@property (nonatomic) NSString testVerificationAPIKey;
+@property (nonatomic) NSURL testVerificationCertificateURL;
+@property (nonatomic) NSURL testVerificationURL;
+@property (nonatomic) NSArray travelerDownloadConfigurations;
+- (id)initWithServerResponseDictionary:;
+- (id)region;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (id)travelerDownloadConfigurations;
+- (id)tekLocalDownloadBaseURL;
+- (id)tekLocalDownloadIndexURL;
+- (double)tekPublishInterval;
+- (id)tekUploadURL;
+- (id)testVerificationAPIKey;
+- (id)testVerificationCertificateURL;
+- (id)testVerificationURL;
+- (id)healthAuthorityID;
+- (id)acceptedReportTypes;
++ (BOOL)supportsSecureCoding;
+@end

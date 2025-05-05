@@ -1,0 +1,30 @@
+@interface GEOLogMsgStateDirectionsDetail : PBCodable
+@property (nonatomic) BOOL hasTransportType;
+@property (nonatomic) NSInteger transportType;
+@property (nonatomic) BOOL hasIsEv;
+@property (nonatomic) BOOL isEv;
+- (void)readAll:;
+- (int)StringAsTransportType:;
+- (void)setTransportType:;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (int)transportType;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (BOOL)hasTransportType;
+- (void)mergeFrom:;
+- (id)transportTypeAsString:;
+- (BOOL)readFrom:;
+- (id)description;
+- (void)setHasTransportType:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)isEv;
+- (void)setIsEv:;
+- (void)setHasIsEv:;
+- (BOOL)hasIsEv;
++ (BOOL)isValid:;
+@end

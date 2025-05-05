@@ -1,0 +1,30 @@
+@interface SSPurchasableAppItem : SSPurchasableItem
+- (id)accountIdentifier;
+- (BOOL)isPreorder;
+- (BOOL)isFamilyShareable;
+- (BOOL)isNewsstand;
+- (BOOL)hasMessagesExtension;
+- (id)description;
+- (id)iconURL;
+- (id)bundleID;
+- (id)category;
+- (id)companyName;
+- (id)redownloadParams;
+- (long long)contentRatingFlags;
+- (BOOL)is32BitOnly;
+- (id)longTitle;
+- (id)ovalIconURLString;
+- (BOOL)supportsIPad;
+- (BOOL)supportsIPhone;
+- (id)iconTitle;
+- (BOOL)isHiddenFromSpringBoard;
+- (unsigned int)minimumOS;
+- (id)humanReadableVersion;
+- (long long)iTunesVersion;
+- (id)requiredCapabilitiesString;
++ (id)databaseTable;
++ (id)allPropertyKeys;
++ (id)allItemsFromDatabase:forAccount:sortedBy:sortAscending:;
++ (id)itemsFromDatabase:forAccount:matching:sortedBy:sortAscending:;
++ (id)sortByNameKey;
+@end

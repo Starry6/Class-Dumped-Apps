@@ -1,0 +1,38 @@
+@interface CHQuery : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSObject<OS_dispatch_queue> processingQueue;
+@property (nonatomic) NSString debugName;
+@property (nonatomic) BOOL _queryActive;
+@property (nonatomic) <CHStrokeProviderVersion> lastProcessedStrokeProviderVersion;
+@property (nonatomic) <CHQueryDelegate> delegate;
+@property (nonatomic) CHRecognitionSession recognitionSession;
+@property (nonatomic) double preferredUpdatesInterval;
+- (id)init;
+- (void)dealloc;
+- (void)start;
+- (void)setDelegate:;
+- (id)processingQueue;
+- (id)debugName;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)pause;
+- (void)waitForPendingUpdates;
+- (id)lastProcessedStrokeProviderVersion;
+- (void)setPreferredUpdatesInterval:;
+- (id)recognitionSession;
+- (id)initWithRecognitionSession:;
+- (void)recognitionSessionDidUpdateRecognitionResult:;
+- (double)preferredRecognitionResultUpdatesInterval;
+- (void)q_updateQueryResult;
+- (void)_updateForRecognitionSessionResultChangeIfNeeded;
+- (void)setLastProcessedStrokeProviderVersion:;
+- (double)preferredUpdatesInterval;
+- (BOOL)_queryActive;
+- (void)set_queryActive:;
+- (void)q_setNeedsQueryResultUpdating;
+- (void)q_queryResultDidChange;
+- (id)q_sessionResult;
+@end

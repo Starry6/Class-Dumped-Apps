@@ -1,0 +1,31 @@
+@interface IESLiveVSMessageBoardDressUpExclusiveMedalCell : UITableViewCell
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) InteractDressInfoResponse_DressInfo dressUpModel;
+@property (nonatomic) @? ExclusiveMedalBlock;
+@property (nonatomic) @? ExclusiveMedalCellShow;
+@property (nonatomic) NSInteger lastExclusiveMedalRow;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)ExclusiveMedalBlock;
+- (id)ExclusiveMedalCellShow;
+- (id)dressUpModel;
+- (int)lastExclusiveMedalRow;
+- (void)setDressUpModel:;
+- (void)setExclusiveMedalBlock:;
+- (void)setExclusiveMedalCellShow:;
+- (void)setLastExclusiveMedalRow:;
+- (void)setUI;
+- (void)updateSelectItem;
+- (id)collectionView:layout:insetForSectionAtIndex:;
+- (id)initWithStyle:reuseIdentifier:;
+- (void)collectionView:willDisplayCell:forItemAtIndexPath:;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (void)setCollectionView:;
+- (void).cxx_destruct;
+- (long long)numberOfSectionsInCollectionView:;
+- (id)collectionView;
+@end

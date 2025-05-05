@@ -1,0 +1,38 @@
+@interface IESInfoStickerCategoryModel : MTLModel
+@property (nonatomic) NSArray infoStickerList;
+@property (nonatomic) NSArray infoStickerIDs;
+@property (nonatomic) NSString categoryID;
+@property (nonatomic) NSString categoryKey;
+@property (nonatomic) NSString categoryName;
+@property (nonatomic) NSString iconDownloadURI;
+@property (nonatomic) NSArray iconDownloadURLs;
+@property (nonatomic) NSString iconSelectedURI;
+@property (nonatomic) NSArray iconSelectedURLs;
+@property (nonatomic) NSArray tags;
+@property (nonatomic) NSString tagsUpdatedTime;
+@property (nonatomic) BOOL isDefault;
+@property (nonatomic) NSString extra;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)iconDownloadURI;
+- (id)iconSelectedURI;
+- (id)infoStickerList;
+- (id)tagsUpdatedTime;
+- (void)fillStickersWithStickersMap:;
+- (id)iconDownloadURLs;
+- (id)iconSelectedURLs;
+- (id)infoStickerIDs;
+- (void)replaceWithStickers:;
+- (void)setInfoStickerIDs:;
+- (void)setInfoStickerList:;
+- (BOOL)isDefault;
+- (id)extra;
+- (id)tags;
+- (id)categoryID;
+- (void).cxx_destruct;
+- (id)categoryName;
+- (id)categoryKey;
++ (id)JSONKeyPathsByPropertyKey;
+@end

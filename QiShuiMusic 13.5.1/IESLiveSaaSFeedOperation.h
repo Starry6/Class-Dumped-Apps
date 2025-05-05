@@ -1,0 +1,31 @@
+@interface IESLiveSaaSFeedOperation : NSObject
+@property (nonatomic) BOOL hasMore;
+@property (nonatomic) IESLiveSaaSFeedDataApi feedApi;
+@property (nonatomic) IESLiveSaaSDislikeApi dislikeApi;
+@property (nonatomic) IESLiveSaaSHotRankApi hotrankApi;
+@property (nonatomic) NSMutableArray rooms;
+- (id)feedApi;
+- (id)dislikeApi;
+- (void)dislikeWithParams:completion:;
+- (void)generateHotRankModelWithParams:method:completion:;
+- (id)getFreeRequestURLWithType:recommendChannel:count:params:;
+- (id)getFreeRequestURLWithType:recommendChannel:style:params:;
+- (void)getListDataWithType:action:count:params:completion:;
+- (void)getListDataWithType:action:style:params:completion:;
+- (void)getListDataWithType:recommendChannel:action:count:params:completion:;
+- (void)getListDataWithType:recommendChannel:action:style:params:completion:;
+- (void)getListDataWithWithURL:action:params:completion:;
+- (id)getRoomModels;
+- (id)hotrankApi;
+- (void)setDislikeApi:;
+- (void)setFeedApi:;
+- (void)setHotrankApi:;
+- (void)trackDuration:;
+- (void)trackShow:;
+- (void)setHasMore:;
+- (void).cxx_destruct;
+- (BOOL)hasMore;
+- (id)rooms;
+- (void)setRooms:;
++ (id)generateFeedOperationModelWithRoomModel:;
+@end

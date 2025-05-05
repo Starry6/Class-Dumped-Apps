@@ -1,0 +1,2 @@
+@interface AVOutputDeviceAuthorizationRequestInternal : NSObject
+@end

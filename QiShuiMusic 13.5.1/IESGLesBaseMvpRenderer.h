@@ -1,0 +1,35 @@
+@interface IESGLesBaseMvpRenderer : VEMVPRenderer
+@property (nonatomic) {CGSize=dd} inActualSize;
+@property (nonatomic) VEGLStateManager glStateManager;
+@property (nonatomic) IESGLesProgram program;
+@property (nonatomic) q programType;
+@property (nonatomic) BOOL shouldUpdateProgram;
+- (void)layoutDrawable:;
+- (void)loadMvpQuadData;
+- (void)updatePipeline:;
+- (BOOL)bindScreenFBO;
+- (void)customVertexShader:fragmentShader:attributes:;
+- (id)glStateManager;
+- (id)inActualSize;
+- (void)loadExtraUniforms;
+- (void)loadProgram;
+- (void)presentScreenFBO;
+- (void)removeUniform:uniformType:;
+- (void)render:config:;
+- (void)renderClearColor;
+- (void)renderClearColor:;
+- (void)resetDefaultUniforms;
+- (void)resetRenderEnv;
+- (void)setBlendSFactor:dFactor:;
+- (void)setClearColorRed:green:blue:alpha:;
+- (void)setupRenderEnv;
+- (BOOL)shouldUpdateProgram;
+- (void)teardownRenderEnv;
+- (void).cxx_destruct;
+- (id)program;
+- (void)doInit;
+- (void)addUniform:;
+- (long long)programType;
+- (id)drawable;
+- (void)setDrawable:;
+@end

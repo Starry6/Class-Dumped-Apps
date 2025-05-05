@@ -1,0 +1,33 @@
+@interface BDLynxBridgeReceivedMessage : NSObject
+@property (nonatomic) q bdwm_invokeTS;
+@property (nonatomic) BOOL puzzleIsIntercepted;
+@property (nonatomic) NSString methodName;
+@property (nonatomic) NSDictionary rawData;
+@property (nonatomic) NSString protocolVersion;
+@property (nonatomic) NSString containerID;
+@property (nonatomic) NSString namescope;
+@property (nonatomic) NSDictionary data;
+@property (nonatomic) BOOL useUIThread;
+@property (nonatomic) BOOL isDefaultOfUseUIThread;
+- (long long)bdwm_invokeTS;
+- (id)initWithMethodName:rawData:;
+- (BOOL)isDefaultOfUseUIThread;
+- (id)namescope;
+- (id)noHandlerError;
+- (id)paramsError:;
+- (BOOL)puzzleIsIntercepted;
+- (void)setBdwm_invokeTS:;
+- (void)setNamescope:;
+- (void)setPuzzleIsIntercepted:;
+- (BOOL)useUIThread;
+- (void)useUIThreadDisable;
+- (id)protocolVersion;
+- (id)containerID;
+- (id)data;
+- (void).cxx_destruct;
+- (void)decode;
+- (id)rawData;
+- (id)methodName;
++ (id)errorSendMessageWith:containerID:;
++ (id)noHandleErrorMessage:;
+@end

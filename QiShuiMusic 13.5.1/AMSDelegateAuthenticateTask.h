@@ -1,0 +1,32 @@
+@interface AMSDelegateAuthenticateTask : AMSTask
+@property (nonatomic) ACAccount account;
+@property (nonatomic) AMSURLSession session;
+@property (nonatomic) <AMSBagProtocol> bag;
+@property (nonatomic) NSDictionary formData;
+@property (nonatomic) AMSDelegateAuthenticateRequest request;
+@property (nonatomic) AMSBiometricsSignatureResult signatureResult;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)account;
+- (void)setAccount:;
+- (id)request;
+- (id)session;
+- (void).cxx_destruct;
+- (void)_init;
+- (id)bag;
+- (id)initWithDelegateAuthenticateRequest:bag:account:;
+- (id)initWithBag:account:;
+- (id)performDelegateAuthentication;
+- (id)_encodedURLRequestWithError:;
+- (id)_performDelegateAuthenticationWithError:;
+- (id)formData;
+- (void)setFormData:;
+- (id)signatureResult;
+- (void)setSignatureResult:;
++ (id)createBagForSubProfile;
++ (id)bagSubProfileVersion;
++ (id)bagSubProfile;
++ (id)bagKeySet;
+@end

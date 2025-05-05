@@ -1,0 +1,34 @@
+@interface SIServiceInstrumentationBatchResponse : SISchemaInstrumentationMessage
+@property (nonatomic) NSData batch_id;
+@property (nonatomic) BOOL hasBatch_id;
+@property (nonatomic) NSInteger status_code;
+@property (nonatomic) BOOL hasStatus_code;
+@property (nonatomic) NSString message;
+@property (nonatomic) BOOL hasMessage;
+@property (nonatomic) NSData jsonData;
+- (void)setMessage:;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (id)message;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (BOOL)hasMessage;
+- (void)setHasMessage:;
+- (BOOL)hasBatch_id;
+- (void)deleteBatch_id;
+- (id)batch_id;
+- (void)setBatch_id:;
+- (void)setHasBatch_id:;
+- (void)setStatus_code:;
+- (BOOL)hasStatus_code;
+- (void)setHasStatus_code:;
+- (void)deleteStatus_code;
+- (void)deleteMessage;
+- (int)status_code;
+@end

@@ -1,0 +1,35 @@
+@interface AVVideoOutputSettings : AVOutputSettings
+@property (nonatomic) NSInteger width;
+@property (nonatomic) NSInteger height;
+@property (nonatomic) NSDictionary cleanApertureDictionary;
+@property (nonatomic) NSDictionary pixelAspectRatioDictionary;
+@property (nonatomic) NSDictionary pixelTransferProperties;
+@property (nonatomic) NSDictionary videoScalingProperties;
+@property (nonatomic) BOOL dimensionsAreBoundingBox;
+@property (nonatomic) {?=qiIq} minimumFrameDuration;
+@property (nonatomic) NSString frameRateConversionAlgorithm;
+@property (nonatomic) BOOL allowWideColor;
+@property (nonatomic) NSDictionary videoSettingsDictionary;
+- (id)minimumFrameDuration;
+- (int)height;
+- (int)width;
+- (id)cleanApertureDictionary;
+- (id)pixelAspectRatioDictionary;
+- (id)compatibleMediaTypes;
+- (BOOL)validateUsingOutputSettingsValidator:reason:;
+- (id)initWithVideoSettingsDictionary:exceptionReason:;
+- (id)videoSettingsDictionary;
+- (id)videoScalingProperties;
+- (id)pixelTransferProperties;
+- (void)colorPropertiesConsideringFormatDescriptions:colorPrimaries:transferFunction:ycbcrMatrix:;
+- (BOOL)dimensionsAreBoundingBox;
+- (id)frameRateConversionAlgorithm;
+- (BOOL)allowWideColor;
++ (id)_videoOutputSettingsWithVideoSettingsDictionary:exceptionReason:;
++ (id)_outputSettingsWithOutputSettingsDictionary:mediaType:exceptionReason:;
++ (id)registeredOutputSettingsClasses;
++ (id)_validValuesForScalingMode;
++ (id)videoOutputSettingsWithVideoSettingsDictionary:;
++ (id)videoOutputSettingsWithTrustedVideoSettingsDictionary:;
++ (id)defaultVideoOutputSettings;
+@end

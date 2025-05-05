@@ -1,0 +1,2 @@
+@interface HTSLiveWebcastOpenStreamPushRoot : GPBRootObject
+@end

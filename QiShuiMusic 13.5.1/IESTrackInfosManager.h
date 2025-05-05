@@ -1,0 +1,30 @@
+@interface IESTrackInfosManager : IESMMObject
+@property (nonatomic) NSArray inputInfos;
+@property (nonatomic) NSArray activeTrackInfos;
+@property (nonatomic) NSArray deletedTrackInfos;
+@property (nonatomic) NSArray addedTrackInfos;
+@property (nonatomic) BOOL didChanged;
+@property (nonatomic) BOOL hasBackGroundAsset;
+- (id)addedTrackInfos;
+- (id)getEffectTrackInfosFrom:atTime:;
+- (id)activeTrackInfos;
+- (id)deletedTrackInfos;
+- (BOOL)didChanged;
+- (id)getAddTrackID:newTrackID:;
+- (id)getDeleteTrackID:newTrackID:;
+- (BOOL)hasBackGroundAsset;
+- (id)inputInfos;
+- (BOOL)isTimeRangeContainsTime:atTime:tolerance:;
+- (void)setActiveTrackInfos:;
+- (void)setAddedTrackInfos:;
+- (void)setDeletedTrackInfos:;
+- (void)setDidChanged:;
+- (void)setHasBackGroundAsset:;
+- (void)setInputInfos:;
+- (id)sourceTrackIds;
+- (void)updateCurrentTracks:;
+- (void)updateInputInfos:;
+- (void)updateTracksInfoForRequest:;
+- (id)init;
+- (void).cxx_destruct;
+@end

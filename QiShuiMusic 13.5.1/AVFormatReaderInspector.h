@@ -1,0 +1,35 @@
+@interface AVFormatReaderInspector : AVAssetInspector
+@property (nonatomic) ^{OpaqueFigFormatReader=} formatReader;
+- (long long)trackCount;
+- (long long)firstFragmentSequenceNumber;
+- (BOOL)isExportable;
+- (long long)fragmentCount;
+- (id)_valueAsCFTypeForProperty:;
+- (id)metadataForFormat:;
+- (id)commonMetadata;
+- (id)naturalSize;
+- (void)dealloc;
+- (id)_formatReader;
+- (BOOL)isComposable;
+- (BOOL)canContainFragments;
+- (BOOL)containsFragments;
+- (id)availableMetadataFormats;
+- (BOOL)_hasQTSaveRestriction;
+- (id)minimumTimeOffsetFromLive;
+- (unsigned long long)hash;
+- (BOOL)providesPreciseDurationAndTiming;
+- (float)preferredRate;
+- (id)lyrics;
+- (id)trackReferences;
+- (float)preferredVolume;
+- (int)naturalTimeScale;
+- (id)overallDurationHint;
+- (BOOL)isReadable;
+- (float)preferredSoundCheckVolumeNormalization;
+- (id)duration;
+- (BOOL)isEqual:;
+- (id)preferredTransform;
+- (id)alternateTrackGroups;
+- (id)initWithFormatReader:;
+- (void)_setFormatReader:;
+@end

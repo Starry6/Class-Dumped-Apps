@@ -1,0 +1,34 @@
+@interface BDREGraphFootPrint : NSObject
+@property (nonatomic) NSDictionary params;
+@property (nonatomic) q maxIndex;
+@property (nonatomic) BOOL needBreak;
+@property (nonatomic) NSMutableArray hitOutputNodes;
+@property (nonatomic) NSMutableDictionary footPrintMap;
+@property (nonatomic) NSMutableDictionary usedParameters;
+@property (nonatomic) BOOL isFirstTravelFinished;
+@property (nonatomic) BDREGraphNode trieLastNode;
+- (id)paramValueForName:isRegistered:;
+- (void)addHitOutputNode:;
+- (id)footPrintMap;
+- (id)hitOutputNodes;
+- (id)hitOutputResults;
+- (id)initWithParams:needBreak:;
+- (BOOL)isFirstTravelFinished;
+- (BOOL)needBreak;
+- (id)nodeFootPrintWithGraphNodeID:;
+- (void)setFootPrintMap:;
+- (void)setHitOutputNodes:;
+- (void)setIsFirstTravelFinished:;
+- (void)setMaxIndex:;
+- (void)setNeedBreak:;
+- (void)setTrieLastNode:;
+- (void)setUsedParameters:;
+- (id)trieLastNode;
+- (void)updateIndex:;
+- (id)usedParameters;
+- (id)usedParams;
+- (long long)maxIndex;
+- (void).cxx_destruct;
+- (id)params;
+- (void)setParams:;
+@end

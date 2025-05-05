@@ -1,0 +1,33 @@
+@interface MSVSegmentedEncoder : NSCoder
+@property (nonatomic) BOOL hasFinished;
+@property (nonatomic) MSVSegmentedCodingPackage package;
+@property (nonatomic) <MSVSegmentedCoding> rootObject;
+@property (nonatomic) NSMutableDictionary subcoders;
+@property (nonatomic) NSDictionary userInfo;
+- (void)encodeBytes:length:forKey:;
+- (void)setPackage:;
+- (void)encodeInt32:forKey:;
+- (void)encodeDouble:forKey:;
+- (void)encodeFloat:forKey:;
+- (void)encodeObject:forKey:;
+- (id)package;
+- (void)encodeBool:forKey:;
+- (void)encodeInt:forKey:;
+- (id)userInfo;
+- (void)encodeRootObject:;
+- (void)encodeInt64:forKey:;
+- (id)rootObject;
+- (void)setUserInfo:;
+- (void).cxx_destruct;
+- (void)setRootObject:;
+- (void)finishEncoding;
+- (id)initWithCodingPackage:;
+- (id)initWithCodingPackage:userInfo:;
+- (id)msv_userInfo;
+- (void)msv_setUserInfo:;
+- (id)_coderForKey:;
+- (BOOL)hasFinished;
+- (void)setHasFinished:;
+- (id)subcoders;
+- (void)setSubcoders:;
+@end

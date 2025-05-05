@@ -1,0 +1,32 @@
+@interface IESMetadataStorage : NSObject
+@property (nonatomic) IESMetadataStorageConfiguration configuration;
+@property (nonatomic) IESMetadataStorageInfo storageInfo;
+@property (nonatomic) IESMetadataMappedFile mappedFile;
+@property (nonatomic) IESMetadataIndexesMap indexesMap;
+@property (nonatomic) NSInteger version;
+- (void)deleteMetadata:;
+- (void)setNeedCheckDuplicatedMetadatas;
+- (void)setStorageInfo:;
+- (void)deleteAllMetadata;
+- (int)indexForMetadata:;
+- (id)indexesMap;
+- (id)mappedFile;
+- (id)metadataContentDataAtIndex:offset:;
+- (id)metadatasArrayWithTransformBlock:;
+- (id)metadatasArrayWithTransformBlock:compareBlock:;
+- (void)resetFileWithMetadatasArray:;
+- (void)saveStorageInfoToLocal;
+- (void)setIndexesMap:;
+- (void)setMappedFile:;
+- (void)setupStorageIfNeeded;
+- (id)storageInfo;
+- (id)storageInfoFromLocal;
+- (int)writeMetadata:error:;
+- (BOOL)writeMetadata:index:error:;
+- (BOOL)writeMetadataBinaryData:index:offset:error:;
+- (int)version;
+- (void)setConfiguration:;
+- (id)configuration;
+- (void).cxx_destruct;
++ (id)storageWithConfiguration:;
+@end

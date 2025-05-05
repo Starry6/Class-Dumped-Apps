@@ -1,0 +1,32 @@
+@interface IESLiveUserCardFansGroupButton : UIView
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UIImageView icon;
+@property (nonatomic) UILabel contentLabel;
+@property (nonatomic) IESLiveUserCardStore store;
+@property (nonatomic) Q buttonType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)configWithScene:;
+- (void)configWithStore:;
+- (void)configWithTag:isShowWhite:;
+- (void)configWithUserModel:;
+- (void)onActionFansGroup;
+- (void)refreshWithButtonType:;
+- (id)init;
+- (void)setStore:;
+- (void)setButtonType:;
+- (void)layoutSubviews;
+- (id)containerView;
+- (void)setContainerView:;
+- (id)icon;
+- (void)setup;
+- (void)setIcon:;
+- (void).cxx_destruct;
+- (id)store;
+- (unsigned long long)buttonType;
+- (BOOL)shouldShow;
+- (id)contentLabel;
+- (void)setContentLabel:;
+@end

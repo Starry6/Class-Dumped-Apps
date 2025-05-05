@@ -1,0 +1,30 @@
+@interface IESLiveSaaSADTrackerWrapper : NSObject
+@property (nonatomic) <IESLiveSaaSADTracker> tracker;
+@property (nonatomic) NSNumber adRoomID;
+@property (nonatomic) NSDictionary adExtraParams;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)adExtraParams;
+- (id)adRoomID;
+- (void)addEffectAdExtraToParamsIfNeeded:;
+- (BOOL)enableHybridAd;
+- (BOOL)fromHybridAd:;
+- (void)hybrid_ad_trackWithLabel:refer:extra:;
+- (BOOL)isADRoom;
+- (BOOL)isADWithRoom:;
+- (BOOL)isFromHybridAD;
+- (void)p_trackWithRoom:label:refer:extra:;
+- (void)sendTrackURLWithParams:;
+- (void)setAdExtraParams:;
+- (void)setAdRoomID:;
+- (void)trackWithLabel:extra:;
+- (void)trackWithLabel:refer:extra:;
+- (void)trackWithParams:;
+- (void)trackWithRoom:label:extra:;
+- (void)setTracker:;
+- (id)tracker;
+- (id)initWithTracker:;
+- (void).cxx_destruct;
+@end

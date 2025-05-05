@@ -1,0 +1,33 @@
+@interface CLPInstSchemaCLPCurareAppIntentTaskClassificationEnded : SISchemaInstrumentationMessage
+@property (nonatomic) I sampleCount;
+@property (nonatomic) BOOL hasSampleCount;
+@property (nonatomic) I classifiedSampleCount;
+@property (nonatomic) BOOL hasClassifiedSampleCount;
+@property (nonatomic) I positiveCount;
+@property (nonatomic) BOOL hasPositiveCount;
+@property (nonatomic) NSData jsonData;
+- (unsigned int)sampleCount;
+- (void)setSampleCount:;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (BOOL)hasSampleCount;
+- (void)setHasSampleCount:;
+- (void)deleteSampleCount;
+- (void)setClassifiedSampleCount:;
+- (BOOL)hasClassifiedSampleCount;
+- (void)setHasClassifiedSampleCount:;
+- (void)deleteClassifiedSampleCount;
+- (void)setPositiveCount:;
+- (BOOL)hasPositiveCount;
+- (void)setHasPositiveCount:;
+- (void)deletePositiveCount;
+- (unsigned int)classifiedSampleCount;
+- (unsigned int)positiveCount;
+@end

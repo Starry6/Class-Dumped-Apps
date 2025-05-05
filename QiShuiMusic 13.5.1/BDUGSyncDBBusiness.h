@@ -1,0 +1,34 @@
+@interface BDUGSyncDBBusiness : BDUGSyncDBBase
+- (BOOL)deleteDirtyData;
+- (id)readSyncCursors;
+- (void)upgradeFrom:to:;
+- (BOOL)deleteBusiness:;
+- (BOOL)insertBusiness:;
+- (BOOL)_addColumn:toTable:alterSql:;
+- (BOOL)_deleteHistorySynclogWithCountSql:selectSql:deleteSql:fileStorageSet:limit:;
+- (BOOL)_deleteReportLog:;
+- (id)_getDataWithSql:values:;
+- (id)_getSynclogsWithSql:values:;
+- (BOOL)_insertHistorySynclogWithSynclogs:insertCount:topicType:;
+- (BOOL)_updateHistorySynclogWithType:topicType:synclogs:;
+- (id)_updateSnapshotWithData:oldString:syncLog:;
+- (BOOL)_updateSyncCursorsWithRemoteTopicMap:localSyncCursors:did:uid:;
+- (id)_upgradeForVersion2:;
+- (id)_upgradeForVersion3:;
+- (id)_upgradeForVersion4:;
+- (void)createTable;
+- (BOOL)deleteReportLog:did:uid:;
+- (void)deleteSyncLog:;
+- (BOOL)insertOrReplaceBusinesses:;
+- (BOOL)insertSyncLogsWithPackets:did:uid:channel:;
+- (BOOL)insertUploadedSyncLog:forBusiness:forMessageID:;
+- (BOOL)insertUploadedSyncLogs:forBusiness:;
+- (BOOL)patchSyncLog;
+- (id)readHistorySynclogWithConfig:;
+- (id)readReportLog;
+- (id)readSyncLogWithBusinessID:did:uid:;
+- (id)readSynclogWithSyncIDs:;
+- (BOOL)updateHistorySynclogWithSynclogs:;
+- (BOOL)updateSyncCursorsWithPackets:did:uid:;
+- (id)initWithPath:;
+@end

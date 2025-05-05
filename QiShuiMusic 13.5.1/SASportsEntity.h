@@ -1,0 +1,36 @@
+@interface SASportsEntity : SADomainObject
+@property (nonatomic) NSURL image;
+@property (nonatomic) NSDictionary images;
+@property (nonatomic) NSURL largeImage;
+@property (nonatomic) NSDictionary largeImages;
+@property (nonatomic) SASportsLeague league;
+@property (nonatomic) NSURL listImage;
+@property (nonatomic) NSDictionary listImages;
+@property (nonatomic) NSString name;
+@property (nonatomic) SAUIAppPunchOut punchout;
+@property (nonatomic) NSArray themeImages;
+- (void)setName:;
+- (id)groupIdentifier;
+- (void)setImage:;
+- (id)images;
+- (id)encodedClassName;
+- (void)setImages:;
+- (id)name;
+- (id)image;
+- (void)setPunchout:;
+- (id)punchout;
+- (id)themeImages;
+- (void)setThemeImages:;
+- (id)largeImage;
+- (void)setLargeImage:;
+- (id)largeImages;
+- (void)setLargeImages:;
+- (id)league;
+- (void)setLeague:;
+- (id)listImage;
+- (void)setListImage:;
+- (id)listImages;
+- (void)setListImages:;
++ (id)entity;
++ (id)entityWithDictionary:context:;
+@end

@@ -1,0 +1,38 @@
+@interface IESLiveLinkedRoomListView : UIView
+@property (nonatomic) q listType;
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) NSMutableArray linksData;
+@property (nonatomic) @? itemSelectBlock;
+@property (nonatomic) @? alertTrackBlock;
+@property (nonatomic) @? itemShowBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)alertTrackBlock;
+- (id)itemSelectBlock;
+- (id)itemShowBlock;
+- (void)linkRoomSelectBlock:;
+- (void)linkRoomShowBlock:;
+- (id)linksData;
+- (id)listViewCellSize;
+- (void)setAlertTrackBlock:;
+- (void)setItemSelectBlock:;
+- (void)setItemShowBlock:;
+- (void)setLinksData:;
+- (void)showAlert:position:;
+- (void)trackForAlertAction:;
+- (void)updateWithLinkNodes:;
+- (id)collectionView:layout:insetForSectionAtIndex:;
+- (id)collectionView:layout:sizeForItemAtIndexPath:;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (void)setCollectionView:;
+- (void).cxx_destruct;
+- (long long)numberOfSectionsInCollectionView:;
+- (id)collectionView;
+- (long long)listType;
+- (void)setListType:;
+- (void)setupUI;
+- (id)initWithListType:;
+@end

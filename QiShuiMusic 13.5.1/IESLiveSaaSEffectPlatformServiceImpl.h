@@ -1,0 +1,31 @@
+@interface IESLiveSaaSEffectPlatformServiceImpl : NSObject
+@property (nonatomic) <IESLiveSaaSEffectPlatformConfig> config;
+@property (nonatomic) <IESLiveMonitor> monitor;
+@property (nonatomic) NSMutableDictionary memoryCache;
+@property (nonatomic) NSMutableDictionary pathToTag;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)downloadOnlineInfosAndResourcesWithModelNames:extra:completion:;
+- (void)_downloadEffect:progress:completion:index:;
+- (void)_downloadEffectListWithPanel:completion:index:;
+- (void)cacheTagsWithResponseModel:;
+- (void)downloadEffect:completion:;
+- (void)downloadEffect:progress:completion:;
+- (void)downloadEffectListWithEffectIDS:completion:;
+- (void)downloadEffectListWithPanel:completion:;
+- (void)downloadMyFavoriteEffectsWithPanelName:completionBlock:;
+- (void)fetchUsedVideoStickersWithCompleteBlock:;
+- (id)getTagsFromFilePaths:;
+- (id)pathToTag;
+- (void)setPathToTag:;
+- (void)updatePath:withTag:;
+- (void)setConfig:;
+- (id)memoryCache;
+- (void)setMonitor:;
+- (void).cxx_destruct;
+- (id)monitor;
+- (id)config;
+- (void)setMemoryCache:;
+@end

@@ -1,0 +1,37 @@
+@interface WFContextualActionIcon : NSObject
+@property (nonatomic) WFIcon wfIcon;
+@property (nonatomic) NSString imageName;
+@property (nonatomic) NSString renderedSymbolSystemName;
+@property (nonatomic) WFColor renderedSymbolBackgroundColor;
+@property (nonatomic) WFImage renderedImage;
+@property (nonatomic) NSString systemName;
+@property (nonatomic) NSData imageData;
+@property (nonatomic) double imageScale;
+@property (nonatomic) NSString applicationBundleIdentifier;
+- (id)applicationBundleIdentifier;
+- (id)initWithImageData:scale:;
+- (double)imageScale;
+- (id)imageName;
+- (id)imageData;
+- (id)renderedImage;
+- (id)initWithSystemName:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)renderedSymbolSystemName;
+- (id)systemName;
+- (void)encodeWithCoder:;
+- (id)initWithImageName:;
+- (id)initWithRenderedSymbolOfSystemName:backgroundColor:;
+- (void).cxx_destruct;
+- (id)initWithApplicationBundleIdentifier:;
+- (id)renderedSymbolBackgroundColor;
+- (BOOL)isEqual:;
+- (id)wfIcon;
++ (id)imageNamed:;
++ (BOOL)supportsSecureCoding;
++ (id)iconWithApplicationBundleIdentifier:;
++ (id)iconWithImageData:scale:;
++ (id)iconWithImageName:;
++ (id)iconWithSystemName:;
++ (id)iconWithRenderedSymbolOfSystemName:backgroundColor:;
+@end

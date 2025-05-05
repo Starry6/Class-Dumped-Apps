@@ -1,0 +1,36 @@
+@interface DODMLASRSchemaDODMLASRChoiceInfo : SISchemaInstrumentationMessage
+@property (nonatomic) NSArray tokens;
+@property (nonatomic) float graphCost;
+@property (nonatomic) BOOL hasGraphCost;
+@property (nonatomic) float acousticCost;
+@property (nonatomic) BOOL hasAcousticCost;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void)setTokens:;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)tokens;
+- (id)tokensAtIndex:;
+- (void)clearTokens;
+- (void)deleteTokens;
+- (void)addTokens:;
+- (unsigned long long)tokensCount;
+- (void)setGraphCost:;
+- (BOOL)hasGraphCost;
+- (void)setHasGraphCost:;
+- (void)deleteGraphCost;
+- (void)setAcousticCost:;
+- (BOOL)hasAcousticCost;
+- (void)setHasAcousticCost:;
+- (void)deleteAcousticCost;
+- (float)graphCost;
+- (float)acousticCost;
+@end

@@ -1,0 +1,33 @@
+@interface CJPayRetainVoucherV3View : UIView
+@property (nonatomic) UIImageView backgroundImgView;
+@property (nonatomic) UIView leftView;
+@property (nonatomic) UILabel leftTagLabel;
+@property (nonatomic) UILabel leftMsgLabel;
+@property (nonatomic) UILabel rightMsgLabel;
+@property (nonatomic) UIImageView seperateView;
+@property (nonatomic) UIView topRightBackgroudView;
+@property (nonatomic) UILabel topRightLabel;
+- (void)p_setupWithTag:;
+- (id)backgroundImgView;
+- (id)leftMsgLabel;
+- (id)leftTagLabel;
+- (id)p_getAttributeStrWithAmount:;
+- (void)p_setupUI;
+- (void)p_setupWithoutTag:;
+- (id)rightMsgLabel;
+- (id)seperateView;
+- (void)setBackgroundImgView:;
+- (void)setLeftMsgLabel:;
+- (void)setLeftTagLabel:;
+- (void)setRightMsgLabel:;
+- (void)setSeperateView:;
+- (void)setTopRightBackgroudView:;
+- (void)setTopRightLabel:;
+- (id)topRightBackgroudView;
+- (id)topRightLabel;
+- (void)updateWithRetainMsgModel:;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (id)leftView;
+- (void)setLeftView:;
+@end

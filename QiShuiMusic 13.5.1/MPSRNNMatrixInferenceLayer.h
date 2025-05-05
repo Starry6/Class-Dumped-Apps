@@ -1,0 +1,32 @@
+@interface MPSRNNMatrixInferenceLayer : MPSKernel
+@property (nonatomic) BOOL propagateFullRecurrentRows;
+@property (nonatomic) Q inputFeatureChannels;
+@property (nonatomic) Q outputFeatureChannels;
+@property (nonatomic) Q numberOfLayers;
+@property (nonatomic) BOOL recurrentOutputIsTemporary;
+@property (nonatomic) BOOL storeAllIntermediateStates;
+@property (nonatomic) Q bidirectionalCombineMode;
+- (id)initWithCoder:device:;
+- (id)copyWithZone:device:;
+- (void)dealloc;
+- (void)encodeWithCoder:;
+- (unsigned long long)outputFeatureChannels;
+- (unsigned long long)inputFeatureChannels;
+- (unsigned long long)numberOfLayers;
+- (void)setPropagateFullRecurrentRows:;
+- (void)setRecurrentOutputIsTemporary:;
+- (id)initWithDevice:rnnDescriptor:;
+- (id)initWithDevice:rnnDescriptors:;
+- (BOOL)recurrentOutputIsTemporary;
+- (BOOL)storeAllIntermediateStates;
+- (void)setStoreAllIntermediateStates:;
+- (unsigned long long)bidirectionalCombineMode;
+- (void)setBidirectionalCombineMode:;
+- (void)encodeSequenceToCommandBuffer:sourceMatrices:destinationMatrices:recurrentInputState:recurrentOutputStates:;
+- (void)encodeSequenceToCommandBuffer:sourceMatrices:sourceOffsets:destinationMatrices:destinationOffsets:recurrentInputState:recurrentOutputStates:;
+- (void)encodeBidirectionalSequenceToCommandBuffer:sourceSequence:destinationForwardMatrices:destinationBackwardMatrices:;
+- (id)recurrentStateForBatchSize:;
+- (id)temporaryRecurrentStateForCommandBuffer:batchSize:;
+- (BOOL)propagateFullRecurrentRows;
++ (id)libraryInfo:;
+@end

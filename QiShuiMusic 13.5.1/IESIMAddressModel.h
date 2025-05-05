@@ -1,0 +1,37 @@
+@interface IESIMAddressModel : IESIMBaseApiModel
+@property (nonatomic) NSString simpleAddr;
+@property (nonatomic) NSString province;
+@property (nonatomic) NSString city;
+@property (nonatomic) NSString address;
+@property (nonatomic) NSString district;
+@property (nonatomic) NSString cityCode;
+@property (nonatomic) NSString country;
+@property (nonatomic) NSString countryCode;
+@property (nonatomic) NSString districtCode;
+@property (nonatomic) NSString cityCodeV2;
+@property (nonatomic) NSString addressWithExtraInfo;
+- (id)addressWithExtraInfo;
+- (id)cityCodeV2;
+- (id)districtCode;
+- (id)province;
+- (void)setAddressWithExtraInfo:;
+- (void)setCityCodeV2:;
+- (void)setDistrictCode:;
+- (void)setProvince:;
+- (void)setSimpleAddr:;
+- (id)simpleAddr;
+- (id)city;
+- (void)setCountryCode:;
+- (id)country;
+- (id)countryCode;
+- (void)setAddress:;
+- (void)setCountry:;
+- (void).cxx_destruct;
+- (id)address;
+- (void)setCity:;
+- (id)cityCode;
+- (void)setCityCode:;
+- (void)setDistrict:;
+- (id)district;
++ (id)JSONKeyPathsByPropertyKey;
+@end

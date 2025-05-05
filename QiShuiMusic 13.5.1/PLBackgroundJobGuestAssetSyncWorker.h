@@ -1,0 +1,34 @@
+@interface PLBackgroundJobGuestAssetSyncWorker : PLBackgroundJobWorker
+@property (nonatomic) NSPersistentHistoryToken cancelledWorkItem;
+- (BOOL)isInterruptible;
+- (id)_firstPersistenHistoryTokenInLibrary:;
+- (BOOL)_shouldCancelCurrentWorkItem:;
+- (void)_updateLastGuestAssetSyncTargetLibraryURLInSourceLibrary:targetLibrary:;
+- (void)_processNextAssetInChangedObjectIDs:fromSourceLibrary:toDestLibrary:group:workItem:deletedUuids:errorHandler:;
+- (void)stopWorkingOnItem:;
+- (id)_lastGuestAssetSyncTargetLibraryURLFromSourceLibrary:targetLibrary:;
+- (BOOL)_systemPhotoLibraryChangedSinceLastRunWithSourceLibrary:targetLibrary:;
+- (void)_markAsWasGuestAssetOnAssetWithSyndicationIdentifier:inLibrary:;
+- (id)_lastGuestAssetSyncTokenFromLibrary:;
+- (id)_transactionIteratorSinceTokenIfValid:sourceLibrary:error:;
+- (void)_saveGuestAssetSyncToken:toLibrary:;
+- (id)_transactionIteratorSinceLastToken:sourceLibrary:error:;
+- (id)workItemsNeedingProcessingInLibrary:;
+- (BOOL)_batchResetGuestSavedAssetTypeInManagedObjectContext:error:;
+- (void)performWorkOnItem:inLibrary:completion:;
+- (void)setCancelledWorkItem:;
+- (void)_syncAsset:toLibrary:completion:;
+- (BOOL)_checkSyndicationPreferencesEnabledAndCleanupGuestAssetsIfNeededWithPhotoLibrary:;
+- (void).cxx_destruct;
+- (void)_resetCancelledWorkItem;
+- (id)cancelledWorkItem;
+- (id)_sourcePhotoLibraryWithName:;
+- (BOOL)_resetSyndicationProcessingInSourceLibrary:error:;
+- (id)_anyPersistentHistoryTokenWithLibrary:;
+- (void)_deleteAssetWithUuid:syndicationIdentifier:fromLibrary:;
+- (BOOL)_batchResetSyndicationProcessingInManagedObjectContext:error:;
+- (void)_deleteAllGuestAssetsInPhotoLibrary:reason:;
++ (BOOL)supportsWellKnownPhotoLibraryIdentifier:;
++ (BOOL)_isTokenInvalidError:;
++ (BOOL)usesMultipleLibrariesConcurrently;
+@end

@@ -1,0 +1,34 @@
+@interface COSEKey : NSObject
+@property (nonatomic) q type;
+@property (nonatomic) q algorithm;
+@property (nonatomic) NSData identifier;
+@property (nonatomic) NSArray operations;
+@property (nonatomic) NSData baseInitializationVector;
+@property (nonatomic) NSNumber ecCurveIdentifier;
+@property (nonatomic) NSData ecCurveX;
+@property (nonatomic) NSData ecCurveY;
+@property (nonatomic) NSData ecCurveD;
+@property (nonatomic) NSNumber okpCurveIdentifier;
+@property (nonatomic) NSData okpCurveX;
+@property (nonatomic) NSData okpCurveD;
+@property (nonatomic) NSData symmetricKey;
+- (id)operations;
+- (long long)algorithm;
+- (id)identifier;
+- (long long)type;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (id)symmetricKey;
+- (id)initEC2WithAlgorithm:curveIdentifier:x:y:d:keyOperations:keyIdentifier:;
+- (id)initWithCBOR:;
+- (id)baseInitializationVector;
+- (id)ecCurveIdentifier;
+- (id)ecCurveX;
+- (id)ecCurveY;
+- (id)ecCurveD;
+- (id)okpCurveIdentifier;
+- (id)okpCurveX;
+- (id)okpCurveD;
+- (id)initOKPWithAlgorithm:curveIdentifier:x:d:keyOperations:keyIdentifier:;
+- (id)initEC2WithAlgorithm:curveIdentifier:x:signBit:d:keyOperations:keyIdentifier:;
+@end

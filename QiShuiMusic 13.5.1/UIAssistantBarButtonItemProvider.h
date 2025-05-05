@@ -1,0 +1,31 @@
+@interface UIAssistantBarButtonItemProvider : NSObject
++ (void)dismissFloatingKeyboardFromPencilKitIfNeeded;
++ (void)setAssistantBarCompact:;
++ (BOOL)_isScribbleButtonsVisible;
++ (id)imageSymbolConfigurationForAssistantBarWithPointSize:;
++ (id)compactSystemAssistantItem;
++ (BOOL)_isMinimizeAssistantBarButtonVisible;
++ (id)defaultSystemTrailingBarButtonGroupsForItem:;
++ (id)defaultSystemLeadingBarButtonGroupsForItem:;
++ (id)languageIndicatorMenu:;
++ (BOOL)_isShowKeyboardButtonVisible;
++ (id)dictationActionForInputMode:inCurrentInputMode:;
++ (void)setScribbleLanguageIdentifier:;
++ (BOOL)isKeyboardGroupVisible;
++ (id)barButtonItemForAssistantItemStyle:target:forcePlainButton:;
++ (id)languageIndicatorItem:;
++ (id)systemDefaultAssistantItem;
++ (void)updateFloatingAssistantBarIfNeeded;
++ (BOOL)_isDictationButtonVisible;
++ (id)inputWindowController;
++ (id)actionForInputMode:;
++ (id)languageIndicatorImage;
++ (BOOL)_isEmojiButtonVisible;
++ (BOOL)_isInputModeVisible:;
++ (id)barButtonItemForAssistantItemStyle:target:;
++ (id)unmodifiableSystemAssistantItem:;
++ (id)dictationMenu;
++ (BOOL)_isDismissButtonVisible;
++ (id)configuredSymbolImageWithName:size:;
++ (BOOL)_isKeyboardItemEnabled;
+@end

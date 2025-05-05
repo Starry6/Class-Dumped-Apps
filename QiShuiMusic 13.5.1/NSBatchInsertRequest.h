@@ -1,0 +1,36 @@
+@interface NSBatchInsertRequest : NSPersistentStoreRequest
+@property (nonatomic) NSString entityName;
+@property (nonatomic) NSEntityDescription entity;
+@property (nonatomic) NSArray objectsToInsert;
+@property (nonatomic) @? dictionaryHandler;
+@property (nonatomic) @? managedObjectHandler;
+@property (nonatomic) Q resultType;
+- (void)_resolveEntityWithContext:;
+- (void)_setSecureOperation:;
+- (unsigned long long)requestType;
+- (id)entity;
+- (id)encodeForXPC;
+- (id)entityName;
+- (id)init;
+- (void)dealloc;
+- (id)managedObjectHandler;
+- (void)setManagedObjectHandler:;
+- (void)setResultType:;
+- (unsigned long long)resultType;
+- (BOOL)_secureOperation;
+- (id)description;
+- (id)objectsToInsert;
+- (id)initWithEntityName:objects:;
+- (id)initWithEntity:objects:;
+- (id)initWithEntity:dictionaryHandler:;
+- (id)initWithEntity:managedObjectHandler:;
+- (id)initWithEntityName:dictionaryHandler:;
+- (id)initWithEntityName:managedObjectHandler:;
+- (id)dictionaryHandler;
+- (void)setDictionaryHandler:;
+- (void)setObjectsToInsert:;
++ (id)decodeFromXPCArchive:withContext:withPolicy:;
++ (id)batchInsertRequestWithEntityName:objects:;
++ (id)batchInsertRequestWithEntityName:dictionaryHandler:;
++ (id)batchInsertRequestWithEntityName:managedObjectHandler:;
+@end

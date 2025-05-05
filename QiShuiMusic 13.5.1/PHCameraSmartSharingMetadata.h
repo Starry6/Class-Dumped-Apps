@@ -1,0 +1,31 @@
+@interface PHCameraSmartSharingMetadata : NSObject
+@property (nonatomic) NSDate creationDate;
+@property (nonatomic) NSString libraryScopeLocalIdentifier;
+@property (nonatomic) BOOL hasActiveLibraryScope;
+@property (nonatomic) NSArray identities;
+@property (nonatomic) NSArray filterContactIDs;
+@property (nonatomic) NSArray homeLocations;
+@property (nonatomic) NSArray frequentLocations;
+@property (nonatomic) BOOL locationShiftingRequired;
+- (id)init;
+- (id)identities;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)homeLocations;
+- (id)creationDate;
+- (id)initWithLibraryScopeIdentifier:identities:homeLocations:frequentLocations:locationShiftingRequired:;
+- (id)initWithLibraryScopeIdentifier:filterContactIDs:homeLocations:isOnTrip:;
+- (BOOL)hasActiveLibraryScope;
+- (id)libraryScopeLocalIdentifier;
+- (id)filterContactIDs;
+- (id)frequentLocations;
+- (BOOL)locationShiftingRequired;
++ (BOOL)supportsSecureCoding;
++ (long long)version;
++ (id)_metadataFileURLForPhotoLibrary:;
++ (id)retrieveMetadataForPhotoLibrary:;
++ (id)_readMetadataFromFileURL:;
++ (BOOL)storeMetadata:forPhotoLibrary:error:;
+@end

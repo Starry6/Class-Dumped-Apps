@@ -1,0 +1,2 @@
+@interface LinkmicReplyApiRoot : GPBRootObject
+@end

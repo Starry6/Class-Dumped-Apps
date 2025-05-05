@@ -1,0 +1,30 @@
+@interface IESLiveGiftDataManager : NSObject
+@property (nonatomic) <IESLiveGiftDetailAPI> giftDetailAPI;
+@property (nonatomic) NSObject fetchTaskToken;
+@property (nonatomic) BOOL isFetching;
+@property (nonatomic) NSMutableArray fetchTasks;
+@property (nonatomic) NSMutableDictionary fetchedGiftDic;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)checkGiftResourceReadyById:;
+- (id)checkSupportGift:;
+- (void)fetchGiftDataWithIDList:liveRoomModel:scene:completion:;
+- (id)fetchTaskToken;
+- (id)fetchTasks;
+- (id)fetchedGiftDic;
+- (id)getGiftById:;
+- (id)giftDetailAPI;
+- (id)giftWithId:;
+- (id)giftWithId:needCheckEffectReady:;
+- (id)initWithDIContext:;
+- (void)scheduleFetchGiftDataTask;
+- (void)setFetchTaskToken:;
+- (void)setFetchTasks:;
+- (void)setFetchedGiftDic:;
+- (void)setGiftDetailAPI:;
+- (void).cxx_destruct;
+- (BOOL)isFetching;
+- (void)setIsFetching:;
+@end

@@ -1,0 +1,34 @@
+@interface TUProxyAutocompleteResult : NSObject
+@property (nonatomic) CNAutocompleteResult autocompleteResult;
+@property (nonatomic) NSString displayName;
+@property (nonatomic) NSString callerId;
+@property (nonatomic) CNContact backingContact;
+@property (nonatomic) NSString backingContactId;
+@property (nonatomic) NSString backingContactIdentifier;
+@property (nonatomic) NSString destinationId;
+@property (nonatomic) NSString isoCountryCode;
+@property (nonatomic) NSArray handles;
+@property (nonatomic) q mostRecentCallType;
+@property (nonatomic) BOOL mostRecentCallWasMissed;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSArray idsCanonicalDestinations;
+- (id)init;
+- (id)isoCountryCode;
+- (id)displayName;
+- (void).cxx_destruct;
+- (id)handles;
+- (id)autocompleteResult;
+- (id)callerId;
+- (id)backingContact;
+- (id)backingContactId;
+- (id)backingContactIdentifier;
+- (id)destinationId;
+- (long long)mostRecentCallType;
+- (BOOL)mostRecentCallWasMissed;
+- (id)idsCanonicalDestinations;
+- (id)initWithAutocompleteResult:;
+- (void)setAutocompleteResult:;
+@end

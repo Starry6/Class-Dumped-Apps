@@ -1,0 +1,34 @@
+@interface VNRectangleObservation : VNDetectedObjectObservation
+@property (nonatomic) {CGPoint=dd} topLeft;
+@property (nonatomic) {CGPoint=dd} topRight;
+@property (nonatomic) {CGPoint=dd} bottomLeft;
+@property (nonatomic) {CGPoint=dd} bottomRight;
+- (id)summaryDescription;
+- (id)vkQuad;
+- (id)vk_quadConvertedToView:withContentsRect:;
+- (id)debugQuickLookObject;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)topLeft;
+- (id)initWithTopLeft:bottomLeft:bottomRight:topRight:;
+- (void)encodeWithCoder:;
+- (id)topRight;
+- (id)bottomLeft;
+- (id)bottomRight;
+- (BOOL)isEqual:;
+- (void)setBoundingBox:;
+- (id)vn_cloneObject;
+- (id)initWithOriginatingRequestSpecifier:topLeft:bottomLeft:bottomRight:topRight:;
+- (id)initWithOriginatingRequestSpecifier:boundingBox:;
+- (void)setBoundingBoxFromQuadrilateralPointsAtTopLeft:topRight:bottomRight:bottomLeft:;
+- (id)initWithRequestRevision:topLeft:bottomLeft:bottomRight:topRight:;
+- (id)initWithOriginatingRequestSpecifier:topLeft:bottomLeft:bottomRight:topRight:boundingBox:;
+- (id)initWithBoundingBox:;
+- (id)initWithRequestRevision:boundingBox:;
+- (void)getTopLeftPoint:topRightPoint:bottomRightPoint:bottomLeftPoint:inTopLeftOrigin:orientation:;
++ (BOOL)supportsSecureCoding;
++ (id)defaultOriginatingRequestClassNameForRequestRevision:;
++ (id)observationWithRequestRevision:boundingBox:;
++ (BOOL)boundingBoxIsCalculatedProperty;
++ (id)rectangleObservationWithRequestRevision:topLeft:bottomLeft:bottomRight:topRight:;
+@end

@@ -1,0 +1,38 @@
+@interface GEOPDPlaceSummaryDynamicContextServerOverride : PBCodable
+@property (nonatomic) NSArray mapItemIdentifiers;
+@property (nonatomic) NSMutableArray mapsIds;
+@property (nonatomic) NSMutableArray serverDynamicContexts;
+- (void)readAll:;
+- (BOOL)hasGreenTeaWithValue:;
+- (id)init;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)mapItemIdentifiers;
+- (id)mapsIds;
+- (void)setMapsIds:;
+- (void)clearMapsIds;
+- (void)addMapsId:;
+- (unsigned long long)mapsIdsCount;
+- (id)mapsIdAtIndex:;
+- (id)serverDynamicContexts;
+- (void)setServerDynamicContexts:;
+- (void)clearServerDynamicContexts;
+- (void)addServerDynamicContext:;
+- (unsigned long long)serverDynamicContextsCount;
+- (id)serverDynamicContextAtIndex:;
++ (BOOL)isValid:;
++ (Class)mapsIdType;
++ (Class)serverDynamicContextType;
+@end

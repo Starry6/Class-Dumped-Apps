@@ -1,0 +1,29 @@
+@interface AAFollowUpController : NSObject
+- (id)_followUpItemForStartUsing:;
+- (void)dismissFollowUpsForAccount:identifiers:completion:;
+- (BOOL)_shouldPostRenewFollowup:;
+- (void)dismissFollowUpWithIdentifier:forAccount:completion:;
+- (id)followUpItemForIdentifier:userInfo:;
+- (id)_followUpItemForCustodianRemoved:;
+- (void)dismissFollowUpWithIdentifier:completion:;
+- (id)creationDateOfOldestFollowUpWithIdentifiers:;
+- (void)_dismissFollowUpWithIdentifiers:completion:;
+- (BOOL)isRenewCredentialsCFUPosted;
+- (id)_followUpItemForBeneficiaryIneligible:;
+- (void)pendingFollowUpWithIdentifier:completion:;
+- (void)postFollowUpWithIdentifier:forAccount:userInfo:completion:;
+- (void)pendingFollowUpsForAccount:completion:;
+- (void)postFollowUpWithIdentifier:userInfo:completion:;
+- (id)_followUpItemForRenewCredentials:;
+- (id)_followUpItemForCustodianInvitationReminder:;
+- (id)_followUpItemForBeneficiaryRemoved:;
+- (double)ageOfOldestCustodianCFU;
+- (id)_followUpController;
+- (id)_followupActionUserInfo:;
+- (BOOL)dismissFollowUpWithIdentifier:error:;
+- (id)_followUpItemForVerifyTerms:;
+- (id)followUpItemForIdentifier:;
+- (BOOL)postFollowUpWithIdentifier:userInfo:error:;
+- (id)_followUpItemForCustodianEmbargo:;
+- (id)_recoveryNotificationWithInfo:type:;
+@end

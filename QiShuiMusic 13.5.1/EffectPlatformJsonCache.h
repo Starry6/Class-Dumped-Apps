@@ -1,0 +1,36 @@
+@interface EffectPlatformJsonCache : NSObject
+@property (nonatomic) BOOL enableMemoryCache;
+@property (nonatomic) NSMutableDictionary objectDic;
+@property (nonatomic) NSRecursiveLock lock;
+@property (nonatomic) NSString accessKey;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setJson:forKey:;
+- (void)clearJsonAndObjectForKey:;
+- (void)clearMemory;
+- (id)effectWithKey:;
+- (BOOL)enableMemoryCache;
+- (id)getJsonVersionWithKey:;
+- (id)modelDictWithKey:;
+- (id)newResponseWithKey:;
+- (id)objectDic;
+- (void)setEnableMemoryCache:;
+- (void)setJson:effect:forKey:;
+- (void)setJson:newResponse:forKey:;
+- (void)setJson:newResponse:forKey:completion:;
+- (void)setJson:object:forKey:;
+- (void)setJson:object:forKey:completion:;
+- (void)setJsonVersion:withKey:;
+- (void)setObjectDic:;
+- (void)updateFileLastAccessTimeWithPath:;
+- (id)lock;
+- (void)clear;
+- (void).cxx_destruct;
+- (void)setLock:;
+- (id)accessKey;
+- (void)setAccessKey:;
+- (id)initWithAccessKey:;
+- (id)objectWithKey:;
+@end

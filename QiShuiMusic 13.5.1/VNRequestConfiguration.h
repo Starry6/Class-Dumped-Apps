@@ -1,0 +1,35 @@
+@interface VNRequestConfiguration : NSObject
+@property (nonatomic) # requestClass;
+@property (nonatomic) Q resolvedRevision;
+@property (nonatomic) Q detectionLevel;
+@property (nonatomic) VNProcessingDevice processingDevice;
+@property (nonatomic) VNProcessingDevice resolvedProcessingDevice;
+@property (nonatomic) Q metalContextPriority;
+@property (nonatomic) BOOL preferBackgroundProcessing;
+@property (nonatomic) Q modelFileBackingStore;
+@property (nonatomic) Q maximumProcessingDimensionOnTheLongSide;
+@property (nonatomic) Q memoryPoolId;
+- (void)setResolvedRevision:;
+- (unsigned long long)detectionLevel;
+- (void).cxx_destruct;
+- (id)description;
+- (id)initWithRequestClass:;
+- (id)copyWithZone:;
+- (void)setDetectionLevel:;
+- (BOOL)preferBackgroundProcessing;
+- (void)setPreferBackgroundProcessing:;
+- (unsigned long long)modelFileBackingStore;
+- (void)setModelFileBackingStore:;
+- (unsigned long long)metalContextPriority;
+- (void)setMetalContextPriority:;
+- (id)processingDevice;
+- (void)setProcessingDevice:;
+- (unsigned long long)maximumProcessingDimensionOnTheLongSide;
+- (void)setMaximumProcessingDimensionOnTheLongSide:;
+- (unsigned long long)resolvedRevision;
+- (id)_allPropertyNames;
+- (id)resolvedProcessingDevice;
+- (Class)requestClass;
+- (unsigned long long)memoryPoolId;
+- (void)setMemoryPoolId:;
+@end

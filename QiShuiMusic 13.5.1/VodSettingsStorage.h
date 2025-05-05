@@ -1,0 +1,36 @@
+@interface VodSettingsStorage : NSObject
+@property (nonatomic) NSMutableDictionary settingsInfo;
+@property (nonatomic) q loadState;
+@property (nonatomic) q type;
+@property (nonatomic) NSString name;
+@property (nonatomic) NSLock lock;
+@property (nonatomic) NSUserDefaults localCache;
+- (id)getDict:dValue:;
+- (id)_getObjetc:dValue:;
+- (void)_putObject:value:;
+- (id)_storeInfokey;
+- (id)getArray:dValue:;
+- (id)getNumber:dValue:;
+- (id)getString:dValue:;
+- (void)removeAllCache;
+- (void)setDict:value:;
+- (void)setNumber:value:;
+- (void)setSettingsInfo:;
+- (void)setString:value:;
+- (id)settingsInfo;
+- (void)storeInfo:incrementally:;
+- (void)tryToLoadLocal;
+- (void)setLocalCache:;
+- (id)localCache;
+- (void)setName:;
+- (long long)loadState;
+- (void)setType:;
+- (id)initWithName:type:;
+- (id)lock;
+- (long long)type;
+- (void).cxx_destruct;
+- (id)name;
+- (void)setLock:;
+- (id)getInfo;
+- (void)setLoadState:;
+@end

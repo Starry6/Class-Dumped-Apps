@@ -1,0 +1,32 @@
+@interface PIACacheService : NSObject
+@property (nonatomic) NSRecursiveLock lock;
+@property (nonatomic) double lastTrimTime;
+@property (nonatomic) q minTrimTime;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setMinTrimTime:;
+- (void)asyncTrimExpiresCache;
+- (id)findCacheWithURL:error:;
+- (id)findCacheWithURL:ignoreExtra:error:;
+- (void)initDataBase;
+- (id)initService;
+- (void)injectCacheBridgeWithContext:instance:;
+- (double)lastTrimTime;
+- (long long)minTrimTime;
+- (id)p_addPIAKeyWithURL:;
+- (id)p_findCacheWithURLKey:error:;
+- (id)p_findCacheWithURLKeyNoTransaction:error:;
+- (BOOL)p_removeCacheWithURLKey:error:;
+- (BOOL)p_removeCacheWithURLKeyNoTransaction:error:;
+- (BOOL)removeCacheWithURL:error:;
+- (BOOL)removeExtraCacheWithURL:error:;
+- (BOOL)removeExtraCacheWithURL:forFunction:error:;
+- (BOOL)saveCacheWithModel:error:;
+- (void)setLastTrimTime:;
+- (id)lock;
+- (void).cxx_destruct;
+- (void)setLock:;
++ (void)executePrepareServiceTask;
+@end

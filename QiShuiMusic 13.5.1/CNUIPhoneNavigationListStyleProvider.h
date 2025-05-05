@@ -1,0 +1,2 @@
+@interface CNUIPhoneNavigationListStyleProvider : CNUINavigationListStyleProviderImpl
+@end

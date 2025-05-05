@@ -1,0 +1,30 @@
+@interface FLOWSchemaFLOWPlatformContext : SISchemaInstrumentationMessage
+@property (nonatomic) FLOWSchemaFLOWEntityContext entityContext;
+@property (nonatomic) BOOL hasEntityContext;
+@property (nonatomic) FLOWSchemaFLOWEntityContext entityContextValue;
+@property (nonatomic) BOOL hasEntityContextValue;
+@property (nonatomic) NSData jsonData;
+@property (nonatomic) Q whichPlatformcontext;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)setEntityContext:;
+- (id)entityContext;
+- (void)deleteEntityContext;
+- (BOOL)hasEntityContextValue;
+- (void)deleteEntityContextValue;
+- (unsigned long long)whichPlatformcontext;
+- (id)entityContextValue;
+- (void)setEntityContextValue:;
+- (BOOL)hasEntityContext;
+- (void)setHasEntityContext:;
+- (void)setHasEntityContextValue:;
+@end

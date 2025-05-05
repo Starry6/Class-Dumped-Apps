@@ -1,0 +1,37 @@
+@interface QLTextItemViewController : QLItemViewController
+@property (nonatomic) UISimpleTextPrintFormatter printFormatter;
+@property (nonatomic) UIPrintPageRenderer pageRenderer;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)printer;
+- (long long)preferredWhitePointAdaptivityStyle;
+- (id)scrollView;
+- (id)printFormatter;
+- (void).cxx_destruct;
+- (BOOL)textView:shouldInteractWithURL:inRange:;
+- (BOOL)canSwipeToDismiss;
+- (id)pageRenderer;
+- (void)loadPreviewControllerWithContents:context:completionHandler:;
+- (BOOL)canToggleFullScreen;
+- (BOOL)canClickToToggleFullscreen;
+- (BOOL)canPinchToDismiss;
+- (void)previewDidAppear:;
+- (void)buttonPressedWithIdentifier:completionHandler:;
+- (void)setAppearance:animated:;
+- (id)toolbarButtonsForTraitCollection:;
+- (BOOL)shouldRecognizeGestureRecognizer:;
+- (BOOL)automaticallyUpdateScrollViewContentOffset;
+- (BOOL)automaticallyUpdateScrollViewContentInset;
+- (BOOL)automaticallyUpdateScrollViewIndicatorInset;
+- (id)registeredKeyCommands;
+- (void)numberOfPagesWithSize:completionHandler:;
+- (void)prepareForDrawingPages:ofSize:;
+- (void)pdfDataForPageAtIndex:withCompletionHandler:;
+- (void)provideCurrentPageAndVisibleRectWithCompletionHandler:;
+- (void)_updateConstraintConstants:;
+- (BOOL)_isContentPotentiallySuspicious:context:;
+- (void)_setupTextViewColorsWithDocumentAttributes:;
+- (BOOL)_documentAttributesContainTextColors:;
+@end

@@ -1,0 +1,31 @@
+@interface BDUPCClipBoardRecallAlertView : UIView
+@property (nonatomic) BDUPCClipBoardRecallAlertConfig config;
+@property (nonatomic) q scence;
+@property (nonatomic) UIView backgroundView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) BDUPCTextView contentTextView;
+@property (nonatomic) UIButton confirmButton;
+@property (nonatomic) UIButton cancelButton;
+- (id)contentTextView;
+- (id)initWithConfig:inScence:;
+- (long long)scence;
+- (void)setContentTextView:;
+- (void)setScence:;
+- (id)backgroundView;
+- (void)setTitleLabel:;
+- (void)setConfig:;
+- (void)close;
+- (void)show;
+- (void)layout;
+- (void)setup;
+- (void).cxx_destruct;
+- (void)setBackgroundView:;
+- (void)setCancelButton:;
+- (id)config;
+- (id)titleLabel;
+- (id)cancelButton;
+- (id)confirmButton;
+- (void)setConfirmButton:;
+- (void)cancelButtonTapped:;
+- (void)confirmButtonTapped:;
+@end

@@ -1,0 +1,30 @@
+@interface DAAccountChangeInfo : NSObject
+@property (nonatomic) Q changeType;
+@property (nonatomic) NSString accountIdentifier;
+@property (nonatomic) NSString accountTypeIdentifier;
+@property (nonatomic) NSDictionary oldAccountProperties;
+@property (nonatomic) NSString username;
+@property (nonatomic) NSString password;
+@property (nonatomic) NSString oldUsername;
+@property (nonatomic) NSString oldPassword;
+@property (nonatomic) NSSet modifiedDataClasses;
+@property (nonatomic) NSString clientName;
+- (unsigned long long)changeType;
+- (id)oldAccountProperties;
+- (id)username;
+- (id)password;
+- (id)clientName;
+- (id)accountIdentifier;
+- (id)redactedDescription;
+- (id)initWithCoder:;
+- (id)initWithChangeType:accountIdentifier:accountTypeIdentifier:oldAccountProperties:username:password:oldUsername:oldPassword:modifiedDataClasses:clientName:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)modifiedDataClasses;
+- (id)oldPassword;
+- (id)description;
+- (id)accountTypeIdentifier;
+- (id)oldUsername;
++ (BOOL)supportsSecureCoding;
++ (id)_stringForChangeType:;
+@end

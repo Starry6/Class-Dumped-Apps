@@ -1,0 +1,30 @@
+@interface BDAAWebViewController : UIViewController
+@property (nonatomic) BDAANavigationBar navBar;
+@property (nonatomic) WKWebView webView;
+@property (nonatomic) NSString urlString;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)urlString;
+- (void)setWebView:;
+- (void)webView:didFinishNavigation:;
+- (id)webView;
+- (void)webView:didFailProvisionalNavigation:withError:;
+- (void)webView:didCommitNavigation:;
+- (void)webView:didReceiveServerRedirectForProvisionalNavigation:;
+- (void)webView:decidePolicyForNavigationAction:decisionHandler:;
+- (void).cxx_destruct;
+- (void)webView:didStartProvisionalNavigation:;
+- (void)webViewWebContentProcessDidTerminate:;
+- (void)backAction;
+- (void)setUrlString:;
+- (void)webView:decidePolicyForNavigationResponse:decisionHandler:;
+- (void)webView:didFailNavigation:withError:;
+- (void)viewDidLoad;
+- (void)setupUI;
+- (id)initWithUrl:;
+- (void)updateNavigationTitle;
+- (id)navBar;
+- (void)setNavBar:;
+@end

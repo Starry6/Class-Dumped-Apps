@@ -1,0 +1,30 @@
+@interface CJPayButtonStyle : JSONModel
+@property (nonatomic) NSString disabledAlphaString;
+@property (nonatomic) double cornerRadius;
+@property (nonatomic) UIColor titleColor;
+@property (nonatomic) double disabledAlpha;
+@property (nonatomic) UIColor normalBackgroundColorStart;
+@property (nonatomic) UIColor normalBackgroundColorEnd;
+@property (nonatomic) UIColor disabledBackgroundColorStart;
+@property (nonatomic) UIColor disabledBackgroundColorEnd;
+- (id)disabledAlphaString;
+- (id)disabledBackgroundColorEnd;
+- (id)disabledBackgroundColorStart;
+- (id)normalBackgroundColorEnd;
+- (id)normalBackgroundColorStart;
+- (void)setDisabledAlpha:;
+- (void)setDisabledAlphaString:;
+- (void)setDisabledBackgroundColorEnd:;
+- (void)setDisabledBackgroundColorStart:;
+- (void)setNormalBackgroundColorEnd:;
+- (void)setNormalBackgroundColorStart:;
+- (id)init;
+- (void)setTitleColor:;
+- (id)titleColor;
+- (void)setCornerRadius:;
+- (void).cxx_destruct;
+- (double)cornerRadius;
+- (double)disabledAlpha;
++ (id)keyMapper;
++ (BOOL)propertyIsOptional:;
+@end

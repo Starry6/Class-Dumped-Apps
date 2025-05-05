@@ -1,0 +1,36 @@
+@interface BDCTTakePhotoBaseViewController : UIViewController
+@property (nonatomic) NSString type;
+@property (nonatomic) AVCaptureSession session;
+@property (nonatomic) AVCaptureStillImageOutput captureOutput;
+@property (nonatomic) AVCaptureDevice captureDevice;
+@property (nonatomic) AVCaptureDeviceInput captureDeviceInput;
+@property (nonatomic) AVCaptureStillImageOutput stillImageOutput;
+@property (nonatomic) AVCaptureVideoPreviewLayer preview;
+@property (nonatomic) UIView focusView;
+- (long long)avOrientationForDeviceOrientation:;
+- (void)focusAtPoint:;
+- (void)focusGesture:;
+- (id)getScreenSize;
+- (void)initSubViews;
+- (void)loadCaptureSession;
+- (void)setCaptureDeviceInput:;
+- (void)setCaptureDevice:;
+- (id)captureDevice;
+- (void)setSession:;
+- (void)setType:;
+- (void)setPreview:;
+- (void)viewDidDisappear:;
+- (id)type;
+- (id)captureDeviceInput;
+- (id)session;
+- (void).cxx_destruct;
+- (id)stillImageOutput;
+- (void)viewWillAppear:;
+- (id)preview;
+- (void)viewDidLoad;
+- (id)focusView;
+- (void)setStillImageOutput:;
+- (void)setFocusView:;
+- (id)captureOutput;
+- (void)setCaptureOutput:;
+@end

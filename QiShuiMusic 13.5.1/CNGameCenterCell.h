@@ -1,0 +1,36 @@
+@interface CNGameCenterCell : CNLabeledCell
+@property (nonatomic) UILabel gameCenterLabel;
+@property (nonatomic) UIView playerViewContainer;
+@property (nonatomic) UIView playerView;
+@property (nonatomic) NSString playerID;
+@property (nonatomic) UIViewController profileViewController;
+@property (nonatomic) <CNPresenterDelegate> presentingDelegate;
+@property (nonatomic) BOOL showsGameCenterLabel;
+- (id)initWithStyle:reuseIdentifier:;
+- (void)setPlayerView:;
+- (id)playerID;
+- (id)labelView;
+- (void)setPresentingDelegate:;
+- (id)presentingDelegate;
+- (void).cxx_destruct;
+- (id)playerView;
+- (void)setPlayerID:;
+- (void)setLabelTextAttributes:;
+- (void)setCardGroupItem:;
+- (id)variableConstraints;
+- (void)performDefaultAction;
+- (void)setupViews;
+- (id)constantConstraintsForVerticalLayout;
+- (id)constantConstraintsForHorizontalLayout;
+- (id)variableConstraintsForHorizontalLayout;
+- (void)updateViewsWithCardGroupItem:;
+- (void)presentPlayerProfile;
+- (void)dismissProfileViewController;
+- (BOOL)showsGameCenterLabel;
+- (void)setShowsGameCenterLabel:;
+- (id)gameCenterLabel;
+- (id)playerViewContainer;
+- (void)setPlayerViewContainer:;
+- (id)profileViewController;
+- (void)setProfileViewController:;
+@end

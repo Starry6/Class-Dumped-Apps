@@ -1,0 +1,30 @@
+@interface SCCLRUMutableDictionary : NSObject
+@property (nonatomic) NSMutableDictionary dict;
+@property (nonatomic) NSMutableArray arrayForLRU;
+@property (nonatomic) Q maxCountLRU;
+@property (nonatomic) NSObject<OS_dispatch_queue> serialQueue;
+@property (nonatomic) Q count;
+- (void)setArrayForLRU:;
+- (void)setMaxCountLRU:;
+- (void)_addObjectLRU:;
+- (void)_adjustPositionLRU:;
+- (void)_removeObjectLRU:;
+- (id)arrayForLRU;
+- (id)initWithMaxCountLRU:;
+- (unsigned long long)maxCountLRU;
+- (id)objectForKey:returnEliminateObjectUsingBlock:;
+- (BOOL)searchObject:;
+- (void)setObject:forKey:;
+- (void)enumerateKeysAndObjectsUsingBlock:;
+- (id)serialQueue;
+- (void)removeAllObjects;
+- (void)removeObjectsForKeys:;
+- (id)keyEnumerator;
+- (id)objectForKey:;
+- (void).cxx_destruct;
+- (id)dict;
+- (void)setSerialQueue:;
+- (unsigned long long)count;
+- (void)removeObjectForKey:;
+- (void)setDict:;
+@end

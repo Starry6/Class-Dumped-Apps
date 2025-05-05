@@ -1,0 +1,38 @@
+@interface WebCoreNSURLSessionTaskTransactionMetrics : NSObject
+@property (nonatomic) NSDate fetchStartDate;
+@property (nonatomic) NSDate domainLookupStartDate;
+@property (nonatomic) NSDate domainLookupEndDate;
+@property (nonatomic) NSDate connectStartDate;
+@property (nonatomic) NSDate secureConnectionStartDate;
+@property (nonatomic) NSDate connectEndDate;
+@property (nonatomic) NSDate requestStartDate;
+@property (nonatomic) NSDate responseStartDate;
+@property (nonatomic) NSDate responseEndDate;
+@property (nonatomic) NSString networkProtocolName;
+@property (nonatomic) BOOL reusedConnection;
+@property (nonatomic) BOOL cellular;
+@property (nonatomic) BOOL expensive;
+@property (nonatomic) BOOL constrained;
+@property (nonatomic) BOOL multipath;
+@property (nonatomic) NSInteger _privacyStance;
+- (BOOL)constrained;
+- (id)networkProtocolName;
+- (void)dealloc;
+- (BOOL)isReusedConnection;
+- (void).cxx_destruct;
+- (BOOL)cellular;
+- (BOOL)expensive;
+- (id).cxx_construct;
+- (BOOL)multipath;
+- (int)_privacyStance;
+- (id)fetchStartDate;
+- (id)domainLookupStartDate;
+- (id)domainLookupEndDate;
+- (id)connectStartDate;
+- (id)secureConnectionStartDate;
+- (id)connectEndDate;
+- (id)requestStartDate;
+- (id)responseStartDate;
+- (id)responseEndDate;
+- (id)_initWithMetrics:;
+@end

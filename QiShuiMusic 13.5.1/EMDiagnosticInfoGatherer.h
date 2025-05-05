@@ -1,0 +1,31 @@
+@interface EMDiagnosticInfoGatherer : NSObject
+@property (nonatomic) EFLocked providers;
+@property (nonatomic) EMRemoteConnection connection;
+@property (nonatomic) <EFScheduler> providerQueue;
+@property (nonatomic) <EFCancelable> providerCancelable;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)dealloc;
+- (void)setProviders:;
+- (id)providers;
+- (id)providerQueue;
+- (void)setProviderQueue:;
+- (id)initWithRemoteConnection:;
+- (id)connection;
+- (void).cxx_destruct;
+- (void)setConnection:;
+- (void)gatherDiagnosticsWithOptions:completionHandler:;
+- (void)fetchControllerStatusWithCompletionHandler:;
+- (void)databaseStatisticsWithCompletionHandler:;
+- (void)provideDiagnosticsAt:options:completion:;
+- (void)_registerSelfAsProviderIfRequired;
+- (id)registerDiagnosticInfoProvider:;
+- (id)_moveLocalDiagnosticsTo:;
+- (id)providerCancelable;
+- (void)setProviderCancelable:;
++ (id)log;
++ (id)remoteInterface;
++ (id)localDiagnosticsDirectoryURL;
+@end

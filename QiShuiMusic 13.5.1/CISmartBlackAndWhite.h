@@ -1,0 +1,32 @@
+@interface CISmartBlackAndWhite : CIFilter
+@property (nonatomic) CIImage inputImage;
+@property (nonatomic) NSNumber inputStrength;
+@property (nonatomic) NSNumber inputNeutralGamma;
+@property (nonatomic) NSNumber inputTone;
+@property (nonatomic) NSNumber inputHue;
+@property (nonatomic) NSNumber inputGrain;
+@property (nonatomic) NSNumber inputSeed;
+@property (nonatomic) NSNumber inputScaleFactor;
+- (id)inputImage;
+- (void)setInputImage:;
+- (void)setInputSeed:;
+- (id)inputSeed;
+- (id)_kernel;
+- (id)outputImage;
+- (id)inputStrength;
+- (void)setInputStrength:;
+- (id)inputScaleFactor;
+- (void)setInputScaleFactor:;
+- (void)getNonNormalizedSettings:;
+- (id)createHueArray;
+- (id)hueArrayImage:;
+- (id)inputNeutralGamma;
+- (void)setInputNeutralGamma:;
+- (id)inputTone;
+- (void)setInputTone:;
+- (id)inputHue;
+- (void)setInputHue:;
+- (id)inputGrain;
+- (void)setInputGrain:;
++ (id)customAttributes;
+@end

@@ -1,0 +1,35 @@
+@interface PETSchemaPETAggregatedMessage : SISchemaInstrumentationMessage
+@property (nonatomic) PETSchemaPETAggregationKey key;
+@property (nonatomic) BOOL hasKey;
+@property (nonatomic) I count;
+@property (nonatomic) BOOL hasCount;
+@property (nonatomic) PETSchemaPETDistribution distribution;
+@property (nonatomic) BOOL hasDistribution;
+@property (nonatomic) NSData jsonData;
+- (id)distribution;
+- (void)setHasKey:;
+- (void)setCount:;
+- (void)setDistribution:;
+- (BOOL)hasKey;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (void)deleteCount;
+- (id)initWithDictionary:;
+- (id)key;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void)setKey:;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (unsigned int)count;
+- (BOOL)isEqual:;
+- (void)setHasCount:;
+- (BOOL)hasCount;
+- (BOOL)hasDistribution;
+- (void)deleteKey;
+- (void)deleteDistribution;
+- (void)setHasDistribution:;
+@end

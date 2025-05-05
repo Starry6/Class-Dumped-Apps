@@ -1,0 +1,38 @@
+@interface IESECSliceXActions : IESECSliceXBaseModel
+@property (nonatomic) NSArray onExposure;
+@property (nonatomic) IESECSliceXAction onShow;
+@property (nonatomic) IESECSliceXAction onFocus;
+@property (nonatomic) IESECSliceXAction onBlur;
+@property (nonatomic) IESECSliceXAction onChange;
+@property (nonatomic) IESECSliceXAction onTick;
+@property (nonatomic) IESECSliceXAction onFinish;
+@property (nonatomic) IESECSliceXAction onTransitionStart;
+@property (nonatomic) IESECSliceXAction onTransitionEnd;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)onBlur;
+- (id)onExposure;
+- (id)onShow;
+- (id)onTick;
+- (id)onTransitionStart;
+- (void)setOnBlur:;
+- (void)setOnExposure:;
+- (void)setOnShow:;
+- (void)setOnTick:;
+- (void)setOnTransitionStart:;
+- (void)updateModelWithData:;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (id)onTransitionEnd;
+- (void)setOnTransitionEnd:;
+- (id)onFocus;
+- (void)setOnFocus:;
+- (id)onChange;
+- (void)setOnChange:;
+- (id)onFinish;
+- (void)setOnFinish:;
++ (id)containerPropertyWithGenericClass;
++ (id)propertyKeyWithJSONKey;
+@end

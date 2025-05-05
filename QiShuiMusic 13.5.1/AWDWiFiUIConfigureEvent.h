@@ -1,0 +1,35 @@
+@interface AWDWiFiUIConfigureEvent : PBCodable
+@property (nonatomic) BOOL hasTimestamp;
+@property (nonatomic) Q timestamp;
+@property (nonatomic) BOOL hasProcess;
+@property (nonatomic) NSString process;
+@property (nonatomic) BOOL hasType;
+@property (nonatomic) I type;
+@property (nonatomic) BOOL hasPreviousType;
+@property (nonatomic) I previousType;
+- (void)dealloc;
+- (BOOL)hasProcess;
+- (void)setType:;
+- (void)writeTo:;
+- (void)setHasType:;
+- (BOOL)hasType;
+- (unsigned long long)hash;
+- (void)setProcess:;
+- (void)setPreviousType:;
+- (void)copyTo:;
+- (void)setHasTimestamp:;
+- (void)mergeFrom:;
+- (unsigned int)previousType;
+- (BOOL)hasTimestamp;
+- (void)setTimestamp:;
+- (unsigned int)type;
+- (id)process;
+- (BOOL)readFrom:;
+- (unsigned long long)timestamp;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setHasPreviousType:;
+- (BOOL)hasPreviousType;
+@end

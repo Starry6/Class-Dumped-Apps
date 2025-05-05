@@ -1,0 +1,33 @@
+@interface PKTextInputWindowFirstResponderController : NSObject
+@property (nonatomic) NSNotificationCenter _notificationCenter;
+@property (nonatomic) PKTextInputWindowFirstResponder firstResponder;
+@property (nonatomic) NSNotification _delayedNotification;
+@property (nonatomic) <PKTextInputWindowFirstResponderControllerDelegate> delegate;
+@property (nonatomic) BOOL paletteFloatingMode;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (void)dealloc;
+- (void)setDelegate:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)_notificationCenter;
+- (id)initWithNotificationCenter:;
+- (id)firstResponder;
+- (void)keyboardSceneDelegate:inputViewSetVisibilityDidChange:includedReset:;
+- (void)set_notificationCenter:;
+- (void)textInputSourceDidChange:;
+- (void)_textInputResponderDidChangeNotificationHandler:;
+- (void)_forceControllerToReload:;
+- (void)_handleTextInputSourceDidChange:;
+- (void)_updateFirstResponder:isVisible:sendDelegateCallback:;
+- (void)updateFirstResponderFromWindowScene:sendDelegateCallback:;
+- (BOOL)_isResponderEditableTextInput:;
+- (void)setFirstResponder:;
+- (BOOL)paletteFloatingMode;
+- (void)setPaletteFloatingMode:;
+- (id)_delayedNotification;
+- (void)set_delayedNotification:;
+@end

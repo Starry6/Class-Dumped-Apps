@@ -1,0 +1,32 @@
+@interface IESECShopRecommendMallCell : UICollectionViewCell
+@property (nonatomic) UIView backView;
+@property (nonatomic) UIImageView backImageView;
+@property (nonatomic) UILabel recommendTitleLabel;
+@property (nonatomic) UIView goodsBottomView;
+@property (nonatomic) IESECButton goMallBtn;
+@property (nonatomic) @? clickProduct;
+@property (nonatomic) @? showProduct;
+@property (nonatomic) BOOL ignorePadding;
+- (id)goodsBottomView;
+- (void)setShowProduct:;
+- (id)backImageView;
+- (void)bindWithModel:;
+- (void)clickGoMall;
+- (id)clickProduct;
+- (void)clickProduct:;
+- (id)goMallBtn;
+- (BOOL)ignorePadding;
+- (id)recommendTitleLabel;
+- (void)setBackImageView:;
+- (void)setClickProduct:;
+- (void)setGoMallBtn:;
+- (void)setGoodsBottomView:;
+- (void)setIgnorePadding:;
+- (void)setRecommendTitleLabel:;
+- (id)showProduct;
+- (id)backView;
+- (void)setBackView:;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)setupUI;
+@end

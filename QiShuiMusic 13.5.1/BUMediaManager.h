@@ -1,0 +1,38 @@
+@interface BUMediaManager : NSObject
+@property (nonatomic) NSDictionary photoParams;
+@property (nonatomic) Q eventType;
+@property (nonatomic) BUPlayableAd playableAd;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setPhotoParams:;
+- (void)__openCameraOrSettings;
+- (void)__openPhotosOrSettings;
+- (void)handleCameraResultWithMediaInfo:;
+- (id)handleImageWithMediaInfo:;
+- (void)handlePhotosResultWithMediaInfo:;
+- (id)photoParams;
+- (id)playableAd;
+- (void)remindToSettingsPageWithTitle:message:;
+- (void)setPlayableAd:;
+- (void)showPhotosLibraryPage;
+- (unsigned long long)eventType;
+- (void)setEventType:;
+- (id)viewController;
+- (void).cxx_destruct;
+- (void)imagePickerControllerDidCancel:;
+- (void)imagePickerController:didFinishPickingMediaWithInfo:;
++ (void)deleteTempFile:;
++ (id)downloadDirPath;
++ (void)openPhotosOrSettingsWithParams:;
++ (void)applyMediaAuthorizationWithType:completion:;
++ (BOOL)isCameraAuthorizationDeclared;
++ (BOOL)isMediaAuthorizationDeclaredWithType:;
++ (BOOL)isMediaAuthorizationEnableWithType:;
++ (BOOL)isMicrophoneAuthorizationDeclared;
++ (BOOL)isPhotosAuthorizationDeclared;
++ (void)openCameraOrSettings;
++ (void)savePhotosOrOpenSettingsWithParams:;
++ (id)shareInstance;
+@end

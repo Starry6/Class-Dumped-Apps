@@ -1,0 +1,32 @@
+@interface OSLogPreferencesCategory : NSObject
+@property (nonatomic) NSString name;
+@property (nonatomic) OSLogPreferencesSubsystem subsystem;
+@property (nonatomic) BOOL isLocked;
+@property (nonatomic) q effectiveEnabledLevel;
+@property (nonatomic) q effectivePersistedLevel;
+@property (nonatomic) q enabledLevel;
+@property (nonatomic) q persistedLevel;
+@property (nonatomic) BOOL signpostEnabled;
+@property (nonatomic) BOOL signpostPersisted;
+@property (nonatomic) BOOL signpostBacktracesEnabled;
+- (BOOL)isLocked;
+- (id)subsystem;
+- (void).cxx_destruct;
+- (void)reset;
+- (id)name;
+- (long long)enabledLevel;
+- (void)setPersistedLevel:;
+- (long long)persistedLevel;
+- (void)setEnabledLevel:;
+- (long long)effectiveEnabledLevel;
+- (long long)effectivePersistedLevel;
+- (long long)defaultEnabledLevel;
+- (long long)defaultPersistedLevel;
+- (id)initWithName:subsystem:;
+- (BOOL)signpostEnabled;
+- (BOOL)signpostPersisted;
+- (BOOL)signpostBacktracesEnabled;
+- (void)setSignpostEnabled:;
+- (void)setSignpostPersisted:;
+- (void)setSignpostBacktracesEnabled:;
+@end

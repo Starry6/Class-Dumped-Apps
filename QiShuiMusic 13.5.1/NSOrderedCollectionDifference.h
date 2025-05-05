@@ -1,0 +1,35 @@
+@interface NSOrderedCollectionDifference : NSObject
+@property (nonatomic) NSArray ef_groupedInsertions;
+@property (nonatomic) NSArray ef_removalsExcludingMoves;
+@property (nonatomic) NSIndexSet safari_removalIndexes;
+@property (nonatomic) NSIndexSet safari_insertionIndexes;
+@property (nonatomic) NSArray insertions;
+@property (nonatomic) NSArray removals;
+@property (nonatomic) BOOL hasChanges;
+- (id)ams_insertedObjects;
+- (id)ams_removedObjects;
+- (id)ef_groupedInsertions;
+- (id)ef_removalsExcludingMoves;
+- (id)ef_groupedInsertionsByObjectForTargetArray:inferMoves:;
+- (id)ef_groupedInsertionsByObjectForTargetOrderedSet:inferMoves:;
+- (id)safari_insertionIndexes;
+- (id)safari_removalIndexes;
+- (BOOL)hasChanges;
+- (id)init;
+- (void)dealloc;
+- (id)initWithChanges:;
+- (unsigned long long)countByEnumeratingWithState:objects:count:;
+- (unsigned long long)hash;
+- (id)debugDescription;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)initWithInsertIndexes:insertedObjects:removeIndexes:removedObjects:;
+- (id)initWithInsertIndexes:insertedObjects:removeIndexes:removedObjects:additionalChanges:;
+- (id)insertions;
+- (id)removals;
+- (id)differenceByTransformingChangesWithBlock:;
+- (id)_changeWithType:index:object:;
+- (void)_enumerateChangesInDiffOrderWithBlock:;
+- (id)invertedDifference;
+- (id)inverseDifference;
+@end

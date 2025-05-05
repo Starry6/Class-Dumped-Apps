@@ -1,0 +1,37 @@
+@interface CJPayFullPageBaseViewController : CJPayBaseViewController
+@property (nonatomic) CJPayNoNetworkContainerView noNetworkContainerView;
+@property (nonatomic) CJPayCommonExceptionView systemBusyView;
+@property (nonatomic) CJPayNetworkErrorContext errorContext;
+@property (nonatomic) q lastSystemStatusBarStyle;
+@property (nonatomic) BOOL isShowErrorView;
+- (BOOL)isShowErrorView;
+- (void)showNoNetworkViewUseThemeStyle:;
+- (BOOL)cjNeedAnimation;
+- (void)adapterIpad;
+- (BOOL)cjShouldShowBottomView;
+- (long long)cjpay_preferredStatusBarStyle;
+- (id)errorContext;
+- (void)hideNoNetworkView;
+- (void)hideSystemBusyView;
+- (long long)lastSystemStatusBarStyle;
+- (double)navigationHeight;
+- (id)noNetworkContainerView;
+- (id)presentWithNavigationControllerFrom:useMask:completion:;
+- (void)reloadCurrentView;
+- (void)setErrorContext:;
+- (void)setIsShowErrorView:;
+- (void)setLastSystemStatusBarStyle:;
+- (void)showNoNetworkToast;
+- (void)showNoNetworkView;
+- (void)showNoNetworkViewUseThemeStyle:errorContext:;
+- (void)showSystemBusyView;
+- (id)systemBusyView;
+- (long long)vcType;
+- (BOOL)shouldAutorotate;
+- (long long)preferredStatusBarStyle;
+- (void)close;
+- (void)viewWillDisappear:;
+- (void)viewWillAppear:;
+- (unsigned long long)supportedInterfaceOrientations;
+- (void)viewDidLoad;
+@end

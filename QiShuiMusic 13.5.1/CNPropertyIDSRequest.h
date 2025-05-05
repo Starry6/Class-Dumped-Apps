@@ -1,0 +1,30 @@
+@interface CNPropertyIDSRequest : NSObject
+@property (nonatomic) NSArray propertyItems;
+@property (nonatomic) NSString listenerID;
+@property (nonatomic) NSString service;
+@property (nonatomic) @? requestResultBlock;
+@property (nonatomic) @? idQueryResultHandler;
+@property (nonatomic) BOOL cancelled;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)cancelled;
+- (void)setService:;
+- (void)cancel;
+- (id)listenerID;
+- (id)service;
+- (void)idStatusUpdatedForDestinations:service:;
+- (void).cxx_destruct;
+- (id)propertyItems;
+- (id)initWithPropertyItems:service:postToMainQueue:resultBlock:;
+- (void)cleanupDelegate;
+- (void)_requestStatusOnMainQueue:;
+- (void)setPropertyItems:;
+- (void)setListenerID:;
+- (id)requestResultBlock;
+- (void)setRequestResultBlock:;
+- (id)idQueryResultHandler;
+- (void)setIdQueryResultHandler:;
++ (id)sharedWorkQueue;
+@end

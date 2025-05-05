@@ -1,0 +1,36 @@
+@interface IESSaaSTIMParticipantReadReceiptORM : IESSaaSTIMBaseORM
+@property (nonatomic) q realMinIndex;
+@property (nonatomic) BOOL needFixMinIndex;
+@property (nonatomic) q userID;
+@property (nonatomic) NSString belongingConversationIdentifier;
+@property (nonatomic) q minIndex;
+@property (nonatomic) q readIndex;
+@property (nonatomic) q readOrder;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)belongingConversationIdentifier;
+- (BOOL)needFixMinIndex;
+- (long long)readIndex;
+- (long long)readOrder;
+- (long long)realMinIndex;
+- (void)setBelongingConversationIdentifier:;
+- (void)setMinIndex:;
+- (void)setReadIndex:;
+- (void)setReadOrder:;
+- (void)setTemporaryRealMinIndex:;
+- (long long)userID;
+- (long long)minIndex;
+- (void).cxx_destruct;
+- (void)setUserID:;
++ (id)belongingConversationIdentifier;
++ (id)AllProperties;
++ (id)AnyProperty;
++ (id)PropertyNamed;
++ (id)objectRelationalMappingForWCDB;
++ (id)readIndex;
++ (id)readOrder;
++ (id)userID;
++ (id)minIndex;
+@end

@@ -1,0 +1,35 @@
+@interface AWDCoreRoutineFMCReturnToCarInstance : PBCodable
+@property (nonatomic) BOOL hasTimestamp;
+@property (nonatomic) Q timestamp;
+@property (nonatomic) BOOL hasParkingId;
+@property (nonatomic) NSString parkingId;
+@property (nonatomic) BOOL hasHorizontalAccuracy;
+@property (nonatomic) NSInteger horizontalAccuracy;
+@property (nonatomic) BOOL hasHorizontalDistance;
+@property (nonatomic) NSInteger horizontalDistance;
+- (void)dealloc;
+- (void)setHasHorizontalAccuracy:;
+- (int)horizontalAccuracy;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)setHasTimestamp:;
+- (void)mergeFrom:;
+- (void)setHorizontalAccuracy:;
+- (BOOL)hasTimestamp;
+- (void)setTimestamp:;
+- (BOOL)readFrom:;
+- (unsigned long long)timestamp;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)hasHorizontalAccuracy;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (int)horizontalDistance;
+- (void)setHorizontalDistance:;
+- (BOOL)hasParkingId;
+- (id)parkingId;
+- (void)setParkingId:;
+- (void)setHasHorizontalDistance:;
+- (BOOL)hasHorizontalDistance;
+@end

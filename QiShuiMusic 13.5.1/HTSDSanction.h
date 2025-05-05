@@ -1,0 +1,31 @@
+@interface HTSDSanction : NSObject
+@property (nonatomic) NSURL nsurl;
+@property (nonatomic) NSString scheme;
+@property (nonatomic) NSString product;
+@property (nonatomic) NSString business;
+@property (nonatomic) NSString action;
+@property (nonatomic) NSString parameters;
+- (id)toNSURL;
+- (BOOL)canHandle;
+- (id)initWithProduct:business:action:parameters:;
+- (id)initWithScheme:product:business:action:parameters:;
+- (BOOL)isCloseScheme;
+- (BOOL)isFetchScheme;
+- (BOOL)isStartScheme;
+- (id)nsurl;
+- (void)setNsurl:;
+- (id)scheme;
+- (id)action;
+- (id)parameters;
+- (void).cxx_destruct;
+- (id)business;
+- (id)product;
+- (id)initWithNSURL:;
++ (id)DYCURLWithProduct:business:action:parameters:;
++ (id)DYCURLWithNSURL:;
++ (id)closeDYCURL;
++ (id)fetchDYCURL;
++ (id)startDYCURL;
++ (id)scheme;
++ (BOOL)canHandleURL:;
+@end

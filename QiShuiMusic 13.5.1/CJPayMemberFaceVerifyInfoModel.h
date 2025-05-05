@@ -1,0 +1,30 @@
+@interface CJPayMemberFaceVerifyInfoModel : JSONModel
+@property (nonatomic) NSString verifyType;
+@property (nonatomic) NSString faceContent;
+@property (nonatomic) NSString agreementUrl;
+@property (nonatomic) NSString agreementDesc;
+@property (nonatomic) NSString nameMask;
+@property (nonatomic) NSString uid;
+@property (nonatomic) NSString smchId;
+@property (nonatomic) BOOL needLiveDetection;
+- (void)setFaceContent:;
+- (id)agreementDesc;
+- (id)agreementUrl;
+- (id)faceContent;
+- (id)getFaceVerifyInfoModel;
+- (id)nameMask;
+- (BOOL)needLiveDetection;
+- (void)setAgreementDesc:;
+- (void)setAgreementUrl:;
+- (void)setNameMask:;
+- (void)setNeedLiveDetection:;
+- (void)setSmchId:;
+- (id)smchId;
+- (id)uid;
+- (void)setUid:;
+- (void).cxx_destruct;
+- (id)verifyType;
+- (void)setVerifyType:;
++ (id)keyMapper;
++ (BOOL)propertyIsOptional:;
+@end

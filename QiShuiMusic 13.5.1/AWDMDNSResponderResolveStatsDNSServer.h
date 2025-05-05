@@ -1,0 +1,31 @@
+@interface AWDMDNSResponderResolveStatsDNSServer : PBCodable
+@property (nonatomic) BOOL hasAddress;
+@property (nonatomic) NSData address;
+@property (nonatomic) BOOL hasNetworkType;
+@property (nonatomic) NSInteger networkType;
+@property (nonatomic) BOOL hasServerID;
+@property (nonatomic) I serverID;
+- (int)networkType;
+- (void)dealloc;
+- (void)writeTo:;
+- (void)setAddress:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void)setNetworkType:;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)address;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasAddress;
+- (void)setHasNetworkType:;
+- (BOOL)hasNetworkType;
+- (id)networkTypeAsString:;
+- (int)StringAsNetworkType:;
+- (unsigned int)serverID;
+- (void)setServerID:;
+- (void)setHasServerID:;
+- (BOOL)hasServerID;
+@end

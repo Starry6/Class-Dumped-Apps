@@ -1,0 +1,32 @@
+@interface BMContentAttachment : NSObject
+@property (nonatomic) NSString type;
+@property (nonatomic) NSString filename;
+@property (nonatomic) NSString path;
+@property (nonatomic) I dataVersion;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)path;
+- (id)filename;
+- (id)initWithProtoData:;
+- (id)init;
+- (id)proto;
+- (id)json;
+- (id)encodeAsProto;
+- (id)initWithCoder:;
+- (unsigned int)dataVersion;
+- (unsigned long long)hash;
+- (BOOL)isCompleteWithContext:error:;
+- (void)encodeWithCoder:;
+- (id)initWithProto:;
+- (id)type;
+- (void).cxx_destruct;
+- (BOOL)isValidWithContext:error:;
+- (id)serialize;
+- (id)jsonDict;
+- (BOOL)isEqual:;
+- (id)initWithType:filename:path:;
++ (id)eventWithData:dataVersion:;
++ (BOOL)supportsSecureCoding;
+@end

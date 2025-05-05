@@ -1,0 +1,33 @@
+@interface EAGLContext : NSObject
+@property (nonatomic) Q API;
+@property (nonatomic) EAGLSharegroup sharegroup;
+@property (nonatomic) NSString debugLabel;
+@property (nonatomic) BOOL multiThreaded;
+- (void)setDebugLabel:;
+- (id)debugLabel;
+- (id)init;
+- (void)dealloc;
+- (BOOL)isMultiThreaded;
+- (BOOL)texImageIOSurface:target:internalFormat:width:height:format:type:plane:invert:;
+- (unsigned long long)API;
+- (id)initWithAPI:properties:;
+- (id)getMacroContextPrivate;
+- (unsigned long long)setParameter:to:;
+- (BOOL)attachImage:toCoreSurface:invertedRender:;
+- (BOOL)presentRenderbuffer:atTime:;
+- (id)initWithAPI:;
+- (id)sharegroup;
+- (BOOL)setBlockFence:onQueue:;
+- (id)initWithAPI:sharegroup:;
+- (BOOL)presentRenderbuffer:;
+- (BOOL)renderbufferStorage:fromDrawable:;
+- (BOOL)texImageIOSurface:target:internalFormat:width:height:format:type:plane:;
+- (id)initWithAPI:sharedWithCompute:;
+- (id)commonInitWithAPI:properties:;
+- (void)setMultiThreaded:;
+- (BOOL)presentRenderbuffer:afterMinimumDuration:;
+- (unsigned long long)getParameter:to:;
+- (id)GetMacroContextPrivate;
++ (id)currentContext;
++ (BOOL)setCurrentContext:;
+@end

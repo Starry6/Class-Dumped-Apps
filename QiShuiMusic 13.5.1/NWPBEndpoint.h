@@ -1,0 +1,37 @@
+@interface NWPBEndpoint : PBCodable
+@property (nonatomic) BOOL hasAddress;
+@property (nonatomic) NWPBAddressEndpoint address;
+@property (nonatomic) BOOL hasHost;
+@property (nonatomic) NWPBHostEndpoint host;
+@property (nonatomic) BOOL hasService;
+@property (nonatomic) NWPBServiceEndpoint service;
+@property (nonatomic) BOOL hasInterface;
+@property (nonatomic) NWPBInterface interface;
+@property (nonatomic) BOOL hasTxtRecord;
+@property (nonatomic) NSData txtRecord;
+- (id)interface;
+- (void)setService:;
+- (void)setInterface:;
+- (id)host;
+- (void)setHost:;
+- (void)writeTo:;
+- (void)setAddress:;
+- (unsigned long long)hash;
+- (id)service;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)address;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)txtRecord;
+- (BOOL)hasAddress;
+- (BOOL)hasHost;
+- (BOOL)hasService;
+- (BOOL)hasInterface;
+- (BOOL)hasTxtRecord;
+- (void)setTxtRecord:;
+@end

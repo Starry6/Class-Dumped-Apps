@@ -1,0 +1,33 @@
+@interface VSKeychainEditingContext : NSObject
+@property (nonatomic) NSMutableSet items;
+@property (nonatomic) VSKeychainStore keychainStore;
+@property (nonatomic) NSUndoManager undoManager;
+@property (nonatomic) NSSet insertedItems;
+@property (nonatomic) NSSet updatedItems;
+@property (nonatomic) NSSet deletedItems;
+@property (nonatomic) NSSet registeredItems;
+- (id)executeFetchRequest:error:;
+- (id)init;
+- (id)items;
+- (id)updatedItems;
+- (BOOL)save:;
+- (void)setKeychainStore:;
+- (void)insertItem:;
+- (void)setItems:;
+- (void).cxx_destruct;
+- (void)setUndoManager:;
+- (id)keychainStore;
+- (id)undoManager;
+- (id)deletedItems;
+- (void)deleteItem:;
+- (void)_populateQuery:usingPredicate:withItemKind:;
+- (id)_findOrCreateItemForCommittedValues:withItemKind:;
+- (void)_populateResult:forRequest:fromMatch:;
+- (id)_queryForItemValues:withItemKind:;
+- (id)_deleteQueryForItemValues:withItemKind:;
+- (void)_populateErrors:withError:affectingItem:;
+- (void)fulfillFault:;
+- (id)_subsetOfRegisteredItemsWithKeyPath:;
+- (id)insertedItems;
+- (id)registeredItems;
+@end

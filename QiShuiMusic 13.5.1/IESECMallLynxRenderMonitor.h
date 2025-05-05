@@ -1,0 +1,31 @@
+@interface IESECMallLynxRenderMonitor : NSObject
+@property (nonatomic) Q totleCountInFirstScreen;
+@property (nonatomic) Q hitPreloadCountInFirstScreen;
+@property (nonatomic) BOOL didFirstScreen;
+@property (nonatomic) NSString scene;
+@property (nonatomic) <IESECMallLynxRenderMonitorDelegate> delegate;
+- (BOOL)didFirstScreen;
+- (void)handleLynxRender:resource:;
+- (unsigned long long)hitPreloadCountInFirstScreen;
+- (void)lynxCard:didFirstScreen:resource:itemModel:isPreloader:;
+- (void)lynxCard:didFirstScreen:resource:itemModel:isPreloader:isPreDecode:;
+- (void)lynxCard:didLoadFail:resource:itemModel:;
+- (void)lynxCard:didUpdateDataWithLynxViewFromType:resource:itemModel:perfDict:;
+- (void)lynxCard:onSetup:resource:itemModel:isPreloader:isPreDecode:;
+- (void)realLynxCard:didFirstScreen:resource:itemModel:isPreloader:isPreDecode:scene:;
+- (void)realLynxCard:didLoadFail:resource:itemModel:scene:;
+- (void)realLynxCard:didUpdateDataWithLynxViewFromType:resource:itemModel:perfDict:isFirstScreen:;
+- (id)resourceFrom:;
+- (void)setDidFirstScreen:;
+- (void)setHitPreloadCountInFirstScreen:;
+- (void)setTotleCountInFirstScreen:;
+- (unsigned long long)totleCountInFirstScreen;
+- (void)trackerLynxRenderLog:;
+- (void)trackerLynxUpdateLog:;
+- (id)init;
+- (void)setScene:;
+- (void)setDelegate:;
+- (id)scene;
+- (id)delegate;
+- (void).cxx_destruct;
+@end

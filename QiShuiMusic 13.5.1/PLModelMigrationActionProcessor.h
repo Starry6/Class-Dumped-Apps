@@ -1,0 +1,31 @@
+@interface PLModelMigrationActionProcessor : NSObject
+@property (nonatomic) NSProgress progress;
+@property (nonatomic) PLModelMigratorLog logger;
+@property (nonatomic) BOOL success;
+@property (nonatomic) BOOL ignoreProgressUpdates;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)logger;
+- (BOOL)isSuccess;
+- (void)dealloc;
+- (void)setProgress:;
+- (void)setLogger:;
+- (void)setSuccess:;
+- (id)progress;
+- (void).cxx_destruct;
+- (id)initWithUUID:pathManager:migrationActionType:analyticsEventManager:logger:progressUnitCount:;
+- (void)_initialLog;
+- (id)_generateActionMarkerBase;
+- (id)_generateActionMarker;
+- (id)_generateActionTagMarker;
+- (id)_startLogEntryWithName:;
+- (void)_stopLogEntryWithPerfCheck:;
+- (id)_progressLogMessage;
+- (void)performActionWithName:ifRequired:block:;
+- (void)performActionWithName:ifRequired:recordTimedCoreAnalyticsEvent:coreAnalyticsEventKey:block:;
+- (void)_performActionWithName:ifRequired:recordTimedCoreAnalyticsEvent:coreAnalyticsEventKey:block:;
+- (BOOL)ignoreProgressUpdates;
+- (void)setIgnoreProgressUpdates:;
+@end

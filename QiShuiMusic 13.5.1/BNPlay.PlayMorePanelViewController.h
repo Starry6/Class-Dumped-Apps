@@ -1,0 +1,25 @@
+@interface BNPlay.PlayMorePanelViewController : BNCommonAdapter.BNBasicViewController
+- (id)dragger:cellForRowAt:;
+- (void)dragger:didBeginDraggingAt:;
+- (void)dragger:didEndDraggingAt:;
+- (void)dragger:dragging:;
+- (BOOL)dragger:moveDraggingAt:newIndexPath:;
+- (BOOL)dragger:shouldBegan:;
+- (void)dealloc;
+- (id)tableView:cellForRowAtIndexPath:;
+- (id)initWithCoder:;
+- (double)tableView:heightForRowAtIndexPath:;
+- (id)tableView:viewForHeaderInSection:;
+- (void)tableView:didSelectRowAtIndexPath:;
+- (void).cxx_destruct;
+- (double)tableView:heightForHeaderInSection:;
+- (long long)tableView:numberOfRowsInSection:;
+- (id)initWithNibName:bundle:;
+- (void)viewDidLoad;
+- (long long)numberOfSectionsInTableView:;
+- (BOOL)tableView:canEditRowAtIndexPath:;
+- (double)tableView:heightForFooterInSection:;
+- (id)tableView:viewForFooterInSection:;
+- (long long)tableView:editingStyleForRowAtIndexPath:;
+- (id)tableView:trailingSwipeActionsConfigurationForRowAtIndexPath:;
+@end

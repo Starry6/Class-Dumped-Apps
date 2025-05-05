@@ -1,0 +1,32 @@
+@interface AKAuthorizationCredential : NSObject
+@property (nonatomic) BOOL isLikelyRealUser;
+@property (nonatomic) NSArray authorizedScopes;
+@property (nonatomic) NSData identityToken;
+@property (nonatomic) NSData authorizationCode;
+@property (nonatomic) NSString state;
+@property (nonatomic) AKUserInformation userInformation;
+@property (nonatomic) NSString transactionID;
+@property (nonatomic) NSString userIdentifier;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)authenticationServicesCredential;
+- (id)_credentialScopes;
+- (id)transactionID;
+- (id)init;
+- (id)userIdentifier;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (id)identityToken;
+- (id)state;
+- (void).cxx_destruct;
+- (id)description;
+- (id)initWithServerResponse:;
+- (id)userInformation;
+- (id)authorizedScopes;
+- (id)authorizationCode;
+- (BOOL)isLikelyRealUser;
+- (void)setIsLikelyRealUser:;
++ (BOOL)supportsSecureCoding;
+@end

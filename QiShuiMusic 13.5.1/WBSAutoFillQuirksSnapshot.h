@@ -1,0 +1,34 @@
+@interface WBSAutoFillQuirksSnapshot : NSObject
+@property (nonatomic) NSDictionary passwordRequirementsByDomain;
+@property (nonatomic) NSArray domainsWithAssociatedCredentials;
+@property (nonatomic) NSArray domainsIneligibleForPasswordAuditing;
+@property (nonatomic) NSArray domainsToConsiderIdentical;
+@property (nonatomic) NSDictionary changePasswordURLsByDomain;
+@property (nonatomic) NSSet domainsIneligibleForAutomaticLogin;
+@property (nonatomic) NSSet domainsIneligibleForStreamlinedLogin;
+@property (nonatomic) NSSet domainsIneligibleForPasskeys;
+@property (nonatomic) NSSet domainsForPasskeyFallbackUI;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (id)initWithPlistData:error:;
+- (id)plistDataWithFormat:;
+- (void).cxx_destruct;
+- (id)passwordRequirementsByDomain;
+- (id)_passwordRequirementsByDomainFromAutoFillQuirks:error:;
+- (id)_domainsWithAssociatedCredentialsFromAutoFillQuirks:error:;
+- (id)_domainsIneligibleForPasswordAuditingFromAutoFillQuirks:error:;
+- (id)_domainsToConsiderIdenticalFromAutoFillQuirls:error:;
+- (id)_domainsSetFromAutoFillQuirks:forKey:error:;
+- (id)_changePasswordURLStringsByDomainFromAutoFillQuirks:error:;
+- (id)domainsWithAssociatedCredentials;
+- (id)domainsIneligibleForPasswordAuditing;
+- (id)domainsToConsiderIdentical;
+- (id)changePasswordURLsByDomain;
+- (id)domainsIneligibleForAutomaticLogin;
+- (id)domainsIneligibleForStreamlinedLogin;
+- (id)domainsIneligibleForPasskeys;
+- (id)domainsForPasskeyFallbackUI;
+@end

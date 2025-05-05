@@ -1,0 +1,32 @@
+@interface TVLPlayerView : UIView
+@property (nonatomic) BOOL drawsImmediately;
+@property (nonatomic) Q resizingMode;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setupRenderView;
+- (void)updateTextureWithYUVVideoFrame:;
+- (BOOL)drawsImmediately;
+- (void)renderInit;
+- (void)renderVideoFrame:error:;
+- (void)setDrawsImmediately:;
+- (void)setupContextIfNeeded;
+- (void)setupRender;
+- (void)setupVertex;
+- (void)updateContentScaleFactor;
+- (void)updateTextureWithVideoFrame:;
+- (void)updateVideoFrame:;
+- (void)dealloc;
+- (void)mtkView:drawableSizeWillChange:;
+- (void)drawInMTKView:;
+- (id)initWithCoder:;
+- (void)rendering;
+- (void)setupTextureCache;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (unsigned long long)resizingMode;
+- (void)setResizingMode:;
+- (void)setupPipeline;
+- (void)setNeedsRedraw;
+@end

@@ -1,0 +1,33 @@
+@interface PARSmartSearchV2Parameters : NSObject
+@property (nonatomic) BOOL enabled;
+@property (nonatomic) BOOL enableCount;
+@property (nonatomic) double paramA;
+@property (nonatomic) double paramB;
+@property (nonatomic) double paramC;
+@property (nonatomic) double paramK;
+@property (nonatomic) double paramM;
+@property (nonatomic) double paramQ;
+@property (nonatomic) double paramV;
+@property (nonatomic) double windowBucket;
+@property (nonatomic) q minCount;
+@property (nonatomic) q zkwMinCount;
+- (double)paramQ;
+- (long long)minCount;
+- (id)init;
+- (double)paramA;
+- (BOOL)enabled;
+- (double)paramB;
+- (id)initFromEnabled:enableCount:minCount:zkwMinCount:;
+- (double)paramC;
+- (id)initWithCoder:;
+- (long long)zkwMinCount;
+- (BOOL)enableCount;
+- (void)encodeWithCoder:;
+- (double)paramM;
+- (double)paramV;
+- (id)initFromEnabled:enableCount:minCount:;
+- (double)windowBucket;
+- (id)initFromBag:;
+- (double)paramK;
++ (BOOL)supportsSecureCoding;
+@end

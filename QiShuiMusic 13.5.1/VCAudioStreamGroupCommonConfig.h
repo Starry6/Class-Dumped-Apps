@@ -1,0 +1,36 @@
+@interface VCAudioStreamGroupCommonConfig : NSObject
+@property (nonatomic) NSInteger processID;
+@property (nonatomic) BOOL isGKVoiceChat;
+@property (nonatomic) BOOL isMuted;
+@property (nonatomic) I preferredIOSampleRate;
+@property (nonatomic) I preferredIOSamplesPerFrame;
+@property (nonatomic) I audioSessionID;
+@property (nonatomic) q powerSpectrumStreamToken;
+@property (nonatomic) ^? didProcessSamplesCallback;
+@property (nonatomic) ^v didProcessSamplesCallbackContext;
+@property (nonatomic) I audioChannelIndex;
+@property (nonatomic) Q spatialAudioSourceID;
+- (unsigned int)audioSessionID;
+- (int)processID;
+- (void)dealloc;
+- (void)setProcessID:;
+- (BOOL)isMuted;
+- (void)setAudioSessionID:;
+- (void)setIsMuted:;
+- (unsigned long long)spatialAudioSourceID;
+- (BOOL)isGKVoiceChat;
+- (void)setIsGKVoiceChat:;
+- (unsigned int)audioChannelIndex;
+- (void)setAudioChannelIndex:;
+- (unsigned int)preferredIOSampleRate;
+- (void)setPreferredIOSampleRate:;
+- (unsigned int)preferredIOSamplesPerFrame;
+- (void)setPreferredIOSamplesPerFrame:;
+- (id)didProcessSamplesCallback;
+- (void)setDidProcessSamplesCallback:;
+- (id)didProcessSamplesCallbackContext;
+- (void)setDidProcessSamplesCallbackContext:;
+- (long long)powerSpectrumStreamToken;
+- (void)setPowerSpectrumStreamToken:;
+- (void)setSpatialAudioSourceID:;
+@end

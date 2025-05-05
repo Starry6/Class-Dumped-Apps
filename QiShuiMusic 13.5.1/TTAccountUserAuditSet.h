@@ -1,0 +1,32 @@
+@interface TTAccountUserAuditSet : TTAccountBaseEntity
+@property (nonatomic) TTAccountUserAuditEntity currentUserEntity;
+@property (nonatomic) TTAccountVerifiedUserAuditEntity verifiedUserAuditEntity;
+@property (nonatomic) TTAccountMediaUserAuditEntity pgcUserAuditEntity;
+@property (nonatomic) TTAccountCommonMediaUserAuditEntity commonUserAuditEntity;
+@property (nonatomic) NSDictionary bgInfo;
+@property (nonatomic) NSDictionary pgc_edit_info;
+@property (nonatomic) NSDictionary common_edit_info;
+@property (nonatomic) NSDictionary rp_edit_info;
+@property (nonatomic) TTAccountEditUserProfileActivityTipsModel editUserProfileActivityTipsModel;
+- (id)bgInfo;
+- (id)commonUserAuditEntity;
+- (id)common_edit_info;
+- (id)currentUserEntity;
+- (id)editUserProfileActivityTipsModel;
+- (id)pgcUserAuditEntity;
+- (id)pgc_edit_info;
+- (id)rp_edit_info;
+- (void)setBgInfo:;
+- (void)setCommonUserAuditEntity:;
+- (void)setCommon_edit_info:;
+- (void)setCurrentUserEntity:;
+- (void)setEditUserProfileActivityTipsModel:;
+- (void)setPgcUserAuditEntity:;
+- (void)setPgc_edit_info:;
+- (void)setRp_edit_info:;
+- (void)setVerifiedUserAuditEntity:;
+- (id)verifiedUserAuditEntity;
+- (id)initWithUserModel:;
+- (id)initWithDictionary:;
+- (void).cxx_destruct;
+@end

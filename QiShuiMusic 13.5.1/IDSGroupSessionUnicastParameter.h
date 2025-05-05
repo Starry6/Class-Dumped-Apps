@@ -1,0 +1,34 @@
+@interface IDSGroupSessionUnicastParameter : NSObject
+@property (nonatomic) NSString groupSessionID;
+@property (nonatomic) Q localParticipantID;
+@property (nonatomic) Q remoteParticipantID;
+@property (nonatomic) NSData salt;
+@property (nonatomic) Q connectionIndex;
+@property (nonatomic) q dataMode;
+@property (nonatomic) NSObject<OS_nw_parameters> parameters;
+@property (nonatomic) NSObject<OS_nw_endpoint> endpoint;
+@property (nonatomic) NSInteger socket;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)salt;
+- (int)socket;
+- (void)setSocket:;
+- (id)parameters;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)endpoint;
+- (long long)dataMode;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)groupSessionID;
+- (id)initWithGroupSessionID:localParticipantID:remoteParticipantID:dataMode:connectionIndex:;
+- (id)initWithGroupSessionID:localParticipantID:remoteParticipantID:salt:dataMode:connectionIndex:;
+- (id)initWithConnectedSocket:dataMode:connectionIndex:;
+- (void)requestNWConnectionforIDSGroupSessionUnicastParameter:;
+- (void)_requestNWConnectionforIDSGroupSessionUnicastParameter:;
+- (void)_setUpNWConnectionforTesting:;
+- (unsigned long long)localParticipantID;
+- (unsigned long long)remoteParticipantID;
+- (unsigned long long)connectionIndex;
++ (BOOL)supportsSecureCoding;
+@end

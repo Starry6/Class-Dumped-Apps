@@ -1,0 +1,32 @@
+@interface IESLiveBusinessConfigureModel : NSObject
+@property (nonatomic) IESLiveGCDTimer timeStampTimer;
+@property (nonatomic) IESLiveGCDTimer dismissTimer;
+@property (nonatomic) BOOL needToCacheResourceId;
+@property (nonatomic) q type;
+@property (nonatomic) HTSLiveBusinessConfigure configure;
+@property (nonatomic) <IESLiveBusinessConfigureDelegate> delegate;
+- (void)cacheBusinessId;
+- (BOOL)enableShow;
+- (id)initWithBusinessConfigure:;
+- (BOOL)needToCacheResourceId;
+- (void)preLoadImageIfNeed;
+- (void)setConfigure:;
+- (void)setNeedToCacheResourceId:;
+- (void)setTimeStampTimer:;
+- (void)startDismissTimer;
+- (void)startTimerWithDuration:;
+- (id)timeStampTimer;
+- (void)timerNeverArrived;
+- (void)tryStartTimer;
+- (long long)typeWithBusinessConfigure;
+- (id)userIDKey;
+- (id)configure;
+- (void)dealloc;
+- (void)setDelegate:;
+- (void)setType:;
+- (id)dismissTimer;
+- (long long)type;
+- (id)delegate;
+- (void)setDismissTimer:;
+- (void).cxx_destruct;
+@end

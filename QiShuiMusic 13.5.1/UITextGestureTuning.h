@@ -1,0 +1,36 @@
+@interface UITextGestureTuning : NSObject
+@property (nonatomic) NSObject<UICoordinateSpace> containerCoordinateSpace;
+@property (nonatomic) NSObject<UICoordinateSpace> gestureCoordinateSpace;
+@property (nonatomic) BOOL shouldUseLineThreshold;
+@property (nonatomic) BOOL shouldIncludeConstantOffset;
+@property (nonatomic) BOOL includeTipProjection;
+@property (nonatomic) BOOL strongerBiasAgainstUp;
+@property (nonatomic) BOOL didBreakLineThreshold;
+@property (nonatomic) double initialPosition;
+@property (nonatomic) double lineBreakProgress;
+- (void)_reset;
+- (id)init;
+- (void)setStrongerBiasAgainstUp:;
+- (BOOL)shouldUseLineThreshold;
+- (id)touchAlignedPointForPoint:translation:;
+- (id)pointIfPlacedCarefully:;
+- (void).cxx_destruct;
+- (void)setShouldUseLineThreshold:;
+- (BOOL)strongerBiasAgainstUp;
+- (id)pointForGestureState:point:translation:;
+- (void)assertInitialPositionFromTopOfCaret:distanceFromCaret:;
+- (void)updateWithTouches:gestureState:;
+- (void)updateVisibilityOffsetForGestureState:touchType:locationInSceneReferenceSpace:majorRadius:;
+- (void)updateWeightedPointWithGestureState:location:;
+- (id)containerCoordinateSpace;
+- (void)setContainerCoordinateSpace:;
+- (id)gestureCoordinateSpace;
+- (void)setGestureCoordinateSpace:;
+- (BOOL)shouldIncludeConstantOffset;
+- (void)setShouldIncludeConstantOffset:;
+- (BOOL)includeTipProjection;
+- (void)setIncludeTipProjection:;
+- (BOOL)didBreakLineThreshold;
+- (double)initialPosition;
+- (double)lineBreakProgress;
+@end

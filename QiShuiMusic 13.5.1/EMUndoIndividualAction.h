@@ -1,0 +1,33 @@
+@interface EMUndoIndividualAction : NSObject
+@property (nonatomic) q actionType;
+@property (nonatomic) NSArray messageDatabaseIDs;
+@property (nonatomic) ECMessageFlagChange flagChange;
+@property (nonatomic) NSURL destinationMailboxURL;
+@property (nonatomic) NSDate readLaterDate;
+@property (nonatomic) EMFollowUp followUp;
+@property (nonatomic) BOOL blockSender;
+@property (nonatomic) q conversationID;
+@property (nonatomic) q conversationNotificationLevel;
+- (long long)actionType;
+- (void)setActionType:;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (long long)conversationID;
+- (void)setConversationID:;
+- (void)setFollowUp:;
+- (id)followUp;
+- (id)flagChange;
+- (void)setReadLaterDate:;
+- (id)destinationMailboxURL;
+- (long long)conversationNotificationLevel;
+- (void)setConversationNotificationLevel:;
+- (id)readLaterDate;
+- (BOOL)blockSender;
+- (id)messageDatabaseIDs;
+- (void)setMessageDatabaseIDs:;
+- (void)setFlagChange:;
+- (void)setDestinationMailboxURL:;
+- (void)setBlockSender:;
++ (BOOL)supportsSecureCoding;
+@end

@@ -1,0 +1,31 @@
+@interface IESLiveDynamicRankListEntranceView : UIView
+@property (nonatomic) <IESLiveDynamicRankListEntranceViewDelegate> delegate;
+@property (nonatomic) <IESLiveDynamicRankListEntranceViewDataProvider> dataProvider;
+@property (nonatomic) UIView<IESHYContainerProtocol> hybridContainer;
+@property (nonatomic) IESLiveRankListViewBuilder viewBuilder;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)viewDidLoadFailedWithUrl:error:;
+- (id)hybridContainer;
+- (void)didSetAttachingDIContext;
+- (void)enterRoom;
+- (void)exitRoom;
+- (id)initWithDelegate:dataProvider:;
+- (id)pluginLayoutContentSize;
+- (void)setHybridContainer:;
+- (void)setupHybridContainer;
+- (void)showEntrance:;
+- (void)updateEntranceStatus:;
+- (void)viewDidChangeIntrinsicContentSize:;
+- (id)viewType;
+- (id)dataProvider;
+- (id)intrinsicContentSize;
+- (void)setDelegate:;
+- (void)setDataProvider:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)viewBuilder;
+- (void)setViewBuilder:;
+@end

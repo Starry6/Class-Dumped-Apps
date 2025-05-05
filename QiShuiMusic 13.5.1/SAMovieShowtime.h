@@ -1,0 +1,31 @@
+@interface SAMovieShowtime : AceObject
+@property (nonatomic) SAUIAppPunchOut buyTicketsPunchout;
+@property (nonatomic) NSNumber childTicketQuantity;
+@property (nonatomic) BOOL is3d;
+@property (nonatomic) BOOL isImax;
+@property (nonatomic) NSNumber regularTicketQuantity;
+@property (nonatomic) NSNumber seniorTicketQuantity;
+@property (nonatomic) SACalendar showtime;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)groupIdentifier;
+- (id)encodedClassName;
+- (BOOL)is3d;
+- (void)setIs3d:;
+- (id)showtime;
+- (id)buyTicketsPunchout;
+- (void)setBuyTicketsPunchout:;
+- (id)childTicketQuantity;
+- (void)setChildTicketQuantity:;
+- (BOOL)isImax;
+- (void)setIsImax:;
+- (id)regularTicketQuantity;
+- (void)setRegularTicketQuantity:;
+- (id)seniorTicketQuantity;
+- (void)setSeniorTicketQuantity:;
+- (void)setShowtime:;
++ (id)showtime;
++ (id)showtimeWithDictionary:context:;
+@end

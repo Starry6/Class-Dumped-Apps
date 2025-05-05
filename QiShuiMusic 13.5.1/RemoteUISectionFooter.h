@@ -1,0 +1,36 @@
+@interface RemoteUISectionFooter : UIView
+@property (nonatomic) <RUITableFooterDelegate> delegate;
+@property (nonatomic) NSURL linkURL;
+@property (nonatomic) @? linkAction;
+@property (nonatomic) RUILinkLabel linkLabel;
+@property (nonatomic) UILabel textLabel;
+@property (nonatomic) UIButton linkButton;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)textLabel;
+- (void)layoutSubviews;
+- (void)setDelegate:;
+- (void)setFont:;
+- (id)initWithAttributes:;
+- (void)setTextColor:;
+- (id)delegate;
+- (id)sizeThatFits:;
+- (void).cxx_destruct;
+- (void)setTextAlignment:;
+- (id)linkButton;
+- (void)setTopMargin:;
+- (id)linkURL;
+- (void)setLinkURL:;
+- (id)linkLabel;
+- (id)linkAction;
+- (void)setLinkAction:;
+- (double)footerHeightForWidth:inView:;
+- (void)setText:attributes:;
+- (double)footerHeightForWidth:inTableView:;
+- (void)_linkPressed;
+- (double)_getTopMargin;
+- (double)_footerHeightForWidth:;
+- (id)_labelSizeForWidth:;
+@end

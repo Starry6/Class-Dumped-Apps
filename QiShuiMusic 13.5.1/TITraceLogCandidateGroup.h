@@ -1,0 +1,35 @@
+@interface TITraceLogCandidateGroup : NSObject
+@property (nonatomic) double probability;
+@property (nonatomic) NSString sequenceString;
+@property (nonatomic) NSString omegaFactorsString;
+@property (nonatomic) double omegaWordScore;
+@property (nonatomic) double omegaLanguagePowerScore;
+@property (nonatomic) double omegaTypingScore;
+@property (nonatomic) double omegaGeometryScore;
+@property (nonatomic) NSArray candidates;
+@property (nonatomic) NSDictionary dictionaryRepresentation;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (id)candidates;
+- (void).cxx_destruct;
+- (id)dictionaryRepresentation;
+- (void)addCandidate:;
+- (double)probability;
+- (void)setProbability:;
+- (id)sequenceString;
+- (void)setSequenceString:;
+- (id)omegaFactorsString;
+- (void)setOmegaFactorsString:;
+- (double)omegaWordScore;
+- (void)setOmegaWordScore:;
+- (double)omegaLanguagePowerScore;
+- (void)setOmegaLanguagePowerScore:;
+- (double)omegaTypingScore;
+- (void)setOmegaTypingScore:;
+- (double)omegaGeometryScore;
+- (void)setOmegaGeometryScore:;
++ (id)groupFromGroupString:;
+@end

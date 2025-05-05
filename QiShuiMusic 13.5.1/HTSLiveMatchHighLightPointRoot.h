@@ -1,0 +1,2 @@
+@interface HTSLiveMatchHighLightPointRoot : GPBRootObject
+@end

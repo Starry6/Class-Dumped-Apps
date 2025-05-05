@@ -1,0 +1,31 @@
+@interface AXMDisplayManager : NSObject
+@property (nonatomic) FBSDisplayMonitor displayMonitor;
+@property (nonatomic) double mobileGestaltOrientation;
+@property (nonatomic) AXMDisplay frontBoardMainDisplay;
+@property (nonatomic) AXMDisplay coreAnimationMainDisplay;
+@property (nonatomic) BOOL isInitialized;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)displayMonitor:willDisconnectIdentity:;
+- (BOOL)isInitialized;
+- (void)displayMonitor:didConnectIdentity:withConfiguration:;
+- (void)dealloc;
+- (void)setDisplayMonitor:;
+- (id)initWithCompletion:;
+- (void)displayMonitor:didUpdateIdentity:withConfiguration:;
+- (id)displayMonitor;
+- (void).cxx_destruct;
+- (id)description;
+- (id)coreAnimationMainDisplay;
+- (id)initAndWaitForMainDisplayConfiguration;
+- (double)mobileGestaltOrientation;
+- (id)frontBoardMainDisplay;
+- (id)_displayPropertiesFromMobileGestalt;
+- (void)_updateDisplay:withCADisplay:;
+- (long long)_discreteOrientationForOrientation:;
+- (void)_updateDisplay:withConfiguration:;
+- (void)_updateDisplayPropertiesWithConfiguration:;
+- (void)setMobileGestaltOrientation:;
+@end

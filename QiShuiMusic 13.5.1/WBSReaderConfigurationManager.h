@@ -1,0 +1,35 @@
+@interface WBSReaderConfigurationManager : NSObject
+@property (nonatomic) NSDictionary configurationToSave;
+@property (nonatomic) NSDictionary configurationToSendToWebPage;
+@property (nonatomic) BOOL javaScriptEnabled;
+@property (nonatomic) BOOL darkModeEnabled;
+@property (nonatomic) BOOL isOLEDDisplay;
+@property (nonatomic) BOOL canMakeTextBigger;
+@property (nonatomic) BOOL canMakeTextSmaller;
+@property (nonatomic) BOOL resettingTextSizeWouldHaveEffect;
+- (BOOL)canMakeTextSmaller;
+- (void)makeTextBigger;
+- (void)_migrateToVersion5IfNecessary;
+- (void)setDarkModeEnabled:;
+- (id)initWithPersistedSettingsAsDictionaryRepresentation:fontManager:prefersLargerDefaultFontSize:;
+- (void)setTheme:forAppearance:;
+- (id)initWithPersistedSettingsAsDictionaryRepresentation:fontManager:;
+- (void)setIsOLEDDisplay:;
+- (id)configurationToSendToWebPage;
+- (BOOL)resettingTextSizeWouldHaveEffect;
+- (id)configurationToSave;
+- (void)resetTextSize;
+- (long long)_defaultThemeForAppearance:;
+- (id)fontForLanguageTag:;
+- (long long)_effectiveTextZoomIndex;
+- (long long)themeForAppearance:;
+- (void)setJavaScriptEnabled:;
+- (long long)_defaultTextZoomIndex;
+- (BOOL)isOLEDDisplay;
+- (void)makeTextSmaller;
+- (BOOL)darkModeEnabled;
+- (void).cxx_destruct;
+- (BOOL)javaScriptEnabled;
+- (BOOL)canMakeTextBigger;
+- (void)setFont:forLanguageTag:;
+@end

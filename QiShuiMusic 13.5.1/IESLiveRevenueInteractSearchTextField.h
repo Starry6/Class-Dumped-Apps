@@ -1,0 +1,31 @@
+@interface IESLiveRevenueInteractSearchTextField : UITextField
+@property (nonatomic) UIImage leftImage;
+@property (nonatomic) UIImage rightImage;
+@property (nonatomic) double leftSpacer;
+@property (nonatomic) double rightSpacer;
+@property (nonatomic) @? textFieldDidChangeBlock;
+@property (nonatomic) @? didClickedClearButtonBlock;
+- (void)setRightSpacer:;
+- (void)setClearHidden:;
+- (void)didClickedClearButton:;
+- (id)didClickedClearButtonBlock;
+- (double)leftSpacer;
+- (double)rightSpacer;
+- (void)setDidClickedClearButtonBlock:;
+- (void)setLeftSpacer:;
+- (void)setTextFieldDidChangeBlock:;
+- (id)textFieldDidChangeBlock;
+- (void)dealloc;
+- (id)leftViewRectForBounds:;
+- (id)initWithFrame:;
+- (id)editingRectForBounds:;
+- (void).cxx_destruct;
+- (id)textRectForBounds:;
+- (id)placeholderRectForBounds:;
+- (id)rightViewRectForBounds:;
+- (id)leftImage;
+- (void)setLeftImage:;
+- (void)textFieldTextDidChange:;
+- (id)rightImage;
+- (void)setRightImage:;
+@end

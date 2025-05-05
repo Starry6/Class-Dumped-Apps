@@ -1,0 +1,35 @@
+@interface GEORPProblemProvider : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) GEOProtobufSession protobufSession;
+@property (nonatomic) GEOProtobufSessionTask submissionTask;
+@property (nonatomic) GEOProtobufSessionTask statusTask;
+@property (nonatomic) @? submissionErrorHandler;
+@property (nonatomic) @? submissionFinishedHandler;
+@property (nonatomic) @? statusErrorHandler;
+@property (nonatomic) @? statusFinishedHandler;
+- (id)init;
+- (void)cancelRequest;
+- (void).cxx_destruct;
+- (void)protobufSession:didCompleteTask:;
+- (void)startSubmissionRequest:finished:error:;
+- (void)startStatusRequest:finished:error:;
+- (id)protobufSession;
+- (id)submissionTask;
+- (void)setSubmissionTask:;
+- (id)statusTask;
+- (void)setStatusTask:;
+- (id)submissionErrorHandler;
+- (void)setSubmissionErrorHandler:;
+- (id)submissionFinishedHandler;
+- (void)setSubmissionFinishedHandler:;
+- (id)statusErrorHandler;
+- (void)setStatusErrorHandler:;
+- (id)statusFinishedHandler;
+- (void)setStatusFinishedHandler:;
+- (void)didCompleteSubmissionTask;
+- (void)didCompleteStatusTask;
+- (id)cancelError;
+@end

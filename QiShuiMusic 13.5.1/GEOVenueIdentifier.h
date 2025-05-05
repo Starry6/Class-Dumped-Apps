@@ -1,0 +1,30 @@
+@interface GEOVenueIdentifier : NSObject
+@property (nonatomic) BOOL hasVenueID;
+@property (nonatomic) Q venueID;
+@property (nonatomic) BOOL hasFeatureID;
+@property (nonatomic) Q featureID;
+@property (nonatomic) BOOL hasBusinessID;
+@property (nonatomic) Q businessID;
+@property (nonatomic) NSArray componentIdentifiers;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (unsigned long long)businessID;
+- (unsigned long long)venueID;
+- (unsigned long long)featureID;
+- (void).cxx_destruct;
+- (id)initWithVenueID:featureID:businessID:;
+- (id)placeDataVenueIdentifier;
+- (id)placeDataVenueIdentifierForVenue;
+- (BOOL)_hasVenueID;
+- (BOOL)_hasFeatureID;
+- (BOOL)_hasBusinessID;
+- (id)componentIdentifiers;
+- (id)initWithVenueIdentifiers:;
+- (id)initWithVenueID:componentIdentifiers:;
+- (id)initWithVenueID:featureID:businessID:componentIdentifiers:;
+- (id)initWithVenueID:;
++ (id)componentIdentifiersFromVenueIdentifiers:;
+@end

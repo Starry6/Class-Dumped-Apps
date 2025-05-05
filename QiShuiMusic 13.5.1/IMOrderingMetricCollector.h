@@ -1,0 +1,36 @@
+@interface IMOrderingMetricCollector : NSObject
+@property (nonatomic) NSObject<OS_dispatch_queue> orderingMetricQueue;
+@property (nonatomic) Q numberOfMessagesSeen;
+@property (nonatomic) Q numberOfMessagesPlacedOutOfOrder;
+@property (nonatomic) Q numberOfMessagesPlacedCorrectly;
+@property (nonatomic) Q numberOfHistoryQuerySeen;
+@property (nonatomic) Q numberOfHistoryQueryOutOfOrder;
+@property (nonatomic) Q numberOfHistoryQueryPlacedCorrectly;
+@property (nonatomic) BOOL needToSubmitMetric;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (void)metricIncomingMessage:items:;
+- (BOOL)_metricIncomingMessage:items:withContext:;
+- (void)_metricHistoryQueryOrder:;
+- (void)metricHistoryQueryOrder:;
+- (void)_submitMetricIfNeeded;
+- (void)_submitMetric;
+- (void)_persistMetric;
+- (id)orderingMetricQueue;
+- (unsigned long long)numberOfMessagesSeen;
+- (void)setNumberOfMessagesSeen:;
+- (unsigned long long)numberOfMessagesPlacedOutOfOrder;
+- (void)setNumberOfMessagesPlacedOutOfOrder:;
+- (unsigned long long)numberOfMessagesPlacedCorrectly;
+- (void)setNumberOfMessagesPlacedCorrectly:;
+- (unsigned long long)numberOfHistoryQuerySeen;
+- (void)setNumberOfHistoryQuerySeen:;
+- (unsigned long long)numberOfHistoryQueryOutOfOrder;
+- (void)setNumberOfHistoryQueryOutOfOrder:;
+- (unsigned long long)numberOfHistoryQueryPlacedCorrectly;
+- (void)setNumberOfHistoryQueryPlacedCorrectly:;
+- (BOOL)needToSubmitMetric;
+- (void)setNeedToSubmitMetric:;
++ (id)sharedInstance;
+@end

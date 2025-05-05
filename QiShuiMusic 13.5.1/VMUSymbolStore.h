@@ -1,0 +1,33 @@
+@interface VMUSymbolStore : NSObject
+@property (nonatomic) {_CSTypeRef=QQ} symbolicator;
+@property (nonatomic) VMUProcessObjectGraph graph;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)graph;
+- (void)setGraph:;
+- (id)symbolicator;
+- (void)dealloc;
+- (void)parser:foundCharacters:;
+- (BOOL)_refillSymbolOwnersWithDataAndReportProgress:;
+- (void)_extractAddressesFromSymbolicator;
+- (id)_createSymbolicatorSignature;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (id)_createResymbolicatedSignature;
+- (void)parser:didEndElement:namespaceURI:qualifiedName:;
+- (void)parser:didStartElement:namespaceURI:qualifiedName:attributes:;
+- (id)initWithSymbolicator:debugTimer:;
+- (void).cxx_destruct;
+- (void)_groupAddressTrackerByUuid;
+- (BOOL)_getDsymPathsForUUIDs:andReportProgress:;
+- (BOOL)resymbolicateWithDsymPath:libraryNames:all:progress:showDebugInfo:error:;
+- (void)addAddress:origin:;
+- (void)addBacktrace:origin:;
+- (BOOL)_readContentsOfDsymFile:error:;
+- (void)setSymbolicator:;
+- (id).cxx_construct;
+- (void)_flagSymbolOwnersForResymbolication;
++ (BOOL)supportsSecureCoding;
+@end

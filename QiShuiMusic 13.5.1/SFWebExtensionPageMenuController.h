@@ -1,0 +1,31 @@
+@interface SFWebExtensionPageMenuController : WBSWebExtensionToolbarItem
+@property (nonatomic) <WBSWebExtensionWindow> windowDisplayingPopupWebView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithExtension:;
+- (void)webViewDidClose:;
+- (id)webView:createWebViewWithConfiguration:forNavigationAction:windowFeatures:;
+- (void).cxx_destruct;
+- (BOOL)showingExtensionPopup;
+- (id)popupWebView;
+- (void)didSetBadgeText:forTabWithIdentifier:;
+- (void)didSetEnabledState:forTabWithIdentifier:;
+- (void)didSetIcon:forTabWithIdentifier:;
+- (void)popupDidNavigateRequestingNewWindowToURL:;
+- (id)iconForTab:;
+- (id)iconForTab:size:;
+- (void)_loadWebExtensionPopupURL:parentViewController:popoverSourceInfo:forTab:;
+- (void)showPopupForTab:parentViewController:popoverSourceInfo:;
+- (void)performActionForTab:parentViewController:popoverSourceInfo:;
+- (void)dismissPopupImmediatelyIfNecessary;
+- (id)activityForTab:;
+- (id)alertItemForTab:;
+- (BOOL)shouldShowWarningTriangleImageForTab:;
+- (void)_createTabWithURL:;
+- (id)windowDisplayingPopupWebView;
+- (id)webExtension;
++ (id)badgeViewForText:;
++ (id)_imageViewForWarningTriangleImage:;
+@end

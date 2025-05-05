@@ -1,0 +1,33 @@
+@interface CEMAccountmacOSServerDeclaration : CEMConfigurationBase
+@property (nonatomic) NSString payloadHostName;
+@property (nonatomic) NSString payloadAccountDescription;
+@property (nonatomic) NSArray payloadConfiguredAccounts;
+@property (nonatomic) NSString payloadCredentials;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (BOOL)multipleAllowed;
+- (BOOL)mustBeSupervised;
+- (int)activationLevel;
+- (id)assetReferences;
+- (BOOL)loadPayload:error:;
+- (id)serializePayloadWithAssetProviders:;
+- (id)payloadAccountDescription;
+- (void)setPayloadAccountDescription:;
+- (id)payloadHostName;
+- (void)setPayloadHostName:;
+- (id)payloadConfiguredAccounts;
+- (void)setPayloadConfiguredAccounts:;
+- (id)payloadCredentials;
+- (void)setPayloadCredentials:;
++ (id)profileType;
++ (id)registeredClassName;
++ (id)registeredIdentifier;
++ (id)allowedPayloadKeys;
++ (id)restrictionPayloadKeys;
++ (id)buildWithIdentifier:withHostName:withAccountDescription:withConfiguredAccounts:withCredentials:;
++ (id)buildRequiredOnlyWithIdentifier:withHostName:withConfiguredAccounts:;
+@end

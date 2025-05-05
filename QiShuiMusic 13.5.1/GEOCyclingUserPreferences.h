@@ -1,0 +1,38 @@
+@interface GEOCyclingUserPreferences : PBCodable
+@property (nonatomic) BOOL hasAvoidStairs;
+@property (nonatomic) BOOL avoidStairs;
+@property (nonatomic) BOOL hasAvoidHills;
+@property (nonatomic) BOOL avoidHills;
+@property (nonatomic) BOOL hasAvoidBusyRoads;
+@property (nonatomic) BOOL avoidBusyRoads;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)setAvoidHills:;
+- (void)readAll:;
+- (BOOL)hasAvoidStairs;
+- (id)unknownFields;
+- (void)setHasAvoidBusyRoads:;
+- (void)setHasAvoidStairs:;
+- (BOOL)avoidBusyRoads;
+- (BOOL)hasAvoidBusyRoads;
+- (void)setAvoidStairs:;
+- (void)setHasAvoidHills:;
+- (BOOL)avoidHills;
+- (BOOL)avoidStairs;
+- (void)setAvoidBusyRoads:;
+- (BOOL)hasAvoidHills;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
++ (BOOL)isValid:;
+@end

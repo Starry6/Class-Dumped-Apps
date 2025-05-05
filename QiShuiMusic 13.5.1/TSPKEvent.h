@@ -1,0 +1,35 @@
+@interface TSPKEvent : TSPKBaseEvent
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) Q eventType;
+@property (nonatomic) TSPKEventData eventData;
+@property (nonatomic) NSDictionary params;
+@property (nonatomic) NSArray ignoreSymbolContexts;
+@property (nonatomic) NSString methodType;
+@property (nonatomic) q ruleId;
+@property (nonatomic) BOOL isIgnore;
+- (id)apiClass;
+- (id)apiDataType;
+- (id)apiMethod;
+- (id)callToken;
+- (id)ignoreSymbolContexts;
+- (BOOL)isIgnore;
+- (id)methodType;
+- (id)rulerParams;
+- (void)setIgnoreSymbolContexts:;
+- (void)setIsIgnore:;
+- (void)setMethodType:;
+- (id)tag;
+- (unsigned long long)eventType;
+- (void)setEventType:;
+- (void).cxx_destruct;
+- (id)eventData;
+- (id)params;
+- (void)setEventData:;
+- (id)apiType;
+- (void)setParams:;
+- (void)setRuleId:;
+- (long long)ruleId;
+@end

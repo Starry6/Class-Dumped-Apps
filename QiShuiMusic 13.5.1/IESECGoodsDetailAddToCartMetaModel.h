@@ -1,0 +1,38 @@
+@interface IESECGoodsDetailAddToCartMetaModel : MTLModel
+@property (nonatomic) BOOL addToCartDisabled;
+@property (nonatomic) BOOL displayAddToCart;
+@property (nonatomic) NSString receiveAddressId;
+@property (nonatomic) IESECToastElement successToast;
+@property (nonatomic) Q addCartAnimationStyle;
+@property (nonatomic) NSString addCartCoverImageURL;
+@property (nonatomic) NSString addCartSuccessSchema;
+@property (nonatomic) NSString skuId;
+@property (nonatomic) NSDictionary addCartExtraTrackMeta;
+@property (nonatomic) q businessLineID;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (unsigned long long)addCartAnimationStyle;
+- (id)addCartCoverImageURL;
+- (id)addCartExtraTrackMeta;
+- (id)addCartSuccessSchema;
+- (BOOL)addToCartDisabled;
+- (long long)businessLineID;
+- (BOOL)displayAddToCart;
+- (id)receiveAddressId;
+- (void)setAddCartAnimationStyle:;
+- (void)setAddCartCoverImageURL:;
+- (void)setAddCartExtraTrackMeta:;
+- (void)setAddCartSuccessSchema:;
+- (void)setAddToCartDisabled:;
+- (void)setBusinessLineID:;
+- (void)setDisplayAddToCart:;
+- (void)setReceiveAddressId:;
+- (void)setSkuId:;
+- (void)setSuccessToast:;
+- (id)skuId;
+- (id)successToast;
+- (void).cxx_destruct;
++ (id)JSONKeyPathsByPropertyKey;
+@end

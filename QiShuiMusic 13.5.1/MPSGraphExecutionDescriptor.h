@@ -1,0 +1,31 @@
+@interface MPSGraphExecutionDescriptor : NSObject
+@property (nonatomic) BOOL enableCommitAndContinue;
+@property (nonatomic) BOOL enableProfilingOpNames;
+@property (nonatomic) BOOL briefProfilingOpNames;
+@property (nonatomic) BOOL breakUpMetalEncoders;
+@property (nonatomic) @? scheduledHandler;
+@property (nonatomic) @? completionHandler;
+@property (nonatomic) BOOL waitUntilCompleted;
+@property (nonatomic) MPSGraphCompilationDescriptor compilationDescriptor;
+- (id)init;
+- (void)setCompletionHandler:;
+- (void).cxx_destruct;
+- (void)setWaitUntilCompleted:;
+- (BOOL)waitUntilCompleted;
+- (id)completionHandler;
+- (void)waitForEvent:value:;
+- (void)waitForANEPrePowerUpEvent:value:;
+- (void)signalEvent:atExecutionEvent:value:;
+- (id)compilationDescriptor;
+- (void)setCompilationDescriptor:;
+- (id)scheduledHandler;
+- (void)setScheduledHandler:;
+- (BOOL)enableCommitAndContinue;
+- (void)setEnableCommitAndContinue:;
+- (BOOL)enableProfilingOpNames;
+- (void)setEnableProfilingOpNames:;
+- (BOOL)briefProfilingOpNames;
+- (void)setBriefProfilingOpNames:;
+- (BOOL)breakUpMetalEncoders;
+- (void)setBreakUpMetalEncoders:;
+@end

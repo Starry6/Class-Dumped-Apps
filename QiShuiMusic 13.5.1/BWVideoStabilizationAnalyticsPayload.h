@@ -1,0 +1,37 @@
+@interface BWVideoStabilizationAnalyticsPayload : NSObject
+@property (nonatomic) NSInteger devicePosition;
+@property (nonatomic) NSInteger height;
+@property (nonatomic) NSInteger width;
+@property (nonatomic) float startingUIZoom;
+@property (nonatomic) float minUIZoom;
+@property (nonatomic) float maxUIZoom;
+@property (nonatomic) NSString videoType;
+@property (nonatomic) I averageLuxValue;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (void)dealloc;
+- (int)devicePosition;
+- (void)setAverageLuxValue:;
+- (void)setWidth:;
+- (void)setDevicePosition:;
+- (int)height;
+- (id)videoType;
+- (float)startingUIZoom;
+- (int)width;
+- (id)eventName;
+- (void)setHeight:;
+- (void)reset;
+- (void)setStartingUIZoom:;
+- (id)eventDictionary;
+- (unsigned int)averageLuxValue;
+- (void)setSigmaHistogram:;
+- (void)setOverscanHistogram:BinningFactor:Histogram:;
+- (float)minUIZoom;
+- (void)setMinUIZoom:;
+- (float)maxUIZoom;
+- (void)setMaxUIZoom:;
+- (void)setVideoType:;
+@end

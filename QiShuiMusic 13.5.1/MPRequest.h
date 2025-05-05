@@ -1,0 +1,37 @@
+@interface MPRequest : NSObject
+@property (nonatomic) NSOperationQueue calloutQueue;
+@property (nonatomic) NSError cancelationError;
+@property (nonatomic) NSObject<OS_dispatch_queue> cleanupQueue;
+@property (nonatomic) NSOperationQueue queue;
+@property (nonatomic) NSArray middlewareClasses;
+@property (nonatomic) NSString label;
+@property (nonatomic) q qualityOfService;
+@property (nonatomic) double timeoutInterval;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setQualityOfService:;
+- (void)prepareForResponseWithCompletion:;
+- (id)performWithCompletion:;
+- (id)init;
+- (void)cancel;
+- (id)middlewareClasses;
+- (void)setMiddlewareClasses:;
+- (id)cancelationError;
+- (long long)qualityOfService;
+- (id)_stateDumpObject;
+- (void)setLabel:;
+- (id)label;
+- (id)cleanupQueue;
+- (double)timeoutInterval;
+- (void)_performWithCompletion:;
+- (id)calloutQueue;
+- (void).cxx_destruct;
+- (id)description;
+- (void)setTimeoutInterval:;
+- (id)queue;
+- (id)copyWithZone:;
++ (Class)responseClass;
++ (double)expectedMaximumResponseTimeInterval;
+@end

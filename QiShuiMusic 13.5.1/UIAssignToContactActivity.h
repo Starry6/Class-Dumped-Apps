@@ -1,0 +1,35 @@
+@interface UIAssignToContactActivity : UIActivity
+@property (nonatomic) UIImage image;
+@property (nonatomic) CNContactPickerViewController peoplePicker;
+@property (nonatomic) CNContact person;
+@property (nonatomic) UIImagePickerController imagePickerController;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)_cleanup;
+- (id)activityTitle;
+- (id)activityType;
+- (void)setImage:;
+- (void).cxx_destruct;
+- (void)setPerson:;
+- (BOOL)contactViewController:shouldPerformDefaultActionForContactProperty:;
+- (id)person;
+- (void)contactViewController:didCompleteWithContact:;
+- (id)image;
+- (void)imagePickerController:didFinishPickingMediaWithInfo:;
+- (id)activityViewController;
+- (void)contactPicker:didSelectContact:;
+- (void)contactPickerDidCancel:;
+- (id)_systemImageName;
+- (id)imagePickerController;
+- (void)setImagePickerController:;
+- (BOOL)canPerformWithActivityItems:;
+- (void)prepareWithActivityItems:;
+- (void)_willPresentAsFormSheet;
+- (id)_embeddedActivityViewController;
+- (id)peoplePicker;
+- (void)setPeoplePicker:;
++ (unsigned long long)_xpcAttributes;
++ (BOOL)_isCapabilityBasedActivity;
+@end

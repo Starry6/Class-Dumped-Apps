@@ -1,0 +1,38 @@
+@interface PLDiscretionaryIntervalManager : NSObject
+@property (nonatomic) NSMutableDictionary identifierToDiscretionaryIntervals;
+@property (nonatomic) NSMutableDictionary activityNameToInvolvedIdentifiers;
+@property (nonatomic) NSObject<OS_dispatch_source> openIntervalTimer;
+@property (nonatomic) NSObject<OS_dispatch_source> powerlogReportTimer;
+@property (nonatomic) PLDiscretionaryEnergyMonitor discretionaryEnergyMonitor;
+@property (nonatomic) BOOL quickEnergyEnabled;
+@property (nonatomic) NSMutableDictionary mockData;
+- (id)powerlogReportTimer;
+- (id)mockData;
+- (void)logDiscretionaryIntervals;
+- (void)setQuickEnergyEnabled:;
+- (id)createOpenIntervalTimer;
+- (void)enableQuickEnergy;
+- (void)setIdentifierToDiscretionaryIntervals:;
+- (void)reportIntervalsToPowerlog;
+- (void)setMockData:;
+- (void)handlePowerlogReportTimer;
+- (id)identifierToDiscretionaryIntervals;
+- (id)discretionaryEnergyMonitor;
+- (id)createPowerlogReportTimer;
+- (void)setOpenIntervalTimer:;
+- (id)initWithEnergyMonitor:andMockData:;
+- (id)coalesceIntervals:;
+- (void)disableQuickEnergy;
+- (id)activityNameToInvolvedIdentifiers;
+- (void).cxx_destruct;
+- (void)handleStartEvent:withInfo:;
+- (void)logActivityNameToInvolvedIdentifiers;
+- (BOOL)quickEnergyEnabled;
+- (void)reportQuickEnergyForInterval:withIdentifier:andAdjustSnapshotToNow:;
+- (void)setDiscretionaryEnergyMonitor:;
+- (id)openIntervalTimer;
+- (void)setActivityNameToInvolvedIdentifiers:;
+- (void)handleStopEvent:withInfo:;
+- (void)handleOpenIntervalTimer;
+- (void)setPowerlogReportTimer:;
+@end

@@ -1,0 +1,30 @@
+@interface PCSEnvelopedKeyMaterial : PBCodable
+@property (nonatomic) BOOL hasVersion;
+@property (nonatomic) NSInteger version;
+@property (nonatomic) BOOL hasMasterKeyId;
+@property (nonatomic) NSData masterKeyId;
+@property (nonatomic) BOOL hasEncryptedSeed;
+@property (nonatomic) NSData encryptedSeed;
+- (void)setHasVersion:;
+- (void)setVersion:;
+- (int)version;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (BOOL)hasVersion;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)versionAsString:;
+- (int)StringAsVersion:;
+- (BOOL)hasMasterKeyId;
+- (BOOL)hasEncryptedSeed;
+- (id)masterKeyId;
+- (void)setMasterKeyId:;
+- (id)encryptedSeed;
+- (void)setEncryptedSeed:;
+@end

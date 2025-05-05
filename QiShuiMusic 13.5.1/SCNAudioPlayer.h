@@ -1,0 +1,33 @@
+@interface SCNAudioPlayer : NSObject
+@property (nonatomic) ^{__C3DScene=} scene;
+@property (nonatomic) BOOL customAudioNode;
+@property (nonatomic) BOOL completed;
+@property (nonatomic) AVAudioPlayerNode audioPlayer;
+@property (nonatomic) @? willStartPlayback;
+@property (nonatomic) @? didFinishPlayback;
+@property (nonatomic) AVAudioNode audioNode;
+@property (nonatomic) SCNAudioSource audioSource;
+- (id)initWithSource:;
+- (void)dealloc;
+- (void)play;
+- (void)setCompleted:;
+- (id)scene;
+- (void)recycle;
+- (void)reset;
+- (id)audioPlayer;
+- (BOOL)completed;
+- (id)audioSource;
+- (id)nodeRef;
+- (id)initWithAVAudioNode:;
+- (void)setNodeRef:;
+- (id)__CFObject;
+- (id)audioBufferFormat;
+- (id)willStartPlayback;
+- (void)setWillStartPlayback:;
+- (id)didFinishPlayback;
+- (void)setDidFinishPlayback:;
+- (id)audioNode;
+- (BOOL)customAudioNode;
++ (id)audioPlayerWithAVAudioNode:;
++ (id)audioPlayerWithSource:;
+@end

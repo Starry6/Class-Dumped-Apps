@@ -1,0 +1,35 @@
+@interface IESLiveRoomBattleChooseGuestPanel : UIView
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) UIButton confirmButton;
+@property (nonatomic) IESLiveCountTimer countTimer;
+@property (nonatomic) IESLiveEmptyView emptyView;
+@property (nonatomic) NSArray guestsInfoArray;
+@property (nonatomic) BOOL isRequesting;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)generateUidsStr;
+- (id)guestsInfoArray;
+- (void)setupCountTimer;
+- (void)confirmGuest;
+- (id)countTimer;
+- (void)didTapConfirmButton;
+- (id)initWithFrame:guestsInfo:DIContext:;
+- (BOOL)isRequesting;
+- (long long)selectGuestCount;
+- (void)setCountTimer:;
+- (void)setGuestsInfoArray:;
+- (void)setIsRequesting:;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (void)setCollectionView:;
+- (void).cxx_destruct;
+- (id)collectionView;
+- (void)setupUI;
+- (id)confirmButton;
+- (void)setConfirmButton:;
+- (id)emptyView;
+- (void)setEmptyView:;
+@end

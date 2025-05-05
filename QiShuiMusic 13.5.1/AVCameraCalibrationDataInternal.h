@@ -1,0 +1,2 @@
+@interface AVCameraCalibrationDataInternal : NSObject
+@end

@@ -1,0 +1,33 @@
+@interface IESLiveSaaSRoomFilter : NSObject
+@property (nonatomic) Q filterID;
+@property (nonatomic) NSString name;
+@property (nonatomic) NSString sourcePath;
+@property (nonatomic) NSString imageName;
+@property (nonatomic) NSArray iconDownloadURLs;
+@property (nonatomic) NSString tagsUpdatedTimeStamp;
+@property (nonatomic) BOOL isNew;
+@property (nonatomic) BOOL isLocal;
+@property (nonatomic) IESLiveSaaSRoomFilterConfig config;
+- (id)iconDownloadURLs;
+- (id)pr_convertToDict:error:;
+- (void)setConfigWithJsonStr:;
+- (void)setFilterID:;
+- (void)setIconDownloadURLs:;
+- (void)setTagsUpdatedTimeStamp:;
+- (id)tagsUpdatedTimeStamp;
+- (id)sourcePath;
+- (void)setIsLocal:;
+- (void)setName:;
+- (void)setImageName:;
+- (void)setIsNew:;
+- (id)imageName;
+- (BOOL)isNew;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (id)name;
+- (BOOL)isLocal;
+- (id)config;
+- (void)setSourcePath:;
+- (BOOL)isEqual:;
+- (unsigned long long)filterID;
+@end

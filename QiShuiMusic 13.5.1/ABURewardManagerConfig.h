@@ -1,0 +1,34 @@
+@interface ABURewardManagerConfig : NSObject
+@property (nonatomic) ABUAdPackage adPackage;
+@property (nonatomic) q tag;
+@property (nonatomic) double timerDelay;
+@property (nonatomic) double allowRequestInterval;
+@property (nonatomic) q retryTimes;
+@property (nonatomic) BOOL checkByGroMore;
+@property (nonatomic) ABURewardedVideoModel rewardedVideoModel;
+@property (nonatomic) NSString linkID;
+@property (nonatomic) ABUMediationSlotConfig mediationSlotConfig;
+@property (nonatomic) NSDictionary adLoadingParam;
+- (id)adLoadingParam;
+- (id)adPackage;
+- (double)allowRequestInterval;
+- (BOOL)checkByGroMore;
+- (id)mediationSlotConfig;
+- (long long)retryTimes;
+- (id)rewardedVideoModel;
+- (void)setAdLoadingParam:;
+- (void)setAdPackage:;
+- (void)setAllowRequestInterval:;
+- (void)setCheckByGroMore:;
+- (void)setMediationSlotConfig:;
+- (void)setRetryTimes:;
+- (void)setRewardedVideoModel:;
+- (void)setTimerDelay:;
+- (double)timerDelay;
+- (long long)tag;
+- (id)init;
+- (void)setTag:;
+- (void).cxx_destruct;
+- (id)linkID;
+- (void)setLinkID:;
+@end

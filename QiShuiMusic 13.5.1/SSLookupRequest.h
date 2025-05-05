@@ -1,0 +1,37 @@
+@interface SSLookupRequest : SSRequest
+@property (nonatomic) SSLookupProperties _lookupProperties;
+@property (nonatomic) NSString keyProfile;
+@property (nonatomic) q localizationStyle;
+@property (nonatomic) SSAuthenticationContext authenticationContext;
+@property (nonatomic) BOOL authenticatesIfNeeded;
+@property (nonatomic) q personalizationStyle;
+@property (nonatomic) q resultFilters;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithXPCEncoding:;
+- (id)initWithLocation:;
+- (long long)personalizationStyle;
+- (id)init;
+- (void)dealloc;
+- (void)setKeyProfile:;
+- (id)copyXPCEncoding;
+- (id)authenticationContext;
+- (id)keyProfile;
+- (BOOL)start;
+- (void)startWithCompletionBlock:;
+- (void)setAuthenticationContext:;
+- (void)setValue:forRequestParameter:;
+- (void)setPersonalizationStyle:;
+- (long long)resultFilters;
+- (id)valueForRequestParameter:;
+- (long long)localizationStyle;
+- (void)setLocalizationStyle:;
+- (BOOL)authenticatesIfNeeded;
+- (void)setAuthenticatesIfNeeded:;
+- (void)startWithLookupBlock:;
+- (id)_lookupProperties;
+- (void)_setTimeoutInterval:;
+- (void)setResultFilters:;
+@end

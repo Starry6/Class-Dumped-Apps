@@ -1,0 +1,38 @@
+@interface PHCloudInvitation : PHObject
+@property (nonatomic) NSString albumGUID;
+@property (nonatomic) NSString cloudGUID;
+@property (nonatomic) NSInteger invitationStateLocal;
+@property (nonatomic) NSNumber inviteeEmailKey;
+@property (nonatomic) NSString inviteeHashedPersonID;
+@property (nonatomic) NSInteger invitationState;
+@property (nonatomic) NSString inviteeFirstName;
+@property (nonatomic) NSString inviteeLastName;
+@property (nonatomic) NSString inviteeFullName;
+@property (nonatomic) BOOL isMine;
+@property (nonatomic) NSDate inviteeSubscriptionDate;
+@property (nonatomic) NSArray inviteeEmails;
+@property (nonatomic) NSArray inviteePhones;
+@property (nonatomic) NSString invitationStateDescription;
+- (id)personInfoManager;
+- (id)cloudGUID;
+- (void).cxx_destruct;
+- (int)invitationState;
+- (id)initWithFetchDictionary:propertyHint:photoLibrary:;
+- (id)inviteeEmails;
+- (id)inviteePhones;
+- (id)albumGUID;
+- (id)inviteeFirstName;
+- (id)inviteeLastName;
+- (id)inviteeHashedPersonID;
+- (Class)changeRequestClass;
+- (id)inviteeDisplayNameIncludingEmail:;
+- (id)invitationStateDescription;
+- (id)inviteeFullName;
+- (BOOL)isMine;
+- (id)inviteeSubscriptionDate;
+- (int)invitationStateLocal;
+- (id)inviteeEmailKey;
++ (id)fetchType;
++ (id)managedEntityName;
++ (id)propertiesToFetchWithHint:;
+@end

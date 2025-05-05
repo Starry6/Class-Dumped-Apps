@@ -1,0 +1,33 @@
+@interface IESLiveFastMatchPathNode : NSObject
+@property (nonatomic) NSNumber roomId;
+@property (nonatomic) BOOL didApply;
+@property (nonatomic) NSString requestPage;
+@property (nonatomic) NSNumber mute;
+@property (nonatomic) BOOL isFromOutside;
+@property (nonatomic) NSArray orderSongList;
+@property (nonatomic) BOOL isLiveEnd;
+@property (nonatomic) BOOL fastMatchTriggered;
+@property (nonatomic) BOOL applyByFastMatchInRoom;
+@property (nonatomic) NSDictionary resultTagTrackInfo;
+- (void)setRequestPage:;
+- (BOOL)applyByFastMatchInRoom;
+- (BOOL)didApply;
+- (BOOL)fastMatchTriggered;
+- (BOOL)isFromOutside;
+- (BOOL)isLiveEnd;
+- (id)orderSongList;
+- (id)requestPage;
+- (id)resultTagTrackInfo;
+- (id)roomId;
+- (void)setApplyByFastMatchInRoom:;
+- (void)setDidApply:;
+- (void)setFastMatchTriggered:;
+- (void)setIsFromOutside:;
+- (void)setIsLiveEnd:;
+- (void)setOrderSongList:;
+- (void)setResultTagTrackInfo:;
+- (void)setRoomId:;
+- (id)mute;
+- (void)setMute:;
+- (void).cxx_destruct;
+@end

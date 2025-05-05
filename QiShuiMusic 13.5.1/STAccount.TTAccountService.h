@@ -1,0 +1,27 @@
+@interface STAccount.TTAccountService : NSObject
+- (void)accountsdk:routerOpenWithSchema:params:;
+- (void)bdturingLoginWithCallback:;
+- (void)onAccountLogin;
+- (void)onAccountLogoutInScene:;
+- (void)onAccountSessionExpired:;
+- (void)account:openURLString:userInfo:;
+- (id)loadLoginProtocolWithLoginType:agreements:;
+- (id)loginFlowSupportOneKeyLoginTypes:;
+- (BOOL)loginFlow:handleErrorWithUserInfo:error:;
+- (id)bussinessDomain;
+- (id)appRequiredParams;
+- (Class)bdturingClass;
+- (id)carrierMobileOneKeyAppId;
+- (id)carrierMobileOneKeyAppKey;
+- (id)carrierTelecomOneKeyAppId;
+- (id)carrierTelecomOneKeyKey;
+- (id)carrierUnicomOneKeyAppId;
+- (id)carrierUnicomOneKeyAppKey;
+- (BOOL)checkIfLoginExpiredWithRequest:resposne:data:;
+- (id)domainListToShareLoginToken;
+- (BOOL)isBoe;
+- (Class)metasecClass;
+- (Class)monitorInterfaceClass;
+- (id)init;
+- (void).cxx_destruct;
+@end

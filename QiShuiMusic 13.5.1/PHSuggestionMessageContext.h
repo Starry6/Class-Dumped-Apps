@@ -1,0 +1,36 @@
+@interface PHSuggestionMessageContext : NSObject
+@property (nonatomic) NSArray cnParticipants;
+@property (nonatomic) NSArray phParticipants;
+@property (nonatomic) NSMutableDictionary suggestionMatchingResultsBySuggestionIdentifier;
+@property (nonatomic) PHPhotoLibrary photoLibrary;
+@property (nonatomic) NSArray resolvedParticipants;
+@property (nonatomic) NSArray messageTokens;
+@property (nonatomic) NSArray messages;
+@property (nonatomic) NSDateInterval dateInterval;
+@property (nonatomic) Q numberOfParticipants;
+- (id)photoLibrary;
+- (id)dateInterval;
+- (id)messages;
+- (void)setPhotoLibrary:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)detailedDescription;
+- (id)initWithMessages:participantsFromContacts:photoLibrary:;
+- (id)initWithMessages:;
+- (id)initWithMessages:participantsFromPersons:photoLibrary:;
+- (void)setCnParticipants:;
+- (void)setPhParticipants:;
+- (id)resolvedParticipants;
+- (id)messageTokens;
+- (id)_suggestionsMatchingType:;
+- (void)matchWithSuggestions:;
+- (id)matchingResultWithSuggestion:;
+- (id)confidentMatchSuggestionUsingStrategy:;
+- (id)_mostRecentSuggestionFromSuggestions:;
+- (unsigned long long)numberOfParticipants;
+- (id)cnParticipants;
+- (id)phParticipants;
+- (id)suggestionMatchingResultsBySuggestionIdentifier;
+- (void)setResolvedParticipants:;
+- (void)setMessageTokens:;
+@end

@@ -1,0 +1,36 @@
+@interface SOConfigurationHost : NSObject
+@property (nonatomic) q configVersion;
+- (long long)configVersion;
+- (id)configurationForClientWithError:;
+- (id)init;
+- (BOOL)saveConfigurationData:error:;
+- (void)dealloc;
+- (id)profileForURL:responseCode:;
+- (id)profilesWithExtensionBundleIdentifier:;
+- (void)_loadConfigForFirstTime;
+- (void)_checkNewVersion;
+- (id)_defaultConfigurationFile;
+- (BOOL)_initDataVaultIfNeededWithError:;
+- (id)_defaultConfigurationPath;
+- (id)_checkAssociatedDomainForProfiles:;
+- (void)_reloadConfigWithReason:;
+- (void)_extensionsLoaded:;
+- (id)removedProfileForExtensionBundleIdentifier:;
+- (BOOL)_saveConfigToFile:error:;
+- (id)validatedProfileForPlatformSSO;
+- (id)_stringWithReason:;
+- (void).cxx_destruct;
+- (id)realms;
+- (long long)willHandleURL:responseCode:callerBundleIdentifier:;
+- (void)_configurationLoadedWithReason:;
+- (void)_startKeyBagObserverForReloadingConfiguration;
+- (BOOL)hasAnyMDMProfileForExtension:;
+- (id)_checkExtensionsExistenceForProfiles:;
+- (BOOL)_isConfigFileAvailable;
+- (BOOL)saveConfiguration:error:;
++ (id)defaultManager;
++ (id)maskRegistrationTokenInConfigurationData:;
++ (id)_loadProfilesFromDict:;
++ (id)_loadProfilesFromURL:logFileError:;
++ (id)maskRegistrationTokenInProfileList:;
+@end

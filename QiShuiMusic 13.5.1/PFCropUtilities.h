@@ -1,0 +1,35 @@
+@interface PFCropUtilities : NSObject
++ (void)_flipRect:withinContentSize:;
++ (id)_interpolationV2MaxCropSizeForAspectRatio:andZoom:withFocusRegion:forImageSize:withImportantRect:;
++ (id)bestCropRectV2ForAspectRatio:sourcePixelWidth:sourcePixelHeight:sourceEssentialAreaRect:;
++ (id)bestCropRectV2ForAspectRatio:sourcePixelWidth:sourcePixelHeight:sourceEssentialAreaRect:sourceSecondaryEssentialAreaRect:;
++ (id)_faceAreaRectWithPadding:;
++ (id)bestCropRectV2ForAspectRatio:withFocusRegion:sourcePixelWidth:sourcePixelHeight:sourcePreferredCropRectNormalized:sourceAcceptableCropRectNormalized:sourceFaceAreaRectNormalized:;
++ (id)_interpolationCropForAspectRatio:acceptableRect:andPreferredRect:andImageRect:outputCropScore:;
++ (double)_interpolationFocusRegionMaxSize:forEdge:andImageSize:withPreferredRect:withAcceptableRect:;
++ (id)_interpolationV2CropForAspectRatio:withFocusRegion:andAcceptableRect:andPreferredRect:andImageRect:outputCropScore:;
++ (double)_interpolationV2ScoreForCrop:withFullsizeRect:andPreferredRect:andAcceptableRect:;
++ (double)_interpolationWithFactor:between:and:;
++ (id)_interpolationV2AdjustedCrop:toFocusRegion:withFullsizeRect:andImportantRect:;
++ (BOOL)_rectIsValid:;
++ (id)_curatedLibraryAdjustedRectWithFaceAreaRect:proposedCropRect:assetRect:verticalContentMode:;
++ (id)bestCropRectV2ForParallaxClassification:layoutConfiguration:sourcePixelWidth:sourcePixelHeight:sourcePreferredCropRectNormalized:sourceAcceptableCropRectNormalized:sourceFaceAreaRectNormalized:outputCropScore:outputLayoutScore:outputClockOverlapAcceptable:;
++ (id)bestCropRectV2ForAspectRatio:withFocusRegion:sourcePixelWidth:sourcePixelHeight:sourcePreferredCropRectNormalized:sourceAcceptableCropRectNormalized:sourceFaceAreaRectNormalized:outputCropScore:;
++ (double)_interpolationWithFocusRegion:forEdge:withRect:inMaxRect:;
++ (double)_interpolationFactorFor:between:and:;
++ (id)_translationToIncludeRect:insideRect:;
++ (double)_rectDimensionOffset:insideRect:forEdge:;
++ (id)_interpolationCropSizeForRatio:andZoom:forImageSize:;
++ (double)scoreForCropRect:sourcePixelWidth:sourcePixelHeight:sourceEssentialAreaRect:;
++ (double)_interpolationV2ScoreAlongEdge:forCrop:withFullsizeRect:andPreferredRect:andAcceptableRect:;
++ (double)_rectDimensionSize:forEdge:;
++ (double)_interpolationV2ScoreForFocusRegion:insideCropRect:withImportantRect:;
++ (id)bestCropRectV2ForAspectRatio:sourcePixelWidth:sourcePixelHeight:sourceEssentialAreaRect:sourceSecondaryEssentialAreaRect:outputCropScore:;
++ (double)scoreForCropRect:sourcePixelWidth:sourcePixelHeight:sourceEssentialAreaRect:sourceSecondaryEssentialAreaRect:;
++ (id)bestCropRectV2ForAspectRatio:zoom:sourcePixelWidth:sourcePixelHeight:sourceEssentialAreaRect:sourceSecondaryEssentialAreaRect:outputCropScore:;
++ (id)bestCropRectForAspectRatio:verticalContentMode:cropMode:sourcePixelWidth:sourcePixelHeight:sourcePreferredCropRectNormalized:sourceAcceptableCropRectNormalized:sourceFaceAreaRectNormalized:;
++ (id)_interpolationCropToSize:withinRect:withPreferredRect:andAcceptableRect:outputScore:;
++ (id)_interpolationCropForAspectRatio:andZoom:acceptableRect:andPreferredRect:andImageRect:outputCropScore:;
++ (double)_interpolationWithFocusRegion:forEdge:betweenRect:andRect:inMaxRect:;
++ (id)_curatedLibraryCropForAspectRatio:verticalContentMode:cropMode:sourcePixelWidth:sourcePixelHeight:sourcePreferredCropRectNormalized:sourceAcceptableCropRectNormalized:sourceFaceAreaRectNormalized:;
+@end

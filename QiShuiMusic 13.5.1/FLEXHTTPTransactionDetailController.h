@@ -1,0 +1,37 @@
+@interface FLEXHTTPTransactionDetailController : UITableViewController
+@property (nonatomic) FLEXHTTPTransaction transaction;
+@property (nonatomic) NSArray sections;
+- (id)initWithStyle:;
+- (void)viewDidLoad;
+- (void)setTransaction:;
+- (void)setSections:;
+- (void)rebuildTableSections;
+- (void)handleTransactionUpdatedNotification:;
+- (void)copyButtonPressed:;
+- (long long)numberOfSectionsInTableView:;
+- (long long)tableView:numberOfRowsInSection:;
+- (id)tableView:titleForHeaderInSection:;
+- (id)tableView:cellForRowAtIndexPath:;
+- (void)tableView:didSelectRowAtIndexPath:;
+- (double)tableView:heightForRowAtIndexPath:;
+- (id)sectionIndexTitlesForTableView:;
+- (id)rowModelAtIndexPath:;
+- (BOOL)tableView:shouldShowMenuForRowAtIndexPath:;
+- (BOOL)tableView:canPerformAction:forRowAtIndexPath:withSender:;
+- (void)tableView:performAction:forRowAtIndexPath:withSender:;
+- (id)tableView:contextMenuConfigurationForRowAtIndexPath:point:;
+- (id)transaction;
+- (id)sections;
+- (void).cxx_destruct;
++ (id)withTransaction:;
++ (id)attributedTextForRow:;
++ (id)generalSectionForTransaction:;
++ (id)requestHeadersSectionForTransaction:;
++ (id)postBodySectionForTransaction:;
++ (id)queryParametersSectionForTransaction:;
++ (id)responseHeadersSectionForTransaction:;
++ (id)networkDetailRowsFromDictionary:;
++ (id)networkDetailRowsFromQueryItems:;
++ (id)detailViewControllerForMIMEType:data:;
++ (id)postBodyDataForTransaction:;
+@end

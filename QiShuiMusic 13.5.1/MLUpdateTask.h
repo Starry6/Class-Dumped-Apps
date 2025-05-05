@@ -1,0 +1,36 @@
+@interface MLUpdateTask : MLTask
+@property (nonatomic) MLModel<MLUpdatable> updatableModel;
+@property (nonatomic) <MLBatchProvider> trainingData;
+@property (nonatomic) MLUpdateProgressHandlers progressHandlers;
+@property (nonatomic) BOOL updateHasStarted;
+@property (nonatomic) NSObject<OS_dispatch_queue> updateQueue;
+@property (nonatomic) NSURL updatableModelURL;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)progressHandlers;
+- (void).cxx_destruct;
+- (id)updateQueue;
+- (id)description;
+- (void)onResumptionWithTaskContext:;
+- (void)onSuspensionWithTaskContext:;
+- (void)onCancellation;
+- (void)onCompletionWithTaskContext:;
+- (void)onFailureWithTaskContext:;
+- (id)initWithModelAtURL:trainingData:configuration:progressHandlers:error:;
+- (void)resumeWithParameters:;
+- (void)_invokeProgressHandlerForContext:;
+- (id)_progressHandlerBlock;
+- (id)_completionHandlerBlock;
+- (id)updatableModel;
+- (id)trainingData;
+- (BOOL)updateHasStarted;
+- (void)setUpdateHasStarted:;
+- (id)updatableModelURL;
++ (id)updateTaskForModelAtURL:trainingData:configuration:progressHandlers:error:;
++ (BOOL)updateModelAtURL:trainingData:configuration:writeToURL:error:;
++ (id)updateTaskForModelAtURL:trainingData:configuration:completionHandler:error:;
++ (id)updateTaskForModelAtURL:trainingData:completionHandler:error:;
++ (id)updateTaskForModelAtURL:trainingData:progressHandlers:error:;
+@end

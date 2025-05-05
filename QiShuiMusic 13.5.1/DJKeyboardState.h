@@ -1,0 +1,30 @@
+@interface DJKeyboardState : NSObject
+@property (nonatomic) {UIEdgeInsets=dddd} contentInset;
+@property (nonatomic) {UIEdgeInsets=dddd} adjustedContentInset;
+@property (nonatomic) {UIEdgeInsets=dddd} scrollIndicatorInsets;
+@property (nonatomic) UITapGestureRecognizer tapGesture;
+@property (nonatomic) BOOL isKeyboardRegist;
+@property (nonatomic) BOOL isInfoSaved;
+@property (nonatomic) DJToolBar toolBar;
+@property (nonatomic) UIView responderView;
+@property (nonatomic) NSNotification notification;
+- (id)toolBar;
+- (void)setIsInfoSaved:;
+- (BOOL)isInfoSaved;
+- (BOOL)isKeyboardRegist;
+- (id)responderView;
+- (void)setAdjustedContentInset:;
+- (void)setIsKeyboardRegist:;
+- (void)setResponderView:;
+- (void)setToolBar:;
+- (id)notification;
+- (void)setNotification:;
+- (id)contentInset;
+- (void).cxx_destruct;
+- (id)scrollIndicatorInsets;
+- (void)setScrollIndicatorInsets:;
+- (id)tapGesture;
+- (void)setContentInset:;
+- (id)adjustedContentInset;
+- (void)setTapGesture:;
+@end

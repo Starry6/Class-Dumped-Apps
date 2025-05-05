@@ -1,0 +1,30 @@
+@interface ObjectAnalytics : NSObject
+- (void)save;
+- (void).cxx_destruct;
+- (id)createEntity;
+- (void)refresh:;
+- (id)fetchEntitiesFreeForm:sortDesc:;
+- (id)initWithWorkspace:entityName:withCache:;
+- (id)fetchEntitiesFreeForm:sortDesc:limit:batchSize:;
+- (id)fetchAllEntityDictionariesWithProperties:;
+- (id)fetchEntityDictionariesWithProperties:predicate:;
+- (id)fetchEntityDictionariesWithProperties:predicate:sortDescriptors:;
+- (id)fetchEntityDictionariesWithProperties:predicate:sortDescriptors:limit:;
+- (id)fetchEntityDictionariesWithProperties:predicate:sortDescriptors:limit:offset:includeObjectID:;
+- (id)fetchEntityDictionariesWithProperties:fetchRequestProperties:predicate:sortDescriptors:limit:offset:includeObjectID:;
+- (id)_firstLastHappened:;
+- (id)firstHappened;
+- (id)lastHappened;
+- (id)createEntityForEntityName:;
+- (id)createTemporaryEntity;
+- (id)createTemporaryEntityForEntityName:;
+- (void)moveTemporaryEntityToMainContext:;
+- (id)getDescriptionForName:;
+- (void)removeEntities:;
+- (unsigned long long)countEntitiesMatching:;
+- (long long)removeEntitiesMatching:;
+- (long long)removeEntitiesMatching:wspaceReset:;
+- (unsigned long long)updateEntitiesMatching:properties:;
+- (id)_fetch:sortDesc:;
+- (id)_fetch:sortDesc:limit:batchSize:;
+@end

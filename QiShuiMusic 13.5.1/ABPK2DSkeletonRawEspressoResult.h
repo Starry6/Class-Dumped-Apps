@@ -1,0 +1,30 @@
+@interface ABPK2DSkeletonRawEspressoResult : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) ABPKMLImageData imageDataForNeuralNetwork;
+@property (nonatomic) ABPKImageData inputImageData;
+@property (nonatomic) ^{__CVBuffer=} heatMapBuffer;
+@property (nonatomic)  heatMapShape;
+@property (nonatomic)  heatMapStrides;
+@property (nonatomic) ^{__CVBuffer=} affinityMapBuffer;
+@property (nonatomic)  affinityMapShape;
+@property (nonatomic)  affinityMapStrides;
+@property (nonatomic) q rotationNeeded;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (long long)rotationNeeded;
+- (id)inputImageData;
+- (id)imageDataForNeuralNetwork;
+- (id)initWithMLImage:originalImageData:heatMapBuffer:heatMapShape:heatMapStrides:affinityMapBuffer:affinityMapShape:affinityMapStrides:rotationNeeded:;
+- (id)initWithHeatMapBuffer:heatMapShape:heatMapStrides:affinityMapBuffer:affinityMapShape:affinityMapStrides:rotationNeeded:;
+- (id)initWithMLImage:originalImageData:heatMapBuffer:heatMapShape:heatMapStrides:rotationNeeded:;
+- (id)initWithHeatMapBuffer:heatMapShape:heatMapStrides:rotationNeeded:;
+- (id)heatMapBuffer;
+- (id)heatMapShape;
+- (id)heatMapStrides;
+- (id)affinityMapBuffer;
+- (id)affinityMapShape;
+- (id)affinityMapStrides;
+@end

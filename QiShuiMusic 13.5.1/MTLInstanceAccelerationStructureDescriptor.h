@@ -1,0 +1,35 @@
+@interface MTLInstanceAccelerationStructureDescriptor : MTLAccelerationStructureDescriptor
+@property (nonatomic) <MTLBuffer> instanceDescriptorBuffer;
+@property (nonatomic) Q instanceDescriptorBufferOffset;
+@property (nonatomic) Q instanceDescriptorStride;
+@property (nonatomic) Q instanceCount;
+@property (nonatomic) NSArray instancedAccelerationStructures;
+@property (nonatomic) Q instanceDescriptorType;
+@property (nonatomic) <MTLBuffer> motionTransformBuffer;
+@property (nonatomic) Q motionTransformBufferOffset;
+@property (nonatomic) Q motionTransformCount;
+- (id)init;
+- (void)dealloc;
+- (unsigned long long)instanceCount;
+- (void)setInstanceCount:;
+- (unsigned long long)hash;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (unsigned long long)instanceDescriptorStride;
+- (void)setInstanceDescriptorStride:;
+- (id)instanceDescriptorBuffer;
+- (void)setInstanceDescriptorBuffer:;
+- (unsigned long long)instanceDescriptorBufferOffset;
+- (void)setInstanceDescriptorBufferOffset:;
+- (id)instancedAccelerationStructures;
+- (void)setInstancedAccelerationStructures:;
+- (id)motionTransformBuffer;
+- (void)setMotionTransformBuffer:;
+- (unsigned long long)motionTransformBufferOffset;
+- (void)setMotionTransformBufferOffset:;
+- (unsigned long long)motionTransformCount;
+- (void)setMotionTransformCount:;
+- (unsigned long long)instanceDescriptorType;
+- (void)setInstanceDescriptorType:;
++ (id)descriptor;
+@end

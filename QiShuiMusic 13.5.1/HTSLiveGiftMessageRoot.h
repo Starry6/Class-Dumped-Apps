@@ -1,0 +1,2 @@
+@interface HTSLiveGiftMessageRoot : GPBRootObject
+@end

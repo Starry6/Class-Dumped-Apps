@@ -1,0 +1,34 @@
+@interface IESECRelationFeedCommentView : UIView
+@property (nonatomic) UIStackView iconsStackView;
+@property (nonatomic) UIView line;
+@property (nonatomic) UIView commentBack;
+@property (nonatomic) YYLabel commentLabel;
+@property (nonatomic) UILabel totalLabel;
+@property (nonatomic) UIImageView arrow;
+- (void)configCommentWithLabel:comment:;
+- (void)setCommentBack:;
+- (id)__IconImageView:;
+- (void)__setupViews;
+- (id)arrow;
+- (void)clickAction;
+- (id)commentBack;
+- (void)configSecondComment;
+- (id)iconsStackView;
+- (id)productionCommentLabel;
+- (void)rollingCommentAction;
+- (void)setArrow:;
+- (void)setIconsStackView:;
+- (void)setTotalLabel:;
+- (void)startRepeatRollComment;
+- (void)stopRepeatRollComment;
+- (id)totalLabel;
+- (void)updateUIWithModel:;
+- (id)init;
+- (void).cxx_destruct;
+- (id)line;
+- (void)setLine:;
+- (id)commentLabel;
+- (void)setCommentLabel:;
+- (void)updateWithInfo:;
++ (id)commentWithWidth:;
+@end

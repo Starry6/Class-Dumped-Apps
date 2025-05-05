@@ -1,0 +1,36 @@
+@interface IESLivePublicScreenDescriptor : NSObject
+@property (nonatomic) IESLivePublicScreenInfoModel infoModel;
+@property (nonatomic) IESLivePublicScreenViewModel viewModel;
+@property (nonatomic) IESLivePublicScreenDataFlowConfig dataFlowConfig;
+@property (nonatomic) IESLivePublicScreenNodeStyleConfig nodeStyleConfig;
+@property (nonatomic) <IESLivePublicScreenMonitorProtocol> publicScreenMonitor;
+@property (nonatomic) NSArray configAttachments;
+@property (nonatomic) <IESLiveRoomServiceAdapter> room;
+@property (nonatomic) NSString currentUserID;
+@property (nonatomic) HTSEventContext trackContext;
+@property (nonatomic) BOOL disableUnreadMessageTipView;
+- (id)nodeStyleConfig;
+- (void)setDisableUnreadMessageTipView:;
+- (id)configAttachments;
+- (id)dataFlowConfig;
+- (BOOL)disableUnreadMessageTipView;
+- (id)infoModel;
+- (id)initWithPublicScreenInfo:dataFlowConfig:nodeStyleConfig:diContext:;
+- (id)initWithPublicScreenInfo:viewModel:diContext:;
+- (id)publicScreenMonitor;
+- (void)setConfigAttachments:;
+- (void)setCurrentUserID:;
+- (void)setDataFlowConfig:;
+- (void)setInfoModel:;
+- (void)setNodeStyleConfig:;
+- (void)setPublicScreenMonitor:;
+- (void)setTrackContext:;
+- (id)trackContext;
+- (id)transformToPublicScreenContext;
+- (id)viewModel;
+- (void).cxx_destruct;
+- (void)setViewModel:;
+- (id)room;
+- (void)setRoom:;
+- (id)currentUserID;
+@end

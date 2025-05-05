@@ -1,0 +1,2 @@
+@interface AVCaptureAudioChannelInternal : NSObject
+@end

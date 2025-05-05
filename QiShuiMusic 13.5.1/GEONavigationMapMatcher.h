@@ -1,0 +1,33 @@
+@interface GEONavigationMapMatcher : NSObject
+@property (nonatomic) GEORouteMatcher routeMatcher;
+@property (nonatomic) GEORoadMatcher roadMatcher;
+@property (nonatomic) GEOLocationShifter locationShifter;
+@property (nonatomic) GEONavigationMatchResult previousMatchResult;
+@property (nonatomic) GEOComposedRoute route;
+@property (nonatomic) Q targetLegIndex;
+@property (nonatomic) BOOL isSimulation;
+- (void)setRoute:;
+- (id)route;
+- (int)transportType;
+- (id)locationShifter;
+- (void)setLocationShifter:;
+- (void).cxx_destruct;
+- (id)initWithRoute:;
+- (id)matchLocation:transportType:;
+- (id)_routeMatcherForRoute:;
+- (void)setTargetLegIndex:;
+- (void)setRequiresRoadNetworkData:;
+- (void)setShouldWaitForSnappedSegments:;
+- (unsigned long long)targetLegIndex;
+- (void)setShouldSnapRouteMatchToRoute:;
+- (id)updateForReroute:location:routeStartsFromLocation:;
+- (void)resetToLocation:;
+- (void)setPreviousMatchResult:;
+- (id)previousMatchResult;
+- (BOOL)isSimulation;
+- (void)setIsSimulation:;
+- (id)routeMatcher;
+- (void)setRouteMatcher:;
+- (id)roadMatcher;
+- (void)setRoadMatcher:;
+@end

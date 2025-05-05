@@ -1,0 +1,34 @@
+@interface WBSWebExtensionContextMenuItemInfo : NSObject
+@property (nonatomic) NSUUID extensionIdentifier;
+@property (nonatomic) q type;
+@property (nonatomic) NSObject<NSCopying> identifier;
+@property (nonatomic) NSString title;
+@property (nonatomic) BOOL checked;
+@property (nonatomic) BOOL visible;
+@property (nonatomic) BOOL enabled;
+@property (nonatomic) NSSet contexts;
+@property (nonatomic) NSObject<NSCopying> parentIdentifier;
+@property (nonatomic) NSArray documentURLPatterns;
+@property (nonatomic) NSArray targetURLPatterns;
+- (id)parentIdentifier;
+- (BOOL)visible;
+- (BOOL)enabled;
+- (id)extensionIdentifier;
+- (id)identifier;
+- (id)contexts;
+- (long long)type;
+- (id)title;
+- (BOOL)checked;
+- (void).cxx_destruct;
+- (id)initWithProperties:extensionIdentifier:outErrorMessage:;
+- (id)itemInfoByUpdatingProperties:outErrorMessage:;
+- (id)itemInfoByTogglingCheckedState;
+- (id)_configureWithProperties:;
+- (BOOL)_itemContextType:matchesMenuContext:sourceURLMatchesTargetURLPatterns:linkURLMatchesTargetURLPatterns:;
+- (BOOL)_containsItemContextMatchingMenuContext:contextTypes:;
+- (BOOL)canBeShownInContext:;
+- (BOOL)canBeShownInContext:inheritedContextTypes:;
+- (id)_titleForDisplayInContext:;
+- (id)documentURLPatterns;
+- (id)targetURLPatterns;
+@end

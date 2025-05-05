@@ -1,0 +1,33 @@
+@interface AWEIMPhotoPickerCollectionViewCell : UICollectionViewCell
+@property (nonatomic) CAGradientLayer gradientLayer;
+@property (nonatomic) PHAsset asset;
+@property (nonatomic) {CGSize=dd} assetSize;
+@property (nonatomic) NSInteger requestID;
+@property (nonatomic) <AWEIMPhotoPickerCollectionViewCellDelegate> delegate;
+@property (nonatomic) AWEIMSelectableImageView assetImageView;
+@property (nonatomic) UILabel videoDurationLabel;
+- (void)addCornerRadius:corner:;
+- (void)addGradientBgLayerForHeight:;
+- (void)configWithPHAsset:indexPath:;
+- (void)removeCornerRadius;
+- (void)removeGradientBgLayer;
+- (void)setAssetImageView:;
+- (void)setAssetSize:;
+- (void)layoutSubviews;
+- (id)asset;
+- (id)gradientLayer;
+- (void)setDelegate:;
+- (void)commonInit;
+- (id)assetSize;
+- (void)prepareForReuse;
+- (id)initWithFrame:;
+- (id)delegate;
+- (int)requestID;
+- (void).cxx_destruct;
+- (void)setAsset:;
+- (void)setRequestID:;
+- (void)setGradientLayer:;
+- (id)assetImageView;
+- (id)videoDurationLabel;
+- (void)setVideoDurationLabel:;
+@end

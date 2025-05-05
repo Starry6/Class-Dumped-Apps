@@ -1,0 +1,37 @@
+@interface BMComputeXPCSubscription : NSObject
+@property (nonatomic) NSString client;
+@property (nonatomic) NSXPCConnection connection;
+@property (nonatomic) NSObject<OS_os_transaction> transaction;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) BOOL waking;
+@property (nonatomic) NSSet streamIdentifiers;
+@property (nonatomic) BMDSL graph;
+@property (nonatomic) BMDSLSubscriber subscriber;
+@property (nonatomic) @? block;
+@property (nonatomic) Q token;
+- (id)graph;
+- (void)setTransaction:;
+- (id)subscriber;
+- (id)block;
+- (id)transaction;
+- (id)initWithIdentifier:client:waking:DSLGraph:block:;
+- (id)init;
+- (unsigned long long)token;
+- (id)identifier;
+- (void)setClient:;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (id)client;
+- (id)connection;
+- (void).cxx_destruct;
+- (id)initWithToken:descriptor:;
+- (void)setConnection:;
+- (id)description;
+- (id)initWithIdentifier:client:waking:DSLGraph:subscriber:block:;
+- (id)streamIdentifiers;
+- (BOOL)waking;
+- (id)XPCEvent;
++ (id)new;
++ (BOOL)supportsSecureCoding;
++ (id)storageForIdentifier:;
+@end

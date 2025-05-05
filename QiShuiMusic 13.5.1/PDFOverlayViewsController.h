@@ -1,0 +1,32 @@
+@interface PDFOverlayViewsController : NSObject
+@property (nonatomic) PDFView pdfView;
+@property (nonatomic) PDFDocument pdfDocument;
+@property (nonatomic) <PDFPageOverlayViewProvider> viewProvider;
+- (id)viewProvider;
+- (id)pdfView;
+- (void)dealloc;
+- (void)teardown;
+- (id)pdfDocument;
+- (void)setViewProvider:;
+- (void).cxx_destruct;
+- (void)_teardown;
+- (void)setPdfDocument:;
+- (void)_pageRotationChanged:;
+- (id)initWithPDFView:;
+- (void)pdfView:willSetDocument:;
+- (void)pdfView:didSetDocument:;
+- (void)pdfView:didAddView:forPage:atIndex:;
+- (void)pdfView:willRemoveView:forPage:atIndex:;
+- (void)_installOverlayForPageView:ofPage:atIndex:;
+- (void)_uninstallOverlayForPageView:ofPage:atIndex:;
+- (id)_cachedOverlayViewForPage:;
+- (id)_callOverlayViewForPage:;
+- (void)_callWillEndDisplayingOverlayViewForPage:;
+- (void)_uninstallAllOverlays;
+- (void)_setupGestureRecognizersForView:andDocument:;
+- (void)_teardownGestureRecognizersForView:andDocument:;
+- (void)_setupRotationNotificationObservationForPageAtIndex:;
+- (void)_teardownRotationNotificationObservationForPageAtIndex:;
+- (void)setPdfView:;
++ (id)instanceForPlatformWithPDFView:;
+@end

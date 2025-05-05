@@ -1,0 +1,38 @@
+@interface IESECShopAccountInfoModel : MTLModel
+@property (nonatomic) NSString authorId;
+@property (nonatomic) NSString secAuthorId;
+@property (nonatomic) NSString nickName;
+@property (nonatomic) IESECURLModel avatarMedium;
+@property (nonatomic) q followStatus;
+@property (nonatomic) BOOL hideFollowButton;
+@property (nonatomic) IESECShopFollowConfigModel followConfig;
+@property (nonatomic) IESECEntranceInformationModel entranceInformation;
+@property (nonatomic) IESECRelationFansClubModel fansClubInfo;
+@property (nonatomic) BOOL showInfoColumn;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setSecAuthorId:;
+- (id)avatarMedium;
+- (id)entranceInformation;
+- (id)fansClubInfo;
+- (id)followConfig;
+- (long long)followStatus;
+- (BOOL)hideFollowButton;
+- (id)secAuthorId;
+- (void)setAvatarMedium:;
+- (void)setEntranceInformation:;
+- (void)setFansClubInfo:;
+- (void)setFollowConfig:;
+- (void)setFollowStatus:;
+- (void)setHideFollowButton:;
+- (void)setShowInfoColumn:;
+- (BOOL)showInfoColumn;
+- (id)nickName;
+- (void).cxx_destruct;
+- (void)setNickName:;
+- (id)authorId;
+- (void)setAuthorId:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

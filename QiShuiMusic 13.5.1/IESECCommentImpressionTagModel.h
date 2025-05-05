@@ -1,0 +1,30 @@
+@interface IESECCommentImpressionTagModel : MTLModel
+@property (nonatomic) NSString formatTagName;
+@property (nonatomic) NSNumber tagID;
+@property (nonatomic) NSNumber tagNumber;
+@property (nonatomic) NSString tagName;
+@property (nonatomic) NSNumber sentiment;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)isImpressionTag;
+- (id)commentTagID;
+- (id)commentTagName;
+- (id)commentTagNumber;
+- (id)commentTagTrackerName;
+- (id)formatTagName;
+- (id)sentiment;
+- (id)sentimentTrackerString;
+- (void)setFormatTagName:;
+- (void)setSentiment:;
+- (void)setTagNumber:;
+- (id)tagNumber;
+- (id)tagID;
+- (void).cxx_destruct;
+- (void)setTagID:;
+- (id)tagName;
+- (void)setTagName:;
+- (BOOL)isPositive;
++ (id)JSONKeyPathsByPropertyKey;
+@end

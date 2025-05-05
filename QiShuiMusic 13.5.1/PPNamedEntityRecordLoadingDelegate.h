@@ -1,0 +1,33 @@
+@interface PPNamedEntityRecordLoadingDelegate : PPRecordLoadingDelegate
+@property (nonatomic) @? namedEntityRecordsSetup;
+@property (nonatomic) @? namedEntityRecordsHandler;
+@property (nonatomic) @? namedEntityRecordsCompletion;
+@property (nonatomic) @? recentNamedEntityRecordsSetup;
+@property (nonatomic) @? recentNamedEntityRecordsHandler;
+@property (nonatomic) @? recentNamedEntityRecordsCompletion;
+@property (nonatomic) @? resetNamedEntityRecordData;
+- (id)namedEntityRecordsSetup;
+- (unsigned char)recentRecordLoadingSetup;
+- (id)recentNamedEntityRecordsHandler;
+- (id)resetNamedEntityRecordData;
+- (void)setNamedEntityRecordsHandler:;
+- (id)initWithName:;
+- (void)setRecentNamedEntityRecordsHandler:;
+- (id)namedEntityRecordsCompletion;
+- (void)setNamedEntityRecordsSetup:;
+- (id)namedEntityRecordsHandler;
+- (id)recentNamedEntityRecordsCompletion;
+- (void)recordLoadingCompletion;
+- (void)setNamedEntityRecordsCompletion:;
+- (unsigned char)recordLoadingSetup;
+- (void).cxx_destruct;
+- (void)setRecentNamedEntityRecordsSetup:;
+- (unsigned char)recordLoadingHandler:;
+- (id)description;
+- (void)recentRecordLoadingCompletion;
+- (void)setResetNamedEntityRecordData:;
+- (id)recentNamedEntityRecordsSetup;
+- (void)resetRecordData;
+- (unsigned char)recentRecordLoadingHandler:;
+- (void)setRecentNamedEntityRecordsCompletion:;
+@end

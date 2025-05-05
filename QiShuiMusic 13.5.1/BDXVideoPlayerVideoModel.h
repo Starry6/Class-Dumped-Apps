@@ -1,0 +1,34 @@
+@interface BDXVideoPlayerVideoModel : NSObject
+@property (nonatomic) BOOL isCanPlay;
+@property (nonatomic) NSString itemID;
+@property (nonatomic) NSString playUrlString;
+@property (nonatomic) BOOL repeated;
+@property (nonatomic) NSString customhost;
+@property (nonatomic) NSString playAutoToken;
+@property (nonatomic) NSString playerVersion;
+@property (nonatomic) NSString protocolVer;
+@property (nonatomic) NSArray hosts;
+@property (nonatomic) Q apiVersion;
+- (void)setProtocolVer:;
+- (id)customhost;
+- (BOOL)isCanPlay;
+- (id)playAutoToken;
+- (id)playUrlString;
+- (id)playerVersion;
+- (id)protocolVer;
+- (void)setCustomhost:;
+- (void)setIsCanPlay:;
+- (void)setPlayAutoToken:;
+- (void)setPlayUrlString:;
+- (void)setPlayerVersion:;
+- (unsigned long long)apiVersion;
+- (void)setApiVersion:;
+- (id)init;
+- (id)itemID;
+- (id)hosts;
+- (void)setItemID:;
+- (void).cxx_destruct;
+- (void)setHosts:;
+- (BOOL)repeated;
+- (void)setRepeated:;
+@end

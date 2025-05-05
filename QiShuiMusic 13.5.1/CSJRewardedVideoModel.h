@@ -1,0 +1,33 @@
+@interface CSJRewardedVideoModel : NSObject
+@property (nonatomic) q reward_info_source;
+@property (nonatomic) NSString userId;
+@property (nonatomic) NSString extra;
+@property (nonatomic) NSString rewardName;
+@property (nonatomic) q rewardAmount;
+@property (nonatomic) q rewardType;
+@property (nonatomic) float rewardPropose;
+@property (nonatomic) NSArray advancedRewardTypes;
+@property (nonatomic) BOOL allowPlayAgain;
+- (id)advancedRewardTypes;
+- (BOOL)allowPlayAgain;
+- (long long)rewardAmount;
+- (id)rewardName;
+- (float)rewardPropose;
+- (long long)rewardType;
+- (long long)reward_info_source;
+- (void)setAdvancedRewardTypes:;
+- (void)setAllowPlayAgain:;
+- (void)setExtra:;
+- (void)setRewardAmount:;
+- (void)setRewardName:;
+- (void)setRewardPropose:;
+- (void)setRewardType:;
+- (void)setReward_info_source:;
+- (id)extra;
+- (id)init;
+- (id)userId;
+- (BOOL)isMemberOfClass:;
+- (void).cxx_destruct;
+- (BOOL)isKindOfClass:;
+- (void)setUserId:;
+@end

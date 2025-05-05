@@ -1,0 +1,31 @@
+@interface IESLiveSaaSToolbarTipStore : NSObject
+@property (nonatomic) NSDictionary toolbarItemIdentifierMap;
+@property (nonatomic) NSDictionary toolbarItemLocationFromMap;
+@property (nonatomic) IESLiveSaaSGroupedLiveMessageHandler groupedHandler;
+@property (nonatomic) HTSEventContext trackContext;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setupToolbarItemLocationFromMap;
+- (BOOL)checkMessageTypeBattlePropEffectFilter:;
+- (id)groupedHandler;
+- (id)initWithDIContext:;
+- (void)loadMessageHandler;
+- (id)locationFromToolbarItemId:;
+- (void)recordMessageTypeBattlePropEffect:;
+- (void)removeToolbarTipView:exclusiveViewItem:;
+- (void)setGroupedHandler:;
+- (void)setToolbarItemIdentifierMap:;
+- (void)setToolbarItemLocationFromMap:;
+- (void)setTrackContext:;
+- (void)setupToolbarItemIdentifierMap;
+- (void)showTipView:item:;
+- (void)showToolBarTipWithMessage:;
+- (id)toolbarItemIdentifierFromToolbarItemMessage:;
+- (id)toolbarItemIdentifierMap;
+- (id)toolbarItemLocationFromMap;
+- (id)trackContext;
+- (void).cxx_destruct;
+- (void)messageReceived:;
+@end

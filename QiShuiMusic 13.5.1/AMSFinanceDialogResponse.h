@@ -1,0 +1,38 @@
+@interface AMSFinanceDialogResponse : NSObject
+@property (nonatomic) BOOL containsCommerceUIURL;
+@property (nonatomic) NSDictionary dialogDictionary;
+@property (nonatomic) q kind;
+@property (nonatomic) NSDictionary responseDictionary;
+@property (nonatomic) AMSURLTaskInfo taskInfo;
+@property (nonatomic) AMSDialogRequest dialogRequest;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setKind:;
+- (id)responseDictionary;
+- (id)taskInfo;
+- (long long)kind;
+- (void).cxx_destruct;
+- (void)setTaskInfo:;
+- (id)dialogRequest;
+- (id)performWithTaskInfo:;
+- (id)dialogDictionary;
+- (id)initWithResponseDictionary:kind:taskInfo:;
+- (long long)_actionTypeFromButtonDictionary:;
+- (id)_createActionFromButtonDictionary:title:;
+- (id)_createDialogRequest;
+- (id)_enrichedMetricsDictionaryWithFinanceDictionary:;
+- (id)_createRequestButtonsFromDialogDictionary:;
+- (BOOL)_isCommerceUIURL:actionType:URLType:;
+- (BOOL)containsCommerceUIURL;
++ (id)_presentDialog:taskInfo:;
++ (BOOL)_shouldSendOverIDS:taskInfo:;
++ (id)performFinanceDialog:taskInfo:;
++ (id)_serviceActionFromButton:taskInfo:;
++ (id)handleDialogResult:taskInfo:;
++ (long long)dialogKindForTaskInfo:withResponseDictionary:;
++ (id)_handleAskPermissionRequestWithURL:account:;
++ (id)_presentIDSDialog:taskInfo:;
++ (BOOL)_credentialSource:satisfiesAuthenticationType:;
+@end

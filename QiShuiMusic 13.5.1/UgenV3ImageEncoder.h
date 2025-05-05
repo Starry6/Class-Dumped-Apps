@@ -1,0 +1,31 @@
+@interface UgenV3ImageEncoder : NSObject
+@property (nonatomic) Q type;
+@property (nonatomic) Q loopCount;
+@property (nonatomic) BOOL lossless;
+@property (nonatomic) double quality;
+- (id)_encodeAPNG;
+- (void)_encodeImageWithDestination:imageCount:;
+- (id)_encodeWebP;
+- (id)_encodeWithImageIO;
+- (BOOL)_encodeWithImageIO:;
+- (BOOL)_imageIOAvaliable;
+- (id)_newCGImageFromIndex:decoded:;
+- (id)_newImageDestination:imageCount:;
+- (void)addImage:duration:;
+- (void)addImageWithData:duration:;
+- (void)addImageWithFile:duration:;
+- (BOOL)encodeToFile:;
+- (double)quality;
+- (id)init;
+- (void)setQuality:;
+- (unsigned long long)type;
+- (void).cxx_destruct;
+- (id)initWithType:;
+- (id)encode;
+- (unsigned long long)loopCount;
+- (BOOL)lossless;
+- (void)setLossless:;
+- (void)setLoopCount:;
++ (id)encodeImage:type:quality:;
++ (id)encodeImageWithDecoder:type:quality:;
+@end

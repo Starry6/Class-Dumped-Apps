@@ -1,0 +1,32 @@
+@interface ASCURLOffer : NSObject
+@property (nonatomic) NSURL url;
+@property (nonatomic) BOOL isSensitive;
+@property (nonatomic) ASCAdamID id;
+@property (nonatomic) NSDictionary titles;
+@property (nonatomic) NSDictionary subtitles;
+@property (nonatomic) q flags;
+@property (nonatomic) NSNumber ageRating;
+@property (nonatomic) NSArray metrics;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)url;
+- (id)metrics;
+- (id)id;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (long long)flags;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)isSensitive;
+- (id)titles;
+- (id)subtitles;
+- (id)ageRating;
+- (id)offerWithMetrics:;
+- (id)initWithID:titles:subtitles:flags:ageRating:metrics:url:isSensitive:;
++ (BOOL)supportsSecureCoding;
+@end

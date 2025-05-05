@@ -1,0 +1,34 @@
+@interface AWEIMFeedVideoMsgUnavailableManager : NSObject
+@property (nonatomic) double lastUpdateTimestamp;
+@property (nonatomic) <AWEIMFeedVideoMsgUnavailableManagerDataSource> dataSource;
+@property (nonatomic) <AWEIMFeedVideoMsgUnavailableManagerDelegate> delegate;
+- (void)restoreAttachmentsAtIndexPaths:;
+- (void)animateCellForIndexPaths:animationType:completion:;
+- (id)cellModelsNotUpdatedInMinutes:inCellModels:;
+- (void)findStretchAndShrinkCellsInModifiedModels:completion:;
+- (id)getItemIdFromCellModel:;
+- (void)hideAttachmentsAtIndexPaths:;
+- (id)intersectionOfIndexPathArrayA:andIndexPathArrayB:;
+- (id)itemIDSetForCellModels:;
+- (void)msgListVCFirstLoadCompletion;
+- (void)scrollViewDidEndScroll;
+- (void)updateCellHeightInViewModelForModifiedModels:;
+- (void)updateFeedDescrib:awemeModels:;
+- (void)updateMomentCell;
+- (void)updateTimestampForCellModels:;
+- (void)updateUIElementsForModifiedModels:;
+- (void)updateUnavailableInfoInCellModels:unavailableItemIDsToReasons:onCompletion:;
+- (void)updateUnavailableStateForCellsOnScreen;
+- (id)visibleFeedCellModelsNotUpdatedIn6Hours;
+- (void)setDataSource:;
+- (void)setDelegate:;
+- (id)dataSource;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setLastUpdateTimestamp:;
+- (double)lastUpdateTimestamp;
++ (void)checkUnavailableInfoForAwemeModel:completion:;
++ (void)findUnavailableItemIDsInItemIDSet:onCompletion:;
++ (void)getAwemeModelsForItemIDs:onCompletion:;
++ (void)requestAwemeModelsForItemIDs:onCompletion:;
+@end

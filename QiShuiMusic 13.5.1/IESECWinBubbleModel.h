@@ -1,0 +1,30 @@
+@interface IESECWinBubbleModel : MTLModel
+@property (nonatomic) NSString mainTitle;
+@property (nonatomic) IESECURLModel headerIcon;
+@property (nonatomic) NSArray itemImg;
+@property (nonatomic) NSString subTitle;
+@property (nonatomic) NSString schema;
+@property (nonatomic) q bubbleType;
+@property (nonatomic) NSString guideBubbleText;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)guideBubbleText;
+- (id)itemImg;
+- (long long)bubbleType;
+- (id)headerIcon;
+- (void)setBubbleType:;
+- (void)setGuideBubbleText:;
+- (void)setHeaderIcon:;
+- (void)setItemImg:;
+- (id)schema;
+- (void)setSchema:;
+- (void).cxx_destruct;
+- (void)setSubTitle:;
+- (id)subTitle;
+- (id)mainTitle;
+- (void)setMainTitle:;
++ (id)itemImgJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

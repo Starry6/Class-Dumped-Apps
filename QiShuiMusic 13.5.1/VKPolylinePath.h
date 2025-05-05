@@ -1,0 +1,33 @@
+@interface VKPolylinePath : NSObject
+@property (nonatomic) ^v points;
+@property (nonatomic) r^v polylineCoordinates;
+@property (nonatomic) I pointCount;
+@property (nonatomic) {PolylineCoordinate=If} routeStart;
+@property (nonatomic) {PolylineCoordinate=If} routeEnd;
+@property (nonatomic) BOOL hasCompletedMapMatching;
+@property (nonatomic) BOOL isMapMatched;
+@property (nonatomic) GEOComposedRouteSection section;
+@property (nonatomic) NSArray matchedPathSegments;
+@property (nonatomic) double startDistance;
+- (void).cxx_destruct;
+- (id)description;
+- (id)points;
+- (id)section;
+- (id).cxx_construct;
+- (unsigned int)pointCount;
+- (double)startDistance;
+- (BOOL)hasCompletedMapMatching;
+- (BOOL)isMapMatched;
+- (id)initWithOverlay:section:matchedPathSegments:;
+- (id)initWithOverlay:section:routeStartIndex:routeEndIndex:matchedPathSegments:;
+- (id)gradientTrafficAtIndex:;
+- (id)polylineCoordinates;
+- (float)laneHalfWidthAtIndex:;
+- (id)convertCoordinateToTile:;
+- (id)routeStart;
+- (void)setRouteStart:;
+- (id)routeEnd;
+- (void)setRouteEnd:;
+- (id)matchedPathSegments;
+- (void)setStartDistance:;
+@end

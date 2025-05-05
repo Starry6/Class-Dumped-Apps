@@ -1,0 +1,36 @@
+@interface IESLiveAvatarBorderViewModel : NSObject
+@property (nonatomic) BOOL sizeAvailable;
+@property (nonatomic) HTSLiveImage icon;
+@property (nonatomic) HTSLiveImage thumbIcon;
+@property (nonatomic) NSString dressID;
+@property (nonatomic) BOOL useThumb;
+@property (nonatomic) {CGSize=dd} size;
+@property (nonatomic) UIView<IESLiveAvatarBorderContainer> borderContainer;
+@property (nonatomic) Q source;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)dressID;
+- (id)borderContainer;
+- (id)d_callSymbolFromSymbols:;
+- (void)p_updateBorderURLs;
+- (void)refreshBorderContainer;
+- (void)setBorderContainer:;
+- (void)setDressID:;
+- (void)setSizeAvailable:;
+- (void)setThumbIcon:;
+- (void)setUseThumb:;
+- (BOOL)sizeAvailable;
+- (id)thumbIcon;
+- (void)ts_borderDressEntranceErrorWithBorderURLs:useThumb:symbol:;
+- (void)updateDataWithBorder:;
+- (BOOL)useThumb;
+- (id)icon;
+- (void)setIcon:;
+- (void).cxx_destruct;
+- (unsigned long long)source;
+- (void)setSource:;
+- (void)setSize:;
+- (id)size;
+@end

@@ -1,0 +1,37 @@
+@interface UgenNode : NSObject
+@property (nonatomic) NSString nodeId;
+@property (nonatomic) NSString name;
+@property (nonatomic) NSDictionary templateInfo;
+@property (nonatomic) NSDictionary dataInfo;
+@property (nonatomic) NSArray children;
+@property (nonatomic) UgenNode parent;
+@property (nonatomic) BOOL isHead;
+@property (nonatomic) q recycleIndex;
+@property (nonatomic) NSArray dataList;
+@property (nonatomic) NSMutableArray subTemplatesNodeTree;
+- (id)dataInfo;
+- (id)initWithDict:dataInfo:;
+- (long long)recycleIndex;
+- (void)setDataInfo:;
+- (void)setDataList:;
+- (void)setRecycleIndex:;
+- (void)setSubTemplatesNodeTree:;
+- (id)subTemplatesNodeTree;
+- (id)templateInfo;
+- (void)setParent:;
+- (id)init;
+- (void)setName:;
+- (id)children;
+- (void)setChildren:;
+- (void)setTemplateInfo:;
+- (void).cxx_destruct;
+- (id)name;
+- (id)parent;
+- (BOOL)isLeaf;
+- (id)nodeId;
+- (id)getRootNode;
+- (void)setNodeId:;
+- (BOOL)isHead;
+- (void)setIsHead:;
+- (id)dataList;
+@end

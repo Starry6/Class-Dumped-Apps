@@ -1,0 +1,32 @@
+@interface ICSAttachment : ICSProperty
+@property (nonatomic) NSString fmtype;
+@property (nonatomic) NSString managed_id;
+@property (nonatomic) NSString managed_filename;
+@property (nonatomic) NSInteger size;
+@property (nonatomic) BOOL x_apple_autoarchived;
+@property (nonatomic) NSString x_apple_filename;
+@property (nonatomic) NSString x_apple_ews_attachmentid;
+- (id)filename;
+- (BOOL)hasSize;
+- (id)initWithURL:;
+- (void)_ICSStringWithOptions:appendingToString:;
+- (id)initWithData:;
+- (void)setData:;
+- (void)setSize:;
+- (void)setURL:;
+- (int)size;
+- (BOOL)isBinary;
+- (BOOL)x_apple_autoarchived;
+- (void)setManaged_id:;
+- (void)setX_apple_filename:;
+- (void)setX_apple_autoarchived:;
+- (void)setFmtype:;
+- (id)managed_id;
+- (id)fmtype;
+- (BOOL)shouldObscureValue;
+- (id)managed_filename;
+- (void)setManaged_filename:;
+- (id)x_apple_filename;
+- (id)x_apple_ews_attachmentid;
+- (void)setX_apple_ews_attachmentid:;
+@end

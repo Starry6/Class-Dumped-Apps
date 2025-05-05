@@ -1,0 +1,2 @@
+@interface HTSLiveLinkmicOrderSingRoot : GPBRootObject
+@end

@@ -1,0 +1,31 @@
+@interface VKAnalyticsInteractionEvent : VKAnalyticsEvent
+@property (nonatomic) q eventType;
+@property (nonatomic) BOOL analysisButtonActive;
+@property (nonatomic) q source;
+@property (nonatomic) Q activeInteractionTypes;
+@property (nonatomic) q textLength;
+@property (nonatomic) q ddCount;
+@property (nonatomic) q mrcCount;
+@property (nonatomic) q vsCount;
+- (void)setActiveInteractionTypes:;
+- (BOOL)analysisButtonActive;
+- (unsigned long long)activeInteractionTypes;
+- (void)setTextLength:;
+- (long long)eventType;
+- (void)setEventType:;
+- (id)eventKey;
+- (void)setVsCount:;
+- (long long)ddCount;
+- (long long)mrcCount;
+- (long long)type;
+- (id)coreAnalyticsDictionary;
+- (long long)textLength;
+- (long long)source;
+- (id)initWithEventType:analysis:source:interactionTypes:buttonActive:customIdentifier:;
+- (void)setMrcCount:;
+- (id)description;
+- (void)setDdCount:;
+- (long long)vsCount;
+- (void)setAnalysisButtonActive:;
+- (void)setSource:;
+@end

@@ -1,0 +1,35 @@
+@interface TTSSchemaTTSRequestReceived : SISchemaInstrumentationMessage
+@property (nonatomic) SISchemaUUID linkId;
+@property (nonatomic) BOOL hasLinkId;
+@property (nonatomic) TTSSchemaTTSVoiceContext requestedVoiceContext;
+@property (nonatomic) BOOL hasRequestedVoiceContext;
+@property (nonatomic) NSInteger inputTextLength;
+@property (nonatomic) BOOL hasInputTextLength;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)linkId;
+- (void)setLinkId:;
+- (void)setRequestedVoiceContext:;
+- (id)requestedVoiceContext;
+- (void)setInputTextLength:;
+- (void)setHasLinkId:;
+- (BOOL)hasLinkId;
+- (void)deleteLinkId;
+- (BOOL)hasRequestedVoiceContext;
+- (void)deleteRequestedVoiceContext;
+- (BOOL)hasInputTextLength;
+- (void)setHasInputTextLength:;
+- (void)deleteInputTextLength;
+- (int)inputTextLength;
+- (void)setHasRequestedVoiceContext:;
+@end

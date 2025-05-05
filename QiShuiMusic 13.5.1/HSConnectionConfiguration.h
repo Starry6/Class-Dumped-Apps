@@ -1,0 +1,31 @@
+@interface HSConnectionConfiguration : NSObject
+@property (nonatomic) ICUserIdentity userIdentity;
+@property (nonatomic) ICUserIdentityStore userIdentityStore;
+@property (nonatomic) NSURL baseURL;
+@property (nonatomic) NSString libraryBagKey;
+@property (nonatomic) NSString buildIdentifier;
+@property (nonatomic) NSString purchaseClientIdentifier;
+@property (nonatomic) q requestReason;
+@property (nonatomic) NSNumber familyMemberStoreID;
+- (id)init;
+- (id)buildIdentifier;
+- (id)purchaseClientIdentifier;
+- (void)setBaseURL:;
+- (id)baseURL;
+- (void)setRequestReason:;
+- (id)userIdentityStore;
+- (void)setFamilyMemberStoreID:;
+- (long long)requestReason;
+- (id)initWithCoder:;
+- (id)familyMemberStoreID;
+- (void)setPurchaseClientIdentifier:;
+- (void)encodeWithCoder:;
+- (id)userIdentity;
+- (void).cxx_destruct;
+- (void)setUserIdentity:;
+- (id)libraryBagKey;
+- (void)setBuildIdentifier:;
+- (void)setLibraryBagKey:;
+- (id)copyWithZone:;
++ (BOOL)supportsSecureCoding;
+@end

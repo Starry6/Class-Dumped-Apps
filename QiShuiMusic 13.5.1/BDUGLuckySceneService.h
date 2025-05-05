@@ -1,0 +1,35 @@
+@interface BDUGLuckySceneService : NSObject
+@property (nonatomic) NSMutableArray scenes;
+@property (nonatomic) NSMutableDictionary pendantHelperDic;
+@property (nonatomic) NSMutableDictionary extraParamsForScene;
+@property (nonatomic) NSMapTable superViewMap;
+@property (nonatomic) NSLock superViewLock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)__needRemoveScene:;
+- (BOOL)__sceneA:isSelfOrChildSceneOfSceneB:;
+- (void)enter:;
+- (void)enter:superView:;
+- (void)enter:superView:extra:;
+- (id)extraParamsForScene;
+- (void)leave:;
+- (void)leave:superView:;
+- (void)leave:superView:extra:;
+- (id)pendantHelperDic;
+- (id)registerTask:scenes:;
+- (void)setExtraParamsForScene:;
+- (void)setPendantHelperDic:;
+- (void)setSuperViewLock:;
+- (void)setSuperViewMap:;
+- (id)superViewLock;
+- (id)superViewMap;
+- (id)scenes;
+- (id)init;
+- (void)unregisterTask:;
+- (void).cxx_destruct;
+- (void)setScenes:;
++ (id)sharedInstance;
++ (id)serviceProtocol;
+@end

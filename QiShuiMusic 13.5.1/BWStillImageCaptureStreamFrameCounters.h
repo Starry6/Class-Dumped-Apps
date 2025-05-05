@@ -1,0 +1,2 @@
+@interface BWStillImageCaptureStreamFrameCounters : NSObject
+@end

@@ -1,0 +1,30 @@
+@interface BDXACarrierOneKeyViewController : BDXABaseViewController
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel maskPhoneNumLabel;
+@property (nonatomic) UILabel serviceLabel;
+@property (nonatomic) UILabel pageTipLabel;
+@property (nonatomic) BDXAButton otherButton;
+@property (nonatomic) BOOL shouldDisplayAppIcon;
+@property (nonatomic) <BDXACarrierOneKeyViewControllerDelegate> delegate;
+- (void)layoutViewsForBottomSheet;
+- (void)layoutViewsForFullscreen;
+- (void)loadBottomClickableTextView;
+- (void)mainButtonTapped;
+- (id)maskPhoneNumLabel;
+- (void)otherLoginBtnTapped;
+- (id)pageTipLabel;
+- (id)serviceLabel;
+- (void)setMaskPhoneNumLabel:;
+- (void)setPageTipLabel:;
+- (void)setServiceLabel:;
+- (void)setShouldDisplayAppIcon:;
+- (BOOL)shouldDisplayAppIcon;
+- (void)layoutViews;
+- (void)setTitleLabel:;
+- (void)setDelegate:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setOtherButton:;
+- (id)otherButton;
+@end

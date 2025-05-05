@@ -1,0 +1,33 @@
+@interface IESLatchMonitorTemplate : NSObject
+@property (nonatomic) NSString business;
+@property (nonatomic) @ lynxView;
+@property (nonatomic) NSString urlString;
+@property (nonatomic) NSString serviceName;
+@property (nonatomic) NSNumber stage;
+@property (nonatomic) NSNumber optimizeType;
+@property (nonatomic) NSNumber duration;
+@property (nonatomic) NSDictionary extraInfo;
+@property (nonatomic) NSString errorMessage;
+@property (nonatomic) NSDictionary errorExtra;
+- (id)errorExtra;
+- (id)lynxView;
+- (id)optimizeType;
+- (void)setErrorExtra:;
+- (void)setExtraInfo:;
+- (void)setLynxView:;
+- (void)setOptimizeType:;
+- (id)stage;
+- (id)urlString;
+- (void)setServiceName:;
+- (id)serviceName;
+- (void)setStage:;
+- (void)setDuration:;
+- (id)errorMessage;
+- (void).cxx_destruct;
+- (void)setUrlString:;
+- (id)duration;
+- (id)business;
+- (void)setBusiness:;
+- (void)setErrorMessage:;
+- (id)extraInfo;
+@end

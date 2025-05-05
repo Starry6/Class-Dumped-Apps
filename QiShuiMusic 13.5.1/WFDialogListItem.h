@@ -1,0 +1,35 @@
+@interface WFDialogListItem : NSObject
+@property (nonatomic) NSString subtitle;
+@property (nonatomic) WFImage image;
+@property (nonatomic) BOOL hideSubtitle;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) BOOL selected;
+@property (nonatomic) <WFPropertyListObject> serializedPossibleState;
+@property (nonatomic) NSString title;
+@property (nonatomic) BOOL showingStaticContent;
+@property (nonatomic) BOOL hasImage;
+@property (nonatomic) BOOL hasSubtitle;
+@property (nonatomic) BOOL hasAltText;
+- (BOOL)selected;
+- (id)identifier;
+- (void)setImage:;
+- (void)setSubtitle:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (BOOL)hasImage;
+- (id)title;
+- (void).cxx_destruct;
+- (BOOL)hasSubtitle;
+- (id)subtitle;
+- (BOOL)isEqual:;
+- (id)image;
+- (id)copyWithZone:;
+- (id)initWithTitle:subtitle:identifier:image:selected:hideSubtitle:serializedPossibleState:;
+- (id)serializedPossibleState;
+- (BOOL)showingStaticContent;
+- (BOOL)hasAltText;
+- (BOOL)hideSubtitle;
+- (void)setHideSubtitle:;
++ (BOOL)supportsSecureCoding;
+@end

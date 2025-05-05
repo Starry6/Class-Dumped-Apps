@@ -1,0 +1,34 @@
+@interface ICMusicSubscriptionLeaseStatus : NSObject
+@property (nonatomic) BOOL hasOnlinePlaybackKeys;
+@property (nonatomic) BOOL hasOfflinePlaybackKeys;
+@property (nonatomic) BOOL hasPendingLeaseAcquisition;
+@property (nonatomic) BOOL hasInflightLeaseAcquisition;
+@property (nonatomic) BOOL takenDueToLeasePrevention;
+@property (nonatomic) BOOL shouldPlaybackRequireOnlineKeys;
+@property (nonatomic) q leaseState;
+@property (nonatomic) ICStoreDialogResponse stateReasonDialog;
+@property (nonatomic) NSDictionary stateReasonDialogMetricsDictionary;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)shouldPlaybackRequireOnlineKeys;
+- (void)setShouldPlaybackRequireOnlineKeys:;
+- (BOOL)hasOnlinePlaybackKeys;
+- (void)setHasOnlinePlaybackKeys:;
+- (BOOL)hasOfflinePlaybackKeys;
+- (void)setHasOfflinePlaybackKeys:;
+- (BOOL)hasPendingLeaseAcquisition;
+- (void)setHasPendingLeaseAcquisition:;
+- (BOOL)hasInflightLeaseAcquisition;
+- (void)setHasInflightLeaseAcquisition:;
+- (BOOL)isTakenDueToLeasePrevention;
+- (void)setTakenDueToLeasePrevention:;
+- (long long)leaseState;
+- (void)setLeaseState:;
+- (id)stateReasonDialog;
+- (void)setStateReasonDialog:;
+- (id)stateReasonDialogMetricsDictionary;
+- (void)setStateReasonDialogMetricsDictionary:;
+@end

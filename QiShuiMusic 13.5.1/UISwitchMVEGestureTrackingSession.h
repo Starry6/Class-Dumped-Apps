@@ -1,0 +1,36 @@
+@interface UISwitchMVEGestureTrackingSession : NSObject
+@property (nonatomic) double naturalLayoutDirection;
+@property (nonatomic) double movementVectorForPanInitiatedChangeY;
+@property (nonatomic) double movementVectorForPanInitiatedChangeTargetOnValue;
+@property (nonatomic) UIGestureRecognizer pendingDisplayedOnValueInitiatingGesture;
+@property (nonatomic) BOOL pendingDisplayedOnValue;
+@property (nonatomic) BOOL lastCommitedOnValue;
+@property (nonatomic) UIView<UISwitchMVEGestureTrackingSessionElement> visualElement;
+@property (nonatomic) BOOL displayedOnValue;
+- (BOOL)pendingDisplayedOnValue;
+- (void)_sendStateChangeActionsIfNecessary;
+- (void)invalidatePendingOnValue;
+- (void)applyPendingDisplayedOnValueAndSendActions;
+- (id)initWithVisualElement:;
+- (BOOL)displayedOnValue;
+- (BOOL)canApplyPendingOnValueForGesture:;
+- (BOOL)_isMovementDirectionTrackableForPossibleOnOffChange:;
+- (id)pendingDisplayedOnValueInitiatingGesture;
+- (BOOL)updatePendingDisplayedOnValueIfMovementIsEnoughToInitiateChange:forGesture:;
+- (BOOL)_isMovementDirectionAndMagnitudeEnoughToPerformOnOffChange:;
+- (void)setDisplayedOnValue:;
+- (BOOL)pendingDisplayedOnValueIsValid;
+- (BOOL)lastCommitedOnValue;
+- (void)setVisualElement:;
+- (void).cxx_destruct;
+- (double)movementVectorForPanInitiatedChangeY;
+- (void)_updateMovementVectorForPanInitiatedChanges;
+- (double)movementVectorForPanInitiatedChangeTargetOnValue;
+- (void)reset;
+- (void)_applyPendingChangesIfNecessary;
+- (double)naturalLayoutDirection;
+- (void)applyPendingDisplayedOnValueWithoutSendingActions;
+- (void)setPendingDisplayedOnValue:forGesture:;
+- (id)visualElement;
++ (BOOL)gestureIsInEndState:;
+@end

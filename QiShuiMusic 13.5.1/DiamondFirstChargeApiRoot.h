@@ -1,0 +1,2 @@
+@interface DiamondFirstChargeApiRoot : GPBRootObject
+@end

@@ -1,0 +1,36 @@
+@interface AFServiceTask : NSObject
+@property (nonatomic) NSString appId;
+@property (nonatomic) NSDictionary params;
+@property (nonatomic) NSString scheme;
+@property (nonatomic) NSString session;
+@property (nonatomic) BOOL isUlink;
+@property (nonatomic) @? block;
+@property (nonatomic) NSMutableDictionary extraInfo;
+- (BOOL)isUlink;
+- (id)buildQuery;
+- (id)buildUrlScheme;
+- (BOOL)callAlipayByScheme:;
+- (void)callAlipayByULink:withBlock:;
+- (void)callbackWithResult:;
+- (BOOL)performInH5;
+- (void)performWithBlock:;
+- (void)setExtraInfo:;
+- (void)setIsUlink:;
+- (id)urlByQueryParams;
+- (id)block;
+- (void)setSession:;
+- (id)init;
+- (void)setScheme:;
+- (id)appId;
+- (id)scheme;
+- (void)setAppId:;
+- (id)dictionaryValue;
+- (id)session;
+- (void).cxx_destruct;
+- (void)setBlock:;
+- (id)params;
+- (void)setParams:;
+- (id)extraInfo;
++ (id)aplinktokenFromOrder:;
++ (id)buildTaskWithAppId:params:scheme:andCompletion:;
+@end

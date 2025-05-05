@@ -1,0 +1,32 @@
+@interface MPButton : UIButton
+@property (nonatomic) {UIEdgeInsets=dddd} alignmentRectInsets;
+@property (nonatomic) {UIEdgeInsets=dddd} hitRectInsets;
+@property (nonatomic) double holdDelayInterval;
+@property (nonatomic) BOOL holding;
+@property (nonatomic) BOOL hitTestDebugEnabled;
+- (void)setHitRectInsets:;
+- (id)hitRectInsets;
+- (BOOL)beginTrackingWithTouch:withEvent:;
+- (void)layoutSubviews;
+- (BOOL)pointInside:withEvent:;
+- (id)hitRect;
+- (id)initWithFrame:;
+- (id)alignmentRectInsets;
+- (void)setAlignmentRectInsets:;
+- (void).cxx_destruct;
+- (void)cancelTrackingWithEvent:;
+- (void)touchesEnded:withEvent:;
+- (void)endTrackingWithTouch:withEvent:;
+- (void)touchesCancelled:withEvent:;
+- (BOOL)isHolding;
+- (void)_delayedTriggerHold;
+- (void)setHitTestDebugEnabled:;
+- (void)_handleTouchCancel;
+- (void)_handleTouchDown;
+- (void)_handleTouchUp;
+- (double)holdDelayInterval;
+- (void)setHoldDelayInterval:;
+- (BOOL)hitTestDebugEnabled;
++ (id)easyTouchDefaultHitRectInsets;
++ (id)easyTouchButtonWithType:;
+@end

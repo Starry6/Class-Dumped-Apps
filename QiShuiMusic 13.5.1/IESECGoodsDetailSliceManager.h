@@ -1,0 +1,38 @@
+@interface IESECGoodsDetailSliceManager : NSObject
+@property (nonatomic) NSMutableDictionary registerCellDict;
+@property (nonatomic) NSMutableDictionary sliceHeightDict;
+@property (nonatomic) IESECGoodsDetailSliceGlobalProps globalProps;
+@property (nonatomic) <IESECSliceXInstanceInterface> sliceInstance;
+@property (nonatomic) IESECGoodsDetailSliceXEventHandler sliceXEventHandler;
+- (id)getSliceViewWithSlice:fitWidth:;
+- (void)setGlobalProps:;
+- (id)sliceHeightDict;
+- (void)triggerActions:;
+- (id)preloadSlcView:;
+- (double)getSliceHeightWithSlice:fitWidth:;
+- (id)getSliceViewWithSlice:;
+- (id)globalProps;
+- (void)handleAsyncFetchSliceData:;
+- (void)handleSliceAction:;
+- (void)handleSliceShowActionWithStorage:;
+- (id)registerCellDict;
+- (void)setRegisterCellDict:;
+- (void)setSliceHeightDict:;
+- (void)setSliceInstance:;
+- (void)setSliceXEventHandler:;
+- (void)setupPageVC:;
+- (id)sliceGlobalDataWithKey:;
+- (id)sliceInstance;
+- (id)sliceXEventHandler;
+- (void)triggerActions:activeView:;
+- (void)triggerSliceXEventWithName:triggerParams:;
+- (void)updateCommonMeta:;
+- (void)updateGlobalWithActionType:data:;
+- (void)updateMetaModel:;
+- (void)updatePageIdentifier:;
+- (void)updateSkuMeta:;
+- (void)uploadDurationWithStartTime:strategy:sliceId:;
+- (void)uploadFailWithError:strategy:sliceId:;
+- (id)initWithContext:;
+- (void).cxx_destruct;
+@end

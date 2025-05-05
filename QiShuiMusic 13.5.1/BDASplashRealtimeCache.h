@@ -1,0 +1,37 @@
+@interface BDASplashRealtimeCache : NSObject
+@property (nonatomic) NSMutableDictionary idList;
+@property (nonatomic) NSMutableArray idOrderedArray;
+@property (nonatomic) NSArray dateArray;
+@property (nonatomic) BOOL needTrackListSize;
+@property (nonatomic) BOOL isNewCache;
+- (void)clearRealtimeInvalidSplashModel;
+- (void)p_newSaveIdList;
+- (void)p_updateInfoListWithInvalidAds:;
+- (void)p_clearRealtimeFirstSplashModel;
+- (void)clearAllRealtimeSplashModel;
+- (void)downloadSuccessWithModel:;
+- (id)getSplashIdArray;
+- (id)idList;
+- (id)idOrderedArray;
+- (BOOL)isNewCache;
+- (BOOL)needTrackListSize;
+- (void)p_clearRealtimeInvalidSplashModel;
+- (void)p_clearRealtimeSplashModelWithCid:;
+- (id)p_getSplashIdArray;
+- (id)p_newGetSplashIdArray;
+- (void)p_newUpdateInfoListWithMaxCount:limitType:;
+- (void)p_updateInfoListWithMaxCount:limitType:;
+- (void)p_updateSingleIdInfo:;
+- (void)setIdList:;
+- (void)setIdOrderedArray:;
+- (void)setIsNewCache:;
+- (void)setNeedTrackListSize:;
+- (void)updateInfoWithContext:;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (id)dateArray;
+- (void)setDateArray:;
++ (id)getCacheModelWithSplashId:;
++ (void)removeCacheModelWithSplashId:;
++ (void)setCacheWithModel:;
+@end

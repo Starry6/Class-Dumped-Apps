@@ -1,0 +1,36 @@
+@interface IESIMMusicMVTemplateInfo : MTLModel
+@property (nonatomic) q templateID;
+@property (nonatomic) NSString tag;
+@property (nonatomic) NSString style;
+@property (nonatomic) NSString expr;
+@property (nonatomic) q numSegs;
+@property (nonatomic) BOOL isCommon;
+@property (nonatomic) q source;
+@property (nonatomic) NSString zipURL;
+@property (nonatomic) NSArray videoSegs;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)numSegs;
+- (id)expr;
+- (void)setExpr:;
+- (void)setIsCommon:;
+- (void)setNumSegs:;
+- (void)setVideoSegs:;
+- (void)setZipURL:;
+- (id)videoSegs;
+- (id)zipURL;
+- (id)tag;
+- (long long)templateID;
+- (void)setTemplateID:;
+- (void)setStyle:;
+- (void)setTag:;
+- (void).cxx_destruct;
+- (long long)source;
+- (id)style;
+- (void)setSource:;
+- (BOOL)isCommon;
++ (id)videoSegsJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

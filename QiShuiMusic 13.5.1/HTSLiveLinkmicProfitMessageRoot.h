@@ -1,0 +1,2 @@
+@interface HTSLiveLinkmicProfitMessageRoot : GPBRootObject
+@end

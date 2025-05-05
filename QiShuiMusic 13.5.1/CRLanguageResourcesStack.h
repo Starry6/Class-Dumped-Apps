@@ -1,0 +1,32 @@
+@interface CRLanguageResourcesStack : NSObject
+@property (nonatomic) q totalResources;
+@property (nonatomic) NSMutableArray availableResources;
+@property (nonatomic) NSString localeIdentifier;
+@property (nonatomic) NSObject<OS_dispatch_semaphore> resourceCountSemaphore;
+@property (nonatomic) NSMutableSet subscribers;
+@property (nonatomic) q resourceType;
+@property (nonatomic) NSMutableSet activeSubscribers;
+- (long long)resourceType;
+- (void)setResourceType:;
+- (void).cxx_destruct;
+- (id)subscribers;
+- (id)localeIdentifier;
+- (void)setLocaleIdentifier:;
+- (void)addSubscriber:;
+- (void)removeSubscriber:;
+- (long long)subscriberCount;
+- (id)initWithLocaleIdentifier:resourceType:;
+- (id)popResourceForSubscriber:;
+- (void)pushResource:;
+- (void)deactivateSubscriber:;
+- (BOOL)hasSubscriber:;
+- (long long)totalResources;
+- (void)setTotalResources:;
+- (id)availableResources;
+- (void)setAvailableResources:;
+- (id)resourceCountSemaphore;
+- (void)setResourceCountSemaphore:;
+- (void)setSubscribers:;
+- (id)activeSubscribers;
+- (void)setActiveSubscribers:;
+@end

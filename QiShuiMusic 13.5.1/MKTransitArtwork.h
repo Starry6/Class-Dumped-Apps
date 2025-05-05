@@ -1,0 +1,30 @@
+@interface MKTransitArtwork : NSObject
+@property (nonatomic) NSInteger artworkSourceType;
+@property (nonatomic) NSInteger artworkUseType;
+@property (nonatomic) <GEOTransitShieldDataSource> shieldDataSource;
+@property (nonatomic) <GEOTransitIconDataSource> iconDataSource;
+@property (nonatomic) <GEOTransitShieldDataSource> iconFallbackShieldDataSource;
+@property (nonatomic) <GEOTransitTextDataSource> textDataSource;
+@property (nonatomic) BOOL hasRoutingIncidentBadge;
+@property (nonatomic) NSString accessibilityText;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithText:;
+- (void).cxx_destruct;
+- (int)artworkSourceType;
+- (int)artworkUseType;
+- (id)shieldDataSource;
+- (id)iconDataSource;
+- (id)iconFallbackShieldDataSource;
+- (BOOL)hasRoutingIncidentBadge;
+- (id)accessibilityText;
+- (id)textDataSource;
+- (id)initWithShield:accessibilityText:;
+- (id)initWithIcon:accessibilityText:;
+- (id)initWithIcon:fallbackShield:accessibilityText:;
++ (id)artworkWithShield:accessibilityText:;
++ (id)artworkWithText:;
++ (id)artworkWithIcon:accessibilityText:;
+@end

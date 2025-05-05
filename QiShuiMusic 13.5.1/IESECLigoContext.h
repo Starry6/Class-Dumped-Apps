@@ -1,0 +1,33 @@
+@interface IESECLigoContext : IESECContext
+@property (nonatomic) NSMutableDictionary globalParamsDic;
+@property (nonatomic) IESECLigoEventHandler eventHandler;
+@property (nonatomic) <IESECLigoComponentsHandler> componentsHandler;
+@property (nonatomic) IESECEventPublisher globalParamsDicDidChangeEvent;
+- (void)clearAllDicData;
+- (id)globalParamsDic;
+- (void)clearLigoComponentsDic;
+- (id)componentsHandler;
+- (id)getLigoComponentWithLocalRegionName:;
+- (id)getLigoGlobalParamsArrayValueForKey:;
+- (BOOL)getLigoGlobalParamsBoolValueForKey:;
+- (id)getLigoGlobalParamsDictionaryValueForKey:;
+- (id)getLigoGlobalParamsNumberValueForKey:;
+- (id)getLigoGlobalParamsObjectWithKey:;
+- (id)getLigoGlobalParamsStringValueForKey:;
+- (id)globalParamsDicDidChangeEvent;
+- (void)publishEvent:params:;
+- (void)putLigoGlobalParamsConstantObject:forKey:;
+- (void)putLigoGlobalParamsVariableObject:forKey:;
+- (id)requestGetAbilityBusinessDefineComponent:;
+- (void)requestLoadBusinessDefineComponent:;
+- (id)requestUnLoadBusinessDefineComponent:;
+- (void)setComponentsHandler:;
+- (void)setGlobalParamsDic:;
+- (void)setGlobalParamsDicDidChangeEvent:;
+- (void)subscriberOpenMessage:messageClass:;
+- (id)init;
+- (void)setEventHandler:;
+- (void)registerEvent:;
+- (id)eventHandler;
+- (void).cxx_destruct;
+@end

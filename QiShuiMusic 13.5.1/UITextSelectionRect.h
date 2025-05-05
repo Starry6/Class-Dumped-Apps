@@ -1,0 +1,31 @@
+@interface UITextSelectionRect : NSObject
+@property (nonatomic) UITextSelectionRectImpl isImpl;
+@property (nonatomic) BOOL _drawsOwnHighlight;
+@property (nonatomic) UIBezierPath _path;
+@property (nonatomic) UITextSelectionRectCustomHandleInfo _customHandleInfo;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} rect;
+@property (nonatomic) q writingDirection;
+@property (nonatomic) BOOL containsStart;
+@property (nonatomic) BOOL containsEnd;
+@property (nonatomic) BOOL isVertical;
+- (BOOL)isVertical;
+- (id)_path;
+- (id)rect;
+- (unsigned long long)hash;
+- (id)range;
+- (BOOL)isEqual:;
+- (BOOL)containsStart;
+- (BOOL)containsEnd;
+- (id)_isImpl;
+- (long long)writingDirection;
+- (BOOL)_drawsOwnHighlight;
+- (id)_customHandleInfo;
++ (id)startRectFromRects:;
++ (id)startEdgeFromRects:;
++ (id)endRectFromRects:;
++ (id)endEdgeFromRects:;
++ (id)startCustomSelectionPathFromRects:;
++ (id)endCustomSelectionPathFromRects:;
++ (BOOL)startIsHorizontal:;
++ (BOOL)endIsHorizontal:;
+@end

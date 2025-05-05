@@ -1,0 +1,30 @@
+@interface CMPedometer : NSObject
+@property (nonatomic) CMPedometerProxy pedometerProxy;
+- (id)init;
+- (void)dealloc;
+- (void)_startPedometerUpdatesSinceDataRecord:withHandler:;
+- (void)queryPedometerDataFromDate:toDate:withHandler:;
+- (void)startPedometerUpdatesFromDate:withHandler:;
+- (void)stopPedometerUpdates;
+- (id)_pedometerDataWithRecordID:;
+- (void)queryPedometerDataSinceRecord:withHandler:;
+- (void)queryPedometerDataSinceDataRecord:withHandler:;
+- (void)_queryPedometerDataSinceDataRecord:withHandler:;
+- (void)startPedometerEventUpdatesWithHandler:;
+- (void)stopPedometerEventUpdates;
+- (BOOL)sendStrideCalibrationHistoryToFile:;
+- (id)strideCalibrationDump;
+- (void)queryRawSpeedToKValueBinsWithHandler:;
+- (void)queryRemoteRawSpeedToKValueBinsWithHandler:;
+- (void)queryStepCadenceToStrideLengthBinsWithHandler:;
+- (void)queryRemoteStepCadenceToStrideLengthBinsWithHandler:;
+- (id)pedometerProxy;
++ (long long)authorizationStatus;
++ (BOOL)isStepCountingAvailable;
++ (BOOL)isPaceAvailable;
++ (BOOL)isCadenceAvailable;
++ (BOOL)isAllDayElevationAvailable;
++ (BOOL)isFloorCountingAvailable;
++ (BOOL)isPedometerEventTrackingAvailable;
++ (BOOL)isDistanceAvailable;
+@end

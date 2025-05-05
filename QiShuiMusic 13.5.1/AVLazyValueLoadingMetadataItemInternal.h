@@ -1,0 +1,2 @@
+@interface AVLazyValueLoadingMetadataItemInternal : NSObject
+@end

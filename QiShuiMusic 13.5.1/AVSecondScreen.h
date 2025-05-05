@@ -1,0 +1,31 @@
+@interface AVSecondScreen : NSObject
+@property (nonatomic) AVObservationController observationController;
+@property (nonatomic) UIWindow window;
+@property (nonatomic) UIWindowScene windowScene;
+@property (nonatomic) UIScreen screen;
+@property (nonatomic) AVSecondScreenConnection secondScreenConnection;
+@property (nonatomic) q state;
+@property (nonatomic) CADisplay debugInfoDisplay;
+@property (nonatomic) BOOL TVOutScreen;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} sceneBounds;
+- (id)initWithScene:;
+- (void)dealloc;
+- (void)setState:;
+- (id)observationController;
+- (id)screen;
+- (BOOL)isAvailable;
+- (void)setSecondScreenConnection:;
+- (long long)state;
+- (void).cxx_destruct;
+- (void)setWindow:;
+- (id)window;
+- (id)secondScreenConnection;
+- (id)windowScene;
+- (void)connectWithSecondScreenConnection:;
+- (id)sceneBounds;
+- (void)_updatePreferredDisplayCriteria;
+- (BOOL)_isWindowSceneAvailable;
+- (BOOL)isTVOutScreen;
+- (id)debugInfoDisplay;
+- (void)setDebugInfoDisplay:;
+@end

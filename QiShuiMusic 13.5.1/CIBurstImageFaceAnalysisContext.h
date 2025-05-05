@@ -1,0 +1,31 @@
+@interface CIBurstImageFaceAnalysisContext : NSObject
+@property (nonatomic) double timeFaceDetectionDone;
+@property (nonatomic) double timeBlinkDetectionDone;
+@property (nonatomic) BOOL forceFaceDetectionEnable;
+@property (nonatomic) double latestFaceTimestamp;
+@property (nonatomic) NSInteger version;
+- (void)dealloc;
+- (void)setVersion:;
+- (int)version;
+- (id)initWithVersion:;
+- (void)setupFaceDetector;
+- (id)padRoiRect:paddingX:paddingY:;
+- (id)calculateFaceCoreROI:imageStat:needFaceCore:;
+- (id)findOverlappingFaceStat:imageStat:;
+- (int)findFacesInImage:imageStat:;
+- (void)calculateFaceFocusInImage:imageStat:;
+- (void)calcFaceScores:;
+- (void)adjustFaceIdsForImageStat:;
+- (void)addFaceToArray:;
+- (void)extractFacesFromMetadata:;
+- (void)addFacesToImageStat:imageSize:;
+- (void)dumpFaceInfoArray;
+- (double)timeBlinkDetectionDone;
+- (void)setTimeBlinkDetectionDone:;
+- (double)timeFaceDetectionDone;
+- (void)setTimeFaceDetectionDone:;
+- (BOOL)forceFaceDetectionEnable;
+- (void)setForceFaceDetectionEnable:;
+- (double)latestFaceTimestamp;
+- (void)setLatestFaceTimestamp:;
+@end

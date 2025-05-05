@@ -1,0 +1,31 @@
+@interface IESECSliceXActivityCountdownView : IESECSliceXViewElementView
+@property (nonatomic) IESECGoodsDetailTimeCountdownView countdownView;
+@property (nonatomic) NSString currentDetailPageID;
+@property (nonatomic) BOOL isSmallMode;
+@property (nonatomic) NSNumber currentTime;
+@property (nonatomic) q prefixSize;
+@property (nonatomic) q timerSize;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setIsSmallMode:;
+- (id)currentDetailPageID;
+- (void)goodsDetailActivityDidUpdateCountdown:goodsDetailUID:;
+- (BOOL)isSmallMode;
+- (long long)prefixSize;
+- (void)setCurrentDetailPageID:;
+- (void)setPrefixSize:;
+- (void)setTimerSize:;
+- (long long)timerSize;
+- (void)updateCountdown:expireTime:prefix:;
+- (BOOL)updateWithSliceXElement:error:;
+- (void)setCurrentTime:;
+- (void)dealloc;
+- (id)initWithContext:;
+- (id)sizeThatFits:;
+- (void).cxx_destruct;
+- (id)currentTime;
+- (id)countdownView;
+- (void)setCountdownView:;
+@end

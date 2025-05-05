@@ -1,0 +1,36 @@
+@interface VeLivePlayerVideoFrame : NSObject
+@property (nonatomic) ^{__CVBuffer=} originalPixelBuffer;
+@property (nonatomic) ^{__CVBuffer=} pixelBuffer;
+@property (nonatomic) ^{opaqueCMSampleBuffer=} sampleBuffer;
+@property (nonatomic) NSData data;
+@property (nonatomic) q bufferType;
+@property (nonatomic) q pixelFormat;
+@property (nonatomic) q width;
+@property (nonatomic) q height;
+@property (nonatomic) q pts;
+- (id)createData;
+- (id)createI420DataFromPixelBuffer;
+- (id)createNSDataFromeCVPixelBuffer;
+- (id)createNV12DataFromPixelBuffer;
+- (id)createSampleBuffer;
+- (id)getPixelBufferAttributes:heigth:width:;
+- (id)initWithPixelBuffer:bufferType:pixelFormat:pts:;
+- (void)initialVideoFrameParamter;
+- (void)setOriginalPixelBuffer:;
+- (unsigned int)targetPixelBufferPixelFormat;
+- (id)transformToTargetPixelformat:targetPixlFormat:;
+- (id)originalPixelBuffer;
+- (void)dealloc;
+- (id)data;
+- (id)pixelBuffer;
+- (id)sampleBuffer;
+- (long long)height;
+- (long long)width;
+- (void).cxx_destruct;
+- (long long)pixelFormat;
+- (void)setData:;
+- (long long)pts;
+- (void)setSampleBuffer:;
+- (void)setPixelBuffer:;
+- (long long)bufferType;
+@end

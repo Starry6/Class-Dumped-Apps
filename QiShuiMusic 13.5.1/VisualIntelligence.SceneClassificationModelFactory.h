@@ -1,0 +1,2 @@
+@interface VisualIntelligence.SceneClassificationModelFactory : _TtCs12_SwiftObject
+@end

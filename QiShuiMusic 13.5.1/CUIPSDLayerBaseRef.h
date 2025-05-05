@@ -1,0 +1,30 @@
+@interface CUIPSDLayerBaseRef : NSObject
+@property (nonatomic) CUIPSDImageRef imageRef;
+@property (nonatomic) I layerIndex;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} bounds;
+@property (nonatomic) BOOL visibility;
+@property (nonatomic) double opacity;
+@property (nonatomic) double fillOpacity;
+@property (nonatomic) NSInteger blendMode;
+@property (nonatomic) BOOL hasLayerMask;
+@property (nonatomic) BOOL hasVectorMask;
+- (void)setImageRef:;
+- (void)dealloc;
+- (BOOL)visibility;
+- (double)opacity;
+- (id)imageRef;
+- (int)blendMode;
+- (id)name;
+- (id)bounds;
+- (unsigned int)layerIndex;
+- (id)_psdLayerRecord;
+- (id)_psdImageRef;
+- (BOOL)isLayerGroup;
+- (double)fillOpacity;
+- (BOOL)hasLayerMask;
+- (BOOL)hasVectorMask;
+- (id)layerMaskRef;
+- (id)vectorMaskRef;
+- (id)_createMaskFromAlphaChannel:;
+- (void)setLayerIndex:;
+@end

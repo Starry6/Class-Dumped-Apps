@@ -1,0 +1,38 @@
+@interface IESLiveInteractTeamFightGameComponent : IESLiveInteractComponentBase
+@property (nonatomic) IESLiveInteractionBattleAPI api;
+@property (nonatomic) NSArray allItems;
+@property (nonatomic) BOOL didFetchPlayModeInfo;
+@property (nonatomic) IESLiveInteractionLayout currentLayout;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)adminModeEnable;
+- (id)currentGameItem;
+- (int)currentPlayMode;
+- (id)buildRoomBattleItem;
+- (id)buildTwoTeamItem;
+- (void)componentBindContext;
+- (void)componentDidUpdatedGuestList:;
+- (void)componentEnterRoom;
+- (void)componentLeaveLayout:;
+- (void)componentMount;
+- (void)componentStartLayout:;
+- (BOOL)didFetchPlayModeInfo;
+- (id)gameItemForType:;
+- (BOOL)isNeedShowExactScoreWith:;
+- (BOOL)isSupportTeamFightLayout:;
+- (BOOL)isSupportTeamFightLayout:layout:;
+- (BOOL)isTeamFightFlexible;
+- (void)setDidFetchPlayModeInfo:;
+- (void)showBubbleGuide:;
+- (id)teamFightDelegate;
+- (id)allItems;
+- (id)currentLayout;
+- (void).cxx_destruct;
+- (void)setCurrentLayout:;
+- (void)messageReceived:;
+- (void)setAllItems:;
+- (id)api;
+- (void)setApi:;
+@end

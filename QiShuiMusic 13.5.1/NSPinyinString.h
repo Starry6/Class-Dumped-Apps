@@ -1,0 +1,31 @@
+@interface NSPinyinString : NSString
+- (unsigned short)HMDP_characterAtIndex:;
+- (id)string;
+- (void)dealloc;
+- (unsigned long long)score;
+- (unsigned short)characterAtIndex:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (id)description;
+- (unsigned long long)length;
+- (Class)classForCoder;
+- (BOOL)isEqual:;
+- (id)initWithString:syllableCount:lastSyllableIsPartial:score:replacementCount:transpositionCount:insertionCount:deletionCount:indexOfFirstModification:rangeCount:ranges:;
+- (id)initWithString:syllableCount:lastSyllableIsPartial:score:replacementCount:transpositionCount:insertionCount:deletionCount:rangeCount:ranges:;
+- (id)nonPinyinIndexSet;
+- (unsigned long long)syllableCount;
+- (BOOL)lastSyllableIsPartial;
+- (unsigned long long)numberOfNonPinyinRanges;
+- (unsigned long long)numberOfReplacements;
+- (unsigned long long)numberOfTranspositions;
+- (unsigned long long)numberOfInsertions;
+- (unsigned long long)numberOfDeletions;
+- (unsigned long long)indexOfFirstModification;
+- (id)nonPinyinRangeAtIndex:;
++ (id)_alternativesForInputString:;
++ (id)_prefixesForInputString:;
++ (id)_correctionsForInputString:;
++ (id)alternativesForInputString:;
++ (id)prefixesForInputString:;
+@end

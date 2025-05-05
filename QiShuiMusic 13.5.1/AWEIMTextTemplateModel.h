@@ -1,0 +1,37 @@
+@interface AWEIMTextTemplateModel : NSObject
+@property (nonatomic) q action;
+@property (nonatomic) NSString name;
+@property (nonatomic) NSString link;
+@property (nonatomic) NSString extraLinkType;
+@property (nonatomic) NSString orderId;
+@property (nonatomic) NSString warningType;
+@property (nonatomic) NSString scene;
+@property (nonatomic) NSString secSenderUid;
+@property (nonatomic) {_NSRange=QQ} range;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) UIColor textColor;
+@property (nonatomic) UIColor textBGColor;
+- (id)initWithAction:name:link:extra:;
+- (id)orderId;
+- (void)setTextBGColor:;
+- (id)extraLinkType;
+- (id)secSenderUid;
+- (void)setExtraLinkType:;
+- (void)setOrderId:;
+- (id)textBGColor;
+- (id)link;
+- (void)setName:;
+- (void)setRange:;
+- (void)setLink:;
+- (id)identifier;
+- (long long)action;
+- (id)scene;
+- (void)setAction:;
+- (id)range;
+- (void)setTextColor:;
+- (void).cxx_destruct;
+- (id)textColor;
+- (id)name;
+- (void)setIdentifier:;
+- (id)warningType;
+@end

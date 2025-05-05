@@ -1,0 +1,38 @@
+@interface STAskForTimeRequest : NSObject
+@property (nonatomic) BOOL oneMoreMinute;
+@property (nonatomic) NSString resourceDisplayName;
+@property (nonatomic) NSNumber timeRequested;
+@property (nonatomic) NSDate timeStamp;
+@property (nonatomic) NSDictionary payload;
+@property (nonatomic) q usageType;
+@property (nonatomic) NSString requestedResourceIdentifier;
+@property (nonatomic) NSUUID requestIdentifier;
+@property (nonatomic) NSNumber requestingUserDSID;
+@property (nonatomic) NSString requestingUserDisplayName;
+@property (nonatomic) BOOL deliverQuietly;
+- (id)requestIdentifier;
+- (id)payload;
+- (id)initWithPayload:;
+- (long long)usageType;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void)setRequestIdentifier:;
+- (void).cxx_destruct;
+- (id)timeStamp;
+- (void)setTimeStamp:;
+- (id)initWithUsageType:requestedResourceIdentifier:;
+- (void)setOneMoreMinute:;
+- (id)requestedResourceIdentifier;
+- (id)resourceDisplayName;
+- (void)setResourceDisplayName:;
+- (id)timeRequested;
+- (void)setTimeRequested:;
+- (BOOL)oneMoreMinute;
+- (id)requestingUserDSID;
+- (void)setRequestingUserDSID:;
+- (id)requestingUserDisplayName;
+- (void)setRequestingUserDisplayName:;
+- (BOOL)deliverQuietly;
+- (void)setDeliverQuietly:;
++ (BOOL)supportsSecureCoding;
+@end

@@ -1,0 +1,35 @@
+@interface CNUIUserActionContext : NSObject
+@property (nonatomic) <CNUIUserActionURLOpener> urlOpener;
+@property (nonatomic) <CNUIUserActionUserActivityOpener> userActivityOpener;
+@property (nonatomic) <CNUIUserActionDialRequestOpener> dialRequestOpener;
+@property (nonatomic) <CNUIUserActionRecorder> actionRecorder;
+@property (nonatomic) <CNUIUserActionCurator> actionCurator;
+@property (nonatomic) NSString channelIdentifier;
+@property (nonatomic) BSServiceConnectionEndpoint connectionEndpoint;
+@property (nonatomic) BOOL isOriginatingFromFavorites;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (id)actionRecorder;
+- (id)initWithContactStore:applicationWorkspace:;
+- (void).cxx_destruct;
+- (id)urlOpener;
+- (id)userActivityOpener;
+- (id)dialRequestOpener;
+- (id)actionCurator;
+- (id)channelIdentifier;
+- (void)setChannelIdentifier:;
+- (id)connectionEndpoint;
+- (void)setConnectionEndpoint:;
+- (BOOL)isOriginatingFromFavorites;
+- (void)setIsOriginatingFromFavorites:;
+- (void)setUrlOpener:;
+- (void)setUserActivityOpener:;
+- (void)setDialRequestOpener:;
+- (void)setActionRecorder:;
+- (void)setActionCurator:;
++ (id)contextWithExtensionContext:;
++ (id)makeDefaultContext;
+@end

@@ -1,0 +1,36 @@
+@interface VNMPContext : NSObject
+@property (nonatomic) NSInteger debugMode;
+@property (nonatomic) NSInteger timerMode;
+@property (nonatomic) NSInteger clusterSplitDistanceType;
+@property (nonatomic) NSArray qualityCriteriaList;
+@property (nonatomic) BOOL useTimestampAdjustedDistances;
+@property (nonatomic) BOOL performClustersPostprocessing;
+@property (nonatomic) BOOL performSceneClassification;
+@property (nonatomic) float roiAreaThreshold;
+@property (nonatomic) float inliersRatioThreshold;
+@property (nonatomic) NSInteger numberOfKeypointsToConsider;
+@property (nonatomic) float naturalClusteringDistanceThreshold;
+- (void)setDebugMode:;
+- (int)timerMode;
+- (int)debugMode;
+- (void)setTimerMode:;
+- (void).cxx_destruct;
+- (int)clusterSplitDistanceType;
+- (void)setClusterSplitDistanceType:;
+- (id)qualityCriteriaList;
+- (void)setQualityCriteriaList:;
+- (BOOL)useTimestampAdjustedDistances;
+- (void)setUseTimestampAdjustedDistances:;
+- (BOOL)performClustersPostprocessing;
+- (void)setPerformClustersPostprocessing:;
+- (BOOL)performSceneClassification;
+- (void)setPerformSceneClassification:;
+- (float)roiAreaThreshold;
+- (void)setRoiAreaThreshold:;
+- (float)inliersRatioThreshold;
+- (void)setInliersRatioThreshold:;
+- (int)numberOfKeypointsToConsider;
+- (void)setNumberOfKeypointsToConsider:;
+- (float)naturalClusteringDistanceThreshold;
+- (void)setNaturalClusteringDistanceThreshold:;
+@end

@@ -1,0 +1,36 @@
+@interface AVCBasebandCongestionDetector : NSObject
+@property (nonatomic) I radioAccessTechnology;
+@property (nonatomic) I mode;
+@property (nonatomic) I targetBitrate;
+@property (nonatomic) BOOL isTargetBitrateStabilized;
+@property (nonatomic) AVCStatisticsCollector statisticsCollector;
+@property (nonatomic) VCRateControlMediaController mediaController;
+@property (nonatomic) I basebandTxBitrate;
+@property (nonatomic) I basebandAverageBitrate;
+@property (nonatomic) I basebandQueueDepth;
+@property (nonatomic) double basebandExpectedQueuingDelay;
+- (id)init;
+- (unsigned int)radioAccessTechnology;
+- (void)dealloc;
+- (id)mediaController;
+- (unsigned int)mode;
+- (void)setMode:;
+- (void)setRadioAccessTechnology:;
+- (id)statisticsCollector;
+- (void)setStatisticsCollector:;
+- (void)setMediaController:;
+- (unsigned int)targetBitrate;
+- (void)setTargetBitrate:;
+- (void)enableBasebandLogDump:;
+- (void)setIsTargetBitrateStabilized:;
+- (BOOL)isTargetBitrateStabilized;
+- (BOOL)processBasebandNotification:metaData:error:;
+- (BOOL)processBasebandNotification:arrivalTime:error:;
+- (BOOL)isRadioAccessTechnologyOnCellular:;
+- (void)processBasebandAck:;
+- (void)printFlushAckToBasebandDump:transactionID:packetDropped:sequenceNumberArray:;
+- (unsigned int)basebandTxBitrate;
+- (unsigned int)basebandAverageBitrate;
+- (unsigned int)basebandQueueDepth;
+- (double)basebandExpectedQueuingDelay;
+@end

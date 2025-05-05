@@ -1,0 +1,38 @@
+@interface IESECStoreTabElementBuilder : NSObject
+@property (nonatomic) NSMutableDictionary tabElementDict;
+@property (nonatomic) NSMutableDictionary preloadTabElementDict;
+@property (nonatomic) UIView rootView;
+@property (nonatomic) <IESECStoreContainerProtocol> container;
+@property (nonatomic) IESECStorePageContext pageContext;
+@property (nonatomic) <IESECShopPageContextV2> pageContextV2;
+- (id)p_createWebTabElementWithModel:;
+- (void)__trackPrehotMatchWithTabModel:;
+- (id)tabElementWithTabType:tabClass:;
+- (BOOL)__hasPrehotISVWithTabModel:;
+- (id)__preloadControllerWithClass:model:;
+- (void)__trackPreloadMatchWithTabModel:status:;
+- (id)createTabElementWithModel:;
+- (id)p_createGoodsTabElementWithModel:;
+- (id)p_createLiveFusionTabElementWithModel:;
+- (id)p_createLynxTabElementWithModel:;
+- (id)p_createMomentsTabElementWithModel:;
+- (id)p_createNativeTabElementWithModel:;
+- (id)p_fallbackCreateTabElementWithModel:;
+- (id)p_getWebTabElementWithModel:;
+- (id)pageContextV2;
+- (void)preloadDynamicComponentsWithModel:;
+- (void)preloadHybridContainerWithModel:;
+- (id)preloadTabElementDict;
+- (void)setPageContextV2:;
+- (void)setPreloadTabElementDict:;
+- (void)setTabElementDict:;
+- (id)tabElementDict;
+- (void)setContainer:;
+- (id)init;
+- (id)container;
+- (void).cxx_destruct;
+- (id)rootView;
+- (void)setRootView:;
+- (id)pageContext;
+- (void)setPageContext:;
+@end

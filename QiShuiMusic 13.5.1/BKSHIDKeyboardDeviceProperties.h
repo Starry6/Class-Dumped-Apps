@@ -1,0 +1,37 @@
+@interface BKSHIDKeyboardDeviceProperties : NSObject
+@property (nonatomic) NSString transport;
+@property (nonatomic) NSString language;
+@property (nonatomic) NSString layout;
+@property (nonatomic) C countryCode;
+@property (nonatomic) I standardType;
+@property (nonatomic) q subinterfaceID;
+@property (nonatomic) BOOL capsLockKeyHasLanguageSwitchLabel;
+@property (nonatomic) BOOL globeKeyLabelHasGlobeSymbol;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)capsLockKeyHasLanguageSwitchLabel;
+- (id)transport;
+- (unsigned char)countryCode;
+- (id)init;
+- (id)language;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)initForProtobufDecoding;
+- (void)encodeWithCoder:;
+- (id)layout;
+- (void).cxx_destruct;
+- (id)description;
+- (void)appendDescriptionToFormatter:;
+- (id)mutableCopyWithZone:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (unsigned int)standardType;
+- (long long)subinterfaceID;
+- (BOOL)globeKeyLabelHasGlobeSymbol;
++ (id)new;
++ (id)protobufSchema;
++ (BOOL)supportsSecureCoding;
++ (id)build:;
+@end

@@ -1,0 +1,36 @@
+@interface IESLiveVideoGiftMaskResourceModel : NSObject
+@property (nonatomic) NSString tag;
+@property (nonatomic) @ content;
+@property (nonatomic) q sourceType;
+@property (nonatomic) UIColor textColor;
+@property (nonatomic) NSString textSize;
+@property (nonatomic) BOOL isBold;
+@property (nonatomic) UIImage sourceImage;
+@property (nonatomic) {CGSize=dd} resourceSize;
+@property (nonatomic) <MTLTexture> texture;
+@property (nonatomic) UIColor color;
+@property (nonatomic) <MTLBuffer> colorBuffer;
+- (void)setResourceSize:;
+- (id)content;
+- (void)setContent:;
+- (id)texture;
+- (id)tag;
+- (long long)sourceType;
+- (void)setColor:;
+- (void)setSourceType:;
+- (void)setTexture:;
+- (id)color;
+- (void)setTag:;
+- (id)resourceSize;
+- (void)setTextColor:;
+- (void).cxx_destruct;
+- (id)textColor;
+- (BOOL)isBold;
+- (id)textSize;
+- (id)sourceImage;
+- (void)setSourceImage:;
+- (void)setIsBold:;
+- (id)colorBuffer;
+- (void)setColorBuffer:;
+- (void)setTextSize:;
+@end

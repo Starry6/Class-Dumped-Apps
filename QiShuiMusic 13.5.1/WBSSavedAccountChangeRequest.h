@@ -1,0 +1,35 @@
+@interface WBSSavedAccountChangeRequest : NSObject
+@property (nonatomic) WBSSavedAccount savedAccount;
+@property (nonatomic) NSString user;
+@property (nonatomic) NSString password;
+@property (nonatomic) NSMutableArray sites;
+@property (nonatomic) WBSTOTPGenerator totpGenerator;
+@property (nonatomic) NSString notesEntry;
+@property (nonatomic) NSArray userVisibleSites;
+@property (nonatomic) BOOL hasChanges;
+@property (nonatomic) BOOL hasUserChange;
+@property (nonatomic) BOOL hasPasswordChange;
+@property (nonatomic) BOOL hasTOTPGeneratorChange;
+@property (nonatomic) BOOL hasNotesEntryChange;
+@property (nonatomic) BOOL isAddingPasswordToAccountWithPasskey;
+- (void)setUser:;
+- (BOOL)hasChanges;
+- (void)setPassword:;
+- (id)password;
+- (id)user;
+- (void).cxx_destruct;
+- (void)setNotesEntry:;
+- (void)setTotpGenerator:;
+- (id)userVisibleSites;
+- (id)notesEntry;
+- (id)sites;
+- (id)savedAccount;
+- (void)setSavedAccount:;
+- (id)totpGenerator;
+- (BOOL)hasUserChange;
+- (BOOL)hasPasswordChange;
+- (BOOL)hasTOTPGeneratorChange;
+- (BOOL)hasNotesEntryChange;
+- (BOOL)isAddingPasswordToAccountWithPasskey;
+- (void)setSites:;
+@end

@@ -1,0 +1,2 @@
+@interface LinkmicSwitchChannelReplyApiRoot : GPBRootObject
+@end

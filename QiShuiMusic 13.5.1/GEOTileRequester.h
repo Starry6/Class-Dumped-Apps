@@ -1,0 +1,30 @@
+@interface GEOTileRequester : NSObject
+@property (nonatomic) GEOResourceManifestManager resourceManifestManager;
+@property (nonatomic) GEOTileRequest tileRequest;
+@property (nonatomic) <GEOTileRequesterDelegate> delegate;
+@property (nonatomic) NSObject<OS_dispatch_queue> delegateQueue;
+@property (nonatomic) @ context;
+@property (nonatomic) NSString deviceCountry;
+@property (nonatomic) NSString deviceRegion;
+- (id)deviceRegion;
+- (id)init;
+- (void)cancel;
+- (id)context;
+- (void)start;
+- (id)delegateQueue;
+- (void)tearDown;
+- (id)tileSetForKey:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)activeTileSetForKey:;
+- (void)setContext:;
+- (id)initWithTileRequest:delegateQueue:delegate:;
+- (void)cancelKey:;
+- (void)reprioritizeKey:newPriority:;
+- (id)tileRequest;
+- (id)deviceCountry;
+- (void)setDeviceCountry:;
+- (void)setDeviceRegion:;
+- (id)resourceManifestManager;
++ (unsigned char)tileProviderIdentifier;
+@end

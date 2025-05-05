@@ -1,0 +1,21 @@
+@interface NSHTMLWebDelegate : NSObject
+- (id)init;
+- (void)dealloc;
+- (id)initWithBaseURL:;
+- (void)webView:decidePolicyForNavigationAction:request:frame:decisionListener:;
+- (void)webView:decidePolicyForNewWindowAction:request:newFrameName:decisionListener:;
+- (void)webView:decidePolicyForMIMEType:request:frame:decisionListener:;
+- (void)webView:didFinishLoadForFrame:;
+- (void)webView:didFailLoadWithError:forFrame:;
+- (void)webView:didStartProvisionalLoadForFrame:;
+- (void)webView:didFailProvisionalLoadWithError:forFrame:;
+- (void)webView:didCommitLoadForFrame:;
+- (id)webView:identifierForInitialRequest:fromDataSource:;
+- (void)webView:resource:didFinishLoadingFromDataSource:;
+- (void)webView:resource:didFailLoadingWithError:fromDataSource:;
+- (void)webView:resource:didReceiveAuthenticationChallenge:fromDataSource:;
+- (id)webView:resource:willSendRequest:redirectResponse:fromDataSource:;
+- (BOOL)loadDidFinish;
+- (BOOL)loadDidSucceed;
+- (void)decidePolicyForRequest:decisionListener:;
+@end

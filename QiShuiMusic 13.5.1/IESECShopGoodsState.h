@@ -1,0 +1,34 @@
+@interface IESECShopGoodsState : NSObject
+@property (nonatomic) IESECStorePageContext storePageContext;
+@property (nonatomic) <IESECShopPageContextV2> storePageContextV2;
+@property (nonatomic) <IESECStoreContainerProtocol> container;
+@property (nonatomic) q tabStyle;
+@property (nonatomic) Q tabType;
+@property (nonatomic) q scene;
+@property (nonatomic) <IESECShopProductsDataSource> dataSource;
+@property (nonatomic) BOOL compressingInformationForCart;
+@property (nonatomic) UIViewController<IESECShopGoodsViewControllerProtocol> viewController;
+@property (nonatomic) IESECShopGoodsEventHandler eventHandler;
+- (BOOL)isCompressingInformationForCart;
+- (unsigned long long)tabType;
+- (id)ecomEntranceForm;
+- (void)setCompressingInformationForCart:;
+- (void)setStorePageContext:;
+- (void)setStorePageContextV2:;
+- (void)setTabStyle:;
+- (void)setTabType:;
+- (id)storePageContext;
+- (id)storePageContextV2;
+- (long long)tabStyle;
+- (void)setContainer:;
+- (void)setDataSource:;
+- (void)setScene:;
+- (void)setViewController:;
+- (id)container;
+- (void)setEventHandler:;
+- (long long)scene;
+- (id)viewController;
+- (id)eventHandler;
+- (id)dataSource;
+- (void).cxx_destruct;
+@end

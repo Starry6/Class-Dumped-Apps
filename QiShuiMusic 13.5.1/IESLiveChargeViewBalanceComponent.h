@@ -1,0 +1,35 @@
+@interface IESLiveChargeViewBalanceComponent : UIView
+@property (nonatomic) IESLiveChargeViewModel viewModel;
+@property (nonatomic) UILabel balanceLabel;
+@property (nonatomic) UIView chargeFAQ;
+@property (nonatomic) UIImageView chargeFAQImageView;
+@property (nonatomic) UILabel chargeFAQLabel;
+@property (nonatomic) BOOL isChargeFail;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)addFaqView;
+- (id)chargeFAQ;
+- (id)chargeFAQImageView;
+- (id)chargeFAQLabel;
+- (void)didBalanceUpdated;
+- (void)didChargePanelFAQTaped:;
+- (void)didRechargeSuccess:error:;
+- (BOOL)isChargeFail;
+- (void)setChargeFAQ:;
+- (void)setChargeFAQImageView:;
+- (void)setChargeFAQLabel:;
+- (void)setIsChargeFail:;
+- (void)updateBalance;
+- (void)updateViewModel:;
+- (void)reload;
+- (id)viewModel;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)setViewModel:;
+- (void)setupUI;
+- (id)balanceLabel;
+- (double)viewHeight;
+- (void)setBalanceLabel:;
+@end

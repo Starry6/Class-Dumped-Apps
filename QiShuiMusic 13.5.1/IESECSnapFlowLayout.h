@@ -1,0 +1,32 @@
+@interface IESECSnapFlowLayout : UICollectionViewFlowLayout
+@property (nonatomic) <IESECSnapFlowLayoutDelegate> delegate;
+@property (nonatomic) double criticalValue;
+@property (nonatomic) double animationDuration;
+@property (nonatomic) q centerPosition;
+@property (nonatomic) double topOffset;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)_cardIndexForContentOffset:;
+- (id)_contentOffsetForCenteringCellAtIndexPath:scrollToTop:;
+- (id)_indexPathAfterIndexPath:;
+- (id)_indexPathBeforeIndexPath:;
+- (long long)centerPosition;
+- (double)criticalValue;
+- (double)getImageHeightWithCellFrame:;
+- (void)handleDisplayLinkFire:;
+- (void)resetCardIndexPath:;
+- (void)setCenterPosition:;
+- (double)snapOffset:scrollToTop:indexPath:;
+- (void)prepareLayout;
+- (double)animationDuration;
+- (void)setDelegate:;
+- (double)topOffset;
+- (void)setTopOffset:;
+- (id)delegate;
+- (void)setAnimationDuration:;
+- (void).cxx_destruct;
+- (id)initWithDelegate:;
+- (id)targetContentOffsetForProposedContentOffset:withScrollingVelocity:;
+@end

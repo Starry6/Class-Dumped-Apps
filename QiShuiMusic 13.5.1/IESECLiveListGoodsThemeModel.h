@@ -1,0 +1,30 @@
+@interface IESECLiveListGoodsThemeModel : NSObject
+@property (nonatomic) NSDictionary liveThemeColorDic;
+@property (nonatomic) NSDictionary liveThemeFileDic;
+@property (nonatomic) NSDictionary liveThemeFontSizeDic;
+@property (nonatomic) NSDictionary liveThemeRadiusDic;
+@property (nonatomic) q liteLiveTheme;
+@property (nonatomic) BOOL adjustCellSizeByLite;
+@property (nonatomic) BOOL adjustButtonSizeByLite;
+@property (nonatomic) BOOL adjustPriceAreaPriority;
+@property (nonatomic) BOOL adjustPriceFont;
+- (BOOL)adjustPriceFont;
+- (BOOL)adjustButtonSizeByLite;
+- (BOOL)adjustCellSizeByLite;
+- (BOOL)adjustPriceAreaPriority;
+- (long long)liteLiveTheme;
+- (id)liveThemeColorDic;
+- (id)liveThemeFileDic;
+- (id)liveThemeFontSizeDic;
+- (id)liveThemeRadiusDic;
+- (void)setAdjustButtonSizeByLite:;
+- (void)setAdjustCellSizeByLite:;
+- (void)setAdjustPriceAreaPriority:;
+- (void)setAdjustPriceFont:;
+- (void)setLiteLiveTheme:;
+- (void)setLiveThemeColorDic:;
+- (void)setLiveThemeFileDic:;
+- (void)setLiveThemeFontSizeDic:;
+- (void)setLiveThemeRadiusDic:;
+- (void).cxx_destruct;
+@end

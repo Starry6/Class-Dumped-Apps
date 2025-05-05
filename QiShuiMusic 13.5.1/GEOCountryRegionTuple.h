@@ -1,0 +1,32 @@
+@interface GEOCountryRegionTuple : PBCodable
+@property (nonatomic) BOOL hasCountryCode;
+@property (nonatomic) NSString countryCode;
+@property (nonatomic) BOOL hasRegion;
+@property (nonatomic) NSString region;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (BOOL)hasCountryCode;
+- (void)readAll:;
+- (void)setCountryCode:;
+- (id)countryCode;
+- (id)unknownFields;
+- (id)init;
+- (void)setRegion:;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (id)region;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (BOOL)hasRegion;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
++ (BOOL)isValid:;
+@end

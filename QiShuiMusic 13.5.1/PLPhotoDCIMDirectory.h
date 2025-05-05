@@ -1,0 +1,22 @@
+@interface PLPhotoDCIMDirectory : NSObject
+- (void)dealloc;
+- (id)userInfo;
+- (void).cxx_destruct;
+- (void)setUserInfoObject:forKey:;
+- (id)nextAvailableDirectory;
+- (void)lockDirectory;
+- (id)initWithDCIMPath:;
+- (void)unlockDirectory;
+- (id)_userInfoPath;
+- (id)dcimPath;
+- (id)miscPath;
+- (id)posterImagePath;
+- (void)saveUserInfo;
+- (void)recreateInfoPlist;
+- (void)reloadUserInfo;
+- (id)userInfoObjectForKey:;
+- (id)dcfDirectories;
+- (void)clearDCFDirectories;
+- (BOOL)hasChangedExternally;
+- (void)setHasChangedExternally:;
+@end

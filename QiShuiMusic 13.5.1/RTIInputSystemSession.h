@@ -1,0 +1,33 @@
+@interface RTIInputSystemSession : NSObject
+@property (nonatomic) NSHashTable extraSessionDelegates;
+@property (nonatomic) NSUUID uuid;
+@property (nonatomic) RTISessionOptions beginOptions;
+@property (nonatomic) RTIDocumentTraits documentTraits;
+@property (nonatomic) RTIDocumentState documentState;
+@property (nonatomic) RTITextOperations textOperations;
+@property (nonatomic) RTITextOperations _textOperations;
+@property (nonatomic) <RTIInputSystemSessionDelegate> sessionDelegate;
+- (void)setDocumentState:;
+- (id)documentState;
+- (id)sessionDelegate;
+- (void)flushOperations;
+- (id)uuid;
+- (void)setUuid:;
+- (void)setSessionDelegate:;
+- (void).cxx_destruct;
+- (void)addSessionDelegate:;
+- (id)textOperations;
+- (void)setTextOperations:;
+- (id)documentTraits;
+- (void)setDocumentTraits:;
+- (id)_textOperations;
+- (void)_createTextOperationsIfNecessary;
+- (void)applyLocalTextOperations:toDocumentState:;
+- (void)_applyLocalTextOperations:toDocumentState:;
+- (void)removeSessionDelegate:;
+- (void)enumerateSessionDelegatesUsingBlock:;
+- (id)beginOptions;
+- (void)setBeginOptions:;
+- (id)extraSessionDelegates;
+- (void)setExtraSessionDelegates:;
+@end

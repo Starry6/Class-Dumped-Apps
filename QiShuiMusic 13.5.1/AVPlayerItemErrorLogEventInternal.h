@@ -1,0 +1,2 @@
+@interface AVPlayerItemErrorLogEventInternal : NSObject
+@end

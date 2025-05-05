@@ -1,0 +1,30 @@
+@interface GEONavigationTransitStopSummary : PBCodable
+@property (nonatomic) BOOL hasStopID;
+@property (nonatomic) Q stopID;
+@property (nonatomic) BOOL hasCoordinate;
+@property (nonatomic) GEOLatLng coordinate;
+- (void)readAll:;
+- (BOOL)hasGreenTeaWithValue:;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (id)coordinate;
+- (BOOL)readFrom:;
+- (id)description;
+- (BOOL)hasCoordinate;
+- (id)dictionaryRepresentation;
+- (void)setCoordinate:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (unsigned long long)stopID;
+- (void)setStopID:;
+- (void)setHasStopID:;
+- (BOOL)hasStopID;
+- (id)initWithTransitStop:;
++ (BOOL)isValid:;
+@end

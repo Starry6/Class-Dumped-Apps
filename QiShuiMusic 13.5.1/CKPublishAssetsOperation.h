@@ -1,0 +1,36 @@
+@interface CKPublishAssetsOperation : CKDatabaseOperation
+@property (nonatomic) NSArray recordIDs;
+@property (nonatomic) NSMutableDictionary perItemErrorsByRecordID;
+@property (nonatomic) <CKPublishAssetsOperationCallbacks> clientOperationCallbackProxy;
+@property (nonatomic) CKPublishAssetsOperationInfo operationInfo;
+@property (nonatomic) NSDictionary fileNamesByAssetFieldNames;
+@property (nonatomic) Q requestedTTL;
+@property (nonatomic) Q URLOptions;
+@property (nonatomic) @? assetPublishedBlock;
+@property (nonatomic) @? publishAssetCompletionBlock;
+- (void)_finishOnCallbackQueueWithError:;
+- (unsigned long long)URLOptions;
+- (void)setURLOptions:;
+- (void)setRequestedTTL:;
+- (void)setRecordIDs:;
+- (unsigned long long)requestedTTL;
+- (id)activityCreate;
+- (id)recordIDs;
+- (void)performCKOperation;
+- (void)fillFromOperationInfo:;
+- (BOOL)hasCKOperationCallbacksSet;
+- (void).cxx_destruct;
+- (void)fillOutOperationInfo:;
+- (BOOL)CKOperationShouldRun:;
+- (id)initWithRecordIDs:;
+- (id)perItemErrorsByRecordID;
+- (void)setPerItemErrorsByRecordID:;
+- (void)handleAssetPublishCompletionForRecordID:publishedAsset:recordKey:error:;
+- (void)setAssetPublishedBlock:;
+- (id)assetPublishedBlock;
+- (void)setPublishAssetCompletionBlock:;
+- (id)publishAssetCompletionBlock;
+- (id)fileNamesByAssetFieldNames;
+- (void)setFileNamesByAssetFieldNames:;
++ (void)applyDaemonCallbackInterfaceTweaks:;
+@end

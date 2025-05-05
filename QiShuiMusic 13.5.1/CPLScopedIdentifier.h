@@ -1,0 +1,38 @@
+@interface CPLScopedIdentifier : NSObject
+@property (nonatomic) q scopeIndex;
+@property (nonatomic) NSString scopeIdentifier;
+@property (nonatomic) NSString identifier;
+- (id)descriptionWithNoScopeIndex;
+- (id)scopeIdentifier;
+- (id)redactedDescription;
+- (id)identifier;
+- (id)initWithCoder:;
+- (id)plistArchiveWithCPLArchiver:;
+- (unsigned long long)hash;
+- (id)initWithCPLArchiver:;
+- (id)initRelativeToScopedIdentifier:identifier:;
+- (BOOL)cplSpecialIsEqual:;
+- (void)setScopeIndex:;
+- (void)encodeWithCoder:;
+- (BOOL)isInMainScope;
+- (void).cxx_destruct;
+- (unsigned long long)cplSpecialHash;
+- (long long)scopeIndex;
+- (id)description;
+- (id)initWithScopeIdentifier:identifier:scopeIndex:;
+- (id)safeFilename;
+- (id)initInMainScopeWithIdentifier:;
+- (id)initWithScopeIdentifier:identifier:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
++ (id)scopedIdentifiersFromArrayOfUnknownIdentifiers:;
++ (BOOL)supportsSecureCoding;
++ (id)scopedIdentifiersFromSetOfUnknownIdentifiers:;
++ (id)descriptionWithScopeIdentifier:identifier:;
++ (id)unscopedIdentifiersFromArrayOfScopedIdentifiers:;
++ (id)unscopedIdentifiersFromSetOfScopedIdentifiers:;
++ (id)unscopedIdentifiersFromDictionaryOfScopedIdentifiers:;
++ (id)scopedIdentifierWithString:includeScopeIndex:defaultScopeIdentifier:;
++ (id)scopedIdentifiersFromDictionaryOfUnknownIdentifiers:;
++ (id)scopedIdentifierWithString:includeScopeIndex:;
+@end

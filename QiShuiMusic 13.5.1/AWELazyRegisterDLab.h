@@ -1,0 +1,2 @@
+@interface AWELazyRegisterDLab : NSObject
+@end

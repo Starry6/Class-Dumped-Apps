@@ -1,0 +1,30 @@
+@interface ISAssetCatalogResource : NSObject
+@property (nonatomic) CUICatalog catalog;
+@property (nonatomic) IFImageBag imageBag;
+@property (nonatomic) NSString imageName;
+@property (nonatomic) NSString symbolName;
+@property (nonatomic) q layoutDirection;
+@property (nonatomic) BOOL precomposed;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)symbolName;
+- (id)imageName;
+- (id)catalog;
+- (BOOL)isPrecomposed;
+- (void).cxx_destruct;
+- (void)setLayoutDirection:;
+- (id)imageForSize:scale:;
+- (long long)layoutDirection;
+- (id)initWithCatalog:imageName:symbolName:;
+- (id)imageWithName:scale:;
+- (id)imageBag;
+- (id)symbolImageForSize:scale:;
+- (id)symbolImageForFontSize:scale:symbolSize:symbolWeight:;
++ (id)assetCatalogResourceWithURL:imageName:error:;
++ (id)assetCatalogResourceWithURL:symbolName:error:;
++ (id)coreGlyphsCatalog;
++ (id)assetCatalogResourceWithURL:imageName:symbolName:error:;
++ (id)imageForStaticAssetWithKey:withDescriptor:;
+@end

@@ -1,0 +1,23 @@
+@interface PLDelayedSaveActionsProcessor : NSObject
+- (void)_processDelayedMemoriesForDuetDelete:transaction:;
+- (void)processDelayedSaveActionsDetail:withPhotoLibrary:transaction:;
+- (void)_processDelayedMemoriesAssetUpdate:library:transaction:;
+- (void)_processDelayedLibraryScopeParticipantsUpdate:library:transaction:;
+- (void)_processDelayedAlbumCountsAndDateRangeUpdates:library:transaction:;
+- (void)_processDelayedAssetsForFileSystemPersistency:library:transaction:;
+- (void)_processDelayedWidgetTimelineReload:library:transaction:;
+- (void)processDelayedMomentGeneratorSaveActionsFromDetail:;
+- (id)initWithLibraryServicesManager:;
+- (void)processDelayedDeletionsFromChangeHubEvent:library:transaction:;
+- (void)_processDelayedCloudFeedAlbumUpdates:assetInserts:assetUpdates:commentInserts:invitationRecordUpdates:deletionEntries:transaction:;
+- (void)_processDelayedAssetsForDuetDelete:transaction:;
+- (void)_processDelayedDupeAnalysisNormalInserts:cloudInserts:transaction:;
+- (void)_processDelayedFeaturedContentUpdateAndWidgetTimelineReload:shouldReloadWidgetTimeline:library:transaction:;
+- (void)_processDelayedMomentChangesWithTransaction:;
+- (void).cxx_destruct;
+- (void)_processDelayedWallpaperSuggestionReload:library:transaction:;
+- (void)_processDelayedImportSessionCountsAndDateRangeUpdates:library:transaction:;
+- (void)_deleteUUIDs:fromCoreDuetStreams:transaction:;
+- (void)_processDelayedLibraryScopeRulesUpdate:library:transaction:;
+- (void)_processDelayedSearchIndexUpdates:transaction:;
+@end

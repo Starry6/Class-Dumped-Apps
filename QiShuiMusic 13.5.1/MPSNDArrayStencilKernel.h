@@ -1,0 +1,31 @@
+@interface MPSNDArrayStencilKernel : MPSNDArrayBinaryKernel
+@property (nonatomic) NSInteger reductionMode;
+@property (nonatomic) {MPSNDArrayStencilOffsets_s=[4q]} stencilOffsets;
+@property (nonatomic) {MPSNDArrayStencilSizes_s=[4Q]} stencilStrides;
+@property (nonatomic) {MPSNDArrayStencilSizes_s=[4Q]} stencilDilationRates;
+@property (nonatomic) NSInteger paddingMode;
+@property (nonatomic) float paddingConstant;
+- (id)initWithCoder:device:;
+- (id)copyWithZone:device:;
+- (id)debugDescription;
+- (void)encodeWithCoder:;
+- (id)initWithDevice:;
+- (void)setStencilDilationRates:;
+- (void)setStencilOffsets:;
+- (void)setStencilStrides:;
+- (void)setPaddingMode:;
+- (int)reductionMode;
+- (void)setReductionMode:;
+- (float)paddingConstant;
+- (void)setPaddingConstant:;
+- (unsigned long long)kernelDimensionalityForSourceArrays:;
+- (BOOL)supportsGradientForSourceIndex:;
+- (id)dimensionsNotToBeBroadcast;
+- (id)dimensionsToBeRetained;
+- (id)workloadStatisticsForSourceArrays:destArrays:kernel:kernelDAGObject:sourceState:;
+- (int)paddingMode;
+- (id)stencilOffsets;
+- (id)stencilStrides;
+- (id)stencilDilationRates;
++ (id)libraryInfo:;
+@end

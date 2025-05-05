@@ -1,0 +1,2 @@
+@interface AVMusicEvent : NSObject
+@end

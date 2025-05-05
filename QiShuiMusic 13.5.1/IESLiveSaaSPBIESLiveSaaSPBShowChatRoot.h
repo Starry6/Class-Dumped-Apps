@@ -1,0 +1,2 @@
+@interface IESLiveSaaSPBIESLiveSaaSPBShowChatRoot : GPBRootObject
+@end

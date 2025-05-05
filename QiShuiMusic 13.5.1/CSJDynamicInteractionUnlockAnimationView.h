@@ -1,0 +1,31 @@
+@interface CSJDynamicInteractionUnlockAnimationView : UIView
+@property (nonatomic) UIImageView goImageView;
+@property (nonatomic) UIImageView unionIndicatorImageView;
+@property (nonatomic) CAGradientLayer swipeLayer;
+@property (nonatomic) CAReplicatorLayer replicatorLayer;
+@property (nonatomic) CAAnimationGroup goGroup;
+@property (nonatomic) CAAnimationGroup sweepGroup;
+@property (nonatomic) UIImageView goPlaceholderImageView;
+- (id)goGroup;
+- (void)setGoImageView:;
+- (id)goImageView;
+- (id)goPlaceholderImageView;
+- (void)laodAnimation;
+- (void)setGoGroup:;
+- (void)setGoPlaceholderImageView:;
+- (void)setReplicatorLayer:;
+- (void)setSweepGroup:;
+- (void)setSwipeLayer:;
+- (void)setUnionIndicatorImageView:;
+- (id)sweepGroup;
+- (id)swipeLayer;
+- (id)unionIndicatorImageView;
+- (void)layoutSubviews;
+- (id)initWithFrame:;
+- (void)startAnimation;
+- (void)setup;
+- (void).cxx_destruct;
+- (void)stopAnimation;
+- (id)replicatorLayer;
++ (Class)layerClass;
+@end

@@ -1,0 +1,30 @@
+@interface IESLiveDanmakuSettingBlockItem : NSObject
+@property (nonatomic) NSString identifier;
+@property (nonatomic) Q type;
+@property (nonatomic) UIImage itemView;
+@property (nonatomic) UIImage selectedView;
+@property (nonatomic) NSString title;
+@property (nonatomic) BOOL selected;
+@property (nonatomic) BOOL showRedDot;
+@property (nonatomic) BOOL needAnchoring;
+@property (nonatomic) @? onItemTapped;
+- (BOOL)needAnchoring;
+- (id)onItemTapped;
+- (void)setNeedAnchoring:;
+- (void)setOnItemTapped:;
+- (void)setSelectedView:;
+- (void)setShowRedDot:;
+- (BOOL)showRedDot;
+- (BOOL)selected;
+- (id)identifier;
+- (void)setSelected:;
+- (void)setType:;
+- (void)setTitle:;
+- (unsigned long long)type;
+- (id)title;
+- (void).cxx_destruct;
+- (void)setIdentifier:;
+- (id)itemView;
+- (void)setItemView:;
+- (id)selectedView;
+@end

@@ -1,0 +1,37 @@
+@interface IHSchemaIHClientEvent : SISchemaTopLevelUnionType
+@property (nonatomic) SISchemaInstrumentationMessage innerEvent;
+@property (nonatomic) IHSchemaIHClientEventMetadata eventMetadata;
+@property (nonatomic) BOOL hasEventMetadata;
+@property (nonatomic) IHSchemaIHModelEvaluationContext modelEvaluationContext;
+@property (nonatomic) BOOL hasModelEvaluationContext;
+@property (nonatomic) NSData jsonData;
+@property (nonatomic) Q whichEvent_Type;
+- (int)componentName;
+- (id)qualifiedMessageName;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (int)getAnyEventType;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (unsigned long long)whichEvent_Type;
+- (id)eventMetadata;
+- (void)setEventMetadata:;
+- (BOOL)hasEventMetadata;
+- (id)innerEvent;
+- (id)getComponentId;
+- (void)deleteEventMetadata;
+- (void)setHasEventMetadata:;
+- (void)setModelEvaluationContext:;
+- (id)modelEvaluationContext;
+- (void)deleteModelEvaluationContext;
+- (BOOL)hasModelEvaluationContext;
+- (void)setHasModelEvaluationContext:;
++ (int)joinability;
+@end

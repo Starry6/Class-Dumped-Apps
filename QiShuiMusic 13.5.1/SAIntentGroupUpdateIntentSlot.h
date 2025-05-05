@@ -1,0 +1,31 @@
+@interface SAIntentGroupUpdateIntentSlot : SABaseCommand
+@property (nonatomic) NSString intentSlotKeyPath;
+@property (nonatomic) SAIntentGroupProtobufMessage intentSlotResolutionResult;
+@property (nonatomic) NSNumber intentSlotValueIndex;
+@property (nonatomic) NSString intentTypeName;
+@property (nonatomic) NSString jsonEncodedIntentSlotResolutionResult;
+@property (nonatomic) SAIntentGroupProtobufMessage location;
+@property (nonatomic) NSString aceId;
+@property (nonatomic) NSString refId;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)groupIdentifier;
+- (BOOL)requiresResponse;
+- (id)location;
+- (id)encodedClassName;
+- (void)setLocation:;
+- (id)intentTypeName;
+- (void)setIntentTypeName:;
+- (id)intentSlotKeyPath;
+- (void)setIntentSlotKeyPath:;
+- (id)intentSlotResolutionResult;
+- (void)setIntentSlotResolutionResult:;
+- (id)intentSlotValueIndex;
+- (void)setIntentSlotValueIndex:;
+- (id)jsonEncodedIntentSlotResolutionResult;
+- (void)setJsonEncodedIntentSlotResolutionResult:;
++ (id)updateIntentSlot;
++ (id)updateIntentSlotWithDictionary:context:;
+@end

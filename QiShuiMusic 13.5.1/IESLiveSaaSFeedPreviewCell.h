@@ -1,0 +1,36 @@
+@interface IESLiveSaaSFeedPreviewCell : UICollectionViewCell
+@property (nonatomic) IESLiveSaaSFeedPreviewView previewView;
+@property (nonatomic) IESLiveSaaSFeedOperationModel operationData;
+@property (nonatomic) <IESLiveSaaSFeedPreviewCellDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)feedPreviewView:getCustomDetailViewWithOperationModel:;
+- (void)feedPreviewViewDidUserDislike:operationModel:;
+- (BOOL)feedPreviewViewIsPreviewing:;
+- (id)getCellOperationModel;
+- (id)getEnterRoomParams;
+- (BOOL)isPreviewPlaying;
+- (void)playStream;
+- (void)prePlayStream;
+- (void)setOperationData:;
+- (void)updateData:model:;
+- (id)previewView;
+- (void)setDelegate:;
+- (void)prepareForReuse;
+- (void)scrollViewWillEndDragging:;
+- (id)initWithFrame:;
+- (void)scrollViewWillBeginDragging:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setPreviewView:;
+- (void)viewDidAppear;
+- (void)setupSubviews;
+- (id)cellView;
+- (double)cellHeight;
+- (void)didEndDisplaying;
+- (void)stopStream;
+- (void)viewDidDisappear;
+- (id)operationData;
+@end

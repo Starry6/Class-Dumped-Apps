@@ -1,0 +1,32 @@
+@interface BMFileManager : NSObject
+@property (nonatomic) NSString directory;
+@property (nonatomic) <BMFileManagerDelegate> delegate;
+- (id)directory;
+- (id)init;
+- (void)setDelegate:;
+- (id)_memoryMappingForFileAtPath:flags:error:;
+- (BOOL)createDirectoryAtPath:error:;
+- (id)memoryMappingForFileAtPath:flags:error:;
+- (BOOL)replaceFileAtPath:withData:error:;
+- (id)temporaryFileHandleWithProtection:error:;
+- (BOOL)removeFileAtPath:error:;
+- (id)fileHandleForFileAtPath:flags:protection:error:;
+- (BOOL)_removeFileAtPath:error:;
+- (id)initWithDirectory:cachingOptions:;
+- (id)dataWithContentsOfFileAtPath:error:;
+- (id)_fileHandleForFileAtPath:flags:protection:error:;
+- (id)delegate;
+- (id)_memoryMappingFromFileHandle:flags:error:;
+- (void).cxx_destruct;
+- (BOOL)_removeDirectoryAtPath:error:;
+- (BOOL)removeDirectoryAtPath:error:;
+- (id)contentsOfDirectoryAtPath:error:;
+- (BOOL)acquireLockfile:andRunBlock:;
+- (unsigned long long)sizeOfFileAtPath:error:;
+- (BOOL)replaceFileAtPath:withFileHandle:error:;
++ (id)fileManagerWithDirectAccessToDirectory:cachingOptions:extraFlags:protection:;
++ (id)globalWeakMemoryMappingCache;
++ (id)direct;
++ (id)globalWeakFileHandleCache;
++ (id)fileManagerWithMediatedAccessToDirectory:;
+@end

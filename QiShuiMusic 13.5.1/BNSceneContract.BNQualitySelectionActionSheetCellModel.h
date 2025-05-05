@@ -1,0 +1,2 @@
+@interface BNSceneContract.BNQualitySelectionActionSheetCellModel : _TtCs12_SwiftObject
+@end

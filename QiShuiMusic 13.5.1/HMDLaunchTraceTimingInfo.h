@@ -1,0 +1,30 @@
+@interface HMDLaunchTraceTimingInfo : NSObject
+@property (nonatomic) NSArray taskSpans;
+@property (nonatomic) q start;
+@property (nonatomic) q end;
+@property (nonatomic) q collectFrom;
+@property (nonatomic) BOOL prewarm;
+@property (nonatomic) NSString pageName;
+@property (nonatomic) NSString customLaunchModel;
+@property (nonatomic) NSString name;
+@property (nonatomic) NSString pageType;
+- (void)setCollectFrom:;
+- (long long)collectFrom;
+- (id)customLaunchModel;
+- (void)setCustomLaunchModel:;
+- (void)setPrewarm:;
+- (void)setTaskSpans:;
+- (id)taskSpans;
+- (void)setEnd:;
+- (void)setStart:;
+- (long long)end;
+- (void)setName:;
+- (BOOL)prewarm;
+- (long long)start;
+- (void).cxx_destruct;
+- (void)setPageType:;
+- (id)pageType;
+- (id)name;
+- (void)setPageName:;
+- (id)pageName;
+@end

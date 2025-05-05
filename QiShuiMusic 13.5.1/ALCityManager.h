@@ -1,0 +1,34 @@
+@interface ALCityManager : NSObject
+@property (nonatomic) CPSearchMatcher citySearchMatcher;
+- (id)citySearchMatcher;
+- (id)init;
+- (void)dealloc;
+- (id)defaultCityForTimeZone:localeCode:;
+- (id)citiesWithTimeZone:;
+- (id)citiesMatchingName:localized:;
+- (id)cityForClassicIdentifier:;
+- (id)_cityForTimeZone:localeCode:;
+- (id)defaultCityForTimeZone:;
+- (id)localeWithCode:;
+- (id)allCities;
+- (id)defaultCitiesForLocaleCode:;
+- (id)bestCityForLegacyCity:;
+- (id)_whileDatabaseLocked_localeCodesMatchingQualifier:;
+- (void)_whileDatabaseLocked_modifyCityForGreen:;
+- (id)citiesWithIdentifiers:;
+- (void)localizeCities:;
+- (BOOL)_shouldUseTablesAlternate1;
+- (id)citiesMatchingQualifier:;
+- (id)defaultCitiesShownInWorldClock;
+- (id)_defaultCityForTimeZone:localeCode:;
+- (void)_whileDatabaseLocked_ensureGreenKeyValueCaches;
+- (id)defaultCitiesForLocaleCode:options:;
+- (id)citiesMatchingName:;
+- (id)_cityForClassicIdentifier:commaSearchOptions:;
+- (id)allLocales;
++ (id)sharedManager;
++ (BOOL)willApplyTimeZoneChanges1;
++ (id)legacyCityForCity:;
++ (id)newCitiesByIdentifierMap:;
++ (id)_localeDictionaryFromSQLRow:;
+@end

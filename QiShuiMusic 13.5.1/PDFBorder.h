@@ -1,0 +1,37 @@
+@interface PDFBorder : NSObject
+@property (nonatomic) q style;
+@property (nonatomic) double lineWidth;
+@property (nonatomic) NSArray dashPattern;
+@property (nonatomic) NSDictionary borderKeyValues;
+- (void)setAnnotation:;
+- (void)setLineWidth:;
+- (id)init;
+- (double)lineWidth;
+- (void)dealloc;
+- (void)setStyle:;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (long long)style;
+- (id)copyWithZone:;
+- (void)drawInRect:;
+- (void)drawInRect:inContext:;
+- (id)initWithAnnotationDictionary:forPage:;
+- (id)createDictionaryRef;
+- (id)dashPattern;
+- (id)dashPatternRaw;
+- (void)setDashPattern:;
+- (id)borderKeyValues;
+- (BOOL)_isRectangular;
+- (void)_updateDashPatternRaw;
+- (unsigned int)dashCountRaw;
+- (void)_setStyleFromDictionary:;
+- (void)_setDashFromArray:;
+- (BOOL)setBorderCharacteristicsFromArray:;
+- (double)horizontalCornerRadius;
+- (void)updateCornerBorderStyle;
+- (void)setHorizontalCornerRadius:;
+- (double)verticalCornerRadius;
+- (void)setVerticalCornerRadius:;
+@end

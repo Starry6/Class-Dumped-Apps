@@ -1,0 +1,32 @@
+@interface BDUPCConfig : NSObject
++ (id)accountDelegate;
++ (id)webviewDelegate;
++ (id)getter:;
++ (id)clipBoardSwitchDelegate;
++ (id)getter:defaultValue:;
++ (id)interceptedMethods;
++ (BOOL)isNeedSdkRegisterJsb;
++ (id)privacyCenterDelegate;
++ (id)privacyStatusDelegate;
++ (id)privacySwitchDelegate;
++ (void)setAccountDelegate:;
++ (void)setClipBoardSwitchDelegate:;
++ (void)setInterceptedMethods:;
++ (void)setIsNeedSdkRegisterJsb:;
++ (void)setPrivacyCenterDelegate:;
++ (void)setPrivacyStatusDelegate:;
++ (void)setPrivacySwitchDelegate:;
++ (void)setTeenModeDelegate:;
++ (void)setTimonBridgeDelegate:;
++ (void)setWebviewDelegate:;
++ (void)setter:delegate:;
++ (id)supportTargets;
++ (id)teenModeDelegate;
++ (id)timonBridgeDelegate;
++ (id)delegates;
++ (void)setDelegates:;
++ (id)serialQueue;
++ (void)setAppID:;
++ (id)appID;
++ (void)setSerialQueue:;
+@end

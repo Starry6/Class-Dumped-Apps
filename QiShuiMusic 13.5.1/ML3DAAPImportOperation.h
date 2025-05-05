@@ -1,0 +1,21 @@
+@interface ML3DAAPImportOperation : ML3ImportOperation
+- (void)dealloc;
+- (void).cxx_destruct;
+- (id).cxx_construct;
+- (BOOL)performImportOfSourceType:usingConnection:;
+- (id)importItemFromDAAPElement:;
+- (id)containerImportItemFromDAAPElement:withTrackIds:trackPersonIdentifiers:;
+- (id)personImportItemFromDAAPElement:;
+- (void)updateImportProgress:;
+- (BOOL)_importDAAPPayloadFromFile:shouldProcessPlaylists:;
+- (void)_finishParsingWithError:;
+- (BOOL)_processUpdateType:;
+- (BOOL)_processTrackItemCount:;
+- (BOOL)_processTrackElement:;
+- (BOOL)_processDeletedTrackId:;
+- (BOOL)_processContainerItemCount:;
+- (BOOL)_processContainerElement:withTrackIds:trackPersonIdentifiers:;
+- (BOOL)_processDeletedContainerId:;
+- (BOOL)_processPersonElement:;
+- (BOOL)_startImportSessionIfNeeded;
+@end

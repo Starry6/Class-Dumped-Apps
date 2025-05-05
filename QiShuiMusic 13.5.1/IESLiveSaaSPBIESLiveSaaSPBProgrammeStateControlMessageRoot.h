@@ -1,0 +1,2 @@
+@interface IESLiveSaaSPBIESLiveSaaSPBProgrammeStateControlMessageRoot : GPBRootObject
+@end

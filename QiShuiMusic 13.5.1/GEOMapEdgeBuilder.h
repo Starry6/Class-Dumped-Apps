@@ -1,0 +1,32 @@
+@interface GEOMapEdgeBuilder : GEOMapRequest
+@property (nonatomic) @? edgeHandler;
+@property (nonatomic) GEOMapAccess map;
+@property (nonatomic) Q buildDirection;
+- (void)cancel;
+- (void).cxx_destruct;
+- (id)map;
+- (id).cxx_construct;
+- (id)initWithMap:;
+- (id)_lastPoint;
+- (unsigned long long)_maxTileCount;
+- (void)_buildCompleteEdge;
+- (BOOL)_findEdgeAheadInTile:;
+- (BOOL)_findEdgeBehindInTile:;
+- (BOOL)_shouldFindEdgeAhead;
+- (BOOL)_shouldFindEdgeBehind;
+- (id)_firstPoint;
+- (id)_firstTile;
+- (id)_lastTile;
+- (id)_tileFinderForMap:center:radius:;
+- (BOOL)_findEdgeAhead;
+- (BOOL)_findEdgeBehind;
+- (BOOL)_findNextEdge;
+- (void)buildEdge:;
+- (void)_findTilesAdjacentToTile:containingPoint:findAhead:;
+- (BOOL)_pointConnects:rect:to:;
+- (BOOL)_edgeStart:end:connectsTo:;
+- (id)edgeHandler;
+- (void)setEdgeHandler:;
+- (unsigned long long)buildDirection;
+- (void)setBuildDirection:;
+@end

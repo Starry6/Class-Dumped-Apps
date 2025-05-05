@@ -1,0 +1,38 @@
+@interface HTSKVmmkv : NSObject
+@property (nonatomic) MMKV mmkv;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)enumerateKeys:;
+- (int)int32ForKey:;
+- (id)mmkv;
+- (id)objectOfClass:forKey:;
+- (id)objectOfClass:withExpireTimeCheckForKey:;
+- (void)setMmkv:;
+- (void)setObject:forKey:duration:;
+- (void)setObject:forKey:untilDate:;
+- (unsigned long long)valueSizeForKey:;
+- (id)dateForKey:;
+- (float)floatForKey:;
+- (BOOL)containsObjectForKey:;
+- (id)dataForKey:;
+- (void)setString:forKey:;
+- (void)setObject:forKey:;
+- (void)setDouble:forKey:;
+- (void)setBool:forKey:;
+- (void)setData:forKey:;
+- (BOOL)boolForKey:;
+- (id)initWithName:;
+- (id)stringForKey:;
+- (void)setInt32:forKey:;
+- (void)setFloat:forKey:;
+- (void).cxx_destruct;
+- (double)doubleForKey:;
+- (void)removeObjectForKey:;
+- (void)setDate:forKey:;
+- (void)setInt64:forKey:;
+- (long long)int64ForKey:;
+- (void)clearStore;
++ (id)defaultInstance;
+@end

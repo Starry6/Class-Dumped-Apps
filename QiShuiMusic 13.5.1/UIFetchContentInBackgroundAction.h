@@ -1,0 +1,2 @@
+@interface UIFetchContentInBackgroundAction : UISFetchContentInBackgroundAction
+@end

@@ -1,0 +1,31 @@
+@interface CNGroupIdentityActionItem : NSObject
+@property (nonatomic) <CNGroupIdentityActionItemDelegate> delegate;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString actionType;
+@property (nonatomic) UIImage image;
+@property (nonatomic) @? actionBlock;
+@property (nonatomic) BOOL shouldOverrideEnabledState;
+@property (nonatomic) BOOL overrideEnabledState;
+@property (nonatomic) BOOL shouldPresentDisambiguationUI;
+- (id)actionType;
+- (id)actionBlock;
+- (void)setDelegate:;
+- (id)title;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)image;
+- (void)setActionBlock:;
+- (id)initWithTitle:actionType:actionBlock:;
+- (id)initWithTitle:actionType:systemImageName:overrideEnabledState:actionBlock:;
+- (id)initWithTitle:actionType:systemImageName:actionBlock:;
+- (id)initWithTitle:actionType:image:actionBlock:;
+- (void)setOverrideEnabledState:;
+- (BOOL)shouldOverrideEnabledState;
+- (void)setShouldOverrideEnabledState:;
+- (BOOL)overrideEnabledState;
+- (BOOL)shouldPresentDisambiguationUI;
+- (void)setShouldPresentDisambiguationUI:;
++ (id)imageForSystemImageNamed:;
++ (id)imageForSystemImageNamed:withTextStyle:;
++ (id)imageForSystemImageNamed:withPointSize:;
+@end

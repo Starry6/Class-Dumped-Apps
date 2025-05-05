@@ -1,0 +1,34 @@
+@interface DRConfig : NSObject
+@property (nonatomic) BOOL payloadIsJSON;
+@property (nonatomic) NSString build;
+@property (nonatomic) NSString teamID;
+@property (nonatomic) NSString configDescription;
+@property (nonatomic) NSUUID configUUID;
+@property (nonatomic) NSDate receivedDate;
+@property (nonatomic) NSDate startDate;
+@property (nonatomic) NSDate endDate;
+@property (nonatomic) NSData payload;
+@property (nonatomic) NSDictionary payloadDictionaryRepresentation;
+@property (nonatomic) BOOL skippedHysteresis;
+- (id)teamID;
+- (id)payload;
+- (id)startDate;
+- (id)configUUID;
+- (id)initWithCoder:;
+- (id)build;
+- (void)setBuild:;
+- (void)encodeWithCoder:;
+- (id)endDate;
+- (BOOL)isEqualToConfig:;
+- (void).cxx_destruct;
+- (BOOL)isEqual:;
+- (id)receivedDate;
+- (id)payloadDictionaryRepresentation;
+- (id)initWithBuild:teamID:configDescription:configUUID:receivedDate:startDate:endDate:payload:payloadIsJSON:skipHysteresis:;
+- (id)initWithJSONDict:receivedDate:;
+- (id)jsonDictRepresentation;
+- (id)configDescription;
+- (BOOL)skippedHysteresis;
+- (BOOL)payloadIsJSON;
++ (BOOL)supportsSecureCoding;
+@end

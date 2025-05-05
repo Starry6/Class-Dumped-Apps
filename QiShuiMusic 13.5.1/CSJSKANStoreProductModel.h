@@ -1,0 +1,37 @@
+@interface CSJSKANStoreProductModel : NSObject
+@property (nonatomic) NSDictionary originDic;
+@property (nonatomic) NSNumber itunce_item_id;
+@property (nonatomic) NSString version;
+@property (nonatomic) NSString ad_network_id;
+@property (nonatomic) NSNumber campaign_id;
+@property (nonatomic) NSNumber source_app_id;
+@property (nonatomic) NSString nonce;
+@property (nonatomic) NSNumber timestamp;
+@property (nonatomic) NSString signature;
+@property (nonatomic) BOOL valid;
+- (void)setCampaign_id:;
+- (id)ad_network_id;
+- (id)campaign_id;
+- (id)csj_dictionaryValue;
+- (id)itunce_item_id;
+- (id)originDic;
+- (void)setAd_network_id:;
+- (void)setItunce_item_id:;
+- (void)setOriginDic:;
+- (void)setSource_app_id:;
+- (id)skanInfoSearalizaitonValue;
+- (id)source_app_id;
+- (void)setSignature:;
+- (id)signature;
+- (void)setVersion:;
+- (id)version;
+- (id)initWithDictionary:;
+- (id)nonce;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void)setTimestamp:;
+- (BOOL)isValid;
+- (void).cxx_destruct;
+- (id)timestamp;
+- (void)setNonce:;
+@end

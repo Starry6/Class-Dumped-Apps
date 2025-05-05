@@ -1,0 +1,33 @@
+@interface IESLiveCommentEntryDanmakuEntranceView : IESLiveCommentEntryBaseView
+@property (nonatomic) IESLiveCommentEntryDanamkuSwitchView danmakuSwitchView;
+@property (nonatomic) IESLiveCommentSettingView danmakuSettingView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)fetchEntryTitle;
+- (void)commentEntryDidMount;
+- (void)commentEntryUpdate;
+- (void)danmakuButtonDidSwitched:;
+- (void)danmakuButtonDidSwitched:animation:;
+- (id)danmakuSettingView;
+- (id)danmakuSwitchView;
+- (void)didSetAttachingDIContext;
+- (void)didSetEnableNormalDanmuku:;
+- (id)entryViewType;
+- (double)expandButtonAlphaOnShow:;
+- (void)relayoutBgImageViewWithImage:;
+- (void)sendDanmakuEnableStatus:;
+- (void)setDanmakuSettingView:;
+- (void)setDanmakuSwitchView:;
+- (void)setupDanmakuSettingBtn;
+- (void)setupDanmakuSwitchBtn;
+- (void)setupInnerButton;
+- (void)trackCommentSettingClick;
+- (void)trackCommentSettingShow;
+- (void)trackLandscapeDanmakuEntryClickShow:;
+- (id)initWithStore:;
+- (id)intrinsicContentSize;
+- (void).cxx_destruct;
+- (void)resetViews;
+@end

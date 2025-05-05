@@ -1,0 +1,34 @@
+@interface AFServiceDeviceContext : NSObject
+@property (nonatomic) NSUUID identifier;
+@property (nonatomic) NSString assistantIdentifier;
+@property (nonatomic) NSString mediaSystemIdentifier;
+@property (nonatomic) NSString mediaRouteIdentifier;
+@property (nonatomic) NSString sharedUserID;
+@property (nonatomic) NSString roomName;
+@property (nonatomic) q proximity;
+@property (nonatomic) NSDictionary serializedContextByKey;
+@property (nonatomic) NSDictionary metricsContext;
+- (id)mediaSystemIdentifier;
+- (id)assistantIdentifier;
+- (id)mediaRouteIdentifier;
+- (id)init;
+- (id)sharedUserID;
+- (long long)proximity;
+- (id)identifier;
+- (id)mutatedCopyWithMutator:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)_descriptionWithIndent:;
+- (id)initWithBuilder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)roomName;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)initWithIdentifier:assistantIdentifier:mediaSystemIdentifier:mediaRouteIdentifier:sharedUserID:roomName:proximity:serializedContextByKey:metricsContext:;
+- (id)serializedContextByKey;
+- (id)metricsContext;
++ (id)newWithBuilder:;
++ (BOOL)supportsSecureCoding;
+@end

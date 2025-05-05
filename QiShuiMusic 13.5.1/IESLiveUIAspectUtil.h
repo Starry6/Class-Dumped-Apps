@@ -1,0 +1,34 @@
+@interface IESLiveUIAspectUtil : NSObject
+@property (nonatomic) BOOL hideOthersAvatar;
+@property (nonatomic) BOOL hideOthersNickname;
+@property (nonatomic) BOOL enableUserPreview;
+@property (nonatomic) BOOL hideAllNickname;
+@property (nonatomic) NSNumber roomID;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)hideAllNickname;
+- (BOOL)hideUserAvatar:;
+- (void)updateRoomAuth:;
+- (id)addAvatar:beforeAvatarlayout:withUserID:viewNormalLayoutBlock:;
+- (BOOL)enableHideUseAvatar;
+- (BOOL)enableUserPreview;
+- (BOOL)hideAllUserNicknameExceptCurrentUser:;
+- (BOOL)hideAllUserNicknameExceptCurrentUserSecId:;
+- (BOOL)hideOthersAvatar;
+- (BOOL)hideOthersNickname;
+- (BOOL)hideUserNickname:;
+- (BOOL)hideUserNicknameBySecUserId:;
+- (BOOL)hideUserNicknameWhenAtUser;
+- (BOOL)isAmAudience;
+- (void)p_updateUIAspectSettings:;
+- (void)setEnableUserPreview:;
+- (void)setHideAllNickname:;
+- (void)setHideOthersAvatar:;
+- (void)setHideOthersNickname:;
+- (void).cxx_destruct;
+- (id)roomID;
+- (void)setRoomID:;
+- (id)initWithRoom:;
+@end

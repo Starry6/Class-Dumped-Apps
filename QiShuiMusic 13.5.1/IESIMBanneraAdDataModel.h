@@ -1,0 +1,30 @@
+@interface IESIMBanneraAdDataModel : MTLModel
+@property (nonatomic) NSNumber creativeID;
+@property (nonatomic) NSString type;
+@property (nonatomic) BOOL isAd;
+@property (nonatomic) NSString logExtra;
+@property (nonatomic) NSArray trackURLList;
+@property (nonatomic) NSArray clickTrackURLList;
+@property (nonatomic) IESIMBannerAdDataSponsorModel sponsorData;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setSponsorData:;
+- (id)clickTrackURLList;
+- (id)logExtra;
+- (void)setClickTrackURLList:;
+- (void)setCreativeID:;
+- (void)setIsAd:;
+- (void)setLogExtra:;
+- (void)setTrackURLList:;
+- (id)sponsorData;
+- (id)trackURLList;
+- (void)setType:;
+- (id)type;
+- (void).cxx_destruct;
+- (BOOL)isAd;
+- (id)creativeID;
++ (id)sponsorDataJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

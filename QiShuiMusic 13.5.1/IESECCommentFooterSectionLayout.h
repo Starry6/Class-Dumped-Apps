@@ -1,0 +1,2 @@
+@interface IESECCommentFooterSectionLayout : IESECCollectionViewSectionWaterfallLayout
+@end

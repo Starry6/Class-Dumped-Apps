@@ -1,0 +1,2 @@
+@interface LuckyboxAdvanceAwardPrizeApiRoot : GPBRootObject
+@end

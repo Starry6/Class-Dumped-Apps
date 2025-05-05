@@ -1,0 +1,38 @@
+@interface GEOLocalizationCapabilities : PBCodable
+@property (nonatomic) Q supportedPhoneticTypesCount;
+@property (nonatomic) ^i supportedPhoneticTypes;
+@property (nonatomic) BOOL hasSupportsLocalizedTrafficControlIcons;
+@property (nonatomic) BOOL supportsLocalizedTrafficControlIcons;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (void)dealloc;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (void)clearSupportedPhoneticTypes;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (int)StringAsSupportedPhoneticTypes:;
+- (unsigned long long)hash;
+- (id)supportedPhoneticTypesAsString:;
+- (void)setHasSupportsLocalizedTrafficControlIcons:;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (unsigned long long)supportedPhoneticTypesCount;
+- (void)addSupportedPhoneticType:;
+- (void).cxx_destruct;
+- (void)setSupportedPhoneticTypes:count:;
+- (BOOL)supportsLocalizedTrafficControlIcons;
+- (void)setSupportsLocalizedTrafficControlIcons:;
+- (BOOL)readFrom:;
+- (BOOL)hasSupportsLocalizedTrafficControlIcons;
+- (id)description;
+- (int)supportedPhoneticTypeAtIndex:;
+- (id)dictionaryRepresentation;
+- (id)supportedPhoneticTypes;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
++ (id)supportedPhoneticTypesForPhoneticLocaleID:;
++ (BOOL)isValid:;
+@end

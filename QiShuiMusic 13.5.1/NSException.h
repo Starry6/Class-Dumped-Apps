@@ -1,0 +1,36 @@
+@interface NSException : NSObject
+@property (nonatomic) NSString name;
+@property (nonatomic) NSString reason;
+@property (nonatomic) NSDictionary userInfo;
+@property (nonatomic) NSArray callStackReturnAddresses;
+@property (nonatomic) NSArray callStackSymbols;
+- (id)replacementObjectForPortCoder:;
+- (id)initWithCoder:;
+- (id)debugDescription;
+- (void)encodeWithCoder:;
+- (id)nr_safeDescription;
+- (id)init;
+- (void)dealloc;
+- (id)userInfo;
+- (id)redactedDescription;
+- (id)reason;
+- (id)initWithCoder:;
+- (id)callStackReturnAddresses;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (id)callStackSymbols;
+- (id)description;
+- (id)name;
+- (id)initWithName:reason:userInfo:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)_markAsUnarchived;
+- (BOOL)_isUnarchived;
+- (void)raise;
+- (BOOL)_installStackTraceKeyIfNeeded;
++ (BOOL)supportsSecureCoding;
++ (BOOL)supportsSecureCoding;
++ (void)raise:format:;
++ (id)exceptionWithName:reason:userInfo:;
++ (void)raise:format:arguments:;
+@end

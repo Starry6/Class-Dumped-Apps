@@ -1,0 +1,34 @@
+@interface ZimValidateRequest : NSObject
+@property (nonatomic) NSString zimId;
+@property (nonatomic) NSString zimData;
+@property (nonatomic) NSDictionary bizData;
+@property (nonatomic) NSString idString;
+@property (nonatomic) NSString nameString;
+@property (nonatomic) NSString externParam;
+@property (nonatomic) NSDictionary wishDict;
+@property (nonatomic) NSArray wishVideoUrl;
+@property (nonatomic) NSArray wishAudioUrl;
+@property (nonatomic) NSString originAliyunEncToken;
+- (id)bizData;
+- (void)setExternParam:;
+- (id)zimData;
+- (id)externParam;
+- (id)originAliyunEncToken;
+- (void)setBizData:;
+- (void)setOriginAliyunEncToken:;
+- (void)setWishAudioUrl:;
+- (void)setWishDict:;
+- (void)setWishVideoUrl:;
+- (void)setZimData:;
+- (void)setZimId:;
+- (id)wishAudioUrl;
+- (id)wishDict;
+- (id)wishVideoUrl;
+- (id)zimId;
+- (void).cxx_destruct;
+- (id)idString;
+- (id)nameString;
+- (void)setIdString:;
+- (void)setNameString:;
++ (Class)bizDataElementClass;
+@end

@@ -1,0 +1,35 @@
+@interface AMSMetricsFigaroFlushTask : AMSTask
+@property (nonatomic) AMSPromise currentCancellablePromise;
+@property (nonatomic) NSInteger requestCount;
+@property (nonatomic) AMSURLSession URLSession;
+@property (nonatomic) <AMSBagProtocol> bag;
+@property (nonatomic) <AMSMetricsDataSource> dataSource;
+@property (nonatomic) q maxRequestCount;
+@property (nonatomic) q maxBatchSize;
+@property (nonatomic) NSString topic;
+@property (nonatomic) BOOL cancelled;
+- (long long)maxBatchSize;
+- (id)URLSession;
+- (BOOL)cancelled;
+- (void)setDataSource:;
+- (void)setMaxRequestCount:;
+- (void)cancel;
+- (long long)maxRequestCount;
+- (void)setTopic:;
+- (void)setRequestCount:;
+- (id)_postBatch:error:;
+- (BOOL)_shouldClearEventsDespiteError:result:;
+- (id)_nextBatchWithConfig:error:;
+- (void)setBag:;
+- (void)setMaxBatchSize:;
+- (id)currentCancellablePromise;
+- (id)dataSource;
+- (id)_mescalSignatureWithBodyData:error:;
+- (void).cxx_destruct;
+- (id)topic;
+- (id)bag;
+- (id)initWithDataSource:bag:;
+- (void)setCurrentCancellablePromise:;
+- (id)performFlush;
+- (int)requestCount;
+@end

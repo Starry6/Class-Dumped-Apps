@@ -1,0 +1,38 @@
+@interface IESECShopTabBizInfoModel : MTLModel
+@property (nonatomic) Q tabContainerType;
+@property (nonatomic) IESECShopTabStyleInfo tabStyleInfo;
+@property (nonatomic) IESECShopTabBadgeInfo tabBadgeInfo;
+@property (nonatomic) NSString tabHintText;
+@property (nonatomic) NSNumber tabHintDuration;
+@property (nonatomic) NSString jumpURL;
+@property (nonatomic) NSString toast;
+@property (nonatomic) NSDictionary logExtra;
+@property (nonatomic) NSString passThroughFE;
+@property (nonatomic) Q liveFusionDisplayScene;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)jumpURL;
+- (void)setTabHintText:;
+- (id)tabHintDuration;
+- (unsigned long long)liveFusionDisplayScene;
+- (id)logExtra;
+- (id)passThroughFE;
+- (void)setJumpURL:;
+- (void)setLiveFusionDisplayScene:;
+- (void)setLogExtra:;
+- (void)setPassThroughFE:;
+- (void)setTabBadgeInfo:;
+- (void)setTabContainerType:;
+- (void)setTabHintDuration:;
+- (void)setTabStyleInfo:;
+- (id)tabBadgeInfo;
+- (unsigned long long)tabContainerType;
+- (id)tabHintText;
+- (id)tabStyleInfo;
+- (void).cxx_destruct;
+- (void)setToast:;
+- (id)toast;
++ (id)JSONKeyPathsByPropertyKey;
+@end

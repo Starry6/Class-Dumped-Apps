@@ -1,0 +1,30 @@
+@interface IESIMChallengeAssociatedMediaButtonModel : MTLModel
+@property (nonatomic) IESIMURLModel iconURL;
+@property (nonatomic) NSString name;
+@property (nonatomic) q playButtonType;
+@property (nonatomic) NSString schema;
+@property (nonatomic) BOOL hasPerchaseUrl;
+@property (nonatomic) q eid;
+@property (nonatomic) q aid;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)hasPerchaseUrl;
+- (long long)playButtonType;
+- (void)setHasPerchaseUrl:;
+- (void)setPlayButtonType:;
+- (void)setIconURL:;
+- (id)schema;
+- (void)setName:;
+- (void)setSchema:;
+- (void).cxx_destruct;
+- (id)iconURL;
+- (id)name;
+- (long long)eid;
+- (void)setEid:;
+- (void)setAid:;
+- (long long)aid;
++ (id)iconURLJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

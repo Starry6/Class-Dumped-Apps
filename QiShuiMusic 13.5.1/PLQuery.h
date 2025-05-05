@@ -1,0 +1,37 @@
+@interface PLQuery : PBCodable
+@property (nonatomic) BOOL hasConjunction;
+@property (nonatomic) NSInteger conjunction;
+@property (nonatomic) BOOL hasFirst;
+@property (nonatomic) PLQuery first;
+@property (nonatomic) BOOL hasSecond;
+@property (nonatomic) PLQuery second;
+@property (nonatomic) NSMutableArray singleQueries;
+- (id)logDescription;
+- (void)addSingleQueries:;
+- (BOOL)hasConjunction;
+- (id)second;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (id)first;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void)setFirst:;
+- (void).cxx_destruct;
+- (int)conjunction;
+- (BOOL)hasSecond;
+- (BOOL)readFrom:;
+- (void)setSingleQueries:;
+- (id)singleQueries;
+- (id)description;
+- (unsigned long long)singleQueriesCount;
+- (void)setSecond:;
+- (id)dictionaryRepresentation;
+- (void)clearSingleQueries;
+- (BOOL)hasFirst;
+- (void)setConjunction:;
+- (void)setHasConjunction:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)singleQueriesAtIndex:;
++ (Class)singleQueriesType;
+@end

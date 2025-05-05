@@ -1,0 +1,34 @@
+@interface GEORPMerchantLookupFeedback : PBCodable
+@property (nonatomic) BOOL hasContext;
+@property (nonatomic) GEORPMerchantLookupContext context;
+@property (nonatomic) BOOL hasCorrections;
+@property (nonatomic) GEORPMerchantLookupCorrections corrections;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (BOOL)hasGreenTeaWithValue:;
+- (id)init;
+- (void)clearSensitiveFields:;
+- (BOOL)hasContext;
+- (id)initWithJSON:;
+- (id)context;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (void)setContext:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasCorrections;
+- (id)corrections;
+- (void)setCorrections:;
++ (BOOL)isValid:;
+@end

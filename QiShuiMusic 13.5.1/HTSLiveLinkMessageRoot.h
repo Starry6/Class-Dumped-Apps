@@ -1,0 +1,2 @@
+@interface HTSLiveLinkMessageRoot : GPBRootObject
+@end

@@ -1,0 +1,36 @@
+@interface FBSSceneActivitySession : NSObject
+@property (nonatomic) NSString name;
+@property (nonatomic) <FBSSceneHandle> scene;
+@property (nonatomic) FBSProcessExecutionPolicy executionPolicy;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) BOOL open;
+@property (nonatomic) BOOL invalidated;
+@property (nonatomic) @? errorHandler;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)_isValid;
+- (void)setScene:;
+- (void)dealloc;
+- (void)setName:;
+- (id)errorHandler;
+- (void)open;
+- (BOOL)isOpen;
+- (BOOL)isInvalidated;
+- (id)identifier;
+- (id)succinctDescriptionBuilder;
+- (void)close;
+- (id)scene;
+- (void)setErrorHandler:;
+- (void).cxx_destruct;
+- (id)succinctDescription;
+- (id)description;
+- (id)name;
+- (id)descriptionBuilderWithMultilinePrefix:;
+- (void)invalidate;
+- (id)descriptionWithMultilinePrefix:;
+- (id)initWithName:scene:executionPolicy:;
+- (id)executionPolicy;
+- (void)setExecutionPolicy:;
+@end

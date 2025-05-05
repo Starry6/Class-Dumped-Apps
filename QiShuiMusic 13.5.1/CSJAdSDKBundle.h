@@ -1,0 +1,2 @@
+@interface CSJAdSDKBundle : NSObject
+@end

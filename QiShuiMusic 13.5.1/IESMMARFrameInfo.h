@@ -1,0 +1,30 @@
+@interface IESMMARFrameInfo : IESMMSampleBufferInfo
+@property (nonatomic) double timestamp;
+@property (nonatomic) {?=[4]} viewMatrix;
+@property (nonatomic) {?=[3]} intrinsics;
+@property (nonatomic) q trackingState;
+@property (nonatomic) NSArray anchors;
+@property (nonatomic) @ lightEstimate;
+@property (nonatomic) {?=[3]} cameraIntrinsics;
+@property (nonatomic) Q rawFeaturePointsCount;
+@property (nonatomic) ARFrame frame;
+- (unsigned long long)rawFeaturePointsCount;
+- (void)setRawFeaturePointsCount:;
+- (void)setFrame:;
+- (id)frame;
+- (void)setTimestamp:;
+- (void).cxx_destruct;
+- (double)timestamp;
+- (long long)trackingState;
+- (void)setTrackingState:;
+- (id)cameraIntrinsics;
+- (void)setCameraIntrinsics:;
+- (id)intrinsics;
+- (id)lightEstimate;
+- (id)anchors;
+- (void)setAnchors:;
+- (void)setIntrinsics:;
+- (void)setLightEstimate:;
+- (id)viewMatrix;
+- (void)setViewMatrix:;
+@end

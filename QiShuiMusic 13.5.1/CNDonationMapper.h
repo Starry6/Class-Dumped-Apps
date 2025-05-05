@@ -1,0 +1,36 @@
+@interface CNDonationMapper : NSObject
+@property (nonatomic) CNContactsEnvironment environment;
+@property (nonatomic) CNDonationStore donationStore;
+@property (nonatomic) BOOL shouldLogContactsAccess;
+@property (nonatomic) NSString legacyTetheredSyncDeviceAnchor;
+@property (nonatomic) NSString legacyTetheredSyncComputerAnchor;
+@property (nonatomic) BOOL shouldLogPrivacyAccountingAccessEvents;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)serverSearchContainersMatchingPredicate:error:;
+- (id)contactCountForFetchRequest:error:;
+- (id)meContactIdentifiers:;
+- (BOOL)executeSaveRequest:error:;
+- (BOOL)executeSaveRequest:response:authorizationContext:error:;
+- (BOOL)requestAccessForEntityType:error:;
+- (id)accountsMatchingPredicate:error:;
+- (void)requestAccessForEntityType:completionHandler:;
+- (id)groupsMatchingPredicate:error:;
+- (id)defaultContainerIdentifier;
+- (id)containersMatchingPredicate:error:;
+- (id)policyWithDescription:error:;
+- (id)subgroupsOfGroupWithIdentifier:error:;
+- (id)initWithDonationStore:environment:;
+- (id)environment;
+- (id)policyForContainerWithIdentifier:error:;
+- (id)contactObservableForFetchRequest:;
+- (id)authorizedKeysForContactKeys:error:;
+- (id)donationStore;
+- (BOOL)shouldLogContactsAccess;
+- (void).cxx_destruct;
+- (id)initWithConfiguration:;
++ (id)log;
++ (id)mapperIdentifier;
+@end

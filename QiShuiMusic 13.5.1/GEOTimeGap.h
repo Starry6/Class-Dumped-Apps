@@ -1,0 +1,38 @@
+@interface GEOTimeGap : PBCodable
+@property (nonatomic) BOOL hasSubsequentEventId;
+@property (nonatomic) I subsequentEventId;
+@property (nonatomic) BOOL hasSeconds;
+@property (nonatomic) I seconds;
+@property (nonatomic) BOOL hasIfChained;
+@property (nonatomic) BOOL ifChained;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (unsigned int)seconds;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void)setSeconds:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (unsigned int)subsequentEventId;
+- (void)setSubsequentEventId:;
+- (void)setHasSubsequentEventId:;
+- (BOOL)hasSubsequentEventId;
+- (void)setHasSeconds:;
+- (BOOL)hasSeconds;
+- (BOOL)ifChained;
+- (void)setIfChained:;
+- (void)setHasIfChained:;
+- (BOOL)hasIfChained;
++ (BOOL)isValid:;
+@end

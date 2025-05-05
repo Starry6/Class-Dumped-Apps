@@ -1,0 +1,30 @@
+@interface MNTraceDirectionsRow : NSObject
+@property (nonatomic) double position;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) double requestTimestamp;
+@property (nonatomic) double responseTimestamp;
+@property (nonatomic) GEODirectionsRequest request;
+@property (nonatomic) GEODirectionsResponse response;
+@property (nonatomic) NSError error;
+@property (nonatomic) NSArray waypoints;
+@property (nonatomic) Q selectedRouteIndex;
+- (double)position;
+- (void)setWaypoints:;
+- (void)setError:;
+- (id)error;
+- (id)request;
+- (id)response;
+- (void).cxx_destruct;
+- (void)setRequest:;
+- (id)waypoints;
+- (void)setResponse:;
+- (unsigned long long)selectedRouteIndex;
+- (void)setSelectedRouteIndex:;
+- (double)requestTimestamp;
+- (void)setRequestTimestamp:;
+- (double)responseTimestamp;
+- (void)setResponseTimestamp:;
+@end

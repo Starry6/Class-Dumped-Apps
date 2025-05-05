@@ -1,0 +1,30 @@
+@interface IESECCommentSKUView : UIView
+@property (nonatomic) IESECCommentSKUViewModel model;
+@property (nonatomic) IESECSKUContentView contentView;
+@property (nonatomic) IESECCommentSKUContentViewModel contentViewModel;
+@property (nonatomic) IESECHighlightButton confirmButton;
+@property (nonatomic) <IESECCommentSKUViewDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)openCouponPanel;
+- (void)clearSKURecord;
+- (id)contentViewModel;
+- (id)initWithFrame:skuModel:;
+- (void)openPOIListWithURLString:;
+- (void)reloadSKUView;
+- (void)setContentViewModel:;
+- (void)setupMasonry;
+- (void)skuSelectChanged:;
+- (id)model;
+- (id)contentView;
+- (void)setModel:;
+- (void)setDelegate:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (void)confirm;
+- (id)confirmButton;
+- (void)setConfirmButton:;
+@end

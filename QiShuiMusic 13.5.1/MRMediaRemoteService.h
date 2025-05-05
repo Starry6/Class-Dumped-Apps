@@ -1,0 +1,38 @@
+@interface MRMediaRemoteService : NSObject
+@property (nonatomic) MRXPCConnection mrXPCConnection;
+@property (nonatomic) NSObject<OS_xpc_object> connection;
+@property (nonatomic) NSObject<OS_dispatch_queue> connectionQueue;
+@property (nonatomic) NSObject<OS_dispatch_queue> clientCallbackQueue;
+@property (nonatomic) NSObject<OS_dispatch_queue> clientCallbackPriorityQueue;
+@property (nonatomic) NSObject<OS_dispatch_queue> browsableContentQueue;
+@property (nonatomic) NSObject<OS_dispatch_queue> voiceInputQueue;
+@property (nonatomic) NSObject<OS_dispatch_queue> televisionQueue;
+@property (nonatomic) NSObject<OS_dispatch_queue> agentQueue;
+@property (nonatomic) BOOL isRunning;
+- (void)setConnectionQueue:;
+- (id)connectionQueue;
+- (void)setClientCallbackPriorityQueue:;
+- (void)setBrowsableContentQueue:;
+- (void)setIsRunning:;
+- (id)agentQueue;
+- (id)televisionQueue;
+- (BOOL)isRunning;
+- (void)setMrXPCConnection:;
+- (id)browsableContentQueue;
+- (id)clientCallbackQueue;
+- (void)getDeviceInfoForPlayerPath:queue:completion:;
+- (void)setAgentQueue:;
+- (void)setClientCallbackQueue:;
+- (id)UIServerRelayEndpoint;
+- (id)voiceInputQueue;
+- (id)connection;
+- (void).cxx_destruct;
+- (void)setConnection:;
+- (void)resolvePlayerPath:queue:completion:;
+- (BOOL)deviceSupportsUISessions;
+- (void)setTelevisionQueue:;
+- (id)getActiveSystemEndpointUIDForType:;
+- (void)setVoiceInputQueue:;
+- (id)clientCallbackPriorityQueue;
+- (id)mrXPCConnection;
+@end

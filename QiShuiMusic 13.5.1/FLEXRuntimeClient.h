@@ -1,0 +1,31 @@
+@interface FLEXRuntimeClient : NSObject
+@property (nonatomic) NSMutableDictionary bundles_pathToShort;
+@property (nonatomic) NSMutableDictionary bundles_shortToPath;
+@property (nonatomic) NSCache bundles_pathToClassNames;
+@property (nonatomic) NSMutableArray imagePaths;
+@property (nonatomic) NSArray imageDisplayNames;
+- (id)init;
+- (void)reloadLibrariesList;
+- (id)shortNameForImageName:;
+- (id)imageNameForShortName:;
+- (id)classNamesInImageAtPath:;
+- (id)copySafeClassList;
+- (id)copyProtocolList;
+- (id)bundleNamesForToken:;
+- (id)bundlePathsForToken:;
+- (id)classesForToken:inBundles:;
+- (id)_classesForToken:inBundles:;
+- (id)methodsForToken:instance:inClasses:;
+- (id)imageDisplayNames;
+- (id)bundles_pathToShort;
+- (void)setBundles_pathToShort:;
+- (id)bundles_shortToPath;
+- (void)setBundles_shortToPath:;
+- (id)bundles_pathToClassNames;
+- (void)setBundles_pathToClassNames:;
+- (id)imagePaths;
+- (void)setImagePaths:;
+- (void).cxx_destruct;
++ (id)runtime;
++ (void)initializeWebKitLegacy;
+@end

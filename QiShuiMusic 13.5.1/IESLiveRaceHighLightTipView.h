@@ -1,0 +1,36 @@
+@interface IESLiveRaceHighLightTipView : UIView
+@property (nonatomic) UIView contentView;
+@property (nonatomic) UILabel titleLable;
+@property (nonatomic) UIImageView hotTagView;
+@property (nonatomic) UIImageView imageView;
+@property (nonatomic) UIImageView tipArrow;
+@property (nonatomic) IESLiveRaceHighLightTipShareBtn shareBtn;
+@property (nonatomic) HTSLiveEpisodeHighLight model;
+@property (nonatomic) <IESLiveRoomServiceAdapter> mixedRoom;
+@property (nonatomic) @? shareAction;
+- (void)setShareAction:;
+- (BOOL)needSportsStyle;
+- (id)hotTagView;
+- (id)initWithRoomModel:;
+- (id)mixedRoom;
+- (void)p_showSelfInView:onView:;
+- (void)setHotTagView:;
+- (void)setMixedRoom:;
+- (void)setShareBtn:;
+- (void)setTipArrow:;
+- (void)setTitleLable:;
+- (id)shareAction;
+- (id)shareBtn;
+- (void)showHighLightTipInView:onView:model:;
+- (id)titleLable;
+- (id)model;
+- (id)contentView;
+- (id)init;
+- (void)setModel:;
+- (void)setup;
+- (void).cxx_destruct;
+- (id)imageView;
+- (void)setContentView:;
+- (void)setImageView:;
+- (id)tipArrow;
+@end

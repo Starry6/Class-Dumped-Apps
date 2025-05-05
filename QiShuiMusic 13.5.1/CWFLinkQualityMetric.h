@@ -1,0 +1,32 @@
+@interface CWFLinkQualityMetric : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSDate updatedAt;
+@property (nonatomic) q RSSI;
+@property (nonatomic) q noise;
+@property (nonatomic) double txRate;
+@property (nonatomic) double rxRate;
+@property (nonatomic) Q CCA;
+@property (nonatomic) NSData linkQualityMetricData;
+- (long long)noise;
+- (long long)RSSI;
+- (double)txRate;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (unsigned long long)CCA;
+- (void).cxx_destruct;
+- (double)rxRate;
+- (id)description;
+- (id)JSONCompatibleKeyValueMap;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)updatedAt;
+- (void)setUpdatedAt:;
+- (BOOL)isEqualToLinkQualityMetric:;
+- (id)linkQualityMetricData;
+- (void)setLinkQualityMetricData:;
++ (BOOL)supportsSecureCoding;
+@end

@@ -1,0 +1,34 @@
+@interface NETSchemaNETError : SISchemaInstrumentationMessage
+@property (nonatomic) NSString domain;
+@property (nonatomic) BOOL hasDomain;
+@property (nonatomic) NSString description;
+@property (nonatomic) BOOL hasDescription;
+@property (nonatomic) q errorCode;
+@property (nonatomic) BOOL hasErrorCode;
+@property (nonatomic) NSData jsonData;
+- (BOOL)hasErrorCode;
+- (long long)errorCode;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void)setHasErrorCode:;
+- (void)setErrorCode:;
+- (void).cxx_destruct;
+- (BOOL)hasDomain;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (id)domain;
+- (void)setDomain:;
+- (BOOL)isEqual:;
+- (void)setDescription:;
+- (BOOL)hasDescription;
+- (void)setHasDescription:;
+- (void)deleteErrorCode;
+- (void)deleteDomain;
+- (void)setHasDomain:;
+- (void)deleteDescription;
+@end

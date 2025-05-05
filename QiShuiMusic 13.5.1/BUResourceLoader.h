@@ -1,0 +1,38 @@
+@interface BUResourceLoader : NSObject
+@property (nonatomic) NSURL url;
+@property (nonatomic) BUMediaCacheWorker cacheWorker;
+@property (nonatomic) NSMutableArray mediaDownlader;
+@property (nonatomic) NSMutableDictionary requestDownladerDic;
+@property (nonatomic) q resceiveSize;
+@property (nonatomic) @? loadeFinishBlock;
+@property (nonatomic) @? loadedCancelBlock;
+@property (nonatomic) <BUResourceLoaderDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setCacheWorker:;
+- (id)cacheWorker;
+- (id)initWithURL:cachePath:;
+- (id)loadeFinishBlock;
+- (id)loadedCancelBlock;
+- (id)mediaDownlader;
+- (void)mediaDownloader:didReceiveLength:didFinishedWithError:responseDesc:localCache:;
+- (id)requestDownladerDic;
+- (void)requestWithSize:;
+- (long long)resceiveSize;
+- (void)setLoadeFinishBlock:;
+- (void)setLoadedCancelBlock:;
+- (void)setMediaDownlader:;
+- (void)setRequestDownladerDic:;
+- (void)setResceiveSize:;
+- (id)url;
+- (void)dealloc;
+- (void)removeRequest:;
+- (void)setDelegate:;
+- (void)addRequest:;
+- (void)setUrl:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)requestCancel;
+@end

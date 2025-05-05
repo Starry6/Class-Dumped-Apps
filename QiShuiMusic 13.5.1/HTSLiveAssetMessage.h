@@ -1,0 +1,33 @@
+@interface HTSLiveAssetMessage : IESLivePBBaseMessage
+@property (nonatomic) HTSLiveGiftMessage_TextEffect textEffect;
+@property (nonatomic) BOOL textEffectImageNeedCircle;
+@property (nonatomic) q bizType;
+@property (nonatomic) NSDictionary mixInfo;
+@property (nonatomic) BOOL needDisplayForce;
+@property (nonatomic) HTSLiveCommon common;
+@property (nonatomic) BOOL hasCommon;
+@property (nonatomic) q assetId;
+@property (nonatomic) HTSLiveText panelDisplayText;
+@property (nonatomic) BOOL hasPanelDisplayText;
+@property (nonatomic) BOOL showMessage;
+@property (nonatomic) BOOL showPanel;
+@property (nonatomic) HTSLiveUser user;
+@property (nonatomic) BOOL hasUser;
+@property (nonatomic) HTSLiveUser toUser;
+@property (nonatomic) BOOL hasToUser;
+@property (nonatomic) HTSLiveGiftIMPriority priority;
+@property (nonatomic) BOOL hasPriority;
+@property (nonatomic) NSString logId;
+@property (nonatomic) NSInteger playPriority;
+- (long long)bizType;
+- (id)mixInfo;
+- (BOOL)needDisplayForce;
+- (void)setBizType:;
+- (void)setMixInfo:;
+- (void)setNeedDisplayForce:;
+- (void)setTextEffectImageNeedCircle:;
+- (BOOL)textEffectImageNeedCircle;
+- (id)textEffect;
+- (void)setTextEffect:;
++ (id)descriptor;
+@end

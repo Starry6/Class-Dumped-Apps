@@ -1,0 +1,32 @@
+@interface YYTextMagnifier : UIView
+@property (nonatomic) q type;
+@property (nonatomic) {CGSize=dd} fitSize;
+@property (nonatomic) {CGSize=dd} snapshotSize;
+@property (nonatomic) UIImage snapshot;
+@property (nonatomic) UIView hostView;
+@property (nonatomic) {CGPoint=dd} hostCaptureCenter;
+@property (nonatomic) {CGPoint=dd} hostPopoverCenter;
+@property (nonatomic) BOOL hostVerticalForm;
+@property (nonatomic) BOOL captureDisabled;
+@property (nonatomic) BOOL captureFadeAnimation;
+- (id)fitSize;
+- (BOOL)captureDisabled;
+- (BOOL)captureFadeAnimation;
+- (id)hostCaptureCenter;
+- (id)hostPopoverCenter;
+- (BOOL)hostVerticalForm;
+- (void)setCaptureDisabled:;
+- (void)setCaptureFadeAnimation:;
+- (void)setHostCaptureCenter:;
+- (void)setHostPopoverCenter:;
+- (void)setHostVerticalForm:;
+- (id)hostView;
+- (void)setHostView:;
+- (void)setSnapshot:;
+- (id)snapshotSize;
+- (id)initWithFrame:;
+- (long long)type;
+- (void).cxx_destruct;
+- (id)snapshot;
++ (id)magnifierWithType:;
+@end

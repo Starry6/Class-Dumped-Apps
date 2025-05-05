@@ -1,0 +1,32 @@
+@interface AVAssetWriterUnknownHelper : AVAssetWriterHelper
+- (void)startWriting;
+- (void)setOutputFileTypeProfile:;
+- (void)setPreferredOutputSegmentInterval:;
+- (void)setPreferredTransform:;
+- (void)setInitialMovieFragmentSequenceNumber:;
+- (void)setShouldOptimizeForNetworkUse:;
+- (void)setPreferredRate:;
+- (void)setSinglePassFileSize:;
+- (void)setMovieFragmentInterval:;
+- (void)setDirectoryForTemporaryFiles:;
+- (void)cancelWriting;
+- (void)setDelegate:;
+- (void)setUsesVirtualCaptureCard:;
+- (void)setProducesCombinableFragments:;
+- (void)setSinglePassMediaDataSize:;
+- (void)setOverallDurationHint:;
+- (void)setPreferredVolume:;
+- (void)setInitialSegmentStartTime:;
+- (void)setMovieTimeScale:;
+- (void)addInputGroup:;
+- (void)setMetadata:;
+- (BOOL)_canAddInputGroup:exceptionReason:;
+- (void)addInput:;
+- (BOOL)_canAddInput:exceptionReason:;
+- (id)initWithURL:fileType:;
+- (long long)status;
+- (id)initWithConfigurationState:;
+- (BOOL)canAddInputGroup:;
+- (void)setDefaultPropertyValuesToConfigurationState:outputURL:fileType:;
+- (BOOL)canAddInput:;
+@end

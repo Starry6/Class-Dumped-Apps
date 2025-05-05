@@ -1,0 +1,32 @@
+@interface CKAcceptSharesOperation : CKOperation
+@property (nonatomic) NSMutableDictionary errorsByShareURL;
+@property (nonatomic) NSMutableDictionary shareMetadatasByShareURL;
+@property (nonatomic) <CKAcceptSharesOperationCallbacks> clientOperationCallbackProxy;
+@property (nonatomic) CKAcceptSharesOperationInfo operationInfo;
+@property (nonatomic) NSArray shareMetadatas;
+@property (nonatomic) @? perShareCompletionBlock;
+@property (nonatomic) @? acceptSharesCompletionBlock;
+- (void)_finishOnCallbackQueueWithError:;
+- (id)activityCreate;
+- (id)init;
+- (void)performCKOperation;
+- (void)fillFromOperationInfo:;
+- (BOOL)hasCKOperationCallbacksSet;
+- (void).cxx_destruct;
+- (void)fillOutOperationInfo:;
+- (BOOL)CKOperationShouldRun:;
+- (void)setPerShareCompletionBlock:;
+- (id)initWithShareMetadatas:;
+- (void)setAcceptSharesCompletionBlock:;
+- (id)perShareCompletionBlock;
+- (id)acceptSharesCompletionBlock;
+- (void)handleShareAcceptanceForURL:share:error:;
+- (void)setAcceptSharesCompletionBlockIVar:;
+- (void)setShareMetadatas:;
+- (id)shareMetadatas;
+- (id)errorsByShareURL;
+- (void)setErrorsByShareURL:;
+- (id)shareMetadatasByShareURL;
+- (void)setShareMetadatasByShareURL:;
++ (void)applyDaemonCallbackInterfaceTweaks:;
+@end

@@ -1,0 +1,35 @@
+@interface BDXALoginFlowMaker : NSObject
+@property (nonatomic) BDXALoginFlow loginFlow;
+@property (nonatomic) BDXALoginConfigurationMaker configMaker;
+- (id)safeEnv;
+- (void)setConfigMaker:;
+- (id)agreements;
+- (id)bottomClickableText;
+- (id)carrierOneKey;
+- (id)configMaker;
+- (id)defaultLoginType;
+- (id)defaultLoginUserInfo;
+- (id)displayedExtraLoginArray;
+- (id)enterFrom;
+- (id)enterMethod;
+- (id)extraTrackParams;
+- (id)initWithLoginFlow:;
+- (id)loginFlow;
+- (id)loginTypeToLoginVCNameDic;
+- (id)mainButtonText;
+- (id)oneKeyLoginAvailableCheckingPolicy;
+- (id)otherButonText;
+- (id)packedExtraLoginArray;
+- (id)panelType;
+- (id)presentType;
+- (void)setLoginFlow:;
+- (id)topRightButton;
+- (id)password;
+- (id)common;
+- (id)dataSource;
+- (void).cxx_destruct;
+- (id)sms;
+- (id)config;
+- (id)pageTitle;
+- (id)loginType;
+@end

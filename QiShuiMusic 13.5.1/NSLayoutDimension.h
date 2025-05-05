@@ -1,0 +1,30 @@
+@interface NSLayoutDimension : NSLayoutAnchor
+- (id)avkit_constraintEqualToConstant:priority:;
+- (id)avkit_constraintGreaterThanOrEqualToConstant:priority:;
+- (id)avkit_constraintLessThanOrEqualToConstant:priority:;
+- (BOOL)validateOtherAttribute:;
+- (BOOL)isCompatibleWithAnchor:;
+- (id)plus:;
+- (id)constraintLessThanOrEqualToConstant:;
+- (id)constraintLessThanOrEqualToAnchor:multiplier:constant:;
+- (id)constraintLessThanOrEqualToAnchor:multiplier:;
+- (id)constraintGreaterThanOrEqualToConstant:;
+- (id)constraintGreaterThanOrEqualToAnchor:multiplier:;
+- (id)constraintEqualToConstant:;
+- (id)constraintEqualToAnchor:multiplier:constant:;
+- (id)constraintEqualToAnchor:multiplier:;
+- (id)ruleEqualToConstant:;
+- (id)ruleLessThanOrEqualToConstant:;
+- (id)ruleGreaterThanOrEqualToConstant:;
+- (id)ruleEqualToConstant:priority:identifier:;
+- (id)ruleGreaterThanOrEqualToConstant:priority:identifier:;
+- (id)ruleLessThanOrEqualToConstant:priority:identifier:;
+- (id)anchorByMultiplyingByConstant:;
+- (id)anchorByAddingConstant:;
+- (id)anchorByAddingDimension:;
+- (id)anchorBySubtractingDimension:;
+- (id)times:;
+- (id)plusDimension:;
+- (id)minusDimension:;
+- (id)constraintGreaterThanOrEqualToAnchor:multiplier:constant:;
+@end

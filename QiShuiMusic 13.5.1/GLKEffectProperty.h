@@ -1,0 +1,38 @@
+@interface GLKEffectProperty : NSObject
+@property (nonatomic) NSInteger location;
+@property (nonatomic) * nameString;
+@property (nonatomic) * vshSource;
+@property (nonatomic) * fshSource;
+@property (nonatomic) Q dirtyUniforms;
+@property (nonatomic) C masksInitialized;
+@property (nonatomic) GLKEffect effect;
+- (id)init;
+- (void)dealloc;
+- (void)setEffect:;
+- (int)location;
+- (void)setLocation:;
+- (id)effect;
+- (char *)nameString;
+- (void)bind;
+- (void)dirtyAllUniforms;
+- (void)setShaderBindings;
+- (void)initializeMasks;
+- (BOOL)includeFshShaderTextForRootNode:;
+- (BOOL)includeVshShaderTextForRootNode:;
+- (unsigned char)masksInitialized;
+- (void)setMasksInitialized:;
+- (unsigned long long)dirtyUniforms;
+- (void)setDirtyUniforms:;
+- (id)fshMask;
+- (id)vshMask;
+- (void)setNameString:;
+- (void)setVSHSource:;
+- (void)setFSHSource:;
+- (void)setMasks;
+- (char *)vshSource;
+- (void)setVshSource:;
+- (char *)fshSource;
+- (void)setFshSource:;
++ (void)setStaticMasksWithVshRoot:fshRoot:;
++ (void)logSetMasksWithLabel:obj:typeStr:;
+@end

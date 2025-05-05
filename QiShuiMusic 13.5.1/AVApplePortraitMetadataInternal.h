@@ -1,0 +1,37 @@
+@interface AVApplePortraitMetadataInternal : NSObject
+@property (nonatomic) NSInteger version;
+@property (nonatomic) float apertureFocalRatio;
+@property (nonatomic) float minimumApertureFocalRatio;
+@property (nonatomic) float maximumApertureFocalRatio;
+@property (nonatomic) float portraitLightingEffectStrength;
+@property (nonatomic) float luminanceNoiseAmplitude;
+@property (nonatomic) NSInteger faceOrientation;
+@property (nonatomic) NSData faceObservationsData;
+@property (nonatomic) NSIndexSet indexesOfShallowDepthOfFieldObservations;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} focusRectangle;
+@property (nonatomic) I SDOFRenderingVersion;
+- (void)setFaceOrientation:;
+- (id)init;
+- (void)dealloc;
+- (void)setVersion:;
+- (int)version;
+- (void)setPortraitLightingEffectStrength:;
+- (int)faceOrientation;
+- (float)portraitLightingEffectStrength;
+- (float)apertureFocalRatio;
+- (void)setApertureFocalRatio:;
+- (float)minimumApertureFocalRatio;
+- (void)setMinimumApertureFocalRatio:;
+- (float)maximumApertureFocalRatio;
+- (void)setMaximumApertureFocalRatio:;
+- (float)luminanceNoiseAmplitude;
+- (void)setLuminanceNoiseAmplitude:;
+- (id)faceObservationsData;
+- (void)setFaceObservationsData:;
+- (id)indexesOfShallowDepthOfFieldObservations;
+- (void)setIndexesOfShallowDepthOfFieldObservations:;
+- (id)focusRectangle;
+- (void)setFocusRectangle:;
+- (unsigned int)SDOFRenderingVersion;
+- (void)setSDOFRenderingVersion:;
+@end

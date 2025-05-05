@@ -1,0 +1,31 @@
+@interface CADDiagnosticsCollectionOperation : NSOperation
+@property (nonatomic) I token;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) BOOL canceled;
+@property (nonatomic) BOOL redactLogs;
+- (unsigned int)token;
+- (void)logError:;
+- (void)finish;
+- (void)main;
+- (void)batch:;
+- (void).cxx_destruct;
+- (void)log:;
+- (BOOL)canceled;
+- (BOOL)redactLogs;
+- (void)determineExpectedOutputFiles:;
+- (void)collect:;
+- (id)temporaryFileForName:;
+- (void)deleteTemporaryFile:;
+- (void)setStatus:forFile:;
+- (id)initWithConnection:token:options:;
+- (id)loadLogCollectors;
+- (id)_createLogDirectory;
+- (id)_randomString;
+- (id)_createLogFile;
+- (void)logWithLevel:formatString:arguments:;
+- (id)finalFileForFile:;
+- (void)reportFileStatusChangesToClient;
+@end

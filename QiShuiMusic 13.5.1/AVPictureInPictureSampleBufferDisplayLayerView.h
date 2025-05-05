@@ -1,0 +1,38 @@
+@interface AVPictureInPictureSampleBufferDisplayLayerView : AVPictureInPicturePlayerLayerView
+@property (nonatomic) AVObservationController observationController;
+@property (nonatomic) AVSampleBufferDisplayLayerPlayerController playerController;
+@property (nonatomic) AVPictureInPictureIndicatorLayer placeholderLayer;
+@property (nonatomic) AVPictureInPictureSampleBufferDisplayLayerHostView sbdlHostView;
+@property (nonatomic) CALayerHost sourceLayerHost;
+@property (nonatomic) I sourceContextId;
+@property (nonatomic) {CGSize=dd} lastKnownRenderSize;
+@property (nonatomic) {CGSize=dd} imageQueueSize;
+@property (nonatomic) AVSampleBufferDisplayLayer sourceLayer;
+@property (nonatomic) BOOL PIPModeEnabled;
+- (void)_updateGeometry;
+- (id)initWithSourceLayer:playerController:;
+- (void)dealloc;
+- (void)layoutSubviews;
+- (void)setSourceLayerHost:;
+- (id)playerController;
+- (void)setImageQueueSize:;
+- (void)setPIPModeEnabled:;
+- (id)observationController;
+- (void)_updateSourceLayerHost;
+- (id)sbdlHostView;
+- (void)setObservationController:;
+- (unsigned int)sourceContextId;
+- (void)setPlaceholderLayer:;
+- (BOOL)isPIPModeEnabled;
+- (id)sourceLayerHost;
+- (void)setSourceContextId:;
+- (id)placeholderLayer;
+- (void)setSbdlHostView:;
+- (void)setLastKnownRenderSize:;
+- (void)setPlayerController:;
+- (void).cxx_destruct;
+- (id)lastKnownRenderSize;
+- (id)_makePictureInPicturePlatformAdapterContentPlaceholderLayer;
+- (id)imageQueueSize;
+- (id)sourceLayer;
+@end

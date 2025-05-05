@@ -1,0 +1,2 @@
+@interface IESLiveSaaSPBIESLiveSaaSPBTreasureTouchRoot : GPBRootObject
+@end

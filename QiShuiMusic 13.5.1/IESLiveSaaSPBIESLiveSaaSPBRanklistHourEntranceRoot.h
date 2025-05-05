@@ -1,0 +1,2 @@
+@interface IESLiveSaaSPBIESLiveSaaSPBRanklistHourEntranceRoot : GPBRootObject
+@end

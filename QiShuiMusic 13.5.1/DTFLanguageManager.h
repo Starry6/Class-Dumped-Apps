@@ -1,0 +1,30 @@
+@interface DTFLanguageManager : NSObject
+@property (nonatomic) BOOL isDownloading;
+@property (nonatomic) NSMutableArray blockList;
+@property (nonatomic) q downloadCount;
+@property (nonatomic) NSString bundlePath;
+- (BOOL)checkNeedPreload;
+- (BOOL)checkUpdateWithVersion:;
+- (void)downloadFileWithURL:fileName:completion:;
+- (void)downloadWithURL:fileName:backupUrl:backupFileName:;
+- (void)finishAndCallbackWithError:;
+- (id)getCurrentLanguage;
+- (id)getLocalizedStringForKey:;
+- (id)getMultiFileName;
+- (id)getMultiFilePath;
+- (id)getMultiJsonFile;
+- (id)getMultiLangStrWithDictionary:key:stringsContent:;
+- (void)removeFileWithFileName:;
+- (void)setDownloadCount:;
+- (id)bundlePath;
+- (id)init;
+- (void)setIsDownloading:;
+- (void)setBundlePath:;
+- (BOOL)isDownloading;
+- (void)startDownloadWithCompletion:;
+- (void).cxx_destruct;
+- (void)setBlockList:;
+- (id)blockList;
+- (long long)downloadCount;
++ (id)sharedInstance;
+@end

@@ -1,0 +1,32 @@
+@interface IESMMCanvasConfig : NSObject
+@property (nonatomic) q canvasType;
+@property (nonatomic) UIColor canvasColor;
+@property (nonatomic) UIImage canvasImage;
+@property (nonatomic) NSString canvasImagePath;
+@property (nonatomic) double blurRaidus;
+@property (nonatomic) BOOL enableVideoAnimation;
+@property (nonatomic) UIColor canvasGradientTopColor;
+@property (nonatomic) UIColor canvasGradientBotColor;
+- (id)canvasImagePath;
+- (void)setCanvasColor:;
+- (void)setCanvasImage:;
+- (double)blurRaidus;
+- (id)canvasColor;
+- (id)canvasGradientBotColor;
+- (id)canvasGradientTopColor;
+- (long long)canvasType;
+- (BOOL)enableVideoAnimation;
+- (void)setBlurRaidus:;
+- (void)setCanvasGradientBotColor:;
+- (void)setCanvasGradientTopColor:;
+- (void)setCanvasImagePath:;
+- (void)setCanvasType:;
+- (void)setEnableVideoAnimation:;
+- (id)init;
+- (id)debugDescription;
+- (id)initWithDict:;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (id)toDict;
+- (id)canvasImage;
+@end

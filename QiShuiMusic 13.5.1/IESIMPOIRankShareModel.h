@@ -1,0 +1,33 @@
+@interface IESIMPOIRankShareModel : NSObject
+@property (nonatomic) NSString rankID;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString updateTime;
+@property (nonatomic) NSString content;
+@property (nonatomic) IESIMURLModel coverURL;
+@property (nonatomic) NSString cityCode;
+@property (nonatomic) NSString rankCode;
+@property (nonatomic) BOOL canSwitch;
+@property (nonatomic) NSString shareTitle;
+@property (nonatomic) NSString shareUrl;
+- (BOOL)canSwitch;
+- (id)rankCode;
+- (id)rankID;
+- (void)setCanSwitch:;
+- (void)setRankCode:;
+- (void)setRankID:;
+- (void)setShareTitle:;
+- (void)setShareUrl:;
+- (id)shareUrl;
+- (id)content;
+- (void)setContent:;
+- (void)setTitle:;
+- (id)title;
+- (void).cxx_destruct;
+- (id)updateTime;
+- (void)setUpdateTime:;
+- (id)cityCode;
+- (void)setCityCode:;
+- (id)shareTitle;
+- (id)coverURL;
+- (void)setCoverURL:;
+@end

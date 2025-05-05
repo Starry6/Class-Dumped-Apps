@@ -1,0 +1,3 @@
+@interface DCIMImageUtilities : NSObject
++ (BOOL)generateThumbnailsFromData:inputSize:preCropLargeThumbnailSize:postCropLargeThumbnailSize:preCropSmallThumbnailSize:postCropSmallThumbnailSize:outSmallThumbnailImageRef:outLargeThumbnailImageRef:outLargeThumbnailJPEGData:;
+@end

@@ -1,0 +1,37 @@
+@interface KryptonDefaultMediaRecorder : NSObject
+@property (nonatomic) q audioBlockCount;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)audioBlockCount;
+- (void)initAudioFormat;
+- (void)clipVideoSuccessWithPath:;
+- (void)clipWithTimeRanges:andEndCallback:;
+- (void)configAudioWithChanels:bps:sampleRate:;
+- (void)configVideoWithMimeType:duration:width:height:bps:fps:;
+- (void)destroy:;
+- (void)dispatchRecorderTask:;
+- (void)doAddAudioSampleTask:samples:targetTime:;
+- (BOOL)doStartRecordWithEndCallback:;
+- (void)doStopRecordTask;
+- (id)generateTempVideoPath:;
+- (id)generateVideoPathInfo:;
+- (unsigned long long)getMicroSecondTime;
+- (void)notifyClipErrorEndWithCallback:path:error:;
+- (void)notifyErrorStop:;
+- (void)onAudioSample:length:;
+- (void)onFrameAvailable:;
+- (void)pauseRecord;
+- (void)postClipWithCallback:path:url:status:durationUs:;
+- (void)postWritingWithCompletion;
+- (void)resumeRecord;
+- (void)setAudioBlockCount:;
+- (void)startAudio;
+- (void)startRecordWithStartCallback:endCallback:;
+- (void)stopRecord;
+- (void)tryToRemoveFile:;
+- (void).cxx_destruct;
+- (id)initWithDelegate:;
+- (unsigned long long)lastPresentationTime;
+@end

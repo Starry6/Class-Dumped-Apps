@@ -1,0 +1,2 @@
+@interface WXOfflinePayReq : BaseReq
+@end

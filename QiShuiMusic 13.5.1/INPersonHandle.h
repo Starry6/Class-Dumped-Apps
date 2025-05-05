@@ -1,0 +1,35 @@
+@interface INPersonHandle : NSObject
+@property (nonatomic) q emergencyType;
+@property (nonatomic) q faceTimeType;
+@property (nonatomic) BOOL suggested;
+@property (nonatomic) NSString value;
+@property (nonatomic) q type;
+@property (nonatomic) NSString label;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)emergencyType;
+- (id)initWithValue:type:label:emergencyType:;
+- (id)_dictionaryRepresentation;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)label;
+- (id)initWithValue:type:label:emergencyType:faceTimeType:suggested:;
+- (void)encodeWithCoder:;
+- (id)initWithValue:type:label:suggested:;
+- (long long)type;
+- (id)descriptionAtIndent:;
+- (id)initWithValue:type:label:faceTimeType:;
+- (long long)faceTimeType;
+- (void).cxx_destruct;
+- (id)description;
+- (id)value;
+- (BOOL)isSuggested;
+- (id)initWithValue:type:;
+- (id)initWithValue:type:label:emergencyType:suggested:;
+- (BOOL)isEqual:;
+- (id)initWithValue:type:label:;
+- (id)copyWithZone:;
++ (BOOL)supportsSecureCoding;
+@end

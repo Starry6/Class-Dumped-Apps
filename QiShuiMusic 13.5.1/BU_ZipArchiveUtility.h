@@ -1,0 +1,32 @@
+@interface BU_ZipArchiveUtility : NSObject
+- (BOOL)writeData:filename:compressionLevel:password:AES:;
+- (BOOL)writeFile:withPassword:;
+- (BOOL)writeFileAtPath:withFileName:compressionLevel:password:AES:;
+- (BOOL)writeFileAtPath:withFileName:withPassword:;
+- (BOOL)writeFolderAtPath:withFolderName:withPassword:;
+- (id)init;
+- (BOOL)open;
+- (BOOL)close;
+- (void).cxx_destruct;
+- (id)initWithPath:;
++ (BOOL)renameFileName:toNewName:;
++ (BOOL)unzipFileAtPath:toDestination:error:;
++ (BOOL)unzipFileAtPath:toDestination:overwrite:needRename:password:error:delegate:;
++ (BOOL)unzipFileAtPath:toDestination:preserveAttributes:overwrite:needRename:nestedZipLevel:password:error:delegate:progressHandler:completionHandler:;
++ (BOOL)unzipFileAtPath:toDestination:preserveAttributes:overwrite:needRename:password:error:delegate:progressHandler:completionHandler:;
++ (id)_dateWithMSDOSFormat:;
++ (id)_filenameStringWithCString:version_made_by:general_purpose_flag:size:;
++ (BOOL)createZipFileAtPath:withContentsOfDirectory:keepParentDirectory:compressionLevel:password:AES:progressHandler:;
++ (BOOL)createZipFileAtPath:withContentsOfDirectory:keepParentDirectory:withPassword:;
++ (BOOL)createZipFileAtPath:withContentsOfDirectory:keepParentDirectory:withPassword:andProgressHandler:;
++ (BOOL)createZipFileAtPath:withContentsOfDirectory:withPassword:;
++ (BOOL)createZipFileAtPath:withFilesAtPaths:withPassword:;
++ (void)zipInfo:setAttributesOfItemAtPath:;
++ (void)zipInfo:setDate:;
++ (id)_gregorian;
++ (BOOL)unzipFileAtPath:toDestination:;
++ (BOOL)unzipFileAtPath:toDestination:delegate:;
++ (BOOL)createZipFileAtPath:withFilesAtPaths:;
++ (BOOL)createZipFileAtPath:withContentsOfDirectory:;
++ (BOOL)createZipFileAtPath:withContentsOfDirectory:keepParentDirectory:;
+@end

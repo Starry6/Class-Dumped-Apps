@@ -1,0 +1,30 @@
+@interface CUMobileDevice : NSObject
+@property (nonatomic) BOOL connected;
+@property (nonatomic) NSUUID identifier;
+@property (nonatomic) NSString internalModel;
+@property (nonatomic) NSString name;
+@property (nonatomic) BOOL paired;
+@property (nonatomic) BOOL placeholder;
+@property (nonatomic) NSString udid;
+@property (nonatomic) NSString wifiAddress;
+- (id)udid;
+- (void)setConnected:;
+- (BOOL)connected;
+- (void)dealloc;
+- (void)setName:;
+- (BOOL)placeholder;
+- (id)identifier;
+- (void)setPlaceholder:;
+- (void)setPaired:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)name;
+- (BOOL)paired;
+- (void)setIdentifier:;
+- (id)copyWithZone:;
+- (id)internalModel;
+- (void)setInternalModel:;
+- (void)setUdid:;
+- (id)wifiAddress;
+- (void)setWifiAddress:;
+@end

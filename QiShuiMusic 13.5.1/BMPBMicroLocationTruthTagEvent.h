@@ -1,0 +1,33 @@
+@interface BMPBMicroLocationTruthTagEvent : PBCodable
+@property (nonatomic) BOOL hasAbsoluteTimestamp;
+@property (nonatomic) double absoluteTimestamp;
+@property (nonatomic) BOOL hasTruthTagIdentifier;
+@property (nonatomic) NSString truthTagIdentifier;
+@property (nonatomic) BOOL hasRecordingRequestIdentifier;
+@property (nonatomic) NSString recordingRequestIdentifier;
+@property (nonatomic) BOOL hasClientBundleId;
+@property (nonatomic) NSString clientBundleId;
+- (void)setAbsoluteTimestamp:;
+- (id)clientBundleId;
+- (void)setClientBundleId:;
+- (void)setHasAbsoluteTimestamp:;
+- (BOOL)hasAbsoluteTimestamp;
+- (void)writeTo:;
+- (double)absoluteTimestamp;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (BOOL)hasClientBundleId;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasTruthTagIdentifier;
+- (BOOL)hasRecordingRequestIdentifier;
+- (id)truthTagIdentifier;
+- (void)setTruthTagIdentifier:;
+- (id)recordingRequestIdentifier;
+- (void)setRecordingRequestIdentifier:;
+@end

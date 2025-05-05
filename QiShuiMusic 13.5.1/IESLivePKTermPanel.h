@@ -1,0 +1,37 @@
+@interface IESLivePKTermPanel : IESLiveRevenueInteractPopupViewController
+@property (nonatomic) q entryType;
+@property (nonatomic) @? autoMatchBlock;
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UISwitch switchView;
+@property (nonatomic) UIButton switchButton;
+@property (nonatomic) UIView autoMatchView;
+@property (nonatomic) UIView<IESHYContainerProtocol> hybridView;
+- (BOOL)getSwitchStatus;
+- (void)addAutoMatchView;
+- (void)addButtonWithEntryType:;
+- (id)autoMatchBlock;
+- (id)autoMatchView;
+- (void)didClickedMatchButton;
+- (void)didClickedSwitch;
+- (void)hideMatchButtonWithCondition:;
+- (id)hybridView;
+- (id)initWithDIContext:withEntryType:autoMatchBlock:;
+- (void)onSetupNavBar:;
+- (void)setAutoMatchBlock:;
+- (void)setAutoMatchView:;
+- (void)setHybridView:;
+- (void)setSwitchButton:;
+- (void)showAutoMatchAgreeCell;
+- (void)showPKTermDetailWebView;
+- (void)updateAgreeStatus:;
+- (long long)entryType;
+- (id)containerView;
+- (void)setContainerView:;
+- (void).cxx_destruct;
+- (void)showAlertView;
+- (void)viewDidLoad;
+- (void)setEntryType:;
+- (id)switchView;
+- (void)setSwitchView:;
+- (id)switchButton;
+@end

@@ -1,0 +1,32 @@
+@interface VCAudioCaptionsCoordinator : NSObject
+@property (nonatomic) q currentlyCaptionedStreamToken;
+@property (nonatomic) q state;
+@property (nonatomic) {os_unfair_lock_s=I} stateLock;
+@property (nonatomic) BOOL captionsSupported;
+@property (nonatomic) BOOL captionsEnabled;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)stateLock;
+- (void)dealloc;
+- (void)setState:;
+- (void)setStateLock:;
+- (long long)state;
+- (void)setOneToOneModeEnabled:;
+- (BOOL)captionsEnabled;
+- (void)enableCaptions:;
+- (void)didUpdateCaptions:;
+- (void)didEnableCaptions:error:;
+- (void)didDisableCaptions:error:;
+- (void)didStartCaptioningWithReason:streamToken:;
+- (void)didStopCaptioningWithReason:streamToken:;
+- (void)registerCaptionsEventDelegate:;
+- (void)setCaptionsLocale:;
+- (BOOL)captionsSupported;
+- (id)captionsDelegate;
+- (id)initWithOneToOneEnabled:reportingAgent:;
+- (void)registerStreamToken:withFormat:;
+- (long long)currentlyCaptionedStreamToken;
+- (void)setCurrentlyCaptionedStreamToken:;
+@end

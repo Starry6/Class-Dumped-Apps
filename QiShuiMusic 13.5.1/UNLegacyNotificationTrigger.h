@@ -1,0 +1,34 @@
+@interface UNLegacyNotificationTrigger : UNNotificationTrigger
+@property (nonatomic) NSDate date;
+@property (nonatomic) NSTimeZone timeZone;
+@property (nonatomic) NSCalendar repeatCalendar;
+@property (nonatomic) NSInteger remainingRepeatCount;
+@property (nonatomic) NSInteger totalRepeatCount;
+@property (nonatomic) Q repeatInterval;
+- (void)setTimeZone:;
+- (unsigned long long)repeatInterval;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)date;
+- (void)encodeWithCoder:;
+- (void)setRepeatInterval:;
+- (void).cxx_destruct;
+- (void)setDate:;
+- (id)description;
+- (id)timeZone;
+- (BOOL)isEqual:;
+- (id)repeatCalendar;
+- (void)setRepeatCalendar:;
+- (id)nextTriggerDateAfterDate:withRequestedDate:;
+- (BOOL)willTriggerAfterDate:withRequestedDate:;
+- (double)_retroactiveTriggerHysteresis;
+- (id)_initWithDate:timeZone:remainingRepeatCount:totalRepeatCount:repeatInterval:repeatCalendar:;
+- (id)_nextTriggerDateAfterDate:withRequestedDate:defaultTimeZone:;
+- (int)remainingRepeatCount;
+- (void)setRemainingRepeatCount:;
+- (int)totalRepeatCount;
+- (void)setTotalRepeatCount:;
++ (BOOL)supportsSecureCoding;
++ (id)triggerWithDate:timeZone:repeatInterval:repeatCalendar:;
++ (id)triggerWithDate:timeZone:remainingRepeatCount:totalRepeatCount:repeatInterval:repeatCalendar:;
+@end

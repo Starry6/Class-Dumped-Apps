@@ -1,0 +1,31 @@
+@interface AAURLSessionContext : NSObject
+@property (nonatomic) AAAbsintheSigner absintheSigner;
+@property (nonatomic) AAAttestationSigner attestationSigner;
+@property (nonatomic) AARemoteServer remoteServer;
+@property (nonatomic) BOOL requiresSigning;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)remoteServer;
+- (id)_initRequiringSigning:appleIDSession:;
+- (id)init;
+- (BOOL)requiresSigning;
+- (void)_additionalHeadersForRequest:completion:;
+- (void)URLSession:task:getAppleIDHeadersForResponse:completionHandler:;
+- (void)setRemoteServer:;
+- (id)attestationSigner;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (id)initRequiringSigning:;
+- (id)absintheSigner;
+- (void)setAbsintheSigner:;
+- (void).cxx_destruct;
+- (id)relevantHTTPStatusCodes;
+- (void)_additionalAbsintheHeadersForData:completion:;
+- (void)_additionalAttestationHeadersForData:withValidity:completion:;
+- (void)setAttestationSigner:;
+- (id)copyWithZone:;
++ (id)_relevantHTTPStatusCodes;
++ (BOOL)supportsSecureCoding;
+@end

@@ -1,0 +1,38 @@
+@interface IESLivePKGuestBeautyPopupView : UIView
+@property (nonatomic) UIView previewView;
+@property (nonatomic) UIView beautifyContainer;
+@property (nonatomic) @? cancelBlock;
+@property (nonatomic) @? startBlock;
+@property (nonatomic) UIButton cancelBtn;
+@property (nonatomic) UIButton startBtn;
+@property (nonatomic) BOOL showStartAndCancelBtn;
+@property (nonatomic) Q type;
+@property (nonatomic) NSString cancelTitle;
+@property (nonatomic) NSString startTitle;
+- (void)setCancelTitle:;
+- (id)beautifyContainer;
+- (id)cancelBtn;
+- (void)didClickCancelBtn;
+- (void)didClickStartBtn;
+- (void)didSetAttachingDIContext;
+- (void)setBeautifyContainer:;
+- (void)setCancelBtn:;
+- (void)setShowStartAndCancelBtn:;
+- (void)setStartBtn:;
+- (void)setStartTitle:;
+- (BOOL)showStartAndCancelBtn;
+- (id)startBtn;
+- (id)startTitle;
+- (id)previewView;
+- (void)setCancelBlock:;
+- (void)setType:;
+- (unsigned long long)type;
+- (id)cancelBlock;
+- (void).cxx_destruct;
+- (void)setPreviewView:;
+- (id)startBlock;
+- (void)setStartBlock:;
+- (void)setupView;
+- (id)cancelTitle;
++ (id)popupViewWithFrame:preview:type:beautifyContainer:startTitle:cancelTitle:startBlock:cancelBlock:;
+@end

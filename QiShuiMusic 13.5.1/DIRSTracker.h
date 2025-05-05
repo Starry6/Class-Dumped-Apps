@@ -1,0 +1,34 @@
+@interface DIRSTracker : NSObject
+@property (nonatomic) BOOL eventTrackEnabled;
+@property (nonatomic) BOOL eventUploadEnabled;
+@property (nonatomic) Q launchType;
+- (void)addGlobalProperties:;
+- (BOOL)eventTrackEnabled;
+- (BOOL)eventUploadEnabled;
+- (void)removeGlobalPropertiesForKeys:;
+- (void)setAppRegion:;
+- (void)setEventTrackEnabled:;
+- (void)setEventUploadEnabled:;
+- (void)setRegionKey:;
+- (void)setUserIdentifiers:;
+- (void)trackEvent:withProperties:;
+- (void)trackEvent:withProperties:;
+- (void)trackJSON:withType:;
+- (void)trackJSON:withType:;
+- (BOOL)handleURL:;
+- (void)setLaunchType:;
+- (id)clientId;
+- (id)context;
+- (BOOL)start;
+- (id)initWithConfig:;
+- (void)setDeviceIdentifiers:;
+- (void)stop;
+- (unsigned long long)launchType;
+- (void).cxx_destruct;
+- (void)removeAllEvents;
+- (void)setAppLanguage:;
++ (id)initMainTrackerWithConfig:;
++ (id)mainTracker;
++ (long long)version;
++ (id)shortVersion;
+@end

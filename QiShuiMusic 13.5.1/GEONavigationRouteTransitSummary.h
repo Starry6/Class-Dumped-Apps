@@ -1,0 +1,37 @@
+@interface GEONavigationRouteTransitSummary : PBCodable
+@property (nonatomic) NSMutableArray scheduledLinks;
+@property (nonatomic) NSMutableArray possibleStops;
+- (void)readAll:;
+- (BOOL)hasGreenTeaWithValue:;
+- (id)init;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (id)initWithRoute:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)scheduledLinks;
+- (void)setScheduledLinks:;
+- (void)clearScheduledLinks;
+- (void)addScheduledLink:;
+- (unsigned long long)scheduledLinksCount;
+- (id)scheduledLinkAtIndex:;
+- (id)possibleStops;
+- (void)setPossibleStops:;
+- (void)clearPossibleStops;
+- (void)addPossibleStop:;
+- (unsigned long long)possibleStopsCount;
+- (id)possibleStopAtIndex:;
++ (BOOL)isValid:;
++ (Class)scheduledLinkType;
++ (Class)possibleStopType;
+@end

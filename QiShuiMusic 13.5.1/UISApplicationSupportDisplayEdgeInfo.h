@@ -1,0 +1,36 @@
+@interface UISApplicationSupportDisplayEdgeInfo : NSObject
+@property (nonatomic) UISApplicationSupportDisplayEdgeInsetsWrapper peripheryInsets;
+@property (nonatomic) NSNumber systemMinimumMargin;
+@property (nonatomic) NSNumber homeAffordanceOverlayAllowance;
+@property (nonatomic) UISApplicationSupportDisplayEdgeInsetsWrapper safeAreaInsetsPortrait;
+@property (nonatomic) UISApplicationSupportDisplayEdgeInsetsWrapper safeAreaInsetsLandscapeLeft;
+@property (nonatomic) UISApplicationSupportDisplayEdgeInsetsWrapper safeAreaInsetsPortraitUpsideDown;
+@property (nonatomic) UISApplicationSupportDisplayEdgeInsetsWrapper safeAreaInsetsLandscapeRight;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)peripheryInsets;
+- (void)setSafeAreaInsetsPortrait:;
+- (void)encodeWithXPCDictionary:;
+- (void)setSafeAreaInsetsLandscapeLeft:;
+- (void)setSafeAreaInsetsPortraitUpsideDown:;
+- (void)setHomeAffordanceOverlayAllowance:;
+- (void)setPeripheryInsets:;
+- (id)safeAreaInsetsLandscapeLeft;
+- (id)initWithXPCDictionary:;
+- (id)systemMinimumMargin;
+- (id)homeAffordanceOverlayAllowance;
+- (void).cxx_destruct;
+- (void)_copyFromOtherInfo:;
+- (void)_performIvarUpdateIfAllowed:;
+- (id)description;
+- (void)setSystemMinimumMargin:;
+- (id)safeAreaInsetsPortrait;
+- (id)safeAreaInsetsLandscapeRight;
+- (void)setSafeAreaInsetsLandscapeRight:;
+- (id)safeAreaInsetsPortraitUpsideDown;
+- (id)copyWithZone:;
++ (id)defaultDisplayEdgeInfoForceInsets:;
++ (id)defaultDisplayEdgeInfo;
+@end

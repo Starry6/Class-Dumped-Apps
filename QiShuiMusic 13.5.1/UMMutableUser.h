@@ -1,0 +1,31 @@
+@interface UMMutableUser : UMUser
+@property (nonatomic) I uid;
+@property (nonatomic) I gid;
+@property (nonatomic) NSString alternateDSID;
+@property (nonatomic) NSURL homeDirectoryURL;
+@property (nonatomic) NSString username;
+@property (nonatomic) NSString givenName;
+@property (nonatomic) NSString familyName;
+@property (nonatomic) NSString displayName;
+@property (nonatomic) NSURL photoURL;
+@property (nonatomic) NSString userAuxiliaryString;
+@property (nonatomic) NSDate creationDate;
+@property (nonatomic) NSDate lastLoginDate;
+@property (nonatomic) NSDate lastRemoteAuthDate;
+@property (nonatomic) Q passcodeType;
+@property (nonatomic) BOOL isLoginUser;
+@property (nonatomic) BOOL isAuditor;
+@property (nonatomic) BOOL isDisabled;
+@property (nonatomic) BOOL isTransientUser;
+@property (nonatomic) BOOL isPrimaryUser;
+@property (nonatomic) BOOL isAdminUser;
+@property (nonatomic) Q passcodeLockGracePeriod;
+@property (nonatomic) NSArray languages;
+@property (nonatomic) BOOL hasManagedCredentials;
+@property (nonatomic) Q dataQuota;
+@property (nonatomic) Q dataUsed;
+@property (nonatomic) BOOL hasDataToSync;
+@property (nonatomic) NSError errorCausingLogout;
+- (BOOL)commitChangesWithError:;
+- (BOOL)commitChanges;
+@end

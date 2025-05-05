@@ -1,0 +1,31 @@
+@interface ASAuthorizationPlatformPublicKeyCredentialRegistrationRequest : ASAuthorizationRequest
+@property (nonatomic) ASCPublicKeyCredentialCreationOptions coreCredentialCreationOptions;
+@property (nonatomic) NSString relyingPartyIdentifier;
+@property (nonatomic) NSData userID;
+@property (nonatomic) NSString name;
+@property (nonatomic) NSString displayName;
+@property (nonatomic) NSData challenge;
+@property (nonatomic) NSString userVerificationPreference;
+@property (nonatomic) NSString attestationPreference;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setChallenge:;
+- (id)userID;
+- (void)setName:;
+- (void)setDisplayName:;
+- (id)displayName;
+- (void).cxx_destruct;
+- (id)name;
+- (void)setUserID:;
+- (id)challenge;
+- (id)relyingPartyIdentifier;
+- (void)setUserVerificationPreference:;
+- (void)setAttestationPreference:;
+- (BOOL)supportsStyle:;
+- (id)userVerificationPreference;
+- (id)attestationPreference;
+- (id)_initWithProvider:relyingPartyIdentifier:challenge:name:userID:;
+- (id)coreCredentialCreationOptions;
+@end

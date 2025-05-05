@@ -1,0 +1,24 @@
+@interface UIPDFSearchHighlightsController : NSObject
+- (void)dealloc;
+- (void)layoutSublayersOfLayer:;
+- (void)drawLayer:inContext:;
+- (void)setNeedsDisplay;
+- (id)hitTest:;
+- (void)clearSearchHighlights;
+- (BOOL)hasSearchHighlights;
+- (id)initWithPageView:;
+- (void)pageDidRender:;
+- (void)_addAnimation:;
+- (void)_addAnimation2:;
+- (void)addSearchHighlightForRotatedSelection:animated:;
+- (void)addLayer:path:shadowPath:animated:;
+- (unsigned long long)indexOfColumnBreakStartingAt:;
+- (id)unionFrom:to:;
+- (void)makeType1Shadow:rect:inset:;
+- (void)makeType2Shadow:rect:;
+- (void)makeType1Path:shadowPath:;
+- (void)makeType2Path:to:shadowPath:;
+- (void)makeType3Path:from:to:shadowPath:;
+- (void)makeType4Path:from:to:shadowPath:;
+- (void)addSearchHighlightForSelection:animated:;
+@end

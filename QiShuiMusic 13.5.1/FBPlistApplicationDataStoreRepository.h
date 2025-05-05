@@ -1,0 +1,38 @@
+@interface FBPlistApplicationDataStoreRepository : NSObject
+@property (nonatomic) <FBApplicationDataStoreRepositoryDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)_load;
+- (id)keysForApplication:;
+- (void)dealloc;
+- (BOOL)isDirty;
+- (id)objectForKey:forApplication:;
+- (void)flushSynchronously;
+- (void)setObject:forKey:forApplication:;
+- (void)setDelegate:;
+- (void)close;
+- (void)removeObjectForKey:forApplication:;
+- (id)location;
+- (void)beginBatchedUpdate;
+- (BOOL)_isEligibleForSaving:;
+- (void)removeAllObjectsForApplication:;
+- (BOOL)containsKey:forApplication:;
+- (id)applicationIdentifiersWithState;
+- (id)delegate;
+- (void)removeObjectsForKeys:forApplication:;
+- (id)initWithStorePath:;
+- (void).cxx_destruct;
+- (void)endBatchedUpdate;
+- (id)allObjectsForKeys:;
+- (id)_stateQueue_objectForKey:forIdentifier:;
+- (id)_stateQueue_objectsForKeys:;
+- (id)_stateQueue_storeForIdentifier:;
+- (id)_stateQueue_addStoreForIdentifierIfNecessary:;
+- (void)_stateQueue_removeStoreForIdentifier:;
+- (void)_stateQueue_markDirty;
+- (void)_writeQueue_flushSynchronously;
+- (void)_notifyDelegateOfChangeForKeys:application:;
+- (void)_notifyDelegateOfStoreInvalidationForIdentifier:;
+@end

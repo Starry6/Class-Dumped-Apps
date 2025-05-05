@@ -1,0 +1,32 @@
+@interface BUCocoaSecurity : NSObject
++ (id)bu_md5WithData:;
++ (id)bu_aesDecryptWithBase64:key:iv:;
++ (id)bu_md5:;
++ (id)_errorWithCode:desc:cmd:data:key:iv:;
++ (id)bu_aesDecryptWithBase64:hexKey:hexIv:;
++ (id)bu_aesDecryptWithBase64:key:;
++ (id)bu_aesDecryptWithData:key:iv:;
++ (id)bu_aesDecryptWithData:key:iv:error:;
++ (id)bu_aesEncrypt:hexKey:hexIv:;
++ (id)bu_aesEncrypt:key:;
++ (id)bu_aesEncrypt:key:iv:;
++ (id)bu_aesEncryptWithData:key:iv:;
++ (id)bu_aesEncryptWithData:key:iv:error:;
++ (id)bu_hmacMd5:hmacKey:;
++ (id)bu_hmacMd5WithData:hmacKey:;
++ (id)bu_hmacSha224:hmacKey:;
++ (id)bu_hmacSha224WithData:hmacKey:;
++ (id)bu_hmacSha256:hmacKey:;
++ (id)bu_hmacSha256WithData:hmacKey:;
++ (id)bu_hmacSha384WithData:hmacKey:;
++ (id)bu_hmacSha512WithData:hmacKey:;
++ (id)bu_rsaEncryptWithString:publicKeyBase64:;
++ (id)bu_sha224:;
++ (id)bu_sha224WithData:;
++ (id)bu_sha256:;
++ (id)bu_sha256WithData:;
++ (id)bu_sha384:;
++ (id)bu_sha384WithData:;
++ (id)bu_sha512:;
++ (id)bu_sha512WithData:;
+@end

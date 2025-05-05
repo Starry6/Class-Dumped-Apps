@@ -1,0 +1,35 @@
+@interface AWDIDSSocketPairConnectionTCPInfo : PBCodable
+@property (nonatomic) BOOL hasTimestamp;
+@property (nonatomic) Q timestamp;
+@property (nonatomic) BOOL hasLinkType;
+@property (nonatomic) I linkType;
+@property (nonatomic) BOOL hasCurrentRTT;
+@property (nonatomic) Q currentRTT;
+@property (nonatomic) BOOL hasBandwidth;
+@property (nonatomic) Q bandwidth;
+- (void)writeTo:;
+- (void)setLinkType:;
+- (unsigned long long)bandwidth;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)setHasTimestamp:;
+- (void)mergeFrom:;
+- (BOOL)hasTimestamp;
+- (void)setTimestamp:;
+- (BOOL)readFrom:;
+- (unsigned long long)timestamp;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (unsigned int)linkType;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setCurrentRTT:;
+- (void)setHasCurrentRTT:;
+- (BOOL)hasCurrentRTT;
+- (unsigned long long)currentRTT;
+- (void)setHasLinkType:;
+- (BOOL)hasLinkType;
+- (void)setBandwidth:;
+- (void)setHasBandwidth:;
+- (BOOL)hasBandwidth;
+@end

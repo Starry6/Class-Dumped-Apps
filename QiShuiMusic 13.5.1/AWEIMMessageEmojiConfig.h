@@ -1,0 +1,37 @@
+@interface AWEIMMessageEmojiConfig : IESIMBaseApiModel
+@property (nonatomic) NSString key;
+@property (nonatomic) NSString text;
+@property (nonatomic) NSString iconUrl;
+@property (nonatomic) NSString unselectedIconUrl;
+@property (nonatomic) NSString unselectedIconDarkUrl;
+@property (nonatomic) NSString defaultIconPath;
+@property (nonatomic) NSString defaultUnselectedIconPath;
+@property (nonatomic) NSString defaultUnselectedIconDarkPath;
+@property (nonatomic) NSString effectUrl;
+@property (nonatomic) NSString displayUrl;
+@property (nonatomic) NSString defaultDisplayPath;
+- (id)defaultIconPath;
+- (id)iconUrl;
+- (id)defaultDisplayPath;
+- (id)defaultUnselectedIconDarkPath;
+- (id)defaultUnselectedIconPath;
+- (id)displayUrl;
+- (id)effectUrl;
+- (void)setDefaultDisplayPath:;
+- (void)setDefaultIconPath:;
+- (void)setDefaultUnselectedIconDarkPath:;
+- (void)setDefaultUnselectedIconPath:;
+- (void)setDisplayUrl:;
+- (void)setEffectUrl:;
+- (void)setIconUrl:;
+- (void)setUnselectedIconDarkUrl:;
+- (void)setUnselectedIconUrl:;
+- (id)unselectedIconDarkUrl;
+- (id)unselectedIconUrl;
+- (void)setText:;
+- (id)key;
+- (void)setKey:;
+- (void).cxx_destruct;
+- (id)text;
++ (id)JSONKeyPathsByPropertyKey;
+@end

@@ -1,0 +1,34 @@
+@interface IESLivePublicScreenNodeFactory : NSObject
+@property (nonatomic) IESLiveThreadSafeDictionary nodeStrategyMap;
+@property (nonatomic) <IESLiveWebImageService> webImageService;
+@property (nonatomic) IESLivePublicScreenCommonMessageParser messageParser;
+@property (nonatomic) IESLivePublicScreenProcessNodeThread processNodeThread;
+@property (nonatomic) NSObject<OS_dispatch_queue> processNodeQueue;
+@property (nonatomic) @? setupNodeStrategyBlock;
+@property (nonatomic) BOOL enable_thread_fix;
+- (id)nodeStrategyMap;
+- (id)webImageService;
+- (id)messageNodeStrategyWithMessage:;
+- (BOOL)enable_thread_fix;
+- (void)executeProcessNodeTask:;
+- (void)executeProcessNodeTaskAsync:;
+- (id)getNodeStrategyWithTask:;
+- (id)initWithPublicScreenID:messageParser:setupNodeStrategyBlock:;
+- (id)messageParser;
+- (BOOL)needLoadResourceWithNodeStrategy:downloadCompletion:;
+- (id)p_createNodeWith:;
+- (void)p_resetMessageNodeWith:;
+- (void)p_updateNodeSizeWith:;
+- (id)processNodeQueue;
+- (id)processNodeThread;
+- (void)setEnable_thread_fix:;
+- (void)setMessageParser:;
+- (void)setNodeStrategyMap:;
+- (void)setProcessNodeQueue:;
+- (void)setProcessNodeThread:;
+- (void)setSetupNodeStrategyBlock:;
+- (void)setWebImageService:;
+- (id)setupNodeStrategyBlock;
+- (void)dealloc;
+- (void).cxx_destruct;
+@end

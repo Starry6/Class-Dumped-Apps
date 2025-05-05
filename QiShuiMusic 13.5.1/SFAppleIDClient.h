@@ -1,0 +1,35 @@
+@interface SFAppleIDClient : NSObject
+@property (nonatomic) NSObject<OS_dispatch_queue> dispatchQueue;
+@property (nonatomic) @? interruptionHandler;
+@property (nonatomic) @? invalidationHandler;
+- (id)init;
+- (id)interruptionHandler;
+- (void)dealloc;
+- (void)_invalidated;
+- (void)setInterruptionHandler:;
+- (id)dispatchQueue;
+- (void)setDispatchQueue:;
+- (void)_interrupted;
+- (void)_ensureXPCStarted;
+- (void)_invalidate;
+- (void).cxx_destruct;
+- (id)invalidationHandler;
+- (void)setInvalidationHandler:;
+- (id)syncRemoteProxyWithError:;
+- (void)invalidate;
+- (void)ensureSyncXPCStarted;
+- (void)myAccountWithCompletion:;
+- (void)personInfoWithEmailOrPhone:completion:;
+- (void)requestWithInfo:completion:;
+- (void)statusInfoWithCompletion:;
+- (void)_ensureAuthXPCStarted;
+- (void)copyCertificateForAppleID:withCompletion:;
+- (void)_copyCertificateForAppleID:withCompletion:;
+- (void)copyIdentityForAppleID:withCompletion:;
+- (void)_copyIdentityForAppleID:withCompletion:;
+- (id)copyIdentityForAppleID:error:;
+- (void)_myAccountWithCompletion:;
+- (id)myAccountWithError:;
+- (void)_personInfoWithEmailOrPhone:completion:;
+- (void)authenticateAccountWithAppleID:password:completion:;
+@end

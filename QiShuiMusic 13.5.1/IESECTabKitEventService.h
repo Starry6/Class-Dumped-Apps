@@ -1,0 +1,34 @@
+@interface IESECTabKitEventService : IESECTabKitService
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)iesectabkit_willDisplayTabItem:;
+- (void)iesectabkit_didTapAtTopTabItem:;
+- (void)addEventSubscriber:;
+- (void)iesectabkit_cancelMoveToTabItem:;
+- (void)iesectabkit_didDismissPopup:;
+- (void)iesectabkit_didDisplayNavItem:;
+- (void)iesectabkit_didInterceptCloseAction:tabItem:;
+- (void)iesectabkit_didMoveToTabItem:moveType:;
+- (void)iesectabkit_didSelectBottomTabItem:;
+- (void)iesectabkit_didSelectNavItem:;
+- (void)iesectabkit_didSelectTopTabItem:;
+- (void)iesectabkit_didTapAtBottomTabItem:;
+- (void)iesectabkit_didUpdateScreenState:;
+- (void)iesectabkit_firstScreenLoaded:;
+- (void)iesectabkit_needsUpdateStatusBarStyle;
+- (void)iesectabkit_splitSlideContainerDidScroll:;
+- (void)iesectabkit_tabItem:hybridViewDidFinishLoadWithURL:error:;
+- (void)iesectabkit_tabItem:hybridViewDidScroll:;
+- (void)iesectabkit_tabItem:visibilityDidChange:;
+- (void)iesectabkit_willDisplayBottomTabItem:;
+- (void)iesectabkit_willDisplayPopup:;
+- (void)iesectabkit_willDisplayTopTabItem:;
+- (void)iesectabkit_willMoveToTabItem:;
+- (void)iesectabkit_willUpdateScreenState:;
+- (id)subscriberArrayBySelector:;
+- (id)init;
+- (void).cxx_destruct;
+- (void)forwardInvocation:;
+@end

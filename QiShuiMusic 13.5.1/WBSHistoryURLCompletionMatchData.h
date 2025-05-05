@@ -1,0 +1,38 @@
+@interface WBSHistoryURLCompletionMatchData : NSObject
+@property (nonatomic) NSString originalURLString;
+@property (nonatomic) BOOL containsBookmark;
+@property (nonatomic) double lastVisitedTimeInterval;
+@property (nonatomic) BOOL lastVisitWasFailure;
+@property (nonatomic) BOOL shouldPreload;
+@property (nonatomic) q visitCount;
+@property (nonatomic) q visitCountScore;
+@property (nonatomic) BOOL visitWasClientError;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (long long)visitCount;
+- (BOOL)lastVisitWasFailure;
+- (double)lastVisitedTimeInterval;
+- (void).cxx_destruct;
+- (long long)visitCountScore;
+- (id).cxx_construct;
+- (id)originalURLString;
+- (BOOL)containsBookmark;
+- (BOOL)visitWasClientError;
+- (id)matchDataByMergingWithMatchData:;
+- (void)enumeratePageTitlesUsingBlock:;
+- (id)pageTitleAtIndex:;
+- (id)userVisibleURLStringForPageTitleAtIndex:;
+- (void)enumerateUserVisibleURLsUsingBlock:;
+- (id)userVisibleURLStringAtIndex:;
+- (id)pageTitleForUserVisibleURLStringAtIndex:;
+- (BOOL)matchesAutocompleteTrigger:isStrengthened:;
+- (float)topSitesScoreForURLStringAtIndex:atTime:;
+- (float)topSitesScoreForPageTitleAtTime:;
+- (long long)visitCountScoreForURLStringAtIndex:;
+- (long long)visitCountScoreForPageTitleAtTime;
+- (BOOL)shouldPreload;
+- (id)initWithCompletionItem:;
+@end

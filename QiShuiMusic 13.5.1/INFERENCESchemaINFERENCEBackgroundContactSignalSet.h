@@ -1,0 +1,36 @@
+@interface INFERENCESchemaINFERENCEBackgroundContactSignalSet : SISchemaInstrumentationMessage
+@property (nonatomic) BOOL isMatchWithRelationName;
+@property (nonatomic) BOOL hasIsMatchWithRelationName;
+@property (nonatomic) float peopleSuggesterScoreSumForContact;
+@property (nonatomic) BOOL hasPeopleSuggesterScoreSumForContact;
+@property (nonatomic) NSArray handlesWithBgPrivacySignals;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)setIsMatchWithRelationName:;
+- (BOOL)hasIsMatchWithRelationName;
+- (void)setHasIsMatchWithRelationName:;
+- (void)deleteIsMatchWithRelationName;
+- (void)setPeopleSuggesterScoreSumForContact:;
+- (BOOL)hasPeopleSuggesterScoreSumForContact;
+- (void)setHasPeopleSuggesterScoreSumForContact:;
+- (void)deletePeopleSuggesterScoreSumForContact;
+- (void)clearHandlesWithBgPrivacySignals;
+- (void)deleteHandlesWithBgPrivacySignals;
+- (void)addHandlesWithBgPrivacySignals:;
+- (unsigned long long)handlesWithBgPrivacySignalsCount;
+- (id)handlesWithBgPrivacySignalsAtIndex:;
+- (BOOL)isMatchWithRelationName;
+- (float)peopleSuggesterScoreSumForContact;
+- (id)handlesWithBgPrivacySignals;
+- (void)setHandlesWithBgPrivacySignals:;
+@end

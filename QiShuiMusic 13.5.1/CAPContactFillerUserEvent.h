@@ -1,0 +1,38 @@
+@interface CAPContactFillerUserEvent : PBCodable
+@property (nonatomic) I textInteractionsSent;
+@property (nonatomic) I textInteractionsReceived;
+@property (nonatomic) I shareInteractionsSent;
+@property (nonatomic) BOOL hasHighConfidenceRuleCount;
+@property (nonatomic) I highConfidenceRuleCount;
+@property (nonatomic) BOOL hasMediumConfidenceRuleCount;
+@property (nonatomic) I mediumConfidenceRuleCount;
+@property (nonatomic) BOOL hasLowConfidenceRuleCount;
+@property (nonatomic) I lowConfidenceRuleCount;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (unsigned int)highConfidenceRuleCount;
+- (void)setHighConfidenceRuleCount:;
+- (unsigned int)lowConfidenceRuleCount;
+- (void)setLowConfidenceRuleCount:;
+- (unsigned int)mediumConfidenceRuleCount;
+- (void)setMediumConfidenceRuleCount:;
+- (void)setHasHighConfidenceRuleCount:;
+- (BOOL)hasHighConfidenceRuleCount;
+- (void)setHasMediumConfidenceRuleCount:;
+- (BOOL)hasMediumConfidenceRuleCount;
+- (void)setHasLowConfidenceRuleCount:;
+- (BOOL)hasLowConfidenceRuleCount;
+- (unsigned int)textInteractionsSent;
+- (void)setTextInteractionsSent:;
+- (unsigned int)textInteractionsReceived;
+- (void)setTextInteractionsReceived:;
+- (unsigned int)shareInteractionsSent;
+- (void)setShareInteractionsSent:;
+@end

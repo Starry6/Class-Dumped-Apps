@@ -1,0 +1,37 @@
+@interface GEOElevationSegmentDescription : PBCodable
+@property (nonatomic) BOOL hasStartOffsetM;
+@property (nonatomic) I startOffsetM;
+@property (nonatomic) BOOL hasEndOffsetM;
+@property (nonatomic) I endOffsetM;
+@property (nonatomic) BOOL hasFormattedDescription;
+@property (nonatomic) GEOFormattedString formattedDescription;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (unsigned int)startOffsetM;
+- (void)setStartOffsetM:;
+- (void)setHasStartOffsetM:;
+- (BOOL)hasStartOffsetM;
+- (unsigned int)endOffsetM;
+- (void)setEndOffsetM:;
+- (void)setHasEndOffsetM:;
+- (BOOL)hasEndOffsetM;
+- (BOOL)hasFormattedDescription;
+- (id)formattedDescription;
+- (void)setFormattedDescription:;
++ (BOOL)isValid:;
+@end

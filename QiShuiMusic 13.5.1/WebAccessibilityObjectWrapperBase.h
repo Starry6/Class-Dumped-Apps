@@ -1,0 +1,34 @@
+@interface WebAccessibilityObjectWrapperBase : NSObject
+@property (nonatomic) {ObjectIdentifier<WebCore::AXIDType>=Q} identifier;
+- (void)detach;
+- (id)identifier;
+- (id).cxx_construct;
+- (void)setIdentifier:;
+- (id)innerHTML;
+- (id)accessibilityCustomContent;
+- (id)attachmentView;
+- (id)initWithAccessibilityObject:;
+- (id)axBackingObject;
+- (id)_accessibilityWebDocumentView;
+- (id)accessibilityPlatformMathSubscriptKey;
+- (id)accessibilityPlatformMathSuperscriptKey;
+- (void)attachAXObject:;
+- (BOOL)_prepareAccessibilityCall;
+- (BOOL)isIsolatedObject;
+- (id)baseAccessibilitySpeechHint;
+- (id)baseAccessibilityHelpText;
+- (id)convertPathToScreenSpace:;
+- (id)accessibilityVisibleCharacterRange;
+- (id)convertRectToSpace:space:;
+- (id)contentForSimpleRange:attributed:;
+- (id)baseUpdateBackingStore;
+- (id)lineRectsAndText;
+- (id)ariaLandmarkRoleDescription;
+- (id)accessibilityMathPostscriptPairs;
+- (id)accessibilityMathPrescriptPairs;
+- (id)baseAccessibilityResolvedEditingStyles;
+- (void)accessibilityPostedNotification:;
+- (void)accessibilityPostedNotification:userInfo:;
+- (id)outerHTML;
++ (void)accessibilitySetShouldRepostNotifications:;
+@end

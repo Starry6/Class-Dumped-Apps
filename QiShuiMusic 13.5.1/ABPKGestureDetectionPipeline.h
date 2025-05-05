@@ -1,0 +1,26 @@
+@interface ABPKGestureDetectionPipeline : NSObject
+- (id)init;
+- (void).cxx_destruct;
+- (id)initWithFrequency:;
+- (int)runWithInput:deviceOrientation:atTimeStamp:andOutput:;
+- (int)runPoseEstimationWithInput:deviceOrientation:atTimeStamp:andOutput:;
+- (int)runWithInput:abpkDeviceOrientation:atTimeStamp:andOutput:;
+- (int)runPoseEstimationWithInput:abpkDeviceOrientation:atTimeStamp:andOutput:;
+- (id)extractDataForJointIdx:fromPoseTimeArray:;
+- (void)runGestureDetection:withTrackingId:andResult:;
+- (BOOL)overlayResult:OnImage:andGenerateOverlayImage:;
+- (void)_startInitABPKSignpost;
+- (void)_endInitABPKSignpost;
+- (void)_startGestureDetectionRunWithInputSignpostWithTimestamp:;
+- (void)_endGestureDetectionRunWithInputSignpostWithTimestamp:;
+- (void)_startGestureDetectionImagePreProcessingSignpostWithTimestamp:;
+- (void)_endGestureDetectionImagePreProcessingSignpostWithTimestamp:;
+- (void)_startGestureDetection2DDetectionMLSignpostWithTimestamp:;
+- (void)_endGestureDetection2DDetectionMLSignpostWithTimestamp:;
+- (void)_startGestureDetection2DDetectionPostProcessingSignpostWithTimestamp:;
+- (void)_endGestureDetection2DDetectionPostProcessingSignpostWithTimestamp:;
+- (void)_startGestureDetectionPersonTrackingSignpostWithTimestamp:;
+- (void)_endGestureDetectionPersonTrackingSignpostWithTimestamp:;
+- (void)_startGestureDetectionAlgorithmSignpostWithTimestamp:;
+- (void)_endGestureDetectionAlgorithmSignpostWithTimestamp:;
+@end

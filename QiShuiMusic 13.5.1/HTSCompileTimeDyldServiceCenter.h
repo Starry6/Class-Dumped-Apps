@@ -1,0 +1,2 @@
+@interface HTSCompileTimeDyldServiceCenter : NSObject
+@end

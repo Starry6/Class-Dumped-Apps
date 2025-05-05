@@ -1,0 +1,36 @@
+@interface IESLiveBaseInfo : IESLivePBBaseMessage
+@property (nonatomic) NSString userID;
+@property (nonatomic) NSString openId;
+@property (nonatomic) NSString idStr;
+@property (nonatomic) NSString secUid;
+@property (nonatomic) NSString displayId;
+@property (nonatomic) NSString nickname;
+@property (nonatomic) NSInteger gender;
+@property (nonatomic) NSString signature;
+@property (nonatomic) HTSLiveImage avatarThumb;
+@property (nonatomic) BOOL hasAvatarThumb;
+@property (nonatomic) HTSLiveImage avatarMedium;
+@property (nonatomic) BOOL hasAvatarMedium;
+@property (nonatomic) HTSLiveImage avatarLarge;
+@property (nonatomic) BOOL hasAvatarLarge;
+@property (nonatomic) NSString city;
+@property (nonatomic) PoiInfo poiInfo;
+@property (nonatomic) BOOL hasPoiInfo;
+@property (nonatomic) NSInteger secret;
+@property (nonatomic) NSString remarkName;
+@property (nonatomic) NSInteger age;
+@property (nonatomic) NSString school;
+@property (nonatomic) NSString locationCity;
+@property (nonatomic) NSInteger mysteryMan;
+@property (nonatomic) NSInteger accountType;
+@property (nonatomic) HTSLiveHostInfo hostInfo;
+@property (nonatomic) BOOL hasHostInfo;
+@property (nonatomic) HTSLiveUser_XiguaParams xiguaInfo;
+@property (nonatomic) BOOL hasXiguaInfo;
+@property (nonatomic) HTSLiveUserAttr userAttr;
+@property (nonatomic) BOOL hasUserAttr;
+@property (nonatomic) IESLiveSaasBaseInfo saasBaseInfo;
+@property (nonatomic) BOOL hasSaasBaseInfo;
+- (id)userID;
++ (id)descriptor;
+@end

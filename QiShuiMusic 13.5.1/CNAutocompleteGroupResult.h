@@ -1,0 +1,2 @@
+@interface CNAutocompleteGroupResult : CNAutocompleteResult
+@end

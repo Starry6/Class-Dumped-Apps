@@ -1,0 +1,2 @@
+@interface KIFGSEventProxy : NSObject
+@end

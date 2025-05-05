@@ -1,0 +1,32 @@
+@interface VCStreamOutput : VCObject
+@property (nonatomic) q streamToken;
+@property (nonatomic) BOOL isClientInProcess;
+@property (nonatomic) r^{__CFAllocator=} backingBufferAllocator;
+@property (nonatomic) float synchronizationTimeOffset;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (int)processID;
+- (void)setSynchronizationDelegate:;
+- (void)didSuspend:;
+- (void)dealloc;
+- (void)didInvalidate;
+- (id)synchronizationDelegate;
+- (void)invalidate;
+- (long long)streamToken;
+- (float)synchronizationTimeOffset;
+- (void)setSynchronizationTimeOffset:;
+- (void)didPause:;
+- (void)didStall:;
+- (void)didDegrade:;
+- (void)didUpdateAttachments:;
+- (void)didReceiveSampleBuffer:;
+- (id)initWithStreamToken:clientProcessID:synchronizationDelegate:delegate:delegateQueue:;
+- (BOOL)createRemoteQueue;
+- (id)copyXpcSenderQueue;
+- (BOOL)enqueueAttributes:;
+- (BOOL)initXPCCommandQueue;
+- (BOOL)isClientInProcess;
+- (id)backingBufferAllocator;
+@end

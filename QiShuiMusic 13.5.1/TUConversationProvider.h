@@ -1,0 +1,36 @@
+@interface TUConversationProvider : NSObject
+@property (nonatomic) NSObject<OS_tcc_identity> assumedIdentity;
+@property (nonatomic) Q defaultAVMode;
+@property (nonatomic) NSArray supportedMediaTypes;
+@property (nonatomic) TUConversationProviderConfiguration providerConfiguration;
+@property (nonatomic) NSString identifier;
+- (id)bundleIdentifier;
+- (BOOL)supportsAVMode:;
+- (id)pseudonymFeatureID;
+- (BOOL)supportsVideo;
+- (id)identifier;
+- (id)assumedIdentity;
+- (BOOL)supportsMediaType:;
+- (BOOL)supportsSharePlay;
+- (id)initWithCoder:;
+- (id)providerConfiguration;
+- (unsigned long long)hash;
+- (id)supportedMediaTypes;
+- (BOOL)isDefaultProvider;
+- (void)encodeWithCoder:;
+- (id)initWithConversationProvider:;
+- (void).cxx_destruct;
+- (unsigned long long)defaultAVMode;
+- (id)description;
+- (id)initWithConfiguration:;
+- (BOOL)supportsLinks;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)isEqualToConversationProvider:;
++ (BOOL)supportsSecureCoding;
++ (BOOL)matchesDefaultProviderIdentifier:;
++ (id)providerForIdentifier:;
++ (id)faceTimeProvider;
++ (id)expanseProvider;
++ (id)unknownProvider;
+@end

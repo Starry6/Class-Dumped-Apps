@@ -1,0 +1,30 @@
+@interface CalLogEnvelope : NSObject
+@property (nonatomic) NSString logName;
+@property (nonatomic) NSInteger level;
+@property (nonatomic) NSString message;
+@property (nonatomic) NSInteger processID;
+@property (nonatomic) NSString processName;
+@property (nonatomic) I machPort;
+@property (nonatomic) double timestamp;
+@property (nonatomic) NSString function;
+- (void)setLevel:;
+- (unsigned int)machPort;
+- (int)processID;
+- (id)init;
+- (void)setMessage:;
+- (int)level;
+- (id)function;
+- (void)setProcessID:;
+- (void)setFunction:;
+- (id)processName;
+- (void)setTimestamp:;
+- (id)message;
+- (void).cxx_destruct;
+- (void)setProcessName:;
+- (double)timestamp;
+- (id)description;
+- (id)initWithLogName:level:message:;
+- (id)logName;
+- (void)setLogName:;
+- (void)setMachPort:;
+@end

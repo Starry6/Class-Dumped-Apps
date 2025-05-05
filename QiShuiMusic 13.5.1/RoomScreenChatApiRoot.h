@@ -1,0 +1,2 @@
+@interface RoomScreenChatApiRoot : GPBRootObject
+@end

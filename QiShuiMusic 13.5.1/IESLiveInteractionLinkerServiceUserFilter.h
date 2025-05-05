@@ -1,0 +1,2 @@
+@interface IESLiveInteractionLinkerServiceUserFilter : NSObject
+@end

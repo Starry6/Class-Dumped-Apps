@@ -1,0 +1,30 @@
+@interface MRAVClusterController : NSObject
+@property (nonatomic) BOOL needsCommandRedirection;
+@property (nonatomic) Q clusterStatus;
+@property (nonatomic) I clusterType;
+@property (nonatomic) NSString clusterLeaderUID;
+@property (nonatomic) NSString clusterUID;
+- (id)init;
+- (unsigned long long)onQueue_computeClusterStatus;
+- (unsigned int)clusterType;
+- (unsigned long long)clusterStatus;
+- (void)getClusterLeaderEndpoint:;
+- (void)onQueue_notifyObserversWithClusterType:;
+- (void)updateClusterInformation;
+- (BOOL)needsCommandRedirection;
+- (void)getClusterStatus:;
+- (void)onQueue_notifyObserversWithClusterStatus:;
+- (void).cxx_destruct;
+- (void)onQueue_setClusterStatus:;
+- (void)deviceInfoDidChangeNotification:;
+- (id)clusterUID;
+- (void)unregisterObserver:;
+- (void)registerObserver:;
+- (id)clusterLeaderUID;
+- (void)onQueue_setClusterType:;
++ (id)sharedController;
++ (id)getClusterLeaderUID;
++ (unsigned int)getClusterType;
++ (BOOL)canBeClusterMember;
++ (id)getClusterUID;
+@end

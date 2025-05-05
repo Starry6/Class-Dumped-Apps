@@ -1,0 +1,31 @@
+@interface IESLiveLinkVideoMixer : NSObject
+@property (nonatomic) LSGLContext context;
+@property (nonatomic) NSMutableDictionary inputNodeMap;
+@property (nonatomic) LSGLPictureMixer gl_mixer;
+@property (nonatomic) LSGLPictureOutput gl_output;
+@property (nonatomic) Q mixerType;
+@property (nonatomic) NSData extendedData;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)addLayerInfo:rect:isMasterLayer:;
+- (void)createMixerPipeLine;
+- (id)gl_mixer;
+- (id)gl_output;
+- (id)inputNodeMap;
+- (void)renderPixelBuffer:rotation:extendedData:withCMTime:layerId:needRender:;
+- (void)setGl_mixer:;
+- (void)setGl_output:;
+- (void)setInputNodeMap:;
+- (id)init;
+- (void)dealloc;
+- (id)extendedData;
+- (id)context;
+- (void)setExtendedData:;
+- (void).cxx_destruct;
+- (void)setContext:;
+- (void)setOutputDelegate:;
+- (unsigned long long)mixerType;
+- (void)setMixerType:;
+@end

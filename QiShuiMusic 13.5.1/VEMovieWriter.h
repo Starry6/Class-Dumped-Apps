@@ -1,0 +1,2 @@
+@interface VEMovieWriter : NSObject
+@end

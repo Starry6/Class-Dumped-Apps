@@ -1,0 +1,38 @@
+@interface ASAuthorizationProviderExtensionAuthorizationRequest : NSObject
+@property (nonatomic) SOAuthorizationRequest authorizationRequest;
+@property (nonatomic) NSURL url;
+@property (nonatomic) NSString requestedOperation;
+@property (nonatomic) NSDictionary httpHeaders;
+@property (nonatomic) NSData httpBody;
+@property (nonatomic) NSString realm;
+@property (nonatomic) NSDictionary extensionData;
+@property (nonatomic) NSString callerBundleIdentifier;
+@property (nonatomic) NSDictionary authorizationOptions;
+@property (nonatomic) BOOL callerManaged;
+@property (nonatomic) NSString callerTeamIdentifier;
+@property (nonatomic) NSString localizedCallerDisplayName;
+@property (nonatomic) BOOL userInterfaceEnabled;
+- (void)complete;
+- (id)url;
+- (id)extensionData;
+- (void)cancel;
+- (id)realm;
+- (id)httpHeaders;
+- (id)httpBody;
+- (id)localizedCallerDisplayName;
+- (id)requestedOperation;
+- (void).cxx_destruct;
+- (id)callerBundleIdentifier;
+- (id)callerTeamIdentifier;
+- (BOOL)isCallerManaged;
+- (id)authorizationRequest;
+- (id)authorizationOptions;
+- (void)completeWithError:;
+- (id)initWithAuthorizationRequest:;
+- (void)doNotHandle;
+- (void)completeWithHTTPAuthorizationHeaders:;
+- (void)completeWithHTTPResponse:httpBody:;
+- (void)completeWithAuthorizationResult:;
+- (void)presentAuthorizationViewControllerWithCompletion:;
+- (BOOL)isUserInterfaceEnabled;
+@end

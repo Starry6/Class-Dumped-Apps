@@ -1,0 +1,31 @@
+@interface IESECWinFeedStatusSectionController : IESECWinListKitCellController
+@property (nonatomic) IESECWinDataController dataController;
+@property (nonatomic) IESECServiceProxy<IESECWinTabService> tabService;
+@property (nonatomic) IESECServiceProxy<IESECWinDataService> dataService;
+@property (nonatomic) IESECServiceProxy<IESECWinSplitService> splitService;
+@property (nonatomic) IESECServiceProxy<IESECWinTabLayoutService> tabLayoutService;
+@property (nonatomic) IESECServiceProxy<IESECWinDataStatusService> dataStatusService;
+@property (nonatomic) IESECServiceProxy<IESECWinCategoryService> categoryService;
+@property (nonatomic) IESECServiceProxy<IESECWinCommonTrackService> commonTrackService;
+- (void)setDataService:;
+- (id)categoryService;
+- (id)cellForItemAtIndex:;
+- (id)commonTrackService;
+- (id)dataService;
+- (id)dataStatusService;
+- (void)didUpdateToObject:;
+- (void)setCategoryService:;
+- (void)setCommonTrackService:;
+- (void)setDataController:;
+- (void)setDataStatusService:;
+- (void)setSplitService:;
+- (void)setTabLayoutService:;
+- (void)setTabService:;
+- (id)splitService;
+- (id)tabLayoutService;
+- (id)tabService;
+- (long long)numberOfItems;
+- (void).cxx_destruct;
+- (id)dataController;
+- (id)sizeForItemAtIndex:;
+@end

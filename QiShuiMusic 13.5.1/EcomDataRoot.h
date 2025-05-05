@@ -1,0 +1,2 @@
+@interface EcomDataRoot : GPBRootObject
+@end

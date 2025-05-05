@@ -1,0 +1,37 @@
+@interface PCSimpleTimer : NSObject
+@property (nonatomic) BOOL disableSystemWaking;
+@property (nonatomic) BOOL userVisible;
+- (BOOL)disableSystemWaking;
+- (void)scheduleInRunLoop:inMode:;
+- (void)scheduleInQueue:;
+- (void)scheduleInRunLoop:;
+- (BOOL)firingIsImminent;
+- (void)setDisableSystemWaking:;
+- (void)updateFireTime:triggerOnGMTChange:;
+- (void)dealloc;
+- (id)initWithFireDate:serviceIdentifier:target:selector:userInfo:;
+- (void)_preventSleepFired;
+- (void)setUserVisible:;
+- (id)userInfo;
+- (void)_updateTimers;
+- (void)_fireTimerFired;
+- (void)_setPowerMonitoringEnabled:;
+- (void)_significantTimeChange;
+- (void)_setSignificantTimeChangeMonitoringEnabled:;
+- (void)_powerNotificationSleepIsNotImminent;
+- (id)debugDescription;
+- (BOOL)isUserVisible;
+- (id)_getTimerMode;
+- (void)_invalidateAllowAsync:;
+- (BOOL)isValid;
+- (void).cxx_destruct;
+- (id)initWithAbsoluteTime:serviceIdentifier:target:selector:userInfo:triggerOnGMTChange:;
+- (id)initWithTimeInterval:serviceIdentifier:target:selector:userInfo:;
+- (void)_powerNotificationSleepIsImminent;
+- (void)_performBlockOnQueue:;
+- (void)invalidate;
+- (id)_getTimerRunLoop;
+- (void)_scheduleTimer;
++ (double)currentMachTimeInterval;
++ (id)lastSystemWakeDate;
+@end

@@ -1,0 +1,33 @@
+@interface CVAPortraitRequest : NSObject
+@property (nonatomic) NSInteger relightingCondition;
+@property (nonatomic) NSData backgroundColorCube;
+@property (nonatomic) NSData foregroundColorCube;
+@property (nonatomic) float colorCubeIntensity;
+@property (nonatomic) float simulatedFocalRatio;
+@property (nonatomic) float sourceColorGain;
+@property (nonatomic) float sourceColorLux;
+@property (nonatomic) CVAMattingRequest mattingRequest;
+@property (nonatomic) ^{__CVBuffer=} destinationColorPixelBuffer;
+@property (nonatomic) <CVAPortraitGenericRequest> parentGenericRequestFrom;
+@property (nonatomic) <CVAPortraitGenericRequest> parentGenericRequestTo;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (id)mattingRequest;
+- (id)destinationColorPixelBuffer;
+- (id)initWithMattingRequest:destinationColorPixelBuffer:backgroundColorCube:foregroundColorCube:colorCubeIntensity:simulatedFocalRatio:sourceColorGain:sourceColorLux:;
+- (id)parentGenericRequestFrom;
+- (void)setParentGenericRequestFrom:;
+- (id)parentGenericRequestTo;
+- (void)setParentGenericRequestTo:;
+- (int)relightingCondition;
+- (id)backgroundColorCube;
+- (id)foregroundColorCube;
+- (float)colorCubeIntensity;
+- (float)simulatedFocalRatio;
+- (float)sourceColorGain;
+- (float)sourceColorLux;
+@end

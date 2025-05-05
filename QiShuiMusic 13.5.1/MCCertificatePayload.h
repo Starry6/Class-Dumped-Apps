@@ -1,0 +1,35 @@
+@interface MCCertificatePayload : MCPayload
+@property (nonatomic) NSString installedOnDeviceID;
+@property (nonatomic) NSData certificatePersistentID;
+@property (nonatomic) BOOL isRoot;
+@property (nonatomic) BOOL isFullyTrustedRootCert;
+@property (nonatomic) BOOL isIdentity;
+@property (nonatomic) NSDate expiry;
+@property (nonatomic) BOOL isSigned;
+@property (nonatomic) BOOL isMDMClientIdentity;
+@property (nonatomic) NSString SMIMEEmailAddress;
+- (BOOL)isRoot;
+- (id)expiry;
+- (BOOL)isSigned;
+- (id)title;
+- (void).cxx_destruct;
+- (id)copyCertificate;
+- (id)verboseDescription;
+- (BOOL)isIdentity;
+- (id)issuer;
+- (id)initWithDictionary:profile:outError:;
+- (id)stubDictionary;
+- (id)subtitle1Label;
+- (id)subtitle1Description;
+- (id)subtitle2Label;
+- (id)subtitle2Description;
+- (id)copyIdentityFromKeychain;
+- (BOOL)isFullyTrustedRootCert;
+- (BOOL)isMDMClientIdentity;
+- (id)SMIMEEmailAddress;
+- (id)certificateSubject;
+- (id)certificatePersistentID;
+- (void)setCertificatePersistentID:;
+- (id)installedOnDeviceID;
+- (void)setInstalledOnDeviceID:;
+@end

@@ -1,0 +1,2 @@
+@interface PropMineApiRoot : GPBRootObject
+@end

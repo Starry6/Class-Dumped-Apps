@@ -1,0 +1,33 @@
+@interface CPLCodingPropertyEntry : NSObject
+@property (nonatomic) c propertyType;
+@property (nonatomic) NSSet propertyClasses;
+@property (nonatomic) : propertyGetter;
+@property (nonatomic) : propertySetter;
+@property (nonatomic) ^? propertyGetterIMP;
+@property (nonatomic) ^? propertySetterIMP;
+@property (nonatomic) ^{objc_ivar=} ivar;
+@property (nonatomic) BOOL readOnly;
+@property (nonatomic) NSString structName;
+- (BOOL)isReadOnly;
+- (void)setIvarValue:forObject:;
+- (void)setReadOnly:;
+- (id)propertyClasses;
+- (id)propertySetterIMP;
+- (void)setPropertySetterIMP:;
+- (char)propertyType;
+- (void)setPropertyGetter:;
+- (void)setPropertyClasses:;
+- (void)setIvar:;
+- (id)propertyGetterIMP;
+- (void)setPropertyGetterIMP:;
+- (void)setStructName:;
+- (SEL)propertySetter;
+- (id)ivarValueForObject:;
+- (id)ivar;
+- (id)structName;
+- (void).cxx_destruct;
+- (SEL)propertyGetter;
+- (void)setPropertyType:;
+- (void)setPropertySetter:;
+- (id)ivarAddrForObject:;
+@end

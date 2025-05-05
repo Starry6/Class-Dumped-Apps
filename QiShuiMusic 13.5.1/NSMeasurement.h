@@ -1,0 +1,38 @@
+@interface NSMeasurement : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSUnit unit;
+@property (nonatomic) double doubleValue;
+- (id)_intents_readableTitleWithLocalizer:metadata:;
+- (BOOL)_intents_compareValue:relation:;
+- (id)_intents_encodeWithJSONEncoder:codableDescription:;
+- (long long)compare:;
+- (BOOL)isGreaterThanOrEqualToMeasurement:;
+- (BOOL)isGreaterThanMeasurement:;
+- (BOOL)isLessThanMeasurement:;
+- (BOOL)isEqualToMeasurement:;
+- (BOOL)isLessThanOrEqualToMeasurement:;
+- (void)dealloc;
+- (double)doubleValue;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (id)unit;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)initWithDoubleValue:unit:;
+- (BOOL)canBeConvertedToUnit:;
+- (id)measurementByConvertingToUnit:;
+- (id)_performOperation:withMeasurement:;
+- (id)measurementByAddingMeasurement:;
+- (id)measurementBySubtractingMeasurement:;
++ (id)_intents_decodeWithJSONDecoder:codableDescription:from:;
++ (BOOL)supportsSecureCoding;
+@end

@@ -1,0 +1,36 @@
+@interface NWGenericNetworkAgent : NSObject
+@property (nonatomic) ^{netagent=[16C][32c][32c][128c]II[0C]} internalNetagent;
+@property (nonatomic) NSString privateDescription;
+@property (nonatomic) NSString agentDomain;
+@property (nonatomic) NSString agentType;
+@property (nonatomic) NSString agentDescription;
+@property (nonatomic) NSUUID agentUUID;
+@property (nonatomic) BOOL active;
+@property (nonatomic) BOOL kernelActivated;
+@property (nonatomic) BOOL userActivated;
+@property (nonatomic) BOOL voluntary;
+@property (nonatomic) BOOL specificUseOnly;
+@property (nonatomic) BOOL networkProvider;
+- (id)descriptionWithIndent:showFullContent:;
+- (void)dealloc;
+- (id)agentType;
+- (BOOL)supportsGroups;
+- (id)privateDescription;
+- (id)agentDomain;
+- (id)description;
+- (BOOL)isUserActivated;
+- (BOOL)isVoluntary;
+- (BOOL)isKernelActivated;
+- (id)agentUUID;
+- (id)agentDescription;
+- (BOOL)isActive;
+- (BOOL)isSpecificUseOnly;
+- (BOOL)isNetworkProvider;
+- (BOOL)isNexusProvider;
+- (BOOL)requiresAssert;
+- (id)initWithKernelAgent:;
+- (BOOL)supportsBrowse;
+- (BOOL)supportsResolve;
+- (id)internalNetagent;
+- (void)setInternalNetagent:;
+@end

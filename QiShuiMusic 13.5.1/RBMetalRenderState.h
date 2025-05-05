@@ -1,0 +1,33 @@
+@interface RBMetalRenderState : NSObject
+@property (nonatomic) I flags;
+@property (nonatomic) NSInteger blendMode;
+@property (nonatomic) float alpha;
+@property (nonatomic) <MTLCommandBuffer> commandBuffer;
+@property (nonatomic) MTLRenderPassDescriptor descriptor;
+@property (nonatomic) Q formatKey;
+@property (nonatomic) <MTLRenderCommandEncoder> encoder;
+@property (nonatomic) {CGSize=dd} size;
+@property (nonatomic) {?=QQQQ} bounds;
+@property (nonatomic) {CGAffineTransform=dddddd} CTM;
+- (id)CTM;
+- (id)descriptor;
+- (id)commandBuffer;
+- (void)dealloc;
+- (void)setEncoder:;
+- (void)setDescriptor:;
+- (id)encoder;
+- (void)setAlpha:;
+- (void)setBlendMode:;
+- (float)alpha;
+- (void)setBounds:;
+- (int)blendMode;
+- (void)setCTM:;
+- (void)setFlags:;
+- (id)bounds;
+- (unsigned int)flags;
+- (void)setCommandBuffer:;
+- (void)setSize:;
+- (id)size;
+- (unsigned long long)formatKey;
+- (void)setFormatKey:;
+@end

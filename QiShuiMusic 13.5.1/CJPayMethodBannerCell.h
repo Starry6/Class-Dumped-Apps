@@ -1,0 +1,35 @@
+@interface CJPayMethodBannerCell : UITableViewCell
+@property (nonatomic) UIView bannerView;
+@property (nonatomic) UILabel bannerTextLabel;
+@property (nonatomic) CJPayButton bannerButton;
+@property (nonatomic) NSString labelAction;
+@property (nonatomic) CJPayChannelBizModel bizModel;
+@property (nonatomic) Q type;
+@property (nonatomic) CJPayButton combinePayButton;
+@property (nonatomic) @? clickBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)bannerTextLabel;
+- (void)setLabelAction:;
+- (id)bannerButton;
+- (id)bizModel;
+- (id)clickBlock;
+- (id)combinePayButton;
+- (id)labelAction;
+- (void)p_bannerButtonClick;
+- (void)p_setupUI;
+- (void)setBannerButton:;
+- (void)setBannerTextLabel:;
+- (void)setBizModel:;
+- (void)setClickBlock:;
+- (id)initWithStyle:reuseIdentifier:;
+- (void)setType:;
+- (unsigned long long)type;
+- (void).cxx_destruct;
+- (id)bannerView;
+- (void)setBannerView:;
+- (void)updateContent:;
++ (id)calHeight:;
+@end

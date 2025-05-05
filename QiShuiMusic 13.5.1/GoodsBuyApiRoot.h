@@ -1,0 +1,2 @@
+@interface GoodsBuyApiRoot : GPBRootObject
+@end

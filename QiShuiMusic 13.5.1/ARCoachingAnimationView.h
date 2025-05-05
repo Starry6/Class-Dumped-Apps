@@ -1,0 +1,31 @@
+@interface ARCoachingAnimationView : UIView
+@property (nonatomic) q animationState;
+@property (nonatomic) BOOL isDeactivating;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setAnimationState:;
+- (long long)animationState;
+- (id)intrinsicContentSize;
+- (void)layoutSubviews;
+- (id)initWithCoder:;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)setupView;
+- (void)orientationChanged;
+- (BOOL)isDeactivating;
+- (void)resizeForDrawable:;
+- (void)updateForCurrentTime:timeDelta:;
+- (void)drawInDrawable:withCommandBuffer:timeDelta:;
+- (void)startCoachingAnimation:;
+- (void)killCoachingAnimation;
+- (void)updateWithFrame:motionTracker:;
+- (void)updateCubeRotation:motionTracker:;
+- (void)clampCubeToQuarterRotation;
+- (double)calcNextAnimationSwitchTime:forState:;
+- (void)updateAlternatingPlanes:;
+- (void)updateVerticalClamp:;
+- (void)updateMetalLayer;
+- (void)setIsDeactivating:;
+@end

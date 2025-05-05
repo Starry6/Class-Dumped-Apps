@@ -1,0 +1,34 @@
+@interface IESLiveLayoutRulesController : NSObject
+@property (nonatomic) IESLiveStackView view;
+@property (nonatomic) NSMutableDictionary items;
+@property (nonatomic) NSMutableArray itemArray;
+@property (nonatomic) NSArray rules;
+@property (nonatomic) q limit;
+@property (nonatomic) BOOL reversed;
+@property (nonatomic) BOOL disabled;
+- (void)bindingView:;
+- (BOOL)canInsertType:;
+- (void)enumerateArrangedItemsUsingBlock:;
+- (void)enumerateArrangedViewsUsingBlock:;
+- (BOOL)isAllowList:;
+- (id)itemArray;
+- (void)relimitItems;
+- (void)setItemArray:;
+- (void)setReversed:;
+- (void)removeItem:;
+- (long long)limit;
+- (void)setDisabled:;
+- (id)init;
+- (id)items;
+- (id)rules;
+- (BOOL)reversed;
+- (BOOL)disabled;
+- (void)setLimit:;
+- (void)insertItem:;
+- (id)view;
+- (void)setRules:;
+- (void)setItems:;
+- (void).cxx_destruct;
+- (void)setView:;
+- (id)itemForType:;
+@end

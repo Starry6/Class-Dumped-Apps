@@ -1,0 +1,31 @@
+@interface CSJAdSDKConfiguration : NSObject
+@property (nonatomic) NSString abvidString;
+@property (nonatomic) NSArray inherentUserData;
+@property (nonatomic) NSString unitySetString;
+@property (nonatomic) NSString unityEVString;
+@property (nonatomic) Q audioSessionType;
+@property (nonatomic) NSString appID;
+@property (nonatomic) NSString secretKey;
+@property (nonatomic) q ageGroup;
+@property (nonatomic) NSString userExtData;
+@property (nonatomic) q webViewOfflineType;
+@property (nonatomic) NSNumber debugLog;
+@property (nonatomic) NSNumber themeStatus;
+@property (nonatomic) NSArray abvids;
+@property (nonatomic) NSString abSDKVersion;
+@property (nonatomic) NSString customIdfa;
+@property (nonatomic) BOOL allowModifyAudioSessionSetting;
+@property (nonatomic) Q audioSessionSetType;
+@property (nonatomic) BOOL unityDeveloper;
+@property (nonatomic) <CSJAdSDKPrivacyProvider> privacyProvider;
+@property (nonatomic) UIImage appLogoImage;
+@property (nonatomic) BOOL SDKDEBUG;
+@property (nonatomic) BOOL useMediation;
+@property (nonatomic) CTTelephonyNetworkInfo customNetworkInfo;
+@property (nonatomic) BOOL unionTTSDK;
+- (id)customNetworkInfo;
+- (void)setCustomNetworkInfo:;
+- (void).cxx_destruct;
+- (id)forwardingTargetForSelector:;
++ (id)forwardingTargetForSelector:;
+@end

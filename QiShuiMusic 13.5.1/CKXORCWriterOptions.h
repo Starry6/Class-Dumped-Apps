@@ -1,0 +1,32 @@
+@interface CKXORCWriterOptions : NSObject
+@property (nonatomic) double batchCommitMarginPercentage;
+@property (nonatomic) Q batchResizeIncrement;
+@property (nonatomic) Q compressionBlockSize;
+@property (nonatomic) q compressionKind;
+@property (nonatomic) Q stripeSize;
+@property (nonatomic) BOOL testRowsInterspersedWithNulls;
+@property (nonatomic) NSString testExceptionDuringCommitBatch;
+@property (nonatomic) Q testExceptionDuringCommitBatchCommitsToSkip;
+@property (nonatomic) Q batchSize;
+- (id)init;
+- (unsigned long long)batchSize;
+- (void)setBatchSize:;
+- (void).cxx_destruct;
+- (id)initWithBatchSize:;
+- (double)batchCommitMarginPercentage;
+- (void)setBatchCommitMarginPercentage:;
+- (unsigned long long)batchResizeIncrement;
+- (void)setBatchResizeIncrement:;
+- (unsigned long long)compressionBlockSize;
+- (void)setCompressionBlockSize:;
+- (long long)compressionKind;
+- (void)setCompressionKind:;
+- (unsigned long long)stripeSize;
+- (void)setStripeSize:;
+- (BOOL)testRowsInterspersedWithNulls;
+- (void)setTestRowsInterspersedWithNulls:;
+- (id)testExceptionDuringCommitBatch;
+- (void)setTestExceptionDuringCommitBatch:;
+- (unsigned long long)testExceptionDuringCommitBatchCommitsToSkip;
+- (void)setTestExceptionDuringCommitBatchCommitsToSkip:;
+@end

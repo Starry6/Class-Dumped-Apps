@@ -1,0 +1,37 @@
+@interface IESLiveSaaSCameraFragment : IESLiveRoomComponent
+@property (nonatomic) IESLiveSaaSLiveRoomModel roomModel;
+@property (nonatomic) <IESLiveSaaSRealStreamingProvider> streamProvider;
+@property (nonatomic) <IESLivePerfSampler> perfSampler;
+@property (nonatomic) BOOL enableMirror;
+@property (nonatomic) BOOL enableTorch;
+@property (nonatomic) BOOL mirrored;
+@property (nonatomic) q cameraPosition;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)loadToolbarItem;
+- (void)setPerfSampler:;
+- (void)setEnableTorch:;
+- (void)componentDidMount;
+- (void)componentWillUnmount;
+- (void)didSetAttachingDIContext;
+- (BOOL)enableMirror;
+- (BOOL)enableTorch;
+- (void)mirrorButtonClicked;
+- (id)perfSampler;
+- (id)roomModel;
+- (void)setEnableMirror:;
+- (void)setRoomModel:;
+- (BOOL)toggleMirrored;
+- (void)toggleReversed;
+- (id)streamProvider;
+- (void)setMirrored:;
+- (long long)cameraPosition;
+- (void)setStreamProvider:;
+- (void).cxx_destruct;
+- (BOOL)mirrored;
+- (void)setCameraPosition:;
+- (id)initWithRoom:;
++ (id)componentWithRoom:trackContext:componentContext:;
+@end

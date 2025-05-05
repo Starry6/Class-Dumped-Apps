@@ -1,0 +1,33 @@
+@interface CEMMediaInstallDeclaration : CEMConfigurationBase
+@property (nonatomic) NSString payloadMedia;
+@property (nonatomic) NSNumber payloadMandatory;
+@property (nonatomic) NSNumber payloadInstallWhenActivated;
+@property (nonatomic) NSNumber payloadRemoveWhenDeactivated;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (BOOL)multipleAllowed;
+- (BOOL)mustBeSupervised;
+- (int)activationLevel;
+- (id)assetReferences;
+- (BOOL)loadPayload:error:;
+- (id)serializePayloadWithAssetProviders:;
+- (id)payloadMandatory;
+- (void)setPayloadMandatory:;
+- (id)payloadInstallWhenActivated;
+- (void)setPayloadInstallWhenActivated:;
+- (id)payloadRemoveWhenDeactivated;
+- (void)setPayloadRemoveWhenDeactivated:;
+- (id)payloadMedia;
+- (void)setPayloadMedia:;
++ (id)profileType;
++ (id)registeredClassName;
++ (id)registeredIdentifier;
++ (id)allowedPayloadKeys;
++ (id)restrictionPayloadKeys;
++ (id)buildWithIdentifier:withMedia:withMandatory:withInstallWhenActivated:withRemoveWhenDeactivated:;
++ (id)buildRequiredOnlyWithIdentifier:withMedia:withMandatory:;
+@end

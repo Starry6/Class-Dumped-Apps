@@ -1,0 +1,34 @@
+@interface FPOperation : NSOperation
+@property (nonatomic) BOOL executing;
+@property (nonatomic) BOOL finished;
+@property (nonatomic) <FPCancellable> remoteOperation;
+@property (nonatomic) NSObject<OS_dispatch_queue> callbackQueue;
+@property (nonatomic) @? finishedBlock;
+- (id)init;
+- (void)cancel;
+- (void)dealloc;
+- (void)setCancellationHandler:;
+- (void)start;
+- (BOOL)isExecuting;
+- (void)setCallbackQueue:;
+- (id)callbackQueue;
+- (id)operationDescription;
+- (void)setFinishedBlock:;
+- (BOOL)isFinished;
+- (void).cxx_destruct;
+- (id)description;
+- (id)finishedBlock;
+- (void)finishWithResult:error:;
+- (void)invalidate;
+- (void)_setFinished:;
+- (void)_setExecuting:;
+- (BOOL)_finishIfCancelled;
+- (BOOL)finishIfCancelled;
+- (void)completedWithResult:error:;
+- (id)remoteOperation;
+- (void)setRemoteOperation:;
+- (id)proxifiedDescription;
+- (void)operationDidProgressWithInfo:error:completionHandler:;
+- (void)resetRemoteOperation;
+- (void)_setRemoteCancellationHandler:;
+@end

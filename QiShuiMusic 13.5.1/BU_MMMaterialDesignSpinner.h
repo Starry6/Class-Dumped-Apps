@@ -1,0 +1,32 @@
+@interface BU_MMMaterialDesignSpinner : UIView
+@property (nonatomic) CAShapeLayer progressLayer;
+@property (nonatomic) BOOL isAnimating;
+@property (nonatomic) double lineWidth;
+@property (nonatomic) BOOL hidesWhenStopped;
+@property (nonatomic) CAMediaTimingFunction timingFunction;
+@property (nonatomic) double duration;
+- (void)resetAnimations;
+- (void)setAnimating:;
+- (void)setLineWidth:;
+- (void)initialize;
+- (double)lineWidth;
+- (void)dealloc;
+- (BOOL)isAnimating;
+- (void)setTimingFunction:;
+- (void)layoutSubviews;
+- (void)awakeFromNib;
+- (id)initWithCoder:;
+- (void)tintColorDidChange;
+- (void)startAnimating;
+- (void)setDuration:;
+- (id)timingFunction;
+- (id)initWithFrame:;
+- (void)stopAnimating;
+- (void).cxx_destruct;
+- (double)duration;
+- (void)setIsAnimating:;
+- (void)setHidesWhenStopped:;
+- (BOOL)hidesWhenStopped;
+- (void)updatePath;
+- (id)progressLayer;
+@end

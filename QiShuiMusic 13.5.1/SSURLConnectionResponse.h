@@ -1,0 +1,36 @@
+@interface SSURLConnectionResponse : NSObject
+@property (nonatomic) BOOL ssv_isExpiredResponse;
+@property (nonatomic) NSData databaseEncoding;
+@property (nonatomic) SSMetricsPageEvent metricsPageEvent;
+@property (nonatomic) NSString storeCorrelationID;
+@property (nonatomic) NSHTTPURLResponse URLResponse;
+@property (nonatomic) NSData bodyData;
+@property (nonatomic) q expectedContentLength;
+@property (nonatomic) NSString MIMEType;
+@property (nonatomic) NSString suggestedFilename;
+@property (nonatomic) NSString textEncodingName;
+@property (nonatomic) NSURL URL;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithXPCEncoding:;
+- (long long)statusCode;
+- (void)dealloc;
+- (id)copyXPCEncoding;
+- (id)bodyData;
+- (id)metricsPageEvent;
+- (id)URLResponse;
+- (id)URL;
+- (id)MIMEType;
+- (id)allHeaderFields;
+- (long long)expectedContentLength;
+- (id)textEncodingName;
+- (id)suggestedFilename;
+- (id)storeCorrelationID;
+- (BOOL)ssv_isExpiredResponse;
+- (id)initWithDatabaseEncoding:;
+- (id)databaseEncoding;
+- (id)initWithURLResponse:bodyData:;
+- (void)setMetricsPageEvent:;
+@end

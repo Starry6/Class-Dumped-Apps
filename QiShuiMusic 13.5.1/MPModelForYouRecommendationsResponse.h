@@ -1,0 +1,2 @@
+@interface MPModelForYouRecommendationsResponse : MPModelResponse
+@end

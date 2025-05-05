@@ -1,0 +1,30 @@
+@interface AMSSyncPasswordSettingsTask : AMSTask
+@property (nonatomic) ACAccount account;
+@property (nonatomic) <AMSBagProtocol> bag;
+@property (nonatomic) AMSProcessInfo clientInfo;
+@property (nonatomic) <NSURLSessionDelegate><AMSURLProtocolDelegate> delegate;
+@property (nonatomic) Q freeSetting;
+@property (nonatomic) Q paidSetting;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)account;
+- (void)setClientInfo:;
+- (id)clientInfo;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)bag;
+- (id)performSync;
+- (id)initWithAccount:freeSetting:paidSetting:delegate:bag:;
+- (unsigned long long)freeSetting;
+- (unsigned long long)paidSetting;
++ (id)createBagForSubProfile;
++ (id)bagSubProfileVersion;
++ (id)bagSubProfile;
++ (id)bagKeySet;
++ (id)serverValueForFreePasswordSetting:;
++ (id)serverValueForPaidPasswordSetting:;
++ (unsigned long long)freePasswordSettingFromServerValue:;
++ (unsigned long long)paidPasswordSettingFromServerValue:;
+@end

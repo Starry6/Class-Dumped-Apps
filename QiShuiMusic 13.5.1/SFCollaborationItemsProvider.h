@@ -1,0 +1,34 @@
+@interface SFCollaborationItemsProvider : NSObject
+@property (nonatomic) NSArray collaborationItems;
+@property (nonatomic) _SFCollaborationItemsRequest currentRequest;
+@property (nonatomic) BOOL supportsMultipleCollaboration;
+@property (nonatomic) NSArray activityItems;
+@property (nonatomic) <SFCollaborationItemsProviderDelegate> delegate;
+@property (nonatomic) BOOL multipleCollaborationItems;
+@property (nonatomic) NSArray placeholderActivityItems;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setCurrentRequest:;
+- (void)setDelegate:;
+- (id)currentRequest;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)activityItems;
+- (id)initWithActivityItems:;
+- (id)initWithActivityItems:delegate:;
+- (BOOL)multipleCollaborationItems;
+- (void)setActivityItems:;
+- (id)collaborationItems;
+- (BOOL)supportsMultipleCollaboration;
+- (void)setCollaborationItems:;
+- (id)collaborationItemsRequest:resolveActivityItem:;
+- (id)collaborationServiceForItemsRequest:;
+- (id)activityItemsForActivity:collaborationResult:;
+- (id)activityItemsForActivity:collaborationResult:isCollaborative:;
+- (id)collaborationItemForActivityItem:;
+- (id)placeholderActivityItems;
+- (void)_updateCollaborationItems;
+- (void)_didCompleteCollaborationItems:;
+@end

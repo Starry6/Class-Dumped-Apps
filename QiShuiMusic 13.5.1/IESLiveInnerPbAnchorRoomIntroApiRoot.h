@@ -1,0 +1,2 @@
+@interface IESLiveInnerPbAnchorRoomIntroApiRoot : GPBRootObject
+@end

@@ -1,0 +1,33 @@
+@interface CEMPredicateWeeklyTimeRange : CEMPredicateBase
+@property (nonatomic) NSString payloadCalendarIdentifier;
+@property (nonatomic) NSNumber payloadStartDay;
+@property (nonatomic) NSString payloadStartTime;
+@property (nonatomic) NSNumber payloadEndDay;
+@property (nonatomic) NSString payloadEndTime;
+@property (nonatomic) NSArray payloadNotificationTimes;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (BOOL)loadPayload:error:;
+- (id)serializePayloadWithAssetProviders:;
+- (id)payloadStartTime;
+- (void)setPayloadStartTime:;
+- (id)payloadEndTime;
+- (void)setPayloadEndTime:;
+- (id)payloadCalendarIdentifier;
+- (void)setPayloadCalendarIdentifier:;
+- (id)payloadNotificationTimes;
+- (void)setPayloadNotificationTimes:;
+- (id)payloadStartDay;
+- (void)setPayloadStartDay:;
+- (id)payloadEndDay;
+- (void)setPayloadEndDay:;
++ (id)buildWithCalendarIdentifier:withStartDay:withStartTime:withEndDay:withEndTime:withNotificationTimes:;
++ (id)registeredClassName;
++ (id)registeredIdentifier;
++ (id)allowedPayloadKeys;
++ (id)buildRequiredOnlyWithStartDay:withStartTime:withEndDay:withEndTime:;
+@end

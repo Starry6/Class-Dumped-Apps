@@ -1,0 +1,2 @@
+@interface SFSharablePasswordReceiver : NSObject
+@end

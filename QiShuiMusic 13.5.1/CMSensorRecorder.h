@@ -1,0 +1,31 @@
+@interface CMSensorRecorder : NSObject
+- (BOOL)setSensorSampleRate:forType:;
+- (id)accelerometerDataSinceId:;
+- (id)gyroDataSinceId:;
+- (id)pressureDataSinceId:;
+- (id)accelerometerDataFromDate:toDate:;
+- (id)gyroDataFromDate:toDate:;
+- (id)pressureDataFromDate:toDate:;
+- (BOOL)validateTimesFromDate:toDate:;
+- (id)sensorDataFromDate:toDate:forType:;
+- (BOOL)sendAccelDataToUrl:fromDate:toDate:;
+- (BOOL)sendGyroDataToUrl:fromDate:toDate:;
+- (BOOL)sendPressureDataToUrl:fromDate:toDate:;
+- (BOOL)sendSensorDataToUrl:fromDate:toDate:forType:;
+- (void)recordAccelerometerForDuration:;
+- (void)recordGyroForDuration:;
+- (void)recordPressureForDuration:;
+- (void)recordDataType:forDuration:;
+- (id)accelerometerDataFrom:to:;
+- (void)recordAccelerometerFor:;
+- (id)accelerometerDataSince:;
+- (BOOL)setAccelSampleRate:;
+- (BOOL)setGyroSampleRate:;
+- (BOOL)setPressureSampleRate:;
++ (long long)authorizationStatus;
++ (BOOL)isRecordingAvailableForType:;
++ (BOOL)isAccelerometerRecordingAvailable;
++ (BOOL)isGyroRecordingAvailable;
++ (BOOL)isPressureRecordingAvailable;
++ (BOOL)isAuthorizedForRecording;
+@end

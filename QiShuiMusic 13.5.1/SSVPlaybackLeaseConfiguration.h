@@ -1,0 +1,37 @@
+@interface SSVPlaybackLeaseConfiguration : NSObject
+@property (nonatomic) q leaseType;
+@property (nonatomic) NSURL beginLeaseURL;
+@property (nonatomic) NSURL certificateURL;
+@property (nonatomic) NSURL getAssetURL;
+@property (nonatomic) NSURL refreshLeaseURL;
+@property (nonatomic) NSURL pastisCertificateURL;
+@property (nonatomic) NSURL pastisKeyServerURL;
+@property (nonatomic) NSURL provisionMachineURL;
+@property (nonatomic) NSURL syncMachineURL;
+@property (nonatomic) NSString storeFrontSuffix;
+- (id)storeFrontSuffix;
+- (id)pastisKeyServerURL;
+- (void)setStoreFrontSuffix:;
+- (id)syncMachineURL;
+- (void).cxx_destruct;
+- (id)getAssetURL;
+- (id)pastisCertificateURL;
+- (id)certificateURL;
+- (void)setGetAssetURL:;
+- (id)initWithURLBagDictionary:;
+- (id)copyWithZone:;
+- (void)setCertificateURL:;
+- (id)initWithCertificateURL:leaseURL:pastisKeyServerURL:provisionMachineURL:storeFrontSuffix:syncMachineURL:;
+- (id)initWithCertificateURL:leaseType:leaseURL:pastisKeyServerURL:provisionMachineURL:storeFrontSuffix:syncMachineURL:;
+- (id)initWithURLBagDictionary:leaseType:;
+- (id)beginLeaseURL;
+- (void)setBeginLeaseURL:;
+- (long long)leaseType;
+- (id)provisionMachineURL;
+- (void)setProvisionMachineURL:;
+- (id)refreshLeaseURL;
+- (void)setRefreshLeaseURL:;
+- (void)setSyncMachineURL:;
+- (void)setPastisCertificateURL:;
+- (void)setPastisKeyServerURL:;
+@end

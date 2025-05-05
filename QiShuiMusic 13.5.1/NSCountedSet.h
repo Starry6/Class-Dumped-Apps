@@ -1,0 +1,32 @@
+@interface NSCountedSet : NSMutableSet
+@property (nonatomic) @ safari_highestFrequencyObject;
+- (void)HMDP_removeObject:;
+- (void)HMDP_addObject:;
+- (id)ef_mostCommonObjects;
+- (id)ef_leastCommonObjects;
+- (id)safari_highestFrequencyObject;
+- (id)na_mostCommonObject;
+- (unsigned long long)countForObject:;
+- (id)init;
+- (void)dealloc;
+- (id)initWithSet:copyItems:;
+- (void)getObjects:count:;
+- (unsigned long long)countByEnumeratingWithState:objects:count:;
+- (id)initWithCoder:;
+- (void)addObject:;
+- (void)removeAllObjects;
+- (void)removeObject:;
+- (id)descriptionWithLocale:;
+- (void)encodeWithCoder:;
+- (id)member:;
+- (id)initWithArray:;
+- (id)initWithObjects:count:;
+- (id)initWithSet:;
+- (id)objectEnumerator;
+- (Class)classForCoder;
+- (id)mutableCopyWithZone:;
+- (unsigned long long)count;
+- (id)initWithCapacity:;
+- (id)copyWithZone:;
++ (BOOL)supportsSecureCoding;
+@end

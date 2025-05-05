@@ -1,0 +1,32 @@
+@interface IESForestMemoryCache : NSObject
+@property (nonatomic) q cacheLimit;
+@property (nonatomic) NSCache sharedCache;
+@property (nonatomic) {_opaque_pthread_mutex_t=q[56c]} keysLock;
+@property (nonatomic) NSMutableSet cacheKeys;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)cleanCacheForAccessKey:channel:;
+- (id)responseForKey:;
+- (void)gurdDidFinishApplyingPackageForAccessKey:channel:succeed:error:;
+- (void)gurdDidCleanCachePackageForAccessKey:channel:;
+- (id)keysLock;
+- (void)removeResponseForKey:;
+- (void)setCacheKeys:;
+- (void)setKeysLock:;
+- (void)setResponse:forKey:;
+- (void)updateCacheLimit:;
+- (void)removeAll;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (void)setCacheLimit:;
+- (void)cache:willEvictObject:;
+- (void)setSharedCache:;
+- (id)sharedCache;
+- (id)cacheKeys;
+- (long long)cacheLimit;
++ (void)updateCacheLimit:;
++ (id)sharedInstance;
+@end

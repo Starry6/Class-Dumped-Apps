@@ -1,0 +1,38 @@
+@interface CPLMomentSharePreviewData : PBCodable
+@property (nonatomic) NSMutableArray previewImageDatas;
+@property (nonatomic) BOOL hasKeyAssetIdentifier;
+@property (nonatomic) NSString keyAssetIdentifier;
+@property (nonatomic) BOOL hasCropRectString;
+@property (nonatomic) NSString cropRectString;
+@property (nonatomic) NSMutableArray curatedAssetIdentifiers;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setCropRectString:;
+- (id)cropRectString;
+- (id)previewImageDatas;
+- (void)setKeyAssetIdentifier:;
+- (void)addPreviewImageData:;
+- (id)keyAssetIdentifier;
+- (id)curatedAssetIdentifiers;
+- (void)setCuratedAssetIdentifiers:;
+- (void)clearPreviewImageDatas;
+- (unsigned long long)previewImageDatasCount;
+- (id)previewImageDataAtIndex:;
+- (BOOL)hasKeyAssetIdentifier;
+- (BOOL)hasCropRectString;
+- (void)clearCuratedAssetIdentifiers;
+- (void)addCuratedAssetIdentifiers:;
+- (unsigned long long)curatedAssetIdentifiersCount;
+- (id)curatedAssetIdentifiersAtIndex:;
+- (void)setPreviewImageDatas:;
++ (Class)previewImageDataType;
++ (Class)curatedAssetIdentifiersType;
+@end

@@ -1,0 +1,36 @@
+@interface OBPasscodeViewController : OBWelcomeController
+@property (nonatomic) OBPasscodeInputView passcodeInputView;
+@property (nonatomic) NSLayoutConstraint contentViewTopConstraint;
+@property (nonatomic) NSLayoutConstraint contentViewBottomConstraint;
+@property (nonatomic) BOOL requiresCompletion;
+@property (nonatomic) <OBPasscodeViewControllerDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)viewWillTransitionToSize:withTransitionCoordinator:;
+- (void)setDelegate:;
+- (void)viewDidDisappear:;
+- (void)viewWillDisappear:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)viewWillAppear:;
+- (void)loadView;
+- (void)viewDidLoad;
+- (id)contentViewTopConstraint;
+- (void)setContentViewTopConstraint:;
+- (id)contentViewBottomConstraint;
+- (void)setContentViewBottomConstraint:;
+- (void)passcodeInput:enteredPasscode:;
+- (void)passcodeInput:willChangeContents:;
+- (void)_completionTapped:;
+- (void)setPasscodeInputView:;
+- (void)configureForPasscodeEntry:length:;
+- (void)clearPasscodeEntry;
+- (void)shakePasscodeEntry;
+- (void)_updateCompletionButtonEnabledStateForPasscode:;
+- (double)_verticalPaddingForInputView;
+- (id)passcodeInputView;
+- (BOOL)requiresCompletion;
+- (void)setRequiresCompletion:;
+@end

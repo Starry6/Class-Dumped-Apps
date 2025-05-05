@@ -1,0 +1,35 @@
+@interface TTVideoEngineAuthTimer : NSObject
+@property (nonatomic) TTVideoEngineTimeCalibration timeCalibration;
+@property (nonatomic) TTVideoEngineSTSAuth stsAuth;
+@property (nonatomic) NSRunLoop currentRunLoop;
+@property (nonatomic) NSMutableDictionary stsAuthDic;
+@property (nonatomic) NSMutableDictionary stsTimerDic;
+@property (nonatomic) <TTVideoEngineAuthTimerProtocol> delegate;
+@property (nonatomic) q continuousExpCount;
+- (void)setStsTimerDic:;
+- (id)stsAuth;
+- (long long)continuousExpCount;
+- (id)getAuth:;
+- (void)notifyUpdate:;
+- (void)postUpdate:timeToUpdate:;
+- (void)setAuth:projectTag:stopUpdate:;
+- (void)setAuthTimerListener:;
+- (void)setContinuousExpCount:;
+- (void)setCurrentRunLoop:;
+- (void)setStsAuth:;
+- (void)setStsAuthDic:;
+- (id)stsAuthDic;
+- (id)stsTimerDic;
+- (id)init;
+- (void)cancel;
+- (void)dealloc;
+- (void)setDelegate:;
+- (void)setTag:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)currentRunLoop;
+- (id)timeCalibration;
+- (void)setTimeCalibration:;
++ (long long)getSeconds:Pattern:;
++ (id)sharedInstance;
+@end

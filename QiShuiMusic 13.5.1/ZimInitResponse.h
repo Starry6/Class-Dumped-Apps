@@ -1,0 +1,31 @@
+@interface ZimInitResponse : NSObject
+@property (nonatomic) NSInteger retCode;
+@property (nonatomic) NSString message;
+@property (nonatomic) NSString zimId;
+@property (nonatomic) NSString protocol;
+@property (nonatomic) NSDictionary extParams;
+@property (nonatomic) NSString retCodeSub;
+@property (nonatomic) NSString retMessageSub;
+@property (nonatomic) NSString WishContent;
+@property (nonatomic) NSString ImageCount;
+- (int)retCode;
+- (id)ImageCount;
+- (void)setWishContent:;
+- (id)WishContent;
+- (id)extParams;
+- (id)retCodeSub;
+- (id)retMessageSub;
+- (void)setExtParams:;
+- (void)setRetCode:;
+- (void)setRetCodeSub:;
+- (void)setRetMessageSub:;
+- (void)setZimId:;
+- (id)zimId;
+- (id)protocol;
+- (void)setProtocol:;
+- (void)setMessage:;
+- (id)message;
+- (void).cxx_destruct;
+- (void)setImageCount:;
++ (Class)extParamsElementClass;
+@end

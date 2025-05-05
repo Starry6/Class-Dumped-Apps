@@ -1,0 +1,2 @@
+@interface RBSAppNapPreventSuppressedCPUGrant : RBSAppNapGrant
+@end

@@ -1,0 +1,13 @@
+@interface ASDExternalManifestResponse : ASDRequestResponse
+@property (nonatomic) NSError error;
+@property (nonatomic) NSArray results;
+@property (nonatomic) BOOL success;
+- (id)initWithResults:;
+- (id)init;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (id)results;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
++ (BOOL)supportsSecureCoding;
+@end

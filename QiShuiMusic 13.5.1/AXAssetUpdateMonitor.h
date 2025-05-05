@@ -1,0 +1,33 @@
+@interface AXAssetUpdateMonitor : NSObject
+@property (nonatomic) AXAssetController assetController;
+@property (nonatomic) AXAssetPolicy assetPolicy;
+@property (nonatomic) BOOL userInitiated;
+@property (nonatomic) BOOL hasInProgressDownloads;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setUserInitiated:;
+- (void)stop;
+- (BOOL)hasInProgressDownloads;
+- (void)assetController:didFinishDownloadingAsset:wasSuccessful:error:hasRemainingDownloads:;
+- (id)assetPolicy;
+- (void)logInfo:;
+- (void).cxx_destruct;
+- (void)setAssetController:;
+- (id)description;
+- (id)assetController;
+- (BOOL)userInitiated;
+- (void)assetController:didFinishRefreshingAssets:wasSuccessful:error:;
+- (id)_initWithAssetPolicy:qosClass:targetQueue:;
+- (void)refreshAssetsAfterDelay:;
+- (void)addUpdateObserver:;
+- (void)removeUpdateObserver:;
+- (void)_updateCachedInstalledAssets:;
+- (void)_performWithinLock:;
+- (void)_workerQueue_refreshAssetsAfterDelay:canRefreshCatalog:;
+- (id)_purgeUnneededAssetsFromInstalledAssets:;
++ (id)assetMonitorWithPolicy:;
++ (id)assetMonitorWithPolicy:qosClass:;
++ (id)assetMonitorWithPolicy:qosClass:targetQueue:;
+@end

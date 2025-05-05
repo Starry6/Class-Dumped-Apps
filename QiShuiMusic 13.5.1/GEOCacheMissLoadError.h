@@ -1,0 +1,34 @@
+@interface GEOCacheMissLoadError : PBCodable
+@property (nonatomic) BOOL hasErrorDomain;
+@property (nonatomic) NSString errorDomain;
+@property (nonatomic) BOOL hasErrorCode;
+@property (nonatomic) NSInteger errorCode;
+@property (nonatomic) BOOL hasCount;
+@property (nonatomic) I count;
+- (id)errorDomain;
+- (void)setCount:;
+- (BOOL)hasErrorCode;
+- (void)readAll:;
+- (int)errorCode;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)setErrorDomain:;
+- (BOOL)hasErrorDomain;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void)setHasErrorCode:;
+- (void)setErrorCode:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (unsigned int)count;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setHasCount:;
+- (BOOL)hasCount;
++ (BOOL)isValid:;
+@end

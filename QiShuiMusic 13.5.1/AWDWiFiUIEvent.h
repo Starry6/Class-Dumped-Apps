@@ -1,0 +1,35 @@
+@interface AWDWiFiUIEvent : PBCodable
+@property (nonatomic) BOOL hasTimestamp;
+@property (nonatomic) Q timestamp;
+@property (nonatomic) BOOL hasProcess;
+@property (nonatomic) NSString process;
+@property (nonatomic) BOOL hasState;
+@property (nonatomic) BOOL state;
+@property (nonatomic) BOOL hasStateEnum;
+@property (nonatomic) I stateEnum;
+- (void)dealloc;
+- (BOOL)hasProcess;
+- (void)setState:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)setProcess:;
+- (void)copyTo:;
+- (void)setHasTimestamp:;
+- (void)mergeFrom:;
+- (BOOL)hasTimestamp;
+- (void)setTimestamp:;
+- (BOOL)state;
+- (id)process;
+- (BOOL)readFrom:;
+- (unsigned long long)timestamp;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasState;
+- (void)setHasState:;
+- (void)setStateEnum:;
+- (void)setHasStateEnum:;
+- (BOOL)hasStateEnum;
+- (unsigned int)stateEnum;
+@end

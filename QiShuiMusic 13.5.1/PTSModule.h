@@ -1,0 +1,2 @@
+@interface PTSModule : PTModule
+@end

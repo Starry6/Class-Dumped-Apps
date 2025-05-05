@@ -1,0 +1,31 @@
+@interface GEOMotionContext : NSObject
+@property (nonatomic) <GEOMotionContextDelegate> delegate;
+@property (nonatomic) Q motionType;
+@property (nonatomic) Q exitType;
+@property (nonatomic) Q confidence;
+@property (nonatomic) BOOL isMoving;
+@property (nonatomic) BOOL isWalking;
+@property (nonatomic) BOOL isRunning;
+@property (nonatomic) BOOL isCycling;
+@property (nonatomic) BOOL isDriving;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)isMoving;
+- (unsigned long long)confidence;
+- (void)dealloc;
+- (void)setDelegate:;
+- (BOOL)isRunning;
+- (unsigned long long)motionType;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)description;
+- (void)motionContextProvider:didUpdateMotion:exitType:confidence:;
+- (void)startMotionUpdatesWithProvider:;
+- (void)stopMotionUpdates;
+- (BOOL)isWalking;
+- (BOOL)isCycling;
+- (BOOL)isDriving;
+- (unsigned long long)exitType;
+@end

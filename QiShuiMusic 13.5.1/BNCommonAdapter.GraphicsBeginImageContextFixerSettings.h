@@ -1,0 +1,2 @@
+@interface BNCommonAdapter.GraphicsBeginImageContextFixerSettings : _TtCs12_SwiftObject
+@end

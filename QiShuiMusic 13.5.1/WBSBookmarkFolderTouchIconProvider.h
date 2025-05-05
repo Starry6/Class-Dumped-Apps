@@ -1,0 +1,37 @@
+@interface WBSBookmarkFolderTouchIconProvider : NSObject
+@property (nonatomic) NSArray allFolderUUIDs;
+@property (nonatomic) UIColor backgroundColor;
+@property (nonatomic) WBSBookmarkFolderTouchIconConfiguration configuration;
+@property (nonatomic) <WBSSiteMetadataProviderDelegate> providerDelegate;
+@property (nonatomic) BOOL providesFavicons;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (id)backgroundColor;
+- (id)bookmarkUUIDForRequest:;
+- (id)displayableFolderContentsForRequest:;
+- (id)defaultFolderIconForRequest:;
+- (BOOL)canHandleRequest:;
+- (id)configuration;
+- (id)touchIconRequestForBookmark:inFolderWithRequest:;
+- (void).cxx_destruct;
+- (void)removeInfoForFolderWithUUID:;
+- (void)removeInfoForFoldersWithUUIDs:;
+- (id)allFolderUUIDs;
+- (id)responseForRequest:willProvideUpdates:;
+- (void)prepareResponseForRequest:allowDelayedResponse:;
+- (id)providerDelegate;
+- (void)setProviderDelegate:;
+- (void)stopWatchingUpdatesForRequest:;
+- (void)didCreateTouchIcon:;
+- (void)_prepareResponseForRequest:allowDelayedResponse:;
+- (id)_responseHandlerForRequest:thumbnailIndex:;
+- (void)_coalesceResponseDispatchForRequest:;
+- (void)_dispatchResponseForRequest:;
+- (void)_dispatchResponseForRequest:touchIcon:;
+- (id)_drawTouchIconForRequest:;
+- (id)_arrayByPaddingArray:toMaximumNumberOfThumbnailsWithObject:;
++ (BOOL)_appUsesLeftToRightLayout;
+@end

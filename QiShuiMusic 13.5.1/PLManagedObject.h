@@ -1,0 +1,32 @@
+@interface PLManagedObject : NSManagedObject
+@property (nonatomic) PLPhotoLibraryPathManager pathManager;
+@property (nonatomic) PLPhotoLibrary photoLibrary;
+@property (nonatomic) BOOL isRegisteredWithUserInterfaceContext;
+@property (nonatomic) NSString shortObjectIDURI;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)photoLibrary;
+- (id)pathManager;
+- (id)payloadID;
+- (BOOL)isSyncableChange;
+- (id)payloadIDForTombstone:;
+- (void)willSave;
+- (id)payloadForChangedKeys:;
+- (BOOL)isValidForJournalPersistence;
+- (BOOL)supportsCloudUpload;
+- (id)payloadsForChangedKeys:;
+- (id)duplicateSortPropertyNamesSkip;
+- (id)duplicateSortPropertyNames;
+- (BOOL)validForPersistenceChangedForChangedKeys:;
+- (BOOL)isRegisteredWithUserInterfaceContext;
+- (id)shortObjectIDURI;
+- (void)setValue:forKey:valueDidChangeHandler:;
+- (id)payloadIDsByPayloadClassIDToDeleteOnInsert;
++ (id)entityName;
++ (id)insertInManagedObjectContext:;
++ (id)objectIDDescription;
++ (id)entityInManagedObjectContext:;
++ (id)attributeValidationRules;
+@end

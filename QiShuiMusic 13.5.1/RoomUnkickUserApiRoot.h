@@ -1,0 +1,2 @@
+@interface RoomUnkickUserApiRoot : GPBRootObject
+@end

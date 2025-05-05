@@ -1,0 +1,33 @@
+@interface DMCHTTPRequestor : NSObject
+@property (nonatomic) NSString username;
+@property (nonatomic) NSString password;
+@property (nonatomic) NSArray anchorCertificateRefs;
+@property (nonatomic) @ selfReference;
+@property (nonatomic) BOOL didFailDueToMissingCredentials;
+@property (nonatomic) BOOL didFailDueToCertNotTrusted;
+@property (nonatomic) <DMCHTTPAuthenticator> authenticator;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setPassword:;
+- (void)URLSession:task:didReceiveChallenge:completionHandler:;
+- (id)username;
+- (id)password;
+- (void)setUsername:;
+- (void)setAnchorCertificateRefs:;
+- (void).cxx_destruct;
+- (id)anchorCertificateRefs;
+- (id)authenticator;
+- (void)setAuthenticator:;
+- (id)selfReference;
+- (void)setSelfReference:;
+- (BOOL)didFailDueToMissingCredentials;
+- (void)setDidFailDueToMissingCredentials:;
+- (void)startWithRequest:username:password:anchorCertificateRefs:completionBlock:;
+- (id)getServerErrorMessageForResponse:;
+- (id)getServerErrorCodeForResponse:;
+- (id)jsonDictFromResponse:;
+- (BOOL)didFailDueToCertNotTrusted;
+- (void)setDidFailDueToCertNotTrusted:;
+@end

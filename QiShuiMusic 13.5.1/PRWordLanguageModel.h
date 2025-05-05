@@ -1,0 +1,30 @@
+@interface PRWordLanguageModel : NSObject
+- (id)appIdentifier;
+- (id)localization;
+- (void)dealloc;
+- (void)reset;
+- (id)description;
+- (BOOL)getConditionalProbabilityForTokenID:context:length:probability:;
+- (unsigned int)tokenIDForString:;
+- (id)stringForTokenID:;
+- (void)flushDynamicData;
+- (void)applyExponentialDecay;
+- (void)pruneToSize:;
+- (void)recordWithDifferentialPrivacy:;
+- (BOOL)addTokenForString:tokenID:;
+- (BOOL)getFirstDynamicTokenID:lastDynamicTokenID:;
+- (float)usageCountForTokenID:;
+- (void)enumerateEntriesForString:withBlock:;
+- (id)initWithLocalization:appIdentifier:lexicon:;
+- (BOOL)getUnigramProbabilityForString:probability:;
+- (id)_descriptionForTokenSequence:length:;
+- (BOOL)tokenSequenceIsBlocklisted:length:;
+- (void)enumerateCompletionsForPrefix:maxCompletions:withBlock:;
+- (void)enumerateCompletionEntriesForPrefix:maxCompletions:withBlock:;
+- (void)enumeratePredictionsForContext:length:maxPredictions:maxTokensPerPrediction:withBlock:;
+- (BOOL)shouldAdaptToTokenSequence:length:;
+- (void)incrementUsageCountForTokenID:context:length:;
++ (void)performMaintenance;
++ (void)setLogLevel:;
++ (id)languageModelWithLocalization:appIdentifier:lexicon:;
+@end

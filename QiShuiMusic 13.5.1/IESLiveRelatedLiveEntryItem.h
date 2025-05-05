@@ -1,0 +1,36 @@
+@interface IESLiveRelatedLiveEntryItem : NSObject
+@property (nonatomic) HTSLiveImage iconImage;
+@property (nonatomic) NSString iconImageName;
+@property (nonatomic) NSString entryTitle;
+@property (nonatomic) UIColor backgroundColor;
+@property (nonatomic) NSString gradientColor;
+@property (nonatomic) HTSLiveToolbarItem toolbarItem;
+@property (nonatomic) Q priority;
+@property (nonatomic) @? onItemTapped;
+@property (nonatomic) @? onItemShow;
+@property (nonatomic) UIView paidTagView;
+@property (nonatomic) HTSLiveImage headerImage;
+- (void)setPaidTagView:;
+- (id)entryTitle;
+- (id)onItemShow;
+- (id)onItemTapped;
+- (id)paidTagView;
+- (void)setEntryTitle:;
+- (void)setOnItemShow:;
+- (void)setOnItemTapped:;
+- (void)setPriority:;
+- (void)setBackgroundColor:;
+- (id)backgroundColor;
+- (id)iconImageName;
+- (void)setIconImage:;
+- (void).cxx_destruct;
+- (void)setIconImageName:;
+- (id)iconImage;
+- (unsigned long long)priority;
+- (id)toolbarItem;
+- (void)setGradientColor:;
+- (id)gradientColor;
+- (void)setHeaderImage:;
+- (id)headerImage;
+- (void)setToolbarItem:;
+@end

@@ -1,0 +1,38 @@
+@interface IMSendProgress : NSObject
+@property (nonatomic) NSDictionary sendingItems;
+@property (nonatomic) <IMSendProgressTimeDataSource> timeDataSource;
+@property (nonatomic) NSTimer sendProgressTimer;
+@property (nonatomic) float cachedSendProgress;
+@property (nonatomic) BOOL wasShowing;
+@property (nonatomic) <IMSendProgressDelegate> delegate;
+@property (nonatomic) @ context;
+@property (nonatomic) BOOL startSendProgressImmediately;
+- (void)dealloc;
+- (id)context;
+- (void)setDelegate:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)description;
+- (void)setContext:;
+- (void)invalidate;
+- (void)_sendProgressTimerFired:;
+- (id)initWithDelegate:context:;
+- (void)updateForItems:forced:;
+- (BOOL)_hasSendingMessages;
+- (void)_resetSendProgress;
+- (void)_updateSendProgress;
+- (void)_scheduleSendProgressTimerIfNeeded;
+- (id)sendingItems;
+- (void)setSendingItems:;
+- (BOOL)startSendProgressImmediately;
+- (void)setStartSendProgressImmediately:;
+- (id)timeDataSource;
+- (void)setTimeDataSource:;
+- (id)sendProgressTimer;
+- (void)setSendProgressTimer:;
+- (float)cachedSendProgress;
+- (void)setCachedSendProgress:;
+- (BOOL)wasShowing;
+- (void)setWasShowing:;
++ (Class)_timeDataSourceClass;
+@end

@@ -1,0 +1,32 @@
+@interface BDCTVideoRecorder : NSObject
+@property (nonatomic) float outputScale;
+@property (nonatomic) BOOL recordAudio;
+@property (nonatomic) AVAssetWriter assetWriter;
+@property (nonatomic) AVAssetWriterInput assetWriterAudioInput;
+@property (nonatomic) AVAssetWriterInput assetWriterVideoInput;
+@property (nonatomic) NSURL outputURL;
+- (void)setRecordAudio:;
+- (void)p_appendSampleBuffer:mediaType:;
+- (id)_metadataArray;
+- (void)appendSampleBuffer:mediaType:;
+- (id)assetWriterAudioInput;
+- (id)assetWriterVideoInput;
+- (void)finishWritingWithCompletion:;
+- (id)initWithOutputURL:;
+- (id)initWithOutputURL:outputScale:;
+- (id)initWithOutputURL:outputScale:recordAudio:;
+- (void)p_finishWritingWithCompletion:;
+- (BOOL)p_setupAudioWithSampleBuffer:;
+- (BOOL)p_setupVideoWithSampleBuffer:;
+- (void)setAssetWriterAudioInput:;
+- (void)setAssetWriterVideoInput:;
+- (void)finishWritingWithCompletionHandler:;
+- (id)outputURL;
+- (void).cxx_destruct;
+- (void)setOutputScale:;
+- (float)outputScale;
+- (BOOL)recordAudio;
+- (id)assetWriter;
+- (void)setAssetWriter:;
++ (id)formattedTimestampStringFromDate:;
+@end

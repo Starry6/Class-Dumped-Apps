@@ -1,0 +1,32 @@
+@interface CNUIUserActionDisambiguationModeler : NSObject
+@property (nonatomic) <CNUIUserActionTargetDiscovering> targetDiscoveringHelper;
+@property (nonatomic) <CNUIUserActionRanking> rankingHelper;
+@property (nonatomic) <CNUIDefaultUserActionFetcher> defaultActionFetcher;
+@property (nonatomic) <CNUIUserActionDiscoveringEnvironment> discoveringEnvironment;
+- (void)setContactStore:;
+- (id)init;
+- (id)schedulerProvider;
+- (void).cxx_destruct;
+- (id)initWithDiscoveringEnvironment:;
+- (id)thirdPartyTargetsForActionTypes:;
+- (id)thirdPartyActionsForContactProperty:;
+- (id)targetDiscoveringHelper;
+- (id)initWithTargetDiscoveringHelper:rankingHelper:defaultActionFetcher:discoveringEnvironment:;
+- (id)modelsWithContact:actionType:;
+- (id)targetsChangedObservableForActionType:;
+- (id)discoverActionsForContact:actionType:;
+- (id)_discoverActionsForContact:actionType:;
+- (id)defaultActionChangedObservable;
+- (id)defaultActionFromActions:;
+- (id)recentActionsFromActions:;
+- (id)modelsWithDefaultAction:actions:recentActions:sorts:throttles:;
+- (id)sortActionsOnModel:;
+- (void)setTargetDiscoveringHelper:;
+- (id)rankingHelper;
+- (void)setRankingHelper:;
+- (id)defaultActionFetcher;
+- (void)setDefaultActionFetcher:;
+- (id)discoveringEnvironment;
+- (void)setDiscoveringEnvironment:;
++ (id)descriptorForRequiredKeys;
+@end

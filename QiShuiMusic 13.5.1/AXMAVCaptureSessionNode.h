@@ -1,0 +1,37 @@
+@interface AXMAVCaptureSessionNode : AXMSourceNode
+@property (nonatomic) AVCaptureSession captureSession;
+@property (nonatomic) AXMVisionAnalysisOptions analysisOptions;
+@property (nonatomic) <AXMAVCaptureSessionNodeDelegate> captureSessionNodeDelegate;
+@property (nonatomic) <AXMAVCaptureSessionNodeFrameDelegate> frameDelegate;
+@property (nonatomic) AXMCaptureVideoDataOutput axVideoDataOutput;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)captureOutput:didOutputSampleBuffer:fromConnection:;
+- (void).cxx_destruct;
+- (void)captureOutput:didDropSampleBuffer:fromConnection:;
+- (void)nodeInitialize;
+- (void)produceImage:;
+- (void)setShouldProcessRemotely:;
+- (id)analysisOptions;
+- (void)setAnalysisOptions:;
+- (void)captureSessionNode:didOutputSampleBuffer:fromConnection:;
+- (void)autoTriggerVideoFrameEventsWithAVCaptureSession:options:delegate:;
+- (id)axVideoDataOutput;
+- (void)addVideoDataOutputWithAVCaptureSession:queue:;
+- (void)beginFrameEventsWithAVCaptureSession:delegate:queue:;
+- (void)endAutoTriggerOfVideoFrameEvents;
+- (void)endVideoFrameEvents;
+- (void)triggerWithSampleBuffer:interfaceOrientation:mirrored:options:userContext:;
+- (void)setAxVideoDataOutput:;
+- (id)captureSessionNodeDelegate;
+- (void)setCaptureSessionNodeDelegate:;
+- (id)frameDelegate;
+- (void)setFrameDelegate:;
+- (id)captureSession;
+- (void)setCaptureSession:;
++ (BOOL)isSupported;
++ (BOOL)supportsSecureCoding;
++ (id)title;
+@end

@@ -1,0 +1,31 @@
+@interface INAddMediaIntent : INIntent
+@property (nonatomic) NSArray mediaItems;
+@property (nonatomic) INMediaSearch mediaSearch;
+@property (nonatomic) INMediaDestination mediaDestination;
+@property (nonatomic) INPrivateAddMediaIntentData privateAddMediaIntentData;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)_dictionaryRepresentation;
+- (void)_setMetadata:;
+- (id)domain;
+- (void)setDomain:;
+- (id)_metadata;
+- (id)mediaItems;
+- (id)_typedBackingStore;
+- (void)_redactForMissingPrivacyEntitlementOptions:containingAppBundleId:;
+- (id)verb;
+- (void)setVerb:;
+- (id)parametersByName;
+- (void)setParametersByName:;
+- (void)setMediaItems:;
+- (id)mediaSearch;
+- (void)setMediaSearch:;
+- (BOOL)_intents_isExemptFromMulitWindowRequirementForInAppHandling;
+- (id)mediaDestination;
+- (void)setMediaDestination:;
+- (id)privateAddMediaIntentData;
+- (void)setPrivateAddMediaIntentData:;
+- (id)initWithMediaItems:mediaSearch:mediaDestination:;
+@end

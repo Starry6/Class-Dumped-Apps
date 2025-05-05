@@ -1,0 +1,32 @@
+@interface INCreateAlarmIntent : INIntent
+@property (nonatomic) NSNumber relativeOffsetInMinutes;
+@property (nonatomic) INDateComponentsRange time;
+@property (nonatomic) INSpeakableString label;
+@property (nonatomic) Q alarmRepeatScheduleOptions;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setTime:;
+- (id)time;
+- (id)_dictionaryRepresentation;
+- (void)setLabel:;
+- (id)label;
+- (void)_setMetadata:;
+- (id)domain;
+- (void)setDomain:;
+- (id)_metadata;
+- (id)_typedBackingStore;
+- (long long)_intentCategory;
+- (id)_categoryVerb;
+- (void)_redactForMissingPrivacyEntitlementOptions:containingAppBundleId:;
+- (id)verb;
+- (void)setVerb:;
+- (id)parametersByName;
+- (void)setParametersByName:;
+- (unsigned long long)alarmRepeatScheduleOptions;
+- (id)relativeOffsetInMinutes;
+- (void)setRelativeOffsetInMinutes:;
+- (void)setAlarmRepeatScheduleOptions:;
+- (id)initWithRelativeOffsetInMinutes:time:label:alarmRepeatScheduleOptions:;
+@end

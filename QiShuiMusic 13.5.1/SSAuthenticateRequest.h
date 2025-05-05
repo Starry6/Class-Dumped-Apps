@@ -1,0 +1,35 @@
+@interface SSAuthenticateRequest : SSRequest
+@property (nonatomic) SSLogConfig logConfig;
+@property (nonatomic) NSString logUUID;
+@property (nonatomic) UIViewController _parentViewController;
+@property (nonatomic) <SSAuthenticateRequestDelegate> delegate;
+@property (nonatomic) SSAuthenticationContext authenticationContext;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithXPCEncoding:;
+- (id)init;
+- (id)logConfig;
+- (id)copyXPCEncoding;
+- (id)authenticationContext;
+- (BOOL)start;
+- (void)startWithCompletionBlock:;
+- (void)setLogConfig:;
+- (id)logUUID;
+- (id)run;
+- (void).cxx_destruct;
+- (id)initWithAccount:;
+- (id)_parentViewController;
+- (void)_handleDialogFromError:;
+- (id)initWithAuthenticationContext:;
+- (void)startWithAuthenticateResponseBlock:;
+- (void)_performRemoteAuthenticationWithCompletion:;
+- (long long)_responseTypeForError:;
+- (BOOL)_shouldRunAuthenticationForAccount:;
+- (id)_verifyCredentialsOptionsFromUpdateAccountResponse:skipAuthKit:;
+- (void)set_parentViewController:;
++ (BOOL)localAuthenticationAvailable;
++ (id)_accountToAuthenticateWithAuthenticationContext:;
++ (BOOL)_isAuthkitEntitled;
+@end

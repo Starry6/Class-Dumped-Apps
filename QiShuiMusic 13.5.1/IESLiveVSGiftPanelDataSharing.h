@@ -1,0 +1,33 @@
+@interface IESLiveVSGiftPanelDataSharing : NSObject
+@property (nonatomic) <IESLiveRoomServiceAdapter> room;
+@property (nonatomic) double containerWidth;
+@property (nonatomic) double containerHeight;
+@property (nonatomic) NSDictionary trackParams;
+@property (nonatomic) HTSEventContext trackContext;
+@property (nonatomic) IESLiveComponentContext componentContext;
+@property (nonatomic) q style;
+@property (nonatomic) BOOL isVerticalStream;
+@property (nonatomic) HTSLiveImage selectImage;
+@property (nonatomic) NSString giftListLogID;
+- (void)setTrackParams:;
+- (void)setSelectImage:;
+- (id)componentContext;
+- (id)giftListLogID;
+- (BOOL)isVerticalStream;
+- (id)selectImage;
+- (void)setComponentContext:;
+- (void)setGiftListLogID:;
+- (void)setIsVerticalStream:;
+- (void)setTrackContext:;
+- (id)trackContext;
+- (id)trackParams;
+- (void)setStyle:;
+- (void).cxx_destruct;
+- (long long)style;
+- (id)room;
+- (void)setRoom:;
+- (void)setContainerHeight:;
+- (double)containerHeight;
+- (void)setContainerWidth:;
+- (double)containerWidth;
+@end

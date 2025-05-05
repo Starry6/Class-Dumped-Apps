@@ -1,0 +1,32 @@
+@interface CUIThemeSchema : NSObject
+- (long long)schemaVersion;
+- (id)elementCategoryAtIndex:;
+- (unsigned long long)elementCategoryCount;
+- (id)elementDefinitionAtIndex:;
+- (unsigned long long)elementDefinitionCount;
+- (id)sortedElementDefinitionAtIndex:;
+- (unsigned long long)partDefinitionCountForElementDefinition:;
+- (unsigned long long)dimensionDefinitionCountForPartDefinition:;
+- (id)elementDefinitionWithName:;
+- (id)partDefinitionWithName:forElementDefinition:;
+- (id)widgetNameForPartDefinition:;
+- (id)partDefinitionForWidgetName:;
+- (id)schemaRenditionsForPartDefinition:;
+- (void)enumerateAvailableThemeAttributesInPartDefinition:usingBlock:;
+- (void)enumerateAvailableValuesForThemeAttribute:inPartDefinition:usingBlock:;
+- (id)categoryForElementDefinition:;
+- (id)effectDefinitionAtIndex:;
+- (id)sortedEffectDefinitionAtIndex:;
+- (id)effectDefinitionWithName:;
+- (unsigned long long)effectDefinitionCount;
+- (unsigned long long)partDefinitionCountForEffectDefinition:;
+- (id)schemaEffectRenditionsForPartDefinition:;
+- (id)materialDefinitionAtIndex:;
+- (id)sortedMaterialDefinitionAtIndex:;
+- (id)materialDefinitionWithName:;
+- (unsigned long long)materialDefinitionCount;
+- (unsigned long long)partDefinitionCountForMaterialDefinition:;
+- (id)schemaMaterialRenditionsForPartDefinition:;
++ (id)defaultSchema;
++ (id)schemaForPlatform:;
+@end

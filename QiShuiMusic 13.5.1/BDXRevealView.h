@@ -1,0 +1,38 @@
+@interface BDXRevealView : UIView
+@property (nonatomic) <BDXRevealViewDelegate> delegate;
+@property (nonatomic) UIView mainContentView;
+@property (nonatomic) UIView optionView;
+@property (nonatomic) BOOL shouldToRight;
+@property (nonatomic) NSLayoutConstraint optionViewWidthConstraint;
+@property (nonatomic) UIPanGestureRecognizer panGesture;
+@property (nonatomic) UITapGestureRecognizer tapGesture;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)hideOptionView:;
+- (void)adjustOptionViewWitdh:;
+- (void)fullyExpandOptionView:;
+- (void)handelTap:;
+- (BOOL)isNormalState;
+- (id)optionViewWidthConstraint;
+- (void)setOptionViewWidthConstraint:;
+- (void)setShouldToRight:;
+- (BOOL)shouldToRight;
+- (id)init;
+- (BOOL)gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:;
+- (BOOL)gestureRecognizer:shouldBeRequiredToFailByGestureRecognizer:;
+- (void)setDelegate:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)handlePan:;
+- (id)tapGesture;
+- (id)panGesture;
+- (void)setPanGesture:;
+- (void)setupUI;
+- (void)setTapGesture:;
+- (void)setOptionView:;
+- (id)optionView;
+- (void)setMainContentView:;
+- (id)mainContentView;
+@end

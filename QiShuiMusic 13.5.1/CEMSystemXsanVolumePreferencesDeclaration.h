@@ -1,0 +1,36 @@
+@interface CEMSystemXsanVolumePreferencesDeclaration : CEMConfigurationBase
+@property (nonatomic) NSArray payloadOnlyMount;
+@property (nonatomic) NSArray payloadDenyMount;
+@property (nonatomic) NSArray payloadDenyDLC;
+@property (nonatomic) NSArray payloadPreferDLC;
+@property (nonatomic) NSNumber payloadUseDLC;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (BOOL)multipleAllowed;
+- (BOOL)mustBeSupervised;
+- (int)activationLevel;
+- (id)assetReferences;
+- (BOOL)loadPayload:error:;
+- (id)serializePayloadWithAssetProviders:;
+- (id)payloadOnlyMount;
+- (void)setPayloadOnlyMount:;
+- (id)payloadDenyMount;
+- (void)setPayloadDenyMount:;
+- (id)payloadDenyDLC;
+- (void)setPayloadDenyDLC:;
+- (id)payloadPreferDLC;
+- (void)setPayloadPreferDLC:;
+- (id)payloadUseDLC;
+- (void)setPayloadUseDLC:;
++ (id)profileType;
++ (id)buildRequiredOnlyWithIdentifier:;
++ (id)registeredClassName;
++ (id)registeredIdentifier;
++ (id)allowedPayloadKeys;
++ (id)restrictionPayloadKeys;
++ (id)buildWithIdentifier:withOnlyMount:withDenyMount:withDenyDLC:withPreferDLC:withUseDLC:;
+@end

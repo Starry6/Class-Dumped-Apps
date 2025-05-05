@@ -1,0 +1,35 @@
+@interface SUCoreConnectClient : NSObject
+@property (nonatomic) NSXPCConnection serverConnection;
+@property (nonatomic) SUCoreConnectClientPolicy policy;
+@property (nonatomic) SUCoreLog logger;
+@property (nonatomic) NSObject<OS_dispatch_queue> clientConnectionStateAccessQueue;
+@property (nonatomic) NSObject<OS_dispatch_queue> clientDelegateCallbackQueue;
+@property (nonatomic) NSObject<OS_dispatch_queue> clientCompletionQueue;
+@property (nonatomic) NSObject<OS_dispatch_queue> clientMessageQueue;
+@property (nonatomic) NSObject<OS_dispatch_queue> clientReplyCompletionQueue;
+- (void)setPolicy:;
+- (id)logger;
+- (void)setServerConnection:;
+- (id)serverConnection;
+- (id)clientMessageQueue;
+- (void)dealloc;
+- (id)policy;
+- (id)clientReplyCompletionQueue;
+- (void)connectClientSendServerMessage:;
+- (void)setLogger:;
+- (id)initWithClientPolicy:;
+- (id)clientCompletionQueue;
+- (void)connectClientSendServerMessage:proxyObject:withReply:;
+- (void)_droppedConnection:;
+- (id)clientDelegateCallbackQueue;
+- (void)connectProtocolFromServerRequestClientID:;
+- (void)connectProtocolFromServerSendClientMessage:reply:;
+- (void)_internalConnectToServerWithCompletion:;
+- (void)_invalidateConnection:;
+- (void).cxx_destruct;
+- (void)connectProtocolFromServerSendClientMessage:;
+- (id)clientConnectionStateAccessQueue;
+- (void)forceCloseConnection;
+- (void)connectToServerWithCompletion:;
++ (id)_sharedClientLogger;
+@end

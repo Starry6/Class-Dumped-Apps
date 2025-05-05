@@ -1,0 +1,38 @@
+@interface MLCMHACPUDeviceOps : MLCCPUDeviceOps
+@property (nonatomic) BOOL hasAttnBias;
+@property (nonatomic) BOOL hasKeyMask;
+@property (nonatomic) BOOL hasAttnMask;
+@property (nonatomic) NSData keyMask;
+@property (nonatomic) NSData attnMask;
+@property (nonatomic) Q keyMaskStride;
+@property (nonatomic) Q backpropCacheSize;
+@property (nonatomic) NSData backpropCacheData;
+@property (nonatomic) NSArray attnBiasDeltaData;
+@property (nonatomic) NSMutableArray weightsMomentumDeltaDataArray;
+@property (nonatomic) NSMutableArray biasMomentumDeltaDataArray;
+- (void).cxx_destruct;
+- (id)initWithType:params:inDeltaData:outDeltaData:weightsDeltaData:biasDeltaData:weightsMomentumData:biasMomentumData:betaDeltaData:gammaDeltaData:betaMomentumData:gammaMomentumData:;
+- (BOOL)hasAttnBias;
+- (void)setHasAttnBias:;
+- (BOOL)hasKeyMask;
+- (void)setHasKeyMask:;
+- (BOOL)hasAttnMask;
+- (void)setHasAttnMask:;
+- (id)keyMask;
+- (void)setKeyMask:;
+- (id)attnMask;
+- (void)setAttnMask:;
+- (unsigned long long)keyMaskStride;
+- (void)setKeyMaskStride:;
+- (unsigned long long)backpropCacheSize;
+- (void)setBackpropCacheSize:;
+- (id)backpropCacheData;
+- (void)setBackpropCacheData:;
+- (id)attnBiasDeltaData;
+- (void)setAttnBiasDeltaData:;
+- (id)weightsMomentumDeltaDataArray;
+- (void)setWeightsMomentumDeltaDataArray:;
+- (id)biasMomentumDeltaDataArray;
+- (void)setBiasMomentumDeltaDataArray:;
++ (id)deviceOpsWithType:params:inDeltaData:outDeltaData:weightsDeltaData:biasDeltaData:weightsMomentumData:biasMomentumData:;
+@end

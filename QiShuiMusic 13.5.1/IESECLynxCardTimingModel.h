@@ -1,0 +1,37 @@
+@interface IESECLynxCardTimingModel : NSObject
+@property (nonatomic) BOOL isPreloader;
+@property (nonatomic) BOOL isFirstReport;
+@property (nonatomic) double startLoadingTime;
+@property (nonatomic) double startFetchTemplateTime;
+@property (nonatomic) double finishFetchTemplateTime;
+@property (nonatomic) double finishLoadingTime;
+@property (nonatomic) double firstScreenTime;
+@property (nonatomic) NSError error;
+@property (nonatomic) NSDictionary lynxPerfDict;
+@property (nonatomic) NSDictionary lynxSetupPerfDict;
+@property (nonatomic) NSDictionary lynxUpdatePerfDict;
+- (double)firstScreenTime;
+- (void)setIsPreloader:;
+- (double)finishFetchTemplateTime;
+- (double)finishLoadingTime;
+- (BOOL)isFirstReport;
+- (BOOL)isPreloader;
+- (id)lynxPerfDict;
+- (id)lynxSetupPerfDict;
+- (id)lynxUpdatePerfDict;
+- (void)setFinishFetchTemplateTime:;
+- (void)setFinishLoadingTime:;
+- (void)setFirstScreenTime:;
+- (void)setIsFirstReport:;
+- (void)setLynxPerfDict:;
+- (void)setLynxSetupPerfDict:;
+- (void)setLynxUpdatePerfDict:;
+- (void)setStartFetchTemplateTime:;
+- (void)setStartLoadingTime:;
+- (double)startFetchTemplateTime;
+- (double)startLoadingTime;
+- (id)init;
+- (void)setError:;
+- (id)error;
+- (void).cxx_destruct;
+@end

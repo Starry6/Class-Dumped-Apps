@@ -1,0 +1,31 @@
+@interface LynxContext : NSObject
+@property (nonatomic) NSString containerID;
+@property (nonatomic) LynxUIOwner uiOwner;
+@property (nonatomic) LynxUIIntersectionObserverManager intersectionManager;
+@property (nonatomic) LynxView lynxView;
+@property (nonatomic) NSInteger instanceId;
+- (id)uiOwner;
+- (void)BDLynxBridge_dealloc;
+- (id)getJSModule:;
+- (id)getLynxRuntimeId;
+- (id)getLynxView;
+- (id)initWithLynxView:;
+- (id)intersectionManager;
+- (id)lynxView;
+- (void)reportModuleCustomError:;
+- (void)runOnJSThread:;
+- (void)runOnTasmThread:;
+- (void)sendGlobalEvent:withParams:;
+- (void)setIntersectionManager:;
+- (void)setJSProxy:;
+- (void)setLynxView:;
+- (void)setUiOwner:;
+- (void)dealloc;
+- (id)containerID;
+- (void)setContainerID:;
+- (void).cxx_destruct;
+- (int)instanceId;
+- (id).cxx_construct;
+- (void)setInstanceId:;
++ (void)lynxLazyLoad;
+@end

@@ -1,0 +1,36 @@
+@interface IESLivePlayerTrafficStatisticMonitor : NSObject
+@property (nonatomic) q appState;
+@property (nonatomic) q netState;
+@property (nonatomic) q totalUsed;
+@property (nonatomic) q pollingTotalDownload;
+@property (nonatomic) NSString uuid;
+@property (nonatomic) BOOL allowMonitor;
+@property (nonatomic) <IESLivePlayerTrafficStatisticMonitorDelegate> delegate;
+- (BOOL)allowMonitor;
+- (void)beginRecord;
+- (id)causeReasonForState:isWifi:;
+- (void)endRecord;
+- (id)playStopInfo;
+- (long long)pollingTotalDownload;
+- (id)recordInfo:;
+- (void)setAllowMonitor:;
+- (void)setPollingTotalDownload:;
+- (void)setTotalUsed:;
+- (id)stableTrafficInfo;
+- (void)updateCheckPointWithEvent:;
+- (id)init;
+- (void)dealloc;
+- (id)uuid;
+- (void)setDelegate:;
+- (void)setUuid:;
+- (void)setAppState:;
+- (id)delegate;
+- (long long)appState;
+- (void).cxx_destruct;
+- (void)appWillEnterForeground;
+- (void)appDidEnterBackground;
+- (long long)totalUsed;
+- (void)networkStateDidChange;
+- (long long)netState;
+- (void)setNetState:;
+@end

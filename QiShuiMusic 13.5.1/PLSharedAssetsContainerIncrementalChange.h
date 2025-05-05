@@ -1,0 +1,36 @@
+@interface PLSharedAssetsContainerIncrementalChange : NSObject
+@property (nonatomic) q collectionChangeType;
+@property (nonatomic) q sharingChange;
+@property (nonatomic) C suggestionStateChange;
+@property (nonatomic) C mediaType;
+@property (nonatomic) BOOL hasNoOtherAssetChangesRequiringMomentGeneration;
+@property (nonatomic) NSArray highlightContainerChanges;
+- (unsigned char)mediaType;
+- (void)setMediaType:;
+- (BOOL)hasChanges;
+- (void)setSharingChange:;
+- (id)init;
+- (id)highlightContainerChanges;
+- (BOOL)hasChangesAffectingSharingComposition;
+- (long long)sharingChange;
+- (void)setCollectionChangeType:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (BOOL)hasSuggestionChanges;
+- (id)debugDescription;
+- (void)encodeWithCoder:;
+- (void)setHighlightContainerChanges:;
+- (long long)collectionChangeType;
+- (BOOL)hasSharingChanges;
+- (BOOL)hasSharingOrSuggestionChanges;
+- (void).cxx_destruct;
+- (void)mergeChangesFrom:;
+- (void)setSuggestionStateChange:;
+- (BOOL)hasNoOtherAssetChangesRequiringMomentGeneration;
+- (void)addHighlightContainerChange:sourceHighlightID:destinationHighlightID:;
+- (BOOL)isEqual:;
+- (unsigned char)suggestionStateChange;
+- (void)setHasNoOtherAssetChangesRequiringMomentGeneration:;
+- (id)copyWithZone:;
++ (BOOL)supportsSecureCoding;
+@end

@@ -1,0 +1,35 @@
+@interface CNUICoreFamilyMemberContactsModelBuilder : NSObject
+@property (nonatomic) NSArray contacts;
+@property (nonatomic) CNUICoreContactTypeAssessor contactTypeAssessor;
+@property (nonatomic) q contactFormatterStyle;
+@property (nonatomic) BOOL includeWhitelistedContactsOnly;
+@property (nonatomic) BOOL sortItemsByName;
+@property (nonatomic) BOOL markItemsAsPersisted;
+@property (nonatomic) BOOL markItemsAsProposed;
+- (id)init;
+- (void)setContacts:;
+- (id)contacts;
+- (id)build;
+- (void).cxx_destruct;
+- (id)contactTypeAssessor;
+- (id)sortedFamilyMemberContactItems:;
+- (void)setContactTypeAssessor:;
+- (long long)contactFormatterStyle;
+- (void)setContactFormatterStyle:;
+- (BOOL)includeWhitelistedContactsOnly;
+- (void)setIncludeWhitelistedContactsOnly:;
+- (BOOL)sortItemsByName;
+- (void)setSortItemsByName:;
+- (BOOL)markItemsAsPersisted;
+- (void)setMarkItemsAsPersisted:;
+- (BOOL)markItemsAsProposed;
+- (void)setMarkItemsAsProposed:;
++ (BOOL)shouldIncludeContact:givenIncludeWhitelistedContactsOnlySetting:;
++ (id)familyMemberContactItemFromContact:contactFormatterStyle:contactTypeAssessor:itemHasBeenPersisted:itemIsProposed:;
++ (id)formattedNameOfContact:contactFormatterStyle:;
++ (id)placeholderNameForNamelessContact:;
++ (id)firstDisplayableEmailAddressForContact:;
++ (id)firstDisplayablePhoneNumberForContact:;
++ (id)uniqueFamilyMemberContactItems:;
++ (id)itemsBySortingItems:;
+@end

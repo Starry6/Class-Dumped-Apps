@@ -1,0 +1,35 @@
+@interface IESLiveSaaSAllGesturesFragment : IESLiveRoomComponent
+@property (nonatomic) <IESLiveSaaSWebViewService> webViewService;
+@property (nonatomic) NSMutableArray gestures;
+@property (nonatomic) q orientation;
+@property (nonatomic) IESLiveSaaSComponentContext componentContext;
+@property (nonatomic) BOOL disableGestures;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)disableGestures;
+- (id)addLiveGesture:action:;
+- (id)addLiveGesture:action:shouldBegin:;
+- (void)componentDidUnmount;
+- (void)componentOrientationChanged:;
+- (void)didSetAttachingDIContext;
+- (void)disableAllGestures:;
+- (id)getGestureModelFrom:;
+- (void)removeLiveGesture:;
+- (void)respondAction:;
+- (void)setDisableGestures:;
+- (void)setWebViewService:;
+- (id)webViewService;
+- (id)init;
+- (BOOL)gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:;
+- (long long)orientation;
+- (id)gestures;
+- (void).cxx_destruct;
+- (void)setGestures:;
+- (BOOL)gestureRecognizer:shouldReceiveTouch:;
+- (BOOL)gestureRecognizerShouldBegin:;
+- (void)setOrientation:;
+- (BOOL)gestureRecognizer:shouldRequireFailureOfGestureRecognizer:;
++ (id)componentWithRoom:trackContext:componentContext:;
+@end

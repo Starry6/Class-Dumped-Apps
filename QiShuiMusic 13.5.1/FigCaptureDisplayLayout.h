@@ -1,0 +1,30 @@
+@interface FigCaptureDisplayLayout : NSObject
+@property (nonatomic) NSDate timestamp;
+@property (nonatomic) q displayType;
+@property (nonatomic) NSArray foregroundApps;
+@property (nonatomic) NSArray obscuredApps;
+@property (nonatomic) NSArray transitioningApps;
+@property (nonatomic) NSArray pipApps;
+@property (nonatomic) BOOL siriVisible;
+@property (nonatomic) BOOL contactlessUIServiceVisible;
+- (void)setPipApps:;
+- (void)dealloc;
+- (void)setDisplayType:;
+- (void)setTransitioningApps:;
+- (void)setObscuredApps:;
+- (void)setForegroundApps:;
+- (long long)displayType;
+- (id)debugDescription;
+- (void)setSiriVisible:;
+- (BOOL)isContactlessUIServiceVisible;
+- (void)setTimestamp:;
+- (id)pipApps;
+- (id)transitioningApps;
+- (id)timestamp;
+- (id)description;
+- (id)_init;
+- (BOOL)isSiriVisible;
+- (id)foregroundApps;
+- (void)setContactlessUIServiceVisible:;
+- (id)obscuredApps;
+@end

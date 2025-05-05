@@ -1,0 +1,2 @@
+@interface IMNicknameFieldTaggingKey : IMNicknameEncryptionKey
+@end

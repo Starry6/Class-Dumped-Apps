@@ -1,0 +1,35 @@
+@interface BUDiskCache : NSObject
+@property (nonatomic) BUPersistenceOption option;
+@property (nonatomic) <BUPersistenceProtocol> storage;
+@property (nonatomic) NSString diskCacheDirectory;
+@property (nonatomic) BOOL memoryWarning;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)onMemoryWarning;
+- (void)allObjectsWithSafeBlock:;
+- (id)diskCacheDirectory;
+- (void)initDirectory;
+- (void)initStorage:;
+- (id)initWithName:option:;
+- (void)setCustomStorage:;
+- (void)setDiskCacheDirectory:;
+- (void)setMemoryWarning:;
+- (id)storageWithName:type:;
+- (BOOL)removeAll;
+- (BOOL)setObject:forKey:;
+- (BOOL)save;
+- (void)setStorage:;
+- (BOOL)removeObjectsForKeys:;
+- (id)storage;
+- (id)objectForKey:;
+- (void).cxx_destruct;
+- (void)setOption:;
+- (id)objectsForKeys:;
+- (id)option;
+- (BOOL)memoryWarning;
+- (BOOL)hasObjectForKey:;
++ (void)removeDiskCache;
++ (id)cachePath;
+@end

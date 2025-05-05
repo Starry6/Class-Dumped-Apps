@@ -1,0 +1,35 @@
+@interface GEOResourceManifestServerRemoteProxy : NSObject
+@property (nonatomic) <GEOResourceManifestServerProxyDelegate> delegate;
+@property (nonatomic) GEOActiveTileGroup activeTileGroup;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)activateResourceScenario:;
+- (void)activateResourceScale:;
+- (id)resetActiveTileGroup;
+- (id)updateProgress;
+- (id)activeTileGroup;
+- (id)authToken;
+- (void)closeConnection;
+- (id)serverQueue;
+- (void)updateIfNecessary:;
+- (void)dealloc;
+- (void)performOpportunisticResourceLoading;
+- (void)getResourceManifestWithHandler:;
+- (void)setActiveTileGroupIdentifier:updateType:completionHandler:;
+- (id)setActiveTileGroupIdentifier:;
+- (void)setDelegate:;
+- (void)deactivateResourceScenario:;
+- (void)_handleMessage:xpcMessage:;
+- (id)initWithDelegate:configuration:;
+- (id)configuration;
+- (id)delegate;
+- (unsigned long long)maximumZoomLevelForStyle:scale:outSize:;
+- (void).cxx_destruct;
+- (void)openConnection;
+- (void)setManifestToken:completionHandler:;
+- (void)forceUpdate:completionHandler:;
+- (void)deactivateResourceScale:;
+- (void)cancelCurrentManifestUpdate;
+@end

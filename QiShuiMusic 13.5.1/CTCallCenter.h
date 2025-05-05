@@ -1,0 +1,33 @@
+@interface CTCallCenter : NSObject
+@property (nonatomic) CXCallObserver callKitObserver;
+@property (nonatomic) NSSet currentCalls;
+@property (nonatomic) @? callEventHandler;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)tm_hook_call_center_currentCalls;
+- (void)tm_hook_call_center_setCallEventHandler:;
+- (id)tspk_call_center_currentCalls;
+- (void)tspk_call_center_setCallEventHandler:;
+- (id)currentCalls;
+- (id)init;
+- (void)initialize;
+- (void)dealloc;
+- (void)setCurrentCalls:;
+- (void).cxx_destruct;
+- (void)callObserver:callChanged:;
+- (id)description;
+- (id)initWithQueue:;
+- (id).cxx_construct;
+- (void)handleCallStatusChange_sync:;
+- (id)callEventHandler;
+- (void)setCallEventHandler:;
+- (BOOL)getCurrentCallSetFromServer_sync:;
+- (BOOL)calculateCallStateChanges_sync:;
+- (void)broadcastCallStateChangesIfNeededWithFailureLogMessage:;
+- (id)callKitObserver;
+- (void)setCallKitObserver:;
++ (void)tm_hook_call_center_preload;
++ (void)tspk_call_center_preload;
+@end

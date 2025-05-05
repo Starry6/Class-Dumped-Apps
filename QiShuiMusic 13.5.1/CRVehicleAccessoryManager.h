@@ -1,0 +1,36 @@
+@interface CRVehicleAccessoryManager : NSObject
+@property (nonatomic) EAAccessoryManager accessoryManager;
+@property (nonatomic) NSMutableDictionary vehiclesBySerialNumber;
+@property (nonatomic) CARObserverHashTable observers;
+@property (nonatomic) <CRVehicleAccessoryManagerDelegate> vehicleAccessoryDelegate;
+- (void)removeObserver:;
+- (id)init;
+- (void)addObserver:;
+- (void)setAccessoryManager:;
+- (void)dealloc;
+- (void)setVehiclesBySerialNumber:;
+- (void)_updateVehicle:usingAccessory:;
+- (id)accessoryManager;
+- (void)_primeConnectedVehicleAccessories;
+- (id)vehicleAccessoryForiAPConnectionIdentifier:;
+- (id)vehicleAccessoryForCertificateSerial:;
+- (id)connectedVehicleAccessories;
+- (id)vehicleAccessoryDelegate;
+- (id)_vehicleForAccessory:;
+- (void).cxx_destruct;
+- (void)setVehicleAccessoryDelegate:;
+- (void)handleAccessoryConnect:;
+- (void)setObservers:;
+- (void)handleAccessoryDisconnect:;
+- (id)vehiclesBySerialNumber;
+- (id)observers;
+- (id)connectedAccessories;
+- (id)_vehicleInfoDataForAccessory:;
+- (void)handleAccessoryInformationUpdate:;
++ (id)sharedInstance;
++ (id)vehicleAccessQueue;
++ (id)managerInfoDataCache;
++ (BOOL)_isValidAccessoryMacAddress:;
++ (BOOL)_isVehicleAccessory:;
++ (id)_certificateSerialNumberForAccessory:;
+@end

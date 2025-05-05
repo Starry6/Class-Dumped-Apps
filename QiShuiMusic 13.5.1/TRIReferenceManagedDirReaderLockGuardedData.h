@@ -1,0 +1,2 @@
+@interface TRIReferenceManagedDirReaderLockGuardedData : NSObject
+@end

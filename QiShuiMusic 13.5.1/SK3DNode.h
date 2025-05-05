@@ -1,0 +1,38 @@
+@interface SK3DNode : SKNode
+@property (nonatomic) {CGSize=dd} viewportSize;
+@property (nonatomic) SCNScene scnScene;
+@property (nonatomic) double sceneTime;
+@property (nonatomic) BOOL playing;
+@property (nonatomic) BOOL loops;
+@property (nonatomic) SCNNode pointOfView;
+@property (nonatomic) BOOL autoenablesDefaultLighting;
+- (id)hitTest:options:;
+- (id)init;
+- (BOOL)isPlaying;
+- (void)setLoops:;
+- (void)setPlaying:;
+- (void)commonInit;
+- (id)pointOfView;
+- (id)projectPoint:;
+- (id)viewportSize;
+- (id)initWithCoder:;
+- (BOOL)loops;
+- (void)encodeWithCoder:;
+- (void)setPointOfView:;
+- (double)sceneTime;
+- (void)setSceneTime:;
+- (id)unprojectPoint:;
+- (void)setAutoenablesDefaultLighting:;
+- (BOOL)autoenablesDefaultLighting;
+- (id)copyWithZone:;
+- (void)setViewportSize:;
+- (id)_makeBackingNode;
+- (void)_didMakeBackingNode;
+- (id)initWithViewportSize:;
+- (void)_renderForTime:;
+- (void)_scnSceneDidUpdate:;
+- (id)scnScene;
+- (void)setScnScene:;
++ (BOOL)supportsSecureCoding;
++ (id)nodeWithViewportSize:;
+@end

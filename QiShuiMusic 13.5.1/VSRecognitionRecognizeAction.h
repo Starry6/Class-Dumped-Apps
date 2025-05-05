@@ -1,0 +1,37 @@
+@interface VSRecognitionRecognizeAction : VSRecognitionAction
+- (void)_reset;
+- (id)cancel;
+- (void)dealloc;
+- (id)modelIdentifier;
+- (id)perform;
+- (id)_keywords;
+- (void)_setResults:;
+- (int)completionType;
+- (id)initWithModelIdentifier:;
+- (BOOL)_keywordIndexChanged;
+- (id)_debugDumpPath;
+- (BOOL)_hasDeferredStartCallback;
+- (void)_continueAfterDeferredStart;
+- (id)_createRecognitionInstanceWithCallbacks:info:;
+- (id)_actionForEmptyResults;
+- (BOOL)_isRecognizing;
+- (BOOL)_isActivelyRecognizing;
+- (BOOL)_setBluetoothInputAllowed:;
+- (BOOL)_setInputLevelUpdateInterval:;
+- (float)_inputLevel;
+- (float)_inputLevelDB;
+- (id)_keywordAtIndex:;
+- (long long)_keywordCount;
+- (BOOL)_setDebugDumpEnabled:dumpPath:;
+- (BOOL)_setDebugDumpEnabled:;
+- (BOOL)_setDebugDumpPath:;
+- (BOOL)_setPreferredEngine:;
+- (BOOL)_setAudioInputPath:;
+- (BOOL)_setEngineResetRequired:;
+- (void)_configureNewRecognitionInstance;
+- (void)_releaseFromPrepare;
+- (void)_handleRecognitionPrepared:;
+- (void)_handleRecognitionStarted:;
+- (void)_handleRecognitionCompleted:withResults:error:;
+- (void)_handledThreadedResults:nextAction:;
+@end

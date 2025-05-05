@@ -1,0 +1,32 @@
+@interface AMapLogFileManager : NSObject
+@property (nonatomic) NSFileManager fileManager;
+@property (nonatomic) NSObject<OS_dispatch_queue> fileOperateQueue;
+@property (nonatomic) NSString logsDirectory;
+- (id)attributesOfItemAtPath:;
+- (BOOL)creatFileWithAbsolutePath:;
+- (BOOL)creatLogDirectory:error:;
+- (BOOL)creatLogDirectory:relativePath:error:;
+- (BOOL)deleteItemWithPath:;
+- (BOOL)directoryIsExist:;
+- (BOOL)directoryIsExist:relativePath:;
+- (unsigned long long)directorySizeAtPath:;
+- (BOOL)fileIsExist:;
+- (BOOL)fileIsExist:relativePath:;
+- (BOOL)fileIsExistAtPath:;
+- (id)fileOperateQueue;
+- (unsigned long long)fileSizeAtPath:error:;
+- (id)getContentOfDirectoryAtAbsolutePath:error:;
+- (id)getContentOfDirectoryAtPath:error:;
+- (id)getContentOfDirectoryAtPath:relativePath:error:;
+- (void)getDirectoriesWithComponentName:complete:;
+- (void)getFilePathsWithComponentName:levelStr:complete:;
+- (id)initWithLogsDirectory:;
+- (id)logsDirectory;
+- (void)setFileOperateQueue:;
+- (void)tryResetFileProtection:;
+- (id)fileManager;
+- (id)init;
+- (void)setFileManager:;
+- (void).cxx_destruct;
++ (id)shareFileManager;
+@end

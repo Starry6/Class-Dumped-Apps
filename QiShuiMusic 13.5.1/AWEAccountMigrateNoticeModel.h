@@ -1,0 +1,30 @@
+@interface AWEAccountMigrateNoticeModel : IESIMBaseApiModel
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString content;
+@property (nonatomic) q migrateRejectStatus;
+@property (nonatomic) NSString exportUserId;
+@property (nonatomic) NSString importUserId;
+@property (nonatomic) NSArray migrateTextArray;
+@property (nonatomic) {CGSize=dd} messageSize;
+@property (nonatomic) NSAttributedString attributedContent;
+- (void)analyzeAccountMigrateMessage;
+- (id)attributedContent;
+- (id)exportUserId;
+- (id)importUserId;
+- (long long)migrateRejectStatus;
+- (id)migrateTextArray;
+- (void)setAttributedContent:;
+- (void)setExportUserId:;
+- (void)setImportUserId:;
+- (void)setMigrateRejectStatus:;
+- (void)setMigrateTextArray:;
+- (id)content;
+- (void)setContent:;
+- (void)setTitle:;
+- (void)setMessageSize:;
+- (id)title;
+- (void).cxx_destruct;
+- (id)messageSize;
++ (id)migrateTextArrayJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

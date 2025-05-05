@@ -1,0 +1,32 @@
+@interface BMDeviceMetadataEvent : BMEventBase
+@property (nonatomic) NSString name;
+@property (nonatomic) NSString build;
+@property (nonatomic) NSString supplementalBuild;
+@property (nonatomic) q platform;
+@property (nonatomic) BOOL rapidSecurityResponsePreReboot;
+@property (nonatomic) I dataVersion;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithProtoData:;
+- (id)proto;
+- (id)json;
+- (id)encodeAsProto;
+- (unsigned int)dataVersion;
+- (unsigned long long)hash;
+- (id)build;
+- (id)initWithProto:;
+- (long long)platform;
+- (void).cxx_destruct;
+- (id)name;
+- (id)serialize;
+- (id)jsonDict;
+- (BOOL)isEqual:;
+- (id)initWithName:build:platform:;
+- (id)initWithName:build:supplementalBuild:platform:;
+- (id)initWithName:build:supplementalBuild:platform:rapidSecurityResponsePreReboot:;
+- (id)supplementalBuild;
+- (BOOL)rapidSecurityResponsePreReboot;
++ (id)eventWithData:dataVersion:;
+@end

@@ -1,0 +1,30 @@
+@interface TTImage2MP4ExportSession : NSObject
+@property (nonatomic) UIImage image;
+@property (nonatomic) {CGSize=dd} videoSize;
+@property (nonatomic) {?=qiIq} duration;
+@property (nonatomic) NSError error;
+@property (nonatomic) AVAssetWriter videoWriter;
+@property (nonatomic) NSURL outputURL;
+@property (nonatomic) double progress;
+@property (nonatomic) NSString outputFileName;
+- (id)initWith:videoSize:duration:outputFileName:;
+- (id)outputFileName;
+- (void)cancel;
+- (void)start:;
+- (void)setError:;
+- (void)setProgress:;
+- (void)setImage:;
+- (id)error;
+- (void)setDuration:;
+- (void)setOutputURL:;
+- (double)progress;
+- (id)outputURL;
+- (void).cxx_destruct;
+- (id)duration;
+- (id)image;
+- (id)videoSize;
+- (void)convert:;
+- (void)setVideoSize:;
+- (id)videoWriter;
+- (void)setVideoWriter:;
+@end

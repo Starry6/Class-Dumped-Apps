@@ -1,0 +1,35 @@
+@interface CAPortalLayer : CALayer
+@property (nonatomic) CALayer sourceLayer;
+@property (nonatomic) Q sourceLayerRenderId;
+@property (nonatomic) I sourceContextId;
+@property (nonatomic) BOOL hidesSourceLayer;
+@property (nonatomic) BOOL matchesOpacity;
+@property (nonatomic) BOOL matchesPosition;
+@property (nonatomic) BOOL matchesTransform;
+@property (nonatomic) BOOL allowsBackdropGroups;
+@property (nonatomic) BOOL crossDisplay;
+- (void)setSourceLayer:;
+- (BOOL)allowsBackdropGroups;
+- (unsigned long long)sourceLayerRenderId;
+- (void)setHidesSourceLayer:;
+- (void)didChangeValueForKey:;
+- (unsigned int)sourceContextId;
+- (void)setMatchesOpacity:;
+- (void)setCrossDisplay:;
+- (BOOL)matchesTransform;
+- (id)_copyRenderLayer:layerFlags:commitFlags:;
+- (BOOL)_renderLayerDefinesProperty:;
+- (BOOL)crossDisplay;
+- (void)layerDidBecomeVisible:;
+- (void)setSourceContextId:;
+- (BOOL)matchesPosition;
+- (void)setSourceLayerRenderId:;
+- (void)setAllowsBackdropGroups:;
+- (void)setMatchesTransform:;
+- (BOOL)matchesOpacity;
+- (BOOL)hidesSourceLayer;
+- (void)setMatchesPosition:;
+- (id)sourceLayer;
++ (BOOL)_hasRenderLayerSubclass;
++ (BOOL)CA_automaticallyNotifiesObservers:;
+@end

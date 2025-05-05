@@ -1,0 +1,35 @@
+@interface CalculatorViewController : UIViewController
+@property (nonatomic) UILabel displayLabel;
+@property (nonatomic) NSMutableString currentInput;
+@property (nonatomic) double lastValue;
+@property (nonatomic) q currentOperation;
+@property (nonatomic) NSString password;
+@property (nonatomic) BOOL usePassword;
+- (void)viewDidDisappear:;
+- (void)viewDidLoad;
+- (void)showMenu;
+- (void)promptForPasswordToDisable;
+- (void)promptForPasswordToEnable;
+- (void)changePassword;
+- (void)promptForNewPassword;
+- (unsigned long long)supportedInterfaceOrientations;
+- (BOOL)shouldAutorotate;
+- (id)createButtonWithTitle:backgroundColor:;
+- (id)createButtonRowWithTitles:;
+- (void)buttonTapped:;
+- (BOOL)prefersStatusBarHidden;
+- (long long)preferredStatusBarStyle;
+- (id)displayLabel;
+- (void)setDisplayLabel:;
+- (id)currentInput;
+- (void)setCurrentInput:;
+- (double)lastValue;
+- (void)setLastValue:;
+- (long long)currentOperation;
+- (void)setCurrentOperation:;
+- (id)password;
+- (void)setPassword:;
+- (BOOL)usePassword;
+- (void)setUsePassword:;
+- (void).cxx_destruct;
+@end

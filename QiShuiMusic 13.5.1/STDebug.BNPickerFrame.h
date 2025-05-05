@@ -1,0 +1,5 @@
+@interface STDebug.BNPickerFrame : BNCommonAdapter.BNFrameView
+- (id)initWithCoder:;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+@end

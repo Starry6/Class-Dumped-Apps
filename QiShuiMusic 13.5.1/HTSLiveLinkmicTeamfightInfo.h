@@ -1,0 +1,35 @@
+@interface HTSLiveLinkmicTeamfightInfo : IESLivePBBaseMessage
+@property (nonatomic) NSString mixInitiatorUserId;
+@property (nonatomic) NSString mixInitiatorAnchorId;
+@property (nonatomic) NSString dataSource;
+@property (nonatomic) q teamfightId;
+@property (nonatomic) NSString teamfightIdStr;
+@property (nonatomic) NSInteger type;
+@property (nonatomic) NSInteger status;
+@property (nonatomic) q startTime;
+@property (nonatomic) q duration;
+@property (nonatomic) q punishStartTime;
+@property (nonatomic) q punishDuration;
+@property (nonatomic) NSMutableArray teamInfosArray;
+@property (nonatomic) Q teamInfosArray_Count;
+@property (nonatomic) q winTeamId;
+@property (nonatomic) q currentTimeMs;
+@property (nonatomic) NSInteger pkBarStyle;
+@property (nonatomic) q showStartTime;
+@property (nonatomic) q initiatorOpenId;
+@property (nonatomic) NSInteger scoreType;
+@property (nonatomic) q showDuration;
+@property (nonatomic) q initiatorAnchorId;
+@property (nonatomic) NSString winTeamIdStr;
+@property (nonatomic) NSString dressId;
+@property (nonatomic) NSString initiatorAnchorOpenId;
+@property (nonatomic) NSString initiatorUserOpenId;
+@property (nonatomic) NSInteger teamBattleTeamType;
+@property (nonatomic) NSInteger contentOneOfCase;
+@property (nonatomic) HTSLiveTeamfightRoomBattleContent roomBattleContent;
+- (id)mixInitiatorAnchorId;
+- (id)mixInitiatorUserId;
+- (void)setDataSource:;
+- (id)dataSource;
++ (id)descriptor;
+@end

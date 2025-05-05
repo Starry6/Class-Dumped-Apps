@@ -1,0 +1,32 @@
+@interface AFHomeAnnouncement : NSObject
+@property (nonatomic) NSString identifier;
+@property (nonatomic) Q startedHostTime;
+@property (nonatomic) Q finishedHostTime;
+@property (nonatomic) NSDate startedDate;
+@property (nonatomic) NSDate finishedDate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (id)buildDictionaryRepresentation;
+- (id)identifier;
+- (id)mutatedCopyWithMutator:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)initWithDictionaryRepresentation:;
+- (id)_descriptionWithIndent:;
+- (id)initWithBuilder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)initWithIdentifier:startedHostTime:finishedHostTime:startedDate:finishedDate:;
+- (unsigned long long)startedHostTime;
+- (unsigned long long)finishedHostTime;
+- (id)startedDate;
+- (id)finishedDate;
++ (id)newWithBuilder:;
++ (BOOL)supportsSecureCoding;
+@end

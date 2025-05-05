@@ -1,0 +1,32 @@
+@interface FLEXKeyboardToolbar : UIView
+@property (nonatomic) CALayer topBorder;
+@property (nonatomic) UIView toolbarView;
+@property (nonatomic) UIScrollView scrollView;
+@property (nonatomic) UIVisualEffectView blurView;
+@property (nonatomic) BOOL useSystemAppearance;
+@property (nonatomic) BOOL usingDarkMode;
+@property (nonatomic) NSArray buttons;
+@property (nonatomic) q appearance;
+- (id)initWithButtons:;
+- (void)setAppearance:;
+- (void)layoutSubviews;
+- (id)inputAccessoryView;
+- (id)makeScrollView;
+- (void)addButtons;
+- (void)setButtons:;
+- (BOOL)useSystemAppearance;
+- (BOOL)usingDarkMode;
+- (void)traitCollectionDidChange:;
+- (id)buttons;
+- (long long)appearance;
+- (id)topBorder;
+- (void)setTopBorder:;
+- (id)toolbarView;
+- (void)setToolbarView:;
+- (id)scrollView;
+- (void)setScrollView:;
+- (id)blurView;
+- (void)setBlurView:;
+- (void).cxx_destruct;
++ (id)toolbarWithButtons:;
+@end

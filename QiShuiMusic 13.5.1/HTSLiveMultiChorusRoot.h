@@ -1,0 +1,2 @@
+@interface HTSLiveMultiChorusRoot : GPBRootObject
+@end

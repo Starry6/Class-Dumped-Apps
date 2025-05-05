@@ -1,0 +1,37 @@
+@interface IESLiveSaaSScorllLabelView : UIView
+@property (nonatomic) UILabel frontLabel;
+@property (nonatomic) UILabel backLabel;
+@property (nonatomic) {CGSize=dd} contentSize;
+@property (nonatomic) BOOL waitingForLayout;
+@property (nonatomic) double speed;
+@property (nonatomic) BOOL enableAnimation;
+@property (nonatomic) q scorllLabelAlignMode;
+@property (nonatomic) BOOL shouldRepeat;
+@property (nonatomic) NSAttributedString attributedContent;
+- (id)attributedContent;
+- (id)backLabel;
+- (id)frontLabel;
+- (void)renderUI;
+- (long long)scorllLabelAlignMode;
+- (void)setAttributedContent:;
+- (void)setBackLabel:;
+- (void)setFrontLabel:;
+- (void)setScorllLabelAlignMode:;
+- (void)setWaitingForLayout:;
+- (BOOL)waitingForLayout;
+- (id)init;
+- (void)layoutSubviews;
+- (void)setSpeed:;
+- (double)speed;
+- (void)startAnimation;
+- (void)setEnableAnimation:;
+- (void).cxx_destruct;
+- (id)contentSize;
+- (BOOL)enableAnimation;
+- (void)setContentSize:;
+- (void)stopAnimation;
+- (id)initWithContent:;
+- (void)resetLayout;
+- (void)setShouldRepeat:;
+- (BOOL)shouldRepeat;
+@end

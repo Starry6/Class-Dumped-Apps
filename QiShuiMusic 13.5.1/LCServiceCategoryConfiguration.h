@@ -1,0 +1,35 @@
+@interface LCServiceCategoryConfiguration : SISchemaInstrumentationMessage
+@property (nonatomic) NSInteger eventType;
+@property (nonatomic) BOOL hasEventType;
+@property (nonatomic) LCServiceLoggingParameters categoryParameters;
+@property (nonatomic) BOOL hasCategoryParameters;
+@property (nonatomic) LCServiceBlacklistedFields blacklist;
+@property (nonatomic) BOOL hasBlacklist;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (int)eventType;
+- (void)setEventType:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void)setHasEventType:;
+- (id)blacklist;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)hasEventType;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)deleteEventType;
+- (BOOL)hasCategoryParameters;
+- (void)deleteCategoryParameters;
+- (BOOL)hasBlacklist;
+- (void)deleteBlacklist;
+- (id)categoryParameters;
+- (void)setCategoryParameters:;
+- (void)setBlacklist:;
+- (void)setHasCategoryParameters:;
+- (void)setHasBlacklist:;
+@end

@@ -1,0 +1,32 @@
+@interface CNDowntimeWhitelist : NSObject
+@property (nonatomic) CNContactStore contactStore;
+@property (nonatomic) NSNotificationCenter notificationCenter;
+@property (nonatomic) <NSObject> contactStoreDidChangeNotificationToken;
+@property (nonatomic) <CNDowntimeWhitelistContainerFetching> containerFetcher;
+- (id)initWithContactStore:notificationCenter:;
+- (id)requestForContactsInPermittedContainersWithHandles:;
+- (id)init;
+- (BOOL)isHandleStringWhitelisted:error:;
+- (void)dealloc;
+- (id)notificationCenter;
+- (id)requestForNonUnifiedContacts;
+- (id)contactStoreDidChangeNotificationToken;
+- (id)whitelistedHandleStringsFromHandleStrings:error:;
+- (id)containerFetcher;
+- (id)whitelistedHandleStringsFromHandleStrings:;
+- (void)setTestContainerFetcher:;
+- (id)allWhitelistedContacts:;
+- (void)beginObservingChangeNotifications;
+- (void).cxx_destruct;
+- (id)contactStore;
+- (BOOL)isHandleStringWhitelisted:;
+- (id)requestForContactsInPermittedContainers;
+- (id)allWhitelistedHandleStrings:;
+- (id)allWhitelistedHandleStrings;
+- (id)initWithContactStore:;
+- (id)initWithContactStore:accountStore:notificationCenter:;
++ (id)os_log;
++ (BOOL)isWhitelistedContact:;
++ (id)keyDescriptor;
++ (BOOL)anyContactIsWhitelisted:;
+@end

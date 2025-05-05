@@ -1,0 +1,2 @@
+@interface IESECTabDummyViewElement : IESECSlidingAbstractTabObject
+@end

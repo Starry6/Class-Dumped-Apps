@@ -1,0 +1,38 @@
+@interface LPiCloudFamilyInvitationMetadata : LPSpecializationMetadata
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString subtitle;
+@property (nonatomic) NSString action;
+@property (nonatomic) NSString kind;
+@property (nonatomic) LPImage image;
+@property (nonatomic) LPImage icon;
+- (void)setKind:;
+- (id)icon;
+- (id)kind;
+- (id)action;
+- (void)setImage:;
+- (void)setSubtitle:;
+- (void)setTitle:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)setAction:;
+- (void)encodeWithCoder:;
+- (id)title;
+- (void)setIcon:;
+- (void).cxx_destruct;
+- (id)subtitle;
+- (BOOL)isEqual:;
+- (id)image;
+- (id)copyWithZone:;
+- (id)presentationPropertiesForTransformer:;
+- (BOOL)canGeneratePresentationPropertiesForURL:;
+- (id)previewSummaryForTransformer:;
+- (id)previewImageForTransformer:;
+- (void)populateMetadataForBackwardCompatibility:;
+- (void)_enumerateAsynchronousFields:;
++ (BOOL)supportsSecureCoding;
++ (id)keyPathsForValuesAffecting_dummyPropertyForObservation;
+@end

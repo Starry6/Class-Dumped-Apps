@@ -1,0 +1,31 @@
+@interface BTDReachabilityManager : NSObject
+@property (nonatomic) ^{__SCNetworkReachability=} networkReachability;
+@property (nonatomic) Q networkReachabilityAssociation;
+@property (nonatomic) q networkReachabilityStatus;
+@property (nonatomic) @? networkReachabilityStatusBlock;
+@property (nonatomic) BOOL reachable;
+@property (nonatomic) BOOL reachableViaWWAN;
+@property (nonatomic) BOOL reachableViaWiFi;
+- (BOOL)isReachableViaWWAN;
+- (BOOL)isReachableViaWiFi;
+- (id)localizedNetworkReachabilityStatusString;
+- (unsigned long long)networkReachabilityAssociation;
+- (long long)networkReachabilityStatus;
+- (id)networkReachabilityStatusBlock;
+- (void)setNetworkReachabilityAssociation:;
+- (void)setNetworkReachabilityStatus:;
+- (void)setNetworkReachabilityStatusBlock:;
+- (void)setReachabilityStatusChangeBlock:;
+- (void)dealloc;
+- (id)networkReachability;
+- (void)setNetworkReachability:;
+- (void)startMonitoring;
+- (void).cxx_destruct;
+- (BOOL)isReachable;
+- (void)stopMonitoring;
+- (id)initWithReachability:;
++ (id)managerForAddress:;
++ (id)sharedManager;
++ (id)keyPathsForValuesAffectingValueForKey:;
++ (id)managerForDomain:;
+@end

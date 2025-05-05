@@ -1,0 +1,30 @@
+@interface Forwarp : FRCMetalBase
+@property (nonatomic) BOOL isLiteSynthesis;
+@property (nonatomic) float errorTolerance;
+@property (nonatomic) BOOL createOcclusionMask;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (BOOL)setupMetal;
+- (id)initWithDevice:commmandQueue:isLiteSynthesis:;
+- (id)createBestBufferWidth:height:;
+- (id)createOutputBufferWidth:height:channels:;
+- (void)allocateBuffersWidth:height:channels:bestBuffer:outputBuffer:;
+- (void)updateBest:error:timeScale:best:;
+- (void)encodeInitialieBestToCommandBuffer:bestError:;
+- (void)encodeUpdateBestToCommandBuffer:flow:error:timeScale:bestError:;
+- (void)updateOutput:flow:error:timeScale:fullWarp:bestError:output:;
+- (void)encodeUpdateOutputToCommandBuffer:input:flow:error:timeScale:fullWarp:bestError:output:;
+- (void)encodeNormalizationToCommandBuffer:fromBuffer:toTexture:inputSize:;
+- (void)encodeToCommandBuffer:input:flow:error:timeScale:fullWarp:bestError:outputBuffer:;
+- (void)encodeToCommandBuffer:input:flow:error:timeScale:fullWarp:bestError:output:destination:;
+- (void)encodeBlendWarpedFeaturesWithErrorMaskToCommandBuffer:first:second:timeScale:destination:;
+- (void)encodeBlendWarpedFeaturesWithErrorMaskToCommandBuffer:first:second:forwardErrorMap:backwardErrorMap:timeScale:destination:;
+- (void)encodeErrorMapDilationToCommandBuffer:forwardSource:backwardSource:forwardDestination:backwardDestination:minimumAdjacentHoleCount:maximumHoleValue:;
+- (void)encodeBlendTexturesToCommandBuffer:firstWarpedTexture:secondWarpedTexture:forwardErrorMap:backwardErrorMap:synthesizedTexture:timeScale:synthesizedImageWeight:destination:;
+- (BOOL)isLiteSynthesis;
+- (void)setIsLiteSynthesis:;
+- (float)errorTolerance;
+- (void)setErrorTolerance:;
+- (BOOL)createOcclusionMask;
+- (void)setCreateOcclusionMask:;
+@end

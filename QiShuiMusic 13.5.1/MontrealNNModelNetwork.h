@@ -1,0 +1,37 @@
+@interface MontrealNNModelNetwork : MontrealNNDescription
+@property (nonatomic) NSArray nodes;
+@property (nonatomic) NSArray inputs;
+@property (nonatomic) NSArray outputs;
+@property (nonatomic) MontrealNNModelQuantization quantization;
+@property (nonatomic) NSString jsonDir;
+@property (nonatomic) MontrealNNModelOptimizerParam optimizerParams;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)inputs;
+- (id)init;
+- (void)setNodes:;
+- (id)outputs;
+- (id)nodes;
+- (id)jsonDescription;
+- (void).cxx_destruct;
+- (void)setInputs:;
+- (void)description:indent:;
+- (id)checkForValidity;
+- (void)generateJSONAtPath:;
+- (id)generateModelContainer;
+- (id)optimizerParams;
+- (id)jsonDir;
+- (void)setOutputs:;
+- (id)createDataContainer;
+- (id)quantization;
+- (id)initWithJSONDir:;
+- (id)initWithModelContainer:tensors:;
+- (id)initWithDictionary:tensors:quantization:optimizerParams:jsonDir:optimization:;
+- (void)validateNetworkTensors:;
+- (void)collapseNodes;
+- (void)validateNodeTensors;
+- (void)collapsePackUnpack:nodesToRemove:;
+- (void)removeView:nodesToRemove:;
+@end

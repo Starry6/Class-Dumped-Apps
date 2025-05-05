@@ -1,0 +1,34 @@
+@interface MIOSpecificationFileModel : NSObject
+@property (nonatomic) NSURL modelURL;
+@property (nonatomic) NSObject<MIOModeling> specificationModel;
+@property (nonatomic) MIOVersionInfo specificationVersion;
+@property (nonatomic) NSString modelTypeName;
+@property (nonatomic) MIOModelDescription modelDescription;
+@property (nonatomic) NSArray layers;
+@property (nonatomic) NSArray subModels;
+@property (nonatomic) NSDictionary layerHistogram;
+@property (nonatomic) ^v irProgram;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)layers;
+- (id)initWithModel:;
+- (BOOL)writeToURL:error:;
+- (unsigned long long)hash;
+- (id)modelDescription;
+- (id)modelURL;
+- (void)setModelURL:;
+- (void).cxx_destruct;
+- (BOOL)isEqual:;
+- (id)initWithContentsOfURL:error:;
+- (id)copyWithZone:;
+- (id)specificationVersion;
+- (void)setModelDescription:;
+- (id)modelTypeName;
+- (id)subModels;
+- (id)irProgram;
+- (id)specificationModel;
+- (void)setSpecificationModel:;
+- (id)layerHistogram;
+@end

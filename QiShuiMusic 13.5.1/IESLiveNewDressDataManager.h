@@ -1,0 +1,37 @@
+@interface IESLiveNewDressDataManager : NSObject
+@property (nonatomic) <IESLiveNewDressDataStoreProtocol> dressStore;
+@property (nonatomic) <IESLiveNewDressLoaderProtocol> dressLoader;
+@property (nonatomic) IESLiveCombineSubject onDressListUpdated;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)getBorderWithDressID:shouldWaitDownload:forceUpdate:completion:;
+- (void)setDressLoader:;
+- (id)dressDataVersion;
+- (id)dressLoader;
+- (id)dressStore;
+- (id)getBorderWithDressID:error:;
+- (id)getDressDataWithDressID:;
+- (id)getDressIDsWithDressType:;
+- (id)getDressWithDressID:error:;
+- (void)getDressWithDressID:shouldWaitDownload:forceUpdate:completion:;
+- (id)getGuestBattleWithDressID:error:;
+- (void)getGuestBattleWithDressID:shouldWaitDownload:forceUpdate:completion:;
+- (id)getOpenAssetWithDressID:error:;
+- (void)getOpenAssetWithDressID:shouldWaitDownload:forceUpdate:completion:;
+- (id)getProfileSkinWithDressID:error:;
+- (void)getProfileSkinWithDressID:shouldWaitDownload:forceUpdate:completion:;
+- (id)getRedEnvelopeSkinWithDressID:error:;
+- (void)getRedEnvelopeSkinWithDressID:shouldWaitDownload:forceUpdate:completion:;
+- (id)getUserEnterWithDressID:error:;
+- (void)getUserEnterWithDressID:shouldWaitDownload:forceUpdate:completion:;
+- (id)onDressListUpdated;
+- (void)p_loadDataFromDiskCache;
+- (void)setDressStore:;
+- (void)setOnDressListUpdated:;
+- (void)updateDressListWithCompletion:;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
+@end

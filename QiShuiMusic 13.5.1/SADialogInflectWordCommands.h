@@ -1,0 +1,16 @@
+@interface SADialogInflectWordCommands : SABaseCommand
+@property (nonatomic) NSArray inflectWordCommands;
+@property (nonatomic) NSString aceId;
+@property (nonatomic) NSString refId;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)groupIdentifier;
+- (BOOL)requiresResponse;
+- (id)encodedClassName;
+- (id)inflectWordCommands;
+- (void)setInflectWordCommands:;
++ (id)inflectWordCommands;
++ (id)inflectWordCommandsWithDictionary:context:;
+@end

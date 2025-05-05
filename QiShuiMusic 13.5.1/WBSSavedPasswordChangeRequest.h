@@ -1,0 +1,2 @@
+@interface WBSSavedPasswordChangeRequest : WBSSavedAccountChangeRequest
+@end

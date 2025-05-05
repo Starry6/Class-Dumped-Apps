@@ -1,0 +1,38 @@
+@interface CSJExpressUgenAggregationVM : CSJExpressRewardFullScreenVM
+@property (nonatomic) CSJAdInfoViewModel ugenAggregationInfoViewModel;
+@property (nonatomic) CSJUgenAggregationAdapter aggregationAdapter;
+@property (nonatomic) BOOL aggregationLoadingViewMute;
+@property (nonatomic) BOOL aggregationPlayableRenderFailed;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)aggregationPlayableRenderFailed;
+- (void)aggregationSwitchToWebViewMute:;
+- (id)aggregationAdapter;
+- (id)aggregationCurrentWebVC;
+- (BOOL)aggregationLoadingViewMute;
+- (id)aggregationRewardedVideoAd;
+- (void)aggregationRewardedVideoH5AdDidClickNeedJump:;
+- (void)aggregationShowDislikeFeedback;
+- (void)aggregationUpdateSlientBtnState:;
+- (void)browseEcomAlertCancleAction;
+- (void)browseEcomAlertSureAction;
+- (id)closeButtonForLoadingView;
+- (id)dislikeButtonForLoadingView;
+- (id)initViewModelWithExpressAdView:expressAdViews:nativeAd:rootViewController:;
+- (BOOL)isAggregationShowRewardBrowseEcomAlert;
+- (void)setAggregationAdapter:;
+- (void)setAggregationLoadingViewMute:;
+- (void)setIsShowAlertView:;
+- (void)setUgenAggregationInfoViewModel:;
+- (void)showAggregationRewardBrowseEcomAlert:;
+- (id)ugenAggregationInfoViewModel;
+- (id)ugenAggregationRootVC;
+- (id)ugenAggregationViewController;
+- (void)vmAggregationViewDidAppear;
+- (void)vmAggregationViewDidDisappear;
+- (void)vmAggregationViewDidLoad;
+- (void)vmLoadData;
+- (void).cxx_destruct;
+@end

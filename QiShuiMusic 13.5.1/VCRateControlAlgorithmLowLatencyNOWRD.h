@@ -1,0 +1,24 @@
+@interface VCRateControlAlgorithmLowLatencyNOWRD : VCRateControlAlgorithmBase
+- (id)init;
+- (BOOL)doRateControlWithStatistics:;
+- (BOOL)doRateControlWithNWConnectionStatistics:;
+- (int)rampUpTier;
+- (int)rampDownTier;
+- (BOOL)shouldRampDown;
+- (BOOL)shouldRampUp;
+- (void)configure:restartRequired:;
+- (BOOL)doRateControlWithVCRCStatistics:;
+- (void)checkCongestionStatus;
+- (void)resetRampingStatus;
+- (void)printRateControlInfoToLogDump;
+- (void)updateSendBitrateAndCheckIdlePeriod:instantBitrate:;
+- (void)updateInternalStatus;
+- (void)setRateChangeCounter;
+- (BOOL)shouldRampDownDueToNOWRD;
+- (BOOL)shouldRampDownDueToNOWRDAcc;
+- (double)computeNWConnectionDelayThresholdForRampDown:;
+- (BOOL)shouldRampUpDueToNWConnection;
+- (BOOL)shouldRampDownDueToNWConnection;
+- (int)rampDownTierDueToNWConnection;
+- (void)checkRampUpSettlingStatus;
+@end

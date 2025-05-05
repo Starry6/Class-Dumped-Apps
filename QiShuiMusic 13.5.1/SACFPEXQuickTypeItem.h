@@ -1,0 +1,30 @@
+@interface SACFPEXQuickTypeItem : SACFPEXItem
+@property (nonatomic) NSArray fields;
+@property (nonatomic) NSArray itemFlags;
+@property (nonatomic) NSString label;
+@property (nonatomic) NSString name;
+@property (nonatomic) NSString originatingBundleId;
+@property (nonatomic) NSString originatingWebsiteURL;
+@property (nonatomic) NSDate startDate;
+@property (nonatomic) NSString value;
+- (id)startDate;
+- (void)setFields:;
+- (void)setName:;
+- (id)groupIdentifier;
+- (void)setOriginatingWebsiteURL:;
+- (void)setStartDate:;
+- (void)setLabel:;
+- (id)label;
+- (id)fields;
+- (id)originatingBundleId;
+- (void)setValue:;
+- (id)encodedClassName;
+- (id)originatingWebsiteURL;
+- (id)value;
+- (id)name;
+- (id)itemFlags;
+- (void)setItemFlags:;
+- (void)setOriginatingBundleId:;
++ (id)quickTypeItem;
++ (id)quickTypeItemWithDictionary:context:;
+@end

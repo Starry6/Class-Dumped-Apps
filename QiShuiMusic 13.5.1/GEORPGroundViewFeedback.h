@@ -1,0 +1,32 @@
+@interface GEORPGroundViewFeedback : PBCodable
+@property (nonatomic) BOOL hasGroundViewContext;
+@property (nonatomic) GEORPGroundViewFeedbackContext groundViewContext;
+@property (nonatomic) BOOL hasGroundViewCorrections;
+@property (nonatomic) GEORPGroundViewCorrections groundViewCorrections;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (id)init;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasGroundViewContext;
+- (id)groundViewContext;
+- (void)setGroundViewContext:;
+- (BOOL)hasGroundViewCorrections;
+- (id)groundViewCorrections;
+- (void)setGroundViewCorrections:;
++ (BOOL)isValid:;
+@end

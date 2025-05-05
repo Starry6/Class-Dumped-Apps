@@ -1,0 +1,37 @@
+@interface ICManagedObjectContextUpdater : NSObject
+@property (nonatomic) NSPersistentStore store;
+@property (nonatomic) NSManagedObjectContext context;
+@property (nonatomic) NSPersistentHistoryToken previousHistoryToken;
+@property (nonatomic) NSDate previousHistoryDate;
+@property (nonatomic) BOOL listening;
+@property (nonatomic) NSObject<OS_dispatch_queue> queue;
+@property (nonatomic) Q numberOfCoalescedNotifications;
+@property (nonatomic) ICSelectorDelayer delayer;
+- (id)persistentStoreCoordinator;
+- (void)stopListeningForRemoteContextDidChangeNotifications;
+- (id)init;
+- (void)dealloc;
+- (void)setStore:;
+- (void)setDelayer:;
+- (BOOL)isListening;
+- (id)context;
+- (void)setNumberOfCoalescedNotifications:;
+- (void)setListening:;
+- (unsigned long long)numberOfCoalescedNotifications;
+- (id)previousHistoryToken;
+- (void)fetchChangeHistory;
+- (void)setPreviousHistoryDate:;
+- (void)setPreviousHistoryToken:;
+- (void)startListeningForRemoteContextDidChangeNotifications;
+- (void).cxx_destruct;
+- (id)initWithStore:context:;
+- (void)setQueue:;
+- (id)store;
+- (id)previousHistoryDate;
+- (id)delayer;
+- (void)setContext:;
+- (id)queue;
+- (void)requestUpdate;
+- (void)handlePersistentStoreRemoteChangeNotification:;
++ (id)contextSaveNotificationFromPersistentHistoryResult:ignoringContextName:fromTransactionAuthor:latestToken:latestTimestamp:;
+@end

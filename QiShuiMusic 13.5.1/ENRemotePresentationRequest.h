@@ -1,0 +1,32 @@
+@interface ENRemotePresentationRequest : NSObject
+@property (nonatomic) q requestType;
+@property (nonatomic) NSUUID receiptId;
+@property (nonatomic) NSDictionary decisionInfo;
+@property (nonatomic) ENRegion agencyRegion;
+@property (nonatomic) NSString appBundleIdentifier;
+@property (nonatomic) ENRegion region;
+@property (nonatomic) BOOL testMode;
+- (long long)requestType;
+- (void)setRequestType:;
+- (void)setTestMode:;
+- (void)setAppBundleIdentifier:;
+- (id)region;
+- (id)initWithCoder:;
+- (id)appBundleIdentifier;
+- (BOOL)testMode;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)copyWithZone:;
+- (void)setAgencyRegion:;
+- (id)receiptId;
+- (id)decisionInfo;
+- (void)onboardingRequestCompletedWithDecision:;
+- (void)keyReleaseRequestCompletedWithDecision:;
+- (void)preApprovalRequestCompletedWithDecision:;
+- (void)setReceiptId:;
+- (void)setDecisionInfo:;
+- (id)agencyRegion;
++ (BOOL)supportsSecureCoding;
++ (id)presentationRequestWithType:;
+@end

@@ -1,0 +1,30 @@
+@interface VKFrameProvider : NSObject
+@property (nonatomic) <VKFrameProviderDelegate> delegate;
+@property (nonatomic) NSObject<OS_dispatch_queue> delegateQueue;
+@property (nonatomic) VKFrameProviderConfiguration configuration;
+@property (nonatomic) BOOL isRunning;
+@property (nonatomic) BOOL isProcessing;
+@property (nonatomic) UIView previewView;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} regionOfInterest;
+- (id)previewView;
+- (id)init;
+- (BOOL)isRunning;
+- (void)unlock;
+- (id)delegateQueue;
+- (void)lock;
+- (id)configuration;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)initWithConfiguration:;
+- (void)setDelegate:queue:;
+- (void)stopRunning;
+- (void)startRunning;
+- (BOOL)isProcessing;
+- (id)regionOfInterest;
+- (void)setRegionOfInterest:;
+- (void)stopProcessing;
+- (void)registerProcessor:;
+- (void)unregisterProcessor:;
+- (void)startProcessing;
+- (void)sendFrame:;
+@end

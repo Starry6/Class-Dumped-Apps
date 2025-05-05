@@ -1,0 +1,2 @@
+@interface GPBApiRoot : GPBRootObject
+@end

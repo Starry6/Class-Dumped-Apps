@@ -1,0 +1,37 @@
+@interface NSDateInterval : NSObject
+@property (nonatomic) Q bls_machContinuousStartTime;
+@property (nonatomic) Q bls_machContinuousEndTime;
+@property (nonatomic) Q bls_machDuration;
+@property (nonatomic) NSDate startDate;
+@property (nonatomic) NSDate endDate;
+@property (nonatomic) double duration;
+- (id)_ui_dateInRangeForDate:;
+- (BOOL)_ui_containsMonth:;
+- (BOOL)_ui_containsDay:;
+- (id)bls_loggingString;
+- (id)bls_shortLoggingString;
+- (unsigned long long)bls_machContinuousStartTime;
+- (unsigned long long)bls_machContinuousEndTime;
+- (unsigned long long)bls_machDuration;
+- (id)bls_initWithStartMachContinuousTime:endMachContinuousTime:;
+- (BOOL)bls_containsDate:withEpsilon:;
+- (id)startDate;
+- (id)init;
+- (id)initWithStartDate:duration:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)initWithStartDate:endDate:;
+- (void)encodeWithCoder:;
+- (id)endDate;
+- (long long)compare:;
+- (id)description;
+- (BOOL)containsDate:;
+- (double)duration;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)isEqualToDateInterval:;
+- (BOOL)intersectsDateInterval:;
+- (id)intersectionWithDateInterval:;
++ (id)allocWithZone:;
++ (BOOL)supportsSecureCoding;
+@end

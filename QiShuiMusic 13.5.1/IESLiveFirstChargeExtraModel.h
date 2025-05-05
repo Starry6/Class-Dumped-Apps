@@ -1,0 +1,31 @@
+@interface IESLiveFirstChargeExtraModel : IESLiveDynamicMTLModel
+@property (nonatomic) NSString givingDesc;
+@property (nonatomic) IESLiveImage giftImg;
+@property (nonatomic) NSArray panelBottomDesc;
+@property (nonatomic) IESLiveImage panelTopImg;
+@property (nonatomic) NSArray rule;
+@property (nonatomic) IESLiveFlexImage panelBottomBGImg;
+@property (nonatomic) IESLiveFlexImage panelTopBGImg;
+@property (nonatomic) NSArray panelTopDesc;
+@property (nonatomic) IESLiveFlexImage giftPanelViewBottomBGImg;
+@property (nonatomic) IESLiveImage roomChargeBtnImg;
+@property (nonatomic) NSString introChargeBtnText;
+@property (nonatomic) IESLiveImage introBgImg;
+@property (nonatomic) NSString panelBottomSchema;
+@property (nonatomic) NSArray giftPanelTopDesc;
+@property (nonatomic) NSString giftPanelTopSchemeURL;
+@property (nonatomic) NSString giftPanelTopLynxURL;
+@property (nonatomic) NSDictionary dictionaryValue;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)giftPanelTopLynxURL;
+- (void)setGiftPanelTopLynxURL:;
+- (void).cxx_destruct;
++ (id)panelBottomBGImgJSONTransformer;
++ (id)giftImgJSONTransformer;
++ (id)panelTopBGImgJSONTransformer;
++ (id)panelTopImgJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

@@ -1,0 +1,38 @@
+@interface IESLiveMultiLinkerAudienceBuilder : NSObject
+@property (nonatomic) UIImageView bgImageView;
+@property (nonatomic) BOOL isInMultiLinkerSEILayout;
+@property (nonatomic) BOOL hasHideFullScreenButton;
+@property (nonatomic) BOOL hasDisableVR;
+@property (nonatomic) IESLiveLinkMicSEIParserResult lastMultiLinkerSEI;
+@property (nonatomic) IESLiveLinkMicSEIParserResult lastSEI;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)lastSEI;
+- (unsigned long long)supportSeiTypes;
+- (void)getReadyToMultiLinker;
+- (BOOL)hasDisableVR;
+- (BOOL)hasHideFullScreenButton;
+- (BOOL)isInMultiLinkerSEILayout;
+- (BOOL)isMultiLinkerSEI:;
+- (id)lastMultiLinkerSEI;
+- (void)onParseredWithSEIResult:;
+- (void)playerDidEndplayInSmallWindow;
+- (void)resetPlayerBgImageIfNeeded;
+- (void)setHasDisableVR:;
+- (void)setHasHideFullScreenButton:;
+- (void)setIsInMultiLinkerSEILayout:;
+- (void)setLastMultiLinkerSEI:;
+- (void)setLastSEI:;
+- (void)setupInPCMultiLinker;
+- (void)startListenSEI;
+- (void)subscribedSyncDataUpdatedWithValue:oldVersion:newVersion:;
+- (void)subscribedSyncDataWithValue:version:;
+- (void)trackConnectionWatchDuration:;
+- (unsigned long long)typeToCheckIfLaterThanWhenReuseSEI;
+- (id)initWithContext:;
+- (void).cxx_destruct;
+- (void)setBgImageView:;
+- (id)bgImageView;
+@end

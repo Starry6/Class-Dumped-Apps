@@ -1,0 +1,34 @@
+@interface CKDatabase : NSObject
+@property (nonatomic) CKDatabaseImplementation implementation;
+@property (nonatomic) CKContainer container;
+@property (nonatomic) q scope;
+@property (nonatomic) NSOperationQueue operationQueue;
+@property (nonatomic) q databaseScope;
+- (long long)databaseScope;
+- (void)setContainer:;
+- (id)init;
+- (id)_initWithImplementation:container:;
+- (id)implementation;
+- (long long)scope;
+- (void)fetchAllRecordZonesWithCompletionHandler:;
+- (void)fetchSubscriptionWithID:completionHandler:;
+- (id)container;
+- (void)fetchRecordWithID:completionHandler:;
+- (void)addOperation:;
+- (id)operationQueue;
+- (void)fetchRecordZoneWithID:completionHandler:;
+- (void)performQuery:inZoneWithID:completionHandler:;
+- (void)clearRecordCache;
+- (void)saveRecordZone:completionHandler:;
+- (void)deleteSubscriptionWithID:completionHandler:;
+- (id)CKPropertiesDescription;
+- (void)saveRecord:completionHandler:;
+- (void)deleteRecordZoneWithID:completionHandler:;
+- (void).cxx_destruct;
+- (void)saveSubscription:completionHandler:;
+- (id)description;
+- (id)forwardingTargetForSelector:;
+- (id)_initWithContainer:scope:;
+- (void)deleteRecordWithID:completionHandler:;
+- (void)fetchAllSubscriptionsWithCompletionHandler:;
+@end

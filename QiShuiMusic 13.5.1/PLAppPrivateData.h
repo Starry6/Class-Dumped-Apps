@@ -1,0 +1,31 @@
+@interface PLAppPrivateData : NSObject
+@property (nonatomic) NSMutableDictionary backingDictionary;
+@property (nonatomic) NSURL libraryURL;
+@property (nonatomic) PLPhotoLibraryPathManager pathManager;
+- (id)pathManager;
+- (id)valueForKey:;
+- (id)libraryURL;
+- (void)setValue:forKey:;
+- (id)backingDictionary;
+- (void)setBackingDictionary:;
+- (id)allKeys;
+- (void)setPathManager:;
+- (id)valueForKeyPath:;
+- (id)debugDescription;
+- (id)initWithLibraryURL:;
+- (void)setValue:forKeyPath:;
+- (void).cxx_destruct;
+- (BOOL)setValue:forKey:error:;
+- (void)setLibraryURL:;
+- (id)dictionaryWithValuesForKeys:;
+- (void)setValuesForKeysWithDictionary:;
+- (BOOL)setValue:forKeyPath:error:;
+- (BOOL)setValuesForKeysWithDictionary:error:;
+- (id)_dictionaryStorageURL;
+- (BOOL)_saveToFilesystemWithError:;
+- (void)_readFromFilesystem;
+- (id)_appPrivateDataFolderURL;
+- (void)_recursiveCreateSubDictionariesIfMissing:index:parentDictionary:;
++ (BOOL)accessInstanceVariablesDirectly;
++ (id)appPrivateDataForLibraryURL:;
+@end

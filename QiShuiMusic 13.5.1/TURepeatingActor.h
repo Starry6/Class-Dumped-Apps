@@ -1,0 +1,33 @@
+@interface TURepeatingActor : NSObject
+@property (nonatomic) {os_unfair_lock_s=I} accessorLock;
+@property (nonatomic) NSObject<OS_dispatch_queue> queue;
+@property (nonatomic) BOOL stopped;
+@property (nonatomic) BOOL currentlyPerformingAction;
+@property (nonatomic) TURepeatingAction currentRepeatingAction;
+@property (nonatomic) TURepeatingAction pendingRepeatingAction;
+@property (nonatomic) @? attemptNextIterationBlock;
+@property (nonatomic) BOOL running;
+- (id)init;
+- (id)accessorLock;
+- (void)stop;
+- (void)setCurrentlyPerformingAction:;
+- (void)_beginRepeatingAction:;
+- (void)_attemptNextIteration;
+- (BOOL)isRunning;
+- (BOOL)_hasIterationsRemaining;
+- (void)_completeWithDidFinish:;
+- (BOOL)isCurrentlyPerformingAction;
+- (void)setCurrentRepeatingAction:;
+- (void)beginRepeatingAction:iterations:completion:;
+- (id)attemptNextIterationBlock;
+- (void).cxx_destruct;
+- (void)setStopped:;
+- (id)currentRepeatingAction;
+- (void)_stopWithDidFinish:;
+- (void)beginRepeatingAction:iterations:pauseDurationBetweenIterations:completion:;
+- (id)queue;
+- (id)pendingRepeatingAction;
+- (void)setAttemptNextIterationBlock:;
+- (void)setPendingRepeatingAction:;
+- (BOOL)isStopped;
+@end

@@ -1,0 +1,35 @@
+@interface DOMHTMLFormElement : DOMHTMLElement
+@property (nonatomic) NSString acceptCharset;
+@property (nonatomic) NSString action;
+@property (nonatomic) NSString enctype;
+@property (nonatomic) NSString encoding;
+@property (nonatomic) NSString method;
+@property (nonatomic) NSString name;
+@property (nonatomic) NSString target;
+@property (nonatomic) DOMHTMLCollection elements;
+@property (nonatomic) NSInteger length;
+- (void)setName:;
+- (id)elements;
+- (id)method;
+- (id)encoding;
+- (id)action;
+- (void)setAction:;
+- (void)setTarget:;
+- (void)submit;
+- (id)target;
+- (void)reset;
+- (void)setMethod:;
+- (int)length;
+- (void)setEncoding:;
+- (id)name;
+- (BOOL)checkValidity;
+- (id)acceptCharset;
+- (void)setAcceptCharset:;
+- (id)autocomplete;
+- (void)setAutocomplete:;
+- (id)enctype;
+- (void)setEnctype:;
+- (BOOL)noValidate;
+- (void)setNoValidate:;
+- (int)structuralComplexityContribution;
+@end

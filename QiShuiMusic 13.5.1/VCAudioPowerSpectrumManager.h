@@ -1,0 +1,34 @@
+@interface VCAudioPowerSpectrumManager : NSObject
+@property (nonatomic) NSMutableArray meters;
+@property (nonatomic) NSMutableDictionary sources;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (void)dealloc;
+- (id)meters;
+- (void)registerBlocksForService;
+- (void)deregisterBlocksForService;
+- (id)sources;
+- (void)audioPowerSpectrumMeter:didUpdateAudioPowerSpectrums:;
+- (void)didServerDie;
+- (void)registerAudioPowerMeterSource:;
+- (void)unregisterAudioPowerSpectrumSourceForStreamToken:;
+- (id)newPowerSpectrumMeterWithBinCount:refreshRate:delegate:error:;
+- (void)terminatePowerSpectrumMeter:;
+- (BOOL)registerListenerWithStreamToken:powerSpectrumKey:powerSpectrumMeter:error:;
+- (BOOL)unregisterListenerWithStreamToken:powerSpectrumMeter:error:;
+- (id)registerStreamTokenForCellularTapType:clientProcessId:error:;
+- (id)powerSpectrumMetersForCellularTapType:;
+- (void)cleanupPowerSpectrumSetForCellularTapType:;
+- (BOOL)registerListenerWithCellularTapType:clientProcessId:powerSpectrumMeter:powerSpectrumMeterKey:error:;
+- (BOOL)unregisterListenerWithCellularTapType:powerSpectrumMeter:error:;
+- (id)serviceHandlerPowerMeterInitializeWithArguments:error:;
+- (id)serviceHandlerRegisterListenerWithArguments:error:;
+- (id)serviceHandlerUnregisterListenerWithArguments:error:;
+- (id)serviceHandlerRegisterCellularTapWithArguments:error:;
+- (id)serviceHandlerUnregisterCellularTagWithArguments:error:;
+- (id)serviceHandlerPowerMeterTerminateWithArguments:error:;
++ (id)sharedInstance;
+@end

@@ -1,0 +1,36 @@
+@interface CEMApplicationStoreMacOSDeclaration : CEMConfigurationBase
+@property (nonatomic) NSNumber payloadRestrictStoreRequireAdminToInstall;
+@property (nonatomic) NSNumber payloadRestrictStoreSoftwareupdateOnly;
+@property (nonatomic) NSNumber payloadRestrictStoreDisableAppAdoption;
+@property (nonatomic) NSNumber payloadDisableSoftwareUpdateNotifications;
+@property (nonatomic) NSNumber payloadRestrictStoreMdmInstallSoftwareupdateOnly;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (BOOL)multipleAllowed;
+- (BOOL)mustBeSupervised;
+- (int)activationLevel;
+- (id)assetReferences;
+- (BOOL)loadPayload:error:;
+- (id)serializePayloadWithAssetProviders:;
+- (id)payloadRestrictStoreRequireAdminToInstall;
+- (void)setPayloadRestrictStoreRequireAdminToInstall:;
+- (id)payloadRestrictStoreSoftwareupdateOnly;
+- (void)setPayloadRestrictStoreSoftwareupdateOnly:;
+- (id)payloadRestrictStoreDisableAppAdoption;
+- (void)setPayloadRestrictStoreDisableAppAdoption:;
+- (id)payloadDisableSoftwareUpdateNotifications;
+- (void)setPayloadDisableSoftwareUpdateNotifications:;
+- (id)payloadRestrictStoreMdmInstallSoftwareupdateOnly;
+- (void)setPayloadRestrictStoreMdmInstallSoftwareupdateOnly:;
++ (id)profileType;
++ (id)buildRequiredOnlyWithIdentifier:;
++ (id)registeredClassName;
++ (id)registeredIdentifier;
++ (id)allowedPayloadKeys;
++ (id)restrictionPayloadKeys;
++ (id)buildWithIdentifier:withRestrictStoreRequireAdminToInstall:withRestrictStoreSoftwareupdateOnly:withRestrictStoreDisableAppAdoption:withDisableSoftwareUpdateNotifications:withRestrictStoreMdmInstallSoftwareupdateOnly:;
+@end

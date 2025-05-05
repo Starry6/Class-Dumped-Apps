@@ -1,0 +1,31 @@
+@interface ASCPlatformPublicKeyCredentialLoginChoice : NSObject
+@property (nonatomic) NSString name;
+@property (nonatomic) NSString displayName;
+@property (nonatomic) NSString userVisibleName;
+@property (nonatomic) NSString relyingPartyIdentifier;
+@property (nonatomic) BOOL isRegistrationRequest;
+@property (nonatomic) WBSPublicKeyCredentialIdentifier identifier;
+@property (nonatomic) NSUUID publicKeyCredentialOperationUUID;
+@property (nonatomic) Q loginChoiceKind;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)identifier;
+- (id)initWithCoder:;
+- (id)displayName;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)name;
+- (BOOL)isEqual:;
+- (id)relyingPartyIdentifier;
+- (id)initRegistrationChoiceWithOptions:;
+- (BOOL)isRegistrationRequest;
+- (unsigned long long)loginChoiceKind;
+- (id)userVisibleName;
+- (id)initWithName:displayName:identifier:relyingPartyIdentifier:publicKeyCredentialOperationUUID:;
+- (id)publicKeyCredentialOperationUUID;
+- (id)_initAsRegistrationChoice:withName:displayName:identifier:relyingPartyIdentifier:publicKeyCredentialOperationUUID:;
+- (void)setPublicKeyCredentialOperationUUID:;
++ (BOOL)supportsSecureCoding;
+@end

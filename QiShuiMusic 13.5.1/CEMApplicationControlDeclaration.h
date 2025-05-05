@@ -1,0 +1,30 @@
+@interface CEMApplicationControlDeclaration : CEMConfigurationBase
+@property (nonatomic) CEMApplicationControlDeclaration_InstallSchedule payloadInstallSchedule;
+@property (nonatomic) NSString payloadUpdatePolicy;
+@property (nonatomic) CEMApplicationControlDeclaration_UpdateSchedule payloadUpdateSchedule;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (BOOL)multipleAllowed;
+- (BOOL)mustBeSupervised;
+- (int)activationLevel;
+- (id)assetReferences;
+- (BOOL)loadPayload:error:;
+- (id)serializePayloadWithAssetProviders:;
+- (id)payloadInstallSchedule;
+- (void)setPayloadInstallSchedule:;
+- (id)payloadUpdatePolicy;
+- (void)setPayloadUpdatePolicy:;
+- (id)payloadUpdateSchedule;
+- (void)setPayloadUpdateSchedule:;
++ (id)profileType;
++ (id)buildRequiredOnlyWithIdentifier:;
++ (id)registeredClassName;
++ (id)registeredIdentifier;
++ (id)allowedPayloadKeys;
++ (id)restrictionPayloadKeys;
++ (id)buildWithIdentifier:withInstallSchedule:withUpdatePolicy:withUpdateSchedule:;
+@end

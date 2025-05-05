@@ -1,0 +1,36 @@
+@interface CEMNetworkVPNAppLayerDeclaration : CEMConfigurationBase
+@property (nonatomic) NSString payloadVPNUUID;
+@property (nonatomic) NSArray payloadSafariDomains;
+@property (nonatomic) NSNumber payloadOnDemandMatchAppEnabled;
+@property (nonatomic) NSArray payloadSMBDomains;
+@property (nonatomic) NSString payloadProviderType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (BOOL)multipleAllowed;
+- (BOOL)mustBeSupervised;
+- (int)activationLevel;
+- (id)assetReferences;
+- (BOOL)loadPayload:error:;
+- (id)serializePayloadWithAssetProviders:;
+- (id)payloadVPNUUID;
+- (void)setPayloadVPNUUID:;
+- (id)payloadSafariDomains;
+- (void)setPayloadSafariDomains:;
+- (id)payloadOnDemandMatchAppEnabled;
+- (void)setPayloadOnDemandMatchAppEnabled:;
+- (id)payloadSMBDomains;
+- (void)setPayloadSMBDomains:;
+- (id)payloadProviderType;
+- (void)setPayloadProviderType:;
++ (id)profileType;
++ (id)registeredClassName;
++ (id)registeredIdentifier;
++ (id)allowedPayloadKeys;
++ (id)restrictionPayloadKeys;
++ (id)buildWithIdentifier:withVPNUUID:withSafariDomains:withOnDemandMatchAppEnabled:withSMBDomains:withProviderType:;
++ (id)buildRequiredOnlyWithIdentifier:withVPNUUID:;
+@end

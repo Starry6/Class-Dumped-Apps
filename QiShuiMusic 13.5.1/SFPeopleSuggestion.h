@@ -1,0 +1,31 @@
+@interface SFPeopleSuggestion : NSObject
+@property (nonatomic) BOOL isRestricted;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) NSString displayName;
+@property (nonatomic) NSString transportBundleIdentifier;
+@property (nonatomic) NSArray contacts;
+@property (nonatomic) INImage donatedImage;
+@property (nonatomic) BOOL isGroup;
+@property (nonatomic) NSArray formattedHandles;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)isRestricted;
+- (id)contacts;
+- (id)identifier;
+- (BOOL)isGroup;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)displayName;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)isEqual:;
+- (void)setIsRestricted:;
+- (id)transportBundleIdentifier;
+- (id)formattedHandles;
+- (id)donatedImage;
+- (id)initWithIdentifier:displayName:transportBundleIdentifier:contacts:formattedHandles:donatedImage:;
++ (BOOL)supportsSecureCoding;
+@end

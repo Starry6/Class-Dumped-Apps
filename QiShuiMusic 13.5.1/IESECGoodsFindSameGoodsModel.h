@@ -1,0 +1,34 @@
+@interface IESECGoodsFindSameGoodsModel : IESECBaseApiModel
+@property (nonatomic) NSString imageURLV3;
+@property (nonatomic) NSNumber minPriceV3;
+@property (nonatomic) NSString schemaV3;
+@property (nonatomic) NSString productIDV3;
+@property (nonatomic) NSNumber typeV3;
+@property (nonatomic) IESECURLModel imageURLModel;
+@property (nonatomic) NSNumber minPrice;
+@property (nonatomic) NSString schema;
+@property (nonatomic) NSString productID;
+@property (nonatomic) NSNumber type;
+- (void)setProductIDV3:;
+- (id)imageURLModel;
+- (id)imageURLV3;
+- (id)minPrice;
+- (id)minPriceV3;
+- (id)productIDV3;
+- (id)schemaV3;
+- (void)setImageURLModel:;
+- (void)setImageURLV3:;
+- (void)setMinPrice:;
+- (void)setMinPriceV3:;
+- (void)setSchemaV3:;
+- (void)setTypeV3:;
+- (id)typeV3;
+- (id)productID;
+- (id)schema;
+- (void)setProductID:;
+- (void)setType:;
+- (void)setSchema:;
+- (id)type;
+- (void).cxx_destruct;
++ (id)JSONKeyPathsByPropertyKey;
+@end

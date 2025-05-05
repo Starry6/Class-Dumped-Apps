@@ -1,0 +1,33 @@
+@interface IESLiveSaaSPublishHighlightJSBParamObject : NSObject
+@property (nonatomic) NSString vidoID;
+@property (nonatomic) NSString vidoURL;
+@property (nonatomic) NSString roomID;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString roomTimeStr;
+@property (nonatomic) NSNumber startTime;
+@property (nonatomic) NSNumber endTime;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) NSString fragmentID;
+@property (nonatomic) NSDictionary shoppingExtras;
+- (id)vidoURL;
+- (void)setRoomTimeStr:;
+- (id)enterFrom;
+- (id)fragmentID;
+- (id)roomTimeStr;
+- (void)setEnterFrom:;
+- (void)setFragmentID:;
+- (void)setShoppingExtras:;
+- (void)setVidoID:;
+- (void)setVidoURL:;
+- (id)shoppingExtras;
+- (id)vidoID;
+- (void)setStartTime:;
+- (void)setEndTime:;
+- (void)setTitle:;
+- (id)startTime;
+- (id)endTime;
+- (id)title;
+- (void).cxx_destruct;
+- (id)roomID;
+- (void)setRoomID:;
+@end

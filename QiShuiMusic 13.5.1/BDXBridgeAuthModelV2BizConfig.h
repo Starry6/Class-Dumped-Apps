@@ -1,0 +1,32 @@
+@interface BDXBridgeAuthModelV2BizConfig : MTLModel
+@property (nonatomic) NSArray safeURLs;
+@property (nonatomic) BDXBridgeAuthModelV2PublicKey publicKey;
+@property (nonatomic) NSString group;
+@property (nonatomic) NSArray includedMethods;
+@property (nonatomic) NSArray excludedMethods;
+@property (nonatomic) NSDictionary methodCallLimitDictionary;
+@property (nonatomic) NSNumber feAuthVersion;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)excludedMethods;
+- (id)includedMethods;
+- (id)feAuthVersion;
+- (long long)groupAuthType;
+- (id)methodCallLimitDictionary;
+- (id)safeURLs;
+- (void)setExcludedMethods:;
+- (void)setFeAuthVersion:;
+- (void)setIncludedMethods:;
+- (void)setMethodCallLimitDictionary:;
+- (void)setSafeURLs:;
+- (id)publicKey;
+- (void)setPublicKey:;
+- (void)setGroup:;
+- (id)group;
+- (void).cxx_destruct;
++ (id)methodCallLimitDictionaryJSONTransformer;
++ (id)publicKeyJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

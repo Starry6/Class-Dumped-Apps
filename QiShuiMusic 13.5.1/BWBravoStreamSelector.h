@@ -1,0 +1,35 @@
+@interface BWBravoStreamSelector : NSObject
+@property (nonatomic) BOOL lensMakersFocusDistanceRequired;
+@property (nonatomic) BOOL superWideAutoSwitchingSupported;
+@property (nonatomic) float wideToSuperWideFocusDistance;
+@property (nonatomic) float superWideToWideFocusDistance;
+@property (nonatomic) float teleMaxAEGain;
+@property (nonatomic) float teleMaxEIT;
+@property (nonatomic) {?=qQ} selectionConfiguration;
+@property (nonatomic) NSArray eligibleFallbackPortTypes;
+@property (nonatomic) BWFigVideoCaptureStream slaveStreamBlockingFocusAndExposureStability;
+@property (nonatomic) BWFigVideoCaptureStream preferredMasterStreamIgnoringEligibleFallbackPortTypes;
+@property (nonatomic) NSInteger lastSelectionReason;
+- (void)resetWithZoomFactor:currentMasterStream:;
+- (void)dealloc;
+- (id)slaveStreamBlockingFocusAndExposureStability;
+- (void)setSelectionConfiguration:;
+- (float)wideToSuperWideFocusDistance;
+- (id)selectionConfiguration;
+- (BOOL)isLensMakersFocusDistanceRequired;
+- (void)exposureModeDidChange;
+- (BOOL)telephotoLimitsReachedForFrameStatisticsByPortType:;
+- (BOOL)superWideAutoSwitchingSupported;
+- (int)lastSelectionReason;
+- (float)teleMaxAEGain;
+- (void)setTeleMaxAEGain:;
+- (void)focusModeDidChange;
+- (id)preferredMasterStreamIgnoringEligibleFallbackPortTypes;
+- (float)teleMaxEIT;
+- (void)setEligibleFallbackPortTypes:;
+- (void)setTeleMaxEIT:;
+- (id)initWithStreamSelectionAttributes:wideStream:teleStream:superWideStream:cameraCalibrationValid:;
+- (float)superWideToWideFocusDistance;
+- (id)recommendMasterStreamUsingCurrentMasterStream:frameStatisticsByPortType:zoomFactor:digitalFlashMode:detectedObjects:;
+- (id)eligibleFallbackPortTypes;
+@end

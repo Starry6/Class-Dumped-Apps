@@ -1,0 +1,33 @@
+@interface INGetAvailableRestaurantReservationBookingDefaultsIntentResponse : INIntentResponse
+@property (nonatomic) Q defaultPartySize;
+@property (nonatomic) NSDate defaultBookingDate;
+@property (nonatomic) NSNumber maximumPartySize;
+@property (nonatomic) NSNumber minimumPartySize;
+@property (nonatomic) INImage providerImage;
+@property (nonatomic) q code;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)_injectProxiesForImages:completion:;
+- (id)_dictionaryRepresentation;
+- (id)initWithBackingStore:;
+- (long long)code;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)providerImage;
+- (id)_initWithCode:userActivity:;
+- (id)initWithCode:userActivity:;
+- (unsigned long long)defaultPartySize;
+- (id)defaultBookingDate;
+- (id)maximumPartySize;
+- (void)setMaximumPartySize:;
+- (id)minimumPartySize;
+- (void)setMinimumPartySize:;
+- (void)setProviderImage:;
+- (id)initWithDefaultPartySize:defaultBookingDate:code:userActivity:;
++ (BOOL)supportsSecureCoding;
+@end

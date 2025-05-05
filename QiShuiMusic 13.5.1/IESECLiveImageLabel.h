@@ -1,0 +1,32 @@
+@interface IESECLiveImageLabel : UIView
+@property (nonatomic) UIImageView imageView;
+@property (nonatomic) UILabel label;
+@property (nonatomic) UIView backgroundView;
+@property (nonatomic) {UIEdgeInsets=dddd} textInsets;
+@property (nonatomic) double imageHeight;
+@property (nonatomic) {CGSize=dd} textSize;
+@property (nonatomic) <IESECLiveImageLabelDelegate> delegate;
+- (id)imageDrawSize:;
+- (void)p_didSetImage:;
+- (void)p_didSetText:;
+- (void)p_updateConstraints;
+- (void)setImageURL:placeHolder:shouldUpdate:;
+- (id)backgroundView;
+- (void)setTextInsets:;
+- (id)textInsets;
+- (void)layoutSubviews;
+- (void)setDelegate:;
+- (void)setImage:;
+- (void)setLabel:;
+- (id)label;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setBackgroundView:;
+- (id)imageView;
+- (void)setImageView:;
+- (id)textSize;
+- (void)updateText:;
+- (double)imageHeight;
+- (void)setImageHeight:;
+- (void)setTextSize:;
+@end

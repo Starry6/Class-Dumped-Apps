@@ -1,0 +1,36 @@
+@interface TKSmartCardPINFormat : NSObject
+@property (nonatomic) q charset;
+@property (nonatomic) q encoding;
+@property (nonatomic) q minPINLength;
+@property (nonatomic) q maxPINLength;
+@property (nonatomic) q PINBlockByteLength;
+@property (nonatomic) q PINJustification;
+@property (nonatomic) q PINBitOffset;
+@property (nonatomic) q PINLengthBitOffset;
+@property (nonatomic) q PINLengthBitSize;
+- (id)init;
+- (long long)encoding;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void)setEncoding:;
+- (id)copyWithZone:;
+- (long long)charset;
+- (BOOL)fillPIN:intoAPDUTemplate:PINByteOffset:error:;
+- (void)setCharset:;
+- (long long)minPINLength;
+- (void)setMinPINLength:;
+- (long long)maxPINLength;
+- (void)setMaxPINLength:;
+- (long long)PINBlockByteLength;
+- (void)setPINBlockByteLength:;
+- (long long)PINJustification;
+- (void)setPINJustification:;
+- (long long)PINBitOffset;
+- (void)setPINBitOffset:;
+- (long long)PINLengthBitOffset;
+- (void)setPINLengthBitOffset:;
+- (long long)PINLengthBitSize;
+- (void)setPINLengthBitSize:;
++ (BOOL)supportsSecureCoding;
++ (void)_writeNumber:into:bitOffset:bitLength:;
+@end

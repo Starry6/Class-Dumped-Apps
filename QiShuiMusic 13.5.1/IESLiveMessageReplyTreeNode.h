@@ -1,0 +1,36 @@
+@interface IESLiveMessageReplyTreeNode : NSObject
+@property (nonatomic) q msgId;
+@property (nonatomic) NSString method;
+@property (nonatomic) HTSLiveUser user;
+@property (nonatomic) HTSLiveText displayText;
+@property (nonatomic) NSString content;
+@property (nonatomic) NSAttributedString attributedText;
+@property (nonatomic) NSString copiedContent;
+@property (nonatomic) BOOL isDigged;
+@property (nonatomic) BOOL selected;
+@property (nonatomic) double heightWithOperationPanel;
+@property (nonatomic) double heightWithoutOperationPanel;
+- (void)setHeightWithoutOperationPanel:;
+- (id)copiedContent;
+- (double)heightWithOperationPanel;
+- (double)heightWithoutOperationPanel;
+- (BOOL)isDigged;
+- (void)setCopiedContent:;
+- (void)setHeightWithOperationPanel:;
+- (void)setIsDigged:;
+- (void)setUser:;
+- (BOOL)selected;
+- (id)content;
+- (void)setContent:;
+- (void)setAttributedText:;
+- (id)method;
+- (void)setSelected:;
+- (id)displayText;
+- (id)user;
+- (void).cxx_destruct;
+- (void)setMethod:;
+- (void)setDisplayText:;
+- (id)attributedText;
+- (long long)msgId;
+- (void)setMsgId:;
+@end

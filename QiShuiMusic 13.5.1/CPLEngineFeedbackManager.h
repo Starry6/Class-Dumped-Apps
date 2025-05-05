@@ -1,0 +1,32 @@
+@interface CPLEngineFeedbackManager : NSObject
+@property (nonatomic) BOOL disableFeedback;
+@property (nonatomic) CPLEngineLibrary engineLibrary;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)closeAndDeactivate:completionHandler:;
+- (id)engineLibrary;
+- (id)componentName;
+- (void)testKey:value:completionHandler:;
+- (void)_load;
+- (void)openWithCompletionHandler:;
+- (void)getStatusWithCompletionHandler:;
+- (id)initWithEngineLibrary:;
+- (void)reportSetting:hasBeenSetToValue:;
+- (void)_save;
+- (void)reportMiscInformation:;
+- (void)setDisableFeedback:;
+- (void)_sendFeedbackToServerIfNecessary;
+- (void)reportFetchChangesRewindToFeatureVersion:;
+- (void)_reallySendFeedbackToServer;
+- (void)_appendMessages:;
+- (void)_appendMessage:;
+- (void)reportMessage:;
+- (void)reportEndOfResetWithUUID:reason:;
+- (void)sendFeedbackToServerIfNecessary;
+- (BOOL)disableFeedback;
+- (void).cxx_destruct;
+- (void)reportResetType:reason:uuid:;
+- (void)reportMessages:;
+@end

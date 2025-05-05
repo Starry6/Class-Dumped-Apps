@@ -1,0 +1,31 @@
+@interface VKCImageBaseOverlayView : VKPlatformView
+@property (nonatomic) <VKCImageBaseOverlayViewDelegate> baseDelegate;
+@property (nonatomic) VKCTextRecognitionResult recognitionResult;
+@property (nonatomic) VKCImageAnalysisResult analysisResult;
+@property (nonatomic) NSString customAnalyticsIdentifier;
+@property (nonatomic) BOOL isPublicAPI;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} contentsRect;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} normalizedVisibleRect;
+- (id)contentsRect;
+- (void)setCustomAnalyticsIdentifier:;
+- (void)setRecognitionResult:;
+- (id)analysisResult;
+- (id)normalizedVisibleRect;
+- (id)initWithFrame:;
+- (BOOL)isPublicAPI;
+- (void)setContentsRect:;
+- (void).cxx_destruct;
+- (id)customAnalyticsIdentifier;
+- (void)setNormalizedVisibleRect:;
+- (void)updateSelectionRectsForWindowChange;
+- (id)recognitionResult;
+- (void)normalizedVisibleRectDidChange;
+- (id)normalizedPointFromViewPoint:;
+- (id)viewPointFromNormalizedPoint:;
+- (id)normalizedRectFromViewRect:;
+- (id)viewRectFromNormalizedRect:;
+- (id)normalizedQuadFromViewQuad:;
+- (id)viewQuadFromNormalizedQuad:;
+- (id)baseDelegate;
+- (void)setBaseDelegate:;
+@end

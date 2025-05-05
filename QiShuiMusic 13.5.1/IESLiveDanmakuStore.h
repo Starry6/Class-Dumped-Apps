@@ -1,0 +1,36 @@
+@interface IESLiveDanmakuStore : NSObject
+@property (nonatomic) <IESLiveRoomServiceAdapter> room;
+@property (nonatomic) BOOL addDanmakuEnabled;
+@property (nonatomic) <IESLiveDanmakuRouter> danmakuRouter;
+@property (nonatomic) BOOL abSettingEnable;
+@property (nonatomic) BOOL degradeForScreenChat;
+@property (nonatomic) IESLiveComponentContext componentContext;
+@property (nonatomic) HTSEventContext eventContext;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)abSettingEnable;
+- (void)startAddDanmaku;
+- (BOOL)addDanmakuEnabled;
+- (void)cleanMessageWithSeekByUser;
+- (id)componentContext;
+- (id)danmakuRouter;
+- (BOOL)degradeFilterWith:;
+- (BOOL)degradeForScreenChat;
+- (id)initWithRoom:componentContext:;
+- (void)messageReceived:source:;
+- (void)setAbSettingEnable:;
+- (void)setAddDanmakuEnabled:;
+- (void)setComponentContext:;
+- (void)setDanmakuRouter:;
+- (void)setDegradeForScreenChat:;
+- (void)setEventContext:;
+- (void)setupObserver;
+- (void)stopAddDanmaku;
+- (void).cxx_destruct;
+- (id)eventContext;
+- (id)room;
+- (void)setRoom:;
+- (void)messageReceived:;
+@end

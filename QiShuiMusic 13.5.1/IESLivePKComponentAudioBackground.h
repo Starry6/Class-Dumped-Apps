@@ -1,0 +1,31 @@
+@interface IESLivePKComponentAudioBackground : IESLivePKComponent
+@property (nonatomic) UIImageView avatarBackground;
+@property (nonatomic) UIView maskView;
+@property (nonatomic) UIView<IESLiveWebPPlayer> talkAnimationView;
+@property (nonatomic) IESLiveAnchorImageBufferCapture imageBufferCapture;
+@property (nonatomic) <HTSLivePixelBufferCapturer> capturer;
+@property (nonatomic) <IESLiveSubscription> disposable;
+- (id)avatarBackground;
+- (id)capturer;
+- (void)componentBusinessPrepare;
+- (void)componentDidLoad;
+- (void)componentFinished;
+- (void)componentInteracting;
+- (void)componentPlaying;
+- (id)disposable;
+- (void)fetchLatestLiveCoverIfNeed;
+- (id)imageBufferCapture;
+- (void)loadAudioPKModule;
+- (void)loadBackgroundView;
+- (void)setAvatarBackground:;
+- (void)setCapturer:;
+- (void)setDisposable:;
+- (void)setImageBufferCapture:;
+- (void)setTalkAnimationView:;
+- (void)startImageCapture;
+- (void)stopImageCapture;
+- (id)talkAnimationView;
+- (id)maskView;
+- (void).cxx_destruct;
+- (void)setMaskView:;
+@end

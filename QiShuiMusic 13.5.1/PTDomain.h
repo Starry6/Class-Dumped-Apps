@@ -1,0 +1,37 @@
+@interface PTDomain : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)dealloc;
+- (void)_handleConnectionInvalidated;
+- (void)_createConnection;
+- (void).cxx_destruct;
+- (id)_init;
+- (void)_handleConnectionInterrupted;
+- (id)_domainID;
+- (id)_rootSettings;
+- (void)updateSettingsFromArchive:;
+- (void)restoreDefaultSettings;
+- (void)setArchiveValue:forKeyPath:;
+- (void)invokeOutletAtKeyPath:;
+- (void)sendActiveTestRecipeEvent:;
+- (id)_domainInfo;
+- (void)_registerTestRecipe:;
+- (void)_updateActiveTestRecipe;
+- (void)_applyArchive:;
+- (void)_applyArchiveValue:forKeyPath:;
+- (void)_restoreDefaultSettings;
+- (void)_disableObservationIfNecessary;
+- (void)_updateServerConnectionStatusIfNecessary;
+- (void)_sendProxyDefinitionIfNecessary;
+- (void)_tearDownConnection;
+- (void)_registerWithServerIfNecessary;
+- (void)_noteRegistrationCompleted;
++ (id)domainName;
++ (id)_sharedInstance;
++ (Class)rootSettingsClass;
++ (id)rootSettings;
++ (id)domainGroupName;
++ (void)registerTestRecipe:;
+@end

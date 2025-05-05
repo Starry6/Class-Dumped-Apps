@@ -1,0 +1,2 @@
+@interface AVCaptureSynchronizedDepthDataInternal : NSObject
+@end

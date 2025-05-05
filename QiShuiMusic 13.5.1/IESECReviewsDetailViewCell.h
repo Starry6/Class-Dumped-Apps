@@ -1,0 +1,35 @@
+@interface IESECReviewsDetailViewCell : UICollectionViewCell
+@property (nonatomic) IESECCommentDetailModel comment;
+@property (nonatomic) q maxHorizontalContentIndex;
+@property (nonatomic) IESECReviewsDetailPlayerManager playerManager;
+@property (nonatomic) <IESECReviewsDetailViewCellDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)_setGalleryBarVisibility:;
+- (void)carouselView:didScrollToIndex:;
+- (void)foldingButtonStateChanged:;
+- (double)galleryBar:progressForItemAtIndex:;
+- (void)likedValueChanged:;
+- (long long)maxHorizontalContentIndex;
+- (void)player:currentTimeDidChange:totalDuration:;
+- (id)playerManager;
+- (void)progressSliderDragEntered:;
+- (void)progressSliderDragExited:;
+- (void)progressSliderValueChanged:;
+- (void)setMaxHorizontalContentIndex:;
+- (void)setPlayerManager:;
+- (void)updateCellWithModel:;
+- (void)willBecomeMainResponder;
+- (id)comment;
+- (void)setDelegate:;
+- (void)prepareForReuse;
+- (id)initWithFrame:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)didMoveToWindow;
+- (void)updateConstraints;
+- (void)setComment:;
+- (void)setupSubviews;
+@end

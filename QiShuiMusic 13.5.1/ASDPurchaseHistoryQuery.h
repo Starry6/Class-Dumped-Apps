@@ -1,0 +1,33 @@
+@interface ASDPurchaseHistoryQuery : NSObject
+@property (nonatomic) q accountID;
+@property (nonatomic) NSArray bundleIDs;
+@property (nonatomic) q isFirstParty;
+@property (nonatomic) q isHidden;
+@property (nonatomic) q isIOSBinaryMacOSCompatible;
+@property (nonatomic) q isPreorder;
+@property (nonatomic) NSString searchTerm;
+@property (nonatomic) NSArray sortOptions;
+@property (nonatomic) NSArray storeIDs;
+- (id)bundleIDs;
+- (long long)isFirstParty;
+- (void)setIsFirstParty:;
+- (long long)accountID;
+- (void)setAccountID:;
+- (void)setSortOptions:;
+- (long long)isPreorder;
+- (id)initWithCoder:;
+- (void)setSearchTerm:;
+- (void)encodeWithCoder:;
+- (id)sortOptions;
+- (void)setIsHidden:;
+- (id)searchTerm;
+- (void)setIsPreorder:;
+- (void)setStoreIDs:;
+- (void).cxx_destruct;
+- (void)setIsIOSBinaryMacOSCompatible:;
+- (void)setBundleIDs:;
+- (long long)isHidden;
+- (id)storeIDs;
+- (long long)isIOSBinaryMacOSCompatible;
++ (BOOL)supportsSecureCoding;
+@end

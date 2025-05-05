@@ -1,0 +1,2 @@
+@interface IESLiveSaaSPBOfficialChannelRoot : GPBRootObject
+@end

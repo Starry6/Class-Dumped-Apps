@@ -1,0 +1,32 @@
+@interface TUConversationActivityCreateSessionRequest : NSObject
+@property (nonatomic) NSUUID UUID;
+@property (nonatomic) NSString activityIdentifier;
+@property (nonatomic) NSData applicationContext;
+@property (nonatomic) TUConversationActivityMetadata metadata;
+@property (nonatomic) CKShare share;
+@property (nonatomic) BOOL staticActivity;
+- (id)activityIdentifier;
+- (void)setShare:;
+- (void)setUUID:;
+- (id)share;
+- (id)metadata;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)setMetadata:;
+- (void)setApplicationContext:;
+- (id)applicationContext;
+- (void)encodeWithCoder:;
+- (void)setActivityIdentifier:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)mutableCopyWithZone:;
+- (id)UUID;
+- (void)setStaticActivity:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)isStaticActivity;
+- (id)initWithMetadata:applicationContext:activityIdentifier:uuid:;
+- (id)initWithMetadata:applicationContext:activityIdentifier:uuid:staticActivity:;
+- (BOOL)isEqualToConversationActivitySessionCreationRequest:;
++ (BOOL)supportsSecureCoding;
+@end

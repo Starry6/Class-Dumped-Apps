@@ -1,0 +1,2 @@
+@interface IESLiveInnerPbRoomCollectUnreadApiRoot : GPBRootObject
+@end

@@ -1,0 +1,35 @@
+@interface NLXSchemaCDMSystemReportedFailure : SISchemaInstrumentationMessage
+@property (nonatomic) SISchemaUUID taskId;
+@property (nonatomic) BOOL hasTaskId;
+@property (nonatomic) USOSchemaUSOGraph reason;
+@property (nonatomic) BOOL hasReason;
+@property (nonatomic) USOSchemaUSOGraph task;
+@property (nonatomic) BOOL hasTask;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)task;
+- (id)reason;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void)setReason:;
+- (id)taskId;
+- (BOOL)hasReason;
+- (void)setTask:;
+- (void)setHasReason:;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (BOOL)hasTaskId;
+- (void)setTaskId:;
+- (void)deleteReason;
+- (BOOL)hasTask;
+- (void)setHasTask:;
+- (void)deleteTask;
+- (void)deleteTaskId;
+- (void)setHasTaskId:;
+@end

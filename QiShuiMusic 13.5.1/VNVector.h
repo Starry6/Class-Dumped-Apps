@@ -1,0 +1,32 @@
+@interface VNVector : NSObject
+@property (nonatomic) double x;
+@property (nonatomic) double y;
+@property (nonatomic) double r;
+@property (nonatomic) double theta;
+@property (nonatomic) double length;
+@property (nonatomic) double squaredLength;
+- (id)init;
+- (double)y;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (double)x;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (double)length;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)initWithXComponent:yComponent:;
+- (id)initWithR:theta:;
+- (id)initWithVectorHead:tail:;
+- (double)r;
+- (double)theta;
+- (double)squaredLength;
++ (BOOL)supportsSecureCoding;
++ (id)vectorBySubtractingVector:fromVector:;
++ (double)dotProductOfVector:vector:;
++ (id)vectorByAddingVector:toVector:;
++ (id)unitVectorForVector:;
++ (id)zeroVector;
++ (id)vectorByMultiplyingVector:byScalar:;
+@end

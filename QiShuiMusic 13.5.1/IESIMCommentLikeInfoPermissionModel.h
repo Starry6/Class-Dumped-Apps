@@ -1,0 +1,34 @@
+@interface IESIMCommentLikeInfoPermissionModel : IESIMBaseApiModel
+@property (nonatomic) NSString buttonDesc;
+@property (nonatomic) NSString buttonDescSub;
+@property (nonatomic) NSString buttonOption1;
+@property (nonatomic) NSString buttonOption2;
+@property (nonatomic) NSString buttonOption3;
+@property (nonatomic) NSString buttonOption2SubDesc;
+@property (nonatomic) NSString buttonOption3SubDesc1;
+@property (nonatomic) NSString buttonOption3Toast1;
+@property (nonatomic) NSString buttonOption3SubDesc2;
+@property (nonatomic) NSString buttonOption3Toast2;
+- (id)buttonDesc;
+- (id)buttonDescSub;
+- (id)buttonOption1;
+- (id)buttonOption2;
+- (id)buttonOption2SubDesc;
+- (id)buttonOption3;
+- (id)buttonOption3SubDesc1;
+- (id)buttonOption3SubDesc2;
+- (id)buttonOption3Toast1;
+- (id)buttonOption3Toast2;
+- (void)setButtonDesc:;
+- (void)setButtonDescSub:;
+- (void)setButtonOption1:;
+- (void)setButtonOption2:;
+- (void)setButtonOption2SubDesc:;
+- (void)setButtonOption3:;
+- (void)setButtonOption3SubDesc1:;
+- (void)setButtonOption3SubDesc2:;
+- (void)setButtonOption3Toast1:;
+- (void)setButtonOption3Toast2:;
+- (void).cxx_destruct;
++ (id)JSONKeyPathsByPropertyKey;
+@end

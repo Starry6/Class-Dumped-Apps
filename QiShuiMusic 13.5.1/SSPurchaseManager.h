@@ -1,0 +1,30 @@
+@interface SSPurchaseManager : NSObject
+@property (nonatomic) NSString managerIdentifier;
+@property (nonatomic) <SSPurchaseManagerDelegate> delegate;
+- (void)insertPurchases:afterPurchase:withCompletionBlock:;
+- (id)init;
+- (void)dealloc;
+- (void)getPurchasesUsingBlock:;
+- (void)_reconnectForDaemonLaunch;
+- (void)_sendCompletionBlock:forStandardReply:;
+- (void)setDelegate:;
+- (id)managerIdentifier;
+- (void)_handleAuthenticateRequest:fromConnection:;
+- (void)_connectToDaemon;
+- (BOOL)_shouldInvalidateSubscriptionStatusForPurchaseResponse:;
+- (void)movePurchases:afterPurchase:withCompletionBlock:;
+- (id)initWithManagerIdentifier:;
+- (id)_responseConnection;
+- (void)_handleMessage:fromConnection:;
+- (BOOL)_resultForReply:error:;
+- (id)_newEncodedArrayWithPurchaseIdentifiers:;
+- (id)delegate;
+- (void)cancelPurchases:withCompletionBlock:;
+- (void)_sendMessage:withPurchaseIdentifiers:afterPurchase:completionBlock:;
+- (id)_requestConnection;
+- (void)addPurchases:withCompletionBlock:;
+- (id)_newEncodedArrayWithPurchases:;
+- (void)_sendMessage:withPurchases:afterPurchase:completionBlock:;
+- (void)_sendCompletionBlock:forGetPurchasesReply:;
+- (void)_handlePurchasesFinished:fromConnection:;
+@end

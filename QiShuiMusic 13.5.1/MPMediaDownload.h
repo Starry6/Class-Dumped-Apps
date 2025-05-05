@@ -1,0 +1,30 @@
+@interface MPMediaDownload : NSObject
+@property (nonatomic) q libraryID;
+@property (nonatomic) q storeSagaID;
+@property (nonatomic) q downloadReason;
+@property (nonatomic) double downloadProgress;
+@property (nonatomic) Q downloadPausedReason;
+@property (nonatomic) q deviceLibraryID;
+@property (nonatomic) q storeItemID;
+- (double)downloadProgress;
+- (long long)libraryID;
+- (long long)storeItemID;
+- (void)setDownloadProgress:;
+- (unsigned long long)hash;
+- (unsigned long long)downloadPausedReason;
+- (id)description;
+- (BOOL)isEqual:;
+- (void)setLibraryID:;
+- (id)initWithMPStoreDownload:;
+- (id)initWithATAsset:;
+- (long long)deviceLibraryID;
+- (long long)downloadReason;
+- (void)setDownloadReason:;
+- (void)setDownloadPausedReason:;
+- (long long)storeSagaID;
+- (void)setStoreSagaID:;
++ (id)MPMediaDownloadsFromMPStoreDownloads:;
++ (id)MPMediaDownloadsFromATAssets:;
++ (unsigned long long)MPMediaDownloadPauseReasonForATAsset:;
++ (long long)_downloadReasonFromStoreDownload:;
+@end

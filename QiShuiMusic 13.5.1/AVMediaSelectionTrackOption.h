@@ -1,0 +1,21 @@
+@interface AVMediaSelectionTrackOption : AVMediaSelectionOption
+- (id)mediaType;
+- (id)dictionary;
+- (id)metadataForFormat:;
+- (id)commonMetadata;
+- (void)dealloc;
+- (id)initWithAsset:group:dictionary:;
+- (BOOL)isPlayable;
+- (id)availableMetadataFormats;
+- (id)locale;
+- (unsigned long long)hash;
+- (id)group;
+- (int)trackID;
+- (id)_groupID;
+- (BOOL)isEqual:;
+- (id)_track;
+- (id)track;
+- (id)mediaSubTypes;
+- (id)associatedMediaSelectionOptionInMediaSelectionGroup:;
+- (BOOL)displaysNonForcedSubtitles;
+@end

@@ -1,0 +1,30 @@
+@interface IESECStoreReputationScoreView : UIView
+@property (nonatomic) UILabel ratingIconsLabel;
+@property (nonatomic) UIImageView backgroundImageView;
+@property (nonatomic) UILabel scoreLabel;
+@property (nonatomic) UILabel defaultLabel;
+@property (nonatomic) IESECShopScoreStyle style;
+@property (nonatomic) NSString defaultScoreText;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)defaultScoreText;
+- (id)ratingIconsLabel;
+- (void)setDefaultScoreText:;
+- (void)setRatingIconsLabel:;
+- (id)starImagePatternsWithScore:;
+- (void)updateScoreViewWithPercent:;
+- (void)updateScoreViewWithScore:;
+- (id)backgroundImageView;
+- (void)setStyle:;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (id)style;
+- (void)setupViews;
+- (void)setBackgroundImageView:;
+- (id)defaultLabel;
+- (void)setDefaultLabel:;
+- (id)scoreLabel;
+- (void)setScoreLabel:;
+@end

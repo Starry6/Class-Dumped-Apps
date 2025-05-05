@@ -1,0 +1,31 @@
+@interface ARCustomTechniquesConfiguration : ARConfiguration
+@property (nonatomic) NSArray techniques;
+@property (nonatomic) ARWorldMap initialWorldMap;
+@property (nonatomic) ARConfiguration templateConfiguration;
+- (id)init;
+- (id)initPrivate;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setVideoFormat:;
+- (long long)worldAlignment;
+- (id)initialWorldMap;
+- (void)setCameraPosition:;
+- (id)imageSensorSettings;
+- (id)imageSensorSettingsForUltraWide;
+- (void)setCustomSensors:;
+- (BOOL)isLightEstimationEnabled;
+- (id)techniques;
+- (void)setProvidesAudioData:;
+- (void)setTechniques:;
+- (void)ensureTechniqueAndCustomSensorCompatibility;
+- (void)_updateCaptureSettings;
+- (void)configureRecordingTechnique;
+- (void)_ensureTechniqueAndCustomSensorCompatibilityIfNeeded;
+- (void)_configureRecordingTechniqueIfNeeded;
+- (id)templateConfiguration;
+- (void)setTemplateConfiguration:;
++ (id)new;
++ (id)supportedVideoFormats;
+@end

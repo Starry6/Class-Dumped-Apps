@@ -1,0 +1,30 @@
+@interface ARSKView : SKView
+@property (nonatomic) NSObject<ARSKViewDelegate> delegate;
+@property (nonatomic) ARSession session;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setSession:;
+- (void)dealloc;
+- (void)layoutSubviews;
+- (void)sessionWasInterrupted:;
+- (void)commonInit;
+- (void)sessionInterruptionEnded:;
+- (id)initWithCoder:;
+- (void)session:didFailWithError:;
+- (void)session:didChangeGeoTrackingStatus:;
+- (id)initWithFrame:;
+- (id)session;
+- (void).cxx_destruct;
+- (void)sessionShouldAttemptRelocalization:completion:;
+- (void)session:didUpdateFrame:;
+- (void)session:cameraDidChangeTrackingState:;
+- (void)session:didOutputAudioSampleBuffer:;
+- (id)hitTest:types:;
+- (id)anchorForNode:;
+- (id)nodeForAnchor:;
+- (id)_anchorForNode:inFrame:;
+- (void)_updateAnchors:camera:;
+- (void)_updateNode:forAnchor:projectionMatrix:camera:orientation:;
+@end

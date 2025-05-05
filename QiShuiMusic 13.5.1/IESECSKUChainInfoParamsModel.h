@@ -1,0 +1,32 @@
+@interface IESECSKUChainInfoParamsModel : MTLModel
+@property (nonatomic) NSString marketingChannel;
+@property (nonatomic) NSString channelId;
+@property (nonatomic) NSString channelType;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) NSString ecomEntranceForm;
+@property (nonatomic) NSString productSourcePage;
+@property (nonatomic) q toutiaoAppId;
+@property (nonatomic) NSString bizCampaignType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)bizCampaignType;
+- (id)ecomEntranceForm;
+- (id)enterFrom;
+- (id)marketingChannel;
+- (id)productSourcePage;
+- (void)setBizCampaignType:;
+- (void)setEcomEntranceForm:;
+- (void)setEnterFrom:;
+- (void)setMarketingChannel:;
+- (void)setProductSourcePage:;
+- (void)setToutiaoAppId:;
+- (long long)toutiaoAppId;
+- (void).cxx_destruct;
+- (id)channelType;
+- (id)channelId;
+- (void)setChannelId:;
+- (void)setChannelType:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

@@ -1,0 +1,30 @@
+@interface IESLiveComponentsTraceContext : NSObject
+@property (nonatomic) NSMutableDictionary items;
+@property (nonatomic) IESLiveComponentsTraceItem currentItem;
+@property (nonatomic) <IESLiveEnterRoomTraceDelegate> delegate;
+@property (nonatomic) BOOL componentLoading;
+- (void)checkThread:;
+- (BOOL)componentLoading;
+- (id)itemWithIndex:;
+- (id)itemWithIndex:emptyCreate:;
+- (id)itemWithIndex:traceInfoWithStage:;
+- (void)recordIndex:category:;
+- (void)recordIndex:endStage:;
+- (void)recordIndex:enterMehod:;
+- (void)recordIndex:extra:;
+- (void)recordIndex:metric:;
+- (void)recordIndex:replaceIndex:originDelete:;
+- (void)recordIndex:startStage:;
+- (void)reportIndex:;
+- (void)setComponentLoading:;
+- (id)init;
+- (void)setCurrentItem:;
+- (id)items;
+- (void)setDelegate:;
+- (void)removeIndex:;
+- (id)currentItem;
+- (void)clearAll;
+- (void)setItems:;
+- (id)delegate;
+- (void).cxx_destruct;
+@end

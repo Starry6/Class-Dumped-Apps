@@ -1,0 +1,35 @@
+@interface IESLiveLinkmicLinkAudienceLeaveContext : IESLiveLinkmicLinkContext
+@property (nonatomic) IESLiveLinkMicAudienceLeaveResponse_ResponseData leaveResponse;
+@property (nonatomic) NSString leaveUserID;
+@property (nonatomic) NSInteger postAction;
+@property (nonatomic) q paidCount;
+@property (nonatomic) q linkDuration;
+@property (nonatomic) NSInteger controlType;
+@property (nonatomic) IESLiveLinkMicAudienceLeaveResponse_UserInfoDuringLinkmic userinfoDuringLinkmic;
+@property (nonatomic) Q vendor;
+@property (nonatomic) NSNumber channelID;
+@property (nonatomic) NSString linkmicID;
+@property (nonatomic) NSString promptString;
+@property (nonatomic) NSString linkerSessionId;
+@property (nonatomic) NSString remoteLinkerSessionId;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setLeaveUserID:;
+- (id)initWithLeaveResponse:;
+- (id)leaveResponse;
+- (id)leaveUserID;
+- (long long)paidCount;
+- (void)setLeaveResponse:;
+- (void)setPaidCount:;
+- (id)userinfoDuringLinkmic;
+- (void).cxx_destruct;
+- (void)setControlType:;
+- (id)rawData;
+- (int)controlType;
+- (long long)linkDuration;
+- (void)setLinkDuration:;
+- (int)postAction;
+- (void)setPostAction:;
+@end

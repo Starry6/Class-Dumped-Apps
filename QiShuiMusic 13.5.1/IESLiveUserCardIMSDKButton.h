@@ -1,0 +1,35 @@
+@interface IESLiveUserCardIMSDKButton : UIView
+@property (nonatomic) IESLiveUserCardStore store;
+@property (nonatomic) UIView containView;
+@property (nonatomic) UILabel messageLabel;
+@property (nonatomic) UIImageView commonBgView;
+@property (nonatomic) q configTag;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setContainView:;
+- (void)actionClicked;
+- (void)applicationBecomeActive;
+- (id)buildLabel;
+- (id)commonBgView;
+- (void)configWithScene:;
+- (void)configWithStore:;
+- (void)configWithTag:isShowWhite:;
+- (id)containView;
+- (void)refreshBorder:;
+- (void)setCommonBgView:;
+- (id)init;
+- (void)dealloc;
+- (void)setStore:;
+- (void)layoutSubviews;
+- (void)setup;
+- (void).cxx_destruct;
+- (id)messageLabel;
+- (void)addObserver;
+- (id)store;
+- (void)setMessageLabel:;
+- (BOOL)shouldShow;
+- (long long)configTag;
+- (void)setConfigTag:;
+@end

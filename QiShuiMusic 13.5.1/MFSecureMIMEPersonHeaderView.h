@@ -1,0 +1,38 @@
+@interface MFSecureMIMEPersonHeaderView : UIView
+@property (nonatomic) NSString signedLabelText;
+@property (nonatomic) NSString secureLabelText;
+@property (nonatomic) NSString warningLabelText;
+@property (nonatomic) NSString explanationText;
+@property (nonatomic) NSArray buttons;
+@property (nonatomic) BOOL editing;
+- (id)intrinsicContentSize;
+- (void)layoutSubviews;
+- (void)setEditing:;
+- (id)buttons;
+- (id)initWithFrame:;
+- (BOOL)showsButtons;
+- (id)sizeThatFits:;
+- (void)setBounds:;
+- (void).cxx_destruct;
+- (void)setButtons:;
+- (BOOL)editing;
+- (void)setSignedLabelText:;
+- (id)signedLabelText;
+- (void)setSecureLabelText:;
+- (id)secureLabelText;
+- (void)setWarningLabelText:;
+- (id)warningLabelText;
+- (void)setExplanationText:;
+- (id)explanationText;
+- (double)heightThatFitsSubview:padding:;
+- (double)heightThatFitsMainLabel:;
+- (double)widthForSizingToFitSize:;
+- (double)heightThatFitsButtons;
+- (double)heightOfBottomMargin;
+- (void)_setText:forLabel:;
+- (void)_insert:subview:;
+- (id)_signedLabel;
+- (id)_secureLabel;
+- (id)_warningLabel;
++ (id)_explanationLabelDefaultAttributes;
+@end

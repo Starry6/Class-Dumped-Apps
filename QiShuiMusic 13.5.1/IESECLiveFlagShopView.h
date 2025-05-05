@@ -1,0 +1,31 @@
+@interface IESECLiveFlagShopView : UIView
+@property (nonatomic) IESECLiveStackView shopInfoStackView;
+@property (nonatomic) YYLabel titleLabel;
+@property (nonatomic) NSDictionary trackParams;
+@property (nonatomic) IESECLiveContext liveContext;
+@property (nonatomic) IESECLiveGoodsListAuthorShopInfo shopInfoModel;
+@property (nonatomic) IESECLiveGoodsListAuthorShopWindowInfo shopWindowInfoModel;
+@property (nonatomic) NSNumber listTopDisplayStatus;
+@property (nonatomic) NSString shopEntranceLocation;
+- (void)setLiveContext:;
+- (void)setTrackParams:;
+- (id)addLiveInfoParamsToURL:;
+- (void)clickShopEntranceAction;
+- (id)listTopDisplayStatus;
+- (id)liveContext;
+- (void)setListTopDisplayStatus:;
+- (void)setShopEntranceLocation:;
+- (void)setShopInfoModel:;
+- (void)setShopInfoStackView:;
+- (void)setShopWindowInfoModel:;
+- (id)shopEntranceLocation;
+- (id)shopInfoModel;
+- (id)shopInfoStackView;
+- (id)shopWindowInfoModel;
+- (id)trackParams;
+- (void)setTitleLabel:;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setupUI;
+@end

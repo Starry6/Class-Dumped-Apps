@@ -1,0 +1,33 @@
+@interface TRIPBCodedInputStream : NSObject
+- (unsigned long long)position;
+- (void)dealloc;
+- (unsigned int)readFixed32;
+- (void)checkLastTagWas:;
+- (id)readString;
+- (void)skipMessage;
+- (void)readGroup:message:extensionRegistry:;
+- (BOOL)readBool;
+- (void)readMessage:extensionRegistry:;
+- (unsigned long long)readFixed64;
+- (int)readSInt32;
+- (int)readTag;
+- (int)readSFixed32;
+- (unsigned int)readUInt32;
+- (void)readMapEntry:extensionRegistry:field:parentMessage:;
+- (void)popLimit:;
+- (int)readInt32;
+- (unsigned long long)readUInt64;
+- (BOOL)isAtEnd;
+- (float)readFloat;
+- (id)initWithData:;
+- (void)readUnknownGroup:message:;
+- (BOOL)skipField:;
+- (long long)readSInt64;
+- (int)readEnum;
+- (unsigned long long)pushLimit:;
+- (long long)readInt64;
+- (long long)readSFixed64;
+- (id)readBytes;
+- (double)readDouble;
++ (id)streamWithData:;
+@end

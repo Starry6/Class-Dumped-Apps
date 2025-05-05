@@ -1,0 +1,2 @@
+@interface IESLiveSaaSIESLiveSaaSPBSwitchSceneRoot : GPBRootObject
+@end

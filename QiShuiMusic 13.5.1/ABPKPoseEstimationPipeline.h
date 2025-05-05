@@ -1,0 +1,24 @@
+@interface ABPKPoseEstimationPipeline : NSObject
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (void)_startInitABPKSignpost;
+- (void)_endInitABPKSignpost;
+- (BOOL)initAlgorithmModules;
+- (void)initializeOutput;
+- (void)setExitPoint:;
+- (void)runABPKAlgorithmWithInputData:andGetOutput:;
+- (int)runABPKPoseEstimationWithInputData:andGetOutput:;
+- (void)computeRootTransforms:withCameraExtrinsics:withVioPose:withVioPoseValidity:;
+- (void)saveInputData:andOutputData:ToDir:withFileNamePrefix:;
+- (void)_startInitABPKOutputSignpost;
+- (void)_endInitABPKOutputSignpost;
+- (void)_startExecuteAlgorithmSignpost;
+- (void)_endExecuteAlgorithmSignpost;
+- (void)_startImagePreprocessingSignpost;
+- (void)_endImagePreprocessingSignpost;
+- (void)_startScaleEstimationSignpostWithTimestamp:;
+- (void)_endScaleEstimationSignpostWithTimestamp:;
+- (void)_startRetargettingSignpostWithTimestamp:;
+- (void)_endRetargettingSignpostWithTimestamp:;
+@end

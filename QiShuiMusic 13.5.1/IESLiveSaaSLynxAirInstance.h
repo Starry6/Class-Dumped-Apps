@@ -1,0 +1,34 @@
+@interface IESLiveSaaSLynxAirInstance : NSObject
+@property (nonatomic) <IESLiveLynxAirLifecycleProtocol> lifecycleDelegate;
+@property (nonatomic) <IESLiveGeckoService> geckoService;
+@property (nonatomic) UIView<AnnieXContainerBaseProtocol> cardView;
+@property (nonatomic) <AnnieXCardModelProtocol> cardModel;
+@property (nonatomic) NSMutableDictionary trackParams;
+@property (nonatomic) NSData templateData;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)container:didFinishLoadWithURL:;
+- (void)setTrackParams:;
+- (void)bindData:;
+- (id)cardModel;
+- (void)container:didLoadFailedWithUrl:error:;
+- (void)containerDidFirstScreen:;
+- (id)createViewHeightAdaptive:lynxAirLifecycleProtocol:withData:;
+- (id)geckoService;
+- (id)getTemplatePathWithUrl:;
+- (id)lifecycleDelegate;
+- (id)offlineDataWithUrl:;
+- (void)registerLocalMethod:;
+- (void)setCardModel:;
+- (void)setGeckoService:;
+- (void)setLifecycleDelegate:;
+- (void)setTemplateData:;
+- (id)templateData;
+- (id)trackParams;
+- (void).cxx_destruct;
+- (id)accessKey;
+- (id)cardView;
+- (void)setCardView:;
+@end

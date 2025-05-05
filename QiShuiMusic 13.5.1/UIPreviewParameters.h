@@ -1,0 +1,38 @@
+@interface UIPreviewParameters : NSObject
+@property (nonatomic) q previewMode;
+@property (nonatomic) BOOL appliesShadow;
+@property (nonatomic) BOOL hidesSourceViewDuringDropAnimation;
+@property (nonatomic) UIBezierPath effectiveShadowPath;
+@property (nonatomic) BOOL singleLineText;
+@property (nonatomic) {UIEdgeInsets=dddd} _textPathInsets;
+@property (nonatomic) double _textPathCornerRadius;
+@property (nonatomic) UIBezierPath visiblePath;
+@property (nonatomic) UIBezierPath shadowPath;
+@property (nonatomic) UIColor backgroundColor;
+- (void)setShadowPath:;
+- (id)shadowPath;
+- (id)init;
+- (void)setBackgroundColor:;
+- (id)backgroundColor;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setVisiblePath:;
+- (id)visiblePath;
+- (id)initWithTextLineRects:;
+- (id)_initWithMode:visiblePath:backgroundColor:;
+- (BOOL)appliesShadow;
+- (BOOL)_isSingleLineText;
+- (void)_setTextPathInsets:;
+- (void)_setTextPathCornerRadius:;
+- (id)effectiveShadowPath;
+- (id)_textPathInsets;
+- (double)_textPathCornerRadius;
+- (long long)_previewMode;
+- (void)_setPreviewMode:;
+- (void)setAppliesShadow:;
+- (BOOL)hidesSourceViewDuringDropAnimation;
+- (void)setHidesSourceViewDuringDropAnimation:;
+@end

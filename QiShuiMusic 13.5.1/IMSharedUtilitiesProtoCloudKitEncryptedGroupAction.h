@@ -1,0 +1,34 @@
+@interface IMSharedUtilitiesProtoCloudKitEncryptedGroupAction : PBCodable
+@property (nonatomic) BOOL hasVersion;
+@property (nonatomic) I version;
+@property (nonatomic) BOOL hasGroupActionType;
+@property (nonatomic) q groupActionType;
+@property (nonatomic) BOOL hasOtherHandle;
+@property (nonatomic) NSString otherHandle;
+@property (nonatomic) BOOL hasPadding;
+@property (nonatomic) NSData padding;
+- (void)setHasVersion:;
+- (void)dealloc;
+- (void)setVersion:;
+- (unsigned int)version;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (BOOL)hasVersion;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void)setPadding:;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)padding;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasPadding;
+- (void)setOtherHandle:;
+- (id)otherHandle;
+- (BOOL)hasOtherHandle;
+- (void)setGroupActionType:;
+- (void)setHasGroupActionType:;
+- (BOOL)hasGroupActionType;
+- (long long)groupActionType;
+@end

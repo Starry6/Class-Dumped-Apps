@@ -1,0 +1,37 @@
+@interface WKObject : NSProxy
+@property (nonatomic) ^{Object=^^?@} _apiObject;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)isNSTimeZone__;
+- (BOOL)respondsToSelector:;
+- (BOOL)isNSData__;
+- (BOOL)isNSString__;
+- (void)dealloc;
+- (BOOL)isNSArray__;
+- (BOOL)isNSDate__;
+- (Class)classForKeyedArchiver;
+- (BOOL)isNSOrderedSet__;
+- (BOOL)isNSDictionary__;
+- (BOOL)isMemberOfClass:;
+- (id)_apiObject;
+- (id)methodSignatureForSelector:;
+- (id)_web_createTarget;
+- (BOOL)isNSValue__;
+- (unsigned long long)hash;
+- (BOOL)isNSNumber__;
+- (id)debugDescription;
+- (BOOL)isNSCFConstantString__;
+- (BOOL)isNSObject__;
+- (BOOL)conformsToProtocol:;
+- (BOOL)isNSSet__;
+- (void).cxx_destruct;
+- (BOOL)isKindOfClass:;
+- (id)description;
+- (Class)classForCoder;
+- (id)forwardingTargetForSelector:;
+- (void)forwardInvocation:;
+- (id).cxx_construct;
+- (BOOL)isEqual:;
+@end

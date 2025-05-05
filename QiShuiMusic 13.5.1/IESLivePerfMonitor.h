@@ -1,0 +1,34 @@
+@interface IESLivePerfMonitor : NSObject
+@property (nonatomic) IESLivePerfLevelJudger seriousLevel;
+@property (nonatomic) IESLivePerfLevelJudger criticalLevel;
+@property (nonatomic) RACSubject perfWarningSubject;
+@property (nonatomic) q cpuFreqSampleInterval;
+@property (nonatomic) q cpuFreqSampleMinInterval;
+@property (nonatomic) double cpuFreqNextSampleTime;
+@property (nonatomic) BOOL enableCpuFreqInLowPowerMode;
+- (void)updateCpuUsage:;
+- (void)setEnableCpuFreqInLowPowerMode:;
+- (double)cpuFreqNextSampleTime;
+- (long long)cpuFreqSampleInterval;
+- (long long)cpuFreqSampleMinInterval;
+- (BOOL)enableCpuFreqInLowPowerMode;
+- (void)notifyIfNeed;
+- (id)perfWarningSignal;
+- (id)perfWarningSubject;
+- (id)seriousLevel;
+- (void)setCpuFreqNextSampleTime:;
+- (void)setCpuFreqSampleInterval:;
+- (void)setCpuFreqSampleMinInterval:;
+- (void)setCriticalLevel:;
+- (void)setPerfWarningSubject:;
+- (void)setSeriousLevel:;
+- (void)updateCpuFreq:;
+- (void)updateFps:;
+- (void)updateThermalState:;
+- (id)init;
+- (void)dealloc;
+- (void)setup;
+- (void).cxx_destruct;
+- (void)reset;
+- (id)criticalLevel;
+@end

@@ -1,0 +1,31 @@
+@interface STActivityAttributionList : NSObject
+@property (nonatomic) STListData listData;
+@property (nonatomic) Q count;
+@property (nonatomic) NSArray attributions;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithListData:;
+- (id)init;
+- (id)dataByApplyingDiff:;
+- (id)listData;
+- (id)_initWithListData:;
+- (id)succinctDescriptionBuilder;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)diffFromData:;
+- (void)enumerateAttributionsUsingBlock:;
+- (void)encodeWithCoder:;
+- (id)attributions;
+- (void).cxx_destruct;
+- (id)succinctDescription;
+- (id)description;
+- (id)mutableCopyWithZone:;
+- (unsigned long long)count;
+- (id)descriptionBuilderWithMultilinePrefix:;
+- (BOOL)isEqual:;
+- (id)descriptionWithMultilinePrefix:;
+- (id)copyWithZone:;
++ (BOOL)supportsSecureCoding;
+@end

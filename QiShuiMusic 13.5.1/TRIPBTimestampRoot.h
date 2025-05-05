@@ -1,0 +1,2 @@
+@interface TRIPBTimestampRoot : TRIPBRootObject
+@end

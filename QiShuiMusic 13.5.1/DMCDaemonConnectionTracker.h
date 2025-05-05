@@ -1,0 +1,34 @@
+@interface DMCDaemonConnectionTracker : NSObject
+@property (nonatomic) NSString clientName;
+@property (nonatomic) NSObject<OS_dispatch_queue> queue;
+@property (nonatomic) NSMutableDictionary connectionCache;
+@property (nonatomic) NSMutableDictionary requestCache;
+@property (nonatomic) NSMutableDictionary pidNameCache;
+@property (nonatomic) double connectionThreshold;
+@property (nonatomic) double requestThreshold;
+@property (nonatomic) @? excessiveConncetionHandler;
+@property (nonatomic) @? excessiveRequestHandler;
+- (id)excessiveConncetionHandler;
+- (id)clientName;
+- (void)setClientName:;
+- (id)pidNameCache;
+- (void)setExcessiveConncetionHandler:;
+- (void)setRequestThreshold:;
+- (void)setConnectionCache:;
+- (id)connectionCache;
+- (void)setRequestCache:;
+- (void)trackRequestFromPID:;
+- (double)requestThreshold;
+- (void)trackConnectionFromPID:;
+- (id)initWithProcessName:connectionThreshold:requestThreshold:;
+- (void)setConnectionThreshold:;
+- (id)excessiveRequestHandler;
+- (void).cxx_destruct;
+- (double)connectionThreshold;
+- (void)setQueue:;
+- (void)setExcessiveRequestHandler:;
+- (void)setPidNameCache:;
+- (id)requestCache;
+- (id)queue;
+- (id)_nameForProcessWithPID:cache:;
+@end

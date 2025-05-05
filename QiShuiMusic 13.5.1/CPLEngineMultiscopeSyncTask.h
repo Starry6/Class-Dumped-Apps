@@ -1,0 +1,31 @@
+@interface CPLEngineMultiscopeSyncTask : CPLEngineSyncTask
+@property (nonatomic) CPLEngineScopeStorage scopes;
+@property (nonatomic) BOOL shouldSkipScopesWithMissingTransportScope;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setForeground:;
+- (void)task:didFinishWithError:;
+- (void)cancel;
+- (id)scopes;
+- (void)task:didProgress:userInfo:;
+- (void).cxx_destruct;
+- (void)launch;
+- (void)setForceSync:;
+- (id)_currentTask;
+- (id)enumerateScopesForTaskInTransaction:;
+- (id)newScopedTaskWithScope:session:transportScope:clientCacheIdentifier:;
+- (BOOL)shouldSkipScopesWithMissingTransportScope;
+- (id)initWithEngineLibrary:session:;
+- (id)scopeFilterInTransaction:;
+- (BOOL)shouldProcessScope:inTransaction:;
+- (id)phaseDescriptionLastChangeDate:;
+- (id)phaseDescription;
+- (void)_setCurrentTask:;
+- (id)_currentScope;
+- (void)dispatchAsyncWithCurrentSubtask:;
+- (BOOL)shouldStartTaskInTransaction:;
+- (BOOL)shouldContinueAfterError:fromTask:;
+- (void)_launchTaskForNextScope;
+@end

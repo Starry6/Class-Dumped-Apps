@@ -1,0 +1,33 @@
+@interface NSConstantDoubleNumber : NSNumber
+- (unsigned short)unsignedShortValue;
+- (unsigned long long)unsignedLongValue;
+- (unsigned long long)unsignedLongLongValue;
+- (long long)longValue;
+- (int)intValue;
+- (unsigned char)unsignedCharValue;
+- (unsigned int)unsignedIntValue;
+- (float)floatValue;
+- (long long)longLongValue;
+- (id)init;
+- (void)dealloc;
+- (id)copy;
+- (double)doubleValue;
+- (void)getValue:size:;
+- (void)getValue:;
+- (id)decimalValue;
+- (id)objCType;
+- (BOOL)_isDeallocating;
+- (short)shortValue;
+- (id)autorelease;
+- (id)release;
+- (char)charValue;
+- (unsigned long long)unsignedIntegerValue;
+- (id)retain;
+- (BOOL)boolValue;
+- (BOOL)_tryRetain;
+- (long long)integerValue;
+- (unsigned long long)retainCount;
+- (id)copyWithZone:;
++ (id)allocWithZone:;
++ (id)new;
+@end

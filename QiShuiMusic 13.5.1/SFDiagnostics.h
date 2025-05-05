@@ -1,0 +1,31 @@
+@interface SFDiagnostics : NSObject
+@property (nonatomic) NSObject<OS_dispatch_queue> dispatchQueue;
+@property (nonatomic) @? interruptionHandler;
+@property (nonatomic) @? invalidationHandler;
+- (id)init;
+- (id)interruptionHandler;
+- (void)dealloc;
+- (void)_invalidated;
+- (void)setInterruptionHandler:;
+- (id)dispatchQueue;
+- (void)setDispatchQueue:;
+- (void)_interrupted;
+- (void)_ensureXPCStarted;
+- (void)_invalidate;
+- (void).cxx_destruct;
+- (id)invalidationHandler;
+- (void)diagnosticControl:completion:;
+- (void)setInvalidationHandler:;
+- (void)invalidate;
+- (void)diagnosticBLEModeWithCompletion:;
+- (void)bluetoothUserInteraction;
+- (void)diagnosticMock:device:completion:;
+- (void)diagnosticMockStart:;
+- (void)diagnosticMockStop:;
+- (void)logControl:completion:;
+- (void)_logControl:completion:;
+- (void)show:completion:;
+- (void)_show:completion:;
+- (void)unlockTestClientWithDevice:;
+- (void)unlockTestServer;
+@end

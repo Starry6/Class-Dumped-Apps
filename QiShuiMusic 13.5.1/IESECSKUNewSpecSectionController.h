@@ -1,0 +1,37 @@
+@interface IESECSKUNewSpecSectionController : IGListSectionController
+@property (nonatomic) IESECSKUNewSpecViewModel viewModel;
+@property (nonatomic) NSMutableArray registerCellIdentifiers;
+@property (nonatomic) NSMutableArray cellArray;
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)cellArray;
+- (id)cellForItemAtIndex:;
+- (void)didSelectSpecItem:;
+- (void)didUpdateToObject:;
+- (void)mediaPreviewController:didDismissWithIndex:isCurrentVideoTab:;
+- (void)mediaPreviewController:didSwipeToIndex:previousIndex:;
+- (void)minusTapped;
+- (void)plusTapped;
+- (id)registerCellIdentifiers;
+- (void)setCellArray:;
+- (void)setRegisterCellIdentifiers:;
+- (void)skuModuleShow:extra:;
+- (void)tagCarAdapt;
+- (void)tapCoverImageWithSpecItem:placeholerView:;
+- (void)tappedSizeComponent:;
+- (void)tappedSpecSwitch:;
+- (id)targetViewForImagePreviewController:atIndex:;
+- (long long)numberOfItems;
+- (id)viewModel;
+- (void)setCollectionView:;
+- (void).cxx_destruct;
+- (id)collectionView;
+- (void)setViewModel:;
+- (double)minimumLineSpacing;
+- (double)minimumInteritemSpacing;
+- (id)inset;
+- (id)sizeForItemAtIndex:;
+@end

@@ -1,0 +1,37 @@
+@interface IESECSKUBottomViewModel : NSObject
+@property (nonatomic) IESECSKUModel skuModel;
+@property (nonatomic) IESECSKUDetailContext detailContext;
+@property (nonatomic) BOOL isShowCountDown;
+@property (nonatomic) NSString countdownInfo;
+@property (nonatomic) q endInterval;
+@property (nonatomic) q serverInterval;
+@property (nonatomic) NSArray buttonModels;
+@property (nonatomic) NSString curSkuID;
+@property (nonatomic) IESECSKUButtonTipModel buttonTip;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setEndInterval:;
+- (id)initWithSKUModel:detailContext:;
+- (BOOL)isShowCountDown;
+- (id)buttonTip;
+- (BOOL)canUseCoupon;
+- (id)countdownInfo;
+- (id)curSkuID;
+- (id)detailContext;
+- (void)initServerInterval;
+- (BOOL)isDepositPresale;
+- (id)p_curSKUInfo;
+- (id)selectedTotalPrice;
+- (long long)serverInterval;
+- (void)setDetailContext:;
+- (void)setServerInterval:;
+- (void)setSkuModel:;
+- (id)skuModel;
+- (void)skuModuleClick:extra:;
+- (void)skuModuleShow:extra:once:;
+- (void).cxx_destruct;
+- (long long)endInterval;
+- (id)buttonModels;
+@end

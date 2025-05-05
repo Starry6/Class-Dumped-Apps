@@ -1,0 +1,2 @@
+@interface TTALogoutThirdPartyPlatformModel : TTADataRespModel
+@end

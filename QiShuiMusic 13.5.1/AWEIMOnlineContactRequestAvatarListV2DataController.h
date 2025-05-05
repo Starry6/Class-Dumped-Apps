@@ -1,0 +1,35 @@
+@interface AWEIMOnlineContactRequestAvatarListV2DataController : NSObject
+@property (nonatomic) NSString requestID;
+@property (nonatomic) NSString imprID;
+@property (nonatomic) BOOL hasEnoughFriends;
+@property (nonatomic) double lastRefreshTime;
+@property (nonatomic) BOOL isProcessingRemoteData;
+@property (nonatomic) NSObject<OS_dispatch_queue> queue;
+@property (nonatomic) NSString pageIdentifier;
+@property (nonatomic) BOOL shouldHidden;
+@property (nonatomic) @? hasEnoughFriendsChangedBlock;
+- (double)lastRefreshTime;
+- (BOOL)hasEnoughFriends;
+- (id)hasEnoughFriendsChangedBlock;
+- (id)imprID;
+- (BOOL)isProcessingRemoteData;
+- (void)resetLastRefreshTime;
+- (void)setHasEnoughFriends:;
+- (void)setHasEnoughFriendsChangedBlock:;
+- (void)setImprID:;
+- (void)setIsProcessingRemoteData:;
+- (void)setLastRefreshTime:;
+- (BOOL)shouldHidden;
+- (void)updateHasEnoughFriends;
+- (id)init;
+- (id)requestID;
+- (void).cxx_destruct;
+- (void)refreshWithCompletion:;
+- (void)reset;
+- (void)setQueue:;
+- (id)queue;
+- (void)setRequestID:;
+- (id)pageIdentifier;
+- (void)setPageIdentifier:;
++ (id)formatViewModelWithModels:promotID:promotInfo:;
+@end

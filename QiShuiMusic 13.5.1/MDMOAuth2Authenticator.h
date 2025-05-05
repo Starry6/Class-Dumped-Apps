@@ -1,0 +1,35 @@
+@interface MDMOAuth2Authenticator : NSObject
+@property (nonatomic) NSDictionary tokens;
+@property (nonatomic) NSString state;
+@property (nonatomic) NSString personaID;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setPersonaID:;
+- (id)personaID;
+- (void)setState:;
+- (void)setTokens:;
+- (id)state;
+- (void).cxx_destruct;
+- (id)tokens;
+- (id)initWithTokens:;
+- (BOOL)authenticateRequest:error:;
+- (id)initWithRMAccountID:;
+- (BOOL)validAuthParams:;
+- (BOOL)doesWebAuthentication;
+- (BOOL)canRefreshToken;
+- (id)prepareForReauthenticationWithAuthParams:accountID:error:;
+- (id)webAuthenticationURLForAuthParams:userIdentifier:;
+- (void)authTokensWithCallbackURL:authParams:completionHandler:;
+- (void)refreshTokenWithAuthParams:accountID:completionHandler:;
+- (void)_processTokenResponse:data:error:completionHandler:;
+- (id)_authorizationGrantURLWithAuthParams:;
+- (void)_tokenRequestWithCode:authParams:completionHandler:;
+- (void)_refreshRequestWithRefreshToken:authParams:completionHandler:;
+- (void)_executeTokenRequestWithURL:body:completionHandler:;
++ (id)authenticationMethod;
++ (id)serializeTokens:;
++ (id)deserializeTokens:;
++ (id)_createOAuth2InvalidError;
+@end

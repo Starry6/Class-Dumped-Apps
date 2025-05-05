@@ -1,0 +1,30 @@
+@interface CUMessageSessionServer : NSObject
+@property (nonatomic) NSObject<OS_dispatch_queue> dispatchQueue;
+@property (nonatomic) @? invalidationHandler;
+@property (nonatomic) @? registerRequestHandler;
+@property (nonatomic) @? deregisterRequestHandler;
+@property (nonatomic) @? sendRequestHandler;
+@property (nonatomic) CUMessageSession templateSession;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (id)dispatchQueue;
+- (void)_connectionInvalidated:;
+- (void)setDispatchQueue:;
+- (BOOL)listener:shouldAcceptNewConnection:;
+- (void).cxx_destruct;
+- (id)invalidationHandler;
+- (void)setInvalidationHandler:;
+- (void)invalidate;
+- (void)activate;
+- (id)registerRequestHandler;
+- (void)setRegisterRequestHandler:;
+- (id)sendRequestHandler;
+- (void)setSendRequestHandler:;
+- (id)deregisterRequestHandler;
+- (void)setDeregisterRequestHandler:;
+- (id)templateSession;
+- (void)setTemplateSession:;
+@end

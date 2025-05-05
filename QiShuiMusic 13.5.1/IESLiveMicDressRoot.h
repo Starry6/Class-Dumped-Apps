@@ -1,0 +1,2 @@
+@interface IESLiveMicDressRoot : GPBRootObject
+@end

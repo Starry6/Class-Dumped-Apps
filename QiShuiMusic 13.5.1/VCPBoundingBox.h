@@ -1,0 +1,30 @@
+@interface VCPBoundingBox : NSObject
+@property (nonatomic) float minX;
+@property (nonatomic) float maxX;
+@property (nonatomic) float minY;
+@property (nonatomic) float maxY;
+@property (nonatomic) float confidence;
+@property (nonatomic) float flag;
+@property (nonatomic) NSInteger classIndex;
+- (float)confidence;
+- (float)flag;
+- (void)setConfidence:;
+- (id)intersect:;
+- (void)setFlag:;
+- (float)maxX;
+- (void)setMaxX:;
+- (float)minX;
+- (void)setMinX:;
+- (float)minY;
+- (void)setMinY:;
+- (float)maxY;
+- (void)setMaxY:;
+- (float)area;
+- (id)initWithXYAndSize:y:width:height:confidence:;
+- (id)initWithCenterAndSize:y:width:height:confidence:;
+- (id)union:;
+- (float)computeIntersectionOverUnion:;
+- (id)getCGRectWithClipWidth:height:;
+- (int)classIndex;
+- (void)setClassIndex:;
+@end

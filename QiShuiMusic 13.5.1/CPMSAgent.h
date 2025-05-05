@@ -1,0 +1,32 @@
+@interface CPMSAgent : NSObject
+@property (nonatomic) NSMutableSet clientSet;
+@property (nonatomic) I connect;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)registerForNotifications;
+- (id)init;
+- (void)dealloc;
+- (void)setConnect:;
+- (void).cxx_destruct;
+- (unsigned int)connect;
+- (BOOL)acknowledgePowerBudget:forClientId:error:;
+- (id)copyPowerBudgetForRequest:forClient:error:;
+- (BOOL)registerClientWithDescription:error:;
+- (id)requestPowerBudget:forClient:error:;
+- (id)copyPowerBudgetForRequest:forClient:withPowerProfile:error:;
+- (id)copyDefaultPowerProfileForClient:error:;
+- (BOOL)isClientIdValid:;
+- (BOOL)sanityCheckClientDescription:;
+- (char)CPMSPowerTimeScaleToPPMIndex:;
+- (id)PPMIndexToCPMSPowerTimeScale:;
+- (id)clientSet;
+- (void)setClientSet:;
++ (BOOL)isCPMSSupportedForAnyClient;
++ (id)log;
++ (id)sharedCPMSAgent;
++ (unsigned char)CPMSClientIdToPPMClientId:;
++ (BOOL)isCPMSSupported;
++ (BOOL)isCPMSSupportedForClient:;
+@end

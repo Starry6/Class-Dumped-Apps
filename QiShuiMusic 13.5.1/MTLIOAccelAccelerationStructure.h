@@ -1,0 +1,36 @@
+@interface MTLIOAccelAccelerationStructure : MTLIOAccelResource
+@property (nonatomic) Q uniqueIdentifier;
+@property (nonatomic) MTLIOAccelBuffer<MTLBuffer> buffer;
+@property (nonatomic) Q bufferOffset;
+@property (nonatomic) MTLAccelerationStructureDescriptor descriptor;
+@property (nonatomic) Q resourceIndex;
+@property (nonatomic) {MTLResourceID=Q} gpuResourceID;
+@property (nonatomic) Q gpuHandle;
+@property (nonatomic) Q size;
+@property (nonatomic) NSString label;
+@property (nonatomic) <MTLDevice> device;
+@property (nonatomic) Q cpuCacheMode;
+@property (nonatomic) Q storageMode;
+@property (nonatomic) Q hazardTrackingMode;
+@property (nonatomic) Q resourceOptions;
+@property (nonatomic) <MTLHeap> heap;
+@property (nonatomic) Q heapOffset;
+@property (nonatomic) Q allocatedSize;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)gpuResourceID;
+- (unsigned long long)resourceIndex;
+- (id)descriptor;
+- (unsigned long long)gpuHandle;
+- (void)dealloc;
+- (id)buffer;
+- (unsigned long long)uniqueIdentifier;
+- (void)setDescriptor:;
+- (unsigned long long)bufferOffset;
+- (unsigned long long)size;
+- (void)copyPropertiesFromBuffer:;
+- (id)initWithBuffer:offset:;
+- (id)initWithBuffer:offset:resourceIndex:;
+@end

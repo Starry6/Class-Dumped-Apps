@@ -1,0 +1,2 @@
+@interface PGPictureInPictureViewControllerBackgroundView : UIView
+@end

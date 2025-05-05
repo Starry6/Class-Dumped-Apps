@@ -1,0 +1,32 @@
+@interface QLExtensionManagerCache : NSObject
+@property (nonatomic) NSDictionary matchingAttributes;
+@property (nonatomic) @ matchingContext;
+@property (nonatomic) NSMutableDictionary matchingExtensions;
+@property (nonatomic) NSMapTable qlExtensions;
+@property (nonatomic) BOOL isMatchingExtensions;
+@property (nonatomic) NSObject<OS_dispatch_semaphore> waitForExtensionsSemaphore;
+- (void)dealloc;
+- (void)beginMatchingExtensions;
+- (id)matchingContext;
+- (void).cxx_destruct;
+- (void)endMatchingExtensions;
+- (void)setMatchingContext:;
+- (id)initWithMatchingAttributes:;
+- (void)_didReceiveNewMatchingExtensionList:;
+- (BOOL)hasExtensionWithMatchingAttributes:;
+- (id)extensionWithMatchingAttributes:allowExtensionsForParentTypes:extensionPath:firstPartyExtension:;
+- (id)extensionWithMatchingAttributes:allowExtensionsForParentTypes:extensionPath:;
+- (BOOL)_supportedContentTypesFromExtension:matches:allowMatchingWithParentTypes:;
+- (void)_synchronouslyWaitForExtensionListIfNeeded;
+- (id)matchingAttributes;
+- (void)setMatchingAttributes:;
+- (id)matchingExtensions;
+- (void)setMatchingExtensions:;
+- (id)qlExtensions;
+- (void)setQlExtensions:;
+- (BOOL)isMatchingExtensions;
+- (void)setIsMatchingExtensions:;
+- (id)waitForExtensionsSemaphore;
+- (void)setWaitForExtensionsSemaphore:;
++ (id)bestMatchingExtensionsFromSupportingExtensions:includingExtensionsWithSupportingParentTypes:byContentType:;
+@end

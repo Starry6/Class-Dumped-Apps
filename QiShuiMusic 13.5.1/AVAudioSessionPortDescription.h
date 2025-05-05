@@ -1,0 +1,38 @@
+@interface AVAudioSessionPortDescription : NSObject
+@property (nonatomic) NSString portType;
+@property (nonatomic) NSString portName;
+@property (nonatomic) NSString UID;
+@property (nonatomic) BOOL hasHardwareVoiceCallProcessing;
+@property (nonatomic) BOOL spatialAudioEnabled;
+@property (nonatomic) NSArray channels;
+@property (nonatomic) NSArray dataSources;
+@property (nonatomic) AVAudioSessionDataSourceDescription selectedDataSource;
+@property (nonatomic) AVAudioSessionDataSourceDescription preferredDataSource;
+- (id)portType;
+- (id)UID;
+- (id)channels;
+- (id)selectedDataSource;
+- (id)dataSources;
+- (id)portName;
+- (id)preferredDataSource;
+- (void)dealloc;
+- (void)configureChannelsAndDataSources:;
+- (unsigned long long)endpointType;
+- (id)initWithRawPortDescriptionXPC:owningSession:;
+- (BOOL)hasHardwareVoiceCallProcessing;
+- (long long)portSubType;
+- (void)setSupportsSpatialAudio:;
+- (unsigned long long)hash;
+- (id)privateGetID;
+- (id)initWithRawPortDescription:owningSession:;
+- (BOOL)isHeadphones;
+- (BOOL)isLowLatencyAirPlay;
+- (BOOL)isEqualToPort:compareStrict:;
+- (BOOL)isLiveListenSupported;
+- (id)description;
+- (BOOL)setPreferredDataSource:error:;
+- (id)privateGetImplementation;
+- (BOOL)isEqual:;
+- (BOOL)isSpatialAudioEnabled;
++ (id)privateCreateArray:owningSession:;
+@end

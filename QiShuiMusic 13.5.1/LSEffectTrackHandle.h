@@ -1,0 +1,32 @@
+@interface LSEffectTrackHandle : NSObject
+@property (nonatomic) NSInteger trackIndex;
+@property (nonatomic) ^v effectTrackHandle;
+@property (nonatomic) ^v effectHandle;
+@property (nonatomic) LSGLContext context;
+@property (nonatomic) BOOL isEnable;
+@property (nonatomic) @? enableBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setEnableBlock:;
+- (void)destroyTrackHandle;
+- (id)effectHandle;
+- (id)effectTrackHandle;
+- (id)enableBlock;
+- (BOOL)isEnable;
+- (void)setEffectHandle:;
+- (void)setEffectTrackHandle:;
+- (int)setHandleEnable:;
+- (void)setIsEnable:;
+- (int)setStickerIntensity:key:value:;
+- (int)setStickerPaths:ids:count:config:;
+- (void)setTrackIndex:;
+- (void)dealloc;
+- (id)context;
+- (void).cxx_destruct;
+- (void)setContext:;
+- (int)setOutputTexture:;
+- (int)trackIndex;
++ (id)trackHandleWithEffectHandle:glContext:index:;
+@end

@@ -1,0 +1,34 @@
+@interface AWEIMGroupNoticeMessage : AWEIMMessage
+@property (nonatomic) AWEIMGroupNameAlertView alertView;
+@property (nonatomic) NSArray subjectUsers;
+@property (nonatomic) NSArray objectUsers;
+@property (nonatomic) AWEIMGroupNoticeBackupTextModel cnBackupText;
+@property (nonatomic) AWEIMGroupNoticeBackupTextModel enBackupText;
+@property (nonatomic) NSString content;
+- (id)p_getObjectNameWithObjectRange:;
+- (void)setObjectUsers:;
+- (void)__openGroupAnnounce;
+- (void)__openGroupManager;
+- (id)calculateAttributedContent;
+- (id)cnBackupText;
+- (id)conversationDataManager;
+- (id)convertInviteToast:;
+- (void)dismissAlertView;
+- (id)enBackupText;
+- (id)getContentDict;
+- (id)initWithContentDict:;
+- (id)objectUsers;
+- (void)p_addPersonalDetailLinkToAttStr:withNoticeUser:;
+- (void)p_changeGroupName;
+- (id)p_getObjectNameWithObjectRange:ignoreCurrentUser:;
+- (id)p_getSubjectNameWithSubjectRange:;
+- (void)prepareForConversationHint;
+- (void)setCnBackupText:;
+- (void)setEnBackupText:;
+- (void)setSubjectUsers:;
+- (id)subjectUsers;
+- (id)content;
+- (void)setAlertView:;
+- (void).cxx_destruct;
+- (id)alertView;
+@end

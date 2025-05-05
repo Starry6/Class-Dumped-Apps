@@ -1,0 +1,37 @@
+@interface MPStoreArtworkRequestToken : NSObject
+@property (nonatomic) q artworkInfoType;
+@property (nonatomic) ICStoreArtworkInfo imageArtworkInfo;
+@property (nonatomic) ICStoreVideoArtworkInfo videoArtworkInfo;
+@property (nonatomic) NSString cropStyle;
+@property (nonatomic) NSString format;
+@property (nonatomic) NSString sourceEditorialArtworkKind;
+@property (nonatomic) NSURL artworkURL;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)artworkURL;
+- (void)setFormat:;
+- (void)setArtworkURL:;
+- (void)setImageArtworkInfo:;
+- (id)init;
+- (void)setArtworkInfoType:;
+- (id)stringRepresentation;
+- (id)format;
+- (id)imageArtworkInfo;
+- (id)videoArtworkInfo;
+- (id)initWithCoder:;
+- (id)cropStyle;
+- (void)encodeWithCoder:;
+- (void)setVideoArtworkInfo:;
+- (id)sourceEditorialArtworkKind;
+- (void).cxx_destruct;
+- (void)setCropStyle:;
+- (void)setSourceEditorialArtworkKind:;
+- (BOOL)isEqual:;
+- (long long)artworkInfoType;
+- (id)copyWithZone:;
++ (BOOL)supportsSecureCoding;
++ (id)tokenWithImageArtworkInfo:;
++ (id)tokenWithVideoArtworkInfo:;
+@end

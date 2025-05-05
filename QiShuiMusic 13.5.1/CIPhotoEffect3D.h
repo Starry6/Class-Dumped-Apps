@@ -1,0 +1,31 @@
+@interface CIPhotoEffect3D : CIFilter
+@property (nonatomic) CIImage inputImage;
+@property (nonatomic) CIImage inputDepthMap;
+@property (nonatomic) NSNumber inputThreshold;
+@property (nonatomic) NSNumber inputGrainAmount;
+@property (nonatomic) NSNumber inputScale;
+- (void)setDefaults;
+- (id)init;
+- (int)_maxVersion;
+- (id)inputScale;
+- (void)setInputScale:;
+- (id)inputImage;
+- (void)setInputImage:;
+- (int)_defaultVersion;
+- (id)outputImage;
+- (id)inputThreshold;
+- (void)setInputThreshold:;
+- (id)cubeName;
+- (id)cubePath;
+- (id)cubeColorSpaceName;
+- (id)_CIPhotoEffectDepthBlend;
+- (id)backgroundCubeName;
+- (id)backgroundCubePath;
+- (id)applyCubeWithName:toImage:;
+- (int)_maxVersionBG;
+- (id)inputDepthMap;
+- (void)setInputDepthMap:;
+- (id)inputGrainAmount;
+- (void)setInputGrainAmount:;
++ (id)customAttributes;
+@end

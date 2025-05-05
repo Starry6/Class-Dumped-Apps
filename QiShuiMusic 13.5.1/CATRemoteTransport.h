@@ -1,0 +1,31 @@
+@interface CATRemoteTransport : CATTransport
+@property (nonatomic) <CATRemoteTransportDelegate> remoteTransportDelegate;
+@property (nonatomic) ^{__SecTrust=} peerTrust;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)invalidateConnection;
+- (id)init;
+- (void)resumeConnection;
+- (id)peerTrust;
+- (void)setName:;
+- (void)connectionWillSecure:;
+- (void)connectionDidSecure:;
+- (void)suspendConnection;
+- (void)connectionDidClose:;
+- (void)connection:didInterruptWithError:;
+- (id)initWithRemoteConnection:;
+- (void)connection:encounteredTrustDecisionWhileTryingToSecure:;
+- (void)remoteTransportSendMessageOperation:sendData:;
+- (void)connection:didFailToSendData:userInfo:error:;
+- (void)connection:didReceiveData:;
+- (void).cxx_destruct;
+- (id)remoteTransportDelegate;
+- (id)name;
+- (id)operationToSendMessage:;
+- (void)setRemoteTransportDelegate:;
+- (void)connection:didSendData:userInfo:;
++ (id)new;
++ (void)createRemoteTransportPairWithTransport:andTransport:;
+@end

@@ -1,0 +1,33 @@
+@interface VCSessionMessaging : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)dealloc;
+- (void)controlChannel:receivedMessage:transactionID:fromParticipant:;
+- (void)controlChannel:topic:payload:transactionID:fromParticipant:;
+- (void)controlChannel:sendReliableMessage:didSucceed:toParticipant:;
+- (void)controlChannel:clearTransactionCacheForParticipant:;
+- (id)initWithControlChannel:remoteVersion:;
+- (void)addParticipant:controlChannelProtocolVersion:;
+- (void)startMessaging;
+- (void)stopMessaging;
+- (void)addTopic:associatedStrings:allowConcurrent:receiveHandler:;
+- (void)addTopic:associatedStrings:allowConcurrent:sendMessageDictionaryCompletionHandler:receiveMessageDictionaryHandler:;
+- (void)addTopic:associatedStrings:allowConcurrent:requireReliable:sendMessageDictionaryCompletionHandler:receiveMessageDictionaryHandler:;
+- (void)addTopic:associatedStrings:allowConcurrent:sendCompletionHandler:receiveHandler:;
+- (void)sendMessage:withTopic:;
+- (void)sendMessage:withTopic:participantID:;
+- (void)sendMessageDictionary:withTopic:participantID:;
+- (BOOL)sendReliableMessage:withTopic:participantID:withOptions:completion:;
+- (id)newPackedMessageFromDictionary:;
+- (id)newDictionaryFromUnpackedMessage:;
+- (id)newPackedMessageFromMomentsDictionary:;
+- (id)newDictionaryFromUnpackedMomentsMessage:;
+- (id)newPackedMessageFromDictionaryV2:;
+- (id)newDictionaryFromUnpackedMessageV2:;
+- (id)newPackedMessageFromDictionary:forTopic:controlChannelVersion:;
+- (id)newDictionaryFromUnpackedMessage:forTopic:controlChannelVersion:;
+- (void)searchMatchingTopic:payload:transactionID:fromParticipant:;
+- (id)allocMessageFromPayload:forTopic:participantID:;
+@end

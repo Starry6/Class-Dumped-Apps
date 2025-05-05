@@ -1,0 +1,33 @@
+@interface STRestrictionsCoreAnalyticsEvent : NSObject
+@property (nonatomic) BOOL contentAndPrivacyRestrictionsEnabled;
+@property (nonatomic) BOOL mediaAndAppleMusicIsRestricted;
+@property (nonatomic) BOOL gameCenterMultiplayerGamesIsRestricted;
+@property (nonatomic) BOOL gameCenterAddingFriendsIsRestricted;
+@property (nonatomic) BOOL gameCenterConnectWithFriendsIsRestricted;
+@property (nonatomic) BOOL gameCenterScreenRecordingIsRestricted;
+@property (nonatomic) BOOL gameCenterNearbyMultiplayerIsRestricted;
+@property (nonatomic) BOOL gameCenterPrivateMessagingIsRestricted;
+@property (nonatomic) BOOL gameCenterProfilePrivacyChangesIsRestricted;
+@property (nonatomic) BOOL gameCenterAvatarAndNicknameChangesIsRestricted;
+@property (nonatomic) q userAgeGroup;
+@property (nonatomic) BOOL userIsManaged;
+@property (nonatomic) NSString name;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSDictionary payload;
+- (id)payload;
+- (id)name;
+- (long long)userAgeGroup;
+- (BOOL)userIsManaged;
+- (id)initWithContentAndPrivacyRestrictionsEnabled:mediaAndAppleMusicIsRestricted:gameCenterMultiplayerGamesIsRestricted:gameCenterAddingFriendsIsRestricted:gameCenterConnectWithFriendsIsRestricted:gameCenterScreenRecordingIsRestricted:gameCenterNearbyMultiplayerIsRestricted:gameCenterPrivateMessagingIsRestricted:gameCenterProfilePrivacyChangesIsRestricted:gameCenterAvatarAndNicknameChangesIsRestricted:userAgeGroup:userIsManaged:;
+- (BOOL)contentAndPrivacyRestrictionsEnabled;
+- (BOOL)mediaAndAppleMusicIsRestricted;
+- (BOOL)gameCenterMultiplayerGamesIsRestricted;
+- (BOOL)gameCenterAddingFriendsIsRestricted;
+- (BOOL)gameCenterConnectWithFriendsIsRestricted;
+- (BOOL)gameCenterScreenRecordingIsRestricted;
+- (BOOL)gameCenterNearbyMultiplayerIsRestricted;
+- (BOOL)gameCenterPrivateMessagingIsRestricted;
+- (BOOL)gameCenterProfilePrivacyChangesIsRestricted;
+- (BOOL)gameCenterAvatarAndNicknameChangesIsRestricted;
++ (id)description;
+@end

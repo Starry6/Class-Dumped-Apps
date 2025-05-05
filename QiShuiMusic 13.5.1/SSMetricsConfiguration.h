@@ -1,0 +1,33 @@
+@interface SSMetricsConfiguration : NSObject
+@property (nonatomic) NSDictionary fieldsMap;
+@property (nonatomic) SSMetricsConfiguration childConfiguration;
+@property (nonatomic) BOOL disableEventDecoration;
+- (id)childConfiguration;
+- (BOOL)isDisabled;
+- (id)eventFields;
+- (void)dealloc;
+- (id)cookieFields;
+- (id)fieldsMap;
+- (id)tokenStringWithElements:;
+- (BOOL)isEventTypeBlacklisted:;
+- (void)setChildConfiguration:;
+- (void)setDisableEventDecoration:;
+- (id)reportingURLString;
+- (id)valueForConfigurationKey:;
+- (BOOL)_configBooleanForKey:defaultValue:;
+- (id)compoundStringWithElements:;
+- (id)_initSSMetricsEventConfiguration;
+- (BOOL)_decorateITMLEvents;
+- (BOOL)isSendDisabled;
+- (void).cxx_destruct;
+- (id)pingURLs;
+- (double)reportingFrequency;
+- (BOOL)disableEventDecoration;
+- (void)_setReportingFrequencyOverride:;
+- (id)blacklistedEventFields;
+- (id)initWithGlobalConfiguration:;
+- (id)initWithStorePlatformData:;
++ (id)_reportingFrequencyOverride;
++ (void)getReportingFrequencyOverrideWithCompletionBlock:;
++ (void)setReportingFrequencyOverride:;
+@end

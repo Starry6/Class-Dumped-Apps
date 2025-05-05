@@ -1,0 +1,34 @@
+@interface IESECDurationHelper : NSObject
+@property (nonatomic) double durationStart;
+@property (nonatomic) double durationTotal;
+@property (nonatomic) double startTime;
+@property (nonatomic) double stage1Time;
+@property (nonatomic) double stage2Time;
+@property (nonatomic) BOOL hasRecordedPagePerformance;
+@property (nonatomic) <IESECPagePerformanceDelegate> delegate;
+- (void)commitForPage:;
+- (double)durationStart;
+- (BOOL)hasRecordedPagePerformance;
+- (void)pauseDurationRecord;
+- (void)resumeDurationRecord;
+- (void)setDurationStart:;
+- (void)setDurationTotal:;
+- (void)setHasRecordedPagePerformance:;
+- (void)setStage1Time:;
+- (void)setStage2Time:;
+- (void)stage1;
+- (double)stage1Time;
+- (void)stage2;
+- (double)stage2Time;
+- (void)startDurationRecord;
+- (void)startDurationRecordWithoutClearTotalDuration;
+- (id)stopAndGetstageTimesArray;
+- (void)setStartTime:;
+- (void)setDelegate:;
+- (double)startTime;
+- (double)totalDuration;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)begin;
+- (double)durationTotal;
+@end

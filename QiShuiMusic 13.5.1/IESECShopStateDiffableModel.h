@@ -1,0 +1,38 @@
+@interface IESECShopStateDiffableModel : NSObject
+@property (nonatomic) q goodsCount;
+@property (nonatomic) NSString bindShopName;
+@property (nonatomic) q selectedGoodsType;
+@property (nonatomic) NSString emptyText;
+@property (nonatomic) NSString emptyDetailText;
+@property (nonatomic) BOOL isStore;
+@property (nonatomic) BOOL productShopEntry;
+@property (nonatomic) BOOL recommendRequesting;
+@property (nonatomic) BOOL isShowRecommend;
+@property (nonatomic) q shopProductCount;
+@property (nonatomic) NSString shopURL;
+- (id)emptyDetailText;
+- (id)shopURL;
+- (BOOL)isShowRecommend;
+- (id)bindShopName;
+- (id)diffIdentifier;
+- (id)emptyText;
+- (long long)goodsCount;
+- (BOOL)isEqualToDiffableObject:;
+- (BOOL)productShopEntry;
+- (BOOL)recommendRequesting;
+- (long long)selectedGoodsType;
+- (void)setBindShopName:;
+- (void)setEmptyDetailText:;
+- (void)setEmptyText:;
+- (void)setGoodsCount:;
+- (void)setIsShowRecommend:;
+- (void)setIsStore:;
+- (void)setProductShopEntry:;
+- (void)setRecommendRequesting:;
+- (void)setSelectedGoodsType:;
+- (void)setShopProductCount:;
+- (void)setShopURL:;
+- (long long)shopProductCount;
+- (void).cxx_destruct;
+- (BOOL)isStore;
+@end

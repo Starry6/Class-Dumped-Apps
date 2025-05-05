@@ -1,0 +1,2 @@
+@interface BattleRivalsRecommendApiRoot : GPBRootObject
+@end

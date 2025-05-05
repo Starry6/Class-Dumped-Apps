@@ -1,0 +1,32 @@
+@interface IESLiveSaaSMessageActionCreator : NSObject
+@property (nonatomic) IESLiveSaaSMessageClient messageClient;
+@property (nonatomic) <IESLiveMonitor> monitor;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)addFakeMessage:;
+- (BOOL)shouldDispatch:;
+- (void)didSetAttachingDIContext;
+- (void)doMessageProcess:;
+- (BOOL)enableIMClientReconnectForUser;
+- (id)initWithMessageClient:;
+- (id)messageClient;
+- (void)monitorMessageDelayTimeIfNeeded:;
+- (void)onCameraDidChangeTo:source:;
+- (void)setMessageClient:;
+- (void)startMessageDispatch;
+- (void)stopMessageDispatch;
+- (void)updateSubRoomCameraGroupId:;
+- (void)updateSubRoomID:;
+- (void)userDidLogin:;
+- (void)userDidLogout;
+- (void)userDidUpdate:;
+- (void)start;
+- (void)stop;
+- (void)setMonitor:;
+- (void).cxx_destruct;
+- (id)monitor;
++ (id)defaultActionCreatorWithRoom:;
++ (BOOL)publicLongLink;
+@end

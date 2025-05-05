@@ -1,0 +1,31 @@
+@interface INSpatialEventTrigger : NSObject
+@property (nonatomic) NSArray suggestedValues;
+@property (nonatomic) q mobileSpace;
+@property (nonatomic) CLPlacemark placemark;
+@property (nonatomic) q event;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (long long)event;
+- (id)_intents_readableTitleWithLocalizer:metadata:;
+- (id)_dictionaryRepresentation;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (id)descriptionAtIndent:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)_intents_encodeWithJSONEncoder:codableDescription:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)placemark;
+- (id)initWithPlacemark:event:;
+- (id)initWithPlacemark:event:suggestedValues:mobileSpace:;
+- (id)initWithMobileSpace:event:;
+- (id)suggestedValues;
+- (long long)mobileSpace;
++ (id)_intents_decodeWithJSONDecoder:codableDescription:from:;
++ (BOOL)supportsSecureCoding;
+@end

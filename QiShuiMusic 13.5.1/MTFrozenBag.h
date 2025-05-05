@@ -1,0 +1,31 @@
+@interface MTFrozenBag : NSObject
+@property (nonatomic) NSString profile;
+@property (nonatomic) NSString profileVersion;
+@property (nonatomic) NSDictionary config;
+@property (nonatomic) BOOL expired;
+@property (nonatomic) NSDate expirationDate;
+@property (nonatomic) AMSProcessInfo processInfo;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)URLForKey:;
+- (void)setProfileVersion:;
+- (BOOL)isExpired;
+- (void)setConfig:;
+- (id)initWithConfig:;
+- (void)setProfile:;
+- (id)boolForKey:;
+- (id)stringForKey:;
+- (id)profile;
+- (id)expirationDate;
+- (id)arrayForKey:;
+- (void).cxx_destruct;
+- (id)doubleForKey:;
+- (id)profileVersion;
+- (id)config;
+- (void)createSnapshotWithCompletion:;
+- (id)integerForKey:;
+- (id)dictionaryForKey:;
+- (id)initWithProfile:profileVersion:config:;
+@end

@@ -1,0 +1,38 @@
+@interface CRTextSequenceRecognizerModel : NSObject
+@property (nonatomic) ^i codemapArray;
+@property (nonatomic) Q codemapSize;
+@property (nonatomic) q ctcBlankLabelIndex;
+@property (nonatomic) NSDictionary outputShape;
+@property (nonatomic) NSNumber outputWidthDownscale;
+@property (nonatomic) NSNumber outputWidthOffset;
+@property (nonatomic) CRNeuralRecognizerConfiguration configuration;
+@property (nonatomic) NSURL modelURL;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)dealloc;
+- (id)initWithConfiguration:error:;
+- (id)configuration;
+- (id)modelURL;
+- (void).cxx_destruct;
+- (BOOL)preheatWithError:;
+- (id)outputShape;
+- (BOOL)supportCharacterBoxes;
+- (id)predictFromInputs:error:;
+- (id)inputBatchFromTextFeatures:image:featureWidth:configuration:;
+- (void)releaseIntermediateBuffers;
+- (id)codemapArray;
+- (void)setCodemapArray:;
+- (long long)ctcBlankLabelIndex;
+- (void)setCtcBlankLabelIndex:;
+- (id)outputWidthDownscale;
+- (id)outputWidthOffset;
+- (unsigned long long)codemapSize;
+- (id)populateInputBatchData:textFeatures:image:batchSize:width:configuration:;
+- (void)setCodemapSize:;
+- (void)setOutputShape:;
+- (void)setOutputWidthDownscale:;
+- (void)setOutputWidthOffset:;
++ (id)defaultURLOfModelInThisBundle;
+@end

@@ -1,0 +1,34 @@
+@interface AMSMockURLResponse : NSObject
+@property (nonatomic) NSMutableArray responseHandlerBlocks;
+@property (nonatomic) NSURLSessionTask runningTask;
+@property (nonatomic) NSError error;
+@property (nonatomic) Q statusCode;
+@property (nonatomic) NSDictionary headers;
+@property (nonatomic) NSData body;
+@property (nonatomic) BOOL performActualRequest;
+@property (nonatomic) NSURLRequest originalRequest;
+- (void)setStatusCode:;
+- (id)init;
+- (unsigned long long)statusCode;
+- (id)body;
+- (void)setError:;
+- (id)error;
+- (void)setHeaders:;
+- (void)setBody:;
+- (void).cxx_destruct;
+- (id)originalRequest;
+- (id)headers;
+- (id)handleReceivedRequest:;
+- (void)addResponseHandler:;
+- (void)stopRunningTasks;
+- (BOOL)performActualRequest;
+- (void)setPerformActualRequest:;
+- (id)responseHandlerBlocks;
+- (void)setResponseHandlerBlocks:;
+- (id)runningTask;
+- (void)setRunningTask:;
++ (id)responseWithError:;
++ (id)responseFromActualResponse;
++ (id)responseWithStatus:headers:body:;
++ (id)responseWithHARFile:;
+@end

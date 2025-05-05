@@ -1,0 +1,38 @@
+@interface GEOChargerPlugsInfo : PBCodable
+@property (nonatomic) NSMutableArray suggestedChargerPlugs;
+@property (nonatomic) NSMutableArray supportedChargerPlugs;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (id)init;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)suggestedChargerPlugs;
+- (void)setSuggestedChargerPlugs:;
+- (void)clearSuggestedChargerPlugs;
+- (void)addSuggestedChargerPlug:;
+- (unsigned long long)suggestedChargerPlugsCount;
+- (id)suggestedChargerPlugAtIndex:;
+- (id)supportedChargerPlugs;
+- (void)setSupportedChargerPlugs:;
+- (void)clearSupportedChargerPlugs;
+- (void)addSupportedChargerPlug:;
+- (unsigned long long)supportedChargerPlugsCount;
+- (id)supportedChargerPlugAtIndex:;
++ (BOOL)isValid:;
++ (Class)suggestedChargerPlugType;
++ (Class)supportedChargerPlugType;
+@end

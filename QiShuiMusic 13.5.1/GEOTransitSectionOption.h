@@ -1,0 +1,35 @@
+@interface GEOTransitSectionOption : PBCodable
+@property (nonatomic) Q sectionsCount;
+@property (nonatomic) ^I sections;
+@property (nonatomic) BOOL hasDefaultSectionIndex;
+@property (nonatomic) I defaultSectionIndex;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (id)sections;
+- (void)readAll:;
+- (id)unknownFields;
+- (void)dealloc;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned int)sectionAtIndex:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void)clearSections;
+- (unsigned long long)sectionsCount;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)addSection:;
+- (void)setSections:count:;
+- (unsigned int)defaultSectionIndex;
+- (void)setDefaultSectionIndex:;
+- (void)setHasDefaultSectionIndex:;
+- (BOOL)hasDefaultSectionIndex;
++ (BOOL)isValid:;
+@end

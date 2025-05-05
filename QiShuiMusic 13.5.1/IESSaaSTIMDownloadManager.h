@@ -1,0 +1,31 @@
+@interface IESSaaSTIMDownloadManager : NSObject
+@property (nonatomic) YYDiskCache diskCache;
+@property (nonatomic) NSURLSession urlSession;
+@property (nonatomic) NSMutableDictionary downloadingDict;
+@property (nonatomic) <IESSaaSTIMDownloadManagerDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)downloadingDict;
+- (id)fileTaskForSessionDownloadTask:;
+- (void)enqueueFileTask:;
+- (id)fileTaskForURL:preferredLocalDir:prefferredLocalFileName:;
+- (BOOL)hasDownloaded:preferredLocalDir:prefferredLocalFileName:;
+- (void)setDiskCache:;
+- (void)setDownloadingDict:;
+- (void)cancelTask:;
+- (id)urlSession;
+- (id)init;
+- (void)URLSession:task:didCompleteWithError:;
+- (void)URLSession:downloadTask:didFinishDownloadingToURL:;
+- (void)setDelegate:;
+- (id)diskCache;
+- (void)setUrlSession:;
+- (void)URLSession:downloadTask:didWriteData:totalBytesWritten:totalBytesExpectedToWrite:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)URLSession:downloadTask:didResumeAtOffset:expectedTotalBytes:;
++ (id)urlForRemoteURL:preferredLocalDir:prefferredLocalFileName:;
++ (id)sharedInstance;
+@end

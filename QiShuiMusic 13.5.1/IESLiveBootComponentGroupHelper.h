@@ -1,0 +1,2 @@
+@interface IESLiveBootComponentGroupHelper : NSObject
+@end

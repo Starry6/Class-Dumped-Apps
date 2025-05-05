@@ -1,0 +1,34 @@
+@interface AWDSafariCKBookmarksSyncEvent : PBCodable
+@property (nonatomic) BOOL hasTimestamp;
+@property (nonatomic) Q timestamp;
+@property (nonatomic) BOOL hasResult;
+@property (nonatomic) q result;
+@property (nonatomic) BOOL hasErrorDomain;
+@property (nonatomic) NSString errorDomain;
+@property (nonatomic) BOOL hasErrorCode;
+@property (nonatomic) NSString errorCode;
+- (id)errorDomain;
+- (BOOL)hasErrorCode;
+- (long long)result;
+- (void)dealloc;
+- (id)errorCode;
+- (void)writeTo:;
+- (void)setHasResult:;
+- (unsigned long long)hash;
+- (void)setErrorDomain:;
+- (BOOL)hasErrorDomain;
+- (void)copyTo:;
+- (void)setHasTimestamp:;
+- (void)mergeFrom:;
+- (BOOL)hasTimestamp;
+- (BOOL)hasResult;
+- (void)setTimestamp:;
+- (void)setErrorCode:;
+- (BOOL)readFrom:;
+- (unsigned long long)timestamp;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)setResult:;
+- (id)copyWithZone:;
+@end

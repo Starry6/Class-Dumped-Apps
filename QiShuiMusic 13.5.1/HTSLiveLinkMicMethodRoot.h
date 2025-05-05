@@ -1,0 +1,2 @@
+@interface HTSLiveLinkMicMethodRoot : GPBRootObject
+@end

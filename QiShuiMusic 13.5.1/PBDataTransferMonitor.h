@@ -1,0 +1,33 @@
+@interface PBDataTransferMonitor : NSObject
+@property (nonatomic) <PBDataTransferMonitorDelegate> delegate;
+@property (nonatomic) NSArray outstandingRequests;
+@property (nonatomic) Q outstandingItemsCount;
+@property (nonatomic) Q totalItemsCount;
+@property (nonatomic) BOOL suppressEventsUntilRequested;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSProgress progress;
+- (id)outstandingRequests;
+- (id)init;
+- (void)dealloc;
+- (void)setDelegate:;
+- (void)observeValueForKeyPath:ofObject:change:context:;
+- (id)progress;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setSuppressEventsUntilRequested:;
+- (BOOL)suppressEventsUntilRequested;
+- (void)_transferQueue_scheduleBeganCallback;
+- (void)_transferQueue_sendBeganCallback;
+- (void)_transferQueue_scheduleFinishedCallback;
+- (void)_transferQueue_sendFinishedCallback;
+- (unsigned long long)totalItemsCount;
+- (void)sendDelegateEventsIfNeeded;
+- (void)cancelOutstandingRequests;
+- (void)_transferQueue_recomputeMasterProgress;
+- (unsigned long long)outstandingItemsCount;
+- (void)itemCollection:item:representation:beganDataTransferWithProgress:;
+- (void)itemCollection:item:representationFinishedDataTransfer:;
+@end

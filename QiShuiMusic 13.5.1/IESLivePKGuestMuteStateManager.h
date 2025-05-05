@@ -1,0 +1,34 @@
+@interface IESLivePKGuestMuteStateManager : NSObject
+@property (nonatomic) HTSLiveInteractiveAPI interactiveAPI;
+@property (nonatomic) IESLiveInteractMuteStateMachine machine;
+@property (nonatomic) <IESLiveRoomServiceAdapter> room;
+@property (nonatomic) Q muteSelfState;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)machine;
+- (void)muteSelfLocally;
+- (void)muteSelf:force:;
+- (void)clearMuteState;
+- (void)didSetAttachingDIContext;
+- (id)interactiveAPI;
+- (unsigned long long)muteSelfState;
+- (void)muteSelfWithResume:completion:;
+- (void)muteStateDidChange:reason:;
+- (void)muteStateMachineShowToast:;
+- (void)muteWithState:;
+- (void)onReceiveSelfSilenceStatus:;
+- (void)setInteractiveAPI:;
+- (void)setMachine:;
+- (void)setMuteSelfState:;
+- (void)unMuteSelfWithEnforced:completion:;
+- (void)unMuteWithState:;
+- (void)unmuteSelf:;
+- (void)showToast:;
+- (void).cxx_destruct;
+- (id)room;
+- (void)setRoom:;
+- (id)initWithRoom:;
+- (BOOL)isMute;
+@end

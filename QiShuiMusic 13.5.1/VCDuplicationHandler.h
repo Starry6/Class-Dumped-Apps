@@ -1,0 +1,37 @@
+@interface VCDuplicationHandler : NSObject
+@property (nonatomic) C duplicationReason;
+@property (nonatomic) BOOL isDuplicationEnabled;
+@property (nonatomic) BOOL isDuplicationPending;
+@property (nonatomic) BOOL isRemotePreAzul;
+@property (nonatomic) BOOL iRATDuplicationEnabled;
+@property (nonatomic) BOOL allowDuplication;
+- (id)init;
+- (BOOL)isDuplicationEnabled;
+- (BOOL)iRATDuplicationEnabled;
+- (BOOL)isDuplicationPending;
+- (id)handleDuplicationStateUpdateEvent:;
+- (void)enableDuplication;
+- (void)disableDuplication;
+- (void)updateDuplicationStateForMissingPacketsUpdateEvent:updateResult:;
+- (void)updateDuplicationStateForReceivingPacketsUpdateEvent:updateResult:;
+- (void)updateDuplicationStateForLocalWRMSuggestingCellularEvent:updateResult:;
+- (void)updateDuplicationStateForLocalWRMSuggestingWiFiEvent:updateResult:;
+- (void)updateDuplicationStateForRemoteWRMSuggestingWiFiEvent:updateResult:;
+- (void)stopRemoteDuplicationAndUpdateResult:updateAlertState:;
+- (void)updateDuplicationStateForTurnOffDuplicationForHandoverEvent:updateResult:;
+- (void)updateDuplicationStateForTurnOnDuplicationForHandoverEvent:updateResult:;
+- (void)updateDuplicationStateForAlertStateUpdatedEvent:updateResult:;
+- (void)updateDuplicationStateForConnectionArrayUpdatedEvent:updateResult:;
+- (BOOL)updateDuplicationStateWithAlertInfo:;
+- (void)updateDuplicationStateForMediaHealthUnrecoverable:updateResult:;
+- (void)updateDuplicationStateForMediaHealthRecovered:updateResult:;
+- (void)updateDuplicationStateForRemoteDuplicationChanged:updateResult:updateAlertState:;
+- (void)shareLocalInterfacePreferenceWithPeerDuringActiveDuplicationForEvent:updateResult:;
+- (BOOL)isDuplicationDueToWRMSuggestion;
+- (unsigned char)duplicationReason;
+- (BOOL)isRemotePreAzul;
+- (void)setIsRemotePreAzul:;
+- (void)setIRATDuplicationEnabled:;
+- (BOOL)allowDuplication;
+- (void)setAllowDuplication:;
+@end

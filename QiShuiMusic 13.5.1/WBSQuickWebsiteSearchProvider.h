@@ -1,0 +1,30 @@
+@interface WBSQuickWebsiteSearchProvider : NSObject
+@property (nonatomic) NSString sourcePageURLString;
+@property (nonatomic) NSDate dateAdded;
+@property (nonatomic) WBSOpenSearchURLTemplate searchURLTemplateFromForm;
+@property (nonatomic) NSString openSearchDescriptionURLString;
+@property (nonatomic) NSDate dateOfLastSearch;
+@property (nonatomic) WBSOpenSearchDescription openSearchDescription;
+@property (nonatomic) WBSOpenSearchURLTemplate searchURLTemplate;
+@property (nonatomic) WBSOpenSearchURLTemplate urlTemplateForSuggestionsInJSON;
+@property (nonatomic) NSString displayName;
+@property (nonatomic) NSString hostname;
+- (id)hostname;
+- (id)dateAdded;
+- (id)displayName;
+- (void).cxx_destruct;
+- (id)dictionaryRepresentation;
+- (id)searchURLTemplate;
+- (id)urlTemplateForSuggestionsInJSON;
+- (id)initWithDictionaryRepresentation:delegate:;
+- (id)initWithSourcePageURLString:searchURLTemplateFromForm:delegate:;
+- (id)initWithSourcePageURLString:openSearchDescriptionURLString:delegate:;
+- (id)openSearchDescription;
+- (id)sourcePageURLString;
+- (id)searchURLTemplateFromForm;
+- (void)setSearchURLTemplateFromForm:;
+- (id)openSearchDescriptionURLString;
+- (void)setOpenSearchDescriptionURLString:;
+- (id)dateOfLastSearch;
+- (void)setDateOfLastSearch:;
+@end

@@ -1,0 +1,38 @@
+@interface CTCarrierSpaceClient : NSObject
+@property (nonatomic) <CTCarrierSpaceClientDelegate> delegate;
+- (void)ping:;
+- (id)_proxyWithErrorHandler:;
+- (id)init;
+- (void)dealloc;
+- (void)fetchAppsInfo:;
+- (void)fetchPlansInfo:completion:;
+- (void)_connect_sync;
+- (void)setDelegate:;
+- (void)purchasePlan:completion:;
+- (id)initWithQueue:andListenerEndpoint:;
+- (void)testMode:config:completion:;
+- (void)refreshAppsInfo:;
+- (void)purchasePlan:authInfo:completion:;
+- (void)setUserConsent:completion:;
+- (void)fetchAppsInfo:completion:;
+- (void)_ensureConnected_sync;
+- (void)userDidAcceptPlanTerms:completion:;
+- (void)refreshUsageInfo:;
+- (void)fetchUsageInfo:;
+- (id)delegate;
+- (void)authenticationDidFail:completion:;
+- (void)fetchUsageInfo:completion:;
+- (void).cxx_destruct;
+- (void)setUserInAuthFlow:completion:;
+- (void)getUserConsentFlowInfo:;
+- (void)fetchDataPlanMetrics:;
+- (void)getCapabilities:;
+- (id)initWithQueue:;
+- (void)getAuthenticationContext:;
+- (void)authenticationDidComplete:completion:;
+- (void)invalidate;
+- (id).cxx_construct;
+- (void)refreshAllInfo:;
+- (void)refreshPlansInfo:;
+- (void)fetchPlansInfo:;
+@end

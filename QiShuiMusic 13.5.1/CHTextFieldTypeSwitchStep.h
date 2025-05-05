@@ -1,0 +1,30 @@
+@interface CHTextFieldTypeSwitchStep : CHPostprocessingStepModifyingOriginalTokens
+@property (nonatomic) CHPostProcessingManager defaultProcessor;
+@property (nonatomic) CHPostProcessingManager digitProcessor;
+@property (nonatomic) CHPostProcessingManager phoneProcessor;
+@property (nonatomic) CHPostProcessingManager usernameProcessor;
+@property (nonatomic) CHPostProcessingManager emailProcessor;
+@property (nonatomic) CHPostProcessingManager urlProcessor;
+@property (nonatomic) CHPostProcessingManager asciiProcessor;
+@property (nonatomic) CHPostProcessingManager equationProcessor;
+- (void).cxx_destruct;
+- (id)process:options:;
+- (id)initProcessorDefault:processorDigits:processorPhone:processorUsername:processorEmail:processorURL:processorASCII:processorEquation:;
+- (id)process:withProcessor:options:;
+- (id)defaultProcessor;
+- (void)setDefaultProcessor:;
+- (id)digitProcessor;
+- (void)setDigitProcessor:;
+- (id)phoneProcessor;
+- (void)setPhoneProcessor:;
+- (id)usernameProcessor;
+- (void)setUsernameProcessor:;
+- (id)emailProcessor;
+- (void)setEmailProcessor:;
+- (id)urlProcessor;
+- (void)setUrlProcessor:;
+- (id)asciiProcessor;
+- (void)setAsciiProcessor:;
+- (id)equationProcessor;
+- (void)setEquationProcessor:;
+@end

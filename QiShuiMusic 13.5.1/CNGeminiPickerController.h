@@ -1,0 +1,38 @@
+@interface CNGeminiPickerController : UINavigationController
+@property (nonatomic) UITableViewController tableViewController;
+@property (nonatomic) NSMutableArray geminiChannels;
+@property (nonatomic) CNGeminiChannel preferredGeminiChannel;
+@property (nonatomic) NSIndexPath selectedIndexPath;
+@property (nonatomic) <CNPickerControllerDelegate><UINavigationControllerDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)tableView:cellForRowAtIndexPath:;
+- (void)tableView:didSelectRowAtIndexPath:;
+- (void).cxx_destruct;
+- (void)viewWillAppear:;
+- (id)tableView:titleForHeaderInSection:;
+- (void)tableView:willDisplayCell:forRowAtIndexPath:;
+- (void)tableView:willDisplayHeaderView:forSection:;
+- (long long)tableView:numberOfRowsInSection:;
+- (long long)numberOfSectionsInTableView:;
+- (id)tableView:titleForFooterInSection:;
+- (id)selectedIndexPath;
+- (void)setSelectedIndexPath:;
+- (void)cancelPicker:;
+- (void)donePicker:;
+- (id)initWithGeminiResult:;
+- (void)setGeminiResult:;
+- (void)setGeminiResult:reload:;
+- (void)didPickItem;
+- (id)indexPathForGeminiChannel:;
+- (id)geminiChannelForIndexPath:;
+- (void)prepareCell:atIndexPath:;
+- (id)tableViewController;
+- (void)setTableViewController:;
+- (id)geminiChannels;
+- (void)setGeminiChannels:;
+- (id)preferredGeminiChannel;
+- (void)setPreferredGeminiChannel:;
+@end

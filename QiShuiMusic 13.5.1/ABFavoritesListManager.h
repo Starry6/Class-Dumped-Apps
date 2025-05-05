@@ -1,0 +1,37 @@
+@interface ABFavoritesListManager : NSObject
+- (void)addEntry:;
+- (BOOL)isFull;
+- (void)removeAllEntries;
+- (void)dealloc;
+- (void)_addEntryToMap:;
+- (void)save;
+- (void)_removeEntryFromMap:withUid:;
+- (void)saveImmediately;
+- (void)recacheIdentitiesSoon;
+- (void)moveEntryAtIndex:toIndex:;
+- (void)removeEntryAtIndex:;
+- (id)initWithAddressBook:;
+- (void)_postChangeNotification;
+- (id)entries;
+- (BOOL)_isValueForEntry:equalToValue:;
+- (void)_entryIdentityChanged:;
+- (void)_delayedLookup;
+- (void)reportFavoritesIssue:;
+- (BOOL)shouldNotReportFavoritesError:;
+- (void)_loadListWithAddressBook:;
+- (void)_loadList;
+- (void)_scheduleSave;
+- (id)entriesForPeople:;
+- (id)entriesForPerson:;
+- (id)entryFromEntries:type:property:identifier:value:label:;
+- (id)entryFromEntries:type:property:value:label:;
+- (id)entryWithType:forPerson:property:identifier:;
+- (id)entryWithIdentifier:forPerson:;
+- (BOOL)containsEntryWithIdentifier:forPerson:;
+- (BOOL)containsEntryWithType:forPerson:property:identifier:;
+- (BOOL)addEntryForPerson:property:withIdentifier:;
+- (void)_listChangedExternally;
+- (BOOL)entryIsDuplicateAndThusRemoved:oldUid:;
++ (id)sharedInstance;
++ (id)sharedInstanceWithAddressBook:;
+@end

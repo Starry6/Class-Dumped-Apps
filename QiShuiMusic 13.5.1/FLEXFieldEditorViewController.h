@@ -1,0 +1,30 @@
+@interface FLEXFieldEditorViewController : FLEXVariableEditorViewController
+@property (nonatomic) <FLEXMetadataAuxiliaryInfo> auxiliaryInfoProvider;
+@property (nonatomic) FLEXProperty property;
+@property (nonatomic) FLEXIvar ivar;
+@property (nonatomic) @ currentValue;
+@property (nonatomic) r^c typeEncoding;
+@property (nonatomic) NSString fieldDescription;
+@property (nonatomic) UIBarButtonItem getterButton;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)viewDidLoad;
+- (void)actionButtonPressed:;
+- (void)getterButtonPressed:;
+- (void)argumentInputViewValueDidChange:;
+- (void)registerAuxiliaryInfo;
+- (id)currentValue;
+- (id)auxiliaryInfoProvider;
+- (id)typeEncoding;
+- (id)fieldDescription;
+- (id)getterButton;
+- (id)property;
+- (void)setProperty:;
+- (id)ivar;
+- (void)setIvar:;
+- (void).cxx_destruct;
++ (id)target:property:commitHandler:;
++ (id)target:ivar:commitHandler:;
+@end

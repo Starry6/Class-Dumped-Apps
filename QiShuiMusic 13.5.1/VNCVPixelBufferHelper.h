@@ -1,0 +1,2 @@
+@interface VNCVPixelBufferHelper : NSObject
+@end

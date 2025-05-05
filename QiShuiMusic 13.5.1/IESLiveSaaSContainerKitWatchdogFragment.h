@@ -1,0 +1,31 @@
+@interface IESLiveSaaSContainerKitWatchdogFragment : IESLiveRoomComponent
+@property (nonatomic) IESLiveSaaSLiveRoomModel roomModel;
+@property (nonatomic) NSMutableArray upperRightWidgetDataListArray;
+@property (nonatomic) NSMapTable operateHandlerMap;
+@property (nonatomic) IESLiveSaaSUpperRightWidgetData currentShowWidget;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)componentCreate;
+- (id)addViewElement:forType:;
+- (void)componentBindService;
+- (void)componentDidMount;
+- (id)currentShowWidget;
+- (void)customAddViewElement:;
+- (void)customRemoveViewElement:;
+- (void)didSetAttachingDIContext;
+- (id)operateHandlerMap;
+- (void)remoteRoomDataReady:;
+- (void)removeViewElementWithResource:;
+- (id)roomModel;
+- (void)setCurrentShowWidget:;
+- (void)setOperateHandlerMap:;
+- (void)setRoomModel:;
+- (void)setUpperRightWidgetDataListArray:;
+- (void)updateAllowList:;
+- (id)upperRightWidgetDataListArray;
+- (void).cxx_destruct;
+- (void)messageReceived:;
++ (id)componentWithRoom:trackContext:componentContext:;
+@end

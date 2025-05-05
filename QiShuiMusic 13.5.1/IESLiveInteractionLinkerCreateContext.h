@@ -1,0 +1,35 @@
+@interface IESLiveInteractionLinkerCreateContext : NSObject
+@property (nonatomic) IESLiveLinkmicLinkAudienceCreateContext linkmicContext;
+@property (nonatomic) IESLiveInteractionLayout startLayout;
+@property (nonatomic) NSString createSource;
+@property (nonatomic) NSDictionary extra;
+@property (nonatomic) q startType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSObject rawData;
+@property (nonatomic) NSString promptString;
+- (void)setStartLayout:;
+- (id)createSource;
+- (BOOL)didStartBeforeEnterRoom;
+- (id)initWithLinkmicLinkAudienceCreateContext:;
+- (BOOL)isFirstInit;
+- (id)linkmicContext;
+- (int)mappedUiLayout;
+- (long long)maxMcNum;
+- (id)playModesArray;
+- (void)setCreateSource:;
+- (void)setExtra:;
+- (void)setLinkmicContext:;
+- (void)setStartType:;
+- (id)startLayout;
+- (unsigned long long)startScene;
+- (long long)startType;
+- (id)extra;
+- (void).cxx_destruct;
+- (id)functionType;
+- (id)rawData;
+- (id)promptString;
+- (int)uiLayout;
+@end

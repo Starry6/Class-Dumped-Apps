@@ -1,0 +1,31 @@
+@interface IESECLiveContext : IESECContext
+@property (nonatomic) IESECLiveRoomParams coreParams;
+@property (nonatomic) IESECLiveBusinessContext businessContext;
+@property (nonatomic) IESECLiveTracker tracker;
+@property (nonatomic) IESECLiveGoodsJumpHandler jumpHandler;
+@property (nonatomic) NSMutableDictionary taskSchedulers;
+@property (nonatomic) IESECLiveKVStorage kvStorage;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)businessContext;
+- (void)setJumpHandler:;
+- (BOOL)invokeSchedulerWithName:params:;
+- (void)addScheduler:;
+- (void)connectMessageWithLinkID:;
+- (id)coreParams;
+- (id)initWithContextParams:;
+- (id)jumpHandler;
+- (id)kvStorage;
+- (void)setBusinessContext:;
+- (void)setCoreParams:;
+- (void)setKvStorage:;
+- (void)setTaskSchedulers:;
+- (void)setupCoreParams:;
+- (id)taskSchedulers;
+- (void)setTracker:;
+- (id)tracker;
+- (void).cxx_destruct;
+- (id)api;
+@end

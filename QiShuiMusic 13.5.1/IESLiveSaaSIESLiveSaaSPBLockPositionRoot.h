@@ -1,0 +1,2 @@
+@interface IESLiveSaaSIESLiveSaaSPBLockPositionRoot : GPBRootObject
+@end

@@ -1,0 +1,33 @@
+@interface BDXBridgeAuthFeAuthConfig : NSObject
+@property (nonatomic) NSString feID;
+@property (nonatomic) BOOL isFromContentV2;
+@property (nonatomic) q access;
+@property (nonatomic) NSArray includeMethods;
+@property (nonatomic) NSArray excludedMethods;
+@property (nonatomic) NSNumber secureAuthVersion;
+@property (nonatomic) NSDictionary methodControlLimitInfo;
+@property (nonatomic) q source;
+- (BOOL)isFromContentV2;
+- (id)excludedMethods;
+- (id)feID;
+- (id)includeMethods;
+- (id)initWithDefaultValue:isFromContentV2:access:includedMethods:excludedMethods:secureAuthVersion:methodControlLimitInfo:source:;
+- (id)methodControlLimitInfo;
+- (id)secureAuthVersion;
+- (void)setExcludedMethods:;
+- (void)setFeID:;
+- (void)setIncludeMethods:;
+- (void)setIsFromContentV2:;
+- (void)setMethodControlLimitInfo:;
+- (void)setSecureAuthVersion:;
+- (long long)access;
+- (void)setAccess:;
+- (void).cxx_destruct;
+- (long long)source;
+- (void)setSource:;
++ (id)initWithBDXContentV2Config:config:source:;
++ (id)initWithContentConfig:includedMethods:excludedMethods:;
++ (id)initWithContentV2Config:config:source:;
++ (id)initWithNoConfig;
++ (id)initWithPrivateAccess:;
+@end

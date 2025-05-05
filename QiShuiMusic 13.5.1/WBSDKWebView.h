@@ -1,0 +1,32 @@
+@interface WBSDKWebView : UIView
+@property (nonatomic) WKWebView internalWebView;
+@property (nonatomic) WBSDKWebViewProgressView progressView;
+@property (nonatomic) WBSDKWebViewErrorView errorView;
+@property (nonatomic) <WBSDKWebViewDelegate> delegate;
+@property (nonatomic) NSURLRequest request;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)internalWebView;
+- (void)errorViewRetryButtonPressed:;
+- (void)setInternalWebView:;
+- (void)reload;
+- (void)dealloc;
+- (void)webView:didFinishNavigation:;
+- (void)layoutSubviews;
+- (void)setDelegate:;
+- (void)setProgressView:;
+- (id)request;
+- (id)initWithFrame:;
+- (void)webView:didFailProvisionalNavigation:withError:;
+- (id)delegate;
+- (void)webView:decidePolicyForNavigationAction:decisionHandler:;
+- (void).cxx_destruct;
+- (void)webView:didStartProvisionalNavigation:;
+- (id)progressView;
+- (void)webView:didFailNavigation:withError:;
+- (void)loadRequest:;
+- (id)errorView;
+- (void)setErrorView:;
+@end

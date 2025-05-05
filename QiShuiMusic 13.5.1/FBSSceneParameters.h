@@ -1,0 +1,31 @@
+@interface FBSSceneParameters : NSObject
+@property (nonatomic) FBSSceneSettings settings;
+@property (nonatomic) FBSSceneClientSettings clientSettings;
+@property (nonatomic) FBSSceneSpecification specification;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)specification;
+- (void)updateSettingsWithBlock:;
+- (id)init;
+- (void)encodeWithXPCDictionary:;
+- (id)settings;
+- (id)initWithParameters:;
+- (void)setSettings:;
+- (void)setClientSettings:;
+- (id)clientSettings;
+- (id)succinctDescriptionBuilder;
+- (unsigned long long)hash;
+- (id)initWithXPCDictionary:;
+- (void).cxx_destruct;
+- (id)succinctDescription;
+- (id)description;
+- (id)initWithSpecification:;
+- (id)mutableCopyWithZone:;
+- (id)descriptionBuilderWithMultilinePrefix:;
+- (BOOL)isEqual:;
+- (id)descriptionWithMultilinePrefix:;
+- (id)copyWithZone:;
++ (id)parametersForSpecification:;
+@end

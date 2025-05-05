@@ -1,0 +1,36 @@
+@interface USOSchemaUSOUtteranceAlignment : SISchemaInstrumentationMessage
+@property (nonatomic) I asrHypothesisIndex;
+@property (nonatomic) BOOL hasAsrHypothesisIndex;
+@property (nonatomic) NSArray spans;
+@property (nonatomic) I nodeIndex;
+@property (nonatomic) BOOL hasNodeIndex;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)spans;
+- (void)setSpans:;
+- (void)clearSpans;
+- (unsigned long long)spansCount;
+- (unsigned int)asrHypothesisIndex;
+- (void)setAsrHypothesisIndex:;
+- (BOOL)hasAsrHypothesisIndex;
+- (void)setHasAsrHypothesisIndex:;
+- (void)deleteAsrHypothesisIndex;
+- (void)setNodeIndex:;
+- (BOOL)hasNodeIndex;
+- (void)setHasNodeIndex:;
+- (void)deleteNodeIndex;
+- (unsigned int)nodeIndex;
+- (void)deleteSpans;
+- (void)addSpans:;
+- (id)spansAtIndex:;
+@end

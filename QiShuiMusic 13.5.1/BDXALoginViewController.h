@@ -1,0 +1,30 @@
+@interface BDXALoginViewController : BDXABaseViewController
+@property (nonatomic) BDXAExtraLoginViewController extraLoginViewController;
+@property (nonatomic) NSString loginType;
+@property (nonatomic) <BDXALoginViewControllerDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)bottomButtonTappedConfirmAgreementViewController:bottomButton:;
+- (void)continueLoginConfirmAgreementViewController:type:;
+- (id)extraLoginViewController;
+- (BOOL)extraLoginViewController:shouldIgnoreExtraLogin:;
+- (void)layoutExtraLoginViewController;
+- (void)loadBottomClickableTextView;
+- (void)navigateBackBtnTapped;
+- (void)setExtraLoginViewController:;
+- (BOOL)shouldIgnoreExtraLogin:;
+- (BOOL)showConfirmAgreementViewControllerWithType:;
+- (void)layoutViews;
+- (void)setDelegate:;
+- (void)viewDidDisappear:;
+- (void)viewWillDisappear:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)viewDidAppear:;
+- (void)viewWillAppear:;
+- (void)viewDidLoad;
+- (void)setLoginType:;
+- (id)loginType;
+@end

@@ -1,0 +1,33 @@
+@interface SKKeyframeSequence : NSObject
+@property (nonatomic) q interpolationMode;
+@property (nonatomic) q repeatMode;
+- (id)init;
+- (void)setRepeatMode:;
+- (id)copy;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (long long)repeatMode;
+- (void).cxx_destruct;
+- (id)initWithCount:;
+- (unsigned long long)count;
+- (id)initWithCapacity:;
+- (id)copyWithZone:;
+- (Class)_valueClass;
+- (id)sampleAtTime:;
+- (long long)interpolationMode;
+- (id)initWithKeyframeValues:times:;
+- (void)setInterpolationMode:;
+- (void)addKeyframeValue:time:;
+- (void)removeLastKeyframe;
+- (void)removeAllKeyframes;
+- (void)removeKeyframeAtIndex:;
+- (void)setKeyframeValue:forIndex:;
+- (void)setKeyframeTime:forIndex:;
+- (void)setKeyframeValue:time:forIndex:;
+- (id)getKeyframeValueForIndex:;
+- (id)_createSKCKeyframeSequence;
+- (void)_dirtySKCKeyframeSequence;
+- (double)getKeyframeTimeForIndex:;
+- (BOOL)isEqualToSequence:;
++ (BOOL)supportsSecureCoding;
+@end

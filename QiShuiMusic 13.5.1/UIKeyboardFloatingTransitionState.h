@@ -1,0 +1,33 @@
+@interface UIKeyboardFloatingTransitionState : NSObject
+@property (nonatomic) UIView inputView;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} inputViewFrame;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} platterViewFrame;
+@property (nonatomic) {UIEdgeInsets=dddd} platterInsets;
+@property (nonatomic) {CGPoint=dd} scale;
+@property (nonatomic) {CGAffineTransform=dddddd} initialInputViewTransform;
+@property (nonatomic) {CGAffineTransform=dddddd} finalInputViewTransform;
+@property (nonatomic) double borderWidth;
+@property (nonatomic) UIColor borderColor;
+@property (nonatomic) double cornerRadius;
+- (void)setBorderColor:;
+- (id)borderColor;
+- (void)setScale:;
+- (void)setInputView:;
+- (double)borderWidth;
+- (void)setBorderWidth:;
+- (void)setCornerRadius:;
+- (void).cxx_destruct;
+- (id)inputView;
+- (double)cornerRadius;
+- (id)scale;
+- (id)inputViewFrame;
+- (void)setInputViewFrame:;
+- (id)platterViewFrame;
+- (void)setPlatterViewFrame:;
+- (id)platterInsets;
+- (void)setPlatterInsets:;
+- (id)initialInputViewTransform;
+- (void)setInitialInputViewTransform:;
+- (id)finalInputViewTransform;
+- (void)setFinalInputViewTransform:;
+@end

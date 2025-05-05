@@ -1,0 +1,3 @@
+@interface PLLegacyChangeEventBuilder : NSObject
++ (id)createXPCDictionaryFromChangedObjectIDs:redundantDeletes:uuidsForCloudDeletion:updatedAttributesByObjectID:updatedRelationshipsByObjectID:updatedOrderKeys:changeSource:syncChangeMarker:;
+@end

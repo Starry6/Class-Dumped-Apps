@@ -1,0 +1,38 @@
+@interface VCRemoteVideoManager : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (void)dealloc;
+- (void)registerBlocksForService;
+- (void)didReceiveFirstRemoteFrameForStreamToken:;
+- (void)remoteScreenAttributesDidChange:streamToken:;
+- (void)remoteVideoAttributesDidChange:streamToken:;
+- (void)remoteVideoDidPause:streamToken:;
+- (void)remoteMediaDidStall:streamToken:;
+- (void)remoteVideoDidDegrade:streamToken:;
+- (void)remoteVideoDidSuspend:streamToken:;
+- (void)releaseQueueForStreamToken:;
+- (void)connectionDidChangeWithLocalInterfaceType:remoteInterfaceType:streamToken:;
+- (id)newQueueForStreamToken:videoMode:;
+- (id)newQueueForStreamToken:videoMode:imageQueueProtected:;
+- (id)getQueueForStreamToken:videoMode:;
+- (BOOL)queueExistsForStreamToken:;
+- (BOOL)doesQueueExistForStreamToken:;
+- (void)dispatchedDidReceiveFirstRemoteFrameForStreamToken:;
+- (void)dispatchedRemoteScreenAttributesDidChange:streamToken:;
+- (void)dispatchedRemoteVideoAttributesDidChange:streamToken:;
+- (void)dispatchedRemoteVideoDidPause:streamToken:;
+- (void)dispatchedRemoteMediaDidStall:streamToken:;
+- (void)dispatchedRemoteVideoDidDegrade:streamToken:;
+- (void)dispatchedRemoteVideoDidSuspend:streamToken:;
+- (void)dispatchedConnectionDidChangeWithLocalInterfaceType:remoteInterfaceType:streamToken:;
+- (unsigned int)slotForStreamToken:videoMode:;
+- (void)cleanupDictionaries;
+- (id)contextIdForStreamTokenWithArguments:error:;
+- (id)setLayerBoundsForStreamTokenWithArguments:error:;
+- (void)notifyCachedStateForStreamToken:;
+- (void)dispatchedNotifyCachedStateForStreamToken:;
++ (id)defaultManager;
+@end

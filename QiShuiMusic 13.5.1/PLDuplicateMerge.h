@@ -1,0 +1,38 @@
+@interface PLDuplicateMerge : NSObject
+@property (nonatomic) PLManagedAsset asset;
+@property (nonatomic) PLDuplicateAsset targetAsset;
+- (id)asset;
+- (void).cxx_destruct;
+- (id)initWithSourceAssets:targetAsset:photolibrary:;
+- (BOOL)mergeWithError:;
+- (void)_mergeMetadataFromSource:;
+- (void)_mergeTitleFromSource:;
+- (void)_mergeDateFromSource:;
+- (void)_mergeLocationFromSource:forceUpdate:;
+- (void)_mergeTimezoneFromSource:;
+- (void)_mergeCaptionFromSource:;
+- (void)_mergeKeywordsFromSource:;
+- (void)_mergeFavoriteFromSource:;
+- (void)_mergeSharedLibraryMetadataFromSource:;
+- (void)_mergeAlbumRelationshipsFromSource:;
+- (void)_mergeMemoryRelationshipsFromSource:;
+- (void)_mergeFaceRelationshipsFromSource:;
+- (BOOL)_mergeResourcesFromSource:error:;
+- (void)_mergeResourceMetadataFromSource:;
+- (BOOL)_mergeAdjustmentsFromSource:error:;
+- (void)_resetMediaAnalysisStateWithType:;
+- (void)_setDCIMFilenameFromSource:;
+- (BOOL)_isRecentlyModifiedSourceAsset:;
+- (BOOL)_isValidForOverwriteWithSourceProperty:targetProperty:;
+- (BOOL)_isValidForLocationOverwriteWithSource:;
+- (BOOL)_isValidForTimezoneOverwriteWithSource:;
+- (BOOL)_isValidForDateCreatedOverwriteWithSource:;
+- (BOOL)_isValidForTitleOverwriteWithSource:;
+- (id)targetAsset;
+- (void)setTargetAsset:;
++ (BOOL)mergeAssets:targetAssetOID:photolibrary:error:;
++ (id)_crashRecoveryMarkerFileURLWithPathManager:;
++ (BOOL)_writeCrashRecoveryMarkerFileForTargetAssetUUID:pathManager:;
++ (BOOL)_removeCrashRecoveryMarkerFileWithPathManager:;
++ (void)processCrashRecoveryMarkerFileIfNeededWithPathManager:;
+@end

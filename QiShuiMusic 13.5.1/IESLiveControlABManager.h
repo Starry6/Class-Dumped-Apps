@@ -1,0 +1,33 @@
+@interface IESLiveControlABManager : NSObject
++ (BOOL)liveCombineRecordEntranceAnchor;
++ (BOOL)liveEnableAnchorLongPressRecord;
++ (BOOL)audienceDisableSwitchDefinitionDuringInteraction;
++ (id)broadcastRecordTipConfig;
++ (BOOL)liveAdminRecordOpt;
++ (double)liveBizLevelInheritanceTimeLimit;
++ (id)liveBizPerformanceConfig;
++ (id)liveBizPerformanceDegradeNotesSchema;
++ (id)liveBizPerformanceDegradeScene;
++ (id)liveBizPerformanceDegradeSceneDescription;
++ (BOOL)liveBizPerformanceEnable;
++ (long long)liveBizPerformancePushDeviceLimit;
++ (double)liveBizPerformancePushShowDuration;
++ (double)liveBizPerformancePushTimeGap;
++ (long long)liveBizPerformancePushTimesLimit;
++ (id)liveBizPerformanceUpgradeNotesSchema;
++ (id)liveBizPerformanceUpgradeScene;
++ (id)liveBizPerformanceUpgradeSceneDescription;
++ (id)liveBrightnessIOS16Gap;
++ (BOOL)liveCombineRecordEntranceAudience;
++ (id)liveCommerceTips;
++ (id)liveForceDegradeConfig;
++ (BOOL)liveForceDegradeEnable;
++ (long long)liveForceDegradeLevel;
++ (id)liveForceDegradeScene;
++ (BOOL)liveRecordTraceEnable;
++ (BOOL)liveReplayEnableOptimize;
++ (double)liveReplayFetchRemoteDelayGapTime;
++ (double)liveReplayFetchRemoteDelayTime;
++ (BOOL)liveScreenRecordDefaultClean;
++ (long long)liveVsTimingCloseUnit;
+@end

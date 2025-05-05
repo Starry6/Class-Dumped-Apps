@@ -1,0 +1,2 @@
+@interface HTSLiveVsSwitchControlMessageRoot : GPBRootObject
+@end

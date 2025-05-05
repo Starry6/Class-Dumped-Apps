@@ -1,0 +1,30 @@
+@interface UIKeyboardSliceSet : NSObject
+@property (nonatomic) NSMutableSet slices;
+@property (nonatomic) NSString sliceSetID;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} startRect;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} endRect;
+@property (nonatomic) double leftWidth;
+@property (nonatomic) double rightWidth;
+@property (nonatomic) double mergePoint;
+@property (nonatomic) NSMutableDictionary controlKeys;
+- (void).cxx_destruct;
+- (id)description;
+- (id)slices;
+- (id)startRect;
+- (id)endRect;
+- (id)initWithSliceID:;
+- (void)addSlice:;
+- (id)sliceSetID;
+- (void)setSliceSetID:;
+- (void)setStartRect:;
+- (void)setEndRect:;
+- (double)leftWidth;
+- (void)setLeftWidth:;
+- (double)rightWidth;
+- (void)setRightWidth:;
+- (double)mergePoint;
+- (void)setMergePoint:;
+- (id)controlKeys;
+- (void)setControlKeys:;
++ (id)sliceSetWithDictionaryRepresenation:;
+@end

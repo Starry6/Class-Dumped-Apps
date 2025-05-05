@@ -1,0 +1,34 @@
+@interface VCVideoTransmitterDefault : VCVideoTransmitterBase
+@property (nonatomic) ^{tagHANDLE=i} videoTransmitterHandle;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)dealloc;
+- (id)initWithConfig:;
+- (void)startVideo;
+- (void)stopVideo;
+- (BOOL)enqueueVideoFrame:frameTime:cameraStatusBits:;
+- (void)generateKeyFrameWithFIRType:;
+- (unsigned int)setTemporaryMaximumBitrate:;
+- (void)setTargetBitrate:;
+- (void)setKeyFrameOnlyStreamID:;
+- (void)setStreamIDs:numOfStreamIDs:repairedStreamIDs:numOfRepairedStreamIDs:;
+- (void)setFECRatio:;
+- (void)setFECRedundancyVector:;
+- (void)setMediaSuggestion:;
+- (BOOL)setEncodingMode:;
+- (void)handleThermalLevelChange:;
+- (void)updateWindowState:isLocal:windowRect:;
+- (void)handleActiveConnectionChange:;
+- (void)collectChannelMetrics:interval:;
+- (void)setUpAspectRatios:;
+- (void)setUpAspectRatiosFromFeatureListString:;
+- (void)setTemporalBitrateArray:;
+- (void)setHighestActiveQualityIndex:;
+- (void)computeTimestamp:hostTime:forFrame:;
+- (void)setIsServerBasedBandwidthProbingEnabled:;
+- (double)minKeyFrameGenerationIntervalForMode:;
+- (id)videoTransmitterHandle;
++ (void)setupBandwidthEstimationOptions:featureString:;
+@end

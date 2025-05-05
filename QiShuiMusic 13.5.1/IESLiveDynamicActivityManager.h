@@ -1,0 +1,35 @@
+@interface IESLiveDynamicActivityManager : NSObject
+@property (nonatomic) HTSLiveInteractiveAPI API;
+@property (nonatomic) IESLiveLinkMicAudienceGetDynamicActivityLinksResponse_UrlInfo applyMessageActivity;
+@property (nonatomic) IESLiveLinkMicAudienceGetDynamicActivityLinksResponse_UrlInfo inviteListActivity;
+@property (nonatomic) IESLiveLinkMicAudienceGetDynamicActivityLinksResponse_UrlInfo waitingListActivity;
+@property (nonatomic) IESLiveLinkMicAudienceGetDynamicActivityLinksResponse_UrlInfo ktvGuideActivity;
+@property (nonatomic) IESLiveLinkMicAudienceGetDynamicActivityLinksResponse_UrlInfo leaveLinkMicActivity;
+@property (nonatomic) NSDictionary activityMapping;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)activityMapping;
+- (id)applyMessageActivity;
+- (void)didSetAttachingDIContext;
+- (id)initWithDIContext:;
+- (id)inviteListActivity;
+- (id)ktvGuideActivity;
+- (id)leaveLinkMicActivity;
+- (void)mergeActivities:;
+- (void)refreshActivityForSite:completion:;
+- (void)requestActivityForSites:completion:;
+- (void)setActivityMapping:;
+- (void)setApplyMessageActivity:;
+- (void)setInviteListActivity:;
+- (void)setKtvGuideActivity:;
+- (void)setLeaveLinkMicActivity:;
+- (void)setWaitingListActivity:;
+- (void)trackExposureEventForSite:;
+- (void)trackExposureEventForSite:activity:;
+- (id)waitingListActivity;
+- (void).cxx_destruct;
+- (id)API;
+- (void)setAPI:;
+@end

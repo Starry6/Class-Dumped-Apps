@@ -1,0 +1,33 @@
+@interface VNTracker : NSObject
+@property (nonatomic) BOOL isTracking;
+@property (nonatomic) BOOL isResettable;
+@property (nonatomic) q trackedFrameNumber;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} lastTrackedBBox;
+@property (nonatomic) NSUUID key;
+@property (nonatomic) NSString level;
+@property (nonatomic) I trackedFrameCVPixelBufferFormat;
+@property (nonatomic) VNRequestSpecifier originatingRequestSpecifier;
+- (BOOL)isTracking;
+- (id)level;
+- (id)key;
+- (void).cxx_destruct;
+- (BOOL)reset:;
+- (id).cxx_construct;
+- (id)initWithOptions:error:;
+- (BOOL)isResettable;
+- (id)setTrackedObjects:inFrame:error:;
+- (id)trackInFrame:error:;
+- (id)_parseInputObservations:imageBuffer:error:;
+- (id)originatingRequestSpecifier;
+- (id)_createTrackerWithLevel:options:error:;
+- (id)_postProcessTrackingResults:trackerResults:error:;
+- (BOOL)_visionBBoxToTrackerBBox:trackedObjects:imageSize:results:error:;
+- (BOOL)_updateTrackerWithModifiedBBoxForImageBuffer:error:;
+- (unsigned int)trackedFrameCVPixelBufferFormat;
+- (void)setTrackedFrameCVPixelBufferFormat:;
+- (long long)trackedFrameNumber;
+- (void)setTrackedFrameNumber:;
+- (id)lastTrackedBBox;
+- (void)setLastTrackedBBox:;
++ (long long)VNTrackerOptionToTrackerType:;
+@end

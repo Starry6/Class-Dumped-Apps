@@ -1,0 +1,32 @@
+@interface PPContactNameRecord : NSObject
+- (unsigned char)changeType;
+- (id)init_;
+- (double)score;
+- (id)sourceIdentifier;
+- (id)identifier;
+- (id)firstName;
+- (id)middleName;
+- (id)lastName;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)nickname;
+- (void)encodeWithCoder:;
+- (long long)compare:;
+- (id)phoneticLastName;
+- (unsigned char)source;
+- (id)jobTitle;
+- (id)description;
+- (id)phoneticMiddleName;
+- (id)organizationName;
+- (id)relatedNames;
+- (id)phoneticFirstName;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)initWithIdentifier:score:source:sourceIdentifier:changeType:firstName:phoneticFirstName:middleName:phoneticMiddleName:lastName:phoneticLastName:organizationName:jobTitle:nickname:relatedNames:streetNames:cityNames:;
+- (id)streetNames;
+- (id)cityNames;
+- (BOOL)isEqualToContactNameRecord:;
++ (BOOL)supportsSecureCoding;
++ (id)describeChangeType:;
++ (id)describeSource:;
+@end

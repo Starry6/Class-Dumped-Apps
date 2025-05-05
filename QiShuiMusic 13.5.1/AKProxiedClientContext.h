@@ -1,0 +1,30 @@
+@interface AKProxiedClientContext : NSObject
+@property (nonatomic) NSString teamID;
+@property (nonatomic) NSString bundleID;
+@property (nonatomic) NSString appID;
+@property (nonatomic) NSString appName;
+@property (nonatomic) NSArray associatedDomains;
+@property (nonatomic) NSString deviceClass;
+@property (nonatomic) NSString deviceName;
+@property (nonatomic) BOOL isRapportLogin;
+@property (nonatomic) BOOL shouldSkipAuthorizationUI;
+- (id)teamID;
+- (id)deviceClass;
+- (void)setDeviceName:;
+- (id)associatedDomains;
+- (void)setDeviceClass:;
+- (id)deviceName;
+- (void)setAppName:;
+- (id)appName;
+- (void)setAppID:;
+- (id)appID;
+- (void).cxx_destruct;
+- (id)bundleID;
+- (void)setAssociatedDomains:;
+- (void)setBundleID:;
+- (void)setTeamID:;
+- (BOOL)isRapportLogin;
+- (void)setIsRapportLogin:;
+- (BOOL)shouldSkipAuthorizationUI;
+- (void)setShouldSkipAuthorizationUI:;
+@end

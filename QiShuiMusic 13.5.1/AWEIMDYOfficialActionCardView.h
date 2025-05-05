@@ -1,0 +1,31 @@
+@interface AWEIMDYOfficialActionCardView : UIView
+@property (nonatomic) NSMutableArray buttons;
+@property (nonatomic) UIStackView stackView;
+@property (nonatomic) AWENotificationModelNew model;
+@property (nonatomic) UIView stateView;
+@property (nonatomic) UIImageView stateImageView;
+@property (nonatomic) UILabel stateLabel;
+@property (nonatomic) <AWEIMDYOfficialTableViewContentImageCellDelegate> delegate;
+- (void)onButtonAction:;
+- (void)addConstrains;
+- (void)configButtons;
+- (void)configWithModel:context:needTrackEvent:;
+- (void)setStateImageView:;
+- (void)setStateView:;
+- (id)stateImageView;
+- (id)stateView;
+- (void)swithToState:model:;
+- (id)model;
+- (id)init;
+- (void)setModel:;
+- (void)setStackView:;
+- (void)setDelegate:;
+- (void)loading;
+- (id)buttons;
+- (id)stackView;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setButtons:;
+- (id)stateLabel;
+- (void)setStateLabel:;
+@end

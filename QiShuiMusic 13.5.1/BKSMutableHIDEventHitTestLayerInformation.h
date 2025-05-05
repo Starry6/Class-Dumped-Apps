@@ -1,0 +1,31 @@
+@interface BKSMutableHIDEventHitTestLayerInformation : BKSHIDEventHitTestLayerInformation
+@property (nonatomic) Q validMask;
+@property (nonatomic) {CATransform3D=dddddddddddddddd} cumulativeLayerTransform;
+@property (nonatomic) {CATransform3D=dddddddddddddddd} cumulativeContentsTransform;
+@property (nonatomic) float cumulativeOpacity;
+@property (nonatomic) BOOL hasInsecureFilter;
+@property (nonatomic) BOOL detectedOcclusion;
+@property (nonatomic) BOOL backgroundStatisticsValid;
+@property (nonatomic) float backgroundMinimum;
+@property (nonatomic) float backgroundMaximum;
+@property (nonatomic) float backgroundAverage;
+@property (nonatomic) float backgroundStandardDeviation;
+@property (nonatomic) NSArray minimumBackgroundColor;
+@property (nonatomic) NSArray maximumBackgroundColor;
+@property (nonatomic) {CATransform3D=dddddddddddddddd} cumulativeTransform;
+- (void)setValidMask:;
+- (void)setCumulativeTransform:;
+- (void)setCumulativeLayerTransform:;
+- (void)setCumulativeContentsTransform:;
+- (void)setCumulativeOpacity:;
+- (void)setHasInsecureFilter:;
+- (void)setDetectedOcclusion:;
+- (void)setBackgroundMinimum:;
+- (void)setBackgroundMaximum:;
+- (void)setBackgroundAverage:;
+- (void)setBackgroundStandardDeviation:;
+- (void)setMinimumBackgroundColor:;
+- (void)setMaximumBackgroundColor:;
+- (BOOL)backgroundStatisticsValid;
+- (void)setBackgroundStatisticsValid:;
+@end

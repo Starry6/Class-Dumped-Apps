@@ -1,0 +1,34 @@
+@interface ML3DatabaseStatement : NSObject
+@property (nonatomic) NSString sql;
+@property (nonatomic) ^{sqlite3_stmt=} sqliteStatement;
+@property (nonatomic) BOOL clearBindingsAfterRunning;
+@property (nonatomic) BOOL isExecuting;
+- (BOOL)isReadOnly;
+- (int)clearBindings;
+- (void)bindDouble:forParameterAtPosition:;
+- (void)bindValuesInArray:;
+- (void)dealloc;
+- (int)step;
+- (void)bindInt:forParameterAtPosition:;
+- (BOOL)clearBindingsAfterRunning;
+- (BOOL)isBusy;
+- (void)bindUTF8String:forParameterAtPosition:;
+- (void)bindBytesNoCopy:length:forParameterAtPosition:;
+- (void)bindUTF8StringNoCopy:forParameterAtPosition:;
+- (void)bindUTF8StringNoCopy:length:forParameterAtPosition:;
+- (BOOL)isExecuting;
+- (void)bindValue:forParameterAtPosition:;
+- (void)bindNullForParameterAtPosition:;
+- (void)setIsExecuting:;
+- (id)sql;
+- (void)bindValuesForParameterNames:;
+- (void)bindInt64:forParameterAtPosition:;
+- (id)sqliteStatement;
+- (void)bindBytes:length:forParameterAtPosition:;
+- (void).cxx_destruct;
+- (int)reset;
+- (id)description;
+- (void)setClearBindingsAfterRunning:;
+- (int)finalizeStatement;
+- (id)initWithSQLiteStatement:SQL:;
+@end

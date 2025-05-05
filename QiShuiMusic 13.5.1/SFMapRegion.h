@@ -1,0 +1,35 @@
+@interface SFMapRegion : NSObject
+@property (nonatomic) double southLat;
+@property (nonatomic) double westLng;
+@property (nonatomic) double northLat;
+@property (nonatomic) double eastLng;
+@property (nonatomic) double altitudeInMeters;
+@property (nonatomic) NSDictionary dictionaryRepresentation;
+@property (nonatomic) NSData jsonData;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithProtobuf:;
+- (id)initWithCoder:;
+- (id)jsonData;
+- (void)encodeWithCoder:;
+- (id)dictionaryRepresentation;
+- (id)copyWithZone:;
+- (double)southLat;
+- (void)setSouthLat:;
+- (BOOL)hasSouthLat;
+- (double)westLng;
+- (void)setWestLng:;
+- (BOOL)hasWestLng;
+- (double)northLat;
+- (void)setNorthLat:;
+- (BOOL)hasNorthLat;
+- (double)eastLng;
+- (void)setEastLng:;
+- (BOOL)hasEastLng;
+- (double)altitudeInMeters;
+- (void)setAltitudeInMeters:;
+- (BOOL)hasAltitudeInMeters;
++ (BOOL)supportsSecureCoding;
+@end

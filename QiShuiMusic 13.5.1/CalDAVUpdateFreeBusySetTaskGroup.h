@@ -1,0 +1,31 @@
+@interface CalDAVUpdateFreeBusySetTaskGroup : CoreDAVTaskGroup
+@property (nonatomic) NSURL inboxURL;
+@property (nonatomic) NSURL urlToAdd;
+@property (nonatomic) NSString suffixToFilterOut;
+@property (nonatomic) CoreDAVPropFindTask fetchTask;
+@property (nonatomic) NSInteger state;
+@property (nonatomic) <CoreDAVTaskGroupDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)propFindTask:parsedResponses:error:;
+- (void)taskGroupWillCancelWithError:;
+- (void)startTaskGroup;
+- (id)inboxURL;
+- (void)setState:;
+- (int)state;
+- (void).cxx_destruct;
+- (void)propPatchTask:parsedResponses:error:;
+- (void)_finishWithError:state:;
+- (id)fetchTask;
+- (void)setFetchTask:;
+- (id)initWithAccountInfoProvider:inboxURL:urlToAdd:suffixToFilterOut:taskManager:;
+- (void)_startFetchFreeBusySet;
+- (void)_startPropPatchWithURLs:;
+- (void)setInboxURL:;
+- (id)urlToAdd;
+- (void)setUrlToAdd:;
+- (id)suffixToFilterOut;
+- (void)setSuffixToFilterOut:;
+@end

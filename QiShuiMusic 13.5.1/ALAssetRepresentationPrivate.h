@@ -1,0 +1,35 @@
+@interface ALAssetRepresentationPrivate : NSObject
+@property (nonatomic) PLManagedAsset photo;
+@property (nonatomic) PLPhotoLibrary _photoLibrary;
+@property (nonatomic) <PLSidecar> sidecar;
+@property (nonatomic) NSString extension;
+@property (nonatomic) ALAssetsLibrary library;
+@property (nonatomic) BOOL isValid;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setExtension:;
+- (void)dealloc;
+- (void)setIsValid:;
+- (id)extension;
+- (void)setLibrary:;
+- (id)_photoLibrary;
+- (id)library;
+- (BOOL)isValid;
+- (void).cxx_destruct;
+- (id)photo;
+- (void)setPhoto:;
+- (BOOL)_isVideo;
+- (BOOL)_isImage;
+- (void)_performBlockAndWait:;
+- (id)initWithManagedAsset:sidecar:extension:library:;
+- (void)libraryDidChange;
+- (id)sidecar;
+- (void)setSidecar:;
+- (void)set_photoLibrary:;
++ (void)_setupFileDescriptorQueue;
++ (int)_fileDescriptorForPersistentURL:;
++ (int)_updateFileDescriptor:forPersistentURL:;
++ (void)_clearFileDescriptorQueue;
+@end

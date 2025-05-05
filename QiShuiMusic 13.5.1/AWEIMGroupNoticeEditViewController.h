@@ -1,0 +1,34 @@
+@interface AWEIMGroupNoticeEditViewController : AWETextEditViewController
+@property (nonatomic) UIViewController groupSettingVC;
+@property (nonatomic) AWEIMMessageConversation conversation;
+@property (nonatomic) AWEIMGroupNoticeEditTemplateView templateView;
+- (id)pageContentText;
+- (id)pagePlaceHolder;
+- (void)__clickBlank;
+- (void)configStyle;
+- (void)copyLabelTapped:;
+- (id)copyLabelText;
+- (void)editTextViewDidChange:;
+- (id)groupSettingVC;
+- (long long)maxContentLength;
+- (id)pagePreTitle;
+- (void)saveButtonClicked;
+- (void)setGroupSettingVC:;
+- (void)setTipLabelForContentTextView;
+- (void)setupPlaceholder;
+- (id)templateLabelText;
+- (id)templateTitle;
+- (void)updateTemplateViewLayoutWithKeboardShow:userInfo:;
+- (void)keyboardWillShow:;
+- (void)dealloc;
+- (void)keyboardWillHide:;
+- (id)conversation;
+- (void).cxx_destruct;
+- (void)viewDidLoad;
+- (BOOL)textView:shouldChangeTextInRange:replacementText:;
+- (void)setConversation:;
+- (id)initWithConversation:;
+- (id)pageTitle;
+- (void)setTemplateView:;
+- (id)templateView;
+@end

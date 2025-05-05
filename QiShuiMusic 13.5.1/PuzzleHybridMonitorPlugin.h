@@ -1,0 +1,34 @@
+@interface PuzzleHybridMonitorPlugin : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)detach:webView:;
+- (void)kitView:willCreatedWithContext:;
+- (void)attach:webView:;
+- (void)setMonitorFieldMap:containerId:;
+- (void)attach:LynxView:;
+- (void)bindCrashInfoWithUrl:schema:;
+- (void)checkTurnOnBlanckDetect:context:;
+- (void)collectBoolean:field:data:;
+- (void)collectInt:field:data:;
+- (void)collectLong:field:data:;
+- (void)collectString:field:data:;
+- (void)configWebViewMonitor;
+- (void)deleteData:isForce:;
+- (void)detach:LynxView:;
+- (void)fetchAggregationPerfTiming:level:waitCompleteData:completion:;
+- (void)fetchContainerData:block:;
+- (id)generateIDForContainer;
+- (void)invalidateID:andData:;
+- (void)lynxReportCustomWithEventName:LynxView:metric:category:extra:maySample:;
+- (void)repairMonitorContextForReusedView:;
+- (void)reportContainerError:withID:withError:;
+- (void)reportHybridEventName:containerId:URL:metric:category:extra:kernalType:aid:maySample:;
+- (void)reportHybridEventName:containerId:URL:metric:category:extra:kernalType:aid:sampleLevel:;
+- (void)reportLatchEventName:containerId:URL:metric:category:extra:kernalType:maySample:;
+- (void)setupMonitor;
+- (void)webReportCustomWithEventName:webView:metric:category:extra:maySample:;
++ (void)loadSwizzled;
++ (id)sharedMonitor;
+@end

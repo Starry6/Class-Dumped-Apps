@@ -1,0 +1,38 @@
+@interface MLCConvolutionGPUDeviceOps : MLCGPUDeviceOps
+@property (nonatomic) @ forwardMPSGraph;
+@property (nonatomic) @ gradientMPSGraph;
+@property (nonatomic) BOOL depthWiseConvolution;
+@property (nonatomic) BOOL convolutionTranspose;
+@property (nonatomic) BOOL hasBias;
+@property (nonatomic) Q biasChannelCount;
+@property (nonatomic) NSMutableArray descriptorsForMPSGraph;
+@property (nonatomic) NSMutableArray mpsGraphTensors;
+@property (nonatomic) @ transposeDeviceOps;
+@property (nonatomic) NSMutableArray transposedTensors;
+@property (nonatomic) @ convolutionMultiGPUChildOps;
+- (void).cxx_destruct;
+- (BOOL)convolutionTranspose;
+- (id)initWithForwardMPSGraph:gradientMPSGraph:;
+- (id)forwardMPSGraph;
+- (void)setForwardMPSGraph:;
+- (id)gradientMPSGraph;
+- (void)setGradientMPSGraph:;
+- (BOOL)depthWiseConvolution;
+- (void)setDepthWiseConvolution:;
+- (void)setConvolutionTranspose:;
+- (BOOL)hasBias;
+- (void)setHasBias:;
+- (unsigned long long)biasChannelCount;
+- (void)setBiasChannelCount:;
+- (id)descriptorsForMPSGraph;
+- (void)setDescriptorsForMPSGraph:;
+- (id)mpsGraphTensors;
+- (void)setMpsGraphTensors:;
+- (id)transposeDeviceOps;
+- (void)setTransposeDeviceOps:;
+- (id)transposedTensors;
+- (void)setTransposedTensors:;
+- (id)convolutionMultiGPUChildOps;
+- (void)setConvolutionMultiGPUChildOps:;
++ (id)deviceOpsWithForwardMPSGraph:gradientMPSGraph:;
+@end

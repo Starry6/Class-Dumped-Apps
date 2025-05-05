@@ -1,0 +1,23 @@
+@interface WKSelectPickerTableViewController : UITableViewController
+- (id)initWithView:;
+- (id)tableView:cellForRowAtIndexPath:;
+- (void)next:;
+- (id)tableView:viewForHeaderInSection:;
+- (void)close:;
+- (void)tableView:didSelectRowAtIndexPath:;
+- (void).cxx_destruct;
+- (void)viewWillAppear:;
+- (double)tableView:heightForHeaderInSection:;
+- (id)tableView:titleForHeaderInSection:;
+- (id).cxx_construct;
+- (long long)tableView:numberOfRowsInSection:;
+- (long long)numberOfSectionsInTableView:;
+- (double)tableView:heightForFooterInSection:;
+- (id)tableView:viewForFooterInSection:;
+- (long long)findItemIndexAt:;
+- (void)previous:;
+- (long long)numberOfRowsInGroup:;
+- (void)didTapSelectPickerGroupHeaderView:;
+- (id)optionItemAtIndexPath:;
+- (id)groupHeaderFont;
+@end

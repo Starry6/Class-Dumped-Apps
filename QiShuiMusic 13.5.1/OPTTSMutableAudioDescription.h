@@ -1,0 +1,31 @@
+@interface OPTTSMutableAudioDescription : OPTTSAudioDescription
+@property (nonatomic) double sample_rate;
+@property (nonatomic) I format_id;
+@property (nonatomic) I format_flags;
+@property (nonatomic) I bytes_per_packet;
+@property (nonatomic) I frames_per_packet;
+@property (nonatomic) I bytes_per_frame;
+@property (nonatomic) I channels_per_frame;
+@property (nonatomic) I bits_per_channel;
+@property (nonatomic) I reserved;
+- (unsigned int)reserved;
+- (id)init;
+- (void)setReserved:;
+- (id)copyWithZone:;
+- (double)sample_rate;
+- (void)setSample_rate:;
+- (unsigned int)format_id;
+- (void)setFormat_id:;
+- (unsigned int)format_flags;
+- (void)setFormat_flags:;
+- (unsigned int)bytes_per_packet;
+- (void)setBytes_per_packet:;
+- (unsigned int)frames_per_packet;
+- (void)setFrames_per_packet:;
+- (unsigned int)bytes_per_frame;
+- (void)setBytes_per_frame:;
+- (unsigned int)channels_per_frame;
+- (void)setChannels_per_frame:;
+- (unsigned int)bits_per_channel;
+- (void)setBits_per_channel:;
+@end

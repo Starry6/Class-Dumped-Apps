@@ -1,0 +1,34 @@
+@interface APSAppTokenInfo : NSObject
+@property (nonatomic) BOOL isUnextended;
+@property (nonatomic) NSString topic;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) NSDate expirationDate;
+@property (nonatomic) q type;
+@property (nonatomic) NSData vapidPublicKey;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setTopic:;
+- (id)initWithDictionary:;
+- (id)identifier;
+- (void)setExpirationDate:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (BOOL)isUnextended;
+- (id)initUnextendedAppTokenWithTopic:identifier:;
+- (id)expirationDate;
+- (void)encodeWithCoder:;
+- (long long)type;
+- (void).cxx_destruct;
+- (id)description;
+- (id)topic;
+- (id)vapidPublicKey;
+- (id)initWithTopic:identifier:;
+- (id)dictionaryRepresentation;
+- (void)setIdentifier:;
+- (BOOL)isEqual:;
+- (void)setIsUnextended:;
+- (id)copyWithZone:;
++ (BOOL)supportsSecureCoding;
+@end

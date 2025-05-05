@@ -1,0 +1,37 @@
+@interface SFAppleIDAccount : NSObject
+@property (nonatomic) NSString altDSID;
+@property (nonatomic) NSString appleID;
+@property (nonatomic) NSString certificateToken;
+@property (nonatomic) NSDate certificateTokenCreationDate;
+@property (nonatomic) SFAppleIDContactInfo contactInfo;
+@property (nonatomic) NSDate creationDate;
+@property (nonatomic) SFAppleIDIdentity identity;
+@property (nonatomic) NSData privateKeyPersistentReference;
+@property (nonatomic) SFAppleIDValidationRecord validationRecord;
+- (void)setIdentity:;
+- (id)appleID;
+- (id)certificateTokenCreationDate;
+- (void)setValidationRecord:;
+- (id)identity;
+- (void)setAltDSID:;
+- (id)altDSID;
+- (id)initWithDictionary:;
+- (void)setContactInfo:;
+- (id)initWithCoder:;
+- (id)contactInfo;
+- (void)encodeWithCoder:;
+- (void)setPrivateKeyPersistentReference:;
+- (void)setCertificateTokenCreationDate:;
+- (id)certificateToken;
+- (void).cxx_destruct;
+- (id)description;
+- (id)initWithAppleID:;
+- (void)setCertificateToken:;
+- (id)privateKeyPersistentReference;
+- (BOOL)isEqual:;
+- (BOOL)isEqualToAccount:;
+- (id)copyWithZone:;
+- (id)creationDate;
+- (id)validationRecord;
++ (BOOL)supportsSecureCoding;
+@end

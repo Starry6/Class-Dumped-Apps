@@ -1,0 +1,35 @@
+@interface SSObservable : NSObject
+@property (nonatomic) NSError failureError;
+@property (nonatomic) NSString logKey;
+@property (nonatomic) NSMutableArray observers;
+@property (nonatomic) NSMutableArray queuedResults;
+@property (nonatomic) NSObject<OS_dispatch_queue> sendMessageQueue;
+@property (nonatomic) NSConditionLock stateLock;
+@property (nonatomic) BOOL cancelled;
+@property (nonatomic) BOOL complete;
+- (BOOL)isComplete;
+- (id)init;
+- (BOOL)cancel;
+- (id)stateLock;
+- (void)setLogKey:;
+- (BOOL)isCancelled;
+- (BOOL)sendFailure:;
+- (id)logKey;
+- (void)subscribe:;
+- (BOOL)_isComplete;
+- (id)failureError;
+- (void)setStateLock:;
+- (id)sendMessageQueue;
+- (id)queuedResults;
+- (void)setFailureError:;
+- (BOOL)sendResult:;
+- (void).cxx_destruct;
+- (void)setObservers:;
+- (void)setQueuedResults:;
+- (id)observers;
+- (BOOL)sendCompletion;
+- (void)setSendMessageQueue:;
++ (BOOL)_errorIsCanceledError:;
++ (id)observableWithObserver:;
++ (id)observableWithObservers:;
+@end

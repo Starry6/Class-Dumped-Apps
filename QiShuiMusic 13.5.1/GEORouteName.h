@@ -1,0 +1,31 @@
+@interface GEORouteName : PBCodable
+@property (nonatomic) BOOL hasNameInfo;
+@property (nonatomic) GEONameInfo nameInfo;
+@property (nonatomic) BOOL hasLastZilchStitchedIndex;
+@property (nonatomic) NSInteger lastZilchStitchedIndex;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasNameInfo;
+- (id)nameInfo;
+- (void)setNameInfo:;
+- (int)lastZilchStitchedIndex;
+- (void)setLastZilchStitchedIndex:;
+- (void)setHasLastZilchStitchedIndex:;
+- (BOOL)hasLastZilchStitchedIndex;
++ (BOOL)isValid:;
+@end

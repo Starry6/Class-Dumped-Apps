@@ -1,0 +1,38 @@
+@interface TSXgPTPManager : TSXClient
+@property (nonatomic) Q avbPTPInstance0ClockIdentifier;
+@property (nonatomic) Q avbPTPInstance1ClockIdentifier;
+@property (nonatomic) Q avbPTPInstance2ClockIdentifier;
+@property (nonatomic) Q avbPTPInstance3ClockIdentifier;
+@property (nonatomic) Q airPlayPTPInstanceClockIdentifier;
+@property (nonatomic) Q copresencePTPInstanceClockIdentifier;
+@property (nonatomic) Q systemDomainClockIdentifier;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)exportedObject;
+- (void).cxx_destruct;
+- (void)interruptedConnection;
+- (unsigned long long)systemDomainClockIdentifier;
+- (BOOL)addPTPInstance:error:;
+- (BOOL)addTimeOfDayPTPInstance:error:;
+- (BOOL)removePTPInstanceWithIdentifier:error:;
+- (BOOL)addAVBPTPInstanceIndex:identifier:error:;
+- (BOOL)removeAVBPTPInstanceWithIndex:error:;
+- (unsigned long long)avbPTPInstance0ClockIdentifier;
+- (unsigned long long)avbPTPInstance1ClockIdentifier;
+- (unsigned long long)avbPTPInstance2ClockIdentifier;
+- (unsigned long long)avbPTPInstance3ClockIdentifier;
+- (unsigned long long)airPlayPTPInstanceClockIdentifier;
+- (BOOL)addAirPlayPTPInstance:error:;
+- (BOOL)removeAirPlayPTPInstanceWithError:;
+- (unsigned long long)copresencePTPInstanceClockIdentifier;
+- (BOOL)addCopresencePTPInstance:error:;
+- (BOOL)removeCopresencePTPInstanceWithError:;
+- (id)initWithgPTPManager:;
++ (void)_setIsUnavailable;
++ (id)clientProtocol;
++ (id)serviceName;
++ (id)serverProtocol;
++ (void)_setIsAvailable;
+@end

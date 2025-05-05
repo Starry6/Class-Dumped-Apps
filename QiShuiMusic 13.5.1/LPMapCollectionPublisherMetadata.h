@@ -1,0 +1,31 @@
+@interface LPMapCollectionPublisherMetadata : LPSpecializationMetadata
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSString name;
+@property (nonatomic) LPImage icon;
+@property (nonatomic) I numberOfPublishedCollections;
+- (void)setName:;
+- (id)icon;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (void)setIcon:;
+- (void).cxx_destruct;
+- (id)name;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)presentationPropertiesForTransformer:;
+- (BOOL)canGeneratePresentationPropertiesForURL:;
+- (id)previewSummaryForTransformer:;
+- (id)previewImageForTransformer:;
+- (void)populateMetadataForBackwardCompatibility:;
+- (void)_enumerateAsynchronousFields:;
+- (unsigned int)numberOfPublishedCollections;
+- (void)setNumberOfPublishedCollections:;
+- (id)fallbackIconForTransformer:;
+- (id)_guideCount;
++ (BOOL)supportsSecureCoding;
++ (id)keyPathsForValuesAffecting_dummyPropertyForObservation;
+@end

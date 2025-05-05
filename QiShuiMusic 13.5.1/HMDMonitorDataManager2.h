@@ -1,0 +1,33 @@
+@interface HMDMonitorDataManager2 : NSObject
+@property (nonatomic) HMDConfigManager configManager;
+@property (nonatomic) BOOL needCache;
+@property (nonatomic) NSString appID;
+@property (nonatomic) ^v configProviderPtr;
+@property (nonatomic) HMDHeimdallrConfig config;
+@property (nonatomic) HMDTTMonitorUserInfo injectedInfo;
+@property (nonatomic) @? stopCacheBlock;
+- (void)configDidUpdate:;
+- (id)configProviderPtr;
+- (BOOL)enableBackgroundUpload;
+- (BOOL)ifNeedCacheRecords;
+- (id)initMonitorWithAppID:injectedInfo:;
+- (id)injectedInfo;
+- (BOOL)isMainAppMonitor;
+- (BOOL)needCache;
+- (id)reportCommonParams;
+- (id)reportHeaderParams;
+- (void)setConfigProviderPtr:;
+- (void)setInjectedInfo:;
+- (void)setNeedCache:;
+- (void)setStopCacheBlock:;
+- (id)stopCacheBlock;
+- (void)syncConfigManagerIfAvailable;
+- (void)updateConfig:;
+- (void)dealloc;
+- (void)setAppID:;
+- (id)configManager;
+- (id)appID;
+- (void).cxx_destruct;
+- (id)config;
+- (void)setConfigManager:;
+@end

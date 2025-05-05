@@ -1,0 +1,32 @@
+@interface ASCLocalOffer : NSObject
+@property (nonatomic) ASCOfferMetadata metadata;
+@property (nonatomic) @? action;
+@property (nonatomic) ASCAdamID id;
+@property (nonatomic) NSDictionary titles;
+@property (nonatomic) NSDictionary subtitles;
+@property (nonatomic) q flags;
+@property (nonatomic) NSNumber ageRating;
+@property (nonatomic) NSArray metrics;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)metrics;
+- (id)id;
+- (id)metadata;
+- (id)action;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (id)description;
+- (long long)flags;
+- (id)price;
+- (id)formattedPrice;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)titles;
+- (id)subtitles;
+- (id)initWithMetadata:action:;
+- (id)ageRating;
+- (id)offerWithMetrics:;
++ (id)viewInAppStoreOfferForLockupView:;
+@end

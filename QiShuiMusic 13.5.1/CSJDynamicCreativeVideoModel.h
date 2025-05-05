@@ -1,0 +1,34 @@
+@interface CSJDynamicCreativeVideoModel : NSObject
+@property (nonatomic) q cover_height;
+@property (nonatomic) NSString cover_url;
+@property (nonatomic) q cover_width;
+@property (nonatomic) NSString endcard;
+@property (nonatomic) q fallback_endcard_judge;
+@property (nonatomic) NSString file_hash;
+@property (nonatomic) NSString resolution;
+@property (nonatomic) q size;
+@property (nonatomic) q video_duration;
+@property (nonatomic) NSString video_url;
+- (void)setCover_width:;
+- (id)endcard;
+- (long long)cover_height;
+- (id)cover_url;
+- (long long)cover_width;
+- (long long)fallback_endcard_judge;
+- (id)file_hash;
+- (void)setCover_height:;
+- (void)setCover_url:;
+- (void)setEndcard:;
+- (void)setFallback_endcard_judge:;
+- (void)setFile_hash:;
+- (void)setVideo_duration:;
+- (void)setVideo_url:;
+- (long long)video_duration;
+- (id)video_url;
+- (id)initWithDictionary:;
+- (void)setResolution:;
+- (id)resolution;
+- (void).cxx_destruct;
+- (void)setSize:;
+- (long long)size;
+@end

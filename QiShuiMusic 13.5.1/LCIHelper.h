@@ -1,0 +1,33 @@
+@interface LCIHelper : NSObject
+@property (nonatomic) q appStatus;
+@property (nonatomic) NSMutableDictionary listenerList;
+@property (nonatomic) NSMutableDictionary listenerProxyList;
+@property (nonatomic) NSObject<OS_dispatch_queue> ihelperQueue;
+@property (nonatomic) double cpuFreq;
+- (double)cpuFreq;
+- (long long)appStatus;
+- (id)convertDataToHexStr:;
+- (id)convertToJsonData:;
+- (id)createDarkFrameWithFrameSize:enableLeakFix:;
+- (id)ihelperQueue;
+- (id)listenerList;
+- (id)listenerProxyList;
+- (void)notifyListenerNewStatus:;
+- (void)registerBecomeActiveNotify;
+- (void)registerEnterBackgroundNotify;
+- (void)registerEnterForegroundNotify;
+- (void)registerResignActiveNotify;
+- (void)setAppStatus:;
+- (void)setCpuFreq:;
+- (void)setIhelperQueue:;
+- (void)setListenerList:;
+- (void)setListenerProxyList:;
+- (id)init;
+- (void).cxx_destruct;
+- (id).cxx_construct;
++ (id)RBGBuffereCopyWithPixelBuffer:;
++ (id)YUVBufferCopyWithPixelBuffer:;
++ (id)copyPixelBufferFrom:;
++ (long long)millisecondFrom:;
++ (id)sharedInstance;
+@end

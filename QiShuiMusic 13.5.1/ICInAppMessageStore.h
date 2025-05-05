@@ -1,0 +1,33 @@
+@interface ICInAppMessageStore : NSObject
+- (void)_commit;
+- (id)initWithFilePath:;
+- (void)_load;
+- (id)init;
+- (void)removeMetadataForMessageIdentifier:bundleIdentifier:completion:;
+- (void)getMetadataForMessageIdentifier:bundleIdentifier:completion:;
+- (id)_defaultStoreFilePath;
+- (void)addMessageEntry:completion:;
+- (void)removeMessageEntry:completion:;
+- (void)getStorePropertyForKey:completion:;
+- (void)allStorePropertiesWithCompletion:;
+- (void)updateMetadata:messageIdentifier:bundleIdentifier:completion:;
+- (void)addPendingMessageEvent:completion:;
+- (void)getAllMetadataForBundleIdentifier:completion:;
+- (void)removeAllMessageEntriesForBundleIdentifier:completion:;
+- (void)pendingMessageEventsWithCompletion:;
+- (void)updateMessageEntry:completion:;
+- (void)removeAllMetadataForBundleIdentifier:completion:;
+- (void)getMessageEntryWithIdentifier:bundleIdentifier:completion:;
+- (void).cxx_destruct;
+- (void)updateStoreProperty:forKey:bundleIdentifier:completion:;
+- (void)getAllMessageEntriesForBundleIdentifier:completion:;
+- (void)getAllMessageEntriesWithCompletion:;
+- (void)getAllMetadataForBundleIdentifiers:completion:;
+- (void)removePendingMessageEventWithIdentifier:completion:;
+- (void)resetStoreWithCompletion:;
+- (void)getAllMessageEntriesForBundleIdentifiers:completion:;
+- (void)updateStoreProperty:forKey:completion:;
+- (void)allApplicationStorePropertiesWithCompletion:;
+- (void)getStorePropertyForKey:bundleIdentifier:completion:;
+- (void)removeMessageEntryWithIdentifier:forBundleIdentifier:completion:;
+@end

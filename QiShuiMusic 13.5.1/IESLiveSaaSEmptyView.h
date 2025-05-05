@@ -1,0 +1,37 @@
+@interface IESLiveSaaSEmptyView : UIView
+@property (nonatomic) IESLiveSaaSEmptyViewConfig config;
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UIImageView placeholderImageView;
+@property (nonatomic) UILabel remindLabel;
+@property (nonatomic) UILabel auxiliaryLabel;
+@property (nonatomic) UIButton button;
+@property (nonatomic) double height;
+- (void)setRemindLabel:;
+- (id)auxiliaryLabel;
+- (id)containerViewSize;
+- (id)getButtonFrameRelativeToWindow;
+- (id)getViewSize;
+- (void)layoutAuxiliaryLabel:withTopOffset:;
+- (void)layoutButton:;
+- (void)layoutPlaceholderImageView;
+- (void)layoutRemindLabel:;
+- (void)onButtonCliced;
+- (double)p_renderUI;
+- (id)remindLabel;
+- (void)setAuxiliaryLabel:;
+- (void)updateConfig:;
+- (void)layoutSubviews;
+- (id)containerView;
+- (void)setConfig:;
+- (id)initWithConfig:;
+- (void)setContainerView:;
+- (void)setPlaceholderImageView:;
+- (id)placeholderImageView;
+- (double)height;
+- (id)button;
+- (void)setHeight:;
+- (void).cxx_destruct;
+- (id)config;
+- (void)setButton:;
++ (id)liveNetworkErrorViewWithStyle:retryBlock:;
+@end

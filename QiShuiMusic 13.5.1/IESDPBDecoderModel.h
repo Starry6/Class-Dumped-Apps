@@ -1,0 +1,34 @@
+@interface IESDPBDecoderModel : NSObject
+@property (nonatomic) NSData data;
+@property (nonatomic) IESDPBDefinitionConfig definitionConfig;
+@property (nonatomic) IESDPBDefinitionNode dataDefinitionNode;
+@property (nonatomic) IESDPBDefinitionNode extraDefinitionNode;
+@property (nonatomic) IESDPBShrinkConfig shrinkConfig;
+@property (nonatomic) IESDPBShrinkNode dataShrinkNode;
+@property (nonatomic) IESDPBShrinkNode extraShrinkNode;
+@property (nonatomic) BOOL needExtra;
+@property (nonatomic) BOOL numberToString;
+@property (nonatomic) BOOL shouldCompleteIDLField;
+- (id)extraShrinkNode;
+- (id)dataDefinitionNode;
+- (id)dataShrinkNode;
+- (id)definitionConfig;
+- (id)extraDefinitionNode;
+- (BOOL)needExtra;
+- (BOOL)numberToString;
+- (void)setDataDefinitionNode:;
+- (void)setDataShrinkNode:;
+- (void)setDefinitionConfig:;
+- (void)setExtraDefinitionNode:;
+- (void)setExtraShrinkNode:;
+- (void)setNeedExtra:;
+- (void)setNumberToString:;
+- (void)setShouldCompleteIDLField:;
+- (void)setShrinkConfig:;
+- (BOOL)shouldCompleteIDLField;
+- (id)shrinkConfig;
+- (id)init;
+- (id)data;
+- (void).cxx_destruct;
+- (void)setData:;
+@end

@@ -1,0 +1,30 @@
+@interface WAKResponder : NSObject
+- (void)handleEvent:;
+- (void)mouseUp:;
+- (BOOL)becomeFirstResponder;
+- (void)insertText:;
+- (void)keyUp:;
+- (id)nextResponder;
+- (BOOL)resignFirstResponder;
+- (void)keyDown:;
+- (void)deleteBackward:;
+- (void)deleteForward:;
+- (void)moveLeft:;
+- (void)moveLeftAndModifySelection:;
+- (void)moveRight:;
+- (void)moveRightAndModifySelection:;
+- (void)moveDown:;
+- (void)moveDownAndModifySelection:;
+- (void)moveUp:;
+- (void)moveUpAndModifySelection:;
+- (void)scrollWheel:;
+- (void)mouseDown:;
+- (void)_forwardEvent:;
+- (void)mouseEntered:;
+- (void)mouseExited:;
+- (void)mouseMoved:;
+- (void)touch:;
+- (void)insertParagraphSeparator:;
+- (BOOL)acceptsFirstResponder;
+- (BOOL)tryToPerform:with:;
+@end

@@ -1,0 +1,34 @@
+@interface SASStartCorrectedSpeechRequest : SAStartRequest
+@property (nonatomic) q combinedRank;
+@property (nonatomic) double combinedScore;
+@property (nonatomic) NSString interactionId;
+@property (nonatomic) BOOL onDeviceUtterancesPresent;
+@property (nonatomic) q originalRank;
+@property (nonatomic) double originalScore;
+@property (nonatomic) NSString previousUtterance;
+@property (nonatomic) NSString sessionId;
+@property (nonatomic) NSString utteranceSource;
+- (void)setSessionId:;
+- (id)sessionId;
+- (id)groupIdentifier;
+- (BOOL)requiresResponse;
+- (id)encodedClassName;
+- (id)interactionId;
+- (void)setInteractionId:;
+- (long long)combinedRank;
+- (void)setCombinedRank:;
+- (double)combinedScore;
+- (void)setCombinedScore:;
+- (BOOL)onDeviceUtterancesPresent;
+- (void)setOnDeviceUtterancesPresent:;
+- (long long)originalRank;
+- (void)setOriginalRank:;
+- (double)originalScore;
+- (void)setOriginalScore:;
+- (id)previousUtterance;
+- (void)setPreviousUtterance:;
+- (id)utteranceSource;
+- (void)setUtteranceSource:;
++ (id)startCorrectedSpeechRequest;
++ (id)startCorrectedSpeechRequestWithDictionary:context:;
+@end

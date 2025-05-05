@@ -1,0 +1,36 @@
+@interface IESCategoryEffectsModel : MTLModel
+@property (nonatomic) NSString version;
+@property (nonatomic) NSString categoryKey;
+@property (nonatomic) NSArray collection;
+@property (nonatomic) NSArray effects;
+@property (nonatomic) NSMutableDictionary effectsMap;
+@property (nonatomic) BOOL hasMore;
+@property (nonatomic) q cursor;
+@property (nonatomic) q sortingPosition;
+@property (nonatomic) NSArray bindEffects;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setCategoryKey:;
+- (long long)sortingPosition;
+- (id)bindEffects;
+- (id)downloadedEffects;
+- (id)effectsMap;
+- (void)setEffectsMap:;
+- (void)setSortingPosition:;
+- (id)collection;
+- (long long)cursor;
+- (void)setCollection:;
+- (id)effects;
+- (void)setVersion:;
+- (id)version;
+- (void)setHasMore:;
+- (void)setCursor:;
+- (void).cxx_destruct;
+- (BOOL)hasMore;
+- (void)setEffects:;
+- (id)categoryKey;
++ (id)JSONKeyPathsByPropertyKey;
++ (id)JSONTransformerForKey:;
+@end

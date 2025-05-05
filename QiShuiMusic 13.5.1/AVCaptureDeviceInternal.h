@@ -1,0 +1,2 @@
+@interface AVCaptureDeviceInternal : NSObject
+@end

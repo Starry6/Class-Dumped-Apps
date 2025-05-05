@@ -1,0 +1,33 @@
+@interface IESLiveCommentIntentionsViewCell : UICollectionViewCell
+@property (nonatomic) UILabel entryTitleLabel;
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) IESLiveCommentIntentionEntryModel entryModel;
+@property (nonatomic) BOOL disableTapResult;
+@property (nonatomic) <IESLiveCommentIntentionsViewCellDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)entryTitleLabel;
+- (BOOL)disableTapResult;
+- (id)entryModel;
+- (void)setDisableTapResult:;
+- (void)setEntryModel:;
+- (void)setEntryTitleLabel:;
+- (void)updateWithIntentionEntryModel:;
+- (id)collectionView:layout:sizeForItemAtIndexPath:;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)preferredLayoutAttributesFittingAttributes:;
+- (void)setDelegate:;
+- (void)prepareForReuse;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (id)initWithFrame:;
+- (void)setCollectionView:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (long long)numberOfSectionsInCollectionView:;
+- (BOOL)collectionView:shouldSelectItemAtIndexPath:;
+- (id)collectionView;
+- (void)setupViews;
+@end

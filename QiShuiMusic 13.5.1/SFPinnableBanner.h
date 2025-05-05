@@ -1,0 +1,35 @@
+@interface SFPinnableBanner : UIView
+@property (nonatomic) BOOL showsTopSeparator;
+@property (nonatomic) BOOL showsBottomSeparator;
+@property (nonatomic) BOOL pinnedToTop;
+@property (nonatomic) NSNumber pinnedOffset;
+@property (nonatomic) BOOL initiallyBehindNavigationBar;
+@property (nonatomic) BOOL shouldUsePlainTheme;
+@property (nonatomic) SFBannerTheme theme;
+@property (nonatomic) SFOverlayProvider overlayProvider;
+- (void)setTheme:;
+- (BOOL)showsTopSeparator;
+- (id)theme;
+- (void)contentSizeCategoryDidChange;
+- (void)setShowsTopSeparator:;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (BOOL)shouldUsePlainTheme;
+- (void)themeDidChange;
+- (void)_setUpSeparators;
+- (void)setShowsBottomSeparator:;
+- (BOOL)showsBottomSeparator;
+- (void)invalidateBannerLayout;
+- (void)setTheme:animated:;
+- (BOOL)isPinnedToTop;
+- (void)setPinnedToTop:;
+- (id)pinnedOffset;
+- (void)setPinnedOffset:;
+- (BOOL)isInitiallyBehindNavigationBar;
+- (void)setInitiallyBehindNavigationBar:;
+- (id)overlayProvider;
++ (double)unpinAnimationDuration;
++ (double)unpinAnimationDelay;
++ (double)pinAnimationDelay;
++ (BOOL)omitsBottomSeparator;
+@end

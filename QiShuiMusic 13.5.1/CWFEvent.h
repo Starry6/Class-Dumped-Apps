@@ -1,0 +1,30 @@
+@interface CWFEvent : NSObject
+@property (nonatomic) NSUUID UUID;
+@property (nonatomic) CWFEventID eventID;
+@property (nonatomic) Q acknowledgementTimeout;
+@property (nonatomic) @? acknowledge;
+@property (nonatomic) q type;
+@property (nonatomic) NSDate timestamp;
+@property (nonatomic) NSDictionary info;
+- (void)setEventID:;
+- (id)init;
+- (void)setUUID:;
+- (void)setInfo:;
+- (void)setType:;
+- (id)eventID;
+- (unsigned long long)hash;
+- (id)acknowledge;
+- (void)setAcknowledgementTimeout:;
+- (void)setTimestamp:;
+- (long long)type;
+- (void).cxx_destruct;
+- (unsigned long long)acknowledgementTimeout;
+- (BOOL)isEqualToEvent:;
+- (void)setAcknowledge:;
+- (id)timestamp;
+- (id)description;
+- (id)info;
+- (id)UUID;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+@end

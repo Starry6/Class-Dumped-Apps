@@ -1,0 +1,31 @@
+@interface RBSurface : NSObject
+@property (nonatomic) {CGSize=dd} size;
+@property (nonatomic) double scale;
+@property (nonatomic) NSInteger colorMode;
+@property (nonatomic) BOOL clearsBackground;
+@property (nonatomic) {?=ffff} clearColor;
+@property (nonatomic) BOOL opaque;
+@property (nonatomic) RBDisplayList displayList;
+- (id)init;
+- (void)dealloc;
+- (void)setClearsBackground:;
+- (void)setScale:;
+- (id)clearColor;
+- (void)setClearColor:;
+- (BOOL)clearsBackground;
+- (BOOL)isOpaque;
+- (int)colorMode;
+- (void)setColorMode:;
+- (void).cxx_destruct;
+- (void)setOpaque:;
+- (double)scale;
+- (void)invalidate;
+- (id).cxx_construct;
+- (void)setSize:;
+- (id)size;
+- (void)setDisplayList:;
+- (id)displayList;
+- (void)setDisplayList:dirtyRect:;
+- (id)copyCGImageUsingDevice:;
+- (void)updateUsingDevice:;
+@end

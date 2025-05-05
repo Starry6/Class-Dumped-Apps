@@ -1,0 +1,2 @@
+@interface AVAssetDownloadStorageManagementPolicyInternal : NSObject
+@end

@@ -1,0 +1,31 @@
+@interface CIBurstFaceInfo : NSObject
+@property (nonatomic) NSInteger swFaceId;
+@property (nonatomic) {CGPoint=dd} swCenter;
+@property (nonatomic) {CGSize=dd} swSize;
+@property (nonatomic) NSInteger swLastFrameSeen;
+@property (nonatomic) NSInteger hwFaceId;
+@property (nonatomic) {CGPoint=dd} hwCenter;
+@property (nonatomic) {CGSize=dd} hwSize;
+@property (nonatomic) NSInteger hwLastFrameSeen;
+- (id)init;
+- (id)hwFaceRect;
+- (id)swFaceRect;
+- (float)overlapWithHwRect:;
+- (float)overlapWithSwRect:;
+- (int)swFaceId;
+- (void)setSwFaceId:;
+- (id)swCenter;
+- (void)setSwCenter:;
+- (id)swSize;
+- (void)setSwSize:;
+- (int)swLastFrameSeen;
+- (void)setSwLastFrameSeen:;
+- (int)hwFaceId;
+- (void)setHwFaceId:;
+- (id)hwCenter;
+- (void)setHwCenter:;
+- (id)hwSize;
+- (void)setHwSize:;
+- (int)hwLastFrameSeen;
+- (void)setHwLastFrameSeen:;
+@end

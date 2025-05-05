@@ -1,0 +1,35 @@
+@interface IESECLynxCardBridgeEvent : NSObject
+@property (nonatomic) double IESECLynxCard_timestamp;
+@property (nonatomic) NSString eventName;
+@property (nonatomic) NSDictionary params;
+@property (nonatomic) NSString eventID;
+@property (nonatomic) BOOL isBroadcast;
+@property (nonatomic) NSString listContextId;
+@property (nonatomic) BOOL isGlobal;
+@property (nonatomic) BOOL isSticky;
+- (double)IESECLynxCard_timestamp;
+- (void)IESECLynxCard_updateTimestampWithMillisecondTimestamp:;
+- (void)IESECLynxCard_updateTimestampWithCurrentDate;
+- (id)initWithEventName:params:isBroadcast:;
+- (id)listContextId;
+- (void)setIESECLynxCard_timestamp:;
+- (void)setIsGlobal:;
+- (void)setIsSticky:;
+- (void)setListContextId:;
+- (void)setEventID:;
+- (id)eventID;
+- (id)eventName;
+- (void)setEventName:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)params;
+- (BOOL)isSticky;
+- (BOOL)isBroadcast;
+- (void)setParams:;
+- (void)setIsBroadcast:;
+- (BOOL)isGlobal;
++ (id)eventWithEventName:params:eventID:isBroadcast:;
++ (id)eventWithEventName:params:isBroadcast:;
++ (id)eventWithEventName:params:isGlobal:listContextId:;
++ (id)eventWithEventName:params:listContextId:;
+@end

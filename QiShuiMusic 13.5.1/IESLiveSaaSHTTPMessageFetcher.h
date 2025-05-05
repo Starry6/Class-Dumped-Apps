@@ -1,0 +1,30 @@
+@interface IESLiveSaaSHTTPMessageFetcher : NSObject
+@property (nonatomic) NSNumber roomID;
+@property (nonatomic) <IESLiveSaaSLanguageService> languageService;
+@property (nonatomic) <IESLiveMonitor> monitor;
+@property (nonatomic) BOOL enableFoldEnterMessage;
+@property (nonatomic) NSNumber markHotLiveCount;
+@property (nonatomic) <IESLiveSaaSHTTPMessageActions> messageDispatch;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithRoomID:;
+- (id)messageDispatch;
+- (id)languageService;
+- (BOOL)_enableFoldMemberMessage;
+- (id)_getHotLiveMarkCount;
+- (void)_requestForBinaryWithUrlString:parameters:completion:;
+- (BOOL)enableFoldEnterMessage;
+- (id)markHotLiveCount;
+- (void)pollMessageWith:enableReplacePath:completion:;
+- (void)setEnableFoldEnterMessage:;
+- (void)setLanguageService:;
+- (void)setMarkHotLiveCount:;
+- (void)setMessageDispatch:;
+- (void)setMonitor:;
+- (void).cxx_destruct;
+- (id)monitor;
+- (id)roomID;
+- (void)setRoomID:;
+@end

@@ -1,0 +1,31 @@
+@interface USUsageReport : NSObject
+@property (nonatomic) double screenTime;
+@property (nonatomic) NSDateInterval longestSession;
+@property (nonatomic) NSArray categoryUsage;
+@property (nonatomic) Q pickupsWithoutApplicationUsage;
+@property (nonatomic) NSDate firstPickup;
+@property (nonatomic) NSDateInterval interval;
+@property (nonatomic) NSTimeZone timeZone;
+@property (nonatomic) NSDate lastEventDate;
+@property (nonatomic) NSDictionary userNotificationsByBundleIdentifier;
+@property (nonatomic) NSDictionary pickupsByBundleIdentifier;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)timeZone;
+- (id)interval;
+- (double)screenTime;
+- (id)longestSession;
+- (id)firstPickup;
+- (unsigned long long)pickupsWithoutApplicationUsage;
+- (id)categoryUsage;
+- (id)lastEventDate;
+- (id)initWithScreenTime:longestSession:categoryUsage:notifications:pickupsByBundleIdentifier:pickupsWithoutApplicationUsage:firstPickup:interval:timeZone:lastEventDate:;
+- (id)_addNotifications:andPickups:toApplicationUsageInCategoryUsage:;
+- (id)initWithScreenTime:longestSession:categoryUsage:pickupsWithoutApplicationUsage:firstPickup:interval:timeZone:lastEventDate:;
+- (void)_usUsageReportCommonInitWithScreenTime:longestSession:categoryUsage:pickupsWithoutApplicationUsage:firstPickup:interval:timeZone:lastEventDate:;
+- (id)userNotificationsByBundleIdentifier;
+- (id)pickupsByBundleIdentifier;
++ (BOOL)supportsSecureCoding;
+@end

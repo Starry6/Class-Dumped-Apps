@@ -1,0 +1,32 @@
+@interface DOCUserInterfaceState : NSObject
+@property (nonatomic) NSDate lastUpdatedDate;
+@property (nonatomic) NSData mostRecentlyVisitedLocation;
+@property (nonatomic) NSData mostRecentEffectiveRootLocation;
+@property (nonatomic) NSDictionary sortingMode;
+@property (nonatomic) NSMutableDictionary groupingBehaviors;
+@property (nonatomic) NSMutableDictionary displayModes;
+@property (nonatomic) NSNumber selectedTab;
+@property (nonatomic) NSNumber userPrefersTiledSidebarHidden;
+- (id)init;
+- (id)initWithCoder:;
+- (id)lastUpdatedDate;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)copyWithZone:;
+- (void)setLastUpdatedDate:;
+- (void)setSelectedTab:;
+- (id)selectedTab;
+- (id)sortingMode;
+- (void)setSortingMode:;
+- (void)bumpLastUpdatedDate;
+- (id)mostRecentlyVisitedLocation;
+- (void)setMostRecentlyVisitedLocation:;
+- (id)mostRecentEffectiveRootLocation;
+- (void)setMostRecentEffectiveRootLocation:;
+- (id)groupingBehaviors;
+- (id)displayModes;
+- (id)userPrefersTiledSidebarHidden;
+- (void)setUserPrefersTiledSidebarHidden:;
++ (BOOL)supportsSecureCoding;
+@end

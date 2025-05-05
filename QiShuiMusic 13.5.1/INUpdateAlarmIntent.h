@@ -1,0 +1,33 @@
+@interface INUpdateAlarmIntent : INIntent
+@property (nonatomic) INAlarmSearch alarmSearch;
+@property (nonatomic) INAlarm alarm;
+@property (nonatomic) q operation;
+@property (nonatomic) INDateComponentsRange proposedTime;
+@property (nonatomic) INSpeakableString proposedLabel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)operation;
+- (id)proposedTime;
+- (id)_dictionaryRepresentation;
+- (void)setOperation:;
+- (void)_setMetadata:;
+- (id)domain;
+- (void)setDomain:;
+- (void)setProposedTime:;
+- (id)_metadata;
+- (id)_typedBackingStore;
+- (void)_redactForMissingPrivacyEntitlementOptions:containingAppBundleId:;
+- (id)verb;
+- (void)setVerb:;
+- (id)parametersByName;
+- (void)setParametersByName:;
+- (id)alarmSearch;
+- (void)setAlarmSearch:;
+- (id)alarm;
+- (void)setAlarm:;
+- (id)proposedLabel;
+- (void)setProposedLabel:;
+- (id)initWithAlarmSearch:alarm:operation:proposedTime:proposedLabel:;
+@end

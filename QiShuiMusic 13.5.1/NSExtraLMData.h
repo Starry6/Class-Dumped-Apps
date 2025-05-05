@@ -1,0 +1,2 @@
+@interface NSExtraLMData : NSObject
+@end

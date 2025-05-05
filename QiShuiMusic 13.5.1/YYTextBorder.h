@@ -1,0 +1,33 @@
+@interface YYTextBorder : NSObject
+@property (nonatomic) q lineStyle;
+@property (nonatomic) double strokeWidth;
+@property (nonatomic) UIColor strokeColor;
+@property (nonatomic) NSInteger lineJoin;
+@property (nonatomic) {UIEdgeInsets=dddd} insets;
+@property (nonatomic) double cornerRadius;
+@property (nonatomic) YYTextShadow shadow;
+@property (nonatomic) UIColor fillColor;
+- (void)setLineStyle:;
+- (id)init;
+- (id)fillColor;
+- (double)strokeWidth;
+- (void)setStrokeColor:;
+- (void)setFillColor:;
+- (void)setStrokeWidth:;
+- (id)strokeColor;
+- (void)setInsets:;
+- (id)initWithCoder:;
+- (id)shadow;
+- (id)insets;
+- (void)encodeWithCoder:;
+- (void)setCornerRadius:;
+- (void).cxx_destruct;
+- (double)cornerRadius;
+- (id)copyWithZone:;
+- (int)lineJoin;
+- (void)setLineJoin:;
+- (void)setShadow:;
+- (long long)lineStyle;
++ (id)borderWithFillColor:cornerRadius:;
++ (id)borderWithLineStyle:lineWidth:strokeColor:;
+@end

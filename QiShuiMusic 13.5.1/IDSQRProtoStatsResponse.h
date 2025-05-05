@@ -1,0 +1,38 @@
+@interface IDSQRProtoStatsResponse : PBCodable
+@property (nonatomic) I clientTimestampNtp;
+@property (nonatomic) BOOL hasServerTimestampMs;
+@property (nonatomic) Q serverTimestampMs;
+@property (nonatomic) BOOL hasSentPackets;
+@property (nonatomic) I sentPackets;
+@property (nonatomic) BOOL hasReceivedPackets;
+@property (nonatomic) I receivedPackets;
+@property (nonatomic) BOOL hasUplinkBandwidth;
+@property (nonatomic) I uplinkBandwidth;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setSentPackets:;
+- (void)setHasSentPackets:;
+- (BOOL)hasSentPackets;
+- (void)setReceivedPackets:;
+- (void)setHasReceivedPackets:;
+- (BOOL)hasReceivedPackets;
+- (unsigned int)clientTimestampNtp;
+- (void)setClientTimestampNtp:;
+- (unsigned int)sentPackets;
+- (unsigned int)receivedPackets;
+- (void)setServerTimestampMs:;
+- (void)setHasServerTimestampMs:;
+- (BOOL)hasServerTimestampMs;
+- (void)setUplinkBandwidth:;
+- (void)setHasUplinkBandwidth:;
+- (BOOL)hasUplinkBandwidth;
+- (unsigned long long)serverTimestampMs;
+- (unsigned int)uplinkBandwidth;
+@end

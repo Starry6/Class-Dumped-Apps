@@ -1,0 +1,2 @@
+@interface IESLiveSaaSPBIESLiveSaaSPBLinkmicJoinChannelRoot : GPBRootObject
+@end

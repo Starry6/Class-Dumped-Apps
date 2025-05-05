@@ -1,0 +1,33 @@
+@interface TTVideoEngineLocalServerTaskInfo : NSObject
+@property (nonatomic) NSString key;
+@property (nonatomic) NSString videoId;
+@property (nonatomic) Q resolution;
+@property (nonatomic) NSString localFilePath;
+@property (nonatomic) q mediaSize;
+@property (nonatomic) q cacheSizeFromZero;
+@property (nonatomic) NSString decryptionKey;
+@property (nonatomic) q preloadSize;
+@property (nonatomic) q taskType;
+@property (nonatomic) TTVideoEngineURLInfo urlInfo;
+- (void)setPreloadSize:;
+- (id)urlInfo;
+- (long long)cacheSizeFromZero;
+- (long long)preloadSize;
+- (void)setCacheSizeFromZero:;
+- (void)setUrlInfo:;
+- (void)setDecryptionKey:;
+- (long long)taskType;
+- (id)key;
+- (void)setResolution:;
+- (unsigned long long)resolution;
+- (void)setKey:;
+- (void).cxx_destruct;
+- (id)videoId;
+- (void)setVideoId:;
+- (id)decryptionKey;
+- (void)setTaskType:;
+- (long long)mediaSize;
+- (void)setMediaSize:;
+- (id)localFilePath;
+- (void)setLocalFilePath:;
+@end

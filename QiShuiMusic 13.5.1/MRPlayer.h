@@ -1,0 +1,38 @@
+@interface MRPlayer : NSObject
+@property (nonatomic) NSString identifier;
+@property (nonatomic) NSString displayName;
+@property (nonatomic) NSURL appIcon;
+@property (nonatomic) q audioSessionType;
+@property (nonatomic) NSSet mxSessionIDs;
+@property (nonatomic) I audioSessionID;
+@property (nonatomic) BOOL hasAuxiliaryProperties;
+@property (nonatomic) MRPlayer skeleton;
+@property (nonatomic) NSData data;
+@property (nonatomic) BOOL defaultPlayer;
+- (id)skeleton;
+- (unsigned int)audioSessionID;
+- (BOOL)isDefaultPlayer;
+- (id)data;
+- (id)identifier;
+- (long long)audioSessionType;
+- (void)setAudioSessionType:;
+- (unsigned long long)hash;
+- (void)setDisplayName:;
+- (id)displayName;
+- (void)mergeFrom:;
+- (id)mxSessionIDs;
+- (void)setAudioSessionID:;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (void)setMxSessionIDs:;
+- (id)description;
+- (id)initWithIdentifier:displayName:;
+- (id)appIcon;
+- (BOOL)hasAuxiliaryProperties;
+- (void)setAppIcon:;
+- (void)setIdentifier:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
++ (id)defaultPlayer;
++ (id)anyPlayer;
+@end

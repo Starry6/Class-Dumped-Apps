@@ -1,0 +1,35 @@
+@interface CBScalablePipe : NSObject
+@property (nonatomic) CBCentral central;
+@property (nonatomic) CBPeer peer;
+@property (nonatomic) NSString name;
+@property (nonatomic) q type;
+@property (nonatomic) q priority;
+@property (nonatomic) BOOL reliablePipe;
+@property (nonatomic) q peerType;
+@property (nonatomic) NSInputStream input;
+@property (nonatomic) NSOutputStream output;
+@property (nonatomic) ^v channel;
+@property (nonatomic) C localCLVersion;
+@property (nonatomic) C peerCLVersion;
+@property (nonatomic) I localCLFeatures;
+@property (nonatomic) I peerCLFeatures;
+- (id)output;
+- (id)input;
+- (id)peer;
+- (void)dealloc;
+- (id)channel;
+- (long long)type;
+- (void).cxx_destruct;
+- (id)description;
+- (id)name;
+- (void)setOrphan;
+- (long long)priority;
+- (id)initWithPipeManager:info:;
+- (id)central;
+- (BOOL)reliablePipe;
+- (long long)peerType;
+- (unsigned char)localCLVersion;
+- (unsigned char)peerCLVersion;
+- (unsigned int)localCLFeatures;
+- (unsigned int)peerCLFeatures;
+@end

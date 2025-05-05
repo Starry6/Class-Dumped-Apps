@@ -1,0 +1,38 @@
+@interface CJPayStateView : UIView
+@property (nonatomic) CJPayImageLabelStateView stateView;
+@property (nonatomic) q stateType;
+@property (nonatomic) NSDictionary showConfig;
+@property (nonatomic) <CJPayStateDelegate> delegate;
+@property (nonatomic) NSString pageDesc;
+@property (nonatomic) NSString buttonDesc;
+@property (nonatomic) BOOL isPaymentForOuterApp;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)buttonDesc;
+- (void)clickBtn:;
+- (BOOL)isPaymentForOuterApp;
+- (void)p_setShowConfigs;
+- (id)pageDesc;
+- (void)setButtonDesc:;
+- (void)setIsPaymentForOuterApp:;
+- (void)setPageDesc:;
+- (void)setShowConfig:;
+- (void)setStateView:;
+- (id)showConfig;
+- (void)startState:;
+- (id)stateView;
+- (void)updateShowConfigsWithType:model:;
+- (void)setDelegate:;
+- (void)setStateType:;
+- (id)initWithFrame:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (long long)stateType;
+- (void)setupUI;
++ (id)p_titleAttributedStrWithFrontStr:latterStr:;
++ (id)updateTitleWithContent:;
++ (id)updateTitleWithContent:amount:;
++ (id)updateTitleWithContent:desc:;
+@end

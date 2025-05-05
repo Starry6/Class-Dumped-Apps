@@ -1,0 +1,2 @@
+@interface CSJExpressAdMonitor : NSObject
+@end

@@ -1,0 +1,32 @@
+@interface RUIHTTPRequest : NSObject
+@property (nonatomic) @ delegate;
+- (BOOL)isLoading;
+- (id)sessionConfiguration;
+- (id)init;
+- (void)cancel;
+- (void)dealloc;
+- (void)setDelegate:;
+- (id)request;
+- (void)parseData:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)loadRequest:;
+- (id)urlSessionDelegate;
+- (void)_finishedLoading;
+- (void)_startedLoading;
+- (void)_loadRequestMain:;
+- (void)shouldLoadRequest:completionHandler:;
+- (id)handleWillLoadRequest:;
+- (void)_preLoadCancel;
+- (void)loadStatusChanged;
+- (void)willParseData;
+- (void)didParseData;
+- (void)failWithError:forRequest:;
+- (BOOL)receivedValidResponse:forRequest:;
++ (id)errorWithCode:;
++ (id)serviceUnavailableError;
++ (id)invalidResponseErrorWithResponse:;
++ (id)nonSecureConnectionNotAllowedError;
++ (BOOL)anyRequestLoading;
++ (id)safeBaseURL;
+@end

@@ -1,0 +1,30 @@
+@interface LNEmbeddedApplicationConnection : LNApplicationConnection
+@property (nonatomic) RBSProcessMonitor processMonitor;
+@property (nonatomic) NSMapTable assertionsMapTable;
+@property (nonatomic) FBSOpenApplicationService openApplicationService;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)processMonitor;
+- (void)assertion:didInvalidateWithError:;
+- (void)dealloc;
+- (id)defaultOptions;
+- (void).cxx_destruct;
+- (void)connectWithOptions:;
+- (id)initWithBundleIdentifier:appBundleIdentifier:error:;
+- (void)refreshWithOptions:;
+- (void)cancelTimeoutForOperationWithIdentifier:;
+- (void)extendTimeoutForOperationWithIdentifier:;
+- (void)connectionOperationWillStart:;
+- (void)connectionOperation:didFinishWithError:;
+- (void)acquireAssertionsForConnectionOperation:;
+- (void)invalidateAssertionsForConnectionOperation:;
+- (void)openApplicationWithOptions:connectionAction:completionHandler:;
+- (void)enqueueOpenApplicationOperation:;
+- (void)resumeOpenApplicationOperationQueue;
+- (id)assertionsMapTable;
+- (id)openApplicationService;
++ (id)optionsForAction:interactionMode:;
++ (id)sharedOpenApplicationOperationQueue;
+@end

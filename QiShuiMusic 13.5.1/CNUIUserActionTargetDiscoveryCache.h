@@ -1,0 +1,2 @@
+@interface CNUIUserActionTargetDiscoveryCache : CNCache
+@end

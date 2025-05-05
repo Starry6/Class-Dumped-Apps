@@ -1,0 +1,30 @@
+@interface IESLiveCommentIntentionEntryModel : NSObject
+@property (nonatomic) NSArray subItems;
+@property (nonatomic) q resultId;
+@property (nonatomic) NSAttributedString entryTitle;
+@property (nonatomic) q entryType;
+@property (nonatomic) NSString schemaEntryURL;
+@property (nonatomic) NSDictionary extraDic;
+@property (nonatomic) BOOL fromMemory;
+@property (nonatomic) BOOL withPinyin;
+@property (nonatomic) double showTime;
+- (id)entryTitle;
+- (id)extraDic;
+- (BOOL)fromMemory;
+- (id)schemaEntryURL;
+- (void)setEntryTitle:;
+- (void)setExtraDic:;
+- (void)setFromMemory:;
+- (void)setSchemaEntryURL:;
+- (void)setShowTime:;
+- (void)setWithPinyin:;
+- (double)showTime;
+- (BOOL)withPinyin;
+- (long long)entryType;
+- (void).cxx_destruct;
+- (void)setEntryType:;
+- (long long)resultId;
+- (void)setResultId:;
+- (void)setSubItems:;
+- (id)subItems;
+@end

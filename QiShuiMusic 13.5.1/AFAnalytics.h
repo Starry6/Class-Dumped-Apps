@@ -1,0 +1,33 @@
+@interface AFAnalytics : NSObject
+- (id)initWithInstanceContext:;
+- (void)setService:;
+- (id)init;
+- (void)logClientFeedbackPresented:;
+- (void)logEventWithType:machAbsoluteTime:contextProvider:contextProvidingQueue:;
+- (void)logInstrumentationOfType:machAbsoluteTime:turnIdentifier:;
+- (void)_stageEvent:;
+- (void)_stageEvents:;
+- (void)barrier:;
+- (void)logEvents:;
+- (void)endEventsGrouping;
+- (void)logEventWithType:machAbsoluteTime:contextResolver:;
+- (void)logEventWithType:context:contextNoCopy:;
+- (void)logInstrumentation:machAbsoluteTime:turnContext:;
+- (void)logEventWithType:contextProvider:contextProvidingQueue:;
+- (void).cxx_destruct;
+- (void)logEventWithType:machAbsoluteTime:context:contextNoCopy:;
+- (void)logClientFeedbackPresented:dialogIdentifierProvider:;
+- (void)logEventWithType:context:;
+- (void)beginEventsGrouping;
+- (void)logInstrumentation:machAbsoluteTime:turnIdentifier:;
+- (id)newTurnBasedInstrumentationContext;
+- (void)logInstrumentation:turnContext:;
+- (void)boostQueuedEvents:;
+- (id)_service:;
+- (void)logEvent:;
+- (void)logInstrumentationOfType:turnIdentifier:;
+- (void)logEventWithType:contextProvider:;
+- (void)logEventWithType:machAbsoluteTime:context:;
+- (void)logEventWithType:contextResolver:;
++ (id)sharedAnalytics;
+@end

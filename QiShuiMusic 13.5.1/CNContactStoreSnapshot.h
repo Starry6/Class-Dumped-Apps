@@ -1,0 +1,38 @@
+@interface CNContactStoreSnapshot : NSObject
+@property (nonatomic) CNContactStoreDataSource dataSource;
+@property (nonatomic) CNContactStoreFilter filter;
+@property (nonatomic) CNManagedConfiguration managedConfiguration;
+@property (nonatomic) NSArray contacts;
+@property (nonatomic) NSMutableDictionary contactMatchInfos;
+@property (nonatomic) CNContactDataSourceLIFOScheduler summarizationQueue;
+@property (nonatomic) NSPointerArray summarizationFutures;
+@property (nonatomic) NSArray sections;
+@property (nonatomic) NSArray indexSections;
+@property (nonatomic) NSMapTable identifiersToIndexPath;
+@property (nonatomic) NSMutableArray batchContactIdentifiers;
+- (id)sections;
+- (id)contactMatchInfos;
+- (id)filter;
+- (id)summarizationFutures;
+- (id)managedConfiguration;
+- (id)identifiersToIndexPath;
+- (id)indexSections;
+- (void)setFilter:;
+- (void)setDataSource:;
+- (id)init;
+- (void)dealloc;
+- (void)setManagedConfiguration:;
+- (void)_loadContactsInRange:inBackground:;
+- (id)contacts;
+- (id)objectIn_contactsAtIndex:;
+- (void)_loadAllContacts;
+- (void)_generateExcerptsInRange:;
+- (void)prepareEnoughContacts;
+- (id)_keysToFetch;
+- (id)summarizationQueue;
+- (id)dataSource;
+- (void).cxx_destruct;
+- (unsigned long long)countOf_contacts;
+- (void)prepareAllContacts;
+- (id)batchContactIdentifiers;
+@end

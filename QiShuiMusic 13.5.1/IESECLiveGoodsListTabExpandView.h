@@ -1,0 +1,35 @@
+@interface IESECLiveGoodsListTabExpandView : UIView
+@property (nonatomic) <IESECLiveGoodsListTabDelegate> delegate;
+@property (nonatomic) IESECLiveGoodsListTab listTab;
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UIView arrowContainerView;
+@property (nonatomic) UIImageView arrowImageView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIView maskView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)listTab;
+- (void)maskClickAction;
+- (id)arrowContainerView;
+- (void)clickArrowAction;
+- (id)initWithFrame:tabDelegate:;
+- (void)listTab:updateTabHeight:;
+- (void)setArrowContainerView:;
+- (void)setListTab:;
+- (void)setupTabModels:selectedIndex:liveThemeColorDic:;
+- (id)maskView;
+- (void)setTitleLabel:;
+- (id)containerView;
+- (void)setContainerView:;
+- (void)setDelegate:;
+- (id)initWithFrame:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setMaskView:;
+- (id)titleLabel;
+- (void)setupUI;
+- (id)arrowImageView;
+- (void)setArrowImageView:;
+@end

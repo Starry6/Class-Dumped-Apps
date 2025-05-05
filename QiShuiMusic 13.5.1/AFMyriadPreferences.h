@@ -1,0 +1,33 @@
+@interface AFMyriadPreferences : NSObject
+- (unsigned char)deviceGroup;
+- (unsigned char)deviceClass;
+- (void)setDeviceClass:;
+- (BOOL)myriadServerHasProvisioned;
+- (void).cxx_destruct;
+- (double)deviceTrumpDelay;
+- (id)initWithDeviceInstanceContext:preferences:;
+- (void)setDeviceGroup:completion:;
+- (void)setIgnoreAdjustedBoost:;
+- (BOOL)ignoreAdjustedBoost;
+- (void)setIgnorePlatformBias:;
+- (BOOL)ignorePlatformBias;
+- (void)setConstantGoodnessScore:;
+- (int)constantGoodnessScore;
+- (void)setDeviceAdjust:;
+- (float)deviceAdjust;
+- (void)setDeviceDelay:;
+- (double)deviceDelay;
+- (void)setTestDeviceDelay:;
+- (double)testDeviceDelay;
+- (void)setDeviceTrumpDelay:;
+- (void)enableCoordination:;
+- (BOOL)coordinationEnabled;
+- (BOOL)coordinationEnabledForAccessoryLogging;
+- (BOOL)BLEActivityEnabled;
+- (void)setVoiceTriggerEndtimeDelayThreshold:;
+- (double)voiceTriggerEndtimeDelayThreshold;
+- (void)setDeviceSlowDown:;
+- (double)deviceSlowDown;
+- (void)setMaxNoOperationDelay:;
+- (double)maxNoOperationDelay;
+@end

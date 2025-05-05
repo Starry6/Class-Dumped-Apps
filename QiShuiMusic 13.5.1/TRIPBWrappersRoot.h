@@ -1,0 +1,2 @@
+@interface TRIPBWrappersRoot : TRIPBRootObject
+@end

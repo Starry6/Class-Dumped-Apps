@@ -1,0 +1,33 @@
+@interface BWStillImageSampleBufferSinkNodeAnalyticsConfiguration : NSObject
+@property (nonatomic) NSInteger formatDimensionWidth;
+@property (nonatomic) NSInteger formatDimensionHeight;
+@property (nonatomic) float formatMaxFrameRate;
+@property (nonatomic) BOOL isHighQualityPhotoWithVideoFormatSupported;
+@property (nonatomic) BOOL isPhotoFormat;
+@property (nonatomic) BOOL isTimeLapse;
+@property (nonatomic) I pixelFormat;
+@property (nonatomic) BOOL binned;
+@property (nonatomic) BOOL isSemanticStyleRenderingSupported;
+@property (nonatomic) BOOL fastCapturePrioritizationEnabled;
+- (void)setBinned:;
+- (BOOL)isPhotoFormat;
+- (BOOL)isHighQualityPhotoWithVideoFormatSupported;
+- (void)dealloc;
+- (BOOL)isSemanticStyleRenderingSupported;
+- (void)setPixelFormat:;
+- (void)setIsSemanticStyleRenderingSupported:;
+- (void)setFormatDimensionWidth:;
+- (BOOL)isTimeLapse;
+- (int)formatDimensionWidth;
+- (int)formatDimensionHeight;
+- (void)setIsTimeLapse:;
+- (unsigned int)pixelFormat;
+- (void)setIsPhotoFormat:;
+- (BOOL)fastCapturePrioritizationEnabled;
+- (void)setFastCapturePrioritizationEnabled:;
+- (float)formatMaxFrameRate;
+- (void)setFormatDimensionHeight:;
+- (void)setFormatMaxFrameRate:;
+- (void)setIsHighQualityPhotoWithVideoFormatSupported:;
+- (BOOL)binned;
+@end

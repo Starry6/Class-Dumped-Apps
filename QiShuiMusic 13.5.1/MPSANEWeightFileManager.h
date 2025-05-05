@@ -1,0 +1,30 @@
+@interface MPSANEWeightFileManager : NSObject
+@property (nonatomic) Q currentDataSizeInBytes;
+@property (nonatomic) Q currentPaddingSizeInBytes;
+@property (nonatomic) Q currentFileSizeInBytes;
+@property (nonatomic) NSString filePath;
+@property (nonatomic) NSFileHandle fileHandle;
+@property (nonatomic) NSString fileDirectoryPath;
+@property (nonatomic) NSMutableArray weights;
+@property (nonatomic) NSMutableDictionary weightsInMemoryDictionary;
+@property (nonatomic) BOOL useInMemory;
+- (id)filePath;
+- (id)fileHandle;
+- (id)initWithFilePath:;
+- (id)weights;
+- (void).cxx_destruct;
+- (id).cxx_construct;
+- (long long)writeData:value:index:;
+- (void)releaseWeightsData;
+- (id)fileDirectoryPath;
+- (id)weightsInMemoryDictionary;
+- (unsigned long long)currentDataSizeInBytes;
+- (void)setCurrentDataSizeInBytes:;
+- (unsigned long long)currentPaddingSizeInBytes;
+- (void)setCurrentPaddingSizeInBytes:;
+- (unsigned long long)currentFileSizeInBytes;
+- (void)setCurrentFileSizeInBytes:;
+- (BOOL)useInMemory;
+- (void)setUseInMemory:;
++ (id)weightFileOpsAtPath:;
+@end

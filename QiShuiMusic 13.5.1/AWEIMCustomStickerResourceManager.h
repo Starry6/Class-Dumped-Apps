@@ -1,0 +1,37 @@
+@interface AWEIMCustomStickerResourceManager : NSObject
+@property (nonatomic) NSMutableDictionary downloadStatus;
+@property (nonatomic) NSMutableArray tempResourceArray;
+@property (nonatomic) AWEProgressLoadingView hud;
+@property (nonatomic) IESIMSaaSEmoticonThemeModel themeModel;
+- (BOOL)hasStickerCache;
+- (void)p_fetchSticker:;
+- (void)addLocalCustomStickerResource:;
+- (void)addSingleSticker:stickType:stickerUri:stickerUrl:resourceID:showLoading:withCompletion:;
+- (id)changeResponseModel:;
+- (id)changeResponseToEmotionModel:;
+- (void)deleteCustomStickerResource:withCompletion:;
+- (void)deleteLocalCustomStickerResource:;
+- (id)getLocalCustomStickerPath:;
+- (void)getResource;
+- (id)isExistSticker:animateUri:staticUri:;
+- (BOOL)isFileExistAtPath:;
+- (void)p_checkDownloadingStatus;
+- (id)p_getCacheList;
+- (void)p_updateCacheList:;
+- (void)p_updateHasCache:;
+- (void)setStickersWithCacheData;
+- (void)setTempResourceArray:;
+- (void)setThemeModel:;
+- (id)stickerRootDir;
+- (void)successAddCustomSticker;
+- (id)tempResourceArray;
+- (id)themeModel;
+- (void)updateLocalCustomStickerResource:;
+- (void)updateRemoteListWithContext:;
+- (void).cxx_destruct;
+- (id)downloadStatus;
+- (void)setDownloadStatus:;
+- (id)hud;
+- (void)setHud:;
++ (id)sharedManager;
+@end

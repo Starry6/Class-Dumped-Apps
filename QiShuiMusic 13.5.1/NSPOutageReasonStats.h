@@ -1,0 +1,36 @@
+@interface NSPOutageReasonStats : NSPProxyAnalytics
+@property (nonatomic) NSString tierType;
+@property (nonatomic) NSString outageReasonType;
+@property (nonatomic) NSString outageReasonSubType;
+@property (nonatomic) NSString primaryIngressProxy;
+@property (nonatomic) NSString primaryEgressProxy;
+@property (nonatomic) NSString fallbackIngressProxy;
+@property (nonatomic) NSString fallbackEgressProxy;
+@property (nonatomic) NSString odohProxy;
+@property (nonatomic) NSString tokenProxy;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void)setTierType:;
+- (id)eventName;
+- (void).cxx_destruct;
+- (id)analyticsDict;
+- (id)tierType;
+- (id)copyWithZone:;
+- (id)outageReasonType;
+- (void)setOutageReasonType:;
+- (id)outageReasonSubType;
+- (void)setOutageReasonSubType:;
+- (id)primaryIngressProxy;
+- (void)setPrimaryIngressProxy:;
+- (id)primaryEgressProxy;
+- (void)setPrimaryEgressProxy:;
+- (id)fallbackIngressProxy;
+- (void)setFallbackIngressProxy:;
+- (id)fallbackEgressProxy;
+- (void)setFallbackEgressProxy:;
+- (id)odohProxy;
+- (void)setOdohProxy:;
+- (id)tokenProxy;
+- (void)setTokenProxy:;
++ (BOOL)supportsSecureCoding;
+@end

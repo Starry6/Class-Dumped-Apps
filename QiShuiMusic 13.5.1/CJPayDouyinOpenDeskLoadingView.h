@@ -1,0 +1,36 @@
+@interface CJPayDouyinOpenDeskLoadingView : UIView
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UIView contentView;
+@property (nonatomic) UIImageView logoImageView;
+@property (nonatomic) UIStackView dotStackView;
+@property (nonatomic) NSMutableArray dotViews;
+@property (nonatomic) BOOL isLoading;
+- (void)allowUserInteraction:;
+- (id)dotStackView;
+- (void)p_dismissWithAnimated:;
+- (void)p_setupUI;
+- (void)p_showLoadingOnView:icon:animated:;
+- (void)setDotStackView:;
+- (void)setLoadingIconName:;
+- (BOOL)isLoading;
+- (id)contentView;
+- (id)init;
+- (void)setIsLoading:;
+- (id)containerView;
+- (void)setContainerView:;
+- (void)startAnimating;
+- (id)initWithFrame:;
+- (void)stopAnimating;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (id)dotViews;
+- (void)setDotViews:;
+- (id)logoImageView;
+- (void)setLogoImageView:;
++ (id)loadingIconName;
++ (void)dismissWithAnimated:;
++ (id)sharedView;
++ (id)showLoadingOnView:;
++ (id)showLoadingOnView:animated:;
++ (id)showLoadingOnView:icon:animated:;
+@end

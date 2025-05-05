@@ -1,0 +1,30 @@
+@interface AWEIMContactDownloadParam : NSObject
+@property (nonatomic) q maxTime;
+@property (nonatomic) q minTime;
+@property (nonatomic) NSString source;
+@property (nonatomic) NSString oldUserID;
+@property (nonatomic) q nextRequestMinTime;
+@property (nonatomic) q requestCount;
+@property (nonatomic) BOOL isFirstPageDataOfFullSynchron;
+@property (nonatomic) BOOL fromNewUserLogin;
+@property (nonatomic) BOOL needSortedInfo;
+- (BOOL)fromNewUserLogin;
+- (BOOL)isFirstPageDataOfFullSynchron;
+- (BOOL)needSortedInfo;
+- (long long)nextRequestMinTime;
+- (id)oldUserID;
+- (void)setFromNewUserLogin:;
+- (void)setIsFirstPageDataOfFullSynchron:;
+- (void)setNeedSortedInfo:;
+- (void)setNextRequestMinTime:;
+- (void)setOldUserID:;
+- (long long)maxTime;
+- (long long)minTime;
+- (void)setMinTime:;
+- (void)setRequestCount:;
+- (void)setMaxTime:;
+- (void).cxx_destruct;
+- (id)source;
+- (void)setSource:;
+- (long long)requestCount;
+@end

@@ -1,0 +1,34 @@
+@interface IESECTabKitPreProcessService : IESECTabKitService
+@property (nonatomic) IESECServiceProxy<IESECTabKitHybridService> hybridService;
+@property (nonatomic) IESECServiceProxy<IESECTabKitAbilityService> abilityService;
+@property (nonatomic) IESECServiceProxy<IESECTabKitMonitorService> monitorService;
+@property (nonatomic) IESECTabKitTabModel anchorTabModel;
+@property (nonatomic) IESECTabKitAnniePreProcessRsp preProcessRsp;
+@property (nonatomic) BOOL clearFlag;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)processedAnnieXCardModelForTab:;
+- (id)anchorTabModelWithRouterParams:;
+- (id)abilityService;
+- (id)anchorTabModel;
+- (BOOL)clearFlag;
+- (void)clearProcessedCache;
+- (id)hybridService;
+- (unsigned long long)kernalTypeForTabModel:;
+- (id)monitorService;
+- (void)preProcessAnnieXCardModelWithAnchorTab:isSingleTabMode:;
+- (id)preProcessRsp;
+- (void)setAbilityService:;
+- (void)setAnchorTabModel:;
+- (void)setClearFlag:;
+- (void)setHybridService:;
+- (void)setMonitorService:;
+- (void)setPreProcessRsp:;
+- (id)initWithContext:;
+- (void).cxx_destruct;
++ (id)preprocessQueue;
++ (void)preCreateGlobalPreprocessQueue;
++ (void)triggerBDXWebViewWarmup;
+@end

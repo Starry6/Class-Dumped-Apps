@@ -1,0 +1,34 @@
+@interface YYImageCache : NSObject
+@property (nonatomic) NSString name;
+@property (nonatomic) YYMemoryCache memoryCache;
+@property (nonatomic) YYDiskCache diskCache;
+@property (nonatomic) BOOL allowAnimatedImage;
+@property (nonatomic) BOOL decodeForDisplay;
+- (id)getImageForKey:;
+- (BOOL)allowAnimatedImage;
+- (BOOL)containsImageForKey:;
+- (BOOL)containsImageForKey:withType:;
+- (BOOL)decodeForDisplay;
+- (id)getImageDataForKey:;
+- (void)getImageDataForKey:withBlock:;
+- (id)getImageForKey:withType:;
+- (void)getImageForKey:withType:withBlock:;
+- (unsigned long long)imageCost:;
+- (void)removeImageForKey:withType:;
+- (void)setAllowAnimatedImage:;
+- (void)setDecodeForDisplay:;
+- (void)setImage:imageData:forKey:withType:;
+- (void)trimToMark;
+- (id)init;
+- (void)setName:;
+- (id)diskCache;
+- (id)memoryCache;
+- (void).cxx_destruct;
+- (id)initWithPath:;
+- (id)name;
+- (void)mark;
+- (void)setImage:forKey:;
+- (void)removeImageForKey:;
+- (id)imageFromData:;
++ (id)sharedCache;
+@end

@@ -1,0 +1,30 @@
+@interface QLDownloadingItemViewController : QLDetailItemViewController
+@property (nonatomic) BOOL downloaded;
+@property (nonatomic) QLRoundProgressView progressView;
+@property (nonatomic) <QLDownloadingItemViewControllerDelegate> downloadingDelegate;
+@property (nonatomic) BOOL showsLoadingPreviewSpinner;
+- (void)performAction;
+- (void).cxx_destruct;
+- (id)progressView;
+- (void)viewDidLoad;
+- (BOOL)downloaded;
+- (void)setDownloaded:;
+- (void)startDownload:;
+- (void)loadPreviewControllerWithContents:context:completionHandler:;
+- (void)previewDidAppear:;
+- (void)previewDidDisappear:;
+- (void)setAppearance:animated:;
+- (BOOL)shouldAutoDownloadInNetworkState:downloadSize:forceIfPossible:;
+- (void)_updateFileSizeWithProgress:animated:;
+- (void)setShowsLoadingPreviewSpinner:;
+- (void)_toggleDownload:;
+- (void)startDownloadIfNeeded;
+- (void)_startDownload:;
+- (void)_stopDownload:;
+- (void)_setDownloading:animated:;
+- (void)_presentConnectivityAlert;
+- (void)_startDownloadOperation;
+- (id)downloadingDelegate;
+- (void)setDownloadingDelegate:;
+- (BOOL)showsLoadingPreviewSpinner;
+@end

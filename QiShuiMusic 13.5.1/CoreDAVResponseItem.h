@@ -1,0 +1,35 @@
+@interface CoreDAVResponseItem : CoreDAVItem
+@property (nonatomic) NSMutableArray hrefs;
+@property (nonatomic) CoreDAVLeafItem status;
+@property (nonatomic) NSMutableSet propStats;
+@property (nonatomic) CoreDAVErrorItem errorItem;
+@property (nonatomic) CoreDAVLeafItem responseDescription;
+@property (nonatomic) CoreDAVItemWithHrefChildItem location;
+@property (nonatomic) CoreDAVLeafItem serverUID;
+@property (nonatomic) CoreDAVMatchResultsItem matchResults;
+- (void)setStatus:;
+- (id)init;
+- (void)setPropStats:;
+- (id)matchResults;
+- (void)setErrorItem:;
+- (void)setResponseDescription:;
+- (void)setMatchResults:;
+- (id)location;
+- (id)serverUID;
+- (id)firstHref;
+- (void)setLocation:;
+- (id)errorItem;
+- (void).cxx_destruct;
+- (BOOL)hasPropertyError;
+- (void)setServerUID:;
+- (void)addPropStat:;
+- (id)description;
+- (id)propStats;
+- (id)status;
+- (void)addHref:;
+- (id)responseDescription;
+- (void)setHrefs:;
+- (id)hrefs;
+- (id)successfulPropertiesToValues;
++ (id)copyParseRules;
+@end

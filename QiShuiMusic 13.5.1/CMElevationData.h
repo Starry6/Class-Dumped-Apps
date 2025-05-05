@@ -1,0 +1,31 @@
+@interface CMElevationData : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) Q recordId;
+@property (nonatomic) NSUUID sourceId;
+@property (nonatomic) q source;
+@property (nonatomic) NSDate startDate;
+@property (nonatomic) NSDate endDate;
+@property (nonatomic) Q elevationAscended;
+@property (nonatomic) Q elevationDescended;
+- (id)startDate;
+- (void)dealloc;
+- (unsigned long long)recordId;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (id)endDate;
+- (long long)source;
+- (id)description;
+- (id)sourceId;
+- (id)copyWithZone:;
+- (id)initWithBinarySampleRepresentation:metadata:timestamp:;
+- (id)binarySampleRepresentation;
+- (unsigned long long)elevationAscended;
+- (unsigned long long)elevationDescended;
+- (id)initWithSignificantElevationSample:;
+- (id)initWithStartDate:endDate:elevationAscended:elevationDescended:source:recordId:sourceId:;
++ (BOOL)supportsSecureCoding;
++ (id)sourceName:;
+@end

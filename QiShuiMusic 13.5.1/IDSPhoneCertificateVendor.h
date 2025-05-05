@@ -1,0 +1,38 @@
+@interface IDSPhoneCertificateVendor : NSObject
+@property (nonatomic) NSObject<OS_dispatch_queue> queue;
+@property (nonatomic) IDSPhoneCertificateVendor strongSelfReference;
+@property (nonatomic) IDSDaemonRequestTimer daemonRequestTimer;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)requestCarrierTokenWithParameters:completion:;
+- (void)dealloc;
+- (void)authenticatePhoneWithCompletion:;
+- (void)generatePhoneAuthenticationSignatureOverData:withCompletion:;
+- (void)requestCurrentPhoneUserSubscriptionSourceWithCompletion:;
+- (void)setStrongSelfReference:;
+- (void)requestCarrierTokenWithMessageBody:completion:;
+- (id)strongSelfReference;
+- (void)didFetchPhoneUserSubscriptionSource:requestUUID:error:;
+- (void)setCurrentPhoneUserSubscriptionSource:completion:;
+- (id)_clientErrorForCode:underlyingError:;
+- (void)didGeneratePhoneAuthenticationSignature:nonce:certificates:labelIDs:inputData:requestUUID:error:;
+- (id)_scheduleTimeoutForPhoneAuthenticationCertificateRequestCompletionBlock:;
+- (void)didSetPhoneUserSubscriptionSource:requestUUID:error:;
+- (long long)_subscriptionSourceForContext:;
+- (void).cxx_destruct;
+- (id)_debugDescriptionForErrorCode:;
+- (id)_scheduleTimeoutForPhoneAuthenticationSignatureRequestCompletionBlock:;
+- (long long)_subscriptionSourceFromIntegerValue:;
+- (void)didRequestCarrierTokenString:requestUUID:error:;
+- (BOOL)_isPhoneCertificateVendorSupported;
+- (id)_scheduleTimeoutForPhoneSubscriptionSourceCompletionBlock:;
+- (id)_scheduleTimeoutForCarrierTokenCompletionBlock:;
+- (id)initWithQueue:;
+- (id)daemonRequestTimer;
+- (void)_updateSelfRetentionBasedOnInFlightRequestCount;
+- (void)didAuthenticatePhoneWithAuthenticationCertificateData:requestUUID:error:;
+- (id)queue;
+- (long long)currentPhoneUserSubscriptionSourceWithError:;
+@end

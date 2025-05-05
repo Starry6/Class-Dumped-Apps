@@ -1,0 +1,34 @@
+@interface AVFullScreenViewController : UIViewController
+@property (nonatomic) UIView contentView;
+@property (nonatomic) UIViewController<AVFullScreenViewControllerDelegate> delegate;
+@property (nonatomic) AVFullScreenViewController associatedFullScreenViewController;
+@property (nonatomic) AVFullScreenViewController sourceFullScreenViewController;
+- (BOOL)shouldAutorotate;
+- (long long)preferredInterfaceOrientationForPresentation;
+- (void)viewWillMoveToWindow:;
+- (id)contentView;
+- (long long)preferredStatusBarStyle;
+- (id)targetForAction:withSender:;
+- (void)viewWillTransitionToSize:withTransitionCoordinator:;
+- (BOOL)prefersStatusBarHidden;
+- (void)viewDidMoveToWindow:shouldAppearOrDisappear:;
+- (void)setDelegate:;
+- (long long)preferredWhitePointAdaptivityStyle;
+- (BOOL)_canShowWhileLocked;
+- (BOOL)modalPresentationCapturesStatusBarAppearance;
+- (BOOL)avkit_isEffectivelyFullScreen;
+- (id)keyCommands;
+- (BOOL)canBecomeFirstResponder;
+- (id)delegate;
+- (BOOL)prefersHomeIndicatorAutoHidden;
+- (void).cxx_destruct;
+- (void)viewDidAppear:;
+- (void)setContentView:;
+- (void)loadView;
+- (unsigned long long)supportedInterfaceOrientations;
+- (void)attachContentView;
+- (id)associatedFullScreenViewController;
+- (void)setAssociatedFullScreenViewController:;
+- (id)sourceFullScreenViewController;
+- (void)setSourceFullScreenViewController:;
+@end

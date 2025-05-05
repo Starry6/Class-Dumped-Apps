@@ -1,0 +1,2 @@
+@interface INCUserActivityExecutionInfo : INUserActivityExecutionInfo
+@end

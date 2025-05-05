@@ -1,0 +1,34 @@
+@interface SSTonePurchase : SSPurchase
+@property (nonatomic) NSArray allowedToneStyles;
+@property (nonatomic) NSNumber assigneeIdentifier;
+@property (nonatomic) NSString assigneeContactIdentifier;
+@property (nonatomic) NSString assigneeToneStyle;
+@property (nonatomic) BOOL shouldMakeDefaultRingtone;
+@property (nonatomic) BOOL shouldMakeDefaultTextTone;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithXPCEncoding:;
+- (id)copyXPCEncoding;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (id)initWithItem:offer:;
+- (void)_addEntriesToDatabaseEncoding:;
+- (void)_setValuesUsingDatabaseEncoding:;
+- (id)allowedToneStyles;
+- (id)assigneeIdentifier;
+- (id)assigneeContactIdentifier;
+- (id)assigneeToneStyle;
+- (void)setAllowedToneStyles:;
+- (void)setAssigneeIdentifier:;
+- (void)setAssigneeContactIdentifier:;
+- (void)setAssigneeToneStyle:;
+- (void)setShouldMakeDefaultRingtone:;
+- (void)setShouldMakeDefaultTextTone:;
+- (BOOL)shouldMakeDefaultRingtone;
+- (BOOL)shouldMakeDefaultTextTone;
++ (BOOL)supportsSecureCoding;
+@end

@@ -1,0 +1,35 @@
+@interface UIActivityContinuationManager : NSObject
+@property (nonatomic) NSString currentActivityContinuationType;
+@property (nonatomic) NSString currentActivityContinuationUUIDString;
+@property (nonatomic) NSProgress currentActivityContinuationProgress;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (void)addResponder:document:forUserActivity:;
+- (void)userActivityWillSave:;
+- (id)activityContinuationDictionaryWithAction:sourceApplication:originatingProcess:;
+- (void)_displayCurrentActivityContinuationProgressUI;
+- (BOOL)_continueUserActivity:;
+- (void)_hideCurrentActivityContinuationProgressUI;
+- (void)_endCurrentActivityContinuationWithCompletion:;
+- (id)_currentActivityContinuationProgress;
+- (void)_setCurrentActivityContinuationProgress:;
+- (void)_cleanupUserActivity:activityIdentifier:;
+- (void)_setCurrentActivityContinuationUUIDString:;
+- (BOOL)_delegateHandledContinueActivityWithType:;
+- (void)_setCurrentActivityContinuationType:;
+- (void)removeResponder:document:forUserActivity:;
+- (void)_clearCurrentActivityContinuationCancelingProgress:;
+- (void)_didFailToContinueUserActivityWithType:error:;
+- (BOOL)activityContinuationsAreBeingTracked;
+- (id)_currentActivityContinuationType;
+- (void).cxx_destruct;
+- (id)_currentActivityContinuationUUIDString;
+- (void)handleActivityContinuation:isSuspended:;
+- (id)_fetchUserActivityWithUUID:completionHandler:;
+- (id)initWithApplicationContext:;
+- (void)_userActivityWillSave:;
+- (void)_endCurrentActivityContinuationAndDisplayError:;
+@end

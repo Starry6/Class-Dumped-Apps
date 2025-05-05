@@ -1,0 +1,36 @@
+@interface AWEIMCustomMenuView : UIView
+@property (nonatomic) NSArray menuItemList;
+@property (nonatomic) UIView menuItemsBaseView;
+@property (nonatomic) UICollectionView menuItemsCollectionView;
+@property (nonatomic) UIView triangleView;
+@property (nonatomic) BOOL isAnimted;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithMenuItemList:;
+- (BOOL)isAnimted;
+- (id)menuItemList;
+- (id)menuItemsBaseView;
+- (id)menuItemsCollectionView;
+- (void)setIsAnimted:;
+- (void)setMenuItemList:;
+- (void)setMenuItemsBaseView:;
+- (void)setMenuItemsCollectionView:;
+- (void)setTriangleView:;
+- (void)showMenuForBubbleFrameInScreen:tapLocationInScreen:;
+- (id)triangleView;
+- (id)collectionView:layout:sizeForItemAtIndexPath:;
+- (void)dismiss;
+- (void)collectionView:didHighlightItemAtIndexPath:;
+- (void)collectionView:didUnhighlightItemAtIndexPath:;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (id)hitTest:withEvent:;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (BOOL)collectionView:shouldHighlightItemAtIndexPath:;
+- (void).cxx_destruct;
+- (long long)numberOfSectionsInCollectionView:;
++ (void)customMenuDismiss;
++ (void)showMenuForBubbleFrameInScreen:tapLocationInScreen:menuItemList:;
+@end

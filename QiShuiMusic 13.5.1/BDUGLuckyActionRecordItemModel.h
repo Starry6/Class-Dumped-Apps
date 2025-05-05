@@ -1,0 +1,33 @@
+@interface BDUGLuckyActionRecordItemModel : BDUGLuckyJSONModel
+@property (nonatomic) q sourceAppId;
+@property (nonatomic) q sourceDeviceId;
+@property (nonatomic) q sourceUserId;
+@property (nonatomic) q targetAppId;
+@property (nonatomic) q targetDeviceId;
+@property (nonatomic) q targetUserId;
+@property (nonatomic) NSString domainId;
+@property (nonatomic) q actionTs;
+@property (nonatomic) q actionType;
+@property (nonatomic) NSString source;
+- (long long)actionTs;
+- (void)setActionTs:;
+- (void)setSourceDeviceId:;
+- (void)setSourceUserId:;
+- (void)setTargetDeviceId:;
+- (void)setTargetUserId:;
+- (long long)sourceDeviceId;
+- (long long)sourceUserId;
+- (long long)targetDeviceId;
+- (long long)targetUserId;
+- (long long)actionType;
+- (void)setActionType:;
+- (id)domainId;
+- (void).cxx_destruct;
+- (id)source;
+- (void)setSource:;
+- (long long)sourceAppId;
+- (void)setSourceAppId:;
+- (void)setDomainId:;
+- (long long)targetAppId;
+- (void)setTargetAppId:;
+@end

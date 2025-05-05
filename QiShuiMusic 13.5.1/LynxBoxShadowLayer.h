@@ -1,0 +1,32 @@
+@interface LynxBoxShadowLayer : CALayer
+@property (nonatomic) UIColor customShadowColor;
+@property (nonatomic) double customShadowBlur;
+@property (nonatomic) {CGSize=dd} customShadowOffset;
+@property (nonatomic) ^{CGPath=} maskPath;
+@property (nonatomic) ^{CGPath=} customShadowPath;
+@property (nonatomic) LynxUI ui;
+@property (nonatomic) BOOL inset;
+- (double)customShadowBlur;
+- (id)customShadowColor;
+- (id)customShadowOffset;
+- (id)customShadowPath;
+- (id)initWithUi:;
+- (void)onDraw;
+- (void)setCustomShadowBlur:;
+- (void)setCustomShadowColor:;
+- (void)setCustomShadowOffset:;
+- (void)setCustomShadowPath:;
+- (void)setMaskPath:;
+- (id)init;
+- (void)dealloc;
+- (void)display;
+- (void)setImage:;
+- (void).cxx_destruct;
+- (id)ui;
+- (void)invalidate;
+- (id)maskPath;
+- (BOOL)inset;
+- (void)setInset:;
+- (void)setUi:;
++ (void)doRender:withShadowColor:andBlurRadius:andOffset:andPath:andMaskPath:isInset:;
+@end

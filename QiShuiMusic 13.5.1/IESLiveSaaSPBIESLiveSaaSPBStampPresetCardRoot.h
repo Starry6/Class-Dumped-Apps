@@ -1,0 +1,2 @@
+@interface IESLiveSaaSPBIESLiveSaaSPBStampPresetCardRoot : GPBRootObject
+@end

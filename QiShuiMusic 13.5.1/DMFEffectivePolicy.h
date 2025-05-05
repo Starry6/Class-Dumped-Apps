@@ -1,0 +1,33 @@
+@interface DMFEffectivePolicy : NSObject
+@property (nonatomic) NSDictionary currentPoliciesByIdentifier;
+@property (nonatomic) NSDictionary prioritiesByIdentifier;
+@property (nonatomic) q defaultPolicy;
+@property (nonatomic) Q defaultPriority;
+@property (nonatomic) NSString type;
+@property (nonatomic) BOOL downtimeEnforced;
+@property (nonatomic) NSSet excludedIdentifiers;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (long long)defaultPolicy;
+- (void)encodeWithCoder:;
+- (id)type;
+- (void).cxx_destruct;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (unsigned long long)defaultPriority;
+- (id)initWithType:defaultPolicy:currentPoliciesByIdentifier:defaultPriority:prioritiesByIdentifier:excludedIdentifiers:;
+- (BOOL)downtimeEnforced;
+- (long long)policyForIdentifier:excludableIdentifiers:;
+- (long long)priorityForIdentifier:;
+- (id)_valueForMatchingHostName:inRegisteredHostNames:;
+- (id)excludedIdentifiers;
+- (id)currentPoliciesByIdentifier;
+- (id)prioritiesByIdentifier;
+- (long long)policyForHostName:;
+- (unsigned long long)priorityForHostName:;
++ (BOOL)supportsSecureCoding;
++ (id)unblockableCategoryIdentifiers;
++ (id)downtimeCategoryIdentifiers;
++ (id)systemCategoryIdentifiers;
++ (id)unblockableBundleIdentifiers;
+@end

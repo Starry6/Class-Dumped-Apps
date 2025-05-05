@@ -1,0 +1,35 @@
+@interface CalSpotlightPendingSearch : NSObject
+@property (nonatomic) @? completionHandler;
+@property (nonatomic) NSMutableOrderedSet searchableItemIdentifiers;
+@property (nonatomic) NSMutableOrderedSet searchableItems;
+@property (nonatomic) MDSearchQuery query;
+@property (nonatomic) NSString clientBundleID;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)cancel;
+- (void)setQuery:;
+- (void)setCompletionHandler:;
+- (id)query;
+- (id)searchableItems;
+- (void)setClientBundleID:;
+- (id)clientBundleID;
+- (void).cxx_destruct;
+- (id)completionHandler;
+- (void)searchQuery:didReturnItems:;
+- (void)searchQuery:statusChanged:;
+- (void)searchQuery:didFailWithError:;
+- (id)initWithString:clientBundleID:completionHandler:;
+- (void)_startSearchWithQuery:;
+- (void)_searchEnded;
+- (void)searchWithString:;
+- (id)searchableItemIdentifiers;
+- (void)setSearchableItemIdentifiers:;
+- (void)setSearchableItems:;
++ (id)_queue;
++ (id)_pendingSearches;
++ (id)_createSearchQueryWithPredicate:options:;
++ (id)_resultForSearchableItem:;
++ (id)_resultsForSearchableItems:;
+@end

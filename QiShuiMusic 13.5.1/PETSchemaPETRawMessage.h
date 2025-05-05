@@ -1,0 +1,34 @@
+@interface PETSchemaPETRawMessage : SISchemaInstrumentationMessage
+@property (nonatomic) I type_id;
+@property (nonatomic) BOOL hasType_id;
+@property (nonatomic) NSData raw_bytes;
+@property (nonatomic) BOOL hasRaw_bytes;
+@property (nonatomic) NSString name;
+@property (nonatomic) BOOL hasName;
+@property (nonatomic) NSData jsonData;
+- (void)setName:;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (BOOL)hasName;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)name;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)setHasName:;
+- (void)deleteName;
+- (void)setType_id:;
+- (BOOL)hasType_id;
+- (void)setHasType_id:;
+- (void)deleteType_id;
+- (BOOL)hasRaw_bytes;
+- (void)deleteRaw_bytes;
+- (unsigned int)type_id;
+- (id)raw_bytes;
+- (void)setRaw_bytes:;
+- (void)setHasRaw_bytes:;
+@end

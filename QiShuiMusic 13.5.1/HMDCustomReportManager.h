@@ -1,0 +1,33 @@
+@interface HMDCustomReportManager : NSObject
+@property (nonatomic) Q thresholdSize;
+@property (nonatomic) Q uploadIntervalSec;
+@property (nonatomic) q customReportMode;
+@property (nonatomic) NSMutableArray cachedCustomConfigs;
+@property (nonatomic) HMDCustomReportConfig currentConfig;
+@property (nonatomic) HMDHeimdallrConfig heimdallrConfig;
+- (void)cacheOneConfig:;
+- (id)heimdallrConfig;
+- (id)cachedCustomConfigs;
+- (long long)customReportMode;
+- (long long)getReportIntervalOfSetting;
+- (void)removeAllConfigs;
+- (void)removeOneConfigWithMode:;
+- (void)setCachedCustomConfigs:;
+- (void)setCustomReportMode:;
+- (void)setHeimdallrConfig:;
+- (void)setThresholdSize:;
+- (void)setUploadIntervalSec:;
+- (void)startNormalUpload;
+- (void)startWithConfig:;
+- (void)stopWithCustomMode:;
+- (void)switchCurrentReportMode;
+- (unsigned long long)thresholdSize;
+- (void)triggerReport;
+- (void)updateConfig:;
+- (unsigned long long)uploadIntervalSec;
+- (id)init;
+- (id)currentConfig;
+- (void).cxx_destruct;
+- (void)setCurrentConfig:;
++ (id)defaultManager;
+@end

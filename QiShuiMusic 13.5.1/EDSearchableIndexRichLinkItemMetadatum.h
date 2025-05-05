@@ -1,0 +1,38 @@
+@interface EDSearchableIndexRichLinkItemMetadatum : NSObject
+@property (nonatomic) NSString domainIdentifier;
+@property (nonatomic) NSString accountIdentifier;
+@property (nonatomic) NSArray mailboxIdentifiers;
+@property (nonatomic) NSString senderAddress;
+@property (nonatomic) NSArray recipientAddresses;
+@property (nonatomic) NSDate dateReceived;
+@property (nonatomic) NSDate dateSent;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString richLinkID;
+@property (nonatomic) NSString url;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)domainIdentifier;
+- (id)url;
+- (void)setAccountIdentifier:;
+- (id)accountIdentifier;
+- (void)setDateReceived:;
+- (void)setTitle:;
+- (void)setUrl:;
+- (id)initWithBuilder:;
+- (id)title;
+- (void).cxx_destruct;
+- (id)dateReceived;
+- (void)setRecipientAddresses:;
+- (void)setDomainIdentifier:;
+- (id)dateSent;
+- (void)setDateSent:;
+- (void)setMailboxIdentifiers:;
+- (id)mailboxIdentifiers;
+- (id)recipientAddresses;
+- (void)setRichLinkID:;
+- (id)richLinkID;
+- (id)senderAddress;
+- (void)setSenderAddress:;
+@end

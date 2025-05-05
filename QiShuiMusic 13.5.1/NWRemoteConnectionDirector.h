@@ -1,0 +1,36 @@
+@interface NWRemoteConnectionDirector : NSObject
+@property (nonatomic) NSObject<NWRemoteConnectionDirectorDelegate> delegate;
+@property (nonatomic) ^{nw_protocol=[16C]^{nw_protocol_identifier}^{nw_protocol_callbacks}^{nw_protocol}^v^{nw_protocol}^v} directorProtocol;
+@property (nonatomic) ^{nw_protocol=[16C]^{nw_protocol_identifier}^{nw_protocol_callbacks}^{nw_protocol}^v^{nw_protocol}^v} defaultOutputHandler;
+@property (nonatomic) ^{nw_hash_table=} protocolHashTable;
+@property (nonatomic) NSMutableArray writeRequests;
+@property (nonatomic) ^{nw_protocol=[16C]^{nw_protocol_identifier}^{nw_protocol_callbacks}^{nw_protocol}^v^{nw_protocol}^v} protocol;
+@property (nonatomic) Q maximumDataChunkSize;
+- (id)protocol;
+- (void)dealloc;
+- (void)setDelegate:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)initWithDelegate:;
+- (void)setDefaultOutputProtocolHandler:;
+- (id)writeRequests;
+- (void)setWriteRequests:;
+- (id)defaultOutputHandler;
+- (void)setDefaultOutputHandler:;
+- (id)createOpenConnectionMessageForClientID:endpoint:parameters:;
+- (id)createCloseConnectionMessageForClientID:;
+- (id)createStartBrowseMessageForClientID:descriptor:parameters:;
+- (id)createStopBrowseMessageForClientID:;
+- (id)createSendDataMessageForClientID:data:receiveWindow:;
+- (BOOL)receiveRemoteReply:;
+- (unsigned long long)dataModeForFlowID:;
+- (id)outputHandlerForFlowID:;
+- (void)setOutputProtocolHandler:forFlowID:dataMode:;
+- (void)receiveData:forClient:;
+- (unsigned long long)maximumDataChunkSize;
+- (void)setMaximumDataChunkSize:;
+- (id)directorProtocol;
+- (void)setDirectorProtocol:;
+- (id)protocolHashTable;
+- (void)setProtocolHashTable:;
+@end

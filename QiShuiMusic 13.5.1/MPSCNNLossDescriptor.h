@@ -1,0 +1,30 @@
+@interface MPSCNNLossDescriptor : NSObject
+@property (nonatomic) I lossType;
+@property (nonatomic) NSInteger reductionType;
+@property (nonatomic) BOOL reduceAcrossBatch;
+@property (nonatomic) float weight;
+@property (nonatomic) float labelSmoothing;
+@property (nonatomic) Q numberOfClasses;
+@property (nonatomic) float epsilon;
+@property (nonatomic) float delta;
+- (float)delta;
+- (void)dealloc;
+- (float)weight;
+- (void)setWeight:;
+- (void)setEpsilon:;
+- (id)debugDescription;
+- (float)epsilon;
+- (void)setDelta:;
+- (id)copyWithZone:;
+- (unsigned long long)numberOfClasses;
+- (void)setNumberOfClasses:;
+- (unsigned int)lossType;
+- (void)setLossType:;
+- (void)setLabelSmoothing:;
+- (void)setReduceAcrossBatch:;
+- (int)reductionType;
+- (float)labelSmoothing;
+- (BOOL)reduceAcrossBatch;
+- (void)setReductionType:;
++ (id)cnnLossDescriptorWithType:reductionType:;
+@end

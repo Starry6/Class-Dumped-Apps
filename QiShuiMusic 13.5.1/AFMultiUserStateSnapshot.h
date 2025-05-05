@@ -1,0 +1,35 @@
+@interface AFMultiUserStateSnapshot : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSNumber vtSatScore;
+@property (nonatomic) NSArray confidenceScores;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithSerializedBackingStore:;
+- (id)init;
+- (id)ad_shortDescription;
+- (id)buildDictionaryRepresentation;
+- (id)mutatedCopyWithMutator:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)initWithDictionaryRepresentation:;
+- (id)serializedBackingStore;
+- (id)_descriptionWithIndent:;
+- (id)initWithBuilder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)initWithVtSatScore:confidenceScores:;
+- (id)vtSatScore;
+- (id)confidenceScores;
+- (id)initWithVtSatScore:;
+- (id)initWithConfidenceScores:;
++ (id)newWithBuilder:;
++ (BOOL)supportsSecureCoding;
+@end

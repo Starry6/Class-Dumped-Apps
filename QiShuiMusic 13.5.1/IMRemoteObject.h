@@ -1,0 +1,34 @@
+@interface IMRemoteObject : NSObject
+@property (nonatomic) NSString portName;
+@property (nonatomic) NSString processName;
+@property (nonatomic) NSInteger pid;
+@property (nonatomic) NSObject<OS_xpc_object> connection;
+@property (nonatomic) BOOL isValid;
+- (void)setPortName:;
+- (void)_portDidBecomeInvalid;
+- (void)_systemShutdown:;
+- (id)portName;
+- (id)initWithConnection:protocol:;
+- (void)dealloc;
+- (id)methodSignatureForSelector:;
+- (unsigned long long)forwardXPCObject:messageContext:locked:;
+- (void)blockUntilSendQueueIsEmpty;
+- (id)processName;
+- (id)initWithConnection:protocol:alreadyConfigured:;
+- (int)pid;
+- (BOOL)isValid;
+- (id)connection;
+- (void)setProcessName:;
+- (id)initWithConnection:protocol:alreadyConfigured:forceSecureCoding:;
+- (id)description;
+- (id)_initWithConnection:portName:protocol:alreadyConfigured:forceSecureCoding:;
+- (void)forwardInvocation:;
+- (id)_queue;
+- (void)invalidate;
+- (void)setPid:;
+- (void)_cleanupMachBitsCanPost:locked:;
+- (id)initWithPortName:protocol:;
++ (void)_registerIMRemoteObject:;
++ (void)_unregisterIMRemoteObject:;
++ (id)_remoteObjects;
+@end

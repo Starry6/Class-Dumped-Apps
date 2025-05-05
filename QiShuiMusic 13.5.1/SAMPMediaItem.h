@@ -1,0 +1,32 @@
+@interface SAMPMediaItem : SAMPMediaEntity
+@property (nonatomic) NSString album;
+@property (nonatomic) NSString artist;
+@property (nonatomic) SACalendar datePurchased;
+@property (nonatomic) NSString genre;
+@property (nonatomic) NSNumber perceivableStartTimeInSeconds;
+@property (nonatomic) SAMPReleaseInfo releaseInfo;
+@property (nonatomic) NSString sortAlbum;
+@property (nonatomic) NSString sortArtist;
+- (id)artist;
+- (void)setReleaseInfo:;
+- (id)releaseInfo;
+- (void)setAlbum:;
+- (void)setArtist:;
+- (id)genre;
+- (id)groupIdentifier;
+- (id)album;
+- (id)encodedClassName;
+- (void)setGenre:;
+- (id)datePurchased;
+- (void)setDatePurchased:;
+- (id)sortArtist;
+- (void)setSortArtist:;
+- (id)perceivableStartTimeInSeconds;
+- (void)setPerceivableStartTimeInSeconds:;
+- (id)sortAlbum;
+- (void)setSortAlbum:;
++ (id)_af_mediaItemWithMRContentItemRef:;
++ (id)_af_mediaItemWithMRContentItem:;
++ (id)mediaItem;
++ (id)mediaItemWithDictionary:context:;
+@end

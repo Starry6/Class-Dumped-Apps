@@ -1,0 +1,30 @@
+@interface NEProvider : NSObject
+@property (nonatomic) NWPath defaultPath;
+@property (nonatomic) NEExtensionProviderContext context;
+@property (nonatomic) NSString appName;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (void)dealloc;
+- (id)context;
+- (void)wake;
+- (void)setAppName:;
+- (id)appName;
+- (id)defaultPath;
+- (void)sleepWithCompletionHandler:;
+- (void).cxx_destruct;
+- (void)setContext:;
+- (void)beginRequestWithExtensionContext:;
+- (void)observerHelperHandler:ofObject:change:context:;
+- (id)initAllowUnentitled:;
+- (void)setdefaultPathObserver:;
+- (id)createTCPConnectionToEndpoint:enableTLS:TLSParameters:delegate:;
+- (id)createUDPSessionToEndpoint:fromEndpoint:;
+- (void)displayMessage:completionHandler:;
+- (void)setDefaultPath:;
++ (void)startSystemExtensionMode;
++ (BOOL)isRunningInProvider;
++ (BOOL)isNEProviderBundle:forExtensionPoint:;
+@end

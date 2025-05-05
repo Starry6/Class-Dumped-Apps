@@ -1,0 +1,37 @@
+@interface FLEXTabsViewController : FLEXTableViewController
+@property (nonatomic) NSArray openTabs;
+@property (nonatomic) NSArray tabSnapshots;
+@property (nonatomic) q activeIndex;
+@property (nonatomic) BOOL presentNewActiveTabOnDismiss;
+@property (nonatomic) FLEXExplorerViewController corePresenter;
+- (id)init;
+- (void)viewDidLoad;
+- (void)viewWillAppear:;
+- (void)viewDidAppear:;
+- (BOOL)reloadData:;
+- (void)reloadActiveTabRowIfChanged:;
+- (void)setupDefaultBarItems;
+- (void)setupEditingBarItems;
+- (id)corePresenter;
+- (void)dismissAnimated;
+- (void)toggleEditing;
+- (void)addTabButtonPressed:;
+- (void)addTabAndDismiss:;
+- (void)closeAllButtonPressed:;
+- (void)closeAll;
+- (long long)tableView:numberOfRowsInSection:;
+- (id)tableView:cellForRowAtIndexPath:;
+- (void)tableView:didSelectRowAtIndexPath:;
+- (void)tableView:didDeselectRowAtIndexPath:;
+- (BOOL)tableView:canEditRowAtIndexPath:;
+- (void)tableView:commitEditingStyle:forRowAtIndexPath:;
+- (id)openTabs;
+- (void)setOpenTabs:;
+- (id)tabSnapshots;
+- (void)setTabSnapshots:;
+- (long long)activeIndex;
+- (void)setActiveIndex:;
+- (BOOL)presentNewActiveTabOnDismiss;
+- (void)setPresentNewActiveTabOnDismiss:;
+- (void).cxx_destruct;
+@end

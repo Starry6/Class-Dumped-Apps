@@ -1,0 +1,35 @@
+@interface CNContactViewExtensionContext : NSExtensionContext
+@property (nonatomic) BOOL asyncShouldPerformResponse;
+@property (nonatomic) NSObject<OS_dispatch_semaphore> asyncShouldPerformSemaphore;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)host;
+- (void).cxx_destruct;
+- (void)viewDidAppear;
+- (BOOL)shouldPerformDefaultActionForContact:propertyKey:propertyIdentifier:;
+- (void)updateEditing:doneButtonEnabled:doneButtonText:;
+- (void)didCompleteWithContact:;
+- (void)didDeleteContact:;
+- (void)isPresentingFullscreen:;
+- (void)isPresentingEditingController:;
+- (void)didChangePreferredContentSize:;
+- (void)didExecuteClearRecentsDataAction;
+- (void)didExecuteDeleteFromDowntimeWhitelistAction;
+- (void)presentCancelConfirmationAlert;
+- (void)setupWithOptions:readyBlock:;
+- (void)didChangeToEditMode:;
+- (void)didChangeToShowTitle:;
+- (void)editCancel;
+- (void)toggleEditing;
+- (void)performConfirmedCancel;
+- (void)asyncShouldPerformDefaultActionResponse:;
+- (void)asyncShouldPerformDefaultActionForContact:propertyKey:propertyIdentifier:;
+- (BOOL)asyncShouldPerformResponse;
+- (void)setAsyncShouldPerformResponse:;
+- (id)asyncShouldPerformSemaphore;
+- (void)setAsyncShouldPerformSemaphore:;
++ (id)_extensionAuxiliaryHostProtocol;
++ (id)_extensionAuxiliaryVendorProtocol;
+@end

@@ -1,0 +1,31 @@
+@interface CSJDynamicSDKAnalysisRenderArea : NSObject
+@property (nonatomic) double x;
+@property (nonatomic) double y;
+@property (nonatomic) double width;
+@property (nonatomic) double height;
+@property (nonatomic) NSString treeId;
+@property (nonatomic) CSJDynamicLayoutUnitModel brick;
+@property (nonatomic) NSMutableArray children;
+@property (nonatomic) CSJDynamicSDKAnalysisRenderArea parent;
+@property (nonatomic) double remainWidth;
+- (void)setRemainWidth:;
+- (double)remainWidth;
+- (void)setTreeId:;
+- (id)treeId;
+- (void)setParent:;
+- (void)setX:;
+- (void)setY:;
+- (double)y;
+- (void)updateResult;
+- (void)setWidth:;
+- (id)children;
+- (double)x;
+- (double)height;
+- (void)setChildren:;
+- (double)width;
+- (void)setHeight:;
+- (void).cxx_destruct;
+- (id)parent;
+- (void)setBrick:;
+- (id)brick;
+@end

@@ -1,0 +1,2 @@
+@interface FigVideoLayerInternal : NSObject
+@end

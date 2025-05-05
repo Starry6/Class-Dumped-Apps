@@ -1,0 +1,35 @@
+@interface HTSAppLifeCycleCenter : NSObject
+@property (nonatomic) NSMutableArray lifeCycleObservers;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)onHandleAppContinueUserActivity;
+- (id)_parseModulesInMachO:;
+- (id)_snapshotModules;
+- (void)bundleDidActived:machoHeader:fromBundle:enterTag:cost:;
+- (void)bundleLoader:didLoadBundle:;
+- (void)bundleLoader:willUnLoadName:;
+- (id)lifeCycleObservers;
+- (void)onAppDidBecomeActive;
+- (void)onAppDidEnterBackground;
+- (void)onAppDidFailToRegisterForRemoteNotifications;
+- (void)onAppDidReceiveLocalNotification;
+- (void)onAppDidReceiveMemoryWarning;
+- (void)onAppDidReceiveRemoteNotification;
+- (void)onAppDidRegisterDeviceToken;
+- (void)onAppDidRegisterNotificationSetting;
+- (void)onAppHandleNotification;
+- (void)onAppPerformBackgroundFetch;
+- (void)onAppWillEnterForeground;
+- (void)onAppWillResignActive;
+- (void)onAppWillTerminate;
+- (BOOL)onHandleAppOpenUrl;
+- (void)onHandleAppShortcutAction;
+- (void)onHandleEventsForBackgroundURLSession;
+- (void)resortModules;
+- (void)setLifeCycleObservers:;
+- (id)initPrivate;
+- (void).cxx_destruct;
++ (id)sharedCenter;
+@end

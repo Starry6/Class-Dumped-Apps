@@ -1,0 +1,2 @@
+@interface FigCaptureAudioDataSinkPipeline : FigCaptureRemoteQueueSinkPipeline
+@end

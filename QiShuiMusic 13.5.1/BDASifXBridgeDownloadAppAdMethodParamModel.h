@@ -1,0 +1,34 @@
+@interface BDASifXBridgeDownloadAppAdMethodParamModel : BDXBridgeModel
+@property (nonatomic) NSString open_url;
+@property (nonatomic) NSString ad_id;
+@property (nonatomic) NSNumber creative_id;
+@property (nonatomic) NSString log_extra;
+@property (nonatomic) NSString download_url;
+@property (nonatomic) NSString apple_id;
+@property (nonatomic) NSString app_id;
+@property (nonatomic) NSString skan_parameters;
+@property (nonatomic) NSString web_url;
+@property (nonatomic) NSNumber download_scene;
+- (void)setCreative_id:;
+- (id)skan_parameters;
+- (id)web_url;
+- (id)ad_id;
+- (id)creative_id;
+- (id)download_scene;
+- (id)download_url;
+- (id)log_extra;
+- (id)open_url;
+- (void)setAd_id:;
+- (void)setApple_id:;
+- (void)setDownload_scene:;
+- (void)setDownload_url:;
+- (void)setLog_extra:;
+- (void)setOpen_url:;
+- (void)setSkan_parameters:;
+- (void)setWeb_url:;
+- (void).cxx_destruct;
+- (id)apple_id;
+- (id)app_id;
+- (void)setApp_id:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

@@ -1,0 +1,36 @@
+@interface PKStrokeProvider : NSObject
+@property (nonatomic) PKDrawing drawing;
+@property (nonatomic) <CHStrokeProviderVersion> strokeProviderVersion;
+@property (nonatomic) NSArray orderedStrokes;
+@property (nonatomic) q groupingPriority;
+@property (nonatomic) {CGSize=dd} drawingCanvasSize;
+@property (nonatomic) NSOrderedSet visibleStrokeEncodedIdentifiers;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void).cxx_destruct;
+- (id)description;
+- (id)slices;
+- (id)drawing;
+- (id)initWithDrawing:;
+- (id)strokeForIdentifier:;
+- (long long)compareOrderOfStrokeWithIdentifier:toStrokeWithIdentifier:;
+- (unsigned long long)compareStyleOfStrokeWithIdentifier:toStrokeWithIdentifier:;
+- (id)encodedStrokeIdentifier:;
+- (id)strokeIdentifierFromData:;
+- (id)strokeProviderVersion;
+- (id)orderedStrokes;
+- (long long)groupingPriority;
+- (BOOL)isStroke:versionOfStrokeWithIdentifier:;
+- (long long)compareOrderOfStroke:toStroke:;
+- (id)drawingCanvasSize;
+- (id)visibleStrokeEncodedIdentifiers;
+- (id)initWithDrawing:visibleOnscreenStrokes:shouldProcessVisibleStrokes:;
+- (BOOL)enumerateChangesSinceVersion:usingBlock:;
+- (void)_cacheStrokeIdentifier:withEncodedStrokeIdentifier:;
+- (id)_cachedStrokeIdentifier:;
+- (id)sliceForIdentifier:;
++ (id)slicesForStrokes:;
++ (id)_identifiersForStrokes:;
+@end

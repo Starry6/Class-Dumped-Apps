@@ -1,0 +1,33 @@
+@interface PLMemoryJournalEntryPayload : PLJournalEntryPayload
+@property (nonatomic) NSString keyAssetUUID;
+@property (nonatomic) NSSet curatedAssetUUIDs;
+@property (nonatomic) NSSet extendedCuratedAssetUUIDs;
+@property (nonatomic) NSSet movieCuratedAssetUUIDs;
+@property (nonatomic) NSSet userCuratedAssetUUIDs;
+@property (nonatomic) NSSet representativeAssetUUIDs;
+@property (nonatomic) NSOrderedSet customUserAssetUUIDs;
+- (BOOL)updatePayloadAttributes:andNilAttributes:withManagedObject:forPayloadProperty:;
+- (void)appendAttributeKey:value:toDescriptionBuilder:;
+- (id)payloadValueFromAttributes:forPayloadProperty:;
+- (BOOL)comparePayloadValue:toObjectDictionaryValue:forPayloadProperty:;
+- (id)insertMemoryFromDataInManagedObjectContext:;
+- (BOOL)updateAssetsInMemory:includePendingAssetChanges:;
+- (BOOL)hasAllAssetsAvailableInManagedObjectContext:includePendingAssetChanges:;
+- (id)keyAssetUUID;
+- (id)representativeAssetUUIDs;
+- (id)curatedAssetUUIDs;
+- (id)extendedCuratedAssetUUIDs;
+- (id)movieCuratedAssetUUIDs;
+- (id)userCuratedAssetUUIDs;
+- (id)customUserAssetUUIDs;
+- (void)applyPayloadProperty:toManagedObject:key:payloadAttributesToUpdate:;
+- (id)initWithUserFeedback:changedKeys:;
++ (unsigned int)payloadVersion;
++ (id)modelPropertiesDescription;
++ (id)nonPersistedModelPropertiesDescription;
++ (id)modelProperties;
++ (id)persistedPropertyNamesForEntityNames;
++ (id)payloadClassID;
++ (unsigned int)minimumSnapshotPayloadVersion;
++ (BOOL)isValidForPersistenceWithObjectDictionary:additionalEntityName:;
+@end

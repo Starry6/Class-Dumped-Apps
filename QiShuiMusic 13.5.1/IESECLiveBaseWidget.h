@@ -1,0 +1,38 @@
+@interface IESECLiveBaseWidget : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) <IESECLiveRoom> room;
+@property (nonatomic) IESECLiveRoomContext<IESECLiveRoomContext> roomContext;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setRoomContext:;
+- (void)widgetDidAppear;
+- (void)beginHandleAfterEnterRoom;
+- (void)didHideShopCart:;
+- (void)didShowShopCart:;
+- (void)endHandleAfterEnterRoom;
+- (id)getCurrentLiveRoomContext;
+- (id)initWithRoom:roomContext:;
+- (BOOL)isCurrentLandscape;
+- (id)liveRoomPopupContainerView;
+- (id)liveRoomRootViewController;
+- (id)lowerVersionAdapter;
+- (void)widgetDidDisappear;
+- (void)widgetMount;
+- (void)widgetOrientationDidChange:;
+- (void)widgetOrientationWillChange:;
+- (void)widgetUnmount;
+- (void)widgetWillAppear;
+- (void)widgetWillDisappear;
+- (BOOL)respondsToSelector:;
+- (void).cxx_destruct;
+- (id)forwardingTargetForSelector:;
+- (id)room;
+- (void)setRoom:;
+- (id)roomContext;
++ (id)widgetWithRoom:roomContext:;
+@end

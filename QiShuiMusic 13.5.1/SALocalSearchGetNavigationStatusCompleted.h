@@ -1,0 +1,34 @@
+@interface SALocalSearchGetNavigationStatusCompleted : SABaseCommand
+@property (nonatomic) SALocalSearchMapItem destination;
+@property (nonatomic) SALocalSearchAceNavigationEta nextManeuverEta;
+@property (nonatomic) SALocalSearchAceNavigationEta overallEta;
+@property (nonatomic) SALocalSearchMapItemList predictedDestinations;
+@property (nonatomic) SALocalSearchRoute route;
+@property (nonatomic) NSString trafficIncidentAlertType;
+@property (nonatomic) NSString volume;
+@property (nonatomic) NSString aceId;
+@property (nonatomic) NSString refId;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setDestination:;
+- (id)volume;
+- (id)groupIdentifier;
+- (void)setRoute:;
+- (void)setVolume:;
+- (id)route;
+- (id)destination;
+- (BOOL)requiresResponse;
+- (id)encodedClassName;
+- (id)predictedDestinations;
+- (void)setPredictedDestinations:;
+- (id)nextManeuverEta;
+- (void)setNextManeuverEta:;
+- (id)overallEta;
+- (void)setOverallEta:;
+- (id)trafficIncidentAlertType;
+- (void)setTrafficIncidentAlertType:;
++ (id)getNavigationStatusCompleted;
++ (id)getNavigationStatusCompletedWithDictionary:context:;
+@end

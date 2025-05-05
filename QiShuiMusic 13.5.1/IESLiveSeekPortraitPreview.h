@@ -1,0 +1,34 @@
+@interface IESLiveSeekPortraitPreview : UIView
+@property (nonatomic) UIView container;
+@property (nonatomic) UIView<IESLiveSeekProgressTextProtocal> progressText;
+@property (nonatomic) UILabel title;
+@property (nonatomic) UIImageView hotTagView;
+@property (nonatomic) UIView currentProgress;
+@property (nonatomic) UIView progressBg;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)updateHighlightTitle:hasHotTag:;
+- (void)disablePreviewProgress;
+- (id)hotTagView;
+- (id)initForNormalLive;
+- (id)progressBg;
+- (id)progressText;
+- (void)setHotTagView:;
+- (void)setProgressBg:;
+- (void)switchShowStyle:;
+- (void)updateOrientation:;
+- (void)updatePreViewProgress:progress:duration:hasProgressBar:;
+- (void)setUp;
+- (void)setContainer:;
+- (id)init;
+- (id)container;
+- (void)setTitle:;
+- (id)title;
+- (void).cxx_destruct;
+- (id)currentProgress;
+- (void)updateProgress:;
+- (void)setProgressText:;
+- (void)setCurrentProgress:;
+@end

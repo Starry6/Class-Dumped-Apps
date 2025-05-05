@@ -1,0 +1,35 @@
+@interface BDXCategoryNumberView : BDXCategoryTitleView
+@property (nonatomic) NSArray counts;
+@property (nonatomic) @? numberStringFormatterBlock;
+@property (nonatomic) UIFont numberLabelFont;
+@property (nonatomic) UIColor numberBackgroundColor;
+@property (nonatomic) UIColor numberTitleColor;
+@property (nonatomic) double numberLabelWidthIncrement;
+@property (nonatomic) double numberLabelHeight;
+@property (nonatomic) {CGPoint=dd} numberLabelOffset;
+@property (nonatomic) BOOL shouldMakeRoundWhenSingleNumber;
+- (BOOL)shouldMakeRoundWhenSingleNumber;
+- (id)numberLabelFont;
+- (void)initializeData;
+- (id)numberBackgroundColor;
+- (double)numberLabelHeight;
+- (id)numberLabelOffset;
+- (double)numberLabelWidthIncrement;
+- (id)numberStringFormatterBlock;
+- (id)numberTitleColor;
+- (Class)preferredCellClass;
+- (void)refreshCellModel:index:;
+- (void)refreshDataSource;
+- (void)setNumberBackgroundColor:;
+- (void)setNumberLabelFont:;
+- (void)setNumberLabelHeight:;
+- (void)setNumberLabelOffset:;
+- (void)setNumberLabelWidthIncrement:;
+- (void)setNumberStringFormatterBlock:;
+- (void)setNumberTitleColor:;
+- (void)setShouldMakeRoundWhenSingleNumber:;
+- (id)counts;
+- (void)dealloc;
+- (void)setCounts:;
+- (void).cxx_destruct;
+@end

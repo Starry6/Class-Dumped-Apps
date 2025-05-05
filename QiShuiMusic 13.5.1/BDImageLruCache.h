@@ -1,0 +1,36 @@
+@interface BDImageLruCache : NSObject
+@property (nonatomic) BOOL clearMemoryOnMemoryWarning;
+@property (nonatomic) BOOL clearMemoryWhenEnteringBackground;
+@property (nonatomic) BOOL shouldUseWeakMemoryCache;
+@property (nonatomic) BDImageWeakCache weakCache;
+@property (nonatomic) BDImageLinkedMap lruList;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)lruList;
+- (BOOL)clearMemoryOnMemoryWarning;
+- (BOOL)clearMemoryWhenEnteringBackground;
+- (void)commonInit:;
+- (void)setClearMemoryOnMemoryWarning:;
+- (void)setClearMemoryWhenEnteringBackground:;
+- (void)setLruList:;
+- (void)setShouldUseWeakMemoryCache:;
+- (void)setWeakCache:;
+- (void)setupLruListWithConfig:;
+- (BOOL)shouldUseWeakMemoryCache;
+- (BOOL)containsObjectForKey:;
+- (id)init;
+- (void)setObject:forKey:;
+- (void)dealloc;
+- (void)didEnterBackground:;
+- (void)setConfig:;
+- (id)initWithConfig:;
+- (void)didReceiveMemoryWarning:;
+- (void)removeAllObjects;
+- (id)weakCache;
+- (id)objectForKey:;
+- (void).cxx_destruct;
+- (void)removeObjectForKey:;
+- (void)setObject:forKey:cost:;
+@end

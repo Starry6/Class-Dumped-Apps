@@ -1,0 +1,32 @@
+@interface GEOPoint : PBCodable
+@property (nonatomic) BOOL hasOffsetM;
+@property (nonatomic) I offsetM;
+@property (nonatomic) BOOL hasElevationCm;
+@property (nonatomic) NSInteger elevationCm;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (unsigned int)offsetM;
+- (void)setOffsetM:;
+- (void)setHasOffsetM:;
+- (BOOL)hasOffsetM;
+- (int)elevationCm;
+- (void)setElevationCm:;
+- (void)setHasElevationCm:;
+- (BOOL)hasElevationCm;
++ (BOOL)isValid:;
+@end

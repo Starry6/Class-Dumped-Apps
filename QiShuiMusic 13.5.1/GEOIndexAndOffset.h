@@ -1,0 +1,32 @@
+@interface GEOIndexAndOffset : PBCodable
+@property (nonatomic) BOOL hasIndex;
+@property (nonatomic) I index;
+@property (nonatomic) BOOL hasOffset;
+@property (nonatomic) I offset;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (BOOL)hasOffset;
+- (id)unknownFields;
+- (void)setOffset:;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (unsigned int)offset;
+- (void)copyTo:;
+- (unsigned int)index;
+- (void)mergeFrom:;
+- (void)setIndex:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (void)setHasOffset:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setHasIndex:;
+- (BOOL)hasIndex;
++ (BOOL)isValid:;
+@end

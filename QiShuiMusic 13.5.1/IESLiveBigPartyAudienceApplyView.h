@@ -1,0 +1,32 @@
+@interface IESLiveBigPartyAudienceApplyView : UIView
+@property (nonatomic) UIButton containerView;
+@property (nonatomic) UIImageView iconImageView;
+@property (nonatomic) UILabel textLabel;
+@property (nonatomic) double scale;
+@property (nonatomic) q style;
+@property (nonatomic) <IESLiveBigPartyAudienceApplyViewDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)addCornerRadius;
+- (void)didClickApplyView;
+- (BOOL)roundStyle;
+- (void)updatePaidLinkMicText:;
+- (id)textLabel;
+- (void)layoutSubviews;
+- (void)setScale:;
+- (id)containerView;
+- (void)setContainerView:;
+- (void)setDelegate:;
+- (void)setStyle:;
+- (id)initWithFrame:style:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)iconImageView;
+- (double)scale;
+- (long long)style;
+- (void)setTextLabel:;
+- (void)setIconImageView:;
+- (void)setupViews;
+@end

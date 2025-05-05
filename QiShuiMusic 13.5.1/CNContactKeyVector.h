@@ -1,0 +1,38 @@
+@interface CNContactKeyVector : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)containsKey:;
+- (void)_cn_executeGetterForRepresentedKeys:;
+- (id)_cn_optionalKeys;
+- (id)initWithKeys:;
+- (id)keyVectorByAddingKeysFromKeyVector:;
+- (id)_cn_requiredKeys;
+- (id)_bitBuckets;
+- (id)_cn_ignorableKeys;
+- (id)keyVectorByRemovingKeys:;
+- (BOOL)isEqualToKeyVector:;
+- (id)initWithAllKeys;
+- (void)enumeratePropertiesUsingBlock:;
+- (id)keyVectorByRemovingKeysFromKeyVector:;
+- (BOOL)isSubsetOfKeyVector:;
+- (void)_checkStorageSize;
+- (BOOL)containsAllKeys;
+- (id)init;
+- (BOOL)intersectsKeyVector:;
+- (id)keyVectorByAddingKeys:;
+- (id)keyVectorByAddingKey:;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (id)description;
+- (id)mutableCopyWithZone:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
++ (BOOL)supportsSecureCoding;
++ (id)freezeIfClassIsImmutable:;
++ (id)keyVectorWithKey:;
++ (id)keyVectorWithAllKeys;
++ (id)keyVector;
++ (id)keyVectorWithKeys:;
+@end

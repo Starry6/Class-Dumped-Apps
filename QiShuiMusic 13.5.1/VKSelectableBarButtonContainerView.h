@@ -1,0 +1,31 @@
+@interface VKSelectableBarButtonContainerView : UIView
+@property (nonatomic) UIImage image;
+@property (nonatomic) UIButton button;
+@property (nonatomic) double padding;
+@property (nonatomic) double compactPadding;
+@property (nonatomic) double cornerRadiusRatio;
+@property (nonatomic) BOOL selected;
+@property (nonatomic) double width;
+- (BOOL)selected;
+- (id)init;
+- (id)intrinsicContentSize;
+- (void)layoutSubviews;
+- (void)setSelected:;
+- (void)setWidth:;
+- (void)setImage:;
+- (void)setPadding:;
+- (double)width;
+- (id)button;
+- (id)sizeThatFits:;
+- (void).cxx_destruct;
+- (void)didMoveToWindow;
+- (double)padding;
+- (void)updateForMiniBarState:;
+- (id)_buttonSize;
+- (void)setButton:;
+- (id)image;
+- (double)compactPadding;
+- (void)setCompactPadding:;
+- (double)cornerRadiusRatio;
+- (void)setCornerRadiusRatio:;
+@end

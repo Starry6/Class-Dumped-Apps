@@ -1,0 +1,2 @@
+@interface AVAssetReaderVideoCompositionOutputInternal : NSObject
+@end

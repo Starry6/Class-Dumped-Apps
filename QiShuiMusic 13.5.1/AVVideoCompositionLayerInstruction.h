@@ -1,0 +1,30 @@
+@interface AVVideoCompositionLayerInstruction : NSObject
+@property (nonatomic) NSInteger trackID;
+- (id)init;
+- (void)dealloc;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (int)trackID;
+- (id)mutableCopyWithZone:;
+- (void)setTrackID:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)_setTransformRamps:;
+- (void)_setOpacityRamps:;
+- (void)_setCropRectangleRamps:;
+- (void)_setTransformRampFromStartTransform:toEndTransform:timeRange:selector:;
+- (void)setTransform:atTime:;
+- (void)setTransformRampFromStartTransform:toEndTransform:timeRange:;
+- (BOOL)getTransformRampForTime:startTransform:endTransform:timeRange:;
+- (void)_setOpacityRampFromStartOpacity:toEndOpacity:timeRange:selector:;
+- (void)setOpacity:atTime:;
+- (void)setOpacityRampFromStartOpacity:toEndOpacity:timeRange:;
+- (BOOL)getOpacityRampForTime:startOpacity:endOpacity:timeRange:;
+- (void)_setCropRectangleRampFromStartCropRectangle:toEndCropRectangle:timeRange:selector:;
+- (void)setCropRectangle:atTime:;
+- (void)setCropRectangleRampFromStartCropRectangle:toEndCropRectangle:timeRange:;
+- (BOOL)getCropRectangleRampForTime:startCropRectangle:endCropRectangle:timeRange:;
+- (id)dictionaryRepresentationWithTimeRange:;
+- (void)_setValuesFromDictionary:timeRange:;
++ (BOOL)supportsSecureCoding;
+@end

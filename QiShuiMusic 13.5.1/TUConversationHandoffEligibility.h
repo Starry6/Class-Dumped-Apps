@@ -1,0 +1,32 @@
+@interface TUConversationHandoffEligibility : NSObject
+@property (nonatomic) BOOL eligible;
+@property (nonatomic) BOOL uplinkMuted;
+@property (nonatomic) BOOL sendingVideo;
+@property (nonatomic) NSUUID conversationGroupUUID;
+@property (nonatomic) TUConversationParticipantAssociation association;
+@property (nonatomic) NSString originatingDeviceType;
+@property (nonatomic) NSString localizedDeviceCategory;
+- (BOOL)isEligible;
+- (BOOL)isUplinkMuted;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)setUplinkMuted:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)association;
+- (id)originatingDeviceType;
+- (void)setAssociation:;
+- (BOOL)isSendingVideo;
+- (id)conversationGroupUUID;
+- (id)initWithHandoffEligibility:;
+- (id)localizedDeviceCategory;
+- (BOOL)isEqualToHandoffEligibility:;
+- (void)setEligible:;
+- (void)setSendingVideo:;
+- (void)setConversationGroupUUID:;
+- (void)setOriginatingDeviceType:;
++ (BOOL)supportsSecureCoding;
+@end

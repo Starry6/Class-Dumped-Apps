@@ -1,0 +1,36 @@
+@interface IESLiveIMBizDispatchConfig : NSObject
+@property (nonatomic) NSString bizIdentity;
+@property (nonatomic) BOOL needCache;
+@property (nonatomic) @? messageCacheType;
+@property (nonatomic) @? delayTypeDispatchTime;
+@property (nonatomic) double dispatchInterval;
+@property (nonatomic) q dispatchCount;
+@property (nonatomic) BOOL enableMessageReplay;
+@property (nonatomic) NSSet needReplayMessagesSet;
+@property (nonatomic) BOOL enableWRDS;
+@property (nonatomic) # dataSyncClass;
+@property (nonatomic) @? dataSyncModelCreateBlock;
+- (void)setBizIdentity:;
+- (id)bizIdentity;
+- (Class)dataSyncClass;
+- (id)dataSyncModelCreateBlock;
+- (id)delayTypeDispatchTime;
+- (long long)dispatchCount;
+- (double)dispatchInterval;
+- (BOOL)enableMessageReplay;
+- (BOOL)enableWRDS;
+- (id)messageCacheType;
+- (BOOL)needCache;
+- (id)needReplayMessagesSet;
+- (void)setDataSyncClass:;
+- (void)setDataSyncModelCreateBlock:;
+- (void)setDelayTypeDispatchTime:;
+- (void)setDispatchCount:;
+- (void)setDispatchInterval:;
+- (void)setEnableMessageReplay:;
+- (void)setEnableWRDS:;
+- (void)setMessageCacheType:;
+- (void)setNeedCache:;
+- (void)setNeedReplayMessagesSet:;
+- (void).cxx_destruct;
+@end

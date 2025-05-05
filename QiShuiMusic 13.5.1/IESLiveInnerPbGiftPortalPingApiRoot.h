@@ -1,0 +1,2 @@
+@interface IESLiveInnerPbGiftPortalPingApiRoot : GPBRootObject
+@end

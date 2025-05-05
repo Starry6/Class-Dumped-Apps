@@ -1,0 +1,33 @@
+@interface TSPKRelationObjectModel : NSObject
+@property (nonatomic) NSMutableArray apiEvents;
+@property (nonatomic) TSPKEventData latestActiveEvent;
+@property (nonatomic) TSPKEventData latestActiveStartEvent;
+@property (nonatomic) Q objectStatus;
+@property (nonatomic) double updateTimeStamp;
+@property (nonatomic) double reportTimeStamp;
+- (double)updateTimeStamp;
+- (double)reportTimeStamp;
+- (id)apiEvents;
+- (id)checkUnreleaseStartAtTime:condition:;
+- (id)getLatestOpenEventData;
+- (id)latestActiveEvent;
+- (id)latestActiveStartEvent;
+- (unsigned long long)objectStatus;
+- (void)removeLastStartBacktrace;
+- (BOOL)sameSinceLastReport;
+- (void)saveDeallocData:;
+- (void)saveEventData:;
+- (void)saveInfoData:;
+- (void)saveStartData:;
+- (void)saveStopData:;
+- (void)setApiEvents:;
+- (void)setLatestActiveEvent:;
+- (void)setLatestActiveStartEvent:;
+- (void)setObjectStatus:;
+- (void)setReportTimeStamp:;
+- (void)setUpdateTimeStamp:;
+- (id)snapshotAtTime:condition:;
+- (id)init;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+@end

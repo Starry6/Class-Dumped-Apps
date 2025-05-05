@@ -1,0 +1,32 @@
+@interface IESLiveSaaSLandscapeSettingFragment : IESLiveRoomComponent
+@property (nonatomic) HTSEventContext trackContext;
+@property (nonatomic) HTSLiveToolbarItem clearItem;
+@property (nonatomic) <HTSLiveEffectPlayerAction> effectPlayerAction;
+@property (nonatomic) <HTSLiveSaaSDiggAction> diggAction;
+@property (nonatomic) <IESLiveSaaSLayoutContainerProvider> containerProvider;
+@property (nonatomic) BOOL isNotUserBehavior;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)changeClearStatusTo:;
+- (id)clearItem;
+- (void)componentOrientationChanged:;
+- (id)diggAction;
+- (id)effectPlayerAction;
+- (void)fastChangeClearStatusTo:;
+- (void)handleClearSettingActions;
+- (BOOL)isNotUserBehavior;
+- (void)setClearItem:;
+- (void)setContainerProvider:;
+- (void)setDiggAction:;
+- (void)setEffectPlayerAction:;
+- (void)setIsNotUserBehavior:;
+- (BOOL)shouldUsePotraitLikeStyle;
+- (BOOL)shouldUseSideStyle;
+- (void)toggleClearSettings;
+- (id)containerProvider;
+- (void).cxx_destruct;
+- (BOOL)isClear;
++ (id)componentWithRoom:trackContext:componentContext:;
+@end

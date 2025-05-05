@@ -1,0 +1,36 @@
+@interface PHSmartAlbumChangeRequest : PHChangeRequest
+@property (nonatomic) PLQuery userQuery;
+@property (nonatomic) NSString title;
+@property (nonatomic) PHObjectPlaceholder placeholderForCreatedSmartAlbum;
+@property (nonatomic) I customSortKey;
+@property (nonatomic) BOOL customSortAscending;
+- (id)managedEntityName;
+- (void)setTitle:;
+- (id)title;
+- (void).cxx_destruct;
+- (void)setUserQuery:;
+- (id)description;
+- (id)userQuery;
+- (id)initWithUUID:objectID:;
+- (void)encodeToXPCDict:;
+- (id)initWithXPCDict:request:clientAuthorization:;
+- (BOOL)allowMutationToManagedObject:propertyKey:error:;
+- (BOOL)applyMutationsToManagedObject:photoLibrary:error:;
+- (id)initForNewObject;
+- (BOOL)validateInsertIntoPhotoLibrary:error:;
+- (id)createManagedObjectForInsertIntoPhotoLibrary:error:;
+- (unsigned int)customSortKey;
+- (void)setCustomSortKey:;
+- (BOOL)customSortAscending;
+- (void)setCustomSortAscending:;
+- (id)placeholderForCreatedSmartAlbum;
++ (id)_changeRequestForSmartAlbum:userQuery:;
++ (id)changeRequestForSmartAlbum:;
++ (id)creationRequestForSmartAlbumWithTitle:userQuery:;
++ (id)creationRequestForSmartAlbumCopyFromSmartAlbum:;
++ (id)validateSmartAlbumTitle:error:;
++ (void)deleteSmartAlbumsFromAssetCollection:;
++ (void)expungeSmartAlbumsFromAssetCollection:;
++ (void)undeleteSmartAlbumsFromAssetCollection:;
++ (void)_deleteSmartAlbums:withOperation:topLevelSelector:;
+@end

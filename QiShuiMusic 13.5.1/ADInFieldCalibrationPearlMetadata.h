@@ -1,0 +1,2 @@
+@interface ADInFieldCalibrationPearlMetadata : ADInFieldCalibrationMetadata
+@end

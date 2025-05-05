@@ -1,0 +1,33 @@
+@interface Curve : NSObject
+@property (nonatomic) @? function;
+@property (nonatomic) @? inverse;
+@property (nonatomic) double domainMin;
+@property (nonatomic) double domainMax;
+@property (nonatomic) double rangeMin;
+@property (nonatomic) double rangeMax;
+- (id)init;
+- (id)function;
+- (void)setFunction:;
+- (id)inverse;
+- (void).cxx_destruct;
+- (double)rangeMin;
+- (double)rangeMax;
+- (id)initWithGamma:;
+- (id)initWithInverseOf:;
+- (id)initWith:of:;
+- (id)initWithBlock:andInverse:;
+- (id)initWithBlock:domainMin:domainMax:;
+- (id)initWithCount:domainMin:domainMax:values:;
+- (id)initWithCount:xvalues:yvalues:;
+- (void)setInverse:;
+- (double)domainMin;
+- (double)domainMax;
++ (id)curve;
++ (id)curveWithGamma:;
++ (id)curveWithInverseOf:;
++ (id)curveWith:of:;
++ (id)curveWithBlock:andInverse:;
++ (id)curveWithBlock:domainMin:domainMax:;
++ (id)curveWithCount:domainMin:domainMax:values:;
++ (id)curveWithCount:xvalues:yvalues:;
+@end

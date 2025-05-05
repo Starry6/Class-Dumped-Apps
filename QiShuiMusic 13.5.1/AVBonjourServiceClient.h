@@ -1,0 +1,35 @@
+@interface AVBonjourServiceClient : NSObject
+@property (nonatomic) NSNetServiceBrowser netServiceBrowser;
+@property (nonatomic) ^v airplayDeviceRef;
+@property (nonatomic) NSString serviceType;
+@property (nonatomic) <AVBonjourServiceClientDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)dealloc;
+- (void)netServiceBrowser:didFindService:moreComing:;
+- (id)serviceType;
+- (void)netServiceBrowser:didRemoveService:moreComing:;
+- (void)setDelegate:;
+- (void)beginDiscovery;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)description;
+- (void)netServiceDidStop:;
+- (void)netServiceDidResolveAddress:;
+- (void)netService:didNotResolve:;
+- (void)netServiceWillResolve:;
+- (void)netServiceBrowser:didNotSearch:;
+- (void)netService:didUpdateTXTRecordData:;
+- (void)endDiscovery;
+- (id)initWithNetServiceType:;
+- (void)setAirplayDeviceRef:;
+- (void)_updatedAirPlayPairedDeviceAsync;
+- (BOOL)_isServiceForCurrentAirPlayDevice:;
+- (id)identifierForNetService:;
+- (id)airTransportSenderForNetService:;
+- (id)netServiceBrowser;
+- (id)airplayDeviceRef;
++ (id)dictionaryFromTXTRecordData:;
+@end

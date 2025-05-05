@@ -1,0 +1,2 @@
+@interface SNDateUtils : NSObject
+@end

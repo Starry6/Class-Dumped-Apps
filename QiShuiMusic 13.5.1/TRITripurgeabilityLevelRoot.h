@@ -1,0 +1,2 @@
+@interface TRITripurgeabilityLevelRoot : TRIPBRootObject
+@end

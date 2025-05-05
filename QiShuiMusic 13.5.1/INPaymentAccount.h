@@ -1,0 +1,33 @@
+@interface INPaymentAccount : NSObject
+@property (nonatomic) INSpeakableString nickname;
+@property (nonatomic) NSString accountNumber;
+@property (nonatomic) q accountType;
+@property (nonatomic) INSpeakableString organizationName;
+@property (nonatomic) INBalanceAmount balance;
+@property (nonatomic) INBalanceAmount secondaryBalance;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)accountType;
+- (id)_intents_readableTitleWithLocalizer:metadata:;
+- (id)_dictionaryRepresentation;
+- (id)balance;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)nickname;
+- (void)encodeWithCoder:;
+- (id)descriptionAtIndent:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)_intents_encodeWithJSONEncoder:codableDescription:;
+- (id)organizationName;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)accountNumber;
+- (id)secondaryBalance;
+- (id)initWithNickname:number:accountType:organizationName:balance:secondaryBalance:;
+- (id)initWithNickname:number:accountType:organizationName:;
++ (id)_intents_decodeWithJSONDecoder:codableDescription:from:;
++ (BOOL)supportsSecureCoding;
+@end

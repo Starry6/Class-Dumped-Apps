@@ -1,0 +1,32 @@
+@interface IESLiveSaaSSwipeGuideCounterStore : NSObject
+@property (nonatomic) q swipeCounter;
+@property (nonatomic) BOOL hasShowGuide;
+@property (nonatomic) <IESLiveSaaSFeedDrawerProvider> feedDrawerProvider;
+@property (nonatomic) IESLiveSaaSSwipeGuideConfig settingConfig;
+@property (nonatomic) NSString storeKey;
+@property (nonatomic) <HTSLiveSaaSViewHierarchyProvider> currentViewProvider;
+@property (nonatomic) <IESLiveSaaSMotionGuideCoordinator> currentGuideCoordinator;
+@property (nonatomic) <IESLiveSaaSSwipeGuideCounterDelegate> delegate;
+- (id)currentGuideCoordinator;
+- (id)currentViewProvider;
+- (void)didEnterRoom;
+- (id)feedDrawerProvider;
+- (BOOL)hasShowGuide;
+- (void)setCurrentGuideCoordinator:;
+- (void)setCurrentViewProvider:;
+- (void)setFeedDrawerProvider:;
+- (void)setHasShowGuide:;
+- (void)setSettingConfig:;
+- (void)setSwipeCounter:;
+- (id)settingConfig;
+- (long long)swipeCounter;
+- (id)init;
+- (void)setDelegate:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)storeKey;
+- (void)setStoreKey:;
+- (void)reset;
+- (BOOL)isEnabled;
+- (void)fire;
+@end

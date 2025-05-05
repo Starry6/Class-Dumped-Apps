@@ -1,0 +1,31 @@
+@interface MTLBVHPolygonGeometryDescriptor : MTLBVHGeometryDescriptor
+@property (nonatomic) Q polygonType;
+@property (nonatomic) NSArray vertexBuffers;
+@property (nonatomic) Q vertexStride;
+@property (nonatomic) <MTLBuffer> indexBuffer;
+@property (nonatomic) Q indexBufferOffset;
+@property (nonatomic) Q indexType;
+@property (nonatomic) Q vertexFormat;
+@property (nonatomic) <MTLBuffer> transformationMatrixBuffer;
+@property (nonatomic) Q transformationMatrixBufferOffset;
+- (void)setIndexType:;
+- (void)dealloc;
+- (unsigned long long)indexType;
+- (id)vertexBuffers;
+- (unsigned long long)primitiveType;
+- (unsigned long long)polygonType;
+- (void)setPolygonType:;
+- (void)setVertexBuffers:;
+- (unsigned long long)vertexStride;
+- (void)setVertexStride:;
+- (id)indexBuffer;
+- (void)setIndexBuffer:;
+- (unsigned long long)indexBufferOffset;
+- (void)setIndexBufferOffset:;
+- (unsigned long long)vertexFormat;
+- (void)setVertexFormat:;
+- (id)transformationMatrixBuffer;
+- (void)setTransformationMatrixBuffer:;
+- (unsigned long long)transformationMatrixBufferOffset;
+- (void)setTransformationMatrixBufferOffset:;
+@end

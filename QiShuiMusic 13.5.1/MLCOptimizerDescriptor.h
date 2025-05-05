@@ -1,0 +1,31 @@
+@interface MLCOptimizerDescriptor : NSObject
+@property (nonatomic) float learningRate;
+@property (nonatomic) float gradientRescale;
+@property (nonatomic) BOOL appliesGradientClipping;
+@property (nonatomic) float gradientClipMax;
+@property (nonatomic) float gradientClipMin;
+@property (nonatomic) float regularizationScale;
+@property (nonatomic) NSInteger regularizationType;
+@property (nonatomic) NSInteger gradientClippingType;
+@property (nonatomic) float maximumClippingNorm;
+@property (nonatomic) float customGlobalNorm;
+- (unsigned long long)hash;
+- (id)description;
+- (float)learningRate;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (float)gradientClipMin;
+- (float)gradientClipMax;
+- (id)initWithLearningRate:gradientRescale:applyGradientClipping:gradientClipMax:gradientClipMin:regularizationType:regularizationScale:gradientClippingType:maximumClippingNorm:customGlobalNorm:;
+- (id)initWithLearningRate:gradientRescale:applyGradientClipping:gradientClipMax:gradientClipMin:regularizationType:regularizationScale:;
+- (float)gradientRescale;
+- (BOOL)appliesGradientClipping;
+- (float)regularizationScale;
+- (int)regularizationType;
+- (int)gradientClippingType;
+- (float)maximumClippingNorm;
+- (float)customGlobalNorm;
++ (id)descriptorWithLearningRate:gradientRescale:regularizationType:regularizationScale:;
++ (id)descriptorWithLearningRate:gradientRescale:appliesGradientClipping:gradientClipMax:gradientClipMin:regularizationType:regularizationScale:;
++ (id)descriptorWithLearningRate:gradientRescale:appliesGradientClipping:gradientClippingType:gradientClipMax:gradientClipMin:maximumClippingNorm:customGlobalNorm:regularizationType:regularizationScale:;
+@end

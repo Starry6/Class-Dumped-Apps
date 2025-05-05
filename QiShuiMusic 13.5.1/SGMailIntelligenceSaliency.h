@@ -1,0 +1,30 @@
+@interface SGMailIntelligenceSaliency : NSObject
+@property (nonatomic) q gteSaliency;
+@property (nonatomic) BOOL isCounted;
+@property (nonatomic) NSNumber decayedScore;
+@property (nonatomic) NSDate creationDate;
+@property (nonatomic) NSNumber score;
+@property (nonatomic) NSString messageId;
+@property (nonatomic) NSString mailboxId;
+@property (nonatomic) BOOL isSalient;
+- (id)messageId;
+- (id)score;
+- (void)setCreationDate:;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)copyWithZone:;
+- (id)creationDate;
+- (id)initWithMessageId:mailboxId:score:isSalient:gteSaliency:isCounted:creationDate:;
+- (id)initWithMessageId:mailboxId:score:isSalient:creationDate:;
+- (id)decayedScore;
+- (id)mailboxId;
+- (BOOL)isSalient;
+- (long long)gteSaliency;
+- (void)setGteSaliency:;
+- (BOOL)isCounted;
+- (void)setIsCounted:;
++ (BOOL)supportsSecureCoding;
++ (id)decayScore:creationTime:;
+@end

@@ -1,0 +1,32 @@
+@interface GEOMuninViewState : PBCodable
+@property (nonatomic) BOOL hasCameraFrame;
+@property (nonatomic) GEOCameraFrame cameraFrame;
+@property (nonatomic) BOOL hasLocationInfo;
+@property (nonatomic) GEOLocationInfo locationInfo;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)cameraFrame;
+- (id)locationInfo;
+- (id)unknownFields;
+- (id)init;
+- (id)initWithJSON:;
+- (void)setLocationInfo:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void)setCameraFrame:;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasCameraFrame;
+- (BOOL)hasLocationInfo;
++ (BOOL)isValid:;
+@end

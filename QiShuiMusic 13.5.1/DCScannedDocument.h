@@ -1,0 +1,35 @@
+@interface DCScannedDocument : NSObject
+@property (nonatomic) NSString title;
+@property (nonatomic) NSMutableArray docInfos;
+@property (nonatomic) NSURL scannedDocumentImageDirectoryURL;
+@property (nonatomic) Q pageCount;
+- (void)dealloc;
+- (unsigned long long)pageCount;
+- (void)setTitle:;
+- (void)applicationWillTerminate:;
+- (id)title;
+- (void).cxx_destruct;
+- (unsigned long long)numberOfScans;
+- (id)initWithURL:error:;
+- (BOOL)saveToURL:error:;
+- (id)imageOfPageAtIndex:;
+- (void)deleteAllImages;
+- (id)getImage:;
+- (void)setDocInfos:;
+- (id)docInfos;
+- (id)initWithDocInfoCollection:imageCache:;
+- (void)replaceContentsWithDocInfoCollection:imageCache:;
+- (id)copyImageForSaving:toFolderURL:;
+- (id)copyImageForLoading:fromFolderURL:;
+- (id)pListURL:;
+- (id)imageForScanAtIndex:error:;
+- (BOOL)copyImagesFromDocInfoCollection:imageCache:;
+- (BOOL)makeSureScanDirectoryExists:;
+- (id)URLForImageInFolder:withUUID:;
+- (id)URLForImageWithUUID:;
+- (id)copyImageAtURL:;
+- (id)getImageURL:;
+- (BOOL)deleteImage:;
+- (id)scannedDocumentImageDirectoryURL;
++ (id)scannedDocumentsFolderURL;
+@end

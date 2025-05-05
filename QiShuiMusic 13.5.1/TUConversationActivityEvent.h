@@ -1,0 +1,35 @@
+@interface TUConversationActivityEvent : NSObject
+@property (nonatomic) NSUUID sessionUUID;
+@property (nonatomic) TUConversationParticipant originator;
+@property (nonatomic) q type;
+@property (nonatomic) q queueItemType;
+@property (nonatomic) NSString item;
+@property (nonatomic) NSString localizedDescription;
+@property (nonatomic) TUConversationActivitySession session;
+@property (nonatomic) NSURL url;
+- (id)item;
+- (void)setSession:;
+- (id)url;
+- (id)originator;
+- (void)setOriginator:;
+- (id)localizedDescription;
+- (id)sessionUUID;
+- (void)setType:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)setUrl:;
+- (void)encodeWithCoder:;
+- (void)setItem:;
+- (void)setSessionUUID:;
+- (long long)type;
+- (id)session;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (long long)queueItemType;
+- (void)setQueueItemType:;
+- (id)initWithSessionUUID:originator:type:;
+- (BOOL)isEqualToConversationActivityEvent:;
++ (BOOL)supportsSecureCoding;
+@end

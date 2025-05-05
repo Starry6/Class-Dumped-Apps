@@ -1,0 +1,33 @@
+@interface PSTextFieldPINView : PINView
+@property (nonatomic) BOOL usesNumericKeyboard;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)keyboardInputChanged:;
+- (BOOL)textFieldShouldReturn:;
+- (void)dealloc;
+- (void)layoutSubviews;
+- (id)tableView:cellForRowAtIndexPath:;
+- (void)appendString:;
+- (BOOL)isFirstResponder;
+- (void)setStringValue:;
+- (id)initWithFrame:;
+- (BOOL)becomeFirstResponder;
+- (BOOL)canBecomeFirstResponder;
+- (id)stringValue;
+- (void).cxx_destruct;
+- (BOOL)resignFirstResponder;
+- (long long)tableView:numberOfRowsInSection:;
+- (void)deleteLastCharacter;
+- (void)setBlocked:;
+- (void)setTextFieldKeyboardType:;
+- (void)setTextFieldKeyboardAppearance:;
+- (void)showError:animate:;
+- (void)hidePasscodeField:;
+- (void)notifyDelegatePINChanged;
+- (void)notifyDelegatePINEntered;
+- (void)okButtonPressed:;
+- (void)setUsesNumericKeyboard:;
+- (BOOL)usesNumericKeyboard;
+@end

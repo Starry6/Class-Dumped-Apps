@@ -1,0 +1,35 @@
+@interface PEGASUSSchemaPEGASUSIntentArg : SISchemaInstrumentationMessage
+@property (nonatomic) NSString key;
+@property (nonatomic) BOOL hasKey;
+@property (nonatomic) NSString attributeType;
+@property (nonatomic) BOOL hasAttributeType;
+@property (nonatomic) PEGASUSSchemaPEGASUSEntityInfo entity;
+@property (nonatomic) BOOL hasEntity;
+@property (nonatomic) NSData jsonData;
+- (void)setHasKey:;
+- (BOOL)hasKey;
+- (void)setEntity:;
+- (id)entity;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (void)setAttributeType:;
+- (id)initWithDictionary:;
+- (id)key;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void)setKey:;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (id)attributeType;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (BOOL)hasAttributeType;
+- (void)setHasAttributeType:;
+- (BOOL)hasEntity;
+- (void)deleteKey;
+- (void)deleteEntity;
+- (void)setHasEntity:;
+- (void)deleteAttributeType;
+@end

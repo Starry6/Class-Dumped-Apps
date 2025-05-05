@@ -1,0 +1,37 @@
+@interface CLPIndoorCMAttitude : PBCodable
+@property (nonatomic) BOOL hasTimestamp;
+@property (nonatomic) double timestamp;
+@property (nonatomic) BOOL hasQuaternion;
+@property (nonatomic) CLPQuaternion quaternion;
+@property (nonatomic) BOOL hasMagneticAccuracy;
+@property (nonatomic) float magneticAccuracy;
+@property (nonatomic) BOOL hasMagneticCalibration;
+@property (nonatomic) NSInteger magneticCalibration;
+- (int)StringAsMagneticCalibration:;
+- (void)setMagneticCalibration:;
+- (BOOL)hasQuaternion;
+- (float)magneticAccuracy;
+- (id)magneticCalibrationAsString:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)setHasMagneticCalibration:;
+- (id)quaternion;
+- (void)copyTo:;
+- (void)setHasTimestamp:;
+- (void)mergeFrom:;
+- (BOOL)hasTimestamp;
+- (void)setTimestamp:;
+- (void)setQuaternion:;
+- (void).cxx_destruct;
+- (BOOL)hasMagneticAccuracy;
+- (BOOL)readFrom:;
+- (double)timestamp;
+- (BOOL)hasMagneticCalibration;
+- (id)description;
+- (void)setMagneticAccuracy:;
+- (int)magneticCalibration;
+- (id)dictionaryRepresentation;
+- (void)setHasMagneticAccuracy:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+@end

@@ -1,0 +1,36 @@
+@interface CJPayVoucherInfoModel : JSONModel
+@property (nonatomic) NSArray<CJPayVoucherModel> vouchers;
+@property (nonatomic) q vouchersAmount;
+@property (nonatomic) q vouchersMaxAmount;
+@property (nonatomic) q vouchersUsedAmount;
+@property (nonatomic) NSString vouchersLabel;
+@property (nonatomic) q vouchersChannelNum;
+@property (nonatomic) q vouchersPlatNum;
+@property (nonatomic) q vouchersRandomNum;
+@property (nonatomic) NSArray voucherMsgList;
+@property (nonatomic) q orderSubFixedVoucherAmount;
+- (long long)vouchersPlatNum;
+- (long long)orderSubFixedVoucherAmount;
+- (void)setOrderSubFixedVoucherAmount:;
+- (void)setVoucherMsgList:;
+- (void)setVouchersAmount:;
+- (void)setVouchersChannelNum:;
+- (void)setVouchersLabel:;
+- (void)setVouchersMaxAmount:;
+- (void)setVouchersPlatNum:;
+- (void)setVouchersRandomNum:;
+- (void)setVouchersUsedAmount:;
+- (id)voucherMsgList;
+- (long long)vouchersAmount;
+- (long long)vouchersChannelNum;
+- (id)vouchersLabel;
+- (long long)vouchersMaxAmount;
+- (long long)vouchersRandomNum;
+- (long long)vouchersUsedAmount;
+- (id)vouchers;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (void)setVouchers:;
++ (id)keyMapper;
++ (BOOL)propertyIsOptional:;
+@end

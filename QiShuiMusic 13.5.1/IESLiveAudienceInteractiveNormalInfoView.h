@@ -1,0 +1,38 @@
+@interface IESLiveAudienceInteractiveNormalInfoView : UIView
+@property (nonatomic) UIImageView locationIconView;
+@property (nonatomic) UILabel applyTimeLabel;
+@property (nonatomic) UILabel locationLabel;
+@property (nonatomic) UIView infoSeperatorLineView;
+@property (nonatomic) IESLiveAudienceInteractiveInvitorView invitorView;
+@property (nonatomic) UILabel teamFightTeamLabel;
+@property (nonatomic) BOOL isInPaidLinkmic;
+@property (nonatomic) BOOL isAddPrice;
+@property (nonatomic) BOOL showPayAmount;
+- (void)setInvitorView:;
+- (BOOL)isInPaidLinkmic;
+- (void)updateWithModel:now:sortByTime:;
+- (id)applyTimeLabel;
+- (id)infoSeperatorLineView;
+- (id)invitorView;
+- (BOOL)isAddPrice;
+- (id)locationIconView;
+- (void)setApplyTimeLabel:;
+- (void)setInfoSeperatorLineView:;
+- (void)setIsAddPrice:;
+- (void)setIsInPaidLinkmic:;
+- (void)setLocationIconView:;
+- (void)setShowPayAmount:;
+- (void)setTeamFightTeamLabel:;
+- (void)setupTeamFightLabel:;
+- (BOOL)showPayAmount;
+- (id)teamFightTeamLabel;
+- (void)updateWithIsInPaidLinkmic:isAddPrice:showPayAmount:;
+- (id)waitingDesStringWithModel:now:isAddPrice:;
+- (void)setupConstraints;
+- (id)init;
+- (void)prepareForReuse;
+- (void).cxx_destruct;
+- (void)setupViews;
+- (id)locationLabel;
+- (void)setLocationLabel:;
+@end

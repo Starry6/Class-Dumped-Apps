@@ -1,0 +1,31 @@
+@interface MPSRNNDescriptor : NSObject
+@property (nonatomic) <MPSCNNConvolutionDataSource> inputTransform;
+@property (nonatomic) <MPSCNNConvolutionDataSource> outputTransform;
+@property (nonatomic) <MPSCNNConvolutionDataSource> recurrentOutputTransform;
+@property (nonatomic) Q internalKernelSelector;
+@property (nonatomic) Q inputFeatureChannels;
+@property (nonatomic) Q outputFeatureChannels;
+@property (nonatomic) BOOL useLayerInputUnitTransformMode;
+@property (nonatomic) BOOL useFloat32Weights;
+@property (nonatomic) Q layerSequenceDirection;
+- (id)init;
+- (void)dealloc;
+- (void)setOutputFeatureChannels:;
+- (void)setInputFeatureChannels:;
+- (unsigned long long)outputFeatureChannels;
+- (unsigned long long)inputFeatureChannels;
+- (id)inputTransform;
+- (void)setInputTransform:;
+- (id)outputTransform;
+- (void)setUseFloat32Weights:;
+- (void)setOutputTransform:;
+- (id)recurrentOutputTransform;
+- (void)setRecurrentOutputTransform:;
+- (BOOL)useLayerInputUnitTransformMode;
+- (void)setUseLayerInputUnitTransformMode:;
+- (unsigned long long)layerSequenceDirection;
+- (void)setLayerSequenceDirection:;
+- (BOOL)useFloat32Weights;
+- (unsigned long long)internalKernelSelector;
+- (void)setInternalKernelSelector:;
+@end

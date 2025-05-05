@@ -1,0 +1,31 @@
+@interface SATTSStartSpeechSynthesisStreamingRequest : SAStartRequest
+@property (nonatomic) NSString audioType;
+@property (nonatomic) NSString gender;
+@property (nonatomic) NSString languageCode;
+@property (nonatomic) NSString quality;
+@property (nonatomic) BOOL requiresWordTimingInfo;
+@property (nonatomic) NSDictionary speakableContextInfo;
+@property (nonatomic) NSString text;
+@property (nonatomic) NSString voiceName;
+- (id)quality;
+- (id)groupIdentifier;
+- (void)setLanguageCode:;
+- (id)gender;
+- (id)languageCode;
+- (void)setQuality:;
+- (void)setText:;
+- (void)setGender:;
+- (BOOL)requiresResponse;
+- (id)encodedClassName;
+- (id)text;
+- (id)voiceName;
+- (void)setVoiceName:;
+- (id)audioType;
+- (void)setAudioType:;
+- (id)speakableContextInfo;
+- (void)setSpeakableContextInfo:;
+- (BOOL)requiresWordTimingInfo;
+- (void)setRequiresWordTimingInfo:;
++ (id)startSpeechSynthesisStreamingRequest;
++ (id)startSpeechSynthesisStreamingRequestWithDictionary:context:;
+@end

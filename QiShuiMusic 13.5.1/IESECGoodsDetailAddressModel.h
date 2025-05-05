@@ -1,0 +1,32 @@
+@interface IESECGoodsDetailAddressModel : MTLModel
+@property (nonatomic) NSString addressID;
+@property (nonatomic) NSString addressDetail;
+@property (nonatomic) NSString mobilePhone;
+@property (nonatomic) NSString receiverName;
+@property (nonatomic) IESECGoodsDetailAddressJurisdictionModel province;
+@property (nonatomic) IESECGoodsDetailAddressJurisdictionModel city;
+@property (nonatomic) IESECGoodsDetailAddressJurisdictionModel town;
+@property (nonatomic) NSString addressTag;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)addressDetail;
+- (id)addressTag;
+- (id)province;
+- (id)receiverName;
+- (void)setAddressDetail:;
+- (void)setAddressTag:;
+- (void)setProvince:;
+- (void)setReceiverName:;
+- (void)setTown:;
+- (id)town;
+- (id)city;
+- (id)mobilePhone;
+- (void).cxx_destruct;
+- (void)setCity:;
+- (id)addressID;
+- (void)setAddressID:;
+- (void)setMobilePhone:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

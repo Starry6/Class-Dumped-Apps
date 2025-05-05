@@ -1,0 +1,32 @@
+@interface IESLiveInteractFanTicketData : NSObject
+@property (nonatomic) NSMutableDictionary fantickets;
+@property (nonatomic) NSString score;
+@property (nonatomic) IESLiveInteractUserFanticketStatus status;
+@property (nonatomic) NSNumber style_type;
+@property (nonatomic) NSNumber hidden;
+@property (nonatomic) UIColor backgroundColor;
+@property (nonatomic) UIColor animateBgColor;
+@property (nonatomic) NSString iconUrl;
+- (id)iconUrl;
+- (id)animateBgColor;
+- (id)fantickets;
+- (void)processData;
+- (void)setAnimateBgColor:;
+- (void)setFantickets:;
+- (void)setIconUrl:;
+- (void)setStyle_type:;
+- (id)style_type;
+- (void)setStatus:;
+- (id)init;
+- (void)setBackgroundColor:;
+- (id)score;
+- (id)backgroundColor;
+- (BOOL)remove:;
+- (id)hidden;
+- (void)merge:;
+- (void)setScore:;
+- (void).cxx_destruct;
+- (void)setHidden:;
+- (id)description;
+- (id)status;
+@end

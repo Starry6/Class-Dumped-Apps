@@ -1,0 +1,38 @@
+@interface IESECHeartDiamondCrownModel : MTLModel
+@property (nonatomic) IESECURLModel titleIcon;
+@property (nonatomic) IESECURLModel liveTitleIcon;
+@property (nonatomic) IESECURLModel baseIcon;
+@property (nonatomic) IESECURLModel unlightedIcon;
+@property (nonatomic) IESECURLModel liveUnlightedIcon;
+@property (nonatomic) q baseIconNumber;
+@property (nonatomic) q level;
+@property (nonatomic) NSString text;
+@property (nonatomic) NSString textColor;
+@property (nonatomic) NSString liveTextColor;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)baseIconNumber;
+- (id)liveTextColor;
+- (id)liveTitleIcon;
+- (id)liveUnlightedIcon;
+- (void)setBaseIconNumber:;
+- (void)setLiveTextColor:;
+- (void)setLiveTitleIcon:;
+- (void)setLiveUnlightedIcon:;
+- (void)setUnlightedIcon:;
+- (id)unlightedIcon;
+- (void)setLevel:;
+- (long long)level;
+- (void)setText:;
+- (void)setTextColor:;
+- (void).cxx_destruct;
+- (id)textColor;
+- (id)text;
+- (void)setBaseIcon:;
+- (id)titleIcon;
+- (void)setTitleIcon:;
+- (id)baseIcon;
++ (id)JSONKeyPathsByPropertyKey;
+@end

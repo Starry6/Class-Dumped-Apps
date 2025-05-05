@@ -1,0 +1,31 @@
+@interface ENExposureDetectionSession : NSObject
+@property (nonatomic) Q maximumKeyCount;
+@property (nonatomic) ENExposureConfiguration configuration;
+@property (nonatomic) NSObject<OS_dispatch_queue> dispatchQueue;
+@property (nonatomic) @? invalidationHandler;
+- (void)activateWithCompletionHandler:;
+- (id)init;
+- (void)encodeWithXPCObject:;
+- (void)dealloc;
+- (void)_invalidated;
+- (id)dispatchQueue;
+- (unsigned long long)maximumKeyCount;
+- (id)initWithXPCObject:error:;
+- (void)setDispatchQueue:;
+- (void)setConfiguration:;
+- (id)configuration;
+- (void).cxx_destruct;
+- (id)invalidationHandler;
+- (void)setInvalidationHandler:;
+- (id)description;
+- (void)invalidate;
+- (double)estimateRiskWithExposureInfo:referenceTime:transmissionRiskLevel:skip:;
+- (void)updateDaySummary:exposureInfo:score:;
+- (void)_activateWithCompletionHandler:;
+- (void)addDiagnosisKeys:completionHandler:;
+- (void)finishedDiagnosisKeysWithCompletionHandler:;
+- (void)getExposureInfoWithMaximumCount:completionHandler:;
+- (double)scoreWithExposureInfo:skip:;
+- (void)setMaximumKeyCount:;
++ (long long)authorizationStatus;
+@end

@@ -1,0 +1,31 @@
+@interface EDConversationRemoteKVSStorage : NSObject
+@property (nonatomic) <EDConversationRemoteStorageDelegate> delegate;
+@property (nonatomic) NSUbiquitousKeyValueStore kvStore;
+@property (nonatomic) NSObject<OS_dispatch_queue> privateQueue;
+@property (nonatomic) BOOL initialized;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)initialized;
+- (id)privateQueue;
+- (void)setPrivateQueue:;
+- (BOOL)isInitialized;
+- (void)setKvStore:;
+- (void)setInitialized:;
+- (id)storageName;
+- (void)removeDictionaryForKey:;
+- (id)kvStore;
+- (void)refresh;
+- (void)setDictionary:forKey:;
+- (void)_storeChangedExternally:;
+- (void)setDelegate:;
+- (id)subsetOfMessageIDsToSyncFromMessageIDString:;
+- (BOOL)synchronize;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)initWithDelegate:;
+- (id)dictionaryRepresentation;
+- (id)dictionaryForKey:;
++ (id)log;
+@end

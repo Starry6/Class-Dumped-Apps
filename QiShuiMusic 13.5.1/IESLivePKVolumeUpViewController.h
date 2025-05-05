@@ -1,0 +1,31 @@
+@interface IESLivePKVolumeUpViewController : IESLiveRevenueInteractPopupViewController
+@property (nonatomic) q source;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel subTitleLabel;
+@property (nonatomic) UISwitch switchButton;
+@property (nonatomic) UIView sepetorLineView;
+@property (nonatomic) UIImageView imageView;
+@property (nonatomic) HTSLivePKApi pkApi;
+- (id)__boolToString:;
+- (BOOL)__stringToBool:;
+- (void)__switchAction:;
+- (id)sepetorLineView;
+- (void)onSetupNavBar:;
+- (id)pkApi;
+- (void)setPkApi:;
+- (void)setSepetorLineView:;
+- (void)setSwitchButton:;
+- (id)initWithSource:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (long long)source;
+- (id)imageView;
+- (id)titleLabel;
+- (void)setSource:;
+- (void)setImageView:;
+- (void)viewDidLoad;
+- (void)setupViews;
+- (id)subTitleLabel;
+- (void)setSubTitleLabel:;
+- (id)switchButton;
+@end

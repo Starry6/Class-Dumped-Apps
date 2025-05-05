@@ -1,0 +1,2 @@
+@interface AVSynchronizedLayerInternal : NSObject
+@end

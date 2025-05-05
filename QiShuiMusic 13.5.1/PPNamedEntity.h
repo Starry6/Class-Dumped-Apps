@@ -1,0 +1,34 @@
+@interface PPNamedEntity : NSObject
+@property (nonatomic) NSString clusterIdentifier;
+@property (nonatomic) NSString name;
+@property (nonatomic) Q category;
+@property (nonatomic) NSString dynamicCategory;
+@property (nonatomic) NSString bestLanguage;
+@property (nonatomic) PPNamedEntityRecord mostRelevantRecord;
+@property (nonatomic) double sentimentScore;
+@property (nonatomic) NSSet featureNames;
+- (double)sentimentScore;
+- (id)mostRelevantRecord;
+- (id)initWithName:category:dynamicCategory:language:mostRelevantRecord:;
+- (id)clusterIdentifier;
+- (id)featureValueForName:;
+- (id)initWithName:category:dynamicCategory:language:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)featureNames;
+- (id)initWithName:category:language:;
+- (id)bestLanguage;
+- (void)encodeWithCoder:;
+- (id)dynamicCategory;
+- (void).cxx_destruct;
+- (BOOL)isEqualToNamedEntity:;
+- (id)description;
+- (id)name;
+- (BOOL)isEqual:;
+- (unsigned long long)category;
+- (id)copyWithZone:;
++ (BOOL)supportsSecureCoding;
++ (unsigned long long)categoryForDescription:;
++ (id)describeCategory:;
++ (id)clusterIdentifierFromName:;
+@end

@@ -1,0 +1,35 @@
+@interface VEAIMomentFaceFeature : NSObject
+@property (nonatomic) q faceId;
+@property (nonatomic) {VEEffectRectF=ffff} rect;
+@property (nonatomic) {VEEffectBoxI=iiiiiiii} box;
+@property (nonatomic) float yaw;
+@property (nonatomic) float pitch;
+@property (nonatomic) float roll;
+@property (nonatomic) float realFaceProb;
+@property (nonatomic) float quailty;
+@property (nonatomic) float boyProb;
+@property (nonatomic) float age;
+@property (nonatomic) float happyScore;
+- (float)quailty;
+- (float)boyProb;
+- (float)happyScore;
+- (float)realFaceProb;
+- (void)setBoyProb:;
+- (void)setHappyScore:;
+- (void)setQuailty:;
+- (void)setRealFaceProb:;
+- (float)yaw;
+- (void)setPitch:;
+- (id)rect;
+- (float)age;
+- (float)pitch;
+- (float)roll;
+- (void)setAge:;
+- (void)setRect:;
+- (void)setYaw:;
+- (void)setRoll:;
+- (long long)faceId;
+- (void)setFaceId:;
+- (id)box;
+- (void)setBox:;
+@end

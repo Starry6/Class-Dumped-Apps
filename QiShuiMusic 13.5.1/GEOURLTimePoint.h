@@ -1,0 +1,30 @@
+@interface GEOURLTimePoint : PBCodable
+@property (nonatomic) BOOL hasTime;
+@property (nonatomic) double time;
+@property (nonatomic) BOOL hasType;
+@property (nonatomic) NSInteger type;
+- (void)readAll:;
+- (void)setTime:;
+- (double)time;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (int)StringAsType:;
+- (id)initWithDictionary:;
+- (void)setType:;
+- (void)writeTo:;
+- (void)setHasType:;
+- (BOOL)hasType;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (id)typeAsString:;
+- (void)mergeFrom:;
+- (int)type;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setHasTime:;
+- (BOOL)hasTime;
++ (BOOL)isValid:;
+@end

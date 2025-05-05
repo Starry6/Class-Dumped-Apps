@@ -1,0 +1,31 @@
+@interface SFSiteCardCell : UICollectionViewCell
+@property (nonatomic) UIImage badge;
+@property (nonatomic) UIImage image;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString subtitle;
+@property (nonatomic) NSString caption;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)_updateVibrancy;
+- (id)badge;
+- (void)setBadge:;
+- (void)setImage:;
+- (void)setSubtitle:;
+- (id)caption;
+- (void)setTitle:;
+- (id)initWithCoder:;
+- (id)focusEffect;
+- (id)initWithFrame:;
+- (void)traitCollectionDidChange:;
+- (id)title;
+- (void)setCaption:;
+- (void).cxx_destruct;
+- (void)setHighlighted:;
+- (id)subtitle;
+- (id)image;
+- (void)setCaptionText:icon:;
+- (void)setImageFromBookmark:;
++ (id)reuseIdentifier;
+@end

@@ -1,0 +1,30 @@
+@interface AMSMediaTokenServiceStore : NSObject
+@property (nonatomic) {os_unfair_lock_s=I} accessLock;
+@property (nonatomic) AMSMediaToken memoryMediaToken;
+@property (nonatomic) AMSMediaTokenServiceKeychainStore keychainStore;
+@property (nonatomic) AMSMediaTokenServiceUserDefaultsStore userDefaultsStore;
+@property (nonatomic) NSString clientIdentifier;
+@property (nonatomic) NSString keychainAccessGroup;
+- (void)dealloc;
+- (void)setMemoryMediaToken:;
+- (void)_postMediaTokenChangedNotification;
+- (BOOL)_hasAppleGroupEnabled;
+- (id)_keychainAccessGroup;
+- (void)_setupKeychainNotifications;
+- (id)keychainAccessGroup;
+- (id)initWithClientIdentifier:keychainAccessGroup:;
+- (void)setKeychainStore:;
+- (void)setKeychainAccessGroup:;
+- (id)_mediaTokenChangedNotificationName;
+- (void)_teardownKeychainNotifications;
+- (void)storeToken:;
+- (void).cxx_destruct;
+- (id)retrieveToken;
+- (void)setUserDefaultsStore:;
+- (void)_mediaTokenChanged;
+- (id)memoryMediaToken;
+- (id)keychainStore;
+- (id)userDefaultsStore;
+- (id)accessLock;
+- (id)clientIdentifier;
+@end

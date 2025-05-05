@@ -1,0 +1,2 @@
+@interface SFEventMessage : SFMessage
+@end

@@ -1,0 +1,33 @@
+@interface RUILinkLabel : UIView
+@property (nonatomic) NSString text;
+@property (nonatomic) UIFont font;
+@property (nonatomic) q textAlignment;
+@property (nonatomic) q numberOfLines;
+@property (nonatomic) q lineBreakMode;
+@property (nonatomic) @? action;
+@property (nonatomic) BOOL enabled;
+@property (nonatomic) UILabel textLabel;
+@property (nonatomic) UIButton linkButton;
+- (id)textLabel;
+- (void)setLineBreakMode:;
+- (BOOL)enabled;
+- (void)layoutSubviews;
+- (void)setText:;
+- (void)setFont:;
+- (id)action;
+- (long long)lineBreakMode;
+- (void)setAction:;
+- (id)initWithFrame:;
+- (id)sizeThatFits:;
+- (void)setEnabled:;
+- (void).cxx_destruct;
+- (id)font;
+- (long long)textAlignment;
+- (void)setNumberOfLines:;
+- (void)setTextAlignment:;
+- (long long)numberOfLines;
+- (id)text;
+- (id)linkButton;
+- (void)_resize;
+- (void)_linkPressed;
+@end

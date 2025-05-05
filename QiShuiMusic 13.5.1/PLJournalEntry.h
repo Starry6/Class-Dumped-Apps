@@ -1,0 +1,34 @@
+@interface PLJournalEntry : NSObject
+@property (nonatomic) <PLJournalEntryPayloadID> payloadID;
+@property (nonatomic) I payloadVersion;
+@property (nonatomic) PLJournalEntryHeader header;
+@property (nonatomic) NSPersistentHistoryToken historyToken;
+@property (nonatomic) <PLJournalEntryPayload> payload;
+- (void)setHeader:;
+- (id)payloadID;
+- (id)payload;
+- (id)init;
+- (unsigned long long)entryType;
+- (void)setPayload:;
+- (unsigned int)payloadVersion;
+- (id)debugDescription;
+- (id)historyToken;
+- (void).cxx_destruct;
+- (id)description;
+- (id)header;
+- (void)setHistoryToken:;
+- (id)initWithPayloadID:payload:entryType:;
+- (id)initForInsertWithPayload:;
+- (id)initForUpdateWithPayload:;
+- (id)initForDeleteWithPayloadID:;
+- (void)setPayloadVersion:;
+- (BOOL)_readFromFileHandle:decodePayload:payloadClass:error:;
+- (BOOL)readFromFileHandle:decodePayload:payloadClass:entryOffset:error:;
+- (void)writeBytes:length:toFileHandle:;
+- (void)_appendHeaderData:headerCRC:payloadData:toFileHandle:;
+- (void)appendHeaderData:headerCRC:payloadData:toFileHandle:;
+- (BOOL)writeToFileHandle:error:;
+- (id)descriptionWithBuilder:;
+- (id)entryTypeDescription;
+- (void)setPayloadID:;
+@end

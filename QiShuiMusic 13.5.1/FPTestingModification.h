@@ -1,0 +1,30 @@
+@interface FPTestingModification : FPTestingOperation
+@property (nonatomic) q rawFields;
+@property (nonatomic) q snapshotVersion;
+@property (nonatomic) Q targetSide;
+@property (nonatomic) <NSFileProviderItem> sourceItem;
+@property (nonatomic) NSString targetItemIdentifier;
+@property (nonatomic) NSFileProviderItemVersion targetItemBaseVersion;
+@property (nonatomic) Q changedFields;
+@property (nonatomic) NSFileProviderDomainVersion domainVersion;
+@property (nonatomic) q type;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (long long)type;
+- (void).cxx_destruct;
+- (id)domainVersion;
+- (id)sourceItem;
+- (id)asModification;
+- (unsigned long long)targetSide;
+- (long long)snapshotVersion;
+- (id)targetItemIdentifier;
+- (id)targetItemBaseVersion;
+- (unsigned long long)changedFields;
+- (id)initWithOperationIdentifier:sourceItem:targetItemIdentifier:targetItemBaseVersion:changedFields:domainVersion:rawFields:snapshotVersion:;
+- (long long)rawFields;
++ (BOOL)supportsSecureCoding;
+@end

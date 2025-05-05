@@ -1,0 +1,31 @@
+@interface FBSApplicationDataStoreRepositoryClient : FBSServiceFacilityClient
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)removeObserver:;
+- (void)handleMessage:withType:;
+- (id)init;
+- (void)addObserver:;
+- (void)removePrefetchedKeys:withCompletion:;
+- (void)_sendMessageType:withMessage:withReplyHandler:waitForReply:;
+- (void)removeAllObjectsForApplication:withCompletion:;
+- (id)_observers;
+- (id)objectForKey:forApplication:;
+- (void)removeObjectForKey:forApplication:withCompletion:;
+- (void)_calloutQueue_handleValueChanged:;
+- (BOOL)_isChangeInFlightForPrefetchedKey:application:;
+- (void)setObject:forKey:forApplication:withCompletion:;
+- (id)availableDataStores;
+- (void)_setChangeInFlight:forPrefetchedKey:application:;
+- (void)synchronizeWithCompletion:;
+- (void)fireCompletion:error:;
+- (void)addPrefetchedKeys:;
+- (void)_sendPrefetchedKeys:withCompletion:;
+- (id)_allPrefetchedChangesInFlightForApplication:;
+- (BOOL)prefetchedObjectIfAvailableForKey:application:outObject:;
+- (void).cxx_destruct;
+- (void)_setPrefetchedObjectIfNecessary:forKey:application:;
+- (void)_calloutQueue_handleStoreInvalidated:;
+- (void)invalidate;
+@end

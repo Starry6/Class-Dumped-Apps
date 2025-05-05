@@ -1,0 +1,2 @@
+@interface CNConcatenateCancelationToken : CNCancelationToken
+@end

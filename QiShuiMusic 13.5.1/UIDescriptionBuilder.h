@@ -1,0 +1,32 @@
+@interface UIDescriptionBuilder : NSObject
+@property (nonatomic) NSObject object;
+@property (nonatomic) NSMutableString descriptionString;
+@property (nonatomic) NSString separator;
+@property (nonatomic) NSString string;
+- (id)string;
+- (void)setSeparator:;
+- (void)setObject:;
+- (id)appendName:intValue:;
+- (id)appendName:doubleValue:;
+- (void)setDescriptionString:;
+- (id)descriptionString;
+- (id)appendName:boolValue:;
+- (id)initWithObject:;
+- (id)appendName:unsignedInteger:;
+- (id)appendName:pointerValue:;
+- (id)appendName:object:usingLightweightDescription:;
+- (id)appendKeys:;
+- (id)appendObject:withName:;
+- (id)appendName:integerValue:;
+- (id)appendNamesAndObjects:;
+- (id)appendName:object:;
+- (void).cxx_destruct;
+- (id)object;
+- (void)tryAppendKey:;
+- (id)appendKey:;
+- (id)appendName:selector:;
+- (id)separator;
++ (id)descriptionBuilderWithObject:;
++ (id)descriptionForObject:namesAndObjects:;
++ (id)descriptionForObject:keys:;
+@end

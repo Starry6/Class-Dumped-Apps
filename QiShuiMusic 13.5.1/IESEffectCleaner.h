@@ -1,0 +1,34 @@
+@interface IESEffectCleaner : NSObject
+@property (nonatomic) IESEffectConfig config;
+@property (nonatomic) IESManifestManager manifestManager;
+@property (nonatomic) BOOL cleaningEffectsDirectoryFlag;
+@property (nonatomic) BOOL cleaningAlgorithmDirectoryFlag;
+@property (nonatomic) BOOL cleaningTmpDirectoryFlag;
+@property (nonatomic) NSMutableSet allowPanelList;
+- (id)initWithConfig:manifestManager:;
+- (void)addAllowListForEffectUnClean:;
+- (id)allowPanelList;
+- (void)appDidEnterBackgroundAutoCleanEffectsDirectoryWithCompletion:;
+- (void)cleanAlgorithmDirectory:;
+- (void)cleanEffectsDirectoryCallbackWithCompletion:;
+- (void)cleanEffectsDirectoryFileWithEffectRecords:completion:;
+- (void)cleanEffectsDirectoryFileWithPolicy:effectMD5s:completion:;
+- (void)cleanEffectsDirectoryWithPolicy:completion:;
+- (void)cleanEffectsDirectoryWithUnCleanPanelList:policy:completion:;
+- (void)cleanTmpDirectoryWithPolicy:completion:;
+- (BOOL)cleaningAlgorithmDirectoryFlag;
+- (BOOL)cleaningEffectsDirectoryFlag;
+- (BOOL)cleaningTmpDirectoryFlag;
+- (id)currentAllowList;
+- (void)removeExistAllowPanelListIfNeed:;
+- (void)setAllowPanelList:;
+- (void)setCleaningAlgorithmDirectoryFlag:;
+- (void)setCleaningEffectsDirectoryFlag:;
+- (void)setCleaningTmpDirectoryFlag:;
+- (void)setManifestManager:;
+- (void)vacuumDatabaseFile;
+- (void)setConfig:;
+- (id)manifestManager;
+- (void).cxx_destruct;
+- (id)config;
+@end

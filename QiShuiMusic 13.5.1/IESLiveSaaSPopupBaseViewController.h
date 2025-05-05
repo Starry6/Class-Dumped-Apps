@@ -1,0 +1,31 @@
+@interface IESLiveSaaSPopupBaseViewController : UIViewController
+@property (nonatomic) UIView contentView;
+@property (nonatomic) UIView safeAreaAdaptView;
+@property (nonatomic) BOOL disableDismissOnClick;
+@property (nonatomic) IESLiveSaaSPopupNavigationBar navBar;
+@property (nonatomic) BOOL hideLetfItem;
+@property (nonatomic) BOOL dissmissOnly;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)addNavbarSeparatorLineView;
+- (void)didClickBackgroundView;
+- (BOOL)disableDismissOnClick;
+- (BOOL)dissmissOnly;
+- (BOOL)hideLetfItem;
+- (void)onSetupNavBar:;
+- (id)safeAreaAdaptView;
+- (void)setDisableDismissOnClick:;
+- (void)setDissmissOnly:;
+- (void)setHideLetfItem:;
+- (void)setSafeAreaAdaptView:;
+- (void)dismiss;
+- (id)contentView;
+- (void).cxx_destruct;
+- (void)viewDidAppear:;
+- (void)viewWillAppear:;
+- (void)setContentView:;
+- (void)viewDidLoad;
+- (id)navBar;
+@end

@@ -1,0 +1,2 @@
+@interface IESGLVerticsUtil : NSObject
+@end

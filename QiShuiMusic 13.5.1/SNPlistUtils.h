@@ -1,0 +1,2 @@
+@interface SNPlistUtils : NSObject
+@end

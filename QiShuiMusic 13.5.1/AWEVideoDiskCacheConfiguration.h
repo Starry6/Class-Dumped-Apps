@@ -1,0 +1,35 @@
+@interface AWEVideoDiskCacheConfiguration : NSObject
+@property (nonatomic) Q costLimit;
+@property (nonatomic) Q autoTrimInterval;
+@property (nonatomic) BOOL fileLogEnabled;
+@property (nonatomic) @? URLStringToCacheKey;
+@property (nonatomic) @? Reporter;
+@property (nonatomic) <AWEVideoCDNRequestDelegate> CDNTrackDelegate;
+@property (nonatomic) <AWEVideoDownloadDelegate> videoDownloadDelegate;
+@property (nonatomic) # networkUtilityClass;
+@property (nonatomic) <AWEVideoPlayerLoggerDelegate> loggerDelegate;
+@property (nonatomic) Q disableAutoTrimFileLifeTime;
+- (id)CDNTrackDelegate;
+- (void)setDisableAutoTrimFileLifeTime:;
+- (id)Reporter;
+- (id)URLStringToCacheKey;
+- (unsigned long long)autoTrimInterval;
+- (unsigned long long)costLimit;
+- (unsigned long long)disableAutoTrimFileLifeTime;
+- (BOOL)fileLogEnabled;
+- (id)loggerDelegate;
+- (Class)networkUtilityClass;
+- (void)setAutoTrimInterval:;
+- (void)setCDNTrackDelegate:;
+- (void)setCostLimit:;
+- (void)setFileLogEnabled:;
+- (void)setLoggerDelegate:;
+- (void)setNetworkUtilityClass:;
+- (void)setURLStringToCacheKey:;
+- (void)setVideoDownloadDelegate:;
+- (id)videoDownloadDelegate;
+- (id)init;
+- (void)setReporter:;
+- (void).cxx_destruct;
++ (id)sharedInstance;
+@end

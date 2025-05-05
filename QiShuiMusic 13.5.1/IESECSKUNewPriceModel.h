@@ -1,0 +1,31 @@
+@interface IESECSKUNewPriceModel : MTLModel
+@property (nonatomic) NSString prefix;
+@property (nonatomic) NSString suffix;
+@property (nonatomic) NSNumber price;
+@property (nonatomic) NSNumber minPrice;
+@property (nonatomic) NSNumber maxPrice;
+@property (nonatomic) BOOL isUnderline;
+@property (nonatomic) BOOL isReducePrice;
+@property (nonatomic) BOOL isValid;
+@property (nonatomic) BOOL isRangePrice;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)isRangePrice;
+- (BOOL)isReducePrice;
+- (id)maxPrice;
+- (id)minPrice;
+- (void)setMaxPrice:;
+- (void)setMinPrice:;
+- (id)suffix;
+- (void)setPrefix:;
+- (id)prefix;
+- (BOOL)isValid;
+- (void).cxx_destruct;
+- (void)setSuffix:;
+- (id)price;
+- (void)setPrice:;
+- (BOOL)isUnderline;
++ (id)JSONKeyPathsByPropertyKey;
+@end

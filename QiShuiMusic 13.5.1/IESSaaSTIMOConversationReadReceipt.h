@@ -1,0 +1,37 @@
+@interface IESSaaSTIMOConversationReadReceipt : NSObject
+@property (nonatomic) IESSaaSTIMPBResponseLongConnectionCallback longConnectCallback;
+@property (nonatomic) double lastFetchTimestamp;
+@property (nonatomic) BOOL hasAFetchTesk;
+@property (nonatomic) NSMutableDictionary readyToRequestConIDToModelDict;
+@property (nonatomic) NSPointerArray callbacks;
+@property (nonatomic) double requestThrottle;
+@property (nonatomic) q convIDCacheLength;
+@property (nonatomic) BOOL featureEnable;
+- (double)requestThrottle;
+- (void)addWeakReadReceiptCallbackFromServer:;
+- (void)configLongConnectionResponse:;
+- (void)configResponse:requestModels:serverPushTrigger:callback:;
+- (long long)convIDCacheLength;
+- (BOOL)featureEnable;
+- (void)fetchReadIndexOfParticipantsWithRequestFrom:models:completion:;
+- (BOOL)hasAFetchTesk;
+- (void)invokeCallbacksWithDict:serverPushTrigger:callback:;
+- (double)lastFetchTimestamp;
+- (id)longConnectCallback;
+- (id)readyToRequestConIDToModelDict;
+- (void)reloadReadReceiptWithModels:requestFrom:completion:;
+- (void)setConvIDCacheLength:;
+- (void)setFeatureEnable:;
+- (void)setHasAFetchTesk:;
+- (void)setLastFetchTimestamp:;
+- (void)setLongConnectCallback:;
+- (void)setReadyToRequestConIDToModelDict:;
+- (void)setRequestThrottle:;
+- (void)triggerRequestFromServerPushWithRequestModels:;
+- (id)init;
+- (void)setCallbacks:;
+- (id)callbacks;
+- (void).cxx_destruct;
++ (id)readReceiptQueue;
++ (id)sharedInstance;
+@end

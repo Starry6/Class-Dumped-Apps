@@ -1,0 +1,34 @@
+@interface IESLiveInteractionLinkerInviteContext : NSObject
+@property (nonatomic) IESLiveLinkmicLinkAudienceInviteContext linkmicContext;
+@property (nonatomic) HTSLiveLinkMicMethod_InvitorInfo invitorInfo;
+@property (nonatomic) HTSLiveJoinTeamfightInfo joinTeamfightInfo;
+@property (nonatomic) IESLiveGameInviteInfo gameInviteInfo;
+@property (nonatomic) IESLiveMsgBoardItemInfo msgBoardItem;
+@property (nonatomic) HTSLiveText inviteMessage;
+@property (nonatomic) NSArray noticeInfosArray;
+@property (nonatomic) NSString secFromUserId;
+@property (nonatomic) NSString fromUserId;
+@property (nonatomic) NSInteger inviteSource;
+@property (nonatomic) NSObject rawData;
+@property (nonatomic) NSString promptString;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)fromUserId;
+- (id)gameInviteInfo;
+- (id)initWithLinkMicMethod:;
+- (id)initWithLinkmicLinkAudienceInviteContext:;
+- (int)inviteSource;
+- (id)invitorInfo;
+- (id)joinTeamfightInfo;
+- (id)linkmicContext;
+- (id)msgBoardItem;
+- (id)noticeInfosArray;
+- (id)secFromUserId;
+- (void)setLinkmicContext:;
+- (void).cxx_destruct;
+- (id)rawData;
+- (id)inviteMessage;
+- (id)promptString;
+@end

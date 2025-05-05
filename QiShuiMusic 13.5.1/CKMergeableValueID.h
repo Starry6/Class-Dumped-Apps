@@ -1,0 +1,33 @@
+@interface CKMergeableValueID : NSObject
+@property (nonatomic) NSString zoneName;
+@property (nonatomic) NSString zoneOwner;
+@property (nonatomic) NSString recordName;
+@property (nonatomic) NSString recordFieldName;
+@property (nonatomic) BOOL encrypted;
+@property (nonatomic) NSString name;
+@property (nonatomic) NSData identifier;
+- (id)key;
+- (id)zoneID;
+- (id)recordID;
+- (id)initWithName:zoneID:;
+- (id)initWithName:recordID:key:encrypted:;
+- (BOOL)isEncrypted;
+- (id)zoneName;
+- (id)identifier;
+- (id)initWithName:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)name;
+- (BOOL)isEqual:;
+- (id)recordName;
+- (id)copyWithZone:;
+- (id)initWithData:zoneName:zoneOwner:recordName:recordFieldName:encrypted:;
+- (id)initWithData:zoneName:zoneOwner:;
+- (id)zoneOwner;
+- (id)recordFieldName;
+- (BOOL)isEqualToMergeableValueID:;
++ (BOOL)supportsSecureCoding;
+@end

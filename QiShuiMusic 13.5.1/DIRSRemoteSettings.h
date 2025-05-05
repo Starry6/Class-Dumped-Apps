@@ -1,0 +1,35 @@
+@interface DIRSRemoteSettings : DIRSBasicModule
+@property (nonatomic) double fetchInterval;
+@property (nonatomic) DIRSConcurrentCollection raw;
+@property (nonatomic) DIRSValue config;
+@property (nonatomic) BOOL isEnabled;
+@property (nonatomic) q state;
+@property (nonatomic) DIRSContext context;
+@property (nonatomic) NSString category;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)_notifyConfigUpdate:source:;
+- (id)_sycnFetch;
+- (BOOL)allowRequest;
+- (void)applyRemoteSettings;
+- (void)onFinishInitialization:;
+- (void)onFinishLaunching:;
+- (void)onIdentifierAvailable;
+- (id)storeFilePath;
+- (void)fetch:;
+- (void)setConfig:;
+- (void)commonInit;
+- (void)restore;
+- (void).cxx_destruct;
+- (id)config;
+- (double)fetchInterval;
+- (void)setRaw:;
+- (id)raw;
+- (void)setFetchInterval:;
++ (id)moduleDependencies;
++ (id)moduleId;
++ (long long)priority;
++ (id)moduleVersion;
+@end

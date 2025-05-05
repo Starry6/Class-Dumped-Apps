@@ -1,0 +1,33 @@
+@interface GEOAsset : PBCodable
+@property (nonatomic) BOOL hasUrl;
+@property (nonatomic) NSString url;
+@property (nonatomic) BOOL hasScaleFactor;
+@property (nonatomic) NSInteger scaleFactor;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (id)url;
+- (BOOL)hasUrl;
+- (id)initWithJSON:;
+- (int)scaleFactor;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)setScaleFactor:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)setUrl:;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setHasScaleFactor:;
+- (BOOL)hasScaleFactor;
+- (id)scaleFactorAsString:;
+- (int)StringAsScaleFactor:;
++ (BOOL)isValid:;
+@end

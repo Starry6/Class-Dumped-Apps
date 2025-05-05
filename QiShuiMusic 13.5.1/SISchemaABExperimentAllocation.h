@@ -1,0 +1,34 @@
+@interface SISchemaABExperimentAllocation : SISchemaInstrumentationMessage
+@property (nonatomic) NSString experimentId;
+@property (nonatomic) BOOL hasExperimentId;
+@property (nonatomic) NSString treatmentId;
+@property (nonatomic) BOOL hasTreatmentId;
+@property (nonatomic) q deploymentId;
+@property (nonatomic) BOOL hasDeploymentId;
+@property (nonatomic) NSData jsonData;
+- (id)experimentId;
+- (id)treatmentId;
+- (void)setExperimentId:;
+- (long long)deploymentId;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void)setDeploymentId:;
+- (BOOL)hasDeploymentId;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (BOOL)hasExperimentId;
+- (BOOL)hasTreatmentId;
+- (void)setHasDeploymentId:;
+- (void)setTreatmentId:;
+- (void)deleteExperimentId;
+- (void)deleteTreatmentId;
+- (void)deleteDeploymentId;
+- (void)setHasExperimentId:;
+- (void)setHasTreatmentId:;
+@end

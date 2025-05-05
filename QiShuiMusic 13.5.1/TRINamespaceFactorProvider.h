@@ -1,0 +1,30 @@
+@interface TRINamespaceFactorProvider : NSObject
+@property (nonatomic) NSString namespaceName;
+@property (nonatomic) I namespaceCompatibilityVersion;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)experimentId;
+- (id)treatmentId;
+- (id)namespaceName;
+- (int)deploymentId;
+- (void)dispose;
+- (unsigned int)namespaceId;
+- (id)rolloutId;
+- (id)initWithNamespaceName:namespaceCompatibilityVersion:paths:factorLevels:treatmentId:factorDirectoryLock:;
+- (id)factorLevels;
+- (id)levelForFactor:;
+- (id)initWithNamespaceName:treatmentData:namespaceCompatibilityVersion:paths:referencePath:factorDirectoryLock:error:;
+- (unsigned int)namespaceCompatibilityVersion;
+- (void).cxx_destruct;
+- (BOOL)overwriteItemAtPath:withItemAtPath:error:;
+- (BOOL)saveToPath:copyAssets:;
+- (id)overlayLevelsFromFactorProvider:;
+- (id)_copyAssetsToDirectory:;
++ (id)factorLevelsWithTreatmentData:referencePath:filteredByNamespaceName:outTreatmentId:error:;
++ (id)pathForFactor:directory:;
++ (id)_assetFilenameForFactor:;
++ (id)factorProviderWithNamespaceName:paths:treatmentLayer:faultOnMissingFactors:shouldLockFactorDirectory:;
++ (id)factorProviderWithNamespaceDescriptor:paths:faultOnMissingFactors:shouldLockFactorDirectory:;
+@end

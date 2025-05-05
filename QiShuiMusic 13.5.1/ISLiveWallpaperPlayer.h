@@ -1,0 +1,30 @@
+@interface ISLiveWallpaperPlayer : ISBasePlayer
+@property (nonatomic) BOOL _active;
+@property (nonatomic) ISDisplayLink _displayLink;
+@property (nonatomic) BOOL _seeking;
+@property (nonatomic) float _playRate;
+@property (nonatomic) BOOL touching;
+@property (nonatomic) double force;
+@property (nonatomic) BOOL playing;
+- (void)_setActive:;
+- (void)_update;
+- (BOOL)isPlaying;
+- (double)force;
+- (void)setForce:;
+- (void)_setDisplayLink:;
+- (id)_displayLink;
+- (BOOL)isTouching;
+- (void)didPerformChanges;
+- (BOOL)_active;
+- (void)setPlayerItem:;
+- (void)statusDidChange;
+- (void)setTouching:;
+- (BOOL)_isSeeking;
+- (float)_playRate;
+- (void)_setPlayRate:;
+- (void)_updatePlayer;
+- (void)_seekVideoToBeginning;
+- (void)_seekVideoToEnd;
+- (void)_handleDidFinishSeeking:;
+- (void)_setSeeking:;
+@end

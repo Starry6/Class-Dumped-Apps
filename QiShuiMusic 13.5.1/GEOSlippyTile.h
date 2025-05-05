@@ -1,0 +1,38 @@
+@interface GEOSlippyTile : PBCodable
+@property (nonatomic) BOOL hasX;
+@property (nonatomic) I x;
+@property (nonatomic) BOOL hasY;
+@property (nonatomic) I y;
+@property (nonatomic) BOOL hasZ;
+@property (nonatomic) I z;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)setHasX:;
+- (void)setHasY:;
+- (void)readAll:;
+- (id)unknownFields;
+- (BOOL)hasY;
+- (void)setX:;
+- (id)initWithJSON:;
+- (void)setY:;
+- (id)jsonRepresentation;
+- (unsigned int)y;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)setZ:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (unsigned int)x;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (unsigned int)z;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)hasX;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setHasZ:;
+- (BOOL)hasZ;
++ (BOOL)isValid:;
+@end

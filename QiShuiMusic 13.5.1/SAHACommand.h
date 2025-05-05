@@ -1,0 +1,33 @@
+@interface SAHACommand : SADomainCommand
+@property (nonatomic) NSArray actionRequests;
+@property (nonatomic) NSArray actions;
+@property (nonatomic) NSNumber commandTimeout;
+@property (nonatomic) SAHAFilter filter;
+@property (nonatomic) BOOL mutatingCommand;
+@property (nonatomic) NSString serverValidity;
+@property (nonatomic) NSString appId;
+@property (nonatomic) NSArray callbacks;
+@property (nonatomic) NSString aceId;
+@property (nonatomic) NSString refId;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)filter;
+- (void)setFilter:;
+- (id)groupIdentifier;
+- (void)setActions:;
+- (BOOL)requiresResponse;
+- (id)actions;
+- (id)encodedClassName;
+- (void)setCommandTimeout:;
+- (id)commandTimeout;
+- (id)actionRequests;
+- (BOOL)mutatingCommand;
+- (void)setMutatingCommand:;
+- (id)serverValidity;
+- (void)setServerValidity:;
+- (void)setActionRequests:;
++ (id)command;
++ (id)commandWithDictionary:context:;
+@end

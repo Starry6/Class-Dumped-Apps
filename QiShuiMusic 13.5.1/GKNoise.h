@@ -1,0 +1,38 @@
+@interface GKNoise : NSObject
+@property (nonatomic) NSDictionary gradientColors;
+- (id)init;
+- (void)dealloc;
+- (id)gradientColors;
+- (void)rotateBy:;
+- (void)scaleBy:;
+- (void).cxx_destruct;
+- (void)invert;
+- (void)setGradientColors:;
+- (float)valueAtPosition:;
+- (id)initWithNoiseSource:;
+- (id)initWithNoiseSource:gradientColors:;
+- (id)__modules;
+- (void)cacheUnaryModule:;
+- (void)cacheBinaryModule:rhsNoise:;
+- (void)cacheTernaryModule:rhsNoise:selectionNoise:;
+- (void)cacheQuaternaryModule:xDisplacementNoise:yDisplacementNoise:zDisplacementNoise:;
+- (id)cloneRecursive:;
+- (void)applyAbsoluteValue;
+- (void)clampWithLowerBound:upperBound:;
+- (void)raiseToPower:;
+- (void)applyTurbulenceWithFrequency:power:roughness:seed:;
+- (void)remapValuesToCurveWithControlPoints:;
+- (void)remapValuesToTerracesWithPeaks:terracesInverted:;
+- (void)moveBy:;
+- (void)addWithNoise:;
+- (void)multiplyWithNoise:;
+- (void)minimumWithNoise:;
+- (void)maximumWithNoise:;
+- (void)raiseToPowerWithNoise:;
+- (void)displaceXWithNoise:yWithNoise:zWithNoise:;
+- (void)__blendWithNoise:selectionNoise:selectionRangeLowerBound:selectionRangeUpperBound:selectionBoundaryBlendDistance:;
++ (id)noiseWithNoiseSource:;
++ (id)noiseWithNoiseSource:gradientColors:;
++ (id)noiseWithComponentNoises:selectionNoise:;
++ (id)noiseWithComponentNoises:selectionNoise:componentBoundaries:boundaryBlendDistances:;
+@end

@@ -1,0 +1,31 @@
+@interface OSAReport : NSObject
+@property (nonatomic) double capture_time;
+@property (nonatomic) NSArray notes;
+@property (nonatomic) NSString logfile;
+@property (nonatomic) NSString etlKey;
+- (id)notes;
+- (void)setEtlKey:;
+- (double)captureTime;
+- (id)init;
+- (id)problemType;
+- (double)capture_time;
+- (id)incidentID;
+- (BOOL)saveWithOptions:;
+- (int)streamContentAtLevel:withBlock:;
+- (id)etlKey;
+- (void)symlink:;
+- (id)appleCareDetails;
+- (id)reportNamePrefix;
+- (id)additionalIPSMetadata;
+- (void)generateLogAtLevel:withBlock:;
+- (void).cxx_destruct;
+- (BOOL)isAppleTV;
+- (id)logfile;
+- (id)getSyslogForPids:andOptionalSenders:;
+- (BOOL)isActionable;
++ (id)bootArgs;
++ (unsigned char)executeWithTimeout:Code:;
++ (id)systemIDWithDescription:;
++ (id)kernelVersionDescription;
++ (id)findBundleAtPath:withKeys:bundleURL:;
+@end

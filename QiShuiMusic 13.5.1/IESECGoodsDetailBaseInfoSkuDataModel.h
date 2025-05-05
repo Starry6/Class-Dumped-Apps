@@ -1,0 +1,30 @@
+@interface IESECGoodsDetailBaseInfoSkuDataModel : MTLModel
+@property (nonatomic) IESECMediaBoxElement mainImage;
+@property (nonatomic) IESECTextElement skuNumContent;
+@property (nonatomic) q textSpace;
+@property (nonatomic) IESECMediaScrollBoxElement thumbnailList;
+@property (nonatomic) IESECTextWithIconElement moreSkuInfoContent;
+@property (nonatomic) q selectedIndex;
+@property (nonatomic) NSArray priceList;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)mainImage;
+- (id)moreSkuInfoContent;
+- (id)priceList;
+- (void)setMainImage:;
+- (void)setMoreSkuInfoContent:;
+- (void)setPriceList:;
+- (void)setSkuNumContent:;
+- (void)setTextSpace:;
+- (void)setThumbnailList:;
+- (id)skuNumContent;
+- (id)thumbnailList;
+- (long long)selectedIndex;
+- (long long)textSpace;
+- (void).cxx_destruct;
+- (void)setSelectedIndex:;
++ (id)priceListJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

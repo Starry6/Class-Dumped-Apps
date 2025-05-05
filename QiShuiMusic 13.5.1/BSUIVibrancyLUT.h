@@ -1,0 +1,31 @@
+@interface BSUIVibrancyLUT : NSObject
+@property (nonatomic) NSString lutIdentifier;
+@property (nonatomic) NSURL bundleURL;
+@property (nonatomic) CAFilter resolvedLUTFilter;
+@property (nonatomic) NSString groupName;
+@property (nonatomic) BOOL isLuminanceReduced;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)bundleURL;
+- (id)initWithBSXPCCoder:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (void)encodeWithBSXPCCoder:;
+- (id)groupName;
+- (void)appendDescriptionToFormatter:;
+- (BOOL)isLuminanceReduced;
+- (id)lutIdentifier;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)initWithIdentifier:bundleURL:;
+- (id)initWithIdentifier:bundleURL:luminanceReduced:;
+- (id)resolvedLUTFilter;
+- (id)copyWithLuminanceReduced:;
+- (void)setIsLuminanceReduced:;
++ (BOOL)supportsSecureCoding;
++ (BOOL)supportsBSXPCSecureCoding;
+@end

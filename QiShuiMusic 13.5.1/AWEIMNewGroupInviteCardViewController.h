@@ -1,0 +1,36 @@
+@interface AWEIMNewGroupInviteCardViewController : UIViewController
+@property (nonatomic) AWEIMNewGroupInviteCardView cardView;
+@property (nonatomic) IESIMUILoadingView loadingView;
+@property (nonatomic) BOOL isAnimating;
+@property (nonatomic) AWEIMNewGroupInviteCardViewModel viewModel;
+@property (nonatomic) @? joinGroupSuccessBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)configWithRouterParamDict:;
+- (void)didTapConfirmBtn;
+- (void)didTapGroupownerInfo;
+- (id)joinGroupSuccessBlock;
+- (void)setJoinGroupSuccessBlock:;
+- (void)setupBinding;
+- (void)dismiss;
+- (id)viewModel;
+- (BOOL)isAnimating;
+- (id)tableView:cellForRowAtIndexPath:;
+- (void)show;
+- (double)tableView:heightForRowAtIndexPath:;
+- (void).cxx_destruct;
+- (void)viewWillAppear:;
+- (void)setViewModel:;
+- (void)setIsAnimating:;
+- (long long)tableView:numberOfRowsInSection:;
+- (void)viewDidLoad;
+- (long long)numberOfSectionsInTableView:;
+- (void)setupUI;
+- (id)cardView;
+- (void)setCardView:;
+- (double)tableViewHeight;
+- (id)loadingView;
+- (void)setLoadingView:;
+@end

@@ -1,0 +1,30 @@
+@interface CADPropertyFilter : CADFilter
+@property (nonatomic) q property;
+@property (nonatomic) q comparison;
+@property (nonatomic) NSString stringValue;
+@property (nonatomic) q integerValue;
+@property (nonatomic) NSDate dateValue;
+@property (nonatomic) BOOL isString;
+@property (nonatomic) BOOL isInteger;
+@property (nonatomic) BOOL isDate;
+- (BOOL)ekPredicateFilterMatches:;
+- (BOOL)validate;
+- (long long)comparison;
+- (id)dateValue;
+- (long long)property;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (BOOL)isInteger;
+- (id)stringValue;
+- (void).cxx_destruct;
+- (long long)integerValue;
+- (BOOL)isString;
+- (BOOL)isDate;
+- (id)initWithProperty:comparison:dateValue:;
+- (id)initWithProperty:comparison:integerValue:;
+- (id)initWithProperty:comparison:stringValue:;
+- (BOOL)applicableToEntityType:;
+- (id)extendWhereClause:usingOperation:withValues:andTypes:;
+- (BOOL)validateWithRequiredPropertyType:;
++ (BOOL)supportsSecureCoding;
+@end

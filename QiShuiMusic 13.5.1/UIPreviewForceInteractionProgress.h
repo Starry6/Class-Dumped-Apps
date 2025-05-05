@@ -1,0 +1,30 @@
+@interface UIPreviewForceInteractionProgress : UIInteractionProgress
+@property (nonatomic) q _targetState;
+@property (nonatomic) BOOL _classifierShouldRespectSystemGestureTouchFiltering;
+@property (nonatomic) BOOL completesAtTargetState;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void).cxx_destruct;
+- (BOOL)didEnd;
+- (void)_forceLevelClassifier:currentForceLevelDidChange:;
+- (void)_forceLevelClassifierDidReset:;
+- (id)initWithGestureRecognizer:;
+- (BOOL)completesAtTargetState;
+- (void)setCompletesAtTargetState:;
+- (id)initWithView:targetState:;
+- (id)initWithView:targetState:minimumRequiredState:;
+- (id)initWithGestureRecognizer:minimumRequiredState:;
+- (void)_setGestureBeginObservable:;
+- (id)_initWithView:targetState:minimumRequiredState:useLinearClassifier:;
+- (id)_initWithObservable:targetState:minimumRequiredState:;
+- (id)_initWithObservable:targetState:minimumRequiredState:useLinearClassifier:;
+- (BOOL)enteredMinimumState;
+- (void)_installProgressObserver;
+- (void)_setTargetState:;
+- (void)_gestureRecognizerBegan:;
+- (void)_setClassifierShouldRespectSystemGestureTouchFiltering:;
+- (BOOL)_classifierShouldRespectSystemGestureTouchFiltering;
+- (long long)_targetState;
+@end

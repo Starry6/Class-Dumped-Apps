@@ -1,0 +1,33 @@
+@interface PLCloudBatchDownloader : NSObject
+- (void)_handleAlbumRecords:inLibrary:;
+- (void)_handleRelationsForAlbumRecords:inLibrary:;
+- (id)handleIncomingBatch:;
+- (void)_assetsAndCloudMastersFromAssetRecords:assetsByScopedIdentifier:mastersByScopedIdentifier:inLibrary:;
+- (void)_mergeExistingPersonsWithPerson:inPhotoLibrary:;
+- (id)_handlePersonRecords:inLibrary:includesTiboSchema:;
+- (id)_debugPrintAlbumOrderForAssets:;
+- (id)_handleAssetRecords:inSyncContext:withChangeBatch:insertedAssetUUIDs:;
+- (id)_findMaster:fromAdditionalRecordInBatch:inLibrary:;
+- (id)_handleMemoryRecords:inLibrary:;
+- (void)_processNotificationUpdatesForSuggestions:;
+- (void)_processDuplicateForAssetUUIDs:library:;
+- (void)_dropDeferredRebuildFacesInPhotoLibrary:;
+- (void)_handleRelationsForAssetRecords:inLibrary:;
+- (void)_mergeUpdatedPersons:inLibrary:;
+- (void)_saveIfNeeded:;
+- (void).cxx_destruct;
+- (void)_handleFaceCropRecords:inLibrary:;
+- (id)deletedRecordsFromBatch:;
+- (id)_handleMasterRecords:inLibrary:;
+- (void)_dedupePersonsInSyncContext:;
+- (void)_handleDeleteRecords:inLibrary:;
+- (void)_processNotificationUpdatesForMemories:;
+- (id)_mergeTargetFromPersons:;
+- (id)initWithLibraryServicesManager:manager:;
+- (BOOL)_shouldHandleNotificationChangeForMemory:memoryRecord:wasPersisted:;
+- (void)_handleScopeChanges:inLibrary:;
+- (void)_handleExpungedRecords:inLibrary:;
+- (void)_triggerBackgroundDownloadFailureForResources:;
+- (id)_handleSuggestionRecords:inLibrary:;
++ (id)_adjustmentStateDictionaryForComparingIncomingFaceRecordForAsset:;
+@end

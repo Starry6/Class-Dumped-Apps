@@ -1,0 +1,34 @@
+@interface CWFClient : NSObject
+@property (nonatomic) BOOL invalidated;
+@property (nonatomic) NSXPCConnection XPCConnection;
+@property (nonatomic) q serviceType;
+@property (nonatomic) NSObject<OS_dispatch_queue> targetQueue;
+@property (nonatomic) @? invalidationHandler;
+- (void)setEventHandler:eventID:;
+- (id)init;
+- (void)dealloc;
+- (id)targetQueue;
+- (BOOL)beginActivity:requestParameters:error:;
+- (BOOL)invalidated;
+- (id)XPCConnection;
+- (long long)serviceType;
+- (void)endActivity:requestParameters:;
+- (void)setTargetQueue:;
+- (void)suspend;
+- (void)clearAllEventHandlers;
+- (void)resume;
+- (void)endAllActivities:;
+- (BOOL)startMonitoringEvent:requestParameters:error:;
+- (id)initWithServiceType:;
+- (void)setInvalidated:;
+- (void)stopMonitoringAllEvents:;
+- (void)__startMonitoringEvent:requestParameters:reply:;
+- (void)proxy:receivedEvent:;
+- (void).cxx_destruct;
+- (id)invalidationHandler;
+- (void)setInvalidationHandler:;
+- (void)stopMonitoringEvent:requestParameters:;
+- (id)eventHandlerWithEventID:;
+- (void)__beginActivity:requestParameters:reply:;
+- (void)invalidate;
+@end

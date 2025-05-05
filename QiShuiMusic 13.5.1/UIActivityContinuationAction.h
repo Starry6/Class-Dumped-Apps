@@ -1,0 +1,2 @@
+@interface UIActivityContinuationAction : UISActivityContinuationAction
+@end

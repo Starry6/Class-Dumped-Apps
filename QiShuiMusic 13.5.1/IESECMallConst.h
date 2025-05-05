@@ -1,0 +1,2 @@
+@interface IESECMallConst : NSObject
+@end

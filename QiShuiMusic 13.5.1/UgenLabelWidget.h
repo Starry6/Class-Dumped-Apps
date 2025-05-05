@@ -1,0 +1,37 @@
+@interface UgenLabelWidget : UgenWidget
+@property (nonatomic) UgenLabelView label;
+@property (nonatomic) NSString text;
+@property (nonatomic) NSString textColor;
+@property (nonatomic) q textSize;
+@property (nonatomic) NSString textStyle;
+@property (nonatomic) q lines;
+@property (nonatomic) q maxLines;
+@property (nonatomic) NSString ellipsize;
+@property (nonatomic) NSString textAlign;
+@property (nonatomic) NSString textDecoration;
+- (void)bindAttributeValue:forKey:;
+- (id)ellipsize;
+- (void)setEllipsize:;
+- (id)ugenView;
+- (void)setMaxLines:;
+- (id)init;
+- (id)textStyle;
+- (void)setText:;
+- (long long)maxLines;
+- (void)setLabel:;
+- (id)label;
+- (void)setTextStyle:;
+- (void)setTextColor:;
+- (void).cxx_destruct;
+- (id)textColor;
+- (long long)lines;
+- (id)text;
+- (void)render;
+- (long long)textSize;
+- (void)setLines:;
+- (void)setTextAlign:;
+- (id)textAlign;
+- (id)textDecoration;
+- (void)setTextDecoration:;
+- (void)setTextSize:;
+@end

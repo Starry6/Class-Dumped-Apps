@@ -1,0 +1,2 @@
+@interface DOMCDATASection : DOMText
+@end

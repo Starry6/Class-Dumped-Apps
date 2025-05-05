@@ -1,0 +1,34 @@
+@interface SignpostRenderServerRenderInterval : SignpostAnimationSubInterval
+@property (nonatomic) NSMutableArray imageQueueSampleEvents;
+@property (nonatomic) NSMutableArray clientDrawableIntervals;
+@property (nonatomic) I frameSeed;
+@property (nonatomic) Q displayRefreshIntervalMachContinuousTime;
+@property (nonatomic) I displayID;
+@property (nonatomic) BOOL hasOffScreenPassCount;
+@property (nonatomic) I offScreenPassCount;
+@property (nonatomic) BOOL didSkipRender;
+@property (nonatomic) NSString renderSkipReason;
+@property (nonatomic) NSInteger renderServerPID;
+@property (nonatomic) Q renderServerTID;
+@property (nonatomic) NSNumber synchronousMetalShaderCompileCount;
+@property (nonatomic) NSNumber cachingLayersRerenderCount;
+@property (nonatomic) NSNumber fallbackShaderDrawCount;
+- (unsigned int)displayID;
+- (void).cxx_destruct;
+- (unsigned int)frameSeed;
+- (id)imageQueueSampleEvents;
+- (void)setImageQueueSampleEvents:;
+- (id)clientDrawableIntervals;
+- (void)setClientDrawableIntervals:;
+- (id)initWithRenderServerRenderInterval:;
+- (BOOL)didSkipRender;
+- (unsigned long long)displayRefreshIntervalMachContinuousTime;
+- (BOOL)hasOffScreenPassCount;
+- (unsigned int)offScreenPassCount;
+- (id)renderSkipReason;
+- (int)renderServerPID;
+- (unsigned long long)renderServerTID;
+- (id)synchronousMetalShaderCompileCount;
+- (id)cachingLayersRerenderCount;
+- (id)fallbackShaderDrawCount;
+@end

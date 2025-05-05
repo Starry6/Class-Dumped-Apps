@@ -1,0 +1,34 @@
+@interface TTDownloadApi : NSObject
+- (void)cancelTaskSync:;
+- (long long)getAllTaskCount;
+- (BOOL)deleteTaskSync:;
+- (void)cancelDownloadWithURL:;
+- (void)cancelTaskAsync:block:;
+- (BOOL)clearAllCache:clearCacheKey:;
+- (void)deleteDownloadWithURL:resultBlock:;
+- (void)dispatchTask:userParameters:resultBlock:progress:work:;
+- (long long)getAllCacheCount;
+- (long long)getAllNoExpireTimeCacheCount;
+- (short)getDownlodingTaskCountMax;
+- (long long)getQueueWaitTaskCount;
+- (BOOL)preResourcesCheck:progress:resultBlock:userParameters:;
+- (void)queryDownloadInfoWithURL:downloadInfoBlock:;
+- (id)queryTaskInfoSync:;
+- (void)reportDownloadProgress:progress:resultBlock:;
+- (int)resumeDownloadWithKey:urlLists:progress:status:userParameters:;
+- (int)resumeDownloadWithURL:progress:status:userParameters:;
+- (void)setDownloadEventBlock:;
+- (BOOL)setDownlodingTaskCountMax:;
+- (void)setGlobalDownloadParameters:;
+- (void)setGlobalMetricsBlock:;
+- (void)setIsForceCacheLifeTimeMaxEnable:;
+- (BOOL)setThrottleNetSpeedWithURL:bytesPerSecond:;
+- (void)setWifiOnlyWithUrlKey:isWifiOnly:;
+- (int)startDownloadWithKey:fileName:md5Value:urlLists:progress:status:userParameters:;
+- (int)startDownloadWithURL:fileName:md5Value:urlLists:progress:status:userParameters:;
+- (void)stopClearNoExpireCache;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
++ (id)shareInstance;
+@end

@@ -1,0 +1,30 @@
+@interface SCNTextureUIKitSource : SCNTextureCoreAnimationSource
+@property (nonatomic) UIView uiView;
+@property (nonatomic) UIWindow uiWindow;
+@property (nonatomic) CALayer uiWindowLayer;
+@property (nonatomic) @ source;
+@property (nonatomic) BOOL isOpaque;
+- (void)dealloc;
+- (id)layer;
+- (BOOL)isOpaque;
+- (void)setup;
+- (id)source;
+- (void)setSource:;
+- (void)cleanup:;
+- (BOOL)supportsMetal;
+- (id)layerToFocusForRenderedLayer:;
+- (float)clearValue;
+- (BOOL)requiresMainThreadUpdates;
+- (id)layerSizeInPixels;
+- (double)layerContentsScaleFactor;
+- (id)textureWithEngineContext:textureSampler:nextFrameTime:;
+- (void)setIsOpaque:;
+- (id)uiView;
+- (void)setUiView:;
+- (id)uiWindow;
+- (void)setUiWindow:;
+- (void)_layerTreeDidUpdate;
+- (BOOL)shouldFlip;
+- (id)uiWindowLayer;
+- (void)setUiWindowLayer:;
+@end

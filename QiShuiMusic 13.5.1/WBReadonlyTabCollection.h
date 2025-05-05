@@ -1,0 +1,37 @@
+@interface WBReadonlyTabCollection : NSObject
+@property (nonatomic) BOOL completedMigration;
+@property (nonatomic) BOOL persistent;
+@property (nonatomic) WBBrowserState browserState;
+@property (nonatomic) WBBrowserState lastSessionBrowserState;
+@property (nonatomic) NSArray windowStates;
+@property (nonatomic) NSInteger windowsFolderSpecialID;
+@property (nonatomic) NSArray windows;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSInteger pinnedTabsFolderID;
+@property (nonatomic) NSInteger privatePinnedTabsFolderID;
+@property (nonatomic) NSArray tabGroups;
+@property (nonatomic) Q maximumTabsPerGroup;
+- (id)windowStates;
+- (id)windowWithUUID:;
+- (id)windows;
+- (id)windowStateWithUUID:;
+- (id)tabGroups;
+- (id)init;
+- (BOOL)isPersistent;
+- (unsigned long long)maximumTabsPerGroup;
+- (BOOL)hasCompletedMigration;
+- (id)browserState;
+- (int)privatePinnedTabsFolderID;
+- (void)setMaximumTabsPerGroup:;
+- (id)lastSessionBrowserState;
+- (id)tabWithUUID:;
+- (int)pinnedTabsFolderID;
+- (id)tabGroupWithUUID:;
+- (int)windowsFolderSpecialID;
+- (void).cxx_destruct;
+- (id)tabsForTabGroup:;
+- (void)tabGroupsWithCompletionHandler:;
+@end

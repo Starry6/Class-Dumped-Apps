@@ -1,0 +1,2 @@
+@interface IESSaaSTIMOTemplateQuery : IESSaaSTIMOQuery
+@end

@@ -1,0 +1,31 @@
+@interface IESECShopThemeService : NSObject
+@property (nonatomic) Q flagshipStyle;
+@property (nonatomic) NSArray headerBackLayerColors;
+@property (nonatomic) UIColor extensionTipTitleColor;
+@property (nonatomic) NSString extensionTipLottieFilePath;
+@property (nonatomic) BOOL useFlagshipStyle;
+@property (nonatomic) double headerThemeHeight;
+@property (nonatomic) BOOL useDarkStatusBarStyle;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)configExtensionTipView;
+- (void)configHeaderBackLayer;
+- (id)extensionTipLottieFilePath;
+- (id)extensionTipTitleColor;
+- (unsigned long long)flagshipStyle;
+- (id)headerBackLayerColors;
+- (double)headerThemeHeight;
+- (void)setExtensionTipLottieFilePath:;
+- (void)setExtensionTipTitleColor:;
+- (void)setFlagshipStyle:;
+- (void)setHeaderBackLayerColors:;
+- (void)setHeaderThemeHeight:;
+- (void)setUseDarkStatusBarStyle:;
+- (void)updateFlagshipStyle:;
+- (BOOL)useDarkStatusBarStyle;
+- (BOOL)useFlagshipStyle;
+- (id)init;
+- (void).cxx_destruct;
+@end

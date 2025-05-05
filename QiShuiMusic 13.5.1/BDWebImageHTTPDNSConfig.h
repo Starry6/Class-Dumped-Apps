@@ -1,0 +1,32 @@
+@interface BDWebImageHTTPDNSConfig : NSObject
+@property (nonatomic) NSString httpDNSAuthKey;
+@property (nonatomic) BOOL enabledHttpDNS;
+@property (nonatomic) NSString httpDNSAuthID;
+@property (nonatomic) NSString httpDNSSecretKey;
+@property (nonatomic) NSArray httpDNSWhiteListDomain;
+@property (nonatomic) BOOL httpDNSPrefer;
+@property (nonatomic) Q httpDNSTimeoutInterval;
+@property (nonatomic) Q localDNSTimeoutInterval;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)enabledHttpDNS;
+- (id)httpDNSAuthID;
+- (id)httpDNSAuthKey;
+- (BOOL)httpDNSPrefer;
+- (id)httpDNSSecretKey;
+- (unsigned long long)httpDNSTimeoutInterval;
+- (id)httpDNSWhiteListDomain;
+- (unsigned long long)localDNSTimeoutInterval;
+- (void)setEnabledHttpDNS:;
+- (void)setHttpDNSAuthID:;
+- (void)setHttpDNSAuthKey:;
+- (void)setHttpDNSPrefer:;
+- (void)setHttpDNSSecretKey:;
+- (void)setHttpDNSTimeoutInterval:;
+- (void)setHttpDNSWhiteListDomain:;
+- (void)setLocalDNSTimeoutInterval:;
+- (void).cxx_destruct;
++ (id)modelCustomPropertyMapper;
+@end

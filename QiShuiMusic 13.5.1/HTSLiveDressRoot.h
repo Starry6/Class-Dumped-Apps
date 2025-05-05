@@ -1,0 +1,2 @@
+@interface HTSLiveDressRoot : GPBRootObject
+@end

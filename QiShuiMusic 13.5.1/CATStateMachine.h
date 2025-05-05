@@ -1,0 +1,31 @@
+@interface CATStateMachine : NSObject
+@property (nonatomic) CATState currentState;
+@property (nonatomic) NSString name;
+@property (nonatomic) CATState initialState;
+@property (nonatomic) @ target;
+@property (nonatomic) Q logLevel;
+- (void)setCurrentState:;
+- (id)init;
+- (void)dealloc;
+- (id)currentState;
+- (id)initWithTarget:;
+- (id)stateWithName:;
+- (void)start;
+- (void)delegateDidEnterState:event:;
+- (void)setInitialState:;
+- (void)addState:;
+- (id)initialState;
+- (void)delegateWillExitState:event:;
+- (void)setLogLevel:;
+- (void)transitionWithTriggeringEvent:;
+- (unsigned long long)logLevel;
+- (void).cxx_destruct;
+- (id)eventForTriggeringEvent:;
+- (id)target;
+- (id)description;
+- (id)name;
+- (id)addStateWithName:;
+- (void)invokeAction:event:;
+- (BOOL)canTransitionWithTriggeringEvent:;
++ (id)new;
+@end

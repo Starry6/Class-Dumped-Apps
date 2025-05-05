@@ -1,0 +1,32 @@
+@interface FBSDisplayLayoutPublisher : NSObject
+@property (nonatomic) FBSDisplayConfiguration displayConfiguration;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) q interfaceOrientation;
+@property (nonatomic) q backlightLevel;
+@property (nonatomic) BOOL transitioning;
+@property (nonatomic) FBSDisplayLayout currentLayout;
+- (id)addElement:;
+- (void)removeObserver:;
+- (id)init;
+- (void)addObserver:;
+- (long long)interfaceOrientation;
+- (void)listener:didReceiveConnection:withContext:;
+- (long long)backlightLevel;
+- (BOOL)isTransitioning;
+- (id)currentLayout;
+- (void)setInterfaceOrientation:;
+- (void)setBacklightLevel:;
+- (id)_addElement:forKey:;
+- (void)flush;
+- (id)displayConfiguration;
+- (void)setDisplayConfiguration:;
+- (id)_initWithConfiguration:;
+- (id)transitionAssertionWithReason:;
+- (void).cxx_destruct;
+- (void)invalidate;
+- (void)activate;
++ (id)publisherWithConfiguration:;
+@end

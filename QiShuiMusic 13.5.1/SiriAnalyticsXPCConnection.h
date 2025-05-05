@@ -1,0 +1,32 @@
+@interface SiriAnalyticsXPCConnection : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)_resolveMessages:completion:;
+- (void)dealloc;
+- (void)_publishMessagesToRemote:attempts:completion:;
+- (void)_idleTimerFired;
+- (id)resetLogicalClockWithCompletion:;
+- (id)vendSandboxExtensionWithResource:readonly:completion:;
+- (void)barrierWithCompletion:;
+- (id)_currentConnection;
+- (void)_resetLogicalClockWithCompletion:;
+- (void)_publishMessages:completion:;
+- (id)_publishLargeMessageToRemote:attempts:completion:;
+- (id)publishMessages:completion:;
+- (void)_connectionInterrupted;
+- (id)sensitiveCondition:endedAt:completion:;
+- (void)_cleanupConnection;
+- (void)_stopIdleTimer;
+- (void)_startIdleTimer;
+- (void).cxx_destruct;
+- (id)resolveMessages:completion:;
+- (id)sensitiveCondition:startedAt:completion:;
+- (void)_resolveMessagesAtRemote:attempts:completion:;
+- (id)publishLargeMessage:completion:;
+- (id)initWithMachServiceName:;
+- (id)_publishLargeMessage:completion:;
+- (void)_vendSandboxExtensionWithResource:readonly:completion:;
+- (void)_connectionInvalidated;
+@end

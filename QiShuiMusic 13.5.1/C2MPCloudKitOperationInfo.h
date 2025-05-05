@@ -1,0 +1,34 @@
+@interface C2MPCloudKitOperationInfo : PBCodable
+@property (nonatomic) BOOL hasOperationId;
+@property (nonatomic) NSString operationId;
+@property (nonatomic) BOOL hasOperationType;
+@property (nonatomic) NSString operationType;
+@property (nonatomic) BOOL hasOperationTriggered;
+@property (nonatomic) BOOL operationTriggered;
+@property (nonatomic) BOOL hasOperationGroupIndex;
+@property (nonatomic) I operationGroupIndex;
+- (id)operationType;
+- (id)operationId;
+- (void)setHasOperationTriggered:;
+- (void)writeTo:;
+- (void)setHasOperationGroupIndex:;
+- (void)setOperationType:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void)setOperationGroupIndex:;
+- (BOOL)hasOperationTriggered;
+- (BOOL)operationTriggered;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (BOOL)hasOperationId;
+- (BOOL)hasOperationType;
+- (BOOL)hasOperationGroupIndex;
+- (unsigned int)operationGroupIndex;
+- (id)description;
+- (void)setOperationId:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setOperationTriggered:;
+@end

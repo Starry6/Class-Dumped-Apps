@@ -1,0 +1,2 @@
+@interface AVAssetFragmentInternal : NSObject
+@end

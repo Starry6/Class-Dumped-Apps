@@ -1,0 +1,33 @@
+@interface CEMSystemEnergySaverDeclaration_PowerSettings : CEMPayloadBase
+@property (nonatomic) NSNumber payloadDisplaySleepTimer;
+@property (nonatomic) NSNumber payloadDiskSleepTimer;
+@property (nonatomic) NSNumber payloadSystemSleepTimer;
+@property (nonatomic) NSNumber payloadReduceProcessorSpeed;
+@property (nonatomic) NSNumber payloadDynamicPowerStep;
+@property (nonatomic) NSNumber payloadWakeOnLAN;
+@property (nonatomic) NSNumber payloadWakeOnModemRing;
+@property (nonatomic) NSNumber payloadAutomaticRestartOnPowerLoss;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (BOOL)loadPayload:error:;
+- (id)serializePayloadWithAssetProviders:;
+- (id)payloadDisplaySleepTimer;
+- (void)setPayloadDisplaySleepTimer:;
+- (id)payloadDiskSleepTimer;
+- (void)setPayloadDiskSleepTimer:;
+- (id)payloadSystemSleepTimer;
+- (void)setPayloadSystemSleepTimer:;
+- (id)payloadReduceProcessorSpeed;
+- (void)setPayloadReduceProcessorSpeed:;
+- (id)payloadDynamicPowerStep;
+- (void)setPayloadDynamicPowerStep:;
+- (id)payloadWakeOnLAN;
+- (void)setPayloadWakeOnLAN:;
+- (id)payloadWakeOnModemRing;
+- (void)setPayloadWakeOnModemRing:;
+- (id)payloadAutomaticRestartOnPowerLoss;
+- (void)setPayloadAutomaticRestartOnPowerLoss:;
++ (id)allowedPayloadKeys;
++ (id)buildRequiredOnly;
++ (id)buildWithDisplaySleepTimer:withDiskSleepTimer:withSystemSleepTimer:withReduceProcessorSpeed:withDynamicPowerStep:withWakeOnLAN:withWakeOnModemRing:withAutomaticRestartOnPowerLoss:;
+@end

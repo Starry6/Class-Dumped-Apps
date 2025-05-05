@@ -1,0 +1,3 @@
+@interface STListDetail.STListDetailPresenter : _TtGC15BNCommonAdapter11BNPresenterC12STListDetail26STListDetailViewControllerCS1_21STListDetailFrameView_
+- (void).cxx_destruct;
+@end

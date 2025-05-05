@@ -1,0 +1,38 @@
+@interface IESLiveSaaSFollowGuideFragment : IESLiveRoomComponent
+@property (nonatomic) HTSEventContext trackContext;
+@property (nonatomic) IESLiveSaaSFollowGuideStore store;
+@property (nonatomic) IESLiveSaaSFollowGuideActionCreator guideActionCreator;
+@property (nonatomic) <HTSLiveSaaSFollowGuidePopup> popupView;
+@property (nonatomic) UIView popupContainer;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)showFollowAlert;
+- (void)showFollowGuide;
+- (unsigned long long)closeGuidePriority;
+- (void)closeRoom;
+- (void)componentDidMount;
+- (void)componentOrientationChanged:;
+- (void)componentWillUnmount;
+- (void)didClickPopupContainer;
+- (void)didSetAttachingDIContext;
+- (id)guideActionCreator;
+- (void)hidePopupView;
+- (void)loadFollowPopupView;
+- (id)popupContainer;
+- (id)popupView;
+- (void)setGuideActionCreator:;
+- (void)setPopupContainer:;
+- (void)setPopupView:;
+- (void)showPopupView;
+- (void)trackOnFollowClick;
+- (BOOL)triggerCloseGuideIfNeed;
+- (void)setStore:;
+- (id)initWithStore:;
+- (void).cxx_destruct;
+- (BOOL)gestureRecognizer:shouldReceiveTouch:;
+- (id)store;
++ (id)componentWithRoom:trackContext:componentContext:;
++ (long long)preferredLoadPhase;
+@end

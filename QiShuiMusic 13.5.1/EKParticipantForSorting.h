@@ -1,0 +1,34 @@
+@interface EKParticipantForSorting : NSObject
+@property (nonatomic) EKParticipant participant;
+@property (nonatomic) <EKIdentityProtocol> identity;
+@property (nonatomic) NSString firstName;
+@property (nonatomic) NSString lastName;
+@property (nonatomic) NSString cachedDisplayName;
+@property (nonatomic) BOOL isEmail;
+@property (nonatomic) BOOL isPhone;
+- (void)setLastName:;
+- (void)setIdentity:;
+- (BOOL)isEmail;
+- (id)identity;
+- (void)setFirstName:;
+- (id)firstName;
+- (id)lastName;
+- (id)displayName;
+- (void)setParticipant:;
+- (BOOL)isPhone;
+- (long long)compare:;
+- (void)setIsEmail:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)participant;
+- (id)copyWithZone:;
+- (BOOL)participantIsOptional:;
+- (long long)compareByEmailThenByContactName:;
+- (long long)compareByContactNames:;
+- (id)cachedDisplayName;
+- (void)setCachedDisplayName:;
+- (void)setIsPhone:;
++ (id)participantForSortingWithEKParticipant:;
++ (id)participantForSortingWithIdentity:;
++ (id)_sharedParticipantForSortingWithIdentity:participant:contactPredicate:;
+@end

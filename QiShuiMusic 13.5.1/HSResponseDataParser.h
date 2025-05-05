@@ -1,0 +1,31 @@
+@interface HSResponseDataParser : NSObject
++ (id)parseErrorInResponseData:;
++ (id)parseResponseData:;
++ (id)enumerateRawItemsInResponseData:usingHandler:;
++ (unsigned long long)parseItemWithBytes:length:valuesOut:valuesCapacity:;
++ (void)parseItemWithBytes:length:usingHandler:;
++ (void)enumerateItemsInResponseData:usingHandler:;
++ (void)enumerateDeletedItemsInResponseData:usingHandler:;
++ (unsigned long long)_parseItemPropertyCountWithBytes:length:;
++ (id)_parseResponseCode:bytes:length:usingHandler:;
++ (id)_parseLoginResponseWithBytes:length:;
++ (id)_parseUpdateResponseWithBytes:length:;
++ (id)_parseAuthorizedAccountTokenWithBytes:length:;
++ (id)_parseBulkCloudArtworkInfoResponseWithBytes:length:;
++ (id)_parseBulkCloudLyricsInfoResponseWithBytes:length:;
++ (id)_parseCloudArtworkInfoResponseWithBytes:length:;
++ (id)_parseCloudLyricsInfoResponseWithBytes:length:;
++ (id)_parseControlInterfacesResponseWithBytes:length:;
++ (id)_parseControlPromptResponseWithBytes:length:;
++ (id)_parseDeletedIDListingWithBytes:length:;
++ (id)_parseDictionaryCollectionWithBytes:length:;
++ (id)_parseEditCommandResponseWithBytes:length:;
++ (id)_parseUpdateTypeWithBytes:length:;
++ (id)_parseItemsResponseWithBytes:length:usingHandler:;
++ (id)_parseListingCollectionWithBytes:length:usingHandler:;
++ (id)_parseBrowseListingWithBytes:length:;
++ (id)_parseItemIDArrayWithBytes:length:;
++ (id)_parsePlayStatusResponseWithBytes:length:;
++ (id)_parseErrorResponseWithBytes:length:;
++ (id)_parseListingItemWithBytes:length:usingHandler:;
+@end

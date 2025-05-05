@@ -1,0 +1,30 @@
+@interface IESLiveSaaSDIIsolation : NSObject
+@property (nonatomic) NSMutableDictionary linkfailedInfo;
+@property (nonatomic) NSMutableDictionary usefailedInfo;
+@property (nonatomic) NSArray liveScopeServices;
+@property (nonatomic) <IESLiveSaaSKVStore> kvStore;
+@property (nonatomic) <IESLiveMonitor> monitor;
+@property (nonatomic) NSNumber disableCheck;
+@property (nonatomic) NSNumber canEnterMultiInstanceRoom;
+- (id)canEnterMultiInstanceRoom;
+- (void)checkBindProtocol:forObject:;
+- (void)checkDiIsolation:object:resultDict:;
+- (void)checkLinkProtocol:forObject:;
+- (id)disableCheck;
+- (id)linkfailedInfo;
+- (id)liveScopeServices;
+- (void)reportMistakeWithClassName:protocolName:callStackSymbols:;
+- (void)setCanEnterMultiInstanceRoom:;
+- (void)setDisableCheck:;
+- (void)setLinkfailedInfo:;
+- (void)setLiveScopeServices:;
+- (void)setUsefailedInfo:;
+- (id)usefailedInfo;
+- (void)setKvStore:;
+- (id)kvStore;
+- (id)init;
+- (void)setMonitor:;
+- (void).cxx_destruct;
+- (id)monitor;
++ (id)loadLiveScopeServices;
+@end

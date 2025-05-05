@@ -1,0 +1,31 @@
+@interface PLFileSystemAssetImporter : NSObject
+@property (nonatomic) NSMutableSet existingUUIDs;
+@property (nonatomic) NSMutableDictionary existingUUIDsByUppercasePath;
+@property (nonatomic) NSMutableDictionary existingOIDsByUUID;
+@property (nonatomic) Q thumbnailBatchFetchSize;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (id)initWithPhotoLibrary:libraryServicesManager:;
+- (id)libraryBundlePathWithPhotoLibrary:;
+- (id)_addAssetWithURL:existingOID:assetUUID:isPlaceholder:;
+- (id)assetURLisInDatabase:deferredPreviewURL:;
+- (id)addAssetWithURLs:assetPayload:forceInsert:forceUpdate:fixAddedDate:;
+- (void)setModificationAndCreationDateOnAsset:withURL:;
+- (BOOL)_setupPhotoAssetAsPhotoIrisIfNeeded:hasVideoComplementResource:;
+- (BOOL)_setupPhotoAsset:withURL:isPlaceholder:hasVideoComplementResource:;
+- (BOOL)_setupUnknownAsset:withURL:;
+- (id)_assetAdjustmentsIfExistsForAsset:;
+- (BOOL)_setupAdjustmentsFromAdjustmentFileForAsset:;
+- (BOOL)_setupPhotoAsset:withURL:unknownType:isPlaceholder:hasVideoComplementResource:;
+- (BOOL)_setupVideoAsset:withURL:;
+- (void)addAvailableThumbnailIndex:;
+- (unsigned long long)nextThumbnailIndex;
+- (id)existingUUIDs;
+- (void)setExistingUUIDs:;
+- (id)existingUUIDsByUppercasePath;
+- (void)setExistingUUIDsByUppercasePath:;
+- (id)existingOIDsByUUID;
+- (void)setExistingOIDsByUUID:;
+- (unsigned long long)thumbnailBatchFetchSize;
+- (void)setThumbnailBatchFetchSize:;
+@end

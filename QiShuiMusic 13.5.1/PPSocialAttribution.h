@@ -1,0 +1,36 @@
+@interface PPSocialAttribution : NSObject
+@property (nonatomic) NSString identifier;
+@property (nonatomic) NSString sourceAppDisplayName;
+@property (nonatomic) NSString conversationIdentifier;
+@property (nonatomic) NSURL groupPhotoPath;
+@property (nonatomic) NSString groupDisplayName;
+@property (nonatomic) NSString groupId;
+@property (nonatomic) NSArray relatedPeople;
+@property (nonatomic) PPSocialPerson sender;
+@property (nonatomic) NSDate timestamp;
+@property (nonatomic) NSData collaborationMetadata;
+@property (nonatomic) BOOL starred;
+@property (nonatomic) BOOL fromMe;
+- (id)conversationIdentifier;
+- (id)sender;
+- (id)identifier;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (id)groupId;
+- (void).cxx_destruct;
+- (id)timestamp;
+- (id)description;
+- (id)collaborationMetadata;
+- (id)initWithIdentifier:sourceAppDisplayName:conversationIdentifier:groupPhotoPath:groupDisplayName:relatedPeople:sender:timestamp:;
+- (id)initWithIdentifier:sourceAppDisplayName:conversationIdentifier:groupPhotoPath:groupDisplayName:relatedPeople:sender:timestamp:starred:;
+- (id)initWithIdentifier:sourceAppDisplayName:conversationIdentifier:groupPhotoPath:groupDisplayName:relatedPeople:sender:timestamp:starred:fromMe:;
+- (id)initWithIdentifier:sourceAppDisplayName:conversationIdentifier:groupPhotoPath:groupDisplayName:relatedPeople:sender:timestamp:collaborationMetadata:starred:fromMe:;
+- (id)initWithIdentifier:sourceAppDisplayName:conversationIdentifier:groupPhotoPath:groupDisplayName:groupId:relatedPeople:sender:timestamp:collaborationMetadata:starred:fromMe:;
+- (id)sourceAppDisplayName;
+- (id)groupPhotoPath;
+- (id)groupDisplayName;
+- (id)relatedPeople;
+- (BOOL)isStarred;
+- (BOOL)isFromMe;
++ (BOOL)supportsSecureCoding;
+@end

@@ -1,0 +1,35 @@
+@interface VSApplicationBootURLOperation : VSAsyncOperation
+@property (nonatomic) VSPreferences preferences;
+@property (nonatomic) BOOL test;
+@property (nonatomic) BOOL skipSystemTrustVerification;
+@property (nonatomic) NSDictionary trustInfo;
+@property (nonatomic) NSURL url;
+@property (nonatomic) BOOL developer;
+@property (nonatomic) VSFailable urlOrError;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setPreferences:;
+- (void)executionDidBegin;
+- (id)url;
+- (id)init;
+- (void)URLSession:didReceiveChallenge:completionHandler:;
+- (id)preferences;
+- (void)setUrl:;
+- (void).cxx_destruct;
+- (void)setTest:;
+- (void)setDeveloper:;
+- (BOOL)isDeveloper;
+- (id)initWithBootURL:isDeveloper:;
+- (id)generateFilePathForURL:;
+- (BOOL)validateTrust:;
+- (BOOL)verifyCertificateIsSystemTrustedWithTrust:;
+- (id)urlOrError;
+- (void)setUrlOrError:;
+- (BOOL)isForTesting;
+- (BOOL)skipSystemTrustVerification;
+- (void)setSkipSystemTrustVerification:;
+- (id)trustInfo;
+- (void)setTrustInfo:;
+@end

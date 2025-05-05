@@ -1,0 +1,29 @@
+@interface AWDIDSRegistrationAuthenticationParametersReceived : PBCodable
+@property (nonatomic) BOOL hasTimestamp;
+@property (nonatomic) Q timestamp;
+@property (nonatomic) BOOL hasError;
+@property (nonatomic) NSInteger error;
+@property (nonatomic) BOOL hasTimeIntervalSinceRequest;
+@property (nonatomic) Q timeIntervalSinceRequest;
+- (BOOL)hasError;
+- (void)setError:;
+- (void)setHasError:;
+- (void)writeTo:;
+- (int)error;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)setHasTimestamp:;
+- (void)mergeFrom:;
+- (BOOL)hasTimestamp;
+- (void)setTimestamp:;
+- (BOOL)readFrom:;
+- (unsigned long long)timestamp;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setTimeIntervalSinceRequest:;
+- (void)setHasTimeIntervalSinceRequest:;
+- (BOOL)hasTimeIntervalSinceRequest;
+- (unsigned long long)timeIntervalSinceRequest;
+@end

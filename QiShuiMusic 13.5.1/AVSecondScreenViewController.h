@@ -1,0 +1,32 @@
+@interface AVSecondScreenViewController : UIViewController
+@property (nonatomic) UILabel debugLabel;
+@property (nonatomic) AVSecondScreenPlayerLayerView playerLayerView;
+@property (nonatomic) BOOL playingOnSecondScreen;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} initialScreenBoundsHint;
+@property (nonatomic) UIView contentView;
+@property (nonatomic) AVPlayerLayer sourcePlayerLayer;
+@property (nonatomic) {CGSize=dd} videoDisplaySize;
+- (void)setDebugText:;
+- (BOOL)isPlayingOnSecondScreen;
+- (id)debugLabel;
+- (id)contentView;
+- (void)dealloc;
+- (void)setPlayerLayerView:;
+- (void)setPlayingOnSecondScreen:;
+- (id)debugText;
+- (id)videoDisplaySize;
+- (void).cxx_destruct;
+- (void)_updateLayout;
+- (id)playerLayerView;
+- (void)viewDidAppear:;
+- (void)setContentView:;
+- (void)loadView;
+- (void)viewDidLayoutSubviews;
+- (void)viewDidLoad;
+- (void)_updateContentViewIfNeeded;
+- (void)loadPlayerLayerViewIfNeeded;
+- (void)setSourcePlayerLayer:;
+- (void)setInitialScreenBoundsHint:;
+- (id)initialScreenBoundsHint;
+- (id)sourcePlayerLayer;
+@end

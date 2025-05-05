@@ -1,0 +1,33 @@
+@interface MNDrivingTurnByTurnLocationTracker : MNTurnByTurnLocationTracker
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (int)transportType;
+- (void).cxx_destruct;
+- (void)stopTracking;
+- (id)initWithNavigationSession:;
+- (BOOL)shouldProjectAlongRoute;
+- (void)startTrackingWithInitialLocation:;
+- (void)updateRequestForETAUpdate:;
+- (void)updateForETAUResponse:;
+- (id)_matchedLocationForLocation:;
+- (void)tracePaused;
+- (void)_updateForReroute:rerouteReason:request:response:;
+- (void)_updateForArrivalAtLegIndex:;
+- (void)tunnelLocationProjector:didUpdateLocation:;
+- (id)_newMapMatcherForRoute:;
+- (id)_overrideLocationForLocation:;
+- (void)_updateForLocation:;
+- (int)_detectedMotionForLocation:;
+- (BOOL)_allowSwitchToTransportType:forLocation:;
+- (void)_updateForAlternateRoutes:;
+- (void)trafficIncidentAlertUpdater:receivedAlert:responseCallback:;
+- (void)trafficIncidentAlertUpdater:invalidatedAlert:;
+- (void)trafficIncidentAlertUpdater:didDismissAlert:withReroute:;
+- (void)trafficIncidentAlertUpdater:updatedAlert:;
+- (void)trafficIncidentAlertUpdater:didSwitchToNewRoute:forAlert:;
+- (double)trafficIncidentAlertUpdaterTimeSinceLastAnnouncement:;
+- (double)trafficIncidentAlertUpdaterTimeUntilNextAnnouncement:;
+- (BOOL)trafficIncidentAlertUpdaterIsCurrentlySpeaking:;
+@end

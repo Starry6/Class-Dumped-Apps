@@ -1,0 +1,36 @@
+@interface AXAccessQueue : NSObject
+@property (nonatomic) NSString threadLocalStorageKey;
+@property (nonatomic) NSObject<OS_dispatch_queue> concurrentQueue;
+@property (nonatomic) Q specialBehaviors;
+@property (nonatomic) BOOL behavesAsMainQueue;
+@property (nonatomic) BOOL behavesWithoutErrorReporting;
+@property (nonatomic) NSString label;
+- (id)init;
+- (id)initWithParentClass:description:appendUUIDToLabel:;
+- (unsigned long long)specialBehaviors;
+- (BOOL)canWriteInCurrentExecutionThread;
+- (void)setSpecialBehaviors:;
+- (id)_initWithLabel:appendUUIDToLabel:specialBehaviors:;
+- (id)initWithLabel:appendUUIDToLabel:;
+- (id)concurrentQueue;
+- (id)label;
+- (BOOL)behavesWithoutErrorReporting;
+- (void)performAsynchronousReadingBlock:;
+- (void)performAsynchronousWritingBlock:;
+- (id)threadLocalStorageKey;
+- (void)performSynchronousWritingBlock:;
+- (BOOL)canOnlyReadInCurrentExecutionThread;
+- (void)setConcurrentQueue:;
+- (void).cxx_destruct;
+- (void)afterDelay:processWritingBlock:;
+- (id)description;
+- (void)afterDelay:processReadingBlock:;
+- (unsigned long long)_accessQueueContextInCurrentExecutionThread;
+- (void)setThreadLocalStorageKey:;
+- (BOOL)behavesAsMainQueue;
+- (void)_performBlock:withDispatchFunction:synchronously:accessQueueContext:;
+- (void)performSynchronousReadingBlock:;
+- (BOOL)canReadInCurrentExecutionThread;
++ (id)mainAccessQueue;
++ (id)backgroundAccessQueue;
+@end

@@ -1,0 +1,34 @@
+@interface GEORPAddress : PBCodable
+@property (nonatomic) BOOL hasGeoAddress;
+@property (nonatomic) GEOAddress geoAddress;
+@property (nonatomic) BOOL hasAddressString;
+@property (nonatomic) NSString addressString;
+@property (nonatomic) BOOL hasAddressObject;
+@property (nonatomic) GEOPDAddressObject addressObject;
+- (void)readAll:;
+- (id)addressObject;
+- (id)init;
+- (id)geoAddress;
+- (void)setAddressString:;
+- (id)addressString;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasGeoAddress;
+- (void)setGeoAddress:;
+- (BOOL)hasAddressString;
+- (BOOL)hasAddressObject;
+- (void)setAddressObject:;
++ (BOOL)isValid:;
+@end

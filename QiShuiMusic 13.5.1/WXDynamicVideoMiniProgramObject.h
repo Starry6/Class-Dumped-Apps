@@ -1,0 +1,32 @@
+@interface WXDynamicVideoMiniProgramObject : NSObject
+@property (nonatomic) NSString webpageUrl;
+@property (nonatomic) NSString userName;
+@property (nonatomic) NSString path;
+@property (nonatomic) NSData hdImageData;
+@property (nonatomic) BOOL withShareTicket;
+@property (nonatomic) BOOL disableForward;
+@property (nonatomic) Q miniProgramType;
+@property (nonatomic) NSString videoSource;
+@property (nonatomic) NSString appThumbUrl;
+- (unsigned long long)miniProgramType;
+- (void)setAppThumbUrl:;
+- (void)setHdImageData:;
+- (BOOL)withShareTicket;
+- (id)appThumbUrl;
+- (BOOL)disableForward;
+- (id)hdImageData;
+- (void)setDisableForward:;
+- (void)setMiniProgramType:;
+- (void)setWebpageUrl:;
+- (void)setWithShareTicket:;
+- (id)webpageUrl;
+- (id)path;
+- (id)init;
+- (id)userName;
+- (void)setPath:;
+- (void)setUserName:;
+- (void).cxx_destruct;
+- (id)videoSource;
+- (void)setVideoSource:;
++ (id)object;
+@end

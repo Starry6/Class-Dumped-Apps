@@ -1,0 +1,33 @@
+@interface NSMorphologyCustomPronoun : NSObject
+@property (nonatomic) NSDictionary _externalRepresentationDictionary;
+@property (nonatomic) NSString subjectForm;
+@property (nonatomic) NSString objectForm;
+@property (nonatomic) NSString possessiveForm;
+@property (nonatomic) NSString possessiveAdjectiveForm;
+@property (nonatomic) NSString reflexiveForm;
+- (void)dealloc;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)subjectForm;
+- (id)objectForm;
+- (id)possessiveForm;
+- (id)possessiveAdjectiveForm;
+- (id)reflexiveForm;
+- (void)setSubjectForm:;
+- (void)setObjectForm:;
+- (void)setPossessiveForm:;
+- (void)setPossessiveAdjectiveForm:;
+- (void)setReflexiveForm:;
+- (BOOL)_autocompleteEnglishPronounFromSubjectForm;
+- (id)_initWithExternalRepresentationDictionary:;
+- (id)_externalRepresentationDictionary;
+- (id)_externalRepresentation;
++ (BOOL)supportsSecureCoding;
++ (BOOL)isSupportedForLanguage:;
++ (id)requiredKeysForLanguage:;
++ (BOOL)_validateCustomPronounWithAccessor:forLanguage:error:;
+@end

@@ -1,0 +1,38 @@
+@interface IESECRelationGoodsListSectionController : IGListSectionController
+@property (nonatomic) IESECCollectionViewSectionWaterfallLayout sectionLayout;
+@property (nonatomic) NSArray relationGoodsModels;
+@property (nonatomic) IESECCommonGoodsListHandler listHandler;
+@property (nonatomic) IESECStorePageContext pageContext;
+@property (nonatomic) <IESECStoreContainerProtocol> container;
+@property (nonatomic) IESECShopMultiGoodsDiffableModel rawObject;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (unsigned long long)productCardType;
+- (long long)productTabStyle;
+- (void)setListHandler:;
+- (id)cellForItemAtIndex:;
+- (id)cellForItemAtIndex:relationGoodsModel:;
+- (void)didUpdateToObject:;
+- (id)initWithPageContext:container:;
+- (id)listHandler;
+- (id)rawObject;
+- (id)relationGoodsModels;
+- (id)sectionLayout;
+- (void)setRelationGoodsModels:;
+- (void)setSectionLayout:;
+- (id)sizeForItemAtIndex:relationGoodsModel:;
+- (void)updateSectionLayoutIfNeeded;
+- (unsigned long long)searchType;
+- (void)setContainer:;
+- (long long)numberOfItems;
+- (id)container;
+- (long long)scene;
+- (id)actionHandler;
+- (void).cxx_destruct;
+- (void)didSelectItemAtIndex:;
+- (id)pageContext;
+- (void)setPageContext:;
+- (id)sizeForItemAtIndex:;
+@end

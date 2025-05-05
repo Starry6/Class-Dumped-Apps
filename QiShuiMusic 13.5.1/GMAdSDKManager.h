@@ -1,0 +1,30 @@
+@interface GMAdSDKManager : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)p_addConfigurationObserver;
+- (id)p_formatConvert:;
+- (id)p_noWhiteSpaceString:;
+- (id)p_pangleUserdataFormat:;
+- (void)p_setLimitPersonalAds:;
+- (void)p_setTheme:;
+- (void)p_updatePangleExtData:;
+- (BOOL)respondsToSelector:;
+- (void)observeValueForKeyPath:ofObject:change:context:;
+- (id)forwardingTargetForSelector:;
++ (void)startWithSyncCompletionHandler:;
++ (void)configAdapterWithKey:andBlock:;
++ (id)getMediationExtraInfo;
++ (double)getUserTouchOffSDKInitTime;
++ (long long)initializationState;
++ (Class)mediation;
++ (void)p_setupGMSDKWithAsyncCompletionHandler:;
++ (void)preloadAdsWithInfos:andInterval:andConcurrent:;
++ (void)startWithAsyncCompletionHandler:;
++ (id)userInfoForSegment;
++ (BOOL)respondsToSelector:;
++ (id)sharedInstance;
++ (long long)state;
++ (id)forwardingTargetForSelector:;
+@end

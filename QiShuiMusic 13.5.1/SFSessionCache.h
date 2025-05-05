@@ -1,0 +1,37 @@
+@interface SFSessionCache : NSObject
+@property (nonatomic) Q capacity;
+@property (nonatomic) NSObject<OS_dispatch_queue> dispatchQueue;
+@property (nonatomic) @? errorHandler;
+@property (nonatomic) NSUUID identifier;
+@property (nonatomic) NSString serviceIdentifier;
+- (unsigned long long)capacity;
+- (void)setCapacity:;
+- (void)clearCache;
+- (void)setServiceIdentifier:;
+- (id)init;
+- (id)errorHandler;
+- (id)dispatchQueue;
+- (id)identifier;
+- (void)_ensureStopped;
+- (id)serviceIdentifier;
+- (void)setDispatchQueue:;
+- (id)initWithCoder:;
+- (void)setErrorHandler:;
+- (void)_ensureStarted;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (void)invalidate;
+- (id)activeSessions;
+- (void)activate;
+- (void)_popCache;
+- (id)_sessionWithDevice:activate:withCompletion:;
+- (void)_sessionWasInterrupted:;
+- (void)_sessionWasInvalidated:;
+- (void)sendRequestWithFlags:object:responseHandler:toDevice:;
+- (void)sendWithFlags:object:toDevice:;
+- (id)sessionWithDevice:activate:withCompletion:;
+- (id)activePeerDeviceIDs;
+- (BOOL)cacheFull;
++ (BOOL)supportsSecureCoding;
+@end

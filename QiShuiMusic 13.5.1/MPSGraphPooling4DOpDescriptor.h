@@ -1,0 +1,33 @@
+@interface MPSGraphPooling4DOpDescriptor : NSObject
+@property (nonatomic) NSArray kernelSizes;
+@property (nonatomic) NSArray strides;
+@property (nonatomic) NSArray dilationRates;
+@property (nonatomic) NSArray paddingValues;
+@property (nonatomic) Q paddingStyle;
+@property (nonatomic) BOOL ceilMode;
+@property (nonatomic) BOOL includeZeroPadToAverage;
+@property (nonatomic) Q returnIndicesMode;
+@property (nonatomic) I returnIndicesDataType;
+- (id)strides;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (unsigned long long)paddingStyle;
+- (void)setPaddingStyle:;
+- (void)setStrides:;
+- (id)dilationRates;
+- (void)setDilationRates:;
+- (id)paddingValues;
+- (void)setPaddingValues:;
+- (BOOL)ceilMode;
+- (void)setCeilMode:;
+- (BOOL)includeZeroPadToAverage;
+- (void)setIncludeZeroPadToAverage:;
+- (unsigned long long)returnIndicesMode;
+- (void)setReturnIndicesMode:;
+- (unsigned int)returnIndicesDataType;
+- (void)setReturnIndicesDataType:;
+- (id)kernelSizes;
+- (void)setKernelSizes:;
++ (id)descriptorWithKernelSizes:strides:dilationRates:paddingValues:paddingStyle:;
++ (id)descriptorWithKernelSizes:paddingStyle:;
+@end

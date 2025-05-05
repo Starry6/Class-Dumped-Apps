@@ -1,0 +1,22 @@
+@interface WCTStatement : WCTCore
+- (id)getNameAtIndex:;
+- (int)getTypeAtIndex:;
+- (BOOL)bindValue:byColumnName:;
+- (BOOL)bindValue:toIndex:;
+- (id)getColumnNameAtIndex:;
+- (int)getIndexByColumnName:;
+- (id)getTableNameAtIndex:;
+- (int)getTypeByColumnName:;
+- (id)getValueAtIndex:;
+- (id)getValueByColumnName:;
+- (id)initWithCore:andStatementHandle:;
+- (void)resetBinding;
+- (BOOL)step;
+- (void)finalize;
+- (id)getError;
+- (void).cxx_destruct;
+- (void)reset;
+- (id).cxx_construct;
+- (int)getCount;
+- (int)getColumnCount;
+@end

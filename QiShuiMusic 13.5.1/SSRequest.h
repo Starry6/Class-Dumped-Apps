@@ -1,0 +1,33 @@
+@interface SSRequest : NSObject
+@property (nonatomic) BOOL shouldCancelAfterTaskExpiration;
+@property (nonatomic) <SSRequestDelegate> delegate;
+@property (nonatomic) BOOL usesTaskCompletionAssertions;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (void)cancel;
+- (void)dealloc;
+- (void)_expireBackgroundTask;
+- (BOOL)start;
+- (void)startWithCompletionBlock:;
+- (void)disconnect;
+- (void)setDelegate:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)_initSSRequest;
+- (void)setShouldCancelAfterTaskExpiration:;
+- (BOOL)shouldCancelAfterTaskExpiration;
+- (void)_beginBackgroundTask;
+- (void)_endBackgroundTask;
+- (void)_shutdownRequest;
+- (void)_startWithMessageID:messageBlock:;
+- (void)__beginBackgroundTask;
+- (void)_cancelBackgroundTaskExpirationTimer;
+- (void)__endBackgroundTask;
+- (void)_shutdownRequestWithMessageID:;
+- (BOOL)usesTaskCompletionAssertions;
+- (void)setUsesTaskCompletionAssertions:;
++ (BOOL)_allowMultipleCallbacks;
+@end

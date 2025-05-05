@@ -1,0 +1,32 @@
+@interface IESLiveRoomBattleChooseGuestCell : UICollectionViewCell
+@property (nonatomic) UIImageView avatarView;
+@property (nonatomic) UILabel nicknameLabel;
+@property (nonatomic) UIImageView ticketIconView;
+@property (nonatomic) UILabel ticketLabel;
+@property (nonatomic) UIImageView borderView;
+@property (nonatomic) IESLiveGradientView gradientBGView;
+@property (nonatomic) UILabel notSupportLabel;
+@property (nonatomic) <IESLiveInteractUserModel> userModel;
+- (void)updateSelected:;
+- (id)notSupportLabel;
+- (void)setTicketLabel:;
+- (id)fanticketIconURL;
+- (id)gradientBGView;
+- (void)setGradientBGView:;
+- (void)setNotSupportLabel:;
+- (void)setTicketIconView:;
+- (id)ticketIconView;
+- (id)ticketLabel;
+- (void)updateWithGuest:isSelected:isLowClientVersion:isNotSupportApp:;
+- (id)avatarView;
+- (void)setUserModel:;
+- (void)setAvatarView:;
+- (id)userModel;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)setupViews;
+- (id)borderView;
+- (void)setBorderView:;
+- (id)nicknameLabel;
+- (void)setNicknameLabel:;
+@end

@@ -1,0 +1,30 @@
+@interface NEPathController : NSObject
+@property (nonatomic) BOOL enabled;
+@property (nonatomic) BOOL ignoreRouteRules;
+@property (nonatomic) BOOL ignoreFallback;
+@property (nonatomic) q cellularFallbackFlags;
+@property (nonatomic) NSArray pathRules;
+@property (nonatomic) BOOL hasNonDefaultRules;
+- (BOOL)checkValidityAndCollectErrors:;
+- (id)descriptionWithIndent:options:;
+- (BOOL)hasNonDefaultRules;
+- (void)setPathRules:;
+- (id)initWithCoder:;
+- (BOOL)ignoreRouteRules;
+- (void)encodeWithCoder:;
+- (id)pathRules;
+- (void)setEnabled:;
+- (long long)cellularFallbackFlags;
+- (BOOL)ignoreFallback;
+- (void).cxx_destruct;
+- (void)setIgnoreRouteRules:;
+- (BOOL)removePathRuleBySigningIdentifier:;
+- (id)copyPathRuleSigningIdentifiers;
+- (void)setIgnoreFallback:;
+- (void)setCellularFallbackFlags:;
+- (id)copyPathRuleBySigningIdentifier:;
+- (id)copyWithZone:;
+- (BOOL)isEnabled;
++ (BOOL)supportsSecureCoding;
++ (id)copyAggregatePathRules;
+@end

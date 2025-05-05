@@ -1,0 +1,38 @@
+@interface BDXCategoryImageView : BDXCategoryIndicatorView
+@property (nonatomic) NSArray imageNames;
+@property (nonatomic) NSArray imageURLs;
+@property (nonatomic) NSArray selectedImageNames;
+@property (nonatomic) NSArray selectedImageURLs;
+@property (nonatomic) @? loadImageCallback;
+@property (nonatomic) {CGSize=dd} imageSize;
+@property (nonatomic) double imageCornerRadius;
+@property (nonatomic) BOOL imageZoomEnabled;
+@property (nonatomic) double imageZoomScale;
+- (double)imageZoomScale;
+- (void)initializeData;
+- (BOOL)isImageZoomEnabled;
+- (id)loadImageCallback;
+- (Class)preferredCellClass;
+- (double)preferredCellWidthAtIndex:;
+- (void)refreshCellModel:index:;
+- (void)refreshDataSource;
+- (void)refreshLeftCellModel:rightCellModel:ratio:;
+- (void)refreshSelectedCellModel:unselectedCellModel:;
+- (id)selectedImageNames;
+- (id)selectedImageURLs;
+- (void)setImageNames:;
+- (void)setImageZoomEnabled:;
+- (void)setImageZoomScale:;
+- (void)setLoadImageCallback:;
+- (void)setSelectedImageNames:;
+- (void)setSelectedImageURLs:;
+- (void)dealloc;
+- (id)imageSize;
+- (void).cxx_destruct;
+- (void)setImageSize:;
+- (id)imageURLs;
+- (void)setImageURLs:;
+- (id)imageNames;
+- (void)setImageCornerRadius:;
+- (double)imageCornerRadius;
+@end

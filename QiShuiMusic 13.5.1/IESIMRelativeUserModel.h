@@ -1,0 +1,36 @@
+@interface IESIMRelativeUserModel : IESIMBaseApiModel
+@property (nonatomic) NSNumber userID;
+@property (nonatomic) IESIMURLModel avatar;
+@property (nonatomic) NSString nickname;
+@property (nonatomic) IESIMURLModel avatarThumb;
+@property (nonatomic) q followStatus;
+@property (nonatomic) NSString secUserID;
+@property (nonatomic) NSString alias;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)aliasWithScene:;
+- (void)setAvatarThumb:;
+- (id)avatarThumb;
+- (long long)followStatus;
+- (id)getUserModel;
+- (id)secUserID;
+- (void)setFollowStatus:;
+- (void)setSecUserID:;
+- (id)userNameWithScene:;
+- (id)userID;
+- (id)alias;
+- (id)displayName;
+- (id)nickname;
+- (void).cxx_destruct;
+- (void)setAlias:;
+- (void)setNickname:;
+- (void)setUserID:;
+- (id)avatar;
+- (void)setAvatar:;
++ (id)avatarJSONAdapter;
++ (id)avatarThumbJSONAdapter;
++ (id)followStatusJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

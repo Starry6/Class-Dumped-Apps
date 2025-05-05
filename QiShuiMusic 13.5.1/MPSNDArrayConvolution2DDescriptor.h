@@ -1,0 +1,37 @@
+@interface MPSNDArrayConvolution2DDescriptor : NSObject
+@property (nonatomic) Q kernelWidth;
+@property (nonatomic) Q kernelHeight;
+@property (nonatomic) Q inputFeatureChannels;
+@property (nonatomic) Q outputFeatureChannels;
+@property (nonatomic) Q strideInPixelsX;
+@property (nonatomic) Q strideInPixelsY;
+@property (nonatomic) Q groups;
+@property (nonatomic) Q dilationRateInX;
+@property (nonatomic) Q dilationRateInY;
+@property (nonatomic) I dataFormat;
+@property (nonatomic) I weightsFormat;
+- (id)init;
+- (unsigned long long)groups;
+- (void)setGroups:;
+- (void)setKernelHeight:;
+- (void)setStrideInPixelsX:;
+- (unsigned long long)strideInPixelsY;
+- (unsigned long long)strideInPixelsX;
+- (unsigned long long)kernelHeight;
+- (void)setOutputFeatureChannels:;
+- (void)setInputFeatureChannels:;
+- (void)setStrideInPixelsY:;
+- (unsigned long long)outputFeatureChannels;
+- (unsigned long long)kernelWidth;
+- (unsigned long long)inputFeatureChannels;
+- (id)copyWithZone:;
+- (void)setKernelWidth:;
+- (void)setWeightsFormat:;
+- (void)setDataFormat:;
+- (unsigned long long)dilationRateInX;
+- (void)setDilationRateInX:;
+- (unsigned long long)dilationRateInY;
+- (void)setDilationRateInY:;
+- (unsigned int)dataFormat;
+- (unsigned int)weightsFormat;
+@end

@@ -1,0 +1,35 @@
+@interface IESECGoodsDetailBottomTipsStackView : UIStackView
+@property (nonatomic) IESECGoodsDetailBottomDataModel dataModel;
+@property (nonatomic) IESECGoodsDetailBottomMetaModel metaModel;
+@property (nonatomic) NSMutableArray tipsModels;
+@property (nonatomic) NSString pageIdentifier;
+@property (nonatomic) IESECLLDCLynxManager lynxManager;
+@property (nonatomic) UIView lynxView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setLynxManager:;
+- (void)iesec_respondEvent:;
+- (id)initWithFrame:viewModel:lynxManager:;
+- (id)lynxManager;
+- (id)lynxView;
+- (id)metaModel;
+- (void)registerJSB;
+- (void)setLynxView:;
+- (void)setMetaModel:;
+- (void)setTipsModels:;
+- (unsigned long long)tipsCount;
+- (double)tipsHeight;
+- (id)tipsModels;
+- (void)updateContentWithViewModel:lynxManager:;
+- (void)updateContent;
+- (void)removeAllViews;
+- (id)hitTest:withEvent:;
+- (void).cxx_destruct;
+- (id)dataModel;
+- (void)setDataModel:;
+- (void)setupUI;
+- (id)pageIdentifier;
+- (void)setPageIdentifier:;
+@end

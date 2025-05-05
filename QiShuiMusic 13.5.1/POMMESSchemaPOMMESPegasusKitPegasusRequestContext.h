@@ -1,0 +1,30 @@
+@interface POMMESSchemaPOMMESPegasusKitPegasusRequestContext : SISchemaInstrumentationMessage
+@property (nonatomic) POMMESSchemaPOMMESPegasusKitPegasusRequest startedOrChanged;
+@property (nonatomic) BOOL hasStartedOrChanged;
+@property (nonatomic) POMMESSchemaPOMMESPegasusKitPegasusResponse ended;
+@property (nonatomic) BOOL hasEnded;
+@property (nonatomic) NSData jsonData;
+@property (nonatomic) Q whichContextevent;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (BOOL)hasEnded;
+- (void)setStartedOrChanged:;
+- (id)startedOrChanged;
+- (id)ended;
+- (void)setEnded:;
+- (void)setHasEnded:;
+- (void)setHasStartedOrChanged:;
+- (void)deleteStartedOrChanged;
+- (void)deleteEnded;
+- (unsigned long long)whichContextevent;
+- (BOOL)hasStartedOrChanged;
+@end

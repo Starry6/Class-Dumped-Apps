@@ -1,0 +1,30 @@
+@interface AKBasicLoginContentViewControllerContainerView : UIView
+@property (nonatomic) UIImageView bannerView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel messageLabel;
+@property (nonatomic) NSArray activeConstraints;
+@property (nonatomic) UIImage bannerImage;
+@property (nonatomic) NSString titleText;
+@property (nonatomic) NSString messageText;
+- (void)setTitleText:;
+- (id)titleText;
+- (void)setTitleLabel:;
+- (id)viewForFirstBaselineLayout;
+- (id)viewForLastBaselineLayout;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (id)messageLabel;
+- (void)updateConstraints;
+- (id)titleLabel;
+- (void)setMessageLabel:;
+- (id)messageText;
+- (void)setMessageText:;
+- (id)bannerImage;
+- (void)setBannerImage:;
+- (id)bannerView;
+- (void)setBannerView:;
+- (id)activeConstraints;
+- (void)setActiveConstraints:;
+- (void)_configureBannerImage;
+- (void)_configureMessageLabel;
+@end

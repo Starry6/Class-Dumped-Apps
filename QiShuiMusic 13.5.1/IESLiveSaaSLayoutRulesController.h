@@ -1,0 +1,31 @@
+@interface IESLiveSaaSLayoutRulesController : NSObject
+@property (nonatomic) IESLiveSaaSStackView view;
+@property (nonatomic) NSMutableDictionary items;
+@property (nonatomic) NSArray rules;
+@property (nonatomic) q limit;
+@property (nonatomic) BOOL reversed;
+@property (nonatomic) BOOL disabled;
+- (void)bindingView:;
+- (BOOL)canInsertType:;
+- (void)enumerateArrangedViewsUsingBlock:;
+- (BOOL)isAllowList:;
+- (void)relimitItems;
+- (long long)viewIndexForRule:;
+- (void)setReversed:;
+- (void)removeItem:;
+- (long long)limit;
+- (void)setDisabled:;
+- (id)init;
+- (id)items;
+- (id)rules;
+- (BOOL)reversed;
+- (BOOL)disabled;
+- (void)setLimit:;
+- (void)insertItem:;
+- (id)view;
+- (void)setRules:;
+- (void)setItems:;
+- (void).cxx_destruct;
+- (void)setView:;
+- (id)itemForType:;
+@end

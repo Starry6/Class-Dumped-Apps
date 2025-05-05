@@ -1,0 +1,30 @@
+@interface GEOTileKeyList : NSObject
+- (unsigned long long)capacity;
+- (BOOL)containsKey:;
+- (void)sort:;
+- (id)init;
+- (void)dealloc;
+- (id)sublistWithRange:;
+- (id)listWithout:;
+- (void)addKey:;
+- (BOOL)removeKey:;
+- (id)keyAtIndex:;
+- (unsigned long long)countByEnumeratingWithState:objects:count:;
+- (id)newXPCData;
+- (id)initWithCapacity:maxCapacity:;
+- (id)firstKey;
+- (BOOL)intersectsList:;
+- (void)encodeWithOSLogCoder:options:maxLength:;
+- (void).cxx_destruct;
+- (BOOL)addKey:lostKey:;
+- (id)description;
+- (void)_addKeyToBack:;
+- (unsigned long long)count;
+- (id)copyWithMaxCapacity:;
+- (void)removeKeysMatchingPredicate:;
+- (id)initWithMaxCapacity:;
+- (id)initWithCapacity:;
+- (id)copyWithZone:;
++ (id)formatOSLogData:;
++ (id)listFromXPCData:;
+@end

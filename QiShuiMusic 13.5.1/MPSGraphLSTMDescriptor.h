@@ -1,0 +1,34 @@
+@interface MPSGraphLSTMDescriptor : NSObject
+@property (nonatomic) BOOL reverse;
+@property (nonatomic) BOOL bidirectional;
+@property (nonatomic) BOOL produceCell;
+@property (nonatomic) BOOL training;
+@property (nonatomic) BOOL forgetGateLast;
+@property (nonatomic) Q inputGateActivation;
+@property (nonatomic) Q forgetGateActivation;
+@property (nonatomic) Q cellGateActivation;
+@property (nonatomic) Q outputGateActivation;
+@property (nonatomic) Q activation;
+- (BOOL)reverse;
+- (BOOL)bidirectional;
+- (id)copyWithZone:;
+- (void)setReverse:;
+- (BOOL)training;
+- (void)setTraining:;
+- (unsigned long long)activation;
+- (void)setActivation:;
+- (void)setBidirectional:;
+- (BOOL)produceCell;
+- (void)setProduceCell:;
+- (BOOL)forgetGateLast;
+- (void)setForgetGateLast:;
+- (unsigned long long)inputGateActivation;
+- (void)setInputGateActivation:;
+- (unsigned long long)forgetGateActivation;
+- (void)setForgetGateActivation:;
+- (unsigned long long)cellGateActivation;
+- (void)setCellGateActivation:;
+- (unsigned long long)outputGateActivation;
+- (void)setOutputGateActivation:;
++ (id)descriptor;
+@end

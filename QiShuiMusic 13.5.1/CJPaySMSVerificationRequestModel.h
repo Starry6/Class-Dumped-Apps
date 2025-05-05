@@ -1,0 +1,34 @@
+@interface CJPaySMSVerificationRequestModel : JSONModel
+@property (nonatomic) NSString phoneNumberText;
+@property (nonatomic) NSString titleText;
+@property (nonatomic) NSString qaURLString;
+@property (nonatomic) NSString qaTitle;
+@property (nonatomic) Q codeCount;
+@property (nonatomic) q countDownSeconds;
+@property (nonatomic) Q animationType;
+@property (nonatomic) BOOL usesCloseButton;
+@property (nonatomic) NSString identify;
+- (id)qaTitle;
+- (BOOL)usesCloseButton;
+- (id)phoneNumberText;
+- (void)setQaURLString:;
+- (void)setUsesCloseButtonWithNSString:;
+- (unsigned long long)codeCount;
+- (id)qaURLString;
+- (void)setAnimationTypeWithNSString:;
+- (void)setCodeCount:;
+- (void)setPhoneNumberText:;
+- (void)setQaTitle:;
+- (void)setUsesCloseButton:;
+- (void)setTitleText:;
+- (id)titleText;
+- (unsigned long long)animationType;
+- (void)setAnimationType:;
+- (void).cxx_destruct;
+- (long long)countDownSeconds;
+- (void)setCountDownSeconds:;
+- (id)identify;
+- (void)setIdentify:;
++ (id)keyMapper;
++ (BOOL)propertyIsOptional:;
+@end

@@ -1,0 +1,31 @@
+@interface IDSQRProtoPutMaterialIndication : PBCodable
+@property (nonatomic) NSMutableArray materials;
+@property (nonatomic) BOOL hasMissingMaterial;
+@property (nonatomic) IDSQRProtoPutMaterialErrorIndication missingMaterial;
+@property (nonatomic) BOOL hasTxnId;
+@property (nonatomic) Q txnId;
+- (id)materials;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void)clearMaterials;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (void)setMaterials:;
+- (id)description;
+- (unsigned long long)materialsCount;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setTxnId:;
+- (void)setHasTxnId:;
+- (BOOL)hasTxnId;
+- (unsigned long long)txnId;
+- (void)addMaterials:;
+- (id)materialsAtIndex:;
+- (BOOL)hasMissingMaterial;
+- (id)missingMaterial;
+- (void)setMissingMaterial:;
++ (Class)materialsType;
+@end

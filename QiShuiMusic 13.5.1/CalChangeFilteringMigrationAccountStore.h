@@ -1,0 +1,30 @@
+@interface CalChangeFilteringMigrationAccountStore : NSObject
+@property (nonatomic) <CalMigrationAccountStore> backingAccountStore;
+@property (nonatomic) <CalChangeFilteringMigrationAccountStoreDelegate> delegate;
+@property (nonatomic) NSMutableDictionary addedWrappedAccounts;
+@property (nonatomic) NSMutableDictionary addedWrappedChildAccounts;
+@property (nonatomic) NSMutableDictionary loadedAccounts;
+@property (nonatomic) NSMutableSet removedWrappedAccountIdentifiers;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)backingAccountStore;
+- (id)_backingAccountForAccount:;
+- (id)accountWithIdentifier:;
+- (id)delegate;
+- (BOOL)removeAccount:error:;
+- (void).cxx_destruct;
+- (BOOL)saveAccount:withError:;
+- (id)childAccountsForAccount:withTypeIdentifier:;
+- (id)topLevelAccountsWithAccountTypeIdentifier:error:;
+- (id)createAccountWithAccountTypeIdentifier:error:;
+- (id)createChildAccountOfParent:withAccountTypeIdentifier:error:;
+- (id)initWithBackingAccountStore:delegate:;
+- (id)_accountWithIdentifier:preloadedBackingAccount:;
+- (id)addedWrappedAccounts;
+- (id)addedWrappedChildAccounts;
+- (id)loadedAccounts;
+- (id)removedWrappedAccountIdentifiers;
++ (id)storeFilteringAllChangesInBackingAccountStore:;
+@end

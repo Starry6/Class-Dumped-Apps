@@ -1,0 +1,36 @@
+@interface GEOLatLngE7 : PBCodable
+@property (nonatomic) {?=dd} coordinate;
+@property (nonatomic) GEOLatLng latLng;
+@property (nonatomic) NSInteger latE7;
+@property (nonatomic) NSInteger lngE7;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (id)initWithCoordinate:;
+- (id)initWithLatitude:longitude:;
+- (id)initWithJSON:;
+- (id)latLng;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (id)coordinate;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)initWithLatLng:;
+- (id)initWithE7Latitude:longitude:;
+- (int)latE7;
+- (void)setLatE7:;
+- (int)lngE7;
+- (void)setLngE7:;
++ (BOOL)isValid:;
++ (double)fromE7Coordinate:;
++ (int)toE7Coordinate:;
+@end

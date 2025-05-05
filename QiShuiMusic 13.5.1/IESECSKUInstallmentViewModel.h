@@ -1,0 +1,31 @@
+@interface IESECSKUInstallmentViewModel : NSObject
+@property (nonatomic) IESECSKUModel skuModel;
+@property (nonatomic) IESECSKUDetailContext detailContext;
+@property (nonatomic) IESECGoodsInstallmentTermInfoModel installmentInfo;
+@property (nonatomic) BOOL canSelect;
+@property (nonatomic) NSString installmentTitle;
+@property (nonatomic) NSString warningTitle;
+@property (nonatomic) Q lastSelectedIndex;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithSKUModel:detailContext:;
+- (id)installmentInfo;
+- (id)detailContext;
+- (id)installmentTitle;
+- (unsigned long long)lastSelectedIndex;
+- (void)setDetailContext:;
+- (void)setInstallmentInfo:;
+- (void)setInstallmentTitle:;
+- (void)setLastSelectedIndex:;
+- (void)setSkuModel:;
+- (void)setWarningTitle:;
+- (void)showInstallmentTracker;
+- (id)skuModel;
+- (id)warningTitle;
+- (void).cxx_destruct;
+- (void)selectItemAtIndex:;
+- (BOOL)canSelect;
+- (void)setCanSelect:;
+@end

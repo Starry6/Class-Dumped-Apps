@@ -1,0 +1,2 @@
+@interface CNVCardOptions : CNVCardWritingOptions
+@end

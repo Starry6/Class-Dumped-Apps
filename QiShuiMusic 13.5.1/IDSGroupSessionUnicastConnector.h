@@ -1,0 +1,35 @@
+@interface IDSGroupSessionUnicastConnector : NSObject
+@property (nonatomic) NSString groupSessionIDAlias;
+@property (nonatomic) Q participantIDAlias;
+@property (nonatomic) NSData salt;
+@property (nonatomic) q dataMode;
+@property (nonatomic) @? connectionReadyCallback;
+@property (nonatomic) NSObject<OS_dispatch_queue> queue;
+@property (nonatomic) NSObject<OS_nw_connection> cachedConnection;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)salt;
+- (void)encodeWithCoder:;
+- (void)setSalt:;
+- (void).cxx_destruct;
+- (void)setQueue:;
+- (long long)dataMode;
+- (id)queue;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)initWithGroupSessionID:participantID:dataMode:;
+- (id)initWithGroupSessionIDAlias:participantIDAlias:salt:dataMode:;
+- (id)createDataBlobFrom:port:;
+- (void)requestDataBlob:;
+- (void)listenForIncomingConnection:;
+- (id)groupSessionIDAlias;
+- (unsigned long long)participantIDAlias;
+- (id)connectionReadyCallback;
+- (void)setConnectionReadyCallback:;
+- (id)cachedConnection;
+- (void)setCachedConnection:;
++ (BOOL)supportsSecureCoding;
++ (void)requestNWConnectionWithDataBlob:completionHandler:;
++ (id)extractDictionaryFromDataBlobFrom:error:;
++ (void)requestNWConnectionToVirtualParticipant:forSession:completionHandler:;
+@end

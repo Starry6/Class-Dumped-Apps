@@ -1,0 +1,38 @@
+@interface CSJCustomNavigationBarView : UIView
+@property (nonatomic) CSJMaterialMeta materialMeta;
+@property (nonatomic) Q navBarStyle;
+@property (nonatomic) UIButton backButton;
+@property (nonatomic) UIButton closeButton;
+@property (nonatomic) UIButton dislikeButton;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIView line;
+@property (nonatomic) <CSJCustomNavigationBarDelegate> delegate;
+- (void)closeAction:;
+- (id)dislikeButton;
+- (void)dislikeButtonTapped:;
+- (double)getDislikeButtonWidthWithHeight:;
+- (id)initWithMaterial:style:;
+- (void)layoutNormalLandingpage;
+- (void)layoutNormalLandingpageNew;
+- (void)layoutVideoLandingpage;
+- (id)materialMeta;
+- (void)setDislikeButton:;
+- (void)setMaterialMeta:;
+- (void)updateTitleLabel:;
+- (void)setTitleLabel:;
+- (void)layoutSubviews;
+- (unsigned long long)navBarStyle;
+- (void)setNavBarStyle:;
+- (void)setDelegate:;
+- (id)backButton;
+- (void)setup;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)line;
+- (id)titleLabel;
+- (void)setBackButton:;
+- (void)goBack:;
+- (void)setLine:;
+- (id)closeButton;
+- (void)setCloseButton:;
+@end

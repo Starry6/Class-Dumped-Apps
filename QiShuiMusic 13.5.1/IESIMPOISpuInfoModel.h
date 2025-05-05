@@ -1,0 +1,30 @@
+@interface IESIMPOISpuInfoModel : IESIMBaseApiModel
+@property (nonatomic) NSString spuID;
+@property (nonatomic) NSString spuName;
+@property (nonatomic) IESIMPOIContentItemModel poiContent;
+@property (nonatomic) NSArray coverUrlList;
+@property (nonatomic) q status;
+@property (nonatomic) NSString targetURL;
+@property (nonatomic) NSString supplierID;
+@property (nonatomic) NSArray iconServiceTypeList;
+- (id)spuName;
+- (id)coverUrlList;
+- (id)iconServiceTypeList;
+- (id)poiContent;
+- (void)setCoverUrlList:;
+- (void)setIconServiceTypeList:;
+- (void)setPoiContent:;
+- (void)setSpuID:;
+- (void)setSpuName:;
+- (void)setSupplierID:;
+- (id)spuID;
+- (id)supplierID;
+- (void)setStatus:;
+- (void).cxx_destruct;
+- (long long)status;
+- (id)targetURL;
+- (void)setTargetURL:;
++ (id)coverUrlListJSONTransformer;
++ (id)iconServiceTypeListJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

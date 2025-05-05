@@ -1,0 +1,30 @@
+@interface CJPayFrontBankCardListCell : UITableViewCell
+@property (nonatomic) UIImageView bankIconView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel subTitleLabel;
+@property (nonatomic) CJPayStyleCheckMark selectImageView;
+@property (nonatomic) UIView disableView;
+@property (nonatomic) CJPayChannelBizModel model;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)selectImageView;
+- (void)setDisableView:;
+- (id)bankIconView;
+- (id)disableView;
+- (void)p_enableCell:;
+- (void)p_setupUI;
+- (void)setBankIconView:;
+- (void)setSelectImageView:;
+- (id)model;
+- (id)initWithStyle:reuseIdentifier:;
+- (void)setModel:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (id)subTitleLabel;
+- (void)setSubTitleLabel:;
+- (void)updateContent:;
++ (id)calHeight:;
+@end

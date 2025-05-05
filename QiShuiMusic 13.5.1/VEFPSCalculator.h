@@ -1,0 +1,33 @@
+@interface VEFPSCalculator : NSObject
+@property (nonatomic) Q counterType;
+@property (nonatomic) double timeInterval;
+@property (nonatomic) double firstFrameTime;
+@property (nonatomic) Q arrivedFrames;
+@property (nonatomic) ^Q incomingFrameTimes;
+@property (nonatomic) Q frameHistoryWindowMs;
+@property (nonatomic) double incomingFrameRate;
+@property (nonatomic) @? FPSCallback;
+- (id)FPSCallback;
+- (void)setCounterType:;
+- (void)setFPSCallback:;
+- (unsigned long long)arrivedFrames;
+- (double)firstFrameTime;
+- (void)frameArrived;
+- (unsigned long long)frameHistoryWindowMs;
+- (double)incomingFrameRate;
+- (id)incomingFrameTimes;
+- (id)initWithCounterType:timeInterval:;
+- (void)processIncomingFrameRate:;
+- (void)setArrivedFrames:;
+- (void)setFirstFrameTime:;
+- (void)setFrameHistoryWindowMs:;
+- (void)setIncomingFrameRate:;
+- (void)setIncomingFrameTimes:;
+- (id)init;
+- (void)dealloc;
+- (void)setTimeInterval:;
+- (double)timeInterval;
+- (void).cxx_destruct;
+- (void)reset;
+- (unsigned long long)counterType;
+@end

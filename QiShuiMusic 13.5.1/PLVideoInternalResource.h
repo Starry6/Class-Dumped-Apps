@@ -1,0 +1,31 @@
+@interface PLVideoInternalResource : NSObject
+@property (nonatomic) PLInternalResource backingResource;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)isDownloadable;
+- (id)backingResource;
+- (unsigned short)storeClassID;
+- (BOOL)isPlayable;
+- (BOOL)isLocallyAvailable;
+- (id)uniformTypeIdentifier;
+- (unsigned int)version;
+- (id)debugDescription;
+- (void).cxx_destruct;
+- (BOOL)isEqual:;
+- (BOOL)isStreamable;
+- (id)fileURLIfLocal;
+- (id)additionalDescription;
+- (BOOL)isLocallyGeneratable;
+- (BOOL)isLargeQuality;
+- (BOOL)isOriginalVideo;
+- (BOOL)isOriginalVideoComplement;
+- (BOOL)matchesOrExceedsQualityLevel:;
+- (BOOL)hasAssociatedMediaMetadata;
+- (BOOL)isHDRDerivative;
+- (BOOL)isSDRFallback;
+- (BOOL)isHDROrSDRDependingOnMasterVideo;
+- (id)initWithBackingResource:;
++ (BOOL)deviceSupportsHDR;
+@end

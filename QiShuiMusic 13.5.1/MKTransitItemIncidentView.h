@@ -1,0 +1,32 @@
+@interface MKTransitItemIncidentView : UIView
+@property (nonatomic) {UIEdgeInsets=dddd} contentInsets;
+@property (nonatomic) q cellPosition;
+@property (nonatomic) BOOL padBottom;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setContentInsets:;
+- (id)contentInsets;
+- (void)_contentSizeCategoryDidChange;
+- (void)dealloc;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)didMoveToWindow;
+- (void)setCellPosition:;
+- (void)updateConstraints;
+- (void)infoCardThemeChanged;
+- (void)_updateConstraintValues;
+- (void)configureWithIncident:referenceDate:shouldShowImage:inSiri:;
+- (void)configureWithIncidentMessage:referenceDate:shouldShowImage:inSiri:;
+- (void)configureWithMessage:incident:referenceDate:shouldShowImage:inSiri:;
+- (long long)cellPosition;
+- (BOOL)padBottom;
+- (void)setPadBottom:;
+- (void)configureViews;
+- (void)_configureWithMessage:referenceDate:lastUpdated:incidentIsBlocking:shouldShowImage:inSiri:;
+- (void)_updateBottomConstraintWithOffset:;
+- (id)_blockingImage;
+- (id)_nonBlockingImage;
+- (void)rebuildConstraints;
+@end

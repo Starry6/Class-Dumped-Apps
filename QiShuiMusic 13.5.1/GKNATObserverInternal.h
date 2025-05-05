@@ -1,0 +1,35 @@
+@interface GKNATObserverInternal : GKNATObserver
+- (id)init;
+- (void)shouldTryNATCheck;
+- (int)natTypeForCommNATFlags:isCarrier:;
+- (int)callHTTPTestFromIPPort:ipv6Prefix:ToServer:isSSL:;
+- (void)dealloc;
+- (id)initWithOptions:;
+- (id)copyNatTypeCachePlistScheme;
+- (BOOL)ensureNatCachePathExists;
+- (int)currentNATType;
+- (unsigned int)setSSLFlags:forInterface:isCached:;
+- (void)setDelegate:;
+- (void)updateNatTypeCache:;
+- (void)clearRetries;
+- (void)calculateSummmaryNATType:andCarrierNATType:andNonCarrierNATType:copyInterfaceInfoDictionary:;
+- (id)release;
+- (void)updateNatTypeCache_CachePlistScheme:;
+- (unsigned int)setTCPFlags:forInterface:isCached:;
+- (id)delegate;
+- (void)cacheNATFlags:forNetwork:;
+- (void)NATCheckWithIPPort:ipv6Prefix:useCache:;
+- (void)HTTPSCheckWithIPPort:ipv6Prefix:useCache:;
+- (unsigned int)setCommNATFlags:forInterface:isCached:;
+- (void)registerForNetworkChanges;
+- (id)lookupCachedNATFlagsForNetwork:;
+- (void)tryNATCheckWithDelay:;
+- (void)HTTPCheckWithIPPort:ipv6Prefix:useCache:;
+- (id)nameForNetworkWithIPPort:interfaceName:;
+- (void)reportNATType;
+- (void)updateNatTypeCache_OSXGamedScheme:;
+- (id)copyNatTypeCache_OSXGamedScheme;
+- (id)callCommNATTestFromIPPort:ipv6Prefix:;
+- (unsigned int)setFlags:forInterface:isCached:isCachedKey:mask:;
+- (id)copyNatTypeCache;
+@end

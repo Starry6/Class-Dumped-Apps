@@ -1,0 +1,36 @@
+@interface IESLiveSaaSBadgeFactory : NSObject
+@property (nonatomic) BOOL showEcomFansClub;
+@property (nonatomic) BOOL showFansOrFriendsBadge;
+@property (nonatomic) BOOL showNewVipBadge;
+@property (nonatomic) double scale;
+@property (nonatomic) BOOL enableAnimatedImage;
+@property (nonatomic) BOOL showFansClub;
+- (BOOL)showNewVipBadge;
+- (id)p_getBadgeIcon:;
+- (void)appendBadgeListIn:badgeList:;
+- (void)appendBadgeListIn:rangeNum:rangeWidth:rangeHeight:badgeList:vipRouter:;
+- (id)badgeImageNodesWithBadgeList:vipRouter:;
+- (void)calculateRangeNum:rangeWidth:rangeHeight:badgeList:vipRouter:;
+- (BOOL)enableAnimatedImage;
+- (BOOL)enableShowRankRights;
+- (double)getFontSizeWith:;
+- (BOOL)isVipIconWithName:;
+- (id)p_composeBrotherGroupIconWithImage:title:fontColor:;
+- (id)p_composeCityIconWithImage:title:fontColor:;
+- (id)p_composeIconWithImage:title:fontColor:;
+- (id)p_composeNobleIconWithImage:level:fontColor:;
+- (id)p_getBrotherGroupIcon:name:level:fontColor:;
+- (id)p_getCityIcon:name:fontColor:;
+- (id)p_getFansclubIcon:name:fontColor:;
+- (id)p_getIconKeyByModel:;
+- (void)setEnableAnimatedImage:;
+- (void)setShowEcomFansClub:;
+- (void)setShowFansClub:;
+- (void)setShowFansOrFriendsBadge:;
+- (void)setShowNewVipBadge:;
+- (BOOL)showEcomFansClub;
+- (BOOL)showFansClub;
+- (BOOL)showFansOrFriendsBadge;
+- (void)setScale:;
+- (double)scale;
+@end

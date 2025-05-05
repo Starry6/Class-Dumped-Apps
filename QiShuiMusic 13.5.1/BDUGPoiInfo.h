@@ -1,0 +1,34 @@
+@interface BDUGPoiInfo : NSObject
+@property (nonatomic) NSString locationId;
+@property (nonatomic) NSString amapId;
+@property (nonatomic) NSString typeCode;
+@property (nonatomic) NSString name;
+@property (nonatomic) NSString awemeId;
+@property (nonatomic) double confidence;
+@property (nonatomic) double distance;
+@property (nonatomic) NSString source;
+- (id)awemeId;
+- (id)amapId;
+- (id)initWithLocationId:amapId:typeCode:name:awemeId:confidence:distance:source:;
+- (void)setAmapId:;
+- (void)setAwemeId:;
+- (double)distance;
+- (id)typeCode;
+- (double)confidence;
+- (void)setConfidence:;
+- (void)setName:;
+- (void)setDistance:;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)source;
+- (id)name;
+- (void)setSource:;
+- (id)copyWithZone:;
+- (id)locationId;
+- (void)setLocationId:;
+- (void)setTypeCode:;
+- (id)toJSON;
++ (id)poiInfoWithDictionary:;
++ (BOOL)supportsSecureCoding;
+@end

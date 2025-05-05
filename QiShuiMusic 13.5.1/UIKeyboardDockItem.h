@@ -1,0 +1,37 @@
+@interface UIKeyboardDockItem : NSObject
+@property (nonatomic) UIKeyboardDockItemButton button;
+@property (nonatomic) {CGPoint=dd} touchDownPoint;
+@property (nonatomic) UIPanGestureRecognizer panGestureRecognizer;
+@property (nonatomic) UILongPressGestureRecognizer longPressGestureRecognizer;
+@property (nonatomic) BOOL active;
+@property (nonatomic) BOOL enabled;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) NSString imageName;
+@property (nonatomic) UIImage image;
+@property (nonatomic) UIKeyboardDockItemButton view;
+- (BOOL)active;
+- (id)longPressGestureRecognizer;
+- (void)setLongPressGestureRecognizer:;
+- (void)setImageName:;
+- (id)imageName;
+- (BOOL)enabled;
+- (id)panGestureRecognizer;
+- (id)identifier;
+- (void)setImage:;
+- (id)imageWithRenderConfig:;
+- (id)view;
+- (id)touchDownPoint;
+- (void)setPanGestureRecognizer:;
+- (id)button;
+- (void)setEnabled:;
+- (id)initWithImageName:identifier:;
+- (void).cxx_destruct;
+- (void)setTouchDownPoint:;
+- (void)setActive:;
+- (void)setButton:;
+- (void)setIdentifier:;
+- (BOOL)isEqual:;
+- (id)image;
++ (id)_darkStyleGlyphColor;
++ (id)_standardGlyphColor;
+@end

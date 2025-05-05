@@ -1,0 +1,2 @@
+@interface AVAssetLoggingIdentifierInternal : NSObject
+@end

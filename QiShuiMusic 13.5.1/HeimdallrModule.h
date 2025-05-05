@@ -1,0 +1,31 @@
+@interface HeimdallrModule : NSObject
+@property (nonatomic) BOOL isRunning;
+@property (nonatomic) HMDModuleConfig config;
+@property (nonatomic) BOOL hasExecutedTaskIndependentOfStart;
+@property (nonatomic) Heimdallr heimdallr;
+@property (nonatomic) HMDReportLimitSizeTool sizeLimitTool;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)cleanupWithConfig:;
+- (BOOL)hasExecutedTaskIndependentOfStart;
+- (id)heimdallr;
+- (void)runTaskIndependentOfStart;
+- (void)setHasExecutedTaskIndependentOfStart:;
+- (void)setupWithHeimdallr:;
+- (void)setupWithHeimdallrReportSizeLimimt:;
+- (void)setupWithHeimdallrReportSizeLimit:;
+- (id)sizeLimitTool;
+- (void)updateConfig:;
+- (id)init;
+- (void)start;
+- (void)setConfig:;
+- (void)stop;
+- (void)setIsRunning:;
+- (BOOL)isRunning;
+- (id)moduleName;
+- (void).cxx_destruct;
+- (id)config;
+- (Class)storeClass;
+@end

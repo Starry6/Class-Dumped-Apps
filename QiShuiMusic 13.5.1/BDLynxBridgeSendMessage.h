@@ -1,0 +1,32 @@
+@interface BDLynxBridgeSendMessage : NSObject
+@property (nonatomic) q bdwm_callbackTS;
+@property (nonatomic) q bdwm_fireEventTS;
+@property (nonatomic) q bdwm_endTS;
+@property (nonatomic) NSString containerID;
+@property (nonatomic) @ data;
+@property (nonatomic) q code;
+@property (nonatomic) NSString protocolVersion;
+@property (nonatomic) NSString statusDescription;
+@property (nonatomic) BDLynxBridgeReceivedMessage invokeMessage;
+- (long long)bdwm_callbackTS;
+- (long long)bdwm_endTS;
+- (long long)bdwm_fireEventTS;
+- (id)invokeMessage;
+- (void)setBdwm_callbackTS:;
+- (void)setBdwm_endTS:;
+- (void)setBdwm_fireEventTS:;
+- (void)setInvokeMessage:;
+- (id)protocolVersion;
+- (id)statusDescription;
+- (id)init;
+- (id)containerID;
+- (id)data;
+- (void)setContainerID:;
+- (long long)code;
+- (void).cxx_destruct;
+- (void)setData:;
+- (void)setCode:;
+- (void)setStatusDescription:;
+- (id)encodedMessage;
++ (id)messageWithContainerID:;
+@end

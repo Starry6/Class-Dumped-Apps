@@ -1,0 +1,30 @@
+@interface UITableViewCellFocusableReorderControl : UITableViewCellReorderControl
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)pressesCancelled:withEvent:;
+- (BOOL)beginTrackingWithTouch:withEvent:;
+- (void)floatingContentView:isTransitioningFromState:toState:;
+- (void)layoutSubviews;
+- (void)traitCollectionDidChange:;
+- (void)pressesEnded:withEvent:;
+- (void)pressesBegan:withEvent:;
+- (void).cxx_destruct;
+- (BOOL)shouldUpdateFocusInContext:;
+- (void)didUpdateFocusInContext:withAnimationCoordinator:;
+- (void)endTrackingWithTouch:withEvent:;
+- (void)floatingContentView:didFinishTransitioningToState:;
+- (BOOL)wantsMaskingWhileAnimatingDisabled;
+- (BOOL)continueTrackingWithTouch:withEvent:;
+- (void)_updateFloatingViewForCurrentTraits;
+- (BOOL)_shouldHandlePressEvent:;
+- (id)initWithTableViewCell:;
+- (void)_panRecognizer:;
+- (void)_upArrowButton:;
+- (void)_downArrowButton:;
+- (void)_updateFocusedFloatingContentView:;
+- (void)_beginIndirectTracking;
+- (void)_endIndirectTracking;
+- (void)_arrowButton:;
+@end

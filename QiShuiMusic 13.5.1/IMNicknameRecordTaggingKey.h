@@ -1,0 +1,2 @@
+@interface IMNicknameRecordTaggingKey : IMNicknameEncryptionKey
+@end

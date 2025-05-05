@@ -1,0 +1,33 @@
+@interface IESECGoodsDetailHeaderContentModel : IESECBaseApiModel
+@property (nonatomic) IESECGoodsDetailHeaderMediaModel media;
+@property (nonatomic) IESECGoodsDetailHeaderSliceModel slice;
+@property (nonatomic) IESECGoodsDetailHeaderLynxModel lynx;
+@property (nonatomic) IESECHeaderSliceAction clickAction;
+@property (nonatomic) IESECSliceAction pdpClickAction;
+@property (nonatomic) NSDictionary trackMeta;
+@property (nonatomic) NSDictionary bizMeta;
+@property (nonatomic) double whScale;
+@property (nonatomic) BOOL showBar;
+- (id)bizMeta;
+- (void)setClickAction:;
+- (BOOL)showBar;
+- (double)whScale;
+- (id)clickAction;
+- (id)lynx;
+- (id)pdpClickAction;
+- (void)setBizMeta:;
+- (void)setLynx:;
+- (void)setPdpClickAction:;
+- (void)setShowBar:;
+- (void)setTrackMeta:;
+- (void)setWhScale:;
+- (id)trackMeta;
+- (void)setSlice:;
+- (id)slice;
+- (void).cxx_destruct;
+- (id)media;
+- (void)setMedia:;
++ (id)lynxsJSONTransformer;
++ (id)slicesJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

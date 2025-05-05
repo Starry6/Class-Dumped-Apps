@@ -1,0 +1,31 @@
+@interface CBABModuleExternal : CBModule
+@property (nonatomic) CBDisplayModule displayModule;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)removeHIDServiceClient:;
+- (void)handleNotificationForKey:withProperty:;
+- (BOOL)addHIDServiceClient:;
+- (BOOL)handleHIDEvent:from:;
+- (void)dealloc;
+- (void)start;
+- (void)sendNotificationForKey:withValue:;
+- (id)copyPropertyForKey:withParameter:;
+- (void)stop;
+- (id)copyPropertyForKey:;
+- (BOOL)setPropertyInternal:forKey:;
+- (BOOL)setProperty:forKey:;
+- (void)updateAvailability;
+- (id)initWithDisplayModule:andQueue:;
+- (void)updateAutoBrightnessState:;
+- (void)updateBrightness;
+- (void)updateBrightnessForce:periodOverride:period:;
+- (BOOL)newALSService:;
+- (void)userBrightnessChangingHandler;
+- (void)userBrightnessCommitHandler;
+- (void)storeCurveToPreferences;
+- (BOOL)getAggregatedLux:;
+- (void)endFastRamp;
+- (id)displayModule;
+@end

@@ -1,0 +1,2 @@
+@interface CKContainerCallbackProxy : CKWeakObjectCallbackProxy
+@end

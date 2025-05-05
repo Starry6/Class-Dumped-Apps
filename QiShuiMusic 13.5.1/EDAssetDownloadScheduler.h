@@ -1,0 +1,33 @@
+@interface EDAssetDownloadScheduler : NSObject
+@property (nonatomic) NSString _identifier;
+@property (nonatomic) NSString _lastFailureIntervalKey;
+@property (nonatomic) @? _handler;
+@property (nonatomic) q _regularInterval;
+@property (nonatomic) q _failureInterval;
+@property (nonatomic) q _backOffFactor;
+@property (nonatomic) NSObject<OS_dispatch_queue> _queue;
+@property (nonatomic) @? activityHandlerBlock;
+- (id)_identifier;
+- (id)_lastFailureIntervalKey;
+- (id)initWithIdentifier:regularInterval:failureInterval:backOffFactor:handler:;
+- (long long)_backOffFactor;
+- (void)set_regularInterval:;
+- (void)set_failureInterval:;
+- (id)_handler;
+- (long long)_nextFailureInterval;
+- (id)activityHandlerBlock;
+- (void)_stopSchedulingActivity:;
+- (void)set_handler:;
+- (long long)_failureInterval;
+- (id)_xpcCriteriaForInterval:;
+- (long long)_regularInterval;
+- (void).cxx_destruct;
+- (id)initWithIdentifier:handler:;
+- (void)set_lastFailureIntervalKey:;
+- (void)set_queue:;
+- (void)_rescheduleAfterSuccessActivity:;
+- (void)set_backOffFactor:;
+- (void)set_identifier:;
+- (id)_queue;
+- (void)_rescheduleAfterFailureActivity:;
+@end

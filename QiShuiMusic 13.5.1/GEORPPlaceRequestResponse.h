@@ -1,0 +1,35 @@
+@interface GEORPPlaceRequestResponse : PBCodable
+@property (nonatomic) BOOL hasPlaceRequest;
+@property (nonatomic) GEOPDPlaceRequest placeRequest;
+@property (nonatomic) BOOL hasPlaceResponse;
+@property (nonatomic) GEOPDPlaceResponse placeResponse;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)clearLocations;
+- (void)readAll:;
+- (id)unknownFields;
+- (BOOL)hasGreenTeaWithValue:;
+- (id)init;
+- (void)clearSensitiveFields:;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)setPlaceRequest:;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (BOOL)hasPlaceRequest;
+- (id)description;
+- (id)placeRequest;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasPlaceResponse;
+- (id)placeResponse;
+- (void)setPlaceResponse:;
++ (BOOL)isValid:;
+@end

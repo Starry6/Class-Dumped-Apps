@@ -1,0 +1,34 @@
+@interface IESLiveVideoGiftAudioAVPlayer : NSObject
+@property (nonatomic) BOOL hasPlayerItemAddSelfObserver;
+@property (nonatomic) AVPlayer audioPlayer;
+@property (nonatomic) AVPlayerItem playerItem;
+@property (nonatomic) IESLiveVideoGiftMetalConfiguration configuration;
+@property (nonatomic) BOOL isPlaying;
+@property (nonatomic) <IESLiveVideoGiftAudioPlayerDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)audioRouteChangeListenerCallback:;
+- (BOOL)hasPlayerItemAddSelfObserver;
+- (id)initWithConfiguration:url:error:;
+- (void)setHasPlayerItemAddSelfObserver:;
+- (void)setAudioPlayer:;
+- (void)seekToTime:;
+- (BOOL)isPlaying;
+- (void)dealloc;
+- (void)setIsPlaying:;
+- (void)play;
+- (void)setVolume:;
+- (void)setDelegate:;
+- (void)stop;
+- (void)observeValueForKeyPath:ofObject:change:context:;
+- (void)setConfiguration:;
+- (id)playerItem;
+- (id)configuration;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)audioPlayer;
+- (void)pause;
+- (void)setPlayerItem:;
+@end

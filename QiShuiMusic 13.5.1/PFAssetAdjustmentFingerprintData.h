@@ -1,0 +1,33 @@
+@interface PFAssetAdjustmentFingerprintData : NSObject
+@property (nonatomic) NSString adjustmentType;
+@property (nonatomic) NSString adjustmentCompoundVersion;
+@property (nonatomic) NSString adjustmentCreatorCode;
+@property (nonatomic) Q adjustmentSourceType;
+@property (nonatomic) NSData simpleAdjustmentData;
+@property (nonatomic) NSData baseImage;
+@property (nonatomic) NSString baseImageFingerprint;
+@property (nonatomic) NSData largeAdjustmentData;
+@property (nonatomic) NSString largeAdjustmentDataFingerprint;
+@property (nonatomic) NSData secondaryAdjustmentData;
+- (void).cxx_destruct;
+- (id)adjustmentType;
+- (void)setAdjustmentType:;
+- (void)setSimpleAdjustmentData:;
+- (void)setAdjustmentCompoundVersion:;
+- (void)setAdjustmentCreatorCode:;
+- (void)setAdjustmentSourceType:;
+- (void)setLargeAdjustmentData:;
+- (void)setLargeAdjustmentDataFingerprint:;
+- (void)setBaseImage:;
+- (void)setBaseImageFingerprint:;
+- (id)adjustmentCompoundVersion;
+- (id)adjustmentCreatorCode;
+- (unsigned long long)adjustmentSourceType;
+- (id)simpleAdjustmentData;
+- (id)baseImage;
+- (id)baseImageFingerprint;
+- (id)largeAdjustmentData;
+- (id)largeAdjustmentDataFingerprint;
+- (id)secondaryAdjustmentData;
+- (void)setSecondaryAdjustmentData:;
+@end

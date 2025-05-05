@@ -1,0 +1,34 @@
+@interface MLModelCollection : NSObject
+@property (nonatomic) NSDictionary entries;
+@property (nonatomic) NSString deploymentID;
+@property (nonatomic) NSString namespaceName;
+@property (nonatomic) TRIClient trialClient;
+@property (nonatomic) NSString identifier;
+- (id)deploymentID;
+- (void)setEntries:;
+- (id)namespaceName;
+- (id)identifier;
+- (id)trialClient;
+- (BOOL)_register;
+- (void)setDeploymentID:;
+- (void).cxx_destruct;
+- (id)entries;
+- (id)initWithIdentifier:;
+- (id)_downloadOptions;
+- (BOOL)_downloadWithProgress:;
+- (void)_registerForUpdates;
+- (BOOL)_endAccess;
+- (void)_handleTrialUpdateForNamespaceName:;
+- (void)_setDeploymentID;
+- (void)_populateEntries;
++ (id)beginAccessingModelCollectionWithIdentifier:completionHandler:;
++ (void)endAccessingModelCollectionWithIdentifier:completionHandler:;
++ (Class)getTrialClientClass;
++ (Class)getTrialExperimentIdentifiersClass;
++ (Class)getTrialDownloadOptionsClass;
++ (Class)getTrialFactorLevelClass;
++ (Class)getTrialLevelClass;
++ (Class)getTrialFileClass;
++ (Class)getTrialFactorClass;
++ (id)_namespaceNameFromCollectionIdentifier:;
+@end

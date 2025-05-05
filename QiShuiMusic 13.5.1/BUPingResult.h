@@ -1,0 +1,33 @@
+@interface BUPingResult : NSObject
+@property (nonatomic) q type;
+@property (nonatomic) q sequenceNumber;
+@property (nonatomic) double startTime;
+@property (nonatomic) double didSendTime;
+@property (nonatomic) double endTime;
+@property (nonatomic) double rtt;
+@property (nonatomic) BOOL success;
+@property (nonatomic) BOOL timeout;
+@property (nonatomic) HTTPPingMetricData httpMeticData;
+- (void)setDidSendTime:;
+- (double)didSendTime;
+- (id)httpMeticData;
+- (void)setHttpMeticData:;
+- (id)init;
+- (id)toDictionary;
+- (void)setStartTime:;
+- (void)setType:;
+- (void)setTimeout:;
+- (void)setEndTime:;
+- (double)startTime;
+- (BOOL)success;
+- (void)setSuccess:;
+- (double)endTime;
+- (void)setSequenceNumber:;
+- (long long)type;
+- (long long)sequenceNumber;
+- (void).cxx_destruct;
+- (BOOL)timeout;
+- (id)description;
+- (double)rtt;
+- (void)setRtt:;
+@end

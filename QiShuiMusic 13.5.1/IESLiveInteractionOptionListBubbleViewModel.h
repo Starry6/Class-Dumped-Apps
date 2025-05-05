@@ -1,0 +1,30 @@
+@interface IESLiveInteractionOptionListBubbleViewModel : NSObject
+@property (nonatomic) UIColor backgroundColor;
+@property (nonatomic) UIFont optionFont;
+@property (nonatomic) UIColor optionTextColor;
+@property (nonatomic) {CGSize=dd} optionCellSize;
+@property (nonatomic) UIColor separatorColor;
+@property (nonatomic) double separatorHeight;
+@property (nonatomic) UIImage selectedIndicatorImage;
+@property (nonatomic) {CGSize=dd} selectedIndicatorImageSize;
+@property (nonatomic) NSArray options;
+- (id)optionTextColor;
+- (id)optionCellSize;
+- (id)optionFont;
+- (id)selectedIndicatorImage;
+- (id)selectedIndicatorImageSize;
+- (void)setOptionCellSize:;
+- (void)setOptionFont:;
+- (void)setOptionTextColor:;
+- (void)setSelectedIndicatorImage:;
+- (void)setSelectedIndicatorImageSize:;
+- (void)setSeparatorColor:;
+- (id)separatorColor;
+- (void)setBackgroundColor:;
+- (double)separatorHeight;
+- (id)initWithOptions:;
+- (id)backgroundColor;
+- (void)setSeparatorHeight:;
+- (id)options;
+- (void).cxx_destruct;
+@end

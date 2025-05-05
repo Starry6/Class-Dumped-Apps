@@ -1,0 +1,33 @@
+@interface BatchMetadata : NSObject
+@property (nonatomic) NSString batchIdentifier;
+@property (nonatomic) NSString timestampReferenceIdentifier;
+@property (nonatomic) Q batchSize;
+@property (nonatomic) NSInteger batchStatus;
+@property (nonatomic) Q processedAttempts;
+@property (nonatomic) NSDate dateCreated;
+@property (nonatomic) NSDate dateLastProcessed;
+@property (nonatomic) NSDate dateUploaded;
+@property (nonatomic) Q eventCount;
+@property (nonatomic) NSNumber category;
+- (unsigned long long)eventCount;
+- (unsigned long long)batchSize;
+- (void)setBatchSize:;
+- (void)setCategory:;
+- (id)dateCreated;
+- (void).cxx_destruct;
+- (void)setEventCount:;
+- (id)category;
+- (void)setDateCreated:;
+- (id)batchIdentifier;
+- (void)setBatchIdentifier:;
+- (id)timestampReferenceIdentifier;
+- (void)setTimestampReferenceIdentifier:;
+- (int)batchStatus;
+- (void)setBatchStatus:;
+- (unsigned long long)processedAttempts;
+- (void)setProcessedAttempts:;
+- (id)dateLastProcessed;
+- (void)setDateLastProcessed:;
+- (id)dateUploaded;
+- (void)setDateUploaded:;
+@end

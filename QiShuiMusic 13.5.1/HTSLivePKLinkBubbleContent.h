@@ -1,0 +1,4 @@
+@interface HTSLivePKLinkBubbleContent : IESLivePBBaseMessage
+@property (nonatomic) NSString toast;
++ (id)descriptor;
+@end

@@ -1,0 +1,31 @@
+@interface IESMMSpinSpeedUtils : NSObject
+@property (nonatomic) double x1;
+@property (nonatomic) double x2;
+@property (nonatomic) double y1;
+@property (nonatomic) double y2;
+@property (nonatomic) q srcDuration;
+@property (nonatomic) q dstDuration;
+@property (nonatomic) q cycleSrcTimeUs;
+@property (nonatomic) q cycleDstTimeUs;
+@property (nonatomic) double avgSpeedRatio;
+- (void)setDstDuration:;
+- (void)setSrcDuration:;
+- (double)avgSpeedRatio;
+- (long long)cycleDstTimeUs;
+- (long long)cycleSrcTimeUs;
+- (long long)dstDuration;
+- (id)initWithPoints:yPoints:srcDuration:config:;
+- (void)setCycleDstTimeUs:;
+- (void)setCycleSrcTimeUs:;
+- (void)setX1:;
+- (void)setX2:;
+- (void)setY1:;
+- (void)setY2:;
+- (long long)srcDuration;
+- (long long)transPlayTimeToVideoTime:;
+- (long long)transVideoTimeToPlayTime:;
+- (double)x1;
+- (double)y1;
+- (double)x2;
+- (double)y2;
+@end

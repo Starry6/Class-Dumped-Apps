@@ -1,0 +1,32 @@
+@interface AFURLSessionManagerTaskDelegate : NSObject
+@property (nonatomic) AFURLSessionManager manager;
+@property (nonatomic) NSMutableData mutableData;
+@property (nonatomic) NSProgress progress;
+@property (nonatomic) NSURL downloadFileURL;
+@property (nonatomic) @? downloadTaskDidFinishDownloading;
+@property (nonatomic) @? completionHandler;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)downloadTaskDidFinishDownloading;
+- (void)setDownloadTaskDidFinishDownloading:;
+- (void)URLSession:dataTask:didReceiveData:;
+- (id)init;
+- (void)setMutableData:;
+- (id)mutableData;
+- (void)URLSession:task:didCompleteWithError:;
+- (void)URLSession:downloadTask:didFinishDownloadingToURL:;
+- (void)setProgress:;
+- (void)setCompletionHandler:;
+- (void)URLSession:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:;
+- (id)progress;
+- (id)manager;
+- (void)URLSession:downloadTask:didWriteData:totalBytesWritten:totalBytesExpectedToWrite:;
+- (void)setManager:;
+- (void).cxx_destruct;
+- (void)URLSession:downloadTask:didResumeAtOffset:expectedTotalBytes:;
+- (id)completionHandler;
+- (id)downloadFileURL;
+- (void)setDownloadFileURL:;
+@end

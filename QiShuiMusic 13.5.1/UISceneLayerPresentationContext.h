@@ -1,0 +1,37 @@
+@interface UISceneLayerPresentationContext : NSObject
+@property (nonatomic) UITransformer transformer;
+@property (nonatomic) double alpha;
+@property (nonatomic) BOOL hidden;
+@property (nonatomic) BOOL clippingDisabled;
+@property (nonatomic) Q renderingMode;
+@property (nonatomic) NSString _minificationFilterName;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (unsigned long long)renderingMode;
+- (id)_initWithSceneLayerPresentationContext:;
+- (id)init;
+- (BOOL)isClippingDisabled;
+- (void)setTransformer:;
+- (id)transformer;
+- (void)setClippingDisabled:;
+- (void)setAlpha:;
+- (id)succinctDescriptionBuilder;
+- (unsigned long long)hash;
+- (double)alpha;
+- (void).cxx_destruct;
+- (void)_setMinificationFilterName:;
+- (void)setHidden:;
+- (id)succinctDescription;
+- (id)description;
+- (BOOL)_isEqualToDefaultContext;
+- (id)mutableCopyWithZone:;
+- (BOOL)isHidden;
+- (id)descriptionBuilderWithMultilinePrefix:;
+- (void)setRenderingMode:;
+- (id)_minificationFilterName;
+- (BOOL)isEqual:;
+- (id)descriptionWithMultilinePrefix:;
+- (id)copyWithZone:;
+@end

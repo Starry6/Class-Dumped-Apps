@@ -1,0 +1,33 @@
+@interface CPLErrors : NSObject
++ (id)notImplementedError;
++ (id)operationCancelledError;
++ (id)unsafeResources:withError:resourceStorage:;
++ (id)incorrectParametersErrorForParameter:;
++ (id)incorrectMachineStateErrorWithReason:;
++ (id)underlyingErrorWithReason:;
++ (id)versionMismatchError;
++ (id)unknownError;
++ (id)invalidScopeErrorWithScopedIdentifier:;
++ (id)invalidScopeErrorWithScopeIdentifier:;
++ (id)invalidScopeErrorWithScopeIndex:;
++ (id)unknownPrimaryScope;
++ (id)readOnlyError;
++ (id)transportErrorFromTransportError:;
++ (id)libraryClosedError;
++ (id)invalidClientCacheErrorWithReason:;
++ (id)invalidCloudCacheErrorWithReason:;
++ (id)invalidDaemonErrorWithConnectionError:;
++ (id)posixErrorForURL:;
++ (id)posixErrorForURL:errorCode:;
++ (id)cplErrorWithCode:description:;
++ (id)cplErrorWithCode:description:arguments:;
++ (id)cplErrorWithCode:underlyingError:description:;
++ (id)cplErrorWithCode:underlyingError:description:arguments:;
++ (id)cplErrorWithCode:underlyingError:userInfo:description:;
++ (id)cplErrorWithCode:underlyingError:userInfo:description:arguments:;
++ (id)missingError;
++ (id)sessionHasBeenDeferredError;
++ (id)unsafeResources:withError:realPrune:resourceStorage:;
++ (id)errorsForIdentifiers:error:;
++ (id)cplErrorCausedBySharedSyncForError:;
+@end

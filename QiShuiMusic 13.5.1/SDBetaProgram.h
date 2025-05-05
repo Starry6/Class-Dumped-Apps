@@ -1,0 +1,38 @@
+@interface SDBetaProgram : NSObject
+@property (nonatomic) q programID;
+@property (nonatomic) NSString title;
+@property (nonatomic) q program;
+@property (nonatomic) NSURL catalog;
+@property (nonatomic) NSURL assetUpdate;
+@property (nonatomic) NSURL assetBrain;
+@property (nonatomic) NSString assetAudience;
+@property (nonatomic) NSArray legalDocs;
+@property (nonatomic) Q platform;
+- (void)setCatalog:;
+- (void)setPlatform:;
+- (id)catalog;
+- (void)setAssetAudience:;
+- (void)setTitle:;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (id)title;
+- (unsigned long long)platform;
+- (void).cxx_destruct;
+- (id)assetAudience;
+- (id)description;
+- (long long)program;
+- (void)setProgram:;
+- (long long)programID;
+- (id)initWithID:title:program:catalog:assetUpdate:assetBrain:assetAudience:legalDocs:platform:;
+- (void)setProgramID:;
+- (id)assetUpdate;
+- (void)setAssetUpdate:;
+- (id)assetBrain;
+- (void)setAssetBrain:;
+- (id)legalDocs;
+- (void)setLegalDocs:;
++ (BOOL)supportsSecureCoding;
++ (id)nilIfNSNull:;
++ (id)betaProgramWithID:title:program:catalog:assetUpdate:assetBrain:assetAudience:legalDocs:platform:;
++ (id)betaProgramWithJSON:;
+@end

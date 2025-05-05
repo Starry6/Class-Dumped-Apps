@@ -1,0 +1,34 @@
+@interface INImageServiceConnection : NSObject
+@property (nonatomic) NSString serviceIdentifier;
+@property (nonatomic) Q servicePriority;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (void)dealloc;
+- (unsigned long long)servicePriority;
+- (void)loadDataImageFromImage:usingPortableImageLoader:scaledSize:completion:;
+- (id)serviceIdentifier;
+- (void)retrieveImageWithIdentifier:completion:;
+- (id)storeImage:scaled:qualityOfService:storeType:error:;
+- (BOOL)canStoreImage:;
+- (void).cxx_destruct;
+- (void)purgeImageWithIdentifier:completion:;
+- (BOOL)canLoadImageDataForImage:;
+- (id)serviceProxyWithErrorHandler:;
+- (void)loadImageDataAndSizeForImage:reply:;
+- (id)storeUserContext:forBundleIdentifier:;
+- (id)loadDataImageFromImage:scaledSize:error:;
+- (id)synchronousServiceProxyWithErrorHandler:;
+- (id)_localStorageCache;
+- (id)_availableBundleIdentifiers;
+- (id)schemaURLsForBundleIdentifiers:;
+- (id)imageServiceSchemaURLsForBundleIdentifiers:error:;
+- (id)availableSchemasWithError:;
+- (id)loadSchemasForBundleIdentifiers:error:;
+- (BOOL)accessBundleContentForBundleIdentifiers:withBlock:error:;
+- (id)securityScopedURLsForBundleIdentifiers:error:;
+- (id)fetchShareExtensionIntentForExtensionContextUUID:;
++ (id)sharedConnection;
+@end

@@ -1,0 +1,37 @@
+@interface MBDomainInfo : NSObject
+@property (nonatomic) BOOL appDomain;
+@property (nonatomic) BOOL systemApp;
+@property (nonatomic) BOOL cameraRollDomain;
+@property (nonatomic) NSString domainName;
+@property (nonatomic) NSString bundleID;
+@property (nonatomic) Q size;
+@property (nonatomic) Q remoteSize;
+@property (nonatomic) Q localSize;
+@property (nonatomic) BOOL enabled;
+@property (nonatomic) BOOL restricted;
+- (BOOL)isRestricted;
+- (id)domainName;
+- (void)dealloc;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (BOOL)isSystemApp;
+- (void)setEnabled:;
+- (void)setRestricted:;
+- (id)description;
+- (void)setDomainName:;
+- (id)bundleID;
+- (id)copyWithZone:;
+- (unsigned long long)size;
+- (BOOL)isEnabled;
+- (void)setSystemApp:;
+- (unsigned long long)remoteSize;
+- (BOOL)isAppDomain;
+- (BOOL)isCameraRollDomain;
+- (id)initWithDomainName:systemApp:remoteSize:localSize:enabled:restricted:;
+- (void)setRemoteSize:;
+- (unsigned long long)localSize;
+- (void)setLocalSize:;
++ (BOOL)supportsSecureCoding;
++ (id)domainInfoWithName:systemApp:remoteSize:localSize:enabled:restricted:;
++ (id)domainNameForBundleID:;
+@end

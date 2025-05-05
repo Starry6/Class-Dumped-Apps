@@ -1,0 +1,2 @@
+@interface IDSSimulatorProxyGroupSessionConnectionParameters : IDSGroupSessionConnectionParameters
+@end

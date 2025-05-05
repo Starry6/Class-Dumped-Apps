@@ -1,0 +1,31 @@
+@interface AWDSlowWiFiReport : PBCodable
+@property (nonatomic) BOOL hasTimestamp;
+@property (nonatomic) Q timestamp;
+@property (nonatomic) BOOL hasSlowNotice;
+@property (nonatomic) AWDSlowWiFiNotification slowNotice;
+@property (nonatomic) NSMutableArray linkQualSamples;
+- (void)dealloc;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)setHasTimestamp:;
+- (void)mergeFrom:;
+- (BOOL)hasTimestamp;
+- (void)setTimestamp:;
+- (BOOL)readFrom:;
+- (unsigned long long)timestamp;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasSlowNotice;
+- (void)clearLinkQualSamples;
+- (void)addLinkQualSample:;
+- (unsigned long long)linkQualSamplesCount;
+- (id)linkQualSampleAtIndex:;
+- (id)slowNotice;
+- (void)setSlowNotice:;
+- (id)linkQualSamples;
+- (void)setLinkQualSamples:;
++ (Class)linkQualSampleType;
+@end

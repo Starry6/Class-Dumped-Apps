@@ -1,0 +1,35 @@
+@interface CHMutableTextInputTargetContentInfo : CHTextInputTargetContentInfo
+@property (nonatomic) CHTextInputTarget textInputTarget;
+@property (nonatomic) q textContentLength;
+@property (nonatomic) {_NSRange=QQ} strokeCoveredTextRange;
+@property (nonatomic) {_NSRange=QQ} selectedTextRange;
+@property (nonatomic) BOOL isCursorStrong;
+@property (nonatomic) BOOL containsCommittedStrokes;
+@property (nonatomic) {_NSRange=QQ} activePreviewRange;
+@property (nonatomic) NSInteger contentType;
+@property (nonatomic) NSInteger autoCapitalizationMode;
+@property (nonatomic) NSInteger autoCorrectionMode;
+@property (nonatomic) BOOL isSingleLine;
+@property (nonatomic) BOOL supportsAutoLineBreaks;
+@property (nonatomic) q lastCharacterLevelPosition;
+@property (nonatomic) NSIndexSet protectedCharacterIndexes;
+- (void)setContentType:;
+- (void)setSelectedTextRange:;
+- (id)copyWithZone:;
+- (void)setLastCharacterLevelPosition:;
+- (void)setStrokeCoveredTextRange:;
+- (void)setContainsCommittedStrokes:;
+- (void)setTextContentLength:;
+- (void)setTextInputTarget:;
+- (void)setProtectedCharacterIndexes:;
+- (void)setReferenceSubstring:range:characterRects:;
+- (id)referenceSubstring;
+- (id)referenceSubstringRange;
+- (void)setActivePreviewRange:;
+- (id)characterRectsInReferenceSubstring;
+- (void)setAutoCapitalizationMode:;
+- (void)setAutoCorrectionMode:;
+- (void)setIsCursorStrong:;
+- (void)setIsSingleLine:;
+- (void)setSupportsAutoLineBreaks:;
+@end

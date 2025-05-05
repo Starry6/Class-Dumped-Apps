@@ -1,0 +1,31 @@
+@interface HTSLiveASTNode : IESLivePBBaseMessage
+@property (nonatomic) IESLiveThreadSafeDictionary pe_ExtraData;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSInteger nodeType;
+@property (nonatomic) HTSLiveBoolNode boolNode;
+@property (nonatomic) BOOL hasBoolNode;
+@property (nonatomic) HTSLiveInt64Node int64Node;
+@property (nonatomic) BOOL hasInt64Node;
+@property (nonatomic) HTSLiveFloat64Node float64Node;
+@property (nonatomic) BOOL hasFloat64Node;
+@property (nonatomic) HTSLiveStringNode stringNode;
+@property (nonatomic) BOOL hasStringNode;
+@property (nonatomic) HTSLiveBinaryNode binaryNode;
+@property (nonatomic) BOOL hasBinaryNode;
+@property (nonatomic) HTSLiveUnaryNode unaryNode;
+@property (nonatomic) BOOL hasUnaryNode;
+@property (nonatomic) HTSLiveCallNode callNode;
+@property (nonatomic) BOOL hasCallNode;
+@property (nonatomic) HTSLiveIdentifierNode identifierNode;
+@property (nonatomic) BOOL hasIdentifierNode;
+@property (nonatomic) HTSLiveConditionNode conditionNode;
+@property (nonatomic) BOOL hasConditionNode;
+- (BOOL)isEqualWithState:;
+- (id)pe_ExtraData;
+- (void)setExtraData:forKey:;
+- (id)initWithOrigin:;
++ (id)descriptor;
+@end

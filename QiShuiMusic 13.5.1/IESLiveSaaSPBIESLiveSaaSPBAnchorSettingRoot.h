@@ -1,0 +1,2 @@
+@interface IESLiveSaaSPBIESLiveSaaSPBAnchorSettingRoot : GPBRootObject
+@end

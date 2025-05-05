@@ -1,0 +1,32 @@
+@interface CKSubscription : NSObject
+@property (nonatomic) NSString recordType;
+@property (nonatomic) NSString subscriptionID;
+@property (nonatomic) q subscriptionType;
+@property (nonatomic) CKNotificationInfo notificationInfo;
+- (void)setSubscriptionID:;
+- (unsigned long long)subscriptionOptions;
+- (id)init;
+- (id)initWithRecordType:predicate:subscriptionID:options:;
+- (long long)subscriptionType;
+- (void)setRecordType:;
+- (void)setSubscriptionType:;
+- (id)initWithRecordType:predicate:options:;
+- (id)notificationInfo;
+- (id)subscriptionID;
+- (void)setNotificationInfo:;
+- (id)initWithZoneID:options:;
+- (id)initWithZoneID:subscriptionID:options:;
+- (id)zoneID;
+- (id)recordType;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)debugDescription;
+- (id)predicate;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)_initWithSubscriptionID:subscriptionType:recordType:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
++ (BOOL)supportsSecureCoding;
+@end

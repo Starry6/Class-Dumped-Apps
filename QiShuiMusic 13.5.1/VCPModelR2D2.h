@@ -1,0 +1,28 @@
+@interface VCPModelR2D2 : VCPImageMotionFlowAnalyzer
+- (void)dealloc;
+- (void).cxx_destruct;
+- (id).cxx_construct;
+- (int)configForAspectRatio:;
+- (int)analyzeImages:secondImage:cancel:;
+- (int)getFlowToBuffer:;
+- (int)flowScalingTo:scalerX:scalerY:;
+- (int)flowScalingTo:flowBufferY:scalerX:scalerY:;
+- (int)updateModelForAspectRatio:computationAccuracy:;
+- (int)prepareWithLightweightOption:aspectRatio:numLevels:startLevel:cancel:;
+- (int)allocateInputAndOutputBuffers;
+- (int)releaseInputAndOutputBuffers;
+- (int)createModules:;
+- (int)updateModulesWithConfig:;
+- (int)allocateStorages;
+- (void)releaseStorages;
+- (int)allocateCorreleationBuffer:forLevel:;
+- (int)allocateFeatures;
+- (void)releaseFeatureBuffers;
+- (int)extractFeaturesFromFirst:andSecond:;
+- (int)extractFeatureFromImage:toFeature:;
+- (int)estimateMotionFlow:;
+- (int)estimateFlowForLevel:upperFlow:outputFlow:;
+- (int)copyImage:toBuffer:withChannels:;
+- (int)createInput:withImage:modelInputHeight:modelInputWidth:;
+- (void)releaseMemory;
+@end

@@ -1,0 +1,2 @@
+@interface IESLiveSaaSPBIESLiveSaaSPBStreamControlRoot : GPBRootObject
+@end

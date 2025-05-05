@@ -1,0 +1,38 @@
+@interface IESIMVSPersonalModel : MTLModel
+@property (nonatomic) NSString notice;
+@property (nonatomic) NSString desc;
+@property (nonatomic) q showCount;
+@property (nonatomic) q liveType;
+@property (nonatomic) Q accountType;
+@property (nonatomic) NSString bannerSchema;
+@property (nonatomic) NSString showInfoSchema;
+@property (nonatomic) NSString deepBackgroundColour;
+@property (nonatomic) NSString lightBackgroundColour;
+@property (nonatomic) BOOL showOriginalSoundTab;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)bannerSchema;
+- (id)deepBackgroundColour;
+- (id)lightBackgroundColour;
+- (long long)liveType;
+- (void)setBannerSchema:;
+- (void)setDeepBackgroundColour:;
+- (void)setLightBackgroundColour:;
+- (void)setLiveType:;
+- (void)setShowInfoSchema:;
+- (void)setShowOriginalSoundTab:;
+- (id)showInfoSchema;
+- (BOOL)showOriginalSoundTab;
+- (unsigned long long)accountType;
+- (id)desc;
+- (void)setDesc:;
+- (void)setAccountType:;
+- (void).cxx_destruct;
+- (id)notice;
+- (void)setNotice:;
+- (long long)showCount;
+- (void)setShowCount:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

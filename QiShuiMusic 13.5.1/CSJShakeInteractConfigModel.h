@@ -1,0 +1,2 @@
+@interface CSJShakeInteractConfigModel : CSJMotionInteractConfigModel
+@end

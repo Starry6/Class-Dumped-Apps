@@ -1,0 +1,33 @@
+@interface NSHTTPCookie2 : NSObject
+@property (nonatomic) NSString name;
+@property (nonatomic) NSString value;
+@property (nonatomic) NSString domain;
+@property (nonatomic) NSString path;
+@property (nonatomic) NSDate creationDate;
+@property (nonatomic) NSDate expirationDate;
+@property (nonatomic) BOOL sesion;
+@property (nonatomic) BOOL secure;
+@property (nonatomic) BOOL httpOnly;
+@property (nonatomic) BOOL hostOnly;
+@property (nonatomic) NSString partition;
+@property (nonatomic) q source;
+@property (nonatomic) q sameSite;
+- (id)path;
+- (id)partition;
+- (id)expirationDate;
+- (void).cxx_destruct;
+- (long long)source;
+- (id)description;
+- (id)value;
+- (id)name;
+- (id)domain;
+- (BOOL)secure;
+- (id)mutableCopyWithZone:;
+- (id)copyWithZone:;
+- (id)creationDate;
+- (id)initWithName:value:domain:;
+- (BOOL)sesion;
+- (BOOL)httpOnly;
+- (BOOL)hostOnly;
+- (long long)sameSite;
+@end

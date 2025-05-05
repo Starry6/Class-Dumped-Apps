@@ -1,0 +1,34 @@
+@interface FMDGenericAudioAccessory : NSObject
+@property (nonatomic) FMDAccessoryIdentifier accessoryIdentifier;
+@property (nonatomic) NSString audioRoutingIdentifier;
+@property (nonatomic) NSURL audioURL;
+@property (nonatomic) FMDAudioAccessoryInfo audioAccessoryInfo;
+@property (nonatomic) BOOL supportsChangingListeningMode;
+@property (nonatomic) Q audioSafetyStatus;
+@property (nonatomic) BOOL playingSound;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)audioURL;
+- (id)accessoryIdentifier;
+- (void)setAccessoryIdentifier:;
+- (BOOL)updateAudioAsset:;
+- (BOOL)updatePlaybackChannels:;
+- (unsigned long long)audioSafetyStatus;
+- (id)audioRoutingIdentifier;
+- (id)audioAccessoryInfo;
+- (BOOL)playingSound;
+- (BOOL)supportsChangingListeningMode;
+- (id)initWithAccessoryId:audioRoutingIdentifier:audioURL:audioAccessoryInfo:supportsChangingListeningMode:;
+- (void)setAudioRoutingIdentifier:;
+- (void)setAudioURL:;
+- (void)setAudioAccessoryInfo:;
+- (void)setSupportsChangingListeningMode:;
++ (id)copyAccessory:;
++ (BOOL)supportsSecureCoding;
+@end

@@ -1,0 +1,35 @@
+@interface CSJDebugViewController : UIViewController
+@property (nonatomic) UIView custormNavigationView;
+@property (nonatomic) UITableView tableView;
+@property (nonatomic) UIView footerView;
+@property (nonatomic) NSArray dataArray;
+@property (nonatomic) CSJMaterialMeta meta;
+@property (nonatomic) NSMutableDictionary cellHeightDictionry;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)_copyAll;
+- (id)_creatCellLabelTextWithDict:;
+- (void)_creatUI;
+- (id)cellHeightDictionry;
+- (id)custormNavigationView;
+- (id)initWithMaterialMeta:;
+- (void)setCellHeightDictionry:;
+- (void)setCustormNavigationView:;
+- (id)meta;
+- (void)setFooterView:;
+- (id)tableView:cellForRowAtIndexPath:;
+- (id)footerView;
+- (void)setMeta:;
+- (double)tableView:heightForRowAtIndexPath:;
+- (void)_close:;
+- (void)viewWillLayoutSubviews;
+- (void).cxx_destruct;
+- (void)setTableView:;
+- (id)tableView;
+- (long long)tableView:numberOfRowsInSection:;
+- (void)viewDidLoad;
+- (id)dataArray;
+- (void)setDataArray:;
+@end

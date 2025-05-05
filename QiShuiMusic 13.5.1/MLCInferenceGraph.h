@@ -1,0 +1,34 @@
+@interface MLCInferenceGraph : MLCGraph
+@property (nonatomic) Q inferenceNodeInit;
+@property (nonatomic) Q inferenceNodeIndexInGraphLayerList;
+@property (nonatomic) Q deviceMemorySize;
+- (id)description;
+- (BOOL)executeWithInputsData:batchSize:options:completionHandler:;
+- (id)nodeWithLayer:source:;
+- (BOOL)compileWithOptions:device:;
+- (BOOL)executeWithInputsData:lossLabelsData:lossLabelWeightsData:batchSize:options:completionHandler:;
+- (id)nodeWithLayer:sources:;
+- (BOOL)addInputs:;
+- (BOOL)addInputs:lossLabels:lossLabelWeights:;
+- (BOOL)addOutputs:;
+- (id)resultTensorsForLayer:;
+- (BOOL)addInputs:lossLabels:;
+- (unsigned long long)deviceMemorySize;
+- (id)initWithGraphObjects:;
+- (BOOL)recompileWithOptions:;
+- (BOOL)compileWithOptions:device:inputTensors:inputTensorsData:;
+- (BOOL)executeWithInputsData:lossLabelsData:lossLabelWeightsData:outputsData:batchSize:options:completionHandler:;
+- (id)sourceTensorsForLayer:;
+- (BOOL)linkWithGraphs:;
+- (id)splitWithSource:splitCount:dimension:;
+- (id)splitWithSource:splitSectionLengths:dimension:;
+- (id)concatenateWithSources:dimension:;
+- (id)reshapeWithShape:source:;
+- (id)transposeWithDimensions:source:;
+- (BOOL)executeWithInputsData:outputsData:batchSize:options:completionHandler:;
+- (unsigned long long)inferenceNodeInit;
+- (void)setInferenceNodeInit:;
+- (unsigned long long)inferenceNodeIndexInGraphLayerList;
+- (void)setInferenceNodeIndexInGraphLayerList:;
++ (id)graphWithGraphObjects:;
+@end

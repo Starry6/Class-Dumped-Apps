@@ -1,0 +1,33 @@
+@interface HybridSettings : NSObject
+@property (nonatomic) NSDictionary settings;
+@property (nonatomic) NSMutableDictionary didFetchBlockDictionary;
+@property (nonatomic) NSString name;
+@property (nonatomic) HybridSettingsSyncTaskConfig config;
+@property (nonatomic) @? convertBlock;
+@property (nonatomic) @? didFetchBlock;
+@property (nonatomic) @? didInitBlock;
+- (id)arrayValueForKey:;
+- (id)convertBlock;
+- (id)didFetchBlock;
+- (id)didFetchBlockDictionary;
+- (void)didFetchSettings:;
+- (id)didInitBlock;
+- (void)setConvertBlock:;
+- (void)setDidFetchBlock:;
+- (void)setDidFetchBlock:forKey:;
+- (void)setDidFetchBlockDictionary:;
+- (void)setDidInitBlock:;
+- (id)init;
+- (void)setName:;
+- (id)settings;
+- (void)setSettings:;
+- (void)setConfig:;
+- (id)stringValueForKey:;
+- (void).cxx_destruct;
+- (BOOL)boolValueForKey:;
+- (id)name;
+- (id)config;
+- (id)numberValueForKey:;
+- (id)dictionaryValueForKey:;
++ (id)sharedSettings;
+@end

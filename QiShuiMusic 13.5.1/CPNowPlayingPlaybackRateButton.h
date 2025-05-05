@@ -1,0 +1,2 @@
+@interface CPNowPlayingPlaybackRateButton : CPNowPlayingButton
+@end

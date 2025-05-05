@@ -1,0 +1,38 @@
+@interface IESECFeedGoodsCardViewComponent : UIView
+@property (nonatomic) <IESECFeedGoodsCardViewComponentDelegate> delegate;
+@property (nonatomic) UIImageView goodsImageView;
+@property (nonatomic) IESECShopGoodsTitleLabel goodsTitleLabel;
+@property (nonatomic) UILabel shopNameLabel;
+@property (nonatomic) IESECGoodsPriceLabel goodsPriceLabel;
+@property (nonatomic) UILabel goodsSalesLabel;
+@property (nonatomic) UIButton shoppingCartButton;
+@property (nonatomic) UIButton buyButton;
+@property (nonatomic) UIButton goToOtherAppButton;
+- (id)goodsPriceLabel;
+- (id)goodsTitleLabel;
+- (void)didTapShoppingCartButton:event:;
+- (id)goodsSalesLabel;
+- (id)buyButton;
+- (void)didTapBuyButton:event:;
+- (void)didTapOther;
+- (void)didTapOtherApp;
+- (id)goToOtherAppButton;
+- (id)goodsImageView;
+- (void)setBuyButton:;
+- (void)setGoToOtherAppButton:;
+- (void)setGoodsImageView:;
+- (void)setGoodsPriceLabel:;
+- (void)setGoodsSalesLabel:;
+- (void)setGoodsTitleLabel:;
+- (void)setShopNameLabel:;
+- (void)setShoppingCartButton:;
+- (id)shopNameLabel;
+- (id)shoppingCartButton;
+- (void)updateUIWithModel:;
+- (id)init;
+- (void)setDelegate:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setupViews;
++ (id)product;
+@end

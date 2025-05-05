@@ -1,0 +1,36 @@
+@interface ASRSchemaASRFinalResultGenerated : SISchemaInstrumentationMessage
+@property (nonatomic) NSArray tokenSilenceStartTimeInNsLists;
+@property (nonatomic) NSArray correctPartialResultIndexLists;
+@property (nonatomic) BOOL isAfterResume;
+@property (nonatomic) BOOL hasIsAfterResume;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)clearTokenSilenceStartTimeInNsList;
+- (void)deleteTokenSilenceStartTimeInNsList;
+- (void)addTokenSilenceStartTimeInNsList:;
+- (unsigned long long)tokenSilenceStartTimeInNsListCount;
+- (unsigned long long)tokenSilenceStartTimeInNsListAtIndex:;
+- (void)clearCorrectPartialResultIndexList;
+- (void)deleteCorrectPartialResultIndexList;
+- (void)addCorrectPartialResultIndexList:;
+- (unsigned long long)correctPartialResultIndexListCount;
+- (int)correctPartialResultIndexListAtIndex:;
+- (void)setIsAfterResume:;
+- (BOOL)hasIsAfterResume;
+- (void)setHasIsAfterResume:;
+- (void)deleteIsAfterResume;
+- (id)tokenSilenceStartTimeInNsLists;
+- (void)setTokenSilenceStartTimeInNsLists:;
+- (id)correctPartialResultIndexLists;
+- (void)setCorrectPartialResultIndexLists:;
+- (BOOL)isAfterResume;
+@end

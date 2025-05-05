@@ -1,0 +1,35 @@
+@interface ASSSecurityManager : NSObject
+@property (nonatomic) NSOperationQueue asyncTaskQueue;
+@property (nonatomic) ASSStorageModel modelCache;
+@property (nonatomic) NSString prevApdid;
+@property (nonatomic) NSString randomIC4;
+@property (nonatomic) NSString lastLoginTime;
+- (id)getApdidResult:;
+- (id)asyncTaskQueue;
+- (BOOL)checkDate;
+- (BOOL)checkIfTodayFirst;
+- (id)getApdidToken:;
+- (id)getTid;
+- (id)getTokenResult;
+- (id)getUtdid;
+- (void)init:parameters:callback:;
+- (void)init:utdid:tid:callback:;
+- (void)initializeSecuritySDKTask:;
+- (id)lastLoginTime;
+- (id)loadTrustData;
+- (id)prevApdid;
+- (id)randomIC4;
+- (void)saveTrustData:;
+- (void)setAsyncTaskQueue:;
+- (void)setLastLoginTime:;
+- (void)setModelCache:;
+- (void)setPrevApdid:;
+- (void)setRandomIC4:;
+- (void)updateApdidAndToken:;
+- (BOOL)verifyNetworkResult:;
+- (id)init;
+- (void).cxx_destruct;
+- (id)modelCache;
+- (void)resetCache;
++ (id)sharedInstance;
+@end

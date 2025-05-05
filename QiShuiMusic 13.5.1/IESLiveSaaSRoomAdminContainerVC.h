@@ -1,0 +1,37 @@
+@interface IESLiveSaaSRoomAdminContainerVC : UIViewController
+@property (nonatomic) UIViewController currentVC;
+@property (nonatomic) NSMutableDictionary childrenVCs;
+@property (nonatomic) NSMutableArray buttons;
+@property (nonatomic) UIButton backButton;
+@property (nonatomic) UIView lineView;
+@property (nonatomic) UIView indicatorView;
+@property (nonatomic) Q currentIndex;
+@property (nonatomic) IESLiveSaaSAdminSettingStore store;
+- (void)onIndexChanged:;
+- (void)setChildrenVCs:;
+- (BOOL)_addChildVC:title:;
+- (BOOL)addChildVCs:titles:;
+- (id)childrenVCs;
+- (id)currentVC;
+- (void)onTapBackButton:;
+- (void)onTapIndexButton:;
+- (void)setCurrentVC:;
+- (void)updateControlPanel;
+- (void)setStore:;
+- (void)setCurrentIndex:;
+- (id)backButton;
+- (id)buttons;
+- (void).cxx_destruct;
+- (unsigned long long)currentIndex;
+- (void)setButtons:;
+- (void)viewWillAppear:;
+- (id)store;
+- (id)indicatorView;
+- (void)viewDidLayoutSubviews;
+- (void)setBackButton:;
+- (id)initWithNibName:bundle:;
+- (void)viewDidLoad;
+- (void)setIndicatorView:;
+- (id)lineView;
+- (void)setLineView:;
+@end

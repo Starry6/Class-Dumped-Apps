@@ -1,0 +1,37 @@
+@interface IESLiveDFSpringAnimation : IESLiveDFPropertyAnimation
+@property (nonatomic) IESLiveDFAnimationHandler animationHandler;
+@property (nonatomic) IESLIveDFSpringAnimationContext realContext;
+@property (nonatomic) q propertyType;
+@property (nonatomic) NSValue controlPoint1;
+@property (nonatomic) NSValue controlPoint2;
+@property (nonatomic) BOOL bounce;
+@property (nonatomic) double damping;
+@property (nonatomic) double velocity;
+- (void)setRealContext:;
+- (void)checkMaxDampingVelocity;
+- (double)getSpringAnimation:springOffset:;
+- (id)initWithPropertyType:;
+- (void)loadTimingFunction;
+- (void)notificationStopWithFinished:;
+- (id)realContext;
+- (void)setControlPoint1:;
+- (void)setControlPoint2:;
+- (void)updateTime:;
+- (double)velocity;
+- (void)setDamping:;
+- (void)setVelocity:;
+- (id)context;
+- (id)controlPoint1;
+- (BOOL)bounce;
+- (void)prepare;
+- (double)damping;
+- (long long)propertyType;
+- (id)controlPoint2;
+- (void).cxx_destruct;
+- (void)setPropertyType:;
+- (BOOL)isCompatible;
+- (void)setBounce:;
+- (id)animationHandler;
+- (void)setAnimationHandler:;
++ (id)animationWithPropertyType:;
+@end

@@ -1,0 +1,32 @@
+@interface MPSState : NSObject
+@property (nonatomic) Q resourceCount;
+@property (nonatomic) Q readCount;
+@property (nonatomic) BOOL isTemporary;
+@property (nonatomic) NSString label;
+@property (nonatomic) <MTLResource> resource;
+- (void)dealloc;
+- (id)destinationImageDescriptorForSourceImages:sourceStates:forKernel:suggestedDescriptor:;
+- (void)setLabel:;
+- (id)label;
+- (id)debugDescription;
+- (BOOL)isTemporary;
+- (unsigned long long)resourceSize;
+- (void)synchronizeOnCommandBuffer:;
+- (id)initWithResource:;
+- (unsigned long long)readCount;
+- (id)resource;
+- (void)setReadCount:;
+- (id)initWithResources:;
+- (unsigned long long)resourceCount;
+- (id)initWithDevice:bufferSize:;
+- (id)initWithDevice:textureDescriptor:;
+- (id)initWithDevice:resourceList:;
+- (unsigned long long)resourceTypeAtIndex:;
+- (id)textureInfoAtIndex:;
+- (unsigned long long)bufferSizeAtIndex:;
+- (id)resourceAtIndex:allocateMemory:;
++ (id)temporaryStateWithCommandBuffer:bufferSize:;
++ (id)temporaryStateWithCommandBuffer:textureDescriptor:;
++ (id)temporaryStateWithCommandBuffer:resourceList:;
++ (id)temporaryStateWithCommandBuffer:;
+@end

@@ -1,0 +1,32 @@
+@interface CWFRangingResult : NSObject
+@property (nonatomic) NSString MACAddress;
+@property (nonatomic) NSData identifier;
+@property (nonatomic) double distance;
+@property (nonatomic) double standardDeviation;
+@property (nonatomic) NSInteger status;
+@property (nonatomic) Q numberOfValidMeasurements;
+@property (nonatomic) NSArray measurements;
+- (double)distance;
+- (void)setStatus:;
+- (void)setDistance:;
+- (id)identifier;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (void)setStandardDeviation:;
+- (id)description;
+- (int)status;
+- (double)standardDeviation;
+- (void)setIdentifier:;
+- (id)MACAddress;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setMACAddress:;
+- (BOOL)isEqualToRangingResult:;
+- (unsigned long long)numberOfValidMeasurements;
+- (void)setNumberOfValidMeasurements:;
+- (id)measurements;
+- (void)setMeasurements:;
++ (BOOL)supportsSecureCoding;
+@end

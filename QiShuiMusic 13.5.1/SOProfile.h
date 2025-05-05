@@ -1,0 +1,38 @@
+@interface SOProfile : NSObject
+@property (nonatomic) q type;
+@property (nonatomic) NSArray URLPrefix;
+@property (nonatomic) NSArray hosts;
+@property (nonatomic) NSString extensionBundleIdentifier;
+@property (nonatomic) NSString realm;
+@property (nonatomic) NSArray deniedBundleIdentifiers;
+@property (nonatomic) q screenLockedBehavior;
+@property (nonatomic) q pssoAuthenticationMethod;
+@property (nonatomic) NSString pssoRegistrationToken;
+- (void)setPssoAuthenticationMethod:;
+- (long long)pssoAuthenticationMethod;
+- (id)realm;
+- (id)extensionBundleIdentifier;
+- (void)setRealm:;
+- (id)pssoRegistrationToken;
+- (void)setDeniedBundleIdentifiers:;
+- (void)setType:;
+- (void)setURLPrefix:;
+- (void)setScreenLockedBehavior:;
+- (id)initWithCoder:;
+- (id)hosts;
+- (void)encodeWithCoder:;
+- (long long)type;
+- (void).cxx_destruct;
+- (void)setHosts:;
+- (id)deniedBundleIdentifiers;
+- (long long)screenLockedBehavior;
+- (void)setExtensionBundleIdentifier:;
+- (id)description;
+- (id)URLPrefix;
+- (void)setPssoRegistrationToken:;
+- (id)copyWithZone:;
++ (BOOL)supportsSecureCoding;
++ (id)stringWithAuthenticationMethod:;
++ (id)stringWithScreenLockedBehavior:;
++ (id)stringWithProfileType:;
+@end

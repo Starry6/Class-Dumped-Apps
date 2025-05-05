@@ -1,0 +1,31 @@
+@interface APayAlertView : NSObject
+@property (nonatomic) UIAlertView alertView;
+@property (nonatomic) UIViewController alertContrller;
+@property (nonatomic) UIViewController bottomContrller;
+@property (nonatomic) q cancelButtonIndex;
+@property (nonatomic) <APayAlertViewDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)bottomContrller;
+- (id)alertContrller;
+- (void)applicationEnterBackground:;
+- (void)internal_init;
+- (void)setAlertContrller:;
+- (void)setBottomContrller:;
+- (id)init;
+- (void)dealloc;
+- (void)setDelegate:;
+- (void)show;
+- (void)setAlertView:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)alertView;
+- (void)setCancelButtonIndex:;
+- (long long)cancelButtonIndex;
+- (void)dismissWithClickedButtonIndex:animated:;
+- (void)alertView:clickedButtonAtIndex:;
+- (id)initWithTitle:message:delegate:cancelButtonTitle:otherButtonTitles:;
+- (long long)actionWithTitle:style:;
+@end

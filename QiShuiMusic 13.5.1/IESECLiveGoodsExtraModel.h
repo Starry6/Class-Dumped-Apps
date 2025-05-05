@@ -1,0 +1,33 @@
+@interface IESECLiveGoodsExtraModel : MTLModel
+@property (nonatomic) NSString notAvailableReason;
+@property (nonatomic) double operateTime;
+@property (nonatomic) NSString showNotice;
+@property (nonatomic) NSString couponThresholdPrice;
+@property (nonatomic) NSString hasDiscount;
+@property (nonatomic) NSString originID;
+@property (nonatomic) NSString originType;
+@property (nonatomic) NSString trackExtra;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setOperateTime:;
+- (void)setHasDiscount:;
+- (id)couponThresholdPrice;
+- (id)hasDiscount;
+- (id)notAvailableReason;
+- (double)operateTime;
+- (void)setCouponThresholdPrice:;
+- (void)setNotAvailableReason:;
+- (void)setShowNotice:;
+- (void)setTrackExtra:;
+- (id)showNotice;
+- (id)trackExtra;
+- (void).cxx_destruct;
+- (void)setOriginID:;
+- (id)originID;
+- (id)originType;
+- (void)setOriginType:;
++ (id)operateTimeJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

@@ -1,0 +1,33 @@
+@interface ASSStaticInfoCollector : NSObject
+@property (nonatomic) NSMutableDictionary environmentInfo;
+@property (nonatomic) NSMutableDictionary deviceInfo;
+@property (nonatomic) NSMutableDictionary appInfo;
+@property (nonatomic) NSMutableDictionary customInfo;
+@property (nonatomic) NSMutableDictionary dynamicInfo;
+- (id)environmentInfo;
+- (id)getIE41;
+- (void)setDynamicInfo:;
+- (id)checkJB;
+- (id)collectAllStaticData;
+- (void)generateApplicationInfo;
+- (void)generateCustomInfo:;
+- (void)generateDeviceInfo:;
+- (void)generateEnvironmentInfo;
+- (id)generateHashForSensors;
+- (void)generateStaticInfo:;
+- (id)getCurrentStaticInfoHash;
+- (void)reportJBError:;
+- (void)setEnvironmentInfo:;
+- (void)updateDynamicInfo;
+- (void)updateIC4:;
+- (void)updateUserID:;
+- (id)verifyStringNotNil:;
+- (void)setDeviceInfo:;
+- (id)deviceInfo;
+- (id)dynamicInfo;
+- (id)appInfo;
+- (void).cxx_destruct;
+- (void)setCustomInfo:;
+- (id)customInfo;
+- (void)setAppInfo:;
+@end

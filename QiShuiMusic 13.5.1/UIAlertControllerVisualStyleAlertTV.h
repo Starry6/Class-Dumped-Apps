@@ -1,0 +1,33 @@
+@interface UIAlertControllerVisualStyleAlertTV : UIAlertControllerVisualStyleAlert
+- (double)maximumWidth;
+- (id)titleLabelFont;
+- (id)titleLabelColor;
+- (double)marginAboveTitleLabelFirstBaseline;
+- (double)marginBelowTitleLabelLastBaseline;
+- (id)messageLabelFont;
+- (id)messageLabelColor;
+- (double)marginAboveMessageLabelFirstBaseline;
+- (double)marginBelowMessageLabelLastBaseline;
+- (double)marginBelowLastLabelLastBaseline;
+- (id)contentInsetsForContainerView:;
+- (double)transitionDurationForPresentation:ofAlertController:;
+- (void)animateAlertControllerView:ofAlertController:forPresentation:inContainerView:descendantOfContainerView:duration:completionBlock:;
+- (long long)permittedActionLayoutDirection;
+- (BOOL)hideCancelAction:inAlertController:;
+- (BOOL)placementAvoidsKeyboard;
+- (long long)maximumNumberOfLinesInTitleLabel;
+- (long long)maximumNumberOfLinesInMessageLabel;
+- (id)dimmingViewForAlertController:;
+- (double)textFieldHorizontalMargin;
+- (id)textFieldContainingViewWithTextField:position:;
+- (id)_detailMessageFont;
+- (double)_marginAboveDetailMessageFirstBaseline;
+- (double)_minimumButtonWidth;
+- (double)_maximumContentWidth;
+- (double)maximumWidthForTitleAndMessageContentView;
+- (double)actionWidthForMinimumActionWidth:;
+- (id)textFieldContentInset;
+- (id)preferredActionForActions:suggestedPreferredAction:;
+- (long long)_effectStyle;
+- (id)_keyCommandInputForCancelAction;
+@end

@@ -1,0 +1,36 @@
+@interface IESLiveInteractionApplyDetailFragment : IESLiveRoomComponent
+@property (nonatomic) Q currentScene;
+@property (nonatomic) NSDate lastApplyTime;
+@property (nonatomic) BOOL fastMatchTopRightEntryEmphasized;
+@property (nonatomic) NSString lastApplyReason;
+@property (nonatomic) IESLiveInteractionApplyDetailPopupView applyDetailPopupView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)p_isValidScene:;
+- (id)lastApplyReason;
+- (id)applyDetailPopupView;
+- (void)componentBindService;
+- (void)didJoinChannelWithLayout:;
+- (void)didLeaveChannelWithLayout:;
+- (void)didUpdateFastMatchStatus:;
+- (BOOL)enabledForScene:;
+- (BOOL)fastMatchTopRightEntryEmphasized;
+- (id)lastApplyTime;
+- (double)p_applyViewWidth;
+- (void)p_cleanApplyContext;
+- (long long)p_fastMatchEntryStyleUnderScene:;
+- (id)p_guestConnectionTypeForScene:;
+- (void)p_trackEvent:extraParams:;
+- (void)setApplyDetailPopupView:;
+- (void)setCurrentScene:;
+- (void)setFastMatchTopRightEntryEmphasized:;
+- (void)setLastApplyReason:;
+- (void)setLastApplyTime:;
+- (void)showApplyDetailPanelUnderInteractiveScene:waitingResponse:interactionAPI:cancelApplyAction:recoveryShowCallback:;
+- (void)updateApplyReason:;
+- (unsigned long long)currentScene;
+- (void).cxx_destruct;
++ (BOOL)componentShouldActive:;
+@end

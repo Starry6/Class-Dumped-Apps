@@ -1,0 +1,38 @@
+@interface TTAccountPlatformEntity : TTAccountBaseEntity
+@property (nonatomic) NSNumber userID;
+@property (nonatomic) NSString platformUID;
+@property (nonatomic) NSString secPlatformUID;
+@property (nonatomic) NSString platform;
+@property (nonatomic) NSString platformScreenName;
+@property (nonatomic) NSString profileImageURL;
+@property (nonatomic) NSNumber modifyTime;
+@property (nonatomic) NSNumber expiredIn;
+@property (nonatomic) NSNumber expiredTime;
+@property (nonatomic) NSString platformAppId;
+@property (nonatomic) NSDictionary extra;
+- (void)setExpiredTime:;
+- (void)setPlatformUID:;
+- (id)expiredIn;
+- (id)expiredTime;
+- (id)initWithThirdAccountModel:;
+- (id)modifyTime;
+- (id)platformAppId;
+- (id)platformScreenName;
+- (id)platformUID;
+- (id)secPlatformUID;
+- (void)setExpiredIn:;
+- (void)setExtra:;
+- (void)setModifyTime:;
+- (void)setPlatformAppId:;
+- (void)setPlatformScreenName:;
+- (void)setSecPlatformUID:;
+- (id)extra;
+- (id)userID;
+- (void)setPlatform:;
+- (id)initWithDictionary:;
+- (id)platform;
+- (void).cxx_destruct;
+- (void)setUserID:;
+- (id)profileImageURL;
+- (void)setProfileImageURL:;
+@end

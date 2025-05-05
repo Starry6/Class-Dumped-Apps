@@ -1,0 +1,2 @@
+@interface InteractionFrequentlyChatApiRoot : GPBRootObject
+@end

@@ -1,0 +1,30 @@
+@interface WiFiAwareDatapathConfiguration : NSObject
+@property (nonatomic) WiFiAwareDiscoveryResult discoveryResult;
+@property (nonatomic) q serviceType;
+@property (nonatomic) NSString passphrase;
+@property (nonatomic) NSData pmk;
+@property (nonatomic) NSData pmkID;
+@property (nonatomic) WiFiAwarePublishDatapathServiceSpecificInfo serviceSpecificInfo;
+@property (nonatomic) WiFiAwareInternetSharingConfiguration internetSharingConfiguration;
+- (long long)serviceType;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)isEqual:;
+- (void)setInternetSharingConfiguration:;
+- (id)serviceSpecificInfo;
+- (void)setServiceSpecificInfo:;
+- (id)discoveryResult;
+- (id)passphrase;
+- (BOOL)serviceSpecificInfoEqual:;
+- (id)internetSharingConfiguration;
+- (id)pmk;
+- (id)pmkID;
+- (id)initWithDiscoveryResult:serviceType:passphrase:pmk:pmkID:serviceSpecificInfo:internetSharingConfiguration:;
+- (BOOL)passphraseEqual:;
+- (BOOL)pmkEqual:;
+- (BOOL)pmkIDEqual:;
+- (BOOL)internetSharingEqual:;
++ (BOOL)supportsSecureCoding;
+@end

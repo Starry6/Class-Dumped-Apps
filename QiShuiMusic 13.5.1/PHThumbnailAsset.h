@@ -1,0 +1,31 @@
+@interface PHThumbnailAsset : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSManagedObjectID objectID;
+@property (nonatomic) PHPhotoLibrary photoLibrary;
+@property (nonatomic) Q thumbnailIndex;
+@property (nonatomic) BOOL complete;
+@property (nonatomic) q cloudPlaceholderKind;
+- (id)photoLibrary;
+- (BOOL)complete;
+- (id)objectID;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (unsigned long long)effectiveThumbnailIndex;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (unsigned long long)thumbnailIndex;
+- (long long)cloudPlaceholderKind;
+- (id)pl_photoLibrary;
+- (id)initWithObjectID:knownKeysDictionary:photoLibrary:;
++ (long long)cacheSize;
++ (id)propertiesToFetch;
++ (id)entityName;
++ (long long)batchSize;
++ (id)fetchType;
++ (id)propertiesToSortBy;
++ (BOOL)useObjectFetchingContext;
++ (BOOL)useNoIndexSelf;
+@end

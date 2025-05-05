@@ -1,0 +1,34 @@
+@interface ByteAudioEngine : NSObject
+- (void)addEventDelegate:;
+- (void)setOutputFilter:;
+- (int)setServerConfigure:;
+- (void)removeEventDelegate:;
+- (id)createInputStream:;
+- (int)releaseInputStream:;
+- (id)createOutputStream:;
+- (int)releaseOutputStream:;
+- (id)createAuxStream:;
+- (int)releaseAuxStream:;
+- (int)setDefaultAudioRoute:;
+- (void)enableEarMonitor:;
+- (int)addEnableAudioRouteReference;
+- (int)removeEnableAudioRouteReference;
+- (void)setInputFilter:sampleRate:channel:;
+- (void)setFrontInputFilter:sampleRate:channel:;
+- (void)setEarMonitorFilter:sampleRate:channel:;
+- (void)setOutputFilterWithSrAndChnnel:sampleRate:channel:;
+- (int)adjustHeadsetMonitorVolume:;
+- (void)convertAudioModeOption:to:;
+- (int)setAudioModeStrategy:;
+- (int)adjustRecordVolume:;
+- (int)adjustPlaybackVolume:;
+- (int)setValue:value:;
+- (int)stopPushExternalReferenceBuffer:;
+- (int)pushExternalReferenceBuffer:priority:;
+- (id)init;
+- (void)dealloc;
+- (id)getValue:;
+- (void).cxx_destruct;
+- (id).cxx_construct;
++ (id)sharedInstance;
+@end

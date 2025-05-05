@@ -1,0 +1,35 @@
+@interface BDXElementResourceManager : NSObject
+@property (nonatomic) NSMutableDictionary fetchingResourceCallbacks;
+@property (nonatomic) <BDXElementResourceManagerDelegate> resourceDelegate;
+@property (nonatomic) @? localizeStringBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)downloadDestinationPath;
+- (void)downloadZipFileWithURL:completionHandler:;
+- (void)fetchFileWithURL:baseURL:context:completionHandler:;
+- (void)fetchLocalFileWithURL:baseURL:context:completionHandler:;
+- (id)fetchingResourceCallbacks;
+- (id)getRemoteURLWithRelativeURL:baseURL:error:;
+- (id)localizeStringBlock;
+- (void)resourceDataWithURL:baseURL:context:completionHandler:;
+- (id)resourceDelegate;
+- (void)resourceZipFileWithURL:baseURL:context:completionHandler:;
+- (void)setFetchingResourceCallbacks:;
+- (void)setLocalizeStringBlock:;
+- (void)setResourceDelegate:;
+- (id)urlStringWithURL:;
+- (BOOL)zipArchiveShouldUnzipFileAtIndex:totalFiles:archivePath:fileInfo:;
+- (void).cxx_destruct;
++ (id)genContext:withLynxView:;
++ (id)lynxViewFrom:;
++ (id)pickOutLynxViewFrom:;
++ (void)tryToCleanup;
++ (id)unzipCachePathForURL:;
++ (void)unzipFile:toPath:completionHandler:;
++ (void)updateHistory:;
++ (id)zipTempCachePathForURL:;
++ (id)allocWithZone:;
++ (id)sharedInstance;
+@end

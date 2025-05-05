@@ -1,0 +1,34 @@
+@interface IESLiveSaaSDislikeGuideManager : NSObject
+@property (nonatomic) Q count;
+@property (nonatomic) BOOL canShow;
+@property (nonatomic) NSDate enterTime;
+@property (nonatomic) UIView guideView;
+@property (nonatomic) LOTAnimationView animationView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)canShow;
+- (void)triggerScrollUp;
+- (BOOL)canShowGuide;
+- (id)enterTime;
+- (BOOL)hasShownBefore;
+- (void)hideGuide;
+- (BOOL)isShowingGuide;
+- (void)setCanShow:;
+- (void)setEnterTime:;
+- (void)setNotNeedShowGuide;
+- (void)showGuideIfNeededAtView:;
+- (void)triggerEnterRoom;
+- (void)triggerLeaveRoom;
+- (void)triggerScrollDown;
+- (void)setCount:;
+- (void)play;
+- (void).cxx_destruct;
+- (unsigned long long)count;
+- (id)animationView;
+- (void)setAnimationView:;
+- (void)setGuideView:;
+- (id)guideView;
++ (id)sharedInstance;
+@end

@@ -1,0 +1,32 @@
+@interface BDAPUSendAdLogParamModel : BDXBridgeModel
+@property (nonatomic) NSString category;
+@property (nonatomic) NSString tag;
+@property (nonatomic) NSString label;
+@property (nonatomic) NSString refer;
+@property (nonatomic) NSNumber hasAdInfo;
+@property (nonatomic) NSDictionary extParam;
+@property (nonatomic) NSString creativeID;
+@property (nonatomic) NSString groupID;
+@property (nonatomic) NSString logExtra;
+- (id)extParam;
+- (id)hasAdInfo;
+- (id)logExtra;
+- (id)refer;
+- (void)setCreativeID:;
+- (void)setExtParam:;
+- (void)setHasAdInfo:;
+- (void)setLogExtra:;
+- (void)setRefer:;
+- (void)setGroupID:;
+- (id)groupID;
+- (id)tag;
+- (void)setLabel:;
+- (id)label;
+- (void)setTag:;
+- (void)setCategory:;
+- (void).cxx_destruct;
+- (id)category;
+- (id)creativeID;
++ (id)JSONKeyPathsByPropertyKey;
++ (id)JSONTransformerForKey:;
+@end

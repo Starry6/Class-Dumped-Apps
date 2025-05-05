@@ -1,0 +1,36 @@
+@interface BDXCategoryNumberCellModel : BDXCategoryTitleCellModel
+@property (nonatomic) q count;
+@property (nonatomic) NSString numberString;
+@property (nonatomic) double numberStringWidth;
+@property (nonatomic) @? numberStringFormatterBlock;
+@property (nonatomic) UIColor numberBackgroundColor;
+@property (nonatomic) UIColor numberTitleColor;
+@property (nonatomic) double numberLabelWidthIncrement;
+@property (nonatomic) double numberLabelHeight;
+@property (nonatomic) UIFont numberLabelFont;
+@property (nonatomic) {CGPoint=dd} numberLabelOffset;
+@property (nonatomic) BOOL shouldMakeRoundWhenSingleNumber;
+- (BOOL)shouldMakeRoundWhenSingleNumber;
+- (id)numberLabelFont;
+- (id)numberBackgroundColor;
+- (double)numberLabelHeight;
+- (id)numberLabelOffset;
+- (double)numberLabelWidthIncrement;
+- (id)numberString;
+- (id)numberStringFormatterBlock;
+- (double)numberStringWidth;
+- (id)numberTitleColor;
+- (void)setNumberBackgroundColor:;
+- (void)setNumberLabelFont:;
+- (void)setNumberLabelHeight:;
+- (void)setNumberLabelOffset:;
+- (void)setNumberLabelWidthIncrement:;
+- (void)setNumberString:;
+- (void)setNumberStringFormatterBlock:;
+- (void)setNumberTitleColor:;
+- (void)setShouldMakeRoundWhenSingleNumber:;
+- (void)updateNumberSizeWidthIfNeeded;
+- (void)setCount:;
+- (void).cxx_destruct;
+- (long long)count;
+@end

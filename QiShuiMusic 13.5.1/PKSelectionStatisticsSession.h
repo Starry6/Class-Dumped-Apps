@@ -1,0 +1,31 @@
+@interface PKSelectionStatisticsSession : NSObject
+@property (nonatomic) NSDictionary selectionGestureDictionary;
+@property (nonatomic) NSDictionary selectionActionDictionary;
+@property (nonatomic) double timeSpentSelecting;
+@property (nonatomic) q numberOfTimesSelectionWasClearedInASession;
+@property (nonatomic) q selectionGestureCount;
+@property (nonatomic) NSString lastActionTaken;
+@property (nonatomic) NSString lastSignificantActionTaken;
+@property (nonatomic) q lastSelectionType;
+@property (nonatomic) q lastContentType;
+- (id)init;
+- (void).cxx_destruct;
+- (void)logGesture:selectionType:contentType:;
+- (void)logSelectionAction:;
+- (double)timeSpentSelecting;
+- (id)selectionGestureDictionary;
+- (id)selectionActionDictionary;
+- (long long)numberOfTimesSelectionWasClearedInASession;
+- (id)lastActionTaken;
+- (id)lastSignificantActionTaken;
+- (void)setTimeSpentSelecting:;
+- (void)setNumberOfTimesSelectionWasClearedInASession:;
+- (long long)selectionGestureCount;
+- (void)setSelectionGestureCount:;
+- (void)setLastActionTaken:;
+- (void)setLastSignificantActionTaken:;
+- (long long)lastSelectionType;
+- (void)setLastSelectionType:;
+- (long long)lastContentType;
+- (void)setLastContentType:;
+@end

@@ -1,0 +1,38 @@
+@interface IESECSlicePopoverView : UIView
+@property (nonatomic) IESECSlicePopoverContentView contentView;
+@property (nonatomic) {UIEdgeInsets=dddd} edgeinsets;
+@property (nonatomic) UIStackView stackView;
+@property (nonatomic) NSArray configs;
+@property (nonatomic) {CGPoint=dd} targetPoint;
+@property (nonatomic) UIView target;
+@property (nonatomic) Q position;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)coverViewDidHit;
+- (void)addArrangedSubviewWithSeparator:;
+- (void)addItemConfiguration:;
+- (void)checkOverView;
+- (id)edgeinsets;
+- (void)setConfigs:;
+- (void)setEdgeinsets:;
+- (void)tapWillFinish;
+- (void)setPosition:;
+- (void)dismiss;
+- (unsigned long long)position;
+- (id)contentView;
+- (id)init;
+- (void)setStackView:;
+- (id)stackView;
+- (id)hitTest:withEvent:;
+- (void)show;
+- (void)setTarget:;
+- (void).cxx_destruct;
+- (id)target;
+- (void)setContentView:;
+- (void)updateItems;
+- (id)targetPoint;
+- (void)setTargetPoint:;
+- (id)configs;
+@end

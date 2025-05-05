@@ -1,0 +1,2 @@
+@interface IESLiveSaaSPBIESLiveSaaSPBRanklistMessageRoot : GPBRootObject
+@end

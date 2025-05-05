@@ -1,0 +1,34 @@
+@interface NPEdgeSelection : EdgeSelection
+@property (nonatomic) NSString bestEdge;
+@property (nonatomic) Q bestEdgeRTT;
+@property (nonatomic) Q bestEdgeProbedRTT;
+@property (nonatomic) NSString nextBestEdge;
+@property (nonatomic) Q nextBestEdgeRTT;
+@property (nonatomic) NSDate probeDate;
+@property (nonatomic) NPWaldo waldoInfo;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)initWithWaldo:signature:interfaceType:;
+- (void)getBestEdgeFromEdgeSelection;
+- (void)trainEdgeSelection:edgeRank:rtt:;
+- (BOOL)shouldProbeForEdgeSelection:edgeRank:edgeIndex:bestEdgeLabel:;
+- (void)updateEdgeSelection:;
+- (id)copyEdgeSelectionTelemetry;
+- (id)waldoInfo;
+- (void)setWaldoInfo:;
+- (id)bestEdge;
+- (void)setBestEdge:;
+- (unsigned long long)bestEdgeRTT;
+- (void)setBestEdgeRTT:;
+- (unsigned long long)bestEdgeProbedRTT;
+- (void)setBestEdgeProbedRTT:;
+- (id)nextBestEdge;
+- (void)setNextBestEdge:;
+- (unsigned long long)nextBestEdgeRTT;
+- (void)setNextBestEdgeRTT:;
+- (id)probeDate;
+- (void)setProbeDate:;
++ (BOOL)supportsSecureCoding;
+@end

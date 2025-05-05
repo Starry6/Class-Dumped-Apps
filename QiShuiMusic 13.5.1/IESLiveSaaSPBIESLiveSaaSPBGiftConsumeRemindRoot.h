@@ -1,0 +1,2 @@
+@interface IESLiveSaaSPBIESLiveSaaSPBGiftConsumeRemindRoot : GPBRootObject
+@end

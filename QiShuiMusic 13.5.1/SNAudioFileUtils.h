@@ -1,0 +1,2 @@
+@interface SNAudioFileUtils : NSObject
+@end

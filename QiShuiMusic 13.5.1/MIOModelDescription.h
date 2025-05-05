@@ -1,0 +1,33 @@
+@interface MIOModelDescription : NSObject
+@property (nonatomic) NSArray inputDescriptions;
+@property (nonatomic) NSArray outputDescriptions;
+@property (nonatomic) NSArray trainingInputDescriptions;
+@property (nonatomic) NSDictionary metadata;
+@property (nonatomic) NSString predictedFeatureName;
+@property (nonatomic) NSString predictedProbabilitiesName;
+@property (nonatomic) BOOL updatable;
+@property (nonatomic) NSDictionary parameterDescriptionsByKey;
+@property (nonatomic) NSArray classLabels;
+- (id)classLabels;
+- (id)metadata;
+- (unsigned long long)hash;
+- (void)setMetadata:;
+- (id)predictedProbabilitiesName;
+- (id)predictedFeatureName;
+- (void).cxx_destruct;
+- (id)description;
+- (id)mutableCopyWithZone:;
+- (id)parameterDescriptionsByKey;
+- (id).cxx_construct;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)inputDescriptions;
+- (id)outputDescriptions;
+- (id)trainingInputDescriptions;
+- (id)initWithSpecification:isUpdatable:modelParameters:classLabels:;
+- (id)modelDescriptionSpecification;
+- (void)_setShortDescription:forInputFeatureWithName:;
+- (void)_setShortDescription:forOutputFeatureWithName:;
+- (void)_setShortDescription:forTrainingInputFeatureWithName:;
+- (BOOL)updatable;
+@end

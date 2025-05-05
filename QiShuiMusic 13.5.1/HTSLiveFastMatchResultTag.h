@@ -1,0 +1,5 @@
+@interface HTSLiveFastMatchResultTag : IESLivePBBaseMessage
+@property (nonatomic) NSString tagName;
+@property (nonatomic) NSString value;
++ (id)descriptor;
+@end

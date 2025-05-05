@@ -1,0 +1,33 @@
+@interface TTVideoEngineConfigItem : NSObject
+@property (nonatomic) q key;
+@property (nonatomic) q executeKey;
+@property (nonatomic) @ value;
+@property (nonatomic) @ defaultValue;
+@property (nonatomic) Q dataType;
+@property (nonatomic) @ executeVariable;
+@property (nonatomic) : executeSelector;
+@property (nonatomic) Q actionArea;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (SEL)executeSelector;
+- (id)executeVariable;
+- (unsigned long long)actionArea;
+- (long long)executeKey;
+- (void)setActionArea:;
+- (void)setExecuteKey:;
+- (void)setExecuteSelector:;
+- (void)setExecuteVariable:;
+- (void)setDataType:;
+- (void)execute;
+- (void)setDefaultValue:;
+- (long long)key;
+- (id)defaultValue;
+- (unsigned long long)dataType;
+- (void)setKey:;
+- (void)setValue:;
+- (void).cxx_destruct;
+- (id)value;
+- (BOOL)isEqual:;
+@end

@@ -1,0 +1,30 @@
+@interface IMStickerPack : NSObject
+@property (nonatomic) NSString GUID;
+@property (nonatomic) NSSet stickers;
+@property (nonatomic) NSString name;
+@property (nonatomic) NSURL displayAssetURL;
+@property (nonatomic) NSURL fileURL;
+@property (nonatomic) NSString appBundleIdentifier;
+@property (nonatomic) NSString appVersion;
+- (void)setAppVersion:;
+- (id)GUID;
+- (id)appVersion;
+- (void)setFileURL:;
+- (void)dealloc;
+- (void)setName:;
+- (void)setAppBundleIdentifier:;
+- (id)initWithDictionary:;
+- (id)appBundleIdentifier;
+- (id)fileURL;
+- (id)description;
+- (id)name;
+- (id)dictionaryRepresentation;
+- (void)setGUID:;
+- (id)initWithGUID:name:displayAssetURL:fileURL:appBundleIdentifier:appVersion:;
+- (id)stickers;
+- (void)addSticker:;
+- (id)_generatePackGUIDWithPackID:appBundleID:appVersion:;
+- (id)initWithStickerPackProperties:stickerPackBundleURL:appBundleIdentifier:appVersion:;
+- (id)displayAssetURL;
+- (void)setDisplayAssetURL:;
+@end

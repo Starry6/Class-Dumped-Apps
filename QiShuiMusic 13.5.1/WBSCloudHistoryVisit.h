@@ -1,0 +1,36 @@
+@interface WBSCloudHistoryVisit : NSObject
+@property (nonatomic) NSDictionary dictionaryRepresentation;
+@property (nonatomic) WBSHistoryVisitIdentifier visitIdentifier;
+@property (nonatomic) NSString title;
+@property (nonatomic) BOOL loadSuccessful;
+@property (nonatomic) BOOL httpNonGet;
+@property (nonatomic) WBSHistoryVisitIdentifier redirectSourceVisitIdentifier;
+@property (nonatomic) WBSCloudHistoryVisit redirectSourceVisit;
+@property (nonatomic) WBSHistoryVisitIdentifier redirectDestinationVisitIdentifier;
+@property (nonatomic) WBSCloudHistoryVisit redirectDestinationVisit;
+- (void)setLoadSuccessful:;
+- (id)initWithDictionary:;
+- (void)setTitle:;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (id)title;
+- (BOOL)loadWasSuccessful;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)wasHTTPNonGet;
+- (id)dictionaryRepresentation;
+- (id)initWithHistoryVisit:;
+- (id)initWithVisitIdentifier:title:loadSuccessful:httpNonGet:redirectSourceVisitIdentifier:redirectDestinationVisitIdentifier:;
+- (id)visitIdentifier;
+- (void)setVisitIdentifier:;
+- (void)setHttpNonGet:;
+- (id)redirectSourceVisitIdentifier;
+- (void)setRedirectSourceVisitIdentifier:;
+- (id)redirectSourceVisit;
+- (void)setRedirectSourceVisit:;
+- (id)redirectDestinationVisitIdentifier;
+- (void)setRedirectDestinationVisitIdentifier:;
+- (id)redirectDestinationVisit;
+- (void)setRedirectDestinationVisit:;
++ (BOOL)supportsSecureCoding;
+@end

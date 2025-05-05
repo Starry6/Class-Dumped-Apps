@@ -1,0 +1,34 @@
+@interface NSPPrivacyProxySignedConfiguration : PBCodable
+@property (nonatomic) NSPPrivacyProxyConfiguration configuration;
+@property (nonatomic) NSData signature;
+@property (nonatomic) NSMutableArray certificates;
+@property (nonatomic) BOOL hasAlgorithm;
+@property (nonatomic) NSInteger algorithm;
+- (void)setCertificates:;
+- (int)algorithm;
+- (void)setSignature:;
+- (id)certificates;
+- (id)signature;
+- (void)writeTo:;
+- (void)setAlgorithm:;
+- (void)setConfiguration:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)configuration;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)clearCertificates;
+- (void)addCertificates:;
+- (unsigned long long)certificatesCount;
+- (id)certificatesAtIndex:;
+- (void)setHasAlgorithm:;
+- (BOOL)hasAlgorithm;
+- (id)algorithmAsString:;
+- (int)StringAsAlgorithm:;
++ (Class)certificatesType;
+@end

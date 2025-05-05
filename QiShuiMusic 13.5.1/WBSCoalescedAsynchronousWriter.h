@@ -1,0 +1,35 @@
+@interface WBSCoalescedAsynchronousWriter : NSObject
+@property (nonatomic) <WBSCoalescedAsynchronousWriterDelegate> delegate;
+- (void)performScheduledWriteSynchronously;
+- (void)dealloc;
+- (void)_waitForWriteCompletion;
+- (void)_writeData:;
+- (void)setDelegate:;
+- (id)_initWithName:fileURL:writerBlock:dataSourceQueue:dataSourceBlock:plistDictionarySourceBlock:plistFormat:writeDelayInterval:fileResourceValues:;
+- (void)_cancelPendingWriteSynchronouslyLeavingSuddenTerminationIntact;
+- (void)_invalidateTimer;
+- (id)_plistDictionaryFromDataSourceOnDataSourceQueue;
+- (void)_timerFired;
+- (id)_dataForPlistDictionary:;
+- (id)initWithName:writerBlock:dataSourceQueue:dataSourceBlock:;
+- (void)startScheduledWriteNow;
+- (void)completePendingWriteSynchronously;
+- (id)initWithName:fileURL:dataSourceBlock:;
+- (id)initWithName:fileURL:dataSourceQueue:dataSourceBlock:fileResourceValues:;
+- (id)delegate;
+- (void)startScheduledWriteNowWithCompletionHandler:;
+- (void)cancelPendingWriteSynchronously;
+- (id)_initWithName:fileURL:writerBlock:dataSourceQueue:dataSourceBlock:writeDelayInterval:fileResourceValues:;
+- (void).cxx_destruct;
+- (id)initWithName:fileURL:dataSourceQueue:plistFormat:plistDictionarySourceBlock:;
+- (id)_synchronousDataOnDataSourceQueue;
+- (void)_asynchronouslyWriteData:orPlistDictionary:completionHandler:;
+- (id)initWithName:writerBlock:dataSourceBlock:;
+- (id)_dataFromDataSourceOnDataSourceQueue;
+- (id)initWithName:fileURL:dataSourceBlock:writeDelayInterval:;
+- (void)scheduleWrite;
+- (id)initWithName:writerBlock:dataSourceQueue:plistFormat:plistDictionarySourceBlock:;
+- (id).cxx_construct;
+- (id)initWithName:fileURL:dataSourceQueue:dataSourceBlock:;
+- (void)_scheduleTimer;
+@end

@@ -1,0 +1,31 @@
+@interface AWEIMSharePlayRemoteMessage : AWEIMMessage
+@property (nonatomic) NSString roomID;
+@property (nonatomic) NSString ownerUid;
+@property (nonatomic) NSString ownerSceUid;
+@property (nonatomic) q roomUserCount;
+@property (nonatomic) NSString ownerName;
+@property (nonatomic) NSArray audienceAvatarURLArray;
+@property (nonatomic) q roomType;
+@property (nonatomic) Q roomStatus;
+- (void)setOwnerSceUid:;
+- (id)audienceAvatarURLArray;
+- (id)getContentDict;
+- (id)initWithContentDict:;
+- (id)ownerSceUid;
+- (unsigned long long)roomStatus;
+- (long long)roomType;
+- (long long)roomUserCount;
+- (void)setAudienceAvatarURLArray:;
+- (void)setRoomStatus:;
+- (void)setRoomType:;
+- (void)setRoomUserCount:;
+- (id)ownerName;
+- (void)setOwnerName:;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (id)roomID;
+- (void)setRoomID:;
+- (id)ownerUid;
+- (void)setOwnerUid:;
++ (long long)customMessageType;
+@end

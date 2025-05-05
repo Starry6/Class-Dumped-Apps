@@ -1,0 +1,38 @@
+@interface CSJLOTAsset : NSObject
+@property (nonatomic) NSString referenceID;
+@property (nonatomic) NSNumber assetWidth;
+@property (nonatomic) NSNumber assetHeight;
+@property (nonatomic) NSNumber assetLeft;
+@property (nonatomic) NSNumber assetTop;
+@property (nonatomic) NSString imageName;
+@property (nonatomic) NSString imageDirectory;
+@property (nonatomic) NSArray inel;
+@property (nonatomic) NSArray textConfigurationList;
+@property (nonatomic) NSString el;
+@property (nonatomic) NSString rel;
+@property (nonatomic) q type;
+@property (nonatomic) NSString md5String;
+@property (nonatomic) CSJLOTLayerGroup layerGroup;
+@property (nonatomic) NSString rootDirectory;
+@property (nonatomic) NSBundle assetBundle;
+- (void)_mapFromJSON:withAssetGroup:withFramerate:;
+- (id)assetLeft;
+- (id)assetTop;
+- (id)imageDirectory;
+- (id)inel;
+- (id)initWithJSON:withAssetGroup:withAssetBundle:withFramerate:;
+- (id)layerGroup;
+- (id)md5String;
+- (void)setRootDirectory:;
+- (id)textConfigurationList;
+- (id)rootDirectory;
+- (id)imageName;
+- (long long)type;
+- (void).cxx_destruct;
+- (id)rel;
+- (id)assetBundle;
+- (id)referenceID;
+- (id)assetWidth;
+- (id)assetHeight;
+- (id)el;
+@end

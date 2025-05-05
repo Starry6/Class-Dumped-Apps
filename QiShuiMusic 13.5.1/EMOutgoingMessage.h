@@ -1,0 +1,33 @@
+@interface EMOutgoingMessage : NSObject
+@property (nonatomic) NSData messageData;
+@property (nonatomic) q action;
+@property (nonatomic) BOOL shouldSign;
+@property (nonatomic) BOOL shouldEncrypt;
+@property (nonatomic) q conversationNotificationLevel;
+@property (nonatomic) EMMessageObjectID originalMessageID;
+@property (nonatomic) NSString ef_publicDescription;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)ef_publicDescription;
+- (long long)action;
+- (id)initWithCoder:;
+- (void)setAction:;
+- (id)initWithBuilder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)messageData;
+- (void)setMessageData:;
+- (BOOL)shouldEncrypt;
+- (BOOL)shouldSign;
+- (void)setShouldSign:;
+- (void)setShouldEncrypt:;
+- (long long)conversationNotificationLevel;
+- (void)setConversationNotificationLevel:;
+- (id)originalMessageID;
+- (void)setOriginalMessageID:;
+- (id)initWithMessageData:;
++ (BOOL)supportsSecureCoding;
+@end

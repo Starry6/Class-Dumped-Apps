@@ -1,0 +1,36 @@
+@interface UIPDFMagnifierController : NSObject
+@property (nonatomic) UIPDFPageView pageView;
+- (id)pageView;
+- (id)init;
+- (BOOL)visible;
+- (void)dealloc;
+- (void)drawLayer:inContext:;
+- (void)hide;
+- (void)showMagnifier;
+- (void)_show;
+- (void)setPageView:;
+- (void)setPosition:viewPoint:;
+- (void)showLoupe;
+- (void)move;
+- (id)imageReceived:data:;
+- (void)tearDownLayers;
+- (void)setPower;
+- (BOOL)isSelectionUniformlyRotated:;
+- (id)convertViewPointToEnlargedSpace:;
+- (id)convertPointToRotatedPage:;
+- (id)convertRectToRotatedPage:;
+- (id)convertRectToEnlargedSpace:;
+- (id)convertPointToEnlargedSpace:;
+- (id)viewPointInTextEffectsSpace;
+- (id)pointToMagnifyInPDFSpace;
+- (void)setImageContainerPositionMagnifier;
+- (void)setImageContainerPositionLoupe;
+- (void)setLayerPositions;
+- (void)addBling;
+- (void)setSelectionPath:bounds:transform:;
+- (void)setSelectionPath;
+- (void)placeImage;
+- (void)setImageContainerMask;
+- (void)setTextRangeHandlePositions;
+- (void)addTextRangeHandles;
+@end

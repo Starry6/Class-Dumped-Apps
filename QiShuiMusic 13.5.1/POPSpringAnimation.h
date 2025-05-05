@@ -1,0 +1,34 @@
+@interface POPSpringAnimation : POPPropertyAnimation
+@property (nonatomic) @ velocity;
+@property (nonatomic) double springBounciness;
+@property (nonatomic) double springSpeed;
+@property (nonatomic) double dynamicsTension;
+@property (nonatomic) double dynamicsFriction;
+@property (nonatomic) double dynamicsMass;
+- (void)setSpringSpeed:;
+- (double)dynamicsTension;
+- (void)_appendDescription:debug:;
+- (void)_initState;
+- (void)_updatedDynamicsFriction;
+- (void)_updatedDynamicsMass;
+- (void)_updatedDynamicsTension;
+- (double)dynamicsFriction;
+- (double)dynamicsMass;
+- (void)setDynamicsFriction:;
+- (void)setDynamicsMass:;
+- (void)setDynamicsTension:;
+- (void)setSpringBounciness:;
+- (double)springBounciness;
+- (double)springSpeed;
+- (id)velocity;
+- (id)solver;
+- (id)init;
+- (void)setVelocity:;
+- (void)dealloc;
+- (void)setSolver:;
+- (id)copyWithZone:;
++ (id)animationWithPropertyNamed:;
++ (void)convertBounciness:speed:toTension:friction:mass:;
++ (void)convertTension:friction:toBounciness:speed:;
++ (id)animation;
+@end

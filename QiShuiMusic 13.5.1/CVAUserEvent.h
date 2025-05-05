@@ -1,0 +1,32 @@
+@interface CVAUserEvent : NSObject
+@property (nonatomic) Q eventType;
+@property (nonatomic) double timestamp;
+@property (nonatomic) NSUUID uuid;
+@property (nonatomic) NSData anchorData;
+@property (nonatomic) NSArray transformCameraToAnchor;
+@property (nonatomic) NSString peerDisplayName;
+@property (nonatomic) NSNumber sessionID;
+@property (nonatomic) NSNumber movLowestTimestamp;
+- (void)setSessionID:;
+- (id)sessionID;
+- (id)uuid;
+- (void)setUuid:;
+- (unsigned long long)eventType;
+- (void)setEventType:;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void)setTimestamp:;
+- (void).cxx_destruct;
+- (double)timestamp;
+- (id)anchorData;
+- (id)initWithEventType:timestamp:;
+- (void)setPeerDisplayName:;
+- (void)setAnchorData:;
+- (id)movLowestTimestamp;
+- (void)setMovLowestTimestamp:;
+- (id)peerDisplayName;
+- (id)transformCameraToAnchor;
+- (void)setTransformCameraToAnchor:;
++ (BOOL)supportsSecureCoding;
++ (id)classes;
+@end

@@ -1,0 +1,36 @@
+@interface ENFileSession : NSObject
+@property (nonatomic) Q batchSize;
+@property (nonatomic) I flags;
+@property (nonatomic) Q invalidKeyCount;
+@property (nonatomic) NSDictionary metadata;
+@property (nonatomic) NSDate startDate;
+@property (nonatomic) NSDate endDate;
+@property (nonatomic) NSData sha256Data;
+@property (nonatomic) NSArray signatures;
+@property (nonatomic) ENXPCServiceClient serviceClient;
+- (id)signatures;
+- (id)startDate;
+- (void)dealloc;
+- (unsigned long long)batchSize;
+- (void)setBatchSize:;
+- (id)metadata;
+- (id)initWithServiceClient:;
+- (id)serviceClient;
+- (id)endDate;
+- (void).cxx_destruct;
+- (void)setFlags:;
+- (unsigned int)flags;
+- (void)invalidate;
+- (BOOL)activateWithArchivePath:error:;
+- (BOOL)activateWithFD:signatureData:error:;
+- (id)sha256Data;
+- (id)verifySignatureWithPublicKey:error:;
+- (id)readTEKBatchAndReturnError:;
+- (unsigned long long)invalidKeyCount;
+- (BOOL)activateWithFilePath:error:;
+- (id)_activateCreateXPCRequestWithPath:archive:signatureData:error:;
+- (id)_activateCreateXPCRequestWithFD:archive:signatureData:error:;
+- (BOOL)_activateSyncWithRequest:error:;
+- (BOOL)_activateHandleReply:error:;
+- (id)_readTEKBatchHandleReply:error:;
+@end

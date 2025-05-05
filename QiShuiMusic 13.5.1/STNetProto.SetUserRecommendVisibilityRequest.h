@@ -1,0 +1,3 @@
+@interface STNetProto.SetUserRecommendVisibilityRequest : _TtGC10STNetProto13STBaseRequestVS_38SetUserRecommendVisibilityResponseInfo_
+- (id)init;
+@end

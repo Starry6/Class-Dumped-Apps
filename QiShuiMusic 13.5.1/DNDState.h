@@ -1,0 +1,34 @@
+@interface DNDState : NSObject
+@property (nonatomic) BOOL willSuppressInterruptions;
+@property (nonatomic) NSArray activeModeAssertionMetadata;
+@property (nonatomic) NSUUID activeModeUUID;
+@property (nonatomic) Q suppressionState;
+@property (nonatomic) NSArray activeModeIdentifiers;
+@property (nonatomic) NSString activeModeIdentifier;
+@property (nonatomic) DNDModeConfiguration activeModeConfiguration;
+@property (nonatomic) NSDate startDate;
+@property (nonatomic) NSDate userVisibleTransitionDate;
+@property (nonatomic) Q userVisibleTransitionLifetimeType;
+@property (nonatomic) BOOL active;
+- (id)startDate;
+- (id)activeModeUUID;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)isEqual:;
+- (BOOL)isActive;
+- (id)copyWithZone:;
+- (id)initWithSuppressionState:activeModeAssertionMetadata:startDate:userVisibleTransitionDate:userVisibleTransitionLifetimeType:activeModeConfiguration:;
+- (id)activeModeIdentifiers;
+- (id)activeModeIdentifier;
+- (void)setOverrideModeIdentifier:;
+- (unsigned long long)suppressionState;
+- (id)userVisibleTransitionDate;
+- (unsigned long long)userVisibleTransitionLifetimeType;
+- (id)activeModeConfiguration;
+- (BOOL)willSuppressInterruptions;
+- (id)activeModeAssertionMetadata;
++ (BOOL)supportsSecureCoding;
+@end

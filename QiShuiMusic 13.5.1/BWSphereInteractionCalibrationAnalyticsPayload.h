@@ -1,0 +1,32 @@
+@interface BWSphereInteractionCalibrationAnalyticsPayload : NSObject
+@property (nonatomic) q magneticFieldMagnitude;
+@property (nonatomic) NSString portType;
+@property (nonatomic) I calibrationStatus;
+@property (nonatomic) NSInteger sphereNeutralPositionError;
+@property (nonatomic) NSInteger sphereNeutralPosition;
+@property (nonatomic) NSInteger sphereMacroPositionError;
+@property (nonatomic) NSInteger sphereMacroPosition;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)portType;
+- (id)init;
+- (void)dealloc;
+- (void)setPortType:;
+- (id)eventName;
+- (void)reset;
+- (id)eventDictionary;
+- (unsigned int)calibrationStatus;
+- (void)setCalibrationStatus:;
+- (long long)magneticFieldMagnitude;
+- (void)setMagneticFieldMagnitude:;
+- (int)sphereNeutralPositionError;
+- (void)setSphereNeutralPositionError:;
+- (int)sphereNeutralPosition;
+- (void)setSphereNeutralPosition:;
+- (int)sphereMacroPositionError;
+- (void)setSphereMacroPositionError:;
+- (int)sphereMacroPosition;
+- (void)setSphereMacroPosition:;
+@end

@@ -1,0 +1,2 @@
+@interface SKProductSubscriptionPeriodInternal : NSObject
+@end

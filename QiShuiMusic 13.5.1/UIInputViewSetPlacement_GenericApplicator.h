@@ -1,0 +1,35 @@
+@interface UIInputViewSetPlacement_GenericApplicator : NSObject
+@property (nonatomic) {CGPoint=dd} origin;
+@property (nonatomic) NSArray constraints;
+@property (nonatomic) UIView draggableView;
+@property (nonatomic) UIView twoFingerDraggableView;
+@property (nonatomic) {UIEdgeInsets=dddd} contentInsets;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} popoverFrame;
+@property (nonatomic) {UIEdgeInsets=dddd} inputAssistantPadding;
+@property (nonatomic) {UIEdgeInsets=dddd} inputAccessoryPadding;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)applyChanges:;
+- (BOOL)isGesture:inDraggableView:;
+- (id)initForOwner:withPlacement:;
+- (id)contentInsets;
+- (id)draggableView;
+- (id)inputAssistantPadding;
+- (BOOL)preBeginGesture:shouldBegin:;
+- (id)popoverFrame;
+- (BOOL)allConstraintsActive;
+- (id)targetRect;
+- (void)checkVerticalConstraint;
+- (id)inputAccessoryPadding;
+- (id)twoFingerDraggableView;
+- (void)prepare;
+- (id)constraints;
+- (id)origin;
+- (void).cxx_destruct;
+- (id)description;
+- (void)invalidate;
+- (BOOL)isEqual:;
++ (id)applicatorForOwner:withPlacement:;
+@end

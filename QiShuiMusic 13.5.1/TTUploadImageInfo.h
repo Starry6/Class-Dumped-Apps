@@ -1,0 +1,36 @@
+@interface TTUploadImageInfo : NSObject
+@property (nonatomic) NSString imageId;
+@property (nonatomic) q fileIndex;
+@property (nonatomic) q errCode;
+@property (nonatomic) NSDictionary metainfoDict;
+@property (nonatomic) NSString secretKey;
+@property (nonatomic) NSString algorithm;
+@property (nonatomic) NSString version;
+@property (nonatomic) NSString sourceMD5;
+@property (nonatomic) NSDictionary extra;
+@property (nonatomic) NSDictionary dataParams;
+@property (nonatomic) NSString origialObjectId;
+- (id)origialObjectId;
+- (long long)errCode;
+- (id)dataParams;
+- (id)metainfoDict;
+- (void)setDataParams:;
+- (void)setErrCode:;
+- (void)setExtra:;
+- (void)setMetainfoDict:;
+- (void)setOrigialObjectId:;
+- (void)setSourceMD5:;
+- (id)sourceMD5;
+- (id)algorithm;
+- (id)extra;
+- (void)setSecretKey:;
+- (void)setVersion:;
+- (id)version;
+- (id)imageId;
+- (void)setAlgorithm:;
+- (void).cxx_destruct;
+- (id)secretKey;
+- (void)setImageId:;
+- (long long)fileIndex;
+- (void)setFileIndex:;
+@end

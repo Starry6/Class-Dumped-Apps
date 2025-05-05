@@ -1,0 +1,30 @@
+@interface SiriTTSSynthesisVoice : NSObject
+@property (nonatomic) NSString language;
+@property (nonatomic) NSString name;
+@property (nonatomic) q footprint;
+@property (nonatomic) q type;
+@property (nonatomic) q gender;
+@property (nonatomic) q version;
+@property (nonatomic) NSString description;
+- (id)init;
+- (void)setFootprint:;
+- (void)setName:;
+- (long long)gender;
+- (void)setLanguage:;
+- (id)language;
+- (void)setVersion:;
+- (long long)version;
+- (void)setGender:;
+- (void)setType:;
+- (long long)footprint;
+- (id)initWithCoder:;
+- (id)initWithLanguage:name:;
+- (void)encodeWithCoder:;
+- (long long)type;
+- (void).cxx_destruct;
+- (id)description;
+- (id)name;
+- (BOOL)isEqual:;
++ (BOOL)supportsSecureCoding;
++ (void)setSupportsSecureCoding:;
+@end

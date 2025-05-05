@@ -1,0 +1,36 @@
+@interface SFDeviceOperationCDPSetup : NSObject
+@property (nonatomic) @? completionHandler;
+@property (nonatomic) NSObject<OS_dispatch_queue> dispatchQueue;
+@property (nonatomic) double metricSeconds;
+@property (nonatomic) @ presentingViewController;
+@property (nonatomic) SFSession sfSession;
+@property (nonatomic) BOOL skipSetupRequest;
+@property (nonatomic) BOOL skipEscrowFetches;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)presentingViewController;
+- (id)init;
+- (void)_run;
+- (void)setPresentingViewController:;
+- (id)dispatchQueue;
+- (void)setCompletionHandler:;
+- (void)setDispatchQueue:;
+- (void)_complete:;
+- (void)_activate;
+- (void).cxx_destruct;
+- (void)invalidate;
+- (void)activate;
+- (id)completionHandler;
+- (void)uiController:didPresentRootViewController:;
+- (int)_runCDPApprovalServerStart;
+- (int)_runCDPSetupRequest;
+- (double)metricSeconds;
+- (id)sfSession;
+- (void)setSfSession:;
+- (BOOL)skipSetupRequest;
+- (void)setSkipSetupRequest:;
+- (BOOL)skipEscrowFetches;
+- (void)setSkipEscrowFetches:;
+@end

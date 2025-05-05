@@ -1,0 +1,35 @@
+@interface SISchemaABSeverEventMetadata : SISchemaInstrumentationMessage
+@property (nonatomic) SISchemaUUID siriDeviceId;
+@property (nonatomic) BOOL hasSiriDeviceId;
+@property (nonatomic) SISchemaUUID speechId;
+@property (nonatomic) BOOL hasSpeechId;
+@property (nonatomic) q timestampNs;
+@property (nonatomic) BOOL hasTimestampNs;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (void)setSpeechId:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (id)speechId;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (BOOL)hasSpeechId;
+- (void)deleteSpeechId;
+- (BOOL)hasSiriDeviceId;
+- (void)deleteSiriDeviceId;
+- (id)siriDeviceId;
+- (void)setSiriDeviceId:;
+- (void)setHasSpeechId:;
+- (void)setHasSiriDeviceId:;
+- (void)setTimestampNs:;
+- (BOOL)hasTimestampNs;
+- (void)setHasTimestampNs:;
+- (void)deleteTimestampNs;
+- (long long)timestampNs;
+@end

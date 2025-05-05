@@ -1,0 +1,2 @@
+@interface IESLiveInnerPbRoomFinishAbnormalApiRoot : GPBRootObject
+@end

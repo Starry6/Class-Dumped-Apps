@@ -1,0 +1,30 @@
+@interface DouyinOpenSDKServiceCenter : NSObject
+@property (nonatomic) NSDictionary name2Service;
+@property (nonatomic) NSDictionary reqCls2Service;
+@property (nonatomic) NSMutableDictionary reqID2CallBack;
+- (id)name2Service;
+- (void)p_registerServiceClass:;
+- (id)removeFirstObject:;
+- (id)removeFirstObject:;
+- (id)reqCls2Service;
+- (id)reqID2CallBack;
+- (BOOL)sendAuthRequest:webFirst:viewController:completeBlock:;
+- (BOOL)sendRequest:completeBlock:;
+- (void)sendWebAuthRequest:viewController:completed:;
+- (void)setName2Service:;
+- (void)setReqCls2Service:;
+- (void)setReqID2CallBack:;
+- (void)setupAuthService;
+- (void)trackCallHostWithAuthReq:urlStr:;
+- (void)trackCallHostWithShareReq:urlStr:;
+- (void)tryOpenURLWithList:AuthRequest:viewController:completeBlock:;
+- (void)tryOpenURLWithList:ShareRequest:completeBlock:;
+- (id)init;
+- (void).cxx_destruct;
+- (BOOL)handleOpenURL:;
++ (id)hostStringFromAppType:schemaUrl:;
++ (BOOL)isUniversalLinkWithOpenUrl:;
++ (BOOL)p_checkOpenUrls:;
++ (void)trackAuthInfoWithHostTypeStr:authReq:urlStr:;
++ (id)sharedInstance;
+@end

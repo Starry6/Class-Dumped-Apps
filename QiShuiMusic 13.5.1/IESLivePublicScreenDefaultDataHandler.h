@@ -1,0 +1,31 @@
+@interface IESLivePublicScreenDefaultDataHandler : NSObject
+@property (nonatomic) q bufferMaxCount;
+@property (nonatomic) NSMutableArray refreshMessagesBuffer;
+@property (nonatomic) NSMutableArray refreshNodesBuffer;
+@property (nonatomic) <IESLivePublicScreenMonitorProtocol> monitor;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)nodeHandlerType;
+- (BOOL)addMessageToBuffer:;
+- (BOOL)addNodeToBuffer:;
+- (id)allBufferMessages;
+- (id)allBufferNodes;
+- (long long)bufferMaxCount;
+- (id)consumeMessagesWithLimitCount:;
+- (id)consumeRefreshNodesWithLimitCount:;
+- (BOOL)enableConsumeMessages;
+- (id)initWithRefreshBufferMaxCount:;
+- (long long)messageHandlerType;
+- (id)refreshMessagesBuffer;
+- (id)refreshNodesBuffer;
+- (void)removeAllMessageBuffer;
+- (void)removeAllNodeBuffer;
+- (void)setBufferMaxCount:;
+- (void)setRefreshMessagesBuffer:;
+- (void)setRefreshNodesBuffer:;
+- (void)setMonitor:;
+- (void).cxx_destruct;
+- (id)monitor;
+@end

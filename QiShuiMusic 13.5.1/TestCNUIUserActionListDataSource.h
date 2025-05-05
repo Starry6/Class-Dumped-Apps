@@ -1,0 +1,32 @@
+@interface TestCNUIUserActionListDataSource : NSObject
+@property (nonatomic) CNContact contact;
+@property (nonatomic) NSDictionary userActionListModelResultBlocksByActionTypeAskedFor;
+@property (nonatomic) NSDictionary actionsByActionTypeByContact;
+@property (nonatomic) BOOL tracksChanges;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)contact;
+- (void)setContact:;
+- (void).cxx_destruct;
+- (id)actionTypesForConsumer:;
+- (id)consumer:localizedDisplayNameForActionType:;
+- (id)consumer:localizedButtonDisplayNameForActionType:;
+- (id)consumer:localizedDisplayNameForButtonWithDefaultAction:actionType:;
+- (id)consumer:imageForActionType:;
+- (id)thirdPartyTargetsForActionTypes:;
+- (id)thirdPartyActionsForContactProperty:;
+- (BOOL)tracksChanges;
+- (void)setTracksChanges:;
+- (id)initWithActionsByActionTypeByContact:;
+- (id)consumer:actionModelsForActionType:handler:;
+- (id)consumer:actionModelsForActionType:;
+- (id)thirdPartyActionsForCurrentContactAndPropertyKey:identifier:;
+- (id)userActionListModelResultBlocksByActionTypeAskedFor;
+- (void)setUserActionListModelResultBlocksByActionTypeAskedFor:;
+- (id)actionsByActionTypeByContact;
++ (id)allActionTypes;
++ (id)allSupportedActionTypes;
++ (id)allSupportedActionTypesWithCapabilities:;
+@end

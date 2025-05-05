@@ -1,0 +1,32 @@
+@interface ASCAuthorizationPresenter : NSObject
+@property (nonatomic) <ASCAuthorizationPresenterDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)remoteAlertHandle:didInvalidateWithError:;
+- (void)remoteAlertHandleDidDeactivate:;
+- (void)dismiss;
+- (id)init;
+- (void)setDelegate:;
+- (id)delegate;
+- (BOOL)listener:shouldAcceptNewConnection:;
+- (void).cxx_destruct;
+- (void)_invalidateWithError:;
+- (void)initializeClientToViewServiceConnection;
+- (void)updateInterfaceForUserVisibleError:;
+- (void)updateInterfaceWithLoginChoices:;
+- (void)dismissWithError:;
+- (void)presentAuthorizationWithContext:completionHandler:;
+- (void)presentError:forService:completionHandler:;
+- (void)presentPINEntryInterface;
+- (void)cableClientWillConnect;
+- (void)cableClientWillAuthenticate;
+- (void)authorizationRequestInitiatedWithLoginChoice:authenticatedContext:completionHandler:;
+- (void)authorizationRequestFinishedWithCredential:error:completionHandler:;
+- (void)validateUserEnteredPIN:completionHandler:;
+- (void)startCABLEAuthenticationWithCompletionHandler:;
+- (BOOL)_isPresentationContextValid:error:;
+- (void)_performQueuedUpdatesIfNecessary;
+- (BOOL)_isErrorDueToNewAlertHandleRequest:;
+@end

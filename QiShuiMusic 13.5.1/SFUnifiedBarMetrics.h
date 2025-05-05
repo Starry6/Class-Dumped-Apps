@@ -1,0 +1,35 @@
+@interface SFUnifiedBarMetrics : NSObject
+@property (nonatomic) q metricsCategory;
+@property (nonatomic) double cutoutBorderWidth;
+@property (nonatomic) double defaultItemHeight;
+@property (nonatomic) double itemCornerRadius;
+@property (nonatomic) double itemHeight;
+@property (nonatomic) double leadingTabIconInset;
+@property (nonatomic) double maximumItemSpacing;
+@property (nonatomic) double minimumItemSpacing;
+@property (nonatomic) double squishedBarHeight;
+@property (nonatomic) double tabCloseButtonWidth;
+- (double)_scaledValueForValue:;
+- (double)itemCornerRadius;
+- (void).cxx_destruct;
+- (id)initWithTraitCollection:;
+- (double)defaultItemHeight;
+- (void)setMetricsCategory:;
+- (BOOL)updateWithTraitCollection:;
+- (BOOL)_updateWithContentSizeCategory:legibilityWeight:;
+- (void)_updateMetrics;
+- (double)cutoutBorderWidth;
+- (double)leadingTabIconInset;
+- (double)maximumItemSpacing;
+- (double)minimumItemSpacing;
+- (double)tabCloseButtonWidth;
+- (long long)metricsCategory;
+- (double)itemHeight;
+- (double)squishedBarHeight;
++ (double)separatorWidth;
++ (double)defaultItemHeight;
++ (double)minimumSquishScale;
++ (double)squishedInlineBarHeight;
++ (double)transitioningItemScale;
++ (double)defaultSquishedContentSpacing;
+@end

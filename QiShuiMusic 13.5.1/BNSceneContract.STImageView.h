@@ -1,0 +1,7 @@
+@interface BNSceneContract.STImageView : UIImageView
+- (id)initWithImage:;
+- (id)initWithCoder:;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (id)initWithImage:highlightedImage:;
+@end

@@ -1,0 +1,33 @@
+@interface IESLiveRelatedLiveBaseBtn : UIView
+@property (nonatomic) IESLiveImageView iconImageView;
+@property (nonatomic) UIImageView<IESLiveWebPPlayer> liveWebp;
+@property (nonatomic) UIImageView avatarView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) q buttonType;
+@property (nonatomic) double titleMaxWidth;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)addTransparencyViewWith:layerSize:;
+- (id)initWithEntryItem:type:;
+- (id)liveWebp;
+- (id)pluginLayoutContentSize;
+- (void)setLiveWebp:;
+- (void)setTitleMaxWidth:;
+- (double)titleMaxWidth;
+- (void)updateWithEntryItem:;
+- (id)viewType;
+- (void)setTitleLabel:;
+- (id)intrinsicContentSize;
+- (void)setButtonType:;
+- (id)avatarView;
+- (void)setAvatarView:;
+- (void).cxx_destruct;
+- (id)iconImageView;
+- (id)titleLabel;
+- (long long)buttonType;
+- (void)setIconImageView:;
+- (void)setupSubviews;
+- (void)updateTitle:;
+@end

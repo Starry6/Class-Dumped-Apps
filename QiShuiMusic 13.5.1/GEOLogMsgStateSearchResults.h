@@ -1,0 +1,38 @@
+@interface GEOLogMsgStateSearchResults : PBCodable
+@property (nonatomic) NSMutableArray searchResults;
+@property (nonatomic) BOOL hasIncludesEnrichedResult;
+@property (nonatomic) BOOL includesEnrichedResult;
+@property (nonatomic) BOOL hasSearchQuery;
+@property (nonatomic) NSString searchQuery;
+- (void)readAll:;
+- (id)init;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)searchResults;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)setSearchResults:;
+- (void)mergeFrom:;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)searchQuery;
+- (id)description;
+- (void)setSearchQuery:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)clearSearchResults;
+- (void)addSearchResults:;
+- (unsigned long long)searchResultsCount;
+- (id)searchResultsAtIndex:;
+- (BOOL)includesEnrichedResult;
+- (void)setIncludesEnrichedResult:;
+- (void)setHasIncludesEnrichedResult:;
+- (BOOL)hasIncludesEnrichedResult;
+- (BOOL)hasSearchQuery;
++ (BOOL)isValid:;
++ (Class)searchResultsType;
+@end

@@ -1,0 +1,2 @@
+@interface EKDirectoryLocation : EKDirectoryRecord
+@end

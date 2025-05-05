@@ -1,0 +1,2 @@
+@interface RoomRoomBgAddApiRoot : GPBRootObject
+@end

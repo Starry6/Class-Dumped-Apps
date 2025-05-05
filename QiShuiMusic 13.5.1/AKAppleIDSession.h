@@ -1,0 +1,31 @@
+@interface AKAppleIDSession : NSObject
+@property (nonatomic) AKDevice pairedDevice;
+@property (nonatomic) <AKAnisetteServiceProtocol> anisetteDataProvider;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setPairedDevice:;
+- (id)pairedDevice;
+- (id)init;
+- (void)handleResponse:forRequest:shouldRetry:;
+- (void)setAnisetteDataProvider:;
+- (void)URLSession:task:getAppleIDHeadersForResponse:completionHandler:;
+- (id)_generateAppleIDHeadersForRequest:error:;
+- (void)_generateAppleIDHeadersForSessionTask:withCompletion:;
+- (id)initWithCoder:;
+- (void)_handleURLSwitchingResponse:forRequest:withCompletion:;
+- (id)appleIDHeadersForRequest:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)anisetteDataProvider;
+- (id)relevantHTTPStatusCodes;
+- (void)URLSession:task:getAppleIDRequestOrHeadersForResponse:completionHandler:;
+- (id)initWithIdentifier:;
+- (id)_pairedDeviceAnisetteController;
+- (id)_genericAppleIDHeadersDictionaryForRequest:;
+- (id)_nativeAnisetteController;
+- (void)_handleAnissetteURLResponse:forRequest:withCompletion:;
+- (id)copyWithZone:;
++ (BOOL)supportsSecureCoding;
+@end

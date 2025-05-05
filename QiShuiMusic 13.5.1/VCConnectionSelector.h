@@ -1,0 +1,35 @@
+@interface VCConnectionSelector : NSObject
+@property (nonatomic) <VCConnectionProtocol> primaryConnection;
+@property (nonatomic) <VCConnectionProtocol> secondaryConnection;
+@property (nonatomic) <VCConnectionProtocol> lastPrimaryConnectionInUse;
+@property (nonatomic) <VCConnectionProtocol> connectionForDuplication;
+@property (nonatomic) <VCConnectionProtocol> connectionForDuplicationNonProbingVersion;
+@property (nonatomic) NSArray linkPreferenceOrder;
+@property (nonatomic) {?=@@} serverLinks;
+- (void)dealloc;
+- (id)secondaryConnection;
+- (id)initWithMultiwayEnabled:;
+- (void)updatePrimaryWithConnection:;
+- (void)updateSecondaryWithConnection:;
+- (void)updateConnectionForDuplicationForDuplicationReason:duplicationEnhancementEnabled:preferredLocalInterfaceForDuplication:preferredRemoteInterfaceForDuplication:connectionArray:;
+- (BOOL)selectPrimaryAndSecondaryWithConnection:isEndToEnd:;
+- (void)useConnectionAsPrimary:;
+- (id)getConnectionSelectionPolicy;
+- (void)updateConnectionSelectionPolicyWithPreferRelayOverP2P:preferNonVPN:preferE2E:;
+- (void)updateSelectedConnectionsForGroupType:connectionAdded:;
+- (void)updateSelectedConnectionsForGroupType:connectionRemoved:connectionArray:;
+- (void)selectConnectionForGroupType:fromConnectionArray:asPrimary:;
+- (BOOL)isPrimaryConnectionSameAsConnection:;
+- (id)primaryConnection;
+- (void)setPrimaryConnection:;
+- (void)setSecondaryConnection:;
+- (id)connectionForDuplication;
+- (void)setConnectionForDuplication:;
+- (id)connectionForDuplicationNonProbingVersion;
+- (void)setConnectionForDuplicationNonProbingVersion:;
+- (id)lastPrimaryConnectionInUse;
+- (void)setLastPrimaryConnectionInUse:;
+- (id)linkPreferenceOrder;
+- (void)setLinkPreferenceOrder:;
+- (id)serverLinks;
+@end

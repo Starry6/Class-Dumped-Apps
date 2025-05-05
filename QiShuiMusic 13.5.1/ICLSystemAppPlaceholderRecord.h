@@ -1,0 +1,2 @@
+@interface ICLSystemAppPlaceholderRecord : ICLPlaceholderRecord
+@end

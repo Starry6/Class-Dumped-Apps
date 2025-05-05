@@ -1,0 +1,5 @@
+@interface BWNodeStillImageReferenceFrameBracketedCaptureSequenceNumberMessage : BWNodeMessage
+@property (nonatomic) NSInteger referenceFrameBracketedCaptureSequenceNumber;
+- (int)referenceFrameBracketedCaptureSequenceNumber;
++ (id)newMessageWithStillImageReferenceFrameBracketedCaptureSequenceNumber:;
+@end

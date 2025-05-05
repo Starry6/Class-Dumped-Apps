@@ -1,0 +1,30 @@
+@interface WFGradient : NSObject
+@property (nonatomic) WFColor baseColor;
+@property (nonatomic) WFColor darkBaseColor;
+@property (nonatomic) WFColor accessibilityBaseColor;
+@property (nonatomic) WFColor darkAccessibilityBaseColor;
+@property (nonatomic) WFColor startColor;
+@property (nonatomic) WFColor endColor;
+@property (nonatomic) q blendMode;
+@property (nonatomic) ^{CGGradient=} CGGradient;
+- (id)initWithColor:;
+- (void)dealloc;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (long long)blendMode;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)CGGradient;
+- (id)initWithStartColor:endColor:;
+- (id)startColor;
+- (id)endColor;
+- (id)baseColor;
+- (id)initWithBaseColor:startColor:endColor:blendMode:;
+- (id)initWithBaseColor:darkBaseColor:accessibilityBaseColor:darkAccessibilityBaseColor:startColor:endColor:blendMode:;
+- (id)baseColorForDarkMode:highContrast:;
+- (id)darkBaseColor;
+- (id)accessibilityBaseColor;
+- (id)darkAccessibilityBaseColor;
++ (BOOL)supportsSecureCoding;
+@end

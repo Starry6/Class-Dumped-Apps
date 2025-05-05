@@ -1,0 +1,32 @@
+@interface BU_AFAutoPurgingImageCache : NSObject
+@property (nonatomic) NSMutableDictionary cachedImages;
+@property (nonatomic) Q currentMemoryUsage;
+@property (nonatomic) NSObject<OS_dispatch_queue> synchronizationQueue;
+@property (nonatomic) Q memoryCapacity;
+@property (nonatomic) Q preferredMemoryUsageAfterPurge;
+@property (nonatomic) Q memoryUsage;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)addImage:withIdentifier:;
+- (id)imageCacheKeyFromURLRequest:withAdditionalIdentifier:;
+- (id)imageWithIdentifier:;
+- (id)initWithMemoryCapacity:preferredMemoryCapacity:;
+- (unsigned long long)preferredMemoryUsageAfterPurge;
+- (BOOL)removeImageWithIdentifier:;
+- (void)setCachedImages:;
+- (void)setCurrentMemoryUsage:;
+- (void)setPreferredMemoryUsageAfterPurge:;
+- (id)init;
+- (void)setSynchronizationQueue:;
+- (void)dealloc;
+- (unsigned long long)currentMemoryUsage;
+- (void)setMemoryCapacity:;
+- (id)synchronizationQueue;
+- (void).cxx_destruct;
+- (unsigned long long)memoryUsage;
+- (unsigned long long)memoryCapacity;
+- (BOOL)removeAllImages;
+- (id)cachedImages;
+@end

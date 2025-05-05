@@ -1,0 +1,31 @@
+@interface AWDSafariViewControllerTappedOnToolbarButtonEvent : PBCodable
+@property (nonatomic) BOOL hasTimestamp;
+@property (nonatomic) Q timestamp;
+@property (nonatomic) BOOL hasButton;
+@property (nonatomic) NSInteger button;
+@property (nonatomic) BOOL hasUsedLongTap;
+@property (nonatomic) BOOL usedLongTap;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)setHasTimestamp:;
+- (void)mergeFrom:;
+- (BOOL)hasTimestamp;
+- (void)setTimestamp:;
+- (int)button;
+- (BOOL)readFrom:;
+- (unsigned long long)timestamp;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (void)setButton:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasButton;
+- (void)setUsedLongTap:;
+- (void)setHasButton:;
+- (id)buttonAsString:;
+- (int)StringAsButton:;
+- (void)setHasUsedLongTap:;
+- (BOOL)hasUsedLongTap;
+- (BOOL)usedLongTap;
+@end

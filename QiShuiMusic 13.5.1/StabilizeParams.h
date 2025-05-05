@@ -1,0 +1,34 @@
+@interface StabilizeParams : NSObject
+@property (nonatomic) I numFrames;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} cropRect;
+@property (nonatomic) {?=qiIq} roiStart;
+@property (nonatomic) {?=qiIq} roiLength;
+@property (nonatomic) BOOL passThrough;
+@property (nonatomic) BOOL sparseFrames;
+@property (nonatomic) I version;
+- (BOOL)writeToURL:;
+- (id)init;
+- (unsigned int)version;
+- (id)cropRect;
+- (void)setCropRect:;
+- (void).cxx_destruct;
+- (id).cxx_construct;
+- (unsigned int)numFrames;
+- (void)append:;
+- (id)frameTimes;
+- (void)getFrameInfo:frameInfo:;
+- (id)timeForFrame:;
+- (id)infoAsDict;
+- (id)initFromDict:;
+- (id)roiStart;
+- (void)setRoiStart:;
+- (id)roiLength;
+- (void)setRoiLength:;
+- (BOOL)passThrough;
+- (void)setPassThrough:;
+- (BOOL)sparseFrames;
+- (void)setSparseFrames:;
++ (id)stabilizeParams;
++ (id)stabilizeParamsFromURL:;
++ (id)stabilizeParamsFromNSDictionary:;
+@end

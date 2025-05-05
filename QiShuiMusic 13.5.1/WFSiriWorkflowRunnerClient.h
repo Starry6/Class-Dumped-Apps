@@ -1,0 +1,34 @@
+@interface WFSiriWorkflowRunnerClient : WFWorkflowRunnerClient
+@property (nonatomic) NSXPCListener dialogRequestListener;
+@property (nonatomic) <WFSiriWorkflowRunnerClientDelegate> delegate;
+@property (nonatomic) WFSiriExecutionMetrics siriExecutionMetrics;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)start;
+- (void)stop;
+- (BOOL)listener:shouldAcceptNewConnection:;
+- (void).cxx_destruct;
+- (void)handleWorkflowRunResult:completion:;
+- (void)willBeginExecutingShortcutWithActionCount:;
+- (void)willBeginExecutingShortcutStep:;
+- (void)speakTextWithUtterance:completionHandler:;
+- (void)openUrl:withBundleIdentifier:completionHandler:;
+- (void)handleUserActivityData:withBundleIdentifier:completionHandler:;
+- (void)executeIntent:completionHandler:;
+- (void)showDialogRequest:completionHandler:;
+- (void)openInteractionInApp:completionHandler:;
+- (void)openApp:completionHandler:;
+- (void)executeLinkAction:inApplication:completionHandler:;
+- (void)executeLinkAction:inApplication:withNameOverride:completionHandler:;
+- (void)punchOutRequestedWithCompletionHandler:;
+- (id)initWithWorkflowName:executionContext:airPlayRouteIDs:;
+- (id)initWithAutoShortcutIdentifier:action:metadata:;
+- (id)initWithWorkflowName:runSource:executionContext:airPlayRouteIDs:;
+- (id)initWithAutoShortcutIdentifier:runSource:action:metadata:;
+- (id)workflowRunSourceForSiriRunSource:;
+- (id)siriExecutionMetrics;
+- (void)setSiriExecutionMetrics:;
+- (id)dialogRequestListener;
+@end

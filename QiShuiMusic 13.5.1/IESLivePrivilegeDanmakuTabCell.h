@@ -1,0 +1,31 @@
+@interface IESLivePrivilegeDanmakuTabCell : UICollectionViewCell
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UIImageView tabImageView;
+@property (nonatomic) UIImageView lockIconView;
+@property (nonatomic) UIView divider;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) IESLivePrivilegeDanmakuTabViewModel viewModel;
+@property (nonatomic) BOOL isLandscapeMode;
+- (BOOL)isLandscapeMode;
+- (void)bindSelecteAction;
+- (void)bindViewModel:;
+- (id)lockIconView;
+- (void)setIsLandscapeMode:;
+- (void)setLockIconView:;
+- (void)active;
+- (id)viewModel;
+- (void)setTitleLabel:;
+- (id)containerView;
+- (void)setContainerView:;
+- (void)prepareForReuse;
+- (id)initWithFrame:;
+- (void)inactive;
+- (void).cxx_destruct;
+- (void)setViewModel:;
+- (id)titleLabel;
+- (void)setupUI;
+- (id)divider;
+- (void)setDivider:;
+- (id)tabImageView;
+- (void)setTabImageView:;
+@end

@@ -1,0 +1,33 @@
+@interface VKCMockImageAnalysisResult : VKCImageAnalysisResult
+@property (nonatomic) NSDictionary sourceDict;
+@property (nonatomic) NSString text;
+@property (nonatomic) VKCMockTextProvider textProvider;
+@property (nonatomic) BOOL isRunningTest;
+@property (nonatomic) {CGSize=dd} imageSize;
+- (id)characterRangeAtPoint:;
+- (id)closestPositionToPoint:withinRange:;
+- (id)caretRectForPosition:;
+- (void)setText:;
+- (id)imageSize;
+- (void).cxx_destruct;
+- (id)text;
+- (void)setImageSize:;
+- (BOOL)isRunningTest;
+- (void)setTextProvider:;
+- (id)textProvider;
+- (id)allLineQuads;
+- (id)adjustTextRangeToSelectableRange:;
+- (id)smallestSelectableRangeForPosition:;
+- (id)rangeOfWordForPosition:;
+- (id)rangeOfLineForPosition:;
+- (id)firstRectForRange:documentView:contentRect:;
+- (id)selectionRectsForRange:documentView:contentRect:;
+- (id)dataDetectors;
+- (void)setIsRunningTest:;
+- (void)addMockDataDetectorElementsFromArray:;
+- (void)generateText;
+- (id)stringForLine:;
+- (id)sourceDict;
+- (void)setSourceDict:;
++ (id)mockImageAnalysisResultFromDictionary:;
+@end

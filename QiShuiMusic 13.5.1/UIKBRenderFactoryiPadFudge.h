@@ -1,0 +1,33 @@
+@interface UIKBRenderFactoryiPadFudge : UIKBRenderFactoryiPad
+- (id)internationalKeyOffset;
+- (id)lightKeycapsFontName;
+- (id)dictationKeyOffset;
+- (double)symbolImageControlKeyFontSize;
+- (id)dualStringKeyTopTextOffset:keyplane:;
+- (id)dualStringKeyBottomTextOffset:keyplane:;
+- (BOOL)supportsInputTraits:forKeyplane:;
+- (id)_traitsForKey:onKeyplane:;
+- (id)messagesWriteboardKeyImageName;
+- (id)displayContentsForKey:;
+- (double)deleteKeyFontSize;
+- (double)moreKeyFontSize;
+- (id)dismissKeyOffset;
+- (id)symbolImageControlKeyOffset;
+- (BOOL)iPadFudgeLayout;
+- (void)_customizeGeometry:forKey:contents:;
+- (double)_row4ControlSegmentWidthLeft;
+- (double)_row4ControlSegmentWidthRight;
+- (double)spaceKeyFontSize;
+- (id)defaultVariantGeometrySize;
+- (double)stringKeyFontSize:;
+- (id)stringKeyOffset:;
+- (double)controlKeyFontSize;
+- (id)iPadFudgeControlKeyOffset;
+- (id)deleteKeyOffset:;
+- (id)moreKeyOffset;
+- (double)dualStringKeyBottomFontSize:;
+- (id)dualStringKeyBottomTextOffset:;
+- (double)dualStringKeyTopFontSize:;
+- (id)dualStringKeyTopTextOffset:;
+- (unsigned long long)_isFullHeightKeyFor:onKeyplane:;
+@end

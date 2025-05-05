@@ -1,0 +1,30 @@
+@interface ARRemoteGeoTrackingTechnique : ARRemoteTechnique
+@property (nonatomic) double visualLocalizationCallInterval;
+@property (nonatomic) double posteriorVisualLocalizationCallInterval;
+@property (nonatomic) double visualLocalizationCallIntervalTimeThreshold;
+@property (nonatomic) BOOL visualLocalizationUpdatesRequested;
+@property (nonatomic) Q supportEnablementOptions;
+@property (nonatomic) <ARTechniqueDelegate> delegate;
+@property (nonatomic) Q powerUsage;
+@property (nonatomic) double bonusLatency;
+@property (nonatomic) NSNumber traceKey;
+@property (nonatomic) NSArray splitTechniques;
+@property (nonatomic) <ARTechniqueForwardingStrategy> splitTechniqueFowardingStrategy;
+- (id)init;
+- (void)setSupportEnablementOptions:;
+- (void)setVisualLocalizationCallInterval:;
+- (unsigned long long)requiredSensorDataTypes;
+- (BOOL)reconfigurableFrom:;
+- (void)reconfigureFrom:;
+- (double)visualLocalizationCallInterval;
+- (BOOL)visualLocalizationUpdatesRequested;
+- (void)setVisualLocalizationUpdatesRequested:;
+- (unsigned long long)supportEnablementOptions;
+- (id)initWithServerConnection:;
+- (id)getLocationFromWorldPosition:error:;
+- (double)posteriorVisualLocalizationCallInterval;
+- (void)setPosteriorVisualLocalizationCallInterval:;
+- (double)visualLocalizationCallIntervalTimeThreshold;
+- (void)setVisualLocalizationCallIntervalTimeThreshold:;
++ (id)new;
+@end

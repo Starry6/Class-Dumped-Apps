@@ -1,0 +1,2 @@
+@interface IESLiveSaaSPBIESLiveSaaSPBMediaRoomNoticeRoot : GPBRootObject
+@end

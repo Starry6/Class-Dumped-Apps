@@ -1,0 +1,31 @@
+@interface VCRemoteVideoState : NSObject
+@property (nonatomic) BOOL hasReceivedFirstFrame;
+@property (nonatomic) BOOL isVideoPaused;
+@property (nonatomic) BOOL isMediaStalled;
+@property (nonatomic) BOOL isVideoDegraded;
+@property (nonatomic) BOOL isVideoSuspended;
+@property (nonatomic) VideoAttributes remoteScreenAttributes;
+@property (nonatomic) VideoAttributes remoteVideoAttributes;
+@property (nonatomic) NSString localInterfaceType;
+@property (nonatomic) NSString remoteInterfaceType;
+- (void)dealloc;
+- (id)description;
+- (id)remoteInterfaceType;
+- (void)setRemoteInterfaceType:;
+- (BOOL)isVideoPaused;
+- (BOOL)isMediaStalled;
+- (BOOL)isVideoDegraded;
+- (BOOL)hasReceivedFirstFrame;
+- (id)remoteVideoAttributes;
+- (id)remoteScreenAttributes;
+- (void)setHasReceivedFirstFrame:;
+- (void)setIsVideoPaused:;
+- (void)setRemoteScreenAttributes:;
+- (void)setRemoteVideoAttributes:;
+- (void)setIsVideoDegraded:;
+- (void)setIsMediaStalled:;
+- (id)localInterfaceType;
+- (void)setLocalInterfaceType:;
+- (BOOL)isVideoSuspended;
+- (void)setIsVideoSuspended:;
+@end

@@ -1,0 +1,33 @@
+@interface NLPOIEntryImpl : PBCodable
+@property (nonatomic) BOOL hasName;
+@property (nonatomic) NSString name;
+@property (nonatomic) BOOL hasDomain;
+@property (nonatomic) NSString domain;
+@property (nonatomic) BOOL hasCategory;
+@property (nonatomic) NSString category;
+@property (nonatomic) BOOL hasScore;
+@property (nonatomic) float score;
+- (void)dealloc;
+- (void)setName:;
+- (float)score;
+- (BOOL)hasName;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void)setCategory:;
+- (void)setScore:;
+- (BOOL)hasDomain;
+- (BOOL)readFrom:;
+- (BOOL)hasScore;
+- (id)description;
+- (id)name;
+- (id)dictionaryRepresentation;
+- (id)domain;
+- (void)setDomain:;
+- (BOOL)isEqual:;
+- (BOOL)hasCategory;
+- (void)setHasScore:;
+- (id)category;
+- (id)copyWithZone:;
+@end

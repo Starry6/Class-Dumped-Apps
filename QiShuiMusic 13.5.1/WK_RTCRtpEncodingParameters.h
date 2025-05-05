@@ -1,0 +1,35 @@
+@interface WK_RTCRtpEncodingParameters : NSObject
+@property (nonatomic) {RtpEncodingParameters={optional<unsigned int>=(?=cI)B}di{optional<int>=(?=ci)B}{optional<int>=(?=ci)B}{optional<double>=(?=cd)B}{optional<int>=(?=ci)B}{optional<double>=(?=cd)B}{optional<std::string>=(?=c{basic_string<char nativeParameters;
+@property (nonatomic) NSString rid;
+@property (nonatomic) BOOL isActive;
+@property (nonatomic) NSNumber maxBitrateBps;
+@property (nonatomic) NSNumber minBitrateBps;
+@property (nonatomic) NSNumber maxFramerate;
+@property (nonatomic) NSNumber numTemporalLayers;
+@property (nonatomic) NSNumber scaleResolutionDownBy;
+@property (nonatomic) NSNumber ssrc;
+@property (nonatomic) q networkPriority;
+- (id)init;
+- (void)setIsActive:;
+- (void).cxx_destruct;
+- (BOOL)isActive;
+- (id)rid;
+- (void)setRid:;
+- (id)ssrc;
+- (id)maxFramerate;
+- (void)setMaxFramerate:;
+- (id)initWithNativeParameters:;
+- (id)nativeParameters;
+- (id)maxBitrateBps;
+- (void)setMaxBitrateBps:;
+- (id)minBitrateBps;
+- (void)setMinBitrateBps:;
+- (id)numTemporalLayers;
+- (void)setNumTemporalLayers:;
+- (id)scaleResolutionDownBy;
+- (void)setScaleResolutionDownBy:;
+- (long long)networkPriority;
+- (void)setNetworkPriority:;
++ (int)nativePriorityFromPriority:;
++ (long long)priorityFromNativePriority:;
+@end

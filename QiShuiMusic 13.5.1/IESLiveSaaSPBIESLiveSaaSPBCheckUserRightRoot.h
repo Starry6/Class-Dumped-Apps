@@ -1,0 +1,2 @@
+@interface IESLiveSaaSPBIESLiveSaaSPBCheckUserRightRoot : GPBRootObject
+@end

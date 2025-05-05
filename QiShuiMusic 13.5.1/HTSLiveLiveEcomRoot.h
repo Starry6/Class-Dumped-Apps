@@ -1,0 +1,2 @@
+@interface HTSLiveLiveEcomRoot : GPBRootObject
+@end

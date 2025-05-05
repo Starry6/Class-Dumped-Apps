@@ -1,0 +1,30 @@
+@interface SAUITemplateTabularData : SAUITemplateBaseItem
+@property (nonatomic) BOOL allowContentScrolling;
+@property (nonatomic) NSArray columns;
+@property (nonatomic) <SAUITemplateItem> footerItem;
+@property (nonatomic) <SAUITemplateItem> headerItem;
+@property (nonatomic) NSString layoutStyle;
+@property (nonatomic) NSNumber minimumRowHeight;
+@property (nonatomic) NSArray rowStyleRules;
+@property (nonatomic) BOOL showHeaderDivider;
+- (id)columns;
+- (id)groupIdentifier;
+- (id)layoutStyle;
+- (void)setLayoutStyle:;
+- (id)encodedClassName;
+- (void)setColumns:;
+- (BOOL)allowContentScrolling;
+- (void)setAllowContentScrolling:;
+- (id)footerItem;
+- (void)setFooterItem:;
+- (id)headerItem;
+- (void)setHeaderItem:;
+- (id)minimumRowHeight;
+- (void)setMinimumRowHeight:;
+- (id)rowStyleRules;
+- (void)setRowStyleRules:;
+- (BOOL)showHeaderDivider;
+- (void)setShowHeaderDivider:;
++ (id)tabularData;
++ (id)tabularDataWithDictionary:context:;
+@end

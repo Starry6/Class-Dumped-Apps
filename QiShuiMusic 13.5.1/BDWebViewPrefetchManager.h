@@ -1,0 +1,38 @@
+@interface BDWebViewPrefetchManager : TTBridgePlugin
+@property (nonatomic) <IESPrefetchLoaderProtocol> prefetchLoader;
+@property (nonatomic) NSMutableDictionary prefetchDatas;
+@property (nonatomic) IESPrefetchThreadSafeDictionary iesPrefetchCache;
+@property (nonatomic) BOOL iesPrefetchEnable;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)_modelKeyForURL:params:method:needCommonParams:header:requestType:;
+- (id)customCacheStorage;
+- (id)fetchAllKeys;
+- (id)fetchObjectForKey:;
+- (void)fetchWithParam:callback:engine:controller:;
+- (id)iesPrefetchCache;
+- (BOOL)iesPrefetchEnable;
+- (void)loadConfigurationJSON:;
+- (void)networkForRequest:completion:;
+- (void)prefetchDataWithWebUrl:;
+- (id)prefetchDatas;
+- (void)prefetchForJSONWithParam:callback:;
+- (void)prefetchForJSONWithParam:wholeCallback:;
+- (id)prefetchLoader;
+- (void)requestForJSONWithParam:prefetch:useCache:callback:;
+- (void)requestForJSONWithResponse:params:method:needCommonParams:headerField:requestType:prefetch:useCache:responseType:callback:;
+- (void)setIesPrefetchCache:;
+- (void)setIesPrefetchEnable:;
+- (void)setPrefetchDatas:;
+- (void)setPrefetchLoader:;
+- (id)init;
+- (void).cxx_destruct;
+- (void)removeObjectForKey:;
+- (void)saveObject:forKey:;
++ (void)registerJSBridge;
++ (id)sharedPlugin;
++ (id)sharedInstance;
++ (unsigned long long)instanceType;
+@end

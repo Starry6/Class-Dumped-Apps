@@ -1,0 +1,34 @@
+@interface IESAudioVolumConvertConfig : NSObject
+@property (nonatomic) NSURL audioURL;
+@property (nonatomic) q type;
+@property (nonatomic) double waveformduration;
+@property (nonatomic) Q pointsCount;
+@property (nonatomic) BOOL optAlgorithm;
+@property (nonatomic) q volumeDataType;
+@property (nonatomic) double waveformstartTime;
+@property (nonatomic) Q waveSliceCount;
+@property (nonatomic) VEAudioConfig audioConfig;
+@property (nonatomic) NSString cryptorKey;
+- (void)setAudioConfig:;
+- (void)setPointsCount:;
+- (id)audioConfig;
+- (id)cryptorKey;
+- (BOOL)optAlgorithm;
+- (void)setCryptorKey:;
+- (void)setOptAlgorithm:;
+- (void)setVolumeDataType:;
+- (void)setWaveSliceCount:;
+- (void)setWaveformduration:;
+- (void)setWaveformstartTime:;
+- (long long)volumeDataType;
+- (unsigned long long)waveSliceCount;
+- (double)waveformduration;
+- (double)waveformstartTime;
+- (id)init;
+- (void)setType:;
+- (long long)type;
+- (void).cxx_destruct;
+- (unsigned long long)pointsCount;
+- (id)audioURL;
+- (void)setAudioURL:;
+@end

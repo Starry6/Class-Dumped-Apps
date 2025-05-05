@@ -1,0 +1,33 @@
+@interface EMListUnsubscribeCommand : NSObject
+@property (nonatomic) NSString listID;
+@property (nonatomic) NSString sender;
+@property (nonatomic) BOOL isMailtoOperation;
+@property (nonatomic) q headerUnsubscribeTypes;
+@property (nonatomic) EMListUnsubscribeMailtoValues mailtoValues;
+@property (nonatomic) EMListUnsubscribePostValues postValues;
+@property (nonatomic) NSString ef_publicDescription;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)ef_publicDescription;
+- (id)init;
+- (id)sender;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (BOOL)isEqual:;
+- (id)listID;
+- (id)mailtoValues;
+- (id)initWithListID:sender:mailtoValues:postValues:headerUnsubscribeTypes:;
+- (BOOL)isMailtoOperation;
+- (long long)headerUnsubscribeTypes;
+- (id)postValues;
++ (BOOL)supportsSecureCoding;
++ (id)_accountWithIdentifier:;
++ (id)mailtoUnsubscribeCommandWithListID:address:sender:subject:body:account:headerUnsubscribeTypes:;
++ (id)oneClickUnsubscribeCommandWithListID:sender:URL:postContent:headerUnsubscribeTypes:;
++ (id)accountFinderBlock;
++ (void)setAccountFinderBlock:;
+@end

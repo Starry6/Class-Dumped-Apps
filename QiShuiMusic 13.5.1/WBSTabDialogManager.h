@@ -1,0 +1,22 @@
+@interface WBSTabDialogManager : NSObject
+- (id)init;
+- (void)cancelAllDialogsForTabID:;
+- (void)cancelAllDialogsBlockingSlot:;
+- (id)_queueForTabID:createIfNeeded:;
+- (void)cancelAllDialogsBlockingWebProcessID:;
+- (void)dismissCurrentDialogForTabID:withResponse:;
+- (long long)_enqueueDialog:;
+- (void)_cancelDialogsInQueue:tabID:context:;
+- (void).cxx_destruct;
+- (id)_dialogBlockingSlot:;
+- (void)cancelAllDialogsForTabID:context:;
+- (id)description;
+- (id)_setForWebProcessID:createIfNeeded:;
+- (id)_dialogBlockingWebProcessID:;
+- (void)enqueueOrPresentDialog:inSlot:;
+- (void)presentNextDialogForSlot:;
+- (void)cancelAllDialogsForTabID:reason:;
+- (void)_dismissDialog:withResponse:;
+- (void)enqueueOrPresentDialogInSlot:presentationBlock:dismissalBlock:blocksWebProcessUntilDismissed:;
+- (void)cancelAllDialogsWithContext:;
+@end

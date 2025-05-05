@@ -1,0 +1,2 @@
+@interface IESLiveSaaSPBIESLiveSaaSPBUpperRightWidgetMessageRoot : GPBRootObject
+@end

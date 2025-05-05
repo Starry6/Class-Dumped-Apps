@@ -1,0 +1,38 @@
+@interface IESECLiveListExtraModel : MTLModel
+@property (nonatomic) q roomType;
+@property (nonatomic) q hourBuyShopMatchStatus;
+@property (nonatomic) NSString hourBuyShopID;
+@property (nonatomic) NSDictionary eventParams;
+@property (nonatomic) BOOL userChooseStore;
+@property (nonatomic) NSNumber storeID;
+@property (nonatomic) NSNumber virtualRoomID;
+@property (nonatomic) NSString addressID;
+@property (nonatomic) NSNumber addressType;
+@property (nonatomic) NSString addressStrategyType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setEventParams:;
+- (BOOL)userChooseStore;
+- (id)addressStrategyType;
+- (id)hourBuyShopID;
+- (long long)hourBuyShopMatchStatus;
+- (long long)roomType;
+- (void)setAddressStrategyType:;
+- (void)setHourBuyShopID:;
+- (void)setHourBuyShopMatchStatus:;
+- (void)setRoomType:;
+- (void)setUserChooseStore:;
+- (void)setVirtualRoomID:;
+- (id)virtualRoomID;
+- (id)storeID;
+- (void)setStoreID:;
+- (void).cxx_destruct;
+- (id)addressType;
+- (void)setAddressType:;
+- (id)addressID;
+- (void)setAddressID:;
+- (id)eventParams;
++ (id)JSONKeyPathsByPropertyKey;
+@end

@@ -1,0 +1,35 @@
+@interface INTrainTrip : NSObject
+@property (nonatomic) NSString provider;
+@property (nonatomic) NSString trainName;
+@property (nonatomic) NSString trainNumber;
+@property (nonatomic) INDateComponentsRange tripDuration;
+@property (nonatomic) CLPlacemark departureStationLocation;
+@property (nonatomic) NSString departurePlatform;
+@property (nonatomic) CLPlacemark arrivalStationLocation;
+@property (nonatomic) NSString arrivalPlatform;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)_dictionaryRepresentation;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)provider;
+- (void)encodeWithCoder:;
+- (id)descriptionAtIndent:;
+- (void).cxx_destruct;
+- (id)trainName;
+- (id)description;
+- (id)_intents_encodeWithJSONEncoder:codableDescription:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)arrivalPlatform;
+- (id)arrivalStationLocation;
+- (id)departurePlatform;
+- (id)departureStationLocation;
+- (id)trainNumber;
+- (id)tripDuration;
+- (id)initWithProvider:trainName:trainNumber:tripDuration:departureStationLocation:departurePlatform:arrivalStationLocation:arrivalPlatform:;
++ (id)_intents_decodeWithJSONDecoder:codableDescription:from:;
++ (BOOL)supportsSecureCoding;
+@end

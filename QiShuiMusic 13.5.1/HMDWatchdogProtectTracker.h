@@ -1,0 +1,34 @@
+@interface HMDWatchdogProtectTracker : HMDTracker
+@property (nonatomic) NSArray andConditions;
+@property (nonatomic) BOOL finishDetection;
+@property (nonatomic) BOOL detected;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)updateTypeList:;
+- (void)cleanupExceptionDataWithConfig:;
+- (id)andConditions;
+- (void)cleanupWithConfig:;
+- (void)didProtectWatchdogWithCapture:;
+- (BOOL)exceptionDataSource;
+- (void)exceptionReporterDidReceiveResponse:;
+- (BOOL)isDetected;
+- (BOOL)isFinishDetection;
+- (BOOL)needSyncStart;
+- (id)pendingDebugRealExceptionDataWithConfig:;
+- (id)pendingNormalExceptionData;
+- (BOOL)performanceDataSource;
+- (void)setAndConditions:;
+- (void)setFinishDetection:;
+- (void)updateConfig:;
+- (void)start;
+- (id)tableName;
+- (void)stop;
+- (void).cxx_destruct;
+- (Class)storeClass;
+- (void)setDetected:;
++ (id)aggregateDataForRecords:;
++ (id)reportDataForRecords:;
++ (id)sharedTracker;
+@end

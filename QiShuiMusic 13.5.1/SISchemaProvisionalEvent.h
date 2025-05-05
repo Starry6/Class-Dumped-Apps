@@ -1,0 +1,37 @@
+@interface SISchemaProvisionalEvent : SISchemaTopLevelUnionType
+@property (nonatomic) SISchemaAnyEvent anyEvent;
+@property (nonatomic) BOOL hasAnyEvent;
+@property (nonatomic) NSString typeId;
+@property (nonatomic) BOOL hasTypeId;
+@property (nonatomic) q version;
+@property (nonatomic) BOOL hasVersion;
+@property (nonatomic) NSData jsonData;
+- (BOOL)hasTypeId;
+- (id)qualifiedMessageName;
+- (void)setHasVersion:;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (void)setVersion:;
+- (long long)version;
+- (int)getAnyEventType;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (void)deleteAnyEvent;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void)deleteTypeId;
+- (BOOL)hasVersion;
+- (void)setTypeId:;
+- (id)typeId;
+- (void)deleteVersion;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (id)anyEvent;
+- (id)dictionaryRepresentation;
+- (void)setHasTypeId:;
+- (BOOL)isEqual:;
+- (BOOL)hasAnyEvent;
+- (void)setHasAnyEvent:;
+- (void)setAnyEvent:;
+@end

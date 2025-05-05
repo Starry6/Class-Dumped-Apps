@@ -1,0 +1,33 @@
+@interface DMCFeatureOverrides : NSObject
++ (BOOL)allowAnyMAIDToSignIn;
++ (id)activationRecordFlagsWithFlags:;
++ (id)simulatedMDMBYODDefaultUsername;
++ (id)serviceDiscoveryDefaultPortWithValue:;
++ (id)modelNameWithDefaultValue:;
++ (id)objectForDefaultsKey:;
++ (BOOL)allowAnyESSOApplicationEntitlements;
++ (id)dictForDefaultsKey:;
++ (id)numberForDefaultsKey:;
++ (BOOL)sentinelExistsAtPath:;
++ (id)productNameWithDefaultValue:;
++ (double)accountSignInTimeoutThresholdWithDefaultValue:;
++ (id)attestationRateLimitOverrideMinutes;
++ (id)deviceNameWithDefaultValue:;
++ (id)softwareUpdateDeviceIDWithDefaultValue:;
++ (BOOL)boolForDefaultsKey:;
++ (id)enrollmentProfileWithDefaultValue:;
++ (id)serviceDiscoveryFallbackURLWithValue:;
++ (id)serviceDiscoveryDomainWithValue:;
++ (BOOL)shouldSimulateMDMBYODSignIn;
++ (BOOL)_isUnknownProduct;
++ (BOOL)useHTTPLogging;
++ (BOOL)ignoreEnrollmentMode;
++ (BOOL)useNonEphemeralWebAuthSession;
++ (id)gestaltOverrideForKey:withDefaultValue:;
++ (id)simulatedMDMBYODAuthMethod;
++ (id)simulatedMDMBYODProfile;
++ (double)enrollmentStepTimeoutThresholdWithDefaultValue:;
++ (id)stringForDefaultsKey:;
++ (BOOL)shouldSimulateMDMCommunication;
++ (BOOL)bypassMDMTLSClientAuthentication;
+@end

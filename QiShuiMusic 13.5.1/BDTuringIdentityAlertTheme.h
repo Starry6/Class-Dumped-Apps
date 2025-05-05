@@ -1,0 +1,37 @@
+@interface BDTuringIdentityAlertTheme : NSObject
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString content;
+@property (nonatomic) NSString cancelText;
+@property (nonatomic) NSString confirmText;
+@property (nonatomic) UIColor titleTextColor;
+@property (nonatomic) UIColor contentTextColor;
+@property (nonatomic) UIColor cancelTextColor;
+@property (nonatomic) UIColor confirmTextColor;
+@property (nonatomic) UIColor backgroundColor;
+@property (nonatomic) UIFont titleTextFont;
+@property (nonatomic) UIFont contentTextFont;
+- (id)contentTextFont;
+- (id)cancelTextColor;
+- (id)cancelText;
+- (id)confirmTextColor;
+- (id)contentTextColor;
+- (void)setCancelText:;
+- (void)setCancelTextColor:;
+- (void)setConfirmTextColor:;
+- (void)setContentTextColor:;
+- (void)setContentTextFont:;
+- (void)setTitleTextFont:;
+- (id)titleTextFont;
+- (id)content;
+- (void)setContent:;
+- (id)init;
+- (void)setBackgroundColor:;
+- (id)backgroundColor;
+- (void)setTitleTextColor:;
+- (id)titleTextColor;
+- (void)setTitle:;
+- (id)title;
+- (void).cxx_destruct;
+- (id)confirmText;
+- (void)setConfirmText:;
+@end

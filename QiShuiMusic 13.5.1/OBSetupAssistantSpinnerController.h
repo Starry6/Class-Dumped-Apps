@@ -1,0 +1,37 @@
+@interface OBSetupAssistantSpinnerController : OBBaseWelcomeController
+@property (nonatomic) UILabel label;
+@property (nonatomic) UIActivityIndicatorView activityIndicator;
+@property (nonatomic) UIScrollView scrollView;
+@property (nonatomic) UIView scrollContentView;
+@property (nonatomic) BOOL activityIndicatorHidden;
+@property (nonatomic) OBPrivacyLinkController privacyLinkController;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setScrollView:;
+- (id)scrollContentView;
+- (id)activityIndicator;
+- (void)setLabel:;
+- (void)setActivityIndicator:;
+- (id)label;
+- (id)_textStyle;
+- (id)scrollView;
+- (void)traitCollectionDidChange:;
+- (void)viewWillDisappear:;
+- (void).cxx_destruct;
+- (void)_updateLayout;
+- (void)viewWillAppear:;
+- (void)loadView;
+- (void)viewDidLayoutSubviews;
+- (long long)_activityIndicatorViewStyle;
+- (void)_updateTextColor;
+- (id)privacyLinkController;
+- (void)setPrivacyLinkController:;
+- (void)updateDirectionalLayoutMargins;
+- (id)initWithSpinnerText:;
+- (void)setActivityIndicatorHidden:;
+- (BOOL)_shouldUseScrollView;
+- (BOOL)isActivityIndicatorHidden;
+- (void)setScrollContentView:;
+@end

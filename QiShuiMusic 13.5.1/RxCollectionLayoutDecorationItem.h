@@ -1,0 +1,31 @@
+@interface RxCollectionLayoutDecorationItem : RxCollectionLayoutItem
+@property (nonatomic) NSString elementKind;
+@property (nonatomic) # _registrationViewClass;
+@property (nonatomic) BOOL isBackgroundDecoration;
+@property (nonatomic) RxCollectionLayoutAnchor containerAnchor;
+@property (nonatomic) RxCollectionLayoutAnchor itemAnchor;
+@property (nonatomic) q zIndex;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)item;
+- (id)elementKind;
+- (id)containerAnchor;
+- (id)supplementaryItem;
+- (id)itemAnchor;
+- (id)boundarySupplementaryItem;
+- (void)setContainerAnchor:;
+- (void)setZIndex:;
+- (void).cxx_destruct;
+- (void)setItemAnchor:;
+- (BOOL)isBackgroundDecoration;
+- (id)initWithElementKind:size:contentInsets:containerAnchor:itemAnchor:zIndex:registrationViewClass:isBackgroundDecoration:;
+- (long long)zIndex;
+- (Class)_registrationViewClass;
+- (void)_setRegistrationViewClass:;
+- (id)decorationItem;
+- (void)setElementKind:;
+- (id)copyWithZone:;
++ (id)backgroundDecorationItemWithElementKind:;
+@end

@@ -1,0 +1,36 @@
+@interface NEDNSProxyManager : NSObject
+@property (nonatomic) NEConfiguration configuration;
+@property (nonatomic) NSUUID identifier;
+@property (nonatomic) <NEDNSProxyManagerDelegate> delegate;
+@property (nonatomic) NSString appBundleIdentifier;
+@property (nonatomic) BOOL isFromProfile;
+@property (nonatomic) BOOL isFromMDM;
+@property (nonatomic) NSString localizedDescription;
+@property (nonatomic) NEDNSProxyProviderProtocol providerProtocol;
+@property (nonatomic) BOOL enabled;
+- (id)init;
+- (id)descriptionWithIndent:options:;
+- (void)dealloc;
+- (id)localizedDescription;
+- (void)setDelegate:;
+- (id)identifier;
+- (void)setConfiguration:;
+- (id)appBundleIdentifier;
+- (id)configuration;
+- (id)delegate;
+- (void)setEnabled:;
+- (void).cxx_destruct;
+- (id)description;
+- (void)setLocalizedDescription:;
+- (BOOL)isEnabled;
+- (void)loadFromPreferencesWithCompletionHandler:;
+- (BOOL)isFromMDM;
+- (void)removeFromPreferencesWithCompletionHandler:;
+- (void)saveToPreferencesWithCompletionHandler:;
+- (id)providerProtocol;
+- (void)setProviderProtocol:;
+- (BOOL)isFromProfile;
+- (void)fetchStatusWithCompletionHandler:;
++ (id)sharedManager;
++ (void)loadAllFromPreferencesWithCompletionHandler:;
+@end

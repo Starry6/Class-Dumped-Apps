@@ -1,0 +1,35 @@
+@interface AWDCompanionSyncFullSyncDuration : PBCodable
+@property (nonatomic) BOOL hasTimestamp;
+@property (nonatomic) Q timestamp;
+@property (nonatomic) BOOL hasService;
+@property (nonatomic) NSString service;
+@property (nonatomic) BOOL hasIsMaster;
+@property (nonatomic) BOOL isMaster;
+@property (nonatomic) BOOL hasSyncDuration;
+@property (nonatomic) Q syncDuration;
+- (void)setService:;
+- (void)dealloc;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (id)service;
+- (void)copyTo:;
+- (void)setHasTimestamp:;
+- (void)mergeFrom:;
+- (BOOL)hasTimestamp;
+- (void)setTimestamp:;
+- (BOOL)readFrom:;
+- (unsigned long long)timestamp;
+- (id)description;
+- (BOOL)isMaster;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasService;
+- (void)setIsMaster:;
+- (void)setHasIsMaster:;
+- (BOOL)hasIsMaster;
+- (void)setSyncDuration:;
+- (void)setHasSyncDuration:;
+- (BOOL)hasSyncDuration;
+- (unsigned long long)syncDuration;
+@end

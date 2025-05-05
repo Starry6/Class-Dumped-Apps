@@ -1,0 +1,36 @@
+@interface CAKeyframeAnimation : CAPropertyAnimation
+@property (nonatomic) NSArray values;
+@property (nonatomic) r^{CGPath=} path;
+@property (nonatomic) NSArray keyTimes;
+@property (nonatomic) NSArray timingFunctions;
+@property (nonatomic) NSString calculationMode;
+@property (nonatomic) NSArray tensionValues;
+@property (nonatomic) NSArray continuityValues;
+@property (nonatomic) NSArray biasValues;
+@property (nonatomic) NSString rotationMode;
+- (BOOL)SCN_evaluateAtTime:reverse:to:;
+- (id)_copyRenderAnimationForLayer:;
+- (BOOL)CA_validateValue:forKey:;
+- (id)path;
+- (BOOL)_setCARenderAnimation:layer:;
+- (id)values;
+- (void)setPath:;
+- (void)applyForTime:presentationObject:modelObject:;
+- (void)setValues:;
+- (void)CA_prepareRenderValue;
+- (id)calculationMode;
+- (void)setCalculationMode:;
+- (id)keyTimes;
+- (void)setKeyTimes:;
+- (id)timingFunctions;
+- (void)setTimingFunctions:;
+- (id)tensionValues;
+- (void)setTensionValues:;
+- (id)continuityValues;
+- (void)setContinuityValues:;
+- (id)biasValues;
+- (void)setBiasValues:;
+- (id)rotationMode;
+- (void)setRotationMode:;
++ (id)normalizedKeyframeAnimationWithKeyPath:;
+@end

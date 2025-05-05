@@ -1,0 +1,32 @@
+@interface SCNManipulableItem : NSObject
+@property (nonatomic) SCNNode node;
+@property (nonatomic) @ component;
+@property (nonatomic) Q elementIndex;
+@property (nonatomic) {SCNMatrix4=ffffffffffffffff} transform;
+@property (nonatomic) {SCNMatrix4=ffffffffffffffff} worldTransform;
+@property (nonatomic) {SCNVector3=fff} elementPosition;
+- (void)setPosition:;
+- (id)node;
+- (void)dealloc;
+- (void)setTransform:;
+- (id)component;
+- (unsigned long long)hash;
+- (id)transform;
+- (double)screenSize;
+- (id)scale;
+- (id)parentItem;
+- (BOOL)isEqual:;
+- (void)setScreenSize:;
+- (void)setNode:;
+- (unsigned long long)elementIndex;
+- (void)setElementIndex:;
+- (void)setComponent:;
+- (id)worldTransform;
+- (void)setWorldTransform:;
+- (id)elementPosition;
+- (BOOL)isNodeManipulator;
+- (id)cloneForManipulators;
+- (void)validateClone;
++ (void)addItems:toScene:;
++ (void)removeItemsFromScene:;
+@end

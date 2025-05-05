@@ -1,0 +1,2 @@
+@interface HTSLiveSubscribeGiftApiRoot : GPBRootObject
+@end

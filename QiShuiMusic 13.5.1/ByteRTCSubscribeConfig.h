@@ -1,0 +1,30 @@
+@interface ByteRTCSubscribeConfig : NSObject
+@property (nonatomic) BOOL isScreen;
+@property (nonatomic) BOOL subscribeVideo;
+@property (nonatomic) BOOL subscribeAudio;
+@property (nonatomic) q videoIndex;
+@property (nonatomic) q svcLayer;
+@property (nonatomic) q width;
+@property (nonatomic) q height;
+@property (nonatomic) q subVideoIndex;
+@property (nonatomic) q framerate;
+- (BOOL)isScreen;
+- (void)setIsScreen:;
+- (void)setVideoIndex:;
+- (long long)videoIndex;
+- (BOOL)subscribeVideo;
+- (void)setSubscribeVideo:;
+- (BOOL)subscribeAudio;
+- (void)setSubscribeAudio:;
+- (long long)svcLayer;
+- (void)setSvcLayer:;
+- (long long)subVideoIndex;
+- (void)setSubVideoIndex:;
+- (id)init;
+- (void)setWidth:;
+- (long long)framerate;
+- (long long)height;
+- (long long)width;
+- (void)setHeight:;
+- (void)setFramerate:;
+@end

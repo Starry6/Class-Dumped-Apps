@@ -1,0 +1,34 @@
+@interface DIRSErrorBuilder : NSObject
+@property (nonatomic) q code;
+@property (nonatomic) NSString desc;
+@property (nonatomic) NSError underlyingError;
+@property (nonatomic) NSString reason;
+@property (nonatomic) NSString domain;
+@property (nonatomic) NSDictionary userInfo;
+- (BOOL)buildError:;
+- (id)buildUserInfo;
+- (id)userDomain;
+- (long long)userErrorCode;
+- (id)withCode:;
+- (id)withDescription:;
+- (id)withDescriptionFormat:;
+- (id)withDomain:;
+- (id)withFailureReason:;
+- (id)withUnderlyingError:;
+- (id)withUserInfo:;
+- (id)userInfo;
+- (id)desc;
+- (void)setDesc:;
+- (long long)code;
+- (id)reason;
+- (id)build;
+- (void)setReason:;
+- (void)setUserInfo:;
+- (void).cxx_destruct;
+- (id)domain;
+- (void)setDomain:;
+- (void)setCode:;
+- (void)setUnderlyingError:;
+- (id)underlyingError;
++ (id)builder;
+@end

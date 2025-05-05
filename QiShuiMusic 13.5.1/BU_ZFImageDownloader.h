@@ -1,0 +1,31 @@
+@interface BU_ZFImageDownloader : NSObject
+@property (nonatomic) NSURLSession session;
+@property (nonatomic) NSURLSessionDownloadTask task;
+@property (nonatomic) Q totalLength;
+@property (nonatomic) Q currentLength;
+@property (nonatomic) @? progressBlock;
+@property (nonatomic) @? callbackOnFinished;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)callbackOnFinished;
+- (void)setCallbackOnFinished:;
+- (void)setCurrentLength:;
+- (void)startDownloadImageWithUrl:progress:finished:;
+- (id)progressBlock;
+- (void)setSession:;
+- (void)cancel;
+- (void)dealloc;
+- (void)setProgressBlock:;
+- (void)URLSession:task:didCompleteWithError:;
+- (void)URLSession:downloadTask:didFinishDownloadingToURL:;
+- (id)task;
+- (void)setTask:;
+- (void)URLSession:downloadTask:didWriteData:totalBytesWritten:totalBytesExpectedToWrite:;
+- (id)session;
+- (void).cxx_destruct;
+- (unsigned long long)currentLength;
+- (void)setTotalLength:;
+- (unsigned long long)totalLength;
+@end

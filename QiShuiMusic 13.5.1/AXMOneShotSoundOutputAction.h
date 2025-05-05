@@ -1,0 +1,2 @@
+@interface AXMOneShotSoundOutputAction : AXMSoundOutputAction
+@end

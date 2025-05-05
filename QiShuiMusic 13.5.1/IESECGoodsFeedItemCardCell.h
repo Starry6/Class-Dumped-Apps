@@ -1,0 +1,35 @@
+@interface IESECGoodsFeedItemCardCell : IESECGoodsFeedBaseCell
+@property (nonatomic) UIImageView imageView;
+@property (nonatomic) UILabel imageTipsLabel;
+@property (nonatomic) IESECGoodsFeedVerticalInformationView informationView;
+@property (nonatomic) IESECGoodsFeedItemCardSkeletonView skeletonView;
+@property (nonatomic) IESECGoodsFeedItemCardCellConfiguration configuration;
+@property (nonatomic) IESECGoodsFeedCardOperationView operationView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)cardBuilderConfigurator;
+- (id)imageTipsLabel;
+- (void)informationViewBuyButtonDidClick:;
+- (void)notifyDelegateSelectEventWithType:;
+- (id)operationView;
+- (void)operationView:didSelectItemWithType:;
+- (void)setImageTipsLabel:;
+- (void)setSkeletonView:;
+- (id)skeletonView;
+- (void)updateCardStyle:;
+- (void)updateWithCellModel:;
+- (void)handleTapGesture:;
+- (void)layoutSubviews;
+- (void)setConfiguration:;
+- (id)initWithFrame:;
+- (id)configuration;
+- (void).cxx_destruct;
+- (id)imageView;
+- (id)informationView;
+- (void)setImageView:;
+- (void)setupSubviews;
+- (void)updateWithViewModel:;
+- (void)setInformationView:;
+@end

@@ -1,0 +1,2 @@
+@interface IESLiveSaaSECommerceCommonPiperHandler : IESLiveSaaSECommerceBasePiperHandler
+@end

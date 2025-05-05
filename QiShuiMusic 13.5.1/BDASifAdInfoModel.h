@@ -1,0 +1,32 @@
+@interface BDASifAdInfoModel : NSObject
+@property (nonatomic) NSString adID;
+@property (nonatomic) NSNumber creativeID;
+@property (nonatomic) NSString groupID;
+@property (nonatomic) NSString logExtra;
+@property (nonatomic) NSArray trackUrlList;
+@property (nonatomic) NSString SKANParameters;
+@property (nonatomic) NSString webURL;
+@property (nonatomic) NSString refer;
+@property (nonatomic) NSString tag;
+- (id)SKANParameters;
+- (id)adID;
+- (id)getCreativeID:;
+- (id)logExtra;
+- (id)refer;
+- (void)setAdID:;
+- (void)setCreativeID:;
+- (void)setLogExtra:;
+- (void)setRefer:;
+- (void)setSKANParameters:;
+- (void)setTrackUrlList:;
+- (id)trackUrlList;
+- (void)setGroupID:;
+- (id)groupID;
+- (id)tag;
+- (id)initWithDictionary:;
+- (void)setTag:;
+- (void).cxx_destruct;
+- (id)webURL;
+- (void)setWebURL:;
+- (id)creativeID;
+@end

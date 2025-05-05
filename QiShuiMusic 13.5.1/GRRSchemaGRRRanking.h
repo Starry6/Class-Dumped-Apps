@@ -1,0 +1,35 @@
+@interface GRRSchemaGRRRanking : SISchemaInstrumentationMessage
+@property (nonatomic) SISchemaUUID parseId;
+@property (nonatomic) BOOL hasParseId;
+@property (nonatomic) NSInteger parseType;
+@property (nonatomic) BOOL hasParseType;
+@property (nonatomic) double score;
+@property (nonatomic) BOOL hasScore;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (double)score;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void)setScore:;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (BOOL)hasScore;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)setHasScore:;
+- (BOOL)hasParseId;
+- (void)deleteParseId;
+- (void)setParseType:;
+- (BOOL)hasParseType;
+- (void)setHasParseType:;
+- (void)deleteParseType;
+- (void)deleteScore;
+- (id)parseId;
+- (void)setParseId:;
+- (int)parseType;
+- (void)setHasParseId:;
+@end

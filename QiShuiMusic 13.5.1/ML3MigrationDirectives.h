@@ -1,0 +1,38 @@
+@interface ML3MigrationDirectives : NSObject
+@property (nonatomic) NSInteger originalUserVersion;
+@property (nonatomic) NSInteger currentUserVersion;
+@property (nonatomic) BOOL needsToRecreateIndexes;
+@property (nonatomic) BOOL needsToRecreateTriggers;
+@property (nonatomic) BOOL needsToRemoveLocationsForItemsMissingAssets;
+@property (nonatomic) BOOL needsToReloadStoreBookmarkMetadataIdentifiers;
+@property (nonatomic) BOOL needsToReloadContainerMediaTypes;
+@property (nonatomic) BOOL needsToReloadCollectionRepresentativeItems;
+@property (nonatomic) BOOL needsAnalyze;
+@property (nonatomic) BOOL needsToAutogenerateArtworkVariants;
+@property (nonatomic) BOOL needsToUpdateSortMap;
+@property (nonatomic) BOOL forceUpdateOriginals;
+- (int)currentUserVersion;
+- (id)initWithOriginalUserVersion:;
+- (int)originalUserVersion;
+- (void)setCurrentUserVersion:;
+- (BOOL)needsToRecreateIndexes;
+- (void)setNeedsToRecreateIndexes:;
+- (BOOL)needsToRecreateTriggers;
+- (void)setNeedsToRecreateTriggers:;
+- (BOOL)needsToRemoveLocationsForItemsMissingAssets;
+- (void)setNeedsToRemoveLocationsForItemsMissingAssets:;
+- (BOOL)needsToReloadStoreBookmarkMetadataIdentifiers;
+- (void)setNeedsToReloadStoreBookmarkMetadataIdentifiers:;
+- (BOOL)needsToReloadContainerMediaTypes;
+- (void)setNeedsToReloadContainerMediaTypes:;
+- (BOOL)needsToReloadCollectionRepresentativeItems;
+- (void)setNeedsToReloadCollectionRepresentativeItems:;
+- (BOOL)needsAnalyze;
+- (void)setNeedsAnalyze:;
+- (BOOL)needsToAutogenerateArtworkVariants;
+- (void)setNeedsToAutogenerateArtworkVariants:;
+- (BOOL)needsToUpdateSortMap;
+- (void)setNeedsToUpdateSortMap:;
+- (BOOL)forceUpdateOriginals;
+- (void)setForceUpdateOriginals:;
+@end

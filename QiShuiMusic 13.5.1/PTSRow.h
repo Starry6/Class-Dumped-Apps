@@ -1,0 +1,2 @@
+@interface PTSRow : PTRow
+@end

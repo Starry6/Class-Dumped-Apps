@@ -1,0 +1,36 @@
+@interface ASDRepairOptions : NSObject
+@property (nonatomic) BOOL forceRevoke;
+@property (nonatomic) BOOL forceUpsell;
+@property (nonatomic) NSString bundleID;
+@property (nonatomic) NSString bundlePath;
+@property (nonatomic) NSNumber accountDSID;
+@property (nonatomic) q claimStyle;
+@property (nonatomic) Q exitReason;
+@property (nonatomic) NSInteger fairplayStatus;
+@property (nonatomic) BOOL isBackground;
+@property (nonatomic) NSDictionary relaunchOptions;
+- (id)bundlePath;
+- (BOOL)isBackground;
+- (unsigned long long)exitReason;
+- (id)accountDSID;
+- (id)initWithCoder:;
+- (id)initWithBundleID:;
+- (void)encodeWithCoder:;
+- (void)setIsBackground:;
+- (void).cxx_destruct;
+- (id)bundleID;
+- (id)initWithBundlePath:;
+- (id)copyWithZone:;
+- (id)initWithBundleID:accountIdentifier:claimStyle:;
+- (long long)claimStyle;
+- (void)setExitReason:;
+- (int)fairplayStatus;
+- (void)setFairplayStatus:;
+- (id)relaunchOptions;
+- (void)setRelaunchOptions:;
+- (BOOL)forceRevoke;
+- (void)setForceRevoke:;
+- (BOOL)forceUpsell;
+- (void)setForceUpsell:;
++ (BOOL)supportsSecureCoding;
+@end

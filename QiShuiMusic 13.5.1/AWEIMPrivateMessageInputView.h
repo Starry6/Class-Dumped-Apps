@@ -1,0 +1,36 @@
+@interface AWEIMPrivateMessageInputView : UIView
+@property (nonatomic) UIStackView rightButtonsContainer;
+@property (nonatomic) UIStackView leftButtonsContainer;
+@property (nonatomic) NSArray recentlyUsedEmoticons;
+@property (nonatomic) UIButton cameraButton;
+@property (nonatomic) IESIMGrowingTextView textView;
+@property (nonatomic) <AWEIMPrivateMessageInputViewDelegate> delegate;
+- (void)didTapCameraButton:;
+- (void)didTapEmoticonButton:;
+- (void)hideRecentlyUsedEmoticonsAnimated:;
+- (id)leftButtonsContainer;
+- (void)p_clearStackView:;
+- (void)p_insertPlaceholderBtn:;
+- (void)p_loadRecentlyUsedEmoticons;
+- (void)p_setupUI;
+- (void)p_updateLayout;
+- (id)recentlyUsedEmoticons;
+- (id)rightButtonsContainer;
+- (void)setAttributeText:placeholder:;
+- (void)setLeftButtonsContainer:;
+- (void)setRecentlyUsedEmoticons:;
+- (void)setRightButtonsContainer:;
+- (BOOL)shouldShowCameraButton;
+- (void)showCameraIconIfNeeded;
+- (void)showRecentlyUsedEmoticons;
+- (void)updateLeftButtons;
+- (void)updateRecentlyUsedEmoticons;
+- (id)textView;
+- (id)init;
+- (void)touchesBegan:withEvent:;
+- (void)setDelegate:;
+- (void)setCameraButton:;
+- (id)delegate;
+- (id)cameraButton;
+- (void).cxx_destruct;
+@end

@@ -1,0 +1,21 @@
+@interface NSLayoutXAxisAnchor : NSLayoutAnchor
+- (id)constraintEqualToSystemSpacingAfterAnchor:;
+- (id)constraintGreaterThanOrEqualToSystemSpacingAfterAnchor:;
+- (id)constraintLessThanOrEqualToSystemSpacingAfterAnchor:;
+- (BOOL)validateOtherAttribute:;
+- (BOOL)isCompatibleWithAnchor:;
+- (long long)_directionAbstraction;
+- (id)anchorByOffsettingWithDimension:multiplier:constant:;
+- (id)constraintLessThanOrEqualToSystemSpacingAfterAnchor:multiplier:;
+- (id)constraintGreaterThanOrEqualToSystemSpacingAfterAnchor:multiplier:;
+- (id)constraintEqualToSystemSpacingAfterAnchor:multiplier:;
+- (id)anchorWithOffsetToAnchor:;
+- (id)anchorByOffsettingWithDimension:;
+- (id)anchorByOffsettingWithConstant:;
+- (id)offsetTo:;
+- (id)distanceTo:;
+- (id)offsetByDimension:times:plus:;
+- (id)offsetByDimension:;
+- (id)offsetBy:;
+- (BOOL)_validateOtherXAxisAnchorDirectionAbstraction:;
+@end

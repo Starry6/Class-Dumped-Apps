@@ -1,0 +1,36 @@
+@interface IESECLiveToMallSchemeGenerator : NSObject
+@property (nonatomic) <IESECLiveUserRecordActionInterface> actRecordManager;
+@property (nonatomic) NSDictionary businessConfig;
+@property (nonatomic) NSString mallScheme;
+@property (nonatomic) NSString prefetchKey;
+@property (nonatomic) BOOL needAppendTabData;
+- (id)enterMallConfig;
+- (id)showFilterValue;
+- (id)getTabProductIDsSortByClickTime;
+- (long long)serverTookCount;
+- (void)setPrefetchKey:;
+- (id)actRecordManager;
+- (id)addActRecordManager;
+- (id)addBusinessConfig;
+- (id)addMallScheme;
+- (id)addPrefetchKey;
+- (id)appendRecommendParamsToMallScheme;
+- (id)appendTabData;
+- (id)businessConfig;
+- (id)curGuideProductID;
+- (id)filterArray;
+- (id)mallScheme;
+- (BOOL)needAppendTabData;
+- (id)prefetchKey;
+- (void)prefetchMallData;
+- (void)setActRecordManager:;
+- (void)setBusinessConfig:;
+- (void)setMallScheme:;
+- (void)setNeedAppendTabData:;
+- (id)triggerArray;
+- (id)triggersValueArray;
+- (void)useVMSDKIfNeed;
+- (BOOL)vmEnterMallEnable;
+- (id)build;
+- (void).cxx_destruct;
+@end

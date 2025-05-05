@@ -1,0 +1,37 @@
+@interface ICMusicSubscriptionStatusRequest : NSObject
+@property (nonatomic) BOOL shouldBypassEnforcementOfPrivacyAcknowledgement;
+@property (nonatomic) ICStoreRequestContext storeRequestContext;
+@property (nonatomic) q reason;
+@property (nonatomic) BOOL shouldIgnoreCache;
+@property (nonatomic) BOOL allowsFallbackToExpiredStatus;
+@property (nonatomic) BOOL allowsFallbackToStatusNeedingReload;
+@property (nonatomic) BOOL shouldReturnLastKnownStatusOnly;
+@property (nonatomic) q carrierBundleProvisioningStyle;
+@property (nonatomic) NSUUID requestIdentifier;
+- (id)requestIdentifier;
+- (void)setAllowsFallbackToExpiredStatus:;
+- (BOOL)allowsFallbackToStatusNeedingReload;
+- (void)setCarrierBundleProvisioningStyle:;
+- (BOOL)shouldIgnoreCache;
+- (long long)reason;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)setShouldBypassEnforcementOfPrivacyAcknowledgement:;
+- (void)setReason:;
+- (void)setAllowsFallbackToStatusNeedingReload:;
+- (void)encodeWithCoder:;
+- (long long)carrierBundleProvisioningStyle;
+- (BOOL)shouldReturnLastKnownStatusOnly;
+- (void).cxx_destruct;
+- (id)storeRequestContext;
+- (id)initWithStoreRequestContext:;
+- (id)description;
+- (BOOL)allowsFallbackToExpiredStatus;
+- (void)setStoreRequestContext:;
+- (void)setShouldReturnLastKnownStatusOnly:;
+- (BOOL)shouldBypassEnforcementOfPrivacyAcknowledgement;
+- (BOOL)isEqual:;
+- (void)setShouldIgnoreCache:;
+- (id)copyWithZone:;
++ (BOOL)supportsSecureCoding;
+@end

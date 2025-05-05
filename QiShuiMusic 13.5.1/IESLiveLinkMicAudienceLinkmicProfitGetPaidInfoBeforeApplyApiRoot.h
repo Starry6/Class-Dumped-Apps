@@ -1,0 +1,2 @@
+@interface IESLiveLinkMicAudienceLinkmicProfitGetPaidInfoBeforeApplyApiRoot : GPBRootObject
+@end

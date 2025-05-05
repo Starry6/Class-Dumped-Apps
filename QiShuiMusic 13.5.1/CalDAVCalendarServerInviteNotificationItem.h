@@ -1,0 +1,34 @@
+@interface CalDAVCalendarServerInviteNotificationItem : CoreDAVItem
+@property (nonatomic) CoreDAVLeafItem uid;
+@property (nonatomic) CoreDAVHrefItem href;
+@property (nonatomic) CoreDAVItemWithNoChildren inviteStatus;
+@property (nonatomic) CoreDAVItemWithNoChildren calendarPublic;
+@property (nonatomic) CalDAVCalendarServerAccessItem access;
+@property (nonatomic) CoreDAVItemWithHrefChildItem hostURL;
+@property (nonatomic) CalDAVCalendarServerOrganizerItem organizer;
+@property (nonatomic) CoreDAVLeafItem summary;
+@property (nonatomic) CalDAVSupportedCalendarComponentSet supportedCalendarComponentSet;
+- (void)setHref:;
+- (id)copyParseRules;
+- (id)href;
+- (id)access;
+- (id)init;
+- (id)uid;
+- (void)setUid:;
+- (void)setSummary:;
+- (id)organizer;
+- (void)setAccess:;
+- (id)summary;
+- (void)setSupportedCalendarComponentSet:;
+- (void).cxx_destruct;
+- (id)supportedCalendarComponentSet;
+- (void)setOrganizer:;
+- (id)hostURL;
+- (void)setHostURL:;
+- (id)inviteStatus;
+- (void)setInviteStatus:;
+- (void)setCalendarPublic:;
+- (id)initForReplyWithUID:href:hostURL:summary:;
+- (BOOL)isComponentSupportedForString:;
+- (id)calendarPublic;
+@end

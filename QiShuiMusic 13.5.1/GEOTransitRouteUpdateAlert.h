@@ -1,0 +1,37 @@
+@interface GEOTransitRouteUpdateAlert : PBCodable
+@property (nonatomic) BOOL hasTitle;
+@property (nonatomic) GEOFormattedString title;
+@property (nonatomic) BOOL hasContent;
+@property (nonatomic) GEOFormattedString content;
+@property (nonatomic) BOOL hasIdentifier;
+@property (nonatomic) NSData identifier;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)content;
+- (void)setContent:;
+- (id)unknownFields;
+- (id)init;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (BOOL)hasContent;
+- (id)initWithDictionary:;
+- (id)identifier;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (void)setTitle:;
+- (unsigned long long)hash;
+- (BOOL)hasIdentifier;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)title;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (void)setIdentifier:;
+- (BOOL)isEqual:;
+- (BOOL)hasTitle;
+- (id)copyWithZone:;
++ (BOOL)isValid:;
+@end

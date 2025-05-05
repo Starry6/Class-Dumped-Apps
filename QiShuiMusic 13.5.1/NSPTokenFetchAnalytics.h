@@ -1,0 +1,35 @@
+@interface NSPTokenFetchAnalytics : NSPProxyAnalytics
+@property (nonatomic) NSString proxyURL;
+@property (nonatomic) NSString proxyVendor;
+@property (nonatomic) NSString tierType;
+@property (nonatomic) NSString authenticationType;
+@property (nonatomic) NSString requestedServerUUID;
+@property (nonatomic) Q requestedTokenCount;
+@property (nonatomic) Q activatedCount;
+@property (nonatomic) q httpCode;
+@property (nonatomic) q nsurlErrorCode;
+@property (nonatomic) double latency;
+- (double)latency;
+- (void)setLatency:;
+- (id)proxyURL;
+- (void)setHttpCode:;
+- (void)setTierType:;
+- (id)eventName;
+- (void)setRequestedServerUUID:;
+- (long long)httpCode;
+- (void).cxx_destruct;
+- (void)setProxyURL:;
+- (id)analyticsDict;
+- (id)tierType;
+- (id)requestedServerUUID;
+- (void)setNsurlErrorCode:;
+- (long long)nsurlErrorCode;
+- (id)authenticationType;
+- (void)setAuthenticationType:;
+- (unsigned long long)requestedTokenCount;
+- (void)setRequestedTokenCount:;
+- (id)proxyVendor;
+- (void)setProxyVendor:;
+- (unsigned long long)activatedCount;
+- (void)setActivatedCount:;
+@end

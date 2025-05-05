@@ -1,0 +1,37 @@
+@interface QLPXSwipeDownTracker : NSObject
+@property (nonatomic) {CGPoint=dd} trackedCenter;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} trackedBounds;
+@property (nonatomic) {CGAffineTransform=dddddd} trackedTransform;
+@property (nonatomic) {QLPXDisplayVelocity=dddd} trackedVelocity;
+@property (nonatomic) double dismissalProgress;
+@property (nonatomic) BOOL shouldFinishDismissal;
+@property (nonatomic) QLPXChangeDirectionNumberFilter verticalDirectionFilter;
+@property (nonatomic) QLPXInitialHysteresisNumberFilter horizontalTranslationFilter;
+@property (nonatomic) Q options;
+@property (nonatomic) double finalAnimationDuration;
+@property (nonatomic) double finalAnimationSpringDamping;
+- (id)init;
+- (id)initWithOptions:;
+- (unsigned long long)options;
+- (void).cxx_destruct;
+- (void)trackGestureTranslation:velocity:;
+- (double)dismissalProgress;
+- (void)setDismissalProgress:;
+- (BOOL)shouldFinishDismissal;
+- (void)setShouldFinishDismissal:;
+- (id)trackedCenter;
+- (void)setTrackedCenter:;
+- (id)trackedBounds;
+- (void)setTrackedBounds:;
+- (id)trackedTransform;
+- (void)setTrackedTransform:;
+- (id)trackedVelocity;
+- (void)setTrackedVelocity:;
+- (double)finalAnimationDuration;
+- (double)finalAnimationSpringDamping;
+- (id)verticalDirectionFilter;
+- (void)setVerticalDirectionFilter:;
+- (id)horizontalTranslationFilter;
+- (void)setHorizontalTranslationFilter:;
+- (void)startTrackingCenter:bounds:transform:withInitialGestureLocation:;
+@end

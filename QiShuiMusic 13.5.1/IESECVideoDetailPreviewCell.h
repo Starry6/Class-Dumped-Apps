@@ -1,0 +1,2 @@
+@interface IESECVideoDetailPreviewCell : UICollectionViewCell
+@end

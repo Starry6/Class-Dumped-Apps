@@ -1,0 +1,34 @@
+@interface CHSChronoServicesConnection : NSObject
+@property (nonatomic) NSDictionary cachedDescriptorsByIdentifier;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)widgetEnvironmentDataForBundleIdentifier:;
+- (id)_queue_remoteTargetCreatingConnectionIfNecessary:;
+- (void)removeClient:;
+- (void)addClient:;
+- (id)init;
+- (void)dealloc;
+- (void)_queue_removeClient:;
+- (id)cacheDescriptorsForContainerBundleIdentifier:completion:;
+- (void)_queue_noteDescriptorsDidChange:;
+- (id)flushPowerlog;
+- (void)_queue_invalidateConnection;
+- (BOOL)reloadTimeline:error:;
+- (void)_queue_createConnection;
+- (id)descriptors:;
+- (id)_URLSessionDidCompleteForExtensionWithBundleIdentifier:info:;
+- (void).cxx_destruct;
+- (id)setWidgetConfiguration:forWidgetHostWithIdentifier:;
+- (id)widgetDescriptorsDidChange:;
+- (id)removeWidgetHostWithIdentifier:;
+- (void)_queue_addClient:;
+- (id)suggestionBudgetsForStackIdentifiers:completion:;
+- (id)_init;
+- (id)loadSuggestedWidget:metrics:stackIdentifier:reason:completion:;
+- (id)allWidgetConfigurationsByHostWithCompletion:;
+- (id)cachedDescriptorsByIdentifier;
++ (id)sharedInstance;
++ (void)_debugRestartServer;
+@end

@@ -1,0 +1,2 @@
+@interface TTASNSSDKAuthSwitchBindRespModel : TTASNSSDKAuthCallbackRespModel
+@end

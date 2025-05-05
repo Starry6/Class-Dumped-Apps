@@ -1,0 +1,33 @@
+@interface AMapIPV6NetConfig : AMapCloudConfig
+@property (nonatomic) NSNumber downgradeThreshold;
+@property (nonatomic) NSString name;
+@property (nonatomic) BOOL static_ip_direct_enable;
+@property (nonatomic) BOOL bgp_ip_direct_enable;
+@property (nonatomic) BOOL realtime_upload;
+@property (nonatomic) double static_timeout;
+@property (nonatomic) NSInteger static_retry;
+@property (nonatomic) NSInteger bgp_retry;
+@property (nonatomic) BOOL static_enable;
+@property (nonatomic) BOOL bgp_enable;
+- (BOOL)realtime_upload;
+- (BOOL)bgp_enable;
+- (BOOL)bgp_ip_direct_enable;
+- (int)bgp_retry;
+- (id)downgradeThreshold;
+- (id)initWithCloudConfig:;
+- (void)setBgp_enable:;
+- (void)setBgp_ip_direct_enable:;
+- (void)setBgp_retry:;
+- (void)setRealtime_upload:;
+- (void)setStatic_enable:;
+- (void)setStatic_ip_direct_enable:;
+- (void)setStatic_retry:;
+- (void)setStatic_timeout:;
+- (BOOL)static_enable;
+- (BOOL)static_ip_direct_enable;
+- (int)static_retry;
+- (double)static_timeout;
+- (void).cxx_destruct;
+- (id)name;
+- (BOOL)isEqual:;
+@end

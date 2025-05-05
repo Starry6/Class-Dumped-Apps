@@ -1,0 +1,31 @@
+@interface MNAnnouncementPlanEvent : NSObject
+@property (nonatomic) GEOComposedGuidanceEvent event;
+@property (nonatomic) double distance;
+@property (nonatomic) double speed;
+@property (nonatomic) NSArray durations;
+@property (nonatomic) NSMutableArray announcementDurations;
+@property (nonatomic) BOOL includeInPlan;
+@property (nonatomic) Q variantIndex;
+@property (nonatomic) double triggerDistance;
+@property (nonatomic) double completionDistance;
+- (double)distance;
+- (void)setEvent:;
+- (id)event;
+- (void)setSpeed:;
+- (void)setDistance:;
+- (double)speed;
+- (void)setDurations:;
+- (id)durations;
+- (void).cxx_destruct;
+- (id)description;
+- (unsigned long long)variantIndex;
+- (void)setVariantIndex:;
+- (id)initWithEvent:distance:speed:durations:;
+- (id)announcementDurations;
+- (void)setTriggerDistance:;
+- (double)completionDistance;
+- (BOOL)includeInPlan;
+- (void)setIncludeInPlan:;
+- (double)triggerDistance;
+- (void)setAnnouncementDurations:;
+@end

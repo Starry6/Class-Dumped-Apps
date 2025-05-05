@@ -1,0 +1,36 @@
+@interface CIFlashTransition : CIFilter
+@property (nonatomic) CIImage inputImage;
+@property (nonatomic) CIImage inputTargetImage;
+@property (nonatomic) CIVector inputCenter;
+@property (nonatomic) CIVector inputExtent;
+@property (nonatomic) CIColor inputColor;
+@property (nonatomic) NSNumber inputTime;
+@property (nonatomic) NSNumber inputMaxStriationRadius;
+@property (nonatomic) NSNumber inputStriationStrength;
+@property (nonatomic) NSNumber inputStriationContrast;
+@property (nonatomic) NSNumber inputFadeThreshold;
+- (void)setInputCenter:;
+- (id)inputTime;
+- (id)inputImage;
+- (void)setInputTime:;
+- (void)setInputImage:;
+- (id)inputCenter;
+- (id)outputImage;
+- (id)inputTargetImage;
+- (void)setInputTargetImage:;
+- (id)inputExtent;
+- (void)setInputExtent:;
+- (id)inputColor;
+- (void)setInputColor:;
+- (id)_colorKernel;
+- (id)_geomKernel;
+- (id)inputMaxStriationRadius;
+- (void)setInputMaxStriationRadius:;
+- (id)inputStriationStrength;
+- (void)setInputStriationStrength:;
+- (id)inputStriationContrast;
+- (void)setInputStriationContrast:;
+- (id)inputFadeThreshold;
+- (void)setInputFadeThreshold:;
++ (id)customAttributes;
+@end

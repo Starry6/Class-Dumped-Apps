@@ -1,0 +1,35 @@
+@interface AMSAccountDeviceInfoTask : AMSTask
+@property (nonatomic) AMSURLSession session;
+@property (nonatomic) AMSURLRequestEncoder requestEncoder;
+@property (nonatomic) NSString serialNumber;
+@property (nonatomic) ACAccountStore accountStore;
+@property (nonatomic) ACAccount account;
+@property (nonatomic) <AMSBagProtocol> bag;
+@property (nonatomic) AMSProcessInfo clientInfo;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)account;
+- (id)serialNumber;
+- (id)requestEncoder;
+- (void)setAccountStore:;
+- (void)setClientInfo:;
+- (void)setSession:;
+- (id)accountStore;
+- (void)setSerialNumber:;
+- (void)setRequestEncoder:;
+- (id)clientInfo;
+- (id)session;
+- (void).cxx_destruct;
+- (id)bag;
+- (id)perform;
+- (id)initWithAccount:accountStore:bag:;
+- (id)initWithAccount:accountStore:bag:requestEncoder:session:serialNumber:;
+- (id)_deviceInfoRequest;
+- (id)_requestWithURL:;
+- (void)_updateAccountWithInfo:;
++ (id)createBagForSubProfile;
++ (id)bagSubProfileVersion;
++ (id)bagSubProfile;
+@end

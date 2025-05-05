@@ -1,0 +1,2 @@
+@interface RoomChannelChannelChatApiRoot : GPBRootObject
+@end

@@ -1,0 +1,33 @@
+@interface IESLiveGiftFullLinkMonitorService : NSObject
+@property (nonatomic) IESLiveTraceService traceService;
+@property (nonatomic) HTSLiveUser currentLoginUser;
+@property (nonatomic) <IESLiveRoomServiceAdapter> roomModel;
+@property (nonatomic) NSCache cacheInfo;
+@property (nonatomic) NSDictionary eventNameFromType;
+@property (nonatomic) <IESLiveInteractionModule> interactionModule;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)_eventWithTraceId:stepName:eventName:index:error:extra:;
+- (id)_extraWithError:extra:;
+- (id)_indexWithTraceId:giftId:logId:messageId:linkType:;
+- (void)_trackEventWithTraceId:giftId:logId:messageId:linkType:eventName:stepName:error:extra:;
+- (id)currentLoginUser;
+- (void)didSetAttachingDIContext;
+- (id)eventNameFromType;
+- (id)interactionModule;
+- (void)monitorGiftBusinessWithTraceId:giftId:logId:messageId:stepName:error:extra:;
+- (void)monitorGiftBusinessWithTraceId:giftId:stepName:error:extra:;
+- (id)roomModel;
+- (void)setCacheInfo:;
+- (void)setCurrentLoginUser:;
+- (void)setEventNameFromType:;
+- (void)setInteractionModule:;
+- (void)setRoomModel:;
+- (void)setTraceService:;
+- (id)startGiftFullLinkMonitorEventWithTraceId:eventType:linkType:;
+- (id)traceService;
+- (id)cacheInfo;
+- (void).cxx_destruct;
+@end

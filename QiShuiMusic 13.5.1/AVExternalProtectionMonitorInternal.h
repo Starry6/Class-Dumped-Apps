@@ -1,0 +1,2 @@
+@interface AVExternalProtectionMonitorInternal : NSObject
+@end

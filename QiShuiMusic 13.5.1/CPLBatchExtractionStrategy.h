@@ -1,0 +1,31 @@
+@interface CPLBatchExtractionStrategy : NSObject
+@property (nonatomic) NSString strategyName;
+@property (nonatomic) <CPLBatchExtractionStrategyStorage> storage;
+@property (nonatomic) NSString scopeIdentifier;
+@property (nonatomic) Q maximumRecordCountPerBatch;
+@property (nonatomic) NSString name;
+@property (nonatomic) NSString currentStepDescription;
+@property (nonatomic) NSString stepsDescription;
+- (id)cplFullDescription;
+- (id)scopeIdentifier;
+- (id)storage;
+- (void).cxx_destruct;
+- (unsigned long long)maximumRecordCountPerBatch;
+- (void)reset;
+- (id)description;
+- (id)name;
+- (BOOL)_hasChanges;
+- (id)strategyName;
+- (void)setMaximumRecordCountPerBatch:;
+- (id)initWithName:storage:scopeIdentifier:steps:;
+- (void)_computeNextStep;
+- (BOOL)extractBatch:maximumResourceSize:error:;
+- (void)resetConditionallyFromNewIncomingChange:;
+- (id)currentStepDescription;
+- (id)stepsDescription;
++ (unsigned long long)maximumRecordCountPerBatch;
++ (void)setMaximumRecordCountPerBatch:;
++ (id)usualStrategyWithStorage:coveringScopeIdentifier:;
++ (id)overQuotaStrategyWithStorage:coveringScopeIdentifier:;
++ (id)minglingStrategyWithStorage:coveringScopeIdentifier:maximumBatchSize:;
+@end

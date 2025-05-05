@@ -1,0 +1,36 @@
+@interface ACProtobufDataclassAction : PBCodable
+@property (nonatomic) NSInteger type;
+@property (nonatomic) BOOL destructive;
+@property (nonatomic) NSMutableArray affectedContainers;
+@property (nonatomic) BOOL hasUndoAlertTitle;
+@property (nonatomic) NSString undoAlertTitle;
+@property (nonatomic) BOOL hasUndoAlertMessage;
+@property (nonatomic) NSString undoAlertMessage;
+- (BOOL)destructive;
+- (void)setType:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)setDestructive:;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (int)type;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)clearAffectedContainers;
+- (void)addAffectedContainers:;
+- (unsigned long long)affectedContainersCount;
+- (id)affectedContainersAtIndex:;
+- (BOOL)hasUndoAlertTitle;
+- (BOOL)hasUndoAlertMessage;
+- (id)affectedContainers;
+- (void)setAffectedContainers:;
+- (id)undoAlertTitle;
+- (void)setUndoAlertTitle:;
+- (id)undoAlertMessage;
+- (void)setUndoAlertMessage:;
++ (Class)affectedContainersType;
+@end

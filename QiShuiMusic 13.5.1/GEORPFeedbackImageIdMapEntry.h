@@ -1,0 +1,32 @@
+@interface GEORPFeedbackImageIdMapEntry : PBCodable
+@property (nonatomic) BOOL hasClientImageUuid;
+@property (nonatomic) NSString clientImageUuid;
+@property (nonatomic) BOOL hasImageId;
+@property (nonatomic) NSString imageId;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (id)init;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (id)imageId;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)setImageId:;
+- (id)copyWithZone:;
+- (BOOL)hasClientImageUuid;
+- (id)clientImageUuid;
+- (void)setClientImageUuid:;
+- (BOOL)hasImageId;
++ (BOOL)isValid:;
+@end

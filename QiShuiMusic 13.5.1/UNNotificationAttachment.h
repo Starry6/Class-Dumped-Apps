@@ -1,0 +1,34 @@
+@interface UNNotificationAttachment : NSObject
+@property (nonatomic) Q family;
+@property (nonatomic) UNNotificationAttachmentOptions options;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) NSURL URL;
+@property (nonatomic) NSString type;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (unsigned long long)family;
+- (id)init;
+- (void)enterSecurityScope;
+- (id)identifier;
+- (id)initWithCoder:;
+- (void)removeSecurityScope;
+- (unsigned long long)hash;
+- (void)leaveSecurityScope;
+- (void)encodeWithCoder:;
+- (id)options;
+- (id)type;
+- (void)addSecurityScope:;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)URL;
+- (id)copyWithZone:;
+- (id)initWithIdentifier:URL:type:options:;
+- (id)initWithIdentifier:family:URL:type:options:;
+- (void)_withSecurityScopeLock:;
+- (id)_encodableURL;
++ (BOOL)supportsSecureCoding;
++ (id)attachmentWithIdentifier:URL:options:error:;
+@end

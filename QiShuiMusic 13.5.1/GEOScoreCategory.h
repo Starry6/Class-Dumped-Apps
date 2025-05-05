@@ -1,0 +1,31 @@
+@interface GEOScoreCategory : PBCodable
+@property (nonatomic) BOOL hasName;
+@property (nonatomic) NSString name;
+@property (nonatomic) BOOL hasScore;
+@property (nonatomic) float score;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (void)setName:;
+- (id)initWithJSON:;
+- (float)score;
+- (BOOL)hasName;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void)setScore:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (BOOL)hasScore;
+- (id)description;
+- (id)name;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)setHasScore:;
+- (id)copyWithZone:;
++ (BOOL)isValid:;
+@end

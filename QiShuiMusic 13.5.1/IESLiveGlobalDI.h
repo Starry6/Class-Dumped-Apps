@@ -1,0 +1,36 @@
+@interface IESLiveGlobalDI : IESLiveDI
+@property (nonatomic) <IESLiveSettings> liveSettings;
+@property (nonatomic) <HTSKVStore> kvStore;
+@property (nonatomic) @ debugService;
+@property (nonatomic) <IESLiveEnvironment> environment;
+@property (nonatomic) <IESLiveAppInfo> appInfo;
+@property (nonatomic) @ userService;
+@property (nonatomic) Protocol debugServiceProtocol;
+@property (nonatomic) Protocol userServiceProtocol;
+- (id)getDebugService;
+- (void)setUserService:;
+- (id)getLiveSettings;
+- (id)cacheObjectWithProtocol:;
+- (id)debugService;
+- (id)debugServiceProtocol;
+- (id)getKvStore;
+- (id)getUserService;
+- (id)liveSettings;
+- (void)setDebugService:;
+- (void)setDebugServiceProtocol:;
+- (void)setLiveSettings:;
+- (void)setUserServiceProtocol:;
+- (id)userService;
+- (id)userServiceProtocol;
+- (void)setUp;
+- (void)setKvStore:;
+- (id)kvStore;
+- (void)dealloc;
+- (void)setEnvironment:;
+- (id)appInfo;
+- (id)environment;
+- (void).cxx_destruct;
+- (id)getEnvironment;
+- (void)setAppInfo:;
+- (id)getAppInfo;
+@end

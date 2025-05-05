@@ -1,0 +1,38 @@
+@interface AMSKeychainOptions : NSObject
+@property (nonatomic) NSString clientCertLabel;
+@property (nonatomic) NSString intermediateCertLabel;
+@property (nonatomic) NSString label;
+@property (nonatomic) Q purpose;
+@property (nonatomic) BOOL regenerateKeys;
+@property (nonatomic) Q style;
+@property (nonatomic) BOOL authenticationFallbackVisible;
+@property (nonatomic) BOOL displayAuthenticationReason;
+@property (nonatomic) NSString prompt;
+- (void)setPurpose:;
+- (id)init;
+- (BOOL)_compareString:withString:;
+- (void)setClientCertLabel:;
+- (BOOL)regenerateKeys;
+- (unsigned long long)purpose;
+- (void)setStyle:;
+- (void)setLabel:;
+- (id)label;
+- (void)setPrompt:;
+- (void)setIntermediateCertLabel:;
+- (id)clientCertLabel;
+- (id)intermediateCertLabel;
+- (void)setRegenerateKeys:;
+- (id)initWithOptionsDictionary:;
+- (id)optionsDictionary;
+- (void).cxx_destruct;
+- (id)prompt;
+- (id)description;
+- (BOOL)displayAuthenticationReason;
+- (void)setAuthenticationFallbackVisible:;
+- (unsigned long long)style;
+- (BOOL)isEqual:;
+- (BOOL)authenticationFallbackVisible;
+- (void)setDisplayAuthenticationReason:;
+- (id)copyWithZone:;
++ (unsigned long long)preferredAttestationStyle;
+@end

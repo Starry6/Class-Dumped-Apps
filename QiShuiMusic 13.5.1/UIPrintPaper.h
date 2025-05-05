@@ -1,0 +1,32 @@
+@interface UIPrintPaper : NSObject
+@property (nonatomic) double scalingFactor;
+@property (nonatomic) {CGSize=dd} paperSize;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} printableRect;
+- (id)_localizedName;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)isEqual:;
+- (double)scalingFactor;
+- (id)paperSize;
+- (id)printableRect;
+- (id)_keywordForPDFMetadata;
+- (void)setScalingFactor:;
+- (id)_initWithPrintKitPaper:;
+- (void)_updatePKPaper:;
+- (id)unAdjustedPaperSize;
+- (id)unAdjustedPrintableRect;
+- (id)_printableRectForDuplex:;
+- (id)_pkPaper;
+- (id)_localizedMediaTypeName;
+- (void)_setPaperOrientation:;
+- (int)_paperOrientation;
+- (id)printRect;
++ (id)bestPaperForPageSize:withPapersFromArray:;
++ (id)bestPaperForPageSize:andContentType:withPapersFromArray:;
++ (id)_readyPaperListForPrinter:withDuplexMode:forContentType:contentSize:;
++ (id)_readyDocumentPaperListForPrinter:withDuplexMode:contentSize:scaleUpForRoll:;
++ (id)_defaultPKPaperForOuptutType:;
++ (id)_genericPaperListForOutputType:;
++ (id)_defaultPaperListForOutputType:;
++ (id)_defaultPaperForOutputType:;
+@end

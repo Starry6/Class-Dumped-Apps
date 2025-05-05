@@ -1,0 +1,34 @@
+@interface IESForestWebSchemeTaskHandler : NSObject
+@property (nonatomic) <BDWebURLSchemeTask> schemeTask;
+@property (nonatomic) IESForestRequestOperation operation;
+@property (nonatomic) BOOL isStopped;
+@property (nonatomic) IESForestKit forestKit;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)processMonitorDataWithResponse:;
+- (void)bdw_nonStreamStartURLSchemeTask:;
+- (void)bdw_startURLSchemeTask;
+- (void)bdw_stopURLSchemeTask;
+- (void)bdw_streamStartURLSchemeTask:;
+- (id)forestKit;
+- (id)initWithWebView:schemeTask:;
+- (BOOL)needAbort;
+- (void)notifyWebViewDidFailWithError:;
+- (void)notifyWebViewDidFinishLoading;
+- (void)notifyWebViewDidLoadData:;
+- (void)notifyWebViewDidPerformRedirection:newRequest:;
+- (void)notifyWebViewDidReceiveResponse:;
+- (id)schemeTask;
+- (void)setForestKit:;
+- (void)setSchemeTask:;
+- (id)operation;
+- (void)setOperation:;
+- (void).cxx_destruct;
+- (BOOL)isStopped;
+- (void)setIsStopped:;
++ (BOOL)bdw_canHandleRequest:;
++ (BOOL)bdw_canHandleRequest:webview:;
++ (id)constructForestRequestParamsWithWebView:request:isPreCheck:willRecordForMainFrameModel:;
+@end

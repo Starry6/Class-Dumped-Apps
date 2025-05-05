@@ -1,0 +1,36 @@
+@interface IESIMSendMessageResponse : NSObject
+@property (nonatomic) NSString logId;
+@property (nonatomic) NSError error;
+@property (nonatomic) q checkCode;
+@property (nonatomic) q statusCode;
+@property (nonatomic) NSDictionary statusMsgDict;
+@property (nonatomic) NSDictionary extra;
+@property (nonatomic) NSString extraJsonString;
+@property (nonatomic) NSString messageId;
+@property (nonatomic) NSString conversationId;
+@property (nonatomic) BOOL isAsyncSend;
+@property (nonatomic) NSArray processDurationMonitorArray;
+- (id)extraJsonString;
+- (void)setProcessDurationMonitorArray:;
+- (void)setIsAsyncSend:;
+- (long long)checkCode;
+- (BOOL)isAsyncSend;
+- (id)logId;
+- (id)processDurationMonitorArray;
+- (void)setCheckCode:;
+- (void)setExtra:;
+- (void)setExtraJsonString:;
+- (void)setLogId:;
+- (void)setStatusMsgDict:;
+- (id)statusMsgDict;
+- (void)setStatusCode:;
+- (id)extra;
+- (long long)statusCode;
+- (id)messageId;
+- (void)setError:;
+- (id)error;
+- (void).cxx_destruct;
+- (void)setMessageId:;
+- (id)conversationId;
+- (void)setConversationId:;
+@end

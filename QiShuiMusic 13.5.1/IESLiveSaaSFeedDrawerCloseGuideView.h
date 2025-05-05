@@ -1,0 +1,31 @@
+@interface IESLiveSaaSFeedDrawerCloseGuideView : UIView
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UIView imageView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIButton cancelButton;
+@property (nonatomic) UIButton confirmButton;
+@property (nonatomic) @? confirmAction;
+@property (nonatomic) @? cancelAction;
+- (void)cancelButtonAction:;
+- (void)confirmButtonAction:;
+- (id)makeSplitView;
+- (void)dismiss;
+- (void)setTitleLabel:;
+- (id)containerView;
+- (void)setContainerView:;
+- (id)cancelAction;
+- (void)setCancelAction:;
+- (void)show;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (id)imageView;
+- (void)setCancelButton:;
+- (id)titleLabel;
+- (id)cancelButton;
+- (void)setImageView:;
+- (id)confirmAction;
+- (void)setConfirmAction:;
+- (void)setupViews;
+- (id)confirmButton;
+- (void)setConfirmButton:;
+@end

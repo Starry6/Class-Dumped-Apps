@@ -1,0 +1,31 @@
+@interface SSSilentEnrollmentContext : NSObject
+@property (nonatomic) NSNumber accountIdentifier;
+@property (nonatomic) NSString headerADSID;
+@property (nonatomic) NSString headerGSToken;
+@property (nonatomic) NSString headerGuid;
+@property (nonatomic) NSString headerMMeClientInfo;
+@property (nonatomic) NSString headerMMeDeviceId;
+@property (nonatomic) NSData parameters;
+@property (nonatomic) NSString URLString;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setAccountIdentifier:;
+- (id)URLString;
+- (id)accountIdentifier;
+- (id)parameters;
+- (void).cxx_destruct;
+- (void)setParameters:;
+- (void)setURLString:;
+- (void)setHeaderADSID:;
+- (void)setHeaderGSToken:;
+- (void)setHeaderGuid:;
+- (void)setHeaderMMeClientInfo:;
+- (void)setHeaderMMeDeviceId:;
+- (id)headerADSID;
+- (id)headerGSToken;
+- (id)headerGuid;
+- (id)headerMMeClientInfo;
+- (id)headerMMeDeviceId;
+@end

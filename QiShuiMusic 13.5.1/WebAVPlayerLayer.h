@@ -1,0 +1,35 @@
+@interface WebAVPlayerLayer : CALayer
+@property (nonatomic) NSString videoGravity;
+@property (nonatomic) BOOL readyForDisplay;
+@property (nonatomic) ^v fullscreenInterface;
+@property (nonatomic) AVPlayerController playerController;
+@property (nonatomic) CALayer videoSublayer;
+@property (nonatomic) NSDictionary pixelBufferAttributes;
+@property (nonatomic) {CGSize=dd} videoDimensions;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} modelVideoLayerFrame;
+- (id)init;
+- (void)setVideoGravity:;
+- (void)dealloc;
+- (void)setPixelBufferAttributes:;
+- (id)playerController;
+- (void)layoutSublayers;
+- (void)setPlayerController:;
+- (void).cxx_destruct;
+- (id)pixelBufferAttributes;
+- (BOOL)isReadyForDisplay;
+- (id).cxx_construct;
+- (void)setReadyForDisplay:;
+- (id)videoGravity;
+- (id)videoRect;
+- (id)fullscreenInterface;
+- (void)setFullscreenInterface:;
+- (void)resolveBounds;
+- (void)setVideoSublayer:;
+- (id)videoSublayer;
+- (id)calculateTargetVideoFrame;
+- (id)videoDimensions;
+- (void)setVideoDimensions:;
+- (id)modelVideoLayerFrame;
+- (void)setModelVideoLayerFrame:;
++ (id)keyPathsForValuesAffectingVideoRect;
+@end

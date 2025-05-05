@@ -1,0 +1,33 @@
+@interface CalDAVUpdateOwnerItem : CoreDAVItem
+@property (nonatomic) ICSDateValue dtstamp;
+@property (nonatomic) NSString displayName;
+@property (nonatomic) NSString firstName;
+@property (nonatomic) NSString lastName;
+@property (nonatomic) NSURL address;
+@property (nonatomic) NSString emailAddress;
+@property (nonatomic) NSString phoneNumber;
+- (id)emailAddress;
+- (void)setLastName:;
+- (id)copyParseRules;
+- (id)phoneNumber;
+- (void)setEmailAddress:;
+- (void)setFirstName:;
+- (void)setPhoneNumber:;
+- (id)firstName;
+- (void)setAddress:;
+- (id)lastName;
+- (void)setDisplayName:;
+- (id)displayName;
+- (void).cxx_destruct;
+- (id)description;
+- (id)address;
+- (void)setDtstamp:;
+- (id)dtstamp;
+- (void)setFirstNameItem:;
+- (void)setLastNameItem:;
+- (void)setDtstampItem:;
+- (void)setAddressItem:;
+- (void)setEmailAddressItem:;
+- (void)setPhoneNumberItem:;
+- (void)setDisplayNameItem:;
+@end

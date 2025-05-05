@@ -1,0 +1,34 @@
+@interface BDPreloadTrackInfo : NSObject
+@property (nonatomic) BOOL isWiFi;
+@property (nonatomic) NSString preloadKey;
+@property (nonatomic) NSString scene;
+@property (nonatomic) NSError error;
+@property (nonatomic) NSDictionary extra;
+@property (nonatomic) q trafficSize;
+@property (nonatomic) double enqueueTime;
+@property (nonatomic) double startTime;
+@property (nonatomic) double finishTime;
+@property (nonatomic) Q type;
+- (void)setEnqueueTime:;
+- (void)setTrafficSize:;
+- (double)enqueueTime;
+- (BOOL)isWiFi;
+- (id)preloadKey;
+- (id)reportParams;
+- (void)setExtra:;
+- (void)setIsWiFi:;
+- (void)setPreloadKey:;
+- (long long)trafficSize;
+- (id)extra;
+- (void)setScene:;
+- (void)setStartTime:;
+- (void)setError:;
+- (void)setType:;
+- (id)error;
+- (double)startTime;
+- (id)scene;
+- (unsigned long long)type;
+- (void).cxx_destruct;
+- (void)setFinishTime:;
+- (double)finishTime;
+@end

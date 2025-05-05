@@ -1,0 +1,32 @@
+@interface IMAssociatedMessageChatItem : IMTranscriptChatItem
+@property (nonatomic) BOOL isFromMe;
+@property (nonatomic) BOOL parentMessageIsFromMe;
+@property (nonatomic) BOOL failed;
+@property (nonatomic) NSString associatedMessageGUID;
+@property (nonatomic) q associatedMessageType;
+@property (nonatomic) {_NSRange=QQ} associatedMessageRange;
+@property (nonatomic) {IMAssociatedMessageGeometryDescriptor=QQfffff} geometryDescriptor;
+@property (nonatomic) NSDate time;
+@property (nonatomic) IMHandle sender;
+@property (nonatomic) NSDictionary messageSummaryInfo;
+@property (nonatomic) IMTapback tapback;
+- (id)time;
+- (id)sender;
+- (id)message;
+- (void).cxx_destruct;
+- (BOOL)failed;
+- (id)copyWithZone:;
+- (BOOL)isFromMe;
+- (id)associatedMessageGUID;
+- (long long)associatedMessageType;
+- (id)tapback;
+- (id)messageSummaryInfo;
+- (BOOL)parentMessageIsFromMe;
+- (id)geometryDescriptor;
+- (id)associatedMessageRange;
+- (void)setTapback:;
+- (id)_initWithItem:sender:;
+- (id)_imAssociatedMessageItem;
+- (void)_setParentMessageIsFromMe:;
+- (void)_setGeometryDescriptor:;
+@end

@@ -1,0 +1,2 @@
+@interface TTAccountLoginCarrierOneKeyServiceAPI : NSObject
+@end

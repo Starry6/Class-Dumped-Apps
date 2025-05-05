@@ -1,0 +1,33 @@
+@interface IESECCommentShowNormalCellModel : NSObject
+@property (nonatomic) NSString ID;
+@property (nonatomic) NSString content;
+@property (nonatomic) NSString userName;
+@property (nonatomic) NSArray userIconURLList;
+@property (nonatomic) q numberOfPhotos;
+@property (nonatomic) q numberOfVideos;
+@property (nonatomic) NSString photoPosterURL;
+@property (nonatomic) NSString videoPosterCoverImageURL;
+@property (nonatomic) NSNumber likesCount;
+@property (nonatomic) BOOL liked;
+- (id)userIconURLList;
+- (id)likesCount;
+- (id)photoPosterURL;
+- (void)setLikesCount:;
+- (void)setPhotoPosterURL:;
+- (void)setUserIconURLList:;
+- (void)setVideoPosterCoverImageURL:;
+- (id)videoPosterCoverImageURL;
+- (id)content;
+- (void)setID:;
+- (void)setContent:;
+- (id)ID;
+- (id)userName;
+- (void)setUserName:;
+- (void).cxx_destruct;
+- (void)setLiked:;
+- (long long)numberOfPhotos;
+- (void)setNumberOfPhotos:;
+- (long long)numberOfVideos;
+- (BOOL)liked;
+- (void)setNumberOfVideos:;
+@end

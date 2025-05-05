@@ -1,0 +1,34 @@
+@interface MPSGraphOperation : NSObject
+@property (nonatomic) BOOL pruneOp;
+@property (nonatomic) NSMutableDictionary tensorNameDict;
+@property (nonatomic) BOOL stopGradient;
+@property (nonatomic) NSArray inputTensors;
+@property (nonatomic) NSArray outputTensors;
+@property (nonatomic) NSArray controlDependencies;
+@property (nonatomic) MPSGraph graph;
+@property (nonatomic) NSString name;
+- (id)graph;
+- (id)initInternal;
+- (id)init;
+- (id)controlDependencies;
+- (void).cxx_destruct;
+- (id)name;
+- (id)copyWithZone:;
+- (id)makeMLIROpWithBuilder:symbolTable:inputValues:opInitialization:name:;
+- (id)initWithGraph:inputTensors:controlDependencies:name:;
+- (id)initWithGraph:inputTensors:controlDependencies:region:name:;
+- (id)partialDerivativeForInputTensor:incomingGradient:inputIndex:name:;
+- (id)partialDerivativesForInputTensors:incomingGradients:name:;
+- (void)partialDerivateForCFOpWithAutodiff:;
+- (BOOL)recurseFromBlock:onEscaped:withAutodiff:;
+- (BOOL)recurseOnBlocksFromOutput:withAutodiff:;
+- (BOOL)recurseOutFromBlockInput:withAutodiff:;
+- (id)inputTensors;
+- (id)outputTensors;
+- (BOOL)pruneOp;
+- (void)setPruneOp:;
+- (id)tensorNameDict;
+- (void)setTensorNameDict:;
+- (BOOL)stopGradient;
+- (void)setStopGradient:;
+@end

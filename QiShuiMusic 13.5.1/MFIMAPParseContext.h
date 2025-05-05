@@ -1,0 +1,36 @@
+@interface MFIMAPParseContext : NSObject
+- (void)setEnd:;
+- (void)setStart:;
+- (id)end;
+- (void)dealloc;
+- (id)start;
+- (void)increment;
+- (id)response;
+- (BOOL)isValid;
+- (id)connection;
+- (BOOL)match:;
+- (id)initWithConnection:response:start:end:;
+- (void)emitWarning:;
+- (void)emitError:;
+- (void)logReadChars;
+- (id)copyAtom;
+- (BOOL)getNumber:;
+- (id)copyNumber;
+- (BOOL)match:upToSpecial:;
+- (id)copyLiteral;
+- (BOOL)literalWithResponseConsumer:section:;
+- (id)copyLiteralString;
+- (id)copyQuotedString;
+- (id)copyNilOrString;
+- (id)copyAString;
+- (id)copyDateTime;
+- (id)copyArrayAllowingNulls:;
+- (id)copyArray;
+- (id)copyMessageSet;
+- (id)copyStringFrom:to:withCaseOption:;
+- (BOOL)parseSpace;
+- (unsigned char)lookAhead;
+- (id)nextSeparator;
++ (BOOL)hadWarningOrError;
++ (void)resetWarningOrError;
+@end

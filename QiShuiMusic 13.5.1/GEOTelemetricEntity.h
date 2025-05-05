@@ -1,0 +1,36 @@
+@interface GEOTelemetricEntity : PBCodable
+@property (nonatomic) BOOL hasEventKey;
+@property (nonatomic) NSInteger eventKey;
+@property (nonatomic) BOOL hasEventValue;
+@property (nonatomic) Q eventValue;
+@property (nonatomic) BOOL hasEventDetail;
+@property (nonatomic) NSString eventDetail;
+- (void)readAll:;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (void)setEventKey:;
+- (int)eventKey;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setHasEventKey:;
+- (BOOL)hasEventKey;
+- (id)eventKeyAsString:;
+- (int)StringAsEventKey:;
+- (unsigned long long)eventValue;
+- (void)setEventValue:;
+- (void)setHasEventValue:;
+- (BOOL)hasEventValue;
+- (BOOL)hasEventDetail;
+- (id)eventDetail;
+- (void)setEventDetail:;
++ (BOOL)isValid:;
+@end

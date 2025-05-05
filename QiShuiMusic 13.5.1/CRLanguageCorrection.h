@@ -1,0 +1,33 @@
+@interface CRLanguageCorrection : NSObject
+@property (nonatomic) ^v characterLanguageModel;
+@property (nonatomic) ^{_LXLexicon=} staticLexicon;
+@property (nonatomic) ^{_LXLexicon=} dynamicLexicon;
+@property (nonatomic) NSString invalidSingleCharCNNCode;
+@property (nonatomic) CRCHPatternNetwork patternFST;
+@property (nonatomic) NSCharacterSet confusableCharacters;
+@property (nonatomic) NSLocale locale;
+- (void)dealloc;
+- (id)locale;
+- (void).cxx_destruct;
+- (id)characterLanguageModel;
+- (id)patternFST;
+- (void)setPatternFST:;
+- (void)setCharacterLanguageModel:;
+- (id)staticLexicon;
+- (void)setStaticLexicon:;
+- (id)initWithRevision:localeCode:customWords:;
+- (void)loadCharacterNgramModel:;
+- (BOOL)isLanguageCorrectionSupportedForLanguage:revision:;
+- (id)correctTextFeature:inImage:withTextPieces:withMaxWidthPerRegion:withMedianCharSpacing:withBreakpoints:segmenter:options:numCharCandidates:downscaleSpaceRatio:latticePresetIdx:latticeResults:;
+- (id)confusableCharacters;
+- (BOOL)preferAllUppercase:;
+- (BOOL)preferAllLowercase:;
+- (void)adjustCaseConfusions:;
+- (id)createDynamicLexiconForLocale:error:;
+- (id)findBestPathsForTextResults:numPathsToExtract:ngramsize:;
+- (id)dynamicLexicon;
+- (void)setDynamicLexicon:;
+- (id)invalidSingleCharCNNCode;
+- (void)setInvalidSingleCharCNNCode:;
++ (id)supportedLanguagesForRevision:error:;
+@end

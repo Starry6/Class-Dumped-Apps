@@ -1,0 +1,36 @@
+@interface INGetAvailableRestaurantReservationBookingsIntent : INIntent
+@property (nonatomic) NSDate preferredBookingDate;
+@property (nonatomic) INRestaurant restaurant;
+@property (nonatomic) Q partySize;
+@property (nonatomic) NSDateComponents preferredBookingDateComponents;
+@property (nonatomic) NSNumber maximumNumberOfResults;
+@property (nonatomic) NSDate earliestBookingDateForResults;
+@property (nonatomic) NSDate latestBookingDateForResults;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setEarliestBookingDateForResults:;
+- (id)_dictionaryRepresentation;
+- (id)initWithCoder:;
+- (void)setMaximumNumberOfResults:;
+- (id)earliestBookingDateForResults;
+- (void)encodeWithCoder:;
+- (void)setRestaurant:;
+- (id)restaurant;
+- (void).cxx_destruct;
+- (id)maximumNumberOfResults;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (unsigned long long)partySize;
+- (void)setPartySize:;
+- (id)preferredBookingDateComponents;
+- (void)setPreferredBookingDateComponents:;
+- (id)latestBookingDateForResults;
+- (void)setLatestBookingDateForResults:;
+- (id)initWithRestaurant:partySize:preferredBookingDateComponents:maximumNumberOfResults:earliestBookingDateForResults:latestBookingDateForResults:;
+- (id)preferredBookingDate;
+- (void)setPreferredBookingDate:;
++ (BOOL)supportsSecureCoding;
++ (id)intentDescription;
+@end

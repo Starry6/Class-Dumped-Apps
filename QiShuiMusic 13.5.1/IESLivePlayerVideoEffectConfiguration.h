@@ -1,0 +1,33 @@
+@interface IESLivePlayerVideoEffectConfiguration : NSObject
+@property (nonatomic) NSString platformConfig;
+@property (nonatomic) NSString cachePath;
+@property (nonatomic) NSString license;
+@property (nonatomic) NSString abConfig;
+@property (nonatomic) NSString userData;
+@property (nonatomic) BOOL useGL30;
+@property (nonatomic) NSString deviceName;
+@property (nonatomic) ^? resourceFinder;
+@property (nonatomic) ^? resourceFinderRelease;
+@property (nonatomic) @? msgListener;
+- (void)setMsgListener:;
+- (BOOL)useGL30;
+- (id)abConfig;
+- (id)msgListener;
+- (id)platformConfig;
+- (id)resourceFinder;
+- (id)resourceFinderRelease;
+- (void)setAbConfig:;
+- (void)setPlatformConfig:;
+- (void)setResourceFinder:;
+- (void)setResourceFinderRelease:;
+- (void)setUseGL30:;
+- (id)cachePath;
+- (void)setDeviceName:;
+- (id)deviceName;
+- (void)setUserData:;
+- (void).cxx_destruct;
+- (id)userData;
+- (id)license;
+- (void)setCachePath:;
+- (void)setLicense:;
+@end

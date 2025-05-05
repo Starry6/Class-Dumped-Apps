@@ -1,0 +1,2 @@
+@interface CSJDynamicTagGroupView : CSJDynamicAbstractView
+@end

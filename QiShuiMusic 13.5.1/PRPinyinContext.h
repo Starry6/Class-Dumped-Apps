@@ -1,0 +1,32 @@
+@interface PRPinyinContext : PRAutocorrectionContext
+- (id)init;
+- (void)dealloc;
+- (id)completions;
+- (void)reset;
+- (id)description;
+- (id)correction;
+- (id)prefixes;
+- (void)_removeModificationsAndMoveStartingPoint;
+- (void)_advanceIndexes;
+- (void)_addTranspositions;
+- (void)_addReplacements;
+- (void)_addInsertions;
+- (void)_addDeletions;
+- (void)_filterModifications;
+- (void)addInputCharacter:geometryModel:geometryData:;
+- (void)removeNumberOfInputCharacters:;
+- (id)currentModifications;
+- (id)addedModifications;
+- (id)removedModifications;
+- (id)guesses;
+- (void)setValidSequenceCorrectionThreshold:;
+- (double)validSequenceCorrectionThreshold;
+- (int)romanization;
+- (BOOL)_addEnglishWordForRange:quickly:;
+- (BOOL)_addEnglishWordsEndingAtIndex:quickly:;
+- (void)_addEnglishWordsQuickly:;
+- (void)_addSpecialEnglishWords;
+- (void)_addValidSequenceReplacements;
+- (void)_addPrefixes;
+- (void)_removePrefixes;
+@end

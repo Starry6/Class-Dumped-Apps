@@ -1,0 +1,32 @@
+@interface IESLiveSaaSSettingStorage : NSObject
+@property (nonatomic) NSDictionary originalData;
+@property (nonatomic) <IESLiveSaaSSettingsDictStorage> latestData;
+@property (nonatomic) <IESLiveSaaSSettingsDictStorage> tunedData;
+@property (nonatomic) <IESLiveSaaSSettingsUpdateDelegate> delegate;
+@property (nonatomic) NSDictionary latestDic;
+@property (nonatomic) NSDictionary originalDic;
+@property (nonatomic) NSMutableDictionary freezedSettings;
+- (id)freezedSettings;
+- (id)latestData;
+- (id)latestDic;
+- (void)mergedLatestData;
+- (void)mergedOriginalData;
+- (id)originalDic;
+- (void)refreshLatestStorage;
+- (void)refreshOriginalStorage;
+- (void)setFreezedSettings:;
+- (void)setLatestData:;
+- (void)setOriginalData:;
+- (void)setTunedData:;
+- (id)tunedData;
+- (void)updateTunedData:;
+- (id)init;
+- (void)dealloc;
+- (void)merge:with:;
+- (void)setDelegate:;
+- (void)updateData:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)originalData;
++ (void)merge:with:;
+@end

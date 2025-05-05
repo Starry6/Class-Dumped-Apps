@@ -1,0 +1,34 @@
+@interface GEOChargeLocationDetails : PBCodable
+@property (nonatomic) BOOL hasArrivedAtChargeLocation;
+@property (nonatomic) BOOL arrivedAtChargeLocation;
+@property (nonatomic) BOOL hasRoutePaused;
+@property (nonatomic) BOOL routePaused;
+@property (nonatomic) BOOL hasRouteResumed;
+@property (nonatomic) BOOL routeResumed;
+- (void)readAll:;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)routePaused;
+- (void)setRoutePaused:;
+- (void)setHasRoutePaused:;
+- (BOOL)hasRoutePaused;
+- (BOOL)routeResumed;
+- (void)setRouteResumed:;
+- (void)setHasRouteResumed:;
+- (BOOL)hasRouteResumed;
+- (BOOL)arrivedAtChargeLocation;
+- (void)setArrivedAtChargeLocation:;
+- (void)setHasArrivedAtChargeLocation:;
+- (BOOL)hasArrivedAtChargeLocation;
++ (BOOL)isValid:;
+@end

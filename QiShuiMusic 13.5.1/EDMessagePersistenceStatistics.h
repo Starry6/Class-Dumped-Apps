@@ -1,0 +1,38 @@
+@interface EDMessagePersistenceStatistics : NSObject
+@property (nonatomic) double start;
+@property (nonatomic) double duration;
+@property (nonatomic) Q messages;
+@property (nonatomic) Q messageData;
+@property (nonatomic) Q messagesDeleted;
+@property (nonatomic) Q messageDataDeleted;
+@property (nonatomic) Q indexableMessages;
+@property (nonatomic) Q messagesIndexed;
+@property (nonatomic) Q messagesToIndex;
+@property (nonatomic) Q indexableAttachments;
+@property (nonatomic) Q attachmentsIndexed;
+@property (nonatomic) Q attachmentsToIndex;
+- (void)setStart:;
+- (unsigned long long)messages;
+- (double)start;
+- (void)setDuration:;
+- (double)duration;
+- (unsigned long long)messageData;
+- (void)setMessageData:;
+- (void)setMessages:;
+- (unsigned long long)messagesDeleted;
+- (unsigned long long)messagesIndexed;
+- (unsigned long long)messagesToIndex;
+- (void)setAttachmentsIndexed:;
+- (void)setAttachmentsToIndex:;
+- (void)setIndexableAttachments:;
+- (unsigned long long)attachmentsIndexed;
+- (unsigned long long)attachmentsToIndex;
+- (unsigned long long)messageDataDeleted;
+- (unsigned long long)indexableAttachments;
+- (unsigned long long)indexableMessages;
+- (void)setMessageDataDeleted:;
+- (void)setMessagesDeleted:;
+- (void)setIndexableMessages:;
+- (void)setMessagesIndexed:;
+- (void)setMessagesToIndex:;
+@end

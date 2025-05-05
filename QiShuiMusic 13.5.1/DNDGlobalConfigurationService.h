@@ -1,0 +1,34 @@
+@interface DNDGlobalConfigurationService : NSObject
+@property (nonatomic) NSString clientIdentifier;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)modesCanImpactAvailability;
+- (void)removeListener:;
+- (BOOL)setCloudSyncPreferenceEnabled:error:;
+- (BOOL)setPairSyncPreferenceEnabled:error:;
+- (BOOL)setModesCanImpactAvailability:error:;
+- (void)didChangeFocusStatusSharingSettingForApplicationIdentifier:;
+- (BOOL)_queue_registerForUpdatesIfRequired;
+- (void)remoteService:didReceiveUpdatedPairSyncState:;
+- (void)remoteService:didReceiveUpdatedPreventAutoReplySetting:;
+- (BOOL)setPhoneCallBypassSettings:error:;
+- (id)getStateDumpReturningError:;
+- (BOOL)isAutoReplyPrevented;
+- (unsigned long long)getPairSyncStateReturningError:;
+- (id)_initWithClientIdentifier:;
+- (unsigned long long)getCloudSyncStateReturningError:;
+- (void).cxx_destruct;
+- (void)_updateListenersOfCloudSyncPreferenceChange:;
+- (BOOL)getPreventAutoReplyReturningError:;
+- (BOOL)setPreventAutoReply:error:;
+- (void)remoteService:didReceiveUpdatedPhoneCallBypassSettings:;
+- (id)clientIdentifier;
+- (id)getPhoneCallBypassSettingsReturningError:;
+- (id)getAccountFeatureSupportWithError:;
+- (void)addListener:withCompletionHandler:;
+- (void)isCloudSyncActiveWithCompletionHandler:;
+- (BOOL)isCloudSyncActive;
++ (id)serviceForClientIdentifier:;
+@end

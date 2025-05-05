@@ -1,0 +1,30 @@
+@interface RBSProcessAssertionInfo : NSObject
+@property (nonatomic) Q reason;
+@property (nonatomic) NSString explanation;
+@property (nonatomic) NSString domain;
+@property (nonatomic) NSString name;
+@property (nonatomic) C type;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)explanation;
+- (void)setName:;
+- (id)initWithRBSXPCCoder:;
+- (void)encodeWithRBSXPCCoder:;
+- (unsigned long long)reason;
+- (unsigned long long)hash;
+- (void)setReason:;
+- (unsigned char)type;
+- (void).cxx_destruct;
+- (void)setExplanation:;
+- (id)description;
+- (id)name;
+- (id)domain;
+- (void)setDomain:;
+- (BOOL)isEqual:;
+- (id)initWithType:;
+- (id)copyWithZone:;
+- (BOOL)isLegacyAssertionReason:;
++ (BOOL)supportsRBSXPCSecureCoding;
+@end

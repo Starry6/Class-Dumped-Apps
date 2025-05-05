@@ -1,0 +1,35 @@
+@interface USOSchemaUSOEdge : SISchemaInstrumentationMessage
+@property (nonatomic) I fromIndex;
+@property (nonatomic) BOOL hasFromIndex;
+@property (nonatomic) I toIndex;
+@property (nonatomic) BOOL hasToIndex;
+@property (nonatomic) USOSchemaUSOEdgeLabel label;
+@property (nonatomic) BOOL hasLabel;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (BOOL)hasLabel;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (void)setLabel:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (id)label;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (unsigned int)fromIndex;
+- (unsigned int)toIndex;
+- (void)setFromIndex:;
+- (void)setToIndex:;
+- (void)setHasLabel:;
+- (void)deleteLabel;
+- (BOOL)hasFromIndex;
+- (void)setHasFromIndex:;
+- (void)deleteFromIndex;
+- (BOOL)hasToIndex;
+- (void)setHasToIndex:;
+- (void)deleteToIndex;
+@end

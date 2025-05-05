@@ -1,0 +1,35 @@
+@interface ARFaceTrackingConfiguration : ARConfiguration
+@property (nonatomic) BOOL lowPower;
+@property (nonatomic) q maximumNumberOfTrackedFaces;
+@property (nonatomic) BOOL worldTrackingEnabled;
+- (id)init;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)lowPower;
+- (void)setLightEstimationEnabled:;
+- (void)setCameraPosition:;
+- (long long)maximumNumberOfTrackedFaces;
+- (void)createTechniques:;
+- (id)parentImageSensorSettings;
+- (id)imageSensorSettings;
+- (void)setMirroredFrameOutput:;
+- (id)secondaryTechniques;
+- (id)renderingTechnique;
+- (id)imageSensorSettingsForLowPower;
+- (id)imageSensorSettingsForWorldTracking;
+- (void)setMaximumNumberOfTrackedFaces:;
+- (BOOL)isWorldTrackingEnabled;
+- (void)setWorldTrackingEnabled:;
+- (void)setLowPower:;
++ (id)new;
++ (BOOL)isSupported;
++ (id)supportedVideoFormats;
++ (BOOL)supportsFrameSemantics:;
++ (BOOL)supportsWorldTracking;
++ (long long)supportedNumberOfTrackedFaces;
++ (id)fallbackVideoFormat;
++ (id)fallbackVideoFormatWithCaptureDeviceType:;
++ (id)_querySupportedVideoFormats;
++ (id)supportedVideoFormatsForWorldTracking;
++ (id)_querySupportedVideoFormatsForWorldTracking;
+@end

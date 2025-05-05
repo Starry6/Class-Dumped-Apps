@@ -1,0 +1,30 @@
+@interface MFInvocationQueue : NSObject
+@property (nonatomic) Q maxThreadCount;
+@property (nonatomic) Q threadPriorityTrigger;
+@property (nonatomic) double threadRecycleTimeout;
+@property (nonatomic) Q invocationCount;
+@property (nonatomic) Q threadCount;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (void)dealloc;
+- (void)didCancel:;
+- (unsigned long long)threadCount;
+- (void).cxx_destruct;
+- (void)removeAllItems;
+- (id)copyDiagnosticInformation;
+- (void)_drainQueue:;
+- (id)initWithMaxThreadCount:;
+- (void)setMaxThreadCount:;
+- (unsigned long long)maxThreadCount;
+- (unsigned long long)invocationCount;
+- (void)addInvocation:;
+- (unsigned long long)threadPriorityTrigger;
+- (void)setThreadPriorityTrigger:;
+- (double)threadRecycleTimeout;
+- (void)setThreadRecycleTimeout:;
++ (id)sharedInvocationQueue;
++ (void)flushAllInvocationQueues;
+@end

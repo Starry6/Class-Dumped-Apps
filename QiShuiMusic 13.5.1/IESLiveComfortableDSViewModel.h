@@ -1,0 +1,37 @@
+@interface IESLiveComfortableDSViewModel : NSObject
+@property (nonatomic) NSNumber currentEffectiveHeight;
+@property (nonatomic) NSMutableArray subscriberList;
+@property (nonatomic) BOOL isFirstLoadDuringPanelOpen;
+@property (nonatomic) IESLiveGiftPanelDataSharing dataSharing;
+@property (nonatomic) <IESLiveGiftModuleRecipientRouter> recipientRouter;
+@property (nonatomic) UIView<IESHYContainerProtocol> hybridContainer;
+@property (nonatomic) @? viewFrameChanged;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)pageInitialData;
+- (id)recipientRouter;
+- (id)hybridContainer;
+- (void)setDataSharing:;
+- (id)currentEffectiveHeight;
+- (id)dataSharing;
+- (void)didSetAttachingDIContext;
+- (BOOL)enableShowComfortableDS;
+- (id)initWithDataSharing:;
+- (BOOL)isFirstLoadDuringPanelOpen;
+- (void)loadHybridContainerWithFrame:;
+- (void)setCurrentEffectiveHeight:;
+- (void)setHybridContainer:;
+- (void)setIsFirstLoadDuringPanelOpen:;
+- (void)setRecipientRouter:;
+- (void)setViewFrameChanged:;
+- (void)subscribeEvent;
+- (void)unsubscribeEvent;
+- (void)updateComfortableDS:withFrame:;
+- (id)viewFrameChanged;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (id)subscriberList;
+- (void)setSubscriberList:;
+@end

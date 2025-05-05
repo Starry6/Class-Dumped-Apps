@@ -1,0 +1,32 @@
+@interface CBPairingAgent : NSObject
+@property (nonatomic) <CBPairingAgentParentDelegate> parentManager;
+@property (nonatomic) <CBPairingAgentDelegate> delegate;
+@property (nonatomic) BOOL useOOBMode;
+- (void)handlePairingRequested:;
+- (void)dealloc;
+- (BOOL)useOOBMode;
+- (void)pairPeer:options:;
+- (void)setDelegate:;
+- (void)observeValueForKeyPath:ofObject:change:context:;
+- (id)initWithParentManager:;
+- (void)handleUnpaired:;
+- (void)respondToPairingRequest:type:accept:data:;
+- (void)setParentManager:;
+- (BOOL)isPeerPaired:;
+- (BOOL)isPeerCloudPaired:;
+- (void)pairPeer:useMITM:;
+- (void)setOOBPairingEnabled:forPeer:;
+- (id)delegate;
+- (void)pairPeer:;
+- (void)setUseOOBMode:;
+- (void).cxx_destruct;
+- (id)retrieveOOBDataForPeer:;
+- (void)handlePairingMessage:args:;
+- (void)unpairPeer:;
+- (void)updateRegistration;
+- (id)retrievePairedPeers;
+- (BOOL)isPeerMagicPaired:;
+- (void)handlePairingCompleted:;
+- (void)unpairPeer:options:;
+- (id)parentManager;
+@end

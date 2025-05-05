@@ -1,0 +1,36 @@
+@interface SCNCylinder : SCNGeometry
+@property (nonatomic) double radius;
+@property (nonatomic) double height;
+@property (nonatomic) q radialSegmentCount;
+@property (nonatomic) q heightSegmentCount;
+- (void)setRadius:;
+- (id)init;
+- (id)copy;
+- (double)radius;
+- (id)initWithCoder:;
+- (double)height;
+- (void)encodeWithCoder:;
+- (void)setHeight:;
+- (id)description;
+- (id)copyWithZone:;
+- (long long)primitiveType;
+- (void)setPrimitiveType:;
+- (void)setRadialSpan:;
+- (void)setRadialSegmentCount:;
+- (void)setHeightSegmentCount:;
+- (BOOL)getBoundingBoxMin:max:;
+- (BOOL)getBoundingSphereCenter:radius:;
+- (id)copyAnimationChannelForKeyPath:animation:;
+- (id)__createCFObject;
+- (id)presentationGeometry;
+- (void)_setupObjCModelFrom:;
+- (id)initWithParametricGeometryRef:;
+- (id)initPresentationParametricGeometryWithParametricGeometryRef:;
+- (void)_syncObjCModel:;
+- (long long)heightSegmentCount;
+- (double)radialSpan;
+- (id)presentationCylinder;
+- (long long)radialSegmentCount;
++ (BOOL)supportsSecureCoding;
++ (id)cylinderWithRadius:height:;
+@end

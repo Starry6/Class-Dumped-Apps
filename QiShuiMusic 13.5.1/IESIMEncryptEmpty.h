@@ -1,0 +1,2 @@
+@interface IESIMEncryptEmpty : NSObject
+@end

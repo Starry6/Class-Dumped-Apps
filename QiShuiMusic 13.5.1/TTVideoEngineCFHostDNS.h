@@ -1,0 +1,32 @@
+@interface TTVideoEngineCFHostDNS : TTVideoEngineDNSBase
+@property (nonatomic) double timeout;
+@property (nonatomic) NSString ipAddress;
+@property (nonatomic) BOOL isCancelled;
+@property (nonatomic) BOOL isUserCancel;
+@property (nonatomic) BOOL isSuccess;
+@property (nonatomic) Q maxCount;
+@property (nonatomic) NSError error;
+- (BOOL)isUserCancel;
+- (void)notifyError:;
+- (void)notifySuccess:;
+- (void)parseDNS;
+- (id)parseResult:;
+- (void)setIsUserCancel:;
+- (BOOL)isSuccess;
+- (void)cancel;
+- (void)dealloc;
+- (unsigned long long)maxCount;
+- (BOOL)isCancelled;
+- (void)setMaxCount:;
+- (void)start;
+- (void)setError:;
+- (void)setTimeout:;
+- (id)error;
+- (void)setIsCancelled:;
+- (void).cxx_destruct;
+- (double)timeout;
+- (id)initWithHostname:;
+- (id)ipAddress;
+- (void)setIsSuccess:;
+- (void)setIpAddress:;
+@end

@@ -1,0 +1,38 @@
+@interface CMDeviceMotionLite : NSObject
+@property (nonatomic) {?=ddd} rawAcceleration;
+@property (nonatomic) {?=ddd} rawRotationRate;
+@property (nonatomic) Q machTimestamp;
+@property (nonatomic) float gyroTemperature;
+@property (nonatomic) float compassTemperature;
+@property (nonatomic) {?=ddd} rawMagneticField;
+@property (nonatomic) {?=ddd} gravity;
+@property (nonatomic) {?=ddd} userAcceleration;
+@property (nonatomic) float tip;
+@property (nonatomic) float tilt;
+@property (nonatomic) CMAttitude attitude;
+@property (nonatomic) {?=ddd} rotationRate;
+@property (nonatomic) BOOL usingCompass;
+@property (nonatomic) NSString physicalDeviceUniqueID;
+- (void)dealloc;
+- (float)tip;
+- (id)rotationRate;
+- (id)initWithCoder:;
+- (id)attitude;
+- (id)debugDescription;
+- (id)gravity;
+- (void)encodeWithCoder:;
+- (id)description;
+- (id)userAcceleration;
+- (id)copyWithZone:;
+- (float)tilt;
+- (id)initWithDeviceMotionLite:andDeviceID:;
+- (BOOL)isUsingCompass;
+- (id)physicalDeviceUniqueID;
+- (id)rawAcceleration;
+- (id)rawRotationRate;
+- (unsigned long long)machTimestamp;
+- (float)gyroTemperature;
+- (float)compassTemperature;
+- (id)rawMagneticField;
++ (BOOL)supportsSecureCoding;
+@end

@@ -1,0 +1,31 @@
+@interface INIntentDescription : NSObject
+@property (nonatomic) NSString name;
+@property (nonatomic) NSString responseName;
+@property (nonatomic) # facadeClass;
+@property (nonatomic) # dataClass;
+@property (nonatomic) NSString type;
+@property (nonatomic) BOOL isPrivate;
+@property (nonatomic) : handleSelector;
+@property (nonatomic) : confirmSelector;
+@property (nonatomic) NSDictionary slotsByName;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)isPrivate;
+- (Class)dataClass;
+- (id)slotsByName;
+- (unsigned long long)hash;
+- (SEL)handleSelector;
+- (id)slotDescriptions;
+- (Class)facadeClass;
+- (id)type;
+- (id)initWithName:responseName:facadeClass:dataClass:type:isPrivate:handleSelector:confirmSelector:slotsByName:;
+- (SEL)confirmSelector;
+- (id)slotByName:;
+- (void).cxx_destruct;
+- (id)name;
+- (id)responseName;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+@end

@@ -1,0 +1,34 @@
+@interface IESLiveInteractiveLinkConfig : NSObject
+@property (nonatomic) <IESLiveRoomServiceAdapter> roomModel;
+@property (nonatomic) Q scene;
+@property (nonatomic) Q fallBackScene;
+@property (nonatomic) <IESLiveInteractiveLinkAPI> linkAPI;
+@property (nonatomic) NSString basePath;
+@property (nonatomic) BOOL openInviteTimer;
+@property (nonatomic) BOOL openApplyTimer;
+@property (nonatomic) IESLiveInterativeTimeOutConfig timeOutConfig;
+@property (nonatomic) BOOL enableSpecificLinkmicMethodType;
+@property (nonatomic) NSArray linkmicMethodType;
+- (id)linkAPI;
+- (BOOL)openInviteTimer;
+- (BOOL)enableSpecificLinkmicMethodType;
+- (unsigned long long)fallBackScene;
+- (id)linkmicMethodType;
+- (id)linkmicMethodTypeDescription;
+- (BOOL)openApplyTimer;
+- (id)roomModel;
+- (void)setEnableSpecificLinkmicMethodType:;
+- (void)setFallBackScene:;
+- (void)setLinkAPI:;
+- (void)setLinkmicMethodType:;
+- (void)setOpenApplyTimer:;
+- (void)setOpenInviteTimer:;
+- (void)setRoomModel:;
+- (id)timeOutConfig;
+- (id)init;
+- (void)setScene:;
+- (unsigned long long)scene;
+- (void).cxx_destruct;
+- (id)basePath;
+- (void)setBasePath:;
+@end

@@ -1,0 +1,30 @@
+@interface CNUISchedulerProvider : NSObject
+@property (nonatomic) <CNSchedulerProvider> schedulerProvider;
+@property (nonatomic) CNSuspendableSchedulerDecorator suspendableBackgroundScheduler;
+@property (nonatomic) <CNScheduler> afterCACommitScheduler;
+@property (nonatomic) <CNScheduler> backgroundScheduler;
+@property (nonatomic) <CNScheduler> mainThreadScheduler;
+@property (nonatomic) <CNScheduler> inlineScheduler;
+@property (nonatomic) <CNScheduler> immediateScheduler;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)backgroundScheduler;
+- (id)mainThreadScheduler;
+- (id)init;
+- (id)newSynchronousSerialSchedulerWithName:;
+- (id)afterCACommitScheduler;
+- (void)resumeBackgroundScheduler;
+- (id)suspendableBackgroundScheduler;
+- (id)newReaderWriterSchedulerWithName:;
+- (id)schedulerProvider;
+- (void)suspendBackgroundScheduler;
+- (id)inlineScheduler;
+- (id)initWithSchedulerProvider:;
+- (id)immediateScheduler;
+- (void).cxx_destruct;
+- (id)newSerialSchedulerWithName:;
+- (id)backgroundSchedulerWithQualityOfService:;
++ (id)makeBackgroundScheduler;
+@end

@@ -1,0 +1,30 @@
+@interface CKDPRecordZoneIdentifier : PBCodable
+@property (nonatomic) BOOL hasValue;
+@property (nonatomic) CKDPIdentifier value;
+@property (nonatomic) BOOL hasOwnerIdentifier;
+@property (nonatomic) CKDPIdentifier ownerIdentifier;
+@property (nonatomic) BOOL hasDatabaseType;
+@property (nonatomic) NSInteger databaseType;
+- (id)ownerIdentifier;
+- (BOOL)hasValue;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void)setValue:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)value;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasOwnerIdentifier;
+- (int)databaseType;
+- (void)setDatabaseType:;
+- (void)setHasDatabaseType:;
+- (BOOL)hasDatabaseType;
+- (id)databaseTypeAsString:;
+- (int)StringAsDatabaseType:;
+- (void)setOwnerIdentifier:;
+@end

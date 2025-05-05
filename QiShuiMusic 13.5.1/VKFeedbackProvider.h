@@ -1,0 +1,34 @@
+@interface VKFeedbackProvider : NSObject
+@property (nonatomic) <VKFeedbackAssetsProvider> assetsProvider;
+@property (nonatomic) VKCImageAnalysis imageAnalysis;
+@property (nonatomic) NSError error;
+@property (nonatomic) VKCImageAnalyzerRequest request;
+@property (nonatomic) UIViewController presentingViewController;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)presentingViewController;
+- (id)init;
+- (void)setPresentingViewController:;
+- (void)setError:;
+- (id)error;
+- (id)request;
+- (id)imageAnalysis;
+- (void).cxx_destruct;
+- (void)setRequest:;
+- (void)setImageAnalysis:;
+- (id)assetsProvider;
+- (void)setAssetsProvider:;
+- (void)feedbackProviderViewControllerDidCancel:;
+- (void)feedbackProviderViewController:submitWithOptions:attachments:;
+- (void)provideFeedbackWithType:;
+- (void)provideFeedbackWithType:options:metadata:promisedAttachments:userResponseHandler:;
+- (id)_jsonRepresentationForAttributesDictionary:;
+- (void)_saveFeedbackAttributesJSON:;
+- (void)_captureScreenshots;
+- (void)_saveScreenshots;
+- (void)_saveImage:withName:;
+- (void)provideFeedbackWithType:consentPresentingView:;
+- (void)provideFeedbackWithType:options:metadata:consentPresentingView:;
+@end

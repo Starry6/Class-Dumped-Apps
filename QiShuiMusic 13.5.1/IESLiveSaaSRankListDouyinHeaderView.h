@@ -1,0 +1,37 @@
+@interface IESLiveSaaSRankListDouyinHeaderView : UITableViewCell
+@property (nonatomic) IESLiveSaaSRankListModel listModel;
+@property (nonatomic) Q type;
+@property (nonatomic) UILabel topLabel;
+@property (nonatomic) UIButton lastHourButton;
+@property (nonatomic) UIView bottomLine;
+@property (nonatomic) UIImageView arrowImageView;
+@property (nonatomic) NSArray rankViews;
+@property (nonatomic) <HTSLiveSaaSRankListActions> actionCreator;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)actionCreator;
+- (void)avatarViewAction:;
+- (id)lastHourButton;
+- (void)lastHourButtonActions:;
+- (id)rankViews;
+- (void)setActionCreator:;
+- (void)setLastHourButton:;
+- (void)setListModel:;
+- (void)setRankViews:;
+- (void)updateWithListModel:type:atIndex:;
+- (id)initWithStyle:reuseIdentifier:;
+- (void)setType:;
+- (id)listModel;
+- (unsigned long long)type;
+- (void).cxx_destruct;
+- (void)setupViews;
+- (id)topLabel;
+- (void)setTopLabel:;
+- (id)bottomLine;
+- (void)setBottomLine:;
+- (id)arrowImageView;
+- (void)setArrowImageView:;
++ (double)contentHeight;
+@end

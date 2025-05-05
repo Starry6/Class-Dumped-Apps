@@ -1,0 +1,2 @@
+@interface IESECLiveRequestRoot : GPBRootObject
+@end

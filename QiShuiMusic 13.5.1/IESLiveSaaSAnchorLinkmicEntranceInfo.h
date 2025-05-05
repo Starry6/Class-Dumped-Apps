@@ -1,0 +1,35 @@
+@interface IESLiveSaaSAnchorLinkmicEntranceInfo : BDDynamicMTLModel
+@property (nonatomic) q panelType;
+@property (nonatomic) IESLiveSaaSImage icon;
+@property (nonatomic) NSString text;
+@property (nonatomic) IESLiveSaaSImage pkToLinkmicImage;
+@property (nonatomic) IESLiveSaaSImage linkmicToPkImage;
+@property (nonatomic) IESLiveSaaSImage leadPkImage;
+@property (nonatomic) NSString leadPkFreqKey;
+@property (nonatomic) NSString wordType;
+@property (nonatomic) NSDictionary buttonLead;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setLeadPkImage:;
+- (id)buttonLead;
+- (id)leadPkFreqKey;
+- (id)leadPkImage;
+- (id)linkmicToPkImage;
+- (long long)panelType;
+- (id)pkToLinkmicImage;
+- (void)setButtonLead:;
+- (void)setLeadPkFreqKey:;
+- (void)setLinkmicToPkImage:;
+- (void)setPanelType:;
+- (void)setPkToLinkmicImage:;
+- (void)setText:;
+- (id)icon;
+- (void)setIcon:;
+- (void).cxx_destruct;
+- (id)text;
+- (void)setWordType:;
+- (id)wordType;
++ (id)JSONKeyPathsByPropertyKey;
+@end

@@ -1,0 +1,36 @@
+@interface CPTabBarTemplate : CPTemplate
+@property (nonatomic) Q indexOfSelectedTab;
+@property (nonatomic) <CPTabBarTemplateProviding> templateProvider;
+@property (nonatomic) NAFuture templateProviderFuture;
+@property (nonatomic) CPInterfaceController interfaceController;
+@property (nonatomic) <CPTabBarTemplateDelegate> delegate;
+@property (nonatomic) NSArray templates;
+@property (nonatomic) CPTemplate selectedTemplate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setDelegate:;
+- (unsigned long long)indexOfSelectedTab;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)templates;
+- (void)setTrailingNavigationBarButtons:;
+- (id)interfaceController;
+- (void)setInterfaceController:;
+- (id)selectedTemplate;
+- (void)handleActionForControlIdentifier:;
+- (id)leadingNavigationBarButtons;
+- (void)setLeadingNavigationBarButtons:;
+- (id)trailingNavigationBarButtons;
+- (id)templateProvider;
+- (void)setTemplateProvider:;
+- (id)initWithTemplates:;
+- (void)updateTemplates:;
+- (void)validateTemplates:;
+- (void)setIndexOfSelectedTab:;
++ (BOOL)supportsSecureCoding;
++ (unsigned long long)maximumTabCount;
+@end

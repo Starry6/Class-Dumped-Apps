@@ -1,0 +1,37 @@
+@interface CMMotionActivity : CMLogItem
+@property (nonatomic) BOOL vehicleConnected;
+@property (nonatomic) BOOL vehicleWifiHint;
+@property (nonatomic) BOOL vehicleGpsHint;
+@property (nonatomic) BOOL vehicleBasebandHint;
+@property (nonatomic) BOOL vehicleMotionHint;
+@property (nonatomic) BOOL vehicleBTHint;
+@property (nonatomic) q confidence;
+@property (nonatomic) NSDate startDate;
+@property (nonatomic) BOOL unknown;
+@property (nonatomic) BOOL stationary;
+@property (nonatomic) BOOL walking;
+@property (nonatomic) BOOL running;
+@property (nonatomic) BOOL automotive;
+@property (nonatomic) BOOL cycling;
+- (BOOL)unknown;
+- (long long)confidence;
+- (id)startDate;
+- (BOOL)stationary;
+- (BOOL)running;
+- (BOOL)cycling;
+- (BOOL)walking;
+- (id)initWithCoder:;
+- (id)motionActivity;
+- (BOOL)automotive;
+- (void)encodeWithCoder:;
+- (id)description;
+- (id)copyWithZone:;
+- (id)initWithMotionActivity:;
+- (BOOL)isVehicleConnected;
+- (BOOL)isVehicleWifiHint;
+- (BOOL)isVehicleGpsHint;
+- (BOOL)isVehicleBasebandHint;
+- (BOOL)isVehicleMotionHint;
+- (BOOL)isVehicleBTHint;
++ (BOOL)supportsSecureCoding;
+@end

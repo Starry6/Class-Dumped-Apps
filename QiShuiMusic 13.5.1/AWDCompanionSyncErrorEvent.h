@@ -1,0 +1,37 @@
+@interface AWDCompanionSyncErrorEvent : PBCodable
+@property (nonatomic) BOOL hasTimestamp;
+@property (nonatomic) Q timestamp;
+@property (nonatomic) BOOL hasService;
+@property (nonatomic) NSString service;
+@property (nonatomic) BOOL hasSequenceNumber;
+@property (nonatomic) Q sequenceNumber;
+@property (nonatomic) BOOL hasError;
+@property (nonatomic) NSInteger error;
+- (void)setHasSequenceNumber:;
+- (void)setService:;
+- (BOOL)hasError;
+- (BOOL)hasSequenceNumber;
+- (void)dealloc;
+- (void)setError:;
+- (void)setHasError:;
+- (void)writeTo:;
+- (int)error;
+- (unsigned long long)hash;
+- (id)service;
+- (void)copyTo:;
+- (void)setHasTimestamp:;
+- (void)mergeFrom:;
+- (void)setSequenceNumber:;
+- (BOOL)hasTimestamp;
+- (void)setTimestamp:;
+- (unsigned long long)sequenceNumber;
+- (BOOL)readFrom:;
+- (unsigned long long)timestamp;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasService;
+- (id)errorAsString:;
+- (int)StringAsError:;
+@end

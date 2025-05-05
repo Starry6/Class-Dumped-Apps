@@ -1,0 +1,30 @@
+@interface BRNonLocalVersion : NSObject
+@property (nonatomic) BOOL hasThumbnail;
+@property (nonatomic) NSURL url;
+@property (nonatomic) NSString etag;
+@property (nonatomic) <NSCopying><NSSecureCoding> persistentIdentifier;
+@property (nonatomic) NSString displayName;
+@property (nonatomic) Q size;
+@property (nonatomic) NSDate modificationDate;
+@property (nonatomic) NSString lastEditorDeviceName;
+@property (nonatomic) NSString lastEditorFormattedName;
+@property (nonatomic) NSPersonNameComponents lastEditorNameComponents;
+@property (nonatomic) BOOL isLatestVersion;
+- (id)url;
+- (void)dealloc;
+- (id)etag;
+- (id)modificationDate;
+- (id)persistentIdentifier;
+- (id)displayName;
+- (BOOL)hasThumbnail;
+- (id)lastEditorDeviceName;
+- (void).cxx_destruct;
+- (id)description;
+- (void)setHasThumbnail:;
+- (unsigned long long)size;
+- (id)lastEditorNameComponents;
+- (id)lastEditorFormattedName;
+- (BOOL)isLatestVersion;
+- (id)initWithURL:physicalURL:size:extension:etag:hasThumbnail:displayName:lastEditorDeviceName:lastEditorNameComponents:modificationDate:versionsStore:;
++ (id)listVersionsOfDocumentAtURL:;
+@end

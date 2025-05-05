@@ -1,0 +1,34 @@
+@interface SBSSystemNotesPresentationConfiguration : NSObject
+@property (nonatomic) NSData userActivityData;
+@property (nonatomic) NSUUID identifier;
+@property (nonatomic) NSString sceneBundleIdentifier;
+@property (nonatomic) NSUserActivity userActivity;
+@property (nonatomic) q preferredPresentationMode;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)identifier;
+- (id)succinctDescriptionBuilder;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (id)userActivityData;
+- (void).cxx_destruct;
+- (id)succinctDescription;
+- (id)userActivity;
+- (id)description;
+- (id)descriptionBuilderWithMultilinePrefix:;
+- (BOOL)isEqual:;
+- (id)descriptionWithMultilinePrefix:;
+- (id)copyWithZone:;
+- (id)initWithSceneBundleIdentifier:;
+- (long long)preferredPresentationMode;
+- (id)sceneBundleIdentifier;
+- (id)initWithSceneBundleIdentifier:userActivity:;
+- (id)initWithSceneBundleIdentifier:userActivity:preferredPresentationMode:;
+- (id)initWithSceneBundleIdentifier:userActivity:preferredPresentationMode:identifier:;
+- (BOOL)isEqualToSystemNotesPresentationConfiguration:;
+- (id)presentationConfigurationWithPreferredPresentationMode:;
+- (void)prepareForXPCCall:;
++ (BOOL)supportsSecureCoding;
+@end

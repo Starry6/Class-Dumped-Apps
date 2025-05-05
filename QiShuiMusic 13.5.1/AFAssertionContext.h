@@ -1,0 +1,32 @@
+@interface AFAssertionContext : NSObject
+@property (nonatomic) Q timestamp;
+@property (nonatomic) NSString reason;
+@property (nonatomic) NSDate effectiveDate;
+@property (nonatomic) double expirationDuration;
+@property (nonatomic) NSDictionary userInfo;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (double)expirationDuration;
+- (id)init;
+- (id)userInfo;
+- (id)buildDictionaryRepresentation;
+- (id)mutatedCopyWithMutator:;
+- (id)reason;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)initWithDictionaryRepresentation:;
+- (id)_descriptionWithIndent:;
+- (id)initWithBuilder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (unsigned long long)timestamp;
+- (id)description;
+- (id)effectiveDate;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)initWithTimestamp:reason:effectiveDate:expirationDuration:userInfo:;
++ (id)newWithBuilder:;
++ (BOOL)supportsSecureCoding;
+@end

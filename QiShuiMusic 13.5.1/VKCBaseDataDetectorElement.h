@@ -1,0 +1,34 @@
+@interface VKCBaseDataDetectorElement : VKCBaseElement
+@property (nonatomic) NSUUID uuid;
+@property (nonatomic) DDScannerResult scannerResult;
+@property (nonatomic) NSArray boundingQuads;
+@property (nonatomic) double area;
+@property (nonatomic) double maxLineHeight;
+@property (nonatomic) Q dataDetectorTypes;
+@property (nonatomic) BOOL isTextDataDetector;
+@property (nonatomic) BOOL isMRCDataDetector;
+@property (nonatomic) BOOL isUnitConversionDataDetector;
+@property (nonatomic) BOOL wantsMacOSHandCursor;
+@property (nonatomic) NSString stringValue;
+@property (nonatomic) UIMenu debugMenu;
+- (id)init;
+- (unsigned long long)dataDetectorTypes;
+- (id)uuid;
+- (void)setUuid:;
+- (long long)elementType;
+- (id)stringValue;
+- (void).cxx_destruct;
+- (BOOL)containsPoint:;
+- (double)area;
+- (id)boundingQuads;
+- (id)scannerResult;
+- (id)debugMenu;
+- (BOOL)isTextDataDetector;
+- (BOOL)isMRCDataDetector;
+- (BOOL)isUnitConversionDataDetector;
+- (BOOL)isInspectableCellSelectable;
+- (BOOL)wantsMacOSHandCursor;
+- (double)maxLineHeight;
++ (unsigned long long)dataDetectorTypesForScannerResult:;
++ (id)stringArrayForVKDataDetectorTypes:;
+@end

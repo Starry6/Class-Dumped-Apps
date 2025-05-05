@@ -1,0 +1,30 @@
+@interface ASCMetricsScrollObserver : NSObject
+@property (nonatomic) UIScrollView scrollView;
+@property (nonatomic) NSHashTable delegates;
+@property (nonatomic) NSMutableSet appearedModelIDs;
+@property (nonatomic) NSMutableSet renderedModelIDs;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} visibleRect;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)addDelegate:;
+- (id)delegates;
+- (void)dealloc;
+- (id)visibleRect;
+- (id)initWithScrollView:;
+- (void)removeDelegate:;
+- (void)scrollViewDidScroll:;
+- (id)scrollView;
+- (void).cxx_destruct;
+- (void)_observeScrollViewDidScroll:;
+- (id)centerOfView:;
+- (BOOL)isDelegateAdded:;
+- (void)modelDidAppear:;
+- (BOOL)hasModelAppeared:;
+- (void)modelDidRender:;
+- (BOOL)hasModelRendered:;
+- (id)appearedModelIDs;
+- (id)renderedModelIDs;
++ (id)observerForScrollView:;
+@end

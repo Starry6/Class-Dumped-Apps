@@ -1,0 +1,34 @@
+@interface PFImageMetadataBuilder : PFMetadataBuilder
+@property (nonatomic) NSMutableDictionary iptcMutableDictionary;
+@property (nonatomic) NSMutableDictionary exifMutableDictionary;
+@property (nonatomic) NSMutableDictionary tiffMutableDictionary;
+@property (nonatomic) NSDictionary iptcDictionary;
+@property (nonatomic) NSDictionary exifDictionary;
+@property (nonatomic) NSDictionary tiffDictionary;
+- (void)setKeywords:;
+- (id)init;
+- (void)setTitle:;
+- (void)setCaption:;
+- (void).cxx_destruct;
+- (id)tiffDictionary;
+- (id)iptcDictionary;
+- (id)exifDictionary;
+- (void)setPeopleNames:;
+- (void)setAccessibilityDescription:;
+- (void)setCreationDate:timeZone:;
+- (void)_updateCreationDate;
+- (id)iptcMutableDictionary;
+- (void)setIptcMutableDictionary:;
+- (id)exifMutableDictionary;
+- (void)setExifMutableDictionary:;
+- (id)tiffMutableDictionary;
+- (void)setTiffMutableDictionary:;
++ (id)iptcDateFormatter;
++ (id)iptcTimeFormatter;
++ (id)_exifDateTimeFormatter;
++ (id)_exifSubsecTimeFormatter;
++ (id)_exifTimeZoneOffsetFormatter;
++ (id)_dateFormatterTemplate;
++ (id)_gpsTimeFormatter;
++ (id)_gpsDateFormatter;
+@end

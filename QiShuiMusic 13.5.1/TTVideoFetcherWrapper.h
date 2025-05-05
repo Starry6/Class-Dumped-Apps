@@ -1,0 +1,32 @@
+@interface TTVideoFetcherWrapper : NSObject
+@property (nonatomic) TTVideoEngineInfoFetcher fetcher;
+@property (nonatomic) NSInteger resolution;
+@property (nonatomic) ^v context;
+@property (nonatomic) BOOL isLoading;
+@property (nonatomic) ^{?=**iii} videoInfo;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (int)getSupportedResolution:;
+- (void)infoFetcherDidCancel;
+- (void)infoFetcherDidFinish:;
+- (void)infoFetcherDidFinish:error:;
+- (void)infoFetcherFinishWithDNSError:;
+- (void)infoFetcherShouldRetry:;
+- (id)initWithMetaURL:resolution:;
+- (void)setResolutionMask:forResolution:;
+- (void)setVideoInfo:;
+- (id)videoInfo;
+- (BOOL)isLoading;
+- (id)fetcher;
+- (void)dealloc;
+- (id)context;
+- (void)cancel:;
+- (void)setIsLoading:;
+- (void)setResolution:;
+- (int)resolution;
+- (void).cxx_destruct;
+- (void)setContext:;
+- (void)setFetcher:;
+@end

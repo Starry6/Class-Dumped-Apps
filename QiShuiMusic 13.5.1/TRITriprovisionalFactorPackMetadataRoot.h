@@ -1,0 +1,2 @@
+@interface TRITriprovisionalFactorPackMetadataRoot : TRIPBRootObject
+@end

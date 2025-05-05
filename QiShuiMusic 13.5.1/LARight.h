@@ -1,0 +1,30 @@
+@interface LARight : NSObject
+@property (nonatomic) q state;
+@property (nonatomic) q tag;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)tag;
+- (id)init;
+- (void)dealloc;
+- (id)context;
+- (void)setState:;
+- (id)identifier;
+- (void)setTag:;
+- (long long)state;
+- (void).cxx_destruct;
+- (id)description;
+- (void)setContext:;
+- (BOOL)isEqual:;
+- (id)accessKey;
+- (void)rightContextDidBecomeInvalid;
+- (id)initWithRequirement:;
+- (id)initWithAccessKey:;
+- (id)initWithIdentifier:accessKey:;
+- (void)authorizeWithLocalizedReason:completion:;
+- (void)checkCanAuthorizeWithCompletion:;
+- (void)deauthorizeWithCompletion:;
+- (void)authorizeWithOptions:completion:;
++ (BOOL)automaticallyNotifiesObserversForKey:;
+@end

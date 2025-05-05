@@ -1,0 +1,33 @@
+@interface CEMPasscodeScreensaverDeclaration : CEMConfigurationBase
+@property (nonatomic) NSNumber payloadAskForPassword;
+@property (nonatomic) NSNumber payloadAskForPasswordDelay;
+@property (nonatomic) NSNumber payloadLoginWindowIdleTime;
+@property (nonatomic) NSString payloadLoginWindowModulePath;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (BOOL)multipleAllowed;
+- (BOOL)mustBeSupervised;
+- (int)activationLevel;
+- (id)assetReferences;
+- (BOOL)loadPayload:error:;
+- (id)serializePayloadWithAssetProviders:;
+- (id)payloadAskForPassword;
+- (void)setPayloadAskForPassword:;
+- (id)payloadAskForPasswordDelay;
+- (void)setPayloadAskForPasswordDelay:;
+- (id)payloadLoginWindowIdleTime;
+- (void)setPayloadLoginWindowIdleTime:;
+- (id)payloadLoginWindowModulePath;
+- (void)setPayloadLoginWindowModulePath:;
++ (id)profileType;
++ (id)buildRequiredOnlyWithIdentifier:;
++ (id)registeredClassName;
++ (id)registeredIdentifier;
++ (id)allowedPayloadKeys;
++ (id)restrictionPayloadKeys;
++ (id)buildWithIdentifier:withAskForPassword:withAskForPasswordDelay:withLoginWindowIdleTime:withLoginWindowModulePath:;
+@end

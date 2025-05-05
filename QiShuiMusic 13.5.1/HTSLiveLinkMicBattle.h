@@ -1,0 +1,30 @@
+@interface HTSLiveLinkMicBattle : IESLivePBBaseMessage
+@property (nonatomic) NSMutableDictionary mixUserInfos;
+@property (nonatomic) BOOL isCacheMessage;
+@property (nonatomic) HTSLiveCommon common;
+@property (nonatomic) BOOL hasCommon;
+@property (nonatomic) HTSLiveBattleSettings battleSettings;
+@property (nonatomic) BOOL hasBattleSettings;
+@property (nonatomic) HTSLiveBattleMode battleMode;
+@property (nonatomic) BOOL hasBattleMode;
+@property (nonatomic) HTSLiveBattleTask battleTask;
+@property (nonatomic) BOOL hasBattleTask;
+@property (nonatomic) NSInteger skinType;
+@property (nonatomic) NSMutableDictionary userInfos;
+@property (nonatomic) Q userInfos_Count;
+@property (nonatomic) OperationalPlay operationalPlay;
+@property (nonatomic) BOOL hasOperationalPlay;
+@property (nonatomic) NSInteger battleType;
+@property (nonatomic) BOOL relativeScore;
+@property (nonatomic) BOOL normalToMultiple;
+@property (nonatomic) BattleSkinConfig skinConfig;
+@property (nonatomic) BOOL hasSkinConfig;
+@property (nonatomic) IESLiveLinkIconConfig linkIconConfig;
+@property (nonatomic) BOOL hasLinkIconConfig;
+@property (nonatomic) NSString requestSource;
+@property (nonatomic) NSString eventTrackingInfo;
+- (BOOL)isCacheMessage;
+- (id)mixUserInfos;
+- (void)setIsCacheMessage:;
++ (id)descriptor;
+@end

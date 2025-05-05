@@ -1,0 +1,34 @@
+@interface GEOLaneArrowhead : PBCodable
+@property (nonatomic) BOOL hasAngle;
+@property (nonatomic) NSInteger angle;
+@property (nonatomic) BOOL hasCategory;
+@property (nonatomic) NSInteger category;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void)setCategory:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (int)angle;
+- (BOOL)isEqual:;
+- (BOOL)hasCategory;
+- (int)category;
+- (id)copyWithZone:;
+- (void)setAngle:;
+- (void)setHasAngle:;
+- (BOOL)hasAngle;
+- (void)setHasCategory:;
+- (id)categoryAsString:;
+- (int)StringAsCategory:;
++ (BOOL)isValid:;
+@end

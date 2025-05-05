@@ -1,0 +1,37 @@
+@interface IESLiveSaaSVideoTosUploadHelper : NSObject
+@property (nonatomic) <IESLiveSaaSInternalRouter> router;
+@property (nonatomic) @? completeBlock;
+@property (nonatomic) UIImagePickerController imagePicker;
+@property (nonatomic) UIActivityIndicatorView loadingView;
+@property (nonatomic) IESLiveSaaSVideoTosUploadConfig config;
+@property (nonatomic) IESLiveFullLinkMonitorImp fullLink;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)closeImagePickerController;
+- (id)completeBlock;
+- (id)fullLink;
+- (void)setCompleteBlock:;
+- (void)setFullLink:;
+- (void)uploadVideoWithConfig:withAlbumPrivacyCert:withSettingPrivacyCert:withCameraPrivacyCert:completeBlock:;
+- (void)uploadVideoWithFileURL:firstFrameBase64:;
+- (void)stopLoading;
+- (id)init;
+- (void)startLoading;
+- (void)setConfig:;
+- (void)navigationController:didShowViewController:animated:;
+- (void).cxx_destruct;
+- (id)config;
+- (void)imagePickerControllerDidCancel:;
+- (void)imagePickerController:didFinishPickingMediaWithInfo:;
+- (void)video:didFinishSavingWithError:contextInfo:;
+- (id)router;
+- (void)setRouter:;
+- (id)loadingView;
+- (void)setLoadingView:;
+- (id)imagePicker;
+- (void)setImagePicker:;
+- (void)playVideo:;
++ (id)sharedInstance;
+@end

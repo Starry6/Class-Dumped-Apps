@@ -1,0 +1,36 @@
+@interface MLMediaLibraryResourcesServiceServer : NSObject
+@property (nonatomic) NSObject<OS_dispatch_queue> accessQueue;
+@property (nonatomic) NSObject<OS_dispatch_queue> workQueue;
+@property (nonatomic) NSObject<OS_dispatch_queue> calloutQueue;
+@property (nonatomic) NSObject<OS_dispatch_semaphore> accountChangeSemaphore;
+@property (nonatomic) NSXPCListener xpcServiceListener;
+@property (nonatomic) NSMutableSet observers;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setAccessQueue:;
+- (void)_removeObserver:;
+- (void)setCalloutQueue:;
+- (id)accessQueue;
+- (void)terminateForFailureToPerformDatabasePathChange;
+- (void)setWorkQueue:;
+- (id)workQueue;
+- (void)_addObserver:;
+- (id)calloutQueue;
+- (BOOL)listener:shouldAcceptNewConnection:;
+- (void).cxx_destruct;
+- (void)setObservers:;
+- (id)observers;
+- (void)performDatabasePathChange:completion:;
+- (void)emergencyDisconnectWithCompletion:;
+- (void)libraryContainerPathWithCompletion:;
+- (id)initWithAccountChangeObserver:;
+- (void)_blockExecutionForOnGoingAccountChangeIfNeeded;
+- (void)_unblockExecutionForFutureAccountChange;
+- (id)accountChangeSemaphore;
+- (void)setAccountChangeSemaphore:;
+- (id)xpcServiceListener;
+- (void)setXpcServiceListener:;
++ (id)sharedInstance;
+@end

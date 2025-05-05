@@ -1,0 +1,36 @@
+@interface BTDALWechatModel : BTDALModel
+@property (nonatomic) NSString advID;
+@property (nonatomic) NSString siteID;
+@property (nonatomic) NSString pageUrl;
+@property (nonatomic) NSString wechatMiniAppSdk;
+@property (nonatomic) NSString wechatMiniAppLink;
+@property (nonatomic) NSNumber wechatSkipType;
+@property (nonatomic) Q wechatOpenMethod;
+@property (nonatomic) q networkTimeout;
+@property (nonatomic) NSNumber wechatAppType;
+@property (nonatomic) NSString userName;
+@property (nonatomic) NSString path;
+- (id)advID;
+- (void)setAdvID:;
+- (void)setSiteID:;
+- (void)setWechatAppType:;
+- (void)setWechatMiniAppLink:;
+- (void)setWechatMiniAppSdk:;
+- (void)setWechatOpenMethod:;
+- (void)setWechatSkipType:;
+- (id)siteID;
+- (id)wechatAppType;
+- (id)wechatMiniAppLink;
+- (id)wechatMiniAppSdk;
+- (unsigned long long)wechatOpenMethod;
+- (id)wechatSkipType;
+- (id)path;
+- (id)pageUrl;
+- (id)userName;
+- (void)setPath:;
+- (long long)networkTimeout;
+- (void)setUserName:;
+- (void).cxx_destruct;
+- (void)setPageUrl:;
+- (void)setNetworkTimeout:;
+@end

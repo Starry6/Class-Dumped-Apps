@@ -1,0 +1,31 @@
+@interface HMDExceptionTracker : HMDTracker
+@property (nonatomic) HMInstance instance;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)enableSystemProtectWithKeyList:;
+- (void)cleanupExceptionDataWithConfig:;
+- (id)dealNotDebugRealPerformanceData;
+- (void)collectRecordToHermasOrDB:;
+- (void)dropExceptionData;
+- (void)enableCustomCatchWithMethodDict:;
+- (BOOL)exceptionDataSource;
+- (void)exceptionReporterDidReceiveResponse:;
+- (id)fetchUploadRecordsWithLimitCount:;
+- (id)getExceptionDataWithRecords:;
+- (id)pendingDebugRealExceptionDataWithConfig:;
+- (id)pendingExceptionData;
+- (void)pendingRecord:;
+- (void)recordCapture:;
+- (void)savePendingRecordToDatabase;
+- (void)updateConfig:;
+- (id)instance;
+- (id)init;
+- (void)setInstance:;
+- (void)start;
+- (void)stop;
+- (void).cxx_destruct;
+- (Class)storeClass;
++ (id)sharedTracker;
+@end

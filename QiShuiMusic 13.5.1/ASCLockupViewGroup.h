@@ -1,0 +1,31 @@
+@interface ASCLockupViewGroup : NSObject
+@property (nonatomic) NSString name;
+@property (nonatomic) ASCLockupFetcher lockupFetcher;
+@property (nonatomic) NSMutableDictionary deferredRequests;
+@property (nonatomic) BOOL hasScheduledBatchRequest;
+@property (nonatomic) NSMutableArray prefetchSpansIfLoaded;
+@property (nonatomic) NSMutableArray prefetchSpans;
+- (id)init;
+- (id)initWithName:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)name;
+- (void)_lockupRequestForBundleID:withContext:completionBlock:;
+- (void)_cacheLockupsWithCollectionRequest:withCompletionBlock:;
+- (void)_prefetchLockupsWithRequests:withCompletionBlock:;
+- (void)_cacheLockupsWithRequests:withCompletionBlock:;
+- (void)_lockupDictionaryForRequest:includingKeys:withCompletionBlock:;
+- (id)lockupWithRequest:;
+- (id)initWithName:lockupFetcher:;
+- (id)prefetchSpans;
+- (void)scheduleBatchRequestsIfNeeded;
+- (void)performBatchRequests;
+- (id)lockupFetcher;
+- (id)deferredRequests;
+- (BOOL)hasScheduledBatchRequest;
+- (void)setHasScheduledBatchRequest:;
+- (id)prefetchSpansIfLoaded;
+- (void)setPrefetchSpansIfLoaded:;
++ (id)log;
++ (void)createConnectionWithCompletionBlock:;
+@end

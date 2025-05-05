@@ -1,0 +1,37 @@
+@interface PKInkFunction : NSObject
+@property (nonatomic) Q inkProperty;
+@property (nonatomic) Q inkInput;
+@property (nonatomic) Q inputMask;
+@property (nonatomic) Q deviceMask;
+@property (nonatomic) NSMutableArray inputPoints;
+@property (nonatomic) NSMutableArray minOutputPoints;
+@property (nonatomic) NSMutableArray maxOutputPoints;
+@property (nonatomic) NSMutableArray outputPoints;
+@property (nonatomic) Q functionType;
+@property (nonatomic) NSMutableArray controlPoints;
+- (void).cxx_destruct;
+- (unsigned long long)functionType;
+- (id)description;
+- (id)controlPoints;
+- (void)setControlPoints:;
+- (id)inputPoints;
+- (unsigned long long)inputMask;
+- (void)setInputMask:;
+- (unsigned long long)deviceMask;
+- (void)setDeviceMask:;
+- (void)setInputPoints:;
+- (id)initWithProperty:input:inputMask:deviceMask:inputPoints:minOutputPoints:maxOutputPoints:outputPoints:controlPoints:functionType:;
+- (id)initWithInputPoints:outputPoints:functionType:;
+- (double)solveForInput:;
+- (unsigned long long)inkProperty;
+- (void)setInkProperty:;
+- (unsigned long long)inkInput;
+- (void)setInkInput:;
+- (id)minOutputPoints;
+- (void)setMinOutputPoints:;
+- (id)maxOutputPoints;
+- (void)setMaxOutputPoints:;
+- (id)outputPoints;
+- (void)setOutputPoints:;
+- (void)setFunctionType:;
+@end

@@ -1,0 +1,31 @@
+@interface SFSafariCredentialStore : NSObject
++ (id)bestDomainForAutoFillFromDomains:appID:;
++ (void)bestDomainForAppID:completionHandler:;
++ (void)getCredentialsForAppWithAppID:externallyVerifiedAndApprovedSharedWebCredentialDomains:websiteURL:completionHandler:;
++ (void)getAllowedActionForAppCredentialsWithAppID:websiteURL:user:password:completionHandler:;
++ (void)getAllApprovedSharedWebCredentialsEntries:;
++ (id)titleForPasswordCredentialIdentity:formURL:;
++ (void)getApprovedSharedWebCredentialsEntriesForAppWithAppID:completionHandler:;
++ (void)getCredentialsForAppWithAppID:completionHandler:;
++ (BOOL)isAppAutoFillAvailable;
++ (void)getCredentialsForAppWithAppID:externallyVerifiedAndApprovedSharedWebCredentialDomains:completionHandler:;
++ (void)getCredentialsForAppWithAppID:websiteURL:completionHandler:;
++ (id)textSuggestionHeaderForExternalCredential:;
++ (BOOL)isRemoteAutoFillAvailable;
++ (void)getAllCredentialsWithCompletionHandler:;
++ (void)_getCredentialsForAppWithApprovedAndValidSharedWebCredentialsDatabaseEntries:websiteURL:completionHandler:;
++ (id)_highLevelDomainsFromDatabaseEntries:;
++ (id)_credentialsMatchingSharedWebCredentialsDatabaseEntries:websiteURL:savedAccounts:;
++ (void)getCanSaveCredentialsWithAppID:websiteURL:completionHandler:;
++ (void)_getAllowedActionForAppCredentialsWithAppID:websiteURL:user:password:shouldAnalyzeExistingCredentials:completionHandler:;
++ (id)_bestDomainFromApprovedDomainsForWebCredentials:appLinks:otherServices:appID:allDomains:;
++ (BOOL)_savedAccount:isRelatedToEntryHighLevelDomains:andWebsiteURL:;
++ (void)_sortCredentials:usingApprovedSharedWebCredentialsDatabaseEntries:;
++ (void)getApprovedSharedWebCredentialsEntriesSortedByHighestValueForAppWithAppID:completionHandler:;
++ (void)_approvedAndValidSharedWebCredentialsDatabaseEntriesForAppWithAppID:completionHandler:;
++ (void)_approvedSharedWebCredentialsDatabaseEntriesForAppWithAppID:completionHandler:;
++ (void)_sharedWebCredentialsDatabaseEntriesForAppWithAppID:completionHandler:;
++ (id)_credentialProviderExtensionHelperProxy;
++ (void)_getExternalCredentialsMatchingSharedWebCredentialsDatabaseEntries:websiteURL:completion:;
++ (void)_getBundleIDForPrimaryCredentialProviderWithCompletionHandler:;
+@end

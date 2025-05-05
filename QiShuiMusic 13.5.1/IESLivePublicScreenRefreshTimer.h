@@ -1,0 +1,32 @@
+@interface IESLivePublicScreenRefreshTimer : NSObject
+@property (nonatomic) IESLiveGCDTimer timer;
+@property (nonatomic) @? refreshBlock;
+@property (nonatomic) @? configChangedBlock;
+@property (nonatomic) BOOL refreshTimerRunning;
+@property (nonatomic) IESLivePublicScreenRefreshConfig currentRefreshConfig;
+@property (nonatomic) NSMutableDictionary refreshConfigs;
+- (void)stopNodesCommit;
+- (id)configChangedBlock;
+- (id)currentRefreshConfig;
+- (void)executeRefreshBlockImmediately;
+- (id)initWithRefreshBlock:configChangedBlock:config:;
+- (void)invalidateRefreshTimer;
+- (id)refreshConfigs;
+- (BOOL)refreshTimerRunning;
+- (void)removeRefreshConfigWithPriorityAndResetTimer:;
+- (void)resetCurrentConfigAndTimerIfNeeded;
+- (void)resetRefreshTimer;
+- (void)setConfigChangedBlock:;
+- (void)setCurrentRefreshConfig:;
+- (void)setRefreshConfigs:;
+- (void)setRefreshTimerRunning:;
+- (void)setupRefreshTimer;
+- (void)startNodesCommit;
+- (void)updateRefreshConfigAndResetTimer:;
+- (void)dealloc;
+- (void)setTimer:;
+- (void).cxx_destruct;
+- (id)timer;
+- (void)setRefreshBlock:;
+- (id)refreshBlock;
+@end

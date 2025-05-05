@@ -1,0 +1,35 @@
+@interface TRIExperimentHistoryRecord : NSObject
+@property (nonatomic) NSDate eventDate;
+@property (nonatomic) C eventType;
+@property (nonatomic) NSInteger deploymentEnvironment;
+@property (nonatomic) NSString experimentId;
+@property (nonatomic) NSInteger deploymentId;
+@property (nonatomic) NSString treatmentId;
+@property (nonatomic) NSArray namespaces;
+- (id)experimentId;
+- (id)treatmentId;
+- (id)copyWithReplacementNamespaces:;
+- (id)eventDate;
+- (int)deploymentId;
+- (id)namespaces;
+- (id)init;
+- (id)copyWithReplacementDeploymentEnvironment:;
+- (id)copyWithReplacementExperimentId:;
+- (id)initWithEventDate:eventType:deploymentEnvironment:experimentId:deploymentId:treatmentId:namespaces:;
+- (unsigned char)eventType;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)copyWithReplacementEventDate:;
+- (void)encodeWithCoder:;
+- (id)copyWithReplacementDeploymentId:;
+- (id)copyWithReplacementEventType:;
+- (int)deploymentEnvironment;
+- (BOOL)isEqualToRecord:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)copyWithReplacementTreatmentId:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
++ (BOOL)supportsSecureCoding;
++ (id)recordWithEventDate:eventType:deploymentEnvironment:experimentId:deploymentId:treatmentId:namespaces:;
+@end

@@ -1,0 +1,38 @@
+@interface TTVideoEngineLoadCacheInfo : NSObject
+@property (nonatomic) NSString cacheKey;
+@property (nonatomic) q mediaSize;
+@property (nonatomic) q preloadHeaderSize;
+@property (nonatomic) q preloadOffset;
+@property (nonatomic) q preloadSize;
+@property (nonatomic) q cacheState;
+@property (nonatomic) Q resolution;
+@property (nonatomic) NSArray cacheRanges;
+@property (nonatomic) NSString localFilePath;
+@property (nonatomic) NSError error;
+@property (nonatomic) q maxCacheEnd;
+- (void)setCacheRanges:;
+- (void)setPreloadSize:;
+- (id)cacheRanges;
+- (long long)maxCacheEnd;
+- (long long)preloadHeaderSize;
+- (long long)preloadOffset;
+- (long long)preloadSize;
+- (void)setPreloadHeaderSize:;
+- (void)setPreloadOffset:;
+- (void)setCacheSize:;
+- (id)cacheKey;
+- (void)setError:;
+- (void)setResolution:;
+- (unsigned long long)resolution;
+- (id)error;
+- (BOOL)isFinished;
+- (void).cxx_destruct;
+- (void)setCacheKey:;
+- (id)copyWithZone:;
+- (void)setCacheState:;
+- (long long)cacheState;
+- (long long)mediaSize;
+- (void)setMediaSize:;
+- (id)localFilePath;
+- (void)setLocalFilePath:;
+@end

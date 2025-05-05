@@ -1,0 +1,38 @@
+@interface PGPrerollIndicatorView : UIView
+@property (nonatomic) PGControlsViewModel viewModel;
+@property (nonatomic) UILabel contentTypeLabel;
+@property (nonatomic) PGButtonView skipPrerollButtonView;
+@property (nonatomic) NSString labelText;
+@property (nonatomic) NSString timeRemainingText;
+@property (nonatomic) {CGSize=dd} labelSize;
+@property (nonatomic) PGDisplayLink displayLink;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)displayLink;
+- (void)dealloc;
+- (id)viewModel;
+- (void)layoutSubviews;
+- (id)hitTest:withEvent:;
+- (void)setLabelText:;
+- (void).cxx_destruct;
+- (id)labelText;
+- (id)labelSize;
+- (void)setLabelSize:;
+- (double)labelWidth;
+- (void)buttonViewDidReceiveTouchUpInside:;
+- (id)buttonView:imageRectForContentRect:proposedRect:;
+- (id)buttonView:titleRectForContentRect:proposedRect:;
+- (id)buttonView:contentEdgeInsetsForProposedInsets:;
+- (id)initWithFrame:viewModel:;
+- (void)updateValues;
+- (id)timeRemainingText;
+- (void)setTimeRemainingText:;
+- (id)_subviewTransform;
+- (void)_layoutContentTypeLabel;
+- (void)_layoutSkipPrerollButton;
+- (id)contentTypeLabel;
+- (id)skipPrerollButtonView;
++ (double)preferredHeight;
+@end

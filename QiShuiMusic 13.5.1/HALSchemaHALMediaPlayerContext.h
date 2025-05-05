@@ -1,0 +1,33 @@
+@interface HALSchemaHALMediaPlayerContext : SISchemaInstrumentationMessage
+@property (nonatomic) NSInteger state;
+@property (nonatomic) BOOL hasState;
+@property (nonatomic) NSInteger type;
+@property (nonatomic) BOOL hasType;
+@property (nonatomic) I timeSinceLastMediaPlaybackInSeconds;
+@property (nonatomic) BOOL hasTimeSinceLastMediaPlaybackInSeconds;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (void)setState:;
+- (id)initWithDictionary:;
+- (void)setType:;
+- (void)writeTo:;
+- (void)setHasType:;
+- (BOOL)hasType;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void)deleteType;
+- (int)type;
+- (int)state;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (BOOL)hasState;
+- (void)setHasState:;
+- (void)deleteState;
+- (void)setTimeSinceLastMediaPlaybackInSeconds:;
+- (BOOL)hasTimeSinceLastMediaPlaybackInSeconds;
+- (void)setHasTimeSinceLastMediaPlaybackInSeconds:;
+- (void)deleteTimeSinceLastMediaPlaybackInSeconds;
+- (unsigned int)timeSinceLastMediaPlaybackInSeconds;
+@end

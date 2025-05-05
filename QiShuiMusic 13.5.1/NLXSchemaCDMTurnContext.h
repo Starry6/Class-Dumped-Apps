@@ -1,0 +1,30 @@
+@interface NLXSchemaCDMTurnContext : SISchemaInstrumentationMessage
+@property (nonatomic) NLXSchemaCDMNLContext nlContext;
+@property (nonatomic) BOOL hasNlContext;
+@property (nonatomic) NLXSchemaNLXLegacyNLContext legacyNlContext;
+@property (nonatomic) BOOL hasLegacyNlContext;
+@property (nonatomic) NSData jsonData;
+@property (nonatomic) Q whichTurncontexttype;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)setNlContext:;
+- (id)nlContext;
+- (void)deleteNlContext;
+- (void)setLegacyNlContext:;
+- (id)legacyNlContext;
+- (void)deleteLegacyNlContext;
+- (unsigned long long)whichTurncontexttype;
+- (BOOL)hasNlContext;
+- (void)setHasNlContext:;
+- (BOOL)hasLegacyNlContext;
+- (void)setHasLegacyNlContext:;
+@end

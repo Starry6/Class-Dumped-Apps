@@ -1,0 +1,32 @@
+@interface IESIMTextViewInternal : UITextView
+@property (nonatomic) NSString placeholder;
+@property (nonatomic) UIColor placeholderColor;
+@property (nonatomic) UIFont placeholderFont;
+@property (nonatomic) BOOL displayPlaceHolder;
+@property (nonatomic) BOOL prohibitPerformAction;
+@property (nonatomic) NSParagraphStyle placeholderParagraphStyle;
+- (id)placeholderParagraphStyle;
+- (BOOL)prohibitPerformAction;
+- (void)setDisplayPlaceHolder:;
+- (void)setPlaceholderParagraphStyle:;
+- (void)setProhibitPerformAction:;
+- (void)setScrollable:;
+- (void)setContentOffset:;
+- (void)drawRect:;
+- (void)setPlaceholderColor:;
+- (void)setAttributedText:;
+- (id)placeholderColor;
+- (void)touchesBegan:withEvent:;
+- (void)setText:;
+- (id)placeholder;
+- (void)setPlaceholder:;
+- (void)setPlaceholderFont:;
+- (void)cut:;
+- (id)placeholderFont;
+- (void)copy:;
+- (void).cxx_destruct;
+- (BOOL)canPerformAction:withSender:;
+- (void)setContentInset:;
+- (void)setContentSize:;
+- (BOOL)displayPlaceHolder;
+@end

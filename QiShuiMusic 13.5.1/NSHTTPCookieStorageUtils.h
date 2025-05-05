@@ -1,0 +1,2 @@
+@interface NSHTTPCookieStorageUtils : NSObject
+@end

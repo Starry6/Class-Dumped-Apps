@@ -1,0 +1,31 @@
+@interface MFMailComposeRecipientTextView : CNComposeRecipientTextView
+@property (nonatomic) MFComposeDisplayMetrics displayMetrics;
+@property (nonatomic) <MFMailComposeRecipientTextViewDelegate> delegate;
+@property (nonatomic) NSArray people;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)people;
+- (void)layoutMarginsDidChange;
+- (void)dealloc;
+- (id)_scribbleInteraction:frameForElement:;
+- (id)pointerInteraction:regionForRequest:defaultRegion:;
+- (void)_displayMetricsDidChange;
+- (void)setDisplayMetrics:;
+- (void)_scribbleInteraction:requestElementsInRect:completion:;
+- (id)initWithFrame:;
+- (void)traitCollectionDidChange:;
+- (id)displayMetrics;
+- (id)pointerInteraction:styleForRegion:;
+- (void)addRecipient:;
+- (void)_scribbleInteraction:focusElement:initialFocusSelectionReferencePoint:completion:;
+- (void).cxx_destruct;
+- (BOOL)_scribbleInteraction:shouldBeginAtLocation:;
+- (id)nextResponder;
+- (BOOL)_scribbleInteraction:focusWillTransformElement:;
+- (void)_textInputDidChange:;
+- (void)appendText:;
+- (id)pointerRectForLineContainingGlyphIndex:;
+- (double)beamHeight;
+@end

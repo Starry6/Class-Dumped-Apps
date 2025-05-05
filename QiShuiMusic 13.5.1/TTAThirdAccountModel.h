@@ -1,0 +1,37 @@
+@interface TTAThirdAccountModel : TTADataRespModel
+@property (nonatomic) NSNumber user_id;
+@property (nonatomic) NSString platform_screen_name;
+@property (nonatomic) NSString profile_image_url;
+@property (nonatomic) NSString platform;
+@property (nonatomic) NSString platform_uid;
+@property (nonatomic) NSString platform_app_id;
+@property (nonatomic) NSString sec_platform_uid;
+@property (nonatomic) NSNumber expires_in;
+@property (nonatomic) NSNumber expired_time;
+@property (nonatomic) NSNumber modify_time;
+@property (nonatomic) NSDictionary extra;
+- (id)platform_app_id;
+- (void)setModify_time:;
+- (id)expired_time;
+- (id)modify_time;
+- (id)platform_screen_name;
+- (id)platform_uid;
+- (id)sec_platform_uid;
+- (void)setExpired_time:;
+- (void)setExtra:;
+- (void)setPlatform_app_id:;
+- (void)setPlatform_screen_name:;
+- (void)setPlatform_uid:;
+- (void)setSec_platform_uid:;
+- (void)setUser_id:;
+- (BOOL)tta_modelCustomTransformFromDictionary:;
+- (id)extra;
+- (void)setPlatform:;
+- (id)platform;
+- (void).cxx_destruct;
+- (id)profile_image_url;
+- (void)setProfile_image_url:;
+- (id)user_id;
+- (id)expires_in;
+- (void)setExpires_in:;
+@end

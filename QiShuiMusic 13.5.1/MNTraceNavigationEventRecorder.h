@@ -1,0 +1,38 @@
+@interface MNTraceNavigationEventRecorder : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void).cxx_destruct;
+- (void)navigationSession:didStartWithRoute:navigationType:isResumingMultipointRoute:isReconnecting:;
+- (void)navigationSession:didStopWithReason:;
+- (void)navigationSession:matchedToStepIndex:segmentIndex:;
+- (void)navigationSession:didEnterPreArrivalStateForWaypoint:endOfLegIndex:;
+- (void)navigationSession:didArriveAtWaypoint:endOfLegIndex:;
+- (void)navigationSession:didResumeNavigatingFromWaypoint:endOfLegIndex:reason:;
+- (void)navigationSession:didSuppressReroute:;
+- (void)navigationSession:didReroute:withLocation:withAlternateRoutes:rerouteReason:;
+- (void)navigationSession:didSwitchToNewTransportType:newRoute:;
+- (void)navigationSession:didUpdateDestination:;
+- (void)navigationSession:didRerouteWithWaypoints:;
+- (void)navigationSession:didInsertWaypoint:;
+- (void)navigationSession:didRemoveWaypoint:;
+- (void)navigationSession:didUpdateAlternateRoutes:;
+- (void)navigationSession:didAnnounce:stage:;
+- (void)navigationSession:updateSignsWithInfo:;
+- (void)navigationSession:updateSignsWithARInfo:;
+- (void)navigationSession:showLaneDirections:;
+- (void)navigationSession:hideLaneDirectionsForId:;
+- (void)navigationSession:showJunctionView:;
+- (void)navigationSession:hideJunctionViewForId:;
+- (void)navigationSession:didReceiveTrafficIncidentAlert:responseCallback:;
+- (void)navigationSession:didReceiveTransitAlert:;
+- (id)initWithTraceRecorder:;
+- (void)setLastMatchedLocation:;
+- (void)_recordDebugSettings;
+- (void)_recordEvent:description:;
+- (void)_userGotOnRoute;
+- (void)_userWentOffRoute;
+- (id)_descriptionForWaypoint:;
+- (id)_stringForSignDescription:;
+@end

@@ -1,0 +1,30 @@
+@interface GEOWiFiQualitySearchTile : PBCodable
+@property (nonatomic) BOOL hasTileKey;
+@property (nonatomic) Q tileKey;
+@property (nonatomic) BOOL hasType;
+@property (nonatomic) NSInteger type;
+- (void)readAll:;
+- (void)setTileKey:;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (int)StringAsType:;
+- (id)initWithDictionary:;
+- (void)setType:;
+- (void)writeTo:;
+- (void)setHasType:;
+- (BOOL)hasType;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (id)typeAsString:;
+- (void)mergeFrom:;
+- (int)type;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (unsigned long long)tileKey;
+- (id)copyWithZone:;
+- (void)setHasTileKey:;
+- (BOOL)hasTileKey;
++ (BOOL)isValid:;
+@end

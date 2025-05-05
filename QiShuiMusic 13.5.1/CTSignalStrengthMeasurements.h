@@ -1,0 +1,32 @@
+@interface CTSignalStrengthMeasurements : NSObject
+@property (nonatomic) NSNumber rssi;
+@property (nonatomic) NSNumber rscp;
+@property (nonatomic) NSNumber ecn0;
+@property (nonatomic) NSNumber rsrp;
+@property (nonatomic) NSNumber rsrq;
+@property (nonatomic) NSNumber snr;
+@property (nonatomic) NSNumber ecio;
+@property (nonatomic) NSNumber rxagc;
+- (id)snr;
+- (void)setSnr:;
+- (id)rssi;
+- (id)initWithCoder:;
+- (void)setRssi:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)copyWithZone:;
+- (id)rscp;
+- (void)setRscp:;
+- (id)ecn0;
+- (void)setEcn0:;
+- (id)rsrp;
+- (void)setRsrp:;
+- (id)rsrq;
+- (void)setRsrq:;
+- (id)ecio;
+- (void)setEcio:;
+- (id)rxagc;
+- (void)setRxagc:;
++ (BOOL)supportsSecureCoding;
+@end

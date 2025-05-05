@@ -1,0 +1,36 @@
+@interface ADCameraCalibration : NSObject
+@property (nonatomic) {?=[3]} intrinsicMatrix;
+@property (nonatomic) {CGSize=dd} referenceDimensions;
+@property (nonatomic) {?=[4]} cameraToPlatformTransform;
+@property (nonatomic) float pixelSize;
+@property (nonatomic) <ADLensDistortionModel> distortionModel;
+- (id)ar_initWithImageData:calibrationData:;
+- (id)ar_initWithImageData:cameraToPlatformTransform:pixelSize:referenceDimensions:distortionCenter:lensDistortionLookupTable:inverseLensDistortionLookupTable:;
+- (float)pixelSize;
+- (BOOL)writeToFile:atomically:;
+- (id)initWithDictionary:;
+- (void).cxx_destruct;
+- (id)initWithFile:;
+- (id)dictionaryRepresentation;
+- (id)mutableCopyWithZone:;
+- (id)copyWithZone:;
+- (id)intrinsicMatrix;
+- (id)distortionModel;
+- (id)referenceDimensions;
+- (id)initWithIntrinsics:cameraToPlatformTransform:pixelSize:forReferenceDimensions:withDistortionModel:;
+- (id)cameraToPlatformTransform;
+- (id)getTransformationTo:;
+- (void)transform:points:toCamera:outPoints:;
+- (void)project:points:outUndistortedPixels:;
+- (void)project:points:outUndistortedPixels:outR:;
+- (void)backProject:undistortedPixels:withZ:outPoints:;
+- (void)backProject:undistortedPixels:withR:outPoints:;
+- (void)distort:undistortedPixels:outDistorted:;
+- (void)undistort:distortedPixels:outUndistorted:;
+- (id)createDictionaryRepresentationWithHumanReadable:;
++ (id)ar_calibrationWithImageData:adCalibrationData:;
++ (id)ar_initWithCVACameraCalibrationData:;
++ (id)createIntrinsicsMatrixWithEFL:principalPointX:principalPointY:;
++ (void)transform:points:with:outPoints:;
++ (id)cameraCalibrationFromFile:;
+@end

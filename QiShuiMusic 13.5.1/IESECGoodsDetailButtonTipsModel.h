@@ -1,0 +1,35 @@
+@interface IESECGoodsDetailButtonTipsModel : MTLModel
+@property (nonatomic) BOOL useButtonTips;
+@property (nonatomic) NSString tips;
+@property (nonatomic) BOOL isCentered;
+@property (nonatomic) NSString bgColor;
+@property (nonatomic) NSString tipsColor;
+@property (nonatomic) NSString arrowColor;
+@property (nonatomic) NSString tipsUrl;
+@property (nonatomic) NSNumber tipsPiecedValue;
+@property (nonatomic) NSNumber textType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)tipsPiecedValue;
+- (id)tipsUrl;
+- (id)arrowColor;
+- (void)setArrowColor:;
+- (void)setTipsColor:;
+- (void)setTipsPiecedValue:;
+- (void)setTipsUrl:;
+- (void)setUseButtonTips:;
+- (id)tipsColor;
+- (BOOL)useButtonTips;
+- (id)tips;
+- (void)setTips:;
+- (void).cxx_destruct;
+- (BOOL)isCentered;
+- (void)setIsCentered:;
+- (id)bgColor;
+- (void)setBgColor:;
+- (void)setTextType:;
+- (id)textType;
++ (id)JSONKeyPathsByPropertyKey;
+@end

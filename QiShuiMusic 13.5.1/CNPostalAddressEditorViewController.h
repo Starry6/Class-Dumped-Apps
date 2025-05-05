@@ -1,0 +1,33 @@
+@interface CNPostalAddressEditorViewController : UITableViewController
+@property (nonatomic) BOOL isPresentingModalViewController;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)done:;
+- (void)cancel:;
+- (id)tableView:cellForRowAtIndexPath:;
+- (void).cxx_destruct;
+- (id)contactViewCache;
+- (void)viewDidAppear:;
+- (void)viewWillAppear:;
+- (void)tableView:willDisplayCell:forRowAtIndexPath:;
+- (long long)tableView:numberOfRowsInSection:;
+- (void)viewDidLoad;
+- (double)tableViewSpacingForExtraSeparators:;
+- (void)sender:presentViewController:;
+- (void)sender:dismissViewController:;
+- (void)sender:dismissViewController:completionHandler:;
+- (BOOL)isPresentingModalViewController;
+- (void)registerContactCellClass:;
+- (void)propertyCell:didUpdateItem:withNewLabel:;
+- (void)propertyCell:didUpdateItem:withNewValue:;
+- (void)propertyCell:performActionForItem:withTransportType:;
+- (void)propertyCellDidChangeLayout:;
+- (id)initWithContact:propertyKey:editNames:;
+- (void)_rebuildPropertyGroupItems:;
+- (void)validateContents;
+- (void)_startEditingFirstCell;
++ (id)cellIdentifierForEditingProperty:;
++ (id)cellIdentifierForClass:;
+@end

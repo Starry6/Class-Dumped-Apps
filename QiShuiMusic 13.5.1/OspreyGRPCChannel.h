@@ -1,0 +1,32 @@
+@interface OspreyGRPCChannel : NSObject
+@property (nonatomic) AbsintheAuthenticationDurations absintheDurations;
+@property (nonatomic) @? connectionMetricsHandler;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)URLSession:dataTask:didReceiveData:;
+- (void)URLSession:didReceiveChallenge:completionHandler:;
+- (void)cancel;
+- (void)URLSession:task:needNewBodyStream:;
+- (void)dealloc;
+- (void)URLSession:task:didCompleteWithError:;
+- (void)URLSession:task:didFinishCollectingMetrics:;
+- (void)URLSession:dataTask:didReceiveResponse:completionHandler:;
+- (void)close;
+- (void).cxx_destruct;
+- (void)preconnect;
+- (void)setConnectionMetricsHandler:;
+- (id)connectionMetricsHandler;
+- (id)initWithURL:configuration:queue:;
+- (void)setAbsintheTimestampForKey:;
+- (void)_startTask:;
+- (id)clientStreamingContextForRequest:streamingResponseHandler:completion:;
+- (void)unaryRequest:requestData:responseHandler:;
+- (void)serverStreamingRequest:requestData:streamingResponseHandler:completion:;
+- (id)clientStreamingRequest:responseHandler:streamingContext:;
+- (id)bidirectionalStreamingRequest:streamingResponseHandler:completion:;
+- (void)bidirectionalStreamingRequest:streamingContext:;
+- (id)absintheDurations;
+- (void)setAbsintheDurations:;
+@end

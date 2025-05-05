@@ -1,0 +1,35 @@
+@interface SenderLargeFrameInfo : NSObject
+@property (nonatomic) double startTime;
+@property (nonatomic) double lastProbingSequenceTimeExpect;
+@property (nonatomic) double lastProbingSequenceTimeActual;
+@property (nonatomic) I largeFrameSizeRequested;
+@property (nonatomic) I largeFrameSizeAtCurrentBandwidth;
+@property (nonatomic) I probingSequencePacketSize;
+@property (nonatomic) I probingSequencePacketCount;
+@property (nonatomic) NSInteger probingSequenceCount;
+@property (nonatomic) NSInteger totalLargeFrameWaste;
+@property (nonatomic) BOOL isLastFrameProbingSequence;
+@property (nonatomic) BOOL isLargeFrameRequestDisabled;
+- (void)setStartTime:;
+- (double)startTime;
+- (double)lastProbingSequenceTimeExpect;
+- (void)setLastProbingSequenceTimeExpect:;
+- (double)lastProbingSequenceTimeActual;
+- (void)setLastProbingSequenceTimeActual:;
+- (unsigned int)largeFrameSizeRequested;
+- (void)setLargeFrameSizeRequested:;
+- (unsigned int)largeFrameSizeAtCurrentBandwidth;
+- (void)setLargeFrameSizeAtCurrentBandwidth:;
+- (unsigned int)probingSequencePacketSize;
+- (void)setProbingSequencePacketSize:;
+- (unsigned int)probingSequencePacketCount;
+- (void)setProbingSequencePacketCount:;
+- (int)probingSequenceCount;
+- (void)setProbingSequenceCount:;
+- (int)totalLargeFrameWaste;
+- (void)setTotalLargeFrameWaste:;
+- (BOOL)isLastFrameProbingSequence;
+- (void)setIsLastFrameProbingSequence:;
+- (BOOL)isLargeFrameRequestDisabled;
+- (void)setIsLargeFrameRequestDisabled:;
+@end

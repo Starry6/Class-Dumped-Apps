@@ -1,0 +1,2 @@
+@interface IESLiveSaaSPBIESLiveSaaSPBVipRoot : GPBRootObject
+@end

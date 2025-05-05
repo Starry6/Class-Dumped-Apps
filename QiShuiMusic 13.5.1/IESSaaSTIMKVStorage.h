@@ -1,0 +1,38 @@
+@interface IESSaaSTIMKVStorage : NSObject
+@property (nonatomic) NSDictionary openedMMKV;
+@property (nonatomic) <IESSaaSTIMCurrentUserCredentialProtocol> currentUserImp;
+@property (nonatomic) NSObject<OS_dispatch_semaphore> sema;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)currentUserMMKV;
+- (unsigned long long)actualSize;
+- (void)clearStoreForUser:;
+- (id)currentUserImp;
+- (id)currentUserMMKVOfUid:;
+- (void)enumerateKeys:;
+- (id)getDB;
+- (id)getObjectOfClass:forKey:;
+- (BOOL)isMigrated;
+- (void)migrateConfigFromWCDBToMMKV;
+- (id)openedMMKV;
+- (void)removeValuesForKeys:;
+- (void)setCurrentUserImp:;
+- (void)setOpenedMMKV:;
+- (void)userDidLogout:;
+- (BOOL)containsKey:;
+- (id)init;
+- (void)setObject:forKey:;
+- (void)dealloc;
+- (id)allKeys;
+- (void)setKeyValues:;
+- (void)removeValueForKey:;
+- (void).cxx_destruct;
+- (void)setSema:;
+- (unsigned long long)count;
+- (id)sema;
+- (unsigned long long)totalSize;
+- (void)clearStore;
++ (id)sharedInstance;
+@end

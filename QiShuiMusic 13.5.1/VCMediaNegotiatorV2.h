@@ -1,0 +1,32 @@
+@interface VCMediaNegotiatorV2 : VCMediaNegotiatorBase
+- (id)negotiationData;
+- (BOOL)processRemoteNegotiationData:;
+- (unsigned int)remoteMaxBandwidthForOperatingMode:connectionType:;
+- (BOOL)appendGeneralInfoToMediaBlob:;
+- (BOOL)appendBandwidthSettingsToMediaBlob:;
+- (BOOL)appendCodecFeaturesToMediaBlob:;
+- (BOOL)appendMicrophoneOneToOneSettingsToMediaBlob:;
+- (BOOL)appendCameraOneToOneSettingsToMediaBlob:;
+- (BOOL)appendMomentsSettingsToMediaBlob:;
+- (BOOL)appendStreamGroupsToMediaBlob:;
+- (BOOL)setupNegotiatedResultsWithRemoteMediaBlob:;
+- (void)setupNegotiatedAudioPayloadsWithRemoteMediaBlob:;
+- (void)setupNegotiatedAudioResultsWithRemoteMediaBlob:;
+- (id)negotiateVideoMaxResolutionWithEncodeRules:decodeRules:isEncoder:;
+- (void)applyCellularPreferredRule:;
+- (BOOL)selectBestDecodeVideoRuleForTransport:payload:remoteVideoRuleCollection:;
+- (BOOL)selectBestVideoRuleForTransport:payload:encodingType:remoteVideoRuleCollection:;
+- (id)remoteFeatureStringWithRemoteMediaBlob:;
+- (BOOL)setupNegotiatedVideoSettingsWithRemoteMediaBlob:;
+- (BOOL)setupNegotiatedMomentsResultsWithRemoteMediaBlob:;
+- (BOOL)negotiateStreamGroupConfig:;
+- (BOOL)setupStreamGroupsWithRemoteMediaBlob:;
+- (void)setupNegotiatedFaceTimeSettingsWithRemoteMediaBlob:;
++ (id)newCompressedBlob:;
++ (id)newDecompressedBlob:;
++ (id)newUnserializedMediaBlob:;
++ (BOOL)initializeLocalConfiguration:negotiationData:deviceRole:preferredAudioPayload:;
++ (void)dumpRemoteNegotiationData:forceFileDump:;
++ (unsigned int)capabilitiesWithMomentSettings:;
++ (id)streamGroupIDsWithMediaBlob:;
+@end

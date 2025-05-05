@@ -1,0 +1,36 @@
+@interface AWEIMMessageInteractiveUserListHeaderView : UIView
+@property (nonatomic) BOOL isMultiType;
+@property (nonatomic) NSArray titleArray;
+@property (nonatomic) UIView selectLine;
+@property (nonatomic) q selectIndex;
+@property (nonatomic) UIView barView;
+@property (nonatomic) UILabel leftTitleLabel;
+@property (nonatomic) UILabel rightTitleLabel;
+@property (nonatomic) UIView bottomLineView;
+@property (nonatomic) @? clickIndexBlock;
+- (id)clickIndexBlock;
+- (void)setSelectIndex:;
+- (void)setIsMultiType:;
+- (id)__titleLable;
+- (void)changeToIndex:;
+- (id)initWithTitleArray:;
+- (BOOL)isMultiType;
+- (id)leftTitleLabel;
+- (long long)selectIndex;
+- (id)selectLine;
+- (void)setClickIndexBlock:;
+- (void)setLeftTitleLabel:;
+- (void)setSelectLine:;
+- (void)setTitleArray:;
+- (id)titleArray;
+- (void)titleLableClick:;
+- (void)updateSelectLineOffset:;
+- (void)layoutSubviews;
+- (void).cxx_destruct;
+- (id)bottomLineView;
+- (void)setBottomLineView:;
+- (id)barView;
+- (void)setBarView:;
+- (id)rightTitleLabel;
+- (void)setRightTitleLabel:;
+@end

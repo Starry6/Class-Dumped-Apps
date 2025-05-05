@@ -1,0 +1,33 @@
+@interface IFSymbolImage : IFImage
+@property (nonatomic) CUINamedVectorGlyph vectorGlyph;
+@property (nonatomic) double pointSize;
+@property (nonatomic) Q symbolSize;
+@property (nonatomic) q symbolWeight;
+@property (nonatomic) double referencePointSize;
+@property (nonatomic) double fontMatchingScaleFactor;
+@property (nonatomic) double baselineOffset;
+@property (nonatomic) double capHeight;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} alignmentRect;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} contentBounds;
+@property (nonatomic) BOOL flippable;
+@property (nonatomic) q layoutDirection;
+- (unsigned long long)symbolSize;
+- (void)dealloc;
+- (id)contentBounds;
+- (double)pointSize;
+- (double)baselineOffset;
+- (id)CGImage;
+- (void).cxx_destruct;
+- (double)referencePointSize;
+- (long long)symbolWeight;
+- (long long)layoutDirection;
+- (id)vectorGlyph;
+- (double)scale;
+- (id)size;
+- (id)alignmentRect;
+- (double)capHeight;
+- (BOOL)isFlippable;
+- (double)fontMatchingScaleFactor;
+- (id)initWithNamedVectorGlyph:;
+- (void)setVectorGlyph:;
+@end

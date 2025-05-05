@@ -1,0 +1,30 @@
+@interface IESECPriceLabel : UIView
+@property (nonatomic) UIFont font;
+@property (nonatomic) UIColor textColor;
+@property (nonatomic) NSString prefix;
+@property (nonatomic) BOOL hasStrikethrough;
+@property (nonatomic) q price;
+@property (nonatomic) {?=qq} precisionRange;
+- (double)fontSizeForElement:;
+- (BOOL)hasStrikethrough;
+- (id)precisionRange;
+- (void)setFontSize:forElement:;
+- (void)setHasStrikethrough:;
+- (void)setPrecisionRange:;
+- (void)setSpacing:afterElement:;
+- (double)spacingAfterElement:;
+- (void)updatePrice;
+- (id)intrinsicContentSize;
+- (void)layoutSubviews;
+- (void)setFont:;
+- (id)initWithFrame:;
+- (void)setTextColor:;
+- (void)setPrefix:;
+- (id)prefix;
+- (void).cxx_destruct;
+- (id)font;
+- (id)textColor;
+- (long long)price;
+- (void)setPrice:;
+- (void)configureSubviews;
+@end

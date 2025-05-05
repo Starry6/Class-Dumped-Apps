@@ -1,0 +1,31 @@
+@interface CIFastBilateralSolver : CIFilter
+@property (nonatomic) CIImage inputImage;
+@property (nonatomic) CIImage inputDisparityImage;
+@property (nonatomic) CIImage inputConfidenceMapImage;
+@property (nonatomic) NSNumber inputMaxNumVertices;
+@property (nonatomic) NSNumber inputSigmaS;
+@property (nonatomic) NSNumber inputSigmaRLuma;
+@property (nonatomic) NSNumber inputSigmaRChroma;
+@property (nonatomic) NSNumber inputLambda;
+@property (nonatomic) NSNumber inputMaxNumIterations;
+- (id)inputImage;
+- (void)setInputImage:;
+- (id)outputImage;
+- (id)inputDisparityImage;
+- (void)setInputDisparityImage:;
+- (id)inputConfidenceMapImage;
+- (void)setInputConfidenceMapImage:;
+- (id)inputMaxNumVertices;
+- (void)setInputMaxNumVertices:;
+- (id)inputSigmaS;
+- (void)setInputSigmaS:;
+- (id)inputSigmaRLuma;
+- (void)setInputSigmaRLuma:;
+- (id)inputSigmaRChroma;
+- (void)setInputSigmaRChroma:;
+- (id)inputLambda;
+- (void)setInputLambda:;
+- (id)inputMaxNumIterations;
+- (void)setInputMaxNumIterations:;
++ (id)customAttributes;
+@end

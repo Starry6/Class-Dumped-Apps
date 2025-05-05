@@ -1,0 +1,38 @@
+@interface IESLiveUserCardShowcaseEntranceView : UIView
+@property (nonatomic) IESLiveUserCardStore store;
+@property (nonatomic) IESLiveGroupInfo groupInfo;
+@property (nonatomic) UIButton backButton;
+@property (nonatomic) UILabel nameLabel;
+@property (nonatomic) UILabel descLabel;
+@property (nonatomic) UILabel enterLabel;
+@property (nonatomic) CAGradientLayer gradientLayer;
+@property (nonatomic) UIImageView enterShowcaseView;
+@property (nonatomic) UIImageView enterShowcaseIndicator;
+@property (nonatomic) UIImageView iconImageView;
+- (id)descLabel;
+- (id)enterShowcaseIndicator;
+- (id)enterShowcaseView;
+- (void)setDescLabel:;
+- (void)setEnterShowcaseIndicator:;
+- (void)setEnterShowcaseView:;
+- (void)shopItemDidClicked;
+- (void)setStore:;
+- (id)initWithStore:;
+- (void)layoutSubviews;
+- (id)gradientLayer;
+- (id)backButton;
+- (void).cxx_destruct;
+- (id)iconImageView;
+- (id)store;
+- (void)setBackButton:;
+- (id)nameLabel;
+- (void)setIconImageView:;
+- (void)setGradientLayer:;
+- (void)setNameLabel:;
+- (void)setupViews;
+- (void)setupData;
+- (id)groupInfo;
+- (void)setGroupInfo:;
+- (id)enterLabel;
+- (void)setEnterLabel:;
+@end

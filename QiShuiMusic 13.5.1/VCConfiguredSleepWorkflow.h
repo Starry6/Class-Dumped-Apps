@@ -1,0 +1,33 @@
+@interface VCConfiguredSleepWorkflow : WFDatabaseObjectDescriptor
+@property (nonatomic) q backgroundColorValue;
+@property (nonatomic) NSString name;
+@property (nonatomic) NSString bundleIdentifierForDisplay;
+@property (nonatomic) NSString summaryString;
+@property (nonatomic) NSString actionIdentifier;
+@property (nonatomic) ^{CGImage=} iconImage;
+@property (nonatomic) double iconScale;
+@property (nonatomic) BOOL isAppLaunchWorkflow;
+@property (nonatomic) S glyphCharacter;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)bundleIdentifierForDisplay;
+- (long long)backgroundColorValue;
+- (BOOL)isAppLaunchWorkflow;
+- (double)iconScale;
+- (id)initWithCoder:;
+- (unsigned short)glyphCharacter;
+- (void)setIconImage:scale:;
+- (void)encodeWithCoder:;
+- (id)summaryString;
+- (id)actionIdentifier;
+- (void).cxx_destruct;
+- (id)description;
+- (id)name;
+- (id)iconImage;
+- (id)initWithWorkflowIdentifier:bundleIdentifierForDisplay:summaryString:name:actionIdentifier:glyphCharacter:backgroundColorValue:isAppLaunchWorkflow:;
+- (id)copyWithZone:;
++ (BOOL)supportsSecureCoding;
++ (id)glyphSize;
+@end

@@ -1,0 +1,37 @@
+@interface MPSGraphCompilationDescriptor : NSObject
+@property (nonatomic) Q compilerOptions;
+@property (nonatomic) Q aneCompilerSpatialSplitting;
+@property (nonatomic) BOOL compileANEInMemory;
+@property (nonatomic) BOOL printANEPlacementAnalysis;
+@property (nonatomic) Q optimizationLevel;
+@property (nonatomic) Q optimizationProfile;
+@property (nonatomic) BOOL waitForCompilationCompletion;
+@property (nonatomic) @? compilationCompletionHandler;
+@property (nonatomic) NSObject<OS_dispatch_queue> dispatchQueue;
+- (id)init;
+- (id)dispatchQueue;
+- (void)setDispatchQueue:;
+- (BOOL)isEqualTo:;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (id)getNamedAttrArray:device:;
+- (void)disableTypeInference;
+- (void)enableFileBackedConstants;
+- (void)enableDevicePlacement;
+- (void)setOptimizationLevel:;
+- (unsigned long long)optimizationLevel;
+- (unsigned long long)optimizationProfile;
+- (void)setOptimizationProfile:;
+- (BOOL)waitForCompilationCompletion;
+- (void)setWaitForCompilationCompletion:;
+- (id)compilationCompletionHandler;
+- (void)setCompilationCompletionHandler:;
+- (unsigned long long)compilerOptions;
+- (void)setCompilerOptions:;
+- (unsigned long long)aneCompilerSpatialSplitting;
+- (void)setAneCompilerSpatialSplitting:;
+- (BOOL)compileANEInMemory;
+- (void)setCompileANEInMemory:;
+- (BOOL)printANEPlacementAnalysis;
+- (void)setPrintANEPlacementAnalysis:;
+@end

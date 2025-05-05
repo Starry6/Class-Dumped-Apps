@@ -1,0 +1,38 @@
+@interface SAPhoneSearch : SADomainCommand
+@property (nonatomic) NSArray contacts;
+@property (nonatomic) NSDate end;
+@property (nonatomic) NSNumber faceTime;
+@property (nonatomic) NSNumber faceTimeAudio;
+@property (nonatomic) NSNumber isNew;
+@property (nonatomic) NSNumber last;
+@property (nonatomic) NSNumber missed;
+@property (nonatomic) NSNumber outgoing;
+@property (nonatomic) NSDate start;
+@property (nonatomic) NSNumber voiceMail;
+- (void)setEnd:;
+- (void)setLast:;
+- (void)setStart:;
+- (id)end;
+- (id)last;
+- (id)groupIdentifier;
+- (void)setIsNew:;
+- (void)setContacts:;
+- (id)start;
+- (id)contacts;
+- (id)isNew;
+- (BOOL)requiresResponse;
+- (id)encodedClassName;
+- (void)setOutgoing:;
+- (id)outgoing;
+- (BOOL)mutatingCommand;
+- (id)faceTime;
+- (void)setFaceTime:;
+- (id)faceTimeAudio;
+- (void)setFaceTimeAudio:;
+- (id)missed;
+- (void)setMissed:;
+- (id)voiceMail;
+- (void)setVoiceMail:;
++ (id)search;
++ (id)searchWithDictionary:context:;
+@end

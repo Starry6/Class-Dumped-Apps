@@ -1,0 +1,30 @@
+@interface OSLogEventStream : OSLogEventStreamBase
+@property (nonatomic) _OSLogIndex index;
+@property (nonatomic) ^{_os_timesync_db_s=} tsdb;
+@property (nonatomic) _OSLogCatalogFilter catalogFilter;
+@property (nonatomic) OSLogEventSource source;
+@property (nonatomic) Q flags;
+@property (nonatomic) NSPredicate filterPredicate;
+@property (nonatomic) NSObject<OS_dispatch_queue> target;
+- (id)initWithSource:;
+- (void)activateStreamFromLastBoot;
+- (void)dealloc;
+- (id)initWithSource:skipNonSignpostFiles:;
+- (void)activateStreamFromDate:;
+- (void)setCatalogFilter:;
+- (id)index;
+- (void)_activateStreamInRange:;
+- (void)activateStreamFromPosition:;
+- (id)catalogFilter;
+- (void)setIndex:;
+- (void).cxx_destruct;
+- (id)source;
+- (void)_activateStreamFromTimeIntervalSinceLastBoot:;
+- (void)_activateStreamFromDate:toDate:;
+- (void)activateStreamFromDate:toDate:;
+- (id)tsdb;
+- (id)_initWithSource:flags:;
+- (void)setFilterPredicate:;
+- (void)setTsdb:;
+- (void)_foreachIndexFile:;
+@end

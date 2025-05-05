@@ -1,0 +1,33 @@
+@interface BMPBSleepModeEvent : PBCodable
+@property (nonatomic) BOOL hasSleepModeState;
+@property (nonatomic) NSInteger sleepModeState;
+@property (nonatomic) BOOL hasSleepModeChangeReason;
+@property (nonatomic) NSInteger sleepModeChangeReason;
+@property (nonatomic) BOOL hasExpectedEndDate;
+@property (nonatomic) double expectedEndDate;
+- (int)sleepModeState;
+- (void)setSleepModeState:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (int)StringAsSleepModeState:;
+- (void)copyTo:;
+- (id)sleepModeChangeReasonAsString:;
+- (void)mergeFrom:;
+- (void)setHasSleepModeChangeReason:;
+- (BOOL)hasSleepModeChangeReason;
+- (BOOL)readFrom:;
+- (double)expectedEndDate;
+- (id)description;
+- (void)setHasSleepModeState:;
+- (BOOL)hasExpectedEndDate;
+- (int)StringAsSleepModeChangeReason:;
+- (id)dictionaryRepresentation;
+- (void)setSleepModeChangeReason:;
+- (void)setHasExpectedEndDate:;
+- (id)sleepModeStateAsString:;
+- (void)setExpectedEndDate:;
+- (BOOL)hasSleepModeState;
+- (int)sleepModeChangeReason;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+@end

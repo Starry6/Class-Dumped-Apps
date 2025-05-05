@@ -1,0 +1,25 @@
+@interface UIKBRenderFactoryiPhoneLandscape : UIKBRenderFactoryiPhone
+- (BOOL)isTallPopup;
+- (id)variantPaddedFrameInsets;
+- (id)variantSymbolFrameInsets;
+- (id)popupSymbolTextOffset;
+- (double)moreABCKeyFontSize;
+- (id)variantAnnotationTextOffset;
+- (id)wideShadowPaddleInsets;
+- (id)moreABCKeyOffset;
+- (id)variantSymbolTextOffset;
+- (double)symbolImageControlKeyFontSize;
+- (double)popupFontSize;
+- (id)more123KeyOffset;
+- (double)emojiPopupDividerKeyOffset;
+- (id)dynamicInsets;
+- (double)dynamicBottomRowMultiplier;
+- (id)_traitsForKey:onKeyplane:;
+- (id)multitapCompleteKeyImageName;
+- (id)muttitapReverseKeyImageName;
+- (double)skinnyKeyThreshold;
+- (id)variantDisplayFrameInsets;
+- (id)variantGeometriesForGeometry:variantCount:rowLimit:annotationIndex:;
+- (double)_row4ControlSegmentWidthLeft;
+- (double)_row4ControlSegmentWidthRight;
+@end

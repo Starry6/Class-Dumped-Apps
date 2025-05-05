@@ -1,0 +1,32 @@
+@interface VSJSAppScriptEvaluator : NSObject
+@property (nonatomic) VSJSApp app;
+@property (nonatomic) VSStateMachine stateMachine;
+@property (nonatomic) NSMutableArray remainingURLs;
+@property (nonatomic) NSString currentURL;
+@property (nonatomic) NSMutableArray results;
+@property (nonatomic) NSArray urls;
+@property (nonatomic) @? completionBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)app;
+- (id)urls;
+- (void)setApp:;
+- (void)start;
+- (void)setCompletionBlock:;
+- (id)stateMachine;
+- (id)results;
+- (void)setStateMachine:;
+- (void).cxx_destruct;
+- (id)completionBlock;
+- (void)setResults:;
+- (id)initWithApp:urls:;
+- (void)transitionToEnqueueingNextUrlState;
+- (void)transitionToFetchingScriptState;
+- (void)transitionToDoneState;
+- (id)remainingURLs;
+- (void)setRemainingURLs:;
+- (id)currentURL;
+- (void)setCurrentURL:;
+@end

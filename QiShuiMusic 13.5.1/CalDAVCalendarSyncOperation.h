@@ -1,0 +1,31 @@
+@interface CalDAVCalendarSyncOperation : CalDAVOperation
+@property (nonatomic) <CalDAVCalendarSyncDelegate> delegate;
+@property (nonatomic) BOOL getScheduleTags;
+@property (nonatomic) BOOL getScheduleChanges;
+- (void)_finishWithError:;
+- (void).cxx_destruct;
+- (void)_reportJunk;
+- (id)copyAllLocalURLsInFolderWithURL:;
+- (id)copyLocalETagsForURLs:inFolderWithURL:;
+- (void)containerSyncTask:completedWithNewCTag:newSyncToken:addedOrModified:removed:error:;
+- (void)containerSyncTask:retrievedAddedOrModifiedActions:removed:;
+- (BOOL)syncPutTask:completedWithNewETag:error:;
+- (BOOL)setLocalETag:forItemWithURL:inFolderWithURL:;
+- (BOOL)syncDeleteTask:error:;
+- (BOOL)setLocalScheduleTag:forItemWithURL:inFolderWithURL:;
+- (BOOL)getScheduleTags;
+- (void)setGetScheduleTags:;
+- (BOOL)getScheduleChanges;
+- (void)setGetScheduleChanges:;
+- (void)recurrenceSplitAction:failedWithError:;
+- (void)recurrenceSplitAction:completedWithUpdatedETag:updatedScheduleTag:createdURL:createdETag:createdScheduleTag:;
+- (id)initWithPrincipal:calendar:nextCtag:nextSyncToken:;
+- (id)_distantFutureEndDate;
+- (void)syncCalendar;
+- (void)_advanceStage;
+- (void)_performNextStage;
+- (void)_splitRecurrences;
+- (void)_syncCalendar;
+- (void)_processAddedOrModified:removed:;
+- (void)_syncEventsForMerge;
+@end

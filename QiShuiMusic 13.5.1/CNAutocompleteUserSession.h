@@ -1,0 +1,32 @@
+@interface CNAutocompleteUserSession : NSObject
+@property (nonatomic) <CNAutocompleteProbeProvider> probeProvider;
+@property (nonatomic) CNAutocompleteFetchRequest currentRequest;
+@property (nonatomic) Q currentBatch;
+@property (nonatomic) _CNAutocompleteUserSessionDisplayedResults lastDisplayedResults;
+@property (nonatomic) NSDate requestStartTime;
+@property (nonatomic) CNAutocompleteUsageMonitor usageMonitor;
+@property (nonatomic) NSObject<OS_dispatch_queue> syncQueue;
+@property (nonatomic) <CNFuture> duetResultsFuture;
+- (id)syncQueue;
+- (id)requestStartTime;
+- (void)setCurrentRequest:;
+- (id)usageMonitor;
+- (void)_resetState;
+- (void)setUsageMonitor:;
+- (id)currentRequest;
+- (void)setSyncQueue:;
+- (void).cxx_destruct;
+- (void)setRequestStartTime:;
+- (id)initWithProbeProvider:;
+- (void)willStartDuetRequestWithMatchingResultsFuture:;
+- (void)willStartExecutingRequest:;
+- (void)didReceiveResults:forRequest:;
+- (void)didSelectResult:atSortedIndex:;
+- (id)probeProvider;
+- (unsigned long long)currentBatch;
+- (void)setCurrentBatch:;
+- (id)lastDisplayedResults;
+- (void)setLastDisplayedResults:;
+- (id)duetResultsFuture;
+- (void)setDuetResultsFuture:;
+@end

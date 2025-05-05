@@ -1,0 +1,30 @@
+@interface CSJInterstitialCoverView : CSJCoverView
+@property (nonatomic) BOOL haveVideoView;
+@property (nonatomic) <CSJInterstitialCoverViewDelegate> interstitialDelegate;
+@property (nonatomic) CSJNativeAdRelatedView nativeAdRelatedView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (double)playerTotalTime;
+- (void)addVideoViewIfNeed;
+- (BOOL)haveVideoView;
+- (id)interstitialDelegate;
+- (void)interstitialVideoDidClick:;
+- (id)nativeAdRelatedView;
+- (void)pbu_override_buildView;
+- (void)pbu_override_buildViewData;
+- (void)playerDidPlayFinish:;
+- (void)playerReadyToPlay:;
+- (void)setHaveVideoView:;
+- (void)setInterstitialDelegate:;
+- (void)setNativeAdRelatedView:;
+- (void)videoAdView:didLoadFailWithError:;
+- (void)videoAdView:stateDidChanged:;
+- (void)videoAdViewDidClick:;
+- (void)videoAdViewDidCloseOtherController:interactionType:;
+- (void)videoAdViewFinishViewDidClick:;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (double)playerCurrentTime;
+@end

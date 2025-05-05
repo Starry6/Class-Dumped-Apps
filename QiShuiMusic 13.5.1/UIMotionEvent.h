@@ -1,0 +1,30 @@
+@interface UIMotionEvent : UIEvent
+@property (nonatomic) NSInteger shakeState;
+- (long long)subtype;
+- (int)shakeState;
+- (void)dealloc;
+- (float)_lowPass:;
+- (id)_windows;
+- (void)_willResume;
+- (void)_idleTimerFired;
+- (void)_enablePeakDetectionIfNecessary;
+- (int)_shakeState;
+- (BOOL)_isDetectingMotionEvents;
+- (void)_accelerometerDidDetectMovementWithTimestamp:;
+- (void)_resetLowPassState;
+- (void)setShakeState:;
+- (void)_enablePeakDetectionForScreenBlanked:;
+- (void)_setSubtype:;
+- (long long)type;
+- (float)_determineShakeLevelX:y:z:currentState:;
+- (float)_highPass:;
+- (void).cxx_destruct;
+- (void)accelerometer:didAccelerateWithTimeStamp:x:y:z:eventType:;
+- (id)description;
+- (id)_init;
+- (long long)_feedStateMachine:currentState:timestamp:;
+- (void)_updateAccelerometerEnabled;
+- (BOOL)_detectWhenNotActive;
+- (void)_willSuspend;
+- (void)_sendEventToResponder:;
+@end

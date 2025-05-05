@@ -1,0 +1,35 @@
+@interface SISchemaUUFRPresented : SISchemaInstrumentationMessage
+@property (nonatomic) SISchemaViewContainer viewContainer;
+@property (nonatomic) BOOL hasViewContainer;
+@property (nonatomic) NSString errorDomain;
+@property (nonatomic) BOOL hasErrorDomain;
+@property (nonatomic) NSInteger errorCode;
+@property (nonatomic) BOOL hasErrorCode;
+@property (nonatomic) NSData jsonData;
+- (id)errorDomain;
+- (BOOL)hasErrorCode;
+- (int)errorCode;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void)setErrorDomain:;
+- (BOOL)hasErrorDomain;
+- (void)setHasErrorCode:;
+- (void)setErrorCode:;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)deleteErrorCode;
+- (void)deleteErrorDomain;
+- (void)setHasErrorDomain:;
+- (BOOL)hasViewContainer;
+- (void)deleteViewContainer;
+- (id)viewContainer;
+- (void)setViewContainer:;
+- (void)setHasViewContainer:;
+@end

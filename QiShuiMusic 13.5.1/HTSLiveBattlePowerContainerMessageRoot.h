@@ -1,0 +1,2 @@
+@interface HTSLiveBattlePowerContainerMessageRoot : GPBRootObject
+@end

@@ -1,0 +1,37 @@
+@interface FLEXArgumentInputColorView : FLEXArgumentInputView
+@property (nonatomic) FLEXColorPreviewBox colorPreviewBox;
+@property (nonatomic) UILabel hexLabel;
+@property (nonatomic) FLEXColorComponentInputView alphaInput;
+@property (nonatomic) FLEXColorComponentInputView redInput;
+@property (nonatomic) FLEXColorComponentInputView greenInput;
+@property (nonatomic) FLEXColorComponentInputView blueInput;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithArgumentTypeEncoding:;
+- (void)setBackgroundColor:;
+- (void)layoutSubviews;
+- (void)setInputValue:;
+- (id)inputValue;
+- (void)colorComponentInputViewValueDidChange:;
+- (void)updateWithColor:;
+- (void)updateColorPreview;
+- (id)sizeThatFits:;
+- (id)colorPreviewBox;
+- (void)setColorPreviewBox:;
+- (id)hexLabel;
+- (void)setHexLabel:;
+- (id)alphaInput;
+- (void)setAlphaInput:;
+- (id)redInput;
+- (void)setRedInput:;
+- (id)greenInput;
+- (void)setGreenInput:;
+- (id)blueInput;
+- (void)setBlueInput:;
+- (void).cxx_destruct;
++ (double)inputViewVerticalPadding;
++ (double)colorPreviewBoxHeight;
++ (BOOL)supportsObjCType:withCurrentValue:;
+@end

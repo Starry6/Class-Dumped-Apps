@@ -1,0 +1,32 @@
+@interface TIInputModeController : NSObject
+@property (nonatomic) NSString currentLocale;
+@property (nonatomic) NSArray preferredLanguages;
+@property (nonatomic) NSArray enabledInputModes;
+@property (nonatomic) NSArray defaultInputModes;
+@property (nonatomic) NSArray inputModesForTesting;
+@property (nonatomic) NSArray supportedInputModeIdentifiers;
+@property (nonatomic) NSArray supportedInputModeLanguageAndRegions;
+@property (nonatomic) NSArray enabledInputModeIdentifiers;
+- (id)enabledInputModes;
+- (id)currentLocale;
+- (BOOL)identifierIsValidSystemInputMode:;
+- (void)setDefaultInputModes:;
+- (id)supportedInputModeLanguageAndRegions;
+- (void)setEnabledInputModes:;
+- (id)enabledInputModeIdentifiers;
+- (id)supportedInputModeIdentifiers;
+- (id)defaultEnabledInputModesForCurrentLocale;
+- (void)setInputModeIdentifiersForTesting:;
+- (id)inputModesForTesting;
+- (void)setPreferredLanguages:;
+- (id)suggestedDictationLanguagesForDeviceLanguage;
+- (void)setInputModesForTesting:;
+- (id)defaultInputModes;
+- (id)preferredLanguages;
+- (void).cxx_destruct;
+- (id)defaultDictationLanguagesForKeyboardLanguage:;
+- (void)setCurrentLocale:;
+- (id)suggestedDictationLanguageForDeviceLanguage;
++ (id)_inputModesForLocale:language:modeFetcher:;
++ (id)sharedInputModeController;
+@end

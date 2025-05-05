@@ -1,0 +1,35 @@
+@interface BDXRLCDNProcessor : BDXRLBaseProcessor
+@property (nonatomic) DownloadGlobalParameters downloadParameters;
+@property (nonatomic) NSArray endRetryCodes;
+@property (nonatomic) @? downloadCompletion;
+@property (nonatomic) double lastAbsoluteTime;
+@property (nonatomic) NSArray taskURLIdentities;
+- (void)downloadWithIdentity:URLString:;
+- (void)_fetchResourceWithSourceURL:resolve:reject:;
+- (id)addMultiCommonParams:;
+- (void)appendFlagOfCurrentProcessor:url:error:;
+- (void)configDownloadParams;
+- (id)downloadParameters;
+- (id)endRetryCodes;
+- (void)fetchResourceWithURL:loaderConfig:taskConfig:resolve:reject:;
+- (void)fetchShuffleDomains:resolve:reject:;
+- (Class)forestClass;
+- (id)getTTnetEnv;
+- (id)initWithMonitorDelegate:;
+- (BOOL)isCDNMultiVersionResource:;
+- (double)lastAbsoluteTime;
+- (id)mergePrams:withURL:;
+- (id)resourceLoaderName;
+- (void)setDownloadParameters:;
+- (void)setEndRetryCodes:;
+- (void)setLastAbsoluteTime:;
+- (void)setTaskURLIdentities:;
+- (id)taskURLIdentities;
+- (void)dealloc;
+- (void)cancelLoad;
+- (void)appendFlag:;
+- (void).cxx_destruct;
+- (id)downloadCompletion;
+- (void)setDownloadCompletion:;
++ (void)deleteCDNCacheForResource:;
+@end

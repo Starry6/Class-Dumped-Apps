@@ -1,0 +1,37 @@
+@interface VCVoiceShortcut : NSObject
+@property (nonatomic) NSDate dateCreated;
+@property (nonatomic) NSDate dateLastModified;
+@property (nonatomic) BOOL hasBeenModified;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) NSString phrase;
+@property (nonatomic) NSString shortcutName;
+@property (nonatomic) NSString shortcutDescription;
+@property (nonatomic) NSString associatedAppBundleIdentifier;
+@property (nonatomic) INImage keyImage;
+@property (nonatomic) INShortcut shortcut;
+@property (nonatomic) WFWorkflow workflow;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)phrase;
+- (id)identifier;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (id)dateCreated;
+- (void).cxx_destruct;
+- (id)description;
+- (id)associatedAppBundleIdentifier;
+- (id)shortcut;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)keyImage;
+- (id)workflow;
+- (id)shortcutName;
+- (id)initWithIdentifier:phrase:shortcutName:shortcutDescription:associatedAppBundleIdentifier:dateCreated:dateLastModified:shortcut:keyImageData:error:;
+- (BOOL)hasBeenModified;
+- (id)shortcutDescription;
+- (id)dateLastModified;
++ (BOOL)supportsSecureCoding;
+@end

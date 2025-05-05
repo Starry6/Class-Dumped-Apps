@@ -1,0 +1,31 @@
+@interface MPAVRoutingSheet : UIView
+@property (nonatomic) q avItemType;
+@property (nonatomic) BOOL mirroringOnly;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)dismiss;
+- (void)dealloc;
+- (void)layoutSubviews;
+- (void)tintColorDidChange;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)showInView:withCompletionHandler:;
+- (id)initWithAVItemType:;
+- (void)routingViewController:didPickRoute:;
+- (void)routingViewControllerDidUpdateContents:;
+- (void)setAVItemType:;
+- (long long)avItemType;
+- (void)routingViewControllerDidShowAirPlayDebugScreen:;
+- (void)setMirroringOnly:;
+- (BOOL)mirroringOnly;
+- (void)_cancelButtonAction:;
+- (void)_animateControls:withCompletionHandler:;
+- (void)_updateRoutingSheetFrame;
+- (void)_updateDismissButtonText;
+- (id)_routingViewFrame;
+- (id)_cancelButtonFrame;
+- (id)_controlsViewFrame;
+- (id)_maxRoutingViewSize;
+@end

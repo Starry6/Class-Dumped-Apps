@@ -1,0 +1,2 @@
+@interface IESLiveSaaSPBIESLiveSaaSPBContentTradeItemRoot : GPBRootObject
+@end

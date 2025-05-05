@@ -1,0 +1,35 @@
+@interface AWDSpringBoardSwitcherToAppTransition : PBCodable
+@property (nonatomic) BOOL hasTimestamp;
+@property (nonatomic) Q timestamp;
+@property (nonatomic) BOOL hasSwitcherName;
+@property (nonatomic) NSString switcherName;
+@property (nonatomic) BOOL hasAbsoluteDistanceInList;
+@property (nonatomic) Q absoluteDistanceInList;
+@property (nonatomic) BOOL hasIsGoingToHomeScreen;
+@property (nonatomic) BOOL isGoingToHomeScreen;
+- (void)dealloc;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)setHasTimestamp:;
+- (void)mergeFrom:;
+- (BOOL)hasTimestamp;
+- (void)setTimestamp:;
+- (BOOL)readFrom:;
+- (unsigned long long)timestamp;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasSwitcherName;
+- (void)setAbsoluteDistanceInList:;
+- (void)setHasAbsoluteDistanceInList:;
+- (BOOL)hasAbsoluteDistanceInList;
+- (void)setIsGoingToHomeScreen:;
+- (void)setHasIsGoingToHomeScreen:;
+- (BOOL)hasIsGoingToHomeScreen;
+- (id)switcherName;
+- (void)setSwitcherName:;
+- (unsigned long long)absoluteDistanceInList;
+- (BOOL)isGoingToHomeScreen;
+@end

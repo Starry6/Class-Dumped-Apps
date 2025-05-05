@@ -1,0 +1,35 @@
+@interface VideoRelightingMetal : ImageSaverAndFileConfigRegistrator
+@property (nonatomic) double gpuStartTime;
+@property (nonatomic) double gpuEndTime;
+@property (nonatomic) float relightingStability;
+- (void)encodeAlphaBlendRGBATextureArrayToCommandBuffer:inTexFirst:inTexSecond:outTex:alpha:;
+- (void)updateUniforms:;
+- (id)loadCube:;
+- (void)encodeCountKernelToCommandBuffer:;
+- (void)initCommon;
+- (void)updateModelAndPose:camera:;
+- (void)encodeSlideKernelToCommandBuffer:;
+- (id)getInternalColorCube:;
+- (double)gpuEndTime;
+- (void)generateModelNormals;
+- (void)updateFaceKitStreamedDataFromProcessOutput:;
+- (void)loadRGBTransformMapsForEffectVersion:;
+- (void)createTexturesWith:imgHeight:;
+- (void).cxx_destruct;
+- (void)renderWithSrcImage:srcAlpha:trustAlpha:yuvSourceDownsampled:skinSegmentation:dstImage:faceKitProcessOutput:portraitStyleStrength:colorSim:disparity:focusDistance:singleCubeData:properties:callbackQueue:callback:;
+- (id)create3DTextureWithSize:;
+- (void)encodeLerpNearFarMapsToCommandBuffer:;
+- (void)setModelVertices;
+- (void)saveTexture:toImage:;
+- (double)gpuStartTime;
+- (id)initWithMetalContext:;
+- (void)configureRenderPipeline;
+- (void)encodeRelightKernelToCommandBuffer:;
+- (void)initKernelFunctions;
+- (void)updateMatrixWithWidth:height:camera:pose:;
+- (void)loadRGBTransformMapsOnceTo:namePrefix:forIntermediateResults:;
+- (float)relightingStability;
+- (id).cxx_construct;
+- (void)encodeTCKernelToCommandBuffer:;
+- (void)encodeVertCountKernelToCommandBuffer:;
+@end

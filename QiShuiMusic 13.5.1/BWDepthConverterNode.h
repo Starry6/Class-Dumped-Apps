@@ -1,0 +1,33 @@
+@interface BWDepthConverterNode : BWNode
+- (unsigned int)outputFormat;
+- (BOOL)mirroringEnabled;
+- (void)setOutputFormat:;
+- (void)didSelectFormat:forInput:forAttachedMediaKey:;
+- (void)dealloc;
+- (int)rotationDegrees;
+- (void)setOutputDimensions:;
+- (void)setMirroringEnabled:;
+- (id)nodeType;
+- (void)setVerticalSensorBinningFactor:;
+- (void)setHorizontalSensorBinningFactor:;
+- (int)verticalSensorBinningFactor;
+- (void)prepareForCurrentConfigurationToBecomeLive;
+- (int)horizontalSensorBinningFactor;
+- (void)renderSampleBuffer:forInput:;
+- (id)outputDimensions;
+- (void)setRotationDegrees:;
+- (id)nodeSubType;
+- (id)initWithStillImageNodeConfiguration:cameraInfoByPortType:sensorIDDictionary:rgbPersonSegmentationEnabled:depthIsAlwaysHighQuality:depthOriginatesFromNeuralNetwork:;
+- (void)setStreamingGDRFilteringEnabled:;
+- (BOOL)streamingGDRFilteringEnabled;
+- (void)setStillGDRFilteringSupportEnabled:;
+- (BOOL)stillGDRFilteringSupportEnabled;
+- (void)setStreamingSMPFilteringEnabled:;
+- (BOOL)streamingSMPFilteringEnabled;
+- (void)setStillSMPFilteringSupportEnabled:;
+- (BOOL)stillSMPFilteringSupportEnabled;
+- (void)setBaseRotationDegrees:;
+- (int)baseRotationDegrees;
+- (void)setProvidesUnfilteredDepthAsAttachedMedia:;
+- (BOOL)providesUnfilteredDepthAsAttachedMedia;
+@end

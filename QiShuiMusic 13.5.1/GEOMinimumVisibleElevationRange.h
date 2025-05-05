@@ -1,0 +1,32 @@
+@interface GEOMinimumVisibleElevationRange : PBCodable
+@property (nonatomic) BOOL hasLowerBoundCm;
+@property (nonatomic) NSInteger lowerBoundCm;
+@property (nonatomic) BOOL hasUpperBoundCm;
+@property (nonatomic) NSInteger upperBoundCm;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (int)lowerBoundCm;
+- (void)setLowerBoundCm:;
+- (void)setHasLowerBoundCm:;
+- (BOOL)hasLowerBoundCm;
+- (int)upperBoundCm;
+- (void)setUpperBoundCm:;
+- (void)setHasUpperBoundCm:;
+- (BOOL)hasUpperBoundCm;
++ (BOOL)isValid:;
+@end

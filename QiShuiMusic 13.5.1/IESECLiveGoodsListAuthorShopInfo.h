@@ -1,0 +1,33 @@
+@interface IESECLiveGoodsListAuthorShopInfo : MTLModel
+@property (nonatomic) NSString shopName;
+@property (nonatomic) NSString jumpURL;
+@property (nonatomic) NSArray shopTags;
+@property (nonatomic) IESECLiveGoodsListAuthorReputationModel shopReputation;
+@property (nonatomic) NSNumber fontSize;
+@property (nonatomic) IESECLiveGoodsListAuthorShopAvatarModel shopAvatar;
+@property (nonatomic) NSArray userActParams;
+@property (nonatomic) NSDictionary trackParams;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)jumpURL;
+- (void)setTrackParams:;
+- (void)setJumpURL:;
+- (void)setShopAvatar:;
+- (void)setShopName:;
+- (void)setShopReputation:;
+- (void)setShopTags:;
+- (void)setUserActParams:;
+- (id)shopAvatar;
+- (id)shopName;
+- (id)shopReputation;
+- (id)shopTags;
+- (id)trackParams;
+- (id)userActParams;
+- (id)fontSize;
+- (void).cxx_destruct;
+- (void)setFontSize:;
++ (id)shopTagsJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

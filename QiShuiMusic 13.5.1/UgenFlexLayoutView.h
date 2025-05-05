@@ -1,0 +1,30 @@
+@interface UgenFlexLayoutView : UIView
+@property (nonatomic) BOOL isFittingSize;
+@property (nonatomic) NSString ugWidth;
+@property (nonatomic) NSString ugHeight;
+@property (nonatomic) NSString ugRatio;
+@property (nonatomic) NSString ugMarginLeft;
+@property (nonatomic) NSString ugMarginRight;
+@property (nonatomic) NSString ugMarginTop;
+@property (nonatomic) NSString ugMarginBottom;
+- (id)ugWidth;
+- (void)setUgMarginTop:;
+- (id)ugRatio;
+- (BOOL)isFittingSize;
+- (void)setIsFittingSize:;
+- (void)setUgHeight:;
+- (void)setUgMarginBottom:;
+- (void)setUgMarginLeft:;
+- (void)setUgMarginRight:;
+- (void)setUgRatio:;
+- (void)setUgWidth:;
+- (id)ugHeight;
+- (id)ugMarginBottom;
+- (id)ugMarginLeft;
+- (id)ugMarginRight;
+- (id)ugMarginTop;
+- (id)intrinsicContentSize;
+- (id)hitTest:withEvent:;
+- (id)sizeThatFits:;
+- (void).cxx_destruct;
+@end

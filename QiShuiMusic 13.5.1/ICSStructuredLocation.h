@@ -1,0 +1,34 @@
+@interface ICSStructuredLocation : ICSProperty
+@property (nonatomic) NSString fmtype;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString loctype;
+@property (nonatomic) NSString abURLString;
+@property (nonatomic) NSData mapKitHandle;
+@property (nonatomic) double radius;
+@property (nonatomic) NSString displayName;
+@property (nonatomic) NSString address;
+@property (nonatomic) NSString routing;
+- (void)setRadius:;
+- (void)setAddress:;
+- (double)radius;
+- (void)setTitle:;
+- (void)setDisplayName:;
+- (id)displayName;
+- (id)title;
+- (void)setRouting:;
+- (void)_ICSStringWithOptions:appendingToString:;
+- (id)address;
+- (id)abURLString;
+- (void)setAbURLString:;
+- (id)mapKitHandle;
+- (void)setMapKitHandle:;
+- (id)routing;
+- (void)setFmtype:;
+- (id)fmtype;
+- (id)propertiesToObscure;
+- (id)parametersToObscure;
+- (BOOL)shouldObscureValue;
+- (id)propertiesToHide;
+- (id)loctype;
+- (void)setLoctype:;
+@end

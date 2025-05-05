@@ -1,0 +1,2 @@
+@interface BattleFeedbackApiRoot : GPBRootObject
+@end

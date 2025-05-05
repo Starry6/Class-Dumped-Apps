@@ -1,0 +1,31 @@
+@interface BDUPCXBridgeAppFetchParamModel : BDXBridgeModel
+@property (nonatomic) NSString url;
+@property (nonatomic) NSString method;
+@property (nonatomic) NSDictionary params;
+@property (nonatomic) NSDictionary data;
+@property (nonatomic) NSDictionary header;
+@property (nonatomic) NSNumber needCommonParams;
+@property (nonatomic) NSString requestType;
+@property (nonatomic) NSString responseType;
+@property (nonatomic) NSString fetchType;
+- (id)needCommonParams;
+- (void)setNeedCommonParams:;
+- (id)requestType;
+- (void)setHeader:;
+- (void)setRequestType:;
+- (id)url;
+- (id)fetchType;
+- (id)data;
+- (id)method;
+- (void)setUrl:;
+- (void).cxx_destruct;
+- (void)setData:;
+- (void)setMethod:;
+- (id)header;
+- (id)params;
+- (id)responseType;
+- (void)setParams:;
+- (void)setResponseType:;
+- (void)setFetchType:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

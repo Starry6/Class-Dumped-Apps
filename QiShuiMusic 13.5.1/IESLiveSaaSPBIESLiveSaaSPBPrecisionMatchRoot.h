@@ -1,0 +1,2 @@
+@interface IESLiveSaaSPBIESLiveSaaSPBPrecisionMatchRoot : GPBRootObject
+@end

@@ -1,0 +1,2 @@
+@interface AVSampleCursorInternal : NSObject
+@end

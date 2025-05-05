@@ -1,0 +1,36 @@
+@interface BRFileObjectID : NSObject
+@property (nonatomic) NSString asString;
+@property (nonatomic) BOOL isFolderOrAliasID;
+@property (nonatomic) BOOL isDocumentID;
+@property (nonatomic) NSNumber folderID;
+@property (nonatomic) NSNumber documentID;
+@property (nonatomic) Q rawID;
+@property (nonatomic) C type;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)folderID;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (void)sqliteBind:index:;
+- (BOOL)isFpfsItem;
+- (unsigned long long)rawID;
+- (unsigned char)type;
+- (BOOL)isCloudDocsRoot;
+- (BOOL)isAppLibraryRoot;
+- (id)asString;
+- (BOOL)isFolderOrAliasID;
+- (BOOL)isRootContainerItem;
+- (BOOL)isDocumentID;
+- (BOOL)isEqualToFileObjectID:;
+- (BOOL)isEqual:;
+- (id)documentID;
+- (id)copyWithZone:;
++ (id)newFromSqliteValue:;
++ (id)fileObjectIDForURL:allocateDocID:error:;
++ (BOOL)supportsSecureCoding;
++ (id)fileObjectIDWithString:;
++ (id)newFromSqliteStatement:atIndex:;
+@end

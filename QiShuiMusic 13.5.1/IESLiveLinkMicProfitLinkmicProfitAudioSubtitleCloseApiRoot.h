@@ -1,0 +1,2 @@
+@interface IESLiveLinkMicProfitLinkmicProfitAudioSubtitleCloseApiRoot : GPBRootObject
+@end

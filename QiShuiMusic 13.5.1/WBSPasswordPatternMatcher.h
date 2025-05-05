@@ -1,0 +1,25 @@
+@interface WBSPasswordPatternMatcher : NSObject
+- (id)patternMatchesForPassword:withWordListCollection:;
+- (id)patternMatchesForPasscode:withWordListCollection:;
+- (id)_keyboardsByIdentifier;
+- (unsigned long long)_directionFromHexCoordinate:to:;
+- (id)_passwordWithoutShiftedCharacters:shiftMap:outShiftedCharacterIndexSet:;
+- (id)_keyboardLayoutPatternMatchesForPassword:;
+- (id)_keyboardMatchWithPassword:range:shiftedCharacterCount:keyboardIdentifier:keyboard:;
+- (id)_sequencePatternMatchesForPassword:;
+- (id)_sequencePatternMatchWithPassword:startIndex:endIndex:delta:;
+- (id)_obviousSequenceStartCharacterSet;
+- (id)_wordListMatchesForPassword:withWordListCollection:;
+- (id)_commonlySubstitutedCharactersMap;
+- (id)_commonlySubstitutedCharacterSet;
+- (id)_passwordVariationsWithoutCommonCharacterSubstitutions:;
+- (void)_enumerateGraphemeClusterSubrangesOfString:withMinimumLength:usingBlock:;
+- (id)_repetitionMatchesForPassword:withMatches:;
+- (id)_patternWithFewestGuessesRequiredWithRange:patternMatches:;
+- (id)_characterRepetitionPatternForPasscode:;
+- (id)_commonPasscodeCharacterRepetitionPatterns;
+- (id)_repetitionMatchesForPasscode:;
+- (id)_sequenceMatchesForPasscode:;
+- (id)_dateMatchesForPasscode:;
+- (id)_wordListMatchesForPasscode:withWordListCollection:;
+@end

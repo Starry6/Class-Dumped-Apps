@@ -1,0 +1,21 @@
+@interface PPClientContactNameRecord : PPContactNameRecord
+- (unsigned char)changeType;
+- (double)score;
+- (id)sourceIdentifier;
+- (id)identifier;
+- (id)firstName;
+- (id)middleName;
+- (id)lastName;
+- (id)nickname;
+- (id)phoneticLastName;
+- (void).cxx_destruct;
+- (unsigned char)source;
+- (id)jobTitle;
+- (id)phoneticMiddleName;
+- (id)organizationName;
+- (id)relatedNames;
+- (id)phoneticFirstName;
+- (id)initWithIdentifier:score:source:sourceIdentifier:changeType:firstName:phoneticFirstName:middleName:phoneticMiddleName:lastName:phoneticLastName:organizationName:jobTitle:nickname:relatedNames:streetNames:cityNames:;
+- (id)streetNames;
+- (id)cityNames;
+@end

@@ -1,0 +1,31 @@
+@interface WebDefaultFrameLoadDelegate : NSObject
+- (void)webView:didFinishLoadForFrame:;
+- (void)webView:didFailLoadWithError:forFrame:;
+- (void)webView:didFirstVisuallyNonEmptyLayoutInFrame:;
+- (void)webView:willCloseFrame:;
+- (void)webView:didStartProvisionalLoadForFrame:;
+- (void)webView:didFirstLayoutInFrame:;
+- (void)webView:didReceiveServerRedirectForProvisionalLoadForFrame:;
+- (void)webView:didFailProvisionalLoadWithError:forFrame:;
+- (void)webView:didCommitLoadForFrame:;
+- (void)webView:didReceiveTitle:forFrame:;
+- (void)webView:didChangeLocationWithinPageForFrame:;
+- (void)webView:willPerformClientRedirectToURL:delay:fireDate:forFrame:;
+- (void)webView:didCancelClientRedirectForFrame:;
+- (void)webView:didClearWindowObject:forFrame:;
+- (void)webView:windowScriptObjectAvailable:;
+- (void)webView:didCreateJavaScriptContext:forFrame:;
+- (void)webView:didRemoveFrameFromHierarchy:;
+- (void)webView:didHandleOnloadEventsForFrame:;
+- (void)webView:didPushStateWithinPageForFrame:;
+- (void)webView:didReplaceStateWithinPageForFrame:;
+- (void)webView:didPopStateWithinPageForFrame:;
+- (void)webView:didFinishDocumentLoadForFrame:;
+- (void)webViewDidDisplayInsecureContent:;
+- (void)webView:didRunInsecureContent:;
+- (void)webView:didDetectXSS:;
+- (void)webView:didClearWindowObjectForFrame:inScriptWorld:;
+- (void)webView:didClearInspectorWindowObject:forFrame:;
+- (void)webView:didLayout:;
++ (id)sharedFrameLoadDelegate;
+@end

@@ -1,0 +1,32 @@
+@interface GEOPDABClientDatasetMetadata : PBCodable
+@property (nonatomic) BOOL hasBucketId;
+@property (nonatomic) I bucketId;
+@property (nonatomic) BOOL hasDatasetId;
+@property (nonatomic) I datasetId;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (BOOL)hasDatasetId;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (BOOL)hasBucketId;
+- (void).cxx_destruct;
+- (void)setDatasetId:;
+- (BOOL)readFrom:;
+- (unsigned int)datasetId;
+- (void)setHasBucketId:;
+- (id)description;
+- (void)setBucketId:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)setHasDatasetId:;
+- (unsigned int)bucketId;
+- (id)copyWithZone:;
++ (BOOL)isValid:;
+@end

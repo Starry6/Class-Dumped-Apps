@@ -1,0 +1,2 @@
+@interface AWELazyRegisterPiper : NSObject
+@end

@@ -1,0 +1,37 @@
+@interface CNPhotoPickerEmojiProviderItem : CNPhotoPickerProviderItem
+@property (nonatomic) {CGSize=dd} size;
+@property (nonatomic) NSString stringRepresentation;
+@property (nonatomic) NSData dataRepresentation;
+@property (nonatomic) CNPhotoPickerColorVariant backgroundColorVariant;
+@property (nonatomic) NSString itemText;
+@property (nonatomic) UIColor backgroundColor;
+- (unsigned long long)imageType;
+- (id)stringRepresentation;
+- (id)imageData;
+- (id)backgroundColor;
+- (void).cxx_destruct;
+- (void)setSize:;
+- (id)dataRepresentation;
+- (id)copyWithZone:;
+- (id)size;
+- (void)setStringRepresentation:;
+- (id)thumbnailImageData;
+- (id)updatedProviderItemWithText:;
+- (id)itemText;
+- (BOOL)allowsVariants;
+- (BOOL)allowsMoveAndScale;
+- (id)generateThumbnailImageDataIfNeeded;
+- (void)updateVisualIdentity:;
+- (id)createVariantsItemsWithVariantsManager:;
+- (id)contactImageForMetadataStore;
+- (id)initWithStringRepresentation:backgroundColorVariant:size:;
+- (id)copyWithStringRepresentation:;
+- (id)generateImageRepresentationForEmojiString:;
+- (id)updatedProviderItemWithText:backgroundColorVariant:;
+- (void)setDataRepresentation:;
+- (id)backgroundColorVariant;
+- (void)setBackgroundColorVariant:;
++ (id)thumbnailViewForImage:;
++ (id)addNewEmojiProviderItemWithSize:;
++ (id)suggestedEmojiItemsForString:variantsManager:size:locale:;
+@end

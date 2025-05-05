@@ -1,0 +1,34 @@
+@interface CalDateLocalization : NSObject
++ (void)initializeFormatters;
++ (void)rebuildFormatters;
++ (void)rebuildWeekendDays;
++ (id)sharedDateFormatter;
++ (id)calendarDayFormatter;
++ (id)dateFormatterForKey:formatString:;
++ (id)weekendDays;
++ (BOOL)dateIsWeekend:;
++ (BOOL)weekdayIsWeekend:;
++ (BOOL)hasAMPM;
++ (BOOL)uses24HourTime;
++ (BOOL)shouldUseHourMinutesWithoutAMPMForHours;
++ (id)formatKeyForHourString;
++ (void)setupFormatter:forKey:;
++ (void)setupFormat:forKey:locale:;
++ (void)setupFormatTemplate:forKey:locale:;
++ (void)generateStandardFormatters:;
++ (void)generateAdditionalPrecodedFormatters:;
++ (id)_hourSymbolInFormat:;
++ (void)generateDerivedTimeFormats:;
++ (void)generateLocalizedDateTimeFormats;
++ (void)generatePreferedOrders;
++ (id)sizeOrderedDateFormats;
++ (id)sizeOrderedDateFormatsWithYear;
++ (id)sizeOrderedDateFormatsWithoutYear;
++ (id)sizeOrderedAllDateFormatsWithoutYear;
++ (id)ICUFormats;
++ (id)dateFormatters;
++ (id)ICUFormatForKey:;
++ (id)dateFormatterForKey:;
++ (id)longStringForDateAndTime:inTimeZone:;
++ (id)dateStringRepresentationForEventCompontentsStartDate:endDate:allDay:timeZone:;
+@end

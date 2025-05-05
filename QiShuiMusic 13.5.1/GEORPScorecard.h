@@ -1,0 +1,38 @@
+@interface GEORPScorecard : PBCodable
+@property (nonatomic) BOOL hasVersion;
+@property (nonatomic) NSString version;
+@property (nonatomic) BOOL hasRecommended;
+@property (nonatomic) BOOL recommended;
+@property (nonatomic) NSMutableArray categoryRatings;
+- (void)readAll:;
+- (id)init;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (void)setVersion:;
+- (id)version;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (BOOL)hasVersion;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)recommended;
+- (void)setRecommended:;
+- (void)setHasRecommended:;
+- (BOOL)hasRecommended;
+- (id)categoryRatings;
+- (void)setCategoryRatings:;
+- (void)clearCategoryRatings;
+- (void)addCategoryRatings:;
+- (unsigned long long)categoryRatingsCount;
+- (id)categoryRatingsAtIndex:;
++ (BOOL)isValid:;
++ (Class)categoryRatingsType;
+@end

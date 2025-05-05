@@ -1,0 +1,32 @@
+@interface ARPointCloud : NSObject
+@property (nonatomic) Q count;
+@property (nonatomic) r^ points;
+@property (nonatomic) r^Q identifiers;
+- (id)centroid;
+- (id)identifiers;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)standardDeviation;
+- (id)points;
+- (unsigned long long)count;
+- (id).cxx_construct;
+- (BOOL)isEqual:;
+- (id)initWithPointData:;
+- (id)initWithCV3DPointData:minVergenceAngleCosine:;
+- (id)initWithPointsVector:identifiersVector:;
+- (id)initWithPointsVector:identifiersVector:vergenceAngleCosinesVector:;
+- (id)initWithDepthPointCloud:;
+- (id)depthPointCloud;
+- (id)vergenceAngleCosines;
+- (id)computeBounds;
+- (id)filterPointCloudFrom:ellipsoid:;
+- (id)filterPointCloudWithIdentifiers:;
+- (id)_hitTestPointFromOrigin:withDirection:maximumAngle:cameraToWorldTransform:;
+- (id)pointCloudByApplyingTransform:;
++ (BOOL)supportsSecureCoding;
++ (id)concatPointClouds:;
++ (id)emptyPointCloud;
+@end

@@ -1,0 +1,31 @@
+@interface SFAuthenticationManager : NSObject
+@property (nonatomic) SFAutoUnlockManager autoUnlockManager;
+@property (nonatomic) NSObject<OS_dispatch_queue> queue;
+@property (nonatomic) <SFAuthenticationManagerDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)failedAuthenticationSessionWithID:error:;
+- (void)setDelegate:;
+- (void)manager:failedAttemptWithError:;
+- (void)keyDeviceLocked:;
+- (void)beganAttemptWithDevice:;
+- (void)failedToEnableDevice:error:;
+- (BOOL)isSupportedForType:;
+- (BOOL)isEnabledForType:;
+- (void)manager:beganAttemptWithDevice:;
+- (id)delegate;
+- (void)cancelAuthenticationSessionWithID:;
+- (void)manager:completedUnlockWithDevice:;
+- (id)autoUnlockManager;
+- (void).cxx_destruct;
+- (void)failedUnlockWithError:;
+- (id)initWithQueue:;
+- (void)completedUnlockWithDevice:;
+- (void)enabledDevice:;
+- (void)completedAuthenticationSessionWithID:;
+- (id)queue;
+- (id)authenticateForType:;
+- (void)startedAuthenticationSessionWithID:;
+@end

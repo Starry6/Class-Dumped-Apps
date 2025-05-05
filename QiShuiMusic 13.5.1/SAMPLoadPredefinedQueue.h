@@ -1,0 +1,30 @@
+@interface SAMPLoadPredefinedQueue : SADomainCommand
+@property (nonatomic) BOOL dryRun;
+@property (nonatomic) NSArray hashedRouteUIDs;
+@property (nonatomic) NSInteger mediaItemType;
+@property (nonatomic) NSString requesterSharedUserId;
+@property (nonatomic) NSString sharedUserIdFromPlayableMusicAccount;
+@property (nonatomic) BOOL shouldShuffle;
+@property (nonatomic) NSNumber startPlaying;
+- (void)af_addEntriesToAnalyticsContext:;
+- (id)groupIdentifier;
+- (void)setDryRun:;
+- (BOOL)requiresResponse;
+- (id)encodedClassName;
+- (BOOL)dryRun;
+- (id)hashedRouteUIDs;
+- (void)setHashedRouteUIDs:;
+- (id)sharedUserIdFromPlayableMusicAccount;
+- (void)setSharedUserIdFromPlayableMusicAccount:;
+- (id)startPlaying;
+- (BOOL)mutatingCommand;
+- (void)setStartPlaying:;
+- (id)requesterSharedUserId;
+- (void)setRequesterSharedUserId:;
+- (BOOL)shouldShuffle;
+- (void)setShouldShuffle:;
+- (int)mediaItemType;
+- (void)setMediaItemType:;
++ (id)loadPredefinedQueue;
++ (id)loadPredefinedQueueWithDictionary:context:;
+@end

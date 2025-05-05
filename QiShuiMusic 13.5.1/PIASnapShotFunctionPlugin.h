@@ -1,0 +1,33 @@
+@interface PIASnapShotFunctionPlugin : NSObject
+@property (nonatomic) NSRecursiveLock lock;
+@property (nonatomic) double lastTrimTime;
+@property (nonatomic) q minTrimTime;
+@property (nonatomic) PIAMMKVStorage storage;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setMinTrimTime:;
+- (void)asyncTrimExpiresSnapShot;
+- (void)engine:onLoadStart:;
+- (void)engine:onURLChange:;
+- (id)findSnapShotWithURL:version:error:;
+- (void)initDataBase;
+- (void)injectBridgeAPI:;
+- (double)lastTrimTime;
+- (long long)minTrimTime;
+- (BOOL)removeSnapShotWithModel:error:;
+- (BOOL)saveSnapShotWithModel:error:;
+- (void)setLastTrimTime:;
+- (void)setupWithURL:webView:;
+- (id)init;
+- (void)setStorage:;
+- (id)lock;
+- (id)storage;
+- (void).cxx_destruct;
+- (void)setLock:;
++ (void)addSnapShotEnabledPVEvent:engine:;
++ (void)addSnapShotHitPVEvent:engine:;
++ (void)executeAfterPrepareTask;
++ (unsigned long long)pluginMode;
+@end

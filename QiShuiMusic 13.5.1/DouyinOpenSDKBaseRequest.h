@@ -1,0 +1,37 @@
+@interface DouyinOpenSDKBaseRequest : NSObject
+@property (nonatomic) NSString provider_requestId;
+@property (nonatomic) NSString lang;
+@property (nonatomic) NSString country;
+@property (nonatomic) NSURL originalURL;
+@property (nonatomic) NSDate createDate;
+@property (nonatomic) NSDate sendDate;
+@property (nonatomic) NSDate endDate;
+@property (nonatomic) NSString requestId;
+@property (nonatomic) NSDictionary extraInfo;
+@property (nonatomic) q targetApp;
+@property (nonatomic) NSMutableDictionary otherInfoDict;
+- (id)otherInfoDict;
+- (id)provider_requestId;
+- (void)setCreateDate:;
+- (void)setExtraInfo:;
+- (void)setOtherInfoDict:;
+- (void)setProvider_requestId:;
+- (id)country;
+- (id)init;
+- (id)requestId;
+- (void)setCountry:;
+- (void)setEndDate:;
+- (id)endDate;
+- (void).cxx_destruct;
+- (id)originalURL;
+- (void)setOriginalURL:;
+- (long long)targetApp;
+- (void)setTargetApp:;
+- (id)createDate;
+- (id)sendDate;
+- (void)setSendDate:;
+- (void)setRequestId:;
+- (id)extraInfo;
+- (id)lang;
+- (void)setLang:;
+@end

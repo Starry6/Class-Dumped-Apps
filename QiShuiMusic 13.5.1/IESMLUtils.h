@@ -1,0 +1,32 @@
+@interface IESMLUtils : NSObject
+@property (nonatomic) NSString IESMLKeywords_Top1;
+@property (nonatomic) NSString IESMLKeywords_Result;
+@property (nonatomic) NSString IESMLKeywords_ImageBuffer;
+@property (nonatomic) NSString IESMLKeywords_ImageMaxWidth;
+@property (nonatomic) NSString IESMLKeywords_ImageMaxHeight;
+@property (nonatomic) NSString IESMLKeywordsReport_TimeCost;
+@property (nonatomic) NSString IESMLKeywordsReport_ID;
+@property (nonatomic) NSString IESMLKeywordsReport_Succ;
+@property (nonatomic) NSString IESMLKeywordsReport_ErrCode;
+- (id)IESMLKeywordsReport_ID;
+- (id)IESMLKeywordsReport_TimeCost;
+- (id)IESMLKeywords_ImageMaxHeight;
+- (id)IESMLKeywords_Result;
+- (id)errCode2Number:;
+- (void)setIESMLKeywords_ImageMaxWidth:;
+- (id)IESMLKeywordsReport_ErrCode;
+- (id)IESMLKeywordsReport_Succ;
+- (id)IESMLKeywords_ImageBuffer;
+- (id)IESMLKeywords_ImageMaxWidth;
+- (id)IESMLKeywords_Top1;
+- (void)setIESMLKeywordsReport_ErrCode:;
+- (void)setIESMLKeywordsReport_ID:;
+- (void)setIESMLKeywordsReport_Succ:;
+- (void)setIESMLKeywordsReport_TimeCost:;
+- (void)setIESMLKeywords_ImageBuffer:;
+- (void)setIESMLKeywords_ImageMaxHeight:;
+- (void)setIESMLKeywords_Result:;
+- (void)setIESMLKeywords_Top1:;
+- (void).cxx_destruct;
++ (id)sharedInstance;
+@end

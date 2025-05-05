@@ -1,0 +1,34 @@
+@interface AWECommentMiniEmoticonPanelView : UIView
+@property (nonatomic) q imageScale;
+@property (nonatomic) NSArray emoticonViews;
+@property (nonatomic) NSArray emoticonModels;
+@property (nonatomic) <AWECommentMiniEmoticonPanelViewDelegate> delegate;
+@property (nonatomic) @? didClickEmoticonBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)currentEmoticonsString;
+- (id)didClickEmoticonBlock;
+- (id)emoticonModels;
+- (id)emoticonViews;
+- (void)handleEmoticonTaped:;
+- (BOOL)isUsedRemoteDataEmoticons;
+- (void)p_layout;
+- (void)p_setEmoticonView:withEmoticonModel:;
+- (void)p_setupImageScale;
+- (void)p_setupUI;
+- (void)resetEmoticonOrder;
+- (void)setDidClickEmoticonBlock:;
+- (void)setEmoticonModels:;
+- (void)setEmoticonViews:;
+- (void)setImageScale:;
+- (id)init;
+- (long long)imageScale;
+- (void)layoutSubviews;
+- (void)setDelegate:;
+- (id)initWithFrame:;
+- (id)delegate;
+- (void).cxx_destruct;
++ (id)commentMiniEmoticonPenelView;
+@end

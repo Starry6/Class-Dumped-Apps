@@ -1,0 +1,32 @@
+@interface SFUserReportRequest : NSObject
+@property (nonatomic) NSString affordanceText;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString dismissText;
+@property (nonatomic) NSArray userReportOptions;
+@property (nonatomic) NSInteger reportType;
+@property (nonatomic) NSDictionary dictionaryRepresentation;
+@property (nonatomic) NSData jsonData;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithProtobuf:;
+- (void)setTitle:;
+- (id)initWithCoder:;
+- (id)jsonData;
+- (void)setReportType:;
+- (void)encodeWithCoder:;
+- (id)title;
+- (void).cxx_destruct;
+- (id)dictionaryRepresentation;
+- (int)reportType;
+- (id)copyWithZone:;
+- (id)affordanceText;
+- (void)setAffordanceText:;
+- (id)dismissText;
+- (void)setDismissText:;
+- (id)userReportOptions;
+- (void)setUserReportOptions:;
+- (BOOL)hasReportType;
++ (BOOL)supportsSecureCoding;
+@end

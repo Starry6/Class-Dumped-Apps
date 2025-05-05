@@ -1,0 +1,31 @@
+@interface DMFOSUpdate : NSObject
+@property (nonatomic) NSString productKey;
+@property (nonatomic) NSString humanReadableName;
+@property (nonatomic) NSString productName;
+@property (nonatomic) NSString version;
+@property (nonatomic) NSString build;
+@property (nonatomic) Q downloadSize;
+@property (nonatomic) Q installSize;
+@property (nonatomic) BOOL isCritical;
+@property (nonatomic) BOOL restartRequired;
+@property (nonatomic) BOOL allowsInstallLater;
+- (id)productName;
+- (id)version;
+- (unsigned long long)downloadSize;
+- (BOOL)isCritical;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)build;
+- (BOOL)restartRequired;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)humanReadableName;
+- (id)productKey;
+- (id)initWithProductKey:humanReadableName:productName:version:build:downloadSize:installSize:isCritical:restartRequired:allowsInstallLater:;
+- (unsigned long long)installSize;
+- (BOOL)allowsInstallLater;
++ (BOOL)supportsSecureCoding;
+@end

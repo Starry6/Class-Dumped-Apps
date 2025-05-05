@@ -1,0 +1,35 @@
+@interface IESLiveSaaSZMCertManager : NSObject
+@property (nonatomic) IESLiveSaaSVerifyApi vertifyApi;
+@property (nonatomic) IESLiveSaaSVerifyApi ZYAuthVertifyApi;
+@property (nonatomic) <IESLiveTracker> tracker;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)ZYAuthVertifyApi;
+- (void)adapter_bytedCertConfig;
+- (void)adapter_openFaceLivingBodyWithParams:withCompletion:;
+- (void)adapter_openOCRTakePhoto:withCompletion:;
+- (void)adapter_uploadIDCard:withCompletion:;
+- (id)baseParams;
+- (void)bytedCertManager:handlerWebEventWithParams:completion:;
+- (void)checkVerifyResult:completion:;
+- (id)getAuthenticationURLString;
+- (void)getOpenFaceParams:completion:;
+- (id)jsbDictionary:;
+- (void)openFaceLivingBodyWithParams:withCompletion:;
+- (void)openLiveCertWithParams:completion:;
+- (void)openOCRTakePhoto:withCompletion:;
+- (void)openWithdrawAuthenticationWithController:;
+- (void)p_faceLivingBodyWithParams:withCompletion:;
+- (void)setVertifyApi:;
+- (void)setZYAuthVertifyApi:;
+- (void)trackWithEvent:params:;
+- (void)uploadIDCard:withCompletion:;
+- (void)verifyWithModel:zhimaToken:completion:;
+- (id)vertifyApi;
+- (id)init;
+- (id)tracker;
+- (void).cxx_destruct;
++ (id)sharedInstance;
+@end

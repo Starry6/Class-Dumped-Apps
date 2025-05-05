@@ -1,0 +1,33 @@
+@interface ARSceneReconstructionHandler : NSObject
+@property (nonatomic) ARSceneReconstructionOptions options;
+@property (nonatomic) Q sceneReconstruction;
+@property (nonatomic) <ARSceneReconstructionDelegate> delegate;
+- (void)dealloc;
+- (void)start;
+- (void)setDelegate:;
+- (id)options;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)reset;
+- (void)pause;
+- (id).cxx_construct;
+- (unsigned long long)sceneReconstruction;
+- (id)initWithSceneReconstruction:options:slamSessionHandle:;
+- (void)bufferSlamState:;
+- (void)swapSlamStateBuffers;
+- (BOOL)_recreateReconstructionSessionWithError:;
+- (void)_setupSLAMStateBuffering;
+- (BOOL)_canReconfigureExistingSessionForSceneReconstruction:options:;
+- (BOOL)_reconfigureSession:error:;
+- (BOOL)_configureMeshingConfiguration:error:;
+- (void)_didReceiveMeshListUpdateCallbackWithMeshList:timestamp:error:;
+- (void)_didReceiveKeyframeListUpdateCallbackWithKeyframeList:timestamp:error:;
+- (void)reconfigureSceneReconstruction:options:;
+- (void)meshPlaneHarmonizationShouldEnable:;
+- (void)pushDepth:semanticSegmentation:personSegmentation:pose:;
+- (id)postProcessConfidenceBuffer:fromSegmentationData:;
+- (void)processPlaneList:;
+- (BOOL)queryOccupancyWithPoints:callback:;
+- (void)handleCFError:withErrorMessage:failSession:;
+- (void)handleCFError:withErrorMessage:;
+@end

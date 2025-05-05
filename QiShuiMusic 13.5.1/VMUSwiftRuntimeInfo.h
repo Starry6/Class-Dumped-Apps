@@ -1,0 +1,30 @@
+@interface VMUSwiftRuntimeInfo : NSObject
+@property (nonatomic) Q nativeWeakReferenceMarkerMask;
+@property (nonatomic) Q nativeWeakReferenceMarkerValue;
+@property (nonatomic) Q nativeWeakReferencePointerMask;
+@property (nonatomic) BOOL nativeWeakReferencePointerIsSideTable;
+@property (nonatomic) Q refcountIsSideTableMarkerMask;
+@property (nonatomic) Q refcountIsSideTableMarkerValue;
+@property (nonatomic) Q sideTablePointerMask;
+@property (nonatomic) C sideTablePointerRightShift;
+@property (nonatomic) C sideTablePointerLeftShift;
+@property (nonatomic) VMUMutableClassInfo sideTableLayoutWithScannableOwnerPointer;
+@property (nonatomic) VMUMutableClassInfo sideTableLayoutWithUnscannableOwnerPointer;
+@property (nonatomic) VMUMutableClassInfo unownedExtraDataLayout;
+@property (nonatomic) BOOL runtimeHasStableABI;
+- (BOOL)nativeWeakReferencePointerIsSideTable;
+- (BOOL)runtimeHasStableABI;
+- (unsigned long long)nativeWeakReferenceMarkerValue;
+- (unsigned long long)nativeWeakReferenceMarkerMask;
+- (id)sideTableLayoutWithScannableOwnerPointer;
+- (unsigned long long)refcountIsSideTableMarkerMask;
+- (unsigned long long)refcountIsSideTableMarkerValue;
+- (unsigned char)sideTablePointerLeftShift;
+- (void).cxx_destruct;
+- (id)initWithSwiftCore:memoryReader:;
+- (unsigned long long)nativeWeakReferencePointerMask;
+- (unsigned long long)sideTablePointerMask;
+- (unsigned char)sideTablePointerRightShift;
+- (id)sideTableLayoutWithUnscannableOwnerPointer;
+- (id)unownedExtraDataLayout;
+@end

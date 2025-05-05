@@ -1,0 +1,35 @@
+@interface PHManualFetchResult : PHFetchResult
+@property (nonatomic) NSArray objects;
+@property (nonatomic) NSOrderedSet objectIDs;
+@property (nonatomic) NSString identifier;
+- (id)photoLibrary;
+- (id)containerIdentifier;
+- (id)fetchedObjects;
+- (id)identifier;
+- (id)fetchResultWithChangeHandlingValue:;
+- (id)fetchUpdatedObjects;
+- (id)initWithOids:photoLibrary:fetchType:fetchPropertySets:identifier:registerIfNeeded:photosCount:videosCount:audiosCount:;
+- (id)calculateMediaTypeCounts;
+- (unsigned long long)hash;
+- (id)objectIDAtIndex:;
+- (id)fetchedObjectIDs;
+- (id)objectIDs;
+- (unsigned long long)possibleChangesForChange:;
+- (id)initWithObjects:photoLibrary:fetchType:fetchPropertySets:identifier:registerIfNeeded:;
+- (id)objects;
+- (id)fetchedObjectIDsSet;
+- (void).cxx_destruct;
+- (void)updateRegistrationForChangeNotificationDeltas;
+- (id)description;
+- (id)changeHandlingKey;
+- (id)changeHandlingValueUsingSeedOids:withChange:usingManagedObjectContext:;
+- (long long)collectionFetchType;
+- (id)fetchSortDescriptors;
+- (BOOL)isFullyBackedByObjectIDs;
+- (id)fetchRequest;
+- (BOOL)isEqual:;
+- (id)initWithOids:photoLibrary:fetchType:fetchPropertySets:identifier:registerIfNeeded:;
+- (id)copyWithOptions:;
+- (void)prefetchObjectsAtIndexes:;
++ (id)emptyFetchResultWithPhotoLibrary:;
+@end

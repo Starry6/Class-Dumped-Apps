@@ -1,0 +1,30 @@
+@interface HybridWebKitParams : HybridKitParams
+@property (nonatomic) # bridgeClass;
+@property (nonatomic) BOOL enableSecureLink;
+@property (nonatomic) NSString secLinkscene;
+@property (nonatomic) BOOL disableTTNetProxy;
+@property (nonatomic) BOOL fixCorsCookie;
+@property (nonatomic) BOOL addCookieInHeader;
+@property (nonatomic) BOOL disableUniversalLink;
+@property (nonatomic) BOOL allowsBackForwardNavigationGestures;
+@property (nonatomic) NSString sessionID;
+- (void)setBridgeClass:;
+- (BOOL)addCookieInHeader;
+- (Class)bridgeClass;
+- (BOOL)disableTTNetProxy;
+- (BOOL)disableUniversalLink;
+- (BOOL)enableSecureLink;
+- (BOOL)fixCorsCookie;
+- (id)secLinkscene;
+- (void)setAddCookieInHeader:;
+- (void)setDisableTTNetProxy:;
+- (void)setDisableUniversalLink:;
+- (void)setEnableSecureLink:;
+- (void)setFixCorsCookie:;
+- (void)setSecLinkscene:;
+- (void)setSessionID:;
+- (id)sessionID;
+- (void)setAllowsBackForwardNavigationGestures:;
+- (void).cxx_destruct;
+- (BOOL)allowsBackForwardNavigationGestures;
+@end

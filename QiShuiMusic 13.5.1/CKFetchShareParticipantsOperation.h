@@ -1,0 +1,35 @@
+@interface CKFetchShareParticipantsOperation : CKOperation
+@property (nonatomic) NSMutableSet discoveredUserIdentities;
+@property (nonatomic) NSMutableDictionary lookupErrors;
+@property (nonatomic) <CKFetchShareParticipantsOperationCallbacks> clientOperationCallbackProxy;
+@property (nonatomic) CKFetchShareParticipantsOperationInfo operationInfo;
+@property (nonatomic) NSArray userIdentityLookupInfos;
+@property (nonatomic) @? shareParticipantFetchedBlock;
+@property (nonatomic) @? perShareParticipantCompletionBlock;
+@property (nonatomic) @? fetchShareParticipantsCompletionBlock;
+- (void)_finishOnCallbackQueueWithError:;
+- (id)activityCreate;
+- (id)init;
+- (void)performCKOperation;
+- (void)fillFromOperationInfo:;
+- (BOOL)hasCKOperationCallbacksSet;
+- (void).cxx_destruct;
+- (void)fillOutOperationInfo:;
+- (BOOL)CKOperationShouldRun:;
+- (void)setFetchShareParticipantsCompletionBlock:;
+- (id)initWithUserIdentityLookupInfos:;
+- (void)setPerShareParticipantCompletionBlock:;
+- (id)perShareParticipantCompletionBlock;
+- (id)fetchShareParticipantsCompletionBlock;
+- (void)handleShareParticipantFetchForLookupInfo:shareParticipant:error:;
+- (void)setShareParticipantFetchedBlock:;
+- (id)shareParticipantFetchedBlock;
+- (void)setFetchShareParticipantsCompletionBlockIVar:;
+- (id)userIdentityLookupInfos;
+- (void)setUserIdentityLookupInfos:;
+- (id)discoveredUserIdentities;
+- (void)setDiscoveredUserIdentities:;
+- (id)lookupErrors;
+- (void)setLookupErrors:;
++ (void)applyDaemonCallbackInterfaceTweaks:;
+@end

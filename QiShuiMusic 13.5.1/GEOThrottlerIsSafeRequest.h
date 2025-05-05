@@ -1,0 +1,31 @@
+@interface GEOThrottlerIsSafeRequest : GEOXPCRequest
+@property (nonatomic) NSInteger requestKindType;
+@property (nonatomic) NSInteger requestKindSubtype;
+@property (nonatomic) BOOL nextSafeRequestTime;
+@property (nonatomic) BOOL availableRequestCount;
+@property (nonatomic) BOOL includeToken;
+@property (nonatomic) GEODataRequestThrottlerToken throttlerToken;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithTraits:auditToken:throttleToken:;
+- (void)encodeToXPCDictionary:;
+- (BOOL)expectsReply;
+- (id)initWithXPCDictionary:error:;
+- (BOOL)isValid;
+- (void).cxx_destruct;
+- (int)requestKindType;
+- (void)setRequestKindType:;
+- (int)requestKindSubtype;
+- (void)setRequestKindSubtype:;
+- (BOOL)nextSafeRequestTime;
+- (void)setNextSafeRequestTime:;
+- (BOOL)availableRequestCount;
+- (void)setAvailableRequestCount:;
+- (BOOL)includeToken;
+- (void)setIncludeToken:;
+- (id)throttlerToken;
+- (void)setThrottlerToken:;
++ (Class)replyClass;
+@end

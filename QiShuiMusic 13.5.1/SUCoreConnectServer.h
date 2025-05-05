@@ -1,0 +1,33 @@
+@interface SUCoreConnectServer : NSObject
+@property (nonatomic) SUCoreConnectServerPolicy connectionPolicy;
+@property (nonatomic) SUCoreLog logger;
+@property (nonatomic) NSObject<OS_dispatch_queue> connectionsAccessQueue;
+@property (nonatomic) NSMutableDictionary connections;
+@property (nonatomic) NSMutableSet observerConnections;
+@property (nonatomic) NSObject<OS_dispatch_queue> connectionSendMessageQueue;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)logger;
+- (id)connections;
+- (void)_removeConnection:;
+- (id)connectionSendMessageQueue;
+- (id)_connectionsForClientID:;
+- (id)connectionPolicy;
+- (void)connectProtocolFromClientSendServerMessage:proxyObject:withReply:;
+- (void)connectProtocolFromClientSendServerMessage:;
+- (void)_setConnection:forClientID:;
+- (id)connectionsAccessQueue;
+- (void)connectServerSendClientMessage:;
+- (BOOL)isConnectionEntitled:;
+- (id)_getAllObserverConnections;
+- (BOOL)listener:shouldAcceptNewConnection:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)observerConnections;
+- (void)setupListenerAndResumeConnection;
+- (void)_informObserversOfCompletionReplyWithMessage:error:;
+- (id)initWithServerPolicy:;
+- (id)_clientIDForConnection:;
+@end

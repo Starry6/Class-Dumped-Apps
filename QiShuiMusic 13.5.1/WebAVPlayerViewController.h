@@ -1,0 +1,33 @@
+@interface WebAVPlayerViewController : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)exitFullScreenAnimated:completionHandler:;
+- (void)setShowsPlaybackControls:;
+- (void)dealloc;
+- (void)stopPictureInPicture;
+- (void)enterFullScreenAnimated:completionHandler:;
+- (void)removeObserver;
+- (void)setDelegate:;
+- (void)observeValueForKeyPath:ofObject:change:context:;
+- (id)view;
+- (void)removeFromParentViewController;
+- (BOOL)pictureInPictureWasStartedWhenEnteringBackground;
+- (void)startPictureInPicture;
+- (void)setPlayerController:;
+- (void)flashPlaybackControlsWithDuration:;
+- (void).cxx_destruct;
+- (BOOL)isPictureInPictureActive;
+- (void)setWebKitOverrideRouteSharingPolicy:routingContextUID:;
+- (void)setAllowsPictureInPicturePlayback:;
+- (id).cxx_construct;
+- (BOOL)isPictureInPicturePossible;
+- (BOOL)showsPlaybackControls;
+- (BOOL)pictureInPictureActive;
+- (id)initWithFullscreenInterface:;
+- (BOOL)playerViewControllerShouldHandleDoneButtonTap:;
+- (void)initObserver;
+- (void)tryToStartPictureInPicture;
+- (id)avPlayerViewController;
+@end

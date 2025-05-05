@@ -1,0 +1,36 @@
+@interface IESLiveSaaSGuideSettingPanelView : UIView
+@property (nonatomic) NSMutableArray itemViews;
+@property (nonatomic) IESLiveSaaSGuideSettingPanelLayout layout;
+@property (nonatomic) NSArray items;
+@property (nonatomic) double headerHeight;
+@property (nonatomic) @? closeActionBlock;
+- (double)cellHeightOf:;
+- (id)closeActionBlock;
+- (void)ieslive_closeBtnClicked:;
+- (void)ieslive_detailBtnClicked:;
+- (id)ieslive_makeCellViewAutoLayoutWithItem:index:;
+- (id)ieslive_makeCellViewWithItem:index:;
+- (id)ieslive_makeHeadStyleLabelWithTitle:;
+- (void)ieslive_setupViews;
+- (void)ieslive_triggerCellTap:;
+- (void)ieslive_triggerSwitch:;
+- (id)initWithItems:panelLayout:;
+- (void)reloadRow:;
+- (void)setCloseActionBlock:;
+- (void)setupEffectViewDouyin;
+- (void)setupHeaderLabel;
+- (void)setupStyle;
+- (void)setupViewWithAutoLayout;
+- (void)reloadData;
+- (id)initWithItems:;
+- (void)layoutSubviews;
+- (id)items;
+- (void)setLayout:;
+- (double)headerHeight;
+- (void)setItems:;
+- (id)layout;
+- (void).cxx_destruct;
+- (void)setHeaderHeight:;
+- (id)itemViews;
+- (void)setItemViews:;
+@end

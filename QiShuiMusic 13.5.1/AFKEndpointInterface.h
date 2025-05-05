@@ -1,0 +1,32 @@
+@interface AFKEndpointInterface : NSObject
+@property (nonatomic) Q regID;
+- (id)initWithService:;
+- (void)cancel;
+- (void)dealloc;
+- (void)setResponseHandler:;
+- (void)setEventHandler:;
+- (void)setDispatchQueue:;
+- (void)setCommandHandler:;
+- (void)_cancel;
+- (void)activate:;
+- (void).cxx_destruct;
+- (void)activate;
+- (int)startSession:;
+- (int)enqueueCommand:inputBuffer:inputBufferSize:outputPayloadSize:context:options:;
+- (int)enqueueCommand:timestamp:inputBuffer:inputBufferSize:outputPayloadSize:context:options:;
+- (void)setReportHandler:;
+- (unsigned long long)regID;
+- (void)setCommandHandlerWithReturn:;
+- (void)setDescriptorHandler:;
+- (void)setDescriptorManagers:;
+- (void)asyncCallback:result:timestamp:bufferSize:;
+- (int)enqueueCommandSync:timestamp:inputBuffer:inputBufferSize:responseTimestamp:outputBuffer:inOutBufferSize:options:;
+- (int)enqueueReport:timestamp:inputBuffer:inputBufferSize:options:;
+- (int)enqueueReport:inputBuffer:inputBufferSize:options:;
+- (int)enqueueResponseForContext:status:timestamp:outputBuffer:outputBufferSize:options:;
+- (int)enqueueResponseForContext:status:outputBuffer:outputBufferSize:options:;
+- (int)enqueueDescriptor:packetType:timestamp:options:;
+- (void)dequeueDataMessage;
++ (id)withService:;
++ (id)withService:properties:;
+@end

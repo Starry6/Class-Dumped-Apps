@@ -1,0 +1,4 @@
+@interface ABUAutoDetailPVManager : ABUUValueManager
++ (void)addUValue:withParam:andType:;
++ (id)filterConditionWithParam:;
+@end

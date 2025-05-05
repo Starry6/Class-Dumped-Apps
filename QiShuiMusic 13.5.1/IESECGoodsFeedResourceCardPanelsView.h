@@ -1,0 +1,35 @@
+@interface IESECGoodsFeedResourceCardPanelsView : UIView
+@property (nonatomic) NSMutableArray cardList;
+@property (nonatomic) NSMutableArray cellList;
+@property (nonatomic) BOOL showCrossedMarketPrice;
+@property (nonatomic) UILabel leftDecorateLabel;
+@property (nonatomic) UIView leftDecorateView;
+@property (nonatomic) UIStackView productCellStack;
+@property (nonatomic) UIStackView rightDecorateStack;
+@property (nonatomic) UIImageView changeProdcutsIcon;
+@property (nonatomic) @? changeProductBlock;
+- (id)cardList;
+- (id)cellList;
+- (id)changeProdcutsIcon;
+- (id)changeProductBlock;
+- (void)changeProductDidClick:;
+- (id)leftDecorateLabel;
+- (id)leftDecorateView;
+- (id)productCellStack;
+- (id)rightDecorateStack;
+- (void)setCardList:;
+- (void)setCellList:;
+- (void)setChangeProdcutsIcon:;
+- (void)setChangeProductBlock:;
+- (void)setLeftDecorateLabel:;
+- (void)setLeftDecorateView:;
+- (void)setProductCellStack:;
+- (void)setRightDecorateStack:;
+- (void)setShowCrossedMarketPrice:;
+- (void)setupUIWithModel:;
+- (BOOL)showCrossedMarketPrice;
+- (void)startChangeProductRotation;
+- (void)stopChangeProductRotation;
+- (void)layoutSubviews;
+- (void).cxx_destruct;
+@end

@@ -1,0 +1,30 @@
+@interface IESLiveInteractReplacePanelUIAdapter : NSObject
+@property (nonatomic) IESLiveInteractionLayout currentLayout;
+@property (nonatomic) {CGSize=dd} panelSize;
+@property (nonatomic) BOOL isAudio;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)generatorModelsWithaudio1X8Hard;
+- (id)updateEnlargePosInBigPartyWithSlotModel:anchorIndex:enlargePos:;
+- (BOOL)anchorIsEnlargeWithCurrentLayout;
+- (void)didSetAttachingDIContext;
+- (BOOL)enableSeatExchange;
+- (void)generatorModelsWithCurrentLayout:;
+- (id)generatorModelsWithLayoutAfterConfigFetched:;
+- (id)generatorModelsWithaudioEqual3X3Hard;
+- (id)initWithIsAudio:;
+- (double)panelDownGap;
+- (id)panelSize;
+- (id)panelSizeWithCurrentLayout;
+- (double)panelTopGap;
+- (id)popUpSize;
+- (void)setIsAudio:;
+- (void)setPanelSize:;
+- (id)currentLayout;
+- (void).cxx_destruct;
+- (void)setCurrentLayout:;
+- (BOOL)isAudio;
++ (BOOL)enableSeatExchangeWithCurrentLayout:;
+@end

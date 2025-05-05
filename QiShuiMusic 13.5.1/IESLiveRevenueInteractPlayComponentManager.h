@@ -1,0 +1,38 @@
+@interface IESLiveRevenueInteractPlayComponentManager : NSObject
+@property (nonatomic) NSMutableArray components;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)breakthroughComponentGroupPK;
+- (BOOL)checkIfFrameCanCreateComponent;
+- (id)commonComponentGroup;
+- (id)componentBreakthroughGroup;
+- (void)componentContainerFrameChanged;
+- (void)componentDidClear:;
+- (void)componentDidLoad;
+- (void)componentDidUpdateBattleView;
+- (void)componentFinished;
+- (id)componentGroupPK;
+- (void)componentLayoutModelChanged;
+- (void)componentPlaying;
+- (void)componentPunishing;
+- (void)componentReceivedLynxEvent:extraParmas:;
+- (id)componentSurvivalGroup;
+- (id)creatMultiComponentsByNames:;
+- (id)creatPKComponentsByNames:;
+- (void)createComponents;
+- (BOOL)enableLynxControlNativeComponents;
+- (id)initWithDIContext:;
+- (void)loadTargetComponents:;
+- (void)logWithEvent:extra:;
+- (id)preStreamComponentGroup;
+- (id)preStreamComponentGroupPK;
+- (void)pveHandleBattleBg:topImage:bottomImage:;
+- (id)shareStreamComponentGroup;
+- (id)shareStreamComponentGroupPK;
+- (id)voteComponentGroupPK;
+- (id)components;
+- (void)setComponents:;
+- (void).cxx_destruct;
+@end

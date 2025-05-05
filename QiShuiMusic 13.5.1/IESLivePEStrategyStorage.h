@@ -1,0 +1,31 @@
+@interface IESLivePEStrategyStorage : NSObject
+@property (nonatomic) <IESLiveMonitor> monitor;
+@property (nonatomic) <HTSKVStore> kvStore;
+@property (nonatomic) GetStrategiesResponse strategies;
+@property (nonatomic) IESLiveThreadSafeDictionary innerStrategyDic;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)addLocalStrategys:;
+- (void)addStrategys:toDic:;
+- (void)deleteStrategys:toDic:;
+- (id)innerStrategyDic;
+- (id)readStrategiesWithKey:;
+- (void)setInnerStrategyDic:;
+- (void)setStrategies:;
+- (id)strategyDictionary;
+- (id)strategyExtra;
+- (void)trackStrategyDiffWith:;
+- (void)updateStrategies:;
+- (void)writeStrategies:toKey:;
+- (void)setKvStore:;
+- (id)kvStore;
+- (id)init;
+- (void)dealloc;
+- (void)setMonitor:;
+- (void)setup;
+- (void).cxx_destruct;
+- (id)monitor;
+- (id)strategies;
+@end

@@ -1,0 +1,30 @@
+@interface MPSNNOptimizerAdam : MPSNNOptimizer
+@property (nonatomic) double beta1;
+@property (nonatomic) double beta2;
+@property (nonatomic) float epsilon;
+@property (nonatomic) Q timeStep;
+- (id)initWithCoder:device:;
+- (id)copyWithZone:device:;
+- (void)dealloc;
+- (id)debugDescription;
+- (float)epsilon;
+- (void)encodeWithCoder:;
+- (id)initWithDevice:learningRate:;
+- (id)initWithDevice:beta1:beta2:epsilon:timeStep:optimizerDescriptor:;
+- (void)setTimeStep:;
+- (void)encodeToCommandBuffer:inputGradientVector:inputValuesVector:inputMomentumVector:inputVelocityVector:resultValuesVector:;
+- (void)encodeToCommandBuffer:convolutionGradientState:convolutionSourceState:inputMomentumVectors:inputVelocityVectors:resultState:;
+- (double)beta1;
+- (double)beta2;
+- (unsigned long long)timeStep;
+- (void)encodeToCommandBuffer:batchNormalizationState:inputMomentumVectors:inputVelocityVectors:resultState:;
+- (id)initWithDevice:optimizerDescriptor:;
+- (void)encodeToCommandBuffer:inputGradientVector:inputValuesVector:inputMomentumVector:inputVelocityVector:maximumVelocityVector:resultValuesVector:;
+- (void)encodeToCommandBuffer:inputGradientMatrix:inputValuesMatrix:inputMomentumMatrix:inputVelocityMatrix:resultValuesMatrix:;
+- (void)encodeToCommandBuffer:inputGradientMatrix:inputValuesMatrix:inputMomentumMatrix:inputVelocityMatrix:maximumVelocityMatrix:resultValuesMatrix:;
+- (void)encodeToCommandBuffer:convolutionGradientState:convolutionSourceState:inputMomentumVectors:inputVelocityVectors:maximumVelocityVectors:resultState:;
+- (void)encodeToCommandBuffer:batchNormalizationGradientState:batchNormalizationSourceState:inputMomentumVectors:inputVelocityVectors:resultState:;
+- (void)encodeToCommandBuffer:batchNormalizationGradientState:batchNormalizationSourceState:inputMomentumVectors:inputVelocityVectors:maximumVelocityVectors:resultState:;
+- (void)encodeToCommandBuffer:batchNormalizationState:inputMomentumVectors:inputVelocityVectors:maximumVelocityVectors:resultState:;
++ (id)libraryInfo:;
+@end

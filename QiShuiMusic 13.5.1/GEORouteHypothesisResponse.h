@@ -1,0 +1,37 @@
+@interface GEORouteHypothesisResponse : PBCodable
+@property (nonatomic) BOOL hasDirectionsResponse;
+@property (nonatomic) GEODirectionsResponse directionsResponse;
+@property (nonatomic) BOOL hasEtaResponse;
+@property (nonatomic) GEOETAResponse etaResponse;
+@property (nonatomic) BOOL hasUpdatedTimeStamp;
+@property (nonatomic) double updatedTimeStamp;
+- (void)readAll:;
+- (BOOL)hasGreenTeaWithValue:;
+- (id)init;
+- (void)clearSensitiveFields:;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (void)setDirectionsResponse:;
+- (id)initWithDictionary:;
+- (id)directionsResponse;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasEtaResponse;
+- (id)etaResponse;
+- (void)setEtaResponse:;
+- (BOOL)hasDirectionsResponse;
+- (double)updatedTimeStamp;
+- (void)setUpdatedTimeStamp:;
+- (void)setHasUpdatedTimeStamp:;
+- (BOOL)hasUpdatedTimeStamp;
++ (BOOL)isValid:;
+@end

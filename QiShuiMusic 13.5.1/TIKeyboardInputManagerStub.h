@@ -1,0 +1,36 @@
+@interface TIKeyboardInputManagerStub : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)changingContextWithTrigger:;
+- (void)textAccepted:;
+- (void)syncToKeyboardState:completionHandler:;
+- (void)acceptingCandidateWithTrigger:;
+- (id)keyboardConfiguration;
+- (void)handleKeyboardInput:keyboardState:completionHandler:;
+- (void)generateAutocorrectionsWithKeyboardState:candidateRange:requestToken:completionHandler:;
+- (void)generateAutocorrectionsWithKeyboardState:completionHandler:;
+- (void)skipHitTestForTouchEvent:keyboardState:;
+- (void)adjustPhraseBoundaryInForwardDirection:granularity:keyboardState:completionHandler:;
+- (void)handleAcceptedCandidate:keyboardState:completionHandler:;
+- (void)smartSelectionForTextInDocument:inRange:language:tokenizedRanges:options:completion:;
+- (void)skipHitTestForTouchEvents:keyboardState:;
+- (void)generateReplacementsForString:keyLayout:continuation:;
+- (void)generateCandidatesWithKeyboardState:candidateRange:completionHandler:;
+- (void)candidateRejected:;
+- (void)lastAcceptedCandidateCorrected;
+- (void)writeTypologyLogWithCompletionHandler:;
+- (void)setOriginalInput:;
+- (void)textAccepted:completionHandler:;
+- (void)logDiscoverabilityEvent:userInfo:;
+- (void)performHitTestForTouchEvents:keyboardState:continuation:;
+- (void)generateAutocorrectionsWithKeyboardState:candidateRange:completionHandler:;
+- (void)generateRefinementsForCandidate:keyboardState:completionHandler:;
+- (void)performHitTestForTouchEvent:keyboardState:continuation:;
+- (void)adjustPhraseBoundaryInForwardDirection:keyboardState:completionHandler:;
+- (void)addSupplementalLexicon:completionHandler:;
+- (void)removeSupplementalLexiconWithIdentifier:;
++ (void)setArrayClassesForSelectorsInInterface:;
++ (id)serverInterface;
+@end

@@ -1,0 +1,36 @@
+@interface SASProximityAnisetteRequestAction : SASProximityAction
+@property (nonatomic) q request;
+@property (nonatomic) NSData sim;
+@property (nonatomic) BOOL shouldProvision;
+@property (nonatomic) NSString dsid;
+@property (nonatomic) AKAnisetteData anisetteData;
+@property (nonatomic) BOOL success;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)dsid;
+- (void)setDsid:;
+- (BOOL)hasResponse;
+- (long long)request;
+- (BOOL)success;
+- (void)setSuccess:;
+- (void)legacyAnisetteDataForDSID:withCompletion:;
+- (void).cxx_destruct;
+- (void)setRequest:;
+- (void)fetchAnisetteDataAndProvisionIfNecessary:withCompletion:;
+- (void)provisionAnisetteWithCompletion:;
+- (void)syncAnisetteWithSIMData:completion:;
+- (void)eraseAnisetteWithCompletion:;
+- (BOOL)shouldProvision;
+- (void)setShouldProvision:;
+- (id)anisetteData;
+- (void)setAnisetteData:;
+- (id)responsePayload;
+- (id)requestPayload;
+- (void)setResponseFromData:;
+- (id)sim;
+- (void)setSim:;
++ (unsigned long long)actionID;
++ (id)actionFromDictionary:;
+@end

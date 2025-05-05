@@ -1,0 +1,33 @@
+@interface PHAdjustmentData : NSObject
+@property (nonatomic) BOOL opaque;
+@property (nonatomic) NSString formatIdentifier;
+@property (nonatomic) NSString formatVersion;
+@property (nonatomic) NSString editorBundleID;
+@property (nonatomic) q baseVersion;
+@property (nonatomic) NSData data;
+- (id)data;
+- (id)formatVersion;
+- (void)setBaseVersion:;
+- (id)initWithCoder:;
+- (BOOL)isOpaque;
+- (long long)baseVersion;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)editorBundleID;
+- (BOOL)_hasAdjustments;
+- (id)formatIdentifier;
+- (id)initWithFormatIdentifier:formatVersion:data:;
+- (void)setFormatIdentifier:;
+- (void)setFormatVersion:;
+- (void)setEditorBundleID:;
+- (BOOL)_contentEditing_containsValidAdjustment;
+- (BOOL)_contentEditing_readableByClientWithVerificationBlock:;
+- (long long)_contentEditing_requiredBaseVersionReadableByClient:verificationBlock:;
++ (BOOL)supportsSecureCoding;
++ (id)opaqueAdjustmentData;
++ (long long)imageRequestVersionFromAdjustmentBaseVersion:;
++ (long long)adjustmentBaseVersionFromImageRequestVersion:;
++ (long long)videoRequestVersionFromAdjustmentBaseVersion:;
++ (long long)adjustmentBaseVersionFromVideoRequestVersion:;
+@end

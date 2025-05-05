@@ -1,0 +1,2 @@
+@interface IESLiveMsgBoardItemRoot : GPBRootObject
+@end

@@ -1,0 +1,33 @@
+@interface CNShareContactActivityItem : NSObject
+@property (nonatomic) NSArray contacts;
+@property (nonatomic) NSString groupName;
+@property (nonatomic) LPLinkMetadata linkMetadata;
+@property (nonatomic) LPFileMetadata fileMetadata;
+@property (nonatomic) CNContactFormatter contactFormatter;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)thumbnailImage;
+- (id)displayString;
+- (id)contactFormatter;
+- (void)setContacts:;
+- (id)initWithContact:;
+- (id)contacts;
+- (void)setGroupName:;
+- (void)setContactFormatter:;
+- (void).cxx_destruct;
+- (id)groupName;
+- (id)activityViewControllerPlaceholderItem:;
+- (id)activityViewController:itemForActivityType:;
+- (id)activityViewController:subjectForActivityType:;
+- (id)activityViewController:dataTypeIdentifierForActivityType:;
+- (id)activityViewController:thumbnailImageForActivityType:suggestedSize:;
+- (id)activityViewController:attachmentNameForActivityType:;
+- (id)activityViewControllerLinkPresentationMetadata:;
+- (id)initWithContacts:inGroupNamed:;
+- (id)linkMetadata;
+- (void)setLinkMetadata:;
+- (id)fileMetadata;
+- (void)setFileMetadata:;
+@end

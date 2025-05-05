@@ -1,0 +1,30 @@
+@interface PosterSRLogger : NSObject
+@property (nonatomic) @? fabricLogBlock;
+@property (nonatomic) NSDate startDate;
+@property (nonatomic) NSDate endDate;
+@property (nonatomic) BOOL getAWECommand;
+@property (nonatomic) BOOL logEnable;
+@property (nonatomic) NSString sign;
+@property (nonatomic) <PosterSRLoggerDelegate> loggerDelegate;
+@property (nonatomic) NSInteger logLevel;
+- (BOOL)getAWECommand;
+- (BOOL)logEnable;
+- (id)loggerDelegate;
+- (void)loggerMessage:andLevel:;
+- (void)setGetAWECommand:;
+- (void)setLogEnable:;
+- (void)setLoggerDelegate:;
+- (void)setSign:;
+- (id)sign;
+- (void)setFabricLogBlock:;
+- (id)fabricLogBlock;
+- (id)startDate;
+- (id)init;
+- (void)setStartDate:;
+- (void)setLogLevel:;
+- (void)setEndDate:;
+- (id)endDate;
+- (int)logLevel;
+- (void).cxx_destruct;
++ (id)sharedInstance;
+@end

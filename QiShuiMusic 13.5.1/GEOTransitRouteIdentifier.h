@@ -1,0 +1,35 @@
+@interface GEOTransitRouteIdentifier : PBCodable
+@property (nonatomic) NSUUID clientRouteID;
+@property (nonatomic) BOOL hasServerRouteHandle;
+@property (nonatomic) NSData serverRouteHandle;
+@property (nonatomic) BOOL hasClientRouteHandle;
+@property (nonatomic) NSData clientRouteHandle;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (id)init;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasServerRouteHandle;
+- (id)serverRouteHandle;
+- (void)setServerRouteHandle:;
+- (BOOL)hasClientRouteHandle;
+- (id)clientRouteHandle;
+- (void)setClientRouteHandle:;
+- (id)clientRouteID;
++ (BOOL)isValid:;
++ (id)routeIdentiferForComposedRoute:;
+@end

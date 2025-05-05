@@ -1,0 +1,31 @@
+@interface HTSLiveAudioChatMessage : IESLivePBBaseMessage
+@property (nonatomic) NSString audioId;
+@property (nonatomic) NSString localPath;
+@property (nonatomic) NSString audioURL;
+@property (nonatomic) BOOL hasPlay;
+@property (nonatomic) BOOL isSentByCurrentUser;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) HTSLiveCommon common;
+@property (nonatomic) BOOL hasCommon;
+@property (nonatomic) HTSLiveUser user;
+@property (nonatomic) BOOL hasUser;
+@property (nonatomic) NSString content;
+@property (nonatomic) NSString audioURL;
+@property (nonatomic) q audioDuration;
+@property (nonatomic) HTSLivePublicAreaCommon publicAreaCommon;
+@property (nonatomic) BOOL hasPublicAreaCommon;
+@property (nonatomic) HTSLiveText rtfContent;
+@property (nonatomic) BOOL hasRtfContent;
+- (id)audioId;
+- (BOOL)hasPlay;
+- (BOOL)isSentByCurrentUser;
+- (void)setAudioId:;
+- (void)setHasPlay:;
+- (void)setIsSentByCurrentUser:;
+- (id)localPath;
+- (void)setLocalPath:;
++ (id)descriptor;
+@end

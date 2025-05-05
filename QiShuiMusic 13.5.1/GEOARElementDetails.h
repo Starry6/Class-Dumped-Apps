@@ -1,0 +1,36 @@
+@interface GEOARElementDetails : PBCodable
+@property (nonatomic) BOOL hasArElementShown;
+@property (nonatomic) NSInteger arElementShown;
+@property (nonatomic) BOOL hasDidUserSeeArLabel;
+@property (nonatomic) BOOL didUserSeeArLabel;
+@property (nonatomic) BOOL hasDidSafetyUiTraggier;
+@property (nonatomic) BOOL didSafetyUiTraggier;
+- (void)readAll:;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (int)arElementShown;
+- (void)setArElementShown:;
+- (void)setHasArElementShown:;
+- (BOOL)hasArElementShown;
+- (id)arElementShownAsString:;
+- (int)StringAsArElementShown:;
+- (BOOL)didUserSeeArLabel;
+- (void)setDidUserSeeArLabel:;
+- (void)setHasDidUserSeeArLabel:;
+- (BOOL)hasDidUserSeeArLabel;
+- (BOOL)didSafetyUiTraggier;
+- (void)setDidSafetyUiTraggier:;
+- (void)setHasDidSafetyUiTraggier:;
+- (BOOL)hasDidSafetyUiTraggier;
++ (BOOL)isValid:;
+@end

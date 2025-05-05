@@ -1,0 +1,2 @@
+@interface SNScheduleUtils : NSObject
+@end

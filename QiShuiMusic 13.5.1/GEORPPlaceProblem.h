@@ -1,0 +1,34 @@
+@interface GEORPPlaceProblem : PBCodable
+@property (nonatomic) BOOL hasComponentIndex;
+@property (nonatomic) I componentIndex;
+@property (nonatomic) BOOL hasComponentValueIndex;
+@property (nonatomic) I componentValueIndex;
+@property (nonatomic) BOOL hasProblematicDepartureSequenceIndex;
+@property (nonatomic) I problematicDepartureSequenceIndex;
+- (void)readAll:;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (unsigned int)componentIndex;
+- (void)setComponentIndex:;
+- (void)setHasComponentIndex:;
+- (BOOL)hasComponentIndex;
+- (unsigned int)componentValueIndex;
+- (void)setComponentValueIndex:;
+- (void)setHasComponentValueIndex:;
+- (BOOL)hasComponentValueIndex;
+- (unsigned int)problematicDepartureSequenceIndex;
+- (void)setProblematicDepartureSequenceIndex:;
+- (void)setHasProblematicDepartureSequenceIndex:;
+- (BOOL)hasProblematicDepartureSequenceIndex;
++ (BOOL)isValid:;
+@end

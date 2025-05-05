@@ -1,0 +1,32 @@
+@interface PSEditingPane : UIView
+@property (nonatomic) UIViewController viewController;
+- (BOOL)changed;
+- (void)willAnimateRotationToInterfaceOrientation:duration:;
+- (id)contentRect;
+- (void)willRotateToInterfaceOrientation:duration:;
+- (void)didRotateFromInterfaceOrientation:;
+- (void)setViewController:;
+- (void)setDelegate:;
+- (id)initWithFrame:;
+- (id)viewController;
+- (void).cxx_destruct;
+- (BOOL)requiresKeyboard;
+- (void)editMode;
+- (void)setPreferenceSpecifier:;
+- (id)preferenceSpecifier;
+- (void)setPreferenceValue:;
+- (id)preferenceValue;
+- (id)specifierLabel;
+- (BOOL)wantsNewButton;
+- (void)viewDidBecomeVisible;
+- (void)addNewValue;
+- (void)doneEditing;
+- (BOOL)handlesDoneButton;
+- (BOOL)shouldInsetContent;
+- (void)insetContent;
+- (void)layoutInsetContent:;
+- (id)childViewControllerForHostingViewController;
+- (id)scrollViewToBeInsetted;
++ (id)defaultBackgroundColor;
++ (float)preferredHeight;
+@end

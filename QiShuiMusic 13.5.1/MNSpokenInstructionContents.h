@@ -1,0 +1,35 @@
+@interface MNSpokenInstructionContents : MNListInstructionContents
+@property (nonatomic) <GEOServerFormattedString> proceedInstructionFormat;
+@property (nonatomic) <GEOServerFormattedString> continueInstructionFormat;
+@property (nonatomic) <GEOServerFormattedString> initialInstructionFormat;
+@property (nonatomic) <GEOServerFormattedString> prepareInstructionFormat;
+@property (nonatomic) NSArray executionInstructionFormats;
+@property (nonatomic) q context;
+@property (nonatomic) NSInteger numSignsWanted;
+@property (nonatomic) BOOL suppressNames;
+@property (nonatomic) NSString roadName;
+@property (nonatomic) BOOL hasServerContent;
+@property (nonatomic) BOOL suppressFallback;
+- (id)init;
+- (long long)context;
+- (void).cxx_destruct;
+- (id)description;
+- (void)setContext:;
+- (void)_populateFromStep:;
+- (id)instructionForStage:distance:;
+- (BOOL)hasServerContent;
+- (int)numSignsWanted;
+- (id)instructionWithShorterAlternatives:;
+- (id)_instructionsForFormats:distance:;
+- (id)proceedInstructionFormat;
+- (void)setProceedInstructionFormat:;
+- (id)continueInstructionFormat;
+- (void)setContinueInstructionFormat:;
+- (id)initialInstructionFormat;
+- (void)setInitialInstructionFormat:;
+- (id)prepareInstructionFormat;
+- (void)setPrepareInstructionFormat:;
+- (id)executionInstructionFormats;
+- (void)setExecutionInstructionFormats:;
++ (id)contentsWithStep:destination:options:isSecondary:;
+@end

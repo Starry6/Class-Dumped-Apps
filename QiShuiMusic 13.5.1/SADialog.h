@@ -1,0 +1,31 @@
+@interface SADialog : SABaseAceObject
+@property (nonatomic) BOOL canUseServerTTS;
+@property (nonatomic) SADialogText caption;
+@property (nonatomic) SADialogConfiguration configuration;
+@property (nonatomic) SADialogText content;
+@property (nonatomic) NSString dialogIdentifier;
+@property (nonatomic) BOOL printedOnly;
+@property (nonatomic) BOOL spokenOnly;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)af_addEntriesToAnalyticsContext:;
+- (id)af_dialogIdentifiersForAnalyticsContext;
+- (id)content;
+- (void)setContent:;
+- (id)groupIdentifier;
+- (id)caption;
+- (void)setConfiguration:;
+- (void)setCaption:;
+- (id)configuration;
+- (id)encodedClassName;
+- (void)setDialogIdentifier:;
+- (BOOL)canUseServerTTS;
+- (void)setCanUseServerTTS:;
+- (id)dialogIdentifier;
+- (BOOL)printedOnly;
+- (void)setPrintedOnly:;
+- (BOOL)spokenOnly;
+- (void)setSpokenOnly:;
+@end

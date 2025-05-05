@@ -1,0 +1,34 @@
+@interface VeLivePlayerStream : NSObject
+@property (nonatomic) NSString url;
+@property (nonatomic) q resolution;
+@property (nonatomic) NSInteger bitrate;
+@property (nonatomic) q protocol;
+@property (nonatomic) q format;
+@property (nonatomic) q type;
+- (BOOL)isStreamValid;
+- (long long)protocol;
+- (void)setFormat:;
+- (void)setProtocol:;
+- (id)url;
+- (id)init;
+- (long long)format;
+- (void)setResolution:;
+- (void)setType:;
+- (long long)resolution;
+- (int)bitrate;
+- (void)setUrl:;
+- (long long)type;
+- (void).cxx_destruct;
+- (id)description;
+- (void)setBitrate:;
++ (id)formatTypeFromURL:;
++ (id)protocolTypeFromURL:;
++ (id)tvlFormatByVeLivePlayerFormat:;
++ (id)tvlProtoclByVeLivePlayerProtocol:;
++ (id)tvlResolutionByVeLivePlayerResolution:;
++ (id)tvlStreamTypeByVeLiveStreamType:;
++ (long long)veLiveFormatBytvlFormat:;
++ (long long)veLiveProtocolBytvlProtocl:;
++ (long long)veLiveResolutionBytvlResolution:;
++ (long long)veLiveStreamTypeBytvlStreamType:;
+@end

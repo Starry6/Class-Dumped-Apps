@@ -1,0 +1,36 @@
+@interface AVMobileChromeControlsViewController : AVMobileControlsViewController
+@property (nonatomic) AVPlaybackControlsController playbackControlsController;
+@property (nonatomic) AVPlaybackControlsView playbackControlsView;
+@property (nonatomic) AVTurboModePlaybackControlsPlaceholderView turboModeControlsView;
+@property (nonatomic) BOOL prefersCompactFullScreenControls;
+@property (nonatomic) NSValue embeddedInlineLayoutMargins;
+@property (nonatomic) {CGAffineTransform=dddddd} transformForProminentPlayButton;
+- (void)setOptimizeForPerformance:;
+- (void)setRoutingConfiguration:;
+- (id)playbackControlsView;
+- (void)setIncludedControls:;
+- (void)toggleVisibility:;
+- (void)flashControlsWithDuration:;
+- (id)transportControlsLayoutItem;
+- (void)setShowsFullScreenControl:;
+- (id)displayModeControlsLayoutItem;
+- (void)_updateStyleSheet;
+- (void)setControlItems:;
+- (void)dealloc;
+- (id)initWithPlayerViewController:;
+- (void)setVolumeController:;
+- (id)transformForProminentPlayButton;
+- (void)setTransformForProminentPlayButton:;
+- (id)volumeControlsLayoutItem;
+- (BOOL)prefersCompactFullScreenControls;
+- (void)setPrefersCompactFullScreenControls:;
+- (BOOL)showsFullScreenControl;
+- (void)setEmbeddedInlineLayoutMargins:;
+- (void).cxx_destruct;
+- (id)playbackControlsController;
+- (void)loadView;
+- (id)embeddedInlineLayoutMargins;
+- (id)turboModeControlsView;
+- (void)setTransportBarCustomMenuItems:;
+- (void)viewDidLoad;
+@end

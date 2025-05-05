@@ -1,0 +1,35 @@
+@interface BDUGCookieManager : NSObject
+@property (nonatomic) NSObject<OS_dispatch_queue> cookieQueue;
+@property (nonatomic) NSString actToken;
+@property (nonatomic) NSArray activityInfos;
+@property (nonatomic) NSString actBase;
+@property (nonatomic) NSString actData;
+@property (nonatomic) BOOL loginAtOtherApps;
+@property (nonatomic) NSString validKey;
+- (id)actBase;
+- (id)commonGetParams;
+- (void)setCookieQueue:;
+- (id)actData;
+- (id)actToken;
+- (id)activityInfos;
+- (void)cleanCookie;
+- (void)clearInvalidTokenWithKeys:;
+- (id)commonPostParams;
+- (id)cookieQueue;
+- (id)getActToken;
+- (id)getActivityInfos;
+- (BOOL)isLoginInOtherApps;
+- (BOOL)loginAtOtherApps;
+- (void)setActBase:;
+- (void)setActData:;
+- (void)setActToken:;
+- (void)setActivityInfos:;
+- (void)setApiReturnIsLogin:;
+- (void)setLoginAtOtherApps:;
+- (void)updateCookieWithActCommon:;
+- (id)init;
+- (void).cxx_destruct;
+- (id)validKey;
+- (void)setValidKey:;
++ (id)sharedInstance;
+@end

@@ -1,0 +1,37 @@
+@interface IESLivePKGuestInteractiveInviteCell : UITableViewCell
+@property (nonatomic) IESLiveLinkMicAudienceListResponse_ListUser userModel;
+@property (nonatomic) UIImageView avatarView;
+@property (nonatomic) UILabel nicknameLabel;
+@property (nonatomic) UILabel fantickLabel;
+@property (nonatomic) UIButton inviteButton;
+@property (nonatomic) UIImageView genderIcon;
+@property (nonatomic) @? tapInviteBlock;
+@property (nonatomic) Q scene;
+@property (nonatomic) UIStackView tagContainer;
+- (void)didTapInviteButton;
+- (id)fantickLabel;
+- (id)genderIcon;
+- (id)inviteButton;
+- (void)removeAllTagViews;
+- (void)setFantickLabel:;
+- (void)setGenderIcon:;
+- (void)setInviteButton:;
+- (void)setInviteButtonDisabled:;
+- (void)setTagContainer:;
+- (void)setTapInviteBlock:;
+- (id)tagContainer;
+- (id)tapInviteBlock;
+- (void)updateWithModel:tapInviteBlock:scene:;
+- (void)updateWithModel:tapInviteBlock:scene:showFanticket:;
+- (id)initWithStyle:reuseIdentifier:;
+- (void)setScene:;
+- (id)avatarView;
+- (void)setUserModel:;
+- (void)setAvatarView:;
+- (id)userModel;
+- (unsigned long long)scene;
+- (void).cxx_destruct;
+- (id)nicknameLabel;
+- (void)setNicknameLabel:;
+- (void)layoutUI;
+@end

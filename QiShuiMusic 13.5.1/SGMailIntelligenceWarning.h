@@ -1,0 +1,30 @@
+@interface SGMailIntelligenceWarning : NSObject
+@property (nonatomic) C warningType;
+@property (nonatomic) NSString messageId;
+@property (nonatomic) NSString snippet;
+@property (nonatomic) NSString core;
+@property (nonatomic) NSString signature;
+@property (nonatomic) NSString detectedLanguage;
+@property (nonatomic) BOOL isIncomingMessage;
+@property (nonatomic) NSNumber score;
+- (id)signature;
+- (id)messageId;
+- (id)score;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)detectedLanguage;
+- (id)copyWithZone:;
+- (void)setMessageId:;
+- (id)initWithWarningType:messageId:snippet:score:;
+- (id)initWithSnippet:core:score:;
+- (id)initWithSnippet:core:signature:detectedLanguage:isIncomingMessage:score:;
+- (unsigned char)warningType;
+- (id)initFromString:coreRange:signature:maxWindowSizeAroundCore:detectedLanguage:isIncomingMessage:score:;
+- (id)snippet;
+- (id)core;
+- (BOOL)isIncomingMessage;
++ (BOOL)supportsSecureCoding;
++ (id)snippetFromString:coreRange:withMaxWindowSizeAroundCore:;
+@end

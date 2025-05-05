@@ -1,0 +1,32 @@
+@interface AXMDisplay : NSObject
+@property (nonatomic) q backingType;
+@property (nonatomic) NSString name;
+@property (nonatomic) double scale;
+@property (nonatomic) {CGSize=dd} size;
+@property (nonatomic) double orientation;
+@property (nonatomic) q physicalOrientation;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} referenceBounds;
+@property (nonatomic) BOOL supportsDeepColor;
+- (void)setName:;
+- (void)setScale:;
+- (double)orientation;
+- (void).cxx_destruct;
+- (id)description;
+- (id)name;
+- (double)scale;
+- (id)referenceBounds;
+- (void)setSize:;
+- (void)setOrientation:;
+- (id)copyWithZone:;
+- (id)size;
+- (id)_initWithBackingType:;
+- (id)convertPointToDisplay:;
+- (id)convertRectToDisplay:;
+- (long long)physicalOrientation;
+- (void)setPhysicalOrientation:;
+- (void)setReferenceBounds:;
+- (BOOL)supportsDeepColor;
+- (void)setSupportsDeepColor:;
+- (long long)backingType;
+- (void)setBackingType:;
+@end

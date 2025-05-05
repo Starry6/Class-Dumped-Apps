@@ -1,0 +1,29 @@
+@interface ADInterSessionFilter : NSObject
+- (void)dealloc;
+- (void).cxx_destruct;
+- (id)dictionaryRepresentation;
+- (id).cxx_construct;
+- (id)initWithFieldNames:parameters:;
+- (long long)fillWithDictionaryRepresentation:;
+- (long long)fillWithEntry:;
+- (long long)insertEntry:withWeight:;
+- (id)calculate;
+- (void)setOnlineWeights:;
+- (id)insertEntryAndCalculate:withWeight:;
+- (unsigned int)stepDetection;
+- (void)markInStep:;
+- (long long)markOutliers:;
+- (id)calculateInterSessionFilterResultFromIndex:;
+- (void)resetElementFlags:;
+- (double)samplesMeanFromIndex:ToIndex:ByElement:;
+- (double)L2FromIndex:ToIndex:ByElement:WithMean:;
+- (double)LossFromIndex:ToIndex:;
+- (double)SLFromIndex:;
+- (unsigned int)kIndexCandidate;
+- (double)V1FromIndex:ToIndex:;
+- (double)V2FromIndex:ToIndex:;
+- (double)samplesVarianceFromIndex:ToIndex:ByElement:WithMean:;
+- (double)sigmaSWithCandidate:ByElement:;
+- (double)TTESTWithCandidate:ByElement:;
+- (BOOL)TtestStepWithCandidate:;
+@end

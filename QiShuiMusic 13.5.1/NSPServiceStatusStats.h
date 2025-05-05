@@ -1,0 +1,32 @@
+@interface NSPServiceStatusStats : NSPProxyAnalytics
+@property (nonatomic) NSString tierType;
+@property (nonatomic) Q serviceStatusDisabledCount;
+@property (nonatomic) Q serviceStatusActiveCount;
+@property (nonatomic) Q serviceStatusOutageCount;
+@property (nonatomic) Q serviceStatusFraudAlertCount;
+@property (nonatomic) Q serviceStatusUnsupportedRegionCount;
+@property (nonatomic) Q serviceStatusSystemIncompatibleCount;
+@property (nonatomic) Q serviceStatusSubscriberUnsupportedRegionCount;
+@property (nonatomic) Q serviceStatusNetworkOutageCount;
+- (void)setTierType:;
+- (id)eventName;
+- (void).cxx_destruct;
+- (id)analyticsDict;
+- (id)tierType;
+- (unsigned long long)serviceStatusDisabledCount;
+- (void)setServiceStatusDisabledCount:;
+- (unsigned long long)serviceStatusActiveCount;
+- (void)setServiceStatusActiveCount:;
+- (unsigned long long)serviceStatusOutageCount;
+- (void)setServiceStatusOutageCount:;
+- (unsigned long long)serviceStatusFraudAlertCount;
+- (void)setServiceStatusFraudAlertCount:;
+- (unsigned long long)serviceStatusUnsupportedRegionCount;
+- (void)setServiceStatusUnsupportedRegionCount:;
+- (unsigned long long)serviceStatusSystemIncompatibleCount;
+- (void)setServiceStatusSystemIncompatibleCount:;
+- (unsigned long long)serviceStatusSubscriberUnsupportedRegionCount;
+- (void)setServiceStatusSubscriberUnsupportedRegionCount:;
+- (unsigned long long)serviceStatusNetworkOutageCount;
+- (void)setServiceStatusNetworkOutageCount:;
+@end

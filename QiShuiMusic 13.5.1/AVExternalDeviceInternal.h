@@ -1,0 +1,2 @@
+@interface AVExternalDeviceInternal : NSObject
+@end

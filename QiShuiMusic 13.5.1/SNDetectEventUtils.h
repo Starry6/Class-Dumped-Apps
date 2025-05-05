@@ -1,0 +1,2 @@
+@interface SNDetectEventUtils : NSObject
+@end

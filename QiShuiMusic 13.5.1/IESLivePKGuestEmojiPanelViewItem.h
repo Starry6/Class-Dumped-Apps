@@ -1,0 +1,33 @@
+@interface IESLivePKGuestEmojiPanelViewItem : IESLiveDynamicModel
+@property (nonatomic) q type;
+@property (nonatomic) NSString imageUrl;
+@property (nonatomic) NSArray imageUrls;
+@property (nonatomic) UIImage image;
+@property (nonatomic) NSString title;
+@property (nonatomic) @? action;
+@property (nonatomic) BOOL isInGroup;
+@property (nonatomic) UIColor titleColor;
+@property (nonatomic) NSString tag;
+@property (nonatomic) NSArray skins;
+@property (nonatomic) NSString source;
+@property (nonatomic) NSInteger status;
+@property (nonatomic) NSInteger entranceId;
+- (int)entranceId;
+- (id)imageUrls;
+- (void)setEntranceId:;
+- (void)setImageUrls:;
+- (void)setIsInGroup:;
+- (void)setSkins:;
+- (id)skins;
+- (void)setStatus:;
+- (id)tag;
+- (void)setTitleColor:;
+- (id)titleColor;
+- (void)setTag:;
+- (void).cxx_destruct;
+- (id)source;
+- (int)status;
+- (void)setSource:;
+- (BOOL)isInGroup;
++ (id)itemWithEntrance:;
+@end

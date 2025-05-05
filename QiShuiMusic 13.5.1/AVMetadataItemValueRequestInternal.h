@@ -1,0 +1,2 @@
+@interface AVMetadataItemValueRequestInternal : NSObject
+@end

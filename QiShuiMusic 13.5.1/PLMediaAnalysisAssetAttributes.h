@@ -1,0 +1,36 @@
+@interface PLMediaAnalysisAssetAttributes : PLManagedObject
+@property (nonatomic) NSDate mediaAnalysisTimeStamp;
+@property (nonatomic) Q mediaAnalysisVersion;
+@property (nonatomic) NSInteger bestVideoRangeDurationTimeScale;
+@property (nonatomic) q bestVideoRangeDurationValue;
+@property (nonatomic) NSInteger bestVideoRangeStartTimeScale;
+@property (nonatomic) q bestVideoRangeStartValue;
+@property (nonatomic) q packedBestPlaybackRect;
+@property (nonatomic) float blurrinessScore;
+@property (nonatomic) float exposureScore;
+@property (nonatomic) float wallpaperScore;
+@property (nonatomic) float autoplaySuggestionScore;
+@property (nonatomic) float videoScore;
+@property (nonatomic) float activityScore;
+@property (nonatomic) float audioScore;
+@property (nonatomic) Q faceCount;
+@property (nonatomic) s audioClassification;
+@property (nonatomic) s probableRotationDirection;
+@property (nonatomic) float probableRotationDirectionConfidence;
+@property (nonatomic) NSData colorNormalizationData;
+@property (nonatomic) S screenTimeDeviceImageSensitivity;
+@property (nonatomic) S syndicationProcessingValue;
+@property (nonatomic) Q syndicationProcessingVersion;
+@property (nonatomic) PLManagedAsset asset;
+@property (nonatomic) PLCharacterRecognitionAttributes characterRecognitionAttributes;
+@property (nonatomic) PLVisualSearchAttributes visualSearchAttributes;
+- (void)willSave;
+- (void)setBestVideoTimeRange:;
+- (void)setCharacterRecognitionData:machineReadableCodeData:algorithmVersion:adjustmentVersion:;
+- (void)resetCharacterRecognitionAttributes;
+- (void)setVisualSearchData:algorithmVersion:adjustmentVersion:;
+- (void)resetVisualSearchAttributes;
+- (id)bestVideoTimeRange;
++ (id)entityName;
++ (id)fetchRequest;
+@end

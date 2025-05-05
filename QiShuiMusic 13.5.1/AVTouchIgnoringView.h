@@ -1,0 +1,34 @@
+@interface AVTouchIgnoringView : UIView
+@property (nonatomic) {CGSize=dd} extrinsicContentSize;
+@property (nonatomic) BOOL removed;
+@property (nonatomic) BOOL collapsed;
+@property (nonatomic) BOOL included;
+@property (nonatomic) BOOL collapsedOrExcluded;
+@property (nonatomic) BOOL hasAlternateAppearance;
+@property (nonatomic) BOOL hasFullScreenAppearance;
+@property (nonatomic) AVLayoutItemAttributes layoutAttributes;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setHasAlternateAppearance:;
+- (void)_updateLayoutItem;
+- (id)minimumSize;
+- (id)hitTest:withEvent:;
+- (void)setCollapsed:;
+- (BOOL)isCollapsed;
+- (id)initWithFrame:;
+- (void)setIncluded:;
+- (void).cxx_destruct;
+- (void)setHasFullScreenAppearance:;
+- (void)setExtrinsicContentSize:;
+- (id)layoutAttributes;
+- (BOOL)isIncluded;
+- (id)extrinsicContentSize;
+- (BOOL)isCollapsedOrExcluded;
+- (void)layoutAttributesDidChange;
+- (BOOL)hasAlternateAppearance;
+- (void)setRemoved:;
+- (BOOL)hasFullScreenAppearance;
+- (BOOL)isRemoved;
+@end

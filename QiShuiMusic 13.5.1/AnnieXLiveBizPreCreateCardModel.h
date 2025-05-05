@@ -1,0 +1,38 @@
+@interface AnnieXLiveBizPreCreateCardModel : NSObject
+@property (nonatomic) NSString schema;
+@property (nonatomic) NSString originUrl;
+@property (nonatomic) NSArray globalPropsBlockList;
+@property (nonatomic) NSDictionary customGlobalProps;
+@property (nonatomic) NSDictionary initialData;
+@property (nonatomic) NSDictionary routerParams;
+@property (nonatomic) Q kernalType;
+@property (nonatomic) <AnnieXCardModelProtocol> cardModel;
+@property (nonatomic) BOOL enableAnnieXPreCreate;
+@property (nonatomic) BOOL enableAnnieXWarmup;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setInitialData:;
+- (id)cardModel;
+- (id)customGlobalProps;
+- (BOOL)enableAnnieXPreCreate;
+- (BOOL)enableAnnieXWarmup;
+- (id)globalPropsBlockList;
+- (id)initialData;
+- (unsigned long long)kernalType;
+- (id)originUrl;
+- (id)routerParams;
+- (void)setCardModel:;
+- (void)setCustomGlobalProps:;
+- (void)setEnableAnnieXPreCreate:;
+- (void)setEnableAnnieXWarmup:;
+- (void)setGlobalPropsBlockList:;
+- (void)setKernalType:;
+- (void)setOriginUrl:;
+- (void)setRouterParams:;
+- (void)updateGlobalPropsWithProps:;
+- (id)schema;
+- (void)setSchema:;
+- (void).cxx_destruct;
+@end

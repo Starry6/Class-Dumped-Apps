@@ -1,0 +1,30 @@
+@interface PHAssetCurationProperties : PHAssetPropertySet
+@property (nonatomic) NSString importedByBundleIdentifier;
+@property (nonatomic) NSString importedByDisplayName;
+@property (nonatomic) NSDate addedDate;
+@property (nonatomic) float interestingSubjectScore;
+@property (nonatomic) float behavioralScore;
+@property (nonatomic) float semanticScore;
+@property (nonatomic) float interactionScore;
+@property (nonatomic) NSDate lastSharedDate;
+@property (nonatomic) NSArray objectSaliencyRects;
+@property (nonatomic) NSString syndicationIdentifier;
+- (id)initWithFetchDictionary:asset:prefetched:;
+- (id)lastSharedDate;
+- (id)objectSaliencyRects;
+- (id)importedByDisplayName;
+- (float)interestingSubjectScore;
+- (float)semanticScore;
+- (id)addedDate;
+- (float)behavioralScore;
+- (float)interactionScore;
+- (void).cxx_destruct;
+- (float)_semanticScoreFromBehavioralScore:;
+- (id)importedByBundleIdentifier;
+- (id)syndicationIdentifier;
++ (id)propertiesToFetch;
++ (id)entityName;
++ (id)keyPathToPrimaryObject;
++ (id)keyPathFromPrimaryObject;
++ (id)propertySetName;
+@end

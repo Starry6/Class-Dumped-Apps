@@ -1,0 +1,33 @@
+@interface UIPopoverBackgroundView : UIView
+@property (nonatomic) BOOL _chromeHidden;
+@property (nonatomic) double arrowOffset;
+@property (nonatomic) Q arrowDirection;
+- (id)actionForLayer:forKey:;
+- (void)_updateShadow;
+- (unsigned long long)arrowDirection;
+- (void)setArrowOffset:;
+- (id)_shadowOffset;
+- (void)layoutSubviews;
+- (long long)backgroundStyle;
+- (double)_shadowOpacity;
+- (double)_shadowRadius;
+- (id)_contentViewFrame;
+- (id)_shadowInsets;
+- (double)arrowOffset;
+- (BOOL)_shouldAnimatePropertyWithKey:;
+- (void)setArrowDirection:;
+- (id)_shadowPath;
+- (void)_setChromeHidden:;
+- (BOOL)_chromeHidden;
+- (void)_updateChrome;
+- (id)_contentViewInsets;
+- (id)_contentViewInsetsForArrowDirection:;
+- (id)_shadowPathForRect:arrowDirection:;
+- (id)_backgroundContentViewFrame;
++ (double)arrowHeight;
++ (double)arrowBase;
++ (double)cornerRadius;
++ (id)contentViewInsets;
++ (BOOL)wantsDefaultContentAppearance;
++ (double)_contentViewCornerRadiusForArrowDirection:;
+@end

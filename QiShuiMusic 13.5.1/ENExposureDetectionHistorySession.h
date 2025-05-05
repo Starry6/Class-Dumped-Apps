@@ -1,0 +1,32 @@
+@interface ENExposureDetectionHistorySession : NSObject
+@property (nonatomic) NSString appBundleIdentifier;
+@property (nonatomic) NSString systemBuildVersion;
+@property (nonatomic) ENRegion region;
+@property (nonatomic) NSDate date;
+@property (nonatomic) NSString exposureClassificationIdentifier;
+@property (nonatomic) Q fileCount;
+@property (nonatomic) Q matchCount;
+@property (nonatomic) NSUUID UUID;
+- (id)initWithUUID:;
+- (id)init;
+- (void)encodeWithXPCObject:;
+- (void)setRegion:;
+- (void)setUUID:;
+- (void)setAppBundleIdentifier:;
+- (id)region;
+- (void)setSystemBuildVersion:;
+- (id)initWithXPCObject:error:;
+- (id)date;
+- (id)appBundleIdentifier;
+- (void).cxx_destruct;
+- (void)setDate:;
+- (id)description;
+- (id)UUID;
+- (id)systemBuildVersion;
+- (unsigned long long)matchCount;
+- (void)setMatchCount:;
+- (void)setExposureClassificationIdentifier:;
+- (id)exposureClassificationIdentifier;
+- (void)setFileCount:;
+- (unsigned long long)fileCount;
+@end

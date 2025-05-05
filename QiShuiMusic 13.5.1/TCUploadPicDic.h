@@ -1,0 +1,34 @@
+@interface TCUploadPicDic : TCAPIRequest
+@property (nonatomic) NSString paramPhotodesc;
+@property (nonatomic) NSString paramTitle;
+@property (nonatomic) NSString paramAlbumid;
+@property (nonatomic) NSString paramMobile;
+@property (nonatomic) NSString paramX;
+@property (nonatomic) NSString paramY;
+@property (nonatomic) UIImage paramPicture;
+@property (nonatomic) NSString paramNeedfeed;
+@property (nonatomic) NSString paramSuccessnum;
+@property (nonatomic) NSString paramPicnum;
+- (void)setParamMobile:;
+- (void)setParamPicnum:;
+- (id)paramSuccessnum;
+- (id)paramAlbumid;
+- (id)paramMobile;
+- (id)paramNeedfeed;
+- (id)paramPhotodesc;
+- (id)paramPicnum;
+- (id)paramPicture;
+- (id)paramTitle;
+- (id)paramX;
+- (id)paramY;
+- (void)setParamAlbumid:;
+- (void)setParamNeedfeed:;
+- (void)setParamPhotodesc:;
+- (void)setParamPicture:;
+- (void)setParamSuccessnum:;
+- (void)setParamTitle:;
+- (void)setParamX:;
+- (void)setParamY:;
+- (void).cxx_destruct;
++ (id)dictionary;
+@end

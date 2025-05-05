@@ -1,0 +1,31 @@
+@interface CLSArchivedQuestionStep : CLSArchivedSurveyStep
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSString questionText;
+@property (nonatomic) CLSArchivedAnswerFormat archivedAnswerFormat;
+@property (nonatomic) q questionType;
+@property (nonatomic) q displayOrder;
+@property (nonatomic) NSArray assets;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (id)assets;
+- (void)setDisplayOrder:;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (long long)displayOrder;
+- (long long)questionType;
+- (void)setQuestionType:;
+- (id)questionText;
+- (id)initWithQuestionText:answerFormat:;
+- (id)archivedAnswerFormat;
+- (void)setArchivedAnswerFormat:;
+- (void)setQuestionText:;
++ (BOOL)supportsSecureCoding;
++ (id)relations;
+@end

@@ -1,0 +1,38 @@
+@interface SSLookupItem : NSObject
+@property (nonatomic) NSString artistName;
+@property (nonatomic) NSArray artwork;
+@property (nonatomic) NSString bundleIdentifier;
+@property (nonatomic) NSArray categoryNames;
+@property (nonatomic) NSString displayName;
+@property (nonatomic) NSString itemKind;
+@property (nonatomic) NSNumber ITunesStoreIdentifier;
+@property (nonatomic) NSArray offers;
+@property (nonatomic) BOOL POIBased;
+@property (nonatomic) NSURL productPageURL;
+@property (nonatomic) q numberOfUserRatings;
+@property (nonatomic) float userRating;
+@property (nonatomic) q numberOfUserRatingsForCurrentVersion;
+@property (nonatomic) float userRatingForCurrentVersion;
+@property (nonatomic) NSDictionary lookupDictionary;
+- (id)artistName;
+- (id)artwork;
+- (id)bundleIdentifier;
+- (void)dealloc;
+- (id)lookupDictionary;
+- (id)offers;
+- (id)initWithCoder:;
+- (id)displayName;
+- (void)encodeWithCoder:;
+- (id)itemKind;
+- (id)initWithLookupDictionary:;
+- (id)copyWithZone:;
+- (id)categoryNames;
+- (BOOL)isPOIBased;
+- (long long)numberOfUserRatings;
+- (long long)numberOfUserRatingsForCurrentVersion;
+- (id)productPageURL;
+- (float)userRating;
+- (float)userRatingForCurrentVersion;
+- (id)ITunesStoreIdentifier;
++ (BOOL)supportsSecureCoding;
+@end

@@ -1,0 +1,31 @@
+@interface ICIAMApplicationMessageSyncCommand : PBCodable
+@property (nonatomic) BOOL hasCommandType;
+@property (nonatomic) NSInteger commandType;
+@property (nonatomic) BOOL hasApplicationMessage;
+@property (nonatomic) ICIAMApplicationMessage applicationMessage;
+@property (nonatomic) BOOL hasCommandSerialNumber;
+@property (nonatomic) q commandSerialNumber;
+- (int)commandType;
+- (void)writeTo:;
+- (id)applicationMessage;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (void)setCommandType:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setHasCommandType:;
+- (BOOL)hasCommandType;
+- (id)commandTypeAsString:;
+- (int)StringAsCommandType:;
+- (BOOL)hasApplicationMessage;
+- (void)setCommandSerialNumber:;
+- (void)setHasCommandSerialNumber:;
+- (BOOL)hasCommandSerialNumber;
+- (void)setApplicationMessage:;
+- (long long)commandSerialNumber;
+@end

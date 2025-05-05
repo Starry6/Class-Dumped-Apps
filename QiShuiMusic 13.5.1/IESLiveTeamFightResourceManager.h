@@ -1,0 +1,38 @@
+@interface IESLiveTeamFightResourceManager : IESLiveMultiBaseResourceManager
+@property (nonatomic) NSArray teamFightEffects;
+@property (nonatomic) IESEffectModel winnerMVPSticker;
+@property (nonatomic) IESEffectModel loserMVPSticker;
+@property (nonatomic) @? winnerMVPBlock;
+@property (nonatomic) @? loserMVPBlock;
+@property (nonatomic) <IESLiveTeamFightBaseProvider> provider;
+- (id)loserMVPSticker;
+- (void)cleanTeamFightEffectComplete;
+- (void)downloadTeamFightEffects;
+- (void)downloadTeamFightStickerIfNeeded:;
+- (id)fansticketIcon:role:;
+- (id)goldEffectName;
+- (id)initWithDIContext:provider:;
+- (id)loserConfig;
+- (id)loserMVPAnim;
+- (id)loserMVPBlock;
+- (id)loserMVPCrownIcon;
+- (void)loserSticker:;
+- (void)monitorDownloadResultEffect:error:;
+- (void)monitorDressConfigErrorWithStatus:error:;
+- (void)setLoserMVPBlock:;
+- (void)setLoserMVPSticker:;
+- (void)setTeamFightEffects:;
+- (void)setWinnerMVPBlock:;
+- (void)setWinnerMVPSticker:;
+- (id)sliverEffectName;
+- (id)teamFightEffects;
+- (id)winnerConfig;
+- (id)winnerMVPAnim;
+- (id)winnerMVPBlock;
+- (id)winnerMVPCrownIcon;
+- (id)winnerMVPSticker;
+- (void)winnerSticker:;
+- (void)setProvider:;
+- (id)provider;
+- (void).cxx_destruct;
+@end

@@ -1,0 +1,37 @@
+@interface STCallingStatusDomainData : NSObject
+@property (nonatomic) STListData callDescriptorListData;
+@property (nonatomic) NSArray callDescriptors;
+@property (nonatomic) NSSet activeCallAttributions;
+@property (nonatomic) NSSet ringingCallAttributions;
+@property (nonatomic) NSSet activeVideoConferenceAttributions;
+@property (nonatomic) NSSet ringingVideoConferenceAttributions;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (id)callDescriptorListData;
+- (id)dataByApplyingDiff:;
+- (id)succinctDescriptionBuilder;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)diffFromData:;
+- (void)encodeWithCoder:;
+- (id)_initWithCallDescriptorListData:;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (id)succinctDescription;
+- (id)initWithCallDescriptorListData:;
+- (id)description;
+- (id)ringingCallAttributions;
+- (id)ringingVideoConferenceAttributions;
+- (id)callDescriptors;
+- (id)mutableCopyWithZone:;
+- (id)descriptionBuilderWithMultilinePrefix:;
+- (id)activeCallAttributions;
+- (BOOL)isEqual:;
+- (id)descriptionWithMultilinePrefix:;
+- (id)activeVideoConferenceAttributions;
+- (id)copyWithZone:;
++ (BOOL)supportsSecureCoding;
+@end

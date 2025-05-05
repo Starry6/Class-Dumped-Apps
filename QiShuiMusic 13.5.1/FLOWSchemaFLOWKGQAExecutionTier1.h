@@ -1,0 +1,37 @@
+@interface FLOWSchemaFLOWKGQAExecutionTier1 : SISchemaInstrumentationMessage
+@property (nonatomic) NSArray primaryEntities;
+@property (nonatomic) NSArray secondaryEntities;
+@property (nonatomic) NSString answerId;
+@property (nonatomic) BOOL hasAnswerId;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)clearPrimaryEntities;
+- (void)deletePrimaryEntities;
+- (void)addPrimaryEntities:;
+- (unsigned long long)primaryEntitiesCount;
+- (id)primaryEntitiesAtIndex:;
+- (void)clearSecondaryEntities;
+- (void)deleteSecondaryEntities;
+- (void)addSecondaryEntities:;
+- (unsigned long long)secondaryEntitiesCount;
+- (id)secondaryEntitiesAtIndex:;
+- (BOOL)hasAnswerId;
+- (void)deleteAnswerId;
+- (id)primaryEntities;
+- (void)setPrimaryEntities:;
+- (id)secondaryEntities;
+- (void)setSecondaryEntities:;
+- (id)answerId;
+- (void)setAnswerId:;
+- (void)setHasAnswerId:;
+@end

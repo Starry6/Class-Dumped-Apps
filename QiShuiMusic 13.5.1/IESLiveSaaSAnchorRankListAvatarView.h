@@ -1,0 +1,31 @@
+@interface IESLiveSaaSAnchorRankListAvatarView : UIView
+@property (nonatomic) CAGradientLayer gradientLayer;
+@property (nonatomic) UIImageView avatarDecorationView;
+@property (nonatomic) UIImageView avatarImageView;
+@property (nonatomic) UIView livingAnimationView;
+@property (nonatomic) UIImage decorationImage;
+@property (nonatomic) NSArray gradientColors;
+@property (nonatomic) double livinIconWidth;
+@property (nonatomic) double avatarPadding;
+- (id)avatarDecorationView;
+- (double)avatarPadding;
+- (double)livinIconWidth;
+- (id)livingAnimationView;
+- (void)setAvatarDecorationView:;
+- (void)setAvatarPadding:;
+- (void)setLivinIconWidth:;
+- (void)setLivingAnimationView:;
+- (void)updateWithURLs:living:showDecoration:;
+- (void)setupConstraints;
+- (void)layoutSubviews;
+- (id)gradientLayer;
+- (id)initWithFrame:;
+- (id)gradientColors;
+- (void).cxx_destruct;
+- (void)setGradientColors:;
+- (void)setGradientLayer:;
+- (id)avatarImageView;
+- (void)setAvatarImageView:;
+- (void)setDecorationImage:;
+- (id)decorationImage;
+@end

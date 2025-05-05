@@ -1,0 +1,32 @@
+@interface PLCompositionHelper : NSObject
++ (id)photosSchema;
++ (id)updateReframeStateForAdjustmentData:formatIdentifier:formatVersion:outFormatIdentifier:outFormatVersion:isReframed:;
++ (id)validatedCompositionCopyFor:;
++ (id)validatedCompositionCopyFor:mediaType:;
++ (id)adjustmentConstants;
++ (BOOL)isIdentityCompositionController:;
++ (BOOL)isIdentityCompositionController:forKeys:;
++ (id)newIdentityCompositionController;
++ (id)defaultValueForAdjustmentKey:settingKey:;
++ (id)identityValueForAdjustmentKey:settingKey:;
++ (id)minMaxValueForAdjustmentKey:settingKey:;
++ (id)minValueForAdjustmentKey:settingKey:;
++ (id)maxValueForAdjustmentKey:settingKey:;
++ (id)valueForType:adjustmentKey:settingKey:;
++ (id)valueForCompositionController:adjustmentKey:settingKey:;
++ (BOOL)compositionControllerHasAnyAutoEnhancement:;
++ (id)activeEffectAdjustmentForCompositionController:;
++ (BOOL)compositionController:isCropConstraintEqualToCompositionController:;
++ (BOOL)compositionController:isEffectFilterEqualToCompositionController:;
++ (BOOL)compositionController:isEffectFilterIntensityEqualToCompositionController:;
++ (BOOL)compositionController:isPortraitEqualToCompositionController:;
++ (BOOL)compositionController:isPortraitIntensityEqualToCompositionController:;
++ (BOOL)compositionController:isDepthIntensityEqualToCompositionController:;
++ (BOOL)compositionController:isGeometryEqualToCompositionController:;
++ (id)synchronousInputSizeForCompositionController:;
++ (void)compositionController:setEffectFilterName:version:;
++ (BOOL)compositionHasOvercaptureSourceSelection:;
++ (void)compositionController:setInputOrientation:;
++ (BOOL)wantsSemanticEnhanceForCameraMetadata:;
++ (void)compositionController:updateSemanticEnhanceFromCameraMetadata:exportProperties:;
+@end

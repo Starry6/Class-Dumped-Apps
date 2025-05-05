@@ -1,0 +1,31 @@
+@interface IMDChatRecord : IMDRecord
+@property (nonatomic) q rowID;
+@property (nonatomic) NSString guid;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) NSDictionary properties;
+@property (nonatomic) NSString serviceName;
+@property (nonatomic) NSString groupID;
+@property (nonatomic) NSString groupName;
+@property (nonatomic) NSString cloudKitRecordID;
+@property (nonatomic) IMDMessageRecord lastMessageRecord;
+@property (nonatomic) NSArray handleRecords;
+- (id)groupID;
+- (id)init;
+- (long long)rowID;
+- (id)identifier;
+- (id)serviceName;
+- (unsigned long long)_cfTypeID;
+- (id)properties;
+- (id)groupName;
+- (id)guid;
+- (id)_localCache;
+- (id)cloudKitRecordID;
+- (id)handleRecords;
+- (id)_fetchUpdatedRecord;
+- (id)_propertyDescriptorForProperty:;
+- (int)_propertyIDForProperty:;
+- (id)cfChatRecord;
+- (id)lastMessageRecord;
++ (id)allocWithZone:;
++ (id)keyPathsToColumns;
+@end

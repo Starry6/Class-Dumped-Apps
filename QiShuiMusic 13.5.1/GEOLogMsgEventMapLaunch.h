@@ -1,0 +1,34 @@
+@interface GEOLogMsgEventMapLaunch : PBCodable
+@property (nonatomic) BOOL hasSourceAppId;
+@property (nonatomic) NSString sourceAppId;
+@property (nonatomic) BOOL hasLaunchUri;
+@property (nonatomic) NSString launchUri;
+@property (nonatomic) BOOL hasTimeToLeave;
+@property (nonatomic) GEOTimeToLeaveMapLaunch timeToLeave;
+- (void)readAll:;
+- (id)init;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasSourceAppId;
+- (id)sourceAppId;
+- (void)setSourceAppId:;
+- (BOOL)hasLaunchUri;
+- (id)launchUri;
+- (void)setLaunchUri:;
+- (BOOL)hasTimeToLeave;
+- (id)timeToLeave;
+- (void)setTimeToLeave:;
++ (BOOL)isValid:;
+@end

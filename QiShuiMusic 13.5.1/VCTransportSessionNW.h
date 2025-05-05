@@ -1,0 +1,22 @@
+@interface VCTransportSessionNW : VCTransportSession
+- (BOOL)isIPv6;
+- (void)dealloc;
+- (void)start;
+- (void)stop;
+- (id)initWithRTPNWConnectionID:RTCPNWConnectionID:handlerQueue:context:notificationHandler:eventHandler:;
+- (void)createNWConnection:forConnectionID:;
+- (void)handleStateChanges:error:semaphore:operationResult:;
+- (BOOL)setStateChangeHandlerForConnection:result:semaphore:;
+- (BOOL)setupNWConnection:;
+- (int)createVFD:forStreamType:;
+- (void)createNWMonitor;
+- (void)destroyNWMonitor;
+- (int)dupRTPNWConnectionBackingSocket;
+- (int)dupRTCPNWConnectionBackingSocket;
+- (int)dupRTPNWConnectionBackingSocketForNWConnection:;
+- (void)initializeInterfaceType;
+- (BOOL)initializeNetworkMTU;
+- (BOOL)initializeIsIPv6;
+- (int)networkInterfaceType;
+- (unsigned int)networkMTU;
+@end

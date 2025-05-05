@@ -1,0 +1,36 @@
+@interface LPCaptionButtonPresentationProperties : NSObject
+@property (nonatomic) NSString text;
+@property (nonatomic) NSAttributedString attributedText;
+@property (nonatomic) LPImage icon;
+@property (nonatomic) @? callback;
+@property (nonatomic) q type;
+@property (nonatomic) UIColor foregroundColor;
+@property (nonatomic) UIColor backgroundColor;
+@property (nonatomic) LPCaptionButtonCollapsedPresentationProperties collapsedButton;
+@property (nonatomic) NSArray actions;
+@property (nonatomic) double minimumWidth;
+@property (nonatomic) NSNumber requiresInlineButton;
+- (id)callback;
+- (double)minimumWidth;
+- (void)setCallback:;
+- (id)foregroundColor;
+- (void)setForegroundColor:;
+- (void)setAttributedText:;
+- (void)setBackgroundColor:;
+- (void)setActions:;
+- (id)backgroundColor;
+- (void)setText:;
+- (id)icon;
+- (void)setType:;
+- (void)setMinimumWidth:;
+- (long long)type;
+- (id)actions;
+- (void)setIcon:;
+- (void).cxx_destruct;
+- (id)attributedText;
+- (id)text;
+- (id)collapsedButton;
+- (void)setCollapsedButton:;
+- (id)requiresInlineButton;
+- (void)setRequiresInlineButton:;
+@end

@@ -1,0 +1,2 @@
+@interface IESECLiveGoodsCheckAction : IESECLiveAtomicServerActionBase
+@end

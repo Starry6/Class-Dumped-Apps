@@ -1,0 +1,31 @@
+@interface WBSTouchIconFetchOperation : WBSWebViewMetadataFetchOperation
+@property (nonatomic) @? completionHandler;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)resetState;
+- (id)initWithRequest:;
+- (unsigned long long)hash;
+- (void)webView:decidePolicyForNavigationAction:decisionHandler:;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)completionHandler;
+- (id)initWithRequest:allowFetchingOverCellularNetwork:completionHandler:;
+- (id)initWithRequest:completionHandler:;
+- (id)webViewConfiguration;
+- (void)didCreateWebView;
+- (void)didFetchTouchIconURLs:andFaviconURLs:forURL:;
+- (void)willClearWebView;
+- (void)didFailFetch;
+- (void)startOffscreenFetching;
+- (void)clearWebView;
+- (void)loadRequest;
+- (void)didCompleteWithResult:;
+- (void)_setUpRemoteObjectProxies;
+- (void)_tearDownRemoteObjectProxies;
+- (void)_scheduleTimeoutWithTimeInterval:;
+- (void)_downloadFirstValidImageWithURLs:failureHandler:;
+- (void)_downloadPendingTouchIconURLs;
+@end

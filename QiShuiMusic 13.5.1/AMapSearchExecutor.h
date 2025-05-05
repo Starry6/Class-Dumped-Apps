@@ -1,0 +1,30 @@
+@interface AMapSearchExecutor : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)AMapSearchRequest:didFailWithError:;
+- (void)onReGeocodeSearchDone:response:;
+- (void)onInputTipsSearchDone:response:;
+- (void)onBusLineSearchDone:response:;
+- (void)onBusStopSearchDone:response:;
+- (void)onCloudSearchDone:response:;
+- (void)onDistrictSearchDone:response:;
+- (void)onGeocodeSearchDone:response:;
+- (void)onNearbySearchDone:response:;
+- (void)onPOISearchDone:response:;
+- (void)onRoutePOISearchDone:response:;
+- (void)onRouteSearchDone:response:;
+- (void)onShareSearchDone:response:;
+- (void)onWeatherSearchDone:response:;
+- (void)performBlockWithRequest:withResponse:error:;
+- (void)performSearchServiceWithJSONDic:completion:;
+- (void)performSearchTestWithJSONString:completion:;
+- (void)performSearchWithRequest:completionBlock:;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
++ (Class)searchRequestClassForService:;
++ (SEL)searchSelectorForRequestClass:;
++ (id)validServices;
+@end

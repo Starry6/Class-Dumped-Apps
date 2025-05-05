@@ -1,0 +1,26 @@
+@interface UIKBRenderFactoryiPadSplit : UIKBRenderFactoryiPad
+- (id)deleteKeyOffset;
+- (id)internationalKeyOffset;
+- (id)variantAnnotationTextOffset;
+- (double)symbolImageControlKeyFontSize;
+- (double)keyCornerRadius;
+- (id)dynamicInsets;
+- (double)dynamicBottomRowMultiplier;
+- (BOOL)supportsInputTraits:forKeyplane:;
+- (id)backgroundTraitsForKeyplane:;
+- (id)_traitsForKey:onKeyplane:;
+- (id)multitapCompleteKeyImageName;
+- (id)muttitapReverseKeyImageName;
+- (double)skinnyKeyThreshold;
+- (void)_customizeTraits:forPopupForKey:withRenderingContext:keycapsFontName:;
+- (id)dismissKeyOffset;
+- (id)shiftKeyOffset;
+- (void)_customizeGeometry:forKey:contents:;
+- (void)_customizeSymbolStyle:forKey:contents:;
+- (double)variantAnnotationTextFontSize;
+- (id)variantGeometriesForGeometry:variantCount:rowLimit:annotationIndex:;
+- (double)_row4ControlSegmentWidthLeft;
+- (double)symbolFrameInset;
+- (double)keyInsetBottom;
+- (double)defaultPathWeight;
+@end

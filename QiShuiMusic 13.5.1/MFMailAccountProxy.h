@@ -1,0 +1,34 @@
+@interface MFMailAccountProxy : NSObject
+@property (nonatomic) NSString fullUserName;
+@property (nonatomic) NSString username;
+@property (nonatomic) NSString firstEmailAddress;
+@property (nonatomic) NSArray emailAddresses;
+@property (nonatomic) NSArray fromEmailAddresses;
+@property (nonatomic) NSArray fromEmailAddressesIncludingDisabled;
+@property (nonatomic) NSString uniqueID;
+@property (nonatomic) BOOL isDefaultDeliveryAccount;
+@property (nonatomic) BOOL supportsThreadOperations;
+@property (nonatomic) BOOL restrictsRepliesAndForwards;
+@property (nonatomic) BOOL supportsMailDrop;
+@property (nonatomic) BOOL isManaged;
+@property (nonatomic) @ mailAccount;
+- (id)emailAddresses;
+- (id)username;
+- (id)uniqueID;
+- (BOOL)_isActive;
+- (BOOL)isManaged;
+- (void).cxx_destruct;
+- (id)fullUserName;
+- (BOOL)_isRestricted;
+- (id)_initWithProperties:;
+- (BOOL)supportsMailDrop;
+- (id)mailAccount;
+- (id)firstEmailAddress;
+- (id)fromEmailAddresses;
+- (id)fromEmailAddressesIncludingDisabled;
+- (BOOL)supportsThreadOperations;
+- (BOOL)isDefaultDeliveryAccount;
+- (id)_emailAddressesAndAliases;
+- (BOOL)restrictsRepliesAndForwards;
++ (id)log;
+@end

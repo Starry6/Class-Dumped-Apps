@@ -1,0 +1,31 @@
+@interface TURouteController : NSObject
+@property (nonatomic) NSObject<OS_dispatch_queue> queue;
+@property (nonatomic) <TURouteControllerActions> actionsDelegate;
+@property (nonatomic) NSHashTable delegates;
+@property (nonatomic) NSDictionary routesByUniqueIdentifier;
+@property (nonatomic) NSArray routes;
+@property (nonatomic) TURoute pickedRoute;
+@property (nonatomic) TURoute receiverRoute;
+@property (nonatomic) TURoute speakerRoute;
+- (void)addDelegate:;
+- (void)pickRoute:;
+- (void)handleServerDisconnect;
+- (id)routesByUniqueIdentifier;
+- (id)pickedRoute;
+- (id)initWithActionsDelegate:serialQueue:;
+- (id)delegates;
+- (void)handleServerReconnect;
+- (void)handleRoutesByUniqueIdentifierUpdated:;
+- (void)requeryRoutes;
+- (id)routes;
+- (void)pickRouteWhenAvailableWithUniqueIdentifier:;
+- (void)removeDelegate:;
+- (void)setRoutesByUniqueIdentifier:;
+- (void)pickRouteWithUniqueIdentifier:;
+- (id)speakerRoute;
+- (id)routeWithSourceIdentifier:;
+- (id)receiverRoute;
+- (void).cxx_destruct;
+- (id)actionsDelegate;
+- (id)queue;
+@end

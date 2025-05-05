@@ -1,0 +1,36 @@
+@interface UISDShareSheetSessionConfiguration : NSObject
+@property (nonatomic) NSNumber nearbyCountSlotID;
+@property (nonatomic) NSNumber nearbyCountBadge;
+@property (nonatomic) NSArray peopleProxies;
+@property (nonatomic) NSArray shareProxies;
+@property (nonatomic) NSArray actionProxies;
+@property (nonatomic) BOOL wantsAnimation;
+@property (nonatomic) BOOL reloadData;
+@property (nonatomic) NSArray peopleSuggestions;
+@property (nonatomic) NSArray restrictedActivityTypes;
+@property (nonatomic) BOOL shouldBlockPresentation;
+- (BOOL)reloadData;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (void)setWantsAnimation:;
+- (BOOL)wantsAnimation;
+- (id)peopleProxies;
+- (id)shareProxies;
+- (id)actionProxies;
+- (id)nearbyCountSlotID;
+- (void)setPeopleProxies:;
+- (void)setShareProxies:;
+- (void)setActionProxies:;
+- (void)setNearbyCountSlotID:;
+- (id)peopleSuggestions;
+- (id)restrictedActivityTypes;
+- (void)setPeopleSuggestions:;
+- (void)setReloadData:;
+- (void)setRestrictedActivityTypes:;
+- (id)nearbyCountBadge;
+- (BOOL)shouldBlockPresentation;
+- (void)setNearbyCountBadge:;
+- (void)setShouldBlockPresentation:;
++ (BOOL)supportsSecureCoding;
+@end

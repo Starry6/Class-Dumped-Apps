@@ -1,0 +1,37 @@
+@interface UISUISecurityScopedResource : NSObject
+@property (nonatomic) FPSandboxingURLWrapper sandboxExtensionWrapper;
+@property (nonatomic) q allowedAccess;
+@property (nonatomic) BOOL hasActiveAccessAssertion;
+@property (nonatomic) q underlyingSandboxAssertionHandle;
+@property (nonatomic) NSURL url;
+@property (nonatomic) BOOL isContentManaged;
+- (id)url;
+- (BOOL)isContentManaged;
+- (id)initWithCoder:;
+- (void)stopAccessing;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)initWithAbsoluteURL:sandboxExtensionWrapper:allowedAccess:;
+- (BOOL)startAccessing;
+- (BOOL)_isEqualAccessToSecurityScopedResource:;
+- (long long)allowedAccess;
+- (void)setAllowedAccess:;
+- (id)sandboxExtensionWrapper;
+- (void)setSandboxExtensionWrapper:;
+- (BOOL)hasActiveAccessAssertion;
+- (void)setHasActiveAccessAssertion:;
+- (long long)underlyingSandboxAssertionHandle;
+- (void)setUnderlyingSandboxAssertionHandle:;
++ (BOOL)supportsSecureCoding;
++ (id)readonlySandboxExtensionClassString;
++ (id)scopedResourceWithAbsolutePath:allowedAccess:;
++ (id)scopedResourcesForAncestorsOfItemWithAbsolutePath:traversalStopPaths:allowedAccess:;
++ (id)scopedResourceWithFileURL:allowedAccess:;
++ (id)scopedResourceWithURL:allowedAccess:;
++ (id)readwriteSandboxExtensionClassString;
++ (BOOL)_isValidURLForIssuingSandboxExtension:;
++ (id)_sandboxExtensionClassForAllowedAccess:;
++ (id)uniquedSecurityScopedResources:;
++ (id)_scopedResourcesForAncestorsOfItemWithAbsolutePath:traversalStopPaths:allowedAccess:;
+@end

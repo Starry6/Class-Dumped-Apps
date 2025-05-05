@@ -1,0 +1,37 @@
+@interface BDMannorAdTrackConetext : NSObject
+@property (nonatomic) NSString event;
+@property (nonatomic) NSString label;
+@property (nonatomic) NSDictionary extra;
+@property (nonatomic) NSDictionary adExtraData;
+@property (nonatomic) NSString logExtra;
+@property (nonatomic) NSNumber creativeID;
+@property (nonatomic) NSString groupID;
+@property (nonatomic) BOOL useV3;
+@property (nonatomic) NSString trackLabel;
+@property (nonatomic) NSNumber adID;
+@property (nonatomic) NSString refer;
+- (void)setAdExtraData:;
+- (id)adExtraData;
+- (id)adID;
+- (id)logExtra;
+- (id)refer;
+- (void)setAdID:;
+- (void)setCreativeID:;
+- (void)setExtra:;
+- (void)setLogExtra:;
+- (void)setRefer:;
+- (void)setTrackLabel:;
+- (void)setUseV3:;
+- (BOOL)useV3;
+- (void)useV3Tracker:;
+- (void)setGroupID:;
+- (id)groupID;
+- (id)extra;
+- (void)setEvent:;
+- (id)event;
+- (void)setLabel:;
+- (id)label;
+- (void).cxx_destruct;
+- (id)trackLabel;
+- (id)creativeID;
+@end

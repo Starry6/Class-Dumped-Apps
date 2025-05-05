@@ -1,0 +1,35 @@
+@interface AWEWebViewChannelInterceptor : NSObject
+@property (nonatomic) NSDictionary manifest;
+@property (nonatomic) NSString channel;
+@property (nonatomic) NSString accessKey;
+@property (nonatomic) @? channelBlock;
+@property (nonatomic) @? accessKeyBlock;
+@property (nonatomic) IESGurdDelegateDispatcher<IESFalconGurdInterceptionDelegate> delegateDispatcher;
+@property (nonatomic) BOOL enable;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)unregisterInterceptionDelegate:;
+- (id)initWithAccessKey:channelBlock:;
+- (id)accessKeyBlock;
+- (id)channelBlock;
+- (id)delegateDispatcher;
+- (id)falconMetaDataForURLRequest:;
+- (id)falconMetaDataWithURLMd5:accessKey:channel:;
+- (id)initWithAccessKeyBlock:channelBlock:;
+- (void)readManifestJsonWithAccessKey:channel:;
+- (void)registerInterceptionDelegate:;
+- (void)setAccessKeyBlock:;
+- (void)setChannelBlock:;
+- (void)setDelegateDispatcher:;
+- (BOOL)enable;
+- (void)setChannel:;
+- (id)channel;
+- (void).cxx_destruct;
+- (id)manifest;
+- (void)setEnable:;
+- (id)accessKey;
+- (void)setAccessKey:;
+- (void)setManifest:;
+@end

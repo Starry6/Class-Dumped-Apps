@@ -1,0 +1,34 @@
+@interface INParameter : NSObject
+@property (nonatomic) # parameterClass;
+@property (nonatomic) NSString parameterKeyPath;
+@property (nonatomic) NSMutableDictionary _indexesForSubKeyPaths;
+@property (nonatomic) NSString _subscriptedKeyPath;
+- (id)init;
+- (id)_dictionaryRepresentation;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (id)descriptionAtIndent:;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)isEqualToParameter:;
+- (void)setIndex:forSubKeyPath:;
+- (unsigned long long)indexForSubKeyPath:;
+- (id)_valueOfObject:forRemainingKeyPath:inFullyQualifiedKeyPath:;
+- (id)_sanitizedKeyPathForKeyPath:removingSubscripts:;
+- (id)_subscriptedKeyPath;
+- (void)_setIndexesForKeyPathWithSubscripts:;
+- (id)_parameterValueForParameterizedObject:;
+- (id)parameterValue;
+- (id)parameterizedObject;
+- (id)_indexesForSubKeyPaths;
+- (void)set_indexesForSubKeyPaths:;
+- (Class)parameterClass;
+- (void)setParameterClass:;
+- (id)parameterKeyPath;
+- (void)setParameterKeyPath:;
++ (BOOL)supportsSecureCoding;
++ (id)parameterForClass:keyPath:;
+@end

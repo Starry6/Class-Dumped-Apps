@@ -1,0 +1,2 @@
+@interface GiftPortalStatsApiRoot : GPBRootObject
+@end

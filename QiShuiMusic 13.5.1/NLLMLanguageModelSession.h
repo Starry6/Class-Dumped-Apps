@@ -1,0 +1,26 @@
+@interface NLLMLanguageModelSession : NLTokenIDBasedLanguageModelSession
+- (void)dealloc;
+- (void).cxx_destruct;
+- (void)reset;
+- (id)description;
+- (id)initWithLanguageModel:options:;
+- (id)conditionalProbabilityForToken:context:;
+- (id)conditionalProbabilityForString:context:;
+- (long long)blocklistStatusForString:matchType:;
+- (void)adaptToToken:context:;
+- (void)unadaptToToken:context:;
+- (void)enumeratePredictionsForContext:maximumPredictions:maximumTokensPerPrediction:withBlock:;
+- (void)flushDynamicData;
+- (void)applyExponentialDecay;
+- (void)pruneToSize:;
+- (void)recordWithDifferentialPrivacy:;
+- (id)conditionalProbabilityForTokenID:contextTokenIDs:length:;
+- (void)enumeratePredictionsForContextTokenIDs:length:maximumPredictions:maximumTokensPerPrediction:withBlock:;
+- (long long)blocklistStatusForTokenIDs:length:matchType:;
+- (void)adaptToTokenID:contextTokenIDs:length:;
+- (void)unadaptToTokenID:contextTokenIDs:length:;
+- (BOOL)addTokenForString:tokenID:;
+- (BOOL)getFirstDynamicTokenID:lastDynamicTokenID:;
+- (BOOL)shouldAdaptToTokenIDs:length:;
+- (float)usageCountForTokenID:;
+@end

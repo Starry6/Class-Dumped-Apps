@@ -1,0 +1,3 @@
+@interface STListDetail.BNNormalAllSongsPresenter : _TtGC15BNCommonAdapter11BNPresenterC12STListDetail30BNNormalAllSongsViewControllerCS1_25BNNormalAllSongsFrameView_
+- (void).cxx_destruct;
+@end

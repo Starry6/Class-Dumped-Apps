@@ -1,0 +1,34 @@
+@interface IESLiveVoiceTranslatePanelView : IESLiveVoiceCommonPanelView
+@property (nonatomic) BOOL landScapeMode;
+@property (nonatomic) NSTimer timer;
+@property (nonatomic) BOOL translating;
+- (void)recordBtnCancel;
+- (void)setTranslating:;
+- (void)addBackgroundAnimation;
+- (void)animationChangeOpacity:hide:;
+- (void)changeGroupOpacityIsEnd:;
+- (unsigned long long)currentActionType;
+- (unsigned long long)detailAreaType;
+- (BOOL)landScapeMode;
+- (void)recordBtnDown;
+- (void)recordBtnMoveInside;
+- (void)recordBtnMoveOutside;
+- (void)recordBtnUpInside;
+- (void)recordBtnUpOutside;
+- (void)removeBackgroundAnimation;
+- (void)setLandScapeMode:;
+- (void)setupViewModel;
+- (BOOL)supportActionType:;
+- (void)translateComplete;
+- (void)translateTimeOut:;
+- (BOOL)translating;
+- (void)dismiss;
+- (void)interrupt;
+- (id)initWithViewModel:;
+- (void)cancelTimer;
+- (void)startTimer;
+- (void)show;
+- (void)setTimer:;
+- (void).cxx_destruct;
+- (id)timer;
+@end

@@ -1,0 +1,34 @@
+@interface CoreDAVMultiMoveWithFallbackTaskGroup : CoreDAVTaskGroup
+@property (nonatomic) NSMutableArray outstandingSourceURLsToMove;
+@property (nonatomic) NSSet sourceURLs;
+@property (nonatomic) NSURL destinationURL;
+@property (nonatomic) NSDictionary sourceEntityETags;
+@property (nonatomic) NSDictionary sourceEntityDataPayloads;
+@property (nonatomic) NSDictionary sourceEntityDataContentTypes;
+@property (nonatomic) BOOL useFallback;
+@property (nonatomic) NSInteger overwrite;
+@property (nonatomic) NSMutableDictionary destinationEntityETags;
+@property (nonatomic) NSMutableSet destinationURLs;
+- (void)startTaskGroup;
+- (id)destinationURL;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)useFallback;
+- (int)overwrite;
+- (id)sourceURLs;
+- (id)initWithSourceURLs:destinationURL:overwrite:useFallback:sourceEntityDataPayloads:sourceEntityDataContentTypes:sourceEntityETags:accountInfoProvider:taskManager:;
+- (id)fullDestinationURLFromSourceURL:;
+- (id)filenameFromURL:;
+- (void)processOutstandingTasks;
+- (void)_setTagsForDestinationEntityAtURL:fromTaskResponseHeaders:completionBlock:;
+- (id)_eTagFromTaskResponseHeaders:;
+- (void)_completedMoveTask:sourceURL:;
+- (void)_completedPutTask:sourceURL:;
+- (id)sourceEntityDataPayloads;
+- (id)sourceEntityDataContentTypes;
+- (id)sourceEntityETags;
+- (id)destinationEntityETags;
+- (id)destinationURLs;
+- (id)outstandingSourceURLsToMove;
+- (void)setOutstandingSourceURLsToMove:;
+@end

@@ -1,0 +1,31 @@
+@interface IESLiveEffectPlayerView : UIView
+@property (nonatomic) IESLiveVideoGiftController videoController;
+@property (nonatomic) @? playCompletion;
+@property (nonatomic) @? tapCallBack;
+@property (nonatomic) BOOL enableTap;
+@property (nonatomic) BOOL loop;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setTapCallBack:;
+- (void)closePlayer;
+- (void)didFinishPlayingWithError:;
+- (BOOL)enableTap;
+- (id)playCompletion;
+- (void)playVideoWithLocalPath:maskInfo:;
+- (void)setEnableTap:;
+- (void)setPlayCompletion:;
+- (void)setupVideoGiftControl;
+- (id)tapCallBack;
+- (void)videoGiftController:didTapMasks:;
+- (void)videoGiftController:isReadyToPlayOnView:;
+- (void)cancel;
+- (id)hitTest:withEvent:;
+- (void)cancelWithError:;
+- (void).cxx_destruct;
+- (BOOL)loop;
+- (id)videoController;
+- (void)setVideoController:;
+- (void)setLoop:;
+@end

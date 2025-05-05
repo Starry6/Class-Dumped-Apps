@@ -1,0 +1,33 @@
+@interface IESLiveSaaSCommonGuideView : IESLiveSaaSPopUpView
+@property (nonatomic) UIImageView iconImageView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel contentLabel;
+@property (nonatomic) UIButton actionButton;
+@property (nonatomic) q duration;
+@property (nonatomic) IESLiveSaaSRichTextBuilder richTextBuilder;
+@property (nonatomic) IESLiveSaaSCountTimer countTimer;
+@property (nonatomic) @? actionBlock;
+- (id)richTextBuilder;
+- (id)countTimer;
+- (id)initWithFrame:diContext:;
+- (void)setCountTimer:;
+- (void)setRichTextBuilder:;
+- (void)showInContainer:;
+- (void)updateWithGuideModel:;
+- (void)dealloc;
+- (void)setTitleLabel:;
+- (id)actionBlock;
+- (void)action;
+- (void)setDuration:;
+- (void).cxx_destruct;
+- (id)iconImageView;
+- (long long)duration;
+- (id)titleLabel;
+- (void)setIconImageView:;
+- (void)setupUI;
+- (id)actionButton;
+- (void)setActionButton:;
+- (void)setActionBlock:;
+- (id)contentLabel;
+- (void)setContentLabel:;
+@end

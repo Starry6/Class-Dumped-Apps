@@ -1,0 +1,31 @@
+@interface SFAnalyticsSQLiteStore : SFSQLite
+@property (nonatomic) NSArray hardFailures;
+@property (nonatomic) NSArray softFailures;
+@property (nonatomic) NSArray allEvents;
+@property (nonatomic) NSArray samples;
+@property (nonatomic) NSDate uploadDate;
+@property (nonatomic) NSString metricsAccountID;
+- (id)samples;
+- (id)metricsAccountID;
+- (void)setMetricsAccountID:;
+- (id)summaryCounts;
+- (void)clearAllData;
+- (void)dealloc;
+- (long long)hardFailureCountForEventType:;
+- (void)incrementHardFailureCountForEventType:;
+- (long long)softFailureCountForEventType:;
+- (id)hardFailures;
+- (long long)successCountForEventType:;
+- (void)incrementSuccessCountForEventType:;
+- (id)allEvents;
+- (void)removeAllSamplesForName:;
+- (void)setUploadDate:;
+- (id)uploadDate;
+- (void)addSample:forName:;
+- (id)softFailures;
+- (void)addEventDict:toTable:;
+- (void)incrementSoftFailureCountForEventType:;
+- (void)addEventDict:toTable:timestampBucket:;
+- (BOOL)tryToOpenDatabase;
++ (id)storeWithPath:schema:;
+@end

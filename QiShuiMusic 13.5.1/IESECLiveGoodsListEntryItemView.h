@@ -1,0 +1,35 @@
+@interface IESECLiveGoodsListEntryItemView : UIView
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) LOTAnimationView iconLottieView;
+@property (nonatomic) UIImageView iconImageView;
+@property (nonatomic) IESECLiveRedDotView rightTopLabel;
+@property (nonatomic) q rightTopNum;
+@property (nonatomic) IESECLiveGoodsListEntryItemModel itemModel;
+@property (nonatomic) NSString lottieFilePath;
+@property (nonatomic) {CGPoint=dd} iconCenterPoint;
+- (void)setRightTopNum:;
+- (id)iconCenterPoint;
+- (void)addRightTopLabel;
+- (void)getLottieJsonWithFilePath:completed:;
+- (id)iconLottieView;
+- (id)iconLottieViewWithFilePath:;
+- (id)initWithEntryModel:;
+- (id)itemModel;
+- (id)lottieFilePath;
+- (void)playLottieAnimation;
+- (void)rearrangeUIStyle;
+- (id)rightTopLabel;
+- (long long)rightTopNum;
+- (void)setIconCenterPoint:;
+- (void)setIconLottieView:;
+- (void)setItemModel:;
+- (void)setLottieFilePath:;
+- (void)setRightTopLabel:;
+- (void)updateRightTopNum:;
+- (void)updateRightTopNum:needAnim:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)iconImageView;
+- (id)titleLabel;
+- (void)setIconImageView:;
+@end

@@ -1,0 +1,36 @@
+@interface GEOPublisherAttributionManifestIndex : PBCodable
+@property (nonatomic) NSMutableArray publisherAttributionFiles;
+@property (nonatomic) NSMutableDictionary publisherToFileIndex;
+- (void)readAll:;
+- (id)init;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)publisherAttributionFiles;
+- (void)setPublisherAttributionFiles:;
+- (void)clearPublisherAttributionFiles;
+- (void)addPublisherAttributionFiles:;
+- (unsigned long long)publisherAttributionFilesCount;
+- (id)publisherAttributionFilesAtIndex:;
+- (id)publisherToFileIndex;
+- (void)setPublisherToFileIndex:;
+- (void)clearPublisherToFileIndex;
+- (void)setPublisherToFileIndexValue:forKey:;
+- (unsigned int)publisherToFileIndexForKey:;
+- (void)enumeratePublisherToFileIndexUsingBlock:;
+- (unsigned long long)publisherToFileIndexCount;
++ (BOOL)isValid:;
++ (Class)publisherAttributionFilesType;
++ (Class)publisherToFileIndexType;
+@end

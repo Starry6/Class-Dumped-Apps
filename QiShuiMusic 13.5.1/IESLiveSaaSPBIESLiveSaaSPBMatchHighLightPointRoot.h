@@ -1,0 +1,2 @@
+@interface IESLiveSaaSPBIESLiveSaaSPBMatchHighLightPointRoot : GPBRootObject
+@end

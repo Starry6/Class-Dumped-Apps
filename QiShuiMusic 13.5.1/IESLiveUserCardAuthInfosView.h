@@ -1,0 +1,33 @@
+@interface IESLiveUserCardAuthInfosView : UIView
+@property (nonatomic) IESLiveUserCardStore store;
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) IESLiveCollectionViewLeftAlignedLayout flowLayout;
+@property (nonatomic) NSMutableArray profileTagContentArray;
+@property (nonatomic) double contentHeight;
+@property (nonatomic) NSMutableArray subTagViews;
+@property (nonatomic) NSMutableArray itemList;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setSubTagViews:;
+- (void)loadSubTags;
+- (id)profileTagContentArray;
+- (void)setProfileTagContentArray:;
+- (id)subTagViews;
+- (double)contentHeight;
+- (void)setStore:;
+- (id)initWithStore:;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (void)setCollectionView:;
+- (void).cxx_destruct;
+- (id)store;
+- (id)collectionView;
+- (void)setContentHeight:;
+- (id)itemList;
+- (void)setItemList:;
+- (id)flowLayout;
+- (void)setFlowLayout:;
+@end

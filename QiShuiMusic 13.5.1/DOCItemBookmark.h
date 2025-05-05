@@ -1,0 +1,34 @@
+@interface DOCItemBookmark : NSObject
+@property (nonatomic) UTType contentType;
+@property (nonatomic) NSString bookmarkableString;
+@property (nonatomic) FPItem fileProviderItem;
+@property (nonatomic) NSURL fileURL;
+- (void)setContentType:;
+- (void)setFileURL:;
+- (id)contentType;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)fileURL;
+- (id)description;
+- (id)initWithBookmarkableString:fileProviderItem:;
+- (id)initWithURL:fileProviderItem:;
+- (void)prepareForMode:usingBookmark:completionBlock:;
+- (void)prepareForMode:usingBookmark:shouldConvert:conversionRules:completionBlock:;
+- (void)convertAndCopyURLToInbox:ofType:conversionRules:completion:;
+- (void)copyURLToInbox:completion:;
+- (id)coordinatedFileURL;
+- (BOOL)needsToBeImported;
+- (void)setNeedsToBeImported:;
+- (id)bookmarkableString;
+- (void)setBookmarkableString:;
+- (id)fileProviderItem;
+- (void)setFileProviderItem:;
++ (BOOL)supportsSecureCoding;
++ (id)_contentTypeForURL:;
++ (id)_wrapperForURL:error:;
++ (void)_fetchDocumentURLFromBookmarkableString:completion:;
++ (id)documentsURLsForItemBookmarks:;
++ (BOOL)isAnyItemBookmarkAFault:;
++ (BOOL)isAnyFPItemAFault:;
+@end

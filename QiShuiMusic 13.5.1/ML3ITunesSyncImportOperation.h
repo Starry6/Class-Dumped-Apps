@@ -1,0 +1,22 @@
+@interface ML3ITunesSyncImportOperation : ML3ImportOperation
+- (void)main;
+- (void).cxx_destruct;
+- (unsigned long long)importSource;
+- (BOOL)_performImportWithTransaction:;
+- (BOOL)_processSyncOperation:withImportSession:;
+- (BOOL)_performImportOfTrackData:WithTransaction:;
+- (BOOL)_performImportFromPlistFiles:withTransaction:;
+- (id)_syncPlistFilesFromDirectory:;
+- (id)_syncOperationsFromPlistFile:;
+- (BOOL)_processInsertTrackOperation:withImportSession:;
+- (BOOL)_processUpdateTrackOperation:withImportSession:;
+- (BOOL)_processDeleteTrackOperation:withImportSession:;
+- (BOOL)_processUpdateDBInfoOperation:withImportSession:;
+- (BOOL)_processInsertPlaylistOperation:withImportSession:;
+- (BOOL)_processUpdatePlaylistOperation:withImportSession:;
+- (BOOL)_processDeletePlaylistOperation:withImportSession:;
+- (void)_recoverExistingAsset:forTrackId:;
+- (id)_dbInfoValuesForStep:;
+- (void)_processGeniusConfigPlist:;
+- (void)_archiveSyncPlistFiles;
+@end

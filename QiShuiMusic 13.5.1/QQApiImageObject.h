@@ -1,0 +1,2 @@
+@interface QQApiImageObject : QQApiExtendObject
+@end

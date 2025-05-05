@@ -1,0 +1,31 @@
+@interface TTNetworkSpeedTest : NSObject
+@property (nonatomic) NSTimer timer;
+@property (nonatomic) double startTime;
+@property (nonatomic) double lastTime;
+@property (nonatomic) Q lastNetworkBytes;
+@property (nonatomic) double maxTime;
+@property (nonatomic) NSMutableArray speeds;
+@property (nonatomic) @? completion;
+@property (nonatomic) BOOL isMeasuring;
+- (void)setIsMeasuring:;
+- (BOOL)isMeasuring;
+- (unsigned long long)lastNetworkBytes;
+- (void)measure:completion:;
+- (void)setLastNetworkBytes:;
+- (id)completion;
+- (void)setCompletion:;
+- (double)maxTime;
+- (id)init;
+- (void)setMaxTime:;
+- (void)setStartTime:;
+- (double)startTime;
+- (void)setSpeeds:;
+- (void)setTimer:;
+- (void).cxx_destruct;
+- (id)timer;
+- (void)setLastTime:;
+- (id)speeds;
+- (double)lastTime;
+- (void)onTimer;
++ (id)shared;
+@end

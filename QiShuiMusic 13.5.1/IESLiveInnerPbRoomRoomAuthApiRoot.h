@@ -1,0 +1,2 @@
+@interface IESLiveInnerPbRoomRoomAuthApiRoot : GPBRootObject
+@end

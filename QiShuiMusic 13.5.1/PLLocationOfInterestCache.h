@@ -1,0 +1,32 @@
+@interface PLLocationOfInterestCache : NSObject
+@property (nonatomic) NSMutableDictionary visitsCache;
+@property (nonatomic) NSMutableSet allLocationsOfInterest;
+@property (nonatomic) NSMutableSet homeLocations;
+@property (nonatomic) NSMutableSet workLocations;
+@property (nonatomic) Q numberOfLocationsOfInterest;
+@property (nonatomic) Q numberOfLocationsOfInterestVisits;
+@property (nonatomic) Q numberOfLocationsOfInterestTransitions;
+@property (nonatomic) NSDate earliestVisitStartDate;
+@property (nonatomic) PLLocationOfInterestVisit lastLocationOfInterestVisit;
+- (id)locationOfInterestAtLocation:;
+- (id)init;
+- (id)lastLocationOfInterestVisit;
+- (id)workLocations;
+- (void)setVisitsCache:;
+- (unsigned long long)numberOfLocationsOfInterest;
+- (void).cxx_destruct;
+- (id)visitsCache;
+- (id)locationsOfInterestOfType:;
+- (id)homeLocations;
+- (id)allLocationsOfInterest;
+- (void)addLocationOfInterest:;
+- (id)closestLocationOfInterestVisitToLocation:withinDistance:inDateInterval:;
+- (id)locationsOfInterestVisitsAtLocation:inDateInterval:;
+- (id)locationsOfInterestVisitsInDateInterval:;
+- (void)setAllLocationsOfInterest:;
+- (void)setHomeLocations:;
+- (void)setWorkLocations:;
+- (unsigned long long)numberOfLocationsOfInterestVisits;
+- (id)earliestVisitStartDate;
+- (unsigned long long)numberOfLocationsOfInterestTransitions;
+@end

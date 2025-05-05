@@ -1,0 +1,34 @@
+@interface BDXBridgeOpenMethodParamModel : BDXBridgeModel
+@property (nonatomic) BOOL bReplace;
+@property (nonatomic) BOOL bFirstClose;
+@property (nonatomic) BOOL bUseSysBrowser;
+@property (nonatomic) NSString schema;
+@property (nonatomic) BOOL replace;
+@property (nonatomic) BOOL firstClose;
+@property (nonatomic) BOOL useSysBrowser;
+@property (nonatomic) NSNumber asyncCheckOpen;
+@property (nonatomic) NSDictionary extra;
+@property (nonatomic) q replaceType;
+- (void)setReplaceType:;
+- (BOOL)replace;
+- (id)asyncCheckOpen;
+- (BOOL)bFirstClose;
+- (BOOL)bReplace;
+- (BOOL)bUseSysBrowser;
+- (BOOL)firstClose;
+- (long long)replaceType;
+- (void)setAsyncCheckOpen:;
+- (void)setExtra:;
+- (void)setFirstClose:;
+- (void)setReplace:;
+- (void)setUseSysBrowser:;
+- (BOOL)useSysBrowser;
+- (id)schema;
+- (id)extra;
+- (void)setSchema:;
+- (void).cxx_destruct;
++ (id)replaceTypeJSONTransformer;
++ (id)requiredKeyPaths;
++ (id)defaultValues;
++ (id)JSONKeyPathsByPropertyKey;
+@end

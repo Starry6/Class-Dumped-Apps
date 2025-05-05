@@ -1,0 +1,32 @@
+@interface BDWebInterceptor : NSObject
+@property (nonatomic) NSMutableArray schemaHandlers;
+@property (nonatomic) NSMutableArray requestDecorators;
+@property (nonatomic) NSMutableArray requestFilters;
+- (void)registerCustomRequestDecorator:;
+- (void)registerCustomURLSchemaHandler:;
+- (id)bdw_requestDecorators;
+- (void)p_setupInterceptorIfNeeded;
+- (id)processSchemeHandlers:withWebview:;
+- (void)removeCustomRequestDecorator:;
+- (id)requestDecorators;
+- (id)requestFilters;
+- (Class)schemaHandlerClassWithURLRequest:webview:;
+- (id)schemaHandlers;
+- (void)setRequestDecorators:;
+- (void)setRequestFilters:;
+- (void)setSchemaHandlers:;
+- (void)setupClassPluginForWebInterceptor;
+- (id)init;
+- (void).cxx_destruct;
++ (void)removeGlobalInterceptorMonitor:;
++ (void)addGlobalInterceptorMonitor:;
++ (void)addGlobalRequestFilter:;
++ (id)bdw_globalInterceptorMonitors;
++ (id)bdw_globalRequestFilters;
++ (void)removeGlobalRequestFilter:;
++ (BOOL)willBlockRequest:;
++ (id)willDecorateRequest:;
++ (void)willDecorateURLProtocolTask:;
++ (id)allocWithZone:;
++ (id)sharedInstance;
+@end

@@ -1,0 +1,37 @@
+@interface GEOTraitsTransitScheduleFilter : PBCodable
+@property (nonatomic) BOOL hasHighFrequencyFilter;
+@property (nonatomic) GEOTraitsTransitScheduleModeFilter highFrequencyFilter;
+@property (nonatomic) BOOL hasLowFrequencyFilter;
+@property (nonatomic) GEOTraitsTransitScheduleModeFilter lowFrequencyFilter;
+@property (nonatomic) BOOL hasOperatingHoursRange;
+@property (nonatomic) GEOTraitsTransitScheduleTimeRange operatingHoursRange;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (id)init;
+- (void)setHighFrequencyFilter:;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (id)highFrequencyFilter;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (id)lowFrequencyFilter;
+- (void)mergeFrom:;
+- (id)operatingHoursRange;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (BOOL)hasOperatingHoursRange;
+- (BOOL)readFrom:;
+- (id)description;
+- (void)setOperatingHoursRange:;
+- (id)dictionaryRepresentation;
+- (BOOL)hasHighFrequencyFilter;
+- (BOOL)hasLowFrequencyFilter;
+- (void)setLowFrequencyFilter:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
++ (BOOL)isValid:;
+@end

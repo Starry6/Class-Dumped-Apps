@@ -1,0 +1,2 @@
+@interface MSHttpReqsignLoader : NSObject
+@end

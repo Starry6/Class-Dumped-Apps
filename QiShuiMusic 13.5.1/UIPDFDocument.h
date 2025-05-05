@@ -1,0 +1,34 @@
+@interface UIPDFDocument : NSObject
+@property (nonatomic) Q numberOfPages;
+@property (nonatomic) UIPDFPageImageCache pageImageCache;
+@property (nonatomic) UIPDFPageImageCache thumbnailCache;
+@property (nonatomic) ^{CGPDFDocument=} CGDocument;
+@property (nonatomic) <NSObject><UIPDFDocumentDelegate> delegate;
+@property (nonatomic) NSString documentID;
+- (void)dealloc;
+- (id)initWithURL:;
+- (double)maxWidth;
+- (void)setDelegate:;
+- (unsigned long long)numberOfPages;
+- (id)delegate;
+- (double)maxHeight;
+- (id)documentID;
+- (id)pageAtIndex:;
+- (id)initWithCGPDFDocument:;
+- (id)thumbnailCache;
+- (void)setThumbnailCache:;
+- (id)copyCGPDFDocument;
+- (id)initWithCGPDFDocumentLimitedMemory:;
+- (void)setImageCacheCount:lookAhead:withResolution:;
+- (id)copyPageAtIndex:;
+- (void)purgePagesBefore:;
+- (BOOL)allowsCopying;
+- (BOOL)copyDocumentTo:;
+- (id)CGDocument;
+- (id)pageImageCache;
+- (void)updateWidthHeightCache;
+- (double)sumWidth;
+- (double)sumHeight;
+- (void)setPageImageCache:;
++ (id)documentNamed:;
+@end

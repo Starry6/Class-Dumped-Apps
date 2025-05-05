@@ -1,0 +1,35 @@
+@interface IMSystemProxySettingsFetcher : NSObject
+@property (nonatomic) NSString _host;
+@property (nonatomic) S _port;
+@property (nonatomic) q _proxyProtocol;
+@property (nonatomic) NSString _proxyHost;
+@property (nonatomic) S _proxyPort;
+@property (nonatomic) NSString _proxyAccount;
+@property (nonatomic) NSString _proxyPassword;
+@property (nonatomic) @ delegate;
+- (void)setDelegate:;
+- (id)_host;
+- (id)delegate;
+- (void).cxx_destruct;
+- (unsigned short)_port;
+- (unsigned short)_proxyPort;
+- (void)_callAccountSettingsDelegateMethod;
+- (void)_getProxyAccountAndPasswordFromKeychain;
+- (void)_callProxySettingsDelegateMethod;
+- (void)_takeProxySettingsFromDictionary:;
+- (id)initWithHost:port:delegate:;
+- (id)initWithProxyProtocol:proxyHost:proxyPort:delegate:;
+- (void)retrieveProxySettings;
+- (void)retrieveProxyAccountSettings;
+- (void)set_host:;
+- (void)set_port:;
+- (long long)_proxyProtocol;
+- (void)set_proxyProtocol:;
+- (id)_proxyHost;
+- (void)set_proxyHost:;
+- (void)set_proxyPort:;
+- (id)_proxyAccount;
+- (void)set_proxyAccount:;
+- (id)_proxyPassword;
+- (void)set_proxyPassword:;
+@end

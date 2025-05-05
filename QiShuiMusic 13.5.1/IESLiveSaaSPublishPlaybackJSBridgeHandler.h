@@ -1,0 +1,33 @@
+@interface IESLiveSaaSPublishPlaybackJSBridgeHandler : NSObject
+@property (nonatomic) <IESLivePiperProtocol> jsBridge;
+@property (nonatomic) <IESLiveSaaSPublishMediaService> publishMediaService;
+@property (nonatomic) <IESLiveSaaSAnchorRecordPreferenceService> anchorRecordPreference;
+@property (nonatomic) <IESLiveSaaSPublishPlaybackJSBBroadcastAction> publishActionDispatcher;
+@property (nonatomic) IESLiveSaaSPublishApi publishApi;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) BOOL shouldLazyCreateCallHandler;
+- (void)H5_publishHighlightStatusChange:status:;
+- (id)p_createPublishVideoParamsFrom:;
+- (void)H5_publishPlaybackStatusChange:liveID:status:;
+- (id)anchorRecordPreference;
+- (void)didSetAttachingDIContext;
+- (id)jsBridge;
+- (id)p_createSaveDraftParamsFrom:;
+- (id)p_createSaveDraftTrackParamsFrom:withRoomId:videoId:;
+- (void)p_publishHighlight:completion:;
+- (void)p_publishPlayback:completion:;
+- (void)p_saveDraft:extra:downloadTaskToStopDownload:progress:completion:;
+- (id)publishActionDispatcher;
+- (id)publishApi;
+- (id)publishMediaService;
+- (void)registerHandlerWithBridge:;
+- (void)setAnchorRecordPreference:;
+- (void)setJsBridge:;
+- (void)setPublishActionDispatcher:;
+- (void)setPublishApi:;
+- (void)setPublishMediaService:;
+- (void).cxx_destruct;
+@end

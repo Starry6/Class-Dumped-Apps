@@ -1,0 +1,33 @@
+@interface IESLiveMultiLinkerTeamBattleInfoView : IESLiveMultiLinkerBaseBattleScoreView
+@property (nonatomic) UIImageView iconView;
+@property (nonatomic) UILabel scoreLabel;
+@property (nonatomic) UILabel subContentLabel;
+@property (nonatomic) double subContentLabelToScoreLabelTrailingOffset;
+- (id)subContentLabel;
+- (void)updateFrontIcon;
+- (void)didClickSubContent;
+- (void)initSubviews;
+- (id)initWithModel:diContext:;
+- (void)p_setDefaultContent;
+- (void)refreshLayoutAfterChangedIconViewHidden;
+- (void)refreshSubContent:;
+- (void)resetLayoutAfterEffectFinish;
+- (void)setSubContentLabel:;
+- (void)setSubContentLabelToScoreLabelTrailingOffset:;
+- (BOOL)shouldHideScoreText;
+- (double)subContentLabelToScoreLabelTrailingOffset;
+- (void)updateHiddenScore:hiddenRank:;
+- (void)updateIconViewInFog:;
+- (void)updateLayoutToSmallViewStyle:;
+- (void)updateScoreLabelText:showingTipsOrNotice:;
+- (void)updateScoreWithModel:;
+- (id)model;
+- (void)setModel:;
+- (id)iconView;
+- (void)setIconView:;
+- (id)accessibilityLabel;
+- (BOOL)isAccessibilityElement;
+- (void).cxx_destruct;
+- (id)scoreLabel;
+- (void)setScoreLabel:;
+@end

@@ -1,0 +1,30 @@
+@interface IESLiveJsonConfigStrategy : NSObject
+@property (nonatomic) IESLiveToolbarSlotConfig configuration;
+@property (nonatomic) NSMutableDictionary insertTrace;
+@property (nonatomic) Q customMaxSlotCount;
+@property (nonatomic) NSArray items;
+@property (nonatomic) IESLiveToolbarTracker tracker;
+- (void)setInsertTrace:;
+- (BOOL)containItem:;
+- (unsigned long long)customMaxSlotCount;
+- (id)findItem:;
+- (unsigned long long)indexForSlot:;
+- (void)insertItem:asExtendedFor:;
+- (id)insertTrace;
+- (unsigned long long)isContainsItem:items:;
+- (void)logEvent:fileName:functionName:line:extra:;
+- (id)monitorInsertTrace;
+- (id)removeLowPrioritySlotIfNeed:insertItem:;
+- (void)setCustomMaxSlotCount:;
+- (id)slotForItem:;
+- (void)setTracker:;
+- (BOOL)isFull;
+- (id)tracker;
+- (id)items;
+- (void)setConfiguration:;
+- (void)insertItem:;
+- (void)setItems:;
+- (id)configuration;
+- (void).cxx_destruct;
+- (id)initWithConfigFile:;
+@end

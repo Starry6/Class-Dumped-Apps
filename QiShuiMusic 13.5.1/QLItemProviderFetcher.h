@@ -1,0 +1,31 @@
+@interface QLItemProviderFetcher : QLItemFetcher
+@property (nonatomic) @ lastContent;
+@property (nonatomic) NSItemProvider itemProvider;
+@property (nonatomic) <QLPreviewItemURLProvider> urlProvider;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)dealloc;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (id)itemSize;
+- (void).cxx_destruct;
+- (id)itemProvider;
+- (void)setItemProvider:;
+- (id)newItemProvider;
+- (void)updatedURLWithProgress:;
+- (void)getURLWithDownloadTracker:completionHandler:;
+- (id)initWithContentType:fileSize:;
+- (void)fetchContentWithAllowedOutputClasses:inQueue:updateBlock:completionBlock:;
+- (void)_updateCompletionBlockWithAllowedOutputClasses:URL:;
+- (BOOL)isLongFetchOperation;
+- (BOOL)canBeCanceled;
+- (id)shareableItem;
+- (id)fetchedContent;
+- (id)urlProvider;
+- (void)setUrlProvider:;
+- (id)lastContent;
+- (void)setLastContent:;
++ (BOOL)supportsSecureCoding;
+@end

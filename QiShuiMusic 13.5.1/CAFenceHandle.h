@@ -1,0 +1,33 @@
+@interface CAFenceHandle : NSObject
+@property (nonatomic) Q _name;
+@property (nonatomic) BOOL usable;
+@property (nonatomic) BOOL invalidated;
+- (void)_accessMachPort:;
+- (id)init;
+- (BOOL)isUsable;
+- (void)dealloc;
+- (unsigned long long)_name;
+- (BOOL)isInvalidated;
+- (id)_initWithPort:name:;
+- (id)initWithCoder:;
+- (id)createXPCRepresentation;
+- (void)accessMachPort:;
+- (unsigned long long)fenceId;
+- (void)encodeWithCoder:;
+- (unsigned int)_copyPort;
+- (id)description;
+- (unsigned int)copyPort;
+- (id)_initWithXPCRepresentation:;
+- (void)invalidate;
+- (id).cxx_construct;
+- (unsigned int)_copyUntrackedPort;
+- (id)copyWithZone:;
++ (BOOL)supportsSecureCoding;
++ (id)handleFromXPCRepresentation:;
++ (id)newFenceFromServer:;
++ (id)_newFenceWithPort:name:;
++ (id)newFenceFromDefaultServer;
++ (id)_newFenceFromServer:isObservable:;
++ (id)handleForPort:fenceId:;
++ (id)newObservableFenceFromServer:;
+@end

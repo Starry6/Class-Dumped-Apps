@@ -1,0 +1,2 @@
+@interface AWEIMSearchCollectionViewCellModel : AWEIMCellModel
+@end

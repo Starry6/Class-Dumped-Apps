@@ -1,0 +1,33 @@
+@interface BDUGLuckyFeSettingsInfoModel : NSObject
+@property (nonatomic) NSDictionary dogSettings;
+@property (nonatomic) NSDictionary staticSettings;
+@property (nonatomic) NSDictionary personalSettings;
+@property (nonatomic) NSDictionary pollingSettings;
+@property (nonatomic) NSArray staticSettingsKeysMissing;
+@property (nonatomic) NSArray staticSettingsDecodedKeysMissing;
+@property (nonatomic) NSArray personalSettingsKeysMissing;
+@property (nonatomic) NSArray personalSettingsDecodedKeysMissing;
+@property (nonatomic) NSArray pollingSettingsKeysMissing;
+@property (nonatomic) NSArray pollingSettingsDecodedKeysMissing;
+- (id)pollingSettings;
+- (void)setDogSettings:;
+- (void)setPersonalSettingsKeysMissing:;
+- (id)dogSettings;
+- (id)personalSettings;
+- (id)personalSettingsDecodedKeysMissing;
+- (id)personalSettingsKeysMissing;
+- (id)pollingSettingsDecodedKeysMissing;
+- (id)pollingSettingsKeysMissing;
+- (void)setPersonalSettings:;
+- (void)setPersonalSettingsDecodedKeysMissing:;
+- (void)setPollingSettings:;
+- (void)setPollingSettingsDecodedKeysMissing:;
+- (void)setPollingSettingsKeysMissing:;
+- (void)setStaticSettings:;
+- (void)setStaticSettingsDecodedKeysMissing:;
+- (void)setStaticSettingsKeysMissing:;
+- (id)staticSettings;
+- (id)staticSettingsDecodedKeysMissing;
+- (id)staticSettingsKeysMissing;
+- (void).cxx_destruct;
+@end

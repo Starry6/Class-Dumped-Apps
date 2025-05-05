@@ -1,0 +1,36 @@
+@interface IESIMNetworkPingTask : NSObject
+@property (nonatomic) NSArray icmp_detect;
+@property (nonatomic) NSArray tcp_dectect;
+@property (nonatomic) NSMutableArray completionBlocks;
+@property (nonatomic) BOOL success;
+@property (nonatomic) BOOL isPinging;
+@property (nonatomic) q taskID;
+@property (nonatomic) double icmpTimeout;
+@property (nonatomic) double tcpTimeout;
+@property (nonatomic) NSArray srcs;
+- (void)setIcmp_detect:;
+- (void)_pingWithBlock:;
+- (void)setIcmpTimeout:;
+- (void)setTcp_dectect:;
+- (void)timeoutCallBack;
+- (void)didEndDetect:latency:stage:;
+- (double)icmpTimeout;
+- (id)icmp_detect;
+- (id)initWithPingSources:;
+- (void)pingWithBlock:;
+- (void)setIsPinging:;
+- (void)setSrcs:;
+- (void)setTcpTimeout:;
+- (id)srcs;
+- (double)tcpTimeout;
+- (id)tcp_dectect;
+- (id)completionBlocks;
+- (void)dealloc;
+- (void)setCompletionBlocks:;
+- (BOOL)success;
+- (void)setSuccess:;
+- (void)setTaskID:;
+- (void).cxx_destruct;
+- (long long)taskID;
+- (BOOL)isPinging;
+@end

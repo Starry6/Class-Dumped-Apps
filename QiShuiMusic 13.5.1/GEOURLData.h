@@ -1,0 +1,32 @@
+@interface GEOURLData : PBCodable
+@property (nonatomic) BOOL hasDisplayTitle;
+@property (nonatomic) NSString displayTitle;
+@property (nonatomic) BOOL hasUrl;
+@property (nonatomic) NSString url;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (id)url;
+- (id)init;
+- (BOOL)hasUrl;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)setUrl:;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)displayTitle;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasDisplayTitle;
+- (void)setDisplayTitle:;
++ (BOOL)isValid:;
+@end

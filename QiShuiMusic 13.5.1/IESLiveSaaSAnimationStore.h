@@ -1,0 +1,31 @@
+@interface IESLiveSaaSAnimationStore : NSObject
+@property (nonatomic) NSPredicate notifyMessagePredicate;
+@property (nonatomic) HTSEventContext eventContext;
+@property (nonatomic) IESLiveSaaSLiveRoomModel roomModel;
+@property (nonatomic) <HTSLiveSaaSAnimationReactions> actor;
+@property (nonatomic) IESLiveSaaSGroupedLiveMessageHandler groupedHandler;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didSetAttachingDIContext;
+- (void)didUpdateRoom:;
+- (void)dispatchFakeMessage:;
+- (BOOL)enableAnimationNotification;
+- (BOOL)enableRankListAwardMessage;
+- (id)groupedHandler;
+- (id)initWithActor:;
+- (id)notifyMessagePredicate;
+- (void)registerHandlers;
+- (id)roomModel;
+- (void)setEventContext:;
+- (void)setFilterPredicateForNotifyMessage:;
+- (void)setNotifyMessagePredicate:;
+- (void)setRoomModel:;
+- (void)setup;
+- (void).cxx_destruct;
+- (id)eventContext;
+- (void)messageReceived:;
+- (id)actor;
+- (void)setActor:;
+@end

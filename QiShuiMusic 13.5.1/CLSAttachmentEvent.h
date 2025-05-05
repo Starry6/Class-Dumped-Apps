@@ -1,0 +1,31 @@
+@interface CLSAttachmentEvent : CLSInsightEvent
+@property (nonatomic) NSString attachmentID;
+@property (nonatomic) NSString classID;
+@property (nonatomic) NSString handoutID;
+@property (nonatomic) NSString recipientPersonID;
+@property (nonatomic) NSInteger handoutAttachmentType;
+@property (nonatomic) q contextType;
+@property (nonatomic) NSString appIdentifier;
+- (void)setAppIdentifier:;
+- (long long)contextType;
+- (void)setContextType:;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)classID;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (void)mergeWithObject:;
+- (id)attachmentID;
+- (void)setAttachmentID:;
+- (BOOL)validateObject:;
+- (id)recipientPersonID;
+- (void)setRecipientPersonID:;
+- (id)initWithAttachmentID:classID:handoutID:eventType:;
+- (void)setClassID:;
+- (id)handoutID;
+- (void)setHandoutID:;
+- (int)handoutAttachmentType;
+- (void)setHandoutAttachmentType:;
++ (BOOL)supportsSecureCoding;
+@end

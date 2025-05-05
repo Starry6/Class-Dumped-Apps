@@ -1,0 +1,34 @@
+@interface CATDeviceSessionBackedDevicePairingTerminal : NSObject
+@property (nonatomic) BOOL invalidated;
+@property (nonatomic) CATSharingDevice device;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)invalidateWithError:;
+- (BOOL)isInvalidated;
+- (void)_invalidate;
+- (void)setInvalidated:;
+- (void)tryPIN:;
+- (void).cxx_destruct;
+- (void)_tryPIN:;
+- (void)invalidate;
+- (id)device;
+- (void)verifyPairingAndFetchStableIdentifierWithCompletion:;
+- (void)beginPairing:withCompletion:;
+- (id)initWithDeviceSession:;
+- (void)_verifyPairingAndFetchStableIdentifierWithCompletion:;
+- (void)_beginPairing:withCompletion:;
+- (void)addSessionHandlers;
+- (void)deviceSessionInvalidated:;
+- (void)deviceSessionEncounteredError:;
+- (void)deviceSessionReady;
+- (void)verifyPairing;
+- (void)verifyPairingFinished:;
+- (void)sessionHasPromptedForPINWithWaitTime:;
+- (void)fetchStableIdentifier;
+- (void)fetchStableIdentifierFinished:;
+- (void)pairingCompleteWithError:;
+- (void)vendConnectionForCompletion:;
+- (void)removeSessionHandlers;
+@end

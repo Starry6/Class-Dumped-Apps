@@ -1,0 +1,2 @@
+@interface WebScriptObjectPrivate : NSObject
+@end

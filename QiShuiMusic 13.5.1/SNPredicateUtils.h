@@ -1,0 +1,2 @@
+@interface SNPredicateUtils : NSObject
+@end

@@ -1,0 +1,33 @@
+@interface MFLocalActionReplayHandler : NSObject
+@property (nonatomic) MFMailMessageLibrary library;
+@property (nonatomic) MailAccount account;
+@property (nonatomic) NSMutableArray actionsToReplay;
+@property (nonatomic) <EFScheduler> replayScheduler;
+@property (nonatomic) BOOL needToCheckForNewActions;
+@property (nonatomic) BOOL replayingActions;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSString ef_publicDescription;
+- (id)account;
+- (id)ef_publicDescription;
+- (void)setAccount:;
+- (void)setReplayingActions:;
+- (BOOL)needToCheckForNewActions;
+- (void)setLibrary:;
+- (void)setNeedToCheckForNewActions:;
+- (id)replayScheduler;
+- (id)actionsToReplay;
+- (void)newActionsAdded;
+- (void)setActionsToReplay:;
+- (void)connectionEstablished;
+- (id)initWithLibrary:account:;
+- (void)_replayAllActions;
+- (id)library;
+- (void).cxx_destruct;
+- (BOOL)replayingActions;
+- (void)_checkForNewActions;
+- (void)addNewAction:;
++ (id)log;
+@end

@@ -1,0 +1,27 @@
+@interface UIKBContainerKeyView : UIKBKeyView
+- (id)factory;
+- (id)keyplane;
+- (void)dimKeys:;
+- (void)setFactory:;
+- (id)renderConfig;
+- (void)displayLayer:;
+- (id)key;
+- (void)setRenderConfig:;
+- (void)setNeedsDisplay;
+- (void)prepareForDisplay;
+- (void).cxx_destruct;
+- (void)setScreenTraits:;
+- (id)initWithFrame:keyplane:key:;
+- (void)updateForKeyplane:key:;
+- (id)layerForRenderFlags:;
+- (id)contentsKeyView;
+- (void)updateKeycapLayerOrientation;
+- (BOOL)hasRendered;
+- (BOOL)requiresSublayers;
+- (long long)imageOrientationForLayer:;
+- (void)changeBackgroundToEnabled;
+- (void)changeBackgroundToActiveIfNecessary;
+- (id)drawFrame;
+- (void)setDrawFrame:;
+- (void)dimContentKeyView:;
+@end

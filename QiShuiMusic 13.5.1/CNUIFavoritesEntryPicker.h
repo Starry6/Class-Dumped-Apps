@@ -1,0 +1,31 @@
+@interface CNUIFavoritesEntryPicker : NSObject
+@property (nonatomic) UIAlertController alertController;
+@property (nonatomic) CNContactActionsController actionsController;
+@property (nonatomic) CNActionMenuHelper actionMenuHelper;
+@property (nonatomic) UIContextMenuInteraction contextMenuInteraction;
+@property (nonatomic) <CNUIFavoritesEntryPickerDelegate> delegate;
+@property (nonatomic) CNContact contact;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setContextMenuInteraction:;
+- (id)initWithContact:;
+- (id)contact;
+- (void)setDelegate:;
+- (id)actionMenuHelper;
+- (id)contextMenuInteraction;
+- (id)viewController;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setActionMenuHelper:;
+- (id)alertController;
+- (void)setAlertController:;
+- (id)actionsController;
+- (id)menuProviderForContextMenuInteraction:;
+- (void)contactActionsController:didSelectAction:;
+- (void)contactActionsController:didUpdateWithMenu:;
+- (void)setActionsController:;
++ (id)log;
++ (id)descriptorForRequiredKeys;
+@end

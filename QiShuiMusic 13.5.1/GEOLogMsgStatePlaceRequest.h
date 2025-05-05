@@ -1,0 +1,32 @@
+@interface GEOLogMsgStatePlaceRequest : PBCodable
+@property (nonatomic) BOOL hasPlaceRequestType;
+@property (nonatomic) NSInteger placeRequestType;
+@property (nonatomic) BOOL hasPlaceDataRequest;
+@property (nonatomic) GEOPDPlaceRequest placeDataRequest;
+- (void)readAll:;
+- (BOOL)hasGreenTeaWithValue:;
+- (void)clearSensitiveFields:;
+- (BOOL)hasPlaceDataRequest;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (int)placeRequestType;
+- (unsigned long long)hash;
+- (void)setHasPlaceRequestType:;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)placeDataRequest;
+- (BOOL)hasPlaceRequestType;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (void)setPlaceDataRequest:;
+- (id)description;
+- (int)StringAsPlaceRequestType:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)placeRequestTypeAsString:;
+- (void)setPlaceRequestType:;
+- (id)copyWithZone:;
++ (BOOL)isValid:;
+@end

@@ -1,0 +1,2 @@
+@interface BattleCancelInviteApiRoot : GPBRootObject
+@end

@@ -1,0 +1,31 @@
+@interface BMSiriQueryResult : NSObject
+@property (nonatomic) NSString qid;
+@property (nonatomic) NSString domain;
+@property (nonatomic) double confidence;
+@property (nonatomic) I dataVersion;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithProtoData:;
+- (double)confidence;
+- (id)proto;
+- (id)json;
+- (id)encodeAsProto;
+- (id)initWithCoder:;
+- (unsigned int)dataVersion;
+- (unsigned long long)hash;
+- (BOOL)isCompleteWithContext:error:;
+- (void)encodeWithCoder:;
+- (id)initWithProto:;
+- (void).cxx_destruct;
+- (BOOL)isValidWithContext:error:;
+- (id)serialize;
+- (id)domain;
+- (id)jsonDict;
+- (BOOL)isEqual:;
+- (id)qid;
+- (id)initWithQID:domain:confidence:;
++ (id)eventWithData:dataVersion:;
++ (BOOL)supportsSecureCoding;
+@end

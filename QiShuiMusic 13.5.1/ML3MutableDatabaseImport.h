@@ -1,0 +1,34 @@
+@interface ML3MutableDatabaseImport : ML3DatabaseImport
+@property (nonatomic) NSString libraryPath;
+@property (nonatomic) NSData trackData;
+@property (nonatomic) NSData playlistData;
+@property (nonatomic) NSFileHandle fileHandle;
+@property (nonatomic) NSString syncAnchor;
+@property (nonatomic) BOOL resetSync;
+@property (nonatomic) BOOL sagaEnabled;
+@property (nonatomic) q storeAccountID;
+@property (nonatomic) q preferredVideoQuality;
+@property (nonatomic) I homeSharingBasePlaylistID;
+@property (nonatomic) BOOL tracksAreLibraryOwnedContent;
+@property (nonatomic) BOOL playlistsAreLibraryOwnedContent;
+@property (nonatomic) BOOL pendingMatch;
+@property (nonatomic) BOOL isServerImport;
+@property (nonatomic) NSString syncLibraryID;
+@property (nonatomic) BOOL suspendable;
+- (void)setFileHandle:;
+- (void)setPreferredVideoQuality:;
+- (void)setSyncAnchor:;
+- (void)setPendingMatch:;
+- (void)setTracksAreLibraryOwnedContent:;
+- (void)setPlaylistsAreLibraryOwnedContent:;
+- (void)setStoreAccountID:;
+- (void)setSyncLibraryID:;
+- (void)setLibraryPath:;
+- (void)setTrackData:;
+- (void)setPlaylistData:;
+- (void)setResetSync:;
+- (void)setSagaEnabled:;
+- (void)setHomeSharingBasePlaylistID:;
+- (void)setIsServerImport:;
+- (void)setSuspendable:;
+@end

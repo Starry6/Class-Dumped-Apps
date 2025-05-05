@@ -1,0 +1,33 @@
+@interface PLBackgroundModelMigration : NSObject
+@property (nonatomic) NSProgress progress;
+@property (nonatomic) PLModelMigratorLog logger;
+@property (nonatomic) NSString migrationUUID;
+@property (nonatomic) @? continuationHandler;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)pathManager;
+- (id)logger;
+- (void)setProgress:;
+- (void)setLogger:;
+- (id)progress;
+- (long long)libraryIdentifier;
+- (void).cxx_destruct;
+- (id)analyticsEventManager;
+- (id)databaseContext;
+- (id)appPrivateData;
+- (id)initBackgroundMigrationWithPhotoLibraryBundle:logger:continuationHandler:;
+- (void)registerBackgroundActionClass:onCondition:;
+- (long long)migrateBackgoundPostProcessingWithError:;
+- (long long)runBackgroundMigrationAction:error:;
+- (void)setMarkerForBackgroundAction:marker:;
+- (BOOL)isMigrationCancelledWithError:;
+- (id)migrationUUID;
+- (void)setMigrationUUID:;
+- (id)continuationHandler;
+- (void)setContinuationHandler:;
++ (BOOL)hasCompletedBackgroundActionClass:pathManager:;
++ (long long)migrateBackgroundActionsWithPhotoLibraryBundle:logger:error:continuationHandler:;
++ (BOOL)isCompletedBackgroundActionClass:appPrivateData:;
+@end

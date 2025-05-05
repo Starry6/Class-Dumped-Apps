@@ -1,0 +1,35 @@
+@interface IESLivePKSpeedAutoMatchViewModel : NSObject
+@property (nonatomic) HTSLivePKApi api;
+@property (nonatomic) <IESLiveRoomServiceAdapter> room;
+@property (nonatomic) IESLiveFixedFontTextSizeCache nameSizeCache;
+@property (nonatomic) IESLiveFixedFontTextSizeCache userTagSizeCache;
+@property (nonatomic) IESLiveFixedFontTextSizeCache roomTagSizeCache;
+@property (nonatomic) NSMutableArray sectionList;
+@property (nonatomic) Q autoMatchStatus;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)fetchInviteeListWithCompletion:;
+- (unsigned long long)autoMatchStatus;
+- (id)initWithRoom:DIContext:;
+- (void)inviteSuccess;
+- (id)nameSizeCache;
+- (void)rejectedByInvitee;
+- (id)roomTagSizeCache;
+- (void)setAutoMatchStatus:;
+- (void)setNameSizeCache:;
+- (void)setRoomTagSizeCache:;
+- (void)setUserTagSizeCache:;
+- (void)setupItem:listType:battleRival:requestID:listNum:;
+- (void)updateInviteeItem;
+- (void)updateViewModelWithResponseData:completion:;
+- (id)userTagSizeCache;
+- (void).cxx_destruct;
+- (id)room;
+- (void)setRoom:;
+- (id)api;
+- (void)setApi:;
+- (id)sectionList;
+- (void)setSectionList:;
+@end

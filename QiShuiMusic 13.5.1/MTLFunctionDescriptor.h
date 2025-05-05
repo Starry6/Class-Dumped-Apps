@@ -1,0 +1,36 @@
+@interface MTLFunctionDescriptor : NSObject
+@property (nonatomic) NSString name;
+@property (nonatomic) NSString specializedName;
+@property (nonatomic) MTLFunctionConstantValues constantValues;
+@property (nonatomic) Q options;
+@property (nonatomic) NSArray binaryArchives;
+- (void)setOptions:;
+- (void)setBinaryArchives:;
+- (id)init;
+- (void)dealloc;
+- (id)pluginData;
+- (void)setName:;
+- (unsigned long long)pipelineOptions;
+- (id)binaryArchives;
+- (id)formattedDescription:;
+- (void)setPluginData:;
+- (void)setPipelineOptions:;
+- (void)setConstantValues:;
+- (void)setSpecializedName:;
+- (unsigned long long)hash;
+- (id)specializedName;
+- (void)setApplyFunctionConstants:;
+- (id)privateFunctions;
+- (id)hashStableWithFunction:;
+- (void)setPrivateFunctions:;
+- (unsigned long long)options;
+- (id)description;
+- (BOOL)applyFunctionConstants;
+- (id)constantValues;
+- (id)name;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
++ (id)allocWithZone:;
++ (id)alloc;
++ (id)functionDescriptor;
+@end

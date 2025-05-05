@@ -1,0 +1,34 @@
+@interface ICMusicSubscriptionCarrierBundlingEligibilityResponse : NSObject
+@property (nonatomic) q carrierBundlingStatusType;
+@property (nonatomic) BOOL familySubscription;
+@property (nonatomic) NSError error;
+@property (nonatomic) NSString SMSSessionIdentifier;
+@property (nonatomic) double delayInterval;
+@property (nonatomic) BOOL wantsDelayedRetry;
+@property (nonatomic) NSString headerEnrichmentMessage;
+@property (nonatomic) NSString headerEnrichmentSessionIdentifier;
+@property (nonatomic) NSURL headerEnrichmentURL;
+@property (nonatomic) BOOL needsHeaderEnrichment;
+@property (nonatomic) BOOL needsSilentSMS;
+@property (nonatomic) NSString silentSMSMessage;
+@property (nonatomic) NSString silentSMSNumber;
+@property (nonatomic) NSString cellularProviderName;
+@property (nonatomic) NSString phoneNumber;
+- (long long)carrierBundlingStatusType;
+- (id)phoneNumber;
+- (id)error;
+- (BOOL)isFamilySubscription;
+- (double)delayInterval;
+- (void).cxx_destruct;
+- (id)initWithEligibilityDictionary:cellularProviderName:phoneNumber:;
+- (id)SMSSessionIdentifier;
+- (BOOL)wantsDelayedRetry;
+- (id)headerEnrichmentMessage;
+- (id)headerEnrichmentSessionIdentifier;
+- (id)headerEnrichmentURL;
+- (BOOL)needsHeaderEnrichment;
+- (BOOL)needsSilentSMS;
+- (id)silentSMSMessage;
+- (id)silentSMSNumber;
+- (id)cellularProviderName;
+@end

@@ -1,0 +1,2 @@
+@interface WebSystemBackdropLayer : CALayer
+@end

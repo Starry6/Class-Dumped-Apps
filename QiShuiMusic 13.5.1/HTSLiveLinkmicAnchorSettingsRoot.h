@@ -1,0 +1,2 @@
+@interface HTSLiveLinkmicAnchorSettingsRoot : GPBRootObject
+@end

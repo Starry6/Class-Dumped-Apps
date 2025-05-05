@@ -1,0 +1,30 @@
+@interface TTDiggScoreFeedBackView : UIView
+@property (nonatomic) BOOL isShowing;
+@property (nonatomic) UIWindow backWindow;
+@property (nonatomic) UIWindow originWindow;
+@property (nonatomic) TTScoreGuideViewController rootVC;
+@property (nonatomic) <TTDiggScoreFeedBackViewDelegate> delegate;
+@property (nonatomic) <TTAppStoreStarDefaultUICustomDelegate> defaultUICustomDelegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)backWindow;
+- (id)defaultUICustomDelegate;
+- (id)originWindow;
+- (id)rootVC;
+- (void)scoreGuideViewControllerDidClickedCancelButton:;
+- (void)scoreGuideViewControllerDidClickedDownButton:;
+- (void)scoreGuideViewControllerDidClickedUpButton:;
+- (void)setBackWindow:;
+- (void)setDefaultUICustomDelegate:;
+- (void)setIsShowing:;
+- (void)setOriginWindow:;
+- (void)setRootVC:;
+- (BOOL)isShowing;
+- (void)setDelegate:;
+- (void)show;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)dismissFinished:;
+@end

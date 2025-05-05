@@ -1,0 +1,35 @@
+@interface IESECStoreListView : UIView
+@property (nonatomic) UIImageView storeListPicImageView;
+@property (nonatomic) UILabel storeListNameLabel;
+@property (nonatomic) UIImageView arrowImageView;
+@property (nonatomic) double lastPercent;
+@property (nonatomic) IESECStoreListViewModel viewModel;
+@property (nonatomic) <IESECStoreListViewDelegate> delegate;
+@property (nonatomic) {UIEdgeInsets=dddd} edgeInsets;
+@property (nonatomic) Q style;
+- (void)setLastPercent:;
+- (void)updateListViewWithFlagShipStyle;
+- (double)lastPercent;
+- (void)p_bindViewModel:;
+- (void)setStoreListNameLabel:;
+- (void)setStoreListPicImageView:;
+- (id)storeListNameLabel;
+- (id)storeListPicImageView;
+- (void)tapStoreListView;
+- (void)updateListViewWithPercent:;
+- (void)updateListViewWithStyle:;
+- (void)setEdgeInsets:;
+- (id)viewModel;
+- (void)setDelegate:;
+- (void)setStyle:;
+- (id)edgeInsets;
+- (id)initWithFrame:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (unsigned long long)style;
+- (void)setViewModel:;
+- (void)setupViews;
+- (id)initWithFrame:viewModel:;
+- (id)arrowImageView;
+- (void)setArrowImageView:;
+@end

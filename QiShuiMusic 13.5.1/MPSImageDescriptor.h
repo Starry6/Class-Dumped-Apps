@@ -1,0 +1,38 @@
+@interface MPSImageDescriptor : NSObject
+@property (nonatomic) Q featureChannelsLayout;
+@property (nonatomic) Q width;
+@property (nonatomic) Q height;
+@property (nonatomic) Q featureChannels;
+@property (nonatomic) Q numberOfImages;
+@property (nonatomic) Q pixelFormat;
+@property (nonatomic) Q channelFormat;
+@property (nonatomic) Q cpuCacheMode;
+@property (nonatomic) Q storageMode;
+@property (nonatomic) Q usage;
+- (id)debugQuickLookObject;
+- (unsigned long long)usage;
+- (id)init;
+- (unsigned long long)storageMode;
+- (void)setStorageMode:;
+- (unsigned long long)cpuCacheMode;
+- (unsigned long long)featureChannelsLayout;
+- (void)setCpuCacheMode:;
+- (void)setWidth:;
+- (void)setFeatureChannelsLayout:;
+- (id)debugDescription;
+- (unsigned long long)height;
+- (unsigned long long)width;
+- (void)setHeight:;
+- (void)setUsage:;
+- (unsigned long long)numberOfImages;
+- (unsigned long long)pixelFormat;
+- (unsigned long long)featureChannels;
+- (id)copyWithZone:;
+- (void)setNumberOfImages:;
+- (void)setFeatureChannels:;
+- (void)setChannelFormat:;
+- (id)newTextureDescriptor;
+- (unsigned long long)channelFormat;
++ (id)imageDescriptorWithChannelFormat:width:height:featureChannels:numberOfImages:usage:;
++ (id)imageDescriptorWithChannelFormat:width:height:featureChannels:;
+@end

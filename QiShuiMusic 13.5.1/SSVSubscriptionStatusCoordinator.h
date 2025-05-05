@@ -1,0 +1,32 @@
+@interface SSVSubscriptionStatusCoordinator : NSObject
+@property (nonatomic) SSVSubscriptionStatus lastKnownStatus;
+- (id)init;
+- (void)dealloc;
+- (void)_handleRequestResponseWithStatus:isFinal:error:;
+- (void)_validateLastKnownStatus;
+- (void)_invalidateLastKnownStatus;
+- (id)_copyStatusDateFromUserDefaults;
+- (void)_fireStatusBlocksWithStatus:isFinal:error:;
+- (void)_updateSubscriptionStatusAccessPolicyAllowingNotification:;
+- (void)_accountStoreChangedNotification;
+- (void)_deviceStoreFrontChangedNotification;
+- (id)_copyStatusFromUserDefaults;
+- (void).cxx_destruct;
+- (void)_externalChangeNotification;
+- (id)_copyValidStatusForStatus:;
+- (void)reset;
+- (id)lastKnownStatus;
+- (void)modifyLastKnownStatusUsingBlock:;
+- (void)getStatusWithOptions:statusBlock:;
++ (void)beginSuspendingSubscriptionStatusChangeNotifications;
++ (void)sendChangeNotification;
++ (id)copyStatusFromUserDefaults;
++ (void)_sendChangeNotification;
++ (id)_existingSharedCoordinator;
++ (void)removeUserDefaultsForAccountIdentifier:;
++ (void)endSuspendingSubscriptionStatusChangeNotifications;
++ (void)updateUserDefaultsWithStatus:;
++ (void)updateWithResponseDictionary:accountIdentifier:;
++ (id)_changeNotificationSuspensionAccessQueue;
++ (id)sharedCoordinator;
+@end

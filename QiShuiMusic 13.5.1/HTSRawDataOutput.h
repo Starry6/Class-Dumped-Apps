@@ -1,0 +1,33 @@
+@interface HTSRawDataOutput : NSObject
+@property (nonatomic) * rawBytesForImage;
+@property (nonatomic) @? newFrameAvailableBlock;
+@property (nonatomic) BOOL enabled;
+@property (nonatomic) HTSGLContext context;
+@property (nonatomic) NSString route;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)shouldIgnoreUpdatesToThisTarget;
+- (unsigned long long)bytesPerRowInOutput;
+- (void)endProcessing;
+- (id)initWithImageSize:resultsInBGRAFormat:;
+- (id)initWithImageSize:resultsInBGRAFormat:context:;
+- (id)maximumOutputSize;
+- (id)newFrameAvailableBlock;
+- (void)newFrameReadyAtTime:atIndex:exceptionBlock:;
+- (long long)nextAvailableTextureIndex;
+- (char *)rawBytesForImage;
+- (void)setInputFramebuffer:atIndex:;
+- (void)setInputRotation:atIndex:;
+- (void)setInputSize:atIndex:;
+- (void)setNewFrameAvailableBlock:;
+- (BOOL)wantsMonochromeInput;
+- (id)context;
+- (BOOL)enabled;
+- (id)route;
+- (id)pixelBuffer;
+- (void)setEnabled:;
+- (void).cxx_destruct;
+- (void)setImageSize:;
+@end

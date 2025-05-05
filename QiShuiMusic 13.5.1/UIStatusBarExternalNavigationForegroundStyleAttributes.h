@@ -1,0 +1,2 @@
+@interface UIStatusBarExternalNavigationForegroundStyleAttributes : UIStatusBarExternalForegroundStyleAttributes
+@end

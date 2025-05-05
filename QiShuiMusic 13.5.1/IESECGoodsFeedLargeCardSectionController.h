@@ -1,0 +1,37 @@
+@interface IESECGoodsFeedLargeCardSectionController : IGListSectionController
+@property (nonatomic) BOOL fullMode;
+@property (nonatomic) BOOL isActivatedStyleChange;
+@property (nonatomic) Q listStyle;
+@property (nonatomic) IESECGoodsFeedLargeCardViewModel viewModel;
+@property (nonatomic) q resourceCardBeyondRecommendCount;
+@property (nonatomic) q goodsCardCount;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)_exposedMessageForParameters:;
+- (id)_indemnificationMessageWithParams:;
+- (id)cellForItemAtIndex:;
+- (void)didUpdateToObject:;
+- (long long)goodsCardCount;
+- (BOOL)isActivatedStyleChange;
+- (void)listAdapter:sectionControllerDidExitWorkingRange:;
+- (void)listAdapter:sectionControllerWillEnterWorkingRange:;
+- (long long)resourceCardBeyondRecommendCount;
+- (void)setFullMode:;
+- (void)setGoodsCardCount:;
+- (void)setIsActivatedStyleChange:;
+- (void)setResourceCardBeyondRecommendCount:;
+- (id)sizeForSupplementaryViewOfKind:atIndex:;
+- (id)supplementaryViewSource;
+- (id)supportedElementKinds;
+- (id)viewForSupplementaryElementOfKind:atIndex:;
+- (id)workingRangeDelegate;
+- (long long)numberOfItems;
+- (id)viewModel;
+- (BOOL)fullMode;
+- (void).cxx_destruct;
+- (unsigned long long)listStyle;
+- (void)setListStyle:;
+- (id)sizeForItemAtIndex:;
+@end

@@ -1,0 +1,2 @@
+@interface AVTimeFormatterInternal : NSObject
+@end

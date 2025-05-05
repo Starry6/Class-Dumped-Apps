@@ -1,0 +1,38 @@
+@interface VNRequestSpecifier : NSObject
+@property (nonatomic) NSArray allModelEquivalents;
+@property (nonatomic) I requestClassCode;
+@property (nonatomic) BOOL observationProvidesBoundsNormalizedToROI;
+@property (nonatomic) Q requestRevision;
+@property (nonatomic) NSString requestClassName;
+- (id)requestClassName;
+- (BOOL)specifiesAnyRequestClassName:;
+- (id)initWithRequestClass:name:code:revision:;
+- (BOOL)specifiesRequestClass:revision:;
+- (Class)requestClassAndReturnError:;
+- (BOOL)observationProvidesBoundsNormalizedToROI;
+- (BOOL)hasModelEquivalencyToRequestSpecifier:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (BOOL)specifiesRequestClassName:;
+- (unsigned long long)requestRevision;
+- (BOOL)specifiesRequestClass:;
+- (BOOL)specifiesRequestClassName:withAnyRevision:;
+- (void).cxx_destruct;
+- (BOOL)specifiesAnyRequestClass:;
+- (BOOL)specifiesRequestClassName:revision:;
+- (id)allModelEquivalents;
+- (id)description;
+- (unsigned int)requestClassCode;
+- (BOOL)specifiesRequestClass:withAnyRevision:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
++ (id)specifierForRequestClassName:revision:error:;
++ (BOOL)supportsSecureCoding;
++ (void)registerModelEquivalencyOf:to:;
++ (void)registerRequestClass:revision:modelEquivalencyToRevision:;
++ (id)specifierForRequestClass:revision:error:;
++ (id)specifierForRequest:;
++ (void)registerRequestClassName:revision:modelEquivalencyToRevision:;
++ (id)specifierForRequestClassCode:revision:error:;
+@end

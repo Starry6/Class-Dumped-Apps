@@ -1,0 +1,34 @@
+@interface GEORPLocalityFeedback : PBCodable
+@property (nonatomic) BOOL hasPlace;
+@property (nonatomic) GEOPDPlace place;
+@property (nonatomic) BOOL hasPlaceRequest;
+@property (nonatomic) GEOPDPlaceRequest placeRequest;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (BOOL)hasGreenTeaWithValue:;
+- (id)init;
+- (void)clearSensitiveFields:;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)setPlaceRequest:;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)place;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (BOOL)hasPlaceRequest;
+- (id)description;
+- (void)setPlace:;
+- (id)placeRequest;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (BOOL)hasPlace;
+- (id)copyWithZone:;
++ (BOOL)isValid:;
+@end

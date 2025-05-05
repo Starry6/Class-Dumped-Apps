@@ -1,0 +1,24 @@
+@interface WCTTransaction : WCTInterface
+- (BOOL)runTransaction:;
+- (BOOL)addColumn:forTable:;
+- (BOOL)createIndexOfName:withIndexList:forTable:;
+- (BOOL)createTableAndIndexesOfName:withClass:;
+- (BOOL)createTableOfName:withColumnDefList:;
+- (BOOL)createTableOfName:withColumnDefList:andConstraintList:;
+- (BOOL)createVirtualTableOfName:usingModule:withClass:;
+- (BOOL)createVirtualTableOfName:withClass:;
+- (BOOL)dropIndexOfName:;
+- (BOOL)dropTableOfName:;
+- (id)initWithCore:;
+- (BOOL)isTableExists:;
+- (BOOL)runTransaction:event:;
+- (void)setStatisticsEnabled:;
+- (BOOL)commit;
+- (BOOL)rollback;
+- (double)cost;
+- (id)error;
+- (int)changes;
+- (void).cxx_destruct;
+- (BOOL)begin;
+- (id).cxx_construct;
+@end

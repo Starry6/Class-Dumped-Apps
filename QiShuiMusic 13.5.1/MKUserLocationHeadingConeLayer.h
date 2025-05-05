@@ -1,0 +1,31 @@
+@interface MKUserLocationHeadingConeLayer : CAGradientLayer
+@property (nonatomic) double minimumAccuracyRadius;
+@property (nonatomic) UITraitCollection traitCollection;
+@property (nonatomic) Q mapType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setTraitCollection:;
+- (void)setMapType:;
+- (unsigned long long)mapType;
+- (void)updateHeading:;
+- (id)initWithUserLocationView:shouldMatchAccuracyRadius:minimumPresentationAngle:;
+- (id)traitCollection;
+- (id)_colorsForAccuracyRadius:;
+- (void)animateToSetVisible:completion:;
+- (void)_updateHeadingMaskForAccuracy:previousAccuracy:;
+- (void)setMinimumAccuracyRadius:;
+- (void)updateHeadingAccuracy:previousAccuracy:;
+- (id)_accuracyGradientLocationsForAccuracyRadius:;
+- (void)updateTintColor:;
+- (void)setAccuracyRadius:duration:;
+- (double)minimumAccuracyRadius;
+- (double)_opacityForAccuracy:locationAccuracy:;
+- (void)_updateShowHeadingForAccuracy:;
+- (void).cxx_destruct;
+- (void)_animateToOpacity:completion:;
+- (BOOL)_shouldShowHeadingForAccuracy:;
+- (void)_updateColors;
+- (void)_createMaskLayer;
+@end

@@ -1,0 +1,2 @@
+@interface IESLiveLinkmicProfitEggRoot : GPBRootObject
+@end

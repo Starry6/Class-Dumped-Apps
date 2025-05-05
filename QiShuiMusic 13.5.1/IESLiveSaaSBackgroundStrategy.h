@@ -1,0 +1,30 @@
+@interface IESLiveSaaSBackgroundStrategy : NSObject
+@property (nonatomic) BOOL valid;
+@property (nonatomic) q resType;
+@property (nonatomic) BOOL shouldGauss;
+@property (nonatomic) NSArray backgroundImgUrl;
+@property (nonatomic) UIImage localImg;
+@property (nonatomic) UIImage placeHolderImg;
+@property (nonatomic) IESLiveSaaSLiveRoomModel room;
+@property (nonatomic) NSArray horizontalBackgroundImgUrl;
+- (void)setShouldGauss:;
+- (long long)resType;
+- (id)backgroundImgUrl;
+- (id)horizontalBackgroundImgUrl;
+- (BOOL)isSameImgUrls:andUrls:;
+- (id)localImg;
+- (id)placeHolderImg;
+- (void)setBackgroundImgUrl:;
+- (void)setHorizontalBackgroundImgUrl:;
+- (void)setLocalImg:;
+- (void)setPlaceHolderImg:;
+- (void)setResType:;
+- (BOOL)shouldGauss;
+- (void)setValid:;
+- (unsigned long long)hash;
+- (BOOL)isValid;
+- (void).cxx_destruct;
+- (BOOL)isEqual:;
+- (id)room;
+- (void)setRoom:;
+@end

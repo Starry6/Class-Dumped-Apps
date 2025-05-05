@@ -1,0 +1,37 @@
+@interface IESECGoodsFeedTopicModel : MTLModel
+@property (nonatomic) IESECGoodsFeedTagModel tagModel;
+@property (nonatomic) NSString ID;
+@property (nonatomic) NSString name;
+@property (nonatomic) IESECURLModel icon;
+@property (nonatomic) NSString urlScheme;
+@property (nonatomic) NSString propertyID;
+@property (nonatomic) NSString propertyName;
+@property (nonatomic) NSString type;
+@property (nonatomic) NSString info;
+@property (nonatomic) NSString categoryID;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setPropertyID:;
+- (id)tagModel;
+- (void)setID:;
+- (id)ID;
+- (id)propertyName;
+- (void)setName:;
+- (void)setInfo:;
+- (id)icon;
+- (void)setType:;
+- (id)categoryID;
+- (void)setCategoryID:;
+- (id)type;
+- (void)setIcon:;
+- (void).cxx_destruct;
+- (id)info;
+- (id)name;
+- (id)urlScheme;
+- (void)setPropertyName:;
+- (void)setUrlScheme:;
+- (id)propertyID;
++ (id)JSONKeyPathsByPropertyKey;
+@end

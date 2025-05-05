@@ -1,0 +1,32 @@
+@interface AWEIMSendMessageContainer : NSObject
+@property (nonatomic) BOOL finish;
+@property (nonatomic) NSSet otherUserIDs;
+@property (nonatomic) NSArray messages;
+@property (nonatomic) NSString toSessionID;
+@property (nonatomic) AWEIMSendMessageAttachmentObject attachment;
+@property (nonatomic) BOOL needShowToast;
+@property (nonatomic) BOOL needCreatNewChat;
+@property (nonatomic) AWEShareContext shareContext;
+@property (nonatomic) NSDictionary saas_track_params;
+- (void)setToSessionID:;
+- (BOOL)needCreatNewChat;
+- (BOOL)needShowToast;
+- (id)otherUserIDs;
+- (id)saas_track_params;
+- (void)setNeedCreatNewChat:;
+- (void)setNeedShowToast:;
+- (void)setOtherUserIDs:;
+- (void)setSaas_track_params:;
+- (void)setShareContext:;
+- (id)shareContext;
+- (id)toSessionID;
+- (id)messages;
+- (BOOL)finish;
+- (void).cxx_destruct;
+- (void)setMessages:;
+- (id)attachment;
+- (void)setAttachment:;
+- (void)setFinish:;
++ (id)instanceWithSessionID:messages:;
++ (id)instanceWithUserID:messages:;
+@end

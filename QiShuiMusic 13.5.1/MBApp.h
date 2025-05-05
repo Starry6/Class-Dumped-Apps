@@ -1,0 +1,35 @@
+@interface MBApp : MBContainer
+@property (nonatomic) NSString bundleID;
+@property (nonatomic) NSString bundleVersion;
+@property (nonatomic) NSString bundleDir;
+@property (nonatomic) NSDictionary entitlements;
+@property (nonatomic) NSString entitlementsRelativePath;
+@property (nonatomic) NSArray groups;
+@property (nonatomic) NSArray plugins;
+@property (nonatomic) NSArray containers;
+@property (nonatomic) BOOL isPlaceholder;
+@property (nonatomic) BOOL isSystemApp;
+@property (nonatomic) BOOL isAppUpdating;
+- (id)containers;
+- (id)bundleVersion;
+- (id)entitlements;
+- (BOOL)isPlaceholder;
+- (id)groups;
+- (BOOL)isSystemApp;
+- (id)domain;
+- (id)bundleID;
+- (id)plugins;
+- (id)bundleDir;
+- (void)setBundleDir:;
+- (id)entitlementsRelativePath;
+- (BOOL)isAppUpdating;
+- (id)_placeholderRelativePathsToBackupAndRestoreWithCache:;
+- (id)_resourceRelativePathsToBackupAndRestoreForRootDir:relativePath:;
+- (id)placeholderDomainWithCache:;
+- (BOOL)_writeDeviceAppropriateIconToPath:fromBundlePath:;
+- (id)zipPlaceholderDomainWithDirectory:;
++ (id)appWithBundleID:;
++ (id)appWithPropertyList:;
++ (id)safeHarborWithPath:;
++ (BOOL)unzipPlaceholderDomainZipFile:atDirectory:temporaryPath:;
+@end

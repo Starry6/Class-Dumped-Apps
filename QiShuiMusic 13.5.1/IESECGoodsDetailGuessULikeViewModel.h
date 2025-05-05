@@ -1,0 +1,31 @@
+@interface IESECGoodsDetailGuessULikeViewModel : IESECGoodsDetailPageBaseViewModel
+@property (nonatomic) BOOL showGul;
+@property (nonatomic) BOOL isInvalidProduct;
+@property (nonatomic) UIScrollView recommendScrollView;
+@property (nonatomic) IESECMallRecommendView recommendView;
+@property (nonatomic) BOOL manualClickRecommendView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)showGul;
+- (BOOL)isInvalidProduct;
+- (void)listAdapter:didEndDisplayingSectionController:cell:atIndex:;
+- (void)listAdapter:willDisplaySectionController:cell:atIndex:;
+- (BOOL)manualClickRecommendView;
+- (void)preloadRecommendView;
+- (id)recommendScrollView;
+- (void)recommendScrollViewDidCreated:;
+- (id)recommendView;
+- (void)recommendView:finishRefreshMainList:error:;
+- (id)recommendViewCurrentRouterParam:;
+- (BOOL)recommendViewIsDarkMode:;
+- (void)setIsInvalidProduct:;
+- (void)setManualClickRecommendView:;
+- (void)setRecommendScrollView:;
+- (void)setRecommendView:;
+- (void)setShowGul:;
+- (void)setupCurrentViewSize;
+- (id)viewPortOnWindow;
+- (void).cxx_destruct;
+@end

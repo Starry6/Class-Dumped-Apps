@@ -1,0 +1,2 @@
+@interface CNDelaySubscriptionCancelationToken : CNCancelationToken
+@end

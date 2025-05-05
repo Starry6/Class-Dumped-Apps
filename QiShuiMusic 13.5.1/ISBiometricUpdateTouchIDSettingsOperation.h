@@ -1,0 +1,35 @@
+@interface ISBiometricUpdateTouchIDSettingsOperation : ISOperation
+@property (nonatomic) NSNumber accountIdentifier;
+@property (nonatomic) NSString attestationStringPurchase;
+@property (nonatomic) NSString attestationStringExtendedActions;
+@property (nonatomic) ISBiometricStore biometricStore;
+@property (nonatomic) NSArray certChainPrimary;
+@property (nonatomic) NSArray certChainExtended;
+@property (nonatomic) BOOL regeneratePublicKey;
+@property (nonatomic) @? resultBlock;
+@property (nonatomic) BOOL shouldSuppressAuthPrompts;
+@property (nonatomic) q status;
+- (void)setAccountIdentifier:;
+- (id)accountIdentifier;
+- (void)run;
+- (id)resultBlock;
+- (void)setResultBlock:;
+- (void).cxx_destruct;
+- (long long)status;
+- (id)initWithAccountIdentifier:;
+- (id)biometricStore;
+- (void)setBiometricStore:;
+- (id)_newUpdateTouchIDSettingsOperation;
+- (BOOL)regeneratePublicKey;
+- (void)setRegeneratePublicKey:;
+- (BOOL)shouldSuppressAuthPrompts;
+- (void)setShouldSuppressAuthPrompts:;
+- (id)attestationStringPurchase;
+- (void)setAttestationStringPurchase:;
+- (id)attestationStringExtendedActions;
+- (void)setAttestationStringExtendedActions:;
+- (id)certChainPrimary;
+- (void)setCertChainPrimary:;
+- (id)certChainExtended;
+- (void)setCertChainExtended:;
+@end

@@ -1,0 +1,33 @@
+@interface VKAnalyticsEvent : NSObject
+@property (nonatomic) NSString bundleIdentifier;
+@property (nonatomic) BOOL isPerformingAutomatedTest;
+@property (nonatomic) q type;
+@property (nonatomic) NSDate date;
+@property (nonatomic) VKAnalyticsAnalyzerEvent analyzerEvent;
+@property (nonatomic) VKAnalyticsTextEvent textEvent;
+@property (nonatomic) VKAnalyticsDDEvent ddEvent;
+@property (nonatomic) VKAnalyticsMRCEvent mrcEvent;
+@property (nonatomic) VKAnalyticsInteractionEvent interactionEvent;
+@property (nonatomic) VKAnalyticsVisualSearchEvent visualSearchEvent;
+@property (nonatomic) VKAnalyticsQuickActionEvent quickActionEvent;
+@property (nonatomic) VKAnalyticsSubjectEvent subjectEvent;
+@property (nonatomic) VKAnalyticsDataScannerEvent dataScannerEvent;
+- (id)bundleIdentifier;
+- (id)eventKey;
+- (id)date;
+- (void)setBundleIdentifier:;
+- (long long)type;
+- (id)initWithCustomIdentifier:;
+- (id)coreAnalyticsDictionary;
+- (void).cxx_destruct;
+- (BOOL)isPerformingAutomatedTest;
+- (id)analyzerEvent;
+- (id)textEvent;
+- (id)ddEvent;
+- (id)mrcEvent;
+- (id)quickActionEvent;
+- (id)interactionEvent;
+- (id)visualSearchEvent;
+- (id)subjectEvent;
+- (id)dataScannerEvent;
+@end

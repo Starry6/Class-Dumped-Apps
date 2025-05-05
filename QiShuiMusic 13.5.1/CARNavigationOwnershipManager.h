@@ -1,0 +1,30 @@
+@interface CARNavigationOwnershipManager : NSObject
+@property (nonatomic) NSXPCConnection connection;
+@property (nonatomic) BOOL ownershipRequested;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) <CARNavigationOwnershipManagerDelegate> delegate;
+@property (nonatomic) Q owner;
+@property (nonatomic) NSString lastNavigatingBundleIdentifier;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)_setupConnection;
+- (void)setOwnershipRequested:;
+- (void)setDelegate:;
+- (id)identifier;
+- (BOOL)ownershipRequested;
+- (unsigned long long)owner;
+- (id)lastNavigatingBundleIdentifier;
+- (void)releaseNavigationOwnership;
+- (void)navigationOwnershipChangedTo:;
+- (void)_handleConnectionReset;
+- (id)initWithIdentifier:delegate:;
+- (void)requestNavigationOwnership;
+- (id)delegate;
+- (id)connection;
+- (void).cxx_destruct;
+- (void)setConnection:;
+- (void)invalidate;
+- (void)setIdentifier:;
+@end

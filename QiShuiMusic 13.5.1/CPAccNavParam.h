@@ -1,0 +1,30 @@
+@interface CPAccNavParam : NSObject
+@property (nonatomic) NSString property;
+@property (nonatomic) NSArray keys;
+@property (nonatomic) # collectionGeneric;
+@property (nonatomic) BOOL encodeable;
+@property (nonatomic) # objcType;
+@property (nonatomic) CPAccNavParamKey primaryKey;
+- (void)setProperty:;
+- (id)init;
+- (id)keys;
+- (id)property;
+- (id)primaryKey;
+- (void)setKeys:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)copyWithZone:;
+- (id)copySettingCollectionGeneric:;
+- (id)copySettingEncodeable:;
+- (Class)collectionGeneric;
+- (void)setCollectionGeneric:;
+- (BOOL)encodeable;
+- (void)setEncodeable:;
+- (Class)objcType;
+- (void)setObjcType:;
+- (void)configureTypesForUpdate:;
++ (id)paramWithProperty:keys:;
++ (Class)_objcTypeForUpdate:parameter:;
++ (long long)_accNavTypeForUpdate:parameter:key:;
++ (id)_encodedTypeForClass:property:;
+@end

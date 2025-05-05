@@ -1,0 +1,35 @@
+@interface IESLiveSaaSRichTextLabel : UILabel
+@property (nonatomic) NSArray currentPieces;
+@property (nonatomic) BOOL enableAnimatedImage;
+@property (nonatomic) BOOL hasAnimatedPiece;
+@property (nonatomic) NSMutableArray completePieces;
+@property (nonatomic) NSString currentTag;
+@property (nonatomic) @? completion;
+@property (nonatomic) @? textUpdateBlock;
+- (id)imageFromCache:;
+- (id)textUpdateBlock;
+- (id)attachmentFromAnimatedImage:liveImage:font:;
+- (id)attachmentFromImage:liveImage:font:;
+- (id)completePieces;
+- (id)currentPieces;
+- (void)downloadImage:isAnimated:tag:;
+- (BOOL)enableAnimatedImage;
+- (BOOL)hasAnimatedPiece;
+- (BOOL)isAllPiecesLoaded;
+- (void)setCompletePieces:;
+- (void)setCurrentPieces:;
+- (void)setEnableAnimatedImage:;
+- (void)setHasAnimatedPiece:;
+- (void)setPieces:;
+- (void)setPieces:completion:;
+- (void)setTextUpdateBlock:;
+- (void)updatePiecesWithDownloadImage:tag:;
+- (void)updateRichTextWithImage:isAnimated:tag:;
+- (id)completion;
+- (void)setCompletion:;
+- (void)setAttributedText:;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (id)currentTag;
+- (void)setCurrentTag:;
+@end

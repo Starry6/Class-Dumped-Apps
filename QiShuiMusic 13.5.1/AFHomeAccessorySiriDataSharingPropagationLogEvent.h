@@ -1,0 +1,32 @@
+@interface AFHomeAccessorySiriDataSharingPropagationLogEvent : NSObject
+@property (nonatomic) NSDate date;
+@property (nonatomic) NSString accessoryIdentifier;
+@property (nonatomic) q propagationEvent;
+@property (nonatomic) NSString propagationEventReason;
+@property (nonatomic) NSString associatedChangeLogEventIdentifier;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (id)buildDictionaryRepresentation;
+- (id)mutatedCopyWithMutator:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)initWithDictionaryRepresentation:;
+- (id)_descriptionWithIndent:;
+- (id)date;
+- (id)initWithBuilder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)initWithDate:accessoryIdentifier:propagationEvent:propagationEventReason:associatedChangeLogEventIdentifier:;
+- (id)accessoryIdentifier;
+- (long long)propagationEvent;
+- (id)propagationEventReason;
+- (id)associatedChangeLogEventIdentifier;
++ (id)newWithBuilder:;
++ (BOOL)supportsSecureCoding;
+@end

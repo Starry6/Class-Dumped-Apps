@@ -1,0 +1,34 @@
+@interface IMLogDump : NSObject
+@property (nonatomic) NSObject<OS_dispatch_queue> logDumpQueue;
+@property (nonatomic) BOOL shouldCollectPowerWifiStats;
+- (id)init;
+- (id)_dictionaryForDayKey:;
+- (void)_includeCloudKitDebugFilesAtPath:;
+- (id)_predicateToAppend:;
+- (BOOL)_isOnPower;
+- (double)_calculateMinutesSyncingWithDurationKey:attemptDateKey:;
+- (BOOL)shouldCollectPowerWifiStats;
+- (id)logDumpQueue;
+- (void)_compressAndDeleteFilesAtPath:destinationFilePath:withCompletion:;
+- (void)printSyncDurationStats;
+- (void)_calculateConnectedMinutesForDateKey:durationKey:daysDictionary:totalDurationDictionary:totalDurationKey:;
+- (void)clearSyncStats;
+- (void)_incrementSyncAttemptsWithKey:syncDateKey:;
+- (BOOL)_isWifiUsable;
+- (id)logShowCommandToFilePath:lastHours:predicate:;
+- (void)printPowerAndWifiStats;
+- (void)incrementCoreDuetSyncAttempts;
+- (void).cxx_destruct;
+- (void)noteAHDASyncEnded;
+- (void)_noteSyncEndedForDurationKey:dateKey:;
+- (void)incrementAHDASyncAttempts;
+- (id)_calculatePowerAndWifiConnectedTimeInMinutesForDictionary:;
+- (void)printIfWeAreInTheMiddleOfASync;
+- (id)_lastHoursToAppend:;
+- (void)dumpLogsToFolderAtPath:withFileName:lastHours:predicate:includeCKDebug:withCompletion:;
+- (BOOL)_checkArgumentValidity:withFileName:withPredicate:withError:;
+- (id)createTodaysStatisticDictionaryIfNeeded;
+- (void)dumpMOCLoggingMetaData;
+- (void)noteCoreDuetSyncEnded;
++ (id)sharedInstance;
+@end

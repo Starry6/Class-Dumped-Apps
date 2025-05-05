@@ -1,0 +1,35 @@
+@interface PLSharedStreamsDataStore : PLResourceDataStore
+@property (nonatomic) PLPhotoLibraryPathManager pathManager;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)_utiStringForAsset:type:;
+- (BOOL)storeExternalResource:forAsset:options:error:resultingResource:;
+- (id)_sharedStreamsExternalResourceForAsset:album:type:;
+- (short)_localAvailabilityForAsset:album:type:;
+- (id)resourceURLForKey:assetID:;
+- (short)_cloudSharedAssetPlaceholderKindFromSharedStreamsResourceType:;
+- (unsigned int)_mainResourceTypeForAsset:;
+- (id)expectedFileURLForResource:asset:;
+- (void)requestStreamingURLForResource:asset:intent:timeRange:streamingHints:inContext:clientBundleID:completion:;
+- (id)virtualResourcesForAsset:;
+- (id)requiredExternalResourcesForMigratingOrImportingAsset:;
+- (id)descriptionForSubtype:;
+- (BOOL)dataStoreSubtypeIsDownloadable:;
+- (void)_prepareForDownloadNotification:atFileURL:completion:;
+- (BOOL)_isDerivativeForSharedStreamsType:;
+- (id)name;
+- (id)resourceDataForKey:assetID:;
+- (BOOL)videoResource:matchesOrExceedsQualityLevel:;
+- (id)keyFromKeyStruct:;
+- (id)requestLocalAvailabilityChange:forResource:options:completion:;
+- (BOOL)canStreamResource:;
+- (BOOL)canStoreExternalResource:;
+- (id)updateDerivativeResourcesForAsset:forLifecycleEvent:;
+- (short)_remoteAvailabilityForType:;
++ (unsigned short)storeClassID;
++ (id)supportedRecipes;
++ (unsigned int)_masterThumbRecipeID;
++ (unsigned short)keyLengthWithDataPreview:;
+@end

@@ -1,0 +1,34 @@
+@interface CJPayBaseListViewModel : NSObject
+@property (nonatomic) CJPayCommonListViewController viewController;
+@property (nonatomic) # viewClass;
+@property (nonatomic) CJPayBaseListCellView cell;
+@property (nonatomic) double viewHeight;
+@property (nonatomic) double topMarginHeight;
+@property (nonatomic) double bottomMarginHeight;
+@property (nonatomic) UIColor topMarginColor;
+@property (nonatomic) UIColor bottomMarginColor;
+- (double)topMarginHeight;
+- (id)bottomMarginColor;
+- (double)bottomMarginHeight;
+- (id)getBottomMarginColor;
+- (double)getBottomMarginHeight;
+- (id)getTopMarginColor;
+- (double)getTopMarginHeight;
+- (Class)getViewClass;
+- (double)getViewHeight;
+- (void)setBottomMarginColor:;
+- (void)setBottomMarginHeight:;
+- (void)setTopMarginHeight:;
+- (void)setViewHeight:;
+- (void)setViewController:;
+- (id)viewController;
+- (Class)viewClass;
+- (void).cxx_destruct;
+- (id)initWithViewController:;
+- (id)cell;
+- (void)setCell:;
+- (double)viewHeight;
+- (void)setViewClass:;
+- (id)topMarginColor;
+- (void)setTopMarginColor:;
+@end

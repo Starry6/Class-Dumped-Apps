@@ -1,0 +1,35 @@
+@interface IESLivePKSearchView : UIView
+@property (nonatomic) UIImageView searchBackgroundView;
+@property (nonatomic) UIImageView searchGuideImage;
+@property (nonatomic) UILabel guidanceLabel;
+@property (nonatomic) UIImageView historyHintImageView;
+@property (nonatomic) UIVisualEffectView effectView;
+@property (nonatomic) IESLivePKSearchViewConfig config;
+@property (nonatomic) @? beginEditBlock;
+@property (nonatomic) @? clickHistoryBlock;
+@property (nonatomic) BOOL editing;
+- (id)beginEditBlock;
+- (id)clickHistoryBlock;
+- (id)guidanceLabel;
+- (id)historyHintImageView;
+- (id)initWithFrame:config:;
+- (id)searchGuideImage;
+- (void)setBeginEditBlock:;
+- (void)setClickHistoryBlock:;
+- (void)setGuidanceLabel:;
+- (void)setHistoryHintImageView:;
+- (void)setSearchGuideImage:;
+- (void)showPKRecordVC;
+- (void)updateWithSearchModel:isActivity:;
+- (id)effectView;
+- (void)touchesBegan:withEvent:;
+- (void)setConfig:;
+- (void)setEditing:;
+- (id)searchBackgroundView;
+- (void)setSearchBackgroundView:;
+- (void).cxx_destruct;
+- (id)config;
+- (void)setEffectView:;
+- (BOOL)editing;
+- (void)setupUI;
+@end

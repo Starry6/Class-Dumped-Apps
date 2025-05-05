@@ -1,0 +1,34 @@
+@interface AWEIMMsgBoxAutoManagementViewController : AWEIMHalfScreenContainerViewController
+@property (nonatomic) UIView msgboxContainerView;
+@property (nonatomic) AWEIMMsgBoxAutoManagementContainerViewController containerVC;
+@property (nonatomic) BOOL fetchCompletion;
+@property (nonatomic) AWEIMMsgBoxAutoManagementVCViewModel viewModel;
+@property (nonatomic) NSArray datasModels;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)fetchCompletion;
+- (void)setContainerVC:;
+- (void)setDatasModels:;
+- (void)addKVO;
+- (BOOL)canShowInnerPush;
+- (id)configData;
+- (void)configUIEnable;
+- (id)containerVC;
+- (id)datasModels;
+- (void)didClickCloseBtn;
+- (void)didClickConfirmBtn;
+- (void)didClickViewAllBtn;
+- (id)msgboxContainerView;
+- (void)pushListVC;
+- (void)setFetchCompletion:;
+- (void)setMsgboxContainerView:;
+- (id)init;
+- (id)viewModel;
+- (void).cxx_destruct;
+- (void)viewWillAppear:;
+- (void)setViewModel:;
+- (void)viewDidLoad;
+- (void)setupUI;
+@end

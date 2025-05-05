@@ -1,0 +1,37 @@
+@interface GEOLocationInfo : PBCodable
+@property (nonatomic) BOOL hasLocationName;
+@property (nonatomic) NSString locationName;
+@property (nonatomic) BOOL hasSecondaryLocationName;
+@property (nonatomic) NSString secondaryLocationName;
+@property (nonatomic) BOOL hasLocalityName;
+@property (nonatomic) NSString localityName;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (id)init;
+- (id)initWithJSON:;
+- (id)locationName;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasLocationName;
+- (void)setLocationName:;
+- (BOOL)hasSecondaryLocationName;
+- (id)secondaryLocationName;
+- (void)setSecondaryLocationName:;
+- (BOOL)hasLocalityName;
+- (id)localityName;
+- (void)setLocalityName:;
++ (BOOL)isValid:;
+@end

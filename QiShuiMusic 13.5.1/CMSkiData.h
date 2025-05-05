@@ -1,0 +1,32 @@
+@interface CMSkiData : NSObject
+@property (nonatomic) Q recordId;
+@property (nonatomic) NSUUID sourceId;
+@property (nonatomic) NSUUID sessionId;
+@property (nonatomic) NSDate startDate;
+@property (nonatomic) NSDate endDate;
+@property (nonatomic) double runDistance;
+@property (nonatomic) double runAvgSpeed;
+@property (nonatomic) double runMaxSpeed;
+@property (nonatomic) double runSlope;
+@property (nonatomic) double runElevationDescent;
+- (id)sessionId;
+- (id)startDate;
+- (void)dealloc;
+- (unsigned long long)recordId;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (id)endDate;
+- (id)description;
+- (id)sourceId;
+- (id)copyWithZone:;
+- (id)initWithSessionId:;
+- (id)initWithRecordId:sourceId:sessionId:startDate:endDate:runDistance:runAvgSpeed:runMaxSpeed:runSlope:runElevationDescent:;
+- (id)initWithSkiEntry:;
+- (void)convertToSkiEntry:;
+- (double)runDistance;
+- (double)runAvgSpeed;
+- (double)runMaxSpeed;
+- (double)runSlope;
+- (double)runElevationDescent;
++ (BOOL)supportsSecureCoding;
+@end

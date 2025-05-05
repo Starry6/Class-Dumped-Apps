@@ -1,0 +1,32 @@
+@interface MNSimulatedLocationGenerator : NSObject
+@property (nonatomic) double speedOverride;
+@property (nonatomic) BOOL endAtFinalDestination;
+@property (nonatomic) q state;
+@property (nonatomic) MNLocation lastLocation;
+@property (nonatomic) {?=If} lastRouteCoordinate;
+- (id)stringForState:;
+- (id)lastLocation;
+- (long long)state;
+- (void).cxx_destruct;
+- (void)updatePosition:;
+- (id)initWithRouteInfo:;
+- (void)updateWithRouteInfo:;
+- (id)nextSimulatedLocationWithElapsedTime:;
+- (void)setSpeedOverride:;
+- (void)_updateStartState;
+- (id)_updateForProceedingToStartOfLegOverTimeDelta:outCourse:outSpeed:;
+- (id)_updateForFollowingRouteOverTimeDelta:outCourse:outSpeed:;
+- (id)_updateForProceedingToWaypointOverTimeDelta:outCourse:outSpeed:;
+- (id)_updateForWaitingAtWaypointOverTimeDelta:outCourse:outSpeed:;
+- (id)_simulationStartRouteCoordinate;
+- (id)_projectedCoordinateOffRouteFrom:toCoordinate:overTimeDelta:outCourse:outSpeed:;
+- (id)_projectedCoordinateOnRouteFrom:overTimeDelta:outSpeed:;
+- (BOOL)_shouldProceedToWaypointForLeg:;
+- (id)_locationWithCoordinate:course:speed:;
+- (BOOL)_isCoordinate:atEndOfLeg:;
+- (double)_courseFromCoordinate:toCoordinate:;
+- (double)speedOverride;
+- (BOOL)endAtFinalDestination;
+- (void)setEndAtFinalDestination:;
+- (id)lastRouteCoordinate;
+@end

@@ -1,0 +1,31 @@
+@interface MMCSOperationStateTimeRange : NSObject
+@property (nonatomic) NSDate startDate;
+@property (nonatomic) Q operationState;
+@property (nonatomic) double duration;
+@property (nonatomic) double queueing;
+@property (nonatomic) double executing;
+@property (nonatomic) double absoluteStart;
+@property (nonatomic) double relativeStart;
+@property (nonatomic) double absoluteStop;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)compareStartTime:;
+- (double)queueing;
+- (double)absoluteStop;
+- (id)startDate;
+- (unsigned long long)operationState;
+- (double)absoluteStart;
+- (double)executing;
+- (void)setStartDate:;
+- (double)relativeStart;
+- (long long)compareStopTime:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)initWithOperationState:startDate:duration:;
+- (double)duration;
++ (id)stringForOperationState:;
++ (id)descriptionWithOperationState:absoluteStart:duration:;
++ (id)describedSortedRanges:;
+@end

@@ -1,0 +1,2 @@
+@interface UIInterfaceActionConcreteVisualStyle_iOSActivitySheet : UIInterfaceActionConcreteVisualStyle_iOSSheet
+@end

@@ -1,0 +1,34 @@
+@interface IESLiveDiamondCell : UICollectionViewCell
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UIView centerView;
+@property (nonatomic) UILabel diamondLabel;
+@property (nonatomic) UILabel priceLabel;
+@property (nonatomic) UILabel tipLabel;
+@property (nonatomic) UIView tipContainer;
+@property (nonatomic) BOOL isCustomCell;
+- (id)diamondLabel;
+- (BOOL)isCustomCell;
+- (id)p_diamondFromModel:;
+- (id)p_priceFromModel:;
+- (void)setDiamondLabel:;
+- (void)setIsCustomCell:;
+- (void)setTipContainer:;
+- (id)tipContainer;
+- (void)updateCustomModel;
+- (void)layoutSubviews;
+- (id)containerView;
+- (void)setContainerView:;
+- (void)setSelected:;
+- (void)prepareForReuse;
+- (id)centerView;
+- (id)initWithFrame:;
+- (void)setCenterView:;
+- (void).cxx_destruct;
+- (id)tipLabel;
+- (void)setTipLabel:;
+- (void)setupUI;
+- (void)updateWithModel:;
+- (id)priceLabel;
+- (void)setPriceLabel:;
++ (id)sizeOfCell;
+@end

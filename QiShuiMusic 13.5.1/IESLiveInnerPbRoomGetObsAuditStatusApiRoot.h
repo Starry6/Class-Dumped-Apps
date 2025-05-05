@@ -1,0 +1,2 @@
+@interface IESLiveInnerPbRoomGetObsAuditStatusApiRoot : GPBRootObject
+@end

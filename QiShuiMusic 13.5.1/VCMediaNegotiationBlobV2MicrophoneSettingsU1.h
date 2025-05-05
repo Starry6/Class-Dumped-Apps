@@ -1,0 +1,30 @@
+@interface VCMediaNegotiationBlobV2MicrophoneSettingsU1 : PBCodable
+@property (nonatomic) NSSet audioPayloads;
+@property (nonatomic) BOOL hasRtpSSRC;
+@property (nonatomic) I rtpSSRC;
+@property (nonatomic) BOOL hasPayloads;
+@property (nonatomic) I payloads;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (unsigned int)payloads;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void)setPayloads:;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (unsigned int)rtpSSRC;
+- (void)setRtpSSRC:;
+- (id)audioPayloads;
+- (void)printWithLogFile:prefix:;
+- (void)setHasRtpSSRC:;
+- (BOOL)hasRtpSSRC;
+- (void)setHasPayloads:;
+- (BOOL)hasPayloads;
+- (id)initWithSSRC:audioPayloads:;
+- (unsigned int)payloadBitmapWithAudioPayloads:;
++ (int)flagFromPayload:;
++ (int)payloadFromFlag:;
+@end

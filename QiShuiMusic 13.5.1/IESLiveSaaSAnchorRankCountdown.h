@@ -1,0 +1,31 @@
+@interface IESLiveSaaSAnchorRankCountdown : NSObject
+@property (nonatomic) BOOL executing;
+@property (nonatomic) BOOL repeats;
+@property (nonatomic) double countdown;
+@property (nonatomic) double interval;
+@property (nonatomic) double startTimestamp;
+@property (nonatomic) NSTimer timer;
+@property (nonatomic) @? block;
+- (void)executeCountdown:;
+- (id)initWithCountdown:interval:repeats:block:;
+- (void)setupObserver;
+- (id)block;
+- (void)setRepeats:;
+- (BOOL)executing;
+- (void)dealloc;
+- (BOOL)repeats;
+- (double)startTimestamp;
+- (double)remainingTime;
+- (void)setStartTimestamp:;
+- (void)setTimer:;
+- (void)setInterval:;
+- (void).cxx_destruct;
+- (id)timer;
+- (void)setBlock:;
+- (void)invalidate;
+- (void)setExecuting:;
+- (double)interval;
+- (void)fire;
+- (double)countdown;
+- (void)setCountdown:;
+@end

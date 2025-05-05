@@ -1,0 +1,32 @@
+@interface AWEUserActionSheetView : UIView
+@property (nonatomic) NSMutableArray actions;
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UIView backgroundView;
+@property (nonatomic) @? cancelHandler;
+@property (nonatomic) UIFont defaultTitleFont;
+- (void)clickAction:;
+- (void)doHideAnimation:;
+- (void)doShowAnimation:;
+- (id)generateLineView;
+- (void)reloadUI;
+- (void)showOnView:;
+- (void)dismiss;
+- (id)backgroundView;
+- (void)addAction:;
+- (id)init;
+- (void)setActions:;
+- (id)containerView;
+- (id)defaultTitleFont;
+- (void)setContainerView:;
+- (void)cancelAction;
+- (void)setCancelHandler:;
+- (void)show;
+- (id)actions;
+- (void).cxx_destruct;
+- (void)setBackgroundView:;
+- (void)dismiss:;
+- (void)setDefaultTitleFont:;
+- (id)cancelHandler;
++ (id)instanceWithActions:cancelHandler:;
++ (BOOL)isSomeActionSheetShowing;
+@end

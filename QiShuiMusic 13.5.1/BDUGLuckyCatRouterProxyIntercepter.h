@@ -1,0 +1,33 @@
+@interface BDUGLuckyCatRouterProxyIntercepter : NSObject
+@property (nonatomic) BDUGLuckyRouterContext lastRouterContext;
+@property (nonatomic) BOOL settingsReady;
+@property (nonatomic) NSString schemaForALog;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)__extraParamsWithRetryDisabled:;
+- (double)__retryTimeout:;
+- (id)__buildProxyExtraInfoWithURLString:;
+- (void)__onDogSettingsUpdate;
+- (void)__triggerRetry;
+- (void)__triggerRetryWithContext:reason:;
+- (void)__waitingSettingsCompletedWithContext:timeout:;
+- (BOOL)canHandleUrl:;
+- (id)handleUrl:;
+- (BOOL)isLocalUrl:;
+- (BOOL)isMustBeAwakened;
+- (id)lastRouterContext;
+- (BOOL)openExternalUrl:;
+- (id)schemaForALog;
+- (void)setLastRouterContext:;
+- (void)setSchemaForALog:;
+- (void)setSettingsReady:;
+- (BOOL)settingsReady;
+- (void)showToastIfNeeded:success:;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
++ (long long)intercepterType;
++ (id)sharedInstance;
+@end

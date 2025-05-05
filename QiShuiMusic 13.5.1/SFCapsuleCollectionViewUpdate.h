@@ -1,0 +1,30 @@
+@interface SFCapsuleCollectionViewUpdate : NSObject
+@property (nonatomic) SFCapsuleCollectionView collectionView;
+@property (nonatomic) NSArray itemsBeforeUpdate;
+@property (nonatomic) NSIndexSet indexesOfVisibleItemsBeforeUpdate;
+@property (nonatomic) q selectedItemIndexBeforeUpdate;
+@property (nonatomic) q indexAfterUpdateOfSelectedItemBeforeUpdate;
+@property (nonatomic) NSArray itemsAfterUpdate;
+@property (nonatomic) q selectedItemIndexAfterUpdate;
+@property (nonatomic) q indexBeforeUpdateOfSelectedItemAfterUpdate;
+@property (nonatomic) BOOL animated;
+@property (nonatomic) NSIndexSet indexesOfInsertedItems;
+@property (nonatomic) NSIndexSet indexesOfDeletedItems;
+- (long long)indexAfterUpdateOfSelectedItemBeforeUpdate;
+- (void)deleteItemsAtIndexes:animated:;
+- (BOOL)isAnimated;
+- (id)indexesOfDeletedItems;
+- (id)indexesOfInsertedItems;
+- (void)insertItemsAtIndexes:animated:;
+- (id)initWithCollectionView:;
+- (id)itemsBeforeUpdate;
+- (long long)indexBeforeUpdateOfSelectedItemAfterUpdate;
+- (void).cxx_destruct;
+- (void)setSelectedItemIndex:animated:;
+- (long long)selectedItemIndexAfterUpdate;
+- (long long)selectedItemIndexBeforeUpdate;
+- (id)itemsAfterUpdate;
+- (id)indexesOfVisibleItemsBeforeUpdate;
+- (id)collectionView;
+- (void)_calculateIndexesIfNeeded;
+@end

@@ -1,0 +1,32 @@
+@interface SSVPushNotificationParameters : NSObject
+@property (nonatomic) NSNumber accountIdentifier;
+@property (nonatomic) NSString environmentName;
+@property (nonatomic) NSArray mediaKinds;
+@property (nonatomic) NSString notificationType;
+@property (nonatomic) NSDictionary putParameters;
+@property (nonatomic) q requestType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)requestType;
+- (id)initWithXPCEncoding:;
+- (void)setRequestType:;
+- (id)init;
+- (id)copyXPCEncoding;
+- (void)setAccountIdentifier:;
+- (id)accountIdentifier;
+- (void)setEnvironmentName:;
+- (void).cxx_destruct;
+- (id)environmentName;
+- (id)copyWithZone:;
+- (id)notificationType;
+- (void)setNotificationType:;
+- (void)setValue:forParameter:;
+- (id)valueForParameter:;
+- (id)mediaKinds;
+- (id)putParameters;
+- (void)setMediaKinds:;
+- (void)setPutParameters:;
+- (id)_copyParametersDictionary;
+@end

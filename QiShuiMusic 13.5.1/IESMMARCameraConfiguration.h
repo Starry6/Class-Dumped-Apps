@@ -1,0 +1,38 @@
+@interface IESMMARCameraConfiguration : NSObject
+@property (nonatomic) ARConfiguration innerARConfiguration;
+@property (nonatomic) q cameraPosition;
+@property (nonatomic) BOOL providesAudioData;
+@property (nonatomic) NSString preset;
+@property (nonatomic) q worldAlignment;
+@property (nonatomic) Q planeDetection;
+@property (nonatomic) q environmentTexturing;
+@property (nonatomic) ARWorldMap initialWorldMap;
+@property (nonatomic) BOOL lightEstimationEnabled;
+@property (nonatomic) ARConfiguration arConfig;
+- (id)arConfig;
+- (unsigned long long)convertToARPlaneDetection:;
+- (long long)convertToARWorldAlignment:;
+- (id)initWithARConfiguration:;
+- (id)innerARConfiguration;
+- (void)setInnerARConfiguration:;
+- (BOOL)isSupported;
+- (void)setPreset:;
+- (id)initWithProperty:;
+- (id)preset;
+- (long long)cameraPosition;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (void)setLightEstimationEnabled:;
+- (void)setWorldAlignment:;
+- (void)setEnvironmentTexturing:;
+- (long long)worldAlignment;
+- (id)initialWorldMap;
+- (void)setInitialWorldMap:;
+- (unsigned long long)planeDetection;
+- (BOOL)isLightEstimationEnabled;
+- (BOOL)providesAudioData;
+- (void)setProvidesAudioData:;
+- (long long)environmentTexturing;
++ (BOOL)isSystemVersionSupportedAR;
++ (id)defaultConfiguration;
+@end

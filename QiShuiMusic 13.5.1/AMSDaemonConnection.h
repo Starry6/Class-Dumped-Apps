@@ -1,0 +1,31 @@
+@interface AMSDaemonConnection : NSObject
+@property (nonatomic) NSXPCConnection sharedConnection;
+@property (nonatomic) NSObject<OS_dispatch_queue> sharedConnectionAccessQueue;
+@property (nonatomic) NSMutableSet activePromises;
+@property (nonatomic) NSMutableArray interruptionHandlers;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)_handleInvalidation;
+- (id)init;
+- (void)dealloc;
+- (id)callService:then:;
+- (id)fraudReportServiceProxy;
+- (id)securityServiceProxyWithDelegate:;
+- (void)setSharedConnection:;
+- (id)sharedConnection;
+- (id)deviceMessengerProxyWithDelegate:;
+- (id)_connectionProxyForAsync:accessBlock:;
+- (void)_handleInterruption;
+- (void)_checkOutPromise:;
+- (id)pushNotificationService;
+- (id)cookieServiceProxy;
+- (id)purchaseServiceProxy;
+- (void)addInterruptionHandler:;
+- (void).cxx_destruct;
+- (id)activePromises;
+- (void)_checkInPromise:;
+- (id)sharedConnectionAccessQueue;
+- (id)interruptionHandlers;
+@end

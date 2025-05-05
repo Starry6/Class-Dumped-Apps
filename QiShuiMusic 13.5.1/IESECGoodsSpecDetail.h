@@ -1,0 +1,31 @@
+@interface IESECGoodsSpecDetail : MTLModel
+@property (nonatomic) NSArray imgList;
+@property (nonatomic) NSString name;
+@property (nonatomic) q specDetailID;
+@property (nonatomic) q effectivePrice;
+@property (nonatomic) q discountPrice;
+@property (nonatomic) NSArray bigImgList;
+@property (nonatomic) q marketPrice;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)imgList;
+- (void)setMarketPrice:;
+- (id)bigImgList;
+- (long long)discountPrice;
+- (long long)effectivePrice;
+- (long long)marketPrice;
+- (void)setBigImgList:;
+- (void)setDiscountPrice:;
+- (void)setEffectivePrice:;
+- (void)setImgList:;
+- (void)setSpecDetailID:;
+- (long long)specDetailID;
+- (void)setName:;
+- (void).cxx_destruct;
+- (id)name;
++ (id)bigImgListJSONTransformer;
++ (id)imgListJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

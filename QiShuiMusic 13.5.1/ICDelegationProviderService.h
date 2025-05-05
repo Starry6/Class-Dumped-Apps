@@ -1,0 +1,33 @@
+@interface ICDelegationProviderService : NSObject
+@property (nonatomic) ICRequestContext requestContext;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)_addConnection:;
+- (void)removeAssertion:;
+- (void)_removeConnection:;
+- (void)delegationProviderServiceSession:didFinishWithError:;
+- (void)dealloc;
+- (void)netServiceBrowser:didFindService:moreComing:;
+- (void)addAssertion:;
+- (id)_xpcConnection;
+- (void)netServiceBrowser:didRemoveService:moreComing:;
+- (void)delegationProviderServiceRemoveAssertion:;
+- (void)_unregisterNotificationsForDelegationNetService:;
+- (void)_updateSupportedDelegationAccountUUIDs;
+- (void)_userIdentityStoreDidChangeNotification:;
+- (id)requestContext;
+- (BOOL)listener:shouldAcceptNewConnection:;
+- (void)_registerNotificationsForDelegationNetService:;
+- (void).cxx_destruct;
+- (void)_updateBrowsingStatus;
+- (void)startSystemXPCService;
+- (id)_init;
+- (void)delegationProviderServiceAddAssertion:;
+- (void)_updateAssertionTimeouts;
+- (void)_netServiceDelegationAccountUUIDsDidChangeNotification:;
+- (void)_updateDelegationForDiscoveredServices;
++ (id)systemServiceWithRequestContext:;
++ (id)sharedService;
+@end

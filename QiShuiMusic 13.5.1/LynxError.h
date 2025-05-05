@@ -1,0 +1,38 @@
+@interface LynxError : NSError
+@property (nonatomic) BOOL isLogBoxOnly;
+@property (nonatomic) q errorCode;
+@property (nonatomic) NSString summaryMessage;
+@property (nonatomic) NSString templateUrl;
+@property (nonatomic) NSString cardVersion;
+@property (nonatomic) NSString level;
+@property (nonatomic) NSString fixSuggestion;
+@property (nonatomic) NSString callStack;
+@property (nonatomic) NSMutableDictionary customInfo;
+- (id)generateJsonStr;
+- (void)setCardVersion:;
+- (void)addCustomInfo:forKey:;
+- (id)cardVersion;
+- (id)fixSuggestion;
+- (BOOL)isLogBoxOnly;
+- (void)setCallStack:;
+- (void)setIsLogBoxOnly:;
+- (id)summaryMessage;
+- (long long)errorCode;
+- (id)userInfo;
+- (id)level;
+- (id)callStack;
+- (BOOL)isValid;
+- (void).cxx_destruct;
+- (id)customInfo;
+- (id)templateUrl;
+- (void)setTemplateUrl:;
++ (void)addDictionary:toDictionary:;
++ (void)addStringValue:forKey:toDictionary:;
++ (id)lynxErrorWithCode:description:;
++ (id)lynxErrorWithCode:message:;
++ (id)lynxErrorWithCode:message:fixSuggestion:level:;
++ (id)lynxErrorWithCode:message:fixSuggestion:level:customInfo:;
++ (id)lynxErrorWithCode:message:fixSuggestion:level:customInfo:isLogBoxOnly:;
++ (id)lynxErrorWithCode:sourceError:;
++ (id)lynxErrorWithCode:userInfo:;
+@end

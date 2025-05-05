@@ -1,0 +1,37 @@
+@interface BDASplashMaterialViewHolder : NSObject
+@property (nonatomic) BOOL isPrepared;
+@property (nonatomic) BDASplashMaterialBaseView view;
+@property (nonatomic) BDASplashMaterialViewModel model;
+@property (nonatomic) <BDASplashMaterialViewHolderDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)getView;
+- (double)getDisplayTime;
+- (id)initWithFrame:model:delegate:;
+- (void)loadMaterialResource;
+- (void)materialHasEnded;
+- (void)materialReadyToShow;
+- (id)realtimeInfo;
+- (void)setupView:;
+- (void)trackAdEvent:extra:adExtra:;
+- (void)trackBreak:;
+- (void)trackNoAdEvent:params:;
+- (void)trackOver;
+- (void)trackShow;
+- (void)trackURLs:label:;
+- (id)model;
+- (void)stop:;
+- (void)setModel:;
+- (BOOL)isPrepared;
+- (void)setDelegate:;
+- (void)show;
+- (id)view;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)update;
+- (void)pause;
+- (void)setView:;
+- (void)setIsPrepared:;
+@end

@@ -1,0 +1,31 @@
+@interface CLSensorRecorderSensorMeta : NSObject
+@property (nonatomic) Q identifier;
+@property (nonatomic) double startTime;
+@property (nonatomic) Q timestamp;
+@property (nonatomic) Q dataIdentifier;
+@property (nonatomic) I offset;
+@property (nonatomic) I dataSize;
+@property (nonatomic) NSInteger dataType;
+@property (nonatomic) BOOL movement;
+- (void)setDataType:;
+- (void)setOffset:;
+- (unsigned int)dataSize;
+- (void)setStartTime:;
+- (unsigned long long)identifier;
+- (id)initWithCoder:;
+- (int)dataType;
+- (double)startTime;
+- (unsigned int)offset;
+- (void)encodeWithCoder:;
+- (void)setTimestamp:;
+- (unsigned long long)timestamp;
+- (id)description;
+- (void)setDataSize:;
+- (id)initWithDataType:;
+- (void)setIdentifier:;
+- (BOOL)movement;
+- (unsigned long long)dataIdentifier;
+- (void)setDataIdentifier:;
+- (void)setMovement:;
++ (BOOL)supportsSecureCoding;
+@end

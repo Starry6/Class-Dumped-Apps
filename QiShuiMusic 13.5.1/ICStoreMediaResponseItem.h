@@ -1,0 +1,32 @@
+@interface ICStoreMediaResponseItem : NSObject
+@property (nonatomic) NSDate assetExpirationDate;
+@property (nonatomic) q storeAdamID;
+@property (nonatomic) NSURL artworkURL;
+@property (nonatomic) NSURL cancelDownloadURL;
+@property (nonatomic) NSString downloadIdentifier;
+@property (nonatomic) BOOL isPurchasedRedownload;
+@property (nonatomic) ICStoreFinanceItemMetadata metadata;
+@property (nonatomic) NSDate purchaseDate;
+@property (nonatomic) NSString redownloadParameters;
+@property (nonatomic) NSArray fileAssets;
+@property (nonatomic) ICStoreHLSAssetInfo hlsAsset;
+@property (nonatomic) @ suzeLeaseID;
+- (id)artworkURL;
+- (BOOL)isPurchasedRedownload;
+- (id)metadata;
+- (long long)storeAdamID;
+- (void).cxx_destruct;
+- (id)purchaseDate;
+- (id)copyWithZone:;
+- (id)fileAssets;
+- (id)suzeLeaseID;
+- (id)redownloadParameters;
+- (id)downloadIdentifier;
+- (id)cancelDownloadURL;
+- (id)initWithItemResponseDictionary:urlBag:;
+- (id)hlsAsset;
+- (id)downloadableAsset;
+- (id)downloadableAssetMatchingFlavorType:;
+- (id)assetExpirationDate;
+- (void)setAssetExpirationDate:;
+@end

@@ -1,0 +1,32 @@
+@interface CBSBIM : NSObject
+@property (nonatomic) float sdrBrightness;
+@property (nonatomic) float currentHeadroom;
+@property (nonatomic) float currentHeadroomRequest;
+@property (nonatomic) float cap;
+- (void)disable;
+- (void)enable;
+- (void)dealloc;
+- (void)startMonitoring;
+- (void)stopMonitoring;
+- (id).cxx_construct;
+- (id)initWithQueue:andDisplayModule:andEDRModule:;
+- (void)initialiseLimits;
+- (void)dataTimerHandler;
+- (void)mitigationTimerHandler;
+- (float)mitigatedHeadroomFromRequestedHeadroom;
+- (void)enterEDR;
+- (void)exitEDR;
+- (void)enableSBIM:;
+- (void)resetMitigationState;
+- (id)mitigationStageToString:;
+- (void)updateMitigationStateWithData:andCurrentHeadroom:andRequestedHeadroom:andSDRBrightness:andReset:;
+- (void)sendEDRHeadroomRequest:;
+- (float)sdrBrightness;
+- (void)setSdrBrightness:;
+- (float)currentHeadroom;
+- (void)setCurrentHeadroom:;
+- (float)currentHeadroomRequest;
+- (void)setCurrentHeadroomRequest:;
+- (float)cap;
++ (BOOL)needsSBIM;
+@end

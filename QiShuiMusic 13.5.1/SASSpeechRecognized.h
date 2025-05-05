@@ -1,0 +1,37 @@
+@interface SASSpeechRecognized : SABaseClientBoundCommand
+@property (nonatomic) SASAudioAnalytics audioAnalytics;
+@property (nonatomic) BOOL eager;
+@property (nonatomic) NSNumber processedAudioDuration;
+@property (nonatomic) SASRecognition recognition;
+@property (nonatomic) SAUIGetResponseAlternatives responseAlternatives;
+@property (nonatomic) NSString resultId;
+@property (nonatomic) NSString sessionId;
+@property (nonatomic) NSString title;
+- (id)af_correctionContext;
+- (id)af_userUtteranceValue;
+- (id)af_bestTextInterpretation;
+- (BOOL)af_isUtterance;
+- (BOOL)af_isUserUtterance;
+- (BOOL)af_waitsForConfirmation;
+- (void)setSessionId:;
+- (id)sessionId;
+- (id)groupIdentifier;
+- (void)setTitle:;
+- (BOOL)requiresResponse;
+- (id)title;
+- (id)encodedClassName;
+- (id)recognition;
+- (id)resultId;
+- (void)setResultId:;
+- (id)audioAnalytics;
+- (id)processedAudioDuration;
+- (void)setAudioAnalytics:;
+- (BOOL)eager;
+- (void)setEager:;
+- (void)setProcessedAudioDuration:;
+- (void)setRecognition:;
+- (id)responseAlternatives;
+- (void)setResponseAlternatives:;
++ (id)speechRecognized;
++ (id)speechRecognizedWithDictionary:context:;
+@end

@@ -1,0 +1,37 @@
+@interface IESLivePublicScreenCommonAttachment : NSObject
+@property (nonatomic) IESLiveMessageInteractionDataCollection miDataCollection;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) IESLivePublicScreenView publicScreenView;
+@property (nonatomic) IESLivePublicScreenContext publicScreenContext;
+@property (nonatomic) HTSEventContext trackContext;
+@property (nonatomic) @? didAttach;
+@property (nonatomic) @? didDetach;
+- (id)abilityProtocol;
+- (void)stopDataCollect;
+- (void)dataDisplayOnPublicScreen:;
+- (void)dataDisplayOnUserEnter:;
+- (id)didAttach;
+- (id)didDetach;
+- (void)envalueInfoStrategyMessageListHeat:;
+- (void)individualStrategyEffectType:;
+- (id)miDataCollection;
+- (id)publicScreenContext;
+- (id)publicScreenView;
+- (void)setDidAttach:;
+- (void)setDidDetach:;
+- (void)setMiDataCollection:;
+- (void)setPublicScreenContext:;
+- (void)setPublicScreenView:;
+- (void)setTrackContext:;
+- (void)setupWithDIContext:eventContext:room:;
+- (BOOL)shouldActive;
+- (void)startDataCollect;
+- (id)trackContext;
+- (void)detach;
+- (void)attach;
+- (id)type;
+- (void).cxx_destruct;
+@end

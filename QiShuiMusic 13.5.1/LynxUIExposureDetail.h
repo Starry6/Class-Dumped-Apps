@@ -1,0 +1,35 @@
+@interface LynxUIExposureDetail : NSObject
+@property (nonatomic) NSString exposureScene;
+@property (nonatomic) NSString exposureID;
+@property (nonatomic) NSString internalSignature;
+@property (nonatomic) q sign;
+@property (nonatomic) LynxUI ui;
+@property (nonatomic) NSDictionary dataSet;
+@property (nonatomic) NSString uniqueID;
+@property (nonatomic) NSDictionary extraData;
+@property (nonatomic) NSDictionary useOptions;
+- (id)exposureID;
+- (id)exposureScene;
+- (id)initWithUI:uniqueIdentifier:extraData:useOptions:;
+- (id)internalSignature;
+- (BOOL)isEqualToExposureDetail:;
+- (void)setExposureID:;
+- (void)setExposureScene:;
+- (void)setInternalSignature:;
+- (void)setSign:;
+- (void)setUseOptions:;
+- (long long)sign;
+- (id)useOptions;
+- (id)uniqueID;
+- (id)toDictionary;
+- (void)setDataSet:;
+- (id)dataSet;
+- (unsigned long long)hash;
+- (void)setUniqueID:;
+- (void).cxx_destruct;
+- (id)ui;
+- (BOOL)isEqual:;
+- (void)setExtraData:;
+- (id)extraData;
+- (void)setUi:;
+@end

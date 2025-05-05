@@ -1,0 +1,30 @@
+@interface FigCaptureSourceFormat : NSObject
+@property (nonatomic) I mediaType;
+@property (nonatomic) ^{opaqueCMFormatDescription=} formatDescription;
+@property (nonatomic) NSString uniqueID;
+@property (nonatomic) I format;
+@property (nonatomic) {?=ii} dimensions;
+@property (nonatomic) float minSupportedFrameRate;
+@property (nonatomic) float maxSupportedFrameRate;
+@property (nonatomic) BOOL defaultActiveFormat;
+@property (nonatomic) BOOL experimental;
+@property (nonatomic) NSArray highResStillImageDimensions;
+@property (nonatomic) {?=ii} soleHighResStillImageDimensions;
+- (id)highResStillImageDimensions;
+- (id)initWithFigCaptureStreamFormatDictionary:;
+- (id)dimensions;
+- (unsigned int)mediaType;
+- (id)formatDictionary;
+- (float)minSupportedFrameRate;
+- (float)maxSupportedFrameRate;
+- (id)initWithFigCaptureStreamFormatDictionary:pixelFormatOverride:;
+- (id)soleHighResStillImageDimensions;
+- (BOOL)isExperimental;
+- (BOOL)isDefaultActiveFormat;
+- (id)formatDescription;
+- (id)uniqueID;
+- (void)dealloc;
+- (unsigned int)format;
+- (id)description;
+- (BOOL)isEqual:;
+@end

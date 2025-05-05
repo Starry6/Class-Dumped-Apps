@@ -1,0 +1,32 @@
+@interface IESLiveUserCardSkinVisit : UIView
+@property (nonatomic) IESLiveDressVisitorInfo dressVisitorInfo;
+@property (nonatomic) IESLiveUserCardStore store;
+@property (nonatomic) UILabel upLabel;
+@property (nonatomic) UILabel bottomLabel;
+@property (nonatomic) NSString entranceType;
+- (id)upLabel;
+- (void)doTap;
+- (id)dressVisitorInfo;
+- (id)entranceType;
+- (id)initWithUserCardStore:;
+- (id)intergetToString:;
+- (void)setDressVisitorInfo:;
+- (void)setEntranceType:;
+- (void)setUpLabel:;
+- (void)setupText:withNumberText:;
+- (void)setupTextAnimationWithIncrease:withNormalVisit:;
+- (void)setupWithLock;
+- (void)setupYellowDot;
+- (BOOL)shouldShowYellowDot;
+- (void)startAnimation:withView:;
+- (void)usercardOpenFinished;
+- (void)addGesture;
+- (void)setStore:;
+- (void)layoutSubviews;
+- (void)setup;
+- (void).cxx_destruct;
+- (id)store;
+- (id)bottomLabel;
+- (void)setBottomLabel:;
+- (void)trackWithName:;
+@end

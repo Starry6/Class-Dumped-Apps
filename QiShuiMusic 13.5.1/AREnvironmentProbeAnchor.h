@@ -1,0 +1,38 @@
+@interface AREnvironmentProbeAnchor : ARAnchor
+@property (nonatomic) <MTLTexture> environmentTexture;
+@property (nonatomic) float clippingPointLux;
+@property (nonatomic) ARParametricLights parametricLights;
+@property (nonatomic) NSSet sourceKeyframeUUIDs;
+@property (nonatomic) NSData colorHistogram;
+@property (nonatomic) float opaquePixelPercentage;
+@property (nonatomic) NSUUID trackedPlaneIdentifier;
+@property (nonatomic)  extent;
+- (id)extent;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)initWithTransform:;
+- (id)initWithAnchor:;
+- (id)colorHistogram;
+- (id)environmentTexture;
+- (id)initWithTransform:extent:;
+- (id)initWithName:transform:;
+- (id)initWithIdentifier:transform:;
+- (id)initWithName:transform:extent:;
+- (id)initWithIdentifier:transform:extent:;
+- (id)initWithIdentifier:onPlane:;
+- (void)setEnvironmentTexture:;
+- (float)clippingPointLux;
+- (void)setClippingPointLux:;
+- (id)parametricLights;
+- (void)setParametricLights:;
+- (id)sourceKeyframeUUIDs;
+- (void)setSourceKeyframeUUIDs:;
+- (void)setColorHistogram:;
+- (float)opaquePixelPercentage;
+- (void)setOpaquePixelPercentage:;
+- (id)trackedPlaneIdentifier;
+- (void)setTrackedPlaneIdentifier:;
++ (BOOL)supportsSecureCoding;
+@end

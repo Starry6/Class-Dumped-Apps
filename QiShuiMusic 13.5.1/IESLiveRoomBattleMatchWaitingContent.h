@@ -1,0 +1,35 @@
+@interface IESLiveRoomBattleMatchWaitingContent : NSObject
+@property (nonatomic) NSTimer timer;
+@property (nonatomic) NSMutableArray timeoutActions;
+@property (nonatomic) IESLiveLinkMicProfitRoomBattleRandomMatchMatchingContent matchingContent;
+@property (nonatomic) double startWaitingTime;
+@property (nonatomic) q expectedWaitingTime;
+@property (nonatomic) q waitingTime;
+@property (nonatomic) NSNumber realWaitingTime;
+@property (nonatomic) HTSLiveLinkmicRoomBattleMatchSuccessContent successContent;
+@property (nonatomic) BOOL hasSpeedup;
+- (id)matchingContent;
+- (void)setWaitingTime:;
+- (id)realWaitingTime;
+- (long long)expectedWaitingTime;
+- (BOOL)hasSpeedup;
+- (void)setExpectedWaitingTime:;
+- (void)setHasSpeedup:;
+- (void)setMatchingContent:;
+- (void)setRealWaitingTime:;
+- (void)setStartWaitingTime:;
+- (void)setSuccessContent:;
+- (void)setTimeoutActions:;
+- (void)startWaiting:timeoutAction:;
+- (double)startWaitingTime;
+- (void)startWaitingTimer;
+- (void)stopWaitingTimer;
+- (id)successContent;
+- (id)timeoutActions;
+- (long long)waitingTime;
+- (void)dealloc;
+- (void)setTimer:;
+- (BOOL)isFinished;
+- (void).cxx_destruct;
+- (id)timer;
+@end

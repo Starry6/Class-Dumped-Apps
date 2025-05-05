@@ -1,0 +1,2 @@
+@interface BDTrackerDefinesPlaceholder : NSObject
+@end

@@ -1,0 +1,34 @@
+@interface BXFeatureProcessConfigOC : NSObject
+@property (nonatomic) NSString key;
+@property (nonatomic) NSString componentName;
+@property (nonatomic) BXEventWindowOC eventWindow;
+@property (nonatomic) NSDictionary sessionWindow;
+@property (nonatomic) NSArray eventSource;
+@property (nonatomic) Q processTime;
+@property (nonatomic) @? filterFunction;
+@property (nonatomic) @? numberAggregationFunction;
+@property (nonatomic) @? stringAggregationFunction;
+- (void)setEventWindow:;
+- (void)setProcessTime:;
+- (id)filterFunction;
+- (id)initWithKey:type:;
+- (id)numberAggregationFunction;
+- (unsigned long long)processTime;
+- (void)registerConfig;
+- (id)sessionWindow;
+- (void)setFilterFunction:;
+- (void)setNumberAggregationFunction:;
+- (void)setSessionWindow:;
+- (void)setStringAggregationFunction:;
+- (id)stringAggregationFunction;
+- (void)useDefaultFunction:;
+- (id)componentName;
+- (id)key;
+- (void)setEventSource:;
+- (id)eventSource;
+- (void)setKey:;
+- (void).cxx_destruct;
+- (id).cxx_construct;
+- (id)eventWindow;
+- (void)setComponentName:;
+@end

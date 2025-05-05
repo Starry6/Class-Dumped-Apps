@@ -1,0 +1,2 @@
+@interface IESLiveSaaSPBIESLiveSaaSPBBattleInviteRoot : GPBRootObject
+@end

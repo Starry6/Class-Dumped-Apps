@@ -1,0 +1,30 @@
+@interface IESECLiveListHotSaleView : UIView
+@property (nonatomic) q curState;
+@property (nonatomic) Q curSaleNum;
+@property (nonatomic) IESECGCDTimer dismissTimer;
+@property (nonatomic) <IESECLiveListHotSaleViewDelegate> delegate;
+@property (nonatomic) IESECLiveGoodsHotSaleModel hotsaleInfo;
+@property (nonatomic) IESECLiveHotSaleView hotsaleView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setHotsaleInfo:;
+- (void)setHotsaleView:;
+- (unsigned long long)curSaleNum;
+- (long long)curState;
+- (id)hotsaleInfo;
+- (id)hotsaleView;
+- (void)hotsaleView:stateChanged:hotsaleInfo:;
+- (void)p_delegateAnimationStateChanged:hotsaleInfo:;
+- (void)setCurSaleNum:;
+- (void)setCurState:;
+- (void)setupDismissTimerIfNeeded:;
+- (void)setDelegate:;
+- (id)dismissTimer;
+- (id)initWithFrame:;
+- (id)delegate;
+- (void)setDismissTimer:;
+- (void).cxx_destruct;
+- (void)setupUI;
+@end

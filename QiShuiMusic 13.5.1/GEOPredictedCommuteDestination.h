@@ -1,0 +1,36 @@
+@interface GEOPredictedCommuteDestination : PBCodable
+@property (nonatomic) BOOL hasDestinationType;
+@property (nonatomic) NSInteger destinationType;
+@property (nonatomic) BOOL hasConfidenceScore;
+@property (nonatomic) double confidenceScore;
+@property (nonatomic) BOOL hasChosen;
+@property (nonatomic) BOOL chosen;
+- (void)readAll:;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (double)confidenceScore;
+- (int)destinationType;
+- (void)setDestinationType:;
+- (void)setHasDestinationType:;
+- (BOOL)hasDestinationType;
+- (id)destinationTypeAsString:;
+- (int)StringAsDestinationType:;
+- (void)setConfidenceScore:;
+- (void)setHasConfidenceScore:;
+- (BOOL)hasConfidenceScore;
+- (BOOL)chosen;
+- (void)setChosen:;
+- (void)setHasChosen:;
+- (BOOL)hasChosen;
++ (BOOL)isValid:;
+@end

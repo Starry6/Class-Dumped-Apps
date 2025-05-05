@@ -1,0 +1,37 @@
+@interface ABVCardLexer : NSObject
+- (unsigned int)cursor;
+- (void)dealloc;
+- (int)errorCount;
+- (id)tokenName:;
+- (id)initWithData:watchdogTimer:;
+- (id)tokenSetForLength:;
+- (int)nextTokenPeakSingle:length:;
+- (int)nextTokenPeakUnicode:length:;
+- (int)nextTokenPeak:;
+- (id)nextQuotedPrintableData;
+- (id)nextEscapedCharacter;
+- (BOOL)advancedPastToken:;
+- (id)nextSingleByteStringInEncoding:quotedPrintable:stopTokens:trim:;
+- (id)nextUnicodeStringStopTokens:quotedPrintable:trim:;
+- (BOOL)_advancePastLineFoldingSequenceIfNeeded;
+- (void)_applyNextStringInEncoding:quotedPrintable:stopTokens:trim:intoString:;
+- (id)nextStringInEncoding:quotedPrintable:stopTokens:trim:;
+- (int)tokenAtCursor;
+- (id)nextArraySeperatedByToken:stoppingAt:inEncoding:;
+- (id)nextUnicodeBase64Line:;
+- (id)nextSingleByteBase64Line:;
+- (id)nextBase64Line:;
+- (id)nextBase64Data;
+- (void)advanceToPeakPoint;
+- (int)advanceToUnicodeString;
+- (int)advanceToSingleByteString;
+- (int)advanceToString;
+- (BOOL)advanceToToken:throughTypes:;
+- (BOOL)advanceToEOLUnicode;
+- (BOOL)advanceToEOLSingle;
+- (BOOL)advanceToEOL;
+- (BOOL)advancePastEOLUnicode;
+- (BOOL)advancePastEOLSingle;
+- (BOOL)advancePastEOL;
+- (BOOL)atEOF;
+@end

@@ -1,0 +1,2 @@
+@interface PaidLiveCommonRoot : GPBRootObject
+@end

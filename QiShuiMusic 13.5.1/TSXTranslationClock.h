@@ -1,0 +1,37 @@
+@interface TSXTranslationClock : NSObject
+@property (nonatomic) NSInteger lockState;
+@property (nonatomic) double hostRateRatio;
+@property (nonatomic) Q clockIdentifier;
+@property (nonatomic) NSString clockName;
+@property (nonatomic) NSObject<OS_dispatch_queue> propertyUpdateQueue;
+- (int)lockState;
+- (void)setLockState:;
+- (id)init;
+- (unsigned long long)machAbsoluteTicksToNanoseconds:;
+- (void).cxx_destruct;
+- (unsigned long long)machAbsoluteNanosecondsToTicks:;
+- (unsigned long long)clockIdentifier;
+- (void)setPropertyUpdateQueue:;
+- (id)propertyUpdateQueue;
+- (unsigned long long)convertFromMachAbsoluteToDomainTime:;
+- (unsigned long long)convertFromDomainToMachAbsoluteTime:;
+- (BOOL)convertFromMachAbsoluteTime:toDomainTime:withCount:;
+- (BOOL)convertFromDomainTime:toMachAbsoluteTime:withCount:;
+- (unsigned long long)convertFromMachAbsoluteIntervalToDomainInterval:;
+- (unsigned long long)convertFromDomainIntervalToMachAbsoluteInterval:;
+- (BOOL)getMachAbsoluteRateRatioNumerator:denominator:machAnchor:andDomainAnchor:withError:;
+- (unsigned long long)convertFromTimeSyncToDomainTime:;
+- (unsigned long long)convertFromDomainToTimeSyncTime:;
+- (BOOL)convertFromTimeSyncTime:toDomainTime:withCount:;
+- (BOOL)convertFromDomainTime:toTimeSyncTime:withCount:;
+- (unsigned long long)convertFromTimeSyncTimeIntervalToDomainInterval:;
+- (unsigned long long)convertFromDomainIntervalToTimeSyncTimeInterval:;
+- (BOOL)getTimeSyncTimeRateRatioNumerator:denominator:timeSyncAnchor:andDomainAnchor:withError:;
+- (double)hostRateRatio;
+- (id)clockName;
+- (void)setHostRateRatio:;
+- (id)initWithClockIdentifier:clockManager:;
+- (void)_updateLockState:;
+- (void)_updateTimeSyncTime:timeSyncInterval:domainTime:domainInterval:;
+- (void)_changedClockMaster;
+@end

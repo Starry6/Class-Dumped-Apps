@@ -1,0 +1,2 @@
+@interface AVSampleBufferRenderSynchronizerInternal : NSObject
+@end

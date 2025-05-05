@@ -1,0 +1,34 @@
+@interface GEOLogMsgStateDeviceLocale : PBCodable
+@property (nonatomic) BOOL hasDeviceSettingsLocale;
+@property (nonatomic) NSString deviceSettingsLocale;
+@property (nonatomic) BOOL hasDeviceInputLocale;
+@property (nonatomic) NSString deviceInputLocale;
+@property (nonatomic) BOOL hasDeviceOutputLocale;
+@property (nonatomic) NSString deviceOutputLocale;
+- (id)deviceOutputLocale;
+- (BOOL)hasDeviceInputLocale;
+- (id)deviceInputLocale;
+- (void)setDeviceOutputLocale:;
+- (void)setDeviceInputLocale:;
+- (void)readAll:;
+- (BOOL)hasDeviceOutputLocale;
+- (id)init;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (void)setDeviceSettingsLocale:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)deviceSettingsLocale;
+- (id)initWithData:;
+- (BOOL)hasDeviceSettingsLocale;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
++ (BOOL)isValid:;
+@end

@@ -1,0 +1,32 @@
+@interface PLFilteredAlbumChangeNotification : PLAssetContainerChangeNotification
+@property (nonatomic) NSIndexSet updatedFilteredIndexes;
+@property (nonatomic) NSIndexSet filteredIndexes;
+@property (nonatomic) PLIndexMapper indexMapper;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (id)album;
+- (id)filteredIndexes;
+- (BOOL)shouldIncludeObjectAtIndex:;
+- (BOOL)shouldReload;
+- (id)indexMapper;
+- (void).cxx_destruct;
+- (id)object;
+- (id)description;
+- (id)_changedObjects;
+- (BOOL)_getOldSet:newSet:;
+- (BOOL)titleDidChange;
+- (BOOL)keyAssetDidChange;
+- (id)initWithFilteredAlbum:priorChangeState:albumChangeNotification:;
+- (BOOL)countDidChange;
+- (id)_diffDescription;
+- (id)updatedFilteredIndexes;
+- (void)setFilteredIndexes:;
++ (id)notificationForDerivedObject:priorChangeState:forBackingObjectNotification:;
+@end

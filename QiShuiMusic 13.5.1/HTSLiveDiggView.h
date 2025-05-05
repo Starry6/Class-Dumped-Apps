@@ -1,0 +1,38 @@
+@interface HTSLiveDiggView : IESLiveImageView
+@property (nonatomic) CAShapeLayer borderLayer;
+@property (nonatomic) UILabel countLabel;
+@property (nonatomic) UIView bgView;
+@property (nonatomic) UIView countLabelBgView;
+@property (nonatomic) BOOL isDoubleDigg;
+@property (nonatomic) UIImageView iconImageView;
+@property (nonatomic) UIImageView avatorImageView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)DF_playAvatorIconChangeAnimaWithNewStrategy:;
+- (id)avatorImageView;
+- (id)countLabelBgView;
+- (id)initWithFrame:diggCount:iconImage:avatorImage:;
+- (id)initWithFrame:ownDigg:iconImage:avatorImage:;
+- (id)initWithFrame:ownDigg:iconImage:avatorImage:newDiggStrategy:showSwitch:;
+- (BOOL)isDoubleDigg;
+- (void)playAvatorIconChangeAnima;
+- (void)playAvatorIconChangeAnimaWithNewStrategy;
+- (void)setAvatorImageView:;
+- (void)setCountLabelBgView:;
+- (void)setIsDoubleDigg:;
+- (void)setupAvatorImageWithFrame:avatorImage:strokeColor:borderWidth:;
+- (void)setupDoubleDiggAvatorWithFrame:avatorImage:strokeColor:borderWidth:;
+- (void)setupIconImageWithFrame:iconImage:;
+- (void)animationDidStop:finished:;
+- (void).cxx_destruct;
+- (id)iconImageView;
+- (id)bgView;
+- (void)setBgView:;
+- (void)setIconImageView:;
+- (id)countLabel;
+- (void)setCountLabel:;
+- (id)borderLayer;
+- (void)setBorderLayer:;
+@end

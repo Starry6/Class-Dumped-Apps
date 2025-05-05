@@ -1,0 +1,37 @@
+@interface MecabraWordProperties : NSObject
+@property (nonatomic) NSString analysisString;
+@property (nonatomic) NSArray characterInformation;
+@property (nonatomic) NSArray codeLookupInformation;
+@property (nonatomic) BOOL emoji;
+@property (nonatomic) NSInteger language;
+- (id)valueForKey:;
+- (void)dealloc;
+- (void)setLanguage:;
+- (int)language;
+- (void)setEmoji:;
+- (id)characterInformation;
+- (id)codeLookupInformation;
+- (id)radicalInformationForString:;
+- (id)strokeInformationForString:;
+- (id)pinyinInformationForString:;
+- (id)zhuyinInformationForString:;
+- (id)initialsForStrings:;
+- (id)tonesForString:;
+- (id)separatedInputCodesForString:;
+- (id)initWithString:language:;
+- (id)wubixingCodes;
+- (id)bihuaCodes;
+- (id)cangjieCodes;
+- (id)isIncludedInCurrentLanguage;
+- (id)wubixingCodesForStandard:;
+- (id)analysisString;
+- (void)setAnalysisString:;
+- (void)setCharacterInformation:;
+- (void)setCodeLookupInformation:;
+- (BOOL)isEmoji;
++ (id)informationDictionaryAtPath:;
++ (id)characterInformationDictionary;
++ (id)codeLookupInformationDictionary;
++ (id)searchResultsForString:dictionary:;
++ (id)sortedRadicalList;
+@end

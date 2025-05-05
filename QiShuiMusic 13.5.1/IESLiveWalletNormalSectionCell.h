@@ -1,0 +1,34 @@
+@interface IESLiveWalletNormalSectionCell : UICollectionViewCell
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UICollectionViewFlowLayout collectionLayout;
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UIView bgView;
+@property (nonatomic) IESLiveWalletNormalItem item;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)shouldSetUpScreenShield;
+- (id)collectionView:layout:insetForSectionAtIndex:;
+- (id)collectionView:layout:sizeForItemAtIndexPath:;
+- (id)item;
+- (void)setTitleLabel:;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)containerView;
+- (void)setContainerView:;
+- (void)updateWithItem:;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (id)initWithFrame:;
+- (void)setItem:;
+- (void)setCollectionView:;
+- (void).cxx_destruct;
+- (id)collectionView;
+- (id)titleLabel;
+- (id)bgView;
+- (void)setBgView:;
+- (void)setupUI;
+- (id)collectionLayout;
+- (void)setCollectionLayout:;
+@end

@@ -1,0 +1,2 @@
+@interface CSJTapGestureRecognizerTool : NSObject
+@end

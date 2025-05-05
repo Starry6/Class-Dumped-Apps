@@ -1,0 +1,2 @@
+@interface AVPortraitEffectsMatteInternal : NSObject
+@end

@@ -1,0 +1,32 @@
+@interface SFAnnounceMessagesEvent : NSObject
+@property (nonatomic) BOOL allowsSiriWhenLocked;
+@property (nonatomic) BOOL announceMessagesAlreadyEnabled;
+@property (nonatomic) q pairingExitView;
+@property (nonatomic) BOOL skippedTutorialCards;
+@property (nonatomic) BOOL userAutomaticallyEnrolled;
+@property (nonatomic) BOOL userExplicitlyOptedIn;
+@property (nonatomic) BOOL userExplicitlyOptedOut;
+@property (nonatomic) NSDictionary eventPayload;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)eventPayload;
+- (void)submitEvent;
+- (BOOL)allowsSiriWhenLocked;
+- (void)setAllowsSiriWhenLocked:;
+- (BOOL)announceMessagesAlreadyEnabled;
+- (void)setAnnounceMessagesAlreadyEnabled:;
+- (long long)pairingExitView;
+- (void)setPairingExitView:;
+- (BOOL)skippedTutorialCards;
+- (void)setSkippedTutorialCards:;
+- (BOOL)userAutomaticallyEnrolled;
+- (void)setUserAutomaticallyEnrolled:;
+- (BOOL)userExplicitlyOptedIn;
+- (void)setUserExplicitlyOptedIn:;
+- (BOOL)userExplicitlyOptedOut;
+- (void)setUserExplicitlyOptedOut:;
++ (id)eventName;
++ (id)stringForExitView:;
+@end

@@ -1,0 +1,2 @@
+@interface HTSLiveItemShareRoot : GPBRootObject
+@end

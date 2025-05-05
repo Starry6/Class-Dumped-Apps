@@ -1,0 +1,2 @@
+@interface IESLiveSaaSPBHostTeamIESLiveSaaSPBGeneralRoot : GPBRootObject
+@end

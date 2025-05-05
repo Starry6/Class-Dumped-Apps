@@ -1,0 +1,35 @@
+@interface SFAutomaticPasswordExplanationView : UIView
+@property (nonatomic) UILabel explanationLabel;
+@property (nonatomic) UILabel passwordRetrievalExpalantionLabel;
+@property (nonatomic) UIButton useStrongPasswordButton;
+@property (nonatomic) UIButton useOtherPasswordButton;
+@property (nonatomic) q keyboardAppearance;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setKeyboardAppearance:;
+- (void)layoutSubviews;
+- (id)systemLayoutSizeFittingSize:;
+- (long long)keyboardAppearance;
+- (void)scrollViewDidScroll:;
+- (void).cxx_destruct;
+- (id)initWithKeyboardType:;
+- (void)updateConstraints;
+- (void)safeAreaInsetsDidChange;
+- (void)_scrollViewDidLayoutSubviews:;
+- (void)_createSubviews;
+- (void)automaticPasswordScrollContentViewDidLayout:;
+- (void)_createLayoutConstraints;
+- (void)_updateWideAppearanceRequirement;
+- (void)_updateStrongPasswordHeightConstraint;
+- (void)_updateUseCustomPasswordBaselineToBottomConstraint;
+- (void)_updateMaximumPadding;
+- (void)_updateContentLayoutGuideBottomConstraint;
+- (BOOL)_scrollViewNeedsShadow:;
+- (void)_updateShadowViewAlpha;
+- (id)explanationLabel;
+- (id)passwordRetrievalExpalantionLabel;
+- (id)useStrongPasswordButton;
+- (id)useOtherPasswordButton;
+@end

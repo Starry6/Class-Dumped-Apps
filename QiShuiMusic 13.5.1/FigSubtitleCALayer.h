@@ -1,0 +1,34 @@
+@interface FigSubtitleCALayer : FigSubtitleBackdropCALayer
+@property (nonatomic) BOOL overscanSubtitleSupportEnabled;
+@property (nonatomic) NSString captionRenderingStrategy;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)removeAnimationsForKey:;
+- (id)actionForKey:;
+- (id)init;
+- (void)dealloc;
+- (void)setCaptionRendererOutputOptions:forKeyPath:;
+- (void)layoutSublayersOfLayer:;
+- (void)drawLayer:inContext:;
+- (void)setVideoRelativeToViewport:;
+- (void)_addBoundsAnimation:forKey:;
+- (void)updateNonForcedSubtitleDisplayEnabled:;
+- (void)setCaptionRendererOutputSeparated:;
+- (id)initWithLayer:;
+- (void)setVideosize:;
+- (void)setViewport:;
+- (void)clear;
+- (void)setPlayer:;
+- (void)_addPositionAnimation:forKey:;
+- (void)setCaptionRenderingStrategy:;
+- (BOOL)isOverscanSubtitleSupportEnabled;
+- (void)setOverscanSubtitleSupportEnabled:;
+- (void)setSubtitleGravityNonObscuring:;
+- (void)addAnimations:forKey:;
+- (id)captionRenderingStrategy;
+- (void)handleNeedsLayoutNotification;
+- (void)setCaptionsAvoidanceMargins:;
++ (id)defaultActionForKey:;
+@end

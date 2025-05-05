@@ -1,0 +1,35 @@
+@interface EKPersistentAttendee : EKPersistentParticipant
+@property (nonatomic) NSInteger statusRaw;
+@property (nonatomic) q participantRole;
+@property (nonatomic) q participantType;
+@property (nonatomic) NSInteger pendingStatus;
+@property (nonatomic) NSDate lastModified;
+@property (nonatomic) BOOL commentChanged;
+@property (nonatomic) BOOL statusChanged;
+@property (nonatomic) BOOL proposedStartDateChanged;
+- (int)entityType;
+- (id)description;
+- (void)setFlags:;
+- (unsigned int)flags;
+- (id)copyWithZone:;
+- (BOOL)isCurrentUser;
+- (long long)participantType;
+- (long long)participantRole;
+- (void)setParticipantRole:;
+- (void)setParticipantType:;
+- (int)statusRaw;
+- (void)setStatusRaw:;
+- (int)pendingStatusRaw;
+- (void)setPendingStatusRaw:;
+- (void)setLastModifiedParticipationStatus:;
+- (id)lastModifiedParticipationStatus;
+- (id)initWithEmailAddress:name:;
+- (id)initWithName:emailAddress:address:;
+- (id)initWithAddress:name:;
++ (id)relations;
++ (id)defaultPropertiesToLoad;
++ (Class)meltedClass;
++ (id)propertiesToUnloadOnCommit;
++ (id)attendeeWithEmailAddress:name:;
++ (id)attendeeWithName:emailAddress:address:;
+@end

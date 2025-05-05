@@ -1,0 +1,34 @@
+@interface GEOPDAutocompleteOriginationInfo : PBCodable
+@property (nonatomic) BOOL hasAutocompleteOriginationType;
+@property (nonatomic) NSInteger autocompleteOriginationType;
+@property (nonatomic) BOOL hasRoutePlanningParameters;
+@property (nonatomic) GEOPDAutocompleteOriginationRoutePlanningParameters routePlanningParameters;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (BOOL)hasGreenTeaWithValue:;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (int)autocompleteOriginationType;
+- (void)setAutocompleteOriginationType:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void)setHasAutocompleteOriginationType:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (BOOL)hasAutocompleteOriginationType;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (id)autocompleteOriginationTypeAsString:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (int)StringAsAutocompleteOriginationType:;
+- (BOOL)hasRoutePlanningParameters;
+- (id)routePlanningParameters;
+- (void)setRoutePlanningParameters:;
++ (BOOL)isValid:;
+@end

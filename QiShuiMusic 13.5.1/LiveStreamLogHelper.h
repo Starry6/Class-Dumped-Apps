@@ -1,0 +1,31 @@
+@interface LiveStreamLogHelper : NSObject
+@property (nonatomic) q liveStreamLogFlag;
+@property (nonatomic) @? liveStreamLogCallback;
+@property (nonatomic) NSDictionary basicTraceInfo;
+@property (nonatomic) NSObject<OS_dispatch_queue> queue;
+@property (nonatomic) ^v LSLogQueueKey;
+@property (nonatomic) BOOL enableCommonLog;
+- (void)runSyncOnQueue:;
+- (id)LSLogQueueKey;
+- (BOOL)enableCommonLog;
+- (id)basicTraceInfo;
+- (id)liveStreamLogCallback;
+- (long long)liveStreamLogFlag;
+- (void)logAlogKibana:dicLog:;
+- (void)logKibanaWithBasicInfoWithLogLevel:event:log:;
+- (void)logKibanaWithKey:dic:;
+- (void)logKibanaWithlogLevel:event:log:;
+- (void)logKibanaWithlogLevel:log:;
+- (void)setBasicTraceInfo:;
+- (void)setEnableCommonLog:;
+- (void)setLSLogQueueKey:;
+- (void)setLiveStreamLogCallback:;
+- (void)setLiveStreamLogFlag:;
+- (id)init;
+- (void).cxx_destruct;
+- (void)setQueue:;
+- (id)queue;
+- (id)currentTimestamp;
++ (id)getDictionaryFromString:;
++ (id)sharedInstance;
+@end

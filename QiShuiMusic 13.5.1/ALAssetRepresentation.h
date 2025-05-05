@@ -1,0 +1,30 @@
+@interface ALAssetRepresentation : NSObject
+@property (nonatomic) ALAssetRepresentationPrivate internal;
+@property (nonatomic) BOOL ignoreRead;
+- (void)setInternal:;
+- (id)dimensions;
+- (id)filename;
+- (id)url;
+- (void)dealloc;
+- (id)metadata;
+- (long long)orientation;
+- (id)internal;
+- (BOOL)isValid;
+- (id)UTI;
+- (id)description;
+- (float)scale;
+- (id)_imageData;
+- (long long)size;
+- (int)_fileDescriptor;
+- (id)fullScreenImage;
+- (unsigned long long)getBytes:fromOffset:length:error:;
+- (id)initWithManagedAsset:sidecar:extension:library:;
+- (id)CGImageWithOptions:format:;
+- (id)CGImageWithOptions:;
+- (id)fullResolutionImage;
+- (id)zoomableDisplayImage;
+- (id)_largeDisplayableImageForFormatID:;
+- (BOOL)ignoreRead;
+- (void)setIgnoreRead:;
++ (void)_enableImageDataUsesMap;
+@end

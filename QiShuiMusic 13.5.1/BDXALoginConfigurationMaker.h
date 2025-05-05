@@ -1,0 +1,31 @@
+@interface BDXALoginConfigurationMaker : NSObject
+@property (nonatomic) BDXALoginConfiguration configuration;
+@property (nonatomic) BDXAPageContentMaker commonPageContentMaker;
+@property (nonatomic) NSMutableDictionary loginTypeToPageContentMakerDictionary;
+- (id)safeEnv;
+- (id)agreements;
+- (id)bottomClickableText;
+- (id)carrierOneKey;
+- (id)commonPageContentMaker;
+- (id)displayedExtraLoginArray;
+- (id)loginTypeToLoginVCNameDic;
+- (id)loginTypeToPageContentMakerDictionary;
+- (id)mainButtonText;
+- (id)packedExtraLoginArray;
+- (id)pageContentMakerForLoginType:;
+- (id)passwordLoginMode;
+- (void)setCommonPageContentMaker:;
+- (void)setLoginTypeToPageContentMakerDictionary:;
+- (id)thirdParties;
+- (id)topRightButton;
+- (id)password;
+- (id)common;
+- (void)setConfiguration:;
+- (id)configuration;
+- (void).cxx_destruct;
+- (id)sms;
+- (id)initWithConfiguration:;
+- (id)otherButtonText;
+- (id)pageTitle;
+- (id)loginType;
+@end

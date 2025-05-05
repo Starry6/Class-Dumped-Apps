@@ -1,0 +1,35 @@
+@interface BYCapabilities : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)supportsApplePay;
+- (BOOL)supportsTouchID;
+- (BOOL)isTouchIDEnrolled;
+- (BOOL)supportsPearl;
+- (BOOL)isPearlEnrolled;
+- (BOOL)supportsPeriocularFaceID;
+- (BOOL)hasEligibleEnrolledIdentityForPeriocularFaceIDEnrollment;
+- (BOOL)supportsAppleWatch;
+- (BOOL)supportsKappaDetection;
+- (BOOL)canShowSiriScreen;
+- (BOOL)canShowPaymentScreen;
+- (BOOL)canShowTouchIDScreen;
+- (BOOL)canShowFaceIDScreen;
+- (BOOL)canShowPasscodeScreen;
+- (BOOL)canShowAppleIDScreen;
+- (BOOL)isSiriRestricted;
+- (BOOL)isDeviceAnalyticsRestricted;
+- (BOOL)isCloudAnalyticsRestricted;
+- (BOOL)isScreenTimeRestricted;
+- (BOOL)mgHasSiriCapability;
+- (BOOL)mgHasSecureElement;
+- (BOOL)mgHasMesa;
+- (BOOL)mgHasCellularData;
+- (BOOL)mgHasCellularTelephony;
+- (BOOL)mgHasGreenTea;
+- (id)_paymentScreenRequirements;
+- (BOOL)_paymentScreenRequirementsIncludePasscode:;
+- (BOOL)_paymentScreenRequirementsIncludeiCloud:;
++ (id)sharedCapabilities;
+@end

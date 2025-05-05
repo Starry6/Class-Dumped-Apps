@@ -1,0 +1,23 @@
+@interface UIKBRenderFactoryNumberPad : UIKBRenderFactory
+- (double)symbolImageControlKeyFontSize;
+- (void)setupLayoutSegments;
+- (id)_traitsForKey:onKeyplane:;
+- (long long)lightHighQualityEnabledBlendForm;
+- (id)controlKeyBackgroundColorName;
+- (id)controlKeyForegroundColorName;
+- (id)defaultKeyDividerColorName;
+- (id)controlKeyDividerColorName;
+- (double)numberFontSize;
+- (double)letterFontSize;
+- (id)deleteGlyphOffset;
+- (id)dictationGlyphOffset;
+- (id)leftColumnNumberOffset;
+- (id)leftColumnLetterOffset;
+- (id)centerColumnNumberOffset;
+- (id)centerColumnLetterOffset;
+- (id)rightColumnNumberOffset;
+- (id)rightColumnLetterOffset;
+- (id)loneZeroOffset;
+- (id)specialSymbolOffset;
+- (void)_customizeSymbolStyle:secondaryStyle:forKey:contents:;
+@end

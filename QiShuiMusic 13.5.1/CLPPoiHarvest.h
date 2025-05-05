@@ -1,0 +1,31 @@
+@interface CLPPoiHarvest : PBCodable
+@property (nonatomic) CLPPoiTriggerEvent triggerEvent;
+@property (nonatomic) NSMutableArray locations;
+@property (nonatomic) NSMutableArray accessPoints;
+- (id)accessPoints;
+- (void)clearLocations;
+- (void)setLocations:;
+- (id)locations;
+- (void)setTriggerEvent:;
+- (id)triggerEvent;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)addLocations:;
+- (void)copyTo:;
+- (void)setAccessPoints:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)clearAccessPoints;
+- (unsigned long long)accessPointsCount;
+- (unsigned long long)locationsCount;
+- (id)locationsAtIndex:;
+- (void)addAccessPoints:;
+- (id)accessPointsAtIndex:;
++ (Class)locationsType;
++ (Class)accessPointsType;
+@end

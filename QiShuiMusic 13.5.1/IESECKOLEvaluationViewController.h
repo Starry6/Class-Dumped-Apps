@@ -1,0 +1,32 @@
+@interface IESECKOLEvaluationViewController : UIViewController
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)tapMore;
+- (void)tapShoppingCart;
+- (id)cellModelWithEvaluationModel:;
+- (id)collectionView:layoutForSection:;
+- (id)createHybridContainer;
+- (void)finishRefreshing;
+- (void)loadMoreData;
+- (void)setupRefreshControl;
+- (void)setupTracker;
+- (void)tapClose;
+- (void)tapShare;
+- (void)tapTitle;
+- (void)trackPageEnter;
+- (void)videoFeedScrollDidEndAtIndex:;
+- (id)collectionView:layout:sizeForItemAtIndexPath:;
+- (void)collectionView:willDisplayCell:forItemAtIndexPath:;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (void)scrollViewDidScroll:;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (void).cxx_destruct;
+- (long long)numberOfSectionsInCollectionView:;
+- (void)viewWillAppear:;
+- (id)initWithConfiguration:;
+- (void)viewDidLoad;
+- (void)setupSubviews;
+@end

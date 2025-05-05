@@ -1,0 +1,37 @@
+@interface IESECPDPSlideFoldProgress : NSObject
+@property (nonatomic) CADisplayLink displayLink;
+@property (nonatomic) double startProgress;
+@property (nonatomic) double targetProgress;
+@property (nonatomic) double nowProgress;
+@property (nonatomic) Q frameInterval;
+@property (nonatomic) <IESECPDPSlideFoldProgressDelegate> delegate;
+@property (nonatomic) BOOL isWorking;
+@property (nonatomic) double unitProcess;
+@property (nonatomic) Q counter;
+- (void)setUnitProcess:;
+- (void)setNowProgress:;
+- (id)initWithStartProgress:frameInterval:delegate:;
+- (double)nowProgress;
+- (void)postAction:;
+- (void)setIsWorking:;
+- (void)triggerDisplayLink:;
+- (double)unitProcess;
+- (id)displayLink;
+- (void)setDisplayLink:;
+- (void)setupDisplayLink;
+- (void)dealloc;
+- (void)setFrameInterval:;
+- (void)invalidateDisplayLink;
+- (unsigned long long)frameInterval;
+- (void)setDelegate:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (unsigned long long)counter;
+- (unsigned long long)status;
+- (double)startProgress;
+- (void)setCounter:;
+- (void)setStartProgress:;
+- (double)targetProgress;
+- (void)setTargetProgress:;
+- (BOOL)isWorking;
+@end

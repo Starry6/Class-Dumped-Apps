@@ -1,0 +1,33 @@
+@interface SRSTSchemaSRSTStateTransitionEvent : SISchemaInstrumentationMessage
+@property (nonatomic) NSInteger currentState;
+@property (nonatomic) BOOL hasCurrentState;
+@property (nonatomic) NSInteger previousState;
+@property (nonatomic) BOOL hasPreviousState;
+@property (nonatomic) NSInteger reason;
+@property (nonatomic) BOOL hasReason;
+@property (nonatomic) NSData jsonData;
+- (void)setCurrentState:;
+- (int)currentState;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (int)reason;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void)setReason:;
+- (void)setPreviousState:;
+- (BOOL)hasReason;
+- (void)setHasReason:;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (int)previousState;
+- (void)setHasPreviousState:;
+- (BOOL)hasPreviousState;
+- (void)deleteReason;
+- (BOOL)hasCurrentState;
+- (void)setHasCurrentState:;
+- (void)deleteCurrentState;
+- (void)deletePreviousState;
+@end

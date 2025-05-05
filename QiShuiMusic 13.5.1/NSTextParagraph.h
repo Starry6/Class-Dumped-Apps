@@ -1,0 +1,38 @@
+@interface NSTextParagraph : NSTextElement
+@property (nonatomic) NSDictionary attributes;
+@property (nonatomic) BOOL isBeginningOfParagraph;
+@property (nonatomic) BOOL isEndOfParagraph;
+@property (nonatomic) NSAttributedString attributedString;
+@property (nonatomic) NSTextRange paragraphContentRange;
+@property (nonatomic) NSTextRange paragraphSeparatorRange;
+- (id)locationForOffset:actualRange:;
+- (id)paragraphRange;
+- (id)initWithTextAttachment:attributes:;
+- (void)_setContainsTextAttachments:;
+- (void)synchronizeDocumentRange;
+- (void)setIsBeginningOfParagraph:;
+- (void)setIsEndOfParagraph:;
+- (id)init;
+- (id)paragraphContentRange;
+- (id)initWithTextContentManager:;
+- (id)offsetRangeForLocation:;
+- (BOOL)isBeginningOfParagraph;
+- (id)initWithAttributedString:range:;
+- (BOOL)isEndOfParagraph;
+- (void)dealloc;
+- (id)initWithString:attributes:;
+- (void)setAttributedString:;
+- (id)initWithAttributedString:;
+- (id)attributedString;
+- (long long)_resolvedBaseWritingDirectionWithFallbackDirection:;
+- (void)setAttributes:;
+- (id)attributes;
+- (void)setParagraphSeparatorRange:;
+- (BOOL)_containsTextAttachments;
+- (void)enumerateSubstringsFromLocation:options:usingBlock:;
+- (id)description;
+- (void)setParagraphContentRange:;
+- (id)paragraphSeparatorRange;
+- (id)estimatedIntrinsicContentSizeForTextLayoutManager:;
++ (id)textParagraphsForAttributedString:range:;
+@end

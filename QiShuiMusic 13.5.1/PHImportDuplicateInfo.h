@@ -1,0 +1,32 @@
+@interface PHImportDuplicateInfo : NSObject
+@property (nonatomic) NSMutableDictionary info;
+@property (nonatomic) NSString uuid;
+@property (nonatomic) NSString fileName;
+@property (nonatomic) NSDate imageDate;
+@property (nonatomic) NSDate alternateImportImageDate;
+@property (nonatomic) NSNumber fileSize;
+@property (nonatomic) BOOL isInTrash;
+@property (nonatomic) NSString fingerprint;
+@property (nonatomic) NSString avchdFingerprint;
+@property (nonatomic) double timezoneOffset;
+@property (nonatomic) BOOL hasVideoComplement;
+- (id)fileSize;
+- (id)objectID;
+- (id)fileName;
+- (id)fingerprint;
+- (BOOL)isLegacy;
+- (id)uuid;
+- (void)setInfo:;
+- (double)timezoneOffset;
+- (id)originatingAssetIdentifier;
+- (void).cxx_destruct;
+- (id)description;
+- (id)info;
+- (id)initWithAssetInfo:;
+- (id)imageDate;
+- (id)alternateImportImageDate;
+- (void)setAlternateImportImageDate:;
+- (BOOL)hasVideoComplement;
+- (BOOL)isInTrash;
+- (id)avchdFingerprint;
+@end

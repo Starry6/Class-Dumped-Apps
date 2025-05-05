@@ -1,0 +1,36 @@
+@interface MRPlaybackSessionRequest : NSObject
+@property (nonatomic) _MRPlaybackSessionRequestProtobuf protobuf;
+@property (nonatomic) NSString requestIdentifier;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) NSString type;
+@property (nonatomic) Q location;
+@property (nonatomic) BOOL hasLocation;
+@property (nonatomic) Q length;
+@property (nonatomic) BOOL hasLength;
+@property (nonatomic) NSData data;
+@property (nonatomic) {_NSRange=QQ} range;
+- (id)requestIdentifier;
+- (void)setHasLocation:;
+- (BOOL)hasLocation;
+- (id)initWithProtobuf:;
+- (id)data;
+- (id)protobuf;
+- (id)identifier;
+- (void)setType:;
+- (unsigned long long)location;
+- (BOOL)hasLength;
+- (id)range;
+- (void)setHasLength:;
+- (void)setRequestIdentifier:;
+- (id)type;
+- (id)initWithIdentifier:type:;
+- (id)initWithData:;
+- (void)setLocation:;
+- (void).cxx_destruct;
+- (id)description;
+- (unsigned long long)length;
+- (void)setLength:;
+- (void)setIdentifier:;
+- (BOOL)isEqual:;
+- (id)initWithIdentifier:range:;
+@end

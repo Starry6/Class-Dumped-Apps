@@ -1,0 +1,2 @@
+@interface HTSLiveBattleFrontRankRoot : GPBRootObject
+@end

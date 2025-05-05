@@ -1,0 +1,16 @@
+@interface IDSRegistrationPhoneNumberReceivedSMSMetric : NSObject
+@property (nonatomic) NSString guid;
+@property (nonatomic) NSNumber smsRoundTripDuration;
+@property (nonatomic) NSDictionary dictionaryRepresentation;
+@property (nonatomic) NSString name;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void).cxx_destruct;
+- (id)guid;
+- (id)name;
+- (id)dictionaryRepresentation;
+- (id)initWithGuid:smsRoundTripDuration:;
+- (id)smsRoundTripDuration;
+@end

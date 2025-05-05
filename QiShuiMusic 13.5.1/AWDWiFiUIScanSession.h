@@ -1,0 +1,37 @@
+@interface AWDWiFiUIScanSession : PBCodable
+@property (nonatomic) BOOL hasTimestamp;
+@property (nonatomic) Q timestamp;
+@property (nonatomic) BOOL hasDuration;
+@property (nonatomic) I duration;
+@property (nonatomic) NSMutableArray counts;
+@property (nonatomic) BOOL hasProcess;
+@property (nonatomic) NSString process;
+- (id)counts;
+- (void)clearCounts;
+- (void)dealloc;
+- (BOOL)hasDuration;
+- (void)setHasDuration:;
+- (BOOL)hasProcess;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)setProcess:;
+- (void)copyTo:;
+- (void)setDuration:;
+- (void)setHasTimestamp:;
+- (void)mergeFrom:;
+- (BOOL)hasTimestamp;
+- (void)setTimestamp:;
+- (void)setCounts:;
+- (id)process;
+- (BOOL)readFrom:;
+- (unsigned long long)timestamp;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (unsigned long long)countsCount;
+- (unsigned int)duration;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)addCounts:;
+- (id)countsAtIndex:;
++ (Class)countsType;
+@end

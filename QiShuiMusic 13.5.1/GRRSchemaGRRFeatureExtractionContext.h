@@ -1,0 +1,37 @@
+@interface GRRSchemaGRRFeatureExtractionContext : SISchemaInstrumentationMessage
+@property (nonatomic) SISchemaUUID contextId;
+@property (nonatomic) BOOL hasContextId;
+@property (nonatomic) GRRSchemaGRRFeatureExtractionStarted startedOrChanged;
+@property (nonatomic) BOOL hasStartedOrChanged;
+@property (nonatomic) GRRSchemaGRRFeatureExtracted ended;
+@property (nonatomic) BOOL hasEnded;
+@property (nonatomic) NSData jsonData;
+@property (nonatomic) Q whichContextevent;
+- (void)setContextId:;
+- (id)contextId;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (BOOL)hasEnded;
+- (void)setStartedOrChanged:;
+- (id)startedOrChanged;
+- (id)ended;
+- (void)setEnded:;
+- (void)setHasEnded:;
+- (void)setHasStartedOrChanged:;
+- (void)deleteStartedOrChanged;
+- (void)deleteEnded;
+- (unsigned long long)whichContextevent;
+- (BOOL)hasStartedOrChanged;
+- (BOOL)hasContextId;
+- (void)deleteContextId;
+- (void)setHasContextId:;
+@end

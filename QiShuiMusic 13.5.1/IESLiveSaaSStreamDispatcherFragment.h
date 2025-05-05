@@ -1,0 +1,31 @@
+@interface IESLiveSaaSStreamDispatcherFragment : IESLiveRoomComponent
+@property (nonatomic) IESLiveSaaSStreamDispatcherAPI api;
+@property (nonatomic) RACDisposable disposable;
+@property (nonatomic) <IESLiveSaaSRealStreamingProvider> streamingProvider;
+@property (nonatomic) <HTSLiveSaaSStreamPlayerProvider> playerProvider;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)sendToLiveCore:;
+- (id)disposable;
+- (void)handleControlParams:;
+- (id)playerProvider;
+- (id)pr_convertToDict:;
+- (id)pr_convertToDict:error:;
+- (void)requestWithRandom:Data:;
+- (void)sendToPlayerProvider:;
+- (void)setDisposable:;
+- (void)setPlayerProvider:;
+- (void)setStreamingProvider:;
+- (int)shuffleTime:upper:;
+- (id)streamingProvider;
+- (void)dealloc;
+- (void)setup;
+- (void).cxx_destruct;
+- (void)messageReceived:;
+- (id)api;
+- (id)initWithComponentContext:;
+- (void)setApi:;
++ (id)componentWithRoom:trackContext:componentContext:;
+@end

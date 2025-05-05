@@ -1,0 +1,35 @@
+@interface CKFetchNotificationChangesOperation : CKOperation
+@property (nonatomic) CKServerChangeToken resultServerChangeToken;
+@property (nonatomic) BOOL moreComing;
+@property (nonatomic) <CKFetchNotificationChangesOperationCallbacks> clientOperationCallbackProxy;
+@property (nonatomic) CKFetchNotificationChangesOperationInfo operationInfo;
+@property (nonatomic) CKServerChangeToken previousServerChangeToken;
+@property (nonatomic) Q resultsLimit;
+@property (nonatomic) @? notificationChangedBlock;
+@property (nonatomic) @? fetchNotificationChangesCompletionBlock;
+- (void)_finishOnCallbackQueueWithError:;
+- (void)setResultsLimit:;
+- (void)setPreviousServerChangeToken:;
+- (id)previousServerChangeToken;
+- (id)activityCreate;
+- (id)init;
+- (id)initWithPreviousServerChangeToken:;
+- (unsigned long long)resultsLimit;
+- (void)performCKOperation;
+- (void)setResultServerChangeToken:;
+- (void)fillFromOperationInfo:;
+- (BOOL)hasCKOperationCallbacksSet;
+- (void).cxx_destruct;
+- (void)fillOutOperationInfo:;
+- (id)resultServerChangeToken;
+- (BOOL)moreComing;
+- (void)setMoreComing:;
+- (void)handleOperationDidCompleteWithServerChangeToken:moreComing:metrics:error:;
+- (void)handleChangedNotification:;
+- (void)setNotificationChangedBlock:;
+- (id)notificationChangedBlock;
+- (void)setFetchNotificationChangesCompletionBlock:;
+- (id)fetchNotificationChangesCompletionBlock;
++ (void)applyDaemonCallbackInterfaceTweaks:;
++ (SEL)daemonCallbackCompletionSelector;
+@end

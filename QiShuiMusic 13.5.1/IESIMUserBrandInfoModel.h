@@ -1,0 +1,38 @@
+@interface IESIMUserBrandInfoModel : MTLModel
+@property (nonatomic) NSNumber categoryID;
+@property (nonatomic) NSString categoryName;
+@property (nonatomic) NSNumber brandID;
+@property (nonatomic) NSString brandName;
+@property (nonatomic) IESIMURLModel logoURL;
+@property (nonatomic) NSNumber heat;
+@property (nonatomic) NSNumber rank;
+@property (nonatomic) NSNumber rankDiff;
+@property (nonatomic) NSString tagName;
+@property (nonatomic) NSDictionary dictionaryValue;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)heat;
+- (id)rankDiff;
+- (void)setHeat:;
+- (void)setRankDiff:;
+- (id)categoryID;
+- (void)setCategoryID:;
+- (id)rank;
+- (void)setBrandName:;
+- (id)initWithDict:;
+- (id)brandName;
+- (void).cxx_destruct;
+- (void)setRank:;
+- (id)tagName;
+- (id)categoryName;
+- (void)setCategoryName:;
+- (id)logoURL;
+- (void)setLogoURL:;
+- (void)setTagName:;
+- (id)brandID;
+- (void)setBrandID:;
++ (id)logoURLJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

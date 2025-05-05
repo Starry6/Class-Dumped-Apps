@@ -1,0 +1,38 @@
+@interface IESECGoodsDetailDetailTopInfoViewModel : IESECGoodsDetailPageBaseViewModel
+@property (nonatomic) NSArray itemNameList;
+@property (nonatomic) double tableHeaderWidth;
+@property (nonatomic) {CGPoint=dd} propertySKUContentOffset;
+- (id)currentAuthInfo;
+- (BOOL)hasMoreProperty;
+- (unsigned long long)currentSelectedSKUIndex;
+- (id)currentSubProductLabelElement;
+- (id)currentTableItemList;
+- (BOOL)hasSubProductAtSKUIndex:;
+- (id)itemNameList;
+- (void)listAdapter:willDisplaySectionController:cell:atIndex:;
+- (id)propertySKUContentOffset;
+- (void)selectPropertySKU:;
+- (void)selectPropertySKUFrom:To:;
+- (void)selectPropertySKUToSKUId:withCompletion:;
+- (void)setItemNameList:;
+- (void)setPropertySKUContentOffset:;
+- (void)setTableHeaderWidth:;
+- (void)setupCurrentViewSize;
+- (id)setupPropertySKUCoverElement:;
+- (id)setupPropertySKUTextElement:;
+- (id)setupSubProductLabel:;
+- (id)setupTableItemListWith:;
+- (void)setupViewModel;
+- (BOOL)showMultiPropertySKUs;
+- (long long)showTableLineCount;
+- (double)tableHeaderWidth;
+- (double)tableItemHeaderWidth;
+- (id)topInfoDataModel;
+- (id)topInfoMetaModel;
+- (void)trackPropertyView;
+- (void)unselectPropertySKU:;
+- (void)updateDataModel:;
+- (id)tracker;
+- (void).cxx_destruct;
+- (double)tableHeight;
+@end

@@ -1,0 +1,33 @@
+@interface IESMMEffectHelper : NSObject
+@property (nonatomic) NSInteger logLevel;
+@property (nonatomic) BOOL enableLog;
+@property (nonatomic) BOOL effectLoaded;
+@property (nonatomic) BOOL lazyEffect;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)effectSDKCommit;
+- (void)configEffectABValue:key:type:;
+- (void)configRegisterABTest:;
+- (BOOL)effectLoaded;
+- (void)enableEffectLog:;
+- (BOOL)enableLog;
+- (id)getEffectABInfoByKey:type:;
+- (id)getEffectVersion;
+- (BOOL)lazyEffect;
+- (void)setEffectDidLoadBlock:;
+- (void)setEffectLoaded:;
+- (void)setEffectLogLevel:;
+- (void)setEnableLog:;
+- (void)setLazyEffect:;
+- (void)setupEffect;
+- (void)setupEffectLogAppLogFunc;
+- (void)setupEffectLogMonitorFunc;
+- (unsigned long long)veTypeFromEffectType:;
+- (id)init;
+- (void)dealloc;
+- (void)setLogLevel:;
+- (int)logLevel;
+- (void).cxx_destruct;
+@end

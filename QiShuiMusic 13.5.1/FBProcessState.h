@@ -1,0 +1,31 @@
+@interface FBProcessState : NSObject
+@property (nonatomic) NSInteger pid;
+@property (nonatomic) q taskState;
+@property (nonatomic) q visibility;
+@property (nonatomic) BOOL debugging;
+@property (nonatomic) BOOL running;
+@property (nonatomic) BOOL foreground;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)taskState;
+- (id)init;
+- (BOOL)isForeground;
+- (void)setVisibility:;
+- (id)initWithPid:;
+- (void)setTaskState:;
+- (long long)visibility;
+- (BOOL)isDebugging;
+- (id)succinctDescriptionBuilder;
+- (BOOL)isRunning;
+- (void)setDebugging:;
+- (int)pid;
+- (id)succinctDescription;
+- (id)description;
+- (id)descriptionBuilderWithMultilinePrefix:;
+- (BOOL)isEqual:;
+- (void)setPid:;
+- (id)descriptionWithMultilinePrefix:;
+- (id)copyWithZone:;
+@end

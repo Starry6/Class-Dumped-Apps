@@ -1,0 +1,33 @@
+@interface PuzzleNetworkRequestModel : NSObject
+@property (nonatomic) NSString urlString;
+@property (nonatomic) NSString method;
+@property (nonatomic) NSDictionary headers;
+@property (nonatomic) NSDictionary queryParameters;
+@property (nonatomic) NSDictionary params;
+@property (nonatomic) NSDictionary data;
+@property (nonatomic) BOOL requestForJSON;
+@property (nonatomic) BOOL requestTypePB;
+@property (nonatomic) BOOL requestForBinary;
+@property (nonatomic) BOOL needCommonParams;
+- (BOOL)needCommonParams;
+- (BOOL)requestForBinary;
+- (BOOL)requestForJSON;
+- (BOOL)requestTypePB;
+- (void)setNeedCommonParams:;
+- (void)setRequestForBinary:;
+- (void)setRequestForJSON:;
+- (void)setRequestTypePB:;
+- (id)urlString;
+- (id)data;
+- (id)method;
+- (id)queryParameters;
+- (void)setHeaders:;
+- (void).cxx_destruct;
+- (void)setData:;
+- (void)setMethod:;
+- (void)setUrlString:;
+- (id)headers;
+- (id)params;
+- (void)setQueryParameters:;
+- (void)setParams:;
+@end

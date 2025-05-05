@@ -1,0 +1,29 @@
+@interface JEHLSVideoPlaylist : NSObject
+@property (nonatomic) Q startPosition;
+@property (nonatomic) NSMutableArray rollItems;
+@property (nonatomic) NSArray mainFeatureMetricsData;
+@property (nonatomic) NSArray eventData;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void).cxx_destruct;
+- (unsigned long long)startPosition;
+- (void)setStartPosition:;
+- (id)itemAtOverallPosition:rangeOptions:;
+- (id)itemsBetweenStartOverallPosition:endOverallPosition:;
+- (id)initWithStartPosition:mainFeatureMetricsData:;
+- (id)initWithMainFeatureMetricsData:;
+- (void)addRollInfoItems:;
+- (void)addRollInfoItem:;
+- (void)addItemStartAtSeconds:durationSeconds:metricsData:;
+- (void)addItemStartAtMilliseconds:durationMilliseconds:metricsData:;
+- (void)addItemStartAtMilliseconds:endAtMilliseconds:metricsData:;
+- (id)rollItems;
+- (void)addRollItem:;
+- (id)mainFeatureItemWithStartOverallPosition:;
+- (long long)indexOfLastRollItemWithStartBeforePosition:;
+- (void)setRollItems:;
+- (id)mainFeatureMetricsData;
+- (void)setMainFeatureMetricsData:;
+@end

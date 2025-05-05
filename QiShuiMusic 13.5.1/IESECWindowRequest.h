@@ -1,0 +1,36 @@
+@interface IESECWindowRequest : NSObject
+@property (nonatomic) NSString uid;
+@property (nonatomic) NSString secUid;
+@property (nonatomic) NSString enterMethod;
+@property (nonatomic) NSString refer;
+@property (nonatomic) NSString entranceLocation;
+@property (nonatomic) NSString fromAwemeId;
+@property (nonatomic) NSDictionary extraData;
+@property (nonatomic) NSDictionary taskBannerRequest;
+@property (nonatomic) @? halfViewWillOpen;
+@property (nonatomic) @? halfViewWillClose;
+@property (nonatomic) @? halfViewCloseHandler;
+- (void)setEnterMethod:;
+- (void)setFromAwemeId:;
+- (id)enterMethod;
+- (id)entranceLocation;
+- (id)fromAwemeId;
+- (id)halfViewCloseHandler;
+- (id)halfViewWillClose;
+- (id)halfViewWillOpen;
+- (id)refer;
+- (id)secUid;
+- (void)setEntranceLocation:;
+- (void)setHalfViewCloseHandler:;
+- (void)setHalfViewWillClose:;
+- (void)setHalfViewWillOpen:;
+- (void)setRefer:;
+- (void)setSecUid:;
+- (void)setTaskBannerRequest:;
+- (id)taskBannerRequest;
+- (id)uid;
+- (void)setUid:;
+- (void).cxx_destruct;
+- (void)setExtraData:;
+- (id)extraData;
+@end

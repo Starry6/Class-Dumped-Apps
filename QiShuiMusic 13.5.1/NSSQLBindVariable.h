@@ -1,0 +1,27 @@
+@interface NSSQLBindVariable : NSObject
+- (unsigned char)sqlType;
+- (id)tombstonedPropertyDescription;
+- (void)dealloc;
+- (id)initWithValue:sqlType:propertyDescription:;
+- (void)setInt64:;
+- (id)propertyDescription;
+- (void)setTombstonedPropertyDescription:;
+- (BOOL)_isDeallocating;
+- (long long)int64;
+- (BOOL)hasObjectValue;
+- (unsigned int)index;
+- (id)release;
+- (void)setValue:;
+- (id)retain;
+- (void)setSQLType:;
+- (BOOL)_tryRetain;
+- (id)initWithInt64:sqlType:;
+- (void)setIndex:;
+- (id)initWithValue:sqlType:propertyDescription:allowCoercion:;
+- (id)value;
+- (unsigned int)unsignedInt;
+- (BOOL)allowsCoercion;
+- (id)initWithUnsignedInt:sqlType:;
+- (unsigned long long)retainCount;
+- (void)setUnsignedInt:;
+@end

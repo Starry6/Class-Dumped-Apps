@@ -1,0 +1,35 @@
+@interface SISchemaABClientEventMetadata : SISchemaInstrumentationMessage
+@property (nonatomic) SISchemaUUID siriDeviceId;
+@property (nonatomic) BOOL hasSiriDeviceId;
+@property (nonatomic) SISchemaUUID speechId;
+@property (nonatomic) BOOL hasSpeechId;
+@property (nonatomic) double timeIntervalSince1970;
+@property (nonatomic) BOOL hasTimeIntervalSince1970;
+@property (nonatomic) NSData jsonData;
+- (void)setTimeIntervalSince1970:;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (void)setSpeechId:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (id)speechId;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (double)timeIntervalSince1970;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (BOOL)hasTimeIntervalSince1970;
+- (void)setHasTimeIntervalSince1970:;
+- (BOOL)hasSpeechId;
+- (void)deleteSpeechId;
+- (BOOL)hasSiriDeviceId;
+- (void)deleteSiriDeviceId;
+- (id)siriDeviceId;
+- (void)setSiriDeviceId:;
+- (void)setHasSpeechId:;
+- (void)setHasSiriDeviceId:;
+- (void)deleteTimeIntervalSince1970;
+@end

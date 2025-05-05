@@ -1,0 +1,33 @@
+@interface HMDURLSettings : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
++ (id)crashUploadPath;
++ (id)configFetchPath;
++ (Class)_urlSettingsClass;
++ (id)classCoverageUploadPath;
++ (id)cloudCommandDownloadPath;
++ (id)cloudCommandUploadPath;
++ (id)configFetchDefaultHosts;
++ (id)crashEventUploadPath;
++ (id)crashUploadDefaultHost;
++ (id)crashUploadURL;
++ (id)evilMethodUploadPath;
++ (id)exceptionUploadDefaultHost;
++ (id)exceptionUploadPath;
++ (id)exceptionUploadPathWithMultipleHeader;
++ (id)fileUploadDefaultHost;
++ (id)fileUploadPath;
++ (id)memoryGraphUploadPath;
++ (id)memoryInfoUploadPath;
++ (id)performanceUploadDefaultHost;
++ (id)performanceUploadPath;
++ (id)quotaStateCheckPath;
++ (id)tracingUploadPath;
++ (id)tracingUploadPathWithMultipleHeader;
++ (id)userExceptionUploadDefaultHost;
++ (id)userExceptionUploadPath;
++ (id)userExceptionUploadPathWithMultipleHeader;
++ (id)defaultHost;
+@end

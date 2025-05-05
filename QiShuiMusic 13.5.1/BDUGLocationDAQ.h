@@ -1,0 +1,36 @@
+@interface BDUGLocationDAQ : NSObject
+@property (nonatomic) NSTimer pollingTimer;
+@property (nonatomic) BOOL isLocalReportInterval;
+@property (nonatomic) double lastNetChangeTimestamp;
+@property (nonatomic) double lastReportTimestamp;
+@property (nonatomic) double reportInterval;
+- (void)_daqReportLocationInfoWithType:;
+- (void)_invalidteTimer;
+- (void)reportExtraInfo;
+- (void)_coldLaunchReportLocation;
+- (void)_daqReportBasicInfoWithType:;
+- (void)_refreshLocationPollingReportIntervalWithType:;
+- (void)_reportLocationInfoWithType:;
+- (void)_requestAndReportLocationInfoWithType:;
+- (void)bootIntelligentDAQWithConfig:isCache:;
+- (void)coldLaunchReportInfo;
+- (BOOL)isLocalReportInterval;
+- (double)lastNetChangeTimestamp;
+- (double)lastReportTimestamp;
+- (void)onReceivedNetworkStatusChangedNotification:;
+- (void)onReceivedWillEnterBackgroundNotification:;
+- (void)onReceivedWillEnterForegroundNotification:;
+- (id)pollingTimer;
+- (double)reportInterval;
+- (void)setIsLocalReportInterval:;
+- (void)setLastNetChangeTimestamp:;
+- (void)setLastReportTimestamp:;
+- (void)setPollingTimer:;
+- (void)setReportInterval:;
+- (void)startDataAcquisition;
+- (id)uploadSourceWithType:;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
++ (id)sharedDAQ;
+@end

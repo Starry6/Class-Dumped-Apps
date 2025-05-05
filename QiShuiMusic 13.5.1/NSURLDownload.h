@@ -1,0 +1,38 @@
+@interface NSURLDownload : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSURLRequest request;
+@property (nonatomic) NSData resumeData;
+@property (nonatomic) BOOL deletesFileUponFailure;
+- (void)cancelAuthenticationChallenge:;
+- (void)continueWithoutCredentialForAuthenticationChallenge:;
+- (void)_setDelegate:;
+- (void)useCredential:forAuthenticationChallenge:;
+- (id)url;
+- (id)init;
+- (void)cancel;
+- (void)dealloc;
+- (void)_setDelegateQueue:;
+- (id)initWithRequest:delegate:;
+- (id)request;
+- (id)description;
+- (id)resumeData;
+- (id)_initWithLoadingConnection:request:response:delegate:proxy:;
+- (id)_initWithLoadingCFURLConnection:request:response:delegate:proxy:;
+- (id)_initWithRequest:delegate:directory:;
+- (id)_initWithResumeInformation:delegate:path:;
+- (id)initWithResumeData:delegate:path:;
+- (id)_resumeInformation;
+- (void)setDestination:allowOverwrite:;
+- (void)setDeletesFileUponFailure:;
+- (BOOL)deletesFileUponFailure;
+- (id)_directoryPath;
+- (void)_setDirectoryPath:;
+- (void)withDelegate:;
++ (id)_downloadWithLoadingConnection:request:response:delegate:proxy:;
++ (id)_downloadWithLoadingCFURLConnection:request:response:delegate:proxy:;
++ (id)_downloadWithRequest:delegate:directory:;
++ (BOOL)canResumeDownloadDecodedWithEncodingMIMEType:;
+@end

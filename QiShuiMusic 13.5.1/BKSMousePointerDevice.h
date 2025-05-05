@@ -1,0 +1,37 @@
+@interface BKSMousePointerDevice : NSObject
+@property (nonatomic) NSString preferenceKey;
+@property (nonatomic) NSString productName;
+@property (nonatomic) NSString manufacturerName;
+@property (nonatomic) BOOL hasVirtualMouseButtons;
+@property (nonatomic) BOOL supportsDragLock;
+@property (nonatomic) BKSHIDEventSenderDescriptor senderDescriptor;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setProductName:;
+- (id)productName;
+- (void)setManufacturerName:;
+- (void)setPreferences:;
+- (id)init;
+- (id)manufacturerName;
+- (id)preferences;
+- (id)senderDescriptor;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)initForProtobufDecoding;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)initWithSenderDescriptor:;
+- (BOOL)hasVirtualMouseButtons;
+- (void)setHasVirtualMouseButtons:;
+- (BOOL)supportsDragLock;
+- (void)setSupportsDragLock:;
+- (id)preferenceKey;
+- (void)setPreferenceKey:;
++ (id)protobufSchema;
++ (BOOL)supportsSecureCoding;
+@end

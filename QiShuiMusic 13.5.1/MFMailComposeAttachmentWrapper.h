@@ -1,0 +1,34 @@
+@interface MFMailComposeAttachmentWrapper : NSObject
+@property (nonatomic) NSData data;
+@property (nonatomic) NSString mimeType;
+@property (nonatomic) NSString fileName;
+@property (nonatomic) EFSandboxedURLWrapper fileURLWrapper;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) NSItemProvider itemProvider;
+@property (nonatomic) NSURL fileURL;
+- (unsigned long long)fileSize;
+- (id)fileName;
+- (id)data;
+- (id)identifier;
+- (id)initWithCoder:;
+- (id)mimeType;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)fileURL;
+- (id)description;
+- (void)setData:;
+- (void)setFileName:;
+- (void)setMimeType:;
+- (id)itemProvider;
+- (void)setIdentifier:;
+- (void)setItemProvider:;
+- (id)initWithFileURL:mimeType:;
+- (id)initWithData:mimeType:fileName:;
+- (id)initWithItemProvider:mimeType:fileName:;
+- (id)fileURLWrapper;
+- (void)setFileURLWrapper:;
++ (BOOL)supportsSecureCoding;
++ (id)wrapperWithFileURL:mimeType:;
++ (id)wrapperWithData:mimeType:fileName:;
++ (id)wrapperWithItemProvider:mimeType:fileName:;
+@end

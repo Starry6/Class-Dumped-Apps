@@ -1,0 +1,38 @@
+@interface MKVibrantLabel : MKVibrantView
+@property (nonatomic) NSString text;
+@property (nonatomic) UIColor textColor;
+@property (nonatomic) NSAttributedString attributedText;
+@property (nonatomic) UIFont font;
+@property (nonatomic) q numberOfLines;
+@property (nonatomic) q textAlignment;
+@property (nonatomic) float _hyphenationFactor;
+@property (nonatomic) BOOL allowsDefaultTighteningForTruncation;
+@property (nonatomic) BOOL adjustsFontForContentSizeCategory;
+@property (nonatomic) double idealWidth;
+@property (nonatomic) q lineBreakMode;
+- (void)setAttributedText:;
+- (void)setLineBreakMode:;
+- (void)setText:;
+- (id)viewForFirstBaselineLayout;
+- (void)setFont:;
+- (void)setAdjustsFontForContentSizeCategory:;
+- (id)viewForLastBaselineLayout;
+- (long long)lineBreakMode;
+- (float)_hyphenationFactor;
+- (void)setAllowsDefaultTighteningForTruncation:;
+- (void)setTextColor:;
+- (BOOL)allowsDefaultTighteningForTruncation;
+- (void).cxx_destruct;
+- (id)font;
+- (id)textColor;
+- (long long)textAlignment;
+- (void)setNumberOfLines:;
+- (void)setTextAlignment:;
+- (BOOL)adjustsFontForContentSizeCategory;
+- (long long)numberOfLines;
+- (id)attributedText;
+- (id)text;
+- (id)initWithStyle:;
+- (void)_setHyphenationFactor:;
+- (double)idealWidth;
+@end

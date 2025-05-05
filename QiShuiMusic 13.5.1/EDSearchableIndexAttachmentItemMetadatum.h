@@ -1,0 +1,36 @@
+@interface EDSearchableIndexAttachmentItemMetadatum : NSObject
+@property (nonatomic) NSString name;
+@property (nonatomic) NSString domainIdentifier;
+@property (nonatomic) NSString accountIdentifier;
+@property (nonatomic) NSArray mailboxIdentifiers;
+@property (nonatomic) NSString senderAddress;
+@property (nonatomic) NSArray recipientAddresses;
+@property (nonatomic) NSDate dateReceived;
+@property (nonatomic) NSDate dateSent;
+@property (nonatomic) NSURL attachmentFileURL;
+@property (nonatomic) BOOL canReadAttachmentFile;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)domainIdentifier;
+- (void)setName:;
+- (void)setAccountIdentifier:;
+- (id)accountIdentifier;
+- (void)setDateReceived:;
+- (void).cxx_destruct;
+- (id)dateReceived;
+- (id)name;
+- (void)setRecipientAddresses:;
+- (void)setDomainIdentifier:;
+- (id)dateSent;
+- (void)setDateSent:;
+- (void)setMailboxIdentifiers:;
+- (id)mailboxIdentifiers;
+- (id)recipientAddresses;
+- (id)senderAddress;
+- (void)setSenderAddress:;
+- (id)initWithAttachmentFileURL:builder:;
+- (BOOL)canReadAttachmentFile;
+- (id)attachmentFileURL;
+@end

@@ -1,0 +1,36 @@
+@interface NWPrivacyProxyTraffic : NSObject
+@property (nonatomic) BOOL safariUnencrypted;
+@property (nonatomic) BOOL safariDNS;
+@property (nonatomic) BOOL safariTrackers;
+@property (nonatomic) BOOL safariAll;
+@property (nonatomic) BOOL safariHTTP;
+@property (nonatomic) BOOL mailTrackers;
+@property (nonatomic) BOOL anyUnencrypted;
+@property (nonatomic) BOOL anyDNS;
+@property (nonatomic) BOOL anyKnownTrackers;
+@property (nonatomic) BOOL anyAppTrackers;
+@property (nonatomic) BOOL newsURLResolution;
+- (BOOL)safariTrackers;
+- (void)setMailTrackers:;
+- (void)setSafariAll:;
+- (BOOL)newsURLResolution;
+- (BOOL)anyDNS;
+- (void)setSafariUnencrypted:;
+- (void)setAnyKnownTrackers:;
+- (BOOL)safariUnencrypted;
+- (void)setSafariDNS:;
+- (void)setAnyDNS:;
+- (BOOL)safariHTTP;
+- (BOOL)safariAll;
+- (BOOL)anyAppTrackers;
+- (id)description;
+- (BOOL)anyUnencrypted;
+- (BOOL)anyKnownTrackers;
+- (void)setNewsURLResolution:;
+- (void)setSafariHTTP:;
+- (BOOL)mailTrackers;
+- (void)setAnyUnencrypted:;
+- (void)setSafariTrackers:;
+- (BOOL)safariDNS;
+- (void)setAnyAppTrackers:;
+@end

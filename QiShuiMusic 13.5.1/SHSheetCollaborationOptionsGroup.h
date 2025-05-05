@@ -1,0 +1,2 @@
+@interface SHSheetCollaborationOptionsGroup : NSObject
+@end

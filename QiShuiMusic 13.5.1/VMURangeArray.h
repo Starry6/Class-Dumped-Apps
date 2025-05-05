@@ -1,0 +1,25 @@
+@interface VMURangeArray : NSObject
+- (void)setCapacity:;
+- (id)init;
+- (void)dealloc;
+- (id)ranges;
+- (void)addRange:;
+- (BOOL)intersectsRange:;
+- (id)range;
+- (id)description;
+- (void)sort;
+- (unsigned int)count;
+- (id)rangeAtIndex:;
+- (id)copyWithZone:;
+- (id)initWithRanges:count:;
+- (void)addRanges:;
+- (unsigned long long)indexForLocation:;
+- (id)rangeForLocation:;
+- (void)insertRange:atIndex:;
+- (void)removeRangeAtIndex:;
+- (void)removeAllRanges;
+- (BOOL)intersectsLocation:;
+- (id)subrangeNotExcludedBySelfForRange:;
+- (id)largestRange;
+- (unsigned long long)sumLengths;
+@end

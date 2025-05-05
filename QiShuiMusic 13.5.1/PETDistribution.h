@@ -1,0 +1,35 @@
+@interface PETDistribution : PBCodable
+@property (nonatomic) BOOL hasMin;
+@property (nonatomic) double min;
+@property (nonatomic) BOOL hasMax;
+@property (nonatomic) double max;
+@property (nonatomic) BOOL hasMean;
+@property (nonatomic) double mean;
+@property (nonatomic) BOOL hasVariance;
+@property (nonatomic) double variance;
+- (void)writeTo:;
+- (double)min;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (double)max;
+- (void)setMax:;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setMin:;
+- (double)mean;
+- (void)setMean:;
+- (void)setHasMin:;
+- (BOOL)hasMin;
+- (void)setHasMax:;
+- (BOOL)hasMax;
+- (void)setHasMean:;
+- (BOOL)hasMean;
+- (void)setVariance:;
+- (void)setHasVariance:;
+- (BOOL)hasVariance;
+- (double)variance;
+@end

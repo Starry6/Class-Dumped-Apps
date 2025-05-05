@@ -1,0 +1,35 @@
+@interface MPSImageEDLines : MPSKernel
+@property (nonatomic) {?={?=QQQ}{?=QQQ}} clipRectSource;
+@property (nonatomic) float gaussianSigma;
+@property (nonatomic) S minLineLength;
+@property (nonatomic) Q maxLines;
+@property (nonatomic) S detailRatio;
+@property (nonatomic) float gradientThreshold;
+@property (nonatomic) float lineErrorThreshold;
+@property (nonatomic) float mergeLocalityThreshold;
+- (void)setMaxLines:;
+- (id)initWithCoder:device:;
+- (id)copyWithZone:device:;
+- (void)dealloc;
+- (unsigned long long)maxLines;
+- (void)encodeWithCoder:;
+- (id)initWithDevice:;
+- (void)setClipRectSource:;
+- (id)initWithDevice:gaussianSigma:minLineLength:maxLines:detailRatio:gradientThreshold:lineErrorThreshold:mergeLocalityThreshold:;
+- (void)encodeInternalToCommandEncoder:commandBuffer:sourceTexture:destinationTexture:endpointBuffer:endpointOffset:inputExtent:;
+- (void)encodeToCommandEncoder:commandBuffer:sourceTexture:destinationTexture:endpointBuffer:endpointOffset:;
+- (void)encodeToCommandBuffer:sourceTexture:destinationTexture:endpointBuffer:endpointOffset:;
+- (float)gaussianSigma;
+- (unsigned short)minLineLength;
+- (void)setMinLineLength:;
+- (unsigned short)detailRatio;
+- (void)setDetailRatio:;
+- (float)gradientThreshold;
+- (void)setGradientThreshold:;
+- (float)lineErrorThreshold;
+- (void)setLineErrorThreshold:;
+- (id)clipRectSource;
+- (float)mergeLocalityThreshold;
+- (void)setMergeLocalityThreshold:;
++ (id)libraryInfo:;
+@end

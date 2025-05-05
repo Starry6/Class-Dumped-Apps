@@ -1,0 +1,36 @@
+@interface CTPlanIdentifier : NSObject
+@property (nonatomic) NSString iccid;
+@property (nonatomic) NSString carrierName;
+@property (nonatomic) NSString phoneNumber;
+@property (nonatomic) NSString countryCode;
+@property (nonatomic) NSString label;
+@property (nonatomic) NSString mcc;
+@property (nonatomic) NSString mnc;
+@property (nonatomic) NSString gid1;
+@property (nonatomic) NSString gid2;
+- (void)setCountryCode:;
+- (id)countryCode;
+- (id)phoneNumber;
+- (void)setPhoneNumber:;
+- (void)setCarrierName:;
+- (void)setLabel:;
+- (id)initWithCoder:;
+- (id)label;
+- (void)encodeWithCoder:;
+- (id)carrierName;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)iccid;
+- (void)setIccid:;
+- (id)mcc;
+- (void)setMcc:;
+- (id)mnc;
+- (void)setMnc:;
+- (id)gid1;
+- (void)setGid1:;
+- (id)gid2;
+- (void)setGid2:;
+- (id)initWithIccid:carrierName:phoneNumber:countryCode:label:mcc:mnc:gid1:gid2:;
++ (BOOL)supportsSecureCoding;
+@end

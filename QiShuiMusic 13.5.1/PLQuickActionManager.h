@@ -1,0 +1,32 @@
+@interface PLQuickActionManager : NSObject
+@property (nonatomic) NSData _cachedMostRecentPhotoData;
+@property (nonatomic) BOOL _mostRecentPhotoIsInvalid;
+@property (nonatomic) SBSApplicationShortcutService _appShortcutService;
+@property (nonatomic) # _SBSApplicationShortcutServiceClass;
+@property (nonatomic) # _SBSApplicationShortcutItemClass;
+@property (nonatomic) # _SBSApplicationShortcutCustomImageIconClass;
+- (id)_buildMostRecentPhotoQuickAction;
+- (void)dealloc;
+- (void)cameraPreviewWellImageDidChange;
+- (BOOL)_mostRecentPhotoIsInvalid;
+- (id)_shortcutSystemImageNamed:;
+- (id)_cachedMostRecentPhotoData;
+- (void)_setCachedMostRecentPhotoData:;
+- (id)initWithDatabaseContext:;
+- (Class)_SBSApplicationShortcutCustomImageIconClass;
+- (void)buildQuickActionItems;
+- (id)_buildSearchQuickAction;
+- (void)_setSBSApplicationShortcutCustomImageIconClass:;
+- (Class)_SBSApplicationShortcutItemClass;
+- (BOOL)_userHasPhotos;
+- (void).cxx_destruct;
+- (Class)_SBSApplicationShortcutServiceClass;
+- (void)_setAppShortcutService:;
+- (id)_buildOneYearAgoQuickAction;
+- (id)_buildFavoritesQuickAction;
+- (void)_setMostRecentPhotoIsInvalid:;
+- (id)_appShortcutService;
+- (void)_setSBSApplicationShortcutServiceClass:;
+- (void)_setSBSApplicationShortcutItemClass:;
+- (BOOL)_userHasPhotosFromLastYear;
+@end

@@ -1,0 +1,37 @@
+@interface ModelKeyServerAPIFetchKeyRequest : PBRequest
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) BOOL hasKeyId;
+@property (nonatomic) NSString keyId;
+@property (nonatomic) BOOL hasTeamId;
+@property (nonatomic) NSString teamId;
+@property (nonatomic) BOOL hasSignedKeyRequest;
+@property (nonatomic) NSData signedKeyRequest;
+@property (nonatomic) BOOL hasRawRequest;
+@property (nonatomic) BOOL rawRequest;
+- (void)setTeamId:;
+- (void)writeTo:;
+- (id)teamId;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasKeyId;
+- (id)keyId;
+- (void)setKeyId:;
+- (BOOL)hasTeamId;
+- (BOOL)hasSignedKeyRequest;
+- (void)setRawRequest:;
+- (void)setHasRawRequest:;
+- (BOOL)hasRawRequest;
+- (id)signedKeyRequest;
+- (void)setSignedKeyRequest:;
+- (BOOL)rawRequest;
+@end

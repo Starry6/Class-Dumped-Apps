@@ -1,0 +1,34 @@
+@interface FBSSceneSnapshotAction : FBSSceneAction
+@property (nonatomic) @? requestHandler;
+@property (nonatomic) @? completionHandler;
+@property (nonatomic) BOOL expired;
+@property (nonatomic) double expirationInterval;
+@property (nonatomic) BSSettings clientExtendedData;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (Class)fallbackXPCEncodableClass;
+- (void)setExpired:;
+- (void)encodeWithXPCDictionary:;
+- (BOOL)isExpired;
+- (void)setNullificationHandler:;
+- (void)setCompletionHandler:;
+- (void)setClientExtendedData:;
+- (id)initWithXPCDictionary:;
+- (void)setRequestHandler:;
+- (void)_executeNextRequest;
+- (void).cxx_destruct;
+- (double)expirationInterval;
+- (void)executeRequestsWithHandler:completionHandler:expirationHandler:;
+- (id)initWithRequests:expirationInterval:responseHandler:;
+- (void)setInvalidationHandler:;
+- (BOOL)snapshotRequestAllowSnapshot:;
+- (void)_finishAllRequests;
+- (BOOL)snapshotRequest:performWithContext:;
+- (BOOL)_remainsActionable;
+- (void)invalidate;
+- (id)requestHandler;
+- (id)clientExtendedData;
+- (id)completionHandler;
+@end

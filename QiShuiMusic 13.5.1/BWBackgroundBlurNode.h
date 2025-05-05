@@ -1,0 +1,33 @@
+@interface BWBackgroundBlurNode : BWNode
+@property (nonatomic) BWNodeInput videoInput;
+@property (nonatomic) BWNodeOutput videoOutput;
+@property (nonatomic) BWNodeInput stillImageInput;
+@property (nonatomic) BWNodeOutput stillImageOutput;
+@property (nonatomic) NSString clientApplicationID;
+@property (nonatomic) BOOL effectBypassed;
+@property (nonatomic) Q activeBlurEffect;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)dealloc;
+- (id)videoOutput;
+- (id)clientApplicationID;
+- (id)nodeType;
+- (void)configurationWithID:updatedFormat:didBecomeLiveForInput:;
+- (void)didSelectFormat:forInput:;
+- (void)setClientApplicationID:;
+- (void)prepareForCurrentConfigurationToBecomeLive;
+- (void)didReachEndOfDataForInput:;
+- (void)renderSampleBuffer:forInput:;
+- (id)stillImageOutput;
+- (id)nodeSubType;
+- (id)stillImageInput;
+- (id)videoInput;
+- (void)didChangePortraitEffectStudioLightQuality:;
+- (id)initWithStillImageCaptureEnabled:maxLossyCompressionLevel:fastSwitchEnabled:availableEffects:activeEffect:isHighQualitySupported:isRunningForContinuityCapture:upstreamDeviceOrientationCorrectionEnabled:;
+- (BOOL)effectBypassed;
+- (void)setEffectBypassed:;
+- (unsigned long long)activeBlurEffect;
+- (void)setActiveBlurEffect:;
+@end

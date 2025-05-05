@@ -1,0 +1,33 @@
+@interface CRCarPlayAppPolicyEvaluator : NSObject
+@property (nonatomic) CRCarPlayAppDenylist denylist;
+@property (nonatomic) NSObject<OS_dispatch_queue> geoQueue;
+@property (nonatomic) BOOL geo_queue_geoSupported;
+@property (nonatomic) BOOL evaluatorWantsGeoManagement;
+@property (nonatomic) BOOL geoSupported;
+- (id)init;
+- (id)currentSession;
+- (id)denylist;
+- (void).cxx_destruct;
+- (void)setDenylist:;
+- (BOOL)isGeoSupported;
+- (void)setGeoSupported:;
+- (void)setWantsGeoSupported;
+- (void)updateGeoSupported;
+- (id)_vehicleProtocolsForCertificateSerial:;
+- (BOOL)_vehicleProtocolsIntersectAppProtocols:certificateSerial:;
+- (BOOL)_checkIfDeclaration:supportsIntents:requireAllIntents:;
+- (BOOL)_appWithDeclaration:supportsAllIntents:;
+- (BOOL)_appWithDeclaration:supportsAnyIntents:;
+- (unsigned long long)_applicationCategoryForAppDeclaration:policy:;
+- (id)effectivePolicyForAppDeclaration:;
+- (id)effectivePolicyForAppDeclaration:inVehicleWithCertificateSerial:;
+- (void)fetchApplicationBundleIdentifiersForCarIntents:;
+- (id)geoQueue;
+- (void)setGeoQueue:;
+- (BOOL)geo_queue_geoSupported;
+- (void)setGeo_queue_geoSupported:;
+- (BOOL)evaluatorWantsGeoManagement;
+- (void)setEvaluatorWantsGeoManagement:;
++ (id)_carIntentIdentifiers;
++ (id)allIntentIdentifiers;
+@end

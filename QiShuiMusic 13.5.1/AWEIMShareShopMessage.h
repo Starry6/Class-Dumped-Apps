@@ -1,0 +1,27 @@
+@interface AWEIMShareShopMessage : AWEIMMessage
+@property (nonatomic) NSString userDescription;
+@property (nonatomic) NSString uid;
+@property (nonatomic) NSString secUID;
+@property (nonatomic) IESIMSaaSAWEIMUser user;
+@property (nonatomic) NSString pushDetail;
+@property (nonatomic) NSString name;
+@property (nonatomic) IESIMURLModel avatarURLModel;
+- (id)avatarURLModel;
+- (id)getContentDict;
+- (id)initWithContentDict:;
+- (id)pushDetail;
+- (id)secUID;
+- (void)setAvatarURLModel:;
+- (void)setPushDetail:;
+- (void)setSecUID:;
+- (void)setUser:;
+- (void)setName:;
+- (id)uid;
+- (void)setUid:;
+- (id)user;
+- (void).cxx_destruct;
+- (id)name;
+- (id)copyWithZone:;
+- (id)userDescription;
+- (void)setUserDescription:;
+@end

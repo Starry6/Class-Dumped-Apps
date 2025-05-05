@@ -1,0 +1,34 @@
+@interface TVLLLASHSwitchInfo : NSObject
+@property (nonatomic) q identifier;
+@property (nonatomic) NSString sessionID;
+@property (nonatomic) NSString query;
+@property (nonatomic) q targetBitrate;
+@property (nonatomic) NSDictionary result;
+@property (nonatomic) NSDictionary extraReportInfo;
+@property (nonatomic) BOOL finished;
+@property (nonatomic) TVLLLASHSwitchInfo previousSwitchInfo;
+@property (nonatomic) NSDictionary reportInfo;
+- (id)extraReportInfo;
+- (void)bindToSession:;
+- (BOOL)isEqualToSwitchInfo:;
+- (id)previousSwitchInfo;
+- (id)reportInfo;
+- (void)setExtraReportInfo:;
+- (void)setPreviousSwitchInfo:;
+- (void)switchDidFinish:;
+- (void)setSessionID:;
+- (void)setFinished:;
+- (id)result;
+- (id)sessionID;
+- (void)setQuery:;
+- (long long)identifier;
+- (id)query;
+- (BOOL)isFinished;
+- (void).cxx_destruct;
+- (id)description;
+- (void)setIdentifier:;
+- (void)setResult:;
+- (long long)targetBitrate;
+- (void)setTargetBitrate:;
++ (id)switchInfoWithTargetBitrate:identifier:query:extraReportInfo:;
+@end

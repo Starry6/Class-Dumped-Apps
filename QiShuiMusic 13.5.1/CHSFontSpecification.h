@@ -1,0 +1,31 @@
+@interface CHSFontSpecification : NSObject
+@property (nonatomic) NSString name;
+@property (nonatomic) Q design;
+@property (nonatomic) NSNumber size;
+@property (nonatomic) NSNumber weight;
+@property (nonatomic) NSArray fontFeatures;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (void)setName:;
+- (unsigned long long)design;
+- (id)weight;
+- (id)initWithBSXPCCoder:;
+- (void)setWeight:;
+- (void)setDesign:;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (void)encodeWithBSXPCCoder:;
+- (id)description;
+- (id)name;
+- (void)setSize:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)size;
+- (id)_initWithFontSpecification:;
+- (id)fontFeatures;
+- (void)setFontFeatures:;
++ (BOOL)supportsBSXPCSecureCoding;
+@end

@@ -1,0 +1,38 @@
+@interface TUThumperCTCapabilitiesState : TUCTCapabilitiesState
+@property (nonatomic) BOOL approved;
+@property (nonatomic) NSSet approvedSecondaryDeviceIDs;
+@property (nonatomic) NSString accountID;
+@property (nonatomic) BOOL associated;
+@property (nonatomic) NSString localDeviceID;
+@property (nonatomic) BOOL supportsDefaultPairedDevice;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (id)accountID;
+- (void)setAccountID:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (BOOL)isAssociated;
+- (void)encodeWithCoder:;
+- (id)publiclyAccessibleCopyWithZone:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)localDeviceID;
+- (void)setLocalDeviceID:;
+- (BOOL)isEqual:;
+- (id)publiclyAccessibleCopy;
+- (id)copyWithZone:;
+- (BOOL)isApproved;
+- (id)initWithCapabilityInfo:;
+- (BOOL)isEqualToCapabilitiesState:;
+- (id)approvedSecondaryDeviceIDs;
+- (BOOL)supportsDefaultPairedDevice;
+- (void)setApproved:;
+- (void)setApprovedSecondaryDeviceIDs:;
+- (void)setAssociated:;
+- (void)setSupportsDefaultPairedDevice:;
++ (BOOL)supportsSecureCoding;
++ (id)unarchivedObjectClasses;
+@end

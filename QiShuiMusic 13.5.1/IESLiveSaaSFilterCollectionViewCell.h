@@ -1,0 +1,37 @@
+@interface IESLiveSaaSFilterCollectionViewCell : UICollectionViewCell
+@property (nonatomic) IESLiveSaaSRoomFilter filter;
+@property (nonatomic) UIImageView imageView;
+@property (nonatomic) UILabel textLabel;
+@property (nonatomic) UIView selectedView;
+@property (nonatomic) UIView redDot;
+@property (nonatomic) UIActivityIndicatorView indicatorView;
+@property (nonatomic) <HTSLiveSaaSFilterCollectionViewCellDelegate> delegate;
+@property (nonatomic) BOOL loading;
+@property (nonatomic) BOOL filterSelected;
+@property (nonatomic) BOOL newOpenLiveStyle;
+- (BOOL)filterSelected;
+- (BOOL)newOpenLiveStyle;
+- (id)redDot;
+- (void)setFilterSelected:;
+- (void)setNewOpenLiveStyle:;
+- (void)setRedDot:;
+- (void)setSelectedView:;
+- (void)updateWithFilter:;
+- (void)setLoading:;
+- (id)filter;
+- (void)setFilter:;
+- (id)textLabel;
+- (void)setDelegate:;
+- (BOOL)loading;
+- (void)prepareForReuse;
+- (id)initWithFrame:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)imageView;
+- (id)indicatorView;
+- (void)setImageView:;
+- (void)setTextLabel:;
+- (void)setIndicatorView:;
+- (id)selectedView;
+- (void)layoutUI;
+@end

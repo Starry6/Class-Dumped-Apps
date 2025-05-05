@@ -1,0 +1,35 @@
+@interface POMMESSchemaPOMMESPegasusKitPegasusResponse : SISchemaInstrumentationMessage
+@property (nonatomic) I rawResponseSizeInKB;
+@property (nonatomic) BOOL hasRawResponseSizeInKB;
+@property (nonatomic) I compressedResponseSizeInKB;
+@property (nonatomic) BOOL hasCompressedResponseSizeInKB;
+@property (nonatomic) POMMESSchemaPOMMESPegasusKitNetworkTimingData timingData;
+@property (nonatomic) BOOL hasTimingData;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void)setTimingData:;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)timingData;
+- (void)setRawResponseSizeInKB:;
+- (BOOL)hasRawResponseSizeInKB;
+- (void)setHasRawResponseSizeInKB:;
+- (void)deleteRawResponseSizeInKB;
+- (void)setCompressedResponseSizeInKB:;
+- (BOOL)hasCompressedResponseSizeInKB;
+- (void)setHasCompressedResponseSizeInKB:;
+- (void)deleteCompressedResponseSizeInKB;
+- (BOOL)hasTimingData;
+- (void)deleteTimingData;
+- (unsigned int)rawResponseSizeInKB;
+- (unsigned int)compressedResponseSizeInKB;
+- (void)setHasTimingData:;
+@end

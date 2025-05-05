@@ -1,0 +1,33 @@
+@interface IESLiveRevenueInteractVoteThemeChooseViewController : IESLiveRevenueInteractPopupViewController
+@property (nonatomic) <IESLiveSubscription> disposable;
+@property (nonatomic) IESLiveRevenueInteractVoteThemeViewModel viewModel;
+@property (nonatomic) UITableView themeTableView;
+@property (nonatomic) IESLiveTableViewCellDisplayTrackHelper trackHelper;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setTrackHelper:;
+- (id)disposable;
+- (id)initWithViewModel:diContext:;
+- (void)onSetupNavBar:;
+- (void)setDisposable:;
+- (void)setThemeTableView:;
+- (id)themeTableView;
+- (BOOL)trackDisplayedCellWithIndexPath:;
+- (id)trackHelper;
+- (id)viewModel;
+- (id)tableView:cellForRowAtIndexPath:;
+- (void)scrollViewDidScroll:;
+- (double)tableView:heightForRowAtIndexPath:;
+- (void)viewWillDisappear:;
+- (void)tableView:didSelectRowAtIndexPath:;
+- (void).cxx_destruct;
+- (void)viewDidAppear:;
+- (void)setViewModel:;
+- (long long)tableView:numberOfRowsInSection:;
+- (void)viewDidLoad;
+- (long long)numberOfSectionsInTableView:;
+- (void)setupUI;
+- (void)setupData;
+@end

@@ -1,0 +1,36 @@
+@interface IESLiveSaaSEmojiTextParser : NSObject
+@property (nonatomic) UIFont font;
+@property (nonatomic) UIColor textColor;
+@property (nonatomic) NSCache emoticonImageCache;
+@property (nonatomic) <IESLiveSaaSNewEmoticonResource> emoticonResource;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)emoticonImageCache;
+- (id)emoticonResource;
+- (id)getImageWithEmojiText:;
+- (id)matchResultsFromString:;
+- (id)parseEmojiAttributedTextFromPlainText:;
+- (id)parseEmojiAttributedTextFromPlainText:extraAttr:;
+- (id)parseEmojiAttributedTextFromPlainText:extraAttr:lockRanges:;
+- (id)parsePlainTextFromEmojiAttributedText:;
+- (id)parseVSEmojiAttributedTextFromPlainText:;
+- (id)parseVSEmojiAttributedTextFromPlainText:extraAttr:;
+- (void)resetColor:;
+- (void)resetFont:;
+- (void)setBackStringForAttributedString:backedString:range:;
+- (void)setEmoticonImageCache:;
+- (void)setEmoticonResource:;
+- (id)init;
+- (void)setFont:;
+- (void)setTextColor:;
+- (void).cxx_destruct;
+- (id)font;
+- (id)textColor;
++ (id)emojiRegularResult:;
++ (BOOL)isContainEmojiText:;
++ (BOOL)isOnlyEmojiText:;
++ (long long)numberOfEmojiText:;
++ (id)parserWithFont:textColor:;
+@end

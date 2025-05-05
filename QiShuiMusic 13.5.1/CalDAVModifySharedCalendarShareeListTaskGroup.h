@@ -1,0 +1,31 @@
+@interface CalDAVModifySharedCalendarShareeListTaskGroup : CoreDAVTaskGroup
+@property (nonatomic) NSSet shareesToRemove;
+@property (nonatomic) NSSet shareesToSet;
+@property (nonatomic) NSURL calendarURL;
+@property (nonatomic) NSString summary;
+@property (nonatomic) NSMutableSet invalidSharees;
+@property (nonatomic) BOOL muteNotifications;
+@property (nonatomic) <CoreDAVTaskGroupDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)task:didFinishWithError:;
+- (void)startTaskGroup;
+- (void)setSummary:;
+- (id)summary;
+- (void).cxx_destruct;
+- (id)initWithAccountInfoProvider:taskManager:;
+- (id)initWithShareesToSet:shareesToRemove:muteNotifications:summary:atCalendarURL:accountInfoProvider:taskManager:;
+- (id)generateModificationMessageBody;
+- (id)invalidSharees;
+- (void)setInvalidSharees:;
+- (id)shareesToRemove;
+- (void)setShareesToRemove:;
+- (id)shareesToSet;
+- (void)setShareesToSet:;
+- (id)calendarURL;
+- (void)setCalendarURL:;
+- (BOOL)muteNotifications;
+- (void)setMuteNotifications:;
+@end

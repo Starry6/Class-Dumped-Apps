@@ -1,0 +1,37 @@
+@interface UIPrintFormatter : NSObject
+@property (nonatomic) UIPrintPageRenderer printPageRenderer;
+@property (nonatomic) BOOL imagePDFAnnotations;
+@property (nonatomic) double maximumContentHeight;
+@property (nonatomic) double maximumContentWidth;
+@property (nonatomic) {UIEdgeInsets=dddd} contentInsets;
+@property (nonatomic) {UIEdgeInsets=dddd} perPageContentInsets;
+@property (nonatomic) q startPage;
+@property (nonatomic) q pageCount;
+@property (nonatomic) BOOL requiresMainThread;
+- (void)setContentInsets:;
+- (id)init;
+- (id)contentInsets;
+- (BOOL)requiresMainThread;
+- (long long)pageCount;
+- (id)printPageRenderer;
+- (void).cxx_destruct;
+- (void)setPrintPageRenderer:;
+- (id)copyWithZone:;
+- (void)setMaximumContentWidth:;
+- (double)maximumContentWidth;
+- (long long)startPage;
+- (id)_pageContentRect:;
+- (void)_setNeedsRecalc;
+- (long long)_recalcPageCount;
+- (id)rectForPageAtIndex:;
+- (void)drawInRect:forPageAtIndex:;
+- (void)removeFromPrintPageRenderer;
+- (void)setPerPageContentInsets:;
+- (double)maximumContentHeight;
+- (BOOL)imagePDFAnnotations;
+- (void)setImagePDFAnnotations:;
+- (void)setMaximumContentHeight:;
+- (void)_recalcIfNecessary;
+- (id)perPageContentInsets;
+- (void)setStartPage:;
+@end

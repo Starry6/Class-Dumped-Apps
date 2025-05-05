@@ -1,0 +1,35 @@
+@interface MFAccountValidator : NSObject
+@property (nonatomic) BOOL performsValidationInBackground;
+@property (nonatomic) MFMonitoredInvocation validationInvocation;
+@property (nonatomic) <MFAccountValidatorDelegate> delegate;
+@property (nonatomic) BOOL accountIsValid;
+@property (nonatomic) BOOL accountSupportsSSL;
+@property (nonatomic) MFError error;
+@property (nonatomic) MFAccount account;
+- (id)account;
+- (id)init;
+- (void)dealloc;
+- (void)setDelegate:;
+- (void)stop;
+- (id)error;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)_validateAccount:;
+- (void)_validateAccountWithoutFallbacks:;
+- (id)initWithPerformsValidationInBackground:;
+- (void)validateAccount:useSSL:;
+- (void)validateAccount:useSSL:withCompletion:;
+- (void)validateAccountWithoutFallbacks:;
+- (void)validateAccountWithoutFallbacks:withCompletion:;
+- (void)cancelValidation;
+- (id)_ispAccountInfo;
+- (void)_backgroundValidateAccountFinished:authSchemes:;
+- (BOOL)_incomingServerValid;
+- (BOOL)_outgoingServerValid;
+- (BOOL)accountValidationCanceled;
+- (void)_validateAccount:withFallbacks:;
+- (BOOL)performsValidationInBackground;
+- (id)validationInvocation;
+- (BOOL)accountIsValid;
+- (BOOL)accountSupportsSSL;
+@end

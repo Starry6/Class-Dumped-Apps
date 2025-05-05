@@ -1,0 +1,35 @@
+@interface AWDCoreRoutineMagicalMomentsIndividualMoment : PBCodable
+@property (nonatomic) BOOL hasTimestamp;
+@property (nonatomic) Q timestamp;
+@property (nonatomic) BOOL hasModelType;
+@property (nonatomic) NSInteger modelType;
+@property (nonatomic) BOOL hasExpertType;
+@property (nonatomic) NSInteger expertType;
+@property (nonatomic) BOOL hasSuggestionId;
+@property (nonatomic) NSString suggestionId;
+- (int)modelType;
+- (void)setModelType:;
+- (void)dealloc;
+- (id)suggestionId;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)setHasTimestamp:;
+- (void)mergeFrom:;
+- (BOOL)hasTimestamp;
+- (void)setSuggestionId:;
+- (void)setTimestamp:;
+- (BOOL)readFrom:;
+- (unsigned long long)timestamp;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasSuggestionId;
+- (BOOL)hasModelType;
+- (void)setHasModelType:;
+- (void)setExpertType:;
+- (void)setHasExpertType:;
+- (BOOL)hasExpertType;
+- (int)expertType;
+@end

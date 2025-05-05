@@ -1,0 +1,2 @@
+@interface IESLiveSaaSPBIESLiveSaaSPBDecorationModifyRoot : GPBRootObject
+@end

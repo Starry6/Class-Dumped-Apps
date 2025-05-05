@@ -1,0 +1,36 @@
+@interface IESLiveSaaSECGoodsListEntryItemModel : BDDynamicMTLModel
+@property (nonatomic) Q type;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString titleColor;
+@property (nonatomic) NSString icon;
+@property (nonatomic) NSString url;
+@property (nonatomic) NSString trackName;
+@property (nonatomic) BOOL showSmallLiveWindow;
+@property (nonatomic) BOOL showDisclaimer;
+@property (nonatomic) NSArray subEntries;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setShowSmallLiveWindow:;
+- (void)setSubEntries:;
+- (BOOL)showSmallLiveWindow;
+- (id)subEntries;
+- (id)url;
+- (id)icon;
+- (void)setType:;
+- (void)setTitleColor:;
+- (void)setTitle:;
+- (void)setUrl:;
+- (id)titleColor;
+- (unsigned long long)type;
+- (id)title;
+- (void)setIcon:;
+- (void).cxx_destruct;
+- (BOOL)showDisclaimer;
+- (void)setShowDisclaimer:;
+- (id)trackName;
+- (void)setTrackName:;
++ (id)subEntriesJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

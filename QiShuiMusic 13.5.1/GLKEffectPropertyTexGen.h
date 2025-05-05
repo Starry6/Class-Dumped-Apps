@@ -1,0 +1,38 @@
+@interface GLKEffectPropertyTexGen : GLKEffectProperty
+@property (nonatomic) ^f eyePlaneByInvModelview;
+@property (nonatomic) NSInteger modeLoc;
+@property (nonatomic) NSInteger planeLoc;
+@property (nonatomic) NSInteger eyePlaneByInvModelviewLoc;
+@property (nonatomic) * modeNameString;
+@property (nonatomic) * planeNameString;
+@property (nonatomic) I textureIndex;
+@property (nonatomic) NSInteger mode;
+@property (nonatomic) NSInteger coord;
+@property (nonatomic) ^f plane;
+- (id)init;
+- (void)dealloc;
+- (int)coord;
+- (int)mode;
+- (void)setMode:;
+- (void)bind;
+- (void)dirtyAllUniforms;
+- (void)setShaderBindings;
+- (void)initializeMasks;
+- (int)modeLoc;
+- (void)setModeLoc:;
+- (id)initWithMode:coord:;
+- (void)setPlane:;
+- (void)setModeNameString:;
+- (void)setPlaneNameString:;
+- (void)setTextureIndex:;
+- (id)plane;
+- (id)eyePlaneByInvModelview;
+- (void)setEyePlaneByInvModelview:;
+- (int)planeLoc;
+- (void)setPlaneLoc:;
+- (int)eyePlaneByInvModelviewLoc;
+- (void)setEyePlaneByInvModelviewLoc:;
+- (char *)modeNameString;
+- (char *)planeNameString;
+- (unsigned int)textureIndex;
+@end

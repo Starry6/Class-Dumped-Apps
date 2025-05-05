@@ -1,0 +1,36 @@
+@interface VKVectorOverlayPolygonGroup : VKVectorOverlayData
+@property (nonatomic) {shared_ptr<md::PolygonOverlayRenderable::Style>=^{Style}^{__shared_weak_count}} style;
+@property (nonatomic) NSArray polygons;
+@property (nonatomic) double lineWidth;
+@property (nonatomic) q lineJoin;
+@property (nonatomic) ^{CGColor=} fillColor;
+@property (nonatomic) ^{CGColor=} strokeColor;
+@property (nonatomic) double alpha;
+@property (nonatomic) double miterLimit;
+@property (nonatomic) double strokeStart;
+@property (nonatomic) double strokeEnd;
+- (void)setLineWidth:;
+- (id)fillColor;
+- (double)lineWidth;
+- (void)dealloc;
+- (void)setStrokeColor:;
+- (void)setFillColor:;
+- (id)_style;
+- (id)polygons;
+- (void)setAlpha:;
+- (id)strokeColor;
+- (void)setBlendMode:;
+- (double)alpha;
+- (void).cxx_destruct;
+- (id)initWithPolygons:;
+- (id).cxx_construct;
+- (double)strokeStart;
+- (void)setStrokeStart:;
+- (double)strokeEnd;
+- (void)setStrokeEnd:;
+- (double)miterLimit;
+- (void)setMiterLimit:;
+- (long long)lineJoin;
+- (void)setLineJoin:;
+- (void)_updateStyleColor;
+@end

@@ -1,0 +1,33 @@
+@interface HMDOTTraceConfig : NSObject
+@property (nonatomic) NSString serviceName;
+@property (nonatomic) NSString customHighOrderTraceID;
+@property (nonatomic) NSString traceParent;
+@property (nonatomic) BOOL isForcedUplaod;
+@property (nonatomic) NSDate startDate;
+@property (nonatomic) Q insertMode;
+@property (nonatomic) BOOL isMovingLine;
+@property (nonatomic) NSString type;
+- (void)setTraceParent:;
+- (id)generateTraceID;
+- (id)customHighOrderTraceID;
+- (id)generateTraceIDWithCCustomHighOrderTraceID:;
+- (id)getTraceIDWithTraceParent:;
+- (unsigned long long)insertMode;
+- (BOOL)isForcedUplaod;
+- (BOOL)isMovingLine;
+- (BOOL)isvalidHexString:;
+- (void)setCustomHighOrderTraceID:;
+- (void)setInsertMode:;
+- (void)setIsForcedUplaod:;
+- (void)setIsMovingLine:;
+- (id)traceParent;
+- (id)startDate;
+- (void)setStartDate:;
+- (void)setServiceName:;
+- (void)setType:;
+- (id)serviceName;
+- (id)type;
+- (void).cxx_destruct;
+- (id)initWithServiceName:;
++ (id)generateRandom16LengthString;
+@end

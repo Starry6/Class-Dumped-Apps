@@ -1,0 +1,35 @@
+@interface EKConflictDetails : NSObject
+@property (nonatomic) NSArray conflictingDates;
+@property (nonatomic) NSArray conflictingEvents;
+@property (nonatomic) NSArray needsActionEvents;
+@property (nonatomic) Q totalOccurrencesInSeries;
+@property (nonatomic) Q totalConflictsInSeries;
+@property (nonatomic) Q totalConflictingEvents;
+@property (nonatomic) Q totalNeedsActionEvents;
+@property (nonatomic) CalDateRange conflictPeriodForSeries;
+- (void).cxx_destruct;
+- (id)description;
+- (id)initWithConflictingDates:conflictingEvents:needsActionEvents:totalOccurrencesInSeries:conflictPeriodForSeries:;
+- (id)conflictingDates;
+- (void)setConflictingDates:;
+- (id)conflictingEvents;
+- (void)setConflictingEvents:;
+- (id)needsActionEvents;
+- (void)setNeedsActionEvents:;
+- (unsigned long long)totalOccurrencesInSeries;
+- (void)setTotalOccurrencesInSeries:;
+- (unsigned long long)totalConflictsInSeries;
+- (void)setTotalConflictsInSeries:;
+- (unsigned long long)totalConflictingEvents;
+- (void)setTotalConflictingEvents:;
+- (unsigned long long)totalNeedsActionEvents;
+- (void)setTotalNeedsActionEvents:;
+- (id)conflictPeriodForSeries;
+- (void)setConflictPeriodForSeries:;
++ (id)infoWithConflictsInSeries:outOf:withPeriod:conflictingDates:;
++ (id)infoWithConflicts:needsAction:event:;
++ (id)dateRangeToScanForConflictsForEvent:;
++ (id)_dateRangeToScanForConflictsForEvent:dateForNow:;
++ (double)_maxRangeLengthForRule:;
++ (id)calendarIdentifiersToScanForConflictsForEvent:;
+@end

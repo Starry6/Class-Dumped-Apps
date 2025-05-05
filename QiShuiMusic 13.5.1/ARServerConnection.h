@@ -1,0 +1,35 @@
+@interface ARServerConnection : NSObject
+@property (nonatomic) NSXPCConnection connection;
+@property (nonatomic) <ARServerConnectionDelegate> delegate;
+@property (nonatomic) NSXPCInterface exportedInterface;
+@property (nonatomic) @ exportedObject;
+@property (nonatomic) NSXPCInterface remoteObjectInterface;
+@property (nonatomic) NSXPCListenerEndpoint listenerEndpoint;
+- (id)initWithListenerEndpoint:;
+- (void)setExportedInterface:;
+- (id)interruptionHandler;
+- (void)dealloc;
+- (id)exportedObject;
+- (id)exportedInterface;
+- (void)setInterruptionHandler:;
+- (id)synchronousRemoteObjectProxyWithErrorHandler:;
+- (void)setListenerEndpoint:;
+- (void)setDelegate:;
+- (id)remoteObjectProxy;
+- (void)setExportedObject:;
+- (id)remoteObjectProxyWithErrorHandler:;
+- (void)setRemoteObjectInterface:;
+- (id)delegate;
+- (id)connection;
+- (void).cxx_destruct;
+- (id)listenerEndpoint;
+- (id)invalidationHandler;
+- (void)setInvalidationHandler:;
+- (id)initWithServiceName:options:;
+- (id)initWithServiceName:;
+- (void)invalidate;
+- (id)remoteObjectInterface;
+- (id)initWithServiceName:options:queue:;
+- (void)serverConnectionInterrupted;
+- (void)serverConnectionInvalidated;
+@end

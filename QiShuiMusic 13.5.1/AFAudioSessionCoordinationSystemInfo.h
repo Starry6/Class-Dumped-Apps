@@ -1,0 +1,32 @@
+@interface AFAudioSessionCoordinationSystemInfo : NSObject
+@property (nonatomic) BOOL isSupportedAndEnabled;
+@property (nonatomic) NSString homeKitRoomName;
+@property (nonatomic) NSUUID homeKitMediaSystemIdentifier;
+@property (nonatomic) NSString mediaRemoteGroupIdentifier;
+@property (nonatomic) NSString mediaRemoteRouteIdentifier;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (id)mediaRemoteGroupIdentifier;
+- (id)homeKitRoomName;
+- (id)buildDictionaryRepresentation;
+- (id)homeKitMediaSystemIdentifier;
+- (id)mutatedCopyWithMutator:;
+- (id)initWithCoder:;
+- (id)mediaRemoteRouteIdentifier;
+- (unsigned long long)hash;
+- (id)initWithDictionaryRepresentation:;
+- (id)_descriptionWithIndent:;
+- (id)initWithBuilder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (BOOL)isSupportedAndEnabled;
+- (id)description;
+- (id)initWithIsSupportedAndEnabled:homeKitRoomName:homeKitMediaSystemIdentifier:mediaRemoteGroupIdentifier:mediaRemoteRouteIdentifier:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
++ (id)newWithBuilder:;
++ (BOOL)supportsSecureCoding;
+@end

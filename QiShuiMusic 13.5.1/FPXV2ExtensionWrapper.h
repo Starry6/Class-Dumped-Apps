@@ -1,0 +1,32 @@
+@interface FPXV2ExtensionWrapper : NSObject
+@property (nonatomic) # extensionClass;
+@property (nonatomic) NSFileProviderExtension extension;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithDomain:;
+- (id)supportedServiceSourcesForItemIdentifier:completionHandler:;
+- (id)fetchContentsForItemWithIdentifier:version:request:completionHandler:;
+- (id)extension;
+- (id)methodSignatureForSelector:;
+- (id)createItemBasedOnTemplate:fields:contents:options:request:completionHandler:;
+- (void)materializedItemsDidChangeWithCompletionHandler:;
+- (BOOL)conformsToProtocol:;
+- (id)modifyItem:baseVersion:changedFields:contents:options:request:completionHandler:;
+- (id)enumeratorForSearchQuery:request:error:;
+- (void)importDidFinishWithCompletionHandler:;
+- (BOOL)isInteractionSuppressedForIdentifier:;
+- (void).cxx_destruct;
+- (id)fetchContentsForItemWithIdentifier:version:usingExistingContentsAtURL:existingVersion:request:completionHandler:;
+- (id)enumeratorForContainerItemIdentifier:request:error:;
+- (Class)extensionClass;
+- (id)itemForIdentifier:request:completionHandler:;
+- (id)fetchThumbnailsForItemIdentifiers:requestedSize:perThumbnailCompletionHandler:completionHandler:;
+- (id)forwardingTargetForSelector:;
+- (id)performActionWithIdentifier:onItemsWithIdentifiers:completionHandler:;
+- (void)setExtensionClass:;
+- (id)deleteItemWithIdentifier:baseVersion:options:request:completionHandler:;
+- (void)invalidate;
+- (void)setInteractionSuppressed:forIdentifier:;
+@end

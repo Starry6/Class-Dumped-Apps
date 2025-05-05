@@ -1,0 +1,32 @@
+@interface BU_IESGurdCacheManager : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)applyPackageManager:didApplyPackageForAccessKey:channel:;
++ (void)cleanCacheForAccessKey:channel:;
++ (void)addChannelsWhitelist:forAccessKey:;
++ (void)applyAllInactiveCacheWithCompletion:;
++ (void)applyInactiveCacheForAccessKey:channel:completion:;
++ (void)assignApplyDelegate;
++ (void)asyncGetDataForPath:accessKey:channel:completion:;
++ (long long)cacheStatusForAccessKey:channel:;
++ (void)cancelDownloadTaskWithAk:channel:;
++ (void)cleanTempFiles;
++ (id)dataForPath:accessKey:channel:;
++ (id)dataForPath:accessKey:channel:options:;
++ (void)downloadResourceWithModel:accessKey:completion:;
++ (void)downloadResourcesWithModels:accessKey:shouldApply:completion:;
++ (void)downloadResourcesWithRequest:completion:;
++ (void)fetchConfigWithRequest:shouldApply:completion:;
++ (long long)fileTypeForAccessKey:channel:;
++ (BOOL)hasCacheForPath:accessKey:channel:;
++ (void)loadResourceForAccessKey:channel:path:option:customParams:completion:;
++ (unsigned long long)packageVersionForAccessKey:channel:;
++ (id)rootDirForAccessKey:;
++ (id)rootDirForAccessKey:channel:;
++ (void)setCacheConfiguration:forAccessKey:;
++ (void)syncResourcesWithRequest:completion:;
++ (void)cleanCache;
++ (id)sharedManager;
+@end

@@ -1,0 +1,36 @@
+@interface AVMutableMetadataItem : AVMetadataItem
+@property (nonatomic) NSString identifier;
+@property (nonatomic) NSString extendedLanguageTag;
+@property (nonatomic) NSLocale locale;
+@property (nonatomic) {?=qiIq} time;
+@property (nonatomic) {?=qiIq} duration;
+@property (nonatomic) NSString dataType;
+@property (nonatomic) <NSObject><NSCopying> value;
+@property (nonatomic) NSDictionary extraAttributes;
+- (void)setDataType:;
+- (void)setLocale:;
+- (id)startDate;
+- (void)setTime:;
+- (void)setExtraAttributes:;
+- (id)extendedLanguageTag;
+- (id)time;
+- (void)setExtendedLanguageTag:;
+- (id)languageCode;
+- (id)extraAttributes;
+- (id)keySpace;
+- (void)setStartDate:;
+- (id)key;
+- (id)identifier;
+- (void)setKeySpace:;
+- (id)locale;
+- (id)dataType;
+- (void)setDuration:;
+- (void)setKey:;
+- (void)setValue:;
+- (id)value;
+- (id)duration;
+- (void)setIdentifier:;
+- (id)copyWithZone:;
++ (id)metadataItem;
++ (id)keyPathsForValuesAffectingIdentifier;
+@end

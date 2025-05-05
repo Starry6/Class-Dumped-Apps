@@ -1,0 +1,2 @@
+@interface AVScheduledAudioParametersInternal : NSObject
+@end

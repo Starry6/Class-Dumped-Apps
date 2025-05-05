@@ -1,0 +1,35 @@
+@interface GEORestrictionDetails : PBCodable
+@property (nonatomic) BOOL hasTitle;
+@property (nonatomic) GEOFormattedString title;
+@property (nonatomic) NSMutableArray messageStrings;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (id)init;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (void)setTitle:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)title;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (BOOL)hasTitle;
+- (id)copyWithZone:;
+- (id)messageStrings;
+- (void)setMessageStrings:;
+- (void)clearMessageStrings;
+- (void)addMessageString:;
+- (unsigned long long)messageStringsCount;
+- (id)messageStringAtIndex:;
++ (BOOL)isValid:;
++ (Class)messageStringType;
+@end

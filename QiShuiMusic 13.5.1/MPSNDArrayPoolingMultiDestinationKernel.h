@@ -1,0 +1,32 @@
+@interface MPSNDArrayPoolingMultiDestinationKernel : MPSNDArrayMultiaryMultiDestinationKernel
+@property (nonatomic) {MPSNDArrayPoolingSizes_s=[4Q]} poolingKernelSizes;
+@property (nonatomic) NSInteger poolingMode;
+@property (nonatomic) {MPSNDArrayPoolingOffsets_s=[4q]} poolingOffsets;
+@property (nonatomic) {MPSNDArrayPoolingSizes_s=[4Q]} poolingStrides;
+@property (nonatomic) {MPSNDArrayPoolingSizes_s=[4Q]} poolingDilationRates;
+@property (nonatomic) NSInteger poolingReturnIndicesMode;
+@property (nonatomic) I poolingReturnIndicesDataType;
+@property (nonatomic) BOOL computeGradient;
+- (id)initWithCoder:device:;
+- (id)copyWithZone:device:;
+- (void)encodeWithCoder:;
+- (void)setPoolingDilationRates:;
+- (void)setPoolingOffsets:;
+- (void)setPoolingReturnIndicesDataType:;
+- (id)poolingDilationRates;
+- (void)setPoolingReturnIndicesMode:;
+- (id)poolingKernelSizes;
+- (id)initWithDevice:kernelSizes:poolingMode:;
+- (void)setPoolingStrides:;
+- (int)poolingMode;
+- (id)poolingOffsets;
+- (int)poolingReturnIndicesMode;
+- (id)poolingStrides;
+- (unsigned long long)kernelDimensionalityForSourceArrays:;
+- (BOOL)supportsGradientForSourceIndex:;
+- (BOOL)computeGradient;
+- (id)initWithDevice:kernelSizes:poolingMode:returnIndicesMode:;
+- (unsigned int)poolingReturnIndicesDataType;
+- (id)initWithDevice:kernelSizes:poolingMode:computeGradient:;
++ (id)libraryInfo:;
+@end

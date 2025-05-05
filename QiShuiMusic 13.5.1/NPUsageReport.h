@@ -1,0 +1,32 @@
+@interface NPUsageReport : NSObject
+@property (nonatomic) NSString signingIdentifier;
+@property (nonatomic) q fallbackReason;
+@property (nonatomic) NSUUID dayPassUUID;
+@property (nonatomic) Q rtt;
+@property (nonatomic) NSString geohash;
+@property (nonatomic) C addressFamily;
+@property (nonatomic) I edgeIndex;
+@property (nonatomic) I keybagGeneration;
+@property (nonatomic) I waldoTimestamp;
+- (id)signingIdentifier;
+- (id)geohash;
+- (void)setGeohash:;
+- (id)initWithCoder:;
+- (unsigned char)addressFamily;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (void)setAddressFamily:;
+- (unsigned long long)rtt;
+- (long long)fallbackReason;
+- (id)initWithSigningIdentifier:fallbackReason:;
+- (id)dayPassUUID;
+- (void)setDayPassUUID:;
+- (void)setRtt:;
+- (unsigned int)edgeIndex;
+- (void)setEdgeIndex:;
+- (unsigned int)keybagGeneration;
+- (void)setKeybagGeneration:;
+- (unsigned int)waldoTimestamp;
+- (void)setWaldoTimestamp:;
++ (BOOL)supportsSecureCoding;
+@end

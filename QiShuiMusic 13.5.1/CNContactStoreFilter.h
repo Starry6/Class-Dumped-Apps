@@ -1,0 +1,32 @@
+@interface CNContactStoreFilter : CNContactFilter
+@property (nonatomic) NSSet groupIdentifiers;
+@property (nonatomic) NSSet containerIdentifiers;
+@property (nonatomic) BOOL showsEverything;
+@property (nonatomic) BOOL isServerFilter;
+- (BOOL)isServerFilter;
+- (id)containerIdentifiers;
+- (id)initWithDictionaryRepresentation:;
+- (id)predicate;
+- (void)setGroupIdentifiers:;
+- (void)saveToPreferencesWithContactStore:;
+- (void).cxx_destruct;
+- (id)groupIdentifiers;
+- (id)dictionaryRepresentationWithContactStore:;
+- (void)addAddressBookUIKeysToDictionaryRepresentation:withAllContainers:excludedContainers:excludedGroups:;
+- (id)description;
+- (BOOL)supportsSections;
+- (id)dictionaryRepresentation;
+- (void)setIsServerFilter:;
+- (void)setContainerIdentifiers:;
+- (BOOL)showsEverything;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)initWithDictionaryRepresentation:contactStore:;
++ (id)excludedContainerIdentifiersDictionaryKey;
++ (id)excludedGroupIdentifiersDictionaryKey;
++ (id)isServerFilterDictionaryKey;
++ (BOOL)getContainerIdentifiers:groupIdentifiers:serverFilter:fromLegacyDictionary:contactStore:;
++ (BOOL)getContainerIdentifiers:groupIdentifiers:serverFilter:fromSundanceToOkemoAndAddressBookUIDictionary:contactStore:;
++ (BOOL)getContainerIdentifiers:groupIdentifiers:serverFilter:fromPreSundanceDictionary:contactStore:;
++ (id)contactStoreFilterFromPreferencesWithContactStore:;
+@end

@@ -1,0 +1,31 @@
+@interface CNPropertyEditingCell : CNPropertyCell
+@property (nonatomic) CNRepeatingGradientSeparatorView vseparator;
+@property (nonatomic) UIButton labelButton;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithStyle:reuseIdentifier:;
+- (void)dealloc;
+- (id)labelView;
+- (id)valueString;
+- (void).cxx_destruct;
+- (id)variableConstraints;
+- (double)minCellHeight;
+- (id)constantConstraints;
+- (void)picker:didPickItem:;
+- (void)pickerDidCancel:;
+- (void)picker:didDeleteItem:;
+- (void)setValueTextAttributes:;
+- (void)updateWithPropertyItem:;
+- (void)labelButtonClicked:;
+- (double)leftValueMargin;
+- (double)effectiveLabelWidth;
+- (void)setVseparatorHidden:;
+- (void)regainFocus;
+- (id)labelButton;
+- (id)vseparator;
+- (void)setVseparator:;
++ (BOOL)wantsChevron;
++ (BOOL)wantsStandardConstraints;
+@end

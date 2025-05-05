@@ -1,0 +1,31 @@
+@interface SASTTSSelectionStatistics : SABaseCommand
+@property (nonatomic) NSString completionType;
+@property (nonatomic) NSString interactionId;
+@property (nonatomic) NSArray listenedItems;
+@property (nonatomic) q selectedItemIndex;
+@property (nonatomic) NSString sessionId;
+@property (nonatomic) NSArray timesListened;
+@property (nonatomic) NSString aceId;
+@property (nonatomic) NSString refId;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setSessionId:;
+- (void)setSelectedItemIndex:;
+- (id)sessionId;
+- (id)groupIdentifier;
+- (BOOL)requiresResponse;
+- (id)encodedClassName;
+- (long long)selectedItemIndex;
+- (id)interactionId;
+- (void)setInteractionId:;
+- (id)completionType;
+- (void)setCompletionType:;
+- (id)listenedItems;
+- (void)setListenedItems:;
+- (id)timesListened;
+- (void)setTimesListened:;
++ (id)tTSSelectionStatistics;
++ (id)tTSSelectionStatisticsWithDictionary:context:;
+@end

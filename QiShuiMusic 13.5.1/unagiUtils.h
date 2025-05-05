@@ -1,0 +1,2 @@
+@interface unagiUtils : NSObject
+@end

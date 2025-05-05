@@ -1,0 +1,2 @@
+@interface BUMCustomAdapterVersion : NSString
+@end

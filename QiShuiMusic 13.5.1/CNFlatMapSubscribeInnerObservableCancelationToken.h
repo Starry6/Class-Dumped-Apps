@@ -1,0 +1,2 @@
+@interface CNFlatMapSubscribeInnerObservableCancelationToken : CNCancelationToken
+@end

@@ -1,0 +1,31 @@
+@interface SNDetectionResult : NSObject
+@property (nonatomic) NSString identifier;
+@property (nonatomic) BOOL detected;
+@property (nonatomic) NSString detectorIdentifier;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) {?={?=qiIq}{?=qiIq}} timeRange;
+@property (nonatomic) double confidence;
+- (double)confidence;
+- (id)timeRange;
+- (void)setConfidence:;
+- (id)identifier;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)setTimeRange:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)initWithIdentifier:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)initWithBinarySampleRepresentation:metadata:timestamp:;
+- (id)binarySampleRepresentation;
+- (BOOL)detected;
+- (id)plistRepresentationWithError:;
+- (id)initWithIdentifier:detectedValue:;
+- (id)detectorIdentifier;
++ (BOOL)supportsSecureCoding;
+@end

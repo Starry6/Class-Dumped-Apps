@@ -1,0 +1,32 @@
+@interface ML3ComparisonPredicate : ML3PropertyPredicate
+@property (nonatomic) @ value;
+@property (nonatomic) NSInteger comparison;
+@property (nonatomic) BOOL caseInsensitive;
+@property (nonatomic) NSString treatNullAsString;
+@property (nonatomic) NSString transformFunction;
+- (id)databaseStatementParameters;
+- (int)comparison;
+- (void)appendSQLToMutableString:entityClass:;
+- (id)operator;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (id)treatNullAsString;
+- (void).cxx_destruct;
+- (BOOL)caseInsensitive;
+- (BOOL)containsPropertyPredicate:matchingValue:usingComparison:;
+- (id)description;
+- (id)value;
+- (id)valueToBindForOperation:;
+- (id)transformFunction;
+- (BOOL)isEqual:;
+- (id)initWithProperty:value:comparison:caseInsensitive:transformFunction:treatNullAsString:;
++ (BOOL)supportsSecureCoding;
++ (id)predicateWithProperty:value:comparison:transformFunction:;
++ (id)predicateWithProperty:value:comparison:;
++ (id)predicateWithProperty:equalToInt64:;
++ (id)predicateWithProperty:value:comparison:caseInsensitive:;
++ (id)predicateWithProperty:equalToInteger:;
++ (id)predicateWithProperty:value:comparison:caseInsensitive:treatNullAsString:;
++ (id)predicateWithProperty:equalToValue:;
+@end

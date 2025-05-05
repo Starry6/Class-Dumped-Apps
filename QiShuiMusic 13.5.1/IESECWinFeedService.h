@@ -1,0 +1,34 @@
+@interface IESECWinFeedService : NSObject
+@property (nonatomic) IESECServiceProxy<IESECWinTabService> tabService;
+@property (nonatomic) IESECServiceProxy<IESECWinCategoryService> categoryService;
+@property (nonatomic) IESECServiceProxy<IESECWinTabViewControllerManager> tabVCManager;
+@property (nonatomic) NSMutableDictionary cardHeightMap;
+@property (nonatomic) UIView targetBubbleView;
+@property (nonatomic) BOOL showFilterGuideBubble;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)clearCellHeight;
+- (BOOL)getFilterGuideBubbleShouldShow:;
+- (id)categoryService;
+- (id)cardHeightMap;
+- (double)getProductCellHeightWithCacheKey:;
+- (BOOL)hasSortCell;
+- (void)setCardHeightMap:;
+- (void)setCategoryService:;
+- (void)setFilterGuideBubbleShowed:;
+- (void)setProductCellHeight:withCacheKey:;
+- (void)setShowFilterGuideBubble:;
+- (void)setTabService:;
+- (void)setTabVCManager:;
+- (void)setTargetBubbleView:;
+- (BOOL)showFilterGuideBubble;
+- (double)sortCellHeight;
+- (id)tabService;
+- (id)tabVCManager;
+- (id)targetBubbleView;
+- (long long)topCardsCount;
+- (id)initWithContext:;
+- (void).cxx_destruct;
+@end

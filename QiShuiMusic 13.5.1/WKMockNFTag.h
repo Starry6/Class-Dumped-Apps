@@ -1,0 +1,36 @@
+@interface WKMockNFTag : NSObject
+@property (nonatomic) I type;
+@property (nonatomic) I technology;
+@property (nonatomic) NSData tagID;
+@property (nonatomic) NSData UID;
+@property (nonatomic) I ndefAvailability;
+@property (nonatomic) Q ndefMessageSize;
+@property (nonatomic) Q ndefContainerSize;
+@property (nonatomic) NSData AppData;
+@property (nonatomic) <NFTagA> tagA;
+@property (nonatomic) <NFTagB> tagB;
+@property (nonatomic) <NFTagF> tagF;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)UID;
+- (unsigned int)technology;
+- (void)dealloc;
+- (id)tagID;
+- (unsigned int)type;
+- (void).cxx_destruct;
+- (id)description;
+- (id).cxx_construct;
+- (id)initWithType:;
+- (id)initWithNFTag:;
+- (BOOL)isEqualToNFTag:;
+- (unsigned int)ndefAvailability;
+- (unsigned long long)ndefMessageSize;
+- (unsigned long long)ndefContainerSize;
+- (id)AppData;
+- (id)tagA;
+- (id)tagB;
+- (id)tagF;
+- (id)initWithType:tagID:;
+@end

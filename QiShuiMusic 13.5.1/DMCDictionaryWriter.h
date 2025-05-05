@@ -1,0 +1,33 @@
+@interface DMCDictionaryWriter : NSObject
+@property (nonatomic) NSError serializeError;
+@property (nonatomic) NSError writeError;
+@property (nonatomic) NSError beforeWriteRepairError;
+@property (nonatomic) NSError afterWriteRepairError;
+@property (nonatomic) DMCFileAccessRepairTool repairTool;
+@property (nonatomic) NSDictionary dictionary;
+@property (nonatomic) NSString path;
+- (BOOL)writeData:error:;
+- (id)path;
+- (id)dictionary;
+- (void)serializeDataAndWriteToStorage;
+- (id)repairTool;
+- (void)setRepairTool:;
+- (void)setWriteError:;
+- (id)serializedData;
+- (id)beforeWriteRepairError;
+- (BOOL)didWriteSucceed;
+- (id)serializeError;
+- (id)createRepairTool;
+- (void)setAfterWriteRepairError:;
+- (void)logResultOfWrite;
+- (BOOL)write;
+- (id)initWithDictionary:path:;
+- (void)setSerializeError:;
+- (void)logStartOfWrite;
+- (void).cxx_destruct;
+- (void)setBeforeWriteRepairError:;
+- (void)reset;
+- (BOOL)repairAccessIfNecessaryWithError:;
+- (id)afterWriteRepairError;
+- (id)writeError;
+@end

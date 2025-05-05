@@ -1,0 +1,2 @@
+@interface LynxHeliumCanvasView : UIView
+@end

@@ -1,0 +1,30 @@
+@interface IESECLiveRelatedInfoProvider : NSObject
+@property (nonatomic) NSDictionary originRelatedInfoDic;
+@property (nonatomic) NSArray relatedInfoConfigArray;
+@property (nonatomic) NSDictionary relatedDicForListTop;
+@property (nonatomic) NSDictionary relatedDicForRelatedCard;
+@property (nonatomic) NSDictionary relatedDicForPublicMessage;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)adjustRelatedInfoAfterShowInList;
+- (BOOL)existListTopRelatedInfo;
+- (id)initWithLiveContext:;
+- (id)originRelatedInfoDic;
+- (void)p_handleOriginRelatedInfo:;
+- (id)p_requestDicForSupportType:originRelatedInfoDic:;
+- (id)p_supportModeKeyFromEnumType:;
+- (id)relatedDicForListTop;
+- (id)relatedDicForPublicMessage;
+- (id)relatedDicForRelatedCard;
+- (id)relatedInfoConfigArray;
+- (id)relatedInfoForRequest:;
+- (void)replacePartRelatedInfo:;
+- (void)setOriginRelatedInfoDic:;
+- (void)setRelatedDicForListTop:;
+- (void)setRelatedDicForPublicMessage:;
+- (void)setRelatedDicForRelatedCard:;
+- (void)setRelatedInfoConfigArray:;
+- (void).cxx_destruct;
+@end

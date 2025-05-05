@@ -1,0 +1,34 @@
+@interface IESLiveInteractAddSeatNamePanelViewModel : NSObject
+@property (nonatomic) HTSLiveLinkmicPositionItem positionItem;
+@property (nonatomic) <IESLiveRoomServiceAdapter> room;
+@property (nonatomic) HTSEventContext eventContext;
+@property (nonatomic) Q type;
+@property (nonatomic) q seatIndex;
+@property (nonatomic) <IESLiveInteractUserModel> userModel;
+@property (nonatomic) NSString oldSeatName;
+@property (nonatomic) q seatOffset;
+@property (nonatomic) BOOL isEqual;
+@property (nonatomic) BOOL isAdmin;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didSetAttachingDIContext;
+- (id)initWithSeatIndex:userModel:room:eventContext:;
+- (id)oldSeatName;
+- (void)onClickOKWithSeatName:completion:;
+- (id)positionItem;
+- (long long)seatIndex;
+- (long long)seatOffset;
+- (void)setIsAdmin:;
+- (void)setIsEqual:;
+- (void)setPositionItem:;
+- (id)trackEditSeatParams;
+- (id)userModel;
+- (BOOL)isEqual;
+- (unsigned long long)type;
+- (void).cxx_destruct;
+- (id)eventContext;
+- (id)room;
+- (BOOL)isAdmin;
+@end

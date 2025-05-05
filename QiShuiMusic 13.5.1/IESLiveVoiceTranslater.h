@@ -1,0 +1,37 @@
+@interface IESLiveVoiceTranslater : NSObject
+@property (nonatomic) SAMICore handler;
+@property (nonatomic) BOOL translatePending;
+@property (nonatomic) @? fullPartTextResultCallBack;
+@property (nonatomic) @? failureCallBack;
+@property (nonatomic) NSString fullyTranslatePartText;
+@property (nonatomic) NSString translatingPartText;
+@property (nonatomic) NSMutableArray needCleanHandles;
+@property (nonatomic) BOOL disconnected;
+- (id)failureCallBack;
+- (void)resumeTranslate;
+- (void)_processTranslateResult:;
+- (void)cleanTranslateResult;
+- (id)fullPartTextResultCallBack;
+- (id)fullyTranslatePartText;
+- (id)needCleanHandles;
+- (void)pauseTranslate;
+- (void)setFailureCallBack:;
+- (void)setFullPartTextResultCallBack:;
+- (void)setFullyTranslatePartText:;
+- (void)setNeedCleanHandles:;
+- (void)setTranslatePending:;
+- (void)setTranslatingPartText:;
+- (void)setupSAMI;
+- (void)startTranslateWithPartTextResultCallBack:failureCallBack:;
+- (void)startTranslateWithTextResultCallBack:failureCallBack:;
+- (void)stopTranslate;
+- (void)translatePCMAudioData:withDataSize:;
+- (BOOL)translatePending;
+- (id)translatingPartText;
+- (id)init;
+- (void)setHandler:;
+- (id)handler;
+- (void)setDisconnected:;
+- (void).cxx_destruct;
+- (BOOL)disconnected;
+@end

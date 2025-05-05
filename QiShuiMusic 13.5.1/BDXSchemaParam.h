@@ -1,0 +1,35 @@
+@interface BDXSchemaParam : NSObject
+@property (nonatomic) NSString puzzleContextKey;
+@property (nonatomic) <BDSchemaDataProtocol> schemaData;
+@property (nonatomic) BDXContainerModel containerModel;
+@property (nonatomic) AnnieXLynxSchemaModel lynxModel;
+@property (nonatomic) BDXWebKitModel webModel;
+@property (nonatomic) BDXResourceModel resourceModel;
+@property (nonatomic) NSURL originURL;
+@property (nonatomic) NSURL resolvedURL;
+@property (nonatomic) NSString uniqueUrlString;
+- (id)uniqueUrlString;
+- (id)containerModel;
+- (id)lynxModel;
+- (id)puzzleContextKey;
+- (id)resourceModel;
+- (void)setContainerModel:;
+- (void)setLynxModel:;
+- (void)setPuzzleContextKey:;
+- (void)setResourceModel:;
+- (void)setUniqueUrlString:;
+- (void)setWebModel:;
+- (void)updateWithParam:;
+- (void)updateWithSchemaData:;
+- (id)webModel;
+- (id)queryItems;
+- (void)updateWithDictionary:;
+- (id)resolvedURL;
+- (void).cxx_destruct;
+- (id)originURL;
+- (void)setOriginURL:;
+- (void)setResolvedURL:;
+- (id)schemaData;
+- (void)setSchemaData:;
++ (id)paramWithSchemaData:;
+@end

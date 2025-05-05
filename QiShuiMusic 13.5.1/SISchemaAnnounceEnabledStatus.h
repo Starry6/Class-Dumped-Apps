@@ -1,0 +1,35 @@
+@interface SISchemaAnnounceEnabledStatus : SISchemaInstrumentationMessage
+@property (nonatomic) BOOL announceMessagesEnabled;
+@property (nonatomic) BOOL hasAnnounceMessagesEnabled;
+@property (nonatomic) BOOL announceCallsEnabled;
+@property (nonatomic) BOOL hasAnnounceCallsEnabled;
+@property (nonatomic) SISchemaAnnounceNotifications announceNotifications;
+@property (nonatomic) BOOL hasAnnounceNotifications;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (BOOL)announceCallsEnabled;
+- (void)setAnnounceCallsEnabled:;
+- (void)setAnnounceMessagesEnabled:;
+- (BOOL)announceMessagesEnabled;
+- (BOOL)hasAnnounceMessagesEnabled;
+- (void)setHasAnnounceMessagesEnabled:;
+- (void)deleteAnnounceMessagesEnabled;
+- (BOOL)hasAnnounceCallsEnabled;
+- (void)setHasAnnounceCallsEnabled:;
+- (void)deleteAnnounceCallsEnabled;
+- (BOOL)hasAnnounceNotifications;
+- (void)deleteAnnounceNotifications;
+- (id)announceNotifications;
+- (void)setAnnounceNotifications:;
+- (void)setHasAnnounceNotifications:;
+@end

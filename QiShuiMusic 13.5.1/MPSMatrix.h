@@ -1,0 +1,37 @@
+@interface MPSMatrix : NSObject
+@property (nonatomic) <MTLDevice> device;
+@property (nonatomic) Q rows;
+@property (nonatomic) Q columns;
+@property (nonatomic) Q matrices;
+@property (nonatomic) I dataType;
+@property (nonatomic) Q rowBytes;
+@property (nonatomic) Q matrixBytes;
+@property (nonatomic) Q offset;
+@property (nonatomic) <MTLBuffer> data;
+- (void)incrementReadCount;
+- (void)decrementReadCount;
+- (void)resetReadCount;
+- (unsigned long long)columns;
+- (id)init;
+- (unsigned long long)rows;
+- (id)data;
+- (unsigned int)dataType;
+- (id)initWithDevice:descriptor:;
+- (id)debugDescription;
+- (unsigned long long)offset;
+- (unsigned long long)resourceSize;
+- (void)synchronizeOnCommandBuffer:;
+- (void).cxx_destruct;
+- (id).cxx_construct;
+- (BOOL)isEqual:;
+- (id)device;
+- (unsigned long long)matrices;
+- (unsigned long long)rowBytes;
+- (id)initWithBuffer:descriptor:;
+- (id)ndArrayWithCommandBuffer:descriptor:aliasing:;
+- (unsigned long long)matrixBytes;
+- (id)initWithBuffer:offset:descriptor:;
+- (id)initPrivateWithDescriptor:device:;
+- (BOOL)canAliasWithNDArrayDescriptor:;
+- (BOOL)doesAliasWithNDArray:;
+@end

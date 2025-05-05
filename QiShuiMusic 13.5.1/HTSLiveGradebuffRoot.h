@@ -1,0 +1,2 @@
+@interface HTSLiveGradebuffRoot : GPBRootObject
+@end

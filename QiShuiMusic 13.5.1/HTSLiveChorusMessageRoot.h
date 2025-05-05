@@ -1,0 +1,2 @@
+@interface HTSLiveChorusMessageRoot : GPBRootObject
+@end

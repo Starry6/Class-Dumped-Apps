@@ -1,0 +1,35 @@
+@interface RxCollectionLayoutSize : NSObject
+@property (nonatomic) RxCollectionLayoutDimension widthDimension;
+@property (nonatomic) RxCollectionLayoutDimension heightDimension;
+@property (nonatomic) Q widthSemantic;
+@property (nonatomic) Q heightSemantic;
+@property (nonatomic) {CGSize=dd} size;
+- (id)effectiveSizeForContainer:;
+- (id)effectiveSizeForContainer:ignoringInsets:;
+- (id)heightSemanticDescription;
+- (BOOL)isEstimatedForAxis:;
+- (id)widthSemanticDescription;
+- (unsigned long long)widthSemantic;
+- (BOOL)isEstimated;
+- (void)setWidthDimension:;
+- (id)initWithSize:widthSemantic:heightSemantic:width:height:;
+- (unsigned long long)heightSemantic;
+- (id)widthDimension;
+- (void)setHeightDimension:;
+- (id)heightDimension;
+- (void).cxx_destruct;
+- (void)setHeightSemantic:;
+- (BOOL)isContainerSize;
+- (id)description;
+- (void)setWidthSemantic:;
+- (void)setSize:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)size;
++ (id)sizeWithWidthDimension:heightDimension:;
++ (id)sizeWithSize:widthSemantic:heightSemantic:;
++ (id)sizeWithContainerSize;
++ (id)sizeWithAbsoluteSize:;
++ (id)sizeWithContainerWidthFactor:containerHeightFactor:;
++ (id)sizeWithWidth:widthSemantic:height:heightSemantic:;
+@end

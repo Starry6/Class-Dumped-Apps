@@ -1,0 +1,31 @@
+@interface CKSQLiteKeyValueTableEntry : NSObject
+@property (nonatomic) NSNumber scope;
+@property (nonatomic) NSString scopeIdentifier;
+@property (nonatomic) NSString key;
+@property (nonatomic) NSNumber number;
+@property (nonatomic) NSString string;
+@property (nonatomic) NSData data;
+@property (nonatomic) NSDate date;
+@property (nonatomic) NSUUID UUID;
+@property (nonatomic) NSObject<NSCoding> object;
+- (id)string;
+- (void)setObject:;
+- (id)number;
+- (id)scopeIdentifier;
+- (void)setScope:;
+- (id)scope;
+- (void)setUUID:;
+- (id)data;
+- (void)setString:;
+- (id)key;
+- (id)date;
+- (void)setNumber:;
+- (void)setKey:;
+- (void).cxx_destruct;
+- (id)object;
+- (void)setDate:;
+- (id)description;
+- (void)setData:;
+- (id)UUID;
+- (void)setScopeIdentifier:;
+@end

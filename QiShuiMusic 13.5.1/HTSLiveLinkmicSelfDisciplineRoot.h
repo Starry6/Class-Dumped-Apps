@@ -1,0 +1,2 @@
+@interface HTSLiveLinkmicSelfDisciplineRoot : GPBRootObject
+@end

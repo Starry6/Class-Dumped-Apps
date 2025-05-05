@@ -1,0 +1,33 @@
+@interface IESLiveSmallWindowView : UIView
+@property (nonatomic) UIPanGestureRecognizer panGes;
+@property (nonatomic) {UIEdgeInsets=dddd} safeArea;
+@property (nonatomic) BOOL isShowOuterPlayerView;
+@property (nonatomic) Q smallWindowType;
+@property (nonatomic) NSString currentSmallWindowFrom;
+@property (nonatomic) IESLiveSmallWindowPlayerView playerView;
+@property (nonatomic) IESLiveSmallWindowOuterPlayerView outerPlayerView;
+- (id)outerPlayerView;
+- (unsigned long long)smallWindowType;
+- (id)smallWindowView;
+- (void)addGestureIfNeed;
+- (id)currentSmallWindowFrom;
+- (void)hidePlayerViewAnimation:;
+- (BOOL)isShowOuterPlayerView;
+- (id)panGes;
+- (void)resetPositionIfNeed;
+- (id)safeArea;
+- (void)setCurrentSmallWindowFrom:;
+- (void)setIsShowOuterPlayerView:;
+- (void)setOuterPlayerView:;
+- (void)setPanGes:;
+- (void)setSafeArea:;
+- (void)setSmallWindowType:;
+- (void)showPlayerViewAnimation;
+- (void)setPlayerView:;
+- (id)init;
+- (void)dealloc;
+- (id)hitTest:withEvent:;
+- (void).cxx_destruct;
+- (id)playerView;
+- (void)didPan:;
+@end

@@ -1,0 +1,34 @@
+@interface CEMPredicateBudget : CEMPredicateBase
+@property (nonatomic) NSString payloadCalendarIdentifier;
+@property (nonatomic) NSString payloadMonitor;
+@property (nonatomic) NSArray payloadIdentifiers;
+@property (nonatomic) NSArray payloadIdentifiersVersion2;
+@property (nonatomic) NSArray payloadNotificationTimes;
+@property (nonatomic) NSArray payloadTimeBudget;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)payloadIdentifiers;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (void)setPayloadIdentifiers:;
+- (BOOL)loadPayload:error:;
+- (id)serializePayloadWithAssetProviders:;
+- (id)payloadCalendarIdentifier;
+- (void)setPayloadCalendarIdentifier:;
+- (id)payloadMonitor;
+- (void)setPayloadMonitor:;
+- (id)payloadIdentifiersVersion2;
+- (void)setPayloadIdentifiersVersion2:;
+- (id)payloadNotificationTimes;
+- (void)setPayloadNotificationTimes:;
+- (id)payloadTimeBudget;
+- (void)setPayloadTimeBudget:;
++ (id)buildWithCalendarIdentifier:withMonitor:withIdentifiers:withIdentifiersVersion2:withNotificationTimes:withTimeBudget:;
++ (id)registeredClassName;
++ (id)registeredIdentifier;
++ (id)allowedPayloadKeys;
++ (id)buildWithCalendarIdentifier:withMonitor:withIdentifiers:withNotificationTimes:withTimeBudget:;
++ (id)buildRequiredOnlyWithMonitor:withTimeBudget:;
+@end

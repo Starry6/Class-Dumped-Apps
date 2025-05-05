@@ -1,0 +1,35 @@
+@interface SFDeviceRepairService : NSObject
+@property (nonatomic) NSObject<OS_dispatch_queue> dispatchQueue;
+@property (nonatomic) Q problemFlags;
+@property (nonatomic) @? progressHandler;
+- (void)setProgressHandler:;
+- (id)progressHandler;
+- (id)init;
+- (void)_sfServiceStart;
+- (id)dispatchQueue;
+- (void)setDispatchQueue:;
+- (void)setProblemFlags:;
+- (void)_invalidate;
+- (void).cxx_destruct;
+- (unsigned long long)problemFlags;
+- (void)_handleSessionStarted:;
+- (void)invalidate;
+- (void)activate;
+- (void)invalidateWithFlags:;
+- (void)_saveAccount:completion:;
+- (void)_handleSessionEnded:;
+- (void)_handleTRCompanionAuthenticationRequest:responseHandler:;
+- (void)_handleTRProxyDeviceRequest:responseHandler:;
+- (void)_handleTRProxyAuthenticationRequest:responseHandler:;
+- (void)_authenticateAccount:serviceType:companionDevice:anisetteDataProvider:completion:;
+- (void)_authenticateAccount:serviceType:password:completion:;
+- (void)_authenticateWithServiceTypes:authResults:completion:;
+- (void)_authenticateWithServiceType:authResults:completion:;
+- (void)_authenticateiCloudWithAuthResults:completion:;
+- (void)_authenticateiTunesWithAuthResults:completion:;
+- (long long)_nextServiceTypeForTRAccountServices:;
+- (unsigned long long)_nextTRServiceTypeForTRAccountServices:;
+- (void)_saveRemoteVerifiedAccount:completion:;
+- (void)_handleFinishRequest:responseHandler:;
+- (void)_handleGetProblemsRequest:responseHandler:;
+@end

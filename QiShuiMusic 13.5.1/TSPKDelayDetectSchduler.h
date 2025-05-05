@@ -1,0 +1,33 @@
+@interface TSPKDelayDetectSchduler : NSObject
+@property (nonatomic) NSObject<OS_dispatch_source> timer;
+@property (nonatomic) double lastCheckTime;
+@property (nonatomic) double scheduleDetectTime;
+@property (nonatomic) TSPKDelayDetectModel delayDetectModel;
+@property (nonatomic) <TSPKDelayDetectDelegate> delegate;
+@property (nonatomic) <TSPKLock> lock;
+- (void)stopDelayDetect;
+- (void)addNotifications;
+- (void)applicationBecomeInactive;
+- (void)cancelDetectAction;
+- (id)delayDetectModel;
+- (void)executeDetectAction;
+- (id)initWithDelayDetectModel:delegate:;
+- (BOOL)isDelaying;
+- (void)scheduleDetectAction;
+- (double)scheduleDetectTime;
+- (void)setDelayDetectModel:;
+- (void)setScheduleDetectTime:;
+- (void)startDelayDetect;
+- (double)timeDelay;
+- (void)dealloc;
+- (void)setDelegate:;
+- (id)lock;
+- (void)setTimer:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)removeNotifications;
+- (id)timer;
+- (void)setLock:;
+- (double)lastCheckTime;
+- (void)setLastCheckTime:;
+@end

@@ -1,0 +1,38 @@
+@interface CUMFiSession : NSObject
+@property (nonatomic) EAAccessory device;
+@property (nonatomic) NSObject<OS_dispatch_queue> dispatchQueue;
+@property (nonatomic) @? interruptionHandler;
+@property (nonatomic) @? invalidationHandler;
+@property (nonatomic) NSString label;
+@property (nonatomic) NSString protocolString;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (id)interruptionHandler;
+- (void)dealloc;
+- (void)_completeReadRequest:error:;
+- (void)setInterruptionHandler:;
+- (void)setDevice:;
+- (id)dispatchQueue;
+- (void)setDispatchQueue:;
+- (void)setLabel:;
+- (id)label;
+- (void)_invalidate;
+- (void)_activate;
+- (void).cxx_destruct;
+- (void)stream:handleEvent:;
+- (id)invalidationHandler;
+- (void)setInvalidationHandler:;
+- (void)_handleError:;
+- (void)invalidate;
+- (id)device;
+- (void)activate;
+- (void)readMinLength:maxLength:completion:;
+- (void)_processReadRequests;
+- (void)writeData:completion:;
+- (void)_processWriteRequests;
+- (id)protocolString;
+- (void)setProtocolString:;
+@end

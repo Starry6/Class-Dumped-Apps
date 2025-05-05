@@ -1,0 +1,36 @@
+@interface AMapNetWorkPerformanceManager : NSObject
+@property (nonatomic) NSMutableArray successModelQueue;
+@property (nonatomic) NSMutableArray failedModelQueue;
+@property (nonatomic) NSMutableDictionary uploadingQueue;
+@property (nonatomic) NSObject<OS_dispatch_queue> gcdQueue;
+@property (nonatomic) AMapNetworkFailModel lastFailModel;
+@property (nonatomic) NSMutableDictionary staticDomainOccureErrorDic;
+@property (nonatomic) NSUserDefaults netWorkUserDefault;
+- (void)addPerformanceModel:;
+- (BOOL)canUseStaticDomain:;
+- (id)failedModelQueue;
+- (id)gcdQueue;
+- (id)getFailModel;
+- (id)getPerformanceModel;
+- (id)initWithSinglton;
+- (BOOL)isSameDay:date2:;
+- (id)lastFailModel;
+- (id)netWorkUserDefault;
+- (void)requestCompleteWithError:failModel:sucModel:;
+- (void)setFailedModelQueue:;
+- (void)setGcdQueue:;
+- (void)setLastFailModel:;
+- (void)setNetWorkUserDefault:;
+- (void)setStaticDomainOccureErrorDic:;
+- (void)setSuccessModelQueue:;
+- (void)setUploadingQueue:;
+- (id)staticDomainOccureErrorDic;
+- (id)successModelQueue;
+- (void)updateFailQueue:;
+- (void)updateStaticDomainOccureError:;
+- (void)updateSuccessQueue:;
+- (id)uploadingQueue;
+- (id)init;
+- (void).cxx_destruct;
++ (id)defaultManager;
+@end

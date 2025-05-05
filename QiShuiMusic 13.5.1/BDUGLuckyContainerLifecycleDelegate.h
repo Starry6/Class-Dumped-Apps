@@ -1,0 +1,30 @@
+@interface BDUGLuckyContainerLifecycleDelegate : NSObject
+@property (nonatomic) NSMutableSet aliveContainers;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)aliveContainers;
+- (void)container:didChangeIntrinsicContentSize:;
+- (void)container:didLoadFailedWithUrl:error:;
+- (void)container:didStartLoadingFailedWithUrl:;
+- (void)containerDeallocNotification:;
+- (void)containerDidClose:;
+- (void)containerDidPageReady:sourceParam:;
+- (void)containerDidStartLoading:;
+- (void)containerOnHide:sourceParam:;
+- (void)containerOnShow:sourceParam:;
+- (void)containerTerminated:;
+- (void)containerWillConstructKitView:source:;
+- (void)containerWillDestory:;
+- (void)containerWillStartLoading:;
+- (id)originURLOfContainer:;
+- (void)setAliveContainers:;
+- (id)sourceURLOfContainer:;
+- (id)sourceURLOfOriginURLComp:;
+- (id)sourceURLOfOriginURLString:;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
++ (id)sharedInstance;
+@end

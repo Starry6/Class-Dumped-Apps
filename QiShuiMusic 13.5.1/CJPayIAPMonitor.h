@@ -1,0 +1,35 @@
+@interface CJPayIAPMonitor : NSObject
+@property (nonatomic) double startTime;
+@property (nonatomic) q createBizOrderRetryCount;
+@property (nonatomic) q sendTransactionRetryCount;
+@property (nonatomic) NSString businessIdentify;
+@property (nonatomic) BOOL useProductCache;
+@property (nonatomic) NSString version;
+@property (nonatomic) NSString iapType;
+- (id)iapType;
+- (BOOL)useProductCache;
+- (id)businessIdentify;
+- (long long)createBizOrderRetryCount;
+- (void)monitor:category:extra:;
+- (void)monitorService:category:extra:;
+- (void)p_monitorCallbackResultWithCategory:extra:;
+- (void)p_monitorCreateBizOrderWithCategory:extra:;
+- (void)p_monitorInitWithCategory:extra:;
+- (void)p_monitorReceiveTransactionWithCategory:extra:;
+- (void)p_monitorRequestProductsWithCategory:extra:;
+- (void)p_monitorStagesCostTimeWithCategory:extra:;
+- (void)p_monitorStartPaymentWithCategory:extra:;
+- (void)p_monitorVerifyTransactionWithCategory:extra:;
+- (void)p_monitorWakeUpWithCategory:extra:;
+- (long long)sendTransactionRetryCount;
+- (void)setBusinessIdentify:;
+- (void)setCreateBizOrderRetryCount:;
+- (void)setIapType:;
+- (void)setSendTransactionRetryCount:;
+- (void)setUseProductCache:;
+- (void)setVersion:;
+- (id)version;
+- (void)setStartTime:;
+- (double)startTime;
+- (void).cxx_destruct;
+@end

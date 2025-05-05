@@ -1,0 +1,2 @@
+@interface AVVideoCompositionRenderHintInternal : NSObject
+@end

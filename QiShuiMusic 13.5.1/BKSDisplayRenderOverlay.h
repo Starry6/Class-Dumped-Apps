@@ -1,0 +1,35 @@
+@interface BKSDisplayRenderOverlay : NSObject
+@property (nonatomic) BKSDisplayRenderOverlayDescriptor descriptor;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSString name;
+@property (nonatomic) CADisplay display;
+@property (nonatomic) q interfaceOrientation;
+@property (nonatomic) BOOL lockBacklight;
+@property (nonatomic) BKSDisplayProgressIndicatorProperties progressIndicatorProperties;
+@property (nonatomic) BOOL interstitial;
+@property (nonatomic) BKSDisplayRenderOverlayDescriptor overlayDescriptor;
+- (void)dismiss;
+- (id)initWithDescriptor:;
+- (void)present;
+- (long long)interfaceOrientation;
+- (BOOL)lockBacklight;
+- (void)freeze;
+- (id)display;
+- (id)overlayDescriptor;
+- (id)succinctDescriptionBuilder;
+- (BOOL)isInterstitial;
+- (void)dismissWithAnimation:;
+- (void).cxx_destruct;
+- (id)progressIndicatorProperties;
+- (id)succinctDescription;
+- (id)description;
+- (id)name;
+- (id)descriptionBuilderWithMultilinePrefix:;
+- (id)descriptionWithMultilinePrefix:;
+- (id)_descriptor;
++ (id)dismissActions;
++ (id)existingOverlayForDisplay:;
+@end

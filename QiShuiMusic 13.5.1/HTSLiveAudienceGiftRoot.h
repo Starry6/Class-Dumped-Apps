@@ -1,0 +1,2 @@
+@interface HTSLiveAudienceGiftRoot : GPBRootObject
+@end

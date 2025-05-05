@@ -1,0 +1,34 @@
+@interface ASDClaimApplicationsRequestOptions : ASDRequestOptions
+@property (nonatomic) NSNumber accountID;
+@property (nonatomic) NSData clientAuditTokenData;
+@property (nonatomic) NSArray bundleIdentifiers;
+@property (nonatomic) q claimStyle;
+@property (nonatomic) BOOL establishesActiveAccount;
+@property (nonatomic) NSDictionary httpHeaders;
+@property (nonatomic) BOOL ignoresPreviousClaimAttempts;
+@property (nonatomic) NSNumber purchaseID;
+@property (nonatomic) BOOL suppressErrorDialogs;
+- (void)setClientAuditTokenData:;
+- (id)initWithBundleIdentifiers:;
+- (id)purchaseID;
+- (id)accountID;
+- (id)httpHeaders;
+- (void)setAccountID:;
+- (id)initWithCoder:;
+- (void)setHttpHeaders:;
+- (void)setPurchaseID:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)clientAuditTokenData;
+- (id)copyWithZone:;
+- (id)bundleIdentifiers;
+- (long long)claimStyle;
+- (id)initWithClaimStyle:;
+- (BOOL)establishesActiveAccount;
+- (void)setEstablishesActiveAccount:;
+- (BOOL)ignoresPreviousClaimAttempts;
+- (void)setIgnoresPreviousClaimAttempts:;
+- (BOOL)suppressErrorDialogs;
+- (void)setSuppressErrorDialogs:;
++ (BOOL)supportsSecureCoding;
+@end

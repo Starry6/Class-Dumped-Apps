@@ -1,0 +1,33 @@
+@interface IESECListKitListUpdater : NSObject
+@property (nonatomic) IESECListKitBFFViewController ieseclistkit_listVC;
+@property (nonatomic) IESECDIMessageCenter messageCenter;
+@property (nonatomic) NSMutableArray tableArr;
+@property (nonatomic) @ bizContext;
+- (id)_addServiceWithClass:toProtocol:;
+- (id)_findOrAddServiceWithClass:toProtocol:;
+- (id)bizContext;
+- (id)collectionViewCellInSection:item:;
+- (id)createProxyAndBindService:toProtocol:;
+- (id)firstPlayableMediaCell;
+- (id)headerViewInSection:;
+- (id)ieseclistkit_listVC;
+- (BOOL)insertItem:inSection:animated:;
+- (BOOL)insertItem:inSection:index:animated:;
+- (id)messageObjectWithProtocol:;
+- (void)registerMessageObject:toProtocol:;
+- (void)reloadList:;
+- (void)removeItemInSection:index:animated:;
+- (void)scrollToItemAtSection:index:scrollPosition:animated:;
+- (void)setBizContext:;
+- (void)setIeseclistkit_listVC:;
+- (void)setTableArr:;
+- (id)tableArr;
+- (void)unRegisterMessageObject:toProtocol:;
+- (void)updateLayout:inSection:completion:;
+- (void)updateModel:inSection:index:updateAnimated:completion:;
+- (void)updateSectionData:animated:;
+- (void).cxx_destruct;
+- (void)reloadSection:completion:;
+- (id)messageCenter;
+- (void)setMessageCenter:;
+@end

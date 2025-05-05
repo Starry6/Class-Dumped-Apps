@@ -1,0 +1,32 @@
+@interface IDSSocketPairMessage : NSObject
+@property (nonatomic) C command;
+@property (nonatomic) NSData underlyingData;
+@property (nonatomic) Q underlyingDataLength;
+@property (nonatomic) <NSObject> context;
+@property (nonatomic) NSString topic;
+@property (nonatomic) BOOL useDynamicServiceName;
+@property (nonatomic) BOOL cancelled;
+@property (nonatomic) BOOL wasWrittenToConnection;
+- (BOOL)cancelled;
+- (void)setCancelled:;
+- (void)setTopic:;
+- (id)context;
+- (unsigned char)command;
+- (void).cxx_destruct;
+- (id)topic;
+- (void)setContext:;
+- (id)initWithCommand:underlyingData:;
+- (id)_nonHeaderData;
+- (unsigned long long)underlyingDataLength;
+- (id)_existingUnderlyingData;
+- (id)underlyingData;
+- (BOOL)useDynamicServiceName;
+- (void)setUseDynamicServiceName:;
+- (BOOL)wasWrittenToConnection;
+- (void)setWasWrittenToConnection:;
++ (unsigned int)headerDataSize;
++ (unsigned int)dataLengthFromHeaderData:;
++ (id)messageWithData:;
++ (id)messageWithHeaderData:data:;
++ (id)messageWithCommand:data:;
+@end

@@ -1,0 +1,30 @@
+@interface NSISVariable : NSObject
+@property (nonatomic) <NSISVariableDelegate> delegate;
+@property (nonatomic) BOOL shouldBeMinimized;
+@property (nonatomic) NSInteger valueRestriction;
+@property (nonatomic) NSInteger orientationHint;
+@property (nonatomic) NSArray engines;
+- (int)orientationHint;
+- (id)init;
+- (void)dealloc;
+- (double)allowedMagnitudeForIntegralizationAdjustmentOfMarkedConstraint;
+- (id)overflowEngineVarIndexForEngine:;
+- (BOOL)shouldBeIntegral;
+- (void)setDelegate:;
+- (id)markedConstraint;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)descriptionInEngine:;
+- (void)encodeWithCoder:;
+- (id)delegate;
+- (id)engines;
+- (int)valueRestriction;
+- (id)description;
+- (BOOL)valueIsUserVisible;
+- (BOOL)shouldBeMinimized;
+- (BOOL)markedConstraintIsEligibleForIntegralizationAdjustment;
++ (id)variableWithName:valueRestriction:shouldBeMinimized:;
++ (id)variableWithDelegate:valueRestriction:shouldBeMinimized:;
++ (id)variableMarkingConstraint:valueRestriction:shouldBeMinimized:;
++ (id)variableWithName:valueRestriction:shouldBeMinimized:valueIsUserObservable:;
+@end

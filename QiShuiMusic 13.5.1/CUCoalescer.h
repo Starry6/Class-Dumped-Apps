@@ -1,0 +1,30 @@
+@interface CUCoalescer : NSObject
+@property (nonatomic) @? actionHandler;
+@property (nonatomic) NSObject<OS_dispatch_queue> dispatchQueue;
+@property (nonatomic) @? invalidationHandler;
+@property (nonatomic) double leeway;
+@property (nonatomic) double maxDelay;
+@property (nonatomic) double minDelay;
+- (id)init;
+- (void)cancel;
+- (void)dealloc;
+- (id)dispatchQueue;
+- (void)_trigger;
+- (void)setDispatchQueue:;
+- (void)_cancel;
+- (void)_timerFired;
+- (double)minDelay;
+- (void)trigger;
+- (void)setActionHandler:;
+- (void)_invalidate;
+- (void)setLeeway:;
+- (id)actionHandler;
+- (void).cxx_destruct;
+- (id)invalidationHandler;
+- (void)setInvalidationHandler:;
+- (double)leeway;
+- (void)setMaxDelay:;
+- (double)maxDelay;
+- (void)invalidate;
+- (void)setMinDelay:;
+@end

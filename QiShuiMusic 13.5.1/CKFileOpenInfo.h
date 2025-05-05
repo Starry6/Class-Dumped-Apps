@@ -1,0 +1,35 @@
+@interface CKFileOpenInfo : NSObject
+@property (nonatomic) NSString UUID;
+@property (nonatomic) NSString path;
+@property (nonatomic) NSNumber deviceID;
+@property (nonatomic) NSNumber fileID;
+@property (nonatomic) NSNumber generationID;
+@property (nonatomic) BOOL shouldReadRawEncryptedData;
+@property (nonatomic) NSFileHandle fileHandle;
+@property (nonatomic) CKAssetDownloadStagingInfo assetDownloadStagingInfo;
+@property (nonatomic) CKAssetDownloadStagingManager assetDownloadStagingManager;
+- (void)setFileID:;
+- (void)setFileHandle:;
+- (id)path;
+- (id)fileID;
+- (id)fileHandle;
+- (void)setGenerationID:;
+- (id)generationID;
+- (void)setUUID:;
+- (void)setPath:;
+- (void)setAssetDownloadStagingInfo:;
+- (id)initWithCoder:;
+- (void)setShouldReadRawEncryptedData:;
+- (void)setDeviceID:;
+- (id)deviceID;
+- (id)CKPropertiesDescription;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)assetDownloadStagingInfo;
+- (BOOL)shouldReadRawEncryptedData;
+- (id)description;
+- (id)assetDownloadStagingManager;
+- (id)UUID;
+- (void)setAssetDownloadStagingManager:;
++ (BOOL)supportsSecureCoding;
+@end

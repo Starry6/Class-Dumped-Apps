@@ -1,0 +1,37 @@
+@interface IESLiveMessageHeatObserver : NSObject
+@property (nonatomic) IESLiveMessageHeatConfig config;
+@property (nonatomic) NSMutableArray messageArrays;
+@property (nonatomic) Q currentLevel;
+@property (nonatomic) NSTimer timer;
+@property (nonatomic) BOOL isInCD;
+@property (nonatomic) Q lastCountRecord;
+@property (nonatomic) <IESLiveMessageHeatDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (unsigned long long)lastCountRecord;
+- (long long)countOfMessages;
+- (void)addMessageArrayToObserve:;
+- (void)addMessageArraysToObserve:;
+- (BOOL)isInCD;
+- (void)judgeHeatUpState;
+- (id)messageArrays;
+- (void)mutableArrayDidChangedValue:;
+- (void)setIsInCD:;
+- (void)setLastCountRecord:;
+- (void)setMessageArrays:;
+- (void)setupTimerIfNeed;
+- (void)dealloc;
+- (void)setConfig:;
+- (id)initWithConfig:;
+- (void)setDelegate:;
+- (void)setTimer:;
+- (unsigned long long)currentLevel;
+- (void)setup;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)timer;
+- (id)config;
+- (void)setCurrentLevel:;
+@end

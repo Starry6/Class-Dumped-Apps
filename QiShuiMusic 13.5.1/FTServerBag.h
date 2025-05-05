@@ -1,0 +1,30 @@
+@interface FTServerBag : NSObject
+@property (nonatomic) NSURL bagURL;
+@property (nonatomic) NSString apsEnvironmentName;
+@property (nonatomic) BOOL allowSelfSignedCertificates;
+@property (nonatomic) BOOL allowUnsignedBags;
+@property (nonatomic) BOOL isLoaded;
+@property (nonatomic) BOOL isLoading;
+@property (nonatomic) BOOL isInDebilitatedMode;
+@property (nonatomic) BOOL isServerAvailable;
+- (BOOL)isLoading;
+- (void)dealloc;
+- (BOOL)isInDebilitatedMode;
+- (id)objectForKey:;
+- (BOOL)isLoaded;
+- (id)_bag;
+- (id)bagURL;
+- (void)startBagLoad;
+- (void)forceBagLoad;
+- (id)urlWithKey:;
+- (BOOL)isServerAvailable;
+- (id)apsEnvironmentName;
+- (id)_cachedBag;
+- (BOOL)allowSelfSignedCertificates;
+- (BOOL)allowUnsignedBags;
+- (id)initWithBagType:;
++ (id)_sharedInstanceForType:;
++ (id)sharedInstance;
++ (id)_sharedInstance;
++ (id)sharedInstanceForBagType:;
+@end

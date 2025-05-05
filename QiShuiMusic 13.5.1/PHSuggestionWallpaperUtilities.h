@@ -1,0 +1,32 @@
+@interface PHSuggestionWallpaperUtilities : NSObject
++ (id)_fetchMeContactIdentifier;
++ (id)bestWallpaperCropForSuggestion:outputCropScore:outputLayoutAcceptable:;
++ (id)bestWallpaperCropForAsset:classification:outputCropScore:outputLayoutAcceptable:;
++ (id)_personFetchOptionsWithPhotoLibrary:;
++ (id)_assetSortComparatorForPortraitWallpaper;
++ (unsigned long long)mediaAnalysisTypeForParallaxClassification:;
++ (id)knownPersonLocalIdentifiersInPhotoLibrary:;
++ (id)fetchPersonLocalIdentifiersForSuggestionSubtype:photoLibrary:;
++ (id)fallbackPortraitWallpaperGallerySortedFeaturedPhotosInPhotoLibrary:passingFilterBlock:maximumNumberOfTries:;
++ (id)_blockedImportedByBundleIdentifiers;
++ (void)rejectWallpaperSuggestions:completionHandler:;
++ (void)rejectWallpaperSuggestionsUsingAsset:completionHandler:;
++ (void)rejectWallpaperSuggestionsUsingAssetOfSuggestion:completionHandler:;
++ (id)_facePredicateForPortraitWallpaperCandidatesWithPersonLocalIdentifiers:deviceAspectRatio:;
++ (unsigned long long)parallaxClassificationForMedia:descriptorType:;
++ (id)fallbackPortraitWallpaperGallerySortedFeaturedPhotosInPhotoLibrary:;
++ (unsigned long long)parallaxClassificationForSuggestionMedia:;
++ (id)fetchKnownPersonLocalIdentifiersInPhotoLibrary:fetchLimit:;
++ (id)fetchWallpaperGallerySuggestionsInPhotoLibrary:;
++ (id)wallpaperGalleryFeaturedPhotoSortedSuggestionsFromSuggestions:;
++ (id)wallpaperGallerySmartAlbumSuggestionsFromSuggestions:;
++ (BOOL)hasAnyKnownPersonLocalIdentifierInPhotoLibrary:;
++ (id)randomNumberGeneratorForWallpaperDonation;
++ (id)predicateForPortraitWallpaperCandidatesWithPersonLocalIdentifiers:;
++ (id)_mostRecentAssetDateInPhotoLibrary:;
++ (id)fetchPortraitAssetsWithOptions:;
++ (id)_fetchSuggestedMePersonLocalIdentifierInPhotoLibrary:;
++ (id)predicateForPortraitWallpaperCandidatesWithPersonLocalIdentifiers:deviceAspectRatio:;
++ (id)bestWallpaperCropForAsset:classification:outputCropScore:outputLayoutAcceptable:layoutConfiguration:;
++ (unsigned long long)parallaxClassificationForSuggestionSubtype:;
+@end

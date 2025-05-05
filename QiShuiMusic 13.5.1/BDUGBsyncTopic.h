@@ -1,0 +1,36 @@
+@interface BDUGBsyncTopic : GPBMessage
+@property (nonatomic) NSInteger flag;
+@property (nonatomic) BOOL hasFlag;
+@property (nonatomic) NSInteger bucket;
+@property (nonatomic) BOOL hasBucket;
+@property (nonatomic) NSInteger topicType;
+@property (nonatomic) BOOL hasTopicType;
+@property (nonatomic) q syncId;
+@property (nonatomic) BOOL hasSyncId;
+@property (nonatomic) q refCursor;
+@property (nonatomic) BOOL hasRefCursor;
+@property (nonatomic) q newCursor;
+@property (nonatomic) BOOL hasNewCursor;
+@property (nonatomic) NSMutableArray packetsArray;
+@property (nonatomic) Q packetsArray_Count;
+@property (nonatomic) NSInteger topicStatus;
+@property (nonatomic) BOOL hasTopicStatus;
+@property (nonatomic) q expireTime;
+@property (nonatomic) BOOL hasExpireTime;
+@property (nonatomic) NSString reqId;
+@property (nonatomic) BOOL hasReqId;
+- (void)setRefCursor:;
+- (void)setSyncId:;
+- (void)setBucket:;
+- (long long)refCursor;
+- (long long)newCursor;
+- (long long)syncId;
+- (int)topicStatus;
+- (int)topicType;
+- (id)packetsArray;
+- (int)bucket;
+- (int)flag;
+- (void)setTopicType:;
+- (void)setFlag:;
++ (id)descriptor;
+@end

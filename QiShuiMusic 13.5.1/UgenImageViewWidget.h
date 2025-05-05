@@ -1,0 +1,33 @@
+@interface UgenImageViewWidget : UgenWidget
+@property (nonatomic) UgenImageView contentView;
+@property (nonatomic) UIImageView gaosiView;
+@property (nonatomic) NSMutableDictionary imageCache;
+@property (nonatomic) NSString scaleType;
+@property (nonatomic) NSString src;
+@property (nonatomic) NSString tintColor;
+@property (nonatomic) BOOL isGaussianBlur;
+@property (nonatomic) BOOL isBgGaussianBlur;
+- (void)changeImageWithSrc:;
+- (id)gaosiView;
+- (BOOL)isBgGaussianBlur;
+- (BOOL)isGaussianBlur;
+- (void)p_updateContentWithImage:;
+- (void)setGaosiView:;
+- (void)setIsBgGaussianBlur:;
+- (void)setIsGaussianBlur:;
+- (id)ugenView;
+- (id)imageCache;
+- (id)contentView;
+- (id)init;
+- (id)tintColor;
+- (void)setImageCache:;
+- (void)layout;
+- (void).cxx_destruct;
+- (void)setTintColor:;
+- (void)setContentView:;
+- (id)src;
+- (void)setSrc:;
+- (void)render;
+- (id)scaleType;
+- (void)setScaleType:;
+@end

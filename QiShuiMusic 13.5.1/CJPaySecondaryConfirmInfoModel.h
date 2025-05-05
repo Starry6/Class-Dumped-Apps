@@ -1,0 +1,32 @@
+@interface CJPaySecondaryConfirmInfoModel : JSONModel
+@property (nonatomic) NSString subTitle;
+@property (nonatomic) NSString tipsCheckbox;
+@property (nonatomic) NSString choicePwdCheckWay;
+@property (nonatomic) NSString nopwdConfirmHidePeriod;
+@property (nonatomic) NSString style;
+@property (nonatomic) NSString buttonText;
+@property (nonatomic) NSString checkboxSelectDefault;
+@property (nonatomic) NSString standardRecDesc;
+@property (nonatomic) NSString standardShowAmount;
+- (id)standardRecDesc;
+- (id)checkboxSelectDefault;
+- (id)choicePwdCheckWay;
+- (id)nopwdConfirmHidePeriod;
+- (void)setCheckboxSelectDefault:;
+- (void)setChoicePwdCheckWay:;
+- (void)setNopwdConfirmHidePeriod:;
+- (void)setStandardRecDesc:;
+- (void)setStandardShowAmount:;
+- (void)setTipsCheckbox:;
+- (id)standardShowAmount;
+- (id)tipsCheckbox;
+- (void)setStyle:;
+- (id)buttonText;
+- (void).cxx_destruct;
+- (void)setSubTitle:;
+- (id)subTitle;
+- (id)style;
+- (void)setButtonText:;
++ (id)keyMapper;
++ (BOOL)propertyIsOptional:;
+@end

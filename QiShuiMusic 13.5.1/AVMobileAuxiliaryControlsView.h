@@ -1,0 +1,35 @@
+@interface AVMobileAuxiliaryControlsView : AVView
+@property (nonatomic) BOOL hasOverflowOnlyControl;
+@property (nonatomic) <AVMobileAuxiliaryControlsViewDelegate> delegate;
+@property (nonatomic) NSArray controls;
+@property (nonatomic) double controlSpacing;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)controls;
+- (id)init;
+- (id)_controlsWithViewsInPriorityOrder;
+- (id)intrinsicContentSize;
+- (double)controlSpacing;
+- (void)layoutSubviews;
+- (id)sizeFittingControls:;
+- (void)setDelegate:;
+- (BOOL)hasOverflowOnlyControl;
+- (BOOL)_requiresOverflowControl;
+- (id)overflowMenuItemsForControlOverflowButton:;
+- (void)avkit_intrinsicContentSizeOfSubviewWasInvalidated:;
+- (void)overflowButtonWillShowContextMenu:;
+- (void)auxiliaryControlDidChangeState:;
+- (void)_updateHasOverflowOnlyControl;
+- (id)delegate;
+- (void)setControlSpacing:;
+- (void).cxx_destruct;
+- (void)_updatePriorityOrderControlsList;
+- (void)_updateOverflowControlContextMenu;
+- (void)updateOverflowMenu;
+- (void)setHasOverflowOnlyControl:;
+- (id)_overflowControl;
+- (void)overflowButtonDidHideContextMenu:;
+- (void)setControls:;
+@end

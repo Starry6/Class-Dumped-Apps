@@ -1,0 +1,35 @@
+@interface QLAudioItemViewController : QLMediaItemViewController
+@property (nonatomic) NSLayoutConstraint topScrubber;
+@property (nonatomic) UIView scrubberContainer;
+@property (nonatomic) BOOL scrubbing;
+@property (nonatomic) double scrubberVerticalOffset;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)dealloc;
+- (void)setScrubbing:;
+- (BOOL)scrubbing;
+- (void)observeValueForKeyPath:ofObject:change:context:;
+- (id)accessoryView;
+- (void).cxx_destruct;
+- (void)_tapRecognized:;
+- (void)loadPreviewControllerWithContents:context:completionHandler:;
+- (BOOL)canEnterFullScreen;
+- (void)previewDidAppear:;
+- (void)previewDidDisappear:;
+- (void)transitionDidStart:;
+- (void)transitionDidFinish:didComplete:;
+- (BOOL)canPerformFirstTimeAppearanceActions:;
+- (void)performFirstTimeAppearanceActions:;
+- (void)addScrubberWithDeferral;
+- (void)setPlayControlsHidden:animated:;
+- (void)didChangePlayingStatus;
+- (id)timeLabelScrollView;
+- (id)topScrubber;
+- (void)setTopScrubber:;
+- (id)scrubberContainer;
+- (void)setScrubberContainer:;
+- (double)scrubberVerticalOffset;
+- (void)setScrubberVerticalOffset:;
+@end

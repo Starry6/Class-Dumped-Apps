@@ -1,0 +1,34 @@
+@interface GEOAttribute : PBCodable
+@property (nonatomic) BOOL hasKey;
+@property (nonatomic) NSInteger key;
+@property (nonatomic) BOOL hasValue;
+@property (nonatomic) I value;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)setHasKey:;
+- (void)readAll:;
+- (BOOL)hasKey;
+- (id)unknownFields;
+- (BOOL)hasValue;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (int)key;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)setHasValue:;
+- (void)mergeFrom:;
+- (void)setKey:;
+- (void)setValue:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (unsigned int)value;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)keyAsString:;
+- (int)StringAsKey:;
++ (BOOL)isValid:;
+@end

@@ -1,0 +1,32 @@
+@interface VCAlgosStreamingScorer : NSObject
+@property (nonatomic) double resolutionPredictedMOS;
+@property (nonatomic) double frameratePredictedMOS;
+@property (nonatomic) double score;
+@property (nonatomic) NSInteger maxTargetBitrate;
+@property (nonatomic) NSInteger avgReceivingBitrate;
+@property (nonatomic) NSDictionary algosScoreDictionary;
+- (void)dealloc;
+- (double)score;
+- (id)initWithLaunchTime:;
+- (double)relativeTime:;
+- (void)updateRelativeTime:;
+- (void)startWithTime:streamType:;
+- (void)stopWithTime:streamType:;
+- (void)endWithTime:streamType:;
+- (void)addVideoStallWithStartTime:endStallTime:;
+- (void)addCallFailureWithTime:detailedErrorCode:;
+- (void)addLargeGapErasureWithTime:largeGapErasureRate:;
+- (void)addStreamTierSwitchWithTime:;
+- (double)finalizeScoreStreamingWithTime:;
+- (double)scoreStreaming;
+- (void)setVideoResolutionWithTime:width:height:;
+- (void)setVideoFramerate:;
+- (double)streamQuality;
+- (int)maxTargetBitrate;
+- (void)setMaxTargetBitrate:;
+- (int)avgReceivingBitrate;
+- (void)setAvgReceivingBitrate:;
+- (double)resolutionPredictedMOS;
+- (double)frameratePredictedMOS;
+- (id)algosScoreDictionary;
+@end

@@ -1,0 +1,32 @@
+@interface CLSettingsMirror : CLSettingsDictionary
+@property (nonatomic) <CLSettingsManagerProtocol> manager;
+@property (nonatomic) CLIntersiloUniverse universe;
+@property (nonatomic) @? settingsChangeHandler;
+@property (nonatomic) BOOL valid;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setString:forKey:;
+- (void)setValue:forKey:;
+- (void)setShort:forKey:;
+- (void)dealloc;
+- (BOOL)valid;
+- (void)setDouble:forKey:;
+- (void)setArray:forKey:;
+- (void)setDictionary:forKey:;
+- (void)setBool:forKey:;
+- (void)setValid:;
+- (void)setLong:forKey:;
+- (id)universe;
+- (id)manager;
+- (id)initInUniverse:;
+- (void)didUpdateSettings:;
+- (void)setUniverse:;
+- (void)setManager:;
+- (id)settingsChangeHandler;
+- (void)setFloat:forKey:;
+- (void)setSettingsChangeHandler:;
+- (void)setInt:forKey:;
+- (void)invalidate;
+@end

@@ -1,0 +1,34 @@
+@interface IESLiveAudienceInteractiveAnchorInviteFriendHorizontalView : UIView
+@property (nonatomic) NSArray userList;
+@property (nonatomic) UICollectionView friendListView;
+@property (nonatomic) @? clickUserBlock;
+@property (nonatomic) @? clickMoreBlock;
+@property (nonatomic) @? userCellDidShowBlock;
+@property (nonatomic) @? moreCellDidShowBlock;
+@property (nonatomic) BOOL moreCellDidShow;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)moreCellDidShow;
+- (id)clickMoreBlock;
+- (id)clickUserBlock;
+- (id)friendListView;
+- (id)moreCellDidShowBlock;
+- (void)setClickMoreBlock:;
+- (void)setClickUserBlock:;
+- (void)setFriendListView:;
+- (void)setMoreCellDidShow:;
+- (void)setMoreCellDidShowBlock:;
+- (void)setUserCellDidShowBlock:;
+- (void)setUserList:;
+- (void)updateWithUserList:clickUserBlock:clickMoreBlock:userCellDidShowBlock:moreCellDidShowBlock:;
+- (id)userCellDidShowBlock;
+- (id)init;
+- (void)collectionView:willDisplayCell:forItemAtIndexPath:;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (void).cxx_destruct;
+- (id)userList;
+- (void)setupUI;
+@end

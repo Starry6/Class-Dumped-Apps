@@ -1,0 +1,38 @@
+@interface DypayGuideDownloadViewController : UIViewController
+@property (nonatomic) UIImageView logoImageView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel descLabel;
+@property (nonatomic) UIButton downloadButton;
+@property (nonatomic) UIButton openDypayButton;
+@property (nonatomic) UIButton backButton;
+@property (nonatomic) @? completionBlock;
+@property (nonatomic) NSDictionary trackParams;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)openDypayButton;
+- (void)setTrackParams:;
+- (id)descLabel;
+- (void)p_back;
+- (void)p_clickDownloadButton;
+- (void)p_clickLanchDypayButton;
+- (id)p_getImageWithName:;
+- (void)p_setupUI;
+- (void)setDescLabel:;
+- (void)setOpenDypayButton:;
+- (id)trackParams;
+- (void)setTitleLabel:;
+- (void)setCompletionBlock:;
+- (id)backButton;
+- (void).cxx_destruct;
+- (void)viewWillAppear:;
+- (id)completionBlock;
+- (id)titleLabel;
+- (void)setBackButton:;
+- (void)viewDidLoad;
+- (id)logoImageView;
+- (void)setLogoImageView:;
+- (id)downloadButton;
+- (void)setDownloadButton:;
+@end

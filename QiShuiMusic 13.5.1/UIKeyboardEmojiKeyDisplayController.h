@@ -1,0 +1,35 @@
+@interface UIKeyboardEmojiKeyDisplayController : NSObject
+@property (nonatomic) UIKeyboardEmojiKeyView inputView;
+@property (nonatomic) UIKeyboardEmojiKeyView categoryView;
+@property (nonatomic) UIKeyboardEmojiCategory lastViewedCategory;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (void)dealloc;
+- (void)setInputView:;
+- (void).cxx_destruct;
+- (id)inputView;
+- (id)recents;
+- (void)reloadForCategory:withSender:;
+- (long long)reloadCategoryForOffsetPercentage:withSender:;
+- (void)updateEmojiKeyManagerWithKey:withKeyView:;
+- (BOOL)userHasSelectedSkinToneEmoji;
+- (void)emojiUsed:;
+- (void)emojiUsed:language:;
+- (void)updateSkinToneBaseKey:variantUsed:;
+- (id)recentEmojiAtIndex:size:;
+- (id)emojiWithoutDuplicateRecents:;
+- (id)skinToneBaseKeyPreferences;
+- (BOOL)hasLastUsedVariantForEmojiString:;
+- (id)lastUsedVariantEmojiForEmojiString:;
+- (id)lastViewedCategory;
+- (void)setLastViewedCategory:;
+- (long long)lastVisibleFirstEmojiIndexforCategory:;
+- (id)categoryView;
+- (void)setCategoryView:;
++ (Class)classForInputView:;
++ (Class)classForCategoryControl:;
++ (void)writeEmojiDefaultsAndReleaseActiveInputView;
+@end

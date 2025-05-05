@@ -1,0 +1,33 @@
+@interface IESAlgorithmModelDownloadTask : IESEffectBaseDownloadTask
+@property (nonatomic) q downloadStatus;
+@property (nonatomic) NSObject<OS_dispatch_queue> dispatchQueue;
+@property (nonatomic) IESManifestManager manifestManager;
+@property (nonatomic) IESEffectAlgorithmModel algorithmModel;
+@property (nonatomic) BOOL enableNewDownloader;
+@property (nonatomic) BOOL paused;
+@property (nonatomic) Q downloadCount;
+- (id)algorithmModel;
+- (void)callCompletionBlocks:error:extraInfoDict:;
+- (void)downloadFileWithURLs:downloadPath:downloadProgress:completion:;
+- (BOOL)enableNewDownloader;
+- (id)initWithAlgorithmModel:destination:;
+- (BOOL)p_handleDestinationIfNeed:modelMD5:downloadPath:traceLog:;
+- (BOOL)p_handleDownloadedFileWithPath:destination:modelMD5:algorithmModel:error:;
+- (void)pauseTask;
+- (void)resumeTask;
+- (void)setAlgorithmModel:;
+- (void)setDownloadCount:;
+- (void)setEnableNewDownloader:;
+- (void)setManifestManager:;
+- (id)dispatchQueue;
+- (void)setDispatchQueue:;
+- (BOOL)isPaused;
+- (void)setPaused:;
+- (void)startWithCompletion:;
+- (id)manifestManager;
+- (void).cxx_destruct;
+- (void)cancelTask;
+- (long long)downloadStatus;
+- (void)setDownloadStatus:;
+- (unsigned long long)downloadCount;
+@end

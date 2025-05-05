@@ -1,0 +1,35 @@
+@interface AWDWiFiMetricHotspotTransportType : PBCodable
+@property (nonatomic) BOOL hasWifi;
+@property (nonatomic) I wifi;
+@property (nonatomic) BOOL hasBt;
+@property (nonatomic) I bt;
+@property (nonatomic) BOOL hasUsb;
+@property (nonatomic) I usb;
+@property (nonatomic) BOOL hasTimestamp;
+@property (nonatomic) Q timestamp;
+- (unsigned int)wifi;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)setHasTimestamp:;
+- (void)mergeFrom:;
+- (BOOL)hasTimestamp;
+- (void)setTimestamp:;
+- (void)setWifi:;
+- (BOOL)readFrom:;
+- (unsigned long long)timestamp;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (unsigned int)usb;
+- (void)setUsb:;
+- (void)setHasWifi:;
+- (BOOL)hasWifi;
+- (void)setBt:;
+- (void)setHasBt:;
+- (BOOL)hasBt;
+- (void)setHasUsb:;
+- (BOOL)hasUsb;
+- (unsigned int)bt;
+@end

@@ -1,0 +1,31 @@
+@interface CUVoiceSession : NSObject
+@property (nonatomic) NSObject<OS_dispatch_queue> dispatchQueue;
+@property (nonatomic) @? invalidationHandler;
+@property (nonatomic) NSString label;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (void)dealloc;
+- (void)_invalidated;
+- (id)dispatchQueue;
+- (void)setDispatchQueue:;
+- (void)setLabel:;
+- (id)label;
+- (void)_invalidate;
+- (void).cxx_destruct;
+- (id)invalidationHandler;
+- (void)setInvalidationHandler:;
+- (void)invalidate;
+- (void)invalidateWithFlags:;
+- (void)_completeRequest:error:;
+- (void)speechSynthesizer:didStartSpeakingRequest:;
+- (void)speechSynthesizer:didFinishSpeakingRequest:successfully:phonemesSpoken:withError:;
+- (void)speakText:flags:completion:;
+- (void)_speakText:flags:completion:;
+- (void)stopSpeaking;
+- (void)_processQueuedRequests;
+- (void)_completeAllRequestsWithError:;
+- (void)speechSynthesizer:didFinishSpeakingRequest:successfully:withError2:;
+@end

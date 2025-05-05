@@ -1,0 +1,37 @@
+@interface GEOSharedNavChargingStationInfo : PBCodable
+@property (nonatomic) BOOL hasMuid;
+@property (nonatomic) Q muid;
+@property (nonatomic) BOOL hasName;
+@property (nonatomic) NSString name;
+@property (nonatomic) BOOL hasChargingTime;
+@property (nonatomic) double chargingTime;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)setHasMuid:;
+- (BOOL)hasMuid;
+- (void)setMuid:;
+- (void)readAll:;
+- (id)unknownFields;
+- (void)setName:;
+- (id)initWithJSON:;
+- (BOOL)hasName;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned long long)muid;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)name;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (double)chargingTime;
+- (void)setChargingTime:;
+- (void)setHasChargingTime:;
+- (BOOL)hasChargingTime;
++ (BOOL)isValid:;
+@end

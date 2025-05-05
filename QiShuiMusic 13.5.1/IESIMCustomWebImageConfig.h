@@ -1,0 +1,33 @@
+@interface IESIMCustomWebImageConfig : NSObject
+@property (nonatomic) BOOL clearMemoryOnMemoryWarning;
+@property (nonatomic) BOOL clearMemoryWhenEnteringBackground;
+@property (nonatomic) BOOL shouldUseWeakMemoryCache;
+@property (nonatomic) Q memoryCountLimit;
+@property (nonatomic) Q memorySizeLimit;
+@property (nonatomic) Q memoryAgeLimit;
+@property (nonatomic) BOOL trimDiskWhenEnteringBackground;
+@property (nonatomic) Q diskCountLimit;
+@property (nonatomic) Q diskSizeLimit;
+@property (nonatomic) Q diskAgeLimit;
+- (unsigned long long)memorySizeLimit;
+- (BOOL)clearMemoryOnMemoryWarning;
+- (BOOL)clearMemoryWhenEnteringBackground;
+- (unsigned long long)diskAgeLimit;
+- (unsigned long long)diskCountLimit;
+- (unsigned long long)diskSizeLimit;
+- (unsigned long long)memoryAgeLimit;
+- (unsigned long long)memoryCountLimit;
+- (void)setClearMemoryOnMemoryWarning:;
+- (void)setClearMemoryWhenEnteringBackground:;
+- (void)setDiskAgeLimit:;
+- (void)setDiskCountLimit:;
+- (void)setDiskSizeLimit:;
+- (void)setMemoryAgeLimit:;
+- (void)setMemoryCountLimit:;
+- (void)setMemorySizeLimit:;
+- (void)setShouldUseWeakMemoryCache:;
+- (void)setTrimDiskWhenEnteringBackground:;
+- (BOOL)shouldUseWeakMemoryCache;
+- (BOOL)trimDiskWhenEnteringBackground;
+- (id)init;
+@end

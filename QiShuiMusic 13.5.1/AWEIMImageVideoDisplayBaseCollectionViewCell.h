@@ -1,0 +1,38 @@
+@interface AWEIMImageVideoDisplayBaseCollectionViewCell : UICollectionViewCell
+@property (nonatomic) AWEGradientView inputViewContainer;
+@property (nonatomic) <AWEIMImageVideoDisplayBaseCollectionViewCellDelegate> delegate;
+@property (nonatomic) UIButton downloadBtn;
+@property (nonatomic) UIButton closeButton;
+@property (nonatomic) AWEIMPrivateMessageInputView aweInputView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)notifyDelegateDidEndLongPressed;
+- (void)saveBtnClicked:;
+- (id)aweInputView;
+- (void)closeButtonClicked:;
+- (void)configWithMessage:text:placeholder:showRecentylUsedEmoticons:;
+- (id)downloadBtn;
+- (void)hideRecentlyUsedEmoticons;
+- (id)inputViewContainer;
+- (BOOL)isNewStyleShowInputView;
+- (void)notifyDelegateDoLongPress;
+- (void)privateMessageInputView:didTapEmoticonModel:;
+- (void)privateMessageInputViewdidTapCameraButton:;
+- (void)privateMessageInputViewdidTapTextArea:;
+- (void)respondMoreAction;
+- (void)setInputViewContainer:;
+- (void)setInputViewHidden:;
+- (void)setupCommonUI;
+- (BOOL)shouldShowInputView;
+- (void)showInputView;
+- (void)showRecentlyUsedEmoticons;
+- (void)showSaveBtnAndCloseBtn;
+- (void)trackMoreClickEventWithEventType:;
+- (void)updateText:placeholder:showRecentylUsedEmoticons:;
+- (void)setDelegate:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)closeButton;
+@end

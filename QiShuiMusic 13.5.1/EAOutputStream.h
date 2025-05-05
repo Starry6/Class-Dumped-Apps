@@ -1,0 +1,24 @@
+@interface EAOutputStream : NSOutputStream
+- (long long)write:maxLength:;
+- (unsigned long long)streamStatus;
+- (void)dealloc;
+- (void)removeFromRunLoop:forMode:;
+- (void)open;
+- (void)setDelegate:;
+- (id)streamError;
+- (void)scheduleInRunLoop:forMode:;
+- (void)close;
+- (BOOL)setProperty:forKey:;
+- (id)propertyForKey:;
+- (BOOL)hasSpaceAvailable;
+- (id)delegate;
+- (void)_accessoryDidDisconnect:;
+- (id)initWithAccessory:forSession:socket:;
+- (id)initWithAccessoryWithoutSocket:forSession:;
+- (void)openCompleted;
+- (void)endStream;
+- (void)_performAtEndOfStreamValidation;
+- (void)_streamWriteable;
+- (void)_streamEventTrigger;
+- (void)_scheduleCallback;
+@end

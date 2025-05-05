@@ -1,0 +1,34 @@
+@interface GEOLogMsgStateRoutingSettings : PBCodable
+@property (nonatomic) BOOL hasVirtualGarageSettings;
+@property (nonatomic) GEORoutingSettingsVirtualGarageSetttings virtualGarageSettings;
+@property (nonatomic) BOOL hasCyclingPrefs;
+@property (nonatomic) GEORoutingSettingsCyclingPrefs cyclingPrefs;
+@property (nonatomic) BOOL hasDrivingPrefs;
+@property (nonatomic) GEORoutingSettingsDrivingPrefs drivingPrefs;
+- (id)cyclingPrefs;
+- (void)readAll:;
+- (id)init;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (void)setCyclingPrefs:;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)virtualGarageSettings;
+- (void)setVirtualGarageSettings:;
+- (id)initWithData:;
+- (void)setDrivingPrefs:;
+- (BOOL)hasDrivingPrefs;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (BOOL)hasVirtualGarageSettings;
+- (id)description;
+- (BOOL)hasCyclingPrefs;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)drivingPrefs;
+- (id)copyWithZone:;
++ (BOOL)isValid:;
+@end

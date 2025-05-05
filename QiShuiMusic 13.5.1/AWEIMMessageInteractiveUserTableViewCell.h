@@ -1,0 +1,30 @@
+@interface AWEIMMessageInteractiveUserTableViewCell : UITableViewCell
+@property (nonatomic) UIImageView avatarView;
+@property (nonatomic) UILabel nicknameLabel;
+@property (nonatomic) IESIMSaaSUserViewModel userVM;
+@property (nonatomic) AWEIMMessagePropertyItem propertyItem;
+@property (nonatomic) UIImageView emojiView;
+@property (nonatomic) NSString conversationID;
+@property (nonatomic) @? tappedBlock;
+- (void)setTappedBlock:;
+- (void)configWithPropertyItem:;
+- (id)emojiView;
+- (void)p_refreshUI;
+- (void)setEmojiView:;
+- (void)setUserVM:;
+- (id)tappedBlock;
+- (id)userVM;
+- (id)initWithStyle:reuseIdentifier:;
+- (void)layoutSubviews;
+- (id)avatarView;
+- (void)setAvatarView:;
+- (void).cxx_destruct;
+- (id)conversationID;
+- (void)setConversationID:;
+- (id)propertyItem;
+- (void)setPropertyItem:;
+- (void)avatarViewTapped:;
+- (id)nicknameLabel;
+- (void)setNicknameLabel:;
++ (id)identifier;
+@end

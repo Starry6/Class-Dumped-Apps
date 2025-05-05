@@ -1,0 +1,30 @@
+@interface IESECLivePickedGoodsListExtraModel : MTLModel
+@property (nonatomic) NSString couponGuide;
+@property (nonatomic) NSString hasShield;
+@property (nonatomic) NSString shieldTitle;
+@property (nonatomic) NSArray shieldNotice;
+@property (nonatomic) NSNumber reputationScore;
+@property (nonatomic) NSNumber reputationPercetage;
+@property (nonatomic) NSString logID;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setCouponGuide:;
+- (id)reputationScore;
+- (void)setShieldTitle:;
+- (id)couponGuide;
+- (id)reputationPercetage;
+- (void)setHasShield:;
+- (void)setReputationPercetage:;
+- (void)setReputationScore:;
+- (void)setShieldNotice:;
+- (id)shieldNotice;
+- (id)shieldTitle;
+- (void).cxx_destruct;
+- (id)hasShield;
+- (id)logID;
+- (void)setLogID:;
++ (id)shieldNoticeJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

@@ -1,0 +1,32 @@
+@interface GEORPSearchCommonContext : PBCodable
+@property (nonatomic) BOOL hasLastSearchString;
+@property (nonatomic) NSString lastSearchString;
+@property (nonatomic) BOOL hasLastUserTypedSearchString;
+@property (nonatomic) NSString lastUserTypedSearchString;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (id)init;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (id)lastSearchString;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (void)setLastSearchString:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasLastSearchString;
+- (BOOL)hasLastUserTypedSearchString;
+- (id)lastUserTypedSearchString;
+- (void)setLastUserTypedSearchString:;
++ (BOOL)isValid:;
+@end

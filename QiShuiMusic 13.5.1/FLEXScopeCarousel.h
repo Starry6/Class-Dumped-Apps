@@ -1,0 +1,38 @@
+@interface FLEXScopeCarousel : UIControl
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) FLEXCarouselCell sizingCell;
+@property (nonatomic) @ dynamicTypeObserver;
+@property (nonatomic) NSMutableArray dynamicTypeHandlers;
+@property (nonatomic) BOOL constraintsInstalled;
+@property (nonatomic) NSArray items;
+@property (nonatomic) q selectedIndex;
+@property (nonatomic) @? selectedIndexChangedAction;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithFrame:;
+- (void)dealloc;
+- (void)drawRect:;
+- (void)updateConstraints;
+- (id)intrinsicContentSize;
+- (void)setItems:;
+- (void)setSelectedIndex:;
+- (void)registerBlockForDynamicTypeChanges:;
+- (id)collectionView:layout:sizeForItemAtIndexPath:;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (id)items;
+- (long long)selectedIndex;
+- (id)selectedIndexChangedAction;
+- (void)setSelectedIndexChangedAction:;
+- (id)collectionView;
+- (id)sizingCell;
+- (id)dynamicTypeObserver;
+- (id)dynamicTypeHandlers;
+- (BOOL)constraintsInstalled;
+- (void)setConstraintsInstalled:;
+- (void).cxx_destruct;
++ (BOOL)requiresConstraintBasedLayout;
+@end

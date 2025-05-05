@@ -1,0 +1,36 @@
+@interface CSIndexingQueue : NSObject
+@property (nonatomic) double idleTime;
+@property (nonatomic) double idleTimeLeeway;
+@property (nonatomic) Q maximumBatchSize;
+@property (nonatomic) NSMutableDictionary queuedItems;
+@property (nonatomic) NSObject<OS_dispatch_queue> coalescingQueue;
+@property (nonatomic) NSObject<OS_dispatch_source> coalescingTimer;
+@property (nonatomic) q mode;
+@property (nonatomic) @? notifyBlock;
+- (void)setIdleTime:;
+- (void)_applicationWillResign:;
+- (unsigned long long)maximumBatchSize;
+- (id)initWithMode:notifyBlock:;
+- (id)coalescingTimer;
+- (void)setQueuedItems:;
+- (void)dealloc;
+- (void)setIdleTimeLeeway:;
+- (void)setCoalescingTimer:;
+- (void)queueItem:;
+- (double)idleTimeLeeway;
+- (void)setCoalescingQueue:;
+- (double)idleTime;
+- (id)initWithIdleTime:idleTimeLeeway:maximumBatchSize:mode:notifyBlock:;
+- (void)setMaximumBatchSize:;
+- (void)flush;
+- (void)_flushWithAppResigned:forced:;
+- (void)_queueItems:;
+- (void).cxx_destruct;
+- (id)queuedItems;
+- (id)coalescingQueue;
+- (id)notifyBlock;
+- (long long)mode;
+- (void)queueItems:;
+- (void)setMode:;
+- (void)setNotifyBlock:;
+@end

@@ -1,0 +1,34 @@
+@interface TransferSeqTagMLFHelper : NSObject
+- (id)createDataWithFloatValue:count:;
+- (id)createNSDataWithFloatValue:count:;
+- (id)createLSTMFromWeights:outputSize:useBiLSTM:inputWeights:hiddenWeights:biasTerms:;
+- (id)createLSTM:outputSize:useBiLSTM:;
+- (id)createConvLayerFromData:width:inputChannels:outputChannels:strideInX:strideInY:kernelWeight:kernelBias:;
+- (id)createConvLayerWithKernelHeight:width:inputChannels:outputChannels:strideInX:strideInY:;
+- (id)createFullyConnectedLayerFromData:outputSize:weightData:biasData:;
+- (id)createFullyConnectedLayer:outputSize:;
+- (void)removeBatchingFromDataAndLabels:batchedLabels:inputSentences:inputLabels:maxLength:;
+- (void)getNSSequenceFromStdSequence:nsSentences:nsSeqLengths:maxLength:;
+- (void)flattenBatchOfOneHotSequences:flattenedBatch:;
+- (id)findMaxIndexWithData:batchSize:sequenceLength:numClasses:;
+- (void)getMaxIndicesFromOneHotVectors:maxIndicesBatch:;
+- (void)printLstmWeights:;
+- (void)getElmoEmbeddingsForSequenceData:batchSize:maxLength:embeddingRef:inputTensorDataItems:splitElmo:;
+- (void)getInputEmbeddingsAndTargetTensorsForSequenceData:seqLabels:batchSize:maxLength:numClasses:embeddingRef:modelType:inputTensorDataItems:targetTensorData:targetWeightTensorData:;
+- (id)getModelLayerWeights:modelType:;
+- (BOOL)loadModelLayersFromWeights:labelSize:embeddingDimension:modelLayers:modelType:;
+- (id)createGraphObjectFromLayers:graphObject:inputPlaceholders:modelType:;
+- (void)createGraphObjectAndLayersFromInputPlaceholders:scalarWeights:labelSize:embeddingDimension:graphObject:graphLayerList:modelType:;
+- (id)createTrainingGraphFromGraphObject:inputPlaceholders:scalarWeights:targetLabels:targeLabelWeights:device:;
+- (id)createInferenceGraphFromGraphObject:inputPlaceholders:scalarWeights:finalLayerTensor:device:;
+- (void)trainAndSaveSeqTagModelFromData:batchedLabels:trainingParams:modelType:labelArray:trainedModelDict:trainingLogger:;
+- (id)doSeqTagTrainingAndEvalFromData:batchedLabels:batchedPaddedLabelDatasets:trainingParams:labelArray:elmoEmbeddingRef:modeLayerList:modelType:trainingGraph:inferenceGraph:scalarParams:inputPlaceholders:targetLabelPlaceholders:targetLabelWeightsPlaceholders:trainingLogger:;
+- (void)labelIdsToString:labelArray:labelStrings:;
+- (float)showF1ResultsMatrix:labelCounts:perLabelResults:trainingLogger:dataTypeString:;
+- (float)evaluateMontrealModelOnData:evalLabels:evalEmbeddingsCache:elmoEmbeddingRef:montrealModel:labelArray:trainingLogger:dataTypeString:predictedLabels:;
+- (void)evaluateInferenceGraphWithInputTensorData:batchedInputSentences:batchedLabels:inferenceGraph:modelType:inputPlaceholders:inferenceParams:scalarParams:labelArray:dataTypeString:trainingLogger:predictedLabels:;
+- (float)evaluateInferenceGraphOnData:batchedLabels:inferenceGraph:elmoEmbeddingRef:modelType:inputPlaceholders:inferenceParams:scalarParams:labelArray:dataTypeString:trainingLogger:;
+- (void)doInferenceWithInferenceGraph:scalarParams:labelArray:inferenceParams:elmoEmbeddingRef:modelType:inputPlaceholders:testSentences:predictedLabels:;
+- (void)executeInferenceGraph:inputsDictionary:batchSize:maxLength:labelSize:predictedLabels:;
+- (void)createInferenceGraphWithLayers:labelArray:inferenceParams:modelType:inputSentences:inputPlaceholders:inferenceGraph:;
+@end

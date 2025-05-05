@@ -1,0 +1,34 @@
+@interface AWDMDNSResponderDNSMessageSizeStats : PBCodable
+@property (nonatomic) BOOL hasTimestamp;
+@property (nonatomic) Q timestamp;
+@property (nonatomic) Q querySizeCountsCount;
+@property (nonatomic) ^I querySizeCounts;
+@property (nonatomic) Q responseSizeCountsCount;
+@property (nonatomic) ^I responseSizeCounts;
+- (void)dealloc;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)setHasTimestamp:;
+- (void)mergeFrom:;
+- (BOOL)hasTimestamp;
+- (void)setTimestamp:;
+- (BOOL)readFrom:;
+- (unsigned long long)timestamp;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (unsigned long long)querySizeCountsCount;
+- (id)querySizeCounts;
+- (void)clearQuerySizeCounts;
+- (void)addQuerySizeCount:;
+- (unsigned int)querySizeCountAtIndex:;
+- (void)setQuerySizeCounts:count:;
+- (unsigned long long)responseSizeCountsCount;
+- (id)responseSizeCounts;
+- (void)clearResponseSizeCounts;
+- (void)addResponseSizeCount:;
+- (unsigned int)responseSizeCountAtIndex:;
+- (void)setResponseSizeCounts:count:;
+@end

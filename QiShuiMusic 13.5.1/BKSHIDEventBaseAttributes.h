@@ -1,0 +1,37 @@
+@interface BKSHIDEventBaseAttributes : NSObject
+@property (nonatomic) BKSHIDEventAuthenticationMessage authenticationMessage;
+@property (nonatomic) BKSHIDEventDeferringEnvironment environment;
+@property (nonatomic) BKSHIDEventDisplay display;
+@property (nonatomic) BKSHIDEventDeferringToken token;
+@property (nonatomic) NSInteger source;
+@property (nonatomic) S options;
+@property (nonatomic) I contextID;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setOptions:;
+- (id)authenticationMessage;
+- (void)setEnvironment:;
+- (id)token;
+- (void)setDisplay:;
+- (id)display;
+- (unsigned int)contextID;
+- (void)setAuthenticationMessage:;
+- (id)succinctDescriptionBuilder;
+- (id)environment;
+- (void)setToken:;
+- (unsigned short)options;
+- (void).cxx_destruct;
+- (int)source;
+- (id)succinctDescription;
+- (id)description;
+- (void)appendDescriptionToFormatter:;
+- (id)descriptionBuilderWithMultilinePrefix:;
+- (void)setSource:;
+- (BOOL)isEqual:;
+- (id)descriptionWithMultilinePrefix:;
+- (id)copyWithZone:;
++ (id)protobufSchema;
++ (id)baseAttributesFromProvider:;
+@end

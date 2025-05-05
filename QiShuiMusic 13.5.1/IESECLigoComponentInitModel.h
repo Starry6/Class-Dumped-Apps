@@ -1,0 +1,31 @@
+@interface IESECLigoComponentInitModel : NSObject
+@property (nonatomic) NSString bizRegionName;
+@property (nonatomic) NSString path;
+@property (nonatomic) NSString params;
+@property (nonatomic) NSNumber businessType;
+@property (nonatomic) q componentType;
+@property (nonatomic) NSDictionary localAddParams;
+@property (nonatomic) @ DIContext;
+@property (nonatomic) q contentMode;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)DIContext;
+- (id)bizRegionName;
+- (id)localAddParams;
+- (void)setBizRegionName:;
+- (void)setBusinessType:;
+- (void)setDIContext:;
+- (void)setLocalAddParams:;
+- (id)path;
+- (long long)componentType;
+- (long long)contentMode;
+- (void)setComponentType:;
+- (void)setPath:;
+- (void).cxx_destruct;
+- (id)businessType;
+- (void)setContentMode:;
+- (id)params;
+- (void)setParams:;
+@end

@@ -1,0 +1,33 @@
+@interface MSVSystemDialogOptions : NSObject
+@property (nonatomic) NSString alertHeader;
+@property (nonatomic) NSString alertMessage;
+@property (nonatomic) NSURL alertIconURL;
+@property (nonatomic) NSArray allowedApplicationBundleIDs;
+@property (nonatomic) NSString defaultButtonTitle;
+@property (nonatomic) NSString alternateButtonTitle;
+@property (nonatomic) BOOL showAsTopmost;
+@property (nonatomic) BOOL forceModalAlertAppearance;
+@property (nonatomic) BOOL showOnLockscreen;
+@property (nonatomic) BOOL dismissOverlaysOnLockscreen;
+- (void).cxx_destruct;
+- (id)alertHeader;
+- (void)setAlertHeader:;
+- (id)alertMessage;
+- (void)setAlertMessage:;
+- (id)defaultButtonTitle;
+- (void)setDefaultButtonTitle:;
+- (id)alternateButtonTitle;
+- (void)setAlternateButtonTitle:;
+- (id)alertIconURL;
+- (void)setAlertIconURL:;
+- (id)allowedApplicationBundleIDs;
+- (void)setAllowedApplicationBundleIDs:;
+- (BOOL)showAsTopmost;
+- (void)setShowAsTopmost:;
+- (BOOL)forceModalAlertAppearance;
+- (void)setForceModalAlertAppearance:;
+- (BOOL)showOnLockscreen;
+- (void)setShowOnLockscreen:;
+- (BOOL)dismissOverlaysOnLockscreen;
+- (void)setDismissOverlaysOnLockscreen:;
+@end

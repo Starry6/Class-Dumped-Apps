@@ -1,0 +1,31 @@
+@interface AWEShareBaseChannel : NSObject
+@property (nonatomic) AWEShareContext context;
+@property (nonatomic) <AWEShareView> shareView;
+@property (nonatomic) NSString trackingLabel;
+@property (nonatomic) Q shareItemStyle;
+@property (nonatomic) NSString shareTitle;
+@property (nonatomic) UIImage shareImage;
+@property (nonatomic) BOOL shareItemEnabled;
+@property (nonatomic) NSString shareType;
+@property (nonatomic) q shareCategory;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)isShareItemEnabled;
+- (id)makeItemWithStyle:inView:;
+- (BOOL)prepareToShare;
+- (long long)shareCategory;
+- (id)shareImage;
+- (unsigned long long)shareItemStyle;
+- (id)shareView;
+- (void)shareWithCompletion:;
+- (id)trackingLabel;
+- (id)context;
+- (BOOL)share;
+- (void).cxx_destruct;
+- (id)description;
+- (id)shareType;
+- (id)shareTitle;
+- (BOOL)prepareWithContext:;
+@end

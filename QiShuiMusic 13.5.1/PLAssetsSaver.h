@@ -1,0 +1,37 @@
+@interface PLAssetsSaver : NSObject
+@property (nonatomic) NSMutableArray _pendingSaveAssetJobs;
+- (id)init;
+- (void)dealloc;
+- (id)_photoLibrary;
+- (void).cxx_destruct;
+- (void)deletePhotoStreamDataForStreamID:;
+- (id)validateAvalanches:inLibraryWithURL:;
+- (id)requestSynchronousImageForAssetOID:withFormat:allowPlaceholder:wantURLOnly:networkAccessAllowed:trackCPLDownload:outImageDataInfo:outCPLDownloadContext:;
+- (void)requestAsynchronousImageForAssetOID:withFormat:allowPlaceholder:wantURLOnly:networkAccessAllowed:trackCPLDownload:completionBlock:;
+- (void)_setIsTakingPhoto:;
+- (id)_saveIsolationQueue;
+- (void)queuePhotoStreamJobDictionary:;
+- (void)_queueJobDictionary:asset:requestEnqueuedBlock:completionBlock:imageSurface:previewImageSurface:;
+- (id)_assetsdClientForJobDictionary:;
+- (void)_queueJobDictionary:completionBlock:;
+- (void)saveCameraImage:metadata:additionalProperties:requestEnqueuedBlock:;
+- (id)saveCameraImage:metadata:additionalProperties:diagnostics:previouslyPendingAsset:requestEnqueuedBlock:;
+- (void)saveCameraVideoAtPath:withMetadata:thumbnailImage:createPreviewWellImage:progressStack:isSlalom:assetAdjustments:videoHandler:requestEnqueuedBlock:completionBlock:;
+- (void)regenerateVideoThumbnailsForVideo:withCreationDate:progressStack:completionBlock:;
+- (void)saveCameraAvalancheWithUUID:allAssetUUIDs:allAssets:stackAsset:completionBlock:;
+- (void)_saveImage:imageData:properties:completionBlock:;
+- (void)_saveVideoAtPath:properties:completionBlock:;
+- (void)saveImageRef:orientation:imageData:properties:completionBlock:;
+- (void)saveVideoAtPath:properties:completionBlock:;
+- (void)savePhotoStreamImage:imageData:properties:completionBlock:;
+- (void)deletePhotoStreamAssetsWithUUIDs:streamID:;
+- (void)reenqueueAssetUUIDsForPhotoStreamPublication:;
+- (void)saveSyncedAssets:completionBlock:;
+- (id)_pendingSaveAssetJobs;
+- (void)set_pendingSaveAssetJobs:;
++ (id)sharedAssetsSaver;
++ (id)createWriteImageCompletionBlockWithImage:target:selector:contextInfo:;
++ (id)createWriteVideoCompletionBlockWithVideoPath:target:selector:contextInfo:;
++ (id)publicAssetsLibraryErrorFromPrivateDomain:withPrivateCode:;
++ (id)publicAssetsLibraryErrorFromPrivateError:;
+@end

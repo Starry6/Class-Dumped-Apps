@@ -1,0 +1,31 @@
+@interface PPXPCNamedEntityStore : PPNamedEntityStore
+- (void)_loadNamedEntityRecordsWithDelegate:;
+- (BOOL)donateLocationNamedEntities:bundleId:groupId:error:;
+- (id)rankedNamedEntitiesWithQuery:error:;
+- (BOOL)deleteAllNamedEntitiesFromSourcesWithBundleId:documentIds:deletedCount:error:;
+- (id)_recordGenerator;
+- (id)_getLastCallDate;
+- (BOOL)deleteAllNamedEntitiesFromSourcesWithBundleId:groupIds:deletedCount:error:;
+- (BOOL)cloudSyncWithError:;
+- (BOOL)deleteAllNamedEntitiesFromSourcesWithBundleId:groupId:olderThan:deletedCount:error:;
+- (void)registerFeedback:completion:;
+- (id)namedEntityRecordsWithQuery:error:;
+- (BOOL)donateMapItem:forPlaceName:error:;
+- (BOOL)loadNamedEntityRecordsAndMonitorChangesWithDelegate:error:;
+- (BOOL)iterNamedEntityRecordsWithQuery:error:block:;
+- (void)_sendChangesToDelegates;
+- (void).cxx_destruct;
+- (BOOL)flushDonationsWithError:;
+- (void)setClientIdentifier:;
+- (id)mapItemForPlaceName:error:;
+- (BOOL)iterRankedNamedEntitiesWithQuery:error:block:;
+- (BOOL)donateNamedEntities:source:algorithm:cloudSync:sentimentScore:error:;
+- (void)_setLastCallDate;
+- (BOOL)removeMapItemsBeforeCutoffDate:error:;
+- (id)_init;
+- (BOOL)clearWithError:deletedCount:;
+- (id)clientIdentifier;
+- (BOOL)removeMapItemForPlaceName:error:;
+- (BOOL)deleteAllNamedEntitiesFromSourcesWithBundleId:deletedCount:error:;
+- (void)_sendResetToAllDelegates;
+@end

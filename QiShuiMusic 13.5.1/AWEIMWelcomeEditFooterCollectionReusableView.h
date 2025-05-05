@@ -1,0 +1,33 @@
+@interface AWEIMWelcomeEditFooterCollectionReusableView : UICollectionReusableView
+@property (nonatomic) AWETextEditViewController welcomeEditView;
+@property (nonatomic) UILabel numberLabel;
+@property (nonatomic) UIButton submitBtn;
+@property (nonatomic) <AWEIMWelcomeEditFooterCollectionReusableViewProtocol> footerDelegate;
+@property (nonatomic) BOOL isShownInHalfScreen;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)welcomeEditView;
+- (void)becomeTextViewFirstResponder;
+- (void)configDefaultData;
+- (void)didClickSubmitBtn;
+- (void)enableSubmitButton:;
+- (BOOL)isShownInHalfScreen;
+- (long long)maxContentLength;
+- (void)resignTextViewFirstResponder;
+- (void)setIsShownInHalfScreen:;
+- (void)setSubmitBtn:;
+- (void)setTipLabelForContentTextView;
+- (void)setWelcomeEditView:;
+- (void)setupWelcomeMessage:;
+- (id)submitBtn;
+- (void)layoutSubviews;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)textViewDidChange:;
+- (id)footerDelegate;
+- (void)setFooterDelegate:;
+- (id)numberLabel;
+- (void)setNumberLabel:;
+@end

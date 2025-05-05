@@ -1,0 +1,31 @@
+@interface UIPreviewActionGroup : NSObject
+@property (nonatomic) NSArray actions;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) q style;
+@property (nonatomic) UIColor color;
+@property (nonatomic) UIImage image;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)_color;
+- (id)identifier;
+- (void)setStyle:;
+- (void)setImage:;
+- (void)setTitle:;
+- (id)title;
+- (void).cxx_destruct;
+- (void)_setColor:;
+- (long long)style;
+- (void)setIdentifier:;
+- (id)image;
+- (id)copyWithZone:;
+- (id)_actions;
+- (void)_setActions:;
+- (id)_effectiveColor;
+- (id)_effectiveImage;
++ (id)actionGroupWithTitle:style:actions:;
++ (id)_actionGroupWithTitle:style:color:actions:;
++ (id)_actionGroupWithPreviewMenuItemWithSubactions:;
+@end

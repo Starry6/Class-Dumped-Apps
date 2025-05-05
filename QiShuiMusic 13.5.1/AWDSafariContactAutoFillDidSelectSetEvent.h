@@ -1,0 +1,31 @@
+@interface AWDSafariContactAutoFillDidSelectSetEvent : PBCodable
+@property (nonatomic) BOOL hasTimestamp;
+@property (nonatomic) Q timestamp;
+@property (nonatomic) BOOL hasSelectedSet;
+@property (nonatomic) NSInteger selectedSet;
+@property (nonatomic) BOOL hasHadPreviouslyCustomizedSet;
+@property (nonatomic) BOOL hadPreviouslyCustomizedSet;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)setHasTimestamp:;
+- (void)mergeFrom:;
+- (BOOL)hasTimestamp;
+- (void)setTimestamp:;
+- (BOOL)readFrom:;
+- (unsigned long long)timestamp;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (int)selectedSet;
+- (void)setSelectedSet:;
+- (void)setHasSelectedSet:;
+- (BOOL)hasSelectedSet;
+- (id)selectedSetAsString:;
+- (int)StringAsSelectedSet:;
+- (void)setHadPreviouslyCustomizedSet:;
+- (void)setHasHadPreviouslyCustomizedSet:;
+- (BOOL)hasHadPreviouslyCustomizedSet;
+- (BOOL)hadPreviouslyCustomizedSet;
+@end

@@ -1,0 +1,30 @@
+@interface PFExportGIFRequest : NSObject
+@property (nonatomic) NSURL videoURL;
+@property (nonatomic) BOOL shouldDither;
+@property (nonatomic) double ditherDepth;
+@property (nonatomic) double maximumFrameRate;
+@property (nonatomic) Q maximumFrameSize;
+@property (nonatomic) BOOL synchronous;
+- (double)maximumFrameRate;
+- (id)videoURL;
+- (void)setMaximumFrameRate:;
+- (void)setSynchronous:;
+- (double)ditherDepth;
+- (void)setVideoURL:;
+- (void).cxx_destruct;
+- (BOOL)isSynchronous;
+- (id)copyWithZone:;
+- (id)initWithVideoURL:;
+- (void)_ensureValidInputs;
+- (BOOL)shouldDither;
+- (void)setShouldDither:;
+- (void)setDitherDepth:;
+- (unsigned long long)maximumFrameSize;
+- (void)setMaximumFrameSize:;
++ (id)_exportQueue;
++ (id)runExport:toURL:completion:;
++ (void)runExport:toURL:progress:completion:;
++ (id)_copyNextSampleBuffer:reader:time:didReachEnd:error:;
++ (id)_createProcessedGIFImage:options:transform:error:;
++ (BOOL)_exportGIFToURL:request:progress:error:;
+@end

@@ -1,0 +1,38 @@
+@interface GEOLaneChangeInfo : PBCodable
+@property (nonatomic) BOOL hasStartOffsetCm;
+@property (nonatomic) I startOffsetCm;
+@property (nonatomic) BOOL hasEndOffsetCm;
+@property (nonatomic) I endOffsetCm;
+@property (nonatomic) BOOL hasNumValidLanes;
+@property (nonatomic) I numValidLanes;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (unsigned int)startOffsetCm;
+- (void)setStartOffsetCm:;
+- (void)setHasStartOffsetCm:;
+- (BOOL)hasStartOffsetCm;
+- (unsigned int)endOffsetCm;
+- (void)setEndOffsetCm:;
+- (void)setHasEndOffsetCm:;
+- (BOOL)hasEndOffsetCm;
+- (unsigned int)numValidLanes;
+- (void)setNumValidLanes:;
+- (void)setHasNumValidLanes:;
+- (BOOL)hasNumValidLanes;
++ (BOOL)isValid:;
+@end

@@ -1,0 +1,30 @@
+@interface SSVGratisRequestBody : NSObject
+@property (nonatomic) q requestStyle;
+@property (nonatomic) NSNumber accountIdentifier;
+@property (nonatomic) NSArray applications;
+@property (nonatomic) BOOL backgroundRequest;
+@property (nonatomic) NSArray bundleIdentifiers;
+@property (nonatomic) NSArray itemIdentifiers;
+@property (nonatomic) NSMutableDictionary bodyDictionary;
+@property (nonatomic) NSData JSONBodyData;
+@property (nonatomic) NSData propertyListBodyData;
+- (long long)requestStyle;
+- (id)itemIdentifiers;
+- (void)setAccountIdentifier:;
+- (id)accountIdentifier;
+- (void)setApplications:;
+- (id)applications;
+- (void).cxx_destruct;
+- (void)setItemIdentifiers:;
+- (id)description;
+- (id)copyWithZone:;
+- (id)bundleIdentifiers;
+- (void)setBundleIdentifiers:;
+- (id)bodyDictionary;
+- (BOOL)isBackgroundRequest;
+- (void)setBackgroundRequest:;
+- (id)initWithRequestStyle:;
+- (id)JSONBodyData;
+- (id)propertyListBodyData;
+- (void)setValue:forBodyParameter:;
+@end

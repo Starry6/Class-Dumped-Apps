@@ -1,0 +1,33 @@
+@interface IDSOpportunisticData : NSObject
+@property (nonatomic) NSMutableDictionary sendCount;
+@property (nonatomic) NSData data;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) NSString serviceName;
+@property (nonatomic) NSString accountUniqueID;
+@property (nonatomic) IDSOpportunisticOptions options;
+- (void)setOptions:;
+- (id)copy;
+- (id)data;
+- (void)setServiceName:;
+- (id)identifier;
+- (id)serviceName;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (id)options;
+- (BOOL)isInvalid;
+- (void).cxx_destruct;
+- (id)description;
+- (void)setData:;
+- (void)setIdentifier:;
+- (id)accountUniqueID;
+- (id)initWithData:identifier:serviceName:accountUniqueID:options:;
+- (id)initWithData:identifier:serviceName:accountUniqueID:options:sendCount:;
+- (void)markInvalid;
+- (BOOL)shouldSendToDestination:;
+- (void)incrementSendCountForDestination:;
+- (long long)sendCountForURI:;
+- (void)setAccountUniqueID:;
+- (id)sendCount;
+- (void)setSendCount:;
++ (BOOL)supportsSecureCoding;
+@end

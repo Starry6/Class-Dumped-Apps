@@ -1,0 +1,2 @@
+@interface IESLiveSaaSPBIESLiveSaaSPBInRoomBannerRefreshRoot : GPBRootObject
+@end

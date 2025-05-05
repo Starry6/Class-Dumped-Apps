@@ -1,0 +1,2 @@
+@interface SNAudioMultiArrayUtils : NSObject
+@end

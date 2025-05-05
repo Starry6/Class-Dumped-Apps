@@ -1,0 +1,32 @@
+@interface IESLiveSaaSNativeAnimationFragment : IESLiveRoomComponent
+@property (nonatomic) HTSLiveSaaSNativeAnimationStore store;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)componentDidMount;
+- (void)componentOrientationChanged:;
+- (void)didSetAttachingDIContext;
+- (void)dispatchDanmakuGiftMessage:;
+- (void)dispatchDanmakuMessage:;
+- (void)dispatchECommerceUserEnterMessage:;
+- (void)dispatchNormalDanmukuMessage:;
+- (void)dispatchPrivilegeDanmakuMessage:;
+- (void)dispatchRoomMessage:;
+- (void)dispatchUserEnterMessage:;
+- (void)hideComponent;
+- (void)hideGiftView;
+- (void)resetUserEnterFrame;
+- (void)setDanmurContentViewAlpha:withAnimation:;
+- (void)setUserEnterEnable:;
+- (void)setUserEnterOriginY:;
+- (void)showComponent;
+- (void)showDanmakuSettingPanel;
+- (void)showGiftView;
+- (void)setStore:;
+- (id)initWithStore:;
+- (void).cxx_destruct;
+- (id)store;
++ (id)componentWithRoom:trackContext:componentContext:;
++ (long long)preferredLoadPhase;
+@end

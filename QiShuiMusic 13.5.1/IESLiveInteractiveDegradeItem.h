@@ -1,0 +1,31 @@
+@interface IESLiveInteractiveDegradeItem : NSObject
+@property (nonatomic) NSString key;
+@property (nonatomic) q level;
+@property (nonatomic) q triggerTime;
+@property (nonatomic) NSArray supportScenes;
+@property (nonatomic) NSDictionary originData;
+@property (nonatomic) IESLiveInteractiveDegradeState excutingState;
+@property (nonatomic) @? degradeBlock;
+@property (nonatomic) @? upgradeBlock;
+@property (nonatomic) @? remoteAction;
+- (void)setTriggerTime:;
+- (id)degradeBlock;
+- (id)excutingState;
+- (id)originData;
+- (id)remoteAction;
+- (void)setDegradeBlock:;
+- (void)setExcutingState:;
+- (void)setOriginData:;
+- (void)setRemoteAction:;
+- (void)setSupportScenes:;
+- (void)setUpgradeBlock:;
+- (id)supportScenes;
+- (long long)triggerTime;
+- (id)upgradeBlock;
+- (void)setLevel:;
+- (long long)level;
+- (id)key;
+- (void)setKey:;
+- (void).cxx_destruct;
+- (id)description;
+@end

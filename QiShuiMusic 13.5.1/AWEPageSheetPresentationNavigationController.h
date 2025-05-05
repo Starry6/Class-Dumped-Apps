@@ -1,0 +1,38 @@
+@interface AWEPageSheetPresentationNavigationController : UINavigationController
+@property (nonatomic) AWEPageSheetPresentationRootViewController defaultRootViewController;
+@property (nonatomic) UIViewController pageSheetContainerViewController;
+@property (nonatomic) @? dismissalCompletion;
+@property (nonatomic) UIViewController tmpPresentingViewController;
+@property (nonatomic) UIViewController contentViewController;
+@property (nonatomic) @? didDismiss;
+@property (nonatomic) @? configurationBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)notifyDismissal;
+- (void)dismissWithAnimated:completion:;
+- (void)setTmpPresentingViewController:;
+- (id)defaultRootViewController;
+- (void)dismissForAdLightLanding;
+- (void)handlePageSheetPresentationControllerDismissalDidEndNotification:;
+- (id)pageSheetContainerViewController;
+- (void)presentWithPresentingViewController:animated:completion:;
+- (void)setDefaultRootViewController:;
+- (void)setPageSheetContainerViewController:;
+- (id)tmpPresentingViewController;
+- (id)contentViewController;
+- (void)navigationController:didShowViewController:animated:;
+- (void)viewWillDisappear:;
+- (void)navigationController:willShowViewController:animated:;
+- (void).cxx_destruct;
+- (void)setConfigurationBlock:;
+- (void)viewDidAppear:;
+- (id)configurationBlock;
+- (id)initWithContentViewController:;
+- (void)viewDidLoad;
+- (id)didDismiss;
+- (id)dismissalCompletion;
+- (void)setDismissalCompletion:;
+- (void)setDidDismiss:;
+@end

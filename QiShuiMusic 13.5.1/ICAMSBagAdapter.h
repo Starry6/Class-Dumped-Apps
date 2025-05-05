@@ -1,0 +1,32 @@
+@interface ICAMSBagAdapter : NSObject
+@property (nonatomic) ICStoreRequestContext requestContext;
+@property (nonatomic) BOOL expired;
+@property (nonatomic) NSDate expirationDate;
+@property (nonatomic) NSString profile;
+@property (nonatomic) NSString profileVersion;
+@property (nonatomic) AMSProcessInfo processInfo;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)URLForKey:;
+- (BOOL)isExpired;
+- (id)boolForKey:;
+- (id)stringForKey:;
+- (id)profile;
+- (id)_bagValueForKey:valueType:;
+- (id)expirationDate;
+- (id)arrayForKey:;
+- (id)requestContext;
+- (void).cxx_destruct;
+- (void)_didFinishLoadingBag:error:;
+- (id)doubleForKey:;
+- (id)profileVersion;
+- (void)createSnapshotWithCompletion:;
+- (id)integerForKey:;
+- (id)dictionaryForKey:;
+- (id)initWithRequestContext:;
++ (id)_valueForBagKey:valueType:fromURLBag:urlBagLoadingError:valueRetrievingError:;
++ (id)_valueFromICURLBag:forKeyPath:valueType:;
++ (BOOL)_value:matchesExpectedType:;
+@end

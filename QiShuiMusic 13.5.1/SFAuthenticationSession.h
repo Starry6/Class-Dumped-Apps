@@ -1,0 +1,31 @@
+@interface SFAuthenticationSession : NSObject
+@property (nonatomic) <_SFAuthenticationSessionDelegate> _delegate;
+@property (nonatomic) BOOL prefersEphemeralWebBrowserSession;
+@property (nonatomic) BOOL sessionStarted;
+@property (nonatomic) BOOL jitEnabled;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)_delegate;
+- (void)cancel;
+- (void)dealloc;
+- (BOOL)start;
+- (void)safariViewControllerDidFinish:;
+- (void).cxx_destruct;
+- (void)set_delegate:;
+- (id)initWithURL:callbackURLScheme:completionHandler:;
+- (id)presentingViewControllerForAuthenticationViewController:;
+- (void)safariViewController:didDecideCookieSharingForURL:shouldCancel:;
+- (void)safariViewController:hostApplicationOpenURL:;
+- (id)initWithURL:callbackURLScheme:usingEphemeralSession:completionHandler:;
+- (id)initWithURL:callbackURLScheme:usingEphemeralSession:jitEnabled:completionHandler:;
+- (BOOL)startASWebAuthenticationSessionInWindow:dryRun:;
+- (BOOL)_startRequestingFromWebAuthenticationSession:inWindow:dryRun:;
+- (BOOL)prefersEphemeralWebBrowserSession;
+- (void)setPrefersEphemeralWebBrowserSession:;
+- (BOOL)isSessionStarted;
+- (void)setSessionStarted:;
+- (BOOL)jitEnabled;
+- (void)setJitEnabled:;
+@end

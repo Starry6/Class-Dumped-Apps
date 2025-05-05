@@ -1,0 +1,37 @@
+@interface SKTextureAtlas : NSObject
+@property (nonatomic) NSArray textureNames;
+- (id)init;
+- (void)dealloc;
+- (void)commonInit;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (id).cxx_construct;
+- (void)unload;
+- (id)textureNamed:;
+- (void)preloadWithCompletionHandler:;
+- (id)_copyImageData;
+- (void)_prePopulateCache;
+- (BOOL)isEqualToTextureAtlas:;
+- (id)textureNames;
+- (void)parseAtlasPropertyList:withPath:;
+- (void)loadTextures;
+- (id)createTextureFromProvider:andSource:;
+- (id)createSubTextureFromTexture:andCUINamedImage:andOrigin:;
+- (void)loadTexturesFromCUIImageAtlas:;
+- (id)findTextureNamedFromAtlas:;
++ (BOOL)supportsSecureCoding;
++ (BOOL)canUseObjectForAtlas:;
++ (id)atlasWithDictionary:;
++ (id)atlasNamed:;
++ (id)atlasFromCUIImageAtlas:withName:;
++ (void)preloadTextureAtlases:withCompletionHandler:;
++ (void)preloadTextureAtlasesNamed:withCompletionHandler:;
++ (id)createCGImageFromCUINamedImage:withSize:atRect:;
++ (id)getSupportedPostfixes;
++ (id)findTextureNamed:;
++ (id)lookupCachedTextureNamed:;
++ (void)_exportAtlasWithDictionary:toFile:;
++ (void)_exportAtlasWithDictionary:toFile:forcePOT:;
+@end

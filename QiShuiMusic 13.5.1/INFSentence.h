@@ -1,0 +1,36 @@
+@interface INFSentence : NSObject
+@property (nonatomic) NSMutableDictionary relationships;
+@property (nonatomic) NSMutableDictionary placeholdersToTokens;
+@property (nonatomic) NSSet placeholders;
+@property (nonatomic) INFGrammarCollection collection;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) NSString format;
+@property (nonatomic) NSString resolvedSentence;
+- (void)setFormat:;
+- (id)collection;
+- (void)setCollection:;
+- (id)init;
+- (id)format;
+- (id)identifier;
+- (id)relationships;
+- (void).cxx_destruct;
+- (id)initWithDictionary:identifier:;
+- (id)dictionaryRepresentation;
+- (id)initWithIdentifier:;
+- (id)placeholders;
+- (id)resolvedSentence;
+- (void)setNumber:forPlaceholder:;
+- (void)setToken:forPlaceholder:;
+- (void)setPlaceholders:;
+- (void)setRelationships:;
+- (void)generatePlaceholders;
+- (void)placeholder:dependsOn:;
+- (void)reportCyclesIfAny;
+- (BOOL)containsUnresolvedTokens:;
+- (id)unresolvedInArray:;
+- (id)concreteToken:in:;
+- (id)filteredPlaceholders;
+- (id)placeholdersToTokens;
+- (void)setPlaceholdersToTokens:;
++ (id)sentenceWithIdentifier:;
+@end

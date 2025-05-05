@@ -1,0 +1,38 @@
+@interface TMEntity : NSObject
+@property (nonatomic) NSMutableDictionary componentsDic;
+@property (nonatomic) double startTime;
+@property (nonatomic) NSMutableDictionary systemCostForReport;
+@property (nonatomic) double totalCost;
+@property (nonatomic) double preStart;
+@property (nonatomic) double preEnd;
+@property (nonatomic) double postStart;
+@property (nonatomic) double postEnd;
+@property (nonatomic) NSDictionary systemCost;
+@property (nonatomic) NSArray components;
+@property (nonatomic) Q fastPassType;
+- (double)postEnd;
+- (id)componentsDic;
+- (unsigned long long)fastPassType;
+- (id)getComponent:;
+- (BOOL)hasComponent:;
+- (double)postStart;
+- (double)preEnd;
+- (double)preStart;
+- (void)recordSystemCost:name:;
+- (void)setComponentsDic:;
+- (void)setFastPassType:;
+- (void)setPostEnd:;
+- (void)setPostStart:;
+- (void)setPreEnd:;
+- (void)setPreStart:;
+- (void)setSystemCostForReport:;
+- (id)systemCost;
+- (id)systemCostForReport;
+- (id)components;
+- (id)initWithComponent:;
+- (void)setStartTime:;
+- (void)addComponent:;
+- (double)startTime;
+- (void).cxx_destruct;
+- (double)totalCost;
+@end

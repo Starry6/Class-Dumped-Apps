@@ -1,0 +1,33 @@
+@interface CMMotionAlarm : NSObject
+@property (nonatomic) Q alarmId;
+@property (nonatomic) NSString bundleId;
+@property (nonatomic) NSInteger state;
+@property (nonatomic) CMMotionAlarmManager manager;
+@property (nonatomic) NSString name;
+@property (nonatomic) I duration;
+@property (nonatomic) BOOL repeats;
+@property (nonatomic) I type;
+- (void)dealloc;
+- (BOOL)repeats;
+- (void)setState:;
+- (id)bundleId;
+- (id)initWithCoder:;
+- (id)manager;
+- (BOOL)unregisterWithError:;
+- (void)encodeWithCoder:;
+- (unsigned long long)alarmId;
+- (unsigned int)type;
+- (void)setManager:;
+- (int)state;
+- (BOOL)isValid;
+- (id)description;
+- (BOOL)acknowledgeWithError:;
+- (id)name;
+- (id)initWithName:type:duration:repeats:;
+- (id)initWithName:type:duration:repeats:alarmId:bundleId:state:;
+- (void)setBundleId:;
+- (unsigned int)duration;
+- (void)copyPropertiesFromAlarm:;
+- (void)setAlarmId:;
++ (BOOL)supportsSecureCoding;
+@end

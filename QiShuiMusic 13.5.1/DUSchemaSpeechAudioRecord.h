@@ -1,0 +1,2 @@
+@interface DUSchemaSpeechAudioRecord : DUSchemaDUSpeechAudioRecord
+@end

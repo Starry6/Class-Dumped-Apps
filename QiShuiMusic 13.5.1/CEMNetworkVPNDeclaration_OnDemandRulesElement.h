@@ -1,0 +1,30 @@
+@interface CEMNetworkVPNDeclaration_OnDemandRulesElement : CEMPayloadBase
+@property (nonatomic) NSArray payloadDNSDomainMatch;
+@property (nonatomic) NSArray payloadDNSServerAddressMatch;
+@property (nonatomic) NSString payloadURLStringProbe;
+@property (nonatomic) NSString payloadAction;
+@property (nonatomic) CEMNetworkVPNDeclaration_OnDemandRulesElementActionParameters payloadActionParameters;
+@property (nonatomic) NSString payloadInterfaceTypeMatch;
+@property (nonatomic) NSArray payloadSSIDMatch;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (BOOL)loadPayload:error:;
+- (id)serializePayloadWithAssetProviders:;
+- (id)payloadDNSDomainMatch;
+- (void)setPayloadDNSDomainMatch:;
+- (id)payloadDNSServerAddressMatch;
+- (void)setPayloadDNSServerAddressMatch:;
+- (id)payloadURLStringProbe;
+- (void)setPayloadURLStringProbe:;
+- (id)payloadAction;
+- (void)setPayloadAction:;
+- (id)payloadActionParameters;
+- (void)setPayloadActionParameters:;
+- (id)payloadInterfaceTypeMatch;
+- (void)setPayloadInterfaceTypeMatch:;
+- (id)payloadSSIDMatch;
+- (void)setPayloadSSIDMatch:;
++ (id)allowedPayloadKeys;
++ (id)buildWithDNSDomainMatch:withDNSServerAddressMatch:withURLStringProbe:withAction:withActionParameters:withInterfaceTypeMatch:withSSIDMatch:;
++ (id)buildRequiredOnlyWithAction:;
+@end

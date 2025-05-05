@@ -1,0 +1,37 @@
+@interface ENExposureInfo : NSObject
+@property (nonatomic) q daysSinceOnsetOfSymptoms;
+@property (nonatomic) I diagnosisReportType;
+@property (nonatomic) NSDictionary metadata;
+@property (nonatomic) NSArray attenuationDurations;
+@property (nonatomic) C attenuationValue;
+@property (nonatomic) NSDate date;
+@property (nonatomic) double duration;
+@property (nonatomic) C totalRiskScore;
+@property (nonatomic) double totalRiskScoreFullRange;
+@property (nonatomic) C transmissionRiskLevel;
+- (id)init;
+- (void)encodeWithXPCObject:;
+- (id)metadata;
+- (id)initWithXPCObject:error:;
+- (void)setMetadata:;
+- (id)date;
+- (void)setDuration:;
+- (void).cxx_destruct;
+- (void)setDate:;
+- (id)description;
+- (double)duration;
+- (void)setDaysSinceOnsetOfSymptoms:;
+- (unsigned char)transmissionRiskLevel;
+- (void)setDiagnosisReportType:;
+- (unsigned int)diagnosisReportType;
+- (void)setTotalRiskScore:;
+- (void)setTotalRiskScoreFullRange:;
+- (void)setTransmissionRiskLevel:;
+- (void)setAttenuationDurations:;
+- (void)setAttenuationValue:;
+- (long long)daysSinceOnsetOfSymptoms;
+- (id)attenuationDurations;
+- (unsigned char)attenuationValue;
+- (unsigned char)totalRiskScore;
+- (double)totalRiskScoreFullRange;
+@end

@@ -1,0 +1,36 @@
+@interface AMSDialog : NSObject
+@property (nonatomic) NSArray buttons;
+@property (nonatomic) @? completionHandler;
+@property (nonatomic) NSImage icon;
+@property (nonatomic) NSString message;
+@property (nonatomic) q selectedButtonIndex;
+@property (nonatomic) q style;
+@property (nonatomic) NSArray textFields;
+@property (nonatomic) NSString title;
+- (void)present;
+- (void)setMessage:;
+- (id)icon;
+- (void)setStyle:;
+- (void)setCompletionHandler:;
+- (void)setTitle:;
+- (id)buttons;
+- (id)title;
+- (id)message;
+- (void)setIcon:;
+- (void).cxx_destruct;
+- (void)addButton:;
+- (void)setButtons:;
+- (long long)style;
+- (id)completionHandler;
+- (id)textFields;
+- (id)initWithTitle:message:style:;
+- (void)addTextField:;
+- (void)presentFromViewController:;
+- (void)presentSheetFromWindow:;
+- (void)presentSystemDialog;
+- (long long)selectedButtonIndex;
+- (void)setSelectedButtonIndex:;
+- (void)setTextFields:;
++ (id)dialogWithTitle:message:;
++ (id)dialogWithTitle:message:style:;
+@end

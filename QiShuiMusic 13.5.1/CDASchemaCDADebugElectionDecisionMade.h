@@ -1,0 +1,36 @@
+@interface CDASchemaCDADebugElectionDecisionMade : SISchemaInstrumentationMessage
+@property (nonatomic) BOOL isCrossDeviceArbitrationAllowed;
+@property (nonatomic) BOOL hasIsCrossDeviceArbitrationAllowed;
+@property (nonatomic) NSArray advertisementDatas;
+@property (nonatomic) I deviceGroup;
+@property (nonatomic) BOOL hasDeviceGroup;
+@property (nonatomic) NSData jsonData;
+- (unsigned int)deviceGroup;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)setIsCrossDeviceArbitrationAllowed:;
+- (void)setAdvertisementDatas:;
+- (void)setDeviceGroup:;
+- (BOOL)hasDeviceGroup;
+- (void)setHasDeviceGroup:;
+- (void)deleteDeviceGroup;
+- (BOOL)hasIsCrossDeviceArbitrationAllowed;
+- (void)setHasIsCrossDeviceArbitrationAllowed:;
+- (void)deleteIsCrossDeviceArbitrationAllowed;
+- (void)clearAdvertisementData;
+- (void)deleteAdvertisementData;
+- (void)addAdvertisementData:;
+- (unsigned long long)advertisementDataCount;
+- (id)advertisementDataAtIndex:;
+- (BOOL)isCrossDeviceArbitrationAllowed;
+- (id)advertisementDatas;
+@end

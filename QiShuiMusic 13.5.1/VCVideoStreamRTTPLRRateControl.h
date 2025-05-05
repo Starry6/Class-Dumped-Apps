@@ -1,0 +1,35 @@
+@interface VCVideoStreamRTTPLRRateControl : NSObject
+@property (nonatomic) NSInteger state;
+@property (nonatomic) I targetBitrate;
+@property (nonatomic) double owrd;
+@property (nonatomic) double nowrd;
+@property (nonatomic) double nowrdShort;
+@property (nonatomic) double nowrdAcc;
+@property (nonatomic) double rateControlInterval;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (id)className;
+- (int)state;
+- (id)description;
+- (unsigned int)targetBitrate;
+- (void)doRateControlWithTime:roundTripTime:packetLossRate:operatingTierIndex:averageReceivedBitrate:;
+- (void)updateRTPReceiveWithTimestamp:sampleRate:time:;
+- (void)setMaxTierIndex:minTierIndex:;
+- (double)owrd;
+- (double)nowrd;
+- (double)nowrdShort;
+- (double)nowrdAcc;
+- (double)rateControlInterval;
+- (void)setRateControlInterval:;
+- (void)printRateControlFullInfoWithLogDump:time:videoStall:videoFrozenDuration:averageTargetBitrate:;
+- (void)stateChange:;
+- (void)stateExit;
+- (void)stateEnter;
+- (unsigned short)rampUpTier;
+- (unsigned short)rampDownTier;
+- (BOOL)shouldRampDown;
+- (BOOL)shouldRampUp;
+@end

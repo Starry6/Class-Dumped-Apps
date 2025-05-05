@@ -1,0 +1,30 @@
+@interface CWFRequestParameters : NSObject
+@property (nonatomic) NSUUID UUID;
+@property (nonatomic) NSString interfaceName;
+@property (nonatomic) NSInteger virtualInterfaceRole;
+@property (nonatomic) Q timeout;
+@property (nonatomic) q qualityOfService;
+@property (nonatomic) q queuePriority;
+- (void)setQualityOfService:;
+- (id)init;
+- (void)setInterfaceName:;
+- (void)setQueuePriority:;
+- (long long)qualityOfService;
+- (void)setUUID:;
+- (void)setTimeout:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (int)virtualInterfaceRole;
+- (long long)queuePriority;
+- (void)setVirtualInterfaceRole:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (unsigned long long)timeout;
+- (id)description;
+- (id)interfaceName;
+- (id)UUID;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)isEqualToRequestParameters:;
++ (BOOL)supportsSecureCoding;
+@end

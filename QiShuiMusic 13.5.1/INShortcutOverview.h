@@ -1,0 +1,35 @@
+@interface INShortcutOverview : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) INSpeakableString name;
+@property (nonatomic) INSpeakableString voiceCommand;
+@property (nonatomic) INImage icon;
+@property (nonatomic) INSpeakableString descriptiveText;
+@property (nonatomic) NSArray steps;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)steps;
+- (id)_dictionaryRepresentation;
+- (void)_intents_updateContainerWithCache:;
+- (id)icon;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (id)descriptionAtIndent:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)_intents_cacheableObjects;
+- (id)name;
+- (id)_intents_encodeWithJSONEncoder:codableDescription:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)descriptiveText;
+- (id)voiceCommand;
+- (id)initWithName:voiceCommand:icon:descriptiveText:steps:;
++ (id)_intents_decodeWithJSONDecoder:codableDescription:from:;
++ (BOOL)supportsSecureCoding;
+@end

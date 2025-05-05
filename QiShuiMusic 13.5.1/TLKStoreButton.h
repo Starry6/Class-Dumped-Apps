@@ -1,0 +1,38 @@
+@interface TLKStoreButton : UIButton
+@property (nonatomic) TLKLabel label;
+@property (nonatomic) UIView backgroundView;
+@property (nonatomic) TLKProminenceView highlightView;
+@property (nonatomic) BOOL isEmphasized;
+@property (nonatomic) BOOL useCompactMode;
+@property (nonatomic) TLKRichText richTitle;
+@property (nonatomic) double cornerRadius;
+@property (nonatomic) UIFont font;
+@property (nonatomic) NSString title;
+- (id)backgroundView;
+- (void)setHighlightView:;
+- (id)init;
+- (id)highlightView;
+- (id)intrinsicContentSize;
+- (void)tlk_updateForAppearance:;
+- (void)layoutSubviews;
+- (BOOL)isEmphasized;
+- (void)_dynamicUserInterfaceTraitDidChange;
+- (void)setFont:;
+- (void)setRichTitle:;
+- (void)setLabel:;
+- (void)setTitle:;
+- (id)label;
+- (id)richTitle;
+- (id)title;
+- (id)sizeThatFits:;
+- (void)setCornerRadius:;
+- (void).cxx_destruct;
+- (void)didMoveToWindow;
+- (id)font;
+- (void)setBackgroundView:;
+- (void)setHighlighted:;
+- (double)cornerRadius;
+- (void)setIsEmphasized:;
+- (BOOL)useCompactMode;
+- (void)setUseCompactMode:;
+@end

@@ -1,0 +1,31 @@
+@interface SASFinishSpeech : SABaseCommand
+@property (nonatomic) NSString endpoint;
+@property (nonatomic) NSArray featuresAtEndpoint;
+@property (nonatomic) NSArray orderedContext;
+@property (nonatomic) q packetCount;
+@property (nonatomic) NSDictionary serverFeatureLatencyDistribution;
+@property (nonatomic) double totalAudioRecorded;
+@property (nonatomic) NSString aceId;
+@property (nonatomic) NSString refId;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)groupIdentifier;
+- (void)setEndpoint:;
+- (BOOL)requiresResponse;
+- (id)encodedClassName;
+- (id)endpoint;
+- (id)orderedContext;
+- (void)setPacketCount:;
+- (long long)packetCount;
+- (void)setOrderedContext:;
+- (id)featuresAtEndpoint;
+- (void)setFeaturesAtEndpoint:;
+- (id)serverFeatureLatencyDistribution;
+- (void)setServerFeatureLatencyDistribution:;
+- (double)totalAudioRecorded;
+- (void)setTotalAudioRecorded:;
++ (id)finishSpeech;
++ (id)finishSpeechWithDictionary:context:;
+@end

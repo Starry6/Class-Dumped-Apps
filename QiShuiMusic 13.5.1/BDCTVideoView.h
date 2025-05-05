@@ -1,0 +1,35 @@
+@interface BDCTVideoView : UIView
+@property (nonatomic) AVPlayer player;
+@property (nonatomic) AVPlayerLayer playerLayer;
+@property (nonatomic) UIButton playBtn;
+@property (nonatomic) UILabel playTimeLabel;
+@property (nonatomic) UILabel durationLabel;
+@property (nonatomic) UISlider sliderView;
+@property (nonatomic) UIView progressView;
+@property (nonatomic) NSURL videoURL;
+- (id)playBtn;
+- (void)layoutContenViews;
+- (id)playTimeLabel;
+- (void)setPlayBtn:;
+- (void)setPlayTimeLabel:;
+- (void)sliderDidDrag;
+- (void)sliderDidTouch;
+- (void)sliderDidTouchUp;
+- (void)updateVideoPlayState:;
+- (id)playerLayer;
+- (id)videoURL;
+- (void)layoutSublayersOfLayer:;
+- (void)setProgressView:;
+- (void)setSliderView:;
+- (void)setPlayerLayer:;
+- (id)sliderView;
+- (id)initWithFrame:;
+- (id)player;
+- (void)setVideoURL:;
+- (void).cxx_destruct;
+- (void)setPlayer:;
+- (void)applicationWillResignActive;
+- (id)progressView;
+- (id)durationLabel;
+- (void)setDurationLabel:;
+@end

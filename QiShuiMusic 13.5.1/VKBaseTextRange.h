@@ -1,0 +1,2 @@
+@interface VKBaseTextRange : UITextRange
+@end

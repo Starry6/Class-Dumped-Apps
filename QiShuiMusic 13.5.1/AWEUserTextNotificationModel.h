@@ -1,0 +1,38 @@
+@interface AWEUserTextNotificationModel : IESIMBaseApiModel
+@property (nonatomic) NSString missionName;
+@property (nonatomic) NSNumber task_id;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString content;
+@property (nonatomic) NSString schemaURL;
+@property (nonatomic) IESIMURLModel imageURL;
+@property (nonatomic) IESIMUserModel user;
+@property (nonatomic) q subType;
+@property (nonatomic) NSString targetID;
+@property (nonatomic) double contentW;
+@property (nonatomic) double contentH;
+- (id)task_id;
+- (double)contentH;
+- (double)contentW;
+- (id)missionName;
+- (id)schemaURL;
+- (void)setContentH:;
+- (void)setContentW:;
+- (void)setSchemaURL:;
+- (void)setTask_id:;
+- (void)setUser:;
+- (id)content;
+- (void)setContent:;
+- (id)targetID;
+- (void)setTitle:;
+- (void)setTargetID:;
+- (id)title;
+- (id)user;
+- (void).cxx_destruct;
+- (long long)subType;
+- (void)setSubType:;
+- (void)setImageURL:;
+- (id)imageURL;
++ (id)imageURLJSONTransformer;
++ (id)userJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

@@ -1,0 +1,37 @@
+@interface INDeviceDetail : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) INSpeakableString deviceName;
+@property (nonatomic) q deviceClass;
+@property (nonatomic) INSpeakableString productName;
+@property (nonatomic) INSpeakableString category;
+@property (nonatomic) INPerson deviceOwner;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)productName;
+- (long long)deviceClass;
+- (id)deviceName;
+- (id)_dictionaryRepresentation;
+- (void)_intents_updateContainerWithCache:;
+- (id)identifier;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (id)descriptionAtIndent:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)_intents_cacheableObjects;
+- (id)_intents_encodeWithJSONEncoder:codableDescription:;
+- (BOOL)isEqual:;
+- (id)category;
+- (id)copyWithZone:;
+- (id)deviceOwner;
+- (id)initWithIdentifier:deviceName:deviceClass:productName:category:deviceOwner:;
++ (id)_intents_decodeWithJSONDecoder:codableDescription:from:;
++ (BOOL)supportsSecureCoding;
+@end

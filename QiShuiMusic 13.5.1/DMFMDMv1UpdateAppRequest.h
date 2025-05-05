@@ -1,0 +1,34 @@
+@interface DMFMDMv1UpdateAppRequest : DMFUpdateAppRequest
+@property (nonatomic) NSString originator;
+@property (nonatomic) Q managementOptions;
+@property (nonatomic) NSString VPNUUIDString;
+@property (nonatomic) NSString contentFilterUUIDString;
+@property (nonatomic) NSString DNSProxyUUIDString;
+@property (nonatomic) NSArray associatedDomains;
+@property (nonatomic) NSNumber associatedDomainsEnableDirectDownloads;
+@property (nonatomic) NSNumber removable;
+@property (nonatomic) NSDictionary configuration;
+- (id)associatedDomains;
+- (id)originator;
+- (void)setOriginator:;
+- (id)initWithCoder:;
+- (void)setConfiguration:;
+- (void)encodeWithCoder:;
+- (id)configuration;
+- (void).cxx_destruct;
+- (void)setAssociatedDomains:;
+- (id)removable;
+- (void)setRemovable:;
+- (id)VPNUUIDString;
+- (void)setVPNUUIDString:;
+- (id)contentFilterUUIDString;
+- (void)setContentFilterUUIDString:;
+- (id)DNSProxyUUIDString;
+- (void)setDNSProxyUUIDString:;
+- (id)associatedDomainsEnableDirectDownloads;
+- (void)setAssociatedDomainsEnableDirectDownloads:;
+- (unsigned long long)managementOptions;
+- (void)setManagementOptions:;
++ (BOOL)supportsSecureCoding;
++ (Class)allowlistedClassForResultObject;
+@end

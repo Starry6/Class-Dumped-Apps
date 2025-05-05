@@ -1,0 +1,2 @@
+@interface MPSGraphList : MPSGraphTensor
+@end

@@ -1,0 +1,35 @@
+@interface PHAssetExportRequest : NSObject
+@property (nonatomic) PHAsset asset;
+@property (nonatomic) NSProgress progress;
+@property (nonatomic) Q state;
+@property (nonatomic) <PHAssetExportRequestDelegate> delegate;
+@property (nonatomic) NSDictionary variants;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (id)variants;
+- (void)setState:;
+- (id)asset;
+- (void)setDelegate:;
+- (id)progress;
+- (unsigned long long)state;
+- (id)delegate;
+- (id)outputDirectory;
+- (void).cxx_destruct;
+- (id)description;
+- (void)exportWithOptions:completionHandler:;
+- (id)initWithAsset:variants:;
+- (void)handleResultWithFileURLs:cancelled:withError:forAsset:withOptions:progress:processingUnitCount:completionHandler:;
+- (void)processResourcesAtFileURLs:forAsset:withOptions:progress:processingUnitCount:completion:;
+- (BOOL)reassembleAdjustmentsPropertyListIfNeeded:toOutputDirectory:outputURL:error:;
+- (void)bundleResourcesIfNeededForAsset:withFileURLs:options:completion:;
+- (id)copyFileURLsIfNeeded:toOutputDirectory:options:originalFilenameBase:error:;
+- (void)performCompletionWithFileURLs:error:completionHandler:;
+- (void)preflightExportWithOptions:assetAvailability:isProcessingRequired:fileURLs:info:;
++ (id)exportRequestForAsset:error:;
++ (id)exportRequestForAsset:variants:error:;
++ (BOOL)errorIsLowDiskSpaceRelated:;
++ (id)assetExportLog;
+@end

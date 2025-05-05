@@ -1,0 +1,37 @@
+@interface IESLiveMultiLinkerStreamLayout : NSObject
+@property (nonatomic) <IESLiveMultiLinkerProvider> provider;
+@property (nonatomic) {CGSize=dd} canvasSize;
+@property (nonatomic) NSMutableArray streamRegions;
+@property (nonatomic) HTSInteractionStreamAppData appData;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} lastStreamCropRegion;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)packageLayoutRegionsOfSessions:;
+- (id)preprocessSessions:userService:;
+- (id)appDataWithUserService:;
+- (id)doubleLayoutWithSessions:;
+- (id)initWithDIContext:;
+- (void)largeLayoutWithSession:smallSessionsCount:index:largedUserId:;
+- (id)lastStreamCropRegion;
+- (id)quadrupleLayoutWithSessions:;
+- (void)setLastStreamCropRegion:;
+- (void)setStreamRegions:;
+- (id)singleLayoutWithSessions:;
+- (BOOL)singleViewOptEnabled;
+- (id)streamCropRegion;
+- (id)streamRegionByLayoutRegion:;
+- (id)streamRegions;
+- (id)trebleLayoutWithSessions:;
+- (void)updateLayoutOfPublisher:withSessions:withUserService:mediaConfig:;
+- (void)updateStreamCropRegionIfNeeded;
+- (id)userService;
+- (void)setProvider:;
+- (id)canvasSize;
+- (id)provider;
+- (void)setCanvasSize:;
+- (void).cxx_destruct;
+- (void)setAppData:;
+- (id)appData;
+@end

@@ -1,0 +1,35 @@
+@interface BWNodeOutputMediaConfiguration : NSObject
+@property (nonatomic) BWFormatRequirements formatRequirements;
+@property (nonatomic) BOOL providesPixelBufferPool;
+@property (nonatomic) BOOL providesDataBufferPool;
+@property (nonatomic) BOOL pixelBufferPoolProvidesBackPressure;
+@property (nonatomic) NSInteger passthroughMode;
+@property (nonatomic) NSInteger indexOfInputWhichDrivesThisOutput;
+@property (nonatomic) NSArray indexesOfInputsWhichDrivesThisOutput;
+@property (nonatomic) BOOL performsAttachedMediaRemapping;
+@property (nonatomic) NSString attachedMediaKeyOfInputWhichDrivesThisOutput;
+@property (nonatomic) NSInteger owningNodeRetainedBufferCount;
+- (id)init;
+- (id)formatRequirements;
+- (void)dealloc;
+- (int)passthroughMode;
+- (void)setFormatRequirements:;
+- (void)setProvidesDataBufferPool:;
+- (int)owningNodeRetainedBufferCount;
+- (void)setPassthroughMode:;
+- (BOOL)pixelBufferPoolProvidesBackPressure;
+- (BOOL)isDrivenByInputWithIndex:;
+- (id)attachedMediaKeyOfInputWhichDrivesThisOutput;
+- (void)_setAssociatedAttachedMediaKey:;
+- (BOOL)performsAttachedMediaRemapping;
+- (int)indexOfInputWhichDrivesThisOutput;
+- (void)setPixelBufferPoolProvidesBackPressure:;
+- (void)setProvidesPixelBufferPool:;
+- (BOOL)providesDataBufferPool;
+- (BOOL)providesPixelBufferPool;
+- (void)setAttachedMediaKeyOfInputWhichDrivesThisOutput:;
+- (void)setOwningNodeRetainedBufferCount:;
+- (void)setIndexesOfInputsWhichDrivesThisOutput:;
+- (void)setIndexOfInputWhichDrivesThisOutput:;
+- (id)indexesOfInputsWhichDrivesThisOutput;
+@end

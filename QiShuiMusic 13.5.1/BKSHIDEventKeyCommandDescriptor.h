@@ -1,0 +1,2 @@
+@interface BKSHIDEventKeyCommandDescriptor : BKSHIDEventKeyCommand
+@end

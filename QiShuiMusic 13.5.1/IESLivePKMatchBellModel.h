@@ -1,0 +1,33 @@
+@interface IESLivePKMatchBellModel : NSObject
+@property (nonatomic) NSNumber precisionMatchID;
+@property (nonatomic) NSInteger source;
+@property (nonatomic) NSString matchReason;
+@property (nonatomic) Q remainSecond;
+@property (nonatomic) BOOL isAnchorReady;
+@property (nonatomic) NSString ownerAnchorDesc;
+@property (nonatomic) NSString notDisturbText;
+@property (nonatomic) Q duration;
+@property (nonatomic) NSNumber flexActivityID;
+@property (nonatomic) HTSLivePrecisionMatch_Matcher oppositeAnchor;
+- (id)ownerAnchorDesc;
+- (void)setMatchReason:;
+- (id)flexActivityID;
+- (BOOL)isAnchorReady;
+- (id)matchReason;
+- (id)notDisturbText;
+- (id)oppositeAnchor;
+- (id)precisionMatchID;
+- (unsigned long long)remainSecond;
+- (void)setFlexActivityID:;
+- (void)setIsAnchorReady:;
+- (void)setNotDisturbText:;
+- (void)setOppositeAnchor:;
+- (void)setOwnerAnchorDesc:;
+- (void)setPrecisionMatchID:;
+- (void)setRemainSecond:;
+- (void)setDuration:;
+- (void).cxx_destruct;
+- (int)source;
+- (unsigned long long)duration;
+- (void)setSource:;
+@end

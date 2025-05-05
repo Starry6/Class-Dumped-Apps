@@ -1,0 +1,2 @@
+@interface HTSLiveCommonTextRoot : GPBRootObject
+@end

@@ -1,0 +1,2 @@
+@interface LinkmicUpdateSettingsApiRoot : GPBRootObject
+@end

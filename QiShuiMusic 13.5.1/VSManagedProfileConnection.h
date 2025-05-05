@@ -1,0 +1,31 @@
+@interface VSManagedProfileConnection : NSObject
+@property (nonatomic) MCProfileConnection profileConnection;
+@property (nonatomic) NSObject<OS_dispatch_queue> notificationQueue;
+@property (nonatomic) NSMutableSet observers;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (id)userToken;
+- (void)profileConnectionDidReceiveEffectiveSettingsChangedNotification:userInfo:;
+- (id)notificationQueue;
+- (void)setNotificationQueue:;
+- (void).cxx_destruct;
+- (long long)appAnalyticsAllowed;
+- (void)setObservers:;
+- (id)profileConnection;
+- (id)observers;
+- (void)unregisterObserver:;
+- (void)registerObserver:;
+- (void)setProfileConnection:;
+- (long long)accountModificationAllowed;
+- (id)providerUniqueID;
+- (void)refreshProfileWithCompletion:;
+- (long long)appInstallationAllowed;
+- (long long)UIAppInstallationAllowed;
+- (long long)TVProviderModificationAllowed;
+- (long long)maximumAppsRating;
+- (long long)boolForManagedConfigurationBool:;
++ (id)sharedConnection;
+@end

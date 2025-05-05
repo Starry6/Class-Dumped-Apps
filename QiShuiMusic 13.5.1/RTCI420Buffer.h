@@ -1,0 +1,34 @@
+@interface RTCI420Buffer : NSObject
+@property (nonatomic) NSInteger chromaWidth;
+@property (nonatomic) NSInteger chromaHeight;
+@property (nonatomic) r* dataY;
+@property (nonatomic) r* dataU;
+@property (nonatomic) r* dataV;
+@property (nonatomic) NSInteger strideY;
+@property (nonatomic) NSInteger strideU;
+@property (nonatomic) NSInteger strideV;
+@property (nonatomic) NSInteger width;
+@property (nonatomic) NSInteger height;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (int)height;
+- (int)width;
+- (id)initWithWidth:height:;
+- (void).cxx_destruct;
+- (id).cxx_construct;
+- (id)toI420;
+- (id)initWithWidth:height:dataY:dataU:dataV:;
+- (id)initWithWidth:height:strideY:strideU:strideV:;
+- (int)chromaWidth;
+- (int)chromaHeight;
+- (id)dataY;
+- (id)dataU;
+- (id)dataV;
+- (int)strideY;
+- (int)strideU;
+- (int)strideV;
+- (id)initWithFrameBuffer:;
+- (id)nativeI420Buffer;
+@end

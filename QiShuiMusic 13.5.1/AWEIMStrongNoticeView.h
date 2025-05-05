@@ -1,0 +1,31 @@
+@interface AWEIMStrongNoticeView : UIView
+@property (nonatomic) AWEIMStrongNoticeMessage message;
+@property (nonatomic) NSDictionary commonTrackDict;
+@property (nonatomic) UIView line;
+@property (nonatomic) UIButton closeBtn;
+@property (nonatomic) TTTAttributedLabel tipsLabel;
+@property (nonatomic) @? dismissBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)commonTrackDict;
+- (void)attributedLabel:didSelectLinkWithURL:;
+- (id)closeBtn;
+- (void)configWithMessage:;
+- (void)didClickCloseBtn:;
+- (void)setCloseBtn:;
+- (void)setCommonTrackDict:;
+- (void)setTipsLabel:;
+- (id)tipsLabel;
+- (void)setMessage:;
+- (void)layoutSubviews;
+- (id)initWithFrame:;
+- (id)message;
+- (void).cxx_destruct;
+- (id)line;
+- (void)setLine:;
+- (id)dismissBlock;
+- (void)setDismissBlock:;
++ (id)sizeWithMessage:;
+@end

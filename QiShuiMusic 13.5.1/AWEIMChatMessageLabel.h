@@ -1,0 +1,34 @@
+@interface AWEIMChatMessageLabel : UILabel
+@property (nonatomic) q currentType;
+@property (nonatomic) BOOL forceShowMsgContent;
+@property (nonatomic) NSAttributedString engageGroupOwnerAttributedString;
+@property (nonatomic) NSAttributedString contentAttributedString;
+@property (nonatomic) NSAttributedString onlineAttributedString;
+@property (nonatomic) NSAttributedString awemeTipAttributedString;
+@property (nonatomic) NSAttributedString livingAttributedString;
+@property (nonatomic) NSAttributedString airborneAttributedString;
+@property (nonatomic) NSAttributedString couponAttributedString;
+@property (nonatomic) @? updateAttributedStringBlock;
+- (void)setUpdateAttributedStringBlock:;
+- (id)airborneAttributedString;
+- (id)awemeTipAttributedString;
+- (id)couponAttributedString;
+- (id)engageGroupOwnerAttributedString;
+- (BOOL)forceShowMsgContent;
+- (id)livingAttributedString;
+- (id)onlineAttributedString;
+- (void)p_updateAttributedString;
+- (void)resetAttributedString;
+- (void)setAirborneAttributedString:;
+- (void)setAwemeTipAttributedString:;
+- (void)setCouponAttributedString:;
+- (void)setEngageGroupOwnerAttributedString:;
+- (void)setForceShowMsgContent:;
+- (void)setLivingAttributedString:;
+- (void)setOnlineAttributedString:;
+- (id)updateAttributedStringBlock;
+- (void).cxx_destruct;
+- (id)contentAttributedString;
+- (long long)currentType;
+- (void)setContentAttributedString:;
+@end

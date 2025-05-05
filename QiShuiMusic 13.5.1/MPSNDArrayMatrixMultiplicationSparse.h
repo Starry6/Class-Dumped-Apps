@@ -1,0 +1,31 @@
+@interface MPSNDArrayMatrixMultiplicationSparse : MPSNDArrayMultiaryKernel
+@property (nonatomic) double alpha;
+@property (nonatomic) double beta;
+@property (nonatomic) BOOL denseSparse;
+@property (nonatomic) BOOL transposeSparse;
+@property (nonatomic) Q sparseRows;
+@property (nonatomic) BOOL structuredSparse;
+- (id)initWithCoder:device:;
+- (id)copyWithZone:device:;
+- (void)dealloc;
+- (void)setAlpha:;
+- (double)beta;
+- (void)encodeWithCoder:;
+- (double)alpha;
+- (void)setTransposeSparse:;
+- (id)destinationArrayDescriptorForSourceArrays:sourceState:;
+- (void)setBeta:;
+- (id)initWithDevice:sourceCount:;
+- (void)setDenseSparse:;
+- (unsigned long long)kernelDimensionalityForSourceArrays:;
+- (id)dimensionsNotToBeBroadcast;
+- (id)workloadStatisticsForSourceArrays:destArrays:kernel:kernelDAGObject:sourceState:;
+- (BOOL)denseSparse;
+- (BOOL)transposeSparse;
+- (unsigned long long)sparseRows;
+- (void)setSparseRows:;
+- (BOOL)structuredSparse;
+- (void)setStructuredSparse:;
++ (id)libraryInfo:;
++ (unsigned long long)expectedVirtualSourceCount;
+@end

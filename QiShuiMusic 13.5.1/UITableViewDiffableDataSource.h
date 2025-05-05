@@ -1,0 +1,33 @@
+@interface UITableViewDiffableDataSource : NSObject
+@property (nonatomic) __UIDiffableDataSource impl;
+@property (nonatomic) q defaultRowAnimation;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)_isDiffableDataSource;
+- (id)initWithTableView:cellProvider:;
+- (id)initWithViewUpdatesSink:;
+- (id)_diffableDataSourceImpl;
+- (id)sectionIdentifierForIndex:;
+- (id)itemIdentifierForIndexPath:;
+- (id)indexPathForItemIdentifier:;
+- (void)validateIdentifiers;
+- (id)tableView:cellForRowAtIndexPath:;
+- (void)applySnapshot:animatingDifferences:completion:;
+- (void).cxx_destruct;
+- (id)snapshot;
+- (id)impl;
+- (id)description;
+- (void)setImpl:;
+- (long long)tableView:numberOfRowsInSection:;
+- (long long)indexForSectionIdentifier:;
+- (long long)numberOfSectionsInTableView:;
+- (BOOL)_subclassOverridesMethodWithSelector:;
+- (void)applySnapshot:animatingDifferences:;
+- (void)applySnapshotUsingReloadData:;
+- (void)applySnapshotUsingReloadData:completion:;
+- (void)_applySnapshot:animatingDifferences:completion:;
+- (long long)defaultRowAnimation;
+- (void)setDefaultRowAnimation:;
+@end

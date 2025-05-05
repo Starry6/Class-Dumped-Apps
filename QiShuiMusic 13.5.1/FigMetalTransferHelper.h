@@ -1,0 +1,2 @@
+@interface FigMetalTransferHelper : NSObject
+@end

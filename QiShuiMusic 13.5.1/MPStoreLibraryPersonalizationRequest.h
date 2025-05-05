@@ -1,0 +1,32 @@
+@interface MPStoreLibraryPersonalizationRequest : MPModelRequest
+@property (nonatomic) NSDictionary itemIndexPathToOverridePropertySet;
+@property (nonatomic) MPMediaLibrary mediaLibraryOverrideForTestingOnly;
+@property (nonatomic) MPSectionedCollection unpersonalizedContentDescriptors;
+@property (nonatomic) MPSectionedCollection representedObjects;
+@property (nonatomic) ICUserIdentity userIdentity;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithUnpersonalizedContentDescriptors:;
+- (void)setMediaLibraryOverrideForTestingOnly:;
+- (void)setRepresentedObjects:;
+- (id)representedObjects;
+- (id)unpersonalizedContentDescriptors;
+- (id)newOperationWithResponseHandler:;
+- (id)mediaLibraryOverrideForTestingOnly;
+- (id)userIdentity;
+- (id)initWithUnpersonalizedRequest:unpersonalizedContentDescriptors:;
+- (void)setProperties:forItemAtIndexPath:;
+- (id)itemIndexPathToOverridePropertySet;
+- (id)propertiesForItemAtIndexPath:;
+- (void).cxx_destruct;
+- (void)setUserIdentity:;
+- (id)copyWithZone:;
++ (id)preferredQueue;
++ (BOOL)supportsSecureCoding;
++ (BOOL)requiresNetwork;
++ (id)libraryViewWithMediaLibraryOverrideForTestingOnly:;
++ (id)personalizedResponseForContentDescriptor:requestedProperties:;
++ (id)libraryViewWithUserIdentity:;
+@end

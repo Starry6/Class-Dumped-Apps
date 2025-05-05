@@ -1,0 +1,38 @@
+@interface CVACMALSData : NSObject
+@property (nonatomic) I luxValue;
+@property (nonatomic) CVACLMotionTypeVector4 rawChannels;
+@property (nonatomic) CVACLMotionTypeDoubleVector3 colorComponents;
+@property (nonatomic) double timestamp;
+@property (nonatomic) Q syncTimestamp;
+@property (nonatomic) NSNumber gain;
+@property (nonatomic) NSNumber integrationTime;
+@property (nonatomic) Q frameId;
+@property (nonatomic) I vendorNumChannels;
+@property (nonatomic) NSArray vendorRawChannels;
+- (id)gain;
+- (id)init;
+- (id)integrationTime;
+- (unsigned long long)frameId;
+- (id)initWithCoder:;
+- (void)setFrameId:;
+- (void)encodeWithCoder:;
+- (void)setTimestamp:;
+- (void)setIntegrationTime:;
+- (void).cxx_destruct;
+- (double)timestamp;
+- (void)setGain:;
+- (id)colorComponents;
+- (void)setColorComponents:;
+- (unsigned long long)syncTimestamp;
+- (void)setSyncTimestamp:;
+- (unsigned int)luxValue;
+- (void)setLuxValue:;
+- (id)rawChannels;
+- (void)setRawChannels:;
+- (unsigned int)vendorNumChannels;
+- (void)setVendorNumChannels:;
+- (id)vendorRawChannels;
+- (void)setVendorRawChannels:;
++ (BOOL)supportsSecureCoding;
++ (id)classes;
+@end

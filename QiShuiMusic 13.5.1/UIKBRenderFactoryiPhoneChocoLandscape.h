@@ -1,0 +1,28 @@
+@interface UIKBRenderFactoryiPhoneChocoLandscape : UIKBRenderFactoryiPhoneLandscape
+- (BOOL)isTallPopup;
+- (id)internationalKeyOffset;
+- (id)variantSymbolFrameInsets;
+- (id)lightKeycapsFontName;
+- (id)popupSymbolTextOffset;
+- (double)moreABCKeyFontSize;
+- (id)dictationKeyOffset;
+- (id)returnKeyOffset;
+- (id)wideShadowPaddleInsets;
+- (id)moreABCKeyOffset;
+- (id)variantSymbolTextOffset;
+- (double)popupFontSize;
+- (id)more123KeyOffset;
+- (id)dynamicInsets;
+- (double)dynamicBottomRowMultiplier;
+- (double)stringKeyFontSize;
+- (double)assistKeyFontSize;
+- (double)moreKeyFontSize;
+- (id)leftArrowKeyOffset;
+- (id)rightArrowKeyOffset;
+- (id)undoKeyOffset;
+- (id)dismissKeyOffset;
+- (id)realEmojiKeyOffset;
+- (id)wideShadowPopupMenuInsets;
+- (double)_row4ControlSegmentWidthLeft;
+- (double)_row4ControlSegmentWidthRight;
+@end

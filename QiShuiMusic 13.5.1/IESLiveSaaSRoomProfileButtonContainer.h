@@ -1,0 +1,37 @@
+@interface IESLiveSaaSRoomProfileButtonContainer : UIView
+@property (nonatomic) IESLiveSaaSRoomProfileOperationViewModel viewModel;
+@property (nonatomic) BOOL isFollow;
+@property (nonatomic) IESLiveSaaSRoomProfileFollowButton followButton;
+@property (nonatomic) UIView<IESLiveSaaSRoomProfileButtonDelegate> revenueView;
+@property (nonatomic) <IESLiveSaaSRoomProfileOperationButtonDelegate> delegate;
+@property (nonatomic) BOOL showingFansClubUrgeAnimation;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)reloadContainer;
+- (void)setRevenueView:;
+- (void)didFollowUser:status:hostStatus:;
+- (void)didSetAttachingDIContext;
+- (void)didUnfollowUser:status:hostStatus:;
+- (id)followButton;
+- (BOOL)isFollow;
+- (void)playFollowAnimation;
+- (id)revenueView;
+- (void)setFollowButton:;
+- (void)setIsFollow:;
+- (void)setShowingFansClubUrgeAnimation:;
+- (void)setupContainer;
+- (BOOL)showingFansClubUrgeAnimation;
+- (void)startParticipateUrgeAnimationIfNeededWithModel:;
+- (id)viewModel;
+- (void)clearObserver;
+- (void)setDelegate:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)addObserver;
+- (id)containerSize;
+- (void)setViewModel:;
++ (id)operationButtonContainerWithViewModel:;
++ (id)operationButtonWithViewModel:delegate:;
+@end

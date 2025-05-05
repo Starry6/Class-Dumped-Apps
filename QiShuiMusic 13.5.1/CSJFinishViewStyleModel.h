@@ -1,0 +1,33 @@
+@interface CSJFinishViewStyleModel : NSObject
+@property (nonatomic) q iconWidth;
+@property (nonatomic) q labelWidth;
+@property (nonatomic) q labelHeight;
+@property (nonatomic) q buttonWidth;
+@property (nonatomic) q buttonHeight;
+@property (nonatomic) q labelButtonGap;
+@property (nonatomic) q labelFontSize;
+@property (nonatomic) q buttonFontSize;
+@property (nonatomic) BOOL showButton;
+- (void)setLabelHeight:;
+- (long long)labelButtonGap;
+- (long long)labelHeight;
+- (void)setButtonFontSize:;
+- (void)setLabelButtonGap:;
+- (long long)buttonHeight;
+- (long long)iconWidth;
+- (long long)buttonFontSize;
+- (long long)labelFontSize;
+- (long long)buttonWidth;
+- (long long)labelWidth;
+- (void)setLabelWidth:;
+- (BOOL)showButton;
+- (void)setShowButton:;
+- (void)setButtonHeight:;
+- (void)setIconWidth:;
+- (void)setLabelFontSize:;
+- (void)setButtonWidth:;
++ (id)styleModelSmall;
++ (id)styleModelLarge;
++ (id)styleModelMiddle;
++ (id)styleModelWithFrame:;
+@end

@@ -1,0 +1,32 @@
+@interface BWPixelBufferPool : NSObject
+@property (nonatomic) NSString name;
+@property (nonatomic) BOOL pixelBufferAvailable;
+@property (nonatomic) Q capacity;
+@property (nonatomic) I pixelFormat;
+@property (nonatomic) ^{__CVPixelBufferPool=} cvPixelBufferPool;
+@property (nonatomic) ^{__CFDictionary=} cvPixelBufferPoolAuxAttributes;
+@property (nonatomic) BOOL usesMemoryPool;
+- (unsigned long long)capacity;
+- (void)setCapacity:;
+- (void)dealloc;
+- (void)enumerateSurfacesUsingBlock:;
+- (BOOL)waitForAvailablePixelBuffer;
+- (BOOL)prefetch:lastEmittedSurfaceID:;
+- (BOOL)usesMemoryPool;
+- (id)cvPixelBufferPoolAuxAttributes;
+- (id)initWithVideoFormat:capacity:name:;
+- (id)newPixelBuffer;
+- (id)initWithVideoFormat:capacity:name:memoryPool:;
+- (id)initWithVideoFormat:capacity:name:memoryPool:additionalPixelBufferAttributes:;
+- (id)initWithVideoFormat:capacity:name:clientProvidesPool:memoryPool:providesBackPressure:;
+- (unsigned int)pixelFormat;
+- (id)description;
+- (id)name;
+- (void)flushToMinimumCapacity:;
+- (void)preallocateWithCompletionHandler:;
+- (BOOL)isPixelBufferAvailable;
+- (void)setCVPixelBufferPool:attributes:;
+- (int)preallocate;
+- (id)cvPixelBufferPool;
+- (void)prefetchWithCompletionHandler:;
+@end

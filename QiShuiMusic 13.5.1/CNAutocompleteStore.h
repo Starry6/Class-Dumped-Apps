@@ -1,0 +1,34 @@
+@interface CNAutocompleteStore : NSObject
+@property (nonatomic) CNAutocompleteStoreQueryHelper queryHelper;
+@property (nonatomic) CNCancelationToken currentFetchToken;
+@property (nonatomic) CNAutocompleteUserSession userSession;
+@property (nonatomic) CNAutocompleteStoreReproStringRecorder reproStringRecorder;
+@property (nonatomic) <CNAutocompleteProbeProvider> probeProvider;
+@property (nonatomic) <CNAutocompleteSearchProvider> searchProvider;
+@property (nonatomic) <CNScheduler> scheduler;
+@property (nonatomic) double fetchCoalescingInterval;
+- (id)init;
+- (id)userSession;
+- (id)searchProvider;
+- (id)scheduler;
+- (id)executeFetchRequest:;
+- (void)setUserSession:;
+- (void).cxx_destruct;
+- (id)initWithDelegate:;
+- (id)executeFetchRequest:delegate:;
+- (id)scheduleFetchRequest:;
+- (void)ignoreResult:completionHandler:;
+- (void)userSelectedResult:atSortedIndex:;
+- (id)scheduleFetchRequest:delegate:;
+- (id)probeProvider;
+- (id)initWithDelegate:searchProvider:probeProvider:scheduler:;
+- (id)executeFetchRequest:afterDelay:delegate:;
+- (double)fetchCoalescingInterval;
+- (void)setFetchCoalescingInterval:;
+- (id)queryHelper;
+- (id)currentFetchToken;
+- (void)setCurrentFetchToken:;
+- (id)reproStringRecorder;
+- (void)setReproStringRecorder:;
++ (double)defaultFetchCoalescingInterval;
+@end

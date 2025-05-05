@@ -1,0 +1,36 @@
+@interface WebDefaultUIDelegate : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)webView:exceededApplicationCacheOriginQuotaForSecurityOrigin:totalSpaceNeeded:;
+- (void)webView:printFrameView:;
+- (void)webViewSupportedOrientationsUpdated:;
+- (void)webViewClose:;
+- (void)webView:runJavaScriptAlertPanelWithMessage:initiatedByFrame:;
+- (BOOL)webView:runJavaScriptConfirmPanelWithMessage:initiatedByFrame:;
+- (id)webView:runJavaScriptTextInputPanelWithPrompt:defaultText:initiatedByFrame:;
+- (void)webViewShow:;
+- (void)webViewFocus:;
+- (void)webViewUnfocus:;
+- (id)webViewFirstResponder:;
+- (void)webView:makeFirstResponder:;
+- (void)webView:setStatusText:;
+- (id)webViewStatusText:;
+- (BOOL)webViewAreToolbarsVisible:;
+- (void)webView:setToolbarsVisible:;
+- (BOOL)webViewIsStatusBarVisible:;
+- (void)webView:setStatusBarVisible:;
+- (BOOL)webViewIsResizable:;
+- (void)webView:setResizable:;
+- (void)webView:setFrame:;
+- (id)webViewFrame:;
+- (void)webView:runOpenPanelForFileButtonWithResultListener:;
+- (void)webView:mouseDidMoveOverElement:modifierFlags:;
+- (id)webView:createWebViewWithRequest:windowFeatures:;
+- (id)webView:createWebViewWithRequest:userGesture:;
+- (void)webView:didDrawRect:;
+- (void)webView:didScrollDocumentInFrameView:;
+- (unsigned long long)webView:dragDestinationActionMaskForSession:;
++ (id)sharedUIDelegate;
+@end

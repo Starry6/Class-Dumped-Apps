@@ -1,0 +1,30 @@
+@interface IESECLiveCountDownView : UIView
+@property (nonatomic) UIView bgView;
+@property (nonatomic) UILabel countDownLabel;
+@property (nonatomic) UILabel descriptionLabel;
+@property (nonatomic) q currentNum;
+@property (nonatomic) NSString descriptionText;
+@property (nonatomic) @? completeHandle;
+@property (nonatomic) BOOL isCountingDown;
+- (void)animateBegin;
+- (id)completeHandle;
+- (id)countDownLabel;
+- (long long)currentNum;
+- (id)initWithTime:description:completion:;
+- (BOOL)isCountingDown;
+- (void)p_setupUI;
+- (void)refreshLabel;
+- (void)setCompleteHandle:;
+- (void)setCountDownLabel:;
+- (void)setCurrentNum:;
+- (void)setIsCountingDown:;
+- (id)descriptionText;
+- (void)layoutSubviews;
+- (void)start;
+- (void)setDescriptionLabel:;
+- (id)descriptionLabel;
+- (void).cxx_destruct;
+- (void)setDescriptionText:;
+- (id)bgView;
+- (void)setBgView:;
+@end

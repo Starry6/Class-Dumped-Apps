@@ -1,0 +1,2 @@
+@interface CNCardFaceTimeGroupItem : CNCardGroupItem
+@end

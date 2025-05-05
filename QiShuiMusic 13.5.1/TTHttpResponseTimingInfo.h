@@ -1,0 +1,37 @@
+@interface TTHttpResponseTimingInfo : NSObject
+@property (nonatomic) NSDate start;
+@property (nonatomic) q proxy;
+@property (nonatomic) q dns;
+@property (nonatomic) q connect;
+@property (nonatomic) q ssl;
+@property (nonatomic) q send;
+@property (nonatomic) q wait;
+@property (nonatomic) q receive;
+@property (nonatomic) q total;
+@property (nonatomic) q receivedResponseContentLength;
+@property (nonatomic) q totalReceivedBytes;
+@property (nonatomic) BOOL isSocketReused;
+@property (nonatomic) BOOL isCached;
+@property (nonatomic) BOOL isFromProxy;
+@property (nonatomic) c cacheStatus;
+@property (nonatomic) NSString remoteIP;
+@property (nonatomic) S remotePort;
+- (long long)ssl;
+- (char)cacheStatus;
+- (BOOL)isFromProxy;
+- (BOOL)isSocketReused;
+- (long long)receivedResponseContentLength;
+- (id)remoteIP;
+- (long long)totalReceivedBytes;
+- (long long)proxy;
+- (id)start;
+- (long long)send;
+- (long long)wait;
+- (unsigned short)remotePort;
+- (void).cxx_destruct;
+- (long long)connect;
+- (long long)total;
+- (BOOL)isCached;
+- (long long)receive;
+- (long long)dns;
+@end

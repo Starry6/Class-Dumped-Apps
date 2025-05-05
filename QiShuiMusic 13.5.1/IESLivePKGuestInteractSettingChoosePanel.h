@@ -1,0 +1,31 @@
+@interface IESLivePKGuestInteractSettingChoosePanel : UIView
+@property (nonatomic) IESLivePKGuestInteractSettingChooseViewModel viewModel;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UITableView tableView;
+@property (nonatomic) UIView seperatorLineView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didSetAttachingDIContext;
+- (id)seperatorLineView;
+- (void)setSeperatorLineView:;
+- (void)setupConstraints;
+- (id)viewModel;
+- (void)setTitleLabel:;
+- (id)tableView:cellForRowAtIndexPath:;
+- (double)tableView:heightForRowAtIndexPath:;
+- (id)tableView:viewForHeaderInSection:;
+- (void)tableView:didSelectRowAtIndexPath:;
+- (void).cxx_destruct;
+- (void)setTableView:;
+- (double)tableView:heightForHeaderInSection:;
+- (void)setViewModel:;
+- (id)titleLabel;
+- (void)tableView:willDisplayCell:forRowAtIndexPath:;
+- (id)tableView;
+- (long long)tableView:numberOfRowsInSection:;
+- (long long)numberOfSectionsInTableView:;
+- (void)setupViews;
+- (id)initWithFrame:viewModel:;
+@end

@@ -1,0 +1,35 @@
+@interface AFSpeechPackage : NSObject
+@property (nonatomic) AFSpeechRecognition recognition;
+@property (nonatomic) AFSpeechRecognition unfilteredRecognition;
+@property (nonatomic) AFSpeechRecognition rawRecognition;
+@property (nonatomic) AFSpeechAudioAnalytics audioAnalytics;
+@property (nonatomic) BOOL isFinal;
+@property (nonatomic) double utteranceStart;
+@property (nonatomic) AFSpeechLatticeMitigatorResult latticeMitigatorResult;
+@property (nonatomic) BOOL recognitionPaused;
+@property (nonatomic) BOOL speechProfileUsed;
+@property (nonatomic) q resultCandidateId;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)dictionaryRepresentation;
+- (id)copyWithZone:;
+- (id)recognition;
+- (id)initWithRecognition:rawRecognition:audioAnalytics:isFinal:utteranceStart:;
+- (id)initWithRecognition:unfilteredRecognition:rawRecognition:audioAnalytics:isFinal:utteranceStart:;
+- (id)initWithRecognition:rawRecognition:audioAnalytics:isFinal:utteranceStart:latticeMitigatorResult:;
+- (id)initWithRecognition:unfilteredRecognition:rawRecognition:audioAnalytics:isFinal:utteranceStart:latticeMitigatorResult:;
+- (id)initWithRecognition:unfilteredRecognition:rawRecognition:audioAnalytics:isFinal:utteranceStart:latticeMitigatorResult:recognitionPaused:;
+- (id)initWithRecognition:unfilteredRecognition:rawRecognition:audioAnalytics:isFinal:utteranceStart:latticeMitigatorResult:recognitionPaused:speechProfileUsed:;
+- (id)initWithRecognition:unfilteredRecognition:rawRecognition:audioAnalytics:isFinal:utteranceStart:latticeMitigatorResult:recognitionPaused:speechProfileUsed:resultCandidateId:;
+- (id)unfilteredRecognition;
+- (id)rawRecognition;
+- (id)audioAnalytics;
+- (BOOL)isFinal;
+- (double)utteranceStart;
+- (id)latticeMitigatorResult;
+- (BOOL)recognitionPaused;
+- (BOOL)speechProfileUsed;
+- (long long)resultCandidateId;
++ (BOOL)supportsSecureCoding;
+@end

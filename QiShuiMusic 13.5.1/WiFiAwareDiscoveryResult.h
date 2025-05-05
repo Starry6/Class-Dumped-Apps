@@ -1,0 +1,30 @@
+@interface WiFiAwareDiscoveryResult : NSObject
+@property (nonatomic) NSString serviceName;
+@property (nonatomic) WiFiAwarePublishServiceSpecificInfo serviceSpecificInfo;
+@property (nonatomic) C publishID;
+@property (nonatomic) WiFiMACAddress publisherAddress;
+@property (nonatomic) BOOL datapathSupported;
+@property (nonatomic) BOOL datapathSecurityRequired;
+@property (nonatomic) BOOL furtherServiceDiscoveryRequired;
+@property (nonatomic) q rssi;
+- (long long)rssi;
+- (id)serviceName;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)publisherAddress;
+- (BOOL)datapathSecurityRequired;
+- (BOOL)datapathSupported;
+- (id)serviceSpecificInfo;
+- (unsigned char)publishID;
+- (BOOL)serviceSpecificInfoEqual:;
+- (BOOL)furtherServiceDiscoveryRequired;
+- (id)initWithServiceName:serviceSpecificInfo:publishID:subscribeID:publisherAddressKey:datapathSupported:datapathCipherSuite:fsdFunction:rssi:;
+- (unsigned char)subscribeID;
+- (long long)datapathCipherSuite;
+- (long long)fsdFunction;
+- (id)fsdFunctionString;
++ (BOOL)supportsSecureCoding;
+@end

@@ -1,0 +1,2 @@
+@interface IESLiveUserSettingApiRoot : GPBRootObject
+@end

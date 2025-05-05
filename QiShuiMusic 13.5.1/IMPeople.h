@@ -1,0 +1,33 @@
+@interface IMPeople : NSObject
+@property (nonatomic) NSMutableArray people;
+@property (nonatomic) q coalesceCount;
+@property (nonatomic) NSArray groups;
+@property (nonatomic) BOOL hidePeople;
+@property (nonatomic) BOOL coalescingChanges;
+@property (nonatomic) Q count;
+- (id)people;
+- (void)dealloc;
+- (void)addNotificationObserver:selector:;
+- (BOOL)removeIMHandle:;
+- (id)groups;
+- (long long)coalesceCount;
+- (BOOL)addIMHandle:;
+- (BOOL)coalescingChanges;
+- (void)removeNotificationObserver:;
+- (BOOL)removePeopleFromArray:;
+- (void)setCoalesceCount:;
+- (void)setShouldHidePeople:;
+- (void)removedIMHandle:;
+- (BOOL)addPeopleFromArray:skipMe:;
+- (BOOL)hidePeople;
+- (void).cxx_destruct;
+- (void)beginCoalescedChanges;
+- (void)endCoalescedChanges;
+- (void)imHandle:buddyStatusChanged:;
+- (void)addedIMHandle:;
+- (BOOL)containsIMHandle:;
+- (unsigned long long)count;
+- (void)setPeople:;
+- (void)_addedPeople:;
+- (BOOL)addPeopleFromArray:;
+@end

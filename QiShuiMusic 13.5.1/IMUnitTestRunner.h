@@ -1,0 +1,37 @@
+@interface IMUnitTestRunner : NSObject
+@property (nonatomic) <IMUnitTestRunnerDelegate> delegate;
+@property (nonatomic) IMUnitTestBundleLoader bundleLoader;
+@property (nonatomic) IMUnitTestLogger logger;
+@property (nonatomic) IMUnitTestFrameworkLoader frameworkLoader;
+@property (nonatomic) NSArray failedTests;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)logger;
+- (id)dateFormatter;
+- (id)init;
+- (void)setDelegate:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)log:;
+- (id)runTestsInBundleAtPath:error:;
+- (void)testSuiteWillStart:;
+- (void)testSuiteDidFinish:;
+- (void)testCaseWillStart:;
+- (void)testCaseDidFinish:;
+- (void)testSuite:didFailWithDescription:inFile:atLine:;
+- (void)testCase:didFailWithDescription:inFile:atLine:;
+- (id)initWithLogger:bundleLoader:;
+- (id)initWithLogger:bundleLoader:frameworkLoader:;
+- (void)testLogWithFormat:;
+- (BOOL)_loadFrameworksIfNeeded:;
+- (void)logBanner:;
+- (long long)runTestsInBundleAtPath:;
+- (id)pathToPluginBundle:;
+- (id)runTestsInBundleNamed:error:;
+- (id)descriptionFromResult:;
+- (id)failedTests;
+- (id)bundleLoader;
+- (id)frameworkLoader;
+@end

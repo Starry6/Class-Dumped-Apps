@@ -1,0 +1,30 @@
+@interface FPAppLibraryCollectionDataSource : NSObject
+@property (nonatomic) BOOL hasMoreIncoming;
+@property (nonatomic) <FPCollectionDataSource> dataSource;
+@property (nonatomic) NSMutableDictionary containerItemIDToAppLibraryItemIDMap;
+@property (nonatomic) NSFileCoordinator fileCoordinator;
+@property (nonatomic) Q lastForcedUpdate;
+@property (nonatomic) <FPCollectionDataSourceDelegate> delegate;
+- (void)setDataSource:;
+- (void)start;
+- (void)setDelegate:;
+- (id)initWithSettings:;
+- (id)dataSource;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)fileCoordinator;
+- (id)dispatchGroup;
+- (void)invalidate;
+- (void)setFileCoordinator:;
+- (void)dataSource:replaceContentsWithItems:hasMoreChanges:;
+- (void)dataSource:receivedUpdatedItems:deletedItems:hasMoreChanges:;
+- (void)dataSource:wasInvalidatedWithError:;
+- (BOOL)dataSourceShouldAlwaysReplaceContents:;
+- (unsigned long long)lastForcedUpdate;
+- (void)enumerationMightHaveResumed;
+- (BOOL)hasMoreIncoming;
+- (id)extensionDataSource;
+- (void)setHasMoreIncoming:;
+- (id)containerItemIDToAppLibraryItemIDMap;
+- (void)setContainerItemIDToAppLibraryItemIDMap:;
+@end

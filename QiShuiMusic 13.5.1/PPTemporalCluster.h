@@ -1,0 +1,30 @@
+@interface PPTemporalCluster : NSObject
+@property (nonatomic) NSDate startDate;
+@property (nonatomic) NSDate endDate;
+@property (nonatomic) double score;
+@property (nonatomic) PPEvent event;
+@property (nonatomic) NSArray topics;
+@property (nonatomic) NSArray entities;
+@property (nonatomic) NSArray locations;
+@property (nonatomic) NSArray contacts;
+@property (nonatomic) NSArray contactHandles;
+@property (nonatomic) NSArray mediaItems;
+- (id)startDate;
+- (id)locations;
+- (id)event;
+- (double)score;
+- (id)topics;
+- (id)contacts;
+- (id)initWithCoder:;
+- (id)entities;
+- (void)encodeWithCoder:;
+- (id)contactHandles;
+- (id)endDate;
+- (void).cxx_destruct;
+- (id)description;
+- (id)longDescription;
+- (id)initWithEvent:startDate:endDate:score:topics:entities:locations:contacts:contactHandles:mediaItems:;
+- (id)descriptionDateFormatter;
+- (id)mediaItems;
++ (BOOL)supportsSecureCoding;
+@end

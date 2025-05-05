@@ -1,0 +1,31 @@
+@interface MNSoundEffectResourceController : NSObject
+@property (nonatomic) AVAudioPlayer approach;
+@property (nonatomic) AVAudioPlayer leftTurn;
+@property (nonatomic) AVAudioPlayer rightTurn;
+@property (nonatomic) <MNSoundEffectControllerDelegate> delegate;
+@property (nonatomic) BOOL playing;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (void)setDelegate:;
+- (void)stop;
+- (id)delegate;
+- (void).cxx_destruct;
+- (BOOL)playing;
+- (void)audioPlayerDidFinishPlaying:successfully:;
+- (void)audioPlayerDecodeErrorDidOccur:error:;
+- (void)_audioSessionInterruption:;
+- (void)_mediaSessionServicesWereLost:;
+- (void)_mediaSessionServicesWereReset:;
+- (void)_registerForObservation;
+- (id)approach;
+- (id)leftTurn;
+- (id)rightTurn;
+- (BOOL)playSound:andReport:;
+- (id)_playerForFileName:andExtension:;
+- (void)setApproach:;
+- (void)setLeftTurn:;
+- (void)setRightTurn:;
+@end

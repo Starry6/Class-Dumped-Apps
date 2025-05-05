@@ -1,0 +1,32 @@
+@interface IESIMBaseApiModel : MTLModel
+@property (nonatomic) NSString requestID;
+@property (nonatomic) NSNumber statusCode;
+@property (nonatomic) NSNumber timestamp;
+@property (nonatomic) NSString statusMsg;
+@property (nonatomic) NSDictionary logPassback;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)awe_validateValue:forKey:error:;
+- (void)setLogPassback:;
+- (void)_mergeAllPropertyKeysWithLogPassback:;
+- (void)_mergeAllPropertyKeysWithRequestId:;
+- (void)_mergeAllPropertyKeysWithRequestId:logPassback:;
+- (BOOL)awe_validate:;
+- (id)logPassback;
+- (void)mergeAllPropertyKeysWithLogPassback;
+- (void)mergeAllPropertyKeysWithRequestId;
+- (void)mergeAllPropertyKeysWithRequestIdAndLogPassback;
+- (void)setStatusMsg:;
+- (id)statusMsg;
+- (void)setStatusCode:;
+- (id)statusCode;
+- (void)setTimestamp:;
+- (id)requestID;
+- (void).cxx_destruct;
+- (id)timestamp;
+- (void)setRequestID:;
++ (void)_aweLazyRegisterLoad;
++ (id)JSONKeyPathsByPropertyKey;
+@end

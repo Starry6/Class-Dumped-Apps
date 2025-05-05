@@ -1,0 +1,31 @@
+@interface DAPriorityManager : NSObject
+@property (nonatomic) NSMapTable clientsToPriorityRequests;
+@property (nonatomic) RBSProcessMonitor processMonitor;
+@property (nonatomic) NSMutableDictionary cachedAppState;
+@property (nonatomic) q foregroundDataclasses;
+@property (nonatomic) NSInteger currentPriority;
+- (id)processMonitor;
+- (id)init;
+- (void)dealloc;
+- (void)requestPriority:forClient:dataclasses:;
+- (void)setupProcessStateMonitor;
+- (void)_setNewPriority;
+- (void)setForegroundDataclasses:;
+- (void)setProcessMonitor:;
+- (void)setCachedAppState:;
+- (void)setClientsToPriorityRequests:;
+- (void)appWithBundleID:isNowRunningAndVisible:;
+- (int)_recalculatePriority;
+- (id)clientsToPriorityRequests;
+- (id)stateString;
+- (void)_updateForegroundDataclasses;
+- (void).cxx_destruct;
+- (void)_setForegroundDataclasses:;
+- (void)bumpDataclassesToUIPriority:;
+- (id)appIDsToDataclasses;
+- (id)cachedAppState;
+- (int)currentPriority;
+- (long long)foregroundDataclasses;
++ (void)vendPriorityManagers;
++ (id)sharedManager;
+@end

@@ -1,0 +1,31 @@
+@interface RPTDirectionalCrownTestParameters : NSObject
+@property (nonatomic) @? composerBlock;
+@property (nonatomic) NSString testName;
+@property (nonatomic) {CGSize=dd} scrollingSize;
+@property (nonatomic) q direction;
+@property (nonatomic) double screenSpaceMultiplier;
+@property (nonatomic) double rotationDuration;
+@property (nonatomic) @? completionHandler;
+@property (nonatomic) BOOL managesTestStartAndEnd;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setTestName:;
+- (long long)direction;
+- (id)composerBlock;
+- (void)setDirection:;
+- (void)prepareWithComposer:;
+- (id)testName;
+- (void)setCompletionHandler:;
+- (void).cxx_destruct;
+- (id)initWithTestName:scrollView:completionHandler:;
+- (id)completionHandler;
+- (id)initWithTestName:scrollingSize:screenSpaceMultiplier:rotationDuration:direction:completionHandler:;
+- (id)scrollingSize;
+- (void)setScrollingSize:;
+- (double)screenSpaceMultiplier;
+- (void)setScreenSpaceMultiplier:;
+- (double)rotationDuration;
+- (void)setRotationDuration:;
+@end

@@ -1,0 +1,35 @@
+@interface CNFutureTask : NSObject
+@property (nonatomic) BOOL finished;
+@property (nonatomic) BOOL cancelled;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)errorOnlyCompletionHandlerAdapter;
+- (id)result:;
+- (void)didCancel;
+- (id)recover:;
+- (void)_flushCompletionBlocks;
+- (id)completionHandlerAdapter;
+- (id)initWithTask:;
+- (id)init;
+- (BOOL)cancel;
+- (BOOL)isCancelled;
+- (id)futureResult;
+- (BOOL)finishWithResult:;
+- (BOOL)nts_isFinished;
+- (id)boolErrorCompletionHandlerAdapter;
+- (BOOL)run;
+- (void)addFailureBlock:scheduler:;
+- (void)addFailureBlock:;
+- (BOOL)isFinished;
+- (void)addSuccessBlock:;
+- (void).cxx_destruct;
+- (BOOL)finishWithError:;
+- (id)completionHandlerAdapterWithDefaultValue:;
+- (void)addSuccessBlock:scheduler:;
+- (id)resultBeforeDate:error:;
+- (id)resultWithTimeout:error:;
+- (id)flatMap:;
+- (BOOL)finishWithResult:error:;
+@end

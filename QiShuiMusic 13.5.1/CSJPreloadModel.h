@@ -1,0 +1,38 @@
+@interface CSJPreloadModel : CSJBasicModel
+@property (nonatomic) NSString ak;
+@property (nonatomic) NSString channel;
+@property (nonatomic) q preload_type;
+@property (nonatomic) q preload_behavior;
+@property (nonatomic) BOOL preload_doc;
+@property (nonatomic) BOOL disableHTMLIntercept;
+@property (nonatomic) BOOL preconnect;
+@property (nonatomic) q preload_cache_conf;
+@property (nonatomic) BOOL preload_request;
+@property (nonatomic) NSArray prefetchDNS;
+@property (nonatomic) NSDictionary landing_page_preload_config;
+- (BOOL)preload_request;
+- (void)setPrefetchDNS:;
+- (void)setPreload_doc:;
+- (void)setLanding_page_preload_config:;
+- (id)ak;
+- (BOOL)canPreloadHTML;
+- (BOOL)disableHTMLIntercept;
+- (id)landing_page_preload_config;
+- (id)prefetchDNS;
+- (long long)preload_behavior;
+- (long long)preload_cache_conf;
+- (BOOL)preload_doc;
+- (long long)preload_type;
+- (void)setAk:;
+- (void)setDisableHTMLIntercept:;
+- (void)setPreconnect:;
+- (void)setPreload_behavior:;
+- (void)setPreload_cache_conf:;
+- (void)setPreload_request:;
+- (void)setPreload_type:;
+- (void)setChannel:;
+- (id)channel;
+- (void).cxx_destruct;
+- (BOOL)preconnect;
++ (id)fromDictionary:;
+@end

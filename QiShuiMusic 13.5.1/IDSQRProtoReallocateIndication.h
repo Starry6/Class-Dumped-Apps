@@ -1,0 +1,35 @@
+@interface IDSQRProtoReallocateIndication : PBCodable
+@property (nonatomic) NSData reallocateToken;
+@property (nonatomic) NSData sessionId;
+@property (nonatomic) NSString clientAddress;
+@property (nonatomic) NSString serverAddress;
+@property (nonatomic) BOOL hasServerBlob;
+@property (nonatomic) NSData serverBlob;
+@property (nonatomic) BOOL hasTxnId;
+@property (nonatomic) Q txnId;
+- (void)setSessionId:;
+- (id)sessionId;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)serverAddress;
+- (BOOL)hasServerBlob;
+- (void)setTxnId:;
+- (void)setHasTxnId:;
+- (BOOL)hasTxnId;
+- (id)reallocateToken;
+- (void)setReallocateToken:;
+- (id)clientAddress;
+- (void)setClientAddress:;
+- (void)setServerAddress:;
+- (id)serverBlob;
+- (void)setServerBlob:;
+- (unsigned long long)txnId;
+@end

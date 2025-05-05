@@ -1,0 +1,37 @@
+@interface IESSaaSTIMOStrangerConversationDataSource : NSObject
+@property (nonatomic) <IESSaaSTIMStrangerConversationFetcherProtocol> fetcher;
+@property (nonatomic) <IESSaaSTIMOStrangerConversationDataSourceDelegate> internalDelegate;
+@property (nonatomic) NSArray currentConversations;
+@property (nonatomic) BOOL hasMore;
+@property (nonatomic) Q unreadCount;
+@property (nonatomic) <IESSaaSTIMOStrangerConversationDataSourceDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)deleteAllConversationWithCompletion:;
+- (void)deleteConversation:completion:;
+- (void)deleteMessage:inConversation:completion:;
+- (void)fetchMessagesInConversation:completion:;
+- (void)fetchNextPageWithBizInfo:completion:;
+- (void)fetchNextPageWithCompletion:;
+- (id)initWithCountPerPage:;
+- (id)initWithInbox:;
+- (id)initWithInbox:countPerPage:;
+- (void)markAllConversationReadWithCompletion:;
+- (void)markConversationAsRead:completion:;
+- (void)markConversationAsReadWithShortID:completion:;
+- (void)strangerConversationFetcherDidUpdate:updateConversationIdentifiers:reason:;
+- (unsigned long long)unreadCount;
+- (id)init;
+- (id)fetcher;
+- (void)setDelegate:;
+- (id)internalDelegate;
+- (void)setInternalDelegate:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (BOOL)hasMore;
+- (id)currentConversations;
+- (int)inbox;
+- (void)setFetcher:;
+@end

@@ -1,0 +1,32 @@
+@interface NPNode : NSObject
+@property (nonatomic) NSDictionary IPMapItem;
+@property (nonatomic) NSString host;
+@property (nonatomic) NSArray IPs;
+@property (nonatomic) NSDictionary schedulingInfo;
+@property (nonatomic) NSArray optimizedNodeIPs;
+@property (nonatomic) NSMutableSet connectedIPs;
+@property (nonatomic) NSDictionary nodeInfo;
+@property (nonatomic) NSOperation operation;
+@property (nonatomic) BOOL shouldUseHTTPDNS;
+- (id)IPs;
+- (void)setIPs:;
+- (id)IPMapItem;
+- (id)connectedIPs;
+- (id)initWithHost:IPs:schedulingInfo:;
+- (id)nodeInfo;
+- (id)optimizedNodeIPs;
+- (int)preConnect:;
+- (id)randomIP;
+- (id)schedulingInfo;
+- (void)setConnectedIPs:;
+- (void)setOptimizedNodeIPs:;
+- (void)setSchedulingInfo:;
+- (BOOL)shouldUseHTTPDNS;
+- (void)updateWithIPs:schedulingInfo:;
+- (id)operation;
+- (id)host;
+- (void)setHost:;
+- (void).cxx_destruct;
+- (id)description;
++ (id)nodeWithHost:IPs:schedulingInfo:;
+@end

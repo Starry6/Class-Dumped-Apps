@@ -1,0 +1,25 @@
+@interface MPModelForYouRecommendationsMusicKitRequestOperation : MPStoreModelRequestOperation
+- (long long)types;
+- (id)itemProperties;
+- (id)sectionProperties;
+- (void).cxx_destruct;
+- (id)configurationForLoadingModelDataWithStoreURLBag:error:;
+- (void)produceResponseWithLoadedOutput:completion:;
+- (id)_recommendationGroupBuilder;
+- (id)_recommendationGroupBuilderWithFlatSectionedItems:;
+- (id)_produceResultsWithItemsArray:;
+- (id)_produceResultsWithRecommendationsArray:recentlyPlayedArray:;
+- (id)_responseWithResults:personalizationResponse:;
+- (id)_personalizeRecommendationGroup:flatPersonalizedSectionedItems:;
+- (id)queryItemsWithStoreURLBag:;
+- (id)recommendationsQueryItemsWithStoreURLBag:;
+- (id)recommendationsURLWithStoreURLBag:;
+- (id)recentlyPlayedURLWithStoreURLBag:;
+- (BOOL)isOnboardingRequired:;
+- (BOOL)shouldRequestSocialAndFriendsMixWithValues;
+- (BOOL)shouldRequestVacTokens;
+- (long long)displayFilterKinds;
+- (long long)subscriptionStatusType;
+- (id)typesArrayWithTypes:;
+- (id)displayFilterKindsValueForOptions:;
+@end

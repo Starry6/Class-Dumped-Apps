@@ -1,0 +1,30 @@
+@interface TIKeyboardSecureCandidateLayoutTraits : NSObject
+@property (nonatomic) BOOL forceSingleLineLayout;
+@property (nonatomic) I headerInliningBehavior;
+@property (nonatomic) TIKeyboardSecureCandidateTextTraits headerTraitsInOnlyLine;
+@property (nonatomic) TIKeyboardSecureCandidateTextTraits headerTraitsInFirstLine;
+@property (nonatomic) TIKeyboardSecureCandidateTextTraits inputTraitsInOnlyLine;
+@property (nonatomic) TIKeyboardSecureCandidateTextTraits inputTraitsInFirstAndSecondLines;
+@property (nonatomic) TIKeyboardSecureCandidateTextTraits inputTraitsInSecondLine;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)headerTraitsInOnlyLine;
+- (id)headerTraitsInFirstLine;
+- (id)inputTraitsInOnlyLine;
+- (id)inputTraitsInFirstAndSecondLines;
+- (id)inputTraitsInSecondLine;
+- (BOOL)forceSingleLineLayout;
+- (void)setForceSingleLineLayout:;
+- (unsigned int)headerInliningBehavior;
+- (void)setHeaderInliningBehavior:;
+- (void)setHeaderTraitsInOnlyLine:;
+- (void)setHeaderTraitsInFirstLine:;
+- (void)setInputTraitsInOnlyLine:;
+- (void)setInputTraitsInFirstAndSecondLines:;
+- (void)setInputTraitsInSecondLine:;
++ (BOOL)supportsSecureCoding;
+@end

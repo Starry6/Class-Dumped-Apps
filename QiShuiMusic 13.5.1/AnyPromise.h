@@ -1,0 +1,31 @@
+@interface AnyPromise : NSObject
+@property (nonatomic) NSString description;
+@property (nonatomic) @ value;
+@property (nonatomic) BOOL pending;
+@property (nonatomic) BOOL fulfilled;
+@property (nonatomic) BOOL rejected;
+- (id)__d;
+- (void)__pipe:;
+- (id)catchOn;
+- (id)catchInBackground;
+- (id)ensure;
+- (id)ensureOn;
+- (id)initWith__D:;
+- (id)thenInBackground;
+- (id)then;
+- (id)initWithResolver:;
+- (id)wait;
+- (void).cxx_destruct;
+- (id)catch;
+- (id)thenOn;
+- (id)description;
+- (id)value;
+- (BOOL)fulfilled;
+- (BOOL)pending;
+- (BOOL)rejected;
++ (id)promiseWithBooleanAdapterBlock:;
++ (id)promiseWithIntegerAdapterBlock:;
++ (id)promiseWithAdapterBlock:;
++ (id)promiseWithResolverBlock:;
++ (id)promiseWithValue:;
+@end

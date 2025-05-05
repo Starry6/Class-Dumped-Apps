@@ -1,0 +1,38 @@
+@interface IESLiveWebViewMonitor : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)p_handleInjectJSTimeMessage:;
+- (void)p_handleMonitorCalculateInitTime:;
+- (void)p_handleMonitorCoverMessage:;
+- (void)userContentController:didReceiveScriptMessage:;
++ (void)stopLiveMonitor;
++ (void)attemptStartWithClasses:fromRemoteSettingWithDefault:;
++ (void)bdhmx_startBDWebViewMonitorWithRemoteSetting;
++ (void)bdhmx_startWithClassNames:settingModel:;
++ (void)bdhmx_startWithClasses:;
++ (void)bdhmx_startWithClasses:defaultsettingDict:;
++ (void)bdhmx_startWithClasses:defaultsettingModel:;
++ (BOOL)checkUrlIsInAllowListWithUrl:;
++ (id)dicWithDefaultValue:;
++ (id)emptyScriptForWebView:;
++ (Class)getNodeClassWithWebView:;
++ (void)hookProgressWithClasses:settings:isLive:;
++ (void)hookWebViewMethodsWithClasses:settings:isLive:;
++ (id)hook_ORIGDic;
++ (void)installMonitorOnWKWebView:urlString:;
++ (id)monitorInfoScript:;
++ (void)p_startWithClasses:settings:isLive:;
++ (void)registerReportBlock:;
++ (void)setClass:sel:imp:;
++ (void)setStopUpdateBrowser:;
++ (void)setUpGeckoEnvWithAppId:appVersion:cacheRootDirectory:deviceId:;
++ (BOOL)startMonitorItem:classes:setting:;
++ (void)startMonitorWithClasses:setting:;
++ (void)startWithClassNames:settingModel:;
++ (void)startWithClasses:settingModel:;
++ (void)startWithClasses:settings:;
++ (id)sharedMonitor;
++ (void)startMonitor;
+@end

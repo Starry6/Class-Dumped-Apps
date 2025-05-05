@@ -1,0 +1,36 @@
+@interface BMPBPhotosPhotoViewEvent : PBCodable
+@property (nonatomic) NSMutableArray locations;
+@property (nonatomic) BOOL hasAbsoluteTimestamp;
+@property (nonatomic) double absoluteTimestamp;
+@property (nonatomic) BOOL hasUniqueId;
+@property (nonatomic) NSString uniqueId;
+@property (nonatomic) BOOL hasContentProtection;
+@property (nonatomic) NSString contentProtection;
+- (void)clearLocations;
+- (void)setAbsoluteTimestamp:;
+- (void)setLocations:;
+- (id)locations;
+- (id)uniqueId;
+- (void)setHasAbsoluteTimestamp:;
+- (BOOL)hasUniqueId;
+- (BOOL)hasAbsoluteTimestamp;
+- (void)setUniqueId:;
+- (void)writeTo:;
+- (double)absoluteTimestamp;
+- (unsigned long long)hash;
+- (void)addLocations:;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (id)contentProtection;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (unsigned long long)locationsCount;
+- (BOOL)hasContentProtection;
+- (void)setContentProtection:;
+- (id)locationsAtIndex:;
++ (Class)locationsType;
+@end

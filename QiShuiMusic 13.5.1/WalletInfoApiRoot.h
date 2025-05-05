@@ -1,0 +1,2 @@
+@interface WalletInfoApiRoot : GPBRootObject
+@end

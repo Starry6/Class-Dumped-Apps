@@ -1,0 +1,38 @@
+@interface PLDeviceConfiguration : NSObject
+@property (nonatomic) BOOL isRetina;
+@property (nonatomic) BOOL isPad;
+@property (nonatomic) BOOL isTV;
+@property (nonatomic) BOOL isWatch;
+@property (nonatomic) BOOL isMac;
+@property (nonatomic) BOOL supportsASTC;
+@property (nonatomic) BOOL isMigrationService;
+@property (nonatomic) double screenScale;
+@property (nonatomic) BOOL isRidingCrudSnow;
+@property (nonatomic) BOOL isRidingPowderSnow;
+@property (nonatomic) {CGSize=dd} logicalScreenSize;
+@property (nonatomic) BOOL shouldUseNanoThumbnailFormats;
+@property (nonatomic) Q logicalScreenPixelSize;
+- (BOOL)isPad;
+- (BOOL)shouldUseNanoThumbnailFormats;
+- (void)setSupportsASTC:;
+- (double)screenScale;
+- (BOOL)isMac;
+- (void)setIsRetina:;
+- (BOOL)isRetina;
+- (BOOL)isWatch;
+- (BOOL)isRidingCrudSnow;
+- (BOOL)isMigrationService;
+- (BOOL)supportsASTC;
+- (BOOL)isTV;
+- (id)initWithLogicalScreenSize:screenScale:deviceClass:isRidingCrudSnow:isRidingPowderSnow:supportsASTC:isMigrationService:;
+- (BOOL)isRidingPowderSnow;
+- (id)description;
+- (void)setIsMac:;
+- (void)setIsMigrationService:;
+- (void)setIsPad:;
+- (void)setIsWatch:;
+- (void)setIsTV:;
+- (id)logicalScreenSize;
+- (unsigned long long)logicalScreenPixelSize;
++ (id)defaultDeviceConfiguration;
+@end

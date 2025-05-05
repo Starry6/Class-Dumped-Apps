@@ -1,0 +1,31 @@
+@interface BDXLynxOnlyContext : BDXSubContext
+@property (nonatomic) AnnieLatchData latchData;
+@property (nonatomic) BOOL enableRenderMultiThreads;
+@property (nonatomic) BOOL enablePendingJsTask;
+@property (nonatomic) @ templateBundle;
+@property (nonatomic) @? beforeCreateLynxView;
+@property (nonatomic) @? lynxViewDidInit;
+@property (nonatomic) BOOL enableMarkReadOnly;
+@property (nonatomic) BOOL enablePreserveDataForProcessRender;
+@property (nonatomic) NSArray extraJSPaths;
+- (id)lynxViewDidInit;
+- (id)beforeCreateLynxView;
+- (BOOL)enableMarkReadOnly;
+- (BOOL)enablePendingJsTask;
+- (BOOL)enablePreserveDataForProcessRender;
+- (BOOL)enableRenderMultiThreads;
+- (id)extraJSPaths;
+- (id)latchData;
+- (void)mergeContext:shouldOverride:;
+- (void)setBeforeCreateLynxView:;
+- (void)setEnableMarkReadOnly:;
+- (void)setEnablePendingJsTask:;
+- (void)setEnablePreserveDataForProcessRender:;
+- (void)setEnableRenderMultiThreads:;
+- (void)setExtraJSPaths:;
+- (void)setLatchData:;
+- (void)setLynxViewDidInit:;
+- (void)setTemplateBundle:;
+- (id)templateBundle;
+- (void).cxx_destruct;
+@end

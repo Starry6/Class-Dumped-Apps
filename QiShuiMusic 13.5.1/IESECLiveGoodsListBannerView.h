@@ -1,0 +1,36 @@
+@interface IESECLiveGoodsListBannerView : UIView
+@property (nonatomic) UIImageView bgImageView;
+@property (nonatomic) UIView leftView;
+@property (nonatomic) UIView rightView;
+@property (nonatomic) UIView backupView;
+@property (nonatomic) IESECLiveGoodsListBannerInfoModel bannerModel;
+@property (nonatomic) <IESECLiveGoodsListBannerViewDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setBannerModel:;
+- (id)backupView;
+- (id)bannerModel;
+- (void)combinationBlockClickAction:;
+- (void)combinationBlockShowWith:;
+- (void)configViewShouldClose:;
+- (id)getCartAddDestinationView;
+- (void)p_clickBanner;
+- (void)p_delegateDidClickWithArea:combinationBlockModel:;
+- (void)p_doAction;
+- (void)p_genearateBackupRightIcon;
+- (id)p_textFont;
+- (void)setBackupView:;
+- (void)layoutSubviews;
+- (void)setDelegate:;
+- (id)initWithFrame:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)leftView;
+- (void)setLeftView:;
+- (id)rightView;
+- (void)setRightView:;
+- (void)setBgImageView:;
+- (id)bgImageView;
+@end

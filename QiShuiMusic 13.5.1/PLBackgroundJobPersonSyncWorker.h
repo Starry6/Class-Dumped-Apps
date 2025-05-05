@@ -1,0 +1,36 @@
+@interface PLBackgroundJobPersonSyncWorker : PLBackgroundJobWorker
+@property (nonatomic) NSPersistentHistoryToken cancelledWorkItem;
+@property (nonatomic) PLPhotoLibraryBundle testingSourceBundle;
+- (BOOL)isInterruptible;
+- (id)_lastPersonSyncTokenFromLibrary:;
+- (id)_faceCropUuidsFromLibrary:error:;
+- (BOOL)_shouldCancelCurrentWorkItem:;
+- (BOOL)_resetPersonSyncInTargetLibrary:error:;
+- (void)_deletePersonWithUuid:fromLibrary:;
+- (void)_processNextPersonInChangedObjectIDs:fromSourceLibrary:toDestLibrary:group:workItem:deletedUuids:errorHandler:;
+- (void)stopWorkingOnItem:;
+- (void)_setupPropertiesToIgnoreWithSourceLibrary:;
+- (BOOL)_systemPhotoLibraryChangedSinceLastRunWithSourceLibrary:targetLibrary:;
+- (void)_resetFacesProcessingForPerson:;
+- (id)_transactionIteratorSinceTokenIfValid:sourceLibrary:error:;
+- (BOOL)_syncFaceCropsFromLibrary:toLibrary:error:;
+- (id)_transactionIteratorSinceLastToken:sourceLibrary:error:;
+- (id)_lastPersonSyncSourceLibraryURLFromSourceLibrary:targetLibrary:;
+- (id)workItemsNeedingProcessingInLibrary:;
+- (void)performWorkOnItem:inLibrary:completion:;
+- (void)setCancelledWorkItem:;
+- (void)_syncPerson:toLibrary:completion:;
+- (void)_updateLastPersonSyncSourceLibraryURLWithSourceLibrary:targetLibrary:;
+- (void).cxx_destruct;
+- (void)_resetCancelledWorkItem;
+- (id)cancelledWorkItem;
+- (id)_sourcePhotoLibraryWithName:;
+- (id)_faceCropUuidsMissingFromList:inLibrary:error:;
+- (id)_anyPersistentHistoryTokenWithLibrary:;
+- (id)testingSourceBundle;
+- (void)_savePersonSyncToken:toLibrary:;
+- (void)setTestingSourceBundle:;
++ (BOOL)supportsWellKnownPhotoLibraryIdentifier:;
++ (BOOL)_isTokenInvalidError:;
++ (BOOL)usesMultipleLibrariesConcurrently;
+@end

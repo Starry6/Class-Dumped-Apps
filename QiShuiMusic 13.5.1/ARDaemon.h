@@ -1,0 +1,31 @@
+@interface ARDaemon : NSObject
+@property (nonatomic) ARDaemonServiceListener listener;
+@property (nonatomic) Q state;
+@property (nonatomic) ARServer server;
+@property (nonatomic) NSArray runningRemoteServices;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)shutdown;
+- (void)dealloc;
+- (id)server;
+- (id)listener;
+- (void)printInfo;
+- (void)startup;
+- (unsigned long long)state;
+- (void).cxx_destruct;
+- (id)_fullDescription;
+- (id)listenerEndPointForServiceNamed:;
+- (void)memoryPressureMonitor:didUpdateProcessMemoryPressureCondition:;
+- (void)memoryPressureMonitor:didUpdateSystemMemoryPressureCondition:;
+- (id)initWithSpawnTime:watchdogMonitor:;
+- (id)initWithSpawnTime:watchdogMonitor:anonymousListenerEnabled:graphScheduler:replayDelegate:;
+- (void)startWithServices:;
+- (id)runningRemoteServices;
++ (id)_fullDescription;
++ (id)localAnonymousListenerDaemon;
++ (id)createAnonymousListenerDaemon;
++ (id)createAnonymousListenerDaemonWithReplayURL:deterministic:replayDelegate:;
++ (id)_runningDaemons;
+@end

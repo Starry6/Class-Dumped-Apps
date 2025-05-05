@@ -1,0 +1,37 @@
+@interface UIPrintFinishingTemplatesOption : NSObject
+@property (nonatomic) UIPrintPanelViewController printPanelViewController;
+@property (nonatomic) UITableView finishingOptionsTableView;
+@property (nonatomic) NSMutableArray finishingTemplateNames;
+@property (nonatomic) UIPrintInfo printInfo;
+@property (nonatomic) q selectedTemplate;
+@property (nonatomic) UITableViewCell finishingTemplatesCell;
+@property (nonatomic) NSString summary;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)dealloc;
+- (void)observeValueForKeyPath:ofObject:change:context:;
+- (void)setSummary:;
+- (id)printInfo;
+- (id)summary;
+- (id)title;
+- (void)setPrintInfo:;
+- (void).cxx_destruct;
+- (id)printPanelViewController;
+- (void)setPrintPanelViewController:;
+- (id)itemList;
+- (id)selectedItem;
+- (BOOL)shouldShow;
+- (long long)listItemSelected:;
+- (void)updateFromPrintInfo;
+- (id)finishingOptionsTableView;
+- (void)setFinishingOptionsTableView:;
+- (id)initWithPrintInfo:printPanelViewController:finishingOptionsTableView:;
+- (id)finishingTemplateNames;
+- (void)setFinishingTemplateNames:;
+- (long long)selectedTemplate;
+- (void)setSelectedTemplate:;
+- (id)finishingTemplatesCell;
+- (void)setFinishingTemplatesCell:;
+@end

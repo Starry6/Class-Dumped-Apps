@@ -1,0 +1,32 @@
+@interface AWDCoreRoutineDeletionGroupStats : PBCodable
+@property (nonatomic) BOOL hasItemType;
+@property (nonatomic) I itemType;
+@property (nonatomic) BOOL hasOldestRecordAgeInDays;
+@property (nonatomic) I oldestRecordAgeInDays;
+@property (nonatomic) NSMutableArray records;
+- (id)records;
+- (void)setItemType:;
+- (void)dealloc;
+- (void)setRecords:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (BOOL)hasItemType;
+- (unsigned int)itemType;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (void)setHasItemType:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)clearRecords;
+- (void)addRecords:;
+- (unsigned long long)recordsCount;
+- (id)recordsAtIndex:;
+- (void)setOldestRecordAgeInDays:;
+- (void)setHasOldestRecordAgeInDays:;
+- (BOOL)hasOldestRecordAgeInDays;
+- (unsigned int)oldestRecordAgeInDays;
++ (Class)recordsType;
+@end

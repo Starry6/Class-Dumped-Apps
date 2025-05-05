@@ -1,0 +1,38 @@
+@interface IESECGoodsServiceModel : MTLModel
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString content;
+@property (nonatomic) NSString detailURL;
+@property (nonatomic) NSString smallIconURL;
+@property (nonatomic) NSString iconURL;
+@property (nonatomic) q serviceType;
+@property (nonatomic) UIImage smallIconImage;
+@property (nonatomic) NSString subTitle;
+@property (nonatomic) NSString subtitleTextColor;
+@property (nonatomic) BOOL isShowOnTop;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setIsShowOnTop:;
+- (id)detailURL;
+- (BOOL)isShowOnTop;
+- (void)setDetailURL:;
+- (void)setSmallIconImage:;
+- (void)setSmallIconURL:;
+- (id)smallIconImage;
+- (id)smallIconURL;
+- (void)setIconURL:;
+- (id)content;
+- (void)setContent:;
+- (id)subtitleTextColor;
+- (long long)serviceType;
+- (void)setSubtitleTextColor:;
+- (void)setServiceType:;
+- (void)setTitle:;
+- (id)title;
+- (void).cxx_destruct;
+- (void)setSubTitle:;
+- (id)iconURL;
+- (id)subTitle;
++ (id)JSONKeyPathsByPropertyKey;
+@end

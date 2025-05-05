@@ -1,0 +1,2 @@
+@interface FigCaptionLayerPrivate : NSObject
+@end

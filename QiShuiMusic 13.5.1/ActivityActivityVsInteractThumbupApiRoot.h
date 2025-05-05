@@ -1,0 +1,2 @@
+@interface ActivityActivityVsInteractThumbupApiRoot : GPBRootObject
+@end

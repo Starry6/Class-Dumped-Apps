@@ -1,0 +1,31 @@
+@interface DCMarkupActivity : UIActivity
+@property (nonatomic) UIView fromView;
+@property (nonatomic) UIViewController presentingViewController;
+@property (nonatomic) ICDocCamDocumentInfo documentInfo;
+@property (nonatomic) ICDocCamImageCache imageCache;
+@property (nonatomic) @? frameBlock;
+@property (nonatomic) @? completionBlock;
+@property (nonatomic) Q inkStyle;
+- (id)activityTitle;
+- (id)presentingViewController;
+- (id)activityType;
+- (id)imageCache;
+- (void)setPresentingViewController:;
+- (void)setCompletionBlock:;
+- (id)fromView;
+- (void)setDocumentInfo:;
+- (void)setImageCache:;
+- (void).cxx_destruct;
+- (void)setFromView:;
+- (id)completionBlock;
+- (id)documentInfo;
+- (id)activityImage;
+- (BOOL)canPerformWithActivityItems:;
+- (void)performActivity;
+- (void)prepareWithActivityItems:;
+- (id)initFromView:presentingViewController:frameBlock:completionBlock:;
+- (unsigned long long)inkStyle;
+- (void)setInkStyle:;
+- (id)frameBlock;
+- (void)setFrameBlock:;
+@end

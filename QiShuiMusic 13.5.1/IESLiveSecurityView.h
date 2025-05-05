@@ -1,0 +1,30 @@
+@interface IESLiveSecurityView : UIView
+@property (nonatomic) UITextField textField;
+@property (nonatomic) UIView canvasView;
+@property (nonatomic) BOOL secureContent;
+- (BOOL)isSecureContent;
+- (void)setSecureContent:;
+- (void)setupCanvasViewIfNeeded;
+- (void)setCenter:;
+- (void)setBackgroundColor:;
+- (void)willRemoveSubview:;
+- (void)setFrame:;
+- (void)insertSubview:atIndex:;
+- (id)textField;
+- (void)setAlpha:;
+- (void)setTextField:;
+- (void)insertSubview:aboveSubview:;
+- (id)initWithFrame:;
+- (void)setUserInteractionEnabled:;
+- (void)insertSubview:belowSubview:;
+- (void)setBounds:;
+- (void)addSubview:;
+- (void).cxx_destruct;
+- (void)setHidden:;
+- (void)sendSubviewToBack:;
+- (id)canvasView;
+- (void)bringSubviewToFront:;
+- (void)exchangeSubviewAtIndex:withSubviewAtIndex:;
+- (void)setCanvasView:;
++ (BOOL)isSupportSecureContent;
+@end

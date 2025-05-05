@@ -1,0 +1,35 @@
+@interface ABUBiddingWinner : NSObject
+@property (nonatomic) NSString name;
+@property (nonatomic) NSString slotId;
+@property (nonatomic) NSString appId;
+@property (nonatomic) NSString winCallback;
+@property (nonatomic) NSString failCallback;
+@property (nonatomic) NSString adm;
+@property (nonatomic) NSString price;
+@property (nonatomic) NSString loadPrice;
+@property (nonatomic) q reqBiddingType;
+@property (nonatomic) NSString aid;
+@property (nonatomic) NSString cid;
+@property (nonatomic) NSString adExtra;
+@property (nonatomic) @ extraData;
+@property (nonatomic) NSNumber pricingType;
+- (void)setPricingType:;
+- (id)adExtra;
+- (id)failCallback;
+- (id)loadPrice;
+- (BOOL)matchingMediaSlotConfig:;
+- (id)pricingType;
+- (long long)reqBiddingType;
+- (void)updateClientLoadPrice:;
+- (id)winCallback;
+- (id)slotId;
+- (id)appId;
+- (id)cid;
+- (id)initWithDict:;
+- (void).cxx_destruct;
+- (id)name;
+- (id)price;
+- (id)extraData;
+- (id)aid;
+- (id)adm;
+@end

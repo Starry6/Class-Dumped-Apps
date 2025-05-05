@@ -1,0 +1,36 @@
+@interface VCInteractionDonation : NSObject
+@property (nonatomic) INInteraction interaction;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) NSDate date;
+@property (nonatomic) NSString sourceAppIdentifier;
+@property (nonatomic) NSString sourceAppIdentifierForDisplay;
+@property (nonatomic) NSString sourceAppIdentifierForLaunching;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString subtitle;
+@property (nonatomic) NSString fullDescription;
+@property (nonatomic) NSString suggestedPhrase;
+@property (nonatomic) @ uniqueProperty;
+@property (nonatomic) INShortcut shortcut;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)fullDescription;
+- (id)interaction;
+- (id)identifier;
+- (unsigned long long)hash;
+- (id)date;
+- (id)title;
+- (void).cxx_destruct;
+- (id)initWithEvent:;
+- (id)subtitle;
+- (id)shortcut;
+- (BOOL)isEqual:;
+- (id)sourceAppIdentifier;
+- (id)sourceAppIdentifierForDisplay;
+- (id)sourceAppIdentifierForLaunching;
+- (id)suggestedPhrase;
+- (id)uniqueProperty;
+- (id)initWithIdentifier:sourceAppIdentifier:interaction:;
++ (id)timestampDateFormatter;
+@end

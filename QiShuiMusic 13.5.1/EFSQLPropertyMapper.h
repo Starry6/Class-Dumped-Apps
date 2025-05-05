@@ -1,0 +1,30 @@
+@interface EFSQLPropertyMapper : NSObject
+@property (nonatomic) NSMutableDictionary lookupValues;
+- (id)init;
+- (void)registerColumnName:table:lookupKeys:forClass:property:;
+- (void)registerColumn:forClass:property:lookupKeys:;
+- (id)qualifiedColumnNamesForClass:property:availableTables:;
+- (id)columnForClass:property:;
+- (void)registerColumn:forProtocol:property:lookupKeys:;
+- (id)columnNameForClass:property:;
+- (id)valueForLookupKey:class:property:;
+- (void)setLookupValues:;
+- (id)merge:;
+- (id)columnForLookupKey:value:;
+- (id)_findAllProtocolsOfClass:withProperty:;
+- (id)columnNameForProtocol:property:;
+- (id)columnForProtocol:property:;
+- (id)_qualifiedColumnExpressionsForColumn:availableTables:replaceNULL:;
+- (void).cxx_destruct;
+- (id)columnNameForLookupKey:value:;
+- (void)registerColumnNames:table:forClass:property:;
+- (id)qualifiedColumnExpressionForLookupKey:value:availableTables:;
+- (void)registerColumnName:table:lookupKeys:;
+- (void)_registerQualifiedColumns:lookupKeys:forClass:property:;
+- (id)qualifiedColumnExpressionsForClass:property:availableTables:;
+- (BOOL)hasLookupKey:class:property:;
+- (id)valueForLookupKey:protocol:property:;
+- (id)lookupValues;
+- (id)qualifiedColumnExpressionForClass:property:availableTables:;
++ (id)emptyPropertyMapper;
+@end

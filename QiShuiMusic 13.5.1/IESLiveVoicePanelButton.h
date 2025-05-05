@@ -1,0 +1,37 @@
+@interface IESLiveVoicePanelButton : UIView
+@property (nonatomic) UIImageView bgView;
+@property (nonatomic) UIImageView extraBgView;
+@property (nonatomic) UIImageView iconView;
+@property (nonatomic) IESLiveVoicePanelButtonConfig config;
+@property (nonatomic) Q status;
+@property (nonatomic) @? deactiveBlock;
+@property (nonatomic) @? activeBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setActiveBlock:;
+- (void)setExtraBgView:;
+- (id)activeBlock;
+- (void)activeWithAnimation:;
+- (void)animationOpacityWithView:active:;
+- (void)animationScaleAndColorWithView:forKey:active:;
+- (id)deactiveBlock;
+- (void)deactiveWithAnimation:;
+- (id)extraBgView;
+- (void)setDeactiveBlock:;
+- (void)tryInvokeActiveBlock;
+- (void)tryInvokeDeactiveBlock;
+- (void)setStatus:;
+- (id)iconView;
+- (void)setIconView:;
+- (void)setConfig:;
+- (id)initWithConfig:;
+- (void)animationDidStop:finished:;
+- (void).cxx_destruct;
+- (unsigned long long)status;
+- (id)config;
+- (id)bgView;
+- (void)setBgView:;
+- (void)setupUI;
+@end

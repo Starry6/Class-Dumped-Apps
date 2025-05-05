@@ -1,0 +1,34 @@
+@interface ARDeviceOrientationData : NSObject
+@property (nonatomic) CMDeviceMotion deviceMotion;
+@property (nonatomic) double timestamp;
+@property (nonatomic) {?=ddddddddd} rotationMatrix;
+@property (nonatomic) {?=[4]} rotationMatrixENU;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (id)initWithDictionary:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)rotationMatrix;
+- (void)encodeWithCoder:;
+- (void)setTimestamp:;
+- (id)deviceMotion;
+- (void).cxx_destruct;
+- (double)timestamp;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setDeviceMotion:;
+- (id)encodeToMetadataWrapper;
+- (id)initWithMetadataWrapper:;
+- (void)appendToWriter:;
+- (id)encodeToDictionary;
+- (id)rotationMatrixENU;
+- (id)initWithTimestamp:rotationMatrix:;
+- (id)initWithMotionData:;
+- (void)setRotationMatrix:;
++ (BOOL)supportsSecureCoding;
++ (id)grabNextFromReader:timestamp:;
+@end

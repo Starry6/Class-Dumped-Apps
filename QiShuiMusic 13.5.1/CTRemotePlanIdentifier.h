@@ -1,0 +1,2 @@
+@interface CTRemotePlanIdentifier : CTPlanIdentifier
+@end

@@ -1,0 +1,30 @@
+@interface MDSearchQuery : NSObject
+@property (nonatomic) NSPredicate predicate;
+@property (nonatomic) Q status;
+@property (nonatomic) NSObject<OS_dispatch_queue> queue;
+@property (nonatomic) CSSearchQuery query;
+@property (nonatomic) NSString clientBundleID;
+@property (nonatomic) NSDictionary options;
+@property (nonatomic) <MDSearchQueryDelegate> delegate;
+- (void)setStatus:;
+- (void)cancel;
+- (void)start;
+- (void)setQuery:;
+- (void)setDelegate:;
+- (id)query;
+- (void)setClientBundleID:;
+- (id)clientBundleID;
+- (id)predicate;
+- (id)options;
+- (id)delegate;
+- (void)setPredicate:;
+- (void).cxx_destruct;
+- (void)_didFinishWithError:;
+- (unsigned long long)status;
+- (void)setQueue:;
+- (id)initWithQueryString:options:;
+- (id)queue;
+- (id)queryString;
+- (id)initWithPredicate:options:;
+- (void)_didReturnItems:;
+@end

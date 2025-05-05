@@ -1,0 +1,31 @@
+@interface GEONavigationServerPeer : GEONavdPeer
+@property (nonatomic) GEONavigationServer delegate;
+@property (nonatomic) BOOL hasEntitlement;
+@property (nonatomic) BOOL wantsRoutes;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)requestRoute;
+- (void)requestActiveRouteDetailsData;
+- (void)dealloc;
+- (void)requestPositionFromManeuver;
+- (void)requestStepNameInfo;
+- (BOOL)hasEntitlement;
+- (void)setDelegate:;
+- (void)requestPositionFromSign;
+- (void)requestStepIndex;
+- (void)requestGuidanceState;
+- (void)requestTransitSummary;
+- (void)requestPositionFromDestination;
+- (void)requestNavigationVoiceVolume;
+- (id)delegate;
+- (void)requestRideSelections;
+- (void)requestRouteSummary;
+- (void).cxx_destruct;
+- (void)requestETAUpdate;
+- (void)requestUpdates;
+- (void)setWantsRoutes:;
+- (void)setHasEntitlement:;
+- (BOOL)wantsRoutes;
+@end

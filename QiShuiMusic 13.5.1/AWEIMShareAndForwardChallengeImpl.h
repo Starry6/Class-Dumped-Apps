@@ -1,0 +1,23 @@
+@interface AWEIMShareAndForwardChallengeImpl : NSObject
+@property (nonatomic) AWEShareContext shareContext;
+@property (nonatomic) AWEIMMessage forwardMessage;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)clearBusinessModelFromIMSetting;
+- (id)businessModelFromIMSetting;
+- (id)challengeModel;
+- (void)configShareAlertTopView:withCoverImageView:contentLabel:;
+- (void)configShareBottomInputViewWithCoverImageView:;
+- (void)didSelectShareUser:inVC:;
+- (id)forwardMessage;
+- (id)messageTypeForShareTrack;
+- (void)saveBusinessModelToIMSetting;
+- (void)setForwardMessage:;
+- (void)setShareContext:;
+- (id)shareContext;
+- (id)shareMessage;
+- (void)willTransferToShareListVC:;
+- (void).cxx_destruct;
+@end

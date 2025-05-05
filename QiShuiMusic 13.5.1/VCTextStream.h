@@ -1,0 +1,33 @@
+@interface VCTextStream : VCMediaStream
+@property (nonatomic) <VCTextReceiverDelegate> receiveDelegate;
+@property (nonatomic) double lastReceivedRTPPacketTime;
+@property (nonatomic) double lastReceivedRTCPPacketTime;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (void)dealloc;
+- (id)supportedPayloads;
+- (void)sendCharacter:;
+- (void)sendText:;
+- (void)didReceiveText:;
+- (void)setReceiveDelegate:;
+- (id)receiveDelegate;
+- (void)didReceiveCharacter:;
+- (void)onCallIDChanged;
+- (void)setupTextTransmitter;
+- (BOOL)setupTextReceiverWithError:;
+- (BOOL)onConfigureStreamWithConfiguration:error:;
+- (void)onStartWithCompletionHandler:;
+- (void)onStopWithCompletionHandler:;
+- (void)onPauseWithCompletionHandler:;
+- (void)onResumeWithCompletionHandler:;
+- (void)onSendRTCPPacket;
+- (void)onRTPTimeout;
+- (void)onRTCPTimeout;
+- (double)lastReceivedRTPPacketTime;
+- (double)lastReceivedRTCPPacketTime;
+- (double)rtcpHeartbeatLeeway;
++ (void)terminateProcess:terminateSource:agent:;
+@end

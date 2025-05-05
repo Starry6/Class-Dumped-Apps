@@ -1,0 +1,31 @@
+@interface BmfAudioFrame : NSObject
+@property (nonatomic) ^v p;
+@property (nonatomic) BOOL own;
+- (int)nplanes;
+- (BOOL)own;
+- (void)setOwn:;
+- (void)copyProps:;
+- (id)init:layout:planer:dtype:;
+- (id)init:size:layout:planer:;
+- (id)initFromPtr:own:;
+- (int)nchannels;
+- (int)nsamples;
+- (id)plane:;
+- (BOOL)planer;
+- (void)privateAttach:option:;
+- (id)privateGet:;
+- (void)privateMerge:;
+- (void)dealloc;
+- (float)sampleRate;
+- (id)ptr;
+- (long long)pts;
+- (void)setSampleRate:;
+- (void)setTimeBase:;
+- (id)p;
+- (id)timeBase;
+- (id)planes;
+- (void)setP:;
+- (int)dtype;
+- (BOOL)defined;
+- (void)setPts:;
+@end

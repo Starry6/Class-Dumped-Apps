@@ -1,0 +1,2 @@
+@interface HTSLiveLinkMicHostModifyRoot : GPBRootObject
+@end

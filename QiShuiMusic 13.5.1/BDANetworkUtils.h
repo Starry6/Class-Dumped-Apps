@@ -1,0 +1,2 @@
+@interface BDANetworkUtils : NSObject
+@end

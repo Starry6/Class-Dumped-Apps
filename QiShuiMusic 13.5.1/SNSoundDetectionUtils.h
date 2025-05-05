@@ -1,0 +1,2 @@
+@interface SNSoundDetectionUtils : NSObject
+@end

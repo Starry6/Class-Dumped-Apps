@@ -1,0 +1,38 @@
+@interface IESECGoodsDetailDetailPropertyView : UIView
+@property (nonatomic) IESECGoodsDetailDetailTopInfoViewModel viewModel;
+@property (nonatomic) IESECGoodsDetailDetailTopInfoDataModel dataModel;
+@property (nonatomic) IESECGoodsDetailDetailTopInfoMetaModel metaModel;
+@property (nonatomic) UILabel topLabel;
+@property (nonatomic) IESECGoodsDetailDetailPropertySKUFlowView propertySKUFlowView;
+@property (nonatomic) IESECLongContentLabelView subProductLabel;
+@property (nonatomic) UIStackView propertyStackView;
+@property (nonatomic) IESECButton morePropertyButton;
+@property (nonatomic) BOOL hasSetupSubviews;
+- (id)subProductLabel;
+- (void)updateStackView;
+- (void)configWithViewModel:;
+- (void)didClickShowMoreProperty;
+- (BOOL)hasSetupSubviews;
+- (void)iesec_respondEvent:;
+- (id)metaModel;
+- (id)morePropertyButton;
+- (id)propertySKUFlowView;
+- (id)propertyStackView;
+- (void)setHasSetupSubviews:;
+- (void)setMetaModel:;
+- (void)setMorePropertyButton:;
+- (void)setPropertySKUFlowView:;
+- (void)setPropertyStackView:;
+- (void)setSubProductLabel:;
+- (void)setupSubviewsIfNeeded;
+- (id)viewModel;
+- (void)updateContent;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)setViewModel:;
+- (id)dataModel;
+- (void)setDataModel:;
+- (void)setupUI;
+- (id)topLabel;
+- (void)setTopLabel:;
+@end

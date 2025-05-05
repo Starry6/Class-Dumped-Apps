@@ -1,0 +1,33 @@
+@interface AWDITesterCertTestSubmission : PBCodable
+@property (nonatomic) BOOL hasTimestamp;
+@property (nonatomic) Q timestamp;
+@property (nonatomic) BOOL hasTestName;
+@property (nonatomic) NSString testName;
+@property (nonatomic) BOOL hasAccessoryName;
+@property (nonatomic) NSString accessoryName;
+@property (nonatomic) BOOL hasAccessoryType;
+@property (nonatomic) NSString accessoryType;
+- (id)accessoryName;
+- (void)setTestName:;
+- (void)dealloc;
+- (id)testName;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (id)accessoryType;
+- (void)copyTo:;
+- (void)setHasTimestamp:;
+- (void)mergeFrom:;
+- (BOOL)hasTimestamp;
+- (void)setAccessoryType:;
+- (void)setTimestamp:;
+- (BOOL)readFrom:;
+- (unsigned long long)timestamp;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasAccessoryName;
+- (void)setAccessoryName:;
+- (BOOL)hasTestName;
+- (BOOL)hasAccessoryType;
+@end

@@ -1,0 +1,35 @@
+@interface BDImageCompositedMemoryCache : NSObject
+@property (nonatomic) BOOL enableLRUFlag;
+@property (nonatomic) <BDMemoryCache> defaultCache;
+@property (nonatomic) <BDMemoryCache> animatedImageCache;
+@property (nonatomic) <BDMemoryCache> largeImageCache;
+@property (nonatomic) BDAnimatedImageMemoryCacheControl animatedImageMemoryCacheControl;
+@property (nonatomic) BDLargeImageMemoryCacheControl largeImageMemoryCacheControl;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)animatedImageMemoryCacheControl;
+- (id)largeImageCache;
+- (id)animatedImageCache;
+- (BOOL)enableLRUFlag;
+- (id)initWithEnableLRU:;
+- (id)largeImageMemoryCacheControl;
+- (void)setAnimatedImageCache:;
+- (void)setAnimatedImageMemoryCacheControl:;
+- (void)setEnableLRUFlag:;
+- (void)setLargeImageCache:;
+- (void)setLargeImageMemoryCacheControl:;
+- (void)setObject:forKey:cost:isAnimatedImage:;
+- (BOOL)containsObjectForKey:;
+- (void)setObject:forKey:;
+- (void)setConfig:;
+- (id)initWithConfig:;
+- (void)removeAllObjects;
+- (id)objectForKey:;
+- (void).cxx_destruct;
+- (void)removeObjectForKey:;
+- (void)setObject:forKey:cost:;
+- (id)defaultCache;
+- (void)setDefaultCache:;
+@end

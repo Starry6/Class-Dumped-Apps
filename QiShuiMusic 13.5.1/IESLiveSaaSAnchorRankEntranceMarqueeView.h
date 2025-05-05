@@ -1,0 +1,38 @@
+@interface IESLiveSaaSAnchorRankEntranceMarqueeView : UIView
+@property (nonatomic) double contentWidth;
+@property (nonatomic) double duration;
+@property (nonatomic) NSAttributedString content;
+@property (nonatomic) NSAttributedString scrollingContent;
+@property (nonatomic) @? cachedBlock;
+@property (nonatomic) RACDisposable afterMessageDispose;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) BOOL marqueeAnimating;
+- (void)setCachedBlock:;
+- (void)startTitleLabelMarqueeAnimation;
+- (id)afterMessageDispose;
+- (id)cachedBlock;
+- (void)cancelPrevAfterContentUpdate;
+- (void)delayUpdateTitleLabelUseAfterContent;
+- (void)fadeInOutTitleLabelText:completion:;
+- (BOOL)isMarqueeAnimating;
+- (id)scrollingContent;
+- (void)setAfterMessageDispose:;
+- (void)setMarqueeAnimating:;
+- (void)setScrollingContent:;
+- (BOOL)shouldMarquee;
+- (void)updateWithContent:scrollingContent:duration:;
+- (double)widthWithContent:;
+- (id)content;
+- (void)setupConstraints;
+- (void)setContent:;
+- (void)setTitleLabel:;
+- (id)intrinsicContentSize;
+- (void)setContentWidth:;
+- (double)contentWidth;
+- (void)setDuration:;
+- (id)initWithFrame:;
+- (void)startAnimation;
+- (void).cxx_destruct;
+- (double)duration;
+- (id)titleLabel;
+@end

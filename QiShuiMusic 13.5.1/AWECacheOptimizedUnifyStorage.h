@@ -1,0 +1,31 @@
+@interface AWECacheOptimizedUnifyStorage : NSObject
+@property (nonatomic) NSObject<OS_dispatch_semaphore> semaphore;
+@property (nonatomic) NSString path;
+@property (nonatomic) AWESafeMemoryMap tempMap;
+- (id)tempMap;
+- (void)checkpointIfNeeded:pages:;
+- (void)cleanDatabaseWithLock:;
+- (BOOL)createDatabaseWithRetryTimes:;
+- (void)ensureDatabase;
+- (id)objectForKey:domain:needCache:;
+- (void)removeAllObjectsWithError:;
+- (void)removeAllObjectsWithoutLockWithError:;
+- (void)removeObjectsInDomain:err:;
+- (void)setObject:forKey:domain:needCache:encodedData:type:err:;
+- (void)setObject:forKey:domain:needCache:err:;
+- (void)setTempMap:;
+- (void)setWalHook;
+- (void)setWalHookWithLock;
+- (id)path;
+- (void)dealloc;
+- (void)setPath:;
+- (void)setSemaphore:;
+- (void)unlock;
+- (void)lock;
+- (void).cxx_destruct;
+- (id)initWithPath:;
+- (id)semaphore;
+- (id).cxx_construct;
+- (void)cleanDatabase;
++ (void)deleteDB:err:;
+@end

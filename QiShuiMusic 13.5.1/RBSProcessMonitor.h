@@ -1,0 +1,38 @@
+@interface RBSProcessMonitor : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) RBSProcessMonitorConfiguration configuration;
+@property (nonatomic) Q events;
+@property (nonatomic) I serviceClass;
+@property (nonatomic) NSObject<OS_dispatch_queue> calloutQueue;
+@property (nonatomic) NSSet states;
+- (void)setServiceClass:;
+- (void)updateConfiguration:;
+- (id)states;
+- (unsigned int)serviceClass;
+- (void)setPredicates:;
+- (id)init;
+- (void)dealloc;
+- (void)setPreventLaunchUpdateHandle:;
+- (void)setStateDescriptor:;
+- (id)stateForIdentity:;
+- (void)setEvents:;
+- (id)configuration;
+- (id)calloutQueue;
+- (void)_handlePreventLaunchUpdate:;
+- (void)setUpdateHandler:;
+- (void).cxx_destruct;
+- (void)_handleProcessStateChange:;
+- (unsigned long long)events;
+- (id)description;
+- (void)_handleExitEvent:;
+- (void)invalidate;
+- (id)copyWithZone:;
++ (id)monitorWithConfiguration:;
++ (id)_monitorWithService:configuration:;
++ (id)monitorWithPredicate:updateHandler:;
++ (id)_monitorWithService:;
++ (id)monitor;
+@end

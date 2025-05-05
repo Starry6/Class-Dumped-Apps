@@ -1,0 +1,33 @@
+@interface MKSystemController : NSObject
+@property (nonatomic) <MKSystemControllerOpenURLDelegate> openURLDelegate;
+- (BOOL)reduceMotionEnabled;
+- (BOOL)isInternalInstall;
+- (double)screenScale;
+- (BOOL)_shouldUseLaunchServices;
+- (BOOL)shouldCaptureMapViewGestureAnalytics;
+- (BOOL)openURL:;
+- (BOOL)isPhone6PlusOrLarger;
+- (id)_defaultOpenURLOptions;
+- (void)placeDialRequest:completionHandler:;
+- (void)openURL:fromScene:completionHandler:;
+- (BOOL)supports3DMaps;
+- (void)openUserActivity:withApplicationRecord:requireOptionKeyPromptUnlockDevice:completionHandler:;
+- (void)setOpenURLDelegate:;
+- (id)openURLDelegate;
+- (BOOL)isWifiEnabled;
+- (BOOL)isDevicePluggedIn;
+- (BOOL)isHiDPI;
+- (void)openURL:bundleIdentifier:completionHandler:;
+- (id)screenSize;
+- (BOOL)supports3DImagery;
+- (int)userInterfaceIdiom;
+- (void).cxx_destruct;
+- (BOOL)supportsAlwaysOnCompass;
+- (BOOL)requiresRTT;
+- (BOOL)_isRunningInLockScreen;
+- (BOOL)overrideBlurStyle;
+- (BOOL)supportsPitchAPI;
+- (void)openURL:completionHandler:;
+- (BOOL)_isInSpotlight;
++ (id)sharedInstance;
+@end

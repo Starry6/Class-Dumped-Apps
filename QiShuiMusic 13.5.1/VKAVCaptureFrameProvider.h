@@ -1,0 +1,38 @@
+@interface VKAVCaptureFrameProvider : VKFrameProvider
+@property (nonatomic) {CGPoint=dd} interestPoint;
+@property (nonatomic) BOOL hasTorch;
+@property (nonatomic) BOOL torchOn;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) double minZoomFactor;
+@property (nonatomic) double maxZoomFactor;
+@property (nonatomic) double zoomFactor;
+- (void)capturePhoto;
+- (id)previewView;
+- (void)dealloc;
+- (void)setZoomFactor:;
+- (double)zoomFactor;
+- (void)observeValueForKeyPath:ofObject:change:context:;
+- (void)prepare;
+- (BOOL)isRunning;
+- (double)maxZoomFactor;
+- (BOOL)hasTorch;
+- (void)captureOutput:didOutputSampleBuffer:fromConnection:;
+- (void)captureOutput:didFinishProcessingPhoto:error:;
+- (void).cxx_destruct;
+- (id)initWithConfiguration:;
+- (void)setDelegate:queue:;
+- (void)stopRunning;
+- (void)startRunning;
+- (void)setRegionOfInterest:;
+- (double)minZoomFactor;
+- (void)didChangeBoundsForPreviewView:;
+- (void)didChangeInterfaceOrientationForPreviewView:;
+- (void)avCapture:cameraAccessGranted:;
+- (id)interestPoint;
+- (void)setInterestPoint:;
+- (void)setTorchOn:;
+- (BOOL)isTorchOn;
+@end

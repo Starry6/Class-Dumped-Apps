@@ -1,0 +1,2 @@
+@interface SNValidateModel : NSObject
+@end

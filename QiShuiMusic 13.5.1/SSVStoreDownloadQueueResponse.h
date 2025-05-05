@@ -1,0 +1,33 @@
+@interface SSVStoreDownloadQueueResponse : NSObject
+@property (nonatomic) NSOrderedSet downloads;
+@property (nonatomic) NSString storeCorrelationID;
+@property (nonatomic) NSError error;
+@property (nonatomic) NSData keybag;
+@property (nonatomic) NSArray rangesToLoad;
+@property (nonatomic) BOOL shouldCancelPurchaseBatch;
+@property (nonatomic) BOOL triggeredQueueCheck;
+@property (nonatomic) NSNumber userIdentifier;
+@property (nonatomic) NSString clientIdentifier;
+- (id)downloads;
+- (id)init;
+- (id)userIdentifier;
+- (void)setError:;
+- (id)error;
+- (void).cxx_destruct;
+- (void)setClientIdentifier:;
+- (id)clientIdentifier;
+- (id)storeCorrelationID;
+- (void)setStoreCorrelationID:;
+- (id)keybag;
+- (BOOL)shouldCancelPurchaseBatch;
+- (id)_initStoreDownloadQueueResponse;
+- (id)initWithDictionary:userIdentifier:;
+- (id)initWithDictionary:userIdentifier:preferredAssetFlavor:;
+- (id)initWithError:userIdentifier:;
+- (id)errorForItemIdentifier:;
+- (id)rangesToLoad;
+- (void)setShouldCancelPurchaseBatch:;
+- (void)setTriggeredQueueCheck:;
+- (BOOL)triggeredQueueCheck;
+- (id)_errorWithFailureType:customerMessage:;
+@end

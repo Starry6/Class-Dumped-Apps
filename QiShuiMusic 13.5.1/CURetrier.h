@@ -1,0 +1,30 @@
+@interface CURetrier : NSObject
+@property (nonatomic) @? actionHandler;
+@property (nonatomic) NSObject<OS_dispatch_queue> dispatchQueue;
+@property (nonatomic) double interval;
+@property (nonatomic) double leeway;
+@property (nonatomic) @? invalidationHandler;
+@property (nonatomic) double startTime;
+- (id)init;
+- (void)start;
+- (id)dispatchQueue;
+- (void)setStartTime:;
+- (void)setDispatchQueue:;
+- (void)succeeded;
+- (void)failedDirect;
+- (double)startTime;
+- (void)setActionHandler:;
+- (void)setLeeway:;
+- (id)actionHandler;
+- (void)setInterval:;
+- (void).cxx_destruct;
+- (id)invalidationHandler;
+- (void)setInvalidationHandler:;
+- (double)leeway;
+- (void)failed;
+- (void)invalidateDirect;
+- (void)startDirect;
+- (void)succeededDirect;
+- (void)invalidate;
+- (double)interval;
+@end

@@ -1,0 +1,35 @@
+@interface IESECGoodsDetailCommonEvent : NSObject
+@property (nonatomic) UIResponder sender;
+@property (nonatomic) Q eventType;
+@property (nonatomic) NSString componentUniqueID;
+@property (nonatomic) NSString componentEventUniqueID;
+@property (nonatomic) NSIndexPath indexPath;
+@property (nonatomic) @ userInfoContext;
+@property (nonatomic) NSMutableDictionary trackContext;
+@property (nonatomic) BOOL shouldRefreshView;
+@property (nonatomic) BOOL needCheckLogin;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)userInfoContext;
+- (id)componentEventUniqueID;
+- (id)componentUniqueID;
+- (BOOL)needCheckLogin;
+- (void)setComponentEventUniqueID:;
+- (void)setComponentUniqueID:;
+- (void)setNeedCheckLogin:;
+- (void)setShouldRefreshView:;
+- (void)setTrackContext:;
+- (void)setUserInfoContext:;
+- (BOOL)shouldRefreshView;
+- (id)trackContext;
+- (id)sender;
+- (void)setIndexPath:;
+- (unsigned long long)eventType;
+- (void)setEventType:;
+- (void).cxx_destruct;
+- (id)indexPath;
+- (void)setSender:;
++ (id)commonEventWithComponentUID:componentEventUID:eventType:trackContext:userInfoContext:shouldRefreshView:;
+@end

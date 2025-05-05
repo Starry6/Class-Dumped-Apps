@@ -1,0 +1,34 @@
+@interface UICreatePDFActivity : UIPrintActivity
+@property (nonatomic) QLPreviewController previewController;
+@property (nonatomic) UICreatePDFActivityItem previewURLItem;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)_cleanup;
+- (id)activityTitle;
+- (void)previewControllerDidDismiss:;
+- (id)activityType;
+- (long long)numberOfPreviewItemsInPreviewController:;
+- (id)previewController:previewItemAtIndex:;
+- (void).cxx_destruct;
+- (void)documentPicker:didPickDocumentsAtURLs:;
+- (id)activityViewController;
+- (id)_systemImageName;
+- (id)previewController;
+- (void)setPreviewController:;
+- (BOOL)canPerformWithActivityItems:;
+- (void)performActivity;
+- (id)excludedActivityTypesForPreviewController:;
+- (void)prepareWithActivityItems:;
+- (id)_embeddedActivityViewController;
+- (void)_setupQuickLookWithURL:activityItems:isPreview:;
+- (BOOL)previewController:canEditItem:;
+- (BOOL)previewController:shouldSaveEditedItem:;
+- (BOOL)shouldAppendDefaultDismissActionsForPreviewController:;
+- (BOOL)shouldPresentDismissActionsWithoutEditedItemsForPreviewController:;
+- (id)dismissActionsForPreviewController:;
+- (id)previewURLItem;
+- (void)setPreviewURLItem:;
++ (unsigned long long)_xpcAttributes;
+@end

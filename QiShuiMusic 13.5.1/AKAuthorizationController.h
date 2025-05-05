@@ -1,0 +1,32 @@
+@interface AKAuthorizationController : NSObject
+@property (nonatomic) <AKAuthorizationUIProvider> uiProvider;
+- (id)uiProvider;
+- (id)init;
+- (void)dealloc;
+- (void)getCredentialStateForClientID:completion:;
+- (id)primaryApplicationInformationForWebServiceWithInfo:error:;
+- (BOOL)_shouldOverrideProxiedBundleIDForContext:;
+- (id)_appleIDAuthorizationURLs;
+- (void)performAuthorizationWithContext:withUserProvidedInformation:completion:;
+- (void)storeAuthorization:forProxiedRequest:completion:;
+- (void)setUiProvider:;
+- (void)cancelAuthorizationWithContext:completion:;
+- (void)fetchAppleIDAuthorizeHTMLResponseTemplateWithCompletion:;
+- (void)beginAuthorizationWithContext:completion:;
+- (void)revokeAuthorizationWithContext:completion:;
+- (void)continueFetchingIconForRequestContext:completion:;
+- (void)establishConnectionWithNotificationHandlerEndpoint:completion:;
+- (void).cxx_destruct;
+- (void)establishConnectionWithStateBroadcastHandlerEndpoint:completion:;
+- (void)getCredentialStateForRequest:completion:;
+- (void)continueAuthorizationWithContext:completion:;
+- (void)getPresentationContextForRequestContext:completion:;
+- (id)_appleOwnedDomains;
+- (id)initWithDaemonXPCEndpoint:;
+- (void)performAuthorizationWithContext:completion:;
++ (id)sharedController;
++ (BOOL)isURLFromAppleOwnedDomain:;
++ (id)appleOwnedDomains;
++ (BOOL)shouldProcessURL:;
++ (BOOL)canPerformAuthorization;
+@end

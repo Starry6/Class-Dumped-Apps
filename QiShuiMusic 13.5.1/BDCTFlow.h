@@ -1,0 +1,36 @@
+@interface BDCTFlow : NSObject
+@property (nonatomic) BDCTFlowContext context;
+@property (nonatomic) BDCTAPIService apiService;
+@property (nonatomic) BDCTEventTracker eventTracker;
+@property (nonatomic) BDCTFlowPerformance performance;
+@property (nonatomic) UINavigationController rootNavigationController;
+@property (nonatomic) BDCTFlow superFlow;
+@property (nonatomic) BOOL forcePresent;
+@property (nonatomic) BOOL disableInteractivePopGesture;
+@property (nonatomic) UIViewController fromViewController;
+- (id)apiService;
+- (void)dismissLoading;
+- (id)facelivenessDetectResultWithParams:error:;
+- (BOOL)forcePresent;
+- (id)rootNavigationController;
+- (void)setApiService:;
+- (void)setDisableInteractivePopGesture:;
+- (void)setForcePresent:;
+- (void)setFromViewController:;
+- (void)setRootNavigationController:;
+- (void)setSuperFlow:;
+- (id)superFlow;
+- (BOOL)disableInteractivePopGesture;
+- (id)fromViewController;
+- (id)context;
+- (void)showViewController:;
+- (id)initWithContext:;
+- (id)eventTracker;
+- (void).cxx_destruct;
+- (void)setContext:;
+- (void)setEventTracker:;
+- (void)showLoading;
+- (void)setPerformance:;
+- (id)performance;
++ (id)flowWithContext:;
+@end

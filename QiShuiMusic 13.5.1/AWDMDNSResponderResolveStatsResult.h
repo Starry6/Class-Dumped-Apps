@@ -1,0 +1,37 @@
+@interface AWDMDNSResponderResolveStatsResult : PBCodable
+@property (nonatomic) BOOL hasType;
+@property (nonatomic) NSInteger type;
+@property (nonatomic) BOOL hasCount;
+@property (nonatomic) I count;
+@property (nonatomic) BOOL hasServerID;
+@property (nonatomic) I serverID;
+@property (nonatomic) BOOL hasData;
+@property (nonatomic) NSData data;
+- (void)setCount:;
+- (void)dealloc;
+- (id)data;
+- (int)StringAsType:;
+- (void)setType:;
+- (void)writeTo:;
+- (BOOL)hasData;
+- (void)setHasType:;
+- (BOOL)hasType;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (id)typeAsString:;
+- (void)mergeFrom:;
+- (int)type;
+- (BOOL)readFrom:;
+- (id)description;
+- (void)setData:;
+- (id)dictionaryRepresentation;
+- (unsigned int)count;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setHasCount:;
+- (BOOL)hasCount;
+- (unsigned int)serverID;
+- (void)setServerID:;
+- (void)setHasServerID:;
+- (BOOL)hasServerID;
+@end

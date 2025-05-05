@@ -1,0 +1,2 @@
+@interface IESLiveSaaSPBIESLiveSaaSPBSearchRivalsRoot : GPBRootObject
+@end

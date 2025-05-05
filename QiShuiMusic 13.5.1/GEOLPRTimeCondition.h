@@ -1,0 +1,38 @@
+@interface GEOLPRTimeCondition : PBCodable
+@property (nonatomic) Q dayOfWeeksCount;
+@property (nonatomic) ^i dayOfWeeks;
+@property (nonatomic) Q dayOfMonthsCount;
+@property (nonatomic) ^I dayOfMonths;
+- (void)readAll:;
+- (id)init;
+- (void)dealloc;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (unsigned long long)dayOfWeeksCount;
+- (id)dayOfWeeks;
+- (void)clearDayOfWeeks;
+- (void)addDayOfWeek:;
+- (int)dayOfWeekAtIndex:;
+- (void)setDayOfWeeks:count:;
+- (id)dayOfWeeksAsString:;
+- (int)StringAsDayOfWeeks:;
+- (unsigned long long)dayOfMonthsCount;
+- (id)dayOfMonths;
+- (void)clearDayOfMonths;
+- (void)addDayOfMonth:;
+- (unsigned int)dayOfMonthAtIndex:;
+- (void)setDayOfMonths:count:;
++ (BOOL)isValid:;
+@end

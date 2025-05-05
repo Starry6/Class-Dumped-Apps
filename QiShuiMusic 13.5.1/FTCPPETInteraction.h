@@ -1,0 +1,32 @@
+@interface FTCPPETInteraction : PBCodable
+@property (nonatomic) NSMutableArray participants;
+@property (nonatomic) Q timestamp;
+@property (nonatomic) NSString mechanism;
+@property (nonatomic) BOOL isInbound;
+@property (nonatomic) NSString duration;
+- (id)participants;
+- (void)setParticipants:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)setDuration:;
+- (void)addParticipants:;
+- (void)mergeFrom:;
+- (unsigned long long)participantsCount;
+- (void)setTimestamp:;
+- (void).cxx_destruct;
+- (id)participantsAtIndex:;
+- (BOOL)readFrom:;
+- (unsigned long long)timestamp;
+- (BOOL)isInbound;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (id)duration;
+- (BOOL)isEqual:;
+- (void)clearParticipants;
+- (id)copyWithZone:;
+- (id)mechanism;
+- (void)setMechanism:;
+- (void)setIsInbound:;
++ (Class)participantsType;
+@end

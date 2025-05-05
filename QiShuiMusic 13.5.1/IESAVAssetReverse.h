@@ -1,0 +1,34 @@
+@interface IESAVAssetReverse : NSObject
+@property (nonatomic) BOOL shouldCancelReverse;
+@property (nonatomic) AVURLAsset asset;
+@property (nonatomic) IESMMMediaExporter audioExporter;
+@property (nonatomic) NSURL reverseAudioUrl;
+@property (nonatomic) NSString decrypKey;
+@property (nonatomic) NSString encrypKey;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)reverseAudioUrl;
+- (void)appWillResignAction:;
+- (id)audioExporter;
+- (void)cancle;
+- (id)decrypKey;
+- (int)decryptVideo:dstPath:;
+- (id)encrypKey;
+- (int)encryptVideo:dstPath:;
+- (id)p_getCompressionProps;
+- (void)reverseAsset:progressBlock:;
+- (void)setAudioExporter:;
+- (void)setDecrypKey:;
+- (void)setEncrypKey:;
+- (void)setReverseAudioUrl:;
+- (void)setShouldCancelReverse:;
+- (BOOL)shouldCancelReverse;
+- (id)videoCompsitionWithAsset:;
+- (void)dealloc;
+- (id)asset;
+- (void).cxx_destruct;
+- (void)setAsset:;
+- (id)initWithAVAsset:;
+@end

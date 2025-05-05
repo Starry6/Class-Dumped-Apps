@@ -1,0 +1,33 @@
+@interface IESIMTabContainerSectionController : IESIMBaseListSectionController
+@property (nonatomic) HMSegmentedControl segmentedControl;
+@property (nonatomic) IESIMTabContentViewController tabContentViewController;
+@property (nonatomic) q selectedIndex;
+@property (nonatomic) <IESIMTabContainerSectionControllerDataSource> dataSource;
+@property (nonatomic) <IESIMTabContainerSectionControllerDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)configCell:index:model:;
+- (void)configSupplementaryHeaderView:;
+- (id)itemViewControllerAtIndex:;
+- (void)segmentedControlDidChangedValue:;
+- (void)setTabContentViewController:;
+- (id)sizeForHeaderWithCollectionViewSize:;
+- (id)sizeForItemAtIndex:model:collectionViewSize:;
+- (id)tabContentViewController;
+- (void)tabContentViewController:didScrollToIndex:;
+- (void)setDataSource:;
+- (long long)selectedIndex;
+- (void)setDelegate:;
+- (id)dataSource;
+- (id)delegate;
+- (void).cxx_destruct;
+- (Class)cellClass;
+- (void)setSelectedIndex:;
+- (id)segmentedControl;
+- (void)setSegmentedControl:;
+- (void)scrollToItemAtIndex:animated:;
+- (double)segmentedControlHeight;
+- (Class)headerViewClass;
+@end

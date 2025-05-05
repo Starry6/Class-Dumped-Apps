@@ -1,0 +1,31 @@
+@interface WBSTemplateIconMonogramConfiguration : NSObject
+@property (nonatomic) BOOL skipMonogramGeneration;
+@property (nonatomic) {CGSize=dd} iconSize;
+@property (nonatomic) double fontSize;
+@property (nonatomic) q fontWeight;
+@property (nonatomic) double baselineOffset;
+@property (nonatomic) UIColor backgroundColor;
+@property (nonatomic) UIColor foregroundColor;
+@property (nonatomic) double cornerRadius;
+- (void)setIconSize:;
+- (id)iconSize;
+- (void)setFontWeight:;
+- (id)foregroundColor;
+- (void)setForegroundColor:;
+- (void)setBackgroundColor:;
+- (id)backgroundColor;
+- (double)baselineOffset;
+- (unsigned long long)hash;
+- (long long)fontWeight;
+- (double)fontSize;
+- (void)setCornerRadius:;
+- (void)setBaselineOffset:;
+- (void).cxx_destruct;
+- (void)setFontSize:;
+- (double)cornerRadius;
+- (BOOL)isEqual:;
+- (BOOL)skipMonogramGeneration;
+- (void)setSkipMonogramGeneration:;
++ (id)configurationWithIconSize:fontSize:fontWeight:baselineOffset:backgroundColor:cornerRadius:;
++ (id)configurationWithBackgroundColor:;
+@end

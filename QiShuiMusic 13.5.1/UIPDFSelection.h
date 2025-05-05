@@ -1,0 +1,37 @@
+@interface UIPDFSelection : NSObject
+@property (nonatomic) {?=qq} stringRange;
+- (id)page;
+- (id)string;
+- (id)init;
+- (BOOL)isEmpty;
+- (void)dealloc;
+- (id)extent;
+- (unsigned long long)startIndex;
+- (id)transform;
+- (id)description;
+- (id)initWithSelection:;
+- (unsigned long long)endIndex;
+- (id)stringRange;
+- (id)bounds;
+- (id)textAtIndex:;
+- (id)archive;
+- (BOOL)getBounds:transform:index:;
+- (unsigned long long)numberOfRectangles;
+- (id)attributedStringAtIndex:;
+- (BOOL)isNonEmpty;
+- (id)initWithPage:fromArchive:;
+- (id)initWithPage:fromIndex:toIndex:;
+- (id)selectionExtendedToLineBoundaries;
+- (id)containingTextLine;
+- (BOOL)isWord;
+- (id)htmlAtIndex:;
+- (id)rectangleAtIndex:scale:inset:;
+- (unsigned long long)extendAtStart:;
+- (unsigned long long)extendAtEnd:;
+- (void)copyToPasteboard;
+- (double)baseLineAtIndex:;
+- (void)setStringRange:;
+- (id)initWithPage:cgSelection:;
+- (id)CGSelection;
+- (void)extendToParagraph;
+@end

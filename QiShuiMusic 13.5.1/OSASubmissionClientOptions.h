@@ -1,0 +1,2 @@
+@interface OSASubmissionClientOptions : NSObject
+@end

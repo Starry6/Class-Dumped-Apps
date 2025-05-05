@@ -1,0 +1,33 @@
+@interface LPiTunesMediaPodcastEpisodeUnresolvedMetadata : NSObject
+@property (nonatomic) NSString storeFrontIdentifier;
+@property (nonatomic) NSString storeIdentifier;
+@property (nonatomic) NSString episodeName;
+@property (nonatomic) NSString podcastName;
+@property (nonatomic) NSString artist;
+@property (nonatomic) NSString releaseDate;
+@property (nonatomic) LPiTunesMediaAsset artwork;
+@property (nonatomic) NSArray offers;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)artist;
+- (id)releaseDate;
+- (void)setArtist:;
+- (id)storeIdentifier;
+- (id)artwork;
+- (id)offers;
+- (void).cxx_destruct;
+- (void)setReleaseDate:;
+- (void)setArtwork:;
+- (id)storeFrontIdentifier;
+- (void)setOffers:;
+- (id)resolve;
+- (void)setStoreFrontIdentifier:;
+- (void)setStoreIdentifier:;
+- (id)podcastName;
+- (void)setPodcastName:;
+- (void)setEpisodeName:;
+- (id)episodeName;
+- (id)assetsToFetch;
+@end

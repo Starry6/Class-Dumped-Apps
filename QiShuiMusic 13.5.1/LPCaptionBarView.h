@@ -1,0 +1,33 @@
+@interface LPCaptionBarView : LPComponentView
+@property (nonatomic) BOOL useProgressSpinner;
+@property (nonatomic) {UIEdgeInsets=dddd} textSafeAreaInset;
+@property (nonatomic) LPCollaborationFooterView collaborationFooterView;
+@property (nonatomic) NSRegularExpression emphasizedTextExpression;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)animationDidStop:finished:;
+- (id)playable;
+- (id)button;
+- (id)sizeThatFits:;
+- (id)initWithHost:;
+- (void).cxx_destruct;
+- (void)animateOut;
+- (void)layoutComponentView;
+- (id)emphasizedTextExpression;
+- (void)setEmphasizedTextExpression:;
+- (id)subtitleButton;
+- (id)initWithHost:style:presentationProperties:;
+- (void)setUseProgressSpinner:;
+- (void)setPlaybackInformation:;
+- (void)animateInWithBaseAnimation:currentTime:;
+- (id)_layoutCaptionBarForSize:applyingLayout:;
+- (void)_buildViewsForCaptionBarIfNeeded;
+- (id)primaryIconView;
+- (BOOL)useProgressSpinner;
+- (id)textSafeAreaInset;
+- (void)setTextSafeAreaInset:;
+- (id)collaborationFooterView;
+- (void)setCollaborationFooterView:;
+@end

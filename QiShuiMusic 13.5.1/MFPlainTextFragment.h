@@ -1,0 +1,2 @@
+@interface MFPlainTextFragment : NSObject
+@end

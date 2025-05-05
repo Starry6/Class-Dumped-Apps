@@ -1,0 +1,34 @@
+@interface SAGKAnswerProperty : AceObject
+@property (nonatomic) <SAClientBoundCommand> command;
+@property (nonatomic) SAUIDecoratedText decoratedValue;
+@property (nonatomic) SAUIDecoratedText decoratedValueAnnotation;
+@property (nonatomic) NSString name;
+@property (nonatomic) SAUIAppPunchOut punchOut;
+@property (nonatomic) NSNumber selected;
+@property (nonatomic) NSString value;
+@property (nonatomic) NSString valueAnnotation;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)selected;
+- (void)setName:;
+- (id)groupIdentifier;
+- (void)setSelected:;
+- (id)command;
+- (void)setValue:;
+- (id)encodedClassName;
+- (id)value;
+- (id)name;
+- (void)setCommand:;
+- (void)setPunchOut:;
+- (id)punchOut;
+- (id)decoratedValue;
+- (void)setDecoratedValue:;
+- (id)valueAnnotation;
+- (void)setValueAnnotation:;
+- (id)decoratedValueAnnotation;
+- (void)setDecoratedValueAnnotation:;
++ (id)answerProperty;
++ (id)answerPropertyWithDictionary:context:;
+@end

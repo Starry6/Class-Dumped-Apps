@@ -1,0 +1,30 @@
+@interface PasscodeFieldCell : PSTableCell
+@property (nonatomic) <KeychainSyncPasscodeFieldDelegate> delegate;
+@property (nonatomic) BOOL convertsNumeralsToASCII;
+@property (nonatomic) BOOL denyFirstResponder;
+@property (nonatomic) PSPasscodeField passcodeField;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)keyboardType;
+- (BOOL)hasText;
+- (void)layoutSubviews;
+- (void)setDelegate:;
+- (void)deleteBackward;
+- (id)initWithStyle:reuseIdentifier:specifier:;
+- (BOOL)becomeFirstResponder;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)passcodeField:shouldInsertText:;
+- (void)passcodeField:enteredPasscode:;
+- (id)passcodeField;
+- (void)cellTapped:;
+- (void)_setSecureTextEntry:;
+- (void)setPasscodeText:;
+- (id)passcodeText;
+- (BOOL)convertsNumeralsToASCII;
+- (void)setConvertsNumeralsToASCII:;
+- (BOOL)denyFirstResponder;
+- (void)setDenyFirstResponder:;
+@end

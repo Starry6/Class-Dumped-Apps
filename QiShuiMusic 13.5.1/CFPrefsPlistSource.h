@@ -1,0 +1,30 @@
+@interface CFPrefsPlistSource : CFPrefsSource
+- (id)domainIdentifier;
+- (long long)generationCount;
+- (void)dealloc;
+- (id)initWithDomain:user:byHost:containerPath:containingPreferences:;
+- (long long)alreadylocked_generationCount;
+- (id)copyValueForKey:;
+- (void)setAccessRestricted:;
+- (id)userIdentifier;
+- (id)createRequestNewContentMessageForDaemon:;
+- (id)container;
+- (BOOL)isByHost;
+- (void)alreadylocked_setPrecopiedValues:forKeys:count:from:;
+- (int)alreadylocked_updateObservingRemoteChanges;
+- (BOOL)isVolatile;
+- (BOOL)synchronize;
+- (id)alreadylocked_copyKeyList;
+- (id)createSynchronizeMessage;
+- (void)transitionIntoDirectModeIfNeededWithRetryBlock:;
+- (id)alreadylocked_copyValueForKey:;
+- (id)alreadylocked_createObserverUpdateMessageWithOperation:forRole:;
+- (BOOL)isDirectModeEnabled;
+- (id)alreadylocked_copyDictionary;
+- (void)setDaemonCacheEnabled:;
+- (void)alreadylocked_clearCache;
+- (BOOL)servedByUserSessionDaemon;
+- (void)setBackupDisabled:;
+- (void)setFileProtectionClass:;
+- (void)handleReply:toRequestNewDataMessage:onConnection:retryCount:error:;
+@end

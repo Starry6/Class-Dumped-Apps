@@ -1,0 +1,35 @@
+@interface RPSiriAudioSession : NSObject
+@property (nonatomic) NSObject<OS_dispatch_queue> dispatchQueue;
+@property (nonatomic) @? interruptionHandler;
+@property (nonatomic) @? invalidationHandler;
+@property (nonatomic) NSString label;
+@property (nonatomic) NSString sessionID;
+@property (nonatomic) <RPSiriAudioSessionDelegate> delegate;
+- (void)setSessionID:;
+- (id)sessionID;
+- (id)init;
+- (id)interruptionHandler;
+- (void)dealloc;
+- (void)_invalidated;
+- (void)setInterruptionHandler:;
+- (id)dispatchQueue;
+- (void)setDelegate:;
+- (void)setDispatchQueue:;
+- (void)setLabel:;
+- (id)initWithCoder:;
+- (id)label;
+- (void)_interrupted;
+- (void)_ensureXPCStarted;
+- (void)activateWithCompletion:;
+- (void)encodeWithCoder:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)invalidationHandler;
+- (void)setInvalidationHandler:;
+- (id)description;
+- (void)invalidate;
+- (void)_activateWithCompletion:reactivate:;
+- (void)xpcSiriStopClientRecordingWithDeviceId:;
+- (void)receivedSiriAudioEvent:;
++ (BOOL)supportsSecureCoding;
+@end

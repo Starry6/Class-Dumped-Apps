@@ -1,0 +1,2 @@
+@interface GPBSourceContextRoot : GPBRootObject
+@end

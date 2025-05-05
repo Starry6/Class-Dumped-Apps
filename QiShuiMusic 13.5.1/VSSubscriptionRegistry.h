@@ -1,0 +1,33 @@
+@interface VSSubscriptionRegistry : NSObject
+@property (nonatomic) VSRemoteNotifier remoteNotifier;
+@property (nonatomic) VSSubscriptionPersistentContainer persistentContainer;
+@property (nonatomic) VSSubscriptionPredicateFactory predicateFactory;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setPersistentContainer:;
+- (id)init;
+- (void)dealloc;
+- (id)_securityTaskForCurrentConnection;
+- (id)_fetchRequest;
+- (id)_predicateForPersistentAttributesOfSubscriptions:withEntity:forFiltering:;
+- (void)_sendRemoteNotification;
+- (void)_performBlock:;
+- (void)setRemoteNotifier:;
+- (void)registerSubscription:withCompletionHandler:;
+- (id)_subscriptionEntity;
+- (id)persistentContainer;
+- (id)predicateFactory;
+- (BOOL)_saveChangesToContext:;
+- (void)fetchActiveSubscriptionsWithOptions:completionHandler:;
+- (void)registerSubscription:;
+- (id)_predicateForCurrentConnectionWithRequestKind:;
+- (void).cxx_destruct;
+- (void)setPredicateFactory:;
+- (void)removeSubscriptions:withCompletionHandler:;
+- (long long)_saveChangesToContext:withDate:;
+- (void)removeSubscriptions:;
+- (id)remoteNotifier;
+- (void)_installedAppsDidChange:;
+@end

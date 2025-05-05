@@ -1,0 +1,33 @@
+@interface IESIMTransitionContext : NSObject
+@property (nonatomic) Q type;
+@property (nonatomic) Q interaction;
+@property (nonatomic) Q triggerDirection;
+@property (nonatomic) {CGPoint=dd} currentPanLocation;
+@property (nonatomic) double percentCompleteForPercentageDriven;
+@property (nonatomic) UIViewController fromViewController;
+@property (nonatomic) UIViewController toViewController;
+@property (nonatomic) @ fromContextProvider;
+@property (nonatomic) @ toContextProvider;
+@property (nonatomic) <IESIMTransitionContextProvider> contextProvider;
+- (id)currentPanLocation;
+- (id)fromContextProvider;
+- (double)percentCompleteForPercentageDriven;
+- (void)setCurrentPanLocation:;
+- (void)setFromContextProvider:;
+- (void)setFromViewController:;
+- (void)setPercentCompleteForPercentageDriven:;
+- (void)setToContextProvider:;
+- (void)setToViewController:;
+- (void)setTriggerDirection:;
+- (id)toContextProvider;
+- (unsigned long long)triggerDirection;
+- (id)fromViewController;
+- (unsigned long long)interaction;
+- (void)setInteraction:;
+- (void)setType:;
+- (id)toViewController;
+- (unsigned long long)type;
+- (void).cxx_destruct;
+- (id)contextProvider;
+- (void)setContextProvider:;
+@end

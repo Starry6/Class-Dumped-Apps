@@ -1,0 +1,30 @@
+@interface AnnieXMonitorConfig : NSObject
+@property (nonatomic) NSString originURL;
+@property (nonatomic) NSString bid;
+@property (nonatomic) NSString containerName;
+@property (nonatomic) NSString viewType;
+@property (nonatomic) NSDictionary monitorCommonParams;
+@property (nonatomic) NSString sessionID;
+@property (nonatomic) NSString templateUrl;
+@property (nonatomic) NSString channel;
+@property (nonatomic) NSString bundle;
+- (void)setBid:;
+- (id)bid;
+- (id)monitorCommonParams;
+- (void)setMonitorCommonParams:;
+- (void)setSessionID:;
+- (void)setChannel:;
+- (id)sessionID;
+- (id)containerName;
+- (id)viewType;
+- (id)channel;
+- (void)setContainerName:;
+- (id)bundle;
+- (void).cxx_destruct;
+- (void)setBundle:;
+- (id)originURL;
+- (void)setOriginURL:;
+- (void)setViewType:;
+- (id)templateUrl;
+- (void)setTemplateUrl:;
+@end

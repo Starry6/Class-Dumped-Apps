@@ -1,0 +1,34 @@
+@interface PIAWorkerService : NSObject
+@property (nonatomic) PIABiMapTable workerIdMap;
+@property (nonatomic) PIABiMapTable instanceMap;
+@property (nonatomic) PIABiMapTable runTaskMap;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)PIAWorker:didReceiveError:;
+- (void)PIAWorker:onReceiveWorkerMessage:;
+- (void)setWorkerIdMap:;
+- (void)PIAWorker:didFetchScriptURL:fetchMetrics:error:;
+- (void)PIAWorker:willFetchScriptURL:;
+- (void)setInstanceMap:;
+- (void)createWorkerWithConfig:context:createCB:requestCB:;
+- (void)didPIAWorkerCreate:;
+- (id)getWorkerWithContext:;
+- (id)getWorkerWithWorkerID:;
+- (id)initService;
+- (void)injectWorkerBridgeWithContext:instance:;
+- (id)instanceMap;
+- (id)p_createWorkerWithConfig:context:delegate:completion:;
+- (void)p_fetchResourceForURL:worker:context:configuration:completion:;
+- (void)releaseWorkerWithContext:;
+- (void)removeWorker:;
+- (id)runTaskMap;
+- (void)runTaskWithConfig:context:maxTime:params:delegate:completion:;
+- (void)setRunTaskMap:;
+- (void)willPIAWorkerCreate:;
+- (void)workerExecuteTimeOut:worker:context:;
+- (id)workerIdMap;
+- (void).cxx_destruct;
++ (void)executePrepareServiceTask;
+@end

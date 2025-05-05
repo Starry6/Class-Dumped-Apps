@@ -1,0 +1,33 @@
+@interface UIPrintLayoutSection : UIPrintOptionSection
+@property (nonatomic) UIPrintPagesPerSheetOption pagesPerSheetPrintOption;
+@property (nonatomic) UIPrintLayoutDirectionOption layoutDirectionPrintOption;
+@property (nonatomic) UIPrintBorderOption borderPrintOption;
+@property (nonatomic) UIPrintFlipHorizontalOption flipHorizontalPrintOption;
+@property (nonatomic) UITableViewController layoutSectionController;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)dealloc;
+- (id)tableView:cellForRowAtIndexPath:;
+- (void)observeValueForKeyPath:ofObject:change:context:;
+- (void)tableView:didSelectRowAtIndexPath:;
+- (void).cxx_destruct;
+- (long long)tableView:numberOfRowsInSection:;
+- (long long)numberOfSectionsInTableView:;
+- (BOOL)shouldShow;
+- (id)initWithPrintInfo:printPanelViewController:;
+- (BOOL)updatePrintOptionsList;
+- (void)didSelectPrintOptionSection;
+- (id)printOptionAtIndexPath:;
+- (id)pagesPerSheetPrintOption;
+- (void)setPagesPerSheetPrintOption:;
+- (id)layoutDirectionPrintOption;
+- (void)setLayoutDirectionPrintOption:;
+- (id)borderPrintOption;
+- (void)setBorderPrintOption:;
+- (id)flipHorizontalPrintOption;
+- (void)setFlipHorizontalPrintOption:;
+- (id)layoutSectionController;
+- (void)setLayoutSectionController:;
+@end

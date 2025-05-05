@@ -1,0 +1,31 @@
+@interface AMapFoundationUtility : NSObject
++ (BOOL)appendData:toMutableData:shouldAddZeroLength:;
++ (id)assembledURLStringWithAddress:enableHTTPS:;
++ (id)assembledURLStringWithAddress:enableHTTPS:keepHTTPS:;
++ (BOOL)boolValueWithAuthResponse:;
++ (BOOL)boolValueWithAuthResponse:forKey:;
++ (id)createSCodeStringWithParams:timestamp:bundleID:;
++ (id)createTimestampString;
++ (id)decryptAESForSourceData:;
++ (id)encodeURLParamDictionary:;
++ (id)encodeURLParamString:;
++ (id)encryptAESForSourceData:;
++ (id)encryptForSourceData:;
++ (id)encryptForXinfo21:;
++ (id)encryptForXinfo2:;
++ (id)encryptForXinfo30:;
++ (id)encryptForXinfo:;
++ (id)filteredParamString:;
++ (id)headersForKeyVerificationWithParams:;
++ (id)headersForKeyVerificationWithParams:bundleID:;
++ (id)ipV6URLStringWithAddress:;
++ (id)joinedStringWithDictionary:separator:;
++ (id)restSignatureWithParams:;
++ (id)restSignatureWithParams:bundleID:;
++ (id)restURLWithPath:component:;
++ (id)sortedStringWithParams:;
++ (id)urlDecodeForKey:;
++ (id)urlEncodeForKey:;
++ (id)v6RestURLWithPath:component:;
++ (BOOL)writeFileWithData:fileName:;
+@end

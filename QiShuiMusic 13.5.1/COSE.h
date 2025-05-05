@@ -1,0 +1,30 @@
+@interface COSE : NSObject
+@property (nonatomic) q type;
+@property (nonatomic) NSData protectedHeaderParameters;
+@property (nonatomic) NSDictionary protectedHeadererDictionary;
+@property (nonatomic) NSDictionary unprotectedHeaderParameters;
+@property (nonatomic) NSData content;
+@property (nonatomic) CBOR tag;
+@property (nonatomic) q algorithmIdentifier;
+@property (nonatomic) NSArray criticalHeaderParameters;
+@property (nonatomic) NSString contentType;
+@property (nonatomic) NSData keyIdentifier;
+@property (nonatomic) NSData initializationVector;
+@property (nonatomic) NSData partialInitializationVector;
+- (id)content;
+- (id)tag;
+- (id)contentType;
+- (id)initializationVector;
+- (long long)type;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (id)initWithData:type:;
+- (id)keyIdentifier;
+- (id)initWithCBOR:;
+- (id)protectedHeaderParameters;
+- (id)unprotectedHeaderParameters;
+- (long long)algorithmIdentifier;
+- (id)criticalHeaderParameters;
+- (id)partialInitializationVector;
+- (id)protectedHeadererDictionary;
+@end

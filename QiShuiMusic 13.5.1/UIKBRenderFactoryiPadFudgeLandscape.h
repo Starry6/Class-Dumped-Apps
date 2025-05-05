@@ -1,0 +1,25 @@
+@interface UIKBRenderFactoryiPadFudgeLandscape : UIKBRenderFactoryiPadFudge
+- (id)internationalKeyOffset;
+- (id)dictationKeyOffset;
+- (double)symbolImageControlKeyFontSize;
+- (double)keyCornerRadius;
+- (id)dynamicInsets;
+- (double)dynamicBottomRowMultiplier;
+- (id)messagesWriteboardKeyImageName;
+- (double)deleteKeyFontSize;
+- (double)moreKeyFontSize;
+- (id)dismissKeyOffset;
+- (id)symbolImageControlKeyOffset;
+- (double)_row4ControlSegmentWidthRight;
+- (double)spaceKeyFontSize;
+- (id)defaultVariantGeometrySize;
+- (double)stringKeyFontSize:;
+- (double)controlKeyFontSize;
+- (id)iPadFudgeControlKeyOffset;
+- (id)deleteKeyOffset:;
+- (id)moreKeyOffset;
+- (double)dualStringKeyBottomFontSize:;
+- (id)dualStringKeyBottomTextOffset:;
+- (double)dualStringKeyTopFontSize:;
+- (id)dualStringKeyTopTextOffset:;
+@end

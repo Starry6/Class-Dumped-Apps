@@ -1,0 +1,33 @@
+@interface PTYTensor : PTYCls
+@property (nonatomic) ^v rawData;
+@property (nonatomic) BOOL autoFreeRawData;
+@property (nonatomic) Q dataFormat;
+@property (nonatomic) Q dataType;
+@property (nonatomic) NSArray dims;
+@property (nonatomic) NSInteger fraction;
+@property (nonatomic) NSString name;
+@property (nonatomic) NSInteger size;
+@property (nonatomic) NSInteger nelems;
+- (BOOL)autoFreeRawData;
+- (id)coreObject;
+- (id)dims;
+- (id)initWithCoreObject:;
+- (int)nelems;
+- (void)setAutoFreeRawData:;
+- (void)setDims:;
+- (void)setDataType:;
+- (id)init;
+- (void)dealloc;
+- (void)setName:;
+- (void)setRawData:;
+- (void)setFraction:;
+- (int)fraction;
+- (unsigned long long)dataType;
+- (void).cxx_destruct;
+- (id)description;
+- (id)name;
+- (id)rawData;
+- (int)size;
+- (void)setDataFormat:;
+- (unsigned long long)dataFormat;
+@end

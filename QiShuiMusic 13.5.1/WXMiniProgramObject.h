@@ -1,0 +1,35 @@
+@interface WXMiniProgramObject : NSObject
+@property (nonatomic) NSString webpageUrl;
+@property (nonatomic) NSString userName;
+@property (nonatomic) NSString path;
+@property (nonatomic) NSData hdImageData;
+@property (nonatomic) BOOL withShareTicket;
+@property (nonatomic) Q miniProgramType;
+@property (nonatomic) BOOL disableForward;
+@property (nonatomic) BOOL isUpdatableMessage;
+@property (nonatomic) BOOL isSecretMessage;
+@property (nonatomic) NSDictionary extraInfoDic;
+- (BOOL)isSecretMessage;
+- (unsigned long long)miniProgramType;
+- (void)setHdImageData:;
+- (BOOL)withShareTicket;
+- (BOOL)disableForward;
+- (id)extraInfoDic;
+- (id)hdImageData;
+- (BOOL)isUpdatableMessage;
+- (void)setDisableForward:;
+- (void)setExtraInfoDic:;
+- (void)setIsSecretMessage:;
+- (void)setIsUpdatableMessage:;
+- (void)setMiniProgramType:;
+- (void)setWebpageUrl:;
+- (void)setWithShareTicket:;
+- (id)webpageUrl;
+- (id)path;
+- (id)init;
+- (id)userName;
+- (void)setPath:;
+- (void)setUserName:;
+- (void).cxx_destruct;
++ (id)object;
+@end

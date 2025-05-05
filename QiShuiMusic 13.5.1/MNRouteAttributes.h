@@ -1,0 +1,32 @@
+@interface MNRouteAttributes : GEORouteAttributes
+@property (nonatomic) BOOL hasResolvedVehicle;
+@property (nonatomic) BOOL hasResolvedRules;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)_commonInit;
+- (id)init;
+- (void)dealloc;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (BOOL)shouldRetryForError:;
+- (id)copyWithZone:;
+- (void)buildRouteAttributes:queue:result:;
+- (void)buildRouteAttributes:result:;
+- (void)buildRouteAttributesForETAUpdateRequest:queue:result:;
+- (id)initWithAttributes:waypoints:;
+- (id)vehicle;
+- (void)virtualGarageManager:didUpdateSelectedVehicle:;
+- (id)initWithAttributes:latLngs:;
+- (void)setHasResolvedVehicle:;
+- (BOOL)hasResolvedVehicle;
+- (void)setHasResolvedRules:;
+- (void)_resolveSelectedVehicle:completion:;
+- (void)_loadRulesIfNecessary:result:;
+- (void)_populateRouteAttributes:result:;
+- (BOOL)hasResolvedRules;
++ (BOOL)supportsSecureCoding;
++ (void)_loadLPRRulesForWaypoints:forceUpdate:queue:completion:;
+@end

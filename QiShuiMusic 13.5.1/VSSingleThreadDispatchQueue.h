@@ -1,0 +1,31 @@
+@interface VSSingleThreadDispatchQueue : NSObject
+@property (nonatomic) ^{__CFRunLoopSource=} runLoopSource;
+@property (nonatomic) NSMutableArray blocks;
+@property (nonatomic) @? startCompletionBlock;
+@property (nonatomic) NSString name;
+@property (nonatomic) NSThread underlyingThread;
+@property (nonatomic) ^{__CFRunLoop=} underlyingRunLoop;
+@property (nonatomic) q state;
+- (void)dispatchBlockSync:;
+- (void)setName:;
+- (void)startWithCompletionHandler:;
+- (id)runLoopSource;
+- (id)blocks;
+- (void)setState:;
+- (id)underlyingRunLoop;
+- (void)stop;
+- (id)initWithName:;
+- (void)setRunLoopSource:;
+- (id)underlyingThread;
+- (long long)state;
+- (void)setBlocks:;
+- (void).cxx_destruct;
+- (id)name;
+- (void)_threadMain;
+- (void)dispatchBlock:;
+- (void)setUnderlyingThread:;
+- (void)setUnderlyingRunLoop:;
+- (id)startCompletionBlock;
+- (void)setStartCompletionBlock:;
++ (id)currentQueue;
+@end

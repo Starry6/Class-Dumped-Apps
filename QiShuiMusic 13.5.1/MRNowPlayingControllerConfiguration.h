@@ -1,0 +1,37 @@
+@interface MRNowPlayingControllerConfiguration : NSObject
+@property (nonatomic) BOOL singleShot;
+@property (nonatomic) MRPlaybackQueueRequest playbackQueueRequest;
+@property (nonatomic) MRDestination destination;
+@property (nonatomic) BOOL requestSupportedCommands;
+@property (nonatomic) BOOL requestPlaybackState;
+@property (nonatomic) BOOL requestLastPlayingDate;
+@property (nonatomic) BOOL requestClientProperties;
+@property (nonatomic) BOOL requestPlaybackQueue;
+@property (nonatomic) NSString label;
+- (void)setDestination:;
+- (void)setPlaybackQueueRequest:;
+- (id)playbackQueueRequest;
+- (id)initWithDestination:;
+- (BOOL)requestPlaybackQueue;
+- (id)initWithOutputDeviceUID:;
+- (id)destination;
+- (void)setLabel:;
+- (id)label;
+- (id)debugDescription;
+- (id)initWithEndpoint:;
+- (id)initWithOrigin:;
+- (BOOL)requestClientProperties;
+- (BOOL)requestSupportedCommands;
+- (void)setSingleShot:;
+- (void).cxx_destruct;
+- (void)setRequestPlaybackQueue:;
+- (void)setRequestSupportedCommands:;
+- (BOOL)requestLastPlayingDate;
+- (void)setRequestPlaybackState:;
+- (id)description;
+- (void)setRequestClientProperties:;
+- (void)setRequestLastPlayingDate:;
+- (BOOL)requestPlaybackState;
+- (id)copyWithZone:;
+- (BOOL)isSingleShot;
+@end

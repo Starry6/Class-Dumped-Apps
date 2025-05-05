@@ -1,0 +1,37 @@
+@interface VCMediaNegotiationBlobMomentsSettings : PBCodable
+@property (nonatomic) I capabilities;
+@property (nonatomic) BOOL hasSupportedVideoCodecs;
+@property (nonatomic) I supportedVideoCodecs;
+@property (nonatomic) BOOL hasSupportedImageTypes;
+@property (nonatomic) I supportedImageTypes;
+@property (nonatomic) BOOL hasMultiwayCapabilities;
+@property (nonatomic) I multiwayCapabilities;
+- (void)setCapabilities:;
+- (unsigned int)capabilities;
+- (unsigned int)supportedImageTypes;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (unsigned int)supportedVideoCodecs;
+- (void)setSupportedVideoCodecs:;
+- (void)setHasSupportedVideoCodecs:;
+- (BOOL)hasSupportedVideoCodecs;
+- (void)setSupportedImageTypes:;
+- (void)setHasSupportedImageTypes:;
+- (BOOL)hasSupportedImageTypes;
+- (void)setMultiwayCapabilities:;
+- (void)setHasMultiwayCapabilities:;
+- (BOOL)hasMultiwayCapabilities;
+- (unsigned int)multiwayCapabilities;
+- (id)initWithVideoCodecs:imageTypes:capabilities:multiwayCapabilities:;
+- (id)newVideoCodecSet;
+- (id)newImageTypeSet;
++ (unsigned int)avcMomentsCapabilitiesForMultiwayMomentsCapabilities:;
++ (unsigned int)capabilitiesBitmapWithCapabilities:;
+@end

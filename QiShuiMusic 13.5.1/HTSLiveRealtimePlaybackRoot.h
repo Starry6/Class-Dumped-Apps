@@ -1,0 +1,2 @@
+@interface HTSLiveRealtimePlaybackRoot : GPBRootObject
+@end

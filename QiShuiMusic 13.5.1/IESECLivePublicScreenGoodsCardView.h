@@ -1,0 +1,34 @@
+@interface IESECLivePublicScreenGoodsCardView : UIView
+@property (nonatomic) UIView container;
+@property (nonatomic) UIView leftContainer;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIImageView titleIconView;
+@property (nonatomic) UILabel subTitleLabel;
+@property (nonatomic) UIImageView coverImageView;
+@property (nonatomic) IESECLivePublicScreenGoodsCardModel model;
+@property (nonatomic) IESECLiveContext liveContext;
+- (void)setLiveContext:;
+- (id)coverImageView;
+- (id)jumpHandler;
+- (id)leftContainer;
+- (id)liveContext;
+- (void)onClick:;
+- (void)setCoverImageView:;
+- (void)setLeftContainer:;
+- (void)setTitleIconView:;
+- (id)model;
+- (void)setContainer:;
+- (void)setModel:;
+- (void)setTitleLabel:;
+- (id)tracker;
+- (id)container;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setupUI;
+- (id)subTitleLabel;
+- (void)setSubTitleLabel:;
+- (void)updateWithModel:;
+- (id)titleIconView;
++ (id)cardViewWithModel:liveContext:;
+@end

@@ -1,0 +1,36 @@
+@interface CMMTLCommandBuffer : NSObject
+@property (nonatomic) InterceptConfig interceptConfig;
+@property (nonatomic) Q listIndex;
+@property (nonatomic) BOOL profilingEnabled;
+@property (nonatomic) NSDictionary profilingResults;
+@property (nonatomic) NSMutableDictionary userDictionary;
+@property (nonatomic) Q globalTraceObjectID;
+@property (nonatomic) <MTLDeadlineProfile> deadlineProfile;
+@property (nonatomic) <MTLDevice> device;
+@property (nonatomic) <MTLCommandQueue> commandQueue;
+@property (nonatomic) BOOL retainedReferences;
+@property (nonatomic) Q errorOptions;
+@property (nonatomic) NSString label;
+@property (nonatomic) double kernelStartTime;
+@property (nonatomic) double kernelEndTime;
+@property (nonatomic) <MTLLogContainer> logs;
+@property (nonatomic) double GPUStartTime;
+@property (nonatomic) double GPUEndTime;
+@property (nonatomic) Q status;
+@property (nonatomic) NSError error;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)commit;
+- (void)waitUntilScheduled;
+- (BOOL)respondsToSelector:;
+- (id)initWithCMMTLCommandQueue:unretained:;
+- (id)interceptConfig;
+- (id)commandQueue;
+- (void)setInterceptConfig:;
+- (void).cxx_destruct;
+- (id)forwardingTargetForSelector:;
+- (void)forwardInvocation:;
+- (void)waitUntilCompleted;
+@end

@@ -1,0 +1,30 @@
+@interface LPiTunesMediaAudioBookUnresolvedMetadata : NSObject
+@property (nonatomic) NSString storeFrontIdentifier;
+@property (nonatomic) NSString storeIdentifier;
+@property (nonatomic) NSString name;
+@property (nonatomic) NSString author;
+@property (nonatomic) NSString narrator;
+@property (nonatomic) LPiTunesMediaAsset artwork;
+@property (nonatomic) NSArray offers;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)storeIdentifier;
+- (id)artwork;
+- (void)setName:;
+- (id)author;
+- (id)offers;
+- (void).cxx_destruct;
+- (void)setAuthor:;
+- (void)setArtwork:;
+- (id)storeFrontIdentifier;
+- (void)setOffers:;
+- (id)name;
+- (id)resolve;
+- (void)setStoreFrontIdentifier:;
+- (void)setStoreIdentifier:;
+- (id)narrator;
+- (void)setNarrator:;
+- (id)assetsToFetch;
+@end

@@ -1,0 +1,34 @@
+@interface GEOSpokenGuidanceFeedback : PBCodable
+@property (nonatomic) BOOL hasSpokenGuidanceIndex;
+@property (nonatomic) NSInteger spokenGuidanceIndex;
+@property (nonatomic) BOOL hasShortPrompt;
+@property (nonatomic) BOOL shortPrompt;
+@property (nonatomic) BOOL hasTrafficCameraGuidanceFeedback;
+@property (nonatomic) GEOTrafficCameraInformation trafficCameraGuidanceFeedback;
+- (void)readAll:;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasTrafficCameraGuidanceFeedback;
+- (id)trafficCameraGuidanceFeedback;
+- (void)setTrafficCameraGuidanceFeedback:;
+- (int)spokenGuidanceIndex;
+- (void)setSpokenGuidanceIndex:;
+- (void)setHasSpokenGuidanceIndex:;
+- (BOOL)hasSpokenGuidanceIndex;
+- (BOOL)shortPrompt;
+- (void)setShortPrompt:;
+- (void)setHasShortPrompt:;
+- (BOOL)hasShortPrompt;
++ (BOOL)isValid:;
+@end

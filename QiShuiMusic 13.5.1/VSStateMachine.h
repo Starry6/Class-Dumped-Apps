@@ -1,0 +1,34 @@
+@interface VSStateMachine : NSObject
+@property (nonatomic) NSOperationQueue transitionQueue;
+@property (nonatomic) VSOptional currentState;
+@property (nonatomic) NSMutableArray enqueuedTransitions;
+@property (nonatomic) NSMutableDictionary transitionTable;
+@property (nonatomic) NSMutableDictionary ignoredEventsByState;
+@property (nonatomic) NSString name;
+@property (nonatomic) <VSStateMachineDelegate> delegate;
+- (void)setCurrentState:;
+- (id)init;
+- (void)setName:;
+- (id)currentState;
+- (void)setDelegate:;
+- (void)enqueueEvent:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)description;
+- (id)name;
+- (id)transitionTable;
+- (void)_enteringState:;
+- (void)_exitingState:;
+- (void)_handleEnqueuedTransitions;
+- (void)_setDestinationState:forEvent:inState:ignoringEvent:;
+- (void)ignoreEvent:inState:;
+- (void)setDestinationState:forEvent:inState:;
+- (void)activateWithState:;
+- (id)transitionQueue;
+- (void)setTransitionQueue:;
+- (id)enqueuedTransitions;
+- (void)setEnqueuedTransitions:;
+- (void)setTransitionTable:;
+- (id)ignoredEventsByState;
+- (void)setIgnoredEventsByState:;
+@end

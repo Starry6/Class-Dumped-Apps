@@ -1,0 +1,36 @@
+@interface IESLiveFeedSaaSDislikeBubbleManager : NSObject
+@property (nonatomic) UIView maskView;
+@property (nonatomic) IESLiveSaaSLiveRoomModel dislikeRoom;
+@property (nonatomic) NSIndexPath dislikeIndexPath;
+@property (nonatomic) NSString roomEnterFrom;
+@property (nonatomic) NSString roomEnterMethod;
+@property (nonatomic) IESLiveSaaSFeedDislikeView dislikeView;
+@property (nonatomic) NSMutableDictionary trackParams;
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) <IESLiveFeedSaaSDislikeBubbleDelegate> delegate;
+- (void)setDislikeView:;
+- (void)setTrackParams:;
+- (id)roomEnterMethod;
+- (void)setDislikeRoom:;
+- (void)clickDislikeButton:;
+- (void)clickDislikeView:;
+- (id)dislikeIndexPath;
+- (id)dislikeRoom;
+- (id)dislikeView;
+- (void)hiddenMaskView;
+- (id)initWithCollectionView:trackParams:;
+- (id)roomEnterFrom;
+- (void)setDislikeIndexPath:;
+- (void)setRoomEnterFrom:;
+- (void)setRoomEnterMethod:;
+- (void)showDislikeBubbleDueToFrame:;
+- (void)showDislikeViewForCell:atIndexPath:clickPoint:;
+- (id)trackParams;
+- (id)maskView;
+- (void)setDelegate:;
+- (void)setCollectionView:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)collectionView;
+- (void)setMaskView:;
+@end

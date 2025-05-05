@@ -1,0 +1,2 @@
+@interface RoomKickUserApiRoot : GPBRootObject
+@end

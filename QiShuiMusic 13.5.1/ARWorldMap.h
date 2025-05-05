@@ -1,0 +1,33 @@
+@interface ARWorldMap : NSObject
+@property (nonatomic) q version;
+@property (nonatomic) NSData trackingData;
+@property (nonatomic) NSData surfaceData;
+@property (nonatomic) {?=[4]} referenceOriginTransform;
+@property (nonatomic)  center;
+@property (nonatomic)  extent;
+@property (nonatomic) NSArray anchors;
+@property (nonatomic) ARPointCloud rawFeaturePoints;
+- (id)center;
+- (id)extent;
+- (long long)version;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)anchors;
+- (void)setAnchors:;
+- (id)trackingData;
+- (id)referenceOriginTransform;
+- (id)rawFeaturePoints;
+- (id)initWithTrackingData:referenceOriginTransform:;
+- (id)extractReferenceObjectWithTransform:center:extent:error:;
+- (id)surfaceData;
+- (void)setSurfaceData:;
++ (BOOL)supportsSecureCoding;
++ (id)featurePointsForTrackingData:referenceOriginTransform:;
++ (id)boundsForTrackingData:;
++ (id)keyframesForTrackingData:withFeaturePoints:referenceOriginTransform:;
+@end

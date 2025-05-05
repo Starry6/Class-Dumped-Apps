@@ -1,0 +1,38 @@
+@interface PPTopicRecord : NSObject
+@property (nonatomic) PPTopic topic;
+@property (nonatomic) PPSource source;
+@property (nonatomic) Q algorithm;
+@property (nonatomic) double initialScore;
+@property (nonatomic) double decayRate;
+@property (nonatomic) BOOL isLocal;
+@property (nonatomic) NSString extractionOsBuild;
+@property (nonatomic) I extractionAssetVersion;
+@property (nonatomic) double sentimentScore;
+@property (nonatomic) PPTopicMetadata metadata;
+@property (nonatomic) NSSet featureNames;
+- (unsigned long long)algorithm;
+- (double)sentimentScore;
+- (double)decayRate;
+- (id)metadata;
+- (id)featureValueForName:;
+- (id)identifier;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)featureNames;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)source;
+- (id)description;
+- (id)topic;
+- (BOOL)isLocal;
+- (id)mutableCopyWithZone:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (double)initialScore;
+- (id)extractionOsBuild;
+- (unsigned int)extractionAssetVersion;
+- (BOOL)isEqualToTopicRecord:;
++ (id)describeAlgorithm:;
++ (BOOL)supportsSecureCoding;
++ (id)algorithmForName:;
+@end

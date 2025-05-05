@@ -1,0 +1,30 @@
+@interface CKProcessScopedDaemonProxy : NSObject
+@property (nonatomic) <CKXPCProcessScopedDaemon> processScopedDaemonProxyCreator;
+@property (nonatomic) BOOL hasValidProcessScopedDaemonProxyCreator;
+@property (nonatomic) <NSObject> connectionInterruptedObserver;
+- (void)dealloc;
+- (void)wipeAllCachesAndDie;
+- (void)accountsDidGrantAccessToBundleID:containerIdentifiers:;
+- (void)_getProcessScopedDaemonProxySynchronous:errorHandler:daemonProxyHandler:;
+- (void)kill;
+- (void)_getProcessScopedDaemonProxyCreatorSynchronous:completionHandler:;
+- (BOOL)hasValidProcessScopedDaemonProxyCreator;
+- (void)clearPCSCachesForKnownContainersWithCompletionHandler:;
+- (void)accountsDidRevokeAccessToBundleID:containerIdentifiers:;
+- (unsigned long long)maxInlineMergeableDeltaSize;
+- (void)dumpAllClientsStatusReportToFileHandle:completionHandler:;
+- (void)setConnectionInterruptedObserver:;
+- (id)connectionInterruptedObserver;
+- (void)setHasValidProcessScopedDaemonProxyCreator:;
+- (void).cxx_destruct;
+- (id)_init;
+- (id)processScopedDaemonProxyCreator;
+- (void)wipeServerConfigurationsAndDie;
+- (void)accountsWillDeleteAccount:completionHandler:;
+- (void)accountWithID:changedWithChangeType:;
+- (void)updatePushTokens;
+- (void)setProcessScopedDaemonProxyCreator:;
++ (id)CKXPCDaemonToClientProcessScopedInterface;
++ (id)sharedProcessScopedDaemonProxy;
++ (id)CKXPCClientToDaemonProcessScopedInterface;
+@end

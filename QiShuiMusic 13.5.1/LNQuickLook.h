@@ -1,0 +1,35 @@
+@interface LNQuickLook : NSObject
+@property (nonatomic) @? completionHandler;
+@property (nonatomic) NSArray items;
+@property (nonatomic) NSMutableDictionary editedPreviewItems;
+@property (nonatomic) QLPreviewController previewController;
+@property (nonatomic) UIViewController viewControllerForPresenting;
+@property (nonatomic) q editingMode;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithItems:;
+- (void)previewControllerDidDismiss:;
+- (long long)numberOfPreviewItemsInPreviewController:;
+- (id)previewController:previewItemAtIndex:;
+- (long long)previewController:editingModeForPreviewItem:;
+- (id)items;
+- (void)setCompletionHandler:;
+- (void)setItems:;
+- (void).cxx_destruct;
+- (void)finishWithError:;
+- (id)viewControllerForPresenting;
+- (id)completionHandler;
+- (void)previewController:didSaveEditedCopyOfPreviewItem:atURL:;
+- (id)previewController;
+- (void)setPreviewController:;
+- (void)setEditingMode:;
+- (long long)editingMode;
+- (void)presentOverViewController:completionHandler:;
+- (void)cancelPresentationWithCompletionHandler:;
+- (id)editedItems;
+- (id)editedPreviewItems;
+- (void)setEditedPreviewItems:;
+- (void)setViewControllerForPresenting:;
+@end

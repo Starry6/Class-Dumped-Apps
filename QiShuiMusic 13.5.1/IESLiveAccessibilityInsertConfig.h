@@ -1,0 +1,31 @@
+@interface IESLiveAccessibilityInsertConfig : NSObject
+@property (nonatomic) @ itemElement;
+@property (nonatomic) q embeddedType;
+@property (nonatomic) q postionType;
+@property (nonatomic) {CGSize=dd} customViewSize;
+@property (nonatomic) {CGPoint=dd} absolutelyPointOrigin;
+@property (nonatomic) NSString relativeViewIdentify;
+@property (nonatomic) {UIOffset=dd} relativelyOffset;
+@property (nonatomic) @? clickBlock;
+@property (nonatomic) @? attributeBuilder;
+- (void)setItemElement:;
+- (void)setPostionType:;
+- (id)absolutelyPointOrigin;
+- (id)attributeBuilder;
+- (id)clickBlock;
+- (id)customViewSize;
+- (long long)embeddedType;
+- (id)itemElement;
+- (long long)postionType;
+- (id)relativeViewIdentify;
+- (id)relativelyOffset;
+- (void)setAbsolutelyPointOrigin:;
+- (void)setAttributeBuilder:;
+- (void)setClickBlock:;
+- (void)setCustomViewSize:;
+- (void)setEmbeddedType:;
+- (void)setRelativeViewIdentify:;
+- (void)setRelativelyOffset:;
+- (id)init;
+- (void).cxx_destruct;
+@end

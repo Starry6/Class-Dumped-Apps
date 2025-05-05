@@ -1,0 +1,35 @@
+@interface CNUIUserActionDiscoveringEnvironment : NSObject
+@property (nonatomic) <CNLSApplicationWorkspace> applicationWorkspace;
+@property (nonatomic) <CNTUCallProviderManager> callProviderManager;
+@property (nonatomic) CNUIIDSContactPropertyResolver idsContactPropertyResolver;
+@property (nonatomic) <CNMCProfileConnection> profileConnection;
+@property (nonatomic) <CNCapabilities> capabilities;
+@property (nonatomic) CNContactStore contactStore;
+@property (nonatomic) <CNSchedulerProvider> schedulerProvider;
+@property (nonatomic) <CNSchedulerProvider> highLatencySchedulerProvider;
+@property (nonatomic) <CNUIDefaultUserActionFetcher> defaultUserActionFetcher;
+@property (nonatomic) <CNUIRTTUtilities> ttyUtilities;
+@property (nonatomic) <CNUIUserActionTargetDiscovering> targetDiscoveringHelper;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (id)capabilities;
+- (id)schedulerProvider;
+- (id)nts_lazyContactStore;
+- (void).cxx_destruct;
+- (id)defaultUserActionFetcher;
+- (id)contactStore;
+- (id)profileConnection;
+- (id)callProviderManager;
+- (id)applicationWorkspace;
+- (id)initWithIDSAvailabilityProvider:schedulerProvider:capabilities:defaultUserActionFetcher:;
+- (id)copyWithContactStore:;
+- (id)idsContactPropertyResolver;
+- (id)highLatencySchedulerProvider;
+- (id)ttyUtilities;
+- (id)targetDiscoveringHelper;
+- (id)initWithIDSAvailablilityProvider:schedulerProvider:capabilities:defaultUserActionFetcher:;
+- (id)initWithApplicationWorkspace:callProviderManager:idsContactPropertyResolver:profileConnection:contactStore:schedulerProvider:highLatencySchedulerProvider:capabilities:defaultUserActionFetcher:ttyUtilities:;
+@end

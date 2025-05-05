@@ -1,0 +1,34 @@
+@interface GEOVLFGravityVector : PBCodable
+@property (nonatomic) BOOL hasX;
+@property (nonatomic) double x;
+@property (nonatomic) BOOL hasY;
+@property (nonatomic) double y;
+@property (nonatomic) BOOL hasZ;
+@property (nonatomic) double z;
+- (void)setHasX:;
+- (void)setHasY:;
+- (void)readAll:;
+- (BOOL)hasY;
+- (void)setX:;
+- (id)initWithJSON:;
+- (void)setY:;
+- (id)jsonRepresentation;
+- (double)y;
+- (id)initWithDictionary:;
+- (void)setZ:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (double)x;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (double)z;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)hasX;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setHasZ:;
+- (BOOL)hasZ;
++ (BOOL)isValid:;
+@end

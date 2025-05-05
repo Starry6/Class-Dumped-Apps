@@ -1,0 +1,30 @@
+@interface SWCollaborationCoordinator : NSObject
+@property (nonatomic) NSCache actionCache;
+@property (nonatomic) NSMutableArray cachedUUIDs;
+@property (nonatomic) BOOL applicationIsReadyForActions;
+@property (nonatomic) <SWCollaborationActionHandler> actionHandler;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)applicationIsReadyForActions;
+- (id)init;
+- (id)actionCache;
+- (void)_sendActionToApp:;
+- (void)_sendStartCollaborationAction:;
+- (void)_sendUpdateCollaborationParticipantsAction:;
+- (void)_sendUndeliveredActionsIfNecessary;
+- (void)processIncomingAction:;
+- (void)setActionHandler:;
+- (void)setCachedUUIDs:;
+- (id)cachedUUIDs;
+- (id)actionHandler;
+- (void)setActionCache:;
+- (void).cxx_destruct;
+- (void)applicationHasFinishedLaunching;
+- (void)_cacheAction:;
+- (void)cache:willEvictObject:;
+- (void)setApplicationIsReadyForActions:;
+- (void)processIncomingActions:;
++ (id)sharedCoordinator;
+@end

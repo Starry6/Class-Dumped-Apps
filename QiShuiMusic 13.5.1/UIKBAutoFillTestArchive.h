@@ -1,0 +1,35 @@
+@interface UIKBAutoFillTestArchive : NSObject
+@property (nonatomic) UIView snapshotView;
+@property (nonatomic) NSString viewControllerClassName;
+@property (nonatomic) NSString viewControllerTitle;
+@property (nonatomic) BOOL requiresNavigationControllerNesting;
+@property (nonatomic) NSString navigationControllerClassName;
+@property (nonatomic) NSString presentingViewControllerClassName;
+@property (nonatomic) UINavigationItem viewControllerNavigationItem;
+@property (nonatomic) UIKBAutoFillTestExpectedResult expectedResult;
+- (id)snapshotView;
+- (id)init;
+- (void)setViewControllerClassName:;
+- (void)setSnapshotView:;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)viewControllerClassName;
+- (id)copyWithZone:;
+- (id)autoFillTestArchiveData;
+- (id)tableViewDataSourceWithTag:;
+- (void)setTableViewDataSource:forTableViewWithTag:;
+- (id)expectedResult;
+- (void)setExpectedResult:;
+- (id)viewControllerTitle;
+- (void)setViewControllerTitle:;
+- (BOOL)requiresNavigationControllerNesting;
+- (void)setRequiresNavigationControllerNesting:;
+- (id)navigationControllerClassName;
+- (void)setNavigationControllerClassName:;
+- (id)presentingViewControllerClassName;
+- (void)setPresentingViewControllerClassName:;
+- (id)viewControllerNavigationItem;
+- (void)setViewControllerNavigationItem:;
++ (id)autoFillTestArchiveWithData:;
+@end

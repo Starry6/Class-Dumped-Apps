@@ -1,0 +1,31 @@
+@interface GEORequestCounterPersistence : NSObject
+@property (nonatomic) BOOL enabled;
+- (id)init;
+- (void)dealloc;
+- (BOOL)enabled;
+- (void)purgeAllCounts;
+- (void)_recordAnalylticsCount:logMsgType:at:withFxn:;
+- (void)getPlaceCacheResultsInTimeRange:rawCounts:complete:;
+- (void)finishedProactiveTileDownloadForIdentifier:policy:tilesConsidered:tileDownloadAttempts:successes:failures:bytesDownloaded:;
+- (void)incrementForApp:startTime:endTime:requestType:result:xmitBytes:recvBytes:usedInterfaces:withCompletion:;
+- (id)initWithDBFilePath:maxCountAge:;
+- (void)fetchAnalyticsHandlingDataFrom:completion:completionQueue:;
+- (void)recordAnalyticsUploadFailureCount:logMsgType:at:;
+- (void)_tearDown;
+- (void)recordAnalyticsUploadSuccessCount:bytes:logMsgType:usedCellular:at:;
+- (void)recordAnalyticsPersistCount:logMsgType:at:;
+- (void)addPlaceCacheResultForApp:timestamp:requestTypeRaw:result:;
+- (void)logsDuring:withCompletion:;
+- (void)recordAnalyticsDBExpireCount:logMsgType:at:;
+- (void)setEnabled:;
+- (void).cxx_destruct;
+- (void)_purgeOlderThan:;
+- (void)recordRoutePreloadSessionAt:transportType:tilesPreloaded:tilesUsed:tilesMissed:;
+- (void)startedProactiveTileDownloadForIdentifier:policy:;
+- (void)countsDuring:withCompletion:;
+- (void)incrementExternalForApp:startTime:endTime:xmitBytes:recvBytes:usedInterfaces:requestType:requestSubtype:source:;
+- (void)externalRequestsCount:;
+- (void)readProactiveTileDownloadsSince:handler:;
+- (void)fetchRoutePreloadSessionsFrom:completion:completionQueue:;
++ (id)sharedInstance;
+@end

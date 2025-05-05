@@ -1,0 +1,25 @@
+@interface VKImage : NSObject
+- (void)_prepareImage;
+- (void)dealloc;
+- (id)initWithCGImage:scale:usedAsTextureAndImage:;
+- (id)initWithCGImage:scale:;
+- (void)prepareTextureWithAtlas:;
+- (void)setCollisionRect:;
+- (id)initWithName:scale:resourceManager:;
+- (id)initWithData:scale:usedAsTextureAndImage:;
+- (id)anchorPoint;
+- (id)collisionRect;
+- (id)labelingPoint;
+- (void)setLabelingPoint:;
+- (id)initWithData:scale:;
+- (void)_prepareTextureWithAtlas:;
+- (int)compareTo:;
+- (id)textureCoordinates;
+- (void).cxx_destruct;
+- (double)scale;
+- (void)setAnchorPoint:;
+- (id).cxx_construct;
+- (id)gglTexture;
+- (id)image;
+- (id)size;
+@end

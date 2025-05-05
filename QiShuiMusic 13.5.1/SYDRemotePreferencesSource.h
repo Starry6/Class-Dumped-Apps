@@ -1,0 +1,35 @@
+@interface SYDRemotePreferencesSource : NSObject
+- (void)ping;
+- (id)copyDictionary;
+- (unsigned char)synchronizeForced:;
+- (void)updateConfiguration;
+- (id)initWithApplicationID:shared:;
+- (void)setValue:forKey:;
+- (void)dealloc;
+- (id)initWithApplicationID:storeID:shared:additionalSource:containerPath:storeType:;
+- (long long)maximumKeyCount;
+- (id)objectForKey:error:;
+- (id)copyExternalChangesWithChangeCount:;
+- (unsigned char)_synchronizeForced:;
+- (long long)maximumKeyLength;
+- (unsigned char)synchronize;
+- (unsigned char)hasExternalChanges;
+- (long long)maximumTotalDataLength;
+- (void)synchronizationWithCompletionHandler:;
+- (void)unregisterForSynchronizedDefaults;
+- (void)discardExternalChangesForChangeCount:;
+- (id)getValueForKey:;
+- (void)setDefaultsConfiguration:;
+- (BOOL)setObject:forKey:error:;
+- (void)registerForSynchronizedDefaults;
+- (id)dictionaryRepresentationWithError:;
+- (id)initWithApplicationID:storeID:shared:additionalSource:containerPath:;
+- (id)initWithApplicationID:storeID:shared:additionalSource:;
+- (long long)maximumDataLengthPerKey;
+- (void)scheduleRemoteSynchronization;
+- (id)initWithApplicationID:storeID:shared:;
++ (id)SYDRemotePreferencesSourceDidChangeNotification;
++ (id)SYDRemotePreferencesSourceConfigurationDidChangeNotification;
++ (void)migrateSyncedDefaultsForBundleIdentifier:;
++ (id)SYDUbiquitousKeyValueStoreDidChangeExternallyNotification;
+@end

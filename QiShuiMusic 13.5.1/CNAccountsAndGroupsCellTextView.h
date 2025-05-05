@@ -1,0 +1,2 @@
+@interface CNAccountsAndGroupsCellTextView : UITextView
+@end

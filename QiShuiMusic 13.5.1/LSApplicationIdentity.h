@@ -1,0 +1,34 @@
+@interface LSApplicationIdentity : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) LSApplicationRecord weakRecord;
+@property (nonatomic) NSString identityString;
+@property (nonatomic) NSString personaUniqueString;
+@property (nonatomic) Q personaType;
+- (id)fetchWrappedInfoWithError:;
+- (id)personaUniqueString;
+- (id)identityString;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (BOOL)needsMigration;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (Class)classForCoder;
+- (BOOL)isEqual:;
+- (unsigned long long)personaType;
+- (id)copyWithZone:;
+- (id)initWithIdentityString:parsedIdentityStringDictionary:error:;
+- (id)initWithIdentityString:;
+- (id)initWithBundleIdentifier:allowPlaceholder:personaUniqueString:error:;
+- (id)initWithIdentityBookmark:identityString:personaUniqueString:personaType:;
+- (id)initForRecord:personaWithAttributes:;
+- (id)findApplicationRecordWithError:;
+- (id)weakRecord;
+- (void)setWeakRecord:;
++ (unsigned int)classVersion;
++ (BOOL)supportsSecureCoding;
++ (id)enumeratorWithOptions:;
++ (Class)currentIdentityClass;
+@end

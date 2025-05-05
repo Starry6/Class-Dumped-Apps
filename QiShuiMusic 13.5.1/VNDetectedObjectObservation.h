@@ -1,0 +1,31 @@
+@interface VNDetectedObjectObservation : VNObservation
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} boundingBox;
+@property (nonatomic) NSUUID identifier;
+@property (nonatomic) VNPixelBufferObservation instanceSegmentationMask;
+@property (nonatomic) BOOL providesBoundsNormalizedToROI;
+@property (nonatomic) VNPixelBufferObservation globalSegmentationMask;
+- (id)debugQuickLookObject;
+- (id)boundingBox;
+- (id)identifier;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (void)setIdentifier:;
+- (BOOL)isEqual:;
+- (void)setBoundingBox:;
+- (id)vn_cloneObject;
+- (id)initWithOriginatingRequestSpecifier:boundingBox:;
+- (id)initWithOriginatingRequestSpecifier:;
+- (void)setBoundingBoxFromQuadrilateralPointsAtTopLeft:topRight:bottomRight:bottomLeft:;
+- (BOOL)providesBoundsNormalizedToROI;
+- (id)globalSegmentationMask;
+- (id)instanceSegmentationMask;
+- (id)boundingBoxInTopLeftOrigin:orientation:;
++ (BOOL)supportsSecureCoding;
++ (id)defaultOriginatingRequestClassNameForRequestRevision:;
++ (id)observationWithRequestRevision:boundingBox:;
++ (BOOL)boundingBoxIsCalculatedProperty;
++ (id)observationWithBoundingBox:;
+@end

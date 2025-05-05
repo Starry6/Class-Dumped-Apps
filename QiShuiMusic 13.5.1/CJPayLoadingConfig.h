@@ -1,0 +1,32 @@
+@interface CJPayLoadingConfig : JSONModel
+@property (nonatomic) BOOL enableHalfLoadingUseWindow;
+@property (nonatomic) q halfLoadingTimeOut;
+@property (nonatomic) q superPayLoadingTimeOut;
+@property (nonatomic) q superPayLoadingQueryInterval;
+@property (nonatomic) q superPayLoadingStayTime;
+@property (nonatomic) BOOL isEcommerceDouyinLoadingAutoClose;
+@property (nonatomic) q loadingTimeOut;
+@property (nonatomic) NSString superPayLoadingFailTitle;
+@property (nonatomic) NSString superPayLoadingFailSubTitle;
+- (void)setSuperPayLoadingFailSubTitle:;
+- (BOOL)enableHalfLoadingUseWindow;
+- (long long)halfLoadingTimeOut;
+- (BOOL)isEcommerceDouyinLoadingAutoClose;
+- (long long)loadingTimeOut;
+- (void)setEnableHalfLoadingUseWindow:;
+- (void)setHalfLoadingTimeOut:;
+- (void)setIsEcommerceDouyinLoadingAutoClose:;
+- (void)setLoadingTimeOut:;
+- (void)setSuperPayLoadingFailTitle:;
+- (void)setSuperPayLoadingQueryInterval:;
+- (void)setSuperPayLoadingStayTime:;
+- (void)setSuperPayLoadingTimeOut:;
+- (id)superPayLoadingFailSubTitle;
+- (id)superPayLoadingFailTitle;
+- (long long)superPayLoadingQueryInterval;
+- (long long)superPayLoadingStayTime;
+- (long long)superPayLoadingTimeOut;
+- (void).cxx_destruct;
++ (id)keyMapper;
++ (BOOL)propertyIsOptional:;
+@end

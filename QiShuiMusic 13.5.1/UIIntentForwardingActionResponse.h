@@ -1,0 +1,2 @@
+@interface UIIntentForwardingActionResponse : UISIntentForwardingActionResponse
+@end

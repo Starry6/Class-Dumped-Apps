@@ -1,0 +1,31 @@
+@interface BU_IESGurdSyncResourcesParams : NSObject
+@property (nonatomic) NSString accessKey;
+@property (nonatomic) NSArray p_channels;
+@property (nonatomic) NSString p_resourceVersion;
+@property (nonatomic) NSString p_groupName;
+@property (nonatomic) NSString p_businessDomain;
+@property (nonatomic) BOOL p_forceRequest;
+@property (nonatomic) @? p_completion;
+- (void)setP_groupName:;
+- (id)businessDomain;
+- (id)forceRequest;
+- (id)p_businessDomain;
+- (id)p_channels;
+- (id)p_completion;
+- (BOOL)p_forceRequest;
+- (id)p_groupName;
+- (id)p_resourceVersion;
+- (void)setP_businessDomain:;
+- (void)setP_channels:;
+- (void)setP_completion:;
+- (void)setP_forceRequest:;
+- (void)setP_resourceVersion:;
+- (id)syncResources;
+- (id)completion;
+- (id)channels;
+- (id)resourceVersion;
+- (void).cxx_destruct;
+- (id)groupName;
+- (id)accessKey;
+- (void)setAccessKey:;
+@end

@@ -1,0 +1,32 @@
+@interface INRelevantShortcut : NSObject
+@property (nonatomic) INImage _keyImage;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) INShortcut shortcut;
+@property (nonatomic) NSArray relevanceProviders;
+@property (nonatomic) INDefaultCardTemplate watchTemplate;
+@property (nonatomic) NSString widgetKind;
+@property (nonatomic) q shortcutRole;
+- (id)init;
+- (void)_injectProxiesForImages:completion:;
+- (id)widgetKind;
+- (void)setWidgetKind:;
+- (id)initWithCoder:;
+- (long long)_compareSubProducerOne:subProducerTwo:;
+- (id)_keyImage;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (void)setShortcut:;
+- (id)shortcut;
+- (id)copyWithZone:;
+- (id)initWithShortcut:;
+- (void)setRelevanceProviders:;
+- (id)relevanceProviders;
+- (id)watchTemplate;
+- (void)setWatchTemplate:;
+- (long long)shortcutRole;
+- (void)setShortcutRole:;
++ (BOOL)supportsSecureCoding;
+@end

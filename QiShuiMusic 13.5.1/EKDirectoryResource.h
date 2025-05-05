@@ -1,0 +1,2 @@
+@interface EKDirectoryResource : EKDirectoryRecord
+@end

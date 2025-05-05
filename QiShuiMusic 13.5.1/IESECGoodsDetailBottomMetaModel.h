@@ -1,0 +1,38 @@
+@interface IESECGoodsDetailBottomMetaModel : MTLModel
+@property (nonatomic) IESECGoodsDetailIMMetaModel imMeta;
+@property (nonatomic) IESECGoodsDetailCartMetaModel cartMeta;
+@property (nonatomic) IESECGoodsDetailBottomShopMetaModel shopMeta;
+@property (nonatomic) IESECGoodsDetailAddToCartMetaModel addToCartMeta;
+@property (nonatomic) IESECGoodsDetailSKUMetaModel skuMeta;
+@property (nonatomic) IESECGoodsDetailBuyMetaModel buyMeta;
+@property (nonatomic) IESECGoodsDetailAppointMetaModel appointMeta;
+@property (nonatomic) IESECGoodsDetailBottomTipMetaModel tipMeta;
+@property (nonatomic) NSDictionary skuInfo;
+@property (nonatomic) BOOL oneStepAddToCart;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)buyMeta;
+- (void)setAppointMeta:;
+- (id)skuMeta;
+- (id)skuInfo;
+- (id)tipMeta;
+- (id)addToCartMeta;
+- (id)appointMeta;
+- (id)cartMeta;
+- (id)imMeta;
+- (BOOL)oneStepAddToCart;
+- (void)setAddToCartMeta:;
+- (void)setBuyMeta:;
+- (void)setCartMeta:;
+- (void)setImMeta:;
+- (void)setOneStepAddToCart:;
+- (void)setShopMeta:;
+- (void)setSkuInfo:;
+- (void)setSkuMeta:;
+- (void)setTipMeta:;
+- (id)shopMeta;
+- (void).cxx_destruct;
++ (id)JSONKeyPathsByPropertyKey;
+@end

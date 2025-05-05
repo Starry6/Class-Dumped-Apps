@@ -1,0 +1,30 @@
+@interface AKLoginFieldsViewController : UIViewController
+@property (nonatomic) AKAppleIDAuthenticationContext context;
+@property (nonatomic) UITextField usernameField;
+@property (nonatomic) UITextField passwordField;
+@property (nonatomic) <AKLoginFieldsDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)textFieldShouldReturn:;
+- (id)context;
+- (void)setDelegate:;
+- (id)delegate;
+- (id)initWithContext:;
+- (void).cxx_destruct;
+- (void)setContext:;
+- (BOOL)textField:shouldChangeCharactersInRange:replacementString:;
+- (void)viewDidLoad;
+- (id)passwordField;
+- (void)clearPassword;
+- (id)usernameText;
+- (id)passwordText;
+- (void)showPasswordField;
+- (void)_prepareUsernameField;
+- (void)_preparePasswordField;
+- (void)_hidePasswordIfNeeded;
+- (id)usernameField;
+- (void)setUsernameField:;
+- (void)setPasswordField:;
+@end

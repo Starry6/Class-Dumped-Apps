@@ -1,0 +1,30 @@
+@interface ISConcreteIcon : ISIcon
+@property (nonatomic) ISImageCache imageCache;
+@property (nonatomic) NSUUID digest;
+- (id)digest;
+- (id)imageCache;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)getImageForImageDescriptor:completion:;
+- (id)symbol;
+- (void)encodeWithCoder:;
+- (id)makeResourceProvider;
+- (double)_aspectRatio;
+- (id)_fallbackKey;
+- (id)makeSymbolResourceProvider;
+- (void).cxx_destruct;
+- (id)imageForDescriptor:;
+- (void)resolve;
+- (void)_prepareImagesForImageDescriptors:;
+- (BOOL)isEqual:;
+- (id)_imageForSymbolImageDescriptor:;
+- (id)initWithDigest:;
+- (BOOL)isEqualToIcon:;
+- (id)_placeholderImageWithImageDescriptor:markAsPlaceholder:;
+- (id)_imageFromStoreForDescriptor:;
+- (id)_cachedImageForDescriptor:;
+- (unsigned long long)assessValidationToken:;
+- (id)generateImageWithDescriptor:;
+- (void)generateImageWithDescriptor:completion:;
++ (BOOL)supportsSecureCoding;
+@end

@@ -1,0 +1,32 @@
+@interface C2MPServerInfo : PBCodable
+@property (nonatomic) BOOL hasServiceName;
+@property (nonatomic) NSString serviceName;
+@property (nonatomic) BOOL hasPartition;
+@property (nonatomic) NSString partition;
+@property (nonatomic) BOOL hasServiceBuild;
+@property (nonatomic) NSString serviceBuild;
+@property (nonatomic) BOOL hasServiceInstance;
+@property (nonatomic) NSString serviceInstance;
+- (void)setPartition:;
+- (id)partition;
+- (void)setServiceName:;
+- (void)writeTo:;
+- (id)serviceName;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (BOOL)hasServiceName;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasPartition;
+- (BOOL)hasServiceBuild;
+- (BOOL)hasServiceInstance;
+- (id)serviceBuild;
+- (void)setServiceBuild:;
+- (id)serviceInstance;
+- (void)setServiceInstance:;
+@end

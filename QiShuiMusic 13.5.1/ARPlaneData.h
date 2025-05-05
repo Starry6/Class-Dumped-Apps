@@ -1,0 +1,31 @@
+@interface ARPlaneData : NSObject
+@property (nonatomic) ARCV3DPlaneDetectionPlaneList detectionResult;
+@property (nonatomic) double timestamp;
+@property (nonatomic) Q detectionTypeMask;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSDictionary tracingEntry;
+- (void)setTimestamp:;
+- (void).cxx_destruct;
+- (double)timestamp;
+- (id)anchorsForCameraWithTransform:referenceOriginTransform:existingAnchors:anchorsToRemove:;
+- (id)tracingEntry;
+- (id)initWithDetectionResult:detectionTypeMask:sceneUnderstandingEnabled:;
+- (id)initWithDetectionResult:detectionTypeMask:sceneUnderstandingEnabled:visionToRendering:atTimestamp:;
+- (BOOL)applyPivotRotation;
+- (id)_anchorForPlane:identifier:referenceOriginTransform:;
+- (id)_updatedAnchor:forPlane:referenceOriginTransform:;
+- (unsigned long long)detectionTypeMask;
+- (id)detectionResult;
++ (id)_applyPivotToPlaneToWorldTransform:pivot:;
++ (float)_pivotForPlane:;
++ (void)_updateExtentsForPlaneAnchor:plane:pivot:applyPivotRotation:detectionTypeMask:;
++ (long long)_worldAlignmentRotationForReferenceTransform:planeAlignment:detectionTypeMask:;
++ (id)_anchorForPlane:identifier:referenceOriginTransform:visionToRendering:sceneUnderstandingEnabled:applyPivotRotation:detectionTypeMask:;
++ (float)_surfacePivotForPlane:;
++ (id)_surfaceToWorldTransformForPlane:pivot:;
++ (void)setSemanticsFromCV3D:labelProbabilities:sceneUnderstandingEnabled:onPlane:;
++ (id)anchorForDetectionResult:;
+@end

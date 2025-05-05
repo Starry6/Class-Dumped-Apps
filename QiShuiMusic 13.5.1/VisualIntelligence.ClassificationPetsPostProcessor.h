@@ -1,0 +1,2 @@
+@interface VisualIntelligence.ClassificationPetsPostProcessor : _TtCs12_SwiftObject
+@end

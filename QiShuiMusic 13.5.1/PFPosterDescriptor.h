@@ -1,0 +1,38 @@
+@interface PFPosterDescriptor : NSObject
+@property (nonatomic) BOOL isBlankTemplate;
+@property (nonatomic) q posterType;
+@property (nonatomic) q descriptorType;
+@property (nonatomic) NSArray media;
+@property (nonatomic) Q version;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) NSString displayNameLocalizationKey;
+@property (nonatomic) NSString styleCategory;
+@property (nonatomic) PFPosterShuffleConfiguration shuffleConfiguration;
+- (id)displayNameLocalizationKey;
+- (void)setDisplayNameLocalizationKey:;
+- (BOOL)isBlankTemplate;
+- (void)setVersion:;
+- (unsigned long long)version;
+- (id)identifier;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)media;
+- (void)setIdentifier:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (long long)descriptorType;
+- (BOOL)saveToURL:error:;
+- (id)shuffleConfiguration;
+- (void)setShuffleConfiguration:;
+- (long long)posterType;
+- (id)initWithDescriptorType:media:;
+- (id)styleCategory;
+- (void)setStyleCategory:;
++ (BOOL)supportsSecureCoding;
++ (id)loadFromURL:error:;
++ (id)descriptorIdentifierForDescriptorType:uuids:;
++ (id)descriptorTypeStringWithType:;
++ (long long)descriptorTypeFromTypeString:;
+@end

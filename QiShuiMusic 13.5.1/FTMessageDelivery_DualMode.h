@@ -1,0 +1,31 @@
+@interface FTMessageDelivery_DualMode : NSObject
+@property (nonatomic) NSString userAgent;
+@property (nonatomic) BOOL hasQueuedItems;
+@property (nonatomic) BOOL busy;
+@property (nonatomic) BOOL retryInAirplaneMode;
+@property (nonatomic) BOOL logToRegistration;
+@property (nonatomic) IDSBaseMessage currentMessage;
+@property (nonatomic) NSArray queuedMessages;
+@property (nonatomic) NSArray allMessages;
+@property (nonatomic) q maxMessageSize;
+@property (nonatomic) q maxLargeMessageSize;
+@property (nonatomic) Q maxConcurrentMessages;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)queue:hitTimeoutForMessage:;
+- (void)cancelMessage:;
+- (void)setUserAgent:;
+- (BOOL)sendMessage:;
+- (id)initWithPreferedType:;
+- (void)_enterBackOffMode;
+- (void)dequeueMessageIfNeeded;
+- (BOOL)_shouldUseDualDeliveryForMessage:;
+- (void)handleTranslationAndDeliveryOnAPS:;
+- (void).cxx_destruct;
+- (long long)_randomPercentageChanceForDualDelivery;
+- (id)queuedMessages;
+- (BOOL)_isInBackoffMode;
+- (void)invalidate;
+@end

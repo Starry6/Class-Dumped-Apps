@@ -1,0 +1,31 @@
+@interface CoreDAVMoveWithFallbackTaskGroup : CoreDAVTaskGroup
+@property (nonatomic) NSURL sourceURL;
+@property (nonatomic) NSURL destinationURL;
+@property (nonatomic) NSInteger overwrite;
+@property (nonatomic) BOOL useFallback;
+@property (nonatomic) NSString previousETag;
+@property (nonatomic) NSData dataPayload;
+@property (nonatomic) NSString dataContentType;
+@property (nonatomic) NSDictionary responseHeaders;
+@property (nonatomic) NSString nextETag;
+- (void)startTaskGroup;
+- (id)responseHeaders;
+- (void)setPreviousETag:;
+- (id)sourceURL;
+- (id)dataContentType;
+- (id)destinationURL;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)useFallback;
+- (id)previousETag;
+- (void)setUseFallback:;
+- (int)overwrite;
+- (void)setOverwrite:;
+- (void)setDataPayload:;
+- (id)dataPayload;
+- (id)nextETag;
+- (id)initWithSourceURL:destinationURL:AccountInfoProvider:taskManager:;
+- (void)_completedMoveTask:;
+- (void)_completedPutTask:;
+- (void)setDataContentType:;
+@end

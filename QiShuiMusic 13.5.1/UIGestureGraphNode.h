@@ -1,0 +1,30 @@
+@interface UIGestureGraphNode : UIGestureGraphElement
+@property (nonatomic) Q edgeCount;
+@property (nonatomic) NSSet allEdges;
+@property (nonatomic) NSSet inEdges;
+@property (nonatomic) NSSet outEdges;
+@property (nonatomic) NSSet inOutEdges;
+- (void)enumerateEdgesTowardNode:usingBlock:;
+- (void)_addEdge:;
+- (BOOL)isInOutEdge:;
+- (BOOL)isOutEdge:;
+- (void)_removeEdge:;
+- (void)enumerateEdgesBetweenNode:usingBlock:;
+- (id)edgesForLabel:;
+- (void)enumerateEdgesFromNode:usingBlock:;
+- (id)allEdges;
+- (unsigned long long)edgeCountForLabel:;
+- (id)inOutEdges;
+- (BOOL)hasEdgeFromNode:;
+- (BOOL)isInEdge:;
+- (BOOL)hasEdgeTowardNode:;
+- (unsigned long long)edgeCount;
+- (id)inEdges;
+- (void).cxx_destruct;
+- (id)_edgesForType:createIfNeeded:;
+- (BOOL)hasEdgeBetweenNode:;
+- (void)enumerateNeighborNodesUsingBlock:;
+- (id)description;
+- (id)outEdges;
+- (unsigned long long)typeOfEdge:;
+@end

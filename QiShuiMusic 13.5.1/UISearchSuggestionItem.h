@@ -1,0 +1,31 @@
+@interface UISearchSuggestionItem : NSObject
+@property (nonatomic) NSAttributedString localizedAttributedSuggestion;
+@property (nonatomic) NSString localizedSuggestion;
+@property (nonatomic) NSString localizedDescription;
+@property (nonatomic) UIImage iconImage;
+@property (nonatomic) @ representedObject;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)localizedDescription;
+- (id)debugDescription;
+- (void).cxx_destruct;
+- (id)iconImage;
+- (id)localizedSuggestion;
+- (id)localizedAttributedSuggestion;
+- (id)representedObject;
+- (void)setRepresentedObject:;
+- (id)initWithLocalizedAttributedSuggestion:;
+- (id)initWithLocalizedAttributedSuggestion:localizedDescription:;
+- (id)initWithLocalizedAttributedSuggestion:localizedDescription:iconImage:;
+- (id)initWithLocalizedSuggestion:;
+- (id)initWithLocalizedSuggestion:localizedDescription:;
+- (id)initWithLocalizedSuggestion:localizedDescription:iconImage:;
++ (id)suggestionWithLocalizedAttributedSuggestion:;
++ (id)suggestionWithLocalizedAttributedSuggestion:descriptionString:;
++ (id)suggestionWithLocalizedAttributedSuggestion:descriptionString:iconImage:;
++ (id)suggestionWithLocalizedSuggestion:;
++ (id)suggestionWithLocalizedSuggestion:descriptionString:;
++ (id)suggestionWithLocalizedSuggestion:descriptionString:iconImage:;
+@end

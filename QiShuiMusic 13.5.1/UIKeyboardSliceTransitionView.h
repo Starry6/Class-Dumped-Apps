@@ -1,0 +1,34 @@
+@interface UIKeyboardSliceTransitionView : UIKeyboardSplitTransitionView
+- (void)dealloc;
+- (void)setFrame:;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)setHidden:;
+- (void)updateWithProgress:;
+- (void)rebuildTransitionForSplitStyleChange:;
+- (void)initializeLayers;
+- (void)transformForProgress:;
+- (void)rebuildFromKeyplane:toKeyplane:startToken:endToken:keyboardType:orientation:;
+- (void)rebuildControlKeys:;
+- (BOOL)canDisplayTransition;
+- (id)defaultKeyboardImage;
+- (id)splitKeyboardImage;
+- (void)rebuildShiftSlices;
+- (void)rebuildReturnSlices;
+- (void)rebuildMoreIntlKeys;
+- (void)_delayedUpdateTransition;
+- (void)updateTransition;
+- (void)setRebuildFlags;
+- (id)getKeyboardImageAsSplit:;
+- (double)adjustedLeftWidthAtMergePoint;
+- (double)adjustedRightWidthAtMergePoint;
+- (id)crossfadeOpacityAnimation;
+- (void)rebuildTopEdgeHighlightTransition;
+- (void)rebuildShadows;
+- (void)rebuildBackgroundAndShadowTransitions;
+- (void)rebuildBackgroundGradientTransitions;
+- (void)updateTransitionForSlice:withStart:startContents:end:endContents:updateContents:;
+- (void)refreshKeyplaneImages;
+- (void)rebuildSliceTransitions;
+- (id)meshTransformForProgress:;
+@end

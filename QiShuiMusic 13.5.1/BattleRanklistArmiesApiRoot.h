@@ -1,0 +1,2 @@
+@interface BattleRanklistArmiesApiRoot : GPBRootObject
+@end

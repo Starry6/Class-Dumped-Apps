@@ -1,0 +1,30 @@
+@interface IDSInvitationManager : NSObject
+@property (nonatomic) IDSService internal;
+@property (nonatomic) <IDSInvitationManagerDelegate> delegate;
+@property (nonatomic) NSSet pendingInvitations;
+@property (nonatomic) NSSet receivedInvitations;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)service:account:incomingInvitationUpdate:withContext:;
+- (void)declineInvitation:serverAcknowledgedBlock:;
+- (id)initWithServiceIdentifier:;
+- (void)setDelegate:;
+- (void)service:account:identifier:didSendWithSuccess:error:context:;
+- (void)cancelInvitation:serverAcknowledgedBlock:;
+- (BOOL)validateReceivedInvitation:;
+- (id)internal;
+- (void)sendInvitationToDestination:expirationDate:context:serverAcknowledgedBlock:;
+- (void)acceptInvitation:withContext:serverAcknowledgedBlock:;
+- (void)service:account:incomingInvitation:withContext:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)validateStrictDecodingForSentInvitation:;
+- (id)receivedInvitations;
+- (void)setupInvitationsForService:;
+- (id)pendingInvitations;
+- (void)removePendingInvitation:;
+- (void)removeReceivedInvitation:;
+- (void)setDelegate:queue:;
+@end

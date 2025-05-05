@@ -1,0 +1,38 @@
+@interface CTDeviceDataUsage : NSObject
+@property (nonatomic) Q periods;
+@property (nonatomic) NSMutableDictionary apps;
+@property (nonatomic) NSMutableDictionary uninstalledApps;
+@property (nonatomic) NSMutableDictionary proxiedOnlyApps;
+@property (nonatomic) NSMutableDictionary systemServices;
+@property (nonatomic) NSArray wifiAssist;
+- (id)apps;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)copyWithZone:;
+- (void)setApps:;
+- (id)dataUsage:forPeriod:;
+- (id)appDataUsageForPeriod:;
+- (id)uninstalledAppDataUsageForPeriod:;
+- (id)proxiedOnlyAppDataUsageForPeriod:;
+- (id)systemServiceDataUsageForPeriod:;
+- (id)totalDataUsage:forPeriod:;
+- (id)totalDataUsedForPeriod:;
+- (id)totalAppDataUsedForPeriod:;
+- (id)totalUninstalledAppDataUsedForPeriod:;
+- (id)totalProxiedOnlyAppDataUsedForPeriod:;
+- (id)totalSystemServiceDataUsedForPeriod:;
+- (id)totalWifiAssistUsageForPeriod:;
+- (unsigned long long)periods;
+- (void)setPeriods:;
+- (id)uninstalledApps;
+- (void)setUninstalledApps:;
+- (id)proxiedOnlyApps;
+- (void)setProxiedOnlyApps:;
+- (id)systemServices;
+- (void)setSystemServices:;
+- (id)wifiAssist;
+- (void)setWifiAssist:;
++ (BOOL)supportsSecureCoding;
+@end

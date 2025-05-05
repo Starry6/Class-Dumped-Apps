@@ -1,0 +1,21 @@
+@interface SBSWallpaperService : NSObject
+- (BOOL)setWallpaperColorName:forVariants:;
+- (BOOL)setWallpaperGradient:forVariants:;
+- (id)init;
+- (void)fetchThumbnailForVariant:completionHandler:;
+- (void)dealloc;
+- (void)fetchMaximalLockScreenContentCutoutBoundsForOrientation:completionHandler:;
+- (void)fetchOriginalVideoURLForVariant:completionHandler:;
+- (void)triggerPosterSignificantEventWithCompletion:;
+- (BOOL)setWallpaperWithVideoWithWallpaperMode:cropRect:wallpaperMode:;
+- (void)fetchContentCutoutBoundsForVariant:orientation:completionHandler:;
+- (void)fetchOriginalImageForVariant:completionHandler:;
+- (BOOL)setWallpaperColor:darkColor:forVariants:;
+- (void).cxx_destruct;
+- (void)fetchObscurableBoundsForOrientation:completionHandler:;
+- (void)restoreDefaultWallpaperWithCompletion:;
+- (void)fetchLimitedOcclusionBoundsForOrientation:completionHandler:;
+- (void)fetchLockScreenContentCutoutBoundsForOrientation:completionHandler:;
+- (void)invalidate;
+- (void)fetchLockScreenTimeBoundsForOrientation:completionHandler:;
+@end

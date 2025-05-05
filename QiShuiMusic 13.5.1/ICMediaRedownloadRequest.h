@@ -1,0 +1,37 @@
+@interface ICMediaRedownloadRequest : ICRequestOperation
+@property (nonatomic) ICStoreRequestContext requestContext;
+@property (nonatomic) NSDictionary redownloadParameters;
+@property (nonatomic) NSString requestURLBagKey;
+@property (nonatomic) BOOL includeKeybagSyncData;
+@property (nonatomic) BOOL includeSubscriptionKeybagSyncData;
+@property (nonatomic) BOOL playbackRequest;
+@property (nonatomic) BOOL streamingRental;
+@property (nonatomic) BOOL usePrioritizedURLSession;
+@property (nonatomic) ICURLSession urlSession;
+- (id)urlSession;
+- (void)execute;
+- (id)init;
+- (void)cancel;
+- (void)setRequestContext:;
+- (void)setUrlSession:;
+- (void)performRequestWithResponseHandler:;
+- (id)requestContext;
+- (void).cxx_destruct;
+- (id)redownloadParameters;
+- (void)setRedownloadParameters:;
+- (id)initWithRequestContext:redownloadParameters:;
+- (id)initWithRequestContext:redownloadParametersString:;
+- (void)_executeWithActiveICloudAccountProperties:;
+- (BOOL)isPlaybackRequest;
+- (void)setPlaybackRequest:;
+- (BOOL)isStreamingRental;
+- (void)setStreamingRental:;
+- (BOOL)usePrioritizedURLSession;
+- (void)setUsePrioritizedURLSession:;
+- (id)requestURLBagKey;
+- (void)setRequestURLBagKey:;
+- (BOOL)includeKeybagSyncData;
+- (void)setIncludeKeybagSyncData:;
+- (BOOL)includeSubscriptionKeybagSyncData;
+- (void)setIncludeSubscriptionKeybagSyncData:;
+@end

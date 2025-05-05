@@ -1,0 +1,35 @@
+@interface ABUPersistence : NSObject
+@property (nonatomic) NSString name;
+@property (nonatomic) ABUMemoryCache memoryCache;
+@property (nonatomic) ABUDiskCache diskCache;
+@property (nonatomic) NSObject<OS_dispatch_semaphore> lock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)updateObjectsForKeys:WithBlock:;
+- (void)setDiskCache:;
+- (id)valueForKey:;
+- (BOOL)removeAll;
+- (id)init;
+- (void)setValue:forKey:;
+- (BOOL)setObject:forKey:;
+- (void)setName:;
+- (BOOL)save;
+- (id)diskCache;
+- (id)memoryCache;
+- (id)lock;
+- (BOOL)removeObjectsForKeys:;
+- (id)objectForKey:;
+- (void).cxx_destruct;
+- (id)objectsForKeys:;
+- (id)name;
+- (id)allObjects;
+- (void)setLock:;
+- (void)setMemoryCache:;
+- (BOOL)hasObjectForKey:;
++ (void)deleteWithName:;
++ (id)persistenceWithName:;
++ (id)persistenceWithName:option:;
++ (id)cacheDirectory;
+@end

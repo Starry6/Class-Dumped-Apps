@@ -1,0 +1,33 @@
+@interface ACTrackedSet : NSObject
+@property (nonatomic) Q count;
+- (void)enumerateModificationsWithOptions:usingBlock:;
+- (id)init;
+- (id)_initWithUnderlyingSet:changesDictionary:;
+- (id)anyObject;
+- (BOOL)containsObject:;
+- (BOOL)isEqualToTrackedSet:;
+- (void)enumerateObjectsWithOptions:usingBlock:;
+- (id)allModifications;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)_initWithEnumerable:count:;
+- (void)encodeWithCoder:;
+- (void)enumerateModificationsUsingBlock:;
+- (id)member:;
+- (id)initWithArray:;
+- (id)initWithObjects:count:;
+- (void).cxx_destruct;
+- (void)enumerateObjectsUsingBlock:;
+- (id)initWithSet:;
+- (id)description;
+- (id)objectEnumerator;
+- (id)mutableCopyWithZone:;
+- (id)allObjects;
+- (unsigned long long)count;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
++ (BOOL)supportsSecureCoding;
++ (id)set;
++ (id)setWithSet:;
++ (id)setWithArray:;
+@end

@@ -1,0 +1,33 @@
+@interface AFSUPFunctionProvider : AFSpeakableUtteranceParser
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (void).cxx_destruct;
+- (id)initWithLocale:;
+- (id)_meCard;
+- (id)_deviceModel;
+- (id)stringForExpression:containsPrivacySensitiveContents:;
+- (id)stringForExpression:;
+- (id)_dateFormattedWithFormatter:arguments:;
+- (id)_currentTime:;
+- (id)_currentLongDate:;
+- (id)_currentShortDate:;
+- (id)_currentWeekday:;
+- (id)_tempInWeatherUnits:;
+- (id)_lowercaseString:;
+- (id)_userFullName:;
+- (id)_userFirstName:;
+- (id)_userMiddleName:;
+- (id)_userLastName:;
+- (id)_userNickName:;
+- (id)_meCardIdentifier:;
+- (id)_siriUsageDescription:;
+- (id)_speechRecognitionUsageDescription:;
+- (id)_contextRoomName:;
+- (id)_contextDeviceName:;
+- (id)_peerInfoForContextIdentifier:;
+- (id)_callFunction:withArguments:;
++ (BOOL)_shouldAutomaticallyProvideFunctions;
+@end

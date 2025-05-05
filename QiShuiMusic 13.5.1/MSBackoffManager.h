@@ -1,0 +1,37 @@
+@interface MSBackoffManager : NSObject
+@property (nonatomic) <MSBackoffManagerDelegate> delegate;
+@property (nonatomic) double initialInterval;
+@property (nonatomic) double backoffFactor;
+@property (nonatomic) double randomizeFactor;
+@property (nonatomic) double maxBackoffInterval;
+@property (nonatomic) double currentInterval;
+@property (nonatomic) NSDate nextExpiryDate;
+@property (nonatomic) NSDate retryAfterDate;
+- (double)currentInterval;
+- (double)backoffFactor;
+- (void)_complainAboutMissingKeyInArchive:;
+- (void)setCurrentInterval:;
+- (void)didReceiveRetryAfterDate:;
+- (void)backoff;
+- (double)initialInterval;
+- (void)setDelegate:;
+- (id)initWithInitialInterval:backoffFactor:randomizeFactor:maxBackoffInterval:retryAfterDate:;
+- (id)retryAfterDate;
+- (id)initWithCoder:;
+- (double)randomizeFactor;
+- (void)setMaxBackoffInterval:;
+- (void)encodeWithCoder:;
+- (id)delegate;
+- (void)setInitialInterval:;
+- (void).cxx_destruct;
+- (void)setBackoffFactor:;
+- (void)reset;
+- (double)maxBackoffInterval;
+- (void)setRandomizeFactor:;
+- (void)setNextExpiryDate:;
+- (id)nextExpiryDate;
+- (void)setRetryAfterDate:;
+- (BOOL)isEqual:;
+- (id)copyParameters;
++ (BOOL)supportsSecureCoding;
+@end

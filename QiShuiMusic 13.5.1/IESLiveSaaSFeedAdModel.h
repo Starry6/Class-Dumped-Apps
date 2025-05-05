@@ -1,0 +1,35 @@
+@interface IESLiveSaaSFeedAdModel : BDDynamicMTLModel
+@property (nonatomic) NSNumber adId;
+@property (nonatomic) NSString type;
+@property (nonatomic) NSString openUrl;
+@property (nonatomic) NSString webUrl;
+@property (nonatomic) NSString webTitle;
+@property (nonatomic) NSString buttonText;
+@property (nonatomic) NSString downloadUrl;
+@property (nonatomic) NSArray imageList;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString adLabel;
+@property (nonatomic) NSString requestId;
+@property (nonatomic) NSString logExtra;
+@property (nonatomic) NSString appleId;
+@property (nonatomic) NSArray trackUrlList;
+@property (nonatomic) NSArray clickTrackUrlList;
+@property (nonatomic) NSArray playTrackUrlList;
+@property (nonatomic) NSArray playOverTrackUrlList;
+@property (nonatomic) NSArray effectivePlayTrackUrlList;
+@property (nonatomic) NSNumber effectivePlayTime;
+@property (nonatomic) NSNumber allowComment;
+@property (nonatomic) NSNumber allowDislike;
+@property (nonatomic) NSNumber allowShare;
+@property (nonatomic) NSNumber showButtonTime;
+@property (nonatomic) NSString calculatedColor;
+@property (nonatomic) NSNumber showMaskTimes;
+@property (nonatomic) NSNumber isCompoundLandPage;
+@property (nonatomic) NSNumber diggCount;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
++ (id)imageListJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

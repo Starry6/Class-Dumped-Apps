@@ -1,0 +1,38 @@
+@interface IESECSliceXInstance : NSObject
+@property (nonatomic) IESECSliceXEventManager eventManager;
+@property (nonatomic) IESECSliceXInstanceConfig config;
+@property (nonatomic) <IESECSliceXEventForwardDelegate> eventDelegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)bindSliceXView:dataSource:complete:;
+- (id)bindSliceXView:dataSource:error:;
+- (void)bindSliceXView:dataSource:fitSize:complete:;
+- (id)bindSliceXView:dataSource:fitSize:error:;
+- (void)bindSliceXViewWithoutCalculateSize:dataSource:complete:;
+- (void)bindSliceXViewWithoutCalculateSize:dataSource:error:;
+- (id)createDataSource:globalProps:;
+- (id)createResourceMetaDataWithTemplateMetaData:;
+- (id)createSliceXViewWithAsyncBundle:complete:;
+- (id)createSliceXViewWithSyncBundle:andBindDataSource:error:;
+- (id)createSliceXViewWithSyncBundle:andBindDataSource:fitSize:viewSize:error:;
+- (id)createSliceXViewWithSyncBundle:andBindDataSource:viewSize:error:;
+- (id)createSliceXViewWithSyncBundle:error:;
+- (id)getElementViewInSliceXView:withKey:error:;
+- (double)getSliceXViewScaleFactor:;
+- (id)getStorageDataInSliceXView:withKey:filter:error:;
+- (BOOL)isLocalResourceExistForURLString:error:;
+- (void)preloadSliceXResourceWithPreloadList:;
+- (void)registerForestFetcherSequenceWithChannel:defaultFetcherSequence:fileSpecificFetcherSequence:;
+- (void)resetSliceXViewHitTestPassthroughRoot:;
+- (void)setServerTime:;
+- (void)sliceXViewHitTestPassthroughRoot:;
+- (id)eventManager;
+- (id)initWithConfig:;
+- (void).cxx_destruct;
+- (void)setEventManager:;
+- (id)eventDelegate;
+- (id)config;
+- (void)setEventDelegate:;
+@end

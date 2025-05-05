@@ -1,0 +1,33 @@
+@interface CPLResourceTransferTask : NSObject
+@property (nonatomic) CPLResource resource;
+@property (nonatomic) NSString taskIdentifier;
+@property (nonatomic) BOOL highPriority;
+@property (nonatomic) BOOL cancelled;
+@property (nonatomic) CPLResourceTransferTaskOptions options;
+@property (nonatomic) Q intent;
+- (unsigned long long)intent;
+- (id)taskIdentifier;
+- (void)setOptions:;
+- (void)setHighPriority:;
+- (BOOL)isCancelled;
+- (Class)classForKeyedArchiver;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (BOOL)isHighPriority;
+- (void)encodeWithCoder:;
+- (id)options;
+- (void).cxx_destruct;
+- (id)resource;
+- (void)launch;
+- (id)description;
+- (void)setIntent:;
+- (Class)classForCoder;
+- (BOOL)isEqual:;
+- (void)setTaskIdentifier:;
+- (void)cancelTask;
+- (id)initWithResource:taskIdentifier:;
++ (BOOL)supportsSecureCoding;
++ (id)descriptionForIntent:;
++ (BOOL)isHighPriorityForIntent:;
++ (BOOL)isForegroundOperationForIntent:;
+@end

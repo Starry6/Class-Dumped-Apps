@@ -1,0 +1,35 @@
+@interface MPModelPlaylistEntry : MPModelObject
+@property (nonatomic) MPModelPlaylist playlist;
+@property (nonatomic) q position;
+@property (nonatomic) MPModelSong song;
+@property (nonatomic) MPModelTVEpisode tvEpisode;
+@property (nonatomic) MPModelMovie movie;
+@property (nonatomic) MPModelSocialPerson socialContributor;
+@property (nonatomic) MPArtworkCatalog _artworkCatalog;
+- (id)humanDescription;
+- (id)anyObject;
+- (long long)type;
+- (id)mediaItemPropertyValues;
+- (id)personalizationScopedPropertiesForProperties:;
+- (id)relativeModelObjectForStoreLibraryPersonalization;
+- (id)objectWithStoreLibraryPersonalizationRelativeModelObject:;
+- (id)libraryAddStatusObserverConfiguration;
+- (long long)libraryRemovalSupportedOptions;
+- (id)newKeepLocalStatusObserverConfiguration;
++ (id)__playlist_KEY;
++ (id)kindWithKinds:;
++ (id)requiredStoreLibraryPersonalizationProperties;
++ (long long)genericObjectType;
++ (id)__song_KEY;
++ (id)__movie_KEY;
++ (BOOL)supportsLibraryAddStatusObservation;
++ (id)requiredLibraryAddStatusObservationProperties;
++ (id)requiredLibraryRemovalProperties;
++ (BOOL)supportsLibraryRemoval;
++ (id)requiredKeepLocalStatusObservationProperties;
++ (BOOL)supportsKeepLocalStatusObservation;
++ (id)__tvEpisode_KEY;
++ (id)__position_KEY;
++ (id)__socialContributor_KEY;
++ (id)___artworkCatalog_KEY;
+@end

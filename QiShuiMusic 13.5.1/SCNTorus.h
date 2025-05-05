@@ -1,0 +1,36 @@
+@interface SCNTorus : SCNGeometry
+@property (nonatomic) double ringRadius;
+@property (nonatomic) double pipeRadius;
+@property (nonatomic) q ringSegmentCount;
+@property (nonatomic) q pipeSegmentCount;
+- (id)init;
+- (id)copy;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (id)description;
+- (id)copyWithZone:;
+- (long long)primitiveType;
+- (void)setPrimitiveType:;
+- (void)setRadialSpan:;
+- (void)setPipeSegmentCount:;
+- (void)setRingSegmentCount:;
+- (BOOL)getBoundingBoxMin:max:;
+- (BOOL)getBoundingSphereCenter:radius:;
+- (double)ringRadius;
+- (void)setRingRadius:;
+- (id)copyAnimationChannelForKeyPath:animation:;
+- (id)__createCFObject;
+- (id)presentationGeometry;
+- (void)_setupObjCModelFrom:;
+- (id)initWithParametricGeometryRef:;
+- (id)initPresentationParametricGeometryWithParametricGeometryRef:;
+- (void)_syncObjCModel:;
+- (double)radialSpan;
+- (id)presentationTorus;
+- (double)pipeRadius;
+- (void)setPipeRadius:;
+- (long long)pipeSegmentCount;
+- (long long)ringSegmentCount;
++ (BOOL)supportsSecureCoding;
++ (id)torusWithRingRadius:pipeRadius:;
+@end

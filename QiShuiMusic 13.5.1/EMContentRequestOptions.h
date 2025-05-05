@@ -1,0 +1,33 @@
+@interface EMContentRequestOptions : NSObject
+@property (nonatomic) NSString requestedRepresentation;
+@property (nonatomic) q networkUsage;
+@property (nonatomic) q includeSuggestionItems;
+@property (nonatomic) NSArray requestedHeaderKeys;
+@property (nonatomic) BOOL includeCachedMetadataJSON;
+@property (nonatomic) BOOL requestAllHeaders;
+- (id)init;
+- (id)initWithCoder:;
+- (id)debugDescription;
+- (id)initWithBuilder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)copyWithZone:;
+- (long long)networkUsage;
+- (BOOL)requestAllHeaders;
+- (void)setNetworkUsage:;
+- (id)requestedHeaderKeys;
+- (id)requestedRepresentation;
+- (id)copyWithBuilder:;
+- (BOOL)includeCachedMetadataJSON;
+- (long long)includeSuggestionItems;
+- (void)setRequestedRepresentation:;
+- (void)setRequestedHeaderKeys:;
+- (void)setIncludeSuggestionItems:;
+- (void)setRequestAllHeaders:;
+- (void)setIncludeCachedMetadataJSON:;
++ (BOOL)supportsSecureCoding;
++ (id)optionsWithRequestedRepresentationType:networkUsage:;
++ (id)optionsWithRequestedRepresentationType:networkUsage:includeSuggestionItems:;
++ (id)optionsWithRequestedRepresentationType:networkUsage:includeSuggestions:;
+@end

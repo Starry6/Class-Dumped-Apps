@@ -1,0 +1,31 @@
+@interface SALocalSearchReview : AceObject
+@property (nonatomic) NSString author;
+@property (nonatomic) NSString comment;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) SACalendar lastUpdated;
+@property (nonatomic) NSString publication;
+@property (nonatomic) SAUIAppPunchOut reviewPunchOut;
+@property (nonatomic) SALocalSearchRating reviewRating;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setLastUpdated:;
+- (id)groupIdentifier;
+- (id)comment;
+- (id)lastUpdated;
+- (id)identifier;
+- (id)author;
+- (id)encodedClassName;
+- (void)setAuthor:;
+- (void)setIdentifier:;
+- (void)setComment:;
+- (id)publication;
+- (void)setPublication:;
+- (id)reviewPunchOut;
+- (void)setReviewPunchOut:;
+- (id)reviewRating;
+- (void)setReviewRating:;
++ (id)review;
++ (id)reviewWithDictionary:context:;
+@end

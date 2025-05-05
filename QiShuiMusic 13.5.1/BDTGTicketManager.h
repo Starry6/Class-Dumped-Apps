@@ -1,0 +1,30 @@
+@interface BDTGTicketManager : NSObject
+@property (nonatomic) NSDictionary serverDataMap;
+- (id)addClientDataToRequest:guardTarget:attemptCount:;
+- (void)addNetworkFilter;
+- (void)addServerData:forKey:;
+- (id)handleGetTicketRequest:;
+- (void)handleGetTicketResponse:request:;
+- (void)handleTTNetRequestIfNeeded:;
+- (id)handleUseTicketRequest:;
+- (void)handleUseTicketResponse:request:;
+- (id)p_loadCachedServerData;
+- (id)serverDataMap;
+- (void)setServerDataMap:;
+- (id)ticketForRequestPath:tag:;
+- (id)init;
+- (void)start;
+- (void).cxx_destruct;
++ (id)addHeadersToGetTicketRequest:;
++ (id)addHeadersToGetTicketRequest:ticketName:;
++ (id)addHeadersToGetTicketRequest:ticketName:timeout:reeOnly:;
++ (id)addHeadersToUseTicketRequest:ticket:tsSign:tsSignRee:clientCert:ticketName:timeout:reeOnly:;
++ (void)addTTNetRequestForPassportAccessTokenFilterBlock;
++ (id)reeAddUseTicketHeaders:ticket:tsSignRee:timestamp:reeOnly:timeout:errorRecords:success:;
++ (id)requestSignForRequest:guardTarget:timestamp:privateKey:error:;
++ (void)saveCertInResponseIfNeeded:;
++ (id)serverDataKeyForRequest:;
++ (id)serverDataKeyForRequestPath:tag:;
++ (id)teeAddUseTicketHeaders:ticket:tsSign:clientCert:timestamp:timeout:errorRecords:success:;
++ (id)sharedInstance;
+@end

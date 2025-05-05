@@ -1,0 +1,2 @@
+@interface NSKeyValueNonmutatingSetMethodSet : NSKeyValueNonmutatingCollectionMethodSet
+@end

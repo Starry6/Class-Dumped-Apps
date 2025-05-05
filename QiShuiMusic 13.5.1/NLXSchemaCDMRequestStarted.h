@@ -1,0 +1,35 @@
+@interface NLXSchemaCDMRequestStarted : SISchemaInstrumentationMessage
+@property (nonatomic) NLXSchemaCDMTurnInput currentTurnInput;
+@property (nonatomic) BOOL hasCurrentTurnInput;
+@property (nonatomic) NSInteger serviceGraphName;
+@property (nonatomic) BOOL hasServiceGraphName;
+@property (nonatomic) NSString loggableSharedUserId;
+@property (nonatomic) BOOL hasLoggableSharedUserId;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)loggableSharedUserId;
+- (void)setLoggableSharedUserId:;
+- (BOOL)hasLoggableSharedUserId;
+- (void)deleteLoggableSharedUserId;
+- (void)setHasLoggableSharedUserId:;
+- (void)setServiceGraphName:;
+- (BOOL)hasServiceGraphName;
+- (void)setHasServiceGraphName:;
+- (void)deleteServiceGraphName;
+- (int)serviceGraphName;
+- (BOOL)hasCurrentTurnInput;
+- (void)deleteCurrentTurnInput;
+- (id)currentTurnInput;
+- (void)setCurrentTurnInput:;
+- (void)setHasCurrentTurnInput:;
+@end

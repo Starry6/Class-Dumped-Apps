@@ -1,0 +1,2 @@
+@interface AVVideoCompositionInternal : NSObject
+@end

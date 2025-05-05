@@ -1,0 +1,31 @@
+@interface IESECLiveAnchorCreateFlashSaleCategoryModel : IESECLiveApiBaseModel
+@property (nonatomic) NSArray itemArray;
+@property (nonatomic) NSString nickName;
+@property (nonatomic) NSNumber maxStock;
+@property (nonatomic) q stockReductionType;
+@property (nonatomic) IESECLiveAnchorCreateFlashSaleCustomDepositModel customDepositInfo;
+@property (nonatomic) NSArray privilegeInfoArray;
+@property (nonatomic) IESECLiveAnchorCreateFlashSaleRefund refundPolicy;
+@property (nonatomic) NSArray deliveryDelayTimeRange;
+- (id)customDepositInfo;
+- (id)deliveryDelayTimeRange;
+- (id)itemArray;
+- (id)maxStock;
+- (id)privilegeInfoArray;
+- (id)refundPolicy;
+- (void)setCustomDepositInfo:;
+- (void)setDeliveryDelayTimeRange:;
+- (void)setItemArray:;
+- (void)setMaxStock:;
+- (void)setPrivilegeInfoArray:;
+- (void)setRefundPolicy:;
+- (void)setStockReductionType:;
+- (long long)stockReductionType;
+- (id)nickName;
+- (void).cxx_destruct;
+- (void)setNickName:;
++ (id)customDepositInfoJSONTransformer;
++ (id)itemArrayJSONTransformer;
++ (id)privilegeInfoArrayJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

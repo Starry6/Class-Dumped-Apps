@@ -1,0 +1,36 @@
+@interface SFAirDropAction : NSObject
+@property (nonatomic) NSString transferIdentifier;
+@property (nonatomic) Q minRequiredTransferState;
+@property (nonatomic) Q maxTransferState;
+@property (nonatomic) BOOL requiresUnlockedUI;
+@property (nonatomic) BOOL shouldUpdateUserResponse;
+@property (nonatomic) NSString localizedTitle;
+@property (nonatomic) NSString singleItemLocalizedTitle;
+@property (nonatomic) @? actionHandler;
+@property (nonatomic) NSString actionIdentifier;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)setActionHandler:;
+- (void)encodeWithCoder:;
+- (id)actionHandler;
+- (id)actionIdentifier;
+- (void).cxx_destruct;
+- (id)localizedTitle;
+- (id)description;
+- (void)setLocalizedTitle:;
+- (BOOL)isEqual:;
+- (void)triggerAction;
+- (id)initWithTransferIdentifier:actionIdentifier:title:singleItemTitle:;
+- (id)singleItemLocalizedTitle;
+- (void)setSingleItemLocalizedTitle:;
+- (id)transferIdentifier;
+- (unsigned long long)minRequiredTransferState;
+- (void)setMinRequiredTransferState:;
+- (unsigned long long)maxTransferState;
+- (void)setMaxTransferState:;
+- (BOOL)requiresUnlockedUI;
+- (void)setRequiresUnlockedUI:;
+- (BOOL)shouldUpdateUserResponse;
+- (void)setShouldUpdateUserResponse:;
++ (BOOL)supportsSecureCoding;
+@end

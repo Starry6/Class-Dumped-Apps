@@ -1,0 +1,24 @@
+@interface UIKBRenderFactoryiPadHWR_Portrait : UIKBRenderFactory10Key_Round
+- (long long)assetIdiom;
+- (id)lightKeycapsFontName;
+- (double)keyCornerRadius;
+- (void)setupLayoutSegments;
+- (id)_traitsForKey:onKeyplane:;
+- (id)messagesWriteboardKeyImageName;
+- (id)thinKeycapsFontName;
+- (void)_customizeTraits:forPopupForKey:withRenderingContext:keycapsFontName:;
+- (double)deleteKeyFontSize;
+- (double)moreKeyFontSize;
+- (id)dismissKeyOffset;
+- (double)internationalKeyFontSize;
+- (double)dictationKeyFontSize;
+- (double)spaceKeyFontSize;
+- (double)dismissKeyFontSize;
+- (BOOL)_displaysAsControlKeyStyle:;
+- (id)symbolFrameInsets;
+- (BOOL)shouldUseRoundCornerForKey:;
+- (double)controlColumnWidthFactor;
+- (id)spaceReturnKeyTextOffset;
+- (BOOL)_anchorControlKeys;
+- (id)_controlKeyOffset;
+@end

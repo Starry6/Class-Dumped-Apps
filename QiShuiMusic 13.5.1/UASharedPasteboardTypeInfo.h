@@ -1,0 +1,33 @@
+@interface UASharedPasteboardTypeInfo : NSObject
+@property (nonatomic) NSString type;
+@property (nonatomic) NSUUID uuid;
+@property (nonatomic) NSNumber offset;
+@property (nonatomic) q size;
+@property (nonatomic) NSFileHandle dataFile;
+@property (nonatomic) BOOL preferFileRep;
+@property (nonatomic) NSString typeHint;
+@property (nonatomic) NSNumber index;
+- (void)setOffset:;
+- (id)uuid;
+- (void)setType:;
+- (void)setUuid:;
+- (id)initWithCoder:;
+- (id)offset;
+- (id)index;
+- (void)encodeWithCoder:;
+- (id)type;
+- (void)setIndex:;
+- (void).cxx_destruct;
+- (id)description;
+- (void)setSize:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (long long)size;
+- (id)dataFile;
+- (void)setDataFile:;
+- (BOOL)preferFileRep;
+- (void)setPreferFileRep:;
+- (id)typeHint;
+- (void)setTypeHint:;
++ (BOOL)supportsSecureCoding;
+@end

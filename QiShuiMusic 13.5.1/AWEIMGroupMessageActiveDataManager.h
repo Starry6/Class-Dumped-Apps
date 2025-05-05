@@ -1,0 +1,33 @@
+@interface AWEIMGroupMessageActiveDataManager : NSObject
+@property (nonatomic) NSObject<OS_dispatch_queue> serialQueue;
+@property (nonatomic) WCTDatabase database;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)__sync:;
+- (void)didFinishLogout;
+- (void)__async:;
+- (BOOL)__createTableWithDatabase:;
+- (void)__prepare;
+- (id)activeModelsWithCid:secUid:;
+- (id)activeTagConfsWithCid:;
+- (id)allActiveModelsWithCid:;
+- (BOOL)deleteActiveDataWithSecUids:filterCid:;
+- (BOOL)deleteAllObjectsWithModelClass:filterCid:;
+- (void)didFinishLogin;
+- (id)inactiveThresholdConfsWithCid:;
+- (id)lastUpdateDateWithCid:;
+- (BOOL)saveObjects:;
+- (id)init;
+- (void)dealloc;
+- (void)setDatabase:;
+- (id)serialQueue;
+- (void).cxx_destruct;
+- (id)database;
+- (void)setSerialQueue:;
++ (void)transformDiskCacheWithUid:newPath:;
++ (void)transformDiskCacheWithUid:oldPath:;
++ (id)dbFilePath;
++ (id)sharedInstance;
+@end

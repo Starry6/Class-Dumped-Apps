@@ -1,0 +1,35 @@
+@interface NSDateCheckingResult : NSTextCheckingResult
+@property (nonatomic) NSTimeZone timeZone;
+@property (nonatomic) double duration;
+@property (nonatomic) NSDate referenceDate;
+@property (nonatomic) ^v underlyingResult;
+@property (nonatomic) BOOL timeIsSignificant;
+@property (nonatomic) BOOL timeIsApproximate;
+@property (nonatomic) BOOL timeIsPast;
+- (void)dealloc;
+- (BOOL)_adjustRangesWithOffset:;
+- (id)resultByAdjustingRangesWithOffset:;
+- (id)initWithCoder:;
+- (unsigned long long)resultType;
+- (id)date;
+- (id)range;
+- (void)encodeWithCoder:;
+- (id)description;
+- (id)referenceDate;
+- (id)timeZone;
+- (double)duration;
+- (id)leadingText;
+- (id)trailingText;
+- (id)underlyingResult;
+- (BOOL)timeIsSignificant;
+- (BOOL)timeIsApproximate;
+- (BOOL)timeIsPast;
+- (id)initWithRange:date:timeZone:duration:referenceDate:underlyingResult:timeIsSignificant:timeIsApproximate:timeIsPast:leadingText:trailingText:;
+- (id)initWithRange:date:timeZone:duration:referenceDate:underlyingResult:timeIsSignificant:timeIsApproximate:timeIsPast:;
+- (id)initWithRange:date:timeZone:duration:referenceDate:underlyingResult:timeIsSignificant:timeIsApproximate:;
+- (id)initWithRange:date:timeZone:duration:referenceDate:underlyingResult:;
+- (id)initWithRange:date:timeZone:duration:referenceDate:;
+- (id)initWithRange:date:timeZone:duration:;
+- (id)initWithRange:date:;
++ (BOOL)supportsSecureCoding;
+@end

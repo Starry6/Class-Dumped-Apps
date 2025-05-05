@@ -1,0 +1,32 @@
+@interface SYLinkContextService : NSObject
+@property (nonatomic) NSXPCListener _listener;
+@property (nonatomic) NSObject<OS_dispatch_queue> _serviceQueue;
+@property (nonatomic) NSXPCConnection _activeConnection;
+@property (nonatomic) BOOL _forTesting;
+@property (nonatomic) NSArray _contextsDataForTesting;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (id)_activeConnection;
+- (void)dealloc;
+- (void)set_listener:;
+- (void)set_serviceQueue:;
+- (id)_listener;
+- (id)initForTesting:;
+- (void)userWillAddLinkWithActivityData:completion:;
+- (id)_contextsDataForTesting;
+- (void)set_contextsDataForTesting:;
+- (void)set_activeConnection:;
+- (id)fetchLinkContextsDataForUserActivityInfo:completion:;
+- (id)simpleMethod;
+- (void)userDidRemoveContentItemDatas:;
+- (void)beginListeningToConnections;
+- (BOOL)listener:shouldAcceptNewConnection:;
+- (void).cxx_destruct;
+- (id)_listenerEndpoint;
+- (id)_serviceQueue;
+- (void)userEditDidAddContentItemDatas:;
+- (BOOL)_forTesting;
+@end

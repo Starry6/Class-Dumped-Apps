@@ -1,0 +1,30 @@
+@interface SFSiriRequest : NSObject
+@property (nonatomic) double delaySecs;
+@property (nonatomic) I flags;
+@property (nonatomic) @ owner;
+@property (nonatomic) @? speechCompletion;
+@property (nonatomic) @? speechStartHandler;
+@property (nonatomic) VSSpeechRequest speechSynthesisRequest;
+@property (nonatomic) VSSpeechRequest speechUtteranceRequest;
+@property (nonatomic) Q startTicks;
+@property (nonatomic) BOOL synthesizing;
+- (void)setOwner:;
+- (id)owner;
+- (void).cxx_destruct;
+- (void)setFlags:;
+- (unsigned int)flags;
+- (void)setSpeechSynthesisRequest:;
+- (unsigned long long)startTicks;
+- (void)setStartTicks:;
+- (double)delaySecs;
+- (void)setDelaySecs:;
+- (id)speechCompletion;
+- (void)setSpeechCompletion:;
+- (id)speechStartHandler;
+- (void)setSpeechStartHandler:;
+- (id)speechSynthesisRequest;
+- (id)speechUtteranceRequest;
+- (void)setSpeechUtteranceRequest:;
+- (BOOL)synthesizing;
+- (void)setSynthesizing:;
+@end

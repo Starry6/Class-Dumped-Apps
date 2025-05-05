@@ -1,0 +1,33 @@
+@interface GEORPDebugSettings : PBCodable
+@property (nonatomic) BOOL hasMode;
+@property (nonatomic) NSInteger mode;
+@property (nonatomic) NSMutableArray keywords;
+- (id)keywords;
+- (void)setKeywords:;
+- (void)readAll:;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (BOOL)hasMode;
+- (int)StringAsMode:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (id)modeAsString:;
+- (void)setHasMode:;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (int)mode;
+- (BOOL)isEqual:;
+- (void)setMode:;
+- (id)copyWithZone:;
+- (void)clearKeywords;
+- (void)addKeywords:;
+- (unsigned long long)keywordsCount;
+- (id)keywordsAtIndex:;
++ (BOOL)isValid:;
++ (Class)keywordsType;
+@end

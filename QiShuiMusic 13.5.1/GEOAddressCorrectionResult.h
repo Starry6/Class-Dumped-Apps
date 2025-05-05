@@ -1,0 +1,34 @@
+@interface GEOAddressCorrectionResult : PBCodable
+@property (nonatomic) BOOL hasAddressID;
+@property (nonatomic) NSString addressID;
+@property (nonatomic) NSMutableArray significantLocations;
+- (void)readAll:;
+- (BOOL)hasGreenTeaWithValue:;
+- (id)init;
+- (void)clearSensitiveFields:;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasAddressID;
+- (id)addressID;
+- (void)setAddressID:;
+- (id)significantLocations;
+- (void)setSignificantLocations:;
+- (void)clearSignificantLocations;
+- (void)addSignificantLocation:;
+- (unsigned long long)significantLocationsCount;
+- (id)significantLocationAtIndex:;
++ (BOOL)isValid:;
++ (Class)significantLocationType;
+@end

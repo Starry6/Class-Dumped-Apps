@@ -1,0 +1,34 @@
+@interface IESECGoodsFeedSearchCardCell : IESECGoodsFeedBaseCell
+@property (nonatomic) UIView pictureNodeView;
+@property (nonatomic) IESECGoodsFeedSearchImageCard leftImageCard;
+@property (nonatomic) IESECGoodsFeedSearchImageCard middleImageCard;
+@property (nonatomic) IESECGoodsFeedSearchImageCard rightImageCard;
+@property (nonatomic) UICollectionView keywordCollectionView;
+@property (nonatomic) IESECGoodsFeedLargeCardViewModel model;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)middleImageCard;
+- (id)pictureNodeView;
+- (void)clickCardWithModel:;
+- (void)clickCollectionView:;
+- (id)keywordCollectionView;
+- (id)leftImageCard;
+- (id)rightImageCard;
+- (void)setKeywordCollectionView:;
+- (void)setLeftImageCard:;
+- (void)setMiddleImageCard:;
+- (void)setPictureNodeView:;
+- (void)setRightImageCard:;
+- (id)model;
+- (id)collectionView:layout:sizeForItemAtIndexPath:;
+- (void)setModel:;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)setupSubviews;
+- (void)updateWithViewModel:;
+@end

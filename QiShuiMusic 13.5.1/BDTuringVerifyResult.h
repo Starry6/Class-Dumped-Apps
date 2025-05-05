@@ -1,0 +1,31 @@
+@interface BDTuringVerifyResult : NSObject
+@property (nonatomic) q status;
+@property (nonatomic) NSString token;
+@property (nonatomic) NSString mobile;
+@property (nonatomic) q status;
+@property (nonatomic) NSString token;
+@property (nonatomic) NSString mobile;
+@property (nonatomic) NSString decision;
+@property (nonatomic) NSDictionary queryParams;
+@property (nonatomic) NSString subtype;
+@property (nonatomic) NSString x_tt_token;
+- (void)setX_tt_token:;
+- (id)x_tt_token;
+- (id)subtype;
+- (void)setStatus:;
+- (id)token;
+- (id)queryParams;
+- (void)setSubtype:;
+- (void)setToken:;
+- (void).cxx_destruct;
+- (long long)status;
+- (void)setDecision:;
+- (id)decision;
+- (void)setQueryParams:;
+- (id)mobile;
+- (void)setMobile:;
++ (id)unsupportResult;
++ (id)conflictResult;
++ (id)failResult;
++ (id)okResult;
+@end

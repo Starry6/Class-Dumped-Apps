@@ -1,0 +1,31 @@
+@interface IESLiveInteractConfigLayoutCalculator : NSObject
+@property (nonatomic) <IESLiveInteractConfigLayoutCalculatorInputProtocol> input;
+- (id)containerFrameToCalculatePlayer;
+- (id)adjustContentFrameIfNeededWithContentFrame:;
+- (id)adjustedAnchorFrameInGuestListWithAnchorFrame:anchorInGuestList:;
+- (id)calculateAllStreamLayouts;
+- (void)calculateAnchorFramesWithOutput:;
+- (id)calculateAspectFillPlayerFrameWithAlignMode:;
+- (id)calculateAspectFitPlayerFrameWithAlignMode:;
+- (id)calculateContentStreamLayout;
+- (id)calculateFillPlayerFrameWithAlignMode:;
+- (id)calculateGuestFramesWithCanvasFrame:contanerFrame:;
+- (id)calculateGuestFramesWithGuestListFrame:guestFramesRatios:;
+- (id)calculateGuestListFrameWithPlayerFrame:;
+- (id)calculateGuestStreamLayouts;
+- (id)calculateHostStreamLayout;
+- (id)calculatePlayerFrame;
+- (id)calculateWithInput:;
+- (id)calculayoutGuestFrameWithInput:guestListFrame:playerFrame:;
+- (id)calculayoutGuestListFrameWithInput:withPlayerFrame:;
+- (void)calculayoutGuestListWithInput:writeToOutPut:;
+- (double)contentLeftWithContainerFrame:containerInsets:contentWidth:alignMode:;
+- (double)contentTopWithContainerFrame:containerInsets:contentHeight:alignMode:;
+- (id)frameWithInGuestList:guestListFrame:;
+- (id)playerFrameFromContentFrame:scaleMode:;
+- (double)streamRatio;
+- (id)model;
+- (id)input;
+- (void)setInput:;
+- (void).cxx_destruct;
+@end

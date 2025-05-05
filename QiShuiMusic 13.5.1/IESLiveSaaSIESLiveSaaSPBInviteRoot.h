@@ -1,0 +1,2 @@
+@interface IESLiveSaaSIESLiveSaaSPBInviteRoot : GPBRootObject
+@end

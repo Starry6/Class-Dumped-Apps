@@ -1,0 +1,35 @@
+@interface MPMediaControlsViewController : UIViewController
+@property (nonatomic) MPMediaControls mediaControls;
+@property (nonatomic) MPMediaControlsConfiguration configuration;
+@property (nonatomic) @? didDismissHandler;
+@property (nonatomic) <MPMediaControlsViewControllerDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)animationControllerForPresentedController:presentingController:sourceController:;
+- (void)dismiss;
+- (void)animateTransition:;
+- (id)init;
+- (double)transitionDuration:;
+- (id)mediaControls;
+- (BOOL)prefersStatusBarHidden;
+- (void)setDelegate:;
+- (id)animationControllerForDismissedController:;
+- (id)presentationControllerForPresentedViewController:presentingViewController:sourceViewController:;
+- (void)setMediaControls:;
+- (id)configuration;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)viewWillAppear:;
+- (id)initWithConfiguration:;
+- (void)viewDidLoad;
+- (void)_present;
+- (void)startPrewarming;
+- (void)_createMediaControlsIfNeeded;
+- (void)prepareRemoteViewController;
+- (void)stopPrewarming;
+- (void)setOverrideRouteSharingPolicy:routingContextUID:;
+- (id)didDismissHandler;
+- (void)setDidDismissHandler:;
+@end

@@ -1,0 +1,31 @@
+@interface PKTextInputDebugViewTableCell : UITableViewCell
+@property (nonatomic) UILabel _titleLabel;
+@property (nonatomic) UILabel _valueLabel;
+@property (nonatomic) UIButton _detailsButton;
+@property (nonatomic) NSString titleText;
+@property (nonatomic) NSAttributedString valueAttributedText;
+@property (nonatomic) BOOL showDetailsButton;
+@property (nonatomic) NSString statusKey;
+@property (nonatomic) <PKTextInputDebugViewTableCellDelegate> delegate;
+- (void)_updateLabels;
+- (id)initWithStyle:reuseIdentifier:;
+- (void)setTitleText:;
+- (id)titleText;
+- (void)setDelegate:;
+- (id)statusKey;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)_titleLabel;
+- (id)_valueLabel;
+- (id)_detailsButton;
+- (void)set_titleLabel:;
+- (void)set_valueLabel:;
+- (void)_handleDetailsButton:;
+- (void)setValueAttributedText:;
+- (void)setShowDetailsButton:;
+- (void)_setupContentViewsIfNeeded;
+- (id)valueAttributedText;
+- (BOOL)showDetailsButton;
+- (void)setStatusKey:;
+- (void)set_detailsButton:;
+@end

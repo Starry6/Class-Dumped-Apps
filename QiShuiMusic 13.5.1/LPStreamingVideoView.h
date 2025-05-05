@@ -1,0 +1,28 @@
+@interface LPStreamingVideoView : LPVideoView
+- (double)volume;
+- (void)dealloc;
+- (void)setVolume:;
+- (void)setPlaying:;
+- (void)setMuted:;
+- (BOOL)isMuted;
+- (void)prepareForDisplayWithCompletionHandler:;
+- (void)observeValueForKeyPath:ofObject:change:context:;
+- (void).cxx_destruct;
+- (void)layoutComponentView;
+- (id)initWithHost:video:style:posterFrame:posterFrameStyle:configuration:;
+- (void)resetToPlaceholderView;
+- (void)fullScreenVideoDidPresent;
+- (void)fullScreenVideoWillDismiss;
+- (void)createPlayerItemAdjustedForLoopingWithAsset:completionHandler:;
+- (void)createPlayerIfNeeded;
+- (void)destroyPlayer;
+- (void)didFailToPlay;
+- (void)beginLoadingMediaForPreroll;
+- (BOOL)releaseDecodingResourcesIfInactive;
+- (BOOL)shouldAutoPlay;
+- (BOOL)usesSharedAudioSession;
+- (BOOL)shouldShowMuteButton;
+- (id)createFullScreenVideoViewController;
+- (BOOL)usesCustomFullScreenImplementation;
+- (id)createVideoPlayerView;
+@end

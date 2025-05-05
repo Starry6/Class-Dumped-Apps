@@ -1,0 +1,30 @@
+@interface IESIMUserPermissionModel : IESIMBaseApiModel
+@property (nonatomic) q followToast;
+@property (nonatomic) q originalList;
+@property (nonatomic) q shopToast;
+@property (nonatomic) q shareToast;
+@property (nonatomic) q followingFollowerListToast;
+@property (nonatomic) q followToastTypeNew;
+@property (nonatomic) NSString profileToast;
+@property (nonatomic) NSString shareProfileToast;
+- (void)setFollowToast:;
+- (long long)followToast;
+- (long long)followToastTypeNew;
+- (long long)followingFollowerListToast;
+- (long long)originalList;
+- (id)profileToast;
+- (void)setFollowToastTypeNew:;
+- (void)setFollowingFollowerListToast:;
+- (void)setOriginalList:;
+- (void)setProfileToast:;
+- (void)setShareProfileToast:;
+- (void)setShareToast:;
+- (void)setShopToast:;
+- (id)shareProfileToast;
+- (long long)shareToast;
+- (long long)shopToast;
+- (void).cxx_destruct;
++ (id)followToastJSONTransformer;
++ (id)followToastTypeNewJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

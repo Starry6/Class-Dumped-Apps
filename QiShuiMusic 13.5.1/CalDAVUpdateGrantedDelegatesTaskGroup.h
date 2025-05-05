@@ -1,0 +1,36 @@
+@interface CalDAVUpdateGrantedDelegatesTaskGroup : CoreDAVTaskGroup
+@property (nonatomic) NSInteger state;
+@property (nonatomic) NSSet addWriteURLs;
+@property (nonatomic) NSSet addReadURLs;
+@property (nonatomic) NSSet removeURLs;
+@property (nonatomic) NSSet updatedWriteURLs;
+@property (nonatomic) NSSet updatedReadURLs;
+@property (nonatomic) CalDAVGetGrantedDelegatesTaskGroup getGrantedDelegatesTaskGroup;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)startTaskGroup;
+- (void)setState:;
+- (int)state;
+- (void).cxx_destruct;
+- (void)propPatchTask:parsedResponses:error:;
+- (void)taskGroup:didFinishWithError:;
+- (void)_finishWithError:state:;
+- (id)initWithAccountInfoProvider:addWriteURLs:addReadURLs:removeURLs:taskManager:;
+- (void)_fetchExistingGrantedDelegates;
+- (void)_updateDelegatesWithAllowWrite:;
+- (void)_populateUpdatesFromFetched:allowWrite:;
+- (id)addWriteURLs;
+- (void)setAddWriteURLs:;
+- (id)addReadURLs;
+- (void)setAddReadURLs:;
+- (id)removeURLs;
+- (void)setRemoveURLs:;
+- (id)updatedWriteURLs;
+- (void)setUpdatedWriteURLs:;
+- (id)updatedReadURLs;
+- (void)setUpdatedReadURLs:;
+- (id)getGrantedDelegatesTaskGroup;
+- (void)setGetGrantedDelegatesTaskGroup:;
+@end

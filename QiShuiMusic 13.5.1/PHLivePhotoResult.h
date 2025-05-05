@@ -1,0 +1,21 @@
+@interface PHLivePhotoResult : PHCompositeMediaResult
+- (id)exifOrientation;
+- (id)videoURL;
+- (BOOL)isPlaceholder;
+- (id)uniformTypeIdentifier;
+- (id)imageData;
+- (id)sanitizedInfoDictionary;
+- (id)imageRef;
+- (BOOL)containsValidData;
+- (void).cxx_destruct;
+- (id)allowedInfoKeys;
+- (void)setDegraded:;
+- (BOOL)isDegraded;
+- (long long)uiOrientation;
+- (id)imageURL;
+- (unsigned int)cgOrientation;
+- (id)videoAdjustmentData;
+- (void)_mergeInfoDictionaryFromResult:;
+- (void)addImageResult:;
+- (void)addVideoResult:;
+@end

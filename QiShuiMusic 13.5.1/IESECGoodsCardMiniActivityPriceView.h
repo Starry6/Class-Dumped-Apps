@@ -1,0 +1,30 @@
+@interface IESECGoodsCardMiniActivityPriceView : UIView
+@property (nonatomic) IESECGoodsDetailParameters parameters;
+@property (nonatomic) UIStackView container;
+@property (nonatomic) IESECInsetsLabel activityLabel;
+@property (nonatomic) IESECGoodsPriceLabel priceLabel;
+@property (nonatomic) IESECGoodsPriceLabel marketPriceLabel;
+@property (nonatomic) IESECInsetsLabel depositLabel;
+@property (nonatomic) IESECInsetsLabel depositPresaleLabel;
+@property (nonatomic) UILabel salesLabel;
+- (id)depositLabel;
+- (id)depositPresaleLabel;
+- (id)marketPriceLabel;
+- (id)salesLabel;
+- (void)setDepositLabel:;
+- (void)setDepositPresaleLabel:;
+- (void)setMarketPriceLabel:;
+- (void)setSalesLabel:;
+- (void)updateUIWithModel:;
+- (void)setContainer:;
+- (id)init;
+- (id)container;
+- (id)parameters;
+- (void).cxx_destruct;
+- (void)setParameters:;
+- (void)setActivityLabel:;
+- (id)activityLabel;
+- (void)setupSubviews;
+- (id)priceLabel;
+- (void)setPriceLabel:;
+@end

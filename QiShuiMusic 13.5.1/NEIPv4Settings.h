@@ -1,0 +1,35 @@
+@interface NEIPv4Settings : NSObject
+@property (nonatomic) BOOL overridePrimary;
+@property (nonatomic) q configMethod;
+@property (nonatomic) NSArray addresses;
+@property (nonatomic) NSArray subnetMasks;
+@property (nonatomic) NSString router;
+@property (nonatomic) NSArray includedRoutes;
+@property (nonatomic) NSArray excludedRoutes;
+- (BOOL)checkValidityAndCollectErrors:;
+- (id)initFromLegacyDictionary:;
+- (id)init;
+- (id)descriptionWithIndent:options:;
+- (id)copyLegacyDictionary;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (id)addresses;
+- (id)initWithAddresses:subnetMasks:;
+- (id)initWithConfigMethod:;
+- (BOOL)hasDefaultRoute;
+- (id)subnetMasks;
+- (id)router;
+- (void)setRouter:;
+- (id)includedRoutes;
+- (void)setIncludedRoutes:;
+- (id)excludedRoutes;
+- (void)setExcludedRoutes:;
+- (BOOL)overridePrimary;
+- (void)setOverridePrimary:;
+- (long long)configMethod;
+- (void)setConfigMethod:;
++ (BOOL)supportsSecureCoding;
++ (id)settingsWithAutomaticAddressing;
+@end

@@ -1,0 +1,36 @@
+@interface WBSWebExtensionToolbarItem : NSObject
+@property (nonatomic) WBSWebExtensionData webExtension;
+@property (nonatomic) WKWebView popupWebView;
+@property (nonatomic) BOOL showingExtensionPopup;
+@property (nonatomic) NSString label;
+@property (nonatomic) UIImage image;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)_webViewDidEnableInspectorBrowserDomain:;
+- (id)label;
+- (void)_webViewDidDisableInspectorBrowserDomain:;
+- (void)webView:decidePolicyForNavigationAction:decisionHandler:;
+- (void).cxx_destruct;
+- (void)webViewWebContentProcessDidTerminate:;
+- (id)image;
+- (BOOL)shouldRequestAccessForTab:;
+- (BOOL)showingExtensionPopup;
+- (void)didViewBadgeInTabWithIdentifier:;
+- (BOOL)hasUpdatedBadgeTextInTabWithIdentifier:;
+- (BOOL)isEnabledForTabWithIdentifier:;
+- (id)badgeTextForTabWithIdentifier:;
+- (id)iconForTabWithIdentifier:;
+- (id)popupURLForTabWithIdentifier:;
+- (id)popupWebView;
+- (id)initWithWebExtension:extensionsController:label:popupURL:image:;
+- (void)didSelectTab:;
+- (void)setBadgeText:forTabWithIdentifier:;
+- (id)titleForTabWithIdentifier:;
+- (void)setTitle:forTabWithIdentifier:;
+- (void)setPopupURL:forTabWithIdentifier:;
+- (void)setEnabled:forTabWithIdentifier:;
+- (void)setIcon:forTabWithIdentifier:;
+- (void)clearStateForTabWithIdentifier:;
+@end

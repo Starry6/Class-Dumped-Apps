@@ -1,0 +1,31 @@
+@interface IESEffectBaseDownloadTask : NSObject
+@property (nonatomic) NSString fileMD5;
+@property (nonatomic) NSString destination;
+@property (nonatomic) NSMutableArray progressBlocks;
+@property (nonatomic) NSMutableArray completionBlocks;
+@property (nonatomic) q queuePriority;
+@property (nonatomic) q qualityOfService;
+- (id)fileMD5;
+- (void)addCompletionBlockSafe:;
+- (void)addProgressBlockSafe:;
+- (void)callCompletionBlocks:error:extraInfoDict:;
+- (void)callProgressBlocks:;
+- (void)downloadFileWithURLs:downloadPath:downloadProgress:completion:;
+- (void)downloadFileWithURLs:downloadPath:downloadQueuePriority:downloadQualityOfService:downloadProgress:downloadParameters:completion:;
+- (id)initWithFileMD5:destination:;
+- (void)removeAllCompletionBlocksSafe;
+- (void)removeAllProgressBlocksSafe;
+- (void)setFileMD5:;
+- (void)setProgressBlocks:;
+- (void)setQualityOfService:;
+- (void)setDestination:;
+- (id)completionBlocks;
+- (void)setQueuePriority:;
+- (long long)qualityOfService;
+- (void)setCompletionBlocks:;
+- (id)destination;
+- (void)startWithCompletion:;
+- (long long)queuePriority;
+- (void).cxx_destruct;
+- (id)progressBlocks;
+@end

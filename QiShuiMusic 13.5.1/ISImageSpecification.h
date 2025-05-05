@@ -1,0 +1,2 @@
+@interface ISImageSpecification : IFImageSpecification
+@end

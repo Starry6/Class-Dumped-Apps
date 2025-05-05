@@ -1,0 +1,31 @@
+@interface RBSProcessExitContext : NSObject
+@property (nonatomic) q type;
+@property (nonatomic) RBSProcessExitStatus status;
+@property (nonatomic) NSDate timestamp;
+@property (nonatomic) RBSTerminateContext terminationContext;
+@property (nonatomic) NSInteger legacyCode;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithRBSXPCCoder:;
+- (void)encodeWithRBSXPCCoder:;
+- (id)initWithCoder:;
+- (int)legacyCode;
+- (unsigned long long)hash;
+- (id)debugDescription;
+- (id)terminationContext;
+- (void)encodeWithCoder:;
+- (long long)type;
+- (id)copyWithStatus:;
+- (void).cxx_destruct;
+- (id)copyWithTimestamp:;
+- (id)timestamp;
+- (id)description;
+- (id)status;
+- (id)copyWithTerminationContext:;
+- (BOOL)isEqual:;
++ (BOOL)supportsRBSXPCSecureCoding;
++ (BOOL)supportsSecureCoding;
++ (id)exitContextForNamespace:code:wait4Status:;
+@end

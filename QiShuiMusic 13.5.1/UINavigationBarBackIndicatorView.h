@@ -1,0 +1,2 @@
+@interface UINavigationBarBackIndicatorView : UIImageView
+@end

@@ -1,0 +1,32 @@
+@interface IESECLynxCollectionViewCell : UICollectionViewCell
+@property (nonatomic) IESECLynxCard cellView;
+@property (nonatomic) <IESECLynxCollectionViewCellDelegate> delegate;
+@property (nonatomic) q currentSection;
+@property (nonatomic) q currentIndex;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)findViewWithName:;
+- (void)playWithAutoPlayDuration:completeBlock:;
+- (void)setCellView:;
+- (void)setGreyModeInLayer:withSaturation:;
+- (void)setGreyStyleWithExtraData:viewModel:;
+- (id)uiWithName:;
+- (void)viewDidAppear:sourceType:;
+- (void)viewDidDisappear:sourceType:;
+- (void)layoutSubviews;
+- (void)setCurrentIndex:;
+- (void)setDelegate:;
+- (void)prepareForReuse;
+- (id)initWithFrame:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (long long)currentIndex;
+- (void)pause;
+- (void)setupUI;
+- (id)cellView;
+- (void)updateWithModel:;
+- (long long)currentSection;
+- (void)setCurrentSection:;
+@end

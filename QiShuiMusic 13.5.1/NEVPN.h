@@ -1,0 +1,37 @@
+@interface NEVPN : NSObject
+@property (nonatomic) NSArray exceptionApps;
+@property (nonatomic) BOOL enabled;
+@property (nonatomic) BOOL onDemandEnabled;
+@property (nonatomic) BOOL disconnectOnDemandEnabled;
+@property (nonatomic) BOOL onDemandUserOverrideDisabled;
+@property (nonatomic) NSArray onDemandRules;
+@property (nonatomic) NEVPNProtocol protocol;
+@property (nonatomic) q tunnelType;
+- (id)protocol;
+- (void)setProtocol:;
+- (BOOL)checkValidityAndCollectErrors:;
+- (id)initFromLegacyDictionary:;
+- (id)init;
+- (id)descriptionWithIndent:options:;
+- (id)copyLegacyDictionary;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void)setEnabled:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)copyWithZone:;
+- (BOOL)isEnabled;
+- (id)onDemandRules;
+- (void)setOnDemandRules:;
+- (void)setOnDemandEnabled:;
+- (void)setOnDemandUserOverrideDisabled:;
+- (void)setDisconnectOnDemandEnabled:;
+- (BOOL)isOnDemandEnabled;
+- (BOOL)isDisconnectOnDemandEnabled;
+- (BOOL)isOnDemandUserOverrideDisabled;
+- (long long)tunnelType;
+- (void)setTunnelType:;
+- (id)exceptionApps;
+- (void)setExceptionApps:;
++ (BOOL)supportsSecureCoding;
+@end

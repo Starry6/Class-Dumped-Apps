@@ -1,0 +1,38 @@
+@interface GEOMapItemClientAttributes : PBCodable
+@property (nonatomic) BOOL hasAddressBookAttributes;
+@property (nonatomic) GEOMapItemAddressBookAttributes addressBookAttributes;
+@property (nonatomic) BOOL hasRoutineAttributes;
+@property (nonatomic) GEOMapItemRoutineAttributes routineAttributes;
+@property (nonatomic) BOOL hasCorrectedLocationAttributes;
+@property (nonatomic) GEOMapItemCorrectedLocationAttributes correctedLocationAttributes;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (BOOL)hasGreenTeaWithValue:;
+- (id)init;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasAddressBookAttributes;
+- (id)addressBookAttributes;
+- (void)setAddressBookAttributes:;
+- (BOOL)hasRoutineAttributes;
+- (id)routineAttributes;
+- (void)setRoutineAttributes:;
+- (BOOL)hasCorrectedLocationAttributes;
+- (id)correctedLocationAttributes;
+- (void)setCorrectedLocationAttributes:;
++ (BOOL)isValid:;
+@end

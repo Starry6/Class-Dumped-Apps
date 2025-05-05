@@ -1,0 +1,31 @@
+@interface CJPayPopUpBaseViewController : CJPayBaseViewController
+@property (nonatomic) BOOL isFirstAppear;
+@property (nonatomic) @? completionBlock;
+@property (nonatomic) UIView backColorView;
+@property (nonatomic) UIView containerView;
+@property (nonatomic) @? closeActionCompletionBlock;
+- (void)dismissSelfWithCompletionBlock:;
+- (BOOL)cjNeedAnimation;
+- (id)backColorView;
+- (BOOL)cjShouldShowBottomView;
+- (id)closeActionCompletionBlock;
+- (BOOL)isShowMask;
+- (double)maskAlpha;
+- (id)presentWithNavigationControllerFrom:useMask:completion:;
+- (void)setBackColorView:;
+- (void)setCloseActionCompletionBlock:;
+- (void)setIsFirstAppear:;
+- (void)showMask:;
+- (long long)vcType;
+- (id)init;
+- (id)containerView;
+- (void)setContainerView:;
+- (void)setCompletionBlock:;
+- (void)close;
+- (void).cxx_destruct;
+- (unsigned long long)supportedInterfaceOrientations;
+- (id)completionBlock;
+- (void)viewDidLoad;
+- (void)setupUI;
+- (BOOL)isFirstAppear;
+@end

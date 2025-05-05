@@ -1,0 +1,34 @@
+@interface SBSInCallPresentationConfiguration : NSObject
+@property (nonatomic) double preferredBannerHeight;
+@property (nonatomic) q preferredPresentationMode;
+@property (nonatomic) BOOL userInitiated;
+@property (nonatomic) NSString sceneBundleIdentifier;
+@property (nonatomic) BOOL screenSharingPresentation;
+@property (nonatomic) NSUUID identifier;
+@property (nonatomic) BOOL supportsSystemAperture;
+@property (nonatomic) BOOL shouldPreventBannersWhenPresentedAsOverlay;
+- (void)setUserInitiated:;
+- (id)identifier;
+- (id)succinctDescriptionBuilder;
+- (id)initWithCoder:;
+- (BOOL)isUserInitiated;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)succinctDescription;
+- (id)description;
+- (id)descriptionBuilderWithMultilinePrefix:;
+- (id)descriptionWithMultilinePrefix:;
+- (id)initWithSceneBundleIdentifier:;
+- (double)preferredBannerHeight;
+- (void)setPreferredBannerHeight:;
+- (long long)preferredPresentationMode;
+- (void)setPreferredPresentationMode:;
+- (id)sceneBundleIdentifier;
+- (BOOL)isScreenSharingPresentation;
+- (void)setScreenSharingPresentation:;
+- (BOOL)supportsSystemAperture;
+- (void)setSupportsSystemAperture:;
+- (BOOL)shouldPreventBannersWhenPresentedAsOverlay;
+- (void)setShouldPreventBannersWhenPresentedAsOverlay:;
++ (BOOL)supportsSecureCoding;
+@end

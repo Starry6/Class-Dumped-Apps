@@ -1,0 +1,32 @@
+@interface GEOScreenDimension : PBCodable
+@property (nonatomic) BOOL hasWidth;
+@property (nonatomic) double width;
+@property (nonatomic) BOOL hasHeight;
+@property (nonatomic) double height;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (BOOL)hasWidth;
+- (id)unknownFields;
+- (BOOL)hasHeight;
+- (void)setHasWidth:;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (void)setWidth:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)setHasHeight:;
+- (double)height;
+- (void)mergeFrom:;
+- (double)width;
+- (void)setHeight:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
++ (BOOL)isValid:;
+@end

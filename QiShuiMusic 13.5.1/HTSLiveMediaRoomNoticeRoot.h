@@ -1,0 +1,2 @@
+@interface HTSLiveMediaRoomNoticeRoot : GPBRootObject
+@end

@@ -1,0 +1,31 @@
+@interface SFDeviceOperationHandlerCDPSetup : NSObject
+@property (nonatomic) NSObject<OS_dispatch_queue> dispatchQueue;
+@property (nonatomic) BOOL failIfCDPNotEnabled;
+@property (nonatomic) NSString altDSIDNeedingRepair;
+@property (nonatomic) SFSession sfSession;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (id)dispatchQueue;
+- (void)setDispatchQueue:;
+- (void)_activate;
+- (void).cxx_destruct;
+- (void)invalidate;
+- (void)activate;
+- (id)sfSession;
+- (void)setSfSession:;
+- (void)cdpContext:promptForRemoteSecretWithDevices:offeringRemoteApproval:validator:;
+- (void)cdpRecoveryFlowContext:promptForRemoteSecretWithDevices:validator:;
+- (void)cdpContext:promptForICSCWithIsNumeric:numericLength:isRandom:validator:;
+- (void)cdpContext:promptForAdoptionOfMultipleICSC:;
+- (void)cdpContext:promptForInteractiveAuthenticationWithCompletion:;
+- (void)cdpContext:promptForBeneficiaryAccessKeyWithCompletion:;
+- (void)cdpContext:promptForLocalSecretWithCompletion:;
+- (void)_handleCDPSetupRequest:responseHandler:;
+- (BOOL)failIfCDPNotEnabled;
+- (void)setFailIfCDPNotEnabled:;
+- (id)altDSIDNeedingRepair;
+- (void)setAltDSIDNeedingRepair:;
+@end

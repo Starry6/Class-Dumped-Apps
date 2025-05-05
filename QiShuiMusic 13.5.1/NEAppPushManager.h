@@ -1,0 +1,33 @@
+@interface NEAppPushManager : NSObject
+@property (nonatomic) BOOL active;
+@property (nonatomic) NSArray matchSSIDs;
+@property (nonatomic) NSArray matchPrivateLTENetworks;
+@property (nonatomic) NSDictionary providerConfiguration;
+@property (nonatomic) NSString providerBundleIdentifier;
+@property (nonatomic) <NEAppPushDelegate> delegate;
+@property (nonatomic) NSString localizedDescription;
+@property (nonatomic) BOOL enabled;
+- (id)init;
+- (void)dealloc;
+- (id)localizedDescription;
+- (void)setDelegate:;
+- (id)providerConfiguration;
+- (id)delegate;
+- (void)setEnabled:;
+- (void).cxx_destruct;
+- (void)setLocalizedDescription:;
+- (void)setActive:;
+- (BOOL)isActive;
+- (BOOL)isEnabled;
+- (id)providerBundleIdentifier;
+- (void)loadFromPreferencesWithCompletionHandler:;
+- (void)removeFromPreferencesWithCompletionHandler:;
+- (void)saveToPreferencesWithCompletionHandler:;
+- (void)setProviderConfiguration:;
+- (void)setProviderBundleIdentifier:;
+- (id)matchSSIDs;
+- (void)setMatchSSIDs:;
+- (id)matchPrivateLTENetworks;
+- (void)setMatchPrivateLTENetworks:;
++ (void)loadAllFromPreferencesWithCompletionHandler:;
+@end

@@ -1,0 +1,33 @@
+@interface GEORPPoiImageFeedback : PBCodable
+@property (nonatomic) BOOL hasPoiImageContext;
+@property (nonatomic) GEORPPoiImageFeedbackContext poiImageContext;
+@property (nonatomic) BOOL hasPoiImageCorrections;
+@property (nonatomic) GEORPPoiImageFeedbackCorrections poiImageCorrections;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (BOOL)hasGreenTeaWithValue:;
+- (id)init;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasPoiImageContext;
+- (id)poiImageContext;
+- (void)setPoiImageContext:;
+- (BOOL)hasPoiImageCorrections;
+- (id)poiImageCorrections;
+- (void)setPoiImageCorrections:;
++ (BOOL)isValid:;
+@end

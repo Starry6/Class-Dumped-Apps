@@ -1,0 +1,37 @@
+@interface IESLiveUserEnterBaseView : UIView
+@property (nonatomic) double moveRate;
+@property (nonatomic) @? onAnimationEnd;
+@property (nonatomic) @? onTouchViewTap;
+@property (nonatomic) @? checkComboNode;
+@property (nonatomic) @? onComboFinished;
+@property (nonatomic) @? onViewDismissed;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)onViewDismissed;
+- (id)onComboFinished;
+- (void)startAnimationFromLeft:withKey:;
+- (id)checkComboNode;
+- (double)moveRate;
+- (BOOL)needEnterFromLeft;
+- (BOOL)needHideFromRight;
+- (id)onAnimationEnd;
+- (id)onTouchViewTap;
+- (void)removeAllFromSuperView;
+- (void)setCheckComboNode:;
+- (void)setMoveRate:;
+- (void)setOnAnimationEnd:;
+- (void)setOnComboFinished:;
+- (void)setOnTouchViewTap:;
+- (void)setOnViewDismissed:;
+- (void)startEnterAnimationOn:shouldReduceFPS:;
+- (void)startEnterAnimationOn:shouldReduceFPS:stayTime:;
+- (void)startLeavingAnimationOn:shouldReduceFPS:;
+- (void)startShowingAnimationOn:shouldReduceFPS:stayTime:;
+- (void)updateWithEnterMessageNode:;
+- (id)view;
+- (id)initWithFrame:;
+- (void)startAnimation;
+- (void).cxx_destruct;
+@end

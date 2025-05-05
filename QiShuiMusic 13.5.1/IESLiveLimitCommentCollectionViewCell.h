@@ -1,0 +1,35 @@
+@interface IESLiveLimitCommentCollectionViewCell : UICollectionViewCell
+@property (nonatomic) UILabel label;
+@property (nonatomic) UIImage normalImage;
+@property (nonatomic) UIImage selectImage;
+@property (nonatomic) NSString selectColor;
+@property (nonatomic) NSString unselectColor;
+@property (nonatomic) UIImageView backgroundImageView;
+@property (nonatomic) q index;
+@property (nonatomic) @? tapCallBack;
+- (void)setNormalImage:;
+- (void)setSelectColor:;
+- (void)setSelectImage:;
+- (void)setTapCallBack:;
+- (void)longGesture:;
+- (id)normalImage;
+- (id)selectColor;
+- (id)selectImage;
+- (void)setUnselectColor:;
+- (id)tapCallBack;
+- (void)targetAction:;
+- (id)unselectColor;
+- (void)updateNormalImage;
+- (void)updateSelectImage;
+- (void)updateTheme:;
+- (id)backgroundImageView;
+- (void)initialize;
+- (void)setLabel:;
+- (id)label;
+- (long long)index;
+- (id)initWithFrame:;
+- (void)setIndex:;
+- (void).cxx_destruct;
+- (void)setBackgroundImageView:;
++ (id)sizeForString:;
+@end

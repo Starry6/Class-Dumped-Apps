@@ -1,0 +1,37 @@
+@interface CXDatabase : NSObject
+@property (nonatomic) NSURL url;
+@property (nonatomic) ^{sqlite3=} database;
+@property (nonatomic) NSMutableDictionary sqlQueryToStatements;
+@property (nonatomic) q lastInsertedRowID;
+@property (nonatomic) NSInteger countOfRecordsModifiedByLastQuery;
+- (BOOL)performTransactionWithBlock:error:;
+- (BOOL)vacuumWithError:;
+- (BOOL)closeWithError:;
+- (BOOL)beginTransactionWithError:;
+- (id)url;
+- (id)init;
+- (BOOL)executeSQL:error:;
+- (long long)lastInsertedRowID;
+- (void)dealloc;
+- (int)countOfRecordsModifiedByLastQuery;
+- (void)setDatabase:;
+- (BOOL)executeSQL:withStatementPreparationBlock:transient:error:;
+- (BOOL)selectSQL:withBindings:expectedColumnCount:resultRowHandler:error:;
+- (BOOL)executeSQL:withStatementPreparationBlock:error:;
+- (void)setSqlQueryToStatements:;
+- (void)setUrl:;
+- (BOOL)commitTransactionWithError:;
+- (BOOL)enableForeignKeysWithError:;
+- (BOOL)executeSQL:withBindings:error:;
+- (BOOL)setBusyTimeout:error:;
+- (id)_statementForSQL:transient:error:;
+- (void).cxx_destruct;
+- (BOOL)rollbackTransactionWithError:;
+- (id)description;
+- (BOOL)selectSQL:withBindings:expectedColumnCount:transient:resultRowHandler:error:;
+- (id)sqlQueryToStatements;
+- (id)database;
+- (id)initWithURL:readOnly:error:;
+- (BOOL)executeSQL:withBindings:transient:error:;
+- (id)namesOfColumnsInTableWithName:error:;
+@end

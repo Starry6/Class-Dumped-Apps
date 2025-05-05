@@ -1,0 +1,35 @@
+@interface IESSaaSTIMLongConnectionCallback : NSObject
+@property (nonatomic) @? successCompletionBlock;
+@property (nonatomic) @? failureCompletionBlock;
+@property (nonatomic) @? beforeFilterBlock;
+@property (nonatomic) @? filterBlock;
+@property (nonatomic) @? mappingBlock;
+@property (nonatomic) @? errorInMappedResponseBlock;
+@property (nonatomic) : configuredSelector;
+@property (nonatomic) @ userinfo;
+@property (nonatomic) NSObject<OS_dispatch_queue> callbackQueue;
+- (id)beforeFilterBlock;
+- (SEL)configuredSelector;
+- (id)errorInMappedResponseBlock;
+- (id)failureCompletionBlock;
+- (id)mappingBlock;
+- (void)setBeforeFilterBlock:;
+- (void)setConfiguredSelector:;
+- (void)setErrorInMappedResponseBlock:;
+- (void)setFailureCompletionBlock:;
+- (void)setMappingBlock:;
+- (void)setSuccessCompletionBlock:;
+- (void)setUserinfo:;
+- (id)successCompletionBlock;
+- (id)userinfo;
+- (id)init;
+- (void)dealloc;
+- (void)setCallbackQueue:;
+- (id)callbackQueue;
+- (id)filterBlock;
+- (void).cxx_destruct;
+- (id)description;
+- (void)setFilterBlock:;
+- (id)currentUserID;
++ (id)callbackWithSuccessBlock:failureBlock:;
+@end

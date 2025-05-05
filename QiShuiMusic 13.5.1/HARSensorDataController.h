@@ -1,0 +1,32 @@
+@interface HARSensorDataController : NSObject
+@property (nonatomic) <HARMotionDataProvider> motionManger;
+@property (nonatomic) NSObject<OS_dispatch_queue> processInputQueue;
+@property (nonatomic) NSMutableArray sensorDatas;
+@property (nonatomic) BOOL addingData;
+@property (nonatomic) BOOL useScreenStatus;
+@property (nonatomic) <HARSensorDataControllerDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)clearSensorData;
+- (BOOL)useScreenStatus;
+- (void)setSensorDatas:;
+- (BOOL)addingData;
+- (void)asyncGatherSensorData;
+- (id)initWithMotionDataProvider:;
+- (BOOL)isSensorAvailable;
+- (id)motionManger;
+- (id)processInputQueue;
+- (id)sensorDatas;
+- (void)setAddingData:;
+- (void)setMotionManger:;
+- (void)setProcessInputQueue:;
+- (void)setUseScreenStatus:;
+- (void)startSensorDataUpdates;
+- (void)stopSensorDataUpdates;
+- (void)dealloc;
+- (void)setDelegate:;
+- (id)delegate;
+- (void).cxx_destruct;
+@end

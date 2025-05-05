@@ -1,0 +1,35 @@
+@interface MRMediaRemoteServiceClient : NSObject
+@property (nonatomic) MRMediaRemoteService service;
+@property (nonatomic) MRNotificationClient notificationClient;
+@property (nonatomic) NSArray registeredOrigins;
+@property (nonatomic) NSObject<OS_dispatch_queue> workerQueue;
+@property (nonatomic) NSObject<OS_dispatch_queue> playbackQueueDispatchQueue;
+@property (nonatomic) MRPlayerPath activePlayerPath;
+@property (nonatomic) MRPlayerPath currentSessionPlayerPath;
+- (void)removeEndpointObserver:;
+- (id)workerQueue;
+- (id)init;
+- (void)dealloc;
+- (void)processPlayerPathInvalidationHandlersWithInvalidOrigin:;
+- (void)setActivePlayerPath:;
+- (id)registeredOrigins;
+- (id)activePlayerPath;
+- (id)currentSessionPlayerPath;
+- (void)addDiscoverySession:;
+- (id)debugDescription;
+- (id)service;
+- (void)fetchPickableRoutesWithCategory:completion:;
+- (void)setPlaybackQueueDispatchQueue:;
+- (void)addNowPlayingController:;
+- (void).cxx_destruct;
+- (void)addEndpointObserver:;
+- (void)setCurrentSessionPlayerPath:;
+- (id)playbackQueueDispatchQueue;
+- (void)processPlayerPathInvalidationHandlersWithBlock:;
+- (void)removeInvalidationHandler:;
+- (void)removeNowPlayingController:;
+- (id)addPlayerPathInvalidationHandler:;
+- (id)notificationClient;
+- (void)removeDiscoverySession:;
++ (id)sharedServiceClient;
+@end

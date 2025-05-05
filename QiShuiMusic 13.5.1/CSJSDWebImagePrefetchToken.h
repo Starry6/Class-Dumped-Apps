@@ -1,0 +1,34 @@
+@interface CSJSDWebImagePrefetchToken : NSObject
+@property (nonatomic) NSArray urls;
+@property (nonatomic) NSPointerArray loadOperations;
+@property (nonatomic) NSPointerArray prefetchOperations;
+@property (nonatomic) CSJSDWebImagePrefetcher prefetcher;
+@property (nonatomic) Q options;
+@property (nonatomic) NSDictionary context;
+@property (nonatomic) @? completionBlock;
+@property (nonatomic) @? progressBlock;
+@property (nonatomic) BOOL cancelled;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)loadOperations;
+- (id)prefetchOperations;
+- (id)prefetcher;
+- (void)setLoadOperations:;
+- (void)setPrefetchOperations:;
+- (void)setPrefetcher:;
+- (void)setOptions:;
+- (id)progressBlock;
+- (id)init;
+- (void)cancel;
+- (id)urls;
+- (void)setProgressBlock:;
+- (id)context;
+- (void)setCompletionBlock:;
+- (void)setUrls:;
+- (unsigned long long)options;
+- (void).cxx_destruct;
+- (id)completionBlock;
+- (void)setContext:;
+@end

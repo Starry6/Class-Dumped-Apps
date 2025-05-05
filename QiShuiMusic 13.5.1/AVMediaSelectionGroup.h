@@ -1,0 +1,32 @@
+@interface AVMediaSelectionGroup : NSObject
+@property (nonatomic) NSArray options;
+@property (nonatomic) AVMediaSelectionOption defaultOption;
+@property (nonatomic) BOOL allowsEmptySelection;
+- (id)makeNowPlayingInfoLanguageOptionGroup;
+- (id)dictionary;
+- (id)init;
+- (void)dealloc;
+- (id)asset;
+- (id)_weakReference;
+- (id)_groupMediaCharacteristics;
+- (id)defaultOption;
+- (id)options;
+- (id)_optionWithID:displaysNonForcedSubtitles:;
+- (id)mediaSelectionOptionWithPropertyList:;
+- (id)description;
+- (id)_groupID;
+- (BOOL)_isStreamingGroup;
+- (id)_groupMediaType;
+- (id)copyWithZone:;
+- (id)currentBundleIdentifier;
+- (BOOL)allowsEmptySelection;
+- (id)_primaryMediaCharacteristic;
+- (BOOL)_matchesGroupID:mediaType:;
+- (void)setCurrentBundleIdentifier:;
++ (id)mediaSelectionGroupWithAsset:dictionary:;
++ (id)playableMediaSelectionOptionsFromArray:;
++ (id)mediaSelectionOptionsFromArray:withLocale:;
++ (id)mediaSelectionOptionsFromArray:filteredAndSortedAccordingToPreferredLanguages:;
++ (id)mediaSelectionOptionsFromArray:withMediaCharacteristics:;
++ (id)mediaSelectionOptionsFromArray:withoutMediaCharacteristics:;
+@end

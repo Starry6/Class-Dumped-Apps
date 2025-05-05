@@ -1,0 +1,35 @@
+@interface NSHTMLWriter : NSObject
+- (void)dealloc;
+- (id)initWithAttributedString:;
+- (id)HTMLData;
+- (void)setDocumentAttributes:;
+- (id)webArchive;
+- (id)_prefix;
+- (Class)_webArchiveClass;
+- (void)_createWebArchiveData;
+- (id)_prefixUp;
+- (id)_prefixDown;
+- (unsigned long long)_spanClassForAttributes:inParagraphClass:spanClass:flags:;
+- (id)_defaultValueForAttribute:range:;
+- (unsigned long long)_paragraphClassforParagraphStyle:range:isEmpty:isCompletelyEmpty:headerString:alignmentString:directionString:;
+- (void)_writeDocumentProperty:value:toString:;
+- (void)_writeDocumentPropertiesToString:;
+- (void)_closeFlags:openFlags:inString:;
+- (unsigned long long)_blockClassForBlock:;
+- (void)_openBlocksForParagraphStyle:atIndex:inString:;
+- (BOOL)_closeBlocksForParagraphStyle:atIndex:inString:;
+- (unsigned long long)_listClassForList:;
+- (void)_openListsForParagraphStyle:atIndex:inString:isStrict:;
+- (BOOL)_closeListsForParagraphStyle:atIndex:inString:;
+- (void)_appendAttachment:atIndex:toString:;
+- (BOOL)_isStrictByParsingExcludedElements;
+- (void)_prepareString:forConversionToEncoding:;
+- (void)_generateHTML;
+- (id)HTMLFileWrapper;
+- (id)subresources;
+- (id)webArchiveData;
+- (void)readDocumentFragment:;
+- (id)documentFragmentForDocument:;
+- (id)documentFragmentString;
++ (id)fontNameForFont:;
+@end

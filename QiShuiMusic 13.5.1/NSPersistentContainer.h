@@ -1,0 +1,31 @@
+@interface NSPersistentContainer : NSObject
+@property (nonatomic) NSString name;
+@property (nonatomic) NSManagedObjectContext viewContext;
+@property (nonatomic) NSManagedObjectModel managedObjectModel;
+@property (nonatomic) NSPersistentStoreCoordinator persistentStoreCoordinator;
+@property (nonatomic) NSArray persistentStoreDescriptions;
+- (id)persistentStoreCoordinator;
+- (BOOL)load:;
+- (id)init;
+- (id)managedObjectModel;
+- (void)dealloc;
+- (id)initWithName:managedObjectModel:;
+- (id)persistentStoreDescriptions;
+- (id)initWithName:;
+- (void)loadPersistentStoresWithCompletionHandler:;
+- (void)_loadStoreDescriptions:withCompletionHandler:;
+- (void)performBackgroundTask:;
+- (id)viewContext;
+- (void)setPersistentStoreDescriptions:;
+- (id)name;
+- (id)newBackgroundContext;
++ (id)_newModelForName:;
++ (id)persistentContainerUsingCachedModelWithPath:;
++ (id)persistentContainerWithPath:modelNamed:;
++ (id)persistentContainerWithPath:;
++ (id)defaultDirectoryURL;
++ (Class)persistentStoreDescriptionClass;
++ (id)persistentContainerWithName:managedObjectModel:;
++ (id)persistentContainerWithPath:managedObjectModel:;
++ (id)persistentContainerWithName:;
+@end

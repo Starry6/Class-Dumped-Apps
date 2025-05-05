@@ -1,0 +1,33 @@
+@interface MetalFilterBmfVQScore : MetalFilterDefault
+@property (nonatomic) BOOL enableProcessEffect;
+@property (nonatomic) q sumFrameCount;
+@property (nonatomic) double sumCostTime;
+@property (nonatomic) double averageCostTime;
+@property (nonatomic) q sumSuccessFrameCount;
+@property (nonatomic) double vqscoreSuccessRate;
+@property (nonatomic) BOOL isInited;
+@property (nonatomic) <IBmfVqscoreLiveOC> vqscoreInstance;
+@property (nonatomic) @ downloader;
+- (id)vqscoreInstance;
+- (double)averageCostTime;
+- (void)setSumCostTime:;
+- (BOOL)enableProcessEffect;
+- (BOOL)isInited;
+- (void)setAverageCostTime:;
+- (void)setDownloader:;
+- (void)setEnableProcessEffect:;
+- (void)setIsInited:;
+- (void)setSumFrameCount:;
+- (void)setSumSuccessFrameCount:;
+- (void)setVqscoreInstance:;
+- (void)setVqscoreSuccessRate:;
+- (double)sumCostTime;
+- (long long)sumFrameCount;
+- (long long)sumSuccessFrameCount;
+- (double)vqscoreSuccessRate;
+- (void)dealloc;
+- (id)process:;
+- (void).cxx_destruct;
+- (id)downloader;
+- (id)initWithDictionary:index:;
+@end

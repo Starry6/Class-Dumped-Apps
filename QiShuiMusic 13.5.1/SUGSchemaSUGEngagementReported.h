@@ -1,0 +1,35 @@
+@interface SUGSchemaSUGEngagementReported : SISchemaInstrumentationMessage
+@property (nonatomic) Q performedTimeSince1970InMs;
+@property (nonatomic) BOOL hasPerformedTimeSince1970InMs;
+@property (nonatomic) SUGSchemaSUGUserStatistics userStatistics;
+@property (nonatomic) BOOL hasUserStatistics;
+@property (nonatomic) SUGSchemaSUGInteraction interaction;
+@property (nonatomic) BOOL hasInteraction;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (id)interaction;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)setInteraction:;
+- (void)writeTo:;
+- (BOOL)hasInteraction;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)setPerformedTimeSince1970InMs:;
+- (BOOL)hasPerformedTimeSince1970InMs;
+- (void)setHasPerformedTimeSince1970InMs:;
+- (void)deletePerformedTimeSince1970InMs;
+- (BOOL)hasUserStatistics;
+- (void)deleteUserStatistics;
+- (void)deleteInteraction;
+- (unsigned long long)performedTimeSince1970InMs;
+- (id)userStatistics;
+- (void)setUserStatistics:;
+- (void)setHasUserStatistics:;
+- (void)setHasInteraction:;
+@end

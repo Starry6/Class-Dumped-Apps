@@ -1,0 +1,33 @@
+@interface IESLiveSaaSWsManager : NSObject
+@property (nonatomic) NSArray errorCodeArray;
+@property (nonatomic) TTPushManager wsPushManager;
+@property (nonatomic) <IESLiveSaaSWsManagerDelegate> liveWsDelegate;
+- (void)livePushManagerConnectionError:;
+- (void)closeConnect;
+- (void)configLCSWithAppKey:fpId:deviceId:appId:installId:sessionId:wsURLs:customParams:;
+- (id)errorCodeArray;
+- (void)liveAppDidBecomeActive:;
+- (void)livePushManagerConnectionStateChanged:;
+- (void)livePushManagerReceivingMessage:;
+- (void)liveReachabilityChangedNotification:;
+- (id)liveWsDelegate;
+- (int)p_currentNetworkStatus;
+- (int)p_currentPlatform;
+- (int)p_getClientVersionNumber;
+- (void)p_handleNetworkChange:;
+- (BOOL)p_isLiveChannel:;
+- (BOOL)p_isLiveWsURL:;
+- (void)sendAckMessageWithExt:logID:;
+- (void)setErrorCodeArray:;
+- (void)setLiveWsDelegate:;
+- (void)setWsPushManager:;
+- (id)wsPushManager;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (BOOL)isConnected;
+- (void)connect;
+- (void)p_removeObservers;
+- (void)p_addObservers;
++ (id)sharedManager;
+@end

@@ -1,0 +1,33 @@
+@interface IESLiveInteractAnchorStartFragment : IESLiveRoomComponent
+@property (nonatomic) q startLiveType;
+@property (nonatomic) IESLiveMultiAudioQuickStartModel quickStartModel;
+@property (nonatomic) IESLiveLinkMicAudienceGetLinkmicInfoWithRtcInfoResponse_ResponseData resumeResponse;
+@property (nonatomic) BOOL avatarShow;
+@property (nonatomic) BOOL backgroundViewShow;
+@property (nonatomic) HTSLiveAudioBGData audioTheme;
+@property (nonatomic) BOOL hasHandleAnchorRoomContext;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)quickStartModel;
+- (void)componentCreate;
+- (id)audioTheme;
+- (BOOL)avatarShow;
+- (BOOL)backgroundViewShow;
+- (void)componentBindService;
+- (void)handleAnchorRoomContext;
+- (BOOL)hasHandleAnchorRoomContext;
+- (unsigned long long)originScene;
+- (id)resumeResponse;
+- (void)setAudioTheme:;
+- (void)setAvatarShow:;
+- (void)setBackgroundViewShow:;
+- (void)setHasHandleAnchorRoomContext:;
+- (void)setQuickStartModel:;
+- (void)setResumeResponse:;
+- (void)setStartLiveType:;
+- (long long)startLiveType;
+- (id)supportResumeScene;
+- (void).cxx_destruct;
+@end

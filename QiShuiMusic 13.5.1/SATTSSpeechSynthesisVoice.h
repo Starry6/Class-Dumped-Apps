@@ -1,0 +1,34 @@
+@interface SATTSSpeechSynthesisVoice : AceObject
+@property (nonatomic) NSString contentVersion;
+@property (nonatomic) NSString gender;
+@property (nonatomic) NSString keyString;
+@property (nonatomic) NSString languageCode;
+@property (nonatomic) NSString name;
+@property (nonatomic) NSString quality;
+@property (nonatomic) NSString type;
+@property (nonatomic) BOOL useServer;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)quality;
+- (void)setName:;
+- (id)groupIdentifier;
+- (void)setKeyString:;
+- (void)setLanguageCode:;
+- (id)gender;
+- (id)languageCode;
+- (void)setQuality:;
+- (id)contentVersion;
+- (void)setGender:;
+- (void)setType:;
+- (void)setContentVersion:;
+- (id)type;
+- (id)keyString;
+- (id)encodedClassName;
+- (id)name;
+- (BOOL)useServer;
+- (void)setUseServer:;
++ (id)speechSynthesisVoice;
++ (id)speechSynthesisVoiceWithDictionary:context:;
+@end

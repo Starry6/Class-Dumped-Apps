@@ -1,0 +1,38 @@
+@interface GEOLogMsgStateDeviceBase : PBCodable
+@property (nonatomic) BOOL hasDeviceInterfaceOrientation;
+@property (nonatomic) NSInteger deviceInterfaceOrientation;
+@property (nonatomic) BOOL hasDeviceBatteryState;
+@property (nonatomic) NSInteger deviceBatteryState;
+@property (nonatomic) BOOL hasDeviceInVehicle;
+@property (nonatomic) BOOL deviceInVehicle;
+- (void)setDeviceInterfaceOrientation:;
+- (void)readAll:;
+- (BOOL)hasDeviceInterfaceOrientation;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (int)deviceInterfaceOrientation;
+- (id)deviceInterfaceOrientationAsString:;
+- (void)setDeviceBatteryState:;
+- (BOOL)hasDeviceInVehicle;
+- (unsigned long long)hash;
+- (int)StringAsDeviceBatteryState:;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (BOOL)hasDeviceBatteryState;
+- (int)StringAsDeviceInterfaceOrientation:;
+- (void)setHasDeviceInVehicle:;
+- (void)setHasDeviceInterfaceOrientation:;
+- (id)deviceBatteryStateAsString:;
+- (BOOL)readFrom:;
+- (BOOL)deviceInVehicle;
+- (id)description;
+- (void)setDeviceInVehicle:;
+- (int)deviceBatteryState;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)setHasDeviceBatteryState:;
+- (id)copyWithZone:;
++ (BOOL)isValid:;
+@end

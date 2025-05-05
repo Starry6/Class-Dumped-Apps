@@ -1,0 +1,31 @@
+@interface INFlight : NSObject
+@property (nonatomic) INAirline airline;
+@property (nonatomic) NSString flightNumber;
+@property (nonatomic) INDateComponentsRange boardingTime;
+@property (nonatomic) INDateComponentsRange flightDuration;
+@property (nonatomic) INAirportGate departureAirportGate;
+@property (nonatomic) INAirportGate arrivalAirportGate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)_dictionaryRepresentation;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (id)descriptionAtIndent:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)_intents_encodeWithJSONEncoder:codableDescription:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)initWithAirline:flightNumber:boardingTime:flightDuration:departureAirportGate:arrivalAirportGate:;
+- (id)airline;
+- (id)flightNumber;
+- (id)boardingTime;
+- (id)flightDuration;
+- (id)departureAirportGate;
+- (id)arrivalAirportGate;
++ (id)_intents_decodeWithJSONDecoder:codableDescription:from:;
++ (BOOL)supportsSecureCoding;
+@end

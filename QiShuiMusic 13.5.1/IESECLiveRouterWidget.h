@@ -1,0 +1,37 @@
+@interface IESECLiveRouterWidget : IESECLiveBaseWidget
+@property (nonatomic) BOOL shopCartShowed;
+@property (nonatomic) IESECLiveRoomParamVerify verifier;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)UIConfig;
+- (id)coreParams;
+- (void)didHideShopCart:;
+- (void)didShowShopCart:;
+- (id)ecomEntranceForm;
+- (void)getGoodsModelWithPromotionID:passthroughParams:requestAdditions:completion:;
+- (BOOL)goodsJumpHandler:shouldJump:;
+- (void)handleCoreParamsDuringLive:;
+- (id)initWithRoom:roomContext:;
+- (id)jumpHandler;
+- (void)openBuyViewWithPromotion:passthroughParams:extraInfo:;
+- (void)openDetailViewWithProductID:passthroughParams:extraInfo:;
+- (void)openDetailViewWithPromotionID:passthroughParams:requestAdditions:extraInfo:;
+- (void)openECViewWithSchema:;
+- (void)openGoodsDetailWithParams:;
+- (void)openGoodsListViewWithParams:;
+- (void)openListViewWithExtraParams:passthroughParams:extraInfo:;
+- (void)p_openDetailViewWithGoodsModel:monitorMetricParams:extraInfo:;
+- (void)p_trackWhenFinalJumpWithScene:metricParams:;
+- (void)setShopCartShowed:;
+- (BOOL)shopCartShowed;
+- (id)skuViewWithGoodsModel:extraParams:;
+- (id)sourceVC;
+- (id)targetParentView;
+- (void)widgetUnmount;
+- (id)tracker;
+- (void).cxx_destruct;
+- (id)verifier;
+- (void)setVerifier:;
+@end

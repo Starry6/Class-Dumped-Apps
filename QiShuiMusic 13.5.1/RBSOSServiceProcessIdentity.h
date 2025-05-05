@@ -1,0 +1,23 @@
+@interface RBSOSServiceProcessIdentity : RBSProcessIdentity
+- (BOOL)isDaemon;
+- (id)daemonJobLabel;
+- (BOOL)isAnonymous;
+- (id)initWithRBSXPCCoder:;
+- (void)encodeWithRBSXPCCoder:;
+- (id)angelJobLabel;
+- (BOOL)treatedAsAnAppByFrontBoard:;
+- (id)debugDescription;
+- (id)_initDaemonWithJobLabel:pid:auid:;
+- (id)_initServiceWithJobLabel:pid:auid:type:;
+- (id)_initUnknownOSServiceWithJobLabel:;
+- (BOOL)_matchesIdentity:;
+- (void).cxx_destruct;
+- (BOOL)isAngel;
+- (BOOL)supportsLaunchingDirectly;
+- (unsigned char)osServiceType;
+- (id)copyWithAuid:;
+- (id)_initAngelWithJobLabel:;
+- (BOOL)hasConsistentLaunchdJob;
+- (id)consistentLaunchdJobLabel;
+- (void)setOsServiceType:;
+@end

@@ -1,0 +1,37 @@
+@interface FBSShutdownOptions : NSObject
+@property (nonatomic) q LPEMOption;
+@property (nonatomic) <NSCopying> localContext;
+@property (nonatomic) NSString reason;
+@property (nonatomic) q rebootType;
+@property (nonatomic) q source;
+@property (nonatomic) BOOL isShutdown;
+@property (nonatomic) BOOL isReboot;
+@property (nonatomic) BOOL isUserInitiated;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (id)initWithReason:;
+- (void)encodeWithXPCDictionary:;
+- (id)reason;
+- (BOOL)isShutdown;
+- (id)succinctDescriptionBuilder;
+- (BOOL)isUserInitiated;
+- (id)initWithXPCDictionary:;
+- (void).cxx_destruct;
+- (long long)source;
+- (id)succinctDescription;
+- (id)description;
+- (id)localContext;
+- (id)descriptionBuilderWithMultilinePrefix:;
+- (void)setSource:;
+- (id)descriptionWithMultilinePrefix:;
+- (id)copyWithZone:;
+- (void)setLocalContext:;
+- (BOOL)isReboot;
+- (long long)rebootType;
+- (void)setRebootType:;
+- (long long)LPEMOption;
+- (void)setLPEMOption:;
+@end

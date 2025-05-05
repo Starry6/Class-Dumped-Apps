@@ -1,0 +1,32 @@
+@interface SAMetrics : SABaseCommand
+@property (nonatomic) NSString assistantId;
+@property (nonatomic) NSString category;
+@property (nonatomic) NSDictionary eventInformation;
+@property (nonatomic) NSString originalCommandId;
+@property (nonatomic) NSString speechId;
+@property (nonatomic) NSDictionary timings;
+@property (nonatomic) NSString aceId;
+@property (nonatomic) NSString refId;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)groupIdentifier;
+- (void)setSpeechId:;
+- (BOOL)requiresResponse;
+- (id)speechId;
+- (void)setCategory:;
+- (id)encodedClassName;
+- (id)assistantId;
+- (void)setAssistantId:;
+- (id)category;
+- (void)setEventInformation:;
+- (void)setTimings:;
+- (id)originalCommandId;
+- (void)setOriginalCommandId:;
+- (id)_descriptionHint;
+- (id)eventInformation;
+- (id)timings;
++ (id)metrics;
++ (id)metricsWithDictionary:context:;
+@end

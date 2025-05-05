@@ -1,0 +1,33 @@
+@interface BDXErrorViewConfig : NSObject
+@property (nonatomic) @? onRetry;
+@property (nonatomic) UIColor backgroundColor;
+@property (nonatomic) UIImage errorImage;
+@property (nonatomic) NSString errorTitleMessage;
+@property (nonatomic) UIColor errorTitleMessageColor;
+@property (nonatomic) NSString descMessage;
+@property (nonatomic) UIColor descMessageColor;
+@property (nonatomic) NSString retryButtonText;
+@property (nonatomic) UIColor retryButtonTextColor;
+@property (nonatomic) UIColor retryButtonBackgroundColor;
+- (id)onRetry;
+- (id)retryButtonText;
+- (void)setDescMessage:;
+- (id)descMessage;
+- (id)descMessageColor;
+- (id)errorImage;
+- (id)errorTitleMessage;
+- (id)errorTitleMessageColor;
+- (id)retryButtonBackgroundColor;
+- (id)retryButtonTextColor;
+- (void)setDescMessageColor:;
+- (void)setErrorImage:;
+- (void)setErrorTitleMessage:;
+- (void)setErrorTitleMessageColor:;
+- (void)setOnRetry:;
+- (void)setRetryButtonBackgroundColor:;
+- (void)setRetryButtonText:;
+- (void)setRetryButtonTextColor:;
+- (void)setBackgroundColor:;
+- (id)backgroundColor;
+- (void).cxx_destruct;
+@end

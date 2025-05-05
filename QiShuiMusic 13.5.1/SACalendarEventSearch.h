@@ -1,0 +1,31 @@
+@interface SACalendarEventSearch : SADomainCommand
+@property (nonatomic) NSDate endDate;
+@property (nonatomic) NSNumber limit;
+@property (nonatomic) NSString location;
+@property (nonatomic) NSString notes;
+@property (nonatomic) NSArray participants;
+@property (nonatomic) NSDate startDate;
+@property (nonatomic) NSString timeZoneId;
+@property (nonatomic) NSString title;
+- (id)notes;
+- (id)limit;
+- (id)startDate;
+- (id)participants;
+- (void)setParticipants:;
+- (id)groupIdentifier;
+- (void)setTimeZoneId:;
+- (void)setStartDate:;
+- (void)setTitle:;
+- (BOOL)requiresResponse;
+- (void)setLimit:;
+- (id)location;
+- (id)timeZoneId;
+- (void)setEndDate:;
+- (id)endDate;
+- (id)title;
+- (id)encodedClassName;
+- (void)setLocation:;
+- (void)setNotes:;
++ (id)eventSearch;
++ (id)eventSearchWithDictionary:context:;
+@end

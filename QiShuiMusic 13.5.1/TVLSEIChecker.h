@@ -1,0 +1,35 @@
+@interface TVLSEIChecker : TVLChecker
+@property (nonatomic) NSMutableArray keyframeContainerPacketQueue;
+@property (nonatomic) NSMutableArray reliableSEIQueue;
+@property (nonatomic) TVLSEI firstReliableSEI;
+@property (nonatomic) TVLSEI lastIndexedSEI;
+@property (nonatomic) BOOL isSEIAvailable;
+@property (nonatomic) Q receivedIndexedSEICount;
+@property (nonatomic) Q expectedIndexedSEICount;
+@property (nonatomic) Q receivedUniqueIndexedSEICount;
+@property (nonatomic) Q expectedUniqueIndexedSEICount;
+- (void)appendReceivedPacket:;
+- (void)appendReliableSEI:;
+- (void)appendRenderingInfo:;
+- (void)checkForArrivalRate:;
+- (void)checkSEIWithRenderingInfo:;
+- (unsigned long long)expectedIndexedSEICount;
+- (unsigned long long)expectedUniqueIndexedSEICount;
+- (id)firstReliableSEI;
+- (void)hasDetectedStreamAbnormalWithEventInfo:;
+- (BOOL)isSEIAvailable;
+- (id)keyframeContainerPacketQueue;
+- (id)lastIndexedSEI;
+- (unsigned long long)receivedIndexedSEICount;
+- (unsigned long long)receivedUniqueIndexedSEICount;
+- (id)reliableSEIQueue;
+- (void)removeReceivedPacketBeforePTS:include:;
+- (void)removeSEIBeforePTS:include:;
+- (void)setFirstReliableSEI:;
+- (void)setKeyframeContainerPacketQueue:;
+- (void)setLastIndexedSEI:;
+- (void)setReliableSEIQueue:;
+- (void).cxx_destruct;
+- (id)initWithConfiguration:;
++ (id)checkerWithConfiguration:;
+@end

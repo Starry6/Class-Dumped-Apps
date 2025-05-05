@@ -1,0 +1,37 @@
+@interface VCAudioStreamReceiveGroup : VCMediaStreamReceiveGroup
+@property (nonatomic) <VCMediaStreamSyncSource> syncSource;
+@property (nonatomic) VCAudioCaptionsCoordinator captionsCoordinator;
+@property (nonatomic) BOOL isMuted;
+@property (nonatomic) NSInteger deviceRole;
+@property (nonatomic) BOOL isPowerSpectrumEnabled;
+- (id)stopCapture;
+- (void)dealloc;
+- (id)initWithConfig:;
+- (void)setMuted:;
+- (BOOL)isMuted;
+- (id)startCapture;
+- (void)didStart;
+- (void)didStop;
+- (id)syncSource;
+- (BOOL)configureStreams;
+- (void)setReportingAgent:;
+- (void)mediaStream:didReceiveNewMediaKeyIndex:;
+- (BOOL)setDeviceRole:operatingMode:;
+- (int)deviceRole;
+- (BOOL)isPowerSpectrumEnabled;
+- (void)setPowerSpectrumEnabled:;
+- (void)collectAndLogChannelMetrics:;
+- (void)setActiveStreamIDs:;
+- (void)setOptedInStreamID:;
+- (id)willStart;
+- (BOOL)addSyncDestination:;
+- (BOOL)removeSyncDestination:;
+- (void)setMuteOnStreams;
+- (BOOL)isAudioExpected;
+- (void)vcMediaStream:remoteMediaStalled:duration:;
+- (void)vcMediaStream:didSwitchToAudioStreamWithID:;
+- (void)vcMediaStream:didReceiveFirstFrameWithTime:;
+- (void)reportParticipantsPerfTimingsOnce;
+- (id)captionsCoordinator;
+- (void)setCaptionsCoordinator:;
+@end

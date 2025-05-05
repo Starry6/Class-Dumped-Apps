@@ -1,0 +1,36 @@
+@interface IESECLiveGoodsListBodyView : UIView
+@property (nonatomic) IESECLiveLayoutProxyView tabViewContainer;
+@property (nonatomic) UIView blankSpaceView;
+@property (nonatomic) IESECLiveLayoutProxyView bannerViewContainer;
+@property (nonatomic) IESECLiveLayoutProxyView goodsListCollectionViewContainer;
+@property (nonatomic) IESECLiveGoodsListTab tabView;
+@property (nonatomic) BOOL isShowingTab;
+@property (nonatomic) BOOL isShowingBanner;
+@property (nonatomic) UIView bannerSnapshotView;
+- (void)hideTab;
+- (void)showTab;
+- (BOOL)isShowingBanner;
+- (void)addGoodsListCollectionView:;
+- (void)addTabView:;
+- (void)addTabView:goodsListCollectionView:bannerView:;
+- (id)bannerSnapshotView;
+- (id)bannerViewContainer;
+- (id)blankSpaceView;
+- (id)goodsListCollectionViewContainer;
+- (BOOL)isShowingTab;
+- (void)setBannerSnapshotView:;
+- (void)setBannerViewContainer:;
+- (void)setBlankSpaceView:;
+- (void)setGoodsListCollectionViewContainer:;
+- (void)setTabView:;
+- (void)setTabViewContainer:;
+- (id)tabViewContainer;
+- (void)updateBlankViewConstraintsIfNeeded;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)setupUI;
+- (void)hideBanner;
+- (void)addBannerView:;
+- (void)showBanner;
+- (id)tabView;
+@end

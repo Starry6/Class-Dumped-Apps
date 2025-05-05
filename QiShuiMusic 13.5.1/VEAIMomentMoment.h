@@ -1,0 +1,33 @@
+@interface VEAIMomentMoment : NSObject
+@property (nonatomic) NSString identity;
+@property (nonatomic) NSString type;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString effectId;
+@property (nonatomic) NSString extra;
+@property (nonatomic) q coverId;
+@property (nonatomic) q version;
+@property (nonatomic) NSArray materialIds;
+@property (nonatomic) q templateId;
+@property (nonatomic) q momentSource;
+- (long long)coverId;
+- (void)setMaterialIds:;
+- (id)materialIds;
+- (long long)momentSource;
+- (void)setCoverId:;
+- (void)setExtra:;
+- (void)setMomentSource:;
+- (void)setIdentity:;
+- (id)extra;
+- (id)identity;
+- (void)setVersion:;
+- (long long)version;
+- (void)setType:;
+- (void)setTitle:;
+- (id)type;
+- (id)title;
+- (void).cxx_destruct;
+- (long long)templateId;
+- (void)setTemplateId:;
+- (id)effectId;
+- (void)setEffectId:;
+@end

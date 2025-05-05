@@ -1,0 +1,37 @@
+@interface SAHomeMemberSettings : AceObject
+@property (nonatomic) NSString countryCode;
+@property (nonatomic) SAPerson meCard;
+@property (nonatomic) BOOL mediaPlayerExplicitContentDisallowed;
+@property (nonatomic) NSArray parentalRestrictions;
+@property (nonatomic) NSString preferredLanguage;
+@property (nonatomic) NSString region;
+@property (nonatomic) NSString temperatureUnit;
+@property (nonatomic) SAVoice ttsVoice;
+@property (nonatomic) NSNumber twentyFourHourTimeDisplay;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setCountryCode:;
+- (id)countryCode;
+- (id)twentyFourHourTimeDisplay;
+- (void)setPreferredLanguage:;
+- (id)groupIdentifier;
+- (void)setRegion:;
+- (id)ttsVoice;
+- (id)region;
+- (void)setParentalRestrictions:;
+- (id)parentalRestrictions;
+- (void)setTtsVoice:;
+- (BOOL)mediaPlayerExplicitContentDisallowed;
+- (id)encodedClassName;
+- (id)meCard;
+- (void)setMediaPlayerExplicitContentDisallowed:;
+- (id)temperatureUnit;
+- (void)setTwentyFourHourTimeDisplay:;
+- (id)preferredLanguage;
+- (void)setTemperatureUnit:;
+- (void)setMeCard:;
++ (id)homeMemberSettings;
++ (id)homeMemberSettingsWithDictionary:context:;
+@end

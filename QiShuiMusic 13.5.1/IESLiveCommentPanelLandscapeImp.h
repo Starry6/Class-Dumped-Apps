@@ -1,0 +1,30 @@
+@interface IESLiveCommentPanelLandscapeImp : IESLiveCommentPanelBaseImp
+@property (nonatomic) UIView leftSpacingView;
+@property (nonatomic) UIView rightSpacingView;
+@property (nonatomic) UIButton backToKeyabordBtn;
+- (id)leftSpacingView;
+- (void)setupCommentExpandOperationView;
+- (void)setupContainers;
+- (id)backToKeyabordBtn;
+- (void)clickBackToKeyboard:;
+- (void)clickPaidDanmakuEntry;
+- (void)detailAreaChange:withDetailView:;
+- (void)doLayoutForBackToKeyboard:;
+- (void)expandEntryView:didSelectEntryItem:;
+- (double)getExpandDetailAreaContainerHeight;
+- (void)paidDanmakuViewDidShow:;
+- (void)refreshInputViewLayout;
+- (id)rightSpacingView;
+- (void)setBackToKeyabordBtn:;
+- (void)setLeftSpacingView:;
+- (void)setRightSpacingView:;
+- (void)setupCommentExpandEntrysView;
+- (void)setupKeyboardBtn;
+- (void)setupQuickReplyContentView;
+- (void)showModalContainer:;
+- (void)keyboardWillShow:;
+- (void)setDelegate:;
+- (id)delegate;
+- (void)setupWidgets;
+- (void).cxx_destruct;
+@end

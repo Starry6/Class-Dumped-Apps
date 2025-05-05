@@ -1,0 +1,32 @@
+@interface CJPayContainerConfig : JSONModel
+@property (nonatomic) BOOL enable;
+@property (nonatomic) BOOL disableAlog;
+@property (nonatomic) q colorDiff;
+@property (nonatomic) BOOL disableBlankDetect;
+@property (nonatomic) NSArray urlBlockList;
+@property (nonatomic) BOOL enableHybridkitUA;
+@property (nonatomic) BOOL cjwebEnable;
+@property (nonatomic) NSArray cjwebUrlBlockList;
+@property (nonatomic) NSArray cjwebUrlAllowList;
+- (void)setCjwebEnable:;
+- (void)setDisableAlog:;
+- (BOOL)cjwebEnable;
+- (id)cjwebUrlAllowList;
+- (id)cjwebUrlBlockList;
+- (long long)colorDiff;
+- (BOOL)disableAlog;
+- (BOOL)disableBlankDetect;
+- (BOOL)enableHybridkitUA;
+- (void)setCjwebUrlAllowList:;
+- (void)setCjwebUrlBlockList:;
+- (void)setColorDiff:;
+- (void)setDisableBlankDetect:;
+- (void)setEnableHybridkitUA:;
+- (void)setUrlBlockList:;
+- (id)urlBlockList;
+- (BOOL)enable;
+- (void).cxx_destruct;
+- (void)setEnable:;
++ (id)keyMapper;
++ (BOOL)propertyIsOptional:;
+@end

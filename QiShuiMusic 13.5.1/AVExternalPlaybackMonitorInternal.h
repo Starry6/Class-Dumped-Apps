@@ -1,0 +1,2 @@
+@interface AVExternalPlaybackMonitorInternal : NSObject
+@end

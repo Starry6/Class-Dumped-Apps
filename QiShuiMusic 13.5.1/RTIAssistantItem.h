@@ -1,0 +1,33 @@
+@interface RTIAssistantItem : NSObject
+@property (nonatomic) BOOL visibleWhenMinimized;
+@property (nonatomic) BOOL showsBarButtonItemsInline;
+@property (nonatomic) BOOL showsInputDashboardViewController;
+@property (nonatomic) float centerViewPreferredWidth;
+@property (nonatomic) UIColor detachedTintColor;
+@property (nonatomic) UIColor detachedBackgroundColor;
+@property (nonatomic) NSArray leadingBarButtonGroups;
+@property (nonatomic) NSArray trailingBarButtonGroups;
+- (void)setTrailingBarButtonGroups:;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (void)setLeadingBarButtonGroups:;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setShowsInputDashboardViewController:;
+- (void)setShowsBarButtonItemsInline:;
+- (float)centerViewPreferredWidth;
+- (BOOL)showsInputDashboardViewController;
+- (void)setDetachedTintColor:;
+- (void)setDetachedBackgroundColor:;
+- (void)setVisibleWhenMinimized:;
+- (void)setCenterViewPreferredWidth:;
+- (id)leadingBarButtonGroups;
+- (id)trailingBarButtonGroups;
+- (BOOL)showsBarButtonItemsInline;
+- (BOOL)visibleWhenMinimized;
+- (id)detachedBackgroundColor;
+- (id)detachedTintColor;
++ (BOOL)supportsSecureCoding;
+@end

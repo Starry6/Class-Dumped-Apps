@@ -1,0 +1,30 @@
+@interface PLProgressStack : NSObject
+@property (nonatomic) @ delegate;
+@property (nonatomic) float currentMultiplier;
+@property (nonatomic) NSMutableArray multipliers;
+@property (nonatomic) float currentTotal;
+@property (nonatomic) BOOL notifyUsingAssetsdNotificationCenter;
+@property (nonatomic) NSString mediaPathString;
+- (void)pop;
+- (void)push:;
+- (void)setDelegate:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)initWithDelegate:;
+- (float)currentTotal;
+- (void)setCurrentTotal:;
+- (float)totalProgress:;
+- (void)updateProgress:;
+- (void)popAndUpdate;
+- (void)setCurrentMediaPath:;
+- (id)archiveToDictionary;
+- (float)currentMultiplier;
+- (void)setCurrentMultiplier:;
+- (id)multipliers;
+- (void)setMultipliers:;
+- (BOOL)notifyUsingAssetsdNotificationCenter;
+- (void)setNotifyUsingAssetsdNotificationCenter:;
+- (id)mediaPathString;
+- (void)setMediaPathString:;
++ (id)unarchiveFromDictionary:;
+@end

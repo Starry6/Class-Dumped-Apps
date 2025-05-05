@@ -1,0 +1,32 @@
+@interface MLMultiFunctionProgramEngine : MLModel
+@property (nonatomic) MLMultiFunctionProgramContainer container;
+@property (nonatomic) NSString modelFileBasePath;
+@property (nonatomic) MLModelDescription modelDescription;
+@property (nonatomic) MLModelMetadata metadata;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)enableInstrumentsTracing;
+- (id)regress:options:error:;
+- (id)classify:options:error:;
+- (id)evaluate:error:;
+- (id)classLabels;
+- (id)container;
+- (id)predictionFromFeatures:options:error:;
+- (id)predictionsFromBatch:options:error:;
+- (id)executionSchedule;
+- (void).cxx_destruct;
+- (id)modelPath;
+- (id)program;
+- (void)setModelPath:modelName:;
+- (id)evaluateFunction:arguments:error:;
+- (id)newContextAndReturnError:;
+- (void)removeEngineForFunctionName:;
+- (id)initWithProgramContainer:configuration:error:;
+- (void)updateModelFilePath:;
+- (id)programEngineForFunction:error:;
+- (BOOL)verifyArgumentNames:functionName:error:;
+- (id)modelFileBasePath;
++ (id)loadModelFromCompiledArchive:modelVersionInfo:compilerVersionInfo:configuration:error:;
+@end

@@ -1,0 +1,31 @@
+@interface DNDModeAssertionDetails : NSObject
+@property (nonatomic) BOOL userRequested;
+@property (nonatomic) NSDate userVisibleEndDate;
+@property (nonatomic) NSDate modeConfigurationModifiedDate;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) NSString modeIdentifier;
+@property (nonatomic) DNDModeAssertionLifetime lifetime;
+@property (nonatomic) Q reason;
+- (id)modeIdentifier;
+- (id)lifetime;
+- (id)init;
+- (id)_initWithDetails:;
+- (id)identifier;
+- (unsigned long long)reason;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)mutableCopyWithZone:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)_initWithIdentifier:modeIdentifier:modeConfigurationModifiedDate:lifetime:reason:userVisibleEndDate:;
+- (id)modeConfigurationModifiedDate;
+- (id)userVisibleEndDate;
+- (BOOL)isUserRequested;
++ (BOOL)supportsSecureCoding;
++ (id)detailsWithIdentifier:modeIdentifier:lifetime:reason:;
++ (id)userRequestedAssertionDetailsWithIdentifier:modeIdentifier:lifetime:;
++ (id)detailsWithIdentifier:modeIdentifier:lifetime:;
+@end

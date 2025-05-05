@@ -1,0 +1,2 @@
+@interface BattleStateTransitionApiRoot : GPBRootObject
+@end

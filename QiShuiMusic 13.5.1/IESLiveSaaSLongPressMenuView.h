@@ -1,0 +1,38 @@
+@interface IESLiveSaaSLongPressMenuView : UIControl
+@property (nonatomic) NSArray menuItems;
+@property (nonatomic) IESLiveSaaSLongPressMenuItem maskedMenuItem;
+@property (nonatomic) UIView darkView;
+@property (nonatomic) UIView menuItemsContainerView;
+@property (nonatomic) UIButton backButton;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} markedRect;
+@property (nonatomic) @? dismissBlock;
+- (void)addDarkMaskItem:maskedRect:;
+- (void)addMenuItem:;
+- (id)darkView;
+- (void)itemViewClicked:;
+- (id)layoutDarkViewWithFrame:;
+- (void)layoutDarkmaskedMenuItem;
+- (void)layoutVerticalMenus;
+- (void)makeVisiableWithAnimation;
+- (id)markedRect;
+- (id)maskedMenuItem;
+- (void)maskedMenuItemtTapped:;
+- (id)menuItemsContainerView;
+- (unsigned long long)menuItemsCount;
+- (void)menuViewDidClicked:;
+- (void)setDarkView:;
+- (void)setMarkedRect:;
+- (void)setMaskedMenuItem:;
+- (void)setMenuItemsContainerView:;
+- (void)showWithContainerView:;
+- (void)dismiss;
+- (id)backButton;
+- (void)setMenuItems:;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (id)menuItems;
+- (void)setBackButton:;
+- (id)dismissBlock;
+- (void)setDismissBlock:;
++ (id)emptyMenuView;
+@end

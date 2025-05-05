@@ -1,0 +1,31 @@
+@interface GEONanoInfo : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (id)_deviceSystemVersionBlocking:;
+- (id)_deviceProductTypeBlocking:;
+- (id)deviceProductType;
+- (void)_startObservingDevice:;
+- (id)deviceProductTypeIfAvailable;
+- (void)_stopObservingDevice:;
+- (id)_deviceSystemBuildVersionBlocking:;
+- (id)deviceSystemBuildVersion;
+- (id)_hasPairedDeviceBlocking:;
+- (id)_observingProperties;
+- (void)_readDeviceInfo:;
+- (id)deviceIsAltAcctIfAvailable;
+- (void).cxx_destruct;
+- (id)hasPairedDeviceIfAvailable;
+- (id)deviceSystemVersionIfAvailable;
+- (void)device:propertyDidChange:fromValue:;
+- (void)setupClient;
+- (id)deviceIsAltAcct;
+- (id)deviceSystemBuildVersionIfAvailable;
+- (id)hasPairedDevice;
+- (id)deviceOsVersionIfAvailable;
+- (id)_deviceIsAltAcctBlocking:;
+- (id)deviceSystemVersion;
++ (id)sharedInfo;
+@end

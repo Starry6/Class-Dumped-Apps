@@ -1,0 +1,35 @@
+@interface HTSBootConfiguration : NSObject
+@property (nonatomic) NSArray foundationList;
+@property (nonatomic) NSArray businessTaskList;
+@property (nonatomic) NSArray backgroundList;
+@property (nonatomic) NSArray firstForegroundList;
+@property (nonatomic) NSArray afterLaunchNowList;
+@property (nonatomic) NSArray afterLaunchIdleList;
+@property (nonatomic) NSArray feedReadyNowList;
+@property (nonatomic) NSArray feedReadyIdleList;
+@property (nonatomic) NSDictionary originalConfig;
+- (void)adaptLaunchCompletionWithInterceptor:;
+- (void)adaptWithInterceptor:;
+- (id)afterLaunchIdleList;
+- (id)afterLaunchNowList;
+- (id)backgroundList;
+- (id)businessTaskList;
+- (id)feedReadyIdleList;
+- (id)feedReadyNowList;
+- (id)firstForegroundList;
+- (id)foundationList;
+- (void)parseLaunchCompletionWithDic:;
+- (void)parseLaunchWithDic:;
+- (void)setAfterLaunchIdleList:;
+- (void)setAfterLaunchNowList:;
+- (void)setBackgroundList:;
+- (void)setBusinessTaskList:;
+- (void)setFeedReadyIdleList:;
+- (void)setFeedReadyNowList:;
+- (void)setFirstForegroundList:;
+- (void)setFoundationList:;
+- (void).cxx_destruct;
+- (id)initWithConfiguration:;
+- (id)originalConfig;
+- (void)setOriginalConfig:;
+@end

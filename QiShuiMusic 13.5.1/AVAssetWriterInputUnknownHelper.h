@@ -1,0 +1,32 @@
+@interface AVAssetWriterInputUnknownHelper : AVAssetWriterInputHelper
+- (id)initWithMediaType:outputSettings:sourceFormatHint:;
+- (void)setPreferredMediaChunkDuration:;
+- (BOOL)canPerformMultiplePasses;
+- (void)addTrackAssociationWithTrackOfInput:type:;
+- (void)setLayer:;
+- (void)setMarksOutputTrackAsEnabled:;
+- (void)setPreferredMediaChunkAlignment:;
+- (void)setMaximizePowerEfficiency:;
+- (void)setProvisionalAlternateGroupID:;
+- (void)setMediaTimeScale:;
+- (void)setLanguageCode:;
+- (BOOL)canStartRespondingToEachPassDescriptionReturningReason:;
+- (void)setExtendedLanguageTag:;
+- (void)setPreferredMediaChunkSize:;
+- (void)setPerformsMultiPassEncodingIfSupported:;
+- (void)setAlternateGroupID:;
+- (void)setSampleReferenceBaseURL:;
+- (void)setNaturalSize:;
+- (void)setTransform:;
+- (BOOL)_canAddTrackAssociationWithTrackOfInput:type:exceptionReason:;
+- (BOOL)canAddTrackAssociationWithTrackOfInput:type:;
+- (void)setPreferredVolume:;
+- (void)setMediaDataLocation:;
+- (void)setMetadata:;
+- (long long)status;
+- (void)setSourcePixelBufferAttributes:;
+- (BOOL)_validateLanguageCode:;
+- (id)initWithConfigurationState:;
+- (void)setExpectsMediaDataInRealTime:;
++ (id)keyPathsForValuesAffectingCanPerformMultiplePasses;
+@end

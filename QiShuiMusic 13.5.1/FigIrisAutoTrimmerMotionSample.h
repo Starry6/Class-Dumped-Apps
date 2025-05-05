@@ -1,0 +1,30 @@
+@interface FigIrisAutoTrimmerMotionSample : NSObject
+@property (nonatomic) {?=qiIq} originatingFrameTime;
+@property (nonatomic) double timestamp;
+@property (nonatomic) {?=qiIq} cmTimestamp;
+@property (nonatomic) double deltaPeriod;
+@property (nonatomic) {?=dddd} attitude;
+@property (nonatomic) {?=dddd} delta;
+@property (nonatomic) {?=dddd} accel;
+@property (nonatomic) {?=fff} gravity;
+@property (nonatomic) NSDictionary inferences;
+@property (nonatomic) NSInteger vitalityObjectCount;
+@property (nonatomic) NSMutableDictionary intermediateCalculations;
+- (id)delta;
+- (void)setVitalityObjectCount:;
+- (void)dealloc;
+- (void)prepareIntermediates:;
+- (int)vitalityObjectCount;
+- (id)attitudeRelativeTo:;
+- (void)setInferences:;
+- (id)intermediateCalculations;
+- (id)attitude;
+- (id)originatingFrameTime;
+- (id)gravity;
+- (id)cmTimestamp;
+- (double)deltaPeriod;
+- (double)timestamp;
+- (id)initWithAttitude:gravity:motionTimestamp:frameTimestamp:previousSample:;
+- (id)accel;
+- (id)inferences;
+@end

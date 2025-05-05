@@ -1,0 +1,2 @@
+@interface MelonCheckUserRightApiRoot : GPBRootObject
+@end

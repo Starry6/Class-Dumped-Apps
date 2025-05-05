@@ -1,0 +1,36 @@
+@interface IESLiveCarnivalDanmakuTemplate : NSObject
+@property (nonatomic) double fontSize;
+@property (nonatomic) double avatarSize;
+@property (nonatomic) NSString textColorStr;
+@property (nonatomic) IESLiveFlexImage flexBackgroundImage;
+@property (nonatomic) HTSLiveImage backgroundImage;
+@property (nonatomic) double backgroundImageHeight;
+@property (nonatomic) double backgroundImageWidth;
+@property (nonatomic) {_NSRange=QQ} useRateRange;
+@property (nonatomic) BOOL verticalWordLayout;
+@property (nonatomic) BOOL webpBackground;
+@property (nonatomic) BOOL eggShowAlone;
+- (double)backgroundImageHeight;
+- (double)backgroundImageWidth;
+- (BOOL)eggShowAlone;
+- (id)flexBackgroundImage;
+- (void)setBackgroundImageHeight:;
+- (void)setBackgroundImageWidth:;
+- (void)setEggShowAlone:;
+- (void)setFlexBackgroundImage:;
+- (void)setTextColorStr:;
+- (void)setUseRateRange:;
+- (void)setVerticalWordLayout:;
+- (void)setWebpBackground:;
+- (id)textColorStr;
+- (id)useRateRange;
+- (BOOL)verticalWordLayout;
+- (BOOL)webpBackground;
+- (void)setBackgroundImage:;
+- (id)backgroundImage;
+- (double)fontSize;
+- (void).cxx_destruct;
+- (void)setFontSize:;
+- (double)avatarSize;
+- (void)setAvatarSize:;
+@end

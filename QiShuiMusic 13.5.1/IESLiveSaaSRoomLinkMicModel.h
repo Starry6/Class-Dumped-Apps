@@ -1,0 +1,30 @@
+@interface IESLiveSaaSRoomLinkMicModel : BDDynamicMTLModel
+@property (nonatomic) NSNumber channelId;
+@property (nonatomic) IESLiveSaaSRoomLinkMicChannelInfoModel channelInfo;
+@property (nonatomic) IESLiveSaaSRoomLinkMicPKSettingModel pkSetting;
+@property (nonatomic) IESLiveSaaSPKPlayModeData pkModeData;
+@property (nonatomic) IESLiveSaaSPKTaskModel battleTask;
+@property (nonatomic) NSArray userScores;
+@property (nonatomic) NSArray contributeLists;
+@property (nonatomic) NSArray anchors;
+@property (nonatomic) NSNumber loserID;
+@property (nonatomic) NSNumber topRatio;
+@property (nonatomic) NSNumber heightPercent;
+@property (nonatomic) NSString backgroundColor;
+@property (nonatomic) double timeStamp;
+@property (nonatomic) NSString oppositeUserID;
+@property (nonatomic) q skinType;
+@property (nonatomic) NSDictionary userInfo;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
++ (id)anchorsJSONTransformer;
++ (id)channelInfoJSONTransformer;
++ (id)contributeListsJSONTransformer;
++ (id)pkModeDataJSONTransformer;
++ (id)pkSettingJSONTransformer;
++ (id)userInfoJSONTransformer;
++ (id)userScoresJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

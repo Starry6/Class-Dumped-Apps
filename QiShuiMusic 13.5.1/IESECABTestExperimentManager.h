@@ -1,0 +1,31 @@
+@interface IESECABTestExperimentManager : NSObject
+@property (nonatomic) @? requestHeadersBlock;
+@property (nonatomic) @? requestParamsBlock;
+@property (nonatomic) NSDictionary requestHeaders;
+@property (nonatomic) NSDictionary requestParams;
+- (id)requestHeadersBlock;
+- (id)requestParamsBlock;
+- (void)setRequestHeadersBlock:;
+- (void)setRequestParamsBlock:;
+- (void)userDidChange:;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (id)requestHeaders;
+- (id)requestParams;
++ (void)enumerateExperimentsUsingBlock:;
++ (id)getRegisteredExperimentWithKey:;
++ (void)editExperimentForKey:value:;
++ (void)fetchSDKExperiments;
++ (void)fetchSDKExperimentsIfNeeded;
++ (void)lazyRegisterExperiments;
++ (void)p_evalAllRegisterFunctions;
++ (void)p_evalRegisterFunctionForKey:;
++ (void)p_fetchSDKSettingsForceUpdate:;
++ (void)p_retrieveRegisterFunctionsFromSectionData;
++ (void)registerExperimentWithKey:valueType:defaultValue:isBind2User:isSticky:autoExpose:completion:;
++ (void)registerRequestParamsBlock:headersBlock:;
++ (id)registeredExperiments;
++ (id)registersCache;
++ (id)sharedInstance;
+@end

@@ -1,0 +1,38 @@
+@interface IDSQRProtoParticipantUpdateIndication : PBCodable
+@property (nonatomic) Q participantIdListsCount;
+@property (nonatomic) ^Q participantIdLists;
+@property (nonatomic) BOOL hasOperationFlags;
+@property (nonatomic) I operationFlags;
+@property (nonatomic) BOOL hasTxnId;
+@property (nonatomic) Q txnId;
+@property (nonatomic) BOOL hasSessionStateCounter;
+@property (nonatomic) I sessionStateCounter;
+- (void)dealloc;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setTxnId:;
+- (void)setHasTxnId:;
+- (BOOL)hasTxnId;
+- (unsigned long long)txnId;
+- (unsigned long long)participantIdListsCount;
+- (id)participantIdLists;
+- (void)clearParticipantIdLists;
+- (void)addParticipantIdList:;
+- (unsigned long long)participantIdListAtIndex:;
+- (void)setParticipantIdLists:count:;
+- (void)setSessionStateCounter:;
+- (void)setHasSessionStateCounter:;
+- (BOOL)hasSessionStateCounter;
+- (unsigned int)operationFlags;
+- (void)setOperationFlags:;
+- (unsigned int)sessionStateCounter;
+- (void)setHasOperationFlags:;
+- (BOOL)hasOperationFlags;
+@end

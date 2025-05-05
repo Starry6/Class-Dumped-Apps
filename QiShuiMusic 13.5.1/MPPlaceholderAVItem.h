@@ -1,0 +1,36 @@
+@interface MPPlaceholderAVItem : MPAVItem
+@property (nonatomic) BOOL tailPlaceholder;
+@property (nonatomic) NSString album;
+@property (nonatomic) NSString artist;
+@property (nonatomic) double durationFromExternalMetadata;
+@property (nonatomic) BOOL explicitTrack;
+@property (nonatomic) BOOL likedStateEnabled;
+@property (nonatomic) NSString mainTitle;
+@property (nonatomic) BOOL supportsLikedState;
+@property (nonatomic) @? artworkCatalogBlock;
+- (id)artist;
+- (void)setAlbum:;
+- (void)setArtist:;
+- (id)init;
+- (id)album;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)isExplicitTrack;
+- (BOOL)supportsRateChange;
+- (void)loadAssetAndPlayerItem;
+- (BOOL)isValidPlayerSubstituteForItem:;
+- (id)mainTitle;
+- (double)durationFromExternalMetadata;
+- (BOOL)isLikedStateEnabled;
+- (BOOL)supportsLikedState;
+- (BOOL)isTailPlaceholder;
+- (id)artworkCatalogBlock;
+- (void)setDurationFromExternalMetadata:;
+- (void)setExplicitTrack:;
+- (void)setLikedStateEnabled:;
+- (void)setMainTitle:;
+- (void)setSupportsLikedState:;
+- (void)setTailPlaceholder:;
+- (void)setArtworkCatalogBlock:;
++ (BOOL)isPlaceholder;
+@end

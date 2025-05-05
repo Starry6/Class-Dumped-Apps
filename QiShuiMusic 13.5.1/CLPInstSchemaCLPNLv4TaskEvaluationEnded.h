@@ -1,0 +1,33 @@
+@interface CLPInstSchemaCLPNLv4TaskEvaluationEnded : SISchemaInstrumentationMessage
+@property (nonatomic) double accuracyOnTheFirstUserParseCount;
+@property (nonatomic) BOOL hasAccuracyOnTheFirstUserParseCount;
+@property (nonatomic) double accuracyOnAnyUserParse;
+@property (nonatomic) BOOL hasAccuracyOnAnyUserParse;
+@property (nonatomic) I evaluationCount;
+@property (nonatomic) BOOL hasEvaluationCount;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)setAccuracyOnTheFirstUserParseCount:;
+- (BOOL)hasAccuracyOnTheFirstUserParseCount;
+- (void)setHasAccuracyOnTheFirstUserParseCount:;
+- (void)deleteAccuracyOnTheFirstUserParseCount;
+- (void)setAccuracyOnAnyUserParse:;
+- (BOOL)hasAccuracyOnAnyUserParse;
+- (void)setHasAccuracyOnAnyUserParse:;
+- (void)deleteAccuracyOnAnyUserParse;
+- (void)setEvaluationCount:;
+- (BOOL)hasEvaluationCount;
+- (void)setHasEvaluationCount:;
+- (void)deleteEvaluationCount;
+- (double)accuracyOnTheFirstUserParseCount;
+- (double)accuracyOnAnyUserParse;
+- (unsigned int)evaluationCount;
+@end

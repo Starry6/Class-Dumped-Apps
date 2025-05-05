@@ -1,0 +1,37 @@
+@interface AWDAddressBookSyncFullSyncEvent : PBCodable
+@property (nonatomic) BOOL hasTimestamp;
+@property (nonatomic) Q timestamp;
+@property (nonatomic) BOOL hasResult;
+@property (nonatomic) NSInteger result;
+@property (nonatomic) BOOL hasRecordsPerSecond;
+@property (nonatomic) Q recordsPerSecond;
+@property (nonatomic) BOOL hasApproximateRecordCount;
+@property (nonatomic) Q approximateRecordCount;
+- (int)result;
+- (void)writeTo:;
+- (void)setHasResult:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)setHasTimestamp:;
+- (void)mergeFrom:;
+- (BOOL)hasTimestamp;
+- (BOOL)hasResult;
+- (void)setTimestamp:;
+- (BOOL)readFrom:;
+- (unsigned long long)timestamp;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)setResult:;
+- (id)copyWithZone:;
+- (id)resultAsString:;
+- (int)StringAsResult:;
+- (void)setRecordsPerSecond:;
+- (void)setHasRecordsPerSecond:;
+- (BOOL)hasRecordsPerSecond;
+- (void)setApproximateRecordCount:;
+- (void)setHasApproximateRecordCount:;
+- (BOOL)hasApproximateRecordCount;
+- (unsigned long long)recordsPerSecond;
+- (unsigned long long)approximateRecordCount;
+@end

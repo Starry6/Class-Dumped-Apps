@@ -1,0 +1,32 @@
+@interface SHSheetRemoteConnectionContext : NSObject
+@property (nonatomic) NSString sessionIdentifier;
+@property (nonatomic) _UIActivityDiscoveryContext discoveryContext;
+@property (nonatomic) NSArray assetIdentifiers;
+@property (nonatomic) NSArray urlsBeingShared;
+@property (nonatomic) BOOL shouldSuggestFamilyMembers;
+@property (nonatomic) BOOL isSharePlayAvailable;
+@property (nonatomic) NSArray peopleSuggestionBundleIds;
+@property (nonatomic) NSData processedImageResultsData;
+@property (nonatomic) BOOL instantShareSheet;
+- (BOOL)isSharePlayAvailable;
+- (id)initWithSessionIdentifier:;
+- (id)sessionIdentifier;
+- (id)initWithDictionary:;
+- (void)setIsSharePlayAvailable:;
+- (void).cxx_destruct;
+- (id)assetIdentifiers;
+- (BOOL)shouldSuggestFamilyMembers;
+- (void)setShouldSuggestFamilyMembers:;
+- (BOOL)instantShareSheet;
+- (void)setInstantShareSheet:;
+- (id)peopleSuggestionBundleIds;
+- (void)setPeopleSuggestionBundleIds:;
+- (id)urlsBeingShared;
+- (void)setUrlsBeingShared:;
+- (id)discoveryContext;
+- (id)processedImageResultsData;
+- (id)createContextDictionary;
+- (void)setDiscoveryContext:;
+- (void)setAssetIdentifiers:;
+- (void)setProcessedImageResultsData:;
+@end

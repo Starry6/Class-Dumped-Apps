@@ -1,0 +1,31 @@
+@interface LSLiveAudioReverbFormat : NSObject
+@property (nonatomic) float roomSize;
+@property (nonatomic) float hfDamping;
+@property (nonatomic) float stereoDepth;
+@property (nonatomic) float dry;
+@property (nonatomic) float wet;
+@property (nonatomic) float dryGainDB;
+@property (nonatomic) float wetGainDB;
+@property (nonatomic) BOOL dryOnly;
+@property (nonatomic) BOOL wetOnly;
+- (float)dry;
+- (BOOL)wetOnly;
+- (BOOL)dryOnly;
+- (void)setDry:;
+- (void)setStereoDepth:;
+- (void)setWet:;
+- (float)wet;
+- (float)dryGainDB;
+- (float)hfDamping;
+- (float)roomSize;
+- (void)setDryGainDB:;
+- (void)setDryOnly:;
+- (void)setHfDamping:;
+- (void)setRoomSize:;
+- (void)setWetGainDB:;
+- (void)setWetOnly:;
+- (float)stereoDepth;
+- (float)wetGainDB;
+- (id)init;
+- (id)copyWithZone:;
+@end

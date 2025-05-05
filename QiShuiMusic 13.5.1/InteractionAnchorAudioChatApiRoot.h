@@ -1,0 +1,2 @@
+@interface InteractionAnchorAudioChatApiRoot : GPBRootObject
+@end

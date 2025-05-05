@@ -1,0 +1,37 @@
+@interface MNNavigationState : NSObject
+@property (nonatomic) MNNavigationStateManager stateManager;
+@property (nonatomic) Q type;
+@property (nonatomic) BOOL requiresHighMemoryThreshold;
+@property (nonatomic) BOOL requiresLocationAccess;
+@property (nonatomic) Q desiredLocationProviderType;
+@property (nonatomic) MNLocationProviderCLParameters clParameters;
+@property (nonatomic) BOOL shouldClearStoredRoutes;
+@property (nonatomic) double locationUpdateInterval;
+@property (nonatomic) double suggestionUpdateFrequency;
+@property (nonatomic) MNNavigationTraceManager traceManager;
+@property (nonatomic) MNSimulationLocationProvider simulationLocationProvider;
+- (void)changeUserOptions:;
+- (BOOL)respondsToSelector:;
+- (id)init;
+- (unsigned long long)desiredLocationProviderType;
+- (void)dealloc;
+- (id)methodSignatureForSelector:;
+- (void)enterState;
+- (unsigned long long)type;
+- (void).cxx_destruct;
+- (void)forwardInvocation:;
+- (id)stateManager;
+- (void)postEnterState;
+- (BOOL)_isSelectorValidForForwarding:;
+- (id)initWithStateManager:;
+- (void)leaveState;
+- (BOOL)requiresHighMemoryThreshold;
+- (id)clParameters;
+- (BOOL)shouldClearStoredRoutes;
+- (id)traceManager;
+- (id)simulationLocationProvider;
+- (void)preEnterState;
+- (BOOL)requiresLocationAccess;
+- (double)locationUpdateInterval;
+- (double)suggestionUpdateFrequency;
+@end

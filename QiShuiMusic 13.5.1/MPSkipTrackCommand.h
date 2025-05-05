@@ -1,0 +1,2 @@
+@interface MPSkipTrackCommand : MPRemoteCommand
+@end

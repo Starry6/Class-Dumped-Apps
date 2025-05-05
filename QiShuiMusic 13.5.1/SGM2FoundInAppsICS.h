@@ -1,0 +1,33 @@
+@interface SGM2FoundInAppsICS : PBCodable
+@property (nonatomic) BOOL hasKey;
+@property (nonatomic) NSString key;
+@property (nonatomic) BOOL hasTimezone;
+@property (nonatomic) NSInteger timezone;
+@property (nonatomic) BOOL hasDatetime;
+@property (nonatomic) NSInteger datetime;
+- (BOOL)hasKey;
+- (BOOL)hasTimezone;
+- (int)timezone;
+- (id)key;
+- (void)setTimezone:;
+- (void)writeTo:;
+- (void)setHasTimezone:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void)setKey:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)timezoneAsString:;
+- (int)StringAsTimezone:;
+- (int)datetime;
+- (void)setDatetime:;
+- (void)setHasDatetime:;
+- (BOOL)hasDatetime;
+- (id)datetimeAsString:;
+- (int)StringAsDatetime:;
+@end

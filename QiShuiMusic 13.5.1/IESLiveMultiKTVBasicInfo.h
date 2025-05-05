@@ -1,0 +1,36 @@
+@interface IESLiveMultiKTVBasicInfo : NSObject
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} frame;
+@property (nonatomic) BOOL smallMode;
+@property (nonatomic) UIColor statusBarBgColor;
+@property (nonatomic) UIColor contentBgColor;
+@property (nonatomic) UIColor gradientStartColor;
+@property (nonatomic) UIColor gradientEndColor;
+@property (nonatomic) NSArray stageBgAnimatedImageURLs;
+@property (nonatomic) NSArray stageBgStaticImageURLs;
+@property (nonatomic) NSArray avatarImageLoopURLs;
+@property (nonatomic) NSArray playModeList;
+@property (nonatomic) HTSLiveRoom roomModel;
+- (id)avatarImageLoopURLs;
+- (id)contentBgColor;
+- (id)playModeList;
+- (id)roomModel;
+- (void)setAvatarImageLoopURLs:;
+- (void)setContentBgColor:;
+- (void)setPlayModeList:;
+- (void)setRoomModel:;
+- (void)setSmallMode:;
+- (void)setStageBgAnimatedImageURLs:;
+- (void)setStageBgStaticImageURLs:;
+- (void)setStatusBarBgColor:;
+- (BOOL)smallMode;
+- (id)stageBgAnimatedImageURLs;
+- (id)stageBgStaticImageURLs;
+- (id)statusBarBgColor;
+- (void)setFrame:;
+- (id)frame;
+- (void).cxx_destruct;
+- (void)setGradientStartColor:;
+- (void)setGradientEndColor:;
+- (id)gradientStartColor;
+- (id)gradientEndColor;
+@end

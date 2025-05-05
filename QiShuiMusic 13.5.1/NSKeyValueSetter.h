@@ -1,0 +1,2 @@
+@interface NSKeyValueSetter : NSKeyValueAccessor
+@end

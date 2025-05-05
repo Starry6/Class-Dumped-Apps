@@ -1,0 +1,32 @@
+@interface ARKitDelegate : NSObject
+@property (nonatomic) ARSession session;
+@property (nonatomic) ARFrame lastFrame;
+@property (nonatomic) ARConfiguration preferredConfiguration;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)getRequiredConfiguration;
+- (void)resetNativeSession;
+- (void)session:withConfig:;
+- (void)setSession:;
+- (void)sessionWasInterrupted:;
+- (void)sessionInterruptionEnded:;
+- (id)initWithSession:configuration:;
+- (void)session:didFailWithError:;
+- (id)session;
+- (void).cxx_destruct;
+- (void)session:didUpdateAnchors:;
+- (void)session:didUpdateFrame:;
+- (void)setPreferredConfiguration:;
+- (id)preferredConfiguration;
+- (void)session:cameraDidChangeTrackingState:;
+- (BOOL)sessionShouldAttemptRelocalization:;
+- (void)session:didOutputAudioSampleBuffer:;
+- (void)session:didOutputCollaborationData:;
+- (void)session:didAddAnchors:;
+- (void)session:didRemoveAnchors:;
+- (void)setLastFrame:;
+- (id)lastFrame;
+- (void)sessionDidStart:;
+@end

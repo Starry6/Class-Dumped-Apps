@@ -1,0 +1,33 @@
+@interface MFPlaceholderMessageRewriter : NSObject
+@property (nonatomic) MFOutgoingMessageContent originalMessageContent;
+@property (nonatomic) <MFMessageRewriterPlaceholderResolver> placeholderResolver;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (id)subject;
+- (void)setSubject:;
+- (id)bccRecipients;
+- (id)ccRecipients;
+- (id)composeWebView;
+- (id)toRecipients;
+- (void).cxx_destruct;
+- (id)attachments;
+- (void)setToRecipients:;
+- (void)setCcRecipients:;
+- (void)setBccRecipients:;
+- (id)sendingEmailAddress;
+- (void)setSendingEmailAddress:;
+- (id)sendingAccountProxy;
+- (id)accountProxyGenerator;
+- (void)setSavedHeaders:;
+- (id)savedHeaders;
+- (id)shouldCreateRichTextRepresentation;
+- (id)initWithOriginalMessageContent:resolver:;
+- (id)rewrittenMessageContent;
+- (id)originalMessageContent;
+- (id)placeholderResolver;
+- (void)setPlaceholderResolver:;
++ (id)_deriveOutgoingMessageContentFromLibraryMessageContent:;
+@end

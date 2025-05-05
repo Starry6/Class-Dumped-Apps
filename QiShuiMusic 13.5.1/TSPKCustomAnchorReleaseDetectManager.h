@@ -1,0 +1,34 @@
+@interface TSPKCustomAnchorReleaseDetectManager : NSObject
+@property (nonatomic) NSMutableArray startModels;
+@property (nonatomic) NSMutableArray stopModels;
+@property (nonatomic) Q resourceCount;
+@property (nonatomic) NSString pipelineType;
+@property (nonatomic) TSPKDelayDetectSchduler delayScheduler;
+@property (nonatomic) q detectTime;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)executeDetectWithActualTimeGap:;
+- (void)setStartModels:;
+- (void)cancelDetectAction;
+- (long long)detectTime;
+- (id)getComparePage;
+- (id)initWithPipelineType:detectDelay:detectTime:;
+- (BOOL)isContinueExecuteAction;
+- (void)markResourceStartWithCaseId:description:;
+- (void)markResourceStopWithCaseId:description:;
+- (void)removeModelFrom:caseId:;
+- (void)scheduleDetectAction;
+- (void)setDelayScheduler:;
+- (void)setDetectTime:;
+- (void)setPipelineType:;
+- (void)setResourceCount:;
+- (void)setStopModels:;
+- (id)startModels;
+- (id)stopModels;
+- (id)delayScheduler;
+- (void).cxx_destruct;
+- (unsigned long long)resourceCount;
+- (id)pipelineType;
+@end

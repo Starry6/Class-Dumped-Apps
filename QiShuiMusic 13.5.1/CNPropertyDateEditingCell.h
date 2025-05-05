@@ -1,0 +1,35 @@
+@interface CNPropertyDateEditingCell : CNPropertySimpleEditingCell
+@property (nonatomic) UIDatePicker datePicker;
+@property (nonatomic) CNDatePickerContainerView datePickerContainerView;
+@property (nonatomic) UIViewController contentViewController;
+@property (nonatomic) BOOL shouldEditDatesTextually;
+@property (nonatomic) NSString currentCalendarIdentifier;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithStyle:reuseIdentifier:;
+- (BOOL)textFieldShouldBeginEditing:;
+- (id)contentViewController;
+- (void)setContentViewController:;
+- (void)prepareForReuse;
+- (void).cxx_destruct;
+- (BOOL)textField:shouldChangeCharactersInRange:replacementString:;
+- (id)datePicker;
+- (void)setDatePicker:;
+- (void)textFieldDidEndEditing:reason:;
+- (void)dateChanged:;
+- (void)picker:didPickItem:;
+- (void)pickerDidCancel:;
+- (void)updateValueWithPropertyItem:;
+- (void)labelButtonClicked:;
+- (void)regainFocus;
+- (void)localeUpdated:;
+- (BOOL)_shouldUseYearlessPickerForDateComponents:;
+- (void)applyCalendarAndDate;
+- (id)datePickerContainerView;
+- (void)setDatePickerContainerView:;
+- (BOOL)shouldEditDatesTextually;
+- (id)currentCalendarIdentifier;
+- (void)setCurrentCalendarIdentifier:;
+@end

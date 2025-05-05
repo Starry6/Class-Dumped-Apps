@@ -1,0 +1,24 @@
+@interface LinkServices._LNMetadataProviderDirect : NSObject
+- (void)autoShortcutsForBundleIdentifier:localeIdentifier:completion:;
+- (id)autoShortcutsForLocaleIdentifier:error:;
+- (void)autoShortcutsForLocaleIdentifier:completion:;
+- (id)init;
+- (long long)metadataVersionForBundleIdentifier:error:;
+- (id)actionForBundleIdentifier:andActionIdentifier:error:;
+- (id)entitiesForBundleIdentifier:error:;
+- (id)actionsAndSystemProtocolDefaultsForBundleIdentifier:error:;
+- (id)actionsForBundleIdentifier:andActionIdentifier:error:;
+- (id)enumsForBundleIdentifier:error:;
+- (id)actionsWithFullyQualifiedIdentifiers:error:;
+- (id)bundlesWithError:;
+- (id)queriesWithError:;
+- (void).cxx_destruct;
+- (id)entitiesWithError:;
+- (id)queriesForBundleIdentifier:ofType:error:;
+- (id)actionsWithError:;
+- (id)actionsConformingToSystemProtocol:withParametersOfTypes:bundleIdentifier:error:;
+- (id)enumsWithError:;
+- (id)actionsConformingToSystemProtocols:logicalType:bundleIdentifier:error:;
+- (id)actionsForBundleIdentifier:error:;
+- (id)initWithXPCInterface:error:;
+@end

@@ -1,0 +1,36 @@
+@interface IESEffectAlgorithmModel : MTLModel
+@property (nonatomic) NSString ep_scene;
+@property (nonatomic) NSString nameSec;
+@property (nonatomic) CKDownloadInfo_OC downloadInfo;
+@property (nonatomic) NSString name;
+@property (nonatomic) NSString version;
+@property (nonatomic) NSArray fileDownloadURLs;
+@property (nonatomic) NSString modelMD5;
+@property (nonatomic) q sizeType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)nameSec;
+- (id)ep_scene;
+- (id)fileDownloadURLs;
+- (id)modelMD5;
+- (void)setEp_scene:;
+- (void)setFileDownloadURLs:;
+- (void)setModelMD5:;
+- (void)setNameSec:;
+- (id)toAlgoURS;
+- (id)toDownloadInfo;
+- (void)setName:;
+- (void)setVersion:;
+- (id)version;
+- (id)initWithDictionary:error:;
+- (void).cxx_destruct;
+- (id)name;
+- (BOOL)isEqual:;
+- (long long)sizeType;
+- (void)setSizeType:;
+- (id)downloadInfo;
+- (void)setDownloadInfo:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

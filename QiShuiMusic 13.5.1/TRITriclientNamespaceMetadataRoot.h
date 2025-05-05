@@ -1,0 +1,2 @@
+@interface TRITriclientNamespaceMetadataRoot : TRIPBRootObject
+@end

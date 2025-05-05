@@ -1,0 +1,30 @@
+@interface BMStoreBookmark : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSString streamId;
+@property (nonatomic) NSString segmentName;
+@property (nonatomic) double iterationStartTime;
+@property (nonatomic) Q offset;
+- (id)initWithProtoData:;
+- (id)streamId;
+- (id)segmentName;
+- (id)proto;
+- (double)iterationStartTime;
+- (id)initWithStream:segment:iterationStartTime:offset:;
+- (id)encodeAsProto;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (unsigned long long)offset;
+- (void)encodeWithCoder:;
+- (id)initWithProto:;
+- (BOOL)checkAndReportDecodingFailureIfNeededForid:key:coder:errorDomain:errorCode:;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)isEqual:;
+- (BOOL)checkAndReportDecodingFailureIfNeededFordouble:key:coder:errorDomain:errorCode:;
+- (id)copyWithZone:;
+- (id)_descriptionDict;
++ (BOOL)supportsSecureCoding;
+@end

@@ -1,0 +1,30 @@
+@interface IESLiveSaaSSchemeRedirectResolver : NSObject
+@property (nonatomic) NSDictionary settingConfig;
+@property (nonatomic) NSDictionary geckoConfig;
+@property (nonatomic) IESLiveSaaSSchemeRedirectInfo redirectInfo;
+@property (nonatomic) NSMutableDictionary extraEnvInfo;
+- (void)setGeckoConfig:;
+- (id)_getResolvedScheme:ruleType:schemeSource:;
+- (BOOL)checkVersionRegex:;
+- (double)currentServerTimestampInMS;
+- (id)customError:userInfo:;
+- (id)extraEnvInfo;
+- (id)geckoConfig;
+- (void)getResolvedSchemeWith:;
+- (id)getResolvedSchemeWithConfig:error:ruleType:;
+- (id)initWithSettingConfig:geckoConfig:redirectSchemeExtraParams:;
+- (void)injectExtraEnvInfo:forKey:;
+- (BOOL)isRuleMatched:ruleType:error:;
+- (BOOL)isRuleMatchedForBlockKeys:error:;
+- (BOOL)isRuleMatchedForTime:error:;
+- (BOOL)isRuleMatchedForVersion:error:;
+- (id)redirectInfo;
+- (id)resolveItem:error:ruleType:;
+- (void)resolveRedirecrSchemeExtraParams:;
+- (void)setExtraEnvInfo:;
+- (void)setRedirectInfo:;
+- (void)setSettingConfig:;
+- (id)settingConfig;
+- (void).cxx_destruct;
++ (void)resolveTargetSchemeWith:settingConfig:geckoConfig:completion:;
+@end

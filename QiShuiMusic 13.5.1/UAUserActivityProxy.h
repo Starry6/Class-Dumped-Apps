@@ -1,0 +1,35 @@
+@interface UAUserActivityProxy : NSObject
+@property (nonatomic) NSUUID uuid;
+@property (nonatomic) NSUserActivity internalActivity;
+@property (nonatomic) UABestAppSuggestion suggestedActivity;
+@property (nonatomic) NSString activityType;
+@property (nonatomic) NSString dynamicActivityType;
+@property (nonatomic) NSString bundleIdentifier;
+@property (nonatomic) BOOL isRemoteActivity;
+- (id)activityTitle;
+- (id)activityType;
+- (id)contentAttributeSet;
+- (id)bundleIdentifier;
+- (id)uuid;
+- (void)setUuid:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)dynamicActivityType;
+- (id)description;
+- (id)initWithSuggestion:;
+- (void)launchActivityWithOptions:completionHandler:;
+- (id)initWithUUID:activityType:dynamicActivityType:bundleID:;
+- (id)initWithUUID:activityType:bundleID:;
+- (id)initWithActivity:bundleId:;
+- (void)accessActivity:;
+- (id)activityIfAvailible;
+- (id)activitySubTitle;
+- (BOOL)isRemoteActivity;
+- (id)internalActivity;
+- (void)setInternalActivity:;
+- (id)suggestedActivity;
+- (void)setSuggestedActivity:;
++ (BOOL)supportsSecureCoding;
+@end

@@ -1,0 +1,32 @@
+@interface ABUTNCNetworkRequest : BUBaseRequest
+@property (nonatomic) NSString buRequestUrl;
+@property (nonatomic) NSDictionary parameter;
+@property (nonatomic) q method;
+@property (nonatomic) q buRequestSerializerType;
+@property (nonatomic) q buResponseSerializerType;
+@property (nonatomic) q netRequestType;
+- (id)requestArgument;
+- (id)TNCServiceKey;
+- (long long)buRequestSerializerType;
+- (id)buRequestUrl;
+- (long long)buResponseSerializerType;
+- (id)failureCompletionBlockWithTNC;
+- (id)initWithUrl:method:parameter:;
+- (long long)netRequestType;
+- (long long)requestSerializerType;
+- (long long)responseSerializerType;
+- (void)setBuRequestSerializerType:;
+- (void)setBuRequestUrl:;
+- (void)setBuResponseSerializerType:;
+- (void)setNetRequestType:;
+- (id)successCompletionBlockWithTNC;
+- (long long)method;
+- (id)requestUrl;
+- (void).cxx_destruct;
+- (void)setMethod:;
+- (id)parameter;
+- (void)setParameter:;
+- (long long)requestMethod;
++ (id)requestWithURL:method:parameter:completionWithSuccess:failure:;
++ (id)requestWithURL:parameter:completionWithSuccess:failure:;
+@end

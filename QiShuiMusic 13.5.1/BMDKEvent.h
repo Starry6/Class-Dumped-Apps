@@ -1,0 +1,30 @@
+@interface BMDKEvent : NSObject
+@property (nonatomic) _DKEvent dkEvent;
+@property (nonatomic) I dataVersion;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)dkEvent;
+- (id)initWithProtoData:;
+- (id)init;
+- (id)initWithDKEvent:;
+- (id)proto;
+- (id)json;
+- (id)encodeAsProto;
+- (id)initWithCoder:;
+- (unsigned int)dataVersion;
+- (unsigned long long)hash;
+- (BOOL)isCompleteWithContext:error:;
+- (void)encodeWithCoder:;
+- (id)initWithProto:;
+- (id)initWithData:dataVersion:decodeMetadata:;
+- (void).cxx_destruct;
+- (BOOL)isValidWithContext:error:;
+- (id)serialize;
+- (id)jsonDict;
+- (BOOL)isEqual:;
++ (id)eventWithData:dataVersion:;
++ (BOOL)supportsSecureCoding;
++ (id)eventWithDKEvent:;
+@end

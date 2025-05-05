@@ -1,0 +1,35 @@
+@interface RUIModernHeaderView : OBHeaderView
+@property (nonatomic) UILabel headerLabel;
+@property (nonatomic) UILabel detailLabel;
+@property (nonatomic) NSString detailText;
+@property (nonatomic) NSString subHeaderText;
+@property (nonatomic) double iconHeight;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (double)topPadding;
+- (void)setDetailText:;
+- (id)initWithTitle:;
+- (double)bottomPadding;
+- (id)detailText;
+- (id)initWithAttributes:;
+- (void)setIconImage:;
+- (void).cxx_destruct;
+- (void)setImageSize:;
+- (id)initWithTitle:detailText:icon:;
+- (id)detailLabel;
+- (id)headerLabel;
+- (void)setHeaderLabel:;
+- (double)iconHeight;
+- (void)setDetailLabel:;
+- (double)iconToHeaderLabelPadding;
+- (void)setText:attributes:;
+- (double)headerHeightForWidth:inView:;
+- (void)setSubHeaderText:attributes:;
+- (void)setDetailText:attributes:;
+- (void)setIconHeight:;
+- (void)updateDetailText;
+- (id)subHeaderText;
+- (void)setSubHeaderText:;
+@end

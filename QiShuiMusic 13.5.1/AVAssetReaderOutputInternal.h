@@ -1,0 +1,2 @@
+@interface AVAssetReaderOutputInternal : NSObject
+@end

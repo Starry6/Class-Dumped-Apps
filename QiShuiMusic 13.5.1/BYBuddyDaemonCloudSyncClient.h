@@ -1,0 +1,30 @@
+@interface BYBuddyDaemonCloudSyncClient : NSObject
+@property (nonatomic) NSXPCConnection connection;
+@property (nonatomic) BOOL syncDidStart;
+@property (nonatomic) BOOL syncDidComplete;
+@property (nonatomic) <BYClientDaemonCloudSyncProtocol> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (void)cancelSync;
+- (void)connectToDaemon;
+- (void)setDelegate:;
+- (id)delegate;
+- (id)connection;
+- (void).cxx_destruct;
+- (void)setConnection:;
+- (BOOL)syncDidComplete;
+- (void)syncProgress:;
+- (void)syncCompletedWithErrors:;
+- (void)needsToSync:;
+- (void)isSyncInProgress:;
+- (void)startSync;
+- (void)fetchCurrentSyncState:;
+- (void)cloudSyncProgressUpdate:completedClients:errors:;
+- (BOOL)syncDidStart;
+- (void)setSyncDidStart:;
+- (void)setSyncDidComplete:;
++ (id)clientInterface;
+@end

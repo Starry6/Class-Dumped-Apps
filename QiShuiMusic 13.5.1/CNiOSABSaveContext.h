@@ -1,0 +1,36 @@
+@interface CNiOSABSaveContext : NSObject
+@property (nonatomic) NSMapTable contactIndicesByInstance;
+@property (nonatomic) NSMapTable groupIndicesByInstance;
+@property (nonatomic) NSMapTable containerIndicesByInstance;
+@property (nonatomic) NSMutableDictionary abPersonsByIdentifier;
+@property (nonatomic) NSMutableDictionary abGroupsByIdentifier;
+@property (nonatomic) NSMutableDictionary abSourcesByIdentifier;
+@property (nonatomic) NSMutableDictionary abAccountsByIdentifier;
+@property (nonatomic) NSMutableArray contactIdentifiersNeedingMetadataPurge;
+@property (nonatomic) CNSaveRequest saveRequest;
+@property (nonatomic) CNMutableSaveResponse saveResponse;
+@property (nonatomic) ^v addressBook;
+- (void)dealloc;
+- (id)addressBook;
+- (void).cxx_destruct;
+- (id)initWithSaveRequest:response:addressBook:;
+- (void)_populateSaveRequestIndexTables;
+- (id)indexPathForContactInstance:;
+- (id)indexPathForGroupInstance:;
+- (id)indexPathForContainerInstance:;
+- (id)contactIndicesByInstance;
+- (id)groupIndicesByInstance;
+- (id)containerIndicesByInstance;
+- (id)abPersonsByIdentifier;
+- (void)setAbPersonsByIdentifier:;
+- (id)abGroupsByIdentifier;
+- (void)setAbGroupsByIdentifier:;
+- (id)abSourcesByIdentifier;
+- (void)setAbSourcesByIdentifier:;
+- (id)abAccountsByIdentifier;
+- (void)setAbAccountsByIdentifier:;
+- (id)contactIdentifiersNeedingMetadataPurge;
+- (void)setContactIdentifiersNeedingMetadataPurge:;
+- (id)saveRequest;
+- (id)saveResponse;
+@end

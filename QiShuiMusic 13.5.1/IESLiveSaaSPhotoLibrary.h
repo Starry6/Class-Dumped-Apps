@@ -1,0 +1,2 @@
+@interface IESLiveSaaSPhotoLibrary : nil
+@end

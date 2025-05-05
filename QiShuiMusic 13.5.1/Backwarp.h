@@ -1,0 +1,23 @@
+@interface Backwarp : NSObject
+- (void)dealloc;
+- (void).cxx_destruct;
+- (void)setupMetal;
+- (id)initWithDevice:interleaved:;
+- (void)warpImage:to:withFlow:upscaledFlow:;
+- (void)encodeToCommandBuffer:source:flow:destination:upscaledFlow:;
+- (void)calcBackwarpLoss:second:flow:timeScale:destination:;
+- (void)encodeBackwarpLossToCommandBuffer:first:second:flow:timeScale:destination:;
+- (void)encodeBackwarpLossWithFlowMagnitudeToCommandBuffer:first:second:flow:timeScale:gamma:destination:;
+- (void)upscaleFlow:destination:;
+- (void)encodeUpscaleFlowToCommandBuffer:source:destination:;
+- (void)encodeSubsampleFlowToCommandBuffer:source:destination:;
+- (void)encodeSubsampleErrorToCommandBuffer:source:destination:;
+- (void)encodeUpscaleErrorToCommandBuffer:source:destination:;
+- (void)encodeSubsampleToCommandBufferr:source:destination:kernel:;
+- (void)encodeSubsampleInputToCommandBufferr:source:destination:;
+- (void)copyTextureWithPaddingSource:destination:;
+- (void)encodePaddingTextureToCommandBuffer:source:destination:;
+- (void)reverseFlowWithSource:destination:;
+- (void)encodeReverseFlowToCommandBuffer:source:destination:;
+- (void)encodeFlowSplattingWarpToCommandBuffer:source:flow:timeScale:destination:;
+@end

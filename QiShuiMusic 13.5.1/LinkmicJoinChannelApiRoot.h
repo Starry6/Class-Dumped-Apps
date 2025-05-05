@@ -1,0 +1,2 @@
+@interface LinkmicJoinChannelApiRoot : GPBRootObject
+@end

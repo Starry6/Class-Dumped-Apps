@@ -1,0 +1,32 @@
+@interface IESSaaSTIMConversationMinIndexOperator : NSObject
+@property (nonatomic) NSCache cache;
+@property (nonatomic) NSObject<OS_dispatch_queue> conversationFetchFailedQueue;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)clearFetchFailedConversations;
+- (id)conversationFetchFailedQueue;
+- (id)getFetchFailedConversationInfoList;
+- (long long)localDeleteIndexForConversation:;
+- (void)markConversationFetchFailedWithConversationID:shortID:conversationType:inbox:isFailed:;
+- (long long)minIndexForConversation:;
+- (long long)minIndexV2ForConversation:;
+- (long long)minIndexV2ForConversation:useDefaultValue:;
+- (void)setConversationFetchFailedQueue:;
+- (void)setLocalDeleteIndex:forConversation:;
+- (BOOL)setNeedBumpWithMinIndex:forConversation:;
+- (BOOL)setNeedBumpWithMinIndexV2:forConversation:;
+- (void)userDidLogout:;
+- (void)setUp;
+- (id)init;
+- (void)dealloc;
+- (void)setCache:;
+- (void).cxx_destruct;
+- (id)cache;
++ (id)configKeyToDeleteUponConversationAllMessageDeletion:;
++ (id)configKeyToDeleteUponConversationDeletion:;
++ (long long)startUpOrder;
++ (void)startUp;
++ (id)sharedInstance;
+@end

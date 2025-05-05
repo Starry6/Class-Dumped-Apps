@@ -1,0 +1,36 @@
+@interface UIKBRenderFactoryiPhoneTruffleLandscape : UIKBRenderFactoryiPhoneLandscape
+- (id)deleteKeyOffset;
+- (BOOL)isTallPopup;
+- (id)internationalKeyOffset;
+- (id)stringKeyOffset;
+- (id)variantPaddedFrameInsets;
+- (id)variantSymbolFrameInsets;
+- (id)lightKeycapsFontName;
+- (id)popupSymbolTextOffset;
+- (double)moreABCKeyFontSize;
+- (id)dictationKeyOffset;
+- (id)variantAnnotationTextOffset;
+- (id)returnKeyOffset;
+- (id)wideShadowPaddleInsets;
+- (id)moreABCKeyOffset;
+- (id)variantSymbolTextOffset;
+- (double)symbolImageControlKeyFontSize;
+- (double)popupFontSize;
+- (id)more123KeyOffset;
+- (id)dynamicInsets;
+- (double)dynamicBottomRowMultiplier;
+- (double)stringKeyFontSize;
+- (double)assistKeyFontSize;
+- (double)moreKeyFontSize;
+- (id)leftArrowKeyOffset;
+- (id)rightArrowKeyOffset;
+- (id)cutKeyOffset;
+- (id)copyKeyOffset;
+- (id)pasteKeyOffset;
+- (id)boldKeyOffset;
+- (id)undoKeyOffset;
+- (id)dismissKeyOffset;
+- (id)realEmojiKeyOffset;
+- (double)_row4ControlSegmentWidthLeft;
+- (double)_row4ControlSegmentWidthRight;
+@end

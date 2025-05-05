@@ -1,0 +1,36 @@
+@interface GEOURLCollectionStorage : PBCodable
+@property (nonatomic) BOOL hasName;
+@property (nonatomic) NSString name;
+@property (nonatomic) NSMutableArray places;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (BOOL)hasGreenTeaWithValue:;
+- (id)init;
+- (void)setName:;
+- (id)initWithJSON:;
+- (BOOL)hasName;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)name;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)places;
+- (void)setPlaces:;
+- (void)clearPlaces;
+- (void)addPlace:;
+- (unsigned long long)placesCount;
+- (id)placeAtIndex:;
++ (BOOL)isValid:;
++ (Class)placeType;
+@end

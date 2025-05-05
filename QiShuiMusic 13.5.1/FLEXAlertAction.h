@@ -1,0 +1,38 @@
+@interface FLEXAlertAction : NSObject
+@property (nonatomic) UIAlertController _controller;
+@property (nonatomic) NSString _title;
+@property (nonatomic) q _style;
+@property (nonatomic) BOOL _disable;
+@property (nonatomic) BOOL _isPreferred;
+@property (nonatomic) @? _handler;
+@property (nonatomic) UIAlertAction _action;
+@property (nonatomic) @? title;
+@property (nonatomic) @? destructiveStyle;
+@property (nonatomic) @? cancelStyle;
+@property (nonatomic) @? preferred;
+@property (nonatomic) @? enabled;
+@property (nonatomic) @? handler;
+@property (nonatomic) UIAlertAction action;
+- (id)title;
+- (id)destructiveStyle;
+- (id)cancelStyle;
+- (id)preferred;
+- (id)enabled;
+- (id)handler;
+- (id)action;
+- (id)_controller;
+- (void)set_controller:;
+- (id)_title;
+- (void)set_title:;
+- (long long)_style;
+- (void)set_style:;
+- (BOOL)_disable;
+- (void)set_disable:;
+- (BOOL)_isPreferred;
+- (void)set_isPreferred:;
+- (id)_handler;
+- (void)set_handler:;
+- (id)_action;
+- (void)set_action:;
+- (void).cxx_destruct;
+@end

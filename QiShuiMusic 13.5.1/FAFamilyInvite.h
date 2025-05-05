@@ -1,0 +1,35 @@
+@interface FAFamilyInvite : NSObject
+@property (nonatomic) NSString code;
+@property (nonatomic) NSString organizerFirstName;
+@property (nonatomic) NSString organizerLastName;
+@property (nonatomic) NSString organizerEmail;
+@property (nonatomic) NSString inviteStatus;
+@property (nonatomic) NSNumber organizerDSID;
+@property (nonatomic) NSNumber recepientDSID;
+@property (nonatomic) BOOL isChildTransferInvite;
+@property (nonatomic) NSString childFirstName;
+@property (nonatomic) NSString childLastName;
+- (id)code;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (void)setCode:;
+- (BOOL)isEqual:;
+- (id)organizerFirstName;
+- (void)setOrganizerFirstName:;
+- (id)organizerLastName;
+- (void)setOrganizerLastName:;
+- (id)organizerEmail;
+- (void)setOrganizerEmail:;
+- (id)organizerDSID;
+- (void)setOrganizerDSID:;
+- (id)recepientDSID;
+- (void)setRecepientDSID:;
+- (BOOL)isChildTransferInvite;
+- (void)setIsChildTransferInvite:;
+- (id)childFirstName;
+- (void)setChildFirstName:;
+- (id)childLastName;
+- (void)setChildLastName:;
+- (id)inviteStatus;
+- (void)setInviteStatus:;
+@end

@@ -1,0 +1,26 @@
+@interface DOMHTMLMarqueeElement : DOMHTMLElement
+- (id)direction;
+- (void)setDirection:;
+- (void)start;
+- (void)stop;
+- (void)setWidth:;
+- (void)setBehavior:;
+- (id)height;
+- (id)width;
+- (void)setHeight:;
+- (id)behavior;
+- (int)loop;
+- (unsigned int)scrollAmount;
+- (void)setScrollAmount:;
+- (id)bgColor;
+- (void)setBgColor:;
+- (unsigned int)hspace;
+- (void)setHspace:;
+- (unsigned int)vspace;
+- (void)setVspace:;
+- (void)setLoop:;
+- (unsigned int)scrollDelay;
+- (void)setScrollDelay:;
+- (BOOL)trueSpeed;
+- (void)setTrueSpeed:;
+@end

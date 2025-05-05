@@ -1,0 +1,33 @@
+@interface IESMMBingoGenertor : NSObject
+@property (nonatomic) NSMutableArray generators;
+@property (nonatomic) @? imageBlock;
+@property (nonatomic) @? completion;
+@property (nonatomic) NSString videoKey;
+@property (nonatomic) {CGSize=dd} generatorSize;
+@property (nonatomic) float allCount;
+@property (nonatomic) float genratorCount;
+- (void)addGen:;
+- (void)_generateFile:range:interval:key:;
+- (float)allCount;
+- (void)cacleGenerator;
+- (void)generateFile:range:interval:key:image:completion:;
+- (id)generatorSize;
+- (void)generatorWithAsset:times:fps:key:;
+- (float)genratorCount;
+- (id)imageBlock;
+- (void)removeGen:;
+- (void)setAllCount:;
+- (void)setGeneratorSize:;
+- (void)setGenerators:;
+- (void)setGenratorCount:;
+- (void)setImageBlock:;
+- (void)setVideoKey:;
+- (id)videoKey;
+- (id)completion;
+- (void)setCompletion:;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (id)generators;
++ (id)buildSplitDuetCompositionFor:;
+@end

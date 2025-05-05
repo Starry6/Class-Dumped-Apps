@@ -1,0 +1,36 @@
+@interface IESECGoodsCommentsListResponse : IESECBaseApiModel
+@property (nonatomic) BOOL hasMore;
+@property (nonatomic) NSNumber totalCount;
+@property (nonatomic) NSArray commentList;
+@property (nonatomic) NSString noticeDesc;
+@property (nonatomic) NSNumber noticePosition;
+@property (nonatomic) BOOL isCache;
+@property (nonatomic) IESECCommentSurveyModelV2 npsSurvey;
+@property (nonatomic) NSNumber meaninglessCount;
+@property (nonatomic) NSDictionary extraInfo;
+@property (nonatomic) NSString slogan;
+- (BOOL)isCache;
+- (void)setCommentList:;
+- (id)commentList;
+- (id)meaninglessCount;
+- (id)noticeDesc;
+- (id)noticePosition;
+- (id)npsSurvey;
+- (void)setExtraInfo:;
+- (void)setIsCache:;
+- (void)setMeaninglessCount:;
+- (void)setNoticeDesc:;
+- (void)setNoticePosition:;
+- (void)setNpsSurvey:;
+- (void)setSlogan:;
+- (id)slogan;
+- (void)setHasMore:;
+- (id)totalCount;
+- (void).cxx_destruct;
+- (BOOL)hasMore;
+- (void)setTotalCount:;
+- (id)extraInfo;
++ (id)commentListJSONTransformer;
++ (id)npsSurveyJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

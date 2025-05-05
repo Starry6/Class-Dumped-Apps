@@ -1,0 +1,35 @@
+@interface CNSharingProfileAudienceDataSource : NSObject
+@property (nonatomic) BOOL shouldShowEveryone;
+@property (nonatomic) NSArray valuesArray;
+@property (nonatomic) CNSharingProfileRowItem selectedItem;
+@property (nonatomic) NSArray items;
+@property (nonatomic) Q selectedSharingAudience;
+@property (nonatomic) Q selectedIndex;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (unsigned long long)numberOfItems;
+- (id)items;
+- (unsigned long long)selectedIndex;
+- (void)setItems:;
+- (void).cxx_destruct;
+- (void)setSelectedItem:;
+- (id)selectedItem;
+- (void)didSelectItemAtIndex:;
+- (unsigned long long)selectedSharingAudience;
+- (void)reloadItems;
+- (BOOL)supportsSelection;
+- (id)sectionHeaderLabel;
+- (id)sectionFooterLabel;
+- (id)itemForIndex:;
+- (id)initWithSelectedSharingAudience:;
+- (void)setSelectedSharingAudience:;
+- (unsigned long long)sharingAudienceForItem:;
+- (unsigned long long)indexForSharingAudience:;
+- (unsigned long long)sharingAudienceForIndex:;
+- (BOOL)shouldShowEveryone;
+- (void)setShouldShowEveryone:;
+- (id)valuesArray;
+- (void)setValuesArray:;
+@end

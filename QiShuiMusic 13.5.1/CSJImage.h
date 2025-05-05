@@ -1,0 +1,30 @@
+@interface CSJImage : NSObject
+@property (nonatomic) BOOL imagePreview;
+@property (nonatomic) NSString imageURL;
+@property (nonatomic) NSString image_key;
+@property (nonatomic) float width;
+@property (nonatomic) float height;
+@property (nonatomic) float duration;
+- (id)csj_dictionaryValue;
+- (id)image_key;
+- (void)setImagePreview:;
+- (void)setImage_key:;
+- (void)setupDataWithDictionary:;
+- (BOOL)isMemberOfClass:;
+- (id)initWithDictionary:;
+- (void)setWidth:;
+- (id)initWithCoder:;
+- (id)dictionaryValue;
+- (float)height;
+- (void)setDuration:;
+- (void)encodeWithCoder:;
+- (float)width;
+- (BOOL)isValid;
+- (void)setHeight:;
+- (void).cxx_destruct;
+- (BOOL)isKindOfClass:;
+- (void)setImageURL:;
+- (float)duration;
+- (id)imageURL;
+- (BOOL)imagePreview;
+@end

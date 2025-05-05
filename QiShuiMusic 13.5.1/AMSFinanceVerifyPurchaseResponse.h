@@ -1,0 +1,30 @@
+@interface AMSFinanceVerifyPurchaseResponse : NSObject
+@property (nonatomic) AMSDialogRequest dialogRequest;
+@property (nonatomic) NSDictionary responseDictionary;
+@property (nonatomic) AMSURLTaskInfo taskInfo;
+@property (nonatomic) q verifyType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)responseDictionary;
+- (id)taskInfo;
+- (void).cxx_destruct;
+- (void)setResponseDictionary:;
+- (void)setTaskInfo:;
+- (id)dialogRequest;
+- (void)setDialogRequest:;
+- (id)performWithTaskInfo:;
+- (id)initWithPayload:taskInfo:;
+- (id)_handleCarrierDialogResult:shouldReattempt:;
+- (id)_handleCVVDialogResult:shouldReattempt:;
+- (id)_runCarrierNewCodeWithError:;
+- (id)_runCarrierVerifyCode:error:;
+- (id)_runCVVRequestForCode:error:;
+- (long long)verifyType;
+- (void)setVerifyType:;
++ (BOOL)isVerifyPurchasePayload:;
++ (id)_dialogRequestForCarrierFromPayload:verifyType:;
++ (id)_dialogRequestForCVVFromPayload:verifyType:;
++ (long long)_verifyTypeFromPayload:;
+@end

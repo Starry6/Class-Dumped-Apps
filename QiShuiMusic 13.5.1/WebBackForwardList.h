@@ -1,0 +1,33 @@
+@interface WebBackForwardList : NSObject
+@property (nonatomic) WebHistoryItem backItem;
+@property (nonatomic) WebHistoryItem currentItem;
+@property (nonatomic) WebHistoryItem forwardItem;
+@property (nonatomic) NSInteger capacity;
+@property (nonatomic) NSInteger backListCount;
+@property (nonatomic) NSInteger forwardListCount;
+- (int)capacity;
+- (void)setCapacity:;
+- (void)_close;
+- (void)removeItem:;
+- (void)addItem:;
+- (void)goForward;
+- (id)init;
+- (void)dealloc;
+- (void)goBack;
+- (BOOL)containsItem:;
+- (id)currentItem;
+- (id)backItem;
+- (id)description;
+- (id)itemAtIndex:;
+- (id)dictionaryRepresentation;
+- (id)forwardItem;
+- (void)setToMatchDictionaryRepresentation:;
+- (id)initWithBackForwardList:;
+- (void)goToItem:;
+- (id)backListWithLimit:;
+- (id)forwardListWithLimit:;
+- (void)setPageCacheSize:;
+- (unsigned long long)pageCacheSize;
+- (int)backListCount;
+- (int)forwardListCount;
+@end

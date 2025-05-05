@@ -1,0 +1,38 @@
+@interface MKLookAroundEntryPoint : NSObject
+@property (nonatomic) Q type;
+@property (nonatomic) MKMapItem mapItem;
+@property (nonatomic) BOOL wantsCloseUpView;
+@property (nonatomic) VKMuninMarker muninMarker;
+@property (nonatomic) double heading;
+@property (nonatomic) GEOMuninViewState muninViewState;
+@property (nonatomic) NSInteger triggerAction;
+@property (nonatomic) GEOCameraFrame cameraFrameOverride;
+- (id)mapItem;
+- (id)init;
+- (double)heading;
+- (void)setHeading:;
+- (void)setType:;
+- (void)setMapItem:;
+- (unsigned long long)type;
+- (void).cxx_destruct;
+- (id)muninViewState;
+- (void)setMuninViewState:;
+- (id)muninMarker;
+- (id)cameraFrameOverride;
+- (BOOL)wantsCloseUpView;
+- (void)setWantsCloseUpView:;
+- (void)setMuninMarker:;
+- (int)triggerAction;
+- (void)setTriggerAction:;
+- (void)setCameraFrameOverride:;
++ (id)entryPointWithMapItem:;
++ (id)entryPointWithMapItem:wantsCloseUpView:;
++ (id)entryPointWithMapItem:wantsCloseUpView:cameraFrameOverride:;
++ (id)entryPointWithMuninMarker:heading:;
++ (id)entryPointWithMuninViewState:;
++ (id)entryPointWithScene:wantsCloseUpView:;
++ (id)entryPointWithMapItem:triggerAction:;
++ (id)entryPointWithMuninViewState:triggerAction:;
++ (id)entryPointWithMapItem:wantsCloseUpView:triggerAction:;
++ (id)entryPointWithMapItem:wantsCloseUpView:cameraFrameOverride:triggerAction:;
+@end

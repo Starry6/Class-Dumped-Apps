@@ -1,0 +1,31 @@
+@interface AXMOutputRequest : NSObject
+@property (nonatomic) AXMOutputRequestHandle handle;
+@property (nonatomic) NSArray actions;
+@property (nonatomic) NSArray speechActions;
+@property (nonatomic) NSArray oneShotSoundActions;
+@property (nonatomic) NSArray activeSoundActions;
+@property (nonatomic) NSArray hapticActions;
+@property (nonatomic) @? completionBlock;
+@property (nonatomic) BOOL interruptsAndClearsQueue;
+- (id)init;
+- (id)handle;
+- (void)setCompletionBlock:;
+- (id)actions;
+- (void).cxx_destruct;
+- (void)_addAction:;
+- (id)completionBlock;
+- (id)speechActions;
+- (id)oneShotSoundActions;
+- (id)activeSoundActions;
+- (id)hapticActions;
+- (void)addSpeechItem:;
+- (void)addSoundItemWithID:;
+- (void)addSoundItemWithURL:;
+- (void)addActiveSoundItemWithID:;
+- (void)addActiveSoundItemWithURL:;
+- (void)addHapticItemWithURL:;
+- (void)addHapticItemWithURL:intensity:;
+- (BOOL)interruptsAndClearsQueue;
+- (void)setInterruptsAndClearsQueue:;
++ (id)speechItemSeparator;
+@end

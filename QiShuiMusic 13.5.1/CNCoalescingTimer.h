@@ -1,0 +1,34 @@
+@interface CNCoalescingTimer : NSObject
+@property (nonatomic) <CNCancelable> scheduledToken;
+@property (nonatomic) CNUnfairLock resourceLock;
+@property (nonatomic) <CNScheduler> delayScheduler;
+@property (nonatomic) <CNScheduler> downstreamScheduler;
+@property (nonatomic) @? block;
+@property (nonatomic) double delay;
+@property (nonatomic) Q options;
+@property (nonatomic) BOOL open;
+@property (nonatomic) BOOL someoneWaiting;
+- (void)setOpen:;
+- (id)block;
+- (void)dealloc;
+- (BOOL)open;
+- (void)setSomeoneWaiting:;
+- (id)initWithDelay:options:block:schedulerProvider:downstreamScheduler:;
+- (void)nts_makeSomeoneWait;
+- (void)nts_letSomeoneIn;
+- (void)nts_openDoor;
+- (double)delay;
+- (void)handleEvent;
+- (id)scheduledToken;
+- (id)downstreamScheduler;
+- (BOOL)nts_isDoorOpened;
+- (unsigned long long)options;
+- (id)delayScheduler;
+- (void).cxx_destruct;
+- (void)nts_closeDoor;
+- (void)setScheduledToken:;
+- (id)resourceLock;
+- (id)initWithDelay:options:delegate:;
+- (BOOL)isSomeoneWaiting;
++ (id)os_log;
+@end

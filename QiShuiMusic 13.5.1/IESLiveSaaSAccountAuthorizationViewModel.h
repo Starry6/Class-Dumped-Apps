@@ -1,0 +1,35 @@
+@interface IESLiveSaaSAccountAuthorizationViewModel : NSObject
+@property (nonatomic) BOOL hasInteractiveAuth;
+@property (nonatomic) IESLiveSaaSLiveRoomModel roomModel;
+@property (nonatomic) HTSEventContext trackContext;
+@property (nonatomic) IESLiveSaaSComponentContext componentContext;
+@property (nonatomic) BOOL isEnterRoomFromOutside;
+- (id)todayFirstShownAuthToastTimeKey;
+- (BOOL)canAutoShownAuthRequestTodayWithMaxCount:;
+- (BOOL)canShowAuthSuccessToastToday;
+- (id)commonParams;
+- (id)componentContext;
+- (id)currentLoginUserName;
+- (BOOL)hasInteractiveAuth;
+- (id)initWithRoomModel:trackContext:componentContext:;
+- (BOOL)isEnterRoomFromOutside;
+- (void)requestForLiveAuth;
+- (void)requestForLiveAuthWithCompletion:;
+- (id)roomId;
+- (id)roomModel;
+- (void)setComponentContext:;
+- (void)setHasInteractiveAuth:;
+- (void)setIsEnterRoomFromOutside:;
+- (void)setRoomModel:;
+- (void)setTrackContext:;
+- (id)todayHadShownAuthToastCountKey;
+- (void)trackAuthEvent:params:;
+- (void)trackCenterAuthConfirmEvent;
+- (void)trackCenterAuthShowEvent;
+- (id)trackContext;
+- (void)trackTopAuthConfirmEvent:;
+- (void)trackTopAuthShowEvent;
+- (void)updateIsEnterRoomFromOutside;
+- (BOOL)isAnchor;
+- (void).cxx_destruct;
+@end

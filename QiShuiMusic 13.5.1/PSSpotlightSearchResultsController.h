@@ -1,0 +1,34 @@
+@interface PSSpotlightSearchResultsController : UITableViewController
+@property (nonatomic) NSMutableArray tableData;
+@property (nonatomic) NSArray results;
+@property (nonatomic) <PSSpotlightSearchResultsControllerDelegate> delegate;
+- (void)searchQueryFoundItems:;
+- (id)init;
+- (void)viewWillTransitionToSize:withTransitionCoordinator:;
+- (void)selectPreviousSearchResult;
+- (id)tableView:cellForRowAtIndexPath:;
+- (double)iconWidth;
+- (void)setDelegate:;
+- (void)showSelectedSearchResult;
+- (void)scrollViewDidScroll:;
+- (id)results;
+- (double)tableView:estimatedHeightForRowAtIndexPath:;
+- (id)delegate;
+- (void)tableView:didSelectRowAtIndexPath:;
+- (void).cxx_destruct;
+- (void)selectNextSearchResult;
+- (void)searchQueryStarted;
+- (void)searchQueryCompleted;
+- (void)viewDidLayoutSubviews;
+- (void)tableViewDidFinishReload:;
+- (long long)tableView:numberOfRowsInSection:;
+- (void)setResults:;
+- (void)viewDidLoad;
+- (long long)numberOfSectionsInTableView:;
+- (void)_removeIconViewForSection:;
+- (void)_updateIconViews:;
+- (id)_itemForIndexPath:;
+- (void)_selectIndexPath:;
+- (id)tableData;
+- (void)setTableData:;
+@end

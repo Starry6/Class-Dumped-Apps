@@ -1,0 +1,32 @@
+@interface MFDAMessageContentConsumer : NSObject
+@property (nonatomic) NSInteger requestedFormat;
+@property (nonatomic) <MFCollectingDataConsumer> dataConsumer;
+@property (nonatomic) <MFCollectingDataConsumer> alternatePartConsumer;
+@property (nonatomic) <MFMessageDataConsumerFactory> consumerFactory;
+@property (nonatomic) DAMailMessage message;
+@property (nonatomic) NSMutableData bodyData;
+@property (nonatomic) double timeOfLastActivity;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)dataConsumer;
+- (id)data;
+- (BOOL)succeeded;
+- (id)bodyData;
+- (void)setDataConsumer:;
+- (id)message;
+- (void).cxx_destruct;
+- (BOOL)shouldBeginStreamingForMailMessage:format:;
+- (void)consumeData:length:format:mailMessage:;
+- (void)didEndStreamingForMailMessage:;
+- (BOOL)didBeginStreaming;
+- (double)timeOfLastActivity;
+- (id)dataConsumerForPart:;
+- (id)alternatePartConsumer;
+- (void)setAlternatePartConsumer:;
+- (id)consumerFactory;
+- (void)setConsumerFactory:;
+- (int)requestedFormat;
+- (void)setRequestedFormat:;
+@end

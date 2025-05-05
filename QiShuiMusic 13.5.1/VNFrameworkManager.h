@@ -1,0 +1,31 @@
+@interface VNFrameworkManager : NSObject
+@property (nonatomic) <NSLocking> detectorAccessingLock;
+@property (nonatomic) <NSLocking> trackerResourcesAccessingLock;
+@property (nonatomic) NSNotificationCenter notificationCenter;
+@property (nonatomic) NSArray allSessions;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)trackerResourcesAccessingLock;
+- (id)init;
+- (void)legacyForcedCleanupOfJunkPipelineWithLevel:;
+- (id)wisdomParameterForMTLDeviceWithName:error:;
+- (id)trackerResourcesConfiguredWithOptions:forSession:error:;
+- (id)notificationCenter;
+- (id)detectorAccessingLock;
+- (void)legacyForcedCleanupOfFacePipelineWithLevel:;
+- (id)loadedDetectors;
+- (id)wisdomParameterForMTLDevice:error:;
+- (id)_locateTrackerResourcesConfiguredWithOptions:inSessions:excludingSession:;
+- (void)registerSession:;
+- (id)_locateDetectorOfClass:configuredWithOptions:inSessions:excludingSession:;
+- (void)releaseMetalDeviceWisdomParameters;
+- (void)legacyForcedCleanupOfSmartCamPipelineWithLevel:;
+- (void)legacyForcedCleanupWithOptions:;
+- (void).cxx_destruct;
+- (id)detectorOfClass:configuredWithOptions:forSession:error:;
+- (id)allSessions;
+- (void)legacyForcedCleanupOfScenePipelineWithLevel:;
++ (id)manager;
+@end

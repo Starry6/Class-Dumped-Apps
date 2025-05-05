@@ -1,0 +1,36 @@
+@interface SFSecurityRecommendationInfoCell : UITableViewCell
+@property (nonatomic) UIImage icon;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel subtitleLabel;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString subtitle;
+@property (nonatomic) WBSSavedAccount savedAccount;
+@property (nonatomic) <SFSecurityRecommendationInfoCellDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setTitleLabel:;
+- (id)subtitleLabel;
+- (void)setDelegate:;
+- (void)setSubtitleLabel:;
+- (id)icon;
+- (void)setSubtitle:;
+- (void)setTitle:;
+- (id)title;
+- (id)delegate;
+- (void)setIcon:;
+- (void).cxx_destruct;
+- (id)subtitle;
+- (id)titleLabel;
+- (id)savedAccount;
+- (void)showPlaceholderImageForDomain:backgroundColor:;
+- (void)_hideButtonPressed:;
+- (id)initWithConfiguration:reuseIdentifier:;
+- (void)showCheckmarkForDetailView;
+- (void)setShowsUpgradeCompletionCheckmark:;
+- (void)setShowsHideButton:;
+- (void)_createHideButton;
+- (void)setSavedAccount:;
+- (double)_iconWidth;
+@end

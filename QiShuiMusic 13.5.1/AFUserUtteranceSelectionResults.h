@@ -1,0 +1,34 @@
+@interface AFUserUtteranceSelectionResults : NSObject
+@property (nonatomic) NSNumber combinedRank;
+@property (nonatomic) NSNumber combinedScore;
+@property (nonatomic) NSString interactionId;
+@property (nonatomic) NSNumber onDeviceUtterancesPresent;
+@property (nonatomic) NSNumber originalRank;
+@property (nonatomic) NSNumber originalScore;
+@property (nonatomic) NSString previousUtterance;
+@property (nonatomic) NSString sessionId;
+@property (nonatomic) NSString utteranceSource;
+- (void)setSessionId:;
+- (id)sessionId;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)interactionId;
+- (void)setInteractionId:;
+- (id)combinedRank;
+- (void)setCombinedRank:;
+- (id)combinedScore;
+- (void)setCombinedScore:;
+- (id)onDeviceUtterancesPresent;
+- (void)setOnDeviceUtterancesPresent:;
+- (id)originalRank;
+- (void)setOriginalRank:;
+- (id)originalScore;
+- (void)setOriginalScore:;
+- (id)previousUtterance;
+- (void)setPreviousUtterance:;
+- (id)utteranceSource;
+- (void)setUtteranceSource:;
++ (BOOL)supportsSecureCoding;
+@end

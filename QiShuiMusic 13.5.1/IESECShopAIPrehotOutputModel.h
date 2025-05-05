@@ -1,0 +1,35 @@
+@interface IESECShopAIPrehotOutputModel : MTLModel
+@property (nonatomic) BOOL shouldAttribution;
+@property (nonatomic) BOOL shouldPrefetch;
+@property (nonatomic) NSNumber timeStamp;
+@property (nonatomic) NSNumber validDuration;
+@property (nonatomic) NSNumber invalidSec;
+@property (nonatomic) NSNumber reinitValidDur;
+@property (nonatomic) BOOL enableReinitValid;
+@property (nonatomic) NSDictionary ptyAlogInfo;
+@property (nonatomic) NSNumber code;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setPtyAlogInfo:;
+- (BOOL)enableReinitValid;
+- (id)invalidSec;
+- (id)ptyAlogInfo;
+- (id)reinitValidDur;
+- (void)setEnableReinitValid:;
+- (void)setInvalidSec:;
+- (void)setReinitValidDur:;
+- (void)setShouldAttribution:;
+- (BOOL)shouldAttribution;
+- (id)code;
+- (void).cxx_destruct;
+- (id)timeStamp;
+- (void)setCode:;
+- (void)setTimeStamp:;
+- (id)validDuration;
+- (void)setValidDuration:;
+- (BOOL)shouldPrefetch;
+- (void)setShouldPrefetch:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

@@ -1,0 +1,32 @@
+@interface IMAttachmentMessagePartChatItem : IMMessagePartChatItem
+@property (nonatomic) Q numberOfMomentShareSavedAssets;
+@property (nonatomic) Q numberOfMomentSharePhotos;
+@property (nonatomic) Q numberOfMomentShareVideos;
+@property (nonatomic) BOOL needsReloadForCommSafetyStateChange;
+@property (nonatomic) NSString transferGUID;
+@property (nonatomic) BOOL parentChatIsSpam;
+@property (nonatomic) BOOL wantsAttachmentContiguous;
+- (unsigned char)contentType;
+- (void).cxx_destruct;
+- (id)description;
+- (id)copyWithZone:;
+- (BOOL)parentChatIsSpam;
+- (id)messageSummaryInfo;
+- (unsigned long long)numberOfMomentShareSavedAssets;
+- (void)setNumberOfMomentShareSavedAssets:;
+- (unsigned long long)numberOfMomentSharePhotos;
+- (void)setNumberOfMomentSharePhotos:;
+- (unsigned long long)numberOfMomentShareVideos;
+- (void)setNumberOfMomentShareVideos:;
+- (id)transferGUID;
+- (id)layoutGroupIdentifier;
+- (long long)syndicationBehavior;
+- (BOOL)isAttachmentContiguousWithChatItem:;
+- (id)replyContextPreviewChatItemForReply:chatContext:;
+- (id)_initWithItem:text:index:messagePartRange:transferGUID:chatContext:;
+- (id)_initWithItem:text:index:messagePartRange:transferGUID:chatContext:visibleAssociatedMessageChatItems:;
+- (BOOL)_wantsAttachmentContiguousForType:;
+- (BOOL)wantsAttachmentContiguous;
+- (BOOL)needsReloadForCommSafetyStateChange;
+- (void)setNeedsReloadForCommSafetyStateChange:;
+@end

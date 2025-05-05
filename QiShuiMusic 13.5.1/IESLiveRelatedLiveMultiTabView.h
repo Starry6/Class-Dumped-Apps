@@ -1,0 +1,33 @@
+@interface IESLiveRelatedLiveMultiTabView : UIView
+@property (nonatomic) NSArray tabModels;
+@property (nonatomic) IESLiveRelatedLiveSelectionTabView selectionView;
+@property (nonatomic) UIScrollView scrollView;
+@property (nonatomic) q selectedIndex;
+@property (nonatomic) NSMutableArray sectionContainerArray;
+@property (nonatomic) @? selectedBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithPanelTabModels:;
+- (id)sectionContainerArray;
+- (id)selectedBlock;
+- (void)sendDidSelectedSection;
+- (void)setSectionContainerArray:;
+- (void)setSelectedBlock:;
+- (void)setTabModels:;
+- (void)setupSubViews;
+- (id)tabModels;
+- (void)scrollViewDidEndDecelerating:;
+- (void)setScrollView:;
+- (id)selectionView;
+- (void)layoutSubviews;
+- (long long)selectedIndex;
+- (void)setSelectionView:;
+- (void)scrollViewDidScroll:;
+- (id)scrollView;
+- (void)scrollViewDidEndDragging:willDecelerate:;
+- (void).cxx_destruct;
+- (void)setSelectedIndex:;
+- (void)scrollToIndex:animated:;
+@end

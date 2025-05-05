@@ -1,0 +1,35 @@
+@interface NPTunnelFlowDNS : NPTunnelFlowUDP
+@property (nonatomic) NSPDNSPacket query;
+@property (nonatomic) q tunnelResult;
+@property (nonatomic) NSPDNSPacket tunnelDNSResponse;
+@property (nonatomic) q directResult;
+@property (nonatomic) NSPDNSPacket directDNSResponse;
+@property (nonatomic) ^v tunnelResponseTimer;
+@property (nonatomic) BOOL telemetryReported;
+- (void)setQuery:;
+- (id)query;
+- (void).cxx_destruct;
+- (void)handleAppData:;
+- (BOOL)shouldSendDataToClient:fromTunnel:;
+- (void)sendDataToClient:fromTunnel:;
+- (void)closeFromTunnel;
+- (void)closeFromDirectConnectionWithError:;
+- (void)handleTunnelConnected;
+- (BOOL)checkAndReportTelemetry;
+- (id)resultToString:;
+- (id)createStateDictionaryWithResult:response:;
+- (id)addDNSInfoToTelemetry:;
+- (void)cleanupLosingConnection:;
+- (long long)tunnelResult;
+- (void)setTunnelResult:;
+- (id)tunnelDNSResponse;
+- (void)setTunnelDNSResponse:;
+- (long long)directResult;
+- (void)setDirectResult:;
+- (id)directDNSResponse;
+- (void)setDirectDNSResponse:;
+- (id)tunnelResponseTimer;
+- (void)setTunnelResponseTimer:;
+- (BOOL)telemetryReported;
+- (void)setTelemetryReported:;
+@end

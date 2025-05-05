@@ -1,0 +1,2 @@
+@interface TRIPBStructRoot : TRIPBRootObject
+@end

@@ -1,0 +1,2 @@
+@interface AVAudioMixInputParametersInternal : NSObject
+@end

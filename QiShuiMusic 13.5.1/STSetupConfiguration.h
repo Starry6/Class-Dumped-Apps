@@ -1,0 +1,34 @@
+@interface STSetupConfiguration : NSObject
+@property (nonatomic) BOOL userHasContacts;
+@property (nonatomic) STUserID associatedUser;
+@property (nonatomic) q screenTimeState;
+@property (nonatomic) NSSet availableScreenTimeStates;
+@property (nonatomic) STOpaquePasscode passcode;
+@property (nonatomic) q contactManagementState;
+@property (nonatomic) NSSet availableContactManagementStates;
+- (long long)contactManagementState;
+- (id)passcode;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)initWithUser:screenTimeState:passcode:contactManagementState:userHasContacts:error:;
+- (id)_initWithUser:screenTimeState:passcode:contactManagementState:userHasContacts:;
+- (id)_descriptionForScreenTimeStates:;
+- (id)_descriptionForContactManagementStates:;
+- (id)availableScreenTimeStates;
+- (id)availableContactManagementStates;
+- (id)configurationWithUpdatedScreenTimeState:error:;
+- (id)configurationWithUpdatedContactManagementState:error:;
+- (id)configurationWithUpdatedPasscode:;
+- (BOOL)isEqualToSetupConfiguration:;
+- (id)associatedUser;
+- (long long)screenTimeState;
+- (BOOL)userHasContacts;
++ (BOOL)supportsSecureCoding;
++ (BOOL)_isScreenTimeStateValid:;
++ (BOOL)_isContactManagementStateValid:pairedWithUserHasContacts:;
+@end

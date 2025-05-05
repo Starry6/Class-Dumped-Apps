@@ -1,0 +1,33 @@
+@interface AMSAcknowledgePrivacyTask : AMSTask
+@property (nonatomic) NSSet privacyIdentifiers;
+@property (nonatomic) ACAccount account;
+- (id)account;
+- (void)setAccount:;
+- (void).cxx_destruct;
+- (id)initWithPrivacyIdentifier:;
+- (id)initWithPrivacyIdentifiers:;
+- (id)initWithPrivacyIdentifier:account:;
+- (id)initWithPrivacyIdentifiers:account:;
+- (id)acknowledgePrivacy;
+- (id)rejectPrivacy;
+- (id)_updatePrivacyWithAcknowledgementVersions:;
+- (id)privacyIdentifiers;
+- (void)setPrivacyIdentifiers:;
++ (BOOL)hasPreviouslyAcknowledgedPrivacyIdentifier:account:;
++ (id)_accountStoreForPrivacyIdentifier:;
++ (id)_appleTVAppPrivacyIdentifier;
++ (BOOL)hasPreviouslyAcknowledgedPrivacyIdentifier:minimumVersion:;
++ (unsigned long long)_contentVersionForPrivacyIdentifier:;
++ (id)_appleIDPrivacyIdentifier;
++ (id)_appleMusicAppPrivacyIdentifier;
++ (BOOL)acknowledgementNeededForPrivacyIdentifier:account:;
++ (BOOL)hasPreviouslyAcknowledgedPrivacyIdentifier:;
++ (id)_valueForPreviouslyAcknowledgedPrivacyIdentifier:account:;
++ (BOOL)hasPreviouslyAcknowledgedPrivacyIdentifier:account:minimumVersion:;
++ (id)_appleArcadePrivacyIdentifier;
++ (BOOL)hasRejectedPrivacyIdentifier:;
++ (id)_storePrivacyIdentifiers;
++ (id)_multiplexPrivacyIdentifier:contentVersion:;
++ (BOOL)acknowledgementNeededForPrivacyIdentifier:;
++ (BOOL)hasRejectedPrivacyIdentifier:account:;
+@end

@@ -1,0 +1,34 @@
+@interface NWCandidatePathMonitor : NSObject
+@property (nonatomic) NSObject<OS_nw_path_evaluator> primaryEvaluator;
+@property (nonatomic) NSObject<OS_dispatch_queue> queue;
+@property (nonatomic) NSArray remoteEndpoints;
+@property (nonatomic) NSMutableDictionary candidatePathEvaluators;
+@property (nonatomic) @? updateHandler;
+@property (nonatomic) NWParameters parameters;
+@property (nonatomic) NSArray interfaces;
+@property (nonatomic) NSArray candidatePaths;
+- (id)init;
+- (void)dealloc;
+- (id)initWithParameters:;
+- (id)updateHandler;
+- (id)parameters;
+- (id)primaryEvaluator;
+- (id)interfaces;
+- (void)setUpdateHandler:;
+- (void).cxx_destruct;
+- (void)setQueue:;
+- (void)setPrimaryEvaluator:;
+- (id)queue;
+- (void)cancelCandidatePathEvaluators;
+- (id)cParameters;
+- (void)resetCandidatePathEvaluators;
+- (void)startWithQueue:updateHandler:;
+- (void)cancelWithHandler:;
+- (id)interfacesLocked;
+- (id)candidatePaths;
+- (void)updateRemoteEndpoints:;
+- (id)remoteEndpoints;
+- (void)setRemoteEndpoints:;
+- (id)candidatePathEvaluators;
+- (void)setCandidatePathEvaluators:;
+@end

@@ -1,0 +1,35 @@
+@interface ARVLStateData : NSObject
+@property (nonatomic) double timeSinceLastLocalization;
+@property (nonatomic) double timeSinceInitialization;
+@property (nonatomic) ARGeoTrackingStatus trackingStatus;
+@property (nonatomic) double fusedReplayLocationTimestamp;
+@property (nonatomic) CLLocation fusedReplayLocation;
+@property (nonatomic) double fusedReplayHeading;
+@property (nonatomic) double fusedReplayHeadingTimestamp;
+@property (nonatomic) BOOL hasStartedAvailabilityCheck;
+@property (nonatomic) BOOL hasReturnedAvailabilityCheck;
+@property (nonatomic) BOOL hasStartedLocalization;
+@property (nonatomic) BOOL hasReturnedLocalization;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)init:timeSinceInitialization:trackingStatus:fusedReplayLocation:fusedReplayLocationTimestamp:fusedReplayHeading:fusedReplayHeadingTimestamp:hasStartedAvailabilityCheck:hasReturnedAvailabilityCheck:hasStartedLocalization:hasReturnedLocalization:;
+- (double)timeSinceLastLocalization;
+- (double)timeSinceInitialization;
+- (id)trackingStatus;
+- (double)fusedReplayLocationTimestamp;
+- (id)fusedReplayLocation;
+- (double)fusedReplayHeading;
+- (double)fusedReplayHeadingTimestamp;
+- (BOOL)hasStartedAvailabilityCheck;
+- (BOOL)hasReturnedAvailabilityCheck;
+- (BOOL)hasStartedLocalization;
+- (BOOL)hasReturnedLocalization;
++ (BOOL)supportsSecureCoding;
+@end

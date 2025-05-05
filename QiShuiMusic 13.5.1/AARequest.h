@@ -1,0 +1,34 @@
+@interface AARequest : NSObject
+@property (nonatomic) NSURLRequest urlRequest;
+@property (nonatomic) BOOL flushCache;
+@property (nonatomic) NSDictionary customHeaders;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)urlString;
+- (BOOL)flushCache;
+- (void)dealloc;
+- (id)urlCredential;
+- (void)setCookieStorage:;
+- (id)urlRequest;
+- (void).cxx_destruct;
+- (id)initWithURLString:;
+- (void)performRequestWithHandler:;
+- (id)bodyDictionary;
+- (void)setDeviceProvisioningOneTimePassword:;
+- (void)setDeviceProvisioningMachineId:;
+- (void)performSignedRequestWithHandler:;
+- (void)performPinnedRequestWithHandler:;
+- (void)performRequestForDevice:withHandler:;
+- (void)performRequestForDevice:anisetteDataProvider:withHandler:;
+- (void)performRequestWithSession:withHandler:;
+- (void)_handleDataTaskCompletionWithData:response:error:;
+- (id)redactedBodyStringWithPropertyList:;
+- (void)setFlushCache:;
+- (id)customHeaders;
+- (void)setCustomHeaders:;
++ (id)protocolVersion;
++ (Class)responseClass;
++ (id)redactedHeadersFromHTTPHeaders:;
+@end

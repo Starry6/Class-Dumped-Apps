@@ -1,0 +1,32 @@
+@interface IESECWindowFeedDataController : IESECListDataController
+@property (nonatomic) IESECWinFeedEnterParameters parameters;
+@property (nonatomic) q cursor;
+@property (nonatomic) NSString filterPromotionIds;
+@property (nonatomic) NSString cartURL;
+@property (nonatomic) IESECRelationActivityDynamicModel dynamicModules;
+@property (nonatomic) IESECWindowFeedViewController viewController;
+- (id)cartURL;
+- (void)refreshCartInfo;
+- (id)dynamicModules;
+- (id)filterPromotionIds;
+- (void)handleComponentResponse:;
+- (void)handleHeaderResponse:;
+- (void)handlePageResponse:;
+- (void)initFetchWithCompletion:;
+- (void)loadMoreWithCompletion:;
+- (void)requestComponentsWithCompletion:;
+- (void)requestHeaderWithCompletion:;
+- (void)requestNextPageWithCompletion:;
+- (void)setCartURL:;
+- (void)setDynamicModules:;
+- (void)setFilterPromotionIds:;
+- (long long)cursor;
+- (void)setViewController:;
+- (id)initWithParameters:;
+- (void)setCursor:;
+- (id)parameters;
+- (id)viewController;
+- (void).cxx_destruct;
+- (void)refreshWithCompletion:;
+- (void)setParameters:;
+@end

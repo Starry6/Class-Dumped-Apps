@@ -1,0 +1,35 @@
+@interface CalDAVGetAccountPropertiesTaskGroup : CoreDAVGetAccountPropertiesTaskGroup
+@property (nonatomic) NSURL delegatePrincipalURL;
+@property (nonatomic) NSURL homeURL;
+@property (nonatomic) NSSet calendarHomes;
+@property (nonatomic) NSSet preferredUserAddresses;
+@property (nonatomic) NSURL inboxURL;
+@property (nonatomic) NSURL outboxURL;
+@property (nonatomic) NSURL dropboxURL;
+@property (nonatomic) NSURL notificationURL;
+@property (nonatomic) NSURL updatedPrincipalURL;
+@property (nonatomic) CalDAVServerVersion serverVersion;
+@property (nonatomic) BOOL supportsCalendarUserSearch;
+- (void)processPrincipalHeaders:;
+- (id)_copyAccountPropertiesPropFindElements;
+- (BOOL)forceOptionsRequest;
+- (id)updatedPrincipalURL;
+- (id)homeSet;
+- (void)_setPropertiesFromParsedResponses:;
+- (void)startTaskGroup;
+- (id)inboxURL;
+- (id)homeURL;
+- (BOOL)supportsCalendarUserSearch;
+- (id)serverVersion;
+- (id)dropboxURL;
+- (id)userAddresses;
+- (void)setHomeURL:;
+- (id)preferredUserAddresses;
+- (id)notificationURL;
+- (id)calendarHomes;
+- (id)outboxURL;
+- (void)setDelegatePrincipalURL:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)delegatePrincipalURL;
+@end

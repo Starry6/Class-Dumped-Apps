@@ -1,0 +1,35 @@
+@interface IESECSKUNumberViewModel : NSObject
+@property (nonatomic) IESECSKUModel skuModel;
+@property (nonatomic) IESECSKUDetailContext detailContext;
+@property (nonatomic) NSNumber lastSelectedCount;
+@property (nonatomic) NSString limit;
+@property (nonatomic) NSString stockDesc;
+@property (nonatomic) Q number;
+@property (nonatomic) NSString minLimitToast;
+@property (nonatomic) NSString limitToast;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)canPlus;
+- (id)initWithSKUModel:detailContext:;
+- (BOOL)canMinus;
+- (void)checkGivenProductStock;
+- (id)detailContext;
+- (id)lastSelectedCount;
+- (id)limitToast;
+- (id)minLimitToast;
+- (void)minusNumber;
+- (void)plusNumber;
+- (void)setDetailContext:;
+- (void)setLastSelectedCount:;
+- (void)setSkuModel:;
+- (id)skuModel;
+- (void)skuModuleClick:extra:;
+- (id)stockDesc;
+- (void)trackWithEventName:;
+- (void)updateSKUInfoAfterSelectedCountChangedIfNeeded;
+- (id)limit;
+- (unsigned long long)number;
+- (void).cxx_destruct;
+@end

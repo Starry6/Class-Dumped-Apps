@@ -1,0 +1,36 @@
+@interface RPStatusProvider : NSObject
+@property (nonatomic) NSObject<OS_dispatch_queue> dispatchQueue;
+@property (nonatomic) NSMutableDictionary currentlyProviding;
+@property (nonatomic) @? interruptionHandler;
+@property (nonatomic) @? invalidationHandler;
+@property (nonatomic) BOOL targetUserSession;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (id)interruptionHandler;
+- (void)setTargetUserSession:;
+- (void)_invalidated;
+- (BOOL)targetUserSession;
+- (void)setInterruptionHandler:;
+- (id)dispatchQueue;
+- (void)setDispatchQueue:;
+- (id)initWithCoder:;
+- (void)_interrupted;
+- (id)_ensureXPCStarted;
+- (void)activateWithCompletion:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)invalidationHandler;
+- (void)setInvalidationHandler:;
+- (id)description;
+- (void)invalidate;
+- (void)_activateWithCompletion:reactivate:;
+- (id)_connectionWithClient:queue:userProvider:interruptionHandler:invalidationHandler:;
+- (void)provideStatusUpdate:statusInfo:completion:;
+- (void)cancelStatusUpdate:completion:;
+- (id)currentlyProviding;
+- (void)setCurrentlyProviding:;
++ (BOOL)supportsSecureCoding;
+@end

@@ -1,0 +1,34 @@
+@interface OPTTSMutableBeginTextToSpeechStreamingResponse : OPTTSBeginTextToSpeechStreamingResponse
+@property (nonatomic) NSString speech_id;
+@property (nonatomic) NSString session_id;
+@property (nonatomic) NSInteger error_code;
+@property (nonatomic) NSString error_str;
+@property (nonatomic) NSString stream_id;
+@property (nonatomic) q audio_type;
+@property (nonatomic) OPTTSAudioDescription decoder_description;
+@property (nonatomic) OPTTSAudioDescription playback_description;
+@property (nonatomic) OPTTSTextToSpeechMeta meta_info;
+@property (nonatomic) float streaming_playback_buffer_size_in_seconds;
+- (id)init;
+- (id)copyWithZone:;
+- (id)speech_id;
+- (void)setSpeech_id:;
+- (id)session_id;
+- (void)setSession_id:;
+- (long long)audio_type;
+- (void)setAudio_type:;
+- (id)meta_info;
+- (void)setMeta_info:;
+- (id)stream_id;
+- (void)setStream_id:;
+- (int)error_code;
+- (void)setError_code:;
+- (id)error_str;
+- (void)setError_str:;
+- (id)decoder_description;
+- (void)setDecoder_description:;
+- (id)playback_description;
+- (void)setPlayback_description:;
+- (float)streaming_playback_buffer_size_in_seconds;
+- (void)setStreaming_playback_buffer_size_in_seconds:;
+@end

@@ -1,0 +1,34 @@
+@interface DIRSIdentity : DIRSBasicModule
+@property (nonatomic) DIRSConcurrentCollection userIDs;
+@property (nonatomic) DIRSConcurrentCollection deviceIDs;
+@property (nonatomic) BOOL isIdentifierAvailable;
+@property (nonatomic) NSString clientId;
+@property (nonatomic) BOOL isEnabled;
+@property (nonatomic) q state;
+@property (nonatomic) DIRSContext context;
+@property (nonatomic) NSString category;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)_createClientId;
+- (id)userIdentifiers;
+- (void)_checkIdentifierAvailable;
+- (id)_loadClientId;
+- (BOOL)_writeToFile:;
+- (BOOL)isIdentifierAvailable;
+- (void)setUserIDs:;
+- (void)setUserIdentifiers:;
+- (id)filePath;
+- (void)setDeviceIDs:;
+- (id)deviceIDs;
+- (id)clientId;
+- (void)commonInit;
+- (void)setDeviceIdentifiers:;
+- (void)run;
+- (void).cxx_destruct;
+- (id)deviceIdentifiers;
+- (id)userIDs;
++ (id)moduleId;
++ (id)moduleVersion;
+@end

@@ -1,0 +1,35 @@
+@interface MKUserLocationAnnotationViewProxy : NSObject
+@property (nonatomic) MKAnnotationView annotationView;
+@property (nonatomic) double presentationCourse;
+@property (nonatomic) {CGSize=dd} collisionSize;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) {?=dd} presentationCoordinate;
+@property (nonatomic) BOOL tracking;
+@property (nonatomic) BOOL animatingAccuracy;
+@property (nonatomic) double presentationAccuracy;
+@property (nonatomic) double minimumAccuracy;
+@property (nonatomic) {VKEdgeInsets=ffff} annotationTrackingEdgeInsets;
+@property (nonatomic) GEORouteMatch routeMatch;
+- (double)minimumAccuracy;
+- (void)setPresentationCourse:;
+- (BOOL)isAnimatingAccuracy;
+- (void)setTracking:;
+- (double)presentationCourse;
+- (BOOL)tracking;
+- (void)setAnimatingToCoordinate:;
+- (void)setAnimatingAccuracy:;
+- (id)routeMatch;
+- (double)presentationAccuracy;
+- (void)setRouteMatch:;
+- (id)annotationTrackingEdgeInsets;
+- (id)annotationView;
+- (id)presentationCoordinate;
+- (void).cxx_destruct;
+- (void)setPresentationAccuracy:;
+- (void)setPresentationCoordinate:;
+- (void)setAnnotationView:;
+- (id)collisionSize;
+@end

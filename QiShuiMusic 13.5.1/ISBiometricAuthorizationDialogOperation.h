@@ -1,0 +1,35 @@
+@interface ISBiometricAuthorizationDialogOperation : ISOperation
+@property (nonatomic) ISDialog fallbackDialog;
+@property (nonatomic) ISTouchIDDialog touchIDDialog;
+@property (nonatomic) SSBiometricAuthenticationContext biometricAuthenticationContext;
+@property (nonatomic) NSDictionary buyParams;
+@property (nonatomic) NSDictionary metricsDictionary;
+@property (nonatomic) NSString userAgent;
+@property (nonatomic) ISDialog dialog;
+@property (nonatomic) NSURL redirectURL;
+@property (nonatomic) ISDialogButton selectedButton;
+- (id)redirectURL;
+- (id)userAgent;
+- (id)biometricAuthenticationContext;
+- (void)setUserAgent:;
+- (id)metricsDictionary;
+- (void)setBiometricAuthenticationContext:;
+- (void)run;
+- (void).cxx_destruct;
+- (id)buyParams;
+- (void)setMetricsDictionary:;
+- (void)setBuyParams:;
+- (id)dialog;
+- (void)_loadURLBag;
+- (id)selectedButton;
+- (id)fallbackDialog;
+- (void)setFallbackDialog:;
+- (id)touchIDDialog;
+- (void)setTouchIDDialog:;
+- (id)initWithTouchIDDialog:fallbackDialog:;
+- (void)_findSelectedButtonForButtons:;
+- (void)_performMetricsWithBiometricMatch:didBiometricsFail:;
+- (BOOL)_runAuthkitOperationWithError:returningError:;
+- (BOOL)_runSignatureOperationReturningError:;
+- (BOOL)_shouldFallbackToAuthKitForError:;
+@end

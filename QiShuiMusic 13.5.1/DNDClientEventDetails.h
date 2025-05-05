@@ -1,0 +1,36 @@
+@interface DNDClientEventDetails : NSObject
+@property (nonatomic) BOOL notifyAnyway;
+@property (nonatomic) Q behavior;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) NSString bundleIdentifier;
+@property (nonatomic) Q type;
+@property (nonatomic) Q urgency;
+@property (nonatomic) DNDContactHandle sender;
+@property (nonatomic) NSString threadIdentifier;
+@property (nonatomic) NSString filterCriteria;
+@property (nonatomic) BOOL shouldAlwaysInterrupt;
+- (id)threadIdentifier;
+- (BOOL)notifyAnyway;
+- (id)filterCriteria;
+- (unsigned long long)urgency;
+- (id)init;
+- (id)bundleIdentifier;
+- (id)_initWithDetails:;
+- (id)_descriptionForRedacted:;
+- (id)sender;
+- (id)redactedDescription;
+- (id)identifier;
+- (id)_initWithIdentifier:bundleIdentifier:type:urgency:sender:threadIdentifier:filterCriteria:notifyAnyway:behavior:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (unsigned long long)type;
+- (BOOL)shouldAlwaysInterrupt;
+- (void).cxx_destruct;
+- (id)description;
+- (unsigned long long)behavior;
+- (id)mutableCopyWithZone:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
++ (BOOL)supportsSecureCoding;
+@end

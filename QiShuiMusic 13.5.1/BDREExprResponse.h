@@ -1,0 +1,30 @@
+@interface BDREExprResponse : NSObject
+@property (nonatomic) @ result;
+@property (nonatomic) q code;
+@property (nonatomic) NSString message;
+@property (nonatomic) NSError error;
+@property (nonatomic) double envCost;
+@property (nonatomic) double execCost;
+@property (nonatomic) BOOL parseHitCache;
+@property (nonatomic) BOOL ilHitCache;
+- (double)envCost;
+- (double)execCost;
+- (BOOL)ilHitCache;
+- (id)initWithError:ilHitCache:parseHitCache:startTime:envCost:;
+- (id)initWithError:startTime:envCost:;
+- (id)jsonFormat;
+- (BOOL)parseHitCache;
+- (void)setEnvCost:;
+- (void)setExecCost:;
+- (void)setIlHitCache:;
+- (void)setParseHitCache:;
+- (id)result;
+- (void)setMessage:;
+- (void)setError:;
+- (long long)code;
+- (id)error;
+- (id)message;
+- (void).cxx_destruct;
+- (void)setCode:;
+- (void)setResult:;
+@end

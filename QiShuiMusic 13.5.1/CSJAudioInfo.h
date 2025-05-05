@@ -1,0 +1,31 @@
+@interface CSJAudioInfo : NSObject
+@property (nonatomic) NSString audio_url;
+@property (nonatomic) NSString file_hash;
+@property (nonatomic) NSString format;
+@property (nonatomic) q size;
+@property (nonatomic) q cache_type;
+@property (nonatomic) q duaration;
+@property (nonatomic) q preload_size;
+@property (nonatomic) q repeat_count;
+- (id)audio_url;
+- (long long)cache_type;
+- (long long)duaration;
+- (id)file_hash;
+- (long long)preload_size;
+- (long long)repeat_count;
+- (void)setAudio_url:;
+- (void)setCache_type:;
+- (void)setDuaration:;
+- (void)setFile_hash:;
+- (void)setPreload_size:;
+- (void)setRepeat_count:;
+- (BOOL)validAudioInfo;
+- (void)setFormat:;
+- (id)format;
+- (id)initWithDictionary:error:;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (void)setSize:;
+- (long long)size;
+@end

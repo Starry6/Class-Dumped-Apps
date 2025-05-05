@@ -1,0 +1,22 @@
+@interface VCPVideoActivityAnalyzer : VCPVideoAnalyzer
+- (id)results;
+- (void).cxx_destruct;
+- (int)analyzeFrame:withTimestamp:andDuration:flags:;
+- (id)initWithFrameStats:;
+- (int)prepareActivityStats;
+- (void)generateActivityDescriptor;
+- (void)normalizeActivityDescriptor;
+- (void)resetActivityStatsAtTime:;
+- (int)computeActivityScoreAtTime:;
+- (int)preProcessQualityResults:interestingnessResults:obstructionResults:classificationResults:fineActionResults:faceResults:sceneSwitchFrequency:;
+- (int)extractRequiredInfoFrom:toArray:;
+- (int)extractRequiredFaceInfoFrom:toArray:;
+- (int)extractRequiredClassificationInfoFrom:toArray:;
+- (float)validationScoreOfTimeRange:fromResult:startIdx:;
+- (void)validateActivityScores;
+- (float)scaleBasedOnFaceForTimeRange:;
+- (void)addSceneSwitchFrequencyConstributionToActivityLevel:;
+- (float)actionScoreInTimeRange:;
+- (void)addSceneClassificationContributionToActivityLevel:;
+- (int)finishAnalysisPass:fpsRate:;
+@end

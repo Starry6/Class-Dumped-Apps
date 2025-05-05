@@ -1,0 +1,38 @@
+@interface GEOWiFiQualityHours : PBCodable
+@property (nonatomic) Q daysCount;
+@property (nonatomic) ^i days;
+@property (nonatomic) Q timeRangesCount;
+@property (nonatomic) ^{GEOWiFiQualityTimeRange=II{?=b1b1}} timeRanges;
+- (void)readAll:;
+- (id)init;
+- (void)dealloc;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (void)addDays:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (unsigned long long)daysCount;
+- (id)days;
+- (void)clearDays;
+- (int)daysAtIndex:;
+- (void)setDays:count:;
+- (id)daysAsString:;
+- (int)StringAsDays:;
+- (unsigned long long)timeRangesCount;
+- (id)timeRanges;
+- (void)clearTimeRanges;
+- (void)addTimeRanges:;
+- (id)timeRangesAtIndex:;
+- (void)setTimeRanges:count:;
++ (BOOL)isValid:;
+@end

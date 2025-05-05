@@ -1,0 +1,36 @@
+@interface PHAssetCreationAdjustmentBakeInOptions : NSObject
+@property (nonatomic) BOOL shouldBakeInIfLivePhotoPlaybackDisabled;
+@property (nonatomic) BOOL shouldBakeInIfLivePhotoMuted;
+@property (nonatomic) BOOL shouldBakeInIfAdjustedByThirdParty;
+@property (nonatomic) BOOL shouldBakeInIfCropped;
+@property (nonatomic) BOOL shouldBakeInIfTimelineTrimmed;
+@property (nonatomic) BOOL shouldBakeInIfPortraitDepthEffectEnabled;
+@property (nonatomic) BOOL shouldBakeInIfContainsPenultimateResources;
+@property (nonatomic) BOOL flattenLivePhotoToStillIfNeeded;
+- (id)initWithXPCDict:;
+- (id)init;
+- (void)setShouldBakeInIfContainsPenultimateResources:;
+- (BOOL)shouldBakeInIfCropped;
+- (id)initWithCoder:;
+- (void)setShouldBakeInIfLivePhotoPlaybackDisabled:;
+- (void)encodeWithCoder:;
+- (BOOL)shouldBakeInIfLivePhotoPlaybackDisabled;
+- (BOOL)shouldBakeInIfLivePhotoMuted;
+- (BOOL)shouldBakeInIfAdjustedByThirdParty;
+- (void)setShouldBakeInIfCropped:;
+- (void)setShouldBakeInIfAdjustedByThirdParty:;
+- (id)description;
+- (BOOL)shouldBakeInIfContainsPenultimateResources;
+- (BOOL)shouldBakeInIfPortraitDepthEffectEnabled;
+- (void)setShouldBakeInIfLivePhotoMuted:;
+- (void)setShouldBakeInIfTimelineTrimmed:;
+- (BOOL)shouldBakeInIfTimelineTrimmed;
+- (void)setShouldBakeInIfPortraitDepthEffectEnabled:;
+- (id)copyWithZone:;
+- (void)encodeToXPCDict:;
+- (id)plRepresentation;
+- (BOOL)flattenLivePhotoToStillIfNeeded;
+- (void)setFlattenLivePhotoToStillIfNeeded:;
++ (BOOL)supportsSecureCoding;
++ (id)adjustmentBakeInOptionsForPublishingOriginals;
+@end

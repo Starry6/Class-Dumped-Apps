@@ -1,0 +1,2 @@
+@interface IESLiveInnerPbRoomUpdateCiInfoApiRoot : GPBRootObject
+@end

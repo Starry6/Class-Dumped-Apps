@@ -1,0 +1,36 @@
+@interface IESIMSuspendWSConnectionChecker : NSObject
+@property (nonatomic) q continuousWSTimeoutTimes;
+@property (nonatomic) double startCheckTimestamp;
+@property (nonatomic) BOOL isWSConnectionSuspend;
+@property (nonatomic) NSObject<OS_dispatch_semaphore> sem;
+@property (nonatomic) q maxContinuousWSRequestTimeoutTimes;
+@property (nonatomic) q maxSuspendCheckInterval;
+@property (nonatomic) q maxForceHttpRequestDuration;
+@property (nonatomic) <IESIMWSConnectionManagerProtocol> wsConnectManager;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setMaxForceHttpRequestDuration:;
+- (long long)continuousWSTimeoutTimes;
+- (void)finishWSConnectionSuspend;
+- (BOOL)isConnectionSuspend;
+- (BOOL)isWSConnectionSuspend;
+- (void)markWSRequestTimeout:;
+- (long long)maxContinuousWSRequestTimeoutTimes;
+- (long long)maxForceHttpRequestDuration;
+- (long long)maxSuspendCheckInterval;
+- (void)p_finishWSConnectionSuspend;
+- (void)setContinuousWSTimeoutTimes:;
+- (void)setIsWSConnectionSuspend:;
+- (void)setMaxContinuousWSRequestTimeoutTimes:;
+- (void)setMaxSuspendCheckInterval:;
+- (void)setStartCheckTimestamp:;
+- (void)setWsConnectManager:;
+- (double)startCheckTimestamp;
+- (id)wsConnectManager;
+- (id)init;
+- (void)setSem:;
+- (void).cxx_destruct;
+- (id)sem;
+@end

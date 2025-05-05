@@ -1,0 +1,34 @@
+@interface AVPictureInPictureSampleBufferDisplayLayerHostView : UIView
+@property (nonatomic) AVPictureInPictureCALayerHostView hostView;
+@property (nonatomic) {CGSize=dd} imageQueueSize;
+@property (nonatomic) {CGSize=dd} contentDimensions;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} lastKnownFrame;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} lastKnownBounds;
+@property (nonatomic) BOOL needsGeometryUpdate;
+@property (nonatomic) BOOL deferringGeometryUpdates;
+@property (nonatomic) I contextId;
+@property (nonatomic) double beginTime;
+- (id)hostView;
+- (id)contentDimensions;
+- (double)beginTime;
+- (void)setContextId:;
+- (unsigned int)contextId;
+- (void)layoutSubviews;
+- (void)setImageQueueSize:;
+- (void)setBeginTime:;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)setContentDimensions:;
+- (id)imageQueueSize;
+- (void)_updateGeometryIfNeeded;
+- (void)setFrame:contentDimensions:imageQueueSize:;
+- (id)lastKnownFrame;
+- (void)setLastKnownFrame:;
+- (id)lastKnownBounds;
+- (void)setLastKnownBounds:;
+- (BOOL)needsGeometryUpdate;
+- (void)setNeedsGeometryUpdate:;
+- (BOOL)isDeferringGeometryUpdates;
+- (void)setDeferringGeometryUpdates:;
++ (Class)layerClass;
+@end

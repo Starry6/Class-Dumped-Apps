@@ -1,0 +1,30 @@
+@interface PHMemoryGenerationOptions : NSObject
+@property (nonatomic) Q reason;
+@property (nonatomic) NSDate date;
+@property (nonatomic) CLLocation location;
+@property (nonatomic) NSArray peopleNames;
+@property (nonatomic) NSArray existingMemories;
+@property (nonatomic) NSArray blockedMemories;
+@property (nonatomic) NSDictionary extraParameters;
+@property (nonatomic) PHPhotoLibrary photoLibrary;
+- (id)photoLibrary;
+- (id)init;
+- (unsigned long long)reason;
+- (void)setPhotoLibrary:;
+- (void)setReason:;
+- (id)date;
+- (id)location;
+- (void)setLocation:;
+- (void).cxx_destruct;
+- (void)setDate:;
+- (id)dictionaryRepresentation;
+- (id)copyWithZone:;
+- (id)peopleNames;
+- (void)setPeopleNames:;
+- (id)existingMemories;
+- (void)setExistingMemories:;
+- (id)blockedMemories;
+- (void)setBlockedMemories:;
+- (id)extraParameters;
+- (void)setExtraParameters:;
+@end

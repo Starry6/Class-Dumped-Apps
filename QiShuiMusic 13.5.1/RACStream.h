@@ -1,0 +1,35 @@
+@interface RACStream : NSObject
+@property (nonatomic) NSString name;
+- (id)skipUntilBlock:;
+- (id)takeUntilBlock:;
+- (id)skipWhileBlock:;
+- (id)takeWhileBlock:;
+- (id)combinePreviousWithStart:reduce:;
+- (id)flattenMap:;
+- (id)mapReplace:;
+- (id)reduceEach:;
+- (id)scanWithStart:reduce:;
+- (id)scanWithStart:reduceWithIndex:;
+- (id)setNameWithFormat:;
+- (id)zipWith:;
+- (id)init;
+- (id)map:;
+- (void)setName:;
+- (id)concat:;
+- (void).cxx_destruct;
+- (id)name;
+- (id)take:;
+- (id)startWith:;
+- (id)ignore:;
+- (id)distinctUntilChanged;
+- (id)filter:;
+- (id)skip:;
+- (id)flatten;
+- (id)bind:;
++ (id)return:;
++ (id)join:block:;
++ (id)zip:;
++ (id)zip:reduce:;
++ (id)empty;
++ (id)concat:;
+@end

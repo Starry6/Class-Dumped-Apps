@@ -1,0 +1,36 @@
+@interface WKFullscreenAnimationController : NSObject
+@property (nonatomic) UIViewController viewController;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} initialFrame;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} finalFrame;
+@property (nonatomic) BOOL animatingIn;
+@property (nonatomic) <UIViewControllerContextTransitioning> context;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) double completionSpeed;
+@property (nonatomic) q completionCurve;
+@property (nonatomic) BOOL wantsInteractiveStart;
+- (void)animateTransition:;
+- (double)transitionDuration:;
+- (void)dealloc;
+- (void)setViewController:;
+- (id)context;
+- (id)viewController;
+- (void)animationEnded:;
+- (void)startInteractiveTransition:;
+- (void).cxx_destruct;
+- (id).cxx_construct;
+- (void)updateWithProgress:;
+- (void)end:;
+- (id)initialFrame;
+- (void)setInitialFrame:;
+- (BOOL)isAnimatingIn;
+- (void)setAnimatingIn:;
+- (void)_createViewsForTransitionContext:;
+- (void)configureInitialAndFinalStatesForTransition:;
+- (void)updateWithProgress:scale:translation:anchor:;
+- (void)updateWithProgress:translation:anchor:;
+- (id)finalFrame;
+- (void)setFinalFrame:;
+@end

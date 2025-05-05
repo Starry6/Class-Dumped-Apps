@@ -1,0 +1,31 @@
+@interface WebHistory : NSObject
+@property (nonatomic) NSArray orderedLastVisitedDays;
+@property (nonatomic) NSInteger historyItemLimit;
+@property (nonatomic) NSInteger historyAgeInDaysLimit;
+- (id)allItems;
+- (id)init;
+- (void)dealloc;
+- (id)_data;
+- (void)addItems:;
+- (void)removeAllItems;
+- (void)removeItems:;
+- (BOOL)loadFromURL:error:;
+- (BOOL)containsURL:;
+- (BOOL)saveToURL:error:;
+- (void)timeZoneChanged:;
+- (id)itemForURL:;
+- (id)orderedLastVisitedDays;
+- (id)orderedItemsLastVisitedOnDay:;
+- (void)setHistoryAgeInDaysLimit:;
+- (int)historyAgeInDaysLimit;
+- (void)setHistoryItemLimit:;
+- (int)historyItemLimit;
+- (void)_sendNotification:entries:;
+- (id)_itemForURLString:;
+- (void)_visitedURL:withTitle:method:wasFailure:;
+- (void)_addVisitedLinksToVisitedLinkStore:;
++ (void)_removeAllVisitedLinks;
++ (void)setOptionalSharedHistory:;
++ (id)optionalSharedHistory;
++ (void)_setVisitedLinkTrackingEnabled:;
+@end

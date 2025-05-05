@@ -1,0 +1,2 @@
+@interface VNCreateTorsoprintRequestConfiguration : VNImageBasedRequestConfiguration
+@end

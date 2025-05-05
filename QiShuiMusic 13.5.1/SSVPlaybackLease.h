@@ -1,0 +1,38 @@
+@interface SSVPlaybackLease : NSObject
+@property (nonatomic) <SSVPlaybackLeaseDelegate> delegate;
+@property (nonatomic) BOOL refreshesAutomatically;
+@property (nonatomic) NSData certificateData;
+@property (nonatomic) NSString certificateURLBagKey;
+- (id)init;
+- (void)dealloc;
+- (id)initWithURLBag:;
+- (id)certificateData;
+- (void)setDelegate:;
+- (void)setCertificateData:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)certificateURLBagKey;
+- (void)setCertificateURLBagKey:;
+- (id)_initSSVPlaybackLease;
+- (id)initWithLeaseConfiguration:;
+- (id)initWithURLBag:leaseType:;
+- (void)beginLeaseWithRequest:completionBlock:;
+- (void)cancelAllAssetRequests;
+- (void)endLease;
+- (void)getAssetWithRequest:completionBlock:;
+- (void)getCertificateDataWithCompletionBlock:;
+- (void)preheatLeaseRequestsWithCompletionBlock:;
+- (BOOL)refreshesAutomatically;
+- (void)refreshLeaseWithRequest:completionBlock:;
+- (void)setRefreshesAutomatically:;
+- (void)updateWithExternalLeaseResponseError:;
+- (id)_addOperationWithRequest:configurationURL:completionBlock:;
+- (void)_cancelRefreshTimer;
+- (void)_endLease;
+- (void)_fireRefreshTimer;
+- (void)_sendLeaseDidEndWithEndReasonType:;
+- (BOOL)_shouldEndLeaseForError:returningEndReasonType:;
+- (void)_startRefreshTimerIfNecessary;
+- (void)_updateForLeaseResponse:error:;
+- (void)_updateWithLeaseResponseError:;
+@end

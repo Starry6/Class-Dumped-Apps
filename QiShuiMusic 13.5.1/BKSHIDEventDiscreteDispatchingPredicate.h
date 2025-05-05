@@ -1,0 +1,30 @@
+@interface BKSHIDEventDiscreteDispatchingPredicate : NSObject
+@property (nonatomic) NSSet senderDescriptors;
+@property (nonatomic) NSSet descriptors;
+@property (nonatomic) NSSet displays;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)displays;
+- (id)descriptors;
+- (id)init;
+- (BOOL)specifiesDescriptor:;
+- (BOOL)containsDescriptor:;
+- (id)_initWithSourceDescriptors:descriptors:;
+- (id)succinctDescriptionBuilder;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)debugDescription;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)succinctDescription;
+- (id)description;
+- (id)mutableCopyWithZone:;
+- (id)descriptionBuilderWithMultilinePrefix:;
+- (BOOL)isEqual:;
+- (id)senderDescriptors;
+- (id)descriptionWithMultilinePrefix:;
+- (id)copyWithZone:;
++ (BOOL)supportsSecureCoding;
+@end

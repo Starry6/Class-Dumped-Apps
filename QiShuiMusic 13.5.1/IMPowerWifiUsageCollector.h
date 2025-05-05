@@ -1,0 +1,32 @@
+@interface IMPowerWifiUsageCollector : NSObject
+@property (nonatomic) BOOL shouldCollectInternalStats;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (void)disconnectedFromAResource_ExternalCollection;
+- (void)dealloc;
+- (void)_notePowerDidChangeForInternalCollection:isOnWifi:;
+- (id)_getExternalLastConnectedDate;
+- (id)_getPowerAndWifiDictionaryForKey:;
+- (BOOL)_isOnPower;
+- (BOOL)connectedToPowerAndWifiForOver20Hours;
+- (double)_getExternalTotalDuration;
+- (void)reconnectToResourceForTotalDurationKey:dateKey:powerWifiDict:;
+- (BOOL)_shouldWriteDownPowerWifiChanges;
+- (BOOL)_isWifiUsable;
+- (void)_setExternalTotalDuration:;
+- (void)_noteWifiLinkDidChangeForInternalCollection:isOnPower:;
+- (void)clearConnectedToPowerWifiOver20Hours;
+- (void)updateConnectedToPowerWifiIntervalIfConnected;
+- (void)cutPowerMonitorBatteryConnectedStateDidChange:;
+- (id)todaysKey;
+- (void)cutWiFiManagerLinkDidChange:context:;
+- (BOOL)shouldCollectInternalStats;
+- (void)_setExternalLastConnectedDate:;
+- (void)disconnectFromResourceForTotalDurationKey:dateKey:powerWifiDict:;
+- (void)reconnectedToBothResources_ExternalCollection;
+- (id)createTodaysStatisticDictionaryIfNeeded;
++ (id)sharedInstance;
+@end

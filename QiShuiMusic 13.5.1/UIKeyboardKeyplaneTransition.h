@@ -1,0 +1,36 @@
+@interface UIKeyboardKeyplaneTransition : NSObject
+@property (nonatomic) UIKBTree keyboard;
+@property (nonatomic) @? completionBlock;
+@property (nonatomic) <UIKeyboardKeyplaneTransitionDelegate> transitionDelegate;
+@property (nonatomic) BOOL initiallyAtEnd;
+@property (nonatomic) double nonInteractiveDuration;
+@property (nonatomic) UIKBKeyViewAnimator keyViewAnimator;
+@property (nonatomic) double startHeight;
+@property (nonatomic) double endHeight;
+- (id)keyViewAnimator;
+- (id)keyboard;
+- (void)dealloc;
+- (void)setCompletionBlock:;
+- (void)removeAllAnimations;
+- (void)setKeyViewAnimator:;
+- (void).cxx_destruct;
+- (id)completionBlock;
+- (void)updateWithProgress:;
+- (void)setKeyboard:;
+- (void)rebuildWithStartKeyplane:startView:endKeyplane:endView:;
+- (void)commitTransitionRebuild;
+- (double)nonInteractiveDuration;
+- (void)runNonInteractivelyWithCompletion:;
+- (void)transitionToFinalState:;
+- (double)startHeight;
+- (double)endHeight;
+- (void)addTransitionView:startFrame:endFrame:;
+- (void)cancelNonInteractiveAnimation;
+- (void)finalizeTransition;
+- (void)finishWithProgress:completionBlock:;
+- (BOOL)canDisplayTransitionFromKeyplane:toKeyplane:;
+- (id)transitionDelegate;
+- (void)setTransitionDelegate:;
+- (BOOL)initiallyAtEnd;
+- (void)setInitiallyAtEnd:;
+@end

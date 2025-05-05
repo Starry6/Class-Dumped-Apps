@@ -1,0 +1,33 @@
+@interface IESECLiveAnchorFlashSaleCreateViewConfig : NSObject
+@property (nonatomic) UIImage image;
+@property (nonatomic) NSString roomID;
+@property (nonatomic) NSString shopID;
+@property (nonatomic) NSString anchorId;
+@property (nonatomic) NSString flashSaleUserId;
+@property (nonatomic) NSString flashSaleUserName;
+@property (nonatomic) double clickTime;
+@property (nonatomic) NSDictionary lastProperties;
+@property (nonatomic) NSString lastCategoryName;
+@property (nonatomic) NSString lastCategoryCids;
+- (id)flashSaleUserId;
+- (id)anchorId;
+- (double)clickTime;
+- (id)flashSaleUserName;
+- (id)lastCategoryCids;
+- (id)lastCategoryName;
+- (id)lastProperties;
+- (void)setAnchorId:;
+- (void)setClickTime:;
+- (void)setFlashSaleUserId:;
+- (void)setFlashSaleUserName:;
+- (void)setLastCategoryCids:;
+- (void)setLastCategoryName:;
+- (void)setLastProperties:;
+- (void)setShopID:;
+- (id)shopID;
+- (void)setImage:;
+- (void).cxx_destruct;
+- (id)image;
+- (id)roomID;
+- (void)setRoomID:;
+@end

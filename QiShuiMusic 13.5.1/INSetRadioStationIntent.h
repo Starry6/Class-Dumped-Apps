@@ -1,0 +1,35 @@
+@interface INSetRadioStationIntent : INIntent
+@property (nonatomic) q radioType;
+@property (nonatomic) NSNumber frequency;
+@property (nonatomic) NSString stationName;
+@property (nonatomic) NSString channel;
+@property (nonatomic) NSNumber presetNumber;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setRadioType:;
+- (long long)radioType;
+- (void)setChannel:;
+- (id)frequency;
+- (id)channel;
+- (void)setFrequency:;
+- (id)_dictionaryRepresentation;
+- (void)_setMetadata:;
+- (id)domain;
+- (void)setDomain:;
+- (id)_metadata;
+- (id)_typedBackingStore;
+- (long long)_intentCategory;
+- (id)_categoryVerb;
+- (void)_redactForMissingPrivacyEntitlementOptions:containingAppBundleId:;
+- (id)verb;
+- (void)setVerb:;
+- (id)parametersByName;
+- (void)setParametersByName:;
+- (id)stationName;
+- (void)setStationName:;
+- (id)presetNumber;
+- (void)setPresetNumber:;
+- (id)initWithRadioType:frequency:stationName:channel:presetNumber:;
+@end

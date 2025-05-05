@@ -1,0 +1,2 @@
+@interface FBSALOToken : NSObject
+@end

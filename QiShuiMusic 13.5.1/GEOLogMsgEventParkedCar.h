@@ -1,0 +1,35 @@
+@interface GEOLogMsgEventParkedCar : PBCodable
+@property (nonatomic) BOOL hasLocation;
+@property (nonatomic) GEOLatLng location;
+@property (nonatomic) BOOL hasLocationUncertainty;
+@property (nonatomic) double locationUncertainty;
+@property (nonatomic) BOOL hasTimestamp;
+@property (nonatomic) double timestamp;
+- (void)readAll:;
+- (BOOL)hasGreenTeaWithValue:;
+- (id)initWithJSON:;
+- (BOOL)hasLocation;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (id)location;
+- (void)setHasTimestamp:;
+- (void)mergeFrom:;
+- (BOOL)hasTimestamp;
+- (void)setTimestamp:;
+- (void)setLocation:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (double)timestamp;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (double)locationUncertainty;
+- (void)setLocationUncertainty:;
+- (void)setHasLocationUncertainty:;
+- (BOOL)hasLocationUncertainty;
++ (BOOL)isValid:;
+@end

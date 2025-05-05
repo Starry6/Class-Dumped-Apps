@@ -1,0 +1,34 @@
+@interface IESLiveRebornOpenAssetNode : NSObject
+@property (nonatomic) NSMutableDictionary pieceValues;
+@property (nonatomic) HTSLiveText templateText;
+@property (nonatomic) q assetID;
+@property (nonatomic) q textAlignment;
+@property (nonatomic) HTSLiveImage borderThumb;
+@property (nonatomic) HTSLiveImage avatarThumb;
+@property (nonatomic) BOOL userNameClips;
+@property (nonatomic) double width;
+@property (nonatomic) double height;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setBorderThumb:;
+- (void)setPieceValues:;
+- (void)setAvatarThumb:;
+- (id)avatarThumb;
+- (id)borderThumb;
+- (id)pieceValues;
+- (void)setTemplateText:;
+- (void)setUserNameClips:;
+- (id)templateText;
+- (BOOL)userNameClips;
+- (void)setWidth:;
+- (double)height;
+- (double)width;
+- (void)setHeight:;
+- (void).cxx_destruct;
+- (void)setAssetID:;
+- (long long)textAlignment;
+- (void)setTextAlignment:;
+- (long long)assetID;
+@end

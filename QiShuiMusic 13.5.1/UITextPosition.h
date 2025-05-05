@@ -1,0 +1,2 @@
+@interface UITextPosition : NSObject
+@end

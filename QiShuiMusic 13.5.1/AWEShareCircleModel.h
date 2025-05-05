@@ -1,0 +1,30 @@
+@interface AWEShareCircleModel : NSObject
+@property (nonatomic) IESIMURLModel coverURL;
+@property (nonatomic) NSString requestID;
+@property (nonatomic) NSString shareUserNickName;
+@property (nonatomic) NSString circleID;
+@property (nonatomic) NSString circleName;
+@property (nonatomic) NSString circleSlogan;
+@property (nonatomic) q memberCount;
+@property (nonatomic) IESIMShareInfoModel shareInfo;
+@property (nonatomic) NSString enterFrom;
+- (void)setMemberCount:;
+- (id)circleID;
+- (id)circleName;
+- (id)circleSlogan;
+- (id)enterFrom;
+- (void)setCircleID:;
+- (void)setCircleName:;
+- (void)setCircleSlogan:;
+- (void)setEnterFrom:;
+- (void)setShareUserNickName:;
+- (id)shareUserNickName;
+- (long long)memberCount;
+- (id)shareInfo;
+- (id)requestID;
+- (void).cxx_destruct;
+- (void)setShareInfo:;
+- (void)setRequestID:;
+- (id)coverURL;
+- (void)setCoverURL:;
+@end

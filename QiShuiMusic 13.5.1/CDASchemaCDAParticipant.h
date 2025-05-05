@@ -1,0 +1,33 @@
+@interface CDASchemaCDAParticipant : SISchemaInstrumentationMessage
+@property (nonatomic) I goodnessScore;
+@property (nonatomic) BOOL hasGoodnessScore;
+@property (nonatomic) NSInteger deviceClass;
+@property (nonatomic) BOOL hasDeviceClass;
+@property (nonatomic) I productType;
+@property (nonatomic) BOOL hasProductType;
+@property (nonatomic) NSData jsonData;
+- (void)setHasDeviceClass:;
+- (void)setProductType:;
+- (BOOL)hasDeviceClass;
+- (int)deviceClass;
+- (unsigned int)productType;
+- (void)setDeviceClass:;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (BOOL)hasProductType;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)setGoodnessScore:;
+- (unsigned int)goodnessScore;
+- (BOOL)hasGoodnessScore;
+- (void)setHasGoodnessScore:;
+- (void)deleteGoodnessScore;
+- (void)deleteDeviceClass;
+- (void)setHasProductType:;
+- (void)deleteProductType;
+@end

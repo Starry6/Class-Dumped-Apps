@@ -1,0 +1,4 @@
+@interface WBSSavedPasswordStore : WBSSavedAccountStore
+@property (nonatomic) NSSet highLevelDomainsOfAllSavedPasswordsExcludingNeverSaveMarkerPasswords;
+- (id)highLevelDomainsOfAllSavedPasswordsExcludingNeverSaveMarkerPasswords;
+@end

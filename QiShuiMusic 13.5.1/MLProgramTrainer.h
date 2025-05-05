@@ -1,0 +1,30 @@
+@interface MLProgramTrainer : NSObject
+@property (nonatomic) <MLProgramInternal> program;
+@property (nonatomic) MLProgramContext context;
+@property (nonatomic) MLProgramEvaluator evaluator;
+@property (nonatomic) <MLFeatureProvider> currentUpdatedWeights;
+@property (nonatomic) double learningRate;
+@property (nonatomic) <MLModeling> inferenceModel;
+- (id)evaluator;
+- (id)context;
+- (void).cxx_destruct;
+- (double)learningRate;
+- (void)setContext:;
+- (id)program;
+- (void)setEvaluator:;
+- (void)setProgram:;
+- (void)setLearningRate:;
+- (id)inferenceModel;
+- (id)initWithProgram:learningRate:error:;
+- (id)trainUsingTrainingData:error:;
+- (id)trainUsingTrainingData:evaluationMetricNames:error:;
+- (id)evaluateUsingTestData:error:;
+- (id)evaluateUsingTestData:evaluationMetricNames:error:;
+- (id)evaluateUsingTestData:evaluationMetricNames:evaluateOnTrainFunction:error:;
+- (id)attachLearningRateToFeatures:;
+- (id)flattenFeatures:orderedFeatures:;
+- (id)orderedTrainableWeightsNames;
+- (id)copyCurrentTrainingDelta;
+- (id)currentUpdatedWeights;
+- (void)setCurrentUpdatedWeights:;
+@end

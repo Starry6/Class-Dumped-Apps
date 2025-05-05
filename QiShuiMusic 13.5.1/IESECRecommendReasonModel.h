@@ -1,0 +1,32 @@
+@interface IESECRecommendReasonModel : MTLModel
+@property (nonatomic) q type;
+@property (nonatomic) NSString typeName;
+@property (nonatomic) NSString content;
+@property (nonatomic) IESECURLModel cover;
+@property (nonatomic) NSString rankID;
+@property (nonatomic) NSString uid;
+@property (nonatomic) NSNumber rankNo;
+@property (nonatomic) NSString link;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)cover;
+- (id)rankID;
+- (id)rankNo;
+- (void)setCover:;
+- (void)setRankID:;
+- (void)setRankNo:;
+- (id)link;
+- (id)content;
+- (id)typeName;
+- (void)setContent:;
+- (void)setTypeName:;
+- (id)uid;
+- (void)setLink:;
+- (void)setUid:;
+- (void)setType:;
+- (long long)type;
+- (void).cxx_destruct;
++ (id)JSONKeyPathsByPropertyKey;
+@end

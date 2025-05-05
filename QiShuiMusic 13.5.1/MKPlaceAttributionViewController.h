@@ -1,0 +1,35 @@
+@interface MKPlaceAttributionViewController : MKPlaceSectionViewController
+@property (nonatomic) MKPlaceAttributionCell attributionCell;
+@property (nonatomic) MKMapItem mapItem;
+@property (nonatomic) NSAttributedString attributionString;
+@property (nonatomic) _MKMapItemAttribution attribution;
+@property (nonatomic) NSArray urlStrings;
+@property (nonatomic) <_MKInfoCardAnalyticsDelegate> analyticsDelegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) BOOL resizableViewsDisabled;
+- (id)mapItem;
+- (void)setAttribution:;
+- (void)setMapItem:;
+- (BOOL)_canShowWhileLocked;
+- (id)attribution;
+- (void).cxx_destruct;
+- (void)loadView;
+- (void)viewDidLoad;
+- (void)infoCardThemeChanged;
+- (BOOL)resizableViewsDisabled;
+- (void)setResizableViewsDisabled:;
+- (id)attributionString;
+- (void)setAttributionString:;
+- (id)analyticsDelegate;
+- (void)setAnalyticsDelegate:;
+- (void)openURL;
+- (void)updateLogo;
+- (id)infoAttributionString;
+- (id)urlStrings;
+- (void)setUrlStrings:;
+- (id)attributionCell;
+- (void)setAttributionCell:;
+@end

@@ -1,0 +1,32 @@
+@interface NWPathEvaluator : NSObject
+@property (nonatomic) NSObject<OS_nw_path_evaluator> internalEvaluator;
+@property (nonatomic) NWPath internalPath;
+@property (nonatomic) NWParameters parameters;
+@property (nonatomic) NWPath path;
+@property (nonatomic) NWEndpoint endpoint;
+- (id)path;
+- (id)init;
+- (void)dealloc;
+- (void)triggerPathAgentsIncludingVoluntary:withCompletionHandler:;
+- (id)internalEvaluator;
+- (id)copyPath;
+- (void)setInternalPath:;
+- (unsigned long long)hash;
+- (id)parameters;
+- (void)triggerVoluntaryPathAgentsWithCompletionHandler:;
+- (id)internalPath;
+- (id)initWithEndpoint:parameters:;
+- (id)initWithEvaluator:parameters:;
+- (void).cxx_destruct;
+- (void)satisfyPathAgentsWithCompletionHandler:;
+- (id)endpoint;
+- (BOOL)matchesEndpoint:parameters:;
+- (id)initWithListenParameters:;
+- (BOOL)isEqual:;
+- (BOOL)requestNexus;
+- (id)initWithBrowseDescriptor:parameters:;
++ (BOOL)automaticallyNotifiesObserversForKey:;
++ (void)savePathEvaluator:;
++ (id)sharedDefaultEvaluator;
++ (id)copySavedPathEvaluatorForEndpoint:parameters:;
+@end

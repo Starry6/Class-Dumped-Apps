@@ -1,0 +1,33 @@
+@interface INKeyImageExtraction : NSObject
+@property (nonatomic) q _imageTypeToStore;
+@property (nonatomic) INImage keyImage;
+@property (nonatomic) NSString proxyIdentifier;
+@property (nonatomic) NSDictionary keyImagesByType;
+@property (nonatomic) NSString serviceIdentifier;
+@property (nonatomic) Q servicePriority;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (unsigned long long)servicePriority;
+- (id)serviceIdentifier;
+- (id)initWithCoder:;
+- (void)retrieveImageWithIdentifier:completion:;
+- (id)storeImage:scaled:qualityOfService:storeType:error:;
+- (void)encodeWithCoder:;
+- (BOOL)canStoreImage:;
+- (void).cxx_destruct;
+- (void)purgeImageWithIdentifier:completion:;
+- (id)storeImageSynchronously:error:;
+- (id)retrieveImageSynchronouslyForIdentifier:error:;
+- (void)setKeyImage:;
+- (id)keyImage;
+- (id)keyImagesByType;
+- (long long)_imageTypeToStore;
+- (void)_setImageTypeToStore:;
+- (id)proxyIdentifier;
+- (void)setProxyIdentifier:;
+- (void)setKeyImagesByType:;
++ (BOOL)supportsSecureCoding;
+@end

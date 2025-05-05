@@ -1,0 +1,30 @@
+@interface CNSchedulerProvider : NSObject
+@property (nonatomic) @? serialSchedulerProvider;
+@property (nonatomic) @? synchronousSerialSchedulerProvider;
+@property (nonatomic) @? readerWriterSchedulerProvider;
+@property (nonatomic) <CNScheduler> backgroundScheduler;
+@property (nonatomic) <CNScheduler> mainThreadScheduler;
+@property (nonatomic) <CNScheduler> inlineScheduler;
+@property (nonatomic) <CNScheduler> immediateScheduler;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)backgroundScheduler;
+- (id)mainThreadScheduler;
+- (id)newSynchronousSerialSchedulerWithName:;
+- (id)serialSchedulerProvider;
+- (id)readerWriterSchedulerProvider;
+- (id)newReaderWriterSchedulerWithName:;
+- (id)synchronousSerialSchedulerProvider;
+- (id)inlineScheduler;
+- (id)immediateScheduler;
+- (id)initWithBackgroundScheduler:mainThreadScheduler:inlineScheduler:immediateScheduler:serialSchedulerProvider:synchronousSerialSchedulerProvider:readerWriterSchedulerProvider:;
+- (id)initWithBackgroundScheduler:mainThreadScheduler:immediateScheduler:serialSchedulerProvider:synchronousSerialSchedulerProvider:readerWriterSchedulerProvider:;
+- (void).cxx_destruct;
+- (id)newSerialSchedulerWithName:;
+- (id)backgroundSchedulerWithQualityOfService:;
++ (id)providerWithBackgroundConcurrencyLimit:;
++ (id)makeDefaultProvider;
++ (id)defaultProvider;
+@end

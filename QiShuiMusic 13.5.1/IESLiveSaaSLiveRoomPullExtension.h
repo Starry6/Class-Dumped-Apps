@@ -1,0 +1,37 @@
+@interface IESLiveSaaSLiveRoomPullExtension : MTLModel
+@property (nonatomic) IESLiveSaaSLiveRoomPullClip gameClip;
+@property (nonatomic) IESLiveSaaSLiveRoomPullClip cameraClip;
+@property (nonatomic) NSInteger cameraHidden;
+@property (nonatomic) NSString ts;
+@property (nonatomic) q refresh;
+@property (nonatomic) NSInteger displayMode;
+@property (nonatomic) NSInteger gameHidden;
+@property (nonatomic) NSString gameRoomId;
+@property (nonatomic) NSInteger layout;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (int)cameraHidden;
+- (id)gameClip;
+- (int)gameHidden;
+- (id)gameRoomId;
+- (void)setCameraHidden:;
+- (void)setGameClip:;
+- (void)setGameHidden:;
+- (void)setGameRoomId:;
+- (long long)refresh;
+- (void)setRefresh:;
+- (int)displayMode;
+- (id)ts;
+- (void)setLayout:;
+- (void)setDisplayMode:;
+- (int)layout;
+- (void).cxx_destruct;
+- (void)setTs:;
+- (id)cameraClip;
+- (void)setCameraClip:;
++ (id)cameraClipJSONTransformer;
++ (id)gameClipJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

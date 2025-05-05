@@ -1,0 +1,31 @@
+@interface NEFilterSocketFlow : NEFilterFlow
+@property (nonatomic) NWEndpoint localEndpoint;
+@property (nonatomic) NWEndpoint remoteEndpoint;
+@property (nonatomic) NSString remoteHostname;
+@property (nonatomic) NSInteger socketFamily;
+@property (nonatomic) NSInteger socketType;
+@property (nonatomic) NSInteger socketProtocol;
+- (id)descriptionWithIndent:options:;
+- (id)identifier;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (id)remoteHostname;
+- (void).cxx_destruct;
+- (id)identifierString;
+- (id)copyWithZone:;
+- (id)localEndpoint;
+- (void)setLocalEndpoint:;
+- (id)remoteEndpoint;
+- (BOOL)createNewFlowReply:controlSocket:verdict:context:;
+- (BOOL)createDataReply:controlSocket:direction:verdict:context:;
+- (BOOL)createDataCompleteReply:controlSocket:direction:verdict:context:;
+- (void)setRemoteEndpoint:;
+- (void)setRemoteHostname:;
+- (int)socketFamily;
+- (void)setSocketFamily:;
+- (int)socketType;
+- (void)setSocketType:;
+- (int)socketProtocol;
+- (void)setSocketProtocol:;
++ (BOOL)supportsSecureCoding;
+@end

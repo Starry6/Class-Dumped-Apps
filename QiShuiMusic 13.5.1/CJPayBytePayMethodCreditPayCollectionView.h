@@ -1,0 +1,30 @@
+@interface CJPayBytePayMethodCreditPayCollectionView : UIView
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) NSIndexPath selectedIndexPath;
+@property (nonatomic) NSArray creditPayMethods;
+@property (nonatomic) @? clickBlock;
+@property (nonatomic) BOOL scrollAnimated;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)clickBlock;
+- (id)creditPayMethods;
+- (BOOL)scrollAnimated;
+- (void)setClickBlock:;
+- (void)setCreditPayMethods:;
+- (void)setScrollAnimated:;
+- (void)reloadData;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (id)initWithFrame:;
+- (void)setCollectionView:;
+- (void).cxx_destruct;
+- (void)setHidden:;
+- (long long)numberOfSectionsInCollectionView:;
+- (id)collectionView;
+- (id)selectedIndexPath;
+- (void)setSelectedIndexPath:;
+- (void)setupUI;
+@end

@@ -1,0 +1,35 @@
+@interface XCTTargetSession : NSObject
+@property (nonatomic) NSObject<OS_dispatch_queue> queue;
+@property (nonatomic) NSXPCConnection daemonConnection;
+@property (nonatomic) NSXPCListener clientListener;
+@property (nonatomic) <XCTConnectionAccepting> connectionHandler;
+@property (nonatomic) @? registrationHandler;
+@property (nonatomic) BOOL targetIsRegistering;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setDaemonConnection:;
+- (id)daemonConnection;
+- (id)connectionHandler;
+- (void)setConnectionHandler:;
+- (BOOL)listener:shouldAcceptNewConnection:;
+- (void).cxx_destruct;
+- (void)connect;
+- (void)setQueue:;
+- (id)queue;
+- (void)_XCT_requestEndpointWithAutomationSupportLibraryPath:protocolVersion:reply:;
+- (BOOL)isInternallyEntitledConnection:;
+- (id)initWithServiceName:registrationHandler:;
+- (id)initWithDaemonConnection:registrationHandler:;
+- (void)registerForBootstrap;
+- (void)_on_queue_connect;
+- (BOOL)_on_queue_loadAutomationSupportLibraryFromPath:error:;
+- (void)_on_queue_startListeningForClientConnections;
+- (id)_on_queue_getListenerEndpoint;
+- (id)clientListener;
+- (void)setClientListener:;
+- (id)registrationHandler;
+- (BOOL)targetIsRegistering;
+- (void)setTargetIsRegistering:;
+@end

@@ -1,0 +1,31 @@
+@interface IESIMBaseListViewModel : AWEBaseViewModel
+@property (nonatomic) NSArray sectionViewModelsArray;
+@property (nonatomic) BOOL didFinishNetworkRequest;
+@property (nonatomic) <IESIMBaseListContainerContext> containerContext;
+@property (nonatomic) q dataState;
+@property (nonatomic) NSString errorMessage;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)insertSectionViewModel:atIndex:;
+- (void)appendSectionViewModels:;
+- (void)appendSectionViewModels:animated:;
+- (BOOL)didFinishNetworkRequest;
+- (void)insertSectionViewModel:atIndex:animated:;
+- (void)removeSectionViewModels:;
+- (void)removeSectionViewModels:animated:;
+- (void)replaceBySectionViewModels:;
+- (id)sectionViewModelsArray;
+- (void)setDataState:;
+- (void)setDidFinishNetworkRequest:;
+- (void)setSectionViewModelsArray:;
+- (void)updateBySectionViewModels:;
+- (void)updateBySectionViewModels:animated:;
+- (id)errorMessage;
+- (void).cxx_destruct;
+- (id)containerContext;
+- (void)setContainerContext:;
+- (void)setErrorMessage:;
+- (long long)dataState;
+@end

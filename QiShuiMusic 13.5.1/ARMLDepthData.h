@@ -1,0 +1,36 @@
+@interface ARMLDepthData : NSObject
+@property (nonatomic) double timestamp;
+@property (nonatomic) ^{__CVBuffer=} depthBuffer;
+@property (nonatomic) {CGSize=dd} depthBufferSize;
+@property (nonatomic) q source;
+@property (nonatomic) ^{__CVBuffer=} confidenceBuffer;
+@property (nonatomic) ^{__CVBuffer=} confidenceMap;
+@property (nonatomic) ^{__CVBuffer=} singleFrameDepthBuffer;
+@property (nonatomic) ^{__CVBuffer=} singleFrameConfidenceBuffer;
+@property (nonatomic) ^{__CVBuffer=} normalsBuffer;
+@property (nonatomic) ARImageData sourceImageData;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (long long)source;
+- (double)timestamp;
+- (id)description;
+- (id)confidenceMap;
+- (void)setConfidenceMap:;
+- (id)initWithTimestamp:depthBuffer:source:;
+- (id)initWithTimestamp:depthBuffer:confidenceBuffer:source:;
+- (id)singleFrameDepthBuffer;
+- (void)setSingleFrameDepthBuffer:;
+- (id)singleFrameConfidenceBuffer;
+- (void)setSingleFrameConfidenceBuffer:;
+- (void)setNormalsBuffer:;
+- (id)depthBufferSize;
+- (id)depthBuffer;
+- (id)confidenceBuffer;
+- (id)normalsBuffer;
+- (id)sourceImageData;
+- (void)setSourceImageData:;
+@end

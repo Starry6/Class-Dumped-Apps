@@ -1,0 +1,30 @@
+@interface IESIMBaseListFlowLayout : UICollectionViewFlowLayout
+@property (nonatomic) NSMutableArray decorationAttributes;
+@property (nonatomic) NSMutableArray deletedIndexPaths;
+@property (nonatomic) NSMutableArray insertedIndexPaths;
+@property (nonatomic) <IESIMBaseListFlowLayoutDelegate> baseDelegate;
+- (void)setDeletedIndexPaths:;
+- (void)setInsertedIndexPaths:;
+- (BOOL)shouldStickHeaderAtSection:;
+- (id)layoutAttributesForElementsInRect:;
+- (id)init;
+- (id)layoutAttributesForDecorationViewOfKind:atIndexPath:;
+- (void)prepareLayout;
+- (id)layoutAttributesForSupplementaryViewOfKind:atIndexPath:;
+- (id)insertedIndexPaths;
+- (id)indexPathsToInsertForDecorationViewOfKind:;
+- (BOOL)shouldInvalidateLayoutForBoundsChange:;
+- (id)indexPathsToInsertForSupplementaryViewOfKind:;
+- (id)indexPathsToDeleteForSupplementaryViewOfKind:;
+- (id)indexPathsToDeleteForDecorationViewOfKind:;
+- (void).cxx_destruct;
+- (id)deletedIndexPaths;
+- (void)prepareForCollectionViewUpdates:;
+- (void)finalizeCollectionViewUpdates;
+- (id)initialLayoutAttributesForAppearingSupplementaryElementOfKind:atIndexPath:;
+- (id)finalLayoutAttributesForDisappearingSupplementaryElementOfKind:atIndexPath:;
+- (id)decorationAttributes;
+- (void)setDecorationAttributes:;
+- (id)baseDelegate;
+- (void)setBaseDelegate:;
+@end

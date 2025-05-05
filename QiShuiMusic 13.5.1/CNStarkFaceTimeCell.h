@@ -1,0 +1,30 @@
+@interface CNStarkFaceTimeCell : CNContactCell
+@property (nonatomic) UILabel faceTimeLabel;
+@property (nonatomic) CNStarkActionView actionView;
+@property (nonatomic) <CNPropertyCellDelegate> delegate;
+@property (nonatomic) NSDictionary labelTextAttributes;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithStyle:reuseIdentifier:;
+- (void)setDelegate:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setSeparatorStyle:;
+- (void)didUpdateFocusInContext:withAnimationCoordinator:;
+- (id)actionView;
+- (void)setLabelTextAttributes:;
+- (id)variableConstraints;
+- (id)constantConstraints;
+- (void)performDefaultAction;
+- (void)_cnui_applyContactStyle;
+- (id)labelTextAttributes;
+- (id)faceTimeLabel;
+- (void)actionViewTapped:;
+- (BOOL)supportsTintColorValue;
+- (BOOL)shouldShowStar;
+- (void)updateTransportButtons;
+- (void)setFaceTimeLabel:;
++ (BOOL)requiresConstraintBasedLayout;
+@end

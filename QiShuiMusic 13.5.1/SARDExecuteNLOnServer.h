@@ -1,0 +1,38 @@
+@interface SARDExecuteNLOnServer : SABaseCommand
+@property (nonatomic) NSArray aceDelegatedUserDialogActList;
+@property (nonatomic) NSString directAction;
+@property (nonatomic) NSDictionary preITNRecognitionSausageMap;
+@property (nonatomic) SASRecognition recognitionSausage;
+@property (nonatomic) NSDictionary recognitionSausageMap;
+@property (nonatomic) NSDictionary requestExecutionParameters;
+@property (nonatomic) NSString requestType;
+@property (nonatomic) NSString resultCandidateId;
+@property (nonatomic) NSString utterance;
+@property (nonatomic) NSString aceId;
+@property (nonatomic) NSString refId;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)requestType;
+- (void)setRequestType:;
+- (id)groupIdentifier;
+- (BOOL)requiresResponse;
+- (id)encodedClassName;
+- (id)utterance;
+- (void)setUtterance:;
+- (id)resultCandidateId;
+- (void)setResultCandidateId:;
+- (id)directAction;
+- (void)setDirectAction:;
+- (id)aceDelegatedUserDialogActList;
+- (void)setAceDelegatedUserDialogActList:;
+- (id)preITNRecognitionSausageMap;
+- (void)setPreITNRecognitionSausageMap:;
+- (id)recognitionSausage;
+- (void)setRecognitionSausage:;
+- (id)recognitionSausageMap;
+- (void)setRecognitionSausageMap:;
+- (id)requestExecutionParameters;
+- (void)setRequestExecutionParameters:;
+@end

@@ -1,0 +1,34 @@
+@interface CTStewieEmergencyTextMessage : NSObject
+@property (nonatomic) q conversationID;
+@property (nonatomic) q sequenceNum;
+@property (nonatomic) NSString text;
+@property (nonatomic) q incomingTextNotifyOption;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setText:;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (long long)conversationID;
+- (id)text;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (double)estimatedSendTime;
+- (void)setConversationID:;
+- (id)initWithConversationIDInternal:sequenceNum:emergencyText:maxTextLength:error:;
+- (id)initWithConversationID:sequenceNum:emergencyText:error:;
+- (id)initIncomingTextMessageWithConversationID:sequenceNum:emergencyText:notifyOption:error:;
+- (BOOL)isEqualToEmergencyTextMessage:;
+- (long long)sequenceNum;
+- (void)setSequenceNum:;
+- (long long)incomingTextNotifyOption;
+- (void)setIncomingTextNotifyOption:;
++ (BOOL)supportsSecureCoding;
++ (long long)maxLengthInBytesForOutgoingText;
++ (long long)maxLengthInBytesForIncomingText;
++ (long long)maxSequenceNum;
++ (double)estimatedSendTimeForEmergencyText:;
+@end

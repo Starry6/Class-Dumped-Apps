@@ -1,0 +1,32 @@
+@interface CUNetLinkManager : NSObject
+@property (nonatomic) NSObject<OS_dispatch_queue> dispatchQueue;
+@property (nonatomic) @? invalidationHandler;
+@property (nonatomic) NSString label;
+- (void)_updateARP;
+- (void)_update;
+- (id)init;
+- (void)_updateEndpoints;
+- (void)dealloc;
+- (void)_updateEndpoint:state:;
+- (id)descriptionWithLevel:;
+- (void)_invalidated;
+- (void)_monitorEnsureStopped;
+- (void)_updateNDP;
+- (id)dispatchQueue;
+- (void)_monitorSetupSocket:;
+- (void)setDispatchQueue:;
+- (void)setLabel:;
+- (id)label;
+- (void)_monitorEnsureStarted;
+- (void)_invalidate;
+- (void).cxx_destruct;
+- (void)_monitorReadPacket:;
+- (void)_monitorSendPacketToEndpoint:;
+- (id)invalidationHandler;
+- (void)removeEndpoint:;
+- (void)setInvalidationHandler:;
+- (id)description;
+- (void)invalidate;
+- (void)activate;
+- (void)addEndpoint:;
+@end

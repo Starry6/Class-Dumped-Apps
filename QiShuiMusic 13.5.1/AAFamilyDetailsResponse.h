@@ -1,0 +1,32 @@
+@interface AAFamilyDetailsResponse : AAResponse
+@property (nonatomic) NSArray members;
+@property (nonatomic) AAFamilyMember organizer;
+@property (nonatomic) AAFamilyMember me;
+@property (nonatomic) NSArray invites;
+@property (nonatomic) NSArray pendingMembers;
+@property (nonatomic) q memberCount;
+@property (nonatomic) q pendingMemberCount;
+@property (nonatomic) q pendingInviteCount;
+@property (nonatomic) BOOL canAddMembers;
+@property (nonatomic) BOOL canAddChildMembers;
+@property (nonatomic) NSString addMemberInstructions;
+@property (nonatomic) NSString childAccountPrompt;
+@property (nonatomic) NSString childAccountButtonTitle;
+@property (nonatomic) NSArray firstNames;
+- (id)members;
+- (long long)pendingMemberCount;
+- (id)me;
+- (long long)memberCount;
+- (long long)pendingInviteCount;
+- (BOOL)canAddMembers;
+- (id)childAccountPrompt;
+- (id)childAccountButtonTitle;
+- (id)invites;
+- (id)organizer;
+- (id)initWithHTTPResponse:data:;
+- (BOOL)canAddChildMembers;
+- (void).cxx_destruct;
+- (id)firstNames;
+- (id)pendingMembers;
+- (id)addMemberInstructions;
+@end

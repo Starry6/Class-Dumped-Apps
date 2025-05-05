@@ -1,0 +1,33 @@
+@interface CEMMediaSettingsDeclaration : CEMConfigurationBase
+@property (nonatomic) NSNumber payloadAllowBookstore;
+@property (nonatomic) NSNumber payloadAllowBookstoreErotica;
+@property (nonatomic) NSNumber payloadAllowEnterpriseBookBackup;
+@property (nonatomic) NSNumber payloadAllowEnterpriseBookMetadataSync;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (BOOL)multipleAllowed;
+- (BOOL)mustBeSupervised;
+- (int)activationLevel;
+- (id)assetReferences;
+- (BOOL)loadPayload:error:;
+- (id)serializePayloadWithAssetProviders:;
+- (id)payloadAllowBookstore;
+- (void)setPayloadAllowBookstore:;
+- (id)payloadAllowBookstoreErotica;
+- (void)setPayloadAllowBookstoreErotica:;
+- (id)payloadAllowEnterpriseBookBackup;
+- (void)setPayloadAllowEnterpriseBookBackup:;
+- (id)payloadAllowEnterpriseBookMetadataSync;
+- (void)setPayloadAllowEnterpriseBookMetadataSync:;
++ (id)profileType;
++ (id)buildRequiredOnlyWithIdentifier:;
++ (id)registeredClassName;
++ (id)registeredIdentifier;
++ (id)allowedPayloadKeys;
++ (id)restrictionPayloadKeys;
++ (id)buildWithIdentifier:withAllowBookstore:withAllowBookstoreErotica:withAllowEnterpriseBookBackup:withAllowEnterpriseBookMetadataSync:;
+@end

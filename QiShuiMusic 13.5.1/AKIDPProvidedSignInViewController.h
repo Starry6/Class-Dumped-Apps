@@ -1,0 +1,31 @@
+@interface AKIDPProvidedSignInViewController : UIViewController
+@property (nonatomic) AKIDPHandler idpHandler;
+@property (nonatomic) UIImageView secureIconView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIStackView titleStackView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) WKWebView webView;
+- (void)setTitleLabel:;
+- (id)webView;
+- (void).cxx_destruct;
+- (void)viewDidAppear:;
+- (void)viewWillAppear:;
+- (void)loadView;
+- (id)titleLabel;
+- (void)viewDidLoad;
+- (id)titleStackView;
+- (void)setTitleStackView:;
+- (void)_cancelBarButtonPressed:;
+- (void)IDPHandler:didStartLoadingPageInWebView:;
+- (void)IDPHandler:didFinishLoadingPageInWebView:;
+- (id)initWithIDPHandler:;
+- (void)setupTitleView;
+- (void)_setNavigationTitle:;
+- (id)idpHandler;
+- (void)setIdpHandler:;
+- (id)secureIconView;
+- (void)setSecureIconView:;
+@end

@@ -1,0 +1,2 @@
+@interface AVCompositionTrackInternal : NSObject
+@end

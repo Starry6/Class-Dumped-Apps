@@ -1,0 +1,36 @@
+@interface CRCodingUtilities : NSObject
++ (void)appendCodable:toData:;
++ (void)appendBool:toData:;
++ (void)appendInteger:toData:;
++ (void)appendUInteger:toData:;
++ (void)appendFloat:toData:;
++ (void)appendCGFloat:toData:;
++ (void)appendPoint:toData:;
++ (void)appendSize:toData:;
++ (void)appendRect:toData:;
++ (void)appendRange:toData:;
++ (id)encodingDataForCodable:;
++ (id)encodingDataForBool:;
++ (id)encodingDataForInteger:;
++ (id)encodingDataForUInteger:;
++ (id)encodingDataForFloat:;
++ (id)encodingDataForCGFloat:;
++ (id)encodingDataForPoint:;
++ (id)encodingDataForSize:;
++ (id)encodingDataForRect:;
++ (id)encodingDataForRange:;
++ (id)objectDataFromEncodingData:offset:;
++ (BOOL)boolFromEncodingData:offset:;
++ (long long)integerFromEncodingData:offset:;
++ (unsigned long long)unsignedIntegerFromEncodingData:offset:;
++ (float)floatFromEncodingData:offset:;
++ (double)cgFloatFromEncodingData:offset:;
++ (id)pointFromEncodingData:offset:;
++ (id)sizeFromEncodingData:offset:;
++ (id)rectFromEncodingData:offset:;
++ (id)rangeFromEncodingData:offset:;
++ (id)ddScannerResultFromEncodingData:offset:;
++ (id)stringFromEncodingData:offset:;
++ (id)arrayFromEncodingData:offset:objectProviderBlock:;
++ (BOOL)checkValidRange:forDataLength:;
+@end

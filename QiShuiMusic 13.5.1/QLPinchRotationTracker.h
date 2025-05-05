@@ -1,0 +1,36 @@
+@interface QLPinchRotationTracker : NSObject
+@property (nonatomic) {CGPoint=dd} anchorPoint;
+@property (nonatomic) {CGPoint=dd} trackedCenter;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} trackedBounds;
+@property (nonatomic) {CGAffineTransform=dddddd} trackedTransform;
+@property (nonatomic) {_QLDismissGestureTrackingVelocity=dddd} trackedVelocity;
+@property (nonatomic) double finalAnimationDuration;
+@property (nonatomic) double finalAnimationSpringDamping;
+@property (nonatomic) double dismissalProgress;
+@property (nonatomic) BOOL shouldFinishDismissal;
+@property (nonatomic) double targetZoom;
+@property (nonatomic) double minimumZoomForDismissal;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (id)anchorPoint;
+- (void)update;
+- (double)dismissalProgress;
+- (BOOL)shouldFinishDismissal;
+- (id)trackedCenter;
+- (id)trackedBounds;
+- (id)trackedTransform;
+- (id)trackedVelocity;
+- (double)finalAnimationDuration;
+- (double)finalAnimationSpringDamping;
+- (void)startTrackingCenter:bounds:transform:withInitialGestureLocation:;
+- (void)trackGestureLocation:;
+- (void)trackScale:;
+- (void)trackRotation:;
+- (double)targetZoom;
+- (void)setTargetZoom:;
+- (double)minimumZoomForDismissal;
+- (void)setMinimumZoomForDismissal:;
+@end

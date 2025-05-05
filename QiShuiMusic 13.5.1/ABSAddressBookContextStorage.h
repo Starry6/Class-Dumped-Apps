@@ -1,0 +1,37 @@
+@interface ABSAddressBookContextStorage : NSObject
+@property (nonatomic) NSMutableDictionary deletedMemberships;
+@property (nonatomic) NSMutableDictionary addedMemberships;
+@property (nonatomic) NSMutableDictionary revertedRecords;
+@property (nonatomic) BOOL hasUnsavedChanges;
+@property (nonatomic) NSMutableDictionary records;
+@property (nonatomic) NSMutableDictionary deletedRecords;
+@property (nonatomic) NSMutableArray insertedRecords;
+@property (nonatomic) NSMutableDictionary updatedRecords;
+@property (nonatomic) NSArray recordsWithPendingMembershipAdditions;
+@property (nonatomic) NSArray recordsWithPendingMembershipDeletions;
+- (id)records;
+- (id)deletedRecords;
+- (id)init;
+- (id)updatedRecords;
+- (BOOL)addRecord:;
+- (BOOL)hasUnsavedChanges;
+- (void).cxx_destruct;
+- (void)revert;
+- (BOOL)recordUpdated:;
+- (id)cnImplFetched:creationBlock:;
+- (id)recordFetched:;
+- (BOOL)deleteRecord:;
+- (BOOL)addMemberRecord:toRecord:;
+- (BOOL)removeMemberRecord:fromRecord:;
+- (id)recordsWithPendingMembershipAdditions;
+- (id)recordsWithPendingMembershipDeletions;
+- (id)addedMembersForRecord:;
+- (id)removedMembersForRecord:;
+- (void)_resetIncludingLivingRecords:;
+- (void)commitPendingChanges;
+- (id)insertedRecords;
+- (void)setHasUnsavedChanges:;
+- (id)deletedMemberships;
+- (id)addedMemberships;
+- (id)revertedRecords;
+@end

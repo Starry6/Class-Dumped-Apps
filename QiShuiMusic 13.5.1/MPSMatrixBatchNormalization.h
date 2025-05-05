@@ -1,0 +1,37 @@
+@interface MPSMatrixBatchNormalization : MPSMatrixUnaryKernel
+@property (nonatomic) NSInteger neuronType;
+@property (nonatomic) float neuronA;
+@property (nonatomic) float neuronB;
+@property (nonatomic) float neuronC;
+@property (nonatomic) Q sourceNumberOfFeatureVectors;
+@property (nonatomic) Q sourceInputFeatureChannels;
+@property (nonatomic) float epsilon;
+@property (nonatomic) BOOL computeStatistics;
+- (int)neuronType;
+- (id)initWithCoder:device:;
+- (id)copyWithZone:device:;
+- (float)neuronParameterB;
+- (void)setEpsilon:;
+- (void)setNeuronType:parameterA:parameterB:parameterC:;
+- (id)debugDescription;
+- (float)neuronParameterA;
+- (float)epsilon;
+- (void)setNeuronType:;
+- (void)encodeWithCoder:;
+- (float)neuronParameterC;
+- (id)initWithDevice:;
+- (void)setSourceInputFeatureChannels:;
+- (float)neuronA;
+- (float)neuronB;
+- (float)neuronC;
+- (BOOL)computeStatistics;
+- (unsigned long long)sourceNumberOfFeatureVectors;
+- (void)setSourceNumberOfFeatureVectors:;
+- (unsigned long long)sourceInputFeatureChannels;
+- (void)setNeuronA:;
+- (void)setNeuronB:;
+- (void)setNeuronC:;
+- (void)encodeToCommandBuffer:inputMatrix:meanVector:varianceVector:gammaVector:betaVector:resultMatrix:;
+- (void)setComputeStatistics:;
++ (id)libraryInfo:;
+@end

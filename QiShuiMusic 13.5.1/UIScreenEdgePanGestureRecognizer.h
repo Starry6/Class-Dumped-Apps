@@ -1,0 +1,34 @@
+@interface UIScreenEdgePanGestureRecognizer : UIPanGestureRecognizer
+@property (nonatomic) Q edges;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (double)_bottomEdgeAngleWindow;
+- (id)debugDictionary;
+- (void)_setBottomEdgeRegionSize:;
+- (void)touchesBegan:withEvent:;
+- (id)initWithTarget:action:type:options:;
+- (void)setEdges:;
+- (unsigned long long)touchedEdges;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (long long)_touchInterfaceOrientation;
+- (void)featureDidChangeState:;
+- (void).cxx_destruct;
+- (void)_setEdgeRegionSize:;
+- (void)reset;
+- (unsigned long long)edges;
+- (void)_setBottomEdgeAngleWindow:;
+- (double)_bottomEdgeRegionSize;
+- (void)touchesMoved:withEvent:;
+- (double)_edgeRegionSize;
+- (void)touchesEnded:withEvent:;
+- (id)initWithTarget:action:;
+- (void)_setHysteresis:;
+- (BOOL)_shouldTryToBeginWithEvent:;
+- (void)setMinimumNumberOfTouches:;
++ (BOOL)supportsSecureCoding;
++ (BOOL)_shouldDefaultToTouches;
++ (BOOL)_shouldSupportStylusTouches;
+@end

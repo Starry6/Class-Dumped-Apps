@@ -1,0 +1,2 @@
+@interface SwiftUI.AccessibilitySpecificChartDescriptorStorage : SwiftUI.AccessibilityChartDescriptorStorage
+@end

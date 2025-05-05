@@ -1,0 +1,35 @@
+@interface IESLiveMessageReplyTreeCell : UITableViewCell
+@property (nonatomic) UIView container;
+@property (nonatomic) UILabel messageLabel;
+@property (nonatomic) UIView operatePanel;
+@property (nonatomic) IESLiveReplyTreeOperateItemView replyButton;
+@property (nonatomic) IESLiveReplyTreeOperateItemView replicateButton;
+@property (nonatomic) IESLiveReplyTreeOperateItemView diggButton;
+@property (nonatomic) IESLiveMessageReplyTreeNode node;
+@property (nonatomic) <IESLiveMessageReplyTreeCellDelegate> delegate;
+- (id)replicateButton;
+- (id)diggButton;
+- (BOOL)onlySupportReply:;
+- (id)operatePanel;
+- (id)operatePanelWithNode:;
+- (void)setDiggButton:;
+- (void)setOperatePanel:;
+- (void)setReplicateButton:;
+- (void)setUpContainer;
+- (void)setupViewWithOperatePanel;
+- (void)setupViewWithoutOperatePanel;
+- (void)updateCellWithNode:;
+- (void)updateDiggState:fromClick:completion:;
+- (id)initWithStyle:reuseIdentifier:;
+- (id)node;
+- (void)setContainer:;
+- (void)setDelegate:;
+- (id)container;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)messageLabel;
+- (void)setMessageLabel:;
+- (void)setNode:;
+- (id)replyButton;
+- (void)setReplyButton:;
+@end

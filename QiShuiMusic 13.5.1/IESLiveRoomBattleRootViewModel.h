@@ -1,0 +1,31 @@
+@interface IESLiveRoomBattleRootViewModel : NSObject
+@property (nonatomic) IESLiveRoomBattleApi roomBattleApi;
+@property (nonatomic) IESLiveRoomBattleRootViewListSection friendSection;
+@property (nonatomic) IESLiveRoomBattleRootViewListSection recommendSection;
+@property (nonatomic) IESLiveRoomBattleRootViewListEmptySection emptySection;
+@property (nonatomic) NSString requestPage;
+@property (nonatomic) <IESLiveRoomServiceAdapter> roomModel;
+@property (nonatomic) NSArray sectionList;
+@property (nonatomic) @? reloadSectionAction;
+- (void)setRequestPage:;
+- (void)bindingSection;
+- (void)didSetAttachingDIContext;
+- (id)emptySection;
+- (void)fetchInviteList:;
+- (id)friendSection;
+- (id)initWithRoomModel:;
+- (id)recommendSection;
+- (id)reloadSectionAction;
+- (id)requestPage;
+- (id)roomBattleApi;
+- (id)roomModel;
+- (void)setEmptySection:;
+- (void)setFriendSection:;
+- (void)setRecommendSection:;
+- (void)setReloadSectionAction:;
+- (void)setRoomBattleApi:;
+- (void)setRoomModel:;
+- (void).cxx_destruct;
+- (id)sectionList;
+- (void)setSectionList:;
+@end

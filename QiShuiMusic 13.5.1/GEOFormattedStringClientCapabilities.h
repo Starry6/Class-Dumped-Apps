@@ -1,0 +1,38 @@
+@interface GEOFormattedStringClientCapabilities : PBCodable
+@property (nonatomic) BOOL hasConcatenatingFormatStringsSupported;
+@property (nonatomic) BOOL concatenatingFormatStringsSupported;
+@property (nonatomic) BOOL hasTimestampFormatPatternSupported;
+@property (nonatomic) BOOL timestampFormatPatternSupported;
+@property (nonatomic) BOOL hasStyleSupported;
+@property (nonatomic) BOOL styleSupported;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)concatenatingFormatStringsSupported;
+- (void)setConcatenatingFormatStringsSupported:;
+- (void)setHasConcatenatingFormatStringsSupported:;
+- (BOOL)hasConcatenatingFormatStringsSupported;
+- (BOOL)timestampFormatPatternSupported;
+- (void)setTimestampFormatPatternSupported:;
+- (void)setHasTimestampFormatPatternSupported:;
+- (BOOL)hasTimestampFormatPatternSupported;
+- (BOOL)styleSupported;
+- (void)setStyleSupported:;
+- (void)setHasStyleSupported:;
+- (BOOL)hasStyleSupported;
++ (BOOL)isValid:;
+@end

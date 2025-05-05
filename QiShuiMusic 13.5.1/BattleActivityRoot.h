@@ -1,0 +1,2 @@
+@interface BattleActivityRoot : GPBRootObject
+@end

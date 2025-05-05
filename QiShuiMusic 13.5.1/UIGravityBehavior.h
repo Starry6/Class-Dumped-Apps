@@ -1,0 +1,32 @@
+@interface UIGravityBehavior : UIDynamicBehavior
+@property (nonatomic) NSArray items;
+@property (nonatomic) {CGVector=dd} gravityDirection;
+@property (nonatomic) double angle;
+@property (nonatomic) double magnitude;
+- (id)initWithItems:;
+- (void)removeItem:;
+- (void)addItem:;
+- (id)init;
+- (id)items;
+- (id)gravity;
+- (id)description;
+- (double)angle;
+- (void)_associate;
+- (void)_dissociate;
+- (void)_addGravityItem:;
+- (id)gravityDirection;
+- (void)setGravityDirection:;
+- (id)denormalizedGravity;
+- (double)xComponent;
+- (double)yComponent;
+- (double)magnitude;
+- (void)setAngle:;
+- (void)setMagnitude:;
+- (void)setXComponent:;
+- (void)setYComponent:;
+- (void)setXComponent:yComponent:;
+- (void)_setAngle:magnitude:;
+- (void)setAngle:magnitude:;
+- (void)setGravity:;
++ (BOOL)_isPrimitiveBehavior;
+@end

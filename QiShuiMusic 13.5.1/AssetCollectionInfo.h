@@ -1,0 +1,36 @@
+@interface AssetCollectionInfo : NSObject
+@property (nonatomic) NSString GUID;
+@property (nonatomic) NSString personID;
+@property (nonatomic) BOOL isMine;
+@property (nonatomic) BOOL isVideo;
+@property (nonatomic) BOOL isPhotoIris;
+@property (nonatomic) S playbackVariation;
+@property (nonatomic) BOOL isDeletable;
+@property (nonatomic) NSDictionary metaData;
+@property (nonatomic) NSNumber width;
+@property (nonatomic) NSNumber height;
+@property (nonatomic) NSDate timestamp;
+@property (nonatomic) NSString derivativeUTI;
+@property (nonatomic) NSNumber originalFilesize;
+@property (nonatomic) NSString originalFilename;
+- (id)GUID;
+- (BOOL)isVideo;
+- (id)personID;
+- (id)originalFilesize;
+- (id)initWithCoder:;
+- (id)height;
+- (id)metaData;
+- (void)encodeWithCoder:;
+- (id)width;
+- (id)originalFilename;
+- (void).cxx_destruct;
+- (id)timestamp;
+- (id)description;
+- (unsigned short)playbackVariation;
+- (BOOL)isDeletable;
+- (BOOL)isPhotoIris;
+- (BOOL)isMine;
+- (id)initWithAssetCollection:;
+- (id)derivativeUTI;
++ (BOOL)supportsSecureCoding;
+@end

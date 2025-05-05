@@ -1,0 +1,33 @@
+@interface CNFoundationUserDefaults : NSObject
+@property (nonatomic) CNUserDefaults userDefaults;
+@property (nonatomic) BOOL preferNickname;
+@property (nonatomic) Q nameOrder;
+@property (nonatomic) Q shortNameFormat;
+@property (nonatomic) BOOL shortNameFormatEnabled;
+@property (nonatomic) NSDictionary filteredAccountsAndContainers;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (unsigned long long)sortOrder;
+- (void)setShortNameFormat:;
+- (id)countryCode;
+- (void)setUserDefaults:;
+- (id)init;
+- (void)setShortNameFormatEnabled:;
+- (id)userDefaults;
+- (BOOL)isShortNameFormatEnabled;
+- (unsigned long long)shortNameFormat;
+- (unsigned long long)nameOrder;
+- (void).cxx_destruct;
+- (void)setNameOrder:;
+- (unsigned long long)newContactNameOrder;
+- (BOOL)preferNickname;
+- (void)setPreferNickname:;
+- (id)filteredAccountsAndContainers;
+- (void)setFilteredAccountsAndContainers:;
++ (id)registeredDefaults;
++ (id)sharedDefaults;
++ (id)makeRegisteredDefaults;
++ (unsigned long long)_convertNSNameOrderToCNNameOrder:;
+@end

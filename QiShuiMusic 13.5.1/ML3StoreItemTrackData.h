@@ -1,0 +1,36 @@
+@interface ML3StoreItemTrackData : NSObject
+@property (nonatomic) NSData trackData;
+@property (nonatomic) NSArray parsedStoreItemsImportProperties;
+@property (nonatomic) Q trackCount;
+- (unsigned long long)trackCount;
+- (void).cxx_destruct;
+- (id)trackData;
+- (id)initWithLookupItems:;
+- (id)parsedStoreItemsImportProperties;
+- (id)_bestPlaylistArtworkImageURLFromStoreArtworkVariants:;
+- (id)_bestArtworkImageURLFromStoreArtworkVariants:cropStyle:;
+- (id)initWithTrackData:;
+- (id)_storePlatformDateFormatter;
+- (id)_storeItemsImportPropertiesFromLookupItems:;
+- (id)_storeItemsImportPropertiesFromTrackData:;
+- (id)_parentDictForItemAlbumId:;
+- (id)_importDictionaryForLookupItem:parentCollectionCache:;
+- (id)_artworkTokenFromLookupItem:;
+- (id)_artworkTokenForItemWithCollectionID:itemID:;
+- (long long)_episodeTypeFromVideoSubTypeString:;
+- (id)_lookupItemArtworksForArtworkDictionaries:;
+- (double)_songDurationFromOffersArray:;
+- (id)_allSongItemsFromLookupItems:;
+- (id)_allSongItemsFromCollectionLookupItem:;
+- (BOOL)_platformMetadataItem:matchesKind:;
+- (BOOL)_platformMetadataItemIsMusicKind:;
+- (BOOL)_platformMetadataItemIsSongKind:;
+- (BOOL)_platformMetadataItemIsMusicVideoKind:;
+- (BOOL)_platformMetadataItemIsAUCKind:;
+- (BOOL)_platformMetadataItemIsAUCAudioKind:;
+- (BOOL)_platformMetadataItemIsAUCVideoKind:;
+- (BOOL)_platformMetadataItemIsVideoKind:;
+- (BOOL)_platformMetadataItemIsTVShowKind:;
+- (BOOL)_platformMetadataItemIsMovieKind:;
+- (id)_bestAlbumArtworkImageURLFromStoreArtworkVariants:;
+@end

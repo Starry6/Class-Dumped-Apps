@@ -1,0 +1,30 @@
+@interface VNImageprint : NSObject
+@property (nonatomic) VNMPImageDescriptor descriptor;
+@property (nonatomic) Q type;
+@property (nonatomic) Q serializedLength;
+@property (nonatomic) VNRequestSpecifier originatingRequestSpecifier;
+@property (nonatomic) Q requestRevision;
+@property (nonatomic) NSString requestClassName;
+- (id)requestClassName;
+- (id)descriptor;
+- (Class)requestClassAndReturnError:;
+- (void)setDescriptor:;
+- (id)initWithState:error:;
+- (void)setType:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (unsigned long long)type;
+- (unsigned long long)requestRevision;
+- (void).cxx_destruct;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)serializeStateAndReturnError:;
+- (id)initWithState:byteOffset:error:;
+- (unsigned long long)serializeStateIntoData:startingAtByteOffset:error:;
+- (unsigned long long)serializedLength;
+- (id)originatingRequestSpecifier;
+- (id)distanceToImageprint:error:;
+- (id)initWithImageDescriptor:type:originatingRequestSpecifier:;
++ (BOOL)supportsSecureCoding;
+@end

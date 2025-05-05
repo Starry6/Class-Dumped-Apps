@@ -1,0 +1,33 @@
+@interface IESLiveInteractApplyParams : NSObject
+@property (nonatomic) q applyMode;
+@property (nonatomic) Q applySource;
+@property (nonatomic) NSString applyReason;
+@property (nonatomic) NSNumber applyPosition;
+@property (nonatomic) BOOL isApplyAfterFollow;
+@property (nonatomic) NSNumber applyMutedState;
+@property (nonatomic) NSDictionary extraParams;
+@property (nonatomic) NSString requestPage;
+@property (nonatomic) NSDictionary trackParams;
+@property (nonatomic) IESLiveInteractApplyPaidLinkParams paidLinkParams;
+- (id)applyMutedState;
+- (void)setApplyReason:;
+- (void)setApplySource:;
+- (void)setExtraParams:;
+- (void)setRequestPage:;
+- (void)setTrackParams:;
+- (long long)applyMode;
+- (id)applyPosition;
+- (id)applyReason;
+- (unsigned long long)applySource;
+- (id)extraParams;
+- (BOOL)isApplyAfterFollow;
+- (id)paidLinkParams;
+- (id)requestPage;
+- (void)setApplyMode:;
+- (void)setApplyMutedState:;
+- (void)setApplyPosition:;
+- (void)setIsApplyAfterFollow:;
+- (void)setPaidLinkParams:;
+- (id)trackParams;
+- (void).cxx_destruct;
+@end

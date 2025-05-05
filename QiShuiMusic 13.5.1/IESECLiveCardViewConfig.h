@@ -1,0 +1,30 @@
+@interface IESECLiveCardViewConfig : NSObject
+@property (nonatomic) IESECLiveCardDataModel cardModel;
+@property (nonatomic) q cardType;
+@property (nonatomic) NSDictionary featureParams;
+@property (nonatomic) NSDictionary smartOutParams;
+- (id)dynamicCardSize;
+- (id)buyImageURLStrTransparent:;
+- (id)buyLottieFileName;
+- (id)buyLottieFilePath;
+- (id)cardModel;
+- (long long)checkCardTitleLines;
+- (id)featureParams;
+- (id)goodsModel;
+- (id)goodsTitle;
+- (id)secKillText;
+- (void)setCardModel:;
+- (void)setFeatureParams:;
+- (void)setSmartOutParams:;
+- (BOOL)shouldDoBuyButtonAnimation;
+- (id)smartOutParams;
+- (id)suffixOfImageName;
+- (id)tagLabelURL;
+- (double)vibeAreaHeight;
+- (id)vibeImageURL;
+- (void).cxx_destruct;
+- (long long)cardType;
+- (void)setCardType:;
+- (id)cardSize;
+- (BOOL)shouldCountDown;
+@end

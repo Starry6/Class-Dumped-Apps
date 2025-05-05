@@ -1,0 +1,38 @@
+@interface GEOPDPlaceSummaryLayoutLine : PBCodable
+@property (nonatomic) NSMutableArray units;
+@property (nonatomic) BOOL hasIsDynamicContextLine;
+@property (nonatomic) BOOL isDynamicContextLine;
+@property (nonatomic) BOOL hasShouldOmitSpacingDelimiter;
+@property (nonatomic) BOOL shouldOmitSpacingDelimiter;
+- (void)readAll:;
+- (BOOL)hasGreenTeaWithValue:;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (void)setUnits:;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (id)units;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)clearUnits;
+- (void)addUnit:;
+- (unsigned long long)unitsCount;
+- (id)unitAtIndex:;
+- (BOOL)isDynamicContextLine;
+- (void)setIsDynamicContextLine:;
+- (void)setHasIsDynamicContextLine:;
+- (BOOL)hasIsDynamicContextLine;
+- (BOOL)shouldOmitSpacingDelimiter;
+- (void)setShouldOmitSpacingDelimiter:;
+- (void)setHasShouldOmitSpacingDelimiter:;
+- (BOOL)hasShouldOmitSpacingDelimiter;
++ (BOOL)isValid:;
++ (Class)unitType;
+@end

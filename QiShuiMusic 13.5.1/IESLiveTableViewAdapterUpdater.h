@@ -1,0 +1,32 @@
+@interface IESLiveTableViewAdapterUpdater : NSObject
+@property (nonatomic) BOOL disable_try_catch;
+@property (nonatomic) NSArray sections;
+@property (nonatomic) q state;
+@property (nonatomic) UITableView tableView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)transparentCell;
+- (BOOL)disable_try_catch;
+- (void)performIndexPathUpdates:cellUpdateBlock:;
+- (void)performReloadData:completion:;
+- (void)setDisable_try_catch:;
+- (void)stopRefresh;
+- (void)trackTableViewException:;
+- (void)resetState;
+- (id)sections;
+- (id)init;
+- (void)performBatchUpdates:completion:;
+- (void)setState:;
+- (id)tableView:cellForRowAtIndexPath:;
+- (double)tableView:heightForRowAtIndexPath:;
+- (long long)state;
+- (void).cxx_destruct;
+- (void)setSections:;
+- (void)setTableView:;
+- (id)tableView;
+- (long long)tableView:numberOfRowsInSection:;
+- (long long)numberOfSectionsInTableView:;
+- (void)configureCell:atIndexPath:;
+@end

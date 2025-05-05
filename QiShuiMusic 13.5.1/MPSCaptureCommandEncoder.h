@@ -1,0 +1,36 @@
+@interface MPSCaptureCommandEncoder : NSObject
+@property (nonatomic) Q dispatchType;
+@property (nonatomic) <MTLDevice> device;
+@property (nonatomic) NSString label;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setBuffer:offset:atIndex:;
+- (void)dealloc;
+- (void)executeCommandsInBuffer:withRange:;
+- (void)dispatchThreadgroups:threadsPerThreadgroup:;
+- (void)executeCommandsInBuffer:indirectBuffer:indirectBufferOffset:;
+- (void)memoryBarrierWithScope:;
+- (void).cxx_destruct;
+- (void)memoryBarrierWithResources:count:;
+- (id)forwardingTargetForSelector:;
+- (void)waitForFence:;
+- (void)updateFence:;
+- (void)setBuffers:offsets:withRange:;
+- (void)setComputePipelineState:;
+- (void)setBytes:length:atIndex:;
+- (void)setBufferOffset:atIndex:;
+- (void)setTexture:atIndex:;
+- (void)setTextures:withRange:;
+- (void)setSamplerState:atIndex:;
+- (void)setSamplerStates:withRange:;
+- (void)setSamplerState:lodMinClamp:lodMaxClamp:atIndex:;
+- (void)setSamplerStates:lodMinClamps:lodMaxClamps:withRange:;
+- (void)setThreadgroupMemoryLength:atIndex:;
+- (void)setStageInRegion:;
+- (void)setStageInRegionWithIndirectBuffer:indirectBufferOffset:;
+- (void)dispatchThreadgroupsWithIndirectBuffer:indirectBufferOffset:threadsPerThreadgroup:;
+- (void)dispatchThreads:threadsPerThreadgroup:;
+- (id)initWithCommandEncoder:captureContext:;
+@end

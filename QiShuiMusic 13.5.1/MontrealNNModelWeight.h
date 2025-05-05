@@ -1,0 +1,33 @@
+@interface MontrealNNModelWeight : MontrealNNDescription
+@property (nonatomic) NSString name;
+@property (nonatomic) NSNumber index;
+@property (nonatomic) NSArray dimension;
+@property (nonatomic) NSArray weightValues;
+@property (nonatomic) NSData weightData;
+@property (nonatomic) MontrealNNModelQuantization quantization;
+@property (nonatomic) NSString jsonDir;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)dimension;
+- (id)index;
+- (id)jsonDescription;
+- (void).cxx_destruct;
+- (id)name;
+- (void)description:indent:;
+- (id)checkForValidity;
+- (void)generateJSONAtPath:;
+- (id)jsonDir;
+- (id)createDataContainer;
+- (id)quantization;
+- (id)initWithName:index:dimension:;
+- (id)initWithName:index:dimension:weightData:;
+- (id)initWithName:index:dimension:weightValues:;
+- (id)initWithDictionary:quantization:jsonDir:;
+- (id)createflattenWeightsFile:;
+- (id)createflattenWeightsHierarchy:;
+- (id)createConvertArrayToData:quantization:;
+- (id)weightValues;
+- (id)weightData;
+@end

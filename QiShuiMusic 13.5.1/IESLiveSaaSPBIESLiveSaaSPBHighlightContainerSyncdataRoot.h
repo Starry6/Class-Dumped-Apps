@@ -1,0 +1,2 @@
+@interface IESLiveSaaSPBIESLiveSaaSPBHighlightContainerSyncdataRoot : GPBRootObject
+@end

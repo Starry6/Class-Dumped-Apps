@@ -1,0 +1,2 @@
+@interface PLAnalyticsLibraryCounters : NSObject
+@end

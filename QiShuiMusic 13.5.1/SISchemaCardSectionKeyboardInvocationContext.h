@@ -1,0 +1,33 @@
+@interface SISchemaCardSectionKeyboardInvocationContext : SISchemaInstrumentationMessage
+@property (nonatomic) BOOL keyboardPresented;
+@property (nonatomic) BOOL hasKeyboardPresented;
+@property (nonatomic) NSInteger keyboardLocale;
+@property (nonatomic) BOOL hasKeyboardLocale;
+@property (nonatomic) BOOL existingText;
+@property (nonatomic) BOOL hasExistingText;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (BOOL)readFrom:;
+- (void)setKeyboardPresented:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)setKeyboardLocale:;
+- (BOOL)hasKeyboardPresented;
+- (void)setHasKeyboardPresented:;
+- (void)deleteKeyboardPresented;
+- (BOOL)hasKeyboardLocale;
+- (void)setHasKeyboardLocale:;
+- (void)deleteKeyboardLocale;
+- (void)setExistingText:;
+- (BOOL)hasExistingText;
+- (void)setHasExistingText:;
+- (void)deleteExistingText;
+- (BOOL)keyboardPresented;
+- (int)keyboardLocale;
+- (BOOL)existingText;
+@end

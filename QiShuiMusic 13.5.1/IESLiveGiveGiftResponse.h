@@ -1,0 +1,36 @@
+@interface IESLiveGiveGiftResponse : NSObject
+@property (nonatomic) NSNumber giftID;
+@property (nonatomic) NSNumber originGiftID;
+@property (nonatomic) Q count;
+@property (nonatomic) NSNumber unitPrice;
+@property (nonatomic) NSNumber totalPrice;
+@property (nonatomic) HTSLiveUser sugarDaddy;
+@property (nonatomic) NSArray toUser;
+@property (nonatomic) NSDictionary extra;
+@property (nonatomic) GiftSendResponse_Data giftSendResponseData;
+@property (nonatomic) NSString logID;
+@property (nonatomic) NSString traceID;
+- (id)giftID;
+- (id)giftSendResponseData;
+- (id)originGiftID;
+- (void)setExtra:;
+- (void)setGiftID:;
+- (void)setGiftSendResponseData:;
+- (void)setOriginGiftID:;
+- (void)setSugarDaddy:;
+- (void)setToUser:;
+- (void)setTotalPrice:;
+- (void)setTraceID:;
+- (id)sugarDaddy;
+- (id)totalPrice;
+- (void)setCount:;
+- (id)extra;
+- (id)traceID;
+- (void).cxx_destruct;
+- (unsigned long long)count;
+- (id)logID;
+- (void)setLogID:;
+- (id)toUser;
+- (id)unitPrice;
+- (void)setUnitPrice:;
+@end

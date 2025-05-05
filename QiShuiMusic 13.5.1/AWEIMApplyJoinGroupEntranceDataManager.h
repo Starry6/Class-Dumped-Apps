@@ -1,0 +1,36 @@
+@interface AWEIMApplyJoinGroupEntranceDataManager : NSObject
+@property (nonatomic) BOOL isRequesting;
+@property (nonatomic) BOOL hasInitialFetched;
+@property (nonatomic) AWEIMChatModel applyChat;
+@property (nonatomic) <AWEIMApplyJoinGroupEntranceDataManagerDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)applyChat;
+- (id)auditManager;
+- (id)conversationDataManager;
+- (void)fetchAuditSwitchStatusWithShortID:type:completion:;
+- (void)fetchLatestApply;
+- (void)fetchLatestApplyAtCodeStart;
+- (void)generateChatFromApplyModel:completion:;
+- (BOOL)hasInitialFetched;
+- (void)iesim_briefDataSource:onNewApplyAck:;
+- (void)iesim_briefDataSource:onNewConversationApply:;
+- (BOOL)isRequesting;
+- (void)markReadAllApply;
+- (void)removeEntrance;
+- (void)setApplyChat:;
+- (void)setHasInitialFetched:;
+- (void)setIsRequesting:;
+- (void)updateAuditSwitchStatusWithShortID:type:switchStatus:completion:;
+- (void)updateLatestApplyChat:;
+- (void)updateLatestApplyChatWithApplyModel:;
+- (id)init;
+- (void)dealloc;
+- (void)setDelegate:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)applicationWillEnterForeground:;
++ (id)sharedInstance;
+@end

@@ -1,0 +1,34 @@
+@interface STActivityAttribution : NSObject
+@property (nonatomic) STAttributedEntity attributedEntity;
+@property (nonatomic) STAttributedEntity activeEntity;
+@property (nonatomic) {?=[8I]} auditToken;
+@property (nonatomic) NSInteger pid;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)activeEntity;
+- (id)initWithPID:;
+- (id)succinctDescriptionBuilder;
+- (id)initWithCoder:;
+- (id)initWithAttributedEntity:activeEntity:;
+- (unsigned long long)hash;
+- (id)debugDescription;
+- (id)auditToken;
+- (id)debugDescriptionWithMultilinePrefix:;
+- (void)encodeWithCoder:;
+- (id)initWithAttributedEntity:;
+- (int)pid;
+- (void).cxx_destruct;
+- (id)initWithAuditToken:;
+- (id)succinctDescription;
+- (id)description;
+- (id)attributedEntity;
+- (id)descriptionBuilderWithMultilinePrefix:;
+- (BOOL)isEqual:;
+- (id)descriptionWithMultilinePrefix:;
+- (id)copyWithZone:;
++ (BOOL)supportsSecureCoding;
++ (id)attributionWithPID:;
++ (id)attributionWithAuditToken:;
+@end

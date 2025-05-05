@@ -1,0 +1,31 @@
+@interface MPAVRoutingTableViewCellSubtitleTextState : NSObject
+@property (nonatomic) Q currentVisibleTextType;
+@property (nonatomic) BOOL hasVisibleTextTypeToShow;
+@property (nonatomic) BOOL hasVisibleTextTypeToTransitionTo;
+@property (nonatomic) NSString stringForCurrentVisibleTextType;
+@property (nonatomic) NSString routeUID;
+@property (nonatomic) NSString batteryText;
+@property (nonatomic) NSString pairedDeviceText;
+@property (nonatomic) NSString localizedSubtitle;
+@property (nonatomic) BOOL animating;
+- (void)setAnimating:;
+- (BOOL)isAnimating;
+- (id)routeUID;
+- (void)setRouteUID:;
+- (id)localizedSubtitle;
+- (void)setLocalizedSubtitle:;
+- (void).cxx_destruct;
+- (BOOL)hasVisibleTextTypeToShow;
+- (BOOL)hasVisibleTextTypeToTransitionTo;
+- (void)transitionToNextAvailableVisibleTextType;
+- (id)stringForCurrentVisibleTextType;
+- (id)_stringForVisibleTextType:;
+- (unsigned long long)_nextAvailableVisibleTextType;
+- (void)resetForNewRoute;
+- (id)batteryText;
+- (void)setBatteryText:;
+- (id)pairedDeviceText;
+- (void)setPairedDeviceText:;
+- (unsigned long long)currentVisibleTextType;
+- (void)setCurrentVisibleTextType:;
+@end

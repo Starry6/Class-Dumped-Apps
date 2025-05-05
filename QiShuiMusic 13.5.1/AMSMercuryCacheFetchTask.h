@@ -1,0 +1,31 @@
+@interface AMSMercuryCacheFetchTask : AMSTask
+@property (nonatomic) ACAccount account;
+@property (nonatomic) <AMSBagProtocol> bag;
+@property (nonatomic) NSSet cacheTypeIDs;
+@property (nonatomic) NSString clientIdentifier;
+@property (nonatomic) AMSProcessInfo clientInfo;
+@property (nonatomic) NSString clientVersion;
+@property (nonatomic) NSString logKey;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)account;
+- (void)setClientInfo:;
+- (void)setLogKey:;
+- (id)clientInfo;
+- (id)logKey;
+- (void).cxx_destruct;
+- (id)bag;
+- (id)clientIdentifier;
+- (id)clientVersion;
+- (id)perform;
+- (id)initWithAccount:bag:cacheTypeIDs:clientIdentifier:clientVersion:;
+- (id)_updateEndpointURLRequestWithError:;
+- (id)cacheTypeIDs;
++ (id)createBagForSubProfile;
++ (id)bagSubProfileVersion;
++ (id)bagSubProfile;
++ (id)requestEncoderWithSharedProperties:task:;
++ (id)sharedPropertiesFromTask:;
+@end

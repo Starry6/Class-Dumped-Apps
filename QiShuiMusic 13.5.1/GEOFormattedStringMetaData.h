@@ -1,0 +1,36 @@
+@interface GEOFormattedStringMetaData : PBCodable
+@property (nonatomic) BOOL hasRealtimeStatus;
+@property (nonatomic) NSInteger realtimeStatus;
+@property (nonatomic) BOOL hasSpokenPrivacyFilterType;
+@property (nonatomic) NSInteger spokenPrivacyFilterType;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (int)realtimeStatus;
+- (void)setRealtimeStatus:;
+- (void)setHasRealtimeStatus:;
+- (BOOL)hasRealtimeStatus;
+- (id)realtimeStatusAsString:;
+- (int)StringAsRealtimeStatus:;
+- (int)spokenPrivacyFilterType;
+- (void)setSpokenPrivacyFilterType:;
+- (void)setHasSpokenPrivacyFilterType:;
+- (BOOL)hasSpokenPrivacyFilterType;
+- (id)spokenPrivacyFilterTypeAsString:;
+- (int)StringAsSpokenPrivacyFilterType:;
++ (BOOL)isValid:;
+@end

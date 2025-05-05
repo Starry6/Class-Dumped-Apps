@@ -1,0 +1,32 @@
+@interface BDXBridgeCertOpenByteCertMethodParamModel : BDXBridgeModel
+@property (nonatomic) NSString scene;
+@property (nonatomic) NSString flow;
+@property (nonatomic) NSString ticket;
+@property (nonatomic) NSString certAppId;
+@property (nonatomic) NSNumber faceOnly;
+@property (nonatomic) NSString identityName;
+@property (nonatomic) NSString identityCode;
+@property (nonatomic) NSDictionary extraParams;
+@property (nonatomic) NSDictionary h5QueryParams;
+- (void)setExtraParams:;
+- (id)certAppId;
+- (id)extraParams;
+- (id)faceOnly;
+- (id)h5QueryParams;
+- (id)identityCode;
+- (void)setCertAppId:;
+- (void)setFaceOnly:;
+- (void)setH5QueryParams:;
+- (void)setIdentityCode:;
+- (void)setScene:;
+- (id)scene;
+- (void).cxx_destruct;
+- (id)ticket;
+- (void)setTicket:;
+- (id)flow;
+- (void)setFlow:;
+- (id)identityName;
+- (void)setIdentityName:;
++ (id)requiredKeyPaths;
++ (id)JSONKeyPathsByPropertyKey;
+@end

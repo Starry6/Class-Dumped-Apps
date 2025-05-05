@@ -1,0 +1,32 @@
+@interface IESIMPOIDetailThemeModel : MTLModel
+@property (nonatomic) NSString planID;
+@property (nonatomic) NSString themeID;
+@property (nonatomic) q themeType;
+@property (nonatomic) NSString themeName;
+@property (nonatomic) IESIMURLModel cover;
+@property (nonatomic) NSString operatorName;
+@property (nonatomic) q count;
+@property (nonatomic) NSString filterKey;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)themeID;
+- (id)cover;
+- (id)filterKey;
+- (void)setCover:;
+- (void)setFilterKey:;
+- (void)setThemeID:;
+- (void)setCount:;
+- (id)operatorName;
+- (void)setOperatorName:;
+- (long long)themeType;
+- (void).cxx_destruct;
+- (long long)count;
+- (id)planID;
+- (void)setPlanID:;
+- (id)themeName;
+- (void)setThemeName:;
+- (void)setThemeType:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

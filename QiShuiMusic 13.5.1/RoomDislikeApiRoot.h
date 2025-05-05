@@ -1,0 +1,2 @@
+@interface RoomDislikeApiRoot : GPBRootObject
+@end

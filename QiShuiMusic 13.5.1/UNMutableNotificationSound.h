@@ -1,0 +1,31 @@
+@interface UNMutableNotificationSound : UNNotificationSound
+@property (nonatomic) NSString alertTopic;
+@property (nonatomic) NSString audioCategory;
+@property (nonatomic) NSNumber audioVolume;
+@property (nonatomic) BOOL critical;
+@property (nonatomic) double maximumDuration;
+@property (nonatomic) BOOL shouldIgnoreAccessibilityDisabledVibrationSetting;
+@property (nonatomic) BOOL shouldIgnoreRingerSwitch;
+@property (nonatomic) BOOL shouldRepeat;
+@property (nonatomic) NSString toneFileName;
+@property (nonatomic) NSURL toneFileURL;
+@property (nonatomic) NSString toneIdentifier;
+@property (nonatomic) Q toneMediaLibraryItemIdentifier;
+@property (nonatomic) NSString vibrationIdentifier;
+@property (nonatomic) NSURL vibrationPatternFileURL;
+- (void)setCritical:;
+- (void)setAudioCategory:;
+- (void)setToneFileURL:;
+- (void)setShouldIgnoreAccessibilityDisabledVibrationSetting:;
+- (void)setToneMediaLibraryItemIdentifier:;
+- (void)setToneIdentifier:;
+- (void)setVibrationPatternFileURL:;
+- (void)setToneFileName:;
+- (void)setVibrationIdentifier:;
+- (void)setAudioVolume:;
+- (void)setMaximumDuration:;
+- (void)setShouldIgnoreRingerSwitch:;
+- (id)copyWithZone:;
+- (void)setShouldRepeat:;
+- (void)setAlertTopic:;
+@end

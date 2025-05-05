@@ -1,0 +1,24 @@
+@interface STLive.LiveAppInfoServiceImp : NSObject
+- (id)TTAccountSDKVersion;
+- (id)TTAccountToken;
+- (id)appGroupId;
+- (id)appVersionCode;
+- (id)appVersionCodeNumber;
+- (id)commonParameters;
+- (long long)currentAPPUIMode;
+- (double)currentFontScale;
+- (BOOL)isBOEEnabled;
+- (BOOL)isInHouse;
+- (BOOL)isPPEEnabled;
+- (id)lane;
+- (id)openAppID;
+- (id)openCertToken;
+- (id)thirdUserID;
+- (id)ttSDKAppID;
+- (id)ttSDKLicenseFilePath;
+- (id)init;
+- (id)channel;
+- (id)appName;
+- (id)clientKey;
+- (id)appID;
+@end

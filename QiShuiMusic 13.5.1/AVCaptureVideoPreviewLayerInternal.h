@@ -1,0 +1,2 @@
+@interface AVCaptureVideoPreviewLayerInternal : NSObject
+@end

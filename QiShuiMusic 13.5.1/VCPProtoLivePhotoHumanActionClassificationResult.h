@@ -1,0 +1,33 @@
+@interface VCPProtoLivePhotoHumanActionClassificationResult : PBCodable
+@property (nonatomic) VCPProtoTimeRange timeRange;
+@property (nonatomic) NSMutableArray classifications;
+@property (nonatomic) VCPProtoBounds bounds;
+@property (nonatomic) BOOL hasFaceId;
+@property (nonatomic) NSString faceId;
+- (id)timeRange;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)setTimeRange:;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void)setBounds:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (id)bounds;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)faceId;
+- (void)setFaceId:;
+- (void)addClassification:;
+- (id)exportToLegacyDictionary;
+- (BOOL)hasFaceId;
+- (void)clearClassifications;
+- (unsigned long long)classificationsCount;
+- (id)classificationAtIndex:;
+- (id)classifications;
+- (void)setClassifications:;
++ (Class)classificationType;
++ (id)resultFromLegacyDictionary:;
+@end

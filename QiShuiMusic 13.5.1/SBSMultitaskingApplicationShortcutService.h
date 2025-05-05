@@ -1,0 +1,4 @@
+@interface SBSMultitaskingApplicationShortcutService : SBSAbstractApplicationService
+- (void)performMultitaskingShortcutAction:forBundleIdentifier:;
+- (void)fetchSupportedMultitaskingShortcutActionsForBundleIdentifier:withCompletionHandler:;
+@end

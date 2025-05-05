@@ -1,0 +1,33 @@
+@interface SISchemaSiriUISettings : SISchemaInstrumentationMessage
+@property (nonatomic) BOOL alwaysShowUserSpeechTranscript;
+@property (nonatomic) BOOL hasAlwaysShowUserSpeechTranscript;
+@property (nonatomic) BOOL alwaysBlurBackground;
+@property (nonatomic) BOOL hasAlwaysBlurBackground;
+@property (nonatomic) BOOL alwaysShowSiriDialog;
+@property (nonatomic) BOOL hasAlwaysShowSiriDialog;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)setAlwaysShowUserSpeechTranscript:;
+- (BOOL)hasAlwaysShowUserSpeechTranscript;
+- (void)setHasAlwaysShowUserSpeechTranscript:;
+- (void)deleteAlwaysShowUserSpeechTranscript;
+- (void)setAlwaysBlurBackground:;
+- (BOOL)hasAlwaysBlurBackground;
+- (void)setHasAlwaysBlurBackground:;
+- (void)deleteAlwaysBlurBackground;
+- (void)setAlwaysShowSiriDialog:;
+- (BOOL)hasAlwaysShowSiriDialog;
+- (void)setHasAlwaysShowSiriDialog:;
+- (void)deleteAlwaysShowSiriDialog;
+- (BOOL)alwaysShowUserSpeechTranscript;
+- (BOOL)alwaysBlurBackground;
+- (BOOL)alwaysShowSiriDialog;
+@end

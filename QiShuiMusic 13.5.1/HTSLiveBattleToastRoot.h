@@ -1,0 +1,2 @@
+@interface HTSLiveBattleToastRoot : GPBRootObject
+@end

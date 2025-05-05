@@ -1,0 +1,32 @@
+@interface SAMICore_TtsProcessParameter : NSObject
+@property (nonatomic) r* speaker;
+@property (nonatomic) r* textType;
+@property (nonatomic) r* text;
+@property (nonatomic) BOOL enableConcurrency;
+@property (nonatomic) BOOL enableSentenceSeg;
+@property (nonatomic) NSInteger sampleRate;
+@property (nonatomic) q timestamp;
+@property (nonatomic) BOOL enablePlaying;
+@property (nonatomic) BOOL enableSaveAudioToFile;
+@property (nonatomic) BOOL enableTextSeg;
+- (BOOL)enablePlaying;
+- (BOOL)enableSaveAudioToFile;
+- (BOOL)enableSentenceSeg;
+- (BOOL)enableTextSeg;
+- (void)setEnablePlaying:;
+- (void)setEnableSaveAudioToFile:;
+- (void)setEnableSentenceSeg:;
+- (void)setEnableTextSeg:;
+- (int)sampleRate;
+- (void)setText:;
+- (void)setSpeaker:;
+- (void)setTimestamp:;
+- (long long)timestamp;
+- (id)text;
+- (void)setSampleRate:;
+- (id)speaker;
+- (void)setEnableConcurrency:;
+- (BOOL)enableConcurrency;
+- (void)setTextType:;
+- (id)textType;
+@end

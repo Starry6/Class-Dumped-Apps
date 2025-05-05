@@ -1,0 +1,33 @@
+@interface AWEIMCloseFriendMomentContent : NSObject
+@property (nonatomic) NSString uidString;
+@property (nonatomic) NSString secUidString;
+@property (nonatomic) NSString itemIDString;
+@property (nonatomic) Q coverHeight;
+@property (nonatomic) Q coverWidth;
+@property (nonatomic) q publishTime;
+@property (nonatomic) IESIMURLModel coverUrlModel;
+@property (nonatomic) IESIMURLModel maskUrlModel;
+@property (nonatomic) q aweType;
+- (long long)aweType;
+- (void)setCoverHeight:;
+- (void)setPublishTime:;
+- (unsigned long long)coverHeight;
+- (id)coverUrlModel;
+- (unsigned long long)coverWidth;
+- (id)getContentDict;
+- (id)initWithContentDict:;
+- (id)maskUrlModel;
+- (long long)publishTime;
+- (id)secUidString;
+- (void)setAweType:;
+- (void)setCoverUrlModel:;
+- (void)setCoverWidth:;
+- (void)setItemIDString:;
+- (void)setMaskUrlModel:;
+- (void)setSecUidString:;
+- (void)setUidString:;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (id)itemIDString;
+- (id)uidString;
+@end

@@ -1,0 +1,38 @@
+@interface GEOLogMsgStateDetailLookAroundLogRecord : PBCodable
+@property (nonatomic) BOOL hasAction;
+@property (nonatomic) NSInteger action;
+@property (nonatomic) BOOL hasTarget;
+@property (nonatomic) NSInteger target;
+@property (nonatomic) BOOL hasRelativeTimestamp;
+@property (nonatomic) double relativeTimestamp;
+- (void)readAll:;
+- (BOOL)hasTarget;
+- (void)setRelativeTimestamp:;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (double)relativeTimestamp;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (int)action;
+- (unsigned long long)hash;
+- (void)setAction:;
+- (void)copyTo:;
+- (void)setTarget:;
+- (void)setHasRelativeTimestamp:;
+- (void)mergeFrom:;
+- (BOOL)readFrom:;
+- (int)target;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (BOOL)hasRelativeTimestamp;
+- (id)copyWithZone:;
+- (BOOL)hasAction;
+- (void)setHasAction:;
+- (id)actionAsString:;
+- (int)StringAsAction:;
+- (void)setHasTarget:;
+- (id)targetAsString:;
+- (int)StringAsTarget:;
++ (BOOL)isValid:;
+@end

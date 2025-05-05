@@ -1,0 +1,32 @@
+@interface INSearchForAccountsIntent : INIntent
+@property (nonatomic) INSpeakableString accountNickname;
+@property (nonatomic) q accountType;
+@property (nonatomic) INSpeakableString organizationName;
+@property (nonatomic) q requestedBalanceType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)accountType;
+- (id)_dictionaryRepresentation;
+- (void)setOrganizationName:;
+- (void)setAccountType:;
+- (void)_setMetadata:;
+- (id)domain;
+- (void)setDomain:;
+- (id)organizationName;
+- (id)_metadata;
+- (id)_typedBackingStore;
+- (long long)_intentCategory;
+- (id)_categoryVerb;
+- (void)_redactForMissingPrivacyEntitlementOptions:containingAppBundleId:;
+- (id)verb;
+- (void)setVerb:;
+- (id)parametersByName;
+- (void)setParametersByName:;
+- (id)accountNickname;
+- (void)setAccountNickname:;
+- (long long)requestedBalanceType;
+- (void)setRequestedBalanceType:;
+- (id)initWithAccountNickname:accountType:organizationName:requestedBalanceType:;
+@end

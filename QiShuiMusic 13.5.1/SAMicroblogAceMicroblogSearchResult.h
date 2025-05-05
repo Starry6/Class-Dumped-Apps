@@ -1,0 +1,30 @@
+@interface SAMicroblogAceMicroblogSearchResult : SADomainObject
+@property (nonatomic) SAMicroblogTwitterPostAuthor globalAuthor;
+@property (nonatomic) SAUIAppPunchOut punchOut;
+@property (nonatomic) NSString query;
+@property (nonatomic) NSArray resultNews;
+@property (nonatomic) NSArray resultPosts;
+@property (nonatomic) NSArray resultUsers;
+@property (nonatomic) SADecoratedString summary;
+@property (nonatomic) NSURL webAddress;
+- (id)groupIdentifier;
+- (void)setQuery:;
+- (id)query;
+- (void)setSummary:;
+- (id)summary;
+- (id)encodedClassName;
+- (void)setPunchOut:;
+- (id)punchOut;
+- (id)globalAuthor;
+- (void)setGlobalAuthor:;
+- (id)resultNews;
+- (void)setResultNews:;
+- (id)resultPosts;
+- (void)setResultPosts:;
+- (id)resultUsers;
+- (void)setResultUsers:;
+- (id)webAddress;
+- (void)setWebAddress:;
++ (id)aceMicroblogSearchResult;
++ (id)aceMicroblogSearchResultWithDictionary:context:;
+@end

@@ -1,0 +1,30 @@
+@interface BDLRUCache : NSObject
+@property (nonatomic) NSMutableDictionary cache;
+@property (nonatomic) q current;
+@property (nonatomic) NSLock lock;
+@property (nonatomic) q count;
+- (id)lastData;
+- (void)removeDataforKey:;
+- (id)removeLast;
+- (BOOL)containsKey:;
+- (void)setCount:;
+- (long long)current;
+- (void)clearCache;
+- (id)init;
+- (id)allKeys;
+- (BOOL)containsObject:;
+- (void)setData:forKey:;
+- (void)setCache:;
+- (id)initWithCoder:;
+- (id)lock;
+- (void)setObject:forKeyedSubscript:;
+- (void)encodeWithCoder:;
+- (void)setCurrent:;
+- (id)objectForKeyedSubscript:;
+- (void).cxx_destruct;
+- (id)cache;
+- (long long)count;
+- (void)setLock:;
+- (id)initWithCapacity:;
+- (id)lastKey;
+@end

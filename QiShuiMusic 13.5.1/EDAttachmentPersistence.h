@@ -1,0 +1,35 @@
+@interface EDAttachmentPersistence : NSObject
+@property (nonatomic) EDPersistenceDatabase database;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithDatabase:;
+- (void)setDatabase:;
+- (void).cxx_destruct;
+- (id)database;
+- (long long)insertAttachmentMetadata:;
+- (BOOL)insertMessageAttachmentMetadata:;
+- (BOOL)updateAttachmentIDForMessageAttachment:;
+- (id)attachmentsForGlobalMessageIDs:;
+- (id)globalMessageIDsForAttachment:;
+- (BOOL)removeAttachments:;
+- (BOOL)messageAttachmentExistsForGlobalMessageID:mimePartNumber:hasAttachmentEntry:;
+- (BOOL)messageAttachmentExistsForGlobalMessageID:remoteURL:hasAttachmentEntry:;
+- (id)messageAttachmentMetadataForMessageID:;
+- (id)uniqueAttachmentDataForHash:;
+- (id)attachmentMetadataForMessage:mimePartNumber:;
+- (id)attachmentMetadataForMessage:remoteURL:;
+- (id)attachmentMetadataForMessageAttachmentID:;
++ (id)log;
++ (id)tablesAndForeignKeysToResolve:associationsToResolve:;
++ (id)attachmentsTableName;
++ (id)messageAttachmentsTableName;
++ (id)globalMessageIDColumnNameInMessageAttachmentTable;
++ (id)attachmentIDColumnNameInMessageAttachmentsTable;
++ (id)attachmentColumnNameHash;
++ (id)attachmentTableSchema;
++ (id)messageAttachmentTableSchema;
++ (id)hashForAttachmentData:;
++ (id)hashForAttachmentName:;
+@end

@@ -1,0 +1,35 @@
+@interface BRDaemonConnection : NSXPCConnection
+- (id)newSyncTokenProxy;
+- (id)initUsingUserLocalDaemon;
+- (id)newFPFSSyncProxy;
+- (void).cxx_destruct;
+- (id)initUsingUserLocalDaemonTokenService;
+- (id)newLegacySyncProxy;
+- (void)_setupAndResume;
+- (id)newSyncProxy;
++ (id)secondaryConnectionIfExists;
++ (void)clearURLCacheForPersonaID:;
++ (id)homeDirectoryURL;
++ (id)defaultConnection;
++ (id)cloudDocsCachesURLForPersonaID:needsPersonaSwitch:;
++ (void)t_setDefaultConnection:;
++ (id)cloudDocsCachesURL;
++ (id)syncedRootURLs;
++ (void)invalidateCachedURLProperties;
++ (id)syncedDesktopURL;
++ (id)syncedRootURLsForPersonaID:needsPersonaSwitch:;
++ (id)defaultConnectionIfExists;
++ (id)homeDirectoryURLForPersonaID:needsPersonaSwitch:;
++ (id)secondaryConnection;
++ (id)syncedDocumentsURLForPersonaID:needsPersonaSwitch:;
++ (id)cloudDocsAppSupportURLForPersonaID:needsPersonaSwitch:;
++ (id)cloudDocsAppSupportURL;
++ (void)invalidateCachedURLPropertiesForPersonaID:;
++ (id)t_connectionForUUID:;
++ (void)t_setMobileDocumentsURL:;
++ (id)mobileDocumentsURL;
++ (void)clearURLCache;
++ (id)mobileDocumentsURLForPersonaID:needsPersonaSwitch:;
++ (id)syncedDocumentsURL;
++ (id)syncedDesktopURLForPersonaID:needsPersonaSwitch:;
+@end

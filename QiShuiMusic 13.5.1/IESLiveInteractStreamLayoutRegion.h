@@ -1,0 +1,36 @@
+@interface IESLiveInteractStreamLayoutRegion : NSObject
+@property (nonatomic) double x;
+@property (nonatomic) double y;
+@property (nonatomic) double width;
+@property (nonatomic) double height;
+@property (nonatomic) q zOrder;
+@property (nonatomic) double alpha;
+@property (nonatomic) BOOL muteAudio;
+@property (nonatomic) IESLiveInteractSpatialAudioPosition spatialPosition;
+@property (nonatomic) BOOL applySpatialAudio;
+@property (nonatomic) NSString strUID;
+@property (nonatomic) Q renderMode;
+- (BOOL)applySpatialAudio;
+- (BOOL)muteAudio;
+- (void)setApplySpatialAudio:;
+- (void)setMuteAudio:;
+- (void)setSpatialPosition:;
+- (void)setStrUID:;
+- (id)strUID;
+- (void)setX:;
+- (void)setY:;
+- (double)y;
+- (void)setAlpha:;
+- (void)setWidth:;
+- (void)setRenderMode:;
+- (double)x;
+- (double)height;
+- (unsigned long long)renderMode;
+- (double)width;
+- (double)alpha;
+- (void)setHeight:;
+- (void).cxx_destruct;
+- (long long)zOrder;
+- (id)spatialPosition;
+- (void)setZOrder:;
+@end

@@ -1,0 +1,2 @@
+@interface IESLiveSaaSPBIESLiveSaaSPBSportsRealTimeDataRoot : GPBRootObject
+@end

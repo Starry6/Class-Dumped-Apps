@@ -1,0 +1,30 @@
+@interface CHTextCorrectionRecognizer : NSObject
+@property (nonatomic) <CHRecognizing> _textRecognizer;
+@property (nonatomic) CHRecognizer _shapeRecognizer;
+@property (nonatomic) CHCornerDetector _cornerDetector;
+@property (nonatomic) NSArray locales;
+@property (nonatomic) BOOL isRemoteRecognition;
+- (void).cxx_destruct;
+- (id)locales;
+- (id)_shapeRecognizer;
+- (id)initWithLocales:remoteRecognition:priority:;
+- (id)textCorrectionResultForDrawing:targetContentInfo:originalDrawing:lastStroke:localTypedContextBounds:normalizedDrawingScaleFactor:previousCorrectionResult:;
+- (id)_editingGestureResultForDrawing:originalDrawing:lastStroke:targetContentInfo:previousResult:;
+- (id)_textInsertionResultForDrawing:targetContentInfo:originalDrawing:localTypedContextBounds:normalizedDrawingScaleFactor:insertionRange:;
+- (id)_refinedGestureResultForPreviousResult:originalDrawing:lastStroke:targetContentInfo:;
+- (id)_gestureOnBlankAreaResultForDrawing:originalDrawing:targetContentInfo:;
+- (id)_verticalBarGestureOnBlankAreaResultForDrawing:originalDrawing:targetContentInfo:;
+- (id)_verticalBarGestureCloseToTextForDrawing:originalDrawing:targetContentInfo:localTypedContextBounds:;
+- (unsigned long long)_precedingLineBreakCountForAutoLineBreak:targetContentInfo:;
+- (long long)_precedingSpaceBehaviorFromTargetContentInfo:drawingBounds:localTypedContextBounds:insertionRange:lastCharacterBefore:;
+- (id)_textBeforeStringForTargetContentInfo:insertionRange:;
+- (id)_textAfterStringForTargetContentInfo:insertionRange:;
+- (BOOL)_isInNoSpaceRegionNextToTextFromTargetContentInfo:drawingBounds:localTypedContextBounds:insertionRange:outIsWhiteSpace:outDistance:outSpaceDistanceThreshold:;
+- (BOOL)isRemoteRecognition;
+- (id)_textRecognizer;
+- (id)_cornerDetector;
++ (id)defaultTextAffectedRangeForTargetContentInfo:;
++ (id)_modifiedTextResult:replacingString:;
++ (id)_improvedSingleCharacterOneColumnTextResult:targetContentInfo:insertionRange:locale:affectedRange:;
++ (id)_relativeRangeOfPreviousCharacterFromTargetContentInfo:absoluteInsertionRange:;
+@end

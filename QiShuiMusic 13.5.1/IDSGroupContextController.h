@@ -1,0 +1,37 @@
+@interface IDSGroupContextController : NSObject
+@property (nonatomic) NSObject<OS_dispatch_queue> queue;
+@property (nonatomic) <IDSGroupContextControllerDelegate> delegate;
+@property (nonatomic) CUTPromiseSeal seal;
+@property (nonatomic) NSString serviceName;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)taskHandler:accountInfoForAliases:completion:;
+- (void)dealloc;
+- (void)taskHandler:persistToken:completion:;
+- (void)setDelegate:;
+- (void)setServiceName:;
+- (id)serviceName;
+- (void)_contentWithCompletion:;
+- (void)didReceiveRegistrationIdentityUpdateWithCompletion:;
+- (void)setSeal:;
+- (void)scheduleTransactionLogTask:;
+- (void)persistedTokenForTaskHandler:completion:;
+- (void)taskHandler:groupsWithGroupIDs:completion:;
+- (void)qSetupSeal;
+- (void)taskHandler:participantsWithDestinations:completion:;
+- (id)delegate;
+- (id)seal;
+- (void).cxx_destruct;
+- (void)didReceiveDecryptionFailureForGroup:completion:;
+- (void)setQueue:;
+- (void)didCacheGroup:completion:;
+- (void)qGroupContextWithDeviceIdentity:completion:;
+- (id)initWithServiceName:queue:delegate:;
+- (void)didCreateGroup:completion:;
+- (void)taskHandler:messagesFromToken:completion:;
+- (void)didUpdateGroup:withNewGroup:completion:;
+- (id)queue;
+- (void)groupContextWithCompletion:;
+@end

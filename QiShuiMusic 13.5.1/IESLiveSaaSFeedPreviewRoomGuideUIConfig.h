@@ -1,0 +1,31 @@
+@interface IESLiveSaaSFeedPreviewRoomGuideUIConfig : MTLModel
+@property (nonatomic) double height;
+@property (nonatomic) double iconMargin;
+@property (nonatomic) double buttonMargin;
+@property (nonatomic) double separatorMargin;
+@property (nonatomic) double rightMargin;
+@property (nonatomic) double font;
+@property (nonatomic) double borderWidth;
+@property (nonatomic) double cornerRadius;
+@property (nonatomic) NSString backgroundColor;
+@property (nonatomic) NSString borderColor;
+@property (nonatomic) IESLiveSaaSImage iconImage;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithDefault;
+- (double)buttonMargin;
+- (id)borderColor;
+- (id)backgroundColor;
+- (double)borderWidth;
+- (double)height;
+- (double)rightMargin;
+- (void).cxx_destruct;
+- (double)font;
+- (id)iconImage;
+- (double)cornerRadius;
+- (double)separatorMargin;
+- (double)iconMargin;
++ (id)JSONKeyPathsByPropertyKey;
+@end

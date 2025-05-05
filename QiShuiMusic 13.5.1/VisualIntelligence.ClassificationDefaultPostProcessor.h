@@ -1,0 +1,2 @@
+@interface VisualIntelligence.ClassificationDefaultPostProcessor : _TtCs12_SwiftObject
+@end

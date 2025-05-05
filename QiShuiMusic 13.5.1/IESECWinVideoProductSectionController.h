@@ -1,0 +1,34 @@
+@interface IESECWinVideoProductSectionController : IGListSectionController
+@property (nonatomic) IESECServiceProxy<IESECWinTabLayoutService> tabLayoutService;
+@property (nonatomic) <IESECWinVideoProductDataService> videoProductDataService;
+@property (nonatomic) IESECServiceProxy<IESECWinDataService> dataService;
+@property (nonatomic) IESECServiceProxy<IESECWinTabService> tabService;
+@property (nonatomic) IESECServiceProxy<IESECWinLiveService> liveServiceProxy;
+@property (nonatomic) IESECServiceProxy<IESECWinTabViewControllerManager> contentVCManager;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setDataService:;
+- (id)cellForItemAtIndex:;
+- (void)clickProductArea;
+- (id)contentVCManager;
+- (id)dataService;
+- (void)didUpdateToObject:;
+- (id)liveServiceProxy;
+- (id)paramsForEventTracking;
+- (void)setContentVCManager:;
+- (void)setLiveServiceProxy:;
+- (void)setTabLayoutService:;
+- (void)setTabService:;
+- (void)setVideoProductDataService:;
+- (id)tabLayoutService;
+- (id)tabService;
+- (void)trackEventName:once:;
+- (id)videoProductDataService;
+- (long long)numberOfItems;
+- (id)initWithContext:;
+- (void).cxx_destruct;
+- (void)didSelectItemAtIndex:;
+- (id)sizeForItemAtIndex:;
+@end

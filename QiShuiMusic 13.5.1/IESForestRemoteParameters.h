@@ -1,0 +1,38 @@
+@interface IESForestRemoteParameters : NSObject
+@property (nonatomic) NSString accessKey;
+@property (nonatomic) NSString channel;
+@property (nonatomic) NSString bundle;
+@property (nonatomic) NSArray fetcherSequence;
+@property (nonatomic) NSArray shuffleDomains;
+@property (nonatomic) NSNumber waitGeckoUpdate;
+@property (nonatomic) NSNumber disableCdnCache;
+@property (nonatomic) NSNumber cdnRetryTimes;
+@property (nonatomic) BOOL fromCustomConfig;
+- (id)disableCdnCache;
+- (id)fetcherSequence;
+- (id)waitGeckoUpdate;
+- (void)appendInfoFromResourceMeta:;
+- (id)cdnRetryTimes;
+- (id)dynamicToWaitGeckoUpdate:;
+- (id)fetchersDescription;
+- (BOOL)fromCustomConfig;
+- (id)initWithAccessKey:channel:bundle:;
+- (void)setCdnRetryTimes:;
+- (void)setDisableCdnCache:;
+- (void)setFetcherSequence:;
+- (void)setFromCustomConfig:;
+- (void)setShuffleDomains:;
+- (void)setWaitGeckoUpdate:;
+- (id)shuffleDomains;
+- (void)setChannel:;
+- (id)channel;
+- (id)bundle;
+- (BOOL)isValid;
+- (void).cxx_destruct;
+- (id)description;
+- (void)setBundle:;
+- (id)accessKey;
+- (void)setAccessKey:;
++ (id)extractGeckoInfoFormURL:;
++ (id)remoteParametersWithURLString:defaultPrefixToAccessKey:;
+@end

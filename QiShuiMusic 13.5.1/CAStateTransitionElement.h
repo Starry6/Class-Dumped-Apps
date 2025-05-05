@@ -1,0 +1,32 @@
+@interface CAStateTransitionElement : NSObject
+@property (nonatomic) BOOL enabled;
+@property (nonatomic) CALayer target;
+@property (nonatomic) CAAnimation animation;
+@property (nonatomic) NSString key;
+@property (nonatomic) double beginTime;
+@property (nonatomic) double duration;
+- (id)init;
+- (double)beginTime;
+- (void)dealloc;
+- (id)key;
+- (void)setAnimation:;
+- (id)initWithCoder:;
+- (id)debugDescription;
+- (void)setDuration:;
+- (void)setTarget:;
+- (void)setBeginTime:;
+- (void)setKey:;
+- (void)encodeWithCoder:;
+- (id)animation;
+- (void)encodeWithCAMLWriter:;
+- (void)setEnabled:;
+- (void).cxx_destruct;
+- (id)target;
+- (id)CAMLTypeForKey:;
+- (double)duration;
+- (void)CAMLParser:setValue:forKey:;
+- (id)copyWithZone:;
+- (BOOL)isEnabled;
++ (void)CAMLParserStartElement:;
++ (BOOL)supportsSecureCoding;
+@end

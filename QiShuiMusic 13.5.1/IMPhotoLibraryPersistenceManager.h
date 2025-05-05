@@ -1,0 +1,36 @@
+@interface IMPhotoLibraryPersistenceManager : NSObject
+@property (nonatomic) NSHashTable listeners;
+@property (nonatomic) NSMutableDictionary syndicationIdentifierSaveStateCache;
+@property (nonatomic) NSMutableDictionary syndicationIdentifierToAssetUUIDCache;
+@property (nonatomic) NSMutableSet syndicationIdentifiersWithActiveFetch;
+@property (nonatomic) BOOL libraryAlreadyOpened;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setListeners:;
+- (void)photoLibraryDidChange:;
+- (id)init;
+- (id)listeners;
+- (void)_invalidateCache;
+- (void).cxx_destruct;
+- (void)_notifyListeners;
+- (void)fetchInfoForSyndicationIdentifiersSavedToSystemPhotoLibrary:completion:;
+- (void)registerPhotoLibraryPersistenceManagerListener:;
+- (unsigned long long)cachedCountOfSyndicationIdentifiersSavedToSystemPhotoLibrary:shouldFetchAndNotifyAsNeeded:didStartFetch:;
+- (BOOL)_isListenerRegistered:;
+- (void)unregisterPhotoLibraryPersistenceManagerListener:;
+- (void)_openPhotoLibraryIfNecessary;
+- (id)syndicationIdentifierSaveStateCache;
+- (void)setSyndicationIdentifierSaveStateCache:;
+- (id)syndicationIdentifierToAssetUUIDCache;
+- (void)setSyndicationIdentifierToAssetUUIDCache:;
+- (id)syndicationIdentifiersWithActiveFetch;
+- (void)setSyndicationIdentifiersWithActiveFetch:;
+- (BOOL)libraryAlreadyOpened;
+- (void)setLibraryAlreadyOpened:;
++ (id)sharedInstance;
++ (id)photosSyndicationIdentifiersForMessage:;
++ (id)_assetFetchQueue;
++ (id)_photoLibraryInternalQueue;
+@end

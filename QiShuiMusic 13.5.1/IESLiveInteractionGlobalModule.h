@@ -1,0 +1,34 @@
+@interface IESLiveInteractionGlobalModule : IESLiveModule
+@property (nonatomic) IESLiveLinkmicRoomEnterTracker roomEnterTracker;
+@property (nonatomic) IESLiveLinkmicPreloadGlobalServiceImpl preloadGlobalImpl;
+@property (nonatomic) IESLiveLinkmicTrackerInterceptorImpl trackerInterceptorImpl;
+@property (nonatomic) IESLiveVIPGlobalServiceImpl vipGlobalServiceImpl;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)chatGroupService;
+- (Class)classForInteractiveQuickStartService;
+- (void)didSetAttachingDIContext;
+- (id)fastMatchService;
+- (id)interactTrackerInterceptor;
+- (id)interactiveMonitorService;
+- (void)openSoloKTVMySungViewWithSchemeParams:;
+- (id)preloadGlobalImpl;
+- (id)preloadGlobalService;
+- (void)pushToSoloKTVWithSource:schemaParams:room:;
+- (void)removeBannerSection;
+- (void)requestAddSongWithMusicModel:enterFrom:room:;
+- (id)roomEnterTracker;
+- (id)roomEnterTrackerService;
+- (void)setPreloadGlobalImpl:;
+- (void)setRoomEnterTracker:;
+- (void)setTrackerInterceptorImpl:;
+- (void)setVipGlobalServiceImpl:;
+- (id)soloKTVRecordService;
+- (id)trackerInterceptorImpl;
+- (id)vipGlobalService;
+- (id)vipGlobalServiceImpl;
+- (id)init;
+- (void).cxx_destruct;
+@end

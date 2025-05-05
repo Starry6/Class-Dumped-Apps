@@ -1,0 +1,38 @@
+@interface PFVideoAVObjectBuilder : NSObject
+@property (nonatomic) PFSlowMotionTimeRangeMapper _timeRangeMapperForPlayback;
+@property (nonatomic) PFSlowMotionTimeRangeMapper _timeRangeMapperForExport;
+@property (nonatomic) AVAsset _finalAsset;
+@property (nonatomic) AVAudioMix _finalAudioMix;
+@property (nonatomic) AVVideoComposition _finalVideoComposition;
+@property (nonatomic) AVAsset videoAsset;
+@property (nonatomic) PFVideoAdjustments videoAdjustments;
+@property (nonatomic) {?={?=qiIq}{?=qiIq}} timeRange;
+- (id)vcp_convertToOriginalTimerangeFromScaledTimerange:;
+- (id)timeRange;
+- (void)setTimeRange:;
+- (void).cxx_destruct;
+- (id)description;
+- (void)requestExportSessionWithExportPreset:resultHandler:;
+- (id)initWithVideoAsset:videoAdjustments:;
+- (void)requestAVAssetWithResultHandler:;
+- (void)requestAsynchronousPlayerItemWithResultHandler:;
+- (id)videoAsset;
+- (void)requestPlayerItemWithResultHandler:;
+- (id)convertToScaledTimeFromOriginalTime:forExport:;
+- (id)convertToOriginalTimeFromScaledTime:forExport:;
+- (id)initWithAsset:audioMix:videoComposition:;
+- (void)requestAsynchronousExportSessionWithExportPreset:resultHandler:;
+- (void)requestAsynchronousAVAssetWithResultHandler:;
+- (void)requestAVAssetForExport:withResultHandler:;
+- (void)_synchronouslyLoadSlowMotionPropertiesFromAsset:;
+- (id)_trimAssetIfNecessary:error:;
+- (id)videoAdjustments;
+- (id)_timeRangeMapperForPlayback;
+- (id)_timeRangeMapperForExport;
+- (id)_finalAsset;
+- (id)_finalAudioMix;
+- (id)_finalVideoComposition;
+- (id)_getOrCreateTimeRangeMapperForExport:;
+- (id)slowMotionRampInRangeForExport:;
+- (id)slowMotionRampOutRangeForExport:;
+@end

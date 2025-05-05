@@ -1,0 +1,2 @@
+@interface HotmailDeliveryAccount : MFHotmailSMTPAccount
+@end

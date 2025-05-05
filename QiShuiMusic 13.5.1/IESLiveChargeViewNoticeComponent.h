@@ -1,0 +1,34 @@
+@interface IESLiveChargeViewNoticeComponent : UIView
+@property (nonatomic) double width;
+@property (nonatomic) IESLiveChargeViewModel viewModel;
+@property (nonatomic) UIView containerView;
+@property (nonatomic) IESLiveGradientView backgroundGradientView;
+@property (nonatomic) UILabel tipTextLabel;
+@property (nonatomic) UIButton closeTipButton;
+@property (nonatomic) UIImageView tipImageView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)closeButtonIsClicked;
+- (id)closeTipButton;
+- (void)setCloseTipButton:;
+- (void)setTipImageView:;
+- (void)setTipTextLabel:;
+- (id)tipImageView;
+- (id)tipTextLabel;
+- (void)updateViewModel:;
+- (void)reload;
+- (id)viewModel;
+- (id)containerView;
+- (void)setContainerView:;
+- (id)initWithWidth:;
+- (void)setWidth:;
+- (double)width;
+- (void).cxx_destruct;
+- (void)setViewModel:;
+- (void)setupUI;
+- (double)viewHeight;
+- (id)backgroundGradientView;
+- (void)setBackgroundGradientView:;
+@end

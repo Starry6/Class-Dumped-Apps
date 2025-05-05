@@ -1,0 +1,30 @@
+@interface CloudPhotoServices : NSObject
++ (id)workQueue;
++ (id)generateGIFForVideoAtURL:destinationURL:completionHandler:;
++ (id)transcodeVideoAtURL:withAdjustments:destinationURL:options:reason:isCancellable:completionHandler:;
++ (void)generateFullSizeJPEGIfNecessaryFromInputResource:destinationDirectory:completionHandler:;
++ (void)generatePosterFrameForVideoAtURL:maximumPixelCount:destinationURL:reason:completionHandler:;
++ (BOOL)shouldGenerateVideoDerivativeForAVAsset:forResourceType:adjusted:;
++ (void)resizeImageAtURL:destinationURL:maximumPixelCount:bakeInOrientation:colorOutput:reason:completionHandler:;
++ (void)resizeImageAtURL:destinationURL:options:completionHandler:;
++ (BOOL)canGenerateImageDerivativesFromUTI:;
++ (BOOL)isMovieUTI:;
++ (BOOL)isUnsupportedOriginalFormatError:;
++ (void)generateDerivativeResourcesFromInputResource:withAdjustments:destinationDirectory:derivativesFilter:recordChangeType:includePosterFrameForVideo:completionHandler:;
++ (long long)paMediaConversionColorSpaceForCloudPhotoDerivativeColorOutput:;
++ (void)generateDerivativeResourcesFromInputResource:withAdjustments:destinationDirectory:includePosterFrameForVideo:completionHandler:;
++ (void)_generateImageDerivativeResourcesFromInputResource:destinationDirectory:isAdjusted:derivativesFilter:recordChangeType:completionHandler:;
++ (unsigned long long)_bestImageResourceTypeForPixelCount:;
++ (id)_filenameForResourceWithItemScopedIdentifier:resourceType:extension:;
++ (void)_createDerivativeResourcesFromInputURL:resourceTypes:withItemScopedIdentifier:destinationDirectory:outputResources:convertToSRGB:;
++ (id)derivativeImageResourceUniformTypeForResourceType:;
++ (id)_createCPLResourceFromURL:withResourceType:uniformType:itemScopedIdentifier:;
++ (void)_createPosterFrameResourcesFromInputURL:withItemScopedIdentifier:includeDerivative:destinationDirectory:outputResources:;
++ (id)_extractVideoMetadataResourceFrom:destinationDirectory:;
++ (void)_generateVideoDerivativeResourcesFromInputResource:withCPLAdjustments:destinationDirectory:derivativesFilter:recordChangeType:includePosterFrame:completionHandler:;
++ (BOOL)_shouldGenerateLargeVideoDerivativeForAVAsset:;
++ (BOOL)_shouldGenerateHDRMediumVideoDerivative;
++ (BOOL)_createVideoResourcesFromInputURL:withItemScopedIdentifier:videoAdjustments:resourceType:forIris:destinationDirectory:outputResources:error:;
++ (id)_imageServiceClient;
++ (id)_videoServiceClient;
+@end

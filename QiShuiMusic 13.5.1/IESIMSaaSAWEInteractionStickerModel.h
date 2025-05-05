@@ -1,0 +1,2 @@
+@interface IESIMSaaSAWEInteractionStickerModel : IESIMBaseApiModel
+@end

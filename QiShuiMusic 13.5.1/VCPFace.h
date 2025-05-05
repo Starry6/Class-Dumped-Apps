@@ -1,0 +1,34 @@
+@interface VCPFace : NSObject
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} bounds;
+@property (nonatomic) BOOL leftEyeClosed;
+@property (nonatomic) BOOL rightEyeClosed;
+@property (nonatomic) BOOL smile;
+@property (nonatomic) q yaw;
+@property (nonatomic) NSInteger trackID;
+@property (nonatomic) float confidence;
+@property (nonatomic) float faceQuality;
+@property (nonatomic) VNFaceObservation observation;
+- (long long)yaw;
+- (float)confidence;
+- (id)init;
+- (void)setConfidence:;
+- (void)setBounds:;
+- (void).cxx_destruct;
+- (int)trackID;
+- (id)bounds;
+- (void)setTrackID:;
+- (void)setObservation:;
+- (void)setYaw:;
+- (id)observation;
+- (BOOL)leftEyeClosed;
+- (BOOL)rightEyeClosed;
+- (void)setLeftEyeClosed:;
+- (void)setRightEyeClosed:;
+- (void)setFaceQuality:;
+- (float)faceQuality;
+- (unsigned long long)flagsForOrientation:width:height:;
+- (id)faceBounds:height:;
+- (id)faceBoundsWithTransform:height:transform:;
+- (BOOL)smile;
+- (void)setSmile:;
+@end

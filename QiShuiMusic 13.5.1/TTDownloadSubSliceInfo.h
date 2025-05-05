@@ -1,0 +1,30 @@
+@interface TTDownloadSubSliceInfo : NSObject
+@property (nonatomic) NSString fileStorageDir;
+@property (nonatomic) c sliceNumber;
+@property (nonatomic) Q subSliceNumber;
+@property (nonatomic) NSString subSliceName;
+@property (nonatomic) NSString subSliceFullPath;
+@property (nonatomic) q rangeStart;
+@property (nonatomic) q rangeEnd;
+@property (nonatomic) q sliceStatus;
+@property (nonatomic) BOOL isImmutable;
+- (void)setIsImmutable:;
+- (void)setSliceNumber:;
+- (void)setSliceStatus:;
+- (id)fileStorageDir;
+- (void)setFileStorageDir:;
+- (void)setSubSliceFullPath:;
+- (void)setSubSliceName:;
+- (void)setSubSliceNumber:;
+- (char)sliceNumber;
+- (long long)sliceStatus;
+- (id)subSliceFullPath;
+- (id)subSliceName;
+- (unsigned long long)subSliceNumber;
+- (void).cxx_destruct;
+- (BOOL)isImmutable;
+- (long long)rangeStart;
+- (void)setRangeStart:;
+- (long long)rangeEnd;
+- (void)setRangeEnd:;
+@end

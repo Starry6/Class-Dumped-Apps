@@ -1,0 +1,32 @@
+@interface MTKTextureLoaderData : NSObject
+@property (nonatomic) NSString imageOrigin;
+@property (nonatomic) Q numArrayElements;
+@property (nonatomic) Q numFaces;
+@property (nonatomic) Q numMipmapLevels;
+@property (nonatomic) Q width;
+@property (nonatomic) Q height;
+@property (nonatomic) Q depth;
+@property (nonatomic) Q textureType;
+@property (nonatomic) Q pixelFormat;
+- (unsigned long long)numFaces;
+- (unsigned long long)depth;
+- (unsigned long long)textureType;
+- (id)init;
+- (void)dealloc;
+- (void)setPixelFormat:;
+- (void)setWidth:;
+- (unsigned long long)height;
+- (void)setDepth:;
+- (unsigned long long)width;
+- (void)setTextureType:;
+- (void)setHeight:;
+- (unsigned long long)pixelFormat;
+- (void)setNumFaces:;
+- (id)getDataForArrayElement:face:level:depthPlane:bytesPerRow:bytesPerImage:;
+- (id)imageOrigin;
+- (void)setImageOrigin:;
+- (unsigned long long)numArrayElements;
+- (void)setNumArrayElements:;
+- (unsigned long long)numMipmapLevels;
+- (void)setNumMipmapLevels:;
+@end

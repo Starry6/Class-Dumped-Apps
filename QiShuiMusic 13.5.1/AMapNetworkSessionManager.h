@@ -1,0 +1,30 @@
+@interface AMapNetworkSessionManager : NSObject
+@property (nonatomic) NSURLSession session;
+@property (nonatomic) NSMutableDictionary sessionTasks;
+@property (nonatomic) NSOperationQueue operationQueue;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)cancelTaskWithOperation:;
+- (BOOL)evaluateServerTrust:forDomain:;
+- (void)sendRequest:withOperation:;
+- (void)setSessionTasks:;
+- (void)URLSession:dataTask:didReceiveData:;
+- (void)setSession:;
+- (void)URLSession:task:didReceiveChallenge:completionHandler:;
+- (void)URLSession:task:didCompleteWithError:;
+- (void)URLSession:task:didFinishCollectingMetrics:;
+- (void)URLSession:didBecomeInvalidWithError:;
+- (id)sessionTasks;
+- (void)URLSession:dataTask:didReceiveResponse:completionHandler:;
+- (id)operationQueue;
+- (void)URLSession:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:;
+- (id)session;
+- (void).cxx_destruct;
+- (void)setOperationQueue:;
++ (void)cancelWithOperation:;
++ (void)startRequest:withOperation:;
++ (id)defaultManager;
++ (id)sendSynchronousRequest:returningResponse:error:;
+@end

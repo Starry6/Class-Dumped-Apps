@@ -1,0 +1,2 @@
+@interface UGEEventParse : NSObject
+@end

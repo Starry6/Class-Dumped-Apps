@@ -1,0 +1,33 @@
+@interface CKModifySubscriptionsOperation : CKDatabaseOperation
+@property (nonatomic) <CKModifySubscriptionsOperationCallbacks> clientOperationCallbackProxy;
+@property (nonatomic) CKModifySubscriptionsOperationInfo operationInfo;
+@property (nonatomic) NSArray subscriptionsToSave;
+@property (nonatomic) NSArray subscriptionIDsToDelete;
+@property (nonatomic) @? perSubscriptionSaveBlock;
+@property (nonatomic) @? perSubscriptionDeleteBlock;
+@property (nonatomic) @? modifySubscriptionsCompletionBlock;
+- (void)_finishOnCallbackQueueWithError:;
+- (id)activityCreate;
+- (id)init;
+- (void)setSubscriptionsToSave:;
+- (void)performCKOperation;
+- (id)subscriptionsToSave;
+- (id)perSubscriptionSaveBlock;
+- (void)setPerSubscriptionDeleteBlock:;
+- (void)fillFromOperationInfo:;
+- (BOOL)hasCKOperationCallbacksSet;
+- (id)modifySubscriptionsCompletionBlock;
+- (void).cxx_destruct;
+- (void)setPerSubscriptionSaveBlock:;
+- (void)setSubscriptionIDsToDelete:;
+- (id)subscriptionIDsToDelete;
+- (void)handleSubscriptionSaveForSubscriptionID:error:;
+- (void)fillOutOperationInfo:;
+- (id)perSubscriptionDeleteBlock;
+- (void)setModifySubscriptionsCompletionBlock:;
+- (id)initWithSubscriptionsToSave:subscriptionIDsToDelete:;
+- (BOOL)CKOperationShouldRun:;
+- (void)setModifySubscriptionsCompletionBlockIVar:;
+- (void)handleSubscriptionDeleteForSubscriptionID:error:;
++ (void)applyDaemonCallbackInterfaceTweaks:;
+@end

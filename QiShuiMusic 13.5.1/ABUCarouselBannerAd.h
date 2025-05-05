@@ -1,0 +1,35 @@
+@interface ABUCarouselBannerAd : NSObject
+@property (nonatomic) NSString _unitID;
+@property (nonatomic) UIViewController _vc;
+@property (nonatomic) {CGSize=dd} _adSize;
+@property (nonatomic) <ABUBannerAdDelegate> delegate;
+@property (nonatomic) ABUBannerAd _firstLoadAd;
+@property (nonatomic) ABUBannerAd _showBannerAd;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)_adSize;
+- (void)destory;
+- (void)set_vc:;
+- (id)_firstLoadAd;
+- (id)_showBannerAd;
+- (void)bannerAd:didLoadFailWithError:;
+- (id)bannerAdBuilder:;
+- (void)bannerAdDidLoad:bannerView:;
+- (void)bannerCarouselViewDidShowBannerAd:;
+- (id)initWithAdUnitID:rootViewController:adSize:;
+- (id)realBannerAdDelegate:;
+- (void)set_adSize:;
+- (void)set_firstLoadAd:;
+- (void)set_showBannerAd:;
+- (void)set_unitID:;
+- (void)setDelegate:;
+- (id)debugDescription;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)description;
+- (id)forwardingTargetForSelector:;
+- (id)_unitID;
+- (id)_vc;
+@end

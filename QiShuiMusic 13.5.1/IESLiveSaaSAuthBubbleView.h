@@ -1,0 +1,33 @@
+@interface IESLiveSaaSAuthBubbleView : UIView
+@property (nonatomic) UIView contentView;
+@property (nonatomic) UILabel textLabel;
+@property (nonatomic) UIView arrowView;
+@property (nonatomic) double arrowPosition;
+@property (nonatomic) double arrowWidth;
+@property (nonatomic) double arrowHeight;
+@property (nonatomic) BOOL isShowing;
+- (double)arrowWidth;
+- (void)clickSelfView;
+- (id)getBgColor;
+- (void)setArrowWidth:;
+- (void)setIsShowing:;
+- (void)updateFrameWithPoint:;
+- (void)dismiss;
+- (id)textLabel;
+- (id)contentView;
+- (BOOL)isShowing;
+- (double)arrowHeight;
+- (void)show;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (void)setTextLabel:;
+- (id)arrowView;
+- (void)setArrowView:;
+- (void)setArrowHeight:;
+- (void)setupViews;
+- (void)setArrowPosition:;
+- (double)arrowPosition;
+- (void)updateFrame;
++ (id)showInView:text:arrowPoint:;
+@end

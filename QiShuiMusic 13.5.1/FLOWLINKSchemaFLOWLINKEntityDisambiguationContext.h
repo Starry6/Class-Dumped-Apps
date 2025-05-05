@@ -1,0 +1,37 @@
+@interface FLOWLINKSchemaFLOWLINKEntityDisambiguationContext : SISchemaInstrumentationMessage
+@property (nonatomic) FLOWLINKSchemaFLOWLINKEntityDisambiguationStarted startedOrChanged;
+@property (nonatomic) BOOL hasStartedOrChanged;
+@property (nonatomic) FLOWLINKSchemaFLOWLINKEntityDisambiguationEnded ended;
+@property (nonatomic) BOOL hasEnded;
+@property (nonatomic) FLOWLINKSchemaFLOWLINKEntityDisambiguationFailed failed;
+@property (nonatomic) BOOL hasFailed;
+@property (nonatomic) NSData jsonData;
+@property (nonatomic) Q whichContextevent;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (BOOL)hasFailed;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (id)failed;
+- (BOOL)isEqual:;
+- (BOOL)hasEnded;
+- (void)setStartedOrChanged:;
+- (id)startedOrChanged;
+- (id)ended;
+- (void)setEnded:;
+- (void)setFailed:;
+- (void)setHasEnded:;
+- (void)setHasStartedOrChanged:;
+- (void)deleteStartedOrChanged;
+- (void)deleteEnded;
+- (void)deleteFailed;
+- (unsigned long long)whichContextevent;
+- (BOOL)hasStartedOrChanged;
+- (void)setHasFailed:;
+@end

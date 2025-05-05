@@ -1,0 +1,25 @@
+@interface CLDispatchSilo : CLSilo
+- (void)sync:;
+- (void)assertInside;
+- (void)heartBeat:;
+- (void)assertOutside;
+- (id)newTimer;
+- (id)operationQueue;
+- (void)suspend;
+- (void)_setLatchedAbsoluteTimestamp:;
+- (id)debugDescription;
+- (BOOL)isSuspended;
+- (void)resume;
+- (double)currentLatchedAbsoluteTimestamp;
+- (void)afterInterval:async:;
+- (void).cxx_destruct;
+- (id)getTimeCoercibleVariantInstance;
+- (id)initMain;
+- (id)initWithUnderlyingQueue:bePermissive:;
+- (void)intendToSync;
+- (id)initWithIdentifier:;
+- (BOOL)inPermissiveMode;
+- (id)queue;
+- (id)initWithUnderlyingQueue:;
+- (void)async:;
+@end

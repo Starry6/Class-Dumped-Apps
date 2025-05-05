@@ -1,0 +1,36 @@
+@interface BSServiceConnectionEndpoint : NSObject
+@property (nonatomic) BOOL nonLaunching;
+@property (nonatomic) NSString targetDescription;
+@property (nonatomic) NSString service;
+@property (nonatomic) NSString instance;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)instance;
+- (id)init;
+- (void)encodeWithXPCDictionary:;
+- (id)initWithBSXPCCoder:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)service;
+- (BOOL)isNonLaunching;
+- (void)encodeWithCoder:;
+- (id)initWithXPCDictionary:;
+- (BOOL)isNullEndpoint;
+- (id)targetDescription;
+- (long long)compare:;
+- (void).cxx_destruct;
+- (void)saveAsInjectorEndowmentForKey:;
+- (void)encodeWithBSXPCCoder:;
+- (id)description;
+- (BOOL)isEqualToServiceEndpoint:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
++ (BOOL)supportsSecureCoding;
++ (id)endpointForSystemMachName:service:instance:;
++ (id)endpointForMachName:service:instance:;
++ (id)defaultShellMachName;
++ (BOOL)supportsBSXPCSecureCoding;
++ (id)nullEndpointForService:instance:;
+@end

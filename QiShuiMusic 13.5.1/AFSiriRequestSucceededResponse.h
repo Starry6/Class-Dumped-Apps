@@ -1,0 +1,2 @@
+@interface AFSiriRequestSucceededResponse : AFSiriResponse
+@end

@@ -1,0 +1,36 @@
+@interface ICStoreRequestContext : ICRequestContext
+@property (nonatomic) ICUserIdentity identity;
+@property (nonatomic) ICUserIdentity delegatedIdentity;
+@property (nonatomic) ICUserIdentityStore identityStore;
+@property (nonatomic) ICStoreDialogResponseHandler storeDialogResponseHandler;
+@property (nonatomic) BOOL allowsExpiredBags;
+@property (nonatomic) q personalizationStyle;
+- (id)userAgent;
+- (id)identityStore;
+- (void)setIdentity:;
+- (long long)personalizationStyle;
+- (id)identity;
+- (id)initWithIdentity:identityStore:clientInfo:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)initWithBlock:;
+- (void)encodeWithCoder:;
+- (void)setAllowsExpiredBags:;
+- (id)initWithIdentity:;
+- (void).cxx_destruct;
+- (id)description;
+- (void)setPersonalizationStyle:;
+- (id)copyWithBlock:;
+- (BOOL)allowsExpiredBags;
+- (BOOL)isEqual:;
+- (void)setIdentityStore:;
+- (void)setDelegatedIdentity:;
+- (id)initWithIdentity:clientInfo:;
+- (id)initWithIdentity:identityStore:clientInfo:authenticationProvider:;
+- (void)setStoreDialogResponseHandler:;
+- (id)_webkitUserAgentVersion;
+- (id)delegatedIdentity;
+- (id)storeDialogResponseHandler;
++ (BOOL)supportsSecureCoding;
++ (id)activeStoreAccountRequestContext;
+@end

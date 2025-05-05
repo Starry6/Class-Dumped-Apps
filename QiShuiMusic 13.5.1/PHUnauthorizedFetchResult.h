@@ -1,0 +1,34 @@
+@interface PHUnauthorizedFetchResult : PHFetchResult
+@property (nonatomic) @? fetchBlock;
+@property (nonatomic) PHFetchOptions options;
+@property (nonatomic) NSArray objects;
+@property (nonatomic) NSOrderedSet objectIDs;
+@property (nonatomic) NSString identifier;
+- (id)photoLibrary;
+- (id)containerIdentifier;
+- (id)fetchedObjects;
+- (id)identifier;
+- (id)fetchResultWithChangeHandlingValue:;
+- (id)calculateMediaTypeCounts;
+- (unsigned long long)hash;
+- (id)objectIDAtIndex:;
+- (id)fetchedObjectIDs;
+- (id)objectIDs;
+- (unsigned long long)possibleChangesForChange:;
+- (id)objects;
+- (id)options;
+- (void).cxx_destruct;
+- (void)updateRegistrationForChangeNotificationDeltas;
+- (id)description;
+- (id)fetchBlock;
+- (id)changeHandlingKey;
+- (id)changeHandlingValueUsingSeedOids:withChange:usingManagedObjectContext:;
+- (long long)collectionFetchType;
+- (id)fetchSortDescriptors;
+- (BOOL)isFullyBackedByObjectIDs;
+- (id)fetchRequest;
+- (BOOL)isEqual:;
+- (id)copyWithOptions:;
+- (void)prefetchObjectsAtIndexes:;
+- (id)initWithOptions:status:fetchBlock:;
+@end

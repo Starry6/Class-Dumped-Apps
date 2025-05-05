@@ -1,0 +1,34 @@
+@interface CannedVideoCapture : VCVideoCapture
+@property (nonatomic) ^{CannedVideoCapturePrivate={_opaque_pthread_mutex_t=q[56c]}Ai{_VCVideoSourceToken=(?={?=b24b8}I)}i^{OpaqueCMClock}B^{OpaqueFigThread}B{_opaque_pthread_mutex_t=q[56c]}{_opaque_pthread_cond_t=q[40c]}^{OpaqueFigThread}B{_opaque_pthread_mutex_t=q[56c]}{_opaque_pthread_cond_t=q[40c]}{_opaque_pthread_mutex_t=q[56c]}^{Frame}i} pimpl;
+@property (nonatomic) <CannedVideoFrameFeeder> frameFeeder;
+@property (nonatomic) BOOL enableTxTimestampAlignmentLogs;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (int)stop:;
+- (int)setFrameRate:;
+- (void)dealloc;
+- (void)setOrientation:;
+- (id)pimpl;
+- (int)startPreview;
+- (BOOL)isPreviewRunning;
+- (BOOL)isFrontCamera;
+- (int)startCaptureWithWidth:height:frameRate:;
+- (int)setWidth:height:frameRate:;
+- (int)copyColorInfo:;
+- (int)configureCaptureWithToken:;
+- (int)getFrameRate;
+- (int)frameCount:;
+- (int)frameBecameAvailableCount:figBufferQueueEmptyCount:figBufferQueueErrorCount:;
+- (BOOL)cameraSupportsFormatWidth:height:;
+- (BOOL)isPortraitResolutionCaptureActive;
+- (id)initWithCaptureServer:width:height:frameRate:videoSourceToken:video:error:;
+- (int)startThreads;
+- (void)stopThreads;
+- (id)frameFeeder;
+- (void)setFrameFeeder:;
+- (BOOL)enableTxTimestampAlignmentLogs;
++ (int)cannedVideoTypeForPath:;
++ (int)createPixelBufferPool:withWidth:height:;
+@end

@@ -1,0 +1,37 @@
+@interface SSVMediaSocialPostDescription : NSObject
+@property (nonatomic) NSNumber accountIdentifier;
+@property (nonatomic) NSArray attachments;
+@property (nonatomic) BOOL attributed;
+@property (nonatomic) NSString authorIdentifier;
+@property (nonatomic) NSString authorType;
+@property (nonatomic) NSArray contentItems;
+@property (nonatomic) NSArray externalServiceDestinations;
+@property (nonatomic) NSString sourceApplicationIdentifier;
+@property (nonatomic) NSString text;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithXPCEncoding:;
+- (id)contentItems;
+- (id)copyXPCEncoding;
+- (void)setAccountIdentifier:;
+- (id)accountIdentifier;
+- (void)setText:;
+- (BOOL)isAttributed;
+- (void).cxx_destruct;
+- (void)setAttachments:;
+- (id)attachments;
+- (id)text;
+- (void)setContentItems:;
+- (id)copyWithZone:;
+- (id)sourceApplicationIdentifier;
+- (void)setAttributed:;
+- (id)authorIdentifier;
+- (void)setAuthorIdentifier:;
+- (id)authorType;
+- (void)setAuthorType:;
+- (id)externalServiceDestinations;
+- (void)setExternalServiceDestinations:;
+- (void)setSourceApplicationIdentifier:;
+@end

@@ -1,0 +1,37 @@
+@interface UgenButtonWidget : UgenWidget
+@property (nonatomic) UIButton button;
+@property (nonatomic) NSString text;
+@property (nonatomic) NSString textColor;
+@property (nonatomic) NSString highlightedTextColor;
+@property (nonatomic) q textSize;
+@property (nonatomic) NSString textStyle;
+@property (nonatomic) q lines;
+@property (nonatomic) q maxLines;
+@property (nonatomic) NSString ellipsize;
+@property (nonatomic) NSString textDecoration;
+- (id)ellipsize;
+- (void)setEllipsize:;
+- (id)ugenView;
+- (void)setMaxLines:;
+- (void)setHighlightedTextColor:;
+- (id)init;
+- (id)textStyle;
+- (id)highlightedTextColor;
+- (void)setText:;
+- (long long)maxLines;
+- (void)setTextStyle:;
+- (void)layout;
+- (void)setTextColor:;
+- (id)button;
+- (void).cxx_destruct;
+- (id)textColor;
+- (long long)lines;
+- (void)setButton:;
+- (id)text;
+- (void)render;
+- (long long)textSize;
+- (void)setLines:;
+- (id)textDecoration;
+- (void)setTextDecoration:;
+- (void)setTextSize:;
+@end

@@ -1,0 +1,34 @@
+@interface SKPhysicsWorld : NSObject
+@property (nonatomic) {CGVector=dd} gravity;
+@property (nonatomic) double speed;
+@property (nonatomic) <SKPhysicsContactDelegate> contactDelegate;
+- (void)setSpeed:;
+- (id)initWithCoder:;
+- (double)speed;
+- (id)gravity;
+- (id)fields;
+- (void)encodeWithCoder:;
+- (BOOL)stepWithTime:velocityIterations:positionIterations:;
+- (void)addJoint:;
+- (void)addBody:;
+- (void)enumerateBodiesInRect:usingBlock:;
+- (void)setContactDelegate:;
+- (void)removeJoint:;
+- (void)removeBody:;
+- (id)contactDelegate;
+- (void)setGravity:;
+- (void)removeAllJoints;
+- (void)removeAllBodies;
+- (BOOL)hasBodies;
+- (id)bodies;
+- (BOOL)hasFields;
+- (void)enumerateBodiesAtPoint:usingBlock:;
+- (void)enumerateBodiesAlongRayStart:end:usingBlock:;
+- (id)bodyAtPoint:;
+- (id)bodyInRect:;
+- (id)bodyAlongRayStart:end:;
+- (id)sampleFields:;
+- (id)sampleFieldsAt:;
++ (id)allocWithZone:;
++ (BOOL)supportsSecureCoding;
+@end

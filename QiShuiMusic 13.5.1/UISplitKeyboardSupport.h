@@ -1,0 +1,35 @@
+@interface UISplitKeyboardSupport : UIKeyboardMotionSupport
+@property (nonatomic) BOOL isTranslating;
+@property (nonatomic) BOOL isSplitting;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)dock;
+- (void)updateProgress:startHeight:endHeight:;
+- (BOOL)gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:;
+- (void)invalidateDisplayLink;
+- (void)prepareForTransition;
+- (BOOL)isSplitting;
+- (void)transitionDidFinish:;
+- (BOOL)isTranslating;
+- (void).cxx_destruct;
+- (BOOL)gestureRecognizer:shouldReceiveTouch:;
+- (BOOL)gestureRecognizerShouldBegin:;
+- (BOOL)completedPlacementFrom:to:forController:;
+- (void)finishTransitionWithCompletion:;
+- (void)_disconnectingController:;
+- (void)_connectController:;
+- (void)_updatedController;
+- (BOOL)generateSplitNotificationForNewPlacement:;
+- (void)translateDetected:;
+- (void)_updateBounceAnimation:;
+- (void)updatedControllerApplicator:;
+- (void)willPerformPlacementFrom:to:forController:;
+- (BOOL)startedPlacementFrom:to:forController:;
+- (void)cancelGestureRecognizers;
+- (void)_updateKeyboardLayoutGuideForHostFrame:;
+- (void)cancelBounceAnimation;
+- (void)bounceAnimationDidFinish;
+- (void)undock;
+@end

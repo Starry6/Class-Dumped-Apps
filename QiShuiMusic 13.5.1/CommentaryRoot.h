@@ -1,0 +1,2 @@
+@interface CommentaryRoot : GPBRootObject
+@end

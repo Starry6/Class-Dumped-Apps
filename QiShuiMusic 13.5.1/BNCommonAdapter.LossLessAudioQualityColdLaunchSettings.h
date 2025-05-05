@@ -1,0 +1,2 @@
+@interface BNCommonAdapter.LossLessAudioQualityColdLaunchSettings : _TtCs12_SwiftObject
+@end

@@ -1,0 +1,31 @@
+@interface SFColor : NSObject
+@property (nonatomic) double redComponent;
+@property (nonatomic) double greenComponent;
+@property (nonatomic) double blueComponent;
+@property (nonatomic) double alphaComponent;
+@property (nonatomic) NSDictionary dictionaryRepresentation;
+@property (nonatomic) NSData jsonData;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithProtobuf:;
+- (id)initWithCoder:;
+- (id)jsonData;
+- (double)alphaComponent;
+- (void)encodeWithCoder:;
+- (id)dictionaryRepresentation;
+- (id)copyWithZone:;
+- (double)redComponent;
+- (double)greenComponent;
+- (double)blueComponent;
+- (void)setBlueComponent:;
+- (void)setAlphaComponent:;
+- (void)setRedComponent:;
+- (void)setGreenComponent:;
+- (BOOL)hasRedComponent;
+- (BOOL)hasGreenComponent;
+- (BOOL)hasBlueComponent;
+- (BOOL)hasAlphaComponent;
++ (BOOL)supportsSecureCoding;
+@end

@@ -1,0 +1,30 @@
+@interface HARIntermittentPredictStrategy : NSObject
+@property (nonatomic) HARSensorDataSampler dataSampler;
+@property (nonatomic) NSObject<OS_dispatch_source> frequencyTimer;
+@property (nonatomic) double frequencyInterval;
+@property (nonatomic) NSObject<OS_dispatch_queue> controlFrequencyQueue;
+@property (nonatomic) BOOL predicting;
+@property (nonatomic) <HARIntermittentPredictStrategyDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setDataSampler:;
+- (id)controlFrequencyQueue;
+- (id)dataSampler;
+- (double)frequencyInterval;
+- (id)frequencyTimer;
+- (id)initWithSensorDataSampler:delegate:;
+- (void)onSensorDataReady;
+- (BOOL)predicting;
+- (void)setControlFrequencyQueue:;
+- (void)setFrequencyInterval:;
+- (void)setFrequencyTimer:;
+- (void)setPredicting:;
+- (void)startPredict;
+- (void)stopPredict;
+- (void)dealloc;
+- (void)setDelegate:;
+- (id)delegate;
+- (void).cxx_destruct;
+@end

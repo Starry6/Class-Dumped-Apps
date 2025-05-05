@@ -1,0 +1,34 @@
+@interface VNFaceTorsoprint : VNEspressoModelImageprint
+@property (nonatomic) Q personId;
+@property (nonatomic) VNFaceprint faceprint;
+@property (nonatomic) VNTorsoprint torsoprint;
+@property (nonatomic) BOOL validFaceprint;
+@property (nonatomic) BOOL validTorsoprint;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (unsigned long long)personId;
+- (void)setPersonId:;
+- (id)faceprint;
+- (id)serializeStateAndReturnError:;
+- (id)initWithData:elementCount:elementType:lengthInBytes:faceprintConfidence:torsoprintConfidence:;
+- (id)initWithData:elementCount:elementType:lengthInBytes:faceprintConfidence:torsoprintConfidence:originatingRequestSpecifier:;
+- (id)initWithFaceprint:torsoprint:;
+- (id)initWithFaceprint:torsoPrint:requestRevision:;
+- (id)initWithFaceprint:torsoPrint:originatingRequestSpecifier:;
+- (id)computeDistance:withDistanceFunction:error:;
+- (BOOL)isValidFaceprint;
+- (BOOL)isValidTorsoprint;
+- (id)initWithState:byteOffset:error:;
+- (unsigned long long)serializeStateIntoData:startingAtByteOffset:error:;
+- (unsigned long long)serializedLength;
+- (id)torsoprint;
++ (BOOL)supportsSecureCoding;
++ (id)currentVersion;
++ (id)defaultOriginatingRequestClassNameForRequestRevision:;
++ (unsigned int)currentCodingVersion;
++ (id)codingTypesToCodingKeys;
++ (unsigned long long)currentSerializationVersion;
++ (BOOL)shouldIgnoreLagecyLabelsAndConfidenceForHeaderSerializationVersion:;
++ (BOOL)shouldAssumeOriginatingRequestClassForHeaderSerializationVersion:;
+@end

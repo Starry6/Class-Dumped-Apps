@@ -1,0 +1,2 @@
+@interface HTSLiveStrategyRoot : GPBRootObject
+@end

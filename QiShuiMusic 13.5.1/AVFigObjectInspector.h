@@ -1,0 +1,22 @@
+@interface AVFigObjectInspector : NSObject
+- (id)_valueAsCFTypeForProperty:;
+- (id)_sizeForProperty:;
+- (id)_stringForProperty:;
+- (id)_timeForProperty:defaultValue:;
+- (id)_timeForProperty:;
+- (id)_timeRangeForProperty:;
+- (float)_floatForProperty:defaultValue:;
+- (float)_floatForProperty:;
+- (short)_SInt16ForProperty:;
+- (int)_SInt32ForProperty:;
+- (long long)_longLongForProperty:;
+- (unsigned char)_booleanForProperty:;
+- (id)_sizeForProperty:defaultValue:;
+- (id)_affineTransformForProperty:;
+- (id)_tollFreeBridgedObjectForProperty:;
+- (id)_arrayForProperty:;
+- (id)_nonNilArrayForProperty:;
+- (id)_dictionaryForProperty:;
+- (id)_nonNilDictionaryForProperty:;
+- (id)_dataForProperty:;
+@end

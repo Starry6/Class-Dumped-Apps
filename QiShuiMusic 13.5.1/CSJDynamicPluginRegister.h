@@ -1,0 +1,2 @@
+@interface CSJDynamicPluginRegister : NSObject
+@end

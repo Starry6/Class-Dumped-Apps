@@ -1,0 +1,31 @@
+@interface MPSBinaryImageKernel : MPSKernel
+@property (nonatomic) {?=qqq} primaryOffset;
+@property (nonatomic) {?=qqq} secondaryOffset;
+@property (nonatomic) Q primaryEdgeMode;
+@property (nonatomic) Q secondaryEdgeMode;
+@property (nonatomic) {?={?=QQQ}{?=QQQ}} clipRect;
+- (id)initWithCoder:device:;
+- (id)copyWithZone:device:;
+- (id)init;
+- (id)clipRect;
+- (id)debugDescription;
+- (void)encodeWithCoder:;
+- (id)initWithDevice:;
+- (void)setClipRect:;
+- (void)setSecondaryOffset:;
+- (void)setSecondaryEdgeMode:;
+- (void)setPrimaryOffset:;
+- (void)encodeToCommandBuffer:primaryImage:secondaryImage:destinationImage:;
+- (BOOL)encodeToCommandBuffer:primaryTexture:inPlaceSecondaryTexture:fallbackCopyAllocator:;
+- (BOOL)encodeToCommandBuffer:inPlacePrimaryTexture:secondaryTexture:fallbackCopyAllocator:;
+- (void)encodeToCommandEncoder:commandBuffer:primaryTexture:secondaryTexture:destinationTexture:;
+- (void)encodeToCommandBuffer:primaryTexture:secondaryTexture:destinationTexture:;
+- (void)encodeToCommandEncoder:commandBuffer:primaryImage:secondaryImage:destinationImage:;
+- (id)primarySourceRegionForDestinationSize:;
+- (id)secondarySourceRegionForDestinationSize:;
+- (id)primaryOffset;
+- (id)secondaryOffset;
+- (unsigned long long)primaryEdgeMode;
+- (void)setPrimaryEdgeMode:;
+- (unsigned long long)secondaryEdgeMode;
+@end

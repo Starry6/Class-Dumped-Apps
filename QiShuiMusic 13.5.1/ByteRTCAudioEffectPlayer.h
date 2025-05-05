@@ -1,0 +1,23 @@
+@interface ByteRTCAudioEffectPlayer : NSObject
+- (int)getDuration:;
+- (id)initWithAudioEffectPlayer:;
+- (int)start:filePath:config:;
+- (int)preload:filePath:;
+- (int)unloadAll;
+- (int)resumeAll;
+- (int)setPosition:position:;
+- (int)getPosition:;
+- (int)setVolume:volume:;
+- (int)setVolumeAll:;
+- (int)stop:;
+- (void)dealloc;
+- (int)pause:;
+- (int)setEventHandler:;
+- (int)unload:;
+- (void).cxx_destruct;
+- (id).cxx_construct;
+- (int)resume:;
+- (int)stopAll;
+- (int)pauseAll;
+- (int)getVolume:;
+@end

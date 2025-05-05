@@ -1,0 +1,34 @@
+@interface IESECGoodsDetailCouponElement : MTLModel
+@property (nonatomic) q elementType;
+@property (nonatomic) IESECURLModel image;
+@property (nonatomic) IESECURLModel avatar;
+@property (nonatomic) NSString text;
+@property (nonatomic) NSString textColor;
+@property (nonatomic) q blankWidth;
+@property (nonatomic) q endTime;
+@property (nonatomic) q currentTime;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)blankWidth;
+- (void)setBlankWidth:;
+- (void)setCurrentTime:;
+- (void)setText:;
+- (void)setEndTime:;
+- (void)setImage:;
+- (long long)endTime;
+- (long long)elementType;
+- (void)setTextColor:;
+- (void).cxx_destruct;
+- (id)textColor;
+- (long long)currentTime;
+- (id)text;
+- (id)image;
+- (void)setElementType:;
+- (id)avatar;
+- (void)setAvatar:;
++ (id)avatarJSONTransformer;
++ (id)imageJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

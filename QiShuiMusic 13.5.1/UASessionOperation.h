@@ -1,0 +1,33 @@
+@interface UASessionOperation : NSOperation
+@property (nonatomic) BOOL certError;
+@property (nonatomic) NSURLRequest request;
+@property (nonatomic) NSURLSession session;
+@property (nonatomic) NSMutableData receiveData;
+@property (nonatomic) NSData certData;
+@property (nonatomic) @? completion;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setReceiveData:;
+- (BOOL)certError;
+- (void)setCertError:;
+- (id)completion;
+- (void)URLSession:dataTask:didReceiveData:;
+- (id)initWithRequest:;
+- (void)setCompletion:;
+- (void)setSession:;
+- (void)URLSession:didReceiveChallenge:completionHandler:;
+- (void)cancel;
+- (void)dealloc;
+- (void)URLSession:task:didCompleteWithError:;
+- (void)URLSession:dataTask:didReceiveResponse:completionHandler:;
+- (id)request;
+- (void)main;
+- (id)session;
+- (void).cxx_destruct;
+- (void)setRequest:;
+- (id)certData;
+- (void)setCertData:;
+- (id)receiveData;
+@end

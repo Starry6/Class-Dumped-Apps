@@ -1,0 +1,27 @@
+@interface CEMSystemWatchDeclaration : CEMConfigurationBase
+@property (nonatomic) NSNumber payloadForceWatchWristDetection;
+@property (nonatomic) NSNumber payloadAllowPairedWatch;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (BOOL)multipleAllowed;
+- (BOOL)mustBeSupervised;
+- (int)activationLevel;
+- (id)assetReferences;
+- (BOOL)loadPayload:error:;
+- (id)serializePayloadWithAssetProviders:;
+- (id)payloadForceWatchWristDetection;
+- (void)setPayloadForceWatchWristDetection:;
+- (id)payloadAllowPairedWatch;
+- (void)setPayloadAllowPairedWatch:;
++ (id)profileType;
++ (id)buildRequiredOnlyWithIdentifier:;
++ (id)registeredClassName;
++ (id)registeredIdentifier;
++ (id)allowedPayloadKeys;
++ (id)restrictionPayloadKeys;
++ (id)buildWithIdentifier:withForceWatchWristDetection:withAllowPairedWatch:;
+@end

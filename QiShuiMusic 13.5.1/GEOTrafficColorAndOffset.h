@@ -1,0 +1,32 @@
+@interface GEOTrafficColorAndOffset : PBCodable
+@property (nonatomic) BOOL hasColor;
+@property (nonatomic) I color;
+@property (nonatomic) BOOL hasOffset;
+@property (nonatomic) I offset;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (BOOL)hasOffset;
+- (id)unknownFields;
+- (void)setOffset:;
+- (id)initWithJSON:;
+- (void)setColor:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (unsigned int)offset;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (unsigned int)color;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (void)setHasOffset:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setHasColor:;
+- (BOOL)hasColor;
++ (BOOL)isValid:;
+@end

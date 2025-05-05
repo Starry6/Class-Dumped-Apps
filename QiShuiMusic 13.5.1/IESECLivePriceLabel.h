@@ -1,0 +1,37 @@
+@interface IESECLivePriceLabel : UILabel
+@property (nonatomic) NSAttributedString lastPrice;
+@property (nonatomic) NSNumber originPrice;
+@property (nonatomic) IESECPriceStringBuilder configuration;
+@property (nonatomic) @? price;
+@property (nonatomic) @? prefix;
+@property (nonatomic) @? suffix;
+@property (nonatomic) @? addCrossLine;
+@property (nonatomic) @? hideIfNeed;
+@property (nonatomic) @? useSuffix;
+@property (nonatomic) @? maxPrice;
+@property (nonatomic) @? waitToShowPrice;
+- (id)waitToShowPrice;
+- (void)setOriginPrice:;
+- (id)addCrossLine;
+- (id)hideIfNeed;
+- (id)lastPrice;
+- (id)maxPrice;
+- (id)originPrice;
+- (void)setAddCrossLine:;
+- (void)setHideIfNeed:;
+- (void)setLastPrice:;
+- (void)setMaxPrice:;
+- (void)setUseSuffix:;
+- (void)setWaitToShowPrice:;
+- (id)useSuffix;
+- (id)suffix;
+- (void)setConfiguration:;
+- (id)build;
+- (void)setPrefix:;
+- (id)configuration;
+- (id)prefix;
+- (void).cxx_destruct;
+- (void)setSuffix:;
+- (id)price;
+- (void)setPrice:;
+@end

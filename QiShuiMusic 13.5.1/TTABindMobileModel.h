@@ -1,0 +1,2 @@
+@interface TTABindMobileModel : TTAUserModel
+@end

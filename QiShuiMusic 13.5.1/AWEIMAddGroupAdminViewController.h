@@ -1,0 +1,36 @@
+@interface AWEIMAddGroupAdminViewController : AWEIMListBaseViewController
+@property (nonatomic) NSArray initialSelectedAdminIds;
+@property (nonatomic) UIButton rightButton;
+@property (nonatomic) IESIMUILoadingView loadingView;
+@property (nonatomic) AWEIMBaseListPrepareModel prepareModel;
+@property (nonatomic) AWEIMMessageConversation conversation;
+@property (nonatomic) @? addGroupAdminBlock;
+- (id)addGroupAdminBlock;
+- (BOOL)canSelectCellAtIndexPath:;
+- (BOOL)canTapCellAtIndexPath:;
+- (void)changeToMultiselect:;
+- (id)conversationDataManager;
+- (long long)currentFunctin;
+- (BOOL)disableSelectCellIsSelected;
+- (id)iesimui_emptyPageConfigForState:;
+- (void)iesimui_emptyPagePrimaryButtonTapped:;
+- (id)initialSelectedAdminIds;
+- (void)p_dismiss;
+- (void)p_save;
+- (void)p_trackSaveAdminCountDataWithSet:;
+- (void)setAddGroupAdminBlock:;
+- (void)setInitialSelectedAdminIds:;
+- (void)setPrepareModel:;
+- (void)updateMultiselectCount:;
+- (id)conversation;
+- (id)rightButton;
+- (void)tableView:didSelectRowAtIndexPath:;
+- (void).cxx_destruct;
+- (void)setRightButton:;
+- (void)fetchData;
+- (void)viewDidLoad;
+- (void)setConversation:;
+- (id)loadingView;
+- (void)setLoadingView:;
+- (id)prepareModel;
+@end

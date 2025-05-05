@@ -1,0 +1,36 @@
+@interface VGOEMApplication : NSObject
+@property (nonatomic) NSArray allowedFormulaIDs;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) LSApplicationRecord applicationRecord;
+@property (nonatomic) BOOL enabled;
+@property (nonatomic) <VGOEMAppSOCStreaming> chargeStreamingDelegate;
+- (id)identifier;
+- (void)getStateOfChargeForVehicle:completion:;
+- (void)setEnabled:;
+- (void).cxx_destruct;
+- (id)description;
+- (void)listCarsWithCompletion:;
+- (BOOL)isEqual:;
+- (BOOL)isEnabled;
+- (void)intentResponseDidUpdate:withSerializedCacheItems:;
+- (id)applicationRecord;
+- (id)initWithIdentifier:applicationRecord:;
+- (void)startSendingChargeUpdatesForVehicle:;
+- (void)stopSendingChargeUpdatesForVehicle:;
+- (id)chargeStreamingDelegate;
+- (void)setChargeStreamingDelegate:;
+- (unsigned long long)_VGChargingConnectorTypeOptionsFromINCarChargingConnectorTypes:;
+- (unsigned long long)_VGChargingConnectorTypeOptionFromINCarChargingConnectorType:;
+- (BOOL)_isValidConsumptionModelForResponse:;
+- (id)_vehicleStateFromResponse:error:;
+- (id)_vehiclesFromListCarsIntentResponse:;
+- (id)_powerByConnectorDictionaryFromCar:;
+- (void)_createChargeStreamingConnectionIfNeededForVehicle:;
+- (id)_connectionWithIntent:;
+- (id)allowedFormulaIDs;
+- (void)setAllowedFormulaIDs:;
+@end

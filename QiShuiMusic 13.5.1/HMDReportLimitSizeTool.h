@@ -1,0 +1,31 @@
+@interface HMDReportLimitSizeTool : NSObject
+@property (nonatomic) NSObject<OS_dispatch_queue> calculationQueue;
+@property (nonatomic) NSMutableDictionary visitorTimeRangeDict;
+@property (nonatomic) NSMutableSet muduleSet;
+@property (nonatomic) <HMDLimitReportDataSizeToolDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)accumulationDataLengthWithData:;
+- (BOOL)shouldSizeLimit;
+- (void)addNeedLimitReportSizeRecordClass:;
+- (void)addNeedLimitReportSizeRecordClasses:;
+- (void)currentSizeOutOfThreshold;
+- (void)estimateSizeWithDictArray:module:;
+- (void)estimateSizeWithMonitorRecords:recordClass:module:;
+- (void)estimateSizeWithStoreObjectRecord:recordClass:module:;
+- (void)hmdReportSizeLimitManagerStart;
+- (void)hmdReportSizeLimitManagerStop;
+- (id)muduleSet;
+- (void)removeReportSizeRecordClass:;
+- (void)setMuduleSet:;
+- (void)setVisitorTimeRangeDict:;
+- (id)visitorTimeRangeDict;
+- (id)init;
+- (void)setDelegate:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)calculationQueue;
+- (void)setCalculationQueue:;
+@end

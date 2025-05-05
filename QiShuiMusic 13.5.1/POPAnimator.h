@@ -1,0 +1,35 @@
+@interface POPAnimator : NSObject
+@property (nonatomic) BOOL disableDisplayLink;
+@property (nonatomic) double beginTime;
+@property (nonatomic) <POPAnimatorDelegate> delegate;
+@property (nonatomic) double refreshPeriod;
+- (void)_clearPendingListObserver;
+- (void)_processPendingList;
+- (void)_renderTime:item:;
+- (void)_renderTime:items:;
+- (void)_scheduleProcessPendingList;
+- (void)addAnimation:forObject:key:;
+- (id)animationForObject:key:;
+- (id)animationKeysForObject:;
+- (BOOL)disableDisplayLink;
+- (void)removeAllAnimationsForObject:;
+- (void)removeAnimationForObject:key:;
+- (void)removeAnimationForObject:key:cleanupDict:;
+- (void)renderTime:;
+- (void)setDisableDisplayLink:;
+- (void)removeObserver:;
+- (id)init;
+- (void)addObserver:;
+- (double)beginTime;
+- (void)dealloc;
+- (void)setDelegate:;
+- (void)setBeginTime:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)observers;
+- (id).cxx_construct;
+- (void)render;
+- (double)refreshPeriod;
+- (double)_currentRenderTime;
++ (id)sharedAnimator;
+@end

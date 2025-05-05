@@ -1,0 +1,22 @@
+@interface TRILogger : NSObject
+- (id)init;
+- (void)logWithTrackingId:message:;
+- (void)logWithTrackingId:metrics:dimensions:trialSystemTelemetry:;
+- (void)logWithTrackingId:metric:dimensions:;
+- (void)logWithTrackingId:metrics:dimensions:;
+- (id)initWithProjectId:logHandlers:;
+- (void)logWithProjectNameAndTrackingId:metrics:dimensions:trialSystemTelemetry:;
+- (void)logWithNamespaceName:metrics:dimensions:;
+- (void)logWithTrackingId:metric:;
+- (void)logWithTrackingId:logLevel:message:;
+- (id)initWithClient:projectId:logHandlers:;
+- (void).cxx_destruct;
+- (id)initWithProjectId:;
+- (void)logWithTrackingId:metrics:dimensions:systemDimensions:trialSystemTelemetry:;
+- (void)logWithMLRuntimeDimensions:metrics:factorState:;
+- (void)_dispatchLogEvent:;
+- (void)logWithTrackingId:logLevel:message:args:;
+- (void)logEvent:;
+- (id)messageWithOneofField:withName:;
+- (unsigned long long)_incrementedLogEventCount;
+@end

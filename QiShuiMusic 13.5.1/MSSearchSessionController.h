@@ -1,0 +1,34 @@
+@interface MSSearchSessionController : NSObject
+@property (nonatomic) Q numberOfMessagesLeftToIndex;
+@property (nonatomic) Q percentOfMessagesIndexed;
+@property (nonatomic) NSInteger emailProvider;
+@property (nonatomic) NSMutableArray mutableSessionEngagements;
+@property (nonatomic) <MSSearchSessionControllerDataSource> dataSource;
+@property (nonatomic) NSObject<OS_dispatch_queue> queue;
+@property (nonatomic) NSArray sessionEngagements;
+- (id)init;
+- (id)initWithDataSource:;
+- (id)dataSource;
+- (void)endSession;
+- (void).cxx_destruct;
+- (id)queue;
+- (int)emailProvider;
+- (unsigned long long)percentOfMessagesIndexed;
+- (id)sessionEngagements;
+- (void)addNewEngagementWithAtoms:searchScope:suggestionsEngagement:;
+- (void)addNewEngagementWithAWDAtoms:searchScope:suggestionsEngagements:;
+- (void)updateLastEngagementSearchResultCount:;
+- (void)_recordUserDidNotSelectAnyMessage;
+- (void)recordUserDidSelectMessage:isTopHit:messageListIndex:spotlightListIndex:;
+- (void)recordUserDidOrbMessage:isTopHit:messageListIndex:spotlightListIndex:;
+- (void)recordUserDidSwipeMessage:isTopHit:messageListIndex:spotlightListIndex:;
+- (void)recordUserDidRightClickMessage:isTopHit:messageListIndex:spotlightListIndex:;
+- (void)recordUserDidSelectMessage:;
+- (void)recordUserDidOrbMessage:;
+- (void)recordUserDidSwipeMessage:;
+- (void)recordUserDidRightClickMessage:;
+- (void)_recordEngagement:forMessage:isTopHit:messageListIndex:spotlightListIndex:;
+- (void)_addToLatestEngagementWithUserEngagement:;
+- (unsigned long long)numberOfMessagesLeftToIndex;
+- (id)mutableSessionEngagements;
+@end

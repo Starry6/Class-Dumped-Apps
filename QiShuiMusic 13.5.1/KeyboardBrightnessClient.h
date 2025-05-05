@@ -1,0 +1,21 @@
+@interface KeyboardBrightnessClient : NSObject
+- (id)init;
+- (void)dealloc;
+- (void)unregisterKeyboardNotificationBlock;
+- (id)copyKeyboardBacklightIDs;
+- (BOOL)isBacklightSuppressedOnKeyboard:;
+- (BOOL)isBacklightSaturatedOnKeyboard:;
+- (BOOL)isBacklightDimmedOnKeyboard:;
+- (float)brightnessForKeyboard:;
+- (BOOL)setBrightness:forKeyboard:;
+- (BOOL)setBrightness:fadeSpeed:commit:forKeyboard:;
+- (BOOL)enableAutoBrightness:forKeyboard:;
+- (BOOL)isAmbientFeatureAvailableOnKeyboard:;
+- (BOOL)isKeyboardBuiltIn:;
+- (double)idleDimTimeForKeyboard:;
+- (BOOL)setIdleDimTime:forKeyboard:;
+- (BOOL)suspendIdleDimming:forKeyboard:;
+- (BOOL)isIdleDimmingSuspendedOnKeyboard:;
+- (BOOL)isAutoBrightnessEnabledForKeyboard:;
+- (void)registerNotificationForKeys:keyboardID:block:;
+@end

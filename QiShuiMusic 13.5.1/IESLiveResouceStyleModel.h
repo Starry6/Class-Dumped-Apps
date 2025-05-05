@@ -1,0 +1,31 @@
+@interface IESLiveResouceStyleModel : NSObject
+@property (nonatomic) NSNumber clipsToBounds;
+@property (nonatomic) UIColor backgroudColor;
+@property (nonatomic) NSNumber alpha;
+@property (nonatomic) UIColor borderColor;
+@property (nonatomic) NSNumber borderWidth;
+@property (nonatomic) NSNumber cornerRadius;
+@property (nonatomic) UIFont font;
+@property (nonatomic) UIColor textColor;
+- (id)initWithDictionary:assetBundle:;
+- (id)backgroudColor;
+- (id)customFontWithPath:size:;
+- (id)fontWithName:size:assetBundle:;
+- (void)setBackgroudColor:;
+- (void)setBorderColor:;
+- (id)borderColor;
+- (id)clipsToBounds;
+- (void)setAlpha:;
+- (void)setFont:;
+- (void)setClipsToBounds:;
+- (id)borderWidth;
+- (void)setBorderWidth:;
+- (id)alpha;
+- (void)setTextColor:;
+- (void)setCornerRadius:;
+- (void).cxx_destruct;
+- (id)font;
+- (id)textColor;
+- (id)cornerRadius;
++ (double)fontWeightFromStr:;
+@end

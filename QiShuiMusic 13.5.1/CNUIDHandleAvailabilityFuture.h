@@ -1,0 +1,2 @@
+@interface CNUIDHandleAvailabilityFuture : CNFuture
+@end

@@ -1,0 +1,33 @@
+@interface IESECVideoFeedCommentView : UIView
+@property (nonatomic) IESECCarouselCell carouselView;
+@property (nonatomic) UILabel smallDescLabel;
+@property (nonatomic) UIStackView largeDescContainer;
+@property (nonatomic) UILabel largeDescLabel;
+@property (nonatomic) UILabel subDescLabel;
+@property (nonatomic) UIView line;
+@property (nonatomic) @? didScrollToPageBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)carouselCell:sizeForItemAtIndexPath:;
+- (id)didScrollToPageBlock;
+- (id)largeDescContainer;
+- (id)largeDescLabel;
+- (void)setDidScrollToPageBlock:;
+- (void)setLargeDescContainer:;
+- (void)setLargeDescLabel:;
+- (void)setSmallDescLabel:;
+- (void)setSubDescLabel:;
+- (id)smallDescLabel;
+- (id)subDescLabel;
+- (void)updateUIWithModel:;
+- (void)showNextPage;
+- (void).cxx_destruct;
+- (void)_setup;
+- (id)line;
+- (id)initWithStyle:;
+- (void)setLine:;
+- (id)carouselView;
+- (void)setCarouselView:;
+@end

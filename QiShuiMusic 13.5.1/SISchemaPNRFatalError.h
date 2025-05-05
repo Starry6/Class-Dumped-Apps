@@ -1,0 +1,35 @@
+@interface SISchemaPNRFatalError : SISchemaInstrumentationMessage
+@property (nonatomic) SISchemaPNRFatalErrorInfo error;
+@property (nonatomic) BOOL hasError;
+@property (nonatomic) SISchemaPNRFatalErrorInfo underlyingError;
+@property (nonatomic) BOOL hasUnderlyingError;
+@property (nonatomic) SISchemaPNRFatalErrorInfo underUnderlyingError;
+@property (nonatomic) BOOL hasUnderUnderlyingError;
+@property (nonatomic) NSData jsonData;
+- (BOOL)hasError;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (void)setError:;
+- (void)setHasError:;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)error;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)setUnderlyingError:;
+- (id)underlyingError;
+- (void)setUnderUnderlyingError:;
+- (void)deleteError;
+- (BOOL)hasUnderlyingError;
+- (void)deleteUnderlyingError;
+- (void)setHasUnderlyingError:;
+- (BOOL)hasUnderUnderlyingError;
+- (void)deleteUnderUnderlyingError;
+- (id)underUnderlyingError;
+- (void)setHasUnderUnderlyingError:;
+@end

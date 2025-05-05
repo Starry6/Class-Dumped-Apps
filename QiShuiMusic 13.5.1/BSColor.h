@@ -1,0 +1,33 @@
+@interface BSColor : NSObject
+@property (nonatomic) double red;
+@property (nonatomic) double green;
+@property (nonatomic) double blue;
+@property (nonatomic) double alpha;
+@property (nonatomic) ^{CGColor=} CGColor;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)UIColor;
+- (void)dealloc;
+- (void)encodeWithXPCDictionary:;
+- (double)red;
+- (id)initWithBSXPCCoder:;
+- (double)blue;
+- (id)CGColor;
+- (double)green;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (double)alpha;
+- (id)initWithXPCDictionary:;
+- (void)encodeWithBSXPCCoder:;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)isEqualToColor:;
++ (BOOL)supportsSecureCoding;
++ (id)colorWithRed:green:blue:alpha:;
++ (id)blackColor;
++ (BOOL)supportsBSXPCSecureCoding;
+@end

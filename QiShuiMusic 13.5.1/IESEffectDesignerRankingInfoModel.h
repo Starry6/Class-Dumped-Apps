@@ -1,0 +1,32 @@
+@interface IESEffectDesignerRankingInfoModel : MTLModel
+@property (nonatomic) NSString designerName;
+@property (nonatomic) NSString designerIdentifier;
+@property (nonatomic) NSString designerEncryptedIdentifier;
+@property (nonatomic) NSString smallIconURI;
+@property (nonatomic) NSArray smallIconURLs;
+@property (nonatomic) Q smallIconURLType;
+@property (nonatomic) NSString smallIconMD5;
+@property (nonatomic) q followStatus;
+@property (nonatomic) Q effectCount;
+@property (nonatomic) Q followingCount;
+@property (nonatomic) NSArray effects;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)designerEncryptedIdentifier;
+- (id)designerIdentifier;
+- (id)designerName;
+- (long long)followStatus;
+- (unsigned long long)followingCount;
+- (void)setSmallIconURLs:;
+- (id)smallIconMD5;
+- (id)smallIconURI;
+- (unsigned long long)smallIconURLType;
+- (id)smallIconURLs;
+- (id)effects;
+- (void).cxx_destruct;
+- (unsigned long long)effectCount;
++ (id)JSONKeyPathsByPropertyKey;
++ (id)JSONTransformerForKey:;
+@end

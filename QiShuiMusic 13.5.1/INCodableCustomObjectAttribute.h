@@ -1,0 +1,32 @@
+@interface INCodableCustomObjectAttribute : INCodableObjectAttribute
+@property (nonatomic) NSString objectTypeName;
+@property (nonatomic) NSString objectTypeNamespace;
+@property (nonatomic) INCodableDescription codableDescription;
+- (void)updateWithDictionary:;
+- (id)dictionaryRepresentationWithLocalizer:;
+- (Class)objectClass;
+- (Class)resolutionResultClass;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (long long)valueType;
+- (id)valueTransformer;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (Class)_relationshipValueTransformerClass;
+- (id)codableDescription;
+- (Class)_unsafeObjectClass;
+- (id)__INCodableDescriptionObjectTypeKey;
+- (id)__INIntentResponseCodableDescriptionObjectTypeKey;
+- (id)__INTypeCodableDescriptionObjectTypeKey;
+- (id)__INCodableDescriptionObjectTypeNamespaceKey;
+- (id)__INIntentResponseCodableDescriptionObjectTypeNamespaceKey;
+- (id)__INTypeCodableDescriptionObjectTypeNamespaceKey;
+- (id)objectTypeName;
+- (void)setObjectTypeName:;
+- (id)objectTypeNamespace;
+- (void)setObjectTypeNamespace:;
+- (void)setCodableDescription:;
++ (BOOL)supportsSecureCoding;
+@end

@@ -1,0 +1,36 @@
+@interface DOMHTMLAppletElement : DOMHTMLElement
+@property (nonatomic) NSString align;
+@property (nonatomic) NSString alt;
+@property (nonatomic) NSString archive;
+@property (nonatomic) NSString code;
+@property (nonatomic) NSString codeBase;
+@property (nonatomic) NSString height;
+@property (nonatomic) NSInteger hspace;
+@property (nonatomic) NSString name;
+@property (nonatomic) NSString object;
+@property (nonatomic) NSInteger vspace;
+@property (nonatomic) NSString width;
+- (BOOL)showsTapHighlight;
+- (void)setObject:;
+- (void)setName:;
+- (id)code;
+- (void)setWidth:;
+- (id)height;
+- (id)width;
+- (void)setAlt:;
+- (void)setHeight:;
+- (id)object;
+- (id)alt;
+- (id)name;
+- (void)setCode:;
+- (id)archive;
+- (void)setArchive:;
+- (id)align;
+- (void)setAlign:;
+- (id)codeBase;
+- (void)setCodeBase:;
+- (int)hspace;
+- (void)setHspace:;
+- (int)vspace;
+- (void)setVspace:;
+@end

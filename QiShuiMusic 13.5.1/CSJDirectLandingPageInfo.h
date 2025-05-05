@@ -1,0 +1,33 @@
+@interface CSJDirectLandingPageInfo : NSObject
+@property (nonatomic) NSString directLandingUrl;
+@property (nonatomic) q displayDuration;
+@property (nonatomic) q closeTime;
+@property (nonatomic) q show_type;
+@property (nonatomic) q page_type;
+@property (nonatomic) CSJRewardBrowseBannerModel rewardBrowseBanner;
+@property (nonatomic) BOOL is_landing_with_sound;
+@property (nonatomic) q close_btn_position;
+- (long long)displayDuration;
+- (long long)closeTime;
+- (long long)close_btn_position;
+- (id)convertToPlayableInfo;
+- (id)directLandingUrl;
+- (BOOL)is_landing_with_sound;
+- (long long)page_type;
+- (id)rewardBrowseBanner;
+- (void)setCloseTime:;
+- (void)setClose_btn_position:;
+- (void)setDirectLandingUrl:;
+- (void)setDisplayDuration:;
+- (void)setIs_landing_with_sound:;
+- (void)setPage_type:;
+- (void)setRewardBrowseBanner:;
+- (void)setShow_type:;
+- (void)setupDataWithDictionary:;
+- (long long)show_type;
+- (id)initWithDictionary:;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (BOOL)isValid;
+- (void).cxx_destruct;
+@end

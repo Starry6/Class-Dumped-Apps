@@ -1,0 +1,30 @@
+@interface CSJUnionResponseModel : CSJResponseModel
+@property (nonatomic) NSArray creativesAry;
+@property (nonatomic) NSString did;
+@property (nonatomic) NSString message;
+@property (nonatomic) q reason;
+@property (nonatomic) NSString errorMsg;
+@property (nonatomic) NSString desc;
+- (void)setDid:;
+- (id)did;
+- (id)creativesAry;
+- (id)errorMsg;
+- (void)mssdkReportForScene;
+- (void)optMssdkReportForScene;
+- (void)safeMssdkReportForScene;
+- (void)setCreativesAry:;
+- (void)setErrorMsg:;
+- (void)setupCreativesWithDic:;
+- (void)setupDataWithDictionary:;
+- (void)trackEvent:params:;
+- (void)setMessage:;
+- (id)desc;
+- (id)initWithDictionary:error:;
+- (void)setDesc:;
+- (long long)reason;
+- (void)setReason:;
+- (id)message;
+- (void).cxx_destruct;
++ (id)host_appid;
++ (void)makeResponseModelWithDictionary:finishBlock:;
+@end

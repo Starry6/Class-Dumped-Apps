@@ -1,0 +1,34 @@
+@interface NWAWDMPTCPSubflowSwitchingReport : PBCodable
+@property (nonatomic) BOOL hasTimestamp;
+@property (nonatomic) Q timestamp;
+@property (nonatomic) BOOL hasSwitchFromInterfaceName;
+@property (nonatomic) NSString switchFromInterfaceName;
+@property (nonatomic) BOOL hasSwitchToInterfaceName;
+@property (nonatomic) NSString switchToInterfaceName;
+@property (nonatomic) BOOL hasSwitchCount;
+@property (nonatomic) NSInteger switchCount;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)setHasTimestamp:;
+- (void)mergeFrom:;
+- (BOOL)hasTimestamp;
+- (void)setTimestamp:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (unsigned long long)timestamp;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasSwitchFromInterfaceName;
+- (BOOL)hasSwitchToInterfaceName;
+- (void)setSwitchCount:;
+- (void)setHasSwitchCount:;
+- (BOOL)hasSwitchCount;
+- (id)switchFromInterfaceName;
+- (void)setSwitchFromInterfaceName:;
+- (id)switchToInterfaceName;
+- (void)setSwitchToInterfaceName:;
+- (int)switchCount;
+@end

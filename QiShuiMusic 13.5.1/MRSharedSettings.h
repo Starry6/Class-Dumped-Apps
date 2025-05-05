@@ -1,0 +1,31 @@
+@interface MRSharedSettings : NSObject
+@property (nonatomic) BOOL multiplayerAware;
+@property (nonatomic) BOOL multiplayerHost;
+@property (nonatomic) BOOL canHostMultiplayerStream;
+@property (nonatomic) BOOL supportNanoStandalone;
+@property (nonatomic) BOOL supportProximitySorting;
+@property (nonatomic) BOOL supportHistorySorting;
+@property (nonatomic) BOOL supportShowMore;
+@property (nonatomic) BOOL supportNowPlayingSessionDataSource;
+@property (nonatomic) BOOL supportSessionBasedUI;
+@property (nonatomic) BOOL supportSessionBasedLockScreenPlatter;
+@property (nonatomic) BOOL supportLockScreenBackground;
+@property (nonatomic) double quickControlsInactiveTimeout;
+@property (nonatomic) double lockScreenAPLTarget;
+@property (nonatomic) double lockScreenAPLRatio;
+- (BOOL)supportShowMore;
+- (BOOL)supportNowPlayingSessionDataSource;
+- (BOOL)canHostMultiplayerStream;
+- (BOOL)supportSessionBasedLockScreenPlatter;
+- (BOOL)supportProximitySorting;
+- (BOOL)isMultiplayerAware;
+- (double)lockScreenAPLRatio;
+- (double)quickControlsInactiveTimeout;
+- (BOOL)supportNanoStandalone;
+- (BOOL)supportLockScreenBackground;
+- (BOOL)supportHistorySorting;
+- (BOOL)supportSessionBasedUI;
+- (BOOL)isMultiplayerHost;
+- (double)lockScreenAPLTarget;
++ (id)currentSettings;
+@end

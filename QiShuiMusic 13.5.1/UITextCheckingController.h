@@ -1,0 +1,31 @@
+@interface UITextCheckingController : NSObject
+@property (nonatomic) <UITextCheckingClient> client;
+- (id)nsRangeForTextRange:;
+- (id)initWithClient:;
+- (id)validAnnotations;
+- (id)textChecker;
+- (void)insertedTextInRange:;
+- (void)preheatTextChecker;
+- (id)terminatedSentenceRangeInTextRange:;
+- (void)removeSpellingMarkersFromWordInRange:;
+- (void)feedbackForGrammarMarkersFromWordsInRange:replacementText:;
+- (void)dealloc;
+- (void)checkSpellingForWordInRange:;
+- (id)selectedRange;
+- (void)willReplaceTextInRange:withText:;
+- (void)removeGrammarAnnotationFromWordAtPosition:;
+- (BOOL)continuousSpellCheckingEnabled;
+- (BOOL)foundApostropheAfterRange:;
+- (void)didChangeTextInRange:;
+- (void)considerTextCheckingForRange:;
+- (void)checkGrammarForSentenceInRange:;
+- (id)client;
+- (void).cxx_destruct;
+- (void)didChangeSelectionFromRange:;
+- (void)checkSpellingForSelectionChangeFromRange:;
+- (void)_handleGrammarCheckingResults:sequenceNumber:forSentenceRange:;
+- (BOOL)rangeIsSuitableForGrammarAutocorrections:;
+- (void)invalidate;
+- (void)removeGrammarMarkersFromWordsInRange:;
+- (void)_addGrammarAttributesForRange:details:inAnnotatedString:;
+@end

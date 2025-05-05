@@ -1,0 +1,38 @@
+@interface PLJournalEntryPayloadProperty : NSObject
+@property (nonatomic) BOOL optional;
+@property (nonatomic) @ defaultValue;
+@property (nonatomic) PLJournalEntryPayloadProperty parentProperty;
+@property (nonatomic) NSString key;
+@property (nonatomic) Q type;
+@property (nonatomic) BOOL requiresConversion;
+@property (nonatomic) BOOL isUUIDKey;
+@property (nonatomic) NSSet relatedEntityPropertyNames;
+@property (nonatomic) NSDictionary subRelationshipProperties;
+@property (nonatomic) BOOL shouldPrefetchRelationship;
+@property (nonatomic) BOOL isToManySubRelationship;
+@property (nonatomic) NSString subRelationshipEntityName;
+- (void)setOptional:;
+- (BOOL)isOptional;
+- (void)setDefaultValue:;
+- (id)key;
+- (id)defaultValue;
+- (unsigned long long)type;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)isEqualToKey:;
+- (BOOL)requiresConversion;
+- (id)initWithKey:andType:subRelationshipProperties:subRelationshipEntityName:requiresConversion:relatedEntityPropertyNames:isUUIDKey:isToManySubRelationship:shouldPrefetchRelationship:;
+- (BOOL)isUUIDKey;
+- (id)relatedEntityPropertyNames;
+- (id)subRelationshipProperties;
+- (BOOL)shouldPrefetchRelationship;
+- (BOOL)isToManySubRelationship;
+- (id)subRelationshipEntityName;
+- (id)parentProperty;
+- (void)setParentProperty:;
++ (id)payloadPropertyForUUID;
++ (id)payloadPropertyWithKey:relatedEntityPropertyNames:shouldPrefetchRelationship:;
++ (id)payloadPropertyWithKey:andType:;
++ (id)payloadPropertyWithKey:andType:requiresConversion:;
++ (id)payloadPropertyWithKey:subRelationshipProperties:subRelationshipEntityName:isToMany:;
+@end

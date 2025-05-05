@@ -1,0 +1,38 @@
+@interface BSSettings : NSObject
+@property (nonatomic) <BSSettingDescriptionProvider> descriptionProvider;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)enumerateObjectsWithBlock:;
+- (id)init;
+- (BOOL)isEmpty;
+- (void)encodeWithXPCDictionary:;
+- (id)_keyDescriptionForSetting:;
+- (id)_valueDescriptionForFlag:object:ofSetting:multilinePrefix:;
+- (void)setDescriptionProvider:;
+- (id)descriptionProvider;
+- (id)succinctDescriptionBuilder;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)_removeAllSettings;
+- (BOOL)isKeyedSettings;
+- (void)encodeWithCoder:;
+- (id)initWithXPCDictionary:;
+- (void).cxx_destruct;
+- (id)succinctDescription;
+- (id)description;
+- (id)_init;
+- (id)mutableCopyWithZone:;
+- (id)descriptionBuilderWithMultilinePrefix:;
+- (BOOL)isEqual:;
+- (id)descriptionWithMultilinePrefix:;
+- (id)copyWithZone:;
+- (long long)flagForSetting:;
+- (BOOL)boolForSetting:;
+- (id)objectForSetting:;
+- (id)allSettings;
+- (void)enumerateFlagsWithBlock:;
+- (id)basicDescriptionWithPrefix:;
++ (BOOL)supportsSecureCoding;
+@end

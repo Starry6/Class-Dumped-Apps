@@ -1,0 +1,31 @@
+@interface HMDNotificationConnection : NSObject
+@property (nonatomic) NSObject observer;
+@property (nonatomic) ^v observerPtr;
+@property (nonatomic) Q observerSize;
+@property (nonatomic) : selector;
+@property (nonatomic) NSString name;
+@property (nonatomic) NSObject object;
+@property (nonatomic) # observerClass;
+@property (nonatomic) # objectClass;
+@property (nonatomic) BOOL actived;
+@property (nonatomic) BOOL crashed;
+- (void)deactive;
+- (id)initWithObserver:selector:name:object:;
+- (BOOL)isActived;
+- (BOOL)isCrashed;
+- (Class)observerClass;
+- (id)observerPtr;
+- (unsigned long long)observerSize;
+- (void)receiveNotification:;
+- (void)setObserverClass:;
+- (void)active;
+- (SEL)selector;
+- (Class)objectClass;
+- (void)dealloc;
+- (BOOL)valid;
+- (void).cxx_destruct;
+- (id)object;
+- (id)name;
+- (id)observer;
+- (void)setObjectClass:;
+@end

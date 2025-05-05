@@ -1,0 +1,33 @@
+@interface NSMutableIndexSet : NSIndexSet
+- (void)CKIntersectIndexes:;
+- (void)pl_adjustIndexesForDeletions:;
+- (void)pl_adjustIndexesForInsertions:;
+- (void)cat_shiftAndAddIndex:;
+- (void)cat_shiftAndAddIndexesInRange:;
+- (void)cat_shiftAndRemoveIndex:;
+- (void)cat_shiftAndRemoveIndexesInRange:;
+- (void)cat_moveIndex:toIndex:;
+- (void)addIndex:;
+- (void)removeIndex:;
+- (void)removeIndexes:;
+- (void)removeAllIndexes;
+- (Class)classForCoder;
+- (void)addIndexes:;
+- (void)addIndexesInRange:;
+- (void)removeIndexesInRange:;
+- (void)shiftIndexesStartingAtIndex:by:;
+- (void)_ensureRangeCapacity:;
+- (void)_addRangeToArray:;
+- (void)_insertRange:inArrayAtIndex:;
+- (void)_removeRangeInArrayAtIndex:;
+- (void)_replaceRangeInArrayAtIndex:withRange:;
+- (void)addIndexesFromIndexSet:;
+- (void)addIndexes:count:;
+- (void)removeIndexesFromIndexSet:;
+- (void)removeIndexesWithOptions:passingTest:;
+- (void)removeIndexesInRange:options:passingTest:;
+- (void)removeIndexesPassingTest:;
+- (void)_mergeOverlappingRangesStartingAtIndex:;
+- (void)_incrementBy:startingAtIndex:;
+- (void)_removeAndDecrementBy:startingAtIndex:;
+@end

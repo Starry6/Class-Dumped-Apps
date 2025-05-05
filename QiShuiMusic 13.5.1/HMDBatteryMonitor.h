@@ -1,0 +1,36 @@
+@interface HMDBatteryMonitor : HMDMonitor
+@property (nonatomic) double lastRecordTimestamp;
+@property (nonatomic) double lastRecordBatteryLevel;
+@property (nonatomic) double sessionStartBatteryLevel;
+@property (nonatomic) double sessionUsedBatteryLevel;
+@property (nonatomic) double minuteRecordinterval;
+@property (nonatomic) BOOL didAddObserver;
+- (void)willLeaveScene:;
+- (void)batteryLevelDidChange:;
+- (void)batteryStateDidChange:;
+- (BOOL)didAddObserver;
+- (void)didEnterScene:;
+- (double)lastRecordBatteryLevel;
+- (double)lastRecordTimestamp;
+- (double)minuteRecordinterval;
+- (void)openBatteyMonitorInMainThread;
+- (id)recordForSpecificScene:;
+- (unsigned long long)reporterPriority;
+- (double)sessionStartBatteryLevel;
+- (double)sessionUsedBatteryLevel;
+- (void)setDidAddObserver:;
+- (void)setLastRecordBatteryLevel:;
+- (void)setLastRecordTimestamp:;
+- (void)setMinuteRecordinterval:;
+- (void)setSessionStartBatteryLevel:;
+- (void)setSessionUsedBatteryLevel:;
+- (void)updateConfig:;
+- (id)refresh;
+- (void)dealloc;
+- (void)didEnterBackground:;
+- (void)start;
+- (void)stop;
+- (void)willEnterForeground:;
+- (Class)storeClass;
++ (id)sharedMonitor;
+@end

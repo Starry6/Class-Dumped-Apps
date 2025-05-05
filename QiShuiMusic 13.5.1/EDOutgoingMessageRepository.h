@@ -1,0 +1,38 @@
+@interface EDOutgoingMessageRepository : NSObject
+@property (nonatomic) EDMessagePersistence messagePersistence;
+@property (nonatomic) EDSendLaterPersistence sendLaterPersistence;
+@property (nonatomic) EDMessageChangeManager messageChangeManager;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)sendLaterPersistence;
+- (unsigned long long)signpostID;
+- (id)messageChangeManager;
+- (void).cxx_destruct;
+- (void)performBlock:;
+- (void)setMessagePersistence:;
+- (id)messagePersistence;
+- (void)cancelObservation:;
+- (void)saveDraftMessage:mailboxID:previousDraftObjectID:completion:;
+- (void)saveSendLaterMessage:sendLaterDate:completion:;
+- (void)updateSendLaterDate:message:completion:;
+- (void)scheduleAlarmForSendLaterDate:completion:;
+- (void)deleteDraftsInMailboxID:documentID:previousDraftObjectID:;
+- (void)deliverMessage:usingMailDrop:isCancelable:completion:;
+- (void)cancelLastDelayedMessage:;
+- (void)outboxContainsMessageFromAccountObjectID:completion:;
+- (void)suspendDeliveryQueue;
+- (void)resumeDeliveryQueue;
+- (void)processAllQueuedMessages;
+- (void)isProcessingWithCompletion:;
+- (void)numberOfPendingMessagesWithCompletion:;
+- (void)startObservingPendingMessageChangesWithChangeObserver:observationIdentifier:;
+- (id)initWithMessagePersistence:messageChangeManager:sendLaterPersistence:;
+- (id)outgoingMessageFromPersistedMessage:;
+- (id)messagesForDocumentID:mailboxID:;
+- (id)urlForSendLaterFolder;
+- (void)setSendLaterPersistence:;
++ (id)log;
++ (id)signpostLog;
+@end

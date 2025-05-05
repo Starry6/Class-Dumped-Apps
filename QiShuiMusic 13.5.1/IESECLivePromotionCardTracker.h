@@ -1,0 +1,38 @@
+@interface IESECLivePromotionCardTracker : NSObject
+@property (nonatomic) IESECLiveContext liveContext;
+@property (nonatomic) IESECLivePromotionCardBTMModel BTMInfo;
+@property (nonatomic) IESECLivePromotionCardView cardView;
+@property (nonatomic) IESECLivePromotionCardBusinessParams bizParams;
+@property (nonatomic) <IESECLivePromotionCardBusinessDelegate> delegate;
+@property (nonatomic) q cardScene;
+- (id)BTMInfo;
+- (void)setLiveContext:;
+- (id)bizParams;
+- (long long)cardScene;
+- (id)getBTMModelWithAreaType:;
+- (id)goodsViewModel;
+- (id)initWithLiveContext:cardView:BTMInfo:;
+- (id)liveContext;
+- (id)p_actRecordManager;
+- (id)p_basicTrackParams;
+- (id)p_ecomEntranceForm;
+- (id)p_goodsModelWithOrientationStatus:;
+- (void)p_noticeBuyIntension;
+- (id)productTagTrackParamsForGoodsTrackWithCardView:;
+- (void)setBTMInfo:;
+- (void)setBizParams:;
+- (void)setCardScene:;
+- (void)trackBSTShowEvent:params:goodsModel:view:;
+- (void)trackButtonClickEventWithExtraInfo:;
+- (void)trackEvent:params:goodsModel:btmModel:;
+- (void)trackProductClickWithParams:goodsViewModel:btmModel:extraInfo:view:;
+- (void)trackProductTagShowIfNeededWithCardView:;
+- (void)trackShowEvent;
+- (void)trackShowEventWithAreaType:extraInfo:;
+- (id)tracker;
+- (void)setDelegate:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)cardView;
+- (void)setCardView:;
+@end

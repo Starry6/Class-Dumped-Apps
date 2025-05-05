@@ -1,0 +1,31 @@
+@interface IESECShopTabElementPerfInfo : NSObject
+@property (nonatomic) Q tabType;
+@property (nonatomic) double t_tab_container_ready;
+@property (nonatomic) double t_page_show;
+@property (nonatomic) double req_xtab_start;
+@property (nonatomic) double req_xtab_end;
+@property (nonatomic) double t_tab_click;
+@property (nonatomic) NSDictionary metric;
+@property (nonatomic) NSDictionary category;
+@property (nonatomic) NSDictionary filterParams;
+- (void)setT_tab_click:;
+- (void)setT_page_show:;
+- (unsigned long long)tabType;
+- (id)filterParams;
+- (double)req_xtab_end;
+- (double)req_xtab_start;
+- (void)setFilterParams:;
+- (void)setReq_xtab_end:;
+- (void)setReq_xtab_start:;
+- (void)setT_tab_container_ready:;
+- (void)setTabType:;
+- (double)t_page_show;
+- (double)t_tab_click;
+- (double)t_tab_container_ready;
+- (id)init;
+- (void)setCategory:;
+- (void).cxx_destruct;
+- (void)setMetric:;
+- (id)metric;
+- (id)category;
+@end

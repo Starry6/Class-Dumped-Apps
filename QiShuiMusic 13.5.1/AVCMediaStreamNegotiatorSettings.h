@@ -1,0 +1,35 @@
+@interface AVCMediaStreamNegotiatorSettings : NSObject
+@property (nonatomic) VCVideoRuleCollections screenRuleCollections;
+@property (nonatomic) VCVideoRuleCollections videoRuleCollections;
+@property (nonatomic) q tilesPerFrame;
+@property (nonatomic) q videoStreamMode;
+@property (nonatomic) q audioStreamMode;
+@property (nonatomic) q captureSource;
+@property (nonatomic) NSInteger operatingMode;
+@property (nonatomic) VCMediaNegotiatorAudioConfiguration audioConfiguration;
+@property (nonatomic) NSInteger preferredAudioCodec;
+@property (nonatomic) I localSSRC;
+@property (nonatomic) NSArray hdrModePixelFormats;
+@property (nonatomic) NSSet hdrModesSupported;
+@property (nonatomic) Q ptime;
+@property (nonatomic) Q minBandwidth;
+- (id)init;
+- (void)dealloc;
+- (id)audioConfiguration;
+- (int)operatingMode;
+- (long long)audioStreamMode;
+- (unsigned long long)ptime;
+- (long long)tilesPerFrame;
+- (unsigned long long)minBandwidth;
+- (int)preferredAudioCodec;
+- (long long)captureSource;
+- (id)videoRuleCollections;
+- (id)screenRuleCollections;
+- (id)hdrModesSupported;
+- (id)initWithOptions:deviceRole:error:;
+- (long long)videoStreamMode;
+- (id)hdrModePixelFormats;
+- (unsigned int)localSSRC;
++ (id)negotiatorSettingsForMode:deviceRole:options:errorString:;
++ (unsigned long long)hdrModeWithOptions:;
+@end

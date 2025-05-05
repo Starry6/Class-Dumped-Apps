@@ -1,0 +1,33 @@
+@interface MDMMAIDBearerTokenAuthenticator : NSObject
+@property (nonatomic) NSString token;
+@property (nonatomic) NSString personaID;
+@property (nonatomic) NSArray anchorCertificateRefs;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setPersonaID:;
+- (id)personaID;
+- (id)token;
+- (void)setAnchorCertificateRefs:;
+- (void)setToken:;
+- (void).cxx_destruct;
+- (id)anchorCertificateRefs;
+- (id)initWithTokens:;
+- (BOOL)authenticateRequest:error:;
+- (id)initWithRMAccountID:;
+- (BOOL)validAuthParams:;
+- (BOOL)doesWebAuthentication;
+- (BOOL)canRefreshToken;
+- (id)prepareForReauthenticationWithAuthParams:accountID:error:;
+- (void)fetchTokenWithAuthParams:accountID:completionHandler:;
+- (void)refreshTokenWithAuthParams:accountID:completionHandler:;
+- (void)_executeExchangeRequestWithURL:accountID:completionHandler:;
+- (void)_processTokenResponse:data:error:completionHandler:;
++ (id)authenticationMethod;
++ (id)_createMissingBearerTokenError;
++ (id)_createAuthInvalidError;
++ (id)authenticatorWithAnchorCertificateRefs:;
++ (id)_createGeneralServerError;
++ (id)_createManagedAppleAccountInvalidatedError;
+@end

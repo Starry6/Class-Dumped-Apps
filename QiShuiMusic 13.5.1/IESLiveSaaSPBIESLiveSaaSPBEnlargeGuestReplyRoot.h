@@ -1,0 +1,2 @@
+@interface IESLiveSaaSPBIESLiveSaaSPBEnlargeGuestReplyRoot : GPBRootObject
+@end

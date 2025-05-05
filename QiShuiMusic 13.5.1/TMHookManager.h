@@ -1,0 +1,38 @@
+@interface TMHookManager : NSObject
+@property (nonatomic) NSMutableArray hookList;
+@property (nonatomic) NSLock hookListLock;
+@property (nonatomic) NSMutableArray enabledHookTypes;
+@property (nonatomic) NSMutableArray disabledHookTypes;
+@property (nonatomic) Q apiTotalNum;
+@property (nonatomic) NSMutableArray hasPerformedHookList;
+- (void)setApiTotalNum:;
+- (unsigned long long)apiTotalNum;
+- (void)beginAsyncHook;
+- (void)beginSyncHook;
+- (id)disabledHookTypes;
+- (id)enabledHookTypes;
+- (id)hasPerformedHookList;
+- (id)hookHasPerformed;
+- (id)hookList;
+- (id)hookListLock;
+- (void)hookSensitiveAPI;
+- (void)recordAPITotalNum;
+- (void)recordDisabledHook:;
+- (void)recordEnabledHook:;
+- (void)recordHookeHasPerformed:;
+- (void)setDisabledHookTypes:;
+- (void)setEnabledHookTypes:;
+- (void)setHasPerformedHookList:;
+- (void)setHookList:;
+- (void)setHookListLock:;
+- (void)setupHookList;
+- (id)init;
+- (void).cxx_destruct;
++ (id)__timonHookClassNameArray;
++ (unsigned long long)apiTotalNum;
++ (id)disabledHookTypes;
++ (id)enabledHookTypes;
++ (id)hookHasPerformed;
++ (void)recordHookeHasPerformed:;
++ (id)sharedManager;
+@end

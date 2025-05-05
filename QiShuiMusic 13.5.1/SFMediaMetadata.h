@@ -1,0 +1,38 @@
+@interface SFMediaMetadata : NSObject
+@property (nonatomic) NSString mediaName;
+@property (nonatomic) NSInteger mediaType;
+@property (nonatomic) NSString artistName;
+@property (nonatomic) NSString albumName;
+@property (nonatomic) NSArray mediaPunchouts;
+@property (nonatomic) NSArray bundleIdentifiersToExclude;
+@property (nonatomic) NSString disambiguationTitle;
+@property (nonatomic) NSDictionary dictionaryRepresentation;
+@property (nonatomic) NSData jsonData;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)albumName;
+- (BOOL)hasMediaType;
+- (id)artistName;
+- (int)mediaType;
+- (void)setMediaType:;
+- (void)setAlbumName:;
+- (id)initWithProtobuf:;
+- (id)initWithCoder:;
+- (id)jsonData;
+- (void)encodeWithCoder:;
+- (void)setArtistName:;
+- (void).cxx_destruct;
+- (id)dictionaryRepresentation;
+- (id)copyWithZone:;
+- (id)mediaName;
+- (void)setMediaName:;
+- (id)mediaPunchouts;
+- (void)setMediaPunchouts:;
+- (id)disambiguationTitle;
+- (void)setDisambiguationTitle:;
+- (void)setBundleIdentifiersToExclude:;
+- (id)bundleIdentifiersToExclude;
++ (BOOL)supportsSecureCoding;
+@end

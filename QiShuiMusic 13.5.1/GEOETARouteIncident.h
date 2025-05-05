@@ -1,0 +1,32 @@
+@interface GEOETARouteIncident : PBCodable
+@property (nonatomic) BOOL hasRouteIncident;
+@property (nonatomic) GEORouteIncident routeIncident;
+@property (nonatomic) BOOL hasDistanceFromStartCm;
+@property (nonatomic) I distanceFromStartCm;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (BOOL)hasGreenTeaWithValue:;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasRouteIncident;
+- (id)routeIncident;
+- (void)setRouteIncident:;
+- (unsigned int)distanceFromStartCm;
+- (void)setDistanceFromStartCm:;
+- (void)setHasDistanceFromStartCm:;
+- (BOOL)hasDistanceFromStartCm;
++ (BOOL)isValid:;
+@end

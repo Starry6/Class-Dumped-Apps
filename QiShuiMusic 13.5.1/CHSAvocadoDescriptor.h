@@ -1,0 +1,2 @@
+@interface CHSAvocadoDescriptor : CHSWidgetDescriptor
+@end

@@ -1,0 +1,21 @@
+@interface CNComposeRecipientGroup : CNComposeRecipient
+- (id)displayString;
+- (BOOL)isGroup;
+- (id)children;
+- (id)label;
+- (void).cxx_destruct;
+- (id)address;
+- (BOOL)isEqual:;
+- (id)placeholderName;
+- (id)commentedAddress;
+- (id)unlocalizedLabel;
+- (id)compositeName;
+- (id)initWithChildren:displayString:;
+- (id)sortedChildren;
+- (id)childrenWithCompleteMatches;
+- (BOOL)wasCompleteMatch;
+- (id)completelyMatchedAttributedStrings;
+- (void)_populateSortedChildren;
+- (void)addRecipientToPasteboard:;
+- (BOOL)showsChevronButton;
+@end

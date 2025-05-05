@@ -1,0 +1,31 @@
+@interface BDStrategySelectCacheManagerV2 : NSObject
+@property (nonatomic) NSString updateSignature;
+@property (nonatomic) NSDictionary updateMd5Map;
+@property (nonatomic) NSDictionary updateSource;
+@property (nonatomic) NSMutableDictionary tempSelectCache;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)tempSelectCache;
+- (void)clearTempSelectCache;
+- (void)setTempRuleSetNames:forCacheKey:;
+- (void)setUpdateMd5Map:;
+- (void)setUpdateSignature:;
+- (void)setUpdateSource:;
+- (id)tempRuleSetNamesForCacheKey:;
+- (id)updateMd5Map;
+- (id)updateSource;
+- (id)init;
+- (void).cxx_destruct;
+- (id)updateSignature;
++ (void)loadStrategySelectCache;
++ (void)loadStrategySelectCacheWithMD5Map:signature:;
++ (void)postProcessCacheUpdate;
++ (id)ruleSetNamesForCacheKey:;
++ (id)ruleSetNamesForInput:withFilterKeys:inSet:;
++ (void)setRuleSetNames:forCacheKey:;
++ (void)setRuleSetNames:forInput:withFilterKeys:inSet:;
++ (id)signature;
++ (id)sharedInstance;
+@end

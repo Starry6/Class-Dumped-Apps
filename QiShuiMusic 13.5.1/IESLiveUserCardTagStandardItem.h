@@ -1,0 +1,32 @@
+@interface IESLiveUserCardTagStandardItem : NSObject
+@property (nonatomic) IESLiveUserCardStore store;
+@property (nonatomic) IESLiveProfileTagContent tagContent;
+@property (nonatomic) q tagType;
+@property (nonatomic) UIView itemView;
+@property (nonatomic) @? onItemTapped;
+@property (nonatomic) @? onItemShow;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)assembleWithUserProfile:;
+- (void)initItemView:;
+- (id)initWithTagContent:withUsercardStore:;
+- (void)itemViewClick:;
+- (void)itemViewShow:;
+- (id)onItemShow;
+- (id)onItemTapped;
+- (void)setOnItemShow:;
+- (void)setOnItemTapped:;
+- (void)setTagContent:;
+- (void)trackClickWithDict:;
+- (void)trackShowWithDict:;
+- (long long)tagType;
+- (void)setStore:;
+- (void).cxx_destruct;
+- (id)store;
+- (id)itemView;
+- (void)setItemView:;
+- (id)tagContent;
+- (void)setTagType:;
+@end

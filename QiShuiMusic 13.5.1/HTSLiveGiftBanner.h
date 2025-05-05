@@ -1,0 +1,14 @@
+@interface HTSLiveGiftBanner : IESLivePBBaseMessage
+@property (nonatomic) HTSLiveText displayText;
+@property (nonatomic) BOOL hasDisplayText;
+@property (nonatomic) NSString displayTextBgColor;
+@property (nonatomic) HTSLiveImage boxImg;
+@property (nonatomic) BOOL hasBoxImg;
+@property (nonatomic) HTSLiveImage bgImg;
+@property (nonatomic) BOOL hasBgImg;
+@property (nonatomic) NSString schemeURL;
+@property (nonatomic) BOOL animate;
+@property (nonatomic) q boxId;
+@property (nonatomic) q availableBoxCount;
++ (id)descriptor;
+@end

@@ -1,0 +1,34 @@
+@interface VNFaceLegacyFaceCore : NSObject
+@property (nonatomic) Q profile;
+@property (nonatomic) double faceSize;
+@property (nonatomic) double faceAngle;
+@property (nonatomic) {CGPoint=dd} faceCenter;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} faceBoundingBox;
+@property (nonatomic) {CGPoint=dd} leftEye;
+@property (nonatomic) {CGPoint=dd} rightEye;
+@property (nonatomic) {CGPoint=dd} mouth;
+@property (nonatomic) q trackID;
+@property (nonatomic) Q trackDuration;
+@property (nonatomic) NSDictionary features;
+@property (nonatomic) Q requestRevision;
+- (id)initWithCoder:;
+- (unsigned long long)profile;
+- (void)encodeWithCoder:;
+- (unsigned long long)requestRevision;
+- (void).cxx_destruct;
+- (long long)trackID;
+- (id)features;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)rightEye;
+- (unsigned long long)trackDuration;
+- (id)mouth;
+- (id)faceBoundingBox;
+- (id)leftEye;
+- (double)faceAngle;
+- (id)initWithFace:;
+- (double)faceSize;
+- (id)faceCenter;
++ (BOOL)supportsSecureCoding;
++ (void)_setFaceExpressionFeatureScoreIfDetected:features:detectionKey:scoreKey:featureKey:;
+@end

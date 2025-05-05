@@ -1,0 +1,34 @@
+@interface IESECMallXBridgeEcMallGetRecommendParamsMethodResultModel : BDXBridgeModel
+@property (nonatomic) NSString feedbacks;
+@property (nonatomic) NSString filters;
+@property (nonatomic) NSNumber page_num;
+@property (nonatomic) NSString post_back;
+@property (nonatomic) NSString last_actions;
+@property (nonatomic) NSString log_extra;
+@property (nonatomic) NSNumber cursor;
+@property (nonatomic) NSString seckill_filters;
+@property (nonatomic) NSString allowance_filters;
+@property (nonatomic) NSNumber recommend_back_up_offset;
+- (id)seckill_filters;
+- (id)allowance_filters;
+- (id)last_actions;
+- (id)log_extra;
+- (id)page_num;
+- (id)post_back;
+- (id)recommend_back_up_offset;
+- (void)setAllowance_filters:;
+- (void)setLast_actions:;
+- (void)setLog_extra:;
+- (void)setPage_num:;
+- (void)setPost_back:;
+- (void)setRecommend_back_up_offset:;
+- (void)setSeckill_filters:;
+- (id)filters;
+- (id)cursor;
+- (void)setFilters:;
+- (void)setFeedbacks:;
+- (void)setCursor:;
+- (void).cxx_destruct;
+- (id)feedbacks;
++ (id)JSONKeyPathsByPropertyKey;
+@end

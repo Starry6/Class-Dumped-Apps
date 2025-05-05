@@ -1,0 +1,31 @@
+@interface MPSImageArithmetic : MPSBinaryImageKernel
+@property (nonatomic) float primaryScale;
+@property (nonatomic) float secondaryScale;
+@property (nonatomic) float bias;
+@property (nonatomic) {?=QQQ} primaryStrideInPixels;
+@property (nonatomic) {?=QQQ} secondaryStrideInPixels;
+@property (nonatomic) float minimumValue;
+@property (nonatomic) float maximumValue;
+- (void)setBias:;
+- (float)bias;
+- (id)initWithCoder:device:;
+- (id)copyWithZone:device:;
+- (float)minimumValue;
+- (void)setMaximumValue:;
+- (void)dealloc;
+- (float)maximumValue;
+- (void)setMinimumValue:;
+- (id)debugDescription;
+- (void)encodeWithCoder:;
+- (id)initWithDevice:;
+- (void)setPrimaryStrideInPixels:;
+- (void)setSecondaryStrideInPixels:;
+- (id)initWithDevice:arithmeticType:;
+- (float)primaryScale;
+- (void)setPrimaryScale:;
+- (float)secondaryScale;
+- (void)setSecondaryScale:;
+- (id)primaryStrideInPixels;
+- (id)secondaryStrideInPixels;
++ (id)libraryInfo:;
+@end

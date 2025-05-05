@@ -1,0 +1,32 @@
+@interface IESECSKUNumberCell : UICollectionViewCell
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel limitLabel;
+@property (nonatomic) UILabel numberLabel;
+@property (nonatomic) IESECHighlightButton minusButton;
+@property (nonatomic) IESECHighlightButton plusButton;
+@property (nonatomic) UIView separator;
+@property (nonatomic) <IESECSKUNumberCellDelegate> delegate;
+@property (nonatomic) IESECSKUNumberViewModel viewModel;
+- (void)setMinusButton:;
+- (id)limitLabel;
+- (void)makeContraints;
+- (void)minus;
+- (void)plus;
+- (void)setLimitLabel:;
+- (id)plusButton;
+- (void)setSeparator:;
+- (void)setPlusButton:;
+- (id)viewModel;
+- (void)setTitleLabel:;
+- (void)setDelegate:;
+- (id)initWithFrame:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setViewModel:;
+- (id)titleLabel;
+- (id)separator;
+- (void)setupAccessibility;
+- (id)minusButton;
+- (id)numberLabel;
+- (void)setNumberLabel:;
+@end

@@ -1,0 +1,38 @@
+@interface BDXBridgeMannorSendAdLogMethodParamModel : BDXBridgeModel
+@property (nonatomic) NSNumber has_ad_info;
+@property (nonatomic) NSString ad_id;
+@property (nonatomic) NSString tag;
+@property (nonatomic) NSString label;
+@property (nonatomic) NSString refer;
+@property (nonatomic) NSString track_label;
+@property (nonatomic) NSNumber group_id;
+@property (nonatomic) NSString log_extra;
+@property (nonatomic) NSString creative_id;
+@property (nonatomic) NSDictionary extParam;
+@property (nonatomic) NSArray track_url_list;
+- (void)setCreative_id:;
+- (void)setHas_ad_info:;
+- (void)setTrack_label:;
+- (id)ad_id;
+- (id)creative_id;
+- (id)extParam;
+- (id)has_ad_info;
+- (id)log_extra;
+- (id)refer;
+- (void)setAd_id:;
+- (void)setExtParam:;
+- (void)setGroup_id:;
+- (void)setLog_extra:;
+- (void)setRefer:;
+- (void)setTrack_url_list:;
+- (id)track_label;
+- (id)track_url_list;
+- (id)tag;
+- (void)setLabel:;
+- (id)label;
+- (void)setTag:;
+- (void).cxx_destruct;
+- (id)group_id;
++ (id)JSONKeyPathsByPropertyKey;
++ (id)JSONTransformerForKey:;
+@end

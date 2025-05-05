@@ -1,0 +1,30 @@
+@interface BWIntelligentDistortionCorrectionProcessorControllerConfiguration : BWStillImageProcessorControllerConfiguration
+@property (nonatomic) NSArray portTypesWithGeometricDistortionCorrectionEnabled;
+@property (nonatomic) NSArray portTypesWithIntelligentDistortionCorrectionEnabled;
+@property (nonatomic) {?=ii} geometricDistortionCorrectionExpandedImageDimensions;
+@property (nonatomic) NSInteger intelligentDistortionCorrectionVersion;
+@property (nonatomic) BOOL intelligentDistortionCorrectionAppliesFinalDimensions;
+@property (nonatomic) NSInteger horizontalSensorBinningFactor;
+@property (nonatomic) NSInteger verticalSensorBinningFactor;
+@property (nonatomic) {?=IIII} processorConfig;
+@property (nonatomic) NSDictionary providedInferenceAttachedMediaByMode;
+- (void)dealloc;
+- (void)setVerticalSensorBinningFactor:;
+- (void)setHorizontalSensorBinningFactor:;
+- (int)verticalSensorBinningFactor;
+- (int)horizontalSensorBinningFactor;
+- (int)intelligentDistortionCorrectionVersion;
+- (void)setIntelligentDistortionCorrectionVersion:;
+- (id)portTypesWithGeometricDistortionCorrectionEnabled;
+- (void)setPortTypesWithGeometricDistortionCorrectionEnabled:;
+- (id)portTypesWithIntelligentDistortionCorrectionEnabled;
+- (void)setPortTypesWithIntelligentDistortionCorrectionEnabled:;
+- (id)geometricDistortionCorrectionExpandedImageDimensions;
+- (void)setGeometricDistortionCorrectionExpandedImageDimensions:;
+- (BOOL)intelligentDistortionCorrectionAppliesFinalDimensions;
+- (void)setIntelligentDistortionCorrectionAppliesFinalDimensions:;
+- (id)processorConfig;
+- (void)setProcessorConfig:;
+- (id)providedInferenceAttachedMediaByMode;
+- (void)setProvidedInferenceAttachedMediaByMode:;
+@end

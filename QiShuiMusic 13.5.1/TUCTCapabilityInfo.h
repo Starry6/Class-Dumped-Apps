@@ -1,0 +1,38 @@
+@interface TUCTCapabilityInfo : NSObject
+@property (nonatomic) NSInteger provisioningStatus;
+@property (nonatomic) NSURL provisioningURL;
+@property (nonatomic) NSData provisioningPostData;
+@property (nonatomic) BOOL canEnable;
+@property (nonatomic) BOOL enabled;
+@property (nonatomic) BOOL canEnableRoaming;
+@property (nonatomic) BOOL roamingEnabled;
+@property (nonatomic) BOOL provisioningURLInvalid;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void)setEnabled:;
+- (id)publiclyAccessibleCopyWithZone:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)publiclyAccessibleCopy;
+- (id)copyWithZone:;
+- (BOOL)isEnabled;
+- (int)provisioningStatus;
+- (void)setProvisioningStatus:;
+- (id)provisioningURL;
+- (id)provisioningPostData;
+- (BOOL)isRoamingEnabled;
+- (BOOL)isProvisioningURLInvalid;
+- (void)invalidateProvisioningURL;
+- (void)setProvisioningURL:;
+- (void)setProvisioningPostData:;
+- (void)setRoamingEnabled:;
+- (BOOL)canEnable;
+- (void)setCanEnable:;
+- (BOOL)canEnableRoaming;
+- (void)setCanEnableRoaming:;
++ (BOOL)supportsSecureCoding;
+@end

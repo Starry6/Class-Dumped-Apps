@@ -1,0 +1,17 @@
+@interface SNLKFSResult : NSObject
+@property (nonatomic) float decibelLevel;
+@property (nonatomic) {?={?=qiIq}{?=qiIq}} timeRange;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)timeRange;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)setTimeRange:;
+- (void)encodeWithCoder:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (float)decibelLevel;
++ (BOOL)supportsSecureCoding;
+@end

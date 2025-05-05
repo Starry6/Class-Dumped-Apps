@@ -1,0 +1,32 @@
+@interface AVSpeechSynthesisProviderVoice : NSObject
+@property (nonatomic) NSString name;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) NSArray supportedLanguages;
+@property (nonatomic) NSArray primaryLanguages;
+@property (nonatomic) q voiceSize;
+@property (nonatomic) NSString version;
+@property (nonatomic) q gender;
+@property (nonatomic) q age;
+- (id)supportedLanguages;
+- (void)setName:;
+- (long long)gender;
+- (long long)age;
+- (void)setVersion:;
+- (id)version;
+- (void)setGender:;
+- (id)identifier;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void)setAge:;
+- (void).cxx_destruct;
+- (void)setSupportedLanguages:;
+- (id)name;
+- (void)setIdentifier:;
+- (id)copyWithZone:;
+- (id)initWithName:identifier:primaryLanguages:supportedLanguages:;
+- (id)primaryLanguages;
+- (long long)voiceSize;
+- (void)setVoiceSize:;
++ (BOOL)supportsSecureCoding;
++ (void)updateSpeechVoices;
+@end

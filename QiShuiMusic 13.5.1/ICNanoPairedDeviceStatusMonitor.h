@@ -1,0 +1,33 @@
+@interface ICNanoPairedDeviceStatusMonitor : NSObject
+@property (nonatomic) NSArray allPairedDevicePairingIDs;
+@property (nonatomic) NSArray allPairedDeviceGUIDs;
+@property (nonatomic) NSUUID activePairedDevicePairingID;
+@property (nonatomic) NSUUID pairedDevicePairingID;
+@property (nonatomic) NSString pairedDeviceGUID;
+@property (nonatomic) NSString pairedDeviceMediaGUID;
+@property (nonatomic) BOOL isInitialSyncComplete;
+@property (nonatomic) BOOL mediaSyncingSupported;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)removeObserver:;
+- (id)pairedDeviceGUID;
+- (void)addObserver:;
+- (void)dealloc;
+- (id)_allObservers;
+- (id)pairedDeviceMediaGUID;
+- (id)allPairedDeviceGUIDs;
+- (void)initialSyncStateObserver:initialSyncDidCompleteForPairingIdentifier:;
+- (void)deviceBecameActive:;
+- (id)_activePairedDevice;
+- (void)_handlePairedDeviceChangedNotification;
+- (void).cxx_destruct;
+- (id)_init;
+- (id)activePairedDevicePairingID;
+- (id)allPairedDevicePairingIDs;
+- (BOOL)isInitialSyncComplete;
+- (BOOL)isMediaSyncingSupported;
+- (id)pairedDevicePairingID;
++ (id)sharedMonitor;
+@end

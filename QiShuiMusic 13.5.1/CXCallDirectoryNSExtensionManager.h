@@ -1,0 +1,32 @@
+@interface CXCallDirectoryNSExtensionManager : NSObject
+@property (nonatomic) NSObject<OS_dispatch_queue> queue;
+@property (nonatomic) <CXCallDirectoryNSExtensionManagerDelegate> delegate;
+@property (nonatomic) NSObject<OS_dispatch_queue> delegateQueue;
+@property (nonatomic) @ extensionMatchingContext;
+@property (nonatomic) NSDictionary extensions;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setExtensions:;
+- (id)extensions;
+- (id)init;
+- (void)setExtensionMatchingContext:;
+- (void)dealloc;
+- (void)setDelegate:;
+- (void)beginMatchingExtensions;
+- (id)delegateQueue;
+- (void)pluginsDidInstall:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setQueue:;
+- (id)extensionMatchingContext;
+- (void)setDelegateQueue:;
+- (id)queue;
+- (void)setDelegate:queue:;
+- (void)_beginMatchingExtensionsIfNecessary;
+- (void)extensionsWithCompletionHandler:;
+- (void)extensionWithIdentifier:inContainingAppWithProcessIdentifier:completion:;
+- (void)_extensionForIdentifier:containingAppBundleURL:completion:;
++ (id)baseExtensionMatchingAttributes;
+@end

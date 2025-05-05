@@ -1,0 +1,30 @@
+@interface MSASPlatformImplementation : NSObject
+@property (nonatomic) ACAccountStore accountStore;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setAccountStore:;
+- (BOOL)deviceHasEnoughDiskSpaceRemainingToOperate;
+- (id)init;
+- (id)accountStore;
+- (BOOL)MSASIsAllowedToUploadAssets;
+- (BOOL)shouldLogAtLevel:;
+- (BOOL)shouldEnableNewFeatures;
+- (BOOL)MSASPersonIDIsAllowedToDownloadAssets:;
+- (id)MMCSUploadSocketOptionsForPersonID:;
+- (id)pushTokenForPersonID:;
+- (void)logLevel:personID:albumGUID:format:;
+- (id)albumSharingDaemon;
+- (id)MMCSDownloadSocketOptionsForPersonID:;
+- (id)baseSharingURLForPersonID:;
+- (BOOL)personIDEnabledForAlbumSharing:;
+- (BOOL)MSASIsAllowedToTransferMetadata;
+- (Class)pluginClass;
+- (void).cxx_destruct;
+- (BOOL)personIDUsesProductionPushEnvironment:;
+- (id)pathAlbumSharingDir;
+- (int)MMCSConcurrentConnectionsCount;
+- (id)_accountForPersonID:;
+- (id)personIDsEnabledForAlbumSharing;
+@end

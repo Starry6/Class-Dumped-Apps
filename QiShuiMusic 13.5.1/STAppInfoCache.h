@@ -1,0 +1,35 @@
+@interface STAppInfoCache : NSObject
+@property (nonatomic) NSCache appInfoByBundleIdentifier;
+@property (nonatomic) NSObject<OS_dispatch_queue> lookupQueue;
+@property (nonatomic) NSURLSession urlSession;
+@property (nonatomic) NSMutableSet bundleIdentifiersWithPendingRequests;
+@property (nonatomic) NSOperationQueue completionHandlerQueue;
+@property (nonatomic) NSPersistentContainer persistentContainer;
+- (void)setPersistentContainer:;
+- (id)urlSession;
+- (id)init;
+- (void)dealloc;
+- (id)lookupQueue;
+- (id)persistentContainer;
+- (id)appInfoForBundleIdentifier:;
+- (void).cxx_destruct;
+- (id)appInfoForBundleIdentifier:localOnly:;
+- (void)fetchAppInfoForBundleIdentifier:completionHandler:;
+- (void)fetchAppInfoForBundleIdentifiers:completionHandler:;
+- (void)addObserver:selector:bundleIdentifier:;
+- (void)removeObserver:bundleIdentifier:;
+- (id)_appInfoForBundleIdentifier:;
+- (id)_fetchAppInfoFromLaunchServicesWithBundleIdentifier:;
+- (void)_fetchAppStoreInfoAndNotifyWithBundleIdentifiers:;
+- (void)_fetchAppStoreInfoAndNotifyWithBundleIdentifiers:timeoutInterval:completionHandler:;
+- (void)_handleiTunesResponseForBundleIdentifiers:response:data:error:completionHandler:;
+- (id)_fetchSyncedInstalledAppInfoForBundleIdentifier:;
+- (void)_finishedFetchingAppInfoByBundleIdentifier:;
+- (id)_preloadedAppInfoWithBundleIdentifier:;
+- (id)_placeholderAppInfoWithBundleIdentifier:;
+- (id)_localAppNameForBundleIdentifier:;
+- (id)appInfoByBundleIdentifier;
+- (id)bundleIdentifiersWithPendingRequests;
+- (id)completionHandlerQueue;
++ (id)sharedCache;
+@end

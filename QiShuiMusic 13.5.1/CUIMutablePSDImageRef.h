@@ -1,0 +1,21 @@
+@interface CUIMutablePSDImageRef : CUIPSDImageRef
+- (void)setFileURL:;
+- (BOOL)saveWithCompletionHandler:;
+- (id)initWithPixelWidth:pixelHeight:;
+- (id)copyDefaultICCProfileData;
+- (void)addLayoutMetricsChannel:;
+- (void)insertLayoutMetricsChannel:atIndex:;
+- (id)newPSDGradientFromCUIPSDGradient:;
+- (void)deleteLayoutMetricsChannelAtIndex:;
+- (unsigned int)psdLayerBlendModeForCGBlendMode:;
+- (void)addLayer:;
+- (void)insertLayer:atIndex:;
+- (void)deleteLayerAtIndex:;
+- (unsigned int)newUInt32CArray:withNSArray:prependNumber:appendNumber:;
+- (unsigned int)newSliceRectsArray:withSliceRects:;
+- (unsigned int)newSliceRectsArray:withXCutPositions:yCutPositions:;
+- (void)addOrUpdateSlicesWithSliceRects:;
+- (void)addOrUpdateSlicesWithXCutPositions:yCutPositions:;
+- (void)updateSliceName:atIndex:;
+- (BOOL)saveToURL:completionHandler:;
+@end

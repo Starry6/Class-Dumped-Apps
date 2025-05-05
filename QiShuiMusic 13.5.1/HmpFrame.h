@@ -1,0 +1,31 @@
+@interface HmpFrame : NSObject
+@property (nonatomic) ^v impl;
+@property (nonatomic) BOOL own;
+@property (nonatomic) ^{__CVBuffer=} buffer;
+- (long long)nplanes;
+- (BOOL)own;
+- (id)init:::;
+- (void)setOwn:;
+- (id)copy_:;
+- (id)crop::::;
+- (id)initFromPixelBuffer:;
+- (id)initFromPtr::;
+- (id)pix_info;
+- (id)plane:;
+- (id)plane_data:;
+- (id)to_image:;
+- (void)setBuffer:;
+- (void)dealloc;
+- (id)buffer;
+- (int)format;
+- (int)height;
+- (int)width;
+- (id)ptr;
+- (id)impl;
+- (id)description;
+- (void)setImpl:;
+- (id)device;
+- (int)dtype;
+- (BOOL)defined;
++ (id)from_image::;
+@end

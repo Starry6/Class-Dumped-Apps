@@ -1,0 +1,38 @@
+@interface GEOWaypointRouteFeatures : PBCodable
+@property (nonatomic) BOOL hasAvoidsTolls;
+@property (nonatomic) BOOL avoidsTolls;
+@property (nonatomic) BOOL hasAvoidsHighways;
+@property (nonatomic) BOOL avoidsHighways;
+@property (nonatomic) BOOL hasAvoidsTraffic;
+@property (nonatomic) BOOL avoidsTraffic;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)avoidsTolls;
+- (BOOL)avoidsHighways;
+- (BOOL)avoidsTraffic;
+- (void)setAvoidsTolls:;
+- (void)setHasAvoidsTolls:;
+- (BOOL)hasAvoidsTolls;
+- (void)setAvoidsHighways:;
+- (void)setHasAvoidsHighways:;
+- (BOOL)hasAvoidsHighways;
+- (void)setAvoidsTraffic:;
+- (void)setHasAvoidsTraffic:;
+- (BOOL)hasAvoidsTraffic;
++ (BOOL)isValid:;
+@end

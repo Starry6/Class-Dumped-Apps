@@ -1,0 +1,32 @@
+@interface MPTiledArtworkRequest : NSObject
+@property (nonatomic) @? artworkCatalogsBlock;
+@property (nonatomic) BOOL allowsSynchronousArtworkCatalogsBlockExecution;
+@property (nonatomic) Q numberOfColumns;
+@property (nonatomic) Q numberOfRows;
+@property (nonatomic) double tileSpacing;
+@property (nonatomic) <NSCopying> entityIdentifier;
+@property (nonatomic) <NSCopying> namespaceIdentifier;
+@property (nonatomic) <NSCopying> revisionIdentifier;
+- (id)existingArtworkCatalogsWithCount:;
+- (void)setEntityIdentifier:;
+- (id)init;
+- (BOOL)allowsSynchronousArtworkCatalogsBlockExecution;
+- (unsigned long long)numberOfColumns;
+- (void)setNumberOfColumns:;
+- (id)revisionIdentifier;
+- (id)artworkCatalogsBlock;
+- (void)setAllowsSynchronousArtworkCatalogsBlockExecution:;
+- (void)setRevisionIdentifier:;
+- (id)namespaceIdentifier;
+- (id)entityIdentifier;
+- (id)artworkCatalogsWithCount:;
+- (void)setNumberOfRows:;
+- (void).cxx_destruct;
+- (unsigned long long)numberOfRows;
+- (double)tileSpacing;
+- (BOOL)hasExistingArtworkCatalogsWithCount:;
+- (void)setNamespaceIdentifier:;
+- (void)setTileSpacing:;
+- (void)setArtworkCatalogsBlock:;
+- (id)copyWithZone:;
+@end

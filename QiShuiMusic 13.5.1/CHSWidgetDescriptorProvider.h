@@ -1,0 +1,33 @@
+@interface CHSWidgetDescriptorProvider : NSObject
+@property (nonatomic) @? eduModeProvider;
+@property (nonatomic) NSSet descriptors;
+@property (nonatomic) NSDictionary descriptorsByExtensionIdentifier;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)removeObserver:;
+- (id)descriptors;
+- (id)init;
+- (void)addObserver:;
+- (id)descriptorsByExtensionIdentifier;
+- (id)eduModeProvider;
+- (void)_lock_addNewDescriptorsFromDescriptors:;
+- (void)_lock_loadContentInitiallySynchronouslyIfNecessary;
+- (id)succinctDescriptionBuilder;
+- (void)_lock_reloadContentAsynchronouslyForContainerIdentifier:completion:;
+- (void)_lock_postDEPRECATEDDescriptorsDidChangeIfNecessary;
+- (void)_lock_notifyDescriptorsDidLoad;
+- (void)setEduModeProvider:;
+- (void)_lock_notifyObserversDescriptorsDidChange;
+- (void)reloadDescriptorsForContainerIdentifier:completion:;
+- (void).cxx_destruct;
+- (void)widgetDescriptorsDidChange:;
+- (id)succinctDescription;
+- (BOOL)_isEDUMode;
+- (id)description;
+- (id)initWithConnection:;
+- (id)descriptorForPersonality:;
+- (id)descriptionBuilderWithMultilinePrefix:;
+- (id)descriptionWithMultilinePrefix:;
+@end

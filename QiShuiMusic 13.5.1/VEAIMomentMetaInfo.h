@@ -1,0 +1,36 @@
+@interface VEAIMomentMetaInfo : NSObject
+@property (nonatomic) q size;
+@property (nonatomic) q width;
+@property (nonatomic) q height;
+@property (nonatomic) q orientation;
+@property (nonatomic) float duration;
+@property (nonatomic) NSString imgPath;
+@property (nonatomic) BOOL isCamera;
+@property (nonatomic) NSString location;
+@property (nonatomic) q shotTime;
+@property (nonatomic) q createTime;
+@property (nonatomic) q modifyTime;
+- (id)imgPath;
+- (long long)modifyTime;
+- (void)setImgPath:;
+- (void)setIsCamera:;
+- (void)setModifyTime:;
+- (void)setShotTime:;
+- (long long)shotTime;
+- (long long)createTime;
+- (long long)orientation;
+- (void)setWidth:;
+- (id)location;
+- (long long)height;
+- (void)setDuration:;
+- (long long)width;
+- (void)setLocation:;
+- (void)setHeight:;
+- (void).cxx_destruct;
+- (void)setCreateTime:;
+- (float)duration;
+- (void)setSize:;
+- (void)setOrientation:;
+- (long long)size;
+- (BOOL)isCamera;
+@end

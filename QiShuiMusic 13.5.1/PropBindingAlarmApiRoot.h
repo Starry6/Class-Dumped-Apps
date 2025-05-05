@@ -1,0 +1,2 @@
+@interface PropBindingAlarmApiRoot : GPBRootObject
+@end

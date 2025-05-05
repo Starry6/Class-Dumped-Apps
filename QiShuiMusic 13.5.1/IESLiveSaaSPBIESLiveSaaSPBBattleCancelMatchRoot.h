@@ -1,0 +1,2 @@
+@interface IESLiveSaaSPBIESLiveSaaSPBBattleCancelMatchRoot : GPBRootObject
+@end

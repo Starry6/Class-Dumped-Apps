@@ -1,0 +1,26 @@
+@interface NSNullFileHandle : NSFileHandle
+- (id)readDataToEndOfFile;
+- (void)setReadabilityHandler:;
+- (BOOL)seekToEndReturningOffset:error:;
+- (id)readDataToEndOfFileAndReturnError:;
+- (BOOL)getOffset:error:;
+- (void)setWriteabilityHandler:;
+- (BOOL)writeData:error:;
+- (id)writeabilityHandler;
+- (unsigned long long)seekToEndOfFile;
+- (BOOL)synchronizeAndReturnError:;
+- (void)synchronizeFile;
+- (BOOL)truncateAtOffset:error:;
+- (void)writeData:;
+- (BOOL)seekToOffset:error:;
+- (id)availableData;
+- (unsigned long long)offsetInFile;
+- (int)fileDescriptor;
+- (void)seekToFileOffset:;
+- (id)readDataOfLength:;
+- (void)closeFile;
+- (id)readDataUpToLength:error:;
+- (void)truncateFileAtOffset:;
+- (BOOL)closeAndReturnError:;
+- (id)readabilityHandler;
+@end

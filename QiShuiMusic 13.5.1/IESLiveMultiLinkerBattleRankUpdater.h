@@ -1,0 +1,30 @@
+@interface IESLiveMultiLinkerBattleRankUpdater : NSObject
+@property (nonatomic) NSDictionary currentRanks;
+@property (nonatomic) NSDictionary cachedRanks;
+@property (nonatomic) BOOL isIdle;
+@property (nonatomic) NSMutableArray animItems;
+@property (nonatomic) q completedAnimCount;
+@property (nonatomic) NSObject<OS_dispatch_queue> serialQueue;
+@property (nonatomic) <IESLiveMultiLinkerBattleRankUpdaterDelegate> delegate;
+- (void)setCachedRanks:;
+- (id)animItems;
+- (id)cachedRanks;
+- (BOOL)checkAndCreateAnimItems:;
+- (long long)completedAnimCount;
+- (id)currentRanks;
+- (void)dealWithRanks:;
+- (void)didRanksUpdateFinished;
+- (id)initWithRanks:delegate:;
+- (void)setAnimItems:;
+- (void)setCompletedAnimCount:;
+- (void)setCurrentRanks:;
+- (void)setIsIdle:;
+- (void)updateRanks;
+- (void)setDelegate:;
+- (id)serialQueue;
+- (void)clear;
+- (id)delegate;
+- (void).cxx_destruct;
+- (BOOL)isIdle;
+- (void)setSerialQueue:;
+@end

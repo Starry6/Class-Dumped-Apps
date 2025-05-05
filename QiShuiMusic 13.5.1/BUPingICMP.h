@@ -1,0 +1,33 @@
+@interface BUPingICMP : NSObject
+@property (nonatomic) NSLock lock;
+@property (nonatomic) NSMutableArray resultList;
+@property (nonatomic) double packetLossRate;
+@property (nonatomic) double averageRtt;
+@property (nonatomic) <BUPingICMPRatingProtocol> delegate;
+@property (nonatomic) NSString hostName;
+@property (nonatomic) double timeout;
+@property (nonatomic) q count;
+@property (nonatomic) BOOL testing;
+- (double)averageRtt;
+- (id)initWithHostName:timeout:;
+- (id)resultList;
+- (void)setAverageRtt:;
+- (void)setResultList:;
+- (void)setCount:;
+- (BOOL)testing;
+- (id)init;
+- (void)start;
+- (void)setDelegate:;
+- (void)setTimeout:;
+- (void)stop;
+- (id)lock;
+- (id)delegate;
+- (void).cxx_destruct;
+- (double)timeout;
+- (id)hostName;
+- (long long)count;
+- (void)setLock:;
+- (double)packetLossRate;
+- (void)setHostName:;
+- (void)setPacketLossRate:;
+@end

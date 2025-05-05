@@ -1,0 +1,30 @@
+@interface IESIMSearchHotSpotRelatedInfoModel : IESIMBaseApiModel
+@property (nonatomic) q type;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSArray userList;
+@property (nonatomic) NSArray backgroundList;
+@property (nonatomic) IESIMSearchHotSpotRelatedVSProgramVideoModel vsVideoModel;
+@property (nonatomic) IESIMSearchHotSpotRelatedVSProgramLiveModel vsLiveModel;
+@property (nonatomic) IESIMSearchHotSpotRelatedVSProgramUserModel vsUserModel;
+- (void)setVsLiveModel:;
+- (void)setVsUserModel:;
+- (id)backgroundList;
+- (void)setBackgroundList:;
+- (void)setUserList:;
+- (void)setVsVideoModel:;
+- (id)vsLiveModel;
+- (id)vsUserModel;
+- (id)vsVideoModel;
+- (void)setType:;
+- (void)setTitle:;
+- (long long)type;
+- (id)title;
+- (void).cxx_destruct;
+- (id)userList;
++ (id)backgroundListJSONTransformer;
++ (id)userListJSONTransformer;
++ (id)vsLiveModelJSONTransformer;
++ (id)vsUserModelJSONTransformer;
++ (id)vsVideoModelJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

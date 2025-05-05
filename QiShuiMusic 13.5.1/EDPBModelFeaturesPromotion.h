@@ -1,0 +1,35 @@
+@interface EDPBModelFeaturesPromotion : PBCodable
+@property (nonatomic) BOOL hasUnknownFeatureCount;
+@property (nonatomic) I unknownFeatureCount;
+@property (nonatomic) BOOL hasToCount;
+@property (nonatomic) I toCount;
+@property (nonatomic) BOOL hasLanguage;
+@property (nonatomic) NSString language;
+@property (nonatomic) BOOL hasHeaderKeyFilteredCount;
+@property (nonatomic) I headerKeyFilteredCount;
+- (void)setLanguage:;
+- (id)language;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasLanguage;
+- (void)setUnknownFeatureCount:;
+- (void)setHasUnknownFeatureCount:;
+- (BOOL)hasUnknownFeatureCount;
+- (unsigned int)unknownFeatureCount;
+- (void)setToCount:;
+- (void)setHasToCount:;
+- (BOOL)hasToCount;
+- (void)setHeaderKeyFilteredCount:;
+- (void)setHasHeaderKeyFilteredCount:;
+- (BOOL)hasHeaderKeyFilteredCount;
+- (unsigned int)toCount;
+- (unsigned int)headerKeyFilteredCount;
+@end

@@ -1,0 +1,33 @@
+@interface IMSharedUtilitiesProtoCloudKitEncryptedGroupTitleChange : PBCodable
+@property (nonatomic) BOOL hasVersion;
+@property (nonatomic) I version;
+@property (nonatomic) BOOL hasGroupTitle;
+@property (nonatomic) NSString groupTitle;
+@property (nonatomic) BOOL hasOtherHandle;
+@property (nonatomic) NSString otherHandle;
+@property (nonatomic) BOOL hasPadding;
+@property (nonatomic) NSData padding;
+- (void)setHasVersion:;
+- (void)dealloc;
+- (void)setVersion:;
+- (unsigned int)version;
+- (void)writeTo:;
+- (void)setGroupTitle:;
+- (unsigned long long)hash;
+- (BOOL)hasVersion;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void)setPadding:;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)padding;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)groupTitle;
+- (id)copyWithZone:;
+- (BOOL)hasPadding;
+- (void)setOtherHandle:;
+- (id)otherHandle;
+- (BOOL)hasOtherHandle;
+- (BOOL)hasGroupTitle;
+@end

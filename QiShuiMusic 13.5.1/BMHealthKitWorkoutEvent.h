@@ -1,0 +1,34 @@
+@interface BMHealthKitWorkoutEvent : BMEventBase
+@property (nonatomic) BOOL isFirstPartyDonation;
+@property (nonatomic) BOOL isIndoor;
+@property (nonatomic) NSString activityType;
+@property (nonatomic) NSString activityUUID;
+@property (nonatomic) Q eventType;
+@property (nonatomic) BOOL isUpdate;
+@property (nonatomic) I dataVersion;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)activityType;
+- (void)setActivityType:;
+- (id)initWithProtoData:;
+- (id)proto;
+- (id)encodeAsProto;
+- (unsigned long long)eventType;
+- (void)setEventType:;
+- (unsigned int)dataVersion;
+- (id)initWithProto:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)serialize;
+- (BOOL)isEqual:;
+- (BOOL)isUpdate;
+- (id)activityUUID;
+- (void)setActivityUUID:;
+- (BOOL)isFirstPartyDonation;
+- (BOOL)isIndoor;
+- (id)initWithIsFirstPartyDonation:isIndoor:activityType:activityUUID:eventType:;
+- (id)initWithIsFirstPartyDonation:isIndoor:activityType:activityUUID:eventType:isUpdate:;
++ (id)eventWithData:dataVersion:;
+@end

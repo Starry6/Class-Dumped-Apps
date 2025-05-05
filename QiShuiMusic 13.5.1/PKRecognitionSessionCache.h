@@ -1,0 +1,2 @@
+@interface PKRecognitionSessionCache : NSObject
+@end

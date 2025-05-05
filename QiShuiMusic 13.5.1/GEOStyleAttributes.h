@@ -1,0 +1,37 @@
+@interface GEOStyleAttributes : PBCodable
+@property (nonatomic) NSMutableArray attributes;
+@property (nonatomic) BOOL hasCustomIconId;
+@property (nonatomic) Q customIconId;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (id)attributeAtIndex:;
+- (unsigned long long)customIconId;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)setCustomIconId:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (id)initWithGEOFeatureStyleAttributes:;
+- (unsigned long long)hash;
+- (void)setAttributes:;
+- (id)attributes;
+- (void)copyTo:;
+- (void)setHasCustomIconId:;
+- (void)mergeFrom:;
+- (unsigned long long)attributesCount;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (void)addAttribute:;
+- (id)dictionaryRepresentation;
+- (BOOL)hasCustomIconId;
+- (BOOL)isEqual:;
+- (void)clearAttributes;
+- (id)copyWithZone:;
++ (BOOL)isValid:;
++ (id)attributesForTransitLine:;
++ (Class)attributeType;
++ (id)attributesForTransitSystem:;
+@end

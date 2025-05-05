@@ -1,0 +1,2 @@
+@interface HTSLiveFixChatSyncDataRoot : GPBRootObject
+@end

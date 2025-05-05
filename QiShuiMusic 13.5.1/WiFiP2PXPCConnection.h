@@ -1,0 +1,30 @@
+@interface WiFiP2PXPCConnection : NSObject
+@property (nonatomic) <WiFiP2PXPCConnectionDelegate> delegate;
+- (void)dealloc;
+- (void)withRemoteObjectProxy:clientErrorHandler:;
+- (void)start;
+- (void)handleError:;
+- (void)setDelegate:;
+- (void)attemptConnection;
+- (void)stop;
+- (void)handleConnectionInvalidated;
+- (void)withRemoteObjectProxy:;
+- (id)delegate;
+- (void)cleanUpRemovingNotifyToken:;
+- (void).cxx_destruct;
+- (void)reconnectOnAvailableNotification;
+- (void)withRemoteObjectProxy:clientCompletionHandler:;
+- (void)invalidate;
+- (id)initWithEndpointType:queue:retryTimeout:;
++ (id)localization;
++ (BOOL)directRequestOnEndpointType:error:requesting:;
++ (long long)defaultRetryTimeout;
++ (id)wifiPeerToPeerWorkloop;
++ (id)endpointForEndpointType:;
++ (BOOL)supportsWiFiP2P;
++ (id)directQueryOnEndpointType:error:querying:;
++ (id)directQueryOnEndpointType:exportedObject:withExportedInterface:error:querying:;
++ (id)convertError:;
++ (id)frameworkBundle;
++ (id)wifiPeerToPeerAvailableNotification;
+@end

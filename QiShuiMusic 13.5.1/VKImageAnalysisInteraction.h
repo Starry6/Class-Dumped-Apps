@@ -1,0 +1,2 @@
+@interface VKImageAnalysisInteraction : VKCImageAnalysisInteraction
+@end

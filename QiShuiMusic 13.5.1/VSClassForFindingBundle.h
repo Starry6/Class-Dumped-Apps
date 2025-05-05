@@ -1,0 +1,2 @@
+@interface VSClassForFindingBundle : NSObject
+@end

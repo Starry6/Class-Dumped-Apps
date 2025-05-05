@@ -1,0 +1,37 @@
+@interface HTSLiveUserEnterView : IESLivePrivilegeEntryView
+@property (nonatomic) UIImageView containerView;
+@property (nonatomic) UIImageView levelImageView;
+@property (nonatomic) UILabel descLabel;
+@property (nonatomic) UIImageView starSuffix;
+@property (nonatomic) NSMutableArray whiteShadowArray;
+@property (nonatomic) NSMutableArray streamLineArray;
+@property (nonatomic) Q enterClass;
+- (void)touchViewDidTap;
+- (id)streamLineArray;
+- (void)addStreamLineAnimation:duration:delay:repeatCount:;
+- (void)addWhiteShadowAnimation:duration:delay:;
+- (id)createStreamLine:;
+- (id)createWhiteShadow;
+- (id)descLabel;
+- (unsigned long long)enterClass;
+- (id)levelImageView;
+- (void)setDescLabel:;
+- (void)setEnterClass:;
+- (void)setLevelImageView:;
+- (void)setStarSuffix:;
+- (void)setStreamLineArray:;
+- (void)setWhiteShadowArray:;
+- (id)starSuffix;
+- (void)startShowingAnimationOn:shouldReduceFPS:stayTime:;
+- (void)startStreamLineAnimation;
+- (void)startWhiteShadowAnimation;
+- (void)updateWithEnterMessageNode:;
+- (id)whiteShadowArray;
+- (void)dealloc;
+- (id)containerView;
+- (void)setContainerView:;
+- (id)initWithFrame:;
+- (void)startAnimation;
+- (void).cxx_destruct;
+- (void)layoutUI;
+@end

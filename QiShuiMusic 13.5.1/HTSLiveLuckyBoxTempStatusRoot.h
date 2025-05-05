@@ -1,0 +1,2 @@
+@interface HTSLiveLuckyBoxTempStatusRoot : GPBRootObject
+@end

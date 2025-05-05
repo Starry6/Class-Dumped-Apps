@@ -1,0 +1,30 @@
+@interface SFProxCardSessionServer : NSObject
+@property (nonatomic) <SFProxCardXPCServerInterface> delegate;
+@property (nonatomic) NSObject<OS_dispatch_queue> dispatchQueue;
+@property (nonatomic) @? errorHandler;
+@property (nonatomic) @? invalidationHandler;
+@property (nonatomic) NSString label;
+@property (nonatomic) NSXPCListenerEndpoint xpcEndpoint;
+- (id)init;
+- (void)dealloc;
+- (id)errorHandler;
+- (void)_invalidated;
+- (id)dispatchQueue;
+- (void)setDelegate:;
+- (void)_activateWithCompletion:;
+- (void)setDispatchQueue:;
+- (void)setLabel:;
+- (id)label;
+- (void)setErrorHandler:;
+- (void)activateWithCompletion:;
+- (void)_reportError:;
+- (void)_invalidate;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)invalidationHandler;
+- (void)setInvalidationHandler:;
+- (void)invalidate;
+- (void)setXpcEndpoint:;
+- (id)xpcEndpoint;
+- (void)performAction:completion:;
+@end

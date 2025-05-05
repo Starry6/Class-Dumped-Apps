@@ -1,0 +1,36 @@
+@interface IMCTXPCServiceSubscriptionInfo : NSObject
+@property (nonatomic) CTXPCServiceSubscriptionInfo subscriptionInfo;
+@property (nonatomic) NSArray phoneNumbersOfActiveSubscriptions;
+- (id)initWithSubscriptionInfo:;
+- (id)subscriptions;
+- (id)_senderIdentityManager;
+- (id)__im_subscriptionContextForPhoneNumber:;
+- (id)__im_phoneNumberForSlotID:;
+- (id)__im_subscriptionContextForSenderIdentity:;
+- (id)__im_subscriptionsWithMMSSupport;
+- (id)__im_subscriptionContextOrDefaultForForSlotID:;
+- (id)__im_contactPreferredSubscriptionContextForChatHandleIDs:;
+- (id)__imSIMIDForSubscriptionSlot:;
+- (BOOL)__im_hasMultipleSubscriptions;
+- (void)setSubscriptionInfo:;
+- (id)__im_subscriptionContextForForSimID:;
+- (id)subscriptionInfo;
+- (id)__im_labelForPhoneNumber:simID:;
+- (id)phoneNumbersOfActiveSubscriptions;
+- (id)__im_switchSubscriptionContextFromSubscriptionContext:;
+- (void).cxx_destruct;
+- (long long)__imSlotIDSForPhoneNumber:;
+- (void)setPhoneNumbersOfActiveSubscriptions:;
+- (id)__im_subscriptionContextOrDefaultForForSimID:phoneNumber:;
+- (id)description;
+- (id)__im_subscriptionContextForForSlotID:;
+- (id)__im_preferredSubscriptionContext;
+- (id)__im_switchSubscriptionContextFromPhoneNumber:simID:;
+- (id)allSubscriptions;
+- (BOOL)__im_containsPhoneNumber:;
+- (id)preferredOrDefaultSubscriptionContext;
+- (BOOL)__im_onlyHasActiveSlots;
+- (id)__im_subscriptionContextForForSimID:phoneNumber:;
+- (id)__im_subscriptionContextForPhoneNumberOrDefault:;
+- (id)__im_phoneNumberForSlotIDOrDefault:;
+@end

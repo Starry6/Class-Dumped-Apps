@@ -1,0 +1,35 @@
+@interface PLUSSchemaPLUSTMDCCorrectedPronunciationTier1 : SISchemaInstrumentationMessage
+@property (nonatomic) NSString firstNamePhonemes;
+@property (nonatomic) BOOL hasFirstNamePhonemes;
+@property (nonatomic) NSString lastNamePhonemes;
+@property (nonatomic) BOOL hasLastNamePhonemes;
+@property (nonatomic) NSString nicknamePhonemes;
+@property (nonatomic) BOOL hasNicknamePhonemes;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (BOOL)hasFirstNamePhonemes;
+- (void)deleteFirstNamePhonemes;
+- (BOOL)hasLastNamePhonemes;
+- (void)deleteLastNamePhonemes;
+- (BOOL)hasNicknamePhonemes;
+- (void)deleteNicknamePhonemes;
+- (id)firstNamePhonemes;
+- (void)setFirstNamePhonemes:;
+- (id)lastNamePhonemes;
+- (void)setLastNamePhonemes:;
+- (id)nicknamePhonemes;
+- (void)setNicknamePhonemes:;
+- (void)setHasFirstNamePhonemes:;
+- (void)setHasLastNamePhonemes:;
+- (void)setHasNicknamePhonemes:;
+@end

@@ -1,0 +1,2 @@
+@interface IESLiveSaaSPBIESLiveSaaSPBGetCameraInfosRoot : GPBRootObject
+@end

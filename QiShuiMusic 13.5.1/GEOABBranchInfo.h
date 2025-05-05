@@ -1,0 +1,32 @@
+@interface GEOABBranchInfo : PBCodable
+@property (nonatomic) BOOL hasAbBranchId;
+@property (nonatomic) NSString abBranchId;
+@property (nonatomic) BOOL hasMultilayerAbBranchId;
+@property (nonatomic) NSString multilayerAbBranchId;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (id)init;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasAbBranchId;
+- (id)abBranchId;
+- (void)setAbBranchId:;
+- (BOOL)hasMultilayerAbBranchId;
+- (id)multilayerAbBranchId;
+- (void)setMultilayerAbBranchId:;
++ (BOOL)isValid:;
+@end

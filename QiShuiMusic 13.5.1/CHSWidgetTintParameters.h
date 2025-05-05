@@ -1,0 +1,30 @@
+@interface CHSWidgetTintParameters : NSObject
+@property (nonatomic) q filterStyle;
+@property (nonatomic) q fallbackFilterStyle;
+@property (nonatomic) BSColor primaryTintColor;
+@property (nonatomic) BSColor secondaryTintColor;
+@property (nonatomic) double fraction;
+@property (nonatomic) BOOL accentedAlternateBackground;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)_initWithTintParameters:;
+- (id)initWithBSXPCCoder:;
+- (long long)fallbackFilterStyle;
+- (double)fraction;
+- (unsigned long long)hash;
+- (id)initWithPrimaryTintColor:secondaryTintColor:filterStyle:fallbackFilterStyle:fraction:;
+- (long long)filterStyle;
+- (id)secondaryTintColor;
+- (id)primaryTintColor;
+- (void).cxx_destruct;
+- (void)encodeWithBSXPCCoder:;
+- (id)_init;
+- (id)initWithFilterStyle:;
+- (id)mutableCopyWithZone:;
+- (BOOL)accentedAlternateBackground;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
++ (BOOL)supportsBSXPCSecureCoding;
+@end

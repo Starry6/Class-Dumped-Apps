@@ -1,0 +1,38 @@
+@interface TLKGridRowView : TLKView
+@property (nonatomic) NSMutableArray labels;
+@property (nonatomic) NSMutableArray imageViews;
+@property (nonatomic) NSMutableArray currentListOfViews;
+@property (nonatomic) Q indexOfFirstCenteredColumnForForcedCentering;
+@property (nonatomic) Q indexOfFirstTrailingColumn;
+@property (nonatomic) BOOL needsSizingPass;
+@property (nonatomic) TLKGridLayoutManager manager;
+@property (nonatomic) TLKTableRow tableRow;
+- (id)init;
+- (id)intrinsicContentSize;
+- (void)layoutSubviews;
+- (id)systemLayoutSizeFittingSize:;
+- (id)manager;
+- (id)labels;
+- (void)setManager:;
+- (id)sizeThatFits:;
+- (void).cxx_destruct;
+- (void)setImageViews:;
+- (id)imageViews;
+- (void)setLabels:;
+- (BOOL)isLayoutSizeDependentOnPerpendicularAxis;
+- (void)observedPropertiesChanged;
+- (id)leadingTextView;
+- (void)setTableRow:;
+- (void)resetStateOfAllViews;
+- (void)generateLabelsAndImagesIfNecessary;
+- (id)tableRow;
+- (id)currentListOfViews;
+- (void)setCurrentListOfViews:;
+- (unsigned long long)indexOfFirstCenteredColumnForForcedCentering;
+- (void)setIndexOfFirstCenteredColumnForForcedCentering:;
+- (unsigned long long)indexOfFirstTrailingColumn;
+- (void)setIndexOfFirstTrailingColumn:;
+- (BOOL)needsSizingPass;
+- (void)setNeedsSizingPass:;
++ (void)updateLabel:withRichText:alignment:;
+@end

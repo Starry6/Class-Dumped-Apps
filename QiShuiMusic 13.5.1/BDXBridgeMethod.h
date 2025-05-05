@@ -1,0 +1,38 @@
+@interface BDXBridgeMethod : NSObject
+@property (nonatomic) BOOL isLocal;
+@property (nonatomic) <BDARVideoLynxBridgeContext> BDARContext;
+@property (nonatomic) Q engineTypes;
+@property (nonatomic) NSString methodName;
+@property (nonatomic) q authType;
+@property (nonatomic) BOOL isDevelopmentMethod;
+@property (nonatomic) BDXBridgeContext context;
+@property (nonatomic) # paramModelClass;
+@property (nonatomic) # resultModelClass;
+- (id)lk_shareDataImp;
+- (Class)paramModelClass;
+- (id)BDARContext;
+- (void)setBDARContext:;
+- (void)callWithParamModel:completionHandler:;
+- (id)initWithCallHandler:;
+- (id)initWithNoCallHandler;
+- (BOOL)isDevelopmentMethod;
+- (BOOL)lk_contextDelegateSetted;
+- (id)lk_currentListContextId;
+- (id)lk_currentLynxCardContextDelegate;
+- (void)lk_currentLynxCardWriteAlogMethodName:paramModel:result:context:;
+- (id)lk_dynamicRequestImp;
+- (id)mallDynamicRequestIMP;
+- (id)mallListSharedDataIMP;
+- (id)mall_bridgeCallHanderServiceImpl;
+- (void)raiseExceptionWithSelector:;
+- (Class)resultModelClass;
+- (void)setIsLocal:;
+- (id)context;
+- (long long)authType;
+- (id)initWithContext:;
+- (void).cxx_destruct;
+- (BOOL)isLocal;
+- (unsigned long long)engineTypes;
+- (void)setContext:;
+- (id)methodName;
+@end

@@ -1,0 +1,32 @@
+@interface AXDataSeriesDescriptor : NSObject
+@property (nonatomic) double meanYValue;
+@property (nonatomic) NSString meanValueDescription;
+@property (nonatomic) NSString name;
+@property (nonatomic) NSAttributedString attributedName;
+@property (nonatomic) BOOL isContinuous;
+@property (nonatomic) NSArray dataPoints;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setName:;
+- (id)initWithDictionary:;
+- (BOOL)isContinuous;
+- (void).cxx_destruct;
+- (id)description;
+- (id)name;
+- (id)dictionaryRepresentation;
+- (id)copyWithZone:;
+- (void)setAttributedName:;
+- (id)attributedName;
+- (void)setIsContinuous:;
+- (id)dataPoints;
+- (id)initWithName:isContinuous:dataPoints:;
+- (id)meanValueDescription;
+- (id)initWithAttributedName:isContinuous:dataPoints:;
+- (void)_commonInitWithContinuous:dataPoints:;
+- (id)_mutableArrayOfNSNullWithCount:;
+- (void)setDataPoints:;
+- (double)meanYValue;
+- (void)setMeanValueDescription:;
+@end

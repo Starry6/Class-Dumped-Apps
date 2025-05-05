@@ -1,0 +1,32 @@
+@interface FPSandboxingURLWrapper : NSObject
+@property (nonatomic) NSURL url;
+@property (nonatomic) NSURL promiseURL;
+@property (nonatomic) FPSandboxingURLWrapper originalDocumentURLWrapper;
+@property (nonatomic) NSData scope;
+@property (nonatomic) NSData promiseScope;
+- (id)url;
+- (id)init;
+- (void)setScope:;
+- (id)initWithURL:extensionClass:report:error:;
+- (id)scope;
+- (id)promiseURL;
+- (id)promiseScope;
+- (id)initWithCoder:;
+- (void)setOriginalDocumentURLWrapper:;
+- (void)setUrl:;
+- (id)originalDocumentURLWrapper;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (void)setPromiseScope:;
+- (id)description;
+- (id)_init;
+- (void)setPromiseURL:;
++ (id)wrapperWithURL:extensionClass:report:error:;
++ (id)wrapperWithURL:readonly:error:;
++ (BOOL)supportsSecureCoding;
++ (id)wrapperWithURL:;
++ (void)assembleURL:sandbox:physicalURL:physicalSandbox:;
++ (id)wrapperWithSecurityScopedURL:;
++ (id)wrapperWithURL:readonly:;
++ (id)wrapperWithURL:extensionClass:error:;
+@end

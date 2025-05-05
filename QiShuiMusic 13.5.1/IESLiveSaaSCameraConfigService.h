@@ -1,0 +1,35 @@
+@interface IESLiveSaaSCameraConfigService : NSObject
+@property (nonatomic) HTSLiveApi api;
+@property (nonatomic) q whiteValue;
+@property (nonatomic) q smoothValue;
+@property (nonatomic) q bigEyeValue;
+@property (nonatomic) q cheekValue;
+@property (nonatomic) Q currentFilterIndex;
+@property (nonatomic) IESLiveSaaSRoomFilter selectedFilter;
+@property (nonatomic) IESLiveSaaSLiveRoomModel room;
+- (void)setBigEyeValue:;
+- (id)paramsForUpload;
+- (void)setSmoothValue:;
+- (void)applyFilter:;
+- (long long)bigEyeValue;
+- (void)changeFilterIndex:isDraw:;
+- (long long)cheekValue;
+- (unsigned long long)currentFilterIndex;
+- (void)didSetAttachingDIContext;
+- (BOOL)isUnusedEffect;
+- (id)selectedFilter;
+- (void)setCheekValue:;
+- (void)setCurrentFilterIndex:;
+- (void)setNeedsUpload;
+- (void)setSelectedFilter:;
+- (long long)smoothValue;
+- (id)init;
+- (void)setup;
+- (void).cxx_destruct;
+- (id)room;
+- (void)setRoom:;
+- (long long)whiteValue;
+- (void)setWhiteValue:;
+- (id)api;
+- (void)setApi:;
+@end

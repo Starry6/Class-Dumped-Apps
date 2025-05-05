@@ -1,0 +1,35 @@
+@interface SFBeginMapsRoutingCommand : SFCommand
+@property (nonatomic) SFLatLng location;
+@property (nonatomic) NSData mapsData;
+@property (nonatomic) BOOL shouldSearchDirectionsAlongCurrentRoute;
+@property (nonatomic) NSString name;
+@property (nonatomic) NSInteger directionsMode;
+@property (nonatomic) NSDictionary dictionaryRepresentation;
+@property (nonatomic) NSData jsonData;
+@property (nonatomic) NSString commandDetail;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (int)_cpCommandType;
+- (void)setName:;
+- (id)initWithProtobuf:;
+- (id)initWithCoder:;
+- (id)jsonData;
+- (id)location;
+- (void)encodeWithCoder:;
+- (void)setLocation:;
+- (void).cxx_destruct;
+- (id)name;
+- (id)dictionaryRepresentation;
+- (id)copyWithZone:;
+- (BOOL)shouldSearchDirectionsAlongCurrentRoute;
+- (id)mapsData;
+- (void)setMapsData:;
+- (void)setShouldSearchDirectionsAlongCurrentRoute:;
+- (int)directionsMode;
+- (void)setDirectionsMode:;
+- (BOOL)hasShouldSearchDirectionsAlongCurrentRoute;
+- (BOOL)hasDirectionsMode;
++ (BOOL)supportsSecureCoding;
+@end

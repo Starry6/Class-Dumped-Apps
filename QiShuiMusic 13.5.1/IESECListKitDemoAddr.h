@@ -1,0 +1,32 @@
+@interface IESECListKitDemoAddr : MTLModel
+@property (nonatomic) NSString uri;
+@property (nonatomic) NSString urlKey;
+@property (nonatomic) NSString fileHash;
+@property (nonatomic) NSString fileCS;
+@property (nonatomic) NSArray urlList;
+@property (nonatomic) double width;
+@property (nonatomic) double height;
+@property (nonatomic) q dataSize;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)urlList;
+- (id)fileCS;
+- (void)setFileCS:;
+- (void)setUrlList:;
+- (id)uri;
+- (long long)dataSize;
+- (void)setWidth:;
+- (double)height;
+- (double)width;
+- (void)setHeight:;
+- (void).cxx_destruct;
+- (void)setDataSize:;
+- (void)setUri:;
+- (void)setFileHash:;
+- (id)fileHash;
+- (id)urlKey;
+- (void)setUrlKey:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

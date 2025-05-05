@@ -1,0 +1,2 @@
+@interface HTSLivePublicAreaHoverMessageRoot : GPBRootObject
+@end

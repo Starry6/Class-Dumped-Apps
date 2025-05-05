@@ -1,0 +1,38 @@
+@interface MPSMatrixSum : MPSKernel
+@property (nonatomic) NSInteger neuronType;
+@property (nonatomic) float neuronA;
+@property (nonatomic) float neuronB;
+@property (nonatomic) float neuronC;
+@property (nonatomic) Q rows;
+@property (nonatomic) Q columns;
+@property (nonatomic) Q count;
+@property (nonatomic) BOOL transpose;
+@property (nonatomic) {?=QQQ} resultMatrixOrigin;
+@property (nonatomic) float neuronParameterA;
+@property (nonatomic) float neuronParameterB;
+@property (nonatomic) float neuronParameterC;
+- (int)neuronType;
+- (unsigned long long)columns;
+- (id)initWithCoder:device:;
+- (unsigned long long)rows;
+- (float)neuronParameterB;
+- (void)setNeuronType:parameterA:parameterB:parameterC:;
+- (float)neuronParameterA;
+- (void)setNeuronType:;
+- (float)neuronParameterC;
+- (id)initWithDevice:;
+- (unsigned long long)count;
+- (id)initWithDevice:count:rows:columns:transpose:;
+- (void)encodeToCommandBuffer:sourceMatrices:resultMatrix:scaleVector:offsetVector:biasVector:startIndex:;
+- (void)setResultMatrixOrigin:;
+- (float)neuronA;
+- (float)neuronB;
+- (float)neuronC;
+- (BOOL)transpose;
+- (id)resultMatrixOrigin;
+- (void)setNeuronA:;
+- (void)setNeuronB:;
+- (void)setNeuronC:;
+- (void)encodeToCommandBuffer:encoder:sourceMatrices:resultMatrix:scaleVector:offsetVector:biasVector:startIndex:;
++ (id)libraryInfo:;
+@end

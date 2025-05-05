@@ -1,0 +1,30 @@
+@interface AMSEngagementMessageEventServiceResponse : NSObject
+@property (nonatomic) NSDictionary dictionaryRepresentation;
+@property (nonatomic) AMSEngagementRequest engagementRequest;
+@property (nonatomic) AMSEngagementMessageRequest fullScreenMessageRequest;
+@property (nonatomic) NSDictionary placementsMap;
+@property (nonatomic) NSString serviceType;
+@property (nonatomic) NSDictionary placementRequests;
+@property (nonatomic) AMSDialogRequest dialogRequest;
+@property (nonatomic) NSDictionary placements;
+- (id)serviceType;
+- (void)setServiceType:;
+- (id)placements;
+- (void).cxx_destruct;
+- (id)dictionaryRepresentation;
+- (void)setDictionaryRepresentation:;
+- (void)setPlacements:;
+- (id)dialogRequest;
+- (void)setDialogRequest:;
+- (id)initWithJSObject:;
+- (id)_placementsMapWithPayload:;
+- (id)_placementRequestsWithDictionary:;
+- (id)placementRequests;
+- (void)setPlacementRequests:;
+- (id)engagementRequest;
+- (void)setEngagementRequest:;
+- (id)fullScreenMessageRequest;
+- (void)setFullScreenMessageRequest:;
+- (id)placementsMap;
+- (void)setPlacementsMap:;
+@end

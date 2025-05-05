@@ -1,0 +1,36 @@
+@interface AWEIMShareProfileMessageTableViewCell : AWEIMUserMessageTableViewCell
+@property (nonatomic) UIView bubbleView;
+@property (nonatomic) AWEIMNewShareCardView cardViewView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)postViewTapped:;
+- (id)bubbleViewContentForMessage:;
+- (void)cardFollowBtnClicked:;
+- (id)cardViewView;
+- (void)configWithMessage:;
+- (void)didFinishFollowUser:status:error:;
+- (void)didFinishFollowUserWithUid:status:error:;
+- (void)didFinishUnFollowUser:status:error:;
+- (void)didFinishUnFollowUserWithUid:status:error:;
+- (id)gestureResponseViews;
+- (id)menuTargetView;
+- (void)p_bubbleViewTapped:;
+- (void)p_initSubviews;
+- (void)p_refreshCardFollowBtnUI;
+- (void)p_updateBubbleView;
+- (void)p_updateBubbleViewV1;
+- (void)trackEcomProfileMsgClick;
+- (void)updateBubbleView;
+- (id)initWithStyle:reuseIdentifier:;
+- (void)dealloc;
+- (void)layoutSubviews;
+- (BOOL)gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:;
+- (void).cxx_destruct;
+- (id)menuItems;
+- (id)bubbleView;
+- (void)setBubbleView:;
++ (id)contentSizeWithMesasge:;
++ (id)identifier;
+@end

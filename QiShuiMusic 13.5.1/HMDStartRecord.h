@@ -1,0 +1,37 @@
+@interface HMDStartRecord : NSObject
+@property (nonatomic) Q localID;
+@property (nonatomic) Q sequenceCode;
+@property (nonatomic) double timestamp;
+@property (nonatomic) double timeInterval;
+@property (nonatomic) Q enableUpload;
+@property (nonatomic) q netQualityType;
+@property (nonatomic) BOOL prewarm;
+@property (nonatomic) NSString sessionID;
+@property (nonatomic) NSString timeType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (unsigned long long)enableUpload;
+- (long long)netQualityType;
+- (unsigned long long)sequenceCode;
+- (void)setEnableUpload:;
+- (void)setNetQualityType:;
+- (void)setPrewarm:;
+- (void)setSequenceCode:;
+- (void)setTimeType:;
+- (id)timeType;
+- (void)setSessionID:;
+- (id)sessionID;
+- (BOOL)prewarm;
+- (void)setTimeInterval:;
+- (double)timeInterval;
+- (void)setTimestamp:;
+- (void).cxx_destruct;
+- (double)timestamp;
+- (unsigned long long)localID;
+- (id)reportDictionary;
+- (void)setLocalID:;
++ (unsigned long long)cleanupWeight;
++ (id)tableName;
+@end

@@ -1,0 +1,36 @@
+@interface NLXSchemaCDMTokenizationEnded : SISchemaInstrumentationMessage
+@property (nonatomic) SISchemaUUID contextId;
+@property (nonatomic) BOOL hasContextId;
+@property (nonatomic) NSArray tokenChains;
+@property (nonatomic) NSInteger inputType;
+@property (nonatomic) BOOL hasInputType;
+@property (nonatomic) NSData jsonData;
+- (void)setContextId:;
+- (id)contextId;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (int)inputType;
+- (BOOL)hasInputType;
+- (void)setInputType:;
+- (void)setHasInputType:;
+- (BOOL)hasContextId;
+- (void)deleteContextId;
+- (void)setHasContextId:;
+- (void)clearTokenChains;
+- (void)deleteTokenChains;
+- (void)addTokenChains:;
+- (unsigned long long)tokenChainsCount;
+- (id)tokenChainsAtIndex:;
+- (void)deleteInputType;
+- (id)tokenChains;
+- (void)setTokenChains:;
+@end

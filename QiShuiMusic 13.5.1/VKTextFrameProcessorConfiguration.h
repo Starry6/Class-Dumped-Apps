@@ -1,0 +1,33 @@
+@interface VKTextFrameProcessorConfiguration : NSObject
+@property (nonatomic) BOOL isForSingleItem;
+@property (nonatomic) NSString textContentType;
+@property (nonatomic) Q documentBlockType;
+@property (nonatomic) {CGPoint=dd} comparisonPoint;
+@property (nonatomic) BOOL usesAlternateLineGrouping;
+@property (nonatomic) NSArray recognitionLanguages;
+@property (nonatomic) NSArray customWords;
+@property (nonatomic) BOOL usesLanguageDetection;
+@property (nonatomic) BOOL shouldPerformTextDetectionGating;
+- (void)setTextContentType:;
+- (id)init;
+- (id)textContentType;
+- (void).cxx_destruct;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)usesAlternateLineGrouping;
+- (void)setUsesAlternateLineGrouping:;
+- (void)setRecognitionLanguages:;
+- (id)recognitionLanguages;
+- (void)setCustomWords:;
+- (id)customWords;
+- (void)setUsesLanguageDetection:;
+- (BOOL)usesLanguageDetection;
+- (void)setComparisonPoint:;
+- (id)comparisonPoint;
+- (BOOL)isEqualToTextFrameProcessorConfiguration:;
+- (BOOL)shouldPerformTextDetectionGating;
+- (BOOL)isForSingleItem;
+- (void)setIsForSingleItem:;
+- (unsigned long long)documentBlockType;
+- (void)setDocumentBlockType:;
+@end

@@ -1,0 +1,2 @@
+@interface IESLiveFinishGuestBattleParamModel : IESLiveBridgeModel
+@end

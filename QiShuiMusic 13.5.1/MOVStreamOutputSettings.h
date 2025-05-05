@@ -1,0 +1,35 @@
+@interface MOVStreamOutputSettings : NSObject
+@property (nonatomic) NSDictionary settings;
+@property (nonatomic) MOVStreamEncoderConfig config;
+@property (nonatomic) BOOL useCustomEncoderConfig;
+@property (nonatomic) double expectedFrameRate;
+- (id)init;
+- (id)settings;
+- (id)initWithConfig:;
+- (id)initWithSettings:;
+- (void).cxx_destruct;
+- (id)config;
+- (id)initWithFrameRate:;
+- (id)initWithFrameRate:useCustomEncoderConfig:;
+- (BOOL)useCustomEncoderConfig;
+- (double)expectedFrameRate;
++ (id)outputSettingsForStream:defaultFrameRate:;
++ (id)customEncoderSettings:frameRate:;
++ (id)audioSettings:;
++ (id)prores4444Settings:frameRate:;
++ (id)prores422Settings:frameRate:;
++ (id)hevc10bitMonochromeLosslessSettings:frameRate:;
++ (id)hevc10bitMonochromeSettings:frameRate:;
++ (id)hevcColorLosslessSettings:frameRate:;
++ (id)hevc8bitMonochromeLosslessSettings:frameRate:;
++ (id)hevc8bitMonochromeSettings:frameRate:;
++ (id)hevcColorSettings:frameRate:;
++ (id)hevc8bitWithAlphaLosslessSettings:frameRate:;
++ (id)hevc8bitWithAlphaSettings:frameRate:;
++ (id)h264Settings:frameRate:;
++ (id)slimSettings:frameRate:;
++ (unsigned long long)getBitsPerSecondForColorStream:frameRate:;
++ (double)getQualitySetting:;
++ (unsigned long long)applyBitrateModifiersTo:;
++ (int)matchDeprecatedType:;
+@end

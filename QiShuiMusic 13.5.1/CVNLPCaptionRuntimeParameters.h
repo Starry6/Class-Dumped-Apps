@@ -1,0 +1,38 @@
+@interface CVNLPCaptionRuntimeParameters : NSObject
+@property (nonatomic) double captionModelMinimumConfidence;
+@property (nonatomic) double captionModelLengthNormalizationFactor;
+@property (nonatomic) NSInteger excludeGenderStrategy;
+@property (nonatomic) NSDictionary classifierRevisions;
+@property (nonatomic) NSDictionary sensitiveImageParameters;
+@property (nonatomic) NSArray replacements;
+@property (nonatomic) NSArray genderedTokens;
+@property (nonatomic) NSArray blackListRules;
+@property (nonatomic) NSArray excludeGenderReplacements;
+@property (nonatomic) NSArray excludeGenderTriggers;
+@property (nonatomic) NSInteger genderOption;
+- (id)initWithOptions:;
+- (void).cxx_destruct;
+- (id)replacements;
+- (void)setReplacements:;
+- (void)_loadRuntimeParameters:;
+- (double)captionModelMinimumConfidence;
+- (void)setCaptionModelMinimumConfidence:;
+- (double)captionModelLengthNormalizationFactor;
+- (void)setCaptionModelLengthNormalizationFactor:;
+- (int)excludeGenderStrategy;
+- (void)setExcludeGenderStrategy:;
+- (id)classifierRevisions;
+- (void)setClassifierRevisions:;
+- (id)sensitiveImageParameters;
+- (void)setSensitiveImageParameters:;
+- (id)genderedTokens;
+- (void)setGenderedTokens:;
+- (id)blackListRules;
+- (void)setBlackListRules:;
+- (id)excludeGenderReplacements;
+- (void)setExcludeGenderReplacements:;
+- (id)excludeGenderTriggers;
+- (void)setExcludeGenderTriggers:;
+- (int)genderOption;
+- (void)setGenderOption:;
+@end

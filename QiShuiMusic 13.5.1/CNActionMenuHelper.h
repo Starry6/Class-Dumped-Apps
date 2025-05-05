@@ -1,0 +1,31 @@
+@interface CNActionMenuHelper : NSObject
+@property (nonatomic) NSArray currentMenuItems;
+@property (nonatomic) NSArray displayedMenuItems;
+@property (nonatomic) BOOL isMenuDisplayed;
+@property (nonatomic) UIDeferredMenuElement deferredMenuItem;
+@property (nonatomic) @? deferredMenuElementCompletionBlock;
+@property (nonatomic) NSString menuTitle;
+- (void)replaceDeferredMenuItemWithMenuItems:;
+- (id)menuForProviders;
+- (void)updateWithMenuItems:contextMenuInteraction:;
+- (id)targetedPreviewForSourceView:;
+- (void)willDisplayMenuWithContextMenuInteraction:;
+- (void)setIsMenuDisplayed:;
+- (void)setDisplayedMenuItems:;
+- (BOOL)isMenuDisplayed;
+- (void)setMenuTitle:;
+- (id)currentMenuItems;
+- (id)menuTitle;
+- (id)deferredMenuItem;
+- (void)willDismissMenu;
+- (void)setDeferredMenuElementCompletionBlock:;
+- (void).cxx_destruct;
+- (void)setDeferredMenuItem:;
+- (id)displayedMenuItems;
+- (void)setupDeferredMenuItem;
+- (void)updateVisibleMenuWithMenuItems:contextMenuInteraction:;
+- (id)configurationActionProviderWithActionBlock:;
+- (id)menuProviderWithActionBlock:;
+- (id)deferredMenuElementCompletionBlock;
+- (void)setCurrentMenuItems:;
+@end

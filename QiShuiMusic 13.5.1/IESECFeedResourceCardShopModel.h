@@ -1,0 +1,31 @@
+@interface IESECFeedResourceCardShopModel : IESECFeedResourceCardBaseNode
+@property (nonatomic) q style;
+@property (nonatomic) NSString shopId;
+@property (nonatomic) NSString shopName;
+@property (nonatomic) IESECURLModel logo;
+@property (nonatomic) IESECURLModel brandIcon;
+@property (nonatomic) BOOL inLive;
+@property (nonatomic) IESECURLModel liveIcon;
+@property (nonatomic) NSArray reasonTags;
+@property (nonatomic) NSString link;
+- (id)brandIcon;
+- (BOOL)inLive;
+- (id)liveIcon;
+- (id)reasonTags;
+- (void)setBrandIcon:;
+- (void)setInLive:;
+- (void)setLiveIcon:;
+- (void)setReasonTags:;
+- (void)setShopId:;
+- (void)setShopName:;
+- (id)shopId;
+- (id)shopName;
+- (id)link;
+- (void)setLink:;
+- (void)setLogo:;
+- (void)setStyle:;
+- (id)logo;
+- (void).cxx_destruct;
+- (long long)style;
++ (id)JSONKeyPathsByPropertyKey;
+@end

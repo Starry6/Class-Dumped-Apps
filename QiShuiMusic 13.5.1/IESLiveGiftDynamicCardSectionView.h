@@ -1,0 +1,38 @@
+@interface IESLiveGiftDynamicCardSectionView : UIView
+@property (nonatomic) PuzzleHybridContainer dynamicOperationContainer;
+@property (nonatomic) IESLiveGiftDynamicCardSectionViewModel viewModel;
+@property (nonatomic) <IESLiveGiftModuleRecipientRouter> recipientRouter;
+@property (nonatomic) BOOL lynxViewLoadFinished;
+@property (nonatomic) @? pendingLynxDataUpdateBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) <IESLiveRefactGiftPanelSectionVMProtocol> sectionVM;
+- (id)recipientRouter;
+- (void)updateLynxData:;
+- (void)viewDidLoadFailedWithUrl:error:;
+- (void)bindAction;
+- (id)dynamicOperationContainer;
+- (void)loadLynxView;
+- (id)lynxDataWithModel:isFirstRender:;
+- (BOOL)lynxViewLoadFinished;
+- (id)pendingLynxDataUpdateBlock;
+- (void)removeCurrentLynxViewIfNeeded;
+- (id)routerParams;
+- (id)sectionVM;
+- (void)setDynamicOperationContainer:;
+- (void)setLynxViewLoadFinished:;
+- (void)setPendingLynxDataUpdateBlock:;
+- (void)setRecipientRouter:;
+- (void)setSectionVM:;
+- (void)trackDynamicCardShowWithModel:;
+- (void)viewDidFinishLoadWithURL:;
+- (void)viewDidRecieveError:;
+- (void)dealloc;
+- (id)viewModel;
+- (void)setup;
+- (void).cxx_destruct;
+- (void)setViewModel:;
+- (id)initWithFrame:viewModel:;
+@end

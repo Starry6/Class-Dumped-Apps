@@ -1,0 +1,32 @@
+@interface GEOPDAutocompleteOriginationRoutePlanningParameters : PBCodable
+@property (nonatomic) BOOL hasPreviousLocation;
+@property (nonatomic) GEOLatLng previousLocation;
+@property (nonatomic) BOOL hasIsEditServerRecommendedStop;
+@property (nonatomic) BOOL isEditServerRecommendedStop;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (BOOL)hasGreenTeaWithValue:;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)previousLocation;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setPreviousLocation:;
+- (BOOL)hasPreviousLocation;
+- (BOOL)isEditServerRecommendedStop;
+- (void)setIsEditServerRecommendedStop:;
+- (void)setHasIsEditServerRecommendedStop:;
+- (BOOL)hasIsEditServerRecommendedStop;
++ (BOOL)isValid:;
+@end

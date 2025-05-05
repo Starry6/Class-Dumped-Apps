@@ -1,0 +1,31 @@
+@interface GEOLocationShifter : NSObject
+@property (nonatomic) BOOL locationShiftEnabled;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)resourceManifestManager:didChangeActiveTileGroup:fromOldTileGroup:;
+- (void)_reset;
+- (id)init;
+- (void)dealloc;
+- (void)_countryProvidersDidChange:;
+- (void).cxx_destruct;
+- (BOOL)locationShiftEnabled;
+- (void)_requestNextShiftFunctionIfNecessary;
+- (void)shiftCoordinate:accuracy:withCompletionHandler:;
+- (void)shiftLatLng:accuracy:withCompletionHandler:;
+- (void)shiftCoordinate:accuracy:withCompletionHandler:mustGoToNetworkCallback:errorHandler:callbackQueue:;
+- (void)shiftLatLng:accuracy:withCompletionHandler:mustGoToNetworkCallback:errorHandler:callbackQueue:;
+- (void)shiftLatLng:accuracy:auditToken:withCompletionHandler:mustGoToNetworkCallback:errorHandler:callbackQueue:;
+- (BOOL)shiftCoordinate:accuracy:shiftedCoordinate:shiftedAccuracy:;
+- (BOOL)shiftLatLng:accuracy:shiftedCoordinate:shiftedAccuracy:;
+- (void)_fetchShiftFunctionForLatLng:auditToken:callbackQueue:completionHandler:;
+- (BOOL)_shiftLocation:;
++ (BOOL)isLocationShiftRequiredForCoordinate:;
++ (void)flushDiskCache;
++ (unsigned int)locationShiftFunctionVersion;
++ (BOOL)isLocationShiftEnabled;
++ (id)_proxy;
++ (Class)proxyClass;
++ (void)setProxyClass:;
+@end

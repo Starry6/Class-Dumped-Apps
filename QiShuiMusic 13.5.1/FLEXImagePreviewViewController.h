@@ -1,0 +1,36 @@
+@interface FLEXImagePreviewViewController : UIViewController
+@property (nonatomic) UIImage image;
+@property (nonatomic) UIScrollView scrollView;
+@property (nonatomic) UIImageView imageView;
+@property (nonatomic) UITapGestureRecognizer bgColorTapGesture;
+@property (nonatomic) q backgroundColorIndex;
+@property (nonatomic) NSArray backgroundColors;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithImage:;
+- (void)dismissViewControllerAnimated:completion:;
+- (void)viewDidLoad;
+- (void)viewDidLayoutSubviews;
+- (id)viewForZoomingInScrollView:;
+- (void)scrollViewDidZoom:;
+- (void)centerContentInScrollViewIfNeeded;
+- (void)changeBackground;
+- (void)actionButtonPressed:;
+- (id)image;
+- (void)setImage:;
+- (id)scrollView;
+- (void)setScrollView:;
+- (id)imageView;
+- (void)setImageView:;
+- (id)bgColorTapGesture;
+- (void)setBgColorTapGesture:;
+- (long long)backgroundColorIndex;
+- (void)setBackgroundColorIndex:;
+- (id)backgroundColors;
+- (void).cxx_destruct;
++ (id)previewForView:;
++ (id)previewForLayer:;
++ (id)forImage:;
+@end

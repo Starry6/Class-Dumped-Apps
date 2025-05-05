@@ -1,0 +1,36 @@
+@interface IESLivePKStateManager : NSObject
+@property (nonatomic) IESLiveRevenueInteractStateMachine stateMachine;
+@property (nonatomic) <IESLivePKProvider> pkProvider;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)currentPKStateStr;
+- (BOOL)firePKEvent:;
+- (id)initWithDIContext:;
+- (id)initializeAutoMatchState;
+- (id)initializeBusinessPrepareState;
+- (id)initializeConnectSucceedState;
+- (id)initializeFinishedState;
+- (id)initializeInteractingState;
+- (id)initializeInvitedState;
+- (id)initializeJoinedChannelState;
+- (id)initializeMatchBellState;
+- (id)initializeMatchUpState;
+- (id)initializeNoneState;
+- (id)initializePKingState;
+- (id)initializePunishState;
+- (id)initializeReceivedState;
+- (BOOL)isBetweenState:toState:;
+- (BOOL)isInState:;
+- (void)logErrorWithEvent:extra:;
+- (void)logInfoWithEvent:extra:;
+- (void)monitorWithBusinessName:extra:;
+- (id)pkProvider;
+- (void)setPkProvider:;
+- (void)setupStateMachine;
+- (id)stateMachine;
+- (void)setStateMachine:;
+- (void).cxx_destruct;
+- (long long)previousState;
+@end

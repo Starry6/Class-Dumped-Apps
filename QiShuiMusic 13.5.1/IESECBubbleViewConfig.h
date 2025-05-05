@@ -1,0 +1,30 @@
+@interface IESECBubbleViewConfig : NSObject
+@property (nonatomic) double contentHeight;
+@property (nonatomic) double contentWidth;
+@property (nonatomic) double contentRadius;
+@property (nonatomic) double arrowHeight;
+@property (nonatomic) double arrowWidth;
+@property (nonatomic) q arrowDirection;
+@property (nonatomic) double arrowPosition;
+@property (nonatomic) NSString arrowImage;
+@property (nonatomic) UIColor backgroundColor;
+- (double)arrowWidth;
+- (double)contentRadius;
+- (void)setArrowWidth:;
+- (void)setContentRadius:;
+- (double)contentHeight;
+- (long long)arrowDirection;
+- (void)setBackgroundColor:;
+- (id)backgroundColor;
+- (void)setContentWidth:;
+- (double)contentWidth;
+- (double)arrowHeight;
+- (void).cxx_destruct;
+- (void)setArrowDirection:;
+- (void)setContentHeight:;
+- (void)setArrowHeight:;
+- (void)setArrowPosition:;
+- (double)arrowPosition;
+- (id)arrowImage;
+- (void)setArrowImage:;
+@end

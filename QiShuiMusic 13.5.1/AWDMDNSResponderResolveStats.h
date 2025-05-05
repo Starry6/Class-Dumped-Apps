@@ -1,0 +1,34 @@
+@interface AWDMDNSResponderResolveStats : PBCodable
+@property (nonatomic) BOOL hasTimestamp;
+@property (nonatomic) Q timestamp;
+@property (nonatomic) NSMutableArray servers;
+@property (nonatomic) NSMutableArray domains;
+- (void)dealloc;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)setHasTimestamp:;
+- (void)mergeFrom:;
+- (BOOL)hasTimestamp;
+- (void)setTimestamp:;
+- (void)setDomains:;
+- (BOOL)readFrom:;
+- (unsigned long long)timestamp;
+- (void)addDomain:;
+- (void)addServer:;
+- (id)description;
+- (id)domains;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)servers;
+- (void)setServers:;
+- (void)clearServers;
+- (unsigned long long)serversCount;
+- (id)serverAtIndex:;
+- (void)clearDomains;
+- (unsigned long long)domainsCount;
+- (id)domainAtIndex:;
++ (Class)domainType;
++ (Class)serverType;
+@end

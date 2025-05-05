@@ -1,0 +1,38 @@
+@interface AWEECLiveSmallWindowManager : NSObject
+@property (nonatomic) UIViewController targetVC;
+@property (nonatomic) UIViewController fromVC;
+@property (nonatomic) NSString roomID;
+@property (nonatomic) NSDictionary logExtraData;
+@property (nonatomic) NSString openIdentifier;
+@property (nonatomic) q streamState;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)transferViewTo:;
+- (void)clearSmallWindowActionBlock;
+- (id)fromVC;
+- (id)logExtraData;
+- (void)muteLive:;
+- (id)openIdentifier;
+- (void)pauseSmallWindowStream;
+- (void)restoreViewToManager;
+- (void)resumeSmallWindowStream;
+- (void)setFromVC:;
+- (void)setLogExtraData:;
+- (void)setOpenIdentifier:;
+- (void)setSmallLiveWindowTop:;
+- (void)setTargetVC:;
+- (void)startVideoRendering;
+- (void)stopVideoRendering;
+- (id)targetVC;
+- (void)detach;
+- (id)init;
+- (void)attach;
+- (void).cxx_destruct;
+- (long long)streamState;
+- (void)setStreamState:;
+- (id)roomID;
+- (void)setRoomID:;
++ (id)shareInstance;
+@end

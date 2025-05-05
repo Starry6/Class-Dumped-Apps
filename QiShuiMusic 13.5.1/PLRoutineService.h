@@ -1,0 +1,36 @@
+@interface PLRoutineService : NSObject
+@property (nonatomic) NSDateInterval fetchDateInterval;
+@property (nonatomic) NSMutableSet pendingPinningVisitIdentifiers;
+@property (nonatomic) PLLocationOfInterestCache visitsCache;
+@property (nonatomic) NSSet allLocationsOfInterest;
+@property (nonatomic) NSSet homeLocations;
+@property (nonatomic) NSSet workLocations;
+@property (nonatomic) BOOL routineIsAvailable;
+- (id)locationOfInterestAtLocation:;
+- (BOOL)isRemoteLocation:inDateInterval:;
+- (void)setFetchDateInterval:;
+- (BOOL)routineIsAvailable;
+- (id)locationOfInterestCloseToLocation:inDateInterval:;
+- (id)lastLocationOfInterestVisit;
+- (id)_fetchHomeAndWorkLocationsOfInterestWithRoutineManager:;
+- (void)_buildLocationsOfInterestCache;
+- (id)_fetchLocationsOfInterestWithinDateInterval:routineManager:;
+- (void)_invalidateLocationsOfInterest;
+- (void)_pinPendingVisits;
+- (id)workLocations;
+- (id)initWithFetchDateInterval:;
+- (void)setVisitsCache:;
+- (id)locationOfInterestVisitsAtLocation:inDateInterval:;
+- (void).cxx_destruct;
+- (void)invalidateLocationsOfInterest;
+- (id)visitsCache;
+- (BOOL)hasLocationsOfInterestInformation;
+- (id)fetchDateInterval;
+- (id)locationsOfInterestOfType:;
+- (void)fetchLocationsOfInterestIfNeeded;
+- (id)pendingPinningVisitIdentifiers;
+- (id)homeLocations;
+- (void)postProcessLocationsOfInterest;
+- (void)setPendingPinningVisitIdentifiers:;
+- (id)allLocationsOfInterest;
+@end

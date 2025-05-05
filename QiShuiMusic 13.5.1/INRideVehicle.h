@@ -1,0 +1,38 @@
+@interface INRideVehicle : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) CLLocation location;
+@property (nonatomic) NSString registrationPlate;
+@property (nonatomic) NSString manufacturer;
+@property (nonatomic) NSString model;
+@property (nonatomic) INImage mapAnnotationImage;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)model;
+- (id)manufacturer;
+- (void)_injectProxiesForImages:completion:;
+- (void)setModel:;
+- (id)_dictionaryRepresentation;
+- (void)_intents_updateContainerWithCache:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)location;
+- (void)encodeWithCoder:;
+- (id)descriptionAtIndent:;
+- (void)setManufacturer:;
+- (void)setLocation:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)_intents_cacheableObjects;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)mapAnnotationImage;
+- (void)setMapAnnotationImage:;
+- (id)registrationPlate;
+- (void)setRegistrationPlate:;
++ (BOOL)supportsSecureCoding;
+@end

@@ -1,0 +1,30 @@
+@interface IESLiveVIPProgressBarView : UIView
+@property (nonatomic) UIView borderView;
+@property (nonatomic) CAGradientLayer gradient;
+@property (nonatomic) double progress;
+@property (nonatomic) UIColor progressColor;
+@property (nonatomic) UIColor progerssBackgroundColor;
+@property (nonatomic) UIColor progerssStokeBackgroundColor;
+@property (nonatomic) double progerStokeWidth;
+@property (nonatomic) double borderRadius;
+- (double)progerStokeWidth;
+- (id)progerssBackgroundColor;
+- (id)progerssStokeBackgroundColor;
+- (void)setProgerStokeWidth:;
+- (void)setProgerssBackgroundColor:;
+- (void)setProgerssColor:;
+- (void)setProgerssStokeBackgroundColor:;
+- (void)setGradient:;
+- (id)gradient;
+- (void)setProgress:;
+- (double)progress;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (id)progressColor;
+- (void)setProgressColor:;
+- (void)setupUI;
+- (id)borderView;
+- (void)setBorderView:;
+- (double)borderRadius;
+- (void)setBorderRadius:;
+@end

@@ -1,0 +1,35 @@
+@interface USOSchemaUSOEntityIdentifierTier1 : SISchemaInstrumentationMessage
+@property (nonatomic) I index;
+@property (nonatomic) BOOL hasIndex;
+@property (nonatomic) NSString value;
+@property (nonatomic) BOOL hasValue;
+@property (nonatomic) NSString backingAppBundleId;
+@property (nonatomic) BOOL hasBackingAppBundleId;
+@property (nonatomic) NSData jsonData;
+- (BOOL)hasValue;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void)setHasValue:;
+- (unsigned int)index;
+- (void)setValue:;
+- (void)setIndex:;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (id)value;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)setHasIndex:;
+- (BOOL)hasIndex;
+- (void)deleteIndex;
+- (void)deleteValue;
+- (BOOL)hasBackingAppBundleId;
+- (void)deleteBackingAppBundleId;
+- (id)backingAppBundleId;
+- (void)setBackingAppBundleId:;
+- (void)setHasBackingAppBundleId:;
+@end

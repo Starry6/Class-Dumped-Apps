@@ -1,0 +1,31 @@
+@interface BDMannorAdOperationComponentView : UIView
+@property (nonatomic) UIImageView logoImageView;
+@property (nonatomic) UILabel nameLabel;
+@property (nonatomic) YYLabel descLabel;
+@property (nonatomic) NSString eventName;
+@property (nonatomic) BDMannorComponentManagerContext context;
+@property (nonatomic) @? dismissBlock;
+@property (nonatomic) @? onSubViewClick;
+- (void)componentTapped:;
+- (void)configWithContext:;
+- (id)createContentDescriptionStringFrom:;
+- (id)descLabel;
+- (double)descriptionWidth;
+- (id)onSubViewClick;
+- (void)setDescLabel:;
+- (void)setOnSubViewClick:;
+- (id)init;
+- (id)context;
+- (void)prepareForDisplay;
+- (id)eventName;
+- (void)setEventName:;
+- (void).cxx_destruct;
+- (void)setContext:;
+- (id)nameLabel;
+- (void)setNameLabel:;
+- (void)setupUI;
+- (id)logoImageView;
+- (void)setLogoImageView:;
+- (id)dismissBlock;
+- (void)setDismissBlock:;
+@end

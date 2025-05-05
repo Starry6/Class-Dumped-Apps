@@ -1,0 +1,33 @@
+@interface IESLiveMIFullLinkIndexMonitorImpl : NSObject
+@property (nonatomic) NSTimer acuTimer;
+@property (nonatomic) NSNumber currentACU;
+@property (nonatomic) HTSEventContext trackContext;
+@property (nonatomic) NSMutableDictionary danmakuDataDic;
+@property (nonatomic) NSMutableDictionary chatDisplayDataDic;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)trackFullScreenDanmakuShowDelay;
+- (id)acuTimer;
+- (id)chatDisplayDataDic;
+- (id)commonParams;
+- (id)currentACU;
+- (id)danmakuDataDic;
+- (id)getChatSendParamsWithData:;
+- (id)getCurrentFullLinkChatDisplayDataModel;
+- (id)getCurrentFullLinkDanmakuDataModel;
+- (void)setAcuTimer:;
+- (void)setChatDisplayDataDic:;
+- (void)setCurrentACU:;
+- (void)setDanmakuDataDic:;
+- (void)setTrackContext:;
+- (void)trackChatSelfShow;
+- (id)trackContext;
+- (void)trackDanmakuShowDelayForFullScreen:;
+- (void)trackPortraitDanmakuShowDelay;
+- (void)trackPublicScreenDisplayStatusWithParams:;
+- (id)init;
+- (void).cxx_destruct;
+- (void)onTimer;
+@end

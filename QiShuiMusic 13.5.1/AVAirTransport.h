@@ -1,0 +1,38 @@
+@interface AVAirTransport : NSObject
+@property (nonatomic) NSMutableArray receiveResponseBlocks;
+@property (nonatomic) BOOL canWrite;
+@property (nonatomic) <AVAirTransportTransformationProtocol> streamDataTransformer;
+@property (nonatomic) BOOL isReadyToSend;
+@property (nonatomic) <AVAirTransportDelegate> delegate;
+- (void)sendResponse:;
+- (void)writeData:;
+- (void)dealloc;
+- (void)open;
+- (long long)_writeData:;
+- (void)setDelegate:;
+- (void)close;
+- (id)delegate;
+- (BOOL)canWrite;
+- (void).cxx_destruct;
+- (id)description;
+- (id)_initPrivate;
+- (void)invalidate;
+- (BOOL)isReadyToSend;
+- (id)requestCompletions;
+- (void)terminatePendingRequests;
+- (void)writeMore;
+- (void)performOnAirChannelQueueSync:;
+- (void)sendObject:receiveResponse:;
+- (id)streamDataTransformer;
+- (void)setStreamDataTransformer:;
+- (id)receiveResponseBlocks;
++ (void)performAsync:;
++ (void)__performBlock:;
++ (void)startEventThreadIfNecessary;
++ (void)performSync:;
++ (id)eventThread;
++ (id)eventRunLoop;
++ (id)airTransportQueue;
++ (BOOL)_isRunningOnAirChannelQueue;
++ (id)channelWithInput:output:;
+@end

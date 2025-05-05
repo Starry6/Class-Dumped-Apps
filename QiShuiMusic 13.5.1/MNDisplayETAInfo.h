@@ -1,0 +1,33 @@
+@interface MNDisplayETAInfo : NSObject
+@property (nonatomic) Q displayRemainingMinutesToEndOfRoute;
+@property (nonatomic) NSDate displayETAToEndOfRoute;
+@property (nonatomic) Q displayRemainingMinutesToEndOfLeg;
+@property (nonatomic) NSDate displayETAToEndOfLeg;
+@property (nonatomic) Q legIndex;
+@property (nonatomic) NSUUID routeID;
+@property (nonatomic) NSArray legInfos;
+@property (nonatomic) Q remainingMinutesToEndOfRoute;
+@property (nonatomic) NSDate etaToEndOfRoute;
+- (id)routeID;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)isEqual:;
+- (void)setRouteID:;
+- (unsigned long long)legIndex;
+- (id)displayETAToEndOfLeg;
+- (id)displayETAToEndOfRoute;
+- (id)legInfos;
+- (void)setLegInfos:;
+- (unsigned long long)remainingMinutesToEndOfRoute;
+- (void)setRemainingMinutesToEndOfRoute:;
+- (id)etaToEndOfRoute;
+- (void)setEtaToEndOfRoute:;
+- (unsigned long long)displayRemainingMinutesToEndOfRoute;
+- (unsigned long long)displayRemainingMinutesToEndOfLeg;
+- (id)initWithDisplayETAToEndOfLeg:displayRemainingMinutesToEndOfLeg:displayETAToEndOfRoute:displayRemainingMinutesToEndOfRoute:;
++ (id)dateFormatter;
++ (BOOL)supportsSecureCoding;
++ (BOOL)isDisplayDate:equalTo:;
+@end

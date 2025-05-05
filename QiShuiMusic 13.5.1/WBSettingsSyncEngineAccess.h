@@ -1,0 +1,30 @@
+@interface WBSettingsSyncEngineAccess : NSObject
+@property (nonatomic) NSArray syncSettingsUpDictionary;
+@property (nonatomic) BOOL backgroundImageExists;
+@property (nonatomic) BOOL backgroundImageAppearanceIsLight;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)backgroundImageExists;
+- (void)_updatePerSiteSettingsWithRecord:completionHandler:;
+- (void)_updatePerSiteSettingsWithRecord:;
+- (BOOL)backgroundImageAppearanceIsLight;
+- (long long)_settingForValue:;
+- (id)syncSettingsUpDictionary;
+- (void)_updateStartPageBackgroundImageWithRecord:;
+- (void)_updateStartPageSectionOrder:;
+- (id)_startPageSectionOrder;
+- (void)deleteBackgroundImageDirectory;
+- (BOOL)_isKnownPerSiteSetting:;
+- (void).cxx_destruct;
+- (void)didDeleteRemoteRecordWithID:;
+- (BOOL)_isShowBackgroundImageEnabled;
+- (BOOL)syncEnabled;
+- (void)didReceiveRemoteCloudSettingsUpdateWithRecord:;
+- (void)_didUpdateStartPageBackgroundImageVisibilityWithRecord:;
+- (id)_deviceClass;
+- (id)startPageSectionsManager;
+- (void)_updateStartPageSectionVisibilityWithIdentifier:record:;
+- (id)_perSitePreferencesStore;
+@end

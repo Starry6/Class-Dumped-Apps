@@ -1,0 +1,31 @@
+@interface NSPConfigurationManager : NSObject
+@property (nonatomic) Q effectiveUserTier;
+- (id)currentConfiguration;
+- (void)updateConfiguration:;
+- (void)setGeohashOverride:;
+- (void)setPreferredPathRoutingEnabled:;
+- (void)setProxyTrafficState:proxyTraffic:;
+- (void)dealloc;
+- (void)setPrivateAccessTokensEnabled:;
+- (void)setPrivateAccessTokensAllowTools:;
+- (BOOL)getPrivateAccessTokensEnabled;
+- (void)configurationEnabled:;
+- (void)copyProxyInfo:;
+- (void)refreshConfigurationWithReason:completionHandler:;
+- (BOOL)setUserTier:resetDate:;
+- (unsigned long long)effectiveUserTier;
+- (void)setProxyAccountType:;
+- (id)diagnostics;
+- (void)setup;
+- (id)initWithDelegate:configuration:;
+- (void).cxx_destruct;
+- (void)handlePathChange:;
+- (unsigned long long)configurationSubscriberPoliciesCount;
+- (id)mergeProxyTrafficStateWithCurrentPolicy;
+- (unsigned long long)getPrivacyProxyAccountType;
+- (void)setGeohashSharingPreference:;
+- (void)setConfigurationTrialVersion:;
+- (void)publishDailyConfigurationStats;
+- (void)resetConfigurationManager;
+- (BOOL)getGeohashSharingPreference;
+@end

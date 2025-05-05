@@ -1,0 +1,2 @@
+@interface AVAssetWriterInputGroupInternal : NSObject
+@end

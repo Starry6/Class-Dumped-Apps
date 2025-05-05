@@ -1,0 +1,30 @@
+@interface IDSQRProtoDiagnosticIndication : PBCodable
+@property (nonatomic) NSString failureSubtype;
+@property (nonatomic) NSString failureSubtypeContext;
+@property (nonatomic) BOOL hasPacketsRecordDuration;
+@property (nonatomic) I packetsRecordDuration;
+@property (nonatomic) BOOL hasTxnId;
+@property (nonatomic) Q txnId;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setTxnId:;
+- (void)setHasTxnId:;
+- (BOOL)hasTxnId;
+- (unsigned long long)txnId;
+- (void)setPacketsRecordDuration:;
+- (void)setHasPacketsRecordDuration:;
+- (BOOL)hasPacketsRecordDuration;
+- (id)failureSubtype;
+- (void)setFailureSubtype:;
+- (id)failureSubtypeContext;
+- (void)setFailureSubtypeContext:;
+- (unsigned int)packetsRecordDuration;
+@end

@@ -1,0 +1,2 @@
+@interface PaidLiveProductRoot : GPBRootObject
+@end

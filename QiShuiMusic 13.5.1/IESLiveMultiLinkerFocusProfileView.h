@@ -1,0 +1,32 @@
+@interface IESLiveMultiLinkerFocusProfileView : UIView
+@property (nonatomic) <IESLiveInteractUserModel> userModel;
+@property (nonatomic) UILabel nicknameLabel;
+@property (nonatomic) IESLiveButton followButton;
+@property (nonatomic) IESLiveImageView muteImageView;
+@property (nonatomic) IESLiveImageView medalImageView;
+@property (nonatomic) BOOL medalIconShow;
+@property (nonatomic) @? followBlock;
+- (void)setFollowBlock:;
+- (BOOL)shouldShowMedal;
+- (id)battleInfo;
+- (id)followBlock;
+- (id)followButton;
+- (id)initWithDIContext:user:;
+- (BOOL)medalIconShow;
+- (id)medalImageView;
+- (id)muteImageView;
+- (void)onFollowButtonClicked;
+- (void)setFollowButton:;
+- (void)setMedalIconShow:;
+- (void)setMedalImageView:;
+- (void)setMuteImageView:;
+- (void)updateFocusViewLayout;
+- (void)updateMedalIconShow:;
+- (void)setUserModel:;
+- (id)userModel;
+- (void).cxx_destruct;
+- (void)setupSubviews;
+- (void)updateUserInfo:;
+- (id)nicknameLabel;
+- (void)setNicknameLabel:;
+@end

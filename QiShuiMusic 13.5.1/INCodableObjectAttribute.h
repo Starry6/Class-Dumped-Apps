@@ -1,0 +1,32 @@
+@interface INCodableObjectAttribute : INCodableAttribute
+@property (nonatomic) NSString _originalTypeName;
+@property (nonatomic) NSString typeName;
+@property (nonatomic) NSValueTransformer valueTransformer;
+@property (nonatomic) NSString className;
+- (id)__INIntentResponseCodableDescriptionKey;
+- (id)typeName;
+- (void)updateWithDictionary:;
+- (id)dictionaryRepresentationWithLocalizer:;
+- (id)className;
+- (Class)objectClass;
+- (id)__INTypeCodableDescriptionKey;
+- (void)setTypeName:;
+- (id)__INCodableDescriptionTypeKey;
+- (void)setClassName:;
+- (id)__INTypeCodableDescriptionTypeKey;
+- (Class)resolutionResultClass;
+- (id)__INIntentResponseCodableDescriptionTypeKey;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)__INCodableDescriptionKey;
+- (long long)valueType;
+- (id)valueTransformer;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (Class)_relationshipValueTransformerClass;
+- (id)_originalTypeName;
+- (void)_setOriginalTypeName:;
++ (BOOL)supportsSecureCoding;
+@end

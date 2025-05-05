@@ -1,0 +1,26 @@
+@interface MSVSQLStatement : NSObject
+- (void)bindFloatValue:toParameterAtIndex:;
+- (void)bindDateValue:toParameterAtIndex:;
+- (void)bindDataValue:toParameterAtIndex:;
+- (void)bindInt64Value:toParameterNamed:;
+- (void)dealloc;
+- (void)bindBoolValue:toParameterNamed:;
+- (void)bindFloatValue:toParameterNamed:;
+- (void)bindUInt64Value:toParameterNamed:;
+- (void)bindDateValue:toParameterNamed:;
+- (void)bindBoolValue:toParameterAtIndex:;
+- (void)bindNullValueToParameterAtIndex:;
+- (void)bindDataValue:toParameterNamed:;
+- (void)bindStringValue:toParameterAtIndex:;
+- (void)bindDoubleValue:toParameterNamed:;
+- (BOOL)bindJSONValue:toParameterNamed:error:;
+- (void)bindNullValueToParameterNamed:;
+- (void)reset;
+- (id)description;
+- (void)bindStringValue:toParameterNamed:;
+- (void)bindDoubleValue:toParameterAtIndex:;
+- (void)bindUInt64Value:toParameterAtIndex:;
+- (void)invalidate;
+- (void)bindInt64Value:toParameterAtIndex:;
+- (BOOL)bindJSONValue:toParameterAtIndex:error:;
+@end

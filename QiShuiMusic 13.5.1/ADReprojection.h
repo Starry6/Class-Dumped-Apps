@@ -1,0 +1,31 @@
+@interface ADReprojection : NSObject
+@property (nonatomic) BOOL singlePassReprojectionAllowed;
+@property (nonatomic) BOOL fullPassReprojectionAllowed;
+@property (nonatomic) Q capacity;
+@property (nonatomic) Q length;
+@property (nonatomic) Q streakingInfill;
+- (unsigned long long)capacity;
+- (id)init;
+- (void)dealloc;
+- (unsigned long long)length;
+- (id)initWithCapacity:;
+- (long long)updateWarpMapWithDepth:srcCalibration:dstCalibration:sourceToDestinationTransform:warpedDepth:;
+- (long long)warpImage:intoImage:;
+- (id)initWithStreakingInfill:;
+- (id)initWithCapacity:streakingInfill:;
+- (void)deallocateBuffers;
+- (BOOL)updateCapacity:;
+- (long long)updateWarpWithWarpedDepthBuffer:dimensions:validPixels:;
+- (void)calculateWarpedPixelsFromSrcCalibration:dstCalibration:sourceToDestinationTransform:validPixels:;
+- (int)vectorizeCameraPixels:;
+- (long long)updateWarpMapWithDepth:srcDepthUnits:dstDepthUnits:srcCalibration:dstCalibration:poseTransform:warpedDepth:;
+- (long long)updateWarpMapWithDepth:srcCalibration:dstCalibration:poseTransform:warpedDepth:;
+- (BOOL)isCalibrationUndistorted:;
+- (long long)updateWarpMapWithDepth:srcDepthUnits:dstDepthUnits:srcCalibration:dstCalibration:sourceToDestinationTransform:warpedDepth:;
+- (unsigned long long)streakingInfill;
+- (void)setStreakingInfill:;
+- (BOOL)singlePassReprojectionAllowed;
+- (void)setSinglePassReprojectionAllowed:;
+- (BOOL)fullPassReprojectionAllowed;
+- (void)setFullPassReprojectionAllowed:;
+@end

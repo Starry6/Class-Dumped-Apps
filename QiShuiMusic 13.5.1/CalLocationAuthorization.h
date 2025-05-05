@@ -1,0 +1,33 @@
+@interface CalLocationAuthorization : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)authorizationStatus;
+- (unsigned long long)waitForPrecision;
+- (void)locationManager:didChangeAuthorizationStatus:;
+- (void).cxx_destruct;
+- (id)initWithBundleID:bundle:queue:;
++ (id)logHandle;
++ (BOOL)preciseLocationAuthorizedForBundleIdentifier:bundle:;
++ (void)ttlLocationStatusWithCompletion:;
++ (id)_cachedInstanceForBundleID:bundle:;
++ (unsigned long long)locationPrecisionForBundleIdentifier:bundle:;
++ (int)authorizationStatusForBundleIdentifier:bundle:;
++ (BOOL)preciseLocationAuthorizedForBundle:;
++ (BOOL)preciseLocationAuthorizedForBundleIdentifier:;
++ (void)authorizationStatusForBundleIdentifier:completion:;
++ (void)preciseLocationAuthorizedForBundleIdentifier:completion:;
++ (unsigned long long)locationPrecisionForBundleIdentifier:;
++ (id)_keyForBundleID:bundle:;
++ (void)authorizationStatusForBundle:completion:;
++ (id)locationAuthorizationAsyncCallersQueue;
++ (void)preciseLocationAuthorizedForBundle:completion:;
++ (int)authorizationStatusForBundleIdentifier:;
++ (id)authorizationForBundleIdentifier:bundle:createIfNecessary:;
++ (unsigned long long)ttlLocationStatus;
++ (int)authorizationStatusForBundle:;
++ (void)preciseLocationAuthorizedForBundleIdentifier:bundle:completion:;
++ (void)initializeQueueAndInstancesIfNeeded;
++ (void)authorizationStatusForBundleIdentifier:bundle:completion:;
+@end

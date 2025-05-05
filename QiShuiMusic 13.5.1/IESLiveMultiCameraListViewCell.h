@@ -1,0 +1,35 @@
+@interface IESLiveMultiCameraListViewCell : UICollectionViewCell
+@property (nonatomic) UIView selectedBgMaskView;
+@property (nonatomic) UIView coverBackgroundView;
+@property (nonatomic) UIView coverSelectedMaskView;
+@property (nonatomic) LOTAnimationView livingIcon;
+@property (nonatomic) UIImageView vrIcon;
+@property (nonatomic) IESLiveImageView coverImageView;
+@property (nonatomic) UILabel cameraInfoLabel;
+@property (nonatomic) HTSLiveVSCameraInfo cameraInfo;
+@property (nonatomic) q cellType;
+- (id)cameraInfoLabel;
+- (id)coverBackgroundView;
+- (id)coverImageView;
+- (id)coverSelectedMaskView;
+- (id)livingIcon;
+- (id)selectedBgMaskView;
+- (void)setCameraInfoLabel:;
+- (void)setCoverBackgroundView:;
+- (void)setCoverImageView:;
+- (void)setCoverSelectedMaskView:;
+- (void)setLivingIcon:;
+- (void)setSelectedBgMaskView:;
+- (void)setVrIcon:;
+- (void)updateCameraInfo:selected:cellType:;
+- (void)updateSubviewsFrame;
+- (id)vrIcon;
+- (void)setCellType:;
+- (id)initWithFrame:;
+- (long long)cellType;
+- (void).cxx_destruct;
+- (id)cameraInfo;
+- (void)createUI;
+- (void)setCameraInfo:;
++ (id)cellIdentifier;
+@end

@@ -1,0 +1,36 @@
+@interface IESLiveInteractSeatAnimationManager : NSObject
+@property (nonatomic) NSMutableDictionary nodesMap;
+@property (nonatomic) IESLiveCountTimer countTimer;
+@property (nonatomic) NSString anchorID;
+@property (nonatomic) BOOL seatAnimationEnable;
+@property (nonatomic) BOOL cityInfoAnimationEnable;
+@property (nonatomic) <IESLiveInteractSeatAnimationManagerDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)guestInfoViewDidShowWithUserID:;
+- (id)anchorID;
+- (BOOL)cityInfoAnimationEnable;
+- (id)countTimer;
+- (void)didSetAttachingDIContext;
+- (void)finishNodeWithUserID:;
+- (id)nodesMap;
+- (void)preprocess:applyType:matchEffect:cityEffect:;
+- (void)preprocessWithEnterContent:;
+- (void)preprocessWithJoinChannelResponse:;
+- (BOOL)seatAnimationEnable;
+- (id)seatingImageWithUserID:;
+- (void)setAnchorID:;
+- (void)setCityInfoAnimationEnable:;
+- (void)setCountTimer:;
+- (void)setNodesMap:;
+- (void)setSeatAnimationEnable:;
+- (BOOL)shouldShowSeatingAnimationWithUserID:;
+- (void)startShowSeatingAnimationWithUserID:;
+- (id)init;
+- (void)setDelegate:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)unload;
+@end

@@ -1,0 +1,37 @@
+@interface MRCommandResult : NSObject
+@property (nonatomic) NSArray resultStatuses;
+@property (nonatomic) I sendError;
+@property (nonatomic) NSError error;
+@property (nonatomic) NSString sendErrorDescription;
+@property (nonatomic) MRPlayerPath playerPath;
+@property (nonatomic) I startQOS;
+@property (nonatomic) I endQOS;
+@property (nonatomic) NSArray handlerReturnStatuses;
+- (id)initWithProtobuf:;
+- (id)data;
+- (id)protobuf;
+- (void)setError:;
+- (id)error;
+- (void)setPlayerPath:;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)playerPath;
+- (id)copyWithZone:;
+- (unsigned int)sendError;
+- (void)setSendError:;
+- (id)initWithWithSendError:description:;
+- (id)initWithHandlerStatuses:sendError:;
+- (id)initWithResultStatuses:sendError:playerPath:;
+- (id)copyWithPlayerPath:;
+- (id)resultStatuses;
+- (id)handlerReturnStatuses;
+- (void)setResultStatuses:;
+- (id)sendErrorDescription;
+- (void)setSendErrorDescription:;
+- (unsigned int)startQOS;
+- (void)setStartQOS:;
+- (unsigned int)endQOS;
+- (void)setEndQOS:;
++ (id)commandResultWithSendError:;
+@end

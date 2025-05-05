@@ -1,0 +1,33 @@
+@interface IESECGoodsMessageDisplayViewController : UIViewController
+@property (nonatomic) IESECGoodsDetailParameters parameters;
+@property (nonatomic) UITableView mainTableView;
+@property (nonatomic) IESECGCDTimer timer;
+@property (nonatomic) q currentSectionIndex;
+@property (nonatomic) <IESECGoodsMessageDisplayViewControllerDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)autoScroll;
+- (long long)currentSectionIndex;
+- (id)initWithGoodsDetailParameters:;
+- (void)setCurrentSectionIndex:;
+- (void)dealloc;
+- (id)tableView:cellForRowAtIndexPath:;
+- (void)setDelegate:;
+- (void)stop;
+- (void)setTimer:;
+- (id)parameters;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)timer;
+- (void)viewDidAppear:;
+- (void)setParameters:;
+- (void)tableView:willDisplayCell:forRowAtIndexPath:;
+- (id)tableView;
+- (long long)tableView:numberOfRowsInSection:;
+- (void)viewDidLoad;
+- (long long)numberOfSectionsInTableView:;
+- (id)mainTableView;
+- (void)setMainTableView:;
+@end

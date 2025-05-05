@@ -1,0 +1,27 @@
+@interface NSConstantString : NSSimpleCString
+- (unsigned short)HMDP_characterAtIndex:;
+- (void)dealloc;
+- (id)copy;
+- (unsigned short)characterAtIndex:;
+- (id)_fastCStringContents:;
+- (unsigned long long)cStringLength;
+- (void)getCharacters:range:;
+- (BOOL)_isDeallocating;
+- (unsigned long long)smallestEncoding;
+- (unsigned long long)hash;
+- (id)autorelease;
+- (id)release;
+- (id)lossyCString;
+- (id)retain;
+- (id)cString;
+- (BOOL)_tryRetain;
+- (unsigned long long)length;
+- (unsigned long long)fastestEncoding;
+- (BOOL)isEqualToString:;
+- (unsigned long long)retainCount;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (long long)compare:options:range:;
+- (BOOL)canBeConvertedToEncoding:;
+- (id)initWithCharactersNoCopy:length:;
+@end

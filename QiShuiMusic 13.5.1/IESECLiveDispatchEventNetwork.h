@@ -1,0 +1,30 @@
+@interface IESECLiveDispatchEventNetwork : IESECLiveDispatchEventBase
+@property (nonatomic) NSString path;
+@property (nonatomic) NSDictionary requestParams;
+@property (nonatomic) q statusCode;
+@property (nonatomic) NSString message;
+@property (nonatomic) NSString logID;
+@property (nonatomic) NSDictionary data;
+@property (nonatomic) @ responseModel;
+@property (nonatomic) NSDictionary apiMonitorParams;
+- (id)apiMonitorParams;
+- (void)buildNodeWithMonitorParams:;
+- (void)setApiMonitorParams:;
+- (id)path;
+- (void)setStatusCode:;
+- (long long)statusCode;
+- (void)setMessage:;
+- (id)data;
+- (void)setPath:;
+- (long long)type;
+- (id)eventName;
+- (id)message;
+- (void).cxx_destruct;
+- (void)setData:;
+- (id)logID;
+- (id)responseModel;
+- (void)setResponseModel:;
+- (id)requestParams;
+- (void)setRequestParams:;
+- (void)setLogID:;
+@end

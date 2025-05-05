@@ -1,0 +1,35 @@
+@interface CJPayVoucherModel : JSONModel
+@property (nonatomic) NSString voucherNo;
+@property (nonatomic) NSString batchNo;
+@property (nonatomic) NSString promotionProductCode;
+@property (nonatomic) NSString voucherType;
+@property (nonatomic) NSString voucherName;
+@property (nonatomic) q reduceAmount;
+@property (nonatomic) q randomMaxReductAmount;
+@property (nonatomic) q reachedAmount;
+@property (nonatomic) q usedAmount;
+@property (nonatomic) NSString label;
+- (id)batchNo;
+- (void)setVoucherName:;
+- (void)setVoucherType:;
+- (id)promotionProductCode;
+- (long long)randomMaxReductAmount;
+- (long long)reachedAmount;
+- (long long)reduceAmount;
+- (void)setBatchNo:;
+- (void)setPromotionProductCode:;
+- (void)setRandomMaxReductAmount:;
+- (void)setReachedAmount:;
+- (void)setReduceAmount:;
+- (void)setUsedAmount:;
+- (void)setVoucherNo:;
+- (long long)usedAmount;
+- (id)voucherName;
+- (id)voucherNo;
+- (id)voucherType;
+- (void)setLabel:;
+- (id)label;
+- (void).cxx_destruct;
++ (id)keyMapper;
++ (BOOL)propertyIsOptional:;
+@end

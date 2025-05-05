@@ -1,0 +1,33 @@
+@interface SFContinuityScanManager : SFXPCClient
+@property (nonatomic) NSMutableSet foundDevices;
+@property (nonatomic) NSHashTable observers;
+@property (nonatomic) Q scanTypes;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)removeObserver:;
+- (id)init;
+- (void)addObserver:;
+- (id)exportedInterface;
+- (id)machServiceName;
+- (BOOL)shouldEscapeXpcTryCatch;
+- (void)onqueue_connectionInterrupted;
+- (void)foundDeviceWithDevice:;
+- (void)setFoundDevices:;
+- (void).cxx_destruct;
+- (unsigned long long)scanTypes;
+- (void)setObservers:;
+- (void)setScanTypes:;
+- (void)scanForTypes:;
+- (void)onqueue_connectionEstablished;
+- (id)observers;
+- (id)foundDevices;
+- (void)_getRemoteObjectProxyOnQueue:;
+- (void)lostDeviceWithDevice:;
+- (void)activityPayloadFromDeviceUniqueID:forAdvertisementPayload:command:timeout:withCompletionHandler:;
+- (void)pairedDevicesChanged:;
+- (id)remoteObjectInterface;
+- (void)receivedAdvertisement:;
++ (id)sharedManager;
+@end

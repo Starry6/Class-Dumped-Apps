@@ -1,0 +1,34 @@
+@interface UISApplicationInitializationContextParameters : NSObject
+@property (nonatomic) Q supportedInterfaceOrientations;
+@property (nonatomic) NSArray deviceFamilies;
+@property (nonatomic) BOOL requiresFullScreen;
+@property (nonatomic) BOOL supportsMultiwindow;
+@property (nonatomic) I initialCGDirectDisplayID;
+@property (nonatomic) {CGSize=dd} usableDisplaySizeHint;
+@property (nonatomic) BOOL preferSmallerDisplaySize;
+@property (nonatomic) BOOL useTrueDisplaySize;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (void)encodeWithXPCDictionary:;
+- (id)initWithXPCDictionary:;
+- (void).cxx_destruct;
+- (id)deviceFamilies;
+- (unsigned long long)supportedInterfaceOrientations;
+- (void)setSupportsMultiwindow:;
+- (BOOL)supportsMultiwindow;
+- (void)setSupportedInterfaceOrientations:;
+- (void)setDeviceFamilies:;
+- (BOOL)requiresFullScreen;
+- (void)setRequiresFullScreen:;
+- (unsigned int)initialCGDirectDisplayID;
+- (void)setInitialCGDirectDisplayID:;
+- (id)usableDisplaySizeHint;
+- (void)setUsableDisplaySizeHint:;
+- (BOOL)preferSmallerDisplaySize;
+- (void)setPreferSmallerDisplaySize:;
+- (BOOL)useTrueDisplaySize;
+- (void)setUseTrueDisplaySize:;
+@end

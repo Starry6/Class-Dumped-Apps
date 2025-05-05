@@ -1,0 +1,32 @@
+@interface NPSDomainAccessorFilePresenter : NSObject
+@property (nonatomic) NSURL domainURL;
+@property (nonatomic) NSOperationQueue presenterOperationQueue;
+@property (nonatomic) NSObject<OS_dispatch_queue> presenterUnderlyingQueue;
+@property (nonatomic) BOOL current;
+@property (nonatomic) <NPSDomainAccessorFilePresenterDelegate> delegate;
+@property (nonatomic) NSURL presentedItemURL;
+@property (nonatomic) NSOperationQueue presentedItemOperationQueue;
+@property (nonatomic) NSURL primaryPresentedItemURL;
+@property (nonatomic) NSSet observedPresentedItemUbiquityAttributes;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)presentedItemURL;
+- (void)dealloc;
+- (id)presentedItemOperationQueue;
+- (BOOL)isCurrent;
+- (void)relinquishPresentedItemToWriter:;
+- (void)setCurrent:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (BOOL)presentedItemNeedsWatching;
+- (id)initWithDelegate:domainURL:;
+- (id)synchronizeForReadingOnly:handler:;
+- (id)domainURL;
+- (void)setDomainURL:;
+- (id)presenterOperationQueue;
+- (void)setPresenterOperationQueue:;
+- (id)presenterUnderlyingQueue;
+- (void)setPresenterUnderlyingQueue:;
+@end

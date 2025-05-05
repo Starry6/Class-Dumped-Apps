@@ -1,0 +1,35 @@
+@interface SASmsSearch : SADomainCommand
+@property (nonatomic) NSDate end;
+@property (nonatomic) NSString message;
+@property (nonatomic) NSNumber outgoing;
+@property (nonatomic) NSArray recipients;
+@property (nonatomic) NSArray senders;
+@property (nonatomic) SASmsGroupName smsGroup;
+@property (nonatomic) NSDate start;
+@property (nonatomic) NSString subject;
+@property (nonatomic) NSNumber unread;
+- (void)setEnd:;
+- (void)setStart:;
+- (id)end;
+- (id)recipients;
+- (id)subject;
+- (id)groupIdentifier;
+- (void)setSubject:;
+- (void)setMessage:;
+- (id)start;
+- (void)setRecipients:;
+- (BOOL)requiresResponse;
+- (id)encodedClassName;
+- (id)message;
+- (void)setUnread:;
+- (id)unread;
+- (id)senders;
+- (void)setSenders:;
+- (void)setOutgoing:;
+- (id)outgoing;
+- (BOOL)mutatingCommand;
+- (id)smsGroup;
+- (void)setSmsGroup:;
++ (id)search;
++ (id)searchWithDictionary:context:;
+@end

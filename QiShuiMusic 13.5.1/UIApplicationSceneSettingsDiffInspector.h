@@ -1,0 +1,29 @@
+@interface UIApplicationSceneSettingsDiffInspector : FBSSceneSettingsDiffInspector
+- (void)observeForcedStatusBarStyleWithBlock:;
+- (void)observeEnhancedWindowingEnabledWithBlock:;
+- (void)observeStatusBarPartsWithBlock:;
+- (void)observeTargetOfEventDeferringEnvironmentsWithBlock:;
+- (void)observeAccessibilityContrastWithBlock:;
+- (void)observeStatusBarStyleOverridesToSuppressWithBlock:;
+- (void)observeStatusBarHeightWithBlock:;
+- (void)_observeOtherSetting:withBlock:;
+- (void)observeDeviceOrientationEventsEnabledWithBlock:;
+- (void)observePersistenceIdentifierWithBlock:;
+- (void)observePointerLockStatusWithBlock:;
+- (void)observeUserInterfaceStyleWithBlock:;
+- (void)observeForcedStatusBarForegroundTransparentWithBlock:;
+- (void)observeIdleModeEnabledWithBlock:;
+- (void)observeStatusBarAvoidanceFrameWithBlock:;
+- (void)observeDeviceOrientationWithBlock:;
+- (void)observeSafeAreaInsetsLandscapeRightWithBlock:;
+- (void)observeSafeAreaInsetsLandscapeLeftWithBlock:;
+- (void)observeSafeAreaInsetsPortraitWithBlock:;
+- (void)observeScreenReferenceDisplayModeStatus:;
+- (void)observeDeactivationReasonsWithBlock:;
+- (void)observeUnderLockWithBlock:;
+- (void)observeCanShowAlertsWithBlock:;
+- (void)observeSafeAreaInsetsPortraitUpsideDownWithBlock:;
+- (void)observeInLiveResizeWithBlock:;
+- (void)observeInterfaceOrientationModeWithBlock:;
+- (void)observeInterfaceOrientationMapResolverWithBlock:;
+@end

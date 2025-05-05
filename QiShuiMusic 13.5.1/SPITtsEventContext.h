@@ -1,0 +1,2 @@
+@interface SPITtsEventContext : SPIEventContext
+@end

@@ -1,0 +1,34 @@
+@interface MKUserLocationHeadingArrowLayer : CAShapeLayer
+@property (nonatomic) _MKPuckAnnotationView userLocationView;
+@property (nonatomic) double headingRadians;
+@property (nonatomic) double minimumAccuracyRadius;
+@property (nonatomic) UITraitCollection traitCollection;
+@property (nonatomic) Q mapType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setTraitCollection:;
+- (void)setMapType:;
+- (unsigned long long)mapType;
+- (void)updateHeading:;
+- (id)traitCollection;
+- (id)userLocationView;
+- (void)animateToSetVisible:completion:;
+- (void)setMinimumAccuracyRadius:;
+- (void)updateHeadingAccuracy:previousAccuracy:;
+- (id)initWithUserLocationView:;
+- (void)updateTintColor:;
+- (void)setAccuracyRadius:duration:;
+- (double)minimumAccuracyRadius;
+- (void).cxx_destruct;
+- (BOOL)_shouldBeVisibleForAccuracy:;
+- (id)_animationToSetVisible:;
+- (id)_pathWhenVisible:;
+- (id)_bezierPathWithBaseRadius:tipRadius:baseHalfAngle:;
+- (id)_positionWhenVisible:;
+- (double)_baseRadiusWhenVisible:;
+- (double)_tipRadiusWhenVisible:;
+- (double)headingRadians;
+- (void)setHeadingRadians:;
+@end

@@ -1,0 +1,31 @@
+@interface AAInheritanceController : NSObject
+@property (nonatomic) AAFXPCSession remoteService;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (void).cxx_destruct;
+- (id)remoteService;
+- (void)configureRemoteInterface:;
+- (void)setRemoteService:;
+- (void)fetchManifestOptionsForContact:completion:;
+- (void)isRecipient:capableOf:completion:;
+- (void)setupBeneficiaryManifest:contactInfo:setupAuthToken:completion:;
+- (void)updateBeneficiaryManifest:contactInfo:completion:;
+- (void)removeBeneficiary:manifest:completion:;
+- (void)removeBenefactor:completion:;
+- (void)fetchBeneficiariesWithCompletion:;
+- (void)fetchBenefactorsWithCompletion:;
+- (void)fetchSuggestedBeneficiariesWithCompletion:;
+- (void)sendInvitationToContact:completion:;
+- (void)fetchInvitationsWithCompletion:;
+- (void)fetchInvitationWithBeneficiaryID:completion:;
+- (void)removeInvitation:completion:;
+- (void)respondToInvitation:accepted:completion:;
+- (void)fetchAllHealthInfoWithCompletion:;
+- (void)presentInheritanceInvitationUIWithBeneficiaryID:completion:;
+- (void)setupBeneficiaryAliasWithAccessKey:password:firstName:lastName:authToken:completion:;
+- (void)removeAccessCodeWithRecordIdentifier:contactInfo:completion:;
+- (void)updateAccessCodeWithRecordIdentifier:contactInfo:completion:;
+@end

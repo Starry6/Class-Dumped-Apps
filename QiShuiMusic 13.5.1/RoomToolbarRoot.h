@@ -1,0 +1,2 @@
+@interface RoomToolbarRoot : GPBRootObject
+@end

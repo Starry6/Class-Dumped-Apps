@@ -1,0 +1,2 @@
+@interface RoomPlatformRoot : GPBRootObject
+@end

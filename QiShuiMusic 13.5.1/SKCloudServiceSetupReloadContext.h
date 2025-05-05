@@ -1,0 +1,30 @@
+@interface SKCloudServiceSetupReloadContext : NSObject
+@property (nonatomic) NSString serializedUserInfo;
+@property (nonatomic) NSURL cloudServiceSetupURL;
+@property (nonatomic) NSString action;
+@property (nonatomic) NSArray queryItems;
+@property (nonatomic) NSString sourceApplicationBundleIdentifier;
+@property (nonatomic) NSURL referrerURL;
+@property (nonatomic) NSDictionary userInfo;
+- (id)queryItems;
+- (void)setReferrerURL:;
+- (id)userInfo;
+- (void)setSourceApplicationBundleIdentifier:;
+- (id)action;
+- (id)sourceApplicationBundleIdentifier;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)setQueryItems:;
+- (id)referrerURL;
+- (void)setAction:;
+- (void)encodeWithCoder:;
+- (void)setUserInfo:;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)cloudServiceSetupURL;
+- (void)setCloudServiceSetupURL:;
+- (id)serializedUserInfo;
++ (BOOL)supportsSecureCoding;
+@end

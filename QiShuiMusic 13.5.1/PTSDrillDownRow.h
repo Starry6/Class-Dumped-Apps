@@ -1,0 +1,2 @@
+@interface PTSDrillDownRow : PTDrillDownRow
+@end

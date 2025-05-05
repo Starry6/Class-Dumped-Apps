@@ -1,0 +1,31 @@
+@interface CoreDAVContainerMultiGetTask : CoreDAVTask
+@property (nonatomic) NSSet additionalPropElements;
+@property (nonatomic) NSSet missingURLs;
+@property (nonatomic) NSSet deletedURLs;
+@property (nonatomic) NSSet parsedContents;
+@property (nonatomic) BOOL shouldIgnoreResponseErrors;
+@property (nonatomic) @? completionBlock;
+@property (nonatomic) <CoreDAVTaskManager> taskManager;
+@property (nonatomic) <CoreDAVAccountInfoProvider> accountInfoProvider;
+@property (nonatomic) NSError error;
+@property (nonatomic) double timeoutInterval;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)requestBody;
+- (id)httpMethod;
+- (void)finishCoreDAVTaskWithError:;
+- (id)copyDefaultParserForContentType:;
+- (void).cxx_destruct;
+- (id)missingURLs;
+- (id)deletedURLs;
+- (id)parsedContents;
+- (BOOL)shouldIgnoreResponseErrors;
+- (void)setShouldIgnoreResponseErrors:;
+- (id)initWithURLs:atContainerURL:appSpecificDataItemClass:;
+- (id)copyAdditionalPropElements;
+- (void)setAdditionalProperties:onDataItem:;
+- (id)additionalPropElements;
+- (void)setAdditionalPropElements:;
+@end

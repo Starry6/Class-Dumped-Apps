@@ -1,0 +1,30 @@
+@interface NSCFInputStream : NSInputStream
+- (unsigned long long)streamStatus;
+- (id)initWithURL:;
+- (BOOL)hasBytesAvailable;
+- (void)removeFromRunLoop:forMode:;
+- (void)open;
+- (BOOL)allowsWeakReference;
+- (void)setDelegate:;
+- (id)initWithFileAtPath:;
+- (BOOL)_setCFClientFlags:callback:context:;
+- (id)streamError;
+- (void)scheduleInRunLoop:forMode:;
+- (void)close;
+- (unsigned long long)hash;
+- (BOOL)setProperty:forKey:;
+- (void)_unscheduleFromCFRunLoop:forMode:;
+- (id)propertyForKey:;
+- (id)release;
+- (void)_scheduleInCFRunLoop:forMode:;
+- (BOOL)retainWeakReference;
+- (id)retain;
+- (id)delegate;
+- (id)initWithData:;
+- (BOOL)getBuffer:length:;
+- (unsigned long long)retainCount;
+- (BOOL)isEqual:;
+- (long long)read:maxLength:;
++ (id)allocWithZone:;
++ (BOOL)automaticallyNotifiesObserversForKey:;
+@end

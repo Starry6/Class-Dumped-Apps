@@ -1,0 +1,35 @@
+@interface GEORPPhotoAttributionPreferencesUpdateResult : PBCodable
+@property (nonatomic) Q errorsCount;
+@property (nonatomic) ^i errors;
+@property (nonatomic) BOOL hasPreferences;
+@property (nonatomic) GEORPPhotoAttributionPreferences preferences;
+- (void)readAll:;
+- (void)setPreferences:;
+- (id)init;
+- (void)dealloc;
+- (id)preferences;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)clearErrors;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)errors;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasPreferences;
+- (unsigned long long)errorsCount;
+- (void)addErrors:;
+- (int)errorsAtIndex:;
+- (void)setErrors:count:;
+- (id)errorsAsString:;
+- (int)StringAsErrors:;
++ (BOOL)isValid:;
+@end

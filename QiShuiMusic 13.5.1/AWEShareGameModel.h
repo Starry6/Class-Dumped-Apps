@@ -1,0 +1,31 @@
+@interface AWEShareGameModel : NSObject
+@property (nonatomic) NSString gameName;
+@property (nonatomic) NSString gameDes;
+@property (nonatomic) BOOL isGame;
+@property (nonatomic) NSString gameCoverUrl;
+@property (nonatomic) NSString gameQuery;
+@property (nonatomic) NSString appID;
+@property (nonatomic) NSString token;
+@property (nonatomic) NSString ugURL;
+@property (nonatomic) NSDictionary extra;
+- (id)gameDes;
+- (id)gameCoverUrl;
+- (id)gameName;
+- (id)gameQuery;
+- (id)initWithShareAppInfo:;
+- (BOOL)isGame;
+- (void)setExtra:;
+- (void)setGameCoverUrl:;
+- (void)setGameDes:;
+- (void)setGameName:;
+- (void)setGameQuery:;
+- (void)setIsGame:;
+- (void)setUgURL:;
+- (id)ugURL;
+- (id)extra;
+- (id)token;
+- (void)setToken:;
+- (void)setAppID:;
+- (id)appID;
+- (void).cxx_destruct;
+@end

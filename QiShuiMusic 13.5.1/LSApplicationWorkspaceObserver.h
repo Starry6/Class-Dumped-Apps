@@ -1,0 +1,34 @@
+@interface LSApplicationWorkspaceObserver : NSObject
+@property (nonatomic) NSUUID uuid;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (void)applicationsDidInstall:;
+- (void)applicationsDidUninstall:;
+- (void)applicationsDidChangePersonas:;
+- (id)uuid;
+- (void)applicationIconDidChange:;
+- (void)applicationInstallsDidStart:;
+- (void)setUuid:;
+- (id)initWithCoder:;
+- (void)applicationsDidFailToInstall:;
+- (void)applicationInstallsDidPrioritize:;
+- (void)applicationInstallsDidUpdateIcon:;
+- (void)applicationInstallsDidPause:;
+- (void)encodeWithCoder:;
+- (void)applicationInstallsDidCancel:;
+- (void)applicationInstallsArePrioritized:arePaused:;
+- (void).cxx_destruct;
+- (void)applicationInstallsDidResume:;
+- (void)applicationsWillUninstall:;
+- (void)networkUsageChanged:;
+- (void)applicationStateDidChange:;
+- (void)deviceManagementPolicyDidChange:;
+- (void)applicationsDidFailToUninstall:;
+- (void)applicationInstallsDidChange:;
+- (void)applicationsWillInstall:;
++ (BOOL)supportsSecureCoding;
++ (BOOL)actuallyOverridesDMFObserverMethod;
+@end

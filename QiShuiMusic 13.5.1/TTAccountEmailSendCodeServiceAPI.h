@@ -1,0 +1,2 @@
+@interface TTAccountEmailSendCodeServiceAPI : NSObject
+@end

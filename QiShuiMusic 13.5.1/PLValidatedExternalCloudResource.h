@@ -1,0 +1,37 @@
+@interface PLValidatedExternalCloudResource : PLValidatedExternalResource
+@property (nonatomic) s cloudLocalState;
+@property (nonatomic) NSDate masterDateCreated;
+@property (nonatomic) NSDate lastOnDemandDownloadDate;
+@property (nonatomic) NSDate lastPrefetchDate;
+@property (nonatomic) s prefetchCount;
+@property (nonatomic) NSDate prunedAt;
+@property (nonatomic) Q cplType;
+@property (nonatomic) Q sourceCplType;
+@property (nonatomic) NSString fingerprint;
+@property (nonatomic) s remoteAvailability;
+- (unsigned long long)cplType;
+- (void)setCloudLocalState:;
+- (unsigned long long)cplTypeWithAssetID:;
+- (void)setFingerprint:;
+- (BOOL)isEqualToValidatedExternalResource:;
+- (id)fingerprint;
+- (id)masterDateCreated;
+- (short)prefetchCount;
+- (void)setRemoteAvailability:;
+- (id)initWithCloudResource:;
+- (void)setPrefetchCount:;
+- (void)setLastPrefetchDate:;
+- (id)initWithInternalResource:;
+- (unsigned long long)sourceCplType;
+- (id)lastPrefetchDate;
+- (void).cxx_destruct;
+- (short)remoteAvailability;
+- (void)setMasterDateCreated:;
+- (short)cloudLocalState;
+- (id)prunedAt;
+- (id)lastOnDemandDownloadDate;
+- (void)setPrunedAt:;
+- (void)setSourceCplType:;
+- (void)setCplType:;
+- (void)setLastOnDemandDownloadDate:;
+@end

@@ -1,0 +1,38 @@
+@interface AVVideoFrameVisualAnalyzer : NSObject
+@property (nonatomic) VKCImageAnalyzer imageAnalyzer;
+@property (nonatomic) BOOL actuallyEnabled;
+@property (nonatomic) AVPlayerController playerController;
+@property (nonatomic) AVPlayerLayer playerLayer;
+@property (nonatomic) <AVVideoFrameVisualAnalyzerDelegate> delegate;
+@property (nonatomic) BOOL enabled;
+- (id)playerLayer;
+- (void)dealloc;
+- (id)imageAnalyzer;
+- (BOOL)enabled;
+- (id)playerController;
+- (void)setDelegate:;
+- (void)setPlayerLayer:;
+- (id)delegate;
+- (void)setPlayerController:;
+- (void)setEnabled:;
+- (void).cxx_destruct;
+- (id)initWithPlayerController:playerLayer:;
+- (void)setActuallyEnabled:;
+- (void)_updateActualEnabledStateIfNeeded;
+- (void)_updateObserversIfNeeded;
+- (void)_startVideoFrameAnalysisAfterDelayIfNeeded;
+- (void)_setupTimeObservingTimerIfNeeded;
+- (void)_handleVideoFrameAnalysis:error:;
+- (void)_startVideoFrameAnalysis;
+- (void)_cancelAllVideoFrameAnalysis;
+- (void)_resetAnalysis;
+- (void)_updateAnalysisIfNeeded;
+- (unsigned long long)_analysisTypes;
+- (BOOL)_canPerformAnalysisOnCurrentAsset;
+- (BOOL)_canStartAnalysis;
+- (id)_imageAnalysisQueue;
+- (long long)_videoFrameOrientation;
+- (long long)_vkImageOrientationFromTransform:;
+- (void)setImageAnalyzer:;
+- (BOOL)actuallyEnabled;
+@end

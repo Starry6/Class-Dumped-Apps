@@ -1,0 +1,35 @@
+@interface BDXCategoryIndicatorView : BDXCategoryBaseView
+@property (nonatomic) UIView lineView;
+@property (nonatomic) NSArray indicators;
+@property (nonatomic) BOOL cellBackgroundColorGradientEnabled;
+@property (nonatomic) UIColor cellBackgroundUnselectedColor;
+@property (nonatomic) UIColor cellBackgroundSelectedColor;
+@property (nonatomic) BOOL separatorLineShowEnabled;
+@property (nonatomic) UIColor separatorLineColor;
+@property (nonatomic) {CGSize=dd} separatorLineSize;
+- (BOOL)selectCellAtIndex:selectedType:;
+- (void)setCellBackgroundSelectedColor:;
+- (id)cellBackgroundUnselectedColor;
+- (void)contentOffsetOfContentScrollViewDidChanged:;
+- (void)initializeData;
+- (BOOL)isCellBackgroundColorGradientEnabled;
+- (BOOL)isSeparatorLineShowEnabled;
+- (void)refreshLeftCellModel:rightCellModel:ratio:;
+- (void)refreshSelectedCellModel:unselectedCellModel:;
+- (void)resetLineView;
+- (id)separatorLineSize;
+- (void)setCellBackgroundColorGradientEnabled:;
+- (void)setCellBackgroundUnselectedColor:;
+- (void)setIndicators:;
+- (void)setSeparatorLineColor:;
+- (void)setSeparatorLineShowEnabled:;
+- (void)setSeparatorLineSize:;
+- (id)indicators;
+- (id)separatorLineColor;
+- (id)cellBackgroundSelectedColor;
+- (void)refreshState;
+- (void).cxx_destruct;
+- (id)lineView;
+- (void)setLineView:;
+- (void)initializeViews;
+@end

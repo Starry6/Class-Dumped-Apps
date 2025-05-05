@@ -1,0 +1,30 @@
+@interface WXChooseCardReq : BaseReq
+@property (nonatomic) NSString appID;
+@property (nonatomic) I shopID;
+@property (nonatomic) I canMultiSelect;
+@property (nonatomic) NSString cardType;
+@property (nonatomic) NSString cardTpID;
+@property (nonatomic) NSString signType;
+@property (nonatomic) NSString cardSign;
+@property (nonatomic) I timeStamp;
+@property (nonatomic) NSString nonceStr;
+- (unsigned int)canMultiSelect;
+- (id)cardSign;
+- (id)cardTpID;
+- (id)nonceStr;
+- (void)setCanMultiSelect:;
+- (void)setCardSign:;
+- (void)setCardTpID:;
+- (void)setNonceStr:;
+- (void)setShopID:;
+- (unsigned int)shopID;
+- (void)setAppID:;
+- (id)appID;
+- (void).cxx_destruct;
+- (unsigned int)timeStamp;
+- (void)setTimeStamp:;
+- (id)signType;
+- (void)setSignType:;
+- (id)cardType;
+- (void)setCardType:;
+@end

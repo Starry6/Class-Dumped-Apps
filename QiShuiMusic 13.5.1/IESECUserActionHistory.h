@@ -1,0 +1,33 @@
+@interface IESECUserActionHistory : NSObject
+@property (nonatomic) NSString key;
+@property (nonatomic) NSTimer timer;
+@property (nonatomic) q life;
+@property (nonatomic) q currCount;
+@property (nonatomic) BOOL isAutoTrigger;
+@property (nonatomic) BOOL needColorHeader;
+@property (nonatomic) IESECUserActionInfo info;
+@property (nonatomic) NSMutableSet hasReportRules;
+@property (nonatomic) NSMutableDictionary ruleMap;
+- (BOOL)needColorHeader;
+- (id)ruleMap;
+- (long long)currCount;
+- (BOOL)hasReportForRuleId:;
+- (id)hasReportRules;
+- (id)initWithActionInfo:config:;
+- (BOOL)isAutoTrigger;
+- (long long)life;
+- (void)setCurrCount:;
+- (void)setHasReportRules:;
+- (void)setIsAutoTrigger:;
+- (void)setLife:;
+- (void)setNeedColorHeader:;
+- (void)setRuleMap:;
+- (void)setInfo:;
+- (id)key;
+- (void)setTimer:;
+- (void)setKey:;
+- (void).cxx_destruct;
+- (id)timer;
+- (id)info;
++ (id)keyWithActionInfo:config:;
+@end

@@ -1,0 +1,31 @@
+@interface GEORoadMatch : NSObject
+@property (nonatomic) NSString roadName;
+@property (nonatomic) {?=ddd} coordinateOnRoad;
+@property (nonatomic) double courseOnRoad;
+@property (nonatomic) double distanceFromRoad;
+@property (nonatomic) double roadWidth;
+@property (nonatomic) double distanceFromJunction;
+@property (nonatomic) double junctionRadius;
+@property (nonatomic) GEOMultiSectionFeature roadFeature;
+- (void)setRoadName:;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)roadName;
+- (double)roadWidth;
+- (void)setRoadWidth:;
+- (double)distanceFromJunction;
+- (id)initWithCoordinateOnRoad:courseOnRoad:;
+- (void)setRoadFeature:;
+- (id)roadFeature;
+- (id)coordinateOnRoad;
+- (void)setCoordinateOnRoad:;
+- (double)courseOnRoad;
+- (void)setCourseOnRoad:;
+- (double)distanceFromRoad;
+- (void)setDistanceFromRoad:;
+- (void)setDistanceFromJunction:;
+- (double)junctionRadius;
+- (void)setJunctionRadius:;
++ (BOOL)supportsSecureCoding;
+@end

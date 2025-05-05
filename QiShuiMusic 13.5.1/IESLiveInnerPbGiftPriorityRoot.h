@@ -1,0 +1,2 @@
+@interface IESLiveInnerPbGiftPriorityRoot : GPBRootObject
+@end

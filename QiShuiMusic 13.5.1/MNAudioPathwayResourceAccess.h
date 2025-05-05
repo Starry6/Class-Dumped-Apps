@@ -1,0 +1,30 @@
+@interface MNAudioPathwayResourceAccess : NSObject
+@property (nonatomic) NSDictionary hfpRoute;
+@property (nonatomic) BOOL enableHFPUse;
+@property (nonatomic) BOOL wantsVolumeControl;
+- (void)removeObserver:;
+- (void)addObserver:;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (void)_registerForObservation;
+- (void)_mediaServerConnectionDied;
+- (void)_pickableRoutesChanged;
+- (id)initWithHFPEnabled:;
+- (void)_unregisterForObservation;
+- (void)setHfpRoute:;
+- (void)setEnableHFPUse:;
+- (void)setWantsVolumeControl:;
+- (void)_updateHFPRoute;
+- (void)_findUsableRouteWithHandler:;
+- (BOOL)_routeIsUsable:;
+- (BOOL)_otherAudioIsPlaying;
+- (BOOL)_routeIsAirTunes:;
+- (BOOL)_routeIsOverride:;
+- (BOOL)_routeIsHFP:;
+- (BOOL)_routeIsForVehicle:;
+- (BOOL)_routeIsBluetooth:;
+- (BOOL)_routeIsWireless:;
+- (BOOL)enableHFPUse;
+- (BOOL)wantsVolumeControl;
+- (id)hfpRoute;
+@end

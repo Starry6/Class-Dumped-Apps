@@ -1,0 +1,32 @@
+@interface VCPProtoMovieFaceResult : PBCodable
+@property (nonatomic) VCPProtoTimeRange timeRange;
+@property (nonatomic) NSInteger mouthExpression;
+@property (nonatomic) NSInteger position;
+@property (nonatomic) VCPProtoBounds bounds;
+@property (nonatomic) BOOL isCloseup;
+@property (nonatomic) NSInteger faceID;
+- (void)setPosition:;
+- (int)position;
+- (id)timeRange;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)setTimeRange:;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void)setBounds:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (id)bounds;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (int)faceID;
+- (void)setFaceID:;
+- (id)exportToLegacyDictionary;
+- (int)mouthExpression;
+- (void)setMouthExpression:;
+- (BOOL)isCloseup;
+- (void)setIsCloseup:;
++ (id)resultFromLegacyDictionary:;
+@end

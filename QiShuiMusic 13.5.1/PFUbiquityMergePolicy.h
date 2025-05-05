@@ -1,0 +1,2 @@
+@interface PFUbiquityMergePolicy : NSMergePolicy
+@end

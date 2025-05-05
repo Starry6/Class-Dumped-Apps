@@ -1,0 +1,31 @@
+@interface IESLivePKGuestAnchorBuilder : NSObject
+@property (nonatomic) HTSLiveInteractiveAPI interactiveAPI;
+@property (nonatomic) IESLiveInterativeTimeOutManager timeOutManager;
+@property (nonatomic) IESLivePKModel pkmodel;
+@property (nonatomic) <IESLiveRoomServiceAdapter> room;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)isInvitingUser:;
+- (id)pkmodel;
+- (void)acceptConnnection:;
+- (void)acceptConnnectionWithUserID:secUserID:linkType:type:eventParameters:;
+- (void)callOthersTogetherApply;
+- (void)didSetAttachingDIContext;
+- (id)getMuteGusetNicknameByUserID:;
+- (id)interactiveAPI;
+- (void)inviteUserWithSecID:userID:sourcePage:;
+- (void)muteGuest:;
+- (void)setInteractiveAPI:;
+- (void)setPkmodel:;
+- (void)setTimeOutManager:;
+- (void)stopConnectionWithUserID:secUserID:requestSource:;
+- (id)timeOutManager;
+- (void)unMuteGuest:;
+- (void)showToast:;
+- (void).cxx_destruct;
+- (id)room;
+- (void)setRoom:;
+- (id)initWithRoom:;
+@end

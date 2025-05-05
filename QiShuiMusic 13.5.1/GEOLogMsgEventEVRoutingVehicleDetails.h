@@ -1,0 +1,35 @@
+@interface GEOLogMsgEventEVRoutingVehicleDetails : PBCodable
+@property (nonatomic) BOOL hasMake;
+@property (nonatomic) NSString make;
+@property (nonatomic) BOOL hasModel;
+@property (nonatomic) NSString model;
+@property (nonatomic) BOOL hasBatteryCapacity;
+@property (nonatomic) I batteryCapacity;
+- (id)model;
+- (void)readAll:;
+- (unsigned int)batteryCapacity;
+- (id)init;
+- (void)setBatteryCapacity:;
+- (void)setModel:;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasModel;
+- (BOOL)hasMake;
+- (id)make;
+- (void)setMake:;
+- (void)setHasBatteryCapacity:;
+- (BOOL)hasBatteryCapacity;
++ (BOOL)isValid:;
+@end

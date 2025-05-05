@@ -1,0 +1,36 @@
+@interface TTImageXUploadClient : NSObject
+@property (nonatomic) BOOL finished;
+@property (nonatomic) NSDictionary logDict;
+@property (nonatomic) NSString applyAuth;
+@property (nonatomic) NSString commitAuth;
+@property (nonatomic) <TTImageXUploadClientDelegate> delegate;
+- (id)logDict;
+- (id)applyAuth;
+- (BOOL)checkModel;
+- (id)commitAuth;
+- (void)handleNotify:;
+- (void)handleNotifyOnMainThread:;
+- (id)initWithFilePaths:;
+- (id)initWithFilePaths:imageDataArray:;
+- (id)initWithimageDataArray:;
+- (void)parseLog;
+- (void)setApplyAuth:;
+- (void)setAuthorizationParameter:;
+- (void)setCommitAuth:;
+- (void)setFileNames:;
+- (void)setImageHostName:;
+- (void)setLogDict:;
+- (void)setRequestParameter:;
+- (void)setUploadConfig:;
+- (id)uploadImageInfo:;
+- (void)setFinished:;
+- (void)dealloc;
+- (BOOL)finished;
+- (void)start;
+- (void)setCookies:;
+- (void)setDelegate:;
+- (void)stop;
+- (void)close;
+- (id)delegate;
+- (void).cxx_destruct;
+@end

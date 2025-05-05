@@ -1,0 +1,36 @@
+@interface IESECShopHybridTabPerfLog : NSObject
+@property (nonatomic) NSMutableArray cpuMetrics;
+@property (nonatomic) NSMutableArray fpsMetrics;
+@property (nonatomic) q jsbCount;
+@property (nonatomic) NSMutableArray JSBIntercept;
+@property (nonatomic) double tabInitTime;
+@property (nonatomic) double selectionStartTime;
+@property (nonatomic) double selectionEndTime;
+@property (nonatomic) double tabContainerReadyTime;
+- (void)setTabInitTime:;
+- (id)JSBIntercept;
+- (double)getAvg:;
+- (void)addPreviewJSBInvoke:params:intercepted:limitParamKey:limitParamValue:;
+- (void)addPreviewPerf:cpuUsage:;
+- (id)fpsMetrics;
+- (double)getTotal:;
+- (long long)jsbCount;
+- (id)previewCPUMetrics;
+- (id)previewFPSMetrics;
+- (id)previewJSBMetrics;
+- (double)selectionEndTime;
+- (double)selectionStartTime;
+- (void)setFpsMetrics:;
+- (void)setJSBIntercept:;
+- (void)setJsbCount:;
+- (void)setSelectionEndTime:;
+- (void)setSelectionStartTime:;
+- (void)setTabContainerReadyTime:;
+- (double)tabContainerReadyTime;
+- (double)tabInitTime;
+- (id)init;
+- (void).cxx_destruct;
+- (double)getMedian:;
+- (void)setCpuMetrics:;
+- (id)cpuMetrics;
+@end

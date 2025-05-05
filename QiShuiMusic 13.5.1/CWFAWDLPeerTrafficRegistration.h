@@ -1,0 +1,36 @@
+@interface CWFAWDLPeerTrafficRegistration : NSObject
+@property (nonatomic) NSString serviceName;
+@property (nonatomic) BOOL active;
+@property (nonatomic) NSInteger sessionFlags;
+@property (nonatomic) Q desiredBandwidth;
+@property (nonatomic) Q desiredLatency;
+@property (nonatomic) Q preferredChannel;
+@property (nonatomic) Q secondaryPreferredChannel;
+@property (nonatomic) NSArray peerContextList;
+- (void)setServiceName:;
+- (id)serviceName;
+- (void)setSessionFlags:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (unsigned long long)secondaryPreferredChannel;
+- (void)encodeWithCoder:;
+- (void)setSecondaryPreferredChannel:;
+- (void).cxx_destruct;
+- (unsigned long long)preferredChannel;
+- (id)description;
+- (void)setPreferredChannel:;
+- (void)setActive:;
+- (int)sessionFlags;
+- (BOOL)isEqual:;
+- (BOOL)isActive;
+- (id)copyWithZone:;
+- (BOOL)isEqualToAWDLPeerTrafficRegistration:;
+- (id)serializedRegistrationInfo;
+- (unsigned long long)desiredBandwidth;
+- (void)setDesiredBandwidth:;
+- (unsigned long long)desiredLatency;
+- (void)setDesiredLatency:;
+- (id)peerContextList;
+- (void)setPeerContextList:;
++ (BOOL)supportsSecureCoding;
+@end

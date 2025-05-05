@@ -1,0 +1,32 @@
+@interface YYImageFrame : NSObject
+@property (nonatomic) Q index;
+@property (nonatomic) Q width;
+@property (nonatomic) Q height;
+@property (nonatomic) Q offsetX;
+@property (nonatomic) Q offsetY;
+@property (nonatomic) double duration;
+@property (nonatomic) Q dispose;
+@property (nonatomic) Q blend;
+@property (nonatomic) UIImage image;
+- (void)setDispose:;
+- (unsigned long long)dispose;
+- (void)setWidth:;
+- (void)setImage:;
+- (unsigned long long)height;
+- (void)setDuration:;
+- (unsigned long long)index;
+- (unsigned long long)width;
+- (void)setHeight:;
+- (void)setIndex:;
+- (void).cxx_destruct;
+- (double)duration;
+- (id)image;
+- (id)copyWithZone:;
+- (unsigned long long)offsetX;
+- (void)setOffsetX:;
+- (unsigned long long)offsetY;
+- (void)setOffsetY:;
+- (unsigned long long)blend;
+- (void)setBlend:;
++ (id)frameWithImage:;
+@end

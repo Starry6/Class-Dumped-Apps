@@ -1,0 +1,33 @@
+@interface IESECCommentEvaluatorView : UIView
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UIButton leftButton;
+@property (nonatomic) UIButton rightButton;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel descLabel;
+@property (nonatomic) <IESECCommentEvaluatorDelegate> delegate;
+@property (nonatomic) IESECCommentEvaluatorViewConfig config;
+@property (nonatomic) UICollectionViewCell cell;
+- (void)tapCancelButton;
+- (id)descLabel;
+- (BOOL)isGoldCardEvaluatorView;
+- (void)setDescLabel:;
+- (void)tapEntranceButton;
+- (void)setTitleLabel:;
+- (void)layoutSubviews;
+- (id)containerView;
+- (void)setConfig:;
+- (void)setContainerView:;
+- (void)setDelegate:;
+- (id)leftButton;
+- (id)rightButton;
+- (id)initWithFrame:;
+- (void)setLeftButton:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setRightButton:;
+- (id)config;
+- (id)titleLabel;
+- (id)cell;
+- (void)setCell:;
+- (void)setupUI;
+@end

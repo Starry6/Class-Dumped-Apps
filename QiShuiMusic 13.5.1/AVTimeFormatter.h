@@ -1,0 +1,33 @@
+@interface AVTimeFormatter : NSFormatter
+@property (nonatomic) q style;
+@property (nonatomic) double formatTemplate;
+@property (nonatomic) BOOL fullWidth;
+- (id)stringForObjectValue:;
+- (void)setLocale:;
+- (void)setCachedDateFormatterFormat:;
+- (id)init;
+- (void)dealloc;
+- (void)setIsRightToLeft:;
+- (BOOL)getObjectValue:forString:errorDescription:;
+- (id)cachedDateFormatterTemplate;
+- (id)stringFromCMTime:;
+- (id)numberFormatterWithTwoMinimumIntegerDigits;
+- (void)setStyle:;
+- (id)locale;
+- (double)formatTemplate;
+- (id)initWithCoder:;
+- (id)stringFromSeconds:;
+- (id)cachedDateFormatterFormat;
+- (void)setFormatTemplate:;
+- (id)stringFromTimeInterval:;
+- (void)encodeWithCoder:;
+- (void)setCachedDateFormatterTemplate:;
+- (void)setFullWidth:;
+- (void)setNumberFormatterWithOneMinimumIntegerDigits:;
+- (void)setNumberFormatterWithTwoMinimumIntegerDigits:;
+- (BOOL)isRightToLeft;
+- (id)numberFormatterWithOneMinimumIntegerDigits;
+- (long long)style;
+- (BOOL)isFullWidth;
+- (id)copyWithZone:;
+@end

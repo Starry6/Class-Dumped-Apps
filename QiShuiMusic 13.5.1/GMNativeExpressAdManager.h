@@ -1,0 +1,33 @@
+@interface GMNativeExpressAdManager : GMBaseConversionAd
+@property (nonatomic) ABUNativeAdsManager nativeAdsManager;
+@property (nonatomic) ABUDrawAdsManager drwaAdsManager;
+@property (nonatomic) <BUMNativeExpressAdViewDelegate> delegate;
+@property (nonatomic) BUAdSlot adslot;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)adslot;
+- (void)drawAdsManager:didFailWithError:;
+- (void)drawAdsManager:didWaitingBiddingResultWithParameters:andResumeHandler:;
+- (void)drawAdsManagerDidFinishLoadAdnAd:drawAd:error:;
+- (void)drawAdsManagerSuccessToLoad:drawVideoAds:;
+- (id)drwaAdsManager;
+- (id)getABUxxxAd;
+- (id)initWithSlot:adSize:;
+- (void)loadAdDataWithCount:;
+- (id)mediation;
+- (id)nativeAdsManager;
+- (void)nativeAdsManager:didFailWithError:;
+- (void)nativeAdsManager:didWaitingBiddingResultWithParameters:andResumeHandler:;
+- (void)nativeAdsManagerDidFinishLoadAdnAd:nativeAd:error:;
+- (void)nativeAdsManagerSuccessToLoad:nativeAds:;
+- (void)setAdSize:;
+- (void)setAdslot:;
+- (void)setDrwaAdsManager:;
+- (void)setNativeAdsManager:;
+- (void)setDelegate:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)adSize;
+@end

@@ -1,0 +1,31 @@
+@interface AWEIMGameRoomInviteMessage : AWEIMMessage
+@property (nonatomic) NSString gameName;
+@property (nonatomic) NSString coverImgURLStr;
+@property (nonatomic) NSString scheme;
+@property (nonatomic) Q roomStatus;
+@property (nonatomic) NSString gameID;
+@property (nonatomic) NSString roomInfo;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString gameHint;
+- (id)coverImgURLStr;
+- (id)gameHint;
+- (id)gameName;
+- (id)getContentDict;
+- (id)initWithContentDict:;
+- (id)roomInfo;
+- (unsigned long long)roomStatus;
+- (void)setCoverImgURLStr:;
+- (void)setGameHint:;
+- (void)setGameID:;
+- (void)setGameName:;
+- (void)setRoomInfo:;
+- (void)setRoomStatus:;
+- (long long)messageType;
+- (void)setScheme:;
+- (id)scheme;
+- (void)setTitle:;
+- (id)title;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (id)gameID;
+@end

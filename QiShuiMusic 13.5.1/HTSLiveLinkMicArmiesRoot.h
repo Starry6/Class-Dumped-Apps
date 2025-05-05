@@ -1,0 +1,2 @@
+@interface HTSLiveLinkMicArmiesRoot : GPBRootObject
+@end

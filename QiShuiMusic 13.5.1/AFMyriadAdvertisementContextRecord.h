@@ -1,0 +1,30 @@
+@interface AFMyriadAdvertisementContextRecord : NSObject
+@property (nonatomic) C advertisementContextVersion;
+@property (nonatomic) q advertisementRecordType;
+@property (nonatomic) double voiceTriggerEndTime;
+@property (nonatomic) NSData advertisementPayload;
+@property (nonatomic) NSUUID deviceID;
+@property (nonatomic) double advertisementDispatchTime;
+- (id)deviceID;
+- (void).cxx_destruct;
+- (id)description;
+- (id)initWithAdvertisementRecordType:voiceTriggerEndTime:advertisementPayload:deviceID:;
+- (id)initWithMyriadAdvertisementContextRecordData:;
+- (id)myriadAdvertisementContextAsData;
+- (BOOL)isSaneForVoiceTriggerEndTime:endtimeDistanceThreshold:;
+- (unsigned long long)_advertismentPayloadSizeForVersion:;
+- (char)_getAdvertismentRecordTypeForVersion:data:;
+- (double)_getVoiceTriggerEndTimeForVersion:data:;
+- (id)_getMyriadAdvertisementDataForVersion:data:;
+- (id)_getDeviceIdForVersion:data:;
+- (void)_initializeMyriadAdvertisementContextRecordFromData:;
+- (id)recordForDeviceId:;
+- (BOOL)compareAdvertisementPayload:;
+- (id)_deviceIDFromBytes:;
+- (unsigned char)advertisementContextVersion;
+- (long long)advertisementRecordType;
+- (double)voiceTriggerEndTime;
+- (id)advertisementPayload;
+- (double)advertisementDispatchTime;
+- (void)setAdvertisementDispatchTime:;
+@end

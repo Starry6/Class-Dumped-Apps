@@ -1,0 +1,32 @@
+@interface PBDataWriter : NSObject
+- (BOOL)writeData:;
+- (unsigned long long)write:maxLength:;
+- (id)init;
+- (void)writeDouble:forTag:;
+- (void)writeSint32:forTag:;
+- (void)writeBOOL:forTag:;
+- (void)writeInt64:forTag:;
+- (id)data;
+- (void)writeSfixed64:forTag:;
+- (id)initWithInitialCapacity:;
+- (void)writeSint64:forTag:;
+- (void)writeInt8:;
+- (void)writeUint64:forTag:;
+- (void)writeFloat:forTag:;
+- (void)writeFixed32:forTag:;
+- (void)writeBareVarint:;
+- (id)immutableData;
+- (void)writeTag:andType:;
+- (void)writeInt32:forTag:;
+- (void)writeBigEndianFixed16:;
+- (void)writeSfixed32:forTag:;
+- (void)writeData:forTag:;
+- (void).cxx_destruct;
+- (void)writeString:forTag:;
+- (void)writeBigEndianFixed32:;
+- (void)writeProtoBuffer:;
+- (void)writeUint8:;
+- (void)writeFixed64:forTag:;
+- (void)writeUint32:forTag:;
+- (void)writeBigEndianShortThenString:;
+@end

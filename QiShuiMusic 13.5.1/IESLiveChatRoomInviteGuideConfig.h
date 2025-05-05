@@ -1,0 +1,30 @@
+@interface IESLiveChatRoomInviteGuideConfig : NSObject
+@property (nonatomic) Q scene;
+@property (nonatomic) double avatarSideLength;
+@property (nonatomic) {CGSize=dd} sessionSize;
+@property (nonatomic) NSArray widths;
+@property (nonatomic) double fontSize;
+@property (nonatomic) double labelHeight;
+@property (nonatomic) NSArray colors;
+@property (nonatomic) BOOL isSquareAudio;
+@property (nonatomic) BOOL userNewLayout;
+- (void)setSessionSize:;
+- (void)setLabelHeight:;
+- (double)avatarSideLength;
+- (BOOL)isSquareAudio;
+- (double)labelHeight;
+- (id)sessionSize;
+- (void)setAvatarSideLength:;
+- (void)setIsSquareAudio:;
+- (void)setUserNewLayout:;
+- (void)setWidths:;
+- (BOOL)userNewLayout;
+- (id)colors;
+- (void)setColors:;
+- (void)setScene:;
+- (unsigned long long)scene;
+- (double)fontSize;
+- (void).cxx_destruct;
+- (void)setFontSize:;
+- (id)widths;
+@end

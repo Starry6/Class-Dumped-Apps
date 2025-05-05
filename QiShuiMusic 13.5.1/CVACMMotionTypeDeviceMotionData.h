@@ -1,0 +1,31 @@
+@interface CVACMMotionTypeDeviceMotionData : NSObject
+@property (nonatomic) CVACLMotionTypeDoubleVector4 quaternion;
+@property (nonatomic) CVACLMotionTypeVector3 userAcceleration;
+@property (nonatomic) CVACLMotionTypeVector3 gravity;
+@property (nonatomic) CVACLMotionTypeVector3 rotationRate;
+@property (nonatomic) CVACLMotionTypeVector3 magneticField;
+@property (nonatomic) NSInteger magneticFieldCalibrationLevel;
+@property (nonatomic) BOOL doingYawCorrection;
+@property (nonatomic) BOOL doingBiasEstimation;
+@property (nonatomic) BOOL isInitialized;
+- (BOOL)isInitialized;
+- (id)init;
+- (id)rotationRate;
+- (BOOL)doingYawCorrection;
+- (id)quaternion;
+- (id)gravity;
+- (BOOL)doingBiasEstimation;
+- (void)setQuaternion:;
+- (void).cxx_destruct;
+- (int)magneticFieldCalibrationLevel;
+- (id)magneticField;
+- (id)userAcceleration;
+- (void)setGravity:;
+- (void)setRotationRate:;
+- (void)setMagneticField:;
+- (void)setUserAcceleration:;
+- (void)setIsInitialized:;
+- (void)setMagneticFieldCalibrationLevel:;
+- (void)setDoingYawCorrection:;
+- (void)setDoingBiasEstimation:;
+@end

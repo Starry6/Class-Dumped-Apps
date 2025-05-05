@@ -1,0 +1,33 @@
+@interface STRefreshAnimateView : UIView
+@property (nonatomic) double dotSize;
+@property (nonatomic) double dotSpacing;
+@property (nonatomic) double slideTime;
+@property (nonatomic) NSMutableArray animLayers;
+@property (nonatomic) CALayer leftDotLayer;
+@property (nonatomic) CALayer centerDotLayer;
+@property (nonatomic) CALayer rightDotLayer;
+- (id)animLayers;
+- (id)centerDotLayer;
+- (void)generateAnim;
+- (id)initWithFrame:withDotSize:withDotSpacing:withSlideTime:;
+- (id)leftDotLayer;
+- (id)rightDotLayer;
+- (void)setAnimLayers:;
+- (void)setCenterDotLayer:;
+- (void)setDotSize:;
+- (void)setLeftDotLayer:;
+- (void)setRightDotLayer:;
+- (void)setSlideTime:;
+- (double)slideTime;
+- (void)play;
+- (void)setFrame:;
+- (void)setColor:;
+- (void)stop;
+- (void)resume;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)pause;
+- (double)dotSpacing;
+- (void)setDotSpacing:;
+- (double)dotSize;
+@end

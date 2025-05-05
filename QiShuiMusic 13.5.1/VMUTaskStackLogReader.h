@@ -1,0 +1,33 @@
+@interface VMUTaskStackLogReader : VMUStackLogReaderBase
+@property (nonatomic) VMUTaskMemoryScanner scanner;
+@property (nonatomic) I task;
+@property (nonatomic) BOOL is64bit;
+@property (nonatomic) BOOL inspectingLiveProcess;
+@property (nonatomic) BOOL usesLiteMode;
+@property (nonatomic) BOOL coldestFrameIsNotThreadId;
+@property (nonatomic) VMUVMRegionTracker regionTracker;
+@property (nonatomic) {_CSTypeRef=QQ} symbolicator;
+@property (nonatomic) NSSet excludedFrames;
+@property (nonatomic) Q nodesInUniquingTable;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)scanner;
+- (id)initWithTask:;
+- (id)regionTracker;
+- (void)setScanner:;
+- (void)dealloc;
+- (long long)getFramesForStackID:stackFramesBuffer:;
+- (id)liteMSLPayloadforMallocAddress:size:;
+- (id)vmuVMRegionForAddress:;
+- (id)initWithTask:symbolicator:;
+- (id)liteMSLPayloadforVMregionAddress:;
+- (long long)getFramesForNode:inLiteZone:stackFramesBuffer:;
+- (unsigned long long)nodesInUniquingTable;
+- (BOOL)inspectingLiveProcess;
+- (int)enumerateMSLRecordsAndPayloads:;
+- (long long)getFramesForAddress:size:inLiteZone:stackFramesBuffer:;
+- (void).cxx_destruct;
+- (BOOL)is64bit;
+@end

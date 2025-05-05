@@ -1,0 +1,30 @@
+@interface HMDUploadHelper : NSObject
+@property (nonatomic) HMDInfo info;
+@property (nonatomic) HMDInjectedInfo injecedInfo;
+@property (nonatomic) NSString currentLanguage;
+@property (nonatomic) NSString currentRegion;
+@property (nonatomic) q currentMillisecondsFromGMT;
+- (void)setInjecedInfo:;
+- (void)addObserverForInjectedInfo;
+- (id)constantHeaderParam;
+- (void)currentCarrierDidChange;
+- (void)currentLocalDidChange;
+- (long long)currentMillisecondsFromGMT;
+- (void)currentNetworkTypeDidChange;
+- (void)currentTimeZoneDidChange;
+- (id)headerInfo;
+- (id)infrequentChangeHeaderParam;
+- (id)injecedInfo;
+- (void)setCurrentMillisecondsFromGMT:;
+- (id)currentRegion;
+- (void)setCurrentRegion:;
+- (id)init;
+- (void)dealloc;
+- (void)setInfo:;
+- (void)observeValueForKeyPath:ofObject:change:context:;
+- (void).cxx_destruct;
+- (id)info;
+- (id)currentLanguage;
+- (void)setCurrentLanguage:;
++ (id)sharedInstance;
+@end

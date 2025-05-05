@@ -1,0 +1,33 @@
+@interface IESLiveMessageTrayAggregationModel : NSObject
+@property (nonatomic) q currentTriggerTime;
+@property (nonatomic) NSString currentContent;
+@property (nonatomic) q currentCount;
+@property (nonatomic) HTSLiveImage aggregationIcon;
+@property (nonatomic) GPBMessage message;
+@property (nonatomic) BOOL disableAnimation;
+@property (nonatomic) IESLivePSComponentConfigModel configModel;
+@property (nonatomic) NSMutableArray messages;
+- (void)consumeMessage:;
+- (BOOL)doMergeMessage:;
+- (void)setConfigModel:;
+- (id)aggregationIcon;
+- (BOOL)isNewBatchData:;
+- (BOOL)checkValidMessage:;
+- (id)configModel;
+- (long long)currentTriggerTime;
+- (void)disappearMatchHotTray:;
+- (id)initWithMatchHotMessage:;
+- (void)setAggregationIcon:;
+- (void)setCurrentTriggerTime:;
+- (long long)currentCount;
+- (void)setMessage:;
+- (id)messages;
+- (id)currentContent;
+- (id)message;
+- (void).cxx_destruct;
+- (void)setCurrentContent:;
+- (BOOL)disableAnimation;
+- (void)setMessages:;
+- (void)setCurrentCount:;
+- (void)setDisableAnimation:;
+@end

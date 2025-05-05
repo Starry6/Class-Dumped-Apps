@@ -1,0 +1,37 @@
+@interface IESLiveVSMessageBoardDressUpThemeSkinCell : UITableViewCell
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) UIImageView userImageView;
+@property (nonatomic) NSString userTitle;
+@property (nonatomic) InteractDressInfoResponse_DressInfo dressUpModel;
+@property (nonatomic) @? ThemeSkinBlock;
+@property (nonatomic) @? ThemeSkinCellShow;
+@property (nonatomic) NSInteger lastThemeSkinRow;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)ThemeSkinBlock;
+- (id)ThemeSkinCellShow;
+- (id)dressUpModel;
+- (int)lastThemeSkinRow;
+- (void)setDressUpModel:;
+- (void)setLastThemeSkinRow:;
+- (void)setThemeSkinBlock:;
+- (void)setThemeSkinCellShow:;
+- (void)setUI;
+- (void)setUserImageView:;
+- (void)updateSelectItem;
+- (id)userImageView;
+- (id)collectionView:layout:insetForSectionAtIndex:;
+- (id)initWithStyle:reuseIdentifier:;
+- (void)collectionView:willDisplayCell:forItemAtIndexPath:;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (void)setCollectionView:;
+- (void).cxx_destruct;
+- (long long)numberOfSectionsInCollectionView:;
+- (id)collectionView;
+- (id)userTitle;
+- (void)setUserTitle:;
+@end

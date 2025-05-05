@@ -1,0 +1,36 @@
+@interface IESLiveSaaSSlideBeautyCollectionViewCell : UICollectionViewCell
+@property (nonatomic) UIImageView imageView;
+@property (nonatomic) UIView imageBackgroundView;
+@property (nonatomic) UILabel textLabel;
+@property (nonatomic) UIView selectedView;
+@property (nonatomic) UIView whiteDot;
+@property (nonatomic) <IESLiveSaaSBeautyProvider> beautyProvider;
+@property (nonatomic) <IESLiveSaaSBeautySyncService> beautySyncService;
+@property (nonatomic) IESLiveSaaSRoomBeautyItem item;
+@property (nonatomic) BOOL useNewOpenLive;
+- (id)beautyProvider;
+- (id)beautySyncService;
+- (id)imageBackgroundView;
+- (void)setBeautyProvider:;
+- (void)setBeautySyncService:;
+- (void)setImageBackgroundView:;
+- (void)setSelectedView:;
+- (void)setUseNewOpenLive:;
+- (void)setWhiteDot:;
+- (BOOL)useNewOpenLive;
+- (id)whiteDot;
+- (id)item;
+- (id)textLabel;
+- (void)touchesBegan:withEvent:;
+- (void)setSelected:;
+- (void)updateWithItem:;
+- (void)prepareForReuse;
+- (id)initWithFrame:;
+- (void)setItem:;
+- (void).cxx_destruct;
+- (id)imageView;
+- (void)setImageView:;
+- (void)setTextLabel:;
+- (id)selectedView;
+- (void)layoutUI;
+@end

@@ -1,0 +1,36 @@
+@interface TXRAssetCatalogConfig : NSObject
+@property (nonatomic) TXRAssetCatalogFileAttributes baseFileAttributes;
+@property (nonatomic) NSSet fileAttributesList;
+@property (nonatomic) TXRTexture texture;
+@property (nonatomic) Q pixelFormat;
+@property (nonatomic) Q mipmapOption;
+@property (nonatomic) Q memory;
+@property (nonatomic) Q graphicsFeatureSet;
+@property (nonatomic) Q idiom;
+@property (nonatomic) Q displayColorSpace;
+@property (nonatomic) Q scaleFactor;
+- (void)setIdiom:;
+- (id)texture;
+- (void)setPixelFormat:;
+- (unsigned long long)scaleFactor;
+- (void)setDisplayColorSpace:;
+- (void)setScaleFactor:;
+- (unsigned long long)displayColorSpace;
+- (unsigned long long)idiom;
+- (void).cxx_destruct;
+- (unsigned long long)pixelFormat;
+- (unsigned long long)memory;
+- (void)setMemory:;
+- (id)initWithTexture:;
+- (void)addFileAttributesForLevel:;
+- (void)addFileAttributesForLevel:face:;
+- (void)addFileAttributesForLevel:fileFormat:colorSpace:exifOrientation:;
+- (void)addFileAttributesForLevel:face:fileFormat:colorSpace:exifOrientation:;
+- (id)baseFileAttributes;
+- (void)setBaseFileAttributes:;
+- (id)fileAttributesList;
+- (unsigned long long)mipmapOption;
+- (void)setMipmapOption:;
+- (unsigned long long)graphicsFeatureSet;
+- (void)setGraphicsFeatureSet:;
+@end

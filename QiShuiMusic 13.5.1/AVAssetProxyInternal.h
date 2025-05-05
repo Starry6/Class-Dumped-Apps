@@ -1,0 +1,2 @@
+@interface AVAssetProxyInternal : NSObject
+@end

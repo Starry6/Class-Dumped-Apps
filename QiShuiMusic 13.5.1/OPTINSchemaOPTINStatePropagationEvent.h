@@ -1,0 +1,37 @@
+@interface OPTINSchemaOPTINStatePropagationEvent : SISchemaTopLevelUnionType
+@property (nonatomic) NSInteger optInState;
+@property (nonatomic) BOOL hasOptInState;
+@property (nonatomic) NSInteger propagationState;
+@property (nonatomic) BOOL hasPropagationState;
+@property (nonatomic) SISchemaUUID hashedHomeKitAccessoryId;
+@property (nonatomic) BOOL hasHashedHomeKitAccessoryId;
+@property (nonatomic) NSData jsonData;
+- (id)qualifiedMessageName;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (int)getAnyEventType;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)setOptInState:;
+- (BOOL)hasOptInState;
+- (void)setHasOptInState:;
+- (void)deleteOptInState;
+- (void)setPropagationState:;
+- (BOOL)hasPropagationState;
+- (void)setHasPropagationState:;
+- (void)deletePropagationState;
+- (BOOL)hasHashedHomeKitAccessoryId;
+- (void)deleteHashedHomeKitAccessoryId;
+- (int)optInState;
+- (int)propagationState;
+- (id)hashedHomeKitAccessoryId;
+- (void)setHashedHomeKitAccessoryId:;
+- (void)setHasHashedHomeKitAccessoryId:;
+@end

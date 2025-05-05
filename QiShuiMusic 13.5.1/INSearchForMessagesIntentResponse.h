@@ -1,0 +1,31 @@
+@interface INSearchForMessagesIntentResponse : INIntentResponse
+@property (nonatomic) NSArray searchResults;
+@property (nonatomic) q code;
+@property (nonatomic) NSArray messages;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (id)_dictionaryRepresentation;
+- (id)messages;
+- (id)initWithBackingStore:;
+- (long long)code;
+- (id)searchResults;
+- (id)initWithCoder:;
+- (void)setSearchResults:;
+- (void)encodeWithCoder:;
+- (void)setMessages:;
+- (id)propertiesByName;
+- (id)_initWithCode:userActivity:;
+- (id)initWithCode:userActivity:;
+- (long long)_intentResponseCode;
+- (long long)_codeWithName:;
+- (void)setPropertiesByName:;
+- (id)_redactedDictionaryRepresentation;
++ (BOOL)supportsSecureCoding;
++ (long long)_codeFromType:errorCode:appLaunchRequested:;
++ (int)_typeFromCode:;
++ (int)_errorCodeFromCode:;
++ (BOOL)_appLaunchRequestedFromCode:;
+@end

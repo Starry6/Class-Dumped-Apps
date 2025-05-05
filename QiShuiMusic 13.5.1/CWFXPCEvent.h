@@ -1,0 +1,34 @@
+@interface CWFXPCEvent : NSObject
+@property (nonatomic) NSUUID UUID;
+@property (nonatomic) q type;
+@property (nonatomic) q internalType;
+@property (nonatomic) NSString interfaceName;
+@property (nonatomic) NSDictionary info;
+@property (nonatomic) NSDate timestamp;
+@property (nonatomic) Q acknowledgementTimeout;
+- (id)init;
+- (void)setInterfaceName:;
+- (void)setUUID:;
+- (void)setInfo:;
+- (void)setType:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)__descriptionForEventType;
+- (void)setInternalType:;
+- (void)setAcknowledgementTimeout:;
+- (void)encodeWithCoder:;
+- (void)setTimestamp:;
+- (long long)type;
+- (void).cxx_destruct;
+- (BOOL)isEqualToXPCEvent:;
+- (unsigned long long)acknowledgementTimeout;
+- (id)timestamp;
+- (id)description;
+- (id)info;
+- (long long)internalType;
+- (id)interfaceName;
+- (id)UUID;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
++ (BOOL)supportsSecureCoding;
+@end

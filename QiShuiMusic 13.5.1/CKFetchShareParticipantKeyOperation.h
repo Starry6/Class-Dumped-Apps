@@ -1,0 +1,33 @@
+@interface CKFetchShareParticipantKeyOperation : CKDatabaseOperation
+@property (nonatomic) NSArray shareIDs;
+@property (nonatomic) NSMutableDictionary errorsByShareID;
+@property (nonatomic) <CKFetchShareParticipantKeyOperationCallbacks> clientOperationCallbackProxy;
+@property (nonatomic) CKFetchShareParticipantKeyOperationInfo operationInfo;
+@property (nonatomic) NSDictionary baseTokensByShareID;
+@property (nonatomic) NSDictionary childRecordIDsByShareID;
+@property (nonatomic) @? shareParticipantKeyFetchedBlock;
+@property (nonatomic) @? shareParticipantKeyCompletionBlock;
+- (void)_finishOnCallbackQueueWithError:;
+- (id)activityCreate;
+- (void)performCKOperation;
+- (void)fillFromOperationInfo:;
+- (BOOL)hasCKOperationCallbacksSet;
+- (void).cxx_destruct;
+- (void)fillOutOperationInfo:;
+- (BOOL)CKOperationShouldRun:;
+- (void)handleParticipantKeyFetchForRecordID:participantKey:error:;
+- (id)initWithShareIDs:;
+- (void)setShareParticipantKeyFetchedBlock:;
+- (id)shareParticipantKeyFetchedBlock;
+- (void)setShareParticipantKeyCompletionBlock:;
+- (id)shareParticipantKeyCompletionBlock;
+- (id)baseTokensByShareID;
+- (void)setBaseTokensByShareID:;
+- (id)childRecordIDsByShareID;
+- (void)setChildRecordIDsByShareID:;
+- (id)shareIDs;
+- (void)setShareIDs:;
+- (id)errorsByShareID;
+- (void)setErrorsByShareID:;
++ (void)applyDaemonCallbackInterfaceTweaks:;
+@end

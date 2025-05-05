@@ -1,0 +1,31 @@
+@interface FLGroupViewModelImpl : NSObject
+@property (nonatomic) NSString identifier;
+@property (nonatomic) NSString rowTitle;
+@property (nonatomic) NSString groupTitle;
+@property (nonatomic) NSString accountID;
+@property (nonatomic) BOOL needsAccountID;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)addItem:;
+- (id)accountID;
+- (id)subtitleText;
+- (void)setAccountID:;
+- (id)items;
+- (id)identifier;
+- (void)setRowTitle:;
+- (id)_expirationOrInformativeText;
+- (void)setGroupTitle:;
+- (void)setNeedsAccountID:;
+- (id)footerText;
+- (id)rowTitle;
+- (BOOL)shouldCoalesceItems;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)restrictionEnabled;
+- (id)initWithIdentifier:;
+- (void)setIdentifier:;
+- (id)groupTitle;
+- (BOOL)needsAccountID;
+@end

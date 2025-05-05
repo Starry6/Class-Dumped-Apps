@@ -1,0 +1,34 @@
+@interface MLCInstanceNormalizationLayer : MLCLayer
+@property (nonatomic) Q featureChannelCount;
+@property (nonatomic) MLCTensor mean;
+@property (nonatomic) MLCTensor variance;
+@property (nonatomic) MLCTensor beta;
+@property (nonatomic) MLCTensor gamma;
+@property (nonatomic) MLCTensorParameter betaParameter;
+@property (nonatomic) MLCTensorParameter gammaParameter;
+@property (nonatomic) float varianceEpsilon;
+@property (nonatomic) float momentum;
+- (id)beta;
+- (id)gamma;
+- (void).cxx_destruct;
+- (id)description;
+- (id)mean;
+- (float)momentum;
+- (unsigned long long)parametersCount;
+- (id)variance;
+- (id)initWithFeatureChannelCount:mean:variance:beta:gamma:varianceEpsilon:momentum:;
+- (BOOL)compileForDevice:sourceTensors:resultTensor:;
+- (BOOL)allocateDataForOptimizer:;
+- (unsigned long long)allocatedDataSizeForTraining:optimizer:;
+- (id)summarizedDOTDescription;
+- (void)linkAssociatedTensors;
+- (void)unlinkAssociatedTensors;
+- (BOOL)isValidTrainingParameters;
+- (unsigned long long)featureChannelCount;
+- (id)betaParameter;
+- (id)gammaParameter;
+- (float)varianceEpsilon;
++ (id)layerWithFeatureChannelCount:mean:variance:beta:gamma:varianceEpsilon:momentum:;
++ (id)layerWithFeatureChannelCount:beta:gamma:varianceEpsilon:;
++ (id)layerWithFeatureChannelCount:beta:gamma:varianceEpsilon:momentum:;
+@end

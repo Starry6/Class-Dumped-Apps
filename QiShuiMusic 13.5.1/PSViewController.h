@@ -1,0 +1,38 @@
+@interface PSViewController : UIViewController
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)handleURL:;
+- (id)init;
+- (void)willResignActive;
+- (void)willBecomeActive;
+- (void)setParentController:;
+- (void)setRootController:;
+- (id)parentController;
+- (void)setSpecifier:;
+- (void)suspend;
+- (long long)navigationItemLargeTitleDisplayMode;
+- (id)specifier;
+- (void)handleURL:withCompletion:;
+- (void).cxx_destruct;
+- (id)rootController;
+- (void)viewDidLoad;
+- (BOOL)canBeShownFromSuspendedState;
+- (void)showController:;
+- (void)showController:animate:;
+- (void)setPreferenceValue:specifier:;
+- (id)readPreferenceValue:;
+- (void)didLock;
+- (void)willUnlock;
+- (void)didUnlock;
+- (void)didWake;
+- (void)statusBarWillAnimateByHeight:;
+- (void)pushController:;
+- (void)pushController:animate:;
+- (void)formSheetViewWillDisappear;
+- (void)popupViewWillDisappear;
+- (id)installCloudSyncButton:delegate:;
+- (void)popupViewDidDisappear;
+- (void)formSheetViewDidDisappear;
+@end

@@ -1,0 +1,34 @@
+@interface IESECSKUPOICell : UICollectionViewCell
+@property (nonatomic) UIView separator;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UILabel hintLabel;
+@property (nonatomic) UILabel poiNameLabel;
+@property (nonatomic) UILabel addrLabel;
+@property (nonatomic) UILabel switchLabel;
+@property (nonatomic) IESECUIImageView arrowImage;
+- (id)addrLabel;
+- (id)normalBorderColor;
+- (id)poiNameLabel;
+- (id)selectedBorderColor;
+- (void)setAddrLabel:;
+- (void)setPoiNameLabel:;
+- (void)setSwitchLabel:;
+- (id)switchLabel;
+- (void)setSeparator:;
+- (void)setTitleLabel:;
+- (id)containerView;
+- (void)setContainerView:;
+- (id)selectedBackgroundColor;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (id)normalBackgroundColor;
+- (void)setViewModel:;
+- (id)titleLabel;
+- (id)separator;
+- (void)setupUI;
+- (id)hintLabel;
+- (void)setHintLabel:;
+- (id)arrowImage;
+- (void)setArrowImage:;
+@end

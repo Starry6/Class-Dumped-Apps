@@ -1,0 +1,38 @@
+@interface CRSUIDashboardWidgetWindow : CRSUIWindow
+@property (nonatomic) NSXPCConnection dashboardWindowServiceConnection;
+@property (nonatomic) NSArray focusableItems;
+@property (nonatomic) NSArray widgetSizes;
+@property (nonatomic) BOOL useSystemPrimaryFocusColor;
+@property (nonatomic) UIColor focusHighlightColor;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithWindowScene:;
+- (void)_invalidateConnection;
+- (void)dealloc;
+- (id)focusHighlightColor;
+- (void)observeValueForKeyPath:ofObject:change:context:;
+- (void).cxx_destruct;
+- (void)invalidate;
+- (id)widgetSizes;
+- (void)setWidgetSizes:;
+- (void)hostFocusableItem:pressed:;
+- (void)hostSelectedFocusableItem:;
+- (void)hostFocusableItem:focused:;
+- (void)hostSetWidgetSizes:;
+- (void)hostSetUseSystemPrimaryFocusColor:;
+- (void)_windowDidCreateContext:;
+- (void)setFocusableViews:;
+- (void)setNeedsLargeSize:animationSettings:;
+- (void)setContentReady;
+- (id)_focusableItemForClientItem:;
+- (id)_clientFocusableItemForItem:;
+- (void)_invalidateCurrentFocusableItems;
+- (id)dashboardWindowServiceConnection;
+- (void)setDashboardWindowServiceConnection:;
+- (id)focusableItems;
+- (void)setFocusableItems:;
+- (BOOL)useSystemPrimaryFocusColor;
+- (void)setUseSystemPrimaryFocusColor:;
+@end

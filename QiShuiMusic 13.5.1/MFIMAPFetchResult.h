@@ -1,0 +1,35 @@
+@interface MFIMAPFetchResult : NSObject
+- (void)dealloc;
+- (unsigned int)uid;
+- (void)setUid:;
+- (unsigned int)encoding;
+- (void)setStartOffset:;
+- (void)setSection:;
+- (void)setMessageSize:;
+- (int)type;
+- (id)description;
+- (unsigned long long)messageSize;
+- (unsigned long long)startOffset;
+- (id)section;
+- (id)initWithType:;
+- (id)fetchData;
+- (unsigned long long)uniqueRemoteId;
+- (void)setUniqueRemoteId:;
+- (void)setMessageFlags:;
+- (unsigned long long)modSequenceNumber;
+- (void)setModSequenceNumber:;
+- (unsigned long long)messageFlags;
+- (id)envelope;
+- (void)setEnvelope:;
+- (id)internalDate;
+- (void)setInternalDate:;
+- (void)setFetchData:;
+- (id)bodyStructure;
+- (void)setBodyStructure:;
+- (id)flagsArray;
+- (void)setFlagsArray:;
+- (void)setCustomFlagsArray:;
+- (id)customFlagsArray;
+- (id)appleRemoteLinks;
+- (void)setAppleRemoteLinks:;
+@end

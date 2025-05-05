@@ -1,0 +1,34 @@
+@interface AWEIMShareRecommendDataManager : NSObject
+@property (nonatomic) NSArray recommendSortedInfos;
+@property (nonatomic) double lastSyncTimeStamp;
+@property (nonatomic) q limitCount;
+@property (nonatomic) NSObject<OS_dispatch_semaphore> lock;
+- (BOOL)findNewInConversation:withChat:;
+- (BOOL)enableRecommendSort;
+- (id)fansGroupShield:;
+- (id)filterRecommends:;
+- (id)getInsertConversationsWithCount:prefix:;
+- (id)getLatestConversations;
+- (id)getStoredSortedInfoModels;
+- (double)lastSyncTimeStamp;
+- (id)recommendSortedInfos;
+- (void)setLastSyncTimeStamp:;
+- (void)setRecommendSortedInfos:;
+- (id)sortedRecommendList:withRecents:filterNotFriendUser:shieldFansGroup:;
+- (id)sortedRecommendShareListWithRecents:limitCount:filterNotFriendUser:;
+- (id)sortedRecommendShareListWithRecents:limitCount:filterNotFriendUser:shouldFilterMsgBox:;
+- (id)sortedRecommendShareListWithRecents:limitCount:filterNotFriendUser:shouldFilterMsgBox:shieldFansGroup:;
+- (void)storeSortedInfoModels:;
+- (void)trackShareFriendShow:logPB:groupID:authorID:enterMethod:;
+- (id)transformChatToShareModel:;
+- (id)transformSingleToShareModel:;
+- (id)transformToShareModels:;
+- (void)updateSortedInfoWithJSONArray:;
+- (long long)limitCount;
+- (id)init;
+- (void)setLimitCount:;
+- (id)lock;
+- (void).cxx_destruct;
+- (void)setLock:;
++ (id)sharedInstance;
+@end

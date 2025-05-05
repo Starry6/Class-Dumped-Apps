@@ -1,0 +1,34 @@
+@interface HTSEventBuilder : NSObject
+@property (nonatomic) NSDictionary predefinedParams;
+@property (nonatomic) NSArray addedAttirbutes;
+- (void)addLayoutTypeAttributeFromRoom:;
+- (id)addedAttirbutes;
+- (void)addAttributesFromRoom:;
+- (void)addFunctionTypeAttributeFromRoom:;
+- (void)addLifeRoomAttributeFromRoom:;
+- (void)addMatrixAttributeFromRoom:;
+- (void)addPayWallRoomAttributeFromRoom:;
+- (void)addPlaymodeAttributeFromRoom:;
+- (void)addPredefinedParams:;
+- (void)addVIPPaidStreamAttributeFromRoom:;
+- (void)addVoiceModeAttributeFromRoom:;
+- (id)currentThemeName;
+- (id)eventBelong;
+- (id)eventModule;
+- (id)eventPage;
+- (void)ieslivesaas_addAttributesFromRoom:;
+- (id)layoutTypeWithRoom:;
+- (id)playmodesWithRoom:;
+- (id)predefinedParams;
+- (id)init;
+- (id)attribute;
+- (id)initWithParams:;
+- (id)eventType;
+- (id)build;
+- (void).cxx_destruct;
+- (id)addAttribute:;
+- (id)valueForAttribute:;
+- (id)addAttribute:value:;
+- (id)addAttribute:value:;
++ (id)builderWithParams:;
+@end

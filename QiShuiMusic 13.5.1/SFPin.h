@@ -1,0 +1,38 @@
+@interface SFPin : NSObject
+@property (nonatomic) SFLatLng location;
+@property (nonatomic) SFColor pinColor;
+@property (nonatomic) NSString label;
+@property (nonatomic) NSString resultID;
+@property (nonatomic) NSData mapsData;
+@property (nonatomic) NSInteger pinBehavior;
+@property (nonatomic) NSString pinText;
+@property (nonatomic) NSDictionary dictionaryRepresentation;
+@property (nonatomic) NSData jsonData;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setPinColor:;
+- (id)pinColor;
+- (id)initWithProtobuf:;
+- (void)setLabel:;
+- (id)initWithCoder:;
+- (id)jsonData;
+- (id)label;
+- (id)location;
+- (void)encodeWithCoder:;
+- (void)setLocation:;
+- (void).cxx_destruct;
+- (id)dictionaryRepresentation;
+- (id)copyWithZone:;
+- (id)mapsData;
+- (void)setMapsData:;
+- (id)pinText;
+- (void)setPinText:;
+- (int)pinBehavior;
+- (void)setPinBehavior:;
+- (id)resultID;
+- (void)setResultID:;
+- (BOOL)hasPinBehavior;
++ (BOOL)supportsSecureCoding;
+@end

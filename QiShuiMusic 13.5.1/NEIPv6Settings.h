@@ -1,0 +1,33 @@
+@interface NEIPv6Settings : NSObject
+@property (nonatomic) q configMethod;
+@property (nonatomic) NSString router;
+@property (nonatomic) NSArray addresses;
+@property (nonatomic) NSArray networkPrefixLengths;
+@property (nonatomic) NSArray includedRoutes;
+@property (nonatomic) NSArray excludedRoutes;
+- (BOOL)checkValidityAndCollectErrors:;
+- (id)initFromLegacyDictionary:;
+- (id)init;
+- (id)descriptionWithIndent:options:;
+- (id)copyLegacyDictionary;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (id)addresses;
+- (id)initWithConfigMethod:;
+- (BOOL)hasDefaultRoute;
+- (id)router;
+- (void)setRouter:;
+- (id)includedRoutes;
+- (void)setIncludedRoutes:;
+- (id)excludedRoutes;
+- (void)setExcludedRoutes:;
+- (long long)configMethod;
+- (void)setConfigMethod:;
+- (id)initWithAddresses:networkPrefixLengths:;
+- (id)networkPrefixLengths;
++ (BOOL)supportsSecureCoding;
++ (id)settingsWithAutomaticAddressing;
++ (id)settingsWithLinkLocalAddressing;
+@end

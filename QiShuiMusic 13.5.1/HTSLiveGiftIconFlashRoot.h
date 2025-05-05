@@ -1,0 +1,2 @@
+@interface HTSLiveGiftIconFlashRoot : GPBRootObject
+@end

@@ -1,0 +1,35 @@
+@interface AVMDLTaskSpec : NSObject
+@property (nonatomic) NSString key;
+@property (nonatomic) NSString rawKey;
+@property (nonatomic) NSArray urls;
+@property (nonatomic) NSString filePath;
+@property (nonatomic) NSString customHeader;
+@property (nonatomic) q taskType;
+@property (nonatomic) NSString extrInfo;
+@property (nonatomic) q urlExpiredTime;
+@property (nonatomic) q fileType;
+@property (nonatomic) q useOriginalUrl;
+- (id)extrInfo;
+- (id)initWithKey:rawKey:urls:;
+- (void)setExtrInfo:;
+- (void)setUrlExpiredTime:;
+- (void)setUseOriginalUrl:;
+- (long long)urlExpiredTime;
+- (long long)useOriginalUrl;
+- (id)filePath;
+- (id)init;
+- (id)urls;
+- (long long)taskType;
+- (id)key;
+- (void)setFilePath:;
+- (void)setFileType:;
+- (void)setUrls:;
+- (long long)fileType;
+- (void)setKey:;
+- (void).cxx_destruct;
+- (id)customHeader;
+- (void)setTaskType:;
+- (void)setCustomHeader:;
+- (void)setRawKey:;
+- (id)rawKey;
+@end

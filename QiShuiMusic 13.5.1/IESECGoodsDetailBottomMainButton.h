@@ -1,0 +1,35 @@
+@interface IESECGoodsDetailBottomMainButton : IESECBackgroundView
+@property (nonatomic) IESECBottomButtonElement bottomButtonModel;
+@property (nonatomic) UIStackView container;
+@property (nonatomic) UILabel mainTitleLabel;
+@property (nonatomic) UILabel subTitleLabel;
+@property (nonatomic) NSString pageIdentifier;
+@property (nonatomic) CALayer maskLayer;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)bottomButtonModel;
+- (void)clickAction;
+- (void)configButtonWithBottomButtonModel:pageIdentifier:;
+- (void)goodsDetailActivityDidUpdateCountdown:goodsDetailUID:;
+- (void)handleButtonAction;
+- (void)longPressGestureAction:;
+- (id)mainTitleLabel;
+- (void)setBottomButtonModel:;
+- (void)setMainTitleLabel:;
+- (void)setupAccessibilityWithBottomButtonModel:;
+- (void)setContainer:;
+- (void)dealloc;
+- (void)layoutSubviews;
+- (id)container;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (id)maskLayer;
+- (void)setupUI;
+- (id)subTitleLabel;
+- (void)setSubTitleLabel:;
+- (void)setMaskLayer:;
+- (id)pageIdentifier;
+- (void)setPageIdentifier:;
+@end

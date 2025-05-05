@@ -1,0 +1,2 @@
+@interface AVPlayerLooperInternal : NSObject
+@end

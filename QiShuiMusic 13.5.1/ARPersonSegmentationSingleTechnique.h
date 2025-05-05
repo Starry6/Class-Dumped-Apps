@@ -1,0 +1,2 @@
+@interface ARPersonSegmentationSingleTechnique : ARPersonSegmentationTechnique
+@end

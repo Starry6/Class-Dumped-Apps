@@ -1,0 +1,37 @@
+@interface HMDCaptureBacktraceManager : NSObject
+@property (nonatomic) BOOL isValid;
+@property (nonatomic) q startTime;
+@property (nonatomic) q finishTime;
+@property (nonatomic) NSMutableArray backtraces;
+@property (nonatomic) NSDictionary imageUUIDMap;
+@property (nonatomic) q backtraceThreshold;
+@property (nonatomic) q errorTime;
+@property (nonatomic) NSString sceneType;
+- (id)CaptureBacktracesReportData;
+- (long long)backtraceThreshold;
+- (void)dropRecord;
+- (long long)errorTime;
+- (void)finishRecord:withReportBlock:;
+- (id)getCaptureBacktraces;
+- (id)imageUUIDMap;
+- (void)preparImageUUIDMap;
+- (void)processRecord:;
+- (void)setBacktraceThreshold:;
+- (void)setErrorTime:;
+- (void)setImageUUIDMap:;
+- (id)init;
+- (id)backtraces;
+- (void)setStartTime:;
+- (void)setValid:;
+- (long long)startTime;
+- (void)setBacktraces:;
+- (BOOL)isValid;
+- (void).cxx_destruct;
+- (id)sceneType;
+- (void)setSceneType:;
+- (void)addBacktrace:;
+- (void)setFinishTime:;
+- (long long)finishTime;
+- (id)reportDictionary;
++ (id)fetchCurrenImageList;
+@end

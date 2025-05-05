@@ -1,0 +1,2 @@
+@interface IESLiveEffectUserEnterNodeProcessor : IESLiveUserEnterNodeProcessor
+@end

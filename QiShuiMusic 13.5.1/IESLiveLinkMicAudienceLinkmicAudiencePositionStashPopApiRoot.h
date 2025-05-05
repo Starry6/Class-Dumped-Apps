@@ -1,0 +1,2 @@
+@interface IESLiveLinkMicAudienceLinkmicAudiencePositionStashPopApiRoot : GPBRootObject
+@end

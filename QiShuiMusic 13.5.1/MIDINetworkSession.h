@@ -1,0 +1,31 @@
+@interface MIDINetworkSession : NSObject
+@property (nonatomic) BOOL enabled;
+@property (nonatomic) Q networkPort;
+@property (nonatomic) NSString networkName;
+@property (nonatomic) NSString localName;
+@property (nonatomic) Q connectionPolicy;
+- (id)connections;
+- (id)init;
+- (void)dealloc;
+- (id)localName;
+- (id)contacts;
+- (BOOL)removeConnection:;
+- (unsigned long long)connectionPolicy;
+- (BOOL)addContact:;
+- (void)setEnabled:;
+- (BOOL)removeContact:;
+- (BOOL)addConnection:;
+- (id)networkName;
+- (BOOL)isEnabled;
+- (void)setConnectionPolicy:;
+- (void)updateFromEntity;
+- (void)setStateToEntity;
+- (void)refreshBonjourName;
+- (unsigned long long)networkPort;
+- (BOOL)addOrRemoveConnection:add:;
+- (void)sessionChanged;
+- (void)contactsChanged;
+- (unsigned int)sourceEndpoint;
+- (unsigned int)destinationEndpoint;
++ (id)defaultSession;
+@end

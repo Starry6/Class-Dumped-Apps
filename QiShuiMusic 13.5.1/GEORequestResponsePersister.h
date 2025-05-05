@@ -1,0 +1,31 @@
+@interface GEORequestResponsePersister : NSObject
+- (void)dealloc;
+- (void).cxx_destruct;
+- (id)initWritable:;
+- (BOOL)_checkDbIsWriteable:;
+- (void)_reschedulePruner;
+- (void)_persistEvent:;
+- (void)persistRequestTask:url:request:;
+- (void)persistResponseTask:response:;
+- (void)persistResponseTask:error:;
+- (void)persistResponseTaskCanceled:;
+- (id)enumerateAllEntriesWithBlock:;
+- (id)enumerateEntriesInRange:withBlock:;
+- (id)enumerateEntriesOfType:withBlock:;
+- (id)enumerateEntriesOfType:inRange:withBlock:;
+- (id)findRequest:withBlock:;
+- (id)findResponse:withBlock:;
+- (unsigned long long)getTotalSize:;
+- (BOOL)runAllPruners:;
+- (BOOL)_runAllPruners:;
+- (BOOL)pruneEntriesOlderThan:error:;
+- (BOOL)pruneDBToDefaultAge:;
+- (BOOL)_pruneDBToDefaultAge:;
+- (BOOL)_pruneEntriesOlderThan:error:;
+- (BOOL)pruneDBToDefaultSize:;
+- (BOOL)_pruneDBToDefaultSize:;
+- (BOOL)pruneDBToSize:error:;
+- (BOOL)_pruneDBToSize:error:;
+- (unsigned int)restoreOrphanedEntries:;
+- (unsigned int)_restoreOrphanedEntries:;
+@end

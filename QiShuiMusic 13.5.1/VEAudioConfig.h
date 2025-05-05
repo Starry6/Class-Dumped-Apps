@@ -1,0 +1,33 @@
+@interface VEAudioConfig : NSObject
+@property (nonatomic) float p_originalRate;
+@property (nonatomic) Q assetType;
+@property (nonatomic) Q decodeMode;
+@property (nonatomic) BOOL disableTimeoutSkip;
+@property (nonatomic) IESMMVideoDataClipRange clipRange;
+@property (nonatomic) {AudioStreamBasicDescription=dIIIIIIII} asbd;
+@property (nonatomic) float normalRate;
+@property (nonatomic) NSArray audioFilterArray;
+@property (nonatomic) BOOL decoderSupportMonoAudio;
+- (id)audioFilterArray;
+- (id)clipRange;
+- (BOOL)decoderSupportMonoAudio;
+- (BOOL)disableTimeoutSkip;
+- (id)initWithSampleRateAndChannels:channels:;
+- (float)normalRate;
+- (float)p_originalRate;
+- (void)setAudioFilterArray:;
+- (void)setClipRange:;
+- (void)setDecoderSupportMonoAudio:;
+- (void)setDisableTimeoutSkip:;
+- (void)setNormalRate:;
+- (void)setP_originalRate:;
+- (unsigned long long)assetType;
+- (id)init;
+- (void)setAssetType:;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (id)asbd;
+- (void)setAsbd:;
+- (unsigned long long)decodeMode;
+- (void)setDecodeMode:;
+@end

@@ -1,0 +1,35 @@
+@interface RBSProcessMonitorConfiguration : NSObject
+@property (nonatomic) Q identifier;
+@property (nonatomic) NSArray predicates;
+@property (nonatomic) RBSProcessStateDescriptor stateDescriptor;
+@property (nonatomic) I serviceClass;
+@property (nonatomic) Q events;
+@property (nonatomic) @? updateHandler;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setServiceClass:;
+- (unsigned int)serviceClass;
+- (void)setPredicates:;
+- (id)predicates;
+- (id)init;
+- (id)initWithRBSXPCCoder:;
+- (void)encodeWithRBSXPCCoder:;
+- (id)stateDescriptor;
+- (unsigned long long)identifier;
+- (unsigned long long)hash;
+- (void)setPreventLaunchUpdateHandle:;
+- (id)debugDescription;
+- (void)setStateDescriptor:;
+- (id)updateHandler;
+- (BOOL)matchesProcess:;
+- (void)setEvents:;
+- (void)setUpdateHandler:;
+- (void).cxx_destruct;
+- (unsigned long long)events;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
++ (BOOL)supportsRBSXPCSecureCoding;
+@end

@@ -1,0 +1,37 @@
+@interface ISAMSBagShim : NSObject
+@property (nonatomic) SSBag bag;
+@property (nonatomic) ISURLBag URLBag;
+@property (nonatomic) q type;
+@property (nonatomic) BOOL expired;
+@property (nonatomic) NSDate expirationDate;
+@property (nonatomic) NSString profile;
+@property (nonatomic) NSString profileVersion;
+@property (nonatomic) AMSProcessInfo processInfo;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)URLBag;
+- (id)URLForKey:;
+- (BOOL)isExpired;
+- (id)initWithURLBag:;
+- (void)setURLBag:;
+- (id)initWithBag:;
+- (void)setType:;
+- (id)boolForKey:;
+- (id)stringForKey:;
+- (id)profile;
+- (id)_bagValueForKey:valueType:;
+- (void)setBag:;
+- (id)expirationDate;
+- (id)arrayForKey:;
+- (long long)type;
+- (void).cxx_destruct;
+- (BOOL)isLoaded;
+- (id)doubleForKey:;
+- (id)bag;
+- (id)profileVersion;
+- (void)createSnapshotWithCompletion:;
+- (id)integerForKey:;
+- (id)dictionaryForKey:;
+@end

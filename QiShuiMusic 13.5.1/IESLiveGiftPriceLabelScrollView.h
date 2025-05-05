@@ -1,0 +1,35 @@
+@interface IESLiveGiftPriceLabelScrollView : UIView
+@property (nonatomic) IESLiveGiftPriceLabelView displayView;
+@property (nonatomic) IESLiveGiftPriceLabelView disappearView;
+@property (nonatomic) q selectedIndex;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} leftFrame;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} displayFrame;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} rightFrame;
+@property (nonatomic) NSObject<OS_dispatch_semaphore> scrollViewSemaphore;
+@property (nonatomic) @? getGiftPriceBlock;
+- (void)setDisplayView:;
+- (void)_cancelAllAnimations;
+- (id)_obtainGiftPriceWithIndex:;
+- (id)disappearView;
+- (id)displayView;
+- (id)getGiftPriceBlock;
+- (void)p_prepareAnimationWithIndex:;
+- (void)p_showAnimationWithSelectedIndex:;
+- (void)p_showWithGiftPriceView:index:;
+- (id)scrollViewSemaphore;
+- (void)selectWithIndex:withAnimation:;
+- (void)setDisappearView:;
+- (void)setGetGiftPriceBlock:;
+- (void)setLeftFrame:;
+- (void)setRightFrame:;
+- (void)setScrollViewSemaphore:;
+- (long long)selectedIndex;
+- (id)displayFrame;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)setDisplayFrame:;
+- (void)setSelectedIndex:;
+- (id)leftFrame;
+- (id)rightFrame;
+- (void)setupUI;
+@end

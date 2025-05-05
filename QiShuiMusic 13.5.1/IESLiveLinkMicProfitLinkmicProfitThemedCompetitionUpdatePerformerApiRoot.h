@@ -1,0 +1,2 @@
+@interface IESLiveLinkMicProfitLinkmicProfitThemedCompetitionUpdatePerformerApiRoot : GPBRootObject
+@end

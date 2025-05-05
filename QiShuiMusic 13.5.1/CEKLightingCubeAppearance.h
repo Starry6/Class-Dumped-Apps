@@ -1,0 +1,33 @@
+@interface CEKLightingCubeAppearance : NSObject
+@property (nonatomic) ^{CGGradient=} background;
+@property (nonatomic) ^{CGColor=} topFill;
+@property (nonatomic) ^{CGGradient=} topGlow;
+@property (nonatomic) ^{CGGradient=} topMask;
+@property (nonatomic) ^{CGColor=} bottomFill;
+@property (nonatomic) ^{CGGradient=} bottomInnerGlow;
+@property (nonatomic) ^{CGGradient=} bottomOuterGlow;
+@property (nonatomic) ^{CGGradient=} bottomMask;
+@property (nonatomic) ^{CGColor=} verticalFillColor;
+@property (nonatomic) double verticalFillBackIntensity;
+@property (nonatomic) double verticalFillFrontIntensity;
+@property (nonatomic) ^{CGGradient=} topOver;
+@property (nonatomic) ^{CGColor=} stroke;
+- (id)background;
+- (void)dealloc;
+- (id)mutableCopyWithZone:;
+- (id)copyWithZone:;
+- (id)stroke;
+- (id)topMask;
+- (id)bottomMask;
+- (id)initWithStroke:;
+- (id)topFill;
+- (id)topGlow;
+- (id)bottomFill;
+- (id)bottomInnerGlow;
+- (id)bottomOuterGlow;
+- (id)verticalFillColor;
+- (double)verticalFillBackIntensity;
+- (double)verticalFillFrontIntensity;
+- (id)topOver;
++ (id)appearanceFrom:to:progress:;
+@end

@@ -1,0 +1,36 @@
+@interface MCDependencyReader : NSObject
+@property (nonatomic) NSObject<OS_dispatch_queue> memberQueue;
+@property (nonatomic) NSMutableDictionary memberQueueSystemDomainsDict;
+@property (nonatomic) NSMutableDictionary memberQueueUserDomainsDict;
+- (void)setMemberQueue:;
+- (void)invalidateCache;
+- (id)memberQueue;
+- (id)dependentsOfParent:inDomain:;
+- (id)memberQueueUserDomainsDict;
+- (id)init;
+- (id)parentsInSystemDomain:;
+- (void)memberQueueRereadDomainsDict;
+- (id)systemDomainsDict;
+- (id)userDomainsDict;
+- (id)dependentsOfParent:inSystemDomain:;
+- (void)memberQueueRereadUserDomainsDict;
+- (id)memberQueueSystemDomainsDict;
+- (void)setMemberQueueSystemDomainsDict:;
+- (id)memberQueueParentsInDomain:;
+- (void).cxx_destruct;
+- (id)memberQueueDependentsOfParent:inDomain:;
+- (id)parentsInUserDomain:;
+- (id)memberQueueParentsInSystemDomain:;
+- (void)memberQueueRereadSystemDomainsDict;
+- (id)_init;
+- (id)memberQueueDependentsOfParent:inSystemDomain:;
+- (id)memberQueueDependentsOfParent:inUserDomain:;
+- (void)setMemberQueueUserDomainsDict:;
+- (id)dependentsOfParent:inUserDomain:;
+- (id)parentsInDomain:;
+- (id)memberQueueParentsInUserDomain:;
++ (id)systemStoragePath;
++ (id)sharedReader;
++ (id)userStoragePath;
++ (void)setSystemStoragePath:userStoragePath:;
+@end

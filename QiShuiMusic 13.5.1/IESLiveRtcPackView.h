@@ -1,0 +1,2 @@
+@interface IESLiveRtcPackView : UIView
+@end

@@ -1,0 +1,2 @@
+@interface IESLiveSaaSPBIESLiveSaaSPBLinkMicSendEmojiRoot : GPBRootObject
+@end

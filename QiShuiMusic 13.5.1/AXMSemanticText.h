@@ -1,0 +1,32 @@
+@interface AXMSemanticText : NSObject
+@property (nonatomic) NSLocale locale;
+@property (nonatomic) NSString transformedSpeechText;
+@property (nonatomic) q tokenizedLength;
+@property (nonatomic) NSString preprocessedText;
+@property (nonatomic) BOOL isSemanticallyComplete;
+- (void)setLocale:;
+- (id)locale;
+- (id)textRange;
+- (void).cxx_destruct;
+- (id)substringWithRange:;
+- (id)initWithText:locale:;
+- (long long)tokenizedLength;
+- (id)preprocessedText;
+- (void)enumerateNLPTokens:;
+- (void)enumerateLexiconMarkers:;
+- (void)enumerateNumericTokens:;
+- (void)enumerateDataDetectors:;
+- (void)enumerateCustomPatterns:;
+- (void)enumerateSemanticErrors:;
+- (BOOL)isSemanticallyComplete;
+- (void)addNLPToken:withRange:;
+- (void)addDataDetector:withRange:;
+- (void)addCustomPattern:withRange:;
+- (void)addIsInLexionMarker:withRange:;
+- (void)addSemanticErrorWithRange:;
+- (void)addNumericToken:withRange:;
+- (id)makeCursor;
+- (id)transformedSpeechText;
+- (void)setTransformedSpeechText:;
+- (void)setTokenizedLength:;
+@end

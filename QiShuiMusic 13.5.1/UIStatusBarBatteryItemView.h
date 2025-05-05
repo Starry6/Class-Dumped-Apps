@@ -1,0 +1,34 @@
+@interface UIStatusBarBatteryItemView : UIStatusBarItemView
+@property (nonatomic) _UILegibilityImageSet cachedImageSet;
+@property (nonatomic) NSInteger cachedCapacity;
+@property (nonatomic) BOOL cachedImageHasAccessoryImage;
+@property (nonatomic) Q cachedBatteryStyle;
+@property (nonatomic) NSInteger cachedAXHUDCapacity;
+@property (nonatomic) Q cachedAXHUDStyle;
+@property (nonatomic) UIImage cachedAXHUDImage;
+- (id)accessibilityHUDRepresentation;
+- (double)legibilityStrength;
+- (id)contentsImage;
+- (void).cxx_destruct;
+- (id)_accessoryImage;
+- (BOOL)updateForNewData:actions:;
+- (double)extraRightPadding;
+- (id)_batteryOffsetWithBackground:;
+- (BOOL)_needsAccessoryImage;
+- (id)_contentsImage;
+- (void)_updateAccessoryImage;
+- (id)cachedImageSet;
+- (void)setCachedImageSet:;
+- (int)cachedCapacity;
+- (void)setCachedCapacity:;
+- (BOOL)cachedImageHasAccessoryImage;
+- (void)setCachedImageHasAccessoryImage:;
+- (unsigned long long)cachedBatteryStyle;
+- (void)setCachedBatteryStyle:;
+- (int)cachedAXHUDCapacity;
+- (void)setCachedAXHUDCapacity:;
+- (unsigned long long)cachedAXHUDStyle;
+- (void)setCachedAXHUDStyle:;
+- (id)cachedAXHUDImage;
+- (void)setCachedAXHUDImage:;
+@end

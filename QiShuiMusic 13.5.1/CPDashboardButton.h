@@ -1,0 +1,32 @@
+@interface CPDashboardButton : NSObject
+@property (nonatomic) @? handler;
+@property (nonatomic) CPImageSet imageSet;
+@property (nonatomic) <CPControlDelegate> delegate;
+@property (nonatomic) UIImage image;
+@property (nonatomic) NSArray titleVariants;
+@property (nonatomic) NSArray subtitleVariants;
+@property (nonatomic) NSUUID identifier;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setDelegate:;
+- (id)identifier;
+- (void)setHandler:;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (id)handler;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)description;
+- (id)_init;
+- (void)setIdentifier:;
+- (id)image;
+- (id)titleVariants;
+- (void)handlePrimaryAction;
+- (id)imageSet;
+- (void)setImageSet:;
+- (id)subtitleVariants;
+- (id)initWithTitleVariants:subtitleVariants:image:handler:;
++ (BOOL)supportsSecureCoding;
+@end

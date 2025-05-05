@@ -1,0 +1,34 @@
+@interface VCStreamIOAudioController : VCObject
+@property (nonatomic) VCAudioIOControllerClient runningClient;
+@property (nonatomic) NSDictionary reportingStats;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) <VCStreamSychronizationDelegate> synchronizationDelegate;
+@property (nonatomic) VCStreamOutput streamOutput;
+- (void)setSynchronizationDelegate:;
+- (void)dealloc;
+- (id)synchronizationDelegate;
+- (void)invalidate;
+- (void)didUpdateBasebandCodec:;
+- (void)startClient:;
+- (void)stopClient:;
+- (void)updateClient:direction:;
+- (id)reportingStats;
+- (id)streamOutput;
+- (void)setStreamOutput:;
+- (id)initWithStreamInputID:streamToken:networkClockID:;
+- (BOOL)_packetThreadStartWithClientFormat:;
+- (void)_packetThreadStop;
+- (BOOL)startInputForClient:error:;
+- (BOOL)startOutputForClient:error:;
+- (BOOL)setupAndStartOutputClientThread;
+- (void)cleanupOutputThread;
+- (void)cleanupStreamOutput;
+- (BOOL)dispatchedStartClient:error:;
+- (void)dispatchedStopClient;
+- (BOOL)canSetDirection:;
+- (id)runningClient;
+- (void)setRunningClient:;
+@end

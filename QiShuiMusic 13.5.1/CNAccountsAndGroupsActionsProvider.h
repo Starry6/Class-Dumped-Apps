@@ -1,0 +1,33 @@
+@interface CNAccountsAndGroupsActionsProvider : NSObject
+@property (nonatomic) CNAccountsAndGroupsDataSource dataSource;
+@property (nonatomic) CNUIGroupsAndContainersSaveManager groupsAndContainersSaveManager;
+@property (nonatomic) NSMutableArray issuedSaveRequestIdentifiers;
+@property (nonatomic) <CNAccountsAndGroupsActionsProviderDelegate> delegate;
+- (void)setDataSource:;
+- (id)actionsForItem:cell:;
+- (void)setGroupsAndContainersSaveManager:;
+- (void)setIssuedSaveRequestIdentifiers:;
+- (BOOL)authorizedDeleteGroupForItem:completionHandler:;
+- (void)setDelegate:;
+- (id)contextMenuConfigurationForItem:cell:atIndexPath:;
+- (BOOL)emailGroupForItem:;
+- (void)updateItem:withNewName:;
+- (id)initWithDataSource:saveManager:;
+- (id)trailingActionsForItem:cell:isCollectionViewEditing:;
+- (BOOL)isAuthorizedToEditItem:;
+- (BOOL)exportGroupForItem:sourceView:;
+- (id)groupsAndContainersSaveManager;
+- (BOOL)authorizedEditGroupNameForCell:;
+- (void)deleteGroupForItem:completionHandler:;
+- (BOOL)addGroupToStoreForGroupItem:withName:;
+- (void)createGroupActionForContainerItem:isCollectionViewEditing:;
+- (id)issuedSaveRequestIdentifiers;
+- (id)dataSource;
+- (id)delegate;
+- (id)leadingActionsForItem:cell:;
+- (void).cxx_destruct;
+- (void)authorizedCreateGroupActionForContainerItem:;
+- (BOOL)messageGroupForItem:;
+- (BOOL)editGroupNameActionForItem:cell:;
+- (BOOL)deleteGroupActionForItem:sourceView:completionHandler:;
+@end

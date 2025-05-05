@@ -1,0 +1,2 @@
+@interface IMErrorMessagePartChatItem : IMAttachmentMessagePartChatItem
+@end

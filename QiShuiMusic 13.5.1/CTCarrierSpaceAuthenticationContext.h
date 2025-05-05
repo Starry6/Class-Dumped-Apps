@@ -1,0 +1,33 @@
+@interface CTCarrierSpaceAuthenticationContext : NSObject
+@property (nonatomic) NSString clientID;
+@property (nonatomic) NSString authURL;
+@property (nonatomic) NSString tokenURL;
+@property (nonatomic) NSString carrierName;
+@property (nonatomic) NSString iccid;
+@property (nonatomic) NSString scope;
+@property (nonatomic) BOOL supportsState;
+@property (nonatomic) NSString sourceApplicationAccountIdentifier;
+- (id)init;
+- (void)setScope:;
+- (id)scope;
+- (void)setCarrierName:;
+- (id)tokenURL;
+- (void)setClientID:;
+- (id)initWithCoder:;
+- (void)setTokenURL:;
+- (id)authURL;
+- (void)encodeWithCoder:;
+- (id)carrierName;
+- (void).cxx_destruct;
+- (id)description;
+- (id)clientID;
+- (BOOL)isEqual:;
+- (void)setAuthURL:;
+- (id)iccid;
+- (void)setIccid:;
+- (BOOL)supportsState;
+- (void)setSupportsState:;
+- (id)sourceApplicationAccountIdentifier;
+- (void)setSourceApplicationAccountIdentifier:;
++ (BOOL)supportsSecureCoding;
+@end

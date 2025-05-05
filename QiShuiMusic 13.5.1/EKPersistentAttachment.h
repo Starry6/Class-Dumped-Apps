@@ -1,0 +1,37 @@
+@interface EKPersistentAttachment : EKPersistentObject
+- (id)fileSize;
+- (id)URLString;
+- (id)externalID;
+- (void)setUUID:;
+- (void)setExternalID:;
+- (id)externalModificationTag;
+- (void)setFileSize:;
+- (int)entityType;
+- (void)setExternalModificationTag:;
+- (id)description;
+- (void)setFlags:;
+- (int)flags;
+- (id)UUID;
+- (id)fileFormat;
+- (id)copyWithZone:;
+- (void)setURLString:;
+- (void)setFileFormat:;
+- (id)fileNameRaw;
+- (void)setFileNameRaw:;
+- (id)localRelativePath;
+- (void)setLocalRelativePath:;
+- (id)securityScopedLocalURLWrapper;
+- (void)setSecurityScopedLocalURLWrapper:;
+- (id)securityScopedLocalURLForArchivedDataWrapper;
+- (void)setSecurityScopedLocalURLForArchivedDataWrapper:;
+- (id)XPropertiesData;
+- (void)setXPropertiesData:;
+- (id)securityScopedURLWrapperForPendingFileCopy;
+- (void)setSecurityScopedURLWrapperForPendingFileCopy:;
+- (BOOL)shouldSetQuarantineAttributesOnCopiedFile;
+- (void)setShouldSetQuarantineAttributesOnCopiedFile:;
++ (id)propertyKeyForUniqueIdentifier;
++ (id)relations;
++ (Class)meltedClass;
++ (id)propertiesToUnloadOnCommit;
+@end

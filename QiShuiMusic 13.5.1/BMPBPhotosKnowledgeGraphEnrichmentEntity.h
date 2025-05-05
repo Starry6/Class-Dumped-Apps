@@ -1,0 +1,34 @@
+@interface BMPBPhotosKnowledgeGraphEnrichmentEntity : PBCodable
+@property (nonatomic) BOOL hasName;
+@property (nonatomic) NSString name;
+@property (nonatomic) BOOL hasScore;
+@property (nonatomic) double score;
+@property (nonatomic) BOOL hasLanguage;
+@property (nonatomic) NSString language;
+@property (nonatomic) BOOL hasCategory;
+@property (nonatomic) I category;
+- (void)setName:;
+- (void)setLanguage:;
+- (double)score;
+- (id)language;
+- (BOOL)hasName;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void)setCategory:;
+- (void)setScore:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (BOOL)hasScore;
+- (id)description;
+- (id)name;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (BOOL)hasCategory;
+- (void)setHasScore:;
+- (unsigned int)category;
+- (id)copyWithZone:;
+- (void)setHasCategory:;
+- (BOOL)hasLanguage;
+@end

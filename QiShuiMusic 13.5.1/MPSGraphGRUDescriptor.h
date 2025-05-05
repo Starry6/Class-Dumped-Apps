@@ -1,0 +1,31 @@
+@interface MPSGraphGRUDescriptor : NSObject
+@property (nonatomic) BOOL reverse;
+@property (nonatomic) BOOL bidirectional;
+@property (nonatomic) BOOL training;
+@property (nonatomic) BOOL resetGateFirst;
+@property (nonatomic) BOOL resetAfter;
+@property (nonatomic) BOOL flipZ;
+@property (nonatomic) Q updateGateActivation;
+@property (nonatomic) Q resetGateActivation;
+@property (nonatomic) Q outputGateActivation;
+- (BOOL)reverse;
+- (BOOL)bidirectional;
+- (id)copyWithZone:;
+- (void)setReverse:;
+- (BOOL)training;
+- (void)setTraining:;
+- (void)setBidirectional:;
+- (unsigned long long)outputGateActivation;
+- (void)setOutputGateActivation:;
+- (unsigned long long)resetGateActivation;
+- (void)setResetGateActivation:;
+- (unsigned long long)updateGateActivation;
+- (void)setUpdateGateActivation:;
+- (BOOL)resetAfter;
+- (void)setResetAfter:;
+- (BOOL)resetGateFirst;
+- (void)setResetGateFirst:;
+- (BOOL)flipZ;
+- (void)setFlipZ:;
++ (id)descriptor;
+@end

@@ -1,0 +1,2 @@
+@interface VNDetectHumanBodyPoseRequestConfiguration : VNImageBasedRequestConfiguration
+@end

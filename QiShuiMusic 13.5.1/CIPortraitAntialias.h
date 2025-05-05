@@ -1,0 +1,31 @@
+@interface CIPortraitAntialias : CIFilter
+@property (nonatomic) CIImage inputImage;
+@property (nonatomic) NSNumber inputMaxBlurInPixels;
+@property (nonatomic) NSNumber inputAntiAliasRadius;
+@property (nonatomic) NSNumber inputLumaNoiseAmpl;
+@property (nonatomic) NSNumber inputLumaNoiseModelCoeff;
+@property (nonatomic) NSNumber inputScale;
+@property (nonatomic) CIVector inputRect;
+@property (nonatomic) CIVector inputSensorSize;
+- (id)inputScale;
+- (void)setInputScale:;
+- (id)inputImage;
+- (void)setInputImage:;
+- (id)outputImage;
+- (id)inputLumaNoiseAmpl;
+- (void)setInputLumaNoiseAmpl:;
+- (id)inputLumaNoiseModelCoeff;
+- (void)setInputLumaNoiseModelCoeff:;
+- (id)_kernel:withAddedNoise:;
+- (id)_noiseGeneratorKernel;
+- (id)noiseColorKernel;
+- (id)outputImage:horizontal:;
+- (id)inputMaxBlurInPixels;
+- (void)setInputMaxBlurInPixels:;
+- (id)inputAntiAliasRadius;
+- (void)setInputAntiAliasRadius:;
+- (id)inputRect;
+- (void)setInputRect:;
+- (id)inputSensorSize;
+- (void)setInputSensorSize:;
+@end

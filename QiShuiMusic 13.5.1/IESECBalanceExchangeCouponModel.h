@@ -1,0 +1,30 @@
+@interface IESECBalanceExchangeCouponModel : MTLModel
+@property (nonatomic) NSString schema;
+@property (nonatomic) IESECURLModel icon;
+@property (nonatomic) NSArray backgroundColor;
+@property (nonatomic) IESECBalanceExchangeCouponDescriptionModel subDescription;
+@property (nonatomic) IESECBalanceExchangeCouponDescriptionModel mainDescription;
+@property (nonatomic) IESECBalanceExchangeCouponDescriptionModel buttonDescription;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)buttonDescription;
+- (void)setButtonDescription:;
+- (void)setSubDescription:;
+- (id)schema;
+- (void)setBackgroundColor:;
+- (id)backgroundColor;
+- (id)icon;
+- (void)setSchema:;
+- (void)setIcon:;
+- (void).cxx_destruct;
+- (id)subDescription;
+- (id)mainDescription;
+- (void)setMainDescription:;
++ (id)buttonDescriptionJSONTransformer;
++ (id)iconJSONTransformer;
++ (id)mainDescriptionJSONTransformer;
++ (id)subDescriptionJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

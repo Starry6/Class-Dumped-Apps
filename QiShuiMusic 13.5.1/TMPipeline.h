@@ -1,0 +1,34 @@
+@interface TMPipeline : NSObject
+@property (nonatomic) Q type;
+@property (nonatomic) NSMutableArray systems;
+@property (nonatomic) NSMutableDictionary systemMap;
+@property (nonatomic) NSMutableDictionary missParentSystemMap;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)addSystem:parent:;
+- (void)addSystem:parent:index:;
+- (BOOL)hasSystem:;
+- (id)missParentSystemMap;
+- (BOOL)postInvoke:;
+- (BOOL)preInvoke:;
+- (void)removeSystem:;
+- (void)replaceSystem:with:;
+- (void)setMissParentSystemMap:;
+- (void)setSystemMap:;
+- (id)systemMap;
+- (void)systemPostInvoke:entity:;
+- (void)systemPreInvoke:entity:;
+- (void)trackPipelineEvent:;
+- (void)setType:;
+- (unsigned long long)type;
+- (void).cxx_destruct;
+- (id)name;
+- (id)systems;
+- (void)setSystems:;
+- (void)addSystem:;
++ (id)__pipelines;
++ (id)allPipelines;
++ (id)pipelineForType:;
+@end

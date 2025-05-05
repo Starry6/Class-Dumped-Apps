@@ -1,0 +1,32 @@
+@interface AVVCSessionFactory : NSObject
+@property (nonatomic) NSObject<OS_dispatch_queue> workQueue;
+@property (nonatomic) NSMutableDictionary sessionManagerMap;
+@property (nonatomic) AVVCSessionManager primarySessionManager;
+@property (nonatomic) @? sessionWasCreatedBlock;
+@property (nonatomic) @? sessionWillBeDestroyedBlock;
+- (id)init;
+- (void)setWorkQueue:;
+- (id)workQueue;
+- (void).cxx_destruct;
+- (void)_wqCreateAuxSessionAndManagerForDeviceUID:clientType:session:manager:error:;
+- (id)_wqCreatePrimarySessionManagerIfNeeded:clientType:error:;
+- (void)_wqSessionAndManagerForContext:clientType:session:manager:error:;
+- (void)sessionForContext:completion:;
+- (id)sessionForContext:error:;
+- (void)sessionForContext:clientType:completion:;
+- (id)sessionForContext:clientType:error:;
+- (void)sessionManagerForContext:clientType:completion:;
+- (id)sessionManagerForContext:clientType:error:;
+- (void)cleanupContext:;
+- (id)auxSessionManagers;
+- (void)releasePrimarySessionManager;
+- (id)sessionManagerMap;
+- (void)setSessionManagerMap:;
+- (id)primarySessionManager;
+- (void)setPrimarySessionManager:;
+- (id)sessionWasCreatedBlock;
+- (void)setSessionWasCreatedBlock:;
+- (id)sessionWillBeDestroyedBlock;
+- (void)setSessionWillBeDestroyedBlock:;
++ (id)sharedInstance;
+@end

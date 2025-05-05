@@ -1,0 +1,30 @@
+@interface FeedItem : IESLivePBBaseMessage
+@property (nonatomic) HTSLiveFeedbackCard liveFeedbackCard;
+@property (nonatomic) q type;
+@property (nonatomic) NSString rid;
+@property (nonatomic) HTSLiveRoom data_p;
+@property (nonatomic) BOOL hasData_p;
+@property (nonatomic) NSMutableArray tagsArray;
+@property (nonatomic) Q tagsArray_Count;
+@property (nonatomic) NSString ad;
+@property (nonatomic) Banner banner;
+@property (nonatomic) BOOL hasBanner;
+@property (nonatomic) RankRoundBanner rankRoundBanner;
+@property (nonatomic) BOOL hasRankRoundBanner;
+@property (nonatomic) BOOL isRecommendCard;
+@property (nonatomic) ScheduledLive scheduledLive;
+@property (nonatomic) BOOL hasScheduledLive;
+@property (nonatomic) BOOL isPseudoLiving;
+@property (nonatomic) NSString liveReason;
+@property (nonatomic) Placeholder placeholder;
+@property (nonatomic) BOOL hasPlaceholder;
+@property (nonatomic) ScheduledItem userLiveRecord;
+@property (nonatomic) BOOL hasUserLiveRecord;
+@property (nonatomic) NSString liveRecommendInfo;
+@property (nonatomic) NSInteger cameraType;
+@property (nonatomic) CouponInfo couponInfo;
+@property (nonatomic) BOOL hasCouponInfo;
+- (id)liveFeedbackCard;
+- (void)setLiveFeedbackCard:;
++ (id)descriptor;
+@end

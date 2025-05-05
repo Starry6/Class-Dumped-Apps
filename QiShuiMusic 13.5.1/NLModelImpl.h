@@ -1,0 +1,32 @@
+@interface NLModelImpl : NSObject
+@property (nonatomic) NLModelConfiguration configuration;
+@property (nonatomic) Q systemVersion;
+@property (nonatomic) NSDictionary labelMap;
+@property (nonatomic) NSDictionary vocabularyMap;
+@property (nonatomic) NSDictionary documentFrequencyMap;
+@property (nonatomic) NSData customEmbeddingData;
+@property (nonatomic) Q numberOfTrainingInstances;
+@property (nonatomic) NSDictionary trainingInfo;
+@property (nonatomic) NLGazetteer gazetteer;
+@property (nonatomic) NLEmbedding embedding;
+@property (nonatomic) NSData embeddingData;
+- (id)modelData;
+- (id)configuration;
+- (unsigned long long)systemVersion;
+- (id)labelMap;
+- (id)initWithModelData:configuration:labelMap:vocabularyMap:documentFrequencyMap:customEmbeddingData:trainingInfo:error:;
+- (id)initWithModelTrainer:error:;
+- (id)predictedLabelForString:;
+- (id)predictedLabelsForTokens:;
+- (id)gazetteer;
+- (id)vocabularyMap;
+- (id)documentFrequencyMap;
+- (id)embedding;
+- (id)embeddingData;
+- (id)predictedLabelArraysForTokenArrays:;
+- (id)predictedLabelHypothesesForString:maximumCount:;
+- (id)predictedLabelHypothesesForTokens:maximumCount:;
+- (id)customEmbeddingData;
+- (unsigned long long)numberOfTrainingInstances;
+- (id)trainingInfo;
+@end

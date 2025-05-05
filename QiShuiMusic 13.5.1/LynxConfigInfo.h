@@ -1,0 +1,37 @@
+@interface LynxConfigInfo : NSObject
+@property (nonatomic) NSString pageVersion;
+@property (nonatomic) NSString pageType;
+@property (nonatomic) NSString cliVersion;
+@property (nonatomic) NSString customData;
+@property (nonatomic) NSString templateUrl;
+@property (nonatomic) NSString targetSdkVersion;
+@property (nonatomic) NSString lepusVersion;
+@property (nonatomic) q threadStrategyForRendering;
+@property (nonatomic) BOOL enableLepusNG;
+@property (nonatomic) BOOL enableCanvas;
+@property (nonatomic) NSString radonMode;
+@property (nonatomic) NSString reactVersion;
+@property (nonatomic) NSSet registeredComponent;
+@property (nonatomic) NSData json;
+@property (nonatomic) BOOL cssAlignWithLegacyW3c;
+@property (nonatomic) BOOL enableCSSParser;
+- (BOOL)enableCSSParser;
+- (id)cliVersion;
+- (BOOL)cssAlignWithLegacyW3c;
+- (BOOL)enableCanvas;
+- (BOOL)enableLepusNG;
+- (id)lepusVersion;
+- (id)lnxThreadStrategyForRenderToString:;
+- (id)pageVersion;
+- (id)radonMode;
+- (id)reactVersion;
+- (id)registeredComponent;
+- (id)targetSdkVersion;
+- (long long)threadStrategyForRendering;
+- (id)json;
+- (id)initWithBuilder:;
+- (void).cxx_destruct;
+- (id)pageType;
+- (id)customData;
+- (id)templateUrl;
+@end

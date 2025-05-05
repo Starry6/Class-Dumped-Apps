@@ -1,0 +1,35 @@
+@interface PLPublishCloudSharedAssetsJob : PLCloudSharingJob
+@property (nonatomic) NSString publishAlbumCloudGUID;
+@property (nonatomic) NSArray originalAssetUUIDs;
+@property (nonatomic) NSArray stillImageOnlyAssetUUIDs;
+@property (nonatomic) NSDictionary customExportsInfo;
+@property (nonatomic) NSDictionary trimmedVideoPathInfo;
+@property (nonatomic) BOOL isNewAlbum;
+@property (nonatomic) NSString batchCommentText;
+- (id)initFromXPCObject:libraryServicesManager:;
+- (void)run;
+- (long long)daemonOperation;
+- (void)runDaemonSide;
+- (void).cxx_destruct;
+- (id)description;
+- (void)encodeToXPCObject:;
+- (BOOL)shouldArchiveXPCToDisk;
+- (void)executeDaemonOperation;
+- (BOOL)retrieveURLsFromAssetWithUUID:withExportedFileURL:primaryURL:videoComplementURL:;
+- (id)publishAlbumCloudGUID;
+- (void)setPublishAlbumCloudGUID:;
+- (id)originalAssetUUIDs;
+- (void)setOriginalAssetUUIDs:;
+- (id)stillImageOnlyAssetUUIDs;
+- (void)setStillImageOnlyAssetUUIDs:;
+- (id)customExportsInfo;
+- (void)setCustomExportsInfo:;
+- (id)trimmedVideoPathInfo;
+- (void)setTrimmedVideoPathInfo:;
+- (BOOL)isNewAlbum;
+- (void)setIsNewAlbum:;
+- (id)batchCommentText;
+- (void)setBatchCommentText:;
++ (void)publishBatchOfOriginalAssetUUIDs:toSharedAlbum:withAssetsSharingInfos:customExportsInfo:trimmedVideoPathInfo:isNewAlbum:batchCommentText:;
++ (id)videoComplementURLForSharingFromAsset:;
+@end

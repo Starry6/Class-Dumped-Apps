@@ -1,0 +1,32 @@
+@interface SSMetricsClickEvent : SSMetricsBaseEvent
+@property (nonatomic) @ actionDetails;
+@property (nonatomic) NSString actionType;
+@property (nonatomic) @ impressions;
+@property (nonatomic) NSString locationDescription;
+@property (nonatomic) NSNumber positionX;
+@property (nonatomic) NSNumber positionY;
+@property (nonatomic) NSString targetIdentifier;
+@property (nonatomic) NSString targetType;
+@property (nonatomic) NSString targetURL;
+- (id)impressions;
+- (id)init;
+- (id)targetIdentifier;
+- (id)actionType;
+- (void)setActionType:;
+- (void)setImpressions:;
+- (void)setTargetIdentifier:;
+- (void)setActionDetails:;
+- (id)targetType;
+- (void)setTargetType:;
+- (id)actionDetails;
+- (id)description;
+- (id)targetURL;
+- (id)locationDescription;
+- (id)positionX;
+- (id)positionY;
+- (void)setLocationDescription:;
+- (void)setLocationWithEventLocations:;
+- (void)setPositionX:;
+- (void)setPositionY:;
+- (void)setTargetURL:;
+@end

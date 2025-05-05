@@ -1,0 +1,2 @@
+@interface IESLiveInnerPbRoomDecorationSetApiRoot : GPBRootObject
+@end

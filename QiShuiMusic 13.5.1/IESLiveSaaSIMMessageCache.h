@@ -1,0 +1,30 @@
+@interface IESLiveSaaSIMMessageCache : NSObject
+@property (nonatomic) NSMutableArray delayMessageList;
+@property (nonatomic) NSMutableArray scheduleMessageList;
+@property (nonatomic) NSMutableArray discardableMessageList;
+@property (nonatomic) q maxDiscardableCacheSize;
+@property (nonatomic) q delaySyncThreshold;
+@property (nonatomic) q liveStreamDelayTime;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)addMessage:withType:;
+- (id)delayMessageList;
+- (long long)delaySyncThreshold;
+- (id)discardableMessageList;
+- (id)getMessages:withCount:;
+- (id)getMessages:withTime:;
+- (long long)liveStreamDelayTime;
+- (long long)maxDiscardableCacheSize;
+- (void)p_calculateAndSetDelayDispatchTime:;
+- (id)scheduleMessageList;
+- (void)setDelayMessageList:;
+- (void)setDelaySyncThreshold:;
+- (void)setDiscardableMessageList:;
+- (void)setLiveStreamDelayTime:;
+- (void)setMaxDiscardableCacheSize:;
+- (void)setScheduleMessageList:;
+- (id)init;
+- (void).cxx_destruct;
+@end

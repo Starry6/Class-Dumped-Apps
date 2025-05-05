@@ -1,0 +1,31 @@
+@interface CKMarkAssetBrokenOperationInfo : CKDatabaseOperationInfo
+@property (nonatomic) CKUploadRequestConfiguration uploadRequestConfiguration;
+@property (nonatomic) CKRecordID recordID;
+@property (nonatomic) NSString field;
+@property (nonatomic) q listIndex;
+@property (nonatomic) BOOL touchRepairZone;
+@property (nonatomic) BOOL bypassPCSEncryptionForTouchRepairZone;
+@property (nonatomic) BOOL simulateCorruptAsset;
+@property (nonatomic) BOOL writeRepairRecord;
+- (id)field;
+- (id)init;
+- (id)initWithCoder:;
+- (void)setRecordID:;
+- (id)uploadRequestConfiguration;
+- (void)setField:;
+- (void)setUploadRequestConfiguration:;
+- (void)encodeWithCoder:;
+- (id)recordID;
+- (void).cxx_destruct;
+- (void)setListIndex:;
+- (long long)listIndex;
+- (BOOL)touchRepairZone;
+- (void)setTouchRepairZone:;
+- (BOOL)bypassPCSEncryptionForTouchRepairZone;
+- (void)setBypassPCSEncryptionForTouchRepairZone:;
+- (BOOL)simulateCorruptAsset;
+- (void)setSimulateCorruptAsset:;
+- (BOOL)writeRepairRecord;
+- (void)setWriteRepairRecord:;
++ (BOOL)supportsSecureCoding;
+@end

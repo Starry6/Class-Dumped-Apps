@@ -1,0 +1,34 @@
+@interface TTDownloadSliceForegroundTask : TTDownloadSliceTask
+@property (nonatomic) TTHttpTask task;
+@property (nonatomic) BOOL isRestartImmediately;
+@property (nonatomic) NSString urlKey;
+@property (nonatomic) NSString secondUrl;
+@property (nonatomic) NSString sliceStorageDir;
+@property (nonatomic) BOOL isRangeDownloadCompleted;
+@property (nonatomic) @? startTaskDelayHandle;
+- (id)sliceStorageDir;
+- (void)clearReferenceCount;
+- (void)decreseRetryTimesAtomic;
+- (id)initWhithSliceConfig:downloadTask:;
+- (BOOL)isRangeDownloadCompleted;
+- (BOOL)isRestartImmediately;
+- (id)secondUrl;
+- (void)setIsRangeDownloadCompleted:;
+- (void)setIsRestartImmediately:;
+- (id)setRangeAndMergeUserHeader:endByte:;
+- (void)setRestartImmediately;
+- (void)setSecondUrl:;
+- (void)setSliceStorageDir:;
+- (void)setStartTaskDelayHandle:;
+- (BOOL)setThrottleNetSpeed:;
+- (id)startTaskDelayHandle;
+- (BOOL)updateSubSliceInfoByRealFileSize;
+- (void)cancel;
+- (void)dealloc;
+- (void)start;
+- (id)task;
+- (void)setTask:;
+- (void).cxx_destruct;
+- (id)urlKey;
+- (void)setUrlKey:;
+@end

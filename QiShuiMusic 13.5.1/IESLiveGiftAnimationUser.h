@@ -1,0 +1,36 @@
+@interface IESLiveGiftAnimationUser : NSObject
+@property (nonatomic) NSString userID;
+@property (nonatomic) NSString secUserID;
+@property (nonatomic) NSString webcastUid;
+@property (nonatomic) NSString userName;
+@property (nonatomic) NSString desensitizedUserName;
+@property (nonatomic) NSString userAvater;
+@property (nonatomic) NSString userHonorUrl;
+@property (nonatomic) NSString imIconLevelUrl;
+@property (nonatomic) NSString borderUrl;
+@property (nonatomic) NSNumber honorLevel;
+@property (nonatomic) NSString displayID;
+- (id)borderUrl;
+- (id)desensitizedUserName;
+- (id)honorLevel;
+- (id)imIconLevelUrl;
+- (id)secUserID;
+- (void)setBorderUrl:;
+- (void)setDesensitizedUserName:;
+- (void)setHonorLevel:;
+- (void)setImIconLevelUrl:;
+- (void)setSecUserID:;
+- (void)setUserAvater:;
+- (void)setUserHonorUrl:;
+- (void)setWebcastUid:;
+- (id)userAvater;
+- (id)userHonorUrl;
+- (id)webcastUid;
+- (id)displayID;
+- (id)userID;
+- (id)userName;
+- (void)setDisplayID:;
+- (void)setUserName:;
+- (void).cxx_destruct;
+- (void)setUserID:;
+@end

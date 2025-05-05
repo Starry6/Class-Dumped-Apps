@@ -1,0 +1,2 @@
+@interface IESLiveInnerPbRoomAudiencePingApiRoot : GPBRootObject
+@end

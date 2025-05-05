@@ -1,0 +1,35 @@
+@interface VEFFmpegReaderUnit : NSObject
+@property (nonatomic) NSError error;
+@property (nonatomic) VEVideoConfig configData;
+@property (nonatomic) VEffmpegReader ffmepgeReader;
+@property (nonatomic) <VEVideoProcessDelegate> videoDownstream;
+@property (nonatomic) r^{opaqueCMFormatDescription=} vtDesc;
+@property (nonatomic) NSInteger maxRefFrames;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (double)getAvgFrameRate;
+- (id)videoDownstream;
+- (void)cancelReader;
+- (id)configData;
+- (id)ffmepgeReader;
+- (id)getAllIFrameTimeStamp;
+- (long long)getNeighborKeyTimestamp:flags:;
+- (id)getReaderError;
+- (int)maxRefFrames;
+- (BOOL)processSampleData:;
+- (void)seektoTime:;
+- (void)setConfigData:;
+- (void)setFfmepgeReader:;
+- (void)setVideoDownstream:;
+- (id)vtDesc;
+- (id)init;
+- (void)dealloc;
+- (BOOL)setConfig:;
+- (void)setError:;
+- (id)error;
+- (void).cxx_destruct;
+- (BOOL)startReader;
+- (void)stopReader;
+@end

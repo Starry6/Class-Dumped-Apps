@@ -1,0 +1,38 @@
+@interface RUICustomLinkTableViewCell : RemoteUITableViewCell
+@property (nonatomic) UILabel customLinkTextLabelInternal;
+@property (nonatomic) UILabel customLinkDetailTextLabelInternal;
+@property (nonatomic) UILabel customLinkSubLabelInternal;
+@property (nonatomic) UIImageView customImageViewInternal;
+@property (nonatomic) UIStackView stackView;
+@property (nonatomic) UIStackView innerStackView;
+@property (nonatomic) UILabel customLinkTextLabel;
+@property (nonatomic) UILabel customLinkDetailTextLabel;
+@property (nonatomic) UILabel customLinkSubLabel;
+@property (nonatomic) UIImageView customLinkImageView;
+- (void)setStackView:;
+- (void)layoutSubviews;
+- (id)stackView;
+- (void).cxx_destruct;
+- (id)innerStackView;
+- (void)setInnerStackView:;
+- (void)_detailLinkPressed;
+- (void)addDetailLinkButton:;
+- (void)setDetailLinkText:handler:;
+- (id)customLinkTextLabel;
+- (id)customLinkDetailTextLabel;
+- (id)customLinkSubLabel;
+- (id)customLinkImageView;
+- (id)_textLabelInternal;
+- (id)_detailTextLabelInternal;
+- (id)_subLabelInternal;
+- (id)_imageViewInternal;
+- (void)_initializeViews;
+- (id)customLinkTextLabelInternal;
+- (void)setCustomLinkTextLabelInternal:;
+- (id)customLinkDetailTextLabelInternal;
+- (void)setCustomLinkDetailTextLabelInternal:;
+- (id)customLinkSubLabelInternal;
+- (void)setCustomLinkSubLabelInternal:;
+- (id)customImageViewInternal;
+- (void)setCustomImageViewInternal:;
+@end

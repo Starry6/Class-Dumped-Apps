@@ -1,0 +1,33 @@
+@interface ADInterSessionFilterParameters : NSObject
+@property (nonatomic) I minimalEntriesForResult;
+@property (nonatomic) I capacity;
+@property (nonatomic) float minimalWeight;
+@property (nonatomic) float maximalWeight;
+@property (nonatomic) I outlierNumber;
+@property (nonatomic) float outlierWeight;
+@property (nonatomic) BOOL isStepDetectionActive;
+@property (nonatomic) I minStepIndex;
+@property (nonatomic) I minStepSize;
+@property (nonatomic) float stepDetectionThreshold;
+- (unsigned int)capacity;
+- (void)setCapacity:;
+- (id)init;
+- (unsigned int)minimalEntriesForResult;
+- (void)setMinimalEntriesForResult:;
+- (float)minimalWeight;
+- (void)setMinimalWeight:;
+- (float)maximalWeight;
+- (void)setMaximalWeight:;
+- (unsigned int)outlierNumber;
+- (void)setOutlierNumber:;
+- (float)outlierWeight;
+- (void)setOutlierWeight:;
+- (BOOL)isStepDetectionActive;
+- (void)setIsStepDetectionActive:;
+- (unsigned int)minStepIndex;
+- (void)setMinStepIndex:;
+- (unsigned int)minStepSize;
+- (void)setMinStepSize:;
+- (float)stepDetectionThreshold;
+- (void)setStepDetectionThreshold:;
+@end

@@ -1,0 +1,33 @@
+@interface WebHistoryPrivate : NSObject
+- (BOOL)removeItem:;
+- (id)allItems;
+- (id)init;
+- (id)data;
+- (void)addItems:;
+- (void).cxx_destruct;
+- (BOOL)removeAllItems;
+- (id).cxx_construct;
+- (BOOL)removeItems:;
+- (BOOL)containsURL:;
+- (BOOL)saveToURL:error:;
+- (id)itemForURLString:;
+- (id)itemForURL:;
+- (BOOL)findKey:forDay:;
+- (void)insertItem:forDateKey:;
+- (BOOL)removeItemFromDateCaches:;
+- (BOOL)removeItemForURLString:;
+- (void)addItemToDateCaches:;
+- (id)visitedURL:withTitle:;
+- (BOOL)addItem:discardDuplicate:;
+- (void)rebuildHistoryByDayIfNeeded:;
+- (id)orderedLastVisitedDays;
+- (id)orderedItemsLastVisitedOnDay:;
+- (void)setHistoryAgeInDaysLimit:;
+- (int)historyAgeInDaysLimit;
+- (void)setHistoryItemLimit:;
+- (int)historyItemLimit;
+- (id)ageLimitDate;
+- (BOOL)loadHistoryGutsFromURL:savedItemsCount:collectDiscardedItemsInto:error:;
+- (BOOL)loadFromURL:collectDiscardedItemsInto:error:;
+- (void)addVisitedLinksToVisitedLinkStore:;
+@end

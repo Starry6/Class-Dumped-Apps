@@ -1,0 +1,31 @@
+@interface PTSettingsClassStructure : NSObject
+@property (nonatomic) NSString settingsClassName;
+@property (nonatomic) Q settingsClassVersion;
+@property (nonatomic) NSSet leafKeys;
+@property (nonatomic) NSSet childKeys;
+@property (nonatomic) NSSet outletKeys;
+- (id)childKeys;
+- (void)setSettingsClassVersion:;
+- (id)leafKeys;
+- (void)setChildKeys:;
+- (id)initWithCoder:;
+- (id)settingsClassName;
+- (unsigned long long)hash;
+- (id)_decodeStringStringDictionaryForKey:withCoder:;
+- (void)setLeafKeys:;
+- (void)encodeWithCoder:;
+- (Class)leafClassForKey:;
+- (id)leafStructNameForKey:;
+- (Class)childClassForKey:;
+- (void).cxx_destruct;
+- (void)setOutletKeys:;
+- (void)_generateClassNamesIfNecessary;
+- (id)outletKeys;
+- (id)filteredForProxySettings;
+- (id)_decodeStringSetForKey:withCoder:;
+- (void)setSettingsClassName:;
+- (unsigned long long)settingsClassVersion;
+- (BOOL)isEqual:;
+- (Class)_classForKey:;
++ (BOOL)supportsSecureCoding;
+@end

@@ -1,0 +1,36 @@
+@interface CEMNetworkCellularDeclaration_APNsItem : CEMPayloadBase
+@property (nonatomic) NSString payloadName;
+@property (nonatomic) NSString payloadAuthenticationType;
+@property (nonatomic) NSString payloadUsername;
+@property (nonatomic) NSString payloadPassword;
+@property (nonatomic) NSString payloadProxyServer;
+@property (nonatomic) NSNumber payloadProxyPort;
+@property (nonatomic) NSNumber payloadDefaultProtocolMask;
+@property (nonatomic) NSNumber payloadAllowedProtocolMask;
+@property (nonatomic) NSNumber payloadAllowedProtocolMaskInRoaming;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (BOOL)loadPayload:error:;
+- (id)serializePayloadWithAssetProviders:;
+- (id)payloadPassword;
+- (void)setPayloadPassword:;
+- (id)payloadName;
+- (void)setPayloadName:;
+- (id)payloadAuthenticationType;
+- (void)setPayloadAuthenticationType:;
+- (id)payloadUsername;
+- (void)setPayloadUsername:;
+- (id)payloadAllowedProtocolMask;
+- (void)setPayloadAllowedProtocolMask:;
+- (id)payloadProxyServer;
+- (void)setPayloadProxyServer:;
+- (id)payloadProxyPort;
+- (void)setPayloadProxyPort:;
+- (id)payloadDefaultProtocolMask;
+- (void)setPayloadDefaultProtocolMask:;
+- (id)payloadAllowedProtocolMaskInRoaming;
+- (void)setPayloadAllowedProtocolMaskInRoaming:;
++ (id)allowedPayloadKeys;
++ (id)buildRequiredOnlyWithName:;
++ (id)buildWithName:withAuthenticationType:withUsername:withPassword:withProxyServer:withProxyPort:withDefaultProtocolMask:withAllowedProtocolMask:withAllowedProtocolMaskInRoaming:;
+@end

@@ -1,0 +1,35 @@
+@interface SISchemaTextToSpeechBegin : SISchemaInstrumentationMessage
+@property (nonatomic) NSString aceID;
+@property (nonatomic) BOOL hasAceID;
+@property (nonatomic) NSInteger audioOutputRoute;
+@property (nonatomic) BOOL hasAudioOutputRoute;
+@property (nonatomic) SISchemaHardwareInterfaceIdentifier hardwareInterfaceVendorID;
+@property (nonatomic) BOOL hasHardwareInterfaceVendorID;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (int)audioOutputRoute;
+- (void)setAudioOutputRoute:;
+- (BOOL)hasHardwareInterfaceVendorID;
+- (void)deleteHardwareInterfaceVendorID;
+- (id)hardwareInterfaceVendorID;
+- (void)setHardwareInterfaceVendorID:;
+- (void)setHasHardwareInterfaceVendorID:;
+- (BOOL)hasAceID;
+- (void)deleteAceID;
+- (id)aceID;
+- (void)setAceID:;
+- (void)setHasAceID:;
+- (BOOL)hasAudioOutputRoute;
+- (void)setHasAudioOutputRoute:;
+- (void)deleteAudioOutputRoute;
+@end

@@ -1,0 +1,34 @@
+@interface MFSecureMIMECompositionManager : NSObject
+@property (nonatomic) <MFSecureMIMECompositionManagerDelegate> delegate;
+@property (nonatomic) NSString sendingAddress;
+@property (nonatomic) MailAccount sendingAccount;
+@property (nonatomic) NSInteger signingPolicy;
+@property (nonatomic) NSInteger encryptionPolicy;
+@property (nonatomic) NSInteger signingStatus;
+@property (nonatomic) NSInteger encryptionStatus;
+@property (nonatomic) NSSet recipients;
+- (id)recipients;
+- (id)init;
+- (void)dealloc;
+- (void)setDelegate:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)invalidate;
+- (void)addRecipients:;
+- (id)compositionSpecification;
+- (id)initWithSigningPolicy:encryptionPolicy:;
+- (id)initWithSendingAccount:signingPolicy:encryptionPolicy:;
+- (void)removeRecipients:;
+- (void)setSendingAddress:;
+- (id)sendingAddress;
+- (id)sendingAccount;
+- (int)signingPolicy;
+- (int)encryptionPolicy;
+- (int)signingStatus;
+- (int)encryptionStatus;
+- (BOOL)shouldAllowSend;
++ (id)copySigningIdentityForAccount:sendingAddress:error:;
++ (id)copyEncryptionIdentityForAccount:sendingAddress:error:;
++ (id)copyEncryptionCertificatesForAccount:recipientAddresses:errorsByAddress:;
++ (unsigned int)evaluateTrustForSigningCertificate:sendingAddress:;
+@end

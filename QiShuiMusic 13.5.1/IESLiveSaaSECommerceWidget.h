@@ -1,0 +1,30 @@
+@interface IESLiveSaaSECommerceWidget : NSObject
+@property (nonatomic) <IESECLiveRoom> room;
+@property (nonatomic) <IESECLiveRoomContext> roomContext;
+@property (nonatomic) NSDictionary ecomLiveParams;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setRoomContext:;
+- (void)widgetDidAppear;
+- (void)beginHandleAfterEnterRoom;
+- (void)didHideShopCart:;
+- (void)didShowShopCart:;
+- (id)ecomLiveParams;
+- (void)endHandleAfterEnterRoom;
+- (id)initWithRoom:roomContext:;
+- (void)setEcomLiveParams:;
+- (void)widgetDidDisappear;
+- (void)widgetMount;
+- (void)widgetOrientationDidChange:;
+- (void)widgetOrientationWillChange:;
+- (void)widgetUnmount;
+- (void)widgetWillAppear;
+- (void)widgetWillDisappear;
+- (void).cxx_destruct;
+- (id)room;
+- (void)setRoom:;
+- (id)roomContext;
++ (id)widgetWithRoom:roomContext:;
+@end

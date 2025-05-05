@@ -1,0 +1,2 @@
+@interface IMRemoteObjectInternal : NSObject
+@end

@@ -1,0 +1,34 @@
+@interface RFSchemaRFPatternExecuted : SISchemaInstrumentationMessage
+@property (nonatomic) NSString patternId;
+@property (nonatomic) BOOL hasPatternId;
+@property (nonatomic) NSInteger pattern;
+@property (nonatomic) BOOL hasPattern;
+@property (nonatomic) NSInteger mode;
+@property (nonatomic) BOOL hasMode;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (BOOL)hasMode;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (int)pattern;
+- (void).cxx_destruct;
+- (void)setHasMode:;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (int)mode;
+- (BOOL)isEqual:;
+- (void)setMode:;
+- (id)patternId;
+- (void)setPatternId:;
+- (BOOL)hasPatternId;
+- (void)deletePatternId;
+- (void)setHasPatternId:;
+- (void)setPattern:;
+- (BOOL)hasPattern;
+- (void)setHasPattern:;
+- (void)deletePattern;
+- (void)deleteMode;
+@end

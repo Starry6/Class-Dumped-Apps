@@ -1,0 +1,31 @@
+@interface VNDetectTextRectanglesRequest : VNImageBasedRequest
+@property (nonatomic) Q algorithm;
+@property (nonatomic) Q minimumCharacterPixelHeight;
+@property (nonatomic) BOOL detectDiacritics;
+@property (nonatomic) BOOL minimizeFalseDetections;
+@property (nonatomic) NSString textRecognition;
+@property (nonatomic) NSString additionalCharacters;
+@property (nonatomic) BOOL reportCharacterBoxes;
+@property (nonatomic) NSArray results;
+- (unsigned long long)algorithm;
+- (BOOL)internalPerformRevision:inContext:error:;
+- (void)applyConfigurationOfRequest:;
+- (void)setAlgorithm:;
+- (BOOL)willAcceptCachedResultsFromRequestWithConfiguration:;
+- (void)setDetectDiacritics:;
+- (void)setMinimizeFalseDetections:;
+- (BOOL)reportCharacterBoxes;
+- (void)setReportCharacterBoxes:;
+- (unsigned long long)minimumCharacterPixelHeight;
+- (void)setMinimumCharacterPixelHeight:;
+- (BOOL)detectDiacritics;
+- (BOOL)minimizeFalseDetections;
+- (id)textRecognition;
+- (void)setTextRecognition:;
+- (id)additionalCharacters;
+- (void)setAdditionalCharacters:;
+- (BOOL)_detectCreditCardTextWithRequestPerformingContext:requestRevision:error:;
+- (id)_futharkRecognitionLanguage;
+- (BOOL)_detectTextWithRequestPerformingContext:requestRevision:error:;
++ (Class)configurationClass;
+@end

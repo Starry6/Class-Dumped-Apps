@@ -1,0 +1,38 @@
+@interface CPLEngineResourceStorage : CPLEngineStorage
+@property (nonatomic) CPLEngineFileStorage fileStorage;
+@property (nonatomic) BOOL shouldCheckFilesForUpload;
+@property (nonatomic) NSURL tempFolderURL;
+@property (nonatomic) CPLPlatformObject platformObject;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)openWithError:;
+- (id)createTempDestinationURLForResource:error:;
+- (id)tempFolderURL;
+- (void)writeTransactionDidSucceed;
+- (BOOL)checkIsEmpty;
+- (BOOL)releaseFileURL:forResource:error:;
+- (void)setShouldCheckFilesForUpload:;
+- (void)notePruningRequestForResource:realPrune:successful:;
+- (BOOL)storeDownloadedResource:atURL:error:;
+- (BOOL)storeResourceForUpload:shouldCheckResource:error:;
+- (void)notePruningRequestForResource:realPrune:successful:prunedSize:;
+- (id)retainFileURLForResource:error:;
+- (id)statusDictionary;
+- (BOOL)_clearAndCreateTempFolderIfNecessaryWithError:;
+- (unsigned long long)scopeType;
+- (BOOL)resetWithError:;
+- (BOOL)hasResource:;
+- (BOOL)shouldCheckFilesForUpload;
+- (void).cxx_destruct;
+- (id)fileStorage;
+- (void)writeTransactionDidFail;
+- (BOOL)compactWithError:;
+- (id)initWithEngineStore:name:;
+- (unsigned long long)sizeOfResourcesToUpload;
+- (id)status;
+- (unsigned long long)sizeOfOriginalResourcesToUpload;
+- (BOOL)storeResourceCopyForUpload:error:;
+- (BOOL)dropResourceForUpload:error:;
+@end

@@ -1,0 +1,34 @@
+@interface IESLiveMultiUserScenarioMonitorImpl : NSObject
+@property (nonatomic) IESLiveMultiUserScenarioMonitorContextImpl contextImpl;
+@property (nonatomic) NSObject<OS_dispatch_queue> fulllinkQueue;
+@property (nonatomic) <IESLiveInteractTrackDataSource> dataSource;
+@property (nonatomic) <IESLiveMultiUserScenarioMonitorContext> context;
+@property (nonatomic) NSMutableDictionary sharedBusinessContext;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setContextImpl:;
+- (void)didSetAttachingDIContext;
+- (unsigned long long)fullLinkModuleByCurrentScene;
+- (id)fulllinkQueue;
+- (id)initWithDIContext:;
+- (void)monitorBusinessLogicWithServiceName:description:eventModule:extra:;
+- (void)monitorBusinessLogicWithServiceName:description:eventModule:extra:metric:;
+- (void)monitorIMMessageReceiveWithServiceName:message:description:eventModule:extra:;
+- (void)monitorSDKAPICallWithServiceName:APIName:eventModule:extra:;
+- (void)monitorSDKCallbackWithServiceName:callbackName:eventModule:extra:;
+- (void)monitorServerAPICallWithServiceName:APIPath:eventModule:requestTimestamp:error:response:extra:;
+- (void)monitorServiceName:eventType:eventModule:extra:;
+- (void)monitorWithServiceName:eventType:eventModule:extra:;
+- (void)setFulllinkQueue:;
+- (id)sharedBusinessContext;
+- (void)traceWithBusinessType:traceName:step:errorCode:errorMessage:index:extra:;
+- (void)traceWithBusinessType:traceName:step:extra:;
+- (void)traceWithBusinessType:traceName:step:index:;
+- (void)setDataSource:;
+- (id)contextImpl;
+- (id)context;
+- (id)dataSource;
+- (void).cxx_destruct;
+@end

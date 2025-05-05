@@ -1,0 +1,37 @@
+@interface BDTuringIdentity : NSObject
+@property (nonatomic) NSString appID;
+@property (nonatomic) NSString serviceName;
+@property (nonatomic) NSString reportURL;
+@property (nonatomic) NSString identityDomain;
+@property (nonatomic) BDTuringSettings settings;
+@property (nonatomic) BDTuringConfig config;
+@property (nonatomic) BDTuringIdentityAlertTheme alertTheme;
+@property (nonatomic) <BDTuringIdentityHandler> handler;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)alertTheme;
+- (id)identityDomain;
+- (void)popIdentityViewWithModel:fromViewController:;
+- (void)popVerifyViewWithModel:;
+- (void)setAlertTheme:;
+- (void)setIdentityDomain:;
+- (id)withString:withColor:font:;
+- (id)settings;
+- (void)setSettings:;
+- (void)setConfig:;
+- (id)initWithConfig:;
+- (void)setServiceName:;
+- (void)setReportURL:;
+- (void)setHandler:;
+- (id)serviceName;
+- (void)setAppID:;
+- (id)handler;
+- (id)appID;
+- (void).cxx_destruct;
+- (id)config;
+- (id)reportURL;
++ (id)identityWithAppID:;
++ (id)identityWithConfig:;
+@end

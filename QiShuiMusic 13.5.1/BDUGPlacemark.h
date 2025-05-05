@@ -1,0 +1,38 @@
+@interface BDUGPlacemark : BDUGBasePlacemark
+@property (nonatomic) BDUGByteDanceUnit continentUnit;
+@property (nonatomic) BDUGByteDanceUnit countryUnit;
+@property (nonatomic) NSArray countyUnits;
+@property (nonatomic) BDUGByteDanceUnit administrativeAreaUnit;
+@property (nonatomic) BDUGByteDanceUnit subAdministrativeAreaUnit;
+@property (nonatomic) BDUGByteDanceUnit cityUnit;
+@property (nonatomic) BDUGByteDanceUnit districtUnit;
+@property (nonatomic) BDUGByteDanceUnit townUnit;
+@property (nonatomic) BDUGByteDanceUnit villageUnit;
+- (void)setVillageUnit:;
+- (void)setCountryUnit:;
+- (void)setCountyUnits:;
+- (id)administrativeAreaUnit;
+- (id)cityUnit;
+- (id)continentUnit;
+- (id)countryUnit;
+- (id)countyUnits;
+- (id)districtUnit;
+- (id)placemarkWithLevel:;
+- (void)setAdministrativeAreaUnit:;
+- (void)setCityUnit:;
+- (void)setContinentUnit:;
+- (void)setDistrictUnit:;
+- (void)setSubAdministrativeAreaUnit:;
+- (void)setTownUnit:;
+- (id)subAdministrativeAreaUnit;
+- (id)townUnit;
+- (id)villageUnit;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)copyWithZone:;
+- (id)toJSON;
++ (id)placemarkWithDictionary:;
++ (BOOL)supportsSecureCoding;
+@end

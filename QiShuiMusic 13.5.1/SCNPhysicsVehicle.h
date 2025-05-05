@@ -1,0 +1,31 @@
+@interface SCNPhysicsVehicle : SCNPhysicsBehavior
+@property (nonatomic) double speedInKilometersPerHour;
+@property (nonatomic) NSArray wheels;
+@property (nonatomic) SCNPhysicsBody chassisBody;
+- (void)_update;
+- (void)dealloc;
+- (id)valueForKeyPath:;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void)setValue:forKeyPath:;
+- (id)physicsWorld;
+- (void)_copyDefinition:;
+- (void)_addToPhysicsWorld:definition:;
+- (void)_willRemoveFromPhysicsWorld:;
+- (void)_handleCreateIfNeeded:;
+- (BOOL)hasReferenceToPhysicsBody:;
+- (void)applyEngineForce:forWheelAtIndex:;
+- (void)setSteeringAngle:forWheelAtIndex:;
+- (void)applyBrakingForce:forWheelAtIndex:;
+- (double)speedInKilometersPerHour;
+- (id)wheels;
+- (id)chassisBody;
+- (void)_initializeWheelsArray;
+- (id)initWithChassisBody:wheels:;
+- (id)btVehicle;
+- (void)_createWheel:;
+- (id)wheelAtIndex:;
+- (void)_customDecodingOfSCNPhysicsVehicle:;
++ (BOOL)supportsSecureCoding;
++ (id)vehicleWithChassisBody:wheels:;
+@end

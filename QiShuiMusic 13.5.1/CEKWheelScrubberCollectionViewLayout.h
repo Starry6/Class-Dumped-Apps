@@ -1,0 +1,35 @@
+@interface CEKWheelScrubberCollectionViewLayout : UICollectionViewLayout
+@property (nonatomic) {CGSize=dd} _cachedContentSize;
+@property (nonatomic) NSArray _cachedLayoutAttributesCells;
+@property (nonatomic) NSArray _cachedLayoutAttributesDecorations;
+@property (nonatomic) <CEKWheelScrubberCollectionViewLayoutDelegate> wheelScrubberDelegate;
+@property (nonatomic) {UIEdgeInsets=dddd} contentInsets;
+@property (nonatomic) BOOL useRoundedCorners;
+@property (nonatomic) q layoutDirection;
+@property (nonatomic) q layoutOrder;
+- (id)layoutAttributesForElementsInRect:;
+- (void)setContentInsets:;
+- (id)init;
+- (id)contentInsets;
+- (id)layoutAttributesForDecorationViewOfKind:atIndexPath:;
+- (void)prepareLayout;
+- (id)layoutAttributesForItemAtIndexPath:;
+- (id)collectionViewContentSize;
+- (BOOL)shouldInvalidateLayoutForBoundsChange:;
+- (void).cxx_destruct;
+- (void)setLayoutDirection:;
+- (long long)layoutDirection;
+- (id)_cachedContentSize;
+- (long long)layoutOrder;
+- (void)setLayoutOrder:;
+- (BOOL)useRoundedCorners;
+- (void)setUseRoundedCorners:;
+- (double)_circularlyWrapped:forCenter:radius:scale:;
+- (id)wheelScrubberDelegate;
+- (void)setWheelScrubberDelegate:;
+- (void)_setCachedContentSize:;
+- (id)_cachedLayoutAttributesCells;
+- (void)_setCachedLayoutAttributesCells:;
+- (id)_cachedLayoutAttributesDecorations;
+- (void)_setCachedLayoutAttributesDecorations:;
+@end

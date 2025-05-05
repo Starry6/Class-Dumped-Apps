@@ -1,0 +1,31 @@
+@interface IESMergePanelInfoResponse : MTLModel
+@property (nonatomic) IESCategoryEffectsModel categoryEffects;
+@property (nonatomic) NSArray categories;
+@property (nonatomic) NSString recId;
+@property (nonatomic) IESPlatformPanelModel panel;
+@property (nonatomic) NSArray urlPrefix;
+@property (nonatomic) NSString version;
+@property (nonatomic) NSString defaultFrontFilterID;
+@property (nonatomic) NSString defaultRearFilterID;
+@property (nonatomic) NSMutableDictionary effectsMap;
+@property (nonatomic) BOOL updated;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)categoryEffects;
+- (id)defaultFrontFilterID;
+- (id)defaultRearFilterID;
+- (id)effectsMap;
+- (void)preProcessEffects;
+- (id)recId;
+- (id)version;
+- (BOOL)updated;
+- (void).cxx_destruct;
+- (id)categories;
+- (id)panel;
+- (void)setPanelName:;
+- (id)urlPrefix;
++ (id)JSONKeyPathsByPropertyKey;
++ (id)JSONTransformerForKey:;
+@end

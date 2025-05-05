@@ -1,0 +1,32 @@
+@interface SKAudioNode : SKNode
+@property (nonatomic) AVAudioNode avAudioNode;
+@property (nonatomic) BOOL autoplayLooped;
+@property (nonatomic) BOOL positional;
+- (id)init;
+- (id)initWithURL:;
+- (void)commonInit;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (id)audioFile;
+- (id)audioURL;
+- (BOOL)isEqualToNode:;
+- (void)setAudioURL:;
+- (id)audioFileName;
+- (void)setAudioFileName:;
+- (id)_makeBackingNode;
+- (void)_didMakeBackingNode;
+- (id)initWithAVAudioNode:;
+- (id)initWithFileNamed:bundle:;
+- (id)initWithFileNamed:;
+- (id)avAudioNode;
+- (void)setAvAudioNode:;
+- (void)_playLooped;
+- (void)_setAudioName:bundle:;
+- (void)_connectToScene:;
+- (BOOL)autoplayLooped;
+- (void)setAutoplayLooped:;
+- (BOOL)isPositional;
+- (void)setPositional:;
++ (BOOL)supportsSecureCoding;
++ (id)_audioURLWithName:bundle:;
+@end

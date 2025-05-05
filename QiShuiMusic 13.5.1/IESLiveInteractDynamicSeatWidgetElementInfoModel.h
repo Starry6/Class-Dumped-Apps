@@ -1,0 +1,36 @@
+@interface IESLiveInteractDynamicSeatWidgetElementInfoModel : IESLiveInteractDynamicBaseElementInfoModel
+@property (nonatomic) NSString uid;
+@property (nonatomic) NSString dressId;
+@property (nonatomic) NSString playType;
+@property (nonatomic) NSNumber styleType;
+@property (nonatomic) NSNumber target;
+@property (nonatomic) NSString hatUrl;
+@property (nonatomic) NSString animateBgColor;
+@property (nonatomic) NSString backgroundColor;
+@property (nonatomic) BOOL forcePlay;
+@property (nonatomic) NSString sponsorAvatarUrl;
+- (id)dressId;
+- (id)animateBgColor;
+- (BOOL)forcePlay;
+- (id)hatUrl;
+- (id)playType;
+- (void)setAnimateBgColor:;
+- (void)setDressId:;
+- (void)setForcePlay:;
+- (void)setHatUrl:;
+- (void)setPlayType:;
+- (void)setSponsorAvatarUrl:;
+- (void)setStyleType:;
+- (id)sponsorAvatarUrl;
+- (void)updateValueWithParams:;
+- (void)setBackgroundColor:;
+- (id)uid;
+- (id)backgroundColor;
+- (void)setUid:;
+- (id)styleType;
+- (void)setTarget:;
+- (void).cxx_destruct;
+- (id)target;
+- (id)description;
+- (id)itemId;
+@end

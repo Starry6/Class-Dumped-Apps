@@ -1,0 +1,33 @@
+@interface GEOLogMsgStateAccount : PBCodable
+@property (nonatomic) BOOL hasSignedIntoIcloud;
+@property (nonatomic) BOOL signedIntoIcloud;
+@property (nonatomic) Q possibleActionsCount;
+@property (nonatomic) ^i possibleActions;
+- (void)readAll:;
+- (void)dealloc;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)signedIntoIcloud;
+- (void)setSignedIntoIcloud:;
+- (void)setHasSignedIntoIcloud:;
+- (BOOL)hasSignedIntoIcloud;
+- (unsigned long long)possibleActionsCount;
+- (id)possibleActions;
+- (void)clearPossibleActions;
+- (void)addPossibleAction:;
+- (int)possibleActionAtIndex:;
+- (void)setPossibleActions:count:;
+- (id)possibleActionsAsString:;
+- (int)StringAsPossibleActions:;
++ (BOOL)isValid:;
+@end

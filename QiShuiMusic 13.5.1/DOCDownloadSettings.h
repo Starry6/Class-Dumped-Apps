@@ -1,0 +1,31 @@
+@interface DOCDownloadSettings : NSObject
+@property (nonatomic) NSArray providers;
+@property (nonatomic) NSError providersObserverError;
+@property (nonatomic) @ providersObserverContext;
+@property (nonatomic) FPItem currentDefaultDownloadsLocationItem;
+- (id)init;
+- (void)setProviders:;
+- (id)providers;
+- (void).cxx_destruct;
+- (void)fetchDefaultDownloadsLocationItem:;
+- (void)_removeCurrentDownloadsLocationFromFavorites;
+- (BOOL)_saveDownloadFolderItem:error:;
+- (void)setDefaultDownloadsLocationItem:completionHandler:;
+- (void)setDefaultDownloadsItemForProviderDomain:completionHandler:;
+- (void)resetDefaultDownloadsLocationItem;
+- (void)fetchProvidersSuitableForDownloads:;
+- (void)_fetchDefaultFallbackDownloadLocationWithPreferredDomain:completion:;
+- (void)_createDefaultDownloadsFolderInParent:completion:;
+- (void)_fetchProviders:;
+- (void)_fetchAvailableProviders:;
+- (void)_rootItemOfPreferredProviderInDomains:completion:;
+- (void)_preferredProvidersIn:completion:;
+- (void)_validatePreferredProvider:completion:;
+- (id)_createErrorForCode:localizedDescription:underlyingError:;
+- (id)providersObserverError;
+- (void)setProvidersObserverError:;
+- (id)providersObserverContext;
+- (void)setProvidersObserverContext:;
+- (id)currentDefaultDownloadsLocationItem;
+- (void)setCurrentDefaultDownloadsLocationItem:;
+@end

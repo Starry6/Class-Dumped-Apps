@@ -1,0 +1,34 @@
+@interface VKVenueGroup : VKPolygonGroup
+@property (nonatomic) NSInteger layer;
+@property (nonatomic) Q buildingId;
+@property (nonatomic) float maximumSectionLength;
+@property (nonatomic) ^v wallTexture;
+@property (nonatomic) r^v venueWallMeshes;
+@property (nonatomic) r^v venueWallEndMeshes;
+@property (nonatomic) r^v venueWallHorizontalStrokeMeshes;
+@property (nonatomic) r^v venueWallVerticalStrokeMeshes;
+- (void)didFinishAddingData;
+- (void)prepareToGenerateWallsForSection:styles:edges:;
+- (unsigned long long)verticalStrokeCountForSection:styles:edges:;
+- (float)maximumSectionLength;
+- (unsigned long long)buildingId;
+- (int)layer;
+- (void)addStrokeForSection:paddedCount:key:attributes:styles:cullingMask:accessor:;
+- (id)generateEdgeListForPolygonSection:key:;
+- (void)prepareToStrokeSection:key:styles:paddedCount:;
+- (id)venueWallMeshes;
+- (void)willAddDataWithAccessor:;
+- (void)prepareToGenerateWallStrokesForSection:styles:edges:;
+- (id)venueWallVerticalStrokeMeshes;
+- (id)venueWallEndMeshes;
+- (id)bufferSizingForStrokesOnSection:styles:edges:;
+- (void).cxx_destruct;
+- (void)addWallsForSection:edges:attributes:styles:cullingMask:accessor:;
+- (id)initWithStyleQuery:tileZoom:layer:buildingId:contentScale:storage:;
+- (id)wallTexture;
+- (void)addWallStrokesForSection:edges:attributes:styles:cullingMask:accessor:;
+- (id)initWithStyleQuery:tileZoom:layer:buildingId:contentScale:;
+- (id).cxx_construct;
+- (void)updateTextures:textureManager:;
+- (id)venueWallHorizontalStrokeMeshes;
+@end

@@ -1,0 +1,23 @@
+@interface MSSubscribeStreamsProtocol : MSStreamsProtocol
+- (void)abort;
+- (void)dealloc;
+- (void)setDelegate:;
+- (id)delegate;
+- (id)initWithPersonID:baseURL:;
+- (id)_invalidFieldErrorWithFieldName:;
+- (id)_pathToChunkIndex:;
+- (void)pollForSubscriptionUpdatesWithAccountAnchors:;
+- (void)_coreProtocolDidFinishError:;
+- (void)_coreProtocolDidGetDataChunk:;
+- (void)_coreProtocolDidFailAuthentication:;
+- (void)_parseChunks;
+- (void)_parseNextChunk;
+- (void)_chunkDidBeginStreamForPersonID:wasReset:metadata:;
+- (void)_chunkDidParseAssetCollections:forPersonID:;
+- (void)_chunkDidEndStreamForPersonID:ctag:;
+- (void)_chunkDidFindSubscriptionGoneForPersonID:;
+- (void)_chunkDidFindSubscriptionTemporarilyUnavailableForPersonID:;
+- (id)_invalidFieldErrorWithFieldName:suggestion:;
+- (id)_assetFromCoreDictionary:personID:outError:;
+- (id)_assetCollectionsFromCoreArray:personID:outError:;
+@end

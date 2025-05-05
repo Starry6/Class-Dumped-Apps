@@ -1,0 +1,2 @@
+@interface VisualIntelligence.Argos2DModelFactory : VisualIntelligence.DomainModelRequestFactory
+@end

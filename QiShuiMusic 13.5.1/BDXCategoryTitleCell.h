@@ -1,0 +1,33 @@
+@interface BDXCategoryTitleCell : BDXCategoryIndicatorCell
+@property (nonatomic) CALayer titleMaskLayer;
+@property (nonatomic) CALayer maskTitleMaskLayer;
+@property (nonatomic) NSLayoutConstraint maskTitleLabelCenterY;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel maskTitleLabel;
+@property (nonatomic) NSLayoutConstraint titleLabelCenterX;
+@property (nonatomic) NSLayoutConstraint titleLabelCenterY;
+@property (nonatomic) NSLayoutConstraint maskTitleLabelCenterX;
+- (id)maskTitleLabel;
+- (id)maskTitleLabelCenterX;
+- (id)maskTitleLabelCenterY;
+- (id)maskTitleMaskLayer;
+- (id)preferredTitleColorAnimationBlock:;
+- (id)preferredTitleStrokeWidthAnimationBlock:attributedString:;
+- (id)preferredTitleZoomAnimationBlock:baseScale:;
+- (void)setMaskTitleLabel:;
+- (void)setMaskTitleLabelCenterX:;
+- (void)setMaskTitleLabelCenterY:;
+- (void)setMaskTitleMaskLayer:;
+- (void)setTitleLabelCenterX:;
+- (void)setTitleLabelCenterY:;
+- (void)setTitleMaskLayer:;
+- (id)titleLabelCenterX;
+- (id)titleLabelCenterY;
+- (id)titleMaskLayer;
+- (void)setTitleLabel:;
+- (void)layoutSubviews;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)reloadData:;
+- (void)initializeViews;
+@end

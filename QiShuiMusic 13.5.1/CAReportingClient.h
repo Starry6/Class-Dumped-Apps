@@ -1,0 +1,31 @@
+@interface CAReportingClient : NSObject
+@property (nonatomic) NSXPCConnection connection;
+@property (nonatomic) NSMutableDictionary clientReporters;
+- (void)dealloc;
+- (void)addReporter:;
+- (void)setConfiguration:reporterID:;
+- (void)setServiceType:reporterID:;
+- (void)reconnectReporter:;
+- (id)listClientReporterIDs;
+- (id)reporterWithID:;
+- (id)listServerReporterIDs;
+- (void)destroyService;
+- (void)destroyReporterWithID:;
+- (void)reconnectReporters;
+- (void)sendMessage:category:type:reporters:;
+- (id)clientReporters;
+- (id)connection;
+- (void).cxx_destruct;
+- (id)getConfigurationForReporterID:;
+- (void)setConnection:;
+- (unsigned short)getServiceTypeForReporterID:;
+- (long long)createReporterID:;
+- (id)initWithXPC:endpoint:;
+- (void)disconnectReporters;
+- (void)setClientReporters:;
+- (void)startReporters:;
+- (void)stopReporters:;
++ (id)sharedInstance;
++ (void)destroyClient;
++ (id)getClient;
+@end

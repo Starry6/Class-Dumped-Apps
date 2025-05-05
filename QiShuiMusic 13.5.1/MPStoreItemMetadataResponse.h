@@ -1,0 +1,31 @@
+@interface MPStoreItemMetadataResponse : NSObject
+@property (nonatomic) BOOL finalResponse;
+@property (nonatomic) NSArray cacheMissItemIdentifiers;
+@property (nonatomic) NSArray requestItemIdentifiers;
+@property (nonatomic) NSArray lastBatchItemIdentifiers;
+@property (nonatomic) NSArray allStoreItemDictionaries;
+@property (nonatomic) NSArray performanceMetrics;
+@property (nonatomic) NSArray itemIdentifiers;
+@property (nonatomic) NSDate earliestExpirationDate;
+@property (nonatomic) BOOL expired;
+- (id)itemIdentifiers;
+- (id)init;
+- (void)setCacheMissItemIdentifiers:;
+- (BOOL)isExpired;
+- (id)cacheMissItemIdentifiers;
+- (void)setStoreItemMetadata:forItemIdentifier:;
+- (void)setRequestItemIdentifiers:;
+- (id)storeItemMetadataForItemIdentifier:;
+- (void)setPerformanceMetrics:;
+- (id)earliestExpirationDate;
+- (id)performanceMetrics;
+- (id)lastBatchItemIdentifiers;
+- (BOOL)isFinalResponse;
+- (void).cxx_destruct;
+- (id)allStoreItemDictionaries;
+- (id)storeItemMetadataForItemIdentifier:returningIsFinalMetadata:;
+- (void)setFinalResponse:;
+- (id)requestItemIdentifiers;
+- (void)setLastBatchItemIdentifiers:;
+- (id)copyWithZone:;
+@end

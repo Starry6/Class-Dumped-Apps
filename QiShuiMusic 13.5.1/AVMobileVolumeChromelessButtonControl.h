@@ -1,0 +1,33 @@
+@interface AVMobileVolumeChromelessButtonControl : UIControl
+@property (nonatomic) AVMicaPackage micaPackage;
+@property (nonatomic) UIImageView imageView;
+@property (nonatomic) UIView micaPackageContainerView;
+@property (nonatomic) NSString volumeIconState;
+@property (nonatomic) <AVMobileVolumeChromlesButtonControlDelegate> delegate;
+- (id)init;
+- (BOOL)beginTrackingWithTouch:withEvent:;
+- (id)intrinsicContentSize;
+- (void)layoutSubviews;
+- (BOOL)pointInside:withEvent:;
+- (void)setDelegate:;
+- (void)_updateMicaPackage:;
+- (id)micaPackage;
+- (id)hitRect;
+- (void)_volumeControlButtonDidEndPanning;
+- (void)_volumeControlButtonDidBeginPanning;
+- (id)_imageNameForMicaPackageState;
+- (void)_volumeControlButtonPanningDidContinueWithXDelta:;
+- (id)micaPackageContainerView;
+- (id)delegate;
+- (void)setMicaPackage:;
+- (void).cxx_destruct;
+- (void)setMicaPackageContainerView:;
+- (id)imageView;
+- (void)setVolumeIconState:;
+- (BOOL)gestureRecognizerShouldBegin:;
+- (void)cancelTrackingWithEvent:;
+- (id)volumeIconState;
+- (void)endTrackingWithTouch:withEvent:;
+- (void)setImageView:;
+- (BOOL)continueTrackingWithTouch:withEvent:;
+@end

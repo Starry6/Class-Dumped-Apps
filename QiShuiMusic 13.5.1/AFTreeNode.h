@@ -1,0 +1,34 @@
+@interface AFTreeNode : NSObject
+@property (nonatomic) AFTreeNode parentNode;
+@property (nonatomic) NSMutableArray childNodes;
+@property (nonatomic) @ item;
+- (id)item;
+- (id)init;
+- (unsigned long long)countByEnumeratingWithState:objects:count:;
+- (void)setItem:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)parentNode;
+- (void)addChildNode:;
+- (void)_appendDescriptionToString:withIndentation:;
+- (id)indexPathFromAncestorNode:;
+- (id)absoluteIndexPath;
+- (BOOL)containsNodeAtIndexPath:;
+- (id)nodeAtIndexPath:;
+- (id)indexPathOfNodeWithItem:;
+- (void)removeFromParentNode;
+- (long long)numberOfChildNodes;
+- (long long)indexOfChildNode:;
+- (id)childNodeAtIndex:;
+- (id)lastChildNode;
+- (void)insertChildNode:atIndex:;
+- (void)removeChildNodeAtIndex:;
+- (void)removeChildNode:;
+- (void)replaceChildNodeAtIndex:withNode:;
+- (void)enumerateChildNodesWithOptions:usingBlock:;
+- (void)enumerateChildNodesUsingBlock:;
+- (void)enumerateDescendentNodesUsingBlock:;
+- (void)_setParentNode:;
+- (id)_childNodes;
++ (id)absoluteIndexPathsForTreeNodes:;
+@end

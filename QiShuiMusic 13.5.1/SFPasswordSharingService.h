@@ -1,0 +1,33 @@
+@interface SFPasswordSharingService : NSObject
+@property (nonatomic) <SFPasswordSharingServiceDelegate> delegate;
+@property (nonatomic) NSObject<OS_dispatch_queue> dispatchQueue;
+@property (nonatomic) NSString networkName;
+- (void)setNetworkName:;
+- (void)_cleanup;
+- (id)init;
+- (void)_run;
+- (void)dealloc;
+- (id)dispatchQueue;
+- (void)setDelegate:;
+- (void)setDispatchQueue:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)networkName;
+- (void)_handleSessionStarted:;
+- (void)invalidate;
+- (void)activate;
+- (void)_receivedObject:flags:;
+- (int)_runServiceStart;
+- (void)_handleReceivedPassword:;
+- (void)_handleUserNotificationResponse:;
+- (void)_sendPasswordReceived;
+- (void)_sendPasswordDeclinedWithError:;
+- (void)_passInfoToDelegate:;
+- (void)_promptUserWithInfo:message:;
+- (BOOL)disabledViaConfig;
+- (id)messageForDisplayName:deviceName:info:;
+- (BOOL)__activateCalled;
+- (BOOL)__invalidateCalled;
+- (void)__testReceivedObject:withFlags:;
++ (unsigned int)passwordSharingAvailability;
+@end

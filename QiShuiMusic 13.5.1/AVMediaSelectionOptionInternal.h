@@ -1,0 +1,2 @@
+@interface AVMediaSelectionOptionInternal : NSObject
+@end

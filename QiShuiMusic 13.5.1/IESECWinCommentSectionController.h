@@ -1,0 +1,34 @@
+@interface IESECWinCommentSectionController : IESECWinListKitCellController
+@property (nonatomic) FBKVOController kvoCtrl;
+@property (nonatomic) IESECWinCommentObject object;
+@property (nonatomic) IESECWinCommentCell commentCell;
+@property (nonatomic) IESECServiceProxy<IESECWinBackService> backService;
+@property (nonatomic) IESECServiceProxy<IESECWinAuthorService> authorService;
+@property (nonatomic) IESECServiceProxy<IESECWinSplitService> splitService;
+@property (nonatomic) IESECServiceProxy<IESECWinMainScrollService> scrollService;
+- (id)kvoCtrl;
+- (void)setCommentCell:;
+- (id)configWithCell:;
+- (void)setBackService:;
+- (id)authorService;
+- (id)backService;
+- (id)cellForItemAtIndex:;
+- (id)commentCell;
+- (void)didUpdateToObject:;
+- (id)getNewStyleReputationTrackParams;
+- (id)scrollService;
+- (void)setAuthorService:;
+- (void)setKvoCtrl:;
+- (void)setScrollService:;
+- (void)setSplitService:;
+- (id)splitService;
+- (void)trackAuthorInfoClick:;
+- (void)setObject:;
+- (long long)numberOfItems;
+- (void)scrollViewDidScroll;
+- (void).cxx_destruct;
+- (id)object;
+- (void)addObserver;
+- (void)didSelectItemAtIndex:;
+- (id)sizeForItemAtIndex:;
+@end

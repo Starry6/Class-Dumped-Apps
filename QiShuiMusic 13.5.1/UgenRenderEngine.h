@@ -1,0 +1,37 @@
+@interface UgenRenderEngine : NSObject
+@property (nonatomic) {CGSize=dd} rootMeasureSize;
+@property (nonatomic) UgenFrameLayoutWidget rootWidget;
+@property (nonatomic) NSDictionary componentsMap;
+@property (nonatomic) NSMutableDictionary widgetsMap;
+@property (nonatomic) UgenContext context;
+@property (nonatomic) @? firstPageRenderResult;
+@property (nonatomic) BOOL isRecycleLayout;
+@property (nonatomic) <UgenEventDelegate> eventDelegate;
+- (BOOL)isRecycleLayout;
+- (id)rootMeasureSize;
+- (void)appendSubNodeTreeList:forNode:;
+- (id)componentsMap;
+- (void)createViewWithMainNodeTree:measureSize:context:result:firstPageRenderResult:;
+- (id)firstPageRenderResult;
+- (id)getWidgetWithId:;
+- (id)intrinsicRootWidgetContentSize;
+- (id)p_createComponentWithName:;
+- (id)p_parseDataBindingValueWithValue:source:templateInfo:;
+- (void)p_refreshWidget:dataInfo:;
+- (void)p_renderNodeTreeWithNode:parentComponent:dataInfo:;
+- (void)refreshWithNode:dataInfo:;
+- (id)rootWidget;
+- (void)setComponentsMap:;
+- (void)setFirstPageRenderResult:;
+- (void)setIsRecycleLayout:;
+- (void)setRootMeasureSize:;
+- (void)setRootWidget:;
+- (void)setWidgetsMap:;
+- (id)widgetsMap;
+- (id)init;
+- (id)context;
+- (void).cxx_destruct;
+- (id)eventDelegate;
+- (void)setContext:;
+- (void)setEventDelegate:;
+@end

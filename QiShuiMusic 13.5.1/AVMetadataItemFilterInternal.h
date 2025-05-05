@@ -1,0 +1,2 @@
+@interface AVMetadataItemFilterInternal : NSObject
+@end

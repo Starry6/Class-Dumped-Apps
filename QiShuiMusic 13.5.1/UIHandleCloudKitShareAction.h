@@ -1,0 +1,2 @@
+@interface UIHandleCloudKitShareAction : UISHandleCloudKitShareAction
+@end

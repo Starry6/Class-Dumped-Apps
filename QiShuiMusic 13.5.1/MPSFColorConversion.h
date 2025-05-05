@@ -1,0 +1,32 @@
+@interface MPSFColorConversion : MPSFunction
+@property (nonatomic) Q options;
+@property (nonatomic) Q inputColorChannels;
+@property (nonatomic) Q outputColorChannels;
+- (id)copyWithZone:device:;
+- (void)dealloc;
+- (id)debugDescription;
+- (void)encodeWithCoder:;
+- (unsigned long long)options;
+- (id)initWithCoder:device:error:;
+- (id)functionPrototype;
+- (id)newDAGUsingFunctionList:;
+- (id)initWithDevice:startColorSpace:endColorSpace:functionName:sourceRange:options:error:;
+- (id)newSubroutineListWithError:;
+- (BOOL)addTRCStage:stage:count:trcIndices:error:;
+- (BOOL)addMatrixStage:stage:index:;
+- (BOOL)addNxMStage:stage:index:error:;
+- (BOOL)addGrayToRGBStage;
+- (id)initWithDevice:conversion:functionName:sourceRange:options:error:;
+- (void)optimizeStages;
+- (id)effectiveRange:;
+- (id)find1DTexture1Stage;
+- (id)descriptorFor1DTexture1;
+- (id)find3dTextureStageAtIndex:;
+- (id)descriptorFor3DTexture1;
+- (id)descriptorFor3DTexture2;
+- (void)initialize1DTexture1:;
+- (void)initialize3DTexture1:;
+- (void)initialize3DTexture2:;
+- (unsigned long long)inputColorChannels;
+- (unsigned long long)outputColorChannels;
+@end

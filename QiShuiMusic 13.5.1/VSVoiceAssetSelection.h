@@ -1,0 +1,30 @@
+@interface VSVoiceAssetSelection : NSObject
+@property (nonatomic) VSVoiceAsset voiceData;
+@property (nonatomic) MAAsset asset;
+@property (nonatomic) VSTrialVoice trialVoice;
+@property (nonatomic) NSString builtInVoicePath;
+@property (nonatomic) NSString voicePath;
+@property (nonatomic) {_opaque_pthread_mutex_t=q[56c]} voicePathLock;
+- (void)setVoiceData:;
+- (BOOL)isInstalled;
+- (id)init;
+- (void)dealloc;
+- (id)voicePath;
+- (void)setBuiltInVoicePath:;
+- (id)asset;
+- (id)key;
+- (double)preferenceScore;
+- (void)setTrialVoice:;
+- (id)voicePathLock;
+- (BOOL)isDownloading;
+- (id)initWithTrialVoice:;
+- (void)setVoicePath:;
+- (id)voiceData;
+- (void).cxx_destruct;
+- (id)trialVoice;
+- (void)setVoicePathLock:;
+- (void)setAsset:;
+- (id)descriptiveKey;
+- (id)builtInVoicePath;
+- (unsigned long long)size;
+@end

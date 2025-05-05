@@ -1,0 +1,30 @@
+@interface BDMannorJSBManager : NSObject
+@property (nonatomic) NSString scene;
+@property (nonatomic) NSString componentType;
+@property (nonatomic) NSString logExtra;
+@property (nonatomic) BDMannorAdDataModel adData;
+@property (nonatomic) BDMannorStyleTemplateModel styleTemplate;
+@property (nonatomic) BDMannorComponentManagerContext context;
+@property (nonatomic) <BDMannorJSBManagerDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWith:componentType:logExtra:adData:styleTemplate:delegate:componentManagerContext:;
+- (id)logExtra;
+- (void)setLogExtra:;
+- (void)setStyleTemplate:;
+- (id)styleTemplate;
+- (id)componentType;
+- (void)setScene:;
+- (void)dealloc;
+- (id)context;
+- (void)setComponentType:;
+- (void)setDelegate:;
+- (id)scene;
+- (void)setAdData:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setContext:;
+- (id)adData;
+@end

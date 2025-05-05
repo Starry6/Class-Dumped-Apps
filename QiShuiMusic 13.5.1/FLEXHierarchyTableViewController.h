@@ -1,0 +1,38 @@
+@interface FLEXHierarchyTableViewController : FLEXTableViewController
+@property (nonatomic) NSArray allViews;
+@property (nonatomic) NSMapTable depthsForViews;
+@property (nonatomic) NSArray viewsAtTap;
+@property (nonatomic) NSArray displayedViews;
+@property (nonatomic) BOOL showScopeBar;
+@property (nonatomic) UIView selectedView;
+@property (nonatomic) @? didSelectRowAction;
+- (id)initWithViews:viewsAtTap:selectedView:depths:;
+- (void)viewDidLoad;
+- (void)viewWillAppear:;
+- (void)viewDidAppear:;
+- (void)trySelectCellForSelectedView;
+- (void)updateDisplayedViews;
+- (void)setSelectedView:;
+- (BOOL)showScopeBar;
+- (void)updateSearchResults:;
+- (long long)tableView:numberOfRowsInSection:;
+- (id)tableView:cellForRowAtIndexPath:;
+- (void)tableView:didSelectRowAtIndexPath:;
+- (void)tableView:accessoryButtonTappedForRowWithIndexPath:;
+- (id)selectedView;
+- (id)didSelectRowAction;
+- (void)setDidSelectRowAction:;
+- (id)allViews;
+- (void)setAllViews:;
+- (id)depthsForViews;
+- (void)setDepthsForViews:;
+- (id)viewsAtTap;
+- (void)setViewsAtTap:;
+- (id)displayedViews;
+- (void)setDisplayedViews:;
+- (void).cxx_destruct;
++ (id)windows:viewsAtTap:selectedView:;
++ (id)allViewsInHierarchy:;
++ (id)viewWithRecursiveSubviews:;
++ (id)hierarchyDepthsForViews:;
+@end

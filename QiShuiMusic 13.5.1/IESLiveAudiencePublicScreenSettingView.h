@@ -1,0 +1,35 @@
+@interface IESLiveAudiencePublicScreenSettingView : IESLivePublicScreenSettingView
+@property (nonatomic) @? enableHeightSetting;
+@property (nonatomic) double lowLevelScale;
+@property (nonatomic) double midLevelScale;
+@property (nonatomic) double higLevelScale;
+@property (nonatomic) NSString enterForm;
+@property (nonatomic) q publicScreenConsumeLevel;
+- (double)bottomViewTop;
+- (void)checkIfEnableHeightSetting;
+- (unsigned long long)curHeightType;
+- (void)curPointChanged:button:;
+- (id)enableHeightSetting;
+- (id)enterForm;
+- (double)higLevelScale;
+- (id)initWithDIContext:initialFontSizeType:initialHeightType:;
+- (void)layoutDoneButton;
+- (double)lowLevelScale;
+- (double)midLevelScale;
+- (long long)publicScreenConsumeLevel;
+- (void)setCurHeightType:;
+- (void)setEnableHeightSetting:;
+- (void)setEnterForm:;
+- (void)setHigLevelScale:;
+- (void)setLowLevelScale:;
+- (void)setMidLevelScale:;
+- (void)setPublicScreenConsumeLevel:;
+- (void)trackWhenCloseButtonClicked;
+- (void)trackWhenDoneButtonClicked;
+- (void)trackWhenQuit;
+- (void)updateConstAndExpendHeight;
+- (void)show;
+- (void).cxx_destruct;
+- (void)setupUI;
+- (void)setupConfig;
+@end

@@ -1,0 +1,30 @@
+@interface DKDAAPWriter : NSObject
+@property (nonatomic) NSOutputStream outputStream;
+@property (nonatomic) NSMutableArray containerStack;
+@property (nonatomic) Q state;
+@property (nonatomic) NSError error;
+- (id)containerStack;
+- (id)error;
+- (void)close;
+- (unsigned long long)state;
+- (void).cxx_destruct;
+- (id)outputStream;
+- (id)initWithStream:;
+- (void)writeData:withCode:;
+- (void)writeSInt16:withCode:;
+- (void)writeSInt32:withCode:;
+- (void)writeSInt64:withCode:;
+- (void)writeSInt8:withCode:;
+- (void)writeString:withCode:;
+- (void)writeUInt16:withCode:;
+- (void)writeUInt32:withCode:;
+- (void)writeUInt64:withCode:;
+- (void)writeUInt8:withCode:;
+- (void)startContainerWithCode:;
+- (void)endContainerWithCode:;
+- (void)writeCString:withCode:;
+- (void)writeBytes:ofLength:withCode:;
+- (void)writeContainerData:;
+- (void)_performWriteWithBuffer:;
+- (void)_writeDataToOutputStream:;
+@end

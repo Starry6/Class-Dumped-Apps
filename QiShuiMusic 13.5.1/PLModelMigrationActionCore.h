@@ -1,0 +1,30 @@
+@interface PLModelMigrationActionCore : NSObject
+@property (nonatomic) PLPhotoLibraryPathManager pathManager;
+@property (nonatomic) PLModelMigratorLog logger;
+@property (nonatomic) NSProgress progress;
+@property (nonatomic) S startingSchemaVersion;
+@property (nonatomic) NSString actionName;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)pathManager;
+- (id)logger;
+- (void)setProgress:;
+- (void)setPathManager:;
+- (void)setLogger:;
+- (id)progress;
+- (void)setup;
+- (void).cxx_destruct;
+- (id)actionName;
+- (id)description;
+- (id)cancellableDiscreteProgressWithTotalUnitCount:pendingParentUnitCount:cancellationHandler:;
+- (void)finalizeProgress;
+- (id)initWithPathManager:startingSchemaVersion:logger:progress:;
+- (BOOL)isCancelledWithError:;
+- (unsigned short)startingSchemaVersion;
+- (void)setStartingSchemaVersion:;
++ (id)actionDescription;
++ (long long)actionProgressWeight;
++ (id)shortenedMigrationActionClassName;
+@end

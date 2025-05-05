@@ -1,0 +1,35 @@
+@interface BDUGLuckyPollingSettingsActivityModel : BDUGLuckyBDModel
+@property (nonatomic) NSString activityName;
+@property (nonatomic) q cycleId;
+@property (nonatomic) q startTime;
+@property (nonatomic) q endTime;
+@property (nonatomic) q popupStartTime;
+@property (nonatomic) q popupEndTime;
+@property (nonatomic) q forcePopup;
+@property (nonatomic) q blockActivity;
+@property (nonatomic) NSString f2LynxSchema;
+@property (nonatomic) NSDictionary extra;
+- (long long)cycleId;
+- (id)f2LynxSchema;
+- (long long)forcePopup;
+- (long long)popupEndTime;
+- (long long)popupStartTime;
+- (void)setBlockActivity:;
+- (void)setCycleId:;
+- (void)setExtra:;
+- (void)setF2LynxSchema:;
+- (void)setForcePopup:;
+- (void)setPopupEndTime:;
+- (void)setPopupStartTime:;
+- (id)extra;
+- (void)setStartTime:;
+- (void)setEndTime:;
+- (long long)startTime;
+- (long long)endTime;
+- (void).cxx_destruct;
+- (id)activityName;
+- (long long)blockActivity;
+- (void)setActivityName:;
++ (id)keyMapper;
++ (id)modelCustomPropertyMapper;
+@end

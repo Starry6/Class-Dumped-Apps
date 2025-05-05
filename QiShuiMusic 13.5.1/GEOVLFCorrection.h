@@ -1,0 +1,34 @@
+@interface GEOVLFCorrection : PBCodable
+@property (nonatomic) BOOL hasLocationCorrectionMagnitude;
+@property (nonatomic) I locationCorrectionMagnitude;
+@property (nonatomic) BOOL hasHeadingCorrectionMagnitude;
+@property (nonatomic) I headingCorrectionMagnitude;
+@property (nonatomic) BOOL hasAltitudeCorrectionMagnitude;
+@property (nonatomic) I altitudeCorrectionMagnitude;
+- (void)readAll:;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (unsigned int)locationCorrectionMagnitude;
+- (void)setLocationCorrectionMagnitude:;
+- (void)setHasLocationCorrectionMagnitude:;
+- (BOOL)hasLocationCorrectionMagnitude;
+- (unsigned int)headingCorrectionMagnitude;
+- (void)setHeadingCorrectionMagnitude:;
+- (void)setHasHeadingCorrectionMagnitude:;
+- (BOOL)hasHeadingCorrectionMagnitude;
+- (unsigned int)altitudeCorrectionMagnitude;
+- (void)setAltitudeCorrectionMagnitude:;
+- (void)setHasAltitudeCorrectionMagnitude:;
+- (BOOL)hasAltitudeCorrectionMagnitude;
++ (BOOL)isValid:;
+@end

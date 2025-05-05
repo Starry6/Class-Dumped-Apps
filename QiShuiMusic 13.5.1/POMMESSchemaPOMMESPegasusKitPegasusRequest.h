@@ -1,0 +1,35 @@
+@interface POMMESSchemaPOMMESPegasusKitPegasusRequest : SISchemaInstrumentationMessage
+@property (nonatomic) I rawRequestSizeInKB;
+@property (nonatomic) BOOL hasRawRequestSizeInKB;
+@property (nonatomic) I compressedRequestSizeInKB;
+@property (nonatomic) BOOL hasCompressedRequestSizeInKB;
+@property (nonatomic) POMMESSchemaPOMMESPegasusRequestArguments pegasusRequestArguments;
+@property (nonatomic) BOOL hasPegasusRequestArguments;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)setRawRequestSizeInKB:;
+- (BOOL)hasRawRequestSizeInKB;
+- (void)setHasRawRequestSizeInKB:;
+- (void)deleteRawRequestSizeInKB;
+- (void)setCompressedRequestSizeInKB:;
+- (BOOL)hasCompressedRequestSizeInKB;
+- (void)setHasCompressedRequestSizeInKB:;
+- (void)deleteCompressedRequestSizeInKB;
+- (BOOL)hasPegasusRequestArguments;
+- (void)deletePegasusRequestArguments;
+- (unsigned int)rawRequestSizeInKB;
+- (unsigned int)compressedRequestSizeInKB;
+- (id)pegasusRequestArguments;
+- (void)setPegasusRequestArguments:;
+- (void)setHasPegasusRequestArguments:;
+@end

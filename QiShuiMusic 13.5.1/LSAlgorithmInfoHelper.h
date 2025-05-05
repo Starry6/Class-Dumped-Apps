@@ -1,0 +1,33 @@
+@interface LSAlgorithmInfoHelper : NSObject
+@property (nonatomic) @? algorithmSEIReadyBlock;
+@property (nonatomic) @? algorithmSEIReadyStringBlock;
+@property (nonatomic) @? algorithmInfoChangeBlock;
+@property (nonatomic) q seiTimerInterval;
+@property (nonatomic) LiveStreamMultiTimerManager seiTimer;
+- (void)writeSeiHeader:;
+- (id)algorithmInfoChangeBlock;
+- (id)algorithmSEIReadyBlock;
+- (id)algorithmSEIReadyStringBlock;
+- (void)dumpSeiPayload;
+- (long long)getDataLength;
+- (id)getRawData;
+- (void)loadSeiPayload;
+- (void)needSendSei;
+- (id)seiTimer;
+- (long long)seiTimerInterval;
+- (void)setAlgorithmInfoChangeBlock:;
+- (void)setAlgorithmSEIReadyBlock:;
+- (void)setAlgorithmSEIReadyStringBlock:;
+- (void)setSeiTimer:;
+- (void)setSeiTimerInterval:;
+- (void)writeHeaderMixStream:;
+- (void)writeHeaderSwitchChanged:;
+- (void)writeSeiTag:withDic:;
+- (void)writeSeiTagExtra:;
+- (void)stopTimer;
+- (id)init;
+- (void)dealloc;
+- (void)startTimer;
+- (void).cxx_destruct;
+- (id).cxx_construct;
+@end

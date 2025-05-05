@@ -1,0 +1,37 @@
+@interface BSUIDefaultDateLabel : UILabel
+@property (nonatomic) NSDate timeZoneRelativeStartDate;
+@property (nonatomic) BOOL allDay;
+@property (nonatomic) <BSUIDateLabelDelegate> delegate;
+@property (nonatomic) q labelType;
+@property (nonatomic) BOOL isTimestamp;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)isTimestamp;
+- (void)setIsTimestamp:;
+- (id)timeZoneRelativeStartDate;
+- (void)updateTextIfNecessary;
+- (BOOL)isAllDay;
+- (void)setTimeZoneRelativeStartDate:absoluteStartDate:;
+- (id)constructLabelString;
+- (void)setEndDate:withTimeZone:;
+- (void)_updateTimerFired:;
+- (void)stopCoalescingUpdates;
+- (void)setAllDay:;
+- (BOOL)isEffectiveAllDay;
+- (id)init;
+- (void)dealloc;
+- (void)setTimeZoneRelativeEndDate:;
+- (void)setDelegate:;
+- (void)prepareForReuse;
+- (void)_forceUpdate;
+- (void)setLabelType:;
+- (long long)labelType;
+- (void)startCoalescingUpdates;
+- (BOOL)isDateWithinEffectiveAllDayRange:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)update;
+- (void)setStartDate:withTimeZone:;
+@end

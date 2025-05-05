@@ -1,0 +1,33 @@
+@interface TTGIF2MP4ExportSession : NSObject
+@property (nonatomic) BDImage bdImage;
+@property (nonatomic) {CGSize=dd} videoSize;
+@property (nonatomic) NSError error;
+@property (nonatomic) AVAssetWriter videoWriter;
+@property (nonatomic) AVAssetWriterInput assetWriterInput;
+@property (nonatomic) NSURL outputURL;
+@property (nonatomic) double progress;
+@property (nonatomic) BOOL isCancelled;
+@property (nonatomic) NSString outputFileName;
+- (id)bdImage;
+- (id)initWith:videoSize:outputFileName:;
+- (id)outputFileName;
+- (void)setBdImage:;
+- (void)cancel;
+- (void)start:;
+- (BOOL)isCancelled;
+- (void)setError:;
+- (void)setProgress:;
+- (id)error;
+- (void)setOutputURL:;
+- (double)progress;
+- (id)outputURL;
+- (void)setIsCancelled:;
+- (void).cxx_destruct;
+- (id)assetWriterInput;
+- (void)setAssetWriterInput:;
+- (id)videoSize;
+- (void)convert:;
+- (void)setVideoSize:;
+- (id)videoWriter;
+- (void)setVideoWriter:;
+@end

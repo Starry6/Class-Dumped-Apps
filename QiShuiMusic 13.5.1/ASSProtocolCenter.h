@@ -1,0 +1,36 @@
+@interface ASSProtocolCenter : NSObject
+@property (nonatomic) <APRiskRemoteLoggerProtocol> remoteLoggerDelegate;
+@property (nonatomic) <APRiskConfigServiceProtocol> configServiceDelegate;
+@property (nonatomic) <APRiskFileUploadProtocol> fileUploadDelegate;
+@property (nonatomic) <APRiskRPCProtocol> rpcDelegate;
+@property (nonatomic) <APRiskSyncServiceProtocol> syncServiceDelegate;
+@property (nonatomic) <APRiskLoggerProtocol> logDelegate;
+@property (nonatomic) <APDeviceColorProtocol> deviceColorDelegate;
+@property (nonatomic) <APDynamicProtocol> dynamicDelegate;
+@property (nonatomic) <APSignProtocol> signDelegate;
+@property (nonatomic) <APDIDProtocol> apdidDelegate;
+- (id)dynamicDelegate;
+- (void)setLogDelegate:;
+- (void)setRpcDelegate:;
+- (id)apdidDelegate;
+- (id)configServiceDelegate;
+- (id)deviceColorDelegate;
+- (id)fileUploadDelegate;
+- (id)logDelegate;
+- (id)remoteLoggerDelegate;
+- (id)rpcDelegate;
+- (void)setApdidDelegate:;
+- (void)setConfigServiceDelegate:;
+- (void)setDelegate:implClass:;
+- (void)setDeviceColorDelegate:;
+- (void)setDynamicDelegate:;
+- (void)setFileUploadDelegate:;
+- (void)setRemoteLoggerDelegate:;
+- (void)setSignDelegate:;
+- (void)setSyncServiceDelegate:;
+- (id)signDelegate;
+- (id)syncServiceDelegate;
+- (id)init;
+- (void).cxx_destruct;
++ (id)sharedCenter;
+@end

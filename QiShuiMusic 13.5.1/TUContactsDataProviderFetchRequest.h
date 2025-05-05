@@ -1,0 +1,34 @@
+@interface TUContactsDataProviderFetchRequest : NSObject
+@property (nonatomic) BOOL emergency;
+@property (nonatomic) BOOL blocked;
+@property (nonatomic) BOOL conversation;
+@property (nonatomic) BOOL verified;
+@property (nonatomic) BOOL incoming;
+@property (nonatomic) NSString isoCountryCode;
+@property (nonatomic) NSArray handles;
+@property (nonatomic) NSString contactIdentifier;
+@property (nonatomic) NSArray auxiliaryKeysToFetch;
+@property (nonatomic) NSString phoneNumberPrefixHint;
+@property (nonatomic) BOOL useNetworkCountryCode;
+- (id)init;
+- (BOOL)isIncoming;
+- (id)initWithHandle:;
+- (void)setContactIdentifier:;
+- (id)contactIdentifier;
+- (id)isoCountryCode;
+- (void).cxx_destruct;
+- (BOOL)isBlocked;
+- (id)description;
+- (id)handles;
+- (BOOL)isEmergency;
+- (BOOL)isVerified;
+- (id)initWithHandles:;
+- (id)initWithCall:;
+- (BOOL)isConversation;
+- (id)auxiliaryKeysToFetch;
+- (void)setAuxiliaryKeysToFetch:;
+- (id)phoneNumberPrefixHint;
+- (void)setPhoneNumberPrefixHint:;
+- (BOOL)useNetworkCountryCode;
+- (void)setUseNetworkCountryCode:;
+@end

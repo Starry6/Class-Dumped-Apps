@@ -1,0 +1,2 @@
+@interface IESLiveSaaSPBIESLiveSaaSPBSportsQuizRoot : GPBRootObject
+@end

@@ -1,0 +1,38 @@
+@interface IESLivePublicScreenScreenShareAttachment : NSObject
+@property (nonatomic) IESLivePublicScreenView screenSharePSView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) IESLivePublicScreenView publicScreenView;
+@property (nonatomic) IESLivePublicScreenContext publicScreenContext;
+@property (nonatomic) HTSEventContext trackContext;
+@property (nonatomic) @? didAttach;
+@property (nonatomic) @? didDetach;
+- (id)abilityProtocol;
+- (void)closeCommonCastScreenElementView;
+- (id)didAttach;
+- (id)didDetach;
+- (void)didSetAttachingDIContext;
+- (void)nativeGiftEndWith:;
+- (id)providerCommonCastScreenElementWithSize:;
+- (id)publicScreenContext;
+- (id)publicScreenView;
+- (id)screenSharePSView;
+- (void)setDidAttach:;
+- (void)setDidDetach:;
+- (void)setPublicScreenContext:;
+- (void)setPublicScreenView:;
+- (void)setScreenSharePSView:;
+- (void)setTrackContext:;
+- (void)shareScreenDidStartWithAppId:containerType:strategy:extra:;
+- (void)shareScreenDidStopWithAppId:containerType:strategy:extra:;
+- (BOOL)shouldActive;
+- (void)showCommonCastScreenElementIfNeed:;
+- (id)trackContext;
+- (void)updateCommonCastScreenElementSize:;
+- (void)detach;
+- (void)attach;
+- (id)type;
+- (void).cxx_destruct;
+@end

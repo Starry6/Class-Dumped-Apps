@@ -1,0 +1,36 @@
+@interface HMDCPUExceptionRecordManager : NSObject
+@property (nonatomic) NSMutableArray records;
+@property (nonatomic) NSMutableArray reportedRecordUUIDs;
+@property (nonatomic) NSMutableArray cacheCompareRecords;
+@property (nonatomic) NSObject<OS_dispatch_queue> storeQueue;
+@property (nonatomic) HMInstance instance;
+@property (nonatomic) BOOL ignoreDuplicate;
+@property (nonatomic) BOOL isRecordFromStore;
+@property (nonatomic) <HMDCPUExceptionRecordManagerDelegate> delegate;
+- (BOOL)ignoreDuplicate;
+- (id)cacheCompareRecords;
+- (void)cpuExceptionReportCompletion:;
+- (id)cpuExceptionReportData;
+- (id)cpuExceptionReprotDataWithRecords:;
+- (BOOL)isRecordFromStore;
+- (void)pushRecord:needUploadImmediately:;
+- (void)receiveMemroyWarning:;
+- (id)reportedRecordUUIDs;
+- (void)setCacheCompareRecords:;
+- (void)setIgnoreDuplicate:;
+- (void)setIsRecordFromStore:;
+- (void)setReportedRecordUUIDs:;
+- (id)instance;
+- (id)records;
+- (id)init;
+- (void)setInstance:;
+- (void)dealloc;
+- (void)setRecords:;
+- (void)setDelegate:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)storeQueue;
+- (void)setStoreQueue:;
+- (void)setupData;
+- (BOOL)storeRecords;
+@end

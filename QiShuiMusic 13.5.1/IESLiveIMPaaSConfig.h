@@ -1,0 +1,32 @@
+@interface IESLiveIMPaaSConfig : NSObject
+@property (nonatomic) NSMutableDictionary bizConfigs;
+@property (nonatomic) NSMutableDictionary bizDispatchConfigs;
+@property (nonatomic) @? sharedUnifiedClient;
+@property (nonatomic) @? appConfigBlock;
+@property (nonatomic) @? zstdInfoBlock;
+- (void)addBizConfig:;
+- (void)addBizDispatchConfig:;
+- (id)appConfigBlock;
+- (id)bizConfigWith:;
+- (id)bizConfigs;
+- (id)bizDispatchConfigWith:;
+- (id)bizDispatchConfigs;
+- (id)defaultBizConfig;
+- (id)imConfigWithZstdDictInfo;
+- (int)p_currentNetworkStatus;
+- (int)p_currentPlatform;
+- (int)p_getClientVersionNumber;
+- (void)setAppConfigBlock:;
+- (void)setBizConfigs:;
+- (void)setBizDispatchConfigs:;
+- (void)setSharedUnifiedClient:;
+- (void)setZstdInfoBlock:;
+- (void)setupEnvironment;
+- (void)setupExecuteConfig;
+- (id)sharedUnifiedClient;
+- (void)trackEvent:params:;
+- (id)zstdInfoBlock;
+- (id)init;
+- (void).cxx_destruct;
++ (id)sharedInstance;
+@end

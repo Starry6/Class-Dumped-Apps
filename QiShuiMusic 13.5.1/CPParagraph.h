@@ -1,0 +1,36 @@
+@interface CPParagraph : CPRotatedRegion
+@property (nonatomic) CPParagraphListItem listItem;
+- (id)init;
+- (void)dealloc;
+- (void)setAlignment:;
+- (unsigned long long)index;
+- (id)bounds;
+- (unsigned long long)alignment;
+- (id)copyWithZone:;
+- (id)listItem;
+- (BOOL)isTextRegion;
+- (void)setListItem:;
+- (void)accept:;
+- (id)renderedBounds;
+- (BOOL)isBoxRegion;
+- (BOOL)isGraphicalRegion;
+- (BOOL)isRowRegion;
+- (void)setIsImageRegion:;
+- (BOOL)isImageRegion;
+- (BOOL)isShapeRegion;
+- (double)selectionBottom;
+- (id)flowProperties;
+- (void)setFlowProperties:;
+- (BOOL)isParagraphRegion;
+- (BOOL)isListItemRegion;
+- (void)setIsTextRegion:;
+- (void)setNoIndentation:;
+- (BOOL)noIndentation;
+- (BOOL)hasDropCap;
+- (void)setHasDropCap:;
+- (void)explode;
+- (id)reducedBounds;
+- (void)setBelow:;
+- (BOOL)below;
+- (BOOL)isPreformattedWithUnitWidth:;
+@end

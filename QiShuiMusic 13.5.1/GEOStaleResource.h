@@ -1,0 +1,38 @@
+@interface GEOStaleResource : PBCodable
+@property (nonatomic) BOOL hasDesiredResource;
+@property (nonatomic) GEOResource desiredResource;
+@property (nonatomic) BOOL hasFallbackResource;
+@property (nonatomic) GEOResource fallbackResource;
+@property (nonatomic) BOOL hasOriginalTimestamp;
+@property (nonatomic) double originalTimestamp;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (id)init;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (double)originalTimestamp;
+- (BOOL)hasDesiredResource;
+- (id)desiredResource;
+- (void)setDesiredResource:;
+- (BOOL)hasFallbackResource;
+- (id)fallbackResource;
+- (void)setFallbackResource:;
+- (void)setOriginalTimestamp:;
+- (void)setHasOriginalTimestamp:;
+- (BOOL)hasOriginalTimestamp;
++ (BOOL)isValid:;
+@end

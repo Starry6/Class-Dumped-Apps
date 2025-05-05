@@ -1,0 +1,38 @@
+@interface CXAbstractProvider : NSObject
+@property (nonatomic) NSMutableArray mutablePendingTransactions;
+@property (nonatomic) @? connectionInterruptionHandler;
+@property (nonatomic) <CXActionDelegateInternal> internalActionDelegate;
+@property (nonatomic) <CXAbstractProviderDelegate> delegate;
+@property (nonatomic) NSObject<OS_dispatch_queue> delegateQueue;
+@property (nonatomic) NSObject<OS_dispatch_queue> queue;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSArray pendingTransactions;
+- (id)init;
+- (void)provider:handleTimeoutForAction:;
+- (id)connectionInterruptionHandler;
+- (void)setDelegate:;
+- (id)internalActionDelegate;
+- (void)_performDelegateCallback:;
+- (id)mutablePendingTransactions;
+- (void)_updatePendingTransactions;
+- (id)delegateQueue;
+- (void)sendDidBeginForProvider:;
+- (void)actionCompleted:;
+- (id)delegate;
+- (id)pendingTransactions;
+- (void).cxx_destruct;
+- (void)provider:commitTransaction:;
+- (void)_syncSetDelegate:queue:;
+- (void)setConnectionInterruptionHandler:;
+- (void)performDelegateCallback:;
+- (void)handleConnectionInterruptionForProvider:;
+- (id)_pendingActionWithUUID:;
+- (void)setDelegateQueue:;
+- (id)queue;
+- (void)invalidate;
+- (void)setDelegate:queue:;
+- (void)setInternalActionDelegate:;
+@end

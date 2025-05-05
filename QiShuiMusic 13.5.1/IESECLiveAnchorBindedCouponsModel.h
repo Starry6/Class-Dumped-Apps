@@ -1,0 +1,30 @@
+@interface IESECLiveAnchorBindedCouponsModel : IESECLiveApiBaseModel
+@property (nonatomic) NSArray coupons;
+@property (nonatomic) NSString couponInstructionURL;
+@property (nonatomic) IESECLiveAnchorBindedCouponsExtraModel extra;
+@property (nonatomic) BOOL hasMore;
+@property (nonatomic) Q page;
+@property (nonatomic) NSString currentCouponID;
+@property (nonatomic) NSArray currentCouponIds;
+@property (nonatomic) BOOL allowSetCoupons;
+- (BOOL)allowSetCoupons;
+- (id)coupons;
+- (id)currentCouponID;
+- (id)couponInstructionURL;
+- (id)currentCouponIds;
+- (void)setAllowSetCoupons:;
+- (void)setCouponInstructionURL:;
+- (void)setCoupons:;
+- (void)setCurrentCouponID:;
+- (void)setCurrentCouponIds:;
+- (void)setExtra:;
+- (unsigned long long)page;
+- (void)setPage:;
+- (id)extra;
+- (void)setHasMore:;
+- (void).cxx_destruct;
+- (BOOL)hasMore;
++ (id)couponsJSONTransformer;
++ (id)extraJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

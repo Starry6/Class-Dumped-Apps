@@ -1,0 +1,33 @@
+@interface BDXFluencyMonitorRecord : NSObject
+@property (nonatomic) double startTime;
+@property (nonatomic) double stopTime;
+@property (nonatomic) q frameCount;
+@property (nonatomic) double hitchTime;
+@property (nonatomic) double lightDropframeTime;
+@property (nonatomic) double middleDropframeTime;
+@property (nonatomic) double highDropframeTime;
+@property (nonatomic) BDXMonitor monitor;
+@property (nonatomic) q platform;
+@property (nonatomic) NSDictionary data;
+- (double)highDropframeTime;
+- (double)hitchTime;
+- (double)lightDropframeTime;
+- (double)middleDropframeTime;
+- (void)setHighDropframeTime:;
+- (void)setHitchTime:;
+- (void)setLightDropframeTime:;
+- (void)setMiddleDropframeTime:;
+- (long long)frameCount;
+- (void)setPlatform:;
+- (id)data;
+- (double)startTime;
+- (double)stopTime;
+- (void)setFrameCount:;
+- (void)setMonitor:;
+- (long long)platform;
+- (void).cxx_destruct;
+- (void)setData:;
+- (id)monitor;
+- (void)setStopTime:;
+- (id)initWithStartTime:;
+@end

@@ -1,0 +1,30 @@
+@interface MPMediaPropertyPredicate : MPMediaPredicate
+@property (nonatomic) NSString property;
+@property (nonatomic) @ value;
+@property (nonatomic) q comparisonType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setProperty:;
+- (long long)comparisonType;
+- (void)setComparisonType:;
+- (id)property;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)descriptionOfValue:forProperty:;
+- (void)encodeWithCoder:;
+- (void)setValue:;
+- (id)initWithProtobufferDecodableObject:library:;
+- (id)protobufferEncodableObjectFromLibrary:;
+- (void).cxx_destruct;
+- (id)ML3PredicateForTrack;
+- (id)_ML3PredicateForML3EntityProperty:;
+- (id)description;
+- (id)value;
+- (id)ML3PredicateForContainer;
+- (BOOL)isEqual:;
++ (BOOL)supportsSecureCoding;
++ (id)predicateWithValue:forProperty:comparisonType:;
++ (id)predicateWithValue:forProperty:;
+@end

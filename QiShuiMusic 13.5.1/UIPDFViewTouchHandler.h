@@ -1,0 +1,32 @@
+@interface UIPDFViewTouchHandler : UIResponder
+@property (nonatomic) BOOL allowMenu;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithView:;
+- (void)dealloc;
+- (BOOL)gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:;
+- (void)hideMenu;
+- (void)selectAll:;
+- (BOOL)canBecomeFirstResponder;
+- (void)copy:;
+- (BOOL)canPerformAction:withSender:;
+- (BOOL)gestureRecognizer:shouldReceiveTouch:;
+- (void)showMenu;
+- (BOOL)gestureRecognizerShouldBegin:;
+- (id)nextResponder;
+- (BOOL)resignFirstResponder;
+- (void)setAllowMenu:;
+- (BOOL)allowMenu;
+- (void)doubleTapRecognized:;
+- (void)singleTapRecognized:;
+- (void)twoFingerTapRecognized:;
+- (void)briefPressRecognized:;
+- (void)longPressRecognized:;
+- (void)enableRecognizers;
+- (void)disableRecognizers;
+- (void)setFirstTouch;
+- (BOOL)delegateGesture:kind:;
++ (void)releaseViewManager;
+@end

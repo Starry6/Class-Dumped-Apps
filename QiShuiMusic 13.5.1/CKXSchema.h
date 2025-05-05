@@ -1,0 +1,31 @@
+@interface CKXSchema : NSObject
+@property (nonatomic) Q nextIdentifier;
+- (id)init;
+- (BOOL)fieldExists:;
+- (unsigned long long)nextIdentifier;
+- (void).cxx_destruct;
+- (void)setNextIdentifier:;
+- (id).cxx_construct;
+- (id)copyWithZone:;
+- (long long)newIdentifier;
+- (unsigned long long)defineTopLevelContainerStruct;
+- (unsigned long long)defineStruct;
+- (unsigned long long)defineFieldForStruct:withEncoding:optional:;
+- (unsigned long long)defineStructReferenceToType:forStruct:;
+- (unsigned long long)defineListReferenceToStructType:forStruct:;
+- (unsigned long long)defineListReferenceOfType:forStruct:;
+- (unsigned long long)defineValueListReferenceWithEncoding:forStruct:;
+- (long long)fieldTypeForField:;
+- (long long)listTypeForField:;
+- (unsigned long long)valueSizeForField:;
+- (long long)valueTypeForField:;
+- (BOOL)valueFieldIsOptional:;
+- (unsigned long long)structForStructReference:;
+- (unsigned long long)structForListReference:;
+- (unsigned long long)referencedStructCountForStructToken:;
+- (unsigned long long)referencedStructAtIndex:forStructToken:;
+- (BOOL)structIsTopLevelContainer:;
+- (unsigned long long)fieldTokenCountForStructToken:;
+- (unsigned long long)fieldTokenAtIndex:forStructToken:;
+- (unsigned long long)structContainingField:;
+@end

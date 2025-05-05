@@ -1,0 +1,37 @@
+@interface TTStreamInfo : NSObject
+@property (nonatomic) q streamType;
+@property (nonatomic) q streamIndex;
+@property (nonatomic) NSString codecName;
+@property (nonatomic) q frameRate;
+@property (nonatomic) q bitRate;
+@property (nonatomic) q width;
+@property (nonatomic) q height;
+@property (nonatomic) q sampleRate;
+@property (nonatomic) q channels;
+@property (nonatomic) q duration;
+@property (nonatomic) q rotation;
+- (long long)channels;
+- (id)init;
+- (void)setFrameRate:;
+- (long long)frameRate;
+- (long long)sampleRate;
+- (void)setWidth:;
+- (void)setRotation:;
+- (long long)height;
+- (void)setDuration:;
+- (long long)width;
+- (void)setHeight:;
+- (void).cxx_destruct;
+- (void)setChannels:;
+- (long long)rotation;
+- (long long)streamType;
+- (long long)bitRate;
+- (long long)duration;
+- (void)setSampleRate:;
+- (void)setCodecName:;
+- (id)codecName;
+- (void)setBitRate:;
+- (void)setStreamType:;
+- (long long)streamIndex;
+- (void)setStreamIndex:;
+@end

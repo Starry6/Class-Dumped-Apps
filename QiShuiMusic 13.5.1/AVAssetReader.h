@@ -1,0 +1,34 @@
+@interface AVAssetReader : NSObject
+@property (nonatomic) ^{OpaqueFigAssetReader=} figAssetReader;
+@property (nonatomic) BOOL readSingleSample;
+@property (nonatomic) AVAsset asset;
+@property (nonatomic) q status;
+@property (nonatomic) NSError error;
+@property (nonatomic) {?={?=qiIq}{?=qiIq}} timeRange;
+@property (nonatomic) NSArray outputs;
+- (id)timeRange;
+- (void)_transitionToStatus:failureError:;
+- (id)init;
+- (void)dealloc;
+- (BOOL)canAddOutput:;
+- (id)asset;
+- (void)_outputDidFinish:;
+- (id)error;
+- (void)setTimeRange:;
+- (void)_tearDownFigAssetReader;
+- (id)_figAssetReader;
+- (id)outputs;
+- (BOOL)_canAddOutput:exceptionReason:;
+- (void)_setReadSingleSample:;
+- (void)cancelReading;
+- (id)description;
+- (long long)status;
+- (void)addOutput:;
+- (void)_handleServerDiedNotification;
+- (id)initWithAsset:error:;
+- (void)_failWithError:;
+- (BOOL)_readSingleSample;
+- (BOOL)startReading;
++ (id)assetReaderWithAsset:error:;
++ (id)_errorForOSStatus:;
+@end

@@ -1,0 +1,32 @@
+@interface BDUGLuckyPollingSettingsData : BDUGLuckyBDModel
+@property (nonatomic) BDUGLuckyPollingGeneralSettingsMeta settingsMeta;
+@property (nonatomic) NSDictionary activityInfo;
+@property (nonatomic) BDUGLuckyPollingCommonInfo commonInfo;
+@property (nonatomic) NSString extra;
+@property (nonatomic) NSArray<BDUGLuckyPollingSettingsActivityModel> activityModels;
+@property (nonatomic) BDUGLuckyPollingSettingsDowngradeModel downgrade;
+@property (nonatomic) BOOL needUpdatePersonalSettings;
+@property (nonatomic) BDUGLuckyEntryInfo entryInfo;
+- (id)activityModels;
+- (id)downgrade;
+- (id)entryInfo;
+- (BOOL)modelCustomTransformFromDictionary:;
+- (BOOL)needUpdatePersonalSettings;
+- (void)setActivityInfo:;
+- (void)setActivityModels:;
+- (void)setDowngrade:;
+- (void)setEntryInfo:;
+- (void)setExtra:;
+- (void)setNeedUpdatePersonalSettings:;
+- (void)setSettingsMeta:;
+- (id)settingsMeta;
+- (id)commonInfo;
+- (void)setCommonInfo:;
+- (id)extra;
+- (id)initWithDictionary:error:;
+- (void).cxx_destruct;
+- (id)activityInfo;
++ (id)keyMapper;
++ (id)modelContainerPropertyGenericClass;
++ (id)modelCustomPropertyMapper;
+@end

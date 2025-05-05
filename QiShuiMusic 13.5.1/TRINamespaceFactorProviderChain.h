@@ -1,0 +1,30 @@
+@interface TRINamespaceFactorProviderChain : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)isRegistered;
+- (id)experimentId;
+- (id)treatmentId;
+- (id)namespaceName;
+- (int)deploymentId;
+- (void)dispose;
+- (id)initWithNamespaceName:typedProviderChain:paths:;
+- (unsigned int)namespaceId;
+- (id)rolloutId;
+- (id)factorLevels;
+- (id)levelForFactor:;
+- (void)computeTreatmentAssetIndexes:withAssociatedExperimentIds:andFactorPackAssetIds:withAssociatedRolloutDeployments:withExperimentFactorNames:andRolloutFactorNames:forFactors:alwaysIncludingRolloutLayer:usingFilter:;
+- (id)providerForTreatmentLayer:;
+- (unsigned int)namespaceCompatibilityVersion;
+- (BOOL)hasAnyTreatmentInLayers:;
+- (void).cxx_destruct;
+- (id)factorNamesWithObfuscation:;
+- (id)levelForFactor:outProvider:;
+- (id)promotableFactorPackId;
+- (id)_dealiasedFactorLevelForFactorLevel:unaliasedName:;
+- (id)initWithNamespaceName:typedProviderChain:paths:excludingTreatmentLayers:;
++ (id)factorProviderWithPaths:namespaceName:resolver:;
++ (id)factorProviderWithPaths:namespaceName:;
++ (id)factorProviderWithPaths:namespaceName:excludingTreatmentLayers:;
+@end

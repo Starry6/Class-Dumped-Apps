@@ -1,0 +1,31 @@
+@interface UIStatusBarAnimationParameters : NSObject
+@property (nonatomic) double duration;
+@property (nonatomic) double delay;
+@property (nonatomic) q curve;
+@property (nonatomic) <_UIBasicAnimationFactory> animationFactory;
+@property (nonatomic) BOOL skipFencing;
+@property (nonatomic) double startTime;
+@property (nonatomic) BSAnimationSettings bsAnimationSettings;
+- (void)setCurve:;
+- (BOOL)shouldAnimate;
+- (id)init;
+- (id)initWithEmptyParameters;
+- (long long)curve;
+- (BOOL)skipFencing;
+- (void)setAnimationFactory:;
+- (void)setSkipFencing:;
+- (id)initWithDefaultParameters;
+- (id)animationFactory;
+- (id)bsAnimationSettings;
+- (void)setStartTime:;
+- (double)delay;
+- (double)startTime;
+- (void)setDelay:;
+- (void)setDuration:;
+- (void).cxx_destruct;
+- (double)duration;
++ (id)fencingAnimation;
++ (void)animateWithParameters:fromCurrentState:frameInterval:animations:completion:;
++ (void)animateWithParameters:fromCurrentState:animations:completion:;
++ (void)animateWithParameters:animations:completion:;
+@end

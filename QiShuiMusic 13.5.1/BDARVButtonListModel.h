@@ -1,0 +1,32 @@
+@interface BDARVButtonListModel : BDARVActionModel
+@property (nonatomic) BDARVButtonModel web;
+@property (nonatomic) BDARVButtonModel app;
+@property (nonatomic) BDARVButtonModel form;
+@property (nonatomic) BDARVButtonModel counsel;
+@property (nonatomic) BDARVButtonModel phone;
+@property (nonatomic) BDARVButtonModel open;
+@property (nonatomic) BDARVButtonModel dislike;
+@property (nonatomic) BDARVButtonModel coupon;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setWeb:;
+- (id)web;
+- (id)counsel;
+- (id)coupon;
+- (void)setCounsel:;
+- (void)setCoupon:;
+- (void)setDislike:;
+- (void)setOpen:;
+- (id)app;
+- (id)open;
+- (void)setApp:;
+- (id)initWithDictionary:error:;
+- (void).cxx_destruct;
+- (id)phone;
+- (void)setPhone:;
+- (id)dislike;
+- (id)form;
+- (void)setForm:;
+@end

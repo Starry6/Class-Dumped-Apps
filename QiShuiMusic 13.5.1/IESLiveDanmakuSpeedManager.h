@@ -1,0 +1,37 @@
+@interface IESLiveDanmakuSpeedManager : NSObject
+@property (nonatomic) IESLiveDanmakuSpeedConfiguration configuration;
+@property (nonatomic) BOOL enableDynamicStrategy;
+@property (nonatomic) double danmakuSpeed;
+@property (nonatomic) q danmakuSpeedStage;
+@property (nonatomic) NSTimer timer;
+@property (nonatomic) <IESLiveDanmakuSpeedChangedDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)calculateDanmakuStrategyFactor;
+- (double)danmakuSpeed;
+- (long long)danmakuSpeedStage;
+- (void)decision:result:;
+- (id)defaultFactors;
+- (void)detectedStrategyEventWith:result:;
+- (BOOL)enableDynamicStrategy;
+- (id)initWithDIContext:;
+- (void)onOrientationTransitionBegin:;
+- (void)setDanmakuSpeed:;
+- (void)setDanmakuSpeedStage:;
+- (void)setEnableDynamicStrategy:;
+- (void)setupDanmakuDynamicStrategy;
+- (void)setupDanmakuSpeedConfig;
+- (void)setupTimerForDynamicStrategy;
+- (void)strategyResultChange:withStrategyKey:withChangeReason:;
+- (void)stopTimer;
+- (void)dealloc;
+- (void)setDelegate:;
+- (void)setConfiguration:;
+- (void)setTimer:;
+- (id)configuration;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)timer;
+@end

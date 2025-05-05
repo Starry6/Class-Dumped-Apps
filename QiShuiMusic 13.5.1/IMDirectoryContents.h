@@ -1,0 +1,30 @@
+@interface IMDirectoryContents : NSObject
+@property (nonatomic) NSDictionary fileInfoMap;
+@property (nonatomic) NSArray sortedPaths;
+@property (nonatomic) NSArray topLevelPaths;
+@property (nonatomic) NSArray attachmentPaths;
+@property (nonatomic) NSSet allPaths;
+@property (nonatomic) NSString rootPath;
+@property (nonatomic) NSString attachmentsPath;
+@property (nonatomic) NSString stickersPath;
+- (id)rootPath;
+- (void).cxx_destruct;
+- (void)setAttachmentPaths:;
+- (id)attachmentPaths;
+- (id)fileInfoMap;
+- (void)gather;
+- (id)initWithRootPath:attachmentsPath:stickersPath:;
+- (BOOL)isAttachmentPath:;
+- (BOOL)isStickerPath:;
+- (void)recursivelyGatherFileInfoAtPath:fileInfoMap:;
+- (id)sortedPaths;
+- (id)allPaths;
+- (id)topLevelPaths;
+- (id)attachmentsPath;
+- (id)stickersPath;
+- (void)setFileInfoMap:;
+- (void)setSortedPaths:;
+- (void)setTopLevelPaths:;
+- (void)setAllPaths:;
++ (BOOL)isGroupPhotoPath:;
+@end

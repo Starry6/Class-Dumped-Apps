@@ -1,0 +1,30 @@
+@interface TTVideoEngineSTSAuth : NSObject
+@property (nonatomic) NSString authAK;
+@property (nonatomic) NSString authSK;
+@property (nonatomic) NSString authSessionToken;
+@property (nonatomic) NSString authExpiredTime;
+@property (nonatomic) q authExpiredTimeInLong;
+@property (nonatomic) NSString curServerTime;
+@property (nonatomic) q curServerTimeInLong;
+@property (nonatomic) q curLocalTimeInLong;
+- (id)authExpiredTime;
+- (id)authAK;
+- (long long)authExpiredTimeInLong;
+- (id)authSK;
+- (id)authSessionToken;
+- (long long)curLocalTimeInLong;
+- (id)curServerTime;
+- (long long)curServerTimeInLong;
+- (long long)getServerTime;
+- (id)initWithSTS:sk:sessionToken:expiredTime:curTime:;
+- (void)setAuthAK:;
+- (void)setAuthExpiredTime:;
+- (void)setAuthExpiredTimeInLong:;
+- (void)setAuthSK:;
+- (void)setAuthSessionToken:;
+- (void)setCurLocalTimeInLong:;
+- (void)setCurServerTime:;
+- (void)setCurServerTimeInLong:;
+- (void).cxx_destruct;
+- (id)toString;
+@end

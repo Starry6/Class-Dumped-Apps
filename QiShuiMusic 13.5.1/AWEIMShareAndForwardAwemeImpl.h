@@ -1,0 +1,33 @@
+@interface AWEIMShareAndForwardAwemeImpl : NSObject
+@property (nonatomic) NSString shareText;
+@property (nonatomic) AWEShareContext shareContext;
+@property (nonatomic) AWEIMMessage forwardMessage;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)clearBusinessModelFromIMSetting;
+- (void)didSelectEmoji:;
+- (void)p_setAwemeCoverImageView:model:;
+- (id)aweModel;
+- (id)businessModelFromIMSetting;
+- (void)configShareAlertTopView:withCoverImageView:contentLabel:;
+- (void)configShareBottomInputViewWithCoverImageView:;
+- (void)didSelectShareUser:inVC:;
+- (id)forwardMessage;
+- (id)messageTypeForShareTrack;
+- (void)p_addPOIInfoToParameters:;
+- (void)p_setAlertTopViewAwemeCoverImageView:model:;
+- (void)saveBusinessModelToIMSetting;
+- (void)setForwardMessage:;
+- (void)setShareContext:;
+- (id)shareContext;
+- (id)shareMessage;
+- (BOOL)shouldSendShareTextMessage;
+- (void)showCustomTipsAfterSendMessagesWithShareUserList:;
+- (id)socialRelationTrackFlagForSecUid:;
+- (void)willTransferToShareListVC:;
+- (id)shareText;
+- (void).cxx_destruct;
+- (void)setShareText:;
+@end

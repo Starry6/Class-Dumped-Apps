@@ -1,0 +1,32 @@
+@interface CSJPlayablePoolManager : NSObject
+@property (nonatomic) NSMutableDictionary playablePool;
+@property (nonatomic) NSMutableArray keySort;
+@property (nonatomic) q maxCache;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)trimAll;
+- (id)keySort;
+- (id)playableForKey:;
+- (void)removeObjectAt:;
+- (void)bu_webviewLoadFinish:;
+- (id)getRenderStatusFor:;
+- (long long)maxCache;
+- (id)playablePool;
+- (void)playableRenderFaild:;
+- (void)render:slot:forKey:;
+- (void)setKeySort:;
+- (void)setMaxCache:;
+- (void)setPlayablePool:;
+- (void)storeObject:forKey:;
+- (void)willEvictObject:;
+- (void)appDidEnterBackground:;
+- (void)didReceiveMemoryWarning;
+- (id)objectAtIndex:;
+- (void).cxx_destruct;
+- (void)removeObjectForKey:;
+- (void)trim;
++ (id)keyForMaterial:;
++ (id)sharedInstance;
+@end

@@ -1,0 +1,2 @@
+@interface IESLiveSaaSPBIESLiveSaaSPBRoomInterventionVerifyOpenRoot : GPBRootObject
+@end

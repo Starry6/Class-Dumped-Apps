@@ -1,0 +1,2 @@
+@interface IESLiveSaaSPBIESLiveSaaSPBWalletCommonRoot : GPBRootObject
+@end

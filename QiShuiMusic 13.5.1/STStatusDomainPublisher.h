@@ -1,0 +1,33 @@
+@interface STStatusDomainPublisher : NSObject
+@property (nonatomic) <STStatusDomainData> data;
+@property (nonatomic) BOOL invalidated;
+@property (nonatomic) <STStatusDomainData> volatileData;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (void)dealloc;
+- (void)updateData:completion:;
+- (id)data;
+- (void)updateVolatileData:completion:;
+- (BOOL)isInvalidated;
+- (id)initWithServerHandle:;
+- (void)setData:withContext:completion:;
+- (void)handleUserInteraction:forDomain:;
+- (void).cxx_destruct;
+- (void)setData:;
+- (void)setVolatileData:withContext:completion:;
+- (void)invalidate;
+- (void)updateVolatileDataWithBlock:completion:;
+- (void)updateVolatileDataWithBlock:;
+- (void)updateDataWithBlock:;
+- (void)setData:completion:;
+- (void)updateDataWithBlock:completion:;
+- (id)volatileData;
+- (void)setVolatileData:;
+- (void)setVolatileData:completion:;
++ (id)emptyData;
++ (unsigned long long)statusDomainName;
++ (id)emptyChangeContext;
+@end

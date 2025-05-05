@@ -1,0 +1,33 @@
+@interface BWBoundingBoxInferenceConfiguration : BWInferenceConfiguration
+@property (nonatomic) BOOL inferenceInputUsesPortraitOrientation;
+@property (nonatomic) float trackingThreshold;
+@property (nonatomic) float maxMatchCost;
+@property (nonatomic) {BWSmartCameraScene=BBffffsssB*} confidenceFilterSettings;
+@property (nonatomic) BOOL interiorSuppression;
+@property (nonatomic) float interiorSuppressionPadding;
+@property (nonatomic) float angularOffsetExponentialSmoothing;
+@property (nonatomic) float fontSizeStartReportingThreshold;
+@property (nonatomic) float fontSizeStopReportingThreshold;
+@property (nonatomic) FigCaptureLogSmartCameraGating logger;
+- (id)logger;
+- (void)dealloc;
+- (void)setLogger:;
+- (BOOL)inferenceInputUsesPortraitOrientation;
+- (void)setInferenceInputUsesPortraitOrientation:;
+- (float)trackingThreshold;
+- (void)setTrackingThreshold:;
+- (float)maxMatchCost;
+- (void)setMaxMatchCost:;
+- (id)confidenceFilterSettings;
+- (void)setConfidenceFilterSettings:;
+- (BOOL)interiorSuppression;
+- (void)setInteriorSuppression:;
+- (float)interiorSuppressionPadding;
+- (void)setInteriorSuppressionPadding:;
+- (float)angularOffsetExponentialSmoothing;
+- (void)setAngularOffsetExponentialSmoothing:;
+- (float)fontSizeStartReportingThreshold;
+- (void)setFontSizeStartReportingThreshold:;
+- (float)fontSizeStopReportingThreshold;
+- (void)setFontSizeStopReportingThreshold:;
+@end

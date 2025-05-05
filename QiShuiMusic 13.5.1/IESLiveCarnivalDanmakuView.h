@@ -1,0 +1,33 @@
+@interface IESLiveCarnivalDanmakuView : IESLiveDanmakuBaseView
+@property (nonatomic) IESLiveDanmakuNormalLabel contentLabel;
+@property (nonatomic) UIImageView<IESLiveWebPPlayer> backgroundImgView;
+@property (nonatomic) UIImageView avatarImgView;
+@property (nonatomic) UIView labelContent;
+@property (nonatomic) double cacheDanmukuWidth;
+@property (nonatomic) <IESLiveLanguageService> languageService;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)updateWithNode:;
+- (id)languageService;
+- (void)updateWithTime:;
+- (id)avatarImgView;
+- (id)backgroundImgView;
+- (double)cacheDanmukuWidth;
+- (id)labelContent;
+- (void)refreshContentWithViewModel:;
+- (void)setAvatarImgView:;
+- (void)setBackgroundImgView:;
+- (void)setCacheDanmukuWidth:;
+- (void)setLabelContent:;
+- (void)setLanguageService:;
+- (id)init;
+- (void)prepareForReuse;
+- (id)initWithFrame:;
+- (id)sizeThatFits:;
+- (void).cxx_destruct;
+- (void)setupViews;
+- (id)contentLabel;
+- (void)setContentLabel:;
+@end

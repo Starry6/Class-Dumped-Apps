@@ -1,0 +1,36 @@
+@interface IESLivePSActionSheetItem : IESLiveDynamicModel
+@property (nonatomic) Q itemID;
+@property (nonatomic) Q area;
+@property (nonatomic) q priority;
+@property (nonatomic) # itemViewClass;
+@property (nonatomic) NSArray supportMessageClasses;
+@property (nonatomic) BOOL stillShowPanelWhenClickItem;
+@property (nonatomic) @? canShowBlock;
+@property (nonatomic) @? itemWillShowAndUpdateViewBlock;
+@property (nonatomic) @? didShowBlock;
+@property (nonatomic) @? clickAction;
+@property (nonatomic) @? dismissBlock;
+- (void)setStillShowPanelWhenClickItem:;
+- (void)setClickAction:;
+- (id)canShowBlock;
+- (id)clickAction;
+- (id)didShowBlock;
+- (id)itemWillShowAndUpdateViewBlock;
+- (void)setCanShowBlock:;
+- (void)setDidShowBlock:;
+- (void)setItemWillShowAndUpdateViewBlock:;
+- (void)setSupportMessageClasses:;
+- (BOOL)stillShowPanelWhenClickItem;
+- (id)supportMessageClasses;
+- (void)setPriority:;
+- (unsigned long long)itemID;
+- (void)setItemID:;
+- (void).cxx_destruct;
+- (long long)priority;
+- (unsigned long long)area;
+- (void)setArea:;
+- (id)dismissBlock;
+- (void)setDismissBlock:;
+- (Class)itemViewClass;
+- (void)setItemViewClass:;
+@end

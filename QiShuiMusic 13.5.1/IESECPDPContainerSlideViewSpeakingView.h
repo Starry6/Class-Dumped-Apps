@@ -1,0 +1,33 @@
+@interface IESECPDPContainerSlideViewSpeakingView : UIView
+@property (nonatomic) LOTAnimationView livingLottieView;
+@property (nonatomic) IESECUIImageView imageView;
+@property (nonatomic) UILabel label;
+@property (nonatomic) NSString url;
+@property (nonatomic) UIView lineView;
+@property (nonatomic) CAGradientLayer maskLayer;
+@property (nonatomic) NSString productID;
+@property (nonatomic) @? clickCallback;
+- (id)clickCallback;
+- (void)clickPopView:;
+- (id)initWithFrame:image:productID:;
+- (id)livingLottieView;
+- (void)setClickCallback:;
+- (void)setLivingLottieView:;
+- (void)updateSpeakingGood:productID:;
+- (id)productID;
+- (id)url;
+- (void)setProductID:;
+- (void)layoutSubviews;
+- (void)setLabel:;
+- (id)label;
+- (id)hitTest:withEvent:;
+- (void)setUrl:;
+- (void)setup;
+- (void).cxx_destruct;
+- (id)imageView;
+- (void)setImageView:;
+- (id)maskLayer;
+- (id)lineView;
+- (void)setLineView:;
+- (void)setMaskLayer:;
+@end

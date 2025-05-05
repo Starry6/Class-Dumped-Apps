@@ -1,0 +1,30 @@
+@interface AMapGeocodeSearchRequest : AMapSearchObject
+@property (nonatomic) NSString cachedKey;
+@property (nonatomic) NSString paramCompareString;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) BOOL isBatch;
+@property (nonatomic) NSString address;
+@property (nonatomic) NSString city;
+@property (nonatomic) NSString country;
+- (BOOL)isBatch;
+- (id)cacheCopy;
+- (void)formattedCachedStringWithLanguage:;
+- (BOOL)isSupportCache;
+- (void)setIsBatch:;
+- (id)city;
+- (id)country;
+- (id)init;
+- (void)setAddress:;
+- (void)setCountry:;
+- (void).cxx_destruct;
+- (id)address;
+- (void)setCity:;
+- (unsigned long long)cacheType;
+- (id)requestPath;
+- (id)cachedKey;
+- (void)setCachedKey:;
++ (id)ajo_mapping;
+@end

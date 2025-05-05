@@ -1,0 +1,34 @@
+@interface SSDownloadStatus : NSObject
+@property (nonatomic) NSError error;
+@property (nonatomic) BOOL contentRestricted;
+@property (nonatomic) BOOL failed;
+@property (nonatomic) BOOL pausable;
+@property (nonatomic) BOOL paused;
+@property (nonatomic) BOOL failedTransient;
+@property (nonatomic) SSDownloadPhase activePhase;
+@property (nonatomic) float percentComplete;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithXPCEncoding:;
+- (float)percentComplete;
+- (void)dealloc;
+- (id)copyXPCEncoding;
+- (void)setError:;
+- (void)setPercentComplete:;
+- (void)setOperationType:;
+- (id)error;
+- (BOOL)isPaused;
+- (void)setPaused:;
+- (void)setPausable:;
+- (BOOL)isFailed;
+- (id)copyWithZone:;
+- (BOOL)isPausable;
+- (void)setFailed:;
+- (BOOL)isContentRestricted;
+- (BOOL)isFailedTransient;
+- (void)setOperationProgress:;
+- (id)activePhase;
+- (void)setContentRestricted:;
+@end

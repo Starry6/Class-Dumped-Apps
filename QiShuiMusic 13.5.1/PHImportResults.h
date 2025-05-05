@@ -1,0 +1,38 @@
+@interface PHImportResults : PHImportExceptionRecorder
+@property (nonatomic) NSDate startTime;
+@property (nonatomic) NSDate endTime;
+@property (nonatomic) NSMutableDictionary pmrInfo;
+@property (nonatomic) NSMutableArray importRecords;
+@property (nonatomic) PHImportSource importSource;
+@property (nonatomic) Q importedCount;
+@property (nonatomic) Q failedToImportCount;
+@property (nonatomic) C result;
+@property (nonatomic) NSError error;
+- (unsigned char)result;
+- (double)runTime;
+- (id)init;
+- (void)setStartTime:;
+- (void)setEndTime:;
+- (id)error;
+- (id)startTime;
+- (id)endTime;
+- (void).cxx_destruct;
+- (id)exceptions;
+- (void)addUnsupportedPath:;
+- (void)addImportRecord:;
+- (unsigned long long)importedCount;
+- (unsigned long long)failedToImportCount;
+- (id)importRecordExceptions;
+- (id)generatePMRInfo;
+- (void)insertStart:end:intoGroups:ofType:;
+- (void)verifyGroups:;
+- (void)log:activity:description:digits:;
+- (void)logPMR;
+- (id)importSource;
+- (id)importRecords;
+- (void)setImportRecords:;
+- (id)pmrInfo;
+- (void)setPmrInfo:;
++ (id)resultsWithException:;
++ (id)resultsWithExceptions:;
+@end

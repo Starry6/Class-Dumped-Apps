@@ -1,0 +1,34 @@
+@interface DateProvider : BaseDateProvider
+@property (nonatomic) NSDate date;
+@property (nonatomic) Q calendarUnits;
+@property (nonatomic) BOOL uppercase;
+@property (nonatomic) NSString dateFormat;
+@property (nonatomic) NSString dateFormatTemplate;
+@property (nonatomic) NSDateFormatter dateFormatter;
+@property (nonatomic) Q updateWallClockAlignment;
+- (id)dateFormatter;
+- (void)setDateFormat:;
+- (id)date;
+- (id)_sessionTextForIndex:context:;
+- (id)dateFormat;
+- (long long)updateType;
+- (void).cxx_destruct;
+- (void)setDate:;
+- (BOOL)uppercase;
+- (void)setDateFormatter:;
+- (void)setUppercase:;
+- (unsigned long long)updateWallClockAlignment;
+- (void)_startSessionWithDate:;
+- (id)initWithDate:units:;
+- (id)initWithDate:units:calendar:locale:timeZone:;
+- (id)initWithDateFormat:calendar:locale:timeZone:;
+- (id)initWithDateFormatTemplate:calendar:locale:timeZone:;
+- (id)_completeDateTemplateSeries;
+- (id)_partialDateTemplateSeriesForUnits:;
+- (unsigned long long)_minCalendarUnitFromFormat:;
+- (void)setUpdateWallClockAlignment:;
+- (unsigned long long)calendarUnits;
+- (void)setCalendarUnits:;
+- (id)dateFormatTemplate;
+- (void)setDateFormatTemplate:;
+@end

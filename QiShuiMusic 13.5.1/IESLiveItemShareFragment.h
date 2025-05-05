@@ -1,0 +1,30 @@
+@interface IESLiveItemShareFragment : IESLiveRoomComponent
+@property (nonatomic) IESLiveItemSharePanelView itemSharePanelView;
+@property (nonatomic) IESLiveItemShareApi itemShareApi;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)componentCreate;
+- (void)addOpenMicroAppActionSheetItem;
+- (void)addOpenMicroAppPSActionSheetItem;
+- (void)componentBindService;
+- (void)componentMount;
+- (void)getItemShareDataAndRefreshPanelView;
+- (BOOL)isInMseqRoom;
+- (id)itemShareApi;
+- (id)itemSharePanelView;
+- (id)microAppParamsGenerateWithShareItemId:fromPosition:;
+- (void)openMicroAppSchemaWithNode:;
+- (id)processedSchemaWithSchema:itemId:fromPosition:;
+- (void)setItemShareApi:;
+- (void)setItemSharePanelView:;
+- (void)shareItemWithInfo:itemType:targetSchema:completion:;
+- (void)shareItemWithInfo:item_type:;
+- (void)trackItemShareSuccessWithItemInfo:itemType:;
+- (void)trackMicroAppParamsEvent:withShareItemId:schema:fromPosition:;
+- (void).cxx_destruct;
+- (void)messageReceived:;
++ (BOOL)isMixed;
++ (BOOL)componentShouldActive:;
+@end

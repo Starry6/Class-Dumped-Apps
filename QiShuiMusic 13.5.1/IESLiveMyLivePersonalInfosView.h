@@ -1,0 +1,32 @@
+@interface IESLiveMyLivePersonalInfosView : IESLiveUserCardPersonalInfosView
+@property (nonatomic) IESLiveUserCardAuthInfosView authView;
+@property (nonatomic) UIStackView introAndAnnouncement;
+@property (nonatomic) IESLiveUserCardTagsView tagsView;
+@property (nonatomic) UIStackView container;
+@property (nonatomic) UIImageView openIndicator;
+@property (nonatomic) BOOL isOpen;
+@property (nonatomic) IESLiveUserCardStore store;
+- (id)createAnnouncementLabel;
+- (id)createIntroductionLabel;
+- (id)createMyLiveTagsView;
+- (id)createTagsView;
+- (void)didSetAttachingDIContext;
+- (id)introAndAnnouncement;
+- (id)openIndicator;
+- (void)openIndicatorTapped:;
+- (void)setIntroAndAnnouncement:;
+- (void)setOpenIndicator:;
+- (void)setTagsView:;
+- (id)tagsView;
+- (void)setContainer:;
+- (void)setStore:;
+- (id)initWithStore:;
+- (BOOL)isOpen;
+- (void)setIsOpen:;
+- (id)container;
+- (void)setup;
+- (void).cxx_destruct;
+- (id)store;
+- (void)setAuthView:;
+- (id)authView;
+@end

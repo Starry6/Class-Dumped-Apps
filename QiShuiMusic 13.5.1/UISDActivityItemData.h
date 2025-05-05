@@ -1,0 +1,34 @@
+@interface UISDActivityItemData : NSObject
+@property (nonatomic) NSMutableDictionary attachmentNamesByItem;
+@property (nonatomic) NSMutableDictionary subjectsByItem;
+@property (nonatomic) NSMutableDictionary previewImagesByItem;
+@property (nonatomic) NSMutableDictionary previewImageDataByItem;
+@property (nonatomic) NSMutableDictionary dataTypesByItem;
+@property (nonatomic) NSArray securityContexts;
+@property (nonatomic) NSDictionary openURLAnnotationsByURL;
+- (id)init;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)attachmentNamesByItem;
+- (id)subjectsByItem;
+- (id)previewImagesByItem;
+- (id)previewImageDataByItem;
+- (id)dataTypesByItem;
+- (id)openURLAnnotationsByURL;
+- (id)securityContexts;
+- (void)addAttachmentName:forItem:;
+- (id)attachmentNameForItem:;
+- (void)addSubject:forItem:;
+- (id)subjectForItem:;
+- (void)addPreviewImage:forItem:;
+- (id)previewImageForItem:;
+- (void)addPreviewImageData:forItem:;
+- (id)previewImageDataForItem:;
+- (void)addDataType:forItem:;
+- (id)dataTypeForItem:;
+- (BOOL)canAccessFileURL:;
+- (void)setSecurityContexts:;
+- (void)setOpenURLAnnotationsByURL:;
++ (BOOL)supportsSecureCoding;
+@end

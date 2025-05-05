@@ -1,0 +1,38 @@
+@interface CPLEngineStorage : NSObject
+@property (nonatomic) CPLEngineStore engineStore;
+@property (nonatomic) NSString name;
+@property (nonatomic) Q scopeType;
+@property (nonatomic) BOOL isEmpty;
+@property (nonatomic) BOOL shouldBeCreatedDynamically;
+@property (nonatomic) BOOL isAlive;
+@property (nonatomic) BOOL shouldIncludeInStatus;
+@property (nonatomic) CPLPlatformObject platformObject;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)openWithError:;
+- (BOOL)isAlive;
+- (BOOL)closeWithError:;
+- (BOOL)isEmpty;
+- (void)writeTransactionDidSucceed;
+- (id)redactedDescription;
+- (id)statusDictionary;
+- (void)transactionDidFinish;
+- (unsigned long long)scopeType;
+- (BOOL)deleteRecordsForScopeIndex:maxCount:deletedCount:error:;
+- (void).cxx_destruct;
+- (void)writeTransactionDidFail;
+- (id)initWithEngineStore:name:;
+- (id)platformObject;
+- (id)description;
+- (id)status;
+- (id)name;
+- (id)engineStore;
+- (id)statusPerScopeIndex;
+- (BOOL)shouldIncludeInStatus;
+- (BOOL)_checkSuperWasCalled;
+- (BOOL)testKey:value:didHandle:result:error:;
+- (BOOL)shouldBeCreatedDynamically;
++ (id)platformImplementationProtocol;
+@end

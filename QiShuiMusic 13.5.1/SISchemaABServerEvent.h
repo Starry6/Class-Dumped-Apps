@@ -1,0 +1,34 @@
+@interface SISchemaABServerEvent : SISchemaTopLevelUnionType
+@property (nonatomic) SISchemaInstrumentationMessage innerEvent;
+@property (nonatomic) SISchemaABSeverEventMetadata eventMetadata;
+@property (nonatomic) BOOL hasEventMetadata;
+@property (nonatomic) SISchemaABExperimentServerFeatureTriggered serverFeatureTriggered;
+@property (nonatomic) BOOL hasServerFeatureTriggered;
+@property (nonatomic) NSData jsonData;
+@property (nonatomic) Q whichEvent_Type;
+- (id)qualifiedMessageName;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (int)getAnyEventType;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (unsigned long long)whichEvent_Type;
+- (id)eventMetadata;
+- (void)setEventMetadata:;
+- (BOOL)hasEventMetadata;
+- (id)innerEvent;
+- (void)deleteEventMetadata;
+- (void)setHasEventMetadata:;
+- (void)setServerFeatureTriggered:;
+- (id)serverFeatureTriggered;
+- (void)deleteServerFeatureTriggered;
+- (BOOL)hasServerFeatureTriggered;
+- (void)setHasServerFeatureTriggered:;
+@end

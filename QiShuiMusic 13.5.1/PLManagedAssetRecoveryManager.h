@@ -1,0 +1,33 @@
+@interface PLManagedAssetRecoveryManager : NSObject
+@property (nonatomic) NSObject<OS_dispatch_queue> workQueue;
+@property (nonatomic) q state;
+- (void)setWorkQueue:;
+- (void)setState:;
+- (id)workQueue;
+- (id)initWithLibraryServicesManager:;
+- (long long)state;
+- (void).cxx_destruct;
+- (void)identifyAssetsWithInconsistentCloudState;
+- (void)startRecoveryUsingCloudPhotoLibraryManager:transaction:shouldIdentifyInconsistentAssets:;
+- (void)_startRecoveryUsingCloudPhotoLibraryManager:transaction:;
+- (void)_setCloudRecoveryState:forAssetsWithFetchRequestPredicate:resultsFilterPredicate:usingNonSyncableLibrary:;
+- (id)_loadObjectWithObjectID:managedObjectContext:;
+- (id)_recoveryStatesToProcessForAttributes:;
+- (void)_recoverNextAssetWithEnumerator:cloudPhotoLibraryManager:transaction:usingNonSyncableLibrary:andSyncableLibrary:;
+- (void)_recoverNextRecoveryState:forAsset:cloudPhotoLibraryManager:usingSyncableLibrary:completionBlock:;
+- (void)_performAssetRecoveryTaskForInconsistentState:state:cloudPhotoLibraryManager:usingSyncableLibrary:completionBlock:;
+- (void)_downloadResources:forAsset:usingCloudPhotoLibraryManager:completionHandler:;
+- (void)_fixDimensionsForAsset:cloudPhotoLibraryManager:completionBlock:;
+- (void)_fixOriginalAssetDimensionsForAsset:cloudPhotoLibraryManager:completionBlock:;
+- (BOOL)_fixRawUTIForAsset:error:;
+- (void)_fixIrisWithZeroVideoComplementDuration:cloudPhotoLibraryManager:completionBlock:;
+- (BOOL)_fixIrisWithZeroVideoComplementDuration:usingExistingVideoComplementAtPath:error:;
+- (void)_performTransactionOnLibrary:withObjectID:usingBlock:completionBlock:;
+- (void)_fixMissingFullSizeAdjustedResources:cloudPhotoLibraryManager:recoveryState:usingSyncableLibrary:completionBlock:;
+- (void)_generateMissingFullSizeAdjustedResourcesForAsset:recipesToGenerate:cloudPhotoLibraryManager:recoveryState:usingSyncableLibrary:completionBlock:;
++ (id)_imagesWithZeroWidthHeightPredicate;
++ (id)_assetsWithJPGFilenameAndRawPrimaryImageResourcePredicate;
++ (id)_irisesWithZeroVideoCpDuration;
++ (id)_predicateForAdjustedAssetsWithMissingResources;
++ (id)_predicateForAdjustedAssetsFailedDeferredRendering;
+@end

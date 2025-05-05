@@ -1,0 +1,38 @@
+@interface UISApplicationInitializationContext : NSObject
+@property (nonatomic) UISDisplayContext displayContext;
+@property (nonatomic) UISDisplayContext mainDisplayContext;
+@property (nonatomic) UISDisplayContext launchDisplayContext;
+@property (nonatomic) UISDeviceContext deviceContext;
+@property (nonatomic) UISCompatibilityContext compatibilityContext;
+@property (nonatomic) NSSet persistedSceneIdentifiers;
+@property (nonatomic) FBSSceneIdentityToken defaultSceneToken;
+@property (nonatomic) BOOL supportAppSceneRequests;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)deviceContext;
+- (void)encodeWithXPCDictionary:;
+- (id)initWithBSXPCCoder:;
+- (unsigned long long)hash;
+- (id)initWithXPCDictionary:;
+- (void).cxx_destruct;
+- (void)encodeWithBSXPCCoder:;
+- (id)description;
+- (id)mutableCopyWithZone:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)displayContext;
+- (id)mainDisplayContext;
+- (id)defaultSceneToken;
+- (id)persistedSceneIdentifiers;
+- (BOOL)supportAppSceneRequests;
+- (id)initWithDisplayContext:deviceContext:persistedSceneIdentifiers:;
+- (id)initWithDisplayContext:deviceContext:persistedSceneIdentifiers:supportAppSceneRequests:;
+- (id)initWithMainDisplayContext:launchDisplayContext:deviceContext:persistedSceneIdentifiers:supportAppSceneRequests:;
+- (id)initWithUISApplicationInitializationContext:;
+- (id)launchDisplayContext;
+- (id)compatibilityContext;
++ (id)defaultContext;
++ (BOOL)supportsBSXPCSecureCoding;
+@end

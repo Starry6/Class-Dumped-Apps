@@ -1,0 +1,30 @@
+@interface ABUAdPackageUpdater : NSObject
+@property (nonatomic) ABUMediaSlotConfig slotConfig;
+@property (nonatomic) q adType;
+@property (nonatomic) NSString linkID;
+@property (nonatomic) NSString reuseIdentifier;
+@property (nonatomic) NSString ecpm;
+@property (nonatomic) NSString aid;
+@property (nonatomic) NSString adExtra;
+@property (nonatomic) NSDictionary extraData;
+@property (nonatomic) NSNumber pricingType;
+- (void)setPricingType:;
+- (id)adExtra;
+- (id)ecpm;
+- (id)pricingType;
+- (void)setAdExtra:;
+- (void)setEcpm:;
+- (void)setSlotConfig:;
+- (id)slotConfig;
+- (id)reuseIdentifier;
+- (long long)adType;
+- (void).cxx_destruct;
+- (void)setReuseIdentifier:;
+- (void)setExtraData:;
+- (id)extraData;
+- (id)linkID;
+- (void)setLinkID:;
+- (void)setAdType:;
+- (void)setAid:;
+- (id)aid;
+@end

@@ -1,0 +1,34 @@
+@interface LCKTVConfig : NSObject
+@property (nonatomic) NSURL musicURL;
+@property (nonatomic) BOOL loop;
+@property (nonatomic) double musicStartTime;
+@property (nonatomic) Q ktvType;
+@property (nonatomic) Q musicType;
+@property (nonatomic) BOOL enableBGMusicFadeInOut;
+@property (nonatomic) NSInteger bgMusicFadeInDuration;
+@property (nonatomic) NSInteger bgMusicFadeInCurve;
+@property (nonatomic) NSInteger bgMusicFadeOutDuration;
+@property (nonatomic) NSInteger bgMusicFadeOutCurve;
+- (unsigned long long)ktvType;
+- (int)bgMusicFadeInCurve;
+- (int)bgMusicFadeInDuration;
+- (int)bgMusicFadeOutCurve;
+- (int)bgMusicFadeOutDuration;
+- (BOOL)enableBGMusicFadeInOut;
+- (double)musicStartTime;
+- (unsigned long long)musicType;
+- (id)musicURL;
+- (void)setBgMusicFadeInCurve:;
+- (void)setBgMusicFadeInDuration:;
+- (void)setBgMusicFadeOutCurve:;
+- (void)setBgMusicFadeOutDuration:;
+- (void)setEnableBGMusicFadeInOut:;
+- (void)setKtvType:;
+- (void)setMusicStartTime:;
+- (void)setMusicType:;
+- (void)setMusicURL:;
+- (void).cxx_destruct;
+- (BOOL)loop;
+- (void)setLoop:;
++ (id)defaultConfigWithMusicURL:;
+@end

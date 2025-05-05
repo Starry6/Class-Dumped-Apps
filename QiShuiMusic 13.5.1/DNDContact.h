@@ -1,0 +1,37 @@
+@interface DNDContact : NSObject
+@property (nonatomic) NSString contactIdentifier;
+@property (nonatomic) NSString firstName;
+@property (nonatomic) NSString middleName;
+@property (nonatomic) NSString lastName;
+@property (nonatomic) NSString nickName;
+@property (nonatomic) NSString organizationName;
+@property (nonatomic) NSSet phoneNumbers;
+@property (nonatomic) NSSet emailAddresses;
+- (id)phoneNumbers;
+- (id)emailAddresses;
+- (id)_descriptionForRedacted:;
+- (id)contactIdentifier;
+- (id)redactedDescription;
+- (id)firstName;
+- (id)middleName;
+- (id)lastName;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (id)nickName;
+- (void).cxx_destruct;
+- (id)description;
+- (id)mutableCopyWithZone:;
+- (id)organizationName;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)initWithContactIdentifier:;
+- (id)diffDescription;
+- (id)_initWithContactIdentifier:firstName:middleName:lastName:nickName:organizationName:phoneNumbers:emailAddresses:;
+- (id)normalizedPhoneNumbers;
+- (BOOL)matchesContact:;
+- (BOOL)matchesContactHandle:;
+- (id)_redactedDescriptionsForStrings:;
++ (BOOL)supportsSecureCoding;
++ (id)normalizePhoneNumber:;
+@end

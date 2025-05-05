@@ -1,0 +1,34 @@
+@interface GEOAlmanac : NSObject
+@property (nonatomic) BOOL isDayLight;
+@property (nonatomic) NSDate previousSunrise;
+@property (nonatomic) NSDate previousTransit;
+@property (nonatomic) NSDate previousSunset;
+@property (nonatomic) NSDate sunrise;
+@property (nonatomic) NSDate transit;
+@property (nonatomic) NSDate sunset;
+@property (nonatomic) NSDate nextSunrise;
+@property (nonatomic) NSDate nextTransit;
+@property (nonatomic) NSDate nextSunset;
+- (void)calculateAstronomicalTimeForLocation:time:;
+- (BOOL)isDayLightForTime:;
+- (id)transit;
+- (void)calculateAstronomicalTimeForLocation:time:altitudeInDegrees:;
+- (void)calculateGeocentricDirectionForSunX:Y:Z:date:;
+- (id)previousTransit;
+- (id)sunrise;
+- (void)calculateGeocentricDirectionForSunX:Y:Z:;
+- (id)nextSunset;
+- (id)previousSunset;
+- (id)nextSunrise;
+- (id)previousSunrise;
+- (id)sunset;
+- (BOOL)isDayLight;
+- (void)calculateAstronomicalTimeForLocation:;
+- (void)calculateAstronomicalTimeForLocation:time:altitudeInDegrees:options:;
+- (void).cxx_destruct;
+- (void)calculateAstronomicalTimeForLocation:date:altitudeInDegrees:options:;
+- (id)description;
+- (id)nextTransit;
+- (void)calculateAstronomicalTimeForLocation:altitudeInDegrees:;
+- (BOOL)isDayLightForDate:;
+@end

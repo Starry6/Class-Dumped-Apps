@@ -1,0 +1,33 @@
+@interface MRTransactionPacket : NSObject
+@property (nonatomic) NSData data;
+@property (nonatomic) _MRTransactionKeyProtobuf key;
+@property (nonatomic) _MRTransactionPacketProtobuf protobuf;
+@property (nonatomic) Q writeLength;
+@property (nonatomic) Q writePosition;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) Q actualLength;
+@property (nonatomic) Q totalLength;
+@property (nonatomic) Q totalWritePosition;
+@property (nonatomic) BOOL readComplete;
+@property (nonatomic) BOOL writeComplete;
+- (BOOL)isComplete;
+- (id)initWithProtobuf:;
+- (id)data;
+- (id)protobuf;
+- (id)key;
+- (id)identifier;
+- (void).cxx_destruct;
+- (id)description;
+- (id)copyWithZone:;
+- (unsigned long long)totalLength;
+- (unsigned long long)totalWritePosition;
+- (id)initWithData:forKey:;
+- (id)initWithPackets:;
+- (void)writeComplete;
+- (void)setWriteLength:;
+- (unsigned long long)actualLength;
+- (BOOL)isReadComplete;
+- (BOOL)isWriteComplete;
+- (unsigned long long)writeLength;
+- (unsigned long long)writePosition;
+@end

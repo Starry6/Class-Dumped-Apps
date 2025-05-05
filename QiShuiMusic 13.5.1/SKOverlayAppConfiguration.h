@@ -1,0 +1,31 @@
+@interface SKOverlayAppConfiguration : SKOverlayConfiguration
+@property (nonatomic) ASOOverlayAppConfiguration _backing;
+@property (nonatomic) NSString appIdentifier;
+@property (nonatomic) NSString campaignToken;
+@property (nonatomic) NSString providerToken;
+@property (nonatomic) NSString customProductPageIdentifier;
+@property (nonatomic) NSString latestReleaseID;
+@property (nonatomic) q position;
+@property (nonatomic) BOOL userDismissible;
+- (void)setPosition:;
+- (void)setAppIdentifier:;
+- (id)appIdentifier;
+- (long long)position;
+- (void)setAdImpression:;
+- (id)_init;
+- (id)initWithBacking:;
+- (id)initWithAppIdentifier:position:;
+- (void)setCampaignToken:;
+- (id)campaignToken;
+- (void)setProviderToken:;
+- (id)providerToken;
+- (void)setCustomProductPageIdentifier:;
+- (id)customProductPageIdentifier;
+- (void)setLatestReleaseID:;
+- (id)latestReleaseID;
+- (void)setUserDismissible:;
+- (BOOL)userDismissible;
+- (void)setAdditionalValue:forKey:;
+- (id)additionalValueForKey:;
+- (id)_impressionDictFromImpression:;
+@end

@@ -1,0 +1,30 @@
+@interface GEOComposedETARouteStep : NSObject
+@property (nonatomic) Q stepID;
+@property (nonatomic) {GEOPolylineCoordinateRange={?=If}{?=If}} routeCoordinateRange;
+@property (nonatomic) double travelDuration;
+@property (nonatomic) double length;
+@property (nonatomic) GEOTimeCheckpoints timeCheckpoints;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (double)distance;
+- (double)travelTime;
+- (id)init;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (double)length;
+- (void)setLength:;
+- (unsigned long long)stepID;
+- (void)setStepID:;
+- (id)timeCheckpoints;
+- (void)setTimeCheckpoints:;
+- (double)travelDuration;
+- (id)routeCoordinateRange;
+- (id)descriptionWithPrecision:;
+- (void)setRouteCoordinateRange:;
+- (void)setTravelDuration:;
++ (BOOL)supportsSecureCoding;
+@end

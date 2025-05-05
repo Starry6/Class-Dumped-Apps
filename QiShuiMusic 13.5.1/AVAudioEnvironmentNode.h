@@ -1,0 +1,31 @@
+@interface AVAudioEnvironmentNode : AVAudioNode
+@property (nonatomic) q outputType;
+@property (nonatomic) float outputVolume;
+@property (nonatomic) Q nextAvailableInputBus;
+@property (nonatomic) {AVAudio3DPoint=fff} listenerPosition;
+@property (nonatomic) {AVAudio3DVectorOrientation={AVAudio3DPoint=fff}{AVAudio3DPoint=fff}} listenerVectorOrientation;
+@property (nonatomic) {AVAudio3DAngularOrientation=fff} listenerAngularOrientation;
+@property (nonatomic) AVAudioEnvironmentDistanceAttenuationParameters distanceAttenuationParameters;
+@property (nonatomic) AVAudioEnvironmentReverbParameters reverbParameters;
+@property (nonatomic) NSArray applicableRenderingAlgorithms;
+@property (nonatomic) float volume;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (void)setOutputVolume:;
+- (unsigned long long)nextAvailableInputBus;
+- (float)outputVolume;
+- (void)setOutputType:;
+- (long long)outputType;
+- (id)applicableRenderingAlgorithms;
+- (void)setListenerPosition:;
+- (id)listenerPosition;
+- (void)setListenerVectorOrientation:;
+- (id)listenerVectorOrientation;
+- (void)setListenerAngularOrientation:;
+- (id)listenerAngularOrientation;
+- (id)distanceAttenuationParameters;
+- (id)reverbParameters;
+@end

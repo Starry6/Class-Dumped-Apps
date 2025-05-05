@@ -1,0 +1,30 @@
+@interface IESLiveStreamPlayerLayoutDynamicConfig : MTLModel
+@property (nonatomic) IESLiveStreamPlayerLayoutContentFrame contentFrame;
+@property (nonatomic) q topAvoidType;
+@property (nonatomic) q bottomAvoidType;
+@property (nonatomic) q scaleType;
+@property (nonatomic) IESLiveStreamPlayerLayoutAlignModeWrapper big;
+@property (nonatomic) IESLiveStreamPlayerLayoutAlignModeWrapper small;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (long long)bottomAvoidType;
+- (id)big;
+- (void)setBig:;
+- (void)setBottomAvoidType:;
+- (void)setTopAvoidType:;
+- (long long)topAvoidType;
+- (id)contentFrame;
+- (void)setContentFrame:;
+- (id)small;
+- (void).cxx_destruct;
+- (void)setSmall:;
+- (long long)scaleType;
+- (void)setScaleType:;
++ (id)bigJSONTransformer;
++ (id)contentFrameJSONTransformer;
++ (id)smallJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
++ (id)configWithDictionary:;
+@end

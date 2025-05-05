@@ -1,0 +1,37 @@
+@interface GEORPSearchFeedbackContext : PBCodable
+@property (nonatomic) NSMutableArray autocompleteSuggestionLists;
+@property (nonatomic) BOOL hasRequestContext;
+@property (nonatomic) GEORPPlaceRequestResponse requestContext;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (BOOL)hasGreenTeaWithValue:;
+- (id)init;
+- (void)clearSensitiveFields:;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (void)setRequestContext:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)requestContext;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)autocompleteSuggestionLists;
+- (void)setAutocompleteSuggestionLists:;
+- (void)clearAutocompleteSuggestionLists;
+- (void)addAutocompleteSuggestionList:;
+- (unsigned long long)autocompleteSuggestionListsCount;
+- (id)autocompleteSuggestionListAtIndex:;
+- (BOOL)hasRequestContext;
++ (BOOL)isValid:;
++ (Class)autocompleteSuggestionListType;
+@end

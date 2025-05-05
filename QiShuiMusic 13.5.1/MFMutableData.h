@@ -1,0 +1,33 @@
+@interface MFMutableData : NSMutableData
+- (id)initWithBytesNoCopy:length:;
+- (id)initWithBytes:length:;
+- (id)init;
+- (void)dealloc;
+- (void)appendData:;
+- (BOOL)writeToFile:atomically:;
+- (id)initWithContentsOfURL:;
+- (void)appendBytes:length:;
+- (id)initWithContentsOfURL:options:error:;
+- (id)subdataWithRange:;
+- (id)bytes;
+- (void)_mapMutableData:;
+- (BOOL)writeToURL:atomically:;
+- (BOOL)writeToFile:options:error:;
+- (BOOL)mf_immutable;
+- (id)initWithBytesNoCopy:length:freeWhenDone:;
+- (id)initWithContentsOfFile:options:error:;
+- (id)_initWithFd:path:mutable:;
+- (BOOL)writeToURL:options:error:;
+- (id)initWithContentsOfFile:;
+- (id)initWithLength:;
+- (id)initWithData:;
+- (void)_flushToDisk:capacity:;
+- (void)setMappingThreshold:;
+- (void)mf_makeImmutable;
+- (unsigned long long)length;
+- (id)mutableCopyWithZone:;
+- (void)setLength:;
+- (id)mutableBytes;
+- (id)initWithCapacity:;
+- (id)copyWithZone:;
+@end

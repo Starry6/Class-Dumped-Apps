@@ -1,0 +1,38 @@
+@interface STMutableTelephonyStatusDomainSIMInfo : STTelephonyStatusDomainSIMInfo
+@property (nonatomic) BOOL SIMPresent;
+@property (nonatomic) BOOL bootstrap;
+@property (nonatomic) NSString label;
+@property (nonatomic) NSString shortLabel;
+@property (nonatomic) Q signalStrengthBars;
+@property (nonatomic) Q maxSignalStrengthBars;
+@property (nonatomic) Q serviceState;
+@property (nonatomic) Q cellularServiceState;
+@property (nonatomic) NSString serviceDescription;
+@property (nonatomic) NSString secondaryServiceDescription;
+@property (nonatomic) Q dataNetworkType;
+@property (nonatomic) BOOL providingDataConnection;
+@property (nonatomic) BOOL preferredForDataConnections;
+@property (nonatomic) BOOL registeredWithoutCellular;
+@property (nonatomic) BOOL callForwardingEnabled;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setDataNetworkType:;
+- (void)setServiceDescription:;
+- (void)setSIMPresent:;
+- (void)setLabel:;
+- (void)setCellularServiceState:;
+- (void)setRegisteredWithoutCellular:;
+- (void)setSecondaryServiceDescription:;
+- (void)setSignalStrengthBars:;
+- (BOOL)applyDiff:;
+- (void)setServiceState:;
+- (void)setProvidingDataConnection:;
+- (void)setBootstrap:;
+- (void)setMaxSignalStrengthBars:;
+- (void)setCallForwardingEnabled:;
+- (void)setShortLabel:;
+- (void)setPreferredForDataConnections:;
+- (id)copyWithZone:;
+@end

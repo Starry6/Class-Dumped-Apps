@@ -1,0 +1,32 @@
+@interface BDHMXAppSettingsManager : NSObject
+@property (nonatomic) NSDictionary settingDict;
+@property (nonatomic) MMKV mmkv;
+@property (nonatomic) q lastCheck;
+@property (nonatomic) BOOL synchronizing;
+@property (nonatomic) q settingTime;
+@property (nonatomic) NSString customDomin;
+- (void)setSettingTime:;
+- (void)setCustomDomin:;
+- (id)_getCacheDictionary:;
+- (long long)_getCacheInt:;
+- (void)_initCacheData;
+- (void)_startReuqestAppSetting;
+- (void)addNotifyObserver;
+- (id)customDomin;
+- (void)handleResponse:jsonObj:error:;
+- (long long)lastCheck;
+- (id)mmkv;
+- (void)setLastCheck:;
+- (void)setMmkv:;
+- (void)setSynchronizing:;
+- (long long)settingTime;
+- (BOOL)synchronizing;
+- (void)syncSettings;
+- (void)dealloc;
+- (void)willEnterForeground;
+- (void).cxx_destruct;
+- (id)settingDict;
+- (void)setSettingDict:;
+- (BOOL)isNewUser;
++ (id)shareInstance;
+@end

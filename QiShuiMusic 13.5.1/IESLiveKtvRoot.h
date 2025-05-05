@@ -1,0 +1,2 @@
+@interface IESLiveKtvRoot : GPBRootObject
+@end

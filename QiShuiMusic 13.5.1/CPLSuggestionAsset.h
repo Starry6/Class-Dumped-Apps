@@ -1,0 +1,32 @@
+@interface CPLSuggestionAsset : PBCodable
+@property (nonatomic) BOOL hasAssetIdentifier;
+@property (nonatomic) NSString assetIdentifier;
+@property (nonatomic) BOOL hasAssetFlag;
+@property (nonatomic) CPLSuggestionAssetFlag assetFlag;
+@property (nonatomic) BOOL hasActionData;
+@property (nonatomic) NSData actionData;
+@property (nonatomic) BOOL hasMasterFingerprint;
+@property (nonatomic) NSString masterFingerprint;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)setActionData:;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)actionData;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)assetIdentifier;
+- (void)setAssetIdentifier:;
+- (id)assetFlag;
+- (void)setAssetFlag:;
+- (void)setMasterFingerprint:;
+- (BOOL)hasAssetIdentifier;
+- (BOOL)hasAssetFlag;
+- (BOOL)hasMasterFingerprint;
+- (id)masterFingerprint;
+- (BOOL)hasActionData;
+@end

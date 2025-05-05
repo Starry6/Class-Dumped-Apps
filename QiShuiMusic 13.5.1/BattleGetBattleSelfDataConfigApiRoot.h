@@ -1,0 +1,2 @@
+@interface BattleGetBattleSelfDataConfigApiRoot : GPBRootObject
+@end

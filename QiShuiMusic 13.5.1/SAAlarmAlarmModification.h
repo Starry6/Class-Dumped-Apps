@@ -1,0 +1,31 @@
+@interface SAAlarmAlarmModification : AceObject
+@property (nonatomic) NSArray addedFrequency;
+@property (nonatomic) NSURL alarmId;
+@property (nonatomic) NSNumber enabled;
+@property (nonatomic) NSNumber hour;
+@property (nonatomic) NSString label;
+@property (nonatomic) NSNumber minute;
+@property (nonatomic) NSArray removedFrequency;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)minute;
+- (id)hour;
+- (void)setMinute:;
+- (void)setHour:;
+- (id)groupIdentifier;
+- (id)enabled;
+- (void)setLabel:;
+- (id)label;
+- (id)alarmId;
+- (id)encodedClassName;
+- (void)setEnabled:;
+- (void)setAlarmId:;
+- (id)addedFrequency;
+- (void)setAddedFrequency:;
+- (id)removedFrequency;
+- (void)setRemovedFrequency:;
++ (id)alarmModification;
++ (id)alarmModificationWithDictionary:context:;
+@end

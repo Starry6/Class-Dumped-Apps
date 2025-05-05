@@ -1,0 +1,21 @@
+@interface LPImageView : LPComponentView
+- (void)traitCollectionDidChange:;
+- (id)sizeThatFits:;
+- (id)initWithHost:;
+- (void).cxx_destruct;
+- (long long)_filter;
+- (void)updateCornerRadius;
+- (void)layoutComponentView;
+- (BOOL)shouldApplyBackground;
+- (id)initWithHost:image:properties:style:;
+- (void)ensureImageView;
+- (void)updateShadowPath;
+- (void)updateBorder;
+- (void)installDarkeningViewIfNeeded;
+- (long long)scalingModeForSize:;
+- (id)imageSizeThatFits:;
+- (id)_createOverlayViewWithOpacity:;
+- (void)_updateScalingMode;
+- (id)_createImageViewWithImage:;
+- (void)_setImageViewScalingMode:;
+@end

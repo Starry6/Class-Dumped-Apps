@@ -1,0 +1,31 @@
+@interface TTADataUseableLoginWaysModel : NSObject
+@property (nonatomic) BOOL hasEmail;
+@property (nonatomic) BOOL hasMobile;
+@property (nonatomic) BOOL hasOauth;
+@property (nonatomic) BOOL hasPwd;
+@property (nonatomic) BOOL isMostDevice;
+@property (nonatomic) NSString email;
+@property (nonatomic) NSString mobiel;
+@property (nonatomic) NSArray oauthPlatforms;
+@property (nonatomic) NSString token;
+- (BOOL)hasMobile;
+- (BOOL)hasOauth;
+- (BOOL)hasPwd;
+- (BOOL)isMostDevice;
+- (id)mobiel;
+- (id)oauthPlatforms;
+- (void)setHasEmail:;
+- (void)setHasMobile:;
+- (void)setHasOauth:;
+- (void)setHasPwd:;
+- (void)setIsMostDevice:;
+- (void)setMobiel:;
+- (void)setOauthPlatforms:;
+- (id)token;
+- (void)setEmail:;
+- (void)setToken:;
+- (void).cxx_destruct;
+- (id)email;
+- (BOOL)hasEmail;
++ (id)tta_modelCustomPropertyMapper;
+@end

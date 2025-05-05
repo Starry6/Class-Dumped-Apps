@@ -1,0 +1,32 @@
+@interface CNContactPickerHostViewController : _UIRemoteViewController
+@property (nonatomic) <NSCopying> currentRequestIdentifier;
+@property (nonatomic) NSExtension extension;
+@property (nonatomic) <CNContactPickerContentDelegate> delegate;
+@property (nonatomic) UINavigationController navigationController;
+@property (nonatomic) UIBarButtonItem addContactBarButtonItem;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setExtension:;
+- (id)navigationController;
+- (void)setDelegate:;
+- (id)extension;
+- (void)viewServiceDidTerminateWithError:;
+- (id)addContactBarButtonItem;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)invalidate;
+- (void)setupWithOptions:readyBlock:;
+- (void)pickerDidSelectAddNewContact;
+- (void)pickerDidSelectContact:property:;
+- (void)pickerDidSelectContacts:properties:;
+- (void)pickerDidCompleteWithNewContact:;
+- (void)pickerDidCancel;
+- (void)invalidateSelectionAnimated:;
+- (id)currentRequestIdentifier;
+- (void)setCurrentRequestIdentifier:;
++ (id)contextForIdentifier:;
++ (BOOL)getViewController:;
++ (id)contactPickerExtension;
+@end

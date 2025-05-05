@@ -1,0 +1,30 @@
+@interface ABURewardAgainView : UIView
+@property (nonatomic) UIImageView logoImageView;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIButton okButton;
+@property (nonatomic) UIButton cancelButton;
+@property (nonatomic) @? clickABURewardAgainViewOKButtonBlock;
+@property (nonatomic) @? clickABURewardAgainViewCancelButtonBlock;
+@property (nonatomic) @? getImageBlock;
+- (id)clickABURewardAgainViewCancelButtonBlock;
+- (id)clickABURewardAgainViewOKButtonBlock;
+- (void)clickCancelButton:;
+- (void)clickOKButton:;
+- (id)getImageBlock;
+- (void)setClickABURewardAgainViewCancelButtonBlock:;
+- (void)setClickABURewardAgainViewOKButtonBlock:;
+- (void)setGetImageBlock:;
+- (void)updateUIWithData:;
+- (void)setTitleLabel:;
+- (void)layoutSubviews;
+- (id)okButton;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)setOkButton:;
+- (void)setCancelButton:;
+- (id)titleLabel;
+- (id)cancelButton;
+- (void)setupViews;
+- (id)logoImageView;
+- (void)setLogoImageView:;
+@end

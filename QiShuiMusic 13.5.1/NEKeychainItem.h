@@ -1,0 +1,36 @@
+@interface NEKeychainItem : NSObject
+@property (nonatomic) q domain;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) NSString password;
+@property (nonatomic) NSData persistentReference;
+@property (nonatomic) NSString accessGroup;
+- (id)accessGroup;
+- (void)setPassword:;
+- (id)password;
+- (id)descriptionWithIndent:options:;
+- (void)remove;
+- (void)setAccessGroup:;
+- (id)identifier;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (long long)domain;
+- (void)setDomain:;
+- (void)setIdentifier:;
+- (id)copyWithZone:;
+- (id)initWithPassword:domain:;
+- (id)initWithIdentifier:domain:;
+- (id)initWithPersistentReference:domain:;
+- (id)initWithLegacyIdentifier:domain:;
+- (id)initWithPassword:domain:accessGroup:;
+- (id)initWithIdentifier:domain:accessGroup:;
+- (id)initWithPersistentReference:domain:accessGroup:;
+- (id)initWithLegacyIdentifier:domain:accessGroup:;
+- (id)persistentReference;
+- (void)setPersistentReference:;
+- (id)copyQueryWithReturnTypes:;
+- (id)copyPassword;
+- (void)syncUsingConfiguration:accountName:passwordType:identifierSuffix:;
+- (void)migrateFromPreferences:;
++ (BOOL)supportsSecureCoding;
+@end

@@ -1,0 +1,30 @@
+@interface GEOLogMsgEventGridDurationEndStateErrorInfo : PBCodable
+@property (nonatomic) BOOL hasCount;
+@property (nonatomic) I count;
+@property (nonatomic) BOOL hasType;
+@property (nonatomic) NSInteger type;
+- (void)setCount:;
+- (void)readAll:;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (int)StringAsType:;
+- (id)initWithDictionary:;
+- (void)setType:;
+- (void)writeTo:;
+- (void)setHasType:;
+- (BOOL)hasType;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (id)typeAsString:;
+- (void)mergeFrom:;
+- (int)type;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (unsigned int)count;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setHasCount:;
+- (BOOL)hasCount;
++ (BOOL)isValid:;
+@end

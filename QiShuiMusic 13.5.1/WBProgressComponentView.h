@@ -1,0 +1,2 @@
+@interface WBProgressComponentView : UIImageView
+@end

@@ -1,0 +1,38 @@
+@interface BDXLynxOverlayView : LynxUI
+@property (nonatomic) BOOL statusBarTranslucent;
+@property (nonatomic) BOOL eventsPassThrough;
+@property (nonatomic) BDXLynxOverlayContainerView containerView;
+@property (nonatomic) BDXLynxOverlayContentView contentView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)IsViewVisible;
+- (void)eventsPassThrough:requestReset:;
+- (BOOL)eventThrough;
+- (BOOL)eventsPassThrough;
+- (void)layoutDidFinished;
+- (void)operateContainer:;
+- (id)overlayRootUI;
+- (void)requestClose:;
+- (void)setEventThrough:requestReset:;
+- (void)setEventsPassThrough:;
+- (void)setStatusBarTranslucent:;
+- (BOOL)shouldHitTest:withEvent:;
+- (BOOL)statusBarTranslucent;
+- (void)statusBarTranslucent:requestReset:;
+- (void)visible:requestReset:;
+- (id)initWithView:;
+- (id)contentView;
+- (void)dealloc;
+- (id)containerView;
+- (void)setContainerView:;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (id)createView;
++ (id)__lynx_props_group_config__1171;
++ (id)__lynx_prop_config__1202;
++ (id)__lynx_prop_config__1293;
++ (id)__lynx_prop_config__1344;
++ (void)lynxLazyLoad;
+@end

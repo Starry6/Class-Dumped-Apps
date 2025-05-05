@@ -1,0 +1,36 @@
+@interface AVAudioDevice : NSObject
+@property (nonatomic) NSString deviceName;
+@property (nonatomic) NSNumber deviceID;
+@property (nonatomic) NSString UID;
+@property (nonatomic) BOOL inputAvailable;
+@property (nonatomic) BOOL outputAvailable;
+@property (nonatomic) BOOL preferredDevice;
+@property (nonatomic) BOOL isBluetoothDevice;
+- (id)UID;
+- (void)dealloc;
+- (id)deviceName;
+- (id)initWithDeviceID:;
+- (unsigned long long)hash;
+- (id)deviceID;
+- (id)description;
+- (BOOL)isEqual:;
+- (void)createName;
+- (BOOL)isValidDevice;
+- (BOOL)isBluetoothDevice;
+- (id)newAudioObjectStringPropertyWithSelector:scope:element:;
+- (void)createUID;
+- (void)createNameForScope:;
+- (BOOL)copyStreamIDArray:length:;
+- (BOOL)deviceHasNonTapStreamsInStreamList:length:;
+- (BOOL)hasRealInputStream;
+- (BOOL)isAggregableDevice;
+- (BOOL)isValidInputDevice;
+- (BOOL)isSomethingConnectedToJack;
+- (BOOL)isBuiltInDevice;
+- (id)allocDeviceControlListAndSize:;
+- (unsigned int)getDataSourceControlID;
+- (BOOL)isStreamAvailableForScope:;
+- (BOOL)inputAvailable;
+- (BOOL)outputAvailable;
+- (BOOL)isPreferredDevice;
+@end

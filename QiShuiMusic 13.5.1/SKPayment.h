@@ -1,0 +1,33 @@
+@interface SKPayment : NSObject
+@property (nonatomic) NSString partnerIdentifier;
+@property (nonatomic) NSString partnerTransactionIdentifier;
+@property (nonatomic) NSDictionary requestParameters;
+@property (nonatomic) BOOL isStoreOriginated;
+@property (nonatomic) SKPaymentAppleIDAuthorizationRequest appleIDAuthorizationClientInfo;
+@property (nonatomic) NSString productIdentifier;
+@property (nonatomic) NSData requestData;
+@property (nonatomic) q quantity;
+@property (nonatomic) NSString applicationUsername;
+@property (nonatomic) BOOL simulatesAskToBuyInSandbox;
+@property (nonatomic) SKPaymentDiscount paymentDiscount;
+- (id)productIdentifier;
+- (id)init;
+- (id)requestData;
+- (id)partnerIdentifier;
+- (unsigned long long)hash;
+- (id)requestParameters;
+- (void).cxx_destruct;
+- (id)mutableCopyWithZone:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (long long)quantity;
+- (id)applicationUsername;
+- (BOOL)simulatesAskToBuyInSandbox;
+- (id)paymentDiscount;
+- (BOOL)isStoreOriginated;
+- (id)partnerTransactionIdentifier;
+- (id)appleIDAuthorizationClientInfo;
++ (id)paymentWithProduct:;
++ (id)paymentFromPurchaseIntentWithProduct:;
++ (id)paymentWithProductIdentifier:;
+@end

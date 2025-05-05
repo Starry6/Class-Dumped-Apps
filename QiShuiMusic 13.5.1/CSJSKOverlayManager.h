@@ -1,0 +1,38 @@
+@interface CSJSKOverlayManager : NSObject
+@property (nonatomic) UIWindow window;
+@property (nonatomic) NSObject<CSJSKOverlayManagerDelegate> delegate;
+@property (nonatomic) BOOL hadShowSKOverlay;
+@property (nonatomic) CSJAdInfoViewModel indexModel;
+@property (nonatomic) BOOL shouldReopen;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)appstoreDidAppear:;
+- (void)appstoreDidDisAppear:;
+- (BOOL)hadShowSKOverlay;
+- (id)indexModel;
+- (void)registerNotification;
+- (void)setHadShowSKOverlay:;
+- (void)setIndexModel:;
+- (void)setShouldReopen:;
+- (BOOL)shouldReopen;
+- (void)setDelegate:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setWindow:;
+- (id)window;
+- (id)copyWithZone:;
+- (void)storeOverlay:willStartPresentation:;
+- (void)storeOverlay:didFinishPresentation:;
+- (void)storeOverlay:willStartDismissal:;
+- (void)storeOverlay:didFinishDismissal:;
+- (void)storeOverlay:didFailToLoadWithError:;
++ (BOOL)hadShowSKOverlay;
++ (void)reShowOverlayWithIndexModel;
++ (void)setDelegateObjct:;
++ (void)showOverlayWithSKANModel:;
++ (id)allocWithZone:;
++ (id)shareInstance;
++ (void)dismissOverlay;
+@end

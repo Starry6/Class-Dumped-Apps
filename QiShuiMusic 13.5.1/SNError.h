@@ -1,0 +1,2 @@
+@interface SNError : NSObject
+@end

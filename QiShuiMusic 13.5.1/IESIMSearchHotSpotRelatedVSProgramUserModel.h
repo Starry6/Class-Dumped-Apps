@@ -1,0 +1,32 @@
+@interface IESIMSearchHotSpotRelatedVSProgramUserModel : IESIMBaseApiModel
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString userID;
+@property (nonatomic) NSString secUserID;
+@property (nonatomic) NSString nickname;
+@property (nonatomic) IESIMURLModel avatarThumb;
+@property (nonatomic) NSNumber certType;
+@property (nonatomic) NSString certLabel;
+@property (nonatomic) NSString arrowLabel;
+@property (nonatomic) NSString linkTo;
+- (void)setAvatarThumb:;
+- (id)avatarThumb;
+- (id)certLabel;
+- (id)linkTo;
+- (id)secUserID;
+- (void)setCertLabel:;
+- (void)setLinkTo:;
+- (void)setSecUserID:;
+- (id)userID;
+- (void)setTitle:;
+- (id)nickname;
+- (id)title;
+- (void).cxx_destruct;
+- (void)setNickname:;
+- (void)setUserID:;
+- (id)arrowLabel;
+- (void)setArrowLabel:;
+- (id)certType;
+- (void)setCertType:;
++ (id)avatarThumbJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

@@ -1,0 +1,37 @@
+@interface ACProtobufAccountCredential : PBCodable
+@property (nonatomic) NSDictionary credentialItemsDictionary;
+@property (nonatomic) NSMutableArray credentialItems;
+@property (nonatomic) NSString credentialType;
+@property (nonatomic) NSMutableArray dirtyProperties;
+@property (nonatomic) BOOL requiresTouchID;
+- (id)credentialType;
+- (id)dirtyProperties;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (id)credentialItems;
+- (void)mergeFrom:;
+- (BOOL)requiresTouchID;
+- (void)setRequiresTouchID:;
+- (void).cxx_destruct;
+- (void)setCredentialType:;
+- (BOOL)readFrom:;
+- (id)description;
+- (void)clearDirtyProperties;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)addDirtyProperties:;
+- (unsigned long long)dirtyPropertiesCount;
+- (id)dirtyPropertiesAtIndex:;
+- (void)setDirtyProperties:;
+- (void)setCredentialItemsDictionary:;
+- (id)credentialItemsDictionary;
+- (void)clearCredentialItems;
+- (void)addCredentialItems:;
+- (unsigned long long)credentialItemsCount;
+- (id)credentialItemsAtIndex:;
+- (void)setCredentialItems:;
++ (Class)dirtyPropertiesType;
++ (Class)credentialItemsType;
+@end

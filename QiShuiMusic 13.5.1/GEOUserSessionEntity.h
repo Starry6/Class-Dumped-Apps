@@ -1,0 +1,33 @@
+@interface GEOUserSessionEntity : NSObject
+@property (nonatomic) {GEOSessionID=QQ} sessionID;
+@property (nonatomic) I sequenceNumber;
+@property (nonatomic) double sessionCreationTime;
+@property (nonatomic) double sessionRelativeTimestamp;
+@property (nonatomic) NSString sessionEntityString;
+@property (nonatomic) NSString sessionIDString;
+@property (nonatomic) NSString sessionUUIDString;
+@property (nonatomic) NSNumber sessionIDLow;
+@property (nonatomic) NSNumber sessionIDHigh;
+@property (nonatomic) NSString sessionIDLowString;
+@property (nonatomic) NSString sessionIDHighString;
+- (id)sessionID;
+- (id)sessionEntityString;
+- (unsigned int)sequenceNumber;
+- (id)description;
+- (double)sessionRelativeTimestamp;
+- (id)copyWithZone:;
+- (double)sessionRelativeTimestampForEventTime:;
+- (id)initWithSessionID:sessionCreationTime:sequenceNumber:;
+- (id)initWithSessionEntityString:;
+- (id)sessionIDString;
+- (id)sessionUUIDString;
+- (id)sessionIDLow;
+- (id)sessionIDHigh;
+- (id)sessionIDLowString;
+- (id)sessionIDHighString;
+- (BOOL)_isValidSessionIDHighOrLowString:;
+- (void)updateWithSessionEntityString:;
+- (void)updateSessionIDFromUUIDString:;
+- (double)sessionCreationTime;
+- (void)setSessionCreationTime:;
+@end

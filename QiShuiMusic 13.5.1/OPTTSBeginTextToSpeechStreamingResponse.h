@@ -1,0 +1,30 @@
+@interface OPTTSBeginTextToSpeechStreamingResponse : NSObject
+@property (nonatomic) NSString speech_id;
+@property (nonatomic) NSString session_id;
+@property (nonatomic) NSInteger error_code;
+@property (nonatomic) NSString error_str;
+@property (nonatomic) NSString stream_id;
+@property (nonatomic) q audio_type;
+@property (nonatomic) OPTTSAudioDescription decoder_description;
+@property (nonatomic) OPTTSAudioDescription playback_description;
+@property (nonatomic) OPTTSTextToSpeechMeta meta_info;
+@property (nonatomic) float streaming_playback_buffer_size_in_seconds;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (id)speech_id;
+- (id)session_id;
+- (long long)audio_type;
+- (id)meta_info;
+- (id)stream_id;
+- (int)error_code;
+- (id)error_str;
+- (id)decoder_description;
+- (id)playback_description;
+- (float)streaming_playback_buffer_size_in_seconds;
+- (id)flatbuffData;
+- (id)initWithFlatbuffData:;
+- (id)initAndVerifyWithFlatbuffData:;
+- (id)initWithFlatbuffData:root:;
+- (id)initWithFlatbuffData:root:verify:;
+- (id)addObjectToBuffer:;
+@end

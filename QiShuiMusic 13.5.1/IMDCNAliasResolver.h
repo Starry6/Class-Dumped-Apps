@@ -1,0 +1,2 @@
+@interface IMDCNAliasResolver : NSObject
+@end

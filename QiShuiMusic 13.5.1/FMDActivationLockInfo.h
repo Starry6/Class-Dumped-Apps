@@ -1,0 +1,31 @@
+@interface FMDActivationLockInfo : NSObject
+@property (nonatomic) NSString title;
+@property (nonatomic) BOOL isActivationLocked;
+@property (nonatomic) NSString maskedAppleID;
+@property (nonatomic) NSString maskedOrganizationID;
+@property (nonatomic) BOOL isOfflineFindingEnabled;
+@property (nonatomic) NSDictionary localeStrings;
+@property (nonatomic) BOOL isRestrictedSKU;
+@property (nonatomic) BOOL isFindMyLPEMEnabled;
+- (void)setTitle:;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (id)title;
+- (void).cxx_destruct;
+- (id)description;
+- (id)maskedAppleID;
+- (void)setMaskedAppleID:;
+- (BOOL)isActivationLocked;
+- (void)setIsActivationLocked:;
+- (id)maskedOrganizationID;
+- (void)setMaskedOrganizationID:;
+- (BOOL)isOfflineFindingEnabled;
+- (void)setIsOfflineFindingEnabled:;
+- (id)localeStrings;
+- (void)setLocaleStrings:;
+- (BOOL)isRestrictedSKU;
+- (void)setIsRestrictedSKU:;
+- (BOOL)isFindMyLPEMEnabled;
+- (void)setIsFindMyLPEMEnabled:;
++ (BOOL)supportsSecureCoding;
+@end

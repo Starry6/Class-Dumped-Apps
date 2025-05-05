@@ -1,0 +1,33 @@
+@interface VSUserNotificationOperation : NSOperation
+@property (nonatomic) Q response;
+@property (nonatomic) ^? userNotificationCreateProc;
+@property (nonatomic) ^? userNotificationReceiveResponseProc;
+@property (nonatomic) ^? userNotificationCancelProc;
+@property (nonatomic) NSURL iconURL;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString message;
+@property (nonatomic) NSString defaultButtonTitle;
+@property (nonatomic) NSString alternateButtonTitle;
+- (void)setIconURL:;
+- (id)init;
+- (void)cancel;
+- (void)setMessage:;
+- (void)setTitle:;
+- (void)main;
+- (id)title;
+- (unsigned long long)response;
+- (id)message;
+- (void).cxx_destruct;
+- (id)iconURL;
+- (void)setResponse:;
+- (id)defaultButtonTitle;
+- (void)setDefaultButtonTitle:;
+- (id)alternateButtonTitle;
+- (void)setAlternateButtonTitle:;
+- (id)userNotificationCreateProc;
+- (void)setUserNotificationCreateProc:;
+- (id)userNotificationReceiveResponseProc;
+- (void)setUserNotificationReceiveResponseProc:;
+- (id)userNotificationCancelProc;
+- (void)setUserNotificationCancelProc:;
+@end

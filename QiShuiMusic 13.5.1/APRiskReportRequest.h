@@ -1,0 +1,36 @@
+@interface APRiskReportRequest : NSObject
+@property (nonatomic) NSString os;
+@property (nonatomic) NSString apdid;
+@property (nonatomic) NSString pubApdid;
+@property (nonatomic) NSString priApdid;
+@property (nonatomic) NSString token;
+@property (nonatomic) NSString umidToken;
+@property (nonatomic) NSString version;
+@property (nonatomic) NSString lastTime;
+@property (nonatomic) NSString dynamicKey;
+@property (nonatomic) NSDictionary dataMap;
+@property (nonatomic) NSDictionary bizData;
+- (id)bizData;
+- (id)dataMap;
+- (id)apdid;
+- (id)dynamicKey;
+- (id)priApdid;
+- (id)pubApdid;
+- (void)setApdid:;
+- (void)setBizData:;
+- (void)setDataMap:;
+- (void)setDynamicKey:;
+- (void)setPriApdid:;
+- (void)setPubApdid:;
+- (void)setUmidToken:;
+- (id)umidToken;
+- (id)os;
+- (id)token;
+- (void)setVersion:;
+- (id)version;
+- (void)setOs:;
+- (void)setToken:;
+- (void).cxx_destruct;
+- (void)setLastTime:;
+- (id)lastTime;
+@end

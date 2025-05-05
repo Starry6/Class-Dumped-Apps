@@ -1,0 +1,32 @@
+@interface MEAppExtensionsController : NSObject
+@property (nonatomic) NSObject<OS_dispatch_queue> queue;
+@property (nonatomic) NSDictionary extensionsByIdentifier;
+@property (nonatomic) NSArray previouslyEnabledExtensionIdentifiers;
+@property (nonatomic) NSObject<OS_dispatch_queue> stateCaptureQueue;
+@property (nonatomic) <EFCancelable> stateCaptureCancelable;
+- (id)init;
+- (void)dealloc;
+- (id)extensionForIdentifier:;
+- (id)extensionsByIdentifier;
+- (void)_stopMatchingExtensions;
+- (void).cxx_destruct;
+- (void)setQueue:;
+- (id)queue;
+- (id)stateCaptureCancelable;
+- (id)stateCaptureQueue;
+- (void)registerMailAppExtensionsObserver:capabilities:includeDisabled:completion:;
+- (void)_startMatchingExtensions;
+- (id)_extensionsNewlyMatchingFromNewExtensions:currentExtensions:forCriteria:;
+- (id)_extensionsNoLongerMatchingFromNewExtensions:currentExtensions:forCriteria:;
+- (BOOL)_extension:matchesOldCriteria:;
+- (BOOL)_extension:matchesCriteria:;
+- (BOOL)_extension:matchesCapabilities:;
+- (id)_remoteEmailExtensionsForExtensions:enabledOnly:;
+- (void)_logExtensionsStateWithReason:;
+- (void)setExtensionsByIdentifier:;
+- (id)previouslyEnabledExtensionIdentifiers;
+- (void)setPreviouslyEnabledExtensionIdentifiers:;
++ (id)log;
++ (id)sharedInstance;
++ (id)_emailExtensionAttributeDictionary;
+@end

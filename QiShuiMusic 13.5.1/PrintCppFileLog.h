@@ -1,0 +1,2 @@
+@interface PrintCppFileLog : NSObject
+@end

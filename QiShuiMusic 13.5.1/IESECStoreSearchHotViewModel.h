@@ -1,0 +1,31 @@
+@interface IESECStoreSearchHotViewModel : NSObject
+@property (nonatomic) NSArray hotArray;
+@property (nonatomic) BOOL shouldShowRefreshButton;
+@property (nonatomic) NSArray allHotArray;
+@property (nonatomic) Q cursor;
+@property (nonatomic) NSDictionary trackParams;
+@property (nonatomic) double maximumHotCount;
+- (double)maximumHotCount;
+- (void)setTrackParams:;
+- (void)setAllHotArray:;
+- (id)allHotArray;
+- (void)fetchStoreSearchHotWithPenetrateParams:;
+- (id)hotArray;
+- (id)initWithTrackParams:;
+- (void)p_updateAllHotArray:;
+- (void)refreshStoreSearchHot;
+- (void)setHotArray:;
+- (void)setMaximumHotCount:;
+- (void)setShouldShowRefreshButton:;
+- (id)setupTrackParams:;
+- (BOOL)shouldShowRefreshButton;
+- (void)trackEvent:params:;
+- (id)trackParams;
+- (void)trackTrendingShow;
+- (void)trackTrendingWordsClick:;
+- (void)trackTrendingWordsShow:;
+- (void)updateStoreSearchHotArray:;
+- (unsigned long long)cursor;
+- (void)setCursor:;
+- (void).cxx_destruct;
+@end

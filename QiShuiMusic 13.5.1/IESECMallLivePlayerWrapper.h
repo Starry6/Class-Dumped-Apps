@@ -1,0 +1,38 @@
+@interface IESECMallLivePlayerWrapper : NSObject
+@property (nonatomic) UIView view;
+@property (nonatomic) IESECMallLivePlayerV2 livePlayerV2;
+@property (nonatomic) IESECMallLivePlayer livePlayer;
+@property (nonatomic) NSString streamData;
+@property (nonatomic) NSString roomID;
+@property (nonatomic) <IESECMallLivePlayerWrapperDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)asyncStop;
+- (void)dequeuePlayer;
+- (void)dequeuePlayerWithRoomID:streamData:;
+- (void)enqueuePlayer;
+- (id)livePlayerV2;
+- (void)loadStateDidChange:;
+- (void)player:didReceiveError:;
+- (void)player:loadStateDidChange:;
+- (void)setLivePlayerV2:;
+- (void)setStreamData:;
+- (void)updateWithStreamData:roomID:;
+- (id)init;
+- (void)play;
+- (void)setDelegate:;
+- (void)stop;
+- (void)setMute:;
+- (id)view;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setView:;
+- (void)didReceiveError:;
+- (id)roomID;
+- (void)setRoomID:;
+- (id)streamData;
+- (id)livePlayer;
+- (void)setLivePlayer:;
+@end

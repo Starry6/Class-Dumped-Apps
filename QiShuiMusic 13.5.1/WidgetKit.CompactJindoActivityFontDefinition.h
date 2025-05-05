@@ -1,0 +1,2 @@
+@interface WidgetKit.CompactJindoActivityFontDefinition : WidgetKit.LimitingContentSizeCategoryFontDefinition
+@end

@@ -1,0 +1,38 @@
+@interface IESECGoodsInstallmentTermInfoModel : IESECBaseApiModel
+@property (nonatomic) BOOL shouldShow;
+@property (nonatomic) NSArray installmentItems;
+@property (nonatomic) NSString installmentTitle;
+@property (nonatomic) BOOL shouldSelectable;
+@property (nonatomic) NSString selectionTip;
+@property (nonatomic) NSString creditTip;
+@property (nonatomic) q anchorID;
+@property (nonatomic) NSString planNo;
+@property (nonatomic) NSString resourceNo;
+@property (nonatomic) NSString materialNo;
+@property (nonatomic) NSString bizType;
+- (id)bizType;
+- (long long)anchorID;
+- (id)creditTip;
+- (id)installmentTitle;
+- (id)materialNo;
+- (id)planNo;
+- (id)resourceNo;
+- (id)selectionTip;
+- (void)setAnchorID:;
+- (void)setBizType:;
+- (void)setCreditTip:;
+- (void)setInstallmentTitle:;
+- (void)setMaterialNo:;
+- (void)setPlanNo:;
+- (void)setResourceNo:;
+- (void)setSelectionTip:;
+- (void)setShouldSelectable:;
+- (BOOL)shouldSelectable;
+- (void).cxx_destruct;
+- (BOOL)shouldShow;
+- (id)installmentItems;
+- (void)setInstallmentItems:;
+- (void)setShouldShow:;
++ (id)installmentItemsJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

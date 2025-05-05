@@ -1,0 +1,32 @@
+@interface UIPrintOption : NSObject
+@property (nonatomic) UIPrintPanelViewController printPanelViewController;
+@property (nonatomic) UITableViewCell tableViewCell;
+@property (nonatomic) UIPrintInfo printInfo;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString summary;
+@property (nonatomic) BOOL collapsed;
+@property (nonatomic) BOOL shouldShow;
+- (void)dismissKeyboard;
+- (void)setTitle:;
+- (void)setSummary:;
+- (id)printInfo;
+- (void)setCollapsed:;
+- (id)summary;
+- (id)title;
+- (void)setPrintInfo:;
+- (void).cxx_destruct;
+- (id)printPanelViewController;
+- (void)setPrintPanelViewController:;
+- (BOOL)collapsed;
+- (id)tableViewCell;
+- (void)setTableViewCell:;
+- (BOOL)shouldShow;
+- (BOOL)canDismiss;
+- (id)initWithPrintInfo:printPanelViewController:;
+- (id)printOptionTableViewCell;
+- (void)didSelectPrintOption;
+- (id)printOptionDetailView;
+- (BOOL)keyboardShowing;
+- (void)setShouldShow:;
+- (void)updatePrintOptionSummary;
+@end

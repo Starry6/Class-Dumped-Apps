@@ -1,0 +1,37 @@
+@interface FLEXWindowManagerController : FLEXTableViewController
+@property (nonatomic) UIWindow keyWindow;
+@property (nonatomic) NSString keyWindowSubtitle;
+@property (nonatomic) NSArray windows;
+@property (nonatomic) NSArray windowSubtitles;
+@property (nonatomic) NSArray scenes;
+@property (nonatomic) NSArray sceneSubtitles;
+@property (nonatomic) NSArray sections;
+- (id)init;
+- (void)viewDidLoad;
+- (void)reloadData;
+- (void)dismissAnimated;
+- (void)showRevertOrDismissAlert:;
+- (id)sceneDescription:;
+- (id)stringFromSceneState:;
+- (long long)numberOfSectionsInTableView:;
+- (long long)tableView:numberOfRowsInSection:;
+- (id)tableView:titleForHeaderInSection:;
+- (id)tableView:cellForRowAtIndexPath:;
+- (void)tableView:didSelectRowAtIndexPath:;
+- (void)tableView:accessoryButtonTappedForRowWithIndexPath:;
+- (id)keyWindow;
+- (void)setKeyWindow:;
+- (id)keyWindowSubtitle;
+- (void)setKeyWindowSubtitle:;
+- (id)windows;
+- (void)setWindows:;
+- (id)windowSubtitles;
+- (void)setWindowSubtitles:;
+- (id)scenes;
+- (void)setScenes:;
+- (id)sceneSubtitles;
+- (void)setSceneSubtitles:;
+- (id)sections;
+- (void)setSections:;
+- (void).cxx_destruct;
+@end

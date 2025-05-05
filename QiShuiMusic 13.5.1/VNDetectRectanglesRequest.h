@@ -1,0 +1,32 @@
+@interface VNDetectRectanglesRequest : VNImageBasedRequest
+@property (nonatomic) Q requiredVersion;
+@property (nonatomic) float minimumAspectRatio;
+@property (nonatomic) float maximumAspectRatio;
+@property (nonatomic) float quadratureTolerance;
+@property (nonatomic) float minimumSize;
+@property (nonatomic) float minimumConfidence;
+@property (nonatomic) Q maximumObservations;
+@property (nonatomic) NSArray results;
+- (void)setMinimumSize:;
+- (BOOL)internalPerformRevision:inContext:error:;
+- (void)applyConfigurationOfRequest:;
+- (void)setProcessedResults:;
+- (unsigned long long)requiredVersion;
+- (float)minimumSize;
+- (void)setMinimumConfidence:;
+- (long long)dependencyProcessingOrdinality;
+- (void)setRequiredVersion:;
+- (BOOL)willAcceptCachedResultsFromRequestWithConfiguration:;
+- (id)applicableDetectorTypeForRevision:error:;
+- (float)minimumConfidence;
+- (void)setQuadratureTolerance:;
+- (void)setMaximumAspectRatio:;
+- (void)setMaximumObservations:;
+- (void)setMinimumAspectRatio:;
+- (id)supportedImageSizeSet;
+- (float)minimumAspectRatio;
+- (float)maximumAspectRatio;
+- (float)quadratureTolerance;
+- (unsigned long long)maximumObservations;
++ (Class)configurationClass;
+@end

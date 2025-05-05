@@ -1,0 +1,35 @@
+@interface AVPictureInPictureControllerContentSource : NSObject
+@property (nonatomic) {CGSize=dd} initialRenderSize;
+@property (nonatomic) AVSampleBufferDisplayLayer sampleBufferDisplayLayer;
+@property (nonatomic) <AVPictureInPictureSampleBufferPlaybackDelegate> sampleBufferPlaybackDelegate;
+@property (nonatomic) UIView activeSourceView;
+@property (nonatomic) AVPictureInPictureContentViewController activeContentViewController;
+@property (nonatomic) UIView activeVideoCallSourceView;
+@property (nonatomic) AVPictureInPictureVideoCallViewController activeVideoCallContentViewController;
+@property (nonatomic) <AVPictureInPictureContentSource> source;
+@property (nonatomic) @ _activeVideoCallSourceView;
+@property (nonatomic) <AVPictureInPictureContentSource> _activeVideoCallContentViewController;
+@property (nonatomic) BOOL hasInitialRenderSize;
+@property (nonatomic) AVPlayerLayer playerLayer;
+- (id)playerLayer;
+- (id)init;
+- (void)dealloc;
+- (id)initWithPlayerLayer:;
+- (void).cxx_destruct;
+- (id)source;
+- (id)sampleBufferDisplayLayer;
+- (id)_activeVideoCallSourceView;
+- (id)_activeVideoCallContentViewController;
+- (BOOL)hasInitialRenderSize;
+- (id)initWithSampleBufferDisplayLayer:initialRenderSize:playbackDelegate:;
+- (id)initialRenderSize;
+- (id)initWithSampleBufferDisplayLayer:playbackDelegate:;
+- (id)sampleBufferPlaybackDelegate;
+- (id)initWithSourceView:contentViewController:playerController:;
+- (id)activeSourceView;
+- (id)activeContentViewController;
+- (id)initWithActiveVideoCallSourceView:contentViewController:;
+- (id)activeVideoCallSourceView;
+- (id)activeVideoCallContentViewController;
++ (long long)version;
+@end

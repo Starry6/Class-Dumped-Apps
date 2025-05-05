@@ -1,0 +1,2 @@
+@interface SDConstants : NSObject
+@end

@@ -1,0 +1,31 @@
+@interface GEOGuidanceImportanceMode : PBCodable
+@property (nonatomic) Q guidancePreferenceTypesCount;
+@property (nonatomic) ^i guidancePreferenceTypes;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (void)dealloc;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (unsigned long long)guidancePreferenceTypesCount;
+- (id)guidancePreferenceTypes;
+- (void)clearGuidancePreferenceTypes;
+- (void)addGuidancePreferenceType:;
+- (int)guidancePreferenceTypeAtIndex:;
+- (void)setGuidancePreferenceTypes:count:;
+- (id)guidancePreferenceTypesAsString:;
+- (int)StringAsGuidancePreferenceTypes:;
++ (BOOL)isValid:;
+@end

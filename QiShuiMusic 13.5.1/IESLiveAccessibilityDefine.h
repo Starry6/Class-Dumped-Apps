@@ -1,0 +1,2 @@
+@interface IESLiveAccessibilityDefine : NSObject
+@end

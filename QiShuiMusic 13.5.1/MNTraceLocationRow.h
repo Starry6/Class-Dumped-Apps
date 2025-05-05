@@ -1,0 +1,33 @@
+@interface MNTraceLocationRow : NSObject
+@property (nonatomic) double position;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) double timestamp;
+@property (nonatomic) MNLocation location;
+@property (nonatomic) NSError error;
+@property (nonatomic) MNLocationMatchInfo matchInfo;
+@property (nonatomic) {?=dd} correctedCoordinate;
+@property (nonatomic) double correctedCourse;
+@property (nonatomic) q locationEventType;
+@property (nonatomic) Q originalMatchType;
+- (double)position;
+- (void)setMatchInfo:;
+- (void)setError:;
+- (id)error;
+- (id)location;
+- (void)setTimestamp:;
+- (void)setLocation:;
+- (void).cxx_destruct;
+- (id)matchInfo;
+- (double)timestamp;
+- (id)correctedCoordinate;
+- (void)setCorrectedCoordinate:;
+- (double)correctedCourse;
+- (void)setCorrectedCourse:;
+- (long long)locationEventType;
+- (void)setLocationEventType:;
+- (unsigned long long)originalMatchType;
+- (void)setOriginalMatchType:;
+@end

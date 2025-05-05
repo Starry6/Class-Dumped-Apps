@@ -1,0 +1,36 @@
+@interface VFImageFilter : NSObject
+@property (nonatomic) <MTLFunction> kernelFunction;
+@property (nonatomic) <MTLTexture> texture;
+@property (nonatomic) NSString str;
+@property (nonatomic) VFMetalContext context;
+@property (nonatomic) <MTLBuffer> uniformBuffer;
+@property (nonatomic) <MTLComputePipelineState> pipeline;
+@property (nonatomic) NSArray inTextures;
+@property (nonatomic) NSArray outTextures;
+@property (nonatomic) {?=QQQ} threadNum;
+- (void)setOutTextures:;
+- (void)setStr:;
+- (void)applyFilterWithTextures;
+- (void)applyFilterWithTextures:;
+- (void)applyFilterWithTextures:height:width:commandBuffer:commandEncoder:;
+- (void)applyFilterWithTextures:height:width:commandBuffer:commandEncoder:enh:;
+- (void)configureArgumentTableWithCommandEncoder:;
+- (id)inTextures;
+- (id)initWithFunctionName:context:;
+- (id)kernelFunction;
+- (id)outTextures;
+- (void)setInTextures:;
+- (void)setKernelFunction:;
+- (void)setThreadNum:;
+- (void)setUniformBuffer:;
+- (id)threadNum;
+- (id)uniformBuffer;
+- (id)texture;
+- (id)context;
+- (void)setTexture:;
+- (id)str;
+- (void).cxx_destruct;
+- (id)pipeline;
+- (void)setContext:;
+- (void)setPipeline:;
+@end

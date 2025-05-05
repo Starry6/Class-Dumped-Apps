@@ -1,0 +1,36 @@
+@interface IESECGoodsFeedCommonGirdleComponentView : IESECGoodsDetailBaseComponentView
+@property (nonatomic) UIImageView backgroundImageView;
+@property (nonatomic) UIImageView leftLogoImageView;
+@property (nonatomic) UILabel rightSloganTextLabel;
+@property (nonatomic) IESECGoodsDetailTimeCountdownView countDownView;
+@property (nonatomic) q showComponentOptions;
+@property (nonatomic) NSMutableDictionary rightComponentCache;
+@property (nonatomic) IESECGoodsFeedCommonGirdleRightComponent rightComponent;
+- (void)configCountViewWithActivityManager:;
+- (void)configLeftLogoImageViewWithModel:;
+- (id)countDownView;
+- (void)handleActivityUpdateNotification:;
+- (id)initWithParameters:style:tracker:;
+- (id)leftLogoImageView;
+- (id)rightComponent;
+- (id)rightComponentCache;
+- (id)rightComponentForType:withParameters:;
+- (id)rightSloganTextLabel;
+- (void)setComponentsShowStateWithModel:;
+- (void)setCountDownView:;
+- (void)setLeftLogoImageView:;
+- (void)setRightComponent:;
+- (void)setRightComponentCache:;
+- (void)setRightSloganTextLabel:;
+- (void)setShowComponentOptions:;
+- (long long)showComponentOptions;
+- (void)updateRightContainer;
+- (void)updateWithParameters:;
+- (id)backgroundImageView;
+- (void).cxx_destruct;
+- (void)setupUI;
+- (void)setBackgroundImageView:;
++ (double)bottomOverlapHeight;
++ (double)componentViewHeight:style:;
++ (BOOL)componentViewShouldShow:style:;
+@end

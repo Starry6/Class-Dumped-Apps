@@ -1,0 +1,35 @@
+@interface VCSessionConfiguration : NSObject
+@property (nonatomic) q sessionMode;
+@property (nonatomic) NSObject<NSCopying> reportingHierarchyToken;
+@property (nonatomic) BOOL oneToOneModeEnabled;
+@property (nonatomic) BOOL isGKVoiceChat;
+@property (nonatomic) NSUUID conversationID;
+@property (nonatomic) NSDate conversationTimeBase;
+@property (nonatomic) NSDate conversationTimeBaseTruncated;
+@property (nonatomic) NSObject<OS_nw_activity> parentNWActivity;
+@property (nonatomic) NSString serviceName;
+- (id)init;
+- (void)dealloc;
+- (void)setServiceName:;
+- (id)serviceName;
+- (id)conversationID;
+- (void)setConversationID:;
+- (BOOL)isOneToOneModeEnabled;
+- (id)reportingHierarchyToken;
+- (void)setReportingHierarchyToken:;
+- (void)setOneToOneModeEnabled:;
+- (long long)sessionMode;
+- (BOOL)isGKVoiceChat;
+- (void)setIsGKVoiceChat:;
+- (void)cleanupNwActivity;
+- (id)initWithClientDictionary:;
+- (void)setSessionMode:;
+- (void)setParentNWActivity:;
+- (BOOL)updateWithClientDictionary:;
+- (BOOL)applyConfigurationUsingClientDict:;
+- (id)conversationTimeBase;
+- (void)setConversationTimeBase:;
+- (id)conversationTimeBaseTruncated;
+- (void)setConversationTimeBaseTruncated:;
+- (id)parentNWActivity;
+@end

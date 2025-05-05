@@ -1,0 +1,37 @@
+@interface PLGenericAlbumJournalEntryPayload : PLJournalEntryPayload
+@property (nonatomic) NSString cloudGUID;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSNumber kind;
+@property (nonatomic) BOOL isPinned;
+@property (nonatomic) BOOL isPrototype;
+@property (nonatomic) BOOL isInTrash;
+@property (nonatomic) BOOL customSortAscending;
+@property (nonatomic) NSInteger customSortKey;
+@property (nonatomic) NSString customKeyAssetUUID;
+@property (nonatomic) NSString importSessionID;
+@property (nonatomic) NSData userQueryData;
+@property (nonatomic) NSDate creationDate;
+@property (nonatomic) NSString importedByBundleIdentifier;
+- (id)kind;
+- (id)title;
+- (BOOL)isPinned;
+- (id)cloudGUID;
+- (id)importedByBundleIdentifier;
+- (id)creationDate;
+- (void)setUserQueryData:;
+- (BOOL)isInTrash;
+- (int)customSortKey;
+- (BOOL)customSortAscending;
+- (id)importSessionID;
+- (BOOL)updatePayloadAttributes:andNilAttributes:withManagedObject:forPayloadProperty:;
+- (void)appendAttributeKey:value:toDescriptionBuilder:;
+- (id)payloadValueFromAttributes:forPayloadProperty:;
+- (void)updateAlbum:includePendingChanges:;
+- (BOOL)comparePayloadValue:toObjectDictionaryValue:forPayloadProperty:;
+- (id)insertAlbumFromDataInManagedObjectContext:;
+- (BOOL)isPrototype;
+- (id)userQueryData;
+- (id)customKeyAssetUUID;
++ (id)modelPropertiesDescription;
++ (id)nonPersistedModelPropertiesDescription;
+@end

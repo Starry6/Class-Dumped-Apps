@@ -1,0 +1,33 @@
+@interface CUHomeKitFindPairedPeerContext : NSObject
+@property (nonatomic) @? completion;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) Q options;
+@property (nonatomic) CUPairedPeer pairedPeer;
+@property (nonatomic) BOOL triedAccessory;
+@property (nonatomic) BOOL triedHAP;
+@property (nonatomic) Q startTicks;
+@property (nonatomic) NSArray users;
+@property (nonatomic) Q userIndex;
+@property (nonatomic) Q userCount;
+- (id)completion;
+- (id)users;
+- (void)setOptions:;
+- (void)setCompletion:;
+- (id)identifier;
+- (id)pairedPeer;
+- (unsigned long long)options;
+- (void).cxx_destruct;
+- (void)setIdentifier:;
+- (void)setPairedPeer:;
+- (BOOL)triedAccessory;
+- (void)setTriedAccessory:;
+- (BOOL)triedHAP;
+- (void)setTriedHAP:;
+- (unsigned long long)startTicks;
+- (void)setStartTicks:;
+- (void)setUsers:;
+- (unsigned long long)userIndex;
+- (void)setUserIndex:;
+- (unsigned long long)userCount;
+- (void)setUserCount:;
+@end

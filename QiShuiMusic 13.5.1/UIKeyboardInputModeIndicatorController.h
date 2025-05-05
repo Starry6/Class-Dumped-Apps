@@ -1,0 +1,34 @@
+@interface UIKeyboardInputModeIndicatorController : NSObject
+@property (nonatomic) UIDelayedAction dismissAction;
+@property (nonatomic) UIDelayedAction idleAction;
+@property (nonatomic) NSDate lastPresentedTime;
+@property (nonatomic) NSString focusedSceneID;
+@property (nonatomic) <UIKeyboardInputModeIndicatorControllerDelegate> delegate;
+- (void)didBecomeActive;
+- (id)dismissAction;
+- (void)willResignActive;
+- (void)presentIndicator;
+- (void)setIdleAction:;
+- (BOOL)enabled;
+- (void)setDelegate:;
+- (void)inputModeChanged;
+- (void)setNeedsIndicatorShow;
+- (void)keyboardWindowEnabled:;
+- (void)showIndicator;
+- (void)clear;
+- (void)idle;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setFocusedSceneID:;
+- (void)focusChanged;
+- (void)setLastPresentedTime:;
+- (id)lastPresentedTime;
+- (void)hardwareKeyboardDettached;
+- (void)dismissIndicator;
+- (void)focusedSceneChanged:;
+- (void)keyPressed;
+- (id)idleAction;
+- (void)setDismissAction:;
+- (id)focusedSceneID;
++ (BOOL)enabled;
+@end

@@ -1,0 +1,32 @@
+@interface AMSSharedStoreReview : NSObject
+@property (nonatomic) NSObject<OS_dispatch_queue> sharedStoreReviewQueue;
+@property (nonatomic) <AMSBagProtocol> bag;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)shouldAttemptPromptReview;
+- (id)isReviewEnabled;
+- (id)initWithBag:;
+- (void)setBag:;
+- (id)shouldAttemptReview;
+- (id)sharedStoreReviewQueue;
+- (void).cxx_destruct;
+- (void)applicationDidForeground;
+- (id)bag;
+- (void)didAttemptPromptReview;
+- (BOOL)isEnabled;
++ (id)createBagForSubProfile;
++ (id)bagSubProfileVersion;
++ (id)bagSubProfile;
++ (void)_logDidAttemptPromptReviewWithStoreReviewMetrics:currentTime:;
++ (void)_logNewSessionWithStoreReviewMetrics:currentTime:;
++ (BOOL)_shouldLogNewSessionWithLastLoggedTimeStamp:currentTime:sessionInterval:;
++ (BOOL)_shouldPromptReviewForStoreReviewMetrics:sessionCount:;
++ (BOOL)_shouldPromptReviewForStoreReviewMetrics:currentTime:sessionCount:promptInterval:;
++ (BOOL)_isRepeatedPromptsSupported;
++ (id)_storeReviewMetrics;
++ (void)_persistStoreReviewMetrics:;
++ (id)bagKeySet;
++ (void)_applicationDidForegroundWithCurrentTime:storeReviewMetrics:sessionInterval:;
+@end

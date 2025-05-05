@@ -1,0 +1,33 @@
+@interface CEMDeviceLostmodeLocationCommand_Status : CEMPayloadBase
+@property (nonatomic) NSNumber statusLatitude;
+@property (nonatomic) NSNumber statusLongitude;
+@property (nonatomic) NSNumber statusHorizontalAccuracy;
+@property (nonatomic) NSNumber statusVerticalAccuracy;
+@property (nonatomic) NSNumber statusAltitude;
+@property (nonatomic) NSNumber statusSpeed;
+@property (nonatomic) NSNumber statusCourse;
+@property (nonatomic) NSString statusTimestamp;
+- (void).cxx_destruct;
+- (BOOL)loadPayload:error:;
+- (id)serializePayload;
+- (id)statusLatitude;
+- (void)setStatusLatitude:;
+- (id)statusLongitude;
+- (void)setStatusLongitude:;
+- (id)statusHorizontalAccuracy;
+- (void)setStatusHorizontalAccuracy:;
+- (id)statusVerticalAccuracy;
+- (void)setStatusVerticalAccuracy:;
+- (id)statusAltitude;
+- (void)setStatusAltitude:;
+- (id)statusSpeed;
+- (void)setStatusSpeed:;
+- (id)statusCourse;
+- (void)setStatusCourse:;
+- (id)statusTimestamp;
+- (void)setStatusTimestamp:;
++ (id)allowedStatusKeys;
++ (id)allowedReasons;
++ (id)buildWithLatitude:withLongitude:withHorizontalAccuracy:withVerticalAccuracy:withAltitude:withSpeed:withCourse:withTimestamp:;
++ (id)buildRequiredOnlyWithLatitude:withLongitude:withHorizontalAccuracy:withVerticalAccuracy:withAltitude:withSpeed:withCourse:withTimestamp:;
+@end

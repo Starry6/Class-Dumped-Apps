@@ -1,0 +1,33 @@
+@interface MTKTextureLoader : NSObject
+@property (nonatomic) <MTLDevice> device;
+- (void)newTextureWithMDLTexture:options:completionHandler:;
+- (void)dealloc;
+- (id)newTextureWithMDLTexture:options:error:;
+- (void)newTextureWithName:scaleFactor:displayGamut:bundle:options:completionHandler:;
+- (id)newUploaderForOptions:;
+- (id)newTexturesWithContentsOfURLs:options:error:;
+- (void)newTexturesWithContentsOfURLs:options:completionHandler:;
+- (void)_loadData:options:completionHandler:;
+- (void)newTexturesWithNames:scaleFactor:bundle:options:completionHandler:;
+- (id)newTextureWithData:options:error:;
+- (BOOL)validateGenerateMipmapsForPixelFormat:options:error:;
+- (id)newTextureWithName:scaleFactor:displayGamut:bundle:options:error:;
+- (void)newTextureWithData:options:completionHandler:;
+- (void)_loadCGImage:options:completionHandler:;
+- (id)newTextureWithName:scaleFactor:bundle:options:error:;
+- (id)newTextureFromTXRTexture:options:error:;
+- (void)_newAsyncTextureWithNames:scaleFactor:displayGamut:bundle:options:completionHandler:;
+- (id)newTextureWithContentsOfURL:options:error:;
+- (void)_loadMDLTexture:options:completionHandler:;
+- (void)newTextureWithCGImage:options:completionHandler:;
+- (void)newTexturesWithNames:scaleFactor:displayGamut:bundle:options:completionHandler:;
+- (void)_loadData:options:uploader:label:completionHandler:;
+- (void)newTextureWithContentsOfURL:options:completionHandler:;
+- (id)initWithDevice:;
+- (id)_newSyncTexturesFromTXRTextures:labels:options:error:;
+- (void)newTextureWithName:scaleFactor:bundle:options:completionHandler:;
+- (unsigned long long)_determineFileType:;
+- (id)newTexturesFromTXRTextures:options:error:;
+- (id)newTextureWithCGImage:options:error:;
+- (id)device;
+@end

@@ -1,0 +1,32 @@
+@interface BWObjectRingBuffer : NSObject
+@property (nonatomic) NSInteger count;
+@property (nonatomic) NSInteger capacity;
+@property (nonatomic) BOOL ascending;
+@property (nonatomic) BOOL expectAscending;
+@property (nonatomic) BOOL enforceAscending;
+- (id)firstObject;
+- (int)capacity;
+- (void)setCapacity:;
+- (BOOL)ascending;
+- (void)dealloc;
+- (void)clear;
+- (id)description;
+- (int)count;
+- (id)lastObject;
+- (id)lastTime;
+- (id)initWithCapacity:;
+- (void)setEnforceAscending:;
+- (BOOL)enforceAscending;
+- (void)_forceAscendingTo:;
+- (void)appendObject:forTime:;
+- (int)_findClosestOffsetToTimestamp:;
+- (id)firstTime;
+- (void)enumerateObjectsStartingAt:usingBlock:;
+- (void)_enumerateObjectsStartingAtOffset:usingBlock:;
+- (void)reverseEnumerateObjectsStartingAt:usingBlock:;
+- (void)_reverseEnumerateObjectsStartingAtOffset:usingBlock:;
+- (void)extractTimeRangeFrom:until:into:times:;
+- (void)flushEntriesEarlierThan:;
+- (BOOL)expectAscending;
+- (void)setExpectAscending:;
+@end

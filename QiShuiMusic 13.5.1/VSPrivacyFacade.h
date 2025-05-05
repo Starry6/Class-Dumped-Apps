@@ -1,0 +1,30 @@
+@interface VSPrivacyFacade : NSObject
+@property (nonatomic) VSPrivacyVoucherLockbox voucherLockbox;
+@property (nonatomic) NSString service;
+@property (nonatomic) NSOperationQueue privateQueue;
+@property (nonatomic) NSArray knownAppBundles;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)privateQueue;
+- (void)setPrivateQueue:;
+- (void)setService:;
+- (id)init;
+- (id)service;
+- (void).cxx_destruct;
+- (BOOL)reset;
+- (void)preflightCheckForProcessIdentifier:withCompletionHandler:;
+- (void)requestAccessForAuditToken:processIdentifier:identityProviderDisplayName:providerIsSupported:identityProviderID:allowUI:completionHandler:;
+- (id)initWithService:voucherLockbox:;
+- (id)initWithVoucherLockbox:;
+- (BOOL)isAccessGrantedForAuditToken:;
+- (BOOL)setAccessGranted:forAuditToken:;
+- (id)_voucherForProcess:providerID:;
+- (void)_promptForAccessUsingAuditToken:processIdentifier:identityProviderDisplayName:providerIsSupported:completionHandler:;
+- (BOOL)isAccessGrantedForBundle:;
+- (BOOL)setAccessGranted:forBundle:;
+- (id)knownAppBundles;
+- (id)voucherLockbox;
+- (void)setVoucherLockbox:;
+@end

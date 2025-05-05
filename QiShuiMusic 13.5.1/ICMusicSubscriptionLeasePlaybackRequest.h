@@ -1,0 +1,37 @@
+@interface ICMusicSubscriptionLeasePlaybackRequest : NSObject
+@property (nonatomic) NSString assetSourceStorefrontID;
+@property (nonatomic) ICStoreRequestContext requestContext;
+@property (nonatomic) Q storeCloudID;
+@property (nonatomic) q storePurchasedAdamID;
+@property (nonatomic) q storeSubscriptionAdamID;
+@property (nonatomic) NSString cloudUniversalLibraryID;
+@property (nonatomic) BOOL shouldPreventLeaseAcquisition;
+@property (nonatomic) BOOL shouldRequireLeaseAcquisition;
+@property (nonatomic) BOOL triggeredByLeasePrevention;
+@property (nonatomic) BOOL followUp;
+@property (nonatomic) NSString playbackAuthorizationToken;
+- (id)cloudUniversalLibraryID;
+- (id)playbackAuthorizationToken;
+- (void)setPlaybackAuthorizationToken:;
+- (id)requestContext;
+- (void).cxx_destruct;
+- (id)initWithRequestContext:;
+- (id)copyWithZone:;
+- (long long)storePurchasedAdamID;
+- (long long)storeSubscriptionAdamID;
+- (void)setCloudUniversalLibraryID:;
+- (void)setStoreSubscriptionAdamID:;
+- (unsigned long long)storeCloudID;
+- (void)setStoreCloudID:;
+- (void)setStorePurchasedAdamID:;
+- (id)assetSourceStorefrontID;
+- (void)setAssetSourceStorefrontID:;
+- (BOOL)isFollowUp;
+- (void)setFollowUp:;
+- (BOOL)shouldPreventLeaseAcquisition;
+- (void)setShouldPreventLeaseAcquisition:;
+- (BOOL)shouldRequireLeaseAcquisition;
+- (void)setShouldRequireLeaseAcquisition:;
+- (BOOL)isTriggeredByLeasePrevention;
+- (void)setTriggeredByLeasePrevention:;
+@end

@@ -1,0 +1,30 @@
+@interface IESECSKUNewInstallmentSectionController : IGListSectionController
+@property (nonatomic) IESECSKUNewInstallmentViewModel viewModel;
+@property (nonatomic) IGListAdapter listAdapter;
+@property (nonatomic) <IESECSKUPOISectionControllerDelegate> poiDelegate;
+@property (nonatomic) <IESECSKUNewInstallmentSectionDelegate> delegate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setListAdapter:;
+- (void)setPoiDelegate:;
+- (id)cellForItemAtIndex:;
+- (void)clickPOIInfo;
+- (void)clickTradeInItem:;
+- (void)didSelectInstallmentAtIndex:;
+- (void)didUpdateToObject:;
+- (id)emptyViewForListAdapter:;
+- (id)listAdapter;
+- (id)listAdapter:sectionControllerForObject:;
+- (id)objectsForListAdapter:;
+- (id)poiDelegate;
+- (long long)numberOfItems;
+- (id)viewModel;
+- (void)setDelegate:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setViewModel:;
+- (id)inset;
+- (id)sizeForItemAtIndex:;
+@end

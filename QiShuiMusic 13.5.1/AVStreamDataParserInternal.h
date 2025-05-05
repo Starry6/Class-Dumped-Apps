@@ -1,0 +1,2 @@
+@interface AVStreamDataParserInternal : NSObject
+@end

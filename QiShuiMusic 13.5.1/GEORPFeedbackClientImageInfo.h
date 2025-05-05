@@ -1,0 +1,32 @@
+@interface GEORPFeedbackClientImageInfo : PBCodable
+@property (nonatomic) BOOL hasProviderImageId;
+@property (nonatomic) NSString providerImageId;
+@property (nonatomic) BOOL hasImageUrl;
+@property (nonatomic) NSString imageUrl;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (id)init;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasProviderImageId;
+- (id)providerImageId;
+- (void)setProviderImageId:;
+- (BOOL)hasImageUrl;
+- (id)imageUrl;
+- (void)setImageUrl:;
++ (BOOL)isValid:;
+@end

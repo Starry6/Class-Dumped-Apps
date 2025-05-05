@@ -1,0 +1,31 @@
+@interface IESLiveSmallWindowStore : NSObject
+@property (nonatomic) NSNumber roomID;
+@property (nonatomic) IESLiveSaaSLiveRoomModel roomModel;
+@property (nonatomic) IESLiveSmallWindowAPI smallWindowApi;
+@property (nonatomic) @? liveEndAction;
+@property (nonatomic) NSDictionary context;
+- (id)initWithRoomID:;
+- (void)checkLiveState;
+- (void)dealWithPlayerLoadState:;
+- (void)enterRoomWithPlayer:from:isInteract:;
+- (void)fetchRoomInfoWithRoomID:finished:;
+- (id)liveEndAction;
+- (id)liveType;
+- (void)onReceiveStreamDryUp;
+- (id)roomModel;
+- (void)setLiveEndAction:;
+- (void)setRoomModel:;
+- (void)setRoomModelForInteract:;
+- (void)setSmallWindowApi:;
+- (id)smallWindowApi;
+- (id)smallWindowEcomContextFrom:;
+- (id)smallWindowTrackParams;
+- (void)smallWindowTrackWithEvent:extraParam:fromPage:;
+- (void)smallWindowTrackWithEvent:params:;
+- (void)trackLiveShow;
+- (id)context;
+- (void).cxx_destruct;
+- (void)setContext:;
+- (id)roomID;
+- (void)setRoomID:;
+@end

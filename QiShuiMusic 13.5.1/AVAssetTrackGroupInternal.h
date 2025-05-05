@@ -1,0 +1,2 @@
+@interface AVAssetTrackGroupInternal : NSObject
+@end

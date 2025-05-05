@@ -1,0 +1,31 @@
+@interface NEOnDemandRule : NSObject
+@property (nonatomic) q action;
+@property (nonatomic) NSArray DNSSearchDomainMatch;
+@property (nonatomic) NSArray DNSServerAddressMatch;
+@property (nonatomic) q interfaceTypeMatch;
+@property (nonatomic) NSArray SSIDMatch;
+@property (nonatomic) NSURL probeURL;
+- (id)initWithAction:;
+- (BOOL)checkValidityAndCollectErrors:;
+- (id)probeURL;
+- (id)initFromLegacyDictionary:;
+- (id)descriptionWithIndent:options:;
+- (id)copyLegacyDictionary;
+- (long long)action;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (void)setProbeURL:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)DNSSearchDomainMatch;
+- (void)setDNSSearchDomainMatch:;
+- (id)DNSServerAddressMatch;
+- (void)setDNSServerAddressMatch:;
+- (long long)interfaceTypeMatch;
+- (void)setInterfaceTypeMatch:;
+- (id)SSIDMatch;
+- (void)setSSIDMatch:;
++ (BOOL)supportsSecureCoding;
+@end

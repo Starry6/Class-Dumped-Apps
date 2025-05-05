@@ -1,0 +1,38 @@
+@interface PLCloudSharingViewedStateChangeJob : PLCloudSharingJob
+@property (nonatomic) q jobType;
+@property (nonatomic) NSString albumGUID;
+@property (nonatomic) BOOL albumHasUnseenContent;
+@property (nonatomic) q albumUnviewedAssetCount;
+@property (nonatomic) NSString assetCollectionGUID;
+@property (nonatomic) BOOL assetCollectionHasUnreadComments;
+@property (nonatomic) NSDate assetCollectionLastViewedCommentDate;
+- (id)initFromXPCObject:libraryServicesManager:;
+- (long long)jobType;
+- (void)run;
+- (long long)daemonOperation;
+- (void)runDaemonSide;
+- (void).cxx_destruct;
+- (id)description;
+- (void)encodeToXPCObject:;
+- (void)setJobType:;
+- (id)albumGUID;
+- (void)setAlbumGUID:;
+- (void)_executeAlbumViewedStateChanged;
+- (void)_executeAlbumUnviewedAssetCountChangedWithGroup;
+- (void)_executeAssetCommentsReadStateChangedWithGroup;
+- (void)_executeAssetLastViewedCommentDateChangedWithGroup;
+- (BOOL)albumHasUnseenContent;
+- (void)setAlbumHasUnseenContent:;
+- (long long)albumUnviewedAssetCount;
+- (void)setAlbumUnviewedAssetCount:;
+- (id)assetCollectionGUID;
+- (void)setAssetCollectionGUID:;
+- (BOOL)assetCollectionHasUnreadComments;
+- (void)setAssetCollectionHasUnreadComments:;
+- (id)assetCollectionLastViewedCommentDate;
+- (void)setAssetCollectionLastViewedCommentDate:;
++ (void)markAlbum:asHavingUnseenContent:;
++ (void)updateUnviewedAssetCollectionCount:forAlbum:;
++ (void)markAssetCollection:asHavingUnreadComments:inAlbum:;
++ (void)setLastViewedCommentDate:forAssetCollection:inAlbum:;
+@end

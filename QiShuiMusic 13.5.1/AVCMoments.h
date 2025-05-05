@@ -1,0 +1,30 @@
+@interface AVCMoments : NSObject
+@property (nonatomic) <AVCMomentsDelegate> delegate;
+@property (nonatomic) q streamToken;
+@property (nonatomic) I capabilities;
+@property (nonatomic) NSString requesterID;
+@property (nonatomic) NSInteger activeRequestCount;
+@property (nonatomic) NSInteger pendingRequestCount;
+- (void)dealloc;
+- (unsigned int)capabilities;
+- (void)disconnect;
+- (id)delegate;
+- (id)requesterID;
+- (BOOL)connect;
+- (id)description;
+- (long long)streamToken;
+- (int)activeRequestCount;
+- (void)registerBlocksForNotifications;
+- (void)deregisterBlocksForNotifications;
+- (id)initWithStreamToken:requesterID:delegate:dispatchQueue:;
+- (void)didStartProcessingRequestHelperWithResult:;
+- (void)didEndProcessingRequestHelperWithResult:;
+- (void)didFinishRequestHelperWithResult:;
+- (id)newRequestWithMediaType:requesteeID:;
+- (id)newRequestWithMediaType:mode:requesteeID:;
+- (id)newDictionaryForRequest:;
+- (BOOL)avcMomentsRequestDidStartRequest:withError:;
+- (BOOL)avcMomentsRequestDidEndRequest:withError:;
+- (BOOL)avcMomentsRequestDidRejectRequest:withError:;
+- (int)pendingRequestCount;
+@end

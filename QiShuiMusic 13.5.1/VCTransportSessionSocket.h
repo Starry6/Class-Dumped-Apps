@@ -1,0 +1,25 @@
+@interface VCTransportSessionSocket : VCTransportSession
+- (BOOL)isIPv6;
+- (void)dealloc;
+- (void)start;
+- (id)streams;
+- (int)createVFD:forStreamType:;
+- (int)networkInterfaceType;
+- (unsigned int)networkMTU;
+- (id)initWithSocketDictionary:;
+- (id)initWithSharedSocket:;
+- (id)initWithRTPSocket:RTCPSocket:;
+- (int)createVFD:realSocket:sockAddr:length:isUsable:;
+- (int)updateTransportStream:;
+- (int)connectSocket:remoteAddress:storage:;
+- (int)setRemoteAddress:remoteRTCPPort:;
+- (int)setAudioRTPStreamParamatersForSocket:packetType:remoteIP:remoteIPLength:;
+- (int)setAudioRTCPStreamParamatersForSocket:packetType:remoteIP:remoteIPLength:;
+- (int)setVideoRTPStreamParamatersForSocket:packetType:remoteIP:remoteIPLength:;
+- (int)setVideoRTCPStreamParamatersForSocket:packetType:remoteIP:remoteIPLength:;
+- (int)setBasebandNotificationStreamParamatersForSocket:packetType:remoteIP:remoteIPLength:;
+- (int)configureParamatersForStreamType:socket:packetType:remoteIP:remoteIPLength:;
+- (int)createAndConfigureVFDForSocket:packetType:remoteIP:remoteIPLength:vfd:;
+- (void)initializeInterfaceTypeWithSocket:;
+- (int)initializeNetworkInfoWithSocket:;
+@end

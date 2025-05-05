@@ -1,0 +1,34 @@
+@interface LynxUIListCellContentProducer : NSObject
+@property (nonatomic) LynxUIContext UIContext;
+@property (nonatomic) ^v listNode;
+@property (nonatomic) Q operationIDCount;
+@property (nonatomic) q sign;
+@property (nonatomic) BOOL needsInternalCellAppearNotification;
+@property (nonatomic) BOOL needsInternalCellDisappearNotification;
+@property (nonatomic) BOOL needsInternalCellPrepareForReuseNotification;
+- (void)asyncUIAtIndexPath:operationID:;
+- (id)UIContext;
+- (void)asyncClearCellContent:;
+- (void)asyncRecycleLynxUI:;
+- (void)clearCellContent:;
+- (long long)generateOperationId;
+- (id)listNode;
+- (id)listView:cellForItemAtIndex:;
+- (void)listView:enqueueCell:;
+- (id)listView:updateCell:toItemAtIndex:;
+- (BOOL)needsInternalCellAppearNotification;
+- (BOOL)needsInternalCellDisappearNotification;
+- (BOOL)needsInternalCellPrepareForReuseNotification;
+- (unsigned long long)operationIDCount;
+- (void)recycleCell:;
+- (void)recycleLynxUI:;
+- (void)setNeedsInternalCellAppearNotification:;
+- (void)setNeedsInternalCellDisappearNotification:;
+- (void)setNeedsInternalCellPrepareForReuseNotification:;
+- (void)setOperationIDCount:;
+- (void)setSign:;
+- (void)setUIContext:;
+- (long long)sign;
+- (id)uiAtIndex:;
+- (void).cxx_destruct;
+@end

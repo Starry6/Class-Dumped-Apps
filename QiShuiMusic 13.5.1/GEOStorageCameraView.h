@@ -1,0 +1,33 @@
+@interface GEOStorageCameraView : PBCodable
+@property (nonatomic) BOOL hasCamera;
+@property (nonatomic) GEOURLCamera camera;
+@property (nonatomic) BOOL hasMapType;
+@property (nonatomic) NSInteger mapType;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (id)camera;
+- (void)setMapType:;
+- (void)readAll:;
+- (id)unknownFields;
+- (int)mapType;
+- (id)initWithJSON:;
+- (void)setHasMapType:;
+- (BOOL)hasMapType;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (void)setCamera:;
+- (BOOL)hasCamera;
+- (id)mapTypeAsString:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (int)StringAsMapType:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
++ (BOOL)isValid:;
+@end

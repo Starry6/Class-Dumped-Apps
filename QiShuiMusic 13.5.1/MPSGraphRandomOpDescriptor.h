@@ -1,0 +1,31 @@
+@interface MPSGraphRandomOpDescriptor : NSObject
+@property (nonatomic) Q distribution;
+@property (nonatomic) I dataType;
+@property (nonatomic) float min;
+@property (nonatomic) float max;
+@property (nonatomic) q minInteger;
+@property (nonatomic) q maxInteger;
+@property (nonatomic) float mean;
+@property (nonatomic) float standardDeviation;
+@property (nonatomic) Q samplingMethod;
+- (unsigned long long)distribution;
+- (void)setDataType:;
+- (void)setDistribution:;
+- (float)min;
+- (unsigned int)dataType;
+- (float)max;
+- (void)setMax:;
+- (void)setStandardDeviation:;
+- (float)standardDeviation;
+- (id)copyWithZone:;
+- (void)setMin:;
+- (long long)minInteger;
+- (void)setMinInteger:;
+- (long long)maxInteger;
+- (void)setMaxInteger:;
+- (float)mean;
+- (void)setMean:;
+- (unsigned long long)samplingMethod;
+- (void)setSamplingMethod:;
++ (id)descriptorWithDistribution:dataType:;
+@end

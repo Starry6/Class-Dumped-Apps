@@ -1,0 +1,2 @@
+@interface HMDLoadTracker : NSObject
+@end

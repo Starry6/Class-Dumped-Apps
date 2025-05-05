@@ -1,0 +1,36 @@
+@interface AWEIMDYOfficialContentCardView : UIView
+@property (nonatomic) AWENotificationModelNew model;
+@property (nonatomic) NSAttributedString foldTruncationToken;
+@property (nonatomic) YYLabel hightToken;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel timeLabel;
+@property (nonatomic) YYLabel contentLabel;
+@property (nonatomic) UIImageView contentImageView;
+@property (nonatomic) UIView unreadDotView;
+@property (nonatomic) <AWEIMDYOfficialContentCardViewDelegate> delegate;
+- (void)addConstrains;
+- (void)configWithModel:context:needTrackEvent:;
+- (id)foldTruncationToken;
+- (id)hightToken;
+- (double)p_calculateYYlabelWidth;
+- (void)p_makeFoldedCellConstrain;
+- (void)p_makeUnfoldedCellContrain;
+- (void)setFoldTruncationToken:;
+- (void)setHightToken:;
+- (void)setUnreadDotView:;
+- (id)unreadDotView;
+- (void)setTimeLabel:;
+- (id)model;
+- (id)timeLabel;
+- (id)init;
+- (void)setModel:;
+- (void)setTitleLabel:;
+- (void)setDelegate:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (id)contentLabel;
+- (void)setContentLabel:;
+- (id)contentImageView;
+- (void)setContentImageView:;
+@end

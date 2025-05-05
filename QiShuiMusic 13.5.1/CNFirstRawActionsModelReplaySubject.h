@@ -1,0 +1,2 @@
+@interface CNFirstRawActionsModelReplaySubject : CNReplaySubject
+@end

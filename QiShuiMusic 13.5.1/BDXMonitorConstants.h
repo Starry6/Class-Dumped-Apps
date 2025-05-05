@@ -1,0 +1,2 @@
+@interface BDXMonitorConstants : NSObject
+@end

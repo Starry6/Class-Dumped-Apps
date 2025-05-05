@@ -1,0 +1,31 @@
+@interface SAUITemplateImageView : SAUITemplateBaseItem
+@property (nonatomic) float alpha;
+@property (nonatomic) SAUIImageResource image;
+@property (nonatomic) double imagePointHeight;
+@property (nonatomic) double imagePointWidth;
+@property (nonatomic) NSArray monogramName;
+@property (nonatomic) NSString style;
+@property (nonatomic) NSArray themeImages;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)groupIdentifier;
+- (void)setAlpha:;
+- (void)setStyle:;
+- (void)setImage:;
+- (float)alpha;
+- (id)encodedClassName;
+- (id)style;
+- (id)image;
+- (double)imagePointHeight;
+- (void)setImagePointHeight:;
+- (double)imagePointWidth;
+- (void)setImagePointWidth:;
+- (id)themeImages;
+- (void)setThemeImages:;
+- (id)monogramName;
+- (void)setMonogramName:;
++ (id)imageView;
++ (id)imageViewWithDictionary:context:;
+@end

@@ -1,0 +1,2 @@
+@interface NSStoreMappingGenerator : NSObject
+@end

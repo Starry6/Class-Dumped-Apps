@@ -1,0 +1,33 @@
+@interface SHSheetContentDataSourceChangeRequest : NSObject
+@property (nonatomic) NSArray peopleProxies;
+@property (nonatomic) NSArray shareProxies;
+@property (nonatomic) NSArray actionProxies;
+@property (nonatomic) NSDictionary activitiesByUUID;
+@property (nonatomic) I nearbyCountSlotID;
+@property (nonatomic) SHSheetContentDataSourceState state;
+@property (nonatomic) q excludeSectionTypes;
+@property (nonatomic) BOOL forceReload;
+@property (nonatomic) BOOL animated;
+- (void)setAnimated:;
+- (BOOL)animated;
+- (void)setState:;
+- (id)state;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)forceReload;
+- (id)peopleProxies;
+- (id)shareProxies;
+- (id)actionProxies;
+- (unsigned int)nearbyCountSlotID;
+- (long long)excludeSectionTypes;
+- (void)setPeopleProxies:;
+- (void)setShareProxies:;
+- (void)setActionProxies:;
+- (id)activitiesByUUID;
+- (void)setActivitiesByUUID:;
+- (void)setNearbyCountSlotID:;
+- (void)setExcludeSectionTypes:;
+- (void)setForceReload:;
++ (id)changeRequestForPeopleProxies:shareProxies:actionProxies:nearbyCountSlotID:activitiesByUUID:;
++ (id)changeRequestFromState:;
+@end

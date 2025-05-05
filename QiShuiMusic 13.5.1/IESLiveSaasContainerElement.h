@@ -1,0 +1,31 @@
+@interface IESLiveSaasContainerElement : NSObject
+@property (nonatomic) <IESLiveLayoutContainerAdapter> container;
+@property (nonatomic) double btd_top;
+@property (nonatomic) double btd_bottom;
+@property (nonatomic) double btd_width;
+@property (nonatomic) double btd_height;
+@property (nonatomic) BOOL hidden;
+@property (nonatomic) {CGAffineTransform=dddddd} transform;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} frame;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (double)btd_top;
+- (double)btd_bottom;
+- (double)btd_height;
+- (double)btd_width;
+- (id)initWithLayoutContainer:;
+- (void)setBtd_bottom:;
+- (void)setBtd_height:;
+- (void)setBtd_top:;
+- (void)setBtd_width:;
+- (void)setContainer:;
+- (id)containerView;
+- (void)setTransform:;
+- (id)container;
+- (BOOL)hidden;
+- (id)transform;
+- (void).cxx_destruct;
+- (void)setHidden:;
+@end

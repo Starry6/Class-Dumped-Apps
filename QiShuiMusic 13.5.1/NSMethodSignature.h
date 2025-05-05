@@ -1,0 +1,37 @@
+@interface NSMethodSignature : NSObject
+@property (nonatomic) NSArray argumentTypes;
+@property (nonatomic) Q numberOfArguments;
+@property (nonatomic) Q frameLength;
+@property (nonatomic) r* methodReturnType;
+@property (nonatomic) Q methodReturnLength;
+- (id)argumentTypes;
+- (id)methodSignatureByInsertingType:atArgumentIndex:;
+- (id)typeEncoding;
+- (BOOL)_isCompatibleWithMethodSignature:;
+- (BOOL)CKReplyBlockHasErrorParameter;
+- (unsigned long long)fp_indexOfLastArgumentWithType:;
+- (id)init;
+- (void)dealloc;
+- (unsigned long long)hash;
+- (id)debugDescription;
+- (BOOL)isEqual:;
+- (id)getArgumentTypeAtIndex:;
+- (unsigned long long)frameLength;
+- (id)methodReturnType;
+- (unsigned long long)methodReturnLength;
+- (Class)_classForObjectAtArgumentIndex:;
+- (id)_frameDescriptor;
+- (id)_typeString;
+- (id)_cTypeString;
+- (unsigned long long)numberOfArguments;
+- (id)_argInfo:;
+- (id)_signatureForBlockAtArgumentIndex:;
+- (BOOL)_isAllObjects;
+- (id)_protocolsForObjectAtArgumentIndex:;
+- (unsigned long long)_flags;
+- (id)_initWithROMEntry:;
+- (BOOL)isOneway;
+- (BOOL)_isHiddenStructRet;
++ (id)_navigation_methodSignatureForEmptyMethod;
++ (id)signatureWithObjCTypes:;
+@end

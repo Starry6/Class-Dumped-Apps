@@ -1,0 +1,35 @@
+@interface IESIMSaaSKit : NSObject
+- (id)init;
++ (id)emoticonManager;
++ (id)currentOpenID;
++ (id)envorimentManager;
++ (void)fetchLatestMessageSummaryInfoCompletion:;
++ (void)fetchTranspondShareModelList:filterNotFriendUser:needAddressBookFriend:shieldFansGroup:;
++ (void)fetchWholeContactAndRecentContactList:;
++ (void)getUserInfoWithOpenID:completion:;
++ (void)hostFollowUserWithUid:;
++ (void)hostUnFollowUserWithUid:;
++ (BOOL)isIMViewController:;
++ (BOOL)isTeenModeWithID:;
++ (void)loginWithAuthInfo:completion:;
++ (id)messageManager;
++ (void)registerURLString:viewControllerClass:;
++ (id)rootViewControllerWithoutNavigationBar:;
++ (void)sendMessageWithShareModel:itemId:completion:;
++ (void)sendMessageWithShareModel:itemId:trackParams:completion:;
++ (void)setInnerPushDelegate:;
++ (void)setMessageEventsDelegate:;
++ (void)setTrackerDelegate:;
++ (BOOL)setupWithConfig:delegate:;
++ (void)transferToGroupMessageSessionID:fromVC:ext:isFloatMode:completion:;
++ (void)transferToMessageVCWithUid:nickname:alias:showFolloweeCount:isCompanyProfile:fromVC:showKeyboard:ext:completion:;
++ (void)transferToMessageVCWithUid:nickname:alias:showFolloweeCount:isCompanyProfile:fromVC:showKeyboard:ext:isFloatMode:completion:;
++ (void)updateConfigWithAuthInfo:complete:;
++ (BOOL)logout;
++ (BOOL)enable;
++ (id)sharedInstance;
++ (id)rootViewController;
++ (void)setEnable:;
++ (id)searchEngine;
++ (BOOL)isLogin;
+@end

@@ -1,0 +1,2 @@
+@interface PKInputPointPredictor : NSObject
+@end

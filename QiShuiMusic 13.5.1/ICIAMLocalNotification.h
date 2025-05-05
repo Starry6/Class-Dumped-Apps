@@ -1,0 +1,37 @@
+@interface ICIAMLocalNotification : PBCodable
+@property (nonatomic) BOOL hasTrigger;
+@property (nonatomic) NSInteger trigger;
+@property (nonatomic) BOOL hasDate;
+@property (nonatomic) double date;
+@property (nonatomic) BOOL hasInterval;
+@property (nonatomic) double interval;
+@property (nonatomic) BOOL hasNotification;
+@property (nonatomic) NSString notification;
+- (BOOL)hasDate;
+- (id)notification;
+- (void)setNotification:;
+- (BOOL)hasNotification;
+- (void)writeTo:;
+- (void)setTrigger:;
+- (unsigned long long)hash;
+- (BOOL)hasInterval;
+- (int)trigger;
+- (void)copyTo:;
+- (double)date;
+- (void)setHasInterval:;
+- (void)mergeFrom:;
+- (void)setInterval:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (void)setDate:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (void)setHasDate:;
+- (BOOL)isEqual:;
+- (double)interval;
+- (id)copyWithZone:;
+- (void)setHasTrigger:;
+- (BOOL)hasTrigger;
+- (id)triggerAsString:;
+- (int)StringAsTrigger:;
+@end

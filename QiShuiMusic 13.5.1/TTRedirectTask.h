@@ -1,0 +1,31 @@
+@interface TTRedirectTask : NSObject
+@property (nonatomic) TTHttpTask task;
+@property (nonatomic) NSMutableDictionary allHTTPHeaders;
+@property (nonatomic) NSMutableArray removedHeaders;
+@property (nonatomic) NSMutableDictionary modifiedHeaders;
+@property (nonatomic) NSURL originalUrl;
+@property (nonatomic) NSURL redirectUrl;
+@property (nonatomic) NSDictionary allHTTPHeaderFields;
+@property (nonatomic) NSArray currentRemovedHeaders;
+@property (nonatomic) NSDictionary currentModifiedHeaders;
+- (void)convertHeaderStringToDictionary:;
+- (id)currentModifiedHeaders;
+- (id)currentRemovedHeaders;
+- (id)initWithHttpTask:httpHeaders:originalUrl:redirectUrl:;
+- (void)removeHeader:;
+- (id)removedHeaders;
+- (void)setModifiedHeaders:;
+- (void)setRemovedHeaders:;
+- (void)setValue:forHeader:;
+- (void)cancel;
+- (id)originalUrl;
+- (id)task;
+- (void)setAllHTTPHeaders:;
+- (id)allHTTPHeaders;
+- (void)setTask:;
+- (void).cxx_destruct;
+- (id)allHTTPHeaderFields;
+- (id)modifiedHeaders;
+- (id)redirectUrl;
+- (void)setRedirectUrl:;
+@end

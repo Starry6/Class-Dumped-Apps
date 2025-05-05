@@ -1,0 +1,30 @@
+@interface MPSNDArrayDescriptor : NSObject
+@property (nonatomic) Q rowBytes;
+@property (nonatomic) BOOL preferPackedRows;
+@property (nonatomic) I dataType;
+@property (nonatomic) Q numberOfDimensions;
+- (void)setDataType:;
+- (void)dealloc;
+- (unsigned int)dataType;
+- (unsigned long long)numberOfDimensions;
+- (void)permuteWithDimensionOrder:;
+- (id)getShape;
+- (id)getShapeVector;
+- (void)setPreferPackedRows:;
+- (BOOL)preferPackedRows;
+- (unsigned long long)rowBytes;
+- (void)sliceDimension:withSubrange:;
+- (void)setRowBytes:;
+- (id)sliceRangeForDimension:;
+- (void)reshapeWithDimensionCount:dimensionSizes:;
+- (void)reshapeWithShape:;
+- (void)transposeDimension:withDimension:;
+- (void)setNumberOfDimensions:;
+- (unsigned long long)lengthOfDimension:;
+- (void)setLengthOfDimension:atIndex:;
+- (id)dimensionOrder;
+- (id)initWithDataType:dimensions:sizes:;
++ (id)descriptorWithDataType:dimensionCount:dimensionSizes:;
++ (id)descriptorWithDataType:dimensionSizes:;
++ (id)descriptorWithDataType:shape:;
+@end

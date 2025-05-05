@@ -1,0 +1,30 @@
+@interface MNXPCActivity : NSObject
+@property (nonatomic) NSString identifier;
+@property (nonatomic) BOOL repeat;
+@property (nonatomic) BOOL shouldWakeDevice;
+@property (nonatomic) BOOL useCoreDuetPowerBudgeting;
+@property (nonatomic) BOOL runOnBattery;
+@property (nonatomic) double tolerance;
+@property (nonatomic) Q qualityOfService;
+@property (nonatomic) Q networkRequirements;
+@property (nonatomic) NSDate scheduledDate;
+- (double)tolerance;
+- (id)init;
+- (unsigned long long)qualityOfService;
+- (id)identifier;
+- (double)remainingTime;
+- (id)debugDescription;
+- (void).cxx_destruct;
+- (id)description;
+- (void)invalidate;
+- (id)scheduledDate;
+- (id)initWithIdentifier:repeat:shouldWakeDevice:useCoreDuetPowerBudgeting:runOnBattery:tolerance:qualityOfService:networkRequirements:;
+- (void)scheduleForDate:codeBlock:;
+- (BOOL)_needsNetworkRequirement:;
+- (BOOL)repeat;
+- (BOOL)shouldWakeDevice;
+- (BOOL)useCoreDuetPowerBudgeting;
+- (BOOL)runOnBattery;
+- (unsigned long long)networkRequirements;
++ (void)checkInActivity:codeBlock:;
+@end

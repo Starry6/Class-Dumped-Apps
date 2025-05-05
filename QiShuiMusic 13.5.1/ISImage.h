@@ -1,0 +1,2 @@
+@interface ISImage : IFImage
+@end

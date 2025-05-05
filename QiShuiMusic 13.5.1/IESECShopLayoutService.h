@@ -1,0 +1,31 @@
+@interface IESECShopLayoutService : IESECShopService
+@property (nonatomic) IESECServiceProxy<IESECShopForwardCoService> forwardCoService;
+@property (nonatomic) UIView rootView;
+@property (nonatomic) UIView containerView;
+@property (nonatomic) UIViewController<IESECShopContainerViewControllerV2> container;
+@property (nonatomic) IESECShopTopTabView topTabView;
+@property (nonatomic) IESECPagerView pagerView;
+@property (nonatomic) double defaultPagerViewTopInset;
+@property (nonatomic) double globalComponentHeight;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)configRootView:;
+- (void)configContainer:;
+- (void)configContainerView:;
+- (void)configPagerView:;
+- (void)configTopTabView:;
+- (double)defaultPagerViewTopInset;
+- (id)forwardCoService;
+- (double)globalComponentHeight;
+- (id)pagerView;
+- (void)setDefaultPagerViewTopInset:;
+- (void)setForwardCoService:;
+- (void)setGlobalComponentHeight:;
+- (id)topTabView;
+- (id)containerView;
+- (id)container;
+- (void).cxx_destruct;
+- (id)rootView;
+@end

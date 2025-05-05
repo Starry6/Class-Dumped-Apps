@@ -1,0 +1,34 @@
+@interface CalDAVCalendarUserSearchTask : CoreDAVPropertyFindBaseTask
+@property (nonatomic) NSSet searchStrings;
+@property (nonatomic) q searchType;
+@property (nonatomic) Q resultLimit;
+@property (nonatomic) BOOL findAttendees;
+@property (nonatomic) BOOL findLocations;
+@property (nonatomic) BOOL findUsers;
+@property (nonatomic) BOOL findGroups;
+@property (nonatomic) BOOL findResources;
+- (id)requestBody;
+- (unsigned long long)resultLimit;
+- (void)setFindLocations:;
+- (long long)searchType;
+- (void)setSearchStrings:;
+- (void)setSearchType:;
+- (id)extraAttributes;
+- (id)httpMethod;
+- (void)finishCoreDAVTaskWithError:;
+- (void)setResultLimit:;
+- (void)setFindAttendees:;
+- (BOOL)findAttendees;
+- (id)searchItems;
+- (id)searchStrings;
+- (id)initWithSearchStrings:atURL:;
+- (void).cxx_destruct;
+- (void)setFindUsers:;
+- (BOOL)findGroups;
+- (BOOL)findUsers;
+- (BOOL)findLocations;
+- (BOOL)findResources;
+- (void)setFindGroups:;
+- (void)setFindResources:;
++ (BOOL)tokensAreLegal:;
+@end

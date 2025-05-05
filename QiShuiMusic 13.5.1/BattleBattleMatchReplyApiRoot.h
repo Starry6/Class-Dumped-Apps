@@ -1,0 +1,2 @@
+@interface BattleBattleMatchReplyApiRoot : GPBRootObject
+@end

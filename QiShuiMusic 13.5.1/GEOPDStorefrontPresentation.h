@@ -1,0 +1,34 @@
+@interface GEOPDStorefrontPresentation : PBCodable
+@property (nonatomic) BOOL hasCloseUpView;
+@property (nonatomic) GEOPDStorefrontView closeUpView;
+@property (nonatomic) BOOL hasStandOffView;
+@property (nonatomic) GEOPDStorefrontView standOffView;
+@property (nonatomic) BOOL hasOverlayImageUrl;
+@property (nonatomic) NSString overlayImageUrl;
+- (void)readAll:;
+- (id)init;
+- (id)closeUpView;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)setStandOffView:;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)standOffView;
+- (void)setOverlayImageUrl:;
+- (id)initWithData:;
+- (BOOL)hasStandOffView;
+- (void).cxx_destruct;
+- (id)overlayImageUrl;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)hasCloseUpView;
+- (BOOL)hasOverlayImageUrl;
+- (void)setCloseUpView:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
++ (BOOL)isValid:;
+@end

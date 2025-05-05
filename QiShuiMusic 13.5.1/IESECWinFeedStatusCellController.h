@@ -1,0 +1,38 @@
+@interface IESECWinFeedStatusCellController : IESECWinFeedStatusSectionController
+@property (nonatomic) IESECWinFeedStatusObject object;
+@property (nonatomic) IESECServiceProxy<IESECWinTabService> tabService;
+@property (nonatomic) IESECServiceProxy<IESECWinCategoryService> categoryService;
+@property (nonatomic) IESECServiceProxy<IESECWinCommonTrackService> commonTrackService;
+@property (nonatomic) IESECServiceProxy<IESECWinDataStatusService> dataStatusService;
+@property (nonatomic) IESECServiceProxy<IESECWinFeedMapperService> mapper;
+@property (nonatomic) IESECListKitListUpdater listUpdater;
+@property (nonatomic) UICollectionViewCell cell;
+@property (nonatomic) @ cellModel;
+@property (nonatomic) IESECListKitItemDataModel bffItemData;
+@property (nonatomic) q section;
+@property (nonatomic) q index;
+@property (nonatomic) BOOL isFirstShow;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)categoryService;
+- (id)commonTrackService;
+- (void)configCell;
+- (id)configObject;
+- (id)dataStatusService;
+- (double)heightForModel:itemWidth:;
+- (void)setCategoryService:;
+- (void)setCellFrame:edgeInsets:withSectionID:;
+- (void)setCommonTrackService:;
+- (void)setDataStatusService:;
+- (void)setTabService:;
+- (id)tabService;
+- (void)setObject:;
+- (id)mapper;
+- (void).cxx_destruct;
+- (id)object;
+- (void)setMapper:;
++ (Class)cellModelClass;
++ (Class)cellClass;
+@end

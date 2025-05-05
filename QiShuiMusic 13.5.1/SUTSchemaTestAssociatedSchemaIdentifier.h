@@ -1,0 +1,30 @@
+@interface SUTSchemaTestAssociatedSchemaIdentifier : SISchemaInstrumentationMessage
+@property (nonatomic) SUTSchemaTestGeneratedTurnID turnID;
+@property (nonatomic) BOOL hasTurnID;
+@property (nonatomic) SUTSchemaTestGeneratedRequestId requestId;
+@property (nonatomic) BOOL hasRequestId;
+@property (nonatomic) NSData jsonData;
+@property (nonatomic) Q whichIdentifier_Type;
+- (id)requestId;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (BOOL)hasTurnID;
+- (id)turnID;
+- (void)setTurnID:;
+- (void)setRequestId:;
+- (void)setHasRequestId:;
+- (BOOL)hasRequestId;
+- (void)deleteRequestId;
+- (void)deleteTurnID;
+- (void)setHasTurnID:;
+- (unsigned long long)whichIdentifier_Type;
+@end

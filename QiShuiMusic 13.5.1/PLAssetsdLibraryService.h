@@ -1,0 +1,35 @@
+@interface PLAssetsdLibraryService : PLAbstractLibraryServicesManagerService
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)upgradePhotoLibraryDatabaseWithOptions:reply:;
+- (void)isLibraryReadyForImportWithReply:;
+- (void)dealloc;
+- (void)pendingEventsForRequest:reply:;
+- (void)launchAssetsd;
+- (id)initWithLibraryServicesManager:bundleController:connectionAuthorization:assetsdService:;
+- (void)automaticallyDeleteEmptyAlbumWithObjectURI:reply:;
+- (id)_postRunningProgress;
+- (id)transferPersonsWithUuids:fromLibraryURL:transferOptions:reply:;
+- (id)postOpenProgressWithReply:;
+- (void)recoverFromCrashIfNeeded;
+- (id)transferAssetsWithUuids:fromLibraryURL:transferOptions:reply:;
+- (void)getPhotoLibraryStoreXPCListenerEndpointWithReply:;
+- (void)updateThumbnailsForPhotos:assignNewIndex:forceRefresh:reply:;
+- (void)getCurrentModelVersionWithReply:;
+- (void)resetFaceAnalysisWithResetLevel:withReply:;
+- (id)_returnValueForProgress:addTo:;
+- (void)_sendClientReply:sandboxExtensionsByPath:error:;
+- (id)libraryBundle;
+- (void)repairSingletonObjectsWithReply:;
+- (void).cxx_destruct;
+- (id)sandboxExtensionsByPath;
+- (id)importFileSystemAssetsWithReason:force:reply:;
+- (void)publishRemoteChangeEvent:delayedSaveActionsDetail:reply:;
+- (id)newLibraryOpener;
+- (id)_preRunningProgress;
+- (void)openPhotoLibraryDatabaseWithOptions:reply:;
+- (void)createPhotoLibraryDatabaseWithOptions:reply:;
++ (long long)requiredLibraryServicesStateForURL:;
+@end

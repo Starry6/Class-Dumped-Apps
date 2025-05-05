@@ -1,0 +1,2 @@
+@interface IESLiveSaasOnekeyAuthInfo : DYSDKAuthInfo
+@end

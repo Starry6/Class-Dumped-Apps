@@ -1,0 +1,2 @@
+@interface CNUIUserActionTargetDiscoveringReplaySubjectPair : CNPair
+@end

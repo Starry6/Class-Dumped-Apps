@@ -1,0 +1,36 @@
+@interface ISLoadURLBagOperation : ISOperation
+@property (nonatomic) NSNumber accountDSID;
+@property (nonatomic) SSURLBagContext context;
+@property (nonatomic) ISURLBag URLBag;
+@property (nonatomic) NSNumber metricsLoadURLSessionDuration;
+@property (nonatomic) NSNumber metricsLoadURLSamplingPercentage;
+@property (nonatomic) NSNumber metricsLoadURLSamplingPercentageCachedResponses;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)URLBag;
+- (id)uniqueKey;
+- (id)init;
+- (BOOL)operation:shouldSetStoreFrontID:;
+- (id)context;
+- (void)_addHeadersToRequestProperties:;
+- (id)accountDSID;
+- (void)_sendPingsForURLBag:;
+- (void)run;
+- (void)_postBagDidLoadNotificationWithURLBag:;
+- (BOOL)_setURLBagWithDictionary:response:error:;
+- (void)_setOutputURLBag:;
+- (void).cxx_destruct;
+- (void)operation:willSendRequest:;
+- (id)initWithBagContext:;
+- (void)setAccountDSID:;
++ (void)decrementNetworkCounterForBagContext:;
++ (void)incrementNetworkCounterForBagContext:;
++ (id)storeFrontHeaderSuffixForBundleIdentifier:;
++ (id)_networkCounters;
++ (id)_networkSynchronyQueue;
++ (void)_addStoreFrontHeaderSuffix:forBundleIdentifier:;
++ (id)storeFrontHeaderSuffix;
++ (id)_executedNetworkRequests;
+@end

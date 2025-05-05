@@ -1,0 +1,2 @@
+@interface MTLIntersectionFunctionDescriptor : MTLFunctionDescriptor
+@end

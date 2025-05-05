@@ -1,0 +1,30 @@
+@interface IESLiveMessageListBaseCell : UITableViewCell
+@property (nonatomic) HTSLiveMessageListNode node;
+@property (nonatomic) IESLiveMessageLabel messageTextLabel;
+@property (nonatomic) <IESLiveMessageListCellViewDelegate> delegate;
+@property (nonatomic) UIImageView backgroundImageView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)convertTextViewRectToCell:;
+- (id)messageTextLabel;
+- (BOOL)needLoadMessageTextLabel;
+- (void)refreshWith:;
+- (void)setMessageTextLabel:;
+- (id)initWithStyle:reuseIdentifier:;
+- (id)backgroundImageView;
+- (id)node;
+- (id)selectionRectsForRange:;
+- (void)setDelegate:;
+- (void)longPress:;
+- (void)prepareForReuse;
+- (void)setHighlighted:animated:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setHighlighted:;
+- (void)setNode:;
+- (void)setupView;
+- (void)setBackgroundImageView:;
+- (void)singleTap:;
+@end

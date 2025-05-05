@@ -1,0 +1,34 @@
+@interface GEOFareOptions : PBCodable
+@property (nonatomic) BOOL hasPreferredSurchargeType;
+@property (nonatomic) NSInteger preferredSurchargeType;
+@property (nonatomic) BOOL hasPaymentType;
+@property (nonatomic) NSInteger paymentType;
+@property (nonatomic) PBUnknownFields unknownFields;
+- (void)readAll:;
+- (id)unknownFields;
+- (int)paymentType;
+- (BOOL)hasPaymentType;
+- (id)initWithJSON:;
+- (void)setHasPreferredSurchargeType:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)clearUnknownFields:;
+- (void)writeTo:;
+- (BOOL)hasPreferredSurchargeType;
+- (int)preferredSurchargeType;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (int)StringAsPaymentType:;
+- (void)setHasPaymentType:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)paymentTypeAsString:;
+- (id)dictionaryRepresentation;
+- (void)setPaymentType:;
+- (BOOL)isEqual:;
+- (void)setPreferredSurchargeType:;
+- (id)copyWithZone:;
++ (BOOL)isValid:;
+@end

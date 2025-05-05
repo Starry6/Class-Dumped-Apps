@@ -1,0 +1,32 @@
+@interface BWUBProcessorRequest : NSObject
+@property (nonatomic) BWUBProcessorInput input;
+@property (nonatomic) UBFusionOutput output;
+@property (nonatomic) UBDeepFusionOutput deepFusionOutput;
+@property (nonatomic) BOOL provideInferenceInputImageForProcessing;
+@property (nonatomic) BOOL inferencesAvailable;
+@property (nonatomic) NSInteger err;
+@property (nonatomic) NSInteger numberOfFramesAddedForMultiFrameProcessing;
+@property (nonatomic) float totalExposureTimesOfFramesAddedForMultiFrameProcessing;
+@property (nonatomic) float minExposureTimesOfFramesAddedForMultiFrameProcessing;
+@property (nonatomic) float maxExposureTimesOfFramesAddedForMultiFrameProcessing;
+@property (nonatomic) BOOL deliveredDeferredProxyImage;
+- (id)output;
+- (id)input;
+- (void)dealloc;
+- (id)description;
+- (int)err;
+- (void)setErr:;
+- (id)deepFusionOutput;
+- (BOOL)provideInferenceInputImageForProcessing;
+- (BOOL)inferencesAvailable;
+- (int)numberOfFramesAddedForMultiFrameProcessing;
+- (void)setNumberOfFramesAddedForMultiFrameProcessing:;
+- (float)totalExposureTimesOfFramesAddedForMultiFrameProcessing;
+- (void)setTotalExposureTimesOfFramesAddedForMultiFrameProcessing:;
+- (float)minExposureTimesOfFramesAddedForMultiFrameProcessing;
+- (void)setMinExposureTimesOfFramesAddedForMultiFrameProcessing:;
+- (float)maxExposureTimesOfFramesAddedForMultiFrameProcessing;
+- (void)setMaxExposureTimesOfFramesAddedForMultiFrameProcessing:;
+- (BOOL)deliveredDeferredProxyImage;
+- (void)setDeliveredDeferredProxyImage:;
+@end

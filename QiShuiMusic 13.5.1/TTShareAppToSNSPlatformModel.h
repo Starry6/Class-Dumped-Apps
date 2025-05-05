@@ -1,0 +1,2 @@
+@interface TTShareAppToSNSPlatformModel : TTADataRespModel
+@end

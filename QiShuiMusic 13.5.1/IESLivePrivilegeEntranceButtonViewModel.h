@@ -1,0 +1,38 @@
+@interface IESLivePrivilegeEntranceButtonViewModel : IESLiveCubeViewModel
+@property (nonatomic) BOOL enableFlash;
+@property (nonatomic) IESLivePrivilegeEntranceApi privilegeApi;
+@property (nonatomic) NSString defaultButtonTitle;
+@property (nonatomic) NSString defaultPageURL;
+@property (nonatomic) NSString state;
+@property (nonatomic) IESLivePriviledgeEntranceButtonModel entranceButtonModel;
+- (id)schemaString:byAppendingParams:;
+- (void)setEnableFlash:;
+- (void)actionEnableFlash:;
+- (id)defaultPageURL;
+- (BOOL)enableFlash;
+- (id)entranceButtonModel;
+- (long long)p_privilegeClickStatus;
+- (void)p_setPrivilegeClickStatusWithType:;
+- (void)p_stopPrivilegeBuffer;
+- (id)privilegeApi;
+- (id)privilegeTrackParams;
+- (void)setDefaultPageURL:;
+- (void)setEntranceButtonModel:;
+- (void)setPrivilegeApi:;
+- (void)startBufferWithDuration:;
+- (void)tapButtonWithExtraParams:;
+- (void)tapTip;
+- (void)tipDidShowWithBubble:;
+- (void)tr_buttonClickWithLabel:;
+- (void)tr_tipClick;
+- (void)tr_tipDidShowWithBubble:;
+- (void)tr_viewDidShowWithLabel:;
+- (void)updateButtonModelWith:;
+- (void)viewDidShowWithLabel:;
+- (id)init;
+- (void)setState:;
+- (id)state;
+- (void).cxx_destruct;
+- (id)defaultButtonTitle;
+- (void)setDefaultButtonTitle:;
+@end

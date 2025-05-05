@@ -1,0 +1,32 @@
+@interface LPEvent : NSObject
+@property (nonatomic) q type;
+@property (nonatomic) NSString subtitle;
+@property (nonatomic) double startTime;
+@property (nonatomic) double endTime;
+@property (nonatomic) double duration;
+@property (nonatomic) q status;
+@property (nonatomic) NSURL URL;
+@property (nonatomic) Q specialization;
+@property (nonatomic) LPEvent parent;
+@property (nonatomic) NSArray children;
+- (BOOL)isComplete;
+- (id)init;
+- (id)children;
+- (double)startTime;
+- (double)endTime;
+- (long long)type;
+- (void).cxx_destruct;
+- (long long)status;
+- (id)subtitle;
+- (double)duration;
+- (id)parent;
+- (void)setURL:;
+- (id)URL;
+- (void)didCompleteWithStatus:;
+- (void)setSpecialization:;
+- (unsigned long long)specialization;
+- (id)initWithType:subtitle:;
+- (id)childWithType:subtitle:;
+- (void)didCompleteWithErrorCode:;
+- (BOOL)_childrenAreComplete;
+@end

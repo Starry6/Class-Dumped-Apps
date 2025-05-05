@@ -1,0 +1,36 @@
+@interface SCNMTLRenderPipeline : NSObject
+@property (nonatomic) <MTLRenderPipelineState> state;
+@property (nonatomic) MTLVertexDescriptor vertexDescriptor;
+@property (nonatomic) <MTLFunction> vertexFunction;
+@property (nonatomic) <MTLFunction> fragmentFunction;
+@property (nonatomic) NSArray frameBufferBindings;
+@property (nonatomic) NSArray nodeBufferBindings;
+@property (nonatomic) NSArray passBufferBindings;
+@property (nonatomic) NSArray shadableBufferBindings;
+@property (nonatomic) NSArray lightBufferBindings;
+@property (nonatomic) I vertexBuffersUsageMask;
+- (id)init;
+- (void)dealloc;
+- (void)setState:;
+- (id)vertexDescriptor;
+- (void)setVertexFunction:;
+- (id)fragmentFunction;
+- (void)setVertexDescriptor:;
+- (id)vertexFunction;
+- (void)setFragmentFunction:;
+- (id)state;
+- (id)description;
+- (BOOL)matchesRenderPassDescriptor:;
+- (void)_computeUsageForArguments:function:;
+- (unsigned int)vertexBuffersUsageMask;
+- (id)frameBufferBindings;
+- (void)setFrameBufferBindings:;
+- (id)nodeBufferBindings;
+- (void)setNodeBufferBindings:;
+- (id)lightBufferBindings;
+- (void)setLightBufferBindings:;
+- (id)passBufferBindings;
+- (void)setPassBufferBindings:;
+- (id)shadableBufferBindings;
+- (void)setShadableBufferBindings:;
+@end

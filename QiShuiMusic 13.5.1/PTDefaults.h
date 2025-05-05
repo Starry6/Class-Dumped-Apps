@@ -1,0 +1,33 @@
+@interface PTDefaults : BSAbstractDefaultDomain
+@property (nonatomic) NSString testRecipeIdentifier;
+@property (nonatomic) NSString testRecipeDescription;
+@property (nonatomic) BOOL testRecipeEatsVolumeUp;
+@property (nonatomic) BOOL testRecipeEatsVolumeDown;
+@property (nonatomic) BOOL testRecipeEatsRingerSwitch;
+@property (nonatomic) BOOL shouldClearSettingsArchivesForMigration;
+@property (nonatomic) BOOL shouldClearPrototypeCachesForMigration;
+@property (nonatomic) BOOL ringerSwitchShowsUI;
+@property (nonatomic) BOOL volumeUpShowsUI;
+@property (nonatomic) BOOL volumeDownShowsUI;
+@property (nonatomic) BOOL prototypeSettingsEnabled;
+@property (nonatomic) BOOL activePrototypingEnabled;
+@property (nonatomic) BOOL remotePrototypingEnabled;
+- (void)_bindAndRegisterDefaults;
+- (BOOL)canEditShowsUIForEvent:;
+- (BOOL)displayedShowsUIValueForEvent:;
+- (void)setShowsUI:forEvent:;
+- (id)observeShowUISwitchDefaultsOnQueue:withBlock:;
+- (BOOL)testRecipeIsActive;
+- (id)activeTestRecipeIdentifier;
+- (id)activeTestRecipeDescription;
+- (BOOL)activeTestRecipeEatsEvent:;
+- (id)activeTestRecipeEventDescription;
+- (void)deactivateTestRecipe;
+- (id)observeTestRecipeDefaultsOnQueue:withBlock:;
+- (BOOL)prototypingServerWantsEvent:;
+- (id)observeEventDefaultsOnQueue:withBlock:;
+- (BOOL)_eventShowsUI:;
+- (id)_eventDefaults;
+- (id)_testRecipeDefaults;
++ (id)sharedInstance;
+@end

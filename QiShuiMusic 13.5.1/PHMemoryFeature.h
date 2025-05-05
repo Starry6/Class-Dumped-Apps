@@ -1,0 +1,36 @@
+@interface PHMemoryFeature : NSObject
+@property (nonatomic) Q type;
+- (id)dateInterval;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)date;
+- (id)location;
+- (void)encodeWithCoder:;
+- (unsigned long long)type;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)encodedDataWithPhotoLibrary:;
+- (id)personLocalIdentifier;
+- (id)holidayName;
+- (id)areaName;
+- (BOOL)collidesWithFeature:;
+- (BOOL)collidesWithDate:;
+- (BOOL)collidesWithDateInterval:;
+- (BOOL)collidesWithHolidayWithName:;
+- (BOOL)collidesWithLocationAtCoordinates:;
+- (BOOL)collidesWithAreaWithName:;
+- (BOOL)collidesWithPersonWithLocalIdentifier:;
++ (BOOL)supportsSecureCoding;
++ (id)stringForType:;
++ (id)peopleMemoryFeatureWithPersonLocalIdentifier:;
++ (id)timeMemoryFeatureWithDate:;
++ (id)timeMemoryFeatureWithDateInterval:;
++ (id)timeMemoryFeatureWithHolidayForName:;
++ (id)locationMemoryFeatureWithLocation:;
++ (id)locationMemoryFeatureWithAreaForName:;
++ (id)memoryFeatureWithData:photoLibrary:;
++ (id)encodedBlockableFeatures:photoLibrary:;
++ (id)personLocalIdentifierForPersonUniversalIdentifier:photoLibrary:;
++ (id)personUniversalIdentifierForPersonLocalIdentifier:photoLibrary:;
+@end

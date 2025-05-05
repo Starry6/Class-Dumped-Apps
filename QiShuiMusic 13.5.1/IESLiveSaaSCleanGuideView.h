@@ -1,0 +1,34 @@
+@interface IESLiveSaaSCleanGuideView : UIView
+@property (nonatomic) UILabel title;
+@property (nonatomic) UILabel info;
+@property (nonatomic) UIImageView<IESLiveWebPPlayer> anim;
+@property (nonatomic) LOTAnimationView lotAnim;
+@property (nonatomic) @? dismiss;
+@property (nonatomic) @? click;
+@property (nonatomic) NSTimer timer;
+@property (nonatomic) Q guideType;
+- (id)lotAnim;
+- (id)anim;
+- (void)clickAlpha;
+- (unsigned long long)guideType;
+- (id)initWithFrame:title:info:type:;
+- (id)loadWebImageFromTosWithType:;
+- (void)setAnim:;
+- (void)setClick:;
+- (void)setGuideType:;
+- (void)setLotAnim:;
+- (void)setupFullScreenSubviewWithTitle:;
+- (void)setupSubviewWithTitle:info:;
+- (void)startWithClickBlock:dismissBlock:;
+- (void)stopAnim;
+- (id)dismiss;
+- (void)setInfo:;
+- (void)setTitle:;
+- (void)setTimer:;
+- (id)title;
+- (void).cxx_destruct;
+- (id)timer;
+- (id)info;
+- (id)click;
+- (void)setDismiss:;
+@end

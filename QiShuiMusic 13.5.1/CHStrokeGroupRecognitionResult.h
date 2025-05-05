@@ -1,0 +1,35 @@
+@interface CHStrokeGroupRecognitionResult : NSObject
+@property (nonatomic) CHDrawing inputDrawing;
+@property (nonatomic) NSArray inputDrawingCutPoints;
+@property (nonatomic) NSDictionary languageFitnessByLocale;
+@property (nonatomic) NSArray inputStrokeIdentifiers;
+@property (nonatomic) NSDictionary recognitionResultsByLocale;
+@property (nonatomic) NSDictionary errorsByLocale;
+- (id)init;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)preferredLocale;
+- (id)inputDrawing;
+- (id)initWithOrderedLocales:resultsByLocale:errorsByLocale:languageFitnessByLocale:inputStrokeIdentifiers:;
+- (id)localesSortedByRawLanguageFitness:;
+- (id)localesSortedByCombinedLanguageFitness:;
+- (id)highConfidenceTextForSessionResult:rejectionRate:doesContainUnfilteredMultiLocaleResults:;
+- (id)languageFitnessForLocale:;
+- (BOOL)isEqualToStrokeGroupRecognitionResult:;
+- (id)inputStrokeIdentifiers;
+- (id)recognitionResultsByLocale;
+- (id)errorsByLocale;
+- (id)initWithOrderedLocales:resultsByLocale:errorsByLocale:languageFitnessByLocale:inputStrokeIdentifiers:inputDrawing:inputDrawingCutPoints:;
+- (id)inputDrawingCutPoints;
+- (id)languageFitnessByLocale;
++ (BOOL)supportsSecureCoding;
++ (id)sortedLanguageGroups:usingLanguageFitness:;
++ (id)sortedLocales:usingLanguageFitness:useCombinedScore:;
++ (long long)indexOfFirstLocaleWithLanguage:orderedLocales:;
++ (id)filteredResultsByLocale:orderedLocales:usingLanguageFitness:outSortedLocales:;
++ (id)filteredLocalesFromGroup:results:withCharacterDetectionBlock:;
+@end

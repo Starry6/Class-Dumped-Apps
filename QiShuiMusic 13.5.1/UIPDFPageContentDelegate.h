@@ -1,0 +1,36 @@
+@interface UIPDFPageContentDelegate : NSObject
+@property (nonatomic) UIPDFDocument document;
+@property (nonatomic) Q pageIndex;
+@property (nonatomic) UIPDFPageView view;
+@property (nonatomic) CALayer owner;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} box;
+@property (nonatomic) Q pageRotation;
+@property (nonatomic) ^{CGColor=} highlightColor;
+@property (nonatomic) {CGAffineTransform=dddddd} transform;
+@property (nonatomic) BOOL isCancelled;
+- (void)setHighlightColor:;
+- (id)init;
+- (void)dealloc;
+- (void)drawLayer:inContext:;
+- (BOOL)isCancelled;
+- (void)setDocument:;
+- (void)setOwner:;
+- (id)highlightColor;
+- (id)owner;
+- (void)setPageIndex:;
+- (id)view;
+- (id)transform;
+- (id)document;
+- (void)setIsCancelled:;
+- (unsigned long long)pageIndex;
+- (void)setView:;
+- (void)computeTransform;
+- (id)box;
+- (void)setBox:;
+- (void)drawSelectionLayerBlockMode:inContext:;
+- (void)addRect:toPath:transform:view:owner:;
+- (BOOL)pageHasSelection;
+- (void)drawSelectionLayer:inContext:;
+- (unsigned long long)pageRotation;
+- (void)setPageRotation:;
+@end

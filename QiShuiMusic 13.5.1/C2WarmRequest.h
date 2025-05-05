@@ -1,0 +1,31 @@
+@interface C2WarmRequest : NSObject
+@property (nonatomic) @? callback;
+@property (nonatomic) NSMutableURLRequest warmRequest;
+@property (nonatomic) C2RequestOptions warmOptions;
+@property (nonatomic) NSURLSessionTask warmTask;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)callback;
+- (void)URLSession:dataTask:didReceiveData:;
+- (void)URLSession:task:_willSendRequestForEstablishedConnection:completionHandler:;
+- (void)setCallback:;
+- (void)URLSession:task:needNewBodyStream:;
+- (void)URLSession:task:didCompleteWithError:;
+- (void)send;
+- (void)URLSession:dataTask:didReceiveResponse:completionHandler:;
+- (void)URLSession:task:_conditionalRequirementsChanged:;
+- (void)URLSession:task:willPerformHTTPRedirection:newRequest:completionHandler:;
+- (void)URLSession:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:;
+- (void)URLSession:_taskIsWaitingForConnection:;
+- (void).cxx_destruct;
+- (void)URLSession:_willRetryBackgroundDataTask:withError:;
+- (id)initWithData:callback:;
+- (id)warmRequest;
+- (void)setWarmRequest:;
+- (id)warmOptions;
+- (void)setWarmOptions:;
+- (id)warmTask;
+- (void)setWarmTask:;
+@end

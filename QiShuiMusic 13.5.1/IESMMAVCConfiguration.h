@@ -1,0 +1,33 @@
+@interface IESMMAVCConfiguration : IESMMCodecConfiguration
+@property (nonatomic) C configurationVersion;
+@property (nonatomic) C AVCProfileIndication;
+@property (nonatomic) C profile_compatibility;
+@property (nonatomic) C AVCLevelIndication;
+@property (nonatomic) C lengthSizeMinusOne;
+@property (nonatomic) C numOfSequenceParameterSets;
+@property (nonatomic) NSArray sequenceParameterSetsArray;
+@property (nonatomic) C numOfPictureParameterSets;
+@property (nonatomic) NSArray pictureParameterSetsArray;
+- (unsigned char)AVCLevelIndication;
+- (unsigned char)AVCProfileIndication;
+- (id)getCodecConfigKey;
+- (id)initWithCFDataRef:;
+- (unsigned char)lengthSizeMinusOne;
+- (unsigned char)numOfPictureParameterSets;
+- (unsigned char)numOfSequenceParameterSets;
+- (id)pictureParameterSetsArray;
+- (unsigned char)profile_compatibility;
+- (id)sequenceParameterSetsArray;
+- (void)setAVCLevelIndication:;
+- (void)setAVCProfileIndication:;
+- (void)setLengthSizeMinusOne:;
+- (void)setNumOfPictureParameterSets:;
+- (void)setNumOfSequenceParameterSets:;
+- (void)setPictureParameterSetsArray:;
+- (void)setProfile_compatibility:;
+- (void)setSequenceParameterSetsArray:;
+- (id)init;
+- (unsigned char)configurationVersion;
+- (void).cxx_destruct;
+- (void)setConfigurationVersion:;
+@end

@@ -1,0 +1,38 @@
+@interface UIPredictionViewController : UIViewController
+@property (nonatomic) TIAutocorrectionList cachedAutocorrectionList;
+@property (nonatomic) TUIPredictionView predictionView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSArray displayedCandidates;
+- (void)_registerForNotifications;
+- (BOOL)isVisibleForInputDelegate:inputViews:;
+- (void)dealloc;
+- (void)_registerAsAutocorrectionObserver;
+- (BOOL)hidesExpandableButton;
+- (id)displayedCandidates;
+- (double)preferredHeightForTraitCollection:;
+- (id)predictionView;
+- (void)autocorrectionController:didUpdateAutocorrectionList:;
+- (id)_currentTextSuggestions;
+- (void)autocorrectionControllerDidClearAutocorrections:;
+- (BOOL)_canShowWhileLocked;
+- (void)_inputModeDidChange;
+- (void)_clearTextSuggestions;
+- (BOOL)_autocorrectionListMayCausePredictionViewToReappear:;
+- (void)_performThrottledUpdateUIWithAutocorrectionList:;
+- (void)_throttledUpdateUIWithAutocorrectionList:;
+- (BOOL)_autocorrectionListContainsContinuousPathConversions:;
+- (void)_updateAutocorrectionList:;
+- (void).cxx_destruct;
+- (void)setCachedAutocorrectionList:;
+- (void)predictionView:didSelectCandidate:;
+- (void)viewWillAppear:;
+- (void)loadView;
+- (BOOL)_isVisibleForAutocorrectionType:;
+- (id)cachedAutocorrectionList;
+- (BOOL)requiresKeyboard;
+- (void)_inputResponderDidChangeNotification:;
+- (id)initWithNibName:bundle:;
+@end

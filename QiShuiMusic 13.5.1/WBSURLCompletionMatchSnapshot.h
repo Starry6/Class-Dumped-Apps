@@ -1,0 +1,31 @@
+@interface WBSURLCompletionMatchSnapshot : NSObject
+@property (nonatomic) NSURL url;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString userVisibleURLString;
+@property (nonatomic) q matchLocation;
+@property (nonatomic) BOOL topHit;
+@property (nonatomic) BOOL synthesizedTopHit;
+@property (nonatomic) BOOL topHitDueToTriggerMatch;
+@property (nonatomic) q visitCount;
+@property (nonatomic) NSDate lastVisitTime;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)url;
+- (id)init;
+- (id)lastVisitTime;
+- (long long)visitCount;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (id)title;
+- (void).cxx_destruct;
+- (id)userVisibleURLString;
+- (id)description;
+- (BOOL)isSynthesizedTopHit;
+- (BOOL)isTopHit;
+- (long long)matchLocation;
+- (BOOL)isTopHitDueToTriggerMatch;
+- (id)initWithURL:title:matchLocation:isTopHit:isSynthesizedTopHit:isTopHitDueToTriggerMatch:visitCount:lastVisitTime:;
++ (BOOL)supportsSecureCoding;
+@end

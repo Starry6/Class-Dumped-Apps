@@ -1,0 +1,38 @@
+@interface AFClientConfiguration : NSObject
+@property (nonatomic) AFAccessibilityState accessibilityState;
+@property (nonatomic) q deviceRingerSwitchState;
+@property (nonatomic) BOOL isDeviceInCarDNDMode;
+@property (nonatomic) BOOL isDeviceInStarkMode;
+@property (nonatomic) BOOL isDeviceWatchAuthenticated;
+@property (nonatomic) BOOL areAnnouncementRequestsPermittedByPresentationWhileActive;
+@property (nonatomic) float outputVolume;
+@property (nonatomic) AFAudioPlaybackRequest tapToSiriAudioPlaybackRequest;
+@property (nonatomic) AFAudioPlaybackRequest twoShotAudioPlaybackRequest;
+@property (nonatomic) NSDate deviceSetupFlowBeginDate;
+@property (nonatomic) NSDate deviceSetupFlowEndDate;
+- (id)init;
+- (id)mutatedCopyWithMutator:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)_descriptionWithIndent:;
+- (float)outputVolume;
+- (id)initWithBuilder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)initWithAccessibilityState:deviceRingerSwitchState:isDeviceInCarDNDMode:isDeviceInStarkMode:isDeviceWatchAuthenticated:areAnnouncementRequestsPermittedByPresentationWhileActive:outputVolume:tapToSiriAudioPlaybackRequest:twoShotAudioPlaybackRequest:deviceSetupFlowBeginDate:deviceSetupFlowEndDate:;
+- (id)accessibilityState;
+- (long long)deviceRingerSwitchState;
+- (BOOL)isDeviceInCarDNDMode;
+- (BOOL)isDeviceInStarkMode;
+- (BOOL)isDeviceWatchAuthenticated;
+- (BOOL)areAnnouncementRequestsPermittedByPresentationWhileActive;
+- (id)tapToSiriAudioPlaybackRequest;
+- (id)twoShotAudioPlaybackRequest;
+- (id)deviceSetupFlowBeginDate;
+- (id)deviceSetupFlowEndDate;
++ (id)newWithBuilder:;
++ (BOOL)supportsSecureCoding;
+@end

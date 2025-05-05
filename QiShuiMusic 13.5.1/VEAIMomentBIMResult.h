@@ -1,0 +1,33 @@
+@interface VEAIMomentBIMResult : NSObject
+@property (nonatomic) NSMutableArray faceVertifyFeatures;
+@property (nonatomic) NSArray faceFeatures;
+@property (nonatomic) NSArray momentTags;
+@property (nonatomic) BOOL isPorn;
+@property (nonatomic) BOOL isLeader;
+@property (nonatomic) VEAIMomentScoreInfo scoreInfo;
+@property (nonatomic) NSArray scoreInfos;
+@property (nonatomic) NSData similarityData;
+@property (nonatomic) NSArray reframeInfos;
+@property (nonatomic) VEAIMomentC3Feature c3Feature;
+- (id)c3Feature;
+- (id)faceVertifyFeatures;
+- (BOOL)isPorn;
+- (id)momentTags;
+- (id)reframeInfos;
+- (id)scoreInfos;
+- (void)setC3Feature:;
+- (void)setFaceFeatures:;
+- (void)setFaceVertifyFeatures:;
+- (void)setIsPorn:;
+- (void)setMomentTags:;
+- (void)setReframeInfos:;
+- (void)setScoreInfos:;
+- (void)setSimilarityData:;
+- (id)similarityData;
+- (void).cxx_destruct;
+- (id)scoreInfo;
+- (void)setScoreInfo:;
+- (id)faceFeatures;
+- (BOOL)isLeader;
+- (void)setIsLeader:;
+@end

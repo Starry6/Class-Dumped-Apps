@@ -1,0 +1,38 @@
+@interface IESLiveAutoMatchAlertView : UIView
+@property (nonatomic) UIView container;
+@property (nonatomic) UILabel descriptionLabel;
+@property (nonatomic) UILabel actionLabel;
+@property (nonatomic) UIButton leftButton;
+@property (nonatomic) UIButton rightButton;
+@property (nonatomic) UIImageView imageView;
+@property (nonatomic) UIImageView arrowView;
+@property (nonatomic) IESLiveAutoMatchAlertViewConfig config;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didClickedLeftButton;
+- (void)didClickedRightButton;
+- (void)onActionLabelClicked;
+- (void)setUI;
+- (void)setViewWithConfig:;
+- (void)dismiss;
+- (void)setContainer:;
+- (void)setConfig:;
+- (id)initWithConfig:;
+- (id)container;
+- (id)leftButton;
+- (id)rightButton;
+- (void)setDescriptionLabel:;
+- (id)descriptionLabel;
+- (void)setLeftButton:;
+- (void).cxx_destruct;
+- (id)imageView;
+- (void)setRightButton:;
+- (id)config;
+- (void)setImageView:;
+- (id)arrowView;
+- (void)setArrowView:;
+- (id)actionLabel;
+- (void)setActionLabel:;
+@end

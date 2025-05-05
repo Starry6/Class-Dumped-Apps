@@ -1,0 +1,34 @@
+@interface IESSaaSVSComponentTrackerItem : NSObject
+@property (nonatomic) NSString index;
+@property (nonatomic) double enterStart;
+@property (nonatomic) Q method;
+@property (nonatomic) NSMutableDictionary infos;
+@property (nonatomic) NSMutableDictionary metricInfo;
+@property (nonatomic) NSMutableDictionary categoryInfo;
+@property (nonatomic) @? reportComplete;
+- (void)insertCategory:;
+- (id)metricWithInfo:;
+- (id)durationValid:;
+- (void)endStage:;
+- (double)enterStart;
+- (void)insertMetric:;
+- (id)keyWithStage:;
+- (void)setEnterStart:;
+- (void)startStage:;
+- (id)traceInfoWithStage:;
+- (id)infos;
+- (id)init;
+- (unsigned long long)method;
+- (id)index;
+- (void)setMetricInfo:;
+- (void)setIndex:;
+- (void).cxx_destruct;
+- (void)setMethod:;
+- (void)report;
+- (id)metricInfo;
+- (id)categoryInfo;
+- (void)setCategoryInfo:;
+- (void)setInfos:;
+- (void)setReportComplete:;
+- (id)reportComplete;
+@end

@@ -1,0 +1,2 @@
+@interface AssetsEffectsApiRoot : GPBRootObject
+@end

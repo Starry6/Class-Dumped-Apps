@@ -1,0 +1,34 @@
+@interface UIPrintActivity : UIActivity
+@property (nonatomic) UIViewController wrapperViewController;
+@property (nonatomic) UIPrintInteractionController printInteractionController;
+@property (nonatomic) UIWindow windowHoldingActivityViewController;
+@property (nonatomic) BOOL isContentManaged;
+@property (nonatomic) NSString sourceApplicationBundleID;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)activityTitle;
+- (id)activityType;
+- (BOOL)isContentManaged;
+- (void)setIsContentManaged:;
+- (id)printInteractionController;
+- (void).cxx_destruct;
+- (id)printInteractionControllerParentViewController:;
+- (id)_systemImageName;
+- (void)activityDidFinish:;
+- (BOOL)canPerformWithActivityItems:;
+- (void)performActivity;
+- (void)prepareWithActivityItems:;
+- (id)sourceApplicationBundleID;
+- (void)setSourceApplicationBundleID:;
+- (id)_embeddedActivityViewController;
+- (void)setPrintInteractionController:;
+- (id)printInteractionControllerWindowForPresentation:;
+- (void)cancelPrintOptions;
+- (id)wrapperViewController;
+- (void)setWrapperViewController:;
+- (id)windowHoldingActivityViewController;
+- (void)setWindowHoldingActivityViewController:;
++ (unsigned long long)_xpcAttributes;
+@end

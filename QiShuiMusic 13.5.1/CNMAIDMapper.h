@@ -1,0 +1,35 @@
+@interface CNMAIDMapper : NSObject
+@property (nonatomic) CLSDataStore dataStore;
+@property (nonatomic) BOOL shouldLogContactsAccess;
+@property (nonatomic) NSString legacyTetheredSyncDeviceAnchor;
+@property (nonatomic) NSString legacyTetheredSyncComputerAnchor;
+@property (nonatomic) BOOL shouldLogPrivacyAccountingAccessEvents;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)serverSearchContainersMatchingPredicate:error:;
+- (id)contactCountForFetchRequest:error:;
+- (id)meContactIdentifiers:;
+- (BOOL)executeSaveRequest:error:;
+- (id)dataStore;
+- (BOOL)executeSaveRequest:response:authorizationContext:error:;
+- (BOOL)requestAccessForEntityType:error:;
+- (id)accountsMatchingPredicate:error:;
+- (void)requestAccessForEntityType:completionHandler:;
+- (id)groupsMatchingPredicate:error:;
+- (id)init;
+- (id)defaultContainerIdentifier;
+- (id)containersMatchingPredicate:error:;
+- (id)policyWithDescription:error:;
+- (id)subgroupsOfGroupWithIdentifier:error:;
+- (id)policyForContainerWithIdentifier:error:;
+- (id)contactObservableForFetchRequest:;
+- (id)authorizedKeysForContactKeys:error:;
+- (BOOL)shouldLogContactsAccess;
+- (void).cxx_destruct;
+- (id)description;
+- (id)initWithConfiguration:;
+- (id)initWithDataStore:environment:;
++ (id)os_log;
+@end

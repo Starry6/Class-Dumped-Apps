@@ -1,0 +1,2 @@
+@interface UIStateRestorationKeyedArchiver : NSKeyedArchiver
+@end

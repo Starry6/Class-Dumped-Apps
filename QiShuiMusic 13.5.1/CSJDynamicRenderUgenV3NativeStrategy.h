@@ -1,0 +1,36 @@
+@interface CSJDynamicRenderUgenV3NativeStrategy : CSJDynamicRenderUgenStrategy
+@property (nonatomic) UIView contentSuccessView;
+@property (nonatomic) BOOL haveShake;
+@property (nonatomic) BOOL haveTwist;
+- (id)clickParamsWithUgenMessage:;
+- (id)contentSuccessView;
+- (id)dislikeParamsWithUgenMessage:;
+- (id)getCurrentVideoStateInUgenEngine:;
+- (id)getDataInUgenEngine:;
+- (BOOL)haveShake;
+- (BOOL)haveTwist;
+- (id)jsCallNative_close_twist_observer;
+- (id)jsCallNative_close_wobble_observer;
+- (id)jsCallNative_start_twist_observer;
+- (id)jsCallNative_start_wobble_observer;
+- (id)logKeyName;
+- (id)monitoredInfoViewModel;
+- (id)monitoredView;
+- (BOOL)monitoredViewDidShow;
+- (void)monitored_fireEvent:data:;
+- (BOOL)needCheckFetchError;
+- (void)p_restartMotionObserver;
+- (void)p_stopMotionObserver;
+- (long long)renderType;
+- (void)reportShowEventIfNeed;
+- (void)setContentSuccessView:;
+- (void)setHaveShake:;
+- (void)setHaveTwist:;
+- (id)ugenDSLDict;
+- (id)ugenEngine:animationLayerWithAnimationView:animationInfo:;
+- (id)ugenEngine:didReceiveUgenMessage:;
+- (void)ugenEngine:resultWidget:error:;
+- (void).cxx_destruct;
+- (void)render;
+- (id)sizeInfoDict;
+@end

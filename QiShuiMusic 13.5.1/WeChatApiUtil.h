@@ -1,0 +1,32 @@
+@interface WeChatApiUtil : NSObject
++ (id)DecodeWithBase64:;
++ (id)appendQueryToUrl:key:value:;
++ (unsigned int)genCurrentTime;
++ (id)genSchemePrefixWithAppId:;
++ (id)genUniversalLinkPrefixWithAppId:universalLink:;
++ (id)getAppUrl:;
++ (id)getAppUrlWithPlatformId:;
++ (id)getAppUrlWithPlatformId:withOtherArgs:;
++ (id)getSDKVersion;
++ (id)getWechatSchemeUrl:;
++ (id)getWechatUniversalLink:;
++ (BOOL)is2xScreen;
++ (BOOL)isAppInstalledWithCatchException:;
++ (BOOL)isAppInstalledWithoutCatchException:;
++ (BOOL)isAppOpenUrl:appID:universalLink:;
++ (BOOL)isOpenUrlApiCall:apiName:appID:universalLink:;
++ (BOOL)isWXAppSupportApi;
++ (BOOL)isWXSupportParseParamsFromURL;
++ (BOOL)isWXSupportUniversalLinkAPI;
++ (BOOL)isiOS10plus;
++ (BOOL)isiOS12plus;
++ (BOOL)isiOS13plus;
++ (BOOL)isiOS15plus;
++ (BOOL)isiOS16Plus;
++ (BOOL)launchApp:;
++ (BOOL)isiPad;
++ (id)dataFromPropertyList:;
++ (id)propertyListFromData:;
++ (id)sha256:;
++ (id)parseURLParams:;
+@end

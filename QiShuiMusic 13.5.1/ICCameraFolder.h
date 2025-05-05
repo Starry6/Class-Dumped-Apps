@@ -1,0 +1,30 @@
+@interface ICCameraFolder : ICCameraItem
+@property (nonatomic) NSMutableArray files;
+@property (nonatomic) NSMutableArray folders;
+@property (nonatomic) {os_unfair_lock_s=I} folderMediaLock;
+@property (nonatomic) NSArray contents;
+- (void)dealloc;
+- (id)contents;
+- (id)valueForUndefinedKey:;
+- (BOOL)hasThumbnail;
+- (void)deleteFile:;
+- (id)description;
+- (void)addFile:;
+- (id)folders;
+- (void)setFolders:;
+- (id)files;
+- (void)setFiles:;
+- (id)initWithName:parentFolder:device:;
+- (id)thumbnailIfAvailable;
+- (id)largeThumbnailIfAvailable;
+- (id)metadataIfAvailable;
+- (void)addFolder:;
+- (void)deleteItem:;
+- (void)deleteFolder:;
+- (void)deleteFolderWithID:;
+- (void)deleteFileWithID:;
+- (id)getFolderWithID:;
+- (id)getFileWithID:;
+- (id)folderMediaLock;
+- (void)setFolderMediaLock:;
+@end

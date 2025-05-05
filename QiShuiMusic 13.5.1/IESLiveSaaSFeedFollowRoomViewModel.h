@@ -1,0 +1,35 @@
+@interface IESLiveSaaSFeedFollowRoomViewModel : NSObject
+@property (nonatomic) BOOL followRoomsChanged;
+@property (nonatomic) NSIndexPath currentIndexPath;
+@property (nonatomic) IESLiveSaaSFeedFollowRoomsItemModel item;
+@property (nonatomic) NSArray followRooms;
+@property (nonatomic) <HTSLiveSaaSRoomCollectionDataObserver> dataObserver;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)followRoomView:willDisplayItem:;
+- (void)setFollowRooms:;
+- (BOOL)canLoadMore;
+- (BOOL)canRefresh;
+- (void)changeToIndex:;
+- (BOOL)deleteRoom:;
+- (void)didCloseRoom:;
+- (void)followRoomView:didSelectItem:;
+- (id)followRooms;
+- (BOOL)followRoomsChanged;
+- (BOOL)isInvalidRoom:;
+- (void)loadMore;
+- (void)setFollowRoomsChanged:;
+- (void)tryEnterLiveRoom:;
+- (void)updateFollowRoomModel:;
+- (id)item;
+- (void)refresh;
+- (void)setDataObserver:;
+- (id)currentIndexPath;
+- (void)setItem:;
+- (void).cxx_destruct;
+- (BOOL)hasMore;
+- (id)dataObserver;
+- (void)setCurrentIndexPath:;
+@end

@@ -1,0 +1,37 @@
+@interface BWImageQueueSinkNode : BWSinkNode
+@property (nonatomic) ^{_CAImageQueue=} imageQueue;
+@property (nonatomic) I imageQueueSlot;
+@property (nonatomic) <BWImageQueueSinkNodePreviewTapDelegate> previewTapDelegate;
+@property (nonatomic) BWFigVideoCaptureDevice captureDevice;
+- (BOOL)videoHDRImageStatisticsEnabled;
+- (void)setVideoHDRImageStatisticsEnabled:;
+- (int)maxLossyCompressionLevel;
+- (void)setCaptureDevice:;
+- (id)captureDevice;
+- (void)setMaxLossyCompressionLevel:;
+- (void)fencePortGenerationIDWillChange;
+- (void)registerSurfacesFromSourcePool:;
+- (void)dealloc;
+- (id)previewPTSDisplayedAtHostTime:allowingExtrapolation:;
+- (void)handleDroppedSample:forInput:;
+- (BOOL)fenceSupportEnabled;
+- (void)setTransform:;
+- (void)configurationWithID:updatedFormat:didBecomeLiveForInput:;
+- (void)makeCurrentConfigurationLive;
+- (BOOL)hasNonLiveConfigurationChanges;
+- (void)prepareForCurrentConfigurationToBecomeLive;
+- (unsigned int)imageQueueSlot;
+- (id)transform;
+- (void)didReachEndOfDataForInput:;
+- (int)syncStrategy;
+- (void)setFenceSupportEnabled:;
+- (void)setSyncStrategy:;
+- (void)renderSampleBuffer:forInput:;
+- (id)imageQueue;
+- (void)setPreviewTapDelegate:;
+- (id)previewPTSAtHostTime:;
+- (id)previewTapDelegate;
+- (id)initWithHFRSupport:ispJitterCompensationEnabled:clientAuditToken:sinkID:;
+- (void)inputConnectionWillBeEnabled;
+- (id)nodeSubType;
+@end

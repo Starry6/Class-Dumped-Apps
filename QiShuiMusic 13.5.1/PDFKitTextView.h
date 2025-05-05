@@ -1,0 +1,35 @@
+@interface PDFKitTextView : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)annotation;
+- (id)textView;
+- (void)removeFromSuperview;
+- (void)_setFont:;
+- (void)_updateScaleFactor;
+- (void)setFrame:;
+- (void)_keyboardWillShow:;
+- (void)_keyboardWillHide:;
+- (id)layer;
+- (BOOL)becomeFirstResponder;
+- (void).cxx_destruct;
+- (void)_setup;
+- (void)textViewDidEndEditing:;
+- (BOOL)textView:shouldChangeTextInRange:replacementText:;
+- (void)_setAlignment:;
+- (void)rotateByAngle:;
+- (BOOL)handleTab;
+- (BOOL)handleBackTab;
+- (void)_didChangeZoomFactor:;
+- (void)_textWidgetDone;
+- (id)initWithAnnotation:pdfPageView:pdfView:;
+- (void)_adjustScrollViewForKeyboardNotification:;
+- (void)adjustScrollViewToAccomodateKeyboardStartingFrame:endingFrame:annotationFrame:withAnimationDuration:curve:;
+- (BOOL)textView:doCommandBySelector:;
+- (void)_setString:;
+- (void)_setFontColor:;
+- (void)_setupTopLevelView;
+- (void)_setAttributedString:;
+- (void)_applyScale:toView:;
+@end

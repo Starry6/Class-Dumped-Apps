@@ -1,0 +1,34 @@
+@interface IESECCommentOneLineTagView : UIView
+@property (nonatomic) UICollectionView contentCollectionView;
+@property (nonatomic) NSArray tagDataArray;
+@property (nonatomic) NSString selectedTagID;
+@property (nonatomic) IESECGoodsCommentContext context;
+@property (nonatomic) <IESECCommentTagCellDelegate> cellDelegate;
+@property (nonatomic) BOOL animating;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)configureCommentTagWithTag:currentSelectedTagID:;
+- (id)contentCollectionView;
+- (double)itemWidthWithTag:;
+- (id)selectedTagID;
+- (void)setContentCollectionView:;
+- (void)setSelectedTagID:;
+- (void)setTagDataArray:;
+- (id)tagDataArray;
+- (void)setAnimating:;
+- (id)collectionView:layout:sizeForItemAtIndexPath:;
+- (void)collectionView:willDisplayCell:forItemAtIndexPath:;
+- (id)context;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)setContext:;
+- (BOOL)animating;
+- (void)setupUI;
+- (id)cellDelegate;
+- (void)setCellDelegate:;
+@end

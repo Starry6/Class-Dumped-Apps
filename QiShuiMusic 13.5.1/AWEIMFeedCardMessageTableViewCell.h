@@ -1,0 +1,38 @@
+@interface AWEIMFeedCardMessageTableViewCell : AWEIMUserMessageTableViewCell
+@property (nonatomic) AWEIMShareFeedCardView feedCardView;
+@property (nonatomic) AWEIMFeedVideoUnavailableBubble unavailableBubble;
+@property (nonatomic) IESIMUILoadingView loadingView;
+@property (nonatomic) AWEIMMessageShareButton shareButton;
+- (id)imfp_feedItemId;
+- (id)awemeID;
+- (void)configWithMessage:;
+- (id)displayBubbleView;
+- (id)displayImageView;
+- (void)endAnimationForLoadingAwemeModel;
+- (id)feedCardView;
+- (id)menuTargetView;
+- (void)p_addShareButtonIfNeed;
+- (void)p_layoutShareButtonIfNeed;
+- (void)p_onShareButtonClicked;
+- (void)setFeedCardView:;
+- (void)setUnavailableBubble:;
+- (void)startAnimationForLoadingAwemeModel;
+- (id)unavailableBubble;
+- (void)updateFeedDescrib;
+- (void)updateLoadingAnimation:;
+- (void)updateUnavailableBubbleFrame;
+- (void)layoutSubviews;
+- (BOOL)gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:;
+- (void).cxx_destruct;
+- (id)menuItems;
+- (void)setupUI;
+- (void)handleTap:;
+- (id)loadingView;
+- (void)setLoadingView:;
+- (id)shareButton;
+- (void)setShareButton:;
+- (id)playerContainerView;
++ (id)contentSizeWithMesasge:;
++ (id)identifier4ImageAlbum;
++ (id)identifier;
+@end

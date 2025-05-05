@@ -1,0 +1,2 @@
+@interface FBApplicationProcessExitContext : FBProcessExitContext
+@end

@@ -1,0 +1,32 @@
+@interface VELVConcat : IESMMObject
+@property (nonatomic) VELVConcatConfig config;
+@property (nonatomic) VELVCompileManager compileMananger;
+@property (nonatomic) BOOL veabtest_enabelFFmpegConcat;
+@property (nonatomic) IESMMAVExporter remuxExporter;
+@property (nonatomic) double progress;
+@property (nonatomic) BOOL isComplete;
+@property (nonatomic) q count;
+@property (nonatomic) @? progressBlock;
+- (id)compileMananger;
+- (void)setVeabtest_enabelFFmpegConcat:;
+- (void)_queryProgress;
+- (void)concatVideoAndImage:videoUrl:progressBlock:completeBlock:;
+- (id)remuxExporter;
+- (void)setCompileMananger:;
+- (void)setRemuxExporter:;
+- (BOOL)veabtest_enabelFFmpegConcat;
+- (void)setIsComplete:;
+- (void)setCount:;
+- (BOOL)isComplete;
+- (id)progressBlock;
+- (void)cancel;
+- (void)dealloc;
+- (void)setProgressBlock:;
+- (void)setConfig:;
+- (id)initWithConfig:;
+- (void)setProgress:;
+- (double)progress;
+- (void).cxx_destruct;
+- (id)config;
+- (long long)count;
+@end

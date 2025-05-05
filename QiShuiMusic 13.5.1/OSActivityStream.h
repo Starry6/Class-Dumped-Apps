@@ -1,0 +1,37 @@
+@interface OSActivityStream : NSObject
+@property (nonatomic) Q options;
+@property (nonatomic) Q eventFilter;
+@property (nonatomic) Q events;
+@property (nonatomic) <OSActivityStreamDelegate> delegate;
+@property (nonatomic) NSCompoundPredicate predicate;
+@property (nonatomic) <OSDeviceDelegate> deviceDelegate;
+@property (nonatomic) OSLogDevice device;
+- (void)setOptions:;
+- (id)init;
+- (void)dealloc;
+- (void)start;
+- (void)setDevice:;
+- (void)setDelegate:;
+- (void)stop;
+- (id)predicate;
+- (unsigned long long)options;
+- (void)setEvents:;
+- (id)delegate;
+- (void)setPredicate:;
+- (void).cxx_destruct;
+- (unsigned long long)events;
+- (id)initWithDevice:;
+- (id)device;
+- (void)addProcessID:;
+- (BOOL)streamEvent:error:;
+- (void)startRemote;
+- (void)startLocal;
+- (void)stopLocal;
+- (void)stopRemote;
+- (void)setDeviceDelegate:;
+- (id)getInfoForDevice:andKey:;
+- (BOOL)establishTrust:;
+- (id)deviceDelegate;
+- (unsigned long long)eventFilter;
+- (void)setEventFilter:;
+@end

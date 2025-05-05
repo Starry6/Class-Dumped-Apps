@@ -1,0 +1,2 @@
+@interface WidgetKit.DefaultActivityFontDefinition : WidgetKit.LimitingContentSizeCategoryFontDefinition
+@end

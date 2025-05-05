@@ -1,0 +1,34 @@
+@interface CNMemojiMetadata : NSObject
+@property (nonatomic) <AVTAvatarRecord> avatarRecord;
+@property (nonatomic) NSString poseName;
+@property (nonatomic) AVTAvatarPhysicalizedPose pose;
+@property (nonatomic) NSString backgroundColorDescription;
+@property (nonatomic) CNMemojiBackgroundParameters backgroundParameters;
+@property (nonatomic) AVTStickerConfiguration poseConfiguration;
+@property (nonatomic) AVTAvatar avatar;
+@property (nonatomic) {CGAffineTransform=dddddd} cropTransform;
+@property (nonatomic) NSString avatarRecordIdentifier;
+@property (nonatomic) BOOL avatarRecordIsEditable;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)pose;
+- (id)avatar;
+- (id)avatarRecord;
+- (id)poseConfiguration;
+- (id)poseName;
+- (id)initWithAvatarRecord:poseName:pose:backgroundColorDescription:;
+- (id)initWithAvatarRecord:poseName:pose:backgroundColorDescription:cropTransform:;
+- (id)initWithAvatarRecord:poseConfiguration:backgroundColorDescription:;
+- (id)initWithAvatarRecord:poseConfiguration:backgroundColorDescription:cropTransform:;
+- (id)initWithBackgroundColorDescription:;
+- (id)avatarRecordIdentifier;
+- (BOOL)avatarRecordIsEditable;
+- (id)backgroundColorDescription;
+- (id)backgroundParameters;
+- (id)cropTransform;
++ (id)log;
++ (BOOL)supportsSecureCoding;
+@end

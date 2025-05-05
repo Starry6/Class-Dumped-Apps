@@ -1,0 +1,34 @@
+@interface BDASplashFlagStore : NSObject
++ (void)saveRecentlyEnterBackgroundTime;
++ (void)addDisplayCountWithAdId:;
++ (void)addTodayShowTimes;
++ (BOOL)checkIsPeriodFirstLaunchExistWithCompletion:;
++ (void)clearAllAdsDisplayCount;
++ (void)clearNotShowBidSplashCids;
++ (void)clearRecentFetchAdInfoTime;
++ (void)clearRecentlyEnterBackgroundTime;
++ (void)clearRecentlySplashShowTime;
++ (void)closeDonotExeitSplash;
++ (void)consumeFirstLaunch;
++ (void)consumePeriodFirstLaunch;
++ (unsigned long long)displayCountWithAdId:;
++ (id)findCurrentPeriodTime;
++ (long long)getCountsForKey:;
++ (double)getEnterBackgroundDurationTime;
++ (BOOL)isDisplayFrequencyFit;
++ (BOOL)isDisplayTimesLimit;
++ (BOOL)isEnterBackgroundFrequencyFit;
++ (BOOL)isFirstLaunchExist;
++ (BOOL)isNowOrientationShowSpalsh;
++ (id)notShowBidSplashCids;
++ (void)openDonotExeitSplash;
++ (double)recentFetchAdInfoTime;
++ (void)saveNotShowBidSplashCids:;
++ (void)saveRecentFetchAdInfoTime;
++ (void)saveRecentlySplashShowTime;
++ (void)setCountsForKey:;
++ (void)setDonotExeitSplash:;
++ (void)setTodayExpectedShowCount;
++ (long long)todayExpectedShowCount;
++ (long long)todayRemainShowCount;
+@end

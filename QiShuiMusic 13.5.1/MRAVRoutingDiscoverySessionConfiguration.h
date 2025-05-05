@@ -1,0 +1,36 @@
+@interface MRAVRoutingDiscoverySessionConfiguration : NSObject
+@property (nonatomic) BOOL populatesExternalDevice;
+@property (nonatomic) NSString outputDeviceUID;
+@property (nonatomic) _MRDiscoverySessionConfigurationProtobuf protobuf;
+@property (nonatomic) I features;
+@property (nonatomic) NSString routingContextUID;
+@property (nonatomic) BOOL enableThrottling;
+@property (nonatomic) BOOL alwaysAllowUpdates;
+@property (nonatomic) I targetAudioSessionID;
+- (id)routingContextUID;
+- (void)setRoutingContextUID:;
+- (BOOL)alwaysAllowUpdates;
+- (void)setPopulatesExternalDevice:;
+- (BOOL)populatesExternalDevice;
+- (void)setAlwaysAllowUpdates:;
+- (id)initWithProtobuf:;
+- (id)protobuf;
+- (void)setEnableThrottling:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)setOutputDeviceUID:;
+- (id)outputDeviceUID;
+- (BOOL)enableThrottling;
+- (unsigned int)targetAudioSessionID;
+- (void)setTargetAudioSessionID:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (unsigned int)features;
+- (id)initWithEndpointFeatures:;
+- (BOOL)isLocal;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
++ (BOOL)supportsSecureCoding;
++ (id)configurationWithEndpointFeatures:;
+@end

@@ -1,0 +1,2 @@
+@interface VisualIntelligence.DomainPredcitionRequestProcessor : _TtCs12_SwiftObject
+@end

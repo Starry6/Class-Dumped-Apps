@@ -1,0 +1,31 @@
+@interface SFToggleAudioCommand : SFCommand
+@property (nonatomic) NSString localMediaIdentifier;
+@property (nonatomic) NSString persistentIdentifier;
+@property (nonatomic) NSInteger mediaEntityType;
+@property (nonatomic) NSString universalLibraryIdentifier;
+@property (nonatomic) NSDictionary dictionaryRepresentation;
+@property (nonatomic) NSData jsonData;
+@property (nonatomic) NSString commandDetail;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (int)_cpCommandType;
+- (id)initWithProtobuf:;
+- (void)setPersistentIdentifier:;
+- (id)initWithCoder:;
+- (id)persistentIdentifier;
+- (id)jsonData;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)dictionaryRepresentation;
+- (id)copyWithZone:;
+- (id)localMediaIdentifier;
+- (void)setLocalMediaIdentifier:;
+- (int)mediaEntityType;
+- (void)setMediaEntityType:;
+- (id)universalLibraryIdentifier;
+- (void)setUniversalLibraryIdentifier:;
+- (BOOL)hasMediaEntityType;
++ (BOOL)supportsSecureCoding;
+@end

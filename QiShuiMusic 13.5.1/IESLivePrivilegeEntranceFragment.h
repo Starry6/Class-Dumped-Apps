@@ -1,0 +1,36 @@
+@interface IESLivePrivilegeEntranceFragment : IESLiveCubeFragment
+@property (nonatomic) IESLivePrivilegeEntranceButtonController entranceButtonController;
+@property (nonatomic) IESLivePrivilegeEntranceBarController entranceBarController;
+@property (nonatomic) IESLivePrivilegeEntranceProfileController entranceProfileController;
+@property (nonatomic) IESLivePrivilegeEntranceWealthController entranceWealthController;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) <IESLiveRoomServiceAdapter> mixedRoom;
+@property (nonatomic) HTSEventContext trackContext;
+@property (nonatomic) IESLiveComponentContext componentContext;
+- (id)buttonInterface;
+- (id)wealthInterface;
+- (id)barInterface;
+- (void)componentBindService;
+- (id)componentContext;
+- (void)cubeComponentCreate;
+- (id)entranceBarController;
+- (id)entranceButtonController;
+- (id)entranceProfileController;
+- (id)entranceWealthController;
+- (id)profileInterface;
+- (void)setComponentContext:;
+- (void)setEntranceBarController:;
+- (void)setEntranceButtonController:;
+- (void)setEntranceProfileController:;
+- (void)setEntranceWealthController:;
+- (void)setTrackContext:;
+- (id)trackContext;
+- (void)updateEntranceWithGift:count:;
+- (void).cxx_destruct;
+- (void)messageReceived:;
++ (BOOL)isMixed;
++ (BOOL)componentShouldActive:;
+@end

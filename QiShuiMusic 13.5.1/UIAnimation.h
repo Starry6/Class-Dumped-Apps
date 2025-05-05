@@ -1,0 +1,22 @@
+@interface UIAnimation : NSObject
+- (id)completion;
+- (void)setCompletion:;
+- (float)progressForFraction:;
+- (id)initWithTarget:;
+- (void)setDelegate:;
+- (void)setProgress:;
+- (SEL)action;
+- (void)setAction:;
+- (void)setDuration:;
+- (int)state;
+- (id)delegate;
+- (id)_screen;
+- (void).cxx_destruct;
+- (id)target;
+- (void)stopAnimation;
+- (id)_screenIdentifier;
+- (void)setAnimationCurve:;
+- (float)fractionForTime:;
+- (void)markStart:;
+- (void)markStop;
+@end

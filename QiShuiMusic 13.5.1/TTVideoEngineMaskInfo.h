@@ -1,0 +1,35 @@
+@interface TTVideoEngineMaskInfo : NSObject
+@property (nonatomic) NSString version;
+@property (nonatomic) NSString maskUrl;
+@property (nonatomic) NSString fileId;
+@property (nonatomic) NSString filehash;
+@property (nonatomic) q bitrate;
+@property (nonatomic) q headLen;
+@property (nonatomic) NSNumber fileSize;
+@property (nonatomic) NSNumber updatedAt;
+- (long long)headLen;
+- (id)toMediaInfoDict;
+- (id)maskUrl;
+- (id)filehash;
+- (long long)getValueInt:;
+- (id)getValueStr:;
+- (void)setFilehash:;
+- (void)setHeadLen:;
+- (void)setMaskUrl:;
+- (id)fileSize;
+- (void)setVersion:;
+- (id)version;
+- (id)initWithDictionary:;
+- (id)initWithCoder:;
+- (long long)bitrate;
+- (void)encodeWithCoder:;
+- (void)setFileSize:;
+- (void).cxx_destruct;
+- (id)description;
+- (void)setBitrate:;
+- (id)fileId;
+- (void)setFileId:;
+- (id)updatedAt;
+- (void)setUpdatedAt:;
++ (BOOL)supportsSecureCoding;
+@end

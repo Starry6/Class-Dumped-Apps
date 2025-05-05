@@ -1,0 +1,37 @@
+@interface SFHeadphoneProxPairingEvent : NSObject
+@property (nonatomic) q errorCode;
+@property (nonatomic) BOOL attemptedPairing;
+@property (nonatomic) q pairingType;
+@property (nonatomic) double pairingDuration;
+@property (nonatomic) double foundToFirstCardDuration;
+@property (nonatomic) double triggerToFirstCardDuration;
+@property (nonatomic) double assetFetchDuration;
+@property (nonatomic) C color;
+@property (nonatomic) I productID;
+@property (nonatomic) NSDictionary eventPayload;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (unsigned int)productID;
+- (void)setProductID:;
+- (long long)errorCode;
+- (void)setColor:;
+- (id)eventPayload;
+- (unsigned char)color;
+- (void)setErrorCode:;
+- (long long)pairingType;
+- (void)setPairingType:;
+- (void)submitEvent;
+- (BOOL)attemptedPairing;
+- (void)setAttemptedPairing:;
+- (double)pairingDuration;
+- (void)setPairingDuration:;
+- (double)foundToFirstCardDuration;
+- (void)setFoundToFirstCardDuration:;
+- (double)triggerToFirstCardDuration;
+- (void)setTriggerToFirstCardDuration:;
+- (double)assetFetchDuration;
+- (void)setAssetFetchDuration:;
++ (id)eventName;
+@end

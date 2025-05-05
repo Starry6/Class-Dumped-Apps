@@ -1,0 +1,35 @@
+@interface ASRSchemaASRInterpolationWeightBundle : SISchemaInstrumentationMessage
+@property (nonatomic) Q startTimeInNs;
+@property (nonatomic) BOOL hasStartTimeInNs;
+@property (nonatomic) Q endTimeInNs;
+@property (nonatomic) BOOL hasEndTimeInNs;
+@property (nonatomic) NSArray weights;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (id)weights;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)setWeights:;
+- (void)setStartTimeInNs:;
+- (void)setEndTimeInNs:;
+- (BOOL)hasStartTimeInNs;
+- (void)setHasStartTimeInNs:;
+- (void)deleteStartTimeInNs;
+- (BOOL)hasEndTimeInNs;
+- (void)setHasEndTimeInNs:;
+- (void)deleteEndTimeInNs;
+- (void)clearWeights;
+- (void)deleteWeights;
+- (void)addWeights:;
+- (unsigned long long)weightsCount;
+- (float)weightsAtIndex:;
+- (unsigned long long)startTimeInNs;
+- (unsigned long long)endTimeInNs;
+@end

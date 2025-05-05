@@ -1,0 +1,2 @@
+@interface BUSplashView : BUInterfaceBaseView
+@end

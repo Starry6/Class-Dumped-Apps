@@ -1,0 +1,34 @@
+@interface MSVSegmentedDecoder : NSCoder
+@property (nonatomic) MSVSegmentedCodingPackage package;
+@property (nonatomic) # rootClass;
+@property (nonatomic) NSArray subcoders;
+@property (nonatomic) NSDictionary userInfo;
+- (void)setPackage:;
+- (id)decodeObjectOfClasses:forKey:;
+- (id)package;
+- (BOOL)decodeBoolForKey:;
+- (double)decodeDoubleForKey:;
+- (int)decodeInt32ForKey:;
+- (id)userInfo;
+- (long long)decodeInt64ForKey:;
+- (float)decodeFloatForKey:;
+- (int)decodeIntForKey:;
+- (void)setUserInfo:;
+- (void).cxx_destruct;
+- (BOOL)containsValueForKey:;
+- (id)decodeBytesForKey:returnedLength:;
+- (id)msv_userInfo;
+- (void)msv_setUserInfo:;
+- (id)_coderForKey:;
+- (id)subcoders;
+- (void)setSubcoders:;
+- (id)initWithCodingPackage:error:;
+- (id)initWithCodingPackage:userInfo:error:;
+- (id)decodeRootObjectOfClasses:error:;
+- (Class)rootClass;
+- (void)setRootClass:;
++ (id)decodedObjectOfClass:fromPackage:error:;
++ (id)decodedObjectOfClass:fromPackage:userInfo:error:;
++ (id)decodedObjectOfClasses:fromPackage:error:;
++ (id)decodedObjectOfClasses:fromPackage:userInfo:error:;
+@end

@@ -1,0 +1,30 @@
+@interface ASAuthorizationSingleSignOnCredential : NSObject
+@property (nonatomic) NSString state;
+@property (nonatomic) NSData accessToken;
+@property (nonatomic) NSData identityToken;
+@property (nonatomic) NSArray authorizedScopes;
+@property (nonatomic) NSHTTPURLResponse authenticatedResponse;
+@property (nonatomic) NSArray privateKeys;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (id)initWithCoder:;
+- (id)accessToken;
+- (void)encodeWithCoder:;
+- (id)identityToken;
+- (id)state;
+- (void).cxx_destruct;
+- (id)description;
+- (id)copyWithZone:;
+- (id)authorizedScopes;
+- (id)privateKeys;
+- (id)initWithAuthenticatedResponse:;
+- (id)initWithAuthenticatedResponse:privateKeys:;
+- (void)_initWithAuthenticatedResponse:;
+- (id)authenticatedResponse;
++ (id)new;
++ (BOOL)supportsSecureCoding;
++ (id)emptyCredential;
+@end

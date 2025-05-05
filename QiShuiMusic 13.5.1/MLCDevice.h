@@ -1,0 +1,32 @@
+@interface MLCDevice : NSObject
+@property (nonatomic) NSInteger type;
+@property (nonatomic) <MLCDeviceProperties> engine;
+@property (nonatomic) <MLComputeEngineControl><MLCLayerOperations><MLCEngineDispatch><MLComputeEngineOptimizerUpdate><MLCDeviceProperties> computeEngine;
+@property (nonatomic) NSInteger actualDeviceType;
+@property (nonatomic) NSArray gpuDevices;
+- (id)engine;
+- (void)setEngine:;
+- (id)init;
+- (void)setType:;
+- (unsigned long long)hash;
+- (int)type;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)isEqualToDevice:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)initWithType:selectsMultipleComputeDevices:;
+- (id)initWithGPUs:;
+- (id)initWithType:engine:;
+- (void)switchToCPUDevice;
+- (id)gpuDevices;
+- (int)actualDeviceType;
+- (id)computeEngine;
+- (void)setComputeEngine:;
++ (id)deviceWithType:;
++ (id)cpuDevice;
++ (id)gpuDevice;
++ (id)aneDevice;
++ (id)deviceWithType:selectsMultipleComputeDevices:;
++ (id)deviceWithGPUDevices:;
+@end

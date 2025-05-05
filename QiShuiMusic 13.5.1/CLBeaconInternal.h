@@ -1,0 +1,2 @@
+@interface CLBeaconInternal : NSObject
+@end

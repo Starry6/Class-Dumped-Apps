@@ -1,0 +1,30 @@
+@interface CacheDeleteListener : NSObject
+@property (nonatomic) BOOL isResumed;
+@property (nonatomic) @ xObj;
+@property (nonatomic) NSMutableSet requiredEntitlements;
+@property (nonatomic) Protocol protocol;
+@property (nonatomic) NSXPCListener listener;
+@property (nonatomic) NSString serviceName;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)protocol;
+- (id)xObj;
+- (void)setProtocol:;
+- (id)requiredEntitlements;
+- (void)setRequiredEntitlements:;
+- (id)initWithName:listener:protocol:exportedObj:isExtension:;
+- (void)setServiceName:;
+- (id)serviceName;
+- (void)suspend;
+- (id)listener;
+- (void)resume;
+- (void)addRequiredEntitlement:;
+- (BOOL)listener:shouldAcceptNewConnection:;
+- (void).cxx_destruct;
+- (void)setListener:;
+- (BOOL)isResumed;
+- (void)setIsResumed:;
+- (void)setXObj:;
+@end

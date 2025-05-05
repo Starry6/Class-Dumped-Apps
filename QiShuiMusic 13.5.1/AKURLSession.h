@@ -1,0 +1,31 @@
+@interface AKURLSession : NSObject
+@property (nonatomic) BOOL _usesAppleIDContext;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)URLSession:dataTask:didReceiveData:;
+- (void)_unsafe_completeTask:withError:;
+- (id)init;
+- (void)URLSession:didReceiveChallenge:completionHandler:;
+- (void)URLSession:task:didCompleteWithError:;
+- (BOOL)_usesAppleIDContext;
+- (void)cancelDataTask:;
+- (void)URLSession:didBecomeInvalidWithError:;
+- (BOOL)_unsafe_retryTaskIfPossible:;
+- (void)set_usesAppleIDContext:;
+- (id)defaultSessionObjectWithConfiguration:;
+- (id)beginAuthenticationDataTaskWithRequest:completionHandler:;
+- (id)_URLSession;
+- (void).cxx_destruct;
+- (id)beginDataTaskWithRequest:completionHandler:;
+- (BOOL)isRecoverableError:;
++ (id)sharedURLSession;
++ (id)sharedCacheEnabledAnisetteFreeSession;
++ (void)removeAllCachedResponses;
++ (id)_createURLSessionUsesAppleIDContext:;
++ (id)_urlBagCache;
++ (id)sharedAnisetteFreeURLSession;
++ (id)sharedCacheReliantAnisetteFreeSession;
++ (id)sharedCacheEnabledURLSession;
+@end

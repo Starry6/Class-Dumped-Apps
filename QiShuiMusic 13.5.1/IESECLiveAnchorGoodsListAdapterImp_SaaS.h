@@ -1,0 +1,37 @@
+@interface IESECLiveAnchorGoodsListAdapterImp_SaaS : NSObject
+@property (nonatomic) NSString roomID;
+@property (nonatomic) NSString anchorID;
+@property (nonatomic) IESECLiveRoomContext<IESECLiveRoomContext> roomContext;
+@property (nonatomic) IESECLiveAnchorPickedCommodityView pickedView;
+@property (nonatomic) UIView maskView;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setRoomContext:;
+- (id)anchorID;
+- (void)closeAnchorGoodsList;
+- (void)didClosePickedCommodityView:didSelectedPids:;
+- (void)didClosePickedCommodityView:maxTag:;
+- (void)didTapFlashSaleSwitchButton:;
+- (void)dismissPickedView;
+- (void)openAnchorGoodsList;
+- (void)openCouponPannel;
+- (id)pickedView;
+- (void)publishEventWithSellerMessage:;
+- (void)refreshAnchorNoti;
+- (void)reloadList;
+- (void)setAnchorID:;
+- (void)setFlashSaleSwitchOn:;
+- (void)setPickedView:;
+- (id)shopID;
+- (void)updateGoodsWithCommonMessage:;
+- (void)updateGoodsWithUpdateMessage:;
+- (id)maskView;
+- (void).cxx_destruct;
+- (void)setMaskView:;
+- (id)roomID;
+- (void)setRoomID:;
+- (id)roomContext;
++ (id)adapterWithRoomID:anchorID:roomContext:;
+@end

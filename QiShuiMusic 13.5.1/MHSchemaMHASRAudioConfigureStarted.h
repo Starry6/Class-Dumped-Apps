@@ -1,0 +1,33 @@
+@interface MHSchemaMHASRAudioConfigureStarted : SISchemaInstrumentationMessage
+@property (nonatomic) NSInteger audioCodec;
+@property (nonatomic) BOOL hasAudioCodec;
+@property (nonatomic) Q audioSkippedTimeInNs;
+@property (nonatomic) BOOL hasAudioSkippedTimeInNs;
+@property (nonatomic) Q audioSkippedNumSamples;
+@property (nonatomic) BOOL hasAudioSkippedNumSamples;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (int)audioCodec;
+- (void)setAudioCodec:;
+- (BOOL)hasAudioCodec;
+- (void)setHasAudioCodec:;
+- (void)deleteAudioCodec;
+- (void)setAudioSkippedTimeInNs:;
+- (BOOL)hasAudioSkippedTimeInNs;
+- (void)setHasAudioSkippedTimeInNs:;
+- (void)deleteAudioSkippedTimeInNs;
+- (void)setAudioSkippedNumSamples:;
+- (BOOL)hasAudioSkippedNumSamples;
+- (void)setHasAudioSkippedNumSamples:;
+- (void)deleteAudioSkippedNumSamples;
+- (unsigned long long)audioSkippedTimeInNs;
+- (unsigned long long)audioSkippedNumSamples;
+@end

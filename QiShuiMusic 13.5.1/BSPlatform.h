@@ -1,0 +1,37 @@
+@interface BSPlatform : NSObject
+@property (nonatomic) NSString productType;
+@property (nonatomic) NSString productHardwareModel;
+@property (nonatomic) NSString productHardwareModelName;
+@property (nonatomic) NSString productClass;
+@property (nonatomic) NSString localizedProductName;
+@property (nonatomic) NSString operatingSystemName;
+@property (nonatomic) NSString uniqueDeviceIdentifier;
+@property (nonatomic) NSInteger deviceClass;
+@property (nonatomic) q homeButtonType;
+@property (nonatomic) NSString productVersion;
+@property (nonatomic) NSString productBuildVersion;
+@property (nonatomic) BOOL internalInstall;
+@property (nonatomic) BOOL developerInstall;
+@property (nonatomic) BOOL carrierInstall;
+@property (nonatomic) BOOL multiCore;
+@property (nonatomic) BOOL hasGasGauge;
+@property (nonatomic) BOOL hasOrbCapability;
+- (BOOL)isInternalInstall;
+- (int)deviceClass;
+- (id)productType;
+- (id)productVersion;
+- (long long)homeButtonType;
+- (id)productHardwareModelName;
+- (id)operatingSystemName;
+- (id)localizedProductName;
+- (BOOL)isDeveloperInstall;
+- (id)productBuildVersion;
+- (BOOL)isCarrierInstall;
+- (BOOL)hasOrbCapability;
+- (id)productClass;
+- (id)productHardwareModel;
+- (BOOL)isMultiCore;
+- (BOOL)hasGasGauge;
+- (id)uniqueDeviceIdentifier;
++ (id)sharedInstance;
+@end

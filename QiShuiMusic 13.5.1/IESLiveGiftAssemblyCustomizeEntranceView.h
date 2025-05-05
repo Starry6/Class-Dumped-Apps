@@ -1,0 +1,30 @@
+@interface IESLiveGiftAssemblyCustomizeEntranceView : UIView
+@property (nonatomic) IESLiveGiftAssemblyCustomizeEntranceModel model;
+@property (nonatomic) UIView bottomView;
+@property (nonatomic) IESLiveRichTextLabel entranceLabel;
+@property (nonatomic) <IESLiveGiftAssemblyCustomizeEntranceViewDelegate> delegate;
+@property (nonatomic) @? entranceSizeDidUpdated;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didSetAttachingDIContext;
+- (id)entranceLabel;
+- (id)entranceSizeDidUpdated;
+- (void)h_clearGiftAssemblyCache;
+- (void)p_didShowEntranceButton;
+- (void)p_didTapEntranceButton;
+- (void)setEntranceLabel:;
+- (void)setEntranceSizeDidUpdated:;
+- (void)updateEntranceWithModel:;
+- (id)model;
+- (void)setupConstraints;
+- (id)init;
+- (void)setModel:;
+- (void)setDelegate:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)bottomView;
+- (void)setupViews;
+- (void)setBottomView:;
+@end

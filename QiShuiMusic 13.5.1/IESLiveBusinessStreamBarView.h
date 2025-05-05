@@ -1,0 +1,36 @@
+@interface IESLiveBusinessStreamBarView : UIView
+@property (nonatomic) IESLiveAnimatedImageView backgroundView;
+@property (nonatomic) UILabel adTagLabel;
+@property (nonatomic) UIButton arrowRightBtn;
+@property (nonatomic) UILabel jumpPromptLabel;
+@property (nonatomic) HTSLiveBusinessConfigure configure;
+@property (nonatomic) IESLiveGCDTimer timeStampTimer;
+@property (nonatomic) @? allAnimationFinished;
+- (void)restartAnimated;
+- (id)jumpPromptLabel;
+- (id)adTagLabel;
+- (id)allAnimationFinished;
+- (id)arrowRightBtn;
+- (void)closeBar;
+- (id)initWithBusinessConfigure:;
+- (void)layoutLandscapeSubviews;
+- (void)layoutPortraitSubviews;
+- (id)p_getTrackParams;
+- (void)p_openAdSchema;
+- (void)setAdTagLabel:;
+- (void)setAllAnimationFinished:;
+- (void)setArrowRightBtn:;
+- (void)setConfigure:;
+- (void)setJumpPromptLabel:;
+- (void)setTimeStampTimer:;
+- (void)startTimerWithDuration:;
+- (id)timeStampTimer;
+- (id)backgroundView;
+- (id)configure;
+- (void)dismissAnimated:;
+- (void)dealloc;
+- (void)show;
+- (void).cxx_destruct;
+- (void)setBackgroundView:;
+- (void)setupViews;
+@end

@@ -1,0 +1,30 @@
+@interface GEORPScorecardUpdate : PBCodable
+@property (nonatomic) BOOL hasScorecard;
+@property (nonatomic) GEORPScorecard scorecard;
+@property (nonatomic) BOOL hasAction;
+@property (nonatomic) NSInteger action;
+- (void)readAll:;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (int)action;
+- (unsigned long long)hash;
+- (void)setAction:;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasAction;
+- (void)setHasAction:;
+- (id)actionAsString:;
+- (int)StringAsAction:;
+- (BOOL)hasScorecard;
+- (id)scorecard;
+- (void)setScorecard:;
++ (BOOL)isValid:;
+@end

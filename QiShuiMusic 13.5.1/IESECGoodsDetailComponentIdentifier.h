@@ -1,0 +1,2 @@
+@interface IESECGoodsDetailComponentIdentifier : NSObject
+@end

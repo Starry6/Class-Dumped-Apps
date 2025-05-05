@@ -1,0 +1,34 @@
+@interface IESLiveInteractConfigLayoutModel : IESLiveDynamicMTLModel
+@property (nonatomic) IESLiveInteractConfigLayoutContent ratioContent;
+@property (nonatomic) NSArray ratioRegions;
+@property (nonatomic) NSArray regionStreamLayouts;
+@property (nonatomic) double contentWidthHeightRatio;
+@property (nonatomic) IESLiveInteractConfigLayoutUIContainer uiContainer;
+@property (nonatomic) IESLiveInteractConfigLayoutCanvas canvas;
+@property (nonatomic) IESLiveInteractConfigLayoutContent content;
+@property (nonatomic) NSArray regions;
+@property (nonatomic) NSArray seats;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (double)contentWidthHeightRatio;
+- (id)ratioContent;
+- (id)ratioRegions;
+- (id)regionStreamLayouts;
+- (id)seats;
+- (void)setContentWidthHeightRatio:;
+- (void)setRatioContent:;
+- (void)setRatioRegions:;
+- (void)setRegionStreamLayouts:;
+- (void)setSeats:;
+- (id)copy;
+- (void).cxx_destruct;
++ (id)canvasJSONTransformer;
++ (id)contentJSONTransformer;
++ (id)regionsJSONTransformer;
++ (id)seatsJSONTransformer;
++ (id)uiContainerJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
++ (id)modelWithDictionary:;
+@end

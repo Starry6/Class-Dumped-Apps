@@ -1,0 +1,31 @@
+@interface VEAudioSyncUnit : VEAudioBaseUnit
+@property (nonatomic) VEAudioResamplerUnit bgmAudioConverter;
+@property (nonatomic) VEAudioResamplerUnit micAudioConverter;
+@property (nonatomic) BOOL hasStarted;
+@property (nonatomic) {?=qiIq} startTime;
+@property (nonatomic) I simpleProcessDatasize;
+@property (nonatomic) @? syncStatusCallBack;
+- (void)p_stopProcessor;
+- (BOOL)setAudioConfig:;
+- (id)bgmAudioConverter;
+- (void)checkConfig:;
+- (id)micAudioConverter;
+- (void)p_createFile;
+- (void)p_initAudio;
+- (void)p_processBGMData:;
+- (BOOL)p_processMicData:;
+- (void)p_startProcessor;
+- (BOOL)processSampleData:;
+- (void)setBgmAudioConverter:;
+- (void)setMicAudioConverter:;
+- (void)setSimpleProcessDatasize:;
+- (void)setSyncStatusCallBack:;
+- (unsigned int)simpleProcessDatasize;
+- (id)syncStatusCallBack;
+- (void)dealloc;
+- (void)setStartTime:;
+- (id)startTime;
+- (BOOL)hasStarted;
+- (void).cxx_destruct;
+- (void)setHasStarted:;
+@end

@@ -1,0 +1,2 @@
+@interface IESLiveLinkmicRoot : GPBRootObject
+@end

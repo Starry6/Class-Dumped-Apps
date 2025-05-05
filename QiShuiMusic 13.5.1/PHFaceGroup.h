@@ -1,0 +1,33 @@
+@interface PHFaceGroup : PHObject
+@property (nonatomic) NSString localIdentifier;
+@property (nonatomic) Q faceCountInFaceGroup;
+@property (nonatomic) BOOL isDirty;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) q personModelId;
+@property (nonatomic) q personBuilderState;
+@property (nonatomic) q unnamedFaceCount;
+- (BOOL)isDirty;
+- (unsigned long long)faceCountInFaceGroup;
+- (id)initWithFetchDictionary:propertyHint:photoLibrary:;
+- (Class)changeRequestClass;
+- (long long)getPersonModelId;
+- (long long)unnamedFaceCount;
+- (long long)personModelId;
+- (long long)personBuilderState;
++ (id)transformValueExpression:forKeyPath:;
++ (id)identifierCode;
++ (id)fetchType;
++ (id)managedEntityName;
++ (id)fetchPredicateFromComparisonPredicate:options:;
++ (id)entityKeyMap;
++ (id)propertiesToFetchWithHint:;
++ (id)fetchFaceGroupsWithOptions:;
++ (id)fetchFaceGroupsWithLocalIdentifiers:options:;
++ (id)fetchFaceGroupsForPerson:options:;
++ (id)fetchFaceGroupsWithFace:options:;
++ (id)fetchFaceGroupsGroupedByFaceLocalIdentifierForFaces:options:;
++ (id)fetchEmptyFaceGroupsWithOptions:;
+@end

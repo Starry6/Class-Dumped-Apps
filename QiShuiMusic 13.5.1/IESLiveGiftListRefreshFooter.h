@@ -1,0 +1,34 @@
+@interface IESLiveGiftListRefreshFooter : MJRefreshFooter
+@property (nonatomic) BOOL newPanGesture;
+@property (nonatomic) IESLiveWebpLoadingView loadingView;
+@property (nonatomic) q mj_insetBResetedOffset;
+- (void)scrollViewContentSizeDidChange:;
+- (void)_resetScrollViewInsetBottomAnimated:completion:;
+- (void)_startLoadingAnim;
+- (void)_stopLoadingAnim;
+- (void)_updateScrollViewInsetBottomAnimated:completion:;
+- (void)endRefreshingWithNoMoreDataCompletionBlock:;
+- (void)forceUpdateUI;
+- (long long)mj_insetBResetedOffset;
+- (BOOL)newPanGesture;
+- (void)placeSubviews;
+- (BOOL)scrollViewContentHeightBiggerThanFrameHeight;
+- (void)scrollViewContentOffsetDidChange:;
+- (BOOL)scrollViewDidScrollUp;
+- (void)scrollViewPanStateDidChange:;
+- (BOOL)scrollViewWillReachBottom;
+- (void)setHiddenAndUpdateLayout:;
+- (void)setMj_insetBResetedOffset:;
+- (void)setNewPanGesture:;
+- (void)_removeObservers;
+- (void)dealloc;
+- (void)_addObservers;
+- (void)setState:;
+- (void)prepare;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (void)willMoveToSuperview:;
+- (void)applicationWillEnterForeground:;
+- (id)loadingView;
+- (void)setLoadingView:;
+@end

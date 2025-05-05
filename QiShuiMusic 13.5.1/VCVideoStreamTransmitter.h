@@ -1,0 +1,31 @@
+@interface VCVideoStreamTransmitter : VCVideoTransmitterBase
+- (void)dealloc;
+- (id)initWithConfig:;
+- (void)gatherRealtimeStats:;
+- (void)startVideo;
+- (void)stopVideo;
+- (BOOL)enqueueVideoFrame:frameTime:cameraStatusBits:;
+- (void)generateKeyFrameWithFIRType:;
+- (unsigned int)setTemporaryMaximumBitrate:;
+- (void)setTargetBitrate:;
+- (void)setKeyFrameOnlyStreamID:;
+- (void)setStreamIDs:numOfStreamIDs:repairedStreamIDs:numOfRepairedStreamIDs:;
+- (void)setFECRatio:;
+- (void)setFECRedundancyVector:;
+- (void)setMediaSuggestion:;
+- (BOOL)setEncodingMode:;
+- (void)handleThermalLevelChange:;
+- (void)updateWindowState:isLocal:windowRect:;
+- (void)initVideoCompressionWithWidth:height:bitrate:keyFrameIntervalDuration:;
+- (id)forceKeyFrameProperties;
+- (void)encodeVideoFrame:;
+- (BOOL)prependSPSPPS:dataPointer:sampleBuffer:;
+- (BOOL)isKeyFrame:;
+- (void)transmitEncodedVideoFrame:cameraStatusBits:;
+- (int)transmitEncodedVideoFrame:size:timestamp:hostTime:cameraStatusBits:;
+- (int)transmitFrameInGroups:numOfPackets:timestamp:hostTime:cameraStatusBits:;
+- (int)transmitVideoPackets:packetSizes:startPacket:packetCount:lastGroup:timestamp:hostTime:cameraStatusBits:bytesSent:;
+- (void)updateSendStatisticsWithTimestamp:frameSize:packetsInFrame:;
+- (void)reportingVideoStreamEvent:;
+- (void)handleActiveConnectionChange:;
+@end

@@ -1,0 +1,36 @@
+@interface HTSLiveDoubleInteractionTitleBar : UIView
+@property (nonatomic) Q scene;
+@property (nonatomic) UIButton titleButton;
+@property (nonatomic) UIImageView titleBGView;
+@property (nonatomic) UILabel interactTimeLabel;
+@property (nonatomic) UILabel interactTextLabel;
+@property (nonatomic) double bgViewWidth;
+@property (nonatomic) Q elaspedTime;
+@property (nonatomic) BOOL isAnchor;
+- (void)setBgViewWidth:;
+- (void)setElaspedTime:;
+- (void)setTitleBGView:;
+- (double)bgViewWidth;
+- (void)bindAction;
+- (double)currentTitleWidth;
+- (unsigned long long)elaspedTime;
+- (id)initWithFrame:scene:isAnchor:diContext:;
+- (id)interactTextLabel;
+- (id)interactTimeLabel;
+- (void)loadNewViews;
+- (void)setInteractTextLabel:;
+- (void)setInteractTimeLabel:;
+- (void)setIsAnchor:;
+- (void)setUpBGViewWithTimeString:;
+- (id)titleBGView;
+- (void)updateTitleLabelWithElapsedTime:;
+- (void)setScene:;
+- (id)accessibilityLabel;
+- (unsigned long long)scene;
+- (BOOL)isAnchor;
+- (BOOL)isAccessibilityElement;
+- (void).cxx_destruct;
+- (void)loadViews;
+- (id)titleButton;
+- (void)setTitleButton:;
+@end

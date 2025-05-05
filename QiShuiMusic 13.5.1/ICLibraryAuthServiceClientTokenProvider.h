@@ -1,0 +1,37 @@
+@interface ICLibraryAuthServiceClientTokenProvider : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)_addConnection:;
+- (id)init;
+- (void)_removeConnection:;
+- (void)dealloc;
+- (void)startService;
+- (BOOL)listener:shouldAcceptNewConnection:;
+- (id)_clientConnection;
+- (void)_handleUserIdentityStoreDidChangeNotification:;
+- (void).cxx_destruct;
+- (void)_loadCache;
+- (void)stopService;
+- (void)getTokenStatusForDSIDs:forcingRefresh:completion:;
+- (void)_handleLibraryAuthServiceClientTokenDidChangeDistributedNotification:;
+- (void)getTokenResultForDSID:forceRefresh:completion:;
+- (void)getTokenResultsForDSIDs:forceRefresh:completion:;
+- (void)addTokenResult:forDSID:completion:;
+- (void)getTokenForcingRefresh:completion:;
+- (void)getAllTokensForAssistantForcingRefresh:completion:;
+- (void)getTokenForDSID:forceRefresh:completion:;
+- (id)cachedTokenAndResetCache:;
+- (void)getTokenStatusForcingRefresh:completion:;
+- (void)getAllTokenStatusForAssistantForcingRefresh:completion:;
+- (void)_refreshTokenForDSID:forExternalRequest:completion:;
+- (void)_refreshTokensForDSIDs:forExternalRequest:completion:;
+- (void)_commitCache;
+- (void)_updateRefreshTimer;
+- (BOOL)_shouldStopBackgroundRefreshForError:;
+- (void)_updateTokenCacheEntryForDSID:tokenResult:error:;
+- (BOOL)_isPrivacyAcknowledgementRequired;
+- (BOOL)_updateEntriesForAccountsChanges;
++ (id)sharedProvider;
+@end

@@ -1,0 +1,35 @@
+@interface SNDetectSoundRequest : NSObject
+@property (nonatomic) NSString soundIdentifier;
+@property (nonatomic) MLModelConfiguration modelConfiguration;
+@property (nonatomic) NSPredicate resultsPredicate;
+@property (nonatomic) q resultsPredicateLeakCount;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)initWithMLModel:error:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (void)setModelConfiguration:;
+- (BOOL)isEqual:;
+- (id)modelConfiguration;
+- (id)copyWithZone:;
+- (id)initWithSoundIdentifier:;
+- (id)createAnalyzerWithError:;
+- (id)initWithSoundIdentifier:shouldUseTwoPassDetection:;
+- (id)initWithDetectorIdentifier:error:;
+- (id)initWithDetectorVariant:soundIdentifier:modelConfiguration:resultsPredicate:resultsPredicateLeakCount:;
+- (id)initWithVGGishBasedMLModel:soundIdentifier:;
+- (BOOL)setResultsPredicate:error:;
+- (void)setResultsPredicate:;
+- (void)setResultsPredicateLeakCount:;
+- (id)soundIdentifier;
+- (id)resultsPredicate;
+- (long long)resultsPredicateLeakCount;
++ (BOOL)supportsSecureCoding;
++ (id)allValidSoundIdentifiers;
++ (id)allValidDetectorIdentifiers;
+@end

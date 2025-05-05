@@ -1,0 +1,33 @@
+@interface IESLivePublicScreenDynamicStrategyRefreshAttachment : NSObject
+@property (nonatomic) IESLivePublicScreenDynamicRefreshStrategy strategy;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) IESLivePublicScreenDataFlowManager dataFlowManager;
+@property (nonatomic) IESLivePublicScreenContext publicScreenContext;
+@property (nonatomic) HTSEventContext trackContext;
+@property (nonatomic) @? didAttach;
+@property (nonatomic) @? didDetach;
+- (id)abilityProtocol;
+- (id)dataFlowManager;
+- (id)allBufferMessages;
+- (id)didAttach;
+- (id)didDetach;
+- (id)publicScreenContext;
+- (void)refreshConfigChangeWithCount:duration:;
+- (void)setDataFlowManager:;
+- (void)setDidAttach:;
+- (void)setDidDetach:;
+- (void)setPublicScreenContext:;
+- (void)setTrackContext:;
+- (BOOL)shouldActive;
+- (id)trackContext;
+- (void)detach;
+- (id)strategy;
+- (void)attach;
+- (id)type;
+- (void).cxx_destruct;
+- (void)setStrategy:;
+- (void)messageReceived:;
+@end

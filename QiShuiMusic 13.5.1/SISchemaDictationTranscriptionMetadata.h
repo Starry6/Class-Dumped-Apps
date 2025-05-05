@@ -1,0 +1,35 @@
+@interface SISchemaDictationTranscriptionMetadata : SISchemaInstrumentationMessage
+@property (nonatomic) NSInteger dictationModel;
+@property (nonatomic) BOOL hasDictationModel;
+@property (nonatomic) NSString dictationModelVersion;
+@property (nonatomic) BOOL hasDictationModelVersion;
+@property (nonatomic) SISchemaDictationAlternativesPresent dictationAlternativesPresent;
+@property (nonatomic) BOOL hasDictationAlternativesPresent;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (void)setDictationModelVersion:;
+- (void)setDictationModel:;
+- (void)setDictationAlternativesPresent:;
+- (BOOL)hasDictationModel;
+- (void)setHasDictationModel:;
+- (void)deleteDictationModel;
+- (BOOL)hasDictationModelVersion;
+- (void)deleteDictationModelVersion;
+- (BOOL)hasDictationAlternativesPresent;
+- (void)deleteDictationAlternativesPresent;
+- (int)dictationModel;
+- (id)dictationModelVersion;
+- (id)dictationAlternativesPresent;
+- (void)setHasDictationModelVersion:;
+- (void)setHasDictationAlternativesPresent:;
+@end

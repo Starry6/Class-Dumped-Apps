@@ -1,0 +1,35 @@
+@interface UIViewAnimationInfo : NSObject
+@property (nonatomic) UIView owningView;
+@property (nonatomic) @? invalidationBlock;
+@property (nonatomic) NSMutableDictionary animatableProperties;
+@property (nonatomic) NSMutableDictionary presentationModifiers;
+@property (nonatomic) NSMutableDictionary modifierGroupRequestHandlers;
+@property (nonatomic) NSMutableDictionary isPartOfHigherOrderProperty;
+@property (nonatomic) NSObject<OS_dispatch_queue> lockingQueue;
+- (void)setInvalidationBlock:;
+- (id)initWithView:;
+- (void)setOwningView:;
+- (void)setModifierGroupRequestHandlers:;
+- (id)modifierGroupRequestHandlers;
+- (void)_invalidateIfPossible;
+- (void)setAnimatableProperty:forKey:;
+- (void)setIsPartOfHigherOrderProperty:;
+- (void)setLockingQueue:;
+- (id)invalidationBlock;
+- (id)isPartOfHigherOrderProperty;
+- (void)setPresentationModifier:forKey:;
+- (id)lockingQueue;
+- (id)modifierGroupRequestHandlerForKey:;
+- (id)animatablePropertyKeys;
+- (void).cxx_destruct;
+- (void)performWithLock:;
+- (id)presentationModifiers;
+- (void)setPresentationModifiers:;
+- (void)setModifierGroupRequestHandler:forKey:;
+- (BOOL)_canInvalidate;
+- (void)setAnimatableProperties:;
+- (id)animatablePropertyForKey:createIfNecessary:;
+- (id)presentationModifierForKey:;
+- (id)owningView;
+- (id)animatableProperties;
+@end

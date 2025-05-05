@@ -1,0 +1,38 @@
+@interface MICodeSigningVerifier : NSObject
+@property (nonatomic) MIExecutableBundle bundle;
+@property (nonatomic) BOOL allowAdhocSigning;
+@property (nonatomic) BOOL logResourceVerificationErrors;
+@property (nonatomic) BOOL validateResources;
+@property (nonatomic) BOOL performOnlineAuthorization;
+@property (nonatomic) BOOL validateUsingDetachedSignature;
+@property (nonatomic) BOOL verifyTrustCachePresence;
+@property (nonatomic) BOOL skipProfileIDValidation;
+@property (nonatomic) MICodeSigningInfo signingInfo;
+- (id)bundle;
+- (void).cxx_destruct;
+- (id)initWithBundle:;
+- (id)_loadSystemDetachedSignatureForBundleID:error:;
+- (BOOL)_getMICodeSignerTypeFromMISInfoDict:codeSignerType:profileType:error:;
+- (BOOL)performValidationWithError:;
+- (BOOL)allowAdhocSigning;
+- (void)setAllowAdhocSigning:;
+- (BOOL)logResourceVerificationErrors;
+- (void)setLogResourceVerificationErrors:;
+- (BOOL)validateResources;
+- (void)setValidateResources:;
+- (BOOL)performOnlineAuthorization;
+- (void)setPerformOnlineAuthorization:;
+- (BOOL)validateUsingDetachedSignature;
+- (void)setValidateUsingDetachedSignature:;
+- (BOOL)verifyTrustCachePresence;
+- (void)setVerifyTrustCachePresence:;
+- (BOOL)skipProfileIDValidation;
+- (void)setSkipProfileIDValidation:;
+- (id)signingInfo;
++ (id)codeSigningVerifierForBundle:;
++ (id)_validateSignatureAndCopyInfoForURL:withOptions:error:;
++ (BOOL)validateWatchKitV1StubExecutableBundle:error:;
++ (BOOL)validateWatchKitV2StubExecutableBundle:error:;
++ (BOOL)_validateBundleExecutable:againstStubAt:trustedHashes:sectionName:signingIdentifier:error:;
++ (BOOL)_validateStubSignature:withSigningID:error:;
+@end

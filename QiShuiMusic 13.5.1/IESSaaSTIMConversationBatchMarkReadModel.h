@@ -1,0 +1,2 @@
+@interface IESSaaSTIMConversationBatchMarkReadModel : NSObject
+@end

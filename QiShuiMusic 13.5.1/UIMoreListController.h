@@ -1,0 +1,35 @@
+@interface UIMoreListController : UIViewController
+@property (nonatomic) NSArray moreViewControllers;
+@property (nonatomic) BOOL allowsCustomizing;
+@property (nonatomic) BOOL moreViewControllersChanged;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)decodeRestorableStateWithCoder:;
+- (id)init;
+- (void)encodeRestorableStateWithCoder:;
+- (id)tableView:cellForRowAtIndexPath:;
+- (id)table;
+- (void)traitCollectionDidChange:;
+- (id)tabBarItem;
+- (void)tableView:didSelectRowAtIndexPath:;
+- (void).cxx_destruct;
+- (void)viewWillAppear:;
+- (void)loadView;
+- (void)tableView:willDisplayCell:forRowAtIndexPath:;
+- (long long)tableView:numberOfRowsInSection:;
+- (long long)numberOfSectionsInTableView:;
+- (BOOL)_isSupportedInterfaceOrientation:;
+- (void)_willChangeToIdiom:onScreen:;
+- (void)_layoutCells;
+- (void)_updateEditButton;
+- (id)moreViewControllers;
+- (void)setMoreViewControllers:;
+- (BOOL)moreViewControllersChanged;
+- (void)setMoreViewControllersChanged:;
+- (BOOL)allowsCustomizing;
+- (void)setAllowsCustomizing:;
+- (BOOL)_viewControllerWasSelected;
+- (id)_targetNavigationController;
+@end

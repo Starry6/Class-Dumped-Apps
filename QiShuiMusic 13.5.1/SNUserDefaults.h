@@ -1,0 +1,2 @@
+@interface SNUserDefaults : NSObject
+@end

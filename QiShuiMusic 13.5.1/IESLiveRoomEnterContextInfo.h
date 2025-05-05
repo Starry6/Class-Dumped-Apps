@@ -1,0 +1,30 @@
+@interface IESLiveRoomEnterContextInfo : NSObject
+@property (nonatomic) NSNumber roomID;
+@property (nonatomic) NSString anchorID;
+@property (nonatomic) NSString secAnchorID;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) NSString enterMethod;
+@property (nonatomic) NSString reqId;
+@property (nonatomic) NSString previousPage;
+@property (nonatomic) NSDictionary contextParams;
+@property (nonatomic) BOOL toSingleRoom;
+- (void)setSecAnchorID:;
+- (void)setEnterMethod:;
+- (id)anchorID;
+- (id)contextParams;
+- (id)enterFrom;
+- (id)enterMethod;
+- (id)reqId;
+- (id)secAnchorID;
+- (void)setAnchorID:;
+- (void)setContextParams:;
+- (void)setEnterFrom:;
+- (void)setReqId:;
+- (void)setToSingleRoom:;
+- (BOOL)toSingleRoom;
+- (void).cxx_destruct;
+- (id)previousPage;
+- (void)setPreviousPage:;
+- (id)roomID;
+- (void)setRoomID:;
+@end

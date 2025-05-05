@@ -1,0 +1,32 @@
+@interface CMHeartRateData : CMLogItem
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) double heartRate;
+@property (nonatomic) double confidence;
+@property (nonatomic) NSDate startDate;
+@property (nonatomic) BOOL error;
+@property (nonatomic) q dataSource;
+@property (nonatomic) q mode;
+@property (nonatomic) double frequency;
+- (double)confidence;
+- (id)startDate;
+- (double)frequency;
+- (void)dealloc;
+- (void)setFrequency:;
+- (BOOL)error;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (long long)dataSource;
+- (id)description;
+- (long long)mode;
+- (id)copyWithZone:;
+- (id)initWithBinarySampleRepresentation:metadata:timestamp:;
+- (id)binarySampleRepresentation;
+- (double)heartRate;
+- (id)initWithHeartRate:confidence:timestamp:startDate:error:dataSource:mode:;
++ (BOOL)supportsSecureCoding;
++ (id)dataSourceName:;
++ (id)modeName:;
+@end

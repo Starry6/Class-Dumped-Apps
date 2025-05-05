@@ -1,0 +1,34 @@
+@interface CAMSchemaCAMResponse : SISchemaInstrumentationMessage
+@property (nonatomic) NSInteger action;
+@property (nonatomic) BOOL hasAction;
+@property (nonatomic) I responseStatusCode;
+@property (nonatomic) BOOL hasResponseStatusCode;
+@property (nonatomic) NSString enforcer;
+@property (nonatomic) BOOL hasEnforcer;
+@property (nonatomic) NSData jsonData;
+- (unsigned int)responseStatusCode;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (int)action;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void)setAction:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (void)deleteAction;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (BOOL)hasAction;
+- (void)setHasAction:;
+- (void)setResponseStatusCode:;
+- (BOOL)hasResponseStatusCode;
+- (void)setHasResponseStatusCode:;
+- (void)deleteResponseStatusCode;
+- (BOOL)hasEnforcer;
+- (void)deleteEnforcer;
+- (id)enforcer;
+- (void)setEnforcer:;
+- (void)setHasEnforcer:;
+@end

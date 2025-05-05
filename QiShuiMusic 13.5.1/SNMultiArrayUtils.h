@@ -1,0 +1,2 @@
+@interface SNMultiArrayUtils : NSObject
+@end

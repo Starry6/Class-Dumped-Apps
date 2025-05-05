@@ -1,0 +1,36 @@
+@interface VPVRHeadTracker : NSObject
+@property (nonatomic) VPVREye leftEye;
+@property (nonatomic) VPVREye rightEye;
+@property (nonatomic) {?=[4]} headViewMatrix;
+@property (nonatomic) q postNotifyVRHeadPoseCount;
+@property (nonatomic) BOOL headTrackingEnabled;
+@property (nonatomic) double gyroSensitivity;
+@property (nonatomic) {?=} extraQuaternion;
+@property (nonatomic) q postNotifiVRPoseInterval;
+@property (nonatomic) <VPVRHeadTrackerDelegate> trackerDelegate;
+- (id)extraQuaternion;
+- (double)gyroSensitivity;
+- (id)trackerDelegate;
+- (id)headViewMatrix;
+- (id)initWithLeftEye:andRightEye:;
+- (id)modelViewProjectionMatrixWithEyeType:;
+- (long long)postNotifiVRPoseInterval;
+- (long long)postNotifyVRHeadPoseCount;
+- (void)recenter;
+- (void)setExtraQuaternion:;
+- (void)setGyroSensitivity:;
+- (void)setHeadTrackingEnabled:;
+- (void)setHeadViewMatrix:;
+- (void)setPostNotifiVRPoseInterval:;
+- (void)setPostNotifyVRHeadPoseCount:;
+- (void)setTrackerDelegate:;
+- (void)updateHeadPoseWithOutputTextureOrientation:disableZaxis:;
+- (id)viewPoseMatrixWithEyeType:;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (id)rightEye;
+- (void)setRightEye:;
+- (id)leftEye;
+- (void)setLeftEye:;
+- (BOOL)isHeadTrackingEnabled;
+@end

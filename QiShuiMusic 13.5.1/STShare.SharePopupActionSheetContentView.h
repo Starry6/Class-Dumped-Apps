@@ -1,0 +1,5 @@
+@interface STShare.SharePopupActionSheetContentView : UIView
+- (id)initWithCoder:;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+@end

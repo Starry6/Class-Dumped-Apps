@@ -1,0 +1,30 @@
+@interface VKCameraDelegateMediator : NSObject
+@property (nonatomic) <VKMapViewCameraDelegate> cameraDelegate;
+@property (nonatomic) BOOL isChangingMapType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (void)mapLayerNavigationCameraHasStoppedPanning;
+- (void)mapLayerMuninAvailabilityDidChange:;
+- (void)mapLayerDidBecomePitched:;
+- (void)mapLayerNavigationCameraDidLeaveDefaultZoom;
+- (void)mapLayerDidChangeVisibleRegion;
+- (void)mapLayerNavigationCameraDidReturnToDefaultZoom;
+- (id)mapLayerPresentationForAnnotation:;
+- (id)cameraDelegate;
+- (void)mapLayerWillChangeRegionAnimated:;
+- (void)mapLayerCanEnter3DModeDidChange:;
+- (void)mapLayerWillAnimateToLocation:;
+- (void)mapLayerCanZoomOutDidChange:;
+- (void)setIsChangingMapType:;
+- (BOOL)isChangingMapType;
+- (void).cxx_destruct;
+- (void)mapLayerNavigationCameraHasStartedPanning;
+- (void)setCameraDelegate:;
+- (void)mapLayerDidChangeRegionAnimated:;
+- (void)mapLayerWasUnableToAnimate;
+- (void)mapLayerCanZoomInDidChange:;
+- (void)mapLayerDidFinishInitialTrackingAnimation;
+@end

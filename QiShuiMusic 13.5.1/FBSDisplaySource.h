@@ -1,0 +1,38 @@
+@interface FBSDisplaySource : NSObject
+@property (nonatomic) I displayID;
+@property (nonatomic) BOOL allowsUnknown;
+@property (nonatomic) NSSet connectedConfigurations;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (unsigned int)displayID;
+- (id)init;
+- (void)dealloc;
+- (void)updateTransforms;
+- (void)observeValueForKeyPath:ofObject:change:context:;
+- (id)connectedConfigurations;
+- (id)succinctDescriptionBuilder;
+- (id)initWithDisplay:alwaysConnected:triggers:monitor:;
+- (void)_forceUpdateForMockCADisplayChange;
+- (id)debugDescription;
+- (void)_callOutQueue_postToObservers:includeBookendObserver:connected:;
+- (void)_lock_noteDisconnecting;
+- (void)_lock_noteConnected;
+- (void)_updateForInitialization:forTransformInvalidation:;
+- (void)_callOutQueue_postToObservers:includeBookendObserver:updated:;
+- (BOOL)allowsUnknown;
+- (void)setAllowsUnknown:;
+- (id)_lock_transformDisplaysIfNecessaryFromDisplayConfiguration:;
+- (void).cxx_destruct;
+- (id)succinctDescription;
+- (id)description;
+- (void)_lock_noteUpdatedForTransformInvalidation:;
+- (void)_lock_setRawConfiguration:effectiveConfigurations:;
+- (void)_callOutQueue_postToObservers:includeBookendObserver:disconnected:;
+- (id)descriptionBuilderWithMultilinePrefix:;
+- (void)invalidate;
+- (void)_lock_setAttachment:;
+- (void)_lock_setRawReportedConfiguration:effectiveReportedConfigurations:;
+- (id)descriptionWithMultilinePrefix:;
+@end

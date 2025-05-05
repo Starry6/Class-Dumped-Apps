@@ -1,0 +1,27 @@
+@interface ML3DatabaseCachedRow : ML3DatabaseRow
+- (unsigned long long)columnCount;
+- (id)numberForColumnName:;
+- (id)stringForColumnIndex:;
+- (id)dataForColumnName:;
+- (id)stringForColumnName:;
+- (id)numberForColumnIndex:;
+- (double)doubleForColumnIndex:;
+- (id)arrayRepresentation;
+- (id)cStringForColumnIndex:;
+- (int)intForColumnName:;
+- (int)intForColumnIndex:;
+- (id)valueForColumnName:;
+- (void)getBlobBytes:outLength:forColumnIndex:;
+- (id)valueForColumnIndex:;
+- (long long)int64ForColumnIndex:;
+- (id)initWithParentResult:;
+- (id)initWithArray:;
+- (void).cxx_destruct;
+- (id)dataForColumnIndex:;
+- (void)getBlobBytes:outLength:forColumnName:;
+- (id)dictionaryRepresentation;
+- (double)doubleForColumnName:;
+- (id)cStringForColumnName:;
+- (long long)int64ForColumnName:;
+- (id)_numberOrZeroForColumnIndex:;
+@end

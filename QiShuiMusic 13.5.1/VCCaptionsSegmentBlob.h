@@ -1,0 +1,30 @@
+@interface VCCaptionsSegmentBlob : PBCodable
+@property (nonatomic) BOOL hasConfidence;
+@property (nonatomic) I confidence;
+@property (nonatomic) BOOL hasHasSpaceAfter;
+@property (nonatomic) BOOL hasSpaceAfter;
+@property (nonatomic) BOOL hasText;
+@property (nonatomic) NSString text;
+- (unsigned int)confidence;
+- (void)setConfidence:;
+- (void)dealloc;
+- (BOOL)hasText;
+- (void)setText:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (id)text;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setHasConfidence:;
+- (BOOL)hasConfidence;
+- (BOOL)hasSpaceAfter;
+- (void)setHasSpaceAfter:;
+- (void)setHasHasSpaceAfter:;
+- (BOOL)hasHasSpaceAfter;
+- (id)initWithSFTranscriptionSegment:isLast:;
+@end

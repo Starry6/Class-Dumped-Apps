@@ -1,0 +1,31 @@
+@interface BDFileUploadiOSDNSServerIP : NSObject
+@property (nonatomic) BOOL parsing;
+@property (nonatomic) double serverTime;
+@property (nonatomic) NSString serverIP;
+@property (nonatomic) BDFileUploadiOSDNSLocalParser parser;
+@property (nonatomic) @ eventTarget;
+@property (nonatomic) : eventSEL;
+@property (nonatomic) q eventTimeInterval;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)_getServerIP;
+- (void)_updateDNSServerIP;
+- (SEL)eventSEL;
+- (id)eventTarget;
+- (long long)eventTimeInterval;
+- (id)serverIP;
+- (void)setParsing:;
+- (void)setServerIP:;
+- (void)setServerTime:;
+- (id)init;
+- (void).cxx_destruct;
+- (id)parser;
+- (double)serverTime;
+- (BOOL)isParsing;
+- (void)setParser:;
++ (id)getServerIP;
++ (void)updateDNSServerIP;
++ (id)shareInstance;
+@end

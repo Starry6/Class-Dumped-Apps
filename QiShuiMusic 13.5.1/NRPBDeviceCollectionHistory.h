@@ -1,0 +1,31 @@
+@interface NRPBDeviceCollectionHistory : PBCodable
+@property (nonatomic) BOOL hasStartIndex;
+@property (nonatomic) q startIndex;
+@property (nonatomic) NSMutableArray historys;
+@property (nonatomic) BOOL hasSwitchRecords;
+@property (nonatomic) NRPBSwitchRecordCollection switchRecords;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)setStartIndex:;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (long long)startIndex;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setHasStartIndex:;
+- (BOOL)hasStartIndex;
+- (void)clearHistorys;
+- (void)addHistory:;
+- (unsigned long long)historysCount;
+- (id)historyAtIndex:;
+- (BOOL)hasSwitchRecords;
+- (id)historys;
+- (void)setHistorys:;
+- (id)switchRecords;
+- (void)setSwitchRecords:;
++ (Class)historyType;
+@end

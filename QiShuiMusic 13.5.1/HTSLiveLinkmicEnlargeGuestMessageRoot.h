@@ -1,0 +1,2 @@
+@interface HTSLiveLinkmicEnlargeGuestMessageRoot : GPBRootObject
+@end

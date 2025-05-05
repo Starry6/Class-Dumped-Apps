@@ -1,0 +1,2 @@
+@interface IESLiveSaaSPBIESLiveSaaSPBCameraSharestateSyncdataRoot : GPBRootObject
+@end

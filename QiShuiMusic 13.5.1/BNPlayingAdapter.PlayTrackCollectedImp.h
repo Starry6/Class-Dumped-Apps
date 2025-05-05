@@ -1,0 +1,7 @@
+@interface BNPlayingAdapter.PlayTrackCollectedImp : NSObject
+- (id)init;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (BOOL)isEqual:;
+@end

@@ -1,0 +1,31 @@
+@interface QLTBitmapFormat : NSObject
+@property (nonatomic) Q width;
+@property (nonatomic) Q height;
+@property (nonatomic) Q bitsPerComponent;
+@property (nonatomic) Q bitsPerPixel;
+@property (nonatomic) Q bytesPerRow;
+@property (nonatomic) I bitmapInfo;
+@property (nonatomic) ^{CGColorSpace=} colorSpace;
+- (void)setColorSpace:;
+- (id)colorSpace;
+- (void)setWidth:;
+- (id)initWithCoder:;
+- (unsigned long long)height;
+- (void)encodeWithCoder:;
+- (unsigned long long)width;
+- (void)setHeight:;
+- (id)description;
+- (BOOL)isEqual:;
+- (unsigned long long)bitsPerComponent;
+- (void)setBitsPerComponent:;
+- (unsigned long long)bytesPerRow;
+- (void)setBytesPerRow:;
+- (BOOL)isEqualToFormat:;
+- (unsigned int)bitmapInfo;
+- (id)initWithBitmapContext:;
+- (unsigned long long)bitsPerPixel;
+- (void)setBitsPerPixel:;
+- (void)setBitmapInfo:;
++ (BOOL)supportsSecureCoding;
++ (id)bitmapFormatWithBitmapImage:;
+@end

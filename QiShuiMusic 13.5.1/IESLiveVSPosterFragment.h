@@ -1,0 +1,37 @@
+@interface IESLiveVSPosterFragment : IESLiveRoomComponent
+@property (nonatomic) IESLivePosterMakerPanel posterPanel;
+@property (nonatomic) IESLiveVSPosterStore store;
+@property (nonatomic) IESLiveVSMaskPreView maskView;
+@property (nonatomic) IESLiveVSPhotosSelectPanel selectPanel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didCreatePoster;
+- (void)setPosterPanel:;
+- (id)createSelectPanelViewWithFrame:;
+- (void)setSelectPanel:;
+- (void)cancelCurrentStatus;
+- (void)componentBindService;
+- (void)createMinePoster;
+- (id)createPanelViewWithFrame:;
+- (void)didSetAttachingDIContext;
+- (void)hasLoadLocalAssets;
+- (id)panelFrame;
+- (double)panelHeight;
+- (id)posterPanel;
+- (void)saveImageToLocal:;
+- (id)selectPanel;
+- (void)showLikeEggEntranceView;
+- (void)showPhotoSelectPanel;
+- (void)showPosterMakerPanel;
+- (void)showPreViewPoster;
+- (void)setStore:;
+- (id)maskView;
+- (void).cxx_destruct;
+- (id)store;
+- (void)setMaskView:;
+- (double)bottomOffset;
++ (BOOL)isMixed;
++ (BOOL)componentShouldActive:;
+@end

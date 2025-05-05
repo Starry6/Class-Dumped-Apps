@@ -1,0 +1,32 @@
+@interface AWEIMMsgboxAutoManagementListViewController : UIViewController
+@property (nonatomic) AWEIMMsgboxAutoManagementListCollectionView collectionView;
+@property (nonatomic) NSArray sections;
+@property (nonatomic) UIButton confirmBtn;
+@property (nonatomic) <AWEIMMsgboxAutoManagementListViewControllerViewModelProtocol> viewModel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)aweim_collectionView:didSelectItemAtIndexPath:;
+- (BOOL)canShowInnerPush;
+- (void)cancelBtnClicked;
+- (void)configData;
+- (id)confirmBtn;
+- (void)didTapHeaderViewWithType:;
+- (id)getCurrentViewModelWithIndexPath:;
+- (void)refreshHeaderView:;
+- (void)setConfirmBtn:;
+- (void)sureBtnClicked;
+- (void)updateRightBtnText;
+- (id)sections;
+- (id)viewModel;
+- (id)initWithSections:;
+- (void)setCollectionView:;
+- (void).cxx_destruct;
+- (void)setSections:;
+- (void)viewWillAppear:;
+- (id)collectionView;
+- (void)setViewModel:;
+- (void)viewDidLoad;
+- (void)setupUI;
+@end

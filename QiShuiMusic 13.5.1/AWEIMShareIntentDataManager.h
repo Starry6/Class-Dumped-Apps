@@ -1,0 +1,37 @@
+@interface AWEIMShareIntentDataManager : NSObject
+@property (nonatomic) NSObject<OS_dispatch_queue> queue;
+@property (nonatomic) NSString enterFrom;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)didFinishLogout;
+- (void)p_updateGroupUserDefault:value:;
+- (void)p_updateSystemShareMessageState;
+- (id)enterFrom;
+- (void)handleShareExtensionEnterWithPath:query:;
+- (BOOL)isSystemShareMessageEnable;
+- (BOOL)isSystemShareSuggestionEnable;
+- (void)p_addToShareSuggestion:;
+- (id)p_attachmentObjectForPath:;
+- (void)p_removeLastSuggestios:;
+- (void)p_sendMessageFormExtension:enterFrom:;
+- (void)p_sendMessageFromShortCutWithImpl:toconversationID:;
+- (void)p_showShareListWithPath:query:;
+- (void)setEnterFrom:;
+- (void)setupDefaultState;
+- (void)teenModeDidChange:isLogout:;
+- (void)updateSystemShareSuggestionIfNeeded:;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (void)setQueue:;
+- (id)queue;
++ (id)enterFrom;
++ (id)extensionUserDefaults;
++ (id)extensionUserDefaultsSuitName;
++ (void)removeShareExtensionFileIfNeeded:;
++ (void)trackShareVideoSuccess:shareModel:;
++ (void)trackShareVideoToChat:shareModels:;
++ (id)sharedInstance;
+@end

@@ -1,0 +1,2 @@
+@interface AVDepthDataInternal : NSObject
+@end

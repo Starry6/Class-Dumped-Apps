@@ -1,0 +1,33 @@
+@interface CSJNativeExpressVideoAdContext : NSObject
+@property (nonatomic) CSJAdSlot slot;
+@property (nonatomic) CSJMaterialMeta materialMeta;
+@property (nonatomic) @ sender;
+@property (nonatomic) <CSJRewardedVideoAtomicEventProtocol> eventHandler;
+@property (nonatomic) @? skipBlock;
+@property (nonatomic) NSString rewardAlertTitle;
+@property (nonatomic) NSString rewardAlertConfirm;
+@property (nonatomic) NSString rewardAlertCancel;
+@property (nonatomic) BOOL useBackupAlert;
+@property (nonatomic) q leftTime;
+- (long long)leftTime;
+- (id)materialMeta;
+- (id)rewardAlertCancel;
+- (id)rewardAlertConfirm;
+- (id)rewardAlertTitle;
+- (void)setLeftTime:;
+- (void)setMaterialMeta:;
+- (void)setRewardAlertCancel:;
+- (void)setRewardAlertConfirm:;
+- (void)setRewardAlertTitle:;
+- (void)setUseBackupAlert:;
+- (BOOL)useBackupAlert;
+- (id)slot;
+- (id)sender;
+- (void)setEventHandler:;
+- (void)setSlot:;
+- (id)eventHandler;
+- (void).cxx_destruct;
+- (void)setSender:;
+- (id)skipBlock;
+- (void)setSkipBlock:;
+@end

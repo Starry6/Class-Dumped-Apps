@@ -1,0 +1,34 @@
+@interface ABUUserInfoForSegment : NSObject
+@property (nonatomic) NSString user_id;
+@property (nonatomic) NSString channel;
+@property (nonatomic) NSString sub_channel;
+@property (nonatomic) q age;
+@property (nonatomic) q gender;
+@property (nonatomic) NSString user_value_group;
+@property (nonatomic) NSDictionary customized_id;
+- (void)setSub_channel:;
+- (id)customized_id;
+- (id)getGroupingDimension;
+- (id)getGroupingDimensionFree;
+- (long long)isConformRuleOfValue:;
+- (BOOL)isContainInvalidCharacter:;
+- (BOOL)isEqualToAnother:;
+- (void)setCustomized_id:;
+- (void)setUser_id:;
+- (void)setUser_value_group:;
+- (id)sub_channel;
+- (id)user_value_group;
+- (void)setChannel:;
+- (id)init;
+- (id)channel;
+- (long long)gender;
+- (long long)age;
+- (BOOL)isMemberOfClass:;
+- (void)setGender:;
+- (void)setAge:;
+- (void).cxx_destruct;
+- (BOOL)isKindOfClass:;
+- (id)mutableCopyWithZone:;
+- (id)copyWithZone:;
+- (id)user_id;
+@end

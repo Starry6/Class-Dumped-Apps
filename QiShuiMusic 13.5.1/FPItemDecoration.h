@@ -1,0 +1,32 @@
+@interface FPItemDecoration : NSObject
+@property (nonatomic) NSString decorationIdentifier;
+@property (nonatomic) NSString type;
+@property (nonatomic) NSString bundleIdentifier;
+@property (nonatomic) NSString imageType;
+@property (nonatomic) BOOL requiresFetchingInfoFirst;
+- (id)imageType;
+- (id)bundleIdentifier;
+- (id)type;
+- (void).cxx_destruct;
+- (id)description;
+- (id)labelWithInfo:error:;
+- (id)initWithPlistEntry:bundle:bundleIdentifier:;
+- (id)parentDependingKeys;
+- (id)styleDependingKeys;
+- (BOOL)requiresFetchingInfoFirst;
+- (id)labelWithItem:error:;
+- (id)labelWithItem:error:style:;
+- (id)labelWithInfo:error:style:;
+- (id)labelsWithInfo:error:;
+- (id)labelsWithItem:error:;
+- (void)folderStatusForItem:completionHandler:;
+- (id)decorationIdentifier;
++ (void)_invalidateCache;
++ (id)_decorationCache;
++ (void)_loadBuiltinDecorationTypes;
++ (id)_loadDecorationsFromPlist:bundleIdentifier:bundle:;
++ (id)_fetchFromCacheWithIdentifier:bundleIdentifier:;
++ (id)decorationWithIdentifier:bundleIdentifier:;
++ (void)fetchInfoForItem:completionHandler:;
++ (id)infoForItem:parentInfo:;
+@end

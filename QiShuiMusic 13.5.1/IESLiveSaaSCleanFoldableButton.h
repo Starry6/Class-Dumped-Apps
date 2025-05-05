@@ -1,0 +1,37 @@
+@interface IESLiveSaaSCleanFoldableButton : UIView
+@property (nonatomic) UIView contentView;
+@property (nonatomic) UILabel descLabel;
+@property (nonatomic) UIImageView arrowImage;
+@property (nonatomic) BOOL isInFold;
+@property (nonatomic) @? didFoldBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)showInContainerView:bottomView:;
+- (void)_buildSubView;
+- (void)_refreshFoldStatus;
+- (void)_refreshUnfoldStatus;
+- (id)descLabel;
+- (id)didFoldBlock;
+- (id)downsideArrorImage;
+- (BOOL)isInFolading;
+- (BOOL)isInFold;
+- (id)pluginLayoutContentInsets;
+- (id)pluginLayoutContentSize;
+- (void)setDescLabel:;
+- (void)setDidFoldBlock:;
+- (void)setIsInFold:;
+- (void)toggleFold;
+- (id)upsideArrorImage;
+- (void)dismiss;
+- (id)contentView;
+- (id)init;
+- (id)viewType;
+- (id)intrinsicContentSize;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (id)arrowImage;
+- (void)setArrowImage:;
+- (void)_buttonClicked:;
+@end

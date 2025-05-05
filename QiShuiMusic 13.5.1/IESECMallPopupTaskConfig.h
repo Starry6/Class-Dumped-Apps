@@ -1,0 +1,30 @@
+@interface IESECMallPopupTaskConfig : MTLModel
+@property (nonatomic) IESECMallPopupTaskGroupConfig groupInfo;
+@property (nonatomic) q priority;
+@property (nonatomic) q zIndex;
+@property (nonatomic) BOOL firstScreenTask;
+@property (nonatomic) q scope;
+@property (nonatomic) IESECMallPopupConfig popupConfig;
+@property (nonatomic) NSDictionary dictionaryValue;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setPopupConfig:;
+- (BOOL)firstScreenTask;
+- (id)popupConfig;
+- (void)setFirstScreenTask:;
+- (void)setPriority:;
+- (void)setScope:;
+- (long long)scope;
+- (void)setZIndex:;
+- (void).cxx_destruct;
+- (long long)zIndex;
+- (long long)priority;
+- (id)groupInfo;
+- (void)setGroupInfo:;
++ (id)groupInfoJSONTransformer;
++ (id)popupConfigJSONTransformer;
++ (id)scopeJSONTransformer;
++ (id)JSONKeyPathsByPropertyKey;
+@end

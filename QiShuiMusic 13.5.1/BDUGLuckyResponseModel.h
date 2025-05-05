@@ -1,0 +1,32 @@
+@interface BDUGLuckyResponseModel : NSObject
+@property (nonatomic) NSString MIMEType;
+@property (nonatomic) q statusCode;
+@property (nonatomic) NSDictionary allHeaderFields;
+@property (nonatomic) NSURL URL;
+@property (nonatomic) NSDictionary rawDict;
+@property (nonatomic) q serviceErrNum;
+@property (nonatomic) NSString serviceErrDesc;
+@property (nonatomic) @ dataObj;
+@property (nonatomic) NSString debugInfo;
+- (id)dataObj;
+- (id)rawDict;
+- (id)serviceErrDesc;
+- (long long)serviceErrNum;
+- (void)setAllHeaderFields:;
+- (void)setDataObj:;
+- (void)setRawDict:;
+- (void)setServiceErrDesc:;
+- (void)setServiceErrNum:;
+- (void)setStatusCode:;
+- (long long)statusCode;
+- (id)debugInfo;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (void)setURL:;
+- (id)URL;
+- (id)MIMEType;
+- (id)allHeaderFields;
+- (void)setDebugInfo:;
+- (void)setMIMEType:;
+@end

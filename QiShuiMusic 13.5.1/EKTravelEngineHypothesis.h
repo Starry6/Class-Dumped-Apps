@@ -1,0 +1,38 @@
+@interface EKTravelEngineHypothesis : NSObject
+@property (nonatomic) NSInteger transportType;
+@property (nonatomic) NSDate conservativeDepartureDate;
+@property (nonatomic) double conservativeTravelTime;
+@property (nonatomic) NSDate suggestedDepartureDate;
+@property (nonatomic) double estimatedTravelTime;
+@property (nonatomic) NSDate aggressiveDepartureDate;
+@property (nonatomic) double aggressiveTravelTime;
+@property (nonatomic) NSString routeName;
+@property (nonatomic) BOOL supportsLiveTraffic;
+@property (nonatomic) Q currentTrafficDensity;
+@property (nonatomic) NSString trafficDensityDescription;
+@property (nonatomic) q travelState;
+- (int)transportType;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)routeName;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)mutableCopyWithZone:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)supportsLiveTraffic;
+- (id)trafficDensityDescription;
+- (id)suggestedDepartureDate;
+- (double)estimatedTravelTime;
+- (unsigned long long)currentTrafficDensity;
+- (long long)travelState;
+- (id)conservativeDepartureDate;
+- (id)aggressiveDepartureDate;
+- (double)conservativeTravelTime;
+- (double)aggressiveTravelTime;
+- (id)initWithTransportType:conservativeDepartureDate:conservativeTravelTime:suggestedDepartureDate:estimatedTravelTime:aggressiveDepartureDate:aggressiveTravelTime:routeName:supportsLiveTraffic:currentTrafficDensity:trafficDensityDescription:travelState:;
+- (BOOL)isEqualToHypothesis:;
++ (BOOL)supportsSecureCoding;
++ (id)syntheticHypothesisWithStartDate:conservativeTravelTime:estimatedTravelTime:aggressiveTravelTime:;
+@end

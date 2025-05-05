@@ -1,0 +1,33 @@
+@interface INListRideOptionsIntentResponse : INIntentResponse
+@property (nonatomic) q code;
+@property (nonatomic) NSArray rideOptions;
+@property (nonatomic) NSArray paymentMethods;
+@property (nonatomic) NSDate expirationDate;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (id)_dictionaryRepresentation;
+- (id)initWithBackingStore:;
+- (void)setExpirationDate:;
+- (long long)code;
+- (id)initWithCoder:;
+- (id)expirationDate;
+- (void)encodeWithCoder:;
+- (id)paymentMethods;
+- (void)setPaymentMethods:;
+- (id)propertiesByName;
+- (id)_initWithCode:userActivity:;
+- (id)initWithCode:userActivity:;
+- (long long)_intentResponseCode;
+- (long long)_codeWithName:;
+- (void)setPropertiesByName:;
+- (id)rideOptions;
+- (void)setRideOptions:;
++ (BOOL)supportsSecureCoding;
++ (long long)_codeFromType:errorCode:appLaunchRequested:;
++ (int)_typeFromCode:;
++ (int)_errorCodeFromCode:;
++ (BOOL)_appLaunchRequestedFromCode:;
+@end

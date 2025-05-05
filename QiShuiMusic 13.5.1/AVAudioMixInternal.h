@@ -1,0 +1,2 @@
+@interface AVAudioMixInternal : NSObject
+@end

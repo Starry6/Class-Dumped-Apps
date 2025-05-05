@@ -1,0 +1,32 @@
+@interface AMSUserAgent : NSObject
+@property (nonatomic) AMSMappedBundleInfo bundleInfo;
+@property (nonatomic) AMSProcessInfo processInfo;
+@property (nonatomic) AMSCoreOptionsBox optionsBox;
+@property (nonatomic) NSString clientName;
+@property (nonatomic) NSString clientVersion;
+- (id)initWithProcessInfo:;
+- (id)_sharedComponentFrameworkVersion;
+- (id)clientName;
+- (id)_iOSComponentProductVersion;
+- (id)processInfo;
+- (id)bundleInfo;
+- (void)setClientName:;
+- (void)setClientVersion:;
+- (id)compile;
+- (id)_sharedComponentFairPlayDeviceType;
+- (id)_iOSComponentClientInfo;
+- (id)_userAgentSuffix;
+- (id)_sharedComponentParentheticalWithFairPlayDeviceType:;
+- (id)_iOSComponentHardwarePlatform;
+- (void).cxx_destruct;
+- (id)_sharedComponentParentheticalWithFairPlayDeviceType:productType:;
+- (id)_compileAndShouldCache:;
+- (id)_iOSComponentBuildVersion;
+- (id)optionsBox;
+- (id)_iOSComponentDeviceModel;
+- (id)clientVersion;
++ (id)userAgentForProcessInfo:;
++ (id)_sharedCache;
++ (void)cacheUserAgent:forBundleIdentifier:;
++ (id)cachedUserAgentForBundleIdentifier:;
+@end

@@ -1,0 +1,30 @@
+@interface VNClassifyImageRequest : VNImageBasedRequest
+@property (nonatomic) Q maximumLeafObservations;
+@property (nonatomic) Q maximumHierarchicalObservations;
+@property (nonatomic) VNClassificationCustomHierarchy customHierarchy;
+@property (nonatomic) Q imageCropAndScaleOption;
+@property (nonatomic) NSArray results;
+- (BOOL)internalPerformRevision:inContext:error:;
+- (void)applyConfigurationOfRequest:;
+- (id)newDefaultDetectorOptionsForRequestRevision:session:;
+- (void)resolvedRevisionDidChangeFromRevision:;
+- (BOOL)willAcceptCachedResultsFromRequestWithConfiguration:;
+- (id)description;
+- (id)applicableDetectorTypeForRevision:error:;
+- (unsigned long long)imageCropAndScaleOption;
+- (void)setImageCropAndScaleOption:;
+- (id)supportedIdentifiersAndReturnError:;
+- (id)customHierarchy;
+- (unsigned long long)maximumLeafObservations;
+- (void)setMaximumLeafObservations:;
+- (unsigned long long)maximumHierarchicalObservations;
+- (void)setMaximumHierarchicalObservations:;
+- (void)_setCustomHierarchy:;
+- (BOOL)defineCustomHierarchy:error:;
+- (id)defineCustomHierarchyWithRelationships:error:;
++ (Class)configurationClass;
++ (id)descriptionForPrivateRevision:;
++ (id)supportedPrivateRevisions;
++ (id)revisionAvailability;
++ (id)knownClassificationsForRevision:error:;
+@end

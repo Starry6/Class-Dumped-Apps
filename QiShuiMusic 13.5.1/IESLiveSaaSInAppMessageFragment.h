@@ -1,0 +1,32 @@
+@interface IESLiveSaaSInAppMessageFragment : IESLiveRoomComponent
+@property (nonatomic) IESLiveSaaSLiveRoomModel roomModel;
+@property (nonatomic) HTSEventContext trackContext;
+@property (nonatomic) IESLiveSaaSAudienceMoreToolsItemModel messageItem;
+@property (nonatomic) IESLiveSaaSAudienceMoreToolsItemModel lifeItem;
+@property (nonatomic) <IESLiveSaaSInternalRouter> internalRouter;
+@property (nonatomic) HTSLiveApi clientApi;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)loadMessageItem;
+- (void)setMessageItem:;
+- (id)clientApi;
+- (void)componentDidMount;
+- (void)didSetAttachingDIContext;
+- (id)internalRouter;
+- (id)lifeItem;
+- (void)loadIMSDK;
+- (void)loadLifeItem;
+- (void)requestMessageCount;
+- (id)roomModel;
+- (void)setClientApi:;
+- (void)setInternalRouter:;
+- (void)setLifeItem:;
+- (void)setRoomModel:;
+- (void)updateUnreadCount:;
+- (void).cxx_destruct;
+- (id)messageItem;
+- (void)updateItemCount:;
++ (id)componentWithRoom:trackContext:componentContext:;
+@end

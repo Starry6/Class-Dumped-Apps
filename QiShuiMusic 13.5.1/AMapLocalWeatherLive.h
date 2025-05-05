@@ -1,0 +1,32 @@
+@interface AMapLocalWeatherLive : AMapSearchObject
+@property (nonatomic) NSString adcode;
+@property (nonatomic) NSString province;
+@property (nonatomic) NSString city;
+@property (nonatomic) NSString weather;
+@property (nonatomic) NSString temperature;
+@property (nonatomic) NSString windDirection;
+@property (nonatomic) NSString windPower;
+@property (nonatomic) NSString humidity;
+@property (nonatomic) NSString reportTime;
+- (id)weather;
+- (id)adcode;
+- (id)province;
+- (void)setAdcode:;
+- (void)setProvince:;
+- (void)setWeather:;
+- (void)setWindPower:;
+- (id)windPower;
+- (id)city;
+- (id)init;
+- (void)setTemperature:;
+- (void).cxx_destruct;
+- (id)temperature;
+- (void)setCity:;
+- (id)reportTime;
+- (void)setReportTime:;
+- (id)windDirection;
+- (void)setWindDirection:;
+- (id)humidity;
+- (void)setHumidity:;
++ (id)ajo_mapping;
+@end

@@ -1,0 +1,31 @@
+@interface PuzzleWebViewReusePoolOldImpl : NSObject
+@property (nonatomic) Q poolSize;
+@property (nonatomic) NSMutableArray readyToUseWebViews;
+@property (nonatomic) NSTimer memoryWarningTimer;
+@property (nonatomic) BOOL reuseDisabled;
+@property (nonatomic) NSDictionary reuseConfig;
+- (void)enqueueWebView:;
+- (void)setReuseConfig:;
+- (id)fetchWebViewWithContext:;
+- (id)memoryWarningTimer;
+- (id)readyToUseWebViews;
+- (void)recoverReuse;
+- (id)reuseConfig;
+- (BOOL)reuseDisabled;
+- (void)reuseWebview:;
+- (void)setMemoryWarningTimer:;
+- (void)setReadyToUseWebViews:;
+- (void)setReuseDisabled:;
+- (id)init;
+- (void)dealloc;
+- (void)didReceiveMemoryWarning;
+- (void)clearPool;
+- (void).cxx_destruct;
+- (unsigned long long)poolSize;
+- (void)setPoolSize:;
++ (void)enqueueWebView:;
++ (id)fetchWebViewWithContext:;
++ (void)clearPool;
++ (id)sharedPool;
++ (void)setPoolSize:;
+@end

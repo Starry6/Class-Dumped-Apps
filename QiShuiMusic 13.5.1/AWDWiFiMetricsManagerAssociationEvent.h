@@ -1,0 +1,31 @@
+@interface AWDWiFiMetricsManagerAssociationEvent : PBCodable
+@property (nonatomic) BOOL hasTimestamp;
+@property (nonatomic) Q timestamp;
+@property (nonatomic) BOOL hasEventInfo;
+@property (nonatomic) AWDWiFiMetricsManagerEvent eventInfo;
+@property (nonatomic) BOOL hasEventType;
+@property (nonatomic) NSInteger eventType;
+- (void)dealloc;
+- (int)StringAsEventType:;
+- (void)writeTo:;
+- (int)eventType;
+- (void)setEventType:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)setHasTimestamp:;
+- (void)mergeFrom:;
+- (BOOL)hasTimestamp;
+- (void)setTimestamp:;
+- (void)setHasEventType:;
+- (BOOL)hasEventType;
+- (BOOL)readFrom:;
+- (unsigned long long)timestamp;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (id)eventTypeAsString:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)eventInfo;
+- (void)setEventInfo:;
+- (BOOL)hasEventInfo;
+@end

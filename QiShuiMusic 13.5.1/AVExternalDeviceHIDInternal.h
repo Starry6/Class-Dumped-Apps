@@ -1,0 +1,2 @@
+@interface AVExternalDeviceHIDInternal : NSObject
+@end

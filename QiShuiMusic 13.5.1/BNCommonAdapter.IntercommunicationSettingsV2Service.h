@@ -1,0 +1,2 @@
+@interface BNCommonAdapter.IntercommunicationSettingsV2Service : _TtCs12_SwiftObject
+@end

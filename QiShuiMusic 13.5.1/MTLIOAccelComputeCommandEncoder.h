@@ -1,0 +1,24 @@
+@interface MTLIOAccelComputeCommandEncoder : MTLIOAccelCommandEncoder
+- (void)setVisibleFunctionTables:withBufferRange:;
+- (void)setVisibleFunctionTable:atBufferIndex:;
+- (void)executeCommandsInBuffer:withRange:;
+- (void)setIntersectionFunctionTable:atBufferIndex:;
+- (unsigned long long)getType;
+- (void)useResource:usage:;
+- (void)useHeaps:count:;
+- (void)sampleCountersInBuffer:atSampleIndex:withBarrier:;
+- (void)executeCommandsInBuffer:indirectBuffer:indirectBufferOffset:;
+- (void)memoryBarrierWithScope:;
+- (id)getComputePipelineState;
+- (void)memoryBarrierWithResources:count:;
+- (void)useResources:count:usage:;
+- (void)waitForFence:;
+- (void)setIntersectionFunctionTables:withBufferRange:;
+- (void)updateFence:;
+- (id)getBufferContentsAtIndex:;
+- (void)useHeap:;
+- (void)bindEmulationArguments;
+- (void)setEmulationBuffers:offsets:withRange:;
+- (void)setEmulationTextures:withRange:;
+- (void)setEmulationSamplerStates:withRange:;
+@end

@@ -1,0 +1,33 @@
+@interface AFSiriClientStateManager : NSObject
+- (id)initWithInstanceContext:;
+- (void)beginTransaction;
+- (void)endTransaction;
+- (void).cxx_destruct;
+- (void)invalidateClient:;
+- (void)beginSessionForClient:;
+- (void)endSessionForClient:;
+- (void)beginRequestWithUUID:forClient:;
+- (void)endRequestWithUUID:forClient:;
+- (void)beginListeningForClient:;
+- (void)endListeningForClient:;
+- (void)beginSpeakingForClient:;
+- (void)endSpeakingForClient:;
+- (void)beginPresentationTransition;
+- (void)endPresentationTransition;
+- (void)getCurrentStateWithCompletion:;
+- (id)_stateForClient:createIfAbsent:;
+- (void)_removeStateForClient:;
+- (void)_beginSessionForClient:;
+- (void)_endSessionForClient:;
+- (void)_beginRequestWithUUID:forClient:;
+- (void)_endRequestWithUUID:forClient:;
+- (void)_beginListeningForClient:;
+- (void)_endListeningForClient:;
+- (void)_beginSpeakingForClient:;
+- (void)_endSpeakingForClient:;
+- (void)_aggregateStatesAndPublishIfNeeded;
+- (unsigned long long)_aggregatedState;
+- (void)_beginPresentationTransition;
+- (void)_endPresentationTransitionForReason:;
++ (id)sharedManager;
+@end

@@ -1,0 +1,37 @@
+@interface RPStreamServer : NSObject
+@property (nonatomic) @? invalidationHandler;
+@property (nonatomic) <RPMessageable> messenger;
+@property (nonatomic) NSString serviceType;
+@property (nonatomic) @? streamAcceptHandler;
+@property (nonatomic) I streamFlags;
+@property (nonatomic) @? streamPrepareHandlerEx;
+@property (nonatomic) @? streamPrepareHandler;
+@property (nonatomic) NSInteger streamQoS;
+- (id)init;
+- (id)descriptionWithLevel:;
+- (void)_invalidated;
+- (id)serviceType;
+- (void)_activateWithCompletion:;
+- (void)setServiceType:;
+- (void)activateWithCompletion:;
+- (void)_invalidate;
+- (void).cxx_destruct;
+- (id)invalidationHandler;
+- (void)setInvalidationHandler:;
+- (id)description;
+- (id)messenger;
+- (void)invalidate;
+- (void)_handleStartRequest:options:responseHandler:;
+- (void)_handleStopRequest:options:responseHandler:;
+- (void)setMessenger:;
+- (id)streamAcceptHandler;
+- (void)setStreamAcceptHandler:;
+- (unsigned int)streamFlags;
+- (void)setStreamFlags:;
+- (id)streamPrepareHandlerEx;
+- (void)setStreamPrepareHandlerEx:;
+- (id)streamPrepareHandler;
+- (void)setStreamPrepareHandler:;
+- (int)streamQoS;
+- (void)setStreamQoS:;
+@end

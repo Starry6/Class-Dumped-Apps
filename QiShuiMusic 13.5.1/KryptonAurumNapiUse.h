@@ -1,0 +1,2 @@
+@interface KryptonAurumNapiUse : NSObject
+@end

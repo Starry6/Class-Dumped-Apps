@@ -1,0 +1,32 @@
+@interface DAFolderChange : NSObject
+@property (nonatomic) Q changeType;
+@property (nonatomic) NSString folderId;
+@property (nonatomic) NSString parentFolderId;
+@property (nonatomic) NSString displayName;
+@property (nonatomic) q dataclass;
+@property (nonatomic) I taskId;
+@property (nonatomic) BOOL renameOnCollision;
+@property (nonatomic) <DAFolderChangeConsumer> consumer;
+- (unsigned long long)changeType;
+- (void)setDataclass:;
+- (id)consumer;
+- (id)initWithCoder:;
+- (long long)dataclass;
+- (void)setDisplayName:;
+- (id)displayName;
+- (unsigned int)taskId;
+- (void)setChangeType:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (void)setConsumer:;
+- (void)setTaskId:;
+- (id)folderId;
+- (id)initFolderChangeWithChangeType:folderId:parentFolderId:displayName:dataclass:consumer:;
+- (void)setFolderId:;
+- (id)parentFolderId;
+- (void)setParentFolderId:;
+- (BOOL)renameOnCollision;
+- (void)setRenameOnCollision:;
++ (BOOL)supportsSecureCoding;
+@end

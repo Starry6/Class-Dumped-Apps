@@ -1,0 +1,30 @@
+@interface UgenV3Image : UIImage
+@property (nonatomic) Q animatedImageType;
+@property (nonatomic) NSData animatedImageData;
+@property (nonatomic) Q animatedImageMemorySize;
+@property (nonatomic) BOOL preloadAllAnimatedImageFrames;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (unsigned long long)animatedImageBytesPerFrame;
+- (id)animatedImageData;
+- (double)animatedImageDurationAtIndex:;
+- (id)animatedImageFrameAtIndex:;
+- (unsigned long long)animatedImageFrameCount;
+- (unsigned long long)animatedImageLoopCount;
+- (unsigned long long)animatedImageMemorySize;
+- (unsigned long long)animatedImageType;
+- (BOOL)preloadAllAnimatedImageFrames;
+- (void)setPreloadAllAnimatedImageFrames:;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (id)initWithContentsOfFile:;
+- (id)initWithData:scale:;
+- (id)initWithData:;
+- (void).cxx_destruct;
++ (id)imageWithData:;
++ (id)imageNamed:;
++ (id)imageWithContentsOfFile:;
++ (id)imageWithData:scale:;
+@end

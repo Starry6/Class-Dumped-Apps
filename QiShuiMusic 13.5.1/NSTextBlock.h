@@ -1,0 +1,35 @@
+@interface NSTextBlock : NSObject
+- (unsigned long long)verticalAlignment;
+- (void)setBorderColor:;
+- (id)init;
+- (void)setBackgroundColor:;
+- (void)dealloc;
+- (id)backgroundColor;
+- (void)setVerticalAlignment:;
+- (id)initWithCoder:;
+- (double)contentWidth;
+- (void)encodeWithCoder:;
+- (id)copyWithZone:;
+- (id)_attributeDescription;
+- (void)_createFloatStorage;
+- (void)_destroyFloatStorage;
+- (void)_setValue:type:forParameter:;
+- (double)_valueForParameter:;
+- (unsigned long long)_valueTypeForParameter:;
+- (void)_takeValuesFromTextBlock:;
+- (void)setValue:type:forDimension:;
+- (double)valueForDimension:;
+- (unsigned long long)valueTypeForDimension:;
+- (void)setContentWidth:type:;
+- (unsigned long long)contentWidthValueType;
+- (void)setWidth:type:forLayer:edge:;
+- (double)widthForLayer:edge:;
+- (unsigned long long)widthValueTypeForLayer:edge:;
+- (void)setWidth:type:forLayer:;
+- (void)setBorderColor:forEdge:;
+- (id)borderColorForEdge:;
+- (id)rectForLayoutAtPoint:inRect:textContainer:characterRange:;
+- (id)boundsRectForContentRect:inRect:textContainer:characterRange:;
+- (void)drawBackgroundWithFrame:inView:characterRange:layoutManager:;
++ (BOOL)supportsSecureCoding;
+@end

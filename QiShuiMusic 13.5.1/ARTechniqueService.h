@@ -1,0 +1,31 @@
+@interface ARTechniqueService : ARDaemonService
+@property (nonatomic) <ARRemoteTechniqueClient> clientProxy;
+@property (nonatomic) ARTechnique technique;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)interruptionHandler;
+- (id)technique;
+- (id)processData:;
+- (void).cxx_destruct;
+- (void)invalidationHandler;
+- (id)initWithConnection:;
+- (void)setTechnique:;
+- (void)prepare:;
+- (void)requestResultDataAtTimestamp:context:;
+- (void)technique:didOutputResultData:timestamp:context:;
+- (id)initWithConnection:exportedInterface:remoteObjectInterface:;
+- (void)technique:didFailWithError:;
+- (void)processData:reply:;
+- (void)isActiveWithReply:;
+- (void)captureBehaviorWithReply:;
+- (void)numberOfActiveConnectionsWithReply:;
+- (void)requiredSensorDataTypesWithReply:;
+- (void)requiredTimeIntervalWithReply:;
+- (void)resultDataClassesWithReply:;
+- (void)_initCommon:;
+- (id)clientProxy;
+- (void)setClientProxy:;
++ (id)serviceName;
+@end

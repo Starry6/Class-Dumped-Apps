@@ -1,0 +1,36 @@
+@interface CNReaderWriterScheduler : NSObject
+@property (nonatomic) NSObject<OS_dispatch_queue> queue;
+@property (nonatomic) BOOL suspended;
+@property (nonatomic) NSMutableArray activeReaders;
+@property (nonatomic) NSMutableArray pendingReaders;
+@property (nonatomic) NSMutableArray activeWriters;
+@property (nonatomic) NSMutableArray pendingWriters;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (void)addWriterWithIdentifier:;
+- (void)activateReader:;
+- (void)activateWriter:;
+- (void)appendDescriptionToBuilder:;
+- (void)performSynchronousReaderBlock:;
+- (void)removeWriter:;
+- (void)suspend;
+- (BOOL)isSuspended;
+- (void)resume;
+- (id)activeReaders;
+- (void)removeReader:;
+- (id)performWriterBlock:;
+- (void).cxx_destruct;
+- (id)pendingWriters;
+- (id)description;
+- (id)performReaderBlock:;
+- (void)performSynchronousWriterBlock:;
+- (id)initWithQueue:;
+- (id)queue;
+- (void)setSuspended:;
+- (id)pendingReaders;
+- (void)addReaderWithIdentifier:;
+- (id)activeWriters;
+@end

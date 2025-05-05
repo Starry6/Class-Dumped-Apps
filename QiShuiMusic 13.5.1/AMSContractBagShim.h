@@ -1,0 +1,32 @@
+@interface AMSContractBagShim : NSObject
+@property (nonatomic) NSObject bagContract;
+@property (nonatomic) BOOL expired;
+@property (nonatomic) NSDate expirationDate;
+@property (nonatomic) NSString profile;
+@property (nonatomic) NSString profileVersion;
+@property (nonatomic) AMSProcessInfo processInfo;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)bagContract;
+- (void)setBagContract:;
+- (id)initWithBagContract:;
+- (id)URLForKey:;
+- (BOOL)isExpired;
+- (id)boolForKey:;
+- (id)stringForKey:;
+- (id)profile;
+- (id)expirationDate;
+- (id)arrayForKey:;
+- (void).cxx_destruct;
+- (BOOL)isLoaded;
+- (id)doubleForKey:;
+- (id)profileVersion;
+- (void)createSnapshotWithCompletion:;
+- (id)integerForKey:;
+- (id)dictionaryForKey:;
+- (id)_bagValueForBagKey:bagValueType:;
+- (SEL)_selectorForBagKey:;
++ (id)_callSelector:onBagContract:;
+@end

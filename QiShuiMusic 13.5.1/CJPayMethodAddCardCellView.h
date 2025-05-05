@@ -1,0 +1,38 @@
+@interface CJPayMethodAddCardCellView : CJPayMethodTableViewWithArrowCell
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIImageView addIconImageView;
+@property (nonatomic) CJPayMethodCellTagView discountView;
+@property (nonatomic) CJPayMethodCellTagView rightDiscountView;
+@property (nonatomic) CJPayChannelBizModel model;
+@property (nonatomic) UIView seperateView;
+@property (nonatomic) MASConstraint titleLabelTopBaseSelfConstraint;
+@property (nonatomic) MASConstraint titleLabelCenterYBaseSelfConstraint;
+@property (nonatomic) MASConstraint titleLabelLeftBaseIconImageConstraint;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)titleLabelTopBaseSelfConstraint;
+- (id)addIconImageView;
+- (id)discountView;
+- (id)p_themeFontOfSize:;
+- (id)rightDiscountView;
+- (id)seperateView;
+- (void)setAddIconImageView:;
+- (void)setDiscountView:;
+- (void)setRightDiscountView:;
+- (void)setTitleLabelCenterYBaseSelfConstraint:;
+- (void)setTitleLabelLeftBaseIconImageConstraint:;
+- (void)setTitleLabelTopBaseSelfConstraint:;
+- (id)titleLabelCenterYBaseSelfConstraint;
+- (id)titleLabelLeftBaseIconImageConstraint;
+- (id)model;
+- (id)initWithStyle:reuseIdentifier:;
+- (void)setModel:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setupUI;
+- (void)updateContent:;
++ (id)calHeight:;
+@end

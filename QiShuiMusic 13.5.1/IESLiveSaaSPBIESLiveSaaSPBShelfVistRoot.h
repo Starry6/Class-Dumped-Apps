@@ -1,0 +1,2 @@
+@interface IESLiveSaaSPBIESLiveSaaSPBShelfVistRoot : GPBRootObject
+@end

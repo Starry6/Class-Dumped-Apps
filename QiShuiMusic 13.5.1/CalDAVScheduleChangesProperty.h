@@ -1,0 +1,33 @@
+@interface CalDAVScheduleChangesProperty : NSObject
+@property (nonatomic) NSMutableDictionary occurrenceChanges;
+@property (nonatomic) BOOL isCancel;
+@property (nonatomic) BOOL isReply;
+@property (nonatomic) BOOL isUpdate;
+@property (nonatomic) BOOL isCreate;
+@property (nonatomic) NSArray recurrenceIDs;
+@property (nonatomic) NSString dateStamp;
+@property (nonatomic) NSInteger actionType;
+@property (nonatomic) NSString attendeeAddress;
+@property (nonatomic) CalDAVOccurrenceChange masterChange;
+- (BOOL)isReply;
+- (id)init;
+- (int)actionType;
+- (void)setActionType:;
+- (id)dateStamp;
+- (void).cxx_destruct;
+- (BOOL)isUpdate;
+- (BOOL)isCancel;
+- (id)recurrenceIDs;
+- (id)masterChange;
+- (BOOL)isCreate;
+- (id)attendeeAddress;
+- (id)changeForOccurrence:;
+- (void)addOccurrenceChange:;
+- (void)setDateStamp:;
+- (void)setAttendeeAddress:;
+- (void)setMasterChange:;
+- (id)occurrenceChanges;
+- (void)setOccurrenceChanges:;
++ (id)debugStringForType:;
++ (id)propertyWithItem:;
+@end

@@ -1,0 +1,36 @@
+@interface ARQuickLookPreviewItem : NSObject
+@property (nonatomic) NSURL fileURL;
+@property (nonatomic) BOOL wantsStatusPillHidden;
+@property (nonatomic) BOOL forceIgnoreMuteSwitch;
+@property (nonatomic) NSURL canonicalWebPageURL;
+@property (nonatomic) BOOL allowsContentScaling;
+@property (nonatomic) NSString previewItemContentType;
+@property (nonatomic) NSURL previewItemURLForDisplay;
+@property (nonatomic) BOOL isPromisedItem;
+@property (nonatomic) double autoPlaybackPosition;
+@property (nonatomic) UIColor backgroundColorOverride;
+@property (nonatomic) NSString MIMEType;
+@property (nonatomic) NSURL alternateShareURL;
+@property (nonatomic) NSDictionary previewOptions;
+@property (nonatomic) NSDictionary previewItemDisplayState;
+@property (nonatomic) NSURL previewItemURL;
+@property (nonatomic) NSString previewItemTitle;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setFileURL:;
+- (void).cxx_destruct;
+- (id)fileURL;
+- (id)previewItemURL;
+- (id)initWithFileAtURL:;
+- (void)setCanonicalWebPageURL:;
+- (id)previewOptions;
+- (BOOL)wantsStatusPillHidden;
+- (id)canonicalWebPageURL;
+- (void)setForceIgnoreMuteSwitch:;
+- (BOOL)allowsContentScaling;
+- (void)setAllowsContentScaling:;
+- (void)setWantsStatusPillHidden:;
+- (BOOL)forceIgnoreMuteSwitch;
+@end

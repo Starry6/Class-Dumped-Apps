@@ -1,0 +1,34 @@
+@interface SSVURLBagInterpreter : NSObject
+@property (nonatomic) NSArray AMDDomains;
+@property (nonatomic) NSURL mescalCertificateURL;
+@property (nonatomic) NSURL mescalSetupURL;
+@property (nonatomic) NSURL mescalPrimingURL;
+@property (nonatomic) NSDictionary mescalSignedActions;
+@property (nonatomic) NSDictionary mescalSignedRequests;
+@property (nonatomic) NSDictionary mescalSignedResponses;
+@property (nonatomic) NSURL pastisCertificateURL;
+@property (nonatomic) NSURL pastisKeyServerURL;
+@property (nonatomic) NSString storeFrontSuffix;
+- (id)storeFrontSuffix;
+- (id)cachedValueFromBag:key:withType:updateCache:;
+- (id)initWithURLBag:;
+- (id)_valueForKey:withClass:;
+- (id)initWithSSBag:;
+- (id)pastisKeyServerURL;
+- (id)mescalPrimingURL;
+- (id)valueForURLBagKey:;
+- (id)AMDDomains;
+- (id)mescalSignaturePolicyForRequestURL:;
+- (id)URLForURLBagKey:;
+- (id)mescalSignedRequests;
+- (id)mescalCertificateURL;
+- (id)mescalSignaturePolicyForResponseURL:;
+- (void).cxx_destruct;
+- (id)mescalSetupURL;
+- (id)mescalSignedResponses;
+- (id)pastisCertificateURL;
+- (id)mescalSignedActions;
+- (BOOL)shouldSendAnonymousMachineIdentifierForURL:;
+- (id)initWithURLBagDictionary:;
+- (id)copyWithZone:;
+@end

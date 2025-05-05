@@ -1,0 +1,30 @@
+@interface IESLiveBrightnessVolumeStore : NSObject
+@property (nonatomic) BOOL screenLock;
+@property (nonatomic) q type;
+@property (nonatomic) double value;
+@property (nonatomic) BOOL adjusting;
+@property (nonatomic) <IESLiveBrightnessVolumReaction> reaction;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)beginAdjusting:;
+- (id)createAutoDismissTask;
+- (void)didSetAttachingDIContext;
+- (void)endAdjusting;
+- (BOOL)isAdjusting;
+- (BOOL)isScreenLock;
+- (void)setAdjusting:;
+- (void)setScreenLock:;
+- (void)unlockScreen;
+- (id)init;
+- (void)setType:;
+- (void)setValue:;
+- (long long)type;
+- (void).cxx_destruct;
+- (double)value;
+- (void)lockScreen;
+- (void)updateValue:;
+- (id)reaction;
+- (void)setReaction:;
+@end

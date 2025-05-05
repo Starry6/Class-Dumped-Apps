@@ -1,0 +1,32 @@
+@interface GEOMapItemInitialRequestData : PBCodable
+@property (nonatomic) BOOL hasRequestType;
+@property (nonatomic) NSInteger requestType;
+@property (nonatomic) BOOL hasPlaceRequestParameters;
+@property (nonatomic) GEOPDPlaceRequestParameters placeRequestParameters;
+- (int)requestType;
+- (BOOL)hasPlaceRequestParameters;
+- (void)readAll:;
+- (void)setRequestType:;
+- (BOOL)hasRequestType;
+- (void)setPlaceRequestParameters:;
+- (BOOL)hasGreenTeaWithValue:;
+- (id)placeRequestParameters;
+- (id)requestTypeAsString:;
+- (void)clearSensitiveFields:;
+- (void)setHasRequestType:;
+- (int)StringAsRequestType:;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
++ (BOOL)isValid:;
+@end

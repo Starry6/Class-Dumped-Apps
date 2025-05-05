@@ -1,0 +1,35 @@
+@interface VCMediaStreamManager : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)allocWithZone:;
+- (id)init;
+- (void)dealloc;
+- (id)autorelease;
+- (id)release;
+- (id)retain;
+- (void)registerBlocksForService;
+- (void)deregisterBlocksForService;
+- (unsigned long long)retainCount;
+- (id)copyWithZone:;
+- (void)vcMediaStreamDidInterruptionBegin:;
+- (void)vcMediaStreamDidInterruptionEnd:;
+- (void)vcMediaStreamServerDidDie:;
+- (void)vcMediaStreamDidRTPTimeOut:;
+- (void)vcMediaStreamDidRTCPTimeOut:;
+- (void)vcMediaStream:didReceiveRTCPPackets:;
+- (void)vcMediaStream:didReceiveDTMFEventWithDigit:;
+- (void)vcMediaStream:updateFrequencyLevel:isInputMeter:;
+- (void)vcMediaStream:didReceiveTTYCharacter:;
+- (void)vcMediaStream:didReceiveText:;
+- (void)vcMediaStream:downlinkQualityDidChange:;
+- (void)vcMediaStream:uplinkQualityDidChange:;
+- (void)vcMediaStream:didUpdateVideoConfiguration:error:dictionary:;
+- (void)pauseStreams:;
+- (id)textStreamWithStreamToken:;
+- (BOOL)addSyncSourceToVideoStreamConfig:sourceStreamToken:error:;
+- (void)stopStream:;
++ (id)defaultManager;
++ (void)addNSError:toXPCArgumentDictionary:;
+@end

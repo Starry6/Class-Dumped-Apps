@@ -1,0 +1,37 @@
+@interface PLBackgroundJobWorker : NSObject
+@property (nonatomic) NSString workerName;
+@property (nonatomic) NSString workerDetailedName;
+@property (nonatomic) PLBackgroundJobStatusCenter statusCenter;
+@property (nonatomic) PLPhotoLibraryBundle libraryBundle;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)isInterruptible;
+- (id)init;
+- (id)redactedDescription;
+- (void)stopWorkingOnItem:;
+- (id)initWithLibraryBundle:;
+- (id)workItemsNeedingProcessingInLibrary:;
+- (void)performWorkOnItem:inLibrary:completion:;
+- (id)libraryBundle;
+- (void).cxx_destruct;
+- (id)description;
+- (void)workerDidFinishWithDatabaseContext:;
+- (id)photoLibraryWithDatabaseContext:;
+- (BOOL)shouldDeferActivity;
+- (id)statusCenter;
+- (BOOL)avoidCheckingOtherWorkersIfThisWorkerHasPendingWork;
+- (BOOL)hasEnoughDiskSpaceToContinue:;
+- (void)_processNextManagedObjectInLibrary:continueRunning:allowOutsideLimiter:;
+- (void)_handleAllJobsCompleteInLibrary:allowOutsideLimiter:;
+- (id)pendingJobsInLibrary:;
+- (void)startWorkInLibrary:withWorkItemsNeedingProcessing:withCompletion:;
+- (void)stopAllWork;
+- (id)workerName;
+- (id)workerDetailedName;
+- (void)setStatusCenter:;
++ (BOOL)supportsWellKnownPhotoLibraryIdentifier:;
++ (BOOL)usesMultipleLibrariesConcurrently;
++ (long long)availableDiskSpaceForVolumeURL:;
+@end

@@ -1,0 +1,2 @@
+@interface UIWebViewInternal : NSObject
+@end

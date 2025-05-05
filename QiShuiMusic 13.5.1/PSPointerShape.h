@@ -1,0 +1,38 @@
+@interface PSPointerShape : NSObject
+@property (nonatomic) q shapeType;
+@property (nonatomic) {CGSize=dd} size;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} bounds;
+@property (nonatomic) double cornerRadius;
+@property (nonatomic) {CGPoint=dd} pinnedPoint;
+@property (nonatomic) NSString cornerCurve;
+@property (nonatomic) r^{CGPath=} path;
+@property (nonatomic) BOOL usesEvenOddFillRule;
+- (id)path;
+- (id)cornerCurve;
+- (void)dealloc;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)bounds;
+- (double)cornerRadius;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)size;
+- (id)_createMutablePathByDecodingData:;
+- (BOOL)usesEvenOddFillRule;
+- (id)pinnedPoint;
+- (id)_initWithShapeType:bounds:;
+- (long long)shapeType;
++ (BOOL)supportsSecureCoding;
++ (id)circleWithBounds:;
++ (id)roundedRectWithBounds:cornerRadius:cornerCurve:;
++ (id)customShapeWithPath:usesEvenOddFillRule:;
++ (id)elasticRoundedRectPinnedAtPoint:;
++ (id)systemShape;
++ (id)circleWithSize:;
++ (id)roundedRectWithBounds:cornerRadius:;
++ (id)roundedRectWithSize:cornerRadius:;
++ (id)customShapeWithPath:;
+@end

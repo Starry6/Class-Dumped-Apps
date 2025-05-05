@@ -1,0 +1,37 @@
+@interface VCMediaStreamSendGroup : VCMediaStreamGroup
+@property (nonatomic) I currentUplinkTargetBitrate;
+@property (nonatomic) I currentUplinkTotalBitrate;
+@property (nonatomic) I uplinkBitrateCapWifi;
+@property (nonatomic) I uplinkBitrateCapCell;
+@property (nonatomic) BOOL isSuspended;
+- (void)dealloc;
+- (id)initWithConfig:;
+- (BOOL)isSuspended;
+- (void)didStart;
+- (void)didStop;
+- (void)updateActiveMediaStreamIDs:withTargetBitrate:mediaBitrates:;
+- (id)activeStreamKeys;
+- (void)didPause:;
+- (void)setPeerSubscribedStreams:;
+- (void)setUplinkBitrateCapCell:;
+- (void)setUplinkBitrateCapWifi:;
+- (unsigned int)calculateUplinkTotalBitrateForMediaStreams:;
+- (unsigned int)currentUplinkTotalBitrate;
+- (BOOL)enableRedundancy:;
+- (unsigned int)uplinkBitrateCapWifi;
+- (unsigned int)uplinkBitrateCapCell;
+- (void)setIsSuspended:;
+- (BOOL)shouldCompoundListIgnoreStream:streamConfig:activeStreamIds:;
+- (void)updateStreamIDCompoundingWithBlock:activeStreamIds:;
+- (id)streamDescriptionForMediaStreamConfig:;
+- (BOOL)shouldSubscribeToStreamID:peerSubscribedStreams:;
+- (void)isStreamActive:isDesiredActive:peerSubscribedStreams:configStreams:;
+- (BOOL)updateUplinkStreamsForPeerSubscribedStreams:;
+- (void)updateActiveStreamsWithTargetBitrate:;
+- (void)setCurrentUplinkTargetBitrate:;
+- (void)setActiveConnection:uplinkBitrateCap:;
+- (void)updateActiveStreamsCount:;
+- (void)updateBandwidthAllocatorStreamTokenState;
+- (void)setCurrentUplinkTotalBitrate:;
+- (unsigned int)currentUplinkTargetBitrate;
+@end

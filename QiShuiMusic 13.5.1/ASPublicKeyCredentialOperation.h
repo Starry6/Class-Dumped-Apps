@@ -1,0 +1,34 @@
+@interface ASPublicKeyCredentialOperation : NSObject
+@property (nonatomic) NSUUID uuid;
+@property (nonatomic) <ASPublicKeyCredentialManagerDelegate> delegate;
+@property (nonatomic) NSString relyingPartyIdentifier;
+@property (nonatomic) _WKWebAuthenticationPanel panel;
+@property (nonatomic) NSString sourceApplicationIdentifier;
+@property (nonatomic) NSDictionary identifiersToAssertionResponses;
+@property (nonatomic) LAContext authenticatedLAContext;
+@property (nonatomic) NSError overrideError;
+@property (nonatomic) BOOL hasTornDown;
+- (id)uuid;
+- (void)setDelegate:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (id)relyingPartyIdentifier;
+- (void)setRelyingPartyIdentifier:;
+- (id)panel;
+- (id)sourceApplicationIdentifier;
+- (void)setSourceApplicationIdentifier:;
+- (id)initWithRelyingPartyIdentifier:delegate:;
+- (id)identifiersToAssertionResponses;
+- (void)mergeIdentifiersToAssertionResponses:;
+- (void)setPlatformAssertionSelectionCallback:;
+- (void)setSecurityKeyAssertionSelectionCallback:;
+- (void)selectPlatformAssertion:;
+- (void)selectSecurityKeyAssertion:;
+- (BOOL)hasTornDown;
+- (void)tearDownIfNecessary;
+- (void)setPanel:;
+- (id)authenticatedLAContext;
+- (void)setAuthenticatedLAContext:;
+- (id)overrideError;
+- (void)setOverrideError:;
+@end

@@ -1,0 +1,2 @@
+@interface HTSLiveAudioBgImageMessageRoot : GPBRootObject
+@end

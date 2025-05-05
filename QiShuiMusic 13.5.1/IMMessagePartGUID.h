@@ -1,0 +1,33 @@
+@interface IMMessagePartGUID : NSObject
+@property (nonatomic) {IMMessagePartRanges={_NSRange=QQ}{_NSRange=QQ}{_NSRange=QQ}} ranges;
+@property (nonatomic) NSString encodedMessagePartGUID;
+@property (nonatomic) NSString messageGUID;
+@property (nonatomic) NSString prefix;
+@property (nonatomic) Q partNumber;
+@property (nonatomic) {_NSRange=QQ} prefixRange;
+@property (nonatomic) {_NSRange=QQ} partNumberRange;
+@property (nonatomic) {_NSRange=QQ} messageGUIDRange;
+- (id)init;
+- (id)ranges;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (id)prefix;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)messageGUID;
+- (id)initWithEncodedMessagePartGUID:;
+- (BOOL)decodeRangesWithEncodedGuid:ranges:;
+- (id)initWithMessageGUID:prefix:partNumber:;
+- (id)initWithEncodedMessagePartGUID:messageGUID:prefix:partNumber:ranges:;
+- (id)initWithMessageGUID:prefix:;
+- (id)prefixRange;
+- (id)partNumberRange;
+- (id)messageGUIDRange;
+- (unsigned long long)partNumber;
+- (id)encodedMessagePartGUID;
++ (BOOL)supportsSecureCoding;
++ (id)encodeMessagePartGUID:prefix:;
++ (id)encodeMessagePartGUID:prefix:partNumber:;
+@end

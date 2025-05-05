@@ -1,0 +1,31 @@
+@interface EMObjectID : NSObject
+@property (nonatomic) <NSObject><NSSecureCoding><NSCopying> representedObjectID;
+@property (nonatomic) BOOL ephemeral;
+@property (nonatomic) EFStringHash stringHash;
+@property (nonatomic) NSData serializedRepresentation;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)_commonInitAsEphemeralID:representedObjectID:;
+- (id)serializedRepresentation;
+- (id)cachedSelf;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (BOOL)isEphemeral;
+- (void)encodeWithCoder:;
+- (id)initAsEphemeralID:representedObjectID:;
+- (id)initAsEphemeralID:;
+- (void).cxx_destruct;
+- (id)representedObjectID;
+- (id)description;
+- (id)stringHash;
+- (id)initWithRepresentedObjectID:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
++ (id)log;
++ (BOOL)supportsSecureCoding;
++ (id)objectIDFromSerializedRepresentation:;
++ (id)_decodableClasses;
++ (void)addDecodableClass:;
+@end

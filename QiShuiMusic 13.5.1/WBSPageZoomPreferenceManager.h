@@ -1,0 +1,31 @@
+@interface WBSPageZoomPreferenceManager : WBSPerSitePreferenceManager
+@property (nonatomic) WBSPerSitePreference pageZoomPreference;
+@property (nonatomic) WBSPerSitePreferencesSQLiteStore perSitePreferencesStore;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)preferenceNameForPreference:;
+- (id)preferences;
+- (id)valuesForPreference:;
+- (id)localizedStringForValue:inPreference:;
+- (void).cxx_destruct;
+- (id)defaultPreferenceValueForPreferenceIfNotCustomized:;
+- (id)perSitePreferencesStore;
+- (void)didUpdatePreference:toValue:forDomain:;
+- (void)removeAllPageZoomPreferences;
+- (void)getPageZoomFactorForURL:usingBlock:;
+- (id)pageZoomPreference;
+- (void)getAvailableActionsForURL:usingBlock:;
+- (void)zoomOutOnURL:completionHandler:;
+- (void)zoomInOnURL:completionHandler:;
+- (void)resetZoomLevelOnURL:completionHandler:;
+- (void)removePageZoomPreferencesForHostnames:;
+- (id)initWithPerSitePreferencesStore:;
+- (void)_getDefaultZoomStep:;
+- (void)_getZoomStepForDomain:usingBlock:;
+- (void)_incrementOrDecreaseZoomStep:forURL:completionHandler:;
+- (BOOL)_canChangePageZoom:fromStep:;
+- (double)_pageZoomStepToZoomFactor:;
++ (id)pageZoomFactors;
+@end

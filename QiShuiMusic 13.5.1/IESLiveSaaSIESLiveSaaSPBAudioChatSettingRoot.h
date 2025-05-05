@@ -1,0 +1,2 @@
+@interface IESLiveSaaSIESLiveSaaSPBAudioChatSettingRoot : GPBRootObject
+@end

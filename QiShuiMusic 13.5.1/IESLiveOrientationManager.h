@@ -1,0 +1,35 @@
+@interface IESLiveOrientationManager : NSObject
+@property (nonatomic) NSHashTable orientationObserver;
+@property (nonatomic) UIViewController rootViewController;
+@property (nonatomic) Q orientationMask;
+@property (nonatomic) BOOL isRotating;
+@property (nonatomic) BOOL isLandScape;
+@property (nonatomic) BOOL supporPortraitLandscapeAutoRotate;
+- (unsigned long long)orientationMask;
+- (void)setIsLandScape:;
+- (unsigned long long)orientationMaskFromOrientation:;
+- (void)_resizeTextWindowIfNeeded:;
+- (void)addOrientationObserver:;
+- (BOOL)ios16FullscreenOpt;
+- (BOOL)ios16OrientationOpt;
+- (BOOL)isLandScape;
+- (BOOL)isScreenRotateOptimizeEnable;
+- (id)orientationObserver;
+- (id)rectRotateOnce:forAngle:;
+- (void)removeOrientationObserver:;
+- (double)rotateAngleForOrientation:;
+- (double)rotateAnimationDurationForAngle:;
+- (void)rotateToInterfaceOrientation:completion:;
+- (void)rotateToPortrait:;
+- (void)setIsRotating:;
+- (void)setOrientationMask:;
+- (void)setOrientationObserver:;
+- (void)setSupporPortraitLandscapeAutoRotate:;
+- (BOOL)supporPortraitLandscapeAutoRotate;
+- (id)init;
+- (void)setRootViewController:;
+- (id)rootViewController;
+- (BOOL)isRotating;
+- (void).cxx_destruct;
++ (id)shared;
+@end

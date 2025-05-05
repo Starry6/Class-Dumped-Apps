@@ -1,0 +1,35 @@
+@interface IESECRelationLiveInfoModel : MTLModel
+@property (nonatomic) NSString roomId;
+@property (nonatomic) NSString anchorId;
+@property (nonatomic) NSString liveTitle;
+@property (nonatomic) IESECURLModel liveCover;
+@property (nonatomic) NSString streamData;
+@property (nonatomic) NSString roomUrl;
+@property (nonatomic) NSString popupUrl;
+@property (nonatomic) IESECRelationLiveGiftModel liveGift;
+@property (nonatomic) q liveType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)roomUrl;
+- (id)anchorId;
+- (id)liveCover;
+- (id)liveGift;
+- (id)liveTitle;
+- (long long)liveType;
+- (id)popupUrl;
+- (id)roomId;
+- (void)setAnchorId:;
+- (void)setLiveCover:;
+- (void)setLiveGift:;
+- (void)setLiveTitle:;
+- (void)setLiveType:;
+- (void)setPopupUrl:;
+- (void)setRoomId:;
+- (void)setRoomUrl:;
+- (void)setStreamData:;
+- (void).cxx_destruct;
+- (id)streamData;
++ (id)JSONKeyPathsByPropertyKey;
+@end

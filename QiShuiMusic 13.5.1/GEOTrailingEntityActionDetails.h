@@ -1,0 +1,30 @@
+@interface GEOTrailingEntityActionDetails : PBCodable
+@property (nonatomic) BOOL hasTrailingEntityType;
+@property (nonatomic) NSInteger trailingEntityType;
+@property (nonatomic) BOOL hasDisplayedString;
+@property (nonatomic) NSString displayedString;
+- (void)readAll:;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (int)trailingEntityType;
+- (void)setTrailingEntityType:;
+- (void)setHasTrailingEntityType:;
+- (BOOL)hasTrailingEntityType;
+- (id)trailingEntityTypeAsString:;
+- (int)StringAsTrailingEntityType:;
+- (BOOL)hasDisplayedString;
+- (id)displayedString;
+- (void)setDisplayedString:;
++ (BOOL)isValid:;
+@end

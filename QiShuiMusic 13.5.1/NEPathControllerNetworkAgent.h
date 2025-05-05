@@ -1,0 +1,38 @@
+@interface NEPathControllerNetworkAgent : NENetworkAgent
+@property (nonatomic) NSMutableArray predictedInterfaceArray;
+@property (nonatomic) NSMutableArray advisoryInterfaceArray;
+@property (nonatomic) NSString advisoryAgentDomain;
+@property (nonatomic) NSString advisoryAgentType;
+@property (nonatomic) BOOL weakAdvisory;
+@property (nonatomic) BOOL noAdvisoryTimer;
+@property (nonatomic) BOOL preferAdvisory;
+@property (nonatomic) BOOL isForcedAdvisory;
+- (id)copyAgentData;
+- (id)advisoryInterfaceArray;
+- (id)predictedInterfaceArray;
+- (void)setAdvisoryInterfaceArray:;
+- (void)setAssertHandler:;
+- (id)initWithAdvisoryInterface:advisoryMode:;
+- (void)setAdvisoryAgentDomain:;
+- (void)setWeakAdvisory:;
+- (BOOL)preferAdvisory;
+- (id)advisoryAgentType;
+- (void)setPreferAdvisory:;
+- (id)initWithAdvisoryAgentDomain:agentType:advisoryMode:;
+- (void)setUnassertHandler:;
+- (BOOL)assertAgentWithOptions:;
+- (void)setNoAdvisoryTimer:;
+- (void)unassertAgentWithOptions:;
+- (void)setPredictedInterfaceArray:;
+- (BOOL)weakAdvisory;
+- (BOOL)noAdvisoryTimer;
+- (void).cxx_destruct;
+- (id)advisoryAgentDomain;
+- (void)setIsForcedAdvisory:;
+- (BOOL)isForcedAdvisory;
+- (void)setAdvisoryAgentType:;
+- (void)setUpdateClientsImmediately:;
+- (BOOL)updateClientsImmediately;
++ (id)agentType;
++ (id)agentFromData:;
+@end

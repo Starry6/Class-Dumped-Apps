@@ -1,0 +1,36 @@
+@interface PLCloudSharedCommentsJob : PLCloudSharingJob
+@property (nonatomic) q jobType;
+@property (nonatomic) NSArray msASComments;
+@property (nonatomic) NSString commentGUID;
+@property (nonatomic) NSString assetGUID;
+@property (nonatomic) NSString albumGUID;
+@property (nonatomic) NSDictionary mstreamdInfoDictionary;
+- (id)initFromXPCObject:libraryServicesManager:;
+- (long long)jobType;
+- (void)run;
+- (long long)daemonOperation;
+- (void)runDaemonSide;
+- (void).cxx_destruct;
+- (id)description;
+- (void)encodeToXPCObject:;
+- (void)setJobType:;
+- (id)albumGUID;
+- (void)setAlbumGUID:;
+- (BOOL)shouldArchiveXPCToDisk;
+- (id)mstreamdInfoDictionary;
+- (void)setMstreamdInfoDictionary:;
+- (void)executeProcessServerNotificationOfCommentChanges;
+- (void)executePublishCommentToServer;
+- (void)executeDeleteCommentFromServer;
+- (id)msASComments;
+- (void)setMsASComments:;
+- (id)commentGUID;
+- (void)setCommentGUID:;
+- (id)assetGUID;
+- (void)setAssetGUID:;
++ (void)publishCommentToServer:;
++ (void)deleteSharedCommentFromServer:;
++ (void)locallyProcessAddedComments:assetGUID:albumGUID:info:;
++ (void)assetsdLocallyProcessAddedComments:assetGUID:albumGUID:info:libraryServicesManager:;
++ (void)locallyProcessDeletedComments:info:;
+@end

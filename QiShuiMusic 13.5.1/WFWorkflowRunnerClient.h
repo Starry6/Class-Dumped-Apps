@@ -1,0 +1,33 @@
+@interface WFWorkflowRunnerClient : NSObject
+@property (nonatomic) WFWorkflowRunningContext context;
+@property (nonatomic) @ progressSubscriber;
+@property (nonatomic) NSObject<OS_dispatch_queue> delegateQueue;
+@property (nonatomic) WFWorkflowRunDescriptor descriptor;
+@property (nonatomic) WFWorkflowRunRequest runRequest;
+@property (nonatomic) <WFWorkflowRunnerClientDelegate> delegate;
+@property (nonatomic) BOOL running;
+- (id)descriptor;
+- (id)context;
+- (void)setDescriptor:;
+- (void)start;
+- (void)setDelegate:;
+- (void)stop;
+- (BOOL)isRunning;
+- (id)delegateQueue;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setContext:;
+- (id)progressSubscriber;
+- (void)setProgressSubscriber:;
+- (id)initWithDescriptor:runRequest:;
+- (void)handleWorkflowRunResult:completion:;
+- (id)initWithDescriptor:runRequest:delegateQueue:;
+- (id)runWorkflowWithRequest:completion:;
+- (void)dispatchWorkflowResultHandlingWithResult:;
+- (void)handleWorkflowDidStart:;
+- (void)beginObservingProgressForWorkflowWithRunningContext:;
+- (void)stopObservingRunProgress;
+- (id)runRequest;
+- (void)setRunRequest:;
++ (id)underlyingErrorIfRunnerError:;
+@end

@@ -1,0 +1,34 @@
+@interface BMHomeKitClientBase : NSObject
+@property (nonatomic) NSDateInterval dateInterval;
+@property (nonatomic) double absoluteTimestamp;
+@property (nonatomic) double duration;
+@property (nonatomic) NSString homeUniqueIdentifier;
+@property (nonatomic) NSInteger homeOccupancy;
+@property (nonatomic) NSString source;
+@property (nonatomic) NSString clientName;
+@property (nonatomic) NSString eventCorrelationIdentifier;
+@property (nonatomic) I dataVersion;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithProtoData:;
+- (id)dateInterval;
+- (id)clientName;
+- (id)proto;
+- (id)encodeAsProto;
+- (double)absoluteTimestamp;
+- (int)homeOccupancy;
+- (unsigned int)dataVersion;
+- (id)initWithProto:;
+- (void).cxx_destruct;
+- (id)source;
+- (id)description;
+- (id)serialize;
+- (double)duration;
+- (BOOL)isEqual:;
+- (id)homeUniqueIdentifier;
+- (id)eventCorrelationIdentifier;
+- (id)initWithDateInterval:homeUniqueIdentifier:homeOccupancy:source:clientName:eventCorrelationIdentifier:;
++ (id)eventWithData:dataVersion:;
+@end

@@ -1,0 +1,31 @@
+@interface ASDPostBulletinRequestOptions : ASDRequestOptions
+@property (nonatomic) NSString actionButtonTitle;
+@property (nonatomic) NSURL actionButtonURL;
+@property (nonatomic) NSDate creationDate;
+@property (nonatomic) Q destinations;
+@property (nonatomic) NSURL launchURL;
+@property (nonatomic) NSString message;
+@property (nonatomic) NSString recordID;
+@property (nonatomic) NSString title;
+- (unsigned long long)destinations;
+- (void)setLaunchURL:;
+- (void)setMessage:;
+- (void)setCreationDate:;
+- (void)setTitle:;
+- (id)initWithCoder:;
+- (void)setRecordID:;
+- (id)launchURL;
+- (void)encodeWithCoder:;
+- (id)title;
+- (id)message;
+- (id)recordID;
+- (void).cxx_destruct;
+- (void)setDestinations:;
+- (id)copyWithZone:;
+- (id)creationDate;
+- (void)setActionButtonTitle:;
+- (id)actionButtonTitle;
+- (id)actionButtonURL;
+- (void)setActionButtonURL:;
++ (BOOL)supportsSecureCoding;
+@end

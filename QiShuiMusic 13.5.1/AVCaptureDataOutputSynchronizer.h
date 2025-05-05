@@ -1,0 +1,35 @@
+@interface AVCaptureDataOutputSynchronizer : NSObject
+@property (nonatomic) NSArray dataOutputs;
+@property (nonatomic) <AVCaptureDataOutputSynchronizerDelegate> delegate;
+@property (nonatomic) NSObject<OS_dispatch_queue> delegateCallbackQueue;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)dealloc;
+- (id)delegateCallbackQueue;
+- (id)delegate;
+- (void)captureOutput:didOutputSampleBuffer:fromConnection:;
+- (void)captureOutput:didDropSampleBuffer:fromConnection:;
+- (void)setDelegate:queue:;
+- (void)depthDataOutput:didOutputDepthData:timestamp:connection:;
+- (void)depthDataOutput:didDropDepthData:timestamp:connection:reason:;
+- (void)visionDataOutput:didOutputVisionDataPixelBuffer:timestamp:connection:;
+- (void)visionDataOutput:didDropVisionDataPixelBufferForTimestamp:connection:reason:;
+- (void)cameraCalibrationDataOutput:didOutputCameraCalibrationData:timestamp:connection:;
+- (void)cameraCalibrationDataOutput:didDropCameraCalibrationDataAtTimestamp:connection:reason:;
+- (void)pointCloudDataOutput:didOutputPointCloudData:timestamp:connection:;
+- (void)pointCloudDataOutput:didDropPointCloudData:timestamp:connection:reason:;
+- (id)dataOutputs;
+- (void)captureOutput:didOutputMetadataObjectCollections:fromConnection:;
+- (id)initWithDataOutputs:;
+- (int)_computedLeaderSynchronizedDataQueueMaxDepthForDataOutputs:;
+- (void)_assignTimestampAdjustmentQueueToDataOutputStorageWithCommonProvenance;
+- (void)_overrideDataOutputDelegatesForDelegateCallbackQueue:;
+- (void)_appendSynchronizedData:forCaptureOutput:;
+- (void)_dispatchRipenedSynchronizedData;
+- (void)_adjustSynchronizedDataTimestamps;
+- (BOOL)_allFollowerSynchronizedDataOutputsContainTimestampEqualToOrGreaterThanLeaderTimestamp:;
+- (id)_earliestFollowerSynchronizedDataQueueTimestamp;
+- (void)_dispatchSynchronizedDataWithTimestamp:;
+@end

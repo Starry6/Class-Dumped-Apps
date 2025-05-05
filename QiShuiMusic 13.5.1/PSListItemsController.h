@@ -1,0 +1,24 @@
+@interface PSListItemsController : PSListController
+- (id)specifiers;
+- (void)dealloc;
+- (id)tableView:cellForRowAtIndexPath:;
+- (void)suspend;
+- (void)willEnterForeground;
+- (void)viewWillDisappear:;
+- (void)tableView:didSelectRowAtIndexPath:;
+- (void).cxx_destruct;
+- (void)viewWillAppear:;
+- (void)viewDidLoad;
+- (void)didLock;
+- (void)prepareSpecifiersMetadata;
+- (void)scrollToSelectedCell;
+- (void)setRowToSelect;
+- (void)setValueForSpecifier:defaultValue:;
+- (void)listItemSelected:;
+- (void)_addStaticText:;
+- (id)itemsFromParent;
+- (id)itemsFromDataSource;
+- (id)identifierForValue:;
+- (BOOL)isRestrictionList;
+- (void)setIsRestrictionList:;
+@end

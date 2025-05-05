@@ -1,0 +1,33 @@
+@interface IESLivePushUserProfileParamsModel : NSObject
+@property (nonatomic) NSString uID;
+@property (nonatomic) NSString secUID;
+@property (nonatomic) BOOL animated;
+@property (nonatomic) NSDictionary trackInfo;
+@property (nonatomic) BOOL targetIsAnchor;
+@property (nonatomic) BOOL roomUseHostInfo;
+@property (nonatomic) NSString currentOpenID;
+@property (nonatomic) NSNumber roomID;
+@property (nonatomic) HTSEventContext trackContext;
+@property (nonatomic) NSDictionary extra;
+- (BOOL)roomUseHostInfo;
+- (id)currentOpenID;
+- (id)secUID;
+- (void)setCurrentOpenID:;
+- (void)setExtra:;
+- (void)setRoomUseHostInfo:;
+- (void)setSecUID:;
+- (void)setTargetIsAnchor:;
+- (void)setTrackContext:;
+- (BOOL)targetIsAnchor;
+- (id)trackContext;
+- (id)extra;
+- (void)setAnimated:;
+- (BOOL)animated;
+- (void).cxx_destruct;
+- (id)uID;
+- (void)setUID:;
+- (id)roomID;
+- (void)setRoomID:;
+- (id)trackInfo;
+- (void)setTrackInfo:;
+@end

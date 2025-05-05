@@ -1,0 +1,38 @@
+@interface AVCStreamInput : NSObject
+@property (nonatomic) NSObject<OS_dispatch_queue> xpcQueue;
+@property (nonatomic) q streamInputID;
+@property (nonatomic) r^{opaqueCMFormatDescription=} formatDescription;
+@property (nonatomic) r^{__CFAllocator=} sampleBufferAllocator;
+- (id)formatDescription;
+- (void)dealloc;
+- (id)xpcQueue;
+- (int)setupXPCConnection;
+- (id)delegate;
+- (id)description;
+- (void)resetStats;
+- (void)didStart;
+- (void)didStop;
+- (void)didServerDie;
+- (void)deregisterBlocksForNotifications;
+- (void)didResume;
+- (void)registerService:weakSelf:block:;
+- (void)didSuspend;
+- (id)initWithDelegate:delegateQueue:format:options:error:;
+- (id)formatDescriptionString;
+- (int)processOptions:;
+- (int)processFormat:;
+- (int)setupDelegate:delegateQueue:;
+- (int)setupXPCQueue;
+- (id)newRemoteQueueWithServerPid:;
+- (void)tearDownRemoteQueue;
+- (void)tearDownConnectionWithTerminateMessage:;
+- (int)resetXPCConnection;
+- (int)createAndAddRemoteQueueToXPCDictionary:;
+- (int)initializeServerSideInputStream;
+- (void)registerDidServerDieBlock:;
+- (void)registerBlocksForNotification;
+- (BOOL)sendSampleBufferOverXPC:error:;
+- (BOOL)pushSampleBuffer:error:;
+- (long long)streamInputID;
+- (id)sampleBufferAllocator;
+@end

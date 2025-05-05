@@ -1,0 +1,30 @@
+@interface BLSAlwaysOnTimelineEntry : NSObject
+@property (nonatomic) q requestedFidelity;
+@property (nonatomic) BOOL animated;
+@property (nonatomic) double duration;
+@property (nonatomic) <NSObject> userObject;
+@property (nonatomic) <NSObject><NSCopying> timelineIdentifier;
+@property (nonatomic) NSDate presentationTime;
+- (void)setAnimated:;
+- (BOOL)isAnimated;
+- (id)userObject;
+- (unsigned long long)hash;
+- (id)debugDescription;
+- (void)setUserObject:;
+- (void)setDuration:;
+- (long long)compare:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)mutableCopyWithZone:;
+- (double)duration;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)presentationTime;
+- (long long)requestedFidelity;
+- (void)setRequestedFidelity:;
+- (id)initWithPresentationTime:requestedFidelity:animated:duration:timelineIdentifier:userObject:;
+- (id)timelineIdentifier;
+- (void)setTimelineIdentifier:;
++ (id)loggingStringForPresentationTime:;
++ (id)shortLoggingStringForPresentationTime:;
+@end

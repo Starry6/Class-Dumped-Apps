@@ -1,0 +1,31 @@
+@interface FPDownloadOperation : FPActionOperation
+@property (nonatomic) @? _t_patchActionOperationInfo;
+@property (nonatomic) BOOL recursively;
+@property (nonatomic) @? downloadCompletionBlock;
+- (id)initWithItems:;
+- (void).cxx_destruct;
+- (id)fp_prettyDescription;
+- (void)finishWithResult:error:;
+- (void)completedWithResult:error:;
+- (BOOL)recursively;
+- (void)setRecursively:;
+- (void)actionMain;
+- (void)presendNotifications;
+- (void)remoteOperationCreatedRoot:resultingItem:completion:;
+- (void)remoteOperationCompletedRoot:resultingItem:error:completion:;
+- (void)remoteOperationProgressesAreReady;
+- (void)remoteOperationFinishedSendingPastUpdates;
+- (void)_recomputeDownloadInfoIfNecessary;
+- (void)_completedWithResultsByRoot:errorsByRoot:error:;
+- (id)initWithRemoteOperation:info:;
+- (void)_runWithRemoteOperation:;
+- (void)_updateProgressWithUpdatedFileCountForItem:;
+- (void)_setupParentProgress;
+- (void)_updateParentProgressForItem:withUnitCount:;
+- (void)_removeProgressWithItemID:;
+- (void)_retrieveChildProgressForItem:childProxies:parentSetup:;
+- (id)downloadCompletionBlock;
+- (void)setDownloadCompletionBlock:;
+- (id)_t_patchActionOperationInfo;
+- (void)set_t_patchActionOperationInfo:;
+@end

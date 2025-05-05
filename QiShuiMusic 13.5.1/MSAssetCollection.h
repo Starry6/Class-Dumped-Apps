@@ -1,0 +1,37 @@
+@interface MSAssetCollection : NSObject
+@property (nonatomic) NSString assetCollectionID;
+@property (nonatomic) NSString ctag;
+@property (nonatomic) MSAsset masterAsset;
+@property (nonatomic) NSData masterAssetHash;
+@property (nonatomic) NSArray derivedAssets;
+@property (nonatomic) NSString fileName;
+@property (nonatomic) BOOL wasDeleted;
+@property (nonatomic) NSDate serverUploadedDate;
+@property (nonatomic) q initialFailureDate;
+- (id)fileName;
+- (id)ctag;
+- (BOOL)wasDeleted;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (void)setCtag:;
+- (void)setWasDeleted:;
+- (id)description;
+- (void)setFileName:;
+- (BOOL)isEqual:;
+- (void)setAssetCollectionID:;
+- (id)initWithMasterAsset:fileName:derivedAssets:;
+- (id)masterAssetHash;
+- (id)derivedAssets;
+- (void)setDerivedAssets:;
+- (id)assetCollectionID;
+- (id)masterAsset;
+- (void)setMasterAsset:;
+- (id)serverUploadedDate;
+- (void)setServerUploadedDate:;
+- (long long)initialFailureDate;
+- (void)setInitialFailureDate:;
++ (BOOL)supportsSecureCoding;
++ (id)collectionWithMasterAsset:fileName:derivedAssets:;
++ (id)collectionWithMasterAsset:fileName:;
+@end

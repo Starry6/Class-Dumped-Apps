@@ -1,0 +1,30 @@
+@interface TTCheckVersionConfigMaker : NSObject
+@property (nonatomic) NSNumber callTypeValue;
+@property (nonatomic) BOOL intranetGuideEnabledValue;
+@property (nonatomic) BOOL normalPopupEnabledValue;
+@property (nonatomic) NSArray wifiListValue;
+@property (nonatomic) NSDictionary otherParamsValue;
+@property (nonatomic) @? callType;
+@property (nonatomic) @? normalPopupEnabled;
+@property (nonatomic) @? intranetGuideEnabled;
+@property (nonatomic) @? wifiList;
+@property (nonatomic) @? extranetUpdateEnabled;
+@property (nonatomic) @? otherParams;
+- (id)callTypeValue;
+- (id)extranetUpdateEnabled;
+- (id)intranetGuideEnabled;
+- (BOOL)intranetGuideEnabledValue;
+- (id)normalPopupEnabled;
+- (BOOL)normalPopupEnabledValue;
+- (id)otherParams;
+- (id)otherParamsValue;
+- (void)setCallTypeValue:;
+- (void)setIntranetGuideEnabledValue:;
+- (void)setNormalPopupEnabledValue:;
+- (void)setOtherParamsValue:;
+- (void)setWifiListValue:;
+- (id)wifiList;
+- (id)wifiListValue;
+- (void).cxx_destruct;
+- (id)callType;
+@end

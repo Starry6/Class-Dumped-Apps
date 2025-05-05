@@ -1,0 +1,31 @@
+@interface IESLivePKRecordFilterView : UIView
+@property (nonatomic) UIView maskView;
+@property (nonatomic) UICollectionView collectionView;
+@property (nonatomic) NSArray filterTabArray;
+@property (nonatomic) double filterWidth;
+@property (nonatomic) q selectedCategoryIndex;
+@property (nonatomic) @? foldedBlock;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setFilterWidth:;
+- (void)setFoldedBlock:;
+- (id)filterTabArray;
+- (double)filterWidth;
+- (id)foldedBlock;
+- (void)foldedFilterView;
+- (id)initWithTabArray:width:;
+- (void)setFilterTabArray:;
+- (id)maskView;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (void)setCollectionView:;
+- (void).cxx_destruct;
+- (id)collectionView;
+- (void)setMaskView:;
+- (void)setupViews;
+- (void)setSelectedCategoryIndex:;
+- (long long)selectedCategoryIndex;
+@end

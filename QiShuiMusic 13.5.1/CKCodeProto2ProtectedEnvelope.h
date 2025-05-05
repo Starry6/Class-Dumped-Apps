@@ -1,0 +1,31 @@
+@interface CKCodeProto2ProtectedEnvelope : PBCodable
+@property (nonatomic) BOOL hasEncrypted;
+@property (nonatomic) NSData encrypted;
+@property (nonatomic) BOOL hasValue;
+@property (nonatomic) CKCodeProto2Any value;
+@property (nonatomic) BOOL hasContents;
+@property (nonatomic) NSInteger contents;
+- (BOOL)hasValue;
+- (int)contents;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)setEncrypted:;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (id)encrypted;
+- (void)setValue:;
+- (void)setContents:;
+- (BOOL)hasContents;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)value;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)contentsAsString:;
+- (int)StringAsContents:;
+- (BOOL)hasEncrypted;
+- (void)setHasContents:;
+- (void)clearOneofValuesForContents;
+@end

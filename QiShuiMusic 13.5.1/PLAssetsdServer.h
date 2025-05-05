@@ -1,0 +1,38 @@
+@interface PLAssetsdServer : NSObject
+@property (nonatomic) NSInteger systemLibraryChangeToken;
+@property (nonatomic) {?=AIAIAIAI} resourceCacheMetrics;
+@property (nonatomic) <PLPhotoLibraryDaemonService> syndicationSpotlightReceiver;
+@property (nonatomic) <PLPhotoLibraryDaemonService> syndicationPreferencesListener;
+@property (nonatomic) <PLPhotoLibraryDaemonService> searchSpotlightReciever;
+@property (nonatomic) BOOL isConfiguredForUnitTesting;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)addService:;
+- (id)init;
+- (id)stateCaptureDictionary;
+- (void)handleInterruption:;
+- (void)start;
+- (id)resourceCacheMetrics;
+- (void)handleInvalidation:;
+- (id)syndicationPreferencesListener;
+- (void)stopObservingSystemLibraryChanges;
+- (void)setSearchSpotlightReciever:;
+- (id)searchSpotlightReciever;
+- (void)logStatus;
+- (void)setSystemLibraryChangeToken:;
+- (void)_checkInWithLaunchd;
+- (id)syndicationSpotlightReceiver;
+- (BOOL)listener:shouldAcceptNewConnection:;
+- (void).cxx_destruct;
+- (int)systemLibraryChangeToken;
+- (void)_startObservingSystemLibraryChanges;
+- (void)removeService:;
+- (void)setSyndicationSpotlightReceiver:;
+- (void)_collectCacheMetricsDataFromService:;
+- (BOOL)isConfiguredForUnitTesting;
+- (void)setSyndicationPreferencesListener:;
+- (void)setResourceCacheMetrics:;
++ (id)sharedServer;
+@end

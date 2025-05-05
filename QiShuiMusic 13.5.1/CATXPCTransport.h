@@ -1,0 +1,30 @@
+@interface CATXPCTransport : CATTransport
+@property (nonatomic) NSInteger auditSessionIdentifier;
+@property (nonatomic) NSInteger processIdentifier;
+@property (nonatomic) I effectiveUserIdentifier;
+@property (nonatomic) I effectiveGroupIdentifier;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)invalidateConnection;
+- (int)auditSessionIdentifier;
+- (unsigned int)effectiveGroupIdentifier;
+- (id)init;
+- (void)resumeConnection;
+- (void)dealloc;
+- (void)processMessage:completion:;
+- (id)initWithXPCConnection:;
+- (id)valueForEntitlement:;
+- (void)setUpConnection;
+- (void)suspendConnection;
+- (void)transportSendMessageOperation:processMessage:;
+- (void)tearDownConnection;
+- (void)didInvalidate;
+- (BOOL)boolValueForEntitlement:;
+- (int)processIdentifier;
+- (void).cxx_destruct;
+- (id)operationToSendMessage:;
+- (unsigned int)effectiveUserIdentifier;
++ (id)new;
+@end

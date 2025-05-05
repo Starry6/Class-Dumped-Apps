@@ -1,0 +1,35 @@
+@interface SISchemaDialogOutput : SISchemaInstrumentationMessage
+@property (nonatomic) NSString viewID;
+@property (nonatomic) BOOL hasViewID;
+@property (nonatomic) SISchemaRedactableString spokenDialogOutput;
+@property (nonatomic) BOOL hasSpokenDialogOutput;
+@property (nonatomic) SISchemaRedactableString displayedDialogOutput;
+@property (nonatomic) BOOL hasDisplayedDialogOutput;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (id)viewID;
+- (void).cxx_destruct;
+- (id)applySensitiveConditionsPolicy:;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (BOOL)hasViewID;
+- (void)deleteViewID;
+- (BOOL)hasSpokenDialogOutput;
+- (void)deleteSpokenDialogOutput;
+- (BOOL)hasDisplayedDialogOutput;
+- (void)deleteDisplayedDialogOutput;
+- (void)setViewID:;
+- (id)spokenDialogOutput;
+- (void)setSpokenDialogOutput:;
+- (id)displayedDialogOutput;
+- (void)setDisplayedDialogOutput:;
+- (void)setHasViewID:;
+- (void)setHasSpokenDialogOutput:;
+- (void)setHasDisplayedDialogOutput:;
+@end

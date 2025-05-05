@@ -1,0 +1,38 @@
+@interface MNNavigationProxyUpdater : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setDisplayedStepIndex:;
+- (void)setIsConnectedToCarplay:;
+- (id)init;
+- (void).cxx_destruct;
+- (void)setIsNavigatingInLowGuidance:;
+- (void)navigationSession:didStartWithRoute:navigationType:isResumingMultipointRoute:isReconnecting:;
+- (void)navigationSession:didChangeNavigationState:;
+- (void)navigationSession:didStopWithReason:;
+- (void)navigationSession:didUpdateMatchedLocation:;
+- (void)navigationSession:matchedToStepIndex:segmentIndex:;
+- (void)navigationSession:currentStepIndex:didUpdateDistanceUntilManeuver:timeUntilManeuver:;
+- (void)navigationSession:didUpdateStepNameInfo:;
+- (void)navigationSession:didArriveAtWaypoint:endOfLegIndex:;
+- (void)navigationSession:didResumeNavigatingFromWaypoint:endOfLegIndex:reason:;
+- (void)navigationSession:didUpdateDisplayETA:remainingDistance:batteryChargeInfo:;
+- (void)navigationSession:didUpdateETAResponseForRoute:;
+- (void)navigationSession:didReroute:withLocation:withAlternateRoutes:rerouteReason:;
+- (void)navigationSession:didSwitchToNewTransportType:newRoute:;
+- (void)navigationSession:didUpdateDestination:;
+- (void)navigationSession:didRerouteWithWaypoints:;
+- (void)navigationSession:didInsertWaypoint:;
+- (void)navigationSession:didRemoveWaypoint:;
+- (void)navigationSession:currentStepIndex:didUpdateDistanceUntilSign:timeUntilSign:;
+- (void)navigationSession:willAnnounce:inSeconds:;
+- (void)navigationSession:triggerHaptics:;
+- (void)navigationSession:displayManeuverAlertForAnnouncementStage:;
+- (void)navigationSession:didEnableGuidancePrompts:;
+- (void)setVoiceGuidance:;
+- (void)enteredRoutePreviewWithTransportType:;
+- (void)navigationSessionStopped:;
+- (void)updateClusteredSectionSelectedRideForNavigationSession:;
+- (int)_geoNavigationTypeForNavigationType:;
+@end

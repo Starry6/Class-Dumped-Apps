@@ -1,0 +1,31 @@
+@interface CNDescriptionBuilder : NSObject
+@property (nonatomic) NSString separator;
+- (id)appendName:vCardOutputVersionValue:;
+- (void)setSeparator:;
+- (id)init;
+- (id)appendName:intValue:;
+- (id)appendName:doubleValue:;
+- (id)build;
+- (id)appendName:boolValue:;
+- (id)initWithObject:;
+- (id)appendName:unsignedInteger:;
+- (id)appendName:pointerValue:;
+- (id)appendKeys:;
+- (id)appendObject:withName:;
+- (id)appendName:integerValue:;
+- (id)appendNamesAndObjects:;
+- (id)appendName:object:;
+- (void).cxx_destruct;
+- (void)tryAppendKey:;
+- (id)appendKey:;
+- (id)appendName:selector:;
+- (id)separator;
+- (id)appendableDescriptionOfValue:;
+- (id)appendName:u_int64_t:;
+- (id)appendName:timeInterval:;
+- (id)appendName:range:;
+- (id)appendNamesAndObjects:args:;
++ (id)descriptionForBool:;
++ (id)descriptionForObject:withNamesAndObjects:;
++ (id)descriptionBuilderWithObject:;
+@end

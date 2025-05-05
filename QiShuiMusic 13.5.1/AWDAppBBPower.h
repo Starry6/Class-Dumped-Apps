@@ -1,0 +1,31 @@
+@interface AWDAppBBPower : PBCodable
+@property (nonatomic) BOOL hasRAT;
+@property (nonatomic) NSInteger rAT;
+@property (nonatomic) BOOL hasBundleName;
+@property (nonatomic) NSString bundleName;
+@property (nonatomic) BOOL hasPowerMicroWatt;
+@property (nonatomic) I powerMicroWatt;
+- (void)dealloc;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void)setBundleName:;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)bundleName;
+- (id)copyWithZone:;
+- (BOOL)hasBundleName;
+- (int)rAT;
+- (void)setRAT:;
+- (void)setHasRAT:;
+- (BOOL)hasRAT;
+- (id)rATAsString:;
+- (int)StringAsRAT:;
+- (void)setPowerMicroWatt:;
+- (void)setHasPowerMicroWatt:;
+- (BOOL)hasPowerMicroWatt;
+- (unsigned int)powerMicroWatt;
+@end

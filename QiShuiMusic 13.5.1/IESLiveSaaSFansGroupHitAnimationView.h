@@ -1,0 +1,32 @@
+@interface IESLiveSaaSFansGroupHitAnimationView : UIView
+@property (nonatomic) UILabel topTitleLabel;
+@property (nonatomic) UILabel bottomTitleLabel;
+@property (nonatomic) IESLiveSaaSFansGroupGradientAnimationView gradientAnimtaionView;
+@property (nonatomic) UIView backGroundView;
+@property (nonatomic) CAGradientLayer gradientLayer;
+@property (nonatomic) LOTAnimationView heartLottieView;
+@property (nonatomic) q style;
+- (id)heartLottieView;
+- (id)backGroundView;
+- (id)fansGroupHitTitle:;
+- (id)gradientAnimtaionView;
+- (void)hideTextLabel;
+- (void)p_setUpUI;
+- (void)setBackGroundView:;
+- (void)setGradientAnimtaionView:;
+- (void)setHeartLottieView:;
+- (void)startAnimationWithConfig:;
+- (void)startHeartFlutter;
+- (void)stopHeartFlutter;
+- (id)init;
+- (id)gradientLayer;
+- (void)setStyle:;
+- (void).cxx_destruct;
+- (long long)style;
+- (void)setGradientLayer:;
+- (void)finishAnimation;
+- (id)topTitleLabel;
+- (void)setTopTitleLabel:;
+- (id)bottomTitleLabel;
+- (void)setBottomTitleLabel:;
+@end

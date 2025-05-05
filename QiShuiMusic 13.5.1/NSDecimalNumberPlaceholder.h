@@ -1,0 +1,30 @@
+@interface NSDecimalNumberPlaceholder : NSDecimalNumber
+- (id)initWithUnsignedInteger:;
+- (id)initWithChar:;
+- (id)init;
+- (id)initWithUnsignedLong:;
+- (id)initWithString:;
+- (id)initWithLong:;
+- (id)initWithString:locale:;
+- (id)initWithUnsignedChar:;
+- (id)initWithDecimal:;
+- (id)initWithCoder:;
+- (id)initWithUnsignedLongLong:;
+- (id)autorelease;
+- (id)release;
+- (id)initWithBool:;
+- (id)initWithUnsignedShort:;
+- (id)retain;
+- (id)initWithDouble:;
+- (id)initWithFloat:;
+- (id)initWithShort:;
+- (id)initWithInt:;
+- (id)initWithInteger:;
+- (id)initWithLongLong:;
+- (id)initWithUnsignedInt:;
+- (Class)classForCoder;
+- (unsigned long long)retainCount;
+- (id)initWithMantissa:exponent:isNegative:;
++ (id)allocWithZone:;
++ (BOOL)supportsSecureCoding;
+@end

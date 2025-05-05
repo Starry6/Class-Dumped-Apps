@@ -1,0 +1,2 @@
+@interface GPBFieldMaskRoot : GPBRootObject
+@end

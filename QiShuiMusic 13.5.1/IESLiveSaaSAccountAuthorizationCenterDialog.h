@@ -1,0 +1,31 @@
+@interface IESLiveSaaSAccountAuthorizationCenterDialog : IESLiveSaaSPopUpView
+@property (nonatomic) IESLiveSaaSCenterDialogModel model;
+@property (nonatomic) UIView centerContainer;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UILabel contentLabel;
+@property (nonatomic) UIButton cancelBtn;
+@property (nonatomic) UIButton authBtn;
+@property (nonatomic) @? rightButtonBlock;
+@property (nonatomic) @? leftButtonBlock;
+- (id)leftButtonBlock;
+- (id)authBtn;
+- (void)leftButtonClick;
+- (id)cancelBtn;
+- (id)initWithFrame:withModel:;
+- (id)rightButtonBlock;
+- (void)rightButtonClick;
+- (void)setAuthBtn:;
+- (void)setCancelBtn:;
+- (void)setLeftButtonBlock:;
+- (void)setRightButtonBlock:;
+- (id)model;
+- (void)setModel:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (void)setupUI;
+- (id)contentLabel;
+- (void)setContentLabel:;
+- (id)centerContainer;
+- (void)setCenterContainer:;
+@end

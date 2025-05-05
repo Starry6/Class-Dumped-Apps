@@ -1,0 +1,31 @@
+@interface IESAudioConfig : NSObject
+@property (nonatomic) q bitrate;
+@property (nonatomic) BOOL useHEAAC;
+@property (nonatomic) BOOL needCallback;
+@property (nonatomic) q channels;
+@property (nonatomic) BOOL useFloat;
+@property (nonatomic) BOOL useExtAudio;
+@property (nonatomic) BOOL useWav;
+@property (nonatomic) BOOL useUnitPrepare;
+@property (nonatomic) Q mode;
+- (void)setUseExtAudio:;
+- (BOOL)needCallback;
+- (void)setNeedCallback:;
+- (void)setUseFloat:;
+- (void)setUseHEAAC:;
+- (void)setUseUnitPrepare:;
+- (void)setUseWav:;
+- (BOOL)useExtAudio;
+- (BOOL)useFloat;
+- (BOOL)useHEAAC;
+- (BOOL)useUnitPrepare;
+- (BOOL)useWav;
+- (long long)channels;
+- (id)init;
+- (long long)bitrate;
+- (void)setChannels:;
+- (id)description;
+- (unsigned long long)mode;
+- (void)setMode:;
+- (void)setBitrate:;
+@end

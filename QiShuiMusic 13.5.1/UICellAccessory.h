@@ -1,0 +1,36 @@
+@interface UICellAccessory : NSObject
+@property (nonatomic) BOOL isSystemType;
+@property (nonatomic) q systemType;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) UIColor backgroundColor;
+@property (nonatomic) q displayedState;
+@property (nonatomic) BOOL hidden;
+@property (nonatomic) double reservedLayoutWidth;
+@property (nonatomic) UIColor tintColor;
+- (id)_identifier;
+- (id)init;
+- (long long)_systemType;
+- (long long)_systemTypePlacementForHeader:;
+- (BOOL)_canDirectlyUpdateExistingAccessoryViewFrom:;
+- (double)reservedLayoutWidth;
+- (id)tintColor;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (void)setReservedLayoutWidth:;
+- (void).cxx_destruct;
+- (void)setTintColor:;
+- (void)setHidden:;
+- (id)_backgroundColor;
+- (long long)_compare:;
+- (BOOL)isHidden;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)_isSystemType;
+- (void)_setBackgroundColor:;
+- (long long)_defaultPlacementForHeader:;
+- (BOOL)_isDisplayedForEditingState:;
+- (long long)displayedState;
+- (void)setDisplayedState:;
++ (BOOL)supportsSecureCoding;
+@end

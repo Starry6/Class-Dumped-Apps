@@ -1,0 +1,2 @@
+@interface IESLiveSaaSPBIESLiveSaaSPBBattleAutoMatchRoot : GPBRootObject
+@end

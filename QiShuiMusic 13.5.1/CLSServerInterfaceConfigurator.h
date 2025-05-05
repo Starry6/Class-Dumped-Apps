@@ -1,0 +1,26 @@
+@interface CLSServerInterfaceConfigurator : NSObject
+- (void)configureDashboardAppAPI;
+- (void)configureAuthorizationStatusAPI;
+- (id)init;
+- (void)configureFeatureAvailabilityAPI;
+- (void)configureContextAPI;
+- (void)configureCollaborationStateAPI;
+- (void)configureProgressReportingAPI;
+- (void)configureHandoutAPI;
+- (void)configureAdminRequestAPI;
+- (void)configureQueryAPI;
+- (void)configureAppsAPI;
+- (void)configureRelayRequestAPI;
+- (void)configureUtilityServerAPI;
+- (void)configureSaveAPI;
+- (id)configureServerInterface;
+- (void).cxx_destruct;
+- (void)configureStudentActivityAPI;
+- (void)configureDataObserverAPI;
+- (void)configureCollectionsAPI;
+- (void)configureAssetSupportAPI;
+- (void)configureSurveyAnswerAPI;
+- (void)configureInsightEventsAPI;
+- (void)configureClassAPI;
+- (void)configureUserNotificationAPI;
+@end

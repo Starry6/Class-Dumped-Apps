@@ -1,0 +1,30 @@
+@interface AAFXPCSession : NSObject
+@property (nonatomic) @ _proxy;
+@property (nonatomic) NSUUID identifier;
+@property (nonatomic) NSObject<OS_dispatch_queue> serialQueue;
+@property (nonatomic) AAFXPCSessionConfig remoteServiceConfig;
+@property (nonatomic) <AAFXPCSessionDelegate> delegate;
+@property (nonatomic) NSXPCConnection connection;
+- (void)setDelegate:;
+- (id)identifier;
+- (void)destroyXPCConnection;
+- (id)serialQueue;
+- (void)set_proxy:;
+- (void)suspend;
+- (id)_proxy;
+- (void)resume;
+- (id)delegate;
+- (id)connection;
+- (void).cxx_destruct;
+- (void)setConnection:;
+- (void)setSerialQueue:;
+- (void)invalidate;
+- (void)setIdentifier:;
+- (id)remoteServiceProxyWithErrorHandler:;
+- (id)initWithRemoteServiceConfig:delegate:;
+- (id)remoteServiceProxy;
+- (id)syncRemoteServiceProxy;
+- (id)syncRemoteServiceProxyWithErrorHandler:;
+- (id)remoteServiceConfig;
+- (void)setRemoteServiceConfig:;
+@end

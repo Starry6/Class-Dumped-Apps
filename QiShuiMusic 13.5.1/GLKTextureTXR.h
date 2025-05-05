@@ -1,0 +1,35 @@
+@interface GLKTextureTXR : NSObject
+@property (nonatomic) NSString label;
+@property (nonatomic) I GLTextureName;
+@property (nonatomic) I target;
+@property (nonatomic) I mipmapLevelCount;
+@property (nonatomic) I arrayLength;
+@property (nonatomic) I width;
+@property (nonatomic) I height;
+@property (nonatomic) I depth;
+@property (nonatomic) BOOL hasAlpha;
+@property (nonatomic) BOOL lossyCompressedSource;
+- (unsigned int)arrayLength;
+- (unsigned int)mipmapLevelCount;
+- (unsigned int)depth;
+- (void)dealloc;
+- (void)setMipmapLevelCount:;
+- (void)setWidth:;
+- (void)setLabel:;
+- (id)label;
+- (unsigned int)height;
+- (void)setTarget:;
+- (void)setDepth:;
+- (unsigned int)width;
+- (void)setHeight:;
+- (unsigned int)target;
+- (void)setArrayLength:;
+- (void)setHasAlpha:;
+- (BOOL)hasAlpha;
+- (id)initWithTexture:API:options:error:;
+- (BOOL)uploadToGLTexture:error:;
+- (unsigned int)GLTextureName;
+- (void)setGLTextureName:;
+- (BOOL)lossyCompressedSource;
+- (void)setLossyCompressedSource:;
+@end

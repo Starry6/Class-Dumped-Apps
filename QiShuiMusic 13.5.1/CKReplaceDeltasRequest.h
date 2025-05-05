@@ -1,0 +1,30 @@
+@interface CKReplaceDeltasRequest : NSObject
+@property (nonatomic) CKMergeableValueID valueID;
+@property (nonatomic) NSArray deltaIdentifiersToReplace;
+@property (nonatomic) NSArray replacementDeltas;
+@property (nonatomic) BOOL replacementDeltasContainNewData;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)CKDescribePropertiesUsing:;
+- (id)init;
+- (id)redactedDescription;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)valueID;
+- (void)setValueID:;
+- (id)deltaIdentifiersToReplace;
+- (id)replacementDeltas;
+- (BOOL)replacementDeltasContainNewData;
+- (id)initWithValueID:deltaIdentifiersToReplace:replacementDeltas:replacementDeltasContainNewData:;
+- (void)setDeltaIdentifiersToReplace:;
+- (void)setReplacementDeltas:;
+- (void)setReplacementDeltasContainNewData:;
++ (BOOL)supportsSecureCoding;
+@end

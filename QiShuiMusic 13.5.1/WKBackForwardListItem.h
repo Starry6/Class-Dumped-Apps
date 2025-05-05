@@ -1,0 +1,38 @@
+@interface WKBackForwardListItem : NSObject
+@property (nonatomic) _SFQuickLookDocument _sf_quickLookDocument;
+@property (nonatomic) _SFSecurityInfo _sf_securityInfo;
+@property (nonatomic) NSString _sf_explicitSuggestedFilename;
+@property (nonatomic) WBSTranslationContextSnapshot _safari_translationContextSnapshot;
+@property (nonatomic) SLHighlight safari_highlight;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) ^v _item;
+@property (nonatomic) NSURL URL;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSURL initialURL;
+@property (nonatomic) ^{Object=^^?@} _apiObject;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)_sf_quickLookDocument;
+- (void)_sf_setQuickLookDocument:;
+- (id)_sf_securityInfo;
+- (void)_sf_setSecurityInfo:;
+- (id)_sf_explicitSuggestedFilename;
+- (void)_sf_setExplicitSuggestedFilename:;
+- (id)_safari_translationContextSnapshot;
+- (void)_safari_setTranslationContextSnapshot:;
+- (id)safari_highlight;
+- (void)safari_setHighlight:;
+- (void)dealloc;
+- (id)_apiObject;
+- (id)title;
+- (id)URL;
+- (id)_item;
+- (id)_scrollPosition;
+- (id)initialURL;
+- (id)_copySnapshotForTesting;
+@end

@@ -1,0 +1,2 @@
+@interface IESLiveSaaSPBIESLiveSaaSPBFollowGuideRoot : GPBRootObject
+@end

@@ -1,0 +1,31 @@
+@interface IESLiveXPlayGameConfiguration : NSObject
+@property (nonatomic) BOOL showPanelClearScreenItem;
+@property (nonatomic) BOOL showContainerClearScreenButton;
+@property (nonatomic) BOOL showContainerAnchorPreView;
+@property (nonatomic) q containerAnchorPreViewPosition;
+@property (nonatomic) BOOL containerAnchorPreViewIsInMinStatus;
+@property (nonatomic) {UIEdgeInsets=dddd} previewAreaInset;
+@property (nonatomic) double containerAnchorPreViewSizeRatio;
+@property (nonatomic) BOOL isDefaultClearScreen;
+@property (nonatomic) UIColor instanceBackgroundColor;
+- (double)containerAnchorPreViewSizeRatio;
+- (BOOL)containerAnchorPreViewIsInMinStatus;
+- (long long)containerAnchorPreViewPosition;
+- (id)instanceBackgroundColor;
+- (BOOL)isDefaultClearScreen;
+- (id)previewAreaInset;
+- (void)setContainerAnchorPreViewIsInMinStatus:;
+- (void)setContainerAnchorPreViewPosition:;
+- (void)setContainerAnchorPreViewSizeRatio:;
+- (void)setInstanceBackgroundColor:;
+- (void)setIsDefaultClearScreen:;
+- (void)setPreviewAreaInset:;
+- (void)setShowContainerAnchorPreView:;
+- (void)setShowContainerClearScreenButton:;
+- (void)setShowPanelClearScreenItem:;
+- (BOOL)showContainerAnchorPreView;
+- (BOOL)showContainerClearScreenButton;
+- (BOOL)showPanelClearScreenItem;
+- (id)init;
+- (void).cxx_destruct;
+@end

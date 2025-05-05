@@ -1,0 +1,37 @@
+@interface IESLiveDanmakuSettingConfiguration : NSObject
+@property (nonatomic) BOOL alreadyHasLocalConfig;
+@property (nonatomic) q areaType;
+@property (nonatomic) q fontSizeType;
+@property (nonatomic) q alphaPercentValue;
+@property (nonatomic) BOOL giftSwitchOn;
+@property (nonatomic) BOOL carnivalSwitchOn;
+@property (nonatomic) BOOL lotterySwitchOff;
+@property (nonatomic) Q scene;
+- (long long)alphaPercentValue;
+- (BOOL)alreadyHasLocalConfig;
+- (BOOL)carnivalSwitchOn;
+- (long long)fontSizeType;
+- (BOOL)giftSwitchOn;
+- (BOOL)lotterySwitchOff;
+- (void)setAlphaPercentValue:;
+- (void)setAlreadyHasLocalConfig:;
+- (void)setCarnivalSwitchOn:;
+- (void)setFontSizeType:;
+- (void)setGiftSwitchOn:;
+- (void)setLotterySwitchOff:;
+- (void)validateLocalConfigIfNeeded;
+- (id)init;
+- (void)setScene:;
+- (unsigned long long)scene;
+- (long long)areaType;
+- (void)setAreaType:;
++ (id)fontSizeTypeKey;
++ (id)alphaPercentKey;
++ (id)giftSwitchOnKey;
++ (id)areaTypeKey;
++ (id)carnivalSwitchOnKey;
++ (id)hasLocalKey;
++ (id)localConfigIfExist;
++ (id)lotterySwtichKey;
++ (id)identifier;
+@end

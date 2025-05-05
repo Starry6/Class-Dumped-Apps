@@ -1,0 +1,38 @@
+@interface EFSQLObjectPropertyMapper : NSObject
+@property (nonatomic) EFSQLTableSchema table;
+@property (nonatomic) EFSQLColumnSchema sourceColumn;
+@property (nonatomic) <EFSQLValueExpressable> condition;
+@property (nonatomic) NSArray additionalColumns;
+@property (nonatomic) BOOL isPlaceholder;
+@property (nonatomic) <EFSQLValueExpressable> bitExpression;
+@property (nonatomic) NSDictionary children;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)condition;
+- (BOOL)isPlaceholder;
+- (void)setIsPlaceholder:;
+- (id)table;
+- (id)children;
+- (void)setChildren:;
+- (void).cxx_destruct;
+- (id)childForKey:;
+- (id)sourceColumn;
+- (id)bitExpression;
+- (id)initWithChildren:table:;
+- (id)initWithChildren:table:additionalColumns:;
+- (id)initWithChildren:table:condition:;
+- (id)initWithChildren:table:condition:additionalColumns:;
+- (id)initWithChildren:sourceColumn:;
+- (id)initWithChildren:sourceColumn:additionalColumns:;
+- (id)initWithChildren:sourceColumn:condition:;
+- (id)initWithChildren:sourceColumn:condition:additionalColumns:;
+- (id)initWithColumn:;
+- (id)initWithColumn:bitExpression:;
+- (id)initWithColumn:additionalColumns:;
+- (id)initWithColumn:condition:;
+- (id)initWithColumn:condition:additionalColumns:bitExpression:;
+- (id)initPlaceholderMapperWithChildren:;
+- (id)additionalColumns;
+@end

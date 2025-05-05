@@ -1,0 +1,30 @@
+@interface AWEIMGroupInviteFollowerDataController : NSObject
+@property (nonatomic) IESIMListDataController<AWERelationListDataProtocol> relationListDataController;
+@property (nonatomic) NSArray followerSearchList;
+@property (nonatomic) <IESIMHttpTask> searchTask;
+@property (nonatomic) q searchCursor;
+@property (nonatomic) BOOL searchHasMore;
+@property (nonatomic) NSArray followerUserList;
+@property (nonatomic) BOOL hasMore;
+@property (nonatomic) BOOL isSearchMode;
+- (Class)aweRelationListDataControllerClass;
+- (void)fetchFollowerUserListIsLoadMore:completion:;
+- (id)followerSearchList;
+- (id)followerUserList;
+- (BOOL)isSearchMode;
+- (id)relationListDataController;
+- (void)resetSearchStateIsLoadMore:;
+- (void)search:loadMore:completion:;
+- (long long)searchCursor;
+- (BOOL)searchHasMore;
+- (id)searchTask;
+- (void)setFollowerSearchList:;
+- (void)setIsSearchMode:;
+- (void)setRelationListDataController:;
+- (void)setSearchCursor:;
+- (void)setSearchHasMore:;
+- (void)setSearchTask:;
+- (id)init;
+- (void).cxx_destruct;
+- (BOOL)hasMore;
+@end

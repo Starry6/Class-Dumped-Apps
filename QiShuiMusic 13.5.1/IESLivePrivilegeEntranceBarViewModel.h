@@ -1,0 +1,38 @@
+@interface IESLivePrivilegeEntranceBarViewModel : IESLiveCubeViewModel
+@property (nonatomic) IESLivePrivilegeEntranceBarInfo entranceBarInfo;
+@property (nonatomic) HTSLivePayGradeResponse_Data payGrade;
+@property (nonatomic) IESLivePrivilegeHonorLevelModel honorLevelModel;
+@property (nonatomic) NSNumber entranceBarWillDisappear;
+@property (nonatomic) NSNumber selectedGiftDiamond;
+@property (nonatomic) NSNumber giftPageTypeDidChanged;
+@property (nonatomic) NSDictionary selectedGiftInfo;
+@property (nonatomic) <IESLivePrivilegeEntranceBarAPI> barApi;
+- (void)actionEntranceBarWillDisappear:;
+- (id)entranceBarInfo;
+- (id)honorLevelModel;
+- (void)actionGiftPageTypeDidChanged:;
+- (void)actionSelectedGiftDiamond:;
+- (void)actionSelectedGiftInfo:;
+- (id)barApi;
+- (void)cleanEntranceBarInfo;
+- (id)entranceBarWillDisappear;
+- (void)fetchPayGrade;
+- (id)giftPageTypeDidChanged;
+- (BOOL)p_enableHonorLevel;
+- (void)p_updateEntranceBarInfo:;
+- (id)payGrade;
+- (id)selectedGiftDiamond;
+- (id)selectedGiftInfo;
+- (void)setBarApi:;
+- (void)setEntranceBarInfo:;
+- (void)setEntranceBarWillDisappear:;
+- (void)setGiftPageTypeDidChanged:;
+- (void)setHonorLevelModel:;
+- (void)setPayGrade:;
+- (void)setSelectedGiftDiamond:;
+- (void)setSelectedGiftInfo:;
+- (BOOL)shouldShowPrivilegeEntranceBar;
+- (void)updatePrivilegeEntranceBarInfo;
+- (id)init;
+- (void).cxx_destruct;
+@end

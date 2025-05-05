@@ -1,0 +1,30 @@
+@interface IESLiveNormalPublicScreenService : IESLiveGeneralBaseService
+@property (nonatomic) IESLivePublicScreenView publicScreen;
+@property (nonatomic) IESLivePublicScreenNotificationCenter forwardCenter;
+@property (nonatomic) IESLivePublicScreenNodeFactory externalNodeFactory;
+@property (nonatomic) <IESLiveRoomServiceAdapter> roomService;
+@property (nonatomic) <IESLiveUserService> userService;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setRoomService:;
+- (void)setUserService:;
+- (void)addSubscriber:forEvent:;
+- (void)bindPublicScreen:;
+- (void)executeProcessNodeTask:;
+- (id)externalNodeFactory;
+- (id)forwardCenter;
+- (id)publicScreen;
+- (id)roomService;
+- (void)setExternalNodeFactory:;
+- (void)setForwardCenter:;
+- (void)setPublicScreen:;
+- (id)userService;
+- (void)setUp;
+- (void).cxx_destruct;
+- (void)removeSubscriber:;
++ (void)ieslivekit_register_generalServiceAction;
++ (id)serviceProtocolsWithParam:;
++ (unsigned long long)supportType;
+@end

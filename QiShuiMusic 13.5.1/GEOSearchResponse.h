@@ -1,0 +1,2 @@
+@interface GEOSearchResponse : GEOPlaceSearchResponse
+@end

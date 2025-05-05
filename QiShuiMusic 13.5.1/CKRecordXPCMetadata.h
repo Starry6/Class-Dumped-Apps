@@ -1,0 +1,33 @@
+@interface CKRecordXPCMetadata : NSObject
+@property (nonatomic) NSString etag;
+@property (nonatomic) NSDate creationDate;
+@property (nonatomic) NSDate modificationDate;
+@property (nonatomic) NSDate expirationDate;
+@property (nonatomic) CKRecord serverRecord;
+@property (nonatomic) NSData protectionData;
+@property (nonatomic) NSData pcsKeyID;
+@property (nonatomic) NSArray allPCSKeyIDs;
+@property (nonatomic) NSData zoneishKeyID;
+- (id)pcsKeyID;
+- (id)serverRecord;
+- (id)allPCSKeyIDs;
+- (id)etag;
+- (void)setCreationDate:;
+- (void)setPcsKeyID:;
+- (void)setProtectionData:;
+- (void)setModificationDate:;
+- (void)setExpirationDate:;
+- (id)modificationDate;
+- (id)initWithCoder:;
+- (id)zoneishKeyID;
+- (id)expirationDate;
+- (void)encodeWithCoder:;
+- (void)setServerRecord:;
+- (id)protectionData;
+- (void)setZoneishKeyID:;
+- (void).cxx_destruct;
+- (void)setEtag:;
+- (void)setAllPCSKeyIDs:;
+- (id)creationDate;
++ (BOOL)supportsSecureCoding;
+@end

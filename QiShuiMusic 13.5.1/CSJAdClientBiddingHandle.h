@@ -1,0 +1,36 @@
+@interface CSJAdClientBiddingHandle : NSObject
+@property (nonatomic) NSString winUrl;
+@property (nonatomic) NSString lossUrl;
+@property (nonatomic) NSString serverPrice;
+@property (nonatomic) Q biddingType;
+@property (nonatomic) @? getMediaExtBlock;
+@property (nonatomic) @? getMaterialExtBlock;
+@property (nonatomic) NSNumber userAuctionPrice;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setBiddingType:;
+- (id)getAuctionPrice;
+- (id)lossUrl;
+- (void)setServerPrice:;
+- (unsigned long long)biddingType;
+- (id)getMaterialExtBlock;
+- (id)getMediaExtBlock;
+- (void)loss:lossReason:winBidder:;
+- (id)p_checkUrl:;
+- (void)p_getInfo;
+- (BOOL)p_isClientBidding;
+- (id)serverPrice;
+- (void)setGetMaterialExtBlock:;
+- (void)setGetMediaExtBlock:;
+- (void)setLossUrl:;
+- (void)setUserAuctionPrice:;
+- (void)setWinUrl:;
+- (id)userAuctionPrice;
+- (void)win:;
+- (id)winUrl;
+- (id)init;
+- (void).cxx_destruct;
+- (void)setPrice:;
+@end

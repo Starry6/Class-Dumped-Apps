@@ -1,0 +1,33 @@
+@interface SSNetworkConstraints : NSObject
+@property (nonatomic) BOOL anyNetworkTypeEnabled;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)initWithXPCEncoding:;
+- (id)init;
+- (void)dealloc;
+- (id)copyXPCEncoding;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (id)description;
+- (void)setSizeLimit:forNetworkType:;
+- (long long)sizeLimitForNetworkType:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)isAnyNetworkTypeEnabled;
+- (BOOL)hasSizeLimitForNetworkType:;
+- (void)_disableAllNetworkTypes;
+- (void)_setSizeLimit:forNetworkType:;
+- (long long)_sizeLimitForNetworkType:;
+- (void)disableCellularNetworkTypes;
+- (void)setAllNetworkTypesDisabled;
+- (void)setSizeLimitsWithStoreConstraintDictionary:;
+- (id)_copySizeLimits;
++ (BOOL)supportsSecureCoding;
++ (id)networkConstraintsForDownloadKind:fromBag:;
++ (id)newNetworkConstraintsByDownloadKindFromURLBag:;
++ (void)_addNetworkConstraintsToDictionary:forNetworkType:legacyDictionary:;
++ (id)_newLegacyNetworkConstraintsWithDictionary:;
++ (id)_newModernNetworkConstraintsWithArray:;
+@end

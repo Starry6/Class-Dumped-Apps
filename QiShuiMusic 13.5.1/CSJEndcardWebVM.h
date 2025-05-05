@@ -1,0 +1,31 @@
+@interface CSJEndcardWebVM : CSJRewardedVideoWebViewControllerVM
+@property (nonatomic) BOOL isRenderSucc;
+@property (nonatomic) BOOL alreadyShowEndcard;
+- (void)reopenSKoverlay;
+- (void)checkSKOverlay:;
+- (void)addReopenSKOverlayObserver;
+- (BOOL)alreadyShowEndcard;
+- (id)closeDictWithDuration:;
+- (double)getCloseDelayTime;
+- (id)getPageUrlString;
+- (void)handleViewDidAppear:;
+- (void)handleViewWillAppear:;
+- (void)handleViewWillDisappear:;
+- (void)handleViewWillLayoutSubviews;
+- (id)initViewControllerWithAd:adSlot:isNativeExpress:pageType:;
+- (BOOL)isRenderSucc;
+- (void)logoImageViewTapped:;
+- (void)p_restartMotionObserver;
+- (void)p_stopMotionObserver;
+- (void)receiveEnterBackgroundNotification:;
+- (void)receiveWillEnterForegroundNotification:;
+- (void)setAlreadyShowEndcard:;
+- (void)setIsRenderSucc:;
+- (void)setPageUrlString:;
+- (void)showDefaultView:;
+- (BOOL)useLandingPageNewStyle;
+- (void)webCloseAction;
+- (void)dealloc;
+- (BOOL)shouldTrack;
+- (void)handleViewDidLoad;
+@end

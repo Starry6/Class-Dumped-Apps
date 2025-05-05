@@ -1,0 +1,2 @@
+@interface SNCollectionUtils : NSObject
+@end

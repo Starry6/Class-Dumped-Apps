@@ -1,0 +1,36 @@
+@interface SAIntentGroupSnippet : SAUISnippet
+@property (nonatomic) NSString appId;
+@property (nonatomic) NSArray commands;
+@property (nonatomic) SAIntentGroupProtobufMessage intent;
+@property (nonatomic) SAIntentGroupProtobufMessage intentResponse;
+@property (nonatomic) NSString jsonEncodedIntent;
+@property (nonatomic) NSString jsonEncodedIntentResponse;
+@property (nonatomic) <SAServerBoundCommand> processSynapseFlowCommand;
+@property (nonatomic) NSArray snippetTemplates;
+@property (nonatomic) BOOL widgetAllowed;
+@property (nonatomic) NSNumber widgetIndex;
+- (id)intent;
+- (id)groupIdentifier;
+- (id)appId;
+- (void)setAppId:;
+- (id)commands;
+- (id)encodedClassName;
+- (id)intentResponse;
+- (void)setIntent:;
+- (void)setCommands:;
+- (void)setIntentResponse:;
+- (id)jsonEncodedIntent;
+- (void)setJsonEncodedIntent:;
+- (id)jsonEncodedIntentResponse;
+- (void)setJsonEncodedIntentResponse:;
+- (id)processSynapseFlowCommand;
+- (void)setProcessSynapseFlowCommand:;
+- (id)snippetTemplates;
+- (void)setSnippetTemplates:;
+- (BOOL)widgetAllowed;
+- (void)setWidgetAllowed:;
+- (id)widgetIndex;
+- (void)setWidgetIndex:;
++ (id)snippet;
++ (id)snippetWithDictionary:context:;
+@end

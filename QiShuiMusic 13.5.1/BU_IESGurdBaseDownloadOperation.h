@@ -1,0 +1,37 @@
+@interface BU_IESGurdBaseDownloadOperation : NSOperation
+@property (nonatomic) NSString accessKey;
+@property (nonatomic) BU_IESGurdResourceModel config;
+@property (nonatomic) @? downloadCompletion;
+@property (nonatomic) BU_IESGurdDownloadPackageInfo downloadPackageInfo;
+@property (nonatomic) BOOL executing;
+@property (nonatomic) BOOL finished;
+@property (nonatomic) NSDate downloadSuccessDate;
+- (void)handleBusinessSuccessWithPackagePath:downloadSize:downloadInfo:;
+- (void)traceEventWithMessage:hasError:;
+- (BOOL)checkFileMd5WithPackagePath:md5:packageTypeString:downloadURLString:errorMessage:;
+- (id)downloadPackageInfo;
+- (id)downloadSuccessDate;
+- (void)handleBusinessFailedWithType:error:;
+- (void)handleDownloadResultWithDownloadInfo:succeed:error:;
+- (void)innerFinishDownloadWithPath:error:;
+- (void)innerSendStatusMessageWithType:succeed:error:extraInfo:;
+- (void)setDownloadPackageInfo:;
+- (void)setDownloadSuccessDate:;
+- (void)setFinished:;
+- (void)cancel;
+- (void)start;
+- (BOOL)isConcurrent;
+- (void)setConfig:;
+- (BOOL)isExecuting;
+- (BOOL)isFinished;
+- (BOOL)isPatch;
+- (void).cxx_destruct;
+- (id)config;
+- (void)setExecuting:;
+- (id)downloadCompletion;
+- (id)accessKey;
+- (void)setAccessKey:;
+- (void)setDownloadCompletion:;
+- (void)operationDidStart;
++ (id)operationWithAccessKey:config:downloadCompletion:;
+@end

@@ -1,0 +1,35 @@
+@interface IESLiveInteractionLinkerServiceUserServiceAdapter : NSObject
+@property (nonatomic) IESLiveMultiInteractUserService userService;
+@property (nonatomic) <IESLiveLinkmicUserServiceDataSource> dataSource;
+@property (nonatomic) <IESLiveLinkmicUserServiceDelegate> delegate;
+@property (nonatomic) NSArray linkedUserList;
+@property (nonatomic) NSArray waitingUserList;
+@property (nonatomic) <IESLiveLinkmicUser> me;
+@property (nonatomic) q meLinkType;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setUserService:;
+- (id)waitingUserList;
+- (id)createEmptyUserWithLinkmicID:;
+- (id)initWithUserService:;
+- (id)linkedUserList;
+- (long long)meLinkType;
+- (void)reloadLinkedList;
+- (void)reloadLinkedListWithListChanged:;
+- (id)userByLinkmicId:;
+- (id)userBySecUserId:;
+- (id)userByUserId:;
+- (id)userService;
+- (id)waitingUserBySecUserId:;
+- (id)waitingUserByUserId:;
+- (void)removeAll;
+- (void)setDataSource:;
+- (id)me;
+- (void)setDelegate:;
+- (id)dataSource;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)addUser:;
+@end

@@ -1,0 +1,38 @@
+@interface LynxTapGestureHandler : LynxBaseGestureHandler
+@property (nonatomic) {CGPoint=dd} startPoint;
+@property (nonatomic) {CGPoint=dd} lastPoint;
+@property (nonatomic) BOOL isInvokedEnd;
+@property (nonatomic) LynxTouchEvent lastTouchEvent;
+@property (nonatomic) float maxDistance;
+@property (nonatomic) q maxDuration;
+@property (nonatomic) @? delayFailRunnable;
+- (id)delayFailRunnable;
+- (void)endTap;
+- (void)handleConfigMap:;
+- (id)initWithSign:context:member:detector:;
+- (BOOL)isGestureTypeMatched:;
+- (BOOL)isInvokedEnd;
+- (void)onBegin:touchEvent:;
+- (void)onEnd:touchEvent:;
+- (void)onHandle:touches:event:touchEvent:flingPoint:;
+- (void)onStart:touchEvent:;
+- (void)onUpdate:touchEvent:;
+- (void)setDelayFailRunnable:;
+- (void)setIsInvokedEnd:;
+- (void)startTap;
+- (id)startPoint;
+- (void)setStartPoint:;
+- (void)end;
+- (id)lastTouchEvent;
+- (float)maxDistance;
+- (void).cxx_destruct;
+- (void)reset;
+- (id)lastPoint;
+- (void)setLastPoint:;
+- (void)setMaxDistance:;
+- (void)fail;
+- (long long)maxDuration;
+- (void)setMaxDuration:;
+- (BOOL)shouldFail;
+- (void)setLastTouchEvent:;
+@end

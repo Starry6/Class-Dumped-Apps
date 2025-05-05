@@ -1,0 +1,32 @@
+@interface IESECListKitDemoVideoData : MTLModel
+@property (nonatomic) NSString vid;
+@property (nonatomic) NSString itemId;
+@property (nonatomic) q seconds;
+@property (nonatomic) IESECListKitDemoCover cover;
+@property (nonatomic) IESECListKitDemoAddr addr;
+@property (nonatomic) IESECListKitDemoAddr addrH265;
+@property (nonatomic) double currentPlayTime;
+@property (nonatomic) NSString desc;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (double)currentPlayTime;
+- (void)setVid:;
+- (id)vid;
+- (id)addrH265;
+- (id)cover;
+- (void)setAddrH265:;
+- (void)setCover:;
+- (void)setCurrentPlayTime:;
+- (id)desc;
+- (long long)seconds;
+- (void)setDesc:;
+- (void)setSeconds:;
+- (void).cxx_destruct;
+- (id)addr;
+- (void)setAddr:;
+- (id)itemId;
+- (void)setItemId:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

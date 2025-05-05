@@ -1,0 +1,33 @@
+@interface CEMApplicationListActiveNSExtensionsCommand_StatusExtensionsItem : CEMPayloadBase
+@property (nonatomic) NSString statusBundleIdentifier;
+@property (nonatomic) NSString statusExtensionPoint;
+@property (nonatomic) NSString statusDisplayName;
+@property (nonatomic) NSString statusContainerDisplayName;
+@property (nonatomic) NSString statusContainerIdentifier;
+@property (nonatomic) NSString statusPath;
+@property (nonatomic) NSString statusVersion;
+@property (nonatomic) NSString statusUserElection;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (BOOL)loadPayload:error:;
+- (id)serializePayload;
+- (id)statusBundleIdentifier;
+- (void)setStatusBundleIdentifier:;
+- (id)statusExtensionPoint;
+- (void)setStatusExtensionPoint:;
+- (id)statusDisplayName;
+- (void)setStatusDisplayName:;
+- (id)statusContainerDisplayName;
+- (void)setStatusContainerDisplayName:;
+- (id)statusContainerIdentifier;
+- (void)setStatusContainerIdentifier:;
+- (id)statusPath;
+- (void)setStatusPath:;
+- (id)statusVersion;
+- (void)setStatusVersion:;
+- (id)statusUserElection;
+- (void)setStatusUserElection:;
++ (id)allowedStatusKeys;
++ (id)buildWithBundleIdentifier:withExtensionPoint:withDisplayName:withContainerDisplayName:withContainerIdentifier:withPath:withVersion:withUserElection:;
++ (id)buildRequiredOnlyWithBundleIdentifier:withExtensionPoint:withDisplayName:withPath:withVersion:withUserElection:;
+@end

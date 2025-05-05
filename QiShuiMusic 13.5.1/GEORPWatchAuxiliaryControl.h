@@ -1,0 +1,34 @@
+@interface GEORPWatchAuxiliaryControl : PBCodable
+@property (nonatomic) BOOL hasHardwareIdentifier;
+@property (nonatomic) NSString hardwareIdentifier;
+@property (nonatomic) BOOL hasOsVersion;
+@property (nonatomic) NSString osVersion;
+@property (nonatomic) BOOL hasOsBuild;
+@property (nonatomic) NSString osBuild;
+- (id)osBuild;
+- (void)setOsBuild:;
+- (BOOL)hasOsBuild;
+- (void)readAll:;
+- (id)init;
+- (id)osVersion;
+- (id)initWithJSON:;
+- (id)hardwareIdentifier;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void)setOsVersion:;
+- (id)initWithData:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (void)setHardwareIdentifier:;
+- (id)description;
+- (BOOL)hasOsVersion;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasHardwareIdentifier;
++ (BOOL)isValid:;
+@end

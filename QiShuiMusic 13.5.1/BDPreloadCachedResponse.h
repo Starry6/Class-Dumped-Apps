@@ -1,0 +1,32 @@
+@interface BDPreloadCachedResponse : NSObject
+@property (nonatomic) NSData falconData;
+@property (nonatomic) IESFalconStatModel statModel;
+@property (nonatomic) NSDictionary allHeaderFields;
+@property (nonatomic) q statusCode;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) q statusCode;
+@property (nonatomic) NSDictionary allHeaderFields;
+@property (nonatomic) NSData data;
+@property (nonatomic) double saveTime;
+@property (nonatomic) double cacheDuration;
+- (double)cacheDuration;
+- (id)falconData;
+- (double)saveTime;
+- (void)setAllHeaderFields:;
+- (void)setCacheDuration:;
+- (void)setFalconData:;
+- (void)setSaveTime:;
+- (void)setStatModel:;
+- (id)statModel;
+- (void)setStatusCode:;
+- (long long)statusCode;
+- (id)data;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (void)setData:;
+- (id)allHeaderFields;
+@end

@@ -1,0 +1,33 @@
+@interface IESLiveStackTemplate : NSObject
+@property (nonatomic) NSMutableArray managerQueue;
+@property (nonatomic) NSOperationQueue dependencyQueue;
+@property (nonatomic) NSMutableDictionary viewAnchorOp;
+@property (nonatomic) BOOL enableDebugAssert;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)addViewElement:;
+- (id)dependencyQueue;
+- (void)executeAtState:;
+- (void)addOperation:dependWithViewType:;
+- (BOOL)addView:viewType:;
+- (BOOL)addView:viewType:insets:size:;
+- (BOOL)addView:viewType:size:;
+- (id)containerMappingForViewType:;
+- (BOOL)enableDebugAssert;
+- (id)initWithStackManager:;
+- (void)insertShadowStackManager:;
+- (id)managerQueue;
+- (id)queryContainerByType:;
+- (id)queryViewByType:;
+- (void)removeShadowStackManager:;
+- (void)removeViewElement:;
+- (void)setDependencyQueue:;
+- (void)setEnableDebugAssert:;
+- (void)setManagerQueue:;
+- (void)setViewAnchorOp:;
+- (id)viewAnchorOp;
+- (void)viewDidAdded:;
+- (void).cxx_destruct;
+@end

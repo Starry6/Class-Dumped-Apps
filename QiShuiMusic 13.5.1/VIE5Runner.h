@@ -1,0 +1,31 @@
+@interface VIE5Runner : NSObject
+@property (nonatomic) NSDictionary inputs;
+@property (nonatomic) NSDictionary outputs;
+@property (nonatomic) NSDictionary boundInputs;
+@property (nonatomic) NSDictionary boundOutputs;
+@property (nonatomic) NSURL bundleURL;
+@property (nonatomic) NSString mainFunctionName;
+@property (nonatomic) NSArray inputNames;
+@property (nonatomic) NSArray outputNames;
+- (id)inputs;
+- (int)execute;
+- (void)dealloc;
+- (id)bundleURL;
+- (id)outputs;
+- (void).cxx_destruct;
+- (id)outputNames;
+- (id)inputNames;
+- (id)initWithBundleURL:mainFunctionName:;
+- (id)getInputImageBuffer:;
+- (int)initNetworks;
+- (void)releaseNetworks;
+- (id)executeAndGet:error:;
+- (id)mainFunctionName;
+- (id)boundInputs;
+- (id)boundOutputs;
++ (int)surfaceTypeE5rtType:toVIType:;
++ (int)tensorDTypeE5rtType:toVIType:;
++ (int)getPort:description:;
++ (int)allocatePort:description:io:;
++ (void)releasePorts:descriptions:boundedIOs:wasBound:;
+@end

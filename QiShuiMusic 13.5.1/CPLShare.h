@@ -1,0 +1,30 @@
+@interface CPLShare : NSObject
+@property (nonatomic) q publicPermission;
+@property (nonatomic) NSURL URL;
+@property (nonatomic) NSArray participants;
+@property (nonatomic) NSDate creationDate;
+@property (nonatomic) CPLShareParticipant owner;
+@property (nonatomic) CPLShareParticipant currentUserParticipant;
+@property (nonatomic) BOOL ownerIsCurrentUser;
+- (id)init;
+- (id)participants;
+- (void)setParticipants:;
+- (void)setCreationDate:;
+- (id)redactedDescription;
+- (id)owner;
+- (long long)publicPermission;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (void)setPublicPermission:;
+- (id)description;
+- (BOOL)isEqual:;
+- (void)setURL:;
+- (id)URL;
+- (id)copyWithZone:;
+- (id)creationDate;
+- (id)currentUserParticipant;
+- (BOOL)ownerIsCurrentUser;
++ (BOOL)supportsSecureCoding;
+@end

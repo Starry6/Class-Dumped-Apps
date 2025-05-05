@@ -1,0 +1,33 @@
+@interface EFSQLConnection : NSObject
+@property (nonatomic) ^{sqlite3=} sqlDB;
+@property (nonatomic) BOOL isOpen;
+@property (nonatomic) NSURL url;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)openWithError:;
+- (BOOL)finalizeStatementsWithError:;
+- (id)url;
+- (id)init;
+- (id)initWithURL:;
+- (id)initWithSQLDB:;
+- (BOOL)isOpen;
+- (BOOL)_isSuccessResultCode:sqlDB:error:;
+- (BOOL)executeStatementString:error:;
+- (id)sqlDB;
+- (void)close;
+- (id)initWithInMemoryDatabase;
+- (BOOL)commitTransactionWithError:;
+- (void)flush;
+- (BOOL)beginTransaction:error:;
+- (id)resultsForQueryString:;
+- (void).cxx_destruct;
+- (BOOL)rollbackTransactionWithError:;
+- (id)description;
+- (id)preparedStatementForQueryString:;
+- (BOOL)openWithFlags:error:;
++ (id)log;
++ (BOOL)setFileProtection:forDatabaseAtURL:error:;
++ (BOOL)isSuccessResultCode:forStep:error:;
+@end

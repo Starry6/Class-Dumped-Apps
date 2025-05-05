@@ -1,0 +1,34 @@
+@interface NSSQLIntermediate : NSObject
+@property (nonatomic) NSSQLEntity disambiguatingEntity;
+@property (nonatomic) NSArray disambiguationKeypath;
+@property (nonatomic) BOOL disambiguationKeypathHasToMany;
+- (BOOL)isUpdateColumnsScoped;
+- (void)_promoteJoinsForSubqueryScopedKeypath:;
+- (BOOL)disambiguationKeypathHasToMany;
+- (BOOL)isUpdateScoped;
+- (id)_generateSQLForKeyPathExpression:allowToMany:inContext:;
+- (id)governingEntity;
+- (id)_lastScopedItem;
+- (BOOL)isOrScoped;
+- (id)_generateSQLForVariableExpression:allowToMany:inContext:;
+- (id)generateSQLStringInContext:;
+- (void)_promoteJoinsForSubqueryScopedKeypaths;
+- (id)fetchIntermediate;
+- (BOOL)isFunctionScoped;
+- (id)fetchIntermediateForKeypathExpression:;
+- (id)disambiguationKeypath;
+- (id)initWithScope:;
+- (id)governingAlias;
+- (void)setDisambiguatingEntity:withKeypath:hasToMany:;
+- (id)governingAliasForKeypathExpression:;
+- (BOOL)isWhereScoped;
+- (BOOL)keypathExpressionIsSafeLHSForIn:;
+- (id)governingEntityForKeypathExpression:;
+- (id)disambiguatingEntity;
+- (BOOL)isTargetColumnsScoped;
+- (BOOL)isHavingScoped;
+- (BOOL)isIndexScoped;
+- (BOOL)isIndexExpressionScoped;
++ (BOOL)expressionIsBasicKeypath:;
++ (BOOL)isSimpleKeypath:;
+@end

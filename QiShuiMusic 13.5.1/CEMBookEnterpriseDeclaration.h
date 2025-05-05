@@ -1,0 +1,33 @@
+@interface CEMBookEnterpriseDeclaration : CEMAssetBase
+@property (nonatomic) CEMAssetBaseDescriptor payloadDescriptor;
+@property (nonatomic) CEMAssetBaseReference payloadReference;
+@property (nonatomic) NSString payloadKind;
+@property (nonatomic) NSString payloadVersion;
+@property (nonatomic) NSString payloadAuthor;
+@property (nonatomic) NSString payloadTitle;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)payloadVersion;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (void)setPayloadVersion:;
+- (BOOL)loadPayload:error:;
+- (id)serializePayloadWithAssetProviders:;
+- (id)payloadDescriptor;
+- (void)setPayloadDescriptor:;
+- (id)payloadTitle;
+- (void)setPayloadTitle:;
+- (id)payloadReference;
+- (void)setPayloadReference:;
+- (id)payloadKind;
+- (void)setPayloadKind:;
+- (id)payloadAuthor;
+- (void)setPayloadAuthor:;
++ (id)registeredClassName;
++ (id)registeredIdentifier;
++ (id)allowedPayloadKeys;
++ (id)buildWithIdentifier:withDescriptor:withReference:withKind:withVersion:withAuthor:withTitle:;
++ (id)buildRequiredOnlyWithIdentifier:withDescriptor:withReference:;
+@end

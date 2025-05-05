@@ -1,0 +1,33 @@
+@interface AWDSafariSetAutoFillQuickTypeSuggestionEvent : PBCodable
+@property (nonatomic) BOOL hasTimestamp;
+@property (nonatomic) Q timestamp;
+@property (nonatomic) BOOL hasCategory;
+@property (nonatomic) NSInteger category;
+@property (nonatomic) BOOL hasFormProperty;
+@property (nonatomic) NSInteger formProperty;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)setHasTimestamp:;
+- (void)mergeFrom:;
+- (BOOL)hasTimestamp;
+- (void)setTimestamp:;
+- (void)setCategory:;
+- (BOOL)readFrom:;
+- (unsigned long long)timestamp;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (BOOL)hasCategory;
+- (int)category;
+- (id)copyWithZone:;
+- (void)setHasCategory:;
+- (id)categoryAsString:;
+- (int)StringAsCategory:;
+- (int)formProperty;
+- (void)setFormProperty:;
+- (void)setHasFormProperty:;
+- (BOOL)hasFormProperty;
+- (id)formPropertyAsString:;
+- (int)StringAsFormProperty:;
+@end

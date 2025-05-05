@@ -1,0 +1,31 @@
+@interface IESLiveSaaSFilterStore : NSObject
+@property (nonatomic) BOOL isDraw;
+@property (nonatomic) <HTSLiveSaaSFilterReactions> reaction;
+@property (nonatomic) IESLiveSaaSLiveRoomModel roomModel;
+@property (nonatomic) Q currentFilterIndex;
+@property (nonatomic) IESLiveSaaSRoomFilter selectedFilter;
+@property (nonatomic) BOOL showFilterRedDot;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)applyFilter:;
+- (void)changeFilterIndex:isDraw:;
+- (unsigned long long)currentFilterIndex;
+- (void)didSetAttachingDIContext;
+- (id)initWitRoom:;
+- (BOOL)isDraw;
+- (id)roomModel;
+- (id)selectedFilter;
+- (void)setCurrentFilterIndex:;
+- (void)setIsDraw:;
+- (void)setRoomModel:;
+- (void)setSelectedFilter:;
+- (void)setShowFilterRedDot:;
+- (BOOL)showFilterRedDot;
+- (void)updateFilterUsed:;
+- (void)setup;
+- (void).cxx_destruct;
+- (id)reaction;
+- (void)setReaction:;
+@end

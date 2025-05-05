@@ -1,0 +1,32 @@
+@interface IESLiveSaaSLiveMChannelFollowAnimationBtn : UIView
+@property (nonatomic) BOOL isAnmating;
+@property (nonatomic) @? didFinishAnimation;
+@property (nonatomic) @? beginShrinkAnimation;
+@property (nonatomic) UIImageView checkIcon;
+@property (nonatomic) UIButton followBtn;
+@property (nonatomic) q style;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)beginAnimation:;
+- (id)beginShrinkAnimation;
+- (id)didFinishAnimation;
+- (id)followBtn;
+- (BOOL)isAnmating;
+- (void)resetAndHideViews;
+- (void)setBeginShrinkAnimation:;
+- (void)setCheckIcon:;
+- (void)setDidFinishAnimation:;
+- (void)setFollowBtn:;
+- (void)setIsAnmating:;
+- (void)setupCheckIcon;
+- (void)setupFollowButton;
+- (void)startAnimation:shrinkCompletion:completion:;
+- (void)animationDidStop:finished:;
+- (void)setStyle:;
+- (void).cxx_destruct;
+- (long long)style;
+- (id)initWithStyle:;
+- (id)checkIcon;
+@end

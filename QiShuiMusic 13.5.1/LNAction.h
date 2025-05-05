@@ -1,0 +1,38 @@
+@interface LNAction : NSObject
+@property (nonatomic) q presentationStyle;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) NSString mangledTypeName;
+@property (nonatomic) BOOL openAppWhenRun;
+@property (nonatomic) NSNumber outputFlags;
+@property (nonatomic) LNValueType outputType;
+@property (nonatomic) NSArray systemProtocols;
+@property (nonatomic) NSArray parameters;
+- (long long)presentationStyle;
+- (id)initWithIdentifier:parameters:;
+- (id)identifier;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)parameters;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)initWithIdentifier:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)outputType;
+- (id)mangledTypeName;
+- (BOOL)openAppWhenRun;
+- (id)outputFlags;
+- (id)systemProtocols;
+- (id)initWithMetadata:bundleIdentifier:parameters:;
+- (id)initWithIdentifier:mangledTypeName:openAppWhenRun:outputFlags:outputType:systemProtocols:parameters:;
+- (id)actionWithParameters:;
+- (void)enumerateParameterValuesOfValueType:block:;
+- (id)initWithIdentifier:mangledTypeName:openAppWhenRun:outputFlags:outputType:parameters:;
+- (id)initWithIdentifier:mangledTypeName:openAppWhenRun:parameters:;
+- (id)initWithIdentifier:mangledTypeName:presentationStyle:parameters:;
+- (id)initWithIdentifier:presentationStyle:parameters:;
+- (id)actionWithOpenWhenRun:;
+- (id)actionWithPresentationStyle:;
++ (BOOL)supportsSecureCoding;
+@end

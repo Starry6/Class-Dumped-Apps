@@ -1,0 +1,37 @@
+@interface GEORPSuggestedRouteIndex : PBCodable
+@property (nonatomic) BOOL hasDirectionsResponseIndex;
+@property (nonatomic) I directionsResponseIndex;
+@property (nonatomic) BOOL hasDirectionsResponseSuggestedRoutesIndex;
+@property (nonatomic) I directionsResponseSuggestedRoutesIndex;
+@property (nonatomic) Q clusteredRouteRideSelectionsCount;
+@property (nonatomic) ^I clusteredRouteRideSelections;
+- (void)readAll:;
+- (void)dealloc;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (unsigned int)directionsResponseIndex;
+- (void)setDirectionsResponseIndex:;
+- (void)setHasDirectionsResponseIndex:;
+- (BOOL)hasDirectionsResponseIndex;
+- (unsigned int)directionsResponseSuggestedRoutesIndex;
+- (void)setDirectionsResponseSuggestedRoutesIndex:;
+- (void)setHasDirectionsResponseSuggestedRoutesIndex:;
+- (BOOL)hasDirectionsResponseSuggestedRoutesIndex;
+- (unsigned long long)clusteredRouteRideSelectionsCount;
+- (id)clusteredRouteRideSelections;
+- (void)clearClusteredRouteRideSelections;
+- (void)addClusteredRouteRideSelections:;
+- (unsigned int)clusteredRouteRideSelectionsAtIndex:;
+- (void)setClusteredRouteRideSelections:count:;
++ (BOOL)isValid:;
+@end

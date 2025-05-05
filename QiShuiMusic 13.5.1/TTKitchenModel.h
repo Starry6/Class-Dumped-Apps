@@ -1,0 +1,32 @@
+@interface TTKitchenModel : NSObject
+@property (nonatomic) NSString key;
+@property (nonatomic) NSString summary;
+@property (nonatomic) Q type;
+@property (nonatomic) # modelClass;
+@property (nonatomic) NSNumber isLegalCollection;
+@property (nonatomic) BOOL freezed;
+@property (nonatomic) @ defaultValue;
+@property (nonatomic) @ freezedValue;
+- (BOOL)freezed;
+- (id)freezedValue;
+- (id)isLegalCollection;
+- (BOOL)isSwitchOpen;
+- (void)setFreezed:;
+- (void)setFreezedValue:;
+- (void)setIsLegalCollection:;
+- (void)textFieldAction:error:;
+- (void)setDefaultValue:;
+- (id)key;
+- (void)setType:;
+- (id)defaultValue;
+- (void)setSummary:;
+- (Class)modelClass;
+- (void)setKey:;
+- (id)summary;
+- (void)setModelClass:;
+- (unsigned long long)type;
+- (void).cxx_destruct;
+- (void)reset;
+- (id)text;
+- (void)switchAction;
+@end

@@ -1,0 +1,38 @@
+@interface AWEIMFansGroupDisturbMessageTableViewCell : AWEIMSystemMessageTableViewCell
+@property (nonatomic) UIView baseView;
+@property (nonatomic) UILabel titleLable;
+@property (nonatomic) UIImageView titleIcon;
+@property (nonatomic) UIButton closeButton;
+@property (nonatomic) YYLabel contentLable;
+@property (nonatomic) UIView lineView;
+@property (nonatomic) UILabel disturbLabel;
+@property (nonatomic) UISwitch disturbSwitch;
+- (void)__trackShowData;
+- (void)__handelCloseButtonCkicked:;
+- (void)__handelDisturbSwitchChanged:;
+- (void)__trackCloseData;
+- (void)__trackMuteClickData;
+- (void)__trackSettingClickData;
+- (void)configWithMessage:;
+- (id)contentLable;
+- (id)disturbLabel;
+- (id)disturbSwitch;
+- (void)performCellWithViewModel:;
+- (void)setContentLable:;
+- (void)setDisturbLabel:;
+- (void)setDisturbSwitch:;
+- (void)setTitleLable:;
+- (id)titleLable;
+- (id)baseView;
+- (void).cxx_destruct;
+- (void)setBaseView:;
+- (id)lineView;
+- (void)setLineView:;
+- (void)setupUI;
+- (id)closeButton;
+- (void)setCloseButton:;
+- (id)titleIcon;
+- (void)setTitleIcon:;
++ (id)contentSizeWithMesasge:;
++ (id)identifier;
+@end

@@ -1,0 +1,31 @@
+@interface ITIdleTimerConfiguration : NSObject
+@property (nonatomic) NSString identifier;
+@property (nonatomic) Q idleEventMask;
+@property (nonatomic) @? idleEventHandlerBlock;
+@property (nonatomic) BOOL disablesTimer;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)_identifier;
+- (id)initWithBSXPCCoder:;
+- (id)succinctDescriptionBuilder;
+- (void).cxx_destruct;
+- (void)encodeWithBSXPCCoder:;
+- (id)succinctDescription;
+- (id)description;
+- (id)descriptionBuilderWithMultilinePrefix:;
+- (id)initWithConfiguration:;
+- (id)descriptionWithMultilinePrefix:;
+- (id)copyWithZone:;
+- (void)_setIdleEventHandlerBlock:;
+- (void)_setIdleEventMask:;
+- (unsigned long long)_idleEventMask;
+- (BOOL)disablesTimer;
+- (id)_copyWithNewIdentifier;
+- (id)_uniquedReason:;
+- (void)setDisablesTimer:;
+- (id)_idleEventHandlerBlock;
++ (BOOL)supportsBSXPCSecureCoding;
++ (id)configurationToDisableIdleTimer;
+@end

@@ -1,0 +1,30 @@
+@interface IESLiveSaaSLiveRoomURLExtraModel : MTLModel
+@property (nonatomic) NSNumber width;
+@property (nonatomic) NSNumber height;
+@property (nonatomic) NSNumber maxBitrate;
+@property (nonatomic) NSNumber minBitrate;
+@property (nonatomic) NSNumber defaultBitrate;
+@property (nonatomic) NSNumber anchorInteractProfile;
+@property (nonatomic) NSNumber audienceInteractProfile;
+@property (nonatomic) NSNumber fps;
+@property (nonatomic) BOOL enableH265;
+@property (nonatomic) BOOL enableBFrame;
+@property (nonatomic) NSNumber gopSec;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)anchorInteractProfile;
+- (id)audienceInteractProfile;
+- (id)defaultBitrate;
+- (BOOL)enableBFrame;
+- (BOOL)enableH265;
+- (id)gopSec;
+- (id)height;
+- (id)width;
+- (void).cxx_destruct;
+- (id)fps;
+- (id)maxBitrate;
+- (id)minBitrate;
++ (id)JSONKeyPathsByPropertyKey;
+@end

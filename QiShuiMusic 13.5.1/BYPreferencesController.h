@@ -1,0 +1,31 @@
+@interface BYPreferencesController : NSObject
+@property (nonatomic) NSString domain;
+@property (nonatomic) NSMutableDictionary preferences;
+@property (nonatomic) NSObject<OS_dispatch_queue> queue;
+- (void)persist;
+- (id)initWithDomain:;
+- (void)setPreferences:;
+- (id)init;
+- (void)setObject:forKey:;
+- (id)preferences;
+- (void)removeObjectForKey:onlyFromMemory:;
+- (BOOL)boolForKey:;
+- (void)flush;
+- (id)objectForKey:includeCache:;
+- (id)objectForKey:;
+- (void).cxx_destruct;
+- (void)reset;
+- (void)setQueue:;
+- (id)domain;
+- (void)setDomain:;
+- (void)removeObjectForKey:;
+- (id)queue;
+- (void)setObject:forKey:persistImmediately:;
++ (id)buddyPreferencesInternal;
++ (void)persistEverything;
++ (id)buddyPreferences;
++ (id)buddyPreferencesEphemeral;
++ (id)genericPreferencesEphemeral;
++ (void)flushEverything;
++ (id)buddyPreferencesExcludedFromBackup;
+@end

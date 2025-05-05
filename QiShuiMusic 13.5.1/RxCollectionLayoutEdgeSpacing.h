@@ -1,0 +1,31 @@
+@interface RxCollectionLayoutEdgeSpacing : NSObject
+@property (nonatomic) RxCollectionLayoutSpacing leading;
+@property (nonatomic) RxCollectionLayoutSpacing top;
+@property (nonatomic) RxCollectionLayoutSpacing trailing;
+@property (nonatomic) RxCollectionLayoutSpacing bottom;
+@property (nonatomic) BOOL hasSpacing;
+@property (nonatomic) {RxDirectionalEdgeInsets=dddd} edgeOutsets;
+- (id)initForLeading:top:trailing:bottom:;
+- (id)top;
+- (void)setTop:;
+- (BOOL)isSpacingFixedForEdge:;
+- (id)edgeOutsets;
+- (id)_spacingForEdge:;
+- (void).cxx_destruct;
+- (BOOL)isSpacingFlexibleForEdge:;
+- (double)spacingForEdge:;
+- (id)bottom;
+- (void)setBottom:;
+- (id)description;
+- (id)trailing;
+- (BOOL)isEqual:;
+- (id)leading;
+- (id)copyWithZone:;
+- (void)setLeading:;
+- (void)setTrailing:;
+- (BOOL)hasSpacing;
++ (id)defaultSpacing;
++ (id)spacingForLeading:top:trailing:bottom:;
++ (id)flexibleSpacing:;
++ (id)fixedSpacing:;
+@end

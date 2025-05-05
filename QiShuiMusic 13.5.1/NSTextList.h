@@ -1,0 +1,34 @@
+@interface NSTextList : NSObject
+@property (nonatomic) NSString markerFormat;
+@property (nonatomic) Q listOptions;
+@property (nonatomic) q startingItemNumber;
+@property (nonatomic) BOOL ordered;
+- (BOOL)_isOrdered;
+- (id)init;
+- (BOOL)isOrdered;
+- (void)dealloc;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (unsigned long long)options;
+- (id)description;
+- (id)copyWithZone:;
+- (id)initWithMarkerFormat:options:startingItemNumber:;
+- (id)initWithMarkerFormat:options:;
+- (id)markerFormat;
+- (unsigned long long)listOptions;
+- (void)setStartingItemNumber:;
+- (long long)startingItemNumber;
+- (id)_markerForMarkerFormat:itemNumber:isNumbered:substitutionStart:end:specifierStart:end:;
+- (id)markerForItemNumber:;
+- (id)_markerTitle;
+- (id)_markerPrefix;
+- (id)_markerSpecifier;
+- (id)_markerSpecifierAsCSSValue;
+- (id)_unaffixedMarkerFormat;
+- (id)_unaffixedMarkerForItemNumber:;
+- (id)_unaffixedMarkerTitle;
+- (id)_markerSuffix;
+- (id)_markerAtIndex:inText:;
++ (BOOL)supportsSecureCoding;
++ (id)_standardMarkerAttributesForAttributes:;
+@end

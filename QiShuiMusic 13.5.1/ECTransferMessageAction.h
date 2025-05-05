@@ -1,0 +1,33 @@
+@interface ECTransferMessageAction : ECLocalMessageAction
+@property (nonatomic) q transferType;
+@property (nonatomic) NSURL sourceMailboxURL;
+@property (nonatomic) NSURL destinationMailboxURL;
+@property (nonatomic) NSArray itemsToDownload;
+@property (nonatomic) NSArray itemsToCopy;
+@property (nonatomic) NSArray itemsToDelete;
+@property (nonatomic) NSString messageActionPersistentID;
+@property (nonatomic) NSURL mailboxURL;
+@property (nonatomic) BOOL userInitiated;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (id)initWithBuilder:;
+- (void).cxx_destruct;
+- (id)description;
+- (long long)transferType;
+- (id)destinationMailboxURL;
+- (id)itemsToCopy;
+- (id)sourceMailboxURL;
+- (id)itemsToDelete;
+- (id)itemsToDownload;
+- (void)setDestinationMailboxURL:;
+- (void)setTransferType:;
+- (void)setSourceMailboxURL:;
+- (void)setItemsToDownload:;
+- (void)setItemsToCopy:;
+- (void)setItemsToDelete:;
+- (void)updateWithCompletedItems:forPhase:;
+- (void)updateWithFailedItems:forPhase:;
+@end

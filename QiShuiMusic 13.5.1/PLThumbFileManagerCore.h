@@ -1,0 +1,30 @@
+@interface PLThumbFileManagerCore : NSObject
+@property (nonatomic) PLImageFormat format;
+@property (nonatomic) NSString path;
+@property (nonatomic) BOOL isReadOnly;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)isReadOnly;
+- (id)path;
+- (id)format;
+- (id)createImageWithIdentifier:orIndex:;
+- (void)endThumbnailSafePropertyUpdatesOnAssetThumbnailIdentifier:withToken:;
+- (BOOL)setImageForEntry:withIdentifier:orIndex:photoUUID:options:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)beginThumbnailSafePropertyUpdatesOnAssetThumbnailIdentifier:;
+- (id)_debugDescription;
+- (BOOL)usesThumbIdentifiers;
+- (BOOL)validateData:withToken:;
+- (id)imageDataWithIdentifier:orIndex:width:height:bytesPerRow:dataWidth:dataHeight:dataOffset:;
+- (id)thumbnailPathForThumbIdentifier:;
+- (void)preheatDataForThumbnailIndexes:;
+- (void)deleteEntryWithIdentifier:;
+- (id)initWithImageFormat:pathManager:;
++ (id)thumbnailIdentifierURLComponentsForUBFWithAssetUUID:bundleScope:;
++ (id)thumbnailPathForThumbIdentifier:withPathManager:recipeID:forDelete:;
++ (id)maxMasterSizeFromSourceImageSize:format:;
++ (id)_fileIdentifierForThumbnailIdentifierComponents:recipeID:;
+@end

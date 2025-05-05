@@ -1,0 +1,30 @@
+@interface IESLiveInteractionLinkerJoinChannelContext : NSObject
+@property (nonatomic) IESLiveLinkmicLinkAudienceJoinChannelContext linkmicContext;
+@property (nonatomic) q payCount;
+@property (nonatomic) BOOL isPaidLinkmic;
+@property (nonatomic) IESLiveMsgBoardItemInfo msgBoardItem;
+@property (nonatomic) NSInteger applyType;
+@property (nonatomic) IESLiveLinkMicAudienceJoinChannelResponse_DelegateSetting delegateSetting;
+@property (nonatomic) NSString joinChannelPrompt;
+@property (nonatomic) NSString token;
+@property (nonatomic) NSObject rawData;
+@property (nonatomic) NSString promptString;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)delegateSetting;
+- (id)initWithLinkmicLinkAudienceJoinChannelContext:;
+- (BOOL)isPaidLinkmic;
+- (id)joinChannelPrompt;
+- (id)linkmicContext;
+- (id)msgBoardItem;
+- (long long)payCount;
+- (void)setJoinChannelPrompt:;
+- (void)setLinkmicContext:;
+- (id)token;
+- (void).cxx_destruct;
+- (id)rawData;
+- (id)promptString;
+- (int)applyType;
+@end

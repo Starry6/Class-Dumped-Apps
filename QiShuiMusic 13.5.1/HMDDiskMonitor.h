@@ -1,0 +1,31 @@
+@interface HMDDiskMonitor : HMDMonitor
+@property (nonatomic) NSHashTable visitors;
+@property (nonatomic) HMDFolderInfo folderVisitor;
+@property (nonatomic) HMDDiskMonitorConfig diskConfig;
+@property (nonatomic) double nextAvailableTimeInterval;
+- (void)addFileVisitor:;
+- (void)willLeaveScene:;
+- (void)addFolderInfoVisitor;
+- (id)complianceConvert:;
+- (void)didEnterScene:;
+- (id)diskConfig;
+- (id)folderVisitor;
+- (double)nextAvailableTimeInterval;
+- (void)recordForSpecificScene:;
+- (void)removeFileVisitor:;
+- (void)removeFolderInfoVisitor;
+- (unsigned long long)reporterPriority;
+- (void)setDiskConfig:;
+- (void)setFolderVisitor:;
+- (void)setNextAvailableTimeInterval:;
+- (void)setVisitors:;
+- (void)updateConfig:;
+- (id)visitors;
+- (id)init;
+- (void)didEnterBackground:;
+- (void)start;
+- (void)stop;
+- (void).cxx_destruct;
+- (Class)storeClass;
++ (id)sharedMonitor;
+@end

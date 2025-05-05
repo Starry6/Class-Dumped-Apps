@@ -1,0 +1,32 @@
+@interface FigCaptureIrisStillImageSettings : FigCaptureStillImageSettings
+@property (nonatomic) NSInteger movieMode;
+@property (nonatomic) FigCaptureMovieFileRecordingSettings movieRecordingSettings;
+@property (nonatomic) NSURL movieURLForOriginalImage;
+@property (nonatomic) NSArray movieLevelMetadataForOriginalImage;
+@property (nonatomic) NSURL spatialOverCaptureMovieURLForOriginalImage;
+@property (nonatomic) NSArray spatialOverCaptureMovieLevelMetadataForOriginalImage;
+@property (nonatomic) {CGSize=dd} nonDestructiveCropSize;
+@property (nonatomic) FigCaptureSemanticStyle semanticStyle;
+- (void)setSemanticStyle:;
+- (void)dealloc;
+- (id)semanticStyle;
+- (void)setNonDestructiveCropSize:;
+- (id)movieURLForOriginalImage;
+- (id)initWithCoder:;
+- (id)movieRecordingSettings;
+- (id)spatialOverCaptureMovieURLForOriginalImage;
+- (void)encodeWithCoder:;
+- (void)setMovieMode:;
+- (id)nonDestructiveCropSize;
+- (void)setSpatialOverCaptureMovieURLForOriginalImage:;
+- (void)setMovieRecordingSettings:;
+- (int)movieMode;
+- (id)spatialOverCaptureMovieLevelMetadataForOriginalImage;
+- (id)description;
+- (void)setMovieLevelMetadataForOriginalImage:;
+- (void)setSpatialOverCaptureMovieLevelMetadataForOriginalImage:;
+- (void)setMovieURLForOriginalImage:;
+- (id)movieLevelMetadataForOriginalImage;
+- (id)copyWithZone:;
++ (BOOL)supportsSecureCoding;
+@end

@@ -1,0 +1,2 @@
+@interface AVFigAssetWriterGenericTrack : AVFigAssetWriterTrack
+@end

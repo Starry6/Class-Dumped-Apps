@@ -1,0 +1,2 @@
+@interface PHImportCanceler : NSObject
+@end

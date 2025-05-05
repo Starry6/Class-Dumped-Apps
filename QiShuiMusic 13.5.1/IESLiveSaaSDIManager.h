@@ -1,0 +1,35 @@
+@interface IESLiveSaaSDIManager : NSObject
+@property (nonatomic) NSMapTable store;
+@property (nonatomic) IESLiveSaaSDI appDI;
+@property (nonatomic) IESLiveSaaSDIIsolation isolationInfo;
+@property (nonatomic) <IESLiveSaaSDI> currentRoomDI;
+@property (nonatomic) <IESLiveSaaSDI> currentSlideDI;
+@property (nonatomic) BOOL disableIESLiveSaaSLock;
+- (id)aDIForContext:;
+- (id)appDI;
+- (id)currentRoomDI;
+- (id)currentSlideDI;
+- (BOOL)disableIESLiveSaaSLock;
+- (id)isolationInfo;
+- (id)registerDI;
+- (id)registerDIWithParentDI:;
+- (void)setAppDI:;
+- (void)setCurrentRoomDI:;
+- (void)setCurrentSlideDI:;
+- (void)setIsolationInfo:;
+- (void)setRelationshipWithParentDI:childDI:;
+- (void)unregisterDIForContext:;
+- (id)init;
+- (void)setStore:;
+- (void).cxx_destruct;
+- (id)store;
++ (id)aDIForProtocol:withDIContextAtttacher:;
++ (void)combineDisposableForMultiUse:withProtocols:;
++ (id)currentDI;
++ (id)currentDIContext;
++ (BOOL)isUseUniversalDI;
++ (id)multiUse:forProtocol:withContextAtttacher:;
++ (id)objectforProtocol:withContextAtttacher:;
++ (BOOL)use:forProtocol:withContextAtttacher:;
++ (id)shared;
+@end

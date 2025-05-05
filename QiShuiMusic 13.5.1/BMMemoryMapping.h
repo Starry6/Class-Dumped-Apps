@@ -1,0 +1,36 @@
+@interface BMMemoryMapping : NSObject
+@property (nonatomic) ^v start;
+@property (nonatomic) * end;
+@property (nonatomic) Q currentWriteOffset;
+@property (nonatomic) Q used;
+@property (nonatomic) Q freeSpace;
+@property (nonatomic) Q size;
+@property (nonatomic) q offset;
+@property (nonatomic) BOOL writable;
+- (void)sync;
+- (unsigned long long)used;
+- (char *)end;
+- (id)init;
+- (void)dealloc;
+- (BOOL)canAtomicallyAccessOffset:;
+- (id)dataAtOffset:withLength:makeCopy:;
+- (id)start;
+- (id)currentPosition;
+- (BOOL)mapWithFileHandle:fileSize:;
+- (BOOL)atomicUpdateOffset:withValue:shouldReplace:;
+- (BOOL)isWritable;
+- (long long)offset;
+- (id)initWithSize:protection:advice:offset:;
+- (unsigned long long)freeSpace;
+- (unsigned long long)currentWriteOffset;
+- (void).cxx_destruct;
+- (void)writeBytes:toOffset:length:;
+- (unsigned char)atomicWriteBytes:toOffset:expected:;
+- (void)updateToMaxOfCurrentWriteOffsetAnd:;
+- (unsigned char)atomicReadAtOffset:value:;
+- (BOOL)mapWithSharedMemory:;
+- (void)unmap;
+- (BOOL)isValidReadFromOffset:withLength:;
+- (unsigned long long)size;
++ (id)new;
+@end

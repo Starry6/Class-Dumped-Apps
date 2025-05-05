@@ -1,0 +1,30 @@
+@interface UgenV3Event : NSObject
+@property (nonatomic) UgenV3EventOn on;
+@property (nonatomic) NSArray handlers;
+@property (nonatomic) UgenWidget widget;
+@property (nonatomic) q convertActionType;
+@property (nonatomic) {CGPoint=dd} beganPoint;
+@property (nonatomic) {CGPoint=dd} endedPoint;
+@property (nonatomic) NSDate beganDate;
+@property (nonatomic) NSDate endedDate;
+- (id)beganDate;
+- (id)beganPoint;
+- (long long)convertActionType;
+- (id)endedPoint;
+- (id)messageWithWidget:handler:;
+- (void)setBeganDate:;
+- (void)setBeganPoint:;
+- (void)setConvertActionType:;
+- (void)setEndedPoint:;
+- (id)ugenMessageBodyDict;
+- (id)handlers;
+- (void)setHandlers:;
+- (void)setWidget:;
+- (id)widget;
+- (id)on;
+- (id)initWithDictionary:;
+- (void)setOn:;
+- (void).cxx_destruct;
+- (id)endedDate;
+- (void)setEndedDate:;
+@end

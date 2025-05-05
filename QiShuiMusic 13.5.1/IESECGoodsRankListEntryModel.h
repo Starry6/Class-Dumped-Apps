@@ -1,0 +1,32 @@
+@interface IESECGoodsRankListEntryModel : MTLModel
+@property (nonatomic) IESECURLModel brandIcon;
+@property (nonatomic) NSString rankName;
+@property (nonatomic) IESECURLModel rankingIcon;
+@property (nonatomic) NSString rankSchema;
+@property (nonatomic) NSNumber rank;
+@property (nonatomic) Q rankListStyle;
+@property (nonatomic) IESECURLModel bgIcon;
+@property (nonatomic) NSString rankID;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setRankingIcon:;
+- (id)bgIcon;
+- (id)brandIcon;
+- (id)rankID;
+- (unsigned long long)rankListStyle;
+- (id)rankName;
+- (id)rankSchema;
+- (id)rankingIcon;
+- (void)setBgIcon:;
+- (void)setBrandIcon:;
+- (void)setRankID:;
+- (void)setRankListStyle:;
+- (void)setRankName:;
+- (void)setRankSchema:;
+- (id)rank;
+- (void).cxx_destruct;
+- (void)setRank:;
++ (id)JSONKeyPathsByPropertyKey;
+@end

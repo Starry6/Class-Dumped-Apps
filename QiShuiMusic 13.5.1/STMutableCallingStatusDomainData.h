@@ -1,0 +1,31 @@
+@interface STMutableCallingStatusDomainData : STCallingStatusDomainData
+@property (nonatomic) STMutableListData callDescriptorListData;
+@property (nonatomic) NSArray callDescriptors;
+@property (nonatomic) NSSet activeCallAttributions;
+@property (nonatomic) NSSet ringingCallAttributions;
+@property (nonatomic) NSSet activeVideoConferenceAttributions;
+@property (nonatomic) NSSet ringingVideoConferenceAttributions;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)addRingingVideoConferenceAttribution:;
+- (void)removeActiveCallAttribution:;
+- (void)removeCallDescriptor:;
+- (id)callDescriptorListData;
+- (void)setActiveCallAttributions:;
+- (void)removeRingingCallAttribution:;
+- (void)setRingingCallAttributions:;
+- (BOOL)applyDiff:;
+- (void)setCallDescriptors:;
+- (void)addActiveCallAttribution:;
+- (void)removeRingingVideoConferenceAttribution:;
+- (void)addRingingCallAttribution:;
+- (void)setActiveVideoConferenceAttributions:;
+- (void)addActiveVideoConferenceAttribution:;
+- (void)setRingingVideoConferenceAttributions:;
+- (id)initWithCallDescriptorListData:;
+- (void)addCallDescriptor:;
+- (void)removeActiveVideoConferenceAttribution:;
+- (id)copyWithZone:;
+@end

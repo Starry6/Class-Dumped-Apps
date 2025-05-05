@@ -1,0 +1,2 @@
+@interface IESLiveInnerPbRoomSensitiveWordApiRoot : GPBRootObject
+@end

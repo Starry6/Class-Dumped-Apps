@@ -1,0 +1,32 @@
+@interface EMFStringUtilities : NSObject
++ (id)_baseStringForEmojiString:;
++ (id)_multiPersonStringForString:skinToneVariantSpecifier:;
++ (id)_stringWithUnichar:;
++ (id)_skinToneSpecifiersForString:;
++ (id)_skinToneChooserVariantsForString:;
++ (id)professionSkinToneEmojiBaseKey:;
++ (id)_coupleSkinToneChooserVariantsForString:;
++ (id)_preferenceIndexString:;
++ (unsigned int)_firstLongCharacterOfString:;
++ (id)_baseFirstCharacterString:;
++ (BOOL)_emojiString:containsSubstring:;
++ (BOOL)_genderEmojiBaseStringNeedVariantSelector:;
++ (BOOL)_hasSkinToneVariantsForString:;
++ (id)skinToneSpecifierTypeFromEmojiFitzpatrickModifier:;
++ (int)_skinToneModifierFromSpecifierType:;
++ (id)_skinToneSuffixFromSpecifierType:;
++ (int)_skinToneForString:;
++ (id)_tokenizedMultiPersonFromString:;
++ (id)_tokenizedHandshakeFromString:;
++ (long long)multiPersonTypeForString:;
++ (id)_joiningStringForCoupleString:;
++ (id)_skinToneChooserVariantsForHandHoldingCoupleType:;
++ (id)_skinToneChooserArraysForCoupleType:joiner:;
++ (id)_skinToneChooserVariantsForString:usesSilhouetteSpecifiers:;
++ (id)_coupleStringWithLeftPerson:leftVariant:joiningString:rightPerson:rightVariant:;
++ (id)_skinToneVariantsForMultiPersonType:;
++ (id)_skinToneVariantsForCouple:joiner:;
++ (id)_skinToneVariantsForString:;
++ (id)_normalizeMultiPersonGroupToShortFormEncoding:;
++ (id)_normalizeMultiPersonGroupToLongFormEncoding:;
+@end

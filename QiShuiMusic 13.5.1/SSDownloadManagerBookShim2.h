@@ -1,0 +1,23 @@
+@interface SSDownloadManagerBookShim2 : SSDownloadManager
+- (id)initWithManagerOptions:;
+- (void)moveDownload:beforeDownload:completionBlock:;
+- (void)__book_dispatchBlock:withError:;
+- (void)_sendDownloadsChanged:;
+- (void)restartDownloads:completionBlock:;
+- (id)_copyDownloadsForMessage:downloadIDs:;
+- (void)resumeDownloads:completionBlock:;
+- (void)_pauseDownloads:forced:completionBlock:;
+- (void)cancelDownloads:completionBlock:;
+- (void)__book_pauseDownloads:completionBlock:;
+- (id)__book_downloadsForStati:overrideFinished:overrideFailed:;
+- (id)bookDownloads;
+- (void)__book_filterDownloads:withResult:;
+- (void)__book_resumeDownloads:completionBlock:;
+- (void)__book_sendDownloadsChanged:filterBooks:;
+- (void)downloadQueue:downloadStates:didCompleteWithError:;
+- (void)downloadQueue:downloadStatesDidChange:;
+- (void)__book_cancelDownloads:completionBlock:;
+- (id)__book_getAllDownloads;
+- (void).cxx_destruct;
+- (void)moveDownload:afterDownload:completionBlock:;
+@end

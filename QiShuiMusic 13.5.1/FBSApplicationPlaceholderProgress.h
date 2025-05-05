@@ -1,0 +1,34 @@
+@interface FBSApplicationPlaceholderProgress : NSObject
+@property (nonatomic) FBSApplicationPlaceholder placeholder;
+@property (nonatomic) Q installState;
+@property (nonatomic) Q installPhase;
+@property (nonatomic) q state;
+@property (nonatomic) double percentComplete;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (double)percentComplete;
+- (void)dealloc;
+- (id)placeholder;
+- (void)observeValueForKeyPath:ofObject:change:context:;
+- (id)succinctDescriptionBuilder;
+- (long long)state;
+- (void).cxx_destruct;
+- (id)succinctDescription;
+- (id)description;
+- (id)descriptionBuilderWithMultilinePrefix:;
+- (void)invalidate;
+- (id)descriptionWithMultilinePrefix:;
+- (unsigned long long)installState;
+- (unsigned long long)installPhase;
+- (id)initWithPlaceholder:queue:;
+- (BOOL)_queue_updateFromProgress;
+- (BOOL)queue_isValid;
+- (BOOL)queue_updateProxy:;
+- (BOOL)queue_isCancellationAllowed;
+- (unsigned long long)queue_supportedActions;
+- (BOOL)queue_canPerformAction:;
+- (void)_startObservingProgress:withContext:;
+- (void)_stopObservingProgress:withContext:;
+@end

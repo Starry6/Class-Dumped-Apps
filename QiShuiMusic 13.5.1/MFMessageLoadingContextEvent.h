@@ -1,0 +1,37 @@
+@interface MFMessageLoadingContextEvent : NSObject
+@property (nonatomic) MFMessageLoadingContext context;
+@property (nonatomic) NSArray content;
+@property (nonatomic) BOOL hasLoadedCompleteBody;
+@property (nonatomic) BOOL hasLoadedBestAlternativePart;
+@property (nonatomic) Q remainingBytes;
+@property (nonatomic) q transportType;
+@property (nonatomic) NSError error;
+@property (nonatomic) NSError smimeError;
+@property (nonatomic) MFMimePart loadedPart;
+@property (nonatomic) MFMimeBody loadedBody;
+@property (nonatomic) MFMailMessage message;
+- (id)content;
+- (void)setContent:;
+- (void)setTransportType:;
+- (id)context;
+- (void)setError:;
+- (long long)transportType;
+- (id)error;
+- (id)debugDescription;
+- (id)message;
+- (void).cxx_destruct;
+- (id)description;
+- (void)setContext:;
+- (id)_descriptionForDebugging:;
+- (id)smimeError;
+- (BOOL)hasLoadedCompleteBody;
+- (void)setHasLoadedCompleteBody:;
+- (BOOL)hasLoadedBestAlternativePart;
+- (void)setHasLoadedBestAlternativePart:;
+- (unsigned long long)remainingBytes;
+- (void)setRemainingBytes:;
+- (id)loadedPart;
+- (void)setLoadedPart:;
+- (id)loadedBody;
+- (void)setLoadedBody:;
+@end

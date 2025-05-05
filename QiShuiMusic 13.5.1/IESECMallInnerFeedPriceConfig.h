@@ -1,0 +1,36 @@
+@interface IESECMallInnerFeedPriceConfig : NSObject
+@property (nonatomic) NSNumber priceLogoOffsetBottom;
+@property (nonatomic) NSNumber priceLogoTextSize;
+@property (nonatomic) NSNumber priceIntegersSize;
+@property (nonatomic) NSNumber priceIntegersOffsetBottom;
+@property (nonatomic) NSNumber priceDecimalsSize;
+@property (nonatomic) NSNumber priceTextSize;
+@property (nonatomic) NSNumber priceTextHeight;
+@property (nonatomic) NSNumber priceTextOffsetBottom;
+@property (nonatomic) NSNumber saleInfoSize;
+@property (nonatomic) NSNumber saleInfoHeight;
+@property (nonatomic) NSNumber saleInfoOffsetBottom;
+- (id)priceTextHeight;
+- (id)priceDecimalsSize;
+- (id)priceIntegersOffsetBottom;
+- (id)priceIntegersSize;
+- (id)priceLogoOffsetBottom;
+- (id)priceLogoTextSize;
+- (id)priceTextOffsetBottom;
+- (id)priceTextSize;
+- (id)saleInfoHeight;
+- (id)saleInfoOffsetBottom;
+- (id)saleInfoSize;
+- (void)setPriceDecimalsSize:;
+- (void)setPriceIntegersOffsetBottom:;
+- (void)setPriceIntegersSize:;
+- (void)setPriceLogoOffsetBottom:;
+- (void)setPriceLogoTextSize:;
+- (void)setPriceTextHeight:;
+- (void)setPriceTextOffsetBottom:;
+- (void)setPriceTextSize:;
+- (void)setSaleInfoHeight:;
+- (void)setSaleInfoOffsetBottom:;
+- (void)setSaleInfoSize:;
+- (void).cxx_destruct;
+@end

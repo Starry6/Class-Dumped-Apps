@@ -1,0 +1,33 @@
+@interface IESLiveSaaSMessageListUnreadTipView : UIView
+@property (nonatomic) q newReceiveCount;
+@property (nonatomic) UILabel messageLabel;
+@property (nonatomic) UIView contentView;
+@property (nonatomic) UIView shadowView;
+@property (nonatomic) BOOL shouldHidden;
+@property (nonatomic) BOOL hideForLandscape;
+@property (nonatomic) BOOL showShadowEffect;
+@property (nonatomic) @? onTouched;
+- (long long)newReceiveCount;
+- (void)alertViewAppearAnimation;
+- (BOOL)hideForLandscape;
+- (id)onTouched;
+- (void)refreshMessageCount:;
+- (void)refreshMessageCount:withTextFormat:;
+- (void)setHideForLandscape:;
+- (void)setNewReceiveCount:;
+- (void)setOnTouched:;
+- (void)setShouldHidden:;
+- (void)setShowShadowEffect:;
+- (BOOL)shouldHidden;
+- (BOOL)showShadowEffect;
+- (id)contentView;
+- (void)touchesBegan:withEvent:;
+- (void)layoutSubviews;
+- (id)initWithFrame:;
+- (void).cxx_destruct;
+- (id)messageLabel;
+- (void)setShadowView:;
+- (void)setContentView:;
+- (void)setMessageLabel:;
+- (id)shadowView;
+@end

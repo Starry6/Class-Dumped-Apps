@@ -1,0 +1,30 @@
+@interface CEMSystemAirPlaySecurityDeclaration : CEMConfigurationBase
+@property (nonatomic) NSString payloadSecurityType;
+@property (nonatomic) NSString payloadAccessType;
+@property (nonatomic) NSString payloadPassword;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (BOOL)multipleAllowed;
+- (BOOL)mustBeSupervised;
+- (int)activationLevel;
+- (id)assetReferences;
+- (BOOL)loadPayload:error:;
+- (id)serializePayloadWithAssetProviders:;
+- (id)payloadPassword;
+- (void)setPayloadPassword:;
+- (id)payloadSecurityType;
+- (void)setPayloadSecurityType:;
+- (id)payloadAccessType;
+- (void)setPayloadAccessType:;
++ (id)profileType;
++ (id)registeredClassName;
++ (id)registeredIdentifier;
++ (id)allowedPayloadKeys;
++ (id)restrictionPayloadKeys;
++ (id)buildWithIdentifier:withSecurityType:withAccessType:withPassword:;
++ (id)buildRequiredOnlyWithIdentifier:withSecurityType:withAccessType:;
+@end

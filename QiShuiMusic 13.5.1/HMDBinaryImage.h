@@ -1,0 +1,38 @@
+@interface HMDBinaryImage : NSObject
+@property (nonatomic) Q address;
+@property (nonatomic) Q textSize;
+@property (nonatomic) Q vm_slide;
+@property (nonatomic) BOOL isExecutable;
+@property (nonatomic) NSString name;
+@property (nonatomic) NSString uuid;
+@property (nonatomic) NSInteger cpuType;
+@property (nonatomic) NSInteger cpuSubType;
+@property (nonatomic) NSString path;
+@property (nonatomic) BOOL isFromAPP;
+- (int)cpuSubType;
+- (BOOL)isFromAPP;
+- (void)setCpuSubType:;
+- (void)setIsFromAPP:;
+- (void)setVm_slide:;
+- (unsigned long long)vm_slide;
+- (id)path;
+- (void)setName:;
+- (BOOL)isExecutable;
+- (id)uuid;
+- (void)setPath:;
+- (void)setAddress:;
+- (void)setUuid:;
+- (unsigned long long)hash;
+- (int)cpuType;
+- (void)setCpuType:;
+- (void).cxx_destruct;
+- (unsigned long long)address;
+- (id)name;
+- (BOOL)isEqual:;
+- (unsigned long long)textSize;
+- (void)setIsExecutable:;
+- (void)setTextSize:;
++ (id)binaryImageWithMachoImage:;
++ (id)findSharedcacheImages:;
++ (id)linkedBinaryImages;
+@end

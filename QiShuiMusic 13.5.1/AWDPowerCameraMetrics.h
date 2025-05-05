@@ -1,0 +1,35 @@
+@interface AWDPowerCameraMetrics : PBCodable
+@property (nonatomic) BOOL hasTimestamp;
+@property (nonatomic) Q timestamp;
+@property (nonatomic) BOOL hasCameraFrontOnDuration;
+@property (nonatomic) I cameraFrontOnDuration;
+@property (nonatomic) BOOL hasCameraBackOnDuration;
+@property (nonatomic) I cameraBackOnDuration;
+@property (nonatomic) BOOL hasCameraTorchOnDuration;
+@property (nonatomic) I cameraTorchOnDuration;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)setHasTimestamp:;
+- (void)mergeFrom:;
+- (BOOL)hasTimestamp;
+- (void)setTimestamp:;
+- (BOOL)readFrom:;
+- (unsigned long long)timestamp;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setCameraFrontOnDuration:;
+- (void)setHasCameraFrontOnDuration:;
+- (BOOL)hasCameraFrontOnDuration;
+- (void)setCameraBackOnDuration:;
+- (void)setHasCameraBackOnDuration:;
+- (BOOL)hasCameraBackOnDuration;
+- (void)setCameraTorchOnDuration:;
+- (void)setHasCameraTorchOnDuration:;
+- (BOOL)hasCameraTorchOnDuration;
+- (unsigned int)cameraFrontOnDuration;
+- (unsigned int)cameraBackOnDuration;
+- (unsigned int)cameraTorchOnDuration;
+@end

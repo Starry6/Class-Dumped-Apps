@@ -1,0 +1,31 @@
+@interface AWEIMUITask : NSObject
+@property (nonatomic) @? taskBlock;
+@property (nonatomic) NSString bizID;
+@property (nonatomic) NSHashTable weakDelegates;
+@property (nonatomic) NSMutableArray completions;
+@property (nonatomic) q state;
+@property (nonatomic) NSString mergeID;
+- (void)addWeakDelegate:;
+- (void)logToState:;
+- (void)removeWeakDelegate:;
+- (void)setBizID:;
+- (void)setTaskBlock:;
+- (void)setWeakDelegates:;
+- (id)taskBlock;
+- (id)weakDelegates;
+- (id)init;
+- (void)addCompletion:;
+- (void)setState:;
+- (void)setCompletions:;
+- (id)completions;
+- (long long)state;
+- (void).cxx_destruct;
+- (id)description;
+- (id)mergeID;
+- (void)setMergeID:;
+- (id)bizID;
++ (id)taskWithBizID:taskBlock:;
++ (id)transactionTaskWithBizID:taskBlock:;
++ (id)transactionTaskWithBizID:taskBlock:completion:;
++ (id)sharedDateFormatter;
+@end

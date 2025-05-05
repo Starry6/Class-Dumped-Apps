@@ -1,0 +1,34 @@
+@interface IESMMEffectTimeRange : NSObject
+@property (nonatomic) double startTime;
+@property (nonatomic) double endTime;
+@property (nonatomic) Q effectType;
+@property (nonatomic) q timeMachineStatus;
+@property (nonatomic) NSString effectPathId;
+@property (nonatomic) IESMMEffectTimeRange sourceTimeRange;
+@property (nonatomic) BOOL isTimeRangeConverted;
+@property (nonatomic) NSString rangeID;
+@property (nonatomic) q filterType;
+- (id)initWithTimeRange:moveDuration:;
+- (id)rangeID;
+- (id)effectPathId;
+- (BOOL)isTimeRangeConverted;
+- (void)setEffectPathId:;
+- (void)setIsTimeRangeConverted:;
+- (void)setRangeID:;
+- (void)setTimeMachineStatus:;
+- (long long)timeMachineStatus;
+- (unsigned long long)effectType;
+- (id)init;
+- (void)setFilterType:;
+- (long long)filterType;
+- (void)setStartTime:;
+- (id)sourceTimeRange;
+- (void)setSourceTimeRange:;
+- (void)setEndTime:;
+- (double)startTime;
+- (double)endTime;
+- (void).cxx_destruct;
+- (id)copyWithZone:;
+- (void)setEffectType:;
+- (id)initWithTimeRange:;
+@end

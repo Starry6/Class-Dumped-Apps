@@ -1,0 +1,34 @@
+@interface INPrivateAddMediaIntentData : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) INPrivateMediaIntentData privateMediaIntentData;
+@property (nonatomic) NSArray audioSearchResults;
+@property (nonatomic) NSArray internalSignals;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)_dictionaryRepresentation;
+- (void)_intents_updateContainerWithCache:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (id)descriptionAtIndent:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)_intents_cacheableObjects;
+- (id)_intents_encodeWithJSONEncoder:codableDescription:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)audioSearchResults;
+- (id)internalSignals;
+- (id)privateMediaIntentData;
+- (void)setPrivateMediaIntentData:;
+- (id)initWithPrivateMediaIntentData:audioSearchResults:internalSignals:;
+- (id)initWithAudioSearchResults:;
+- (id)initWithPrivateMediaIntentData:audioSearchResults:;
++ (id)_intents_decodeWithJSONDecoder:codableDescription:from:;
++ (BOOL)supportsSecureCoding;
+@end

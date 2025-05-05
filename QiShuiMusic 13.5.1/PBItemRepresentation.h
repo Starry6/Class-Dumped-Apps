@@ -1,0 +1,36 @@
+@interface PBItemRepresentation : NSObject
+@property (nonatomic) Q preferredRepresentation;
+@property (nonatomic) <PBItemRepresentationDataTransferDelegate> dataTransferDelegate;
+@property (nonatomic) NSString typeIdentifier;
+@property (nonatomic) q visibility;
+@property (nonatomic) BOOL isDataAvailableImmediately;
+- (void)setVisibility:;
+- (long long)visibility;
+- (id)typeIdentifier;
+- (void).cxx_destruct;
+- (id)dataTransferDelegate;
+- (void)setDataTransferDelegate:;
+- (id)initWithType:preferredRepresentation:loader:;
+- (id)copyWithDoNothingLoaderBlock;
+- (id)performProgressTrackingWithLoaderBlock:onCancelCallback:;
+- (void)setLoaderBlock:;
+- (unsigned long long)preferredRepresentation;
+- (void)setPreferredRepresentation:;
+- (id)loadWithContext:completionHandler:;
+- (id)loadFileCopyWithContext:completion:;
+- (id)loadDataWithContext:completion:;
+- (id)initWithType:preferredRepresentation:v3_loader:;
+- (BOOL)isDataAvailableImmediately;
+- (id)initWithType:preferredRepresentation:v2_loader:;
+- (id)initWithNSItemRepresentation:;
+- (id)_loadWithContext:completionBlock:;
+- (id)loadWithCompletionHandler:;
+- (id)loadDataWithCompletion:;
+- (id)loadDataWithDetailedCompletion:;
+- (id)loadFileCopyWithCompletion:;
+- (id)loadFileCopyWithDetailedCompletion:;
+- (id)loadOpenInPlaceWithCompletion:;
+- (id)loadOpenInPlaceWithDetailedCompletion:;
+- (id)loadOpenInPlaceWithContext:completion:;
+- (void)setIsDataAvailableImmediately:;
+@end

@@ -1,0 +1,32 @@
+@interface PTYPackage : NSObject
+@property (nonatomic) NSString name;
+@property (nonatomic) NSString version;
+@property (nonatomic) NSString deployment;
+@property (nonatomic) Q taskType;
+@property (nonatomic) Q from;
+@property (nonatomic) NSString buildTime;
+@property (nonatomic) NSArray models;
+@property (nonatomic) NSDictionary extra;
+@property (nonatomic) BOOL isValid;
+- (id)buildTime;
+- (id)initWithCorePackage:;
+- (id)initWithPackageInfo:;
+- (void)setBuildTime:;
+- (id)deployment;
+- (void)setModels:;
+- (id)extra;
+- (void)setName:;
+- (void)setVersion:;
+- (id)version;
+- (unsigned long long)taskType;
+- (id)models;
+- (BOOL)isValid;
+- (void).cxx_destruct;
+- (id)description;
+- (id)name;
+- (id).cxx_construct;
+- (void)setTaskType:;
+- (unsigned long long)from;
+- (void)setFrom:;
+- (void)setDeployment:;
+@end

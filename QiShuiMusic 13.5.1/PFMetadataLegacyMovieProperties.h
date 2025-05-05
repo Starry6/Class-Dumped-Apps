@@ -1,0 +1,30 @@
+@interface PFMetadataLegacyMovieProperties : PFMetadataCore
+- (id)cameraMake;
+- (id)initWithAVProxyData:timeZoneLookup:;
+- (id)nominalFrameRate;
+- (id)cameraModel;
+- (id)software;
+- (id)plistForEncoding;
+- (void).cxx_destruct;
+- (id)_makeDateTimeProperties;
+- (id)_makeGPSProperties;
+- (id)_makeGeometryProperties;
+- (BOOL)isEqual:;
+- (BOOL)configureWithMetadataPlist:;
+- (id)copyWithZone:;
+- (id)audioSampleRate;
+- (id)audioDataRate;
+- (id)audioTrackFormat;
+- (id)videoCodecName;
+- (BOOL)isMovie;
+- (BOOL)isSloMo;
+- (BOOL)isTimelapse;
+- (id)durationTimeInterval;
+- (id)videoDataRate;
+- (id)audioTrackFormatFlags;
+- (id)initWithMetadataPlist:timeZoneLookup:;
+- (id)_primaryVideoTrack;
+- (id)_primaryAudioTrack;
+- (void)_enumerateTracksOfType:withBlock:;
+- (id)_formatDescription;
+@end

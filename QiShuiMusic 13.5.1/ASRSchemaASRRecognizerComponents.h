@@ -1,0 +1,34 @@
+@interface ASRSchemaASRRecognizerComponents : SISchemaInstrumentationMessage
+@property (nonatomic) NSString frontend;
+@property (nonatomic) BOOL hasFrontend;
+@property (nonatomic) NSString decodable;
+@property (nonatomic) BOOL hasDecodable;
+@property (nonatomic) NSString decoder;
+@property (nonatomic) BOOL hasDecoder;
+@property (nonatomic) NSData jsonData;
+- (id)initWithJSON:;
+- (id)suppressMessageUnderConditions;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (id)jsonData;
+- (unsigned long long)hash;
+- (void)setDecoder:;
+- (id)decoder;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)decodable;
+- (BOOL)hasFrontend;
+- (void)deleteFrontend;
+- (BOOL)hasDecodable;
+- (void)deleteDecodable;
+- (BOOL)hasDecoder;
+- (void)deleteDecoder;
+- (id)frontend;
+- (void)setFrontend:;
+- (void)setDecodable:;
+- (void)setHasFrontend:;
+- (void)setHasDecodable:;
+- (void)setHasDecoder:;
+@end

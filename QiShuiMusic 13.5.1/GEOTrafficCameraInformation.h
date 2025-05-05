@@ -1,0 +1,30 @@
+@interface GEOTrafficCameraInformation : PBCodable
+@property (nonatomic) BOOL hasCameraIdentifier;
+@property (nonatomic) NSString cameraIdentifier;
+@property (nonatomic) BOOL hasCameraType;
+@property (nonatomic) NSInteger cameraType;
+- (void)readAll:;
+- (id)initWithJSON:;
+- (id)jsonRepresentation;
+- (id)initWithDictionary:;
+- (void)writeTo:;
+- (int)cameraType;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)cameraIdentifier;
+- (id)copyWithZone:;
+- (BOOL)hasCameraIdentifier;
+- (void)setCameraIdentifier:;
+- (void)setCameraType:;
+- (void)setHasCameraType:;
+- (BOOL)hasCameraType;
+- (id)cameraTypeAsString:;
+- (int)StringAsCameraType:;
++ (BOOL)isValid:;
+@end

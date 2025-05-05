@@ -1,0 +1,2 @@
+@interface InteractionChatSilenceApiRoot : GPBRootObject
+@end

@@ -1,0 +1,2 @@
+@interface PKInkParser : NSObject
+@end

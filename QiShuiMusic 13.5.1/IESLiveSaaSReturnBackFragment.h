@@ -1,0 +1,34 @@
+@interface IESLiveSaaSReturnBackFragment : IESLiveRoomComponent
+@property (nonatomic) IESLiveSaaSLiveRoomModel room;
+@property (nonatomic) HTSEventContext trackContext;
+@property (nonatomic) RACDisposable dispose;
+@property (nonatomic) UIView indicatorView;
+@property (nonatomic) <IESLiveSaaSReturnBackRouter> returnRouter;
+@property (nonatomic) BOOL isFinished;
+@property (nonatomic) NSInteger returnBackStyle;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (int)returnBackStyle;
+- (void)componentDidMount;
+- (void)componentDidUnmount;
+- (void)componentOrientationChanged:;
+- (void)hideComponent;
+- (void)layoutIndicatorView:;
+- (void)liveWillFinished;
+- (BOOL)needMoveUpIndicator;
+- (void)renderIndicatorView;
+- (id)returnRouter;
+- (void)setDispose:;
+- (void)setReturnBackStyle:;
+- (void)setReturnRouter:;
+- (void)showComponent;
+- (id)dispose;
+- (BOOL)isFinished;
+- (void).cxx_destruct;
+- (id)indicatorView;
+- (void)setIndicatorView:;
+- (void)setIsFinished:;
++ (id)componentWithRoom:trackContext:componentContext:;
+@end

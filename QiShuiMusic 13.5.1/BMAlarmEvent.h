@@ -1,0 +1,31 @@
+@interface BMAlarmEvent : BMEventBase
+@property (nonatomic) BOOL isSleepAlarm;
+@property (nonatomic) Q eventType;
+@property (nonatomic) Q lastEventType;
+@property (nonatomic) NSUUID alarmID;
+@property (nonatomic) I dataVersion;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)alarmID;
+- (id)initWithProtoData:;
+- (BOOL)isSleepAlarm;
+- (id)init;
+- (id)proto;
+- (id)json;
+- (id)encodeAsProto;
+- (unsigned long long)eventType;
+- (unsigned int)dataVersion;
+- (id)initWithProto:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)serialize;
+- (id)jsonDict;
+- (BOOL)isEqual:;
+- (id)initWithEventType:alarmID:isSleepAlarm:;
+- (id)initWithEventType:lastEventType:alarmID:isSleepAlarm:;
+- (unsigned long long)lastEventType;
++ (id)new;
++ (id)eventWithData:dataVersion:;
+@end

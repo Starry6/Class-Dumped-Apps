@@ -1,0 +1,33 @@
+@interface LynxEventSpec : NSObject
+@property (nonatomic) NSString name;
+@property (nonatomic) BOOL shouldCaptureBubble;
+@property (nonatomic) BOOL shouldCaptureCatch;
+@property (nonatomic) BOOL interestedInBubble;
+@property (nonatomic) BOOL interestedInCatch;
+@property (nonatomic) BOOL shouldLepusCaptureBubble;
+@property (nonatomic) BOOL shouldLepusCaptureCatch;
+@property (nonatomic) BOOL interestedInLepusBubble;
+@property (nonatomic) BOOL interestedInLepusCatch;
+- (void)composeWithOtherSpec:;
+- (id)initWithRawEvent:withJSEvent:;
+- (BOOL)interestedInBubble;
+- (BOOL)interestedInCatch;
+- (BOOL)interestedInLepusBubble;
+- (BOOL)interestedInLepusCatch;
+- (void)setInterestedInBubble:;
+- (void)setInterestedInCatch:;
+- (void)setInterestedInLepusBubble:;
+- (void)setInterestedInLepusCatch:;
+- (void)setShouldCaptureBubble:;
+- (void)setShouldCaptureCatch:;
+- (void)setShouldLepusCaptureBubble:;
+- (void)setShouldLepusCaptureCatch:;
+- (BOOL)shouldCaptureBubble;
+- (BOOL)shouldCaptureCatch;
+- (BOOL)shouldLepusCaptureBubble;
+- (BOOL)shouldLepusCaptureCatch;
+- (void)setName:;
+- (void).cxx_destruct;
+- (id)name;
++ (id)convertRawEvents:andRwaLepusEvents:;
+@end

@@ -1,0 +1,30 @@
+@interface ICIAMMessagePresentationTrigger : PBCodable
+@property (nonatomic) BOOL hasTriggerName;
+@property (nonatomic) NSString triggerName;
+@property (nonatomic) BOOL hasKind;
+@property (nonatomic) NSInteger kind;
+@property (nonatomic) BOOL hasBundleIdentifier;
+@property (nonatomic) NSString bundleIdentifier;
+- (void)setKind:;
+- (id)kindAsString:;
+- (id)bundleIdentifier;
+- (void)writeTo:;
+- (int)kind;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (void)setBundleIdentifier:;
+- (void)setHasKind:;
+- (BOOL)hasKind;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)hasBundleIdentifier;
+- (int)StringAsKind:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (BOOL)hasTriggerName;
+- (id)triggerName;
+- (void)setTriggerName:;
+@end

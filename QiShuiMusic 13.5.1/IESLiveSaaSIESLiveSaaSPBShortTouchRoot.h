@@ -1,0 +1,2 @@
+@interface IESLiveSaaSIESLiveSaaSPBShortTouchRoot : GPBRootObject
+@end

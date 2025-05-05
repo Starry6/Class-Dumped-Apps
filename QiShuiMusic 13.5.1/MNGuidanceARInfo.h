@@ -1,0 +1,36 @@
+@interface MNGuidanceARInfo : NSObject
+@property (nonatomic) NSInteger eventType;
+@property (nonatomic) NSInteger maneuverType;
+@property (nonatomic) <GEOServerFormattedString> instruction;
+@property (nonatomic) NSDictionary variableOverrides;
+@property (nonatomic) NSString arrowLabel;
+@property (nonatomic) {?=ddd} locationCoordinate;
+@property (nonatomic) {GEOPolylineCoordinateRange={?=If}{?=If}} locationCoordinateRange;
+@property (nonatomic) NSString maneuverRoadName;
+@property (nonatomic) double heading;
+@property (nonatomic) Q stepIndex;
+@property (nonatomic) Q priority;
+- (id)init;
+- (void)setPriority:;
+- (double)heading;
+- (int)eventType;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)debugDescription;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (unsigned long long)stepIndex;
+- (BOOL)isEqual:;
+- (unsigned long long)priority;
+- (int)maneuverType;
+- (id)instruction;
+- (id)arrowLabel;
+- (id)locationCoordinate;
+- (id)maneuverRoadName;
+- (id)variableOverrides;
+- (id)initWithEventType:maneuverType:instruction:variableOverrides:arrowLabel:locationCoordinate:maneuverRoadName:heading:stepIndex:;
+- (id)initWithEventType:maneuverType:instruction:variableOverrides:arrowLabel:locationCoordinateRange:maneuverRoadName:stepIndex:;
+- (id)locationCoordinateRange;
++ (BOOL)supportsSecureCoding;
+@end

@@ -1,0 +1,37 @@
+@interface IESECLiveIconsContentGroupView : UIView
+@property (nonatomic) IESECLiveIconsGroupView iconView;
+@property (nonatomic) IESECLiveContentGroupView contentView;
+@property (nonatomic) MASConstraint contenViewLeftConstraint;
+@property (nonatomic) CALayer maskLayer;
+@property (nonatomic) BOOL needAnimated;
+@property (nonatomic) {UIEdgeInsets=dddd} edgeInsets;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)p_showAnimation;
+- (void)p_updateContentViewsConstraints;
+- (void)addIcon:content:;
+- (id)contenViewLeftConstraint;
+- (void)iconsGroupView:didResetURLsWithWidth:;
+- (void)iconsGroupView:willAppendAvatarWithWidthGap:duration:;
+- (BOOL)needAnimated;
+- (void)p_updateContainerConstraints;
+- (void)setContenViewLeftConstraint:;
+- (void)setNeedAnimated:;
+- (void)showAnimationAfterDelay:;
+- (void)addIcon:;
+- (void)setEdgeInsets:;
+- (void)animationDidStart:;
+- (id)contentView;
+- (void)layoutSubviews;
+- (id)iconView;
+- (void)setIconView:;
+- (id)edgeInsets;
+- (void).cxx_destruct;
+- (void)setContentView:;
+- (id)maskLayer;
+- (void)addContent:;
+- (void)setMaskLayer:;
++ (id)createAnimatedGroupView;
+@end

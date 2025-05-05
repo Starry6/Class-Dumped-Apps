@@ -1,0 +1,36 @@
+@interface Lego.CollectionVM : NSObject
+- (void)scrollViewDidEndZooming:withView:atScale:;
+- (void)scrollViewDidEndDecelerating:;
+- (id)viewForZoomingInScrollView:;
+- (void)scrollViewWillBeginDecelerating:;
+- (void)scrollViewDidScroll:;
+- (void)scrollViewWillBeginDragging:;
+- (BOOL)scrollViewShouldScrollToTop:;
+- (void)scrollViewWillBeginZooming:withView:;
+- (void)scrollViewDidEndDragging:willDecelerate:;
+- (void)scrollViewWillEndDragging:withVelocity:targetContentOffset:;
+- (void)scrollViewDidEndScrollingAnimation:;
+- (void)scrollViewDidZoom:;
+- (void)scrollViewDidChangeAdjustedContentInset:;
+- (void)scrollViewDidScrollToTop:;
+- (id)collectionView:layout:referenceSizeForFooterInSection:;
+- (id)collectionView:layout:insetForSectionAtIndex:;
+- (id)collectionView:layout:sizeForItemAtIndexPath:;
+- (double)collectionView:layout:minimumLineSpacingForSectionAtIndex:;
+- (id)collectionView:layout:referenceSizeForHeaderInSection:;
+- (double)collectionView:layout:minimumInteritemSpacingForSectionAtIndex:;
+- (void)collectionView:didHighlightItemAtIndexPath:;
+- (void)collectionView:didUnhighlightItemAtIndexPath:;
+- (void)collectionView:didDeselectItemAtIndexPath:;
+- (void)collectionView:didSelectItemAtIndexPath:;
+- (BOOL)collectionView:shouldHighlightItemAtIndexPath:;
+- (void)collectionView:willDisplayCell:forItemAtIndexPath:;
+- (long long)collectionView:numberOfItemsInSection:;
+- (id)collectionView:cellForItemAtIndexPath:;
+- (id)collectionView:viewForSupplementaryElementOfKind:atIndexPath:;
+- (long long)numberOfSectionsInCollectionView:;
+- (void)collectionView:didEndDisplayingCell:forItemAtIndexPath:;
+- (id)indexTitlesForCollectionView:;
+- (id)init;
+- (void).cxx_destruct;
+@end

@@ -1,0 +1,30 @@
+@interface UIPrintMediaTypeOption : UIPrintOption
+@property (nonatomic) NSMutableArray mediaTypeNames;
+@property (nonatomic) NSIndexPath selectedIndexPath;
+@property (nonatomic) NSArray mediaTypes;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)dealloc;
+- (void)observeValueForKeyPath:ofObject:change:context:;
+- (id)summaryString;
+- (id)summary;
+- (void).cxx_destruct;
+- (id)itemList;
+- (id)selectedItem;
+- (void)setMediaTypes:;
+- (id)mediaTypes;
+- (id)selectedIndexPath;
+- (void)setSelectedIndexPath:;
+- (BOOL)shouldShow;
+- (long long)listItemSelected:;
+- (id)initWithPrintInfo:printPanelViewController:;
+- (id)printOptionTableViewCell;
+- (void)didSelectPrintOption;
+- (void)updateFromPrintInfo;
+- (void)currentPrinterChanged;
+- (id)mediaTypeNames;
+- (id)selectedMediaTypeName;
+- (void)setMediaTypeNames:;
+@end

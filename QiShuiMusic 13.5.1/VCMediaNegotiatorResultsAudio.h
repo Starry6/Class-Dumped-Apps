@@ -1,0 +1,31 @@
+@interface VCMediaNegotiatorResultsAudio : NSObject
+@property (nonatomic) I remoteSSRC;
+@property (nonatomic) I audioUnitModel;
+@property (nonatomic) BOOL allowRecording;
+@property (nonatomic) BOOL allowSwitching;
+@property (nonatomic) NSInteger primaryPayload;
+@property (nonatomic) NSInteger dtxPayload;
+@property (nonatomic) NSInteger redPayload;
+@property (nonatomic) NSArray secondaryPayloads;
+@property (nonatomic) BOOL useSBR;
+- (id)init;
+- (void)dealloc;
+- (void)setRemoteSSRC:;
+- (unsigned int)remoteSSRC;
+- (void)setAudioUnitModel:;
+- (unsigned int)audioUnitModel;
+- (BOOL)useSBR;
+- (void)setUseSBR:;
+- (id)secondaryPayloads;
+- (void)addSecondaryPayload:;
+- (int)primaryPayload;
+- (void)setPrimaryPayload:;
+- (int)dtxPayload;
+- (void)setDtxPayload:;
+- (int)redPayload;
+- (void)setRedPayload:;
+- (BOOL)allowRecording;
+- (void)setAllowRecording:;
+- (BOOL)allowSwitching;
+- (void)setAllowSwitching:;
+@end

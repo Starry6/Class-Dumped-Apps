@@ -1,0 +1,30 @@
+@interface MPAVRoutingViewControllerUpdate : NSObject
+@property (nonatomic) NSArray pickedRoutes;
+@property (nonatomic) NSArray pendingPickedRoutes;
+@property (nonatomic) NSArray displayableAvailableRoutes;
+@property (nonatomic) NSArray displayAsPickedRoutes;
+@property (nonatomic) NSArray volumeCapableRoutes;
+@property (nonatomic) NSDictionary routeGrouping;
+@property (nonatomic) BOOL canGroup;
+@property (nonatomic) BOOL hasPendingPickedRoutes;
+@property (nonatomic) BOOL shouldReload;
+- (id)displayableAvailableRoutes;
+- (id)displayAsPickedRoutes;
+- (void)setPickedRoutes:;
+- (void)setRouteGrouping:;
+- (void)setShouldReload:;
+- (void)setCanGroup:;
+- (id)routeGrouping;
+- (BOOL)hasPendingPickedRoutes;
+- (void)setHasPendingPickedRoutes:;
+- (BOOL)shouldReload;
+- (void)setDisplayableAvailableRoutes:;
+- (void)setDisplayAsPickedRoutes:;
+- (id)volumeCapableRoutes;
+- (void).cxx_destruct;
+- (void)setVolumeCapableRoutes:;
+- (BOOL)canGroup;
+- (id)pickedRoutes;
+- (void)setPendingPickedRoutes:;
+- (id)pendingPickedRoutes;
+@end

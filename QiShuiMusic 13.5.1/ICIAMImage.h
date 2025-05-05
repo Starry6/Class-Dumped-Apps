@@ -1,0 +1,34 @@
+@interface ICIAMImage : PBCodable
+@property (nonatomic) BOOL hasIdentifier;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) BOOL hasURL;
+@property (nonatomic) NSString uRL;
+@property (nonatomic) BOOL hasWidth;
+@property (nonatomic) I width;
+@property (nonatomic) BOOL hasHeight;
+@property (nonatomic) I height;
+- (BOOL)hasWidth;
+- (BOOL)hasHeight;
+- (void)setHasWidth:;
+- (id)uRL;
+- (id)identifier;
+- (void)writeTo:;
+- (void)setWidth:;
+- (unsigned long long)hash;
+- (BOOL)hasURL;
+- (BOOL)hasIdentifier;
+- (void)copyTo:;
+- (void)setHasHeight:;
+- (unsigned int)height;
+- (void)mergeFrom:;
+- (unsigned int)width;
+- (void)setHeight:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (void)setIdentifier:;
+- (BOOL)isEqual:;
+- (void)setURL:;
+- (id)copyWithZone:;
+@end

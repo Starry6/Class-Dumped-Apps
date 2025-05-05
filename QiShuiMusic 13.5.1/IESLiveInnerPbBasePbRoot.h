@@ -1,0 +1,2 @@
+@interface IESLiveInnerPbBasePbRoot : GPBRootObject
+@end

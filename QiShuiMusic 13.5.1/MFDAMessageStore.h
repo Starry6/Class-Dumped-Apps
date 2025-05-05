@@ -1,0 +1,38 @@
+@interface MFDAMessageStore : MFLibraryStore
+@property (nonatomic) BOOL backedByVirtualAllSearchMailbox;
+- (void)deleteMessagesOlderThanNumberOfDays:compact:;
+- (BOOL)canFetchSearchResults;
+- (unsigned long long)growFetchWindow;
+- (void).cxx_destruct;
+- (long long)fetchNumMessages:preservingUID:options:;
+- (unsigned long long)fetchWindow;
+- (id)initWithMailbox:readOnly:;
+- (id)_fetchBodyDataForMessage:andHeaderDataIfReadilyAvailable:downloadIfNecessary:partial:;
+- (BOOL)allowsAppend;
+- (BOOL)bodyFetchRequiresNetworkActivity;
+- (BOOL)_fetchDataForMimePart:range:isComplete:consumer:;
+- (id)messageForRemoteID:;
+- (id)messageForRemoteID:inMailbox:;
+- (BOOL)shouldDownloadBodyDataForMessage:;
+- (id)storeData:forMimePart:isComplete:;
+- (BOOL)hasMoreFetchableMessages;
+- (BOOL)shouldGrowFetchWindow;
+- (id)storeSearchResultMatchingSearchText:criterion:limit:offset:error:;
+- (id)loadMeetingExternalIDForMessage:;
+- (id)loadMeetingDataForMessage:;
+- (id)loadMeetingMetadataForMessage:;
+- (void)purgeMessagesBeyondLimit:;
+- (id)defaultAlternativeForPart:;
+- (id)bestAlternativeForPart:;
+- (id)folderIDForFetching;
+- (void)_remoteIDsMatchingSearchText:predicate:limit:offset:filterByDate:handler:;
+- (BOOL)replayFlagChange:forRemoteIDs:error:completed:;
+- (BOOL)wantsLineEndingConversionForMIMEPart:;
+- (id)fetchBodyDataForRemoteID:;
+- (id)_fetchBodyDataForSearchResult:folderID:format:streamConsumer:;
+- (id)_fetchBodyDataForNormalMessage:format:part:streamConsumer:;
+- (id)_downloadHeadersForMessages:;
+- (BOOL)messageCanBeTriaged:;
+- (BOOL)backedByVirtualAllSearchMailbox;
+- (void)setBackedByVirtualAllSearchMailbox:;
+@end

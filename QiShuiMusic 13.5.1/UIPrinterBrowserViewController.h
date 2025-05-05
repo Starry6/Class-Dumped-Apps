@@ -1,0 +1,38 @@
+@interface UIPrinterBrowserViewController : UITableViewController
+@property (nonatomic) double maximumPopoverHeight;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (BOOL)shouldAutorotateToInterfaceOrientation:;
+- (void)dealloc;
+- (id)tableView:cellForRowAtIndexPath:;
+- (void)viewDidDisappear:;
+- (void)willEnterForeground;
+- (double)tableView:heightForRowAtIndexPath:;
+- (void)tableView:didSelectRowAtIndexPath:;
+- (void).cxx_destruct;
+- (void)updateViewConstraints;
+- (void)viewDidAppear:;
+- (void)loadView;
+- (double)tableView:heightForHeaderInSection:;
+- (id)tableView:titleForHeaderInSection:;
+- (unsigned long long)supportedInterfaceOrientations;
+- (long long)tableView:numberOfRowsInSection:;
+- (long long)numberOfSectionsInTableView:;
+- (void)showCancelButton;
+- (void)printerInfoButtonTapped:;
+- (void)stopPrinterBrowser;
+- (void)didChangePreferredContentSize;
+- (void)updateSearching;
+- (void)addPrinter:moreComing:;
+- (void)removePrinter:moreGoing:;
+- (id)initWithOwnerViewController:printInfo:;
+- (void)selectPrinter:;
+- (void)adjustPopoverSize;
+- (void)startPrinterBrowser;
+- (id)printerAtIndexPath:;
+- (void)retriveLastUsedPrintersArray;
+- (double)maximumPopoverHeight;
+- (void)setMaximumPopoverHeight:;
+@end

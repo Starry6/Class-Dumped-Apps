@@ -1,0 +1,31 @@
+@interface IMRuntimeTestSuite : IMRuntimeTest
+@property (nonatomic) NSArray tests;
+@property (nonatomic) NSMutableArray runningTests;
+@property (nonatomic) IMRuntimeTest currentTest;
+@property (nonatomic) NSTimer timer;
+@property (nonatomic) double testSuiteStartDelay;
+@property (nonatomic) double testStartDelay;
+- (void)_cancelTimer;
+- (id)init;
+- (void)startTest;
+- (void)setTimer:;
+- (void).cxx_destruct;
+- (id)timer;
+- (id)tests;
+- (void)setRunningTests:;
+- (id)currentTest;
+- (void)_timerExpired:;
+- (void)addTest:;
+- (void)removeTest:;
+- (void)_startNextTest;
+- (void)currentTestDidFinish;
+- (void)setTests:;
+- (double)testSuiteStartDelay;
+- (void)setTestSuiteStartDelay:;
+- (double)testStartDelay;
+- (void)setTestStartDelay:;
+- (id)runningTests;
+- (void)setCurrentTest:;
++ (void)runTestsIfNeededWithRepeatCount:withCount:;
++ (void)runTestsIfNeededWithRepeatCount:;
+@end

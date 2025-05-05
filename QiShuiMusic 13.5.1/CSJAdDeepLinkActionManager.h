@@ -1,0 +1,38 @@
+@interface CSJAdDeepLinkActionManager : NSObject
+@property (nonatomic) BOOL hasEnterBackground;
+@property (nonatomic) q deeplinkJumpTime;
+@property (nonatomic) NSMutableDictionary trackInfoDic;
+@property (nonatomic) CSJMaterialMeta<CSJAd> materialMeta;
+- (void)appDidBecomeActiveNotification;
+- (void)appDidEnterBackgroundNotification;
+- (BOOL)canPresentPlayableLandingPageWithContext:meta:;
+- (id)deepLinkURLForMaterial:;
+- (long long)deeplinkJumpTime;
+- (void)handleActionWithModel:context:completionBlock:;
+- (void)handleLinksActionWithModel:context:completionBlock:;
+- (void)handleWCMiniappActionWithModel:context:completionBlock:;
+- (BOOL)hasEnterBackground;
+- (id)materialMeta;
+- (void)openPlayableVCWithModel:context:;
+- (void)pbu_handleDplActionWithModel:context:completionBlock:;
+- (void)pbu_handleFallbackActionWithModel:context:completionBlock:;
+- (void)pbu_handleLinksActionWithModel:context:completionBlock:;
+- (void)pbu_handleWCMiniappActionWithModel:context:completionBlock:;
+- (void)pbu_openPlayableVCWithModel:context:;
+- (void)pbu_openWebVCWithFallbackURL:model:context:;
+- (void)pbu_report_dpl_TrackWithModel:context:adExtraDataDic:;
+- (void)pbu_report_dpl_resultWithModel:context:adExtraDataDic:;
+- (void)pbu_report_ulink_resultWithModel:context:extra:;
+- (id)pbu_urlWithString:;
+- (void)setDeeplinkJumpTime:;
+- (void)setHasEnterBackground:;
+- (void)setMaterialMeta:;
+- (void)setTrackInfoDic:;
+- (id)trackInfoDic;
+- (id)ulinkURLForMaterial:;
+- (id)wcMiniappTypeWithMeta:success:;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
++ (id)sharedManager;
+@end

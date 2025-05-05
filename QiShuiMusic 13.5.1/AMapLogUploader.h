@@ -1,0 +1,32 @@
+@interface AMapLogUploader : NSObject
+@property (nonatomic) NSObject<OS_dispatch_queue> uploadDispatchQueue;
+@property (nonatomic) NSUserDefaults userDefult;
+@property (nonatomic) NSObject<OS_dispatch_semaphore> queueSemaphore;
+@property (nonatomic) NSString synchronizeToken;
+@property (nonatomic) BOOL upLoading;
+@property (nonatomic) NSArray waitingUploadDirectorys;
+- (BOOL)_currentUploadSizeExcessMaxOneDay:;
+- (unsigned long long)_getSingleUploadSizeWithLevelStr:componentName:;
+- (void)_getUploadLogSize:levelStr:completeBlock:;
+- (void)_updateTotalUploadSizeOneDay:;
+- (void)_updateWaitingUploadDirs;
+- (void)_uploadLogArray:componentName:complete:;
+- (BOOL)isUpLoading;
+- (void)setQueueSemaphore:;
+- (void)setSynchronizeToken:;
+- (void)setUpLoading:;
+- (void)setUploadDispatchQueue:;
+- (void)setUserDefult:;
+- (id)synchronizeToken;
+- (void)uploadComponentName:levelStr:complete:;
+- (void)uploadComponentName:levelStr:hotFile:complete:;
+- (id)uploadDispatchQueue;
+- (id)userDefult;
+- (id)waitingUploadDirectorys;
+- (id)init;
+- (void).cxx_destruct;
+- (id)_initSingleton;
+- (id)queueSemaphore;
++ (id)logStringWithDictionary:encrypted:;
++ (id)shareInstance;
+@end

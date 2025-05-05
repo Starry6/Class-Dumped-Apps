@@ -1,0 +1,31 @@
+@interface VECaptureProcessParamImageDefinitionDetect : VECaptureProcessParam
+@property (nonatomic) NSString modelPath;
+@property (nonatomic) NSString kernelBinPath;
+@property (nonatomic) NSInteger backendType;
+@property (nonatomic) float numThread;
+@property (nonatomic) NSInteger runtype;
+@property (nonatomic) float alpha;
+@property (nonatomic) float beta;
+@property (nonatomic) float threshold;
+@property (nonatomic) NSString tempDirPath;
+- (int)runtype;
+- (void)setBackendType:;
+- (void)setTempDirPath:;
+- (int)backendType;
+- (id)kernelBinPath;
+- (float)numThread;
+- (void)setKernelBinPath:;
+- (void)setNumThread:;
+- (void)setRuntype:;
+- (id)tempDirPath;
+- (float)threshold;
+- (id)init;
+- (void)setModelPath:;
+- (void)setAlpha:;
+- (float)beta;
+- (float)alpha;
+- (void).cxx_destruct;
+- (id)modelPath;
+- (void)setThreshold:;
+- (void)setBeta:;
+@end

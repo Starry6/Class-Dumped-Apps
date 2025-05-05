@@ -1,0 +1,35 @@
+@interface BCAABundleLoader : NSObject
+- (BOOL)activateBundle:fromBundle:enterTag:startTime:;
+- (void)addBundleListener:;
+- (void)addBundleToActiveList:fromBundle:enterTag:cost:;
+- (void)addBundleToLoadedList:bundleRef:fromBundle:enterTag:cost:;
+- (void)broadcastBundleFailed:fromBundle:enterTag:error:;
+- (void)broadcastBundleLoaded:fromBundle:enterTag:cost:;
+- (void)broadcastBundleLoadedByService:serviceName:methodName:;
+- (void)broadcastPreLoadBundleDidEntered:fromBundle:enterTag:;
+- (void)broadcastbundleWillBeLoaded:fromBundle:enterTag:;
+- (id)bundleRefWithName:;
+- (id)getGetFunctionPointerForBundle:funcName:;
+- (id)getLoadedBundleRef:;
+- (BOOL)isBundleInActiveList:;
+- (BOOL)isBundleInLoadedList:;
+- (BOOL)isBundleNeedBroadcastPreloadEnter:;
+- (BOOL)isBundlePreLoaded:;
+- (BOOL)loadName:fromBundle:enterTag:;
+- (void)removeBundleListener:;
+- (void)setBundleHasBroadcastPreloadEnter:value:;
+- (id)init;
+- (void).cxx_destruct;
++ (BOOL)activateBundle:fromBundle:enterTag:startTime:;
++ (void)addBundleListener:;
++ (void)broadcastBundleLoadedByService:serviceName:methodName:;
++ (void)broadcastPreLoadBundleDidEntered:fromBundle:enterTag:;
++ (id)getBundleNameOfService:;
++ (id)getGetFunctionPointerForBundle:funcName:;
++ (BOOL)isBundleNeedBroadcastPreloadEnter:;
++ (BOOL)loadName:fromBundle:enterTag:;
++ (BOOL)preLoadBundle:fromBundle:;
++ (BOOL)preLoadBundleOfService:fromBundle:;
++ (void)removeBundleListener:;
++ (id)sharedLoader;
+@end

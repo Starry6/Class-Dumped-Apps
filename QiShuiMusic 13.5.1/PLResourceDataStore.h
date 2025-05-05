@@ -1,0 +1,34 @@
+@interface PLResourceDataStore : NSObject
+@property (nonatomic) PLPhotoLibraryPathManager pathManager;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)pathManager;
+- (BOOL)canMarkAsynchronousLocalRenderAsOptionalForProgress:;
+- (id)initWithPathManager:;
+- (BOOL)storeExternalResource:forAsset:options:error:resultingResource:;
+- (id)resourceURLForKey:assetID:;
+- (void)markAsynchronousLocalRenderAsOptionalForProgress:;
+- (id)expectedFileURLForResource:asset:;
+- (void).cxx_destruct;
+- (void)requestStreamingURLForResource:asset:intent:timeRange:streamingHints:inContext:clientBundleID:completion:;
+- (id)virtualResourcesForAsset:;
+- (id)descriptionForSubtype:;
+- (BOOL)supportsTimeRange;
+- (BOOL)dataStoreSubtypeIsDownloadable:;
+- (id)name;
+- (id)resourceDataForKey:assetID:;
+- (BOOL)videoResource:matchesOrExceedsQualityLevel:;
+- (id)keyFromKeyStruct:;
+- (id)requestLocalAvailabilityChange:forResource:options:completion:;
+- (BOOL)canStreamResource:;
+- (BOOL)canStoreExternalResource:;
+- (id)updateDerivativeResourcesForAsset:forLifecycleEvent:;
+- (id)guessUTIForExternalResource:forAssetKind:;
++ (unsigned short)storeClassID;
++ (id)supportedRecipes;
++ (unsigned short)keyLengthWithDataPreview:;
++ (BOOL)isMasterThumbRecipeID:;
++ (BOOL)keyDataIsValid:;
+@end

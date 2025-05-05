@@ -1,0 +1,34 @@
+@interface CLPCellOutOfServiceInfo : PBCodable
+@property (nonatomic) BOOL hasLocation;
+@property (nonatomic) CLPLocation location;
+@property (nonatomic) BOOL hasServiceProviderName;
+@property (nonatomic) NSString serviceProviderName;
+@property (nonatomic) BOOL hasUniqueCount;
+@property (nonatomic) BOOL uniqueCount;
+@property (nonatomic) BOOL hasHasWifiFallback;
+@property (nonatomic) BOOL hasWifiFallback;
+- (BOOL)hasLocation;
+- (void)writeTo:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (id)location;
+- (void)mergeFrom:;
+- (void)setLocation:;
+- (void).cxx_destruct;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setUniqueCount:;
+- (void)setHasUniqueCount:;
+- (BOOL)hasUniqueCount;
+- (BOOL)uniqueCount;
+- (BOOL)hasServiceProviderName;
+- (id)serviceProviderName;
+- (void)setServiceProviderName:;
+- (void)setHasWifiFallback:;
+- (void)setHasHasWifiFallback:;
+- (BOOL)hasHasWifiFallback;
+- (BOOL)hasWifiFallback;
+@end

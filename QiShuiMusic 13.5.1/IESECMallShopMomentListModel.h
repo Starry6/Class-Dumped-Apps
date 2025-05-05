@@ -1,0 +1,30 @@
+@interface IESECMallShopMomentListModel : MTLModel
+@property (nonatomic) IESECMallShopMomentResponse response;
+@property (nonatomic) IESECMallShopMomentResponse firstScreenResponse;
+@property (nonatomic) BOOL isFetch;
+@property (nonatomic) BOOL isFirstScreen;
+@property (nonatomic) NSError error;
+@property (nonatomic) q status;
+@property (nonatomic) BOOL isCacheData;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)firstScreenResponse;
+- (BOOL)isFirstScreen;
+- (void)setFirstScreenResponse:;
+- (void)setIsFetch:;
+- (void)setIsFirstScreen:;
+- (void)setStatus:;
+- (id)init;
+- (void)setError:;
+- (id)error;
+- (id)response;
+- (void).cxx_destruct;
+- (long long)status;
+- (void)setResponse:;
+- (BOOL)isCacheData;
+- (void)setIsCacheData:;
+- (BOOL)isFetch;
++ (id)JSONKeyPathsByPropertyKey;
+@end

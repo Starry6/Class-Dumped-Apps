@@ -1,0 +1,30 @@
+@interface FLEXMITMDataSource : NSObject
+@property (nonatomic) @? dataProvider;
+@property (nonatomic) NSString filterString;
+@property (nonatomic) BOOL isFiltered;
+@property (nonatomic) NSArray transactions;
+@property (nonatomic) NSArray allTransactions;
+@property (nonatomic) q bytesReceived;
+@property (nonatomic) q totalBytesReceived;
+- (BOOL)isFiltered;
+- (void)reloadByteCounts;
+- (void)reloadData:;
+- (void)filter:completion:;
+- (void)setAllTransactions:;
+- (void)setFilteredTransactions:;
+- (void)setTransactions:;
+- (void)updateBytesReceived;
+- (void)updateFilteredBytesReceived;
+- (void)onBackgroundQueue:thenOnMainQueue:;
+- (id)transactions;
+- (id)allTransactions;
+- (long long)bytesReceived;
+- (void)setBytesReceived:;
+- (long long)totalBytesReceived;
+- (void)setTotalBytesReceived:;
+- (id)dataProvider;
+- (id)filterString;
+- (void)setFilterString:;
+- (void).cxx_destruct;
++ (id)dataSourceWithProvider:;
+@end

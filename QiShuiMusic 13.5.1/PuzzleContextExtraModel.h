@@ -1,0 +1,30 @@
+@interface PuzzleContextExtraModel : NSObject
+@property (nonatomic) NSData templateData;
+@property (nonatomic) BOOL disableJSRuntime;
+@property (nonatomic) # moduleClass;
+@property (nonatomic) <LynxTemplateProvider> templateProvider;
+@property (nonatomic) <LynxImageFetcher> imageFetcher;
+@property (nonatomic) <LynxResourceFetcher> resourceFetcher;
+@property (nonatomic) <LynxDynamicComponentFetcher> dynamicComponentFetcher;
+@property (nonatomic) NSMutableDictionary customElement;
+@property (nonatomic) NSMutableDictionary customShadowNode;
+- (id)resourceFetcher;
+- (void)setModuleClass:;
+- (id)customElement;
+- (id)customShadowNode;
+- (BOOL)disableJSRuntime;
+- (id)dynamicComponentFetcher;
+- (Class)moduleClass;
+- (void)setCustomElement:;
+- (void)setCustomShadowNode:;
+- (void)setDisableJSRuntime:;
+- (void)setDynamicComponentFetcher:;
+- (void)setImageFetcher:;
+- (void)setResourceFetcher:;
+- (void)setTemplateData:;
+- (id)templateData;
+- (void).cxx_destruct;
+- (id)templateProvider;
+- (void)setTemplateProvider:;
+- (id)imageFetcher;
+@end

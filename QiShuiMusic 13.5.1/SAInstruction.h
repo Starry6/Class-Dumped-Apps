@@ -1,0 +1,33 @@
+@interface SAInstruction : NSObject
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) SABinary binary;
+@property (nonatomic) SASegment segment;
+@property (nonatomic) q offsetIntoBinary;
+@property (nonatomic) Q offsetIntoSegment;
+@property (nonatomic) SASymbol symbol;
+@property (nonatomic) SASourceInfo sourceInfo;
+@property (nonatomic) Q offsetIntoTextSegment;
+- (id)sourceInfo;
+- (BOOL)hasSourceInfo;
+- (BOOL)addSelfToBuffer:bufferLength:withCompletedSerializationDictionary:;
+- (unsigned long long)offsetIntoTextSegment;
+- (void)addSelfToSerializationDictionary:;
+- (unsigned long long)enumerateSymbols:;
+- (void)populateReferencesUsingBuffer:bufferLength:andDeserializationDictionary:andDataBufferDictionary:;
+- (unsigned long long)offsetIntoSegment;
+- (id)symbol;
+- (id)debugDescription;
+- (unsigned long long)sizeInBytesForSerializedVersion;
+- (BOOL)hasOffsetIntoBinary;
+- (long long)offsetIntoBinary;
+- (BOOL)symbolicateWithOptions:pid:;
+- (void).cxx_destruct;
+- (unsigned long long)numSymbols;
+- (id)binary;
+- (id)segment;
++ (id)newInstanceWithoutReferencesFromSerializedBuffer:bufferLength:;
++ (id)classDictionaryKey;
+@end

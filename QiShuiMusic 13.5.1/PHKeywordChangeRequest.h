@@ -1,0 +1,33 @@
+@interface PHKeywordChangeRequest : PHChangeRequest
+@property (nonatomic) PHObjectPlaceholder placeholderForCreatedKeyword;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString shortcut;
+@property (nonatomic) BOOL isNewRequest;
+@property (nonatomic) BOOL shouldPerformConcurrentWork;
+@property (nonatomic) BOOL mutated;
+@property (nonatomic) NSString managedEntityName;
+@property (nonatomic) NSManagedObjectID objectID;
+@property (nonatomic) BOOL clientEntitled;
+@property (nonatomic) NSString clientName;
+@property (nonatomic) q accessScopeOptionsRequirement;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)managedEntityName;
+- (void)setTitle:;
+- (id)title;
+- (void)setShortcut:;
+- (id)shortcut;
+- (id)initWithUUID:objectID:;
+- (void)encodeToXPCDict:;
+- (id)initWithXPCDict:request:clientAuthorization:;
+- (BOOL)allowMutationToManagedObject:propertyKey:error:;
+- (id)initForNewObject;
+- (id)createManagedObjectForInsertIntoPhotoLibrary:error:;
+- (id)placeholderForCreatedKeyword;
+- (BOOL)_validateMutationOfTitleToKeyword:error:;
++ (id)creationRequestForKeyword;
++ (id)changeRequestForKeyword:;
++ (void)deleteKeywords:;
+@end

@@ -1,0 +1,30 @@
+@interface INRestaurant : NSObject
+@property (nonatomic) CLLocation location;
+@property (nonatomic) NSString name;
+@property (nonatomic) NSString vendorIdentifier;
+@property (nonatomic) NSString restaurantIdentifier;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (void)setName:;
+- (id)_dictionaryRepresentation;
+- (id)initWithCoder:;
+- (id)location;
+- (void)encodeWithCoder:;
+- (id)descriptionAtIndent:;
+- (void)setLocation:;
+- (void).cxx_destruct;
+- (id)vendorIdentifier;
+- (void)setVendorIdentifier:;
+- (id)description;
+- (id)name;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)restaurantIdentifier;
+- (void)setRestaurantIdentifier:;
+- (id)initWithLocation:name:vendorIdentifier:restaurantIdentifier:;
+- (BOOL)location:equalToLocation:;
++ (BOOL)supportsSecureCoding;
+@end

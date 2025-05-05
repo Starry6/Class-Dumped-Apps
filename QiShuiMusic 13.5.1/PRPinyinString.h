@@ -1,0 +1,38 @@
+@interface PRPinyinString : NSPinyinString
+- (id)string;
+- (void)dealloc;
+- (unsigned long long)score;
+- (unsigned short)characterAtIndex:;
+- (unsigned long long)hash;
+- (id)description;
+- (unsigned long long)length;
+- (BOOL)isEqual:;
+- (id)nonPinyinIndexSet;
+- (unsigned long long)syllableCount;
+- (BOOL)lastSyllableIsPartial;
+- (unsigned long long)numberOfNonPinyinRanges;
+- (unsigned long long)numberOfReplacements;
+- (unsigned long long)numberOfTranspositions;
+- (unsigned long long)numberOfInsertions;
+- (unsigned long long)numberOfDeletions;
+- (unsigned long long)indexOfFirstModification;
+- (id)nonPinyinRangeAtIndex:;
+- (id)annotatedString;
+- (id)initWithString:syllableCount:lastSyllableIsPartial:score:originalLength:modificationType:originalModificationRange:finalModificationRange:;
+- (id)initWithString:syllableCount:lastSyllableIsPartial:score:originalLength:modificationType:originalModificationRange:finalModificationRange:originalSyllableRange:;
+- (id)initWithString:syllableCount:lastSyllableIsPartial:score:originalLength:modificationType:originalModificationRange:finalModificationRange:originalSyllableRange:originalAdditionalSyllableRange:;
+- (id)initWithUncheckedString:score:originalLength:;
+- (id)initWithString:syllableCount:lastSyllableIsPartial:score:originalLength:originalCheckedLength:numberOfModifications:modificationTypes:originalModificationRanges:finalModificationRanges:originalSyllableRanges:originalAdditionalSyllableRanges:;
+- (unsigned long long)originalLength;
+- (unsigned long long)originalCheckedLength;
+- (unsigned long long)finalCheckedLength;
+- (unsigned long long)numberOfModifications;
+- (unsigned long long)typeOfModificationAtIndex:;
+- (id)originalRangeForModificationAtIndex:;
+- (id)finalRangeForModificationAtIndex:;
+- (id)originalSyllableRangeForModificationAtIndex:;
+- (id)originalAdditionalSyllableRangeForModificationAtIndex:;
++ (id)alternativesForInputString:;
++ (id)prefixesForInputString:;
++ (id)correctionsForInputString:;
+@end

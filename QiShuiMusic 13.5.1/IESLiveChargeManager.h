@@ -1,0 +1,33 @@
+@interface IESLiveChargeManager : NSObject
+@property (nonatomic) <IESLiveRoomServiceAdapter> mixedRoom;
+@property (nonatomic) NSDictionary chargeApiOrderInfoResponse;
+@property (nonatomic) IESLiveChargeMonitor chargeMonitor;
+@property (nonatomic) NSArray checkResultTimes;
+@property (nonatomic) IESLiveChargeServiceModel serviceModel;
+- (void)_checkFinalResultWithParams:pollingCount:completion:;
+- (void)_requestProduct:retryCount:completion:;
+- (void)_updateWalletSwitchInfo;
+- (void)buyPayLiveProducWithBizParams:completion:;
+- (void)buyProductWithIapPayModel:completion:;
+- (id)chargeApiOrderInfoResponse;
+- (id)chargeMonitor;
+- (void)checkLocalTransactionReceiptIfNeeded;
+- (id)checkResultTimes;
+- (void)cj_buyProductWithProductID:product:source:extraParams:completion:;
+- (void)commitChargeDurationTrackerMark:;
+- (void)getProductForBuyWithModel:completion:;
+- (id)mixedRoom;
+- (void)pr_buyProductWithIapPayModel:product:orderID:count:startTime:completion:;
+- (void)preFetchPaidLiveIAPProductWithID:completion:;
+- (void)prepareBuyProductWithIAPPayModel:orderID:completion:;
+- (id)serviceModel;
+- (void)setChargeApiOrderInfoResponse:;
+- (void)setChargeMonitor:;
+- (void)setCheckResultTimes:;
+- (void)setMixedRoom:;
+- (void)setServiceModel:;
+- (void)startupService;
+- (id)init;
+- (void).cxx_destruct;
++ (id)defaultManager;
+@end

@@ -1,0 +1,2 @@
+@interface BDUGBdsyncProtocolRoot : GPBRootObject
+@end

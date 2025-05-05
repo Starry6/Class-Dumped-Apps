@@ -1,0 +1,34 @@
+@interface ASCLockupRequest : NSObject
+@property (nonatomic) NSDictionary mediaQueryParams;
+@property (nonatomic) NSString clientID;
+@property (nonatomic) ASCAdamID id;
+@property (nonatomic) NSString kind;
+@property (nonatomic) NSString context;
+- (id)context;
+- (id)id;
+- (id)kind;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)description;
+- (id)clientID;
+- (BOOL)isEqual:;
+- (id)clone;
+- (id)copyWithZone:;
+- (id)initWithID:kind:context:;
+- (id)_initWithID:kind:context:clientID:;
+- (id)lockupRequestWithMediaQueryParams:;
+- (id)lockupRequestByAddingMediaQueryParams:;
+- (id)_lockupRequestWithClientID:;
+- (id)mediaQueryParams;
+- (id)_initWithID:kind:context:minExternalVersionID:latestReleaseID:productVariantID:;
+- (id)lockupRequestWithClientID:;
+- (id)_initWithID:kind:context:includeUnlistedApps:;
+- (id)lockupRequestWithUnlistedAppsIncluded;
++ (BOOL)supportsSecureCoding;
++ (id)_requestWithID:kind:context:minExternalVersionID:latestReleaseID:productVariantID:;
++ (id)_requestWithID:kind:context:productVariantID:;
++ (id)_requestWithID:kind:context:clientID:;
++ (id)_requestWithID:kind:context:includeUnlistedApps:;
+@end

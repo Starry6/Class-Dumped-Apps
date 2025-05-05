@@ -1,0 +1,36 @@
+@interface ABPKMLNetworkBufferV2 : NSObject
+@property (nonatomic) NSString name;
+@property (nonatomic) Q width;
+@property (nonatomic) Q height;
+@property (nonatomic) Q channels;
+@property (nonatomic) Q batchNumber;
+@property (nonatomic) Q sequenceLength;
+@property (nonatomic) Q strideWidth;
+@property (nonatomic) Q strideHeight;
+@property (nonatomic) Q strideChannels;
+@property (nonatomic) Q strideBatchNumber;
+@property (nonatomic) Q strideSequenceLength;
+@property (nonatomic) ^{__CVBuffer=} pixelBuffer;
+@property (nonatomic) NSInteger surfaceFormat;
+@property (nonatomic) ^v bytes;
+- (unsigned long long)channels;
+- (void)dealloc;
+- (id)pixelBuffer;
+- (id)bytes;
+- (unsigned long long)height;
+- (unsigned long long)width;
+- (void).cxx_destruct;
+- (id)name;
+- (unsigned long long)batchNumber;
+- (id)initWithName:function:bindMode:useSurface:;
+- (BOOL)_readSurfaceDescriptor;
+- (BOOL)_readTensorDescriptor;
+- (void)setInput:FromIOSurface:;
+- (unsigned long long)sequenceLength;
+- (unsigned long long)strideWidth;
+- (unsigned long long)strideHeight;
+- (unsigned long long)strideChannels;
+- (unsigned long long)strideBatchNumber;
+- (unsigned long long)strideSequenceLength;
+- (int)surfaceFormat;
+@end

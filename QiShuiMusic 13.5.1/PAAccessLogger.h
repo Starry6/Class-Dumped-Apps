@@ -1,0 +1,38 @@
+@interface PAAccessLogger : NSObject
+@property (nonatomic) NSXPCConnection connection;
+@property (nonatomic) NSObject<OS_dispatch_queue> queue;
+@property (nonatomic) PACoalescingIntervalTracker coalescingIntervalTracker;
+@property (nonatomic) <PAAccessLoggerDelegate> delegate;
+@property (nonatomic) q maxRetryCount;
+@property (nonatomic) BOOL loggingEnabled;
+- (long long)maxRetryCount;
+- (void)setMaxRetryCount:;
+- (id)initWithConnection:queue:;
+- (void)dealloc;
+- (id)resyncState;
+- (void)ensureEnablementChangedNotificationRegistered;
+- (void)notifyDidLogAccess:failedWithError:;
+- (void)endIntervalWithSlot:timestampAdjustment:;
+- (void)setDelegate:;
+- (void)log:reason:;
+- (void)handleConnectionInvalidated;
+- (void)setLoggingEnabled:;
+- (void)handleConnectionInterrupted;
+- (void)lockedNotifyDidSetLoggingEnabled:;
+- (id)delegate;
+- (id)connection;
+- (void)lockedInvalidateState;
+- (void).cxx_destruct;
+- (void)setCoalescingIntervalTracker:;
+- (BOOL)loggingEnabled;
+- (void)log:;
+- (id)initWithConnection:queue:enablementChangedNotificationName:;
+- (id)initWithQueue:;
+- (void)recordAssetIdentifiers:withVisibilityState:accessEventCount:forSlot:;
+- (id)coalescingIntervalTracker;
+- (void)notifyDidCoalesceAccess:;
+- (id)queue;
+- (void)withLockedState:;
+- (id)beginIntervalForAccess:;
++ (id)sharedInstance;
+@end

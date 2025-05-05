@@ -1,0 +1,2 @@
+@interface AWEForcedStatusBarWindow : UIWindow
+@end

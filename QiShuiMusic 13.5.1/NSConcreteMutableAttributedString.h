@@ -1,0 +1,31 @@
+@interface NSConcreteMutableAttributedString : NSMutableAttributedString
+- (void)HMDP_addAttribute:value:range:;
+- (id)HMDP_attributesAtIndex:effectiveRange:;
+- (void)HMDP_setAttributes:range:;
+- (void)HMDP_replaceCharactersInRange:withString:;
+- (void)HMDP_replaceCharactersInRange:withAttributedString:;
+- (id)HMDP_initWithString:;
+- (id)HMDP_initWithString:attributes:;
+- (void)replaceCharactersInRange:withAttributedString:;
+- (void)replaceCharactersInRange:withString:;
+- (id)string;
+- (void)setAttributes:range:;
+- (id)init;
+- (BOOL)_mayRequireIntentResolution;
+- (void)dealloc;
+- (id)attribute:atIndex:longestEffectiveRange:inRange:;
+- (id)initWithString:attributes:;
+- (id)attributesAtIndex:effectiveRange:;
+- (id)initWithString:;
+- (id)initWithAttributedString:;
+- (id)initWithCoder:;
+- (void)_markIntentsResolved;
+- (id)attribute:atIndex:effectiveRange:;
+- (void)edited:range:changeInLength:;
+- (void)_markRequiringIntentResolution;
+- (unsigned long long)length;
+- (void)addAttribute:value:range:;
+- (id)_runArrayHoldingAttributes;
++ (BOOL)supportsSecureCoding;
++ (Class)_mutableStringClass;
+@end

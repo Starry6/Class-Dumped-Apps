@@ -1,0 +1,30 @@
+@interface BWFigVideoCaptureSynchronizedStreamsGroup : NSObject
+@property (nonatomic) BWFigCaptureSynchronizedStreamsGroup syncGroup;
+@property (nonatomic) NSArray activePortTypes;
+@property (nonatomic) BOOL minimumMasterToSlaveFrameRateRatioSupported;
+@property (nonatomic) BOOL maximumNumberOfSlaveStreamsWithoutFrameSkippingSupported;
+@property (nonatomic) BOOL maximumNumberOfSlaveStreamsWithFrameProcessingEnabledSupported;
+@property (nonatomic) NSDictionary clientBaseZoomFactorsByPortType;
+@property (nonatomic) NSDictionary baseZoomFactorsByPortType;
+@property (nonatomic) BWFigVideoCaptureStream cameraControlsStatisticsMasterStream;
+- (void)setBaseZoomFactorsByPortType:;
+- (id)baseZoomFactorsByPortType;
+- (id)initWithSynchronizedStreamsGroup:activeStreams:readOnly:baseZoomFactorOverrides:clientBaseZoomFactorsByPortType:error:;
+- (void)dealloc;
+- (int)setCameraControlsStatisticsMasterStream:;
+- (id)cameraPoseMatrixForPortType:;
+- (int)setMasterStream:allStreams:;
+- (id)cameraViewMatrixForPortType:;
+- (void)setMinimumMasterToSlaveFrameRateRatio:;
+- (id)activePortTypes;
+- (void)setMaximumNumberOfSlaveStreamsWithoutFrameSkipping:;
+- (BOOL)maximumNumberOfSlaveStreamsWithFrameProcessingEnabledSupported;
+- (void)setMaximumNumberOfSlaveStreamsWithFrameProcessingEnabled:;
+- (id)syncGroup;
+- (unsigned int)minimumMasterToSlaveFrameRateRatio;
+- (BOOL)minimumMasterToSlaveFrameRateRatioSupported;
+- (id)clientBaseZoomFactorsByPortType;
+- (id)cameraControlsStatisticsMasterStream;
+- (BOOL)maximumNumberOfSlaveStreamsWithoutFrameSkippingSupported;
+- (void)setMaximumNumberOfEnabledSlaveTimeMachines:;
+@end

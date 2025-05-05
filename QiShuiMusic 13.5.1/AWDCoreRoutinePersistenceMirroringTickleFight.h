@@ -1,0 +1,38 @@
+@interface AWDCoreRoutinePersistenceMirroringTickleFight : PBCodable
+@property (nonatomic) BOOL hasTimestamp;
+@property (nonatomic) Q timestamp;
+@property (nonatomic) Q tickleTimesCount;
+@property (nonatomic) ^i tickleTimes;
+@property (nonatomic) BOOL hasRecordType;
+@property (nonatomic) NSInteger recordType;
+@property (nonatomic) BOOL hasOperationType;
+@property (nonatomic) NSInteger operationType;
+- (int)operationType;
+- (void)dealloc;
+- (void)setRecordType:;
+- (void)writeTo:;
+- (int)recordType;
+- (void)setOperationType:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)setHasTimestamp:;
+- (void)mergeFrom:;
+- (BOOL)hasRecordType;
+- (BOOL)hasTimestamp;
+- (void)setTimestamp:;
+- (BOOL)readFrom:;
+- (unsigned long long)timestamp;
+- (BOOL)hasOperationType;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setHasOperationType:;
+- (unsigned long long)tickleTimesCount;
+- (id)tickleTimes;
+- (void)clearTickleTimes;
+- (void)addTickleTimes:;
+- (int)tickleTimesAtIndex:;
+- (void)setTickleTimes:count:;
+- (void)setHasRecordType:;
+@end

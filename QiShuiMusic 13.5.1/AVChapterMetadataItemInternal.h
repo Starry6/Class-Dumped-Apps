@@ -1,0 +1,2 @@
+@interface AVChapterMetadataItemInternal : NSObject
+@end

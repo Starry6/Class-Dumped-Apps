@@ -1,0 +1,33 @@
+@interface IESLiveBusinessStreamBarHandler : NSObject
+@property (nonatomic) q orientation;
+@property (nonatomic) IESLiveBusinessStreamBarView currentView;
+@property (nonatomic) NSMutableArray configureArray;
+@property (nonatomic) BOOL isExecutingTask;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)executeNextTask;
+- (BOOL)isExecutingTask;
+- (void)componentOrientationChanged:;
+- (void)componentOrientationTransitionBegin:;
+- (id)configureArray;
+- (void)didSetAttachingDIContext;
+- (void)handleBusinessConfigure:;
+- (void)onFIFAPannelSatusChange:;
+- (void)playerDidEndplayInSmallWindow;
+- (void)playerFrameDidChange:;
+- (void)playerWillPlayInSmallWindow;
+- (void)removeBusinessConfigure:;
+- (void)removeCurrentView;
+- (void)setConfigureArray:;
+- (void)setIsExecutingTask:;
+- (void)showStreamBarView:;
+- (void)updateStreamBarViewFrame:;
+- (id)init;
+- (long long)orientation;
+- (void).cxx_destruct;
+- (void)setOrientation:;
+- (id)currentView;
+- (void)setCurrentView:;
+@end

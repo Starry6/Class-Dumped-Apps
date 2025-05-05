@@ -1,0 +1,36 @@
+@interface CUNANEndpoint : NSObject
+@property (nonatomic) WiFiAwareDiscoveryResult discoveryResult;
+@property (nonatomic) C instanceID;
+@property (nonatomic) WiFiMACAddress macAddress;
+@property (nonatomic) NSData customData;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) NSString name;
+@property (nonatomic) NSInteger port;
+@property (nonatomic) NSInteger rssi;
+@property (nonatomic) NSString serviceType;
+@property (nonatomic) NSDictionary textInfo;
+- (unsigned char)instanceID;
+- (int)rssi;
+- (void)setName:;
+- (id)descriptionWithLevel:;
+- (id)macAddress;
+- (id)serviceType;
+- (id)identifier;
+- (int)port;
+- (void)setPort:;
+- (void)setInstanceID:;
+- (void)setServiceType:;
+- (void)setRssi:;
+- (void).cxx_destruct;
+- (id)description;
+- (void)setMacAddress:;
+- (id)name;
+- (void)setIdentifier:;
+- (id)customData;
+- (void)setCustomData:;
+- (id)textInfo;
+- (id)initWithEndpointID:error:;
+- (unsigned int)updateWithDiscoveryResult:;
+- (id)discoveryResult;
+- (void)setDiscoveryResult:;
+@end

@@ -1,0 +1,31 @@
+@interface CKContainerSetupInfo : NSObject
+@property (nonatomic) CKAccountOverrideInfo accountOverrideInfo;
+@property (nonatomic) CKAccountOverrideInfo accountInfoOverride;
+@property (nonatomic) CKContainerOptions containerOptions;
+@property (nonatomic) CKContainerID containerID;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+@property (nonatomic) NSArray writableTypeIdentifiersForItemProvider;
+- (id)accountInfoOverride;
+- (void)_stripAccountInfo;
+- (id)containerID;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)copyWithoutAccountInfo;
+- (id)accountOverrideInfo;
+- (void)encodeWithCoder:;
+- (id)containerOptions;
+- (void).cxx_destruct;
+- (id)hashString;
+- (id)initWithContainerID:options:;
+- (id)loadDataWithTypeIdentifier:forItemProviderCompletionHandler:;
+- (long long)itemProviderVisibilityForRepresentationWithTypeIdentifier:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
++ (BOOL)supportsSecureCoding;
++ (id)writableTypeIdentifiersForItemProvider;
++ (id)readableTypeIdentifiersForItemProvider;
++ (id)objectWithItemProviderData:typeIdentifier:error:;
+@end

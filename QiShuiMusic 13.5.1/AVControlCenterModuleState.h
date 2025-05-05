@@ -1,0 +1,31 @@
+@interface AVControlCenterModuleState : NSObject
+@property (nonatomic) BOOL active;
+@property (nonatomic) BOOL centerStageSupported;
+@property (nonatomic) BOOL backgroundBlurSupported;
+@property (nonatomic) BOOL studioLightingSupported;
+@property (nonatomic) BOOL micModesSupported;
+- (void)setStudioLightingSupported:;
+- (BOOL)centerStageSupported;
+- (void)setBackgroundBlurSupported:;
+- (BOOL)studioLightingSupported;
+- (BOOL)micModesSupported;
+- (BOOL)backgroundBlurSupported;
+- (void)dealloc;
+- (void)setCenterStageSupported:;
+- (void)_proprietaryDefaultChanged:keyPath:context:;
+- (BOOL)isEnabledForVideoEffect:;
+- (BOOL)voiceProcessingBypassed;
+- (long long)activeMicrophoneMode;
+- (long long)microphoneMode;
+- (id)supportedMicrophoneModes;
+- (long long)controlModeForVideoEffect:;
+- (BOOL)supportsVideoEffect:;
+- (unsigned long long)unavailableReasonsForVideoEffect:;
+- (id)hiddenMicrophoneModes;
+- (id)initForBundleID:micModesSupported:;
+- (void)setMicModesSupported:;
+- (BOOL)setMicrophoneMode:;
+- (BOOL)setEnabled:forVideoEffect:;
+- (BOOL)isActive;
++ (id)moduleStateForBundleID:micModesSupported:;
+@end

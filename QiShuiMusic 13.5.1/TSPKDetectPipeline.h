@@ -1,0 +1,31 @@
+@interface TSPKDetectPipeline : NSObject
+- (BOOL)deferPreload;
+- (id)entryModel;
++ (BOOL)tspk_canReportRequestPermission;
++ (long long)downgradeApiStartId;
++ (BOOL)entryEnable;
++ (void)forwardBizCallInfoWithMethod:apiType:dataType:apiUsageType:bizLine:;
++ (void)forwardCallInfoWithMethod:apiType:apiUsageType:hashTag:beforeOrAfter:isCustomApi:;
++ (void)forwardCallInfoWithMethod:apiType:apiUsageType:isCustomApi:;
++ (void)forwardCallInfoWithMethod:apiUsageType:hashTag:beforeOrAfter:;
++ (id)handleAPIAccess:;
++ (id)handleAPIAccess:AspectInfo:;
++ (id)handleAPIAccess:className:;
++ (id)handleAPIAccess:className:params:;
++ (id)handleAPIAccess:className:params:customHandleBlock:;
++ (BOOL)isEntryDefaultEnable;
++ (void)reportRequestPermission:state:;
++ (void)reportRequestPermission:state:uuid:;
++ (void)reportTimonPipelineAPMWithName:timeCost:result:;
++ (id)stubbedAPIs;
++ (id)stubbedCAPIs;
++ (id)stubbedClass;
++ (id)stubbedClassAPIs;
++ (id)stubbedInstanceAPIs;
++ (unsigned long long)storeType;
++ (id)authorizationStatus;
++ (void)preload;
++ (id)entryType;
++ (id)dataType;
++ (id)pipelineType;
+@end

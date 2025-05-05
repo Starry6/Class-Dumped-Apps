@@ -1,0 +1,2 @@
+@interface HTSLiveEasterEggRoot : GPBRootObject
+@end

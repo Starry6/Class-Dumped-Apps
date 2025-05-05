@@ -1,0 +1,2 @@
+@interface CNObservableWithFutureCancelationToken : CNCancelationToken
+@end

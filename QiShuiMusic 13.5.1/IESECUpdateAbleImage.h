@@ -1,0 +1,30 @@
+@interface IESECUpdateAbleImage : UIImage
+@property (nonatomic) UIImage realImage;
+@property (nonatomic) NSHashTable imageViews;
+@property (nonatomic) NSMapTable buttons;
+@property (nonatomic) NSMapTable buttonBackgrounds;
+@property (nonatomic) NSMapTable sliders;
+@property (nonatomic) NSString imageName;
+- (void)addToImageView:;
+- (void)addToButton:forBackgroundState:;
+- (void)addToButton:forState:;
+- (void)addToSlider:forState:;
+- (id)buttonBackgrounds;
+- (id)realImage;
+- (void)removeFromButton:forBackgroundState:;
+- (void)removeFromButton:forState:;
+- (void)removeFromImageView:;
+- (void)removeFromSlider:forState:;
+- (void)setButtonBackgrounds:;
+- (void)setRealImage:;
+- (void)setImageName:;
+- (id)imageName;
+- (id)buttons;
+- (void).cxx_destruct;
+- (void)setButtons:;
+- (void)setImageViews:;
+- (id)imageViews;
+- (void)updateImage:;
+- (id)sliders;
+- (void)setSliders:;
+@end

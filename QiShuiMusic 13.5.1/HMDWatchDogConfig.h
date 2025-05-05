@@ -1,0 +1,38 @@
+@interface HMDWatchDogConfig : HMDTrackerConfig
+@property (nonatomic) double timeoutInterval;
+@property (nonatomic) double sampleInterval;
+@property (nonatomic) Q lastThreadsCount;
+@property (nonatomic) double launchCrashThreshold;
+@property (nonatomic) BOOL suspend;
+@property (nonatomic) BOOL ignoreBackground;
+@property (nonatomic) BOOL uploadAlog;
+@property (nonatomic) BOOL uploadMemoryLog;
+@property (nonatomic) BOOL raiseMainThreadPriority;
+@property (nonatomic) double raiseMainThreadPriorityInterval;
+- (double)raiseMainThreadPriorityInterval;
+- (BOOL)uploadMemoryLog;
+- (BOOL)enableUpload;
+- (id)getModule;
+- (BOOL)ignoreBackground;
+- (unsigned long long)lastThreadsCount;
+- (double)launchCrashThreshold;
+- (BOOL)raiseMainThreadPriority;
+- (void)setIgnoreBackground:;
+- (void)setLastThreadsCount:;
+- (void)setLaunchCrashThreshold:;
+- (void)setRaiseMainThreadPriority:;
+- (void)setRaiseMainThreadPriorityInterval:;
+- (void)setUploadAlog:;
+- (void)setUploadMemoryLog:;
+- (long long)startWeight;
+- (BOOL)uploadAlog;
+- (void)setSampleInterval:;
+- (double)sampleInterval;
+- (BOOL)suspend;
+- (double)timeoutInterval;
+- (BOOL)isValid;
+- (void)setTimeoutInterval:;
+- (void)setSuspend:;
++ (id)hmd_attributeMapDictionary;
++ (id)configKey;
+@end

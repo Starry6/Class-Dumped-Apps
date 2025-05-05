@@ -1,0 +1,31 @@
+@interface VCFigAssetWriter : NSObject
+@property (nonatomic) I startRTPTimeStamp;
+@property (nonatomic) I endRTPTimeStamp;
+@property (nonatomic) C writerMode;
+@property (nonatomic) NSURL outputURL;
+- (void)dealloc;
+- (void)setOutputURL:;
+- (id)outputURL;
+- (int)_setupWriter;
+- (void)setStillImageTime:;
+- (id)initWithOutputURL:transactionID:videoCodec:;
+- (void)appendVideoSampleBuffer:cameraStatus:mediaType:;
+- (void)appendAudioSampleBuffer:mediaType:;
+- (void)finishWritingWithHandler:;
+- (BOOL)shouldAppendSampleBuffer:RTPtimeStamp:mediaType:;
+- (BOOL)shouldFinishWritingSampleBuffer:RTPtimeStamp:mediaType:;
+- (void)setEndRTPTimestampWithTimestamp:;
+- (void)setupWriterWithMode:;
+- (unsigned int)startRTPTimeStamp;
+- (void)setStartRTPTimeStamp:;
+- (unsigned int)endRTPTimeStamp;
+- (void)setEndRTPTimeStamp:;
+- (unsigned char)writerMode;
+- (void)setupLivePhotoStillImageCameraStatusBit:resize:videoVisibleWidth:height:;
+- (int)trackIDForMediaType:;
+- (int)trackIDForWriterMode:;
+- (id)compressionSessionWithWidth:height:;
+- (int)encodeAndAppendSampleBuffer:;
+- (void)writeIdentifierMetadata:;
+- (void)setStillImageTimeInternal;
+@end

@@ -1,0 +1,36 @@
+@interface CBCharacteristic : CBAttribute
+@property (nonatomic) CBService service;
+@property (nonatomic) Q properties;
+@property (nonatomic) NSData value;
+@property (nonatomic) NSArray descriptors;
+@property (nonatomic) BOOL isNotifying;
+@property (nonatomic) Q valueTimestamp;
+@property (nonatomic) CBPeripheral peripheral;
+@property (nonatomic) NSNumber handle;
+@property (nonatomic) NSNumber valueHandle;
+@property (nonatomic) BOOL isBroadcasted;
+- (id)descriptors;
+- (void)setService:;
+- (id)initWithService:dictionary:;
+- (id)peripheral;
+- (id)handle;
+- (void)setProperties:;
+- (id)service;
+- (void)setValue:;
+- (unsigned long long)properties;
+- (void).cxx_destruct;
+- (id)description;
+- (id)value;
+- (void)setDescriptors:;
+- (void)invalidate;
+- (id)handleValueUpdated:;
+- (id)handleValueWritten:;
+- (id)handleValueBroadcasted:;
+- (id)handleValueNotifying:;
+- (id)handleDescriptorsDiscovered:;
+- (BOOL)isBroadcasted;
+- (BOOL)isNotifying;
+- (void)setIsNotifying:;
+- (unsigned long long)valueTimestamp;
+- (id)valueHandle;
+@end

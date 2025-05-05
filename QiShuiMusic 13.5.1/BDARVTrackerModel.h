@@ -1,0 +1,31 @@
+@interface BDARVTrackerModel : NSObject
+@property (nonatomic) NSString ad_id;
+@property (nonatomic) NSString log_extra;
+@property (nonatomic) NSString tag;
+@property (nonatomic) NSString label;
+@property (nonatomic) NSString refer;
+@property (nonatomic) NSString type;
+@property (nonatomic) NSDictionary adExtra;
+@property (nonatomic) NSDictionary extraDict;
+@property (nonatomic) NSArray trackURLs;
+- (id)adExtra;
+- (id)ad_id;
+- (id)extraDict;
+- (id)initWithADID:logExtra:;
+- (id)log_extra;
+- (id)refer;
+- (void)setAdExtra:;
+- (void)setAd_id:;
+- (void)setExtraDict:;
+- (void)setLog_extra:;
+- (void)setRefer:;
+- (void)setTrackURLs:;
+- (id)trackURLs;
+- (id)tag;
+- (void)setType:;
+- (void)setLabel:;
+- (id)label;
+- (void)setTag:;
+- (id)type;
+- (void).cxx_destruct;
+@end

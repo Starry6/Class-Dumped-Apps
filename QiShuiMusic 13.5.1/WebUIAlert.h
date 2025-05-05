@@ -1,0 +1,38 @@
+@interface WebUIAlert : NSObject
+@property (nonatomic) @? actionHandler;
+@property (nonatomic) NSInteger type;
+@property (nonatomic) NSString title;
+@property (nonatomic) NSString bodyText;
+@property (nonatomic) NSArray buttonTitles;
+@property (nonatomic) NSInteger defaultAction;
+@property (nonatomic) NSInteger tableAction;
+@property (nonatomic) NSInteger hideAction;
+@property (nonatomic) @ context;
+@property (nonatomic) NSArray identities;
+@property (nonatomic) NSArray titles;
+@property (nonatomic) @ selectedIdentity;
+- (id)bodyText;
+- (id)context;
+- (id)identities;
+- (int)defaultAction;
+- (void)setActionHandler:;
+- (int)type;
+- (id)actionHandler;
+- (id)title;
+- (void).cxx_destruct;
+- (void)setIdentities:;
+- (void)setContext:;
+- (id)titles;
+- (int)hideAction;
+- (void)setHideAction:;
+- (id)initWithType:title:bodyText:defaultAction:otherAction:tableAction:;
+- (id)initWithType:title:bodyText:defaultAction:otherAction:;
+- (id)selectedIdentity;
+- (id)buttonTitles;
+- (id)initWithType:title:defaultAction:otherAction:tableAction:;
+- (id)initWithType:title:defaultAction:otherAction:;
+- (id)_buttonTitleForAction:;
+- (int)actionForButtonTag:;
+- (void)setSelectedTableItemIndex:;
+- (int)tableAction;
+@end

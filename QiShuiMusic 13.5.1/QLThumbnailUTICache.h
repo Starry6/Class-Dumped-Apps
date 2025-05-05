@@ -1,0 +1,31 @@
+@interface QLThumbnailUTICache : NSObject
+@property (nonatomic) NSMutableDictionary itemTypeCache;
+@property (nonatomic) NSMutableDictionary dataItemTypeCache;
+@property (nonatomic) NSMutableDictionary useExtensionCache;
+@property (nonatomic) NSMutableDictionary dataItemUseExtensionCache;
+- (id)init;
+- (void).cxx_destruct;
+- (unsigned long long)itemTypeForItem:;
+- (BOOL)requestedBadgeType:isValidForContentType:;
+- (BOOL)useExtensionForItem:;
+- (BOOL)useExtensionUncachedForContentType:isDataItem:;
+- (BOOL)useExtensionForContentType:isDataItem:;
+- (unsigned long long)_itemTypeByUTIResolutionForContentType:isDataItem:;
+- (unsigned long long)itemTypeForContentType:;
+- (unsigned long long)itemTypeForContentType:isDataItem:;
+- (BOOL)_contentTypeShouldBeHandledByAppleExtension:;
+- (id)itemTypeCache;
+- (void)setItemTypeCache:;
+- (id)dataItemTypeCache;
+- (void)setDataItemTypeCache:;
+- (id)useExtensionCache;
+- (void)setUseExtensionCache:;
+- (id)dataItemUseExtensionCache;
+- (void)setDataItemUseExtensionCache:;
++ (id)sharedCache;
++ (id)_iWorkUTIs;
++ (id)iWorkTypes;
++ (BOOL)contentTypeIsIWorkType:;
++ (BOOL)contentTypeIdentifier:conformsToContentTypeIdentifierInArray:;
++ (BOOL)contentType:conformsToContentTypeInArray:;
+@end

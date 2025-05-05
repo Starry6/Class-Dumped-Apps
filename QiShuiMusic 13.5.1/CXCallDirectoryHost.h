@@ -1,0 +1,31 @@
+@interface CXCallDirectoryHost : NSObject
+@property (nonatomic) NSObject<OS_dispatch_queue> queue;
+@property (nonatomic) <CXCallDirectoryHostDelegate> delegate;
+@property (nonatomic) NSObject<OS_dispatch_queue> delegateQueue;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)init;
+- (void)setDelegate:;
+- (id)delegateQueue;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)performDelegateCallback:;
+- (void)setQueue:;
+- (void)setDelegateQueue:;
+- (id)queue;
+- (void)setDelegate:queue:;
+- (id)reloadExtensionWithIdentifier:reply:;
+- (id)getEnabledStatusForExtensionWithIdentifier:reply:;
+- (id)setEnabled:forExtensionWithIdentifier:reply:;
+- (id)firstIdentificationEntriesForEnabledExtensionsWithPhoneNumbers:reply:;
+- (id)getExtensionsWithReply:;
+- (id)setPrioritizedExtensionIdentifiers:reply:;
+- (id)launchCallDirectorySettingsWithReply:;
+- (id)synchronizeExtensionsWithReply:;
+- (id)compactStoreWithReply:;
+- (BOOL)_connectionContainsCallDirectoryHostEntitlementCapability:;
+- (void)_nsExtensionWithIdentifier:completion:;
+- (void)prepareStoreIfNecessary;
+@end

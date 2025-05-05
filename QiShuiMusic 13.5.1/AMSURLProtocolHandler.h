@@ -1,0 +1,32 @@
+@interface AMSURLProtocolHandler : NSObject
+@property (nonatomic) NSObject<OS_dispatch_queue> responsePingQueue;
+@property (nonatomic) NSObject<OS_dispatch_queue> metricsQueue;
+@property (nonatomic) AMSSigningSecurityService signingService;
+@property (nonatomic) AMSURLSession session;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)reconfigureNewRequest:originalTask:redirect:error:;
+- (id)metricsQueue;
+- (BOOL)_URLIsTrustedFromRequest:bag:;
+- (id)handleCompletionWithTask:metrics:decodedObject:;
+- (void)setSession:;
+- (id)init;
+- (void)_pingURL:session:bag:;
+- (void)setResponsePingQueue:;
+- (BOOL)_shouldEnableReversePushForTask:;
+- (void)reportMetricsForContext:;
+- (id)signingService;
+- (void)_setResponseCookiesFromResponse:taskInfo:;
+- (id)handleResponse:task:;
+- (id)decodeData:task:error:;
+- (id)responsePingQueue;
+- (void)didCreateTask:fromRequest:error:;
+- (id)decodeMutableData:task:error:;
+- (void)setMetricsQueue:;
+- (id)session;
+- (void).cxx_destruct;
++ (double)reversePushSamplingPercentageForTask:;
++ (double)_randomDouble;
+@end

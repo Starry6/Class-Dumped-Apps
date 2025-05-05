@@ -1,0 +1,32 @@
+@interface IESLiveSaaSFeedPreviewDetailView : UIView
+@property (nonatomic) UIImageView headImageView;
+@property (nonatomic) UILabel nameLabel;
+@property (nonatomic) UILabel titleLabel;
+@property (nonatomic) UIView douyinBackgroundView;
+@property (nonatomic) UILabel douyinLabel;
+@property (nonatomic) UIImageView douyinIconImageView;
+@property (nonatomic) BOOL shouldShowDouyinLabel;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setDouyinLabel:;
+- (id)douyinBackgroundView;
+- (id)douyinIconImageView;
+- (id)douyinLabel;
+- (id)headImageView;
+- (void)setDouyinBackgroundView:;
+- (void)setDouyinIconImageView:;
+- (void)setHeadImageView:;
+- (void)setShouldShowDouyinLabel:;
+- (BOOL)shouldShowDouyinLabel;
+- (void)update:uiConfig:;
+- (id)init;
+- (void)update:;
+- (void)setTitleLabel:;
+- (void).cxx_destruct;
+- (id)titleLabel;
+- (id)nameLabel;
+- (void)setNameLabel:;
+- (void)setupSubviews;
+@end

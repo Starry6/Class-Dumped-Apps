@@ -1,0 +1,32 @@
+@interface PHCloudSharedAlbumInvitationRecord : PHObject
+@property (nonatomic) NSString cloudGUID;
+@property (nonatomic) NSString albumGUID;
+@property (nonatomic) NSString inviteeFirstName;
+@property (nonatomic) NSString inviteeLastName;
+@property (nonatomic) NSString inviteeHashedPersonID;
+@property (nonatomic) NSString inviteeEmail;
+@property (nonatomic) NSString inviteePhone;
+@property (nonatomic) NSArray inviteeEmails;
+@property (nonatomic) NSArray inviteePhones;
+- (id)cloudGUID;
+- (void).cxx_destruct;
+- (id)initWithFetchDictionary:propertyHint:photoLibrary:;
+- (id)inviteeEmail;
+- (id)inviteePhone;
+- (id)inviteeEmails;
+- (id)inviteePhones;
+- (void)setCloudGUID:;
+- (id)albumGUID;
+- (void)setAlbumGUID:;
+- (id)inviteeFirstName;
+- (id)inviteeLastName;
+- (id)inviteeHashedPersonID;
+- (void)setInviteeHashedPersonID:;
++ (id)identifierCode;
++ (id)fetchType;
++ (id)managedEntityName;
++ (id)entityKeyMap;
++ (id)propertiesToFetchWithHint:;
++ (id)fetchAllInvitationRecordsWithOptions:;
++ (id)fetchInvitationRecordsForSharedAlbum:;
+@end

@@ -1,0 +1,33 @@
+@interface CannedRawVideoCapture : NSObject
+@property (nonatomic) NSInteger width;
+@property (nonatomic) NSInteger height;
+@property (nonatomic) NSArray allResolutions;
+@property (nonatomic) NSInteger allFrameCount;
+@property (nonatomic) double allFrameRate;
+@property (nonatomic) NSDictionary currentResolution;
+@property (nonatomic) VideoScaler videoScaler;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)dealloc;
+- (void)setWidth:;
+- (int)height;
+- (int)width;
+- (void)setHeight:;
+- (id)initWithPath:;
+- (id)createPixelBufferForFrameIndex:;
+- (void)getFrameRate:frameCount:;
+- (int)setWidth:height:;
+- (id)videoScaler;
+- (void)setVideoScaler:;
+- (int)allFrameCount;
+- (void)setAllFrameCount:;
+- (double)allFrameRate;
+- (void)setAllFrameRate:;
+- (int)initializeFrameResolutionArrayFromFolder:;
+- (id)allResolutions;
+- (void)setAllResolutions:;
+- (id)currentResolution;
+- (void)setCurrentResolution:;
+@end

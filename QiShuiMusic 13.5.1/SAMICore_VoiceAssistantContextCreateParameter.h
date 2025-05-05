@@ -1,0 +1,36 @@
+@interface SAMICore_VoiceAssistantContextCreateParameter : NSObject
+@property (nonatomic) NSString url;
+@property (nonatomic) NSString header;
+@property (nonatomic) NSString protoVersion;
+@property (nonatomic) NSString appKey;
+@property (nonatomic) q tokenType;
+@property (nonatomic) NSString token;
+@property (nonatomic) NSInteger connectTimeout;
+@property (nonatomic) BOOL enableTransferRetry;
+@property (nonatomic) NSArray retryTimeArray;
+@property (nonatomic) NSString businessInfo;
+@property (nonatomic) <SAMICoreCallbackListener> listener;
+- (id)appKey;
+- (id)businessInfo;
+- (BOOL)enableTransferRetry;
+- (id)retryTimeArray;
+- (void)setAppKey:;
+- (void)setBusinessInfo:;
+- (void)setEnableTransferRetry:;
+- (void)setRetryTimeArray:;
+- (void)setHeader:;
+- (id)url;
+- (void)dealloc;
+- (id)token;
+- (id)listener;
+- (void)setProtoVersion:;
+- (void)setUrl:;
+- (void)setTokenType:;
+- (void)setToken:;
+- (id)protoVersion;
+- (id)header;
+- (void)setListener:;
+- (long long)tokenType;
+- (int)connectTimeout;
+- (void)setConnectTimeout:;
+@end

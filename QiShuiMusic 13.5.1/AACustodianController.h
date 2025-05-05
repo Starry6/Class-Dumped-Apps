@@ -1,0 +1,29 @@
+@interface AACustodianController : NSObject
+- (id)init;
+- (void).cxx_destruct;
+- (id)initWithDaemonXPCEndpoint:;
+- (void)availableRecoveryFactorsWithCompletion:;
+- (void)setupCustodianshipWithContext:completion:;
+- (void)removeCustodian:completion:;
+- (void)stopBeingCustodian:completion:;
+- (void)fetchTrustedContactsWithCompletion:;
+- (void)fetchCustodianshipInfoWithCompletion:;
+- (void)fetchCustodianshipInfoWithUUID:completion:;
+- (void)fetchSuggestedCustodiansWithCompletion:;
+- (void)fetchCustodianHealthStatusWithCompletion:;
+- (void)startCustodianRecoveryWithContext:completion:;
+- (BOOL)cancelCustodianRecoveryWithSessionID:error:;
+- (void)fetchCustodianRecoveryConfigurationWithCompletion:;
+- (void)generateCustodianRecoveryCodeWithContext:completion:;
+- (void)validateCustodianRecoveryCodeWithContext:completion:;
+- (void)fetchCustodianRecoveryKeysWithSessionID:completion:;
+- (void)fetchCustodianPasswordResetInformationWithSessionID:completion:;
+- (void)startHealthCheckWithCompletion:;
+- (void)startManateeMigrationWithCompletion:;
+- (void)pullTrustedContactsFromCloudKitWithCompletion:;
+- (void)displayTrustedContactFlowWithModel:completion:;
+- (void)reSendCustodianInvitationWithCustodianID:completion:;
+- (void)performTrustedContactsDataSyncWithCompletion:;
+- (void)respondToCustodianRequestWithResponse:completion:;
+- (void)displayInvitationUIWithUUID:completion:;
+@end

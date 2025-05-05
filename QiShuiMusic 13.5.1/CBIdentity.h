@@ -1,0 +1,35 @@
+@interface CBIdentity : NSObject
+@property (nonatomic) NSString accountID;
+@property (nonatomic) NSUUID bluetoothIdentifier;
+@property (nonatomic) NSString contactID;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) NSString idsDeviceID;
+@property (nonatomic) NSData irkData;
+@property (nonatomic) NSString model;
+@property (nonatomic) NSString name;
+@property (nonatomic) NSInteger type;
+- (id)model;
+- (void)encodeWithXPCObject:;
+- (void)setName:;
+- (id)descriptionWithLevel:;
+- (id)accountID;
+- (void)setModel:;
+- (void)setAccountID:;
+- (id)irkData;
+- (void)setIdsDeviceID:;
+- (id)identifier;
+- (void)setType:;
+- (id)initWithXPCObject:error:;
+- (id)contactID;
+- (void)setContactID:;
+- (id)idsDeviceID;
+- (int)type;
+- (void).cxx_destruct;
+- (id)description;
+- (id)name;
+- (void)setIrkData:;
+- (void)setIdentifier:;
+- (BOOL)isEqual:;
+- (id)bluetoothIdentifier;
+- (void)setBluetoothIdentifier:;
+@end

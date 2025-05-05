@@ -1,0 +1,33 @@
+@interface CBScalablePipeManager : CBManager
+@property (nonatomic) NSHashTable pipes;
+@property (nonatomic) <CBScalablePipeManagerDelegate> delegate;
+@property (nonatomic) NSSet identifiers;
+- (id)initWithDelegate:queue:;
+- (id)sharedPairingAgent;
+- (BOOL)isMsgAllowedWhenOff:;
+- (id)pipes;
+- (void)handlePipeDisconnected:;
+- (void)dealloc;
+- (id)identifiers;
+- (void)setLinkRequirementsForPeer:withClientName:packetsPerSecond:inputBytesPerSecond:outputBytesPerSecond:;
+- (void)setDelegate:;
+- (void)registerEndpoint:type:priority:;
+- (void)observeValueForKeyPath:ofObject:change:context:;
+- (void)setLinkRequirementsForPeer:packetsPerSecond:inputBytesPerSecond:outputBytesPerSecond:;
+- (void)handleEndpointAdded:;
+- (void)orphanPipes;
+- (void)handleMsg:args:;
+- (void)unregisterAllEndpoints;
+- (void)handlePipeConnected:;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)registerEndpoint:type:priority:transport:requireEncryption:;
+- (void)handleHostStateUpdated:;
+- (void)handleEndpointRemoved:;
+- (id)initWithDelegate:;
+- (void)setLinkRequirementsForPeerWithLatency:latencyInMs:inputBytesPerSecond:outputBytesPerSecond:;
+- (void)registerEndpoint:type:priority:transport:;
+- (id)pipeForName:identifier:;
+- (void)unregisterEndpoint:;
+- (void)registerEndpoint:type:priority:options:;
+@end

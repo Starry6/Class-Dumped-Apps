@@ -1,0 +1,34 @@
+@interface IESIMBigThumbModel : IESIMBaseApiModel
+@property (nonatomic) q imgNum;
+@property (nonatomic) NSString thumbUri;
+@property (nonatomic) NSString imgUrl;
+@property (nonatomic) q imgXSize;
+@property (nonatomic) q imgYSize;
+@property (nonatomic) q imgXLen;
+@property (nonatomic) q imgYLen;
+@property (nonatomic) double thumbduration;
+@property (nonatomic) double thumbInterval;
+@property (nonatomic) NSString thumbFext;
+- (long long)imgXLen;
+- (long long)imgYLen;
+- (long long)imgNum;
+- (id)imgUrl;
+- (long long)imgXSize;
+- (long long)imgYSize;
+- (void)setImgNum:;
+- (void)setImgUrl:;
+- (void)setImgXLen:;
+- (void)setImgXSize:;
+- (void)setImgYLen:;
+- (void)setImgYSize:;
+- (void)setThumbFext:;
+- (void)setThumbInterval:;
+- (void)setThumbUri:;
+- (void)setThumbduration:;
+- (id)thumbFext;
+- (double)thumbInterval;
+- (id)thumbUri;
+- (double)thumbduration;
+- (void).cxx_destruct;
++ (id)JSONKeyPathsByPropertyKey;
+@end

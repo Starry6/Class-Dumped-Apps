@@ -1,0 +1,30 @@
+@interface ProcessorDownloaderShareInstance : NSObject
+@property (nonatomic) NSMutableArray downLoadArray;
+@property (nonatomic) NSMutableDictionary downloadedPathDic;
+@property (nonatomic) NSLock mDownloadArraySetLock;
+@property (nonatomic) NSMutableDictionary downloadedSuccessRateDic;
+@property (nonatomic) NSMutableDictionary downloadedCostTimeDic;
+@property (nonatomic) NSMutableDictionary downloadedErrorCodeDic;
+- (id)getSuccessRate:;
+- (id)createDownLoader;
+- (id)downLoadArray;
+- (int)downloadWithConfig:callback:;
+- (id)downloadedCostTimeDic;
+- (id)downloadedErrorCodeDic;
+- (id)downloadedPathDic;
+- (id)downloadedSuccessRateDic;
+- (id)getCacheDir:;
+- (id)getCostTime:;
+- (id)getErrorCode:;
+- (id)mDownloadArraySetLock;
+- (void)setDownLoadArray:;
+- (void)setDownloadedCostTimeDic:;
+- (void)setDownloadedErrorCodeDic:;
+- (void)setDownloadedPathDic:;
+- (void)setDownloadedSuccessRateDic:;
+- (void)setMDownloadArraySetLock:;
+- (id)init;
+- (void)dealloc;
+- (void).cxx_destruct;
++ (id)shareInstance;
+@end

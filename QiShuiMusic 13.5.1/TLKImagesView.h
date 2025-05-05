@@ -1,0 +1,33 @@
+@interface TLKImagesView : TLKView
+@property (nonatomic) NSMutableArray imageButtons;
+@property (nonatomic) NUIContainerFlowView contentView;
+@property (nonatomic) <TLKImagesViewDelegate> delegate;
+@property (nonatomic) NSArray images;
+@property (nonatomic) BOOL paddingDisabled;
+@property (nonatomic) BOOL selectionEnabled;
+@property (nonatomic) BOOL useGridAlignment;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)_handleTap:;
+- (void)setDelegate:;
+- (void)_updateImages;
+- (id)images;
+- (id)delegate;
+- (void).cxx_destruct;
+- (void)setImages:;
+- (void)setSelectionEnabled:;
+- (id)setupContentView;
+- (void)observedPropertiesChanged;
+- (BOOL)usesDefaultLayoutMargins;
+- (void)setPaddingDisabled:;
+- (void)_updateSpacing;
+- (id)imageViewAtLocation:;
+- (BOOL)isPaddingDisabled;
+- (BOOL)isSelectionEnabled;
+- (BOOL)useGridAlignment;
+- (void)setUseGridAlignment:;
+- (id)imageButtons;
+- (void)setImageButtons:;
+@end

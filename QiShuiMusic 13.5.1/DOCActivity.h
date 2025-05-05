@@ -1,0 +1,38 @@
+@interface DOCActivity : UIActivity
+@property (nonatomic) NSArray items;
+@property (nonatomic) NSString identifier;
+@property (nonatomic) NSString imageName;
+@property (nonatomic) UIImage image;
+@property (nonatomic) NSString localizedTitle;
+@property (nonatomic) <DOCItemActivityPerformer> actionPerformerProxy;
+- (id)activityTitle;
+- (id)activityType;
+- (void)validate;
+- (void)setImageName:;
+- (id)imageName;
+- (id)items;
+- (id)identifier;
+- (void)setImage:;
+- (void)setItems:;
+- (void).cxx_destruct;
+- (id)localizedTitle;
+- (void)setLocalizedTitle:;
+- (void)setIdentifier:;
+- (id)image;
+- (id)activityImage;
+- (id)_systemImageName;
+- (BOOL)canPerformWithActivityItems:;
+- (void)performActivity;
+- (void)prepareWithActivityItems:;
+- (BOOL)_needsResolvedActivityItems;
+- (id)initWithIdentifier:actionPerformer:forBrowserAction:;
+- (id)actionPerformerProxy;
++ (long long)activityCategory;
++ (id)activityWithIdentifier:actionPerformerProxy:;
++ (id)activityForBrowserAction:actionPerformerProxy:;
++ (id)_activityWithIdentifier:forBrowserAction:actionPerformerProxy:;
++ (BOOL)isDestructiveActionIdentifier:;
++ (long long)_activityStyleForActivityIdentifier:;
++ (id)_imageNameForActivityIdentifier:;
++ (id)_titleForActivityIdentifier:;
+@end

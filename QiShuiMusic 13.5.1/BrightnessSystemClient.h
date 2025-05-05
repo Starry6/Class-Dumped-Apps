@@ -1,0 +1,28 @@
+@interface BrightnessSystemClient : NSObject
+- (id)init;
+- (void)dealloc;
+- (void)registerNotificationBlock:;
+- (id)copyPropertyForKey:;
+- (BOOL)setProperty:forKey:;
+- (BOOL)isAlsSupported;
+- (void)registerNotificationBlock:forProperties:;
+- (void)unregisterNotificationForKey:;
+- (BOOL)setProperty:withKey:andDisplay:;
+- (id)copyPropertyForKey:andDisplay:;
+- (void)registerDisplayNotificationCallbackBlock:;
+- (void)unregisterDisplayNotificationBlock;
+- (void)unregisterPropertyNotificationBlock;
+- (void)registerNotificationForKey:;
+- (void)registerNotificationForKeys:;
+- (void)unregisterNotificationForKeys:;
+- (void)registerNotificationForKeys:andDisplay:;
+- (void)unregisterNotificationForKeys:andDisplay:;
+- (void)registerNotificationForKey:andDisplay:;
+- (void)unregisterNotificationForKey:andDisplay:;
+- (BOOL)setProperty:withKey:keyboardID:;
+- (id)copyPropertyForKey:keyboardID:;
+- (void)registerKeyboardNotificationCallbackBlock:;
+- (void)unregisterKeyboardNotificationBlock;
+- (void)registerNotificationForKeys:keyboardID:;
+- (void)unregisterNotificationForKeys:keyboardID:;
+@end

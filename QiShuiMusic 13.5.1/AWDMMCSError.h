@@ -1,0 +1,31 @@
+@interface AWDMMCSError : PBCodable
+@property (nonatomic) BOOL hasDomain;
+@property (nonatomic) NSString domain;
+@property (nonatomic) BOOL hasCode;
+@property (nonatomic) NSInteger code;
+@property (nonatomic) NSMutableArray underlyingErrors;
+- (void)dealloc;
+- (void)setHasCode:;
+- (void)writeTo:;
+- (int)code;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)mergeFrom:;
+- (BOOL)hasCode;
+- (BOOL)hasDomain;
+- (BOOL)readFrom:;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (id)domain;
+- (void)setDomain:;
+- (void)setCode:;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (id)underlyingErrors;
+- (void)clearUnderlyingErrors;
+- (void)addUnderlyingErrors:;
+- (unsigned long long)underlyingErrorsCount;
+- (id)underlyingErrorsAtIndex:;
+- (void)setUnderlyingErrors:;
++ (Class)underlyingErrorsType;
+@end

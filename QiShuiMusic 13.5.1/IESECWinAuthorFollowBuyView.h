@@ -1,0 +1,32 @@
+@interface IESECWinAuthorFollowBuyView : UIView
+@property (nonatomic) CAGradientLayer gradientLayer;
+@property (nonatomic) UILabel followBuyLabel;
+@property (nonatomic) UIView vLineView;
+@property (nonatomic) UILabel recommendLabel;
+@property (nonatomic) IESECGCDTimer timer;
+@property (nonatomic) UIImage gradientImage;
+@property (nonatomic) IESECWinAuthorObject object;
+- (id)followAttributedText:;
+- (id)followBuyLabel;
+- (void)generateGradientLayer;
+- (id)recommendAttributedText:;
+- (id)recommendLabel;
+- (void)setFollowBuyLabel:;
+- (void)setRecommendLabel:;
+- (void)setVLineView:;
+- (void)trackShow;
+- (void)updateDataWithObject:;
+- (id)vLineView;
+- (void)setObject:;
+- (id)init;
+- (void)layoutSubviews;
+- (id)gradientLayer;
+- (void)setTimer:;
+- (void).cxx_destruct;
+- (id)object;
+- (id)timer;
+- (void)setGradientLayer:;
+- (void)setupUI;
+- (id)gradientImage;
+- (void)setGradientImage:;
+@end

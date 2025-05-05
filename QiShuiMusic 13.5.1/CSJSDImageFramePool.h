@@ -1,0 +1,34 @@
+@interface CSJSDImageFramePool : NSObject
+@property (nonatomic) <CSJSDAnimatedImageProvider> provider;
+@property (nonatomic) Q registerCount;
+@property (nonatomic) NSMutableDictionary frameBuffer;
+@property (nonatomic) NSOperationQueue fetchQueue;
+@property (nonatomic) Q maxBufferCount;
+@property (nonatomic) Q maxConcurrentCount;
+@property (nonatomic) Q currentFrameCount;
+- (void)removeAllFrames;
+- (unsigned long long)maxBufferCount;
+- (void)prefetchFrameAtIndex:;
+- (unsigned long long)registerCount;
+- (void)removeFrameAtIndex:;
+- (void)setFrame:atIndex:;
+- (void)setMaxBufferCount:;
+- (void)setMaxConcurrentCount:;
+- (void)setRegisterCount:;
+- (void)setProvider:;
+- (id)init;
+- (void)setFetchQueue:;
+- (void)dealloc;
+- (id)fetchQueue;
+- (void)didReceiveMemoryWarning:;
+- (id)provider;
+- (void).cxx_destruct;
+- (id)frameAtIndex:;
+- (id)frameBuffer;
+- (void)setFrameBuffer:;
+- (unsigned long long)currentFrameCount;
+- (unsigned long long)maxConcurrentCount;
++ (id)providerFramePoolMap;
++ (void)unregisterProvider:;
++ (id)registerProvider:;
+@end

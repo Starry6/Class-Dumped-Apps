@@ -1,0 +1,38 @@
+@interface AVCapturePhotoRequest : NSObject
+@property (nonatomic) I photoCallbackFlavor;
+@property (nonatomic) AVWeakReferencingDelegateStorage delegateStorage;
+@property (nonatomic) AVCapturePhotoSettings unresolvedSettings;
+@property (nonatomic) AVCaptureResolvedPhotoSettings resolvedSettings;
+@property (nonatomic) NSArray expectedPhotoManifest;
+@property (nonatomic) Q expectedPhotoCount;
+@property (nonatomic) I firedCallbackFlags;
+@property (nonatomic) Q firedPhotoCallbacksCount;
+@property (nonatomic) BOOL delegateSupportsDebugMetadataSidecarFile;
+@property (nonatomic) BOOL lensStabilizationSupported;
+@property (nonatomic) ^{__IOSurface=} previewSurface;
+@property (nonatomic) ^{opaqueCMSampleBuffer=} previewSampleBuffer;
+@property (nonatomic) ^{__IOSurface=} thumbnailSurface;
+- (void)_resolveExpectedPhotoManifest;
+- (void)dealloc;
+- (id)resolvedSettings;
+- (void)setResolvedSettings:;
+- (unsigned int)photoCallbackFlavor;
+- (void)setFiredPhotoCallbacksCount:;
+- (id)thumbnailSurface;
+- (BOOL)lensStabilizationSupported;
+- (unsigned long long)firedPhotoCallbacksCount;
+- (void)setFiredCallbackFlags:;
+- (id)delegateStorage;
+- (void)setPreviewSurface:;
+- (BOOL)delegateSupportsDebugMetadataSidecarFile;
+- (id)expectedPhotoManifest;
+- (void)setThumbnailSurface:;
+- (id)unresolvedSettings;
+- (unsigned long long)expectedPhotoCount;
+- (id)previewSurface;
+- (unsigned int)firedCallbackFlags;
+- (id)previewSampleBuffer;
+- (id)initWithDelegate:settings:lensStabilizationSupported:;
+- (void)setPreviewSampleBuffer:;
++ (id)requestWithDelegate:settings:lensStabilizationSupported:;
+@end

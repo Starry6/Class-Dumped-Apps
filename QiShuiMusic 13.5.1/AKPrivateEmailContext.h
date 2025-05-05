@@ -1,0 +1,34 @@
+@interface AKPrivateEmailContext : NSObject
+@property (nonatomic) NSString key;
+@property (nonatomic) NSString altDSID;
+@property (nonatomic) NSString proxiedAppID;
+@property (nonatomic) NSString proxiedBundleIdentifier;
+@property (nonatomic) NSString proxiedAppName;
+@property (nonatomic) NSString upgradeBundleIdentifier;
+@property (nonatomic) NSString clientAppBundleId;
+@property (nonatomic) BOOL keyAndBundleIdAreHashed;
+- (id)altDSID;
+- (id)key;
+- (id)initWithCoder:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)initWithKey:;
+- (id)description;
+- (id)proxiedBundleIdentifier;
+- (void)setProxiedBundleIdentifier:;
+- (id)initWithKey:altDSID:;
+- (id)initWithKey:altDSID:clientAppBundleId:;
+- (id)initWithContext:client:;
+- (id)initWithContext:bundleID:;
+- (void)sanitiseInternalState;
+- (id)proxiedAppID;
+- (void)setProxiedAppID:;
+- (id)proxiedAppName;
+- (void)setProxiedAppName:;
+- (id)upgradeBundleIdentifier;
+- (id)clientAppBundleId;
+- (void)setClientAppBundleId:;
+- (BOOL)keyAndBundleIdAreHashed;
+- (void)setKeyAndBundleIdAreHashed:;
++ (BOOL)supportsSecureCoding;
+@end

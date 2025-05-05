@@ -1,0 +1,32 @@
+@interface TKLocalSEPKey : TKSEPKey
+@property (nonatomic) @ sac;
+@property (nonatomic) NSString callerName;
+@property (nonatomic) NSXPCConnection caller;
+- (id)caller;
+- (id)accessControl;
+- (BOOL)systemKey;
+- (id)valueForEntitlement:;
+- (id)_initWithKeyType:keySize:accessControl:options:authContext:caller:error:;
+- (id)parametersWithACMHandle:;
+- (BOOL)error:withAKSReturn:ACMHandle:AKSOperation:message:;
+- (id)callerName;
+- (id)encodedAccessGroups;
+- (void)setSac:;
+- (BOOL)callerHasEntitlement:error:;
+- (void).cxx_destruct;
+- (id)_initWithObjectID:authContext:caller:error:;
+- (id)_initWithAuthContext:caller:;
+- (BOOL)evaluateRequirementIgnoringAccessGroups:;
+- (id)sac;
+- (id)authContextWithError:;
++ (id)protectionForKeyClass:;
++ (id)_testing_callerEntitlements;
++ (void)set_testing_callerEntitlements:;
++ (int)keyClassForProtection:;
++ (int)keybagHandle;
++ (BOOL)isDaytona;
++ (BOOL)hasSEP;
++ (void)setContextErrorHandler:;
++ (void)setupKeybagForTesting:;
++ (BOOL)isGibraltar;
+@end

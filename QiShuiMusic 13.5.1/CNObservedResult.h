@@ -1,0 +1,36 @@
+@interface CNObservedResult : NSObject
+@property (nonatomic) Q logTime;
+@property (nonatomic) @ logValue;
+@property (nonatomic) BOOL isResultEvent;
+@property (nonatomic) Q time;
+@property (nonatomic) Q tolerance;
+@property (nonatomic) @ value;
+- (unsigned long long)tolerance;
+- (id)timeRange;
+- (unsigned long long)time;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (id)description;
+- (id)value;
+- (BOOL)isEqual:;
+- (id)initWithValue:time:tolerance:;
+- (id)logValue;
+- (id)formattedTimeString;
+- (BOOL)isResultEvent;
+- (unsigned long long)logTime;
++ (id)resultWithTime:value:;
++ (id)resultWithTime:tolerance:value:;
++ (id)resultWithTimeInterval:tolerance:value:;
++ (id)completionResultWithTime:;
++ (id)completionResultWithTime:tolerance:;
++ (id)completionResultWithTimeInterval:tolerance:;
++ (id)failureWithError:time:;
++ (id)failureWithError:time:tolerance:;
++ (id)failureWithError:timeInterval:tolerance:;
++ (id)rangeWithExactTime:;
++ (id)rangeWithTime:tolerance:;
++ (BOOL)rangeWouldUnderflowWithTime:tolerance:;
++ (id)underflowSafeRangeWithTime:tolerance:;
++ (BOOL)rangeWouldOverflowWithTime:tolerance:;
++ (id)overflowSafeRangeWithTime:tolerance:;
+@end

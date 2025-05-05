@@ -1,0 +1,38 @@
+@interface INCodableAttributeDialog : NSObject
+@property (nonatomic) INCodableAttribute _codableAttribute;
+@property (nonatomic) INCodableDescription _codableDescription;
+@property (nonatomic) NSString formatString;
+@property (nonatomic) NSString formatStringID;
+@property (nonatomic) BOOL defaultDialog;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)_codableDescription;
+- (id)localizedDialogWithIntent:tokens:;
+- (void)_setCodableAttribute:;
+- (id)localizedDialogWithIntent:tokens:forLanguage:;
+- (id)formatStringID;
+- (BOOL)isDefaultDialog;
+- (void)setFormatString:;
+- (void)updateWithDictionary:;
+- (id)dictionaryRepresentationWithLocalizer:;
+- (id)_codableAttribute;
+- (id)formatString;
+- (id)__INCodableDescriptionFormatStringKey;
+- (void)setDefaultDialog:;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)localizedDialogWithIntent:tokens:localizer:;
+- (void)encodeWithCoder:;
+- (id)__INCodableDescriptionFormatStringDictionaryKey;
+- (void)setFormatStringID:;
+- (void).cxx_destruct;
+- (id)__INCodableDescriptionFormatStringLanguageCodeKey;
+- (id)__INCodableDescriptionFormatStringIDKey;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)__INCodableDescriptionFormatStringDictionaryLanguageCodeKey;
+- (id)copyWithZone:;
++ (BOOL)supportsSecureCoding;
+@end

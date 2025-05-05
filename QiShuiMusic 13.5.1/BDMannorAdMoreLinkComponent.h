@@ -1,0 +1,38 @@
+@interface BDMannorAdMoreLinkComponent : NSObject
+@property (nonatomic) BDMannorStyleTemplateComponentModel componentModel;
+@property (nonatomic) BDMannorStyleTemplateComponentDataModel data;
+@property (nonatomic) BOOL isShow;
+@property (nonatomic) BOOL downgrade;
+@property (nonatomic) NSString componentType;
+@property (nonatomic) BDMannorAdMoreLinkView adMoreLinkeView;
+@property (nonatomic) BDMannorComponentManagerContext context;
+@property (nonatomic) UIView componentView;
+@property (nonatomic) NSString scene;
+@property (nonatomic) NSString componentID;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)adMoreLinkeView;
+- (void)destory;
+- (id)componentModel;
+- (void)createComponentViewAndConfig;
+- (BOOL)downgrade;
+- (id)initWithContext:componentType:;
+- (BOOL)isShow;
+- (void)setAdMoreLinkeView:;
+- (void)setComponentModel:;
+- (void)setDowngrade:;
+- (void)setIsShow:;
+- (id)componentType;
+- (id)context;
+- (id)data;
+- (void)setComponentType:;
+- (void)hide;
+- (id)scene;
+- (void)show;
+- (void).cxx_destruct;
+- (void)setData:;
+- (void)setContext:;
+- (id)componentView;
+@end

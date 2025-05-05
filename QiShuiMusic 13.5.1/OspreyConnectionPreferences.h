@@ -1,0 +1,31 @@
+@interface OspreyConnectionPreferences : NSObject
+@property (nonatomic) NSString connectionHost;
+@property (nonatomic) NSNumber deviceAuthenticationVersion;
+@property (nonatomic) NSNumber deviceAttestionVersion;
+@property (nonatomic) NSData certificateData;
+@property (nonatomic) NSDate deviceAttestionExpireOn;
+@property (nonatomic) BOOL isDeviceAttestionExpired;
+- (void)deleteAll;
+- (id)certificateData;
+- (void)setCertificateData:;
+- (void).cxx_destruct;
+- (id)dictionaryRepresentation;
+- (id)initWithConnectionHost:keychain:;
+- (id)initWithDictionary:keychain:;
+- (void)resetCachedDeviceAttestation;
+- (id)_certificateDataKey;
+- (void)deleteCertificateData;
+- (id)_deviceAttestationDataKey;
+- (BOOL)isDeviceAttestionExpired;
+- (BOOL)setDeviceAttestationData:withExpiration:;
+- (id)deviceAttestationData;
+- (void)deleteDeviceAttestationData;
+- (id)connectionHost;
+- (void)setConnectionHost:;
+- (id)deviceAuthenticationVersion;
+- (void)setDeviceAuthenticationVersion:;
+- (id)deviceAttestionVersion;
+- (void)setDeviceAttestionVersion:;
+- (id)deviceAttestionExpireOn;
+- (void)setDeviceAttestionExpireOn:;
+@end

@@ -1,0 +1,2 @@
+@interface PSRestrictionsController : SFRestrictionsController
+@end

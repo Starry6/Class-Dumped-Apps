@@ -1,0 +1,37 @@
+@interface CMVO2MaxInputs : NSObject
+@property (nonatomic) Q recordId;
+@property (nonatomic) NSDate startDate;
+@property (nonatomic) double mets;
+@property (nonatomic) q metSource;
+@property (nonatomic) double heartRate;
+@property (nonatomic) double heartRateConfidence;
+@property (nonatomic) double grade;
+@property (nonatomic) q gradeType;
+@property (nonatomic) double cadence;
+@property (nonatomic) double pace;
+@property (nonatomic) BOOL hasGPS;
+@property (nonatomic) BOOL hasStrideCal;
+@property (nonatomic) q workoutType;
+- (double)cadence;
+- (id)startDate;
+- (void)dealloc;
+- (unsigned long long)recordId;
+- (id)initWithCoder:;
+- (double)grade;
+- (void)encodeWithCoder:;
+- (id)description;
+- (id)copyWithZone:;
+- (double)mets;
+- (id)initWithRecordId:startDate:mets:metSource:heartRate:heartRateConfidence:grade:gradeType:cadence:pace:hasGPS:hasStrideCal:workoutType:;
+- (id)initWithSample:;
+- (long long)metSource;
+- (double)heartRate;
+- (double)heartRateConfidence;
+- (long long)gradeType;
+- (double)pace;
+- (BOOL)hasGPS;
+- (BOOL)hasStrideCal;
+- (long long)workoutType;
++ (BOOL)supportsSecureCoding;
++ (id)VO2MaxInputFromCMVO2MaxInputs:;
+@end

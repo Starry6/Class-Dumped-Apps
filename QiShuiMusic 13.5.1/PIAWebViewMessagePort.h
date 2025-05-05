@@ -1,0 +1,31 @@
+@interface PIAWebViewMessagePort : NSObject
+@property (nonatomic) WKWebView webView;
+@property (nonatomic) PIASTLQueue pendingList;
+@property (nonatomic) WKUserScript propsScript;
+@property (nonatomic) BOOL portReady;
+@property (nonatomic) Q version;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setPropsScript:;
+- (void)setPendingList:;
+- (void)executeAllPendingOnMessageList;
+- (void)onMessage:;
+- (id)pendingList;
+- (BOOL)portReady;
+- (id)propsScript;
+- (void)setPortReady:;
+- (void)setupWebViewBridge;
+- (void)setupWebViewPolyfills;
+- (void)updatePIAPropsWithContext:;
+- (void)setWebView:;
+- (void)dealloc;
+- (id)webView;
+- (void)setVersion:;
+- (unsigned long long)version;
+- (id)initWithWebView:;
+- (void).cxx_destruct;
+- (void)userContentController:didReceiveScriptMessage:;
+- (void)postMessage:;
+@end

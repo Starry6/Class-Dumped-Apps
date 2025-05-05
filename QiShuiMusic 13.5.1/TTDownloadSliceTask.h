@@ -1,0 +1,31 @@
+@interface TTDownloadSliceTask : NSObject
+@property (nonatomic) NSString urlKey;
+@property (nonatomic) NSString secondUrl;
+@property (nonatomic) NSString sliceStorageDir;
+@property (nonatomic) BOOL isTaskValid;
+@property (nonatomic) TTDownloadTask downloadTask;
+@property (nonatomic) TTDownloadSubSliceInfo currSubSliceInfo;
+@property (nonatomic) DownloadGlobalParameters userParameters;
+@property (nonatomic) TTDownloadSliceTaskConfig downloadSliceTaskConfig;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (void)setIsTaskValid:;
+- (id)sliceStorageDir;
+- (void)clearReferenceCount;
+- (id)currSubSliceInfo;
+- (id)downloadSliceTaskConfig;
+- (BOOL)isTaskValid;
+- (id)secondUrl;
+- (void)setCurrSubSliceInfo:;
+- (void)setDownloadSliceTaskConfig:;
+- (void)setUserParameters:;
+- (void)cancel;
+- (void)start;
+- (void).cxx_destruct;
+- (id)userParameters;
+- (id)downloadTask;
+- (void)setDownloadTask:;
+- (id)urlKey;
+@end

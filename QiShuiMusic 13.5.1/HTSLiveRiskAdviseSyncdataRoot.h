@@ -1,0 +1,2 @@
+@interface HTSLiveRiskAdviseSyncdataRoot : GPBRootObject
+@end

@@ -1,0 +1,33 @@
+@interface IESECMallInnerFeedPriceView : UIView
+@property (nonatomic) UILabel priceLogoLabel;
+@property (nonatomic) UILabel priceInfoLabel;
+@property (nonatomic) UILabel priceSuffixLabel;
+@property (nonatomic) UILabel priceTextLabel;
+@property (nonatomic) UILabel saleInfoLabel;
+@property (nonatomic) UIColor priceColor;
+@property (nonatomic) IESECMallInnerFeedPriceConfig config;
+@property (nonatomic) UIView additionView;
+- (void)addAdditionView:width:;
+- (id)additionView;
+- (double)getGapSpace;
+- (id)priceColor;
+- (id)priceInfoLabel;
+- (id)priceLogoLabel;
+- (id)priceSuffixLabel;
+- (id)priceTextLabel;
+- (id)saleInfoLabel;
+- (void)setAdditionView:;
+- (void)setPriceColor:;
+- (void)setPriceInfoLabel:;
+- (void)setPriceLogoLabel:;
+- (void)setPriceSuffixLabel:;
+- (void)setPriceTextLabel:;
+- (void)setSaleInfoLabel:;
+- (void)updateWithPrice:priceSuffix:priceDescText:sales:;
+- (id)init;
+- (void)setConfig:;
+- (id)initWithConfig:;
+- (void).cxx_destruct;
+- (id)config;
+- (void)setupUI;
+@end

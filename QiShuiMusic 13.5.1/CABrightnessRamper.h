@@ -1,0 +1,34 @@
+@interface CABrightnessRamper : CAWindowServerRamper
+@property (nonatomic) double sdrNitsBegin;
+@property (nonatomic) double sdrNitsEnd;
+@property (nonatomic) double headroomBegin;
+@property (nonatomic) double headroomEnd;
+@property (nonatomic) double limitBegin;
+@property (nonatomic) double limitEnd;
+@property (nonatomic) double contrastEnhancerBegin;
+@property (nonatomic) double contrastEnhancerEnd;
+@property (nonatomic) double lowAmbientStrengthBegin;
+@property (nonatomic) double lowAmbientStrengthEnd;
+- (id)initWithDisplay:;
+- (void)rampCallback:;
+- (double)sdrNitsBegin;
+- (void)setSdrNitsBegin:;
+- (double)sdrNitsEnd;
+- (void)setSdrNitsEnd:;
+- (double)headroomBegin;
+- (void)setHeadroomBegin:;
+- (double)headroomEnd;
+- (void)setHeadroomEnd:;
+- (double)limitBegin;
+- (void)setLimitBegin:;
+- (double)limitEnd;
+- (void)setLimitEnd:;
+- (double)contrastEnhancerBegin;
+- (void)setContrastEnhancerBegin:;
+- (double)contrastEnhancerEnd;
+- (void)setContrastEnhancerEnd:;
+- (double)lowAmbientStrengthBegin;
+- (void)setLowAmbientStrengthBegin:;
+- (double)lowAmbientStrengthEnd;
+- (void)setLowAmbientStrengthEnd:;
+@end

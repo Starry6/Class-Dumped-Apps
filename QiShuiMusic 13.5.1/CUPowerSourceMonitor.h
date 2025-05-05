@@ -1,0 +1,34 @@
+@interface CUPowerSourceMonitor : NSObject
+@property (nonatomic) I changeFlags;
+@property (nonatomic) NSObject<OS_dispatch_queue> dispatchQueue;
+@property (nonatomic) @? invalidationHandler;
+@property (nonatomic) @? powerSourceFoundHandler;
+@property (nonatomic) @? powerSourceLostHandler;
+@property (nonatomic) @? powerSourceChangedHandler;
+- (void)_cleanup;
+- (unsigned int)changeFlags;
+- (void)setChangeFlags:;
+- (void)_update;
+- (id)init;
+- (void)_aggregatePowerSourceUpdate:changes:;
+- (void)dealloc;
+- (void)setPowerSourceFoundHandler:;
+- (id)dispatchQueue;
+- (void)setPowerSourceLostHandler:;
+- (id)powerSourceFoundHandler;
+- (void)setDispatchQueue:;
+- (void)_updatePowerSources;
+- (void)_handlePowerSourceLost:sourceID:;
+- (void)_aggregatePowerSourceLost:;
+- (id)powerSourceLostHandler;
+- (void)activateWithCompletion:;
+- (void).cxx_destruct;
+- (id)invalidationHandler;
+- (void)setInvalidationHandler:;
+- (id)powerSourceChangedHandler;
+- (void)_handlePowerSourceUpdate:desc:adapterDesc:;
+- (void)_handlePowerSourceFound:desc:adapterDesc:;
+- (void)invalidate;
+- (void)setPowerSourceChangedHandler:;
+- (void)_aggregatePowerSourceFound:;
+@end

@@ -1,0 +1,30 @@
+@interface CNResult : NSObject
+@property (nonatomic) CNEither either;
+@property (nonatomic) @ value;
+@property (nonatomic) NSError error;
+@property (nonatomic) BOOL isSuccess;
+@property (nonatomic) BOOL isFailure;
+- (id)recover:;
+- (id)valueWithError:;
+- (BOOL)isSuccess;
+- (id)initWithError:;
+- (id)either;
+- (BOOL)isFailure;
+- (id)error;
+- (unsigned long long)hash;
+- (void).cxx_destruct;
+- (id)description;
+- (id)value;
+- (id)flatMap:;
+- (id)initWithValue:error:;
+- (BOOL)isEqual:;
+- (id)initWithValue:;
++ (id)isSuccess;
++ (id)isFailure;
++ (id)resultWithFuture:timeout:;
++ (id)failureWithError:;
++ (id)successWithValue:;
++ (id)resultWithValue:orError:;
++ (id)resultWithFuture:;
++ (id)resultWithBlock:;
+@end

@@ -1,0 +1,37 @@
+@interface FPActionOperationLocator : NSObject
+@property (nonatomic) BOOL isExternalURL;
+@property (nonatomic) BOOL isProviderItem;
+@property (nonatomic) FPItem asFPItem;
+@property (nonatomic) NSURL asURL;
+@property (nonatomic) @ underlyingObject;
+@property (nonatomic) @ identifier;
+@property (nonatomic) @ parentIdentifier;
+@property (nonatomic) Q size;
+@property (nonatomic) NSString filename;
+@property (nonatomic) BOOL isFolder;
+@property (nonatomic) BOOL requiresCrossDeviceCopy;
+- (id)filename;
+- (id)parentIdentifier;
+- (id)identifier;
+- (BOOL)isFolder;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (id)initWithObject:;
+- (void)encodeWithCoder:;
+- (void).cxx_destruct;
+- (id)underlyingObject;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (unsigned long long)size;
+- (BOOL)isDownloaded;
+- (void)_setObject:;
+- (BOOL)isExternalURL;
+- (BOOL)isProviderItem;
+- (id)asURL;
+- (id)asFPItem;
+- (void)attachSandboxExtensionOnXPCEncoding;
+- (BOOL)requiresCrossDeviceCopy;
++ (BOOL)supportsSecureCoding;
++ (id)locatorForItem:;
++ (id)locatorForURL:;
+@end

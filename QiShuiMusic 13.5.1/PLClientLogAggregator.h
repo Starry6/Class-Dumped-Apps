@@ -1,0 +1,30 @@
+@interface PLClientLogAggregator : NSObject
+@property (nonatomic) NSMutableDictionary aggregatesCache;
+@property (nonatomic) C numAggregates;
+@property (nonatomic) C numAggregations;
+@property (nonatomic) NSObject<OS_os_log> logHandle;
+@property (nonatomic) NSObject<OS_dispatch_queue> executionQueue;
+@property (nonatomic) NSObject<OS_dispatch_source> flushTimer;
+- (id)logHandle;
+- (id)init;
+- (id)executionQueue;
+- (void)cleanCache;
+- (id)flushTimer;
+- (void)setLogHandle:;
+- (void)setExecutionQueue:;
+- (void).cxx_destruct;
+- (void)_scheduleFlushTimer;
+- (BOOL)aggregateForClientID_async:eventName:eventDictionary:configuration:;
+- (BOOL)_aggregateForClientID:eventName:eventDictionary:configuration:;
+- (BOOL)_isEventInputValid:configuration:;
+- (void)_flushToPowerLog;
+- (id)_eventAggregate:eventName:aggregateKey:valueLabel:;
+- (BOOL)_setEventAggregate:eventName:aggregateKey:valueLabel:value:;
+- (id)aggregatesCache;
+- (unsigned char)numAggregates;
+- (void)setNumAggregates:;
+- (unsigned char)numAggregations;
+- (void)setNumAggregations:;
+- (void)setFlushTimer:;
++ (id)sharedInstance;
+@end

@@ -1,0 +1,2 @@
+@interface SNAudioBufferUtils : NSObject
+@end

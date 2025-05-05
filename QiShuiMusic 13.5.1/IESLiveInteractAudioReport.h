@@ -1,0 +1,36 @@
+@interface IESLiveInteractAudioReport : NSObject
+@property (nonatomic) IESLiveInteractAudioReportConfig config;
+@property (nonatomic) IESLiveInteractAudioReportCalculator calculator;
+@property (nonatomic) Q threshold;
+@property (nonatomic) BOOL enableFallDown;
+@property (nonatomic) Q fallDownCount;
+@property (nonatomic) Q lowDefaultValue;
+@property (nonatomic) Q defaultHighValue;
+@property (nonatomic) NSMutableArray volumeArray;
+@property (nonatomic) NSMutableArray lastSpeakState;
+@property (nonatomic) BOOL lastReturnState;
+- (BOOL)lastReturnState;
+- (unsigned long long)lowDefaultValue;
+- (void)setVolumeArray:;
+- (id)calculator;
+- (unsigned long long)defaultHighValue;
+- (BOOL)enableFallDown;
+- (unsigned long long)fallDownCount;
+- (id)lastSpeakState;
+- (void)lowDefaultHighValueConfigHelper:;
+- (void)setCalculator:;
+- (void)setDefaultHighValue:;
+- (void)setEnableFallDown:;
+- (void)setFallDownCount:;
+- (void)setLastReturnState:;
+- (void)setLastSpeakState:;
+- (void)setLowDefaultValue:;
+- (unsigned long long)speakStateWithVolume:;
+- (id)volumeArray;
+- (unsigned long long)threshold;
+- (void)setConfig:;
+- (id)initWithConfig:;
+- (void).cxx_destruct;
+- (id)config;
+- (void)setThreshold:;
+@end

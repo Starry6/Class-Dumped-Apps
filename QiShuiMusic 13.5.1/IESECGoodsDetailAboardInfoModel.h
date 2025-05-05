@@ -1,0 +1,32 @@
+@interface IESECGoodsDetailAboardInfoModel : MTLModel
+@property (nonatomic) Q customsType;
+@property (nonatomic) Q priceTaxType;
+@property (nonatomic) NSString taxText;
+@property (nonatomic) IESECGoodsTaxDescribeModel taxDetail;
+@property (nonatomic) NSString wareHouseName;
+@property (nonatomic) IESECGoodsDetailCountryItemModel brandCountryItem;
+@property (nonatomic) IESECGoodsDetailCountryItemModel sourceCountryItem;
+@property (nonatomic) NSString originPlaceText;
+@property (nonatomic) Q hash;
+@property (nonatomic) # superclass;
+@property (nonatomic) NSString description;
+@property (nonatomic) NSString debugDescription;
+- (id)originPlaceText;
+- (void)setCustomsType:;
+- (id)taxText;
+- (id)brandCountryItem;
+- (unsigned long long)customsType;
+- (unsigned long long)priceTaxType;
+- (void)setBrandCountryItem:;
+- (void)setOriginPlaceText:;
+- (void)setPriceTaxType:;
+- (void)setSourceCountryItem:;
+- (void)setTaxDetail:;
+- (void)setTaxText:;
+- (void)setWareHouseName:;
+- (id)sourceCountryItem;
+- (id)taxDetail;
+- (id)wareHouseName;
+- (void).cxx_destruct;
++ (id)JSONKeyPathsByPropertyKey;
+@end

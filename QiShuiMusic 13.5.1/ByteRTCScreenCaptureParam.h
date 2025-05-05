@@ -1,0 +1,30 @@
+@interface ByteRTCScreenCaptureParam : NSObject
+@property (nonatomic) q width;
+@property (nonatomic) q height;
+@property (nonatomic) q frameRate;
+@property (nonatomic) q bitrate;
+@property (nonatomic) q minBitrate;
+@property (nonatomic) {CGRect={CGPoint=dd}{CGSize=dd}} regionRect;
+@property (nonatomic) Q mouseCursorCaptureState;
+@property (nonatomic) NSArray excludedWindowList;
+@property (nonatomic) ByteRTCHighlightConfig highlightConfig;
+- (id)regionRect;
+- (void)setRegionRect:;
+- (unsigned long long)mouseCursorCaptureState;
+- (void)setMouseCursorCaptureState:;
+- (id)excludedWindowList;
+- (void)setExcludedWindowList:;
+- (id)highlightConfig;
+- (void)setHighlightConfig:;
+- (void)setFrameRate:;
+- (long long)frameRate;
+- (void)setWidth:;
+- (long long)bitrate;
+- (long long)height;
+- (long long)width;
+- (void)setHeight:;
+- (void).cxx_destruct;
+- (void)setBitrate:;
+- (long long)minBitrate;
+- (void)setMinBitrate:;
+@end

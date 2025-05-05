@@ -1,0 +1,38 @@
+@interface GEOPathMatcher : NSObject
+@property (nonatomic) double preloadDistance;
+@property (nonatomic) BOOL forceSync;
+- (id)initForTesting;
+- (void)dealloc;
+- (void).cxx_destruct;
+- (id).cxx_construct;
+- (id)initWithRoute:;
+- (void)_clearZilchSnappedPathsForRoute:;
+- (id)_zilchMatchedSegmentsForRoute:range:;
+- (void)_zilchMatchedSegmentsForRoute:range:handler:;
+- (void)matchRouteFromStart:toEnd:finishedHandler:;
+- (void)matchRouteFromStart:toEnd:finishedHandler:callbackQueue:;
+- (id)matchedSegmentsFromStart:toEnd:;
+- (id)_validateInputRange:finishedHandler:callbackQueue:;
+- (id)_supportPointsForRange:;
+- (void)_matchRouteOnQueueForRange:finishedHandler:callbackQueue:;
+- (void)_callbackWithMatchedSegments:range:handler:callbackQueue:;
+- (id)_updateCacheWithNewSegments:range:;
+- (id)_matchedSegmentsInRange:ofMatchedSegments:;
+- (BOOL)_isFailedRange:;
+- (BOOL)_isRangeValid:;
+- (id)_decodePathForRoute:start:end:roadNetwork:internalInfo:;
+- (id)_roadLookupForRoadNetwork:;
+- (id)_matchedPathSegmentsForPath:routeCoordinates:start:end:roadLookup:;
+- (id)_cachedSegments;
+- (id)_uncachedCoordinateRangeForStart:end:;
+- (void)_addCoordinatesFromRoad:routeCoordinates:offsetFromStartOfPath:errorScale:offsetFromPathToCurrentPoint:outCoordinates:;
+- (void)_verifySegmentDistanceFromRoute:segmentIndex:requestedPathRange:;
+- (BOOL)shouldSaveInternalInfo;
+- (void)setShouldSaveInternalInfo:;
+- (id)internalInfos;
+- (void)setInternalInfos:;
+- (double)preloadDistance;
+- (void)setPreloadDistance:;
+- (BOOL)forceSync;
+- (void)setForceSync:;
+@end

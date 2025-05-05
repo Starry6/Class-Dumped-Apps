@@ -1,0 +1,35 @@
+@interface AWDIDSRegistrationControlChosen : PBCodable
+@property (nonatomic) BOOL hasTimestamp;
+@property (nonatomic) Q timestamp;
+@property (nonatomic) BOOL hasRegistrationType;
+@property (nonatomic) NSInteger registrationType;
+@property (nonatomic) BOOL hasRegistrationControlStatus;
+@property (nonatomic) NSInteger registrationControlStatus;
+@property (nonatomic) BOOL hasIsInterestingRegion;
+@property (nonatomic) BOOL isInterestingRegion;
+- (int)registrationType;
+- (void)setRegistrationType:;
+- (void)writeTo:;
+- (void)setHasRegistrationType:;
+- (unsigned long long)hash;
+- (void)copyTo:;
+- (void)setHasTimestamp:;
+- (void)mergeFrom:;
+- (BOOL)hasTimestamp;
+- (void)setTimestamp:;
+- (BOOL)hasRegistrationType;
+- (BOOL)readFrom:;
+- (unsigned long long)timestamp;
+- (id)description;
+- (id)dictionaryRepresentation;
+- (BOOL)isEqual:;
+- (id)copyWithZone:;
+- (void)setIsInterestingRegion:;
+- (void)setRegistrationControlStatus:;
+- (int)registrationControlStatus;
+- (BOOL)isInterestingRegion;
+- (void)setHasRegistrationControlStatus:;
+- (BOOL)hasRegistrationControlStatus;
+- (void)setHasIsInterestingRegion:;
+- (BOOL)hasIsInterestingRegion;
+@end

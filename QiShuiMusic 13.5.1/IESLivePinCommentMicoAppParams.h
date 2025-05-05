@@ -1,0 +1,30 @@
+@interface IESLivePinCommentMicoAppParams : NSObject
+@property (nonatomic) NSString apptitle;
+@property (nonatomic) NSString appDescription;
+@property (nonatomic) NSString appCoverUrl;
+@property (nonatomic) NSString nickName;
+@property (nonatomic) NSString mixUserId;
+@property (nonatomic) q msgId;
+@property (nonatomic) NSString scene;
+@property (nonatomic) NSString schema;
+@property (nonatomic) NSString microAppId;
+- (void)setAppCoverUrl:;
+- (id)appCoverUrl;
+- (id)apptitle;
+- (id)microAppId;
+- (id)mixUserId;
+- (void)setApptitle:;
+- (void)setMicroAppId:;
+- (void)setMixUserId:;
+- (id)schema;
+- (void)setScene:;
+- (id)scene;
+- (void)setSchema:;
+- (id)nickName;
+- (void).cxx_destruct;
+- (void)setNickName:;
+- (long long)msgId;
+- (void)setMsgId:;
+- (id)appDescription;
+- (void)setAppDescription:;
+@end

@@ -1,0 +1,33 @@
+@interface AKIcon : NSObject
+- (id)initWithData:scale:;
+- (void).cxx_destruct;
+- (id)initWithName:size:;
+- (unsigned long long)iconType;
+- (id)initWithPresentationContext:;
+- (id)initWithIconContext:;
+- (id)initWithBundleID:size:;
+- (id)unmaskedImage;
+- (id)maskedImage;
+- (id)automaskedImage;
+- (id)unmaskedImageData;
+- (id)maskedImageData;
+- (id)automaskedImageData;
+- (id)_catalogueImageWithName:;
+- (id)_imageWithData:scale:masked:;
+- (id)_imageWithBundleID:size:masked:;
+- (id)_imageWithName:size:masked:;
+- (id)_iconWithImage:;
+- (id)_imageWithIcon:size:masked:;
+- (id)_dataForImage:;
+- (id)_CGImageForImage:;
+- (BOOL)_hasInstalledApplicationWithBundleID:;
+- (id)_applicationProxyForBundleID:;
+- (BOOL)_shouldMaskImage;
++ (double)_screenScale;
++ (double)defaultScale;
++ (id)iconWithData:scale:;
++ (id)iconWithPresentationContext:;
++ (id)iconWithIconContext:;
++ (id)iconWithName:size:;
++ (id)iconWithBundleID:size:;
+@end

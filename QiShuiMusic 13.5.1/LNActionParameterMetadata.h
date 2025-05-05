@@ -1,0 +1,35 @@
+@interface LNActionParameterMetadata : NSObject
+@property (nonatomic) NSString name;
+@property (nonatomic) LNValueType valueType;
+@property (nonatomic) BOOL optional;
+@property (nonatomic) LNStaticDeferredLocalizedString title;
+@property (nonatomic) LNStaticDeferredLocalizedString parameterDescription;
+@property (nonatomic) NSArray resolvableInputTypes;
+@property (nonatomic) NSDictionary typeSpecificMetadata;
+@property (nonatomic) q dynamicOptionsSupport;
+@property (nonatomic) BOOL hasDynamicOptions;
+@property (nonatomic) BOOL isInput;
+- (BOOL)isOptional;
+- (id)initWithCoder:;
+- (unsigned long long)hash;
+- (void)encodeWithCoder:;
+- (id)title;
+- (void).cxx_destruct;
+- (id)description;
+- (id)name;
+- (id)valueType;
+- (BOOL)isEqual:;
+- (id)typeSpecificMetadata;
+- (id)resolvableInputTypes;
+- (id)initWithName:valueType:optional:title:description:resolvableInputTypes:typeSpecificMetadata:dynamicOptionsSupport:isInput:;
+- (id)parameterDescription;
+- (long long)dynamicOptionsSupport;
+- (BOOL)isInput;
+- (id)initWithName:valueType:optional:title:description:resolvableInputTypes:typeSpecificMetadata:;
+- (id)initWithName:valueType:optional:title:resolvableInputTypes:typeSpecificMetadata:dynamicOptionsSupport:isInput:;
+- (id)initWithName:valueType:optional:title:resolvableInputTypes:typeSpecificMetadata:;
+- (id)initWithName:valueType:optional:title:resolvableInputTypes:typeSpecificMetadata:hasDynamicOptions:;
+- (id)initWithName:valueType:optional:title:resolvableInputTypes:typeSpecificMetadata:dynamicOptionsSupport:;
+- (BOOL)hasDynamicOptions;
++ (BOOL)supportsSecureCoding;
+@end

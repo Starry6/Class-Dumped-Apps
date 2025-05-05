@@ -1,0 +1,32 @@
+@interface IESECPriceInfoComponentViewV2 : IESECGoodsDetailBaseComponentView
+@property (nonatomic) IESECGoodsPriceLabel priceLabel;
+@property (nonatomic) IESECGoodsPriceLabel marketPriceLabel;
+@property (nonatomic) IESECGoodsPriceDescLabel priceDescLabel;
+@property (nonatomic) IESECGoodsFeedDiscountPriceView discountPriceView;
+@property (nonatomic) UILabel salesLabel;
+@property (nonatomic) UIStackView stackView;
+@property (nonatomic) UIView marketContainer;
+- (id)marketContainer;
+- (void)updateSalesLabelWithParameters:;
+- (void)configPriceUIV1WithParameters:;
+- (void)configPriceUIV2WithParameters:;
+- (void)configUI;
+- (id)discountPriceView;
+- (id)initWithParameters:style:tracker:;
+- (id)marketPriceLabel;
+- (id)priceDescLabel;
+- (id)priceLabelTextColor:;
+- (id)salesLabel;
+- (void)setDiscountPriceView:;
+- (void)setMarketContainer:;
+- (void)setMarketPriceLabel:;
+- (void)setPriceDescLabel:;
+- (void)setSalesLabel:;
+- (void)updateWithParameters:;
+- (void)setStackView:;
+- (id)stackView;
+- (void).cxx_destruct;
+- (id)priceLabel;
+- (void)setPriceLabel:;
++ (double)componentViewHeight:style:;
+@end
